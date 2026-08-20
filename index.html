@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A devotional song reader with synchronized lyrics, literal translations, and word meanings.">
+  <title>Bhakti — Songs for Listening and Reading</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="Bhakti home">Bhakti</a>
+    <p>Listen closely. Read slowly.</p>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="collection-title">
+      <p class="eyebrow">Devotional song reader</p>
+      <h1 id="collection-title">Songs that unfold<br><em>word by word.</em></h1>
+      <p class="lede">Synchronized performance text, literal English, and tap-to-explore word meanings—made for listening as carefully as reading.</p>
+    </section>
+    <section class="collection" aria-labelledby="songs-title">
+      <div class="section-heading"><p class="eyebrow">The collection</p><h2 id="songs-title">Bhajans &amp; hymns</h2></div>
+      <div id="songList" class="song-list" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer><a href="https://vedanta.eeshan.xyz/">Vedānta Timeline</a><span>·</span><span>Built for attentive listening</span></footer>
+  <script src="data/songs.js"></script>
+  <script src="assets/library.js"></script>
+</body>
+</html>
