@@ -79,6 +79,7 @@ def audit_song(directory: Path) -> dict[str, Any]:
                     problems.append(f"{line_id} word[{word_index}] cannot map to roman text or lacks a gloss")
                     break
                 cursor = at + len(token)
+            linked_indices: set[int] = set()
             for marker in re.finditer(r"\{([^:}]+):([^}]*)\}", str(line.get("english", ""))):
                 try:
                     indices = [int(value.strip()) for value in marker.group(1).split(",")]
@@ -88,6 +89,10 @@ def audit_song(directory: Path) -> dict[str, Any]:
                 if any(index < 0 or index >= len(line["words"]) for index in indices):
                     problems.append(f"{line_id} English linkage references an invalid word index")
                     break
+                linked_indices.update(indices)
+            missing_indices = sorted(set(range(len(line["words"]))) - linked_indices)
+            if missing_indices:
+                problems.append(f"{line_id} English linkage omits word indices {missing_indices}")
     if not isinstance(sequence, list) or not isinstance(timing, list) or len(sequence) != len(timing):
         problems.append("sequence/timing arrays are missing or differ in length")
     if isinstance(sequence, list):

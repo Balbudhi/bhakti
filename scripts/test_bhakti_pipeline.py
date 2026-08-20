@@ -239,6 +239,14 @@ class PipelineTests(unittest.TestCase):
             ], ""),
             '{0:Ganu says, "}{1:Baba}',
         )
+        self.assertEqual(
+            pipeline.segment_english([
+                {"text": "Sai", "word_indices": [0]},
+                {"text": "’s name", "word_indices": [1]},
+                {"text": "…", "word_indices": []},
+            ], ""),
+            "{0:Sai}{1:’s name}…",
+        )
 
     def test_display_title_and_language_use_reviewed_forms(self) -> None:
         lines = [{"roman": "ākāśī jhepa ghe re pākharā"}]
