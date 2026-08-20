@@ -211,45 +211,6 @@ window.BHAKTI_SONGS = [
     "subtitle": "Aaram Haram Aahe"
   },
   {
-    "slug": "morning-aarti",
-    "title": "Morning Āratī",
-    "credit": "Traditional · Pramod Medhi",
-    "languageTags": [
-      "Hindi",
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī"
-    ],
-    "searchAliases": [
-      "Morning Arati",
-      "Kakad Arati",
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Morning Kakad Aarti",
-      "Pramod Medi"
-    ],
-    "subtitle": "Kākaḍ Āratī"
-  },
-  {
-    "slug": "jab-subah-ki-aarti",
-    "title": "Jab Subah Kī Āratī",
-    "credit": "Traditional · Pramod Medhi",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī"
-    ],
-    "searchAliases": [
-      "Jab Subah Ki Arati",
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Jab Subah Ki Aarti Khatam Hui Aur Baba Ne Snan Kiya"
-    ],
-    "subtitle": "Śirḍī Sāī"
-  },
-  {
     "slug": "ye-tanu-mundna-be-mundna",
     "title": "Ye Tanu Muṇḍanā Be Muṇḍanā",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
@@ -416,5 +377,44 @@ window.BHAKTI_SONGS = [
       "Sun Bhai Sadho"
     ],
     "subtitle": "Kabīr"
+  },
+  {
+    "slug": "morning-aarti",
+    "title": "Morning Āratī",
+    "credit": "Traditional · Pramod Medhi",
+    "languageTags": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Morning Arati",
+      "Kakad Arati",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Morning Kakad Aarti",
+      "Pramod Medi"
+    ],
+    "subtitle": "Kākaḍ Āratī"
+  },
+  {
+    "slug": "jab-subah-ki-aarti",
+    "title": "Jab Subah Kī Āratī",
+    "credit": "Pramod Medhi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Jab Subah Ki Arati",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Jab Subah Ki Aarti Khatam Hui Aur Baba Ne Snan Kiya"
+    ],
+    "subtitle": "Sai Teri Kripa Se"
   }
 ];

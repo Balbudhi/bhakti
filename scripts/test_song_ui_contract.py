@@ -25,8 +25,8 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
-                self.assertIn('song.js?v=contract-20260820-5', text)
-                self.assertIn('data.js?v=contract-20260820-5', text)
+                self.assertIn('song.js?v=contract-20260820-6', text)
+                self.assertIn('data.js?v=contract-20260820-6', text)
 
     def test_seeking_is_bound_to_the_dedicated_control(self) -> None:
         script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")

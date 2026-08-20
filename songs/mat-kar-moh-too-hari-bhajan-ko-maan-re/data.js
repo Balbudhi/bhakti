@@ -358,27 +358,27 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mat-kar-moh-tu",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "hari-bhajan-ko-maan-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "hari-bhajan-ko-maan-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "mat-kar-moh-tu",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "hari-bhajan-ko-maan-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "hari-bhajan-ko-maan-re",
@@ -393,27 +393,27 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nayan-diye-darshan-karne-ko",
     "section": "verse",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "shravan-diye-sun-gyan-re",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "hari-bhajan-ko-maan-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 7
   },
   {
     "ref": "vadan-diya-hari-gun-gaane-ko",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "haath-diye-kar-daan-re",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "hari-bhajan-ko-maan-le",
@@ -433,12 +433,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "hari-bhajan-ko-maan-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kahat-kabir-suno-bhai-sadho",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kabir-alap",
@@ -463,7 +463,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "kanchan-nipjat-khaan-re",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "hari-bhajan-ko-maan-le",
@@ -483,12 +483,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "hari-bhajan-ko-maan-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "mat-kar-moh-tu",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "hari-bhajan-ko-maan-le",
@@ -498,7 +498,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "hari-bhajan-ko-maan-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   }
 ];
 

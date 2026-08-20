@@ -627,7 +627,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-raja-ram",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-raja-ram-end",
@@ -642,7 +642,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse1-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "verse1-bhukha-sai",
@@ -662,12 +662,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse1-3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse1-4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse1-5",
@@ -677,7 +677,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-3",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "refrain-4",
@@ -702,12 +702,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-raja-ram",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-raja-ram-end",
@@ -717,17 +717,17 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse2-1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "verse2-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "verse2-3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse2-4",
@@ -757,7 +757,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-raja-ram",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-raja-ram-end",
@@ -767,7 +767,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse3-1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "verse3-2",
@@ -777,7 +777,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse3-1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse3-2",
@@ -787,7 +787,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse3-4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse3-5",
@@ -797,7 +797,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-4",
@@ -807,7 +807,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-3",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-4",
@@ -822,7 +822,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-raja-ram",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-raja-ram-end",

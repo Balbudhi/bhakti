@@ -8245,7 +8245,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-032",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-030",
@@ -8270,7 +8270,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-033",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-030",
@@ -8295,7 +8295,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-034",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-030",
@@ -8335,7 +8335,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-038",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-039",
@@ -8365,7 +8365,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-040",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-041",
@@ -8395,7 +8395,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-042",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-043",
@@ -8435,17 +8435,17 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-046",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-047",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-048",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-049",
@@ -8460,12 +8460,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-051",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-052",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-044",
@@ -8480,7 +8480,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-046",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-053",
@@ -8490,7 +8490,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-054",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-055",
@@ -8525,7 +8525,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-061",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-062",
@@ -8535,7 +8535,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-063",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-053",
@@ -8545,7 +8545,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-054",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-029",

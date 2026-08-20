@@ -273,12 +273,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-beet-gaye",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "v1-bal-avastha",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v1-jab-joban",
@@ -288,12 +288,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-beet-gaye",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "v2-lahe-karan",
     "section": "verse",
-    "repeats": 1
+    "repeats": 7
   },
   {
     "ref": "v2-ajahun-na-gayi",
@@ -303,12 +303,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-beet-gaye",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "v3-kahat-kabir",
     "section": "verse",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "v3-par-utar-gaye",
@@ -318,12 +318,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-beet-gaye",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v1-bal-avastha",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v1-jab-joban",
@@ -338,7 +338,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "closing-bhajan-bina",
     "section": "closing",
-    "repeats": 1
+    "repeats": 2
   }
 ];
 

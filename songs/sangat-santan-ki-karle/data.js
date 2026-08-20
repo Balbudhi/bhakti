@@ -768,7 +768,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "refrain-sub",
@@ -778,12 +778,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse1-line1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse1-line2",
@@ -803,27 +803,27 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse1-line3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse1-line4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse2-line1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse2-line2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse2-line3",
@@ -833,22 +833,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse3-line1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse3-line2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "verse3-line3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse3-line4",
@@ -858,7 +858,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse4-line1",
@@ -868,7 +868,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse4-line1-sub",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse4-line1",
@@ -883,7 +883,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse4-line2-taan",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse4-line2",
@@ -893,17 +893,17 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse4-line3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse4-line4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-sub",
@@ -913,7 +913,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   }
 ];
 
