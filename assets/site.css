@@ -1,6 +1,112 @@
-:root { --paper:#f8f3e8; --ink:#211b18; --muted:#756860; --line:#d9cec0; --red:#8f2927; --deep:#4b1515; }
-* { box-sizing:border-box; }
-body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter, sans-serif; }
-main { max-width:1060px; margin:0 auto; padding:clamp(40px,10vw,112px) clamp(18px,4vw,56px); }
-.song-list { border-top:1px solid var(--line); }.song-card { min-height:104px; border-bottom:1px solid var(--line); color:inherit; display:grid; grid-template-columns:38px minmax(0,1fr) auto 20px; gap:14px; align-items:center; text-decoration:none; padding:18px 2px; transition:background .16s ease, padding .16s ease; }.song-card:hover { background:#f0e8db; padding-left:10px; padding-right:10px; }.number { color:var(--red); font:600 11px/1 Inter,sans-serif; align-self:start; padding-top:7px; }.song-copy { display:grid; gap:7px; }.song-title { font:600 clamp(24px,3vw,35px)/1 "Cormorant Garamond",serif; letter-spacing:-.025em; }.credit { color:var(--muted); font-size:12px; }.tags { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }.tags span { border:1px solid var(--line); border-radius:999px; padding:5px 8px; color:var(--muted); font-size:10px; }.arrow { color:var(--red); font-size:20px; }
-@media (max-width:650px) { main { padding-top:34px; }.song-card { grid-template-columns:26px minmax(0,1fr) 18px; }.tags { display:none; }.song-title { font-size:28px; } }
+:root {
+  --paper: #fbf7ed;
+  --ink: #2a1c1a;
+  --muted: #75635c;
+  --line: #dfd2c2;
+  --red: #8a2924;
+  --red-dark: #661d1c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: min(100% - 40px, 820px);
+  margin: 0 auto;
+  padding: clamp(44px, 9vw, 104px) 0;
+}
+
+.song-list { border-top: 1px solid var(--line); }
+
+.song-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  padding: 22px 4px;
+  text-decoration: none;
+  transition: color 160ms ease, background-color 160ms ease, padding 160ms ease;
+}
+
+.song-card:hover,
+.song-card:focus-visible {
+  color: var(--red-dark);
+  background: #f5eddf;
+  outline: none;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.song-copy {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.song-title {
+  font: 600 clamp(24px, 3.2vw, 31px) / 1.04 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -0.018em;
+}
+
+.credit {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  line-height: 1.35;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+  max-width: 218px;
+}
+
+.tags span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1;
+  padding: 6px 8px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: min(100% - 32px, 820px);
+    padding-top: 32px;
+  }
+
+  .song-card {
+    display: block;
+    padding: 20px 2px;
+  }
+
+  .song-card:hover,
+  .song-card:focus-visible {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .song-title { font-size: 25px; }
+
+  .tags {
+    justify-content: flex-start;
+    margin-top: 12px;
+    max-width: none;
+  }
+}
