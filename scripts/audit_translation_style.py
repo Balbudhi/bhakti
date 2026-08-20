@@ -17,7 +17,7 @@ import process_song_gemini as gemini
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROMPT_VERSION = 2
+PROMPT_VERSION = 3
 
 
 def arguments() -> argparse.Namespace:
@@ -62,6 +62,20 @@ def response_schema() -> dict[str, Any]:
     }, "required": ["reviews"], "additionalProperties": False}
 
 
+def normalize_segments(segments: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    fixed = [dict(segment) for segment in segments]
+    for index, segment in enumerate(fixed):
+        text = str(segment.get("text", ""))
+        if index and text.startswith(" —") and not str(fixed[index - 1].get("text", "")).endswith((" ", "—", "–")):
+            text = text[1:]
+        if text.endswith("—") and index + 1 < len(fixed):
+            following = str(fixed[index + 1].get("text", ""))
+            if following and not following.startswith((" ", "—", "–", ".", ",", "!", "?", ";", ":")):
+                text += " "
+        segment["text"] = text
+    return fixed
+
+
 def record(line_id: str, line: dict[str, Any]) -> dict[str, Any]:
     return {
         "id": line_id,
@@ -77,7 +91,7 @@ def record(line_id: str, line: dict[str, Any]) -> dict[str, Any]:
 def prompt(slug: str, targets: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
     return f"""You are the final English editor for a devotional-song reader. Audit every TARGET line against its source, Romanization, reviewed word glosses, and grammar note. The gloss record is the semantic constraint and must be considered before writing the sentence.
 
-The current English may be a deliberate human translation. Literal strangeness, repetition, personification, unusual agency, and concrete ritual or bodily imagery can be essential poetry; conventional English is not automatically better. Preserve supported expressions such as “my breath will abandon me,” “from the inside,” or a deity resting in the speaker's palm even when a smoother idiom exists. Correct a line only for a demonstrable meaning error, grammatical failure, unsupported addition, or wording that truly obstructs understanding. “Cast a glance of mercy” may become “look upon me with mercy,” but do not generalize that decision into permission to replace other literal images. Preserve an alms bag, garment hem, lotus, dust, ocean, threshold, cage, and other concrete source images. Do not introduce or change theology, sentiment, agency, tense, pronouns, causal links, or metaphor.
+The current English may be a deliberate human translation. Literal strangeness, repetition, personification, unusual agency, and concrete ritual or bodily imagery can be essential poetry; conventional English is not automatically better. Preserve supported expressions such as “my breath will abandon me,” “from the inside,” or a deity resting in the speaker's palm even when a smoother idiom exists. Preserve suffered or resultant states as states: if the current line says the speaker is broken, undone, struck, or seized, do not rewrite it as though the speaker actively broke, undid, struck, or seized themself unless the source unambiguously forces that active reading. If the current English preserves the right agency, imagery, and emotional logic, do not replace it merely because another grammatical parse is possible. Correct a line only for a demonstrable meaning error, grammatical failure, unsupported addition, or wording that truly obstructs understanding. “Cast a glance of mercy” may become “look upon me with mercy,” but do not generalize that decision into permission to replace other literal images. Preserve an alms bag, garment hem, lotus, dust, ocean, threshold, cage, and other concrete source images. Do not introduce or change theology, sentiment, agency, tense, pronouns, causal links, or metaphor.
 
 If the current line is faithful and intelligible, retain it exactly and set change_needed=false. Awkwardness alone is insufficient when it arises from a meaningful literal image or poetic choice. Explain the precise lexical or grammatical evidence for every proposed change; personal synonym preference is never enough.
 
@@ -100,11 +114,13 @@ def validate(targets: list[dict[str, Any]], reviews: list[dict[str, Any]]) -> li
     errors = [] if observed == expected else [f"IDs differ: expected {expected}, got {observed}"]
     words = {target["id"]: len(target["word_glosses"]) for target in targets}
     for review in reviews:
-        for segment in review.get("segments", []):
+        normalized = normalize_segments(review.get("segments", []))
+        review["segments"] = normalized
+        for segment in normalized:
             for index in segment.get("word_indices", []):
                 if not isinstance(index, int) or not 0 <= index < words.get(review.get("id"), 0):
                     errors.append(f"{review.get('id')} has invalid word index {index!r}")
-        rendered = plain_english(pipeline.segment_english(review.get("segments", []), "")).strip()
+        rendered = plain_english(pipeline.segment_english(normalized, "")).strip()
         expected_text = str(review.get("revised_english", "")).strip()
         if re.sub(r"\s+", " ", rendered) != re.sub(r"\s+", " ", expected_text):
             errors.append(f"{review.get('id')} segments do not reconstruct revised_english")

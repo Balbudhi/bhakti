@@ -21,7 +21,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation": {
     "roman": "Mā merī sachīyā jotā wālī mātā, terī sadā hī jai",
-    "english": "{1:My }{0:mother }— {2:the true }{3,4,5:sacred flames }— {6:You are }{7:eternally }{8:victorious.}",
+    "english": "{0,1:My Mother, }{2,3,4,5:Mother of the true sacred flames, }{6,7,8:You are eternally victorious.}",
     "words": [
       {
         "roman": "Mā",
@@ -225,7 +225,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Asī dar tere āvānge",
-    "english": "{0:I }{3:will come }{2:to Your }{1:door }just like this.",
+    "english": "{0:I }{3:will come }{2:to Your }{1:door.}",
     "words": [
       {
         "roman": "Asī",
@@ -373,7 +373,7 @@ window.SONG_LINES = {
   },
   "v5b": {
     "roman": "Tū sānū māf kar deyī, asī hass ke seh lānge",
-    "english": "{0:You }{2:forgive }{1:me, }and {3:I }{5:will do everything }{4:laughingly.}",
+    "english": "{0:You }{2:forgive }{1:me, }and {3:I }{5:will bear it }{4:laughingly.}",
     "words": [
       {
         "roman": "Tū",
@@ -557,7 +557,7 @@ window.SONG_LINES = {
   },
   "v8b": {
     "roman": "Ikk vārī dass te jā, dukh kihde agge pholānge",
-    "english": "{0:Just }{1,2:tell me }{0:once, }{4:before who else }{5:can I let }{3:my sorrows }{5:blossom?}",
+    "english": "{0,1,2:Just tell me once, }{4:before whom }{5:will I unburden }{3:my sorrows?}",
     "words": [
       {
         "roman": "Ikk vārī",
@@ -824,10 +824,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 14.5,
-    "end": 51.0
+    "end": 51
   },
   {
-    "start": 51.0,
+    "start": 51,
     "end": 72.3
   },
   {
@@ -844,10 +844,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 141.5,
-    "end": 176.0
+    "end": 176
   },
   {
-    "start": 176.0,
+    "start": 176,
     "end": 199.3
   },
   {
@@ -912,14 +912,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 517.2,
-    "end": 538.0
+    "end": 538
   },
   {
-    "start": 538.0,
-    "end": 572.0
+    "start": 538,
+    "end": 572
   },
   {
-    "start": 572.0,
+    "start": 572,
     "end": 592.6
   },
   {
