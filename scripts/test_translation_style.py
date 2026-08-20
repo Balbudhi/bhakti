@@ -13,13 +13,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BANNED = (
     "cast a glance of mercy",
-    "from the very inside",
-    "heart-mind",
-    "tantamount to poison",
-    "love-maddened one",
-    "does not become bright",
-    "leaves your company",
-    "grabbed onto the hem",
+    "begging satchel",
+    "hem of Your dress",
 )
 
 
@@ -55,6 +50,12 @@ class TranslationStyleTests(unittest.TestCase):
         self.assertEqual(plain(morning["line-037"]["english"]), "Look upon me with mercy.")
         thanu = load_lines(ROOT / "songs" / "thanu-karagadavaralli" / "data.js")
         self.assertIn("cupped hands", plain(thanu["karasthala"]["english"]))
+        koi = load_lines(ROOT / "songs" / "koi-hor-nahi" / "data.js")
+        self.assertEqual(plain(koi["v1a"]["english"]), "My breath is going to abandon me.")
+        jhoothe = load_lines(ROOT / "songs" / "jhoothe-jag-ne" / "data.js")
+        self.assertIn("from the inside", plain(jhoothe["refrain_b"]["english"]))
+        zara = load_lines(ROOT / "songs" / "zara-to-itana-bata-do-sai" / "data.js")
+        self.assertIn("causing to take hold", plain(zara["refrain_2"]["english"]))
 
 
 if __name__ == "__main__":

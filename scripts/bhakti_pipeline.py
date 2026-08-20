@@ -37,7 +37,7 @@ import naming
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 2
-TRANSLATION_INPUT_VERSION = 3
+TRANSLATION_INPUT_VERSION = 4
 
 
 def parse_args() -> argparse.Namespace:
@@ -1272,7 +1272,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list.
 
-Write lucid contemporary devotional English—not a sequence of dictionary glosses and not faux-archaic religious prose. Prefer a natural supported idiom such as “look upon me with mercy,” “leaves your side,” “from deep within,” or “is not bright” over stiff calques such as “cast a glance of mercy,” “leaves your company,” “from the very inside,” or “does not become bright.” Avoid legalistic wording, needless inversion, noun piles, duplicate modifiers, bracketed editorial verbs, and constructions such as “heart-mind” unless no natural English word preserves the source. At the same time, retain culturally or poetically meaningful images—darshan or sacred vision, an alms bag, garment hem, lotus, dust, ocean, threshold, cage, or Mount Meru—rather than flattening them into generic prose. Use dignified words such as “behold,” “grace,” or “obeisance” only when they are natural in context, not merely because the song is devotional.
+Write lucid devotional English, but do not confuse conventional English with better poetry. Literal strangeness, repetition, personification, unusual agency, and concrete bodily or ritual imagery may be the point. Preserve a supported image such as “my breath will abandon me” even if an English idiom such as “I will breathe my last” sounds smoother. Never replace the source's agency, metaphor, ambiguity, or emotional logic merely to sound idiomatic. Correct wording only when it is demonstrably wrong, ungrammatical, or obstructs understanding. Avoid legalistic filler, accidental inversion, duplicate modifiers, and unsupported editorial verbs. Retain darshan or sacred vision, an alms bag, garment hem, cupped or open palm, lotus, dust, ocean, threshold, cage, and Mount Meru when the source supports them.
 
 Resolve ordinary polysemy from the supplied grammar/song context; mark uncertainty only when the audited source itself cannot support one reading. The completed segments must reconstruct `literal_english` exactly, including ordinary spacing and punctuation.
 
@@ -1285,8 +1285,9 @@ TARGET word gloss record:
 NEARBY source context (do not return these IDs unless also targets):
 {json.dumps(context, ensure_ascii=False)}
 
-Supplied translation, if any (a comparison witness, never an automatic
-baseline or disposable raw material):
+Supplied translation, if any, is the human-authored editorial baseline. Preserve
+its diction, agency, imagery, and poetic choices unless a specific gloss or
+grammatical fact demonstrates an error. Never rewrite it merely for style:
 {supplied_translation(job)}
 
 Return strict JSON:

@@ -17,7 +17,7 @@ import process_song_gemini as gemini
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROMPT_VERSION = 1
+PROMPT_VERSION = 2
 
 
 def arguments() -> argparse.Namespace:
@@ -77,9 +77,9 @@ def record(line_id: str, line: dict[str, Any]) -> dict[str, Any]:
 def prompt(slug: str, targets: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
     return f"""You are the final English editor for a devotional-song reader. Audit every TARGET line against its source, Romanization, reviewed word glosses, and grammar note. The gloss record is the semantic constraint and must be considered before writing the sentence.
 
-The English should be faithful, lucid, dignified, and beautiful when the source is beautiful. It should sound like natural contemporary devotional English, not a machine gloss and not faux-archaic religious prose. Correct stiff calques, unnecessary inversions, noun piles, missing articles, misleading idioms, and expressions such as “cast a glance of mercy” when natural English such as “look upon me with mercy” conveys the same supported meaning. Preserve concrete images such as an alms bag, garment hem, lotus, dust, ocean, threshold, or cage; never flatten or embellish them. Do not introduce theology, sentiment, agency, tense, pronouns, or causal links absent from the glosses.
+The current English may be a deliberate human translation. Literal strangeness, repetition, personification, unusual agency, and concrete ritual or bodily imagery can be essential poetry; conventional English is not automatically better. Preserve supported expressions such as “my breath will abandon me,” “from the inside,” or a deity resting in the speaker's palm even when a smoother idiom exists. Correct a line only for a demonstrable meaning error, grammatical failure, unsupported addition, or wording that truly obstructs understanding. “Cast a glance of mercy” may become “look upon me with mercy,” but do not generalize that decision into permission to replace other literal images. Preserve an alms bag, garment hem, lotus, dust, ocean, threshold, cage, and other concrete source images. Do not introduce or change theology, sentiment, agency, tense, pronouns, causal links, or metaphor.
 
-If the current line is already natural and faithful, retain it exactly and set change_needed=false. A change is justified only by meaning, grammar, register, or genuine awkwardness—not personal synonym preference.
+If the current line is faithful and intelligible, retain it exactly and set change_needed=false. Awkwardness alone is insufficient when it arises from a meaningful literal image or poetic choice. Explain the precise lexical or grammatical evidence for every proposed change; personal synonym preference is never enough.
 
 For every line, return a complete revised sentence plus ordered display segments. Segment text must concatenate, with ordinary spacing and punctuation, to revised_english. Each semantic segment must reference the exact supporting word indices. Punctuation or necessary English function words may use an empty index list. Mark real source ambiguity rather than guessing.
 
