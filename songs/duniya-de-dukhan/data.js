@@ -52,6 +52,21 @@ window.SONG_LINES = {
     ]
   },
 
+  refrain_c: {
+    roman: "Duniyā de dukhān mainū baḍā hī ruwāyā mā",
+    english: "The {0:world's} {2:sorrows} {3:have} {4,5:greatly} {6:made} {3:me} {6:weep}, {7:Mother}.",
+    words: [
+      { roman: "Duniyā", gloss: "world" },
+      { roman: "de", gloss: "of" },
+      { roman: "dukhān", gloss: "sorrows" },
+      { roman: "mainū", gloss: "me" },
+      { roman: "baḍā", gloss: "very, greatly" },
+      { roman: "hī", gloss: "only, indeed (emphatic)" },
+      { roman: "ruwāyā", gloss: "made to weep, made to cry" },
+      { roman: "mā", gloss: "Mother" }
+    ]
+  },
+
   v1a: {
     roman: "Māwān wālā pyār bas jag 'ch anokhā ae",
     english: "A {0:mother's} {2:love} {7:is} the {3:only} {6:unique} thing {5:in} this {4:world}.",
@@ -186,16 +201,15 @@ window.SONG_LINES = {
   },
 
   v4a: {
-    roman: "Ik vārī maiyā sāḍī jholī nū bhar de",
-    english: "{2:Mother}, {6,7:fill} {3:my} {4:alms bag} just {0,1:once}.",
+    roman: "Ik vārī maiyā sāḍī bigṛī sawār de",
+    english: "{2:Mother}, {5,6:set right} {3:my} {4:ruined state} just {0,1:once}.",
     words: [
       { roman: "Ik", gloss: "one" },
       { roman: "vārī", gloss: "time" },
       { roman: "maiyā", gloss: "Mother" },
       { roman: "sāḍī", gloss: "our (my)" },
-      { roman: "jholī", gloss: "alms bag, begging pouch" },
-      { roman: "nū", gloss: "to (accusative)" },
-      { roman: "bhar", gloss: "fill" },
+      { roman: "bigṛī", gloss: "ruined state, what has gone wrong" },
+      { roman: "sawār", gloss: "set right, repair" },
       { roman: "de", gloss: "give" }
     ]
   },
@@ -233,207 +247,67 @@ window.SONG_LINES = {
 };
 
 window.SONG_SEQUENCE = [
-  {
-    ref: "refrain_a",
-    repeats: 4
-  },
-  {
-    ref: "refrain_b",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 2
-  },
-  {
-    ref: "v1a",
-    repeats: 4
-  },
-  {
-    ref: "v1b",
-    repeats: 4
-  },
-  {
-    ref: "v1c",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 2
-  },
-  {
-    ref: "refrain_b",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 2
-  },
-  {
-    ref: "v2a",
-    repeats: 2
-  },
-  {
-    ref: "v2b",
-    repeats: 4
-  },
-  {
-    ref: "v2c",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 2
-  },
-  {
-    ref: "refrain_b",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 2
-  },
-  {
-    ref: "v3a",
-    repeats: 4
-  },
-  {
-    ref: "v3b",
-    repeats: 2
-  },
-  {
-    ref: "v3c",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 2
-  },
-  {
-    ref: "v4a",
-    repeats: 4
-  },
-  {
-    ref: "v4b",
-    repeats: 4
-  },
-  {
-    ref: "v4c",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 2
-  },
-  {
-    ref: "refrain_b",
-    repeats: 2
-  },
-  {
-    ref: "refrain_a",
-    repeats: 3
-  }
+  { ref: "refrain_a", repeats: 6 },
+  { ref: "refrain_b" },
+  { ref: "refrain_a", repeats: 4 },
+  { ref: "refrain_b" },
+  { ref: "refrain_a", repeats: 2 },
+  { ref: "v1a" },
+  { ref: "v1b", repeats: 3 },
+  { ref: "v1c" },
+  { ref: "refrain_a", repeats: 4 },
+  { ref: "v2a" },
+  { ref: "v2b", repeats: 3 },
+  { ref: "v2c" },
+  { ref: "refrain_c", repeats: 2 },
+  { ref: "refrain_a", repeats: 2 },
+  { ref: "refrain_b" },
+  { ref: "refrain_a", repeats: 2 },
+  { ref: "v3a" },
+  { ref: "v3b", repeats: 3 },
+  { ref: "v3c" },
+  { ref: "refrain_a", repeats: 2 },
+  { ref: "refrain_c", repeats: 3 },
+  { ref: "v4a" },
+  { ref: "v4b", repeats: 3 },
+  { ref: "v4c" },
+  { ref: "refrain_a", repeats: 2 },
+  { ref: "refrain_c", repeats: 2 },
+  { ref: "refrain_b" },
+  { ref: "refrain_a", repeats: 2 },
+  { ref: "refrain_c", repeats: 3 },
+  { ref: "invocation", sectionLabel: "Invocation" }
 ];
 
 window.SONG_TIMINGS = [
-  {
-    start: 0,
-    end: 31
-  },
-  {
-    start: 31,
-    end: 43
-  },
-  {
-    start: 43,
-    end: 66
-  },
-  {
-    start: 66,
-    end: 90
-  },
-  {
-    start: 90,
-    end: 114
-  },
-  {
-    start: 114,
-    end: 123
-  },
-  {
-    start: 123,
-    end: 139
-  },
-  {
-    start: 139,
-    end: 152
-  },
-  {
-    start: 152,
-    end: 173
-  },
-  {
-    start: 173,
-    end: 179
-  },
-  {
-    start: 179,
-    end: 203
-  },
-  {
-    start: 203,
-    end: 221
-  },
-  {
-    start: 221,
-    end: 237
-  },
-  {
-    start: 237,
-    end: 243
-  },
-  {
-    start: 243,
-    end: 265
-  },
-  {
-    start: 265,
-    end: 289
-  },
-  {
-    start: 289,
-    end: 301
-  },
-  {
-    start: 301,
-    end: 314
-  },
-  {
-    start: 314,
-    end: 335
-  },
-  {
-    start: 335,
-    end: 361
-  },
-  {
-    start: 361,
-    end: 385
-  },
-  {
-    start: 385,
-    end: 403
-  },
-  {
-    start: 403,
-    end: 421
-  },
-  {
-    start: 421,
-    end: 434
-  },
-  {
-    start: 434,
-    end: 463.02
-  }
+  { start: 0.8, end: 44.8 },
+  { start: 44.8, end: 55.73 },
+  { start: 55.73, end: 82.8 },
+  { start: 82.8, end: 94.0 },
+  { start: 94.0, end: 107.65 },
+  { start: 107.65, end: 113.6 },
+  { start: 113.6, end: 133.4 },
+  { start: 133.4, end: 144.5 },
+  { start: 144.5, end: 169.4 },
+  { start: 169.4, end: 174.2 },
+  { start: 174.2, end: 188.2 },
+  { start: 188.2, end: 204.6 },
+  { start: 204.6, end: 229.8 },
+  { start: 229.8, end: 243.8 },
+  { start: 243.8, end: 254.2 },
+  { start: 254.2, end: 268.1 },
+  { start: 268.1, end: 273.9 },
+  { start: 273.9, end: 291.8 },
+  { start: 291.8, end: 310.3 },
+  { start: 310.3, end: 321.2 },
+  { start: 321.2, end: 335.81 },
+  { start: 335.81, end: 342.31 },
+  { start: 342.31, end: 361.82 },
+  { start: 361.82, end: 379.5 },
+  { start: 379.5, end: 390.9 },
+  { start: 390.9, end: 402.8 },
+  { start: 402.8, end: 416.5 },
+  { start: 416.5, end: 428.0 },
+  { start: 428.0, end: 456.6 },
+  { start: 456.6, end: 463.024 }
 ];
