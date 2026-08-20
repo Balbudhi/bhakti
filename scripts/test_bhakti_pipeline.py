@@ -18,10 +18,12 @@ class PipelineTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix="bhakti-pipeline-test-")
         self.root = Path(self.temp.name)
         self.original_root = pipeline.ROOT
+        registry = (self.original_root / "data" / "preserved_terms.json").read_text(encoding="utf-8")
         pipeline.ROOT = self.root
         (self.root / "songs").mkdir()
         (self.root / "data").mkdir()
         (self.root / "data" / "songs.js").write_text("window.BHAKTI_SONGS = [];\n", encoding="utf-8")
+        (self.root / "data" / "preserved_terms.json").write_text(registry, encoding="utf-8")
 
     def tearDown(self) -> None:
         pipeline.ROOT = self.original_root
@@ -100,6 +102,27 @@ class PipelineTests(unittest.TestCase):
                                                 "reason": "two defensible readings"}}]
         errors = pipeline.validate_line_contract(lines, glosses, translations)
         self.assertIn("line independent review requires a human poetic choice", errors)
+
+    def test_translation_contract_requires_every_source_word_link(self) -> None:
+        lines = [{"id": "line", "source_text": "मन उदास", "roman": "mana udāsa"}]
+        glosses = [{"id": "line", "word_glosses": [
+            {"roman": "mana", "gloss": "heart"}, {"roman": "udāsa", "gloss": "despondent"}]}]
+        translations = [{"id": "line", "literal_english": "The heart is despondent.",
+                         "segments": [{"text": "The heart is despondent.", "word_indices": [1]}]}]
+        errors = pipeline.validate_line_contract(lines, glosses, translations)
+        self.assertIn("line English segments omit source word indices [0]", errors)
+
+    def test_curated_maya_must_remain_in_english(self) -> None:
+        registry = pipeline.preserved_term_registry()["terms"]
+        self.assertEqual(registry["maya"]["iast"], "māyā")
+        self.assertIn("illusion", registry["maya"]["forbiddenFlattenings"])
+        lines = [{"id": "line", "source_text": "माया", "roman": "māyā"}]
+        glosses = [{"id": "line", "word_glosses": [{"roman": "māyā", "gloss": "worldly appearance",
+                                                       "concept_key": "maya", "preserve_in_english": True}]}]
+        translations = [{"id": "line", "literal_english": "illusion",
+                         "segments": [{"text": "illusion", "word_indices": [0]}]}]
+        errors = pipeline.validate_line_contract(lines, glosses, translations)
+        self.assertIn("line must preserve māyā in English", errors)
 
     def test_display_occurrences_compress_only_adjacent_repeats(self) -> None:
         packet = {"verified_lines": [

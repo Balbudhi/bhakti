@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -27,6 +28,20 @@ import subprocess
 MODEL = "google/gemini-3.7-flash"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_KEY = Path.home() / "Dev" / ".axiom_openrouter.key"
+API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "3")))
+API_MIN_START_INTERVAL = max(0.0, float(os.environ.get("BHAKTI_API_MIN_START_INTERVAL", "0.35")))
+_API_SLOTS = threading.BoundedSemaphore(API_MAX_CONCURRENCY)
+_API_START_LOCK = threading.Lock()
+_LAST_API_START = 0.0
+
+
+def _wait_for_api_start() -> None:
+    global _LAST_API_START
+    with _API_START_LOCK:
+        delay = API_MIN_START_INTERVAL - (time.monotonic() - _LAST_API_START)
+        if delay > 0:
+            time.sleep(delay)
+        _LAST_API_START = time.monotonic()
 
 
 def args() -> argparse.Namespace:
@@ -78,8 +93,12 @@ def call(
         "response_format": ({"type": "json_schema", "json_schema": {"name": schema_name, "strict": True, "schema": response_schema}}
                             if response_schema else {"type": "json_object"}),
     }
+    payload["provider"] = {
+        "allow_fallbacks": True,
+        "sort": os.environ.get("OPENROUTER_PROVIDER_SORT", "throughput"),
+    }
     if response_schema:
-        payload["provider"] = {"require_parameters": True}
+        payload["provider"]["require_parameters"] = True
     if reasoning_effort:
         payload["reasoning"] = {"effort": reasoning_effort}
     if max_completion_tokens:
@@ -93,13 +112,20 @@ def call(
     result: dict[str, Any] | None = None
     for attempt in range(6):
         try:
-            with urllib.request.urlopen(request, timeout=timeout) as response:
-                result = json.loads(response.read().decode("utf-8"))
+            with _API_SLOTS:
+                _wait_for_api_start()
+                with urllib.request.urlopen(request, timeout=timeout) as response:
+                    result = json.loads(response.read().decode("utf-8"))
             break
         except urllib.error.HTTPError as exc:
             detail = exc.read().decode("utf-8", errors="replace")[:800]
             if exc.code in {429, 502, 503, 504} and attempt < 5:
-                time.sleep(min(32, 2 ** (attempt + 1)))
+                retry_after = 0.0
+                try:
+                    retry_after = float(exc.headers.get("Retry-After", 0) or 0)
+                except (TypeError, ValueError):
+                    pass
+                time.sleep(max(retry_after, min(32, 2 ** (attempt + 1))))
                 continue
             raise RuntimeError(f"OpenRouter HTTP {exc.code}: {detail}") from exc
     if result is None:

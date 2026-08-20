@@ -126,6 +126,18 @@ rendered as competing credits.
    and unresolved poetic choices. Its failure or review recommendation blocks
    publication, so the drafting model never certifies itself.
 
+### Preserved philosophical terms
+
+`data/preserved_terms.json` is a curated allowlist derived from the Vedanta
+translation standard—not from the much larger glossary manifest. A listed term
+stays in canonical IAST in English, remains linked to its source-word index, and
+uses the existing short hover for a context-specific explanation. Bare
+flattenings forbidden by the entry fail validation; `māyā` may not become only
+“illusion.” An unlisted candidate is review output, never an automatic registry
+addition. New entries require the preserve-or-translate decision procedure and
+human approval. Bhakti deliberately does not inherit the Vedanta reader's full
+grammar cards or school-by-school glossary UI.
+
 Run the hidden difficult-line benchmark after changing either prompt:
 
 ```sh
@@ -151,12 +163,16 @@ and batches; it runs independent songs concurrently while serializing the final
 shared catalogue write:
 
 ```sh
-python3 scripts/bhakti_pipeline.py --workers 3 --publish \
+python3 scripts/bhakti_pipeline.py --workers 4 --publish \
   --song song-slug='https://www.youtube.com/watch?v=…'
 
 # Or: {"songs":[{"slug":"…","source":"/absolute/audio.m4a","searchAliases":["ordinary spelling"], ...}]}
-python3 scripts/bhakti_pipeline.py --workers 3 --publish --batch intake.json
+python3 scripts/bhakti_pipeline.py --workers 4 --publish --batch intake.json
 ```
+
+If every review artifact already exists and only deterministic reader or
+catalogue output needs refreshing, run `--generate-only --batch intake.json`.
+That mode makes no provider calls and reports zero new API cost.
 
 It performs transcript → transcript audit → exact ordered start-only timing →
 focused retry when needed → word glosses → gloss-derived literal
@@ -164,6 +180,14 @@ translation → deterministic reader generation. It writes review evidence benea
 ignored `.transcription/`, and emits no reader/catalogue output when a gate
 fails. It does not commit or push; after the normal visual checks, GitHub
 Actions deploys a path-scoped commit.
+
+Four songs may progress concurrently without producing an uncontrolled API
+burst. A process-wide scheduler independently caps Gemini requests at three,
+starts them at least 350 ms apart, prefers OpenRouter's highest-throughput
+compatible provider, allows provider fallbacks for the same model, and honors
+the server's `Retry-After` header before bounded backoff. This keeps the Mac and
+local stages busy while respecting upstream rather than using a blunt two-song
+limit.
 
 The supported focused timing repair for an already-correct transcript is:
 

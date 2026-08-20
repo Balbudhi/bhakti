@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sourcePolicy": "../vedanta-timeline/docs/SANSKRIT_TRANSLATION_STANDARD.md#8-preserve-or-translate--which-words-stay-sanskrit",
+  "admissionPolicy": "Only curated entries may remain untranslated. Gemini may flag a new candidate but cannot add it or publish it without human review.",
+  "terms": {
+    "maya": {
+      "iast": "māyā",
+      "aliases": ["māyā", "maya"],
+      "forbiddenFlattenings": ["illusion"],
+      "shortGlossHint": "a context-dependent power or condition of worldly appearance"
+    },
+    "raga": {"iast": "rāga", "aliases": ["rāga", "raga"]},
+    "dvesa": {"iast": "dveṣa", "aliases": ["dveṣa", "dvesha", "dvesa"]},
+    "guna": {"iast": "guṇa", "aliases": ["guṇa", "guna"]},
+    "dharma": {"iast": "dharma", "aliases": ["dharma"]},
+    "kama": {"iast": "kāma", "aliases": ["kāma", "kama"]},
+    "prajna": {"iast": "prajñā", "aliases": ["prajñā", "prajna"]},
+    "buddhi": {"iast": "buddhi", "aliases": ["buddhi"]},
+    "manas": {"iast": "manas", "aliases": ["manas"]},
+    "indriya": {"iast": "indriya", "aliases": ["indriya"]},
+    "karma": {"iast": "karma", "aliases": ["karma"]},
+    "yoga": {"iast": "yoga", "aliases": ["yoga"]},
+    "rasa": {"iast": "rasa", "aliases": ["rasa"]},
+    "ahankara": {"iast": "ahaṅkāra", "aliases": ["ahaṅkāra", "ahankara"]},
+    "trsna": {"iast": "tṛṣṇā", "aliases": ["tṛṣṇā", "trishna", "trsna"]},
+    "samadhi": {"iast": "samādhi", "aliases": ["samādhi", "samadhi"]},
+    "samsara": {"iast": "saṃsāra", "aliases": ["saṃsāra", "samsara"]}
+  }
+}

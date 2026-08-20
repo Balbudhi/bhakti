@@ -38,13 +38,17 @@ import naming
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 2
-GLOSS_CONTRACT_VERSION = 2
-TRANSLATION_INPUT_VERSION = 6
+GLOSS_CONTRACT_VERSION = 3
+TRANSLATION_INPUT_VERSION = 7
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
     "cross_line_relation",
 )
+
+
+def preserved_term_registry() -> dict[str, Any]:
+    return json.loads((ROOT / "data" / "preserved_terms.json").read_text(encoding="utf-8"))
 
 
 def parse_args() -> argparse.Namespace:
@@ -55,11 +59,13 @@ def parse_args() -> argparse.Namespace:
                         help="YouTube/media URL with automatic slug, title, and description-credit extraction. Repeat for a batch.")
     parser.add_argument("--batch", type=Path,
                         help="JSON: {songs:[{slug, source, title?, writer?, singer?, composer?, languages?, subjectTags?, searchAliases?}]}")
-    parser.add_argument("--workers", type=int, default=1,
-                        help="Independent songs to process concurrently (default: 1).")
+    parser.add_argument("--workers", type=int, default=4,
+                        help="Independent songs to process concurrently (default: 4; outbound API calls are separately rate-gated).")
     parser.add_argument("--model", default=MODEL)
     parser.add_argument("--publish", action="store_true",
                         help="Generate readers and update data/songs.js after all required checks pass.")
+    parser.add_argument("--generate-only", action="store_true",
+                        help="Publish existing reviewed artifacts without running or paying for API stages; implies --publish.")
     parser.add_argument("--timeout", type=float, default=300)
     parser.add_argument("--force", action="store_true", help="Rerun cached API stages for an existing intake.")
     return parser.parse_args()
@@ -1188,11 +1194,21 @@ def gloss_surface_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str,
 def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]]) -> list[str]:
     errors = gloss_surface_errors(lines, gloss_rows)
     gloss_by_id = {row.get("id"): row for row in gloss_rows}
+    registry = preserved_term_registry().get("terms", {})
     for line in lines:
         line_id = line.get("id", "<unknown>")
         frame = gloss_by_id.get(line_id, {}).get("semantic_frame")
         if not isinstance(frame, dict) or any(not isinstance(frame.get(field), str) for field in SEMANTIC_FRAME_FIELDS):
             errors.append(f"{line_id} lacks a complete semantic frame")
+        for word_index, word in enumerate(gloss_by_id.get(line_id, {}).get("word_glosses", [])):
+            concept_key = word.get("concept_key")
+            preserve = word.get("preserve_in_english")
+            if not isinstance(concept_key, str) or not isinstance(preserve, bool):
+                errors.append(f"{line_id} word gloss {word_index} lacks concept preservation fields")
+            elif concept_key and concept_key not in registry:
+                errors.append(f"{line_id} word gloss {word_index} uses unknown concept key {concept_key!r}")
+            elif preserve and not concept_key:
+                errors.append(f"{line_id} word gloss {word_index} preserves an uncurated concept")
     return errors
 
 
@@ -1204,6 +1220,7 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
             and not gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []))):
         return existing
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
+        term_registry = preserved_term_registry()
         return f"""Create a literal word-by-word reading of the TARGET audited devotional lyrics. Work line by line and use the surrounding song context.
 
 Create exactly one word_gloss entry for each whitespace-delimited surface token in the supplied roman line, in the identical order. The `roman` value must copy that complete displayed surface token exactly; never split sandhi or a written compound into separate entries, and never substitute an underlying dictionary form. Give the contextually correct primary sense first. A gloss is semantic evidence, not an English draft: do not bake a clumsy phrase such as “cast a glance of mercy” into a token gloss when the phrase-level meaning is “look upon someone with mercy.” Put phrase meaning and idiom in the semantic frame instead.
@@ -1212,6 +1229,11 @@ Before any later translation, explicitly reconstruct the semantic frame: who is 
 
 Explain internal morphemes inside the token's `gloss` or `grammar_note`. Give a short grammar note for ellipsis, agreement, sandhi, compounds, or syntax. Choose the contextually supported sense of a polysemous word; do not call ordinary dictionary polysemy uncertain. Use uncertainty only when the audited lyric itself remains genuinely unresolved. Do not write a fluent English sentence in this stage.
 
+Only terms in the CURATED PRESERVED-TERM REGISTRY may remain in IAST in English. For a matching term, set `concept_key`, set `preserve_in_english=true`, use the canonical IAST form later, and write a short context-specific hover gloss rather than a flattening synonym. In particular, bare “illusion” is not an adequate replacement for `māyā`. For ordinary words, set `concept_key` to the empty string and `preserve_in_english=false`. If a new term seems irreducible but is not curated, do not add it: put the candidate and reason in uncertainty so publication stops for human review.
+
+CURATED PRESERVED-TERM REGISTRY:
+{json.dumps(term_registry, ensure_ascii=False)}
+
 TARGET LYRICS (return these IDs only):
 {json.dumps(batch, ensure_ascii=False)}
 
@@ -1219,12 +1241,13 @@ NEARBY CONTEXT (do not return these IDs unless also targets):
 {json.dumps(context, ensure_ascii=False)}
 
 Return strict JSON:
-{{"glosses":[{{"id":"canonical-id","word_glosses":[{{"roman":"exact token","gloss":"contextual literal meaning"}}],"semantic_frame":{{"agent":"","action_or_state":"","patient_or_complement":"","modifiers":"","negation_or_modality":"","literal_image_and_agency":"","idiom_or_phrase":"","cross_line_relation":""}},"grammar_note":"","uncertainty":""}}]}}"""
+{{"glosses":[{{"id":"canonical-id","word_glosses":[{{"roman":"exact token","gloss":"short contextual meaning","concept_key":"","preserve_in_english":false}}],"semantic_frame":{{"agent":"","action_or_state":"","patient_or_complement":"","modifiers":"","negation_or_modality":"","literal_image_and_agency":"","idiom_or_phrase":"","cross_line_relation":""}},"grammar_note":"","uncertainty":""}}]}}"""
     schema = {"type": "object", "properties": {"glosses": {"type": "array", "items": {
         "type": "object", "properties": {
             "id": {"type": "string"}, "word_glosses": {"type": "array", "items": {"type": "object", "properties": {
-                "roman": {"type": "string"}, "gloss": {"type": "string"}},
-                "required": ["roman", "gloss"], "additionalProperties": False}},
+                "roman": {"type": "string"}, "gloss": {"type": "string"},
+                "concept_key": {"type": "string"}, "preserve_in_english": {"type": "boolean"}},
+                "required": ["roman", "gloss", "concept_key", "preserve_in_english"], "additionalProperties": False}},
             "semantic_frame": {"type": "object", "properties": {
                 field: {"type": "string"} for field in SEMANTIC_FRAME_FIELDS},
                 "required": list(SEMANTIC_FRAME_FIELDS), "additionalProperties": False},
@@ -1371,6 +1394,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
 
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
         batch_glosses = [gloss_by_id[line['id']] for line in batch]
+        term_registry = preserved_term_registry()
         return f"""Write faithful, complete English translations from the supplied word glosses, semantic frames, and grammar notes ONLY. The semantic frame is authoritative for agency, action/state, patient/complement, negation/modality, literal image, idiom, and cross-line syntax. Do not introduce a looser synonym, devotional interpretation, or omission that it does not support.
 
 For each line, reason in this order before choosing the final English:
@@ -1379,8 +1403,9 @@ For each line, reason in this order before choosing the final English:
 3. Preserve the source's agent and experiencer exactly. Never change “my breath abandons me” into “I breathe my last,” a deity dwelling in a palm into an abstract spiritual state, or an interior image into a generic emotion merely because the alternative is conventional English.
 4. Apply an established idiom only when `idiom_or_phrase` identifies it and the idiom does not erase a deliberate image. The devotional phrase `raham nazar` means “look upon [someone] with mercy”; do not render it as “cast a glance.” Conversely, do not invent a replacement metaphor such as “kindle” or “stir” when the source image is that a feeling “takes hold.” A possessed relational noun such as a garment hem should remain explicit rather than becoming an ambiguous “your hem.”
 5. Make only the smallest grammatical adjustments needed for intelligible English. Prefer the source's transparent spatial vocabulary (“from the inside”) over a smoother intensifying substitute (“deep within”) unless depth is lexically present. Literal and poetic force outrank smoothness.
+6. If a word has `preserve_in_english=true`, print the registry's canonical IAST term in `literal_english` and map that English segment to the word's index. Do not replace it with a forbidden flattening. Use the short word gloss only in the hover data, not as substitute prose in the lyric.
 
-For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list.
+For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list. Every source word index must appear in at least one segment. Map particles, postpositions, tense/aspect, negation, modality, and honorifics to the English phrase they help create rather than leaving their source index uncovered.
 
 Write lucid devotional English, but do not confuse conventional English with better poetry. Literal strangeness, repetition, personification, unusual agency, and concrete bodily or ritual imagery may be the point. Preserve a supported image such as “my breath will abandon me” even if an English idiom such as “I will breathe my last” sounds smoother. Never replace the source's agency, metaphor, ambiguity, or emotional logic merely to sound idiomatic. Correct wording only when it is demonstrably wrong, ungrammatical, or obstructs understanding. Avoid legalistic filler, accidental inversion, duplicate modifiers, and unsupported editorial verbs. Retain darshan or sacred vision, an alms bag, garment hem, cupped or open palm, lotus, dust, ocean, threshold, cage, and Mount Meru when the source supports them.
 
@@ -1391,6 +1416,9 @@ TARGET audited source lines (return these IDs only):
 
 TARGET word gloss record:
 {json.dumps(batch_glosses, ensure_ascii=False)}
+
+CURATED PRESERVED-TERM REGISTRY:
+{json.dumps(term_registry, ensure_ascii=False)}
 
 NEARBY source context (do not return these IDs unless also targets):
 {json.dumps(context, ensure_ascii=False)}
@@ -1494,6 +1522,7 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
     errors: list[str] = gloss_surface_errors(lines, gloss_rows)
     gloss_by_id = {row.get("id"): row for row in gloss_rows}
     translation_by_id = {row.get("id"): row for row in translation_rows}
+    registry = preserved_term_registry().get("terms", {})
     for line in lines:
         line_id = line.get("id", "<unknown>")
         source, roman = str(line.get("source_text", "")).strip(), str(line.get("roman", "")).strip()
@@ -1532,6 +1561,19 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
             for word_index in segment.get("word_indices", []):
                 if not isinstance(word_index, int) or not 0 <= word_index < len(words):
                     errors.append(f"{line_id} English segment uses invalid word index {word_index!r}")
+        linked_indices = {word_index for segment in translation.get("segments", [])
+                          for word_index in segment.get("word_indices", []) if isinstance(word_index, int)}
+        missing_indices = sorted(set(range(len(words))) - linked_indices)
+        if missing_indices:
+            errors.append(f"{line_id} English segments omit source word indices {missing_indices}")
+        english = str(translation.get("literal_english", ""))
+        for word_index, word in enumerate(words):
+            if not word.get("preserve_in_english"):
+                continue
+            concept = registry.get(word.get("concept_key"), {})
+            canonical = str(concept.get("iast", ""))
+            if not canonical or canonical.casefold() not in english.casefold():
+                errors.append(f"{line_id} must preserve {canonical or word.get('concept_key')} in English")
     return errors
 
 
@@ -1655,8 +1697,8 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
     meta_from_model = audited["packet"].get("metadata", {})
-    raw_title = job.get("title") or source.get("title") or job["slug"].replace("-", " ").title()
-    title = reviewed_display_title(str(raw_title), lines)
+    raw_title = job.get("displayTitle") or job.get("title") or source.get("title") or job["slug"].replace("-", " ").title()
+    title = str(raw_title) if job.get("displayTitle") else reviewed_display_title(str(raw_title), lines)
     # Do not manufacture a public role from a model candidate. Callers may
     # supply researched roles; otherwise the compact credit line is absent.
     writer = str(job.get("writer", "")).strip()
@@ -1755,14 +1797,19 @@ def main() -> int:
     options = parse_args()
     jobs = normalise_jobs(options)
     results: list[dict[str, Any]] = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, options.workers)) as pool:
-        futures = {pool.submit(run_one, job, options): job["slug"] for job in jobs}
-        for future in concurrent.futures.as_completed(futures):
-            slug = futures[future]
-            try:
-                results.append(future.result())
-            except Exception as exc:  # retain other batch results but exit non-zero
-                results.append({"slug": slug, "status": "blocked", "error": str(exc)})
+    if options.generate_only:
+        options.publish = True
+        results = [{"slug": job["slug"], "status": "review-required", "reported_openrouter_cost": 0.0}
+                   for job in jobs]
+    else:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, options.workers)) as pool:
+            futures = {pool.submit(run_one, job, options): job["slug"] for job in jobs}
+            for future in concurrent.futures.as_completed(futures):
+                slug = futures[future]
+                try:
+                    results.append(future.result())
+                except Exception as exc:  # retain other batch results but exit non-zero
+                    results.append({"slug": slug, "status": "blocked", "error": str(exc)})
     if options.publish:
         # API stages above may run concurrently. Writing the shared catalogue
         # is deliberately serialized so parallel songs cannot lose entries.
