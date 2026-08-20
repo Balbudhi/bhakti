@@ -1607,12 +1607,14 @@ def page_html(meta: dict[str, Any]) -> str:
     <section class="song-root" id="songRoot" aria-live="polite"></section>
   </main>
   <div class="audio-player" id="audioPlayer">
+    <a class="song-home" href="/" aria-label="All songs" title="All songs"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20h-5v-6H9v6H4v-9.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></a>
     <button class="ap-btn" id="apPlayPause" type="button" aria-label="Play"><svg class="ap-icon ap-icon-play" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg><svg class="ap-icon ap-icon-pause" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg></button>
     <div class="ap-progress" id="apProgress"><div class="ap-progress-bar" id="apProgressBar"></div></div>
+    <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260820-4"></script>
-  <script src="../../assets/song.js?v=contract-20260820-4"></script>
+  <script src="data.js?v=contract-20260820-5"></script>
+  <script src="../../assets/song.js?v=contract-20260820-5"></script>
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 </body>
 </html>

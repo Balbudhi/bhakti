@@ -383,6 +383,9 @@ function renderLine(line, repeats, instanceId, defaultSourceLanguage) {
     : "";
   return `
     <article class="line" id="${instanceId}">
+      <button class="line-seek" type="button" aria-label="Play from this line" title="Play from this line">
+        <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
+      </button>
       ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${escapeHtml(line.source)}</div>` : ""}
       <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}</div>
       <div class="line-english">${renderEnglishWithSpans(line.english)}</div>
@@ -589,9 +592,12 @@ function setupKaraoke() {
     article.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 
-  // Click a line to jump audio there (only if it has a timing).
+  // Seeking is explicit. Lyric text remains available for selection, copying,
+  // and word meanings without unexpectedly moving audio on touch devices.
   document.getElementById("songRoot").addEventListener("click", e => {
-    const article = e.target.closest(".line");
+    const seekButton = e.target.closest(".line-seek");
+    if (!seekButton) return;
+    const article = seekButton.closest(".line");
     if (!article) return;
     const m = article.id.match(/^ln-(\d+)-/);
     if (!m) return;
@@ -627,7 +633,14 @@ function setupAudioPlayer() {
   const btn     = document.getElementById("apPlayPause");
   const progEl  = document.getElementById("apProgress");
   const barEl   = document.getElementById("apProgressBar");
+  const elapsed = document.getElementById("apElapsed");
+  const duration = document.getElementById("apDuration");
   if (!audio || !btn) return;
+
+  const updateTime = () => {
+    if (elapsed) elapsed.textContent = fmtTime(audio.currentTime || 0);
+    if (duration) duration.textContent = fmtTime(audio.duration);
+  };
 
   btn.addEventListener("click", () => {
     if (audio.paused) audio.play();
@@ -635,11 +648,14 @@ function setupAudioPlayer() {
   });
   audio.addEventListener("play",  () => { btn.classList.add("is-playing");    btn.setAttribute("aria-label", "Pause"); });
   audio.addEventListener("pause", () => { btn.classList.remove("is-playing"); btn.setAttribute("aria-label", "Play");  });
+  audio.addEventListener("loadedmetadata", updateTime);
+  audio.addEventListener("durationchange", updateTime);
 
   audio.addEventListener("timeupdate", () => {
     if (isDragging) return;                       // don't fight the user
     const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
     barEl.style.width = pct + "%";
+    updateTime();
   });
 
   // Drag-to-seek on the progress bar. Pointer events unify mouse + touch.
@@ -651,6 +667,7 @@ function setupAudioPlayer() {
     const pct = Math.max(0, Math.min(1, x / r.width));
     audio.currentTime = pct * audio.duration;
     barEl.style.width = (pct * 100) + "%";
+    updateTime();
   };
   progEl.addEventListener("pointerdown", e => {
     isDragging = true;
@@ -676,6 +693,7 @@ function setupAudioPlayer() {
     e.preventDefault();
     if (audio.paused) audio.play(); else audio.pause();
   });
+  updateTime();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
