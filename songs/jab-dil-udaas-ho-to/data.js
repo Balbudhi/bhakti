@@ -20,7 +20,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "jab_dil_udaas_ho_to": {
     "roman": "Jab dil udās ho to",
-    "english": "When the heart is {2:despondent}…",
+    "english": "{0:When}{1: the heart}{2,3: is despondent…}",
     "words": [
       {
         "roman": "Jab",
@@ -44,7 +44,7 @@ window.SONG_LINES = {
   },
   "sai_ka_naam_lena": {
     "roman": "Sāīṅ kā nām lenā",
-    "english": "…{3:take} {0:Sai’s} {2:name}.",
+    "english": "{3:…take}{0,1: Sai’s}{2: name.}",
     "words": [
       {
         "roman": "Sāīṅ",
@@ -68,7 +68,7 @@ window.SONG_LINES = {
   },
   "jeevan_soona_lage_to": {
     "roman": "Jīvan sūnā lage to",
-    "english": "When life {2:feels} {1:empty}…",
+    "english": "{3:When}{0: life}{2: feels}{1: empty…}",
     "words": [
       {
         "roman": "Jīvan",
@@ -92,7 +92,7 @@ window.SONG_LINES = {
   },
   "jab_aafat_ghere_tujhko": {
     "roman": "Jab āfat ghere tujhko",
-    "english": "When calamity {1:surrounds} {2:you}…",
+    "english": "{0:When}{1: calamity}{2: surrounds}{3: you…}",
     "words": [
       {
         "roman": "Jab",
@@ -116,7 +116,7 @@ window.SONG_LINES = {
   },
   "sab_chhod_de_tera_saath": {
     "roman": "Sab chhoṛ de terā sāth",
-    "english": "When everyone {1:leaves} {2:your} {3:company}…",
+    "english": "{0:When everyone}{1: leaves}{2: your}{3: company…}",
     "words": [
       {
         "roman": "Sab",
@@ -140,7 +140,7 @@ window.SONG_LINES = {
   },
   "jab_kahin_na_mile_sahaara": {
     "roman": "Jab kahīṅ na mile sahārā",
-    "english": "When no {3:support} is {2:found} anywhere…",
+    "english": "{0:When}{2: no}{3: support}{2: is found}{1: anywhere…}",
     "words": [
       {
         "roman": "Jab",
@@ -164,7 +164,7 @@ window.SONG_LINES = {
   },
   "jeevan_ka_har_din_to": {
     "roman": "Jīvan kā har din to",
-    "english": "Every day of life, indeed…",
+    "english": "{2:Every}{3: day}{0,1: of life,}{4: indeed…}",
     "words": [
       {
         "roman": "Jīvan",
@@ -192,7 +192,7 @@ window.SONG_LINES = {
   },
   "roshan_nahin_hota": {
     "roman": "Roshan nahīṅ hotā",
-    "english": "…does not {0:become bright}.",
+    "english": "{1:…does not}{2: become}{0: bright.}",
     "words": [
       {
         "roman": "Roshan",
@@ -212,7 +212,7 @@ window.SONG_LINES = {
   },
   "jab_shaam_nazar_aaye_to": {
     "roman": "Jab śām nazar āe to",
-    "english": "When evening {2:comes into view}…",
+    "english": "{0,3:When}{1: evening}{2: comes into view…}",
     "words": [
       {
         "roman": "Jab",
@@ -236,7 +236,7 @@ window.SONG_LINES = {
   },
   "is_ghat_ka_kya_bharosa": {
     "roman": "Is ghaṭ kā kyā bharosā",
-    "english": "What {3:certainty} is there of this {1:body}…?",
+    "english": "{3:What certainty is there}{2: of}{0: this}{1: body…?}",
     "words": [
       {
         "roman": "Is",
@@ -260,7 +260,7 @@ window.SONG_LINES = {
   },
   "ye_kabhi_bhi_chhoot_jaaye": {
     "roman": "Ye kabhī bhī chhūṭ jāe",
-    "english": "It may {4:fall away} at any time.",
+    "english": "{0:It}{3,4: may fall away}{1,2: at any time.}",
     "words": [
       {
         "roman": "Ye",
@@ -288,7 +288,7 @@ window.SONG_LINES = {
   },
   "jab_aakhiri_saans_chale_to": {
     "roman": "Jab ākhirī sāṅs chale to",
-    "english": "When the final {2:breath} moves…",
+    "english": "{0,4:When}{1: the final}{2: breath}{3: moves…}",
     "words": [
       {
         "roman": "Jab",

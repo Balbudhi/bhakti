@@ -23,7 +23,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation_1": {
     "roman": "Yā devī sarvabhūteṣu dayā-rūpeṇa saṃsthitā",
-    "english": "{1:O Goddess}, {5:who abides} {2:in all beings} {3,4:as compassion}.",
+    "english": "{1:O Goddess, }{0:who }{5:abides }{2:in all beings }{4:as }{3:compassion.}",
     "words": [
       {
         "roman": "Yā",
@@ -55,7 +55,7 @@ window.SONG_LINES = {
   },
   "invocation_2": {
     "roman": "Namastasyai namastasyai namastasyai namo namaḥ",
-    "english": "{0:I bow to Her}, {1:I bow to Her}, {2:I bow to Her} — {3:reverent bows again and again}.",
+    "english": "{0:I bow to Her, }{1:I bow to Her, }{2:I bow to Her }— {3:reverent bows again and again.}",
     "words": [
       {
         "roman": "Namastasyai",
@@ -79,7 +79,7 @@ window.SONG_LINES = {
   },
   "invocation_3": {
     "roman": "Durgā durgati dūr kar, maṅgal kar sab kāj",
-    "english": "{0:O Durgā}, {3:drive} {1:misfortune} {2:away}; {5:make} {6:all} {7:undertakings} {4:auspicious}.",
+    "english": "{0:O Durgā, }{3:drive }{1:misfortune }{2:away; }{5:make }{6:all }{7:undertakings }{4:auspicious.}",
     "words": [
       {
         "roman": "Durgā",
@@ -119,7 +119,7 @@ window.SONG_LINES = {
   },
   "invocation_4": {
     "roman": "Man mandir ujjval karo, kṛpā karke āj",
-    "english": "{3:Make bright} the {1:temple} of my {0:heart}, {4,5:by Your grace}, {6:today}.",
+    "english": "{3:Make }{2:bright }{1:the temple }{0:of my heart, }{4,5:by Your grace, }{6:today.}",
     "words": [
       {
         "roman": "Man",
@@ -155,7 +155,7 @@ window.SONG_LINES = {
   },
   "refrain_a": {
     "roman": "Aisā pyār bahā de maiyā",
-    "english": "{2:Pour} such {1:love}, {3:O Mother}.",
+    "english": "{2:Pour }{0:such }{1:love, }{3:O Mother.}",
     "words": [
       {
         "roman": "Aisā",
@@ -179,7 +179,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Charaṇoṅ se lag jāūṅ main",
-    "english": "May {3:I} {2:cling} {1:to} {0:Your feet}.",
+    "english": "{2,3:May I cling }{1:to }{0:Your feet.}",
     "words": [
       {
         "roman": "Charaṇoṅ",
@@ -203,7 +203,7 @@ window.SONG_LINES = {
   },
   "refrain_c": {
     "roman": "Sab andhakār miṭā de maiyā",
-    "english": "{2:Erase} {0:all} {1:darkness}, {3:O Mother}.",
+    "english": "{2:Erase }{0:all }{1:darkness, }{3:O Mother.}",
     "words": [
       {
         "roman": "Sab",
@@ -227,7 +227,7 @@ window.SONG_LINES = {
   },
   "refrain_d": {
     "roman": "Daras terā kar pāūṅ main",
-    "english": "May {3:I} {2:attain} {0:the sacred sight} of {1:You}.",
+    "english": "{2,3:May I attain }{0:the sacred sight }{1:of You.}",
     "words": [
       {
         "roman": "Daras",
@@ -251,7 +251,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Jag meṅ ākar jag ko maiyā, ab tak na pahchān sakā",
-    "english": "{2:Having come} {1:into} the {0:world}, {5:Mother}, I have {6,7:not yet} {8:recognized} the {3:world}.",
+    "english": "{2:Having come }{0,1:into the world, }{5:Mother, }{9:I have }{7:not }{6:yet }{8:recognized }{3,4:the world.}",
     "words": [
       {
         "roman": "Jag",
@@ -299,7 +299,7 @@ window.SONG_LINES = {
   },
   "v1a_tail": {
     "roman": "Ab tak na pahchān sakā",
-    "english": "I have {0:not yet} {2:recognized} it.",
+    "english": "{3:I have }{1:not }{0:yet }{2:recognized }it.",
     "words": [
       {
         "roman": "Ab tak",
@@ -323,7 +323,7 @@ window.SONG_LINES = {
   },
   "v1b": {
     "roman": "Kyoṅ āyā hūṅ, kahāṅ hai jānā",
-    "english": "{0:Why} {2:have I come}, and {3:where} {5:must I go}?",
+    "english": "{0:Why }{1,2:have I come, }and {3:where }{4,5:must I go?}",
     "words": [
       {
         "roman": "Kyoṅ",
@@ -355,7 +355,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Ye bhī na main jān sakā",
-    "english": "{0,1:Even this}, {3:I could not} {4,5:know}.",
+    "english": "{1:Even }{0:this, }{3:I }{5:could }{2:not }{4:know.}",
     "words": [
       {
         "roman": "Ye",
@@ -387,7 +387,7 @@ window.SONG_LINES = {
   },
   "v1d_a": {
     "roman": "Tū hai agam agochar maiyā",
-    "english": "{0:You} are {2:beyond reach} and {3:beyond the senses}, {4:Mother}.",
+    "english": "{0,1:You are }{2:beyond reach }and {3:beyond the senses, }{4:Mother.}",
     "words": [
       {
         "roman": "Tū",
@@ -415,7 +415,7 @@ window.SONG_LINES = {
   },
   "v1d_b": {
     "roman": "Kaho kaise lakh pāūṅ main",
-    "english": "{0:Tell me}: how may {4:I} {2:behold} You?",
+    "english": "{0:Tell me: }{1:how }{3,4:may I }{2:behold }You?",
     "words": [
       {
         "roman": "Kaho",
@@ -443,7 +443,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Kar kṛpā jagadambe bhavānī, main bālak nādān hūṅ",
-    "english": "{0,1:Show grace}, {2:Mother of the world}, {3:Bhavānī}; {4:I} am an {5,6:innocent child}.",
+    "english": "{0,1:Show grace, }{2:Mother of the world, }{3:Bhavānī; }{4:I }{7:am }{6:an innocent }{5:child.}",
     "words": [
       {
         "roman": "Kar",
@@ -483,7 +483,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Nahīṅ ārādhan jap tap jānūṅ, main avaguṇ kī khān hūṅ",
-    "english": "{5:I} know neither {1:worship}, {2:repetition of a sacred name}, nor {3:austerity}; I am a {8:mine} of {6:flaws}.",
+    "english": "{4:I know }{0:neither }{1:worship, }{2:repetition of a sacred name, }{0:nor }{3:austerity; }{5:I }{9:am }{8:a mine }{7:of }{6:flaws.}",
     "words": [
       {
         "roman": "Nahīṅ",
@@ -531,7 +531,7 @@ window.SONG_LINES = {
   },
   "v2a_tail": {
     "roman": "Main bālak nādān hūṅ",
-    "english": "{0:I} am an {1:innocent child}.",
+    "english": "{0:I }{3:am }{2:an innocent }{1:child.}",
     "words": [
       {
         "roman": "Main",
@@ -555,7 +555,7 @@ window.SONG_LINES = {
   },
   "v2b_tail": {
     "roman": "Main avaguṇ kī khān hūṅ",
-    "english": "{0:I} am a {3:mine} of {1:flaws}.",
+    "english": "{0:I }{4:am }{3:a mine }{2:of }{1:flaws.}",
     "words": [
       {
         "roman": "Main",
@@ -583,7 +583,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "De aisā vardān he maiyā",
-    "english": "{0:Give} such a {2:boon}, {3:O Mother}.",
+    "english": "{0:Give }{1:such }{2:a boon, }{3,4:O Mother.}",
     "words": [
       {
         "roman": "De",
@@ -611,7 +611,7 @@ window.SONG_LINES = {
   },
   "v2d": {
     "roman": "De aisā vardān he maiyā, sumiran terā gāūṅ main",
-    "english": "{0:Give} such a {2:boon}, {3,4:O Mother}: may {8:I} {7:sing} {5,6:Your remembrance}.",
+    "english": "{0:Give }{1:such }{2:a boon, }{3,4:O Mother: }{7,8:may I }{7:sing }{6:Your }{5:remembrance.}",
     "words": [
       {
         "roman": "De",
@@ -655,7 +655,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Main bālak, tū maiyā merī, nish din terī oṭ hai",
-    "english": "{0:I} am a {1:child}; {2:You} are my {3:Mother}. {5:Day and night}, {6:Your} {7:protection} is mine.",
+    "english": "{0,1:I am a child; }{2:You are }{4:my }{3:Mother. }{5:Day and night, }{6:Your }{7:protection }{8:is mine.}",
     "words": [
       {
         "roman": "Main",
@@ -699,7 +699,7 @@ window.SONG_LINES = {
   },
   "v3a_tail": {
     "roman": "Nish din terī oṭ hai",
-    "english": "{0:Day and night}, {1:Your} {2:protection} is mine.",
+    "english": "{0:Day and night, }{1:Your }{2:protection }{3:is mine.}",
     "words": [
       {
         "roman": "Nish din",
@@ -723,7 +723,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Terī kṛpā hī miṭegī, bhītar jo bhī khoṭ hai",
-    "english": "Only {0,1,2:by Your grace} will {3:be erased} whatever {6:flaw} is {4:within}.",
+    "english": "{2:Only }by {0:Your }{1:grace }{3:will be erased }{5:whatever }{6:flaw }{7:is }{4:within.}",
     "words": [
       {
         "roman": "Terī",
@@ -763,7 +763,7 @@ window.SONG_LINES = {
   },
   "v3b_tail": {
     "roman": "Bhītar jo bhī khoṭ hai",
-    "english": "Whatever {2:flaw} is {0:within}.",
+    "english": "{1:Whatever }{2:flaw }{3:is }{0:within.}",
     "words": [
       {
         "roman": "Bhītar",
@@ -787,7 +787,7 @@ window.SONG_LINES = {
   },
   "v3c": {
     "roman": "Sharaṇ lagā lo mujhko maiyā",
-    "english": "{0:Take} {1:me} into {2:Your refuge}, {3:Mother}.",
+    "english": "{1:Take }{2:me }{0:into Your refuge, }{3:Mother.}",
     "words": [
       {
         "roman": "Sharaṇ",
@@ -811,7 +811,7 @@ window.SONG_LINES = {
   },
   "v3d": {
     "roman": "Sharaṇ lagā lo mujhko maiyā, tujh par balī balī jāūṅ main",
-    "english": "{1:Take} {2:me} into {0:Your refuge}, {3:Mother}; {8:I} {7:offer myself wholly} to {4,5:You}.",
+    "english": "{1:Take }{2:me }{0:into Your refuge, }{3:Mother; }{8:I }{6,7:offer myself wholly }{4,5:to You.}",
     "words": [
       {
         "roman": "Sharaṇ",
@@ -855,7 +855,7 @@ window.SONG_LINES = {
   },
   "alap": {
     "roman": "Ā... ā...",
-    "english": "{0:Wordless melodic vocalization}.",
+    "english": "{0:Wordless melodic vocalization.}",
     "words": [
       {
         "roman": "Ā... ā...",

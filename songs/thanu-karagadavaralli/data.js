@@ -23,7 +23,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "tanu": {
     "roman": "Tanu karagadavaralli majjanavanolleyayyā nīnu",
-    "english": "Among {2:those whose} {0:body} {1:has not melted}, {5:You} will not accept {3:ritual bathing}.",
+    "english": "{2:Among those whose }{0:body }{1:has not melted, }{5:You }{4:will not accept }{3:ritual bathing.}",
     "words": [
       {
         "roman": "Tanu",
@@ -55,7 +55,7 @@ window.SONG_LINES = {
   },
   "mana": {
     "roman": "Mana karagadavaralli puṣpavanolleyayyā nīnu",
-    "english": "Among {2:those whose} {0:mind} {1:has not melted}, {5:You} will not accept {3:flowers}.",
+    "english": "{2:Among those whose }{0:mind }{1:has not melted, }{5:You }{4:will not accept }{3:flowers.}",
     "words": [
       {
         "roman": "Mana",
@@ -87,7 +87,7 @@ window.SONG_LINES = {
   },
   "haduli": {
     "roman": "Haḍuligaralladavaralli gandhākṣateyanolleyayyā nīnu",
-    "english": "Among {1:those who are not} {0:tender-hearted}, {4:You} will not accept {2:sandal paste and consecrated rice}.",
+    "english": "{1:Among those who are not }{0:tender-hearted, }{4:You }{3:will not accept }{2:sandal paste and consecrated rice.}",
     "words": [
       {
         "roman": "Haḍuligar",
@@ -115,7 +115,7 @@ window.SONG_LINES = {
   },
   "arivu": {
     "roman": "Arivu kaṇtereyadavaralli āratiyanolleyayyā nīnu",
-    "english": "Among {2:those whose} {0:understanding's} {1:eye has not opened}, {5:You} will not accept {3:lamp-waving}.",
+    "english": "{2:Among those whose }{0:understanding's }{1:eye has not opened, }{5:You }{4:will not accept }{3:lamp-waving.}",
     "words": [
       {
         "roman": "Arivu",
@@ -147,7 +147,7 @@ window.SONG_LINES = {
   },
   "bhava": {
     "roman": "Bhāvaśuddhavilladavaralli dhūpavanolleyayyā nīnu",
-    "english": "Among {2:those} without {0,1:purity of feeling}, {5:You} will not accept {3:incense}.",
+    "english": "{2:Among those without }{1:purity }of {0:feeling, }{5:You }{4:will not accept }{3:incense.}",
     "words": [
       {
         "roman": "Bhāva",
@@ -179,7 +179,7 @@ window.SONG_LINES = {
   },
   "parinami": {
     "roman": "Pariṇāmigalalladavaralli naivēdyavanolleyayyā nīnu",
-    "english": "Among {1:those who are not} {0:inwardly transformed}, {4:You} will not accept {2:the food offering}.",
+    "english": "{1:Among those who are not }{0:inwardly transformed, }{4:You }{3:will not accept }{2:the food offering.}",
     "words": [
       {
         "roman": "Pariṇāmigal",
@@ -207,7 +207,7 @@ window.SONG_LINES = {
   },
   "trikarana": {
     "roman": "Trikaraṇaśuddhavilladavaralli tāmbūlavanolleyayyā nīnu",
-    "english": "Among {2:those} without {0,1:purity in the three faculties}, {5:You} will not accept {3:the betel-leaf offering}.",
+    "english": "{2:Among those without }{1:purity }in {0:the three faculties, }{5:You }{4:will not accept }{3:the betel-leaf offering.}",
     "words": [
       {
         "roman": "Trikaraṇa",
@@ -239,7 +239,7 @@ window.SONG_LINES = {
   },
   "hrudaya": {
     "roman": "Hṛdayakamala araḷadavaralli iralolleyayyā nīnu",
-    "english": "In {3:those whose} {0,1:heart-lotus} {2:has not blossomed}, {5:You} will not {4:remain}.",
+    "english": "{3:In those whose }{0,1:heart-lotus }{2:has not blossomed, }{5:You }{4:will not remain.}",
     "words": [
       {
         "roman": "Hṛdaya",
@@ -271,7 +271,7 @@ window.SONG_LINES = {
   },
   "ennalli": {
     "roman": "Ennalli ēnu uṇṭendu",
-    "english": "{1:What} is {2:there} {0:in me}…",
+    "english": "{1:What }{2:is there }{0:in me…}",
     "words": [
       {
         "roman": "Ennalli",
@@ -291,7 +291,7 @@ window.SONG_LINES = {
   },
   "karasthala": {
     "roman": "Karasthalavanimbugoṇḍe",
-    "english": "{1,2:Having come and dwelt} in {0:my cupped hands}…",
+    "english": "{1,2:Having come and dwelt }{0:in my cupped hands…}",
     "words": [
       {
         "roman": "Karasthala",
@@ -311,7 +311,7 @@ window.SONG_LINES = {
   },
   "chennamalli": {
     "roman": "Hēḷā Chennamallikārjunayyā",
-    "english": "{0:Tell me}, {1:O Chennamallikārjuna}.",
+    "english": "{0:Tell me, }{1:O Chennamallikārjuna.}",
     "words": [
       {
         "roman": "Hēḷā",

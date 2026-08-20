@@ -21,7 +21,7 @@ window.SONG_LINES = {
   "sain_tum_antaryami": {
     "source": "साईं तुम अंतर्यामी",
     "roman": "Sāīṁ tum antaryāmī",
-    "english": "{0:Sai}, {1:You are} the {2:Knower within}.",
+    "english": "{0:Sai, }{1:You are }{2:the Knower within.}",
     "words": [
       {
         "roman": "Sāīṁ",
@@ -40,7 +40,7 @@ window.SONG_LINES = {
   "baba_tum_antaryami": {
     "source": "बाबा तुम अंतर्यामी",
     "roman": "Bābā tum antaryāmī",
-    "english": "{0:Baba}, {1:You are} the {2:Knower within}.",
+    "english": "{0:Baba, }{1:You are }{2:the Knower within.}",
     "words": [
       {
         "roman": "Bābā",
@@ -59,7 +59,7 @@ window.SONG_LINES = {
   "daya_karo_he_swami": {
     "source": "दया करो, दया करो हे स्वामी",
     "roman": "Dayā karo, dayā karo he svāmī",
-    "english": "{0,1:Have mercy}; {2,3:have mercy}, {4:O} {5:Lord}.",
+    "english": "{1:Have }{0:mercy; }{3:have }{2:mercy, }{4:O }{5:Lord.}",
     "words": [
       {
         "roman": "dayā",
@@ -90,7 +90,7 @@ window.SONG_LINES = {
   "ang_ang_mein_rang_sanwara": {
     "source": "अंग अंग में रंग साँवरा",
     "roman": "Aṅg aṅg meṁ raṅg sāṁvarā",
-    "english": "In {0,1:every limb}, the {3,4:dark hue}…",
+    "english": "{2:In }{0,1:every limb}, the {4:dark }{3:hue…}",
     "words": [
       {
         "roman": "aṅg",
@@ -117,7 +117,7 @@ window.SONG_LINES = {
   "gahra_hota_jaaye": {
     "source": "गहरा होता जाए",
     "roman": "Gahrā hotā jāe",
-    "english": "…{1:grows} {0:deeper} and deeper.",
+    "english": "…{1:grows }{0:deeper and deeper.}",
     "words": [
       {
         "roman": "gahrā",
@@ -132,7 +132,7 @@ window.SONG_LINES = {
   "mand_mand_muskan_manohar": {
     "source": "मंद मंद मुसकान मनोहर",
     "roman": "Mand mand musakān manohar",
-    "english": "The {0,1:gentle}, {3:heart-captivating} {2:smile}…",
+    "english": "The {0,1:gentle, }{3:heart-captivating }{2:smile…}",
     "words": [
       {
         "roman": "mand",
@@ -155,7 +155,7 @@ window.SONG_LINES = {
   "sab_dukh_har_le_jaaye": {
     "source": "सब दुख हर ले जाए",
     "roman": "Sab dukh har le jāe",
-    "english": "…{2:takes away} {0:all} {1:sorrow}.",
+    "english": "…{2:takes away }{0:all }{1:sorrow.}",
     "words": [
       {
         "roman": "sab",
@@ -174,7 +174,7 @@ window.SONG_LINES = {
   "main_moorakh_agyaani": {
     "source": "मैं मूरख अज्ञानी",
     "roman": "Maiṁ mūrakh ajñānī",
-    "english": "{0:I am} {1:foolish} and {2:ignorant}.",
+    "english": "{0:I am }{1:foolish }and {2:ignorant.}",
     "words": [
       {
         "roman": "maiṁ",
@@ -193,7 +193,7 @@ window.SONG_LINES = {
   "tere_naam_ki_chadhun_main_paudhi": {
     "source": "तेरे नाम की चढ़ूँ मैं पौड़ी",
     "roman": "Tere nām kī caṛhūṁ maiṁ pauṛī",
-    "english": "I {3:climb} a {5:step} of {0:Your} {1:Name}.",
+    "english": "{4:I }{3:climb }a {5:step }{2:of }{0:Your }{1:Name.}",
     "words": [
       {
         "roman": "tere",
@@ -224,7 +224,7 @@ window.SONG_LINES = {
   "har_pal_main_ghabraun": {
     "source": "हर पल मैं घबराऊँ",
     "roman": "Har pal maiṁ ghabrāūṁ",
-    "english": "At {0,1:every moment}, {2:I} {3:am afraid}.",
+    "english": "At {0:every }{1:moment, }{2:I }{3:am afraid.}",
     "words": [
       {
         "roman": "har",
@@ -247,7 +247,7 @@ window.SONG_LINES = {
   "thaam_ke_rakhiyo_baanh_meri_prabhu": {
     "source": "थाम के रखियो बाँह मेरी प्रभु",
     "roman": "Thām ke rakhiyo bāṁh merī prabhu",
-    "english": "{0,1:Hold fast} my {2:arm}, {4:O Lord}.",
+    "english": "{0,1:Hold fast }{3:my }{2:arm, }O {4:Lord.}",
     "words": [
       {
         "roman": "thām ke",
@@ -274,7 +274,7 @@ window.SONG_LINES = {
   "kahin_main_gir_na_jaaun": {
     "source": "कहीं मैं गिर ना जाऊँ",
     "roman": "Kahīṁ maiṁ gir nā jāūṁ",
-    "english": "{0:Lest} {1:I} {2,3,4:fall}.",
+    "english": "{0:Lest }{1:I }{2,3,4:fall.}",
     "words": [
       {
         "roman": "kahīṁ",
@@ -301,7 +301,7 @@ window.SONG_LINES = {
   "log_karenge_badnami": {
     "source": "लोग करेंगे बदनामी",
     "roman": "Log kareṁge badanāmī",
-    "english": "{0:People} {1:will bring} {2:disrepute}.",
+    "english": "{0:People }{1:will bring }{2:disrepute.}",
     "words": [
       {
         "roman": "log",
@@ -320,7 +320,7 @@ window.SONG_LINES = {
   "main_gunheen_rijhaun_kaise": {
     "source": "मैं गुणहीन रिझाऊँ कैसे",
     "roman": "Maiṁ guṇahīn rijhāūṁ kaise",
-    "english": "How can {0:I}, {1:without virtue}, {2:please You}?",
+    "english": "{3:How can }{0:I, }{1:without virtue, }{2:please }You?",
     "words": [
       {
         "roman": "maiṁ",
@@ -343,7 +343,7 @@ window.SONG_LINES = {
   "tumko_he_natnagar": {
     "source": "तुमको हे नटनागर",
     "roman": "Tumako he naṭanāgar",
-    "english": "{0:You}, {1:O} {2:divine dancer}.",
+    "english": "{0:You, }{1:O }{2:divine dancer.}",
     "words": [
       {
         "roman": "tumako",
@@ -362,7 +362,7 @@ window.SONG_LINES = {
   "ek_yahi_vishwas_hriday_mein": {
     "source": "एक यही विश्वास हृदय में",
     "roman": "Ek yahī viśvās hṛdaya meṁ",
-    "english": "This {0,1:one} {2:faith} is in my {3:heart}:",
+    "english": "{1:This }{0:one }{2:faith }is {4:in }my {3:heart:}",
     "words": [
       {
         "roman": "ek",
@@ -389,7 +389,7 @@ window.SONG_LINES = {
   "tum_ho_daya_ke_sagar": {
     "source": "तुम हो दया के सागर",
     "roman": "Tum ho dayā ke sāgar",
-    "english": "{0,1:You are} the {4:ocean} of {2:mercy}.",
+    "english": "{0:You }{1:are }the {4:ocean }{3:of }{2:mercy.}",
     "words": [
       {
         "roman": "tum",
@@ -416,7 +416,7 @@ window.SONG_LINES = {
   "teen_lok_ke_swami": {
     "source": "तीन लोक के स्वामी",
     "roman": "Tīn lok ke svāmī",
-    "english": "{3:Lord} of the {0:three} {1:worlds}.",
+    "english": "{3:Lord }{2:of }the {0:three }{1:worlds.}",
     "words": [
       {
         "roman": "tīn",

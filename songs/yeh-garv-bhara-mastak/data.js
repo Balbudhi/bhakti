@@ -17,7 +17,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "refrain_a": {
     "roman": "Yeh garv bharā mastak merā",
-    "english": "Let this {2:pride-filled} {3:head} of {4:mine}…",
+    "english": "Let {0:this }{1,2:pride-filled }{3:head }{4:of mine…}",
     "words": [
       {
         "roman": "Yeh",
@@ -45,7 +45,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Prabhu charaṇ-dhūl tak jhukne de",
-    "english": "…{5:bow down} as far as the {2:dust} of {1:the Lord’s} {0:feet}.",
+    "english": "{4,5:…bow down }{3:as far as }{2:the dust }{0:of the Lord’s }{1:feet.}",
     "words": [
       {
         "roman": "Prabhu",
@@ -77,7 +77,7 @@ window.SONG_LINES = {
   },
   "refrain_c": {
     "roman": "Ahaṅkār-vikār bhare man ko",
-    "english": "This {4:mind}, filled with {1:ego} and {2:distorting passions}…",
+    "english": "{3,4:This mind, }{2:filled with }{0:ego }{1:and distorting passions…}",
     "words": [
       {
         "roman": "ahaṅkār",
@@ -105,7 +105,7 @@ window.SONG_LINES = {
   },
   "refrain_d": {
     "roman": "Nij nām kī mālā japne de",
-    "english": "…{5:let it repeat} the {3:rosary} of {1:Your own} {2:Name}.",
+    "english": "{4,5:…let it repeat }{3:the rosary }{2:of }{0:Your own }{1:Name.}",
     "words": [
       {
         "roman": "nij",
@@ -137,7 +137,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Main man ke mail ko dho na sakā",
-    "english": "I {6:could not wash away} the {3:filth} of my {1:mind}.",
+    "english": "{0:I }{6:could not }{5:wash away }{3,4:the filth }{2:of }{1:my mind.}",
     "words": [
       {
         "roman": "Main",
@@ -173,7 +173,7 @@ window.SONG_LINES = {
   },
   "v1b": {
     "roman": "Yeh jīvan terā ho na sakā",
-    "english": "This {1:life} {4:could not become} {2:Yours}.",
+    "english": "{0:This }{1:life }{4:could not }{3:become }{2:Yours.}",
     "words": [
       {
         "roman": "Yeh",
@@ -201,7 +201,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Hāṅ, ho na sakā",
-    "english": "Yes — it {2:could not become} so.",
+    "english": "{0:Yes — }{2:it could not }{1:become so.}",
     "words": [
       {
         "roman": "Hāṅ",
@@ -221,7 +221,7 @@ window.SONG_LINES = {
   },
   "v1d": {
     "roman": "Main premī hūṅ, itnā na jhukā",
-    "english": "I {0:am} a {1:lover}, yet I {5:did not bow} {4:so much}.",
+    "english": "{0:I }{2:am }{1:a lover, }yet I {4:did not }{5:bow }{3:so much.}",
     "words": [
       {
         "roman": "Main",
@@ -253,7 +253,7 @@ window.SONG_LINES = {
   },
   "v1e": {
     "roman": "Gir bhī jo paṛūṅ to uṭhne de",
-    "english": "Even if {1:I fall}, {5:let me rise} again.",
+    "english": "{1:Even }{2:if }{0,3:I fall, }{4,6:let me }{5:rise again.}",
     "words": [
       {
         "roman": "Gir",
@@ -289,7 +289,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Main jñān kī bāton mein khoyā",
-    "english": "I {5:lost myself} in {3:talk} of {1:knowledge}.",
+    "english": "{0:I }{5:lost myself }{4:in }{3:talk }{2:of }{1:knowledge.}",
     "words": [
       {
         "roman": "Main",
@@ -321,7 +321,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Aur karm-hīn paṛhkar soyā",
-    "english": "And, {1:without action}, I {3:read and slept}.",
+    "english": "{0:And, }{1:without action, }{2:I read }{3:and slept.}",
     "words": [
       {
         "roman": "Aur",
@@ -345,7 +345,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Jab āṅkh khulī to man royā",
-    "english": "When my {1:eyes} {2:opened}, the {4:mind} {5:wept}.",
+    "english": "{0:When }{1:my eyes }{2,3:opened, }{4:the mind }{5:wept.}",
     "words": [
       {
         "roman": "Jab",
@@ -377,7 +377,7 @@ window.SONG_LINES = {
   },
   "v2d": {
     "roman": "Jag soye, mujhko jāgne de",
-    "english": "While the {0:world sleeps}, {4:let me awaken}.",
+    "english": "{0:While the world }{1:sleeps, }{4:let }{2:me }{3:awaken.}",
     "words": [
       {
         "roman": "Jag",
@@ -405,7 +405,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Jaisā hūṅ main khoṭā yā kharā",
-    "english": "However {1:I am} — {2:base} or {4:genuine}…",
+    "english": "{0:However }{2:I }{1:am — }{3:base }{4:or }{5:genuine…}",
     "words": [
       {
         "roman": "Jaisā",
@@ -437,7 +437,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Nirdoṣ śaraṇ mein ā to gayā",
-    "english": "I have at least {5:come} into the {3:refuge} of the {1:Faultless One}.",
+    "english": "{5:I have }{4:at least }{3:come }{2:into }{1:the refuge }{0:of the Faultless One.}",
     "words": [
       {
         "roman": "nirdoṣ",
@@ -469,7 +469,7 @@ window.SONG_LINES = {
   },
   "v3c": {
     "roman": "Hāṅ, ā to gayā",
-    "english": "Yes — I {3:have come} indeed.",
+    "english": "{0:Yes — }{1,3:I have come }{2:indeed.}",
     "words": [
       {
         "roman": "Hāṅ",
@@ -493,7 +493,7 @@ window.SONG_LINES = {
   },
   "v3d": {
     "roman": "Ik bār yeh keh de, khālī jā",
-    "english": "Just once, {4:tell me}: ‘{6:go empty-handed}.’",
+    "english": "{0,1:Just once, }{2,3,4:tell me: }{6:‘go }{5:empty-handed.’}",
     "words": [
       {
         "roman": "Ik",
@@ -529,7 +529,7 @@ window.SONG_LINES = {
   },
   "v3e": {
     "roman": "Yā prīt kī rīt jhalakne de",
-    "english": "Or {4,5:let shine forth} the {3:way} of {1:love}.",
+    "english": "{0:Or }{4,5:let shine forth }{3:the way }{2:of }{1:love.}",
     "words": [
       {
         "roman": "Yā",

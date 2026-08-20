@@ -21,7 +21,7 @@ window.SONG_LINES = {
   "refrain_1": {
     "source": "ज़रा तो इतना बता दो साईं",
     "roman": "Zarā to itnā batā do Sāīṃ",
-    "english": "{3:Tell} me {0:just} {2:this much} {1:at least}, {4:O Sai}.",
+    "english": "{3:Tell me }{0:just }{2:this much }{1:at least, }{4:O Sai.}",
     "words": [
       {
         "roman": "Zarā",
@@ -48,7 +48,7 @@ window.SONG_LINES = {
   "refrain_2": {
     "source": "लगी ये कैसी लगा रहे हो",
     "roman": "Lagī ye kaisī lagā rahe ho",
-    "english": "What {2:kind of} {0:longing} is this that {3:You are causing to take hold}?",
+    "english": "{2:What kind of }{0:longing }{1:is this }{3:that You are causing to take hold?}",
     "words": [
       {
         "roman": "Lagī",
@@ -71,7 +71,7 @@ window.SONG_LINES = {
   "refrain_3": {
     "source": "मुझी में रहकर मुझी से अपनी",
     "roman": "Mujhī meṃ rahkar mujhī se apnī",
-    "english": "{1:Dwelling} {0:in me alone}, through {2:me alone}, {3:Your own}…",
+    "english": "{1:Dwelling}{0: in me alone,}{2: through me alone,}{3: Your own…}",
     "words": [
       {
         "roman": "Mujhī meṃ",
@@ -94,7 +94,7 @@ window.SONG_LINES = {
   "refrain_4": {
     "source": "खोज ये कैसी करा रहे हो",
     "roman": "Khoj ye kaisī karā rahe ho",
-    "english": "…what {2:kind of} {0:search} is {1:this} {3:You are making me undertake}?",
+    "english": "…{2:what kind of }{0:search }{1:is this }{3:You are making me undertake?}",
     "words": [
       {
         "roman": "Khoj",
@@ -117,7 +117,7 @@ window.SONG_LINES = {
   "refrain_partial": {
     "source": "ज़रा तो इतना",
     "roman": "Zarā to itnā",
-    "english": "{0:Just} {2:this much} {1:at least}…",
+    "english": "{0:Just }{2:this much }{1:at least…}",
     "words": [
       {
         "roman": "Zarā",
@@ -136,7 +136,7 @@ window.SONG_LINES = {
   "verse_1_1": {
     "source": "हृदय भी तुम हो तुम हो जीवन",
     "roman": "Hṛdaya bhī tum ho tum ho jīvan",
-    "english": "{2:You} are also the {0:heart}; {4:You} are {6:life}.",
+    "english": "{2:You }{3:are }{1:also }{0:the heart; }{4:You }{5:are }{6:life.}",
     "words": [
       {
         "roman": "Hṛdaya",
@@ -171,7 +171,7 @@ window.SONG_LINES = {
   "verse_1_2": {
     "source": "प्रेम तुम ही हो तुम ही हो प्रीतम",
     "roman": "Prem tum hī ho tum hī ho prītam",
-    "english": "{0:Love} is {1:You alone}; the {3:Beloved} is {2:You alone}.",
+    "english": "{0:Love }{1:is You alone; }{3:the Beloved }{2:is You alone.}",
     "words": [
       {
         "roman": "Prem",
@@ -194,7 +194,7 @@ window.SONG_LINES = {
   "verse_1_3": {
     "source": "पुकारता मन पुकारता मन",
     "roman": "Pukārtā man pukārtā man",
-    "english": "The {1:mind calls out}; the {3:mind calls out}.",
+    "english": "{1:The mind }{0:calls out; }{3:the mind }{2:calls out.}",
     "words": [
       {
         "roman": "Pukārtā",
@@ -217,7 +217,7 @@ window.SONG_LINES = {
   "verse_1_4": {
     "source": "तुम्ही को फिर क्यों तुम्ही तो मन में समा रहे हो",
     "roman": "Tumhī ko phir kyoṃ tumhī to man meṃ samā rahe ho",
-    "english": "Why then [does it call] {0:only to You}, when {3,4:You indeed} {6:pervade} the {5:heart}?",
+    "english": "{2:Why }{1:then }[does it call] {0:only to You, }when {3:You }{4:indeed }{6:pervade }{5:the heart?}",
     "words": [
       {
         "roman": "Tumhī ko",
@@ -252,7 +252,7 @@ window.SONG_LINES = {
   "verse_2_1": {
     "source": "प्राण तुम ही हो तुम हो स्पंदन",
     "roman": "Prāṇ tum hī ho tum ho spandan",
-    "english": "{0:Life-breath} is {1:You alone}; {2,3:You are} its {4:pulsation}.",
+    "english": "{0:Life-breath }{1:is You alone; }{2:You }{3:are }{4:its pulsation.}",
     "words": [
       {
         "roman": "Prāṇ",
@@ -279,7 +279,7 @@ window.SONG_LINES = {
   "verse_2_2": {
     "source": "नैन तुम ही हो तुम ही हो दर्शन",
     "roman": "Nain tum hī ho tum hī ho darśan",
-    "english": "The {0:eyes} are {1:You alone}; {3:sacred vision} is {2:You alone}.",
+    "english": "{0:The eyes }{1:are You alone; }{3:sacred vision }{2:is You alone.}",
     "words": [
       {
         "roman": "Nain",
@@ -302,7 +302,7 @@ window.SONG_LINES = {
   "verse_2_3": {
     "source": "तुम्ही को लेकर तुम्ही को लेकर",
     "roman": "Tumhī ko lekar tumhī ko lekar",
-    "english": "{0:Taking You alone} along, {2:taking You alone} along…",
+    "english": "{1:Taking }{0:You alone }{1:along, }{3:taking }{2:You alone }{3:along…}",
     "words": [
       {
         "roman": "Tumhī ko",
@@ -325,7 +325,7 @@ window.SONG_LINES = {
   "verse_2_4": {
     "source": "तुम्ही को ढूँढूँ ये कैसी रीति चला रहे हो",
     "roman": "Tumhī ko ḍhūṇḍhūṃ ye kaisī rīti chalā rahe ho",
-    "english": "…{1:I search for} {0:You alone}: what {3:kind of} {4:practice} is {2:this} {5:You are setting in motion}?",
+    "english": "…{1:I search for }{0:You alone: }{3:what kind of }{4:practice }{2:is this }{5:You are setting in motion?}",
     "words": [
       {
         "roman": "Tumhī ko",
