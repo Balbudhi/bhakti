@@ -29,7 +29,27 @@ html, body {
   padding: 80px 36px 140px;
   color: var(--kh-ink);
   font-family: var(--kh-serif);
+  padding-bottom: calc(140px + env(safe-area-inset-bottom));
 }
+
+.song-home {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--kh-ink);
+  background: transparent;
+  border: 1px solid var(--kh-ink-mid);
+  border-radius: 50%;
+  text-decoration: none;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 140ms ease, transform 120ms ease;
+}
+.song-home:hover { background: rgba(244, 234, 208, 0.10); border-color: rgba(244, 234, 208, 0.55); }
+.song-home:active { transform: scale(0.94); }
+.song-home:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 3px; }
 
 /* ---------- Hint inside the hero, above the divider ---------- */
 .song-hint {
@@ -86,8 +106,8 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 60px;
-  padding: 0 28px;
+  min-height: 60px;
+  padding: 0 28px max(0px, env(safe-area-inset-bottom));
   background: var(--kh-bg);
   display: flex;
   align-items: center;
@@ -147,24 +167,63 @@ html, body {
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum" 1;
   white-space: nowrap;
-  min-width: 40px;
+  min-width: 82px;
   text-align: center;
   letter-spacing: 0.02em;
   font-weight: 400;
 }
+.ap-time-sep { color: var(--kh-ink-mid); padding: 0 3px; }
 .ap-time-total { color: var(--kh-ink-soft); }
 .audio-player audio { display: none; }
 
 /* ---------- Line block ---------- */
 .line {
+  position: relative;
   margin: 0 0 36px;
-  padding: 6px 16px;
+  padding: 6px 56px 6px 16px;
   margin-left: -16px;
   margin-right: -16px;
   text-align: left;
   border-radius: 4px;
   transition: background-color 280ms ease;
 }
+.line-source,
+.line-roman,
+.line-english {
+  -webkit-user-select: text;
+  user-select: text;
+}
+.line-seek {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--kh-ink-mid);
+  border-radius: 50%;
+  color: var(--kh-ink-soft);
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0.58;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 140ms ease, transform 120ms ease;
+}
+.line-seek svg { margin-left: 1px; }
+.line:hover .line-seek,
+.line.is-singing .line-seek,
+.line-seek:focus-visible {
+  opacity: 1;
+  color: var(--kh-ink);
+  border-color: rgba(244, 234, 208, 0.55);
+}
+.line-seek:hover { background: rgba(244, 234, 208, 0.08); }
+.line-seek:active { transform: scale(0.92); }
+.line-seek:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 2px; }
 .line.is-singing {
   background: rgba(244, 234, 208, 0.06);
 }
@@ -270,11 +329,12 @@ html, body {
 
 /* ---------- Mobile ---------- */
 @media (max-width: 720px) {
-  .song-page { padding: 52px 22px 120px; }
+  .song-page { padding: 52px 22px calc(130px + env(safe-area-inset-bottom)); }
   .song-title { font-size: 40px; line-height: 1.15; }
   .song-attrib em { font-size: 19px; }
   .song-hero { margin-bottom: 56px; padding-bottom: 28px; }
-  .line { margin-bottom: 32px; padding: 5px 12px; margin-left: -12px; margin-right: -12px; }
+  .line { margin-bottom: 32px; padding: 5px 48px 5px 12px; margin-left: -12px; margin-right: -12px; }
+  .line-seek { top: 8px; right: 10px; width: 32px; height: 32px; }
   .line-roman { font-size: 23px; line-height: 1.55; font-weight: 400; }
   .line-english { font-size: 20px; line-height: 1.55; }
   .rep { font-size: 14px; padding: 2px 11px; margin-left: 12px; }
@@ -286,17 +346,18 @@ html, body {
   }
 
   .audio-player {
-    height: 62px;
-    padding: 0 18px;
+    min-height: 62px;
+    padding: 0 18px max(0px, env(safe-area-inset-bottom));
     gap: 14px;
   }
   .ap-btn { width: 36px; height: 36px; }
-  .ap-time { font-size: 15px; min-width: 36px; }
+  .song-home { width: 36px; height: 36px; }
+  .ap-time { font-size: 14px; min-width: 74px; }
 }
 
 @media (max-width: 380px) {
   .audio-player { padding: 0 14px; gap: 10px; }
-  .ap-time-total { display: none; }
+  .ap-time { font-size: 13px; min-width: 68px; }
 }
 
 /* Touch devices: hover-only styles off. */
