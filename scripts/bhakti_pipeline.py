@@ -37,7 +37,13 @@ import naming
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 2
-TRANSLATION_INPUT_VERSION = 4
+GLOSS_CONTRACT_VERSION = 2
+TRANSLATION_INPUT_VERSION = 5
+SEMANTIC_FRAME_FIELDS = (
+    "agent", "action_or_state", "patient_or_complement", "modifiers",
+    "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
+    "cross_line_relation",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -1178,17 +1184,32 @@ def gloss_surface_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str,
     return errors
 
 
+def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]]) -> list[str]:
+    errors = gloss_surface_errors(lines, gloss_rows)
+    gloss_by_id = {row.get("id"): row for row in gloss_rows}
+    for line in lines:
+        line_id = line.get("id", "<unknown>")
+        frame = gloss_by_id.get(line_id, {}).get("semantic_frame")
+        if not isinstance(frame, dict) or any(not isinstance(frame.get(field), str) for field in SEMANTIC_FRAME_FIELDS):
+            errors.append(f"{line_id} lacks a complete semantic frame")
+    return errors
+
+
 def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
     existing = read_packet(target)
-    if (existing and not options.force
-            and not gloss_surface_errors(lines, existing.get("packet", {}).get("glosses", []))):
+    if (existing and not options.force and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
+            and not gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []))):
         return existing
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
         return f"""Create a literal word-by-word reading of the TARGET audited devotional lyrics. Work line by line and use the surrounding song context.
 
-Create exactly one word_gloss entry for each whitespace-delimited surface token in the supplied roman line, in the identical order. The `roman` value must copy that complete displayed surface token exactly; never split sandhi or a written compound into separate entries, and never substitute an underlying dictionary form. Explain internal morphemes inside that token's `gloss` or `grammar_note` instead. Give a concise literal gloss for every token and a short grammar note for idiom, ellipsis, agreement, sandhi, compounds, or syntax. Preserve imagery. Choose the contextually supported sense of a polysemous word; do not call ordinary dictionary polysemy uncertain. Use uncertainty only when the audited lyric itself remains genuinely unresolved. Do not write a fluent English sentence in this stage.
+Create exactly one word_gloss entry for each whitespace-delimited surface token in the supplied roman line, in the identical order. The `roman` value must copy that complete displayed surface token exactly; never split sandhi or a written compound into separate entries, and never substitute an underlying dictionary form. Give the contextually correct primary sense first. A gloss is semantic evidence, not an English draft: do not bake a clumsy phrase such as “cast a glance of mercy” into a token gloss when the phrase-level meaning is “look upon someone with mercy.” Put phrase meaning and idiom in the semantic frame instead.
+
+Before any later translation, explicitly reconstruct the semantic frame: who is acting or experiencing; the action or state; its patient or complement; modifiers; negation or modality; the exact literal image and agency; any established idiom; and how the line connects grammatically to its neighbors. Preserve personification and unusual agency rather than normalizing them. Do not replace one metaphor with another: if a feeling “takes hold,” do not relabel it as kindling or stirring. Preserve a spatial word directly—“inside” remains “inside”—rather than upgrading it to “deep within” unless the source actually expresses depth. Represent reduplication as emphasis or repetition without inventing a new image. Expand relational objects when English requires their complement—a hem is the hem of a garment. Distinguish culturally specific objects precisely, such as an alms bag rather than a generic satchel, and palm/open palm rather than an abstract “hand” when the source requires it. For `raham nazar`, record the phrase-level meaning “look upon someone with mercy,” never “cast a glance.”
+
+Explain internal morphemes inside the token's `gloss` or `grammar_note`. Give a short grammar note for ellipsis, agreement, sandhi, compounds, or syntax. Choose the contextually supported sense of a polysemous word; do not call ordinary dictionary polysemy uncertain. Use uncertainty only when the audited lyric itself remains genuinely unresolved. Do not write a fluent English sentence in this stage.
 
 TARGET LYRICS (return these IDs only):
 {json.dumps(batch, ensure_ascii=False)}
@@ -1197,14 +1218,17 @@ NEARBY CONTEXT (do not return these IDs unless also targets):
 {json.dumps(context, ensure_ascii=False)}
 
 Return strict JSON:
-{{"glosses":[{{"id":"canonical-id","word_glosses":[{{"roman":"exact token","gloss":"literal meaning"}}],"grammar_note":"","uncertainty":""}}]}}"""
+{{"glosses":[{{"id":"canonical-id","word_glosses":[{{"roman":"exact token","gloss":"contextual literal meaning"}}],"semantic_frame":{{"agent":"","action_or_state":"","patient_or_complement":"","modifiers":"","negation_or_modality":"","literal_image_and_agency":"","idiom_or_phrase":"","cross_line_relation":""}},"grammar_note":"","uncertainty":""}}]}}"""
     schema = {"type": "object", "properties": {"glosses": {"type": "array", "items": {
         "type": "object", "properties": {
             "id": {"type": "string"}, "word_glosses": {"type": "array", "items": {"type": "object", "properties": {
                 "roman": {"type": "string"}, "gloss": {"type": "string"}},
                 "required": ["roman", "gloss"], "additionalProperties": False}},
+            "semantic_frame": {"type": "object", "properties": {
+                field: {"type": "string"} for field in SEMANTIC_FRAME_FIELDS},
+                "required": list(SEMANTIC_FRAME_FIELDS), "additionalProperties": False},
             "grammar_note": {"type": "string"}, "uncertainty": {"type": "string"}},
-        "required": ["id", "word_glosses", "grammar_note", "uncertainty"], "additionalProperties": False}}},
+        "required": ["id", "word_glosses", "semantic_frame", "grammar_note", "uncertainty"], "additionalProperties": False}}},
         "required": ["glosses"], "additionalProperties": False}
     if len(lines) <= 80:
         result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=options.timeout,
@@ -1222,7 +1246,8 @@ Return strict JSON:
             cached = read_packet(cache_path)
             if cached and cached.get("target_ids") == expected and not options.force:
                 cached_rows = cached.get("response", {}).get("packet", {}).get("glosses", [])
-                if not gloss_surface_errors(batch, cached_rows):
+                if (cached.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
+                        and not gloss_contract_errors(batch, cached_rows)):
                     return cached
             start = index * 40
             context = lines[max(0, start - 2):start] + lines[start + len(batch):start + len(batch) + 2]
@@ -1233,10 +1258,11 @@ Return strict JSON:
             returned = [row.get("id") for row in response["packet"].get("glosses", [])]
             if returned != expected:
                 raise RuntimeError(f"gloss batch {index} returned IDs out of order or incomplete")
-            mapping_errors = gloss_surface_errors(batch, response["packet"]["glosses"])
+            mapping_errors = gloss_contract_errors(batch, response["packet"]["glosses"])
             if mapping_errors:
                 raise RuntimeError(f"gloss batch {index} violates surface-token mapping: {mapping_errors[:3]}")
-            packet = {"target_ids": expected, "response": response}
+            packet = {"target_ids": expected, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
+                      "response": response}
             write_json(cache_path, packet)
             return packet
 
@@ -1244,7 +1270,9 @@ Return strict JSON:
             packets = list(pool.map(run, range(len(batches))))
         result = {"packet": {"glosses": [row for packet in packets
                                            for row in packet["response"]["packet"]["glosses"]]},
-                  "batch_responses": packets, "resolved_model": options.model}
+                  "batch_responses": packets, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
+                  "resolved_model": options.model}
+    result["gloss_contract_version"] = GLOSS_CONTRACT_VERSION
     write_json(target, result)
     return result
 
@@ -1265,16 +1293,29 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     lines = audited['packet'].get('verified_lines', [])
     gloss_rows = glosses['packet'].get('glosses', [])
     gloss_by_id = {row['id']: row for row in gloss_rows}
+    provided_translation = supplied_translation(job)
+    provided_rule = ("A human translation is supplied and LOCKED. Copy its wording exactly for every matching line; "
+                     "do not silently correct or polish it in this stage. If lexical evidence appears to conflict with it, "
+                     "preserve the supplied wording, set human_review_recommended=true, and explain the conflict in choice_note."
+                     if provided_translation != "(none supplied)" else
+                     "No human translation is supplied; choose the closest supported English and expose material alternatives.")
 
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
         batch_glosses = [gloss_by_id[line['id']] for line in batch]
-        return f"""Write faithful, complete, idiomatic English translations from the supplied word glosses and grammar notes ONLY. The glosses are semantic constraints, not a license for wooden word-for-word substitution: preserve their exact meaning, grammar, poetic image, register, and all emphases while writing natural English. Do not introduce a looser synonym, devotional interpretation, or omission that the gloss record does not support. Equally, do not replace a precise English image with a blander gloss synonym merely because it is shorter.
+        return f"""Write faithful, complete English translations from the supplied word glosses, semantic frames, and grammar notes ONLY. The semantic frame is authoritative for agency, action/state, patient/complement, negation/modality, literal image, idiom, and cross-line syntax. Do not introduce a looser synonym, devotional interpretation, or omission that it does not support.
+
+For each line, reason in this order before choosing the final English:
+1. Compose the indexed token glosses into the closest grammatical English scaffold.
+2. Check the scaffold against every semantic-frame field and neighboring line.
+3. Preserve the source's agent and experiencer exactly. Never change “my breath abandons me” into “I breathe my last,” a deity dwelling in a palm into an abstract spiritual state, or an interior image into a generic emotion merely because the alternative is conventional English.
+4. Apply an established idiom only when `idiom_or_phrase` identifies it and the idiom does not erase a deliberate image. The devotional phrase `raham nazar` means “look upon [someone] with mercy”; do not render it as “cast a glance.” Conversely, do not invent a replacement metaphor such as “kindle” or “stir” when the source image is that a feeling “takes hold.” A possessed relational noun such as a garment hem should remain explicit rather than becoming an ambiguous “your hem.”
+5. Make only the smallest grammatical adjustments needed for intelligible English. Prefer the source's transparent spatial vocabulary (“from the inside”) over a smoother intensifying substitute (“deep within”) unless depth is lexically present. Literal and poetic force outrank smoothness.
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list.
 
 Write lucid devotional English, but do not confuse conventional English with better poetry. Literal strangeness, repetition, personification, unusual agency, and concrete bodily or ritual imagery may be the point. Preserve a supported image such as “my breath will abandon me” even if an English idiom such as “I will breathe my last” sounds smoother. Never replace the source's agency, metaphor, ambiguity, or emotional logic merely to sound idiomatic. Correct wording only when it is demonstrably wrong, ungrammatical, or obstructs understanding. Avoid legalistic filler, accidental inversion, duplicate modifiers, and unsupported editorial verbs. Retain darshan or sacred vision, an alms bag, garment hem, cupped or open palm, lotus, dust, ocean, threshold, cage, and Mount Meru when the source supports them.
 
-Resolve ordinary polysemy from the supplied grammar/song context; mark uncertainty only when the audited source itself cannot support one reading. The completed segments must reconstruct `literal_english` exactly, including ordinary spacing and punctuation.
+Resolve ordinary polysemy from the supplied grammar/song context. When two defensible renderings differ materially in agency, metaphor, ambiguity, or poetic force, include both in `material_alternatives` and set `human_review_recommended=true` instead of silently optimizing for smoothness. This is not required for trivial synonyms. The completed segments must reconstruct `literal_english` exactly, including ordinary spacing and punctuation. Then report a fidelity check: whether agency/image and all source meaning were preserved, every unsupported addition (normally none), and a concise note naming any nonliteral idiom or necessary English function word.
 
 TARGET audited source lines (return these IDs only):
 {json.dumps(batch, ensure_ascii=False)}
@@ -1285,21 +1326,32 @@ TARGET word gloss record:
 NEARBY source context (do not return these IDs unless also targets):
 {json.dumps(context, ensure_ascii=False)}
 
-Supplied translation, if any, is the human-authored editorial baseline. Preserve
-its diction, agency, imagery, and poetic choices unless a specific gloss or
-grammatical fact demonstrates an error. Never rewrite it merely for style:
-{supplied_translation(job)}
+HUMAN-TRANSLATION RULE:
+{provided_rule}
+
+Supplied translation:
+{provided_translation}
 
 Return strict JSON:
-{{"translations":[{{"id":"canonical-id","literal_english":"","segments":[{{"text":"","word_indices":[]}}],"uncertainty":""}}],"comparison":[{{"id":"canonical-id","supplied":"","chosen":"","material_change":false,"reason":""}}]}}"""
+{{"translations":[{{"id":"canonical-id","literal_english":"","segments":[{{"text":"","word_indices":[]}}],"material_alternatives":[],"human_review_recommended":false,"choice_note":"","fidelity":{{"agency_and_image_preserved":true,"all_meaning_accounted_for":true,"unsupported_additions":[],"notes":""}},"uncertainty":""}}],"comparison":[{{"id":"canonical-id","supplied":"","chosen":"","material_change":false,"reason":""}}]}}"""
     schema = {"type": "object", "properties": {
         "translations": {"type": "array", "items": {"type": "object", "properties": {
             "id": {"type": "string"}, "literal_english": {"type": "string"},
             "segments": {"type": "array", "items": {"type": "object", "properties": {
                 "text": {"type": "string"}, "word_indices": {"type": "array", "items": {"type": "integer"}}},
                 "required": ["text", "word_indices"], "additionalProperties": False}},
+            "fidelity": {"type": "object", "properties": {
+                "agency_and_image_preserved": {"type": "boolean"},
+                "all_meaning_accounted_for": {"type": "boolean"},
+                "unsupported_additions": {"type": "array", "items": {"type": "string"}},
+                "notes": {"type": "string"}},
+                "required": ["agency_and_image_preserved", "all_meaning_accounted_for", "unsupported_additions", "notes"],
+                "additionalProperties": False},
+            "material_alternatives": {"type": "array", "items": {"type": "string"}},
+            "human_review_recommended": {"type": "boolean"},
+            "choice_note": {"type": "string"},
             "uncertainty": {"type": "string"}},
-            "required": ["id", "literal_english", "segments", "uncertainty"], "additionalProperties": False}},
+            "required": ["id", "literal_english", "segments", "material_alternatives", "human_review_recommended", "choice_note", "fidelity", "uncertainty"], "additionalProperties": False}},
         "comparison": {"type": "array", "items": {"type": "object", "properties": {
             "id": {"type": "string"}, "supplied": {"type": "string"}, "chosen": {"type": "string"},
             "material_change": {"type": "boolean"}, "reason": {"type": "string"}},
@@ -1378,6 +1430,16 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
         translation = translation_by_id.get(line_id, {})
         if not str(translation.get("literal_english", "")).strip():
             errors.append(f"{line_id} lacks a literal English line")
+        fidelity = translation.get("fidelity", {})
+        if fidelity:
+            if not fidelity.get("agency_and_image_preserved"):
+                errors.append(f"{line_id} translation does not preserve agency or imagery")
+            if not fidelity.get("all_meaning_accounted_for"):
+                errors.append(f"{line_id} translation does not account for every source meaning")
+            if fidelity.get("unsupported_additions"):
+                errors.append(f"{line_id} translation contains unsupported additions")
+        if translation.get("human_review_recommended"):
+            errors.append(f"{line_id} translation has a material poetic choice requiring review")
         for segment in translation.get("segments", []):
             for word_index in segment.get("word_indices", []):
                 if not isinstance(word_index, int) or not 0 <= word_index < len(words):
