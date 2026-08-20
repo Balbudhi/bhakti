@@ -10,8 +10,10 @@ Hardware: Apple M4 Max, 40-core GPU, 128 GB unified memory.
 
 `mlx-community/Qwen3-ASR-1.7B-bf16` was tested through `mlx-audio` on the full
 Hindi `Yeh Garv Bharā Mastak Merā` recording and a Punjabi Duniya excerpt.
-It was fast (about 5.8 seconds for 4:48 of Hindi audio, roughly 50× real time;
-about 5.5 GB peak MLX memory), but failed the accuracy gate:
+Upstream Qwen3-ASR officially claims support for Hindi and for “singing voice,
+songs with BGM,” so it is the right open-weight candidate to test first on this
+machine. It was fast (about 5.8 seconds for 4:48 of Hindi audio, roughly
+50× real time; about 5.5 GB peak MLX memory), but failed the accuracy gate:
 
 - full-song Hindi normalized character error was about 5.3% with material word
   substitutions (`khōṭā`→`choṭā`, malformed phrases, and omitted particles);
@@ -19,9 +21,10 @@ about 5.5 GB peak MLX memory), but failed the accuracy gate:
 - Punjabi was rendered in Devanagari with multiple incorrect lyric words.
 
 Therefore Qwen3-ASR is rejected as a production transcript source for this
-corpus. The 4 GB model cache and isolated 399 MB environment were removed after
-the benchmark. VibeVoice was also removed without benchmarking because it is a
-general speech/meeting ASR model, not a singing-lyrics model.
+corpus despite its broader official language/song claims. The 4 GB model cache
+and isolated 399 MB environment were removed after the benchmark. VibeVoice
+was also removed without benchmarking because it is a general speech/meeting
+ASR model, not a singing-lyrics model.
 
 Current specialized singing models do not solve the Indic requirement:
 VocalParse is Chinese-focused, and MOSS-Music reports strong lyrics ASR on
