@@ -16,7 +16,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation": {
     "roman": "Jai karā sherān wālī maiyā jī dā... Bol sache darbār kī jai",
-    "english": "{0:Hail} to {3:Mother} {1,2:who rides the lion}... {4:Chant}: {8:Glory} {6:to the} {7:true court}!",
+    "english": "{0:Hail }{5:to }{3,4:Mother }{1,2:who rides the lion... }{6:Chant: }{10:Glory }{9:to }the {7:true }{8:court!}",
     "words": [
       {
         "roman": "Jai karā",
@@ -68,7 +68,7 @@ window.SONG_LINES = {
   },
   "refrain_a": {
     "roman": "Duniyā de dukhān mainū baḍā hī satāyā mā",
-    "english": "The {0:world's} {2:sorrows} {3:have} {4,5:greatly} {6:tormented} {3:me}, {7:Mother}.",
+    "english": "The {0,1:world's }{2:sorrows }have {4,5:greatly }{6:tormented }{3:me, }{7:Mother.}",
     "words": [
       {
         "roman": "Duniyā",
@@ -108,7 +108,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Jad vī terī loṛ paī, tere kol āyā mā",
-    "english": "{0,1:Whenever} {4:the need} {2:for You} {3:arose}, {7:I came} {6:to} {5:You}, {8:Mother}.",
+    "english": "{0,1:Whenever }the {3:need }{2:for You }{4:arose, }{7:I came }{5,6:to You, }{8:Mother.}",
     "words": [
       {
         "roman": "Jad",
@@ -152,7 +152,7 @@ window.SONG_LINES = {
   },
   "refrain_c": {
     "roman": "Duniyā de dukhān mainū baḍā hī ruwāyā mā",
-    "english": "The {0:world's} {2:sorrows} {6:have made} {3:me} {6:weep} {4,5:so much}, {7:Mother}.",
+    "english": "The {0,1:world's }{2:sorrows }have {6:made }{3:me }{6:weep }{4,5:so much, }{7:Mother.}",
     "words": [
       {
         "roman": "Duniyā",
@@ -192,7 +192,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Māwān wālā pyār bas jag 'ch anokhā ae",
-    "english": "{3:Only} a {0,1:mother's} {2:love} {7:is} {6:unique} {5:in} the {4:world}.",
+    "english": "{3:Only }a {0,1:mother's }{2:love }{7:is }{6:unique }{5:in }the {4:world.}",
     "words": [
       {
         "roman": "Māwān",
@@ -232,7 +232,7 @@ window.SONG_LINES = {
   },
   "v1b": {
     "roman": "Bākī sārā zindagī 'ch dhokhā hī dhokhā ae",
-    "english": "{0:All} the {1:rest} {3:in} {2:life} {7:is} {5,6:nothing but} {4:betrayal}.",
+    "english": "{1:All }the {0:rest }{3:in }{2:life }{7:is }{5:nothing but }{4,6:betrayal.}",
     "words": [
       {
         "roman": "Bākī",
@@ -272,7 +272,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Jad vī main hasseyā, mainū apneyān ruwāyā mā",
-    "english": "{0,1:Whenever} {2:I} {3:laughed}, {5:my own people} {6:made} {4:me} {6:cry}, {7:Mother}.",
+    "english": "{0,1:Whenever }{2:I }{3:laughed, }{5:my own people }{6:made }{4:me }{6:cry, }{7:Mother.}",
     "words": [
       {
         "roman": "Jad",
@@ -312,7 +312,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Ik vārī maiyā merī bigḍī sawār de",
-    "english": "{2:Mother}, {5,6:fix} {3:my} {4:ruined situation} just {0,1:once}.",
+    "english": "{2:Mother, }{5,6:fix }{3:my }{4:ruined situation }just {0,1:once.}",
     "words": [
       {
         "roman": "Ik",
@@ -348,7 +348,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Patthar baṇā de sānū sohṇe darbār de",
-    "english": "{1,2:Make} {3:me} a {0:stone} {6:of} Your {4:beautiful} {5:court}.",
+    "english": "{1,2:Make }{3:me }a {0:stone }{6:of }Your {4:beautiful }{5:court.}",
     "words": [
       {
         "roman": "Patthar",
@@ -384,7 +384,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Bhull chukk terā pair, sāḍe utte āyā mā",
-    "english": "So that {2:Your} {3:foot} {6:may come} {5:upon} {4:me} {0,1:by mistake}, {7:Mother}.",
+    "english": "So that {2:Your }{3:foot }{6:may come }{5:upon }{4:me }{0,1:by mistake, }{7:Mother.}",
     "words": [
       {
         "roman": "Bhull",
@@ -424,7 +424,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Jad vī tū denī ae mā, nā de ke jatānī ae",
-    "english": "{0,1:Whenever} {2:You} {3,4:give}, {5:Mother}, {2:You} {6,9:do not} {8:boast} {7:after giving}.",
+    "english": "{0,1:Whenever }{2:You }{3,4:give, }{5:Mother, }You {6,8,9:do not boast }{7:after giving.}",
     "words": [
       {
         "roman": "Jad",
@@ -472,7 +472,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Sab bachcheyān dī maiyā lāj bachānī ae",
-    "english": "{3:Mother}, {2:You} {5,6:save} the {4:honor} {2:of} {0:all} {1:children}.",
+    "english": "{3:Mother, }You {5,6:save }the {4:honor }{2:of }{0:all }{1:children.}",
     "words": [
       {
         "roman": "Sab",
@@ -508,7 +508,7 @@ window.SONG_LINES = {
   },
   "v3c": {
     "roman": "Taiyon tainū maiyā rāṇī... apṇā banāyā mā",
-    "english": "{0:That's why}, {2:Mother} {3:Queen}, I have {5:made} {1:You} my {4:own}, {6:Mother}.",
+    "english": "{0:That's why, }{2:Mother }{3:Queen, }I have {5:made }{1:You }{4:my own, }{6:Mother.}",
     "words": [
       {
         "roman": "Taiyon",
@@ -544,7 +544,7 @@ window.SONG_LINES = {
   },
   "v4a": {
     "roman": "Ik vārī maiyā sāḍī bigṛī sawār de",
-    "english": "{2:Mother}, {5,6:set right} {3:my} {4:ruined state} just {0,1:once}.",
+    "english": "{2:Mother, }{5,6:set right }{3:my }{4:ruined state }just {0,1:once.}",
     "words": [
       {
         "roman": "Ik",
@@ -580,7 +580,7 @@ window.SONG_LINES = {
   },
   "v4b": {
     "roman": "Godī 'ch biṭhā ke sānū māwān wālā pyār de",
-    "english": "{2,3:Having seated} {4:me} {1:in} Your {0:lap}, {8:give} me a {5,6:mother's} {7:love}.",
+    "english": "{2,3:Having seated }{4:me }{1:in }Your {0:lap, }{8:give }{4:me }a {5,6:mother's }{7:love.}",
     "words": [
       {
         "roman": "Godī",
@@ -624,7 +624,7 @@ window.SONG_LINES = {
   },
   "v4c": {
     "roman": "Duniyā 'ch koī mere... kamm nahīyo āyā mā",
-    "english": "{2:No one} {1:in} the {0:world} {4,5,6:was of any help} {3:to me}, {7:Mother}.",
+    "english": "{2,5:No one}{0,1: in the world}{4,6: was of any help}{3: to me,}{7: Mother.}",
     "words": [
       {
         "roman": "Duniyā",

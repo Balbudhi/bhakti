@@ -21,7 +21,7 @@ window.SONG_LINES = {
   "refrain_a": {
     "source": "ईश्वर से कुछ माँगना हो तो सन्त कृपा ही माँगिये।",
     "roman": "Īśvar se kuch māṅgnā ho to, sant kṛpā hī māṅgiye",
-    "english": "If {3:you wish to ask} {2:for something} {1:from} {0:God}, then {8:ask} only for the {6:grace} of {5:saints}.",
+    "english": "{3:If you wish to ask}{2: for something}{0,1: from God,}{4: then}{8: ask}{7: only}{6: for the grace}{5: of saints.}",
     "words": [
       {
         "roman": "Īśvar",
@@ -64,7 +64,7 @@ window.SONG_LINES = {
   "refrain_b": {
     "source": "ईश्वर से कुछ पूछना हो तो सद्गुरु का पता पूछिये।",
     "roman": "Īśvar se kuch pūchnā ho to, sadguru kā patā pūchiye",
-    "english": "If {3:you wish to inquire} {1:about} {0:God}, then {8:ask} for the {7:whereabouts} of the {5:True Guru}.",
+    "english": "{2,3:If you wish to inquire}{0,1: about God,}{4: then}{8: ask for}{7: the whereabouts}{5,6: of the True Guru.}",
     "words": [
       {
         "roman": "Īśvar",
@@ -107,7 +107,7 @@ window.SONG_LINES = {
   "v1a": {
     "source": "सन्त कृपा है पावन धारा, सद्गुरु हैं श्री दया सागर।",
     "roman": "Sant kṛpā hai pāvan dhārā, sadguru haiṃ śrī dayā-sāgar",
-    "english": "The {1:grace} of {0:saints} is a {3,4:sacred stream}; the {5:True Guru} is a {7,9:revered ocean} of {8:compassion}.",
+    "english": "{1:The grace}{0: of saints}{2: is}{3: a sacred}{4: stream;}{5: the True Guru}{6: is}{7: a revered}{9: ocean}{8: of compassion.}",
     "words": [
       {
         "roman": "Sant",
@@ -154,7 +154,7 @@ window.SONG_LINES = {
   "v1b": {
     "source": "एक नजर से कर दे जीवन, सुन्दर पावन पुण्यवान।",
     "roman": "Ek nazar se kar de jīvan, sundar pāvan puṇyavān",
-    "english": "With {1:a single glance}, [the Guru] {3:makes} {4:life} {5:beautiful}, {6:sacred}, and {7:meritorious}.",
+    "english": "{2:With}{0: a single}{1: glance,} [the Guru]{3: makes}{4: life}{5: beautiful,}{6: sacred,}{7: and meritorious.}",
     "words": [
       {
         "roman": "Ek",
@@ -193,7 +193,7 @@ window.SONG_LINES = {
   "v1c": {
     "source": "सुन्दर पावन पुण्यवान।",
     "roman": "Sundar pāvan puṇyavān",
-    "english": "{0:Beautiful}, {1:sacred}, and {2:meritorious}.",
+    "english": "{0:Beautiful,}{1: sacred,}{2: and meritorious.}",
     "words": [
       {
         "roman": "Sundar",
@@ -212,7 +212,7 @@ window.SONG_LINES = {
   "v2a": {
     "source": "पूजा पाठ में मन न लगे तो सन्त वचन ही सुनिये।",
     "roman": "Pūjā-pāṭh meṃ man na lage to, sant-vachan hī suniye",
-    "english": "If the {3:mind} does not {5:engage} in {0,1:worship and recitation}, then {10:listen} only to the {8:words} of {7:saints}.",
+    "english": "{3:If the mind}{4: does not}{5: engage}{0,2: in worship}{1: and recitation,}{6: then}{10: listen}{9: only}{8: to the words}{7: of saints.}",
     "words": [
       {
         "roman": "Pūjā",
@@ -263,7 +263,7 @@ window.SONG_LINES = {
   "v2b": {
     "source": "हरि पूजा में मन न लगे तो सद्गुरु की पूजा कीजिये।",
     "roman": "Hari-pūjā meṃ man na lage to, sadguru kī pūjā kījiye",
-    "english": "If the {3:mind} does not {5:engage} in {0:Hari’s worship}, then {10:offer worship} to the {7:True Guru}.",
+    "english": "{3:If the mind}{4: does not}{5: engage}{0,2: in Hari’s}{1: worship,}{6: then}{9,10: offer worship}{7,8: to the True Guru.}",
     "words": [
       {
         "roman": "Hari",
@@ -314,7 +314,7 @@ window.SONG_LINES = {
   "v2c": {
     "source": "सद्गुरु की पूजा कीजिये।",
     "roman": "Sadguru kī pūjā kījiye",
-    "english": "{3:Offer worship} to the {0:True Guru}.",
+    "english": "{2,3:Offer worship}{0,1: to the True Guru.}",
     "words": [
       {
         "roman": "Sadguru",
@@ -337,7 +337,7 @@ window.SONG_LINES = {
   "v3a": {
     "source": "धन्य धन्य श्री सद्गुरु मेरे, साईंनाथ श्री कृपा निधान।",
     "roman": "Dhanya dhanya śrī sadguru mere, Sāīnāth śrī kṛpā-nidhān",
-    "english": "{0,1:Blessed, blessed} is {4:my} {2,3:revered True Guru}, {5:Sāīnāth}, the {6:revered} {8:treasure-house} of {7:grace}.",
+    "english": "{0:Blessed,}{1: blessed} is{4: my}{2: revered}{3: True Guru,}{5: Sāīnāth,}{6: the revered}{8: treasure-house}{7: of grace.}",
     "words": [
       {
         "roman": "Dhanya",
@@ -380,7 +380,7 @@ window.SONG_LINES = {
   "v3b": {
     "source": "जन्म जन्म में अपने चरणों में इस सन्तान को दे दो स्थान।",
     "roman": "Janam janam meṃ apne charaṇoṃ meṃ is santān ko de do sthān",
-    "english": "In {0,1:birth after birth}, {9:grant} this {7:child} a {10:place} at {3,4:Your feet}.",
+    "english": "{0,2:In birth}{1: after birth,}{9: grant}{6,7,8: this child}{10: a place}{3,5: at Your}{4: feet.}",
     "words": [
       {
         "roman": "Janam",
@@ -431,7 +431,7 @@ window.SONG_LINES = {
   "v3c": {
     "source": "इस सन्तान को दे दो स्थान।",
     "roman": "Is santān ko de do sthān",
-    "english": "{3:Grant} this {1:child} a {4:place}.",
+    "english": "{3:Grant}{0,1,2: this child}{4: a place.}",
     "words": [
       {
         "roman": "Is",

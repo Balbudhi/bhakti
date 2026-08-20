@@ -21,7 +21,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation": {
     "roman": "He mā... he mā...",
-    "english": "O {1:Mother}... O {3:Mother}...",
+    "english": "{0:O}{1: Mother...}{2: O}{3: Mother...}",
     "words": [
       {
         "roman": "He",
@@ -45,7 +45,7 @@ window.SONG_LINES = {
   },
   "refrain": {
     "roman": "Jhūṭhe jag ne leā menū luṭṭ mā, māye merī bānh phaṛ lai",
-    "english": "The {0:false} {1:world} {3,5:has robbed} {4:me}, O {6:Mother} — {7:O Mother}, {10,11:take hold of} {8:my} {9:arm}.",
+    "english": "{0:The false}{1,2: world}{3,5: has robbed}{4: me,}{6: O Mother}{7: — O Mother,}{10,11: take hold}{8: of my}{9: arm.}",
     "words": [
       {
         "roman": "Jhūṭhe",
@@ -101,7 +101,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Geā andaroṅ hī andaroṅ ṭuṭṭ mā, māye merī bānh phaṛ lai",
-    "english": "I {0:have been} {4:broken} from the {1:inside}, {5:O Mother} — {6:O Mother}, {9,10:take hold of} {7:my} {8:arm}.",
+    "english": "{0:I have been}{4: broken}{1,2,3: from the inside,}{5: O Mother}{6: — O Mother,}{9,10: take hold}{7: of my}{8: arm.}",
     "words": [
       {
         "roman": "Geā",
@@ -153,7 +153,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Dukh nit navīyāṅ kheḍāṅ pae ne kheḍde",
-    "english": "{0:Sorrows} {4:are} {3,5:playing} {1:ever} {2:new} {3:games}.",
+    "english": "{0:Sorrows}{4,5,6: are playing}{1: ever}{2: new}{3: games.}",
     "words": [
       {
         "roman": "Dukh",
@@ -189,7 +189,7 @@ window.SONG_LINES = {
   },
   "v1b": {
     "roman": "Ikk passe nahī, chāre passe gherde",
-    "english": "They {5:surround} me not on {0:one} {1:side}, but on all {3:four} {4:sides}.",
+    "english": "{5:They surround me}{2: not}{0: on one}{1: side,}{3: but on all four}{4: sides.}",
     "words": [
       {
         "roman": "Ikk",
@@ -221,7 +221,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Hanjū akhiyāṅ de rahe nahī ruk mā, māye merī bānh phaṛ lai",
-    "english": "The {0:tears} {2:of} my {1:eyes} {3,4,5:are not stopping}, O {6:Mother} — {7:O Mother}, {10,11:take hold of} {8:my} {9:arm}.",
+    "english": "{0:The tears}{1,2: of my eyes}{3,4: are not}{5: stopping,}{6: O Mother}{7: — O Mother,}{10,11: take hold}{8: of my}{9: arm.}",
     "words": [
       {
         "roman": "Hanjū",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Baccheyāṅ toṅ pīṛā huṇ jāndiyāṅ nā jhall mā",
-    "english": "The {2:pains} {4,6:cannot be endured} {0:by the children} {3:now}, O {7:Mother}.",
+    "english": "{2:The pains }{4,5,6:cannot be endured }{0,1:by the children }{3:now, }{7:O Mother.}",
     "words": [
       {
         "roman": "Baccheyāṅ",
@@ -317,7 +317,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Aukhā huṇ lagdā har ik pal mā",
-    "english": "{3,4:Every single} {5:moment} {2:feels} {0:difficult} {1:now}, O {6:Mother}.",
+    "english": "{3:Every }{4:single }{5:moment }{2:feels }{0:difficult }{1:now, }{6:O Mother.}",
     "words": [
       {
         "roman": "Aukhā",
@@ -353,7 +353,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Aiveṅ jāye nā jind kite rul mā, māye merī bānh phaṛ lai",
-    "english": "Lest this {3:life} {0:somehow} {1,5:be ruined} {4:somewhere}, O {6:Mother} — {7:O Mother}, {10,11:take hold of} {8:my} {9:arm}.",
+    "english": "{2:Lest }{3:this life }{0:somehow }{1,5:be ruined }{4:somewhere, }{6:O Mother} — {7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
     "words": [
       {
         "roman": "Aiveṅ",
@@ -409,7 +409,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Waqt diyāṅ ṭhokarāṅ den parshāniyāṅ",
-    "english": "The {2:stumbles} {1:of} {0:time} {3:give} {4:troubles}.",
+    "english": "{2:The stumbles }{0,1:of time }{3:give }{4:troubles.}",
     "words": [
       {
         "roman": "Waqt",
@@ -437,7 +437,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Manḍeyāṅ nasībāṅ utte karn manmāniyāṅ",
-    "english": "They {3:do} their {4:arbitrary will} {2:upon} {0:bad} {1:destinies}.",
+    "english": "{3:They do }{4:their arbitrary will }{2:upon }{0:bad }{1:destinies.}",
     "words": [
       {
         "roman": "Manḍeyāṅ",
@@ -465,7 +465,7 @@ window.SONG_LINES = {
   },
   "v3c": {
     "roman": "Sukh patā nahīyo kithe gae luk mā, māye merī bānh phaṛ lai",
-    "english": "{1,2:I do not know} {3:where} {0:happiness} has {4,5:gone and hidden}, O {6:Mother} — {7:O Mother}, {10,11:take hold of} {8:my} {9:arm}.",
+    "english": "{1,2:I do not know }{3:where }{0:happiness }{4,5:has gone and hidden, }{6:O Mother} — {7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
     "words": [
       {
         "roman": "Sukh",
@@ -521,7 +521,7 @@ window.SONG_LINES = {
   },
   "v4a": {
     "roman": "Andaroṅ hī andaroṅ dil merā ṭuṭṭeyā",
-    "english": "{3:My} {2:heart} is {4:broken} from the {0:inside}.",
+    "english": "{4:My }{3:heart }{5:is broken }{0,1,2:from the inside.}",
     "words": [
       {
         "roman": "Andaroṅ",
@@ -553,7 +553,7 @@ window.SONG_LINES = {
   },
   "v4b": {
     "roman": "Injh peā lagge jiveṅ sāh huṇ mukkeyā",
-    "english": "It {1,2:seems} {0:this way}, {3:as if} {4:breath} is {6:finished} {5:now}.",
+    "english": "{1,2:It seems }{0:this way, }{3:as if }{4:breath }{6:is finished }{5:now.}",
     "words": [
       {
         "roman": "Injh",
@@ -589,7 +589,7 @@ window.SONG_LINES = {
   },
   "v4c": {
     "roman": "Miṭā de jhanḍewālī janmāṅ dī bhukh mā, māye merī bānh phaṛ lai",
-    "english": "{0,1:Erase}, O {2:Jhandewali} (Goddess of the flags), the {5:hunger} {4:of} {3:lifetimes}, O {6:Mother} — {7:O Mother}, {10,11:take hold of} {8:my} {9:arm}.",
+    "english": "{0,1:Erase, }{2:O Jhandewali (Goddess of the flags), }{5:the hunger }{3,4:of lifetimes, }{6:O Mother} — {7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
     "words": [
       {
         "roman": "Miṭā",
@@ -645,7 +645,7 @@ window.SONG_LINES = {
   },
   "closing": {
     "roman": "Māye merī bānh phaṛ lai",
-    "english": "{0:O Mother}, {3,4:take hold of} {1:my} {2:arm}.",
+    "english": "{0:O Mother, }{3,4:take hold of }{1:my }{2:arm.}",
     "words": [
       {
         "roman": "Māye",

@@ -20,7 +20,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "refrain_a": {
     "roman": "Maiṅ mūrakh maiṅ anpaṛh bālak",
-    "english": "I am {1:foolish}, I am an {3:unlettered} {4:child}.",
+    "english": "{0:I am }{1:foolish, }{2:I am }an {3:unlettered }{4:child.}",
     "words": [
       {
         "roman": "Maiṅ",
@@ -48,7 +48,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Terā sumiraṇ kaise karūṅ",
-    "english": "How may I {1:remember You in devotion}?",
+    "english": "{2:How }{3:may I }{1:remember }{0:You }{1:in devotion?}",
     "words": [
       {
         "roman": "Terā",
@@ -72,7 +72,7 @@ window.SONG_LINES = {
   },
   "refrain_c": {
     "roman": "Maiṅ ajñānī maiṅ pāpī hūṅ",
-    "english": "I am {1:ignorant}; I am a {3:sinner}.",
+    "english": "{0:I am }{1:ignorant; }{2:I }{4:am }a {3:sinner.}",
     "words": [
       {
         "roman": "Maiṅ",
@@ -100,7 +100,7 @@ window.SONG_LINES = {
   },
   "refrain_d": {
     "roman": "Tumko kaise citt meṅ dharūṅ",
-    "english": "How shall I {4:hold You} in my {2:heart-mind}?",
+    "english": "{1:How }{4:shall I hold }{0:You }{3:in }my {2:heart-mind?}",
     "words": [
       {
         "roman": "Tumko",
@@ -128,7 +128,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Yeh māyā moh kī nagrī sab",
-    "english": "This whole {4:realm} of {1:illusion} and {2:attachment}…",
+    "english": "{0:This }{5:whole }{4:realm }{3:of }{1:illusion }and {2:attachment…}",
     "words": [
       {
         "roman": "Yeh",
@@ -160,7 +160,7 @@ window.SONG_LINES = {
   },
   "v1b": {
     "roman": "Jādū hai parchhāī hai",
-    "english": "…is {0:magic}, is a {2:shadow}. ",
+    "english": "{1:…is }{0:magic, }{3:is }a {2:shadow. }",
     "words": [
       {
         "roman": "Jādū",
@@ -184,7 +184,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Saccā hai ek nām agar to",
-    "english": "If there is one {3:Name} that is {0:true}, then…",
+    "english": "{4:If }{1:there is }{2:one }{3:Name }{1:that is }{0:true, }{5:then…}",
     "words": [
       {
         "roman": "Saccā",
@@ -216,7 +216,7 @@ window.SONG_LINES = {
   },
   "v1d": {
     "roman": "Bas woh merā Sāīṅ hai",
-    "english": "…it is only {3:my Sai}. ",
+    "english": "{1:…it }{4:is }{0:only }{2:my }{3:Sai. }",
     "words": [
       {
         "roman": "Bas",
@@ -244,7 +244,7 @@ window.SONG_LINES = {
   },
   "v1e": {
     "roman": "Duniyā ke bandhan meṅ uljhā",
-    "english": "{4:Entangled} in the {2:bonds} of the {0:world}…",
+    "english": "{4:Entangled }{3:in }the {2:bonds }{1:of }the {0:world…}",
     "words": [
       {
         "roman": "Duniyā",
@@ -272,7 +272,7 @@ window.SONG_LINES = {
   },
   "v1f": {
     "roman": "Terī pūjā kaise karūṅ",
-    "english": "…how may I {1:worship You}?",
+    "english": "{2:…how }{3:may I }{1:worship }{0:You?}",
     "words": [
       {
         "roman": "Terī",
@@ -296,7 +296,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Sukh duḥkh hai ek rāh agar to",
-    "english": "If {0:joy} and {1:sorrow} are one {4:path}, then…",
+    "english": "{5:If }{0:joy }and {1:sorrow }{2:are }{3:one }{4:path, }{6:then…}",
     "words": [
       {
         "roman": "Sukh",
@@ -332,7 +332,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Sāṅseṅ bahtā pānī hai",
-    "english": "…{0:breaths} are {1:flowing} {2:water}. ",
+    "english": "{0:…breaths }{3:are }{1:flowing }{2:water. }",
     "words": [
       {
         "roman": "Sāṅseṅ",
@@ -356,7 +356,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Māṭī kā putlā hai mānav",
-    "english": "A {4:human being} is an {2:effigy} of {0:clay}. ",
+    "english": "A {4:human being }{3:is }an {2:effigy }{1:of }{0:clay. }",
     "words": [
       {
         "roman": "Māṭī",
@@ -384,7 +384,7 @@ window.SONG_LINES = {
   },
   "v2d": {
     "roman": "Bākī sab kuch fānī hai",
-    "english": "Everything else is {3:transient}. ",
+    "english": "{1,2:Everything }{0:else }{4:is }{3:transient. }",
     "words": [
       {
         "roman": "Bākī",
@@ -412,7 +412,7 @@ window.SONG_LINES = {
   },
   "v2e": {
     "roman": "Arpaṇ tujhko jīvan kar dūṅ",
-    "english": "May I {0:offer} my {2:life} to {1:You}…",
+    "english": "{4:May I }{0,3:offer }my {2:life }{1:to You…}",
     "words": [
       {
         "roman": "Arpaṇ",
@@ -440,7 +440,7 @@ window.SONG_LINES = {
   },
   "v2f": {
     "roman": "Koī jatan to aisā karūṅ",
-    "english": "…may I make some such {1:effort}. ",
+    "english": "{2,4:…may I make }{0:some }{3:such }{1:effort. }",
     "words": [
       {
         "roman": "Koī",
@@ -468,7 +468,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Tum bin jīvan sūnā sūnā",
-    "english": "Without {0:You}, life is {3:utterly desolate}. ",
+    "english": "{1:Without }{0:You, }{2:life }is {3:utterly }{4:desolate. }",
     "words": [
       {
         "roman": "Tum",
@@ -496,7 +496,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Ab to darśan de do mujhe",
-    "english": "Now at least {2:grant me Your sacred sight}. ",
+    "english": "{0:Now }{1:at least }{3,4:grant }{5:me }Your {2:sacred sight. }",
     "words": [
       {
         "roman": "Ab",
@@ -528,7 +528,7 @@ window.SONG_LINES = {
   },
   "v3c": {
     "roman": "Sāṅsoṅ meṅ ghul jāo Sāīṅ",
-    "english": "{2:Dissolve} into my {0:breaths}, O {4:Sai}. ",
+    "english": "{2,3:Dissolve }{1:into }my {0:breaths, }O {4:Sai. }",
     "words": [
       {
         "roman": "Sāṅsoṅ",
@@ -556,7 +556,7 @@ window.SONG_LINES = {
   },
   "v3d": {
     "roman": "Man kā tarpaṇ de do mujhe",
-    "english": "Grant me the {2:fulfilment} of the {0:heart-mind}. ",
+    "english": "{3,4:Grant }{5:me }the {2:fulfilment }{1:of }the {0:heart-mind. }",
     "words": [
       {
         "roman": "Man",
@@ -588,7 +588,7 @@ window.SONG_LINES = {
   },
   "v3e": {
     "roman": "Moh māyā kā bhār bahut hai",
-    "english": "The {3:burden} of {0:attachment} and {1:illusion} is great…",
+    "english": "The {3:burden }{2:of }{0:attachment }and {1:illusion }{5:is }{4:great…}",
     "words": [
       {
         "roman": "Moh",
@@ -620,7 +620,7 @@ window.SONG_LINES = {
   },
   "v3f": {
     "roman": "Terā cintan kaise karūṅ",
-    "english": "…how shall I {1:contemplate You}?",
+    "english": "{2:…how }{3:shall I }{1:contemplate }{0:You?}",
     "words": [
       {
         "roman": "Terā",

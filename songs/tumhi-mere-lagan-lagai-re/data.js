@@ -21,7 +21,7 @@ window.SONG_LINES = {
   "tu_hi_more_lagan": {
     "source": "तू ही मोरे लगन लगाई रे फकीरवा",
     "roman": "Tū hī more lagan lagāī re fakīrwā",
-    "english": "{0,1:You alone} {4:kindled} {3:devotional longing} {2:within me}, {5,6:O fakir}.",
+    "english": "{0:You }{1:alone }{4:kindled }{3:devotional longing }{2:within me, }{5:O }{6:fakir.}",
     "words": [
       {
         "roman": "Tū",
@@ -56,7 +56,7 @@ window.SONG_LINES = {
   "ham_to_sowat": {
     "source": "हम तो सोवत रहली ओढ़ के चदरवा",
     "roman": "Ham to sowat rahlī oṛh ke chadarwā",
-    "english": "{0:I} {2,3:was sleeping}, {4,5:wrapped} in a {6:sheet}. ",
+    "english": "{0,1:I }{3:was }{2:sleeping, }{4,5:wrapped in }{6:a sheet. }",
     "words": [
       {
         "roman": "Ham",
@@ -91,7 +91,7 @@ window.SONG_LINES = {
   "bahiyā_pakaṛ_ke": {
     "source": "बहियाँ पकड़ के जगाए रे फकीरवा",
     "roman": "Bahiyā̃ pakaṛ ke jagāe re fakīrwā",
-    "english": "{0,1:Holding my arm}, {3:You awakened me}, {4,5:O fakir}.",
+    "english": "{1,2:Holding }{0:my arm, }{3:You awakened me, }{4:O }{5:fakir.}",
     "words": [
       {
         "roman": "Bahiyā̃",
@@ -122,7 +122,7 @@ window.SONG_LINES = {
   "manwā_lāge_na": {
     "source": "मनवा लागे न कहीं तोरे बिन सइयाँ",
     "roman": "Manwā lāge na kahī̃ tore bin saiyā̃",
-    "english": "My {0:heart} {1,2:finds no peace} {3:anywhere} {4,5:without You}, {6:my Beloved}.",
+    "english": "{0:My heart }{1,2:finds no peace }{3:anywhere }{5:without }{4:You, }{6:my Beloved.}",
     "words": [
       {
         "roman": "Manwā",
@@ -157,7 +157,7 @@ window.SONG_LINES = {
   "jahā̃_jāū̃_tohe": {
     "source": "जहाँ जाऊँ तोहे पाऊँ बनूँ रे बावरिया",
     "roman": "Jahā̃ jāū̃ tohe pāū̃ banū re bāwariyā",
-    "english": "{0,1:Wherever I go}, {2,3:I find You}; {4:I become} a {6:love-maddened one}.",
+    "english": "{0:Wherever }{1:I go, }{3:I find }{2:You; }{4:I become }{5,6:a love-maddened one.}",
     "words": [
       {
         "roman": "Jahā̃",
@@ -192,7 +192,7 @@ window.SONG_LINES = {
   "more_ghaṭ_mẽ": {
     "source": "मोरे घट में है तोरी साँस रे फकीरवा",
     "roman": "More ghaṭ mẽ hai torī sā̃s re fakīrwā",
-    "english": "{4,5:Your breath} {3:is} {2:within} my {1:inner vessel}, {6,7:O fakir}.",
+    "english": "{4:Your }{5:breath }{3:is }{2:within }{0,1:my inner vessel, }{6:O }{7:fakir.}",
     "words": [
       {
         "roman": "More",

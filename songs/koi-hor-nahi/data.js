@@ -21,7 +21,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation": {
     "roman": "Mā merī sachīyā jotā wālī mātā, terī sadā hī jai",
-    "english": "{1:My} {0,5:mother} — the {2:true} {3:sacred flames} — {6:You} are {7:eternally} {8:victorious}.",
+    "english": "{1:My }{0:mother }— {2:the true }{3,4,5:sacred flames }— {6:You are }{7:eternally }{8:victorious.}",
     "words": [
       {
         "roman": "Mā",
@@ -65,7 +65,7 @@ window.SONG_LINES = {
   },
   "refrain": {
     "roman": "Main laṛ phaṛyā ae terā, koī hor nahī ae merā",
-    "english": "{0:I} {3:have} {2:grabbed onto} the {1:hem} of {4:Your} {1:garment}; {6,7:I have no} {5:one else}.",
+    "english": "{0:I }{2,3:have grabbed onto }{1:the hem }{4:of Your garment; }{7:I have }{5,6:no one else.}",
     "words": [
       {
         "roman": "Main",
@@ -105,7 +105,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Asī sāh chhaḍ jāvānge",
-    "english": "{0:My} {1:breath} {3:is going to} {2:abandon} {0:me}.",
+    "english": "{0:My }{1:breath }{3:is going to }{0,2:abandon me.}",
     "words": [
       {
         "roman": "Asī",
@@ -129,7 +129,7 @@ window.SONG_LINES = {
   },
   "v1b": {
     "roman": "Pher bājā māroge, asī muṛ nahīyo āvānge",
-    "english": "{0:Then} {2:You will} {1:cry out} — and {3:I} {5,6:will not} {4:turn back}.",
+    "english": "{0:Then }{1,2:You will cry out }— and {3:I }{5:will not }{4,6:turn back.}",
     "words": [
       {
         "roman": "Pher",
@@ -165,7 +165,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Is zindagī ton kī lainā, mā",
-    "english": "{3:What} {4:is there to get} {2:from} {0:this} {1:life} anyway, {5:Mother}?",
+    "english": "{3:What }{4:is there to get }{2:from }{0:this }{1:life }anyway, {5:Mother?}",
     "words": [
       {
         "roman": "Is",
@@ -197,7 +197,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Darshan nā hoyā, pher jī ke kī lainā",
-    "english": "If {1:I do not get} to {0:see You}, {4:what will I gain} {3:from living}?",
+    "english": "{1:If I do not }{0:get to see You, }{2,4:what will I gain }{3:from living?}",
     "words": [
       {
         "roman": "Darshan",
@@ -225,7 +225,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Asī dar tere āvānge",
-    "english": "{0:I} {3:will come} to {2:Your} {1:door} just like this.",
+    "english": "{0:I }{3:will come }{2:to Your }{1:door }just like this.",
     "words": [
       {
         "roman": "Asī",
@@ -249,7 +249,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Saun apnī pāvengī, tainū chhaḍ ke nā jāvānge",
-    "english": "Even if {2:You have me swear by} {1:Your own} {0:oath}, {5:I will never} {4:leave} {3:You}.",
+    "english": "{0,2:Even if You have me swear by }{1:Your own }{0:oath, }{4,5:I will never leave }{3:You.}",
     "words": [
       {
         "roman": "Saun",
@@ -281,7 +281,7 @@ window.SONG_LINES = {
   },
   "v4a": {
     "roman": "Eh zindagī terī ae, mā",
-    "english": "{0:This} {1:life} {3:is} already {2:Yours}, {4:Mother}.",
+    "english": "{0:This }{1:life }{3:is already }{2:Yours, }{4:Mother.}",
     "words": [
       {
         "roman": "Eh",
@@ -309,7 +309,7 @@ window.SONG_LINES = {
   },
   "v4b": {
     "roman": "Kado pherā ā jāve, is miṭṭī dī ḍherī ae",
-    "english": "{0:Who knows when} {1:the final turn} {2:will come}? {3:This} body {7:is} a {6:heap} {5:of} {4:earth}.",
+    "english": "Who knows {0:when }{1:the final turn }{2:will come? }{3:This body }{7:is }{6:a heap }{4,5:of earth.}",
     "words": [
       {
         "roman": "Kado",
@@ -349,7 +349,7 @@ window.SONG_LINES = {
   },
   "v5a": {
     "roman": "Tere charnā ’ch reh lānge",
-    "english": "{3:I will just stay} {2:at} {0:Your} {1:feet}.",
+    "english": "{3:I will just stay }{2:at }{0:Your }{1:feet.}",
     "words": [
       {
         "roman": "Tere",
@@ -373,7 +373,7 @@ window.SONG_LINES = {
   },
   "v5b": {
     "roman": "Tū sānū māf kar deyī, asī hass ke seh lānge",
-    "english": "{0:You} {2:forgive} {1:me}, and {3:I} {5:will do everything} {4:laughingly}.",
+    "english": "{0:You }{2:forgive }{1:me, }and {3:I }{5:will do everything }{4:laughingly.}",
     "words": [
       {
         "roman": "Tū",
@@ -405,7 +405,7 @@ window.SONG_LINES = {
   },
   "v6a": {
     "roman": "Terā ho ke main āvāngā, mā",
-    "english": "{2:I} {3:will only come back} {1:belonging} {0:to You}, {4:Mother}.",
+    "english": "{2:I }{3:will only come back }{0,1:belonging to You, }{4:Mother.}",
     "words": [
       {
         "roman": "Terā",
@@ -433,7 +433,7 @@ window.SONG_LINES = {
   },
   "v6b": {
     "roman": "Tū vī pher rovengī, je chhaḍ tainū jāvāngā",
-    "english": "{0:Even You} {2:will cry} {1:then}, {3:if} {6:I} ever {4:left} {5:You}.",
+    "english": "{0:Even You }{2:will cry }{1:then, }{3:if }{4,6:I ever left }{5:You.}",
     "words": [
       {
         "roman": "Tū vī",
@@ -469,7 +469,7 @@ window.SONG_LINES = {
   },
   "v7a": {
     "roman": "Tere reham bathere ne, mā",
-    "english": "{0:Your} {1:grace} {3:is} {2:infinite}, {4:Mother}.",
+    "english": "{0:Your }{1:grace }{2,3:is infinite, }{4:Mother.}",
     "words": [
       {
         "roman": "Tere",
@@ -497,7 +497,7 @@ window.SONG_LINES = {
   },
   "v7b": {
     "roman": "Khushīyā dikhā de vī mā, nahī te hanjū bathere ne",
-    "english": "{1:Show me} {0:happiness}, {3:Mother}. {4:Otherwise}, {5:tears} {6:are plentiful}.",
+    "english": "{1,2:Show me }{0:happiness, }{3:Mother. }{4:Otherwise, }{5:tears }{6:are plentiful.}",
     "words": [
       {
         "roman": "Khushīyā",
@@ -533,7 +533,7 @@ window.SONG_LINES = {
   },
   "v8a": {
     "roman": "Asī pher vī nahī bolānge, mā",
-    "english": "{1:Even then}, {0:I} {2:will not say a word of complaint}, {3:Mother}.",
+    "english": "{1:Even then, }{0:I }{2:will not say a word of complaint, }{3:Mother.}",
     "words": [
       {
         "roman": "Asī",
@@ -557,7 +557,7 @@ window.SONG_LINES = {
   },
   "v8b": {
     "roman": "Ikk vārī dass te jā, dukh kihde agge pholānge",
-    "english": "{2:Just} {1:tell} me {0:once}, {4:before who else} can I let {3:my sorrows} {5:blossom}?",
+    "english": "{0:Just }{1,2:tell me }{0:once, }{4:before who else }{5:can I let }{3:my sorrows }{5:blossom?}",
     "words": [
       {
         "roman": "Ikk vārī",
@@ -589,7 +589,7 @@ window.SONG_LINES = {
   },
   "outro1": {
     "roman": "Eh likh ke main jāvāngā, mā",
-    "english": "{1:Writing} {0:this}, {2:I} {3:will leave}, {4:Mother}:",
+    "english": "{1:Writing }{0:this, }{2:I }{3:will leave, }{4:Mother:}",
     "words": [
       {
         "roman": "Eh",
@@ -617,7 +617,7 @@ window.SONG_LINES = {
   },
   "outro2": {
     "roman": "Agle janam vī mā, terā putt kahāvāngā",
-    "english": "{1:Even} {0:in the next life}, {2:Mother}, {5:I will be called} {3:Your} {4:son}.",
+    "english": "{1:Even }{0:in the next life, }{2:Mother, }{5:I will be called }{3:Your }{4:son.}",
     "words": [
       {
         "roman": "Agle janam",
@@ -649,7 +649,7 @@ window.SONG_LINES = {
   },
   "closing": {
     "roman": "Koī hor nahī ae merā",
-    "english": "{1,2:I have no} {0:one else}.",
+    "english": "{2:I have}{0,1: no one else}.",
     "words": [
       {
         "roman": "Koī hor",
