@@ -2,6 +2,11 @@ window.SONG_META = {
   "title": "Koī Hor Nahī Hai Merā",
   "subtitle": "Jai Mātā Dī",
   "credit": "Aman Ji · Shri Mata Vaishno Devi Bhawan",
+  "searchAliases": [
+    "Koi Hor Nahi Hai Mera",
+    "Aman Ji",
+    "Shri Mata Vaishno Devi Bhawan"
+  ],
   "languages": [
     "Punjabi"
   ],
@@ -9,7 +14,8 @@ window.SONG_META = {
     "Śakti"
   ],
   "translationStatus": "legacy-review-required",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -811,119 +817,119 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0,
-    "end": 13.5
+    "start": 3.2,
+    "end": 14.5
   },
   {
-    "start": 13.5,
-    "end": 50.5
+    "start": 14.5,
+    "end": 51.0
   },
   {
-    "start": 50.5,
-    "end": 72.5
+    "start": 51.0,
+    "end": 72.3
   },
   {
-    "start": 72.5,
-    "end": 108.5
+    "start": 72.3,
+    "end": 108.4
   },
   {
-    "start": 108.5,
-    "end": 120.5
+    "start": 108.4,
+    "end": 120.2
   },
   {
-    "start": 120.5,
-    "end": 141
+    "start": 120.2,
+    "end": 141.5
   },
   {
-    "start": 141,
-    "end": 176
+    "start": 141.5,
+    "end": 176.0
   },
   {
-    "start": 176,
-    "end": 199.5
+    "start": 176.0,
+    "end": 199.3
   },
   {
-    "start": 199.5,
-    "end": 220.5
+    "start": 199.3,
+    "end": 220.4
   },
   {
-    "start": 220.5,
-    "end": 238.5
+    "start": 220.4,
+    "end": 237.8
   },
   {
-    "start": 238.5,
-    "end": 261.5
+    "start": 237.8,
+    "end": 260.9
   },
   {
-    "start": 261.5,
-    "end": 283.5
+    "start": 260.9,
+    "end": 282.8
   },
   {
-    "start": 283.5,
-    "end": 300.5
+    "start": 282.8,
+    "end": 300.7
   },
   {
-    "start": 300.5,
-    "end": 323.5
+    "start": 300.7,
+    "end": 323.4
   },
   {
-    "start": 323.5,
-    "end": 344.5
+    "start": 323.4,
+    "end": 344.8
   },
   {
-    "start": 344.5,
-    "end": 379
+    "start": 344.8,
+    "end": 379.1
   },
   {
-    "start": 379,
-    "end": 406
+    "start": 379.1,
+    "end": 406.3
   },
   {
-    "start": 406,
-    "end": 427.5
+    "start": 406.3,
+    "end": 427.23
   },
   {
-    "start": 427.5,
-    "end": 444
+    "start": 427.23,
+    "end": 445.01
   },
   {
-    "start": 444,
-    "end": 456.5
+    "start": 445.01,
+    "end": 456.82
   },
   {
-    "start": 456.5,
-    "end": 477
+    "start": 456.82,
+    "end": 477.65
   },
   {
-    "start": 477,
-    "end": 495
+    "start": 477.65,
+    "end": 494.6
   },
   {
-    "start": 495,
-    "end": 517
+    "start": 494.6,
+    "end": 517.2
   },
   {
-    "start": 517,
-    "end": 538
+    "start": 517.2,
+    "end": 538.0
   },
   {
-    "start": 538,
-    "end": 571.5
+    "start": 538.0,
+    "end": 572.0
   },
   {
-    "start": 571.5,
-    "end": 593.5
+    "start": 572.0,
+    "end": 592.6
   },
   {
-    "start": 593.5,
-    "end": 624
+    "start": 592.6,
+    "end": 624.15
   },
   {
-    "start": 624,
-    "end": 641.5
+    "start": 624.15,
+    "end": 641.4
   },
   {
-    "start": 641.5,
-    "end": 652.3
+    "start": 641.4,
+    "end": 652.364626
   }
 ];

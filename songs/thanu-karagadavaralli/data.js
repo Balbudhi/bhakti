@@ -4,6 +4,11 @@ window.SONG_META = {
   "writer": "Akkamahādevī",
   "singer": "Sangeeta Katti Kulkarni",
   "credit": "Akkamahādevī · Sangeeta Katti Kulkarni",
+  "searchAliases": [
+    "Thanu Karagadavaralli Pushpavanolleyayya Neenu",
+    "Akkamahadevi",
+    "Sangeeta Katti Kulkarni"
+  ],
   "languages": [
     "Kannada"
   ],
@@ -11,7 +16,8 @@ window.SONG_META = {
     "Śiva"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -391,59 +397,59 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 51.8,
-    "end": 71
+    "start": 52.9,
+    "end": 72.02
   },
   {
-    "start": 71,
-    "end": 90.8
+    "start": 72.02,
+    "end": 90.86
   },
   {
-    "start": 90.8,
-    "end": 102.5
+    "start": 90.86,
+    "end": 133.3
   },
   {
-    "start": 132.7,
-    "end": 152.5
+    "start": 133.3,
+    "end": 153.2
   },
   {
-    "start": 152.5,
-    "end": 168.2
+    "start": 153.2,
+    "end": 169.2
   },
   {
-    "start": 169.75,
-    "end": 187
+    "start": 169.2,
+    "end": 211.1
   },
   {
-    "start": 210.1,
-    "end": 231
+    "start": 211.1,
+    "end": 231.0
   },
   {
-    "start": 231,
-    "end": 246.5
+    "start": 231.0,
+    "end": 246.9
   },
   {
-    "start": 246.5,
-    "end": 261.5
+    "start": 246.9,
+    "end": 289.0
   },
   {
-    "start": 286.6,
-    "end": 308.2
+    "start": 289.0,
+    "end": 308.6
   },
   {
-    "start": 308.2,
-    "end": 325.5
+    "start": 308.6,
+    "end": 331.7
   },
   {
-    "start": 331.4,
-    "end": 340.75
+    "start": 331.7,
+    "end": 340.6
   },
   {
-    "start": 340.75,
-    "end": 348.8
+    "start": 340.6,
+    "end": 349.2
   },
   {
-    "start": 348.8,
-    "end": 373.2
+    "start": 349.2,
+    "end": 392.581
   }
 ];

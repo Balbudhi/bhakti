@@ -1,6 +1,11 @@
 window.SONG_META = {
   "title": "Jab Dil Udās Ho To",
   "credit": "Satpathy Baba",
+  "searchAliases": [
+    "Jab Dil Udaas Ho To",
+    "Satpathy Baba",
+    "Shirdi Sai"
+  ],
   "languages": [
     "Hindi"
   ],
@@ -8,7 +13,8 @@ window.SONG_META = {
     "Śirḍī Sāī"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "source-script-migration-required"
+  "sourceStatus": "source-script-migration-required",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -486,171 +492,171 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 36.34,
-    "end": 41.21
+    "start": 35.76,
+    "end": 41.18
   },
   {
-    "start": 41.21,
-    "end": 47.16
+    "start": 41.18,
+    "end": 46.58
   },
   {
-    "start": 47.16,
-    "end": 53.15
+    "start": 46.58,
+    "end": 51.98
   },
   {
-    "start": 53.15,
-    "end": 59.3
+    "start": 51.98,
+    "end": 57.38
   },
   {
-    "start": 59.3,
-    "end": 65.3
+    "start": 57.38,
+    "end": 65.83
   },
   {
-    "start": 65.3,
-    "end": 71.2
+    "start": 65.83,
+    "end": 71.83
   },
   {
-    "start": 71.2,
-    "end": 77.1
+    "start": 71.83,
+    "end": 77.84
   },
   {
-    "start": 77.1,
-    "end": 83
+    "start": 77.84,
+    "end": 83.62
   },
   {
-    "start": 83,
-    "end": 130.61
+    "start": 83.62,
+    "end": 131.76
   },
   {
-    "start": 130.61,
-    "end": 137.35
+    "start": 131.76,
+    "end": 137.8
   },
   {
-    "start": 137.35,
-    "end": 143.38
+    "start": 137.8,
+    "end": 143.8
   },
   {
-    "start": 143.38,
-    "end": 149.72
+    "start": 143.8,
+    "end": 149.82
   },
   {
-    "start": 149.72,
-    "end": 155.34
+    "start": 149.82,
+    "end": 155.84
   },
   {
-    "start": 155.34,
-    "end": 165.3
+    "start": 155.84,
+    "end": 167.88
   },
   {
-    "start": 165.3,
-    "end": 169.2
+    "start": 167.88,
+    "end": 173.9
   },
   {
-    "start": 169.2,
-    "end": 174.3
+    "start": 173.9,
+    "end": 179.92
   },
   {
-    "start": 174.3,
-    "end": 179.9
+    "start": 179.92,
+    "end": 185.8
   },
   {
-    "start": 179.9,
-    "end": 185.1
+    "start": 185.8,
+    "end": 191.7
   },
   {
-    "start": 185.1,
-    "end": 235.48
+    "start": 191.7,
+    "end": 233.7
   },
   {
-    "start": 235.48,
-    "end": 242.1
+    "start": 233.7,
+    "end": 239.5
   },
   {
-    "start": 242.1,
-    "end": 248.1
+    "start": 239.5,
+    "end": 245.85
   },
   {
-    "start": 248.1,
-    "end": 254.6
+    "start": 245.85,
+    "end": 251.9
   },
   {
-    "start": 254.6,
-    "end": 260.9
+    "start": 251.9,
+    "end": 257.85
   },
   {
-    "start": 260.9,
-    "end": 266.7
+    "start": 257.85,
+    "end": 263.85
   },
   {
-    "start": 266.7,
-    "end": 272.6
+    "start": 263.85,
+    "end": 269.85
   },
   {
-    "start": 272.6,
-    "end": 276.2
+    "start": 269.85,
+    "end": 275.85
   },
   {
-    "start": 276.2,
-    "end": 284.8
+    "start": 275.85,
+    "end": 281.85
   },
   {
-    "start": 284.8,
-    "end": 292.8
+    "start": 281.85,
+    "end": 287.85
   },
   {
-    "start": 292.8,
-    "end": 301.1
+    "start": 287.85,
+    "end": 293.85
   },
   {
-    "start": 301.1,
-    "end": 341.3
+    "start": 293.85,
+    "end": 340.8
   },
   {
-    "start": 341.3,
-    "end": 346.6
+    "start": 340.8,
+    "end": 346.8
   },
   {
-    "start": 346.6,
+    "start": 346.8,
     "end": 352.7
   },
   {
     "start": 352.7,
-    "end": 358
+    "end": 358.6
   },
   {
-    "start": 358,
-    "end": 364
+    "start": 358.6,
+    "end": 363.9
   },
   {
-    "start": 364,
-    "end": 375.6
+    "start": 363.9,
+    "end": 376.2
   },
   {
-    "start": 375.6,
-    "end": 382.25
+    "start": 376.2,
+    "end": 382.1
   },
   {
-    "start": 382.25,
-    "end": 388.15
+    "start": 382.1,
+    "end": 388.1
   },
   {
-    "start": 388.15,
-    "end": 394
+    "start": 388.1,
+    "end": 394.1
   },
   {
-    "start": 394,
-    "end": 400
+    "start": 394.1,
+    "end": 400.1
   },
   {
-    "start": 400,
-    "end": 405.8
+    "start": 400.1,
+    "end": 406.0
   },
   {
-    "start": 405.8,
-    "end": 411.5
+    "start": 406.0,
+    "end": 412.1
   },
   {
-    "start": 411.5,
-    "end": 430
+    "start": 412.1,
+    "end": 434.747211
   }
 ];

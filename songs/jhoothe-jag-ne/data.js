@@ -2,6 +2,11 @@ window.SONG_META = {
   "title": "Jhūṭhe Jag Ne Liyā Mainū Lūṭ Mā",
   "subtitle": "Jai Mātā Dī",
   "credit": "Maninder Ji · Shri Mata Vaishno Devi Bhawan",
+  "searchAliases": [
+    "Jhoothe Jag Ne Liya Mainu Loot Maa",
+    "Maninder Ji",
+    "Shri Mata Vaishno Devi Bhawan"
+  ],
   "languages": [
     "Punjabi"
   ],
@@ -9,7 +14,8 @@ window.SONG_META = {
     "Śakti"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -786,95 +792,95 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0,
-    "end": 11
+    "start": 1.16,
+    "end": 11.8
   },
   {
-    "start": 11,
-    "end": 50
+    "start": 11.8,
+    "end": 50.3
   },
   {
-    "start": 50,
-    "end": 68
+    "start": 50.3,
+    "end": 68.4
   },
   {
-    "start": 68,
-    "end": 87
+    "start": 68.4,
+    "end": 120.4
   },
   {
-    "start": 120,
-    "end": 144
+    "start": 120.4,
+    "end": 144.3
   },
   {
-    "start": 144,
-    "end": 167
+    "start": 144.3,
+    "end": 168.1
   },
   {
-    "start": 167,
-    "end": 185
+    "start": 168.1,
+    "end": 184.8
   },
   {
-    "start": 185,
-    "end": 202
+    "start": 184.8,
+    "end": 202.3
   },
   {
-    "start": 202,
-    "end": 221
+    "start": 202.3,
+    "end": 220.8
   },
   {
-    "start": 221,
-    "end": 245
+    "start": 220.8,
+    "end": 244.3
   },
   {
-    "start": 245,
-    "end": 268
+    "start": 244.3,
+    "end": 268.2
   },
   {
-    "start": 268,
-    "end": 286
+    "start": 268.2,
+    "end": 285.3
   },
   {
-    "start": 286,
-    "end": 303
+    "start": 285.3,
+    "end": 303.2
   },
   {
-    "start": 303,
-    "end": 327
+    "start": 303.2,
+    "end": 326.8
   },
   {
-    "start": 327,
-    "end": 350
+    "start": 326.8,
+    "end": 349.8
   },
   {
-    "start": 350,
-    "end": 365
+    "start": 349.8,
+    "end": 367.2
   },
   {
-    "start": 365,
-    "end": 383
+    "start": 367.2,
+    "end": 385.0
   },
   {
-    "start": 383,
-    "end": 407
+    "start": 385.0,
+    "end": 408.0
   },
   {
-    "start": 407,
-    "end": 431
+    "start": 408.0,
+    "end": 431.3
   },
   {
-    "start": 431,
-    "end": 450
+    "start": 431.3,
+    "end": 448.9
   },
   {
-    "start": 450,
-    "end": 468
+    "start": 448.9,
+    "end": 465.6
   },
   {
-    "start": 468,
-    "end": 481
+    "start": 465.6,
+    "end": 482.2
   },
   {
-    "start": 481,
-    "end": 512.39
+    "start": 482.2,
+    "end": 512.393
   }
 ];

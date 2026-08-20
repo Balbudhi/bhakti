@@ -9,7 +9,8 @@ window.SONG_META = {
     "Śakti"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -805,123 +806,123 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0.8,
-    "end": 44.8
+    "start": 0.82,
+    "end": 45.16
   },
   {
-    "start": 44.8,
-    "end": 55.73
+    "start": 45.16,
+    "end": 55.88
   },
   {
-    "start": 55.73,
-    "end": 82.8
+    "start": 55.88,
+    "end": 83.0
   },
   {
-    "start": 82.8,
-    "end": 94
+    "start": 83.0,
+    "end": 93.2
   },
   {
-    "start": 94,
-    "end": 107.65
+    "start": 93.2,
+    "end": 107.2
   },
   {
-    "start": 107.65,
-    "end": 113.6
+    "start": 107.2,
+    "end": 113.5
   },
   {
-    "start": 113.6,
-    "end": 133.4
+    "start": 113.5,
+    "end": 133.9
   },
   {
-    "start": 133.4,
-    "end": 144.5
+    "start": 133.9,
+    "end": 144.8
   },
   {
-    "start": 144.5,
-    "end": 169.4
+    "start": 144.8,
+    "end": 171.2
   },
   {
-    "start": 169.4,
-    "end": 177.56
+    "start": 171.2,
+    "end": 178.8
   },
   {
-    "start": 177.56,
-    "end": 188.2
+    "start": 178.8,
+    "end": 198.0
   },
   {
-    "start": 188.2,
-    "end": 204.6
+    "start": 198.0,
+    "end": 215.2
   },
   {
-    "start": 204.6,
-    "end": 229.8
+    "start": 215.2,
+    "end": 228.8
   },
   {
-    "start": 229.8,
-    "end": 243.8
+    "start": 228.8,
+    "end": 242.3
   },
   {
-    "start": 243.8,
-    "end": 254.2
+    "start": 242.3,
+    "end": 252.0
   },
   {
-    "start": 254.2,
-    "end": 268.1
+    "start": 252.0,
+    "end": 265.5
   },
   {
-    "start": 268.1,
-    "end": 273.9
+    "start": 265.5,
+    "end": 272.4
   },
   {
-    "start": 273.9,
-    "end": 291.8
+    "start": 272.4,
+    "end": 292.1
   },
   {
-    "start": 291.8,
-    "end": 310.3
+    "start": 292.1,
+    "end": 308.9
   },
   {
-    "start": 310.3,
-    "end": 321.2
+    "start": 308.9,
+    "end": 322.2
   },
   {
-    "start": 321.2,
-    "end": 335.81
+    "start": 322.2,
+    "end": 335.0
   },
   {
-    "start": 335.81,
-    "end": 342.31
+    "start": 335.0,
+    "end": 341.8
   },
   {
-    "start": 342.31,
-    "end": 361.82
+    "start": 341.8,
+    "end": 362.3
   },
   {
-    "start": 361.82,
-    "end": 379.5
+    "start": 362.3,
+    "end": 379.3
   },
   {
-    "start": 379.5,
-    "end": 390.9
+    "start": 379.3,
+    "end": 391.5
   },
   {
-    "start": 390.9,
-    "end": 402.8
+    "start": 391.5,
+    "end": 404.3
   },
   {
-    "start": 402.8,
-    "end": 416.5
+    "start": 404.3,
+    "end": 419.7
   },
   {
-    "start": 416.5,
-    "end": 428
+    "start": 419.7,
+    "end": 431.5
   },
   {
-    "start": 428,
-    "end": 456.6
+    "start": 431.5,
+    "end": 457.8
   },
   {
-    "start": 456.6,
+    "start": 457.8,
     "end": 463.024
   }
 ];

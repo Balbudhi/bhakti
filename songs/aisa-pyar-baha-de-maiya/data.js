@@ -1,7 +1,12 @@
 window.SONG_META = {
   "title": "Aisā Pyār Bahā De Maiyā",
-  "subtitle": "Durgā Vandana",
+  "subtitle": "Durgā Vandanā",
   "credit": "Hari Om Sharan",
+  "searchAliases": [
+    "Aisa Pyar Baha De Maiya",
+    "Durga Vandana",
+    "Hari Om Sharan"
+  ],
   "languages": [
     "Hindi",
     "Sanskrit"
@@ -11,7 +16,8 @@ window.SONG_META = {
     "Durgā"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -1025,159 +1031,159 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 4.6,
-    "end": 14.4
+    "start": 4.41,
+    "end": 16.1
   },
   {
-    "start": 15.15,
-    "end": 25.4
+    "start": 16.1,
+    "end": 27.2
   },
   {
-    "start": 26.15,
-    "end": 37.2
+    "start": 27.2,
+    "end": 39.9
   },
   {
-    "start": 38.3,
-    "end": 49.3
+    "start": 39.9,
+    "end": 58.84
   },
   {
-    "start": 58.6,
-    "end": 72.3
+    "start": 58.84,
+    "end": 72.7
   },
   {
-    "start": 72.3,
-    "end": 77.9
+    "start": 72.7,
+    "end": 78.1
   },
   {
-    "start": 78,
-    "end": 83.7
+    "start": 78.1,
+    "end": 83.5
   },
   {
-    "start": 83.8,
-    "end": 89.5
+    "start": 83.5,
+    "end": 88.8
   },
   {
-    "start": 89.5,
-    "end": 95.3
+    "start": 88.8,
+    "end": 110.7
   },
   {
-    "start": 110.4,
-    "end": 118.8
+    "start": 110.7,
+    "end": 116.3
   },
   {
-    "start": 119,
-    "end": 125.5
+    "start": 116.3,
+    "end": 126.2
   },
   {
-    "start": 126.45,
+    "start": 126.2,
     "end": 131.2
   },
   {
-    "start": 131.5,
-    "end": 142
+    "start": 131.2,
+    "end": 141.9
   },
   {
-    "start": 142.55,
-    "end": 149.5
+    "start": 141.9,
+    "end": 152.3
   },
   {
-    "start": 149.5,
-    "end": 153.2
+    "start": 152.3,
+    "end": 157.3
   },
   {
-    "start": 153.3,
-    "end": 158.5
+    "start": 157.3,
+    "end": 162.2
   },
   {
-    "start": 159.2,
-    "end": 164.8
+    "start": 162.2,
+    "end": 167.3
   },
   {
-    "start": 165,
-    "end": 170.8
+    "start": 167.3,
+    "end": 173.2
   },
   {
-    "start": 178,
-    "end": 182.5
+    "start": 173.2,
+    "end": 188.8
   },
   {
-    "start": 188,
-    "end": 196
+    "start": 188.8,
+    "end": 198.42
   },
   {
-    "start": 196.4,
-    "end": 201.2
+    "start": 198.42,
+    "end": 204.0
   },
   {
-    "start": 202.8,
-    "end": 211
+    "start": 204.0,
+    "end": 213.62
   },
   {
-    "start": 211.4,
-    "end": 216.2
+    "start": 213.62,
+    "end": 219.2
   },
   {
-    "start": 218,
-    "end": 223
+    "start": 219.2,
+    "end": 223.42
   },
   {
-    "start": 223.2,
-    "end": 232
+    "start": 223.42,
+    "end": 233.5
   },
   {
-    "start": 232.4,
-    "end": 237.5
+    "start": 233.5,
+    "end": 238.0
   },
   {
-    "start": 237.6,
-    "end": 242
+    "start": 238.0,
+    "end": 243.35
   },
   {
-    "start": 242.9,
-    "end": 249
+    "start": 243.35,
+    "end": 264.58
   },
   {
-    "start": 264.7,
-    "end": 271.9
+    "start": 264.58,
+    "end": 274.18
   },
   {
-    "start": 272.15,
-    "end": 277.8
+    "start": 274.18,
+    "end": 279.8
   },
   {
-    "start": 278.45,
-    "end": 286
+    "start": 279.8,
+    "end": 289.45
   },
   {
-    "start": 287.05,
-    "end": 292.5
+    "start": 289.45,
+    "end": 295.05
   },
   {
-    "start": 293.2,
-    "end": 298
+    "start": 295.05,
+    "end": 299.22
   },
   {
-    "start": 299.3,
-    "end": 307.6
+    "start": 299.22,
+    "end": 309.24
   },
   {
-    "start": 308.15,
-    "end": 313
+    "start": 309.24,
+    "end": 314.75
   },
   {
-    "start": 313.5,
-    "end": 318.5
+    "start": 314.75,
+    "end": 320.28
   },
   {
-    "start": 318.8,
-    "end": 323.8
+    "start": 320.28,
+    "end": 325.82
   },
   {
-    "start": 324.1,
-    "end": 329.2
+    "start": 325.82,
+    "end": 331.35
   },
   {
-    "start": 329.7,
-    "end": 340
+    "start": 331.35,
+    "end": 340.041
   }
 ];

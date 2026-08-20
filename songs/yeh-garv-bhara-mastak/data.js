@@ -2,12 +2,16 @@ window.SONG_META = {
   "title": "Yeh Garv Bharā Mastak Merā",
   "subtitle": "Prārthanā",
   "credit": "Hari Om Sharan",
+  "searchAliases": [
+    "Hari Om Sharan"
+  ],
   "languages": [
     "Hindi"
   ],
   "subjectTags": [],
   "translationStatus": "reviewed",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -707,147 +711,147 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 17,
-    "end": 34
+    "start": 16.63,
+    "end": 36.88
   },
   {
-    "start": 34,
-    "end": 41.8
+    "start": 36.88,
+    "end": 43.68
   },
   {
-    "start": 41.8,
-    "end": 49
+    "start": 43.68,
+    "end": 50.15
   },
   {
-    "start": 49,
-    "end": 56.4
+    "start": 50.15,
+    "end": 56.88
   },
   {
-    "start": 56.4,
-    "end": 62.2
+    "start": 56.88,
+    "end": 62.15
   },
   {
-    "start": 62.2,
-    "end": 68
+    "start": 62.15,
+    "end": 68.65
   },
   {
-    "start": 68,
-    "end": 87.7
+    "start": 68.65,
+    "end": 87.15
   },
   {
-    "start": 87.7,
-    "end": 93.5
+    "start": 87.15,
+    "end": 93.55
   },
   {
-    "start": 93.5,
-    "end": 99.3
+    "start": 93.55,
+    "end": 100.2
   },
   {
-    "start": 99.3,
-    "end": 105.1
+    "start": 100.2,
+    "end": 106.75
   },
   {
-    "start": 105.1,
-    "end": 111.2
+    "start": 106.75,
+    "end": 111.75
   },
   {
-    "start": 111.2,
-    "end": 114.8
+    "start": 111.75,
+    "end": 115.2
   },
   {
-    "start": 114.8,
-    "end": 121.4
+    "start": 115.2,
+    "end": 121.61
   },
   {
-    "start": 121.4,
-    "end": 126.8
+    "start": 121.61,
+    "end": 128.33
   },
   {
-    "start": 126.8,
-    "end": 136
+    "start": 128.33,
+    "end": 133.57
   },
   {
-    "start": 136,
-    "end": 140.5
+    "start": 133.57,
+    "end": 140.23
   },
   {
-    "start": 140.5,
-    "end": 156.2
+    "start": 140.23,
+    "end": 155.95
   },
   {
-    "start": 156.2,
-    "end": 162.8
+    "start": 155.95,
+    "end": 162.56
   },
   {
-    "start": 162.8,
-    "end": 168.8
+    "start": 162.56,
+    "end": 169.18
   },
   {
-    "start": 168.8,
-    "end": 175.1
+    "start": 169.18,
+    "end": 175.81
   },
   {
-    "start": 175.1,
-    "end": 180.8
+    "start": 175.81,
+    "end": 181.1
   },
   {
-    "start": 180.8,
-    "end": 186.6
+    "start": 181.1,
+    "end": 187.7
   },
   {
-    "start": 186.6,
-    "end": 193.4
+    "start": 187.7,
+    "end": 194.3
   },
   {
-    "start": 193.4,
+    "start": 194.3,
     "end": 200.2
   },
   {
     "start": 200.2,
-    "end": 206.4
+    "end": 206.9
   },
   {
-    "start": 206.4,
-    "end": 223.2
+    "start": 206.9,
+    "end": 223.9
   },
   {
-    "start": 223.2,
-    "end": 230.3
+    "start": 223.9,
+    "end": 230.5
   },
   {
-    "start": 230.3,
-    "end": 236
+    "start": 230.5,
+    "end": 236.9
   },
   {
-    "start": 236,
-    "end": 243
+    "start": 236.9,
+    "end": 242.45
   },
   {
-    "start": 243,
-    "end": 248.2
+    "start": 242.45,
+    "end": 248.55
   },
   {
-    "start": 248.2,
-    "end": 252.2
+    "start": 248.55,
+    "end": 252.3
   },
   {
-    "start": 252.2,
-    "end": 258.2
+    "start": 252.3,
+    "end": 258.9
   },
   {
-    "start": 258.2,
-    "end": 264.8
+    "start": 258.9,
+    "end": 265.5
   },
   {
-    "start": 264.8,
-    "end": 271
+    "start": 265.5,
+    "end": 270.8
   },
   {
-    "start": 271,
-    "end": 276.24
+    "start": 270.8,
+    "end": 277.4
   },
   {
-    "start": 276.24,
-    "end": 284.28
+    "start": 277.4,
+    "end": 288.001
   }
 ];
