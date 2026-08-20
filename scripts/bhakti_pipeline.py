@@ -312,7 +312,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     existing = read_packet(target)
     if existing:
         return existing
-    prompt = f"""Write literal English translations from the supplied word glosses and grammar notes ONLY. Do not introduce a looser synonym, devotional interpretation, or omission that the gloss record does not support.
+    prompt = f"""Write faithful, complete, idiomatic English translations from the supplied word glosses and grammar notes ONLY. The glosses are semantic constraints, not a license for wooden word-for-word substitution: preserve their exact meaning, grammar, poetic image, register, and all emphases while writing natural English. Do not introduce a looser synonym, devotional interpretation, or omission that the gloss record does not support. Equally, do not replace a precise English image with a blander gloss synonym merely because it is shorter.
 
 For each line, return plain literal English plus ordered display segments. Each segment may reference the exact word indices which support it; punctuation or function-word segments can use an empty index list. Preserve poetic imagery without making the literal sentence more poetic than its glosses warrant. Report uncertainty honestly.
 

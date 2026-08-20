@@ -28,6 +28,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--model", default=gemini.MODEL)
     parser.add_argument("--timeout", type=float, default=180)
+    parser.add_argument("--reuse-glosses", action="store_true",
+                        help="Reuse an existing private gloss packet and rerun only the English stage.")
     return parser.parse_args()
 
 
@@ -56,6 +58,8 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
                  for line_id, line in lines.items()]
     review_dir = ROOT / "songs" / slug / ".transcription" / "translation-review-gloss-first"
     review_dir.mkdir(parents=True, exist_ok=True)
+    existing = review_dir / "review.json"
+    prior = json.loads(existing.read_text(encoding="utf-8")) if options.reuse_glosses and existing.is_file() else None
     gloss_prompt = f"""Rebuild literal word glosses for these devotional lyric lines. Work from the supplied source script where present and careful IAST in every case. Segment actual words or meaningful grammatical units, preserve imagery, and state syntax/idiom notes. Do not write fluent sentence translations yet. Mark uncertainty rather than guessing.
 
 Current reader lines (the existing word glosses are comparison evidence, not a baseline to copy):
@@ -63,8 +67,8 @@ Current reader lines (the existing word glosses are comparison evidence, not a b
 
 Return strict JSON:
 {{"glosses":[{{"id":"line-id","word_glosses":[{{"roman":"","gloss":""}}],"grammar_note":"","uncertainty":""}}]}}"""
-    glosses = call(gloss_prompt, options)
-    translation_prompt = f"""Write a literal English reading of each devotional lyric line from the supplied new word glosses and grammar notes only. Preserve the poetic image but do not add interpretation or swap a word for a looser synonym. For each line compare the old published English and explain every material wording change. Do not change a line merely for style.
+    glosses = prior["glosses"] if prior else call(gloss_prompt, options)
+    translation_prompt = f"""Write a faithful, complete, idiomatic English reading of each devotional lyric line from the supplied word glosses and grammar notes only. Glosses constrain meaning and grammar; they do not require wooden English or a sequence of gloss synonyms. Preserve the original poetic image, devotional register, and every meaningful emphasis. Do not add interpretation, omit a word, or swap a precise image for a looser synonym. If the published wording is already more precise and natural while remaining faithful to every gloss, retain it. For each line compare the old published English and explain every material wording change. Do not change a line merely for style.
 
 Source/IAST/current English:
 {json.dumps(canonical, ensure_ascii=False)}
@@ -76,7 +80,7 @@ Return strict JSON:
 {{"translations":[{{"id":"line-id","literal_english":"","uncertainty":""}}],"comparison":[{{"id":"line-id","published":"","proposed":"","material_change":false,"reason":""}}]}}"""
     translations = call(translation_prompt, options)
     report = {"slug": slug, "model_requested": options.model, "source_lines": canonical,
-              "glosses": glosses, "translations": translations,
+              "glosses": glosses, "translations": translations, "reused_glosses": bool(prior),
               "reported_openrouter_cost": sum(float(item.get("usage", {}).get("cost", 0) or 0) for item in (glosses, translations))}
     (review_dir / "review.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return {"slug": slug, "reported_openrouter_cost": report["reported_openrouter_cost"], "status": "review-required"}
@@ -85,10 +89,17 @@ Return strict JSON:
 def main() -> int:
     options = parse_args()
     slugs = sorted(path.name for path in (ROOT / "songs").iterdir() if path.is_dir()) if options.songs == ["all"] else options.songs
+    def guarded(slug: str) -> dict[str, Any]:
+        try:
+            return run_slug(slug, options)
+        except Exception as exc:
+            # One legacy reader must not prevent independent readers from
+            # receiving their requested text-only review packet.
+            return {"slug": slug, "status": "blocked", "error": str(exc)}
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, options.workers)) as pool:
-        results = list(pool.map(lambda slug: run_slug(slug, options), slugs))
+        results = list(pool.map(guarded, slugs))
     print(json.dumps(results, ensure_ascii=False, indent=2))
-    return 0
+    return 1 if any(result["status"] == "blocked" for result in results) else 0
 
 
 if __name__ == "__main__":
