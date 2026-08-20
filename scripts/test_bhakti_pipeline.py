@@ -135,6 +135,32 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual([item["occurrence_id"] for item in occurrences], ["occ-000", "occ-001", "occ-002"])
         self.assertEqual([(item["ref"], item["repeats"]) for item in occurrences], [("a", 2), ("b", 1), ("a", 1)])
 
+    def test_compress_adjacent_reader_entries_merges_sequence_and_timings(self) -> None:
+        sequence = [
+            {"ref": "a", "section": "refrain", "repeats": 1},
+            {"ref": "a", "section": "refrain", "repeats": 1},
+            {"ref": "b", "section": "verse", "repeats": 2},
+            {"ref": "b", "section": "spoken", "repeats": 1},
+        ]
+        timings = [
+            {"start": 1.0, "end": 2.0},
+            {"start": 2.0, "end": 3.5},
+            {"start": 3.5, "end": 7.0},
+            {"start": 7.0, "end": 8.0},
+        ]
+        merged_sequence, merged_timings, merged = pipeline.compress_adjacent_reader_entries(sequence, timings)
+        self.assertEqual(merged, 1)
+        self.assertEqual(merged_sequence, [
+            {"ref": "a", "section": "refrain", "repeats": 2},
+            {"ref": "b", "section": "verse", "repeats": 2},
+            {"ref": "b", "section": "spoken", "repeats": 1},
+        ])
+        self.assertEqual(merged_timings, [
+            {"start": 1.0, "end": 3.5},
+            {"start": 3.5, "end": 7.0},
+            {"start": 7.0, "end": 8.0},
+        ])
+
     def test_start_only_response_derives_intervals_and_blocks_reordering(self) -> None:
         occurrences = [
             {"occurrence_id": "occ-000", "ref": "a", "section": "refrain", "repeats": 2},

@@ -340,7 +340,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "tanu",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "haduli",
@@ -354,7 +355,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "tanu",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "bhava",
@@ -368,7 +370,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "tanu",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "trikarana",
@@ -382,11 +385,13 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "ennalli",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "karasthala",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "chennamalli",

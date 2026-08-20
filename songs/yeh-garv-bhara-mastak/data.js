@@ -569,143 +569,178 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_d",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v1a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1d",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1e",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v2a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2d",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v3a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3d",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3e",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   }
 ];
 

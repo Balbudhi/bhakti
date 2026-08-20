@@ -652,7 +652,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
@@ -666,11 +667,13 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v1a",
@@ -699,7 +702,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v1f",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
@@ -713,11 +717,13 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v2a",
@@ -746,7 +752,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v2f",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
@@ -760,11 +767,13 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v3a",
@@ -793,7 +802,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v3f",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
@@ -807,11 +817,13 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
@@ -825,7 +837,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
@@ -993,6 +1006,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 498.92,
-    "end": 544.043537
+    "end": 544.044
   }
 ];

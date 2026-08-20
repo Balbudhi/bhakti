@@ -647,6 +647,31 @@ def display_occurrences(packet: dict[str, Any]) -> list[dict[str, Any]]:
     return blocks
 
 
+def compress_adjacent_reader_entries(
+    sequence: list[dict[str, Any]], timings: list[dict[str, Any]]
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], int]:
+    """Merge adjacent identical displayed entries into one repeat-counted block."""
+    if len(sequence) != len(timings):
+        raise RuntimeError("sequence/timing arrays differ in length")
+    merged_sequence: list[dict[str, Any]] = []
+    merged_timings: list[dict[str, Any]] = []
+    merged_boundaries = 0
+    for entry, timing in zip(sequence, timings):
+        ref = entry["ref"]
+        section = entry.get("section", "verse")
+        repeats = int(entry.get("repeats", 1) or 1)
+        start = round(float(timing["start"]), 3)
+        end = round(float(timing["end"]), 3)
+        if merged_sequence and merged_sequence[-1]["ref"] == ref and merged_sequence[-1]["section"] == section:
+            merged_sequence[-1]["repeats"] += repeats
+            merged_timings[-1]["end"] = end
+            merged_boundaries += 1
+            continue
+        merged_sequence.append({"ref": ref, "section": section, "repeats": repeats})
+        merged_timings.append({"start": start, "end": end})
+    return merged_sequence, merged_timings, merged_boundaries
+
+
 def long_coarse_sequence(
     audited: dict[str, Any], occurrences: list[dict[str, Any]], duration: float
 ) -> list[dict[str, Any]]:
@@ -1732,9 +1757,13 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
         line_data[line_id] = {"source": line.get("source_text", ""), "sourceLanguage": language_code((meta["languages"] or [""])[0]),
                               "roman": line.get("roman", ""), "english": segment_english(row.get("segments", []), row.get("literal_english", "")),
                               "words": gloss_by_id[line_id].get("word_glosses", []), "grammarNote": gloss_by_id[line_id].get("grammar_note", "")}
-    sequence = [{"ref": event["ref"], "section": next((line.get("kind", "verse") for line in lines if line["id"] == event["ref"]), "verse"), "repeats": 1}
+    sequence = [{"ref": event["ref"],
+                 "section": event.get("section") or next((line.get("kind", "verse")
+                                                           for line in lines if line["id"] == event["ref"]), "verse"),
+                 "repeats": int(event.get("repeats", 1) or 1)}
                 for event in timing["sequence"]]
     times = [{"start": round(event["start"], 3), "end": round(event["end"], 3)} for event in timing["sequence"]]
+    sequence, times, _ = compress_adjacent_reader_entries(sequence, times)
     data = ("window.SONG_META = " + json.dumps(meta, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_LINES = " + json.dumps(line_data, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +

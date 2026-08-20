@@ -113,6 +113,16 @@ def audit_song(directory: Path) -> dict[str, Any]:
                 continue
             if entry.get("ref") not in lines:
                 problems.append(f"sequence[{index}] references unknown line {entry.get('ref')!r}")
+            if "repeats" not in entry:
+                problems.append(f"sequence[{index}] lacks repeats")
+            try:
+                repeats = int(entry.get("repeats", 1) or 1)
+                if repeats < 1:
+                    raise ValueError
+            except (TypeError, ValueError):
+                problems.append(f"sequence[{index}] has an invalid repeats value")
+            if index and entry.get("ref") == sequence[index - 1].get("ref") and entry.get("section") == sequence[index - 1].get("section"):
+                problems.append(f"sequence[{index - 1}] and sequence[{index}] should be one repeated block")
             if index < len(timing):
                 point = timing[index]
                 try:

@@ -133,7 +133,7 @@ window.SONG_LINES = {
     "source": "सुखलोलुप झाली काया",
     "sourceLanguage": "mr",
     "roman": "sukhalolupa jhālī kāyā",
-    "english": "{2:your body}{1: has grown}{0: pleasure-loving.}",
+    "english": "{2:your body}{1: has grown}{0: addicted to pleasure.}",
     "words": [
       {
         "roman": "sukhalolupa",
@@ -183,7 +183,7 @@ window.SONG_LINES = {
     "source": "घर कसले ही तर कारा",
     "sourceLanguage": "mr",
     "roman": "ghara kasale hī tara kārā",
-    "english": "{0,1:What kind of home is this?}{2,3: On the contrary, this is}{4: a prison!}",
+    "english": "{0,1:What kind of home is this?}{3: Rather,}{2: this is}{4: a prison!}",
     "words": [
       {
         "roman": "ghara",
@@ -212,7 +212,7 @@ window.SONG_LINES = {
     "source": "विषसमान मोती चारा",
     "sourceLanguage": "mr",
     "roman": "viṣasamāna motī cārā",
-    "english": "{1:This pearly}{2: feed}{0: is like poison,}",
+    "english": "{1:This feed of pearls}{0: is like}{2: poison,}",
     "words": [
       {
         "roman": "viṣasamāna",
@@ -233,7 +233,7 @@ window.SONG_LINES = {
     "source": "मोहाचे बंधन द्वारा",
     "sourceLanguage": "mr",
     "roman": "mohāce bandhana dvārā",
-    "english": "{2:the threshold}{1: is a bond}{0: of attachment.}",
+    "english": "{2:the doorway}{1: is a bond}{0: of attachment.}",
     "words": [
       {
         "roman": "mohāce",
@@ -248,7 +248,7 @@ window.SONG_LINES = {
         "gloss": "at the door / threshold"
       }
     ],
-    "grammarNote": "Nominal metaphor; genitive 'mohāce' modifies 'bandhana', identifying the threshold ('dvārā') as a bond of delusion."
+    "grammarNote": "Nominal metaphor; genitive 'mohāce' modifies 'bandhana', identifying the doorway ('dvārā') as a bond of delusion."
   },
   "tuja-adavito-ha-kaisa-umbara": {
     "source": "तुज अडवितो हा कैसा उंबरा",

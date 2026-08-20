@@ -243,7 +243,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "bahiyā_pakaṛ_ke",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "tu_hi_more_lagan",
@@ -252,11 +253,13 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "manwā_lāge_na",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jahā̃_jāū̃_tohe",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "more_ghaṭ_mẽ",
@@ -270,19 +273,23 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "manwā_lāge_na",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jahā̃_jāū̃_tohe",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "manwā_lāge_na",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jahā̃_jāū̃_tohe",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "more_ghaṭ_mẽ",
@@ -301,7 +308,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "bahiyā_pakaṛ_ke",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "tu_hi_more_lagan",
@@ -377,6 +385,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 252.3,
-    "end": 277.176599
+    "end": 277.177
   }
 ];
