@@ -5,7 +5,7 @@ window.BHAKTI_SONGS = [
     subtitle: "Jai Mātā Dī",
     credit: "Suresh Ji · Shri Mata Vaishno Devi Bhawan",
     languageTags: ["Punjabi"],
-    subjectTags: ["Mātā"]
+    subjectTags: ["Śakti"]
   },
   {
     slug: "jhoothe-jag-ne",
@@ -13,7 +13,7 @@ window.BHAKTI_SONGS = [
     subtitle: "Jai Mātā Dī",
     credit: "Maninder Ji · Shri Mata Vaishno Devi Bhawan",
     languageTags: ["Punjabi"],
-    subjectTags: ["Mātā"]
+    subjectTags: ["Śakti"]
   },
   {
     slug: "koi-hor-nahi",
@@ -21,7 +21,7 @@ window.BHAKTI_SONGS = [
     subtitle: "Jai Mātā Dī",
     credit: "Devotional song reader",
     languageTags: ["Punjabi"],
-    subjectTags: ["Mātā"]
+    subjectTags: ["Śakti"]
   },
   {
     slug: "yeh-garv-bhara-mastak",
@@ -29,7 +29,7 @@ window.BHAKTI_SONGS = [
     subtitle: "Prārthanā",
     credit: "Hari Om Sharan",
     languageTags: ["Hindi"],
-    subjectTags: ["God"]
+    subjectTags: []
   },
   {
     slug: "aisa-pyar-baha-de-maiya",

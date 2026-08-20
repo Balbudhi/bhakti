@@ -1,24 +1,34 @@
 (() => {
   const root = document.getElementById("songList");
   const filters = document.getElementById("tagFilters");
+  const search = document.getElementById("songSearch");
   const songs = window.BHAKTI_SONGS || [];
-  let selectedLanguage = "All";
-  let selectedSubject = "All";
-  const languages = ["All", ...new Set(songs.flatMap(song => song.languageTags))];
-  const subjects = ["All", ...new Set(songs.flatMap(song => song.subjectTags))];
-
-  const filtersFor = (kind, values, selected) => values.map(tag => `
-    <button type="button" class="tag-filter" aria-pressed="${tag === selected}" data-kind="${kind}" data-tag="${tag}">${tag}</button>`).join("");
+  const selectedLanguages = new Set();
+  const selectedSubjects = new Set();
+  const languages = [...new Set(songs.flatMap(song => song.languageTags).sort())];
+  const subjects = [...new Set(songs.flatMap(song => song.subjectTags).sort())];
+  const filterTags = [
+    { label: "All", kind: "all" },
+    ...languages.map(label => ({ label, kind: "language" })),
+    ...subjects.map(label => ({ label, kind: "subject" }))
+  ];
 
   const render = () => {
-    const visibleSongs = songs.filter(song =>
-      (selectedLanguage === "All" || song.languageTags.includes(selectedLanguage)) &&
-      (selectedSubject === "All" || song.subjectTags.includes(selectedSubject))
-    );
+    const query = search.value.trim().toLocaleLowerCase();
+    const visibleSongs = songs.filter(song => {
+      const matchesLanguage = !selectedLanguages.size || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
+      const matchesSubject = !selectedSubjects.size || [...selectedSubjects].some(tag => song.subjectTags.includes(tag));
+      const haystack = [song.title, song.credit, ...song.languageTags, ...song.subjectTags].join(" ").toLocaleLowerCase();
+      return matchesLanguage && matchesSubject && (!query || haystack.includes(query));
+    });
 
-    filters.innerHTML = `
-      <div class="filter-group"><span>Language</span>${filtersFor("language", languages, selectedLanguage)}</div>
-      <div class="filter-group"><span>Devotion</span>${filtersFor("subject", subjects, selectedSubject)}</div>`;
+    const nothingSelected = !selectedLanguages.size && !selectedSubjects.size;
+    filters.innerHTML = filterTags.map(tag => {
+      const selected = tag.kind === "all"
+        ? nothingSelected
+        : tag.kind === "language" ? selectedLanguages.has(tag.label) : selectedSubjects.has(tag.label);
+      return `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${tag.kind}" data-tag="${tag.label}">${tag.label}</button>`;
+    }).join("");
 
     root.innerHTML = visibleSongs.map(song => `
     <a class="song-card" href="songs/${song.slug}/" aria-label="Open ${song.title}">
@@ -36,10 +46,18 @@
   filters.addEventListener("click", event => {
     const button = event.target.closest(".tag-filter");
     if (!button) return;
-    if (button.dataset.kind === "language") selectedLanguage = button.dataset.tag || "All";
-    if (button.dataset.kind === "subject") selectedSubject = button.dataset.tag || "All";
+    const { kind, tag } = button.dataset;
+    if (kind === "all") {
+      selectedLanguages.clear();
+      selectedSubjects.clear();
+    } else {
+      const selected = kind === "language" ? selectedLanguages : selectedSubjects;
+      selected.has(tag) ? selected.delete(tag) : selected.add(tag);
+    }
     render();
   });
+
+  search.addEventListener("input", render);
 
   render();
 })();
