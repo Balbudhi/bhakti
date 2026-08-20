@@ -390,7 +390,39 @@ function renderLine(line, repeats, instanceId, defaultSourceLanguage) {
   `;
 }
 
+function renderSongMeta() {
+  const meta = window.SONG_META;
+  const hero = document.querySelector(".song-hero");
+  if (!meta || !hero) return;
+
+  const title = hero.querySelector(".song-title");
+  if (title && meta.title) title.textContent = meta.title;
+  if (meta.title) document.title = meta.title;
+
+  const subtitleText = meta.subtitle || (meta.subjectTags || [])[0] || "";
+  let subtitle = hero.querySelector(".song-attrib");
+  if (subtitleText && !subtitle) {
+    subtitle = document.createElement("p");
+    subtitle.className = "song-attrib";
+    subtitle.innerHTML = "<em></em>";
+    (hero.querySelector(".song-credit") || hero.querySelector(".song-hint"))?.before(subtitle);
+  }
+  if (subtitle) {
+    subtitle.hidden = !subtitleText;
+    const value = subtitle.querySelector("em") || subtitle;
+    value.textContent = subtitleText;
+  }
+
+  const creditText = meta.pageCredit || meta.singer || meta.credit || "";
+  const credit = hero.querySelector(".song-credit");
+  if (credit) {
+    credit.hidden = !creditText;
+    credit.textContent = creditText;
+  }
+}
+
 function render() {
+  renderSongMeta();
   const root = document.getElementById("songRoot");
   if (!root) return;
   let html = "";
