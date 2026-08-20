@@ -35,7 +35,7 @@ window.SONG_LINES = {
     "source": "आकाशी झेप घे रे पाखरा",
     "sourceLanguage": "mr",
     "roman": "ākāśī jhepa ghe re pākharā",
-    "english": "{2:Take}{1: flight}{0: into the sky,}{3,4: O bird,}",
+    "english": "{1,2:Fly}{0: into the sky,}{3,4: O bird,}",
     "words": [
       {
         "roman": "ākāśī",
@@ -82,10 +82,10 @@ window.SONG_LINES = {
     "grammarNote": "Poetic imperative 'soḍī' governing the direct object 'pinjarā', modified by the genitive adjective 'sonyācā'."
   },
   "tujabhavati-vaibhava-maya": {
-    "source": "तुजभवती वैभव माया",
+    "source": "तुजभवती वैभव, माया",
     "sourceLanguage": "mr",
-    "roman": "tujabhavatī vaibhava māyā",
-    "english": "{0:Around you}{1: are opulence}{2: and worldly illusion,}",
+    "roman": "tujabhavatī vaibhava, māyā",
+    "english": "{0:Around you}{1: are splendor}{2: and māyā,}",
     "words": [
       {
         "roman": "tujabhavatī",
@@ -97,10 +97,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "attachment / illusion"
+        "gloss": "a context-dependent power or condition of worldly appearance",
+        "concept_key": "maya",
+        "preserve_in_english": true
       }
     ],
-    "grammarNote": "Verbless nominal clause; 'tujabhavatī' is a compound postpositional phrase (tuja + bhavatī)."
+    "grammarNote": "Verbless nominal clause. The official printed poem separates 'vaibhava' and 'māyā' with a comma, so they are coordinate nouns—not a phrase meaning 'opulent māyā'."
   },
   "phal-rasal-milte-khaya": {
     "source": "फळ रसाळ मिळते खाया",
@@ -131,7 +133,7 @@ window.SONG_LINES = {
     "source": "सुखलोलुप झाली काया",
     "sourceLanguage": "mr",
     "roman": "sukhalolupa jhālī kāyā",
-    "english": "{2:your body}{1: has grown}{0: indulged in pleasure.}",
+    "english": "{2:your body}{1: has grown}{0: pleasure-loving.}",
     "words": [
       {
         "roman": "sukhalolupa",
@@ -210,7 +212,7 @@ window.SONG_LINES = {
     "source": "विषसमान मोती चारा",
     "sourceLanguage": "mr",
     "roman": "viṣasamāna motī cārā",
-    "english": "{1:This pearl-like}{2: feed}{0: is tantamount to poison,}",
+    "english": "{1:This pearly}{2: feed}{0: is like poison,}",
     "words": [
       {
         "roman": "viṣasamāna",
@@ -281,7 +283,7 @@ window.SONG_LINES = {
     "source": "तुज पंख दिले देवाने",
     "sourceLanguage": "mr",
     "roman": "tuja paṅkha dile devāne",
-    "english": "{3:God}{2: has given}{0: you}{1: wings,}",
+    "english": "{3:The Divine}{2: has given}{0: you}{1: wings,}",
     "words": [
       {
         "roman": "tuja",
@@ -327,7 +329,7 @@ window.SONG_LINES = {
     "source": "दरी डोंगर हिरवी राने",
     "sourceLanguage": "mr",
     "roman": "darī ḍoṅgara hiravī rāne",
-    "english": "{0:Valleys,}{1: mountains,}{2: green}{3: meadows,}",
+    "english": "{0:Valleys,}{1: mountains,}{2: green}{3: woods,}",
     "words": [
       {
         "roman": "darī",
@@ -456,7 +458,7 @@ window.SONG_LINES = {
     "source": "का जीव बिचारा होई बावरा",
     "sourceLanguage": "mr",
     "roman": "kā jīva bicārā hoī bāvarā",
-    "english": "{0:why}{2: does the poor}{1: heart}{3: become}{4: bewildered?}",
+    "english": "{0:why}{2: does the poor}{1: soul}{3: become}{4: bewildered?}",
     "words": [
       {
         "roman": "kā",
@@ -506,7 +508,7 @@ window.SONG_LINES = {
     "source": "श्रमदेव घरी अवतरले",
     "sourceLanguage": "mr",
     "roman": "śramadeva gharī avatarale",
-    "english": "{0:the deity of labor}{2: has manifested}{1: in the home,}",
+    "english": "{0:the god of labor}{2: has come}{1: home,}",
     "words": [
       {
         "roman": "śramadeva",
@@ -527,7 +529,7 @@ window.SONG_LINES = {
     "source": "घर प्रसन्नतेने नटले",
     "sourceLanguage": "mr",
     "roman": "ghara prasannatene naṭale",
-    "english": "{0:the home}{2: is adorned}{1: with serenity,}",
+    "english": "{0:the home}{2: is adorned}{1: with joy,}",
     "words": [
       {
         "roman": "ghara",
@@ -780,11 +782,6 @@ window.SONG_SEQUENCE = [
     "ref": "sodi-sonyaca-pinjara",
     "section": "refrain",
     "repeats": 1
-  },
-  {
-    "ref": "tuja-pankha-dile-devane",
-    "section": "verse",
-    "repeats": 1
   }
 ];
 
@@ -951,10 +948,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 350.928,
-    "end": 375.34
-  },
-  {
-    "start": 375.34,
-    "end": 380.74
+    "end": 371.747
   }
 ];
