@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Any
 
 import process_song_gemini as gemini
+import bhakti_pipeline as pipeline
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,11 +62,12 @@ def review_boundary(song: Path, data: dict[str, Any], index: int, options: argpa
         raise RuntimeError(f"boundary index {index} is outside the sequence")
     previous, following = sequence[index], sequence[index + 1]
     proposed = float(timings[index + 1]["start"])
-    duration = gemini.duration_seconds(song / "audio.m4a")
+    listener_audio = pipeline.preferred_listener_audio(song)
+    duration = gemini.duration_seconds(listener_audio)
     clip_start, clip_end = max(0.0, proposed - options.radius), min(duration, proposed + options.radius)
     clip = temp / f"boundary-{index:03d}.m4a"
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{clip_start:.3f}",
-                    "-i", str(song / "audio.m4a"), "-t", f"{clip_end - clip_start:.3f}", "-vn",
+                    "-i", str(listener_audio), "-t", f"{clip_end - clip_start:.3f}", "-vn",
                     "-c:a", "aac", "-b:a", "192k", str(clip)], check=True)
     before = lines[previous["ref"]]
     after = lines[following["ref"]]
@@ -90,7 +92,13 @@ Return strict JSON:
     attempts: list[dict[str, Any]] = []
     for run in range(max(1, options.passes)):
         try:
-            response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=options.timeout)
+            schema = {"type": "object", "properties": {
+                "following_ref": {"type": "string"}, "following_start": {"type": "number"},
+                "uncertainty": {"type": "string"}},
+                "required": ["following_ref", "following_start", "uncertainty"], "additionalProperties": False}
+            response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=options.timeout,
+                                   response_schema=schema, schema_name="bhakti_following_start",
+                                   reasoning_effort="high", max_completion_tokens=2048)
             packet = response["packet"]
         except RuntimeError as exc:
             attempts.append({
@@ -110,12 +118,14 @@ Return strict JSON:
         except (KeyError, TypeError, ValueError):
             following_start = proposed
             errors.append("response lacks a numeric following start")
-        if str(packet.get("uncertainty", "")).strip().casefold() not in {"", "none", "no", "null", "n/a"}:
-            errors.append("following start remains uncertain")
+        uncertainty = str(packet.get("uncertainty", "")).strip().casefold()
+        if any(marker in uncertainty for marker in ("not_in_clip", "not in clip", "not heard", "unable", "cannot locate")):
+            errors.append("following start is not locatable in the clip")
         attempts.append({
             "run": run + 1,
             "following_start": round(following_start, 3),
             "response": response,
+            "uncertainty_note": uncertainty,
             "validation_errors": errors,
         })
     valid = [attempt for attempt in attempts if not attempt["validation_errors"]]

@@ -7,10 +7,12 @@ generic provenance filler on a reader page.
 
 ## One-command production pipeline
 
-The API production model is `google/gemini-3.6-flash` through OpenRouter. It
+The API production model is `google/gemini-3.7-flash` through OpenRouter. It
 uses the Dev-wide owner-only key file documented in `~/Dev/AGENTS.md`.
-Never read, print, commit, or copy that key. Local ASR research is optional and
-must never silently replace this production path.
+Never read, print, commit, or copy that key. Production transcription and
+timing use only the OpenRouter/Gemini API; do not invoke Superwhisper or silently
+replace this path with a local or unrelated cloud model. Local ASR research is
+documentation/evaluation only.
 
 For one or more local audio files or source URLs, use:
 
@@ -22,7 +24,7 @@ python3 scripts/bhakti_pipeline.py --workers 3 --publish \
 For a larger batch, use a JSON manifest:
 
 ```json
-{"songs":[{"slug":"song-slug","source":"/absolute/song.m4a","title":"…","writer":"…","singer":"…","languages":["Hindi"],"subjectTags":["Śirḍī Sāī"]}]}
+{"songs":[{"slug":"song-slug","source":"/absolute/song.m4a","title":"…","writer":"…","singer":"…","languages":["Hindi"],"subjectTags":["Śirḍī Sāī"],"searchAliases":["Shirdi Sai"]}]}
 ```
 
 ```sh
@@ -31,16 +33,29 @@ python3 scripts/bhakti_pipeline.py --workers 3 --publish --batch intake.json
 
 The pipeline preserves audio-only source input, then performs distinct stages:
 
-1. full-song transcription;
-2. independent transcription/order audit;
-3. one lyric-catalogue timing pass in short contextual windows;
+1. complete transcription (adaptive overlapping segments above 15 minutes);
+2. independent transcription/order audit that receives the first transcript;
+3. exact ordered start-only timing: one full pass plus one bounded verification
+   grid for ordinary songs, or one exact timing call per audited long segment,
+   with focused retry only for a disagreement;
 4. literal word glosses and grammar notes;
 5. literal English derived from those glosses only; and
 6. deterministic `data.js`, reader HTML, and catalogue generation.
 
-It blocks publication for unresolved transcription uncertainty, timing-order
-mismatch, non-boundary unmatched vocals, low-confidence/unanchored first
-syllables, source/IAST omissions, non-mappable glosses, or uncertain literal
+For YouTube, preserve the highest-quality original audio stream as the first
+listener source and retain the highest native M4A/AAC stream as a compatibility
+fallback. Never improve a lossy source by transcoding it and calling the result
+“higher quality.” Model-only canonical AAC copies are temporary and never
+replace listener audio. Run `python3 scripts/audit_audio_quality.py` before
+release. Long devotional recordings often have almost no internal silence;
+FFmpeg energy valleys may route overlapping chunks, but only audited lyric
+continuity and start-time consensus can validate them.
+Long gloss and translation output is split into cached 40-line text batches;
+do not request one enormous structured response.
+
+It blocks publication for unresolved transcription uncertainty, missing,
+reordered, duplicated, non-increasing, out-of-duration, or explicitly uncertain
+first-syllable starts, source/IAST omissions, non-mappable glosses, or uncertain literal
 translations. It never fixes those errors by guessing. Do not replace this
 with manual song-page construction or separate generic audio passes.
 
@@ -68,6 +83,12 @@ do not render section labels on the song page. Do not invent public roles. Show 
 compact single credit when one person is evidenced; label singer/writer/music
 only when a real distinction is evidenced. Omit unknown roles without calling
 attention to the absence.
+
+Display reviewed Indic titles, devotional terms, historical names, and
+honorifics in IAST. Keep an established contemporary artist/institution spelling
+when no native-script form has been verified; never manufacture diacritics from
+English metadata. Internal search must also match ordinary spellings through
+automatic folding plus optional `searchAliases`; those aliases are not visible.
 
 ## Release checks
 

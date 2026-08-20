@@ -7,25 +7,37 @@ whether the user supplied a translation.
 ## Models and cost policy
 
 - **Authoritative audio, timing, translation, and reconciliation:**
-  `google/gemini-3.6-flash` through OpenRouter. Pin this explicit model for a
+  `google/gemini-3.7-flash` through OpenRouter. Pin this explicit model for a
   review packet so a song can be reproduced later.
 - **Optional preflight only:** `google/gemini-3.1-flash-lite`. It may inspect
   metadata or draft a low-risk first pass, but it never alone determines a
   public lyric, translation, sequence, or timestamp.
-- Run one full-song 3.6 Flash transcription, then one full-song 3.6 Flash
-  transcript/order audit. **Do not use a whole-recording response for precise
-  timestamps.** One lyric-aware timing stage receives the audited catalogue in
-  short contextual windows; each event records its heard opening words and
-  must reconstruct the audited performance order exactly. This avoids accepting
-  an approximate time in the middle of a long displayed line. Run extra calls
-  only for an explicit failed gate, not by default. Record model IDs and
-  reported API cost in the ignored review packet.
+- For recordings up to 15 minutes, run one full-song transcription and one
+  full-song audit that receives the first transcript. For longer recordings,
+  FFmpeg selects low-energy boundaries near five-minute targets; 15-second
+  overlap is included on both sides. Each segment is transcribed, then audited
+  with its own first transcript, and overlap occurrences are reconciled
+  deterministically. Silence is only a boundary hint, never the authority.
+- Local code assigns unique display-occurrence IDs and compresses only
+  immediately contiguous identical repeats. For recordings up to 15 minutes,
+  one full start-only call supplies coarse onsets and one 120-second verification
+  grid (15-second context overlap) supplies the independent measurement. Only
+  disagreements receive a narrow retry. For longer recordings, each already-
+  audited 4–6 minute segment receives one exact-lyrics, start-only timing call;
+  segment overlap and strict monotonic/coverage checks catch seam failures.
+  Local code derives ends from the next accepted start. The model never
+  determines order, grouping, repeats, or ends.
+- The normal timing path therefore uses one full pass plus one bounded
+  verification pass for ordinary songs, and one call per audited segment for
+  long recordings. It never sends the full recording once per line. Record
+  every model ID and provider-reported cost in ignored review evidence.
 
-As checked on 2026-08-20, OpenRouter lists 3.6 Flash at $0.75/M text or audio
-input and $3.75/M output. The lower-cost `google/gemini-3.1-flash-lite` lists
-$0.25/M text input, $0.50/M audio input, and $1.50/M output. Use Lite only for
-non-authoritative metadata/preflight work; it must not become a cheap way to
-avoid the transcript, first-syllable timing, or gloss-derived translation gate.
+As checked on 2026-08-20, OpenRouter lists 3.7 Flash at $0.375/M input and
+$1.875/M output, while 3.6 Flash lists $0.75/M input and $3.75/M output. The
+lower-cost `google/gemini-3.1-flash-lite` lists $0.25/M text input, $0.50/M
+audio input, and $1.50/M output. Use Lite only for non-authoritative metadata
+or preflight work; it must not become a cheap way to avoid the transcript,
+first-syllable timing, or gloss-derived translation gate.
 
 ## Required song data
 
@@ -33,8 +45,9 @@ Every `songs/<slug>/data.js` supplies the same globals:
 
 ```js
 window.SONG_META = {
-  title, singer, lyricist, composer, album, devotionalFocus,
-  languages, subjectTags, translationStatus, sourceStatus
+  title, subtitle, writer, singer, composer, credit, pageCredit,
+  languages, subjectTags, searchAliases, audioSources,
+  timingStatus, translationStatus, sourceStatus
 };
 window.SONG_LINES = { /* line id → source text, literal/poetic English, words */ };
 window.SONG_SEQUENCE = [
@@ -47,7 +60,8 @@ window.SONG_TIMINGS = [{ start, end }];
 returns after another line is a new sequence entry. `repeats` only represents
 immediately contiguous occurrences. A timing starts at the first audible
 syllable of the displayed lyric instance, not at a chorus, backing voice, or
-later repetition.
+later repetition. The model supplies starts only; deterministic code sets each
+end to the next start (and the final end to the recording duration).
 
 Section kinds remain machine-readable sequencing metadata. The public reader
 does not print “Invocation,” “Refrain,” “Verse,” or other section labels; those
@@ -69,8 +83,16 @@ Store `writer`, `singer`, and `composer` separately even when the visible line
 is compact. When writer and singer are distinct, the library credit orders the
 writer first and singer second; the reader may name the form and writer in its
 subtitle (for example, `A Vachana by Akkamahādevī`) and show the singer beneath.
-Titles, forms, people, and devotional names use consistent title case and IAST,
-including `Śirḍī Sāī`.
+Titles, forms, historical names, honorifics, and devotional names use reviewed
+IAST in display text, including `Śirḍī Sāī`, `Akkamahādevī`, and `Jī`.
+Contemporary people and institutions may retain their own established Latin
+spelling when a native-script form has not been verified; the pipeline must
+not invent diacritics from an English metadata string. Every catalogue entry
+also stores `searchAliases`. The library searches the display form, ordinary
+diacritic-free/common-transliteration forms, the slug, and explicit aliases,
+so `Shirdi Sai`, `Akkamahadevi`, `Ishwar`, and source-preferred artist spellings
+find the reviewed display form. Aliases are search metadata and are never
+rendered as competing credits.
 
 ## Translation contract
 
@@ -98,36 +120,44 @@ shared catalogue write:
 python3 scripts/bhakti_pipeline.py --workers 3 --publish \
   --song song-slug='https://www.youtube.com/watch?v=…'
 
-# Or: {"songs":[{"slug":"…","source":"/absolute/audio.m4a", ...}]}
+# Or: {"songs":[{"slug":"…","source":"/absolute/audio.m4a","searchAliases":["ordinary spelling"], ...}]}
 python3 scripts/bhakti_pipeline.py --workers 3 --publish --batch intake.json
 ```
 
-It performs transcript → transcript audit → precise windowed timing → word
-glosses → gloss-derived literal translation → deterministic reader generation.
-It writes review evidence beneath ignored `.transcription/`, and emits no
-reader/catalogue output when a gate fails. It does not commit or push; after
-the normal visual checks, GitHub Actions deploys a path-scoped commit.
+It performs transcript → transcript audit → exact ordered start-only timing →
+focused retry when needed → word glosses → gloss-derived literal
+translation → deterministic reader generation. It writes review evidence beneath
+ignored `.transcription/`, and emits no reader/catalogue output when a gate
+fails. It does not commit or push; after the normal visual checks, GitHub
+Actions deploys a path-scoped commit.
 
-The older component commands below are diagnostics for already-existing
-readers, not a replacement for the end-to-end pipeline:
+The supported focused timing repair for an already-correct transcript is:
 
 ```sh
-python3 scripts/intake_bhakti_youtube.py '<youtube-url>' songs/<slug> --skip-transcription
-python3 scripts/process_song_gemini.py songs/<slug>
-
-# For an existing reviewed lyric catalogue, this is the one timing pass.
-python3 scripts/align_song_lyrics.py songs/<slug>
-
-# If a full-song timing response fails duration/order validation, use exact
-# decoded windows once; this remains one timing pass, not a duplicate transcript.
-python3 scripts/align_song_windows.py songs/<slug>
+python3 scripts/review_timing_boundary.py <song-slug> <preceding-sequence-index>
 ```
+
+It sends only the two already-verified adjacent lyrics and asks only for the
+following line's first-syllable start. The older generic/window alignment
+scripts are legacy diagnostics and are not publication paths.
 
 The intake downloads **audio only**, collects title/uploader/description, and
 keeps all API evidence in `songs/<slug>/.transcription/`. Never create or keep
 a video unless the user specifically asks. Do not automatically trim musical
 introductions, interludes, or outros; only trim confirmed non-song platform
-material after it is recorded in the review packet.
+material after it is recorded in the review packet. On the local `Morning
+Aarti` benchmark, `silencedetect` finds only opening and closing silence.
+Half-second RMS valleys instead route six overlapping 4–6 minute segments;
+their audited lyric continuity is authoritative, not the energy minimum itself.
+Internal leading/trailing overlap fragments are evidence, not separate public
+performances. Long glosses and translations are cached in 40-line text batches
+so a large structured response cannot truncate the whole job.
+
+Listener audio preserves the best original stream. YouTube intake prefers its
+highest-quality audio-only stream (normally Opus) and keeps the highest native
+M4A/AAC stream as a compatibility fallback. Do not transcode Opus to AAC and
+describe that as an upgrade. Temporary fixed-rate AAC used to normalize model
+timebases is deleted after processing and is never published.
 
 ## Publish gate
 

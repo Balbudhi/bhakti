@@ -1,8 +1,53 @@
 (() => {
+  const IAST_TO_COMMON = {
+    ā: "a", ī: "i", ū: "u", ṛ: "r", ṝ: "r", ḷ: "l", ḹ: "l",
+    ṅ: "ng", ñ: "ny", ṇ: "n", ṃ: "m", ṁ: "m", ḥ: "h",
+    ś: "sh", ṣ: "sh", ṭ: "t", ḍ: "d", ḻ: "l",
+    Ā: "A", Ī: "I", Ū: "U", Ṛ: "R", Ṝ: "R", Ḷ: "L", Ḹ: "L",
+    Ṅ: "Ng", Ñ: "Ny", Ṇ: "N", Ṃ: "M", Ṁ: "M", Ḥ: "H",
+    Ś: "Sh", Ṣ: "Sh", Ṭ: "T", Ḍ: "D", Ḻ: "L"
+  };
+
+  const searchKey = value => String(value || "")
+    .toLocaleLowerCase()
+    .replace(/[’‘`]/g, "'")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+
+  const searchForms = value => {
+    const source = String(value || "");
+    const common = [...source].map(character => IAST_TO_COMMON[character] || character).join("")
+      .replace(/ngg/g, "ng").replace(/Ngg/g, "Ng");
+    const unaccented = source.normalize("NFKD").replace(/\p{M}/gu, "");
+    return [...new Set([searchKey(source), searchKey(common), searchKey(unaccented)].filter(Boolean))];
+  };
+
+  const searchableValues = song => [
+    song.slug,
+    song.title,
+    song.subtitle,
+    song.credit,
+    ...(song.searchAliases || []),
+    ...(song.languageTags || []),
+    ...(song.subjectTags || [])
+  ].filter(Boolean);
+
+  const matchesSearch = (song, query) => {
+    const queryForms = searchForms(query);
+    if (!queryForms.length) return true;
+    const songForms = searchableValues(song).flatMap(searchForms);
+    return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
+  };
+
+  // Kept public for deterministic Node tests and future non-DOM consumers.
+  window.BHAKTI_SEARCH = Object.freeze({ searchForms, matchesSearch });
+
   const root = document.getElementById("songList");
   const filters = document.getElementById("tagFilters");
   const search = document.getElementById("songSearch");
   const songs = window.BHAKTI_SONGS || [];
+  if (!root || !filters || !search) return;
   const selectedLanguages = new Set();
   const selectedSubjects = new Set();
   const languages = [...new Set(songs.flatMap(song => song.languageTags).sort())];
@@ -10,12 +55,11 @@
   const button = (tag, kind, selected) => `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${kind}" data-tag="${tag}">${tag}</button>`;
 
   const render = () => {
-    const query = search.value.trim().toLocaleLowerCase();
+    const query = search.value.trim();
     const visibleSongs = songs.filter(song => {
       const matchesLanguage = !selectedLanguages.size || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
       const matchesSubject = !selectedSubjects.size || [...selectedSubjects].some(tag => song.subjectTags.includes(tag));
-      const haystack = [song.title, song.credit, ...song.languageTags, ...song.subjectTags].join(" ").toLocaleLowerCase();
-      return matchesLanguage && matchesSubject && (!query || haystack.includes(query));
+      return matchesLanguage && matchesSubject && matchesSearch(song, query);
     });
 
     const nothingSelected = !selectedLanguages.size && !selectedSubjects.size;

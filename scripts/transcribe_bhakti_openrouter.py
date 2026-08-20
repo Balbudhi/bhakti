@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Any
 
 
-DEFAULT_MODEL = "google/gemini-3.6-flash"
+DEFAULT_MODEL = "google/gemini-3.7-flash"
 DEFAULT_KEY_FILE = Path.home() / "Dev" / "openrouter.key"
 CHAT_URL = "https://openrouter.ai/api/v1/chat/completions"
 
