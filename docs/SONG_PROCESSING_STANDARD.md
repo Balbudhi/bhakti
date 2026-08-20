@@ -49,6 +49,10 @@ immediately contiguous occurrences. A timing starts at the first audible
 syllable of the displayed lyric instance, not at a chorus, backing voice, or
 later repetition.
 
+Section kinds remain machine-readable sequencing metadata. The public reader
+does not print “Invocation,” “Refrain,” “Verse,” or other section labels; those
+headings interrupt the bhajan rather than helping the listening experience.
+
 ### Public metadata rule
 
 Every reader uses one compact credit treatment. When the singer, writer, and
@@ -60,6 +64,13 @@ did the work. A devotional salutation appears only when it is specific to the
 song (for example, `Jai Mātā Dī` for a Śakti song), not as generic boilerplate.
 Never render local source paths, review packets, extraction notes, or source
 location boilerplate on a public reader.
+
+Store `writer`, `singer`, and `composer` separately even when the visible line
+is compact. When writer and singer are distinct, the library credit orders the
+writer first and singer second; the reader may name the form and writer in its
+subtitle (for example, `A Vachana by Akkamahādevī`) and show the singer beneath.
+Titles, forms, people, and devotional names use consistent title case and IAST,
+including `Śirḍī Sāī`.
 
 ## Translation contract
 

@@ -1,12 +1,10 @@
 window.SONG_META = {
   title: "Īśvar Se Kuch Māṅgnā Ho To",
-  singer: "Satpathy Baba",
-  album: "Sai Baba",
-  devotionalFocus: "Śirdi Sāī",
+  credit: "Satpathy Baba",
   languages: ["Hindi"],
-  subjectTags: ["Śirdi Sāī"],
+  subjectTags: ["Śirḍī Sāī"],
   translationStatus: "reviewed",
-  sourceStatus: "local-library-metadata"
+  sourceStatus: "reviewed"
 };
 
 /* Ishwar Se Kuch Māṅgnā Ho To — reviewed Gemini 3.6 Flash song packet.

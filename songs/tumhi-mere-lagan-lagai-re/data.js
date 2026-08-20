@@ -8,9 +8,9 @@ window.SONG_META = {
   title: "Tumhī More Lagan Lagāī Re Fakīrwā",
   credit: "Satpathy Baba",
   languages: ["Hindi"],
-  subjectTags: ["Shirdi Sai"],
+  subjectTags: ["Śirḍī Sāī"],
   translationStatus: "reviewed",
-  sourceStatus: "local recording metadata"
+  sourceStatus: "reviewed"
 };
 
 window.SONG_LINES = {
@@ -31,7 +31,7 @@ window.SONG_LINES = {
   ham_to_sowat: {
     source: "हम तो सोवत रहली ओढ़ के चदरवा",
     roman: "Ham to sowat rahlī oṛh ke chadarwā",
-    english: "{0:I} {2,3:was sleeping}, {4,5:covered} in a {6:sheet}. ",
+    english: "{0:I} {2,3:was sleeping}, {4,5:wrapped} in a {6:sheet}. ",
     words: [
       { roman: "Ham", gloss: "I" },
       { roman: "to", gloss: "indeed; emphasis" },
@@ -58,7 +58,7 @@ window.SONG_LINES = {
   manwā_lāge_na: {
     source: "मनवा लागे न कहीं तोरे बिन सइयाँ",
     roman: "Manwā lāge na kahī̃ tore bin saiyā̃",
-    english: "My {0:heart} {1,2:finds no rest} {3:anywhere} {4,5:without You}, {6:my Beloved}.",
+    english: "My {0:heart} {1,2:finds no peace} {3:anywhere} {4,5:without You}, {6:my Beloved}.",
     words: [
       { roman: "Manwā", gloss: "heart, mind" },
       { roman: "lāge", gloss: "settles, attaches, finds rest" },
@@ -101,23 +101,23 @@ window.SONG_LINES = {
 };
 
 window.SONG_SEQUENCE = [
-  { ref: "tu_hi_more_lagan", repeats: 4 },
-  { ref: "ham_to_sowat", repeats: 2 },
-  { ref: "bahiyā_pakaṛ_ke" },
-  { ref: "tu_hi_more_lagan", repeats: 4 },
-  { ref: "manwā_lāge_na" },
-  { ref: "jahā̃_jāū̃_tohe" },
-  { ref: "more_ghaṭ_mẽ", repeats: 2 },
-  { ref: "tu_hi_more_lagan", repeats: 5 },
-  { ref: "manwā_lāge_na" },
-  { ref: "jahā̃_jāū̃_tohe" },
-  { ref: "manwā_lāge_na" },
-  { ref: "jahā̃_jāū̃_tohe" },
-  { ref: "more_ghaṭ_mẽ", repeats: 2 },
-  { ref: "tu_hi_more_lagan", repeats: 5 },
-  { ref: "ham_to_sowat", repeats: 2 },
-  { ref: "bahiyā_pakaṛ_ke" },
-  { ref: "tu_hi_more_lagan", repeats: 4 }
+  { ref: "tu_hi_more_lagan", section: "refrain", repeats: 4 },
+  { ref: "ham_to_sowat", section: "verse", repeats: 2 },
+  { ref: "bahiyā_pakaṛ_ke", section: "verse" },
+  { ref: "tu_hi_more_lagan", section: "refrain", repeats: 4 },
+  { ref: "manwā_lāge_na", section: "verse" },
+  { ref: "jahā̃_jāū̃_tohe", section: "verse" },
+  { ref: "more_ghaṭ_mẽ", section: "verse", repeats: 2 },
+  { ref: "tu_hi_more_lagan", section: "refrain", repeats: 5 },
+  { ref: "manwā_lāge_na", section: "verse" },
+  { ref: "jahā̃_jāū̃_tohe", section: "verse" },
+  { ref: "manwā_lāge_na", section: "verse" },
+  { ref: "jahā̃_jāū̃_tohe", section: "verse" },
+  { ref: "more_ghaṭ_mẽ", section: "verse", repeats: 2 },
+  { ref: "tu_hi_more_lagan", section: "refrain", repeats: 5 },
+  { ref: "ham_to_sowat", section: "verse", repeats: 2 },
+  { ref: "bahiyā_pakaṛ_ke", section: "verse" },
+  { ref: "tu_hi_more_lagan", section: "refrain", repeats: 4 }
 ];
 
 window.SONG_TIMINGS = [

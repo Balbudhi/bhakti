@@ -1,12 +1,10 @@
 window.SONG_META = {
   title: "Bābā Tum Antaryāmī",
   credit: "Satpathy Baba",
-  sourceUrl: null,
-  sourceTitle: "Baba Tum Antaryami",
   languages: ["Hindi"],
-  subjectTags: ["Shirdi Sai"],
+  subjectTags: ["Śirḍī Sāī"],
   translationStatus: "reviewed",
-  sourceStatus: "local-library"
+  sourceStatus: "reviewed"
 };
 
 window.SONG_LINES = {
@@ -46,7 +44,7 @@ window.SONG_LINES = {
   ang_ang_mein_rang_sanwara: {
     source: "अंग अंग में रंग साँवरा",
     roman: "Aṅg aṅg meṁ raṅg sāṁvarā",
-    english: "In {0,1:every limb}, the {4:dark-complexioned} {3:hue}…",
+    english: "In {0,1:every limb}, the {3,4:dark hue}…",
     words: [
       { roman: "aṅg", gloss: "limb, body part" },
       { roman: "aṅg", gloss: "limb, body part" },
@@ -67,7 +65,7 @@ window.SONG_LINES = {
   mand_mand_muskan_manohar: {
     source: "मंद मंद मुसकान मनोहर",
     roman: "Mand mand musakān manohar",
-    english: "The {0,1:gentle}, {2:smile}—{3:heart-captivating}…",
+    english: "The {0,1:gentle}, {3:heart-captivating} {2:smile}…",
     words: [
       { roman: "mand", gloss: "gentle, soft" },
       { roman: "mand", gloss: "gentle, soft" },
@@ -212,38 +210,38 @@ window.SONG_LINES = {
 };
 
 window.SONG_SEQUENCE = [
-  { ref: "sain_tum_antaryami" },
-  { ref: "baba_tum_antaryami" },
-  { ref: "daya_karo_he_swami" },
-  { ref: "sain_tum_antaryami" },
-  { ref: "baba_tum_antaryami" },
-  { ref: "ang_ang_mein_rang_sanwara", repeats: 2 },
-  { ref: "gahra_hota_jaaye" },
-  { ref: "mand_mand_muskan_manohar", repeats: 2 },
-  { ref: "sab_dukh_har_le_jaaye" },
-  { ref: "main_moorakh_agyaani", repeats: 2 },
-  { ref: "daya_karo_he_swami" },
-  { ref: "sain_tum_antaryami" },
-  { ref: "baba_tum_antaryami" },
-  { ref: "tere_naam_ki_chadhun_main_paudhi", repeats: 2 },
-  { ref: "har_pal_main_ghabraun" },
-  { ref: "thaam_ke_rakhiyo_baanh_meri_prabhu", repeats: 2 },
-  { ref: "kahin_main_gir_na_jaaun" },
-  { ref: "log_karenge_badnami", repeats: 2 },
-  { ref: "daya_karo_he_swami" },
-  { ref: "sain_tum_antaryami" },
-  { ref: "baba_tum_antaryami" },
-  { ref: "main_gunheen_rijhaun_kaise", repeats: 2 },
-  { ref: "tumko_he_natnagar" },
-  { ref: "ek_yahi_vishwas_hriday_mein", repeats: 2 },
-  { ref: "tum_ho_daya_ke_sagar" },
-  { ref: "teen_lok_ke_swami", repeats: 2 },
-  { ref: "daya_karo_he_swami" },
-  { ref: "sain_tum_antaryami" },
-  { ref: "baba_tum_antaryami" },
-  { ref: "sain_tum_antaryami" },
-  { ref: "baba_tum_antaryami" },
-  { ref: "sain_tum_antaryami" }
+  { ref: "sain_tum_antaryami", section: "refrain" },
+  { ref: "baba_tum_antaryami", section: "refrain" },
+  { ref: "daya_karo_he_swami", section: "refrain" },
+  { ref: "sain_tum_antaryami", section: "refrain" },
+  { ref: "baba_tum_antaryami", section: "refrain" },
+  { ref: "ang_ang_mein_rang_sanwara", section: "verse", repeats: 2 },
+  { ref: "gahra_hota_jaaye", section: "verse" },
+  { ref: "mand_mand_muskan_manohar", section: "verse", repeats: 2 },
+  { ref: "sab_dukh_har_le_jaaye", section: "verse" },
+  { ref: "main_moorakh_agyaani", section: "verse", repeats: 2 },
+  { ref: "daya_karo_he_swami", section: "refrain" },
+  { ref: "sain_tum_antaryami", section: "refrain" },
+  { ref: "baba_tum_antaryami", section: "refrain" },
+  { ref: "tere_naam_ki_chadhun_main_paudhi", section: "verse", repeats: 2 },
+  { ref: "har_pal_main_ghabraun", section: "verse" },
+  { ref: "thaam_ke_rakhiyo_baanh_meri_prabhu", section: "verse", repeats: 2 },
+  { ref: "kahin_main_gir_na_jaaun", section: "verse" },
+  { ref: "log_karenge_badnami", section: "verse", repeats: 2 },
+  { ref: "daya_karo_he_swami", section: "refrain" },
+  { ref: "sain_tum_antaryami", section: "refrain" },
+  { ref: "baba_tum_antaryami", section: "refrain" },
+  { ref: "main_gunheen_rijhaun_kaise", section: "verse", repeats: 2 },
+  { ref: "tumko_he_natnagar", section: "verse" },
+  { ref: "ek_yahi_vishwas_hriday_mein", section: "verse", repeats: 2 },
+  { ref: "tum_ho_daya_ke_sagar", section: "verse" },
+  { ref: "teen_lok_ke_swami", section: "verse", repeats: 2 },
+  { ref: "daya_karo_he_swami", section: "refrain" },
+  { ref: "sain_tum_antaryami", section: "refrain" },
+  { ref: "baba_tum_antaryami", section: "refrain" },
+  { ref: "sain_tum_antaryami", section: "refrain" },
+  { ref: "baba_tum_antaryami", section: "refrain" },
+  { ref: "sain_tum_antaryami", section: "refrain" }
 ];
 
 window.SONG_TIMINGS = [
