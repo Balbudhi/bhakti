@@ -49,7 +49,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--publish", action="store_true",
                         help="Generate readers and update data/songs.js after all required checks pass.")
     parser.add_argument("--timeout", type=float, default=300)
-    parser.add_argument("--force", action="store_true", help="Replace a generated song directory only after explicit request.")
+    parser.add_argument("--force", action="store_true", help="Rerun cached API stages for an existing intake.")
     return parser.parse_args()
 
 
@@ -99,10 +99,10 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
 def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
     song_dir = ROOT / "songs" / job["slug"]
     audio = song_dir / "audio.m4a"
-    if song_dir.exists() and any(song_dir.iterdir()) and not force:
+    if song_dir.exists() and any(song_dir.iterdir()):
         if audio.is_file():
             return song_dir, read_packet(song_dir / ".transcription" / "source.json") or {}
-        raise RuntimeError(f"refusing to overwrite non-empty {song_dir}; use --force only for this explicit song")
+        raise RuntimeError(f"refusing to overwrite non-empty {song_dir}")
     song_dir.mkdir(parents=True, exist_ok=True)
     review_dir = song_dir / ".transcription"
     review_dir.mkdir(exist_ok=True)
@@ -130,7 +130,11 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
         supplied = Path(source_value).expanduser().resolve()
         if not supplied.is_file():
             raise RuntimeError(f"audio source does not exist: {supplied}")
-        shutil.copy2(supplied, audio)
+        if supplied.suffix.casefold() == ".m4a":
+            shutil.copy2(supplied, audio)
+        else:
+            subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(supplied),
+                            "-vn", "-c:a", "aac", "-b:a", "192k", str(audio)], check=True)
         source = {"source_file": supplied.name, "title": supplied.stem,
                   "review_note": "Local file metadata is evidence to verify, never automatic public credit."}
     write_json(review_dir / "source.json", source)
@@ -144,7 +148,7 @@ def ask(prompt: str, audio: Path | None, options: argparse.Namespace) -> dict[st
 def transcript(song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "01-transcript.json"
     existing = read_packet(target)
-    if existing:
+    if existing and not options.force:
         return existing
     prompt = f"""Transcribe this complete devotional recording exactly. Listen from beginning to end.
 
@@ -163,7 +167,7 @@ Return strict JSON:
 def audit_transcript(song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "02-transcript-audit.json"
     existing = read_packet(target)
-    if existing:
+    if existing and not options.force:
         return existing
     prompt = f"""Audit the candidate transcript against this complete devotional recording. This is a transcription-verification task, not timing.
 
@@ -226,7 +230,7 @@ def dedupe_timing(events: list[dict[str, Any]], duration: float) -> list[dict[st
 def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "03-timing.json"
     existing = read_packet(target)
-    if existing:
+    if existing and not options.force:
         return existing
     packet = audited["packet"]
     lines = packet.get("verified_lines", [])
@@ -282,7 +286,7 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
 def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     existing = read_packet(target)
-    if existing:
+    if existing and not options.force:
         return existing
     lines = audited["packet"].get("verified_lines", [])
     prompt = f"""Create a literal word-by-word reading of these audited devotional lyrics. Work line by line.
@@ -310,7 +314,7 @@ def supplied_translation(job: dict[str, Any]) -> str:
 def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "05-translation.json"
     existing = read_packet(target)
-    if existing:
+    if existing and not options.force:
         return existing
     prompt = f"""Write faithful, complete, idiomatic English translations from the supplied word glosses and grammar notes ONLY. The glosses are semantic constraints, not a license for wooden word-for-word substitution: preserve their exact meaning, grammar, poetic image, register, and all emphases while writing natural English. Do not introduce a looser synonym, devotional interpretation, or omission that the gloss record does not support. Equally, do not replace a precise English image with a blander gloss synonym merely because it is shorter.
 
@@ -388,6 +392,10 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
     return "".join(rendered)
 
 
+def language_code(language: str) -> str:
+    return {"Hindi": "hi", "Sanskrit": "sa", "Punjabi": "pa", "Kannada": "kn"}.get(language, "")
+
+
 def page_html(meta: dict[str, Any]) -> str:
     title = meta["title"]
     credit = meta.get("pageCredit") or meta.get("credit", "")
@@ -442,7 +450,7 @@ def load_catalogue() -> list[dict[str, Any]]:
     return value if isinstance(value, list) else []
 
 
-def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any]) -> None:
+def publication_errors(audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any]) -> list[str]:
     lines = audited["packet"].get("verified_lines", [])
     gloss_rows = glosses["packet"].get("glosses", [])
     translation_rows = translations["packet"].get("translations", [])
@@ -454,8 +462,16 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
         errors.append("audited transcription has unresolved uncertainties")
     if any(row.get("uncertainty") for row in gloss_rows + translation_rows):
         errors.append("gloss or translation has unresolved uncertainty")
+    return errors
+
+
+def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any]) -> None:
+    errors = publication_errors(audited, timing, glosses, translations)
     if errors:
         raise RuntimeError("publication blocked: " + "; ".join(errors))
+    lines = audited["packet"].get("verified_lines", [])
+    gloss_rows = glosses["packet"].get("glosses", [])
+    translation_rows = translations["packet"].get("translations", [])
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
     meta_from_model = audited["packet"].get("metadata", {})
@@ -479,7 +495,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     for line in lines:
         line_id = line["id"]
         row = translation_by_id[line_id]
-        line_data[line_id] = {"source": line.get("source_text", ""), "sourceLanguage": (meta["languages"] or [""])[0],
+        line_data[line_id] = {"source": line.get("source_text", ""), "sourceLanguage": language_code((meta["languages"] or [""])[0]),
                               "roman": line.get("roman", ""), "english": segment_english(row.get("segments", []), row.get("literal_english", "")),
                               "words": gloss_by_id[line_id].get("word_glosses", []), "grammarNote": gloss_by_id[line_id].get("grammar_note", "")}
     sequence = [{"ref": event["ref"], "section": next((line.get("kind", "verse") for line in lines if line["id"] == event["ref"]), "verse"), "repeats": 1}
@@ -526,9 +542,12 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     timing = align(song_dir, audited, audio, options)
     glosses = gloss(song_dir, audited, options)
     translations = translate(song_dir, audited, glosses, job, options)
+    errors = publication_errors(audited, timing, glosses, translations)
+    status = "blocked" if errors else "review-required"
     packet = {"source": source, "model_requested": options.model, "created_at": time.time(), "transcript": raw,
               "audit": audited, "timing": timing, "glosses": glosses, "translation": translations,
-              "publication_status": "review-required", "elapsed_seconds": round(time.time() - started, 2),
+              "publication_status": status, "validation_errors": errors,
+              "elapsed_seconds": round(time.time() - started, 2),
               "reported_openrouter_cost": reported_cost(raw, audited, timing, glosses, translations)}
     write_json(song_dir / ".transcription" / "pipeline" / "song-packet.json", packet)
     return {"slug": job["slug"], "status": packet["publication_status"], "elapsed_seconds": packet["elapsed_seconds"],
@@ -547,10 +566,13 @@ def main() -> int:
                 results.append(future.result())
             except Exception as exc:  # retain other batch results but exit non-zero
                 results.append({"slug": slug, "status": "blocked", "error": str(exc)})
-    if options.publish and not any(item["status"] == "blocked" for item in results):
+    if options.publish:
         # API stages above may run concurrently. Writing the shared catalogue
         # is deliberately serialized so parallel songs cannot lose entries.
         for job in jobs:
+            result = next(item for item in results if item["slug"] == job["slug"])
+            if result["status"] == "blocked":
+                continue
             song_dir = ROOT / "songs" / job["slug"]
             packet_dir = song_dir / ".transcription" / "pipeline"
             source = read_packet(song_dir / ".transcription" / "source.json") or {}
@@ -558,13 +580,17 @@ def main() -> int:
             timing = read_packet(packet_dir / "03-timing.json")
             glosses = read_packet(packet_dir / "04-glosses.json")
             translations = read_packet(packet_dir / "05-translation.json")
-            if not all((audited, timing, glosses, translations)):
-                raise RuntimeError(f"missing pipeline artifact for {job['slug']}")
-            generate(song_dir, job, source, audited, timing, glosses, translations)
-            summary = read_packet(packet_dir / "song-packet.json") or {}
-            summary["publication_status"] = "generated"
-            write_json(packet_dir / "song-packet.json", summary)
-            next(item for item in results if item["slug"] == job["slug"])["status"] = "generated"
+            try:
+                if not all((audited, timing, glosses, translations)):
+                    raise RuntimeError(f"missing pipeline artifact for {job['slug']}")
+                generate(song_dir, job, source, audited, timing, glosses, translations)
+                summary = read_packet(packet_dir / "song-packet.json") or {}
+                summary["publication_status"] = "generated"
+                write_json(packet_dir / "song-packet.json", summary)
+                result["status"] = "generated"
+            except Exception as exc:
+                result["status"] = "blocked"
+                result["error"] = str(exc)
     print(json.dumps(sorted(results, key=lambda item: item["slug"]), ensure_ascii=False, indent=2))
     return 1 if any(item["status"] == "blocked" for item in results) else 0
 
