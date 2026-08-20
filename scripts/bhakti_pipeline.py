@@ -390,7 +390,7 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
 
 def page_html(meta: dict[str, Any]) -> str:
     title = meta["title"]
-    credit = meta.get("credit", "")
+    credit = meta.get("pageCredit") or meta.get("credit", "")
     subtitle = meta.get("subtitle", "")
     escape = lambda text: str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     sub = f'      <p class="song-attrib"><em>{escape(subtitle)}</em></p>\n' if subtitle else ""
@@ -400,8 +400,10 @@ def page_html(meta: dict[str, Any]) -> str:
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2" />
+  <meta name="theme-color" content="#6b0e16" />
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
   <link rel="apple-touch-icon" href="../../assets/favicon.png" />
+  <link rel="manifest" href="../../manifest.webmanifest" />
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex" />
   <meta name="referrer" content="no-referrer" />
   <title>{escape(title)}</title>
@@ -424,8 +426,9 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-progress" id="apProgress"><div class="ap-progress-bar" id="apProgressBar"></div></div>
     <audio id="songAudio" preload="metadata"><source src="audio.m4a" type="audio/mp4"></audio>
   </div>
-  <script src="data.js"></script>
-  <script src="../../assets/song.js?v=seek-20260820"></script>
+  <script src="data.js?v=contract-20260820"></script>
+  <script src="../../assets/song.js?v=contract-20260820"></script>
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 </body>
 </html>
 '''
@@ -458,11 +461,19 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     meta_from_model = audited["packet"].get("metadata", {})
     title = job.get("title") or source.get("title") or job["slug"].replace("-", " ").title()
     # Do not manufacture a public role from a model candidate. Callers may
-    # supply a researched credit; otherwise the compact credit line is absent.
-    credit = str(job.get("credit", "")).strip()
-    meta = {"title": title, "subtitle": job.get("subtitle", ""), "credit": credit,
+    # supply researched roles; otherwise the compact credit line is absent.
+    writer = str(job.get("writer", "")).strip()
+    singer = str(job.get("singer", "")).strip()
+    composer = str(job.get("composer", "")).strip()
+    distinct_people = list(dict.fromkeys(person for person in (writer, singer, composer) if person))
+    credit = str(job.get("credit", "")).strip() or " · ".join(distinct_people)
+    page_credit = str(job.get("pageCredit", "")).strip() or singer or credit
+    subjects = job.get("subjectTags", [])
+    subtitle = str(job.get("subtitle", "")).strip() or (subjects[0] if subjects else "")
+    meta = {"title": title, "subtitle": subtitle, "credit": credit, "pageCredit": page_credit,
+            "writer": writer, "singer": singer, "composer": composer,
             "languages": job.get("languages") or meta_from_model.get("languages", []),
-            "subjectTags": job.get("subjectTags", []), "translationStatus": "gloss-derived literal",
+            "subjectTags": subjects, "translationStatus": "gloss-derived literal",
             "sourceStatus": "reviewed"}
     line_data: dict[str, Any] = {}
     for line in lines:

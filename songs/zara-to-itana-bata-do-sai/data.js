@@ -6,21 +6,19 @@
  * timestamp conflict in the first automated alignment.
  */
 window.SONG_META = {
-  title: "Zara To Itana Bata Do Sai (Male)",
+  title: "Zarā To Itnā Batā Do Sāī",
   credit: "Satpathy Baba",
-  sourceUrl: "https://music.apple.com/in/song/1721755592",
-  sourceTitle: "Local Apple Music library recording",
   languages: ["Hindi"],
-  subjectTags: ["Shirdi Sai"],
+  subjectTags: ["Śirḍī Sāī"],
   translationStatus: "reviewed",
-  sourceStatus: "local-library"
+  sourceStatus: "reviewed"
 };
 
 window.SONG_LINES = {
   refrain_1: {
     source: "ज़रा तो इतना बता दो साईं",
     roman: "Zarā to itnā batā do Sāīṃ",
-    english: "{3:Tell} me {2:this much}, {4:O Sai}, at least.",
+    english: "{3:Tell} me {0:just} {2:this much} {1:at least}, {4:O Sai}.",
     words: [
       { roman: "Zarā", gloss: "just, a little; at least" },
       { roman: "to", gloss: "indeed, then; emphatic particle" },
@@ -43,7 +41,7 @@ window.SONG_LINES = {
   refrain_3: {
     source: "मुझी में रहकर मुझी से अपनी",
     roman: "Mujhī meṃ rahkar mujhī se apnī",
-    english: "{1:Remaining} {0:within me}, through {2:me alone}, [for] {3:Your own}…",
+    english: "{1:Dwelling} {0:in me alone}, through {2:me alone}, {3:Your own}…",
     words: [
       { roman: "Mujhī meṃ", gloss: "in me alone" },
       { roman: "rahkar", gloss: "remaining, dwelling" },
@@ -54,7 +52,7 @@ window.SONG_LINES = {
   refrain_4: {
     source: "खोज ये कैसी करा रहे हो",
     roman: "Khoj ye kaisī karā rahe ho",
-    english: "…what {2:kind of} {0:search} are {3:You making [me] undertake}?",
+    english: "…what {2:kind of} {0:search} is {1:this} {3:You are making me undertake}?",
     words: [
       { roman: "Khoj", gloss: "search, quest" },
       { roman: "ye", gloss: "this" },
@@ -65,7 +63,7 @@ window.SONG_LINES = {
   refrain_partial: {
     source: "ज़रा तो इतना",
     roman: "Zarā to itnā",
-    english: "{0:Just} {2:this much}…",
+    english: "{0:Just} {2:this much} {1:at least}…",
     words: [
       { roman: "Zarā", gloss: "just, a little" },
       { roman: "to", gloss: "indeed; emphatic particle" },
@@ -89,14 +87,11 @@ window.SONG_LINES = {
   verse_1_2: {
     source: "प्रेम तुम ही हो तुम ही हो प्रीतम",
     roman: "Prem tum hī ho tum hī ho prītam",
-    english: "{0:Love} is {1:You alone}; the {6:Beloved} is {4,5:You alone}.",
+    english: "{0:Love} is {1:You alone}; the {3:Beloved} is {2:You alone}.",
     words: [
       { roman: "Prem", gloss: "love" },
       { roman: "tum hī ho", gloss: "You alone are" },
-      { roman: "tum", gloss: "You" },
-      { roman: "hī ho", gloss: "alone are" },
-      { roman: "tum", gloss: "You" },
-      { roman: "hī ho", gloss: "alone are" },
+      { roman: "tum hī ho", gloss: "You alone are" },
       { roman: "prītam", gloss: "beloved" }
     ]
   },
@@ -140,14 +135,11 @@ window.SONG_LINES = {
   verse_2_2: {
     source: "नैन तुम ही हो तुम ही हो दर्शन",
     roman: "Nain tum hī ho tum hī ho darśan",
-    english: "The {0:eyes} are {1:You alone}; {6:sacred vision} is {4,5:You alone}.",
+    english: "The {0:eyes} are {1:You alone}; {3:sacred vision} is {2:You alone}.",
     words: [
       { roman: "Nain", gloss: "eyes" },
       { roman: "tum hī ho", gloss: "You alone are" },
-      { roman: "tum", gloss: "You" },
-      { roman: "hī ho", gloss: "alone are" },
-      { roman: "tum", gloss: "You" },
-      { roman: "hī ho", gloss: "alone are" },
+      { roman: "tum hī ho", gloss: "You alone are" },
       { roman: "darśan", gloss: "sacred sight, vision, audience with the divine" }
     ]
   },
@@ -165,7 +157,7 @@ window.SONG_LINES = {
   verse_2_4: {
     source: "तुम्ही को ढूँढूँ ये कैसी रीति चला रहे हो",
     roman: "Tumhī ko ḍhūṇḍhūṃ ye kaisī rīti chalā rahe ho",
-    english: "…that {1:I seek} {0:You alone}: what {3:kind of} {4:way} are {5:You setting in motion}?",
+    english: "…{1:I search for} {0:You alone}: what {3:kind of} {4:practice} is {2:this} {5:You are setting in motion}?",
     words: [
       { roman: "Tumhī ko", gloss: "You alone" },
       { roman: "ḍhūṇḍhūṃ", gloss: "I search for" },
@@ -178,31 +170,31 @@ window.SONG_LINES = {
 };
 
 window.SONG_SEQUENCE = [
-  { ref: "refrain_1", sectionLabel: "Refrain" },
-  { ref: "refrain_2" },
-  { ref: "refrain_1" },
-  { ref: "refrain_2" },
-  { ref: "refrain_3", repeats: 2 },
-  { ref: "refrain_4" },
-  { ref: "refrain_partial" },
-  { ref: "verse_1_1", sectionLabel: "Verse 1", repeats: 2 },
-  { ref: "verse_1_2", repeats: 2 },
-  { ref: "verse_1_3" },
-  { ref: "verse_1_4" },
-  { ref: "refrain_1", sectionLabel: "Refrain" },
-  { ref: "refrain_2" },
-  { ref: "refrain_partial" },
-  { ref: "verse_2_1", sectionLabel: "Verse 2", repeats: 2 },
-  { ref: "verse_2_2", repeats: 2 },
-  { ref: "verse_2_3" },
-  { ref: "verse_2_4" },
-  { ref: "refrain_1", sectionLabel: "Refrain" },
-  { ref: "refrain_2" },
-  { ref: "refrain_3" },
-  { ref: "refrain_4" },
-  { ref: "refrain_1" },
-  { ref: "refrain_2" },
-  { ref: "refrain_partial" }
+  { ref: "refrain_1", section: "refrain" },
+  { ref: "refrain_2", section: "refrain" },
+  { ref: "refrain_1", section: "refrain" },
+  { ref: "refrain_2", section: "refrain" },
+  { ref: "refrain_3", section: "refrain", repeats: 2 },
+  { ref: "refrain_4", section: "refrain" },
+  { ref: "refrain_partial", section: "refrain" },
+  { ref: "verse_1_1", section: "verse", repeats: 2 },
+  { ref: "verse_1_2", section: "verse", repeats: 2 },
+  { ref: "verse_1_3", section: "verse" },
+  { ref: "verse_1_4", section: "verse" },
+  { ref: "refrain_1", section: "refrain" },
+  { ref: "refrain_2", section: "refrain" },
+  { ref: "refrain_partial", section: "refrain" },
+  { ref: "verse_2_1", section: "verse", repeats: 2 },
+  { ref: "verse_2_2", section: "verse", repeats: 2 },
+  { ref: "verse_2_3", section: "verse" },
+  { ref: "verse_2_4", section: "verse" },
+  { ref: "refrain_1", section: "refrain" },
+  { ref: "refrain_2", section: "refrain" },
+  { ref: "refrain_3", section: "refrain" },
+  { ref: "refrain_4", section: "refrain" },
+  { ref: "refrain_1", section: "refrain" },
+  { ref: "refrain_2", section: "refrain" },
+  { ref: "refrain_partial", section: "refrain" }
 ];
 
 window.SONG_TIMINGS = [

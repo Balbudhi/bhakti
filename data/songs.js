@@ -42,8 +42,8 @@ window.BHAKTI_SONGS = [
   {
     slug: "thanu-karagadavaralli",
     title: "Tanu Karagadavaralli Puṣpavanolle",
-    subtitle: "Akkamahādevī Vachana",
-    credit: "Sangeeta Katti Kulkarni · Vachana Sangama 1",
+    subtitle: "A Vachana by Akkamahādevī",
+    credit: "Akkamahādevī · Sangeeta Katti Kulkarni",
     languageTags: ["Kannada"],
     subjectTags: ["Śiva"]
   },
@@ -52,41 +52,41 @@ window.BHAKTI_SONGS = [
     title: "Īśvar Se Kuch Māṅgnā Ho To",
     credit: "Satpathy Baba",
     languageTags: ["Hindi"],
-    subjectTags: ["Śirdi Sāī"]
+    subjectTags: ["Śirḍī Sāī"]
   },
   {
     slug: "baba-tum-antaryami",
     title: "Bābā Tum Antaryāmī",
     credit: "Satpathy Baba",
     languageTags: ["Hindi"],
-    subjectTags: ["Śirdi Sāī"]
+    subjectTags: ["Śirḍī Sāī"]
   },
   {
     slug: "tumhi-mere-lagan-lagai-re",
     title: "Tumhī Mere Lagan Lagāī Re",
     credit: "Satpathy Baba",
     languageTags: ["Hindi"],
-    subjectTags: ["Śirdi Sāī"]
+    subjectTags: ["Śirḍī Sāī"]
   },
   {
     slug: "main-murakh-main-anpad",
     title: "Main Mūrakh Main Anpaṛh Bālak",
     credit: "Satpathy Baba",
     languageTags: ["Hindi"],
-    subjectTags: ["Śirdi Sāī"]
+    subjectTags: ["Śirḍī Sāī"]
   },
   {
     slug: "jab-dil-udaas-ho-to",
     title: "Jab Dil Udās Ho To",
     credit: "Satpathy Baba",
     languageTags: ["Hindi"],
-    subjectTags: ["Śirdi Sāī"]
+    subjectTags: ["Śirḍī Sāī"]
   },
   {
     slug: "zara-to-itana-bata-do-sai",
     title: "Zarā To Itnā Batā Do Sāī",
     credit: "Satpathy Baba",
     languageTags: ["Hindi"],
-    subjectTags: ["Śirdi Sāī"]
+    subjectTags: ["Śirḍī Sāī"]
   }
 ];

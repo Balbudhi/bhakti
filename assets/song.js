@@ -278,8 +278,7 @@ const LINES = {
 };
 
 /* SEQUENCE — the song's structure, in order.
-   Each entry references a line id and an optional repetition count.
-   `sectionLabel` adds a small heading above the next line. */
+   Each entry references a line id and an optional repetition count. */
 const SEQUENCE = [
   { ref: "invocation" },
 
@@ -378,15 +377,11 @@ function renderRomanWithSpans(roman, words) {
   return html;
 }
 
-function renderLine(line, repeats, sectionLabel, instanceId) {
+function renderLine(line, repeats, instanceId) {
   const repBadge = repeats && repeats > 1
     ? `<span class="rep" aria-label="repeated ${repeats} times">×${repeats}</span>`
     : "";
-  const sectionHead = sectionLabel
-    ? `<div class="section-label">${escapeHtml(sectionLabel)}</div>`
-    : "";
   return `
-    ${sectionHead}
     <article class="line" id="${instanceId}">
       ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || "")}">${escapeHtml(line.source)}</div>` : ""}
       <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}</div>
@@ -404,7 +399,7 @@ function render() {
   seq.forEach((entry, idx) => {
     const line = lines[entry.ref];
     if (!line) return;
-    html += renderLine(line, entry.repeats, entry.sectionLabel, `ln-${idx}-${entry.ref}`);
+    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`);
   });
   root.innerHTML = html;
   wireInteractions(root);

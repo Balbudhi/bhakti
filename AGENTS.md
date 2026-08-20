@@ -22,7 +22,7 @@ python3 scripts/bhakti_pipeline.py --workers 3 --publish \
 For a larger batch, use a JSON manifest:
 
 ```json
-{"songs":[{"slug":"song-slug","source":"/absolute/song.m4a","title":"…","credit":"…","languages":["Hindi"],"subjectTags":["Śirdi Sāī"]}]}
+{"songs":[{"slug":"song-slug","source":"/absolute/song.m4a","title":"…","writer":"…","singer":"…","languages":["Hindi"],"subjectTags":["Śirḍī Sāī"]}]}
 ```
 
 ```sh
@@ -63,7 +63,8 @@ Never use a later chorus onset for an earlier displayed line. Only immediate,
 identical contiguous performances may be represented as a repeat.
 
 Use standard section kinds only: `invocation`, `refrain`, `verse`, `bridge`,
-`closing`, `spoken`, or `instrumental`. Do not invent public roles. Show a
+`closing`, `spoken`, or `instrumental`. These are internal processing metadata;
+do not render section labels on the song page. Do not invent public roles. Show a
 compact single credit when one person is evidenced; label singer/writer/music
 only when a real distinction is evidenced. Omit unknown roles without calling
 attention to the absence.
