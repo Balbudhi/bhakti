@@ -22,5 +22,29 @@ window.BHAKTI_SONGS = [
     credit: "Devotional song reader",
     language: "Punjabi",
     tags: ["Mātā", "Punjabi"]
+  },
+  {
+    slug: "yeh-garv-bhara-mastak",
+    title: "Yeh Garv Bharā Mastak Merā",
+    subtitle: "Prārthanā",
+    credit: "Hari Om Sharan",
+    language: "Hindi",
+    tags: ["Prayer", "Hindi"]
+  },
+  {
+    slug: "aisa-pyar-baha-de-maiya",
+    title: "Aisā Pyār Bahā De Maiyā",
+    subtitle: "Durgā Vandana",
+    credit: "Hari Om Sharan",
+    language: "Hindi & Sanskrit",
+    tags: ["Durgā", "Hindi", "Sanskrit"]
+  },
+  {
+    slug: "thanu-karagadavaralli",
+    title: "Tanu Karagadavaralli Puṣpavanolle",
+    subtitle: "Akkamahādevī Vachana",
+    credit: "Sangeeta Katti Kulkarni · Vachana Sangama 1",
+    language: "Kannada",
+    tags: ["Akkamahādevī", "Kannada"]
   }
 ];
