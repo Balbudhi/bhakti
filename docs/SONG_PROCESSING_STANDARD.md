@@ -156,6 +156,18 @@ python3 scripts/audit_translation_style.py all --workers 2
 It reuses the reviewed hover glosses, requires exact word-index support, caches
 each batch, and produces review packets without altering the public site.
 
+To apply an already-reviewed style batch deterministically without rerunning
+audio or translation generation, use:
+
+```sh
+python3 scripts/apply_translation_style_review.py <song-slug> --apply
+```
+
+This command only rewrites `SONG_LINES[*].english` from the cached
+`translation-style-audit/review.json` packet after validating the line IDs,
+segment reconstruction, and word-index references. It never guesses, retranslates,
+or touches timing/audio data.
+
 ## Automated intake
 
 Run from this repository. This is the production command for both single songs
