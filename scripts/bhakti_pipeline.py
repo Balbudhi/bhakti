@@ -37,7 +37,7 @@ import naming
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 2
-TRANSLATION_INPUT_VERSION = 2
+TRANSLATION_INPUT_VERSION = 3
 
 
 def parse_args() -> argparse.Namespace:
@@ -1270,7 +1270,11 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
         batch_glosses = [gloss_by_id[line['id']] for line in batch]
         return f"""Write faithful, complete, idiomatic English translations from the supplied word glosses and grammar notes ONLY. The glosses are semantic constraints, not a license for wooden word-for-word substitution: preserve their exact meaning, grammar, poetic image, register, and all emphases while writing natural English. Do not introduce a looser synonym, devotional interpretation, or omission that the gloss record does not support. Equally, do not replace a precise English image with a blander gloss synonym merely because it is shorter.
 
-For each line, return plain literal English plus ordered display segments. Each segment may reference the exact word indices which support it; punctuation or function-word segments can use an empty index list. Preserve poetic imagery without making the literal sentence more poetic than its glosses warrant. Resolve ordinary polysemy from the supplied grammar/song context; mark uncertainty only when the audited source itself cannot support one reading.
+For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list.
+
+Write lucid contemporary devotional English—not a sequence of dictionary glosses and not faux-archaic religious prose. Prefer a natural supported idiom such as “look upon me with mercy,” “leaves your side,” “from deep within,” or “is not bright” over stiff calques such as “cast a glance of mercy,” “leaves your company,” “from the very inside,” or “does not become bright.” Avoid legalistic wording, needless inversion, noun piles, duplicate modifiers, bracketed editorial verbs, and constructions such as “heart-mind” unless no natural English word preserves the source. At the same time, retain culturally or poetically meaningful images—darshan or sacred vision, an alms bag, garment hem, lotus, dust, ocean, threshold, cage, or Mount Meru—rather than flattening them into generic prose. Use dignified words such as “behold,” “grace,” or “obeisance” only when they are natural in context, not merely because the song is devotional.
+
+Resolve ordinary polysemy from the supplied grammar/song context; mark uncertainty only when the audited source itself cannot support one reading. The completed segments must reconstruct `literal_english` exactly, including ordinary spacing and punctuation.
 
 TARGET audited source lines (return these IDs only):
 {json.dumps(batch, ensure_ascii=False)}
@@ -1387,8 +1391,11 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
     previous_text = ""
     for part in parts:
         text = str(part.get("text", ""))
+        if previous_text.rstrip().endswith(("-", "—", "…", "/", "(", '"', "“", "‘")):
+            text = text.lstrip()
         if (rendered and text and not text[0].isspace() and text[0] not in ",.;:!?)]}"
-                and not previous_text.endswith((" ", "-", "—", "/", "("))):
+                and not previous_text.endswith(" ")
+                and not previous_text.rstrip().endswith(("-", "—", "…", "/", "(", '"', "“", "‘"))):
             text = " " + text
         indices = [str(index) for index in part.get("word_indices", []) if isinstance(index, int) and index >= 0]
         rendered.append("{" + ",".join(indices) + ":" + text + "}" if indices else text)

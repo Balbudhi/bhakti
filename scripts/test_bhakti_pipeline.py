@@ -187,6 +187,27 @@ class PipelineTests(unittest.TestCase):
             {"text": ".", "word_indices": []},
         ], "")
         self.assertEqual(rendered, "{2:Take}{1: flight}{0: into the sky},{3,4: O bird}.")
+        self.assertEqual(
+            pipeline.segment_english([
+                {"text": "O Lord—", "word_indices": [0]},
+                {"text": " aarti", "word_indices": [1]},
+            ], ""),
+            "{0:O Lord—}{1:aarti}",
+        )
+        self.assertEqual(
+            pipeline.segment_english([
+                {"text": "Ganu ", "word_indices": [0]},
+                {"text": "says", "word_indices": [1]},
+            ], ""),
+            "{0:Ganu }{1:says}",
+        )
+        self.assertEqual(
+            pipeline.segment_english([
+                {"text": 'Ganu says, "', "word_indices": [0]},
+                {"text": "Baba", "word_indices": [1]},
+            ], ""),
+            '{0:Ganu says, "}{1:Baba}',
+        )
 
     def test_display_title_and_language_use_reviewed_forms(self) -> None:
         lines = [{"roman": "ākāśī jhepa ghe re pākharā"}]

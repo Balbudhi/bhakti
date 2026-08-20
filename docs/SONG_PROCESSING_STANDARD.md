@@ -102,6 +102,10 @@ rendered as competing credits.
    each verified line. Only then does it produce literal English from that map.
    It must explicitly mark uncertainty; it may not invent a connective,
    theological interpretation, looser synonym, or omitted line.
+   The English must also be natural contemporary devotional prose: adjacent
+   lines are read as one utterance, stiff calques and faux-archaic diction are
+   rejected, and concrete source images remain intact. A technically literal
+   but awkward sentence does not pass merely because every gloss appears in it.
 3. When a user supplies a translation, it is a comparison witness—not an
    automatic baseline and not disposable raw material. Gemini compares both
    versions, records every material difference, and gives a reason before a
@@ -109,6 +113,15 @@ rendered as competing credits.
 4. The final reader may publish only the reviewed result. The ignored review
    packet preserves source metadata, raw passes, reconciliation findings,
    suggested trims, translation comparison, and model/cost record.
+
+For a text-only editorial audit of existing readers, run:
+
+```sh
+python3 scripts/audit_translation_style.py all --workers 2
+```
+
+It reuses the reviewed hover glosses, requires exact word-index support, caches
+each batch, and produces review packets without altering the public site.
 
 ## Automated intake
 
