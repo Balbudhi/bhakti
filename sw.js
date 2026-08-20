@@ -1,4 +1,4 @@
-const CACHE = "bhakti-shell-v3";
+const CACHE = "bhakti-shell-v4";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/assets/site.css", "/assets/library.js", "/data/songs.js", "/assets/favicon.svg", "/assets/favicon.png"];
 
 self.addEventListener("install", event => event.waitUntil(
@@ -10,7 +10,8 @@ self.addEventListener("activate", event => event.waitUntil(
     .then(() => self.clients.claim())
 ));
 self.addEventListener("fetch", event => {
-  if (event.request.method !== "GET" || event.request.url.endsWith(".m4a")) return;
+  const pathname = new URL(event.request.url).pathname;
+  if (event.request.method !== "GET" || /\.(?:m4a|webm|ogg|mp3|wav|flac)$/.test(pathname)) return;
   event.respondWith(
     fetch(event.request)
       .then(response => {

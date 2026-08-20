@@ -591,7 +591,6 @@ function setupKaraoke() {
 
   // Click a line to jump audio there (only if it has a timing).
   document.getElementById("songRoot").addEventListener("click", e => {
-    if (e.target.closest(".w")) return;            // word click handled elsewhere
     const article = e.target.closest(".line");
     if (!article) return;
     const m = article.id.match(/^ln-(\d+)-/);
