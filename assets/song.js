@@ -388,6 +388,7 @@ function renderLine(line, repeats, sectionLabel, instanceId) {
   return `
     ${sectionHead}
     <article class="line" id="${instanceId}">
+      ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || "")}">${escapeHtml(line.source)}</div>` : ""}
       <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}</div>
       <div class="line-english">${renderEnglishWithSpans(line.english)}</div>
     </article>
@@ -569,8 +570,16 @@ function setupKaraoke() {
     const i = parseInt(m[1], 10);
     const seg = TIMINGS[i];
     if (!seg) return;
-    audio.currentTime = seg.start;
-    audio.play();
+    const seekAndPlay = () => {
+      audio.currentTime = seg.start;
+      audio.play().catch(() => {});
+    };
+
+    // A click may arrive before preload="metadata" has resolved. Setting
+    // currentTime then can be silently reset to 0 by the browser, making a
+    // correct timing map appear wrong. Seek only once the duration is known.
+    if (audio.readyState >= HTMLMediaElement.HAVE_METADATA) seekAndPlay();
+    else audio.addEventListener("loadedmetadata", seekAndPlay, { once: true });
   });
 }
 
