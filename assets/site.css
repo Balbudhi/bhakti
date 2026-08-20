@@ -23,21 +23,13 @@ main {
   padding: clamp(72px, 12vw, 150px) 0;
 }
 
-.library-note {
-  color: var(--muted);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 18px;
-  letter-spacing: 0.01em;
-  margin: 0 10px 22px;
-}
-
 .song-search {
   display: block;
-  margin: 0 10px 14px;
+  margin: 0 10px 16px;
 }
 
 .song-search input {
-  width: min(100%, 360px);
+  width: 100%;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(244, 234, 208, 0.08);
@@ -51,15 +43,20 @@ main {
 .song-search input:focus { border-color: rgba(244, 234, 208, 0.65); }
 
 .tag-filters {
+  display: grid;
+  gap: 8px;
+  margin: 0 10px 30px;
+}
+
+.tag-row {
   display: flex;
   gap: 7px;
-  margin: 0 10px 30px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
   scrollbar-width: none;
 }
 
-.tag-filters::-webkit-scrollbar { display: none; }
+.tag-row::-webkit-scrollbar { display: none; }
 
 .tag-filter {
   flex: 0 0 auto;
@@ -161,11 +158,6 @@ main {
   main {
     width: min(100% - 32px, 940px);
     padding-top: 52px;
-  }
-
-  .library-note {
-    font-size: 17px;
-    margin-bottom: 18px;
   }
 
   .tag-filters { margin-bottom: 24px; }
