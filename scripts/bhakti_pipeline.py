@@ -19,6 +19,7 @@ import argparse
 import base64
 import concurrent.futures
 import difflib
+import hashlib
 import json
 import re
 import shutil
@@ -38,7 +39,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 2
 GLOSS_CONTRACT_VERSION = 2
-TRANSLATION_INPUT_VERSION = 5
+TRANSLATION_INPUT_VERSION = 6
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
@@ -1285,6 +1286,74 @@ def supplied_translation(job: dict[str, Any]) -> str:
     return possible_path.read_text(encoding="utf-8") if possible_path.is_file() else str(value)
 
 
+def translation_review_schema() -> dict[str, Any]:
+    return {"type": "object", "properties": {"reviews": {"type": "array", "items": {
+        "type": "object", "properties": {
+            "id": {"type": "string"}, "passes": {"type": "boolean"},
+            "human_review_recommended": {"type": "boolean"},
+            "agency_preserved": {"type": "boolean"}, "imagery_preserved": {"type": "boolean"},
+            "all_meaning_accounted_for": {"type": "boolean"},
+            "unsupported_additions": {"type": "array", "items": {"type": "string"}},
+            "material_choice": {"type": "string"}, "reason": {"type": "string"}},
+        "required": ["id", "passes", "human_review_recommended", "agency_preserved", "imagery_preserved",
+                     "all_meaning_accounted_for", "unsupported_additions", "material_choice", "reason"],
+        "additionalProperties": False}}}, "required": ["reviews"], "additionalProperties": False}
+
+
+def independently_review_translations(
+    song_dir: Path, lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
+    translation_rows: list[dict[str, Any]], provided_translation: str, options: argparse.Namespace,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    gloss_by_id = {row["id"]: row for row in gloss_rows}
+    translation_by_id = {row["id"]: row for row in translation_rows}
+    batches = [lines[index:index + 40] for index in range(0, len(lines), 40)]
+    cache_dir = song_dir / ".transcription" / "pipeline" / "translation-review-batches"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    def run(index: int) -> dict[str, Any]:
+        batch = batches[index]
+        expected = [line["id"] for line in batch]
+        evidence = [{"source": line, "gloss": gloss_by_id[line["id"]],
+                     "draft": translation_by_id[line["id"]]} for line in batch]
+        fingerprint = hashlib.sha256(json.dumps(
+            {"version": TRANSLATION_INPUT_VERSION, "model": options.model, "evidence": evidence,
+             "provided_translation": provided_translation}, ensure_ascii=False, sort_keys=True,
+        ).encode()).hexdigest()
+        path = cache_dir / f"batch-{index:03d}.json"
+        cached = read_packet(path)
+        if cached and cached.get("fingerprint") == fingerprint and not options.force:
+            return cached
+        prompt = f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
+
+For each line, compare the draft against the indexed glosses, semantic frame, grammar, source, neighboring relation, and material alternatives. Check separately: grammatical agency/experiencer; literal image and metaphor; every negation, modality, modifier and emphasis; unsupported additions; and whether two defensible readings differ materially in agency, metaphor, ambiguity, or poetic force.
+
+Conventional English is not automatically better. Preserve personification, repetition, transparent spatial language, and concrete ritual images. A breath that abandons a speaker is materially different from a speaker releasing breath; “takes hold” is materially different from “kindles”; palm is materially different from an abstract inner state. If the draft and an alternative make such a material choice and no locked human baseline resolves it, set human_review_recommended=true. Do not flag trivial synonyms or punctuation.
+
+If a locked human translation is supplied and the draft copies it exactly, do not fail or rewrite it. If it conflicts with lexical evidence, keep passes=true but set human_review_recommended=true and explain the conflict for the human.
+
+Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
+
+EVIDENCE:
+{json.dumps(evidence, ensure_ascii=False)}
+
+LOCKED HUMAN TRANSLATION (or none):
+{provided_translation}"""
+        response = gemini.call(options.model, gemini.key(), prompt, audio=None, timeout=options.timeout,
+                               response_schema=translation_review_schema(), schema_name="bhakti_translation_review",
+                               reasoning_effort="high", max_completion_tokens=32768)
+        observed = [row.get("id") for row in response["packet"].get("reviews", [])]
+        if observed != expected:
+            raise RuntimeError(f"translation review batch {index} returned IDs out of order or incomplete")
+        result = {"fingerprint": fingerprint, "target_ids": expected, "response": response}
+        write_json(path, result)
+        return result
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(2, len(batches))) as pool:
+        packets = list(pool.map(run, range(len(batches))))
+    reviews = [row for packet in packets for row in packet["response"]["packet"]["reviews"]]
+    return reviews, packets
+
+
 def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "05-translation.json"
     existing = read_packet(target)
@@ -1399,6 +1468,13 @@ Return strict JSON:
                   }, "batch_responses": packets, "input_contract_version": TRANSLATION_INPUT_VERSION,
                   "resolved_model": options.model}
     result["input_contract_version"] = TRANSLATION_INPUT_VERSION
+    independent_reviews, review_packets = independently_review_translations(
+        song_dir, lines, gloss_rows, result["packet"]["translations"], provided_translation, options
+    )
+    review_by_id = {row["id"]: row for row in independent_reviews}
+    for row in result["packet"]["translations"]:
+        row["independent_review"] = review_by_id[row["id"]]
+    result["review_responses"] = review_packets
     write_json(target, result)
     return result
 
@@ -1440,6 +1516,18 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
                 errors.append(f"{line_id} translation contains unsupported additions")
         if translation.get("human_review_recommended"):
             errors.append(f"{line_id} translation has a material poetic choice requiring review")
+        independent = translation.get("independent_review", {})
+        if independent:
+            if not independent.get("passes"):
+                errors.append(f"{line_id} independent translation review failed")
+            if not independent.get("agency_preserved") or not independent.get("imagery_preserved"):
+                errors.append(f"{line_id} independent review found changed agency or imagery")
+            if not independent.get("all_meaning_accounted_for"):
+                errors.append(f"{line_id} independent review found omitted meaning")
+            if independent.get("unsupported_additions"):
+                errors.append(f"{line_id} independent review found unsupported additions")
+            if independent.get("human_review_recommended"):
+                errors.append(f"{line_id} independent review requires a human poetic choice")
         for segment in translation.get("segments", []):
             for word_index in segment.get("word_indices", []):
                 if not isinstance(word_index, int) or not 0 <= word_index < len(words):

@@ -40,8 +40,9 @@ The pipeline preserves audio-only source input, then performs distinct stages:
    with focused retry only for a disagreement;
 4. literal word glosses and grammar notes;
 5. semantic frames plus English derived from those glosses only, with agency,
-   imagery, completeness, alternatives, and unsupported additions checked; and
-6. deterministic `data.js`, reader HTML, and catalogue generation.
+   imagery, completeness, alternatives, and unsupported additions checked;
+6. an independent adversarial translation review that cannot rewrite; and
+7. deterministic `data.js`, reader HTML, and catalogue generation.
 
 For YouTube, preserve the highest-quality original audio stream as the first
 listener source and retain the highest native M4A/AAC stream as a compatibility

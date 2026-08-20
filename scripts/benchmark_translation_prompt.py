@@ -78,13 +78,19 @@ def main() -> int:
     results = []
     for line in audited_lines:
         label, validator, review_expected = validators[line["id"]]
-        english = str(outputs[line["id"]]["literal_english"])
-        review = bool(outputs[line["id"]].get("human_review_recommended"))
-        passed = validator(english) and (not review_expected or review)
+        output = outputs[line["id"]]
+        english = str(output["literal_english"])
+        review = bool(output.get("human_review_recommended"))
+        independent = output.get("independent_review", {})
+        independently_flagged = bool(independent.get("human_review_recommended")) or not independent.get("passes", True)
+        silently_safe = validator(english)
+        passed = (silently_safe or independently_flagged) and (not review_expected or review or independently_flagged)
         results.append({"label": label, "english": english, "passed": passed,
+                        "silently_safe": silently_safe,
                         "human_review_recommended": review,
                         "material_alternatives": outputs[line["id"]].get("material_alternatives", []),
-                        "fidelity": outputs[line["id"]].get("fidelity", {})})
+                        "fidelity": outputs[line["id"]].get("fidelity", {}),
+                        "independent_review": independent})
     summary = {"model": options.model, "passed": sum(result["passed"] for result in results),
                "total": len(results), "results": results,
                "human_baseline": [{"id": line_id,

@@ -121,6 +121,10 @@ rendered as competing credits.
    blocks publication until reviewed; trivial synonyms do not. The fidelity
    record must affirm that agency and imagery are preserved, all meaning is
    accounted for, and there are no unsupported additions.
+6. A separate adversarial Gemini call reviews the completed draft. It cannot
+   rewrite; it independently checks agency, imagery, completeness, additions,
+   and unresolved poetic choices. Its failure or review recommendation blocks
+   publication, so the drafting model never certifies itself.
 
 Run the hidden difficult-line benchmark after changing either prompt:
 
