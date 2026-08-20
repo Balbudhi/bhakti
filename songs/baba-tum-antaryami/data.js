@@ -59,7 +59,7 @@ window.SONG_LINES = {
   "daya_karo_he_swami": {
     "source": "दया करो, दया करो हे स्वामी",
     "roman": "Dayā karo, dayā karo he svāmī",
-    "english": "{0,1:Have mercy}; {2,3:have mercy}, {4:O} {5:Lord}.",
+    "english": "{0,1:Have mercy, }{2,3:have mercy, }{4:O }{5:Lord.}",
     "words": [
       {
         "roman": "dayā",
@@ -193,7 +193,7 @@ window.SONG_LINES = {
   "tere_naam_ki_chadhun_main_paudhi": {
     "source": "तेरे नाम की चढ़ूँ मैं पौड़ी",
     "roman": "Tere nām kī caṛhūṁ maiṁ pauṛī",
-    "english": "I {3:climb} a {5:step} of {0:Your} {1:Name}.",
+    "english": "{4:I }{3:climb }{5:the steps }{2:of }{0:Your }{1:Name.}",
     "words": [
       {
         "roman": "tere",
@@ -320,7 +320,7 @@ window.SONG_LINES = {
   "main_gunheen_rijhaun_kaise": {
     "source": "मैं गुणहीन रिझाऊँ कैसे",
     "roman": "Maiṁ guṇahīn rijhāūṁ kaise",
-    "english": "How can {0:I}, {1:without virtue}, {2:please You}?",
+    "english": "{3:How can }{0:I, }{1:without virtue, }{2:please}",
     "words": [
       {
         "roman": "maiṁ",
@@ -343,7 +343,7 @@ window.SONG_LINES = {
   "tumko_he_natnagar": {
     "source": "तुमको हे नटनागर",
     "roman": "Tumako he naṭanāgar",
-    "english": "{0:You}, {1:O} {2:divine dancer}.",
+    "english": "{0:You, }{1:O }{2:divine dancer?}",
     "words": [
       {
         "roman": "tumako",
@@ -389,7 +389,7 @@ window.SONG_LINES = {
   "tum_ho_daya_ke_sagar": {
     "source": "तुम हो दया के सागर",
     "roman": "Tum ho dayā ke sāgar",
-    "english": "{0,1:You are} the {4:ocean} of {2:mercy}.",
+    "english": "{0:You }{1:are }{4:the ocean }{3:of }{2:mercy,}",
     "words": [
       {
         "roman": "tum",

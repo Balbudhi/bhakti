@@ -154,7 +154,7 @@ window.SONG_LINES = {
   "v1b": {
     "source": "एक नजर से कर दे जीवन, सुन्दर पावन पुण्यवान।",
     "roman": "Ek nazar se kar de jīvan, sundar pāvan puṇyavān",
-    "english": "With {1:a single glance}, [the Guru] {3:makes} {4:life} {5:beautiful}, {6:sacred}, and {7:meritorious}.",
+    "english": "{2:With}{0: a single}{1: glance,}{3: he makes}{4: life}{5: beautiful,}{6: sacred,}{7: and meritorious.}",
     "words": [
       {
         "roman": "Ek",

@@ -101,7 +101,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Geā andaroṅ hī andaroṅ ṭuṭṭ mā, māye merī bānh phaṛ lai",
-    "english": "I {0:have been} {4:broken} from the very {1:inside}, {5:O Mother} — {6:O Mother}, {9,10:take hold of} {7:my} {8:arm}.",
+    "english": "{0,4:I am broken }{1,2,3:from deep within, }{5:O Mother — }{6:O Mother, }{7,8,9,10:take hold of my arm.}",
     "words": [
       {
         "roman": "Geā",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Baccheyāṅ toṅ pīṛā huṇ jāndiyāṅ nā jhall mā",
-    "english": "The {2:pains} {4,6:cannot be endured} {0:by the children} {3:now}, O {7:Mother}.",
+    "english": "{0,1:The children }{4,5:cannot }{6:bear }{2:the pain }{3:now, }{7:O Mother.}",
     "words": [
       {
         "roman": "Baccheyāṅ",
@@ -353,7 +353,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Aiveṅ jāye nā jind kite rul mā, māye merī bānh phaṛ lai",
-    "english": "Lest this {3:life} {0:somehow} {1,5:be ruined} {4:somewhere}, O {6:Mother} — {7:O Mother}, {10,11:take hold of} {8:my} {9:arm}.",
+    "english": "{2:Lest }{3:this life }{4:somehow }{1,5:be ruined }{0:in vain, }{6:O Mother — }{7:O Mother, }{8,9,10,11:take hold of my arm.}",
     "words": [
       {
         "roman": "Aiveṅ",
@@ -409,7 +409,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Waqt diyāṅ ṭhokarāṅ den parshāniyāṅ",
-    "english": "The {2:stumbles} {1:of} {0:time} {3:give} {4:troubles}.",
+    "english": "{2:The blows }{0,1:of time }{3:bring }{4:troubles.}",
     "words": [
       {
         "roman": "Waqt",
@@ -437,7 +437,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Manḍeyāṅ nasībāṅ utte karn manmāniyāṅ",
-    "english": "They {3:do} their {4:arbitrary will} {2:upon} {0:bad} {1:destinies}.",
+    "english": "{3,4:They do as they please}{2: with}{0,1: our wretched fate.}",
     "words": [
       {
         "roman": "Manḍeyāṅ",
@@ -521,7 +521,7 @@ window.SONG_LINES = {
   },
   "v4a": {
     "roman": "Andaroṅ hī andaroṅ dil merā ṭuṭṭeyā",
-    "english": "{3:My} {2:heart} is {4:broken} from the very {0:inside}.",
+    "english": "{3,4:My heart }{5:is broken }{0,1,2:from deep within.}",
     "words": [
       {
         "roman": "Andaroṅ",
@@ -553,7 +553,7 @@ window.SONG_LINES = {
   },
   "v4b": {
     "roman": "Injh peā lagge jiveṅ sāh huṇ mukkeyā",
-    "english": "It {1,2:seems} {0:this way}, {3:as if} {4:breath} is {6:finished} {5:now}.",
+    "english": "{0,1,2:It feels }{3:as if }{4:breath }{6:has run out }{5:now.}",
     "words": [
       {
         "roman": "Injh",
@@ -589,7 +589,7 @@ window.SONG_LINES = {
   },
   "v4c": {
     "roman": "Miṭā de jhanḍewālī janmāṅ dī bhukh mā, māye merī bānh phaṛ lai",
-    "english": "{0,1:Erase}, O {2:Jhandewali} (Goddess of the flags), the {5:hunger} {4:of} {3:lifetimes}, O {6:Mother} — {7:O Mother}, {10,11:take hold of} {8:my} {9:arm}.",
+    "english": "{2:O Jhandewali, }{0,1:erase }{5:the hunger }{3,4:of lifetimes, }{6:O Mother — }{7:O Mother, }{8,9,10,11:take hold of my arm.}",
     "words": [
       {
         "roman": "Miṭā",

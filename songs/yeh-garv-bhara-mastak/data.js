@@ -17,7 +17,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "refrain_a": {
     "roman": "Yeh garv bharā mastak merā",
-    "english": "Let this {2:pride-filled} {3:head} of {4:mine}…",
+    "english": "{0:This }{1,2:pride-filled }{3:head }{4:of mine…}",
     "words": [
       {
         "roman": "Yeh",
@@ -45,7 +45,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Prabhu charaṇ-dhūl tak jhukne de",
-    "english": "…{5:bow down} as far as the {2:dust} of {1:the Lord’s} {0:feet}.",
+    "english": "{5:…let it }{4:bow down }{3:to }{2:the dust }{0:of the Lord’s }{1:feet.}",
     "words": [
       {
         "roman": "Prabhu",
@@ -201,7 +201,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Hāṅ, ho na sakā",
-    "english": "Yes — it {2:could not become} so.",
+    "english": "{0:Yes—}{1,2:it could not.}",
     "words": [
       {
         "roman": "Hāṅ",
@@ -221,7 +221,7 @@ window.SONG_LINES = {
   },
   "v1d": {
     "roman": "Main premī hūṅ, itnā na jhukā",
-    "english": "I {0:am} a {1:lover}, yet I {5:did not bow} {4:so much}.",
+    "english": "{0:I }{2:am }{1:a lover, }yet I {4:did not }{5:bow }{3:even this much.}",
     "words": [
       {
         "roman": "Main",
@@ -345,7 +345,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Jab āṅkh khulī to man royā",
-    "english": "When my {1:eyes} {2:opened}, the {4:mind} {5:wept}.",
+    "english": "{0:When }{1:my eyes }{2,3:opened, }{4:my heart }{5:wept.}",
     "words": [
       {
         "roman": "Jab",
@@ -493,7 +493,7 @@ window.SONG_LINES = {
   },
   "v3d": {
     "roman": "Ik bār yeh keh de, khālī jā",
-    "english": "Just once, {4:tell me}: ‘{6:go empty-handed}.’",
+    "english": "{0:Just }{1:once, }{2,3,4:tell me: }{6:'Go }{5:empty-handed.'}",
     "words": [
       {
         "roman": "Ik",
