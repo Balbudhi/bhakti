@@ -434,8 +434,8 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-progress" id="apProgress"><div class="ap-progress-bar" id="apProgressBar"></div></div>
     <audio id="songAudio" preload="metadata"><source src="audio.m4a" type="audio/mp4"></audio>
   </div>
-  <script src="data.js?v=contract-20260820"></script>
-  <script src="../../assets/song.js?v=contract-20260820"></script>
+  <script src="data.js?v=contract-20260820-2"></script>
+  <script src="../../assets/song.js?v=contract-20260820-2"></script>
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 </body>
 </html>
