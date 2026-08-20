@@ -60,9 +60,11 @@ translations. It never fixes those errors by guessing. Do not replace this
 with manual song-page construction or separate generic audio passes.
 
 For an existing reader whose wording needs review but whose audio must not be
-rerun, use `python3 scripts/retranslate_bhakti.py --workers 3 all`. It creates
-an ignored, text-only gloss-first comparison packet and does **not** overwrite
-public translations until each material change is reviewed.
+rerun, use `python3 scripts/audit_translation_style.py all --workers 2`. It
+audits the current English against the reviewed public glosses in cached text
+batches and does **not** overwrite public translations. Every proposed change
+must be reviewed before it is applied. Use `retranslate_bhakti.py` only when
+the word glosses themselves also require a fresh independent reconstruction.
 
 ## Reader schema and content rules
 
@@ -70,6 +72,10 @@ Generated `data.js` must define `SONG_META`, `SONG_LINES`, `SONG_SEQUENCE`,
 and `SONG_TIMINGS`. Every lyric line has source script → IAST → literal English
 in that order; each IAST token must have a literal hover gloss. A general
 translation is written **after** and constrained by the word map, not before it.
+It must still read as lucid, dignified contemporary English. Read adjacent
+lines together, reject stiff calques and faux-archaic filler, and preserve the
+source's concrete devotional images rather than replacing them with generic
+religious prose.
 
 `SONG_SEQUENCE` is the actual performance order. A line returning after any
 other line needs a separate entry. Its timing begins at that instance’s first
