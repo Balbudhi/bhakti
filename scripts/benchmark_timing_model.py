@@ -23,7 +23,9 @@ def main() -> int:
     audited = pipeline.read_packet(song_dir / ".transcription" / "pipeline" / "02-transcript-audit.json")
     reviewed = pipeline.read_packet(song_dir / ".transcription" / "pipeline" / "03-timing.json")
     if not audited or not reviewed or not reviewed.get("sequence"):
-        raise SystemExit("a reviewed transcript and accepted timing packet are required")
+        available = sorted(path.parents[2].name for path in (pipeline.ROOT / "songs").glob("*/.transcription/pipeline/03-timing.json"))
+        raise SystemExit("a reviewed transcript and accepted timing packet are required; available slugs: "
+                         + ", ".join(available))
     occurrences = pipeline.display_occurrences(audited["packet"])
     audio = pipeline.preferred_listener_audio(song_dir)
     duration = pipeline.gemini.duration_seconds(audio)
@@ -41,6 +43,7 @@ def main() -> int:
     sequence, errors, uncertain = pipeline.timing_sequence_from_response(
         occurrences, response["packet"], duration
     )
+    returned_starts = response["packet"].get("starts", [])
     expected = {item["occurrence_id"]: float(item["start"]) for item in reviewed["sequence"]}
     differences = [abs(float(item["start"]) - expected[item["occurrence_id"]]) for item in sequence]
     result = {
@@ -52,6 +55,9 @@ def main() -> int:
         "uncertain_occurrence_ids": uncertain,
         "comparison": {
             "count": len(differences),
+            "expected_occurrences": len(expected),
+            "returned_start_candidates": len(returned_starts),
+            "returned_occurrences": len(sequence),
             "within_0_5_seconds": sum(value <= 0.5 for value in differences),
             "within_1_second": sum(value <= 1.0 for value in differences),
             "median_absolute_difference": statistics.median(differences) if differences else None,

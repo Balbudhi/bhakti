@@ -38,6 +38,11 @@ lower-cost `google/gemini-3.1-flash-lite` lists $0.25/M text input, $0.50/M
 audio input, and $1.50/M output. Use Lite only for non-authoritative metadata
 or preflight work; it must not become a cheap way to avoid the transcript,
 first-syllable timing, or gloss-derived translation gate.
+On August 20, 2026, a benchmark run against the reviewed `jab-subah-ki-aarti`
+packet returned all 29 raw start candidates from 3.1 Flash Lite but failed the
+monotonic/coverage gate after occurrence 16, leaving occurrences 17–28 invalid
+for about $0.0029 on that call. Treat Lite timing as a cost probe only, not a
+publishable start source.
 
 ## Required song data
 
