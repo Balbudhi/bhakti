@@ -16,7 +16,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("url", help="YouTube or another yt-dlp-supported media URL")
     parser.add_argument("song_dir", type=Path, help="New local Bhakti directory to create")
     parser.add_argument("--skip-transcription", action="store_true", help="Download and capture metadata only")
-    parser.add_argument("--model", default="google/gemini-3.6-flash")
+    parser.add_argument("--model", default="google/gemini-3.7-flash")
     return parser.parse_args()
 
 

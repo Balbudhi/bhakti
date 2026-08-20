@@ -17,7 +17,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 VALID_SECTIONS = {"invocation", "refrain", "verse", "bridge", "closing", "spoken", "instrumental"}
-REQUIRED_META = {"title", "credit", "languages", "subjectTags", "translationStatus", "sourceStatus"}
+REQUIRED_META = {"title", "credit", "languages", "subjectTags", "timingStatus", "translationStatus", "sourceStatus"}
 
 
 def load_data(path: Path) -> dict[str, Any]:
@@ -48,6 +48,8 @@ def audit_song(directory: Path) -> dict[str, Any]:
             problems.append("SONG_META languages must be a non-empty list")
         if not isinstance(meta.get("subjectTags"), list):
             problems.append("SONG_META subjectTags must be a list")
+        if meta.get("timingStatus") != "start-only-reviewed":
+            problems.append("SONG_META timingStatus is not start-only-reviewed")
     lines = data.get("SONG_LINES", {})
     if not isinstance(lines, dict):
         problems.append("SONG_LINES is not an object")

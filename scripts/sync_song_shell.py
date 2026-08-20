@@ -20,9 +20,9 @@ def main() -> int:
                '  <link rel="manifest" href="../../manifest.webmanifest" />\n')
         text = text[:icon.start()] + pwa + text[icon.end():]
         text = re.sub(r'<script src="data\.js(?:\?[^\"]*)?"></script>',
-                      '<script src="data.js?v=contract-20260820-3"></script>', text)
+                      '<script src="data.js?v=contract-20260820-4"></script>', text)
         text = re.sub(r'<script src="\.\./\.\./assets/song\.js(?:\?[^\"]*)?"></script>',
-                      '<script src="../../assets/song.js?v=contract-20260820-3"></script>', text)
+                      '<script src="../../assets/song.js?v=contract-20260820-4"></script>', text)
         registration = '<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>'
         if registration not in text:
             text = text.replace("</body>", f"  {registration}\n</body>")

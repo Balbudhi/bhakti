@@ -24,7 +24,7 @@ from typing import Any
 import subprocess
 
 
-MODEL = "google/gemini-3.6-flash"
+MODEL = "google/gemini-3.7-flash"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_KEY = Path.home() / "Dev" / ".axiom_openrouter.key"
 
@@ -53,7 +53,18 @@ def key() -> str:
     return value
 
 
-def call(model: str, api_key: str, prompt: str, *, audio: Path | None, timeout: float) -> dict[str, Any]:
+def call(
+    model: str,
+    api_key: str,
+    prompt: str,
+    *,
+    audio: Path | None,
+    timeout: float,
+    response_schema: dict[str, Any] | None = None,
+    schema_name: str = "bhakti_response",
+    reasoning_effort: str | None = None,
+    max_completion_tokens: int | None = None,
+) -> dict[str, Any]:
     content: list[dict[str, Any]] = [{"type": "text", "text": prompt}]
     if audio:
         content.append({
@@ -64,19 +75,35 @@ def call(model: str, api_key: str, prompt: str, *, audio: Path | None, timeout: 
         "model": model,
         "temperature": 0,
         "messages": [{"role": "user", "content": content}],
-        "response_format": {"type": "json_object"},
+        "response_format": ({"type": "json_schema", "json_schema": {"name": schema_name, "strict": True, "schema": response_schema}}
+                            if response_schema else {"type": "json_object"}),
     }
+    if response_schema:
+        payload["provider"] = {"require_parameters": True}
+    if reasoning_effort:
+        payload["reasoning"] = {"effort": reasoning_effort}
+    if max_completion_tokens:
+        payload["max_tokens"] = max_completion_tokens
     request = urllib.request.Request(
         API_URL,
         data=json.dumps(payload).encode("utf-8"),
         headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "HTTP-Referer": "https://bhakti.eeshan.xyz/", "X-Title": "Bhakti song processing"},
         method="POST",
     )
-    try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            result = json.loads(response.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        raise RuntimeError(f"OpenRouter HTTP {exc.code}: {exc.read().decode('utf-8', errors='replace')[:800]}") from exc
+    result: dict[str, Any] | None = None
+    for attempt in range(6):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                result = json.loads(response.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", errors="replace")[:800]
+            if exc.code in {429, 502, 503, 504} and attempt < 5:
+                time.sleep(min(32, 2 ** (attempt + 1)))
+                continue
+            raise RuntimeError(f"OpenRouter HTTP {exc.code}: {detail}") from exc
+    if result is None:
+        raise RuntimeError("OpenRouter returned no response after retries")
     try:
         text = result["choices"][0]["message"]["content"]
         if isinstance(text, list):
@@ -84,7 +111,8 @@ def call(model: str, api_key: str, prompt: str, *, audio: Path | None, timeout: 
         text = re.sub(r"^```(?:json)?\s*|\s*```$", "", str(text).strip())
         parsed = json.loads(text)
     except (KeyError, IndexError, TypeError, ValueError, json.JSONDecodeError) as exc:
-        raise RuntimeError("Gemini did not return the required JSON packet") from exc
+        preview = str(locals().get("text", ""))[:800]
+        raise RuntimeError(f"Gemini did not return the required JSON packet; content preview: {preview!r}") from exc
     if not isinstance(parsed, dict):
         raise RuntimeError("Gemini JSON packet must be an object")
     return {"packet": parsed, "usage": result.get("usage", {}), "resolved_model": result.get("model", model)}
