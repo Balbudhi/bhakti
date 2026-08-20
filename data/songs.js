@@ -37,7 +37,7 @@ window.BHAKTI_SONGS = [
     subtitle: "Durgā Vandana",
     credit: "Hari Om Sharan",
     languageTags: ["Hindi", "Sanskrit"],
-    subjectTags: ["Durgā"]
+    subjectTags: ["Śakti", "Durgā"]
   },
   {
     slug: "thanu-karagadavaralli",
