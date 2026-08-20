@@ -1,0 +1,299 @@
+/* =============================================================
+   Koi Hor Nahi Hai Mera — page styles
+   One ground, one ink, one font. Restraint.
+   ============================================================= */
+
+:root {
+  /* One red, one cream. Everything derives. */
+  --kh-bg:        #6b0e16;                       /* richer, more vibrant deep red */
+  --kh-ink:       #f4ead0;                       /* warm light-yellow cream */
+  --kh-ink-soft:  rgba(244, 234, 208, 0.68);
+  --kh-ink-mid:   rgba(244, 234, 208, 0.28);
+  --kh-rule:      rgba(244, 234, 208, 0.18);
+
+  /* Cormorant Garamond — Garamond revival, elegant and well-
+     spaced. Designed by Christian Thalmann; one of the
+     loveliest open fonts for poetry/devotional bodies. */
+  --kh-serif:   "Cormorant Garamond", "EB Garamond", Georgia, "Times New Roman", serif;
+}
+
+html, body {
+  background: var(--kh-bg);
+  color: var(--kh-ink);
+  font-family: var(--kh-serif);
+}
+
+.song-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 80px 36px 140px;
+  color: var(--kh-ink);
+  font-family: var(--kh-serif);
+}
+
+/* ---------- Hint inside the hero, above the divider ---------- */
+.song-hint {
+  margin: 22px 0 0;
+  text-align: center;
+  font-family: var(--kh-serif);
+  font-size: 15px;
+  color: var(--kh-ink-soft);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+/* ---------- Hero ---------- */
+.song-hero {
+  margin: 0 0 72px;
+  padding: 0 0 36px;
+  border-bottom: 1px solid var(--kh-rule);
+  text-align: center;
+}
+.song-title {
+  font-family: var(--kh-serif);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 1.15;
+  margin: 0 0 18px;
+  color: var(--kh-ink);
+  letter-spacing: 0.005em;
+}
+.song-attrib {
+  margin: 0;
+}
+.song-attrib em {
+  font-family: var(--kh-serif);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--kh-ink-soft);
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+.song-credit {
+  margin: 14px 0 0;
+  font-family: var(--kh-serif);
+  font-size: 17px;
+  color: var(--kh-ink-soft);
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+/* ---------- Audio player (fixed, blends into body) ---------- */
+.audio-player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  padding: 0 28px;
+  background: var(--kh-bg);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  z-index: 40;
+}
+.ap-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--kh-ink);
+  background: transparent;
+  color: var(--kh-ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background-color 140ms ease, transform 120ms ease;
+}
+.ap-btn:hover { background: rgba(244, 234, 208, 0.10); }
+.ap-btn:active { transform: scale(0.94); }
+.ap-btn .ap-icon-play  { margin-left: 2px; }
+.ap-btn .ap-icon-pause { display: none; }
+.ap-btn.is-playing .ap-icon-play  { display: none; }
+.ap-btn.is-playing .ap-icon-pause { display: inline-block; }
+
+.ap-progress {
+  flex: 1;
+  position: relative;
+  padding: 14px 0;             /* invisible vertical hit area for grabbing */
+  cursor: pointer;
+  touch-action: none;          /* let pointer events drive seek, not page scroll */
+}
+.ap-progress::before {         /* the visible 1px track */
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  background: var(--kh-rule);
+  transform: translateY(-50%);
+}
+.ap-progress-bar {
+  position: absolute;
+  left: 0; top: 50%;
+  height: 1px;
+  width: 0%;
+  background: var(--kh-ink);
+  transform: translateY(-50%);
+  transition: width 140ms linear;
+}
+.ap-time {
+  font-family: var(--kh-serif);
+  font-size: 16px;
+  color: var(--kh-ink);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  white-space: nowrap;
+  min-width: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+.ap-time-total { color: var(--kh-ink-soft); }
+.audio-player audio { display: none; }
+
+/* ---------- Line block ---------- */
+.line {
+  margin: 0 0 36px;
+  padding: 6px 16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  text-align: left;
+  border-radius: 4px;
+  transition: background-color 280ms ease;
+}
+.line.is-singing {
+  background: rgba(244, 234, 208, 0.06);
+}
+.line-roman {
+  font-family: var(--kh-serif);
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--kh-ink);
+  margin: 0 0 10px;
+  letter-spacing: 0.005em;
+  font-weight: 400;
+}
+.line-english {
+  font-family: var(--kh-serif);
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.55;
+  color: var(--kh-ink-soft);
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+/* Repetition badge — single cream tone, hairline pill. */
+.rep {
+  display: inline-block;
+  margin-left: 14px;
+  padding: 2px 12px;
+  font-family: var(--kh-serif);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--kh-ink);
+  background: transparent;
+  border: 1px solid rgba(244, 234, 208, 0.32);
+  border-radius: 999px;
+  vertical-align: 0.18em;
+  white-space: nowrap;
+  user-select: none;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Word spans (hover targets) ---------- */
+/* Outline-only highlight (no filled box). box-shadow is used
+   so the layout doesn't shift when the ring appears. */
+.line-roman .w {
+  cursor: pointer;
+  padding: 1px 3px;
+  margin: 0 -3px;
+  transition: box-shadow 140ms ease, color 140ms ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 3px;
+}
+.line-roman .w:hover,
+.line-roman .w.is-hi,
+.line-roman .w:focus-visible {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px rgba(244, 234, 208, 0.55);
+}
+.line-roman .w:focus-visible {
+  box-shadow: inset 0 0 0 1px rgba(244, 234, 208, 0.8);
+}
+
+/* ---------- English mapped spans (highlight target) ---------- */
+.line-english .we {
+  padding: 1px 3px;
+  margin: 0 -3px;
+  transition: box-shadow 140ms ease, color 140ms ease;
+  border-radius: 3px;
+}
+.line-english .we.is-hi {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px rgba(244, 234, 208, 0.45);
+  color: var(--kh-ink);
+}
+
+/* ---------- Word tooltip ---------- */
+.word-tooltip {
+  position: absolute;
+  z-index: 50;
+  max-width: 340px;
+  padding: 12px 16px;
+  font-family: var(--kh-serif);
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--kh-ink);
+  background: #1a0306;                /* darker than body for clear separation */
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55),
+              0 2px 8px  rgba(0, 0, 0, 0.30);
+  pointer-events: none;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 720px) {
+  .song-page { padding: 52px 22px 120px; }
+  .song-title { font-size: 40px; line-height: 1.15; }
+  .song-attrib em { font-size: 19px; }
+  .song-hero { margin-bottom: 56px; padding-bottom: 28px; }
+  .line { margin-bottom: 32px; padding: 5px 12px; margin-left: -12px; margin-right: -12px; }
+  .line-roman { font-size: 23px; line-height: 1.55; font-weight: 400; }
+  .line-english { font-size: 20px; line-height: 1.55; }
+  .rep { font-size: 14px; padding: 2px 11px; margin-left: 12px; }
+  .word-tooltip {
+    max-width: 82vw;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 11px 14px;
+  }
+
+  .audio-player {
+    height: 62px;
+    padding: 0 18px;
+    gap: 14px;
+  }
+  .ap-btn { width: 36px; height: 36px; }
+  .ap-time { font-size: 15px; min-width: 36px; }
+}
+
+@media (max-width: 380px) {
+  .audio-player { padding: 0 14px; gap: 10px; }
+  .ap-time-total { display: none; }
+}
+
+/* Touch devices: hover-only styles off. */
+@media (hover: none) {
+  .line-roman .w { padding: 2px 3px; margin: 0 -3px; }
+  .line-roman .w:hover { background: transparent; }
+  .line-roman .w.is-hi { background: rgba(244, 234, 208, 0.18); }
+}
