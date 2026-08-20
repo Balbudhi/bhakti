@@ -19,7 +19,7 @@ window.BHAKTI_SONGS = [
     slug: "koi-hor-nahi",
     title: "Koī Hor Nahī Hai Merā",
     subtitle: "Jai Mātā Dī",
-    credit: "Devotional song reader",
+    credit: "Aman Ji · Shri Mata Vaishno Devi Bhawan",
     languageTags: ["Punjabi"],
     subjectTags: ["Śakti"]
   },
