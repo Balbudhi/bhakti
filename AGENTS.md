@@ -72,10 +72,11 @@ Generated `data.js` must define `SONG_META`, `SONG_LINES`, `SONG_SEQUENCE`,
 and `SONG_TIMINGS`. Every lyric line has source script → IAST → literal English
 in that order; each IAST token must have a literal hover gloss. A general
 translation is written **after** and constrained by the word map, not before it.
-It must still read as lucid, dignified contemporary English. Read adjacent
-lines together, reject stiff calques and faux-archaic filler, and preserve the
-source's concrete devotional images rather than replacing them with generic
-religious prose.
+It must remain intelligible without erasing purposeful literal strangeness.
+Read adjacent lines together and preserve repetition, personification, agency,
+ambiguity, and concrete devotional images. A supplied human translation is the
+editorial baseline and must not be rewritten merely because another phrasing
+sounds smoother or more conventional.
 
 `SONG_SEQUENCE` is the actual performance order. A line returning after any
 other line needs a separate entry. Its timing begins at that instance’s first
