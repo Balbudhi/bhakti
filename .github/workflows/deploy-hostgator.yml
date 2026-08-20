@@ -1,0 +1,34 @@
+name: Deploy Bhakti to HostGator
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: hostgator-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure SSH
+        env:
+          HOSTGATOR_SSH_KEY: ${{ secrets.HOSTGATOR_SSH_KEY }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s' "$HOSTGATOR_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p 2222 REDACTED.HOST >> ~/.ssh/known_hosts
+      - name: Publish static site
+        run: |
+          rsync -az --delete \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.transcription/' \
+            --exclude='.dns-backup/' \
+            --exclude='cgi-bin/' \
+            -e 'ssh -p 2222' \
+            ./ deploy@REDACTED.HOST:/home/REDACTED/bhakti.eeshan.xyz/
