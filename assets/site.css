@@ -1,10 +1,10 @@
 :root {
-  --paper: #fbf7ed;
-  --ink: #2a1c1a;
-  --muted: #75635c;
-  --line: #dfd2c2;
-  --red: #8a2924;
-  --red-dark: #661d1c;
+  --paper: #6b0e16;
+  --ink: #f4ead0;
+  --muted: rgba(244, 234, 208, 0.68);
+  --line: rgba(244, 234, 208, 0.20);
+  --red: #f4ead0;
+  --red-dark: #fff5df;
 }
 
 * { box-sizing: border-box; }
@@ -18,9 +18,43 @@ body {
 }
 
 main {
-  width: min(100% - 40px, 820px);
+  width: min(100% - 48px, 940px);
   margin: 0 auto;
-  padding: clamp(44px, 9vw, 104px) 0;
+  padding: clamp(72px, 12vw, 150px) 0;
+}
+
+.library-note {
+  color: var(--muted);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  margin: 0 10px 22px;
+}
+
+.tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 10px 30px;
+}
+
+.tag-filter {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: 500 11px/1 Inter, sans-serif;
+  padding: 7px 10px;
+}
+
+.tag-filter[aria-pressed="true"],
+.tag-filter:hover,
+.tag-filter:focus-visible {
+  background: rgba(244, 234, 208, 0.12);
+  border-color: rgba(244, 234, 208, 0.52);
+  color: var(--ink);
+  outline: none;
 }
 
 .song-list { border-top: 1px solid var(--line); }
@@ -28,11 +62,11 @@ main {
 .song-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 24px;
+  gap: 32px;
   align-items: center;
   border-bottom: 1px solid var(--line);
   color: inherit;
-  padding: 22px 4px;
+  padding: 28px 10px;
   text-decoration: none;
   transition: color 160ms ease, background-color 160ms ease, padding 160ms ease;
 }
@@ -40,7 +74,7 @@ main {
 .song-card:hover,
 .song-card:focus-visible {
   color: var(--red-dark);
-  background: #f5eddf;
+  background: rgba(244, 234, 208, 0.075);
   outline: none;
   padding-right: 14px;
   padding-left: 14px;
@@ -53,15 +87,16 @@ main {
 }
 
 .song-title {
-  font: 600 clamp(24px, 3.2vw, 31px) / 1.04 "Cormorant Garamond", Georgia, serif;
-  letter-spacing: -0.018em;
+  font: 400 clamp(30px, 3.5vw, 42px) / 1.04 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -0.012em;
 }
 
 .credit {
   color: var(--muted);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.025em;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.015em;
   line-height: 1.35;
 }
 
@@ -76,24 +111,33 @@ main {
 .tags span {
   border: 1px solid var(--line);
   border-radius: 999px;
-  color: var(--red);
+  color: var(--ink);
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.025em;
   line-height: 1;
-  padding: 6px 8px;
+  padding: 6px 9px;
   white-space: nowrap;
 }
 
 @media (max-width: 600px) {
   main {
-    width: min(100% - 32px, 820px);
-    padding-top: 32px;
+    width: min(100% - 32px, 940px);
+    padding-top: 52px;
+  }
+
+  .library-note {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+
+  .tag-filters {
+    margin-bottom: 24px;
   }
 
   .song-card {
     display: block;
-    padding: 20px 2px;
+    padding: 24px 2px;
   }
 
   .song-card:hover,
@@ -102,7 +146,7 @@ main {
     padding-left: 10px;
   }
 
-  .song-title { font-size: 25px; }
+  .song-title { font-size: 31px; }
 
   .tags {
     justify-content: flex-start;
