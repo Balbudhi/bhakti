@@ -31,35 +31,45 @@ main {
   margin: 0 10px 22px;
 }
 
+.song-search {
+  display: block;
+  margin: 0 10px 14px;
+}
+
+.song-search input {
+  width: min(100%, 360px);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(244, 234, 208, 0.08);
+  color: var(--ink);
+  font: 14px/1 Inter, sans-serif;
+  outline: none;
+  padding: 11px 14px;
+}
+
+.song-search input::placeholder { color: var(--muted); }
+.song-search input:focus { border-color: rgba(244, 234, 208, 0.65); }
+
 .tag-filters {
-  display: grid;
-  gap: 10px;
-  margin: 0 10px 30px;
-}
-
-.filter-group {
-  align-items: center;
   display: flex;
-  flex-wrap: wrap;
   gap: 7px;
+  margin: 0 10px 30px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
 }
 
-.filter-group > span {
-  color: var(--muted);
-  font: 500 10px/1 Inter, sans-serif;
-  letter-spacing: 0.08em;
-  margin-right: 3px;
-  text-transform: uppercase;
-}
+.tag-filters::-webkit-scrollbar { display: none; }
 
 .tag-filter {
+  flex: 0 0 auto;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: transparent;
   color: var(--muted);
   cursor: pointer;
   font: 500 11px/1 Inter, sans-serif;
-  padding: 7px 10px;
+  padding: 8px 11px;
 }
 
 .tag-filter[aria-pressed="true"],
@@ -69,6 +79,16 @@ main {
   border-color: rgba(244, 234, 208, 0.52);
   color: var(--ink);
   outline: none;
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .song-list { border-top: 1px solid var(--line); }
@@ -148,9 +168,7 @@ main {
     margin-bottom: 18px;
   }
 
-  .tag-filters {
-    margin-bottom: 24px;
-  }
+  .tag-filters { margin-bottom: 24px; }
 
   .song-card {
     display: block;

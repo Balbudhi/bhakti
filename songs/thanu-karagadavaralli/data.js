@@ -102,21 +102,21 @@ window.SONG_LINES = {
     ]
   },
   ennalli: {
-    roman: "Ennalli ēnuṇṭendu",
-    english: "{0:In me}, {1:what} is {2:there}?…",
+    roman: "Ennalli ēnu uṇṭendu",
+    english: "{1:What} is {2:there} {0:in me}…",
     words: [
       { roman: "Ennalli", gloss: "in me" },
       { roman: "ēnu", gloss: "what" },
-      { roman: "ṇṭendu", gloss: "there is, saying that" }
+      { roman: "uṇṭendu", gloss: "there is, saying that" }
     ]
   },
   karasthala: {
     roman: "Karasthalavanimbugoṇḍe",
-    english: "{1,2:Having taken delight} in {0:the palm of the hand}…",
+    english: "{1,2:Having come and dwelt} in {0:my cupped hands}…",
     words: [
-      { roman: "Karasthala", gloss: "palm of the hand; the hand as the place of worship" },
-      { roman: "vanimbu", gloss: "having found sweetness or delight in it" },
-      { roman: "goṇḍe", gloss: "having taken, having found" }
+      { roman: "Karasthala", gloss: "cupped hands, palm of the hand" },
+      { roman: "vanimbu", gloss: "having come to dwell in" },
+      { roman: "goṇḍe", gloss: "having come, having taken up" }
     ]
   },
   chennamalli: {
