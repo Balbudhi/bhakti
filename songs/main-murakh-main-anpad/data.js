@@ -1,6 +1,11 @@
 window.SONG_META = {
   "title": "Main Mūrakh Main Anpaṛh Bālak",
   "credit": "Satpathy Baba",
+  "searchAliases": [
+    "Main Murakh Main Anpad Balak",
+    "Satpathy Baba",
+    "Shirdi Sai"
+  ],
   "languages": [
     "Hindi"
   ],
@@ -8,7 +13,8 @@ window.SONG_META = {
     "Śirḍī Sāī"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "source-script-migration-required"
+  "sourceStatus": "source-script-migration-required",
+  "timingStatus": "start-only-reviewed"
 };
 
 window.SONG_LINES = {
@@ -830,163 +836,163 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 25.1,
-    "end": 38.8
+    "start": 25.06,
+    "end": 37.6
   },
   {
-    "start": 38.8,
-    "end": 44.6
+    "start": 37.6,
+    "end": 43.85
   },
   {
-    "start": 44.6,
-    "end": 56.8
+    "start": 43.85,
+    "end": 56.45
   },
   {
-    "start": 56.8,
-    "end": 68.8
+    "start": 56.45,
+    "end": 68.0
   },
   {
-    "start": 68.8,
-    "end": 75
+    "start": 68.0,
+    "end": 74.2
   },
   {
-    "start": 75,
-    "end": 81
+    "start": 74.2,
+    "end": 105.7
   },
   {
-    "start": 105.6,
-    "end": 117.8
+    "start": 105.7,
+    "end": 117.5
   },
   {
-    "start": 117.8,
-    "end": 130
+    "start": 117.5,
+    "end": 130.0
   },
   {
-    "start": 130,
-    "end": 142.3
+    "start": 130.0,
+    "end": 142.2
   },
   {
-    "start": 142.3,
-    "end": 154.5
+    "start": 142.2,
+    "end": 154.3
   },
   {
-    "start": 154.5,
-    "end": 166.8
+    "start": 154.3,
+    "end": 166.5
   },
   {
-    "start": 166.8,
-    "end": 173
+    "start": 166.5,
+    "end": 172.7
   },
   {
-    "start": 173,
-    "end": 185.3
+    "start": 172.7,
+    "end": 184.3
   },
   {
-    "start": 185.3,
-    "end": 197.4
+    "start": 184.3,
+    "end": 196.3
   },
   {
-    "start": 197.4,
-    "end": 203.5
+    "start": 196.3,
+    "end": 203.2
   },
   {
-    "start": 203.5,
-    "end": 209.5
+    "start": 203.2,
+    "end": 234.2
   },
   {
-    "start": 234.6,
-    "end": 246.9
+    "start": 234.2,
+    "end": 246.65
   },
   {
-    "start": 246.9,
-    "end": 259.1
+    "start": 246.65,
+    "end": 258.87
   },
   {
-    "start": 259.1,
-    "end": 271.4
+    "start": 258.87,
+    "end": 271.08
   },
   {
-    "start": 271.4,
-    "end": 283.6
+    "start": 271.08,
+    "end": 283.45
   },
   {
-    "start": 283.6,
-    "end": 295.9
+    "start": 283.45,
+    "end": 295.8
   },
   {
-    "start": 295.9,
-    "end": 302.1
+    "start": 295.8,
+    "end": 302.2
   },
   {
-    "start": 302.1,
-    "end": 314.4
+    "start": 302.2,
+    "end": 314.3
   },
   {
-    "start": 314.4,
-    "end": 326.5
+    "start": 314.3,
+    "end": 326.2
   },
   {
-    "start": 326.5,
-    "end": 332.6
+    "start": 326.2,
+    "end": 332.3
   },
   {
-    "start": 332.6,
-    "end": 338.5
+    "start": 332.3,
+    "end": 363.8
   },
   {
-    "start": 363.7,
-    "end": 376
+    "start": 363.8,
+    "end": 376.1
   },
   {
-    "start": 376,
-    "end": 388.2
+    "start": 376.1,
+    "end": 388.5
   },
   {
-    "start": 388.2,
-    "end": 400.5
+    "start": 388.5,
+    "end": 400.8
   },
   {
-    "start": 400.5,
-    "end": 412.7
+    "start": 400.8,
+    "end": 413.1
   },
   {
-    "start": 412.7,
-    "end": 425
+    "start": 413.1,
+    "end": 425.32
   },
   {
-    "start": 425,
-    "end": 431.2
+    "start": 425.32,
+    "end": 431.22
   },
   {
-    "start": 431.2,
-    "end": 443.5
+    "start": 431.22,
+    "end": 443.48
   },
   {
-    "start": 443.5,
-    "end": 455.7
+    "start": 443.48,
+    "end": 455.62
   },
   {
-    "start": 455.7,
-    "end": 461.8
+    "start": 455.62,
+    "end": 461.88
   },
   {
-    "start": 461.8,
-    "end": 468
+    "start": 461.88,
+    "end": 468.08
   },
   {
-    "start": 468,
-    "end": 480.2
+    "start": 468.08,
+    "end": 480.28
   },
   {
-    "start": 480.2,
-    "end": 492.4
+    "start": 480.28,
+    "end": 492.26
   },
   {
-    "start": 492.4,
-    "end": 498.5
+    "start": 492.26,
+    "end": 498.92
   },
   {
-    "start": 498.5,
-    "end": 535
+    "start": 498.92,
+    "end": 544.043537
   }
 ];

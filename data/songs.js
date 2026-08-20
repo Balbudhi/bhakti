@@ -1,92 +1,234 @@
 window.BHAKTI_SONGS = [
   {
-    slug: "duniya-de-dukhan",
-    title: "Duniyā De Dukhāṅ Menū Baṛā Hī Satāyā Mā",
-    subtitle: "Jai Mātā Dī",
-    credit: "Suresh Ji · Shri Mata Vaishno Devi Bhawan",
-    languageTags: ["Punjabi"],
-    subjectTags: ["Śakti"]
+    "slug": "duniya-de-dukhan",
+    "title": "Duniyā De Dukhāṅ Menū Baṛā Hī Satāyā Mā",
+    "subtitle": "Jai Mātā Dī",
+    "credit": "Suresh Ji · Shri Mata Vaishno Devi Bhawan",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Duniya De Dukhan Menu Bada Hi Sataya Maa",
+      "Suresh Ji",
+      "Shri Mata Vaishno Devi Bhawan"
+    ]
   },
   {
-    slug: "jhoothe-jag-ne",
-    title: "Jhūṭhe Jag Ne Liyā Mainū Lūṭ Mā",
-    subtitle: "Jai Mātā Dī",
-    credit: "Maninder Ji · Shri Mata Vaishno Devi Bhawan",
-    languageTags: ["Punjabi"],
-    subjectTags: ["Śakti"]
+    "slug": "jhoothe-jag-ne",
+    "title": "Jhūṭhe Jag Ne Liyā Mainū Lūṭ Mā",
+    "subtitle": "Jai Mātā Dī",
+    "credit": "Maninder Ji · Shri Mata Vaishno Devi Bhawan",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Jhoothe Jag Ne Liya Mainu Loot Maa",
+      "Maninder Ji",
+      "Shri Mata Vaishno Devi Bhawan"
+    ]
   },
   {
-    slug: "koi-hor-nahi",
-    title: "Koī Hor Nahī Hai Merā",
-    subtitle: "Jai Mātā Dī",
-    credit: "Aman Ji · Shri Mata Vaishno Devi Bhawan",
-    languageTags: ["Punjabi"],
-    subjectTags: ["Śakti"]
+    "slug": "koi-hor-nahi",
+    "title": "Koī Hor Nahī Hai Merā",
+    "subtitle": "Jai Mātā Dī",
+    "credit": "Aman Ji · Shri Mata Vaishno Devi Bhawan",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Koi Hor Nahi Hai Mera",
+      "Aman Ji",
+      "Shri Mata Vaishno Devi Bhawan"
+    ]
   },
   {
-    slug: "yeh-garv-bhara-mastak",
-    title: "Yeh Garv Bharā Mastak Merā",
-    subtitle: "Prārthanā",
-    credit: "Hari Om Sharan",
-    languageTags: ["Hindi"],
-    subjectTags: []
+    "slug": "yeh-garv-bhara-mastak",
+    "title": "Yeh Garv Bharā Mastak Merā",
+    "subtitle": "Prārthanā",
+    "credit": "Hari Om Sharan",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Hari Om Sharan"
+    ]
   },
   {
-    slug: "aisa-pyar-baha-de-maiya",
-    title: "Aisā Pyār Bahā De Maiyā",
-    subtitle: "Durgā Vandana",
-    credit: "Hari Om Sharan",
-    languageTags: ["Hindi", "Sanskrit"],
-    subjectTags: ["Śakti", "Durgā"]
+    "slug": "aisa-pyar-baha-de-maiya",
+    "title": "Aisā Pyār Bahā De Maiyā",
+    "subtitle": "Durgā Vandanā",
+    "credit": "Hari Om Sharan",
+    "languageTags": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Durgā"
+    ],
+    "searchAliases": [
+      "Aisa Pyar Baha De Maiya",
+      "Durga Vandana",
+      "Hari Om Sharan"
+    ]
   },
   {
-    slug: "thanu-karagadavaralli",
-    title: "Tanu Karagadavaralli Puṣpavanolle",
-    subtitle: "A Vachana by Akkamahādevī",
-    credit: "Akkamahādevī · Sangeeta Katti Kulkarni",
-    languageTags: ["Kannada"],
-    subjectTags: ["Śiva"]
+    "slug": "thanu-karagadavaralli",
+    "title": "Tanu Karagadavaralli Puṣpavanolle",
+    "subtitle": "A Vachana by Akkamahādevī",
+    "credit": "Akkamahādevī · Sangeeta Katti Kulkarni",
+    "languageTags": [
+      "Kannada"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Thanu Karagadavaralli Pushpavanolleyayya Neenu",
+      "Akkamahadevi",
+      "Sangeeta Katti Kulkarni"
+    ]
   },
   {
-    slug: "ishwar-se-kuch-mangna-ho-to",
-    title: "Īśvar Se Kuch Māṅgnā Ho To",
-    credit: "Satpathy Baba",
-    languageTags: ["Hindi"],
-    subjectTags: ["Śirḍī Sāī"]
+    "slug": "ishwar-se-kuch-mangna-ho-to",
+    "title": "Īśvar Se Kuch Māṅgnā Ho To",
+    "credit": "Satpathy Baba",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Ishwar Se Kuch Mangna Ho To",
+      "Satpathy Baba",
+      "Shirdi Sai"
+    ]
   },
   {
-    slug: "baba-tum-antaryami",
-    title: "Bābā Tum Antaryāmī",
-    credit: "Satpathy Baba",
-    languageTags: ["Hindi"],
-    subjectTags: ["Śirḍī Sāī"]
+    "slug": "baba-tum-antaryami",
+    "title": "Bābā Tum Antaryāmī",
+    "credit": "Satpathy Baba",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Baba Tum Antaryami",
+      "Satpathy Baba",
+      "Shirdi Sai"
+    ]
   },
   {
-    slug: "tumhi-mere-lagan-lagai-re",
-    title: "Tumhī Mere Lagan Lagāī Re",
-    credit: "Satpathy Baba",
-    languageTags: ["Hindi"],
-    subjectTags: ["Śirḍī Sāī"]
+    "slug": "tumhi-mere-lagan-lagai-re",
+    "title": "Tumhī More Lagan Lagāī Re Fakīrwā",
+    "credit": "Satpathy Baba",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Tumhi Mere Lagan Lagai Re",
+      "Satpathy Baba",
+      "Shirdi Sai"
+    ]
   },
   {
-    slug: "main-murakh-main-anpad",
-    title: "Main Mūrakh Main Anpaṛh Bālak",
-    credit: "Satpathy Baba",
-    languageTags: ["Hindi"],
-    subjectTags: ["Śirḍī Sāī"]
+    "slug": "main-murakh-main-anpad",
+    "title": "Main Mūrakh Main Anpaṛh Bālak",
+    "credit": "Satpathy Baba",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Main Murakh Main Anpad Balak",
+      "Satpathy Baba",
+      "Shirdi Sai"
+    ]
   },
   {
-    slug: "jab-dil-udaas-ho-to",
-    title: "Jab Dil Udās Ho To",
-    credit: "Satpathy Baba",
-    languageTags: ["Hindi"],
-    subjectTags: ["Śirḍī Sāī"]
+    "slug": "jab-dil-udaas-ho-to",
+    "title": "Jab Dil Udās Ho To",
+    "credit": "Satpathy Baba",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Jab Dil Udaas Ho To",
+      "Satpathy Baba",
+      "Shirdi Sai"
+    ]
   },
   {
-    slug: "zara-to-itana-bata-do-sai",
-    title: "Zarā To Itnā Batā Do Sāī",
-    credit: "Satpathy Baba",
-    languageTags: ["Hindi"],
-    subjectTags: ["Śirḍī Sāī"]
+    "slug": "zara-to-itana-bata-do-sai",
+    "title": "Zarā To Itnā Batā Do Sāī",
+    "credit": "Satpathy Baba",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Zara To Itana Bata Do Sai",
+      "Satpathy Baba",
+      "Shirdi Sai"
+    ]
+  },
+  {
+    "slug": "akashi-zep-ghe-re-pakhara",
+    "title": "Ākāśī Jhepa Ghe Re Pākharā",
+    "credit": "Jagdish Khebudkar · Sudhir Phadke",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Akashi Jhepa Ghe Re Pakhara",
+      "Akasi Jhepa Ghe Re Pakhara",
+      "Akashi Zep Ghe Re Pakhara With Lyrics | आकाशी झेप घे रे पाखरा | Sudhir Phadke | Aaram Haram Aahe"
+    ],
+    "subtitle": "Aaram Haram Aahe"
+  },
+  {
+    "slug": "morning-aarti",
+    "title": "Morning Āratī",
+    "credit": "Traditional · Pramod Medhi",
+    "languageTags": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Morning Arati",
+      "Kakad Arati",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Morning Kakad Aarti",
+      "Pramod Medi"
+    ],
+    "subtitle": "Kākaḍ Āratī"
   }
 ];
