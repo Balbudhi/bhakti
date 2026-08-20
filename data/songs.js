@@ -230,5 +230,173 @@ window.BHAKTI_SONGS = [
       "Pramod Medi"
     ],
     "subtitle": "Kākaḍ Āratī"
+  },
+  {
+    "slug": "ye-tanu-mundna-be-mundna",
+    "title": "Ye Tanu Muṇḍanā Be Muṇḍanā",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Ye Tanu Mundana Be Mundana",
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Kabīr"
+  },
+  {
+    "slug": "kaya-nahin-teri-nahin-teri",
+    "title": "Kāyā Nahīṃ Terī Nahīṃ Terī",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Kaya Nahim Teri Nahim Teri",
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Kabīr"
+  },
+  {
+    "slug": "sun-sun-sadho-jee",
+    "title": "Sun Sun Sādho Jī",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Sun Sun Sadho Ji",
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Kabīr"
+  },
+  {
+    "slug": "beet-gaye-din-bhajan-bina-re",
+    "title": "Bīt Gaye Din Bhajan Binā Re",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Bit Gaye Din Bhajan Bina Re",
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Kabīr"
+  },
+  {
+    "slug": "sangat-santan-ki-karle",
+    "title": "Saṅgat Santan Kī Kar Le",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Sangat Santan Ki Kar Le",
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Kabīr"
+  },
+  {
+    "slug": "naam-japan-kyon-chhod-diya",
+    "title": "Nām Japan Kyoṃ Choṛ Diyā",
+    "credit": "Khalas · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Nam Japan Kyom Chor Diya",
+      "Nirguna",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Khalas"
+  },
+  {
+    "slug": "sab-paise-ke-bhai",
+    "title": "Sab Paise Ke Bhāī",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Sab Paise KeBhai",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Kabīr"
+  },
+  {
+    "slug": "darsan-dena-pran-piyare",
+    "title": "Darśan Denā Prāṇ Piyāre",
+    "credit": "Rasik Khushal · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Darshan Dena Pran Piyare",
+      "Nirguna",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Rasik Khushal"
+  },
+  {
+    "slug": "mat-kar-moh-too-hari-bhajan-ko-maan-re",
+    "title": "Mat Kar Moh Tū Hari Bhajan Ko Mān Re",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Mat Kar Moh Tu Hari Bhajan Ko Man Re",
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Mat Kar Moh Tu Hari Bhajan Ko Maan Re",
+      "Sun Bhai Sadho"
+    ],
+    "subtitle": "Kabīr"
   }
 ];
