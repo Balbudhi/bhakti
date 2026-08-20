@@ -13,10 +13,19 @@ whether the user supplied a translation.
   metadata or draft a low-risk first pass, but it never alone determines a
   public lyric, translation, sequence, or timestamp.
 - Run one full-song 3.6 Flash transcription, then one full-song 3.6 Flash
-  lyric-aware alignment pass. The second pass receives the entire first
-  transcript and must correct omissions, order, repetitions, and first-syllable
-  timings. Run extra calls only for an explicit reported uncertainty, not by
-  default. Record model IDs and reported API cost in the ignored review packet.
+  transcript/order audit. **Do not use a whole-recording response for precise
+  timestamps.** One lyric-aware timing stage receives the audited catalogue in
+  short contextual windows; each event records its heard opening words and
+  must reconstruct the audited performance order exactly. This avoids accepting
+  an approximate time in the middle of a long displayed line. Run extra calls
+  only for an explicit failed gate, not by default. Record model IDs and
+  reported API cost in the ignored review packet.
+
+As checked on 2026-08-20, OpenRouter lists 3.6 Flash at $0.75/M text or audio
+input and $3.75/M output. The lower-cost `google/gemini-3.1-flash-lite` lists
+$0.25/M text input, $0.50/M audio input, and $1.50/M output. Use Lite only for
+non-authoritative metadata/preflight work; it must not become a cheap way to
+avoid the transcript, first-syllable timing, or gloss-derived translation gate.
 
 ## Required song data
 
@@ -56,10 +65,10 @@ location boilerplate on a public reader.
 
 1. Gemini first transcribes source-language audio and identifies language,
    script, and all audible lyric instances.
-2. Gemini independently produces a literal English line translation, preserves
-   poetic imagery, and creates word-level glosses. It must explicitly mark any
-   uncertainty; it may not invent a connective, theological interpretation,
-   or omitted line.
+2. Gemini first creates a complete word-level gloss map and grammar note for
+   each verified line. Only then does it produce literal English from that map.
+   It must explicitly mark uncertainty; it may not invent a connective,
+   theological interpretation, looser synonym, or omitted line.
 3. When a user supplies a translation, it is a comparison witness—not an
    automatic baseline and not disposable raw material. Gemini compares both
    versions, records every material difference, and gives a reason before a
@@ -70,7 +79,26 @@ location boilerplate on a public reader.
 
 ## Automated intake
 
-Run from this repository:
+Run from this repository. This is the production command for both single songs
+and batches; it runs independent songs concurrently while serializing the final
+shared catalogue write:
+
+```sh
+python3 scripts/bhakti_pipeline.py --workers 3 --publish \
+  --song song-slug='https://www.youtube.com/watch?v=…'
+
+# Or: {"songs":[{"slug":"…","source":"/absolute/audio.m4a", ...}]}
+python3 scripts/bhakti_pipeline.py --workers 3 --publish --batch intake.json
+```
+
+It performs transcript → transcript audit → precise windowed timing → word
+glosses → gloss-derived literal translation → deterministic reader generation.
+It writes review evidence beneath ignored `.transcription/`, and emits no
+reader/catalogue output when a gate fails. It does not commit or push; after
+the normal visual checks, GitHub Actions deploys a path-scoped commit.
+
+The older component commands below are diagnostics for already-existing
+readers, not a replacement for the end-to-end pipeline:
 
 ```sh
 python3 scripts/intake_bhakti_youtube.py '<youtube-url>' songs/<slug> --skip-transcription
