@@ -88,6 +88,19 @@ class PipelineTests(unittest.TestCase):
         rows = [{"id": "line", "word_glosses": [{"roman": "sāṁs", "gloss": "breath"}]}]
         self.assertIn("line lacks a complete semantic frame", pipeline.gloss_contract_errors(lines, rows))
 
+    def test_independent_translation_review_can_block_poetic_choice(self) -> None:
+        lines = [{"id": "line", "source_text": "", "roman": "sāṁs"}]
+        glosses = [{"id": "line", "word_glosses": [{"roman": "sāṁs", "gloss": "breath"}]}]
+        translations = [{"id": "line", "literal_english": "My breath leaves me.",
+                         "segments": [{"text": "My breath leaves me.", "word_indices": [0]}],
+                         "independent_review": {"passes": True, "human_review_recommended": True,
+                                                "agency_preserved": True, "imagery_preserved": True,
+                                                "all_meaning_accounted_for": True,
+                                                "unsupported_additions": [], "material_choice": "agency",
+                                                "reason": "two defensible readings"}}]
+        errors = pipeline.validate_line_contract(lines, glosses, translations)
+        self.assertIn("line independent review requires a human poetic choice", errors)
+
     def test_display_occurrences_compress_only_adjacent_repeats(self) -> None:
         packet = {"verified_lines": [
             {"id": "a", "source_text": "अ", "roman": "A", "kind": "refrain"},
