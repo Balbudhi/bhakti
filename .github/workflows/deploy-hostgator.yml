@@ -1,34 +1,30 @@
-name: Deploy Bhakti to HostGator
+name: Deploy Bhakti to GitHub Pages
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
-  group: hostgator-production
+  group: bhakti-pages
   cancel-in-progress: true
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure SSH
-        env:
-          HOSTGATOR_SSH_KEY: ${{ secrets.HOSTGATOR_SSH_KEY }}
-        run: |
-          install -d -m 700 ~/.ssh
-          printf '%s\n' "$HOSTGATOR_SSH_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -p 2222 108.167.172.200 >> ~/.ssh/known_hosts
-      - name: Publish static site
-        run: |
-          rsync -az --delete \
-            --exclude='.git/' \
-            --exclude='.github/' \
-            --exclude='.transcription/' \
-            --exclude='.dns-backup/' \
-            --exclude='cgi-bin/' \
-            -e 'ssh -p 2222 -o IdentitiesOnly=yes' \
-            ./ iaqm@108.167.172.200:/home4/iaqm/bhakti.eeshan.xyz/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
