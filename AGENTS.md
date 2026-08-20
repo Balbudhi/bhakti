@@ -39,7 +39,8 @@ The pipeline preserves audio-only source input, then performs distinct stages:
    grid for ordinary songs, or one exact timing call per audited long segment,
    with focused retry only for a disagreement;
 4. literal word glosses and grammar notes;
-5. literal English derived from those glosses only; and
+5. semantic frames plus English derived from those glosses only, with agency,
+   imagery, completeness, alternatives, and unsupported additions checked; and
 6. deterministic `data.js`, reader HTML, and catalogue generation.
 
 For YouTube, preserve the highest-quality original audio stream as the first
@@ -58,6 +59,10 @@ reordered, duplicated, non-increasing, out-of-duration, or explicitly uncertain
 first-syllable starts, source/IAST omissions, non-mappable glosses, or uncertain literal
 translations. It never fixes those errors by guessing. Do not replace this
 with manual song-page construction or separate generic audio passes.
+It also blocks a translation when materially different poetic choices remain
+or the fidelity record reports changed agency, lost imagery, omitted meaning,
+or unsupported additions. A supplied human translation is copied exactly and
+any suspected conflict is queued for review rather than silently rewritten.
 
 For an existing reader whose wording needs review but whose audio must not be
 rerun, use `python3 scripts/audit_translation_style.py all --workers 2`. It

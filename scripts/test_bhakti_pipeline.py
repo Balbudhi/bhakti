@@ -70,6 +70,24 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("audited transcription has unresolved uncertainties",
                       pipeline.publication_errors(audited, timing, glosses, translations))
 
+    def test_publication_gate_rejects_translation_fidelity_loss(self) -> None:
+        lines = [{"id": "line", "source_text": "साँस", "roman": "sāṁs"}]
+        audited = {"packet": {"verified_lines": lines, "uncertainties": []}}
+        timing = {"sequence": [], "validation_errors": []}
+        glosses = {"packet": {"glosses": [{"id": "line", "word_glosses": [
+            {"roman": "sāṁs", "gloss": "breath"}], "grammar_note": "", "uncertainty": ""}]}}
+        translations = {"packet": {"translations": [{"id": "line", "literal_english": "I die.",
+            "segments": [{"text": "I die.", "word_indices": [0]}],
+            "fidelity": {"agency_and_image_preserved": False, "all_meaning_accounted_for": True,
+                         "unsupported_additions": [], "notes": "agency changed"}, "uncertainty": ""}]}}
+        errors = pipeline.publication_errors(audited, timing, glosses, translations)
+        self.assertIn("line translation does not preserve agency or imagery", errors)
+
+    def test_semantic_frame_is_required_by_new_gloss_contract(self) -> None:
+        lines = [{"id": "line", "roman": "sāṁs", "source_text": "साँस"}]
+        rows = [{"id": "line", "word_glosses": [{"roman": "sāṁs", "gloss": "breath"}]}]
+        self.assertIn("line lacks a complete semantic frame", pipeline.gloss_contract_errors(lines, rows))
+
     def test_display_occurrences_compress_only_adjacent_repeats(self) -> None:
         packet = {"verified_lines": [
             {"id": "a", "source_text": "अ", "roman": "A", "kind": "refrain"},

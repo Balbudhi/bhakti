@@ -99,20 +99,37 @@ rendered as competing credits.
 1. Gemini first transcribes source-language audio and identifies language,
    script, and all audible lyric instances.
 2. Gemini first creates a complete word-level gloss map and grammar note for
-   each verified line. Only then does it produce literal English from that map.
-   It must explicitly mark uncertainty; it may not invent a connective,
-   theological interpretation, looser synonym, or omitted line.
+   each verified line. The same record must identify the grammatical agent,
+   action/state, patient/complement, modifiers, negation/modality, literal
+   image and agency, idiom, and cross-line relation. Only then does it produce
+   English from that semantic frame. It must explicitly mark uncertainty; it
+   may not invent a connective, theological interpretation, substitute
+   metaphor, looser synonym, or omitted line.
    The English must be intelligible, but conventional English is not the final
    authority. Preserve supported literal strangeness, repetition,
    personification, agency, ambiguity, and concrete ritual images. A human
    translation is not rewritten merely because a smoother idiom exists.
 3. When a user supplies a translation, it is the editorial baseline—not
-   disposable raw material. Gemini compares it with the glosses, records every
-   material difference, and may change it only when specific lexical or
-   grammatical evidence demonstrates an error. Style preference is not enough.
+   disposable raw material. The production translation stage copies it exactly.
+   If lexical evidence appears to conflict, the line is flagged for human review
+   without silently changing the approved wording.
 4. The final reader may publish only the reviewed result. The ignored review
    packet preserves source metadata, raw passes, reconciliation findings,
    suggested trims, translation comparison, and model/cost record.
+5. Without a human baseline, Gemini exposes materially different renderings
+   when they change agency, metaphor, ambiguity, or poetic force. Such a line
+   blocks publication until reviewed; trivial synonyms do not. The fidelity
+   record must affirm that agency and imagery are preserved, all meaning is
+   accounted for, and there are no unsupported additions.
+
+Run the hidden difficult-line benchmark after changing either prompt:
+
+```sh
+python3 scripts/benchmark_translation_prompt.py
+```
+
+The automatic pass never receives the expected translations. A separate
+locked-baseline pass verifies that approved human wording is copied exactly.
 
 For a text-only editorial audit of existing readers, run:
 
