@@ -115,7 +115,7 @@ window.SONG_LINES = {
   },
   "arivu": {
     "roman": "Arivu kaṇtereyadavaralli āratiyanolleyayyā nīnu",
-    "english": "Among {2:those whose} {0:understanding's} {1:eye has not opened}, {5:You} will not accept {3:lamp-waving}.",
+    "english": "{2:Among those whose}{1: eye}{0: of understanding}{1: has not opened,}{5: You}{4: will not accept}{3: the waving of lamps.}",
     "words": [
       {
         "roman": "Arivu",

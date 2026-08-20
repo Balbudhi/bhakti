@@ -48,7 +48,7 @@ window.SONG_LINES = {
   "refrain_2": {
     "source": "लगी ये कैसी लगा रहे हो",
     "roman": "Lagī ye kaisī lagā rahe ho",
-    "english": "What {2:kind of} {0:longing} is this that {3:You are causing to take hold}?",
+    "english": "{2:What kind of}{0: longing}{3: are You stirring}{1: in me?}",
     "words": [
       {
         "roman": "Lagī",
@@ -171,7 +171,7 @@ window.SONG_LINES = {
   "verse_1_2": {
     "source": "प्रेम तुम ही हो तुम ही हो प्रीतम",
     "roman": "Prem tum hī ho tum hī ho prītam",
-    "english": "{0:Love} is {1:You alone}; the {3:Beloved} is {2:You alone}.",
+    "english": "{1:You alone are }{0:love; }{2:You alone are }{3:the Beloved.}",
     "words": [
       {
         "roman": "Prem",
@@ -217,7 +217,7 @@ window.SONG_LINES = {
   "verse_1_4": {
     "source": "तुम्ही को फिर क्यों तुम्ही तो मन में समा रहे हो",
     "roman": "Tumhī ko phir kyoṃ tumhī to man meṃ samā rahe ho",
-    "english": "Why then [does it call] {0:only to You}, when {3,4:You indeed} {6:pervade} the {5:heart}?",
+    "english": "{2:Why,}{1: then,} do I call {0:only to You,} when {3,4:You}{6: dwell within}{5: my heart?}",
     "words": [
       {
         "roman": "Tumhī ko",
@@ -252,7 +252,7 @@ window.SONG_LINES = {
   "verse_2_1": {
     "source": "प्राण तुम ही हो तुम हो स्पंदन",
     "roman": "Prāṇ tum hī ho tum ho spandan",
-    "english": "{0:Life-breath} is {1:You alone}; {2,3:You are} its {4:pulsation}.",
+    "english": "{1:You alone are }{0:the life-breath; }{2:You }{3:are }{4:its pulsation.}",
     "words": [
       {
         "roman": "Prāṇ",
@@ -279,7 +279,7 @@ window.SONG_LINES = {
   "verse_2_2": {
     "source": "नैन तुम ही हो तुम ही हो दर्शन",
     "roman": "Nain tum hī ho tum hī ho darśan",
-    "english": "The {0:eyes} are {1:You alone}; {3:sacred vision} is {2:You alone}.",
+    "english": "{1:You alone are }{0:the eyes; }{2:You alone are }{3:the sacred vision.}",
     "words": [
       {
         "roman": "Nain",

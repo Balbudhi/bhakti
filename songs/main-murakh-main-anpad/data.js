@@ -100,7 +100,7 @@ window.SONG_LINES = {
   },
   "refrain_d": {
     "roman": "Tumko kaise citt meṅ dharūṅ",
-    "english": "How shall I {4:hold You} in my {2:heart-mind}?",
+    "english": "{1:How}{4: shall I hold}{0: You}{3: in}{2: my heart?}",
     "words": [
       {
         "roman": "Tumko",
@@ -356,7 +356,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Māṭī kā putlā hai mānav",
-    "english": "A {4:human being} is an {2:effigy} of {0:clay}. ",
+    "english": "{4:A human being}{3: is}{2: a puppet}{0,1: of clay.}",
     "words": [
       {
         "roman": "Māṭī",
@@ -556,7 +556,7 @@ window.SONG_LINES = {
   },
   "v3d": {
     "roman": "Man kā tarpaṇ de do mujhe",
-    "english": "Grant me the {2:fulfilment} of the {0:heart-mind}. ",
+    "english": "{3,4:Grant}{5: me}{2: the fulfilment}{0,1: of my heart.}",
     "words": [
       {
         "roman": "Man",
