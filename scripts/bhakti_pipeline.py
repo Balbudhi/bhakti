@@ -1544,7 +1544,7 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
         text = str(part.get("text", ""))
         if previous_text.rstrip().endswith(("-", "—", "…", "/", "(", '"', "“", "‘")):
             text = text.lstrip()
-        if (rendered and text and not text[0].isspace() and text[0] not in ",.;:!?)]}"
+        if (rendered and text and not text[0].isspace() and text[0] not in ",.;:!?…’')]}"
                 and not previous_text.endswith(" ")
                 and not previous_text.rstrip().endswith(("-", "—", "…", "/", "(", '"', "“", "‘"))):
             text = " " + text
