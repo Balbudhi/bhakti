@@ -377,13 +377,13 @@ function renderRomanWithSpans(roman, words) {
   return html;
 }
 
-function renderLine(line, repeats, instanceId) {
+function renderLine(line, repeats, instanceId, defaultSourceLanguage) {
   const repBadge = repeats && repeats > 1
     ? `<span class="rep" aria-label="repeated ${repeats} times">×${repeats}</span>`
     : "";
   return `
     <article class="line" id="${instanceId}">
-      ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || "")}">${escapeHtml(line.source)}</div>` : ""}
+      ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${escapeHtml(line.source)}</div>` : ""}
       <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}</div>
       <div class="line-english">${renderEnglishWithSpans(line.english)}</div>
     </article>
@@ -396,10 +396,12 @@ function render() {
   let html = "";
   const seq = window.SONG_SEQUENCE || SEQUENCE;
   const lines = window.SONG_LINES || LINES;
+  const language = (window.SONG_META?.languages || [])[0];
+  const defaultSourceLanguage = { Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn" }[language] || "";
   seq.forEach((entry, idx) => {
     const line = lines[entry.ref];
     if (!line) return;
-    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`);
+    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`, defaultSourceLanguage);
   });
   root.innerHTML = html;
   wireInteractions(root);
