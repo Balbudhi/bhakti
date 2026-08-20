@@ -1,12 +1,13 @@
 window.SONG_META = {
   "title": "Morning Āratī",
   "subtitle": "Kākaḍ Āratī",
-  "credit": "Traditional · Pramod Medhi",
+  "credit": "Pramod Medhi",
   "pageCredit": "Pramod Medhi",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Pramod Medhi",
   "composer": "",
   "languages": [
+    "Marathi",
     "Hindi",
     "Sanskrit"
   ],

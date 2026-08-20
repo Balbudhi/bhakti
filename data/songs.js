@@ -381,8 +381,9 @@ window.BHAKTI_SONGS = [
   {
     "slug": "morning-aarti",
     "title": "Morning Āratī",
-    "credit": "Traditional · Pramod Medhi",
+    "credit": "Pramod Medhi",
     "languageTags": [
+      "Marathi",
       "Hindi",
       "Sanskrit"
     ],
