@@ -32,7 +32,7 @@ window.SONG_LINES = {
   refrain_2: {
     source: "लगी ये कैसी लगा रहे हो",
     roman: "Lagī ye kaisī lagā rahe ho",
-    english: "What {2:kind of} {0:longing} is this that {3:You are awakening}?",
+    english: "What {2:kind of} {0:longing} is this that {3:You are causing to take hold}?",
     words: [
       { roman: "Lagī", gloss: "attachment, longing, a feeling that has taken hold" },
       { roman: "ye", gloss: "this" },
