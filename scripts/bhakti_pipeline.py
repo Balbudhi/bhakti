@@ -1680,8 +1680,8 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260820-5"></script>
-  <script src="../../assets/song.js?v=contract-20260820-5"></script>
+  <script src="data.js?v=contract-20260820-6"></script>
+  <script src="../../assets/song.js?v=contract-20260820-6"></script>
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 </body>
 </html>

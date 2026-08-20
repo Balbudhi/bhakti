@@ -340,7 +340,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "darasan-dena-pran-piyare",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "darasan-dena",
@@ -350,7 +350,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nandalala-mere-nainan-ke-pyare",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "darasan-dena-pran-piyare",
@@ -370,7 +370,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "deenanath",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "deenanath-sakal-gun",
@@ -380,7 +380,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "deenanath",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "deenanath-dayal-dayal-sakal-gun",
@@ -395,12 +395,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nava-kishor-sundar-mukhware",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "darasan-dena-pran-piyare",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "darasan-dena",
@@ -410,17 +410,17 @@ window.SONG_SEQUENCE = [
   {
     "ref": "manmohan-man-rukatan-roko",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "darasan-ki-chit-chaha-hamare",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "darasan-dena-pran-piyare",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "darasan-dena",
@@ -435,37 +435,37 @@ window.SONG_SEQUENCE = [
   {
     "ref": "aasha-alap",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "rasik-khushal-milan-ki-aasha",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "nis-din-sumiran-dhyan-laga-re",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "darasan-dena-pran-piyare",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "nandalala-mere-nainan-ke-pyare",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "darasan-dena-pran-piyare",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "darasan-dena",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   }
 ];
 

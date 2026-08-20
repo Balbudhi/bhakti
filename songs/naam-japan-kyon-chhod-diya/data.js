@@ -674,27 +674,27 @@ window.SONG_SEQUENCE = [
   {
     "ref": "naam-japan-kyon-chhod-diya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "krodh-na-chhoda-jhooth-na-chhoda",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "satya-bachan-kyon-chhod-diya",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "naam-japan-kyon-chhod-diya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jhoothe-jag-mein-dil-lalcha-kar",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jhoothe-jag-mein-rep-dil-lalcha-kar",
@@ -704,12 +704,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "asal-vatan-kyon-chhod-diya",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "naam-japan-kyon-chhod-diya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "kaudi-ko-to-khoob-sambhala",
@@ -729,12 +729,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "laal-ratan-kyon-chhod-diya",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "naam-japan-kyon-chhod-diya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "jin-sumiran-se-ati-sukh-paave",
@@ -754,17 +754,17 @@ window.SONG_SEQUENCE = [
   {
     "ref": "tin-sumiran-kyon-chhod-diya",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "naam-japan-kyon-chhod-diya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "khalas-ik-bhagwan-bharose",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "khalas-ik-bhagwan-rep-bharose",
@@ -774,32 +774,32 @@ window.SONG_SEQUENCE = [
   {
     "ref": "khalas-ik-bhagwan-bharose",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "tan-man-dhan-kyon-na-chhod-diya",
     "section": "verse",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "naam-japan-kyon-chhod-diya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "krodh-na-chhoda-jhooth-na-chhoda",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "satya-bachan-kyon-chhod-diya",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "naam-japan-kyon-chhod-diya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   }
 ];
 

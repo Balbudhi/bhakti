@@ -604,12 +604,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 6
   },
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",
@@ -619,12 +619,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v1-l1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v1-l2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v1-l3a",
@@ -639,52 +639,52 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v1-l4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v2-l1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v2-l2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v2-l3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v2-l4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",
@@ -694,7 +694,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v3-l1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v3-l1-improv",
@@ -719,27 +719,27 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v3-l2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v3-l3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v3-l4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   }
 ];
 
