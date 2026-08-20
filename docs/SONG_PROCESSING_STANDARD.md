@@ -24,8 +24,8 @@ Every `songs/<slug>/data.js` supplies the same globals:
 
 ```js
 window.SONG_META = {
-  title, credit, sourceUrl, sourceTitle, languages, subjectTags,
-  translationStatus, sourceStatus
+  title, singer, lyricist, composer, album, devotionalFocus,
+  languages, subjectTags, translationStatus, sourceStatus
 };
 window.SONG_LINES = { /* line id → source text, literal/poetic English, words */ };
 window.SONG_SEQUENCE = [
@@ -39,6 +39,18 @@ returns after another line is a new sequence entry. `repeats` only represents
 immediately contiguous occurrences. A timing starts at the first audible
 syllable of the displayed lyric instance, not at a chorus, backing voice, or
 later repetition.
+
+### Public metadata rule
+
+Every reader uses one compact credit treatment. When the singer, writer, and
+composer are the same person—or only one role is evidenced—show that person
+once without role labels. Render explicit labels only when sources establish a
+real distinction, for example `Sung by A · Words by B · Music by C`. Unknown
+roles are omitted: absence is never rendered as a claim that another person
+did the work. A devotional salutation appears only when it is specific to the
+song (for example, `Jai Mātā Dī` for a Śakti song), not as generic boilerplate.
+Never render local source paths, review packets, extraction notes, or source
+location boilerplate on a public reader.
 
 ## Translation contract
 

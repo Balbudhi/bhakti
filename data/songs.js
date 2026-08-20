@@ -46,5 +46,47 @@ window.BHAKTI_SONGS = [
     credit: "Sangeeta Katti Kulkarni · Vachana Sangama 1",
     languageTags: ["Kannada"],
     subjectTags: ["Śiva"]
+  },
+  {
+    slug: "ishwar-se-kuch-mangna-ho-to",
+    title: "Īśvar Se Kuch Māṅgnā Ho To",
+    credit: "Satpathy Baba",
+    languageTags: ["Hindi"],
+    subjectTags: ["Śirdi Sāī"]
+  },
+  {
+    slug: "baba-tum-antaryami",
+    title: "Bābā Tum Antaryāmī",
+    credit: "Satpathy Baba",
+    languageTags: ["Hindi"],
+    subjectTags: ["Śirdi Sāī"]
+  },
+  {
+    slug: "tumhi-mere-lagan-lagai-re",
+    title: "Tumhī Mere Lagan Lagāī Re",
+    credit: "Satpathy Baba",
+    languageTags: ["Hindi"],
+    subjectTags: ["Śirdi Sāī"]
+  },
+  {
+    slug: "main-murakh-main-anpad",
+    title: "Main Mūrakh Main Anpaṛh Bālak",
+    credit: "Satpathy Baba",
+    languageTags: ["Hindi"],
+    subjectTags: ["Śirdi Sāī"]
+  },
+  {
+    slug: "jab-dil-udaas-ho-to",
+    title: "Jab Dil Udās Ho To",
+    credit: "Satpathy Baba",
+    languageTags: ["Hindi"],
+    subjectTags: ["Śirdi Sāī"]
+  },
+  {
+    slug: "zara-to-itana-bata-do-sai",
+    title: "Zarā To Itnā Batā Do Sāī",
+    credit: "Satpathy Baba",
+    languageTags: ["Hindi"],
+    subjectTags: ["Śirdi Sāī"]
   }
 ];

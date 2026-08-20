@@ -177,6 +177,14 @@ html, body {
   letter-spacing: 0.005em;
   font-weight: 400;
 }
+
+.line-source {
+  color: var(--kh-ink);
+  font-family: var(--kh-serif);
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
 .line-english {
   font-family: var(--kh-serif);
   font-style: normal;

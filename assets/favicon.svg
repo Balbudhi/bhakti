@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Bhakti diya">
+  <rect width="512" height="512" rx="96" fill="#6b0e16"/>
+  <path d="M256 90c-46 56-63 98-63 138 0 42 28 76 63 76s63-34 63-76c0-40-17-82-63-138Z" fill="#f6b73c"/>
+  <path d="M106 318c42 61 101 92 150 92s108-31 150-92H106Z" fill="#f4ead0"/>
+  <path d="M148 318h216" fill="none" stroke="#6b0e16" stroke-linecap="round" stroke-width="20"/>
+</svg>
