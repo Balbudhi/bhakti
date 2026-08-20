@@ -676,7 +676,8 @@ window.SONG_LINES = {
 window.SONG_SEQUENCE = [
   {
     "ref": "invocation",
-    "section": "invocation"
+    "section": "invocation",
+    "repeats": 1
   },
   {
     "ref": "refrain",

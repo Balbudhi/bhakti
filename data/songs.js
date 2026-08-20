@@ -232,6 +232,24 @@ window.BHAKTI_SONGS = [
     "subtitle": "Kākaḍ Āratī"
   },
   {
+    "slug": "jab-subah-ki-aarti",
+    "title": "Jab Subah Kī Āratī",
+    "credit": "Traditional · Pramod Medhi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Jab Subah Ki Arati",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Jab Subah Ki Aarti Khatam Hui Aur Baba Ne Snan Kiya"
+    ],
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
     "slug": "ye-tanu-mundna-be-mundna",
     "title": "Ye Tanu Muṇḍanā Be Muṇḍanā",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",

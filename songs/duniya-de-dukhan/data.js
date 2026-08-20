@@ -672,7 +672,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -681,7 +682,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -690,7 +692,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v1a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1b",
@@ -699,7 +702,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v1c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -708,7 +712,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v2a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2b",
@@ -717,7 +722,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v2c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
@@ -731,7 +737,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -740,7 +747,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v3a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3b",
@@ -749,7 +757,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v3c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -763,7 +772,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v4a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v4b",
@@ -772,7 +782,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v4c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -786,7 +797,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -800,7 +812,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "invocation",
-    "section": "invocation"
+    "section": "invocation",
+    "repeats": 1
   }
 ];
 

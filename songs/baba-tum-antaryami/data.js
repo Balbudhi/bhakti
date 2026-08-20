@@ -441,23 +441,28 @@ window.SONG_LINES = {
 window.SONG_SEQUENCE = [
   {
     "ref": "sain_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "baba_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "daya_karo_he_swami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sain_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "baba_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "ang_ang_mein_rang_sanwara",
@@ -466,7 +471,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "gahra_hota_jaaye",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "mand_mand_muskan_manohar",
@@ -475,7 +481,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "sab_dukh_har_le_jaaye",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "main_moorakh_agyaani",
@@ -484,15 +491,18 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "daya_karo_he_swami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sain_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "baba_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "tere_naam_ki_chadhun_main_paudhi",
@@ -501,7 +511,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "har_pal_main_ghabraun",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "thaam_ke_rakhiyo_baanh_meri_prabhu",
@@ -510,7 +521,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "kahin_main_gir_na_jaaun",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "log_karenge_badnami",
@@ -519,15 +531,18 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "daya_karo_he_swami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sain_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "baba_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "main_gunheen_rijhaun_kaise",
@@ -536,7 +551,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "tumko_he_natnagar",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "ek_yahi_vishwas_hriday_mein",
@@ -545,7 +561,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "tum_ho_daya_ke_sagar",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "teen_lok_ke_swami",
@@ -554,27 +571,33 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "daya_karo_he_swami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sain_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "baba_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sain_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "baba_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sain_tum_antaryami",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   }
 ];
 
@@ -705,6 +728,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 347.8,
-    "end": 357.982041
+    "end": 357.982
   }
 ];

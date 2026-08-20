@@ -868,19 +868,23 @@ window.SONG_LINES = {
 window.SONG_SEQUENCE = [
   {
     "ref": "invocation_1",
-    "section": "invocation"
+    "section": "invocation",
+    "repeats": 1
   },
   {
     "ref": "invocation_2",
-    "section": "invocation"
+    "section": "invocation",
+    "repeats": 1
   },
   {
     "ref": "invocation_3",
-    "section": "invocation"
+    "section": "invocation",
+    "repeats": 1
   },
   {
     "ref": "invocation_4",
-    "section": "invocation"
+    "section": "invocation",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
@@ -889,23 +893,28 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_c",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_d",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v1a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1a_tail",
@@ -914,7 +923,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v1b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v1c",
@@ -928,99 +938,123 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "v1d_b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "alap",
-    "section": "instrumental"
+    "section": "instrumental",
+    "repeats": 1
   },
   {
     "ref": "v2a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2a_tail",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2b_tail",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v2d",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "v3a",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3a_tail",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3b",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3b_tail",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3c",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "v3d",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_b",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_a",

@@ -319,55 +319,63 @@ window.SONG_LINES = {
 window.SONG_SEQUENCE = [
   {
     "ref": "jab_dil_udaas_ho_to",
-    "section": "refrain"
-  },
-  {
-    "ref": "jab_dil_udaas_ho_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 2
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_dil_udaas_ho_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jeevan_soona_lage_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_dil_udaas_ho_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_aafat_ghere_tujhko",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "sab_chhod_de_tera_saath",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jab_aafat_ghere_tujhko",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "sab_chhod_de_tera_saath",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jab_kahin_na_mile_sahaara",
@@ -376,83 +384,98 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_kahin_na_mile_sahaara",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_dil_udaas_ho_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jeevan_ka_har_din_to",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "roshan_nahin_hota",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jeevan_ka_har_din_to",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "roshan_nahin_hota",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jab_shaam_nazar_aaye_to",
-    "section": "verse"
-  },
-  {
-    "ref": "jab_shaam_nazar_aaye_to",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 2
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_shaam_nazar_aaye_to",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_dil_udaas_ho_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "is_ghat_ka_kya_bharosa",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "ye_kabhi_bhi_chhoot_jaaye",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "is_ghat_ka_kya_bharosa",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "ye_kabhi_bhi_chhoot_jaaye",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "jab_aakhiri_saans_chale_to",
@@ -461,27 +484,33 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_aakhiri_saans_chale_to",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jab_dil_udaas_ho_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "jeevan_soona_lage_to",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "sai_ka_naam_lena",
@@ -493,10 +522,6 @@ window.SONG_SEQUENCE = [
 window.SONG_TIMINGS = [
   {
     "start": 35.76,
-    "end": 41.18
-  },
-  {
-    "start": 41.18,
     "end": 46.58
   },
   {
@@ -585,10 +610,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 257.85,
-    "end": 263.85
-  },
-  {
-    "start": 263.85,
     "end": 269.85
   },
   {
@@ -657,6 +678,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 412.1,
-    "end": 434.747211
+    "end": 434.747
   }
 ];

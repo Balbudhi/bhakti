@@ -672,7 +672,8 @@ window.SONG_LINES = {
 window.SONG_SEQUENCE = [
   {
     "ref": "invocation",
-    "section": "invocation"
+    "section": "invocation",
+    "repeats": 1
   },
   {
     "ref": "refrain",
@@ -811,7 +812,8 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "closing",
-    "section": "closing"
+    "section": "closing",
+    "repeats": 1
   }
 ];
 
@@ -930,6 +932,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 641.4,
-    "end": 652.364626
+    "end": 652.365
   }
 ];

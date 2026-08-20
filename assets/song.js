@@ -340,6 +340,11 @@ function escapeHtml(s) {
   }[c]));
 }
 
+const PAGE_META = window.SONG_META || null;
+const PAGE_LINES = window.SONG_LINES || null;
+const PAGE_SEQUENCE = window.SONG_SEQUENCE || null;
+const PAGE_TIMINGS = window.SONG_TIMINGS || null;
+
 function renderEnglishWithSpans(english) {
   const re = /\{([\d,\s]+):([^}]*)\}/g;
   let out = "";
@@ -377,12 +382,13 @@ function renderRomanWithSpans(roman, words) {
   return html;
 }
 
-function renderLine(line, repeats, instanceId, defaultSourceLanguage) {
+function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds) {
   const repBadge = repeats && repeats > 1
     ? `<span class="rep" aria-label="repeated ${repeats} times">×${repeats}</span>`
     : "";
+  const startAttr = Number.isFinite(startSeconds) ? ` data-start="${startSeconds}"` : "";
   return `
-    <article class="line" id="${instanceId}">
+    <article class="line" id="${instanceId}"${startAttr}>
       <button class="line-seek" type="button" aria-label="Play from this line" title="Play from this line">
         <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
       </button>
@@ -394,7 +400,7 @@ function renderLine(line, repeats, instanceId, defaultSourceLanguage) {
 }
 
 function renderSongMeta() {
-  const meta = window.SONG_META;
+  const meta = PAGE_META;
   const hero = document.querySelector(".song-hero");
   if (!meta || !hero) return;
 
@@ -429,14 +435,15 @@ function render() {
   const root = document.getElementById("songRoot");
   if (!root) return;
   let html = "";
-  const seq = window.SONG_SEQUENCE || SEQUENCE;
-  const lines = window.SONG_LINES || LINES;
-  const language = (window.SONG_META?.languages || [])[0];
+  const seq = PAGE_SEQUENCE || SEQUENCE;
+  const lines = PAGE_LINES || LINES;
+  const timings = PAGE_TIMINGS || [];
+  const language = (PAGE_META?.languages || [])[0];
   const defaultSourceLanguage = { Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn" }[language] || "";
   seq.forEach((entry, idx) => {
     const line = lines[entry.ref];
     if (!line) return;
-    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`, defaultSourceLanguage);
+    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`, defaultSourceLanguage, timings[idx]?.start);
   });
   root.innerHTML = html;
   wireInteractions(root);
@@ -567,13 +574,14 @@ function wireInteractions(root) {
 
 function setupKaraoke() {
   const audio = document.getElementById("songAudio");
-  const TIMINGS = window.SONG_TIMINGS || [];
+  const TIMINGS = PAGE_TIMINGS || [];
   if (!audio || !TIMINGS.length) return;
 
   let activeIdx = -1;
-  const seq = window.SONG_SEQUENCE || SEQUENCE;
+  let karaokeFrame = 0;
+  const seq = PAGE_SEQUENCE || SEQUENCE;
 
-  audio.addEventListener("timeupdate", () => {
+  const updateKaraoke = () => {
     const t = audio.currentTime;
     const idx = TIMINGS.findIndex(seg => t >= seg.start && t < seg.end);
     if (idx === activeIdx) return;
@@ -589,8 +597,21 @@ function setupKaraoke() {
     // Always follow the song — auto-scroll the active line to the
     // vertical center on every line change. (If the listener wants
     // to scroll back, they have until the next line change.)
-    article.scrollIntoView({ behavior: "smooth", block: "center" });
-  });
+    article.scrollIntoView({ behavior: "auto", block: "center" });
+  };
+  const tickKaraoke = () => {
+    updateKaraoke();
+    if (!audio.paused && !audio.ended) karaokeFrame = requestAnimationFrame(tickKaraoke);
+    else karaokeFrame = 0;
+  };
+  const startKaraokeClock = () => {
+    updateKaraoke();
+    if (!karaokeFrame) karaokeFrame = requestAnimationFrame(tickKaraoke);
+  };
+  audio.addEventListener("play", startKaraokeClock);
+  audio.addEventListener("seeking", updateKaraoke);
+  audio.addEventListener("seeked", updateKaraoke);
+  audio.addEventListener("timeupdate", updateKaraoke);
 
   // Seeking is explicit. Lyric text remains available for selection, copying,
   // and word meanings without unexpectedly moving audio on touch devices.
@@ -599,13 +620,10 @@ function setupKaraoke() {
     if (!seekButton) return;
     const article = seekButton.closest(".line");
     if (!article) return;
-    const m = article.id.match(/^ln-(\d+)-/);
-    if (!m) return;
-    const i = parseInt(m[1], 10);
-    const seg = TIMINGS[i];
-    if (!seg) return;
+    const start = Number(article.dataset.start);
+    if (!Number.isFinite(start)) return;
     const seekAndPlay = () => {
-      audio.currentTime = seg.start;
+      audio.currentTime = start;
       audio.play().catch(() => {});
     };
 

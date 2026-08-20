@@ -358,19 +358,23 @@ window.SONG_LINES = {
 window.SONG_SEQUENCE = [
   {
     "ref": "refrain_1",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_2",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_1",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_2",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_3",
@@ -379,11 +383,13 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "refrain_4",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_partial",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "verse_1_1",
@@ -397,23 +403,28 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "verse_1_3",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "verse_1_4",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_1",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_2",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_partial",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "verse_2_1",
@@ -427,39 +438,48 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "verse_2_3",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "verse_2_4",
-    "section": "verse"
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "refrain_1",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_2",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_1",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_2",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_3",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_4",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   },
   {
     "ref": "refrain_partial",
-    "section": "refrain"
+    "section": "refrain",
+    "repeats": 1
   }
 ];
 
@@ -562,6 +582,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 359.555,
-    "end": 371.449615
+    "end": 371.45
   }
 ];
