@@ -18,6 +18,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 VALID_SECTIONS = {"invocation", "refrain", "verse", "bridge", "closing", "spoken", "instrumental"}
 REQUIRED_META = {"title", "credit", "languages", "subjectTags", "timingStatus", "translationStatus", "sourceStatus"}
+PRESERVED_TERMS = json.loads((ROOT / "data" / "preserved_terms.json").read_text(encoding="utf-8")).get("terms", {})
 
 
 def load_data(path: Path) -> dict[str, Any]:
@@ -79,6 +80,15 @@ def audit_song(directory: Path) -> dict[str, Any]:
                     problems.append(f"{line_id} word[{word_index}] cannot map to roman text or lacks a gloss")
                     break
                 cursor = at + len(token)
+                concept_key = word.get("concept_key") if isinstance(word, dict) else None
+                preserve = word.get("preserve_in_english") if isinstance(word, dict) else False
+                if concept_key and concept_key not in PRESERVED_TERMS:
+                    problems.append(f"{line_id} word[{word_index}] uses unknown preserved concept {concept_key!r}")
+                if preserve:
+                    canonical = str(PRESERVED_TERMS.get(concept_key, {}).get("iast", ""))
+                    plain_english = re.sub(r"\{[^:{}]*:([^{}]*)\}", r"\1", str(line.get("english", "")))
+                    if not canonical or canonical.casefold() not in plain_english.casefold():
+                        problems.append(f"{line_id} word[{word_index}] does not preserve {canonical or concept_key} in English")
             linked_indices: set[int] = set()
             for marker in re.finditer(r"\{([^:}]+):([^}]*)\}", str(line.get("english", ""))):
                 try:

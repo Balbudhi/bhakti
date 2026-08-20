@@ -17,7 +17,7 @@ documentation/evaluation only.
 For one or more local audio files or source URLs, use:
 
 ```sh
-python3 scripts/bhakti_pipeline.py --workers 3 --publish \
+python3 scripts/bhakti_pipeline.py --workers 4 --publish \
   --song song-slug='https://www.youtube.com/watch?v=…'
 ```
 
@@ -28,8 +28,11 @@ For a larger batch, use a JSON manifest:
 ```
 
 ```sh
-python3 scripts/bhakti_pipeline.py --workers 3 --publish --batch intake.json
+python3 scripts/bhakti_pipeline.py --workers 4 --publish --batch intake.json
 ```
+
+To regenerate pages and the shared catalogue from already reviewed artifacts
+without any API calls or cost, use `--generate-only --batch intake.json`.
 
 The pipeline preserves audio-only source input, then performs distinct stages:
 
@@ -43,6 +46,15 @@ The pipeline preserves audio-only source input, then performs distinct stages:
    imagery, completeness, alternatives, and unsupported additions checked;
 6. an independent adversarial translation review that cannot rewrite; and
 7. deterministic `data.js`, reader HTML, and catalogue generation.
+
+Song concurrency and API concurrency are separate. The default four song
+workers keep local intake, FFmpeg, validation, and generation busy, while the
+shared OpenRouter scheduler permits at most three simultaneous outbound calls
+and staggers starts by 350 ms. It routes to the highest-throughput compatible
+provider, retains same-model provider fallbacks, honors `Retry-After`, and then
+uses bounded exponential backoff. Tune only with `BHAKTI_API_MAX_CONCURRENCY`,
+`BHAKTI_API_MIN_START_INTERVAL`, or `OPENROUTER_PROVIDER_SORT`; never solve a
+429 by globally serializing the whole batch.
 
 For YouTube, preserve the highest-quality original audio stream as the first
 listener source and retain the highest native M4A/AAC stream as a compatibility
@@ -102,6 +114,14 @@ honorifics in IAST. Keep an established contemporary artist/institution spelling
 when no native-script form has been verified; never manufacture diacritics from
 English metadata. Internal search must also match ordinary spellings through
 automatic folding plus optional `searchAliases`; those aliases are not visible.
+
+`data/preserved_terms.json` is the only allowlist for philosophical terms that
+remain in IAST in English. A matching word keeps its canonical form and a short,
+contextual hover gloss; `māyā`, for example, must not be flattened to bare
+“illusion.” Gemini may flag an unlisted candidate but cannot add or publish it.
+Admission follows the Vedanta translation standard's deliberate decision
+procedure; never treat general glossary membership as permission to preserve a
+term. Do not import Vedanta's grammar cards or full expositions into song pages.
 
 ## Release checks
 
