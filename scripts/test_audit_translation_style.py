@@ -33,6 +33,21 @@ class AuditTranslationStylePromptTests(unittest.TestCase):
         fixed = style.normalize_segments(segments)
         self.assertEqual(fixed[1]["text"], "—aarti to ")
 
+        segments = [
+            {"text": "O Mother", "word_indices": [0]},
+            {"text": "— ", "word_indices": []},
+            {"text": "O Mother,", "word_indices": [1]},
+        ]
+        fixed = style.normalize_segments(segments)
+        self.assertEqual(fixed[1]["text"], " — ")
+
+        segments = [
+            {"text": "O Lord— ", "word_indices": [0]},
+            {"text": "aarti ", "word_indices": [1]},
+        ]
+        fixed = style.normalize_segments(segments)
+        self.assertEqual(fixed[0]["text"], "O Lord—")
+
 
 if __name__ == "__main__":
     unittest.main()

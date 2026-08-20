@@ -276,6 +276,14 @@ class PipelineTests(unittest.TestCase):
         )
         self.assertEqual(
             pipeline.segment_english([
+                {"text": "fear", "word_indices": [0]},
+                {"text": "—aarti to ", "word_indices": [1]},
+                {"text": "Sai", "word_indices": [2]},
+            ], ""),
+            "{0:fear}{1:—aarti to }{2:Sai}",
+        )
+        self.assertEqual(
+            pipeline.segment_english([
                 {"text": "Ganu ", "word_indices": [0]},
                 {"text": "says", "word_indices": [1]},
             ], ""),

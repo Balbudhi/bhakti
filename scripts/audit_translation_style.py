@@ -66,9 +66,21 @@ def normalize_segments(segments: list[dict[str, Any]]) -> list[dict[str, Any]]:
     fixed = [dict(segment) for segment in segments]
     for index, segment in enumerate(fixed):
         text = str(segment.get("text", ""))
-        if index and text.startswith(" —") and not str(fixed[index - 1].get("text", "")).endswith((" ", "—", "–")):
+        if text.strip() in {"—", "–"}:
+            text = f" {text.strip()} "
+        if (index and text.startswith(" —") and text.strip() not in {"—", "–"}
+                and not str(fixed[index - 1].get("text", "")).endswith((" ", "—", "–"))):
             text = text[1:]
-        if text.endswith("—") and index + 1 < len(fixed):
+        if (text.rstrip().endswith(("—", "–")) and text.endswith(" ") and index + 1 < len(fixed)
+                and text.strip() not in {"—", "–"} and not text.rstrip().endswith((" —", " –"))):
+            following = str(fixed[index + 1].get("text", ""))
+            if following and not following.startswith((" ", "—", "–", ".", ",", "!", "?", ";", ":")):
+                text = text.rstrip()
+        if text.rstrip().endswith((" —", " –")) and index + 1 < len(fixed):
+            following = str(fixed[index + 1].get("text", ""))
+            if following and not following.startswith((" ", "—", "–", ".", ",", "!", "?", ";", ":")):
+                text = text.rstrip() + " "
+        if text.endswith("—") and text.strip() in {"—", "–"} and index + 1 < len(fixed):
             following = str(fixed[index + 1].get("text", ""))
             if following and not following.startswith((" ", "—", "–", ".", ",", "!", "?", ";", ":")):
                 text += " "
