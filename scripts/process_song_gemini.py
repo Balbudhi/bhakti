@@ -167,7 +167,13 @@ Return strict JSON: {{"verified_lines":[{{"id":"","source_text":"","roman":"","k
         return 2
 
     provided = options.provided_translation.read_text(encoding="utf-8") if options.provided_translation else None
-    translation_prompt = f"""Translate the verified devotional lyrics below. Produce a literal, grammar-faithful English rendering that preserves poetic imagery and devotional register, plus concise word-level glosses. Never omit a line or add doctrinal interpretation. Treat uncertainty honestly.
+    translation_prompt = f"""Translate the verified devotional lyrics below in this mandatory order:
+1. Segment every source line into its actual words or meaningful grammatical units and give a concise literal gloss for each unit.
+2. State any idiom, ellipsis, agreement, or syntax needed to combine those glosses.
+3. Write the literal English line ONLY from that word map and stated grammar. Do not replace a gloss with a looser synonym (for example, do not turn “causing longing to take hold” into “awakening” unless the word map itself supports that change).
+4. Optionally give a poetic English rendering, clearly separate from the literal line.
+
+Preserve poetic imagery and devotional register, but never omit a line or add doctrinal interpretation. Treat uncertainty honestly.
 
 When a supplied translation exists, compare it as an independent witness: retain good wording, identify material differences, and explain each change. Do not treat it as automatically correct or automatically disposable.
 
@@ -177,7 +183,7 @@ Verified lyrics:
 Supplied translation (optional):
 {provided or '(none)'}
 
-Return strict JSON: {{"translations":[{{"id":"","literal_english":"","poetic_english":"","word_glosses":[{{"roman":"","gloss":""}}],"uncertainty":""}}],"comparison":[{{"id":"","supplied":"","chosen":"","reason":""}}]}}."""
+Return strict JSON: {{"translations":[{{"id":"","word_glosses":[{{"roman":"","gloss":""}}],"grammar_note":"","literal_english":"","poetic_english":"","uncertainty":""}}],"comparison":[{{"id":"","supplied":"","chosen":"","reason":""}}]}}."""
     print("Gemini stage 3/3: translation and comparison…", file=sys.stderr)
     translation = call(options.model, api_key, translation_prompt, audio=None, timeout=options.timeout)
     (out / "03-translation.json").write_text(json.dumps(translation, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
