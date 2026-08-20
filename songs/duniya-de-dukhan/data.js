@@ -842,10 +842,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 169.4,
-    "end": 174.2
+    "end": 177.56
   },
   {
-    "start": 174.2,
+    "start": 177.56,
     "end": 188.2
   },
   {
