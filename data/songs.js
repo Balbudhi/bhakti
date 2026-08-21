@@ -2642,6 +2642,26 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "balada-beka-re-lagila-ghanti",
+    "title": "Baḷada Bekare Lāgilā Ghaṇṭi",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Guru"
+    ],
+    "searchAliases": [
+      "Balada Bekare Lagila Ghanti",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Guru"
+  },
+  {
     "slug": "chala-patha-ra-geeta",
     "title": "Chala Patha Ra Geeta",
     "credit": "Shri Chandra Bhanu Satpathy",
@@ -2717,6 +2737,44 @@ window.BHAKTI_SONGS = [
     "subtitle": "Guru"
   },
   {
+    "slug": "jogii-re-kian-jau-dura-deshe",
+    "title": "Jogii Re Kian Jau Dura Deshe",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Guru"
+    ],
+    "searchAliases": [
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Guru"
+  },
+  {
+    "slug": "mati-re-mati-re-kete-dakuchi-re-tote",
+    "title": "Mati Re Mati Re Kete Dakuchi Re Tote",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Guru"
+    ],
+    "searchAliases": [
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Guru"
+  },
+  {
     "slug": "shri-guru-prarthana",
     "title": "Shri Guru Prarthana",
     "credit": "Shri Chandra Bhanu Satpathy",
@@ -2734,6 +2792,26 @@ window.BHAKTI_SONGS = [
     "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
+  },
+  {
+    "slug": "bela-gadi-jae-kala-sari-jae",
+    "title": "Bela Gadi Jae Kala Sari Jae",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Jagannātha"
   },
   {
     "slug": "dake-aahe-jagannath",
@@ -3060,6 +3138,71 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "deha-re-mo-lagilani",
+    "title": "Deha Re Mo Lagilani",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "guru-charana-re-karo-dhyana",
+    "title": "Guru Caraṇare Kara Dhyāna",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Guru Caranare Kara Dhyana",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "guru-he-mote-ete-para-kian-kala",
+    "title": "Guru He Mote Ete Para Kiā̃ Kala",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Guru He Mote Ete Para Kiã Kala",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
     "slug": "guru-karo-aparadha-kshyama",
     "title": "Guru Kara Aparādha Kṣamā",
     "credit": "Shri Chandra Bhanu Satpathy",
@@ -3081,6 +3224,48 @@ window.BHAKTI_SONGS = [
     "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Shri Sai Charane"
+  },
+  {
+    "slug": "he-aanadamaya-prabhu",
+    "title": "He Aanadamaya Prabhu",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "janena-mu-debata-ke-janena-mu-ishwara",
+    "title": "Janena Mu Debata Ke Janena Mu Ishwara",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "jhare-tumo-krupa-ghana",
