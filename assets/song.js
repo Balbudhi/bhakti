@@ -437,18 +437,6 @@ function renderSourceNotice(notice) {
   return `<aside class="source-notice"><h2>${escapeHtml(notice.title || "")}</h2>${poet}${detail}</aside>`;
 }
 
-function renderEditionNote(note) {
-  if (!note || !note.summary) return "";
-  const title = escapeHtml(note.title || "Text note");
-  const summary = escapeHtml(note.summary);
-  const detail = note.detail ? `<p>${escapeHtml(note.detail)}</p>` : "";
-  const url = String(note.sourceUrl || "");
-  const source = /^https:\/\//.test(url)
-    ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(note.sourceLabel || "Edition source")}</a>`
-    : "";
-  return `<details class="edition-note"><summary><span>${title}</span>${summary}</summary>${detail}${source}</details>`;
-}
-
 let selectedTextEdition = null;
 
 function selectedEdition(meta) {
@@ -471,8 +459,8 @@ function renderEditionSwitch(meta) {
   const keys = Object.keys(variants);
   if (keys.length < 2) return "";
   const active = selectedEdition(meta);
-  const buttons = keys.map(key => `<button class="edition-choice" type="button" data-edition="${escapeHtml(key)}" aria-pressed="${key === active}">${escapeHtml(variants[key].label || key)}</button>`).join("");
-  return `<div class="edition-switch" role="group" aria-label="Text edition">${buttons}</div>`;
+  const options = keys.map(key => `<option value="${escapeHtml(key)}"${key === active ? " selected" : ""}>${escapeHtml(variants[key].label || key)}</option>`).join("");
+  return `<div class="edition-switch"><label class="visually-hidden" for="editionSelect">Text edition</label><select class="edition-select" id="editionSelect" aria-label="Text edition">${options}</select></div>`;
 }
 
 function lineForEdition(line, lineId, meta) {
@@ -510,17 +498,16 @@ function renderSongMeta() {
   ].join("");
   selectedEdition(meta);
   const editionSwitch = renderEditionSwitch(meta);
-  const edition = renderEditionNote(meta.editionNote);
   let songMeta = hero.querySelector(".song-meta");
   if (!songMeta) {
     songMeta = document.createElement("div");
     songMeta.className = "song-meta";
     hero.querySelector(".song-hint")?.before(songMeta);
   }
-  songMeta.innerHTML = `${credits ? `<dl class="song-credits">${credits}</dl>` : ""}${tags ? `<div class="song-meta-tags" aria-label="Tags">${tags}</div>` : ""}${editionSwitch}${edition}`;
-  songMeta.hidden = !credits && !tags && !editionSwitch && !edition;
-  songMeta.querySelectorAll(".edition-choice").forEach(button => button.addEventListener("click", () => {
-    selectedTextEdition = button.dataset.edition || selectedEdition(meta);
+  songMeta.innerHTML = `${credits ? `<dl class="song-credits">${credits}</dl>` : ""}${tags ? `<div class="song-meta-tags" aria-label="Tags">${tags}</div>` : ""}${editionSwitch}`;
+  songMeta.hidden = !credits && !tags && !editionSwitch;
+  songMeta.querySelectorAll(".edition-select").forEach(select => select.addEventListener("change", () => {
+    selectedTextEdition = select.value || selectedEdition(meta);
     try { localStorage.setItem(`bhakti:text-edition:${location.pathname}`, selectedTextEdition); } catch (_) {}
     render();
   }));
