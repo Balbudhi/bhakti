@@ -10,6 +10,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
+import intake_bhakti_youtube as intake
 import bhakti_pipeline as pipeline
 
 
@@ -35,12 +36,16 @@ class PipelineTests(unittest.TestCase):
             "ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=0.2",
             "-c:a", "libmp3lame", str(source),
         ], check=True)
-        song, _ = pipeline.intake({"slug": "local-test", "source": str(source)}, force=False)
+        source_url = "https://www.youtube.com/watch?v=AAAAAAAAAAA"
+        song, evidence = pipeline.intake(
+            {"slug": "local-test", "source": str(source), "sourceUrl": source_url}, force=False
+        )
         format_name = subprocess.run([
             "ffprobe", "-v", "error", "-show_entries", "format=format_name", "-of", "default=nokey=1:noprint_wrappers=1",
             str(song / "audio.m4a"),
         ], check=True, capture_output=True, text=True).stdout
         self.assertIn("mp4", format_name)
+        self.assertEqual(evidence["source_url"], source_url)
 
     def test_generation_uses_roles_and_canonical_reader_contract(self) -> None:
         song = self.root / "songs" / "sample-song"
@@ -235,6 +240,19 @@ class PipelineTests(unittest.TestCase):
         (song / "audio.webm").touch()
         self.assertEqual(pipeline.preferred_listener_audio(song).name, "audio.webm")
 
+    def test_intake_normalizes_music_watch_urls_to_canonical_webpage_url(self) -> None:
+        metadata = {"webpage_url": "https://www.youtube.com/watch?v=Xw0yC-5bK_I", "id": "Xw0yC-5bK_I"}
+        source_url = intake.canonical_source_url(metadata, "https://music.youtube.com/watch?v=Xw0yC-5bK_I")
+        self.assertEqual(source_url, "https://www.youtube.com/watch?v=Xw0yC-5bK_I")
+
+    def test_intake_filters_non_audio_files_from_download_listing(self) -> None:
+        song = self.root / "songs" / "intake-audio-choice"
+        song.mkdir()
+        (song / "audio.webm").touch()
+        (song / "audio.jpg").touch()
+        (song / "audio.part").touch()
+        self.assertEqual([path.name for path in intake.downloaded_audio_files(song)], ["audio.webm"])
+
     def test_lossless_trim_shortens_audio_without_changing_codec(self) -> None:
         song = self.root / "songs" / "trim-test"
         (song / ".transcription").mkdir(parents=True)
@@ -256,6 +274,23 @@ class PipelineTests(unittest.TestCase):
         options = type("Options", (), {"song": [], "batch": manifest})()
         with self.assertRaisesRegex(SystemExit, "searchAliases.*list of strings"):
             pipeline.normalise_jobs(options)
+
+    def test_preflight_blocks_when_shared_openrouter_credits_are_exhausted(self) -> None:
+        options = type("Options", (), {"generate_only": False, "timeout": 300.0})()
+        with mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
+             mock.patch.object(
+                 pipeline.gemini,
+                 "openrouter_account_status",
+                 return_value={"total_credits": 10.0, "total_usage": 10.0, "credits_exhausted": True},
+             ):
+            reason = pipeline.preflight_blocked_reason(options)
+        self.assertIn("OpenRouter credits are exhausted", reason)
+
+    def test_preflight_probe_failure_does_not_block_processing(self) -> None:
+        options = type("Options", (), {"generate_only": False, "timeout": 300.0})()
+        with mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
+             mock.patch.object(pipeline.gemini, "openrouter_account_status", side_effect=OSError("offline")):
+            self.assertIsNone(pipeline.preflight_blocked_reason(options))
 
     def test_segmented_english_preserves_word_spacing_and_punctuation(self) -> None:
         rendered = pipeline.segment_english([

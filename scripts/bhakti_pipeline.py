@@ -33,6 +33,7 @@ from typing import Any
 
 import process_song_gemini as gemini
 import naming
+import resolve_youtube_music_audio as ytmusic
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,6 +88,10 @@ def is_url(value: str) -> bool:
     return value.startswith(("https://", "http://"))
 
 
+def is_youtube_or_query(value: str) -> bool:
+    return ytmusic.looks_like_youtube_reference(value) or (not is_url(value) and not Path(value).expanduser().exists())
+
+
 def embedded_audio_metadata(path: Path) -> dict[str, Any]:
     result = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format_tags=title,artist,album,composer,genre,date,track",
                              "-of", "json", str(path)], check=True, capture_output=True, text=True)
@@ -102,8 +107,10 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
         slug, source = spec.split("=", 1)
         jobs.append({"slug": slug.strip(), "source": source.strip()})
     for url in getattr(options, "url", []):
+        resolved = ytmusic.resolve_reference(url) if is_youtube_or_query(url) else None
+        source_value = resolved["resolved_url"] if resolved else url
         metadata = json.loads(subprocess.run(
-            ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", url],
+            ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", source_value],
             check=True, capture_output=True, text=True,
         ).stdout)
         fields: dict[str, str] = {}
@@ -113,12 +120,13 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
                 fields[match.group(1).strip().casefold()] = match.group(2).strip()
         raw_title = str(metadata.get("title") or metadata.get("id") or "song")
         title = fields.get("song") or re.sub(r"\s+with lyrics\b.*$", "", raw_title.split("|")[0], flags=re.I).strip()
-        jobs.append({"slug": naming.slugify(title), "source": metadata.get("webpage_url") or url,
+        jobs.append({"slug": naming.slugify(title), "source": metadata.get("webpage_url") or source_value,
                      "title": title, "subtitle": fields.get("album", ""),
                      "writer": fields.get("lyricist", ""),
                      "singer": fields.get("artist") or fields.get("singer", ""),
                      "composer": fields.get("music director") or fields.get("composer", ""),
-                     "searchAliases": [raw_title], "_source_metadata": metadata})
+                     "searchAliases": [raw_title], "_source_metadata": metadata,
+                     "_source_resolution": resolved})
     if options.batch:
         raw = json.loads(options.batch.read_text(encoding="utf-8"))
         entries = raw.get("songs", []) if isinstance(raw, dict) else raw
@@ -153,6 +161,11 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
     review_dir = song_dir / ".transcription"
     review_dir.mkdir(exist_ok=True)
     source_value = job["source"]
+    if is_youtube_or_query(source_value):
+        resolution = job.get("_source_resolution") or ytmusic.resolve_reference(source_value)
+        source_value = str(resolution["resolved_url"])
+    else:
+        resolution = None
     if is_url(source_value):
         metadata = job.get("_source_metadata") or json.loads(subprocess.run(
             ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", source_value],
@@ -164,6 +177,7 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
             "channel": metadata.get("channel"), "upload_date": metadata.get("upload_date"),
             "duration_seconds": metadata.get("duration"), "description": metadata.get("description"),
             "extractor_key": metadata.get("extractor_key"), "id": metadata.get("id"),
+            "source_resolution": resolution,
             "review_note": "Source metadata is evidence to verify, never automatic public credit.",
         }
         subprocess.run(["yt-dlp", "--no-playlist", "-f", "bestaudio", "-o", str(song_dir / "audio.%(ext)s"), source_value], check=True)
@@ -192,6 +206,8 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
         source = {"source_file": supplied.name, "title": tags.get("title") or supplied.stem,
                   "artist": tags.get("artist"), "album": tags.get("album"),
                   "composer": tags.get("composer"), "genre": tags.get("genre"),
+                  "source_url": job.get("sourceUrl"),
+                  "source_resolution": job.get("sourceResolution"),
                   "review_note": "Local file metadata is evidence to verify, never automatic public credit."}
     write_json(review_dir / "source.json", source)
     return song_dir, source
@@ -1800,6 +1816,22 @@ def reported_cost(*artifacts: Any) -> float | None:
     return round(total, 8) if seen else None
 
 
+def preflight_blocked_reason(options: argparse.Namespace) -> str | None:
+    if options.generate_only:
+        return None
+    try:
+        status = gemini.openrouter_account_status(gemini.key(), timeout=min(20.0, options.timeout))
+    except (OSError, RuntimeError, ValueError):
+        return None
+    if status.get("credits_exhausted"):
+        return (
+            "OpenRouter credits are exhausted for the shared Dev key "
+            f"({status.get('total_usage')} used of {status.get('total_credits')}). "
+            "Add credits at https://openrouter.ai/settings/credits before running Bhakti intake."
+        )
+    return None
+
+
 def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     song_dir, source = intake(job, force=options.force)
     if "youtube.com" in str(source.get("source_url", "")) or "youtu.be" in str(source.get("source_url", "")):
@@ -1828,6 +1860,11 @@ def main() -> int:
     options = parse_args()
     jobs = normalise_jobs(options)
     results: list[dict[str, Any]] = []
+    blocked_reason = preflight_blocked_reason(options)
+    if blocked_reason:
+        results = [{"slug": job["slug"], "status": "blocked", "error": blocked_reason} for job in jobs]
+        print(json.dumps(results, ensure_ascii=False, indent=2))
+        return 1
     if options.generate_only:
         options.publish = True
         results = [{"slug": job["slug"], "status": "review-required", "reported_openrouter_cost": 0.0}

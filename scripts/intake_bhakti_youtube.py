@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Create an audio-only, review-first Bhakti song intake from a YouTube URL."""
+"""Create an audio-only, review-first Bhakti song intake from a YouTube URL.
+
+The helper accepts YouTube Music watch/share URLs and records the canonical
+YouTube watch URL that yt-dlp resolves before the download step.
+"""
 
 from __future__ import annotations
 
@@ -9,6 +13,9 @@ import subprocess
 import sys
 from pathlib import Path
 from typing import Any
+
+
+AUDIO_SUFFIXES = {".aac", ".flac", ".m4a", ".mp3", ".ogg", ".wav", ".webm"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -24,6 +31,23 @@ def run(command: list[str], *, cwd: Path | None = None) -> subprocess.CompletedP
     return subprocess.run(command, cwd=cwd, check=True, text=True, capture_output=True)
 
 
+def canonical_source_url(metadata: dict[str, Any], requested_url: str) -> str:
+    webpage = str(metadata.get("webpage_url") or "").strip()
+    if webpage:
+        return webpage
+    requested = requested_url.strip()
+    if "music.youtube.com" in requested.casefold() and metadata.get("id"):
+        return f"https://www.youtube.com/watch?v={metadata['id']}"
+    return requested
+
+
+def downloaded_audio_files(song_dir: Path) -> list[Path]:
+    return sorted(
+        path for path in song_dir.glob("audio.*")
+        if path.is_file() and path.suffix.casefold() in AUDIO_SUFFIXES
+    )
+
+
 def main() -> int:
     args = parse_args()
     song_dir = args.song_dir.resolve()
@@ -36,8 +60,10 @@ def main() -> int:
     )
     review_dir = song_dir / ".transcription"
     review_dir.mkdir(exist_ok=True)
+    source_url = canonical_source_url(metadata, args.url)
     source = {
-        "source_url": metadata.get("webpage_url") or args.url,
+        "requested_source_url": args.url,
+        "source_url": source_url,
         "title": metadata.get("title"),
         "uploader": metadata.get("uploader"),
         "channel": metadata.get("channel"),
@@ -50,11 +76,25 @@ def main() -> int:
     }
     (review_dir / "source.json").write_text(json.dumps(source, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    run(["yta", args.url, "--output-dir", str(song_dir)])
-    downloads = list(song_dir.glob("*.m4a"))
+    run(["yta", source_url, "--output-dir", str(song_dir)])
+    downloads = downloaded_audio_files(song_dir)
     if len(downloads) != 1:
-        raise RuntimeError(f"expected exactly one downloaded M4A file, found {len(downloads)}")
-    downloads[0].replace(song_dir / "audio.m4a")
+        raise RuntimeError(f"expected exactly one downloaded audio file, found {len(downloads)}")
+    primary = downloads[0]
+    preserved = song_dir / f"audio{primary.suffix.casefold()}"
+    if primary != preserved:
+        primary.replace(preserved)
+        primary = preserved
+    if primary.suffix.casefold() != ".m4a":
+        subprocess.run(
+            [
+                "ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(primary),
+                "-vn", "-c:a", "aac", "-b:a", "192k", str(song_dir / "audio.m4a"),
+            ],
+            check=True,
+        )
+    elif primary.name != "audio.m4a":
+        primary.replace(song_dir / "audio.m4a")
 
     if not args.skip_transcription:
         subprocess.run(

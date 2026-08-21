@@ -27,6 +27,8 @@ import subprocess
 
 MODEL = "google/gemini-3.7-flash"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
+AUTH_KEY_URL = "https://openrouter.ai/api/v1/auth/key"
+CREDITS_URL = "https://openrouter.ai/api/v1/credits"
 DEFAULT_KEY = Path.home() / "Dev" / ".axiom_openrouter.key"
 API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "3")))
 API_MIN_START_INTERVAL = max(0.0, float(os.environ.get("BHAKTI_API_MIN_START_INTERVAL", "0.35")))
@@ -66,6 +68,39 @@ def key() -> str:
     if not value:
         raise RuntimeError("OpenRouter key is empty")
     return value
+
+
+def _json_request(url: str, api_key: str, *, timeout: float) -> dict[str, Any]:
+    request = urllib.request.Request(
+        url,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        method="GET",
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+    if not isinstance(payload, dict):
+        raise RuntimeError(f"OpenRouter endpoint returned a non-object payload: {url}")
+    return payload
+
+
+def openrouter_account_status(api_key: str, *, timeout: float = 20.0) -> dict[str, Any]:
+    auth = _json_request(AUTH_KEY_URL, api_key, timeout=timeout).get("data", {})
+    credits = _json_request(CREDITS_URL, api_key, timeout=timeout).get("data", {})
+    limit_remaining = auth.get("limit_remaining")
+    total_credits = credits.get("total_credits")
+    total_usage = credits.get("total_usage")
+    exhausted = (
+        isinstance(total_credits, (int, float))
+        and isinstance(total_usage, (int, float))
+        and total_usage >= total_credits
+    )
+    return {
+        "label": auth.get("label"),
+        "limit_remaining": limit_remaining,
+        "total_credits": total_credits,
+        "total_usage": total_usage,
+        "credits_exhausted": exhausted,
+    }
 
 
 def call(
