@@ -938,7 +938,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "O Sai Baba",
+        "gloss": "revered saint of Śirḍī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1068,7 +1068,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "O Sai Baba",
+        "gloss": "revered saint of Śirḍī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3923,7 +3923,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3941,7 +3941,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "revered saint of Śirḍī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4000,7 +4000,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "revered saint of Śirḍī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4083,7 +4083,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "puṇḍalīka",
-        "gloss": "the devotee of Pandharpur",
+        "gloss": "devotee associated with Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4136,7 +4136,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "puṇḍalīka",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee associated with Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4154,7 +4154,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "puṇḍalīka",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee associated with Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5471,7 +5471,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5483,19 +5483,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9383,7 +9383,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "goddess of prosperity",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1021,13 +1021,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śaṅkara",
-        "gloss": "the auspicious one",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1039,7 +1039,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1075,7 +1075,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "the preserver deity",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1332,7 +1332,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarasvatī",
-        "gloss": "Saraswati (Goddess of learning and speech)",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1488,7 +1488,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "Goddess of auspicious prosperity",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3691,7 +3691,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Adi Shankaracharya",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3769,7 +3769,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva / Shankara",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5249,10 +5249,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 285.75,
-    "end": 329.0
+    "end": 329
   },
   {
-    "start": 329.0,
+    "start": 329,
     "end": 339.75
   },
   {

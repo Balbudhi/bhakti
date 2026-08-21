@@ -192,7 +192,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },

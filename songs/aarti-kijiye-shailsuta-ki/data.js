@@ -866,7 +866,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śiva",
-        "gloss": "Lord Shiva (the Auspicious One)",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -70,7 +70,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "the divine Lord",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -135,7 +135,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "the divine Lord",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -206,7 +206,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "the divine Lord",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1349,7 +1349,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "the divine Lord",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1742,10 +1742,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 52.3,
-    "end": 58.0
+    "end": 58
   },
   {
-    "start": 58.0,
+    "start": 58,
     "end": 61.7
   },
   {
@@ -1762,10 +1762,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 96.4,
-    "end": 108.0
+    "end": 108
   },
   {
-    "start": 108.0,
+    "start": 108,
     "end": 112.8
   },
   {
@@ -1810,10 +1810,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 173.25,
-    "end": 177.0
+    "end": 177
   },
   {
-    "start": 177.0,
+    "start": 177,
     "end": 182.8
   },
   {

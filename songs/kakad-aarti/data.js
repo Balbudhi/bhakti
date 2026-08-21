@@ -9484,7 +9484,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term"
+        "gloss": "town associated with Sāī Bābā"
       },
       {
         "roman": "merā",
@@ -9632,7 +9632,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "puṇḍalīka",
-        "gloss": "devotee Pundalik"
+        "gloss": "devotee associated with Viṭṭhala"
       },
       {
         "roman": "jāgā",
@@ -9687,7 +9687,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "puṇḍalīka",
-        "gloss": "proper name or untranslated term"
+        "gloss": "devotee associated with Viṭṭhala"
       },
       {
         "roman": "jāgā",
@@ -9699,7 +9699,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "puṇḍalīka",
-        "gloss": "proper name or untranslated term"
+        "gloss": "devotee associated with Viṭṭhala"
       },
       {
         "roman": "jāgā",
@@ -10784,7 +10784,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rama (vocative singular)"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "hare",
@@ -10792,15 +10792,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rama"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "rāma",
-        "gloss": "O Rama"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "rāma",
-        "gloss": "O Rama"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "hare",
@@ -14473,7 +14473,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "prosperity"
+        "gloss": "goddess of flourishing and fortune"
       },
       {
         "roman": "vāsa",

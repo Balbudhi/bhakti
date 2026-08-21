@@ -215,7 +215,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2275,10 +2275,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 177.9,
-    "end": 192.0
+    "end": 192
   },
   {
-    "start": 192.0,
+    "start": 192,
     "end": 204.9
   },
   {
@@ -2295,10 +2295,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 231.9,
-    "end": 239.0
+    "end": 239
   },
   {
-    "start": 239.0,
+    "start": 239,
     "end": 261.3
   },
   {

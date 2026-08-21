@@ -374,7 +374,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -487,7 +487,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -618,7 +618,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "proper name or untranslated term",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -648,7 +648,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "proper name or untranslated term",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -725,7 +725,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1058,7 +1058,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1189,7 +1189,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1566,10 +1566,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 332.45,
-    "end": 345.0
+    "end": 345
   },
   {
-    "start": 345.0,
+    "start": 345,
     "end": 351.95
   },
   {

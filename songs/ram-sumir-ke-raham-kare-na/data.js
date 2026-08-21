@@ -97,7 +97,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "the divine Lord",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2317,10 +2317,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 59.6,
-    "end": 71.0
+    "end": 71
   },
   {
-    "start": 71.0,
+    "start": 71,
     "end": 81.825
   },
   {

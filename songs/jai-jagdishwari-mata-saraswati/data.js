@@ -80,7 +80,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sarasvatī",
-        "gloss": "Goddess of wisdom and learning",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -837,10 +837,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 238.5,
-    "end": 260.0
+    "end": 260
   },
   {
-    "start": 260.0,
+    "start": 260,
     "end": 338.15
   },
   {

@@ -98,13 +98,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śiva",
-        "gloss": "O Shiva (the Auspicious One)",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śiva",
-        "gloss": "O Shiva (repetition for fervent invocation)",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -441,7 +441,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "the Supreme Lord",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },

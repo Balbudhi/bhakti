@@ -317,7 +317,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "the auspicious lord",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1078,7 +1078,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 20.0,
+    "start": 20,
     "end": 36.3
   },
   {

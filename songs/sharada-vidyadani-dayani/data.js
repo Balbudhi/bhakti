@@ -47,7 +47,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "Goddess of learning",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -82,7 +82,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "Goddess of learning",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -135,7 +135,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "Goddess of learning",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -153,7 +153,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śāradā",
-        "gloss": "Goddess of learning",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -218,31 +218,31 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -260,7 +260,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -325,49 +325,49 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -461,7 +461,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarasvatī",
-        "gloss": "Saraswati (Goddess of wisdom)",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -520,43 +520,43 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -615,7 +615,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -633,25 +633,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1112,43 +1112,43 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1166,37 +1166,37 @@ window.SONG_LINES = {
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śāradā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1315,26 +1315,26 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 11.775,
-    "end": 23.0
+    "end": 23
   },
   {
-    "start": 23.0,
+    "start": 23,
     "end": 42.7
   },
   {
     "start": 42.7,
-    "end": 61.0
+    "end": 61
   },
   {
-    "start": 61.0,
+    "start": 61,
     "end": 93.29
   },
   {
     "start": 93.29,
-    "end": 109.0
+    "end": 109
   },
   {
-    "start": 109.0,
+    "start": 109,
     "end": 114.45
   },
   {

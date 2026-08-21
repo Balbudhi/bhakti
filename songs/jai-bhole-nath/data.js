@@ -368,7 +368,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -476,7 +476,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },

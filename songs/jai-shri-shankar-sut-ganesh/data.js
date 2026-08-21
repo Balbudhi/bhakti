@@ -103,7 +103,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva (the auspicious one)",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -115,7 +115,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "lord of the celestial retinues",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -186,7 +186,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -198,7 +198,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -251,7 +251,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -298,7 +298,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -339,7 +339,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -351,7 +351,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -410,7 +410,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -422,7 +422,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -440,7 +440,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -523,7 +523,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -535,13 +535,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -553,7 +553,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -565,7 +565,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -577,7 +577,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1097,7 +1097,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1115,7 +1115,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1133,7 +1133,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1145,7 +1145,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1168,7 +1168,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "gaṇeśa",
-        "gloss": "lord of the celestial hosts",
+        "gloss": "elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1888,10 +1888,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 548.55,
-    "end": 557.0
+    "end": 557
   },
   {
-    "start": 557.0,
+    "start": 557,
     "end": 561.18
   },
   {
@@ -1908,10 +1908,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 577.825,
-    "end": 580.0
+    "end": 580
   },
   {
-    "start": 580.0,
+    "start": 580,
     "end": 582.25
   },
   {
@@ -1932,18 +1932,18 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 594.5,
-    "end": 599.0
+    "end": 599
   },
   {
-    "start": 599.0,
+    "start": 599,
     "end": 602.3
   },
   {
     "start": 602.3,
-    "end": 606.0
+    "end": 606
   },
   {
-    "start": 606.0,
+    "start": 606,
     "end": 610.3
   },
   {

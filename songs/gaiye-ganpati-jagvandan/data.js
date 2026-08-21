@@ -180,7 +180,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śaṅkara",
-        "gloss": "Shiva (the auspicious one / causer of peace)",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -623,7 +623,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "Lord Rāma",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -986,10 +986,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 522.55,
-    "end": 526.0
+    "end": 526
   },
   {
-    "start": 526.0,
+    "start": 526,
     "end": 528.6
   },
   {

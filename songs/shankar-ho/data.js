@@ -359,7 +359,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -491,7 +491,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "proper name or untranslated term",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -670,7 +670,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkar",
-        "gloss": "causer of peace and welfare",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -859,13 +859,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śiv",
-        "gloss": "Auspicious One",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śaṅkar",
-        "gloss": "Benefactor",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -930,13 +930,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śaṅkar",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1303,7 +1303,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkar",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1362,7 +1362,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkar",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1569,7 +1569,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "the preserver",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2127,10 +2127,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 179.025,
-    "end": 194.0
+    "end": 194
   },
   {
-    "start": 194.0,
+    "start": 194,
     "end": 199.85
   },
   {

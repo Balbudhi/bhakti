@@ -70,7 +70,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇuṁ",
-        "gloss": "the all-pervading Lord",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },

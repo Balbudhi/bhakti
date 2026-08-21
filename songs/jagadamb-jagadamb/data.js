@@ -577,7 +577,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Viṣṇu",
-        "gloss": "Lord Vishnu",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1372,10 +1372,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 314.025,
-    "end": 338.0
+    "end": 338
   },
   {
-    "start": 338.0,
+    "start": 338,
     "end": 344.875
   },
   {

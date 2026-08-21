@@ -1713,7 +1713,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāībābā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "revered saint of Śirḍī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1772,7 +1772,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāībābā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "revered saint of Śirḍī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1855,7 +1855,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Puṇḍalīka",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee associated with Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1908,7 +1908,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Puṇḍalīka",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee associated with Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1926,7 +1926,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Puṇḍalīka",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee associated with Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3143,7 +3143,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "O Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3155,19 +3155,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "O Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāma",
-        "gloss": "O Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāma",
-        "gloss": "O Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6025,7 +6025,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },

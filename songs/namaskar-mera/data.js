@@ -346,7 +346,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "O Shankara (Lord Shiva, the cause of peace)",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -559,7 +559,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "Lord Vishnu (the sustainer)",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -612,13 +612,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Lord Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sītā",
-        "gloss": "Mother Sita",
+        "gloss": "Rāma's consort",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1215,7 +1215,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "goddess of grace and fortune",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },

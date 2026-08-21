@@ -67,7 +67,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "seventh avatara of Vishnu",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1261,10 +1261,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 255.95,
-    "end": 267.0
+    "end": 267
   },
   {
-    "start": 267.0,
+    "start": 267,
     "end": 277.9
   },
   {

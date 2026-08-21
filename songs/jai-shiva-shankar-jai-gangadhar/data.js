@@ -97,13 +97,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -859,13 +859,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -877,13 +877,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -895,13 +895,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -913,13 +913,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -931,13 +931,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -949,13 +949,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1032,13 +1032,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1050,13 +1050,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1068,13 +1068,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiva",
-        "gloss": "the auspicious one; Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "beneficent one; cause of peace",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1348,10 +1348,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 174.5,
-    "end": 182.0
+    "end": 182
   },
   {
-    "start": 182.0,
+    "start": 182,
     "end": 189.1
   },
   {

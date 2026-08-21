@@ -42,7 +42,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śirḍī",
-        "gloss": "place name",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },

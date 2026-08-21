@@ -1837,7 +1837,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "holy town of Sai Baba",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2011,10 +2011,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 182.75,
-    "end": 203.0
+    "end": 203
   },
   {
-    "start": 203.0,
+    "start": 203,
     "end": 215.1
   },
   {
