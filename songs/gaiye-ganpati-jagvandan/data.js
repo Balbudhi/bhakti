@@ -263,7 +263,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vināyaka",
-        "gloss": "remover of obstacles; supreme guide (epithet of Gaṇeśa)",
+        "gloss": "guide/remover of obstacles; epithet of Gaṇeśa",
         "concept_key": "",
         "preserve_in_english": false
       }

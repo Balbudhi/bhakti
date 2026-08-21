@@ -314,7 +314,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "pārvatī",
-        "gloss": "the daughter of the mountain, consort of Shiva",
+        "gloss": "Śiva's consort; mountain-born goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

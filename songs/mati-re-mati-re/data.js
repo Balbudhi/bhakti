@@ -1129,7 +1129,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1675,10 +1675,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 52.2,
-    "end": 56.0
+    "end": 56
   },
   {
-    "start": 56.0,
+    "start": 56,
     "end": 63.87
   },
   {

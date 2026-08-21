@@ -365,7 +365,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ayodhyā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma's royal city",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -424,7 +424,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "daśarath",
-        "gloss": "proper name or untranslated term",
+        "gloss": "king of Ayodhyā; father of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1173,10 +1173,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 65.4,
-    "end": 83.0
+    "end": 83
   },
   {
-    "start": 83.0,
+    "start": 83,
     "end": 99.9
   },
   {

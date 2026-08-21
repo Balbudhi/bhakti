@@ -257,7 +257,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "credit / reputation",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },

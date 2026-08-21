@@ -515,7 +515,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "prārabdha",
-        "gloss": "begun; allotted past destiny",
+        "gloss": "already-begun karma bearing its present result",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -562,7 +562,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "prārabdha",
-        "gloss": "begun; allotted past destiny",
+        "gloss": "already-begun karma bearing its present result",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1529,10 +1529,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 65.725,
-    "end": 68.0
+    "end": 68
   },
   {
-    "start": 68.0,
+    "start": 68,
     "end": 70.275
   },
   {

@@ -250,7 +250,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārvatī",
-        "gloss": "Goddess Pārvatī",
+        "gloss": "Śiva's consort; mountain-born goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1239,7 +1239,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārvatī",
-        "gloss": "Goddess Pārvatī",
+        "gloss": "Śiva's consort; mountain-born goddess",
         "concept_key": "",
         "preserve_in_english": false
       }

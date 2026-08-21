@@ -465,7 +465,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārvatī",
-        "gloss": "the Mountain Daughter / Shiva's consort",
+        "gloss": "Śiva's consort; mountain-born goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -965,7 +965,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },

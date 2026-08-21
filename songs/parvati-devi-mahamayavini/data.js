@@ -56,7 +56,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Pārvatī",
-        "gloss": "daughter of the mountain (Goddess Parvati)",
+        "gloss": "Śiva's consort; mountain-born goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -91,7 +91,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Pārvatī",
-        "gloss": "daughter of the mountain (Goddess Parvati)",
+        "gloss": "Śiva's consort; mountain-born goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -518,18 +518,18 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 66.1,
-    "end": 80.0
+    "end": 80
   },
   {
-    "start": 80.0,
+    "start": 80,
     "end": 89.3
   },
   {
     "start": 89.3,
-    "end": 103.0
+    "end": 103
   },
   {
-    "start": 103.0,
+    "start": 103,
     "end": 117.35
   },
   {

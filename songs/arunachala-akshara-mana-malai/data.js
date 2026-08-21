@@ -7892,7 +7892,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "we",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },

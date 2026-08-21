@@ -1324,7 +1324,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8247,10 +8247,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 49.3,
-    "end": 59.0
+    "end": 59
   },
   {
-    "start": 59.0,
+    "start": 59,
     "end": 69.2
   },
   {
@@ -8343,10 +8343,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 222.25,
-    "end": 226.0
+    "end": 226
   },
   {
-    "start": 226.0,
+    "start": 226,
     "end": 234.1
   },
   {
@@ -8383,10 +8383,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 300.15,
-    "end": 309.0
+    "end": 309
   },
   {
-    "start": 309.0,
+    "start": 309,
     "end": 316.675
   },
   {
@@ -8495,10 +8495,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 480.1,
-    "end": 483.0
+    "end": 483
   },
   {
-    "start": 483.0,
+    "start": 483,
     "end": 487.4
   },
   {
@@ -8515,10 +8515,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 502.6,
-    "end": 516.0
+    "end": 516
   },
   {
-    "start": 516.0,
+    "start": 516,
     "end": 520.35
   },
   {
@@ -8619,10 +8619,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 624.95,
-    "end": 637.0
+    "end": 637
   },
   {
-    "start": 637.0,
+    "start": 637,
     "end": 642.1
   },
   {

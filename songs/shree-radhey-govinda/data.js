@@ -1727,7 +1727,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rādhā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Kṛṣṇa's beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2279,10 +2279,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 119.375,
-    "end": 122.0
+    "end": 122
   },
   {
-    "start": 122.0,
+    "start": 122,
     "end": 126.8
   },
   {

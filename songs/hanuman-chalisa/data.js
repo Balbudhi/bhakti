@@ -2046,7 +2046,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārada",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sage and divine minstrel",
         "concept_key": "",
         "preserve_in_english": false
       },

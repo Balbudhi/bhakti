@@ -183,7 +183,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Vaiṣṇo",
-        "gloss": "proper name or untranslated term",
+        "gloss": "mountain goddess worshipped at Katra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -249,7 +249,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śraddhā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "faith; trusting devotional commitment",
         "concept_key": "",
         "preserve_in_english": false
       },

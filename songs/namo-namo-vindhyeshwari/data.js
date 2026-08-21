@@ -1310,7 +1310,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rādhikā",
-        "gloss": "Radha; divine consort of Krishna",
+        "gloss": "Kṛṣṇa's beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       },

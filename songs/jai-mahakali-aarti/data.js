@@ -1295,7 +1295,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Brahmā",
-        "gloss": "the creator god",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },

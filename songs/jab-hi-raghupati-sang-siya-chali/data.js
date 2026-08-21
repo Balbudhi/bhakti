@@ -710,7 +710,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaikeyī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma's stepmother, queen of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1047,10 +1047,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 156.2,
-    "end": 161.0
+    "end": 161
   },
   {
-    "start": 161.0,
+    "start": 161,
     "end": 171.3
   },
   {
