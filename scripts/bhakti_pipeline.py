@@ -72,7 +72,7 @@ def parse_args() -> argparse.Namespace:
                         help="Independent songs to process concurrently (default: 7; outbound API calls are separately rate-gated).")
     parser.add_argument("--model", default=MODEL)
     parser.add_argument("--economy", action="store_true",
-                        help="Use the same Gemini model through OpenRouter's half-price asynchronous Batch API.")
+                        help="Use synchronous Gemini for audio stages and half-price OpenRouter Batch for text-only stages.")
     parser.add_argument("--publish", action="store_true",
                         help="Generate readers and update data/songs.js after all required checks pass.")
     parser.add_argument("--generate-only", action="store_true",
@@ -261,6 +261,18 @@ def listener_audio_sources(song_dir: Path) -> list[dict[str, str]]:
     preferred = [".webm", ".ogg", ".flac", ".wav", ".mp3", ".m4a"]
     return [{"src": f"audio{suffix}", "type": types[suffix]}
             for suffix in preferred if (song_dir / f"audio{suffix}").is_file()]
+
+
+def published_audio_sources(song_dir: Path) -> list[dict[str, str]]:
+    """Use release-hosted media when published, with local files as a dev fallback."""
+    manifest = read_packet(ROOT / "data" / "media.json") or {}
+    sources = manifest.get("songs", {}).get(song_dir.name, []) if isinstance(manifest, dict) else []
+    if isinstance(sources, list) and sources:
+        valid = [{"src": source["src"], "type": source["type"]} for source in sources
+                 if isinstance(source, dict) and source.get("src") and source.get("type")]
+        if valid:
+            return valid
+    return listener_audio_sources(song_dir)
 
 
 def preferred_listener_audio(song_dir: Path) -> Path:
@@ -904,7 +916,9 @@ def refine_timing_chunk(
 ) -> dict[str, Any]:
     targets = chunk["target_occurrences"]
     cache_key = {
-        "model": options.model,
+        # `:batch` is only a transport choice. Audio requests always use the
+        # same synchronous base model, so fast/economy runs share evidence.
+        "model": gemini.batch_base_model(options.model),
         "reasoning_effort": reasoning_effort,
         "max_coarse_delta": max_coarse_delta,
         "clip_start": chunk["clip_start"],
@@ -967,6 +981,8 @@ Return strict JSON only:
     previous = -1.0
     for index, raw in enumerate(packet.get("starts", [])):
         try:
+            if index >= len(targets) or raw["occurrence_id"] != targets[index]["occurrence_id"]:
+                raise ValueError
             point = chunk["clip_start"] + float(raw["start"])
             if not chunk["clip_start"] <= point <= chunk["clip_end"] or point <= previous:
                 raise ValueError
@@ -1224,6 +1240,9 @@ def refine_all_starts(
     duration: float,
     options: argparse.Namespace,
     cache_dir: Path | None = None,
+    *,
+    coarse_is_evidence: bool = True,
+    max_coarse_delta: float = 20.0,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[str]]:
     chunks = build_timing_chunks(occurrences, coarse_sequence, duration)
     if cache_dir:
@@ -1237,17 +1256,22 @@ def refine_all_starts(
                 lambda chunk: refine_timing_chunk(
                     audio, occurrences, chunk, options, destination,
                     cache_dir / f"window-{chunk['index']:03d}.json" if cache_dir else None,
+                    max_coarse_delta=max_coarse_delta,
                 ),
                 chunks,
             ))
 
+    # A model-produced full-track start is independent timing evidence. A
+    # deterministic fallback grid is only a routing hint and must never vote in
+    # onset consensus or reject an accurate clip-relative measurement.
     measurements: dict[str, list[float]] = {
-        occurrence["occurrence_id"]: [float(coarse_sequence[index]["start"])]
+        occurrence["occurrence_id"]: ([float(coarse_sequence[index]["start"])]
+                                       if coarse_is_evidence else [])
         for index, occurrence in enumerate(occurrences)
     }
     for report in reports:
-        if report["validation_errors"]:
-            continue
+        # One malformed onset must not erase every valid onset returned in the
+        # same structured window.
         for entry in report["starts"]:
             measurements[entry["occurrence_id"]].append(entry["start"])
     unresolved = [index for index, occurrence in enumerate(occurrences)
@@ -1258,7 +1282,8 @@ def refine_all_starts(
         grouped: dict[int, list[int]] = {}
         for index in unresolved:
             values = measurements[occurrences[index]["occurrence_id"]]
-            grouped.setdefault(int(median(values) // 120.0), []).append(index)
+            routing_point = median(values) if values else float(coarse_sequence[index]["start"])
+            grouped.setdefault(int(routing_point // 120.0), []).append(index)
         dispute_chunks = []
         for group, indices in sorted(grouped.items()):
             core_start, core_end = group * 120.0, min(duration, (group + 1) * 120.0)
@@ -1274,7 +1299,11 @@ def refine_all_starts(
                 "target_indices": span_indices,
                 "target_occurrences": [
                     {**occurrences[index],
-                     "coarse_source_start": median(measurements[occurrences[index]["occurrence_id"]])}
+                     "coarse_source_start": (
+                         median(measurements[occurrences[index]["occurrence_id"]])
+                         if measurements[occurrences[index]["occurrence_id"]]
+                         else float(coarse_sequence[index]["start"])
+                     )}
                     for index in span_indices
                 ],
                 "preceding_context": occurrences[first - 1] if first else None,
@@ -1287,12 +1316,11 @@ def refine_all_starts(
                     lambda chunk: refine_timing_chunk(
                         audio, occurrences, chunk, options, destination,
                         cache_dir / f"dispute-{chunk['index']:03d}.json" if cache_dir else None,
+                        max_coarse_delta=max_coarse_delta,
                     ),
                     dispute_chunks,
                 ))
         for report in dispute_reports:
-            if report["validation_errors"]:
-                continue
             for entry in report["starts"]:
                 measurements[entry["occurrence_id"]].append(entry["start"])
         unresolved = [index for index, occurrence in enumerate(occurrences)
@@ -1403,6 +1431,8 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
             sequence, refinements, refinement_errors = refine_all_starts(
                 model_audio, occurrences, fallback_coarse_sequence, duration, options,
                 song_dir / ".transcription" / "pipeline" / "timing-windows",
+                coarse_is_evidence=False,
+                max_coarse_delta=duration,
             )
             if not refinement_errors:
                 coarse_sequence = fallback_coarse_sequence
@@ -1505,7 +1535,7 @@ Before any later translation, explicitly reconstruct the semantic frame: who is 
 
 Explain internal morphemes inside the token's `gloss` or `grammar_note`. Give a short grammar note for ellipsis, agreement, sandhi, compounds, or syntax. Choose the contextually supported sense of a polysemous word; do not call ordinary dictionary polysemy uncertain. Use uncertainty only when the audited lyric itself remains genuinely unresolved. Do not write a fluent English sentence in this stage.
 
-Only terms in the CURATED PRESERVED-TERM REGISTRY may remain in IAST in English. For a matching term, set `concept_key`, set `preserve_in_english=true`, use the canonical IAST form later, and write a short context-specific hover gloss rather than a flattening synonym. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a proper name or divine title, explain its identity or role rather than merely spelling the same name again. In particular, bare “illusion” is not an adequate replacement for `māyā`. For ordinary words, set `concept_key` to the empty string and `preserve_in_english=false`. If a new term seems irreducible but is not curated, do not add it: put the candidate and reason in uncertainty so publication stops for human review.
+Only terms in the CURATED PRESERVED-TERM REGISTRY may remain in IAST in English. For a matching term, set `concept_key`, set `preserve_in_english=true`, use the canonical IAST form later, and write a short context-specific hover gloss rather than a flattening synonym. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a proper name or divine title, explain its identity or role rather than merely spelling the same name again. Build a local glossary while processing this song: when the same displayed token recurs in the same grammatical and devotional role, reuse its most specific established explanation verbatim. A changed explanation is allowed only when the local syntax or imagery materially changes; say why in that line's grammar note. In particular, bare “illusion” is not an adequate replacement for `māyā`. For ordinary words, set `concept_key` to the empty string and `preserve_in_english=false`. If a new term seems irreducible but is not curated, do not add it: put the candidate and reason in uncertainty so publication stops for human review.
 
 CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
@@ -1552,20 +1582,53 @@ Return strict JSON:
                         and not gloss_contract_errors(batch, cached_rows)):
                     return cached
             start = index * 40
-            context = lines[max(0, start - 2):start] + lines[start + len(batch):start + len(batch) + 2]
-            response = gemini.call(options.model, gemini.key(), prompt_for(batch, context), audio=None,
-                                   timeout=options.timeout, response_schema=schema,
-                                   schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
-                                   max_completion_tokens=65536)
-            response["packet"]["glosses"] = normalize_gloss_rows(batch, response["packet"].get("glosses", []))
-            returned = [row.get("id") for row in response["packet"].get("glosses", [])]
-            if returned != expected:
-                raise RuntimeError(f"gloss batch {index} returned IDs out of order or incomplete")
-            mapping_errors = gloss_contract_errors(batch, response["packet"]["glosses"])
-            if mapping_errors:
-                raise RuntimeError(f"gloss batch {index} violates surface-token mapping: {mapping_errors[:3]}")
-            packet = {"target_ids": expected, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
-                      "response": response}
+
+            def request(target_lines: list[dict[str, Any]], absolute_start: int, label: str) -> dict[str, Any]:
+                target_ids = [line["id"] for line in target_lines]
+                context = (lines[max(0, absolute_start - 2):absolute_start]
+                           + lines[absolute_start + len(target_lines):absolute_start + len(target_lines) + 2])
+                response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
+                                       timeout=options.timeout, response_schema=schema,
+                                       schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
+                                       max_completion_tokens=65536)
+                response["packet"]["glosses"] = normalize_gloss_rows(
+                    target_lines, response["packet"].get("glosses", [])
+                )
+                returned = [row.get("id") for row in response["packet"].get("glosses", [])]
+                if returned != target_ids:
+                    raise RuntimeError(f"gloss batch {label} returned IDs out of order or incomplete")
+                mapping_errors = gloss_contract_errors(target_lines, response["packet"]["glosses"])
+                if mapping_errors:
+                    raise RuntimeError(f"gloss batch {label} violates surface-token mapping: {mapping_errors[:3]}")
+                return response
+
+            if len(batch) > 20:
+                children = []
+                for child_index, offset in enumerate(range(0, len(batch), 20)):
+                    child = batch[offset:offset + 20]
+                    child_ids = [line["id"] for line in child]
+                    child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
+                    child_packet = read_packet(child_path)
+                    if not (child_packet and child_packet.get("target_ids") == child_ids
+                            and child_packet.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
+                            and not options.force):
+                        child_packet = {
+                            "target_ids": child_ids,
+                            "gloss_contract_version": GLOSS_CONTRACT_VERSION,
+                            "response": request(child, start + offset, f"{index}.{child_index}"),
+                        }
+                        write_json(child_path, child_packet)
+                    children.append(child_packet)
+                response = {
+                    "packet": {"glosses": [row for child in children
+                                            for row in child["response"]["packet"]["glosses"]]},
+                    "resolved_model": options.model,
+                }
+                packet = {"target_ids": expected, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
+                          "response": response, "child_batches": children}
+            else:
+                packet = {"target_ids": expected, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
+                          "response": request(batch, start, str(index))}
             write_json(cache_path, packet)
             return packet
 
@@ -1621,7 +1684,7 @@ def independently_review_translations(
         evidence = [{"source": line, "gloss": gloss_by_id[line["id"]],
                      "draft": translation_by_id[line["id"]]} for line in batch]
         fingerprint = hashlib.sha256(json.dumps(
-            {"version": TRANSLATION_INPUT_VERSION, "model": options.model, "evidence": evidence,
+            {"version": TRANSLATION_INPUT_VERSION, "model": gemini.batch_base_model(options.model), "evidence": evidence,
              "provided_translation": provided_translation}, ensure_ascii=False, sort_keys=True,
         ).encode()).hexdigest()
         path = cache_dir / f"batch-{index:03d}.json"
@@ -1661,7 +1724,7 @@ LOCKED HUMAN TRANSLATION (or none):
                 child_evidence = evidence[offset:offset + 10]
                 child_ids = expected[offset:offset + 10]
                 child_fingerprint = hashlib.sha256(json.dumps(
-                    {"version": TRANSLATION_INPUT_VERSION, "model": options.model,
+                    {"version": TRANSLATION_INPUT_VERSION, "model": gemini.batch_base_model(options.model),
                      "evidence": child_evidence, "provided_translation": provided_translation},
                     ensure_ascii=False, sort_keys=True,
                 ).encode()).hexdigest()
@@ -1974,7 +2037,7 @@ def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:
     """Prefer the audited scholarly lyric when it is evidently the source title."""
     if not candidate or not lines:
         return candidate
-    first = str(lines[0].get("roman", "")).strip()
+    first = naming.canonical_iast(lines[0].get("roman", "")).strip()
     source_key = naming.compact(naming.common_romanization(candidate))
     lyric_key = naming.compact(naming.common_romanization(first))
     similar = difflib.SequenceMatcher(None, source_key, lyric_key).ratio()
@@ -2023,9 +2086,9 @@ def page_html(meta: dict[str, Any]) -> str:
   <title>{escape(title)}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/style.css" />
-  <link rel="stylesheet" href="../../assets/song.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css?v=contract-20260821-4" />
+  <link rel="stylesheet" href="../../assets/song.css?v=contract-20260821-4" />
 </head>
 <body>
   <main class="song-page">
@@ -2042,9 +2105,9 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260821-2"></script>
-  <script src="../../assets/song.js?v=contract-20260821-2"></script>
-  <script src="../../assets/pwa.js?v=contract-20260821-2"></script>
+  <script src="data.js?v=contract-20260821-4"></script>
+  <script src="../../assets/song.js?v=contract-20260821-4"></script>
+  <script src="../../assets/pwa.js?v=contract-20260821-4"></script>
 </body>
 </html>
 '''
@@ -2128,7 +2191,7 @@ def publication_errors(audited: dict[str, Any], timing: dict[str, Any], glosses:
     return errors
 
 
-def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any]) -> None:
+def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
     errors = publication_errors(audited, timing, glosses, translations)
     if errors:
         raise RuntimeError("publication blocked: " + "; ".join(errors))
@@ -2163,7 +2226,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "writer": writer, "singer": singer, "composer": composer,
             "languages": languages,
             "subjectTags": subjects, "searchAliases": aliases,
-            "audioSources": listener_audio_sources(song_dir),
+            "audioSources": published_audio_sources(song_dir),
             "timingStatus": "start-only-reviewed",
             "translationStatus": "gloss-derived literal",
             "sourceStatus": "reviewed"}
@@ -2171,12 +2234,14 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     for line in lines:
         line_id = line["id"]
         row = translation_by_id[line_id]
-        words = [gloss_policy.clean_word(word) for word in gloss_by_id[line_id].get("word_glosses", [])]
+        words = [gloss_policy.clean_word({**word, "roman": naming.canonical_iast(word.get("roman", ""))})
+                 for word in gloss_by_id[line_id].get("word_glosses", [])]
         source = line.get("source_text", "")
         line_data[line_id] = {"source": source, "sourceLanguage": language_code((meta["languages"] or [""])[0]),
                               "sourceWords": source_word_map.build_source_words(source, words),
-                              "roman": line.get("roman", ""), "english": segment_english(row.get("segments", []), row.get("literal_english", "")),
-                              "words": words, "grammarNote": gloss_by_id[line_id].get("grammar_note", "")}
+                              "roman": naming.canonical_iast(line.get("roman", "")), "english": segment_english(row.get("segments", []), row.get("literal_english", "")),
+                              "words": words,
+                              "grammarNote": naming.canonical_iast(gloss_by_id[line_id].get("grammar_note", ""))}
     sequence = [{"ref": event["ref"],
                  "section": event.get("section") or next((line.get("kind", "verse")
                                                            for line in lines if line["id"] == event["ref"]), "verse"),
@@ -2190,7 +2255,8 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "window.SONG_TIMINGS = " + json.dumps(times, ensure_ascii=False, indent=2) + ";\n")
     (song_dir / "data.js").write_text(data, encoding="utf-8")
     (song_dir / "index.html").write_text(page_html(meta), encoding="utf-8")
-    write_catalogue()
+    if write_catalogue_after:
+        write_catalogue()
 
 
 def reported_cost(*artifacts: Any) -> float | None:
@@ -2227,6 +2293,32 @@ def preflight_blocked_reason(options: argparse.Namespace) -> str | None:
     return None
 
 
+def is_sanskrit_first_pass(raw: dict[str, Any]) -> bool:
+    metadata = raw.get("packet", {}).get("metadata", {})
+    languages = metadata.get("languages", []) if isinstance(metadata, dict) else []
+    return any(normalized_language(str(language)) == "Sanskrit" for language in languages)
+
+
+def language_hold_packet(song_dir: Path, source: dict[str, Any], raw: dict[str, Any], started: float) -> dict[str, Any]:
+    """Persist the first-pass evidence but deliberately stop an uncertain song.
+
+    This is used only for an explicitly opt-in intake queue. It lets a first
+    transcription determine whether a conservatively held recording is Sanskrit
+    without pretending a partial record is publishable or deleting the audio.
+    """
+    packet = {
+        "source": source,
+        "created_at": time.time(),
+        "transcript": raw,
+        "publication_status": "held-language",
+        "language_hold_reason": "First transcription identified Sanskrit; audit, timing, glossing, translation, and reader generation were intentionally skipped.",
+        "elapsed_seconds": round(time.time() - started, 2),
+        "reported_openrouter_cost": reported_cost(raw),
+    }
+    write_json(song_dir / ".transcription" / "pipeline" / "song-packet.json", packet)
+    return packet
+
+
 def hydrate_pipeline_artifacts(packet_dir: Path) -> None:
     summary = read_packet(packet_dir / "song-packet.json") or {}
     for filename, key in (
@@ -2251,6 +2343,11 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     audio = preferred_listener_audio(song_dir)
     started = time.time()
     raw = transcript(song_dir, source, audio, options)
+    if job.get("holdIfSanskrit") and is_sanskrit_first_pass(raw):
+        packet = language_hold_packet(song_dir, source, raw, started)
+        return {"slug": job["slug"], "status": packet["publication_status"],
+                "elapsed_seconds": packet["elapsed_seconds"],
+                "reported_openrouter_cost": packet["reported_openrouter_cost"]}
     audited = audit_transcript(song_dir, raw, audio, options)
     timing = align(song_dir, audited, audio, options)
     glosses = gloss(song_dir, audited, options)
@@ -2309,7 +2406,7 @@ def main() -> int:
             try:
                 if not all((audited, timing, glosses, translations)):
                     raise RuntimeError(f"missing pipeline artifact for {job['slug']}")
-                generate(song_dir, job, source, audited, timing, glosses, translations)
+                generate(song_dir, job, source, audited, timing, glosses, translations, write_catalogue_after=False)
                 summary = read_packet(packet_dir / "song-packet.json") or {}
                 summary["publication_status"] = "generated"
                 write_json(packet_dir / "song-packet.json", summary)
@@ -2317,6 +2414,7 @@ def main() -> int:
             except Exception as exc:
                 result["status"] = "blocked"
                 result["error"] = str(exc)
+        write_catalogue()
     print(json.dumps(sorted(results, key=lambda item: item["slug"]), ensure_ascii=False, indent=2))
     return 1 if any(item["status"] == "blocked" for item in results) else 0
 

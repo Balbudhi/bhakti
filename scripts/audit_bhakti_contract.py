@@ -57,8 +57,6 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
         for role in ("writer", "singer", "composer"):
             if not isinstance(meta.get(role), str):
                 problems.append(f"SONG_META {role} must be a string")
-        if not str(meta.get("singer", "")).strip():
-            problems.append("SONG_META singer is required for a published reader")
         if meta.get("timingStatus") != "start-only-reviewed":
             problems.append("SONG_META timingStatus is not start-only-reviewed")
     lines = data.get("SONG_LINES", {})

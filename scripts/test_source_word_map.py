@@ -32,6 +32,12 @@ class SourceWordMapTests(unittest.TestCase):
         self.assertEqual(mapped[1], {"text": "ಕರಗದವರಲ್ಲಿ", "wordIndices": [1, 2]})
         self.assertEqual(mapped[2], {"text": "ಮಜ್ಜನವನೊಲ್ಲೆಯಯ್ಯಾ", "wordIndices": [3, 4]})
 
+    def test_tamil_compound_maps_to_reviewed_roman_units(self) -> None:
+        words = [{"roman": "muṭiyaṭi"}, {"roman": "kāṇā"}, {"roman": "muṭi"}, {"roman": "viṭuttu"}]
+        mapped = source_word_map.build_source_words("முடியடி காணா முடி விடுத்து", words)
+        self.assertEqual(mapped[0], {"text": "முடியடி", "wordIndices": [0]})
+        self.assertEqual(mapped[-1], {"text": "விடுத்து", "wordIndices": [3]})
+
     def test_every_published_source_mapping_is_reproducible(self) -> None:
         for path in sorted((ROOT / "songs").glob("*/data.js")):
             data = audit_bhakti_contract.load_data(path)

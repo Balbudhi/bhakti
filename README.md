@@ -14,14 +14,19 @@ control; it does not force-refresh every launch or interrupt active audio.
 For hosted intake without leaving a laptop awake, use the repository's
 `Intake Bhakti Songs` GitHub Actions workflow on `main`. It runs the same
 `scripts/bhakti_pipeline.py --publish` path as local intake, commits generated
-readers, and deploys Pages in the same run. It is for normal synchronous jobs;
-the half-price `--economy` Batch API mode remains a separate path because
-OpenRouter batches can take up to about 24 hours while GitHub-hosted jobs are
-limited to 6 hours.
+readers, uploads high-quality audio to the repository's media release, and
+deploys Pages in the same run. Its mode selector defaults to hybrid `economy`:
+the audio-dependent transcription, audit, and timing stages remain synchronous
+because OpenRouter Batch rejects multimodal input, while the text-only gloss
+and translation stages use the same Gemini 3.7 Flash prompts through Batch at
+half price. This reduces a typical full-song bill by about 28%, not 50%. Choose
+`fast` for fully synchronous completion. OpenRouter permits a text batch to take
+up to about 24 hours while a hosted job has a 5.5-hour ceiling, so submit smaller
+economy groups rather than one enormous hosted batch.
 
 To run it: open **Actions → Intake Bhakti Songs → Run workflow**, paste one
 publicly downloadable HTTPS media link per line (up to 50), choose 1–7 workers,
-and run it. URLs supported by `yt-dlp` use the same intake path. The job
+choose `economy` or `fast`, and run it. URLs supported by `yt-dlp` use the same intake path. The job
 is owner-only even if the repository is public; it has no issue/comment,
 pull-request, webhook, or public-form trigger. Inputs must resolve only to
 public internet addresses, may not contain credentials, and the OpenRouter key
@@ -46,4 +51,5 @@ The August 21, 2026 live probe found that the current `bhakti` Google project is
 without available quota, so Google rejects inference with a
 permanent `429`. Hosted intake is therefore pinned to OpenRouter. Direct mode
 remains available for a future funded or Free Tier project, but it does not
-silently emulate `--economy`; OpenRouter is the supported Batch API path.
+silently emulate `--economy`; OpenRouter supplies the text-only half-price
+portion of the hybrid economy path.

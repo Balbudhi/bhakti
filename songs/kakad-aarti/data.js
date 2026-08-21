@@ -121,7 +121,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kakad-aarti.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -3492,11 +3492,11 @@ window.SONG_LINES = {
   "line-038": {
     "source": "मैं अंधा हूँ बन्दा तुम्हारा",
     "sourceLanguage": "hi",
-    "roman": "Maĩ andhā hū̃ bandā tumhārā",
+    "roman": "Maĩ andhā hū̃ bandā tumhārā",
     "english": "{0,2:I am}{4: your}{1: blind}{3: servant.}",
     "words": [
       {
-        "roman": "Maĩ",
+        "roman": "Maĩ",
         "gloss": "I"
       },
       {
@@ -3553,11 +3553,11 @@ window.SONG_LINES = {
   "line-039": {
     "source": "मैं ना जानूँ मैं ना जानूँ मैं ना जानूँ अल्ला इलाही",
     "sourceLanguage": "hi",
-    "roman": "Maĩ nā jānū̃ maĩ nā jānū̃ maĩ nā jānū̃ Allā Ilāhī",
+    "roman": "Maĩ nā jānū̃ maĩ nā jānū̃ maĩ nā jānū̃ Allā Ilāhī",
     "english": "{0,1,2:I do not know,}{3,4,5: I do not know,}{6,7,8: I do not know}{9,10: Allah or the Divine.}",
     "words": [
       {
-        "roman": "Maĩ",
+        "roman": "Maĩ",
         "gloss": "I"
       },
       {
@@ -3569,7 +3569,7 @@ window.SONG_LINES = {
         "gloss": "know"
       },
       {
-        "roman": "maĩ",
+        "roman": "maĩ",
         "gloss": "I"
       },
       {
@@ -3581,7 +3581,7 @@ window.SONG_LINES = {
         "gloss": "know"
       },
       {
-        "roman": "maĩ",
+        "roman": "maĩ",
         "gloss": "I"
       },
       {
@@ -3594,14 +3594,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "Allā",
-        "gloss": "Allah"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "Ilāhī",
         "gloss": "the Divine / divine secrets"
       }
     ],
-    "grammarNote": "Triple emphatic repetition of 'maĩ nā jānū̃' with the direct object phrase 'Allā Ilāhī' (referring to esoteric theological knowledge).",
+    "grammarNote": "Triple emphatic repetition of 'maĩ nā jānū̃' with the direct object phrase 'Allā Ilāhī' (referring to esoteric theological knowledge).",
     "sourceWords": [
       {
         "text": "मैं",
@@ -3674,7 +3674,7 @@ window.SONG_LINES = {
   "line-040": {
     "source": "खाली जमाना मैंने गवाया",
     "sourceLanguage": "hi",
-    "roman": "Khālī jamānā maĩne gavāyā",
+    "roman": "Khālī jamānā maĩne gavāyā",
     "english": "{0:In vain}{2,3: have I wasted}{1: a lifetime.}",
     "words": [
       {
@@ -3686,7 +3686,7 @@ window.SONG_LINES = {
         "gloss": "lifetime / age / era"
       },
       {
-        "roman": "maĩne",
+        "roman": "maĩne",
         "gloss": "I (ergative)"
       },
       {
@@ -3694,7 +3694,7 @@ window.SONG_LINES = {
         "gloss": "wasted / lost"
       }
     ],
-    "grammarNote": "Transitive perfective construction with ergative pronoun maĩne and masculine direct object jamānā.",
+    "grammarNote": "Transitive perfective construction with ergative pronoun maĩne and masculine direct object jamānā.",
     "sourceWords": [
       {
         "text": "खाली",
@@ -4170,11 +4170,11 @@ window.SONG_LINES = {
   "line-046": {
     "source": "मैं दासी दुबली नामा की जान श्रीहरी",
     "sourceLanguage": "hi",
-    "roman": "Maĩ dāsī dubalī Nāmā kī jāna Śrīharī",
+    "roman": "Maĩ dāsī dubalī Nāmā kī jāna Śrīharī",
     "english": "{5:Know that}{0: I am}{1,2: the frail maidservant}{3,4: of Nama,}{6: O Sri Hari.}",
     "words": [
       {
-        "roman": "Maĩ",
+        "roman": "Maĩ",
         "gloss": "I"
       },
       {
@@ -4202,7 +4202,7 @@ window.SONG_LINES = {
         "gloss": "O Sri Hari"
       }
     ],
-    "grammarNote": "Devotional allusion to Saint Janabai (Nāmācī Jānī); dāsī dubalī are predicate adjectives qualifying maĩ.",
+    "grammarNote": "Devotional allusion to Saint Janabai (Nāmācī Jānī); dāsī dubalī are predicate adjectives qualifying maĩ.",
     "sourceWords": [
       {
         "text": "मैं",
@@ -4585,7 +4585,7 @@ window.SONG_LINES = {
   "line-051": {
     "source": "होवेगा काकड़ा मंदिर में हो",
     "sourceLanguage": "hi",
-    "roman": "Hovegā kākaṛā mandira mẽ ho",
+    "roman": "Hovegā kākaṛā mandira mẽ ho",
     "english": "{1:The Kakad aarti}{0: will take place}{2,3: in the temple,}{4: O!}",
     "words": [
       {
@@ -4601,7 +4601,7 @@ window.SONG_LINES = {
         "gloss": "temple"
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in"
       },
       {
@@ -4899,11 +4899,11 @@ window.SONG_LINES = {
   "line-055": {
     "source": "मैं पापी पतित मतिमंद हो",
     "sourceLanguage": "hi",
-    "roman": "Maĩ pāpī patita matimanda ho",
+    "roman": "Maĩ pāpī patita matimanda ho",
     "english": "{0:I am}{1: sinful,}{2: fallen,}{3: and dull-witted,}{4: O!}",
     "words": [
       {
-        "roman": "Maĩ",
+        "roman": "Maĩ",
         "gloss": "I"
       },
       {
@@ -4923,7 +4923,7 @@ window.SONG_LINES = {
         "gloss": "O"
       }
     ],
-    "grammarNote": "First-person pronoun maĩ described by a series of three appositional/predicate adjectives.",
+    "grammarNote": "First-person pronoun maĩ described by a series of three appositional/predicate adjectives.",
     "sourceWords": [
       {
         "text": "मैं",
@@ -4960,11 +4960,11 @@ window.SONG_LINES = {
   "line-056": {
     "source": "मैं पापी पतित मतिमंद",
     "sourceLanguage": "hi",
-    "roman": "Maĩ pāpī patita matimanda",
+    "roman": "Maĩ pāpī patita matimanda",
     "english": "{0:I am}{1: sinful,}{2: fallen,}{3: and dull-witted.}",
     "words": [
       {
-        "roman": "Maĩ",
+        "roman": "Maĩ",
         "gloss": "I"
       },
       {
@@ -5447,11 +5447,11 @@ window.SONG_LINES = {
   "line-063": {
     "source": "मैं डूबूँ भवसागर माहीं उद्धरो",
     "sourceLanguage": "hi",
-    "roman": "Maĩ ḍūbū̃ bhavasāgara māhī̃ uddharo",
+    "roman": "Maĩ ḍūbū̃ bhavasāgara māhī̃ uddharo",
     "english": "{0:I}{1: am drowning}{3: in}{2: the ocean of worldly existence;}{4: rescue me!}",
     "words": [
       {
-        "roman": "Maĩ",
+        "roman": "Maĩ",
         "gloss": "I"
       },
       {
@@ -5978,7 +5978,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Dattatreya"
+        "gloss": "Lord Dattātreya"
       },
       {
         "roman": "Sāī̃",
@@ -6484,7 +6484,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīraṅga",
-        "gloss": "Shriranga (Lord Vishnu)"
+        "gloss": "Lord Vishnu"
       }
     ],
     "grammarNote": "Mōkṣa mārgī kō is the indirect object, rāha the direct object, dṛṣṭi sē the instrumental modifier, and Śrīraṅga the subject.",
@@ -6555,7 +6555,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīraṅga",
-        "gloss": "Shriranga"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "āratī",
@@ -7120,7 +7120,7 @@ window.SONG_LINES = {
   "line-086": {
     "source": "अवतीर्ण हुए हैं स्वामी दत्त दिगंबर",
     "sourceLanguage": "hi",
-    "roman": "Avatīrṇa huē haĩ svāmī Datta Digambara",
+    "roman": "Avatīrṇa huē haĩ svāmī Datta Digambara",
     "english": "{3:Lord }{4:Datta }{5:Digambara }{0,1:has descended }{2:incarnate.}",
     "words": [
       {
@@ -7132,7 +7132,7 @@ window.SONG_LINES = {
         "gloss": "become / have"
       },
       {
-        "roman": "haĩ",
+        "roman": "haĩ",
         "gloss": "are / have"
       },
       {
@@ -7148,7 +7148,7 @@ window.SONG_LINES = {
         "gloss": "sky-clad / Digambara"
       }
     ],
-    "grammarNote": "Periphrastic perfect 'avatīrṇa huē haĩ' with 'svāmī Datta Digambara' as subject.",
+    "grammarNote": "Periphrastic perfect 'avatīrṇa huē haĩ' with 'svāmī Datta Digambara' as subject.",
     "sourceWords": [
       {
         "text": "अवतीर्ण",
@@ -9476,7 +9476,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śirḍī",
-        "gloss": "Shirdi"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "merā",
@@ -10634,11 +10634,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "keśavaṁ",
-        "gloss": "Keshava (accusative singular)"
+        "gloss": "accusative singular"
       },
       {
         "roman": "rāmanārāyaṇaṁ",
-        "gloss": "Rama-Narayana (accusative singular)"
+        "gloss": "accusative singular"
       },
       {
         "roman": "kṛṣṇadāmodaraṁ",
@@ -11800,7 +11800,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīnātha",
-        "gloss": "Sai Nath"
+        "gloss": "Lord Sai"
       },
       {
         "roman": "mahārāja",
@@ -12001,7 +12001,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śeṣa",
-        "gloss": "Shesha (the serpent)"
+        "gloss": "the serpent"
       },
       {
         "roman": "gāte",
@@ -14465,7 +14465,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "Lakshmi (prosperity)"
+        "gloss": "prosperity"
       },
       {
         "roman": "vāsa",

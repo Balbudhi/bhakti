@@ -19,6 +19,14 @@ on:
           - "5"
           - "6"
           - "7"
+      mode:
+        description: "Economy batches text-only stages at half price; audio stays synchronous. Fast is fully synchronous."
+        required: true
+        default: "economy"
+        type: choice
+        options:
+          - "economy"
+          - "fast"
 
 permissions:
   contents: write
@@ -66,8 +74,10 @@ jobs:
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           BHAKTI_GEMINI_PROVIDER: openrouter
+          BHAKTI_API_MAX_CONCURRENCY: "4"
           BHAKTI_WORKFLOW_SONGS: ${{ inputs.songs }}
           BHAKTI_WORKFLOW_WORKERS: ${{ inputs.workers }}
+          BHAKTI_WORKFLOW_MODE: ${{ inputs.mode }}
         run: |
           python3 - <<'PY'
           import os
@@ -102,11 +112,20 @@ jobs:
               "--workers",
               str(workers),
           ]
+          if os.environ["BHAKTI_WORKFLOW_MODE"] == "economy":
+              command.append("--economy")
           for line in lines:
               command.extend(["--url", line])
           print("Running:", " ".join(shlex.quote(part) for part in command))
           raise SystemExit(subprocess.call(command))
           PY
+
+      - name: Publish high-quality listener audio
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/publish_media_release.py
+          python3 scripts/rebuild_public_readers.py
 
       - name: Commit generated readers
         id: commit
@@ -117,15 +136,15 @@ jobs:
           import subprocess
 
           changed = subprocess.run(
-              ["git", "status", "--porcelain=v1", "--untracked-files=all", "--", "data/songs.js", "songs"],
+              ["git", "status", "--porcelain=v1", "--untracked-files=all", "--", "data/media.json", "data/songs.js", "songs"],
               check=True,
               capture_output=True,
               text=True,
           ).stdout.splitlines()
-          allowed_names = {"data.js", "index.html", "audio.m4a", "audio.mp3", "audio.webm", "audio.ogg"}
+          allowed_names = {"data.js", "index.html"}
           for row in changed:
               path = row[3:]
-              if path == "data/songs.js" or (path.startswith("songs/") and path.rsplit("/", 1)[-1] in allowed_names):
+              if path in {"data/media.json", "data/songs.js"} or (path.startswith("songs/") and path.rsplit("/", 1)[-1] in allowed_names):
                   subprocess.run(["git", "add", "--", path], check=True)
           PY
           if git diff --cached --quiet; then

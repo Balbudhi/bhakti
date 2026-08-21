@@ -19,11 +19,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhanga-kudia-mu-sajai-rakhichi.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhanga-kudia-mu-sajai-rakhichi.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -155,7 +155,7 @@ window.SONG_LINES = {
   "jhariba-tumara-krupara": {
     "source": "ଝରିବ ତୁମର କୃପାର ବରଷା",
     "sourceLanguage": "",
-    "roman": "Jhariba tumara kr̥pāra baraṣā",
+    "roman": "Jhariba tumara kṛpāra baraṣā",
     "english": "{3:The rain }{1:of your }{2:grace }{0:will shower,}",
     "words": [
       {
@@ -171,7 +171,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kr̥pāra",
+        "roman": "kṛpāra",
         "gloss": "of grace / of mercy",
         "concept_key": "",
         "preserve_in_english": false
@@ -214,7 +214,7 @@ window.SONG_LINES = {
   "jhariba-mo-hruda-agana": {
     "source": "ଝରିବ ତୁମର କୃପାର ବରଷା ମୋ ହୃଦ ଅଗଣା ପରେ",
     "sourceLanguage": "",
-    "roman": "Jhariba tumara kr̥pāra baraṣā mo hr̥da agaṇā pare",
+    "roman": "Jhariba tumara kṛpāra baraṣā mo hṛda agaṇā pare",
     "english": "{3:The rain }{1:of your }{2:grace }{0:will shower }{7:upon }{6:the courtyard }{4:of my }{5:heart.}",
     "words": [
       {
@@ -230,7 +230,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kr̥pāra",
+        "roman": "kṛpāra",
         "gloss": "of grace / of mercy",
         "concept_key": "",
         "preserve_in_english": false
@@ -248,7 +248,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hr̥da",
+        "roman": "hṛda",
         "gloss": "heart",
         "concept_key": "",
         "preserve_in_english": false
@@ -266,7 +266,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'hr̥da agaṇā' functions as a Tatpuruṣa or Karmadhāraya compound ('heart-courtyard'). 'pare' is a locative postposition governing 'agaṇā'.",
+    "grammarNote": "'hṛda agaṇā' functions as a Tatpuruṣa or Karmadhāraya compound ('heart-courtyard'). 'pare' is a locative postposition governing 'agaṇā'.",
     "sourceWords": [
       {
         "text": "ଝରିବ",
@@ -321,7 +321,7 @@ window.SONG_LINES = {
   "niti-sakalaru-sanja": {
     "source": "ନିତି ସକାଳରୁ ସଞ୍ଜ ଯାଏଁ ମୁଁ ଯେ ଖୋଲି ରଖିଥାଏ କୁଡ଼ିଆର ଦ୍ୱାର",
     "sourceLanguage": "",
-    "roman": "Niti sakāḷaru sañja jāē̃ mũ je kholi rakhithāē kuṛiāra dvāra",
+    "roman": "Niti sakāḷaru sañja jāē̃ mũ je kholi rakhithāē kuṛiāra dvāra",
     "english": "{0:Daily, }{1:from morning }{3:until }{2:evening, }{4,5:I }{7:keep }{9:the door }{8:of the hut }{6:open,}",
     "words": [
       {
@@ -349,7 +349,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mũ",
+        "roman": "mũ",
         "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false
@@ -677,7 +677,7 @@ window.SONG_LINES = {
   "mana-sapha-kari": {
     "source": "ମନ ସଫା କରି ହୃଦୟ ରଙ୍ଗାଇ",
     "sourceLanguage": "",
-    "roman": "Mana saphā kari hr̥daya raṅgāi",
+    "roman": "Mana saphā kari hṛdaya raṅgāi",
     "english": "{2:Having made }{0:the mind }{1:clean }{4:and dyed }{3:the heart,}",
     "words": [
       {
@@ -699,7 +699,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hr̥daya",
+        "roman": "hṛdaya",
         "gloss": "heart",
         "concept_key": "",
         "preserve_in_english": false
@@ -795,7 +795,7 @@ window.SONG_LINES = {
   "lodena-kichhi-mu": {
     "source": "ଲୋଡ଼େନା କିଛି ମୁଁ ତୁମ ଛଡ଼ା ସାଈ ଧନ ବା ଦରବ ସିଦ୍ଧି ବା ମୁକତି",
     "sourceLanguage": "",
-    "roman": "Loṛenā kichi mũ tuma chaṛā sāī dhana bā daraba siddhi bā mukati",
+    "roman": "Loṛenā kichi mũ tuma chaṛā sāī dhana bā daraba siddhi bā mukati",
     "english": "{2:I }{0,1:seek nothing }{3,4:besides you, }{5:O Sai—}{6:wealth }{7:or }{8:possessions, }{9:spiritual powers }{10:or }{11:liberation.}",
     "words": [
       {
@@ -811,7 +811,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mũ",
+        "roman": "mũ",
         "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false

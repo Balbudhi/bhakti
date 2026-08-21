@@ -23,6 +23,7 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
     ),
     "Jagannātha": ("jagannatha", "jagannath"),
     "Hanumān": ("hanuman", "hanumant", "maruti", "anjaneya", "pavanputra", "pavanaputra", "bajrangbali"),
+    "Gaṇeśa": ("ganesha", "ganesh", "ganapati", "ganapat", "gajanana", "gajavadan", "ekadanta", "vinayaka"),
     "Śāradā Devī": ("sharada", "sarada"),
     "Śrī Rāmakṛṣṇa": ("ramakrishna", "ramakrshna"),
     # Bare `kali` is excluded because devotional corpora frequently mean the

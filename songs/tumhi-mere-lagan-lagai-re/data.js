@@ -1,13 +1,14 @@
 window.SONG_META = {
   "title": "Tumhī More Lagan Lagāī Re Fakīrwā",
-  "credit": "Shri Chandra Bhanu Satpathy",
-  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
+  "pageCredit": "Deepak Kumar",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "Shri Chandra Bhanu Satpathy",
+  "singer": "Deepak Kumar",
   "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Tumhi Mere Lagan Lagai Re",
     "Satpathy Baba",
+    "Deepak Kumar",
     "Shirdi Sai"
   ],
   "languages": [
@@ -18,7 +19,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tumhi-mere-lagan-lagai-re.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -409,7 +416,7 @@ window.SONG_LINES = {
   },
   "more_ghaṭ_mẽ": {
     "source": "मोरे घट में है तोरी साँस रे फकीरवा",
-    "roman": "More ghaṭ mẽ hai torī sā̃s re fakīrwā",
+    "roman": "More ghaṭ mẽ hai torī sā̃s re fakīrwā",
     "english": "{4:Your }{5:breath }{3:is }{2:within }{0,1:my inner vessel, }{6:O }{7:fakir.}",
     "words": [
       {
@@ -421,7 +428,7 @@ window.SONG_LINES = {
         "gloss": "vessel; body, inner self"
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in, within"
       },
       {

@@ -20,7 +20,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/duniya-de-dukhan.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -702,7 +708,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Ik vārī maiyā merī bigḍī sawār de",
-    "english": "{2:Mother, }{5,6:fix }{3:my }{4:ruined situation }just {0,1:once.}",
+    "english": "{2:Mother, }{5,6:set right }{3:my }{4:ruined state, }just {0,1:once.}",
     "words": [
       {
         "roman": "Ik",
@@ -952,7 +958,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Jad vī tū denī ae mā, nā de ke jatānī ae",
-    "english": "{0,1:Whenever }{2:You }{3,4:give, }{5:Mother, }You {6,8,9:do not boast }{7:after giving.}",
+    "english": "{0,1:Whenever }{2:You }{3,4:give, }{5:Mother, }{6,8,9:You do not make a show }{7:of Your giving.}",
     "words": [
       {
         "roman": "Jad",
@@ -1068,7 +1074,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Sab bachcheyān dī maiyā lāj bachānī ae",
-    "english": "{3:Mother, }You {5,6:save }the {4:honor }{2:of }{0:all }{1:children.}",
+    "english": "{3:Mother, }You {5,6:preserve }{0,1,2:every child's }{4:honor.}",
     "words": [
       {
         "roman": "Sab",

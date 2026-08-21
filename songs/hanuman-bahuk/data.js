@@ -28,11 +28,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bahuk.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bahuk.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -2875,7 +2875,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "drona",
-        "gloss": "Dronacharya",
+        "gloss": "proper name or untranslated term",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3501,7 +3501,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "drona",
-        "gloss": "Dronagiri (the healing mountain)",
+        "gloss": "the healing mountain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4265,7 +4265,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "timi",
-        "gloss": "Timingila fish; sea-monsters",
+        "gloss": "proper name or untranslated term",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7371,7 +7371,7 @@ window.SONG_LINES = {
   "line-054": {
     "source": "देवी देव दानव दयावने वै जोरैं हाथ",
     "sourceLanguage": "bra",
-    "roman": "devī deva dānava dayāvane vai joraĩ hātha",
+    "roman": "devī deva dānava dayāvane vai joraĩ hātha",
     "english": "{0:Goddesses, }{1:gods, }{2:and demons, }{3:becoming humble, }{4:they }{5:join }{6:their hands.}",
     "words": [
       {
@@ -7405,7 +7405,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "joraĩ",
+        "roman": "joraĩ",
         "gloss": "join; fold",
         "concept_key": "",
         "preserve_in_english": false
@@ -7417,7 +7417,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'joraĩ' is a 3rd person plural present verb. 'dayāvane' is an adjectival participle indicating a supplicant, humble state.",
+    "grammarNote": "'joraĩ' is a 3rd person plural present verb. 'dayāvane' is an adjectival participle indicating a supplicant, humble state.",
     "sourceWords": [
       {
         "text": "देवी",
@@ -8415,7 +8415,7 @@ window.SONG_LINES = {
   "line-066": {
     "source": "बालक ज्यों पालिहैं कृपालु मुनि सिद्ध ताको",
     "sourceLanguage": "bra",
-    "roman": "bālaka jyõ pālihaĩ kṛpālu muni siddha tāko",
+    "roman": "bālaka jyõ pālihaĩ kṛpālu muni siddha tāko",
     "english": "{3:Compassionate }{4:sages }{5:and perfected adepts }{2:will nurture }{6:him }{1:like }{0:a child,}",
     "words": [
       {
@@ -8425,13 +8425,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jyõ",
+        "roman": "jyõ",
         "gloss": "just as; like",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "pālihaĩ",
+        "roman": "pālihaĩ",
         "gloss": "will protect; will nurture",
         "concept_key": "",
         "preserve_in_english": false
@@ -8461,7 +8461,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'pālihaĩ' is 3rd person plural future in Braj. 'muni siddha' acts as a collective subject.",
+    "grammarNote": "'pālihaĩ' is 3rd person plural future in Braj. 'muni siddha' acts as a collective subject.",
     "sourceWords": [
       {
         "text": "बालक",
@@ -9340,7 +9340,7 @@ window.SONG_LINES = {
   "line-077": {
     "source": "काजु महाराज के समाज साज साजे हैं ।",
     "sourceLanguage": "bra",
-    "roman": "kāju mahārāja ke samāja sāja sāje haĩ ।",
+    "roman": "kāju mahārāja ke samāja sāja sāje haĩ ।",
     "english": "{4,5,6:and have equipped }{3:the entire host }{0:of tasks }{1,2:of the great King.}",
     "words": [
       {
@@ -9380,7 +9380,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "haĩ",
+        "roman": "haĩ",
         "gloss": "have; are",
         "concept_key": "",
         "preserve_in_english": false
@@ -9494,7 +9494,7 @@ window.SONG_LINES = {
   "line-079": {
     "source": "जुग जुग जग तेरे बिरद बिराजे हैं ॥",
     "sourceLanguage": "bra",
-    "roman": "juga juga jaga तेरे birada birāje haĩ ॥",
+    "roman": "juga juga jaga तेरे birada birāje haĩ ॥",
     "english": "{0:age }{1:after age }{2:in the world }{3:your }{4:heroic titles }{5,6:shine resplendent.}",
     "words": [
       {
@@ -9534,7 +9534,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "haĩ",
+        "roman": "haĩ",
         "gloss": "are",
         "concept_key": "",
         "preserve_in_english": false
@@ -9684,7 +9684,7 @@ window.SONG_LINES = {
   "line-081": {
     "source": "सुनि सकुचानि साधु खलगन गाजे हैं ।",
     "sourceLanguage": "bra",
-    "roman": "suni sakucāni sādhu khalagana gāje haĩ ।",
+    "roman": "suni sakucāni sādhu khalagana gāje haĩ ।",
     "english": "{0:Hearing this, }{2:the virtuous }{1:shrank in dismay, }{3:and the wicked hordes }{4,5:have roared in triumph.}",
     "words": [
       {
@@ -9718,13 +9718,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "haĩ",
+        "roman": "haĩ",
         "gloss": "have",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle 'suni' governs two coordinated subject-verb pairs: 'sādhu sakucāni' and 'khalagana gāje haĩ'.",
+    "grammarNote": "Conjunctive participle 'suni' governs two coordinated subject-verb pairs: 'sādhu sakucāni' and 'khalagana gāje haĩ'.",
     "sourceWords": [
       {
         "text": "सुनि",
@@ -9838,7 +9838,7 @@ window.SONG_LINES = {
   "line-083": {
     "source": "जैसे होत आये हनुमान के निवाजे हैं ॥",
     "sourceLanguage": "bra",
-    "roman": "jaise hota āye hanumāna ke nivāje haĩ ॥",
+    "roman": "jaise hota āye hanumāna ke nivāje haĩ ॥",
     "english": "{0:just as }{5:those favored }{3,4:by Hanuman }{1,2,6:have always been.}",
     "words": [
       {
@@ -9878,13 +9878,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "haĩ",
+        "roman": "haĩ",
         "gloss": "are",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Continuous aspectual auxiliary 'hota āye haĩ' with passive participle 'nivāje' used substantively.",
+    "grammarNote": "Continuous aspectual auxiliary 'hota āye haĩ' with passive participle 'nivāje' used substantively.",
     "sourceWords": [
       {
         "text": "जैसे",
@@ -10052,7 +10052,7 @@ window.SONG_LINES = {
   "line-085": {
     "source": "ढारो बिगारो मैं काको कहा केहि कारन खीझत हौ तो तिहारो ॥",
     "sourceLanguage": "bra",
-    "roman": "ḍhāro bigāro maĩ kāko kahā kehi kārana khījhata hau to tihāro ॥",
+    "roman": "ḍhāro bigāro maĩ kāko kahā kehi kārana khījhata hau to tihāro ॥",
     "english": "{4:What }{3:of whose }{2:have I }{0:torn down }{1:or ruined, }{5:and for what }{6:reason }{7,8:are you angry }{9:at one who is indeed }{10:your own?}",
     "words": [
       {
@@ -10068,7 +10068,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "maĩ",
+        "roman": "maĩ",
         "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false
@@ -11117,7 +11117,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of asyndetic perfective past verbal clauses: 'siṁdhu tare', '[bīra] dale', '[mavāse] jāre haĩ'.",
+    "grammarNote": "Series of asyndetic perfective past verbal clauses: 'siṁdhu tare', '[bīra] dale', '[mavāse] jāre haĩ'.",
     "sourceWords": [
       {
         "text": "सिंधु",
@@ -24498,7 +24498,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "marīc",
-        "gloss": "Maricha [the deceptive demon]",
+        "gloss": "the deceptive demon",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24796,7 +24796,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rama",
+        "gloss": "proper name or untranslated term",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -25112,7 +25112,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rama",
+        "gloss": "proper name or untranslated term",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -27760,7 +27760,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṅkara",
-        "gloss": "Shankara [Shiva]",
+        "gloss": "Shiva",
         "concept_key": "",
         "preserve_in_english": false
       },

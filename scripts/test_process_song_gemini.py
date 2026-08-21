@@ -105,6 +105,35 @@ class ProviderTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "Google Batch is not enabled"):
                 gemini.call("google/gemini-3.7-flash:batch", "secret", "x", audio=None, timeout=5)
 
+    def test_openrouter_economy_keeps_audio_stages_synchronous(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            audio = Path(temporary) / "audio.m4a"
+            audio.write_bytes(b"audio")
+            with mock.patch.dict(os.environ, {"BHAKTI_GEMINI_PROVIDER": "openrouter"}), \
+                    mock.patch.object(gemini, "_wait_for_api_start"), \
+                    mock.patch.object(gemini, "call_batch") as batch, \
+                    mock.patch("urllib.request.urlopen", return_value=completion("google/gemini-3.7-flash")) as opened:
+                gemini.call("google/gemini-3.7-flash:batch", "secret", "x", audio=audio, timeout=5)
+        batch.assert_not_called()
+        payload = json.loads(opened.call_args.args[0].data)
+        self.assertEqual(payload["model"], "google/gemini-3.7-flash")
+        self.assertEqual(payload["messages"][0]["content"][1]["type"], "input_audio")
+
+    def test_openrouter_economy_batches_text_only_stages(self) -> None:
+        result = {
+            "model": "google/gemini-3.7-flash",
+            "choices": [{"message": {"content": '{"ok": true}'}}],
+            "usage": {"cost": 0.1},
+        }
+        with mock.patch.dict(os.environ, {"BHAKTI_GEMINI_PROVIDER": "openrouter"}), \
+                mock.patch.object(gemini, "_wait_for_api_start"), \
+                mock.patch.object(gemini, "call_batch", return_value=result) as batch:
+            parsed = gemini.call(
+                "google/gemini-3.7-flash:batch", "secret", "x", audio=None, timeout=5,
+            )
+        batch.assert_called_once()
+        self.assertEqual(parsed["packet"], {"ok": True})
+
     def test_depleted_google_prepay_is_not_retried(self) -> None:
         self.assertTrue(gemini.permanent_provider_error(
             "google", 429, "Your prepayment credits are depleted.",

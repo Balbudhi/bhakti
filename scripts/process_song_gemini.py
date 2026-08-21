@@ -34,7 +34,7 @@ AUTH_KEY_URL = "https://openrouter.ai/api/v1/auth/key"
 CREDITS_URL = "https://openrouter.ai/api/v1/credits"
 DEFAULT_KEY = Path.home() / "Dev" / "openrouter.key"
 DEFAULT_GOOGLE_KEY = Path.home() / "Dev" / "gemini.key"
-API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "3")))
+API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "4")))
 BATCH_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_BATCH_MAX_CONCURRENCY", "32")))
 API_MIN_START_INTERVAL = max(0.0, float(os.environ.get("BHAKTI_API_MIN_START_INTERVAL", "0.35")))
 _API_SLOTS = threading.BoundedSemaphore(API_MAX_CONCURRENCY)
@@ -263,7 +263,12 @@ def call(
     max_completion_tokens: int | None = None,
 ) -> dict[str, Any]:
     provider = provider_name()
-    if provider == "google" and model.endswith(":batch"):
+    requested_batch = model.endswith(":batch")
+    # OpenRouter Batch rejects every multimodal content part. Economy mode is
+    # therefore hybrid: audio-dependent stages use the synchronous base model,
+    # while later text-only gloss/translation stages retain Batch pricing.
+    effective_model = batch_base_model(model) if requested_batch and audio is not None else model
+    if provider == "google" and effective_model.endswith(":batch"):
         raise RuntimeError("direct Google Batch is not enabled; use OpenRouter for --economy")
     content: list[dict[str, Any]] = [{"type": "text", "text": prompt}]
     if audio:
@@ -273,7 +278,7 @@ def call(
             "input_audio": {"data": audio_data, "format": audio_format},
         })
     payload = {
-        "model": provider_model(model, provider),
+        "model": provider_model(effective_model, provider),
         "temperature": 0,
         "messages": [{"role": "user", "content": content}],
         "response_format": ({"type": "json_schema", "json_schema": {"name": schema_name, "strict": True, "schema": response_schema}}
@@ -292,7 +297,7 @@ def call(
         payload["reasoning_effort"] = reasoning_effort
     if max_completion_tokens:
         payload["max_tokens"] = max_completion_tokens
-    if provider == "openrouter" and model.endswith(":batch"):
+    if provider == "openrouter" and effective_model.endswith(":batch"):
         with _BATCH_SLOTS:
             _wait_for_api_start()
             result = call_batch(payload, api_key, timeout=timeout)
@@ -334,7 +339,7 @@ def call(
     except (KeyError, IndexError, TypeError, ValueError, json.JSONDecodeError) as exc:
         preview = str(locals().get("text", ""))[:800]
         raise RuntimeError(f"Gemini did not return the required JSON packet; content preview: {preview!r}") from exc
-    return {"packet": parsed, "usage": result.get("usage", {}), "resolved_model": result.get("model", model)}
+    return {"packet": parsed, "usage": result.get("usage", {}), "resolved_model": result.get("model", effective_model)}
 
 
 def source_metadata(song_dir: Path) -> dict[str, Any]:

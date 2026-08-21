@@ -19,11 +19,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thara-ku-thara-mu-adhia-paduchi.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thara-ku-thara-mu-adhia-paduchi.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -36,7 +36,7 @@ window.SONG_LINES = {
   "refrain-1": {
     "source": "ଥରକୁ ଥର ତୁଁ ଅଧିଆ ତଡ଼ୁଛି ଗୁରୁବାରେ କୃପା କର",
     "sourceLanguage": "",
-    "roman": "Tharaku thara muṃ adhiā paḍuchi gurubārē kr̥pā kara",
+    "roman": "Tharaku thara muṃ adhiā paḍuchi gurubārē kṛpā kara",
     "english": "{0,1:Time and again }{2:I }{3,4:lie prostrate in vigil; }{5:on Thursday, }{6,7:bestow grace.}",
     "words": [
       {
@@ -76,7 +76,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kr̥pā",
+        "roman": "kṛpā",
         "gloss": "grace / mercy / compassion",
         "concept_key": "",
         "preserve_in_english": false
@@ -1047,7 +1047,7 @@ window.SONG_LINES = {
   "verse-4-line-2": {
     "source": "ପୋଡ଼ା କପାଳ ମୋ ହୀନ ଜନମର ତୁମ କୃପା ନ ମିଳିଲା",
     "sourceLanguage": "",
-    "roman": "Pōḍā kapāḷa mō hīna janamara tuma kr̥pā na miḷilā",
+    "roman": "Pōḍā kapāḷa mō hīna janamara tuma kṛpā na miḷilā",
     "english": "{5,6:your grace }{7,8:did not reach }{0:the ill-fated }{1:brow }{2:of my }{3:lowly }{4:birth.}",
     "words": [
       {
@@ -1087,7 +1087,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kr̥pā",
+        "roman": "kṛpā",
         "gloss": "grace / mercy",
         "concept_key": "",
         "preserve_in_english": false

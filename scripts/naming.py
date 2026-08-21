@@ -42,6 +42,22 @@ def common_romanization(value: str) -> str:
     return value.translate(IAST_TO_COMMON).replace("ngg", "ng").replace("Ngg", "Ng")
 
 
+def canonical_iast(value: object) -> str:
+    """Normalize model-produced vocalic r/l combining rings to standard IAST."""
+    text = str(value or "")
+    replacements = (
+        ("r\u0325\u0304", "ṝ"), ("r\u0304\u0325", "ṝ"),
+        ("R\u0325\u0304", "Ṝ"), ("R\u0304\u0325", "Ṝ"),
+        ("l\u0325\u0304", "ḹ"), ("l\u0304\u0325", "ḹ"),
+        ("L\u0325\u0304", "Ḹ"), ("L\u0304\u0325", "Ḹ"),
+        ("r\u0325", "ṛ"), ("R\u0325", "Ṛ"),
+        ("l\u0325", "ḷ"), ("L\u0325", "Ḷ"),
+    )
+    for source, target in replacements:
+        text = text.replace(source, target)
+    return unicodedata.normalize("NFC", text)
+
+
 def canonical_person(value: object) -> str:
     text = str(value or "").strip()
     if not text:

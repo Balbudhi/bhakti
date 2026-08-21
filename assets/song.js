@@ -551,21 +551,27 @@ function wireInteractions(root) {
   let stickyWord = null;
   let hoverWord  = null;
 
-  root.addEventListener("mouseover", e => {
-    const w = e.target.closest(".word-link");
-    if (!w || w === hoverWord) return;
-    if (hoverWord && hoverWord !== stickyWord) deactivate(hoverWord);
-    hoverWord = w;
-    activate(w);
-  });
-  root.addEventListener("mouseout", e => {
-    const w = e.target.closest(".word-link");
-    if (!w) return;
-    const to = e.relatedTarget;
-    if (to && w.contains(to)) return;
-    if (w !== stickyWord) deactivate(w);
-    if (hoverWord === w) hoverWord = null;
-  });
+  // Touch Safari may synthesize mouseover when karaoke scrolling moves a word
+  // beneath the last touch location. Only a device with a real fine hover
+  // pointer may activate meanings without an explicit click or focus.
+  const hasRealHover = window.matchMedia?.("(hover: hover) and (pointer: fine)").matches;
+  if (hasRealHover) {
+    root.addEventListener("mouseover", e => {
+      const w = e.target.closest(".word-link");
+      if (!w || w === hoverWord) return;
+      if (hoverWord && hoverWord !== stickyWord) deactivate(hoverWord);
+      hoverWord = w;
+      activate(w);
+    });
+    root.addEventListener("mouseout", e => {
+      const w = e.target.closest(".word-link");
+      if (!w) return;
+      const to = e.relatedTarget;
+      if (to && w.contains(to)) return;
+      if (w !== stickyWord) deactivate(w);
+      if (hoverWord === w) hoverWord = null;
+    });
+  }
 
   root.addEventListener("click", e => {
     const w = e.target.closest(".word-link");

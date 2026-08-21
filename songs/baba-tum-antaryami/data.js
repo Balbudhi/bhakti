@@ -1,13 +1,14 @@
 window.SONG_META = {
   "title": "Bābā Tum Antaryāmī",
-  "credit": "Shri Chandra Bhanu Satpathy",
-  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
+  "pageCredit": "Deepak Kumar",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "Shri Chandra Bhanu Satpathy",
+  "singer": "Deepak Kumar",
   "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Baba Tum Antaryami",
     "Satpathy Baba",
+    "Deepak Kumar",
     "Shirdi Sai"
   ],
   "languages": [
@@ -18,7 +19,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baba-tum-antaryami.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -413,7 +420,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "Name"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "kī",

@@ -24,11 +24,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaise-lagaun-tumse-main-preet.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaise-lagaun-tumse-main-preet.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -41,8 +41,8 @@ window.SONG_LINES = {
   "kaise-lagaun-refrain-1": {
     "source": "कैसे लगाऊँ तुमसे मैं प्रीत",
     "sourceLanguage": "hi",
-    "roman": "Kaise lagāū̃ tumse maĩ prīt",
-    "english": "{0:How }{1,3:can I }{1:set }{3,4:my love }{2:upon You?}",
+    "roman": "Kaise lagāū̃ tumse maĩ prīt",
+    "english": "{0:How }{1,3:am I to join myself }{2:to You }{4:in love?}",
     "words": [
       {
         "roman": "Kaise",
@@ -63,7 +63,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "maĩ",
+        "roman": "maĩ",
         "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false
@@ -183,11 +183,11 @@ window.SONG_LINES = {
   "ramakrishna-prabhu": {
     "source": "रामकृष्ण प्रभु, इस युग के नायक",
     "sourceLanguage": "hi",
-    "roman": "Rāmakr̥ṣṇa prabhu, isa yuga ke nāyaka",
+    "roman": "Rāmakṛṣṇa prabhu, isa yuga ke nāyaka",
     "english": "{1:Lord }{0:Ramakrishna, }{5:leader }{4:of }{2:this }{3:age}",
     "words": [
       {
-        "roman": "Rāmakr̥ṣṇa",
+        "roman": "Rāmakṛṣṇa",
         "gloss": "Ramakrishna",
         "concept_key": "",
         "preserve_in_english": false
@@ -223,7 +223,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative address (Rāmakr̥ṣṇa prabhu) followed by an appositive genitive phrase (isa yuga ke nāyaka).",
+    "grammarNote": "Vocative address (Rāmakṛṣṇa prabhu) followed by an appositive genitive phrase (isa yuga ke nāyaka).",
     "sourceWords": [
       {
         "text": "रामकृष्ण",
@@ -266,11 +266,11 @@ window.SONG_LINES = {
   "main-hoon-das": {
     "source": "मैं हूँ दास तेरा चरणाश्रित",
     "sourceLanguage": "hi",
-    "roman": "Maĩ hū̃ dāsa terā caraṇāśrita",
+    "roman": "Maĩ hū̃ dāsa terā caraṇāśrita",
     "english": "{0:I }{1:am }{3:Your }{2:servant, }{4:sheltered at Your feet}",
     "words": [
       {
-        "roman": "Maĩ",
+        "roman": "Maĩ",
         "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false
@@ -300,7 +300,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular copular construction (maĩ hū̃). caraṇāśrita is a tatpuruṣa compound (caraṇa + āśrita) functioning as an appositive attribute of dāsa.",
+    "grammarNote": "1st person singular copular construction (maĩ hū̃). caraṇāśrita is a tatpuruṣa compound (caraṇa + āśrita) functioning as an appositive attribute of dāsa.",
     "sourceWords": [
       {
         "text": "मैं",
@@ -337,7 +337,7 @@ window.SONG_LINES = {
   "har-pal-hota": {
     "source": "हर पल होता जग में परिवर्तन",
     "sourceLanguage": "hi",
-    "roman": "Hara pala hotā jaga mẽ parivartana",
+    "roman": "Hara pala hotā jaga mẽ parivartana",
     "english": "{0:Every }{1:moment, }{5:change }{2:occurs }{4:in }{3:the world}",
     "words": [
       {
@@ -365,7 +365,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -633,7 +633,7 @@ window.SONG_LINES = {
   "sabke-man": {
     "source": "सबके मन तुमको हैं अवगत",
     "sourceLanguage": "hi",
-    "roman": "Sabke mana tumko haĩ avagata",
+    "roman": "Sabke mana tumko haĩ avagata",
     "english": "{1:The minds }{0:of all }{3:are }{4:known }{2:to You}",
     "words": [
       {
@@ -655,7 +655,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "haĩ",
+        "roman": "haĩ",
         "gloss": "are",
         "concept_key": "",
         "preserve_in_english": false
@@ -667,7 +667,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dative experiencer construction: tumko (dative) + Sabke mana (grammatical subject, masc. pl.) + avagata haĩ (predicate adjective with plural copula).",
+    "grammarNote": "Dative experiencer construction: tumko (dative) + Sabke mana (grammatical subject, masc. pl.) + avagata haĩ (predicate adjective with plural copula).",
     "sourceWords": [
       {
         "text": "सबके",
@@ -704,11 +704,11 @@ window.SONG_LINES = {
   "hriday-nivasi": {
     "source": "हृदय निवासी, साक्षी स्वरूपवत",
     "sourceLanguage": "hi",
-    "roman": "Hr̥daya nivāsī, sākṣī svarūpavata",
+    "roman": "Hṛdaya nivāsī, sākṣī svarūpavata",
     "english": "{1:Dweller }{0:in the heart, }{3:embodied }{2:as the witness}",
     "words": [
       {
-        "roman": "Hr̥daya",
+        "roman": "Hṛdaya",
         "gloss": "heart",
         "concept_key": "",
         "preserve_in_english": false
@@ -732,7 +732,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Appositive epithets qualifying the Lord: Hr̥daya-nivāsī (tatpuruṣa noun/adjective) and sākṣī svarūpavata (noun with suffix -vat).",
+    "grammarNote": "Appositive epithets qualifying the Lord: Hṛdaya-nivāsī (tatpuruṣa noun/adjective) and sākṣī svarūpavata (noun with suffix -vat).",
     "sourceWords": [
       {
         "text": "हृदय",
@@ -764,7 +764,7 @@ window.SONG_LINES = {
     "source": "प्रगट हुए करने जग का हित",
     "sourceLanguage": "hi",
     "roman": "Pragaṭa hue karane jaga kā hita",
-    "english": "{0,1:You became manifest }{2:to bring }{5:welfare }{4:to the }{3:world}",
+    "english": "{0,1:You manifested }{2:for }{4,5:the welfare of }{3:the world}",
     "words": [
       {
         "roman": "Pragaṭa",
@@ -905,7 +905,7 @@ window.SONG_LINES = {
   "roop-tumhara": {
     "source": "रूप तुम्हारा रहे चित में नित",
     "sourceLanguage": "hi",
-    "roman": "Rūpa tumhārā rahe cita mẽ nita",
+    "roman": "Rūpa tumhārā rahe cita mẽ nita",
     "english": "{2:May }{1:Your }{0:form }{2:abide }{5:constantly }{4:in }{3:consciousness}",
     "words": [
       {
@@ -933,7 +933,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -988,7 +988,7 @@ window.SONG_LINES = {
   "sada-seva-mein": {
     "source": "सदा सेवा में रहूँ सेवारत",
     "sourceLanguage": "hi",
-    "roman": "Sadā sevā mẽ rahū̃ sevārata",
+    "roman": "Sadā sevā mẽ rahū̃ sevārata",
     "english": "{3:May I }{0:always }{3:remain }{4:absorbed in }{1,2:service}",
     "words": [
       {
@@ -1004,7 +1004,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -1022,7 +1022,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular subjunctive rahū̃ with predicate adjective sevārata (sevā + rata compound) modified by the locative phrase 'sevā mẽ'.",
+    "grammarNote": "1st person singular subjunctive rahū̃ with predicate adjective sevārata (sevā + rata compound) modified by the locative phrase 'sevā mẽ'.",
     "sourceWords": [
       {
         "text": "सदा",
@@ -1059,7 +1059,7 @@ window.SONG_LINES = {
   "prem-hriday-se": {
     "source": "प्रेम हृदय से गाऊँ तेरे गीत",
     "sourceLanguage": "hi",
-    "roman": "Prema hr̥daya se gāū̃ tere gīta",
+    "roman": "Prema hṛdaya se gāū̃ tere gīta",
     "english": "{2:From a }{0:loving }{1:heart, }{3:may I }{3:sing }{4:Your }{5:songs}",
     "words": [
       {
@@ -1069,7 +1069,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hr̥daya",
+        "roman": "hṛdaya",
         "gloss": "heart",
         "concept_key": "",
         "preserve_in_english": false
@@ -1142,7 +1142,7 @@ window.SONG_LINES = {
   "meri-jeet-mein": {
     "source": "मेरी जीत में होगी तेरी जीत",
     "sourceLanguage": "hi",
-    "roman": "Merī jīta mẽ hogī terī jīta",
+    "roman": "Merī jīta mẽ hogī terī jīta",
     "english": "{2:In }{0:my }{1:victory }{3:will be }{4:Your }{5:victory}",
     "words": [
       {
@@ -1158,7 +1158,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false

@@ -19,7 +19,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naam-japan-kyon-chhod-diya.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -32,7 +32,7 @@ window.SONG_LINES = {
   "naam-japan-kyon-chhod-diya": {
     "source": "नाम जपन क्यों छोड़ दिया",
     "sourceLanguage": "hi",
-    "roman": "nām japan kyõ choṛ diyā",
+    "roman": "nām japan kyõ choṛ diyā",
     "english": "{2:Why }{3,4:did you abandon }{1:chanting }{0:the Name?}",
     "words": [
       {
@@ -48,7 +48,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kyõ",
+        "roman": "kyõ",
         "gloss": "why",
         "concept_key": "",
         "preserve_in_english": false
@@ -186,7 +186,7 @@ window.SONG_LINES = {
   "satya-bachan-kyon-chhod-diya": {
     "source": "सत्य बचन क्यों छोड़ दिया",
     "sourceLanguage": "hi",
-    "roman": "satya bachan kyõ choṛ diyā",
+    "roman": "satya bachan kyõ choṛ diyā",
     "english": "{2:Why }{3,4:did you abandon }{0:truthful }{1:speech?}",
     "words": [
       {
@@ -202,7 +202,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kyõ",
+        "roman": "kyõ",
         "gloss": "why",
         "concept_key": "",
         "preserve_in_english": false
@@ -257,7 +257,7 @@ window.SONG_LINES = {
   "jhoothe-jag-mein-dil-lalcha-kar": {
     "source": "झूठे जग में दिल ललचा कर",
     "sourceLanguage": "hi",
-    "roman": "jhūṭhe jag mẽ dil lalcā kar",
+    "roman": "jhūṭhe jag mẽ dil lalcā kar",
     "english": "{5:Having let }{3:your heart }{4:be tempted }{2:in }{0:the false }{1:world,}",
     "words": [
       {
@@ -273,7 +273,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -297,7 +297,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jhūṭhe' is in the masculine singular oblique agreeing with 'jag mẽ'. 'lalcā kar' forms a non-finite conjunctive participle (pūrvakālika kriyā).",
+    "grammarNote": "'jhūṭhe' is in the masculine singular oblique agreeing with 'jag mẽ'. 'lalcā kar' forms a non-finite conjunctive participle (pūrvakālika kriyā).",
     "sourceWords": [
       {
         "text": "झूठे",
@@ -340,7 +340,7 @@ window.SONG_LINES = {
   "jhoothe-jag-mein-rep-dil-lalcha-kar": {
     "source": "झूठे जग में झूठे जग में दिल ललचा कर",
     "sourceLanguage": "hi",
-    "roman": "jhūṭhe jag mẽ jhūṭhe jag mẽ dil lalcā kar",
+    "roman": "jhūṭhe jag mẽ jhūṭhe jag mẽ dil lalcā kar",
     "english": "{2:In }{0:the false }{1:world, }{5:in }{3:the false }{4:world, }{8:having let }{6:your heart }{7:be tempted,}",
     "words": [
       {
@@ -356,7 +356,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -374,7 +374,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -398,7 +398,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated postpositional phrase 'jhūṭhe jag mẽ' used for musical and rhetorical emphasis.",
+    "grammarNote": "Reduplicated postpositional phrase 'jhūṭhe jag mẽ' used for musical and rhetorical emphasis.",
     "sourceWords": [
       {
         "text": "झूठे",
@@ -459,7 +459,7 @@ window.SONG_LINES = {
   "asal-vatan-kyon-chhod-diya": {
     "source": "असल वतन क्यों छोड़ दिया",
     "sourceLanguage": "hi",
-    "roman": "asal vatan kyõ choṛ diyā",
+    "roman": "asal vatan kyõ choṛ diyā",
     "english": "{2:Why }{3,4:did you abandon }{0:your true }{1:homeland?}",
     "words": [
       {
@@ -475,7 +475,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kyõ",
+        "roman": "kyõ",
         "gloss": "why",
         "concept_key": "",
         "preserve_in_english": false
@@ -636,7 +636,7 @@ window.SONG_LINES = {
   "laal-ratan-kyon-chhod-diya": {
     "source": "लाल रतन क्यों छोड़ दिया",
     "sourceLanguage": "hi",
-    "roman": "lāl ratan kyõ choṛ diyā",
+    "roman": "lāl ratan kyõ choṛ diyā",
     "english": "{2:Why }{3,4:did you abandon }{0:the ruby }{1:jewel?}",
     "words": [
       {
@@ -652,7 +652,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kyõ",
+        "roman": "kyõ",
         "gloss": "why",
         "concept_key": "",
         "preserve_in_english": false
@@ -909,7 +909,7 @@ window.SONG_LINES = {
   "tin-sumiran-kyon-chhod-diya": {
     "source": "तिन सुमिरन क्यों छोड़ दिया",
     "sourceLanguage": "hi",
-    "roman": "tin sumiran kyõ choṛ diyā",
+    "roman": "tin sumiran kyõ choṛ diyā",
     "english": "{2:Why }{3,4:did you abandon }{1:remembrance }{0:of Him?}",
     "words": [
       {
@@ -925,7 +925,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kyõ",
+        "roman": "kyõ",
         "gloss": "why",
         "concept_key": "",
         "preserve_in_english": false
@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
   "tan-man-dhan-kyon-na-chhod-diya": {
     "source": "तन मन धन क्यों ना छोड़ दिया",
     "sourceLanguage": "hi",
-    "roman": "tan man dhan kyõ nā choṛ diyā",
+    "roman": "tan man dhan kyõ nā choṛ diyā",
     "english": "{3:Why }{4:did you not }{5,6:surrender }{0:your body, }{1:mind, }{2:and wealth?}",
     "words": [
       {
@@ -1132,7 +1132,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kyõ",
+        "roman": "kyõ",
         "gloss": "why",
         "concept_key": "",
         "preserve_in_english": false
@@ -1156,7 +1156,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tan man dhan' forms an asyndetic dvandva compound functioning as the direct object of the compound verb 'choṛ diyā'. 'kyõ nā' forms a negative rhetorical question.",
+    "grammarNote": "'tan man dhan' forms an asyndetic dvandva compound functioning as the direct object of the compound verb 'choṛ diyā'. 'kyõ nā' forms a negative rhetorical question.",
     "sourceWords": [
       {
         "text": "तन",

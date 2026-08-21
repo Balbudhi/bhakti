@@ -22,11 +22,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -277,7 +277,7 @@ window.SONG_LINES = {
     "source": "ଗୋଡ଼ ଧରି କରୁଛି ପ୍ରାର୍ଥନା",
     "sourceLanguage": "",
     "roman": "goḍa dhari karuchi prārthanā",
-    "english": "{1:Holding }{0:your feet, }{2:I am offering }{3:prayer.}",
+    "english": "{1:Clasping }{0:Your feet, }{2,3:I pray.}",
     "words": [
       {
         "roman": "goḍa",
@@ -336,7 +336,7 @@ window.SONG_LINES = {
     "source": "ପାପ ସଂସ୍କାର ମୋହର କେତେ ଜନମର ପ୍ରଭୁ",
     "sourceLanguage": "",
     "roman": "pāpa saṁskāra mohara kete janamara prabhu",
-    "english": "{2:My }{0:sinful }{1:conditioning }{3:is from so many }{4:births, }{5:O Lord,}",
+    "english": "{2:My }{0:sinful }{1:impressions }{3:come from so many }{4:births, }{5:O Lord,}",
     "words": [
       {
         "roman": "pāpa",
@@ -419,7 +419,7 @@ window.SONG_LINES = {
     "source": "ମୋ ପାପର ନାହିଁ ଅନ୍ତସୀମା",
     "sourceLanguage": "",
     "roman": "mo pāpara nāhiṁ antasīmā",
-    "english": "{2:There is no }{3:end-limit }{0:to my }{1:sin.}",
+    "english": "{2:There is no }{3:end or boundary }{0:to my }{1:sin.}",
     "words": [
       {
         "roman": "mo",
@@ -620,7 +620,7 @@ window.SONG_LINES = {
     "source": "ବାନ୍ଧିଛି ତୁମକୁ ପ୍ରାଣେ ତଥାପି ଯେ ପାପ ମନେ",
     "sourceLanguage": "",
     "roman": "bāndhichi tumaku prāṇe tathāpi ye pāpa mane",
-    "english": "{0:I have bound }{1:you }{2:in my life-breath, }{3,4:yet }{5:sin }{6:is in the mind.}",
+    "english": "{0:I hold }{1:You }{0:fast }{2:within my life-breath, }{3,4:yet }{5:sin }{6:remains in my mind.}",
     "words": [
       {
         "roman": "bāndhichi",

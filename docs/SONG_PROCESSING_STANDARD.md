@@ -4,6 +4,16 @@ Every song uses the same source-to-reader contract. A YouTube link, MP3, or
 M4A begins the same process regardless of language, deity, musical form, or
 whether the user supplied a translation.
 
+### Language-gated intake
+
+For a conservatively held recording whose language is not established from
+metadata, set `"holdIfSanskrit": true` in its intake row. The first audio
+transcription is retained as private review evidence. If that pass identifies
+Sanskrit, the pipeline writes a `held-language` packet and deliberately stops:
+no audit, timing, gloss, translation, reader, catalogue entry, or public audio
+is produced. The audio and first-pass evidence remain available for later
+review. If it is not Sanskrit, the normal pipeline continues unchanged.
+
 ## Models and cost policy
 
 - **Authoritative audio, timing, translation, and reconciliation:**
@@ -19,7 +29,10 @@ whether the user supplied a translation.
   with its own first transcript, and overlap occurrences are reconciled
   deterministically. Silence is only a boundary hint, never the authority.
 - Local code assigns unique display-occurrence IDs and compresses only
-  immediately contiguous identical repeats. For recordings up to 15 minutes,
+  immediately contiguous identical repeats. Never merge near-refrains merely
+  because they differ only by a final auxiliary, vocative, pickup, pronoun, or
+  other small sung variation: those are separate textual events with their own
+  source form, timing, and word meanings. For recordings up to 15 minutes,
   one full start-only call supplies coarse onsets and one 120-second verification
   grid (15-second context overlap) supplies the independent measurement. Only
   disagreements receive a narrow retry. For longer recordings, each already-
@@ -27,6 +40,14 @@ whether the user supplied a translation.
   segment overlap and strict monotonic/coverage checks catch seam failures.
   Local code derives ends from the next accepted start. The model never
   determines order, grouping, repeats, or ends.
+- A failed full-track timing response may trigger a deterministic evenly spaced
+  grid, but that grid is a routing hint only: it is never accepted as onset
+  evidence and never rejects an accurate clip-relative start. Each valid start
+  in a structured window survives independently even when a sibling onset is
+  malformed. The fallback path publishes only after a second lyric-aware
+  window measurement agrees; unresolved boundary cases alone receive a narrow
+  check. This prevents one bad repeated-line match from cascading across the
+  rest of a song.
 - The normal timing path therefore uses one full pass plus one bounded
   verification pass for ordinary songs, and one call per audited segment for
   long recordings. It never sends the full recording once per line. Record
@@ -79,12 +100,26 @@ romanized, and English highlighting. All three layers are selectable and
 interactive: tapping, clicking, hovering, or keyboard-activating any mapped
 span opens the same short meaning and outlines every corresponding span. A
 reader must fail publication rather than expose an incomplete source map.
+Within one song, an identical visible token in the same grammatical/devotional
+role carries the same short explanation wherever it recurs. This is a local
+glossary rule, not a license to flatten context: a changed gloss is permitted
+only where changed syntax or imagery materially requires it, and the grammar
+note must say why. A divine name or title may never degrade into its bare
+Romanized spelling as a hover meaning; it must explain the identity or role.
+Hover activation is registered only on devices that report a fine pointer with
+real hover support. Touch devices require an intentional tap or keyboard focus,
+so karaoke auto-scroll cannot open a meaning merely by moving a word beneath a
+stationary touch location.
+Romanized display text is normalized to precomposed standard IAST. Model output
+such as `r` plus a combining ring below (`r̥`) is rewritten as `ṛ` (and the
+corresponding `ṝ`, `ḷ`, and `ḹ` forms) before publication; this prevents
+oversized detached marks and gives every extended glyph one consistent shape.
 
 ### Public metadata rule
 
 Every published `SONG_META` stores `writer`, `singer`, and `composer` as
-separate strings. `singer` is required; an unknown writer or composer is the
-empty string and is omitted publicly rather than guessed. The reader labels
+separate strings. Any unverified role is the empty string and is omitted
+publicly rather than guessed, including a genuinely uncredited singer. The reader labels
 the verified roles as `Poet`, `Singer`, and `Music`. When one person holds
 several roles, group the labels once—for example,
 `Poet · Singer · Music — Shri Chandra Bhanu Satpathy`. Never infer one role
@@ -101,7 +136,7 @@ appear in a song header. The header contains only the title, evidence-backed
 people and roles, subject tags, language tags, and the word-meaning hint.
 Unknown roles disappear without leaving an “unknown” placeholder. Never render
 local paths, review packets, extraction notes, or source-location boilerplate.
-The homepage displays the verified singer only beneath each title, then sorts
+The homepage displays the verified singer beneath each title when known, then sorts
 by singer, subject tags, language tags, and title.
 
 Titles, forms, historical names, honorifics, and devotional names use reviewed
@@ -258,18 +293,19 @@ python3 scripts/bhakti_pipeline.py --workers 7 --publish \
 # Or: {"songs":[{"slug":"…","source":"/absolute/audio.m4a","searchAliases":["ordinary spelling"], ...}]}
 python3 scripts/bhakti_pipeline.py --workers 7 --publish --batch intake.json
 
-# Same Gemini 3.7 Flash quality at Batch API pricing; asynchronous and slower.
+# Same Gemini 3.7 Flash quality; sync audio + half-price Batch text stages.
 python3 scripts/bhakti_pipeline.py --workers 7 --economy --publish --batch intake.json
 ```
 
-The `:batch` mode uses OpenRouter's asynchronous Batch API, not the synchronous
-chat endpoint. It runs the identical Gemini 3.7 Flash model at 50% lower input
-and output prices, so it is the preferred mode for a large cost-sensitive
-corpus when a roughly 24-hour completion window is acceptable. Batch inputs and
-results are retained by OpenRouter for 30 days; use the normal model for faster
-interactive delivery or when that retention policy is inappropriate.
+OpenRouter Batch is text-only and rejects audio, video, image, and file content
+parts ([official Batch limitations](https://openrouter.ai/docs/batch-quickstart#limitations)). Economy mode is therefore deliberately hybrid: transcription,
+transcript audit, and lyric-aware timing use synchronous Gemini 3.7 Flash;
+word-gloss and translation-review requests use the identical model and prompts
+through Batch at 50% lower token prices. Batch inputs and results are retained
+by OpenRouter for 30 days; use fast mode for fully synchronous delivery or when
+that retention policy is inappropriate.
 Batch submissions use a separate asynchronous concurrency cap (default 32,
-`BHAKTI_BATCH_MAX_CONCURRENCY`) rather than occupying the three synchronous
+`BHAKTI_BATCH_MAX_CONCURRENCY`) rather than occupying the four synchronous
 Gemini slots for their full queue time. Stage dependencies remain intact, but
 all independent songs/windows in a stage may wait in OpenRouter concurrently.
 
@@ -286,8 +322,9 @@ cached provider artifacts attribute the ordinary path approximately as follows:
 - translation plus independent review: 34.1%.
 
 This means deleting the second transcription check would risk completeness for
-only a small saving. The safe large-corpus lever is `--economy`: the same Gemini
-3.7 Flash weights and prompts at half-price Batch API rates. The safe fast-path
+only a small saving. The safe large-corpus lever is `--economy`: the text-only
+55.4% of the measured pipeline uses half-price Batch rates, reducing a typical
+complete-song bill by about 27.7% while audio stages stay synchronous. The safe fast-path
 optimization is to reuse an already-paid timing-window measurement when a
 narrow recovery independently corroborates it; never demand a redundant second
 narrow call merely because the narrow result disagrees with the coarse pass.
@@ -307,12 +344,15 @@ ignored `.transcription/`, and emits no reader/catalogue output when a gate
 fails. It does not commit or push; after the normal visual checks, GitHub
 Actions deploys a path-scoped commit.
 
-For hosted normal intake on the public repository, use the `Intake Bhakti
-Songs` `workflow_dispatch` workflow on `main`. It accepts one URL per line,
-runs the same synchronous production pipeline, commits generated readers with
-`GITHUB_TOKEN`, and deploys Pages in the same workflow. Keep `--economy` off in
-that hosted path: GitHub-hosted jobs are limited to 6 hours, while OpenRouter's
-Batch API may take around 24 hours even when the underlying work is correct.
+For hosted intake on the public repository, use the `Intake Bhakti Songs`
+`workflow_dispatch` workflow on `main`. It accepts one URL per line and exposes
+an explicit mode selector: `economy` (the default) uses synchronous audio stages
+plus half-price OpenRouter Batch for text-only stages; `fast` keeps every stage
+synchronous when completion time matters more. It commits generated
+readers with `GITHUB_TOKEN` and deploys Pages in the same workflow. A GitHub
+hosted job has a 5.5-hour ceiling even though OpenRouter permits a batch to take
+up to about 24 hours, so use smaller owner-dispatched groups for economy mode
+rather than one enormous hosted submission.
 
 The hosted control surface is GitHub itself; do not build a second login or a
 public submission form. The job runs only when `github.actor` equals the
@@ -322,7 +362,8 @@ reserved, or otherwise non-global addresses, restricts workers to 1–7, has no
 public event or webhook trigger, and reads the OpenRouter key from an encrypted
 repository secret. Public `yt-dlp`-supported media URLs share the same path. A public visitor may view the repository but
 cannot dispatch a billable run. To use it, open **Actions → Intake Bhakti Songs
-→ Run workflow**, paste one link per line, choose the worker count, and run it.
+→ Run workflow**, paste one link per line, choose the worker count and processing
+mode, and run it.
 When a source description is unstructured but independently establishes roles,
 record a reviewed source-ID override in `data/source_credits.json`; the one-link
 hosted intake then receives the verified title, poet, singer, music, language,
@@ -364,7 +405,7 @@ The client strips OpenRouter's `google/` model prefix only at the direct Google
 transport boundary and maps reasoning effort to Google's compatible top-level
 field. A direct request still targets Gemini 3.7 Flash. Direct Google Batch is
 deliberately rejected rather than silently approximated; use OpenRouter
-`--economy` for the established half-price batch path. Before changing the
+`--economy` for the established hybrid economy path. Before changing the
 production default, run a short audio plus strict-schema probe and compare its
 JSON, model resolution, timing behavior, and validation result with the
 OpenRouter path.
@@ -434,6 +475,16 @@ highest-quality audio-only stream (normally Opus) and keeps the highest native
 M4A/AAC stream as a compatibility fallback. Do not transcode Opus to AAC and
 describe that as an upgrade. Temporary fixed-rate AAC used to normalize model
 timebases is deleted after processing and is never published.
+
+High-quality listener audio is published as stable assets on the repository's
+`media-v1` GitHub Release, not committed to Git and not included in the Pages
+artifact. `data/media.json` is the public URL map; reader generation prefers
+that map and falls back to local files only for development. Run
+`python3 scripts/publish_media_release.py` before the final reader rebuild.
+This separation is required because GitHub Pages caps the published site at
+1 GiB, while the growing audio library is larger and must retain its original
+quality. The owner-only intake workflow uploads or replaces release assets,
+rebuilds readers with their stable URLs, and commits only HTML/JS/metadata.
 
 For YouTube-family sources, first resolve to the canonical official-audio track.
 `scripts/resolve_youtube_music_audio.py` accepts a `music.youtube.com` URL, a

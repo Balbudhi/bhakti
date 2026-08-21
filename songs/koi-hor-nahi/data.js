@@ -20,7 +20,13 @@ window.SONG_META = {
   ],
   "translationStatus": "legacy-review-required",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koi-hor-nahi.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -644,7 +650,7 @@ window.SONG_LINES = {
   },
   "v4a": {
     "roman": "Eh zindagī terī ae, mā",
-    "english": "{0:This }{1:life }{3:is already }{2:Yours, }{4:Mother.}",
+    "english": "{0:This }{1:life }{3:is }{2:Yours, }{4:Mother.}",
     "words": [
       {
         "roman": "Eh",
@@ -856,7 +862,7 @@ window.SONG_LINES = {
   },
   "v5b": {
     "roman": "Tū sānū māf kar deyī, asī hass ke seh lānge",
-    "english": "{0:You }{2:forgive }{1:me, }and {3:I }{5:will bear it }{4:laughingly.}",
+    "english": "{0:You }{2:forgive }{1:me, }and {3:I }{5:will bear it }{4:with a smile.}",
     "words": [
       {
         "roman": "Tū",
@@ -950,7 +956,7 @@ window.SONG_LINES = {
   },
   "v6a": {
     "roman": "Terā ho ke main āvāngā, mā",
-    "english": "{2:I }{3:will only come back }{0,1:belonging to You, }{4:Mother.}",
+    "english": "{2:I }{3:will come }{0,1:as Yours, }{4:Mother.}",
     "words": [
       {
         "roman": "Terā",
@@ -1102,7 +1108,7 @@ window.SONG_LINES = {
   },
   "v7a": {
     "roman": "Tere reham bathere ne, mā",
-    "english": "{0:Your }{1:grace }{2,3:is infinite, }{4:Mother.}",
+    "english": "{0:Your }{1:mercies }{2,3:are abundant, }{4:Mother.}",
     "words": [
       {
         "roman": "Tere",
@@ -1260,7 +1266,7 @@ window.SONG_LINES = {
   },
   "v8a": {
     "roman": "Asī pher vī nahī bolānge, mā",
-    "english": "{1:Even then, }{0:I }{2:will not say a word of complaint, }{3:Mother.}",
+    "english": "{1:Even then, }{0:I }{2:will say nothing, }{3:Mother.}",
     "words": [
       {
         "roman": "Asī",

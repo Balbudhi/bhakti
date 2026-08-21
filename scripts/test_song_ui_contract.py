@@ -25,9 +25,11 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
-                self.assertIn('song.js?v=contract-20260821-2', text)
-                self.assertIn('data.js?v=contract-20260821-2', text)
-                self.assertIn('pwa.js?v=contract-20260821-2', text)
+                self.assertIn('song.js?v=contract-20260821-4', text)
+                self.assertIn('data.js?v=contract-20260821-4', text)
+                self.assertIn('pwa.js?v=contract-20260821-4', text)
+                self.assertIn('song.css?v=contract-20260821-4', text)
+                self.assertIn('family=EB+Garamond:wght@400;500', text)
                 self.assertIn('name="apple-mobile-web-app-capable" content="yes"', text)
                 self.assertEqual(text.count('class="song-meta"'), 1)
                 self.assertNotIn('class="song-attrib"', text)
@@ -58,6 +60,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn('please forgive', page.casefold())
         self.assertNotIn('corrections are welcome', page.casefold())
         self.assertIn('song.singer || song.credit', script)
+        self.assertIn('song.singer || song.credit ? `<span class="credit">', script)
 
     def test_every_text_layer_uses_the_same_interactive_word_mapping(self) -> None:
         script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
@@ -65,6 +68,8 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('linkedWord("w"', script)
         self.assertIn('linkedWord("we"', script)
         self.assertIn('e.target.closest(".word-link")', script)
+        self.assertIn('matchMedia?.("(hover: hover) and (pointer: fine)")', script)
+        self.assertIn('if (hasRealHover)', script)
 
     def test_pwa_checks_for_releases_without_reloading_every_launch(self) -> None:
         client = (ROOT / "assets" / "pwa.js").read_text(encoding="utf-8")
@@ -74,7 +79,21 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
         self.assertIn('audioIsPlaying()', client)
         self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
-        self.assertIn('bhakti-shell-v8', worker)
+        self.assertIn('bhakti-shell-v10', worker)
+
+    def test_iast_uses_the_extended_garamond_face(self) -> None:
+        song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
+        site_css = (ROOT / "assets" / "site.css").read_text(encoding="utf-8")
+        self.assertIn('--kh-iast-serif: "EB Garamond"', song_css)
+        self.assertIn('font-family: var(--kh-iast-serif)', song_css)
+        self.assertIn('"EB Garamond", "Cormorant Garamond"', site_css)
+        self.assertIn('overflow-wrap: anywhere', song_css)
+
+    def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:
+        song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
+        self.assertIn("left: 0;\n  right: 0;\n  bottom: 0;", song_css)
+        self.assertIn("padding: 0 28px calc(18px + env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 0 18px calc(18px + env(safe-area-inset-bottom));", song_css)
 
     def test_hosted_intake_is_owner_only_and_public_media_only(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "run-bhakti-intake.yml").read_text(encoding="utf-8")
@@ -85,6 +104,12 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('.is_global', workflow)
         self.assertIn('parsed.username or parsed.password', workflow)
         self.assertIn("BHAKTI_GEMINI_PROVIDER: openrouter", workflow)
+        self.assertIn("scripts/publish_media_release.py", workflow)
+        self.assertIn('default: "economy"', workflow)
+        self.assertIn('command.append("--economy")', workflow)
+        self.assertIn('BHAKTI_API_MAX_CONCURRENCY: "4"', workflow)
+        self.assertIn('path in {"data/media.json", "data/songs.js"}', workflow)
+        self.assertNotIn('"audio.m4a", "audio.mp3"', workflow)
         self.assertNotIn("pull_request:", workflow)
         self.assertNotIn("repository_dispatch:", workflow)
 

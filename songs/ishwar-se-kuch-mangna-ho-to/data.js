@@ -19,7 +19,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ishwar-se-kuch-mangna-ho-to.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -790,7 +796,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāth",
-        "gloss": "Sai Nāth, Lord Sai"
+        "gloss": "Lord Sai"
       },
       {
         "roman": "śrī",

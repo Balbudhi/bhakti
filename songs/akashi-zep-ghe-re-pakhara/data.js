@@ -17,11 +17,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/akashi-zep-ghe-re-pakhara.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/akashi-zep-ghe-re-pakhara.m4a",
       "type": "audio/mp4"
     }
   ],

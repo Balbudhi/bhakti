@@ -27,11 +27,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-tumko-kaise-batalau.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-tumko-kaise-batalau.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -126,8 +126,8 @@ window.SONG_LINES = {
   "refrain-full": {
     "source": "माँ तुमको कैसे बतलाऊँ मेरे हृदय की अंतर्वाणी",
     "sourceLanguage": "hi",
-    "roman": "mā̃ tumako kaise batalāū̃ mere hr̥daya kī antarvāṇī",
-    "english": "{0:Mother, }{2:how }{3:can I tell }{1:you }{4:my }{5,6:heart's }{7:inner voice?}",
+    "roman": "mā̃ tumako kaise batalāū̃ mere hṛdaya kī antarvāṇī",
+    "english": "{0:Mother, }{2:how }{3:can I express }{1:to you }{7:the inner voice }{4,5,6:of my heart?}",
     "words": [
       {
         "roman": "mā̃",
@@ -160,7 +160,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hr̥daya",
+        "roman": "hṛdaya",
         "gloss": "heart (oblique masculine noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -178,7 +178,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "The compound noun 'antarvāṇī' (antar + vāṇī) serves as the direct object of the transitive subjunctive verb 'batalāū̃', modified by the genitive phrase 'mere hr̥daya kī'.",
+    "grammarNote": "The compound noun 'antarvāṇī' (antar + vāṇī) serves as the direct object of the transitive subjunctive verb 'batalāū̃', modified by the genitive phrase 'mere hṛdaya kī'.",
     "sourceWords": [
       {
         "text": "माँ",
@@ -292,11 +292,11 @@ window.SONG_LINES = {
   "verse1-pani": {
     "source": "आँखों से केवल झरता पानी",
     "sourceLanguage": "hi",
-    "roman": "ā̃khõ se kevala jharatā pānī",
+    "roman": "ā̃khõ se kevala jharatā pānī",
     "english": "{2:only }{4:tears }{3:stream }{0,1:from the eyes.}",
     "words": [
       {
-        "roman": "ā̃khõ",
+        "roman": "ā̃khõ",
         "gloss": "eyes (feminine plural oblique noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -326,7 +326,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperfective participle 'jharatā' used with an elided copula ('hai'), governed by the ablative adverbial phrase 'ā̃khõ se'.",
+    "grammarNote": "Imperfective participle 'jharatā' used with an elided copula ('hai'), governed by the ablative adverbial phrase 'ā̃khõ se'.",
     "sourceWords": [
       {
         "text": "आँखों",
@@ -363,8 +363,8 @@ window.SONG_LINES = {
   "verse2-man-lalchata": {
     "source": "जब कहने को मन ललचाता हृदय प्रेम से गदगद होता",
     "sourceLanguage": "hi",
-    "roman": "jaba kahane ko mana lalacātā hr̥daya prema se gadagada hotā",
-    "english": "{0:When }{3:the mind }{4:longs }{1,2:to speak }{5:and the heart }{8,9:is overwhelmed }{6,7:with love,}",
+    "roman": "jaba kahane ko mana lalacātā hṛdaya prema se gadagada hotā",
+    "english": "{0:When }{3:the mind }{4:longs }{1,2:to speak, }{5:the heart }{8,9:chokes }{6,7:with love,}",
     "words": [
       {
         "roman": "jaba",
@@ -397,7 +397,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hr̥daya",
+        "roman": "hṛdaya",
         "gloss": "heart (masculine singular noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -495,7 +495,7 @@ window.SONG_LINES = {
     "source": "शब्द कंठ से निकल ना पाता",
     "sourceLanguage": "hi",
     "roman": "śabda kaṇṭha se nikala nā pātā",
-    "english": "{0:the word }{4,5:cannot }{3:emerge }{1,2:from the throat.}",
+    "english": "{4:no }{0:word }{5:can }{3:leave }{1,2:the throat.}",
     "words": [
       {
         "roman": "śabda",
@@ -578,7 +578,7 @@ window.SONG_LINES = {
     "source": "तुम हो माँ करुणा की खानी",
     "sourceLanguage": "hi",
     "roman": "tuma ho mā̃ karuṇā kī khānī",
-    "english": "{0:You }{1:are, }{2:O Mother, }{5:a mine }{4:of }{3:compassion.}",
+    "english": "{2:Mother, }{0:you }{1:are }{5:a mine }{4:of }{3:compassion.}",
     "words": [
       {
         "roman": "tuma",
@@ -660,12 +660,12 @@ window.SONG_LINES = {
   "verse3-sharada-maa": {
     "source": "शारदा माँ तुम हृदय निवासिनी जानती हो मेरी जीवन कहानी",
     "sourceLanguage": "hi",
-    "roman": "śāradā mā̃ tuma hr̥daya nivāsinī jānatī ho merī jīvana kahānī",
-    "english": "{1:Mother }{0:Sharada, }{3,4:indweller of the heart, }{2:you }{5,6:know }{7:my }{8:life }{9:story.}",
+    "roman": "śāradā mā̃ tuma hṛdaya nivāsinī jānatī ho merī jīvana kahānī",
+    "english": "{1:Mother }{0:Sharada, }{2:you }{3,4:dwell in the heart }{5,6:and know }{9:the story }{7,8:of my life.}",
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "Sharada (vocative proper name / divine epithet)",
+        "gloss": "vocative proper name / divine epithet",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -682,7 +682,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hr̥daya",
+        "roman": "hṛdaya",
         "gloss": "heart (noun / compound element)",
         "concept_key": "",
         "preserve_in_english": false
@@ -724,7 +724,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Tatpuruṣa compound epithet 'hr̥daya-nivāsinī' in apposition to subject 'tuma', governing the direct object 'merī jīvana kahānī' with the present imperfective verb 'jānatī ho'.",
+    "grammarNote": "Tatpuruṣa compound epithet 'hṛdaya-nivāsinī' in apposition to subject 'tuma', governing the direct object 'merī jīvana kahānī' with the present imperfective verb 'jānatī ho'.",
     "sourceWords": [
       {
         "text": "शारदा",
@@ -792,7 +792,7 @@ window.SONG_LINES = {
     "source": "बरसा कर करुणा की धारा",
     "sourceLanguage": "hi",
     "roman": "barasā kara karuṇā kī dhārā",
-    "english": "{0,1:Showering }{4:a stream }{3:of }{2:compassion,}",
+    "english": "{0,1:As you rain down }{4:a stream }{3:of }{2:compassion,}",
     "words": [
       {
         "roman": "barasā",

@@ -3,3 +3,9 @@
 __pycache__/
 .transcription/
 venv/
+songs/*/audio.m4a
+songs/*/audio.mp3
+songs/*/audio.webm
+songs/*/audio.ogg
+songs/*/audio.wav
+songs/*/audio.flac
