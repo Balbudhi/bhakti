@@ -8759,7 +8759,7 @@ window.SONG_LINES = {
     "grammarNote": "rā-pagal-illā (noun compound + negative relative participle) + veṟu-veḷi (adj + noun compound) + vīṭṭil (locative noun: vīṭu = house/liberation) + ramittiḍuvōm (1pl future/hortative verb) + vā (imperative)."
   },
   "line-095": {
-    "source": "லட்சியம் வைத்தருள் அத்திர மெய்த்தெனைப் பக்ஷித்தாய் அருள் அருணாசலா",
+    "source": "லட்சியம் வைத்தருள் அஸ்திரம் விட்டெனை பக்ஷித்தாய் ப்ராணனோ டருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -8771,42 +8771,43 @@ window.SONG_LINES = {
       {
         "text": "வைத்தருள்",
         "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "அத்திர",
-        "wordIndices": [
+          1,
           2
         ]
       },
       {
-        "text": "மெய்த்தெனைப்",
+        "text": "அஸ்திரம்",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "பக்ஷித்தாய்",
+        "text": "விட்டெனை",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "அருள்",
+        "text": "பக்ஷித்தாய்",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "அருணாசலா",
+        "text": "ப்ராணனோ",
         "wordIndices": [
           6
         ]
+      },
+      {
+        "text": "டருணாசலா",
+        "wordIndices": [
+          7
+        ]
       }
     ],
-    "roman": "Lakṣiyam vaittaruḷ attira meyteṉaip pakṣittāy aruḷ aruṇācalā",
-    "english": "{0,1:Fixing your aim}, {3:shooting} {2:the arrow} {1:of grace}, {4:you devoured} {3:me}; {5:bestow grace}, {6:O Arunachala}!",
+    "roman": "Lakṣiyam vaittu aruḷ astiram viṭṭeṉai pakṣittāy prāṇanōṭu aruṇācalā",
+    "english": "{0,1:Having fixed Your aim, }{2,3:and released the arrow of grace }{4:at me, }{5:You consumed me }{6:alive, }{7:O Arunachala!}",
     "words": [
       {
         "roman": "Lakṣiyam",
@@ -8815,32 +8816,38 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vaittaruḷ",
-        "gloss": "having fixed, grace",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "attira",
-        "gloss": "arrow / missile",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "meyteṉaip",
-        "gloss": "having shot, me",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pakṣittāy",
-        "gloss": "you devoured / consumed",
+        "roman": "vaittu",
+        "gloss": "having fixed; aimed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruḷ",
-        "gloss": "bestow grace",
+        "gloss": "grace",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "astiram",
+        "gloss": "arrow; missile",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "viṭṭeṉai",
+        "gloss": "having released at me",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pakṣittāy",
+        "gloss": "You consumed; devoured",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "prāṇanōṭu",
+        "gloss": "with life; alive",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8851,7 +8858,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "lakṣiyam (noun) + vaittu (verbal participle) + aruḷ-astiram (noun compound) + eytu (verbal participle) + eṉai (1sg accusative) + pakṣittāy (2sg past verb) + aruḷ (imperative)."
+    "grammarNote": "lakṣiyam (aim) + vaittu (verbal participle) + aruḷ-astiram (grace-arrow compound) + viṭṭu eṉai (having released [it] at me) + pakṣittāy (2nd-person past: You consumed) + prāṇa-nōṭu (with life; alive)."
   },
   "line-096": {
     "source": "லாபநீ இகபர லாபமில்லையெனை யுற்றுலாப மெனுற்றனை அருணாசலா",
