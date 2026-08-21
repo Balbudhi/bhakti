@@ -138,6 +138,11 @@ term. Do not import Vedanta's grammar cards or full expositions into song pages.
   scripts/*.py`, and `git diff --check`. Existing migration-needed song pages are
   an explicit content task, never an excuse to omit required fields from a new
   song.
+- Run `python3 scripts/audit_youtube_trims.py` before release. A high-confidence
+  verified platform/spoken/promotion intro without an applied trim is a release
+  failure. New intake trims before any transcript or timing stage; historical
+  repairs remove the spoken occurrence and shift retained timestamps by the
+  reviewed offset.
 - Use only the Codex in-app Browser for desktop and 390px mobile visual checks.
   Do not use Chrome, Zen, external extensions, Playwright CLI/MCP, or a global
   tool removal. Test the exact first-syllable seek for every song page line.

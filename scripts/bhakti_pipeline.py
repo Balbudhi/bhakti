@@ -336,6 +336,15 @@ def detect_youtube_trim(song_dir: Path, source: dict[str, Any], options: argpars
     target = song_dir / ".transcription" / "trim-review.json"
     cached = read_packet(target)
     if cached:
+        # Older packets preserved the model evidence but accidentally rejected
+        # the model's explicit `spoken_intro` / `spoken_narration` labels.
+        # Rebuild the deterministic bounds from that evidence rather than
+        # paying for another edge-analysis call.
+        if "start" in cached and "end" in cached:
+            normalized = normalize_trim_artifact(cached)
+            if normalized != cached:
+                write_json(target, normalized)
+            return normalized
         return cached
     audio = preferred_listener_audio(song_dir)
     duration = gemini.duration_seconds(audio)
@@ -367,7 +376,8 @@ Return strict JSON only."""
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
             results = list(pool.map(run, jobs))
     by_edge = {item["edge"]: item for item in results}
-    allowed = {"platform_spoken", "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration"}
+    allowed = {"platform_spoken", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
+               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration"}
     start_packet = by_edge["start"]["response"]["packet"]
     end_packet = by_edge["end"]["response"]["packet"]
     trim_start = (float(start_packet["boundary"]) if start_packet.get("decision") == "trim"
@@ -387,15 +397,39 @@ Return strict JSON only."""
     return artifact
 
 
+def normalize_trim_artifact(artifact: dict[str, Any]) -> dict[str, Any]:
+    """Recalculate trim bounds from retained edge decisions without an API call."""
+    allowed = {"platform_spoken", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
+               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration"}
+    duration = float(artifact["duration"])
+    start = artifact["start"]["response"]["packet"]
+    end = artifact["end"]["response"]["packet"]
+    edge_length = min(75.0, duration)
+    trim_start = (float(start["boundary"]) if start.get("decision") == "trim"
+                  and str(start.get("confidence", "")).casefold() == "high"
+                  and str(start.get("outside_type", "")).casefold() in allowed else 0.0)
+    relative_end = (float(end["boundary"]) if end.get("decision") == "trim"
+                    and str(end.get("confidence", "")).casefold() == "high"
+                    and str(end.get("outside_type", "")).casefold() in allowed else edge_length)
+    trim_end = float(artifact["end"]["clip_start"]) + relative_end
+    errors = []
+    if not 0 <= trim_start < trim_end <= duration or duration - (trim_end - trim_start) > min(120.0, duration * 0.2):
+        errors.append("proposed edge trim is outside safety bounds")
+    normalized = {**artifact, "trim_start": round(trim_start, 3), "trim_end": round(trim_end, 3),
+                  "validation_errors": errors, "status": "blocked" if errors else "reviewed"}
+    return normalized
+
+
 def apply_lossless_trim(song_dir: Path, artifact: dict[str, Any]) -> None:
     marker = song_dir / ".transcription" / "trim-applied.json"
-    if marker.is_file():
+    existing_marker = read_packet(marker)
+    if existing_marker and existing_marker.get("applied"):
         return
     if artifact.get("validation_errors"):
         raise RuntimeError("cannot apply blocked trim review")
     start, end, duration = float(artifact["trim_start"]), float(artifact["trim_end"]), float(artifact["duration"])
     if start <= 0.001 and end >= duration - 0.001:
-        write_json(marker, {"applied": False, "reason": "no non-song edge material"})
+        write_json(marker, {"applied": False, "reason": "no verified non-song edge material"})
         return
     for source in listener_audio_sources(song_dir):
         path = song_dir / source["src"]

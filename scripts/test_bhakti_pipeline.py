@@ -115,6 +115,22 @@ class PipelineTests(unittest.TestCase):
     def test_long_transcript_cache_contract_is_versioned(self) -> None:
         self.assertGreaterEqual(pipeline.LONG_TRANSCRIPT_CONTRACT_VERSION, 1)
 
+    def test_historical_spoken_intro_evidence_is_repaired_without_an_api_call(self) -> None:
+        artifact = {
+            "duration": 100.0,
+            "start": {"response": {"packet": {
+                "decision": "trim", "boundary": 8.25, "outside_type": "spoken_intro", "confidence": "high"
+            }}},
+            "end": {"clip_start": 25.0, "response": {"packet": {
+                "decision": "keep", "boundary": 75.0, "outside_type": "none", "confidence": "high"
+            }}},
+            "trim_start": 0.0, "trim_end": 100.0, "validation_errors": []
+        }
+        normalized = pipeline.normalize_trim_artifact(artifact)
+        self.assertEqual(normalized["trim_start"], 8.25)
+        self.assertEqual(normalized["trim_end"], 100.0)
+        self.assertEqual(normalized["validation_errors"], [])
+
     def test_punctuation_only_glosses_are_not_public_words(self) -> None:
         rows = [{"id": "line", "word_glosses": [
             {"roman": "hanumāna", "gloss": "Hanuman"},
