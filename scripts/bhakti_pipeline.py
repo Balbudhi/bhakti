@@ -1168,6 +1168,22 @@ def refine_all_starts(
     evidence = reports + recoveries + [{"kind": "consensus", "starts": consensus, "validation_errors": []}]
     return sequence, evidence, errors
 
+def uniform_coarse_sequence(occurrences: list[dict[str, Any]], duration: float) -> list[dict[str, Any]]:
+    """Provide a deterministic fallback when the full-song absolute pass fails."""
+    if not occurrences:
+        return []
+    step = duration / max(1, len(occurrences))
+    return [
+        {
+            "occurrence_id": occurrence["occurrence_id"],
+            "ref": occurrence["ref"],
+            "section": occurrence["section"],
+            "repeats": occurrence["repeats"],
+            "start": round(min(duration, (index + 0.5) * step), 3),
+        }
+        for index, occurrence in enumerate(occurrences)
+    ]
+
 def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "03-timing.json"
     existing = read_packet(target)
@@ -1206,6 +1222,18 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
                 song_dir / ".transcription" / "pipeline" / "timing-windows",
             )
             errors.extend(refinement_errors)
+        elif not audited.get("segment_audits"):
+            fallback_coarse_sequence = uniform_coarse_sequence(occurrences, duration)
+            sequence, refinements, refinement_errors = refine_all_starts(
+                model_audio, occurrences, fallback_coarse_sequence, duration, options,
+                song_dir / ".transcription" / "pipeline" / "timing-windows",
+            )
+            if not refinement_errors:
+                coarse_sequence = fallback_coarse_sequence
+                errors = []
+                uncertain = []
+            else:
+                errors.extend(refinement_errors)
     result = {"duration_seconds": duration, "ordered_occurrences": occurrences, "response": response,
               "coarse_sequence": coarse_sequence, "refinements": refinements,
               "sequence": sequence, "uncertain_occurrence_ids": uncertain,
