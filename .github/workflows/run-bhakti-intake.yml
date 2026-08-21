@@ -57,7 +57,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --upgrade --pre "yt-dlp[default]"
           install -d /home/runner/.config/yt-dlp
-          printf '%s\n' '--js-runtimes node' > /home/runner/.config/yt-dlp/config
+          printf '%s\n' '--js-runtimes node' '--extractor-args youtube:player_client=web_embedded' > /home/runner/.config/yt-dlp/config
           node --version
           yt-dlp --version
 
