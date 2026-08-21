@@ -771,7 +771,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Dariyāva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet's signature-name",
         "concept_key": "",
         "preserve_in_english": false
       },

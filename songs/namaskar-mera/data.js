@@ -1948,7 +1948,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "honorific personal name",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -240,13 +240,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mardaḷa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "mardala, principal percussion drum of Odissi music",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kāhāḷī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "kāhāḷī, traditional wind horn or trumpet",
         "concept_key": "",
         "preserve_in_english": false
       }

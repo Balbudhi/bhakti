@@ -1810,7 +1810,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Patha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "route or way",
         "concept_key": "",
         "preserve_in_english": false
       },

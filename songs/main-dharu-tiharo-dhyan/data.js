@@ -807,7 +807,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Dhaulāgaṛh",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Dhaulāgaṛh, mountain-shrine name of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
