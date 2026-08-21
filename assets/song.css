@@ -59,9 +59,9 @@ html, body {
 #songShare,
 #songSync {
   position: fixed;
-  /* Align with the top safe area itself, rather than adding a second inset
-     that visibly pushes these controls too far down on an iPhone. */
-  top: max(10px, env(safe-area-inset-top));
+  /* Sit just into the upper safe-area margin on a phone: present without
+     consuming the first reading line below the status area. */
+  top: max(8px, calc(env(safe-area-inset-top) - 12px));
   width: 34px;
   height: 34px;
   display: inline-flex;
@@ -98,9 +98,7 @@ html, body {
 #songShare svg,
 #songSync svg { width: 18px; height: 18px; }
 
-/* The same control contains both icon states. Keeping the unlinked artwork
-   in the markup avoids implying a link is merely crossed out: it is visibly
-   two separated chain ends. */
+/* The same red disc contains both standard chain states. */
 #songSync .chain-unlinked { display: none; }
 #songSync[aria-pressed="false"] .chain-linked { display: none; }
 #songSync[aria-pressed="false"] .chain-unlinked { display: block; }
@@ -108,9 +106,9 @@ html, body {
 /* The off state is an intentional visual distinction, not a disabled control:
    playback continues, but it no longer moves the reading position. */
 #songSync[aria-pressed="false"] {
-  color: var(--kh-ink-soft);
   border-style: dashed;
 }
+#songSync[aria-pressed="false"] svg { opacity: 0.52; }
 
 /* A quiet confirmation, deliberately adjacent to Share rather than a modal or
    screen-wide banner. It exists only after a desktop copy attempt. */
@@ -220,65 +218,52 @@ html, body {
   color: var(--kh-ink);
 }
 
-/* A source-aware alternative edition belongs beside the attribution, not in
-   the timed lyric sequence. It is collapsed by default so a recording remains
-   an uninterrupted listening page. */
-.edition-note {
-  width: min(100%, 620px);
-  box-sizing: border-box;
-  border: 1px solid var(--kh-rule);
-  border-radius: 10px;
-  color: var(--kh-ink-soft);
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  line-height: 1.55;
-  text-align: left;
-}
-.edition-note summary {
-  display: grid;
-  gap: 3px;
-  padding: 10px 12px;
-  color: var(--kh-ink-soft);
-  cursor: pointer;
-  list-style: none;
-}
-.edition-note summary::-webkit-details-marker { display: none; }
-.edition-note summary span {
-  color: var(--kh-ink);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-}
-.edition-note[open] summary { border-bottom: 1px solid var(--kh-rule); }
-.edition-note p { margin: 0; padding: 10px 12px 0; }
-.edition-note a {
-  display: inline-block;
-  margin: 8px 12px 11px;
-  color: var(--kh-ink);
-  text-underline-offset: 2px;
-}
+/* One compact, remembered text choice for pages with a sourced alternate
+   edition. There is deliberately no explanatory block competing with the
+   poem or the recording. */
 .edition-switch {
-  display: inline-flex;
+  position: relative;
+  display: inline-block;
   max-width: 100%;
-  overflow: hidden;
+}
+.edition-switch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid var(--kh-ink-soft);
+  border-bottom: 1px solid var(--kh-ink-soft);
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+.edition-select {
+  appearance: none;
+  min-height: 28px;
+  max-width: min(100%, 228px);
+  padding: 5px 28px 5px 10px;
   border: 1px solid var(--kh-rule);
   border-radius: 999px;
-}
-.edition-choice {
-  min-height: 30px;
-  padding: 6px 10px;
-  border: 0;
-  border-right: 1px solid var(--kh-rule);
   color: var(--kh-ink-soft);
   background: var(--kh-bg);
   font: 500 10px/1.2 Inter, sans-serif;
   letter-spacing: 0.035em;
   cursor: pointer;
 }
-.edition-choice:last-child { border-right: 0; }
-.edition-choice[aria-pressed="true"] { color: var(--kh-ink); background: rgba(244, 234, 208, 0.10); }
-.edition-choice:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: -2px; }
+.edition-select:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 2px; }
+.edition-select option { color: #2a0710; background: #f4ead0; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* ---------- Source notices for composite liturgies ---------- */
 .source-notice {

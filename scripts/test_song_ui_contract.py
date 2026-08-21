@@ -56,11 +56,13 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('"bhakti:lyrics-follow-change"', script)
         self.assertIn('if (lyricsFollowPlayback)', script)
 
-    def test_edition_notes_preserve_recordings_while_exposing_a_source_alternative(self) -> None:
+    def test_edition_selector_preserves_recordings_without_an_intrusive_note(self) -> None:
         script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
         data = (ROOT / "songs" / "hanuman-chalisa" / "data.js").read_text(encoding="utf-8")
-        self.assertIn("function renderEditionNote", script)
-        self.assertIn('class="edition-note"', script)
+        self.assertIn('class="edition-select"', script)
+        self.assertIn('localStorage.setItem(`bhakti:text-edition:${location.pathname}`', script)
+        self.assertNotIn("renderEditionNote", script)
+        self.assertNotIn('class="edition-note"', script)
         self.assertIn('"editionNote"', data)
         self.assertIn("critical edition is selected by default", data)
         self.assertIn("jagadgururambhadracharya.org", data)
@@ -116,12 +118,12 @@ class SongUiContractTests(unittest.TestCase):
         pipeline = (ROOT / "scripts" / "bhakti_pipeline.py").read_text(encoding="utf-8")
         self.assertIn('background-color: var(--kh-bg);', song_css)
         self.assertIn('opacity: 1;', song_css)
-        self.assertIn('top: max(10px, env(safe-area-inset-top));', song_css)
+        self.assertIn('top: max(8px, calc(env(safe-area-inset-top) - 12px));', song_css)
         self.assertIn('.chain-unlinked { display: none; }', song_css)
         self.assertIn('#songSync[aria-pressed="false"] .chain-unlinked { display: block; }', song_css)
         self.assertIn('class="chain-unlinked"', pipeline)
-        self.assertIn('M9 17H7A5 5 0 0 1 7 7h2', pipeline)
-        self.assertIn('M15 7h2a5 5 0 0 1 0 10h-2m-6 0H7A5 5 0 0 1 7 7h2', pipeline)
+        self.assertIn('m10.6 13.4 2.8-2.8', pipeline)
+        self.assertIn('m8.8 10.2-1.4-1.4', pipeline)
         self.assertIn('border-style: dashed;', song_css)
 
     def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:
