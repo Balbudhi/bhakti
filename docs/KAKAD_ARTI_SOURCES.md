@@ -1,6 +1,6 @@
 # Kākaḍ Āratī component sources
 
-The published reader is one continuous recording. Its small source notices are
+The published song page is one continuous recording. Its small source notices are
 manual editorial metadata; they are not inferred by the transcription model.
 
 The Shree Saibaba Sansthan Trust's official Aarti directory establishes the

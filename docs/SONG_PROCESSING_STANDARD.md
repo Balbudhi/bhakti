@@ -1,6 +1,6 @@
 # Song processing standard
 
-Every song uses the same source-to-reader contract. A YouTube link, MP3, or
+Every song uses the same source-to-song page contract. A YouTube link, MP3, or
 M4A begins the same process regardless of language, deity, musical form, or
 whether the user supplied a translation.
 
@@ -10,7 +10,7 @@ For a conservatively held recording whose language is not established from
 metadata, set `"holdIfSanskrit": true` in its intake row. The first audio
 transcription is retained as private review evidence. If that pass identifies
 Sanskrit, the pipeline writes a `held-language` packet and deliberately stops:
-no audit, timing, gloss, translation, reader, catalogue entry, or public audio
+no audit, timing, gloss, translation, song page, catalogue entry, or public audio
 is produced. The audio and first-pass evidence remain available for later
 review. If it is not Sanskrit, the normal pipeline continues unchanged.
 
@@ -84,7 +84,7 @@ audited transcript and writes only a review queue. A mismatch is never
 auto-normalized: harmless romanization differences, audible performance
 variants, and a possible mishearing need different evidence. The report routes
 known works to the textual-witness layer; only a source reading corroborated by
-the recording may change the public reader.
+the recording may change the public song page.
 - A failed full-track timing response may trigger a deterministic evenly spaced
   grid, but that grid is a routing hint only: it is never accepted as onset
   evidence and never rejects an accurate clip-relative start. Each valid start
@@ -134,7 +134,7 @@ syllable of the displayed lyric instance, not at a chorus, backing voice, or
 later repetition. The model supplies starts only; deterministic code sets each
 end to the next start (and the final end to the recording duration).
 
-Section kinds remain machine-readable sequencing metadata. The public reader
+Section kinds remain machine-readable sequencing metadata. The public song page
 does not print “Invocation,” “Refrain,” “Verse,” or other section labels; those
 headings interrupt the bhajan rather than helping the listening experience.
 
@@ -144,7 +144,7 @@ including compounds and sandhi. The same indices drive source-script,
 romanized, and English highlighting. All three layers are selectable and
 interactive: tapping, clicking, hovering, or keyboard-activating any mapped
 span opens the same short meaning and outlines every corresponding span. A
-reader must fail publication rather than expose an incomplete source map.
+song page must fail publication rather than expose an incomplete source map.
 Within one song, an identical visible token in the same grammatical/devotional
 role carries the same short explanation wherever it recurs. This is a local
 glossary rule, not a license to flatten context: a changed gloss is permitted
@@ -164,7 +164,7 @@ oversized detached marks and gives every extended glyph one consistent shape.
 
 Every published `SONG_META` stores `writer`, `singer`, and `composer` as
 separate strings. Any unverified role is the empty string and is omitted
-publicly rather than guessed, including a genuinely uncredited singer. The reader labels
+publicly rather than guessed, including a genuinely uncredited singer. The song page labels
 the verified roles as `Poet`, `Singer`, and `Music`. When one person holds
 several roles, group the labels once—for example,
 `Poet · Singer · Music — Shri Chandra Bhanu Satpathy`. Never infer one role
@@ -202,7 +202,7 @@ exception, not model-inferred structure. `adaptedSequenceIndices` may mark an
 exact displayed line as a Sai-specific adaptation when a source comparison
 establishes the substitution. The badge attributes only the adaptation; it
 must not imply that the original poet wrote the substituted divine name.
-The reviewed implementation and source batch for the composite morning reader
+The reviewed implementation and source batch for the composite morning song page
 are recorded in `docs/KAKAD_ARTI_SOURCES.md`.
 
 ## Translation contract
@@ -224,7 +224,7 @@ are recorded in `docs/KAKAD_ARTI_SOURCES.md`.
    disposable raw material. The production translation stage copies it exactly.
    If lexical evidence appears to conflict, the line is flagged for human review
    without silently changing the approved wording.
-4. The final reader may publish only the reviewed result. The ignored review
+4. The final song page may publish only the reviewed result. The ignored review
    packet preserves source metadata, raw passes, reconciliation findings,
    suggested trims, translation comparison, and model/cost record.
 5. Without a human baseline, Gemini exposes materially different renderings
@@ -250,7 +250,7 @@ receive a role or contextual identity rather than the same spelling again. Bare
 flattenings forbidden by the entry fail validation; `māyā` may not become only
 “illusion.” An unlisted candidate is review output, never an automatic registry
 addition. New entries require the preserve-or-translate decision procedure and
-human approval. Bhakti deliberately does not inherit the Vedanta reader's full
+human approval. Bhakti deliberately does not inherit the Vedanta song page's full
 grammar cards or school-by-school glossary UI.
 
 Public English uses attested words. Rare but established English is permitted
@@ -260,12 +260,12 @@ Transparent source-supported compounds such as `thunderbolt-hard` are also
 permitted, with a hyphen when it improves reading. The pipeline must not invent
 pseudo-Latin vocabulary or import franchise-specific fictional coinages such
 as `adamantium`, `vibranium`, or `mithril`; these fail both generation and the
-public reader audit. Preserved Indic philosophical terms continue to follow
+public song page audit. Preserved Indic philosophical terms continue to follow
 the curated-term policy above rather than being disguised as English.
 
 ### Library preface and disclosure
 
-The homepage acknowledgment is centered and follows the reader's three-level
+The homepage acknowledgment is centered and follows the song page's three-level
 order: Hindi source, interactive IAST, then linked literal English. Tapping,
 clicking, or hovering any mapped span in any of the three layers shows its
 meaning and highlights the corresponding spans in the other two. The English line is: `Countless salutations to the poets of
@@ -276,7 +276,7 @@ explicitly includes vocal and instrumental performance without implying that
 instrumentalists literally “gave voice.”
 
 The automation notice stays behind the circular `?` control rather than in the
-main reading flow. It states professionally that the readers are produced by
+main reading flow. It states professionally that the song pages are produced by
 an AI-based transcription, timing, and translation pipeline, and that any
 errors belong to the pipeline rather than the poet, singer, or musician. It contains
 neither an apology nor a request for corrections.
@@ -289,7 +289,7 @@ standalone metadata. The service worker checks for a new release on load and
 when the installed app becomes visible again, with a five-minute throttle. A
 new worker reloads the page once after it takes control, but defers while audio
 is playing. Ordinary launches do not force a reload. HTML, scripts, styles, and
-reader data use network-first, cache-bypassing fetches; audio is never placed in
+song-page data use network-first, cache-bypassing fetches; audio is never placed in
 the application shell cache. The previous cached page remains an offline
 fallback.
 
@@ -302,7 +302,7 @@ python3 scripts/benchmark_translation_prompt.py
 The automatic pass never receives the expected translations. A separate
 locked-baseline pass verifies that approved human wording is copied exactly.
 
-For a text-only editorial audit of existing readers, run:
+For a text-only editorial audit of existing song pages, run:
 
 ```sh
 python3 scripts/audit_translation_style.py all --workers 2
@@ -378,14 +378,14 @@ A live strict-schema probe resolved to `google/gemini-3.7-flash`, returned the
 required JSON, and cost $0.00016125 for 90 input plus 154 output tokens—exactly
 half the $0.00032250 synchronous list-price calculation for the same usage.
 
-If every review artifact already exists and only deterministic reader or
+If every review artifact already exists and only deterministic song page or
 catalogue output needs refreshing, run `--generate-only --batch intake.json`.
 That mode makes no provider calls and reports zero new API cost.
 
 It performs transcript → transcript audit → exact ordered start-only timing →
 focused retry when needed → word glosses → gloss-derived literal
-translation → deterministic reader generation. It writes review evidence beneath
-ignored `.transcription/`, and emits no reader/catalogue output when a gate
+translation → deterministic song-page generation. It writes review evidence beneath
+ignored `.transcription/`, and emits no song-page/catalogue output when a gate
 fails. It does not commit or push; after the normal visual checks, GitHub
 Actions deploys a path-scoped commit.
 
@@ -394,7 +394,7 @@ For hosted intake on the public repository, use the `Intake Bhakti Songs`
 an explicit mode selector: `economy` (the default) uses synchronous audio stages
 plus half-price OpenRouter Batch for text-only stages; `fast` keeps every stage
 synchronous when completion time matters more. It commits generated
-readers with `GITHUB_TOKEN` and deploys Pages in the same workflow. A GitHub
+song pages with `GITHUB_TOKEN` and deploys Pages in the same workflow. A GitHub
 hosted job has a 5.5-hour ceiling even though OpenRouter permits a batch to take
 up to about 24 hours, so use smaller owner-dispatched groups for economy mode
 rather than one enormous hosted submission.
@@ -528,13 +528,13 @@ for the preserved listener source or a reason to relax the JSON gate.
 
 High-quality listener audio is published as stable assets on the repository's
 `media-v1` GitHub Release, not committed to Git and not included in the Pages
-artifact. `data/media.json` is the public URL map; reader generation prefers
+artifact. `data/media.json` is the public URL map; song-page generation prefers
 that map and falls back to local files only for development. Run
-`python3 scripts/publish_media_release.py` before the final reader rebuild.
+`python3 scripts/publish_media_release.py` before the final song page rebuild.
 This separation is required because GitHub Pages caps the published site at
 1 GiB, while the growing audio library is larger and must retain its original
 quality. The owner-only intake workflow uploads or replaces release assets,
-rebuilds readers with their stable URLs, and commits only HTML/JS/metadata.
+rebuilds song pages with their stable URLs, and commits only HTML/JS/metadata.
 
 For YouTube-family sources, first resolve to the canonical official-audio track.
 `scripts/resolve_youtube_music_audio.py` accepts a `music.youtube.com` URL, a

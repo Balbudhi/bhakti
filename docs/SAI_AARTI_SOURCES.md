@@ -1,6 +1,6 @@
 # Sai Āratī source notes
 
-The composite Madhyāhna, Dhūp, and Śej readers use the exact Pramod Medhi
+The composite Madhyāhna, Dhūp, and Śej song pages use the exact Pramod Medhi
 recordings published by Wings Music. Section boundaries follow the independently
 audited performance order. Poet labels are component-level evidence, not an
 album-wide writer claim.

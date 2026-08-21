@@ -1,6 +1,6 @@
 # Bhakti
 
-Static devotional-song reader: synchronized lyrics, literal translations, and
+Static devotional-song song page: synchronized lyrics, literal translations, and
 word-level meanings. It deploys independently to GitHub Pages at
 `bhakti.eeshan.xyz`; the Vedānta Timeline remains a separate site. GitHub's
 project URL is deployment infrastructure; the public site URL is the custom
@@ -14,7 +14,7 @@ control; it does not force-refresh every launch or interrupt active audio.
 For hosted intake without leaving a laptop awake, use the repository's
 `Intake Bhakti Songs` GitHub Actions workflow on `main`. It runs the same
 `scripts/bhakti_pipeline.py --publish` path as local intake, commits generated
-readers, uploads high-quality audio to the repository's media release, and
+song pages, uploads high-quality audio to the repository's media release, and
 deploys Pages in the same run. Its mode selector defaults to hybrid `economy`:
 the audio-dependent transcription, audit, and timing stages remain synchronous
 because OpenRouter Batch rejects multimodal input, while the text-only gloss
