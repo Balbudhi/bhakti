@@ -198,6 +198,12 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual([entry["start"] for entry in sequence], [2.5, 7.5])
         self.assertEqual([entry["repeats"] for entry in sequence], [1, 2])
 
+    def test_new_timing_evidence_can_agree_with_the_existing_verifier(self) -> None:
+        # Coarse and window disagree, but one narrow check agreeing with either
+        # is already the required second independent measurement.
+        self.assertTrue(pipeline.corroborated_by_existing(317.66, [318.6, 317.48]))
+        self.assertFalse(pipeline.corroborated_by_existing(320.0, [318.6, 317.48]))
+
     def test_uncertainty_is_repairable_not_fatal(self) -> None:
         occurrences = [
             {"occurrence_id": "occ-000", "ref": "a", "section": "refrain", "repeats": 1},
@@ -300,6 +306,22 @@ class PipelineTests(unittest.TestCase):
         with mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
              mock.patch.object(pipeline.gemini, "openrouter_account_status", side_effect=OSError("offline")):
             self.assertIsNone(pipeline.preflight_blocked_reason(options))
+
+    def test_batch_result_uses_discounted_batch_usage(self) -> None:
+        batch = {"usage": {"cost": 0.25, "prompt_tokens": 10}, "results": [{
+            "custom_id": "one",
+            "response": {"status_code": 200, "body": {
+                "model": "google/gemini-3.7-flash", "choices": [],
+                "usage": {"prompt_tokens": 10, "completion_tokens": 20},
+            }},
+        }]}
+        result = pipeline.gemini.extract_batch_result(batch, "one")
+        self.assertEqual(result["usage"]["cost"], 0.25)
+        self.assertEqual(result["usage"]["completion_tokens"], 20)
+        self.assertEqual(pipeline.gemini.batch_base_model("google/gemini-3.7-flash:batch"),
+                         "google/gemini-3.7-flash")
+        self.assertEqual(pipeline.economy_model("google/gemini-3.7-flash"),
+                         "google/gemini-3.7-flash:batch")
 
     def test_segmented_english_preserves_word_spacing_and_punctuation(self) -> None:
         rendered = pipeline.segment_english([

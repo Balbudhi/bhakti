@@ -19,6 +19,7 @@ import threading
 import time
 import urllib.error
 import urllib.request
+import uuid
 from pathlib import Path
 from typing import Any
 
@@ -27,12 +28,15 @@ import subprocess
 
 MODEL = "google/gemini-3.7-flash"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
+BATCH_API_URL = "https://openrouter.ai/api/beta/batches"
 AUTH_KEY_URL = "https://openrouter.ai/api/v1/auth/key"
 CREDITS_URL = "https://openrouter.ai/api/v1/credits"
 DEFAULT_KEY = Path.home() / "Dev" / ".axiom_openrouter.key"
 API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "3")))
+BATCH_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_BATCH_MAX_CONCURRENCY", "32")))
 API_MIN_START_INTERVAL = max(0.0, float(os.environ.get("BHAKTI_API_MIN_START_INTERVAL", "0.35")))
 _API_SLOTS = threading.BoundedSemaphore(API_MAX_CONCURRENCY)
+_BATCH_SLOTS = threading.BoundedSemaphore(BATCH_MAX_CONCURRENCY)
 _API_START_LOCK = threading.Lock()
 _LAST_API_START = 0.0
 
@@ -103,6 +107,68 @@ def openrouter_account_status(api_key: str, *, timeout: float = 20.0) -> dict[st
     }
 
 
+def batch_base_model(model: str) -> str:
+    return model.removesuffix(":batch")
+
+
+def extract_batch_result(batch: dict[str, Any], custom_id: str) -> dict[str, Any]:
+    for item in batch.get("results") or []:
+        if item.get("custom_id") != custom_id:
+            continue
+        response = item.get("response") or {}
+        if response.get("status_code") != 200:
+            raise RuntimeError(f"OpenRouter batch request failed: {item.get('error') or response}")
+        body = response.get("body")
+        if not isinstance(body, dict):
+            raise RuntimeError("OpenRouter batch result has no response body")
+        usage = dict(body.get("usage") or {})
+        usage.update(batch.get("usage") or {})
+        body["usage"] = usage
+        return body
+    raise RuntimeError(f"OpenRouter batch result omitted {custom_id}")
+
+
+def call_batch(payload: dict[str, Any], api_key: str, *, timeout: float) -> dict[str, Any]:
+    custom_id = f"bhakti-{uuid.uuid4().hex}"
+    base_model = batch_base_model(str(payload["model"]))
+    body = {**payload, "model": base_model}
+    request = urllib.request.Request(
+        BATCH_API_URL,
+        data=json.dumps({
+            "endpoint": "/v1/chat/completions",
+            "model": base_model,
+            "requests": [{"custom_id": custom_id, "body": body}],
+        }).encode("utf-8"),
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=min(timeout, 60.0)) as response:
+        batch = json.loads(response.read().decode("utf-8"))
+    batch_id = batch.get("id")
+    if not batch_id:
+        raise RuntimeError(f"OpenRouter did not create the batch: {batch}")
+
+    deadline = time.monotonic() + max(timeout, float(os.environ.get("BHAKTI_BATCH_TIMEOUT", "86400")))
+    while time.monotonic() < deadline:
+        time.sleep(float(os.environ.get("BHAKTI_BATCH_POLL_INTERVAL", "5")))
+        poll = urllib.request.Request(
+            f"{BATCH_API_URL}/{batch_id}", headers={"Authorization": f"Bearer {api_key}"}, method="GET",
+        )
+        try:
+            with urllib.request.urlopen(poll, timeout=min(timeout, 60.0)) as response:
+                batch = json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404:  # brief propagation delay after creation
+                continue
+            raise
+        status = batch.get("status")
+        if status == "completed":
+            return extract_batch_result(batch, custom_id)
+        if status in {"failed", "cancelled", "expired"}:
+            raise RuntimeError(f"OpenRouter batch ended as {status}: {batch.get('error')}")
+    raise RuntimeError(f"OpenRouter batch {batch_id} exceeded its polling deadline")
+
+
 def call(
     model: str,
     api_key: str,
@@ -138,14 +204,19 @@ def call(
         payload["reasoning"] = {"effort": reasoning_effort}
     if max_completion_tokens:
         payload["max_tokens"] = max_completion_tokens
+    if model.endswith(":batch"):
+        with _BATCH_SLOTS:
+            _wait_for_api_start()
+            result = call_batch(payload, api_key, timeout=timeout)
+    else:
+        result = None
     request = urllib.request.Request(
         API_URL,
         data=json.dumps(payload).encode("utf-8"),
         headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "HTTP-Referer": "https://bhakti.eeshan.xyz/", "X-Title": "Bhakti song processing"},
         method="POST",
     )
-    result: dict[str, Any] | None = None
-    for attempt in range(6):
+    for attempt in range(6) if result is None else []:
         try:
             with _API_SLOTS:
                 _wait_for_api_start()

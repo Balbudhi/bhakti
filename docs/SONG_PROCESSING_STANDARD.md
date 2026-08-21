@@ -182,12 +182,49 @@ shared catalogue write:
 ```sh
 python3 scripts/resolve_youtube_music_audio.py 'Rom Rom Mein Basne Wale Ram Asha Bhosle'
 
-python3 scripts/bhakti_pipeline.py --workers 4 --publish \
+python3 scripts/bhakti_pipeline.py --workers 7 --publish \
   --song song-slug='https://www.youtube.com/watch?v=…'
 
 # Or: {"songs":[{"slug":"…","source":"/absolute/audio.m4a","searchAliases":["ordinary spelling"], ...}]}
-python3 scripts/bhakti_pipeline.py --workers 4 --publish --batch intake.json
+python3 scripts/bhakti_pipeline.py --workers 7 --publish --batch intake.json
+
+# Same Gemini 3.7 Flash quality at Batch API pricing; asynchronous and slower.
+python3 scripts/bhakti_pipeline.py --workers 7 --economy --publish --batch intake.json
 ```
+
+The `:batch` mode uses OpenRouter's asynchronous Batch API, not the synchronous
+chat endpoint. It runs the identical Gemini 3.7 Flash model at 50% lower input
+and output prices, so it is the preferred mode for a large cost-sensitive
+corpus when a roughly 24-hour completion window is acceptable. Batch inputs and
+results are retained by OpenRouter for 30 days; use the normal model for faster
+interactive delivery or when that retention policy is inappropriate.
+Batch submissions use a separate asynchronous concurrency cap (default 32,
+`BHAKTI_BATCH_MAX_CONCURRENCY`) rather than occupying the three synchronous
+Gemini slots for their full queue time. Stage dependencies remain intact, but
+all independent songs/windows in a stage may wait in OpenRouter concurrently.
+
+### Measured cost trace
+
+The seven-song, 42.34-minute official-audio batch on 2026-08-20 finished the
+synchronous path in 5m54s and debited $2.00846, including focused repairs. The
+cached provider artifacts attribute the ordinary path approximately as follows:
+
+- primary transcription: 7.5%;
+- transcript-aware audit: 13.6%;
+- onset alignment and corroboration: 23.6%;
+- word glosses and semantic frames: 21.3%; and
+- translation plus independent review: 34.1%.
+
+This means deleting the second transcription check would risk completeness for
+only a small saving. The safe large-corpus lever is `--economy`: the same Gemini
+3.7 Flash weights and prompts at half-price Batch API rates. The safe fast-path
+optimization is to reuse an already-paid timing-window measurement when a
+narrow recovery independently corroborates it; never demand a redundant second
+narrow call merely because the narrow result disagrees with the coarse pass.
+Generation from reviewed artifacts remains zero-cost with `--generate-only`.
+A live strict-schema probe resolved to `google/gemini-3.7-flash`, returned the
+required JSON, and cost $0.00016125 for 90 input plus 154 output tokens—exactly
+half the $0.00032250 synchronous list-price calculation for the same usage.
 
 If every review artifact already exists and only deterministic reader or
 catalogue output needs refreshing, run `--generate-only --batch intake.json`.
@@ -200,7 +237,7 @@ ignored `.transcription/`, and emits no reader/catalogue output when a gate
 fails. It does not commit or push; after the normal visual checks, GitHub
 Actions deploys a path-scoped commit.
 
-Four songs may progress concurrently without producing an uncontrolled API
+Seven songs may progress concurrently without producing an uncontrolled API
 burst. A process-wide scheduler independently caps Gemini requests at three,
 starts them at least 350 ms apart, prefers OpenRouter's highest-throughput
 compatible provider, allows provider fallbacks for the same model, and honors
