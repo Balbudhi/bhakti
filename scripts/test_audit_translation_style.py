@@ -16,6 +16,11 @@ class AuditTranslationStylePromptTests(unittest.TestCase):
         self.assertIn("Preserve suffered or resultant states as states", rendered)
         self.assertIn("do not replace it merely because another grammatical parse is possible", rendered)
 
+    def test_review_max_completion_tokens_scales_with_batch_size(self) -> None:
+        self.assertEqual(style.review_max_completion_tokens([{}]), 4096)
+        self.assertEqual(style.review_max_completion_tokens([{}] * 20), 7680)
+        self.assertEqual(style.review_max_completion_tokens([{}] * 80), 16384)
+
     def test_normalize_segments_repairs_em_dash_spacing(self) -> None:
         segments = [
             {"text": " O Mother —", "word_indices": [0]},
