@@ -894,7 +894,7 @@ window.SONG_LINES = {
     "source": "का जीव बिचारा होई बावरा",
     "sourceLanguage": "mr",
     "roman": "kā jīva bicārā hoī bāvarā",
-    "english": "{0:why}{2: does the poor}{1: soul}{3: become}{4: bewildered?}",
+    "english": "{0:why}{2: does the poor}{1: jīva}{3: become}{4: bewildered?}",
     "words": [
       {
         "roman": "kā",
@@ -902,7 +902,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "soul / life / heart"
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "bicārā",

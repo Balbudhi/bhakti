@@ -29,13 +29,41 @@ window.SONG_META = {
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
   "sectionNotices": [
-    {"sequenceIndex": 0, "title": "Bhūpālī · Doī Kara Jore", "poet": "Sant Tukārām"},
-    {"sequenceIndex": 9, "title": "Bhūpālī · Uṭho Pāṇḍuraṅga", "poet": "Sant Janābāī"},
-    {"sequenceIndex": 17, "title": "Bhūpālī · Uṭho Uṭho Śrī Sāīnātha", "poet": "Kṛṣṇa Jogīśvara Bhīṣma"},
-    {"sequenceIndex": 41, "title": "Bhūpālī · Uṭho Pāṇḍuraṅga", "poet": "Sant Nāmdev"},
-    {"sequenceIndex": 53, "title": "Pañcāratī", "poet": "Kṛṣṇa Jogīśvara Bhīṣma"},
-    {"sequenceIndex": 57, "title": "Kākaḍ Āratī", "poet": "Kṛṣṇa Jogīśvara Bhīṣma"},
-    {"sequenceIndex": 85, "title": "Āratī Utārūṁ", "poet": "Sant Tukārām"}
+    {
+      "sequenceIndex": 0,
+      "title": "Bhūpālī · Doī Kara Jore",
+      "poet": "Sant Tukārām"
+    },
+    {
+      "sequenceIndex": 9,
+      "title": "Bhūpālī · Uṭho Pāṇḍuraṅga",
+      "poet": "Sant Janābāī"
+    },
+    {
+      "sequenceIndex": 17,
+      "title": "Bhūpālī · Uṭho Uṭho Śrī Sāīnātha",
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+    },
+    {
+      "sequenceIndex": 41,
+      "title": "Bhūpālī · Uṭho Pāṇḍuraṅga",
+      "poet": "Sant Nāmdev"
+    },
+    {
+      "sequenceIndex": 53,
+      "title": "Pañcāratī",
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+    },
+    {
+      "sequenceIndex": 57,
+      "title": "Kākaḍ Āratī",
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+    },
+    {
+      "sequenceIndex": 85,
+      "title": "Āratī Utārūṁ",
+      "poet": "Sant Tukārām"
+    }
   ],
   "adaptedSequenceIndices": [],
   "sourceStatus": "reviewed"
@@ -1758,7 +1786,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ādhi vyādhi bhava tāpoṁ se jaḍa jīva taravāo",
-    "english": "{0:From mental distress, }{1:bodily illness, }{3:and the burning afflictions }{2:of worldly existence, }{4,7:ferry }{5:these inert }{6:souls across!}",
+    "english": "{0:From mental distress, }{1:bodily illness, }{3:and the burning afflictions }{2:of worldly existence, }{4,7:ferry }{5:these inert }{6:jīvas across!}",
     "words": [
       {
         "roman": "Ādhi",
@@ -1798,9 +1826,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "embodied souls; living beings",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "taravāo",
@@ -6764,7 +6792,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pañca prāṇa jīva bhāva se utārūṁ āratī",
-    "english": "{0:With the five} {1:vital breaths} {3,4:and the feeling} {2:of my soul,} {5:I wave} {6:the arati lamp.}",
+    "english": "{0:With the five} {1:vital breaths} {3,4:and the feeling} {2:of my jīva,} {5:I wave} {6:the arati lamp.}",
     "words": [
       {
         "roman": "Pañca",
@@ -6780,9 +6808,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "individual soul; living self",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "bhāva",
@@ -9658,10 +9686,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 144.245,
-    "end": 152.0
+    "end": 152
   },
   {
-    "start": 152.0,
+    "start": 152,
     "end": 159.49
   },
   {
@@ -9706,10 +9734,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 237.26,
-    "end": 244.0
+    "end": 244
   },
   {
-    "start": 244.0,
+    "start": 244,
     "end": 251.49
   },
   {
@@ -9758,10 +9786,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 331.875,
-    "end": 339.0
+    "end": 339
   },
   {
-    "start": 339.0,
+    "start": 339,
     "end": 346.15
   },
   {
@@ -9890,10 +9918,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 565.04,
-    "end": 572.0
+    "end": 572
   },
   {
-    "start": 572.0,
+    "start": 572,
     "end": 578.95
   },
   {
@@ -9910,14 +9938,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 599.05,
-    "end": 606.0
+    "end": 606
   },
   {
-    "start": 606.0,
-    "end": 613.0
+    "start": 606,
+    "end": 613
   },
   {
-    "start": 613.0,
+    "start": 613,
     "end": 620.05
   },
   {
@@ -9938,14 +9966,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 646.1,
-    "end": 653.0
+    "end": 653
   },
   {
-    "start": 653.0,
-    "end": 660.0
+    "start": 653,
+    "end": 660
   },
   {
-    "start": 660.0,
+    "start": 660,
     "end": 667.1
   },
   {

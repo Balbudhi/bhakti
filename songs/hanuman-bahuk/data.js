@@ -14057,7 +14057,7 @@ window.SONG_LINES = {
     "source": "मुद मरकट रोग बारिनिधि हेरि हारि जीव जामवंत को भरोसो तेरो भारिये",
     "sourceLanguage": "bra",
     "roman": "muda marakaṭa roga bārinidhi heri hāri jīva jāmavanta ko bharoso tero bhāriye",
-    "english": "{4:Beholding }{3:the ocean }{2:of disease, }{1:the monkeys }{0:of joy }{5:have lost heart; }{6:the soul, }{7,8:like Jāmbavān, }{11:has immense }{9:reliance }{10:on you.}",
+    "english": "{4:Beholding }{3:the ocean }{2:of disease, }{1:the monkeys }{0:of joy }{5:have lost heart; }{6:the jīva, }{7,8:like Jāmbavān, }{11:has immense }{9:reliance }{10:on you.}",
     "words": [
       {
         "roman": "muda",
@@ -14097,9 +14097,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "the soul; inner spirit",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "jāmavanta",
@@ -19986,7 +19986,7 @@ window.SONG_LINES = {
     "source": "देवी देव दनुज मनुज मुनि सिद्ध नाग छोटे बड़े जीव जेते चेतन अचेत हैं।",
     "sourceLanguage": "bra",
     "roman": "devī deva danuja manuja muni siddha nāga choṭe baṛe jīva jete cetana aceta haiṁ.",
-    "english": "{0:Goddesses, }{1:gods, }{2:demons, }{3:humans, }{4:sages, }{5:Siddhas, }{6:Nagas—}{10:all }{9:the living beings }{7:small }{8:and great, }{11:conscious }{12:and unconscious that }{13:are—}",
+    "english": "{0:Goddesses, }{1:gods, }{2:demons, }{3:humans, }{4:sages, }{5:Siddhas, }{6:Nagas—}{10:all }{9:the jīvas }{7:small }{8:and great, }{11:conscious }{12:and unconscious that }{13:are—}",
     "words": [
       {
         "roman": "devī",
@@ -20044,9 +20044,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "living beings",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "jete",
@@ -28000,7 +28000,7 @@ window.SONG_LINES = {
     "source": "माया जीव काल के करम के सुभाय के करैया राम बेद कहै साँचै मन गुनिए",
     "sourceLanguage": "bra",
     "roman": "māyā jīva kāla ke karama ke subhāya ke karaiyā rāma beda kahai sāñcai mana gunie",
-    "english": "{8,9:Rama is the maker of }{0:māyā, }{1,2,3:the soul, Time, }{4,5:karma, }{6,7:and innate nature; }{10,11:the Vedas declare this, }{12,13,14:contemplate it as truth in the mind.}",
+    "english": "{8,9:Rama is the maker of }{0:māyā, }{1,2,3:jīva, Time, }{4,5:karma, }{6,7:and innate nature; }{10,11:the Vedas declare this, }{12,13,14:contemplate it as truth in the mind.}",
     "words": [
       {
         "roman": "māyā",
@@ -28010,9 +28010,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "living soul",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "kāla",
@@ -30275,10 +30275,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1419.7,
-    "end": 1428.0
+    "end": 1428
   },
   {
-    "start": 1428.0,
+    "start": 1428,
     "end": 1436.2
   },
   {
@@ -30295,10 +30295,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1464.2,
-    "end": 1476.0
+    "end": 1476
   },
   {
-    "start": 1476.0,
+    "start": 1476,
     "end": 1484.1
   },
   {
@@ -30307,54 +30307,54 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1495.9,
-    "end": 1502.0
+    "end": 1502
   },
   {
-    "start": 1502.0,
-    "end": 1510.0
+    "start": 1502,
+    "end": 1510
   },
   {
-    "start": 1510.0,
+    "start": 1510,
     "end": 1516.15
   },
   {
     "start": 1516.15,
-    "end": 1530.0
+    "end": 1530
   },
   {
-    "start": 1530.0,
+    "start": 1530,
     "end": 1538.1
   },
   {
     "start": 1538.1,
-    "end": 1548.0
+    "end": 1548
   },
   {
-    "start": 1548.0,
+    "start": 1548,
     "end": 1556.2
   },
   {
     "start": 1556.2,
-    "end": 1568.0
+    "end": 1568
   },
   {
-    "start": 1568.0,
+    "start": 1568,
     "end": 1576.2
   },
   {
     "start": 1576.2,
-    "end": 1588.0
+    "end": 1588
   },
   {
-    "start": 1588.0,
+    "start": 1588,
     "end": 1596.1
   },
   {
     "start": 1596.1,
-    "end": 1608.0
+    "end": 1608
   },
   {
-    "start": 1608.0,
+    "start": 1608,
     "end": 1616.2
   },
   {

@@ -6158,7 +6158,7 @@ window.SONG_LINES = {
     "source": "आरती साईं बाबा जीवा सुखकारी देवा",
     "sourceLanguage": "hi",
     "roman": "Āratī Sāī̃ Bābā jīvā sukhakārī dēvā",
-    "english": "{0,1,2:Aarti to Sai Baba,}{5: O Lord}{4: who bestows bliss}{3: upon the soul!}",
+    "english": "{0,1,2:Aarti to Sai Baba,}{5: O Lord}{4: who bestows bliss}{3: upon the jīva!}",
     "words": [
       {
         "roman": "Āratī",
@@ -6174,7 +6174,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "to the soul / living being"
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "sukhakārī",
@@ -6229,7 +6231,7 @@ window.SONG_LINES = {
     "source": "चरण धूली में दे दो विश्राम जीवा",
     "sourceLanguage": "hi",
     "roman": "Caraṇa dhūlī mē̃ dē dō viśrāma jīvā",
-    "english": "{0,1,2:In the dust of your feet,}{3,4: grant}{5: repose}{6: to the soul!}",
+    "english": "{0,1,2:In the dust of your feet,}{3,4: grant}{5: repose}{6: to the jīva!}",
     "words": [
       {
         "roman": "Caraṇa",
@@ -6257,7 +6259,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "to the soul"
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       }
     ],
     "grammarNote": "Compound imperative dē dō governing direct object viśrāma with indirect/dative recipient jīvā and locative caraṇa dhūlī mē̃.",
@@ -6310,7 +6314,7 @@ window.SONG_LINES = {
     "source": "विश्राम जीवा आरती साईं बाबा",
     "sourceLanguage": "hi",
     "roman": "Viśrāma jīvā āratī Sāī̃ Bābā",
-    "english": "{0:Repose}{1: to the soul;}{2: aarti}{3,4: to Sai Baba!}",
+    "english": "{0:Repose}{1: to the jīva;}{2: aarti}{3,4: to Sai Baba!}",
     "words": [
       {
         "roman": "Viśrāma",
@@ -6318,7 +6322,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "to the soul"
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "āratī",
@@ -7932,11 +7938,13 @@ window.SONG_LINES = {
     "source": "जीवा सुखकारी देवा",
     "sourceLanguage": "hi",
     "roman": "Jīvā sukhakārī dēvā",
-    "english": "{2:O Lord, }{1:bestower of bliss }{0:upon the soul!}",
+    "english": "{2:O Lord, }{1:bestower of bliss }{0:upon the jīva!}",
     "words": [
       {
         "roman": "Jīvā",
-        "gloss": "to the soul / living being"
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "sukhakārī",

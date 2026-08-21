@@ -32,7 +32,11 @@ window.SONG_META = {
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
   "sectionNotices": [
-    {"sequenceIndex": 0, "title": "Āratī Sāī Bābā", "poet": "Mādhavrao Vāmanrao Adkar"}
+    {
+      "sequenceIndex": 0,
+      "title": "Āratī Sāī Bābā",
+      "poet": "Mādhavrao Vāmanrao Adkar"
+    }
   ],
   "adaptedSequenceIndices": [],
   "sourceStatus": "reviewed"
@@ -176,7 +180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī sāīṁ bābā, jīvā sukhakārī devā",
-    "english": "{0:Wave-offering of light to }{1:Sai }{2:Baba, }{5:O divine Lord }{4:who bestows joy }{3:upon the soul,}",
+    "english": "{0:Wave-offering of light to }{1:Sai }{2:Baba, }{5:O divine Lord }{4:who bestows joy }{3:upon the jīva,}",
     "words": [
       {
         "roman": "āratī",
@@ -198,9 +202,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "to the living being; to the soul",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "sukhakārī",
@@ -277,7 +281,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caraṇa dhūlī meṁ de do viśrāma jīvā, viśrāma jīvā",
-    "english": "{2:In }{1:the dust }{0:of your feet, }{3,4:grant }{5:resting solace }{6:to the soul, }{7:resting solace }{8:to the soul.}",
+    "english": "{2:In }{1:the dust }{0:of your feet, }{3,4:grant }{5:resting solace }{6:to the jīva, }{7:resting solace }{8:to the jīva.}",
     "words": [
       {
         "roman": "caraṇa",
@@ -317,9 +321,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā,",
-        "gloss": "to the soul; O soul,",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "viśrāma",
@@ -329,9 +333,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "to the soul; O soul",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       }
     ],
     "grammarNote": "Compound verb de do expresses a polite imperative petition; viśrāma jīvā is repeated for devotional emphasis."

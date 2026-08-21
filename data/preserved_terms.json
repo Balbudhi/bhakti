@@ -19,6 +19,12 @@
     "manas": {"iast": "manas", "aliases": ["manas"], "shortGlossHint": "sensory and deliberative mind"},
     "indriya": {"iast": "indriya", "aliases": ["indriya"], "shortGlossHint": "sense faculty"},
     "karma": {"iast": "karma", "aliases": ["karma"], "shortGlossHint": "action and its consequences"},
+    "jiva": {
+      "iast": "jīva",
+      "aliases": ["jīva", "jiva", "jīvā", "jiva", "jīvahi", "jivahi"],
+      "forbiddenFlattenings": ["soul", "souls", "living soul", "individual soul", "embodied soul"],
+      "shortGlossHint": "individual living being; embodied self"
+    },
     "yoga": {"iast": "yoga", "aliases": ["yoga"], "shortGlossHint": "discipline or union"},
     "rasa": {"iast": "rasa", "aliases": ["rasa"], "shortGlossHint": "essence, aesthetic savor, or devotional mood"},
     "ahankara": {"iast": "ahaṅkāra", "aliases": ["ahaṅkāra", "ahankara"], "shortGlossHint": "I-making; egoic self-sense"},
