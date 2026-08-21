@@ -14,6 +14,8 @@ import subprocess
 from pathlib import Path
 from typing import Any
 
+import tag_taxonomy
+
 
 ROOT = Path(__file__).resolve().parents[1]
 VALID_SECTIONS = {"invocation", "refrain", "verse", "bridge", "closing", "spoken", "instrumental"}
@@ -29,7 +31,7 @@ process.stdout.write(JSON.stringify(ctx.window));"""
     return json.loads(output)
 
 
-def audit_song(directory: Path) -> dict[str, Any]:
+def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -> dict[str, Any]:
     data_path = directory / "data.js"
     problems: list[str] = []
     if not data_path.is_file():
@@ -55,6 +57,16 @@ def audit_song(directory: Path) -> dict[str, Any]:
     if not isinstance(lines, dict):
         problems.append("SONG_LINES is not an object")
         lines = {}
+    inferred_tags = tag_taxonomy.infer_named_subject_tags(lines.values())
+    if isinstance(meta, dict):
+        for tag in inferred_tags:
+            if tag not in meta.get("subjectTags", []):
+                problems.append(f"SONG_META subjectTags omit explicit lyric name {tag}")
+        if catalogue_entry is not None:
+            if meta.get("languages") != catalogue_entry.get("languageTags"):
+                problems.append("catalogue languageTags differ from SONG_META languages")
+            if meta.get("subjectTags") != catalogue_entry.get("subjectTags"):
+                problems.append("catalogue subjectTags differ from SONG_META subjectTags")
     sequence, timing = data.get("SONG_SEQUENCE", []), data.get("SONG_TIMINGS", [])
     instrumental_refs = {entry.get("ref") for entry in sequence if isinstance(entry, dict) and entry.get("section") == "instrumental"}
     for line_id, line in lines.items():
@@ -136,7 +148,10 @@ def audit_song(directory: Path) -> dict[str, Any]:
 
 
 def main() -> int:
-    reports = [audit_song(directory) for directory in sorted((ROOT / "songs").iterdir()) if directory.is_dir()]
+    catalogue = load_data(ROOT / "data" / "songs.js").get("BHAKTI_SONGS", [])
+    by_slug = {entry.get("slug"): entry for entry in catalogue if isinstance(entry, dict)}
+    reports = [audit_song(directory, by_slug.get(directory.name))
+               for directory in sorted((ROOT / "songs").iterdir()) if directory.is_dir()]
     print(json.dumps(reports, ensure_ascii=False, indent=2))
     return 0 if all(report["status"] == "ready" for report in reports) else 2
 

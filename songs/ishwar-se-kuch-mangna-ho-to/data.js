@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Viṣṇu"
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",

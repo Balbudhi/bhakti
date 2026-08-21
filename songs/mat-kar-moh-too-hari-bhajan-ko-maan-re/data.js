@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Nirguṇa"
+    "Nirguṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Mat Kar Moh Tu Hari Bhajan Ko Man Re",

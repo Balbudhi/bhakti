@@ -107,7 +107,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Ishwar Se Kuch Mangna Ho To",
@@ -218,7 +219,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Rāma"
     ],
     "searchAliases": [
       "Ye Tanu Mundana Be Mundana",
@@ -256,7 +258,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Rāma"
     ],
     "searchAliases": [
       "Sun Sun Sadho Ji",
@@ -349,11 +352,11 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Darshan Dena Pran Piyare",
-      "Nirguna",
+      "Krishna",
       "Sun Bhai Sadho"
     ],
     "subtitle": "Rasik Khushal"
@@ -366,7 +369,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Mat Kar Moh Tu Hari Bhajan Ko Man Re",
@@ -388,7 +392,11 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Rāma",
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Jagannātha"
     ],
     "searchAliases": [
       "Morning Arati",

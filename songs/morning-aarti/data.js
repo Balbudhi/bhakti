@@ -12,7 +12,11 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Rāma",
+    "Kṛṣṇa",
+    "Viṣṇu",
+    "Jagannātha"
   ],
   "searchAliases": [
     "Morning Arati",
