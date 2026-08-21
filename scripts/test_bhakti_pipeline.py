@@ -189,6 +189,15 @@ class PipelineTests(unittest.TestCase):
         )
         self.assertTrue(any("order differs" in error for error in errors))
 
+    def test_uniform_coarse_sequence_routes_a_failed_full_timing_pass(self) -> None:
+        occurrences = [
+            {"occurrence_id": "occ-000", "ref": "a", "section": "verse", "repeats": 1},
+            {"occurrence_id": "occ-001", "ref": "b", "section": "refrain", "repeats": 2},
+        ]
+        sequence = pipeline.uniform_coarse_sequence(occurrences, 10.0)
+        self.assertEqual([entry["start"] for entry in sequence], [2.5, 7.5])
+        self.assertEqual([entry["repeats"] for entry in sequence], [1, 2])
+
     def test_uncertainty_is_repairable_not_fatal(self) -> None:
         occurrences = [
             {"occurrence_id": "occ-000", "ref": "a", "section": "refrain", "repeats": 1},

@@ -417,5 +417,127 @@ window.BHAKTI_SONGS = [
       "Jab Subah Ki Aarti Khatam Hui Aur Baba Ne Snan Kiya"
     ],
     "subtitle": "Sai Teri Kripa Se"
+  },
+  {
+    "slug": "rom-rom-mein-basne-wale-ram",
+    "title": "Rom Rom Meṃ Basne Vāle Rām",
+    "credit": "Sahir Ludhianvi · Asha Bhosle · Ravi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Rom Rom Mem Basne Vale Ram",
+      "Rama",
+      "Hey Rom Rom Mein Basne Wale Ram"
+    ],
+    "subtitle": "Neel Kamal"
+  },
+  {
+    "slug": "he-shivshankar-he-karunakar",
+    "title": "He Śivśaṅkar He Karuṇākar",
+    "credit": "Vasant Dev · Rajan Mishra & Sajan Mishra · Laxmikant–Pyarelal",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "He Shivshangkar He Karunakar",
+      "He Sivsankar He Karunakar",
+      "Shiva",
+      "Siva",
+      "Hey Shiv Shankar Hey Karunakar",
+      "Rajan Sajan Mishra"
+    ],
+    "subtitle": "Sur Sangam"
+  },
+  {
+    "slug": "guru-karo-aparadha-kshyama",
+    "title": "Guru Kara Aparādha Kṣamā",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Guru Kara Aparadha Kshama",
+      "Guru Kara Aparadha Ksama",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba",
+      "Guru Karo Aparadha Khyama"
+    ],
+    "subtitle": "Shri Sai Charane"
+  },
+  {
+    "slug": "bhanga-kudia-mu-sajai-rakhichi",
+    "title": "Bhanga Kudia Mu Sajai Rakhichi",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba"
+    ],
+    "subtitle": "Shri Sai Charane"
+  },
+  {
+    "slug": "he-sadaguru-tume-mor-haatku-dhara",
+    "title": "He Sadaguru Tume Mor Haatku Dhara",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Guru"
+    ],
+    "searchAliases": [
+      "Satpathy Baba"
+    ],
+    "subtitle": "Chala Patha Ra Geeta"
+  },
+  {
+    "slug": "thara-ku-thara-mu-adhia-paduchi",
+    "title": "Thara Ku Thara Mu Adhia Paduchi",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba"
+    ],
+    "subtitle": "Shri Sai Charane"
+  },
+  {
+    "slug": "janena-mu-kiba-debi",
+    "title": "Janena Mu Kiba Debi",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba"
+    ],
+    "subtitle": "Baishi Pahacha"
   }
 ];
