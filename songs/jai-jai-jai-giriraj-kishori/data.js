@@ -997,7 +997,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
@@ -1007,7 +1007,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
@@ -1017,7 +1017,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
@@ -1027,7 +1027,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
@@ -1037,7 +1037,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
@@ -1062,7 +1062,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
@@ -1072,7 +1072,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
@@ -1142,7 +1142,7 @@ window.SONG_SEQUENCE = [
   },
   {
     "ref": "alap",
-    "section": "uncertain",
+    "section": "instrumental",
     "repeats": 1
   },
   {
