@@ -108,6 +108,24 @@ def permanent_provider_error(provider: str, status: int, detail: str) -> bool:
     return provider == "google" and status == 429 and "prepayment credits are depleted" in lowered
 
 
+def parse_json_packet(content: object) -> dict[str, Any]:
+    text = str(content or "").strip()
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError as original:
+        if '\\"' not in text:
+            raise original
+        try:
+            decoded = json.loads('"' + text.replace("\r", "\\r").replace("\n", "\\n") + '"')
+            parsed = json.loads(decoded)
+        except (TypeError, ValueError, json.JSONDecodeError):
+            raise original
+    if not isinstance(parsed, dict):
+        raise RuntimeError("Gemini JSON packet must be an object")
+    return parsed
+
+
 def encoded_audio(audio: Path, provider: str) -> tuple[str, str]:
     """Return an OpenAI-compatible audio payload without changing song time.
 
@@ -312,13 +330,10 @@ def call(
         text = result["choices"][0]["message"]["content"]
         if isinstance(text, list):
             text = "".join(part.get("text", "") for part in text if isinstance(part, dict))
-        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", str(text).strip())
-        parsed = json.loads(text)
+        parsed = parse_json_packet(text)
     except (KeyError, IndexError, TypeError, ValueError, json.JSONDecodeError) as exc:
         preview = str(locals().get("text", ""))[:800]
         raise RuntimeError(f"Gemini did not return the required JSON packet; content preview: {preview!r}") from exc
-    if not isinstance(parsed, dict):
-        raise RuntimeError("Gemini JSON packet must be an object")
     return {"packet": parsed, "usage": result.get("usage", {}), "resolved_model": result.get("model", model)}
 
 

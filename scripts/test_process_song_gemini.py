@@ -111,6 +111,9 @@ class ProviderTests(unittest.TestCase):
         ))
         self.assertFalse(gemini.permanent_provider_error("google", 429, "Temporary rate limit"))
 
+    def test_double_escaped_json_packet_is_accepted(self) -> None:
+        self.assertEqual(gemini.parse_json_packet(r'{\n  \"ok\": true\n}'), {"ok": True})
+
 
 if __name__ == "__main__":
     unittest.main()

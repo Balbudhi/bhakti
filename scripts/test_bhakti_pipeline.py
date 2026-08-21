@@ -101,6 +101,27 @@ class PipelineTests(unittest.TestCase):
         rows = [{"id": "line", "word_glosses": [{"roman": "sāṁs", "gloss": "breath"}]}]
         self.assertIn("line lacks a complete semantic frame", pipeline.gloss_contract_errors(lines, rows))
 
+    def test_long_transcript_cache_contract_is_versioned(self) -> None:
+        self.assertGreaterEqual(pipeline.LONG_TRANSCRIPT_CONTRACT_VERSION, 1)
+
+    def test_punctuation_only_glosses_are_not_public_words(self) -> None:
+        rows = [{"id": "line", "word_glosses": [
+            {"roman": "hanumāna", "gloss": "Hanuman"},
+            {"roman": "॥", "gloss": "double danda"},
+        ]}]
+        cleaned = pipeline.clean_gloss_rows(rows)
+        self.assertEqual([word["roman"] for word in cleaned[0]["word_glosses"]], ["hanumāna"])
+
+    def test_gloss_surfaces_follow_audited_roman_tokens(self) -> None:
+        lines = [{"id": "line", "roman": "mana ko agama tana"}]
+        rows = [{"id": "line", "word_glosses": [
+            {"roman": "man", "gloss": "mind"}, {"roman": "ko", "gloss": "to"},
+            {"roman": "agam", "gloss": "inaccessible"}, {"roman": "tan", "gloss": "body"},
+        ]}]
+        normalized = pipeline.normalize_gloss_rows(lines, rows)
+        self.assertEqual([word["roman"] for word in normalized[0]["word_glosses"]],
+                         ["mana", "ko", "agama", "tana"])
+
     def test_independent_translation_review_can_block_poetic_choice(self) -> None:
         lines = [{"id": "line", "source_text": "", "roman": "sāṁs"}]
         glosses = [{"id": "line", "word_glosses": [{"roman": "sāṁs", "gloss": "breath"}]}]
@@ -309,6 +330,15 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(value["singer"], "Sarita Joshi")
         self.assertEqual(value["subjectTags"], ["Hanumān"])
         self.assertTrue(value["keepOriginal"])
+
+    def test_pinned_source_skips_secondary_official_audio_resolution(self) -> None:
+        job = {"slug": "pinned", "source": "https://youtu.be/aLWFJaF9HsU", "_keep_original": True,
+               "_source_metadata": {"id": "aLWFJaF9HsU", "title": "Hanuman Bahuk", "duration": 10}}
+        with mock.patch.object(pipeline.ytmusic, "resolve_reference") as resolve, \
+             mock.patch.object(pipeline.subprocess, "run", side_effect=RuntimeError("stop after resolution")):
+            with self.assertRaisesRegex(RuntimeError, "stop after resolution"):
+                pipeline.intake(job, force=False)
+        resolve.assert_not_called()
 
     def test_media_metadata_surfaces_extractor_diagnostics(self) -> None:
         failed = subprocess.CompletedProcess(["yt-dlp"], 1, stdout="", stderr="challenge solver missing")

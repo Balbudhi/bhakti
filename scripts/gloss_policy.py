@@ -25,6 +25,8 @@ def roman_keys(value: object) -> list[str]:
     values = [key(raw)]
     if any(mark in raw for mark in ("ṃ", "ṁ")) and values[0].endswith("m"):
         values.append(values[0][:-1])
+    if len(values[0]) > 4 and values[0].endswith("a"):
+        values.append(values[0][:-1])
     return [value for value in dict.fromkeys(values) if value]
 
 
@@ -50,10 +52,13 @@ MEANING_ONLY = {
     "ganu": "devotee-poet",
     "guru": "spiritual teacher",
     "hari": "Lord Viṣṇu; remover of suffering",
+    "hanuman": "monkey-god; son of the Wind",
     "hindu": "follower of the dharma",
+    "holika": "bonfire; destructive blaze",
     "jagannatha": "Lord of the universe",
     "jhandewali": "the Goddess of Jhandewalan",
     "kabir": "poet-saint",
+    "lanka": "island kingdom of Rāvaṇa",
     "madhava": "the poet's signature-name",
     "maharaja": "great king; revered sovereign",
     "manda": "a proper name here",
