@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Nirguṇa"
+    "Nirguṇa",
+    "Rāma"
   ],
   "searchAliases": [
     "Ye Tanu Mundana Be Mundana",

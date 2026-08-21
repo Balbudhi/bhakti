@@ -10,11 +10,11 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Nirguṇa"
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Darshan Dena Pran Piyare",
-    "Nirguna",
+    "Krishna",
     "Sun Bhai Sadho"
   ],
   "audioSources": [

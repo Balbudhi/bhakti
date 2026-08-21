@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Nirguṇa"
+    "Nirguṇa",
+    "Rāma"
   ],
   "searchAliases": [
     "Sun Sun Sadho Ji",

@@ -34,6 +34,7 @@ from typing import Any
 import process_song_gemini as gemini
 import naming
 import resolve_youtube_music_audio as ytmusic
+import tag_taxonomy
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -1778,7 +1779,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     distinct_people = list(dict.fromkeys(person for person in (writer, singer, composer) if person))
     credit = str(job.get("credit", "")).strip() or " · ".join(distinct_people)
     page_credit = str(job.get("pageCredit", "")).strip() or singer or credit
-    subjects = job.get("subjectTags", [])
+    subjects = tag_taxonomy.merge_subject_tags(job.get("subjectTags", []), lines)
     subtitle = str(job.get("subtitle", "")).strip() or (subjects[0] if subjects else "")
     aliases = naming.search_aliases(
         [job["slug"].replace("-", " "), title, subtitle, credit, page_credit,
