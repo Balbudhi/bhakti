@@ -902,7 +902,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "janu jīvahi māyā lapaṭānī",
-    "english": "{0:as though }{2:māyā }{3:clung }{1:to the embodied soul.}",
+    "english": "{0:as though }{2:māyā }{3:clung }{1:to the embodied jīva.}",
     "words": [
       {
         "roman": "janu",
@@ -912,9 +912,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvahi",
-        "gloss": "unto the embodied soul",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "māyā",
@@ -1186,7 +1186,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hoi acala jimi jiva hari pāī",
-    "english": "{0:becomes }{1:still, }{2:as does }{3:the soul }{5:upon attaining }{4:Hari.}",
+    "english": "{0:becomes }{1:still, }{2:as does }{3:the jīva }{5:upon attaining }{4:Hari.}",
     "words": [
       {
         "roman": "hoi",
@@ -1208,9 +1208,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiva",
-        "gloss": "the individual soul",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       },
       {
         "roman": "hari",

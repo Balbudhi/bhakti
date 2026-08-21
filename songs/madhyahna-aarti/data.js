@@ -928,7 +928,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī sāībābā saukhyadātāra jīvā",
-    "english": "{0:Aarti to }{1:Sai Baba, }{2:the bestower of bliss }{3:upon the soul,}",
+    "english": "{0:Aarti to }{1:Sai Baba, }{2:the bestower of bliss }{3:upon the jīva,}",
     "words": [
       {
         "roman": "Āratī",
@@ -950,9 +950,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "to the living being; to the soul",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       }
     ],
     "grammarNote": "Saukhyadātāra is an agentive compound noun (saukhya + dātṛ). Jīvā carries the dative/oblique ending -ā."

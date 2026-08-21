@@ -256,7 +256,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saukhyadātāra jīvā",
-    "english": "{0:giver of peace }{1:to the soul,}",
+    "english": "{0:giver of peace }{1:to the jīva,}",
     "words": [
       {
         "roman": "Saukhyadātāra",
@@ -266,9 +266,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "to the living soul / beings",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "individual living being; embodied self",
+        "concept_key": "jiva",
+        "preserve_in_english": true
       }
     ],
     "grammarNote": "Saukhyadātāra is a tatpuruṣa compound (saukhya + dātā); jīvā is in the Marathi dative/objective case marker -ā."
