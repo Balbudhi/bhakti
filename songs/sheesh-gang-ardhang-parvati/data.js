@@ -624,7 +624,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāginī",
-        "gloss": "modal melodic counterparts",
+        "gloss": "melodic mode; traditionally the feminine counterpart of a rāga",
         "concept_key": "",
         "preserve_in_english": false
       },

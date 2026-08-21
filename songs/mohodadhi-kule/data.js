@@ -699,7 +699,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Nandighoṣa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Jagannātha's chariot",
         "concept_key": "",
         "preserve_in_english": false
       },

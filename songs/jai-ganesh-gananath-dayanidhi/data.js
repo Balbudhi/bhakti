@@ -74,7 +74,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇēśa",
-        "gloss": "Lord of the celestial hosts",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -127,7 +127,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇēśa",
-        "gloss": "Lord of the celestial hosts",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -381,7 +381,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇēśa",
-        "gloss": "Lord of the celestial hosts",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },

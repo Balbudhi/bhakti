@@ -880,7 +880,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rahīm",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Hindi poet and devotee ʿAbd al-Raḥīm Khān-i-Khānān",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -164,7 +164,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tāṇḍava",
-        "gloss": "cosmic dance",
+        "gloss": "vigorous dance, especially Śiva's cosmic dance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -247,7 +247,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tāṇḍava",
-        "gloss": "cosmic dance",
+        "gloss": "vigorous dance, especially Śiva's cosmic dance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -306,7 +306,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tāṇḍava",
-        "gloss": "cosmic dance",
+        "gloss": "vigorous dance, especially Śiva's cosmic dance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -347,7 +347,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Tāṇḍava",
-        "gloss": "cosmic dance",
+        "gloss": "vigorous dance, especially Śiva's cosmic dance",
         "concept_key": "",
         "preserve_in_english": false
       },

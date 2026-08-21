@@ -875,7 +875,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yamunā",
-        "gloss": "of the Yamuna",
+        "gloss": "sacred river associated with Kṛṣṇa's Braj",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1255,7 +1255,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Mīrā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet-saint devoted to Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1608,10 +1608,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 42.875,
-    "end": 48.0
+    "end": 48
   },
   {
-    "start": 48.0,
+    "start": 48,
     "end": 62.8
   },
   {

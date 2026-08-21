@@ -219,7 +219,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "light-waving ritual/hymn",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1524,7 +1524,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cātaka",
-        "gloss": "proper name or untranslated term",
+        "gloss": "bird traditionally imagined as thirsting only for rain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2971,7 +2971,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmanārāyaṇaṁ",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu in the form of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1781,7 +1781,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "girijā",
-        "gloss": "Pārvatī, daughter of the mountain",
+        "gloss": "“mountain-born”; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       }

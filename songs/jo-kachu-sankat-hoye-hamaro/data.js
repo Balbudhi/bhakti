@@ -1005,7 +1005,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaidēhī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "daughter of Videha; epithet of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },

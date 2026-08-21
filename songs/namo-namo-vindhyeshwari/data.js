@@ -1322,7 +1322,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kālī",
-        "gloss": "the fierce timeless mother",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

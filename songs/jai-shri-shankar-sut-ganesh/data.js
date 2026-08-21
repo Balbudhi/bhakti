@@ -831,7 +831,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "girijā",
-        "gloss": "Parvati, mountain-born goddess",
+        "gloss": "“mountain-born”; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },

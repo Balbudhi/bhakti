@@ -74,7 +74,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇēśa",
-        "gloss": "lord of the ganas",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1105,7 +1105,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Yamunā",
-        "gloss": "river",
+        "gloss": "sacred river associated with Kṛṣṇa's Braj",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1449,7 +1449,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mīrā",
-        "gloss": "saint-poet Mirabai",
+        "gloss": "poet-saint devoted to Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -49,7 +49,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "[Dhrupad",
-        "gloss": "proper name or untranslated term",
+        "gloss": "North Indian classical vocal genre",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -824,10 +824,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 200.45,
-    "end": 212.0
+    "end": 212
   },
   {
-    "start": 212.0,
+    "start": 212,
     "end": 234.95
   },
   {

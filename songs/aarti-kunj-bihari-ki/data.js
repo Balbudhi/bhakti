@@ -195,7 +195,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "āratī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -509,7 +509,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nanda",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Kṛṣṇa's foster-father",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -521,7 +521,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nanda,",
-        "gloss": "son; delight",
+        "gloss": "Kṛṣṇa's foster-father",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -741,13 +741,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kālī,",
-        "gloss": "dark; dark-hued",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kālī",
-        "gloss": "dark (refrain repetition)",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -883,13 +883,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "banamālī,",
-        "gloss": "proper name or untranslated term",
+        "gloss": "wearer of a forest-flower garland; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "banamālī",
-        "gloss": "refrain repetition",
+        "gloss": "wearer of a forest-flower garland; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1269,7 +1269,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },

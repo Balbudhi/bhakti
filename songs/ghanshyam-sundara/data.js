@@ -874,7 +874,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Yamunā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred river associated with Kṛṣṇa's Braj",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1265,7 +1265,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Mīrā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet-saint devoted to Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

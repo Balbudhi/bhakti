@@ -104,7 +104,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śyām",
-        "gloss": "Krishna",
+        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

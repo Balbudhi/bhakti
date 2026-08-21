@@ -805,7 +805,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tulasīdāsa",
-        "gloss": "Tulsidas (the poet-suppliant)",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },

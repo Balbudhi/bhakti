@@ -797,7 +797,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I made / did",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -964,7 +964,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I made / did",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1267,7 +1267,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I made / offered",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1386,7 +1386,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I made / offered",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1797,7 +1797,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I made / did",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2041,7 +2041,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I made / felt",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2130,7 +2130,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I made / offered",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3231,7 +3231,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I offered / made",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3350,7 +3350,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "I offered / made",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3972,10 +3972,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 277.87,
-    "end": 293.0
+    "end": 293
   },
   {
-    "start": 293.0,
+    "start": 293,
     "end": 300.68
   },
   {

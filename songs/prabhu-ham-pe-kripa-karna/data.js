@@ -664,7 +664,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāginī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "melodic mode; traditionally the feminine counterpart of a rāga",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -835,7 +835,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śyām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

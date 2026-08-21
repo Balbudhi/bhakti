@@ -338,7 +338,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Kālī",
-        "gloss": "fierce Goddess",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

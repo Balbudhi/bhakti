@@ -86,7 +86,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇēśa",
-        "gloss": "the elephant-headed remover of obstacles",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -98,7 +98,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇēśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -110,7 +110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇēśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1138,7 +1138,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Tulasīdāsa",
-        "gloss": "Tulsidas (the poet-devotee)",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1156,7 +1156,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Tulasīdāsa",
-        "gloss": "Tulsidas",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1239,7 +1239,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇēśa",
-        "gloss": "the elephant-headed remover of obstacles",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1251,7 +1251,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇēśa...",
-        "gloss": "proper name or untranslated term",
+        "gloss": "lord of the gaṇas (attendant hosts); elephant-headed remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
