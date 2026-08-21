@@ -376,7 +376,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kabīrā",
-        "gloss": "Kabir [proper name with stylistic elongation]"
+        "gloss": "poet-saint"
       },
       {
         "roman": "sun",
@@ -401,7 +401,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Kabīrā",
-        "gloss": "Kabir [proper name]"
+        "gloss": "poet-saint"
       }
     ],
     "grammarNote": "Standalone proper noun repeated for vocalic elaboration."
@@ -418,7 +418,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kabīrā",
-        "gloss": "Kabir [proper name]"
+        "gloss": "poet-saint"
       }
     ],
     "grammarNote": "Subject-verb signature clause with archaic finite participle 'kahat'."

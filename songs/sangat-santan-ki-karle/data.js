@@ -573,7 +573,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kabīrā",
-        "gloss": "Kabir",
+        "gloss": "poet-saint",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -433,7 +433,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kabīrā",
-        "gloss": "Kabir",
+        "gloss": "poet-saint",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -472,7 +472,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kabīrā",
-        "gloss": "Kabir",
+        "gloss": "poet-saint",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -783,10 +783,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 171.6,
-    "end": 182.0
+    "end": 182
   },
   {
-    "start": 182.0,
+    "start": 182,
     "end": 207.45
   },
   {
@@ -839,10 +839,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 370.47,
-    "end": 381.0
+    "end": 381
   },
   {
-    "start": 381.0,
+    "start": 381,
     "end": 391.19
   },
   {

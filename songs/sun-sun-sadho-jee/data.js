@@ -484,7 +484,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kabīra",
-        "gloss": "Kabir (the poet-saint; masculine proper noun)"
+        "gloss": "poet-saint"
       },
       {
         "roman": "suno",
