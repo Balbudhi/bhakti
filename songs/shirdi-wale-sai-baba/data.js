@@ -95,7 +95,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -369,7 +369,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1215,7 +1215,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1757,10 +1757,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 379.4,
-    "end": 398.0
+    "end": 398
   },
   {
-    "start": 398.0,
+    "start": 398,
     "end": 412.15
   },
   {

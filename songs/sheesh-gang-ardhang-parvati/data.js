@@ -511,7 +511,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "Lord Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1388,7 +1388,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 17.0,
+    "start": 17,
     "end": 38.55
   },
   {
@@ -1401,10 +1401,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 69.85,
-    "end": 102.0
+    "end": 102
   },
   {
-    "start": 102.0,
+    "start": 102,
     "end": 155.025
   },
   {

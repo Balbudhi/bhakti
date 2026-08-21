@@ -86,7 +86,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -175,7 +175,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -222,7 +222,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -453,7 +453,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -708,7 +708,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -726,7 +726,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -957,7 +957,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1034,7 +1034,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām...",
-        "gloss": "trailing off",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1278,10 +1278,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 149.675,
-    "end": 156.0
+    "end": 156
   },
   {
-    "start": 156.0,
+    "start": 156,
     "end": 162.325
   },
   {

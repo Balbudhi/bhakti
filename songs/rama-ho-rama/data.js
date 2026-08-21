@@ -282,7 +282,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -377,7 +377,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -621,7 +621,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1316,7 +1316,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1519,10 +1519,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 112.85,
-    "end": 122.0
+    "end": 122
   },
   {
-    "start": 122.0,
+    "start": 122,
     "end": 147.2
   },
   {
@@ -1571,10 +1571,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 350.8,
-    "end": 363.0
+    "end": 363
   },
   {
-    "start": 363.0,
+    "start": 363,
     "end": 386.8
   },
   {

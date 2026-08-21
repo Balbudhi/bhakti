@@ -633,7 +633,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -680,7 +680,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rāma",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -763,7 +763,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1176,7 +1176,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma's consort",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1229,7 +1229,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śiva",
-        "gloss": "of Śiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },

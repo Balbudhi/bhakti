@@ -665,7 +665,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śāradā",
-        "gloss": "vocative proper name / divine epithet",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },

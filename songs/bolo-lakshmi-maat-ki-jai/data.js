@@ -81,7 +81,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Lakṣmī",
-        "gloss": "goddess of prosperity and spiritual abundance",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -223,7 +223,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Lakṣmī",
-        "gloss": "goddess of auspicious fortune",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -247,7 +247,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Lakṣmī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -377,7 +377,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Viṣṇu",
-        "gloss": "Lord Vishnu (the Preserver)",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -436,7 +436,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Lakṣmī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2439,7 +2439,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Lakṣmī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },

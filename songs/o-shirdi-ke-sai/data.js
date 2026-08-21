@@ -98,7 +98,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Lord Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -122,7 +122,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Lord Rama",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },

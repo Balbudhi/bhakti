@@ -996,7 +996,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "the divine / Ram",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },

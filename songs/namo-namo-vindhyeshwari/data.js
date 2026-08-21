@@ -1221,7 +1221,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śāradā",
-        "gloss": "goddess of learning and eloquence",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1697,7 +1697,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "goddess of prosperity",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1911,13 +1911,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "proper name or untranslated term",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śiva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5341,10 +5341,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 140.8,
-    "end": 154.0
+    "end": 154
   },
   {
-    "start": 154.0,
+    "start": 154,
     "end": 167.35
   },
   {

@@ -582,7 +582,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Ram / the Divine (masculine proper noun)"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "divāne",
@@ -796,7 +796,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Ram / the Lord (masculine proper noun)"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "milata",
@@ -857,7 +857,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Ram / the Lord (masculine proper noun)"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "milata",
@@ -1017,7 +1017,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Ram / the Divine (masculine proper noun)"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "milata",
@@ -1119,7 +1119,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Ram (masculine proper noun)"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā"
       },
       {
         "roman": "bhajana",

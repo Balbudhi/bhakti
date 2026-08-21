@@ -1413,7 +1413,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "the righteous avatar",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1431,7 +1431,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "consort of Rama",
+        "gloss": "Rāma's consort",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4207,18 +4207,18 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 181.125,
-    "end": 187.0
+    "end": 187
   },
   {
-    "start": 187.0,
+    "start": 187,
     "end": 199.04
   },
   {
     "start": 199.04,
-    "end": 207.0
+    "end": 207
   },
   {
-    "start": 207.0,
+    "start": 207,
     "end": 215.125
   },
   {
@@ -4251,10 +4251,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 274.96,
-    "end": 283.0
+    "end": 283
   },
   {
-    "start": 283.0,
+    "start": 283,
     "end": 288.925
   },
   {
@@ -4299,10 +4299,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 375.925,
-    "end": 384.0
+    "end": 384
   },
   {
-    "start": 384.0,
+    "start": 384,
     "end": 389.975
   },
   {
@@ -4315,10 +4315,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 409.925,
-    "end": 418.0
+    "end": 418
   },
   {
-    "start": 418.0,
+    "start": 418,
     "end": 423.95
   },
   {
@@ -4331,10 +4331,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 443.925,
-    "end": 452.0
+    "end": 452
   },
   {
-    "start": 452.0,
+    "start": 452,
     "end": 457.9
   },
   {

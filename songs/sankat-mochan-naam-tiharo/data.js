@@ -1498,7 +1498,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāvana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "king of Laṅkā and Rāma's adversary",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1945,7 +1945,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāvana",
-        "gloss": "Meghnada",
+        "gloss": "king of Laṅkā and Rāma's adversary",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2308,7 +2308,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāvana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "king of Laṅkā and Rāma's adversary",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -96,7 +96,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "place name",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },

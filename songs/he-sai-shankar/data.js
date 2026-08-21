@@ -110,7 +110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "Shiva, the author of auspiciousness",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1175,7 +1175,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śaṅkara",
-        "gloss": "Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1438,10 +1438,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 220.7,
-    "end": 226.0
+    "end": 226
   },
   {
-    "start": 226.0,
+    "start": 226,
     "end": 236.475
   },
   {

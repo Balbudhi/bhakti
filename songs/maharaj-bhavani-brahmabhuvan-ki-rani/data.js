@@ -158,7 +158,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Lord Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -241,7 +241,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Lord Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -300,7 +300,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śaṅkara",
-        "gloss": "Lord Shiva",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -867,10 +867,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 292.125,
-    "end": 297.0
+    "end": 297
   },
   {
-    "start": 297.0,
+    "start": 297,
     "end": 339.025
   },
   {

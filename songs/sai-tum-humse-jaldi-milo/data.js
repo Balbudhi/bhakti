@@ -270,7 +270,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śirḍī",
-        "gloss": "holy town",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },

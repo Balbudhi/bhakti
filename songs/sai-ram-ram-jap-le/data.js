@@ -106,13 +106,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "divine name",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rām",
-        "gloss": "divine name",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -136,13 +136,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "divine name",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rām",
-        "gloss": "divine name",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -344,7 +344,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -374,13 +374,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -689,7 +689,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -707,7 +707,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1659,7 +1659,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śirḍī",
-        "gloss": "holy town in Maharashtra",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1683,7 +1683,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śirḍī",
-        "gloss": "holy town in Maharashtra",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2360,10 +2360,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 368.225,
-    "end": 386.0
+    "end": 386
   },
   {
-    "start": 386.0,
+    "start": 386,
     "end": 393.875
   },
   {

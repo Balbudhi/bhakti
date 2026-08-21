@@ -330,7 +330,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śiva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1274,10 +1274,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 572.35,
-    "end": 577.0
+    "end": 577
   },
   {
-    "start": 577.0,
+    "start": 577,
     "end": 594.35
   },
   {

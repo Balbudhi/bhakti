@@ -346,7 +346,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -370,7 +370,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -609,7 +609,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -633,7 +633,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1361,7 +1361,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "Lord Shiva",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1552,7 +1552,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3290,7 +3290,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śirḍī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "town associated with Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
