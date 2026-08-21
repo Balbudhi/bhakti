@@ -197,7 +197,16 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
     if song_dir.exists() and any(song_dir.iterdir()):
         if audio.is_file():
             return song_dir, read_packet(song_dir / ".transcription" / "source.json") or {}
-        raise RuntimeError(f"refusing to overwrite non-empty {song_dir}")
+        # A cancelled/failed URL fetch may have created only the private review
+        # directory. That empty scaffold contains no media or public data and
+        # is safe to resume; never overwrite an actual partial reader instead.
+        entries = list(song_dir.iterdir())
+        resumable_empty_scaffold = all(
+            entry.name == ".transcription" and entry.is_dir() and not any(entry.iterdir())
+            for entry in entries
+        )
+        if not resumable_empty_scaffold:
+            raise RuntimeError(f"refusing to overwrite non-empty {song_dir}")
     song_dir.mkdir(parents=True, exist_ok=True)
     review_dir = song_dir / ".transcription"
     review_dir.mkdir(exist_ok=True)
@@ -255,12 +264,40 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
     return song_dir, source
 
 
+def audio_stream_quality(path: Path) -> tuple[int, bool]:
+    """Return approximate audio bitrate and whether the container is audio-only."""
+    try:
+        probe = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=bit_rate:stream=codec_type,bit_rate",
+             "-of", "json", str(path)],
+            check=True, capture_output=True, text=True,
+        )
+        payload = json.loads(probe.stdout)
+        streams = payload.get("streams", [])
+        audio_streams = [stream for stream in streams if stream.get("codec_type") == "audio"]
+        rate = max((int(stream.get("bit_rate") or 0) for stream in audio_streams), default=0)
+        if not rate:
+            rate = int((payload.get("format") or {}).get("bit_rate") or 0)
+        return rate, bool(audio_streams) and len(audio_streams) == len(streams)
+    except (OSError, ValueError, subprocess.CalledProcessError, json.JSONDecodeError):
+        return 0, True
+
+
 def listener_audio_sources(song_dir: Path) -> list[dict[str, str]]:
     types = {".webm": "audio/webm; codecs=opus", ".ogg": "audio/ogg; codecs=opus",
              ".mp3": "audio/mpeg", ".wav": "audio/wav", ".flac": "audio/flac", ".m4a": "audio/mp4"}
-    preferred = [".webm", ".ogg", ".flac", ".wav", ".mp3", ".m4a"]
-    return [{"src": f"audio{suffix}", "type": types[suffix]}
-            for suffix in preferred if (song_dir / f"audio{suffix}").is_file()]
+    fallback_rate = {".flac": 2_000_000, ".wav": 1_500_000, ".webm": 160_000,
+                     ".ogg": 160_000, ".m4a": 128_000, ".mp3": 96_000}
+    candidates = []
+    for suffix, mime_type in types.items():
+        path = song_dir / f"audio{suffix}"
+        if not path.is_file():
+            continue
+        bitrate, audio_only = audio_stream_quality(path)
+        candidates.append((audio_only, bitrate or fallback_rate[suffix], -fallback_rate[suffix], suffix, mime_type))
+    candidates.sort(reverse=True)
+    return [{"src": f"audio{suffix}", "type": mime_type}
+            for _audio_only, _rate, _fallback, suffix, mime_type in candidates]
 
 
 def published_audio_sources(song_dir: Path) -> list[dict[str, str]]:
@@ -374,12 +411,25 @@ def ask(prompt: str, audio: Path | None, options: argparse.Namespace) -> dict[st
 
 def canonical_timing_audio(source: Path, destination: Path) -> Path:
     """Create a metadata-free fixed-rate API copy without changing song time."""
+    # This is an ephemeral model-timebase copy only. At 128 kb/s it remains
+    # well above Gemini's internal audio resolution while keeping long inline
+    # OpenRouter payloads below the provider's practical request ceiling.
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(source), "-map_metadata", "-1",
-                    "-vn", "-ar", "48000", "-ac", "2", "-c:a", "aac", "-b:a", "192k", str(destination)], check=True)
+                    "-vn", "-ar", "48000", "-ac", "2", "-c:a", "aac", "-b:a", "128k", str(destination)], check=True)
     source_duration = gemini.duration_seconds(source)
     normalized_duration = gemini.duration_seconds(destination)
     if abs(source_duration - normalized_duration) > 0.1:
         raise RuntimeError(f"canonical timing audio changed duration by {normalized_duration - source_duration:.3f}s")
+    return destination
+
+
+def normalized_transcript_audio(source: Path, destination: Path) -> Path:
+    """Make one metadata-free fallback only when an audio response is empty."""
+    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(source), "-map_metadata", "-1",
+                    "-vn", "-ac", "1", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "112k", str(destination)],
+                   check=True)
+    if abs(gemini.duration_seconds(source) - gemini.duration_seconds(destination)) > 0.1:
+        raise RuntimeError("normalized transcript audio changed source duration")
     return destination
 
 
@@ -446,9 +496,10 @@ def segment_transcript_schema() -> dict[str, Any]:
 
 
 def transcribe_long_audio(
-    song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace
+    song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace, *,
+    target_seconds: float = 300.0, minimum_core: float = 180.0,
 ) -> dict[str, Any]:
-    segments = adaptive_audio_segments(audio)
+    segments = adaptive_audio_segments(audio, target_seconds=target_seconds, minimum_core=minimum_core)
     cache_dir = song_dir / ".transcription" / "pipeline" / "transcript-segments"
     cache_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="bhakti-long-transcript-") as temporary:
@@ -520,7 +571,25 @@ Source metadata is only a lead, not proof of public credits:
 
 Return strict JSON:
 {{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"uncertainties":[]}}"""
-    result = ask(prompt, audio, options)
+    try:
+        result = ask(prompt, audio, options)
+    except RuntimeError as exc:
+        # A few provider responses are empty for otherwise valid M4A/MP3
+        # input. Retry once with a clean audio-only MP3; this does not change
+        # the preserved listener master or create another open-ended retry.
+        if "required JSON packet" not in str(exc):
+            raise
+        with tempfile.TemporaryDirectory(prefix="bhakti-transcript-retry-") as temporary:
+            fallback = normalized_transcript_audio(audio, Path(temporary) / "transcript.mp3")
+            try:
+                result = ask(prompt, fallback, options)
+            except RuntimeError as fallback_exc:
+                if "required JSON packet" not in str(fallback_exc) or gemini.duration_seconds(audio) <= 180:
+                    raise
+                # A second empty provider body is a transport failure, not
+                # lyric evidence. Divide only this recording into bounded
+                # overlapping excerpts and reconcile them deterministically.
+                result = transcribe_long_audio(song_dir, source, audio, options, target_seconds=150.0)
     write_json(target, result)
     return result
 
@@ -711,9 +780,29 @@ Candidate transcript:
 
 Return strict JSON:
 {{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"verified_lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"changes":[],"uncertainties":[]}}"""
-    result = gemini.call(options.model, gemini.key(), prompt, audio=audio, timeout=options.timeout,
-                         response_schema=audited_transcript_schema(), schema_name="bhakti_audited_transcript",
-                         reasoning_effort="high", max_completion_tokens=65536)
+    try:
+        result = gemini.call(options.model, gemini.key(), prompt, audio=audio, timeout=options.timeout,
+                             response_schema=audited_transcript_schema(), schema_name="bhakti_audited_transcript",
+                             reasoning_effort="high", max_completion_tokens=65536)
+    except RuntimeError as exc:
+        if "required JSON packet" not in str(exc):
+            raise
+        with tempfile.TemporaryDirectory(prefix="bhakti-audit-retry-") as temporary:
+            fallback = normalized_transcript_audio(audio, Path(temporary) / "audit.mp3")
+            try:
+                result = gemini.call(options.model, gemini.key(), prompt, audio=fallback, timeout=options.timeout,
+                                     response_schema=audited_transcript_schema(), schema_name="bhakti_audited_transcript",
+                                     reasoning_effort="high", max_completion_tokens=65536)
+            except RuntimeError as fallback_exc:
+                if "required JSON packet" not in str(fallback_exc) or gemini.duration_seconds(audio) <= 180:
+                    raise
+                # Last-resort recovery for a provider that rejects this
+                # recording's full-audio audit: independent short audio
+                # witnesses plus deterministic overlap reconciliation.
+                source = read_packet(song_dir / ".transcription" / "source.json") or {}
+                segmented_raw = transcribe_long_audio(song_dir, source=source, audio=audio, options=options,
+                                                       target_seconds=150.0, minimum_core=90.0)
+                result = audit_long_transcript(song_dir, segmented_raw, audio, options)
     write_json(target, result)
     return result
 
@@ -1408,8 +1497,14 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
             uncertain: list[str] = []
         else:
             prompt = start_only_timing_prompt(occurrences, duration)
+            # Google rejects a very large JSON Schema for long/repetitive
+            # recordings before it considers the audio. The prompt still
+            # requires the identical ordered JSON object; local validation
+            # remains authoritative, while later bounded windows use strict
+            # per-window schemas.
+            coarse_schema = start_only_timing_schema(len(occurrences)) if len(occurrences) <= 40 else None
             response = gemini.call(options.model, gemini.key(), prompt, audio=model_audio, timeout=options.timeout,
-                                   response_schema=start_only_timing_schema(len(occurrences)),
+                                   response_schema=coarse_schema,
                                    schema_name="bhakti_start_times", reasoning_effort="high",
                                    max_completion_tokens=min(65536, max(16384, len(occurrences) * 256)))
             coarse_sequence, errors, uncertain = timing_sequence_from_response(occurrences, response["packet"], duration)
@@ -2087,8 +2182,8 @@ def page_html(meta: dict[str, Any]) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/style.css?v=contract-20260821-4" />
-  <link rel="stylesheet" href="../../assets/song.css?v=contract-20260821-4" />
+  <link rel="stylesheet" href="../../assets/style.css?v=contract-20260821-5" />
+  <link rel="stylesheet" href="../../assets/song.css?v=contract-20260821-5" />
 </head>
 <body>
   <main class="song-page">
@@ -2105,9 +2200,9 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260821-4"></script>
-  <script src="../../assets/song.js?v=contract-20260821-4"></script>
-  <script src="../../assets/pwa.js?v=contract-20260821-4"></script>
+  <script src="data.js?v=contract-20260821-5"></script>
+  <script src="../../assets/song.js?v=contract-20260821-5"></script>
+  <script src="../../assets/pwa.js?v=contract-20260821-5"></script>
 </body>
 </html>
 '''

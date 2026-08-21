@@ -49,6 +49,17 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("mp4", format_name)
         self.assertEqual(evidence["source_url"], source_url)
 
+    def test_intake_resumes_an_empty_private_scaffold(self) -> None:
+        source = self.root / "input.m4a"
+        subprocess.run([
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=0.1",
+            "-c:a", "aac", str(source),
+        ], check=True)
+        (self.root / "songs" / "resume-test" / ".transcription").mkdir(parents=True)
+        song, _evidence = pipeline.intake({"slug": "resume-test", "source": str(source)}, force=False)
+        self.assertEqual(song.name, "resume-test")
+        self.assertTrue((song / "audio.m4a").is_file())
+
     def test_generation_uses_roles_and_canonical_reader_contract(self) -> None:
         song = self.root / "songs" / "sample-song"
         song.mkdir()
@@ -327,6 +338,19 @@ class PipelineTests(unittest.TestCase):
         (song / "audio.m4a").touch()
         (song / "audio.webm").touch()
         self.assertEqual(pipeline.preferred_listener_audio(song).name, "audio.webm")
+
+    def test_listener_audio_prefers_clean_higher_bitrate_audio_over_mp3_with_artwork_stream(self) -> None:
+        song = self.root / "songs" / "cover-art-choice"
+        song.mkdir()
+        subprocess.run([
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=0.1",
+            "-c:a", "aac", "-b:a", "192k", str(song / "audio.m4a"),
+        ], check=True)
+        subprocess.run([
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=0.1",
+            "-c:a", "libmp3lame", "-b:a", "96k", str(song / "audio.mp3"),
+        ], check=True)
+        self.assertEqual(pipeline.preferred_listener_audio(song).name, "audio.m4a")
 
     def test_published_audio_uses_release_manifest_without_losing_local_development_fallback(self) -> None:
         song = self.root / "songs" / "release-audio"

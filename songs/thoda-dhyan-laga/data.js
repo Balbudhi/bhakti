@@ -21,11 +21,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.mp3",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thoda-dhyan-laga.mp3",
       "type": "audio/mpeg"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thoda-dhyan-laga.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -2310,10 +2310,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 28.99,
-    "end": 35.0
+    "end": 35
   },
   {
-    "start": 35.0,
+    "start": 35,
     "end": 39.19
   },
   {
@@ -2390,10 +2390,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 165.625,
-    "end": 169.0
+    "end": 169
   },
   {
-    "start": 169.0,
+    "start": 169,
     "end": 175.41
   },
   {
@@ -2522,10 +2522,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 385.75,
-    "end": 392.0
+    "end": 392
   },
   {
-    "start": 392.0,
+    "start": 392,
     "end": 395.75
   },
   {

@@ -474,7 +474,12 @@ Listener audio preserves the best original stream. YouTube intake prefers its
 highest-quality audio-only stream (normally Opus) and keeps the highest native
 M4A/AAC stream as a compatibility fallback. Do not transcode Opus to AAC and
 describe that as an upgrade. Temporary fixed-rate AAC used to normalize model
-timebases is deleted after processing and is never published.
+timebases is 128 kb/s, deleted after processing, and never published; it does
+not change the listener master or claim to improve it.
+If a provider returns an empty response to an otherwise valid full-song
+transcription, the pipeline retries that exact request once with a temporary
+metadata-free mono MP3. This is a transport fallback only, never a substitute
+for the preserved listener source or a reason to relax the JSON gate.
 
 High-quality listener audio is published as stable assets on the repository's
 `media-v1` GitHub Release, not committed to Git and not included in the Pages

@@ -18,7 +18,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-bhole-nath.m4a",
       "type": "audio/mp4"
     }
   ],

@@ -1466,6 +1466,31 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śiva"
   },
   {
+    "slug": "jai-ambe-gauri",
+    "title": "Jai Ambe Gauri",
+    "credit": "Balbir Nirdosh · Lata Mangeshkar · Surendra Kohli",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Viṣṇu",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vishnu",
+      "Visnu",
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "Balbir Nirdosh",
+    "singer": "Lata Mangeshkar",
+    "composer": "Surendra Kohli",
+    "subtitle": "Śakti"
+  },
+  {
     "slug": "leke-bhesh-fakirika",
     "title": "Leke Bhesh Fakirika",
     "credit": "",
@@ -1485,6 +1510,28 @@ window.BHAKTI_SONGS = [
     "singer": "",
     "composer": "",
     "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "sheronwali-kripa-kijiye",
+    "title": "Sheronwali Kripa Kijiye",
+    "credit": "Maninder Ji",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi"
+    ],
+    "writer": "",
+    "singer": "Maninder Ji",
+    "composer": "",
+    "subtitle": "Śakti"
   },
   {
     "slug": "jhoothe-jag-ne",
@@ -1700,6 +1747,29 @@ window.BHAKTI_SONGS = [
     "writer": "Kishore Gagare & Jayshree Medhi",
     "singer": "Pramod Medhi",
     "composer": "Suresh–Sanjay",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "doi-kar-teka-hei-matha",
+    "title": "Kākaḍ Āratī — Sūryodaya Pūrva",
+    "credit": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev · Pramod Medhi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Sant Tukaram; Sant Janabai; Krshna Jogishvara Bhishma; Sant Namdev · Pramod Medhi",
+      "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev · Pramod Medhi",
+      "Sant Tukaram; Sant Janabai; Krshna Jogishvara Bhishma; Sant Namdev",
+      "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev"
+    ],
+    "writer": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev",
+    "singer": "Pramod Medhi",
+    "composer": "",
     "subtitle": "Śirḍī Sāī"
   },
   {
@@ -2373,6 +2443,25 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "shejarti",
+    "title": "Shejarti",
+    "credit": "",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
     "slug": "geet-jaisa-main-hun-nirashrit",
     "title": "Geet Jaisa Main Hun Nirashrit",
     "credit": "Shilpa Rao",
@@ -2700,6 +2789,25 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śakti"
   },
   {
+    "slug": "dekho-mand-mand",
+    "title": "Dekho Mand Mand",
+    "credit": "Shubhram Bahal & Pramod Medhi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai"
+    ],
+    "writer": "",
+    "singer": "Shubhram Bahal & Pramod Medhi",
+    "composer": "",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
     "slug": "duniya-se-door",
     "title": "Duniya Se Dil Lagakar",
     "credit": "Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir & Shubhram Bahal",
@@ -2869,6 +2977,50 @@ window.BHAKTI_SONGS = [
     "singer": "Sukhwinder Singh",
     "composer": "",
     "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "kyun-nahin-manegi-meri-maa",
+    "title": "Kyun Nahin Manegi Meri Maa",
+    "credit": "Suresh Ji",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi"
+    ],
+    "writer": "",
+    "singer": "Suresh Ji",
+    "composer": "",
+    "subtitle": "Śakti"
+  },
+  {
+    "slug": "meri-maa-jagdambe-man-jaye",
+    "title": "Meri Maa Jagdambe Man Jaye",
+    "credit": "Suresh Ji",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi"
+    ],
+    "writer": "",
+    "singer": "Suresh Ji",
+    "composer": "",
+    "subtitle": "Śakti"
   },
   {
     "slug": "duniya-de-dukhan",
@@ -3211,5 +3363,27 @@ window.BHAKTI_SONGS = [
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
     "subtitle": "Śiva"
+  },
+  {
+    "slug": "kai-janmon-se-bula-rahi-hoon",
+    "title": "Kai Janmon Se Bula Rahi Hoon",
+    "credit": "Vijay Ji",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi"
+    ],
+    "writer": "",
+    "singer": "Vijay Ji",
+    "composer": "",
+    "subtitle": "Śakti"
   }
 ];

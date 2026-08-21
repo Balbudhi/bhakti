@@ -25,10 +25,10 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
-                self.assertIn('song.js?v=contract-20260821-4', text)
-                self.assertIn('data.js?v=contract-20260821-4', text)
-                self.assertIn('pwa.js?v=contract-20260821-4', text)
-                self.assertIn('song.css?v=contract-20260821-4', text)
+                self.assertIn('song.js?v=contract-20260821-5', text)
+                self.assertIn('data.js?v=contract-20260821-5', text)
+                self.assertIn('pwa.js?v=contract-20260821-5', text)
+                self.assertIn('song.css?v=contract-20260821-5', text)
                 self.assertIn('family=EB+Garamond:wght@400;500', text)
                 self.assertIn('name="apple-mobile-web-app-capable" content="yes"', text)
                 self.assertEqual(text.count('class="song-meta"'), 1)
@@ -79,7 +79,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
         self.assertIn('audioIsPlaying()', client)
         self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
-        self.assertIn('bhakti-shell-v10', worker)
+        self.assertIn('bhakti-shell-v11', worker)
 
     def test_iast_uses_the_extended_garamond_face(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
@@ -92,8 +92,8 @@ class SongUiContractTests(unittest.TestCase):
     def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
         self.assertIn("left: 0;\n  right: 0;\n  bottom: 0;", song_css)
-        self.assertIn("padding: 0 28px calc(18px + env(safe-area-inset-bottom));", song_css)
-        self.assertIn("padding: 0 18px calc(18px + env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 8px 28px calc(28px + env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 8px 18px calc(28px + env(safe-area-inset-bottom));", song_css)
 
     def test_hosted_intake_is_owner_only_and_public_media_only(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "run-bhakti-intake.yml").read_text(encoding="utf-8")
