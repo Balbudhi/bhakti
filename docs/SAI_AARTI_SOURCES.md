@@ -26,6 +26,8 @@ Component order and wording:
   <https://shirdisaiparivaar.org/drupal/uploads/2013/05/ShirdiSaiBhajans2006.pdf>
 - Śej cycle order cross-check:
   <https://music.apple.com/in/album/sadguru-sainath-sagun-upasana-vol-4-shej-aarti/1467377423>
+- `Śrī Guruprasāda Yācanā` / `Ruso Mama` component attribution:
+  <https://www.shirdibaba.org/aartis/ada.htm>
 
 Attribution policy:
 
@@ -35,6 +37,11 @@ Attribution policy:
   Tukārām.
 - `Śirḍī Mājhe Paṇḍharpur` receives a component note because it recasts
   Paṇḍharpur/Viṭṭhala imagery for Sai worship.
+- `Śrī Guruprasāda Yācanā` (beginning `Ruso Mama Priyāmbikā`) is B. V. Dev's
+  work. The ShirdiBaba Dhoop Āratī transcription explicitly identifies it as
+  “Guru Prasada Yachanaastakam — composed by B. V. Dev”; the same attribution
+  is retained as a component notice rather than made an album-wide writer
+  claim.
 - Exact Sai-name substitutions in Tukārām-derived Śej components receive the
   line badge; the badge does not imply that Tukārām wrote the substituted name.
 - Conflicting or unsupported poet claims remain `Poet unresolved` rather than
