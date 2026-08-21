@@ -423,7 +423,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nandighoṣa",
-        "gloss": "the chariot of Lord Jagannatha",
+        "gloss": "Jagannātha's chariot",
         "concept_key": "",
         "preserve_in_english": false
       },

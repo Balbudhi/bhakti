@@ -191,7 +191,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Bhairavī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "fierce feminine form or consort of Bhairava",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -398,7 +398,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kālī",
-        "gloss": "Mother Kālī",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -991,7 +991,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śyām",
-        "gloss": "dark; black",
+        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1038,7 +1038,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śyām",
-        "gloss": "dark; black",
+        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

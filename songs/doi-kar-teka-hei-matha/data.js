@@ -1428,7 +1428,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Girijā",
-        "gloss": "Parvati, mountain-born",
+        "gloss": "“mountain-born”; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4646,7 +4646,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "lamp-waving worship; arati",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5008,7 +5008,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "lamp-waving worship; arati",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6832,7 +6832,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "waved-light offering; sacred adoration lamp",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -6873,7 +6873,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "waved-light offering; sacred adoration lamp",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8185,7 +8185,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "light-waving worship; arati",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8577,7 +8577,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "light-waving worship; arati",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },

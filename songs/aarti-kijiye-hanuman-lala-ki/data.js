@@ -99,7 +99,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "āratī",
-        "gloss": "worship with light; waving of lamps",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -200,7 +200,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "āratī",
-        "gloss": "worship with light; waving of lamps",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -941,7 +941,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "lakṣmaṇa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma's younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1083,7 +1083,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "ahirāvana",
-        "gloss": "netherworld demon king",
+        "gloss": "underworld demon defeated by Hanumān",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1285,7 +1285,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "worship with light; waving lamp",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1463,7 +1463,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "light-waving worship",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1475,7 +1475,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "añjanā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "mother of Hanumān",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1546,7 +1546,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "hymn of light; aarti",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1784,10 +1784,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 61.19,
-    "end": 72.0
+    "end": 72
   },
   {
-    "start": 72.0,
+    "start": 72,
     "end": 80.11
   },
   {
@@ -1840,10 +1840,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 202.2,
-    "end": 213.0
+    "end": 213
   },
   {
-    "start": 213.0,
+    "start": 213,
     "end": 223.775
   },
   {

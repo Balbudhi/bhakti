@@ -3408,7 +3408,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī,",
-        "gloss": "proper name or untranslated term",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },

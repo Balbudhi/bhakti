@@ -1310,7 +1310,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kālī",
-        "gloss": "the dark mother",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1818,7 +1818,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mīrā",
-        "gloss": "the Krishna-devotee poet",
+        "gloss": "poet-saint devoted to Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

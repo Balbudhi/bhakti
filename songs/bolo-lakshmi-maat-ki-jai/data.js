@@ -2433,7 +2433,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti (devotional hymn of light-waving praise)",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },

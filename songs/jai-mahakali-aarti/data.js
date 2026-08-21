@@ -122,7 +122,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kālī",
-        "gloss": "the dark goddess",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -265,7 +265,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kālī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -515,7 +515,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Girijā",
-        "gloss": "daughter of the mountain (Girija/Parvati)",
+        "gloss": "“mountain-born”; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1437,7 +1437,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "braja",
-        "gloss": "the pastoral land of Krishna's lila",
+        "gloss": "Kṛṣṇa's pastoral homeland",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1496,7 +1496,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "braja",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Kṛṣṇa's pastoral homeland",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2161,7 +2161,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tāṇḍava",
-        "gloss": "proper name or untranslated term",
+        "gloss": "vigorous dance, especially Śiva's cosmic dance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2820,7 +2820,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Mūlādhāra",
-        "gloss": "proper name or untranslated term",
+        "gloss": "“root support”; yogic centre at the base of the spine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2986,7 +2986,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kālī",
-        "gloss": "the dark transformer",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2998,7 +2998,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kālī",
-        "gloss": "the dark transformer",
+        "gloss": "the dark one; fierce form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

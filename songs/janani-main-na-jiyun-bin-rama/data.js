@@ -1643,7 +1643,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tulasīdāsa",
-        "gloss": "Tulsidas",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1726,7 +1726,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tulasīdāsa",
-        "gloss": "Tulsidas",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },

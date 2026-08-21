@@ -186,7 +186,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "girijā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "“mountain-born”; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -184,7 +184,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "āratī",
-        "gloss": "wave-offering of light; devotional lamp song",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -368,7 +368,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "āratī",
-        "gloss": "wave-offering of light; devotional lamp song",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1711,7 +1711,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cātaka,",
-        "gloss": "the chataka bird (rain-quaffing cuckoo),",
+        "gloss": "bird traditionally imagined as thirsting only for rain",
         "concept_key": "",
         "preserve_in_english": false
       },

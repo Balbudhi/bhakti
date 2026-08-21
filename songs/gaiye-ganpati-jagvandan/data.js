@@ -487,7 +487,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Tulasīdāsa",
-        "gloss": "Tulsidas (the poet-devotee)",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -558,7 +558,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Tulasīdāsa",
-        "gloss": "Tulsidas (the poet-devotee)",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },

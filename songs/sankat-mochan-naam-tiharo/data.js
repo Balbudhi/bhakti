@@ -1760,7 +1760,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "asoka",
-        "gloss": "proper name or untranslated term",
+        "gloss": "the “sorrowless” aśoka tree; setting of Sītā's captivity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2052,7 +2052,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "suṣena",
-        "gloss": "proper name or untranslated term",
+        "gloss": "physician summoned to treat Lakṣmaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2076,7 +2076,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "droṇa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "mountain of the life-restoring herb",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2689,7 +2689,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ahirāvana",
-        "gloss": "netherworld sorcerer-king",
+        "gloss": "underworld demon defeated by Hanumān",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2957,7 +2957,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ahirāvana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "underworld demon defeated by Hanumān",
         "concept_key": "",
         "preserve_in_english": false
       },

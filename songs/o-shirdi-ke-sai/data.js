@@ -110,7 +110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śyām",
-        "gloss": "Lord Krishna",
+        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -134,7 +134,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śyām",
-        "gloss": "Lord Krishna",
+        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       }

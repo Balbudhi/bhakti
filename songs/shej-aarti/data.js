@@ -245,7 +245,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "waving of lamps; ritual light offering",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1271,7 +1271,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "waving of lamps; ritual praise",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1860,7 +1860,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "waving of lamps; ritual praise",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2471,7 +2471,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "the waving lamp; arati",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3932,7 +3932,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "wave-offering; aarti",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },

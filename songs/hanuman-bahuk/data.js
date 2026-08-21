@@ -636,7 +636,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tulasīdāsa",
-        "gloss": "Tulsidas",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1266,7 +1266,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tulasīdāsa",
-        "gloss": "Tulsidas",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4265,7 +4265,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "timi",
-        "gloss": "proper name or untranslated term",
+        "gloss": "large sea-creature; whale or great fish",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5875,7 +5875,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "in the Kali age",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11707,7 +11707,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "akampana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rākṣasa warrior; literally “unshaken”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12988,7 +12988,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "the Kali age (Kaliyuga)",
+        "gloss": "the age of strife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13191,7 +13191,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāhu",
-        "gloss": "of Rahu",
+        "gloss": "eclipse-causing asura who seizes sun and moon",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15647,7 +15647,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "pūtanā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "demoness slain by the infant Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17246,7 +17246,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāhu",
-        "gloss": "proper name or untranslated term",
+        "gloss": "eclipse-causing asura who seizes sun and moon",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20169,7 +20169,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "pūtanā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "demoness slain by the infant Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

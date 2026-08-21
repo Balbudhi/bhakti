@@ -1730,7 +1730,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kailāśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Mount Kailāśa, Śiva's Himalayan abode",
         "concept_key": "",
         "preserve_in_english": false
       },

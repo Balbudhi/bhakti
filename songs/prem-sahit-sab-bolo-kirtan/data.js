@@ -1356,7 +1356,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tulasīdāsa",
-        "gloss": "the poet-saint",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1427,7 +1427,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tulasīdāsa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1871,7 +1871,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "mīrā",
-        "gloss": "the poet-saint",
+        "gloss": "poet-saint devoted to Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

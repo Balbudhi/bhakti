@@ -268,7 +268,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "the Kali age"
+        "gloss": "the age of strife"
       }
     ],
     "grammarNote": "'Smare' is a Sanskritized 3rd-person optative/present verb used conditionally ('if one remembers'). 'Chale nā' denotes negative potentiality with subject 'kali'.",
@@ -5556,7 +5556,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti (lamp offering worship)"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       }
     ],
     "grammarNote": "First-person singular optative/subjunctive karū̃ with genitive phrase Bābā kī āratī as the object.",
@@ -5607,7 +5607,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       }
     ],
     "grammarNote": "Parallel to line-065 substituting Sāī̃ for Bābā.",
@@ -6162,7 +6162,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "aarti"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -6328,7 +6328,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -6565,7 +6565,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -6798,7 +6798,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "waving of lights / aarti hymn"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -7017,7 +7017,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti / light offering"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -7210,7 +7210,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti / offering of lights"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -7433,7 +7433,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -7652,7 +7652,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -7707,7 +7707,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cātaka",
-        "gloss": "pied cuckoo / chatak bird"
+        "gloss": "bird traditionally imagined as thirsting only for rain"
       },
       {
         "roman": "nirmala",
@@ -7883,7 +7883,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "aarti"
+        "gloss": "ritual waving of light before a deity; the hymn sung with it"
       },
       {
         "roman": "Sāī̃",
@@ -10646,7 +10646,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmanārāyaṇaṁ",
-        "gloss": "accusative singular"
+        "gloss": "Viṣṇu in the form of Rāma"
       },
       {
         "roman": "kṛṣṇadāmodaraṁ",

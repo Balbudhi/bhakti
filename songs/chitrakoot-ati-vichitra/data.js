@@ -1127,7 +1127,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cakora",
-        "gloss": "gazing at the moon",
+        "gloss": "moon-loving partridge of Sanskrit poetic imagery",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1145,7 +1145,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cakora",
-        "gloss": "proper name or untranslated term",
+        "gloss": "moon-loving partridge of Sanskrit poetic imagery",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1477,7 +1477,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tulasīdāsa",
-        "gloss": "Tulsidas (the poet)",
+        "gloss": "poet of the Rāmcaritmānas",
         "concept_key": "",
         "preserve_in_english": false
       }

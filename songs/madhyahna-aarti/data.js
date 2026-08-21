@@ -262,7 +262,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "light-waving ceremony; aarti",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -327,7 +327,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "light-waving ceremony; aarti",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -345,7 +345,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "light-waving ceremony; aarti",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -932,7 +932,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "light-waving worship; aarti",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1062,7 +1062,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "light-waving ceremony; aarti",
+        "gloss": "ritual waving of light before a deity; the hymn sung with it",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2165,7 +2165,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cātaka",
-        "gloss": "pied cuckoo (rain-bird)",
+        "gloss": "bird traditionally imagined as thirsting only for rain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5259,7 +5259,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmanārāyaṇaṃ",
-        "gloss": "Lord Rama who is Narayana",
+        "gloss": "Viṣṇu in the form of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       }
