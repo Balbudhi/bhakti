@@ -604,6 +604,59 @@ window.BHAKTI_SONGS = [
     "composer": "Shri Chandra Bhanu Satpathy"
   },
   {
+    "slug": "kaise-lagaun-tumse-main-preet",
+    "title": "Kaise Lagāū̃ Tumse Maĩ Prīt",
+    "credit": "Swami Srikantananda · Shurjo Bhattacharya",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śrī Rāmakṛṣṇa"
+    ],
+    "searchAliases": [
+      "Kaise Lagaũ Tumse Maĩ Prit",
+      "Shri Ramakrshna",
+      "Sri Ramakrsna",
+      "Surjho Bhattacharya",
+      "Surjoo Bhattacharya",
+      "Kaise Lagavun Tumse Main Preet",
+      "Sri Ramakrishna",
+      "Ramakrishna Bhajan"
+    ],
+    "writer": "Swami Srikantananda",
+    "singer": "Shurjo Bhattacharya",
+    "composer": "Shurjo Bhattacharya",
+    "subtitle": "Bhavanjali"
+  },
+  {
+    "slug": "ma-tumko-kaise-batalau",
+    "title": "Maa Tumko Kaise Batlaun",
+    "credit": "Shurjo Bhattacharya · Swami Srikantananda",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śāradā Devī",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Shri Sharada Devi",
+      "Sri Sarada Devi",
+      "Sharada Devi",
+      "Sarada Devi",
+      "Shakti",
+      "Sakti",
+      "Surjho Bhattacharya",
+      "Surjoo Bhattacharya",
+      "Ma Tumko Kaise Batlaun",
+      "Holy Mother"
+    ],
+    "writer": "",
+    "singer": "Shurjo Bhattacharya",
+    "composer": "Swami Srikantananda",
+    "subtitle": "Śrī Śāradā Devī"
+  },
+  {
     "slug": "akashi-zep-ghe-re-pakhara",
     "title": "Ākāśī Jhepa Ghe Re Pākharā",
     "credit": "Jagdish Khebudkar · Sudhir Phadke",
@@ -620,63 +673,6 @@ window.BHAKTI_SONGS = [
     "singer": "Sudhir Phadke",
     "composer": "Sudhir Phadke",
     "subtitle": "Aaram Haram Aahe"
-  },
-  {
-    "slug": "kaise-lagaun-tumse-main-preet",
-    "title": "Kaise Lagāū̃ Tumse Maĩ Prīt",
-    "credit": "Swami Srikantananda · Surjoo Bhattacharya",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śrī Rāmakṛṣṇa"
-    ],
-    "searchAliases": [
-      "Kaise Lagaũ Tumse Maĩ Prit",
-      "Shri Ramakrshna",
-      "Sri Ramakrsna",
-      "Kaise Lagaun Tumse Mai Preet",
-      "Surjho Bhattacharya",
-      "Shurjo Bhattacharya",
-      "Surjo Bhattacharya",
-      "Powerful song on Ramakrishna (Hindi) with lyrics"
-    ],
-    "writer": "Swami Srikantananda",
-    "singer": "Surjoo Bhattacharya",
-    "composer": "Swami Srikantananda",
-    "subtitle": "Bhavanjali"
-  },
-  {
-    "slug": "ma-tumko-kaise-batalau",
-    "title": "Māṃ Tumko Kaise Batlāūṃ",
-    "credit": "Swami Srikantananda · Surjoo Bhattacharya",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śrī Śāradā Devī",
-      "Śāradā Devī",
-      "Śakti"
-    ],
-    "searchAliases": [
-      "Mam Tumko Kaise Batlaum",
-      "Shri Sharada Devi",
-      "Sri Sarada Devi",
-      "Sharada Devi",
-      "Sarada Devi",
-      "Shakti",
-      "Sakti",
-      "Maa Tumko Kaise Batlau",
-      "Holy Mother Sarada Devi",
-      "Surjho Bhattacharya",
-      "Shurjo Bhattacharya",
-      "Surjo Bhattacharya",
-      "Powerful and melodious bhajan on holy mother Saradha devi (Hindi) with lyrics"
-    ],
-    "writer": "Swami Srikantananda",
-    "singer": "Surjoo Bhattacharya",
-    "composer": "Swami Srikantananda",
-    "subtitle": "Bhavanjali"
   },
   {
     "slug": "yeh-garv-bhara-mastak",

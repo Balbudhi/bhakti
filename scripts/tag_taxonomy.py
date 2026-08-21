@@ -22,9 +22,15 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
         "umapati", "mallikarjuna", "chennamallikarjuna", "nilakantha",
     ),
     "Jagannātha": ("jagannatha", "jagannath"),
+    "Śāradā Devī": ("sharada", "sarada"),
+    "Śrī Rāmakṛṣṇa": ("ramakrishna", "ramakrshna"),
     # Bare `kali` is excluded because devotional corpora frequently mean the
     # Kali age rather than the goddess; require an unambiguous named form.
     "Śakti": ("durga", "mahakali", "vaishno", "jhandewali", "ambika", "bhavani"),
+}
+
+SUBJECT_TAG_ALIASES = {
+    "Śrī Śāradā Devī": "Śāradā Devī",
 }
 
 
@@ -48,7 +54,14 @@ def infer_named_subject_tags(lines: Iterable[dict[str, Any]]) -> list[str]:
 
 
 def merge_subject_tags(explicit: Iterable[object], lines: Iterable[dict[str, Any]]) -> list[str]:
-    values = [str(value).strip() for value in explicit if str(value).strip()]
+    values = []
+    for value in explicit:
+        label = str(value).strip()
+        if not label:
+            continue
+        label = SUBJECT_TAG_ALIASES.get(label, label)
+        if label not in values:
+            values.append(label)
     for tag in infer_named_subject_tags(lines):
         if tag not in values:
             values.append(tag)

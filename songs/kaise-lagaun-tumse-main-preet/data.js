@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Kaise Lagāū̃ Tumse Maĩ Prīt",
   "subtitle": "Bhavanjali",
-  "credit": "Swami Srikantananda · Surjoo Bhattacharya",
-  "pageCredit": "Surjoo Bhattacharya",
+  "credit": "Swami Srikantananda · Shurjo Bhattacharya",
+  "pageCredit": "Shurjo Bhattacharya",
   "writer": "Swami Srikantananda",
-  "singer": "Surjoo Bhattacharya",
-  "composer": "Swami Srikantananda",
+  "singer": "Shurjo Bhattacharya",
+  "composer": "Shurjo Bhattacharya",
   "languages": [
     "Hindi"
   ],
@@ -16,11 +16,11 @@ window.SONG_META = {
     "Kaise Lagaũ Tumse Maĩ Prit",
     "Shri Ramakrshna",
     "Sri Ramakrsna",
-    "Kaise Lagaun Tumse Mai Preet",
     "Surjho Bhattacharya",
-    "Shurjo Bhattacharya",
-    "Surjo Bhattacharya",
-    "Powerful song on Ramakrishna (Hindi) with lyrics"
+    "Surjoo Bhattacharya",
+    "Kaise Lagavun Tumse Main Preet",
+    "Sri Ramakrishna",
+    "Ramakrishna Bhajan"
   ],
   "audioSources": [
     {
@@ -42,7 +42,7 @@ window.SONG_LINES = {
     "source": "कैसे लगाऊँ तुमसे मैं प्रीत",
     "sourceLanguage": "hi",
     "roman": "Kaise lagāū̃ tumse maĩ prīt",
-    "english": "{0:How }{1,3:may I }{1:attach }{4:love }{2:to You?}",
+    "english": "{0:How }{1,3:can I }{1:set }{3,4:my love }{2:upon You?}",
     "words": [
       {
         "roman": "Kaise",
@@ -599,7 +599,7 @@ window.SONG_LINES = {
   "prem-hriday-se": {
     "source": "प्रेम हृदय से गाऊँ तेरे गीत",
     "sourceLanguage": "hi",
-    "roman": "Prema hr̥daya se gāū̃ तेरे gīta",
+    "roman": "Prema hr̥daya se gāū̃ tere gīta",
     "english": "{2:From a }{0:loving }{1:heart, }{3:may I }{3:sing }{4:Your }{5:songs}",
     "words": [
       {
@@ -627,7 +627,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "तेरे",
+        "roman": "tere",
         "gloss": "Your",
         "concept_key": "",
         "preserve_in_english": false
@@ -639,7 +639,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular subjunctive gāū̃. The surface token 'तेरे' is preserved exactly as given in the target input."
+    "grammarNote": "1st person singular subjunctive gāū̃. The possessive tere agrees with the plural gīta and means “Your.”"
   },
   "meri-jeet-mein": {
     "source": "मेरी जीत में होगी तेरी जीत",

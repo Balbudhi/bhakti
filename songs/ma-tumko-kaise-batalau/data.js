@@ -1,33 +1,29 @@
 window.SONG_META = {
-  "title": "Māṃ Tumko Kaise Batlāūṃ",
-  "subtitle": "Bhavanjali",
-  "credit": "Swami Srikantananda · Surjoo Bhattacharya",
-  "pageCredit": "Surjoo Bhattacharya",
-  "writer": "Swami Srikantananda",
-  "singer": "Surjoo Bhattacharya",
+  "title": "Maa Tumko Kaise Batlaun",
+  "subtitle": "Śrī Śāradā Devī",
+  "credit": "Shurjo Bhattacharya · Swami Srikantananda",
+  "pageCredit": "Shurjo Bhattacharya",
+  "writer": "",
+  "singer": "Shurjo Bhattacharya",
   "composer": "Swami Srikantananda",
   "languages": [
     "Hindi"
   ],
   "subjectTags": [
-    "Śrī Śāradā Devī",
     "Śāradā Devī",
     "Śakti"
   ],
   "searchAliases": [
-    "Mam Tumko Kaise Batlaum",
     "Shri Sharada Devi",
     "Sri Sarada Devi",
     "Sharada Devi",
     "Sarada Devi",
     "Shakti",
     "Sakti",
-    "Maa Tumko Kaise Batlau",
-    "Holy Mother Sarada Devi",
     "Surjho Bhattacharya",
-    "Shurjo Bhattacharya",
-    "Surjo Bhattacharya",
-    "Powerful and melodious bhajan on holy mother Saradha devi (Hindi) with lyrics"
+    "Surjoo Bhattacharya",
+    "Ma Tumko Kaise Batlaun",
+    "Holy Mother"
   ],
   "audioSources": [
     {

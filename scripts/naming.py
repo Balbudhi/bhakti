@@ -21,6 +21,9 @@ IAST_TO_COMMON = str.maketrans({
 PERSON_CANONICALS = {
     "satpathy baba": ("Shri Chandra Bhanu Satpathy", ("Satpathy Baba",)),
     "shri chandra bhanu satpathy": ("Shri Chandra Bhanu Satpathy", ("Satpathy Baba",)),
+    "shurjo bhattacharya": ("Shurjo Bhattacharya", ("Surjho Bhattacharya", "Surjoo Bhattacharya")),
+    "surjho bhattacharya": ("Shurjo Bhattacharya", ("Surjho Bhattacharya", "Surjoo Bhattacharya")),
+    "surjoo bhattacharya": ("Shurjo Bhattacharya", ("Surjho Bhattacharya", "Surjoo Bhattacharya")),
 }
 
 
