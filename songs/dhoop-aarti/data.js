@@ -76,8 +76,8 @@ window.SONG_META = {
     {
       "sequenceIndex": 144,
       "title": "Śrī Guruprasāda Yācanā · Ruso Mama",
-      "poet": "Poet unresolved",
-      "note": "Conflicting rights metadata; no poet is asserted."
+      "poet": "B. V. Dev",
+      "note": "Also known as Ruso Mama; a component of the traditional Dhoop Āratī cycle."
     },
     {
       "sequenceIndex": 184,
