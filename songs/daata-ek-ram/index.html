@@ -16,12 +16,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/style.css?v=contract-20260821-5" />
-  <link rel="stylesheet" href="../../assets/song.css?v=contract-20260821-5" />
+  <link rel="stylesheet" href="../../assets/style.css?v=contract-20260821-6" />
+  <link rel="stylesheet" href="../../assets/song.css?v=contract-20260821-6" />
 </head>
 <body>
   <main class="song-page">
     <header class="song-hero">
+      <div class="song-top-controls" aria-label="Song controls">
+        <button class="song-sync" id="songSync" type="button" aria-label="Keep lyrics synced to playback" aria-pressed="true" title="Lyrics follow playback"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m10.6 13.4 2.8-2.8M7.7 16.3l-1.4 1.4a3.25 3.25 0 0 1-4.6-4.6l4-4a3.25 3.25 0 0 1 4.6 0M16.3 7.7l1.4-1.4a3.25 3.25 0 0 1 4.6 4.6l-4 4a3.25 3.25 0 0 1-4.6 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+        <button class="song-share" id="songShare" type="button" aria-label="Share this song" title="Share"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 15.2V3.8m0 0L8.3 7.5M12 3.8l3.7 3.7M5 12.5v5.7c0 .99.81 1.8 1.8 1.8h10.4c.99 0 1.8-.81 1.8-1.8v-5.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
       <h1 class="song-title">Daata Ek Ram</h1>
       <div class="song-meta"><dl class="song-credits"><div class="song-credit-entry"><dt>Singer</dt><dd>Hari Om Sharan</dd></div></dl><div class="song-meta-tags" aria-label="Tags"><span class="song-tag subject-tag">Rāma</span><span class="song-tag subject-tag">Viṣṇu</span><span class="song-tag language-tag">Hindi</span></div></div>
       <p class="song-hint">Tap or hover over any word to see its meaning.</p>
@@ -35,8 +39,8 @@
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata"><source src="https://github.com/Balbudhi/bhakti/releases/download/media-v1/daata-ek-ram.m4a" type="audio/mp4"></audio>
   </div>
-  <script src="data.js?v=contract-20260821-5"></script>
-  <script src="../../assets/song.js?v=contract-20260821-5"></script>
-  <script src="../../assets/pwa.js?v=contract-20260821-5"></script>
+  <script src="data.js?v=contract-20260821-6"></script>
+  <script src="../../assets/song.js?v=contract-20260821-6"></script>
+  <script src="../../assets/pwa.js?v=contract-20260821-6"></script>
 </body>
 </html>
