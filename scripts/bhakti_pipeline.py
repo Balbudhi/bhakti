@@ -1609,11 +1609,13 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
     previous_text = ""
     for part in parts:
         text = str(part.get("text", ""))
-        if previous_text.rstrip().endswith(("-", "—", "…", "/", "(", '"', "“", "‘")):
+        previous_trimmed = previous_text.rstrip()
+        if (previous_trimmed.endswith(("-", "—", "…", "/", "(", '"', "'", "“", "‘"))
+                and not previous_trimmed.endswith((" —", " –"))):
             text = text.lstrip()
         if (rendered and text and not text[0].isspace() and text[0] not in ",.;:!?…’')]}—–"
                 and not previous_text.endswith(" ")
-                and not previous_text.rstrip().endswith(("-", "—", "…", "/", "(", '"', "“", "‘"))):
+                and not previous_trimmed.endswith(("-", "—", "…", "/", "(", '"', "'", "“", "‘"))):
             text = " " + text
         indices = [str(index) for index in part.get("word_indices", []) if isinstance(index, int) and index >= 0]
         rendered.append("{" + ",".join(indices) + ":" + text + "}" if indices else text)

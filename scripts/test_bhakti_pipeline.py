@@ -298,11 +298,25 @@ class PipelineTests(unittest.TestCase):
         )
         self.assertEqual(
             pipeline.segment_english([
+                {"text": "this verse is sung: '", "word_indices": [0]},
+                {"text": "The Maruts ", "word_indices": [1]},
+            ], ""),
+            "{0:this verse is sung: '}{1:The Maruts }",
+        )
+        self.assertEqual(
+            pipeline.segment_english([
                 {"text": "Sai", "word_indices": [0]},
                 {"text": "’s name", "word_indices": [1]},
                 {"text": "…", "word_indices": []},
             ], ""),
             "{0:Sai}{1:’s name}…",
+        )
+        self.assertEqual(
+            pipeline.segment_english([
+                {"text": "O Mother —", "word_indices": [0]},
+                {"text": " O Mother,", "word_indices": [1]},
+            ], ""),
+            "{0:O Mother —}{1: O Mother,}",
         )
 
     def test_display_title_and_language_use_reviewed_forms(self) -> None:

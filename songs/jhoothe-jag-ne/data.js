@@ -589,7 +589,7 @@ window.SONG_LINES = {
   },
   "v4c": {
     "roman": "Miṭā de jhanḍewālī janmāṅ dī bhukh mā, māye merī bānh phaṛ lai",
-    "english": "{0,1:Erase, }{2:O Jhandewali (Goddess of the flags), }{5:the hunger }{3,4:of lifetimes, }{6:O Mother} — {7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
+    "english": "{0,1:Erase, }{2:O Jhandewali, }{5:the hunger }{3,4:of lifetimes, }{6:O Mother — }{7:O Mother, }{10,11:take hold of }{8,9:my arm.}",
     "words": [
       {
         "roman": "Miṭā",
@@ -858,14 +858,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 367.2,
-    "end": 385.0
+    "end": 385
   },
   {
-    "start": 385.0,
-    "end": 408.0
+    "start": 385,
+    "end": 408
   },
   {
-    "start": 408.0,
+    "start": 408,
     "end": 431.3
   },
   {

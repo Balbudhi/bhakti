@@ -120,6 +120,10 @@ NEARBY CONTEXT (do not return these IDs unless they are also targets):
 Return strict JSON only."""
 
 
+def review_max_completion_tokens(targets: list[dict[str, Any]]) -> int:
+    return min(16384, max(4096, len(targets) * 384))
+
+
 def validate(targets: list[dict[str, Any]], reviews: list[dict[str, Any]]) -> list[str]:
     expected = [target["id"] for target in targets]
     observed = [review.get("id") for review in reviews]
@@ -167,7 +171,7 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
         response = gemini.call(
             options.model, gemini.key(), prompt(slug, targets, context), audio=None, timeout=options.timeout,
             response_schema=response_schema(), schema_name="bhakti_translation_style_audit",
-            reasoning_effort="high", max_completion_tokens=32768,
+            reasoning_effort="high", max_completion_tokens=review_max_completion_tokens(targets),
         )
         errors = validate(targets, response["packet"].get("reviews", []))
         result = {"fingerprint": fingerprint, "target_ids": [target["id"] for target in targets],
