@@ -92,6 +92,25 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śakti"
   },
   {
+    "slug": "om-jai-gangadhar-aarti",
+    "title": "Om Jai Gangadhar Aarti",
+    "credit": "Anuradha Paudwal",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "",
+    "singer": "Anuradha Paudwal",
+    "composer": "",
+    "subtitle": "Śiva"
+  },
+  {
     "slug": "ghana-shyama-sundara",
     "title": "Ghanashyāma Sundarā",
     "credit": "Anuradha Paudwal & Ravindra Sathe",
@@ -1751,7 +1770,7 @@ window.BHAKTI_SONGS = [
   },
   {
     "slug": "doi-kar-teka-hei-matha",
-    "title": "Kākaḍ Āratī — Sūryodaya Pūrva",
+    "title": "Kakad Aarti Suryoday Purav",
     "credit": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev · Pramod Medhi",
     "languageTags": [
       "Hindi"
@@ -1849,6 +1868,25 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "sai-meri-raksha-karna",
+    "title": "Sai Meri Raksha Karna",
+    "credit": "Pramod Medhi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai"
+    ],
+    "writer": "",
+    "singer": "Pramod Medhi",
+    "composer": "",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
     "slug": "sai-tere-charnon-ki",
     "title": "Sai Tere Charnon Ki",
     "credit": "Pramod Medhi",
@@ -1859,6 +1897,26 @@ window.BHAKTI_SONGS = [
       "Śirḍī Sāī"
     ],
     "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai"
+    ],
+    "writer": "",
+    "singer": "Pramod Medhi",
+    "composer": "",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "vyartha-gavaya-is",
+    "title": "Vyartha Gavāyā Ho...",
+    "credit": "Pramod Medhi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
+      "Vyartha Gavaya Ho...",
       "Shirdi Sai",
       "Sirdi Sai"
     ],
@@ -2184,6 +2242,44 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śiva"
   },
   {
+    "slug": "jai-shiva-shankar-jai-gangadhar",
+    "title": "Jai Shiva Shankar Jai Gangadhar",
+    "credit": "Rajan Mishra & Sajan Mishra",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "",
+    "singer": "Rajan Mishra & Sajan Mishra",
+    "composer": "",
+    "subtitle": "Śiva"
+  },
+  {
+    "slug": "sheesh-gang-ardhang-parvati",
+    "title": "Sheesh Gang Ardhang Parvati",
+    "credit": "Rajan Mishra & Sajan Mishra",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "",
+    "singer": "Rajan Mishra & Sajan Mishra",
+    "composer": "",
+    "subtitle": "Śiva"
+  },
+  {
     "slug": "he-shivshankar-he-karunakar",
     "title": "He Śivśaṅkar He Karuṇākar",
     "credit": "Vasant Dev · Rajan Mishra & Sajan Mishra · Laxmikant–Pyarelal",
@@ -2264,6 +2360,27 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "",
     "singer": "Sadhna Sargam",
+    "composer": "",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "sai-ba-prakash-hai",
+    "title": "Sai Ba Prakash Hai",
+    "credit": "",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Rama"
+    ],
+    "writer": "",
+    "singer": "",
     "composer": "",
     "subtitle": "Śirḍī Sāī"
   },
@@ -2422,6 +2539,28 @@ window.BHAKTI_SONGS = [
     "singer": "Sarita Joshi",
     "composer": "Dinesh Dubey",
     "subtitle": "Hanumān"
+  },
+  {
+    "slug": "shankar-ho",
+    "title": "Shankar Ho",
+    "credit": "",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva",
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Shiva",
+      "Siva",
+      "Vishnu",
+      "Visnu"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "subtitle": "Śiva"
   },
   {
     "slug": "mati-re-mati-re",
@@ -2590,6 +2729,26 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Mero Avagun Bisra Karo",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "sai-tum-humse-jaldi-milo",
+    "title": "Sai Tum Humse Jaldi Milo",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī"
+    ],
+    "searchAliases": [
       "Shirdi Sai",
       "Sirdi Sai",
       "Satpathy Baba"
@@ -3385,5 +3544,26 @@ window.BHAKTI_SONGS = [
     "singer": "Vijay Ji",
     "composer": "",
     "subtitle": "Śakti"
+  },
+  {
+    "slug": "shiv-ka-naam-japo-sansari",
+    "title": "Śiva Kā Nāma Japo Saṁsārī",
+    "credit": "",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Shiva Ka Nama Japo Samsari",
+      "Siva Ka Nama Japo Samsari",
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "subtitle": "Śiva"
   }
 ];

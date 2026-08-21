@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Kākaḍ Āratī — Sūryodaya Pūrva",
+  "title": "Kakad Aarti Suryoday Purav",
   "subtitle": "Śirḍī Sāī",
   "credit": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev · Pramod Medhi",
   "pageCredit": "Pramod Medhi",
@@ -28,69 +28,7 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed",
-  "sectionNotices": [
-    {
-      "sequenceIndex": 1,
-      "title": "Joḍoniyā Kara",
-      "poet": "Sant Tukārām",
-      "note": "Hindi rendering; Sai substitutions are marked."
-    },
-    {
-      "sequenceIndex": 9,
-      "title": "Uṭhā Paṇḍuraṅgā",
-      "poet": "Sant Janābāī",
-      "note": "Hindi rendering."
-    },
-    {
-      "sequenceIndex": 17,
-      "title": "Uṭhā Uṭhā Sāīnātha",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
-      "note": ""
-    },
-    {
-      "sequenceIndex": 41,
-      "title": "Uṭhā Paṇḍuraṅgā Darśana",
-      "poet": "Sant Nāmdev",
-      "note": "Hindi rendering."
-    },
-    {
-      "sequenceIndex": 53,
-      "title": "Ghevuniyā Pañcāratī",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
-      "note": ""
-    },
-    {
-      "sequenceIndex": 57,
-      "title": "Kākaḍ Āratī Karito",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
-      "note": ""
-    },
-    {
-      "sequenceIndex": 83,
-      "title": "Bhaktācīyā Poṭī",
-      "poet": "Sant Tukārām",
-      "note": "Hindi rendering; Sai substitutions are marked."
-    },
-    {
-      "sequenceIndex": 94,
-      "title": "Uṭhā Uṭhā Sādhu Santa",
-      "poet": "Sant Nāmdev",
-      "note": "Hindi rendering."
-    },
-    {
-      "sequenceIndex": 106,
-      "title": "Closing Response",
-      "poet": "",
-      "note": "Later Hindi response; not attributed to Nāmdev."
-    }
-  ],
-  "adaptedSequenceIndices": [
-    6,
-    86,
-    106,
-    108
-  ]
+  "sourceStatus": "reviewed"
 };
 
 window.SONG_LINES = {
@@ -9710,10 +9648,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 144.245,
-    "end": 152
+    "end": 152.0
   },
   {
-    "start": 152,
+    "start": 152.0,
     "end": 159.49
   },
   {
@@ -9758,10 +9696,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 237.26,
-    "end": 244
+    "end": 244.0
   },
   {
-    "start": 244,
+    "start": 244.0,
     "end": 251.49
   },
   {
@@ -9810,10 +9748,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 331.875,
-    "end": 339
+    "end": 339.0
   },
   {
-    "start": 339,
+    "start": 339.0,
     "end": 346.15
   },
   {
@@ -9942,10 +9880,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 565.04,
-    "end": 572
+    "end": 572.0
   },
   {
-    "start": 572,
+    "start": 572.0,
     "end": 578.95
   },
   {
@@ -9962,14 +9900,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 599.05,
-    "end": 606
+    "end": 606.0
   },
   {
-    "start": 606,
-    "end": 613
+    "start": 606.0,
+    "end": 613.0
   },
   {
-    "start": 613,
+    "start": 613.0,
     "end": 620.05
   },
   {
@@ -9990,14 +9928,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 646.1,
-    "end": 653
+    "end": 653.0
   },
   {
-    "start": 653,
-    "end": 660
+    "start": 653.0,
+    "end": 660.0
   },
   {
-    "start": 660,
+    "start": 660.0,
     "end": 667.1
   },
   {

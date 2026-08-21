@@ -4392,7 +4392,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0,
+    "start": 0.0,
     "end": 8.85
   },
   {
@@ -4433,10 +4433,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 159.35,
-    "end": 170
+    "end": 170.0
   },
   {
-    "start": 170,
+    "start": 170.0,
     "end": 181.45
   },
   {
