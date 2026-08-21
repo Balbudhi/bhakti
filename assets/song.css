@@ -98,13 +98,9 @@ html, body {
 #songShare svg,
 #songSync svg { width: 18px; height: 18px; }
 
-/* The same red disc contains both standard chain states. */
-#songSync .chain-unlinked { display: none; }
-#songSync[aria-pressed="false"] .chain-linked { display: none; }
-#songSync[aria-pressed="false"] .chain-unlinked { display: block; }
-
 /* The off state is an intentional visual distinction, not a disabled control:
-   playback continues, but it no longer moves the reading position. */
+   playback continues, but it no longer moves the reading position. The link
+   glyph itself stays constant; only its weight and its ring change. */
 #songSync[aria-pressed="false"] {
   border-style: dashed;
 }
