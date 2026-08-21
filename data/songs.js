@@ -2657,7 +2657,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
   },
@@ -2676,7 +2676,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
   },
@@ -2695,7 +2695,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
   },
@@ -2713,7 +2713,7 @@ window.BHAKTI_SONGS = [
       "Satpathy Baba"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Chala Patha Ra Geeta"
   },
@@ -2732,7 +2732,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
   },
@@ -2751,7 +2751,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
   },
@@ -2770,7 +2770,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
   },
@@ -2789,7 +2789,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Guru"
   },
@@ -2809,7 +2809,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Jagannātha"
   },
@@ -2829,7 +2829,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Jagannātha"
   },
@@ -2849,7 +2849,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Jagannātha"
   },
@@ -2869,7 +2869,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Jagannātha"
   },
@@ -2888,7 +2888,7 @@ window.BHAKTI_SONGS = [
       "Satpathy Baba"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Baishi Pahacha"
   },
@@ -2908,7 +2908,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Jagannātha"
   },
@@ -2928,7 +2928,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Jagannātha"
   },
@@ -2951,7 +2951,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Jagannātha"
   },
@@ -3071,7 +3071,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3092,7 +3092,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3112,7 +3112,7 @@ window.BHAKTI_SONGS = [
       "Satpathy Baba"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Shri Sai Charane"
   },
@@ -3133,7 +3133,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3154,7 +3154,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3176,7 +3176,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3198,7 +3198,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3221,7 +3221,7 @@ window.BHAKTI_SONGS = [
       "Guru Karo Aparadha Khyama"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Shri Sai Charane"
   },
@@ -3242,7 +3242,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3263,7 +3263,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3284,7 +3284,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3306,7 +3306,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3327,7 +3327,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3347,7 +3347,7 @@ window.BHAKTI_SONGS = [
       "Satpathy Baba"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Shri Sai Charane"
   },
@@ -3368,7 +3368,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
@@ -3413,7 +3413,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
     "subtitle": "Śirḍī Sāī"
   },
