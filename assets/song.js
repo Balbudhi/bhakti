@@ -449,6 +449,40 @@ function renderEditionNote(note) {
   return `<details class="edition-note"><summary><span>${title}</span>${summary}</summary>${detail}${source}</details>`;
 }
 
+let selectedTextEdition = null;
+
+function selectedEdition(meta) {
+  const variants = meta?.editionVariants || {};
+  const fallback = meta?.editionDefault || Object.keys(variants)[0] || "";
+  if (!fallback) return "";
+  if (selectedTextEdition && variants[selectedTextEdition]) return selectedTextEdition;
+  const storageKey = `bhakti:text-edition:${location.pathname}`;
+  try {
+    const stored = localStorage.getItem(storageKey);
+    selectedTextEdition = variants[stored] ? stored : fallback;
+  } catch (_) {
+    selectedTextEdition = fallback;
+  }
+  return selectedTextEdition;
+}
+
+function renderEditionSwitch(meta) {
+  const variants = meta?.editionVariants || {};
+  const keys = Object.keys(variants);
+  if (keys.length < 2) return "";
+  const active = selectedEdition(meta);
+  const buttons = keys.map(key => `<button class="edition-choice" type="button" data-edition="${escapeHtml(key)}" aria-pressed="${key === active}">${escapeHtml(variants[key].label || key)}</button>`).join("");
+  return `<div class="edition-switch" role="group" aria-label="Text edition">${buttons}</div>`;
+}
+
+function lineForEdition(line, lineId, meta) {
+  const variant = meta?.editionVariants?.[selectedEdition(meta)];
+  const override = variant?.lines?.[lineId];
+  if (!override) return line;
+  const words = (line.words || []).map((word, index) => ({...word, ...(override.wordEdits?.[index] || {})}));
+  return {...line, ...override, words};
+}
+
 function renderSongMeta() {
   const meta = PAGE_META;
   const hero = document.querySelector(".song-hero");
@@ -474,6 +508,8 @@ function renderSongMeta() {
     ...(meta.subjectTags || []).map(tag => `<span class="song-tag subject-tag">${escapeHtml(tag)}</span>`),
     ...(meta.languages || []).map(tag => `<span class="song-tag language-tag">${escapeHtml(tag)}</span>`),
   ].join("");
+  selectedEdition(meta);
+  const editionSwitch = renderEditionSwitch(meta);
   const edition = renderEditionNote(meta.editionNote);
   let songMeta = hero.querySelector(".song-meta");
   if (!songMeta) {
@@ -481,8 +517,13 @@ function renderSongMeta() {
     songMeta.className = "song-meta";
     hero.querySelector(".song-hint")?.before(songMeta);
   }
-  songMeta.innerHTML = `${credits ? `<dl class="song-credits">${credits}</dl>` : ""}${tags ? `<div class="song-meta-tags" aria-label="Tags">${tags}</div>` : ""}${edition}`;
-  songMeta.hidden = !credits && !tags && !edition;
+  songMeta.innerHTML = `${credits ? `<dl class="song-credits">${credits}</dl>` : ""}${tags ? `<div class="song-meta-tags" aria-label="Tags">${tags}</div>` : ""}${editionSwitch}${edition}`;
+  songMeta.hidden = !credits && !tags && !editionSwitch && !edition;
+  songMeta.querySelectorAll(".edition-choice").forEach(button => button.addEventListener("click", () => {
+    selectedTextEdition = button.dataset.edition || selectedEdition(meta);
+    try { localStorage.setItem(`bhakti:text-edition:${location.pathname}`, selectedTextEdition); } catch (_) {}
+    render();
+  }));
 }
 
 function render() {
@@ -498,7 +539,7 @@ function render() {
   const language = (PAGE_META?.languages || [])[0];
   const defaultSourceLanguage = { Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn", Marathi: "mr", Odia: "or", Braj: "bra" }[language] || "";
   seq.forEach((entry, idx) => {
-    const line = lines[entry.ref];
+    const line = lineForEdition(lines[entry.ref], entry.ref, PAGE_META);
     if (!line) return;
     if (notices.has(idx)) html += renderSourceNotice(notices.get(idx));
     html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`, defaultSourceLanguage, timings[idx]?.start, adapted.has(idx));
