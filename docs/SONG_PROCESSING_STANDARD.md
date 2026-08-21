@@ -59,9 +59,12 @@ and record the difference; and leave an unresolved disagreement explicitly
 uncertain (which blocks generation). Private comparison reports retain page
 URLs and every candidate mismatch.
 
-The initial registered implementation is *Hanumān Bāhuk*, using a digitized
-2016 *Bhāratīya Sāhitya Saṅgraha* reading edition as a public working witness,
-not as a claimed critical edition. To recheck a previously transcribed
+Registered work-specific witnesses currently include *Hanumān Bāhuk* (a
+digitized 2016 *Bhāratīya Sāhitya Saṅgraha* reading edition) and two
+*Vinay Patrikā* pads in a Government of Tamil Nadu textbook PDF. The PDF
+retriever records only the configured verse range in ignored review evidence;
+it does not publish or generalize surrounding workbook prose. None of these is
+treated as a claimed critical edition. To recheck a previously transcribed
 registered work without repeating the first audio pass, run:
 
 ```sh
