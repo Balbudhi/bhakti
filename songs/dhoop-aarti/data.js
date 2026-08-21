@@ -10479,7 +10479,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarasvatī",
-        "gloss": "goddess of speech, learning, and inspired expression",
+        "gloss": "she who possesses flowing waters; Vedic goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
