@@ -33,6 +33,17 @@
     ...(song.subjectTags || [])
   ].filter(Boolean);
 
+  const sortKey = value => searchKey(value).normalize("NFKD").replace(/\p{M}/gu, "");
+  const singerSort = song => song.singer || song.writer || song.credit || song.title || song.slug;
+  const tagSort = values => (values || []).join(" ");
+  const sortSongs = list => [...list].sort((left, right) =>
+    sortKey(singerSort(left)).localeCompare(sortKey(singerSort(right)))
+    || sortKey(tagSort(left.subjectTags)).localeCompare(sortKey(tagSort(right.subjectTags)))
+    || sortKey(tagSort(left.languageTags)).localeCompare(sortKey(tagSort(right.languageTags)))
+    || sortKey(left.title).localeCompare(sortKey(right.title))
+    || sortKey(left.slug).localeCompare(sortKey(right.slug))
+  );
+
   const matchesSearch = (song, query) => {
     const queryForms = searchForms(query);
     if (!queryForms.length) return true;
@@ -54,9 +65,11 @@
   const subjects = [...new Set(songs.flatMap(song => song.subjectTags).sort())];
   const button = (tag, kind, selected) => `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${kind}" data-tag="${tag}">${tag}</button>`;
 
+  const orderedSongs = sortSongs(songs);
+
   const render = () => {
     const query = search.value.trim();
-    const visibleSongs = songs.filter(song => {
+    const visibleSongs = orderedSongs.filter(song => {
       const matchesLanguage = !selectedLanguages.size || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
       const matchesSubject = !selectedSubjects.size || [...selectedSubjects].some(tag => song.subjectTags.includes(tag));
       return matchesLanguage && matchesSubject && matchesSearch(song, query);

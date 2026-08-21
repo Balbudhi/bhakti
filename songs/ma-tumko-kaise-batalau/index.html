@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2" />
+  <meta name="theme-color" content="#6b0e16" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="../../assets/favicon.png" />
+  <link rel="manifest" href="../../manifest.webmanifest" />
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Māṃ Tumko Kaise Batlāūṃ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <link rel="stylesheet" href="../../assets/song.css" />
+</head>
+<body>
+  <main class="song-page">
+    <header class="song-hero">
+      <h1 class="song-title">Māṃ Tumko Kaise Batlāūṃ</h1>
+      <p class="song-attrib"><em>Bhavanjali</em></p>
+      <p class="song-credit">Surjoo Bhattacharya</p>
+      <p class="song-hint">Tap or hover over any word to see its meaning.</p>
+    </header>
+    <section class="song-root" id="songRoot" aria-live="polite"></section>
+  </main>
+  <div class="audio-player" id="audioPlayer">
+    <a class="song-home" href="/" aria-label="All songs" title="All songs"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20h-5v-6H9v6H4v-9.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></a>
+    <button class="ap-btn" id="apPlayPause" type="button" aria-label="Play"><svg class="ap-icon ap-icon-play" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg><svg class="ap-icon ap-icon-pause" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg></button>
+    <div class="ap-progress" id="apProgress"><div class="ap-progress-bar" id="apProgressBar"></div></div>
+    <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
+    <audio id="songAudio" preload="metadata"><source src="audio.webm" type="audio/webm; codecs=opus"><source src="audio.m4a" type="audio/mp4"></audio>
+  </div>
+  <script src="data.js?v=contract-20260820-6"></script>
+  <script src="../../assets/song.js?v=contract-20260820-6"></script>
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
+</body>
+</html>

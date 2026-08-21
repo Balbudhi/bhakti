@@ -1138,11 +1138,56 @@ def refine_all_starts(
     unresolved = [index for index, occurrence in enumerate(occurrences)
                   if consensus_value(measurements[occurrence["occurrence_id"]], tolerance=0.75) is None]
 
+    dispute_reports: list[dict[str, Any]] = []
+    if unresolved:
+        grouped: dict[int, list[int]] = {}
+        for index in unresolved:
+            values = measurements[occurrences[index]["occurrence_id"]]
+            grouped.setdefault(int(median(values) // 120.0), []).append(index)
+        dispute_chunks = []
+        for group, indices in sorted(grouped.items()):
+            core_start, core_end = group * 120.0, min(duration, (group + 1) * 120.0)
+            first, last = indices[0], indices[-1]
+            span_indices = list(range(first, last + 1))
+            dispute_chunks.append({
+                "index": group,
+                "grid": "dispute-verification",
+                "core_start": core_start,
+                "core_end": core_end,
+                "clip_start": max(0.0, core_start - 15.0),
+                "clip_end": min(duration, core_end + 15.0),
+                "target_indices": span_indices,
+                "target_occurrences": [
+                    {**occurrences[index],
+                     "coarse_source_start": median(measurements[occurrences[index]["occurrence_id"]])}
+                    for index in span_indices
+                ],
+                "preceding_context": occurrences[first - 1] if first else None,
+                "following_context": occurrences[last + 1] if last + 1 < len(occurrences) else None,
+            })
+        with tempfile.TemporaryDirectory(prefix="bhakti-dispute-windows-") as temporary:
+            destination = Path(temporary)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(2, len(dispute_chunks))) as pool:
+                dispute_reports = list(pool.map(
+                    lambda chunk: refine_timing_chunk(
+                        audio, occurrences, chunk, options, destination,
+                        cache_dir / f"dispute-{chunk['index']:03d}.json" if cache_dir else None,
+                    ),
+                    dispute_chunks,
+                ))
+        for report in dispute_reports:
+            if report["validation_errors"]:
+                continue
+            for entry in report["starts"]:
+                measurements[entry["occurrence_id"]].append(entry["start"])
+        unresolved = [index for index, occurrence in enumerate(occurrences)
+                      if consensus_value(measurements[occurrence["occurrence_id"]], tolerance=0.75) is None]
+
     recoveries: list[dict[str, Any]] = []
     if len(unresolved) > max(5, len(occurrences) // 5):
         errors = [f"verification disagrees for {len(unresolved)} of {len(occurrences)} occurrences; "
                   "refusing a per-line retry cascade"]
-        evidence = reports + [{"kind": "consensus", "starts": [
+        evidence = reports + dispute_reports + [{"kind": "consensus", "starts": [
             {"occurrence_id": occurrence["occurrence_id"],
              "measurements": measurements[occurrence["occurrence_id"]], "start": None}
             for occurrence in occurrences], "validation_errors": errors}]
@@ -1181,7 +1226,7 @@ def refine_all_starts(
             sequence.append({"occurrence_id": occurrence["occurrence_id"], "ref": occurrence["ref"],
                              "section": occurrence["section"], "repeats": occurrence["repeats"],
                              "start": start, "end": end})
-    evidence = reports + recoveries + [{"kind": "consensus", "starts": consensus, "validation_errors": []}]
+    evidence = reports + dispute_reports + recoveries + [{"kind": "consensus", "starts": consensus, "validation_errors": []}]
     return sequence, evidence, errors
 
 def uniform_coarse_sequence(occurrences: list[dict[str, Any]], duration: float) -> list[dict[str, Any]]:
@@ -1750,7 +1795,61 @@ def page_html(meta: dict[str, Any]) -> str:
 '''
 
 
+def load_song_meta(song_dir: Path) -> dict[str, Any] | None:
+    path = song_dir / "data.js"
+    if not path.is_file():
+        return None
+    script = "global.window={};require(process.argv[1]);process.stdout.write(JSON.stringify(window.SONG_META||{}));"
+    output = subprocess.run(["node", "-e", script, str(path)], check=True, text=True, capture_output=True).stdout
+    value = json.loads(output)
+    return value if isinstance(value, dict) else None
+
+
+def catalogue_sort_key(entry: dict[str, Any]) -> tuple[str, str, str, str, str]:
+    singer = naming.compact(str(entry.get("singer") or ""))
+    writer = naming.compact(str(entry.get("writer") or ""))
+    subject = naming.compact(" ".join(str(value) for value in (entry.get("subjectTags") or [])))
+    language = naming.compact(" ".join(str(value) for value in (entry.get("languageTags") or [])))
+    title = naming.compact(str(entry.get("title") or entry.get("slug") or ""))
+    return (singer or writer or title, subject, language, title, naming.compact(str(entry.get("slug") or "")))
+
+
+def catalogue_entry(song_dir: Path, meta: dict[str, Any]) -> dict[str, Any]:
+    entry = {
+        "slug": song_dir.name,
+        "title": str(meta.get("title") or song_dir.name.replace("-", " ").title()),
+        "credit": str(meta.get("credit") or ""),
+        "languageTags": list(meta.get("languages") or []),
+        "subjectTags": list(meta.get("subjectTags") or []),
+        "searchAliases": list(meta.get("searchAliases") or []),
+        "writer": str(meta.get("writer") or ""),
+        "singer": str(meta.get("singer") or ""),
+        "composer": str(meta.get("composer") or ""),
+    }
+    subtitle = str(meta.get("subtitle") or "").strip()
+    if subtitle:
+        entry["subtitle"] = subtitle
+    return entry
+
+
+def write_catalogue() -> None:
+    catalogue: list[dict[str, Any]] = []
+    for song_dir in sorted((ROOT / "songs").glob("*")):
+        if not song_dir.is_dir():
+            continue
+        meta = load_song_meta(song_dir)
+        if not meta:
+            continue
+        catalogue.append(catalogue_entry(song_dir, meta))
+    catalogue.sort(key=catalogue_sort_key)
+    (ROOT / "data" / "songs.js").write_text(
+        "window.BHAKTI_SONGS = " + json.dumps(catalogue, ensure_ascii=False, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+
+
 def load_catalogue() -> list[dict[str, Any]]:
+    write_catalogue()
     path = ROOT / "data" / "songs.js"
     script = "global.window={};require(process.argv[1]);process.stdout.write(JSON.stringify(window.BHAKTI_SONGS));"
     output = subprocess.run(["node", "-e", script, str(path)], check=True, text=True, capture_output=True).stdout
@@ -1788,9 +1887,9 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     title = str(raw_title) if job.get("displayTitle") else reviewed_display_title(str(raw_title), lines)
     # Do not manufacture a public role from a model candidate. Callers may
     # supply researched roles; otherwise the compact credit line is absent.
-    writer = str(job.get("writer", "")).strip()
-    singer = str(job.get("singer") or source.get("artist") or "").strip()
-    composer = str(job.get("composer") or source.get("composer") or "").strip()
+    writer = naming.canonical_person(job.get("writer", ""))
+    singer = naming.canonical_person(job.get("singer") or source.get("artist") or "")
+    composer = naming.canonical_person(job.get("composer") or source.get("composer") or "")
     distinct_people = list(dict.fromkeys(person for person in (writer, singer, composer) if person))
     credit = str(job.get("credit", "")).strip() or " · ".join(distinct_people)
     page_credit = str(job.get("pageCredit", "")).strip() or singer or credit
@@ -1799,7 +1898,8 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     aliases = naming.search_aliases(
         [job["slug"].replace("-", " "), title, subtitle, credit, page_credit,
          writer, singer, composer, *subjects, *(job.get("languages") or meta_from_model.get("languages", []))],
-        job.get("searchAliases") or [],
+        [*naming.person_search_aliases((job.get("writer"), job.get("singer"), job.get("composer"), writer, singer, composer)),
+         *(job.get("searchAliases") or [])],
     )
     languages = list(dict.fromkeys(normalized_language(str(language))
                                    for language in (job.get("languages") or meta_from_model.get("languages", []))
@@ -1832,14 +1932,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "window.SONG_TIMINGS = " + json.dumps(times, ensure_ascii=False, indent=2) + ";\n")
     (song_dir / "data.js").write_text(data, encoding="utf-8")
     (song_dir / "index.html").write_text(page_html(meta), encoding="utf-8")
-    catalogue = load_catalogue()
-    entry = {"slug": job["slug"], "title": title, "credit": credit,
-             "languageTags": meta["languages"], "subjectTags": meta["subjectTags"],
-             "searchAliases": aliases}
-    if meta["subtitle"]:
-        entry["subtitle"] = meta["subtitle"]
-    catalogue = [song for song in catalogue if song.get("slug") != job["slug"]] + [entry]
-    (ROOT / "data" / "songs.js").write_text("window.BHAKTI_SONGS = " + json.dumps(catalogue, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
+    write_catalogue()
 
 
 def reported_cost(*artifacts: Any) -> float | None:
@@ -1874,6 +1967,22 @@ def preflight_blocked_reason(options: argparse.Namespace) -> str | None:
             "Add credits at https://openrouter.ai/settings/credits before running Bhakti intake."
         )
     return None
+
+
+def hydrate_pipeline_artifacts(packet_dir: Path) -> None:
+    summary = read_packet(packet_dir / "song-packet.json") or {}
+    for filename, key in (
+        ("01-transcript.json", "transcript"),
+        ("02-transcript-audit.json", "audit"),
+        ("03-timing.json", "timing"),
+        ("04-glosses.json", "glosses"),
+        ("05-translation.json", "translation"),
+    ):
+        path = packet_dir / filename
+        value = summary.get(key)
+        if path.is_file() or not isinstance(value, dict):
+            continue
+        write_json(path, value)
 
 
 def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
@@ -1933,6 +2042,7 @@ def main() -> int:
                 continue
             song_dir = ROOT / "songs" / job["slug"]
             packet_dir = song_dir / ".transcription" / "pipeline"
+            hydrate_pipeline_artifacts(packet_dir)
             source = read_packet(song_dir / ".transcription" / "source.json") or {}
             audited = read_packet(packet_dir / "02-transcript-audit.json")
             timing = read_packet(packet_dir / "03-timing.json")

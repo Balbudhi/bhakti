@@ -1,6 +1,10 @@
 window.SONG_META = {
   "title": "Tumhī More Lagan Lagāī Re Fakīrwā",
-  "credit": "Satpathy Baba",
+  "credit": "Shri Chandra Bhanu Satpathy",
+  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "writer": "Shri Chandra Bhanu Satpathy",
+  "singer": "Shri Chandra Bhanu Satpathy",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Tumhi Mere Lagan Lagai Re",
     "Satpathy Baba",

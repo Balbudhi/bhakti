@@ -204,6 +204,13 @@ class PipelineTests(unittest.TestCase):
         self.assertTrue(pipeline.corroborated_by_existing(317.66, [318.6, 317.48]))
         self.assertFalse(pipeline.corroborated_by_existing(320.0, [318.6, 317.48]))
 
+    def test_disputed_starts_can_share_one_timing_region(self) -> None:
+        values = {9: [164.7, 163.7], 13: [231.2, 230.4], 18: [285.0, 283.85]}
+        groups = {}
+        for index, measurements in values.items():
+            groups.setdefault(int(pipeline.median(measurements) // 120.0), []).append(index)
+        self.assertEqual(groups, {1: [9, 13], 2: [18]})
+
     def test_uncertainty_is_repairable_not_fatal(self) -> None:
         occurrences = [
             {"occurrence_id": "occ-000", "ref": "a", "section": "refrain", "repeats": 1},
@@ -424,6 +431,24 @@ class PipelineTests(unittest.TestCase):
         ])
         self.assertEqual([line["source_text"] for line in merged["verified_lines"]],
                          ["पूर्व", "नमामीश्वरं सद्गुरुं साईनाथम्"])
+
+    def test_hydrate_pipeline_artifacts_backfills_missing_stage_files(self) -> None:
+        packet_dir = self.root / "songs" / "hydrated-song" / ".transcription" / "pipeline"
+        packet_dir.mkdir(parents=True)
+        packet = {
+            "transcript": {"packet": {"lines": []}},
+            "audit": {"packet": {"verified_lines": []}},
+            "timing": {"sequence": [], "validation_errors": []},
+            "glosses": {"packet": {"glosses": []}},
+            "translation": {"packet": {"translations": []}},
+        }
+        pipeline.write_json(packet_dir / "song-packet.json", packet)
+        pipeline.hydrate_pipeline_artifacts(packet_dir)
+        self.assertTrue((packet_dir / "01-transcript.json").is_file())
+        self.assertTrue((packet_dir / "02-transcript-audit.json").is_file())
+        self.assertTrue((packet_dir / "03-timing.json").is_file())
+        self.assertTrue((packet_dir / "04-glosses.json").is_file())
+        self.assertTrue((packet_dir / "05-translation.json").is_file())
 
 
 if __name__ == "__main__":

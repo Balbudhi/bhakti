@@ -18,6 +18,12 @@ IAST_TO_COMMON = str.maketrans({
 })
 
 
+PERSON_CANONICALS = {
+    "satpathy baba": ("Shri Chandra Bhanu Satpathy", ("Satpathy Baba",)),
+    "shri chandra bhanu satpathy": ("Shri Chandra Bhanu Satpathy", ("Satpathy Baba",)),
+}
+
+
 def compact(value: str) -> str:
     """Collapse punctuation/spacing for comparisons without changing display text."""
     return re.sub(r"\s+", " ", re.sub(r"[^\w]+", " ", value, flags=re.UNICODE)).strip().casefold()
@@ -31,6 +37,30 @@ def unaccented(value: str) -> str:
 def common_romanization(value: str) -> str:
     """Return a search spelling, not a replacement for reviewed display IAST."""
     return value.translate(IAST_TO_COMMON).replace("ngg", "ng").replace("Ngg", "Ng")
+
+
+def canonical_person(value: object) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    canonical, _ = PERSON_CANONICALS.get(text.casefold(), (text, ()))
+    return canonical
+
+
+def person_search_aliases(values: Iterable[object]) -> list[str]:
+    aliases: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        text = str(value or "").strip()
+        if not text:
+            continue
+        _, extras = PERSON_CANONICALS.get(text.casefold(), (text, ()))
+        for alias in extras:
+            key = compact(alias)
+            if key and key not in seen:
+                aliases.append(alias)
+                seen.add(key)
+    return aliases
 
 
 def search_aliases(values: Iterable[object], extra: Iterable[object] = ()) -> list[str]:

@@ -1,6 +1,10 @@
 window.SONG_META = {
   "title": "Zarā To Itnā Batā Do Sāī",
-  "credit": "Satpathy Baba",
+  "credit": "Shri Chandra Bhanu Satpathy",
+  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "writer": "Shri Chandra Bhanu Satpathy",
+  "singer": "Shri Chandra Bhanu Satpathy",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Zara To Itana Bata Do Sai",
     "Satpathy Baba",

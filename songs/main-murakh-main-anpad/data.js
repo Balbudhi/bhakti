@@ -1,6 +1,10 @@
 window.SONG_META = {
   "title": "Main Mūrakh Main Anpaṛh Bālak",
-  "credit": "Satpathy Baba",
+  "credit": "Shri Chandra Bhanu Satpathy",
+  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "writer": "Shri Chandra Bhanu Satpathy",
+  "singer": "Shri Chandra Bhanu Satpathy",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Main Murakh Main Anpad Balak",
     "Satpathy Baba",
