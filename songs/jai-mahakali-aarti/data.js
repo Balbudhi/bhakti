@@ -408,7 +408,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Durgā",
-        "gloss": "the inaccessible, protecting Goddess",
+        "gloss": "the difficult-to-reach, protective one; form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -533,7 +533,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaurī",
-        "gloss": "the radiant/fair one (Gauri)",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1777,7 +1777,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gopāla",
-        "gloss": "protector of cows / cowherd Lord (Krishna)",
+        "gloss": "protector of cows; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       }

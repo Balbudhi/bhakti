@@ -5978,7 +5978,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Lord Dattātreya"
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity"
       },
       {
         "roman": "Sāī̃",
@@ -7147,11 +7147,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Lord Dattātreya"
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity"
       },
       {
         "roman": "Digambara",
-        "gloss": "sky-clad / Digambara"
+        "gloss": "sky-clad; one whose garment is the sky/directions"
       }
     ],
     "grammarNote": "Periphrastic perfect 'avatīrṇa huē haĩ' with 'svāmī Datta Digambara' as subject.",
@@ -7202,11 +7202,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Datta",
-        "gloss": "Lord Dattātreya"
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity"
       },
       {
         "roman": "Digambara",
-        "gloss": "sky-clad / Digambara"
+        "gloss": "sky-clad; one whose garment is the sky/directions"
       },
       {
         "roman": "āratī",
@@ -8497,7 +8497,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dattā",
-        "gloss": "Lord Dattātreya"
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity"
       },
       {
         "roman": "avadhūtā",
@@ -10970,7 +10970,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya"
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity"
       }
     ],
     "grammarNote": "Sacred formulaic invocation and greeting of the Datta Sampradaya.",
@@ -13590,7 +13590,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "digambarā",
-        "gloss": "O sky-clad one / Dattatreya"
+        "gloss": "sky-clad; one whose garment is the sky/directions"
       }
     ],
     "grammarNote": "Imperative invocation with vocatives 'bābā', 'sāī', and 'digambarā'.",

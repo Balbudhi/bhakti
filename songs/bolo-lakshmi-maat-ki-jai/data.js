@@ -525,7 +525,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Brahmāṇī,",
-        "gloss": "Goddess Saraswati / Brahma's consort",
+        "gloss": "Brahmā’s śakti; feminine manifestation of creative power",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -839,7 +839,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Durgā",
-        "gloss": "the inaccessible, protecting Goddess",
+        "gloss": "the difficult-to-reach, protective one; form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

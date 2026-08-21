@@ -92,6 +92,31 @@ GLOSSES = {
     "droṇa": "mountain of the life-restoring herb",
     "ahirāvana": "underworld demon defeated by Hanumān",
     "girijā": "“mountain-born”; epithet of Pārvatī",
+    # Recurrent Sanskrit devotional titles.  These are deliberately short
+    # song-page cards: explain the word and its established referent without
+    # pretending that the surrounding vernacular line has received a formal
+    # grammatical parse.  See docs/SANSKRIT_POPUP_REVIEW.md.
+    "datta": "“the given one”; Dattātreya, revered teacher-deity",
+    "dattā": "“the given one”; Dattātreya, revered teacher-deity",
+    "bhavānī": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
+    "gaurī": "the radiant/fair one; epithet of Pārvatī",
+    "ḍamarū": "small hourglass drum associated with Śiva",
+    "damarū": "small hourglass drum associated with Śiva",
+    "avadhūta": "one who has shaken off worldly ties; liberated ascetic",
+    "digambara": "sky-clad; one whose garment is the sky/directions",
+    "digambarā": "sky-clad; one whose garment is the sky/directions",
+    "pāṇḍuraṅga": "the pale/white-hued one; Viṭṭhala of Paṇḍharpur",
+    "durgā": "the difficult-to-reach, protective one; form of the Goddess",
+    "gaṅgā": "the sacred Ganges river, personified as a goddess",
+    "gopāḷā": "protector of cows; epithet of Kṛṣṇa",
+    "gopāla": "protector of cows; epithet of Kṛṣṇa",
+    "rādhē": "Rādhā, beloved of Kṛṣṇa; vocative form",
+    "bhagavatī": "the blessed/powerful one; title of the Goddess",
+    "brahmāṇī": "Brahmā’s śakti; feminine manifestation of creative power",
+    "rudrāṇī": "Rudra’s śakti; epithet of Pārvatī",
+    "mahādeva": "the great god; epithet of Śiva",
+    "mahādev": "the great god; epithet of Śiva",
+    "keśarī": "Keśarī, Hanumān’s father",
 }
 # These cards are deliberately scoped to the recorded line.  Similar-looking
 # words elsewhere may have another referent, so they must never be promoted to

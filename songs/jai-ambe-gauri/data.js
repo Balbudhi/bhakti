@@ -240,7 +240,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaurī,",
-        "gloss": "O Gauri (the radiant Goddess)",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -264,7 +264,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaurī",
-        "gloss": "O Gauri (the radiant Goddess)",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -454,7 +454,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaurī",
-        "gloss": "O Gauri (the radiant Goddess)",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1947,13 +1947,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Brahmāṇī,",
-        "gloss": "O Brahmani (Shakti of Brahma)",
+        "gloss": "Brahmā’s śakti; feminine manifestation of creative power",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rudrāṇī,",
-        "gloss": "O Rudrani (Shakti of Rudra/Shiva)",
+        "gloss": "Rudra’s śakti; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2422,7 +2422,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamarū",
-        "gloss": "hourglass drum associated with Śiva",
+        "gloss": "small hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3729,7 +3729,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaurī",
-        "gloss": "O Gauri (the radiant Goddess)",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       }

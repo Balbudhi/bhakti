@@ -309,7 +309,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "bhagavatī",
-        "gloss": "Divine Mother / Goddess Bhagavati",
+        "gloss": "the blessed/powerful one; title of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -381,7 +381,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagavatī",
-        "gloss": "Divine Mother / Bhagavati",
+        "gloss": "the blessed/powerful one; title of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

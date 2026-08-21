@@ -500,7 +500,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṅgā",
-        "gloss": "the sacred river descended from heaven",
+        "gloss": "the sacred Ganges river, personified as a goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -631,7 +631,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "ḍamarū",
-        "gloss": "hourglass-shaped pellet drum",
+        "gloss": "small hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -797,7 +797,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahādev",
-        "gloss": "Great God; Mahadeva",
+        "gloss": "the great god; epithet of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1082,7 +1082,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahādev",
-        "gloss": "Great God",
+        "gloss": "the great god; epithet of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1602,7 +1602,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "gaṅgā",
-        "gloss": "the sacred river descended from heaven",
+        "gloss": "the sacred Ganges river, personified as a goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

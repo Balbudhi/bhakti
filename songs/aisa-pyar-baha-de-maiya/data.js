@@ -161,7 +161,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Durgā",
-        "gloss": "the inaccessible, protecting Goddess"
+        "gloss": "the difficult-to-reach, protective one; form of the Goddess"
       },
       {
         "roman": "durgati",
@@ -999,7 +999,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being"
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī"
       },
       {
         "roman": "main",

@@ -51,6 +51,17 @@ forms; do not conflate similar-looking local names or a different referent.
 | `droṇa` | `Dronagiri, the mountain of the life-restoring herb` | The source says `giri droṇa`; do not replace with Droṇa the teacher. |
 | `ahirāvana` | `Ahirāvaṇa, the underworld demon defeated by Hanumān` | Rāmāyaṇa tradition referent. |
 | `girijā` | `“mountain-born”; epithet of Pārvatī` | `giri` “mountain” + `jā` “born,” a transparent compound. |
+| `datta` / `dattā` | `“the given one”; Dattātreya, revered teacher-deity` | The form is a stable name/title in these Sāī āratī invocations, not an unidentified musician credit. |
+| `bhavānī` | `she who belongs to Bhava (Śiva); epithet of Pārvatī` | An established Śākta name; the card should explain it rather than merely say “O Bhavani.” |
+| `gaurī` | `the radiant/fair one; epithet of Pārvatī` | Standard divine epithet, including the Ambe Gaurī refrain. |
+| `ḍamarū` | `small hourglass drum associated with Śiva` | The object is named directly in Śiva songs. |
+| `avadhūta` | `one who has shaken off worldly ties; liberated ascetic` | A conventional religious title, not merely a name label. |
+| `digambara` | `sky-clad; one whose garment is the sky/directions` | Transparent devotional epithet; retain its ascetic image. |
+| `pāṇḍuraṅga` | `the pale/white-hued one; Viṭṭhala of Paṇḍharpur` | Fixed Vārkarī name in the Sāī āratī lines. |
+| `durgā` | `the difficult-to-reach, protective one; form of the Goddess` | Explain the name rather than repeat “Durga.” |
+| `gaṅgā` | `the sacred Ganges river, personified as a goddess` | Clear referent in the Śiva songs. |
+| `gopāla` | `protector of cows; epithet of Kṛṣṇa` | Transparent Kṛṣṇa epithet in the Shej āratī. |
+| `rādhē` | `Rādhā, beloved of Kṛṣṇa; vocative form` | The singing form is a direct address, not an alternative opaque name. |
 
 ## Terms intentionally kept in review
 

@@ -316,7 +316,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahādeva",
-        "gloss": "O Great God [Śiva]",
+        "gloss": "the great god; epithet of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -790,7 +790,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "gaurī",
-        "gloss": "the golden goddess, Pārvatī",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },

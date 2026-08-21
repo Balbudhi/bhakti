@@ -766,7 +766,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1774,25 +1774,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "digambara,",
-        "gloss": "clad in space; unattached Lord",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "digambara",
-        "gloss": "clad in space",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3385,7 +3385,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dattā",
-        "gloss": "O Dattatreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5661,7 +5661,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -8448,7 +8448,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "digambarā",
-        "gloss": "O sky-clad one (Dattatreya)",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       }

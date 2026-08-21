@@ -624,7 +624,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gopāla",
-        "gloss": "protector of cows",
+        "gloss": "protector of cows; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -730,13 +730,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "dattā",
-        "gloss": "Lord Dattatreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "digambara",
-        "gloss": "sky-clad; clothed in space",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1073,7 +1073,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṅgā",
-        "gloss": "the river Ganga (Ganges)",
+        "gloss": "the sacred Ganges river, personified as a goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1298,7 +1298,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },

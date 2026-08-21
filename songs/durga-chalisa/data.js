@@ -1015,7 +1015,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaurī",
-        "gloss": "the radiant golden Goddess",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1817,7 +1817,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2194,7 +2194,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4158,7 +4158,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "O Bhavani",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4667,7 +4667,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "O Bhavani",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4799,7 +4799,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "durgā",
-        "gloss": "of Durga",
+        "gloss": "the difficult-to-reach, protective one; form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4901,7 +4901,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "O Bhavani",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       }

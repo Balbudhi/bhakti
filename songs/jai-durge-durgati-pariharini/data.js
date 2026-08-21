@@ -146,7 +146,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "O Bhavani (Divine Mother)",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       }
