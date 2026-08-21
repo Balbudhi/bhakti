@@ -16,13 +16,18 @@ limited to 6 hours.
 
 To run it: open **Actions → Intake Bhakti Songs → Run workflow**, paste one
 publicly downloadable HTTPS media link per line (up to 50), choose 1–7 workers,
-and run it. YouTube, YouTube Music, and other URLs supported by `yt-dlp` use the
-same intake path. The job
+and run it. URLs supported by `yt-dlp` use the same intake path. The job
 is owner-only even if the repository is public; it has no issue/comment,
 pull-request, webhook, or public-form trigger. Inputs must resolve only to
 public internet addresses, may not contain credentials, and the OpenRouter key
 stays in GitHub's encrypted repository secrets. Random visitors therefore
 cannot submit songs or spend the API balance.
+
+YouTube currently blocks GitHub-hosted runner IPs with its bot-verification
+gate, including the cookie-free embedded client. The workflow fails closed and
+does not receive personal YouTube cookies. Public direct media URLs can run
+entirely online; YouTube currently needs the local fetch stage before the same
+pipeline can continue.
 
 The production client supports two explicit providers with the same prompts,
 audio payloads, structured schemas, retries, and publication gates:

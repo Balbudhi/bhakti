@@ -45,6 +45,15 @@ class TagTaxonomyTests(unittest.TestCase):
         inferred = tags.infer_named_subject_tags([{"roman": "pavanaputra hanumāna saṅkaṭa harana"}])
         self.assertIn("Hanumān", inferred)
 
+    def test_vaishno_devi_is_both_specific_and_shakti(self) -> None:
+        inferred = tags.infer_named_subject_tags([{"roman": "Vaishno Devi"}])
+        self.assertIn("Śakti", inferred)
+        self.assertIn("Vaiṣṇo Devī", inferred)
+
+    def test_plain_vaishno_tag_normalizes_to_iast(self) -> None:
+        merged = tags.merge_subject_tags(["Vaishno Devi"], [])
+        self.assertEqual(merged, ["Vaiṣṇo Devī"])
+
 
 if __name__ == "__main__":
     unittest.main()

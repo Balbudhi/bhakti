@@ -43,5 +43,11 @@ assert.equal(matchesSearch(bySlug("ishwar-se-kuch-mangna-ho-to"), "Ishwar"), tru
 assert.equal(matchesSearch(bySlug("thanu-karagadavaralli"), "Akkamahadevi"), true);
 assert.equal(matchesSearch(bySlug("thanu-karagadavaralli"), "Sangeeta Katti"), true);
 assert.equal(matchesSearch(bySlug("jhoothe-jag-ne"), "Jhoothe"), true);
+for (const slug of ["koi-hor-nahi", "jhoothe-jag-ne", "duniya-de-dukhan"]) {
+  const vaishnoSong = bySlug(slug);
+  assert.equal(vaishnoSong.subjectTags.includes("Śakti"), true);
+  assert.equal(vaishnoSong.subjectTags.includes("Vaiṣṇo Devī"), true);
+  assert.equal(matchesSearch(vaishnoSong, "Vaishno Devi"), true);
+}
 
 process.stdout.write("library search aliases: ok\n");
