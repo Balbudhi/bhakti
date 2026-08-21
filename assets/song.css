@@ -10,6 +10,8 @@
   --kh-ink-soft:  rgba(244, 234, 208, 0.68);
   --kh-ink-mid:   rgba(244, 234, 208, 0.28);
   --kh-rule:      rgba(244, 234, 208, 0.18);
+  --kh-control-red: #861824;                    /* opaque red for fixed controls */
+  --kh-control-red-hover: #981d2a;
 
   /* Cormorant retains the devotional display character. EB Garamond is the
      companion IAST face: its Latin Extended glyphs keep dots, rings, macrons,
@@ -70,8 +72,7 @@ html, body {
   border: 1px solid var(--kh-ink-mid);
   border-radius: 50%;
   color: var(--kh-ink);
-  background: var(--kh-bg); /* fallback for older standalone Safari */
-  background: color-mix(in srgb, var(--kh-bg) 88%, transparent);
+  background: var(--kh-control-red);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
@@ -84,7 +85,7 @@ html, body {
 #songSync:hover,
 #songSync[aria-pressed="true"] {
   border-color: rgba(244, 234, 208, 0.58);
-  background: rgba(244, 234, 208, 0.10);
+  background: var(--kh-control-red-hover);
 }
 #songShare:active,
 #songSync:active { transform: scale(0.94); }
@@ -98,6 +99,16 @@ html, body {
 #songSync[aria-pressed="false"] {
   color: var(--kh-ink-soft);
   border-style: dashed;
+}
+#songSync[aria-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 1.5px;
+  border-radius: 99px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  pointer-events: none;
 }
 
 /* A quiet confirmation, deliberately adjacent to Share rather than a modal or

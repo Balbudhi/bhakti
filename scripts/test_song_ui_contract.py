@@ -25,10 +25,10 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
-                self.assertIn('song.js?v=contract-20260821-6', text)
-                self.assertIn('data.js?v=contract-20260821-6', text)
-                self.assertIn('pwa.js?v=contract-20260821-6', text)
-                self.assertIn('song.css?v=contract-20260821-6', text)
+                self.assertIn('song.js?v=contract-20260821-8', text)
+                self.assertIn('data.js?v=contract-20260821-8', text)
+                self.assertIn('pwa.js?v=contract-20260821-8', text)
+                self.assertIn('song.css?v=contract-20260821-8', text)
                 self.assertEqual(text.count('id="songShare"'), 1)
                 self.assertEqual(text.count('id="songSync"'), 1)
                 self.assertIn('family=EB+Garamond:wght@400;500', text)
@@ -92,7 +92,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
         self.assertIn('audioIsPlaying()', client)
         self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
-        self.assertIn('bhakti-shell-v12', worker)
+        self.assertIn('bhakti-shell-v14', worker)
 
     def test_iast_uses_the_extended_garamond_face(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
@@ -101,6 +101,13 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('font-family: var(--kh-iast-serif)', song_css)
         self.assertIn('"EB Garamond", "Cormorant Garamond"', site_css)
         self.assertIn('overflow-wrap: anywhere', song_css)
+
+    def test_top_controls_are_opaque_and_the_unlinked_state_is_visibly_broken(self) -> None:
+        song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
+        self.assertIn('--kh-control-red: #861824', song_css)
+        self.assertIn('background: var(--kh-control-red);', song_css)
+        self.assertIn('#songSync[aria-pressed="false"]::after', song_css)
+        self.assertIn('border-style: dashed;', song_css)
 
     def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
