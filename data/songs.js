@@ -1968,28 +1968,6 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
-    "slug": "shree-sai-aarti",
-    "title": "Shree Sai Aarti",
-    "credit": "Pramod Medhi",
-    "languageTags": [
-      "Marathi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī",
-      "Kṛṣṇa"
-    ],
-    "searchAliases": [
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Krshna",
-      "Krsna"
-    ],
-    "writer": "",
-    "singer": "Pramod Medhi",
-    "composer": "",
-    "subtitle": "Śirḍī Sāī"
-  },
-  {
     "slug": "thoda-dhyan-laga",
     "title": "Thoṛā Dhyān Lagā",
     "credit": "Pramod Medhi",
@@ -2635,6 +2613,28 @@ window.BHAKTI_SONGS = [
       "Sirdi Sai",
       "Shiva",
       "Siva"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "shree-sai-aarti",
+    "title": "Shree Sai Aarti",
+    "credit": "",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Krshna",
+      "Krsna"
     ],
     "writer": "",
     "singer": "",
