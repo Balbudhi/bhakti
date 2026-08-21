@@ -1088,13 +1088,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Digambara",
-        "gloss": "space-clad (ascetic)",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1123,13 +1123,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Digambara",
-        "gloss": "space-clad Lord",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3333,7 +3333,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5114,7 +5114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "digambarā",
-        "gloss": "O sky-clad One / O Digambara",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -9571,7 +9571,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11435,7 +11435,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },

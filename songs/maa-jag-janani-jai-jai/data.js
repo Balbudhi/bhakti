@@ -1704,7 +1704,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "durgā",
-        "gloss": "Navadurgas; forms of Durga",
+        "gloss": "the difficult-to-reach, protective one; form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

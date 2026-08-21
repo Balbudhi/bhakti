@@ -1012,7 +1012,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṅgā",
-        "gloss": "the sacred river descended from heaven",
+        "gloss": "the sacred Ganges river, personified as a goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2096,10 +2096,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 50.575,
-    "end": 62.0
+    "end": 62
   },
   {
-    "start": 62.0,
+    "start": 62,
     "end": 67.425
   },
   {

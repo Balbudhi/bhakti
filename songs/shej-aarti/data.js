@@ -1224,7 +1224,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Pāṇḍuraṅga",
-        "gloss": "Lord Panduranga",
+        "gloss": "the pale/white-hued one; Viṭṭhala of Paṇḍharpur",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5314,7 +5314,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5925,7 +5925,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gopāḷā",
-        "gloss": "O Gopala; O protector of all",
+        "gloss": "protector of cows; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -352,7 +352,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -804,7 +804,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "O Bhavani",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1203,7 +1203,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rudrāṇī",
-        "gloss": "the consort/power of Rudra",
+        "gloss": "Rudra’s śakti; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1233,7 +1233,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmāṇī",
-        "gloss": "the power/consort of Brahma",
+        "gloss": "Brahmā’s śakti; feminine manifestation of creative power",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1661,7 +1661,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "durgā",
-        "gloss": "the inaccessible, protecting Goddess",
+        "gloss": "the difficult-to-reach, protective one; form of the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2018,7 +2018,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaurī",
-        "gloss": "the radiant fair mother",
+        "gloss": "the radiant/fair one; epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2422,7 +2422,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "O Bhavani",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4322,7 +4322,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4911,7 +4911,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },

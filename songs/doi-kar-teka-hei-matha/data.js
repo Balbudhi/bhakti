@@ -965,7 +965,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Pāṇḍuraṅga",
-        "gloss": "O Panduranga (Lord Vithoba)",
+        "gloss": "the pale/white-hued one; Viṭṭhala of Paṇḍharpur",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1410,7 +1410,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamarū",
-        "gloss": "hourglass-drum; hand-drum",
+        "gloss": "small hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3560,7 +3560,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Pāṇḍuraṅga",
-        "gloss": "Lord Panduranga (Vitthala)",
+        "gloss": "the pale/white-hued one; Viṭṭhala of Paṇḍharpur",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4919,7 +4919,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5780,7 +5780,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Lord Dattatreya (the primordial threefold divinity)",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -441,7 +441,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "ḍamarū",
-        "gloss": "hourglass drum (damaru)",
+        "gloss": "small hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1475,7 +1475,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "ḍamarū",
-        "gloss": "hourglass drum (damaru)",
+        "gloss": "small hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1493,7 +1493,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamarū",
-        "gloss": "hourglass drum (damaru)",
+        "gloss": "small hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1511,7 +1511,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamarū",
-        "gloss": "hourglass drum (damaru)",
+        "gloss": "small hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },

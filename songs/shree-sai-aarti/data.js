@@ -1218,25 +1218,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "dattā",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "digambara,",
-        "gloss": "space-clad; sky-clad,",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dattā",
-        "gloss": "Lord Dattātreya",
+        "gloss": "“the given one”; Dattātreya, revered teacher-deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "digambara",
-        "gloss": "space-clad; sky-clad",
+        "gloss": "sky-clad; one whose garment is the sky/directions",
         "concept_key": "",
         "preserve_in_english": false
       }

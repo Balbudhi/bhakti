@@ -192,7 +192,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "she who belongs to Bhava (Śiva); epithet of Pārvatī",
         "concept_key": "",
         "preserve_in_english": false
       },
