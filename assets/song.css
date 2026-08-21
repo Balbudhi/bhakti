@@ -40,7 +40,7 @@ html, body {
   align-items: center;
   justify-content: center;
   color: var(--kh-ink);
-  background: transparent;
+  background: var(--kh-bg);
   border: 1px solid var(--kh-ink-mid);
   border-radius: 50%;
   text-decoration: none;
@@ -61,7 +61,7 @@ html, body {
   position: fixed;
   /* Sit just into the upper safe-area margin on a phone: present without
      consuming the first reading line below the status area. */
-  top: max(8px, calc(env(safe-area-inset-top) - 12px));
+  top: max(8px, calc(env(safe-area-inset-top) - 16px));
   width: 34px;
   height: 34px;
   display: inline-flex;
@@ -575,7 +575,7 @@ html, body {
   .song-home { width: 36px; height: 36px; }
   #songShare,
   #songSync {
-    top: max(10px, env(safe-area-inset-top));
+    top: max(6px, calc(env(safe-area-inset-top) - 18px));
     width: 36px;
     height: 36px;
   }

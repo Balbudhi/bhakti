@@ -2324,7 +2324,7 @@ def page_html(meta: dict[str, Any]) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/style.css?v=contract-20260821-8" />
-  <link rel="stylesheet" href="../../assets/song.css?v=contract-20260821-11" />
+  <link rel="stylesheet" href="../../assets/song.css?v=contract-20260821-12" />
 </head>
 <body>
   <main class="song-page">
@@ -2346,7 +2346,7 @@ def page_html(meta: dict[str, Any]) -> str:
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
   <script src="data.js?v=contract-20260821-9"></script>
-  <script src="../../assets/song.js?v=contract-20260821-10"></script>
+  <script src="../../assets/song.js?v=contract-20260821-11"></script>
   <script src="../../assets/pwa.js?v=contract-20260821-8"></script>
 </body>
 </html>
