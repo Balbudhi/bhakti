@@ -16,6 +16,10 @@ class NamingTests(unittest.TestCase):
     def test_common_search_spelling_preserves_digraphs(self) -> None:
         self.assertEqual(naming.common_romanization("Śirḍī Sāī"), "Shirdi Sai")
 
+    def test_source_spelling_variants_share_one_singer(self) -> None:
+        self.assertEqual(naming.canonical_person("Surjho Bhattacharya"), "Shurjo Bhattacharya")
+        self.assertIn("Surjho Bhattacharya", naming.person_search_aliases(["Surjho Bhattacharya"]))
+
     def test_aliases_keep_non_mechanical_source_spellings(self) -> None:
         aliases = naming.search_aliases(["Īśvar Se Kuch Māṅgnā Ho To"], ["Ishwar Se Kuch Mangna Ho To"])
         self.assertIn("Ishvar Se Kuch Mangna Ho To", aliases)

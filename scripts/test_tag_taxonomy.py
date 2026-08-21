@@ -26,6 +26,21 @@ class TagTaxonomyTests(unittest.TestCase):
         merged = tags.merge_subject_tags(["Nirguṇa"], [{"roman": "Rāma nāma japa karanā"}])
         self.assertEqual(merged, ["Nirguṇa", "Rāma"])
 
+    def test_named_modern_saints_are_recognized(self) -> None:
+        inferred = tags.infer_named_subject_tags([
+            {"roman": "Śāradā Mā tum hṛdaya nivāsinī"},
+            {"roman": "Rāmakṛṣṇa prabhu isa yuga ke nāyaka"},
+        ])
+        self.assertIn("Śāradā Devī", inferred)
+        self.assertIn("Śrī Rāmakṛṣṇa", inferred)
+
+    def test_subject_tag_aliases_collapse_without_duplicates(self) -> None:
+        merged = tags.merge_subject_tags(
+            ["Śrī Śāradā Devī", "Śakti"],
+            [{"roman": "Śāradā Mā tum hṛdaya nivāsinī"}],
+        )
+        self.assertEqual(merged, ["Śāradā Devī", "Śakti"])
+
 
 if __name__ == "__main__":
     unittest.main()
