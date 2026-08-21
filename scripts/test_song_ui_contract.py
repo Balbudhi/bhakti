@@ -43,6 +43,17 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('const elapsed = document.getElementById("apElapsed")', script)
         self.assertIn('const duration = document.getElementById("apDuration")', script)
 
+    def test_song_controls_use_native_sharing_and_persistent_lyric_following(self) -> None:
+        script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
+        self.assertIn('LYRICS_FOLLOW_STORAGE_KEY = "bhakti:lyrics-follow-playback"', script)
+        self.assertIn('localStorage.getItem(LYRICS_FOLLOW_STORAGE_KEY)', script)
+        self.assertIn('localStorage.setItem(LYRICS_FOLLOW_STORAGE_KEY', script)
+        self.assertIn('navigator.share({ title: document.title, url })', script)
+        self.assertIn('navigator.clipboard?.writeText', script)
+        self.assertIn('"Link copied"', script)
+        self.assertIn('"bhakti:lyrics-follow-change"', script)
+        self.assertIn('if (lyricsFollowPlayback)', script)
+
     def test_homepage_preface_and_disclosure_follow_the_ui_contract(self) -> None:
         page = (ROOT / "index.html").read_text(encoding="utf-8")
         script = (ROOT / "assets" / "library.js").read_text(encoding="utf-8")

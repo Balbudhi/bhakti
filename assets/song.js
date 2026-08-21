@@ -624,6 +624,20 @@ function wireInteractions(root) {
    KARAOKE — sync line highlight to audio playback time
    ============================================================= */
 
+// Following the currently sung line is a listening preference, not part of a
+// song's data. Keep it on this device so a listener who turns it off while
+// reading one song is not surprised by the next song snapping the page away.
+const LYRICS_FOLLOW_STORAGE_KEY = "bhakti:lyrics-follow-playback";
+function readLyricsFollowPreference() {
+  try { return localStorage.getItem(LYRICS_FOLLOW_STORAGE_KEY) !== "false"; }
+  catch (_) { return true; }
+}
+function writeLyricsFollowPreference(enabled) {
+  try { localStorage.setItem(LYRICS_FOLLOW_STORAGE_KEY, enabled ? "true" : "false"); }
+  catch (_) { /* A private-mode storage failure should not disable the control. */ }
+}
+let lyricsFollowPlayback = readLyricsFollowPreference();
+
 function setupKaraoke() {
   const audio = document.getElementById("songAudio");
   const TIMINGS = PAGE_TIMINGS || [];
@@ -646,11 +660,18 @@ function setupKaraoke() {
     if (!article) return;
     article.classList.add("is-singing");
 
-    // Always follow the song — auto-scroll the active line to the
-    // vertical center on every line change. (If the listener wants
-    // to scroll back, they have until the next line change.)
-    article.scrollIntoView({ behavior: "auto", block: "center" });
+    if (lyricsFollowPlayback) {
+      article.scrollIntoView({ behavior: "auto", block: "center" });
+    }
   };
+
+  // If the listener re-links playback after reading elsewhere, bring the
+  // current line back into view once. Playback and highlighting never pause.
+  window.addEventListener("bhakti:lyrics-follow-change", event => {
+    if (!event.detail?.enabled || activeIdx < 0) return;
+    const active = document.getElementById(`ln-${activeIdx}-${seq[activeIdx].ref}`);
+    active?.scrollIntoView({ behavior: "auto", block: "center" });
+  });
   const tickKaraoke = () => {
     updateKaraoke();
     if (!audio.paused && !audio.ended) karaokeFrame = requestAnimationFrame(tickKaraoke);
@@ -685,6 +706,111 @@ function setupKaraoke() {
     if (audio.readyState >= HTMLMediaElement.HAVE_METADATA) seekAndPlay();
     else audio.addEventListener("loadedmetadata", seekAndPlay, { once: true });
   });
+}
+
+/* =============================================================
+   TOP CONTROLS — share a song and link/unlink lyric following
+   ============================================================= */
+
+function canonicalSongUrl() {
+  const canonical = document.querySelector('link[rel="canonical"]')?.href;
+  const url = new URL(canonical || window.location.href);
+  url.search = "";
+  url.hash = "";
+  return url.href;
+}
+
+let controlStatusTimer = 0;
+function showControlStatus(message) {
+  let status = document.getElementById("songControlStatus");
+  if (!status) {
+    status = document.createElement("div");
+    status.id = "songControlStatus";
+    status.className = "song-control-status";
+    status.setAttribute("role", "status");
+    status.setAttribute("aria-live", "polite");
+    status.hidden = true;
+    document.body.append(status);
+  }
+  window.clearTimeout(controlStatusTimer);
+  status.textContent = message;
+  status.hidden = false;
+  controlStatusTimer = window.setTimeout(() => { status.hidden = true; }, 1800);
+}
+
+async function copySongUrl(url) {
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(url);
+      return true;
+    }
+  } catch (_) { /* Fall through for older Safari and restrictive contexts. */ }
+
+  const input = document.createElement("textarea");
+  input.value = url;
+  input.setAttribute("readonly", "");
+  input.setAttribute("aria-hidden", "true");
+  input.style.cssText = "position:fixed;opacity:0;pointer-events:none";
+  document.body.append(input);
+  input.select();
+  let copied = false;
+  try { copied = document.execCommand("copy"); } catch (_) {}
+  input.remove();
+  return copied;
+}
+
+function shouldUseNativeShare() {
+  if (typeof navigator.share !== "function") return false;
+  // Native sharing is useful on phones, tablets, and installed PWAs. Desktop
+  // browsers instead get the conventional quiet Copy link behavior.
+  return window.matchMedia?.("(pointer: coarse)")?.matches
+    || window.matchMedia?.("(display-mode: standalone)")?.matches
+    || window.matchMedia?.("(display-mode: fullscreen)")?.matches
+    || navigator.userAgentData?.mobile === true;
+}
+
+function setupTopControls() {
+  // Support both the stable ids and class hooks so markup can be rendered by
+  // older generated pages while the catalogue updates.
+  const shareButton = document.getElementById("songShare") || document.querySelector(".song-share");
+  const syncButton = document.getElementById("songSync") || document.querySelector(".song-sync");
+
+  if (shareButton) {
+    shareButton.addEventListener("click", async () => {
+      const url = canonicalSongUrl();
+      if (shouldUseNativeShare()) {
+        try {
+          await navigator.share({ title: document.title, url });
+          return;
+        } catch (error) {
+          // Cancelling native share is intentional; do not turn it into a
+          // surprising clipboard write or a modal error.
+          if (error?.name === "AbortError") return;
+        }
+      }
+      showControlStatus(await copySongUrl(url) ? "Link copied" : "Could not copy link");
+    });
+  }
+
+  if (syncButton) {
+    const updateSyncButton = () => {
+      syncButton.classList.toggle("is-unlinked", !lyricsFollowPlayback);
+      syncButton.setAttribute("aria-pressed", String(lyricsFollowPlayback));
+      syncButton.setAttribute("aria-label", lyricsFollowPlayback
+        ? "Unlink lyrics from playback"
+        : "Link lyrics to playback");
+      syncButton.title = lyricsFollowPlayback ? "Lyrics follow playback" : "Lyrics are unlinked";
+    };
+    updateSyncButton();
+    syncButton.addEventListener("click", () => {
+      lyricsFollowPlayback = !lyricsFollowPlayback;
+      writeLyricsFollowPreference(lyricsFollowPlayback);
+      updateSyncButton();
+      window.dispatchEvent(new CustomEvent("bhakti:lyrics-follow-change", {
+        detail: { enabled: lyricsFollowPlayback }
+      }));
+    });
+  }
 }
 
 /* =============================================================
@@ -768,6 +894,7 @@ function setupAudioPlayer() {
 
 document.addEventListener("DOMContentLoaded", () => {
   render();
+  setupTopControls();
   setupAudioPlayer();
   setupKaraoke();
 });
