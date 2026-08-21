@@ -382,21 +382,30 @@ function renderRomanWithSpans(roman, words) {
   return html;
 }
 
-function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds) {
+function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds, adapted = false) {
   const repBadge = repeats && repeats > 1
     ? `<span class="rep" aria-label="repeated ${repeats} times">×${repeats}</span>`
     : "";
+  const adaptedBadge = adapted
+    ? `<span class="adapted-badge" aria-label="Sai-specific adaptation">Sai adaptation</span>`
+    : "";
   const startAttr = Number.isFinite(startSeconds) ? ` data-start="${startSeconds}"` : "";
   return `
-    <article class="line" id="${instanceId}"${startAttr}>
+    <article class="line${adapted ? " is-adapted" : ""}" id="${instanceId}"${startAttr}>
       <button class="line-seek" type="button" aria-label="Play from this line" title="Play from this line">
         <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
       </button>
       ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${escapeHtml(line.source)}</div>` : ""}
-      <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}</div>
+      <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}${adaptedBadge}</div>
       <div class="line-english">${renderEnglishWithSpans(line.english)}</div>
     </article>
   `;
+}
+
+function renderSourceNotice(notice) {
+  const poet = notice.poet ? `<p class="source-notice-poet"><span>Poet</span>${escapeHtml(notice.poet)}</p>` : "";
+  const detail = notice.note ? `<p class="source-notice-detail">${escapeHtml(notice.note)}</p>` : "";
+  return `<aside class="source-notice"><h2>${escapeHtml(notice.title || "")}</h2>${poet}${detail}</aside>`;
 }
 
 function renderSongMeta() {
@@ -442,12 +451,15 @@ function render() {
   const seq = PAGE_SEQUENCE || SEQUENCE;
   const lines = PAGE_LINES || LINES;
   const timings = PAGE_TIMINGS || [];
+  const notices = new Map((PAGE_META?.sectionNotices || []).map(notice => [Number(notice.sequenceIndex), notice]));
+  const adapted = new Set((PAGE_META?.adaptedSequenceIndices || []).map(Number));
   const language = (PAGE_META?.languages || [])[0];
   const defaultSourceLanguage = { Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn" }[language] || "";
   seq.forEach((entry, idx) => {
     const line = lines[entry.ref];
     if (!line) return;
-    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`, defaultSourceLanguage, timings[idx]?.start);
+    if (notices.has(idx)) html += renderSourceNotice(notices.get(idx));
+    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`, defaultSourceLanguage, timings[idx]?.start, adapted.has(idx));
   });
   root.innerHTML = html;
   wireInteractions(root);

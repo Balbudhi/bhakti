@@ -45,10 +45,11 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('class="library-invocation-roman"', page)
         self.assertIn('class="preface-word"', page)
         self.assertIn('class="preface-meaning"', page)
-        self.assertIn('इन भजनों को रचने वाले कवियों और इन्हें स्वर देने वाले गायकों को सादर नमन।', page)
+        self.assertIn('इन भजनों के कवियों तथा गायन-वादन से इन्हें साकार करने वाले कलाकारों को कोटि-कोटि प्रणाम।', page)
+        self.assertIn('Countless</span>', page)
         self.assertIn('class="about-toggle"', page)
         self.assertIn('AI-based transcription, timing, and translation pipeline', page)
-        self.assertIn('not to the poet or singer', page)
+        self.assertIn('not to the poet, singer, or musician', page)
         self.assertNotIn('please forgive', page.casefold())
         self.assertNotIn('corrections are welcome', page.casefold())
         self.assertIn('song.singer || song.credit', script)
@@ -64,6 +65,15 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn("BHAKTI_GEMINI_PROVIDER: openrouter", workflow)
         self.assertNotIn("pull_request:", workflow)
         self.assertNotIn("repository_dispatch:", workflow)
+
+    def test_composite_liturgy_source_notices_are_supported(self) -> None:
+        script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
+        data = (ROOT / "songs" / "kakad-aarti" / "data.js").read_text(encoding="utf-8")
+        self.assertIn("function renderSourceNotice", script)
+        self.assertIn("adaptedSequenceIndices", script)
+        self.assertIn('"title": "Kākaḍ Āratī"', data)
+        self.assertIn('"sectionNotices"', data)
+        self.assertIn('>Sai adaptation</span>', script)
 
 
 if __name__ == "__main__":

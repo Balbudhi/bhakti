@@ -8,13 +8,15 @@ window.SONG_META = {
   "searchAliases": [
     "Koi Hor Nahi Hai Mera",
     "Aman Ji",
-    "Shri Mata Vaishno Devi Bhawan"
+    "Shri Mata Vaishno Devi Bhawan",
+    "Vaishno Devi"
   ],
   "languages": [
     "Punjabi"
   ],
   "subjectTags": [
-    "Śakti"
+    "Śakti",
+    "Vaiṣṇo Devī"
   ],
   "translationStatus": "legacy-review-required",
   "sourceStatus": "reviewed",

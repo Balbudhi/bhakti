@@ -137,6 +137,47 @@ html, body {
   color: var(--kh-ink);
 }
 
+/* ---------- Source notices for composite liturgies ---------- */
+.source-notice {
+  border-top: 1px solid var(--kh-rule);
+  margin: 64px 0 30px;
+  padding-top: 24px;
+  text-align: left;
+}
+.source-notice:first-child { margin-top: 0; }
+.source-notice h2 {
+  color: var(--kh-ink);
+  font-family: var(--kh-serif);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  margin: 0;
+}
+.source-notice-poet {
+  color: var(--kh-ink);
+  font-family: var(--kh-serif);
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 7px 0 0;
+}
+.source-notice-poet span {
+  color: var(--kh-ink-soft);
+  font-family: Inter, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  margin-right: 8px;
+  text-transform: uppercase;
+}
+.source-notice-detail {
+  color: var(--kh-ink-soft);
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  line-height: 1.45;
+  margin: 8px 0 0;
+}
+
 /* ---------- Audio player (fixed, blends into body) ---------- */
 .audio-player {
   position: fixed;
@@ -308,6 +349,25 @@ html, body {
   white-space: nowrap;
   user-select: none;
   letter-spacing: 0.02em;
+}
+
+.adapted-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 8px;
+  border: 1px dashed rgba(244, 234, 208, 0.45);
+  border-radius: 999px;
+  color: var(--kh-ink-soft);
+  font-family: Inter, sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  vertical-align: 0.28em;
+  white-space: nowrap;
+}
+.line.is-adapted {
+  box-shadow: inset 1px 0 rgba(244, 234, 208, 0.34);
 }
 
 /* ---------- Word spans (hover targets) ---------- */

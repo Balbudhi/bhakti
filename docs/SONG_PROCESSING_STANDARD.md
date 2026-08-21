@@ -101,6 +101,16 @@ so `Shirdi Sai`, `Akkamahadevi`, `Ishwar`, and source-preferred artist spellings
 find the reviewed display form. Aliases are search metadata and are never
 rendered as competing credits.
 
+For a source-backed composite liturgy, `SONG_META.sectionNotices` may add a
+small title and poet notice before the relevant sequence index without
+splitting the recording into separate song pages. This is a reviewed manual
+exception, not model-inferred structure. `adaptedSequenceIndices` may mark an
+exact displayed line as a Sai-specific adaptation when a source comparison
+establishes the substitution. The badge attributes only the adaptation; it
+must not imply that the original poet wrote the substituted divine name.
+The reviewed implementation and source batch for the composite morning reader
+are recorded in `docs/KAKAD_ARTI_SOURCES.md`.
+
 ## Translation contract
 
 1. Gemini first transcribes source-language audio and identifies language,
@@ -154,15 +164,17 @@ grammar cards or school-by-school glossary UI.
 The homepage acknowledgment is centered and follows the reader's three-level
 order: Hindi source, interactive IAST, then linked literal English. Tapping or
 hovering an IAST word shows its meaning and highlights the corresponding
-English phrase. The English line is: `Respectful salutations to the poets who
-created these bhajans and the singers who gave them voice.` The Hindi is
-original site copy, not a quotation: `इन भजनों को रचने वाले कवियों और इन्हें
-स्वर देने वाले गायकों को सादर नमन।`
+English phrase. The English line is: `Countless salutations to the poets of
+these bhajans and the singers and musicians who brought them to life.` The Hindi
+is original site copy, not a quotation: `इन भजनों के कवियों तथा गायन-वादन से
+इन्हें साकार करने वाले कलाकारों को कोटि-कोटि प्रणाम।` Here `गायन-वादन`
+explicitly includes vocal and instrumental performance without implying that
+instrumentalists literally “gave voice.”
 
 The automation notice stays behind the circular `?` control rather than in the
 main reading flow. It states professionally that the readers are produced by
 an AI-based transcription, timing, and translation pipeline, and that any
-errors belong to the pipeline rather than the poet or singer. It contains
+errors belong to the pipeline rather than the poet, singer, or musician. It contains
 neither an apology nor a request for corrections.
 
 Run the hidden difficult-line benchmark after changing either prompt:
@@ -272,14 +284,27 @@ repository owner. It accepts at most 50 publicly downloadable HTTPS media URLs,
 rejects embedded credentials and any hostname resolving to local, private,
 reserved, or otherwise non-global addresses, restricts workers to 1–7, has no
 public event or webhook trigger, and reads the OpenRouter key from an encrypted
-repository secret. YouTube, YouTube Music, and other `yt-dlp`-supported public
-media URLs share the same path. A public visitor may view the repository but
+repository secret. Public `yt-dlp`-supported media URLs share the same path. A public visitor may view the repository but
 cannot dispatch a billable run. To use it, open **Actions → Intake Bhakti Songs
 → Run workflow**, paste one link per line, choose the worker count, and run it.
 When a source description is unstructured but independently establishes roles,
 record a reviewed source-ID override in `data/source_credits.json`; the one-link
 hosted intake then receives the verified title, poet, singer, music, language,
 and subject tags without guessing from an uploader name.
+
+Subject tags may be both broad and specific when the source supports both. For
+example, a verified Vaiṣṇo Devī performance carries both `Śakti` and
+`Vaiṣṇo Devī`; a generic Devī song must not acquire the specific tag by guess.
+Public tags use reviewed IAST, while ordinary spellings such as `Vaishno Devi`
+remain searchable aliases.
+
+As tested on August 21, 2026, YouTube rejects GitHub-hosted runner IPs with
+`Sign in to confirm you're not a bot` before metadata or audio extraction. The
+current nightly yt-dlp, EJS solver, Node 24, and cookie-free `web_embedded`
+client do not remove that IP-level gate. Do not upload a personal YouTube
+session cookie to GitHub as a workaround. The hosted path remains fully usable
+for public direct media URLs; YouTube requires the local fetch stage or a future
+separately trusted downloader with suitable egress.
 
 ### Direct Google provider
 

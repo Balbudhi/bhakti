@@ -8,13 +8,15 @@ window.SONG_META = {
   "searchAliases": [
     "Jhoothe Jag Ne Liya Mainu Loot Maa",
     "Maninder Ji",
-    "Shri Mata Vaishno Devi Bhawan"
+    "Shri Mata Vaishno Devi Bhawan",
+    "Vaishno Devi"
   ],
   "languages": [
     "Punjabi"
   ],
   "subjectTags": [
-    "Śakti"
+    "Śakti",
+    "Vaiṣṇo Devī"
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",

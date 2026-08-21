@@ -28,10 +28,12 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
     # Bare `kali` is excluded because devotional corpora frequently mean the
     # Kali age rather than the goddess; require an unambiguous named form.
     "Śakti": ("durga", "mahakali", "vaishno", "jhandewali", "ambika", "bhavani"),
+    "Vaiṣṇo Devī": ("vaishno",),
 }
 
 SUBJECT_TAG_ALIASES = {
     "Śrī Śāradā Devī": "Śāradā Devī",
+    "Vaishno Devi": "Vaiṣṇo Devī",
 }
 
 

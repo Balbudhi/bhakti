@@ -45,7 +45,7 @@ class TranslationStyleTests(unittest.TestCase):
         self.assertEqual(failures, [])
 
     def test_mercy_phrasing_and_user_translation_are_preserved(self) -> None:
-        morning = load_lines(ROOT / "songs" / "morning-aarti" / "data.js")
+        morning = load_lines(ROOT / "songs" / "kakad-aarti" / "data.js")
         self.assertEqual(plain(morning["line-030"]["english"]), "O Sai, look upon me with mercy,")
         self.assertEqual(plain(morning["line-037"]["english"]), "Look upon me with mercy.")
         thanu = load_lines(ROOT / "songs" / "thanu-karagadavaralli" / "data.js")

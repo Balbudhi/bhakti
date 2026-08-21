@@ -1,6 +1,6 @@
 window.SONG_META = {
-  "title": "Morning Āratī",
-  "subtitle": "Kākaḍ Āratī",
+  "title": "Kākaḍ Āratī",
+  "subtitle": "",
   "credit": "Pramod Medhi",
   "pageCredit": "Pramod Medhi",
   "writer": "",
@@ -25,6 +25,99 @@ window.SONG_META = {
     "Sirdi Sai",
     "Morning Kakad Aarti",
     "Pramod Medi"
+  ],
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Śrī Sāīnātha Prabhātāṣṭaka",
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+    },
+    {
+      "sequenceIndex": 37,
+      "title": "Sāī Raham Nazar Karnā",
+      "poet": "Dās Gaṇū Mahārāj"
+    },
+    {
+      "sequenceIndex": 56,
+      "title": "Raham Nazar Karo",
+      "poet": "Dās Gaṇū Mahārāj"
+    },
+    {
+      "sequenceIndex": 77,
+      "title": "Tujhe Kyā Dū̃ Sā̃vare",
+      "poet": "Sant Janābāī",
+      "note": "Adapted for Sai worship; Sai-specific substitutions are marked."
+    },
+    {
+      "sequenceIndex": 89,
+      "title": "Śrī Sadguru Bābā Sāī Ho",
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+    },
+    {
+      "sequenceIndex": 103,
+      "title": "Pañcāratī",
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
+      "note": "Sai-specific response lines are marked."
+    },
+    {
+      "sequenceIndex": 113,
+      "title": "Āratī Sāī Bābā",
+      "poet": "Mādhavrao Vāmanrao Adkar"
+    },
+    {
+      "sequenceIndex": 140,
+      "title": "Jaya Deva Datta Avadhūta",
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+    },
+    {
+      "sequenceIndex": 166,
+      "title": "Śirḍī Mājhe Paṇḍharpur",
+      "poet": "Dās Gaṇū Mahārāj"
+    },
+    {
+      "sequenceIndex": 174,
+      "title": "Ghālin Loṭāṅgaṇ",
+      "poet": "Sant Nāmdev",
+      "note": "Presented here in a Hindi rendering."
+    },
+    {
+      "sequenceIndex": 176,
+      "title": "Traditional Closing Prayers",
+      "poet": ""
+    },
+    {
+      "sequenceIndex": 185,
+      "title": "Vedic Benedictions",
+      "poet": ""
+    },
+    {
+      "sequenceIndex": 196,
+      "title": "Anantā Tulā Te / Namaskāra Sāṣṭāṅga",
+      "poet": "Mohanirāj"
+    },
+    {
+      "sequenceIndex": 227,
+      "title": "Aisā Yeī Bā Sāī Digambarā",
+      "poet": ""
+    },
+    {
+      "sequenceIndex": 248,
+      "title": "Śrī Sāīnātha Mahimna Stotram",
+      "poet": "Upāsanī Bābā Mahārāj"
+    },
+    {
+      "sequenceIndex": 312,
+      "title": "Closing Acclamations",
+      "poet": ""
+    }
+  ],
+  "adaptedSequenceIndices": [
+    78,
+    87,
+    105,
+    108,
+    110,
+    112
   ],
   "audioSources": [
     {
@@ -4418,7 +4511,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "puṇḍalīka",
-        "gloss": "Pundalik"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "jāgā",
@@ -4430,7 +4523,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "puṇḍalīka",
-        "gloss": "Pundalik"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "jāgā",

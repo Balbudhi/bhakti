@@ -40,8 +40,8 @@ def main() -> int:
     parser.add_argument("--timeout", type=float, default=300)
     options = parser.parse_args()
     cases = [
-        ("morning-aarti", "line-030", "mercy", has(r"look .*mercy"), False),
-        ("morning-aarti", "line-178", "alms_bag", has(r"alms bag"), False),
+        ("kakad-aarti", "line-030", "mercy", has(r"look .*mercy"), False),
+        ("kakad-aarti", "line-178", "alms_bag", has(r"alms bag"), False),
         ("koi-hor-nahi", "v1a", "breath_agency", has(r"breath.*(?:abandon|leave|release|give up)|(?:give up|release).*breath"), False),
         ("jhoothe-jag-ne", "refrain_b", "inside_image", has(r"bro(?:ke|ken).*?from the (?:very )?inside"), False),
         ("zara-to-itana-bata-do-sai", "refrain_2", "longing_take_hold", has(r"longing.*take hold"), False),

@@ -7,12 +7,14 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Śakti"
+      "Śakti",
+      "Vaiṣṇo Devī"
     ],
     "searchAliases": [
       "Koi Hor Nahi Hai Mera",
       "Aman Ji",
-      "Shri Mata Vaishno Devi Bhawan"
+      "Shri Mata Vaishno Devi Bhawan",
+      "Vaishno Devi"
     ],
     "writer": "",
     "singer": "Aman Ji",
@@ -283,12 +285,14 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Śakti"
+      "Śakti",
+      "Vaiṣṇo Devī"
     ],
     "searchAliases": [
       "Jhoothe Jag Ne Liya Mainu Loot Maa",
       "Maninder Ji",
-      "Shri Mata Vaishno Devi Bhawan"
+      "Shri Mata Vaishno Devi Bhawan",
+      "Vaishno Devi"
     ],
     "writer": "",
     "singer": "Maninder Ji",
@@ -317,8 +321,8 @@ window.BHAKTI_SONGS = [
     "subtitle": "Sai Teri Kripa Se"
   },
   {
-    "slug": "morning-aarti",
-    "title": "Morning Āratī",
+    "slug": "kakad-aarti",
+    "title": "Kākaḍ Āratī",
     "credit": "Pramod Medhi",
     "languageTags": [
       "Marathi",
@@ -342,8 +346,7 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "",
     "singer": "Pramod Medhi",
-    "composer": "",
-    "subtitle": "Kākaḍ Āratī"
+    "composer": ""
   },
   {
     "slug": "he-shivshankar-he-karunakar",
@@ -387,6 +390,35 @@ window.BHAKTI_SONGS = [
     "singer": "Sangeeta Katti Kulkarni",
     "composer": "N. S. Prasad",
     "subtitle": "A Vachana by Akkamahādevī"
+  },
+  {
+    "slug": "hanuman-bahuk",
+    "title": "Hanumān Bāhuk",
+    "credit": "Tulsīdās · Sarita Joshi · Dinesh Dubey",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Hanumān",
+      "Rāma",
+      "Viṣṇu",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Hanuman",
+      "Tulsidas · Sarita Joshi · Dinesh Dubey",
+      "Tulsidas",
+      "Rama",
+      "Vishnu",
+      "Visnu",
+      "Shakti",
+      "Sakti",
+      "Hanuman Bahuk- Sarita Joshi"
+    ],
+    "writer": "Tulsīdās",
+    "singer": "Sarita Joshi",
+    "composer": "Dinesh Dubey",
+    "subtitle": "Hanumān"
   },
   {
     "slug": "he-sadaguru-tume-mor-haatku-dhara",
@@ -682,9 +714,15 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Śakti"
+      "Śakti",
+      "Vaiṣṇo Devī"
     ],
-    "searchAliases": [],
+    "searchAliases": [
+      "Duniya De Dukhan Menu Bada Hi Sataya Maa",
+      "Suresh Ji",
+      "Shri Mata Vaishno Devi Bhawan",
+      "Vaishno Devi"
+    ],
     "writer": "",
     "singer": "Suresh Ji",
     "composer": "",

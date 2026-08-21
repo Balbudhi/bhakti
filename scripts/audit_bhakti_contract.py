@@ -127,6 +127,26 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
     if not isinstance(sequence, list) or not isinstance(timing, list) or len(sequence) != len(timing):
         problems.append("sequence/timing arrays are missing or differ in length")
     if isinstance(sequence, list):
+        notices = meta.get("sectionNotices", []) if isinstance(meta, dict) else []
+        if not isinstance(notices, list):
+            problems.append("SONG_META sectionNotices must be a list when present")
+        else:
+            notice_indices = []
+            for notice_index, notice in enumerate(notices):
+                if (not isinstance(notice, dict) or not isinstance(notice.get("sequenceIndex"), int)
+                        or not 0 <= notice["sequenceIndex"] < len(sequence)
+                        or not str(notice.get("title", "")).strip()
+                        or not isinstance(notice.get("poet", ""), str)
+                        or not isinstance(notice.get("note", ""), str)):
+                    problems.append(f"SONG_META sectionNotices[{notice_index}] is invalid")
+                    continue
+                notice_indices.append(notice["sequenceIndex"])
+            if len(notice_indices) != len(set(notice_indices)):
+                problems.append("SONG_META sectionNotices repeat a sequence index")
+        adapted_indices = meta.get("adaptedSequenceIndices", []) if isinstance(meta, dict) else []
+        if (not isinstance(adapted_indices, list)
+                or any(not isinstance(index, int) or not 0 <= index < len(sequence) for index in adapted_indices)):
+            problems.append("SONG_META adaptedSequenceIndices contains an invalid sequence index")
         previous_start = -0.001
         for index, entry in enumerate(sequence):
             if not isinstance(entry, dict) or entry.get("section") not in VALID_SECTIONS:

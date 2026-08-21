@@ -5,11 +5,18 @@ window.SONG_META = {
   "writer": "",
   "singer": "Suresh Ji",
   "composer": "",
+  "searchAliases": [
+    "Duniya De Dukhan Menu Bada Hi Sataya Maa",
+    "Suresh Ji",
+    "Shri Mata Vaishno Devi Bhawan",
+    "Vaishno Devi"
+  ],
   "languages": [
     "Punjabi"
   ],
   "subjectTags": [
-    "Śakti"
+    "Śakti",
+    "Vaiṣṇo Devī"
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
