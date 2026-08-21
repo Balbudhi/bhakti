@@ -72,6 +72,19 @@ python3 scripts/bhakti_pipeline.py --song hanuman-bahuk=EXISTING_SOURCE \
 That invalidates only the witness-aware audit and dependent timing/gloss/
 translation artifacts; it preserves the first audio transcript and listener
 master.
+
+Before a corpus release, run the zero-cost consistency pass:
+
+```sh
+python3 scripts/audit_transcript_corpus.py
+```
+
+It checks every public source/roman/word-map/timing record against its private
+audited transcript and writes only a review queue. A mismatch is never
+auto-normalized: harmless romanization differences, audible performance
+variants, and a possible mishearing need different evidence. The report routes
+known works to the textual-witness layer; only a source reading corroborated by
+the recording may change the public reader.
 - A failed full-track timing response may trigger a deterministic evenly spaced
   grid, but that grid is a routing hint only: it is never accepted as onset
   evidence and never rejects an accurate clip-relative start. Each valid start
