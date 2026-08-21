@@ -165,9 +165,9 @@ oversized detached marks and gives every extended glyph one consistent shape.
 Every published `SONG_META` stores `writer`, `singer`, and `composer` as
 separate strings. Any unverified role is the empty string and is omitted
 publicly rather than guessed, including a genuinely uncredited singer. The song page labels
-the verified roles as `Poet`, `Singer`, and `Music`. When one person holds
+the verified roles as `Poet`, `Singer`, and `Composer`. When one person holds
 several roles, group the labels once—for example,
-`Poet · Singer · Music — Shri Chandra Bhanu Satpathy`. Never infer one role
+`Poet · Singer · Composer — Shri Chandra Bhanu Satpathy`. Never infer one role
 from another merely to fill the display.
 
 Language tags describe the text actually sung, not the singer's identity or

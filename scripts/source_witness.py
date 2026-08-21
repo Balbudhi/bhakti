@@ -12,6 +12,8 @@ from __future__ import annotations
 import html
 import json
 import re
+import subprocess
+import tempfile
 import unicodedata
 import urllib.request
 from pathlib import Path
@@ -87,6 +89,63 @@ def _fetch(url: str) -> str:
         return response.read().decode("utf-8", errors="replace")
 
 
+def _fetch_bytes(url: str) -> bytes:
+    request = urllib.request.Request(url, headers={"User-Agent": "Bhakti-source-witness-audit/1.0"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read()
+
+
+def _extract_pdf_text_range(text: str, start_marker: str, end_marker: str = "") -> list[str]:
+    """Extract only a configured Devanagari text range from a PDF conversion.
+
+    A marker range is intentionally narrow: a PDF's foreword, questions, and
+    prose commentary are not candidate song lines.  This is a working witness,
+    so the caller still sends the excerpt only to the audio-aware second pass.
+    """
+    # PDF text extraction often turns a visual space into one or more
+    # newlines. Match marker words across arbitrary whitespace while retaining
+    # the original text after the boundary.
+    def marker_match(value: str, marker: str, position: int = 0) -> re.Match[str] | None:
+        pattern = r"\s*".join(re.escape(part) for part in re.split(r"\s+", marker.strip()) if part)
+        return re.search(pattern, value[position:])
+
+    start_match = marker_match(text, start_marker)
+    if not start_match:
+        return []
+    start = start_match.start()
+    fragment = text[start:]
+    if end_marker:
+        end_match = marker_match(fragment, end_marker)
+        if end_match:
+            fragment = fragment[:end_match.start()]
+    lines: list[str] = []
+    for raw in fragment.splitlines():
+        for candidate in re.split(r"(?<=[।॥])\s*", raw):
+            candidate = _clean_line(candidate)
+            if not candidate or not DEVANAGARI.search(candidate):
+                continue
+            # Page artefacts such as a bare verse number are not text evidence.
+            if len(re.sub(r"[^\u0900-\u097f]", "", candidate)) < 3:
+                continue
+            lines.append(candidate)
+    return lines
+
+
+def _acquire_pdf_text_range(record: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Fetch a registered PDF and retain only the configured lyric range."""
+    url = str(record["url"])
+    with tempfile.TemporaryDirectory(prefix="bhakti-witness-pdf-") as temporary:
+        pdf = Path(temporary) / "witness.pdf"
+        pdf.write_bytes(_fetch_bytes(url))
+        converted = subprocess.run(
+            ["pdftotext", "-layout", str(pdf), "-"], check=True, capture_output=True, text=True,
+        ).stdout
+    text = _extract_pdf_text_range(converted, str(record["start_marker"]), str(record.get("end_marker") or ""))
+    page = int(record.get("page", 0) or 0)
+    pages = [{"page": page, "url": url, "line_count": len(text)}]
+    return pages, [{"page": page, "url": url, "text": line} for line in text]
+
+
 def acquire(song_dir: Path, slug: str, *, refresh: bool = False) -> dict[str, Any] | None:
     """Acquire a registered public witness into ignored local review evidence."""
     record = record_for_slug(slug)
@@ -96,6 +155,19 @@ def acquire(song_dir: Path, slug: str, *, refresh: bool = False) -> dict[str, An
     cached = _read_json(path)
     if cached and not refresh:
         return cached
+    if record.get("retriever") == "pdf-text-range":
+        pages, lines = _acquire_pdf_text_range(record)
+        result = {
+            "schema_version": 1,
+            "work": slug,
+            "witness": record,
+            "pages": pages,
+            "lines": lines,
+            "acquisition_note": "Private comparison cache. Do not publish this text or treat it as a critical edition.",
+        }
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        return result
     if record.get("retriever") != "pustak-ebook-pages":
         raise RuntimeError(f"unsupported source-witness retriever: {record.get('retriever')!r}")
     pages: list[dict[str, Any]] = []
