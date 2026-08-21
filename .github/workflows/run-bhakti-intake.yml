@@ -10,6 +10,14 @@ on:
         description: "Independent song workers."
         required: true
         default: "7"
+      provider:
+        description: "Gemini API provider."
+        required: true
+        default: "openrouter"
+        type: choice
+        options:
+          - openrouter
+          - google
 
 permissions:
   contents: write
@@ -45,6 +53,8 @@ jobs:
       - name: Run production intake pipeline
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BHAKTI_GEMINI_PROVIDER: ${{ inputs.provider }}
           BHAKTI_WORKFLOW_SONGS: ${{ inputs.songs }}
           BHAKTI_WORKFLOW_WORKERS: ${{ inputs.workers }}
         run: |

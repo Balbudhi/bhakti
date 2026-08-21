@@ -244,6 +244,41 @@ runs the same synchronous production pipeline, commits generated readers with
 that hosted path: GitHub-hosted jobs are limited to 6 hours, while OpenRouter's
 Batch API may take around 24 hours even when the underlying work is correct.
 
+### Direct Google provider
+
+Provider choice changes transport and billing only; it must never change the
+prompts, schemas, audio, reasoning effort, retries, uncertainty handling, or
+publication gates. OpenRouter remains the default:
+
+```sh
+BHAKTI_GEMINI_PROVIDER=openrouter python3 scripts/bhakti_pipeline.py --publish --url URL
+```
+
+Direct Google uses its official OpenAI-compatible audio and structured-output
+endpoint. Supply the key through `GEMINI_API_KEY`, or store it in
+`~/Dev/.axiom_gemini.key` with mode `0600`:
+
+```sh
+BHAKTI_GEMINI_PROVIDER=google python3 scripts/bhakti_pipeline.py --publish --url URL
+```
+
+The client strips OpenRouter's `google/` model prefix only at the direct Google
+transport boundary and maps reasoning effort to Google's compatible top-level
+field. A direct request still targets Gemini 3.7 Flash. Direct Google Batch is
+deliberately rejected rather than silently approximated; use OpenRouter
+`--economy` for the established half-price batch path. Before changing the
+production default, run a short audio plus strict-schema probe and compare its
+JSON, model resolution, timing behavior, and validation result with the
+OpenRouter path.
+
+The published listener audio is never replaced for provider compatibility.
+Because Google's documented direct audio formats omit WebM/Opus and M4A
+containers, the direct transport makes a temporary in-memory mono MP3 payload
+at 112 kb/s; Gemini documents that it internally reduces audio resolution far
+below that rate. The conversion creates no persistent duplicate, does not
+change the song timeline, and is bounded so the base64 request stays below the
+20 MB inline limit. Longer recordings are segmented before transport.
+
 Seven songs may progress concurrently without producing an uncontrolled API
 burst. A process-wide scheduler independently caps Gemini requests at three,
 starts them at least 350 ms apart, prefers OpenRouter's highest-throughput
