@@ -2,6 +2,9 @@ window.SONG_META = {
   "title": "Koī Hor Nahī Hai Merā",
   "subtitle": "Jai Mātā Dī",
   "credit": "Aman Ji · Shri Mata Vaishno Devi Bhawan",
+  "writer": "",
+  "singer": "Aman Ji",
+  "composer": "",
   "searchAliases": [
     "Koi Hor Nahi Hai Mera",
     "Aman Ji",

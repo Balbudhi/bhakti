@@ -2,6 +2,9 @@ window.SONG_META = {
   "title": "Yeh Garv Bharā Mastak Merā",
   "subtitle": "Prārthanā",
   "credit": "Hari Om Sharan",
+  "writer": "",
+  "singer": "Hari Om Sharan",
+  "composer": "",
   "searchAliases": [
     "Hari Om Sharan"
   ],

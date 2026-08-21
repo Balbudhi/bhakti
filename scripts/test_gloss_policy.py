@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+import unittest
+
+import gloss_policy
+
+
+class GlossPolicyTests(unittest.TestCase):
+    def test_preserved_concept_explains_without_repeating_itself(self) -> None:
+        self.assertEqual(
+            gloss_policy.meaning_only_gloss("buddhi", "buddhi (intellect, faculty of discernment)", "buddhi"),
+            "intellect; faculty of discernment",
+        )
+
+    def test_devotional_title_explains_without_repeating_itself(self) -> None:
+        self.assertEqual(gloss_policy.meaning_only_gloss("guru", "Guru / spiritual teacher"), "spiritual teacher")
+        self.assertEqual(gloss_policy.meaning_only_gloss("Bābā", "Baba, Father, Master"), "father; revered master")
+
+    def test_existing_meaning_first_gloss_is_preserved(self) -> None:
+        self.assertEqual(gloss_policy.meaning_only_gloss("māyā", "worldly appearance and attachment"),
+                         "worldly appearance and attachment")
+
+    def test_self_reference_detection_ignores_diacritics_and_punctuation(self) -> None:
+        self.assertTrue(gloss_policy.is_self_referential("buddhi,", "buddhi (intellect)"))
+        self.assertTrue(gloss_policy.is_self_referential("Sāī̃", "Sai"))
+        self.assertTrue(gloss_policy.is_self_referential("Sāīṃ", "Sai"))
+
+
+if __name__ == "__main__":
+    unittest.main()

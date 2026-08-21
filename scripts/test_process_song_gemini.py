@@ -105,6 +105,12 @@ class ProviderTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "Google Batch is not enabled"):
                 gemini.call("google/gemini-3.7-flash:batch", "secret", "x", audio=None, timeout=5)
 
+    def test_depleted_google_prepay_is_not_retried(self) -> None:
+        self.assertTrue(gemini.permanent_provider_error(
+            "google", 429, "Your prepayment credits are depleted.",
+        ))
+        self.assertFalse(gemini.permanent_provider_error("google", 429, "Temporary rate limit"))
+
 
 if __name__ == "__main__":
     unittest.main()

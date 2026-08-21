@@ -2,6 +2,9 @@ window.SONG_META = {
   "title": "Duniyā De Dukhāṅ Menū Baṛā Hī Satāyā Mā",
   "subtitle": "Jai Mātā Dī",
   "credit": "Suresh Ji · Shri Mata Vaishno Devi Bhawan",
+  "writer": "",
+  "singer": "Suresh Ji",
+  "composer": "",
   "languages": [
     "Punjabi"
   ],

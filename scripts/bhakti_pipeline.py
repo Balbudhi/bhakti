@@ -32,6 +32,7 @@ from pathlib import Path
 from typing import Any
 
 import process_song_gemini as gemini
+import gloss_policy
 import naming
 import resolve_youtube_music_audio as ytmusic
 import tag_taxonomy
@@ -40,7 +41,7 @@ import tag_taxonomy
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 2
-GLOSS_CONTRACT_VERSION = 3
+GLOSS_CONTRACT_VERSION = 4
 TRANSLATION_INPUT_VERSION = 7
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
@@ -1339,6 +1340,8 @@ def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str
                 errors.append(f"{line_id} word gloss {word_index} uses unknown concept key {concept_key!r}")
             elif preserve and not concept_key:
                 errors.append(f"{line_id} word gloss {word_index} preserves an uncurated concept")
+            if gloss_policy.is_self_referential(word.get("roman", ""), word.get("gloss", "")):
+                errors.append(f"{line_id} word gloss {word_index} repeats the visible term instead of explaining it")
     return errors
 
 
@@ -1359,7 +1362,7 @@ Before any later translation, explicitly reconstruct the semantic frame: who is 
 
 Explain internal morphemes inside the token's `gloss` or `grammar_note`. Give a short grammar note for ellipsis, agreement, sandhi, compounds, or syntax. Choose the contextually supported sense of a polysemous word; do not call ordinary dictionary polysemy uncertain. Use uncertainty only when the audited lyric itself remains genuinely unresolved. Do not write a fluent English sentence in this stage.
 
-Only terms in the CURATED PRESERVED-TERM REGISTRY may remain in IAST in English. For a matching term, set `concept_key`, set `preserve_in_english=true`, use the canonical IAST form later, and write a short context-specific hover gloss rather than a flattening synonym. In particular, bare “illusion” is not an adequate replacement for `māyā`. For ordinary words, set `concept_key` to the empty string and `preserve_in_english=false`. If a new term seems irreducible but is not curated, do not add it: put the candidate and reason in uncertainty so publication stops for human review.
+Only terms in the CURATED PRESERVED-TERM REGISTRY may remain in IAST in English. For a matching term, set `concept_key`, set `preserve_in_english=true`, use the canonical IAST form later, and write a short context-specific hover gloss rather than a flattening synonym. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a proper name or divine title, explain its identity or role rather than merely spelling the same name again. In particular, bare “illusion” is not an adequate replacement for `māyā`. For ordinary words, set `concept_key` to the empty string and `preserve_in_english=false`. If a new term seems irreducible but is not curated, do not add it: put the candidate and reason in uncertainty so publication stops for human review.
 
 CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
@@ -1747,11 +1750,25 @@ def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:
 
 def page_html(meta: dict[str, Any]) -> str:
     title = meta["title"]
-    credit = meta.get("pageCredit") or meta.get("credit", "")
-    subtitle = meta.get("subtitle", "")
-    escape = lambda text: str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    sub = f'      <p class="song-attrib"><em>{escape(subtitle)}</em></p>\n' if subtitle else ""
-    cred = f'      <p class="song-credit">{escape(credit)}</p>\n' if credit else ""
+    escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                           .replace('"', "&quot;").replace("'", "&#39;"))
+    people: dict[str, list[str]] = {}
+    for field, label in (("writer", "Poet"), ("singer", "Singer"), ("composer", "Music")):
+        person = str(meta.get(field) or "").strip()
+        if person:
+            people.setdefault(person, []).append(label)
+    credits = "".join(
+        f'<div class="song-credit-entry"><dt>{escape(" · ".join(roles))}</dt><dd>{escape(person)}</dd></div>'
+        for person, roles in people.items()
+    )
+    tags = "".join(
+        f'<span class="song-tag subject-tag">{escape(tag)}</span>' for tag in meta.get("subjectTags", [])
+    ) + "".join(
+        f'<span class="song-tag language-tag">{escape(tag)}</span>' for tag in meta.get("languages", [])
+    )
+    credit_html = f'<dl class="song-credits">{credits}</dl>' if credits else ""
+    tag_html = f'<div class="song-meta-tags" aria-label="Tags">{tags}</div>' if tags else ""
+    meta_html = f'      <div class="song-meta">{credit_html}{tag_html}</div>\n'
     audio_sources = meta.get("audioSources") or [{"src": "audio.m4a", "type": "audio/mp4"}]
     source_html = "".join(f'<source src="{escape(source["src"])}" type="{escape(source["type"])}">' for source in audio_sources)
     return f'''<!doctype html>
@@ -1776,7 +1793,7 @@ def page_html(meta: dict[str, Any]) -> str:
   <main class="song-page">
     <header class="song-hero">
       <h1 class="song-title">{escape(title)}</h1>
-{sub}{cred}      <p class="song-hint">Tap or hover over any word to see its meaning.</p>
+{meta_html}      <p class="song-hint">Tap or hover over any word to see its meaning.</p>
     </header>
     <section class="song-root" id="songRoot" aria-live="polite"></section>
   </main>
@@ -1787,8 +1804,8 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260820-6"></script>
-  <script src="../../assets/song.js?v=contract-20260820-6"></script>
+  <script src="data.js?v=contract-20260821-1"></script>
+  <script src="../../assets/song.js?v=contract-20260821-1"></script>
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 </body>
 </html>
@@ -1918,7 +1935,8 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
         row = translation_by_id[line_id]
         line_data[line_id] = {"source": line.get("source_text", ""), "sourceLanguage": language_code((meta["languages"] or [""])[0]),
                               "roman": line.get("roman", ""), "english": segment_english(row.get("segments", []), row.get("literal_english", "")),
-                              "words": gloss_by_id[line_id].get("word_glosses", []), "grammarNote": gloss_by_id[line_id].get("grammar_note", "")}
+                              "words": [gloss_policy.clean_word(word) for word in gloss_by_id[line_id].get("word_glosses", [])],
+                              "grammarNote": gloss_by_id[line_id].get("grammar_note", "")}
     sequence = [{"ref": event["ref"],
                  "section": event.get("section") or next((line.get("kind", "verse")
                                                            for line in lines if line["id"] == event["ref"]), "verse"),

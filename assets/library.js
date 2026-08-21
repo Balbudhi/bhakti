@@ -51,8 +51,108 @@
     return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
   };
 
+  const wireAbout = () => {
+    const toggle = document.getElementById("aboutToggle");
+    const panel = document.getElementById("aboutPanel");
+    const close = document.getElementById("aboutClose");
+    if (!toggle || !panel || !close) return;
+    const setOpen = open => {
+      panel.hidden = !open;
+      toggle.setAttribute("aria-expanded", String(open));
+      if (open) document.dispatchEvent(new Event("bhakti:clear-preface"));
+      if (open) close.focus();
+      else toggle.focus();
+    };
+    toggle.addEventListener("click", event => {
+      event.stopPropagation();
+      setOpen(panel.hidden);
+    });
+    close.addEventListener("click", () => setOpen(false));
+    panel.addEventListener("click", event => event.stopPropagation());
+    document.addEventListener("click", () => {
+      if (!panel.hidden) setOpen(false);
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false);
+    });
+  };
+
+  const wirePreface = () => {
+    if (typeof document.querySelector !== "function") return;
+    const root = document.querySelector(".library-intro");
+    const tooltip = document.getElementById("prefaceTooltip");
+    if (!root || !tooltip) return;
+    let sticky = null;
+    const meaningsFor = word => [...root.querySelectorAll(".preface-meaning")].filter(meaning =>
+      meaning.dataset.wordI.split(/\s+/).includes(word.dataset.wordI)
+    );
+    const show = word => {
+      word.classList.add("is-hi");
+      meaningsFor(word).forEach(meaning => meaning.classList.add("is-hi"));
+      tooltip.textContent = word.dataset.gloss;
+      tooltip.hidden = false;
+      const rect = word.getBoundingClientRect();
+      const tipRect = tooltip.getBoundingClientRect();
+      const margin = 8;
+      const left = Math.max(margin, Math.min(
+        window.innerWidth - tipRect.width - margin,
+        rect.left + rect.width / 2 - tipRect.width / 2,
+      ));
+      const above = rect.top - tipRect.height - 8;
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${above >= margin ? above : rect.bottom + 8}px`;
+    };
+    const hide = word => {
+      word.classList.remove("is-hi");
+      meaningsFor(word).forEach(meaning => meaning.classList.remove("is-hi"));
+      tooltip.hidden = true;
+    };
+    root.addEventListener("pointerover", event => {
+      const word = event.target.closest(".preface-word");
+      if (word) show(word);
+    });
+    root.addEventListener("pointerout", event => {
+      const word = event.target.closest(".preface-word");
+      if (word && word !== sticky && !word.contains(event.relatedTarget)) hide(word);
+    });
+    root.addEventListener("focusin", event => {
+      const word = event.target.closest(".preface-word");
+      if (word) show(word);
+    });
+    root.addEventListener("focusout", event => {
+      const word = event.target.closest(".preface-word");
+      if (word && word !== sticky) hide(word);
+    });
+    root.addEventListener("click", event => {
+      const word = event.target.closest(".preface-word");
+      if (!word) return;
+      event.stopPropagation();
+      if (sticky === word) {
+        sticky = null;
+        hide(word);
+        return;
+      }
+      if (sticky) hide(sticky);
+      sticky = word;
+      show(word);
+    });
+    document.addEventListener("click", () => {
+      if (sticky) hide(sticky);
+      sticky = null;
+    });
+    document.addEventListener("bhakti:clear-preface", () => {
+      if (sticky) hide(sticky);
+      sticky = null;
+      tooltip.hidden = true;
+    });
+    window.addEventListener("scroll", () => { tooltip.hidden = true; }, { passive: true });
+  };
+
   // Kept public for deterministic Node tests and future non-DOM consumers.
   window.BHAKTI_SEARCH = Object.freeze({ searchForms, matchesSearch });
+
+  wireAbout();
+  wirePreface();
 
   const root = document.getElementById("songList");
   const filters = document.getElementById("tagFilters");
@@ -84,7 +184,7 @@
     <a class="song-card" href="songs/${song.slug}/" aria-label="Open ${song.title}">
       <span class="song-copy">
         <span class="song-title">${song.title}</span>
-        <span class="credit">${song.credit}</span>
+        <span class="credit">${song.singer || song.credit}</span>
       </span>
       <span class="tags" aria-label="${[...song.subjectTags, ...song.languageTags].join(", ")}">
         ${song.subjectTags.map(tag => `<span class="subject-tag">${tag}</span>`).join("")}

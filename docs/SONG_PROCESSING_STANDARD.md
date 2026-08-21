@@ -74,20 +74,22 @@ headings interrupt the bhajan rather than helping the listening experience.
 
 ### Public metadata rule
 
-Every reader uses one compact credit treatment. When the singer, writer, and
-composer are the same person—or only one role is evidenced—show that person
-once without role labels. Render explicit labels only when sources establish a
-real distinction, for example `Sung by A · Words by B · Music by C`. Unknown
-roles are omitted: absence is never rendered as a claim that another person
-did the work. A devotional salutation appears only when it is specific to the
-song (for example, `Jai Mātā Dī` for a Śakti song), not as generic boilerplate.
-Never render local source paths, review packets, extraction notes, or source
-location boilerplate on a public reader.
+Every published `SONG_META` stores `writer`, `singer`, and `composer` as
+separate strings. `singer` is required; an unknown writer or composer is the
+empty string and is omitted publicly rather than guessed. The reader labels
+the verified roles as `Poet`, `Singer`, and `Music`. When one person holds
+several roles, group the labels once—for example,
+`Poet · Singer · Music — Shri Chandra Bhanu Satpathy`. Never infer one role
+from another merely to fill the display.
 
-Store `writer`, `singer`, and `composer` separately even when the visible line
-is compact. When writer and singer are distinct, the library credit orders the
-writer first and singer second; the reader may name the form and writer in its
-subtitle (for example, `A Vachana by Akkamahādevī`) and show the singer beneath.
+Album, source collection, uploader, venue, and devotional boilerplate do not
+appear in a song header. The header contains only the title, evidence-backed
+people and roles, subject tags, language tags, and the word-meaning hint.
+Unknown roles disappear without leaving an “unknown” placeholder. Never render
+local paths, review packets, extraction notes, or source-location boilerplate.
+The homepage displays the verified singer only beneath each title, then sorts
+by singer, subject tags, language tags, and title.
+
 Titles, forms, historical names, honorifics, and devotional names use reviewed
 IAST in display text, including `Śirḍī Sāī`, `Akkamahādevī`, and `Jī`.
 Contemporary people and institutions may retain their own established Latin
@@ -136,12 +138,30 @@ rendered as competing credits.
 `data/preserved_terms.json` is a curated allowlist derived from the Vedanta
 translation standard—not from the much larger glossary manifest. A listed term
 stays in canonical IAST in English, remains linked to its source-word index, and
-uses the existing short hover for a context-specific explanation. Bare
+uses the existing short hover for a context-specific explanation. A tooltip
+contains the meaning only; it never repeats the already-visible term before a
+parenthetical definition. Use `intellect; faculty of discernment`, not
+`buddhi (intellect; faculty of discernment)`. Divine names and proper names
+receive a role or contextual identity rather than the same spelling again. Bare
 flattenings forbidden by the entry fail validation; `māyā` may not become only
 “illusion.” An unlisted candidate is review output, never an automatic registry
 addition. New entries require the preserve-or-translate decision procedure and
 human approval. Bhakti deliberately does not inherit the Vedanta reader's full
 grammar cards or school-by-school glossary UI.
+
+### Library preface and disclosure
+
+The homepage acknowledgment is centered and follows the reader's three-level
+order: Hindi source, interactive IAST, then linked literal English. Tapping or
+hovering an IAST word shows its meaning and highlights the corresponding
+English phrase. The English line is: `Respectful salutations to the poets who
+created these bhajans and the singers who gave them voice.`
+
+The automation notice stays behind the circular `?` control rather than in the
+main reading flow. It states plainly that transcription, timing, and
+translation are automated by AI and that any faults belong to the system, not
+the poet or singer. It asks forgiveness for errors and does not solicit
+corrections or imply that a correction channel exists.
 
 Run the hidden difficult-line benchmark after changing either prompt:
 
@@ -270,6 +290,24 @@ deliberately rejected rather than silently approximated; use OpenRouter
 production default, run a short audio plus strict-schema probe and compare its
 JSON, model resolution, timing behavior, and validation result with the
 OpenRouter path.
+
+The August 21, 2026 live probe used a 16-second Hindi song excerpt and the same
+strict JSON schema on both transports. OpenRouter resolved to Gemini 3.7 Flash,
+returned the exact expected source and Roman line, and cost `$0.00197025`.
+Google rejected the request before inference with `429 RESOURCE_EXHAUSTED`:
+the `bhakti` project is Tier 1 Prepay and its prepayment credits are depleted.
+That is a billing-state failure, not a model-quality result. The hosted workflow
+is pinned to OpenRouter until a future direct key successfully passes:
+
+```sh
+python3 scripts/probe_gemini_provider.py AUDIO --start SECONDS \
+  --source 'SOURCE LINE' --roman 'ROMAN LINE'
+```
+
+The direct client treats this specific depleted-prepay response as permanent
+and fails immediately rather than spending a minute retrying it. Do not unlink
+billing, buy credits, or switch the production provider automatically; those
+are explicit account/billing decisions.
 
 The published listener audio is never replaced for provider compatibility.
 Because Google's documented direct audio formats omit WebM/Opus and M4A

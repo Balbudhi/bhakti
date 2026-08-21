@@ -3,7 +3,8 @@ window.SONG_META = {
   "subtitle": "A Vachana by Akkamahādevī",
   "writer": "Akkamahādevī",
   "singer": "Sangeeta Katti Kulkarni",
-  "credit": "Akkamahādevī · Sangeeta Katti Kulkarni",
+  "composer": "N. S. Prasad",
+  "credit": "Akkamahādevī · Sangeeta Katti Kulkarni · N. S. Prasad",
   "searchAliases": [
     "Thanu Karagadavaralli Pushpavanolleyayya Neenu",
     "Akkamahadevi",

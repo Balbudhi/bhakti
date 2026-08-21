@@ -66,7 +66,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Hari [God / Vishnu-Krishna]"
+        "gloss": "Lord Viṣṇu; remover of suffering"
       },
       {
         "roman": "bhajana",
@@ -95,7 +95,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Hari [God / the Divine]"
+        "gloss": "Lord Viṣṇu; remover of suffering"
       },
       {
         "roman": "bhajana",
@@ -190,7 +190,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Hari [the Divine]"
+        "gloss": "Lord Viṣṇu; remover of suffering"
       },
       {
         "roman": "guṇa",

@@ -95,7 +95,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "yathā",
@@ -152,7 +152,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru-"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "prārthanā",
@@ -173,11 +173,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "Sāīnāth",
-        "gloss": "Sainath"
+        "gloss": "Lord Sai"
       },
       {
         "roman": "pūraṇ",
@@ -214,7 +214,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "bhī",
@@ -243,7 +243,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "kī",
@@ -300,7 +300,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru's"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "kṛpā",
@@ -378,7 +378,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "bhī",
@@ -452,7 +452,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Guru",
-        "gloss": "guru's"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "kī",
@@ -706,7 +706,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "jāgrat",
@@ -833,7 +833,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru's"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "kī",
@@ -895,7 +895,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Guru",
-        "gloss": "guru's"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "charaṇ",
@@ -1071,7 +1071,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "guru-"
+        "gloss": "spiritual teacher"
       },
       {
         "roman": "prārthanā",
@@ -1165,7 +1165,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāth",
-        "gloss": "Sainath"
+        "gloss": "Lord Sai"
       },
       {
         "roman": "ne",
@@ -1267,7 +1267,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāth",
-        "gloss": "Sainath"
+        "gloss": "Lord Sai"
       },
       {
         "roman": "Mahārāj",
@@ -1428,7 +1428,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ganū",
-        "gloss": "Ganu"
+        "gloss": "devotee-poet"
       },
       {
         "roman": "kahe",
@@ -1744,7 +1744,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇū",
-        "gloss": "Ganu (Das Ganu)"
+        "gloss": "devotee-poet"
       },
       {
         "roman": "hai",
@@ -1789,11 +1789,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       }
     ],
     "grammarNote": "Triple repetition of predicate mālika hamāre followed by the subject in direct address tuma Bābā Sāī̃."
@@ -2135,11 +2135,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "ho",
@@ -2155,11 +2155,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       }
     ],
     "grammarNote": "Choral vocative invocation repeated for devotional emphasis."
@@ -2515,7 +2515,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "kī",
@@ -2540,7 +2540,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "kī",
@@ -2598,11 +2598,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Ramādhava",
-        "gloss": "Ramadhava (Lord Vishnu)"
+        "gloss": "Lord Viṣṇu"
       },
       {
         "roman": "manāō",
@@ -2614,7 +2614,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramādhava",
-        "gloss": "Ramadhava"
+        "gloss": "Lord Viṣṇu"
       }
     ],
     "grammarNote": "Epithet apposition identifying Sai with Ramadhava, with transitive imperative manāō."
@@ -2668,7 +2668,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "kā",
@@ -2721,7 +2721,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "padō̃",
@@ -2741,7 +2741,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       }
     ],
     "grammarNote": "Syncretic series of divine names; jaṛē expresses fixing/insetting the mind (citta) like a jewel at the holy feet (padō̃ mē̃)."
@@ -2758,11 +2758,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "padō̃",
@@ -2782,7 +2782,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       }
     ],
     "grammarNote": "Repetitive refrain emphasizing the fixation of consciousness at Baba Sai's feet."
@@ -2799,11 +2799,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "jīvā",
@@ -2877,11 +2877,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Choral link connecting the prayer for spiritual repose (viśrāma jīvā) with the main refrain."
@@ -2988,11 +2988,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Reprise of the hemistich tag dṛṣṭi sē Śrīraṅga merging into the choral refrain."
@@ -3095,11 +3095,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba / father"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Repetition of the cadence transitioning into the nominal refrain offering the aarti to Sai Baba."
@@ -3194,11 +3194,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Hemistich echo linking the act of guidance directly to the choral refrain."
@@ -3256,7 +3256,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Datta",
-        "gloss": "Datta / Dattatreya"
+        "gloss": "Lord Dattātreya"
       },
       {
         "roman": "Digambara",
@@ -3273,7 +3273,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Datta",
-        "gloss": "Datta"
+        "gloss": "Lord Dattātreya"
       },
       {
         "roman": "Digambara",
@@ -3285,11 +3285,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Refrain cadence pairing Lord Datta's title directly with Sai Baba."
@@ -3388,11 +3388,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Coda echo connecting the purposive phrase back to the main refrain."
@@ -3487,11 +3487,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Repeated vocative phrase leading into the refrain."
@@ -3549,7 +3549,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mādhava",
-        "gloss": "Madhava [the author]"
+        "gloss": "the poet's signature-name"
       },
       {
         "roman": "kō",
@@ -3598,11 +3598,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "Bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       }
     ],
     "grammarNote": "Repeated phrase leading back into the standard aarti refrain."
@@ -3660,7 +3660,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "avadhūtā",
@@ -3878,7 +3878,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dattā",
-        "gloss": "Datta"
+        "gloss": "Lord Dattātreya"
       },
       {
         "roman": "avadhūtā",
@@ -3890,7 +3890,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "avadhūtā",
@@ -3973,7 +3973,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mandā",
-        "gloss": "Manda"
+        "gloss": "a proper name here"
       },
       {
         "roman": "kā",
@@ -4055,7 +4055,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hindū",
-        "gloss": "Hindu"
+        "gloss": "follower of the dharma"
       },
       {
         "roman": "yavana",
@@ -4129,7 +4129,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hindū",
-        "gloss": "Hindu"
+        "gloss": "follower of the dharma"
       },
       {
         "roman": "yavana",
@@ -4178,7 +4178,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī",
-        "gloss": "Sai"
+        "gloss": "holy master"
       }
     ],
     "grammarNote": "Linked present clauses: 'dikhalāte haiṁ saba ko' (he reveals to all) followed by the predicate '[sāī] vyāpaka haiṁ' (Sai is omnipresent)."
@@ -4302,7 +4302,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vasko",
-        "gloss": "Vasko [poet's name]"
+        "gloss": "the poet's name"
       },
       {
         "roman": "haiṁ",
@@ -4335,11 +4335,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "ramāvara",
@@ -4356,7 +4356,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "ramāvara",
@@ -4364,11 +4364,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "ramāvara",
@@ -4467,7 +4467,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "ko",
@@ -4488,7 +4488,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁ",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "ko",
@@ -4504,7 +4504,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "ko",
@@ -4525,7 +4525,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "gaṇu",
-        "gloss": "Ganu (Das Ganu)"
+        "gloss": "devotee-poet"
       },
       {
         "roman": "kahe",
@@ -4533,11 +4533,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba"
+        "gloss": "father; revered master"
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "dauṛe",
@@ -4553,7 +4553,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai"
+        "gloss": "holy master"
       }
     ],
     "grammarNote": "Poet signature (bhaṇitā) followed by a direct plea; 'dauṛe āao' is an adverbial participle construction meaning 'come running'."
@@ -4574,7 +4574,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "dauṛe",
@@ -4590,7 +4590,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai"
+        "gloss": "holy master"
       }
     ],
     "grammarNote": "Emphatic repeated imperative invocation to the deity/guru."
@@ -4684,7 +4684,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāmā",
-        "gloss": "Nama (Saint Namdev)"
+        "gloss": "poet-saint"
       }
     ],
     "grammarNote": "A succession of dvandva/tatpurusha nominal pairs expressing intimate worship, closed by the poet signature formula."
@@ -4865,7 +4865,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāsudevaṁ",
-        "gloss": "Vasudeva (accusative singular)"
+        "gloss": "accusative singular"
       },
       {
         "roman": "harim",
@@ -5005,7 +5005,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "datta",
-        "gloss": "Datta (Lord Dattatreya)"
+        "gloss": "Lord Dattātreya"
       }
     ],
     "grammarNote": "Sacred formulaic invocation and greeting of the Datta Sampradaya."
@@ -5363,7 +5363,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Narayana"
+        "gloss": "Lord Viṣṇu"
       },
       {
         "roman": "vāsudevāya",
@@ -5392,7 +5392,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahārāja",
-        "gloss": "Maharaja / Great King"
+        "gloss": "great king; revered sovereign"
       },
       {
         "roman": "kī",
@@ -5797,7 +5797,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāī",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "prema",
@@ -6082,7 +6082,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāsa",
-        "gloss": "rasa dance / divine play"
+        "gloss": "essence, aesthetic savor, or devotional mood"
       },
       {
         "roman": "mere",
@@ -6226,7 +6226,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī",
-        "gloss": "Sai"
+        "gloss": "holy master"
       },
       {
         "roman": "digambarā",
@@ -6346,7 +6346,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tuṅgā",
-        "gloss": "Tunga"
+        "gloss": "lofty; high"
       }
     ],
     "grammarNote": "Purposive compound 'bhikṣārtha' (for begging alms) and locational references in the Dattatreya tradition."
@@ -6437,7 +6437,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamaru",
-        "gloss": "damaru drum"
+        "gloss": "hourglass drum associated with Śiva"
       },
       {
         "roman": "dhārī",
@@ -9954,10 +9954,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 520.09,
-    "end": 527.0
+    "end": 527
   },
   {
-    "start": 527.0,
+    "start": 527,
     "end": 537.69
   },
   {
@@ -10014,10 +10014,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 621.67,
-    "end": 630.0
+    "end": 630
   },
   {
-    "start": 630.0,
+    "start": 630,
     "end": 640.53
   },
   {
@@ -10082,10 +10082,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 729.77,
-    "end": 737.0
+    "end": 737
   },
   {
-    "start": 737.0,
+    "start": 737,
     "end": 744.55
   },
   {
@@ -10138,10 +10138,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 830.03,
-    "end": 837.0
+    "end": 837
   },
   {
-    "start": 837.0,
+    "start": 837,
     "end": 843.95
   },
   {
@@ -10322,10 +10322,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1067.07,
-    "end": 1072.0
+    "end": 1072
   },
   {
-    "start": 1072.0,
+    "start": 1072,
     "end": 1076.91
   },
   {
@@ -10698,10 +10698,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1568.57,
-    "end": 1573.0
+    "end": 1573
   },
   {
-    "start": 1573.0,
+    "start": 1573,
     "end": 1577.51
   },
   {
@@ -10738,10 +10738,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1613.15,
-    "end": 1618.0
+    "end": 1618
   },
   {
-    "start": 1618.0,
+    "start": 1618,
     "end": 1624.55
   },
   {

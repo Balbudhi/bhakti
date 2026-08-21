@@ -91,7 +91,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "buddhi,",
-        "gloss": "buddhi (intellect, faculty of discernment)",
+        "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
         "preserve_in_english": true
       },

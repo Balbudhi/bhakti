@@ -22,6 +22,8 @@ audio payloads, structured schemas, retries, and publication gates:
 - `BHAKTI_GEMINI_PROVIDER=google` uses the direct Gemini OpenAI-compatible API
   with `GEMINI_API_KEY` or a private `~/Dev/.axiom_gemini.key` file.
 
-Google direct mode must pass a real audio/schema equivalence probe before it is
-selected for a production batch. It does not silently emulate `--economy`;
-OpenRouter remains the supported Batch API path.
+The August 21, 2026 live probe found that the current `bhakti` Google project is
+Tier 1 Prepay with no remaining credits, so Google rejects inference with a
+permanent `429`. Hosted intake is therefore pinned to OpenRouter. Direct mode
+remains available for a future funded or Free Tier project, but it does not
+silently emulate `--economy`; OpenRouter is the supported Batch API path.

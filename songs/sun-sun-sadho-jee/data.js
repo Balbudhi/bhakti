@@ -459,7 +459,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sudāma",
-        "gloss": "Sudama (the impoverished devotee; masculine proper noun)"
+        "gloss": "impoverished devotee and friend of Kṛṣṇa"
       },
       {
         "roman": "jī",

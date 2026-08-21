@@ -339,7 +339,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "Guru",
+        "gloss": "spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -495,7 +495,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guru",
-        "gloss": "Guru's",
+        "gloss": "spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1241,15 +1241,15 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0.0,
+    "start": 0,
     "end": 54.58
   },
   {
     "start": 54.58,
-    "end": 67.0
+    "end": 67
   },
   {
-    "start": 67.0,
+    "start": 67,
     "end": 75.03
   },
   {

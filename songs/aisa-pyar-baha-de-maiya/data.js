@@ -2,6 +2,9 @@ window.SONG_META = {
   "title": "Aisā Pyār Bahā De Maiyā",
   "subtitle": "Durgā Vandanā",
   "credit": "Hari Om Sharan",
+  "writer": "",
+  "singer": "Hari Om Sharan",
+  "composer": "",
   "searchAliases": [
     "Aisa Pyar Baha De Maiya",
     "Durga Vandana",
@@ -83,7 +86,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Durgā",
-        "gloss": "Durgā, the inaccessible/protecting Goddess"
+        "gloss": "the inaccessible, protecting Goddess"
       },
       {
         "roman": "durgati",
@@ -459,7 +462,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "Bhavānī, the Goddess"
+        "gloss": "the Goddess; Śakti as the source of being"
       },
       {
         "roman": "main",
@@ -1146,10 +1149,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 198.42,
-    "end": 204.0
+    "end": 204
   },
   {
-    "start": 204.0,
+    "start": 204,
     "end": 213.62
   },
   {
@@ -1166,10 +1169,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 233.5,
-    "end": 238.0
+    "end": 238
   },
   {
-    "start": 238.0,
+    "start": 238,
     "end": 243.35
   },
   {

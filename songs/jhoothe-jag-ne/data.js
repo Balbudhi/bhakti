@@ -2,6 +2,9 @@ window.SONG_META = {
   "title": "Jhūṭhe Jag Ne Liyā Mainū Lūṭ Mā",
   "subtitle": "Jai Mātā Dī",
   "credit": "Maninder Ji · Shri Mata Vaishno Devi Bhawan",
+  "writer": "",
+  "singer": "Maninder Ji",
+  "composer": "",
   "searchAliases": [
     "Jhoothe Jag Ne Liya Mainu Loot Maa",
     "Maninder Ji",
@@ -601,7 +604,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jhanḍewālī",
-        "gloss": "Jhandewali (title of the Goddess)"
+        "gloss": "the Goddess of Jhandewalan"
       },
       {
         "roman": "janmāṅ",

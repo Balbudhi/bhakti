@@ -266,13 +266,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "yoga",
-        "gloss": "yoga",
+        "gloss": "discipline or union",
         "concept_key": "yoga",
         "preserve_in_english": true
       },
       {
         "roman": "rāga",
-        "gloss": "rāga",
+        "gloss": "melodic mode; attachment or passion, according to context",
         "concept_key": "raga",
         "preserve_in_english": true
       },
@@ -389,7 +389,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rudra",
-        "gloss": "Rudra / terrible / Shiva",
+        "gloss": "fierce form of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -788,7 +788,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṅgā",
-        "gloss": "Ganga (the river)",
+        "gloss": "the sacred river descended from heaven",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -875,7 +875,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dha",
-        "gloss": "Dha (Dhaivata)",
+        "gloss": "sixth note of the Indian scale",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1270,10 +1270,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 106.7,
-    "end": 112.0
+    "end": 112
   },
   {
-    "start": 112.0,
+    "start": 112,
     "end": 122.54
   },
   {

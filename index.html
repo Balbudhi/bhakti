@@ -13,25 +13,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/site.css?v=contract-20260820-2">
+  <link rel="stylesheet" href="assets/site.css?v=contract-20260821-1">
 </head>
 <body>
   <main>
+    <button class="about-toggle" id="aboutToggle" type="button" aria-label="About these readers" aria-expanded="false" aria-controls="aboutPanel">?</button>
+    <aside class="about-panel" id="aboutPanel" aria-labelledby="aboutHeading" hidden>
+      <button class="about-close" id="aboutClose" type="button" aria-label="Close">×</button>
+      <h2 id="aboutHeading">About these readers</h2>
+      <p>These readers are transcribed, timed, and translated automatically by AI. Any faults in the transcription or translation belong to the system, not to the poet or singer. Please forgive any errors.</p>
+    </aside>
     <section class="library-intro" aria-label="Library preface">
       <p class="library-invocation" lang="hi">इन भजनों के रचयिता कवियों और स्वर देने वाले गायकों को सादर नमन।</p>
-      <p class="library-invocation-english">Respectful salutations to the poets who created these bhajans and the singers who gave them voice.</p>
-      <details class="library-note">
-        <summary>About</summary>
-        <p lang="hi">यह साइट भजनों की AI-सहायित पाठ-प्रतिलिपि, लिप्यंतरण और अनुवाद प्रस्तुत करती है, ताकि उन्हें ध्यान से सुना और समझा जा सके। त्रुटियाँ संभव हैं; सुधार और सुझाव स्वागतयोग्य हैं।</p>
-        <p>This site presents AI-assisted transcriptions, transliterations, and translations of bhajans so they can be listened to and understood with care. Errors are possible; corrections and suggestions are welcome.</p>
-      </details>
+      <p class="library-invocation-roman" aria-label="Roman transliteration">
+        <button class="preface-word" type="button" data-word-i="0" data-gloss="these">In</button>
+        <button class="preface-word" type="button" data-word-i="1" data-gloss="bhajans">bhajanoṃ</button>
+        <button class="preface-word" type="button" data-word-i="2" data-gloss="of">ke</button>
+        <button class="preface-word" type="button" data-word-i="3" data-gloss="creators; those who composed">racayitā</button>
+        <button class="preface-word" type="button" data-word-i="4" data-gloss="poets">kaviyoṃ</button>
+        <button class="preface-word" type="button" data-word-i="5" data-gloss="and">aur</button>
+        <button class="preface-word" type="button" data-word-i="6" data-gloss="voice">svar</button>
+        <button class="preface-word" type="button" data-word-i="7" data-gloss="giving">dene</button>
+        <button class="preface-word" type="button" data-word-i="8" data-gloss="those who">vāle</button>
+        <button class="preface-word" type="button" data-word-i="9" data-gloss="singers">gāyakoṃ</button>
+        <button class="preface-word" type="button" data-word-i="10" data-gloss="to">ko</button>
+        <button class="preface-word" type="button" data-word-i="11" data-gloss="respectfully; with reverence">sādar</button>
+        <button class="preface-word" type="button" data-word-i="12" data-gloss="salutation; reverent bowing">naman</button>.
+      </p>
+      <p class="library-invocation-english">
+        <span class="preface-meaning" data-word-i="11">Respectful</span>
+        <span class="preface-meaning" data-word-i="12">salutations</span>
+        <span class="preface-meaning" data-word-i="10">to</span>
+        <span class="preface-meaning" data-word-i="4">the poets</span>
+        <span class="preface-meaning" data-word-i="3">who created</span>
+        <span class="preface-meaning" data-word-i="0 1 2">these bhajans</span>
+        <span class="preface-meaning" data-word-i="5">and</span>
+        <span class="preface-meaning" data-word-i="9">the singers</span>
+        <span class="preface-meaning" data-word-i="6 7 8">who gave them voice</span>.
+      </p>
+      <div class="preface-tooltip" id="prefaceTooltip" role="tooltip" hidden></div>
     </section>
     <label class="song-search"><span class="sr-only">Search songs</span><input id="songSearch" type="search" placeholder="Search songs" autocomplete="off"></label>
     <nav id="tagFilters" class="tag-filters" aria-label="Filter songs by tag"></nav>
     <div id="songList" class="song-list" aria-label="Songs" aria-live="polite"></div>
   </main>
-  <script src="data/songs.js?v=contract-20260820-2"></script>
-  <script src="assets/library.js?v=contract-20260820-2"></script>
+  <script src="data/songs.js?v=contract-20260821-1"></script>
+  <script src="assets/library.js?v=contract-20260821-1"></script>
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 </body>
 </html>

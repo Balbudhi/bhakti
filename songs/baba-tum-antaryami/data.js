@@ -29,7 +29,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sāīṁ",
-        "gloss": "Sai, Master"
+        "gloss": "holy master"
       },
       {
         "roman": "tum",
@@ -48,7 +48,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Bābā",
-        "gloss": "Baba, Father, Master"
+        "gloss": "father; revered master"
       },
       {
         "roman": "tum",
@@ -632,10 +632,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 93.1,
-    "end": 99.0
+    "end": 99
   },
   {
-    "start": 99.0,
+    "start": 99,
     "end": 111.1
   },
   {
@@ -716,10 +716,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 326.7,
-    "end": 332.0
+    "end": 332
   },
   {
-    "start": 332.0,
+    "start": 332,
     "end": 337.3
   },
   {

@@ -25,8 +25,11 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
-                self.assertIn('song.js?v=contract-20260820-6', text)
-                self.assertIn('data.js?v=contract-20260820-6', text)
+                self.assertIn('song.js?v=contract-20260821-1', text)
+                self.assertIn('data.js?v=contract-20260821-1', text)
+                self.assertEqual(text.count('class="song-meta"'), 1)
+                self.assertNotIn('class="song-attrib"', text)
+                self.assertNotIn('class="song-credit"', text)
 
     def test_seeking_is_bound_to_the_dedicated_control(self) -> None:
         script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
@@ -35,6 +38,18 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('if (!seekButton) return;', script)
         self.assertIn('const elapsed = document.getElementById("apElapsed")', script)
         self.assertIn('const duration = document.getElementById("apDuration")', script)
+
+    def test_homepage_preface_and_disclosure_follow_the_ui_contract(self) -> None:
+        page = (ROOT / "index.html").read_text(encoding="utf-8")
+        script = (ROOT / "assets" / "library.js").read_text(encoding="utf-8")
+        self.assertIn('class="library-invocation-roman"', page)
+        self.assertIn('class="preface-word"', page)
+        self.assertIn('class="preface-meaning"', page)
+        self.assertIn('class="about-toggle"', page)
+        self.assertIn('automatically by AI', page)
+        self.assertIn('not to the poet or singer', page)
+        self.assertNotIn('corrections are welcome', page.casefold())
+        self.assertIn('song.singer || song.credit', script)
 
 
 if __name__ == "__main__":

@@ -18,61 +18,162 @@ body {
 }
 
 main {
+  position: relative;
   width: min(100% - 48px, 940px);
   margin: 0 auto;
   padding: clamp(72px, 12vw, 150px) 0;
 }
 
 .library-intro {
-  margin: 0 10px 26px;
+  max-width: 780px;
+  margin: 0 auto 44px;
+  padding: 0 54px;
+  position: relative;
+  text-align: center;
 }
 
 .library-invocation,
+.library-invocation-roman,
 .library-invocation-english,
-.library-note {
+.about-panel h2,
+.about-panel p {
   margin: 0;
 }
 
 .library-invocation {
   color: var(--ink);
-  font: 500 clamp(17px, 2vw, 20px) / 1.2 "Cormorant Garamond", Georgia, serif;
-  letter-spacing: 0.02em;
+  font: 500 clamp(22px, 3vw, 29px) / 1.28 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.012em;
+}
+
+.library-invocation-roman {
+  color: var(--ink);
+  font: 400 clamp(20px, 2.7vw, 26px) / 1.42 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.008em;
+  margin: 13px 0 0;
+}
+
+.preface-word {
+  appearance: none;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: inherit;
+  margin: 0;
+  padding: 0 2px;
+  transition: box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.preface-word:hover,
+.preface-word:focus-visible,
+.preface-word.is-hi,
+.preface-meaning.is-hi {
+  background: rgba(244, 234, 208, 0.08);
+  box-shadow: 0 0 0 1px rgba(244, 234, 208, 0.60);
+  outline: none;
 }
 
 .library-invocation-english {
   color: var(--muted);
-  font: 13px/1.45 Inter, sans-serif;
-  margin-top: 4px;
-}
-
-.library-note {
-  color: var(--muted);
-  font: 13px/1.45 Inter, sans-serif;
+  font: 400 clamp(16px, 2vw, 19px) / 1.45 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.01em;
   margin-top: 10px;
 }
 
-.library-note summary {
-  cursor: pointer;
-  list-style: none;
-  user-select: none;
-  width: fit-content;
+.preface-meaning {
+  border-radius: 3px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0 2px;
+  transition: box-shadow 120ms ease, background-color 120ms ease;
 }
 
-.library-note summary::-webkit-details-marker {
-  display: none;
-}
-
-.library-note summary::after {
-  content: " ?";
-}
-
-.library-note[open] summary {
+.preface-tooltip {
+  position: fixed;
+  z-index: 100;
+  max-width: min(260px, calc(100vw - 24px));
+  border: 1px solid rgba(244, 234, 208, 0.38);
+  border-radius: 5px;
+  background: #5c0c13;
   color: var(--ink);
+  font: 13px/1.35 Inter, sans-serif;
+  padding: 7px 10px;
+  pointer-events: none;
+  box-shadow: 0 8px 28px rgba(25, 0, 3, 0.28);
 }
 
-.library-note p {
-  margin: 8px 0 0;
-  max-width: 42rem;
+.about-toggle,
+.about-close {
+  appearance: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease;
+}
+
+.about-toggle {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  z-index: 31;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-toggle:hover,
+.about-toggle:focus-visible,
+.about-toggle[aria-expanded="true"],
+.about-close:hover,
+.about-close:focus-visible {
+  background: rgba(244, 234, 208, 0.10);
+  border-color: rgba(244, 234, 208, 0.58);
+  color: var(--ink);
+  outline: none;
+}
+
+.about-panel {
+  position: absolute;
+  z-index: 30;
+  top: 72px;
+  right: 10px;
+  width: min(390px, calc(100% - 20px));
+  border: 1px solid rgba(244, 234, 208, 0.30);
+  border-radius: 10px;
+  background: #5c0c13;
+  color: var(--muted);
+  padding: 22px 48px 22px 22px;
+  box-shadow: 0 18px 60px rgba(25, 0, 3, 0.34);
+}
+
+.about-panel h2 {
+  color: var(--ink);
+  font: 500 20px/1.2 "Cormorant Garamond", Georgia, serif;
+}
+
+.about-panel p {
+  font: 13px/1.55 Inter, sans-serif;
+  margin-top: 9px;
+}
+
+.about-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 27px;
+  height: 27px;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .song-search {
@@ -209,12 +310,20 @@ main {
 @media (max-width: 600px) {
   main {
     width: min(100% - 32px, 940px);
-    padding-top: 52px;
+    padding-top: 68px;
   }
 
   .library-intro {
-    margin-bottom: 22px;
+    margin-bottom: 34px;
+    padding: 0 8px;
   }
+
+  .library-invocation { font-size: 22px; }
+  .library-invocation-roman { font-size: 20px; }
+  .library-invocation-english { font-size: 16px; }
+
+  .about-toggle { top: 16px; right: 0; }
+  .about-panel { top: 56px; right: 0; width: 100%; }
 
   .tag-filters { margin-bottom: 24px; }
 
