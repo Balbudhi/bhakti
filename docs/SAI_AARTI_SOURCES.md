@@ -12,6 +12,11 @@ Primary recording sources:
 - Śej: <https://www.youtube.com/watch?v=hnCeG9OeWCw>
 - Full-cycle duration/order cross-check: <https://www.youtube.com/watch?v=R0wgubFc0f0>
 
+For the exact Wings Music recordings rendered on the song pages, the published
+descriptions credit Pramod Medhi as singer, Milind Mohite as music composer,
+and the lyrics as traditional. This is recording-level composition credit; it
+does not replace the component-level poet notices below.
+
 Component order and wording:
 
 - Shree Saibaba Sansthan Trust ārati directory: <https://sai.org.in/en/aarties>
