@@ -34,6 +34,7 @@ def audit_song(song: Path) -> dict[str, Any]:
     lines = reader.get("SONG_LINES", {})
     sequence = reader.get("SONG_SEQUENCE", [])
     timings = reader.get("SONG_TIMINGS", [])
+    instrumental = {entry.get("ref") for entry in sequence if entry.get("section") == "instrumental"}
     findings: list[str] = []
     if len(sequence) != len(timings):
         findings.append("public sequence/timing length mismatch")
@@ -45,6 +46,8 @@ def audit_song(song: Path) -> dict[str, Any]:
         if isinstance(start, (int, float)):
             previous = start
     for ref, line in lines.items():
+        if ref in instrumental:
+            continue
         if not str(line.get("source") or "").strip():
             findings.append(f"{ref} lacks source script")
         if not str(line.get("roman") or "").strip():

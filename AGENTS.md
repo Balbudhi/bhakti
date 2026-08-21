@@ -1,9 +1,9 @@
-# Bhakti reader contract
+# Bhakti song-page contract
 
 This repository is a public static song library deployed at
 `https://bhakti.eeshan.xyz`. Its source/deployment repository is not a public
 product URL. Do not expose review packets, local paths, extraction notes, or
-generic provenance filler on a reader page.
+generic provenance filler on a song page page.
 
 ## One-command production pipeline
 
@@ -45,7 +45,7 @@ The pipeline preserves audio-only source input, then performs distinct stages:
 5. semantic frames plus English derived from those glosses only, with agency,
    imagery, completeness, alternatives, and unsupported additions checked;
 6. an independent adversarial translation review that cannot rewrite; and
-7. deterministic `data.js`, reader HTML, and catalogue generation.
+7. deterministic `data.js`, song-page HTML, and catalogue generation.
 
 Song concurrency and API concurrency are separate. The default seven song
 workers keep local intake, FFmpeg, validation, and generation busy, while the
@@ -86,14 +86,14 @@ or the fidelity record reports changed agency, lost imagery, omitted meaning,
 or unsupported additions. A supplied human translation is copied exactly and
 any suspected conflict is queued for review rather than silently rewritten.
 
-For an existing reader whose wording needs review but whose audio must not be
+For an existing song page whose wording needs review but whose audio must not be
 rerun, use `python3 scripts/audit_translation_style.py all --workers 2`. It
 audits the current English against the reviewed public glosses in cached text
 batches and does **not** overwrite public translations. Every proposed change
 must be reviewed before it is applied. Use `retranslate_bhakti.py` only when
 the word glosses themselves also require a fresh independent reconstruction.
 
-## Reader schema and content rules
+## Song-page schema and content rules
 
 Generated `data.js` must define `SONG_META`, `SONG_LINES`, `SONG_SEQUENCE`,
 and `SONG_TIMINGS`. Every lyric line has source script → IAST → literal English
@@ -135,11 +135,11 @@ term. Do not import Vedanta's grammar cards or full expositions into song pages.
 ## Release checks
 
 - Run `python3 scripts/audit_bhakti_contract.py`, `python3 -m py_compile
-  scripts/*.py`, and `git diff --check`. Existing migration-needed readers are
+  scripts/*.py`, and `git diff --check`. Existing migration-needed song pages are
   an explicit content task, never an excuse to omit required fields from a new
   song.
 - Use only the Codex in-app Browser for desktop and 390px mobile visual checks.
   Do not use Chrome, Zen, external extensions, Playwright CLI/MCP, or a global
-  tool removal. Test the exact first-syllable seek for every reader line.
+  tool removal. Test the exact first-syllable seek for every song page line.
 - Stage exact paths only; inspect the staged diff; commit and push only your
   own scoped files. GitHub Pages deploys `main` automatically.
