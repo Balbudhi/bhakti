@@ -59,9 +59,9 @@ html, body {
 #songShare,
 #songSync {
   position: fixed;
-  /* Keep these comfortably below the rounded top edge on an iPhone rather
-     than pinning them to the very top of the viewport. */
-  top: max(24px, calc(16px + env(safe-area-inset-top)));
+  /* Align with the top safe area itself, rather than adding a second inset
+     that visibly pushes these controls too far down on an iPhone. */
+  top: max(10px, env(safe-area-inset-top));
   width: 34px;
   height: 34px;
   display: inline-flex;
@@ -258,6 +258,27 @@ html, body {
   color: var(--kh-ink);
   text-underline-offset: 2px;
 }
+.edition-switch {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--kh-rule);
+  border-radius: 999px;
+}
+.edition-choice {
+  min-height: 30px;
+  padding: 6px 10px;
+  border: 0;
+  border-right: 1px solid var(--kh-rule);
+  color: var(--kh-ink-soft);
+  background: var(--kh-bg);
+  font: 500 10px/1.2 Inter, sans-serif;
+  letter-spacing: 0.035em;
+  cursor: pointer;
+}
+.edition-choice:last-child { border-right: 0; }
+.edition-choice[aria-pressed="true"] { color: var(--kh-ink); background: rgba(244, 234, 208, 0.10); }
+.edition-choice:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: -2px; }
 
 /* ---------- Source notices for composite liturgies ---------- */
 .source-notice {
@@ -569,7 +590,7 @@ html, body {
   .song-home { width: 36px; height: 36px; }
   #songShare,
   #songSync {
-    top: max(22px, calc(14px + env(safe-area-inset-top)));
+    top: max(10px, env(safe-area-inset-top));
     width: 36px;
     height: 36px;
   }
