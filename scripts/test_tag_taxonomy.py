@@ -41,6 +41,10 @@ class TagTaxonomyTests(unittest.TestCase):
         )
         self.assertEqual(merged, ["Śāradā Devī", "Śakti"])
 
+    def test_hanuman_names_are_recognized(self) -> None:
+        inferred = tags.infer_named_subject_tags([{"roman": "pavanaputra hanumāna saṅkaṭa harana"}])
+        self.assertIn("Hanumān", inferred)
+
 
 if __name__ == "__main__":
     unittest.main()

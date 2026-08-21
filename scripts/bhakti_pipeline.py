@@ -107,6 +107,15 @@ def embedded_audio_metadata(path: Path) -> dict[str, Any]:
     return {str(key).casefold(): value for key, value in tags.items() if value not in (None, "")}
 
 
+def source_credit_override(metadata: dict[str, Any]) -> dict[str, Any]:
+    registry_path = ROOT / "data" / "source_credits.json"
+    if not registry_path.is_file():
+        return {}
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    value = registry.get("sources", {}).get(str(metadata.get("id") or ""), {})
+    return value if isinstance(value, dict) else {}
+
+
 def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
     jobs: list[dict[str, Any]] = []
     for spec in options.song:
@@ -115,7 +124,10 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
         slug, source = spec.split("=", 1)
         jobs.append({"slug": slug.strip(), "source": source.strip()})
     for url in getattr(options, "url", []):
-        resolved = ytmusic.resolve_reference(url) if is_youtube_or_query(url) else None
+        supplied_id = ytmusic.extract_video_id(url)
+        supplied_override = source_credit_override({"id": supplied_id}) if supplied_id else {}
+        keep_original = bool(supplied_override.get("keepOriginal"))
+        resolved = ytmusic.resolve_reference(url) if is_youtube_or_query(url) and not keep_original else None
         source_value = resolved["resolved_url"] if resolved else url
         metadata = json.loads(subprocess.run(
             ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", source_value],
@@ -127,13 +139,23 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
             if match:
                 fields[match.group(1).strip().casefold()] = match.group(2).strip()
         raw_title = str(metadata.get("title") or metadata.get("id") or "song")
-        title = fields.get("song") or re.sub(r"\s+with lyrics\b.*$", "", raw_title.split("|")[0], flags=re.I).strip()
+        override = supplied_override or source_credit_override(metadata)
+        title = (override.get("title") or fields.get("song")
+                 or re.sub(r"\s+with lyrics\b.*$", "", raw_title.split("|")[0], flags=re.I).strip())
+        source_artist = str(metadata.get("uploader") or metadata.get("channel") or "").strip()
+        title_artist = source_artist if (source_artist and naming.compact(source_artist) in naming.compact(raw_title)) else ""
+        writer = (override.get("writer") or fields.get("lyricist") or fields.get("lyrics")
+                  or fields.get("poet") or fields.get("author") or fields.get("written by") or "")
+        singer = (override.get("singer") or fields.get("artist") or fields.get("singer")
+                  or fields.get("sung by") or fields.get("vocalist") or title_artist)
+        composer = (override.get("composer") or fields.get("music director") or fields.get("composer")
+                    or fields.get("composed") or fields.get("music") or "")
         jobs.append({"slug": naming.slugify(title), "source": metadata.get("webpage_url") or source_value,
                      "title": title, "subtitle": fields.get("album", ""),
-                     "writer": fields.get("lyricist", ""),
-                     "singer": fields.get("artist") or fields.get("singer", ""),
-                     "composer": fields.get("music director") or fields.get("composer", ""),
-                     "searchAliases": [raw_title], "_source_metadata": metadata,
+                     "writer": writer, "singer": singer, "composer": composer,
+                     "languages": list(override.get("languages") or []),
+                     "subjectTags": list(override.get("subjectTags") or []),
+                     "searchAliases": [raw_title, *(override.get("searchAliases") or [])], "_source_metadata": metadata,
                      "_source_resolution": resolved})
     if options.batch:
         raw = json.loads(options.batch.read_text(encoding="utf-8"))
@@ -1732,7 +1754,8 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
 
 
 def language_code(language: str) -> str:
-    return {"Hindi": "hi", "Sanskrit": "sa", "Punjabi": "pa", "Kannada": "kn", "Marathi": "mr"}.get(language, "")
+    return {"Hindi": "hi", "Sanskrit": "sa", "Punjabi": "pa", "Kannada": "kn", "Marathi": "mr",
+            "Braj": "bra"}.get(language, "")
 
 
 def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:

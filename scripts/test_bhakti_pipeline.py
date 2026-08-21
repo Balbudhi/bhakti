@@ -20,11 +20,13 @@ class PipelineTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.original_root = pipeline.ROOT
         registry = (self.original_root / "data" / "preserved_terms.json").read_text(encoding="utf-8")
+        source_credits = (self.original_root / "data" / "source_credits.json").read_text(encoding="utf-8")
         pipeline.ROOT = self.root
         (self.root / "songs").mkdir()
         (self.root / "data").mkdir()
         (self.root / "data" / "songs.js").write_text("window.BHAKTI_SONGS = [];\n", encoding="utf-8")
         (self.root / "data" / "preserved_terms.json").write_text(registry, encoding="utf-8")
+        (self.root / "data" / "source_credits.json").write_text(source_credits, encoding="utf-8")
 
     def tearDown(self) -> None:
         pipeline.ROOT = self.original_root
@@ -300,6 +302,13 @@ class PipelineTests(unittest.TestCase):
         options = type("Options", (), {"song": [], "batch": manifest})()
         with self.assertRaisesRegex(SystemExit, "searchAliases.*list of strings"):
             pipeline.normalise_jobs(options)
+
+    def test_source_credit_override_is_evidence_backed(self) -> None:
+        value = pipeline.source_credit_override({"id": "aLWFJaF9HsU"})
+        self.assertEqual(value["writer"], "Tulsīdās")
+        self.assertEqual(value["singer"], "Sarita Joshi")
+        self.assertEqual(value["subjectTags"], ["Hanumān"])
+        self.assertTrue(value["keepOriginal"])
 
     def test_preflight_blocks_when_shared_openrouter_credits_are_exhausted(self) -> None:
         options = type("Options", (), {"generate_only": False, "timeout": 300.0})()
