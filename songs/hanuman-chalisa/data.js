@@ -25,6 +25,13 @@ window.SONG_META = {
     "Sharada Devi",
     "Sarada Devi"
   ],
+  "editionNote": {
+    "title": "Text note",
+    "summary": "This page follows the wording sung in Hari Om Sharan’s recording; a critical edition prints four alternate readings.",
+    "detail": "Prāmāṇik Hanumān Cālīsā, edited by Jagadguru Rāmānandācārya Svāmī Rāmabhadrācārya, prints: शंकर स्वयं केसरीनंदन; सब पर राम राय सिरताजा; सादर रहउ रघुपति के दासा; यह शत बार पाठ कर जोई. The official Mahāvīrī materials also vary in two of these forms, so the alternatives are shown for comparison and do not replace the recording’s sung text.",
+    "sourceLabel": "Official critical-edition PDF",
+    "sourceUrl": "https://jagadgururambhadracharya.org/wp-content/uploads/2016/10/hanuman-chalisa.pdf"
+  },
   "audioSources": [
     {
       "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-chalisa.m4a",
