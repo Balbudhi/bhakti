@@ -2310,10 +2310,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 28.99,
-    "end": 35
+    "end": 35.0
   },
   {
-    "start": 35,
+    "start": 35.0,
     "end": 39.19
   },
   {
@@ -2390,10 +2390,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 165.625,
-    "end": 169
+    "end": 169.0
   },
   {
-    "start": 169,
+    "start": 169.0,
     "end": 175.41
   },
   {
@@ -2522,10 +2522,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 385.75,
-    "end": 392
+    "end": 392.0
   },
   {
-    "start": 392,
+    "start": 392.0,
     "end": 395.75
   },
   {

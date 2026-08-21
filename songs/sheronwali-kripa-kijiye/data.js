@@ -8239,7 +8239,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0,
+    "start": 0.0,
     "end": 18.5
   },
   {
@@ -8532,10 +8532,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 538.6,
-    "end": 546
+    "end": 546.0
   },
   {
-    "start": 546,
+    "start": 546.0,
     "end": 550.5
   },
   {
@@ -8664,10 +8664,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 696.05,
-    "end": 701
+    "end": 701.0
   },
   {
-    "start": 701,
+    "start": 701.0,
     "end": 703.66
   },
   {
@@ -8676,10 +8676,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 708.5,
-    "end": 711
+    "end": 711.0
   },
   {
-    "start": 711,
+    "start": 711.0,
     "end": 715.7
   },
   {
