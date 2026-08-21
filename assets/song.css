@@ -52,6 +52,76 @@ html, body {
 .song-home:active { transform: scale(0.94); }
 .song-home:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 3px; }
 
+/* ---------- Fixed top controls ----------
+   These are deliberately quiet counterparts to the integrated bottom player:
+   share remains available in standalone/PWA mode, while the link control makes
+   the active auto-scroll state legible without adding a persistent text label. */
+#songShare,
+#songSync {
+  position: fixed;
+  top: max(18px, calc(10px + env(safe-area-inset-top)));
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid var(--kh-ink-mid);
+  border-radius: 50%;
+  color: var(--kh-ink);
+  background: var(--kh-bg); /* fallback for older standalone Safari */
+  background: color-mix(in srgb, var(--kh-bg) 88%, transparent);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, transform 120ms ease;
+  z-index: 45;
+}
+#songSync { left: max(18px, calc(10px + env(safe-area-inset-left))); }
+#songShare { right: max(18px, calc(10px + env(safe-area-inset-right))); }
+#songShare:hover,
+#songSync:hover,
+#songSync[aria-pressed="true"] {
+  border-color: rgba(244, 234, 208, 0.58);
+  background: rgba(244, 234, 208, 0.10);
+}
+#songShare:active,
+#songSync:active { transform: scale(0.94); }
+#songShare:focus-visible,
+#songSync:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 3px; }
+#songShare svg,
+#songSync svg { width: 18px; height: 18px; }
+
+/* The off state is an intentional visual distinction, not a disabled control:
+   playback continues, but it no longer moves the reading position. */
+#songSync[aria-pressed="false"] {
+  color: var(--kh-ink-soft);
+  border-style: dashed;
+}
+
+/* A quiet confirmation, deliberately adjacent to Share rather than a modal or
+   screen-wide banner. It exists only after a desktop copy attempt. */
+.song-control-status {
+  position: fixed;
+  top: max(62px, calc(50px + env(safe-area-inset-top)));
+  right: max(16px, calc(10px + env(safe-area-inset-right)));
+  z-index: 46;
+  margin: 0;
+  padding: 6px 10px;
+  border: 1px solid var(--kh-rule);
+  border-radius: 999px;
+  color: var(--kh-ink);
+  background: var(--kh-bg);
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  line-height: 1.2;
+  pointer-events: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
 /* ---------- Hint inside the hero, above the divider ---------- */
 .song-hint {
   margin: 22px 0 0;
@@ -446,6 +516,18 @@ html, body {
   }
   .ap-btn { width: 36px; height: 36px; }
   .song-home { width: 36px; height: 36px; }
+  #songShare,
+  #songSync {
+    top: max(14px, calc(8px + env(safe-area-inset-top)));
+    width: 40px;
+    height: 40px;
+  }
+  #songSync { left: max(14px, calc(8px + env(safe-area-inset-left))); }
+  #songShare { right: max(14px, calc(8px + env(safe-area-inset-right))); }
+  .song-control-status {
+    top: max(60px, calc(48px + env(safe-area-inset-top)));
+    right: max(12px, calc(8px + env(safe-area-inset-right)));
+  }
   .ap-time { font-size: 14px; min-width: 74px; }
 }
 
@@ -459,4 +541,67 @@ html, body {
   .line .word-link { padding: 2px 3px; margin: 0 -3px; }
   .line .word-link:hover { background: transparent; }
   .line .word-link.is-hi { background: rgba(244, 234, 208, 0.18); }
+}
+
+/* ---------- Tablet / iPad ----------
+   This range intentionally avoids a desktop-like narrow column on an iPad.
+   Larger type and controls preserve the reading-first feel at arm's length. */
+@media (min-width: 721px) and (max-width: 1100px) {
+  .song-page {
+    max-width: 860px;
+    padding: 78px 48px calc(174px + env(safe-area-inset-bottom));
+  }
+  .song-title { font-size: 60px; }
+  .song-hero { margin-bottom: 66px; }
+  .line { margin-bottom: 42px; padding: 8px 66px 8px 20px; margin-left: -20px; margin-right: -20px; }
+  .line-seek { top: 11px; right: 14px; width: 38px; height: 38px; }
+  .line-source { font-size: 28px; }
+  .line-roman { font-size: 29px; }
+  .line-english { font-size: 25px; }
+  .ap-btn,
+  .song-home,
+  #songShare,
+  #songSync { width: 42px; height: 42px; }
+}
+
+/* ---------- Monitor / television ----------
+   A large display needs a wider, deliberately scaled reading column rather
+   than browser zoom. The values use viewport width only as a gentle scaling
+   input and stop before long poetic lines become hard to scan. */
+@media (min-width: 1101px) {
+  .song-page {
+    max-width: min(1040px, calc(100vw - 160px));
+    padding: 104px 58px 188px;
+  }
+  .song-title {
+    font-size: clamp(60px, 4vw, 88px);
+    margin-bottom: 24px;
+  }
+  .song-hero { margin-bottom: 84px; padding-bottom: 46px; }
+  .song-hint { font-size: clamp(16px, 1.15vw, 20px); margin-top: 28px; }
+  .song-credit-entry dd { font-size: clamp(19px, 1.3vw, 23px); }
+  .song-tag { font-size: 10px; padding: 7px 11px; }
+  .line {
+    margin-bottom: clamp(42px, 4vh, 62px);
+    padding: 10px 80px 10px 24px;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  .line-seek { top: 13px; right: 16px; width: 40px; height: 40px; }
+  .line-source { font-size: clamp(28px, 1.85vw, 40px); line-height: 1.32; }
+  .line-roman { font-size: clamp(30px, 2vw, 43px); line-height: 1.46; margin-bottom: 12px; }
+  .line-english { font-size: clamp(26px, 1.7vw, 36px); line-height: 1.5; }
+  .rep { font-size: clamp(17px, 1.15vw, 22px); }
+  .source-notice { margin-top: 82px; }
+  .source-notice h2 { font-size: clamp(27px, 1.75vw, 37px); }
+  .source-notice-poet { font-size: clamp(18px, 1.2vw, 23px); }
+  .source-notice-detail { font-size: clamp(12px, 0.9vw, 15px); }
+  .audio-player { min-height: 72px; padding: 18px 42px calc(30px + env(safe-area-inset-bottom)); }
+  .ap-btn,
+  .song-home,
+  #songShare,
+  #songSync { width: 42px; height: 42px; }
+  .ap-time { font-size: 19px; min-width: 100px; }
+  #songSync { left: max(30px, calc(18px + env(safe-area-inset-left))); }
+  #songShare { right: max(30px, calc(18px + env(safe-area-inset-right))); }
 }
