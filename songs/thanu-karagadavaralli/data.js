@@ -52,7 +52,35 @@ window.SONG_LINES = {
       }
     ],
     "source": "ತನು ಕರಗದವರಲ್ಲಿ ಮಜ್ಜನವನೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ತನು",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ಕರಗದವರಲ್ಲಿ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ಮಜ್ಜನವನೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "mana": {
     "roman": "Mana karagadavaralli puṣpavanolleyayyā nīnu",
@@ -84,7 +112,35 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಮನ ಕರಗದವರಲ್ಲಿ ಪುಷ್ಪವನೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಮನ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ಕರಗದವರಲ್ಲಿ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ಪುಷ್ಪವನೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "haduli": {
     "roman": "Haḍuligaralladavaralli gandhākṣateyanolleyayyā nīnu",
@@ -112,7 +168,29 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಹಡುಲಿಗರಲ್ಲದವರಲ್ಲಿ ಗಂಧಾಕ್ಷತೆಯನೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಹಡುಲಿಗರಲ್ಲದವರಲ್ಲಿ",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "ಗಂಧಾಕ್ಷತೆಯನೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "arivu": {
     "roman": "Arivu kaṇtereyadavaralli āratiyanolleyayyā nīnu",
@@ -144,7 +222,35 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಅರಿವು ಕಣ್ತೆರೆಯದವರಲ್ಲಿ ಆರತಿಯನೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಅರಿವು",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ಕಣ್ತೆರೆಯದವರಲ್ಲಿ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ಆರತಿಯನೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "bhava": {
     "roman": "Bhāvaśuddhavilladavaralli dhūpavanolleyayyā nīnu",
@@ -176,7 +282,30 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಭಾವಶುದ್ಧವಿಲ್ಲದವರಲ್ಲಿ ಧೂಪವನೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಭಾವಶುದ್ಧವಿಲ್ಲದವರಲ್ಲಿ",
+        "wordIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ಧೂಪವನೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "parinami": {
     "roman": "Pariṇāmigalalladavaralli naivēdyavanolleyayyā nīnu",
@@ -204,7 +333,29 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಪರಿಣಾಮಿಗಳಲ್ಲದವರಲ್ಲಿ ನೈವೇದ್ಯವನೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಪರಿಣಾಮಿಗಳಲ್ಲದವರಲ್ಲಿ",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "ನೈವೇದ್ಯವನೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "trikarana": {
     "roman": "Trikaraṇaśuddhavilladavaralli tāmbūlavanolleyayyā nīnu",
@@ -236,7 +387,30 @@ window.SONG_LINES = {
       }
     ],
     "source": "ತ್ರಿಕರಣಶುದ್ಧವಿಲ್ಲದವರಲ್ಲಿ ತಾಂಬೂಲವನೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ತ್ರಿಕರಣಶುದ್ಧವಿಲ್ಲದವರಲ್ಲಿ",
+        "wordIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ತಾಂಬೂಲವನೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "hrudaya": {
     "roman": "Hṛdayakamala araḷadavaralli iralolleyayyā nīnu",
@@ -268,7 +442,35 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಹೃದಯಕಮಲ ಅರಳದವರಲ್ಲಿ ಇರಲೊಲ್ಲೆಯಯ್ಯಾ ನೀನು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಹೃದಯಕಮಲ",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "ಅರಳದವರಲ್ಲಿ",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ಇರಲೊಲ್ಲೆಯಯ್ಯಾ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ನೀನು",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "ennalli": {
     "roman": "Ennalli ēnu uṇṭendu",
@@ -288,7 +490,27 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಎನ್ನಲ್ಲಿ ಏನು ಉಂಟೆಂದು",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಎನ್ನಲ್ಲಿ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ಏನು",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ಉಂಟೆಂದು",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "karasthala": {
     "roman": "Karasthalavanimbugoṇḍe",
@@ -308,7 +530,17 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಕರಸ್ಥಲವನಿಂಬುಗೊಂಡೆ",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಕರಸ್ಥಲವನಿಂಬುಗೊಂಡೆ",
+        "wordIndices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ]
   },
   "chennamalli": {
     "roman": "Hēḷā Chennamallikārjunayyā",
@@ -324,7 +556,21 @@ window.SONG_LINES = {
       }
     ],
     "source": "ಹೇಳಾ ಚೆನ್ನಮಲ್ಲಿಕಾರ್ಜುನಯ್ಯಾ",
-    "sourceLanguage": "kn"
+    "sourceLanguage": "kn",
+    "sourceWords": [
+      {
+        "text": "ಹೇಳಾ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ಚೆನ್ನಮಲ್ಲಿಕಾರ್ಜುನಯ್ಯಾ",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   }
 };
 
@@ -428,18 +674,18 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 211.1,
-    "end": 231.0
+    "end": 231
   },
   {
-    "start": 231.0,
+    "start": 231,
     "end": 246.9
   },
   {
     "start": 246.9,
-    "end": 289.0
+    "end": 289
   },
   {
-    "start": 289.0,
+    "start": 289,
     "end": 308.6
   },
   {

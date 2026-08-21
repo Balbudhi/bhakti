@@ -94,7 +94,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'mo' is a shortened colloquial genitive pronoun for 'mora'. 'sajāi' is a conjunctive participle dependent on the finite verb 'basichi' (1st person present perfect/continuous). 'āsiba' is 2nd/3rd person future with honorific implied subject."
+    "grammarNote": "'mo' is a shortened colloquial genitive pronoun for 'mora'. 'sajāi' is a conjunctive participle dependent on the finite verb 'basichi' (1st person present perfect/continuous). 'āsiba' is 2nd/3rd person future with honorific implied subject.",
+    "sourceWords": [
+      {
+        "text": "ଭଙ୍ଗା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କୁଡ଼ିଆ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ସଜାଇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ବସିଛି",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଆସିବ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "କି",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ଦ୍ୱାରେ",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "jhariba-tumara-krupara": {
     "source": "ଝରିବ ତୁମର କୃପାର ବରଷା",
@@ -127,7 +183,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jhariba' is a 3rd person singular/plural future verb agreeing with the noun 'baraṣā'. 'baraṣā' is a Tadbhava form of Sanskrit 'varṣā'."
+    "grammarNote": "'jhariba' is a 3rd person singular/plural future verb agreeing with the noun 'baraṣā'. 'baraṣā' is a Tadbhava form of Sanskrit 'varṣā'.",
+    "sourceWords": [
+      {
+        "text": "ଝରିବ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ତୁମର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କୃପାର",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ବରଷା",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "jhariba-mo-hruda-agana": {
     "source": "ଝରିବ ତୁମର କୃପାର ବରଷା ମୋ ହୃଦ ଅଗଣା ପରେ",
@@ -184,7 +266,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'hr̥da agaṇā' functions as a Tatpuruṣa or Karmadhāraya compound ('heart-courtyard'). 'pare' is a locative postposition governing 'agaṇā'."
+    "grammarNote": "'hr̥da agaṇā' functions as a Tatpuruṣa or Karmadhāraya compound ('heart-courtyard'). 'pare' is a locative postposition governing 'agaṇā'.",
+    "sourceWords": [
+      {
+        "text": "ଝରିବ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ତୁମର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କୃପାର",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ବରଷା",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ହୃଦ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ଅଗଣା",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ପରେ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "niti-sakalaru-sanja": {
     "source": "ନିତି ସକାଳରୁ ସଞ୍ଜ ଯାଏଁ ମୁଁ ଯେ ଖୋଲି ରଖିଥାଏ କୁଡ଼ିଆର ଦ୍ୱାର",
@@ -253,7 +385,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sakāḷaru' carries the ablative marker '-ru'. 'rakhithāē' is 1st person singular habitual/continuous present aspect formed from auxiliary 'thāē'."
+    "grammarNote": "'sakāḷaru' carries the ablative marker '-ru'. 'rakhithāē' is 1st person singular habitual/continuous present aspect formed from auxiliary 'thāē'.",
+    "sourceWords": [
+      {
+        "text": "ନିତି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ସକାଳରୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ସଞ୍ଜ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଯାଏଁ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ଖୋଲି",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ରଖିଥାଏ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "କୁଡ଼ିଆର",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ଦ୍ୱାର",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "tamari-ananta-pratikshyare": {
     "source": "ତମରି ଅନନ୍ତ ପ୍ରତୀକ୍ଷାରେ ସାଈ",
@@ -286,7 +480,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tamari' contains the emphatic clitic '-i' attached to the genitive stem 'tamara'. 'pratīkṣāre' takes the locative case suffix '-re'. 'sāī' is in the vocative case."
+    "grammarNote": "'tamari' contains the emphatic clitic '-i' attached to the genitive stem 'tamara'. 'pratīkṣāre' takes the locative case suffix '-re'. 'sāī' is in the vocative case.",
+    "sourceWords": [
+      {
+        "text": "ତମରି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଅନନ୍ତ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ପ୍ରତୀକ୍ଷାରେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ସାଈ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "karuna-heba-ki-bare": {
     "source": "କରୁଣା ହେବ କି ବାରେ",
@@ -319,7 +539,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'heba' is 3rd person future of 'hebā' (to be/become). 'bāre' is derived from Sanskrit 'vāra' (turn/time) functioning adverbially as 'once'."
+    "grammarNote": "'heba' is 3rd person future of 'hebā' (to be/become). 'bāre' is derived from Sanskrit 'vāra' (turn/time) functioning adverbially as 'once'.",
+    "sourceWords": [
+      {
+        "text": "କରୁଣା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ହେବ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ବାରେ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "chita-katidei-muruja": {
     "source": "ଚିତା କାଟିଦେଇ ମୁରୁଜ ପକାଇ ଝୋଟି ପାରିଦେଇ ଗୋବର ଲିପାଇ",
@@ -376,7 +622,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A string of conjunctive participles ('kāṭidei', 'pakāi', 'pāridei', 'lipāi') indicating sequential preparatory actions. 'kāṭidei' and 'pāridei' employ the vector verb 'debā' (to give) marking completed action."
+    "grammarNote": "A string of conjunctive participles ('kāṭidei', 'pakāi', 'pāridei', 'lipāi') indicating sequential preparatory actions. 'kāṭidei' and 'pāridei' employ the vector verb 'debā' (to give) marking completed action.",
+    "sourceWords": [
+      {
+        "text": "ଚିତା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କାଟିଦେଇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୁରୁଜ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ପକାଇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଝୋଟି",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ପାରିଦେଇ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ଗୋବର",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ଲିପାଇ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "mana-sapha-kari": {
     "source": "ମନ ସଫା କରି ହୃଦୟ ରଙ୍ଗାଇ",
@@ -415,7 +711,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'saphā kari' is a conjunct verb with the participle 'kari'. 'raṅgāi' is a conjunctive participle of the causative/denominative verb 'raṅgāibā' (to dye/color)."
+    "grammarNote": "'saphā kari' is a conjunct verb with the participle 'kari'. 'raṅgāi' is a conjunctive participle of the causative/denominative verb 'raṅgāibā' (to dye/color).",
+    "sourceWords": [
+      {
+        "text": "ମନ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ସଫା",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କରି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ହୃଦୟ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ରଙ୍ଗାଇ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "chahi-rahichi-adhire": {
     "source": "ଚାହିଁ ରହିଛି ଅଧୀରେ",
@@ -442,7 +770,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'cāhī̃ rahichi' is a compound continuous verb construction (participle + 'rahibā' in 1st person present perfect/continuous). 'adhīre' is an adverbialized locative form."
+    "grammarNote": "'cāhī̃ rahichi' is a compound continuous verb construction (participle + 'rahibā' in 1st person present perfect/continuous). 'adhīre' is an adverbialized locative form.",
+    "sourceWords": [
+      {
+        "text": "ଚାହିଁ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ରହିଛି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଅଧୀରେ",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "lodena-kichhi-mu": {
     "source": "ଲୋଡ଼େନା କିଛି ମୁଁ ତୁମ ଛଡ଼ା ସାଈ ଧନ ବା ଦରବ ସିଦ୍ଧି ବା ମୁକତି",
@@ -523,7 +871,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'loṛenā' is a fused negative present form (1st person 'loṛē' + negative particle 'nā'). 'daraba' is a Tadbhava form of Sanskrit 'dravya'. 'mukati' is a Tadbhava form of Sanskrit 'mukti'."
+    "grammarNote": "'loṛenā' is a fused negative present form (1st person 'loṛē' + negative particle 'nā'). 'daraba' is a Tadbhava form of Sanskrit 'dravya'. 'mukati' is a Tadbhava form of Sanskrit 'mukti'.",
+    "sourceWords": [
+      {
+        "text": "ଲୋଡ଼େନା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କିଛି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଛଡ଼ା",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ସାଈ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ଧନ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ବା",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ଦରବ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ସିଦ୍ଧି",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ବା",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ମୁକତି",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "mo-prana-khojai": {
     "source": "ମୋ ପ୍ରାଣ ଖୋଜଇ ଚରଣ ତୁମର",
@@ -562,7 +984,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'prāṇa' functions as the singular grammatical subject of the 3rd person verb 'khojai'."
+    "grammarNote": "'prāṇa' functions as the singular grammatical subject of the 3rd person verb 'khojai'.",
+    "sourceWords": [
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ପ୍ରାଣ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଖୋଜଇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଚରଣ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତୁମର",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "gati-mora-tuma-thare": {
     "source": "ଗତି ମୋର ତୁମ ଠାରେ",
@@ -595,7 +1049,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal sentence with omitted copula. 'ṭhāre' is an Odia locative postposition following the oblique pronoun 'tuma'."
+    "grammarNote": "Nominal sentence with omitted copula. 'ṭhāre' is an Odia locative postposition following the oblique pronoun 'tuma'.",
+    "sourceWords": [
+      {
+        "text": "ଗତି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଠାରେ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "asiba-ki-mora-dware": {
     "source": "ଆସିବ କି ମୋର ଦ୍ୱାରେ",
@@ -628,7 +1108,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Shortened refrain clause; 'āsiba' is 2nd/3rd person future; 'dvāre' is locative singular."
+    "grammarNote": "Shortened refrain clause; 'āsiba' is 2nd/3rd person future; 'dvāre' is locative singular.",
+    "sourceWords": [
+      {
+        "text": "ଆସିବ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଦ୍ୱାରେ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   }
 };
 

@@ -88,7 +88,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Tharaku thara' is a reduplicative adverbial expression for 'repeatedly'. 'Adhiā paḍuchi' combines the noun/adverbial 'adhiā' with the present continuous auxiliary 'paḍuchi'. 'Gurubārē' is in the locative case. 'Kara' is a direct imperative."
+    "grammarNote": "'Tharaku thara' is a reduplicative adverbial expression for 'repeatedly'. 'Adhiā paḍuchi' combines the noun/adverbial 'adhiā' with the present continuous auxiliary 'paḍuchi'. 'Gurubārē' is in the locative case. 'Kara' is a direct imperative.",
+    "sourceWords": [
+      {
+        "text": "ଥରକୁ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଥର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତୁଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଅଧିଆ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତଡ଼ୁଛି",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଗୁରୁବାରେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "କୃପା",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "refrain-2": {
     "source": "ଗୋଳାଗି ଲାଗେ ତୁଁ ଚରଣେ ତୁମରି ସାଇ ମୋତେ ରକ୍ଷା କର",
@@ -151,7 +201,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Gōḷāgi lāgē' functions as a compound verbal predicate of humble salutation. 'Tumari' has the emphatic suffix '-ri' on the second-person genitive base 'tuma'."
+    "grammarNote": "'Gōḷāgi lāgē' functions as a compound verbal predicate of humble salutation. 'Tumari' has the emphatic suffix '-ri' on the second-person genitive base 'tuma'.",
+    "sourceWords": [
+      {
+        "text": "ଗୋଳାଗି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଲାଗେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତୁଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଚରଣେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତୁମରି",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ସାଇ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ମୋତେ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ରକ୍ଷା",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "verse-1-line-1": {
     "source": "କେତେ ଜନମର ପାପ ଯେ ମୋହର ଏବେ ବି ସରିନି ପରା",
@@ -214,7 +320,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Sarini' is the contracted negative perfective form of root 'sari-' (to finish/exhaust) with negative marker '-ni'. 'Janamara' is the Odia tadbhava genitive of Sanskrit 'janman'."
+    "grammarNote": "'Sarini' is the contracted negative perfective form of root 'sari-' (to finish/exhaust) with negative marker '-ni'. 'Janamara' is the Odia tadbhava genitive of Sanskrit 'janman'.",
+    "sourceWords": [
+      {
+        "text": "କେତେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଜନମର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ପାପ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ମୋହର",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଏବେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ବି",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ସରିନି",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ପରା",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "verse-1-line-2": {
     "source": "ସବୁ ଜନମର ପାପ କାଟ ତୁମେ ନିଅ ମୋର ସାଗର ପାର",
@@ -277,7 +439,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Kāṭā' is used here as an imperative form parallel to standard 'kāṭa'. 'Nia ... pāra' is a split verbal phrase equivalent to 'pāra nia' (take across)."
+    "grammarNote": "'Kāṭā' is used here as an imperative form parallel to standard 'kāṭa'. 'Nia ... pāra' is a split verbal phrase equivalent to 'pāra nia' (take across).",
+    "sourceWords": [
+      {
+        "text": "ସବୁ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଜନମର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ପାପ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କାଟ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ନିଅ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ସାଗର",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ପାର",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "verse-2-line-1": {
     "source": "ନ ହେଲେ ନାହିଁ ଫୁଲ ତୁମ ପାଦେ ତୁମ ପାଦେ ଧୂଳି ହୋଇ",
@@ -346,7 +564,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Na hēlē nāhiṃ' combines the conditional participle 'hēlē' with dual negation to form a concessive clause. 'Tuma pādē' is repeated across the hemistich for rhetorical emphasis."
+    "grammarNote": "'Na hēlē nāhiṃ' combines the conditional participle 'hēlē' with dual negation to form a concessive clause. 'Tuma pādē' is repeated across the hemistich for rhetorical emphasis.",
+    "sourceWords": [
+      {
+        "text": "ନ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ହେଲେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ନାହିଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଫୁଲ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ପାଦେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ପାଦେ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ଧୂଳି",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ହୋଇ",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "verse-2-line-2": {
     "source": "ପରଶ ତୁମର ପାଉଥିବି ସଦା ତୁମ ସାଥେ ଥିବି ରହି",
@@ -403,7 +683,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Paraŕa' represents Odia 'paraśa' (Sanskrit 'sparśa'). 'Pāuthibi' is first-person singular future continuous tense ('pā-' + '-uthibi'). 'Thibi rahi' is an inverted compound verb ('rahi thibi')."
+    "grammarNote": "'Paraŕa' represents Odia 'paraśa' (Sanskrit 'sparśa'). 'Pāuthibi' is first-person singular future continuous tense ('pā-' + '-uthibi'). 'Thibi rahi' is an inverted compound verb ('rahi thibi').",
+    "sourceWords": [
+      {
+        "text": "ପରଶ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ତୁମର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ପାଉଥିବି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ସଦା",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ସାଥେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ଥିବି",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ରହି",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "verse-3-line-1": {
     "source": "ତୁମ ବଡ଼ଦାଣ୍ଡ ଶିରିଡ଼ି ଗଳିରେ ଅଧିଆ ମୁଁ ପଡ଼ିଥାଏ",
@@ -454,7 +784,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Baḍadāṇḍ' is an uninflected head forming a compound/apposition with 'siriḁi gaḷirē' (in the lane of Shirdi, your grand road). 'Paḍithāē' is 1st/3rd person habitual present of compound verb 'paḍi thibā'."
+    "grammarNote": "'Baḍadāṇḍ' is an uninflected head forming a compound/apposition with 'siriḁi gaḷirē' (in the lane of Shirdi, your grand road). 'Paḍithāē' is 1st/3rd person habitual present of compound verb 'paḍi thibā'.",
+    "sourceWords": [
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ବଡ଼ଦାଣ୍ଡ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଶିରିଡ଼ି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଗଳିରେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଅଧିଆ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ପଡ଼ିଥାଏ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "verse-3-line-2": {
     "source": "ତୁମ ଚରଣର ଧୂଳି ବୋଳି ହୋଇ ପବିତ୍ର ମୁଁ ହୋଇଯାଏ",
@@ -511,7 +885,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Bōḷi hōi' is a reflexive conjunctive participle ('having smeared upon oneself'). 'Hōiyāē' is a compound verb 'hōi yibā' (to become completely)."
+    "grammarNote": "'Bōḷi hōi' is a reflexive conjunctive participle ('having smeared upon oneself'). 'Hōiyāē' is a compound verb 'hōi yibā' (to become completely).",
+    "sourceWords": [
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଚରଣର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଧୂଳି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ବୋଳି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ହୋଇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ପବିତ୍ର",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ହୋଇଯାଏ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "verse-4-line-1": {
     "source": "ଆହେ ଦୀନବନ୍ଧୁ ତୁମ ପରଶରେ ନିମ୍ବ ଯେ ମଧୁର ହେଲା",
@@ -568,7 +992,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Dīnabandhu' is a classic bahuvrīhi epithet (dīna + bandhu) in vocative apposition. 'Paraŕarē' is instrumental/locative in '-rē'. 'Hēlā' is the 3rd person past form of 'hebā'."
+    "grammarNote": "'Dīnabandhu' is a classic bahuvrīhi epithet (dīna + bandhu) in vocative apposition. 'Paraŕarē' is instrumental/locative in '-rē'. 'Hēlā' is the 3rd person past form of 'hebā'.",
+    "sourceWords": [
+      {
+        "text": "ଆହେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଦୀନବନ୍ଧୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ପରଶରେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ନିମ୍ବ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ମଧୁର",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ହେଲା",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "verse-4-line-2": {
     "source": "ପୋଡ଼ା କପାଳ ମୋ ହୀନ ଜନମର ତୁମ କୃପା ନ ମିଳିଲା",
@@ -631,7 +1105,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Pōḍā kapāḷa' acts as an exclamatory/genitive topic ('wretched fate of my lowly birth'). 'Na miḷilā' is standard negative past indicative."
+    "grammarNote": "'Pōḍā kapāḷa' acts as an exclamatory/genitive topic ('wretched fate of my lowly birth'). 'Na miḷilā' is standard negative past indicative.",
+    "sourceWords": [
+      {
+        "text": "ପୋଡ଼ା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କପାଳ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ହୀନ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଜନମର",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "କୃପା",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ନ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ମିଳିଲା",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "verse-5-line-1": {
     "source": "ତୁମରି ସମାଧି ନିକଟେ ଗୁରୁ ହେ ସଭିଏଁ କରନ୍ତି ଆଳି",
@@ -688,7 +1218,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Samādhi' is a preserved Vedantic/devotional term denoting both yogic absorption and the shrine housing the master's physical form. 'Sabhiēṃ' is an all-inclusive collective pronoun with plural verb agreement ('karanti')."
+    "grammarNote": "'Samādhi' is a preserved Vedantic/devotional term denoting both yogic absorption and the shrine housing the master's physical form. 'Sabhiēṃ' is an all-inclusive collective pronoun with plural verb agreement ('karanti').",
+    "sourceWords": [
+      {
+        "text": "ତୁମରି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ସମାଧି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ନିକଟେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ସଭିଏଁ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "କରନ୍ତି",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ଆଳି",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "verse-5-line-2": {
     "source": "ଜୁହାର କରେ ଯେ ଥରୁଟିଏ ତୁମକୁ ସବୁ ପାଏ ସିଏ ଜାଣି",
@@ -751,7 +1331,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Tharuṭiē' incorporates the singular/diminutive definitive suffix '-ṭiē' on 'thara' (time), meaning 'just one single time'. 'Jāṇi' acts as an assertive discourse marker ('as is well known')."
+    "grammarNote": "'Tharuṭiē' incorporates the singular/diminutive definitive suffix '-ṭiē' on 'thara' (time), meaning 'just one single time'. 'Jāṇi' acts as an assertive discourse marker ('as is well known').",
+    "sourceWords": [
+      {
+        "text": "ଜୁହାର",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କରେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଥରୁଟିଏ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତୁମକୁ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ସବୁ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ପାଏ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ସିଏ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ଜାଣି",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "verse-6-line-1": {
     "source": "ସଭିଏଁ ତୁମର ତୁମେ ସଭିଙ୍କର ଅଭୟ ହସ୍ତେ ପାଳିଲ",
@@ -802,7 +1438,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Abhaya hastē' is an instrumental-locative compound. 'Pāḷila' is the 2nd person honorific/familiar simple past form of 'pāḷibā' (to protect/nourish)."
+    "grammarNote": "'Abhaya hastē' is an instrumental-locative compound. 'Pāḷila' is the 2nd person honorific/familiar simple past form of 'pāḷibā' (to protect/nourish).",
+    "sourceWords": [
+      {
+        "text": "ସଭିଏଁ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ତୁମର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ସଭିଙ୍କର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଅଭୟ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ହସ୍ତେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ପାଳିଲ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "verse-6-line-2": {
     "source": "ମୋ ବେଳକୁ କିଆଁ ଏତେ ଟାଣି ଓଟରା କଠୋର ପ୍ରାଣ ହୋଇଲ",
@@ -865,7 +1545,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Mō bēḷaku' contains genitive pronoun 'mō' + noun 'bēḷa' (time) + dative marker '-ku'. 'Ṭāṇi ōṭara' is an echoic verbal compound functioning adverbially/nominally here."
+    "grammarNote": "'Mō bēḷaku' contains genitive pronoun 'mō' + noun 'bēḷa' (time) + dative marker '-ku'. 'Ṭāṇi ōṭara' is an echoic verbal compound functioning adverbially/nominally here.",
+    "sourceWords": [
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ବେଳକୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କିଆଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଏତେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଟାଣି",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଓଟରା",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "କଠୋର",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ପ୍ରାଣ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ହୋଇଲ",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "closing-tag": {
     "source": "ସାଇ ମୋତେ ରକ୍ଷା କର",
@@ -898,7 +1634,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Simple transitive imperative sentence with vocative head."
+    "grammarNote": "Simple transitive imperative sentence with vocative head.",
+    "sourceWords": [
+      {
+        "text": "ସାଇ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମୋତେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ରକ୍ଷା",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   }
 };
 

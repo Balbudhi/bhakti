@@ -45,7 +45,15 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Non-lexical vocable / melodic vocalization."
+    "grammarNote": "Non-lexical vocable / melodic vocalization.",
+    "sourceWords": [
+      {
+        "text": "ଆ...",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "refrain-line-1": {
     "source": "ଜାଣେନା ମୁଁ କିବା ଦେବି",
@@ -78,7 +86,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Jāṇenā combines 1st person singular present 'jāṇe' with negative enclitic 'nā'. 'debi' is 1st person future of debā (to give)."
+    "grammarNote": "Jāṇenā combines 1st person singular present 'jāṇe' with negative enclitic 'nā'. 'debi' is 1st person future of debā (to give).",
+    "sourceWords": [
+      {
+        "text": "ଜାଣେନା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କିବା",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଦେବି",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-line-2": {
     "source": "ତୁମ ଶ୍ରୀଚରଣେ ହେ ଜଗନ୍ନାଥ",
@@ -111,7 +145,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative inflection -e on compound śrī-caraṇa. 'he Jagannātha' is a vocative noun phrase addressing the deity."
+    "grammarNote": "Locative inflection -e on compound śrī-caraṇa. 'he Jagannātha' is a vocative noun phrase addressing the deity.",
+    "sourceWords": [
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଶ୍ରୀଚରଣେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଜଗନ୍ନାଥ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-line-3": {
     "source": "ସବୁକିଛି ମୋର ଯେ ତୁମର",
@@ -144,7 +204,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Zero-copula nominal sentence: subject phrase 'sabukichi mora' + connective/focus particle 'je' + predicate possessive 'tumara'."
+    "grammarNote": "Zero-copula nominal sentence: subject phrase 'sabukichi mora' + connective/focus particle 'je' + predicate possessive 'tumara'.",
+    "sourceWords": [
+      {
+        "text": "ସବୁକିଛି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ତୁମର",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse-1-line-1": {
     "source": "ତୁମେ ମହାସିନ୍ଧୁ ମୁଁ ଯେ ଜଳବିନ୍ଦୁ",
@@ -183,7 +269,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Juxtaposition of two verbless clauses: [Tume mahāsindhu] and [muṁ je jaḷabindu]."
+    "grammarNote": "Juxtaposition of two verbless clauses: [Tume mahāsindhu] and [muṁ je jaḷabindu].",
+    "sourceWords": [
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମହାସିନ୍ଧୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଜଳବିନ୍ଦୁ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse-1-line-2": {
     "source": "ତୁମ ଭିତରେ ହିଁ ମୋ ଜୀବନ ହେ ମହାବାହୁ",
@@ -234,7 +352,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Postpositional locative phrase 'tuma bhitare' + restrictive clitic 'hiṁ'. 'mo' is a shortened colloquial genitive form of 'muṁ'. 'he Mahābāhu' is a vocative epithet of Jagannatha."
+    "grammarNote": "Postpositional locative phrase 'tuma bhitare' + restrictive clitic 'hiṁ'. 'mo' is a shortened colloquial genitive form of 'muṁ'. 'he Mahābāhu' is a vocative epithet of Jagannatha.",
+    "sourceWords": [
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଭିତରେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ହିଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଜୀବନ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ମହାବାହୁ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "verse-2-line-1": {
     "source": "ତୁମ ବଡ଼ଦାଣ୍ଡରେ ନାଚି କାନ୍ଦି ଯାଏ ଯେବେ",
@@ -279,7 +441,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participles 'nāci' and 'kāndi' modify finite motion verb 'jāe'. Subordinating conjunction 'jebe' introduces the clause."
+    "grammarNote": "Conjunctive participles 'nāci' and 'kāndi' modify finite motion verb 'jāe'. Subordinating conjunction 'jebe' introduces the clause.",
+    "sourceWords": [
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ବଡ଼ଦାଣ୍ଡରେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ନାଚି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କାନ୍ଦି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଯାଏ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଯେବେ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse-2-line-2": {
     "source": "ନିର୍ଲଜ ପରି ହେ ଗୋସାଇଁ",
@@ -312,7 +512,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Similative postposition 'pari' governed by adjective/noun 'nirlaja'. 'gosāiṁ' is a vocative title (from Sanskrit gosvāmin)."
+    "grammarNote": "Similative postposition 'pari' governed by adjective/noun 'nirlaja'. 'gosāiṁ' is a vocative title (from Sanskrit gosvāmin).",
+    "sourceWords": [
+      {
+        "text": "ନିର୍ଲଜ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ପରି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଗୋସାଇଁ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse-2-line-3": {
     "source": "ମୋ ହୃଦୟେ ଆନ ଭାବ ନାହିଁ",
@@ -351,7 +577,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative phrase 'mo hrudaye' + subject 'āna bhāba' + negative existential particle/verb 'nāhiṁ'."
+    "grammarNote": "Locative phrase 'mo hrudaye' + subject 'āna bhāba' + negative existential particle/verb 'nāhiṁ'.",
+    "sourceWords": [
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ହୃଦୟେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଆନ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଭାବ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ନାହିଁ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "vocal-outro": {
     "source": "ଆ...",
@@ -366,7 +624,15 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Non-lexical vocable / melodic vocalization."
+    "grammarNote": "Non-lexical vocable / melodic vocalization.",
+    "sourceWords": [
+      {
+        "text": "ଆ...",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   }
 };
 

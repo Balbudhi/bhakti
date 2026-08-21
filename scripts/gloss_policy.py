@@ -13,6 +13,12 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 PRESERVED = json.loads((ROOT / "data" / "preserved_terms.json").read_text(encoding="utf-8")).get("terms", {})
 
+FICTIONAL_COINAGES = {
+    "adamantium": "fictional Marvel alloy",
+    "vibranium": "fictional Marvel metal",
+    "mithril": "fictional Tolkien metal",
+}
+
 
 def key(value: object) -> str:
     text = unicodedata.normalize("NFKD", str(value or ""))
@@ -108,3 +114,8 @@ def clean_word(word: dict[str, Any]) -> dict[str, Any]:
         cleaned.get("roman", ""), cleaned.get("gloss", ""), cleaned.get("concept_key", ""),
     )
     return cleaned
+
+
+def fictional_coinages(value: object) -> list[str]:
+    tokens = re.findall(r"[a-z]+", str(value or "").casefold())
+    return sorted(set(tokens).intersection(FICTIONAL_COINAGES))

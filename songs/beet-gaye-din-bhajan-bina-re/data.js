@@ -62,7 +62,45 @@ window.SONG_LINES = {
         "gloss": "O / vocative particle"
       }
     ],
-    "grammarNote": "Compound verb bīt gaye (bītnā + jānā) in perfective aspect, agreeing with masculine plural subject din. Binā is a postposition governing the preceding noun bhajan."
+    "grammarNote": "Compound verb bīt gaye (bītnā + jānā) in perfective aspect, agreeing with masculine plural subject din. Binā is a postposition governing the preceding noun bhajan.",
+    "sourceWords": [
+      {
+        "text": "बीत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भजन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बिना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1-bal-avastha": {
     "source": "बाल अवस्था खेल गँवाई",
@@ -87,7 +125,33 @@ window.SONG_LINES = {
         "gloss": "lost / squandered"
       }
     ],
-    "grammarNote": "Transitive perfective verb gavāī (feminine singular) agreeing with the feminine object avasthā. Khel has an elided locative postposition (khel [meñ])."
+    "grammarNote": "Transitive perfective verb gavāī (feminine singular) agreeing with the feminine object avasthā. Khel has an elided locative postposition (khel [meñ]).",
+    "sourceWords": [
+      {
+        "text": "बाल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अवस्था",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "खेल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गँवाई",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1-jab-joban": {
     "source": "जब जोबन तब मान घनी रे",
@@ -120,7 +184,45 @@ window.SONG_LINES = {
         "gloss": "O / vocative particle"
       }
     ],
-    "grammarNote": "Correlative jab... tab construction with elided copula/predication. Ghanī is an adjective/qualifier modifying mān."
+    "grammarNote": "Correlative jab... tab construction with elided copula/predication. Ghanī is an adjective/qualifier modifying mān.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जोबन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "घनी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v2-lahe-karan": {
     "source": "लाहे कारन मूल गँवायो",
@@ -145,7 +247,33 @@ window.SONG_LINES = {
         "gloss": "lost / squandered"
       }
     ],
-    "grammarNote": "Lāhe is the oblique form of lāhā (Braj/Old Hindi for profit). Gavāyo is masculine singular perfective agreeing with mūl."
+    "grammarNote": "Lāhe is the oblique form of lāhā (Braj/Old Hindi for profit). Gavāyo is masculine singular perfective agreeing with mūl.",
+    "sourceWords": [
+      {
+        "text": "लाहे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कारन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मूल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गँवायो",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-ajahun-na-gayi": {
     "source": "अजहुँ न गई मन की तृष्णा रे",
@@ -182,7 +310,51 @@ window.SONG_LINES = {
         "gloss": "O / vocative particle"
       }
     ],
-    "grammarNote": "Ajahuṅ has the emphatic marker -huṅ affixed to aj (today/now). Gaī is feminine singular perfective agreeing with tṛṣṇā."
+    "grammarNote": "Ajahuṅ has the emphatic marker -huṅ affixed to aj (today/now). Gaī is feminine singular perfective agreeing with tṛṣṇā.",
+    "sourceWords": [
+      {
+        "text": "अजहुँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गई",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तृष्णा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v3-kahat-kabir": {
     "source": "कहत कबीर सुनो भाई साधो",
@@ -211,7 +383,39 @@ window.SONG_LINES = {
         "gloss": "seekers / sadhus / virtuous practitioners"
       }
     ],
-    "grammarNote": "Kahat is a present participle functioning as finite present indicative. Suno is a 2nd person plural imperative. Sādho is a vocative plural."
+    "grammarNote": "Kahat is a present participle functioning as finite present indicative. Suno is a 2nd person plural imperative. Sādho is a vocative plural.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुनो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3-par-utar-gaye": {
     "source": "पार उतर गये सन्त जना रे",
@@ -244,7 +448,45 @@ window.SONG_LINES = {
         "gloss": "O / vocative particle"
       }
     ],
-    "grammarNote": "Compound verb pār utar jānā (utar gaye, masculine plural perfective) agreeing with plural subject sant janā."
+    "grammarNote": "Compound verb pār utar jānā (utar gaye, masculine plural perfective) agreeing with plural subject sant janā.",
+    "sourceWords": [
+      {
+        "text": "पार",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "उतर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गये",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सन्त",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "closing-bhajan-bina": {
     "source": "भजन बिना रे",
@@ -265,7 +507,27 @@ window.SONG_LINES = {
         "gloss": "O / vocative particle"
       }
     ],
-    "grammarNote": "Elliptical postpositional phrase echoing the coda of the refrain."
+    "grammarNote": "Elliptical postpositional phrase echoing the coda of the refrain.",
+    "sourceWords": [
+      {
+        "text": "भजन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   }
 };
 

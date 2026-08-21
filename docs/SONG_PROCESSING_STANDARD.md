@@ -54,7 +54,7 @@ window.SONG_META = {
   languages, subjectTags, searchAliases, audioSources,
   timingStatus, translationStatus, sourceStatus
 };
-window.SONG_LINES = { /* line id → source text, literal/poetic English, words */ };
+window.SONG_LINES = { /* line id → source, sourceWords, roman, English, words */ };
 window.SONG_SEQUENCE = [
   { ref, section: "invocation|refrain|verse|bridge|closing|spoken|instrumental", repeats }
 ];
@@ -72,6 +72,14 @@ Section kinds remain machine-readable sequencing metadata. The public reader
 does not print “Invocation,” “Refrain,” “Verse,” or other section labels; those
 headings interrupt the bhajan rather than helping the listening experience.
 
+Every non-instrumental line also has a validated `sourceWords` map. It links
+each exact source-script surface token to one or more public word indices,
+including compounds and sandhi. The same indices drive source-script,
+romanized, and English highlighting. All three layers are selectable and
+interactive: tapping, clicking, hovering, or keyboard-activating any mapped
+span opens the same short meaning and outlines every corresponding span. A
+reader must fail publication rather than expose an incomplete source map.
+
 ### Public metadata rule
 
 Every published `SONG_META` stores `writer`, `singer`, and `composer` as
@@ -81,6 +89,12 @@ the verified roles as `Poet`, `Singer`, and `Music`. When one person holds
 several roles, group the labels once—for example,
 `Poet · Singer · Music — Shri Chandra Bhanu Satpathy`. Never infer one role
 from another merely to fill the display.
+
+Language tags describe the text actually sung, not the singer's identity or
+the script alone. A predominantly Hindi song retains a Sanskrit tag when an
+audible Sanskrit invocation is part of the recording; individual source lines
+use the corresponding `lang` code. Conversely, Sanskrit-derived vocabulary in
+ordinary Hindi does not by itself justify a Sanskrit tag.
 
 Album, source collection, uploader, venue, and devotional boilerplate do not
 appear in a song header. The header contains only the title, evidence-backed
@@ -159,12 +173,22 @@ addition. New entries require the preserve-or-translate decision procedure and
 human approval. Bhakti deliberately does not inherit the Vedanta reader's full
 grammar cards or school-by-school glossary UI.
 
+Public English uses attested words. Rare but established English is permitted
+when it is exact and understandable in context: `adamantine`, for example, is
+the real adjective for diamond-like hardness and may render `vajra` imagery.
+Transparent source-supported compounds such as `thunderbolt-hard` are also
+permitted, with a hyphen when it improves reading. The pipeline must not invent
+pseudo-Latin vocabulary or import franchise-specific fictional coinages such
+as `adamantium`, `vibranium`, or `mithril`; these fail both generation and the
+public reader audit. Preserved Indic philosophical terms continue to follow
+the curated-term policy above rather than being disguised as English.
+
 ### Library preface and disclosure
 
 The homepage acknowledgment is centered and follows the reader's three-level
-order: Hindi source, interactive IAST, then linked literal English. Tapping or
-hovering an IAST word shows its meaning and highlights the corresponding
-English phrase. The English line is: `Countless salutations to the poets of
+order: Hindi source, interactive IAST, then linked literal English. Tapping,
+clicking, or hovering any mapped span in any of the three layers shows its
+meaning and highlights the corresponding spans in the other two. The English line is: `Countless salutations to the poets of
 these bhajans and the singers and musicians who brought them to life.` The Hindi
 is original site copy, not a quotation: `इन भजनों के कवियों तथा गायन-वादन से
 इन्हें साकार करने वाले कलाकारों को कोटि-कोटि प्रणाम।` Here `गायन-वादन`
@@ -176,6 +200,18 @@ main reading flow. It states professionally that the readers are produced by
 an AI-based transcription, timing, and translation pipeline, and that any
 errors belong to the pipeline rather than the poet, singer, or musician. It contains
 neither an apology nor a request for corrections.
+
+### Installed web-app updates
+
+Adding the site to the iPhone or iPad Home Screen is the supported installation
+path. The manifest uses standalone display mode and every page includes Apple's
+standalone metadata. The service worker checks for a new release on load and
+when the installed app becomes visible again, with a five-minute throttle. A
+new worker reloads the page once after it takes control, but defers while audio
+is playing. Ordinary launches do not force a reload. HTML, scripts, styles, and
+reader data use network-first, cache-bypassing fetches; audio is never placed in
+the application shell cache. The previous cached page remains an offline
+fallback.
 
 Run the hidden difficult-line benchmark after changing either prompt:
 

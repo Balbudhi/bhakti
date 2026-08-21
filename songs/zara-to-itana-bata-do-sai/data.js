@@ -47,6 +47,44 @@ window.SONG_LINES = {
         "roman": "Sāīṃ",
         "gloss": "holy master"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "ज़रा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "इतना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बता",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          4
+        ]
+      }
     ]
   },
   "refrain_2": {
@@ -69,6 +107,44 @@ window.SONG_LINES = {
       {
         "roman": "lagā rahe ho",
         "gloss": "You are causing to take hold, instilling"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "लगी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लगा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रहे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
       }
     ]
   },
@@ -93,6 +169,44 @@ window.SONG_LINES = {
         "roman": "apnī",
         "gloss": "Your own"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "मुझी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रहकर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुझी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अपनी",
+        "wordIndices": [
+          3
+        ]
+      }
     ]
   },
   "refrain_4": {
@@ -116,6 +230,44 @@ window.SONG_LINES = {
         "roman": "karā rahe ho",
         "gloss": "You are having [it] done; making [someone] do"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "खोज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रहे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      }
     ]
   },
   "refrain_partial": {
@@ -134,6 +286,26 @@ window.SONG_LINES = {
       {
         "roman": "itnā",
         "gloss": "this much"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "ज़रा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "इतना",
+        "wordIndices": [
+          2
+        ]
       }
     ]
   },
@@ -170,6 +342,50 @@ window.SONG_LINES = {
         "roman": "jīvan",
         "gloss": "life"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          6
+        ]
+      }
     ]
   },
   "verse_1_2": {
@@ -193,6 +409,56 @@ window.SONG_LINES = {
         "roman": "prītam",
         "gloss": "beloved"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "प्रेम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "प्रीतम",
+        "wordIndices": [
+          3
+        ]
+      }
     ]
   },
   "verse_1_3": {
@@ -215,6 +481,32 @@ window.SONG_LINES = {
       {
         "roman": "man",
         "gloss": "mind, heart"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "पुकारता",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पुकारता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          3
+        ]
       }
     ]
   },
@@ -251,6 +543,74 @@ window.SONG_LINES = {
         "roman": "samā rahe ho",
         "gloss": "You are pervading, dwelling within"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "तुम्ही",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "फिर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तुम्ही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "समा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रहे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          6
+        ]
+      }
     ]
   },
   "verse_2_1": {
@@ -278,6 +638,50 @@ window.SONG_LINES = {
         "roman": "spandan",
         "gloss": "pulsation, heartbeat"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "प्राण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्पंदन",
+        "wordIndices": [
+          4
+        ]
+      }
     ]
   },
   "verse_2_2": {
@@ -301,6 +705,56 @@ window.SONG_LINES = {
         "roman": "darśan",
         "gloss": "sacred sight, vision, audience with the divine"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "नैन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दर्शन",
+        "wordIndices": [
+          3
+        ]
+      }
     ]
   },
   "verse_2_3": {
@@ -323,6 +777,44 @@ window.SONG_LINES = {
       {
         "roman": "lekar",
         "gloss": "having taken, taking along"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "तुम्ही",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लेकर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम्ही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लेकर",
+        "wordIndices": [
+          3
+        ]
       }
     ]
   },
@@ -354,6 +846,62 @@ window.SONG_LINES = {
       {
         "roman": "chalā rahe ho",
         "gloss": "You are carrying on, setting in motion"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "तुम्ही",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ढूँढूँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कैसी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रीति",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चला",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रहे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          5
+        ]
       }
     ]
   }

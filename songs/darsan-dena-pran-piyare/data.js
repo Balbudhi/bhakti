@@ -52,7 +52,33 @@ window.SONG_LINES = {
         "gloss": "beloved / dear one"
       }
     ],
-    "grammarNote": "The infinitive 'denā' functions as a polite imperative. 'prāṇa piyāre' is a vocative nominal compound/phrase."
+    "grammarNote": "The infinitive 'denā' functions as a polite imperative. 'prāṇa piyāre' is a vocative nominal compound/phrase.",
+    "sourceWords": [
+      {
+        "text": "दरसन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "प्राण",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पियारे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "darasan-dena": {
     "source": "दरसन देना",
@@ -69,7 +95,21 @@ window.SONG_LINES = {
         "gloss": "give / grant"
       }
     ],
-    "grammarNote": "Elliptical predicate phrase composed of noun object + infinitive-imperative verb."
+    "grammarNote": "Elliptical predicate phrase composed of noun object + infinitive-imperative verb.",
+    "sourceWords": [
+      {
+        "text": "दरसन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देना",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "nandalala-mere-nainan-ke-pyare": {
     "source": "नन्दलाला मेरे नैनन के प्यारे",
@@ -98,7 +138,39 @@ window.SONG_LINES = {
         "gloss": "beloved / darling"
       }
     ],
-    "grammarNote": "'nainana' is the Braj oblique plural of 'naina' (eyes), governed by the genitive postposition 'ke' in masculine agreement with 'pyāre'."
+    "grammarNote": "'nainana' is the Braj oblique plural of 'naina' (eyes), governed by the genitive postposition 'ke' in masculine agreement with 'pyāre'.",
+    "sourceWords": [
+      {
+        "text": "नन्दलाला",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नैनन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्यारे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "deenanath-dayal-sakal-gun": {
     "source": "दीनानाथ दयाल सकल गुण",
@@ -123,7 +195,33 @@ window.SONG_LINES = {
         "gloss": "virtues / qualities"
       }
     ],
-    "grammarNote": "'dīnānātha' is a tatpuruṣa compound (dīna + nātha). 'sakala guṇa' is an elliptical epithet representing 'sakala-guṇa-nidhāna' (abode of all virtues)."
+    "grammarNote": "'dīnānātha' is a tatpuruṣa compound (dīna + nātha). 'sakala guṇa' is an elliptical epithet representing 'sakala-guṇa-nidhāna' (abode of all virtues).",
+    "sourceWords": [
+      {
+        "text": "दीनानाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दयाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुण",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "deenanath": {
     "source": "दीनानाथ",
@@ -136,7 +234,15 @@ window.SONG_LINES = {
         "gloss": "Lord of the humble / destitute"
       }
     ],
-    "grammarNote": "Vocative tatpuruṣa compound isolated in musical improvisation."
+    "grammarNote": "Vocative tatpuruṣa compound isolated in musical improvisation.",
+    "sourceWords": [
+      {
+        "text": "दीनानाथ",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "deenanath-sakal-gun": {
     "source": "दीनानाथ सकल गुण",
@@ -157,7 +263,27 @@ window.SONG_LINES = {
         "gloss": "virtues / qualities"
       }
     ],
-    "grammarNote": "Elliptical vocative phrase consisting of a compound title and an adjectival-noun phrase."
+    "grammarNote": "Elliptical vocative phrase consisting of a compound title and an adjectival-noun phrase.",
+    "sourceWords": [
+      {
+        "text": "दीनानाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गुण",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "deenanath-dayal-dayal-sakal-gun": {
     "source": "दीनानाथ दयाल दयाल सकल गुण",
@@ -186,7 +312,39 @@ window.SONG_LINES = {
         "gloss": "virtues / qualities"
       }
     ],
-    "grammarNote": "Reduplication of the adjective 'dayāla' serves as emotional and melodic intensification."
+    "grammarNote": "Reduplication of the adjective 'dayāla' serves as emotional and melodic intensification.",
+    "sourceWords": [
+      {
+        "text": "दीनानाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दयाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दयाल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गुण",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "nava-kishor-sundar-mukhware": {
     "source": "नवकिशोर सुंदर मुखवारे",
@@ -207,7 +365,27 @@ window.SONG_LINES = {
         "gloss": "one having a face / one of [such] countenance"
       }
     ],
-    "grammarNote": "'navakiśora' is a karmadhāraya compound (nava + kiśora). 'mukhavāre' uses the Braj possessive/agentive suffix '-vāre' attached to 'mukha' (face)."
+    "grammarNote": "'navakiśora' is a karmadhāraya compound (nava + kiśora). 'mukhavāre' uses the Braj possessive/agentive suffix '-vāre' attached to 'mukha' (face).",
+    "sourceWords": [
+      {
+        "text": "नवकिशोर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुंदर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुखवारे",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "manmohan-man-rukatan-roko": {
     "source": "मनमोहन मन रुकतां रोको",
@@ -232,7 +410,33 @@ window.SONG_LINES = {
         "gloss": "stop / restrain / hold"
       }
     ],
-    "grammarNote": "'manomohana' is a vocative compound (mana + mohana). 'rukatāṁ' is an imperfective/adverbial participle of 'rukanā' with Braj nasalization; 'roko' is a direct second-person imperative."
+    "grammarNote": "'manomohana' is a vocative compound (mana + mohana). 'rukatāṁ' is an imperfective/adverbial participle of 'rukanā' with Braj nasalization; 'roko' is a direct second-person imperative.",
+    "sourceWords": [
+      {
+        "text": "मनमोहन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रुकतां",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रोको",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "darasan-ki-chit-chaha-hamare": {
     "source": "दरसन की चित चाह हमारे",
@@ -261,7 +465,39 @@ window.SONG_LINES = {
         "gloss": "our / my"
       }
     ],
-    "grammarNote": "'kī' is the feminine genitive postposition agreeing with feminine noun 'cāha'. 'cita' functions locatively ('in the mind') without an overt postposition; 'hamāre' is the Braj first-person possessive."
+    "grammarNote": "'kī' is the feminine genitive postposition agreeing with feminine noun 'cāha'. 'cita' functions locatively ('in the mind') without an overt postposition; 'hamāre' is the Braj first-person possessive.",
+    "sourceWords": [
+      {
+        "text": "दरसन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चाह",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हमारे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "rasik-khushal-milan-ki-aasha": {
     "source": "रसिक खुशाल मिलन की आशा",
@@ -290,7 +526,39 @@ window.SONG_LINES = {
         "gloss": "hope / longing / expectation"
       }
     ],
-    "grammarNote": "'rasika khuśāla' forms the poet's signature compound/name. 'kī' agrees in feminine gender with 'āśā'."
+    "grammarNote": "'rasika khuśāla' forms the poet's signature compound/name. 'kī' agrees in feminine gender with 'āśā'.",
+    "sourceWords": [
+      {
+        "text": "रसिक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "खुशाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मिलन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आशा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "aasha-alap": {
     "source": "आशा",
@@ -303,7 +571,15 @@ window.SONG_LINES = {
         "gloss": "hope / longing / expectation"
       }
     ],
-    "grammarNote": "Feminine singular abstract noun isolated during melodic development."
+    "grammarNote": "Feminine singular abstract noun isolated during melodic development.",
+    "sourceWords": [
+      {
+        "text": "आशा",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "nis-din-sumiran-dhyan-laga-re": {
     "source": "निसदिन सुमिरन ध्यान लगा रे",
@@ -332,7 +608,39 @@ window.SONG_LINES = {
         "gloss": "O! / hey!"
       }
     ],
-    "grammarNote": "'nisadina' is an adverbial dvigu/dvandva compound (niśi + dina). 'sumirana dhyāna' is a coordinate nominal pair acting as the object of the imperative verb 'lagā'; 're' is a vocative discourse particle."
+    "grammarNote": "'nisadina' is an adverbial dvigu/dvandva compound (niśi + dina). 'sumirana dhyāna' is a coordinate nominal pair acting as the object of the imperative verb 'lagā'; 're' is a vocative discourse particle.",
+    "sourceWords": [
+      {
+        "text": "निसदिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुमिरन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ध्यान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लगा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 

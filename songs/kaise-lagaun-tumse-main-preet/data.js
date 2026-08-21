@@ -75,7 +75,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "lagāū̃ is the 1st person singular subjunctive of the transitive verb lagānā. tumse takes the associative/relational postposition -se governed by the idiom prīt lagānā."
+    "grammarNote": "lagāū̃ is the 1st person singular subjunctive of the transitive verb lagānā. tumse takes the associative/relational postposition -se governed by the idiom prīt lagānā.",
+    "sourceWords": [
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लगाऊँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुमसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रीत",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "asthir-buddhi": {
     "source": "अस्थिर बुद्धि, मन चंचल चित",
@@ -114,7 +146,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal clause with elided copula. Asthira modifies feminine noun buddhi; cañcala modifies masculine nouns mana and cita."
+    "grammarNote": "Nominal clause with elided copula. Asthira modifies feminine noun buddhi; cañcala modifies masculine nouns mana and cita.",
+    "sourceWords": [
+      {
+        "text": "अस्थिर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बुद्धि,",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चंचल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चित",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "ramakrishna-prabhu": {
     "source": "रामकृष्ण प्रभु, इस युग के नायक",
@@ -159,7 +223,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative address (Rāmakr̥ṣṇa prabhu) followed by an appositive genitive phrase (isa yuga ke nāyaka)."
+    "grammarNote": "Vocative address (Rāmakr̥ṣṇa prabhu) followed by an appositive genitive phrase (isa yuga ke nāyaka).",
+    "sourceWords": [
+      {
+        "text": "रामकृष्ण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रभु,",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "इस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "युग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नायक",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "main-hoon-das": {
     "source": "मैं हूँ दास तेरा चरणाश्रित",
@@ -198,7 +300,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular copular construction (maĩ hū̃). caraṇāśrita is a tatpuruṣa compound (caraṇa + āśrita) functioning as an appositive attribute of dāsa."
+    "grammarNote": "1st person singular copular construction (maĩ hū̃). caraṇāśrita is a tatpuruṣa compound (caraṇa + āśrita) functioning as an appositive attribute of dāsa.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दास",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चरणाश्रित",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "har-pal-hota": {
     "source": "हर पल होता जग में परिवर्तन",
@@ -243,7 +377,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperfective habitual aspect with omitted copula (hotā [hai]). The subject is parivartana (masculine singular)."
+    "grammarNote": "Imperfective habitual aspect with omitted copula (hotā [hai]). The subject is parivartana (masculine singular).",
+    "sourceWords": [
+      {
+        "text": "हर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "होता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "परिवर्तन",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "jad-chetan-ke": {
     "source": "जड़ चेतन के तुम हो चेतन",
@@ -288,7 +460,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dvandva-like compound/pair jaṛa-cetana linked via genitive ke to the predicate noun cetana. tuma ho is 2nd person plural/honorific copular agreement."
+    "grammarNote": "Dvandva-like compound/pair jaṛa-cetana linked via genitive ke to the predicate noun cetana. tuma ho is 2nd person plural/honorific copular agreement.",
+    "sourceWords": [
+      {
+        "text": "जड़",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चेतन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चेतन",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "ban-aaye-ab": {
     "source": "बन आए अब चन्द्रमणि सुत",
@@ -327,7 +537,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb bana āe (bannā + ānā in perfective aspect). Candramaṇi suta functions as a predicate nominative / appositive role."
+    "grammarNote": "Compound verb bana āe (bannā + ānā in perfective aspect). Candramaṇi suta functions as a predicate nominative / appositive role.",
+    "sourceWords": [
+      {
+        "text": "बन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आए",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चन्द्रमणि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुत",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "achintya-leela": {
     "source": "अचिन्त्य लीला जीवन अद्भुत",
@@ -360,7 +602,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Two balanced nominal phrases with elided copula: [Acintya līlā] and [jīvana adbhuta]."
+    "grammarNote": "Two balanced nominal phrases with elided copula: [Acintya līlā] and [jīvana adbhuta].",
+    "sourceWords": [
+      {
+        "text": "अचिन्त्य",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लीला",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अद्भुत",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "sabke-man": {
     "source": "सबके मन तुमको हैं अवगत",
@@ -399,7 +667,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dative experiencer construction: tumko (dative) + Sabke mana (grammatical subject, masc. pl.) + avagata haĩ (predicate adjective with plural copula)."
+    "grammarNote": "Dative experiencer construction: tumko (dative) + Sabke mana (grammatical subject, masc. pl.) + avagata haĩ (predicate adjective with plural copula).",
+    "sourceWords": [
+      {
+        "text": "सबके",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुमको",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अवगत",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "hriday-nivasi": {
     "source": "हृदय निवासी, साक्षी स्वरूपवत",
@@ -432,7 +732,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Appositive epithets qualifying the Lord: Hr̥daya-nivāsī (tatpuruṣa noun/adjective) and sākṣī svarūpavata (noun with suffix -vat)."
+    "grammarNote": "Appositive epithets qualifying the Lord: Hr̥daya-nivāsī (tatpuruṣa noun/adjective) and sākṣī svarūpavata (noun with suffix -vat).",
+    "sourceWords": [
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निवासी,",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साक्षी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्वरूपवत",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "pragat-hue": {
     "source": "प्रगट हुए करने जग का हित",
@@ -477,7 +803,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Pragaṭa hue is a conjunct verb (pragaṭa + honā in past/perfective). karane is an oblique infinitive functioning purposively without the postposition ke lie."
+    "grammarNote": "Pragaṭa hue is a conjunct verb (pragaṭa + honā in past/perfective). karane is an oblique infinitive functioning purposively without the postposition ke lie.",
+    "sourceWords": [
+      {
+        "text": "प्रगट",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हुए",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करने",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हित",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "tan-man-pran": {
     "source": "तन-मन-प्राण किए हो समर्पित",
@@ -510,7 +874,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Present perfect verbal construction (samarpita kie ho) agreeing with the 2nd person honorific subject. Tana-mana-prāṇa is a dvandva compound functioning as the direct object."
+    "grammarNote": "Present perfect verbal construction (samarpita kie ho) agreeing with the 2nd person honorific subject. Tana-mana-prāṇa is a dvandva compound functioning as the direct object.",
+    "sourceWords": [
+      {
+        "text": "तन-मन-प्राण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "किए",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "समर्पित",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "roop-tumhara": {
     "source": "रूप तुम्हारा रहे चित में नित",
@@ -555,7 +945,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "rahe is 3rd person singular subjunctive/optative of rahnā, indicating an earnest wish. nita functions adverbially (from Sanskrit nityam)."
+    "grammarNote": "rahe is 3rd person singular subjunctive/optative of rahnā, indicating an earnest wish. nita functions adverbially (from Sanskrit nityam).",
+    "sourceWords": [
+      {
+        "text": "रूप",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम्हारा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रहे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चित",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नित",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "sada-seva-mein": {
     "source": "सदा सेवा में रहूँ सेवारत",
@@ -594,7 +1022,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular subjunctive rahū̃ with predicate adjective sevārata (sevā + rata compound) modified by the locative phrase 'sevā mẽ'."
+    "grammarNote": "1st person singular subjunctive rahū̃ with predicate adjective sevārata (sevā + rata compound) modified by the locative phrase 'sevā mẽ'.",
+    "sourceWords": [
+      {
+        "text": "सदा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सेवा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रहूँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सेवारत",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "prem-hriday-se": {
     "source": "प्रेम हृदय से गाऊँ तेरे गीत",
@@ -639,7 +1099,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular subjunctive gāū̃. The possessive tere agrees with the plural gīta and means “Your.”"
+    "grammarNote": "1st person singular subjunctive gāū̃. The possessive tere agrees with the plural gīta and means “Your.”",
+    "sourceWords": [
+      {
+        "text": "प्रेम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गाऊँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गीत",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "meri-jeet-mein": {
     "source": "मेरी जीत में होगी तेरी जीत",
@@ -684,7 +1182,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Future indicative construction with consistent feminine singular agreement (merī jīta [fem.], terī jīta [fem.], hogī [fem. sg.])."
+    "grammarNote": "Future indicative construction with consistent feminine singular agreement (merī jīta [fem.], terī jīta [fem.], hogī [fem. sg.]).",
+    "sourceWords": [
+      {
+        "text": "मेरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जीत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "होगी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जीत",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   }
 };
 

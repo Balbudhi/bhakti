@@ -6,6 +6,10 @@ import gloss_policy
 
 
 class GlossPolicyTests(unittest.TestCase):
+    def test_fictional_coinages_are_rejected_but_adamantine_is_real_english(self) -> None:
+        self.assertEqual(gloss_policy.fictional_coinages("an adamantium body"), ["adamantium"])
+        self.assertEqual(gloss_policy.fictional_coinages("adamantine claws"), [])
+
     def test_preserved_concept_explains_without_repeating_itself(self) -> None:
         self.assertEqual(
             gloss_policy.meaning_only_gloss("buddhi", "buddhi (intellect, faculty of discernment)", "buddhi"),

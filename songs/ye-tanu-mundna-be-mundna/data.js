@@ -69,7 +69,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Demonstrative determiner 'Ye' modifying noun 'tanu'; 'muṇḍanā' serves first as a descriptive predicate/epithet and second as a vocative noun."
+    "grammarNote": "Demonstrative determiner 'Ye' modifying noun 'tanu'; 'muṇḍanā' serves first as a descriptive predicate/epithet and second as a vocative noun.",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तनु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुँडना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मुँडना",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "refrain-2": {
     "source": "आख़िर मिट्टी में मिल जाना",
@@ -108,7 +140,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Adverb 'Ākhir' preceding locative noun phrase 'miṭṭī meṁ' and compound infinitive 'mil jānā' expressing inevitable completion."
+    "grammarNote": "Adverb 'Ākhir' preceding locative noun phrase 'miṭṭī meṁ' and compound infinitive 'mil jānā' expressing inevitable completion.",
+    "sourceWords": [
+      {
+        "text": "आख़िर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मिट्टी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मिल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जाना",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1-l1": {
     "source": "मिट्टी कहे कुम्भार को",
@@ -141,7 +205,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Subject 'Miṭṭī' in direct case with 3rd person singular present indicative verb 'kahe'; indirect object 'kumbhār' marked by dative/accusative postposition 'ko'."
+    "grammarNote": "Subject 'Miṭṭī' in direct case with 3rd person singular present indicative verb 'kahe'; indirect object 'kumbhār' marked by dative/accusative postposition 'ko'.",
+    "sourceWords": [
+      {
+        "text": "मिट्टी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कुम्भार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1-l2": {
     "source": "बे तू क्यों खोदे मुझको",
@@ -180,7 +270,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Informal vocative particle 'Be' with 2nd person singular pronoun 'tū', interrogative adverb 'kyoṁ', 2nd person present verb 'khode', and accusative pronoun 'mujhko'."
+    "grammarNote": "Informal vocative particle 'Be' with 2nd person singular pronoun 'tū', interrogative adverb 'kyoṁ', 2nd person present verb 'khode', and accusative pronoun 'mujhko'.",
+    "sourceWords": [
+      {
+        "text": "बे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "खोदे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मुझको",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1-l3a": {
     "source": "कोई बखत ऐसा आवेगा",
@@ -213,7 +335,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Indefinite pronoun 'Koī' modifying masculine noun 'bakhat' (tadbhava of waqt); demonstrative 'aisā'; 3rd person masculine singular future verb 'āvegā'."
+    "grammarNote": "Indefinite pronoun 'Koī' modifying masculine noun 'bakhat' (tadbhava of waqt); demonstrative 'aisā'; 3rd person masculine singular future verb 'āvegā'.",
+    "sourceWords": [
+      {
+        "text": "कोई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बखत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आवेगा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1-l3b": {
     "source": "कोई बखत ऐसा आवेगा कि",
@@ -252,7 +400,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Same structure as v1-l3a with final subordinating conjunction 'ki' linking to the apodosis in v1-l4."
+    "grammarNote": "Same structure as v1-l3a with final subordinating conjunction 'ki' linking to the apodosis in v1-l4.",
+    "sourceWords": [
+      {
+        "text": "कोई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बखत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आवेगा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1-l4": {
     "source": "मैं गाड़ूँगी तुझको",
@@ -279,7 +459,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular pronoun 'Maiṁ' with 1st person singular feminine future verb 'gāḍūṅgī' agreeing with feminine speaker 'Miṭṭī'; 'tujhko' is 2nd person singular accusative."
+    "grammarNote": "1st person singular pronoun 'Maiṁ' with 1st person singular feminine future verb 'gāḍūṅgī' agreeing with feminine speaker 'Miṭṭī'; 'tujhko' is 2nd person singular accusative.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गाड़ूँगी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुझको",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "v2-l1": {
     "source": "लकड़ी कहे सुतार को",
@@ -312,7 +512,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Feminine subject 'Lakaṛī' in direct case with 3rd person singular present indicative 'kahe'; indirect object 'sutār' with postposition 'ko'."
+    "grammarNote": "Feminine subject 'Lakaṛī' in direct case with 3rd person singular present indicative 'kahe'; indirect object 'sutār' with postposition 'ko'.",
+    "sourceWords": [
+      {
+        "text": "लकड़ी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुतार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-l2": {
     "source": "बे तू क्यों छेदे मुझको",
@@ -351,7 +577,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Informal vocative 'Be' with 2nd person pronoun 'tū', interrogative 'kyoṁ', present verb 'chede', and 1st person accusative 'mujhko'."
+    "grammarNote": "Informal vocative 'Be' with 2nd person pronoun 'tū', interrogative 'kyoṁ', present verb 'chede', and 1st person accusative 'mujhko'.",
+    "sourceWords": [
+      {
+        "text": "बे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "छेदे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मुझको",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2-l3": {
     "source": "कोई बखत ऐसा आवेगा कि",
@@ -390,7 +648,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Masculine singular temporal noun phrase with 3rd person future verb 'āvegā' and subordinating conjunction 'ki'."
+    "grammarNote": "Masculine singular temporal noun phrase with 3rd person future verb 'āvegā' and subordinating conjunction 'ki'.",
+    "sourceWords": [
+      {
+        "text": "कोई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बखत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आवेगा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2-l4": {
     "source": "मैं जलाऊँ तुझको",
@@ -417,7 +707,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "1st person singular pronoun 'Maiṁ' with 1st person singular causative verb 'jalāūṁ' (dialectal future/optative form) and 2nd person accusative pronoun 'tujhko'."
+    "grammarNote": "1st person singular pronoun 'Maiṁ' with 1st person singular causative verb 'jalāūṁ' (dialectal future/optative form) and 2nd person accusative pronoun 'tujhko'.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जलाऊँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुझको",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "v3-l1": {
     "source": "कहत कबीरा सुनो भाई साधो",
@@ -456,7 +766,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Participial/present marker 'Kahat' with subject 'Kabīrā'; 2nd person plural imperative 'suno'; followed by two vocative plurals 'bhāī' and 'sādho'."
+    "grammarNote": "Participial/present marker 'Kahat' with subject 'Kabīrā'; 2nd person plural imperative 'suno'; followed by two vocative plurals 'bhāī' and 'sādho'.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीरा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुनो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3-l1-improv": {
     "source": "कहत कबीरा",
@@ -477,7 +819,21 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Verb-subject opening phrase repeated for musical improvisation."
+    "grammarNote": "Verb-subject opening phrase repeated for musical improvisation.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीरा",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "v3-l1-sādho": {
     "source": "साधो",
@@ -492,7 +848,15 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Isolated vocative plural noun (from sādhu)."
+    "grammarNote": "Isolated vocative plural noun (from sādhu).",
+    "sourceWords": [
+      {
+        "text": "साधो",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "v3-l2": {
     "source": "देना नहीं कुछ लेना",
@@ -525,7 +889,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Pair of verbal nouns 'Denā' and 'lenā' surrounding negative particle 'nahīṁ' and indefinite pronoun 'kucha', forming an elliptical nominal clause of non-transaction."
+    "grammarNote": "Pair of verbal nouns 'Denā' and 'lenā' surrounding negative particle 'nahīṁ' and indefinite pronoun 'kucha', forming an elliptical nominal clause of non-transaction.",
+    "sourceWords": [
+      {
+        "text": "देना",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कुछ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लेना",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v3-l3": {
     "source": "भाव भगत से पार उतारो",
@@ -564,7 +954,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound noun phrase 'Bhāva bhagata' (tadbhava of bhāva bhakti) with instrumental postposition 'se'; 'pāra' functions as spatial complement to 2nd person plural imperative 'utāro'."
+    "grammarNote": "Compound noun phrase 'Bhāva bhagata' (tadbhava of bhāva bhakti) with instrumental postposition 'se'; 'pāra' functions as spatial complement to 2nd person plural imperative 'utāro'.",
+    "sourceWords": [
+      {
+        "text": "भाव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भगत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पार",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उतारो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3-l4": {
     "source": "राम नाम जप करना",
@@ -597,7 +1019,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Genitival noun compound 'Rāma nāma' functioning as object to verbal noun 'japa'; prescriptive infinitive 'karanā'."
+    "grammarNote": "Genitival noun compound 'Rāma nāma' functioning as object to verbal noun 'japa'; prescriptive infinitive 'karanā'.",
+    "sourceWords": [
+      {
+        "text": "राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जप",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करना",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   }
 };
 

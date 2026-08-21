@@ -58,7 +58,39 @@ window.SONG_LINES = {
         "gloss": "your / yours [fem. sg.]"
       }
     ],
-    "grammarNote": "Feminine singular possessive pronoun 'terī' agrees with feminine noun 'kāyā'. The present copula 'hai' is elided. Reduplication of 'nahīṁ terī' provides emphatic denial."
+    "grammarNote": "Feminine singular possessive pronoun 'terī' agrees with feminine noun 'kāyā'. The present copula 'hai' is elided. Reduplication of 'nahīṁ terī' provides emphatic denial.",
+    "sourceWords": [
+      {
+        "text": "काया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "refrain-2": {
     "source": "मत कर मेरी मेरी",
@@ -83,7 +115,33 @@ window.SONG_LINES = {
         "gloss": "my / mine [fem. sg.]"
       }
     ],
-    "grammarNote": "Prohibitive imperative construction with 'mat'. 'merī merī' is a reduplicated possessive pronoun functioning as the direct nominal complement of 'kar'."
+    "grammarNote": "Prohibitive imperative construction with 'mat'. 'merī merī' is a reduplicated possessive pronoun functioning as the direct nominal complement of 'kar'.",
+    "sourceWords": [
+      {
+        "text": "मत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मेरी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मेरी",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1-line1": {
     "source": "ये तो दो दिन की जिंदगानी",
@@ -116,7 +174,45 @@ window.SONG_LINES = {
         "gloss": "life / lifetime [fem.]"
       }
     ],
-    "grammarNote": "Nominal sentence with elided copula. Postposition 'kī' agrees in feminine singular with 'jindagānī'."
+    "grammarNote": "Nominal sentence with elided copula. Postposition 'kī' agrees in feminine singular with 'jindagānī'.",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जिंदगानी",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1-line2": {
     "source": "जिंदगानी",
@@ -129,7 +225,15 @@ window.SONG_LINES = {
         "gloss": "life / lifetime [fem.]"
       }
     ],
-    "grammarNote": "Standalone feminine singular noun used as a vocalic/melodic repetition."
+    "grammarNote": "Standalone feminine singular noun used as a vocalic/melodic repetition.",
+    "sourceWords": [
+      {
+        "text": "जिंदगानी",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "v1-line3": {
     "source": "जैसा पत्थर ऊपर पानी",
@@ -154,7 +258,33 @@ window.SONG_LINES = {
         "gloss": "water"
       }
     ],
-    "grammarNote": "Elliptical comparative clause without a finite verb (implied 'thahartā nahīṁ' or 'bah jātā hai'). 'ūpar' acts as a spatial postposition governing 'patthar'."
+    "grammarNote": "Elliptical comparative clause without a finite verb (implied 'thahartā nahīṁ' or 'bah jātā hai'). 'ūpar' acts as a spatial postposition governing 'patthar'.",
+    "sourceWords": [
+      {
+        "text": "जैसा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पत्थर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ऊपर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पानी",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1-line4": {
     "source": "ये तो होवेगी कुरबानी",
@@ -179,7 +309,33 @@ window.SONG_LINES = {
         "gloss": "sacrifice / destruction / surrendered [fem.]"
       }
     ],
-    "grammarNote": "Dialectal future verb form 'hovegī' (standard Hindi 'hogī') agreeing with feminine singular noun 'kurabānī'."
+    "grammarNote": "Dialectal future verb form 'hovegī' (standard Hindi 'hogī') agreeing with feminine singular noun 'kurabānī'.",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "होवेगी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कुरबानी",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-line1": {
     "source": "जैसा रंग तरंग मिलावे",
@@ -204,7 +360,33 @@ window.SONG_LINES = {
         "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
       }
     ],
-    "grammarNote": "Braj/Sant Bhasha verb form 'milāve' functioning as 3rd person singular present indicative. 'raṅg taraṅg' forms a rhyming alliterative compound/pair."
+    "grammarNote": "Braj/Sant Bhasha verb form 'milāve' functioning as 3rd person singular present indicative. 'raṅg taraṅg' forms a rhyming alliterative compound/pair.",
+    "sourceWords": [
+      {
+        "text": "जैसा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रंग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तरंग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मिलावे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-line2": {
     "source": "मिलावे",
@@ -217,7 +399,15 @@ window.SONG_LINES = {
         "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
       }
     ],
-    "grammarNote": "Standalone verb token repeated for musical cadence."
+    "grammarNote": "Standalone verb token repeated for musical cadence.",
+    "sourceWords": [
+      {
+        "text": "मिलावे",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "v2-line3": {
     "source": "ये तो पलक पीछे उड़ जावे",
@@ -250,7 +440,45 @@ window.SONG_LINES = {
         "gloss": "goes / vanishes [3rd sg. present/subjunctive of jānā]"
       }
     ],
-    "grammarNote": "Compound verb 'uṛ jāve' (polar verb stem 'uṛ' + vector 'jāve'). 'palak pīche' functions as a temporal adverbial phrase."
+    "grammarNote": "Compound verb 'uṛ jāve' (polar verb stem 'uṛ' + vector 'jāve'). 'palak pīche' functions as a temporal adverbial phrase.",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पलक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पीछे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उड़",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जावे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v2-line4": {
     "source": "अंते कोई काम नहीं आवे",
@@ -279,7 +507,39 @@ window.SONG_LINES = {
         "gloss": "comes [3rd sg. present/subjunctive]"
       }
     ],
-    "grammarNote": "'aṁte' is a dialectal/Sanskritic locative adverb ('in the end'). 'kām nahīṁ āve' is a negative light-verb construction equivalent to standard 'kām nahīṁ ātā'."
+    "grammarNote": "'aṁte' is a dialectal/Sanskritic locative adverb ('in the end'). 'kām nahīṁ āve' is a negative light-verb construction equivalent to standard 'kām nahīṁ ātā'.",
+    "sourceWords": [
+      {
+        "text": "अंते",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "काम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आवे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3-line1": {
     "source": "सुन बात कहूँ परमानी",
@@ -304,7 +564,33 @@ window.SONG_LINES = {
         "gloss": "authentic / proven / authoritative / true [adj.]"
       }
     ],
-    "grammarNote": "'sun' is an imperative; 'kahūm̐' is a 1st person singular verb; 'paramānī' is a postnominal adjective modifying feminine noun 'bāt'."
+    "grammarNote": "'sun' is an imperative; 'kahūm̐' is a 1st person singular verb; 'paramānī' is a postnominal adjective modifying feminine noun 'bāt'.",
+    "sourceWords": [
+      {
+        "text": "सुन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बात",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कहूँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "परमानी",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v3-line2": {
     "source": "वहाँ की क्या करता गुमानी",
@@ -333,7 +619,39 @@ window.SONG_LINES = {
         "gloss": "proud person / arrogant one [vocative noun]"
       }
     ],
-    "grammarNote": "'gumānī' is used vocatively / as the agent descriptor; 'vahām̐ kī' has an implicit feminine noun head like 'bāt' or 'cintā'; copula 'hai' is elided after participle 'karatā'."
+    "grammarNote": "'gumānī' is used vocatively / as the agent descriptor; 'vahām̐ kī' has an implicit feminine noun head like 'bāt' or 'cintā'; copula 'hai' is elided after participle 'karatā'.",
+    "sourceWords": [
+      {
+        "text": "वहाँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करता",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गुमानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3-line3": {
     "source": "तुम तो बड़े है बेईमानी",
@@ -362,7 +680,39 @@ window.SONG_LINES = {
         "gloss": "faithless / untrustworthy / dishonest [adj. / nominal used adjectivally]"
       }
     ],
-    "grammarNote": "Dialectal syntax pairing 'tum' with regional plural copula 'hai' (standard Hindi 'ho'/'haiṁ'). 'beīmānī' (abstract noun 'dishonesty') functions here adjectivally ('dishonest')."
+    "grammarNote": "Dialectal syntax pairing 'tum' with regional plural copula 'hai' (standard Hindi 'ho'/'haiṁ'). 'beīmānī' (abstract noun 'dishonesty') functions here adjectivally ('dishonest').",
+    "sourceWords": [
+      {
+        "text": "तुम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बड़े",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बेईमानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v4-line1": {
     "source": "कहत कबीरा सुन नर ज्ञानी",
@@ -391,7 +741,39 @@ window.SONG_LINES = {
         "gloss": "wise / knower / discerning person"
       }
     ],
-    "grammarNote": "'kahat' is an archaic imperfective participle functioning as finite present tense; 'nar jñānī' is a vocative nominal compound ('O wise man')."
+    "grammarNote": "'kahat' is an archaic imperfective participle functioning as finite present tense; 'nar jñānī' is a vocative nominal compound ('O wise man').",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीरा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ज्ञानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v4-line2": {
     "source": "कबीरा",
@@ -404,7 +786,15 @@ window.SONG_LINES = {
         "gloss": "poet-saint"
       }
     ],
-    "grammarNote": "Standalone proper noun repeated for vocalic elaboration."
+    "grammarNote": "Standalone proper noun repeated for vocalic elaboration.",
+    "sourceWords": [
+      {
+        "text": "कबीरा",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "v4-line3": {
     "source": "कहत कबीरा",
@@ -421,7 +811,21 @@ window.SONG_LINES = {
         "gloss": "poet-saint"
       }
     ],
-    "grammarNote": "Subject-verb signature clause with archaic finite participle 'kahat'."
+    "grammarNote": "Subject-verb signature clause with archaic finite participle 'kahat'.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीरा",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "v4-line4": {
     "source": "ये सीख हृदय में मानी",
@@ -450,7 +854,39 @@ window.SONG_LINES = {
         "gloss": "accept / hold / heed [past participle / imperative sense]"
       }
     ],
-    "grammarNote": "'mānī' is a feminine singular participle agreeing with 'sīkh', functioning as a dialectal imperative/injunctive ('accept/heed this teaching')."
+    "grammarNote": "'mānī' is a feminine singular participle agreeing with 'sīkh', functioning as a dialectal imperative/injunctive ('accept/heed this teaching').",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सीख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v4-line5": {
     "source": "तेरे को बात कही समझानी",
@@ -479,7 +915,39 @@ window.SONG_LINES = {
         "gloss": "explained / made clear [fem. sg. participle/infinitive]"
       }
     ],
-    "grammarNote": "'tere ko' is a colloquial/dialectal dative form. 'kahī samajhānī' is a paired participial compound ('kah-kar samajhāī gayī') agreeing in feminine singular with 'bāt'."
+    "grammarNote": "'tere ko' is a colloquial/dialectal dative form. 'kahī samajhānī' is a paired participial compound ('kah-kar samajhāī gayī') agreeing in feminine singular with 'bāt'.",
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बात",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "समझानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 

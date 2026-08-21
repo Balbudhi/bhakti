@@ -79,7 +79,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A string of Sanskrit-derived vocative epithets in apposition: śivaśaṅkara (dvandva/tatpuruṣa compound), karuṇākara (upapada tatpuruṣa: karuṇā + ākara/kara), paramānanda (karmadhāraya), maheśvara (mahā + īśvara)."
+    "grammarNote": "A string of Sanskrit-derived vocative epithets in apposition: śivaśaṅkara (dvandva/tatpuruṣa compound), karuṇākara (upapada tatpuruṣa: karuṇā + ākara/kara), paramānanda (karmadhāraya), maheśvara (mahā + īśvara).",
+    "sourceWords": [
+      {
+        "text": "हे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "शिवशंकर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करुणाकर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "परमानन्द",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "महेश्वर",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "refrain-1": {
     "source": "हे शिवशंकर हे करुणाकर",
@@ -112,7 +150,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative particle he governing the compounds śivaśaṅkara and karuṇākara."
+    "grammarNote": "Vocative particle he governing the compounds śivaśaṅkara and karuṇākara.",
+    "sourceWords": [
+      {
+        "text": "हे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "शिवशंकर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करुणाकर",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-2": {
     "source": "परमानन्द महेश्वर",
@@ -133,7 +197,21 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal vocatives in apposition without explicit vocative particle."
+    "grammarNote": "Nominal vocatives in apposition without explicit vocative particle.",
+    "sourceWords": [
+      {
+        "text": "परमानन्द",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "महेश्वर",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "verse1-1": {
     "source": "मेरे भीतर तुम गाते हो",
@@ -172,7 +250,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Present imperfective construction: tum (2nd person familiar pronoun) + gāte (masculine plural participle used politely/familiarly) + ho (copula). Mere bhītara functions as a postpositional spatial phrase."
+    "grammarNote": "Present imperfective construction: tum (2nd person familiar pronoun) + gāte (masculine plural participle used politely/familiarly) + ho (copula). Mere bhītara functions as a postpositional spatial phrase.",
+    "sourceWords": [
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भीतर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गाते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse1-2": {
     "source": "सुन लो तुम अपना ये स्वर",
@@ -217,7 +327,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb suna lo (sunnā + lenā, imperative 2nd person familiar), indicating reflexive benefit. Reflexive possessive pronoun apanā refers back to the subject tum."
+    "grammarNote": "Compound verb suna lo (sunnā + lenā, imperative 2nd person familiar), indicating reflexive benefit. Reflexive possessive pronoun apanā refers back to the subject tum.",
+    "sourceWords": [
+      {
+        "text": "सुन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अपना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्वर",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse2-1": {
     "source": "मौन गान का ध्यान जमाया",
@@ -256,7 +404,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Transitive perfective past verb jamāyā (causative root jam- -> jamā-) agreeing with masculine singular object dhyāna. Agent marked by zero/implied ergative."
+    "grammarNote": "Transitive perfective past verb jamāyā (causative root jam- -> jamā-) agreeing with masculine singular object dhyāna. Agent marked by zero/implied ergative.",
+    "sourceWords": [
+      {
+        "text": "मौन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ध्यान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जमाया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse2-2": {
     "source": "योग राग को ही माना",
@@ -295,7 +475,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Direct/indirect object construction with postposition ko: rāga ko hī yoga mānā (regarded musical rāga as the true yoga, or yoga as rāga)."
+    "grammarNote": "Direct/indirect object construction with postposition ko: rāga ko hī yoga mānā (regarded musical rāga as the true yoga, or yoga as rāga).",
+    "sourceWords": [
+      {
+        "text": "योग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "राग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "माना",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse2-3": {
     "source": "तुम्हीं बने हो तान प्राण की",
@@ -340,7 +552,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Intransitive perfective bane ho agreeing with 2nd person emphatic pronoun tumhīñ (tum + hī). Prāṇa kī tāna inverted genitive phrase."
+    "grammarNote": "Intransitive perfective bane ho agreeing with 2nd person emphatic pronoun tumhīñ (tum + hī). Prāṇa kī tāna inverted genitive phrase.",
+    "sourceWords": [
+      {
+        "text": "तुम्हीं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बने",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्राण",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse2-4": {
     "source": "मेरे तन-मन को पावन कर",
@@ -379,7 +629,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dvandva compound tana-mana followed by object marker ko. Kara functions as conjunctive participle (having purified) or truncated imperative (purify!)."
+    "grammarNote": "Dvandva compound tana-mana followed by object marker ko. Kara functions as conjunctive participle (having purified) or truncated imperative (purify!).",
+    "sourceWords": [
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तन-मन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पावन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse3-1": {
     "source": "रुद्र वीण-झंकार तुम्हारी",
@@ -406,7 +688,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound noun vīṇa-jhaṅkāra qualified by rudra (forming a compound/apposition: rudra-vīṇā jhaṅkāra) and feminine possessive pronoun tumhārī."
+    "grammarNote": "Compound noun vīṇa-jhaṅkāra qualified by rudra (forming a compound/apposition: rudra-vīṇā jhaṅkāra) and feminine possessive pronoun tumhārī.",
+    "sourceWords": [
+      {
+        "text": "रुद्र",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वीण-झंकार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम्हारी",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "verse3-2": {
     "source": "क्षुद्र जनों से रही अनसुनी",
@@ -445,7 +747,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Passive/stative construction: feminine singular perfective rahī agreeing with feminine subject jhaṅkāra; se marks the agent of perception/neglect."
+    "grammarNote": "Passive/stative construction: feminine singular perfective rahī agreeing with feminine subject jhaṅkāra; se marks the agent of perception/neglect.",
+    "sourceWords": [
+      {
+        "text": "क्षुद्र",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जनों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अनसुनी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse3-3": {
     "source": "धन्य तुम्हीं हो जागो सुरेश्वर",
@@ -484,7 +818,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Clause 1: predicative adjective dhanya + tumhīñ ho (copula). Clause 2: imperative jāgo + vocative compound sureśvara (sura + īśvara)."
+    "grammarNote": "Clause 1: predicative adjective dhanya + tumhīñ ho (copula). Clause 2: imperative jāgo + vocative compound sureśvara (sura + īśvara).",
+    "sourceWords": [
+      {
+        "text": "धन्य",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम्हीं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जागो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुरेश्वर",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse3-4": {
     "source": "अपने मुख से सुन अपना स्वर",
@@ -529,7 +895,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperative verb suna with oblique reflexive possessive apane modifying mukha, and direct reflexive apanā modifying svara."
+    "grammarNote": "Imperative verb suna with oblique reflexive possessive apane modifying mukha, and direct reflexive apanā modifying svara.",
+    "sourceWords": [
+      {
+        "text": "अपने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मुख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अपना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्वर",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse4-1": {
     "source": "नभ छाया घनघोर बिजुरिया दमके झमके",
@@ -574,7 +978,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound descriptive: nabha (Sanskrit nominative/locative sense) + chāyā (perfective/stative) + ghanaghora (adverbial modifier); paired rhyming frequentative verbs damake / jhamake."
+    "grammarNote": "Compound descriptive: nabha (Sanskrit nominative/locative sense) + chāyā (perfective/stative) + ghanaghora (adverbial modifier); paired rhyming frequentative verbs damake / jhamake.",
+    "sourceWords": [
+      {
+        "text": "नभ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "छाया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घनघोर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिजुरिया",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दमके",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "झमके",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse4-2": {
     "source": "अधरों की मुस्कान तुम्हारी चम-चम चमके",
@@ -619,7 +1061,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Genitive construction adharoñ kī muskāna qualified by possessive tumhārī; reduplicated adverb cama-cama modifying verb camake."
+    "grammarNote": "Genitive construction adharoñ kī muskāna qualified by possessive tumhārī; reduplicated adverb cama-cama modifying verb camake.",
+    "sourceWords": [
+      {
+        "text": "अधरों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुस्कान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तुम्हारी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चम-चम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चमके",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse4-3": {
     "source": "आ... घिर-घिर आए मेघ भयंकर गरज-गरजते",
@@ -664,7 +1144,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated aspectual participle ghira-ghira combined with āe; garaja-garajate is a reduplicated present participle acting adverbially."
+    "grammarNote": "Reduplicated aspectual participle ghira-ghira combined with āe; garaja-garajate is a reduplicated present participle acting adverbially.",
+    "sourceWords": [
+      {
+        "text": "आ...",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "घिर-घिर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आए",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मेघ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भयंकर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गरज-गरजते",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse4-4": {
     "source": "गूँजा नूपुर-नाद तुम्हारा थिरक-थिरकते",
@@ -697,7 +1215,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound nūpura-nāda (masculine) agrees with perfective verb gūñjā; reduplicated participle thiraka-thirakate functions as an adverbial participle of concomitant action."
+    "grammarNote": "Compound nūpura-nāda (masculine) agrees with perfective verb gūñjā; reduplicated participle thiraka-thirakate functions as an adverbial participle of concomitant action.",
+    "sourceWords": [
+      {
+        "text": "गूँजा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नूपुर-नाद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम्हारा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "थिरक-थिरकते",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse4-5": {
     "source": "झुक गया माथा कि तुमने हाँ कहा जिस पल उमापति",
@@ -766,7 +1310,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb jhuka gayā (intransitive completive); subordinate relative-temporal clause jisa pala tumane hāñ kahā (ergative tumane with transitive perfective kahā); vocative compound umāpati."
+    "grammarNote": "Compound verb jhuka gayā (intransitive completive); subordinate relative-temporal clause jisa pala tumane hāñ kahā (ergative tumane with transitive perfective kahā); vocative compound umāpati.",
+    "sourceWords": [
+      {
+        "text": "झुक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "माथा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुमने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हाँ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जिस",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पल",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "उमापति",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "verse4-6": {
     "source": "शीश की गंगा धरा पर उतर आई छलछलाती",
@@ -823,7 +1429,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb utara āī (feminine singular agreeing with gaṅgā); chalachalātī is an onomatopoeic present participle agreeing with the feminine subject."
+    "grammarNote": "Compound verb utara āī (feminine singular agreeing with gaṅgā); chalachalātī is an onomatopoeic present participle agreeing with the feminine subject.",
+    "sourceWords": [
+      {
+        "text": "शीश",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गंगा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "धरा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "उतर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आई",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "छलछलाती",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "sargam": {
     "source": "ग ग रे नि रे ग म ध नि रे ग रे ग",
@@ -910,7 +1566,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Svaras (musical notes) of Indian classical music: Ga, Re, Ni, Ma, Dha."
+    "grammarNote": "Svaras (musical notes) of Indian classical music: Ga, Re, Ni, Ma, Dha.",
+    "sourceWords": [
+      {
+        "text": "ग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ग",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "म",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ध",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "नि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ग",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "ग",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "verse4-7": {
     "source": "गीत की हर लहर पर तुम झूम कर नाचो नटेश्वर",
@@ -979,7 +1715,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle jhūma kara modifying imperative nāco; vocative compound naṭeśvara (naṭa + īśvara)."
+    "grammarNote": "Conjunctive participle jhūma kara modifying imperative nāco; vocative compound naṭeśvara (naṭa + īśvara).",
+    "sourceWords": [
+      {
+        "text": "गीत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लहर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "झूम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "नाचो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "नटेश्वर",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "verse4-8": {
     "source": "आज इस आनंद वर्षा में नहावो तुम महेश्वर",
@@ -1036,7 +1834,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative phrase isa ānanda varṣā meñ with oblique demonstrative isa; imperative 2nd person nahāvo with vocative maheśvara."
+    "grammarNote": "Locative phrase isa ānanda varṣā meñ with oblique demonstrative isa; imperative 2nd person nahāvo with vocative maheśvara.",
+    "sourceWords": [
+      {
+        "text": "आज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "इस",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आनंद",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वर्षा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नहावो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "महेश्वर",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "closing-1": {
     "source": "शिवशंकर महेश्वर",
@@ -1057,7 +1905,21 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Juxtaposition of two vocative compounds without postpositions."
+    "grammarNote": "Juxtaposition of two vocative compounds without postpositions.",
+    "sourceWords": [
+      {
+        "text": "शिवशंकर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "महेश्वर",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "closing-2": {
     "source": "शिवशंकर आ...",
@@ -1078,7 +1940,21 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative name followed by open vowel musical vocalization."
+    "grammarNote": "Vocative name followed by open vowel musical vocalization.",
+    "sourceWords": [
+      {
+        "text": "शिवशंकर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आ...",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   }
 };
 

@@ -1,5 +1,5 @@
-const CACHE = "bhakti-shell-v7";
-const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/assets/site.css", "/assets/library.js", "/data/songs.js", "/assets/favicon.svg", "/assets/favicon.png"];
+const CACHE = "bhakti-shell-v8";
+const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/assets/site.css", "/assets/library.js", "/assets/pwa.js", "/data/songs.js", "/assets/favicon.svg", "/assets/favicon.png"];
 
 self.addEventListener("install", event => event.waitUntil(
   caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting())
@@ -13,7 +13,7 @@ self.addEventListener("fetch", event => {
   const pathname = new URL(event.request.url).pathname;
   if (event.request.method !== "GET" || /\.(?:m4a|webm|ogg|mp3|wav|flac)$/.test(pathname)) return;
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: "no-store" })
       .then(response => {
         if (response.ok && new URL(event.request.url).origin === self.location.origin) {
           const copy = response.clone();

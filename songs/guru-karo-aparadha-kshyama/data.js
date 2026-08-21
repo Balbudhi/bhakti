@@ -67,7 +67,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative 'guru' with 2nd person imperative verb 'kara' governing the compound predicate 'aparādha kṣamā kara'."
+    "grammarNote": "Vocative 'guru' with 2nd person imperative verb 'kara' governing the compound predicate 'aparādha kṣamā kara'.",
+    "sourceWords": [
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଅପରାଧ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କ୍ଷମା",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-2": {
     "source": "ହେ ଗୁରୁ ଗୁରୁ କର ଅପରାଧ କ୍ଷମା",
@@ -112,7 +138,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated vocative 'guru guru' preceded by vocative interjection 'he'."
+    "grammarNote": "Reduplicated vocative 'guru guru' preceded by vocative interjection 'he'.",
+    "sourceWords": [
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଅପରାଧ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "କ୍ଷମା",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1-1": {
     "source": "ଥରେ ନୁହେଁ କେତେ ଥର ଭୁଲ କରେ ବାରମ୍ବାର",
@@ -163,7 +227,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'thare' is noun 'thara' with locative/adverbial '-e'; 'nuheṁ' is negative copula; 'kare' is habitual present 1st person."
+    "grammarNote": "'thare' is noun 'thara' with locative/adverbial '-e'; 'nuheṁ' is negative copula; 'kare' is habitual present 1st person.",
+    "sourceWords": [
+      {
+        "text": "ଥରେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ନୁହେଁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କେତେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଥର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଭୁଲ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "କରେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ବାରମ୍ବାର",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v1-2": {
     "source": "ଗୋଡ଼ ଧରି କରୁଛି ପ୍ରାର୍ଥନା",
@@ -196,7 +304,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Non-finite conjunctive participle 'dhari' governs direct object 'goḍa'; finite verb 'karuchi' is 1st person present progressive governing 'prārthanā'."
+    "grammarNote": "Non-finite conjunctive participle 'dhari' governs direct object 'goḍa'; finite verb 'karuchi' is 1st person present progressive governing 'prārthanā'.",
+    "sourceWords": [
+      {
+        "text": "ଗୋଡ଼",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଧରି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କରୁଛି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ପ୍ରାର୍ଥନା",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-1": {
     "source": "ପାପ ସଂସ୍କାର ମୋହର କେତେ ଜନମର ପ୍ରଭୁ",
@@ -241,7 +375,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Equational clause with omitted copula. 'janamara' is genitive of 'janama' (tadbhav of janma)."
+    "grammarNote": "Equational clause with omitted copula. 'janamara' is genitive of 'janama' (tadbhav of janma).",
+    "sourceWords": [
+      {
+        "text": "ପାପ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ସଂସ୍କାର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୋହର",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କେତେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଜନମର",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ପ୍ରଭୁ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v2-2": {
     "source": "ମୋ ପାପର ନାହିଁ ଅନ୍ତସୀମା",
@@ -274,7 +446,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Negative existential predicate 'nāhiṁ' with subject 'antasīmā' qualified by genitive noun phrase 'mo pāpara'."
+    "grammarNote": "Negative existential predicate 'nāhiṁ' with subject 'antasīmā' qualified by genitive noun phrase 'mo pāpara'.",
+    "sourceWords": [
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ପାପର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ନାହିଁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଅନ୍ତସୀମା",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-3": {
     "source": "ତୁମର ଚରଣ ଧରେ ତଥାପି ମୁଁ ପାପ କରେ",
@@ -325,7 +523,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Concessive compound sentence joined by 'tathāpi'; both verbs 'dhare' and 'kare' take 1st person singular agreement."
+    "grammarNote": "Concessive compound sentence joined by 'tathāpi'; both verbs 'dhare' and 'kare' take 1st person singular agreement.",
+    "sourceWords": [
+      {
+        "text": "ତୁମର",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଚରଣ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଧରେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ତଥାପି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ପାପ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "କରେ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v2-4": {
     "source": "ମାୟାବଶେ ହୁଏ ବାଟବଣା",
@@ -352,7 +594,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'māyābaśe' is a compound noun in locative/adverbial case ('māyā' + 'baśa' + '-e'); 'bāṭabaṇā' is a predicative adjective with copula/inchoative verb 'hue'."
+    "grammarNote": "'māyābaśe' is a compound noun in locative/adverbial case ('māyā' + 'baśa' + '-e'); 'bāṭabaṇā' is a predicative adjective with copula/inchoative verb 'hue'.",
+    "sourceWords": [
+      {
+        "text": "ମାୟାବଶେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ହୁଏ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ବାଟବଣା",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "v3-1": {
     "source": "ବାନ୍ଧିଛି ତୁମକୁ ପ୍ରାଣେ ତଥାପି ଯେ ପାପ ମନେ",
@@ -403,7 +665,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "First clause has transitive verb 'bāndhichi' (1st person present perfect) with object 'tumaku' and locative 'prāṇe'; second clause has locative 'mane' with subject 'pāpa' and an elided existential verb."
+    "grammarNote": "First clause has transitive verb 'bāndhichi' (1st person present perfect) with object 'tumaku' and locative 'prāṇe'; second clause has locative 'mane' with subject 'pāpa' and an elided existential verb.",
+    "sourceWords": [
+      {
+        "text": "ବାନ୍ଧିଛି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ତୁମକୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ପ୍ରାଣେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ତଥାପି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ପାପ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ମନେ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v3-2": {
     "source": "ତୁମ ଛଡ଼ା ଦେବ କିଏ କ୍ଷମା",
@@ -442,7 +748,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Postpositional phrase 'tuma chaḍā' modifying the rhetorical interrogative clause 'deba kie kṣamā'."
+    "grammarNote": "Postpositional phrase 'tuma chaḍā' modifying the rhetorical interrogative clause 'deba kie kṣamā'.",
+    "sourceWords": [
+      {
+        "text": "ତୁମ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଛଡ଼ା",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଦେବ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କିଏ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "କ୍ଷମା",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3-3": {
     "source": "ଗୁରୁ ହେ ରାଣ ଦେଉଛି ପାଦେ ସାଷ୍ଟାଙ୍ଗ ପଡ଼ୁଛି",
@@ -493,7 +831,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Coordination of two 1st person present progressive clauses: 'rāṇa deuchi' and 'pāde sāṣṭāṅga paḍuchi'."
+    "grammarNote": "Coordination of two 1st person present progressive clauses: 'rāṇa deuchi' and 'pāde sāṣṭāṅga paḍuchi'.",
+    "sourceWords": [
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ରାଣ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଦେଉଛି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ପାଦେ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ସାଷ୍ଟାଙ୍ଗ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ପଡ଼ୁଛି",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v3-4": {
     "source": "ପୋଛି ଦିଅ ମୋ ତାପ ଯାତନା",
@@ -532,7 +914,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb construction 'pochi dia' (non-finite participle 'pochi' + 2nd person imperative auxiliary 'dia') governing the direct object compound 'tāpa yātanā'."
+    "grammarNote": "Compound verb construction 'pochi dia' (non-finite participle 'pochi' + 2nd person imperative auxiliary 'dia') governing the direct object compound 'tāpa yātanā'.",
+    "sourceWords": [
+      {
+        "text": "ପୋଛି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଦିଅ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ମୋ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ତାପ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଯାତନା",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 

@@ -9,6 +9,7 @@ from pathlib import Path
 import audit_bhakti_contract as audit
 import bhakti_pipeline as pipeline
 import gloss_policy
+import source_word_map
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,6 +33,11 @@ def rebuild(directory: Path) -> tuple[bool, bool]:
         cleaned = [gloss_policy.clean_word(word) for word in words]
         if cleaned != words:
             line["words"] = cleaned
+            words = cleaned
+            changed = True
+        source_words = source_word_map.build_source_words(str(line.get("source") or ""), words)
+        if source_words != line.get("sourceWords"):
+            line["sourceWords"] = source_words
             changed = True
     if changed:
         data_path.write_text(data_javascript(data), encoding="utf-8")
@@ -54,7 +60,7 @@ def main() -> int:
         if page_changed:
             page_changes.append(directory.name)
     pipeline.write_catalogue()
-    print(json.dumps({"normalizedGlosses": data_changes, "rebuiltPages": page_changes}, ensure_ascii=False, indent=2))
+    print(json.dumps({"normalizedReaders": data_changes, "rebuiltPages": page_changes}, ensure_ascii=False, indent=2))
     return 0
 
 

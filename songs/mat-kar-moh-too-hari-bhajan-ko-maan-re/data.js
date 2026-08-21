@@ -56,7 +56,33 @@ window.SONG_LINES = {
         "gloss": "you [2sg nominative pronoun]"
       }
     ],
-    "grammarNote": "Prohibitive particle 'mata' with informal imperative verb 'kara' and postposed subject pronoun 'tū'."
+    "grammarNote": "Prohibitive particle 'mata' with informal imperative verb 'kara' and postposed subject pronoun 'tū'.",
+    "sourceWords": [
+      {
+        "text": "मत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मोह",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "hari-bhajan-ko-maan-le": {
     "source": "हरि भजन को मान ले",
@@ -85,7 +111,39 @@ window.SONG_LINES = {
         "gloss": "take [imperative auxiliary indicating self-benefaction]"
       }
     ],
-    "grammarNote": "Compound verb 'māna lenā' in imperative form 'māna le' conveying an action done for the agent's own sake; direct object marked by 'ko'."
+    "grammarNote": "Compound verb 'māna lenā' in imperative form 'māna le' conveying an action done for the agent's own sake; direct object marked by 'ko'.",
+    "sourceWords": [
+      {
+        "text": "हरि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भजन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "hari-bhajan-ko-maan-re": {
     "source": "हरि भजन को मान रे",
@@ -114,7 +172,39 @@ window.SONG_LINES = {
         "gloss": "O [vocative particle addressing the mind/soul]"
       }
     ],
-    "grammarNote": "Simple imperative 'māna' with direct object marked by 'ko' and closing vocative enclitic 're'."
+    "grammarNote": "Simple imperative 'māna' with direct object marked by 'ko' and closing vocative enclitic 're'.",
+    "sourceWords": [
+      {
+        "text": "हरि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भजन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "nayan-diye-darshan-karne-ko": {
     "source": "नयन दिये दरसन करने को",
@@ -143,7 +233,39 @@ window.SONG_LINES = {
         "gloss": "for / in order to [purposive postposition]"
       }
     ],
-    "grammarNote": "Ergative/passive alignment with implied agent; plural direct object 'nayana' agrees with plural perfective verb 'diye'; purposive infinitive construction 'karane ko'."
+    "grammarNote": "Ergative/passive alignment with implied agent; plural direct object 'nayana' agrees with plural perfective verb 'diye'; purposive infinitive construction 'karane ko'.",
+    "sourceWords": [
+      {
+        "text": "नयन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दरसन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "shravan-diye-sun-gyan-re": {
     "source": "श्रवण दिये सुन ज्ञान रे",
@@ -172,7 +294,39 @@ window.SONG_LINES = {
         "gloss": "O [vocative particle]"
       }
     ],
-    "grammarNote": "Dual-clause structure: first clause has plural subject 'śravaṇa' agreeing with 'diye'; second clause uses bare stem/imperative 'suna' governing direct object 'jñāna'."
+    "grammarNote": "Dual-clause structure: first clause has plural subject 'śravaṇa' agreeing with 'diye'; second clause uses bare stem/imperative 'suna' governing direct object 'jñāna'.",
+    "sourceWords": [
+      {
+        "text": "श्रवण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ज्ञान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "vadan-diya-hari-gun-gaane-ko": {
     "source": "वदन दिया हरि गुण गाने को",
@@ -205,7 +359,45 @@ window.SONG_LINES = {
         "gloss": "for / in order to [purposive postposition]"
       }
     ],
-    "grammarNote": "Masculine singular noun 'vadana' agrees with singular perfective verb 'diyā'; 'hari guṇa' is the direct object of the oblique infinitive 'gāne'."
+    "grammarNote": "Masculine singular noun 'vadana' agrees with singular perfective verb 'diyā'; 'hari guṇa' is the direct object of the oblique infinitive 'gāne'.",
+    "sourceWords": [
+      {
+        "text": "वदन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हरि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गाने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "haath-diye-kar-daan-re": {
     "source": "हाथ दिये कर दान रे",
@@ -234,7 +426,39 @@ window.SONG_LINES = {
         "gloss": "O [vocative particle]"
       }
     ],
-    "grammarNote": "Masculine plural noun 'hātha' agrees with 'diye'; 'kara dāna' functions as an elliptical purposive or direct imperative command followed by vocative 're'."
+    "grammarNote": "Masculine plural noun 'hātha' agrees with 'diye'; 'kara dāna' functions as an elliptical purposive or direct imperative command followed by vocative 're'.",
+    "sourceWords": [
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "kahat-kabir-suno-bhai-sadho": {
     "source": "कहत कबीर सुनो भाई साधो",
@@ -263,7 +487,39 @@ window.SONG_LINES = {
         "gloss": "O seekers / O holy practitioners [vocative plural]"
       }
     ],
-    "grammarNote": "Archaic/Braj imperfective participle 'kahata' functioning as present finite verb; 'suno' is plural imperative; 'sādho' is vocative plural of 'sādhu'."
+    "grammarNote": "Archaic/Braj imperfective participle 'kahata' functioning as present finite verb; 'suno' is plural imperative; 'sādho' is vocative plural of 'sādhu'.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुनो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "kabir-alap": {
     "source": "कबीर...",
@@ -276,7 +532,15 @@ window.SONG_LINES = {
         "gloss": "poet-saint"
       }
     ],
-    "grammarNote": "Proper noun with melismatic prolongation."
+    "grammarNote": "Proper noun with melismatic prolongation.",
+    "sourceWords": [
+      {
+        "text": "कबीर...",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "suno-bhai-sadho-sadho": {
     "source": "सुनो भाई साधो साधो",
@@ -301,7 +565,33 @@ window.SONG_LINES = {
         "gloss": "O seekers [repeated vocative plural]"
       }
     ],
-    "grammarNote": "Imperative 'suno' with compound vocative phrase featuring emphatic reduplication of 'sādho'."
+    "grammarNote": "Imperative 'suno' with compound vocative phrase featuring emphatic reduplication of 'sādho'.",
+    "sourceWords": [
+      {
+        "text": "सुनो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "sadho-variations": {
     "source": "साधो... साधो... साधो साधो",
@@ -326,7 +616,33 @@ window.SONG_LINES = {
         "gloss": "O seekers [vocative plural]"
       }
     ],
-    "grammarNote": "Successive vocative plural tokens of 'sādhu' with musical extensions."
+    "grammarNote": "Successive vocative plural tokens of 'sādhu' with musical extensions.",
+    "sourceWords": [
+      {
+        "text": "साधो...",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साधो...",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "kanchan-nipjat-khaan-re": {
     "source": "कंचन निपजत खान रे",
@@ -351,7 +667,33 @@ window.SONG_LINES = {
         "gloss": "O [vocative/emphatic particle]"
       }
     ],
-    "grammarNote": "Habitual/present participle 'nipajata' with subject 'kañcana' and bare locative/ablative noun 'khāna' (in/from the mine), typical of Braj/Old Hindi syntax lacking an explicit postposition."
+    "grammarNote": "Habitual/present participle 'nipajata' with subject 'kañcana' and bare locative/ablative noun 'khāna' (in/from the mine), typical of Braj/Old Hindi syntax lacking an explicit postposition.",
+    "sourceWords": [
+      {
+        "text": "कंचन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निपजत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "खान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   }
 };
 

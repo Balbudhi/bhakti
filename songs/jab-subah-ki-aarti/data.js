@@ -71,7 +71,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Relative clause functioning as the direct object of the verb in the following line; mahasūs kiyā is a conjunct verb in the past perfective."
+    "grammarNote": "Relative clause functioning as the direct object of the verb in the following line; mahasūs kiyā is a conjunct verb in the past perfective.",
+    "sourceWords": [
+      {
+        "text": "शिरडी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "महसूस",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "किया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "main-aaj-use-dohrata-hoon": {
     "source": "मैं आज उसे दोहराता हूँ",
@@ -110,7 +142,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Subject-verb agreement: 1st person masculine singular (maiṁ ... dōharātā hūṁ); usē is the dative/accusative correlative pronoun."
+    "grammarNote": "Subject-verb agreement: 1st person masculine singular (maiṁ ... dōharātā hūṁ); usē is the dative/accusative correlative pronoun.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "उसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दोहराता",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "shayad-tum-samjho-aakhir-kyun": {
     "source": "शायद तुम समझो आखिर क्यों",
@@ -149,7 +213,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Subjunctive mood expressing potentiality (samajhō) conditioned by the adverbial particle śāyad."
+    "grammarNote": "Subjunctive mood expressing potentiality (samajhō) conditioned by the adverbial particle śāyad.",
+    "sourceWords": [
+      {
+        "text": "शायद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "समझो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आखिर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "main-sai-ke-gun-gata-hoon": {
     "source": "मैं साईं के गुण गाता हूँ",
@@ -194,7 +290,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Present imperfective construction (maiṁ ... gātā hūṁ) with genitive object phrase (sāīṁ kē guṇ)."
+    "grammarNote": "Present imperfective construction (maiṁ ... gātā hūṁ) with genitive object phrase (sāīṁ kē guṇ).",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गाता",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "jab-subah-ki-aarti-khatam-hui": {
     "source": "जब सुबह की आरती ख़त्म हुई और बाबा ने स्नान किया",
@@ -269,7 +403,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound temporal clause joined by aur: first clause is intransitive feminine (āratī ... huī), second clause is ergative masculine (bābā nē snān kiyā)."
+    "grammarNote": "Compound temporal clause joined by aur: first clause is intransitive feminine (āratī ... huī), second clause is ergative masculine (bābā nē snān kiyā).",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुबह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ख़त्म",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हुई",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "और",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ने",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "स्नान",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "किया",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "use-dekh-ke-mere-paap-dhule": {
     "source": "उसे देख के मेरे पाप धुले",
@@ -314,7 +516,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle clause (usē dēkh kē) followed by intransitive/passive verb dhulē agreeing with plural masculine noun pāp."
+    "grammarNote": "Conjunctive participle clause (usē dēkh kē) followed by intransitive/passive verb dhulē agreeing with plural masculine noun pāp.",
+    "sourceWords": [
+      {
+        "text": "उसे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "धुले",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "main-paapi-se-insaan-bana": {
     "source": "मैं पापी से इंसान बना",
@@ -353,7 +593,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Ablative of transition (pāpī sē) with copular/transformational verb banā."
+    "grammarNote": "Ablative of transition (pāpī sē) with copular/transformational verb banā.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पापी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "इंसान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बना",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "om-sai-om-1": {
     "source": "ॐ साईं ॐ",
@@ -380,7 +652,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sacred mantric formula without explicit verbal conjugation."
+    "grammarNote": "Sacred mantric formula without explicit verbal conjugation.",
+    "sourceWords": [
+      {
+        "text": "ॐ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ॐ",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "jab-subah-ko-sai-charnon-mein": {
     "source": "जब सुबह को साईं चरणों में जल दूध की धारा बहने लगी",
@@ -461,7 +753,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Inceptive construction: oblique infinitive (bahanē) + auxiliary verb (lagī) agreeing with feminine singular subject dhārā; dvandva-like compound modifier jal dūdh."
+    "grammarNote": "Inceptive construction: oblique infinitive (bahanē) + auxiliary verb (lagī) agreeing with feminine singular subject dhārā; dvandva-like compound modifier jal dūdh.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुबह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चरणों",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दूध",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "धारा",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बहने",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "लगी",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "beh-gayi-bhavna-badle-ki": {
     "source": "बह गई भावना बदले की",
@@ -500,7 +866,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Inverted word order for poetic emphasis (verb bah gaī precedes subject bhāvanā badalē kī); compound verb with jānā expressing completive aspect."
+    "grammarNote": "Inverted word order for poetic emphasis (verb bah gaī precedes subject bhāvanā badalē kī); compound verb with jānā expressing completive aspect.",
+    "sourceWords": [
+      {
+        "text": "बह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भावना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बदले",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "maine-dushman-ko-bhi-maaf-kiya": {
     "source": "मैंने दुश्मन को भी माफ़ किया",
@@ -545,7 +943,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Transitive perfective construction with ergative subject (maiṁnē) and marked direct object (duśman kō bhī)."
+    "grammarNote": "Transitive perfective construction with ergative subject (maiṁnē) and marked direct object (duśman kō bhī).",
+    "sourceWords": [
+      {
+        "text": "मैंने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दुश्मन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "माफ़",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "किया",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "jab-subah-savere-sai-ko": {
     "source": "जब सुबह सवेरे साईं को ओढ़ाई गई नई चादर",
@@ -608,7 +1044,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Passive construction (ōṛhāī gaī) agreeing in gender and number with the grammatical subject naī cādar; subah savērē is a common tautological temporal compound."
+    "grammarNote": "Passive construction (ōṛhāī gaī) agreeing in gender and number with the grammatical subject naī cādar; subah savērē is a common tautological temporal compound.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुबह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सवेरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ओढ़ाई",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "गई",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "नई",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "चादर",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "maine-saare-chole-phenk-diye": {
     "source": "मैंने सारे चोले फेंक दिए",
@@ -647,7 +1139,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Transitive compound verb (phēṁk diyē) with dēnā as completive operator agreeing with plural direct object cōlē."
+    "grammarNote": "Transitive compound verb (phēṁk diyē) with dēnā as completive operator agreeing with plural direct object cōlē.",
+    "sourceWords": [
+      {
+        "text": "मैंने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सारे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चोले",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "फेंक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिए",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "maine-sai-chola-pehan-liya": {
     "source": "मैंने साईं चोला पहन लिया",
@@ -686,7 +1210,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb with lēnā signifying that the action is performed for the agent's own benefit; verb agrees with masculine singular object cōlā."
+    "grammarNote": "Compound verb with lēnā signifying that the action is performed for the agent's own benefit; verb agrees with masculine singular object cōlā.",
+    "sourceWords": [
+      {
+        "text": "मैंने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चोला",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पहन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लिया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "jab-subah-savere-pehnaya": {
     "source": "जब सुबह सवेरे पहनाया साईं को मुकुट पुजारी ने",
@@ -749,7 +1305,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Postposed ergative subject (pujārī nē); transitive causative verb pahnāyā agreeing with direct object mukuṭ."
+    "grammarNote": "Postposed ergative subject (pujārī nē); transitive causative verb pahnāyā agreeing with direct object mukuṭ.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुबह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सवेरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पहनाया",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मुकुट",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पुजारी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ने",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "maine-khud-ki-shaan-mita-daali": {
     "source": "मैंने ख़ुद की शान मिटा डाली",
@@ -794,7 +1406,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Intensive compound verb with ḍālnā indicating violent, forceful, or definitive completion; agrees with feminine singular noun śān."
+    "grammarNote": "Intensive compound verb with ḍālnā indicating violent, forceful, or definitive completion; agrees with feminine singular noun śān.",
+    "sourceWords": [
+      {
+        "text": "मैंने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ख़ुद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "शान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मिटा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "डाली",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "main-andar-andar-mukt-hua": {
     "source": "मैं अंदर-अंदर मुक्त हुआ",
@@ -827,7 +1477,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Intransitive copular sentence with predicate adjective mukt; andar-andar is a reduplicated spatial adverb modifying the internal locus of the transformation."
+    "grammarNote": "Intransitive copular sentence with predicate adjective mukt; andar-andar is a reduplicated spatial adverb modifying the internal locus of the transformation.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अंदर-अंदर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुक्त",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हुआ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "jab-charon-aur-se-baba-par": {
     "source": "जब चारों ओर से बाबा पर, बाबा पर, बाबा पर",
@@ -896,7 +1572,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Suspended adverbial/prepositional phrase; repetition of bābā par builds rhythmic and rhetorical intensity."
+    "grammarNote": "Suspended adverbial/prepositional phrase; repetition of bābā par builds rhythmic and rhetorical intensity.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चारों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ओर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पर,",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पर,",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "jab-charon-aur-se-phoolon-ki": {
     "source": "जब चारों ओर से बाबा पर फूलों की वर्षा होने लगी",
@@ -971,7 +1709,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Inceptive verb construction (hōnē lagī) agreeing with feminine singular noun varṣā."
+    "grammarNote": "Inceptive verb construction (hōnē lagī) agreeing with feminine singular noun varṣā.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चारों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ओर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "फूलों",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "वर्षा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "होने",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "लगी",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "jaane-kyun-meri-aankhon-se": {
     "source": "जाने क्यों मेरी आँखों से असुवन की बरखा होने लगी",
@@ -1040,7 +1846,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dialectal/poetic noun asuvan (from āṅsū) paired with tadbhava barakhā (counterpart to tatsama varṣā in line 19); inceptive construction hōnē lagī agrees with feminine barakhā."
+    "grammarNote": "Dialectal/poetic noun asuvan (from āṅsū) paired with tadbhava barakhā (counterpart to tatsama varṣā in line 19); inceptive construction hōnē lagī agrees with feminine barakhā.",
+    "sourceWords": [
+      {
+        "text": "जाने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मेरी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आँखों",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "असुवन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बरखा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "होने",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "लगी",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "hairan-tha-main": {
     "source": "हैरान था मैं",
@@ -1067,7 +1935,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Inverted stative past clause (predicate adjective hairān + copula thā + subject maiṁ)."
+    "grammarNote": "Inverted stative past clause (predicate adjective hairān + copula thā + subject maiṁ).",
+    "sourceWords": [
+      {
+        "text": "हैरान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "था",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "hairan-tha-main-sai-ne-mujhe": {
     "source": "हैरान था मैं साईं ने मुझे क्या सोच के मालामाल किया",
@@ -1142,7 +2030,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Main clause (hairān thā maiṁ) governing an embedded interrogative-causal clause with conjunctive participle (kyā sōc kē) and ergative construction (sāīṁ nē mujhē mālāmāl kiyā)."
+    "grammarNote": "Main clause (hairān thā maiṁ) governing an embedded interrogative-causal clause with conjunctive participle (kyā sōc kē) and ergative construction (sāīṁ nē mujhē mālāmāl kiyā).",
+    "sourceWords": [
+      {
+        "text": "हैरान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "था",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मुझे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सोच",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मालामाल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "किया",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "main-kya-kya-maangne-aaya-tha": {
     "source": "मैं क्या-क्या मांगने आया था बिन मांगे क्या-क्या पा बैठा",
@@ -1211,7 +2167,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound sentence with antithetical parallel clauses: past perfect of motion/purpose (māṅgnē āyā thā) balanced with compound verb of sudden/inadvertent acquisition (pā baiṭhā)."
+    "grammarNote": "Compound sentence with antithetical parallel clauses: past perfect of motion/purpose (māṅgnē āyā thā) balanced with compound verb of sudden/inadvertent acquisition (pā baiṭhā).",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "क्या-क्या",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मांगने",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आया",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "था",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मांगे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "क्या-क्या",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बैठा",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "bin-maange-kya-kya-paa-baitha": {
     "source": "बिन मांगे क्या-क्या पा बैठा",
@@ -1250,7 +2268,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Elliptical clause with omitted subject pronoun maiṁ; compound verb pā baiṭhā combines pā (receive) with baiṭhnā to denote an irreversible, sudden, or uncalculated outcome."
+    "grammarNote": "Elliptical clause with omitted subject pronoun maiṁ; compound verb pā baiṭhā combines pā (receive) with baiṭhnā to denote an irreversible, sudden, or uncalculated outcome.",
+    "sourceWords": [
+      {
+        "text": "बिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मांगे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्या-क्या",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बैठा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "om-fade": {
     "source": "ॐ...",
@@ -1265,7 +2315,15 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Trailing mantric closing vocable with trailing punctuation indicating fade-out."
+    "grammarNote": "Trailing mantric closing vocable with trailing punctuation indicating fade-out.",
+    "sourceWords": [
+      {
+        "text": "ॐ...",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   }
 };
 

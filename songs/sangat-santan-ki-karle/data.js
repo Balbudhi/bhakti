@@ -44,7 +44,15 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Non-lexical musical vocable / interjection (ālāp)."
+    "grammarNote": "Non-lexical musical vocable / interjection (ālāp).",
+    "sourceWords": [
+      {
+        "text": "आ...",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "refrain-main": {
     "source": "संगत संतन की कर ले",
@@ -83,7 +91,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound imperative `kar le` (karnā + auxiliary lenā expressing action for one's own benefit) governing the feminine genitive phrase `santan kī saṅgat`."
+    "grammarNote": "Compound imperative `kar le` (karnā + auxiliary lenā expressing action for one's own benefit) governing the feminine genitive phrase `santan kī saṅgat`.",
+    "sourceWords": [
+      {
+        "text": "संगत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "संतन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "refrain-sub": {
     "source": "जनम का सार्थक कछु कर ले",
@@ -128,7 +168,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Noun phrase `janam kā sārthak` (sārthak used substantively) with quantifier `kachu` + imperative compound verb `kar le`."
+    "grammarNote": "Noun phrase `janam kā sārthak` (sārthak used substantively) with quantifier `kachu` + imperative compound verb `kar le`.",
+    "sourceWords": [
+      {
+        "text": "जनम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सार्थक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कछु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse1-line1": {
     "source": "उत्तम नर देह पाया",
@@ -161,7 +239,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound noun `nar deh` modified by adjective `uttam`; transitive verb `pāyā` in past perfective with unexpressed subject."
+    "grammarNote": "Compound noun `nar deh` modified by adjective `uttam`; transitive verb `pāyā` in past perfective with unexpressed subject.",
+    "sourceWords": [
+      {
+        "text": "उत्तम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "देह",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाया",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse1-line2": {
     "source": "प्राणी इसका हित कछु कर ले",
@@ -206,7 +310,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative `prāṇī`; pronoun `iskā` refers back to `nar deh`; compound imperative `kar le`."
+    "grammarNote": "Vocative `prāṇī`; pronoun `iskā` refers back to `nar deh`; compound imperative `kar le`.",
+    "sourceWords": [
+      {
+        "text": "प्राणी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "इसका",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कछु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse1-line3": {
     "source": "सद्गुरु चरण लाग बावा",
@@ -239,7 +381,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperative verb stem `lāg` governing object `sadguru caraṇ`, concluding with vocative `bāvā`."
+    "grammarNote": "Imperative verb stem `lāg` governing object `sadguru caraṇ`, concluding with vocative `bāvā`.",
+    "sourceWords": [
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लाग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बावा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse1-line4": {
     "source": "जनम मरण दूर कर ले",
@@ -278,7 +446,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dvandva compound `janam maraṇ` as direct object of transitive compound verb `dūr kar le`."
+    "grammarNote": "Dvandva compound `janam maraṇ` as direct object of transitive compound verb `dūr kar le`.",
+    "sourceWords": [
+      {
+        "text": "जनम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मरण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दूर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse2-line1": {
     "source": "कहाँ से आया कहाँ जावेगा",
@@ -317,7 +517,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Two parallel interrogative clauses: past perfective `āyā` and future indicative `jāvegā` with unexpressed 2nd/3rd person subject."
+    "grammarNote": "Two parallel interrogative clauses: past perfective `āyā` and future indicative `jāvegā` with unexpressed 2nd/3rd person subject.",
+    "sourceWords": [
+      {
+        "text": "कहाँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आया",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कहाँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जावेगा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse2-line2": {
     "source": "ये कछु मालूम करना",
@@ -350,7 +582,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Demonstrative pronoun `ye` as object of predicative phrase `mālūm karnā` where the infinitive acts as an imperative of obligation."
+    "grammarNote": "Demonstrative pronoun `ye` as object of predicative phrase `mālūm karnā` where the infinitive acts as an imperative of obligation.",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कछु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मालूम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करना",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse2-line3": {
     "source": "दो दिन की जिंदगानी बंदे हुशियार होकर चलना",
@@ -407,7 +665,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Temporal genitive topic `do din kī jindagānī`; vocative `bande`; conjunctive participle `hokar` adverbially modifying infinitival imperative `calnā`."
+    "grammarNote": "Temporal genitive topic `do din kī jindagānī`; vocative `bande`; conjunctive participle `hokar` adverbially modifying infinitival imperative `calnā`.",
+    "sourceWords": [
+      {
+        "text": "दो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जिंदगानी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बंदे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हुशियार",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "होकर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "चलना",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "verse3-line1": {
     "source": "कौन किसी के जोरू लड़के",
@@ -446,7 +754,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Rhetorical interrogative with compound subject `jorū laṛke`, genitive postpositional phrase `kisī ke`, and omitted copula `haĩ`."
+    "grammarNote": "Rhetorical interrogative with compound subject `jorū laṛke`, genitive postpositional phrase `kisī ke`, and omitted copula `haĩ`.",
+    "sourceWords": [
+      {
+        "text": "कौन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "किसी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जोरू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लड़के",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse3-line2": {
     "source": "कौन किसी के साले",
@@ -479,7 +819,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Parallel elliptical interrogative clause with subject `sāle` and genitive `kisī ke`."
+    "grammarNote": "Parallel elliptical interrogative clause with subject `sāle` and genitive `kisī ke`.",
+    "sourceWords": [
+      {
+        "text": "कौन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "किसी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साले",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse3-line3": {
     "source": "जब लग पल्लो में पैसा भाई",
@@ -524,7 +890,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Temporal subordinator `jab lag` + locative phrase `pallo mẽ` (pallo is dialectal locative/oblique of pallā) + subject `paisā` + vocative `bhāī`."
+    "grammarNote": "Temporal subordinator `jab lag` + locative phrase `pallo mẽ` (pallo is dialectal locative/oblique of pallā) + subject `paisā` + vocative `bhāī`.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पल्लो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पैसा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse3-line4": {
     "source": "तब लग मीठा बोले",
@@ -557,7 +961,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Correlative `tab lag` matching `jab lag`; adverbial/adjectival `mīṭhā` qualifying dialectal 3rd person present verb `bole`."
+    "grammarNote": "Correlative `tab lag` matching `jab lag`; adverbial/adjectival `mīṭhā` qualifying dialectal 3rd person present verb `bole`.",
+    "sourceWords": [
+      {
+        "text": "तब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मीठा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बोले",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse4-line1": {
     "source": "कहत कबीरा सुनो भाई साधो",
@@ -596,7 +1026,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperfective participle `kahat` functioning as present tense with proper noun `Kabīrā`; imperative `suno` followed by vocative compound `bhāī sādho`."
+    "grammarNote": "Imperfective participle `kahat` functioning as present tense with proper noun `Kabīrā`; imperative `suno` followed by vocative compound `bhāī sādho`.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीरा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुनो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse4-line1-sub": {
     "source": "सुनो भाई साधो",
@@ -623,7 +1085,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperative `suno` with vocative address `bhāī sādho`."
+    "grammarNote": "Imperative `suno` with vocative address `bhāī sādho`.",
+    "sourceWords": [
+      {
+        "text": "सुनो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "verse4-line2": {
     "source": "बार-बार नहीं आना",
@@ -650,7 +1132,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated iterative adverb `bār-bār` qualifying negated infinitive `nahī̃ ānā` expressing future impossibility/warning."
+    "grammarNote": "Reduplicated iterative adverb `bār-bār` qualifying negated infinitive `nahī̃ ānā` expressing future impossibility/warning.",
+    "sourceWords": [
+      {
+        "text": "बार-बार",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आना",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "verse4-line2-taan": {
     "source": "आ... बार-बार नहीं आना",
@@ -683,7 +1185,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Musical vocable `Ā...` preceding the negated infinitive phrase `bār-bār nahī̃ ānā`."
+    "grammarNote": "Musical vocable `Ā...` preceding the negated infinitive phrase `bār-bār nahī̃ ānā`.",
+    "sourceWords": [
+      {
+        "text": "आ...",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बार-बार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आना",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse4-line3": {
     "source": "अपना हित कछु कर ले भाई",
@@ -728,7 +1256,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reflexive possessive `apnā` modifying `hit`; compound reflexive imperative `kar le`; vocative `bhāī`."
+    "grammarNote": "Reflexive possessive `apnā` modifying `hit`; compound reflexive imperative `kar le`; vocative `bhāī`.",
+    "sourceWords": [
+      {
+        "text": "अपना",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हित",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कछु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse4-line4": {
     "source": "आखिर अकेला जाना",
@@ -755,7 +1321,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Adverb `ākhir` modifying the masculine singular predicate adjective `akelā` and destination infinitive of necessity `jānā`."
+    "grammarNote": "Adverb `ākhir` modifying the masculine singular predicate adjective `akelā` and destination infinitive of necessity `jānā`.",
+    "sourceWords": [
+      {
+        "text": "आखिर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अकेला",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जाना",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   }
 };
 

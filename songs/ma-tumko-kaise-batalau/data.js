@@ -54,7 +54,15 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Non-lexical vocable / musical alāp opening the hymn."
+    "grammarNote": "Non-lexical vocable / musical alāp opening the hymn.",
+    "sourceWords": [
+      {
+        "text": "आ...",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "refrain-short": {
     "source": "माँ तुमको कैसे बतलाऊँ",
@@ -87,7 +95,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "First-person singular subjunctive verb form 'batalāū̃' with second-person dative pronoun 'tumako' and interrogative manner adverb 'kaise'."
+    "grammarNote": "First-person singular subjunctive verb form 'batalāū̃' with second-person dative pronoun 'tumako' and interrogative manner adverb 'kaise'.",
+    "sourceWords": [
+      {
+        "text": "माँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुमको",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बतलाऊँ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-full": {
     "source": "माँ तुमको कैसे बतलाऊँ मेरे हृदय की अंतर्वाणी",
@@ -144,7 +178,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "The compound noun 'antarvāṇī' (antar + vāṇī) serves as the direct object of the transitive subjunctive verb 'batalāū̃', modified by the genitive phrase 'mere hr̥daya kī'."
+    "grammarNote": "The compound noun 'antarvāṇī' (antar + vāṇī) serves as the direct object of the transitive subjunctive verb 'batalāū̃', modified by the genitive phrase 'mere hr̥daya kī'.",
+    "sourceWords": [
+      {
+        "text": "माँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुमको",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बतलाऊँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "अंतर्वाणी",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "verse1-murt": {
     "source": "देख तुम्हारी करुणामय मूरत",
@@ -177,7 +261,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Absolutive verbal participle 'dekha' (poetic for 'dekhakar') taking the noun phrase 'tumhārī karuṇāmaya mūrata' as its direct object."
+    "grammarNote": "Absolutive verbal participle 'dekha' (poetic for 'dekhakar') taking the noun phrase 'tumhārī karuṇāmaya mūrata' as its direct object.",
+    "sourceWords": [
+      {
+        "text": "देख",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम्हारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करुणामय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मूरत",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse1-pani": {
     "source": "आँखों से केवल झरता पानी",
@@ -216,7 +326,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperfective participle 'jharatā' used with an elided copula ('hai'), governed by the ablative adverbial phrase 'ā̃khõ se'."
+    "grammarNote": "Imperfective participle 'jharatā' used with an elided copula ('hai'), governed by the ablative adverbial phrase 'ā̃khõ se'.",
+    "sourceWords": [
+      {
+        "text": "आँखों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "केवल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "झरता",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse2-man-lalchata": {
     "source": "जब कहने को मन ललचाता हृदय प्रेम से गदगद होता",
@@ -285,7 +427,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Two parallel temporal sub-clauses joined under 'jaba', both utilizing habitual/imperfective participles with omitted present copulas."
+    "grammarNote": "Two parallel temporal sub-clauses joined under 'jaba', both utilizing habitual/imperfective participles with omitted present copulas.",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहने",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ललचाता",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रेम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "गदगद",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "होता",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "verse2-shabd-kanth": {
     "source": "शब्द कंठ से निकल ना पाता",
@@ -330,7 +534,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound potential verb construction 'nikala pānā' negated by 'nā' placed between the main verb stem and the inflected auxiliary."
+    "grammarNote": "Compound potential verb construction 'nikala pānā' negated by 'nā' placed between the main verb stem and the inflected auxiliary.",
+    "sourceWords": [
+      {
+        "text": "शब्द",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कंठ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "निकल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पाता",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse2-karuna-khani": {
     "source": "तुम हो माँ करुणा की खानी",
@@ -375,7 +617,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Predicate nominal sentence with subject 'tuma', copula 'ho', and predicate complement 'karuṇā kī khānī'."
+    "grammarNote": "Predicate nominal sentence with subject 'tuma', copula 'ho', and predicate complement 'karuṇā kī khānī'.",
+    "sourceWords": [
+      {
+        "text": "तुम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "माँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करुणा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "खानी",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse3-sharada-maa": {
     "source": "शारदा माँ तुम हृदय निवासिनी जानती हो मेरी जीवन कहानी",
@@ -444,7 +724,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Tatpuruṣa compound epithet 'hr̥daya-nivāsinī' in apposition to subject 'tuma', governing the direct object 'merī jīvana kahānī' with the present imperfective verb 'jānatī ho'."
+    "grammarNote": "Tatpuruṣa compound epithet 'hr̥daya-nivāsinī' in apposition to subject 'tuma', governing the direct object 'merī jīvana kahānī' with the present imperfective verb 'jānatī ho'.",
+    "sourceWords": [
+      {
+        "text": "शारदा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "माँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "निवासिनी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जानती",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मेरी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कहानी",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "verse3-dhara": {
     "source": "बरसा कर करुणा की धारा",
@@ -483,7 +825,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Absolutive causative construction 'barasā kara' governing the direct object phrase 'karuṇā kī dhārā'."
+    "grammarNote": "Absolutive causative construction 'barasā kara' governing the direct object phrase 'karuṇā kī dhārā'.",
+    "sourceWords": [
+      {
+        "text": "बरसा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करुणा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धारा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse3-bhavani": {
     "source": "संतान को गोद उठाओ भवानी",
@@ -522,7 +896,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperative verb 'uṭhāo' with accusative object 'santāna ko', locative noun 'goda' (with elided postposition 'meṃ'), and vocative divine epithet 'bhavānī'."
+    "grammarNote": "Imperative verb 'uṭhāo' with accusative object 'santāna ko', locative noun 'goda' (with elided postposition 'meṃ'), and vocative divine epithet 'bhavānī'.",
+    "sourceWords": [
+      {
+        "text": "संतान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गोद",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "उठाओ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भवानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 

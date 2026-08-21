@@ -44,7 +44,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "जब दिल उदास हो तो",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "उदास",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "sai_ka_naam_lena": {
     "roman": "Sāīṅ kā nām lenā",
@@ -68,7 +100,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "साईं का नाम लेना",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "साईं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लेना",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "jeevan_soona_lage_to": {
     "roman": "Jīvan sūnā lage to",
@@ -92,7 +150,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "जीवन सूना लगे तो",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सूना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लगे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "jab_aafat_ghere_tujhko": {
     "roman": "Jab āfat ghere tujhko",
@@ -116,7 +200,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "जब आफ़त घेरे तुझको",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आफ़त",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घेरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तुझको",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "sab_chhod_de_tera_saath": {
     "roman": "Sab chhoṛ de terā sāth",
@@ -140,7 +250,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "सब छोड़ दे तेरा साथ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "सब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साथ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "jab_kahin_na_mile_sahaara": {
     "roman": "Jab kahīṅ na mile sahārā",
@@ -164,7 +306,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "जब कहीं न मिले सहारा",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहीं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मिले",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सहारा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "jeevan_ka_har_din_to": {
     "roman": "Jīvan kā har din to",
@@ -192,7 +366,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "जीवन का हर दिन तो",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "roshan_nahin_hota": {
     "roman": "Roshan nahīṅ hotā",
@@ -212,7 +418,27 @@ window.SONG_LINES = {
       }
     ],
     "source": "रोशन नहीं होता",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "रोशन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "होता",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "jab_shaam_nazar_aaye_to": {
     "roman": "Jab śām nazar āe to",
@@ -236,7 +462,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "जब शाम नज़र आए तो",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "शाम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नज़र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आए",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "is_ghat_ka_kya_bharosa": {
     "roman": "Is ghaṭ kā kyā bharosā",
@@ -260,7 +518,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "इस घट का क्या भरोसा",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "इस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "घट",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भरोसा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "ye_kabhi_bhi_chhoot_jaaye": {
     "roman": "Ye kabhī bhī chhūṭ jāe",
@@ -288,7 +578,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ये कभी भी छूट जाए",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कभी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "छूट",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जाए",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "jab_aakhiri_saans_chale_to": {
     "roman": "Jab ākhirī sāṅs chale to",
@@ -316,7 +638,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "जब आख़िरी सांस चले तो",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आख़िरी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सांस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चले",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 
@@ -674,10 +1028,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 400.1,
-    "end": 406.0
+    "end": 406
   },
   {
-    "start": 406.0,
+    "start": 406,
     "end": 412.1
   },
   {

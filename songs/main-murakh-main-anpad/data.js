@@ -48,7 +48,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "मैं मूरख मैं अनपढ़ बालक",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मूरख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अनपढ़",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "refrain_b": {
     "roman": "Terā sumiraṇ kaise karūṅ",
@@ -72,7 +104,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "तेरा सुमिरन कैसे करूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुमिरन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करूँ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain_c": {
     "roman": "Maiṅ ajñānī maiṅ pāpī hūṅ",
@@ -100,7 +158,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "मैं अज्ञानी मैं पापी हूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अज्ञानी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पापी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "refrain_d": {
     "roman": "Tumko kaise citt meṅ dharūṅ",
@@ -128,7 +218,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "तुमको कैसे चित में धरूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "तुमको",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धरूँ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1a": {
     "roman": "Yeh māyā moh kī nagrī sab",
@@ -160,7 +282,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "यह माया मोह की नगरी सब",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "यह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "माया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मोह",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नगरी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1b": {
     "roman": "Jādū hai parchhāī hai",
@@ -184,7 +344,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "जादू है परछाई है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जादू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "परछाई",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1c": {
     "roman": "Saccā hai ek nām agar to",
@@ -216,7 +402,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "सच्चा है एक नाम अगर तो",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "सच्चा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "एक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अगर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1d": {
     "roman": "Bas woh merā Sāīṅ hai",
@@ -244,7 +468,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "बस वो मेरा साईं है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "बस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मेरा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1e": {
     "roman": "Duniyā ke bandhan meṅ uljhā",
@@ -272,7 +528,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "दुनिया के बंधन में उलझा",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "दुनिया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बंधन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उलझा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1f": {
     "roman": "Terī pūjā kaise karūṅ",
@@ -296,7 +584,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "तेरी पूजा कैसे करूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पूजा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करूँ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2a": {
     "roman": "Sukh duḥkh hai ek rāh agar to",
@@ -332,7 +646,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "सुख दुख है एक राह अगर तो",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "सुख",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दुख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "एक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राह",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "अगर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v2b": {
     "roman": "Sāṅseṅ bahtā pānī hai",
@@ -356,7 +714,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "सांसें बहता पानी है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "सांसें",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बहता",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पानी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2c": {
     "roman": "Māṭī kā putlā hai mānav",
@@ -384,7 +768,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "माटी का पुतला है मानव",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "माटी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पुतला",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मानव",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2d": {
     "roman": "Bākī sab kuch fānī hai",
@@ -412,7 +828,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "बाकी सब कुछ फ़ानी है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "बाकी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कुछ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "फ़ानी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2e": {
     "roman": "Arpaṇ tujhko jīvan kar dūṅ",
@@ -440,7 +888,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "अर्पण तुझको जीवन कर दूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "अर्पण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुझको",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दूँ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2f": {
     "roman": "Koī jatan to aisā karūṅ",
@@ -468,7 +948,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "कोई जतन तो ऐसा करूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "कोई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जतन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करूँ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3a": {
     "roman": "Tum bin jīvan sūnā sūnā",
@@ -496,7 +1008,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "तुम बिन जीवन सूना सूना",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "तुम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सूना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सूना",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3b": {
     "roman": "Ab to darśan de do mujhe",
@@ -528,7 +1072,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "अब तो दर्शन दे दो मुझे",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "अब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दर्शन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मुझे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v3c": {
     "roman": "Sāṅsoṅ meṅ ghul jāo Sāīṅ",
@@ -556,7 +1138,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "सांसों में घुल जाओ साईं",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "सांसों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घुल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जाओ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3d": {
     "roman": "Man kā tarpaṇ de do mujhe",
@@ -588,7 +1202,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "मन का तर्पण दे दो मुझे",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तर्पण",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मुझे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v3e": {
     "roman": "Moh māyā kā bhār bahut hai",
@@ -620,7 +1272,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "मोह माया का भार बहुत है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मोह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "माया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भार",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बहुत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v3f": {
     "roman": "Terā cintan kaise karūṅ",
@@ -644,7 +1334,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "तेरा चिंतन कैसे करूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चिंतन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करूँ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   }
 };
 
@@ -866,10 +1582,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 56.45,
-    "end": 68.0
+    "end": 68
   },
   {
-    "start": 68.0,
+    "start": 68,
     "end": 74.2
   },
   {
@@ -882,10 +1598,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 117.5,
-    "end": 130.0
+    "end": 130
   },
   {
-    "start": 130.0,
+    "start": 130,
     "end": 142.2
   },
   {
