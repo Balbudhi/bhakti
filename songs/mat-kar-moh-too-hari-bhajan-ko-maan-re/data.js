@@ -248,7 +248,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kabīra",
-        "gloss": "Kabir [proper name]"
+        "gloss": "poet-saint"
       },
       {
         "roman": "suno",
@@ -273,7 +273,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kabīra...",
-        "gloss": "Kabir... [proper name, vocally sustained/extended]"
+        "gloss": "poet-saint"
       }
     ],
     "grammarNote": "Proper noun with melismatic prolongation."
