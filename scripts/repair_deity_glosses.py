@@ -30,7 +30,7 @@ GLOSSES = {
     "puṇḍalīka": "devotee associated with Viṭṭhala",
     "śirḍī": "town associated with Sāī Bābā",
     "īśvara": "the Lord; supreme ruler",
-    "sarasvatī": "goddess of speech, learning, and inspired expression",
+    "sarasvatī": "she who possesses flowing waters; Vedic goddess of speech, learning, and inspired expression",
     "sāībābā": "revered saint of Śirḍī",
 }
 PLACEHOLDERS = {"proper name", "proper name or untranslated term", "untranslated term"}
