@@ -64,6 +64,68 @@ window.SONG_LINES = {
         "roman": "māṅgiye",
         "gloss": "please ask, seek"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "ईश्वर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कुछ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "माँगना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सन्त",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "माँगिये।",
+        "wordIndices": [
+          8
+        ]
+      }
     ]
   },
   "refrain_b": {
@@ -106,6 +168,68 @@ window.SONG_LINES = {
       {
         "roman": "pūchiye",
         "gloss": "please ask, inquire"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "ईश्वर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कुछ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पूछना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पता",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पूछिये।",
+        "wordIndices": [
+          8
+        ]
       }
     ]
   },
@@ -154,6 +278,68 @@ window.SONG_LINES = {
         "roman": "sāgar",
         "gloss": "ocean"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "सन्त",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पावन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धारा,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दया",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "सागर।",
+        "wordIndices": [
+          9
+        ]
+      }
     ]
   },
   "v1b": {
@@ -193,6 +379,62 @@ window.SONG_LINES = {
         "roman": "puṇyavān",
         "gloss": "virtuous, meritorious"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "एक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नजर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जीवन,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सुन्दर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पावन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पुण्यवान।",
+        "wordIndices": [
+          7
+        ]
+      }
     ]
   },
   "v1c": {
@@ -211,6 +453,26 @@ window.SONG_LINES = {
       {
         "roman": "puṇyavān",
         "gloss": "virtuous, meritorious"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "सुन्दर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पावन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पुण्यवान।",
+        "wordIndices": [
+          2
+        ]
       }
     ]
   },
@@ -263,6 +525,74 @@ window.SONG_LINES = {
         "roman": "suniye",
         "gloss": "please listen to"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "पूजा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पाठ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लगे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सन्त",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "वचन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सुनिये।",
+        "wordIndices": [
+          10
+        ]
+      }
     ]
   },
   "v2b": {
@@ -314,6 +644,74 @@ window.SONG_LINES = {
         "roman": "kījiye",
         "gloss": "please do, offer"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "हरि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पूजा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लगे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पूजा",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "कीजिये।",
+        "wordIndices": [
+          10
+        ]
+      }
     ]
   },
   "v2c": {
@@ -336,6 +734,32 @@ window.SONG_LINES = {
       {
         "roman": "kījiye",
         "gloss": "please do, offer"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पूजा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कीजिये।",
+        "wordIndices": [
+          3
+        ]
       }
     ]
   },
@@ -379,6 +803,62 @@ window.SONG_LINES = {
       {
         "roman": "nidhān",
         "gloss": "treasure-house, abode"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "धन्य",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "धन्य",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मेरे,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "साईंनाथ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "निधान।",
+        "wordIndices": [
+          8
+        ]
       }
     ]
   },
@@ -431,6 +911,80 @@ window.SONG_LINES = {
         "roman": "sthān",
         "gloss": "place, abode"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "जन्म",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जन्म",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अपने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चरणों",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "इस",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सन्तान",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "स्थान।",
+        "wordIndices": [
+          10
+        ]
+      }
     ]
   },
   "v3c": {
@@ -457,6 +1011,44 @@ window.SONG_LINES = {
       {
         "roman": "sthān",
         "gloss": "place, abode"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "इस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सन्तान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्थान।",
+        "wordIndices": [
+          4
+        ]
       }
     ]
   }

@@ -54,7 +54,33 @@ window.SONG_LINES = {
         "gloss": "brothers"
       }
     ],
-    "grammarNote": "Elided present copula (hain). 'paisā ke' is oblique genitive modifying the plural predicate nominative 'bhāī'."
+    "grammarNote": "Elided present copula (hain). 'paisā ke' is oblique genitive modifying the plural predicate nominative 'bhāī'.",
+    "sourceWords": [
+      {
+        "text": "सब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पैसा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "ref-2": {
     "source": "भाई सब पैसा के भाई",
@@ -83,7 +109,39 @@ window.SONG_LINES = {
         "gloss": "brothers"
       }
     ],
-    "grammarNote": "Initial 'Bhāī' is vocative singular; final 'bhāī' is plural predicate noun. Copula is elided."
+    "grammarNote": "Initial 'Bhāī' is vocative singular; final 'bhāī' is plural predicate noun. Copula is elided.",
+    "sourceWords": [
+      {
+        "text": "भाई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पैसा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "ref-3": {
     "source": "दिल का साथी नहीं कोई",
@@ -112,7 +170,39 @@ window.SONG_LINES = {
         "gloss": "anyone"
       }
     ],
-    "grammarNote": "Inverted syntax for negative existential statement with elided copula hai (Koī dil kā sāthī nahīñ hai)."
+    "grammarNote": "Inverted syntax for negative existential statement with elided copula hai (Koī dil kā sāthī nahīñ hai).",
+    "sourceWords": [
+      {
+        "text": "दिल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साथी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1-1": {
     "source": "खाने पीने को पैसा होवे तो",
@@ -145,7 +235,45 @@ window.SONG_LINES = {
         "gloss": "then / if"
       }
     ],
-    "grammarNote": "Paired oblique verbal nouns governed by postposition 'ko'. 'hove' is a dialectal 3sg form of honā."
+    "grammarNote": "Paired oblique verbal nouns governed by postposition 'ko'. 'hove' is a dialectal 3sg form of honā.",
+    "sourceWords": [
+      {
+        "text": "खाने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पीने",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पैसा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "होवे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1-2": {
     "source": "जोरू बंदगी करे",
@@ -166,7 +294,27 @@ window.SONG_LINES = {
         "gloss": "does / performs [3rd person singular]"
       }
     ],
-    "grammarNote": "Subject-Object-Verb (SOV) structure with habitual/present verb 'kare'."
+    "grammarNote": "Subject-Object-Verb (SOV) structure with habitual/present verb 'kare'.",
+    "sourceWords": [
+      {
+        "text": "जोरू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बंदगी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "v1-3": {
     "source": "एक दिन खाना नहीं मिले तो",
@@ -199,7 +347,45 @@ window.SONG_LINES = {
         "gloss": "then / if"
       }
     ],
-    "grammarNote": "Dative-experiencer construction with unexpressed oblique beneficiary; 'Eka din' functions as an adverbial phrase of time."
+    "grammarNote": "Dative-experiencer construction with unexpressed oblique beneficiary; 'Eka din' functions as an adverbial phrase of time.",
+    "sourceWords": [
+      {
+        "text": "एक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "खाना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मिले",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1-4": {
     "source": "फिर के जवाब करे",
@@ -224,7 +410,33 @@ window.SONG_LINES = {
         "gloss": "does / gives [3rd person singular]"
       }
     ],
-    "grammarNote": "Conjunctive participle 'Phir ke' modifying the compound verbal predicate 'javāb kare'. Subject is elided from v1-2."
+    "grammarNote": "Conjunctive participle 'Phir ke' modifying the compound verbal predicate 'javāb kare'. Subject is elided from v1-2.",
+    "sourceWords": [
+      {
+        "text": "फिर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जवाब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-1": {
     "source": "भाई बंद और बहिन साले",
@@ -253,7 +465,39 @@ window.SONG_LINES = {
         "gloss": "brothers-in-law"
       }
     ],
-    "grammarNote": "Coordinate nominal list acting as topic for the rhetorical sentence completed in v2-2. 'band' reflects vernacular Apabhramsha/Hindi for Sanskrit 'bandhu'."
+    "grammarNote": "Coordinate nominal list acting as topic for the rhetorical sentence completed in v2-2. 'band' reflects vernacular Apabhramsha/Hindi for Sanskrit 'bandhu'.",
+    "sourceWords": [
+      {
+        "text": "भाई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बंद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "और",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बहिन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साले",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2-2": {
     "source": "कौन किसी का नहीं रे प्यारे",
@@ -286,7 +530,45 @@ window.SONG_LINES = {
         "gloss": "dear one / beloved"
       }
     ],
-    "grammarNote": "Rhetorical question with negative particle 'nahīñ' functioning as an emphatic negative statement ('None belongs to anyone'). 're pyāre' is a vocative phrase."
+    "grammarNote": "Rhetorical question with negative particle 'nahīñ' functioning as an emphatic negative statement ('None belongs to anyone'). 're pyāre' is a vocative phrase.",
+    "sourceWords": [
+      {
+        "text": "कौन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "किसी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्यारे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v2-3": {
     "source": "कहत कबीर सुन भाई",
@@ -311,7 +593,33 @@ window.SONG_LINES = {
         "gloss": "O brother [vocative]"
       }
     ],
-    "grammarNote": "'Kahat' is archaic/dialectal 3sg present. 'sun' is bare 2nd person intimate/familiar imperative governing vocative 'bhāī'."
+    "grammarNote": "'Kahat' is archaic/dialectal 3sg present. 'sun' is bare 2nd person intimate/familiar imperative governing vocative 'bhāī'.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   }
 };
 

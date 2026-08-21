@@ -6,6 +6,11 @@ word-level meanings. It deploys independently to GitHub Pages at
 project URL is deployment infrastructure; the public site URL is the custom
 domain.
 
+On iPhone or iPad, use Safari's **Share → Add to Home Screen**. The manifest
+opens Bhakti as a standalone web app. It checks for a newly deployed service
+worker when opened or resumed and reloads once only when a new release takes
+control; it does not force-refresh every launch or interrupt active audio.
+
 For hosted intake without leaving a laptop awake, use the repository's
 `Intake Bhakti Songs` GitHub Actions workflow on `main`. It runs the same
 `scripts/bhakti_pipeline.py --publish` path as local intake, commits generated

@@ -345,15 +345,28 @@ const PAGE_LINES = window.SONG_LINES || null;
 const PAGE_SEQUENCE = window.SONG_SEQUENCE || null;
 const PAGE_TIMINGS = window.SONG_TIMINGS || null;
 
-function renderEnglishWithSpans(english) {
+function indicesFrom(value) {
+  return String(value || "").split(/\s+/).filter(Boolean).map(Number).filter(Number.isInteger);
+}
+
+function glossFor(words, indices) {
+  return [...new Set(indices.map(index => words?.[index]?.gloss).filter(Boolean))].join(" · ");
+}
+
+function linkedWord(className, surface, indices, words) {
+  const value = indices.join(" ");
+  return `<span class="${className} word-link" data-word-i="${value}" data-gloss="${escapeHtml(glossFor(words, indices))}" role="button" tabindex="0">${escapeHtml(surface)}</span>`;
+}
+
+function renderEnglishWithSpans(english, words) {
   const re = /\{([\d,\s]+):([^}]*)\}/g;
   let out = "";
   let last = 0;
   let m;
   while ((m = re.exec(english)) !== null) {
     if (m.index > last) out += escapeHtml(english.slice(last, m.index));
-    const indices = m[1].split(",").map(s => s.trim()).filter(Boolean).join(" ");
-    out += `<span class="we" data-word-i="${indices}">${escapeHtml(m[2])}</span>`;
+    const indices = m[1].split(",").map(value => Number(value.trim())).filter(Number.isInteger);
+    out += linkedWord("we", m[2], indices, words);
     last = m.index + m[0].length;
   }
   if (last < english.length) out += escapeHtml(english.slice(last));
@@ -375,10 +388,26 @@ function renderRomanWithSpans(roman, words) {
     }
     if (idx > cursor) html += escapeHtml(roman.slice(cursor, idx));
     const surface = roman.slice(idx, idx + token.length);
-    html += `<span class="w" data-word-i="${i}" data-gloss="${escapeHtml(words[i].gloss)}" tabindex="0">${escapeHtml(surface)}</span>`;
+    html += linkedWord("w", surface, [i], words);
     cursor = idx + token.length;
   }
   if (cursor < roman.length) html += escapeHtml(roman.slice(cursor));
+  return html;
+}
+
+function renderSourceWithSpans(source, sourceWords, words) {
+  if (!sourceWords?.length) return escapeHtml(source);
+  let html = "";
+  let cursor = 0;
+  for (const mapped of sourceWords) {
+    const surface = String(mapped.text || "");
+    const index = source.indexOf(surface, cursor);
+    if (index === -1) return escapeHtml(source);
+    if (index > cursor) html += escapeHtml(source.slice(cursor, index));
+    html += linkedWord("ws", surface, mapped.wordIndices || [], words);
+    cursor = index + surface.length;
+  }
+  if (cursor < source.length) html += escapeHtml(source.slice(cursor));
   return html;
 }
 
@@ -395,9 +424,9 @@ function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSecon
       <button class="line-seek" type="button" aria-label="Play from this line" title="Play from this line">
         <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
       </button>
-      ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${escapeHtml(line.source)}</div>` : ""}
+      ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${renderSourceWithSpans(line.source, line.sourceWords, line.words)}</div>` : ""}
       <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}${adaptedBadge}</div>
-      <div class="line-english">${renderEnglishWithSpans(line.english)}</div>
+      <div class="line-english">${renderEnglishWithSpans(line.english, line.words)}</div>
     </article>
   `;
 }
@@ -454,7 +483,7 @@ function render() {
   const notices = new Map((PAGE_META?.sectionNotices || []).map(notice => [Number(notice.sequenceIndex), notice]));
   const adapted = new Set((PAGE_META?.adaptedSequenceIndices || []).map(Number));
   const language = (PAGE_META?.languages || [])[0];
-  const defaultSourceLanguage = { Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn" }[language] || "";
+  const defaultSourceLanguage = { Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn", Marathi: "mr", Odia: "or", Braj: "bra" }[language] || "";
   seq.forEach((entry, idx) => {
     const line = lines[entry.ref];
     if (!line) return;
@@ -500,28 +529,22 @@ function hideTooltip() { if (tooltipEl) tooltipEl.hidden = true; }
 function activate(span) {
   const article = span.closest(".line");
   if (!article) return;
-  const i = span.dataset.wordI;
-  span.classList.add("is-hi");
-  article.querySelectorAll(".we").forEach(el => {
-    const idx = el.dataset.wordI.split(/\s+/);
-    if (idx.includes(i)) el.classList.add("is-hi");
+  const selected = new Set(indicesFrom(span.dataset.wordI));
+  article.querySelectorAll(".word-link").forEach(element => {
+    const linked = indicesFrom(element.dataset.wordI);
+    element.classList.toggle("is-hi", linked.some(index => selected.has(index)));
   });
   showTooltip(span, span.dataset.gloss || "");
 }
 function deactivate(span) {
   const article = span.closest(".line");
   if (!article) return;
-  const i = span.dataset.wordI;
-  span.classList.remove("is-hi");
-  article.querySelectorAll(".we").forEach(el => {
-    const idx = el.dataset.wordI.split(/\s+/);
-    if (idx.includes(i)) el.classList.remove("is-hi");
-  });
+  article.querySelectorAll(".word-link.is-hi").forEach(element => element.classList.remove("is-hi"));
   hideTooltip();
 }
 function deactivateAll(root) {
   if (tooltipEl) tooltipEl.hidden = true;
-  root.querySelectorAll(".w.is-hi, .we.is-hi").forEach(el => el.classList.remove("is-hi"));
+  root.querySelectorAll(".word-link.is-hi").forEach(el => el.classList.remove("is-hi"));
 }
 
 function wireInteractions(root) {
@@ -529,14 +552,14 @@ function wireInteractions(root) {
   let hoverWord  = null;
 
   root.addEventListener("mouseover", e => {
-    const w = e.target.closest(".w");
+    const w = e.target.closest(".word-link");
     if (!w || w === hoverWord) return;
     if (hoverWord && hoverWord !== stickyWord) deactivate(hoverWord);
     hoverWord = w;
     activate(w);
   });
   root.addEventListener("mouseout", e => {
-    const w = e.target.closest(".w");
+    const w = e.target.closest(".word-link");
     if (!w) return;
     const to = e.relatedTarget;
     if (to && w.contains(to)) return;
@@ -545,7 +568,7 @@ function wireInteractions(root) {
   });
 
   root.addEventListener("click", e => {
-    const w = e.target.closest(".w");
+    const w = e.target.closest(".word-link");
     if (!w) return;
     e.stopPropagation();
     if (stickyWord === w) {
@@ -557,17 +580,18 @@ function wireInteractions(root) {
     stickyWord = w;
     activate(w);
   });
-  document.addEventListener("click", () => {
+  document.addEventListener("click", event => {
+    if (event.target.closest?.(".word-link")) return;
     if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
   });
 
   root.addEventListener("focusin", e => {
-    const w = e.target.closest(".w");
+    const w = e.target.closest(".word-link");
     if (!w) return;
     activate(w);
   });
   root.addEventListener("focusout", e => {
-    const w = e.target.closest(".w");
+    const w = e.target.closest(".word-link");
     if (!w || w === stickyWord) return;
     deactivate(w);
   });
@@ -577,6 +601,12 @@ function wireInteractions(root) {
   }, { passive: true });
 
   document.addEventListener("keydown", e => {
+    const word = e.target.closest?.(".word-link");
+    if (word && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      word.click();
+      return;
+    }
     if (e.key === "Escape") {
       if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
       else deactivateAll(root);

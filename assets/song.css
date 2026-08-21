@@ -370,10 +370,10 @@ html, body {
   box-shadow: inset 1px 0 rgba(244, 234, 208, 0.34);
 }
 
-/* ---------- Word spans (hover targets) ---------- */
-/* Outline-only highlight (no filled box). box-shadow is used
-   so the layout doesn't shift when the ring appears. */
-.line-roman .w {
+/* ---------- Linked source, romanized, and English word spans ---------- */
+/* One mapping drives all three textual layers. The inset outline does not
+   shift text or interfere with selection and copying. */
+.line .word-link {
   cursor: pointer;
   padding: 1px 3px;
   margin: 0 -3px;
@@ -382,26 +382,17 @@ html, body {
   -webkit-tap-highlight-color: transparent;
   border-radius: 3px;
 }
-.line-roman .w:hover,
-.line-roman .w.is-hi,
-.line-roman .w:focus-visible {
+.line .word-link:hover,
+.line .word-link.is-hi,
+.line .word-link:focus-visible {
   background: transparent;
   box-shadow: inset 0 0 0 1px rgba(244, 234, 208, 0.55);
 }
-.line-roman .w:focus-visible {
+.line .word-link:focus-visible {
   box-shadow: inset 0 0 0 1px rgba(244, 234, 208, 0.8);
 }
 
-/* ---------- English mapped spans (highlight target) ---------- */
-.line-english .we {
-  padding: 1px 3px;
-  margin: 0 -3px;
-  transition: box-shadow 140ms ease, color 140ms ease;
-  border-radius: 3px;
-}
 .line-english .we.is-hi {
-  background: transparent;
-  box-shadow: inset 0 0 0 1px rgba(244, 234, 208, 0.45);
   color: var(--kh-ink);
 }
 
@@ -459,7 +450,7 @@ html, body {
 
 /* Touch devices: hover-only styles off. */
 @media (hover: none) {
-  .line-roman .w { padding: 2px 3px; margin: 0 -3px; }
-  .line-roman .w:hover { background: transparent; }
-  .line-roman .w.is-hi { background: rgba(244, 234, 208, 0.18); }
+  .line .word-link { padding: 2px 3px; margin: 0 -3px; }
+  .line .word-link:hover { background: transparent; }
+  .line .word-link.is-hi { background: rgba(244, 234, 208, 0.18); }
 }

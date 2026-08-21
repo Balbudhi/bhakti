@@ -67,10 +67,18 @@ main {
   transition: box-shadow 120ms ease, background-color 120ms ease;
 }
 
-.preface-word:hover,
-.preface-word:focus-visible,
-.preface-word.is-hi,
-.preface-meaning.is-hi {
+.preface-token {
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  padding: 0 2px;
+  transition: box-shadow 120ms ease, background-color 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.preface-token:hover,
+.preface-token:focus-visible,
+.preface-token.is-hi {
   background: rgba(244, 234, 208, 0.08);
   box-shadow: 0 0 0 1px rgba(244, 234, 208, 0.60);
   outline: none;
@@ -84,11 +92,8 @@ main {
 }
 
 .preface-meaning {
-  border-radius: 3px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  padding: 0 2px;
-  transition: box-shadow 120ms ease, background-color 120ms ease;
 }
 
 .preface-tooltip {

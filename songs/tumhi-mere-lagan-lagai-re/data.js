@@ -55,6 +55,50 @@ window.SONG_LINES = {
         "roman": "fakīrwā",
         "gloss": "fakir, ascetic mendicant (affectionate form)"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "तू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मोरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लगन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लगाई",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "फकीरवा",
+        "wordIndices": [
+          6
+        ]
+      }
     ]
   },
   "ham_to_sowat": {
@@ -90,6 +134,50 @@ window.SONG_LINES = {
         "roman": "chadarwā",
         "gloss": "sheet, shawl"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "हम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सोवत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रहली",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ओढ़",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "चदरवा",
+        "wordIndices": [
+          6
+        ]
+      }
     ]
   },
   "bahiyā_pakaṛ_ke": {
@@ -120,6 +208,44 @@ window.SONG_LINES = {
       {
         "roman": "fakīrwā",
         "gloss": "fakir, ascetic mendicant (affectionate form)"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "बहियाँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पकड़",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जगाए",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "फकीरवा",
+        "wordIndices": [
+          5
+        ]
       }
     ]
   },
@@ -156,6 +282,50 @@ window.SONG_LINES = {
         "roman": "saiyā̃",
         "gloss": "beloved, lord"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "मनवा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लागे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कहीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तोरे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सइयाँ",
+        "wordIndices": [
+          6
+        ]
+      }
     ]
   },
   "jahā̃_jāū̃_tohe": {
@@ -190,6 +360,50 @@ window.SONG_LINES = {
       {
         "roman": "bāwariyā",
         "gloss": "one mad with love, ecstatic lover"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "जहाँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जाऊँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तोहे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाऊँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बनूँ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बावरिया",
+        "wordIndices": [
+          6
+        ]
       }
     ]
   },
@@ -229,6 +443,56 @@ window.SONG_LINES = {
       {
         "roman": "fakīrwā",
         "gloss": "fakir, ascetic mendicant (affectionate form)"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "मोरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "घट",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तोरी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "साँस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "फकीरवा",
+        "wordIndices": [
+          7
+        ]
       }
     ]
   }
@@ -381,10 +645,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 238.8,
-    "end": 248.0
+    "end": 248
   },
   {
-    "start": 248.0,
+    "start": 248,
     "end": 252.3
   },
   {

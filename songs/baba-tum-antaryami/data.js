@@ -39,6 +39,26 @@ window.SONG_LINES = {
         "roman": "antaryāmī",
         "gloss": "knower within; indweller"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "साईं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अंतर्यामी",
+        "wordIndices": [
+          2
+        ]
+      }
     ]
   },
   "baba_tum_antaryami": {
@@ -57,6 +77,26 @@ window.SONG_LINES = {
       {
         "roman": "antaryāmī",
         "gloss": "knower within; indweller"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अंतर्यामी",
+        "wordIndices": [
+          2
+        ]
       }
     ]
   },
@@ -89,6 +129,44 @@ window.SONG_LINES = {
         "roman": "svāmī",
         "gloss": "Lord, Master"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "दया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "करो,",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दया",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्वामी",
+        "wordIndices": [
+          5
+        ]
+      }
     ]
   },
   "ang_ang_mein_rang_sanwara": {
@@ -116,6 +194,38 @@ window.SONG_LINES = {
         "roman": "sāṁvarā",
         "gloss": "dark-complexioned, dusky"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "अंग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अंग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रंग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साँवरा",
+        "wordIndices": [
+          4
+        ]
+      }
     ]
   },
   "gahra_hota_jaaye": {
@@ -130,6 +240,26 @@ window.SONG_LINES = {
       {
         "roman": "hotā jāe",
         "gloss": "keeps becoming, grows"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "गहरा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "होता",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जाए",
+        "wordIndices": [
+          1
+        ]
       }
     ]
   },
@@ -154,6 +284,32 @@ window.SONG_LINES = {
         "roman": "manohar",
         "gloss": "heart-captivating, charming"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "मंद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मंद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुसकान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मनोहर",
+        "wordIndices": [
+          3
+        ]
+      }
     ]
   },
   "sab_dukh_har_le_jaaye": {
@@ -173,6 +329,38 @@ window.SONG_LINES = {
         "roman": "har le jāe",
         "gloss": "carries away, dispels"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "सब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दुख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जाए",
+        "wordIndices": [
+          2
+        ]
+      }
     ]
   },
   "main_moorakh_agyaani": {
@@ -191,6 +379,26 @@ window.SONG_LINES = {
       {
         "roman": "ajñānī",
         "gloss": "ignorant, unlearned"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मूरख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अज्ञानी",
+        "wordIndices": [
+          2
+        ]
       }
     ]
   },
@@ -223,6 +431,44 @@ window.SONG_LINES = {
         "roman": "pauṛī",
         "gloss": "step, rung"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चढ़ूँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पौड़ी",
+        "wordIndices": [
+          5
+        ]
+      }
     ]
   },
   "har_pal_main_ghabraun": {
@@ -245,6 +491,32 @@ window.SONG_LINES = {
       {
         "roman": "ghabrāūṁ",
         "gloss": "become anxious, fear"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "हर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "घबराऊँ",
+        "wordIndices": [
+          3
+        ]
       }
     ]
   },
@@ -273,6 +545,44 @@ window.SONG_LINES = {
         "roman": "prabhu",
         "gloss": "Lord"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "थाम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रखियो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मेरी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रभु",
+        "wordIndices": [
+          4
+        ]
+      }
     ]
   },
   "kahin_main_gir_na_jaaun": {
@@ -300,6 +610,38 @@ window.SONG_LINES = {
         "roman": "jāūṁ",
         "gloss": "go, end up"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "कहीं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गिर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जाऊँ",
+        "wordIndices": [
+          4
+        ]
+      }
     ]
   },
   "log_karenge_badnami": {
@@ -318,6 +660,26 @@ window.SONG_LINES = {
       {
         "roman": "badanāmī",
         "gloss": "disrepute, defamation"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "लोग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "करेंगे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बदनामी",
+        "wordIndices": [
+          2
+        ]
       }
     ]
   },
@@ -342,6 +704,32 @@ window.SONG_LINES = {
         "roman": "kaise",
         "gloss": "how"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुणहीन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रिझाऊँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          3
+        ]
+      }
     ]
   },
   "tumko_he_natnagar": {
@@ -360,6 +748,26 @@ window.SONG_LINES = {
       {
         "roman": "naṭanāgar",
         "gloss": "consummate dancer or actor; an epithet of Krishna"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "तुमको",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नटनागर",
+        "wordIndices": [
+          2
+        ]
       }
     ]
   },
@@ -388,6 +796,38 @@ window.SONG_LINES = {
         "roman": "meṁ",
         "gloss": "in"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "एक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "यही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "विश्वास",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      }
     ]
   },
   "tum_ho_daya_ke_sagar": {
@@ -415,6 +855,38 @@ window.SONG_LINES = {
         "roman": "sāgar",
         "gloss": "ocean"
       }
+    ],
+    "sourceWords": [
+      {
+        "text": "तुम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दया",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सागर",
+        "wordIndices": [
+          4
+        ]
+      }
     ]
   },
   "teen_lok_ke_swami": {
@@ -437,6 +909,32 @@ window.SONG_LINES = {
       {
         "roman": "svāmī",
         "gloss": "Lord, Master"
+      }
+    ],
+    "sourceWords": [
+      {
+        "text": "तीन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लोक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्वामी",
+        "wordIndices": [
+          3
+        ]
       }
     ]
   }

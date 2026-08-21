@@ -66,7 +66,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'japan' functions as a verbal noun / gerund direct object of the transitive compound verb 'choṛ diyā' (stem + perfective auxiliary)."
+    "grammarNote": "'japan' functions as a verbal noun / gerund direct object of the transitive compound verb 'choṛ diyā' (stem + perfective auxiliary).",
+    "sourceWords": [
+      {
+        "text": "नाम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जपन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "krodh-na-chhoda-jhooth-na-chhoda": {
     "source": "क्रोध न छोड़ा झूठ न छोड़ा",
@@ -111,7 +143,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Two parallel independent clauses with null second-person subject; verbs are simple perfective masculine singular agreeing with 'krodh' and 'jhūṭh' respectively."
+    "grammarNote": "Two parallel independent clauses with null second-person subject; verbs are simple perfective masculine singular agreeing with 'krodh' and 'jhūṭh' respectively.",
+    "sourceWords": [
+      {
+        "text": "क्रोध",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "छोड़ा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "झूठ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "छोड़ा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "satya-bachan-kyon-chhod-diya": {
     "source": "सत्य बचन क्यों छोड़ दिया",
@@ -150,7 +220,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'satya bachan' is a noun phrase (adjective + noun) functioning as the direct object of the compound verb 'choṛ diyā'."
+    "grammarNote": "'satya bachan' is a noun phrase (adjective + noun) functioning as the direct object of the compound verb 'choṛ diyā'.",
+    "sourceWords": [
+      {
+        "text": "सत्य",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बचन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "jhoothe-jag-mein-dil-lalcha-kar": {
     "source": "झूठे जग में दिल ललचा कर",
@@ -195,7 +297,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jhūṭhe' is in the masculine singular oblique agreeing with 'jag mẽ'. 'lalcā kar' forms a non-finite conjunctive participle (pūrvakālika kriyā)."
+    "grammarNote": "'jhūṭhe' is in the masculine singular oblique agreeing with 'jag mẽ'. 'lalcā kar' forms a non-finite conjunctive participle (pūrvakālika kriyā).",
+    "sourceWords": [
+      {
+        "text": "झूठे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दिल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ललचा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "jhoothe-jag-mein-rep-dil-lalcha-kar": {
     "source": "झूठे जग में झूठे जग में दिल ललचा कर",
@@ -258,7 +398,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated postpositional phrase 'jhūṭhe jag mẽ' used for musical and rhetorical emphasis."
+    "grammarNote": "Reduplicated postpositional phrase 'jhūṭhe jag mẽ' used for musical and rhetorical emphasis.",
+    "sourceWords": [
+      {
+        "text": "झूठे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "झूठे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दिल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ललचा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "asal-vatan-kyon-chhod-diya": {
     "source": "असल वतन क्यों छोड़ दिया",
@@ -297,7 +493,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'asal vatan' is a noun phrase (Arabic-origin adjective modifying noun) serving as direct object of 'choṛ diyā'."
+    "grammarNote": "'asal vatan' is a noun phrase (Arabic-origin adjective modifying noun) serving as direct object of 'choṛ diyā'.",
+    "sourceWords": [
+      {
+        "text": "असल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वतन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "kaudi-ko-to-khoob-sambhala": {
     "source": "कौड़ी को तो खूब सम्हाला",
@@ -336,7 +564,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Differential object marking via 'ko' on 'kauṛī', leading to default masculine singular agreement on the transitive perfective verb 'sambhālā'."
+    "grammarNote": "Differential object marking via 'ko' on 'kauṛī', leading to default masculine singular agreement on the transitive perfective verb 'sambhālā'.",
+    "sourceWords": [
+      {
+        "text": "कौड़ी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "खूब",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सम्हाला",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "sambhala-aalap": {
     "source": "सम्हाला सम्हाला",
@@ -357,7 +617,21 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated perfective verb functioning as a musical refrain / ālāp element."
+    "grammarNote": "Reduplicated perfective verb functioning as a musical refrain / ālāp element.",
+    "sourceWords": [
+      {
+        "text": "सम्हाला",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सम्हाला",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "laal-ratan-kyon-chhod-diya": {
     "source": "लाल रतन क्यों छोड़ दिया",
@@ -396,7 +670,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'lāl ratan' is a noun phrase (adjective/noun compound) acting as direct object of 'choṛ diyā'."
+    "grammarNote": "'lāl ratan' is a noun phrase (adjective/noun compound) acting as direct object of 'choṛ diyā'.",
+    "sourceWords": [
+      {
+        "text": "लाल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रतन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "jin-sumiran-se-ati-sukh-paave": {
     "source": "जिन सुमिरन से अति सुख पावे",
@@ -441,7 +747,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jin' is the oblique form of the relative pronoun 'jo' modifying 'sumiran'. 'pāve' is a Braj/Old Hindi 3rd/2nd person habitual/present form of 'pānā'."
+    "grammarNote": "'jin' is the oblique form of the relative pronoun 'jo' modifying 'sumiran'. 'pāve' is a Braj/Old Hindi 3rd/2nd person habitual/present form of 'pānā'.",
+    "sourceWords": [
+      {
+        "text": "जिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुमिरन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुख",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पावे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "jin-sumiran-se-rep-ati-sukh-paave": {
     "source": "जिन सुमिरन से जिन सुमिरन से अति सुख पावे",
@@ -504,7 +848,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplication of the postpositional phrase 'jin sumiran se' for poetic and affective emphasis."
+    "grammarNote": "Reduplication of the postpositional phrase 'jin sumiran se' for poetic and affective emphasis.",
+    "sourceWords": [
+      {
+        "text": "जिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुमिरन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जिन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुमिरन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अति",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सुख",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पावे",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "tin-sumiran-kyon-chhod-diya": {
     "source": "तिन सुमिरन क्यों छोड़ दिया",
@@ -543,7 +943,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tin' is the correlative pronoun (matching relative 'jin') modifying 'sumiran' in a genitive/demonstrative sense without an explicit postposition."
+    "grammarNote": "'tin' is the correlative pronoun (matching relative 'jin') modifying 'sumiran' in a genitive/demonstrative sense without an explicit postposition.",
+    "sourceWords": [
+      {
+        "text": "तिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुमिरन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "khalas-ik-bhagwan-bharose": {
     "source": "खालस इक भगवान भरोसे",
@@ -576,7 +1008,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'khālas' (from Arabic khāliṣ) functions adverbially. 'bharose' is an oblique noun used adverbially/postpositionally ('on the reliance of')."
+    "grammarNote": "'khālas' (from Arabic khāliṣ) functions adverbially. 'bharose' is an oblique noun used adverbially/postpositionally ('on the reliance of').",
+    "sourceWords": [
+      {
+        "text": "खालस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "इक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भगवान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भरोसे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "khalas-ik-bhagwan-rep-bharose": {
     "source": "खालस इक भगवान भगवान भरोसे",
@@ -615,7 +1073,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplication of the noun 'bhagvān' within the adverbial phrase 'bhagvān bhagvān bharose'."
+    "grammarNote": "Reduplication of the noun 'bhagvān' within the adverbial phrase 'bhagvān bhagvān bharose'.",
+    "sourceWords": [
+      {
+        "text": "खालस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "इक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भगवान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भगवान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भरोसे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "tan-man-dhan-kyon-na-chhod-diya": {
     "source": "तन मन धन क्यों ना छोड़ दिया",
@@ -666,7 +1156,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tan man dhan' forms an asyndetic dvandva compound functioning as the direct object of the compound verb 'choṛ diyā'. 'kyõ nā' forms a negative rhetorical question."
+    "grammarNote": "'tan man dhan' forms an asyndetic dvandva compound functioning as the direct object of the compound verb 'choṛ diyā'. 'kyõ nā' forms a negative rhetorical question.",
+    "sourceWords": [
+      {
+        "text": "तन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "धन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   }
 };
 
@@ -830,10 +1364,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 131.385,
-    "end": 146.0
+    "end": 146
   },
   {
-    "start": 146.0,
+    "start": 146,
     "end": 180.775
   },
   {

@@ -74,7 +74,81 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਜੈ ਕਾਰਾ ਸ਼ੇਰਾਂ ਵਾਲੀ ਮਈਆ ਜੀ ਦਾ... ਬੋਲ ਸਚੇ ਦਰਬਾਰ ਕੀ ਜੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਜੈ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਕਾਰਾ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਸ਼ੇਰਾਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਵਾਲੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮਈਆ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਜੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਦਾ...",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਬੋਲ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਸਚੇ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਦਰਬਾਰ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਕੀ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਜੈ",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "refrain_a": {
     "roman": "Duniyā de dukhān mainū baḍā hī satāyā mā",
@@ -114,7 +188,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਦੁਨੀਆ ਦੇ ਦੁੱਖਾਂ ਮੈਨੂੰ ਬੜਾ ਹੀ ਸਤਾਇਆ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਦੁਨੀਆ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਦੁੱਖਾਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮੈਨੂੰ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਬੜਾ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਹੀ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਸਤਾਇਆ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "refrain_b": {
     "roman": "Jad vī terī loṛ paī, tere kol āyā mā",
@@ -158,7 +282,63 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਜਦ ਵੀ ਤੇਰੀ ਲੋੜ ਪਈ, ਤੇਰੇ ਕੋਲ ਆਇਆ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਜਦ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਤੇਰੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਲੋੜ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਪਈ,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਤੇਰੇ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਕੋਲ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਆਇਆ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "refrain_c": {
     "roman": "Duniyā de dukhān mainū baḍā hī ruwāyā mā",
@@ -198,7 +378,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਦੁਨੀਆ ਦੇ ਦੁੱਖਾਂ ਮੈਨੂੰ ਬੜਾ ਹੀ ਰੁਵਾਇਆ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਦੁਨੀਆ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਦੁੱਖਾਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮੈਨੂੰ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਬੜਾ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਹੀ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਰੁਵਾਇਆ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v1a": {
     "roman": "Māwān wālā pyār bas jag 'ch anokhā ae",
@@ -238,7 +468,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਮਾਵਾਂ ਵਾਲਾ ਪਿਆਰ ਬਸ ਜਗ 'ਚ ਅਨੋਖਾ ਏ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਮਾਵਾਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵਾਲਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਪਿਆਰ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਬਸ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਜਗ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "'ਚ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਅਨੋਖਾ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v1b": {
     "roman": "Bākī sārā zindagī 'ch dhokhā hī dhokhā ae",
@@ -278,7 +558,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਬਾਕੀ ਸਾਰਾ ਜ਼ਿੰਦਗੀ 'ਚ ਧੋਖਾ ਹੀ ਧੋਖਾ ਏ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਬਾਕੀ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਸਾਰਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਜ਼ਿੰਦਗੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "'ਚ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਧੋਖਾ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਹੀ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਧੋਖਾ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v1c": {
     "roman": "Jad vī main hasseyā, mainū apneyān ruwāyā mā",
@@ -318,7 +648,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਜਦ ਵੀ ਮੈਂ ਹੱਸਿਆ, ਮੈਨੂੰ ਅਪਣਿਆਂ ਰੁਵਾਇਆ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਜਦ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮੈਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਹੱਸਿਆ,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮੈਨੂੰ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਅਪਣਿਆਂ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਰੁਵਾਇਆ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v2a": {
     "roman": "Ik vārī maiyā merī bigḍī sawār de",
@@ -354,7 +734,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇਕ ਵਾਰੀ ਮਈਆ ਮੇਰੀ ਬਿਗੜੀ ਸਵਾਰ ਦੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇਕ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵਾਰੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮਈਆ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਬਿਗੜੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਸਵਾਰ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v2b": {
     "roman": "Patthar baṇā de sānū sohṇe darbār de",
@@ -390,7 +814,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਪੱਥਰ ਬਣਾ ਦੇ ਸਾਨੂੰ ਸੋਹਣੇ ਦਰਬਾਰ ਦੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਪੱਥਰ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਬਣਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਸਾਨੂੰ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਸੋਹਣੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਦਰਬਾਰ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v2c": {
     "roman": "Bhull chukk terā pair, sāḍe utte āyā mā",
@@ -430,7 +898,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਭੁੱਲ ਚੁੱਕ ਤੇਰਾ ਪੈਰ, ਸਾਡੇ ਉੱਤੇ ਆਇਆ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਭੁੱਲ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਚੁੱਕ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਤੇਰਾ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਪੈਰ,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਸਾਡੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਉੱਤੇ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਆਇਆ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v3a": {
     "roman": "Jad vī tū denī ae mā, nā de ke jatānī ae",
@@ -478,7 +996,75 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਜਦ ਵੀ ਤੂੰ ਦੇਣੀ ਏ ਮਾਂ, ਨਾ ਦੇ ਕੇ ਜਤਾਨੀ ਏ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਜਦ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਤੂੰ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਦੇਣੀ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਨਾ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਜਤਾਨੀ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "v3b": {
     "roman": "Sab bachcheyān dī maiyā lāj bachānī ae",
@@ -514,7 +1100,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਸਭ ਬੱਚਿਆਂ ਦੀ ਮਈਆ ਲਾਜ ਬਚਾਨੀ ਏ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਸਭ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਬੱਚਿਆਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਦੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮਈਆ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਲਾਜ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਬਚਾਨੀ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v3c": {
     "roman": "Taiyon tainū maiyā rāṇī... apṇā banāyā mā",
@@ -550,7 +1180,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਤਾਈਓਂ ਤੈਨੂੰ ਮਈਆ ਰਾਣੀ... ਅਪਣਾ ਬਣਾਇਆ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਤਾਈਓਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਤੈਨੂੰ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮਈਆ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਰਾਣੀ...",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਅਪਣਾ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਬਣਾਇਆ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v4a": {
     "roman": "Ik vārī maiyā sāḍī bigṛī sawār de",
@@ -586,7 +1260,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇਕ ਵਾਰੀ ਮਈਆ ਸਾਡੀ ਬਿਗੜੀ ਸਵਾਰ ਦੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇਕ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵਾਰੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮਈਆ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਸਾਡੀ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਬਿਗੜੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਸਵਾਰ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v4b": {
     "roman": "Godī 'ch biṭhā ke sānū māwān wālā pyār de",
@@ -630,7 +1348,63 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਗੋਦੀ 'ਚ ਬਿਠਾ ਕੇ ਸਾਨੂੰ ਮਾਵਾਂ ਵਾਲਾ ਪਿਆਰ ਦੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਗੋਦੀ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "'ਚ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਬਿਠਾ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਸਾਨੂੰ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਮਾਵਾਂ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਵਾਲਾ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਪਿਆਰ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "v4c": {
     "roman": "Duniyā 'ch koī mere... kamm nahīyo āyā mā",
@@ -670,7 +1444,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਦੁਨੀਆ 'ਚ ਕੋਈ ਮੇਰੇ... ਕੰਮ ਨਹੀਓ ਆਇਆ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਦੁਨੀਆ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "'ਚ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਕੋਈ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮੇਰੇ...",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਕੰਮ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਨਹੀਓ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਆਇਆ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   }
 };
 
@@ -838,10 +1662,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 55.88,
-    "end": 83.0
+    "end": 83
   },
   {
-    "start": 83.0,
+    "start": 83,
     "end": 93.2
   },
   {
@@ -870,10 +1694,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 178.8,
-    "end": 198.0
+    "end": 198
   },
   {
-    "start": 198.0,
+    "start": 198,
     "end": 215.2
   },
   {
@@ -886,10 +1710,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 242.3,
-    "end": 252.0
+    "end": 252
   },
   {
-    "start": 252.0,
+    "start": 252,
     "end": 265.5
   },
   {
@@ -910,10 +1734,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 322.2,
-    "end": 335.0
+    "end": 335
   },
   {
-    "start": 335.0,
+    "start": 335,
     "end": 341.8
   },
   {

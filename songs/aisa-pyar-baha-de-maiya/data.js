@@ -54,7 +54,40 @@ window.SONG_LINES = {
       }
     ],
     "source": "या देवी सर्वभूतेषु दया-रूपेण संस्थिता",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "sa",
+    "sourceWords": [
+      {
+        "text": "या",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देवी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सर्वभूतेषु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दया-रूपेण",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "संस्थिता",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "invocation_2": {
     "roman": "Namastasyai namastasyai namastasyai namo namaḥ",
@@ -78,7 +111,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "sa",
+    "sourceWords": [
+      {
+        "text": "नमस्तस्यै",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नमस्तस्यै",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नमस्तस्यै",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नमो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "invocation_3": {
     "roman": "Durgā durgati dūr kar, maṅgal kar sab kāj",
@@ -118,7 +183,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "दुर्गा दुर्गति दूर कर, मंगल कर सब काज",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "दुर्गा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दुर्गति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दूर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कर,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मंगल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "काज",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "invocation_4": {
     "roman": "Man mandir ujjval karo, kṛpā karke āj",
@@ -154,7 +269,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "मन मंदिर उज्ज्वल करो, कृपा करके आज",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मंदिर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "उज्ज्वल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करो,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "करके",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आज",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "refrain_a": {
     "roman": "Aisā pyār bahā de maiyā",
@@ -178,7 +337,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ऐसा प्यार बहा दे मैया",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्यार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बहा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैया",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain_b": {
     "roman": "Charaṇoṅ se lag jāūṅ main",
@@ -202,7 +393,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "चरणों से लग जाऊँ मैं",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "चरणों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जाऊँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain_c": {
     "roman": "Sab andhakār miṭā de maiyā",
@@ -226,7 +449,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "सब अंधकार मिटा दे मैया",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "सब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अंधकार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मिटा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैया",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain_d": {
     "roman": "Daras terā kar pāūṅ main",
@@ -250,7 +505,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "दरस तेरा कर पाऊँ मैं",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "दरस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाऊँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1a": {
     "roman": "Jag meṅ ākar jag ko maiyā, ab tak na pahchān sakā",
@@ -298,7 +585,75 @@ window.SONG_LINES = {
       }
     ],
     "source": "जग में आकर जग को मैया, अब तक न पहचान सका",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "जग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आकर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मैया,",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अब",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पहचान",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "सका",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "v1a_tail": {
     "roman": "Ab tak na pahchān sakā",
@@ -322,7 +677,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "अब तक न पहचान सका",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "अब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पहचान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सका",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1b": {
     "roman": "Kyoṅ āyā hūṅ, kahāṅ hai jānā",
@@ -354,7 +741,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "क्यों आया हूँ, कहाँ है जाना",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हूँ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कहाँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जाना",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1c": {
     "roman": "Ye bhī na main jān sakā",
@@ -386,7 +811,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "ये भी न मैं जान सका",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "ये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सका",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1d_a": {
     "roman": "Tū hai agam agochar maiyā",
@@ -414,7 +877,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "तू है अगम अगोचर मैया",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "तू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अगम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अगोचर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मैया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v1d_b": {
     "roman": "Kaho kaise lakh pāūṅ main",
@@ -442,7 +937,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "कहो कैसे लख पाऊँ मैं",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "कहो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लख",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाऊँ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2a": {
     "roman": "Kar kṛpā jagadambe bhavānī, main bālak nādān hūṅ",
@@ -482,7 +1009,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "कर कृपा जगदम्बे भवानी, मैं बालक नादान हूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "कर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जगदम्बे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भवानी,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नादान",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v2b": {
     "roman": "Nahīṅ ārādhan jap tap jānūṅ, main avaguṇ kī khān hūṅ",
@@ -530,7 +1107,69 @@ window.SONG_LINES = {
       }
     ],
     "source": "नहीं आराधन जप तप जानूँ, मैं अवगुण की खान हूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आराधन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जप",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तप",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जानूँ,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अवगुण",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "खान",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "v2a_tail": {
     "roman": "Main bālak nādān hūṅ",
@@ -554,7 +1193,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "मैं बालक नादान हूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नादान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2b_tail": {
     "roman": "Main avaguṇ kī khān hūṅ",
@@ -582,7 +1247,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "मैं अवगुण की खान हूँ",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अवगुण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "खान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2c": {
     "roman": "De aisā vardān he maiyā",
@@ -610,7 +1307,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "दे ऐसा वरदान हे मैया",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "दे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वरदान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मैया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2d": {
     "roman": "De aisā vardān he maiyā, sumiran terā gāūṅ main",
@@ -654,7 +1383,63 @@ window.SONG_LINES = {
       }
     ],
     "source": "दे ऐसा वरदान हे मैया, सुमिरन तेरा गाऊँ मैं",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "दे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वरदान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मैया,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सुमिरन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "गाऊँ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "v3a": {
     "roman": "Main bālak, tū maiyā merī, nish din terī oṭ hai",
@@ -698,7 +1483,69 @@ window.SONG_LINES = {
       }
     ],
     "source": "मैं बालक, तू मैया मेरी, निश दिन तेरी ओट है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बालक,",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैया",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मेरी,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निश",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ओट",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "v3a_tail": {
     "roman": "Nish din terī oṭ hai",
@@ -722,7 +1569,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "निश दिन तेरी ओट है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "निश",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ओट",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v3b": {
     "roman": "Terī kṛpā hī miṭegī, bhītar jo bhī khoṭ hai",
@@ -762,7 +1641,63 @@ window.SONG_LINES = {
       }
     ],
     "source": "तेरी कृपा ही मिटेगी, भीतर जो भी खोट है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मिटेगी,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भीतर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "खोट",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v3b_tail": {
     "roman": "Bhītar jo bhī khoṭ hai",
@@ -786,7 +1721,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "भीतर जो भी खोट है",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "भीतर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "खोट",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v3c": {
     "roman": "Sharaṇ lagā lo mujhko maiyā",
@@ -810,7 +1777,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "शरण लगा लो मुझको मैया",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "शरण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लगा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुझको",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैया",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v3d": {
     "roman": "Sharaṇ lagā lo mujhko maiyā, tujh par balī balī jāūṅ main",
@@ -854,7 +1853,75 @@ window.SONG_LINES = {
       }
     ],
     "source": "शरण लगा लो मुझको मैया, तुझ पर बली बली जाऊँ मैं",
-    "sourceLanguage": "hi"
+    "sourceLanguage": "hi",
+    "sourceWords": [
+      {
+        "text": "शरण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लगा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुझको",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैया,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुझ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बली",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बली",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जाऊँ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "alap": {
     "roman": "Ā... ā...",
@@ -864,7 +1931,8 @@ window.SONG_LINES = {
         "roman": "Ā... ā...",
         "gloss": "wordless ālāp, improvised melodic vocalization"
       }
-    ]
+    ],
+    "sourceWords": []
   }
 };
 

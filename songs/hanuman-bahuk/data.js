@@ -67,7 +67,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sanskrit mangala formula: indeclinable namaḥ governing the dative singular masculine noun gaṇeśāya, preceded by the honorific prefix śrī."
+    "grammarNote": "Sanskrit mangala formula: indeclinable namaḥ governing the dative singular masculine noun gaṇeśāya, preceded by the honorific prefix śrī.",
+    "sourceWords": [
+      {
+        "text": "श्री",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गणेशाय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-001": {
     "source": "श्री जानकीवल्लभो विजयते",
@@ -94,7 +114,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sanskrit sentence: nominative tatpuruṣa compound jānakīvallabhaḥ showing visarga sandhi to -o before the voiced consonant of the present ātmanepada 3rd person singular verb vijayate."
+    "grammarNote": "Sanskrit sentence: nominative tatpuruṣa compound jānakīvallabhaḥ showing visarga sandhi to -o before the voiced consonant of the present ātmanepada 3rd person singular verb vijayate.",
+    "sourceWords": [
+      {
+        "text": "श्री",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जानकीवल्लभो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "विजयते",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-002": {
     "source": "श्रीमद्गोस्वामी तुलसीदासकृत",
@@ -115,7 +155,21 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound title/heading: honorific śrīmat + gosvāmī in apposition to the past passive participial compound tulasīdāsa-kṛta ('done/composed by Tulsidas')."
+    "grammarNote": "Compound title/heading: honorific śrīmat + gosvāmī in apposition to the past passive participial compound tulasīdāsa-kṛta ('done/composed by Tulsidas').",
+    "sourceWords": [
+      {
+        "text": "श्रीमद्गोस्वामी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुलसीदासकृत",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-003": {
     "source": "हनुमान बाहुक",
@@ -136,7 +190,21 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal compound/phrase serving as the title of the work."
+    "grammarNote": "Nominal compound/phrase serving as the title of the work.",
+    "sourceWords": [
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बाहुक",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-004": {
     "source": "सिंधु तरन सिय सोच हरन रबि बाल बरन तनु",
@@ -199,7 +267,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of agentive descriptive phrases in Braj: `sindhu tarana` and `siya soca harana` act as qualifying epithets; `rabi bāla barana tanu` is a possessive/bahuvrīhi phrase modifying Hanuman."
+    "grammarNote": "Series of agentive descriptive phrases in Braj: `sindhu tarana` and `siya soca harana` act as qualifying epithets; `rabi bāla barana tanu` is a possessive/bahuvrīhi phrase modifying Hanuman.",
+    "sourceWords": [
+      {
+        "text": "सिंधु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तरन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सिय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सोच",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हरन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रबि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बरन",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तनु",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-005": {
     "source": "भुज बिसाल मूरति कराल कालहु को काल जनु",
@@ -256,7 +380,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`janu` is a classic Braj marker of utprekṣā (poetic conjecture). `kālahu` carries the emphatic suffix `-hu` ('even unto Kāla'). `ko` is the genitive/dative postposition."
+    "grammarNote": "`janu` is a classic Braj marker of utprekṣā (poetic conjecture). `kālahu` carries the emphatic suffix `-hu` ('even unto Kāla'). `ko` is the genitive/dative postposition.",
+    "sourceWords": [
+      {
+        "text": "भुज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिसाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मूरति",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कराल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कालहु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जनु",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-006": {
     "source": "गहन दहन निरदहन लंक निहसंक बंक भुअ",
@@ -307,7 +481,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`bhua` is the Braj tadbhava of Sanskrit `bhrū` (eyebrows). `niradahana` acts as an intensive verbal noun/agentive epithet with `laṅka`."
+    "grammarNote": "`bhua` is the Braj tadbhava of Sanskrit `bhrū` (eyebrows). `niradahana` acts as an intensive verbal noun/agentive epithet with `laṅka`.",
+    "sourceWords": [
+      {
+        "text": "गहन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दहन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "निरदहन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लंक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "निहसंक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बंक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भुअ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-007": {
     "source": "जातुधान बलवान मान मद दवन पवन सुअ",
@@ -358,7 +576,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`sua` is the Braj development of Sanskrit `sutaḥ` (son). `māna mada davana` forms a genitive tatpuruṣa compound."
+    "grammarNote": "`sua` is the Braj development of Sanskrit `sutaḥ` (son). `māna mada davana` forms a genitive tatpuruṣa compound.",
+    "sourceWords": [
+      {
+        "text": "जातुधान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बलवान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मद",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दवन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पवन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सुअ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-008": {
     "source": "कह तुलसिदास सेवत सुलभ सेवक हित संतत निकट",
@@ -415,7 +677,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`kaha` is a 3rd person singular present indicative verb ('says'). `sevata` is a present participle used in an absolute temporal/conditional sense ('upon serving')."
+    "grammarNote": "`kaha` is a 3rd person singular present indicative verb ('says'). `sevata` is a present participle used in an absolute temporal/conditional sense ('upon serving').",
+    "sourceWords": [
+      {
+        "text": "कह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुलसिदास",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सेवत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुलभ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सेवक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हित",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "संतत",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "निकट",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-009": {
     "source": "गुन गनत नमत सुमिरत जपत समन सकल संकट बिकट",
@@ -478,7 +790,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A rapid succession of Braj imperfective participles in `-ta` (`ganata`, `namata`, `sumirata`, `japata`) functioning adverbially to express contemporaneous devotional actions."
+    "grammarNote": "A rapid succession of Braj imperfective participles in `-ta` (`ganata`, `namata`, `sumirata`, `japata`) functioning adverbially to express contemporaneous devotional actions.",
+    "sourceWords": [
+      {
+        "text": "गुन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गनत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नमत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुमिरत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जपत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "समन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "संकट",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बिकट",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-010": {
     "source": "स्वर्न सैल संकास कोटि रबि तरुन तेज घन",
@@ -535,7 +903,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sanskritized compounds: `svarna-saila-saṅkāsa` (bahuvrīhi compound) and `taruna-teja-ghana` modifying Hanuman's body."
+    "grammarNote": "Sanskritized compounds: `svarna-saila-saṅkāsa` (bahuvrīhi compound) and `taruna-teja-ghana` modifying Hanuman's body.",
+    "sourceWords": [
+      {
+        "text": "स्वर्न",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सैल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "संकास",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कोटि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रबि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तरुन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तेज",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "घन",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-011": {
     "source": "उर बिसाल भुजदंड चंड नख बज्र बज्र तन",
@@ -592,7 +1010,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of nominative noun phrases in apposition without a copula: `ura bisāla`, `bhujadaṇḍa caṇḍa`, `nakha bajra`, `bajra tana`."
+    "grammarNote": "Series of nominative noun phrases in apposition without a copula: `ura bisāla`, `bhujadaṇḍa caṇḍa`, `nakha bajra`, `bajra tana`.",
+    "sourceWords": [
+      {
+        "text": "उर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिसाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भुजदंड",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चंड",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नख",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बज्र",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बज्र",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तन",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-012": {
     "source": "पिंग नयन भृकुटी कराल रसना दसनानन",
@@ -637,7 +1105,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`dasanānana` is a dvandva/tatpuruṣa compound of `dasana` (teeth) + `ānana` (face/mouth), qualifying the formidable facial expression."
+    "grammarNote": "`dasanānana` is a dvandva/tatpuruṣa compound of `dasana` (teeth) + `ānana` (face/mouth), qualifying the formidable facial expression.",
+    "sourceWords": [
+      {
+        "text": "पिंग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नयन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भृकुटी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कराल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रसना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दसनानन",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-013": {
     "source": "कपिस केस कर्कस लँगूर खल दल बल भानन",
@@ -694,7 +1200,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound `khala-dala-bala-bhānana` features alliteration in `la` and `ba`, ending in the agent noun `bhānana` ('breaker/destroyer')."
+    "grammarNote": "Compound `khala-dala-bala-bhānana` features alliteration in `la` and `ba`, ending in the agent noun `bhānana` ('breaker/destroyer').",
+    "sourceWords": [
+      {
+        "text": "कपिस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "केस",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कर्कस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लँगूर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "खल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भानन",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-014": {
     "source": "कह तुलसिदास बस जासु उर मारुतसुत मूरति बिकट",
@@ -751,7 +1307,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`jāsu` is the Braj relative pronoun in the genitive/locative ('in whose'). `basa` is a 3rd person singular present indicative verb."
+    "grammarNote": "`jāsu` is the Braj relative pronoun in the genitive/locative ('in whose'). `basa` is a 3rd person singular present indicative verb.",
+    "sourceWords": [
+      {
+        "text": "कह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुलसिदास",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जासु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मारुतसुत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मूरति",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बिकट",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-015": {
     "source": "संताप पाप तेहि पुरुष पहिं सपनेहुँ नहिं आवत निकट",
@@ -814,7 +1420,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`pahiṁ` is the Braj postposition marking proximity/direction ('near/unto'). `sapanehuṁ` contains the locative `sapane` with emphatic clitic `-huṁ`."
+    "grammarNote": "`pahiṁ` is the Braj postposition marking proximity/direction ('near/unto'). `sapanehuṁ` contains the locative `sapane` with emphatic clitic `-huṁ`.",
+    "sourceWords": [
+      {
+        "text": "संताप",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तेहि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पुरुष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पहिं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सपनेहुँ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नहिं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "आवत",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "निकट",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-016": {
     "source": "पंचमुख छमुख भृगुमुख्य भट असुर सुर सर्व सरी समर समरथ सूरो",
@@ -889,7 +1551,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`sarī` is Braj for equal/matching (from Sanskrit `sadṛśa`). Extensive alliteration on `sa` and `bha`."
+    "grammarNote": "`sarī` is Braj for equal/matching (from Sanskrit `sadṛśa`). Extensive alliteration on `sa` and `bha`.",
+    "sourceWords": [
+      {
+        "text": "पंचमुख",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "छमुख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भृगुमुख्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भट",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "असुर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सुर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सरी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "समर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "समरथ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सूरो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-017": {
     "source": "बाँकुरो बीर बिरुदैत बिरुदावली बेद बंदी बदत पैजपूरो",
@@ -946,7 +1676,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`beda bandī` is a metaphor where the Vedas are personified as court bards (bandījan). `paijapūro` is a compound of `paija` (pledge/wager) + `pūro` (fulfiller)."
+    "grammarNote": "`beda bandī` is a metaphor where the Vedas are personified as court bards (bandījan). `paijapūro` is a compound of `paija` (pledge/wager) + `pūro` (fulfiller).",
+    "sourceWords": [
+      {
+        "text": "बाँकुरो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बिरुदैत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिरुदावली",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बेद",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बंदी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बदत",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पैजपूरो",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-018": {
     "source": "जासु गुनगाथ रघुनाथ कह जासु बल बिपुल जल भरित जग जलधि झूरो",
@@ -1027,7 +1807,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`jāsu` ... `jāsu` sets up parallel relative clauses. `jhūro` is a Braj past-tense/stative verb ('became dried up/desiccated')."
+    "grammarNote": "`jāsu` ... `jāsu` sets up parallel relative clauses. `jhūro` is a Braj past-tense/stative verb ('became dried up/desiccated').",
+    "sourceWords": [
+      {
+        "text": "जासु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुनगाथ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रघुनाथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कह",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जासु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बिपुल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "भरित",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जलधि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "झूरो",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-019": {
     "source": "दुवन दल दमन को कौन तुलसीस है पवन को पूत रजपूत रूरो",
@@ -1108,7 +1962,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`tulasīsa` = `tulasī` + `īsa` ('master/lord of Tulsi'). `duvana` is Braj for demons/enemies (`durjana` / `dānav`)."
+    "grammarNote": "`tulasīsa` = `tulasī` + `īsa` ('master/lord of Tulsi'). `duvana` is Braj for demons/enemies (`durjana` / `dānav`).",
+    "sourceWords": [
+      {
+        "text": "दुवन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दमन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कौन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तुलसीस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पवन",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पूत",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रजपूत",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "रूरो",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-020": {
     "source": "भानु सो पढ़न हनुमान गए भानु मन अनुमानि सिसुकेलि कियो फेरफार सो",
@@ -1189,7 +2117,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`bhānu so` uses `so` in the sense of the postposition `se` ('from'). `anumāni` is a conjunctive participle ('having reckoned')."
+    "grammarNote": "`bhānu so` uses `so` in the sense of the postposition `se` ('from'). `anumāni` is a conjunctive participle ('having reckoned').",
+    "sourceWords": [
+      {
+        "text": "भानु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पढ़न",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गए",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भानु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "अनुमानि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सिसुकेलि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कियो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "फेरफार",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-021": {
     "source": "पाछिले पगनि गम गगन मगन मन क्रम को न भ्रम कपि बालक बिहार सो",
@@ -1282,7 +2284,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`pagani` is the Braj instrumental plural of `paga` ('foot/step'). `kapi bālaka bihāra so` functions as an adverbial simile."
+    "grammarNote": "`pagani` is the Braj instrumental plural of `paga` ('foot/step'). `kapi bālaka bihāra so` functions as an adverbial simile.",
+    "sourceWords": [
+      {
+        "text": "पाछिले",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पगनि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गगन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मगन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "क्रम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भ्रम",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "कपि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "बिहार",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-022": {
     "source": "कौतुक बिलोकि लोकपाल हरि हर बिधि लोचननि चकाचौंधी चित्तनि खभार सो",
@@ -1357,7 +2445,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`locanani` and `cittani` are Braj locative plurals ending in `-ani`. `biloki` is a conjunctive participle."
+    "grammarNote": "`locanani` and `cittani` are Braj locative plurals ending in `-ani`. `biloki` is a conjunctive participle.",
+    "sourceWords": [
+      {
+        "text": "कौतुक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिलोकि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लोकपाल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हरि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिधि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "लोचननि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "चकाचौंधी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "चित्तनि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "खभार",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-023": {
     "source": "बल कैधौं बीररस धीरज कै साहस कै तुलसि सरीर धरे सबनी को सार सो",
@@ -1450,7 +2606,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`kaidhauṁ` ... `kai` ... `kai` expresses sandeha alaṅkāra (poetic doubt). `dhare` is a past participle acting adverbially ('having assumed')."
+    "grammarNote": "`kaidhauṁ` ... `kai` ... `kai` expresses sandeha alaṅkāra (poetic doubt). `dhare` is a past participle acting adverbially ('having assumed').",
+    "sourceWords": [
+      {
+        "text": "बल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कैधौं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बीररस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "धीरज",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "साहस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तुलसि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सरीर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "धरे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सबनी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सार",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-024": {
     "source": "भारत में पारथ के रथ केतु कपिराज गाज्यो सुनि कुरुराज दल हलभल भो",
@@ -1537,7 +2779,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`gājyo` is 3rd person singular past tense ('roared'). `suni` is an indeclinable conjunctive participle ('upon hearing')."
+    "grammarNote": "`gājyo` is 3rd person singular past tense ('roared'). `suni` is an indeclinable conjunctive participle ('upon hearing').",
+    "sourceWords": [
+      {
+        "text": "भारत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पारथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रथ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "केतु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कपिराज",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "गाज्यो",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सुनि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कुरुराज",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "दल",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "हलभल",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-025": {
     "source": "कह्यो द्रोन भीषम समीरसुत महाबीर बीररस बारिनिधि जाको बल जल भो",
@@ -1612,7 +2934,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Metaphorical construction (rūpaka alaṅkāra): `bīrarasa bārinidhi jāko bala jala bho` equating Hanuman to an ocean and his strength to its water."
+    "grammarNote": "Metaphorical construction (rūpaka alaṅkāra): `bīrarasa bārinidhi jāko bala jala bho` equating Hanuman to an ocean and his strength to its water.",
+    "sourceWords": [
+      {
+        "text": "कह्यो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "द्रोन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भीषम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "समीरसुत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "महाबीर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बीररस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बारिनिधि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जाको",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-026": {
     "source": "बानर सुभाय बालकेलि भूमि भानु लागि फलंग फलांग हूँ ते घाटि नभतल भो",
@@ -1699,7 +3089,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`phalāṅga hūṁ te ghāṭi` is an ablative comparative construction ('less than even a single stride') with postposition `te`."
+    "grammarNote": "`phalāṅga hūṁ te ghāṭi` is an ablative comparative construction ('less than even a single stride') with postposition `te`.",
+    "sourceWords": [
+      {
+        "text": "बानर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुभाय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बालकेलि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भूमि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भानु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लागि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "फलंग",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "फलांग",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "घाटि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "नभतल",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-027": {
     "source": "नाई नाई माथ जोरि जोरि हाथ जोधा जोहैं हनुमान देखे जगजीवन को फल भो",
@@ -1792,7 +3262,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated participles `nāī nāī` and `jori jori` express continuous, repeated respectful action. `johaiṁ` is a 3rd person plural present indicative verb."
+    "grammarNote": "Reduplicated participles `nāī nāī` and `jori jori` express continuous, repeated respectful action. `johaiṁ` is a 3rd person plural present indicative verb.",
+    "sourceWords": [
+      {
+        "text": "नाई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नाई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "माथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जोरि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जोरि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जोधा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जोहैं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "देखे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जगजीवन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "फल",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-028": {
     "source": "गोपद पयोधि करि होलिका जुलाई लंक निपट निसंक परपुर गलबल भो",
@@ -1867,7 +3423,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`gopada ... kari` is an absolutival idiom for effortless crossing. `julāī` is a Braj causative/active preterite verb ('caused to burn')."
+    "grammarNote": "`gopada ... kari` is an absolutival idiom for effortless crossing. `julāī` is a Braj causative/active preterite verb ('caused to burn').",
+    "sourceWords": [
+      {
+        "text": "गोपद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पयोधि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "होलिका",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जुलाई",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लंक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "निपट",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "निसंक",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "परपुर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "गलबल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-029": {
     "source": "द्रोन सो पहार लियो ख्याल ही उखारि कर कंदुक ज्यों कपिखेल बेल कैसो फल भो",
@@ -1966,7 +3590,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`ukhāri liyo` is a compound verb (conjunctive participle `ukhāri` + completive auxiliary `liyo`). `kaiso` agrees with `phala`."
+    "grammarNote": "`ukhāri liyo` is a compound verb (conjunctive participle `ukhāri` + completive auxiliary `liyo`). `kaiso` agrees with `phala`.",
+    "sourceWords": [
+      {
+        "text": "द्रोन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पहार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लियो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ख्याल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "उखारि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कंदुक",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ज्यों",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "कपिखेल",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बेल",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "कैसो",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "फल",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-030": {
     "source": "संकट समाज असमंजस भो रामराज काज जुग पूगनि को करतल पल भो",
@@ -2047,7 +3763,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`pūgani` is the Braj oblique plural of `pūga` ('multitude/heap/span'). `karatala` expresses easy spatial and temporal control."
+    "grammarNote": "`pūgani` is the Braj oblique plural of `pūga` ('multitude/heap/span'). `karatala` expresses easy spatial and temporal control.",
+    "sourceWords": [
+      {
+        "text": "संकट",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "समाज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "असमंजस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रामराज",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "काज",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जुग",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पूगनि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "करतल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "पल",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-031": {
     "source": "साहसी समत्थ तुलसी को नाह जाकी बाँह लोकपाल पालन को फिर थिर थल भो",
@@ -2140,7 +3930,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`nāha` is the Braj form of Sanskrit `nātha` (master/lord). `bā̃ha` is the displayed surface token for arm."
+    "grammarNote": "`nāha` is the Braj form of Sanskrit `nātha` (master/lord). `bā̃ha` is the displayed surface token for arm.",
+    "sourceWords": [
+      {
+        "text": "साहसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "समत्थ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नाह",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जाकी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "लोकपाल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पालन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "फिर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "थिर",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "थल",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-032": {
     "source": "कमठ की पीठि जाकी गोड़नि की गाड़ैं मानो नापि के भाजन भरी जलनिधि जल भो",
@@ -2239,7 +4115,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`goṛani` is the Braj oblique plural of `goṛa` ('foot/leg'). `māno` marks utprekṣā (poetic conjecture). `nāpi ke` is a conjunctive participial phrase ('having measured')."
+    "grammarNote": "`goṛani` is the Braj oblique plural of `goṛa` ('foot/leg'). `māno` marks utprekṣā (poetic conjecture). `nāpi ke` is a conjunctive participial phrase ('having measured').",
+    "sourceWords": [
+      {
+        "text": "कमठ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पीठि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जाकी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गोड़नि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "गाड़ैं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मानो",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "नापि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भाजन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "भरी",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "जलनिधि",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "जल",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-033": {
     "source": "जातुधान दावन परावन को दुर्ग भयो महामीन बास तिमि तोमनी को थल भो",
@@ -2326,7 +4294,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`tomanī` is the Braj oblique plural of `toma` ('multitude/swarm'). `timi` refers to the legendary giant sea-monster Timingila."
+    "grammarNote": "`tomanī` is the Braj oblique plural of `toma` ('multitude/swarm'). `timi` refers to the legendary giant sea-monster Timingila.",
+    "sourceWords": [
+      {
+        "text": "जातुधान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दावन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "परावन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दुर्ग",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भयो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "महामीन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बास",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तिमि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तोमनी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "थल",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-034": {
     "source": "कुंभकरन रावन पयोदनाद ईंधन को तुलसी प्रताप जाको प्रबल अनल भो",
@@ -2401,7 +4449,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Extended metaphor (rūpaka alaṅkāra): the demon champions are the `īndhana` (firewood) and Hanuman's `pratāpa` is the `prabala anala` (raging fire). `payodanāda` is a Sanskritized epithet for Meghanada."
+    "grammarNote": "Extended metaphor (rūpaka alaṅkāra): the demon champions are the `īndhana` (firewood) and Hanuman's `pratāpa` is the `prabala anala` (raging fire). `payodanāda` is a Sanskritized epithet for Meghanada.",
+    "sourceWords": [
+      {
+        "text": "कुंभकरन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रावन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पयोदनाद",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ईंधन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रताप",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जाको",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "प्रबल",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "अनल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-035": {
     "source": "भीषम कहत मेरे अनुमान हनुमान सारिखो त्रिकाल न त्रिलोक महाबल भो",
@@ -2476,7 +4592,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`sārikho` is a Braj comparative adjective ('like/matching'). `na ... bho` forms a negative existential assertion."
+    "grammarNote": "`sārikho` is a Braj comparative adjective ('like/matching'). `na ... bho` forms a negative existential assertion.",
+    "sourceWords": [
+      {
+        "text": "भीषम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अनुमान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सारिखो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "त्रिकाल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "त्रिलोक",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "महाबल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-036": {
     "source": "दूत रामराय को सपूत पूत पौन को तू अंजनी को नंदन प्रताप भूरि भानु सो",
@@ -2575,7 +4759,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Direct second-person address using `tū`. Alliterative wordplay on `sapūta pūta pauna` and `bhūri bhānu`."
+    "grammarNote": "Direct second-person address using `tū`. Alliterative wordplay on `sapūta pūta pauna` and `bhūri bhānu`.",
+    "sourceWords": [
+      {
+        "text": "दूत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रामराय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सपूत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पूत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पौन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "अंजनी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "नंदन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "प्रताप",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भूरि",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "भानु",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-037": {
     "source": "सीय सोच समन दुरित दोष दमन सरन आय अवनि लखन प्रिय प्रान सो",
@@ -2662,7 +4938,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`sarana āya avani` functions as an agentive epithet ('protecting earth/shelter for those who come for refuge'). `priya prāna so` is a standard comparative phrase."
+    "grammarNote": "`sarana āya avani` functions as an agentive epithet ('protecting earth/shelter for those who come for refuge'). `priya prāna so` is a standard comparative phrase.",
+    "sourceWords": [
+      {
+        "text": "सीय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सोच",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "समन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दुरित",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दोष",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दमन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सरन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "आय",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "अवनि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "लखन",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "प्रिय",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "प्रान",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-038": {
     "source": "दसमुख दुसह दरिद्र दरिबे को भयो प्रगट तिलोक ओक तुलसी निधान सो",
@@ -2743,7 +5099,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Intense alliteration: `dasamukha dusaha daridra daribe`. `daribe ko` is an inflected Braj infinitive of purpose ('in order to tear to pieces')."
+    "grammarNote": "Intense alliteration: `dasamukha dusaha daridra daribe`. `daribe ko` is an inflected Braj infinitive of purpose ('in order to tear to pieces').",
+    "sourceWords": [
+      {
+        "text": "दसमुख",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दुसह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दरिद्र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दरिबे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भयो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रगट",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तिलोक",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ओक",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "निधान",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-039": {
     "source": "ग्यान गुनवान बलवान सेवा सावधान साहिब सुजान उर आनु हनुमान सो",
@@ -2818,7 +5248,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`ura ānu` is a Braj 2nd person imperative ('bring into the heart'). `so` at the end functions demonstratively ('such a one as Hanuman')."
+    "grammarNote": "`ura ānu` is a Braj 2nd person imperative ('bring into the heart'). `so` at the end functions demonstratively ('such a one as Hanuman').",
+    "sourceWords": [
+      {
+        "text": "ग्यान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुनवान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बलवान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सेवा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सावधान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "साहिब",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सुजान",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "उर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "आनु",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-040": {
     "source": "दावन दुवन दल भुवन बिदित बल बेद जस गावत बिबुध बंदिछोर को",
@@ -2899,7 +5397,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Braj Bhasha verse. 'beda' and 'bibudha' function as joint subjects of the imperfective present verb 'gāvata'. 'dāvana' functions as a verbal noun governing the objective compound 'duvana dala'."
+    "grammarNote": "Braj Bhasha verse. 'beda' and 'bibudha' function as joint subjects of the imperfective present verb 'gāvata'. 'dāvana' functions as a verbal noun governing the objective compound 'duvana dala'.",
+    "sourceWords": [
+      {
+        "text": "दावन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दुवन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भुवन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बिदित",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बेद",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जस",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "गावत",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बिबुध",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बंदिछोर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-041": {
     "source": "पाप ताप तिमिर तुहिन विघटन पटु सेवक सरोरुह सुखद भानु भोर को",
@@ -2980,7 +5552,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Rūpaka (metaphorical) compounds: 'pāpa tāpa timira tuhina' equates sins and threefold afflictions with darkness and frost; 'sevaka saroruha' equates the devotee to a lotus."
+    "grammarNote": "Rūpaka (metaphorical) compounds: 'pāpa tāpa timira tuhina' equates sins and threefold afflictions with darkness and frost; 'sevaka saroruha' equates the devotee to a lotus.",
+    "sourceWords": [
+      {
+        "text": "पाप",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ताप",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तिमिर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तुहिन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विघटन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पटु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सेवक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सरोरुह",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सुखद",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भानु",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भोर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-042": {
     "source": "लोक परलोक तें बिसोकु सपने न सोकु तुलसी के हिये है भरोसो एक ओर को",
@@ -3079,7 +5725,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'bisoku' and 'soku' are Tadbhava forms of Sanskrit 'viśoka' and 'śoka'. 'hiye' is locative singular (in the heart). 'eka ora ko' indicates singular direction of devotion."
+    "grammarNote": "'bisoku' and 'soku' are Tadbhava forms of Sanskrit 'viśoka' and 'śoka'. 'hiye' is locative singular (in the heart). 'eka ora ko' indicates singular direction of devotion.",
+    "sourceWords": [
+      {
+        "text": "लोक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "परलोक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिसोकु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सपने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सोकु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "हिये",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "भरोसो",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "एक",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "ओर",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-043": {
     "source": "राम को दुलारो दास बामदेव को निवास नाम कलि कामतरु केसरी किसोर को",
@@ -3166,7 +5904,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'bāmadeva' is the Tadbhava/Sanskrit divine title Vāmadeva (Shiva). 'kāmataru' is a Karmadhāraya compound (desire-granting tree). 'kesarī kisora ko' is genitive qualifying 'nāma'."
+    "grammarNote": "'bāmadeva' is the Tadbhava/Sanskrit divine title Vāmadeva (Shiva). 'kāmataru' is a Karmadhāraya compound (desire-granting tree). 'kesarī kisora ko' is genitive qualifying 'nāma'.",
+    "sourceWords": [
+      {
+        "text": "राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दुलारो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दास",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बामदेव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "निवास",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कलि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कामतरु",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "केसरी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "किसोर",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-044": {
     "source": "महाबल सीम महाभीम महाबानइत महाबीर बिदित बरायो रघुबीर को",
@@ -3229,7 +6047,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'mahābānaita' is a Braj noun formed from 'bāna' (arrow/weapon) + suffix '-aita' (wielder/expert). 'barāyo' is a verbal adjective/participle derived from root 'var' (to choose/elect)."
+    "grammarNote": "'mahābānaita' is a Braj noun formed from 'bāna' (arrow/weapon) + suffix '-aita' (wielder/expert). 'barāyo' is a verbal adjective/participle derived from root 'var' (to choose/elect).",
+    "sourceWords": [
+      {
+        "text": "महाबल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सीम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "महाभीम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "महाबानइत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "महाबीर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिदित",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बरायो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रघुबीर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-045": {
     "source": "कुलिस कठोर तनु जोर परै रोर रन करुना कलित मन धारमिक धीर को",
@@ -3316,7 +6190,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jora' and 'rora' create internal rhyme. 'kulisa kaṭhora' is an Upamāna compound. 'dhāramika' is an adjectival extension of dharma (virtuous/righteous)."
+    "grammarNote": "'jora' and 'rora' create internal rhyme. 'kulisa kaṭhora' is an Upamāna compound. 'dhāramika' is an adjectival extension of dharma (virtuous/righteous).",
+    "sourceWords": [
+      {
+        "text": "कुलिस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कठोर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तनु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जोर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "परै",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रोर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "करुना",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कलित",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "धारमिक",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "धीर",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-046": {
     "source": "दुरजन को काल सो कराल पाल सज्जन को सुमिरे हरनहार तुलसी की पीर को",
@@ -3409,7 +6363,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sumire' is an absolute locative participle (on remembering / when remembered). 'haranahāra' is an agent noun formed with the Braj suffix '-hāra'."
+    "grammarNote": "'sumire' is an absolute locative participle (on remembering / when remembered). 'haranahāra' is an agent noun formed with the Braj suffix '-hāra'.",
+    "sourceWords": [
+      {
+        "text": "दुरजन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कराल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पाल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सज्जन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सुमिरे",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "हरनहार",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-047": {
     "source": "सीय सुखदायक दुलारो रघुनायक को सेवक सहायक है साहसी समीर को",
@@ -3484,7 +6524,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sīya' is an oblique/dative form of Sītā. 'samīra ko' is an elliptical genitive meaning 'the son of the Wind'."
+    "grammarNote": "'sīya' is an oblique/dative form of Sītā. 'samīra ko' is an elliptical genitive meaning 'the son of the Wind'.",
+    "sourceWords": [
+      {
+        "text": "सीय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुखदायक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दुलारो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रघुनायक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सेवक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सहायक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "साहसी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "समीर",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-048": {
     "source": "रचिबे को बिधि जैसे पालिबे को हरिहर मीच मारिबे को जियाइबे को सुधापान भो",
@@ -3577,7 +6685,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Inflected Braj gerunds expressing purpose: 'racibe ko', 'pālibe ko', 'māribe ko', 'jiyāibe ko' (from racnā, pālnā, mārnā, jiyānā). 'harihara' is a Dvandva compound."
+    "grammarNote": "Inflected Braj gerunds expressing purpose: 'racibe ko', 'pālibe ko', 'māribe ko', 'jiyāibe ko' (from racnā, pālnā, mārnā, jiyānā). 'harihara' is a Dvandva compound.",
+    "sourceWords": [
+      {
+        "text": "रचिबे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बिधि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जैसे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पालिबे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हरिहर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मीच",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मारिबे",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जियाइबे",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सुधापान",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-049": {
     "source": "धरिबे को धरनि तरनि तम दलिबे को सोखिबे कृसानु पोषिबे को हिम भानु भो",
@@ -3670,7 +6864,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'hima bhānu' is a compound meaning the moon (literally 'cool luminary'). 'dharani' and 'tarani' provide internal rhyme."
+    "grammarNote": "'hima bhānu' is a compound meaning the moon (literally 'cool luminary'). 'dharani' and 'tarani' provide internal rhyme.",
+    "sourceWords": [
+      {
+        "text": "धरिबे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "धरनि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तरनि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दलिबे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सोखिबे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कृसानु",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पोषिबे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "हिम",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भानु",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-050": {
     "source": "खल दुख दोषिबे को जन परितोषिबे को माँगिबो मलीनता को मोदक सुदान भो",
@@ -3757,7 +7037,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'doṣibe' and 'paritoṣibe' are purposeful gerunds. 'mā̃gibo' is a verbal noun in Braj ('mā̃gnā')."
+    "grammarNote": "'doṣibe' and 'paritoṣibe' are purposeful gerunds. 'mā̃gibo' is a verbal noun in Braj ('mā̃gnā').",
+    "sourceWords": [
+      {
+        "text": "खल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दुख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दोषिबे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "परितोषिबे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "माँगिबो",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मलीनता",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मोदक",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "सुदान",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-051": {
     "source": "तुलसी को साहिब हठीलो हनुमान भो ॥",
@@ -3802,7 +7162,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'haṭhīlo' is an adjective derived from 'haṭha' (obstinacy, resolute determination in protection)."
+    "grammarNote": "'haṭhīlo' is an adjective derived from 'haṭha' (obstinacy, resolute determination in protection).",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साहिब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हठीलो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-052": {
     "source": "सीवक स्योकाई जानी जानकीस मानै कानि",
@@ -3847,7 +7245,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sīvaka' and 'syokāī' are dialectal forms of 'sevaka' and 'sevakāī'. 'kāni mānanā' is an established Hindi/Braj idiom for showing deference or respecting custom/honor."
+    "grammarNote": "'sīvaka' and 'syokāī' are dialectal forms of 'sevaka' and 'sevakāī'. 'kāni mānanā' is an established Hindi/Braj idiom for showing deference or respecting custom/honor.",
+    "sourceWords": [
+      {
+        "text": "सीवक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "स्योकाई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जानी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जानकीस",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मानै",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कानि",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-053": {
     "source": "सानुकूल सूलपानी नवै नाथ नाक को ।",
@@ -3892,7 +7328,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sūlapānī' is a Bahuvrīhi compound (he whose hand holds a trident, Shiva). 'nāka' is Sanskrit for heaven/sky."
+    "grammarNote": "'sūlapānī' is a Bahuvrīhi compound (he whose hand holds a trident, Shiva). 'nāka' is Sanskrit for heaven/sky.",
+    "sourceWords": [
+      {
+        "text": "सानुकूल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सूलपानी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नवै",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नाथ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नाक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-054": {
     "source": "देवी देव दानव दयावने वै जोरैं हाथ",
@@ -3943,7 +7417,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'joraĩ' is a 3rd person plural present verb. 'dayāvane' is an adjectival participle indicating a supplicant, humble state."
+    "grammarNote": "'joraĩ' is a 3rd person plural present verb. 'dayāvane' is an adjectival participle indicating a supplicant, humble state.",
+    "sourceWords": [
+      {
+        "text": "देवी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दानव",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दयावने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वै",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जोरैं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-055": {
     "source": "बापुरे बराक कहा और राजा रांक को ॥",
@@ -3994,7 +7512,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'bāpure' and 'barāka' are emphatic adjectives of wretchedness/insignificance. 'rājā rāṅka' is a traditional rhyming merism."
+    "grammarNote": "'bāpure' and 'barāka' are emphatic adjectives of wretchedness/insignificance. 'rājā rāṅka' is a traditional rhyming merism.",
+    "sourceWords": [
+      {
+        "text": "बापुरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बराक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "और",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राजा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रांक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-056": {
     "source": "जागत सोवत बैठे बागत बिनोद मोद",
@@ -4039,7 +7601,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A series of present participles and absolute forms describing continuous states. 'bāgata' is derived from 'baganā' (to move about / wander)."
+    "grammarNote": "A series of present participles and absolute forms describing continuous states. 'bāgata' is derived from 'baganā' (to move about / wander).",
+    "sourceWords": [
+      {
+        "text": "जागत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सोवत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बैठे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बागत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बिनोद",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मोद",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-057": {
     "source": "ताके जो अनरथ सो समर्थ एक आंक को ।",
@@ -4096,7 +7696,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tāke' is genitive/dative singular. 'anartha' (misfortune/evil) and 'samartha' (capable) form internal rhyme."
+    "grammarNote": "'tāke' is genitive/dative singular. 'anartha' (misfortune/evil) and 'samartha' (capable) form internal rhyme.",
+    "sourceWords": [
+      {
+        "text": "ताके",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अनरथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "समर्थ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "एक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आंक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-058": {
     "source": "सब दिन रूरो परै पूरो जहाँ तहाँ ताही",
@@ -4153,7 +7803,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'rūro' is a Braj adjective meaning beautiful/good/auspicious. 'tāhī' is an emphatic dative/locative pronoun (unto that very one)."
+    "grammarNote": "'rūro' is a Braj adjective meaning beautiful/good/auspicious. 'tāhī' is an emphatic dative/locative pronoun (unto that very one).",
+    "sourceWords": [
+      {
+        "text": "सब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रूरो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "परै",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पूरो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जहाँ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तहाँ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ताही",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-059": {
     "source": "जाके है भरोसो हिये हनुमान हाक को ॥",
@@ -4204,7 +7904,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jāke... tāhī' forms a relative-correlative construction spanning lines 58 and 59."
+    "grammarNote": "'jāke... tāhī' forms a relative-correlative construction spanning lines 58 and 59.",
+    "sourceWords": [
+      {
+        "text": "जाके",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भरोसो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हिये",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हाक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-060": {
     "source": "सानुग सगौरी सानुकूल सूलपानि ताहि",
@@ -4243,7 +7987,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sānuga' (sa + anuga) and 'sagaurī' (sa + gaurī) are Bahuvrīhi compounds denoting accompaniment."
+    "grammarNote": "'sānuga' (sa + anuga) and 'sagaurī' (sa + gaurī) are Bahuvrīhi compounds denoting accompaniment.",
+    "sourceWords": [
+      {
+        "text": "सानुग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सगौरी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सानुकूल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सूलपानि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ताहि",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-061": {
     "source": "लोकपाल सकल लखन राम जानकी ।",
@@ -4282,7 +8058,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Elliptical clause sharing the predicate 'sānukūla' and indirect object 'tāhi' from line 60."
+    "grammarNote": "Elliptical clause sharing the predicate 'sānukūla' and indirect object 'tāhi' from line 60.",
+    "sourceWords": [
+      {
+        "text": "लोकपाल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लखन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जानकी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-062": {
     "source": "लोक परलोक को बिसोक सो तिलोक ताहि",
@@ -4333,7 +8141,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tiloka' is the Tadbhava form of Sanskrit 'triloka'. 'bisoka' is Tadbhava for 'viśoka'."
+    "grammarNote": "'tiloka' is the Tadbhava form of Sanskrit 'triloka'. 'bisoka' is Tadbhava for 'viśoka'.",
+    "sourceWords": [
+      {
+        "text": "लोक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "परलोक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिसोक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तिलोक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ताहि",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-063": {
     "source": "तुलसी तमाई कहा काहू बीर आन की ॥",
@@ -4384,7 +8236,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tamāī' is derived from Arabic-Persian 'tama' (desire/expectation). 'āna' is Tadbhava for Sanskrit 'anya' (other)."
+    "grammarNote": "'tamāī' is derived from Arabic-Persian 'tama' (desire/expectation). 'āna' is Tadbhava for Sanskrit 'anya' (other).",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तमाई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "काहू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-064": {
     "source": "केसरीकिसोर बंदीछोरके निवाजे सब",
@@ -4417,7 +8313,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'bandīchorake' has the inflected agentive/genitive postposition '-ke'. 'nivāje' is a past participle from the loanverb 'nivāzanā' (to favor/ennoble)."
+    "grammarNote": "'bandīchorake' has the inflected agentive/genitive postposition '-ke'. 'nivāje' is a past participle from the loanverb 'nivāzanā' (to favor/ennoble).",
+    "sourceWords": [
+      {
+        "text": "केसरीकिसोर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बंदीछोरके",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "निवाजे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-065": {
     "source": "कीरति बिमल कपि करुनानिधान की ।",
@@ -4456,7 +8378,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kīrati' is Tadbhava for Sanskrit 'kīrti'. 'karunānidhāna' is a Genitive Tatpuruṣa compound (abode of mercy)."
+    "grammarNote": "'kīrati' is Tadbhava for Sanskrit 'kīrti'. 'karunānidhāna' is a Genitive Tatpuruṣa compound (abode of mercy).",
+    "sourceWords": [
+      {
+        "text": "कीरति",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिमल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कपि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करुनानिधान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-066": {
     "source": "बालक ज्यों पालिहैं कृपालु मुनि सिद्ध ताको",
@@ -4507,7 +8461,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'pālihaĩ' is 3rd person plural future in Braj. 'muni siddha' acts as a collective subject."
+    "grammarNote": "'pālihaĩ' is 3rd person plural future in Braj. 'muni siddha' acts as a collective subject.",
+    "sourceWords": [
+      {
+        "text": "बालक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ज्यों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पालिहैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कृपालु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मुनि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सिद्ध",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ताको",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-067": {
     "source": "जाके हिये हुलसति हाक हनुमान की ॥",
@@ -4552,7 +8550,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'hulasati' is 3rd person singular feminine present (agreeing with feminine 'hāka'), derived from Sanskrit root 'hulas' / 'ullāsa'."
+    "grammarNote": "'hulasati' is 3rd person singular feminine present (agreeing with feminine 'hāka'), derived from Sanskrit root 'hulas' / 'ullāsa'.",
+    "sourceWords": [
+      {
+        "text": "जाके",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हिये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हुलसति",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हाक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-068": {
     "source": "करुनानिधान बल बुद्धि के निधान मोद-",
@@ -4597,7 +8633,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative epithets. 'moda-' is the first member of an enjambed compound completed in line 69."
+    "grammarNote": "Vocative epithets. 'moda-' is the first member of an enjambed compound completed in line 69.",
+    "sourceWords": [
+      {
+        "text": "करुनानिधान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बुद्धि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "निधान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मोद-",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-069": {
     "source": "-महिमा-निधान गुनग्यान के निधान हौ ।",
@@ -4636,7 +8710,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'-mahimā-nidhāna' completes the compound 'moda-mahimā-nidhāna'. 'hau' is 2nd person present verb ('you are')."
+    "grammarNote": "'-mahimā-nidhāna' completes the compound 'moda-mahimā-nidhāna'. 'hau' is 2nd person present verb ('you are').",
+    "sourceWords": [
+      {
+        "text": "-महिमा-निधान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुनग्यान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "निधान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हौ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-070": {
     "source": "बामदेव-रूप भूप राम के सनेही नाम-",
@@ -4681,7 +8787,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'bāmadeva-rūpa' is a Bahuvrīhi compound. 'nāma-' is the first element of the enjambed compound 'nāma-leta'."
+    "grammarNote": "'bāmadeva-rūpa' is a Bahuvrīhi compound. 'nāma-' is the first element of the enjambed compound 'nāma-leta'.",
+    "sourceWords": [
+      {
+        "text": "बामदेव-रूप",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भूप",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सनेही",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नाम-",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-071": {
     "source": "-लेत देत अरथ धरम काम निरबान हौ ॥",
@@ -4732,7 +8876,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'-leta' completes 'nāma-leta' (an absolute participial compound: upon taking the name). 'deta hau' is 2nd person present indicative."
+    "grammarNote": "'-leta' completes 'nāma-leta' (an absolute participial compound: upon taking the name). 'deta hau' is 2nd person present indicative.",
+    "sourceWords": [
+      {
+        "text": "-लेत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अरथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "धरम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "काम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निरबान",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हौ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-072": {
     "source": "आपने प्रभाव सीतानाथ के सुभावसील",
@@ -4771,7 +8959,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'subhāvasīla' is a Dvandva/Karmadhāraya compound combining 'subhāva' (good nature) and 'śīla' (virtuous conduct)."
+    "grammarNote": "'subhāvasīla' is a Dvandva/Karmadhāraya compound combining 'subhāva' (good nature) and 'śīla' (virtuous conduct).",
+    "sourceWords": [
+      {
+        "text": "आपने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रभाव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सीतानाथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुभावसील",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-073": {
     "source": "लोक-बेद-बिधिके बिदूष हनुमान हौ ।",
@@ -4804,7 +9024,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'bidūṣa' is Tadbhava for Sanskrit 'vidvas' / 'viduṣa' (learned scholar). 'loka-beda-bidhike' is an inflected genitive compound."
+    "grammarNote": "'bidūṣa' is Tadbhava for Sanskrit 'vidvas' / 'viduṣa' (learned scholar). 'loka-beda-bidhike' is an inflected genitive compound.",
+    "sourceWords": [
+      {
+        "text": "लोक-बेद-बिधिके",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिदूष",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हौ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-074": {
     "source": "मन की बचन की करम की तिहूँ प्रकार",
@@ -4861,7 +9107,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tihū̃' is an oblique plural numeral (in all three). 'mana, bacana, karama' represents the standard Indian triad of agency (manas, vāc, karman)."
+    "grammarNote": "'tihū̃' is an oblique plural numeral (in all three). 'mana, bacana, karama' represents the standard Indian triad of agency (manas, vāc, karman).",
+    "sourceWords": [
+      {
+        "text": "मन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बचन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तिहूँ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "प्रकार",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-075": {
     "source": "तुलसी तिहारो तुम साहिब सुजान हौ ॥",
@@ -4906,7 +9202,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tihāro' is a Braj 2nd person possessive adjective ('yours'). 'sāhiba' is a Persian loanword naturalized in Braj devotional poetry."
+    "grammarNote": "'tihāro' is a Braj 2nd person possessive adjective ('yours'). 'sāhiba' is a Persian loanword naturalized in Braj devotional poetry.",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तिहारो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साहिब",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुजान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हौ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-076": {
     "source": "मन को अगम तन सुगम किये कपीस",
@@ -4957,7 +9291,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'agama' and 'sugama' form an antithetical pair. 'tanu' is used instrumentally (with the body / physically)."
+    "grammarNote": "'agama' and 'sugama' form an antithetical pair. 'tanu' is used instrumentally (with the body / physically).",
+    "sourceWords": [
+      {
+        "text": "मन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अगम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुगम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "किये",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कपीस",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-077": {
     "source": "काजु महाराज के समाज साज साजे हैं ।",
@@ -5008,7 +9386,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'samāja' is used here in the sense of 'all / collective multitude'. 'sāja sāje' is a cognate accusative/alliterative verb phrase."
+    "grammarNote": "'samāja' is used here in the sense of 'all / collective multitude'. 'sāja sāje' is a cognate accusative/alliterative verb phrase.",
+    "sourceWords": [
+      {
+        "text": "काजु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "महाराज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "समाज",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साज",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "साजे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-078": {
     "source": "देवबंदी छोर रनरोर केसरीकिसोर",
@@ -5041,7 +9463,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative compounds. 'devabandī chora' = deva-bandī-chora (liberator of divine captives)."
+    "grammarNote": "Vocative compounds. 'devabandī chora' = deva-bandī-chora (liberator of divine captives).",
+    "sourceWords": [
+      {
+        "text": "देवबंदी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "छोर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रनरोर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "केसरीकिसोर",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-079": {
     "source": "जुग जुग जग तेरे बिरद बिराजे हैं ॥",
@@ -5092,7 +9540,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'juga juga' is a reduplicated temporal adverbial. 'birada' is Tadbhava for Sanskrit 'viruda' (heraldic title of fame/glory). Token 4 copied exactly as displayed in the audited roman line."
+    "grammarNote": "'juga juga' is a reduplicated temporal adverbial. 'birada' is Tadbhava for Sanskrit 'viruda' (heraldic title of fame/glory). Token 4 copied exactly as displayed in the audited roman line.",
+    "sourceWords": [
+      {
+        "text": "जुग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जुग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बिरद",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिराजे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-080": {
     "source": "बीर बरजोर घटि जोर तुलसी की ओर",
@@ -5143,7 +9635,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative noun phrase 'bīra barajora' with an intransitive verbal predicate 'ghaṭi [gayā] jora'."
+    "grammarNote": "Vocative noun phrase 'bīra barajora' with an intransitive verbal predicate 'ghaṭi [gayā] jora'.",
+    "sourceWords": [
+      {
+        "text": "बीर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बरजोर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घटि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जोर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ओर",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-081": {
     "source": "सुनि सकुचानि साधु खलगन गाजे हैं ।",
@@ -5188,7 +9724,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle 'suni' governs two coordinated subject-verb pairs: 'sādhu sakucāni' and 'khalagana gāje haĩ'."
+    "grammarNote": "Conjunctive participle 'suni' governs two coordinated subject-verb pairs: 'sādhu sakucāni' and 'khalagana gāje haĩ'.",
+    "sourceWords": [
+      {
+        "text": "सुनि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सकुचानि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "खलगन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गाजे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-082": {
     "source": "बिगरी सँवार अंजनीकुमार कीजे मोहि",
@@ -5227,7 +9801,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Imperative verbal construction 'sam̐vāra kīje' addressing Anjanikumar."
+    "grammarNote": "Imperative verbal construction 'sam̐vāra kīje' addressing Anjanikumar.",
+    "sourceWords": [
+      {
+        "text": "बिगरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सँवार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अंजनीकुमार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कीजे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मोहि",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-083": {
     "source": "जैसे होत आये हनुमान के निवाजे हैं ॥",
@@ -5278,7 +9884,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Continuous aspectual auxiliary 'hota āye haĩ' with passive participle 'nivāje' used substantively."
+    "grammarNote": "Continuous aspectual auxiliary 'hota āye haĩ' with passive participle 'nivāje' used substantively.",
+    "sourceWords": [
+      {
+        "text": "जैसे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "होत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आये",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निवाजे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-084": {
     "source": "जानसिरोमनि हौ हनुमान सदा जन के मन बास तिहारो ।",
@@ -5341,7 +9991,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound noun 'jānasiromani' (jāna + siromani) in vocative apposition with 'hanumāna'."
+    "grammarNote": "Compound noun 'jānasiromani' (jāna + siromani) in vocative apposition with 'hanumāna'.",
+    "sourceWords": [
+      {
+        "text": "जानसिरोमनि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हौ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सदा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बास",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तिहारो",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-085": {
     "source": "ढारो बिगारो मैं काको कहा केहि कारन खीझत हौ तो तिहारो ॥",
@@ -5416,7 +10122,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Interrogative syntax with paired perfective participles 'ḍhāro bigāro' used transitively."
+    "grammarNote": "Interrogative syntax with paired perfective participles 'ḍhāro bigāro' used transitively.",
+    "sourceWords": [
+      {
+        "text": "ढारो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिगारो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "काको",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "केहि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कारन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "खीझत",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "हौ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तिहारो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-086": {
     "source": "साहिब सेवक नाते ते हातो कियो सो तहां तुलसी को न चारो",
@@ -5497,7 +10271,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Ablative phrase 'sāhiba sevaka nāte te' modifying the verbal compound 'hāto kiyo'."
+    "grammarNote": "Ablative phrase 'sāhiba sevaka nāte te' modifying the verbal compound 'hāto kiyo'.",
+    "sourceWords": [
+      {
+        "text": "साहिब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सेवक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नाते",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हातो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कियो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तहां",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "चारो",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-087": {
     "source": "दोष सुनाये ते आगेहुं को हुसियार ह्वै हौं मन तौ हिय हारो",
@@ -5578,7 +10426,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conditional participle 'sunāye te' followed by future first-person verb 'hvai hauṁ' and contrastive nominal clause 'hiya hāro'."
+    "grammarNote": "Conditional participle 'sunāye te' followed by future first-person verb 'hvai hauṁ' and contrastive nominal clause 'hiya hāro'.",
+    "sourceWords": [
+      {
+        "text": "दोष",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुनाये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आगेहुं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हुसियार",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ह्वै",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हौं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तौ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "हिय",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "हारो",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-088": {
     "source": "तेरे थपे उथपै न महेस थपे थिर को कपि जे घर घाले",
@@ -5659,7 +10581,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Balanced antithetical parallel clauses with polyptoton on 'thape / uthapai / thape / thira'."
+    "grammarNote": "Balanced antithetical parallel clauses with polyptoton on 'thape / uthapai / thape / thira'.",
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "थपे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "उथपै",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "महेस",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "थपे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "थिर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कपि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "घर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "घाले",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-089": {
     "source": "तेरे निवाजे गरीबनिवाज बिराजत बैरिन के उर साले",
@@ -5716,7 +10712,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative compound 'garībanivāja' with two parallel verbal predicates 'birājata' and 'sāle'."
+    "grammarNote": "Vocative compound 'garībanivāja' with two parallel verbal predicates 'birājata' and 'sāle'.",
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निवाजे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गरीबनिवाज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिराजत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बैरिन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "उर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "साले",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-090": {
     "source": "संकट सोच सबै तुलसी लिये नाम फटै मकरी के से जाले",
@@ -5791,7 +10837,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Absolute participial clause 'nāma liye' with simile postposition 'se' modifying 'jāle'."
+    "grammarNote": "Absolute participial clause 'nāma liye' with simile postposition 'se' modifying 'jāle'.",
+    "sourceWords": [
+      {
+        "text": "संकट",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सोच",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सबै",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लिये",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "फटै",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मकरी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जाले",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-091": {
     "source": "बूढ़ भये बलि मेरिहि बार कि हारि परे बहुतै नतपाले",
@@ -5860,7 +10974,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Interrogative disjunction 'ki' joining two experiential verbal phrases 'būḍha bhaye' and 'hāri pare'."
+    "grammarNote": "Interrogative disjunction 'ki' joining two experiential verbal phrases 'būḍha bhaye' and 'hāri pare'.",
+    "sourceWords": [
+      {
+        "text": "बूढ़",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बलि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मेरिहि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बार",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हारि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "परे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बहुतै",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "नतपाले",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-092": {
     "source": "सिंधु तरे बड़े बीर दले खल जारे हैं लंक से बंक मवासे",
@@ -5941,7 +11117,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of asyndetic perfective past verbal clauses: 'siṁdhu tare', '[bīra] dale', '[mavāse] jāre haĩ'."
+    "grammarNote": "Series of asyndetic perfective past verbal clauses: 'siṁdhu tare', '[bīra] dale', '[mavāse] jāre haĩ'.",
+    "sourceWords": [
+      {
+        "text": "सिंधु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बड़े",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दले",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "खल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जारे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "लंक",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बंक",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "मवासे",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-093": {
     "source": "तैं रन केहरि केहरि के बिदले अरिकुंजर छैल छवासे",
@@ -6004,7 +11254,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Yamaka on 'kehari' (lion) and 'kehari ke' (son of Kesari) with compound 'arikuñjara'."
+    "grammarNote": "Yamaka on 'kehari' (lion) and 'kehari ke' (son of Kesari) with compound 'arikuñjara'.",
+    "sourceWords": [
+      {
+        "text": "तैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "केहरि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "केहरि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिदले",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अरिकुंजर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "छैल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "छवासे",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-094": {
     "source": "तोसों समत्थ सुसाहिब सेइ सहै तुलसी दुख दोष दवा से",
@@ -6073,7 +11379,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Absolutive participle 'sei' governing 'susāhiba', with finite verb 'sahai' taking 'dukha doṣa'."
+    "grammarNote": "Absolutive participle 'sei' governing 'susāhiba', with finite verb 'sahai' taking 'dukha doṣa'.",
+    "sourceWords": [
+      {
+        "text": "तोसों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "समत्थ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुसाहिब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सेइ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सहै",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दुख",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दोष",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दवा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-095": {
     "source": "बानर बाज बढ़े खल खेचर लीजत क्यों न लपेटी लवा से",
@@ -6148,7 +11516,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Metaphorical compound 'bānara bāja' and 'khala khecara' followed by negative interrogative imperative 'kyoṁ na lījata'."
+    "grammarNote": "Metaphorical compound 'bānara bāja' and 'khala khecara' followed by negative interrogative imperative 'kyoṁ na lījata'.",
+    "sourceWords": [
+      {
+        "text": "बानर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बाज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बढ़े",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "खल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "खेचर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लीजत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "लपेटी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "लवा",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-096": {
     "source": "अच्छ बिमर्दन कानन भानि दसानन आनन भान निहारो",
@@ -6205,7 +11641,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of descriptive epithetic and participial clauses: 'accha bimardana', 'kānana bhāni', 'ānana bhāna nihāro'."
+    "grammarNote": "Series of descriptive epithetic and participial clauses: 'accha bimardana', 'kānana bhāni', 'ānana bhāna nihāro'.",
+    "sourceWords": [
+      {
+        "text": "अच्छ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिमर्दन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कानन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भानि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दसानन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आनन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भान",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "निहारो",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-097": {
     "source": "बारिदनाद अकंपन कुंभकरन से कुंजर केहरि बारो",
@@ -6256,7 +11742,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Simile phrase 'se kuñjara' modifying the catalogue of demon names, set in apposition to 'kehari bāro'."
+    "grammarNote": "Simile phrase 'se kuñjara' modifying the catalogue of demon names, set in apposition to 'kehari bāro'.",
+    "sourceWords": [
+      {
+        "text": "बारिदनाद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अकंपन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कुंभकरन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कुंजर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "केहरि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बारो",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-098": {
     "source": "राम प्रताप हुतासन कच्छ बिपच्छ समीर समीर दुलारो",
@@ -6313,7 +11843,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Rupaka (metaphor) network: enemies = brushwood (kaccha), Rama's might = fire (hutāsana), Hanuman = fanning wind (samīra)."
+    "grammarNote": "Rupaka (metaphor) network: enemies = brushwood (kaccha), Rama's might = fire (hutāsana), Hanuman = fanning wind (samīra).",
+    "sourceWords": [
+      {
+        "text": "राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रताप",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हुतासन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कच्छ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बिपच्छ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "समीर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "समीर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दुलारो",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-099": {
     "source": "पाप ते सापतें ताप तिहूं ते सदा तुलसी कहं सो रखवारो",
@@ -6388,7 +11968,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Ablative series 'pāpa te', 'sāpateṁ', 'tāpa tihūṁ te' followed by dative-experiencer postposition 'kahaṁ'."
+    "grammarNote": "Ablative series 'pāpa te', 'sāpateṁ', 'tāpa tihūṁ te' followed by dative-experiencer postposition 'kahaṁ'.",
+    "sourceWords": [
+      {
+        "text": "पाप",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सापतें",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ताप",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तिहूं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सदा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कहं",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रखवारो",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-100": {
     "source": "जानत जहानु हनुमान को निवाज्यो जन मन अनुमानी बलि बोल न बिसारिये",
@@ -6469,7 +12117,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Initial clause 'jānata jahānu' followed by objective clause 'hanumāna ko nivājyo jana' and imperative 'bola na bisāriye'."
+    "grammarNote": "Initial clause 'jānata jahānu' followed by objective clause 'hanumāna ko nivājyo jana' and imperative 'bola na bisāriye'.",
+    "sourceWords": [
+      {
+        "text": "जानत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जहानु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "निवाज्यो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "अनुमानी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बलि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बोल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बिसारिये",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-101": {
     "source": "सेवा जोग तुलसी कबहुं कहा चूक परी साहिब सुभाव कपिसाहिबी संभारिये",
@@ -6544,7 +12266,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Rhetorical question 'sevā joga tulasī kabahuṁ kahā' coupled with imperative 'sambhāriye'."
+    "grammarNote": "Rhetorical question 'sevā joga tulasī kabahuṁ kahā' coupled with imperative 'sambhāriye'.",
+    "sourceWords": [
+      {
+        "text": "सेवा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जोग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कबहुं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चूक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "परी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "साहिब",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सुभाव",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कपिसाहिबी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "संभारिये",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-102": {
     "source": "अपराधी जानी कीजै सासति सहस भांति मोदक मरै जो ताहि माहुर न मारिये",
@@ -6631,7 +12421,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Proverbial conditional construction: 'modaka marai jo tāhi māhura na māriye'."
+    "grammarNote": "Proverbial conditional construction: 'modaka marai jo tāhi māhura na māriye'.",
+    "sourceWords": [
+      {
+        "text": "अपराधी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जानी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कीजै",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सासति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सहस",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भांति",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मोदक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मरै",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ताहि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "माहुर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "मारिये",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-103": {
     "source": "साहसी समीर के दुलारे रघुबीर जू के बांह पीर महाबीर बेगी ही निवारिये",
@@ -6718,7 +12588,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative epithet string culminating in the imperative 'begī hī nivāriye' taking direct object 'bāṁha pīra'."
+    "grammarNote": "Vocative epithet string culminating in the imperative 'begī hī nivāriye' taking direct object 'bāṁha pīra'.",
+    "sourceWords": [
+      {
+        "text": "साहसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "समीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दुलारे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रघुबीर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जू",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बांह",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "महाबीर",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बेगी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "निवारिये",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-104": {
     "source": "बालक बिलोकि बलि बारे ते आपनो कियो दीनबंधु दया कीन्हीं निरुपाधि न्यारिये",
@@ -6799,7 +12749,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle 'biloki' governing 'bālaka', with past transitive verbs 'kiyo' and 'kīnhīṁ'."
+    "grammarNote": "Conjunctive participle 'biloki' governing 'bālaka', with past transitive verbs 'kiyo' and 'kīnhīṁ'.",
+    "sourceWords": [
+      {
+        "text": "बालक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिलोकि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बलि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बारे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आपनो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कियो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दीनबंधु",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दया",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कीन्हीं",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "निरुपाधि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "न्यारिये",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-105": {
     "source": "रावरो भरोसो तुलसी के रावरोई बल आस रावरीये दास रावरो विचारिये",
@@ -6874,7 +12898,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Emphatic pronominal forms 'rāvaroī' and 'rāvarīye' highlighting exclusivity of refuge."
+    "grammarNote": "Emphatic pronominal forms 'rāvaroī' and 'rāvarīye' highlighting exclusivity of refuge.",
+    "sourceWords": [
+      {
+        "text": "रावरो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भरोसो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रावरोई",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आस",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रावरीये",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दास",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "रावरो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "विचारिये",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-106": {
     "source": "बड़ो बिकराल कलि काको न बिहाल कियो माथे पगु बली को निहारी सो निहारिये",
@@ -6967,7 +13059,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Polyptoton / paronomasia on 'nihārī' (having seen) and 'nihāriye' (please look upon)."
+    "grammarNote": "Polyptoton / paronomasia on 'nihārī' (having seen) and 'nihāriye' (please look upon).",
+    "sourceWords": [
+      {
+        "text": "बड़ो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिकराल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कलि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "काको",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिहाल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कियो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "माथे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पगु",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बली",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "निहारी",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "निहारिये",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-107": {
     "source": "केसरी किसोर रनरोर बरजोर बीर बाहुपीर राहु मातु ज्यों पछारी मारिये",
@@ -7042,7 +13220,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound direct object 'bāhupīra' governed by compound verb 'pachārī māriye' with mythological simile."
+    "grammarNote": "Compound direct object 'bāhupīra' governed by compound verb 'pachārī māriye' with mythological simile.",
+    "sourceWords": [
+      {
+        "text": "केसरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "किसोर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रनरोर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बरजोर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बाहुपीर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "राहु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मातु",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ज्यों",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पछारी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मारिये",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-108": {
     "source": "उथपे थपन थिर थपे उथपनहार केसरीकुमार बल आपनो संभारिये",
@@ -7105,7 +13351,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Chiasmus and figura etymologica on 'uthape thapana' and 'thape uthapanahāra'."
+    "grammarNote": "Chiasmus and figura etymologica on 'uthape thapana' and 'thape uthapanahāra'.",
+    "sourceWords": [
+      {
+        "text": "उथपे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "थपन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "थिर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "थपे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उथपनहार",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "केसरीकुमार",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "आपनो",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "संभारिये",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-109": {
     "source": "राम के गुलामनि को कामतरु रामदूत मोसे दीन दुबरे को तकिया तिहारिये",
@@ -7186,7 +13488,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dative complements 'gulāmani ko' and 'dubare ko' linked to predicate nouns 'kāmataru' and 'takiyā'."
+    "grammarNote": "Dative complements 'gulāmani ko' and 'dubare ko' linked to predicate nouns 'kāmataru' and 'takiyā'.",
+    "sourceWords": [
+      {
+        "text": "राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गुलामनि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कामतरु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रामदूत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मोसे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दीन",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दुबरे",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तकिया",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "तिहारिये",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-110": {
     "source": "साहिब समत्थ तोसों तुलसी के माथे पर सोऊ अपराध बिनु बीर बांधी मारिये",
@@ -7273,7 +13649,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative phrase 'māthe para' expressing protection, contrasted with absolutive-verb compound 'bāndhī māriye'."
+    "grammarNote": "Locative phrase 'māthe para' expressing protection, contrasted with absolutive-verb compound 'bāndhī māriye'.",
+    "sourceWords": [
+      {
+        "text": "साहिब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "समत्थ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तोसों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "माथे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सोऊ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "अपराध",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बिनु",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बांधी",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "मारिये",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-111": {
     "source": "पोखरी बिसाल बाहु बली बारिचर पीर मकरी ज्युं पकरी कै बदन बिदारिये",
@@ -7354,7 +13810,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Metaphor (rupaka) 'bāhu pokharī' and 'pīra bāricara' governed by conjunctive phrase 'pakarī kai' and imperative 'bidāriye'."
+    "grammarNote": "Metaphor (rupaka) 'bāhu pokharī' and 'pīra bāricara' governed by conjunctive phrase 'pakarī kai' and imperative 'bidāriye'.",
+    "sourceWords": [
+      {
+        "text": "पोखरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिसाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाहु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बली",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बारिचर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मकरी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ज्युं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पकरी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बदन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बिदारिये",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-112": {
     "source": "राम को सनेह राम साहस लखन सिय राम की भगति सोच संकट निवारिये",
@@ -7441,7 +13971,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of oath-like invocations in the genitive/associative acting as the devotional leverage for the imperative 'nivāriye'."
+    "grammarNote": "Series of oath-like invocations in the genitive/associative acting as the devotional leverage for the imperative 'nivāriye'.",
+    "sourceWords": [
+      {
+        "text": "राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सनेह",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साहस",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लखन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सिय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भगति",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सोच",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "संकट",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "निवारिये",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-113": {
     "source": "मुद मरकट रोग बारिनिधि हेरि हारि जीव जामवंत को भरोसो तेरो भारिये",
@@ -7522,7 +14132,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Extended metaphor (rupaka): joy = monkeys (muda marakaṭa), disease = ocean (roga bārinidhi), soul = Jambavan (jīva jāmavanta)."
+    "grammarNote": "Extended metaphor (rupaka): joy = monkeys (muda marakaṭa), disease = ocean (roga bārinidhi), soul = Jambavan (jīva jāmavanta).",
+    "sourceWords": [
+      {
+        "text": "मुद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मरकट",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रोग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बारिनिधि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हेरि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हारि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जीव",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जामवंत",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भरोसो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तेरो",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "भारिये",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-114": {
     "source": "कूदिये कृपाल तुलसी सुप्रेम पब्बत तें सूथल सुबेल भालू बैठि के विचारिये",
@@ -7603,7 +14287,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Ablative 'pabbata teṁ' with imperative 'kūdiye' coordinated with conjunctive participle 'baiṭhi ke vicāriye'."
+    "grammarNote": "Ablative 'pabbata teṁ' with imperative 'kūdiye' coordinated with conjunctive participle 'baiṭhi ke vicāriye'.",
+    "sourceWords": [
+      {
+        "text": "कूदिये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कृपाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुप्रेम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पब्बत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सूथल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सुबेल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "भालू",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बैठि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "विचारिये",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-115": {
     "source": "महाबीर बांकुरे बराकी बाहु पीर क्यों न लंकिनी ज्युं लात घात ही मरोरि मारिये",
@@ -7696,7 +14454,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Direct object 'barākī bāhu pīra' matched with instrumental phrase 'lāta ghāta hī' and absolutive 'marori'."
+    "grammarNote": "Direct object 'barākī bāhu pīra' matched with instrumental phrase 'lāta ghāta hī' and absolutive 'marori'.",
+    "sourceWords": [
+      {
+        "text": "महाबीर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बांकुरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बराकी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बाहु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "लंकिनी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ज्युं",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "लात",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "घात",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "मरोरि",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "मारिये",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-116": {
     "source": "लोक परलोकहुं तिलोक न बिलोकियत तोसे समरत्थ चष चारिहू निहारिये",
@@ -7765,7 +14609,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Passive potential verb 'bilokiyata' with locative series 'loka', 'paralokahuṁ', 'tiloka'."
+    "grammarNote": "Passive potential verb 'bilokiyata' with locative series 'loka', 'paralokahuṁ', 'tiloka'.",
+    "sourceWords": [
+      {
+        "text": "लोक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "परलोकहुं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तिलोक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बिलोकियत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तोसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "समरत्थ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "चष",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "चारिहू",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "निहारिये",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-117": {
     "source": "कर्म काल लोकपाल अग जग जीवजाल नाथ हाथ सब निज महिमा बिचारिये",
@@ -7846,7 +14752,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound list of cosmic principles functioning as collective subject: 'karma kāla lokapāla aga jaga jīvajāla'."
+    "grammarNote": "Compound list of cosmic principles functioning as collective subject: 'karma kāla lokapāla aga jaga jīvajāla'.",
+    "sourceWords": [
+      {
+        "text": "कर्म",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लोकपाल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जीवजाल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नाथ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "महिमा",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बिचारिये",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-118": {
     "source": "खास दास रावरो निवास तेरो तासु उर तुलसी सो देव दुखी देखियत भारिये",
@@ -7933,7 +14913,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Adverbial modifier 'bhāriye' modifying passive perceptual predicate 'dukhī dekhiyata'."
+    "grammarNote": "Adverbial modifier 'bhāriye' modifying passive perceptual predicate 'dukhī dekhiyata'.",
+    "sourceWords": [
+      {
+        "text": "खास",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दास",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रावरो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "निवास",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तेरो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तासु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "उर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "दुखी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "देखियत",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भारिये",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-119": {
     "source": "बात तरुमूल बाहुसूल कपिकच्छु बेली उपजी सकेलि कपि केलि ही उखारिये",
@@ -8008,7 +15068,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Elaborate botanical metaphor (rupaka) with paronomasia on 'kapi / kapikacchu / keli' and absolutive 'sakeli' modifying 'ukhāriye'."
+    "grammarNote": "Elaborate botanical metaphor (rupaka) with paronomasia on 'kapi / kapikacchu / keli' and absolutive 'sakeli' modifying 'ukhāriye'.",
+    "sourceWords": [
+      {
+        "text": "बात",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तरुमूल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाहुसूल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कपिकच्छु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बेली",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "उपजी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सकेलि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कपि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "केलि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "उखारिये",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-120": {
     "source": "करम कराल कंस भूमिपाल के भरोसे बकी बकभगिनी काहू ते कहा डरैगी",
@@ -8089,7 +15217,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Future 3rd person singular feminine verb 'ḍaraigī'. 'karama karāla' functions as qualifying complement to Kamsa's power."
+    "grammarNote": "Future 3rd person singular feminine verb 'ḍaraigī'. 'karama karāla' functions as qualifying complement to Kamsa's power.",
+    "sourceWords": [
+      {
+        "text": "करम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कराल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कंस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भूमिपाल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भरोसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बकी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बकभगिनी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "काहू",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "डरैगी",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-121": {
     "source": "बड़ी बिकराल बालघातिनी न जाति कही बाहुबल बालक छबीले छले छरैगी।",
@@ -8164,7 +15366,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'na jāti kahī' is a passive potential construction meaning 'cannot be expressed'. 'charaigī' is 3rd person singular future feminine."
+    "grammarNote": "'na jāti kahī' is a passive potential construction meaning 'cannot be expressed'. 'charaigī' is 3rd person singular future feminine.",
+    "sourceWords": [
+      {
+        "text": "बड़ी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिकराल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बालघातिनी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जाति",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कही",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाहुबल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "छबीले",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "छले",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "छरैगी।",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-122": {
     "source": "आई है बनाई वेष आप ही बिचारि देखु पाप जाय सब को गुनी के पाले परैगी।",
@@ -8269,7 +15539,105 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'āī hai banāī veṣa' features conjunct absolutive participles. 'pāle paraigī' is an idiomatic compound verb."
+    "grammarNote": "'āī hai banāī veṣa' features conjunct absolutive participles. 'pāle paraigī' is an idiomatic compound verb.",
+    "sourceWords": [
+      {
+        "text": "आई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बनाई",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वेष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आप",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बिचारि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "देखु",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जाय",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "गुनी",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "पाले",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "परैगी।",
+        "wordIndices": [
+          15
+        ]
+      }
+    ]
   },
   "line-123": {
     "source": "पूतना पिसाचिनी ज्यों कपिकान्ह तुलसी की बाँहपीर महाबीर तेरे मारे मरैगी॥",
@@ -8344,7 +15712,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kapikānha' is a karmadharaya compound meaning 'the monkey who is Krishna'. 'māre' is instrumental participle functioning adverbially."
+    "grammarNote": "'kapikānha' is a karmadharaya compound meaning 'the monkey who is Krishna'. 'māre' is instrumental participle functioning adverbially.",
+    "sourceWords": [
+      {
+        "text": "पूतना",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पिसाचिनी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ज्यों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कपिकान्ह",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाँहपीर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "महाबीर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मारे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मरैगी॥",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-124": {
     "source": "भाल की कि काल की कि रोष की त्रिदोष की है बेदन बिषम पाप ताप छल छाँह की।",
@@ -8461,7 +15897,117 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Repetitive genitive structure with disjunctive particle 'ki' ('whether... or...'). 'tridoṣa' refers to the Ayurvedic triad: vata, pitta, kapha."
+    "grammarNote": "Repetitive genitive structure with disjunctive particle 'ki' ('whether... or...'). 'tridoṣa' refers to the Ayurvedic triad: vata, pitta, kapha.",
+    "sourceWords": [
+      {
+        "text": "भाल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रोष",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "त्रिदोष",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बेदन",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "बिषम",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "ताप",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "छल",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "छाँह",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "की।",
+        "wordIndices": [
+          17
+        ]
+      }
+    ]
   },
   "line-125": {
     "source": "करमन कूट की कि जंत्र मंत्र बूट की पराहि जाहि पापिनी मलीन मन माँह की।",
@@ -8560,7 +16106,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'parāhi' and 'jāhi' are imperative forms. 'karamana' is the oblique/plural form of 'karama' (karma)."
+    "grammarNote": "'parāhi' and 'jāhi' are imperative forms. 'karamana' is the oblique/plural form of 'karama' (karma).",
+    "sourceWords": [
+      {
+        "text": "करमन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कूट",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जंत्र",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मंत्र",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बूट",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पराहि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जाहि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "पापिनी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "मलीन",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "माँह",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "की।",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-126": {
     "source": "पैहहि सजाय नत कहत बजाय तोहि बाबरी न होइ बानि जानि कपिनाह की।",
@@ -8647,7 +16285,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'paihahi' is 2nd person singular future ('you will get'). 'nata' = na + ta (otherwise)."
+    "grammarNote": "'paihahi' is 2nd person singular future ('you will get'). 'nata' = na + ta (otherwise).",
+    "sourceWords": [
+      {
+        "text": "पैहहि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सजाय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कहत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बजाय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तोहि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाबरी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "होइ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बानि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जानि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कपिनाह",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "की।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-127": {
     "source": "आन हनुमान की दुहाई बलवान की सपथ महाबीर की जो रहै पीर बाँह की॥",
@@ -8740,7 +16458,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'āna', 'duhāī', and 'sapatha' are nominative terms of solemn adjuration; 'jo rahai' functions as an ellipted protasis ('if it remains...')."
+    "grammarNote": "'āna', 'duhāī', and 'sapatha' are nominative terms of solemn adjuration; 'jo rahai' functions as an ellipted protasis ('if it remains...').",
+    "sourceWords": [
+      {
+        "text": "आन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दुहाई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बलवान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सपथ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "महाबीर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रहै",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "की॥",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-128": {
     "source": "सिंहिका सँहारी बल सुरसा सुधारी छल लंकिनी पछारी मारि बाटिका उजारी है।",
@@ -8821,7 +16625,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A series of rhyming transitive perfective feminine verbs ('sam̐hārī', 'sudhārī', 'pachārī', 'ujārī') agreeing with their feminine direct objects."
+    "grammarNote": "A series of rhyming transitive perfective feminine verbs ('sam̐hārī', 'sudhārī', 'pachārī', 'ujārī') agreeing with their feminine direct objects.",
+    "sourceWords": [
+      {
+        "text": "सिंहिका",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सँहारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुरसा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुधारी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "छल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "लंकिनी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पछारी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मारि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बाटिका",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "उजारी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-129": {
     "source": "लंक परजारी मकरी बिदारी बार-बार जातुधान धारी धूरिधानी करि डारी है।",
@@ -8896,7 +16774,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kari ḍārī hai' is an intensive compound verb emphasizing total annihilation. 'dhūridhānī' is a feminine noun used predicatively."
+    "grammarNote": "'kari ḍārī hai' is an intensive compound verb emphasizing total annihilation. 'dhūridhānī' is a feminine noun used predicatively.",
+    "sourceWords": [
+      {
+        "text": "लंक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "परजारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मकरी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिदारी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बार-बार",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जातुधान",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "धारी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "धूरिधानी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "करि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "डारी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-130": {
     "source": "तोरि जमकातरे मंदोदरी कढोरि आनी रावन की रानी मेघनाद महतारी है।",
@@ -8971,7 +16917,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jamakātare' = yama + kātara/kātārī (dagger/shears of Yama). 'kaḍhori ānī' is a conjunct verb."
+    "grammarNote": "'jamakātare' = yama + kātara/kātārī (dagger/shears of Yama). 'kaḍhori ānī' is a conjunct verb.",
+    "sourceWords": [
+      {
+        "text": "तोरि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जमकातरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मंदोदरी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कढोरि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आनी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रावन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रानी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मेघनाद",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "महतारी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-131": {
     "source": "भीर बाँहपीर की निपट राखी महाबीर कौन की सकोच तुलसी की सोच भारी है॥",
@@ -9064,7 +17078,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sakoca' is used in the sense of 'deference / hesitating out of regard for another'. 'soca bhārī hai' is an existential construction."
+    "grammarNote": "'sakoca' is used in the sense of 'deference / hesitating out of regard for another'. 'soca bhārī hai' is an existential construction.",
+    "sourceWords": [
+      {
+        "text": "भीर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बाँहपीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "निपट",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राखी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "महाबीर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कौन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सकोच",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "सोच",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भारी",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "है॥",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-132": {
     "source": "तेरो बालि केलि बीर सुनि सहमद धीर भूलत सरीर सुधि सक्र रबि राहु की।",
@@ -9157,7 +17257,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'suni' is an absolutive participle. 'sahamada' is an intransitive verb of state (trembling with dread)."
+    "grammarNote": "'suni' is an absolutive participle. 'sahamada' is an intransitive verb of state (trembling with dread).",
+    "sourceWords": [
+      {
+        "text": "तेरो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बालि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "केलि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुनि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सहमद",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "धीर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भूलत",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सरीर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "सुधि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सक्र",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "रबि",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "राहु",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "की।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-133": {
     "source": "तेरी बाँह बसत बिसोक लोकपाल सब तेरो नाम लेत रहै आरति न काहू की।",
@@ -9250,7 +17436,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'bām̐ha' here is locative in sense ('under the protection of your arm'). 'leta' is an imperfective participle governing 'tero nāma'."
+    "grammarNote": "'bām̐ha' here is locative in sense ('under the protection of your arm'). 'leta' is an imperfective participle governing 'tero nāma'.",
+    "sourceWords": [
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बसत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिसोक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लोकपाल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तेरो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "लेत",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "रहै",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "आरति",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "काहू",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "की।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-134": {
     "source": "साम दान भेद बिधि बेदहू लभेद सिद्धि हाथ कपिनाथ ही के चोटी चोर साहु की।",
@@ -9349,7 +17621,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sāma dāna bheda' refers to the classical upāyas. 'bedahū labheda' = veda + hū (even) + alabheda/durlabha (inscrutable/unattainable)."
+    "grammarNote": "'sāma dāna bheda' refers to the classical upāyas. 'bedahū labheda' = veda + hū (even) + alabheda/durlabha (inscrutable/unattainable).",
+    "sourceWords": [
+      {
+        "text": "साम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भेद",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिधि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बेदहू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लभेद",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सिद्धि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कपिनाथ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "चोटी",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "चोर",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "साहु",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "की।",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-135": {
     "source": "आलस अनख परिहास कै सिखावनि है एते दिन रही पीर तुलसी के बाहु की॥",
@@ -9442,7 +17806,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kai' functions as a disjunctive connective ('or'). 'rahī' is feminine singular perfective agreeing with 'pīra'."
+    "grammarNote": "'kai' functions as a disjunctive connective ('or'). 'rahī' is feminine singular perfective agreeing with 'pīra'.",
+    "sourceWords": [
+      {
+        "text": "आलस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अनख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "परिहास",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सिखावनि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "एते",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "रही",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "बाहु",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "की॥",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-136": {
     "source": "टूकनि को घर-घर डोलत कँगाल बोलि बाल ज्यों कृपाल नतपाल पालि पोसो है।",
@@ -9529,7 +17979,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'ghara-ghara' is reduplicated locative distributive ('from house to house'). 'pāli poso hai' is an alliterative compound verb."
+    "grammarNote": "'ghara-ghara' is reduplicated locative distributive ('from house to house'). 'pāli poso hai' is an alliterative compound verb.",
+    "sourceWords": [
+      {
+        "text": "टूकनि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घर-घर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "डोलत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कँगाल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बोलि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ज्यों",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कृपाल",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "नतपाल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "पालि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "पोसो",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-137": {
     "source": "कीन्ही है सँभार सार अंजनीकुमार बीर आपनो बिसारिहै न मेरोहू भरोसो है।",
@@ -9610,7 +18140,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'merohū' = mero + hū (mine also). 'bisārihai na' is future negative 3rd person singular."
+    "grammarNote": "'merohū' = mero + hū (mine also). 'bisārihai na' is future negative 3rd person singular.",
+    "sourceWords": [
+      {
+        "text": "कीन्ही",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सँभार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सार",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अंजनीकुमार",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आपनो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बिसारिहै",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मेरोहू",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भरोसो",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-138": {
     "source": "इतनो परेखो सब भाँति समरथ आजु कपिराज साँची कहौ को तिलोक तोसो है।",
@@ -9697,7 +18301,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'parekho' means 'sorrowful complaint / gentle reproach'. 'toso' is an old pronominal adjective meaning 'like you / equal to you'."
+    "grammarNote": "'parekho' means 'sorrowful complaint / gentle reproach'. 'toso' is an old pronominal adjective meaning 'like you / equal to you'.",
+    "sourceWords": [
+      {
+        "text": "इतनो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "परेखो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाँति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "समरथ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आजु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कपिराज",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "साँची",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कहौ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तिलोक",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "तोसो",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-139": {
     "source": "सासति सहत दास कीजे पेखि परिहास चीरी को मरन खेल बालकनि को सो है॥",
@@ -9790,7 +18474,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'cīrī' refers specifically to a sparrow or small fragile bird. 'bālakanī ko' is oblique plural with genitive postposition."
+    "grammarNote": "'cīrī' refers specifically to a sparrow or small fragile bird. 'bālakanī ko' is oblique plural with genitive postposition.",
+    "sourceWords": [
+      {
+        "text": "सासति",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सहत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दास",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कीजे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पेखि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "परिहास",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "चीरी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मरन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "खेल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बालकनि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "है॥",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-140": {
     "source": "आपने ही पाप तें त्रिताप तें कि सापतें बढ़ी है बाहबेदन कही न सही जाती है।",
@@ -9895,7 +18665,105 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sāpa-teṁ' is ablative of 'sāpa' (śāpa). 'kahī na sahī jātī hai' combines two passive potential participles."
+    "grammarNote": "'sāpa-teṁ' is ablative of 'sāpa' (śāpa). 'kahī na sahī jātī hai' combines two passive potential participles.",
+    "sourceWords": [
+      {
+        "text": "आपने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "त्रिताप",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सापतें",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बढ़ी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बाहबेदन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कही",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "सही",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "जाती",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          15
+        ]
+      }
+    ]
   },
   "line-141": {
     "source": "औषध अनेक जंत्र मंत्र टोटकादि किये बादि भये देवता मनाये अधिकाती है।",
@@ -9976,7 +18844,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'ṭoṭakādi' is a compound of 'ṭoṭaka' (folk charm/magic) + 'ādi' (etc.). 'adhikātī' is an intransitive denominative verb from 'adhika'."
+    "grammarNote": "'ṭoṭakādi' is a compound of 'ṭoṭaka' (folk charm/magic) + 'ādi' (etc.). 'adhikātī' is an intransitive denominative verb from 'adhika'.",
+    "sourceWords": [
+      {
+        "text": "औषध",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अनेक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जंत्र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मंत्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "टोटकादि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "किये",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बादि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भये",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "देवता",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मनाये",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "अधिकाती",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-142": {
     "source": "करतार भरतार हरतार कर्म काल को है जगजाल जो न मानत इताती है।",
@@ -10063,7 +19005,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'karatāra bharatāra haratāra' is a rhyming tripartite epithet of cosmic sovereignty. 'itātī' means insolence or overbearing behavior."
+    "grammarNote": "'karatāra bharatāra haratāra' is a rhyming tripartite epithet of cosmic sovereignty. 'itātī' means insolence or overbearing behavior.",
+    "sourceWords": [
+      {
+        "text": "करतार",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भरतार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हरतार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कर्म",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जगजाल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मानत",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "इताती",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-143": {
     "source": "चेरो तेरो तुलसी तू मेरो कह्यो रामदूत ढील तेरी बीर मोहि पीर तें पिराती है॥",
@@ -10162,7 +19184,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'pīra teṁ pirātī hai' uses an ablative of comparison ('teṁ') with a denominative verb 'pirānā' (to pain)."
+    "grammarNote": "'pīra teṁ pirātī hai' uses an ablative of comparison ('teṁ') with a denominative verb 'pirānā' (to pain).",
+    "sourceWords": [
+      {
+        "text": "चेरो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तेरो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मेरो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कह्यो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रामदूत",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ढील",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मोहि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "पिराती",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "है॥",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-144": {
     "source": "दूत रामराय को सपूत पूत बाय को समत्थ हाथ पाय को सहाय असहाय को।",
@@ -10255,7 +19369,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A string of rhyming genitive complements ('rāmarāya ko', 'bāya ko', 'hātha pāya ko', 'asahāya ko')."
+    "grammarNote": "A string of rhyming genitive complements ('rāmarāya ko', 'bāya ko', 'hātha pāya ko', 'asahāya ko').",
+    "sourceWords": [
+      {
+        "text": "दूत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रामराय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सपूत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पूत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बाय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "समत्थ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पाय",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "सहाय",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "असहाय",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "को।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-145": {
     "source": "बाँकी बिरदावली बिदित बेद गाइयत रावन सो भट भयो मुठिका के घाय को।",
@@ -10342,7 +19542,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'gāiyata' is passive indicative 3rd person singular. 'muṭhikā ke ghāya ko bhayo' means 'became a casualty of the fist-blow'."
+    "grammarNote": "'gāiyata' is passive indicative 3rd person singular. 'muṭhikā ke ghāya ko bhayo' means 'became a casualty of the fist-blow'.",
+    "sourceWords": [
+      {
+        "text": "बाँकी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिरदावली",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बिदित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बेद",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गाइयत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रावन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भट",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "भयो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मुठिका",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "घाय",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "को।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-146": {
     "source": "एते बड़ो साहिब समत्थ को निवाजो आज सीदत सुसेवक बचन मन काय को।",
@@ -10429,7 +19709,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'nivājo' is past participle used adjectivally ('graced/cherished'). 'sīdata' is present participle used as finite verb ('is languishing')."
+    "grammarNote": "'nivājo' is past participle used adjectivally ('graced/cherished'). 'sīdata' is present participle used as finite verb ('is languishing').",
+    "sourceWords": [
+      {
+        "text": "एते",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बड़ो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साहिब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "समत्थ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निवाजो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आज",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सीदत",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सुसेवक",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बचन",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "काय",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "को।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-147": {
     "source": "थोरी बाँह पीर की बड़ी गलानि तुलसी को कौन पाप कोप लोप प्रगट प्रभाय को॥",
@@ -10528,7 +19888,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'galāni' (glāni) denotes spiritual-mental mortification or grief. 'prabhāya' is Brajbhasha for 'prabhāva' (majesty/influence)."
+    "grammarNote": "'galāni' (glāni) denotes spiritual-mental mortification or grief. 'prabhāya' is Brajbhasha for 'prabhāva' (majesty/influence).",
+    "sourceWords": [
+      {
+        "text": "थोरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बड़ी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गलानि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कौन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "कोप",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "लोप",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "प्रगट",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "प्रभाय",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "को॥",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-148": {
     "source": "देवी देव दनुज मनुज मुनि सिद्ध नाग छोटे बड़े जीव जेते चेतन अचेत हैं।",
@@ -10621,7 +20073,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A grand nominative enumeration of cosmic classes serving as subject for the subsequent lines."
+    "grammarNote": "A grand nominative enumeration of cosmic classes serving as subject for the subsequent lines.",
+    "sourceWords": [
+      {
+        "text": "देवी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दनुज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मनुज",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मुनि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सिद्ध",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नाग",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "छोटे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बड़े",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जीव",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जेते",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "चेतन",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "अचेत",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "हैं।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-149": {
     "source": "पूतना पिसाची जातुधानी जातुधान बाम रामदूत की रजाइ माथे मानि लेत हैं।",
@@ -10702,7 +20240,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'rajāi' is from Persian 'razā' (will/royal pleasure/order). 'māthe māni leta haiṁ' is an idiomatic compound verb."
+    "grammarNote": "'rajāi' is from Persian 'razā' (will/royal pleasure/order). 'māthe māni leta haiṁ' is an idiomatic compound verb.",
+    "sourceWords": [
+      {
+        "text": "पूतना",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पिसाची",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जातुधानी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जातुधान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रामदूत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रजाइ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "माथे",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मानि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "लेत",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "हैं।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-150": {
     "source": "घोर जंत्र मंत्र कूट कपट कुरोग जोग हनुमान आन सुनि छाड़त निकेत हैं।",
@@ -10789,7 +20401,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'āna suni' is an absolutive temporal clause ('upon hearing the oath'). 'niketa' literally means house/abode."
+    "grammarNote": "'āna suni' is an absolutive temporal clause ('upon hearing the oath'). 'niketa' literally means house/abode.",
+    "sourceWords": [
+      {
+        "text": "घोर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जंत्र",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मंत्र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कूट",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कपट",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कुरोग",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जोग",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "आन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "सुनि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "छाड़त",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "निकेत",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "हैं।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-151": {
     "source": "क्रोध कीजे कर्म को प्रबोध कीजे तुलसी को सोध कीजे तिनको जो दोष दुख देत हैं॥",
@@ -10894,7 +20586,105 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kīje' is the polite/respectful optative-imperative repeated three times. 'tinako jo...' is relative-correlative."
+    "grammarNote": "'kīje' is the polite/respectful optative-imperative repeated three times. 'tinako jo...' is relative-correlative.",
+    "sourceWords": [
+      {
+        "text": "क्रोध",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कीजे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कर्म",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रबोध",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कीजे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सोध",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कीजे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तिनको",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "दोष",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "दुख",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "देत",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "हैं॥",
+        "wordIndices": [
+          15
+        ]
+      }
+    ]
   },
   "line-152": {
     "source": "तेरे बल बानर जिताये रन रावन सो तेरे घाले जातुधान भये घर घर के।",
@@ -10987,7 +20777,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jitāye' is causative past participle ('caused to win'). 'ghāle' is an instrumental-adverbial noun/participle meaning 'by the ruin/strike of'."
+    "grammarNote": "'jitāye' is causative past participle ('caused to win'). 'ghāle' is an instrumental-adverbial noun/participle meaning 'by the ruin/strike of'.",
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बानर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जिताये",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रावन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "घाले",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जातुधान",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "भये",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "घर",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "घर",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "के।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-153": {
     "source": "तेरे बल रामराज किये सब सुरकाज सकल समाज साज साजे रघुबर के।",
@@ -11068,7 +20944,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sakala samāja sāja sāje' shows dense s-alliteration. 'surakāja' = sura + kāja (celestial purpose)."
+    "grammarNote": "'sakala samāja sāja sāje' shows dense s-alliteration. 'surakāja' = sura + kāja (celestial purpose).",
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रामराज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "किये",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सुरकाज",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "समाज",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "साज",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "साजे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रघुबर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "के।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-154": {
     "source": "तेरो गुनगान सुनि गीरबान पुलकत सजल बिलोचन बिरंचि हरिहर के।",
@@ -11137,7 +21087,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'gīrabāna' (gīrvāṇa) is a classical epithet for deities. 'sajala bilocana' functions as a nominative absolute predicate."
+    "grammarNote": "'gīrabāna' (gīrvāṇa) is a classical epithet for deities. 'sajala bilocana' functions as a nominative absolute predicate.",
+    "sourceWords": [
+      {
+        "text": "तेरो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुनगान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुनि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गीरबान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पुलकत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सजल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बिलोचन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बिरंचि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "हरिहर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "के।",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-155": {
     "source": "तुलसी के माथे पर हाथ फेरो कीसनाथ देखिए न दास दुखी तोसे कनिगर के॥",
@@ -11230,7 +21242,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kanigar' (qadardān / kṛtajña) is an appreciative master. 'phero' is imperative 2nd person plural/honorific."
+    "grammarNote": "'kanigar' (qadardān / kṛtajña) is an appreciative master. 'phero' is imperative 2nd person plural/honorific.",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "माथे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "फेरो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कीसनाथ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "देखिए",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "दास",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "दुखी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "तोसे",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "कनिगर",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "के॥",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-156": {
     "source": "पानो तेरो टूक को परेहू चूक मूकिये न कूर कौड़ी टूको हौं अपनी ओर हेरिये।",
@@ -11329,7 +21427,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'pāno' = pālnā (nurtured/nourished). 'parehū' is concessive subjunctive ('even if it happens')."
+    "grammarNote": "'pāno' = pālnā (nurtured/nourished). 'parehū' is concessive subjunctive ('even if it happens').",
+    "sourceWords": [
+      {
+        "text": "पानो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तेरो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "टूक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "परेहू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चूक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मूकिये",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कूर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कौड़ी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "टूको",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "हौं",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "अपनी",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "ओर",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "हेरिये।",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-157": {
     "source": "भोरानाथ भोर ही सरोष होत थोरे दोष पोषि तोषि थापी आपनो न अवडेरिये।",
@@ -11416,7 +21606,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'poṣi toṣi thāpī' shows serial absolutive participles. 'avḍeriye' is an old dialectal verb for casting down/discarding."
+    "grammarNote": "'poṣi toṣi thāpī' shows serial absolutive participles. 'avḍeriye' is an old dialectal verb for casting down/discarding.",
+    "sourceWords": [
+      {
+        "text": "भोरानाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भोर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सरोष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "होत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "थोरे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दोष",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पोषि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तोषि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "थापी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "आपनो",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "अवडेरिये।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-158": {
     "source": "अम्बु तू हौं अम्बुचर अम्ब तू हौं डिम्भ सो न बूझिये बिलम्ब अवलम्ब मेरे तेरिये।",
@@ -11515,7 +21785,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'ambucar' = ambu (water) + cara (mover/dweller). 'ḍimbh' is Sanskrit ḍimbha (infant/child). 'teriye' is emphatic genitive ('thine alone')."
+    "grammarNote": "'ambucar' = ambu (water) + cara (mover/dweller). 'ḍimbh' is Sanskrit ḍimbha (infant/child). 'teriye' is emphatic genitive ('thine alone').",
+    "sourceWords": [
+      {
+        "text": "अम्बु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हौं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अम्बुचर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अम्ब",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हौं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "डिम्भ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बूझिये",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बिलम्ब",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "अवलम्ब",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "तेरिये।",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-159": {
     "source": "बालक बिकल जानि पाहि प्रेम पहिचानी तुलसी की बाँह पर लामी लूम फेरिये॥",
@@ -11602,7 +21964,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'lūm' (Braj/Avadhi for tail, from lāngūla) is modified by feminine adjective 'lāmī'. 'pāhi' is an archaic imperative ('protect!')."
+    "grammarNote": "'lūm' (Braj/Avadhi for tail, from lāngūla) is modified by feminine adjective 'lāmī'. 'pāhi' is an archaic imperative ('protect!').",
+    "sourceWords": [
+      {
+        "text": "बालक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिकल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जानि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाहि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रेम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पहिचानी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "लामी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "लूम",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "फेरिये॥",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-160": {
     "source": "घेरि लियो रोगनि कुजोगनि कुलोगनि ज्यों बासर जलद घन घटा धुकि धाई है।",
@@ -11689,7 +22131,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Braj kavitta meter; rogani, kujogani, kulogani are Braj agentive/instrumental plurals in -ani. gheri liyo is a compound verb (ghernā + lenā)."
+    "grammarNote": "Braj kavitta meter; rogani, kujogani, kulogani are Braj agentive/instrumental plurals in -ani. gheri liyo is a compound verb (ghernā + lenā).",
+    "sourceWords": [
+      {
+        "text": "घेरि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लियो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रोगनि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कुजोगनि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कुलोगनि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ज्यों",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बासर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जलद",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "घन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "घटा",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "धुकि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "धाई",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-161": {
     "source": "बरसत बारि पीर जारिये जवासी जस रोष बिनु दोष धूम मूल मलिनाई है।",
@@ -11776,7 +22298,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "barsat is a present participle functioning as an adjective/verb; bāri pīr is an appositional metaphor (water of pain)."
+    "grammarNote": "barsat is a present participle functioning as an adjective/verb; bāri pīr is an appositional metaphor (water of pain).",
+    "sourceWords": [
+      {
+        "text": "बरसत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बारि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जारिये",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जवासी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रोष",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बिनु",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दोष",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "धूम",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मूल",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "मलिनाई",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-162": {
     "source": "करुनानिधान हनुमान महाबलवान हेरि हँसी हाँकी फूँकि फौजें तैं उड़ाई है।",
@@ -11851,7 +22453,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of absolutive/conjunctive participles (heri, ham̐sī, hām̐kī, phūm̐ki) leading to the transitive perfect finite verb uṛāī hai with 2nd person pronoun taiṁ."
+    "grammarNote": "Series of absolutive/conjunctive participles (heri, ham̐sī, hām̐kī, phūm̐ki) leading to the transitive perfect finite verb uṛāī hai with 2nd person pronoun taiṁ.",
+    "sourceWords": [
+      {
+        "text": "करुनानिधान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "महाबलवान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हेरि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हँसी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हाँकी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "फूँकि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "फौजें",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तैं",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "उड़ाई",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-163": {
     "source": "खाये हुतो तुलसी को रोग राढ़ राकसनि केसरीकिसोर राखे बीर बरियाई है॥",
@@ -11932,7 +22602,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Braj past auxiliary huto with past participle khāye forms the pluperfect. rākasani is an agentive/instrumental plural."
+    "grammarNote": "Braj past auxiliary huto with past participle khāye forms the pluperfect. rākasani is an agentive/instrumental plural.",
+    "sourceWords": [
+      {
+        "text": "खाये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हुतो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रोग",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "राढ़",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "राकसनि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "केसरीकिसोर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "राखे",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बीर",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बरियाई",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है॥",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-164": {
     "source": "रामगुलाम तुहीं हनुमान गोसाँई सुसाँई सदा अनुकूलो।",
@@ -11983,7 +22727,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "anukūlo is the Braj masculine nominative singular adjective ending in -o agreeing with susām̐ī."
+    "grammarNote": "anukūlo is the Braj masculine nominative singular adjective ending in -o agreeing with susām̐ī.",
+    "sourceWords": [
+      {
+        "text": "रामगुलाम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुहीं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गोसाँई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुसाँई",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सदा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अनुकूलो।",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-165": {
     "source": "पाल्यो हौं बाल ज्यों आखर दू पितु मातु सो मंगल मोद समूलो।",
@@ -12064,7 +22852,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "pālyo is the transitive perfective used impersonally/passively with 1st person pronoun hauṁ."
+    "grammarNote": "pālyo is the transitive perfective used impersonally/passively with 1st person pronoun hauṁ.",
+    "sourceWords": [
+      {
+        "text": "पाल्यो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हौं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ज्यों",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आखर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दू",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पितु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मातु",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मंगल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मोद",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "समूलो।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-166": {
     "source": "बाँह की बेदन बाँहपगार पुकारत आरत आनँद भूलो।",
@@ -12121,7 +22983,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "bām̐hpagār is a vocative compound (bām̐h + pagār / shelter/pillar). pukārat is an imperfective participle functioning as the main verb."
+    "grammarNote": "bām̐hpagār is a vocative compound (bām̐h + pagār / shelter/pillar). pukārat is an imperfective participle functioning as the main verb.",
+    "sourceWords": [
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बेदन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बाँहपगार",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पुकारत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आरत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आनँद",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भूलो।",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-167": {
     "source": "श्रीरघुबीर निवारिये पीर रहौं दरबार परो लटिलूलो॥",
@@ -12172,7 +23084,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "niwāriye is a respectful precative/imperative. rahauṁ is 1st person optative."
+    "grammarNote": "niwāriye is a respectful precative/imperative. rahauṁ is 1st person optative.",
+    "sourceWords": [
+      {
+        "text": "श्रीरघुबीर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निवारिये",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रहौं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दरबार",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "परो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "लटिलूलो॥",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-168": {
     "source": "काल की करालता करम कठिनाई कीधौं पाप के प्रभाव की सुभायँ बायँ बावरे।",
@@ -12259,7 +23215,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Disjunctive particles kīdhauṁ and kī coordinate the potential causal factors. bāyaṁ reflects Sanskrit vāta."
+    "grammarNote": "Disjunctive particles kīdhauṁ and kī coordinate the potential causal factors. bāyaṁ reflects Sanskrit vāta.",
+    "sourceWords": [
+      {
+        "text": "काल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करालता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कठिनाई",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कीधौं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "प्रभाव",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सुभायँ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "बायँ",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "बावरे।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-169": {
     "source": "बेदन कुभाँति सो सही न जाति रातिदिन सोई बाँह गही जो कही समीरडावरे।",
@@ -12346,7 +23382,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sahī na jāti is a passive construction indicating impossibility/incapacity."
+    "grammarNote": "sahī na jāti is a passive construction indicating impossibility/incapacity.",
+    "sourceWords": [
+      {
+        "text": "बेदन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कुभाँति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जाति",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रातिदिन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सोई",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बाँह",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "गही",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कही",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "समीरडावरे।",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-170": {
     "source": "लायो तरु तुलसी तिहारो सो निहारी बारी सींचिये मलिन भो तयो है तिहुँ तावरे।",
@@ -12439,7 +23555,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Wordplay (śleṣa) on tulasī as both the holy basil plant and the poet Tulsidas. sīñciye is a precative."
+    "grammarNote": "Wordplay (śleṣa) on tulasī as both the holy basil plant and the poet Tulsidas. sīñciye is a precative.",
+    "sourceWords": [
+      {
+        "text": "लायो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तरु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तिहारो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निहारी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बारी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सींचिये",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मलिन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "तयो",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "तिहुँ",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "तावरे।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-171": {
     "source": "भूतनी की आपनी पराई की कृपानिधान जानियत सबही की रीति राम रावरे॥",
@@ -12520,7 +23722,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "jāniyat is a Braj passive/honorific present verb used with the agentive rāware (by you)."
+    "grammarNote": "jāniyat is a Braj passive/honorific present verb used with the agentive rāware (by you).",
+    "sourceWords": [
+      {
+        "text": "भूतनी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आपनी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पराई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कृपानिधान",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जानियत",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सबही",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "रीति",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "रावरे॥",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-172": {
     "source": "पाँयपीर पेटपीर बाँहपीर मुँहपीर जरजर सकल सरीर पीरमई है।",
@@ -12583,7 +23859,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Parallel compounding of bodily parts with pīr (pām̐y-, peṭ-, bām̐h-, mum̐h-). pīramaī uses the Sanskrit suffix -mayī (composed of)."
+    "grammarNote": "Parallel compounding of bodily parts with pīr (pām̐y-, peṭ-, bām̐h-, mum̐h-). pīramaī uses the Sanskrit suffix -mayī (composed of).",
+    "sourceWords": [
+      {
+        "text": "पाँयपीर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पेटपीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाँहपीर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मुँहपीर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जरजर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सरीर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पीरमई",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-173": {
     "source": "देव भूत पितर करम खल काल ग्रह मोहि पर दवरि दमान कसी दई है।",
@@ -12676,7 +24008,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Asyndetic catalog of agents functioning as the composite subject of the compound verb kasī daī hai."
+    "grammarNote": "Asyndetic catalog of agents functioning as the composite subject of the compound verb kasī daī hai.",
+    "sourceWords": [
+      {
+        "text": "देव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भूत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पितर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "खल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ग्रह",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मोहि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "दवरि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "दमान",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कसी",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "दई",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-174": {
     "source": "हौं तो बिनु मोल के बिकानो बलि बालही तें ओट रामनाम की ललाट लिखि लई है।",
@@ -12781,7 +24199,105 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "bikāno is a Braj masculine past participle. likhi laī hai is a compound verb emphasizing taking the mark upon oneself."
+    "grammarNote": "bikāno is a Braj masculine past participle. likhi laī hai is a compound verb emphasizing taking the mark upon oneself.",
+    "sourceWords": [
+      {
+        "text": "हौं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बिनु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मोल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिकानो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बलि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बालही",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ओट",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रामनाम",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "ललाट",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "लिखि",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "लई",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          15
+        ]
+      }
+    ]
   },
   "line-175": {
     "source": "कुँभज के किंकर बिकल बूढ़े गोखुरनि हाय रामराय ऐसी हाल कहूँ भई है॥",
@@ -12868,7 +24384,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "kumbhaj refers to Sage Agastya (born of a jar). gokhurani is a locative plural."
+    "grammarNote": "kumbhaj refers to Sage Agastya (born of a jar). gokhurani is a locative plural.",
+    "sourceWords": [
+      {
+        "text": "कुँभज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "किंकर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिकल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बूढ़े",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गोखुरनि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हाय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रामराय",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ऐसी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "हाल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "कहूँ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "भई",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "है॥",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-176": {
     "source": "बाहुक सुबाहु नीच लीचर मरीच मिली मुँहपीर केतु जातुधान है।",
@@ -12937,7 +24533,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Wordplay/pun on bāhuka (arm ailment) with subāhu (the demon Subāhu, lit. having strong arms)."
+    "grammarNote": "Wordplay/pun on bāhuka (arm ailment) with subāhu (the demon Subāhu, lit. having strong arms).",
+    "sourceWords": [
+      {
+        "text": "बाहुक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुबाहु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नीच",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लीचर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मरीच",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मिली",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मुँहपीर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "केतु",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जातुधान",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-177": {
     "source": "रामनाम जप जाग कियो चहौं सानुराग काल कैसे दूत भूत कहा मेरे मान है।",
@@ -13030,7 +24688,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "jāg represents Sanskrit yajña (sacrifice). cahauṁ is 1st person present indicative."
+    "grammarNote": "jāg represents Sanskrit yajña (sacrifice). cahauṁ is 1st person present indicative.",
+    "sourceWords": [
+      {
+        "text": "रामनाम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जप",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जाग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कियो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चहौं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सानुराग",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दूत",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भूत",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "मान",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-178": {
     "source": "सुमिरे सहाय राम लखन आखर दोऊ जिनके समूह साके जागत जहान है।",
@@ -13111,7 +24855,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sāke is plural of sākā (heroic exploit / famous historical deed)."
+    "grammarNote": "sāke is plural of sākā (heroic exploit / famous historical deed).",
+    "sourceWords": [
+      {
+        "text": "सुमिरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सहाय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लखन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आखर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दोऊ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जिनके",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "समूह",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "साके",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जागत",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जहान",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-179": {
     "source": "तुलसी सँभारि ताड़का सँहारी भारी भट बेधे बरगद से बनाई बानवान है॥",
@@ -13192,7 +25010,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sambhāri is an absolutive participle. bānawān represents Sanskrit bāṇavān (the archer/possessor of arrows)."
+    "grammarNote": "sambhāri is an absolutive participle. bānawān represents Sanskrit bāṇavān (the archer/possessor of arrows).",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सँभारि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ताड़का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सँहारी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भारी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भट",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बेधे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बरगद",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बनाई",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बानवान",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है॥",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-180": {
     "source": "बालपने सुधि मन राम सनमुख भयो रामनाम लेत माँगी खात टूकटाक हौं।",
@@ -13273,7 +25165,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "bālpane is locative of bālpan (childhood). khāt is an imperfective participle functioning with hauṁ."
+    "grammarNote": "bālpane is locative of bālpan (childhood). khāt is an imperfective participle functioning with hauṁ.",
+    "sourceWords": [
+      {
+        "text": "बालपने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुधि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सनमुख",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भयो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रामनाम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "लेत",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "माँगी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "खात",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "टूकटाक",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "हौं।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-181": {
     "source": "पर्यो लोकरीति में पुनीत प्रीति रामराय मोहबस बैठो तोरि तरिकितराक हौं।",
@@ -13348,7 +25314,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb tori baiṭho indicates a regrettable, definitive past action. tarikitarāk is an onomatopoeic adverb."
+    "grammarNote": "Compound verb tori baiṭho indicates a regrettable, definitive past action. tarikitarāk is an onomatopoeic adverb.",
+    "sourceWords": [
+      {
+        "text": "पर्यो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लोकरीति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पुनीत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रीति",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रामराय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मोहबस",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बैठो",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तोरि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तरिकितराक",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "हौं।",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-182": {
     "source": "खोटे खोटे आचरन आचरत अपनायो अंजनीकुमार सोध्यो रामपानिपाक हौं।",
@@ -13411,7 +25445,63 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplication khoṭe khoṭe indicates repeated/habitual vileness. rāmapānipāk is a compound (rāma + pāni [hand] + pāka [cooking/refining])."
+    "grammarNote": "Reduplication khoṭe khoṭe indicates repeated/habitual vileness. rāmapānipāk is a compound (rāma + pāni [hand] + pāka [cooking/refining]).",
+    "sourceWords": [
+      {
+        "text": "खोटे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "खोटे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आचरन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आचरत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अपनायो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "अंजनीकुमार",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सोध्यो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रामपानिपाक",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "हौं।",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-183": {
     "source": "तुलसी गोसाँई भयो भोंड़े दिन भूली गयो ताको फल पावत निदान परिपाक हौं॥",
@@ -13498,7 +25588,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "bhūlī gayo is a compound verb (bhūlnā + jānā). paripāk represents Sanskrit paripāka (ripening/culmination)."
+    "grammarNote": "bhūlī gayo is a compound verb (bhūlnā + jānā). paripāk represents Sanskrit paripāka (ripening/culmination).",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गोसाँई",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भयो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भोंड़े",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भूली",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "गयो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ताको",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "फल",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पावत",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "निदान",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "परिपाक",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "हौं॥",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-184": {
     "source": "असन बसनहीन बिषम बिषादलीन देखि दीन दूबरो करै न हाय हाय को।",
@@ -13579,7 +25749,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "asan-basana-hīn is a dvandva compound with privative suffix -hīn. biṣādalīn is a tatpuruṣa compound (biṣāda + līn / absorbed in grief)."
+    "grammarNote": "asan-basana-hīn is a dvandva compound with privative suffix -hīn. biṣādalīn is a tatpuruṣa compound (biṣāda + līn / absorbed in grief).",
+    "sourceWords": [
+      {
+        "text": "असन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बसनहीन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बिषम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बिषादलीन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "देखि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दीन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दूबरो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "करै",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "हाय",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "हाय",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को।",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-185": {
     "source": "तुलसी अनाथ सो सनाथ रघुनाथ कियो दियो फल सीलसिंधु आपने सुभाय को",
@@ -13660,7 +25904,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Wordplay/contrast between anātha (orphan/masterless) and sanātha (having a master/protector)."
+    "grammarNote": "Wordplay/contrast between anātha (orphan/masterless) and sanātha (having a master/protector).",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अनाथ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सनाथ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रघुनाथ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कियो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दियो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "फल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सीलसिंधु",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "आपने",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सुभाय",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-186": {
     "source": "नीच यहि बीच पति पाइ भरुहाई को बिहाई प्रभुभजन बचन मन काय को",
@@ -13747,7 +26065,87 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "pāi and bihāi are Braj absolutive participles. bacana mana kāya is an asyndetic triad functioning adverbially/genitively."
+    "grammarNote": "pāi and bihāi are Braj absolutive participles. bacana mana kāya is an asyndetic triad functioning adverbially/genitively.",
+    "sourceWords": [
+      {
+        "text": "नीच",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "यहि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बीच",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पाइ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भरुहाई",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बिहाई",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "प्रभुभजन",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बचन",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "काय",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          12
+        ]
+      }
+    ]
   },
   "line-187": {
     "source": "तातें तनु पेषियत घोर बरतोर मिस फूटी फूटी निकसत लोन रामराय को",
@@ -13828,7 +26226,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplication phūṭī phūṭī indicates repeated eruptions. lona represents Sanskrit lavaṇa (salt, signifying allegiance/nurture)."
+    "grammarNote": "Reduplication phūṭī phūṭī indicates repeated eruptions. lona represents Sanskrit lavaṇa (salt, signifying allegiance/nurture).",
+    "sourceWords": [
+      {
+        "text": "तातें",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तनु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पेषियत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "घोर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बरतोर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मिस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "फूटी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "फूटी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "निकसत",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "लोन",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रामराय",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-188": {
     "source": "जियों जग जानकीजीवन को कहाइ जन मरिबे को बारानसी बारि सुरसरी को",
@@ -13909,7 +26381,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "jiyoṃ is conditional/optative. maribe is an inflected gerund/oblique infinitive of marnā."
+    "grammarNote": "jiyoṃ is conditional/optative. maribe is an inflected gerund/oblique infinitive of marnā.",
+    "sourceWords": [
+      {
+        "text": "जियों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जानकीजीवन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कहाइ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मरिबे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बारानसी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बारि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सुरसरी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-189": {
     "source": "तुलसी के दुहू हाथ मोदक हैं ऐसे ठाउँ जाके जिए मुए सोच करिहै न लरी को",
@@ -14014,7 +26560,105 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "duhū hātha modaka haiṃ is an idiomatic locative/possessive expression. jie mue are locative participles of circumstance."
+    "grammarNote": "duhū hātha modaka haiṃ is an idiomatic locative/possessive expression. jie mue are locative participles of circumstance.",
+    "sourceWords": [
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दुहू",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हाथ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मोदक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ठाउँ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जाके",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "जिए",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मुए",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "सोच",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "करिहै",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "लरी",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          15
+        ]
+      }
+    ]
   },
   "line-190": {
     "source": "मोको झूठो साँचो लोग राम को कहत सब मेरे मन मान है न हर को न हरी को",
@@ -14131,7 +26775,117 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Correlative negation na hara ko na harī ko. jhūṭho sāñco functions adverbially."
+    "grammarNote": "Correlative negation na hara ko na harī ko. jhūṭho sāñco functions adverbially.",
+    "sourceWords": [
+      {
+        "text": "मोको",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "झूठो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साँचो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लोग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कहत",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मान",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "हरी",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          17
+        ]
+      }
+    ]
   },
   "line-191": {
     "source": "भारी पीर दुसह सरीर तें बिहाल होत सोउ रघुबीर बिनु सकै दूरि करी को",
@@ -14224,7 +26978,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "dūri karī sakai is a modal compound verb (dūri karnā + saknā). sou is emphatic pronoun (even that)."
+    "grammarNote": "dūri karī sakai is a modal compound verb (dūri karnā + saknā). sou is emphatic pronoun (even that).",
+    "sourceWords": [
+      {
+        "text": "भारी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दुसह",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सरीर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बिहाल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "होत",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सोउ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "रघुबीर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बिनु",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सकै",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "दूरि",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "करी",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-192": {
     "source": "सीतापती साहेब सहाय हनुमान नित हित उपदेस को महेस मानो गुर कै",
@@ -14305,7 +27145,81 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "māno is a 2nd person/hortative imperative. gura kai is postpositional (as a Guru)."
+    "grammarNote": "māno is a 2nd person/hortative imperative. gura kai is postpositional (as a Guru).",
+    "sourceWords": [
+      {
+        "text": "सीतापती",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साहेब",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सहाय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नित",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हित",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "उपदेस",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "महेस",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मानो",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "गुर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-193": {
     "source": "मानस बचन काय सरन तिहारे पाँइ तुम्हरे भरोसे सुर मैं न जाने सुर कै",
@@ -14398,7 +27312,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "mānasa bacana kāya is an asyndetic triad of instruments. sura kai is postpositional."
+    "grammarNote": "mānasa bacana kāya is an asyndetic triad of instruments. sura kai is postpositional.",
+    "sourceWords": [
+      {
+        "text": "मानस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बचन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "काय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सरन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तिहारे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पाँइ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तुम्हरे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भरोसे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सुर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "जाने",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सुर",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-194": {
     "source": "ब्याधि भूतजनित उपाधि काहू खल की समाधि कीजै तुलसी को जानि जन फुर कै",
@@ -14491,7 +27491,93 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "bhūtajanita is a tatpuruṣa compound (bhūta + janita / spirit-caused). samādhi kījai is a precative request for resolution/settling."
+    "grammarNote": "bhūtajanita is a tatpuruṣa compound (bhūta + janita / spirit-caused). samādhi kījai is a precative request for resolution/settling.",
+    "sourceWords": [
+      {
+        "text": "ब्याधि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भूतजनित",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "उपाधि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "काहू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "खल",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "समाधि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कीजै",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तुलसी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जानि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "फुर",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          13
+        ]
+      }
+    ]
   },
   "line-195": {
     "source": "कपिनाथ रघुनाथ भोलानाथ भूतनाथ रोगसिंधु क्यों न डारियत गायखुर कै",
@@ -14560,7 +27646,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Series of vocative divine titles ending in -nātha. rogasindhu is a rūpaka compound (ocean of disease)."
+    "grammarNote": "Series of vocative divine titles ending in -nātha. rogasindhu is a rūpaka compound (ocean of disease).",
+    "sourceWords": [
+      {
+        "text": "कपिनाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रघुनाथ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भोलानाथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भूतनाथ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रोगसिंधु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "डारियत",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "गायखुर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-196": {
     "source": "कहो हनुमान सो सुजान रामराय सो कृपानिधान संकर सो सावधान सुनिए",
@@ -14635,7 +27783,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Repetition of the postposition so (to/with) marking the divine addressees. sunie is an honorific precative."
+    "grammarNote": "Repetition of the postposition so (to/with) marking the divine addressees. sunie is an honorific precative.",
+    "sourceWords": [
+      {
+        "text": "कहो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुजान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रामराय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कृपानिधान",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "संकर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "सावधान",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सुनिए",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-197": {
     "source": "हरष बिषाद राग रोष गुन दोषमई बिरची बिरंचि सब देखियत दुनिए",
@@ -14710,7 +27926,75 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Alliterative pairing biracī birañci (fashioned by Viranchi/Brahma). guna-doṣamaī uses the Sanskrit affix -mayī."
+    "grammarNote": "Alliterative pairing biracī birañci (fashioned by Viranchi/Brahma). guna-doṣamaī uses the Sanskrit affix -mayī.",
+    "sourceWords": [
+      {
+        "text": "हरष",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिषाद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "राग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रोष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गुन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दोषमई",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बिरची",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बिरंचि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "देखियत",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "दुनिए",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-198": {
     "source": "माया जीव काल के करम के सुभाय के करैया राम बेद कहै साँचै मन गुनिए",
@@ -14809,7 +28093,99 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "karaiyā is an agent noun from karnā (the doer/master). gunie is a hortative/precative verb."
+    "grammarNote": "karaiyā is an agent noun from karnā (the doer/master). gunie is a hortative/precative verb.",
+    "sourceWords": [
+      {
+        "text": "माया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जीव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सुभाय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "करैया",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बेद",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कहै",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "साँचै",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "गुनिए",
+        "wordIndices": [
+          14
+        ]
+      }
+    ]
   },
   "line-199": {
     "source": "तुम्ह तें कहा न होय हाहा सो बुझैये मोहि हौं हूँ रहों मौन ही बयो सो जानि लूनिए",
@@ -14926,7 +28302,117 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "bujhaiye is a polite precative. bayo so ... lūnie is a proverbial relative-correlative passive construction."
+    "grammarNote": "bujhaiye is a polite precative. bayo so ... lūnie is a proverbial relative-correlative passive construction.",
+    "sourceWords": [
+      {
+        "text": "तुम्ह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तें",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कहा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "होय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हाहा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बुझैये",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मोहि",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "हौं",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "रहों",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "मौन",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "बयो",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "सो",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "जानि",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "लूनिए",
+        "wordIndices": [
+          17
+        ]
+      }
+    ]
   },
   "line-200": {
     "source": "जय हनुमान जय हनुमान जय हनुमान जय हनुमान",
@@ -14983,7 +28469,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A repeated exclamatory phrase consisting of the noun jaya (used as an interjection/acclamation of victory) paired with the proper noun hanumāna in the vocative/address form."
+    "grammarNote": "A repeated exclamatory phrase consisting of the noun jaya (used as an interjection/acclamation of victory) paired with the proper noun hanumāna in the vocative/address form.",
+    "sourceWords": [
+      {
+        "text": "जय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-201": {
     "source": "मारुति नंदन जय हनुमान कष्ट भंजन जय हनुमान",
@@ -15040,7 +28576,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Consists of two compound vocative epithets: māruti-nandana (tatpuruṣa compound: son of the wind) and kaṣṭa-bhañjana (upapada/objective tatpuruṣa: breaker of distress), each followed by the acclamation jaya hanumāna."
+    "grammarNote": "Consists of two compound vocative epithets: māruti-nandana (tatpuruṣa compound: son of the wind) and kaṣṭa-bhañjana (upapada/objective tatpuruṣa: breaker of distress), each followed by the acclamation jaya hanumāna.",
+    "sourceWords": [
+      {
+        "text": "मारुति",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नंदन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कष्ट",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भंजन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   }
 };
 
@@ -16064,7 +29650,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 11.0,
+    "start": 11,
     "end": 15.7
   },
   {
@@ -16085,10 +29671,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 51.4,
-    "end": 59.0
+    "end": 59
   },
   {
-    "start": 59.0,
+    "start": 59,
     "end": 66.6
   },
   {
@@ -16113,10 +29699,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 109.4,
-    "end": 117.0
+    "end": 117
   },
   {
-    "start": 117.0,
+    "start": 117,
     "end": 124.6
   },
   {
@@ -16149,10 +29735,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 205.8,
-    "end": 217.0
+    "end": 217
   },
   {
-    "start": 217.0,
+    "start": 217,
     "end": 227.1
   },
   {
@@ -16185,10 +29771,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 303.35,
-    "end": 313.0
+    "end": 313
   },
   {
-    "start": 313.0,
+    "start": 313,
     "end": 327.49
   },
   {
@@ -16221,10 +29807,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 404.15,
-    "end": 416.0
+    "end": 416
   },
   {
-    "start": 416.0,
+    "start": 416,
     "end": 425.7
   },
   {
@@ -16233,14 +29819,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 435.35,
-    "end": 445.0
+    "end": 445
   },
   {
-    "start": 445.0,
-    "end": 467.0
+    "start": 445,
+    "end": 467
   },
   {
-    "start": 467.0,
+    "start": 467,
     "end": 476.7
   },
   {
@@ -16249,10 +29835,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 488.35,
-    "end": 498.0
+    "end": 498
   },
   {
-    "start": 498.0,
+    "start": 498,
     "end": 512.55
   },
   {
@@ -16365,10 +29951,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 686.15,
-    "end": 693.0
+    "end": 693
   },
   {
-    "start": 693.0,
+    "start": 693,
     "end": 697.9
   },
   {
@@ -16857,10 +30443,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1816.05,
-    "end": 1824.0
+    "end": 1824
   },
   {
-    "start": 1824.0,
+    "start": 1824,
     "end": 1846.4
   },
   {

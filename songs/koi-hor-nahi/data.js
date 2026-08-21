@@ -66,7 +66,69 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਮਾਂ ਮੇਰੀ ਸਚੀਆਂ ਜੋਤਾਂ ਵਾਲੀ ਮਾਤਾ, ਤੇਰੀ ਸਦਾ ਹੀ ਜੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਸਚੀਆਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜੋਤਾਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਵਾਲੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਮਾਤਾ,",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਤੇਰੀ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਸਦਾ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਹੀ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਜੈ",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "refrain": {
     "roman": "Main laṛ phaṛyā ae terā, koī hor nahī ae merā",
@@ -106,7 +168,69 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਮੈਂ ਲੜ ਫੜਿਆ ਏ ਤੇਰਾ, ਕੋਈ ਹੋਰ ਨਹੀਂ ਏ ਮੇਰਾ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਮੈਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਲੜ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਫੜਿਆ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਤੇਰਾ,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਕੋਈ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਹੋਰ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਨਹੀਂ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮੇਰਾ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v1a": {
     "roman": "Asī sāh chhaḍ jāvānge",
@@ -130,7 +254,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਅਸੀਂ ਸਾਹ ਛੱਡ ਜਾਵਾਂਗੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਅਸੀਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਸਾਹ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਛੱਡ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜਾਵਾਂਗੇ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v1b": {
     "roman": "Pher bājā māroge, asī muṛ nahīyo āvānge",
@@ -166,7 +316,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਫੇਰ ਬਾਜਾ ਮਾਰੋਗੇ, ਅਸੀਂ ਮੁੜ ਨਹੀਂਓ ਆਵਾਂਗੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਫੇਰ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਬਾਜਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮਾਰੋਗੇ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਅਸੀਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮੁੜ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਨਹੀਂਓ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਆਵਾਂਗੇ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v2a": {
     "roman": "Is zindagī ton kī lainā, mā",
@@ -198,7 +392,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇਸ ਜ਼ਿੰਦਗੀ ਤੋਂ ਕੀ ਲੈਣਾ, ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇਸ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਜ਼ਿੰਦਗੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਤੋਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਕੀ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਲੈਣਾ,",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v2b": {
     "roman": "Darshan nā hoyā, pher jī ke kī lainā",
@@ -226,7 +458,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਦਰਸ਼ਨ ਨਾ ਹੋਇਆ, ਫੇਰ ਜੀ ਕੇ ਕੀ ਲੈਣਾ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਦਰਸ਼ਨ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਨਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਹੋਇਆ,",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਫੇਰ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜੀ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਕੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਲੈਣਾ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3a": {
     "roman": "Asī dar tere āvānge",
@@ -250,7 +532,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਅਸੀਂ ਦਰ ਤੇਰੇ ਆਵਾਂਗੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਅਸੀਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਦਰ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਤੇਰੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਆਵਾਂਗੇ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v3b": {
     "roman": "Saun apnī pāvengī, tainū chhaḍ ke nā jāvānge",
@@ -282,7 +590,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਸੌਂ ਆਪਣੀ ਪਾਵੇਂਗੀ, ਤੈਨੂੰ ਛੱਡ ਕੇ ਨਾ ਜਾਵਾਂਗੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਸੌਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਆਪਣੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਪਾਵੇਂਗੀ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਤੈਨੂੰ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਛੱਡ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਨਾ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਜਾਵਾਂਗੇ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v4a": {
     "roman": "Eh zindagī terī ae, mā",
@@ -310,7 +668,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇਹ ਜ਼ਿੰਦਗੀ ਤੇਰੀ ਏ, ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇਹ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਜ਼ਿੰਦਗੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਤੇਰੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਏ,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v4b": {
     "roman": "Kado pherā ā jāve, is miṭṭī dī ḍherī ae",
@@ -350,7 +740,63 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਕਦੋ ਫੇਰਾ ਆ ਜਾਵੇ, ਇਸ ਮਿੱਟੀ ਦੀ ਢੇਰੀ ਏ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਕਦੋ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਫੇਰਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਆ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜਾਵੇ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਇਸ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮਿੱਟੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਦੀ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਢੇਰੀ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v5a": {
     "roman": "Tere charnā ’ch reh lānge",
@@ -374,7 +820,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਤੇਰੇ ਚਰਨਾਂ ’ਚ ਰਹਿ ਲਾਂਗੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਤੇਰੇ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਚਰਨਾਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "’ਚ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਰਹਿ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਲਾਂਗੇ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v5b": {
     "roman": "Tū sānū māf kar deyī, asī hass ke seh lānge",
@@ -406,7 +884,69 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਤੂੰ ਸਾਨੂੰ ਮਾਫ਼ ਕਰ ਦੇਈ, ਅਸੀਂ ਹੱਸ ਕੇ ਸਹਿ ਲਾਂਗੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਤੂੰ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਸਾਨੂੰ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮਾਫ਼",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਕਰ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਦੇਈ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਅਸੀਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਹੱਸ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਸਹਿ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਲਾਂਗੇ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v6a": {
     "roman": "Terā ho ke main āvāngā, mā",
@@ -434,7 +974,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਤੇਰਾ ਹੋ ਕੇ ਮੈਂ ਆਵਾਂਗਾ, ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਤੇਰਾ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਹੋ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮੈਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਆਵਾਂਗਾ,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v6b": {
     "roman": "Tū vī pher rovengī, je chhaḍ tainū jāvāngā",
@@ -470,7 +1048,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਤੂੰ ਵੀ ਫੇਰ ਰੋਵੇਂਗੀ, ਜੇ ਛੱਡ ਤੈਨੂੰ ਜਾਵਾਂਗਾ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਤੂੰ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵੀ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਫੇਰ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਰੋਵੇਂਗੀ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜੇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਛੱਡ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਤੈਨੂੰ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਜਾਵਾਂਗਾ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v7a": {
     "roman": "Tere reham bathere ne, mā",
@@ -498,7 +1126,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਤੇਰੇ ਰਹਿਮ ਬਥੇਰੇ ਨੇ, ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਤੇਰੇ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਰਹਿਮ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਬਥੇਰੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਨੇ,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v7b": {
     "roman": "Khushīyā dikhā de vī mā, nahī te hanjū bathere ne",
@@ -534,7 +1194,69 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਖੁਸ਼ੀਆਂ ਦਿਖਾ ਦੇ ਵੀ ਮਾਂ, ਨਹੀਂ ਤੇ ਹੰਜੂ ਬਥੇਰੇ ਨੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਖੁਸ਼ੀਆਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਦਿਖਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਵੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਨਹੀਂ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਤੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਹੰਜੂ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਬਥੇਰੇ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਨੇ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v8a": {
     "roman": "Asī pher vī nahī bolānge, mā",
@@ -558,7 +1280,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਅਸੀਂ ਫੇਰ ਵੀ ਨਹੀਂ ਬੋਲਾਂਗੇ, ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਅਸੀਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਫੇਰ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਵੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਨਹੀਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਬੋਲਾਂਗੇ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v8b": {
     "roman": "Ikk vārī dass te jā, dukh kihde agge pholānge",
@@ -590,7 +1350,63 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇੱਕ ਵਾਰੀ ਦੱਸ ਤੇ ਜਾ, ਦੁੱਖ ਕਿਹਦੇ ਅੱਗੇ ਫੋਲਾਂਗੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇੱਕ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵਾਰੀ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਦੱਸ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਤੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜਾ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਦੁੱਖ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਕਿਹਦੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਅੱਗੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਫੋਲਾਂਗੇ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "outro1": {
     "roman": "Eh likh ke main jāvāngā, mā",
@@ -618,7 +1434,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇਹ ਲਿਖ ਕੇ ਮੈਂ ਜਾਵਾਂਗਾ, ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇਹ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਲਿਖ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮੈਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜਾਵਾਂਗਾ,",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "outro2": {
     "roman": "Agle janam vī mā, terā putt kahāvāngā",
@@ -650,7 +1504,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਅਗਲੇ ਜਨਮ ਵੀ ਮਾਂ, ਤੇਰਾ ਪੁੱਤ ਕਹਾਵਾਂਗਾ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਅਗਲੇ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਜਨਮ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਵੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਤੇਰਾ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਪੁੱਤ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਕਹਾਵਾਂਗਾ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "closing": {
     "roman": "Koī hor nahī ae merā",
@@ -670,7 +1568,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਕੋਈ ਹੋਰ ਨਹੀਂ ਏ ਮੇਰਾ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਕੋਈ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਹੋਰ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਨਹੀਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਏ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਮੇਰਾ",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   }
 };
 

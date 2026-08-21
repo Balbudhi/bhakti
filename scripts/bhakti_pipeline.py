@@ -36,6 +36,7 @@ import gloss_policy
 import naming
 import resolve_youtube_music_audio as ytmusic
 import tag_taxonomy
+import source_word_map
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -1498,7 +1499,7 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
         term_registry = preserved_term_registry()
         return f"""Create a literal word-by-word reading of the TARGET audited devotional lyrics. Work line by line and use the surrounding song context.
 
-Create exactly one word_gloss entry for each lexical whitespace-delimited surface token in the supplied roman line, in the identical order. Omit a token made entirely of punctuation, such as `।`, `॥`, a dash, or an ellipsis; punctuation remains visible but is not a word or hover target. The `roman` value must copy that complete displayed lexical token exactly; never split sandhi or a written compound into separate entries, and never substitute an underlying dictionary form. Give the contextually correct primary sense first. A gloss is semantic evidence, not an English draft: do not bake a clumsy phrase such as “cast a glance of mercy” into a token gloss when the phrase-level meaning is “look upon someone with mercy.” Put phrase meaning and idiom in the semantic frame instead.
+Create exactly one word_gloss entry for each lexical whitespace-delimited surface token in the supplied roman line, in the identical order. Omit a token made entirely of punctuation, such as `।`, `॥`, a dash, or an ellipsis; punctuation remains visible but is not a word or hover target. The `roman` value must copy that complete displayed lexical token exactly; never split sandhi or a written compound into separate entries, and never substitute an underlying dictionary form. Give the contextually correct primary sense first. A gloss is semantic evidence, not an English draft: do not bake a clumsy phrase such as “cast a glance of mercy” into a token gloss when the phrase-level meaning is “look upon someone with mercy.” Put phrase meaning and idiom in the semantic frame instead. Use established English words or transparent source-supported compounds. Never present a franchise-specific fictional coinage such as `adamantium`, `vibranium`, or `mithril` as ordinary English. Rare but attested English such as `adamantine` is valid when it is the precise supported sense.
 
 Before any later translation, explicitly reconstruct the semantic frame: who is acting or experiencing; the action or state; its patient or complement; modifiers; negation or modality; the exact literal image and agency; any established idiom; and how the line connects grammatically to its neighbors. Preserve personification and unusual agency rather than normalizing them. Distinguish a suffered or resultant state from a self-caused act: if the line says the speaker is broken, undone, struck, or seized, do not reinterpret it as the speaker actively breaking, undoing, striking, or seizing themself. Do not replace one metaphor with another: if a feeling “takes hold,” do not relabel it as kindling or stirring. Preserve a spatial word directly—“inside” remains “inside”—rather than upgrading it to “deep within” unless the source actually expresses depth. Represent reduplication as emphasis or repetition without inventing a new image. Expand relational objects when English requires their complement—a hem is the hem of a garment. Distinguish culturally specific objects precisely, such as an alms bag rather than a generic satchel, and palm/open palm rather than an abstract “hand” when the source requires it. For `raham nazar`, record the phrase-level meaning “look upon someone with mercy,” never “cast a glance.”
 
@@ -1726,6 +1727,8 @@ For each line, return plain literal English plus ordered display segments. Read 
 
 Write lucid devotional English, but do not confuse conventional English with better poetry. Literal strangeness, repetition, personification, unusual agency, and concrete bodily or ritual imagery may be the point. Preserve a supported image such as “my breath will abandon me” even if an English idiom such as “I will breathe my last” sounds smoother. Preserve suffered/resultant states as states: if the lyric says the speaker is broken, keep that brokenness rather than recasting it as the speaker actively broke. Never replace the source's agency, metaphor, ambiguity, or emotional logic merely to sound idiomatic. Correct wording only when it is demonstrably wrong, ungrammatical, or obstructs understanding. Avoid legalistic filler, accidental inversion, duplicate modifiers, and unsupported editorial verbs. Retain darshan or sacred vision, an alms bag, garment hem, cupped or open palm, lotus, dust, ocean, threshold, cage, and Mount Meru when the source supports them.
 
+Use established English words. A rare but attested word is acceptable when it is precise and remains understandable in context. A transparent, source-supported compound may join two ordinary words, preferably with a hyphen when that aids reading. Never invent pseudo-Latin vocabulary or use a franchise-specific fictional coinage such as `adamantium`, `vibranium`, or `mithril`. `Adamantine` is an established English adjective and is not the fictional noun `adamantium`.
+
 Resolve ordinary polysemy from the supplied grammar/song context. When two defensible renderings differ materially in agency, metaphor, ambiguity, or poetic force, include both in `material_alternatives` and set `human_review_recommended=true` instead of silently optimizing for smoothness. This is not required for trivial synonyms. The completed segments must reconstruct `literal_english` exactly, including ordinary spacing and punctuation. Then report a fidelity check: whether agency/image and all source meaning were preserved, every unsupported addition (normally none), and a concise note naming any nonliteral idiom or necessary English function word.
 
 TARGET audited source lines (return these IDs only):
@@ -1902,6 +1905,13 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
                 errors.append(f"{line_id} translation contains unsupported additions")
         if translation.get("human_review_recommended"):
             errors.append(f"{line_id} translation has a material poetic choice requiring review")
+        fictional = gloss_policy.fictional_coinages(translation.get("literal_english", ""))
+        if fictional:
+            errors.append(f"{line_id} translation uses fictional coinage {fictional}")
+        for word in words:
+            fictional = gloss_policy.fictional_coinages(word.get("gloss", ""))
+            if fictional:
+                errors.append(f"{line_id} word gloss uses fictional coinage {fictional}")
         independent = translation.get("independent_review", {})
         if independent:
             if not independent.get("passes"):
@@ -2002,6 +2012,9 @@ def page_html(meta: dict[str, Any]) -> str:
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2" />
   <meta name="theme-color" content="#6b0e16" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Bhakti" />
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
   <link rel="apple-touch-icon" href="../../assets/favicon.png" />
   <link rel="manifest" href="../../manifest.webmanifest" />
@@ -2029,9 +2042,9 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260821-1"></script>
-  <script src="../../assets/song.js?v=contract-20260821-1"></script>
-  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
+  <script src="data.js?v=contract-20260821-2"></script>
+  <script src="../../assets/song.js?v=contract-20260821-2"></script>
+  <script src="../../assets/pwa.js?v=contract-20260821-2"></script>
 </body>
 </html>
 '''
@@ -2158,10 +2171,12 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     for line in lines:
         line_id = line["id"]
         row = translation_by_id[line_id]
-        line_data[line_id] = {"source": line.get("source_text", ""), "sourceLanguage": language_code((meta["languages"] or [""])[0]),
+        words = [gloss_policy.clean_word(word) for word in gloss_by_id[line_id].get("word_glosses", [])]
+        source = line.get("source_text", "")
+        line_data[line_id] = {"source": source, "sourceLanguage": language_code((meta["languages"] or [""])[0]),
+                              "sourceWords": source_word_map.build_source_words(source, words),
                               "roman": line.get("roman", ""), "english": segment_english(row.get("segments", []), row.get("literal_english", "")),
-                              "words": [gloss_policy.clean_word(word) for word in gloss_by_id[line_id].get("word_glosses", [])],
-                              "grammarNote": gloss_by_id[line_id].get("grammar_note", "")}
+                              "words": words, "grammarNote": gloss_by_id[line_id].get("grammar_note", "")}
     sequence = [{"ref": event["ref"],
                  "section": event.get("section") or next((line.get("kind", "verse")
                                                            for line in lines if line["id"] == event["ref"]), "verse"),

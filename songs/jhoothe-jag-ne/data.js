@@ -46,7 +46,33 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਹੇ ਮਾਂ... ਹੇ ਮਾਂ...",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਹੇ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਮਾਂ...",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਹੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਮਾਂ...",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain": {
     "roman": "Jhūṭhe jag ne leā menū luṭṭ mā, māye merī bānh phaṛ lai",
@@ -102,7 +128,81 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਝੂਠੇ ਜਗ ਨੇ ਲਿਆ ਮੈਨੂੰ ਲੁੱਟ ਮਾਂ, ਮਾਏ ਮੇਰੀ ਬਾਂਹ ਫੜ ਲੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਝੂਠੇ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਜਗ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਨੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਲਿਆ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮੈਨੂੰ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਲੁੱਟ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਏ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਬਾਂਹ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਫੜ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "refrain_b": {
     "roman": "Geā andaroṅ hī andaroṅ ṭuṭṭ mā, māye merī bānh phaṛ lai",
@@ -154,7 +254,75 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਗਿਆ ਅੰਦਰੋਂ ਹੀ ਅੰਦਰੋਂ ਟੁੱਟ ਮਾਂ, ਮਾਏ ਮੇਰੀ ਬਾਂਹ ਫੜ ਲੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਗਿਆ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਅੰਦਰੋਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਹੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਅੰਦਰੋਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਟੁੱਟ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਏ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਬਾਂਹ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਫੜ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "v1a": {
     "roman": "Dukh nit navīyāṅ kheḍāṅ pae ne kheḍde",
@@ -190,7 +358,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਦੁੱਖ ਨਿਤ ਨਵੀਆਂ ਖੇਡਾਂ ਪਏ ਨੇ ਖੇਡਦੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਦੁੱਖ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਨਿਤ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਨਵੀਆਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਖੇਡਾਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਪਏ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਨੇ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਖੇਡਦੇ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v1b": {
     "roman": "Ikk passe nahī, chāre passe gherde",
@@ -222,7 +434,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇੱਕ ਪਾਸੇ ਨਹੀਂ, ਚਾਰੇ ਪਾਸੇ ਘੇਰਦੇ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇੱਕ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਪਾਸੇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਨਹੀਂ,",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਚਾਰੇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਪਾਸੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਘੇਰਦੇ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1c": {
     "roman": "Hanjū akhiyāṅ de rahe nahī ruk mā, māye merī bānh phaṛ lai",
@@ -278,7 +528,81 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਹੰਝੂ ਅੱਖੀਆਂ ਦੇ ਰਹੇ ਨਹੀਂ ਰੁਕ ਮਾਂ, ਮਾਏ ਮੇਰੀ ਬਾਂਹ ਫੜ ਲੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਹੰਝੂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਅੱਖੀਆਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਰਹੇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਨਹੀਂ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਰੁਕ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਏ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਬਾਂਹ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਫੜ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "v2a": {
     "roman": "Baccheyāṅ toṅ pīṛā huṇ jāndiyāṅ nā jhall mā",
@@ -318,7 +642,57 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਬੱਚਿਆਂ ਤੋਂ ਪੀੜਾ ਹੁਣ ਜਾਂਦੀਆਂ ਨਾ ਝੱਲ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਬੱਚਿਆਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਤੋਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਪੀੜਾ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਹੁਣ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਜਾਂਦੀਆਂ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਨਾ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਝੱਲ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "v2b": {
     "roman": "Aukhā huṇ lagdā har ik pal mā",
@@ -354,7 +728,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਔਖਾ ਹੁਣ ਲਗਦਾ ਹਰ ਇੱਕ ਪਲ ਮਾਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਔਖਾ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਹੁਣ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਲਗਦਾ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਹਰ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਇੱਕ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਪਲ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਂ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v2c": {
     "roman": "Aiveṅ jāye nā jind kite rul mā, māye merī bānh phaṛ lai",
@@ -410,7 +828,81 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਐਵੇਂ ਜਾਏ ਨਾ ਜਿੰਦ ਕਿਤੇ ਰੁਲ ਮਾਂ, ਮਾਏ ਮੇਰੀ ਬਾਂਹ ਫੜ ਲੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਐਵੇਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਜਾਏ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਨਾ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜਿੰਦ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਕਿਤੇ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਰੁਲ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਏ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਬਾਂਹ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਫੜ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "v3a": {
     "roman": "Waqt diyāṅ ṭhokarāṅ den parshāniyāṅ",
@@ -438,7 +930,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਵਕਤ ਦੀਆਂ ਠੋਕਰਾਂ ਦੇਣ ਪਰਸ਼ਾਨੀਆਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਵਕਤ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਦੀਆਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਠੋਕਰਾਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਦੇਣ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਪਰਸ਼ਾਨੀਆਂ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3b": {
     "roman": "Manḍeyāṅ nasībāṅ utte karn manmāniyāṅ",
@@ -466,7 +990,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਮੰਡੇਆਂ ਨਸੀਬਾਂ ਉੱਤੇ ਕਰਨ ਮਨਮਾਨੀਆਂ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਮੰਡੇਆਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਨਸੀਬਾਂ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਉੱਤੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਕਰਨ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮਨਮਾਨੀਆਂ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3c": {
     "roman": "Sukh patā nahīyo kithe gae luk mā, māye merī bānh phaṛ lai",
@@ -522,7 +1078,81 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਸੁੱਖ ਪਤਾ ਨਹੀਂਓ ਕਿਥੇ ਗਏ ਲੁਕ ਮਾਂ, ਮਾਏ ਮੇਰੀ ਬਾਂਹ ਫੜ ਲੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਸੁੱਖ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਪਤਾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਨਹੀਂਓ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਕਿਥੇ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਗਏ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਲੁਕ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਏ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਬਾਂਹ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਫੜ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "v4a": {
     "roman": "Andaroṅ hī andaroṅ dil merā ṭuṭṭeyā",
@@ -554,7 +1184,45 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਅੰਦਰੋਂ ਹੀ ਅੰਦਰੋਂ ਦਿਲ ਮੇਰਾ ਟੁੱਟਿਆ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਅੰਦਰੋਂ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਹੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਅੰਦਰੋਂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਦਿਲ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਮੇਰਾ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਟੁੱਟਿਆ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v4b": {
     "roman": "Injh peā lagge jiveṅ sāh huṇ mukkeyā",
@@ -590,7 +1258,51 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਇੰਝ ਪਿਆ ਲੱਗੇ ਜਿਵੇਂ ਸਾਹ ਹੁਣ ਮੁੱਕਿਆ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਇੰਝ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਪਿਆ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਲੱਗੇ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜਿਵੇਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਸਾਹ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਹੁਣ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮੁੱਕਿਆ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v4c": {
     "roman": "Miṭā de jhanḍewālī janmāṅ dī bhukh mā, māye merī bānh phaṛ lai",
@@ -646,7 +1358,81 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਮਿਟਾ ਦੇ ਝੰਡੇਵਾਲੀ ਜਨਮਾਂ ਦੀ ਭੁੱਖ ਮਾਂ, ਮਾਏ ਮੇਰੀ ਬਾਂਹ ਫੜ ਲੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਮਿਟਾ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਦੇ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਝੰਡੇਵਾਲੀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਜਨਮਾਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਦੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਭੁੱਖ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਮਾਂ,",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਮਾਏ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਬਾਂਹ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਫੜ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "closing": {
     "roman": "Māye merī bānh phaṛ lai",
@@ -674,7 +1460,39 @@ window.SONG_LINES = {
       }
     ],
     "source": "ਮਾਏ ਮੇਰੀ ਬਾਂਹ ਫੜ ਲੈ",
-    "sourceLanguage": "pa"
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਮਾਏ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਮੇਰੀ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਬਾਂਹ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਫੜ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 

@@ -25,8 +25,10 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
-                self.assertIn('song.js?v=contract-20260821-1', text)
-                self.assertIn('data.js?v=contract-20260821-1', text)
+                self.assertIn('song.js?v=contract-20260821-2', text)
+                self.assertIn('data.js?v=contract-20260821-2', text)
+                self.assertIn('pwa.js?v=contract-20260821-2', text)
+                self.assertIn('name="apple-mobile-web-app-capable" content="yes"', text)
                 self.assertEqual(text.count('class="song-meta"'), 1)
                 self.assertNotIn('class="song-attrib"', text)
                 self.assertNotIn('class="song-credit"', text)
@@ -43,9 +45,12 @@ class SongUiContractTests(unittest.TestCase):
         page = (ROOT / "index.html").read_text(encoding="utf-8")
         script = (ROOT / "assets" / "library.js").read_text(encoding="utf-8")
         self.assertIn('class="library-invocation-roman"', page)
-        self.assertIn('class="preface-word"', page)
-        self.assertIn('class="preface-meaning"', page)
-        self.assertIn('इन भजनों के कवियों तथा गायन-वादन से इन्हें साकार करने वाले कलाकारों को कोटि-कोटि प्रणाम।', page)
+        self.assertIn('class="preface-source preface-token"', page)
+        self.assertIn('class="preface-word preface-token"', page)
+        self.assertIn('preface-meaning preface-token', page)
+        self.assertIn('>गायन-वादन</span>', page)
+        self.assertIn('>कोटि-कोटि</span>', page)
+        self.assertIn('>प्रणाम</span>।', page)
         self.assertIn('Countless</span>', page)
         self.assertIn('class="about-toggle"', page)
         self.assertIn('AI-based transcription, timing, and translation pipeline', page)
@@ -53,6 +58,23 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn('please forgive', page.casefold())
         self.assertNotIn('corrections are welcome', page.casefold())
         self.assertIn('song.singer || song.credit', script)
+
+    def test_every_text_layer_uses_the_same_interactive_word_mapping(self) -> None:
+        script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
+        self.assertIn('linkedWord("ws"', script)
+        self.assertIn('linkedWord("w"', script)
+        self.assertIn('linkedWord("we"', script)
+        self.assertIn('e.target.closest(".word-link")', script)
+
+    def test_pwa_checks_for_releases_without_reloading_every_launch(self) -> None:
+        client = (ROOT / "assets" / "pwa.js").read_text(encoding="utf-8")
+        worker = (ROOT / "sw.js").read_text(encoding="utf-8")
+        self.assertIn('updateViaCache: "none"', client)
+        self.assertIn('navigator.serviceWorker.addEventListener("controllerchange"', client)
+        self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
+        self.assertIn('audioIsPlaying()', client)
+        self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
+        self.assertIn('bhakti-shell-v8', worker)
 
     def test_hosted_intake_is_owner_only_and_public_media_only(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "run-bhakti-intake.yml").read_text(encoding="utf-8")
@@ -74,6 +96,14 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('"title": "Kākaḍ Āratī"', data)
         self.assertIn('"sectionNotices"', data)
         self.assertIn('>Sai adaptation</span>', script)
+
+    def test_hari_om_sharan_language_tags_follow_the_sung_text(self) -> None:
+        aisa = (ROOT / "songs" / "aisa-pyar-baha-de-maiya" / "data.js").read_text(encoding="utf-8")
+        garv = (ROOT / "songs" / "yeh-garv-bhara-mastak" / "data.js").read_text(encoding="utf-8")
+        self.assertIn('"languages": [\n    "Hindi",\n    "Sanskrit"', aisa)
+        self.assertEqual(aisa.count('"sourceLanguage": "sa"'), 2)
+        self.assertIn('"languages": [\n    "Hindi"', garv)
+        self.assertNotIn('"Sanskrit"', garv)
 
 
 if __name__ == "__main__":

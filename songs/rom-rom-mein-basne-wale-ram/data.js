@@ -82,7 +82,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative phrase with adjectival participle construction ('basne vāle') modifying 'rām'. 'Rom-rom' is an emphatic reduplicative compound indicating totality across every pore."
+    "grammarNote": "Vocative phrase with adjectival participle construction ('basne vāle') modifying 'rām'. 'Rom-rom' is an emphatic reduplicative compound indicating totality across every pore.",
+    "sourceWords": [
+      {
+        "text": "हे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रोम-रोम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बसने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वाले",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "राम,",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आ...",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "refrain-rom-rom": {
     "source": "हे रोम-रोम में बसने वाले राम",
@@ -127,7 +171,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative construction with the agentive suffix '-vālā' attached to the oblique infinitive 'basne'."
+    "grammarNote": "Vocative construction with the agentive suffix '-vālā' attached to the oblique infinitive 'basne'.",
+    "sourceWords": [
+      {
+        "text": "हे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रोम-रोम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बसने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वाले",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "refrain-jagat-ke-swami": {
     "source": "जगत के स्वामी हे अंतर्यामी",
@@ -166,7 +248,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal compound/genitive phrase ('jagat ke svāmī') and epithet ('antaryāmī') used vocatively."
+    "grammarNote": "Nominal compound/genitive phrase ('jagat ke svāmī') and epithet ('antaryāmī') used vocatively.",
+    "sourceWords": [
+      {
+        "text": "जगत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "स्वामी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अंतर्यामी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "refrain-main-tujhse": {
     "source": "मैं तुझसे क्या माँगूँ",
@@ -199,7 +313,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "First-person singular subjunctive verb 'māṅgū̃' expressing deliberation/modality in a rhetorical question."
+    "grammarNote": "First-person singular subjunctive verb 'māṅgū̃' expressing deliberation/modality in a rhetorical question.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुझसे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "माँगूँ",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-alap": {
     "source": "आ...",
@@ -214,7 +354,15 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Non-lexical vocable / musical transition."
+    "grammarNote": "Non-lexical vocable / musical transition.",
+    "sourceWords": [
+      {
+        "text": "आ...",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "v1-aas-ka-bandhan": {
     "source": "आस का बंधन तोड़ चुकी हूँ",
@@ -259,7 +407,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb 'toṛ cukī hū̃' (stem + cuknā + honā) marking perfective aspect with feminine singular agreement."
+    "grammarNote": "Compound verb 'toṛ cukī hū̃' (stem + cuknā + honā) marking perfective aspect with feminine singular agreement.",
+    "sourceWords": [
+      {
+        "text": "आस",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बंधन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तोड़",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चुकी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1-tujh-par-sab": {
     "source": "तुझ पर सब कुछ छोड़ चुकी हूँ",
@@ -310,7 +496,51 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb 'choṛ cukī hū̃' marking completed action with 1st person feminine singular agreement."
+    "grammarNote": "Compound verb 'choṛ cukī hū̃' marking completed action with 1st person feminine singular agreement.",
+    "sourceWords": [
+      {
+        "text": "तुझ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कुछ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "छोड़",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चुकी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "v1-nath-mere": {
     "source": "नाथ मेरे मैं क्यों कुछ सोचूँ",
@@ -355,7 +585,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative phrase 'nāth mere' paired with the 1st person singular subjunctive 'socū̃' in a rhetorical question."
+    "grammarNote": "Vocative phrase 'nāth mere' paired with the 1st person singular subjunctive 'socū̃' in a rhetorical question.",
+    "sourceWords": [
+      {
+        "text": "नाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "क्यों",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कुछ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सोचूँ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v1-tu-jaane": {
     "source": "तू जाने तेरा काम",
@@ -388,7 +656,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Idiomatic construction 'tū jāne terā kām' with 'jāne' functioning as habitual/subjunctive present."
+    "grammarNote": "Idiomatic construction 'tū jāne terā kām' with 'jāne' functioning as habitual/subjunctive present.",
+    "sourceWords": [
+      {
+        "text": "तू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जाने",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "काम",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v2-tere-charan": {
     "source": "तेरे चरण की धूल जो पाए",
@@ -433,7 +727,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Relative clause introduced by 'jo' with subjunctive verb 'pāe', governing feminine object 'dhūl'."
+    "grammarNote": "Relative clause introduced by 'jo' with subjunctive verb 'pāe', governing feminine object 'dhūl'.",
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "धूल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पाए",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v2-vo-kankar": {
     "source": "वो कंकर हीरा हो जाए",
@@ -472,7 +804,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound change-of-state verb 'ho jāe' with predicate noun 'hīrā'."
+    "grammarNote": "Compound change-of-state verb 'ho jāe' with predicate noun 'hīrā'.",
+    "sourceWords": [
+      {
+        "text": "वो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कंकर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हीरा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जाए",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2-bhaag-mere": {
     "source": "भाग मेरे जो मैंने पाया",
@@ -511,7 +875,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Ergative construction 'maĩne pāyā' agreeing in masculine singular with the implied object 'dhām' from the next line."
+    "grammarNote": "Ergative construction 'maĩne pāyā' agreeing in masculine singular with the implied object 'dhām' from the next line.",
+    "sourceWords": [
+      {
+        "text": "भाग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैंने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पाया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v2-in-charnon-mein": {
     "source": "इन चरणों में धाम",
@@ -544,7 +940,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative phrase 'in caraṇõ mẽ' qualifying the direct object 'dhām'."
+    "grammarNote": "Locative phrase 'in caraṇõ mẽ' qualifying the direct object 'dhām'.",
+    "sourceWords": [
+      {
+        "text": "इन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चरणों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "धाम",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "v3-bhed-tera": {
     "source": "भेद तेरा कोई क्या पहचाने",
@@ -583,7 +1005,39 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Rhetorical question with indefinite subject 'koī', direct object 'terā bhed', and subjunctive verb 'pahcāne'."
+    "grammarNote": "Rhetorical question with indefinite subject 'koī', direct object 'terā bhed', and subjunctive verb 'pahcāne'.",
+    "sourceWords": [
+      {
+        "text": "भेद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पहचाने",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "v3-jo-tujh-sa": {
     "source": "जो तुझ-सा हो वो तुझे जाने",
@@ -628,7 +1082,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Relative-correlative structure ('jo... vo...') with comparative postposition '-sā' suffixed to oblique pronoun 'tujh'."
+    "grammarNote": "Relative-correlative structure ('jo... vo...') with comparative postposition '-sā' suffixed to oblique pronoun 'tujh'.",
+    "sourceWords": [
+      {
+        "text": "जो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुझ-सा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुझे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जाने",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v3-tere-kiye-ko": {
     "source": "तेरे किए को हम क्या देवें",
@@ -673,7 +1165,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Substantivized perfect participle 'kiye' used as a noun ('that which is done by you'), governing the dative postposition 'ko'. Verb 'devẽ' is 1st person plural subjunctive."
+    "grammarNote": "Substantivized perfect participle 'kiye' used as a noun ('that which is done by you'), governing the dative postposition 'ko'. Verb 'devẽ' is 1st person plural subjunctive.",
+    "sourceWords": [
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "किए",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "देवें",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "v3-bhale-bure-ka": {
     "source": "भले-बुरे का नाम",
@@ -700,7 +1230,27 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Oblique copulative compound 'bhale-bure' with genitive postposition 'kā' qualifying head noun 'nām'."
+    "grammarNote": "Oblique copulative compound 'bhale-bure' with genitive postposition 'kā' qualifying head noun 'nām'.",
+    "sourceWords": [
+      {
+        "text": "भले-बुरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   }
 };
 

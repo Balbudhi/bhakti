@@ -16,6 +16,7 @@ from typing import Any
 
 import tag_taxonomy
 import gloss_policy
+import source_word_map
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -86,9 +87,19 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
             problems.append(f"{line_id} lacks IAST")
         if not str(line.get("english", "")).strip():
             problems.append(f"{line_id} lacks literal English")
+        fictional = gloss_policy.fictional_coinages(line.get("english", ""))
+        if fictional:
+            problems.append(f"{line_id} English uses fictional coinage {fictional}")
         if not isinstance(line.get("words"), list) or not line["words"]:
             problems.append(f"{line_id} lacks word glosses")
         else:
+            if line_id not in instrumental_refs:
+                problems.extend(
+                    f"{line_id} {problem}"
+                    for problem in source_word_map.validate_source_words(
+                        str(line.get("source") or ""), line["words"], line.get("sourceWords")
+                    )
+                )
             roman = str(line.get("roman", ""))
             cursor = 0
             for word_index, word in enumerate(line["words"]):
@@ -100,6 +111,9 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
                     break
                 if gloss_policy.is_self_referential(token, gloss):
                     problems.append(f"{line_id} word[{word_index}] gloss repeats the visible term instead of explaining it")
+                fictional = gloss_policy.fictional_coinages(gloss)
+                if fictional:
+                    problems.append(f"{line_id} word[{word_index}] gloss uses fictional coinage {fictional}")
                 cursor = at + len(token)
                 concept_key = word.get("concept_key") if isinstance(word, dict) else None
                 preserve = word.get("preserve_in_english") if isinstance(word, dict) else False

@@ -530,7 +530,501 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Spoken prose transitioning into a classical Odia couplet in nabākṣarī (9-syllable) meter. Suffixes -ra marks genitive; -re marks locative; -ku marks accusative/dative; -ṭie is an indefinite singular enclitic."
+    "grammarNote": "Spoken prose transitioning into a classical Odia couplet in nabākṣarī (9-syllable) meter. Suffixes -ra marks genitive; -re marks locative; -ku marks accusative/dative; -ṭie is an indefinite singular enclitic.",
+    "sourceWords": [
+      {
+        "text": "ଭକ୍ତର",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଗୁରୁଙ୍କ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ପ୍ରତି",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ସମର୍ପଣ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଭାବ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଏବଂ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ଗୁରୁଙ୍କର",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ଶରଣ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ପ୍ରଦାନ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ଗୁରୁଭକ୍ତି",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ପରମ୍ପରାର",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ଏକ",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "ଶ୍ରେଷ୍ଠ",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "ପରିଣତି।",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "ଜାଗତିକ",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "ଦୁନିଆରେ",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "ଯେତେ",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "ପ୍ରଭାବଶାଳୀ",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "ହେଲେ",
+        "wordIndices": [
+          18
+        ]
+      },
+      {
+        "text": "ମଧ୍ୟ",
+        "wordIndices": [
+          19
+        ]
+      },
+      {
+        "text": "ଗୁରୁପ୍ରତି",
+        "wordIndices": [
+          20
+        ]
+      },
+      {
+        "text": "ଭାବସିକ୍ତ",
+        "wordIndices": [
+          21
+        ]
+      },
+      {
+        "text": "ଭକ୍ତଟିଏ",
+        "wordIndices": [
+          22
+        ]
+      },
+      {
+        "text": "ଏକ",
+        "wordIndices": [
+          23
+        ]
+      },
+      {
+        "text": "ଅବୋଧ",
+        "wordIndices": [
+          24
+        ]
+      },
+      {
+        "text": "ଏବଂ",
+        "wordIndices": [
+          25
+        ]
+      },
+      {
+        "text": "ଅସହାୟ",
+        "wordIndices": [
+          26
+        ]
+      },
+      {
+        "text": "ବାଳକ",
+        "wordIndices": [
+          27
+        ]
+      },
+      {
+        "text": "ପରି",
+        "wordIndices": [
+          28
+        ]
+      },
+      {
+        "text": "ଗୁରୁଙ୍କର",
+        "wordIndices": [
+          29
+        ]
+      },
+      {
+        "text": "ଶରଣ",
+        "wordIndices": [
+          30
+        ]
+      },
+      {
+        "text": "ଏବଂ",
+        "wordIndices": [
+          31
+        ]
+      },
+      {
+        "text": "ନିବିଡ଼",
+        "wordIndices": [
+          32
+        ]
+      },
+      {
+        "text": "ସାନ୍ନିଧ୍ୟ",
+        "wordIndices": [
+          33
+        ]
+      },
+      {
+        "text": "ପାଇଁ",
+        "wordIndices": [
+          34
+        ]
+      },
+      {
+        "text": "ଅନ୍ତର୍ମନରେ",
+        "wordIndices": [
+          35
+        ]
+      },
+      {
+        "text": "ଅହରହ",
+        "wordIndices": [
+          36
+        ]
+      },
+      {
+        "text": "ପ୍ରାର୍ଥନା",
+        "wordIndices": [
+          37
+        ]
+      },
+      {
+        "text": "କରୁଥାଏ।",
+        "wordIndices": [
+          38
+        ]
+      },
+      {
+        "text": "ସେ",
+        "wordIndices": [
+          39
+        ]
+      },
+      {
+        "text": "ସର୍ବଦା",
+        "wordIndices": [
+          40
+        ]
+      },
+      {
+        "text": "ଚାହେଁ",
+        "wordIndices": [
+          41
+        ]
+      },
+      {
+        "text": "ଯେ",
+        "wordIndices": [
+          42
+        ]
+      },
+      {
+        "text": "ଜୀବନର",
+        "wordIndices": [
+          43
+        ]
+      },
+      {
+        "text": "ସୁଖ,",
+        "wordIndices": [
+          44
+        ]
+      },
+      {
+        "text": "ଦୁଃଖ",
+        "wordIndices": [
+          45
+        ]
+      },
+      {
+        "text": "ଏବଂ",
+        "wordIndices": [
+          46
+        ]
+      },
+      {
+        "text": "ପାପପୁଣ୍ୟର",
+        "wordIndices": [
+          47
+        ]
+      },
+      {
+        "text": "ପ୍ରତ୍ୟେକ",
+        "wordIndices": [
+          48
+        ]
+      },
+      {
+        "text": "କ୍ଷଣରେ",
+        "wordIndices": [
+          49
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          50
+        ]
+      },
+      {
+        "text": "ତାର",
+        "wordIndices": [
+          51
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          52
+        ]
+      },
+      {
+        "text": "ଧରି",
+        "wordIndices": [
+          53
+        ]
+      },
+      {
+        "text": "ତାର",
+        "wordIndices": [
+          54
+        ]
+      },
+      {
+        "text": "ଚଲାପଥକୁ",
+        "wordIndices": [
+          55
+        ]
+      },
+      {
+        "text": "ସହଜ",
+        "wordIndices": [
+          56
+        ]
+      },
+      {
+        "text": "ଓ",
+        "wordIndices": [
+          57
+        ]
+      },
+      {
+        "text": "ପାବନ",
+        "wordIndices": [
+          58
+        ]
+      },
+      {
+        "text": "କରିଦିଅନ୍ତୁ।",
+        "wordIndices": [
+          59
+        ]
+      },
+      {
+        "text": "ଶ୍ରୀଗୁରୁଭାଗବତର",
+        "wordIndices": [
+          60
+        ]
+      },
+      {
+        "text": "ଦ୍ଵିତୀୟ",
+        "wordIndices": [
+          61
+        ]
+      },
+      {
+        "text": "ଖଣ୍ଡରେ",
+        "wordIndices": [
+          62
+        ]
+      },
+      {
+        "text": "ଏହି",
+        "wordIndices": [
+          63
+        ]
+      },
+      {
+        "text": "ଭାବଟିକୁ",
+        "wordIndices": [
+          64
+        ]
+      },
+      {
+        "text": "ସ୍ପଷ୍ଟ",
+        "wordIndices": [
+          65
+        ]
+      },
+      {
+        "text": "କରି",
+        "wordIndices": [
+          66
+        ]
+      },
+      {
+        "text": "କୁହାଯାଇଛି:",
+        "wordIndices": [
+          67
+        ]
+      },
+      {
+        "text": "ଗୁରୁଙ୍କୁ",
+        "wordIndices": [
+          68
+        ]
+      },
+      {
+        "text": "ମଣି",
+        "wordIndices": [
+          69
+        ]
+      },
+      {
+        "text": "ଭଗବାନ",
+        "wordIndices": [
+          70
+        ]
+      },
+      {
+        "text": "ଭକତ",
+        "wordIndices": [
+          71
+        ]
+      },
+      {
+        "text": "କଲେ",
+        "wordIndices": [
+          72
+        ]
+      },
+      {
+        "text": "ସମର୍ପଣ,",
+        "wordIndices": [
+          73
+        ]
+      },
+      {
+        "text": "ଜୀବନ",
+        "wordIndices": [
+          74
+        ]
+      },
+      {
+        "text": "ଦେଲେ",
+        "wordIndices": [
+          75
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          76
+        ]
+      },
+      {
+        "text": "ହାତେ",
+        "wordIndices": [
+          77
+        ]
+      },
+      {
+        "text": "ଭକତ",
+        "wordIndices": [
+          78
+        ]
+      },
+      {
+        "text": "ଚାଲେ",
+        "wordIndices": [
+          79
+        ]
+      },
+      {
+        "text": "ଶୁଦ୍ଧ",
+        "wordIndices": [
+          80
+        ]
+      },
+      {
+        "text": "ପଥେ।",
+        "wordIndices": [
+          81
+        ]
+      }
+    ]
   },
   "alap-opening": {
     "source": "ହେ ସଦଗୁରୁ ହେ ସଦଗୁରୁ ତୁମେ ମୋର ହାତକୁ ଧର, ତୁମେ ମୋର ହାତକୁ ଧର, ହାତକୁ ଧର, ହେ ସଦଗୁରୁ ତୁମେ ମୋର ହାତକୁ ଧର",
@@ -659,7 +1153,129 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative particle he + noun sadaguru. Pronoun tume (familiar/polite 2nd person) governs the present imperative dhara; hātaku has the objective/accusative case suffix -ku."
+    "grammarNote": "Vocative particle he + noun sadaguru. Pronoun tume (familiar/polite 2nd person) governs the present imperative dhara; hātaku has the objective/accusative case suffix -ku.",
+    "sourceWords": [
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ସଦଗୁରୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ସଦଗୁରୁ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ଧର,",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ଧର,",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "ଧର,",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "ସଦଗୁରୁ",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          18
+        ]
+      },
+      {
+        "text": "ଧର",
+        "wordIndices": [
+          19
+        ]
+      }
+    ]
   },
   "refrain-1": {
     "source": "ତୁମେ ମୋର ହାତକୁ ଧର",
@@ -692,7 +1308,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Simple subject-object-verb imperative sentence: 2nd person subject tume, genitive possessive mora modifying accusative object hātaku, and imperative verb dhara."
+    "grammarNote": "Simple subject-object-verb imperative sentence: 2nd person subject tume, genitive possessive mora modifying accusative object hātaku, and imperative verb dhara.",
+    "sourceWords": [
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଧର",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-full-lead": {
     "source": "ହେ ସଦଗୁରୁ ତୁମେ ମୋର ହାତକୁ ଧର",
@@ -737,7 +1379,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Vocative phrase he sadaguru preceding the core clause tume mora hātaku dhara."
+    "grammarNote": "Vocative phrase he sadaguru preceding the core clause tume mora hātaku dhara.",
+    "sourceWords": [
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ସଦଗୁରୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଧର",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "refrain-full-chorus": {
     "source": "ହେ ସଦଗୁରୁ ତୁମେ ମୋର ହାତକୁ ଧର",
@@ -782,7 +1462,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Exact choral repetition of the full refrain line."
+    "grammarNote": "Exact choral repetition of the full refrain line.",
+    "sourceWords": [
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ସଦଗୁରୁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ହାତକୁ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଧର",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse1-line1": {
     "source": "ଜଗତ କଷଣ ଆଉ ସହି ପାରୁନାହିଁ ଗୁରୁ",
@@ -827,7 +1545,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb sahi pārunāhiṁ consists of non-finite sahi + modal auxiliary pāribā in 1st person present negative (pāru-nāhiṁ). Subject muṁ is elided."
+    "grammarNote": "Compound verb sahi pārunāhiṁ consists of non-finite sahi + modal auxiliary pāribā in 1st person present negative (pāru-nāhiṁ). Subject muṁ is elided.",
+    "sourceWords": [
+      {
+        "text": "ଜଗତ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କଷଣ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଆଉ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ସହି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ପାରୁନାହିଁ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse1-line2": {
     "source": "ତୁମେ ଆସି କର ଉପଚାର",
@@ -860,7 +1616,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle āsi ('having come') modifies the main imperative clause tume upacāra kara."
+    "grammarNote": "Conjunctive participle āsi ('having come') modifies the main imperative clause tume upacāra kara.",
+    "sourceWords": [
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଆସି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଉପଚାର",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse2-line1": {
     "source": "ଜାଣେନା ମୁଁ ପୂଜା ଆରତି ଧ୍ୟାନ ତେତିଶି କୋଟି ଦେବଙ୍କର",
@@ -917,7 +1699,57 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Inverted word order (verb jāṇenā precedes subject muṁ for poetic emphasis). Debaṅkara carries the honorific plural genitive suffix -ṅkara."
+    "grammarNote": "Inverted word order (verb jāṇenā precedes subject muṁ for poetic emphasis). Debaṅkara carries the honorific plural genitive suffix -ṅkara.",
+    "sourceWords": [
+      {
+        "text": "ଜାଣେନା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମୁଁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ପୂଜା",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଆରତି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଧ୍ୟାନ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ତେତିଶି",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "କୋଟି",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ଦେବଙ୍କର",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "verse2-line2": {
     "source": "ତୁମେ ହିଁ ତ ମୋର ସବୁକିଛି ଗୁରୁ",
@@ -962,7 +1794,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Equational nominal sentence with elided copula aṭa/aha. The particles hiṁ (limitative/emphatic) and ta (assertive) intensify the subject tume."
+    "grammarNote": "Equational nominal sentence with elided copula aṭa/aha. The particles hiṁ (limitative/emphatic) and ta (assertive) intensify the subject tume.",
+    "sourceWords": [
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ହିଁ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ତ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ସବୁକିଛି",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse2-line3": {
     "source": "ତୁମେ ମୋର ଜୀବନ ଆଧାର",
@@ -995,7 +1865,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal equational sentence with elided copula. Jībana functions as an uninflected genitive/noun adjunct modifying the noun ādhāra."
+    "grammarNote": "Nominal equational sentence with elided copula. Jībana functions as an uninflected genitive/noun adjunct modifying the noun ādhāra.",
+    "sourceWords": [
+      {
+        "text": "ତୁମେ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଜୀବନ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଆଧାର",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse3-line1": {
     "source": "ଚାଲି ଚାଲି ଜୀବନେ କଣ୍ଟା ଝଣ୍ଟା ବାଟେ ଥକି ସାରିଲାଣି ଜୀବ ମୋର",
@@ -1064,7 +1960,69 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplication cāli cāli indicates continuous or prolonged action. Kaṇṭā-jhaṇṭā is a rhyming compound/dvandva representing all kinds of prickles and thorny brush. Suffix -lāṇi on sārilāṇi marks recent/completive perfect."
+    "grammarNote": "Reduplication cāli cāli indicates continuous or prolonged action. Kaṇṭā-jhaṇṭā is a rhyming compound/dvandva representing all kinds of prickles and thorny brush. Suffix -lāṇi on sārilāṇi marks recent/completive perfect.",
+    "sourceWords": [
+      {
+        "text": "ଚାଲି",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ଚାଲି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଜୀବନେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କଣ୍ଟା",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଝଣ୍ଟା",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ବାଟେ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ଥକି",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ସାରିଲାଣି",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ଜୀବ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ମୋର",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "verse3-line2": {
     "source": "କୃପା କରି ଗୁରୁ ଏବେ ବିଜେ କର",
@@ -1109,7 +2067,45 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Kṛpā kari is an adverbialized conjunctive participial phrase ('graciously'). Bije karibā is a light-verb compound serving as an honorific imperative."
+    "grammarNote": "Kṛpā kari is an adverbialized conjunctive participial phrase ('graciously'). Bije karibā is a light-verb compound serving as an honorific imperative.",
+    "sourceWords": [
+      {
+        "text": "କୃପା",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କରି",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ଗୁରୁ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଏବେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ବିଜେ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "verse3-line3": {
     "source": "ଆଶ୍ରିତକୁ କର ହେ ଉଦ୍ଧାର",
@@ -1142,7 +2138,33 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound verb uddhāra kara with split/inverted word order around the vocative he. Āśritaku takes the accusative marker -ku on the nominalized past passive participle āśrita."
+    "grammarNote": "Compound verb uddhāra kara with split/inverted word order around the vocative he. Āśritaku takes the accusative marker -ku on the nominalized past passive participle āśrita.",
+    "sourceWords": [
+      {
+        "text": "ଆଶ୍ରିତକୁ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "କର",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଉଦ୍ଧାର",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   }
 };
 

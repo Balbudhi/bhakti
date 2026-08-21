@@ -56,6 +56,7 @@ jobs:
           sudo apt-get install -y ffmpeg
           python -m pip install --upgrade pip
           python -m pip install --upgrade --pre "yt-dlp[default]"
+          python -m pip install "indic-transliteration>=2.3,<3"
           install -d /home/runner/.config/yt-dlp
           printf '%s\n' '--js-runtimes node' '--extractor-args youtube:player_client=web_embedded' > /home/runner/.config/yt-dlp/config
           node --version

@@ -83,15 +83,26 @@
     const tooltip = document.getElementById("prefaceTooltip");
     if (!root || !tooltip) return;
     let sticky = null;
-    const meaningsFor = word => [...root.querySelectorAll(".preface-meaning")].filter(meaning =>
-      meaning.dataset.wordI.split(/\s+/).includes(word.dataset.wordI)
-    );
-    const show = word => {
-      word.classList.add("is-hi");
-      meaningsFor(word).forEach(meaning => meaning.classList.add("is-hi"));
-      tooltip.textContent = word.dataset.gloss;
+    const indicesFor = token => new Set(token.dataset.wordI.split(/\s+/).filter(Boolean));
+    const linkedTokens = token => {
+      const selected = indicesFor(token);
+      return [...root.querySelectorAll(".preface-token")].filter(candidate =>
+        [...indicesFor(candidate)].some(index => selected.has(index))
+      );
+    };
+    const glossFor = token => {
+      const selected = indicesFor(token);
+      return [...new Set([...root.querySelectorAll(".preface-word")]
+        .filter(word => selected.has(word.dataset.wordI))
+        .map(word => word.dataset.gloss)
+        .filter(Boolean))].join(" · ");
+    };
+    const show = token => {
+      root.querySelectorAll(".preface-token.is-hi").forEach(candidate => candidate.classList.remove("is-hi"));
+      linkedTokens(token).forEach(candidate => candidate.classList.add("is-hi"));
+      tooltip.textContent = glossFor(token);
       tooltip.hidden = false;
-      const rect = word.getBoundingClientRect();
+      const rect = token.getBoundingClientRect();
       const tipRect = tooltip.getBoundingClientRect();
       const margin = 8;
       const left = Math.max(margin, Math.min(
@@ -102,46 +113,53 @@
       tooltip.style.left = `${left}px`;
       tooltip.style.top = `${above >= margin ? above : rect.bottom + 8}px`;
     };
-    const hide = word => {
-      word.classList.remove("is-hi");
-      meaningsFor(word).forEach(meaning => meaning.classList.remove("is-hi"));
+    const hide = () => {
+      root.querySelectorAll(".preface-token.is-hi").forEach(candidate => candidate.classList.remove("is-hi"));
       tooltip.hidden = true;
     };
     root.addEventListener("pointerover", event => {
-      const word = event.target.closest(".preface-word");
-      if (word) show(word);
+      const token = event.target.closest(".preface-token");
+      if (token) show(token);
     });
     root.addEventListener("pointerout", event => {
-      const word = event.target.closest(".preface-word");
-      if (word && word !== sticky && !word.contains(event.relatedTarget)) hide(word);
+      const token = event.target.closest(".preface-token");
+      if (token && token !== sticky && !token.contains(event.relatedTarget)) hide();
     });
     root.addEventListener("focusin", event => {
-      const word = event.target.closest(".preface-word");
-      if (word) show(word);
+      const token = event.target.closest(".preface-token");
+      if (token) show(token);
     });
     root.addEventListener("focusout", event => {
-      const word = event.target.closest(".preface-word");
-      if (word && word !== sticky) hide(word);
+      const token = event.target.closest(".preface-token");
+      if (token && token !== sticky) hide();
     });
     root.addEventListener("click", event => {
-      const word = event.target.closest(".preface-word");
-      if (!word) return;
+      const token = event.target.closest(".preface-token");
+      if (!token) return;
       event.stopPropagation();
-      if (sticky === word) {
+      if (sticky === token) {
         sticky = null;
-        hide(word);
+        hide();
         return;
       }
-      if (sticky) hide(sticky);
-      sticky = word;
-      show(word);
+      if (sticky) hide();
+      sticky = token;
+      show(token);
     });
-    document.addEventListener("click", () => {
-      if (sticky) hide(sticky);
+    root.addEventListener("keydown", event => {
+      const token = event.target.closest(".preface-token");
+      if (token && (event.key === "Enter" || event.key === " ")) {
+        event.preventDefault();
+        token.click();
+      }
+    });
+    document.addEventListener("click", event => {
+      if (event.target.closest?.(".preface-token")) return;
+      if (sticky) hide();
       sticky = null;
     });
     document.addEventListener("bhakti:clear-preface", () => {
-      if (sticky) hide(sticky);
+      if (sticky) hide();
       sticky = null;
       tooltip.hidden = true;
     });

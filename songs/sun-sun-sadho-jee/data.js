@@ -63,7 +63,45 @@ window.SONG_LINES = {
         "gloss": "honorific particle"
       }
     ],
-    "grammarNote": "Reduplicated bare imperative verb 'suna' followed by vocative plural noun 'sādho' with honorific enclitic 'jī'."
+    "grammarNote": "Reduplicated bare imperative verb 'suna' followed by vocative plural noun 'sādho' with honorific enclitic 'jī'.",
+    "sourceWords": [
+      {
+        "text": "सुन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "refrain-2": {
     "source": "सुन सुन साधो जी साधो जी सुन सुन",
@@ -104,7 +142,57 @@ window.SONG_LINES = {
         "gloss": "listen (repeated for emphasis)"
       }
     ],
-    "grammarNote": "Choral repetition of the bare imperative with sandwiched vocative phrases."
+    "grammarNote": "Choral repetition of the bare imperative with sandwiched vocative phrases.",
+    "sourceWords": [
+      {
+        "text": "सुन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "refrain-3": {
     "source": "सुन सुन साधो जी",
@@ -129,7 +217,33 @@ window.SONG_LINES = {
         "gloss": "honorific particle"
       }
     ],
-    "grammarNote": "Imperative phrase with vocative complement."
+    "grammarNote": "Imperative phrase with vocative complement.",
+    "sourceWords": [
+      {
+        "text": "सुन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "refrain-4": {
     "source": "साधो जी",
@@ -146,7 +260,21 @@ window.SONG_LINES = {
         "gloss": "honorific particle"
       }
     ],
-    "grammarNote": "Vocative plural noun with honorific clitic."
+    "grammarNote": "Vocative plural noun with honorific clitic.",
+    "sourceWords": [
+      {
+        "text": "साधो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "refrain-raja-ram": {
     "source": "राजाराम कहो जी कहो जी",
@@ -175,7 +303,39 @@ window.SONG_LINES = {
         "gloss": "honorific particle"
       }
     ],
-    "grammarNote": "Compound proper noun 'rājārāma' as direct object of the repeated honorific imperative verb 'kaho'."
+    "grammarNote": "Compound proper noun 'rājārāma' as direct object of the repeated honorific imperative verb 'kaho'.",
+    "sourceWords": [
+      {
+        "text": "राजाराम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कहो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "refrain-raja-ram-end": {
     "source": "राजाराम कहो जी",
@@ -196,7 +356,27 @@ window.SONG_LINES = {
         "gloss": "honorific particle"
       }
     ],
-    "grammarNote": "Direct object plus imperative verb with honorific clitic."
+    "grammarNote": "Direct object plus imperative verb with honorific clitic.",
+    "sourceWords": [
+      {
+        "text": "राजाराम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "verse1-1": {
     "source": "भाव भक्ति का भूखा साईं",
@@ -225,7 +405,39 @@ window.SONG_LINES = {
         "gloss": "Lord / Master (masculine singular noun)"
       }
     ],
-    "grammarNote": "Dvandva-like pair 'bhāva bhakti' governed by genitive postposition 'kā', modifying predicate adjective 'bhūkhā' which agrees with subject 'sāīṁ'. Copula 'hai' is elided."
+    "grammarNote": "Dvandva-like pair 'bhāva bhakti' governed by genitive postposition 'kā', modifying predicate adjective 'bhūkhā' which agrees with subject 'sāīṁ'. Copula 'hai' is elided.",
+    "sourceWords": [
+      {
+        "text": "भाव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भक्ति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भूखा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse1-2": {
     "source": "भाव भक्ति का",
@@ -246,7 +458,27 @@ window.SONG_LINES = {
         "gloss": "of (masculine singular genitive postposition)"
       }
     ],
-    "grammarNote": "Elliptical genitive noun phrase serving as musical lead-in to the predicate in the next line."
+    "grammarNote": "Elliptical genitive noun phrase serving as musical lead-in to the predicate in the next line.",
+    "sourceWords": [
+      {
+        "text": "भाव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भक्ति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "verse1-bhukha-sai": {
     "source": "भूखा साईं",
@@ -263,7 +495,21 @@ window.SONG_LINES = {
         "gloss": "Lord / Master (masculine singular noun)"
       }
     ],
-    "grammarNote": "Predicate adjective 'bhūkhā' with subject noun 'sāīṁ'; copula elided."
+    "grammarNote": "Predicate adjective 'bhūkhā' with subject noun 'sāīṁ'; copula elided.",
+    "sourceWords": [
+      {
+        "text": "भूखा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "verse1-3": {
     "source": "जोग जुगत नहिं पावे",
@@ -288,7 +534,33 @@ window.SONG_LINES = {
         "gloss": "attains / obtains / reaches (3rd person singular present/habitual)"
       }
     ],
-    "grammarNote": "Alliterative paired nominals 'joga jugata' functioning as instrumental means or topic; transitive verb 'pāve' negated by 'nahiṁ' with elided divine object."
+    "grammarNote": "Alliterative paired nominals 'joga jugata' functioning as instrumental means or topic; transitive verb 'pāve' negated by 'nahiṁ' with elided divine object.",
+    "sourceWords": [
+      {
+        "text": "जोग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जुगत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नहिं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पावे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse1-4": {
     "source": "भगत भूल गये राम दिवाने",
@@ -317,7 +589,39 @@ window.SONG_LINES = {
         "gloss": "ecstatic / enraptured / intoxicated (plural masculine adjective)"
       }
     ],
-    "grammarNote": "Compound verb 'bhūla gaye' (stem + jānā in perfective) agreeing with plural subject 'bhagata'. 'rāma divāne' is an appositive adjectival phrase."
+    "grammarNote": "Compound verb 'bhūla gaye' (stem + jānā in perfective) agreeing with plural subject 'bhagata'. 'rāma divāne' is an appositive adjectival phrase.",
+    "sourceWords": [
+      {
+        "text": "भगत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भूल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गये",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिवाने",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse1-5": {
     "source": "निज पद वाको देवे",
@@ -342,7 +646,33 @@ window.SONG_LINES = {
         "gloss": "gives / bestows (3rd person singular present/habitual verb)"
       }
     ],
-    "grammarNote": "Transitive verb 'deve' takes direct object 'nija pada' and Braj dative indirect object 'vāko' (vah + ko)."
+    "grammarNote": "Transitive verb 'deve' takes direct object 'nija pada' and Braj dative indirect object 'vāko' (vah + ko).",
+    "sourceWords": [
+      {
+        "text": "निज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वाको",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "देवे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse2-1": {
     "source": "क्या मरदूमी उग्रसेन की",
@@ -367,7 +697,33 @@ window.SONG_LINES = {
         "gloss": "of (feminine singular genitive postposition)"
       }
     ],
-    "grammarNote": "Genitive construction 'ugrasena kī maradūmī' inverted with fronted rhetorical 'kyā'; copula elided."
+    "grammarNote": "Genitive construction 'ugrasena kī maradūmī' inverted with fronted rhetorical 'kyā'; copula elided.",
+    "sourceWords": [
+      {
+        "text": "क्या",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मरदूमी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "उग्रसेन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse2-2": {
     "source": "सूरत क्या कुब्जे की",
@@ -392,7 +748,33 @@ window.SONG_LINES = {
         "gloss": "of (feminine singular genitive postposition)"
       }
     ],
-    "grammarNote": "Feminine noun 'sūrata' modified by genitive phrase 'kubje kī' with embedded rhetorical interrogative 'kyā'."
+    "grammarNote": "Feminine noun 'sūrata' modified by genitive phrase 'kubje kī' with embedded rhetorical interrogative 'kyā'.",
+    "sourceWords": [
+      {
+        "text": "सूरत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कुब्जे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse2-3": {
     "source": "धन भारी से राम मिलत",
@@ -421,7 +803,39 @@ window.SONG_LINES = {
         "gloss": "is attained / met (masculine singular imperfective participle)"
       }
     ],
-    "grammarNote": "Instrumental phrase 'dhana bhārī se' modifying the passive/intransitive construction 'rāma milata [hote]' (if Ram were attained)."
+    "grammarNote": "Instrumental phrase 'dhana bhārī se' modifying the passive/intransitive construction 'rāma milata [hote]' (if Ram were attained).",
+    "sourceWords": [
+      {
+        "text": "धन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मिलत",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse2-4": {
     "source": "धन भारी से राम मिलत पत जाने सुदाम जी की",
@@ -470,7 +884,69 @@ window.SONG_LINES = {
         "gloss": "of (feminine singular genitive postposition)"
       }
     ],
-    "grammarNote": "Counterfactual conditional compound sentence: protasis 'dhana bhārī se rāma milata [to]', apodosis '[to] sudāma jī kī pata jāne' (with verb 'jāne' agreeing with feminine subject 'pata')."
+    "grammarNote": "Counterfactual conditional compound sentence: protasis 'dhana bhārī se rāma milata [to]', apodosis '[to] sudāma jī kī pata jāne' (with verb 'jāne' agreeing with feminine subject 'pata').",
+    "sourceWords": [
+      {
+        "text": "धन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मिलत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जाने",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सुदाम",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "verse3-1": {
     "source": "कहत कबीर सुनो भाई साधो",
@@ -499,7 +975,39 @@ window.SONG_LINES = {
         "gloss": "seekers / sadhus (vocative plural noun)"
       }
     ],
-    "grammarNote": "Standard bhaṇitā line: signature formula with subject 'kabīra', participle 'kahata', followed by vocative clause 'suno bhāī sādho'."
+    "grammarNote": "Standard bhaṇitā line: signature formula with subject 'kabīra', participle 'kahata', followed by vocative clause 'suno bhāī sādho'.",
+    "sourceWords": [
+      {
+        "text": "कहत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कबीर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुनो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "verse3-2": {
     "source": "राम मिलत है भक्ति",
@@ -524,7 +1032,33 @@ window.SONG_LINES = {
         "gloss": "devotion / loving surrender (feminine noun)"
       }
     ],
-    "grammarNote": "Present imperfective construction 'milata hai' with subject 'rāma'; 'bhakti' stands in elliptical instrumental case ('bhakti [se]')."
+    "grammarNote": "Present imperfective construction 'milata hai' with subject 'rāma'; 'bhakti' stands in elliptical instrumental case ('bhakti [se]').",
+    "sourceWords": [
+      {
+        "text": "राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मिलत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्ति",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse3-4": {
     "source": "जंतर मंतर लटपट होवे",
@@ -549,7 +1083,33 @@ window.SONG_LINES = {
         "gloss": "becomes / turns out (3rd person singular/plural present verb)"
       }
     ],
-    "grammarNote": "Rhyming dvandva pair 'jantara mantara' acting as subject to the intransitive verb 'hove' with predicate adjective 'laṭapaṭa'."
+    "grammarNote": "Rhyming dvandva pair 'jantara mantara' acting as subject to the intransitive verb 'hove' with predicate adjective 'laṭapaṭa'.",
+    "sourceWords": [
+      {
+        "text": "जंतर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मंतर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लटपट",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "होवे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "verse3-5": {
     "source": "राम भजन से ए मुक्ति",
@@ -578,7 +1138,39 @@ window.SONG_LINES = {
         "gloss": "liberation / spiritual release (feminine noun)"
       }
     ],
-    "grammarNote": "Instrumental phrase 'rāma bhajana se' preceding demonstrative/copular nominal clause 'e mukti [hai]'."
+    "grammarNote": "Instrumental phrase 'rāma bhajana se' preceding demonstrative/copular nominal clause 'e mukti [hai]'.",
+    "sourceWords": [
+      {
+        "text": "राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भजन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ए",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मुक्ति",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "outro-kaho-ji": {
     "source": "कहो जी",
@@ -595,7 +1187,21 @@ window.SONG_LINES = {
         "gloss": "honorific particle"
       }
     ],
-    "grammarNote": "Honorific imperative phrase acting as musical coda."
+    "grammarNote": "Honorific imperative phrase acting as musical coda.",
+    "sourceWords": [
+      {
+        "text": "कहो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जी",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   }
 };
 

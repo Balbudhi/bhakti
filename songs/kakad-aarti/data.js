@@ -174,7 +174,63 @@ window.SONG_LINES = {
         "gloss": "spread"
       }
     ],
-    "grammarNote": "Feminine singular subject 'prabhā' agrees with the perfective stative predicate 'phailī hai'. 'Nabh meṁ' functions as a locative phrase."
+    "grammarNote": "Feminine singular subject 'prabhā' agrees with the perfective stative predicate 'phailī hai'. 'Nabh meṁ' functions as a locative phrase.",
+    "sourceWords": [
+      {
+        "text": "प्रभात",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "समय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नभ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "शुभ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रवि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रभा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "फैली",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-001": {
     "source": "स्मरे गुरु यथा काल तो चले ना कलि",
@@ -215,7 +271,57 @@ window.SONG_LINES = {
         "gloss": "the Kali age"
       }
     ],
-    "grammarNote": "'Smare' is a Sanskritized 3rd-person optative/present verb used conditionally ('if one remembers'). 'Chale nā' denotes negative potentiality with subject 'kali'."
+    "grammarNote": "'Smare' is a Sanskritized 3rd-person optative/present verb used conditionally ('if one remembers'). 'Chale nā' denotes negative potentiality with subject 'kali'.",
+    "sourceWords": [
+      {
+        "text": "स्मरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "यथा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "काल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चले",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कलि",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-002": {
     "source": "तथापि कर जोड़े करु अब गुरु प्रार्थना",
@@ -252,7 +358,51 @@ window.SONG_LINES = {
         "gloss": "prayer"
       }
     ],
-    "grammarNote": "'Kar joṛe' is an absolute participle phrase ('with joined hands'). 'Karu' (karūṁ) is 1st-person singular present/subjunctive."
+    "grammarNote": "'Kar joṛe' is an absolute participle phrase ('with joined hands'). 'Karu' (karūṁ) is 1st-person singular present/subjunctive.",
+    "sourceWords": [
+      {
+        "text": "तथापि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जोड़े",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "अब",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रार्थना",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-003": {
     "source": "समर्थ गुरु साईनाथ पूरण करे कामना",
@@ -285,7 +435,45 @@ window.SONG_LINES = {
         "gloss": "desires"
       }
     ],
-    "grammarNote": "'Pūraṇ kare' forms a conjunct verb ('to fulfill') carrying optative/benedictive force with subject 'Sāīnāth'."
+    "grammarNote": "'Pūraṇ kare' forms a conjunct verb ('to fulfill') carrying optative/benedictive force with subject 'Sāīnāth'.",
+    "sourceWords": [
+      {
+        "text": "समर्थ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पूरण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कामना",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-004": {
     "source": "तम निरसे भानु गुरु भी नासे अज्ञानता",
@@ -322,7 +510,51 @@ window.SONG_LINES = {
         "gloss": "ignorance"
       }
     ],
-    "grammarNote": "Consists of two balanced parallel clauses using poetic 3rd-person singular verbs 'nirase' and 'nāse'."
+    "grammarNote": "Consists of two balanced parallel clauses using poetic 3rd-person singular verbs 'nirase' and 'nāse'.",
+    "sourceWords": [
+      {
+        "text": "तम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निरसे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भानु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नासे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अज्ञानता",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-005": {
     "source": "परन्तु गुरु की करे न रवि भी कभी साम्यता",
@@ -367,7 +599,63 @@ window.SONG_LINES = {
         "gloss": "equality / comparison"
       }
     ],
-    "grammarNote": "'Sāmyatā karnā' is a conjunct verb meaning 'to equal / compare to'; genitive postposition 'kī' agrees with feminine 'sāmyatā'."
+    "grammarNote": "'Sāmyatā karnā' is a conjunct verb meaning 'to equal / compare to'; genitive postposition 'kī' agrees with feminine 'sāmyatā'.",
+    "sourceWords": [
+      {
+        "text": "परन्तु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रवि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कभी",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "साम्यता",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-006": {
     "source": "पुनः तिमिर जन्म ले गुरु कृपा से अज्ञान ना",
@@ -412,7 +700,63 @@ window.SONG_LINES = {
         "gloss": "not"
       }
     ],
-    "grammarNote": "Elliptical comparative structure: the second clause omits the verb phrase 'janma le' ('[but] ignorance does not [take birth] through guru's grace')."
+    "grammarNote": "Elliptical comparative structure: the second clause omits the verb phrase 'janma le' ('[but] ignorance does not [take birth] through guru's grace').",
+    "sourceWords": [
+      {
+        "text": "पुनः",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तिमिर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जन्म",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "अज्ञान",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-007": {
     "source": "रवि उदय होते ही रहे ना आलस्य जरा सा",
@@ -457,7 +801,63 @@ window.SONG_LINES = {
         "gloss": "bit of"
       }
     ],
-    "grammarNote": "'Uday hote hī' is an adverbial temporal clause of immediate sequence ('as soon as the sun rises'). 'Jarā sā' qualifies 'ālasya'."
+    "grammarNote": "'Uday hote hī' is an adverbial temporal clause of immediate sequence ('as soon as the sun rises'). 'Jarā sā' qualifies 'ālasya'.",
+    "sourceWords": [
+      {
+        "text": "रवि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "उदय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "होते",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रहे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आलस्य",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जरा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सा",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-008": {
     "source": "यथा गुरु भी हरते है सकल दुष्कृति लालसा",
@@ -498,7 +898,57 @@ window.SONG_LINES = {
         "gloss": "craving"
       }
     ],
-    "grammarNote": "'Duṣkṛti-lālasā' is a compound noun ('craving for misdeeds') serving as direct object of the honorific present verb 'harate hai[ṁ]'."
+    "grammarNote": "'Duṣkṛti-lālasā' is a compound noun ('craving for misdeeds') serving as direct object of the honorific present verb 'harate hai[ṁ]'.",
+    "sourceWords": [
+      {
+        "text": "यथा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हरते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "दुष्कृति",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "लालसा",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-009": {
     "source": "हरण अभिमान हो रहे चरणों में भावना",
@@ -535,7 +985,51 @@ window.SONG_LINES = {
         "gloss": "devotion / sentiment"
       }
     ],
-    "grammarNote": "Two parallel optative clauses: 'abhimān haraṇ ho' (may pride be dispelled) and 'charaṇoṁ meṁ bhāvanā rahe' (may devotion abide at the feet)."
+    "grammarNote": "Two parallel optative clauses: 'abhimān haraṇ ho' (may pride be dispelled) and 'charaṇoṁ meṁ bhāvanā rahe' (may devotion abide at the feet).",
+    "sourceWords": [
+      {
+        "text": "हरण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अभिमान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रहे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चरणों",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भावना",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-010": {
     "source": "गुरु की उपमा बड़ी है विधि हरी हर से भी",
@@ -584,7 +1078,69 @@ window.SONG_LINES = {
         "gloss": "even"
       }
     ],
-    "grammarNote": "Comparative ablative construction ('vidhi harī har se bhī baṛī hai') with the Trimurti deities."
+    "grammarNote": "Comparative ablative construction ('vidhi harī har se bhī baṛī hai') with the Trimurti deities.",
+    "sourceWords": [
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "उपमा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बड़ी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "विधि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हरी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-011": {
     "source": "गाये कैसे इसको शब्द छोटे है सभी",
@@ -621,7 +1177,51 @@ window.SONG_LINES = {
         "gloss": "all"
       }
     ],
-    "grammarNote": "'Gāye' is potential/subjunctive ('how can one sing of it?'). 'Choṭe' is plural adjective agreeing with 'śabd'."
+    "grammarNote": "'Gāye' is potential/subjunctive ('how can one sing of it?'). 'Choṭe' is plural adjective agreeing with 'śabd'.",
+    "sourceWords": [
+      {
+        "text": "गाये",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "इसको",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "शब्द",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "छोटे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सभी",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-012": {
     "source": "तुम्हारी उपमा तुम्हे ही शोभित है सज्जना",
@@ -658,7 +1258,51 @@ window.SONG_LINES = {
         "gloss": "O noble one"
       }
     ],
-    "grammarNote": "Dative experiencer construction ('tumhe... śobhit hai'). 'Sajjanā' is a vocative form addressing the Guru."
+    "grammarNote": "Dative experiencer construction ('tumhe... śobhit hai'). 'Sajjanā' is a vocative form addressing the Guru.",
+    "sourceWords": [
+      {
+        "text": "तुम्हारी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "उपमा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम्हे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "शोभित",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सज्जना",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-013": {
     "source": "समाधि उतारी गुरु अब चले चलो मस्जिद में",
@@ -699,7 +1343,57 @@ window.SONG_LINES = {
         "gloss": "to / into"
       }
     ],
-    "grammarNote": "'Samādhi utārī' is a conjunct/participle idiom ('having emerged from trance'); 'chale chalo' is an intensive imperative."
+    "grammarNote": "'Samādhi utārī' is a conjunct/participle idiom ('having emerged from trance'); 'chale chalo' is an intensive imperative.",
+    "sourceWords": [
+      {
+        "text": "समाधि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "उतारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अब",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चले",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चलो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मस्जिद",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-014": {
     "source": "त्वदीय वचनों से कटे भव बंधन पल में",
@@ -740,7 +1434,57 @@ window.SONG_LINES = {
         "gloss": "in"
       }
     ],
-    "grammarNote": "'Tvadīya' is a Sanskrit possessive adjective modifying oblique plural 'vachanoṁ'. 'Kaṭe' is passive/intransitive present."
+    "grammarNote": "'Tvadīya' is a Sanskrit possessive adjective modifying oblique plural 'vachanoṁ'. 'Kaṭe' is passive/intransitive present.",
+    "sourceWords": [
+      {
+        "text": "त्वदीय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वचनों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कटे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बंधन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-015": {
     "source": "अजात रिपु सद्गुरु अखिल पातक भंजना",
@@ -773,7 +1517,45 @@ window.SONG_LINES = {
         "gloss": "destroyer"
       }
     ],
-    "grammarNote": "Vocative compounds: 'ajāt-ripu' (bahuvrīhi: having no enemy / friend to all) and 'akhil-pātaka-bhañjana' (destroyer of all sins)."
+    "grammarNote": "Vocative compounds: 'ajāt-ripu' (bahuvrīhi: having no enemy / friend to all) and 'akhil-pātaka-bhañjana' (destroyer of all sins).",
+    "sourceWords": [
+      {
+        "text": "अजात",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रिपु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अखिल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पातक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भंजना",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-016": {
     "source": "अहा सुसमय पर ही गुरु जाग्रत हो गए",
@@ -814,7 +1596,57 @@ window.SONG_LINES = {
         "gloss": "have"
       }
     ],
-    "grammarNote": "'Jāgrat ho gaye' is an intransitive compound verb in the honorific perfective aspect."
+    "grammarNote": "'Jāgrat ho gaye' is an intransitive compound verb in the honorific perfective aspect.",
+    "sourceWords": [
+      {
+        "text": "अहा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुसमय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जाग्रत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "गए",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-017": {
     "source": "दृष्टिपात से पदाश्रितों के विघ्न हर लिए",
@@ -851,7 +1683,51 @@ window.SONG_LINES = {
         "gloss": "took / removed"
       }
     ],
-    "grammarNote": "'Har liye' is a transitive compound verb in the perfective aspect, with 'vighna' as direct object."
+    "grammarNote": "'Har liye' is a transitive compound verb in the perfective aspect, with 'vighna' as direct object.",
+    "sourceWords": [
+      {
+        "text": "दृष्टिपात",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पदाश्रितों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विघ्न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "लिए",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-018": {
     "source": "ऐसा सुहितकारी इस जगत में कोई अन्य ना",
@@ -892,7 +1768,57 @@ window.SONG_LINES = {
         "gloss": "none / not"
       }
     ],
-    "grammarNote": "Existential sentence with negative particle 'nā' functioning as predicate and copula omitted."
+    "grammarNote": "Existential sentence with negative particle 'nā' functioning as predicate and copula omitted.",
+    "sourceWords": [
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुहितकारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "इस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जगत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अन्य",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-019": {
     "source": "हो बहुत सयाना पर न हो गुरु की कृपा",
@@ -937,7 +1863,63 @@ window.SONG_LINES = {
         "gloss": "grace"
       }
     ],
-    "grammarNote": "Concessive/conditional subjunctive construction ('ho... par na ho...': 'though one may be clever, if there is no grace...')."
+    "grammarNote": "Concessive/conditional subjunctive construction ('ho... par na ho...': 'though one may be clever, if there is no grace...').",
+    "sourceWords": [
+      {
+        "text": "हो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बहुत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सयाना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कृपा",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-020": {
     "source": "व्यर्थ बड़बड़ करे न जाने हित स्वयं का",
@@ -978,7 +1960,57 @@ window.SONG_LINES = {
         "gloss": "of"
       }
     ],
-    "grammarNote": "Habitual 3rd-person singular verbs 'kare' and 'jāne' describing the person devoid of grace."
+    "grammarNote": "Habitual 3rd-person singular verbs 'kare' and 'jāne' describing the person devoid of grace.",
+    "sourceWords": [
+      {
+        "text": "व्यर्थ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बड़बड़",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जाने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हित",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "स्वयं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-021": {
     "source": "गुरु चरण में रखा करे जो अटल भावना",
@@ -1019,7 +2051,57 @@ window.SONG_LINES = {
         "gloss": "devotion / faith"
       }
     ],
-    "grammarNote": "'Rakhā kare' is a frequentative/habitual aspect compound verb ('whoever continually maintains'). 'Jo' is the relative pronoun."
+    "grammarNote": "'Rakhā kare' is a frequentative/habitual aspect compound verb ('whoever continually maintains'). 'Jo' is the relative pronoun.",
+    "sourceWords": [
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रखा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "अटल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भावना",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-022": {
     "source": "गुरु विनती मैं करू हृदय मंदिर में आ बसो",
@@ -1064,7 +2146,63 @@ window.SONG_LINES = {
         "gloss": "dwell"
       }
     ],
-    "grammarNote": "'Hṛday-mandir' is a metaphor ('temple of the heart'); 'ā baso' is a compound imperative."
+    "grammarNote": "'Hṛday-mandir' is a metaphor ('temple of the heart'); 'ā baso' is a compound imperative.",
+    "sourceWords": [
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "विनती",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मंदिर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "आ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बसो",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-023": {
     "source": "समस्त जग है सद्गुरु स्वरुप यही भाव हो",
@@ -1105,7 +2243,57 @@ window.SONG_LINES = {
         "gloss": "may be"
       }
     ],
-    "grammarNote": "'Ho' is 3rd-person singular optative expressing a devotional aspiration."
+    "grammarNote": "'Ho' is 3rd-person singular optative expressing a devotional aspiration.",
+    "sourceWords": [
+      {
+        "text": "समस्त",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्वरुप",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "यही",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भाव",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-024": {
     "source": "करूँ सतत सत्कृति सुमति दो जगत पावना",
@@ -1142,7 +2330,51 @@ window.SONG_LINES = {
         "gloss": "purifier"
       }
     ],
-    "grammarNote": "'Jagat-pāvanā' is a vocative compound ('O purifier of the world'). 'Do' is a familiar/respectful imperative."
+    "grammarNote": "'Jagat-pāvanā' is a vocative compound ('O purifier of the world'). 'Do' is a familiar/respectful imperative.",
+    "sourceWords": [
+      {
+        "text": "करूँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सतत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सत्कृति",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुमति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जगत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पावना",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-025": {
     "source": "प्रेमपूर्वक अष्टक गाकर गुरु प्रार्थना करे जो प्रभात में",
@@ -1187,7 +2419,63 @@ window.SONG_LINES = {
         "gloss": "in"
       }
     ],
-    "grammarNote": "Conjunctive participle 'gākar' precedes the main relative clause 'jo guru prārthanā kare'."
+    "grammarNote": "Conjunctive participle 'gākar' precedes the main relative clause 'jo guru prārthanā kare'.",
+    "sourceWords": [
+      {
+        "text": "प्रेमपूर्वक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अष्टक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गाकर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुरु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रार्थना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "प्रभात",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-026": {
     "source": "अखिल भ्रांति हर के दिया करता हूँ चित्त को नित्य शांति",
@@ -1240,7 +2528,75 @@ window.SONG_LINES = {
         "gloss": "peace"
       }
     ],
-    "grammarNote": "'Diyā kartā hūṁ' is a habitual compound verb expressing recurring action from the deity/Guru's first-person perspective."
+    "grammarNote": "'Diyā kartā hūṁ' is a habitual compound verb expressing recurring action from the deity/Guru's first-person perspective.",
+    "sourceWords": [
+      {
+        "text": "अखिल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भ्रांति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "करता",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "चित्त",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "नित्य",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "शांति",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-027": {
     "source": "ऐसा श्री साईनाथ ने कहकर बताया जैसा इस बालक से",
@@ -1289,7 +2645,69 @@ window.SONG_LINES = {
         "gloss": "to"
       }
     ],
-    "grammarNote": "Ergative construction with subject 'Śrī Sāīnāth ne' and perfective transitive verb 'kahakar batāyā'."
+    "grammarNote": "Ergative construction with subject 'Śrī Sāīnāth ne' and perfective transitive verb 'kahakar batāyā'.",
+    "sourceWords": [
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कहकर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बताया",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जैसा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "इस",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-028": {
     "source": "वैसे कृष्ण चरण में सविनय अर्पित करता हूँ अष्टक यह",
@@ -1338,7 +2756,69 @@ window.SONG_LINES = {
         "gloss": "this"
       }
     ],
-    "grammarNote": "'Arpit kartā hūṁ' is a 1st-person singular present indicative conjunct verb ('I dedicate')."
+    "grammarNote": "'Arpit kartā hūṁ' is a 1st-person singular present indicative conjunct verb ('I dedicate').",
+    "sourceWords": [
+      {
+        "text": "वैसे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कृष्ण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सविनय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "अर्पित",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "करता",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "अष्टक",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "यह",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-029": {
     "source": "श्री सच्चिदानंद सद्गुरु साईनाथ महाराज की जय",
@@ -1375,7 +2855,51 @@ window.SONG_LINES = {
         "gloss": "victory"
       }
     ],
-    "grammarNote": "Standard formulaic victory exclamation (jaikāra) with genitive postposition 'kī'."
+    "grammarNote": "Standard formulaic victory exclamation (jaikāra) with genitive postposition 'kī'.",
+    "sourceWords": [
+      {
+        "text": "श्री",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सच्चिदानंद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "महाराज",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-030": {
     "source": "साईं रहम नज़र करना",
@@ -1400,7 +2924,33 @@ window.SONG_LINES = {
         "gloss": "to do; here, to look upon with mercy"
       }
     ],
-    "grammarNote": "The Persian loan phrase 'raham nazar' forms a devotional plea: 'look upon me with mercy.'"
+    "grammarNote": "The Persian loan phrase 'raham nazar' forms a devotional plea: 'look upon me with mercy.'",
+    "sourceWords": [
+      {
+        "text": "साईं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रहम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नज़र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करना",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-031": {
     "source": "बच्चों का पालन करना",
@@ -1425,7 +2975,33 @@ window.SONG_LINES = {
         "gloss": "to do / please protect"
       }
     ],
-    "grammarNote": "'Pālan karnā' is an infinitive used as a gentle/respectful imperative with direct object 'bachchoṁ kā'."
+    "grammarNote": "'Pālan karnā' is an infinitive used as a gentle/respectful imperative with direct object 'bachchoṁ kā'.",
+    "sourceWords": [
+      {
+        "text": "बच्चों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पालन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करना",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-032": {
     "source": "जाना तुमने जगत पसारा सब ही झूठ ज़माना",
@@ -1466,7 +3042,57 @@ window.SONG_LINES = {
         "gloss": "world / times"
       }
     ],
-    "grammarNote": "Inverted ergative word order ('jānā tumne') highlighting the Guru's realization that the world's expanse is false."
+    "grammarNote": "Inverted ergative word order ('jānā tumne') highlighting the Guru's realization that the world's expanse is false.",
+    "sourceWords": [
+      {
+        "text": "जाना",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुमने",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जगत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पसारा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "झूठ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ज़माना",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-033": {
     "source": "मैं अंधा हूँ बंदा आपका मुझसे प्रभु दिखलाना",
@@ -1507,7 +3133,57 @@ window.SONG_LINES = {
         "gloss": "please show"
       }
     ],
-    "grammarNote": "'Mujhase' is dialectal/colloquial for indirect object 'mujhe' with the causative imperative 'dikhalānā'."
+    "grammarNote": "'Mujhase' is dialectal/colloquial for indirect object 'mujhe' with the causative imperative 'dikhalānā'.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अंधा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बंदा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आपका",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मुझसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रभु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दिखलाना",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-034": {
     "source": "दास गनू कहे अब क्या बोलूँ थक गई मेरी रसना",
@@ -1556,7 +3232,69 @@ window.SONG_LINES = {
         "gloss": "tongue"
       }
     ],
-    "grammarNote": "Poet's signature line. Feminine subject 'rasanā' agrees with compound verb 'thak gaī'. 'Bolūṁ' is 1st-person singular subjunctive."
+    "grammarNote": "Poet's signature line. Feminine subject 'rasanā' agrees with compound verb 'thak gaī'. 'Bolūṁ' is 1st-person singular subjunctive.",
+    "sourceWords": [
+      {
+        "text": "दास",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गनू",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कहे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अब",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बोलूँ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "थक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "गई",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "मेरी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "रसना",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-035": {
     "source": "रहम नज़र करो अब मोरे साईं",
@@ -1589,7 +3327,45 @@ window.SONG_LINES = {
         "gloss": "O Sai"
       }
     ],
-    "grammarNote": "'Karo' is an honorific imperative; 'raham nazar karo' asks the addressee to look upon the speaker with mercy. 'More' is dialectal possessive."
+    "grammarNote": "'Karo' is an honorific imperative; 'raham nazar karo' asks the addressee to look upon the speaker with mercy. 'More' is dialectal possessive.",
+    "sourceWords": [
+      {
+        "text": "रहम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नज़र",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अब",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मोरे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-036": {
     "source": "तुम बिन नहीं मुझे माँ बाप भाई",
@@ -1626,7 +3402,51 @@ window.SONG_LINES = {
         "gloss": "brother"
       }
     ],
-    "grammarNote": "Dative possessive construction ('mujhe... nahī̃ [hai]') with postpositional phrase 'tuma bina'."
+    "grammarNote": "Dative possessive construction ('mujhe... nahī̃ [hai]') with postpositional phrase 'tuma bina'.",
+    "sourceWords": [
+      {
+        "text": "तुम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नहीं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मुझे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "माँ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बाप",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भाई",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-037": {
     "source": "रहम नज़र करो",
@@ -1647,7 +3467,27 @@ window.SONG_LINES = {
         "gloss": "do; here, look upon me with mercy"
       }
     ],
-    "grammarNote": "Honorific imperative devotional phrase: 'look upon me with mercy.'"
+    "grammarNote": "Honorific imperative devotional phrase: 'look upon me with mercy.'",
+    "sourceWords": [
+      {
+        "text": "रहम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नज़र",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करो",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-038": {
     "source": "मैं अंधा हूँ बन्दा तुम्हारा",
@@ -1676,7 +3516,39 @@ window.SONG_LINES = {
         "gloss": "your"
       }
     ],
-    "grammarNote": "1st-person singular copular sentence with predicate nominals 'andhā' and 'bandā tumhārā'."
+    "grammarNote": "1st-person singular copular sentence with predicate nominals 'andhā' and 'bandā tumhārā'.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अंधा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बन्दा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुम्हारा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-039": {
     "source": "मैं ना जानूँ मैं ना जानूँ मैं ना जानूँ अल्ला इलाही",
@@ -1729,7 +3601,75 @@ window.SONG_LINES = {
         "gloss": "the Divine / divine secrets"
       }
     ],
-    "grammarNote": "Triple emphatic repetition of 'maĩ nā jānū̃' with the direct object phrase 'Allā Ilāhī' (referring to esoteric theological knowledge)."
+    "grammarNote": "Triple emphatic repetition of 'maĩ nā jānū̃' with the direct object phrase 'Allā Ilāhī' (referring to esoteric theological knowledge).",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जानूँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जानूँ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जानूँ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "अल्ला",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "इलाही",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-040": {
     "source": "खाली जमाना मैंने गवाया",
@@ -1754,7 +3694,33 @@ window.SONG_LINES = {
         "gloss": "wasted / lost"
       }
     ],
-    "grammarNote": "Transitive perfective construction with ergative pronoun maĩne and masculine direct object jamānā."
+    "grammarNote": "Transitive perfective construction with ergative pronoun maĩne and masculine direct object jamānā.",
+    "sourceWords": [
+      {
+        "text": "खाली",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जमाना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मैंने",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गवाया",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-041": {
     "source": "साथी आखिर का साथी आखिर का साथी आखिर का किया न कोई",
@@ -1811,7 +3777,81 @@ window.SONG_LINES = {
         "gloss": "anyone"
       }
     ],
-    "grammarNote": "Repetition of the genitive noun phrase sāthī ākhira kā (companion of the end / lifelong refuge) before the negative predicate kiyā na koī (did not make anyone)."
+    "grammarNote": "Repetition of the genitive noun phrase sāthī ākhira kā (companion of the end / lifelong refuge) before the negative predicate kiyā na koī (did not make anyone).",
+    "sourceWords": [
+      {
+        "text": "साथी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आखिर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साथी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आखिर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "साथी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "आखिर",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "किया",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          11
+        ]
+      }
+    ]
   },
   "line-042": {
     "source": "अपने मशिद का झाड़ू गणू है",
@@ -1844,7 +3884,45 @@ window.SONG_LINES = {
         "gloss": "is"
       }
     ],
-    "grammarNote": "Author signature (bhaṇitā). Apane acts as an affectionate possessive modifier; jhāṛū metaphorically means the humble sweeper."
+    "grammarNote": "Author signature (bhaṇitā). Apane acts as an affectionate possessive modifier; jhāṛū metaphorically means the humble sweeper.",
+    "sourceWords": [
+      {
+        "text": "अपने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मशिद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "झाड़ू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गणू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-043": {
     "source": "मालिक हमारे मालिक हमारे मालिक हमारे तुम बाबा साईं",
@@ -1889,7 +3967,63 @@ window.SONG_LINES = {
         "gloss": "holy master"
       }
     ],
-    "grammarNote": "Triple repetition of predicate mālika hamāre followed by the subject in direct address tuma Bābā Sāī̃."
+    "grammarNote": "Triple repetition of predicate mālika hamāre followed by the subject in direct address tuma Bābā Sāī̃.",
+    "sourceWords": [
+      {
+        "text": "मालिक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हमारे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मालिक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हमारे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मालिक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हमारे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-044": {
     "source": "तुझे क्या दूँ सांवरे नैवेद्य हो",
@@ -1922,7 +4056,45 @@ window.SONG_LINES = {
         "gloss": "O"
       }
     ],
-    "grammarNote": "First-person subjunctive dū̃ expressing humble inquiry; sā̃vare is a vocative epithet for the deity."
+    "grammarNote": "First-person subjunctive dū̃ expressing humble inquiry; sā̃vare is a vocative epithet for the deity.",
+    "sourceWords": [
+      {
+        "text": "तुझे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दूँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सांवरे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नैवेद्य",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-045": {
     "source": "तुझे क्या दूँ सद्गुरु नैवेद्य हो",
@@ -1955,7 +4127,45 @@ window.SONG_LINES = {
         "gloss": "O"
       }
     ],
-    "grammarNote": "Parallel structure to line-044 substituting the vocative sadguru."
+    "grammarNote": "Parallel structure to line-044 substituting the vocative sadguru.",
+    "sourceWords": [
+      {
+        "text": "तुझे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "क्या",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दूँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नैवेद्य",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-046": {
     "source": "मैं दासी दुबली नामा की जान श्रीहरी",
@@ -1992,7 +4202,51 @@ window.SONG_LINES = {
         "gloss": "O Sri Hari"
       }
     ],
-    "grammarNote": "Devotional allusion to Saint Janabai (Nāmācī Jānī); dāsī dubalī are predicate adjectives qualifying maĩ."
+    "grammarNote": "Devotional allusion to Saint Janabai (Nāmācī Jānī); dāsī dubalī are predicate adjectives qualifying maĩ.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दासी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दुबली",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नामा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जान",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "श्रीहरी",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-047": {
     "source": "उच्छिष्ट तुझे देना जरा ना ठीक हो",
@@ -2029,7 +4283,51 @@ window.SONG_LINES = {
         "gloss": "is / particle"
       }
     ],
-    "grammarNote": "Infinitive denā acts as the clausal subject; jarā nā ṭhīka functions as the negated predicate adjective."
+    "grammarNote": "Infinitive denā acts as the clausal subject; jarā nā ṭhīka functions as the negated predicate adjective.",
+    "sourceWords": [
+      {
+        "text": "उच्छिष्ट",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुझे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "देना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जरा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ठीक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-048": {
     "source": "तू जगन्नाथ दूँ कैसे टिकड़ तुझको",
@@ -2062,7 +4360,45 @@ window.SONG_LINES = {
         "gloss": "to you"
       }
     ],
-    "grammarNote": "Contrastive juxtaposition: Tū Jagannātha (copula omitted) with the rhetorical question dū̃ kaise ṭikkaṛa tujhako."
+    "grammarNote": "Contrastive juxtaposition: Tū Jagannātha (copula omitted) with the rhetorical question dū̃ kaise ṭikkaṛa tujhako.",
+    "sourceWords": [
+      {
+        "text": "तू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जगन्नाथ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दूँ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "टिकड़",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तुझको",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-049": {
     "source": "अब अंत न देखो मेरा सखा भगवंता श्रीकांता",
@@ -2103,7 +4439,57 @@ window.SONG_LINES = {
         "gloss": "O Beloved of Sri (Vishnu)"
       }
     ],
-    "grammarNote": "Idiomatic negative imperative anta na dekho (do not test my patience/limits) followed by multiple vocatives."
+    "grammarNote": "Idiomatic negative imperative anta na dekho (do not test my patience/limits) followed by multiple vocatives.",
+    "sourceWords": [
+      {
+        "text": "अब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अंत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "देखो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मेरा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सखा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भगवंता",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "श्रीकांता",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-050": {
     "source": "मध्याह्न रात्र गुजर रही है दाता सोचो नाथा",
@@ -2144,7 +4530,57 @@ window.SONG_LINES = {
         "gloss": "O lord"
       }
     ],
-    "grammarNote": "Madhyāhna rātra poetically denotes midnight. Continuous aspect gujara rahī hai; soco is an imperative."
+    "grammarNote": "Madhyāhna rātra poetically denotes midnight. Continuous aspect gujara rahī hai; soco is an imperative.",
+    "sourceWords": [
+      {
+        "text": "मध्याह्न",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रात्र",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गुजर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दाता",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सोचो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "नाथा",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-051": {
     "source": "होवेगा काकड़ा मंदिर में हो",
@@ -2173,7 +4609,39 @@ window.SONG_LINES = {
         "gloss": "O / particle"
       }
     ],
-    "grammarNote": "Future tense masculine singular verb hovegā agreeing with the subject kākaṛā."
+    "grammarNote": "Future tense masculine singular verb hovegā agreeing with the subject kākaṛā.",
+    "sourceWords": [
+      {
+        "text": "होवेगा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "काकड़ा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मंदिर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-052": {
     "source": "लायेंगे भक्त नैवेद्य भी नाना परि हो",
@@ -2210,7 +4678,51 @@ window.SONG_LINES = {
         "gloss": "O"
       }
     ],
-    "grammarNote": "Future 3rd person plural lāyeñge agreeing with bhakta; nānā parī is an adverbial/adjectival phrase meaning 'in manifold ways/varieties'."
+    "grammarNote": "Future 3rd person plural lāyeñge agreeing with bhakta; nānā parī is an adverbial/adjectival phrase meaning 'in manifold ways/varieties'.",
+    "sourceWords": [
+      {
+        "text": "लायेंगे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भक्त",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नैवेद्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नाना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "परि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-053": {
     "source": "श्री सद्गुरु बाबा साईं हो श्री सद्गुरु बाबा साईं",
@@ -2255,7 +4767,63 @@ window.SONG_LINES = {
         "gloss": "holy master"
       }
     ],
-    "grammarNote": "Choral vocative invocation repeated for devotional emphasis."
+    "grammarNote": "Choral vocative invocation repeated for devotional emphasis.",
+    "sourceWords": [
+      {
+        "text": "श्री",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-054": {
     "source": "तुम बिना न आश्रय कोई भूस्थली",
@@ -2288,7 +4856,45 @@ window.SONG_LINES = {
         "gloss": "on this earthly plane"
       }
     ],
-    "grammarNote": "Negative existential statement with implicit copula; postpositional phrase tuma binā and locative noun bhūsthalī."
+    "grammarNote": "Negative existential statement with implicit copula; postpositional phrase tuma binā and locative noun bhūsthalī.",
+    "sourceWords": [
+      {
+        "text": "तुम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बिना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आश्रय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भूस्थली",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-055": {
     "source": "मैं पापी पतित मतिमंद हो",
@@ -2317,7 +4923,39 @@ window.SONG_LINES = {
         "gloss": "O"
       }
     ],
-    "grammarNote": "First-person pronoun maĩ described by a series of three appositional/predicate adjectives."
+    "grammarNote": "First-person pronoun maĩ described by a series of three appositional/predicate adjectives.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पापी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पतित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मतिमंद",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-056": {
     "source": "मैं पापी पतित मतिमंद",
@@ -2342,7 +4980,33 @@ window.SONG_LINES = {
         "gloss": "dull-witted / ignorant"
       }
     ],
-    "grammarNote": "Repetition of line-055 without the interjection ho."
+    "grammarNote": "Repetition of line-055 without the interjection ho.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पापी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पतित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मतिमंद",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-057": {
     "source": "तारो हे मुझे गुरुनाथा तुरंत ही",
@@ -2375,7 +5039,45 @@ window.SONG_LINES = {
         "gloss": "indeed"
       }
     ],
-    "grammarNote": "Imperative tāro with accusative object mujhe, direct vocative Gurunāthā, and emphatic adverb turanta hī."
+    "grammarNote": "Imperative tāro with accusative object mujhe, direct vocative Gurunāthā, and emphatic adverb turanta hī.",
+    "sourceWords": [
+      {
+        "text": "तारो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुझे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुरुनाथा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुरंत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-058": {
     "source": "तारो हे मुझे साईंनाथा तुरंत ही",
@@ -2408,7 +5110,45 @@ window.SONG_LINES = {
         "gloss": "indeed"
       }
     ],
-    "grammarNote": "Imperative tāro repeated with the vocative Sāī̃nāthā."
+    "grammarNote": "Imperative tāro repeated with the vocative Sāī̃nāthā.",
+    "sourceWords": [
+      {
+        "text": "तारो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मुझे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईंनाथा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुरंत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-059": {
     "source": "तू शांतिक्षमा का मेरु हो",
@@ -2441,7 +5181,40 @@ window.SONG_LINES = {
         "gloss": "O / are"
       }
     ],
-    "grammarNote": "Compound śānti-kṣamā modified by genitive kā; meru serves as a metaphor for an unshakeable mountain/pinnacle."
+    "grammarNote": "Compound śānti-kṣamā modified by genitive kā; meru serves as a metaphor for an unshakeable mountain/pinnacle.",
+    "sourceWords": [
+      {
+        "text": "तू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "शांतिक्षमा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मेरु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-060": {
     "source": "तू शांतिक्षमा का मेरु",
@@ -2470,7 +5243,34 @@ window.SONG_LINES = {
         "gloss": "Mount Meru / pinnacle"
       }
     ],
-    "grammarNote": "Repetition of line-059 without the terminal particle ho."
+    "grammarNote": "Repetition of line-059 without the terminal particle ho.",
+    "sourceWords": [
+      {
+        "text": "तू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "शांतिक्षमा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मेरु",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-061": {
     "source": "तू ही भवार्णव का तारू गुरुवरा",
@@ -2503,7 +5303,45 @@ window.SONG_LINES = {
         "gloss": "O supreme Guru"
       }
     ],
-    "grammarNote": "Bhavārṇava is a Sanskrit tatpuruṣa compound (bhava + arṇava). Tārū is the agentive noun/ferryman."
+    "grammarNote": "Bhavārṇava is a Sanskrit tatpuruṣa compound (bhava + arṇava). Tārū is the agentive noun/ferryman.",
+    "sourceWords": [
+      {
+        "text": "तू",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भवार्णव",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तारू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गुरुवरा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-062": {
     "source": "गुरुवर मुझसा पामर अब उद्धार करो तत्काल करो तत्काल",
@@ -2548,7 +5386,63 @@ window.SONG_LINES = {
         "gloss": "instantly"
       }
     ],
-    "grammarNote": "Mujhasā pāmara represents the object of deliverance; uddhāra karo is a conjunct verb repeated with adverb tatkāla."
+    "grammarNote": "Mujhasā pāmara represents the object of deliverance; uddhāra karo is a conjunct verb repeated with adverb tatkāla.",
+    "sourceWords": [
+      {
+        "text": "गुरुवर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मुझसा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पामर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अब",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उद्धार",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "करो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तत्काल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "करो",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "तत्काल",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-063": {
     "source": "मैं डूबूँ भवसागर माहीं उद्धरो",
@@ -2577,7 +5471,39 @@ window.SONG_LINES = {
         "gloss": "rescue / deliver"
       }
     ],
-    "grammarNote": "First-person present/subjunctive ḍūbū̃ followed by Braj/archaic postposition māhī̃; uddharo is an imperative."
+    "grammarNote": "First-person present/subjunctive ḍūbū̃ followed by Braj/archaic postposition māhī̃; uddharo is an imperative.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "डूबूँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भवसागर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "माहीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उद्धरो",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-064": {
     "source": "लेकर पंचारती",
@@ -2594,7 +5520,21 @@ window.SONG_LINES = {
         "gloss": "five-wick lamp offering"
       }
     ],
-    "grammarNote": "Conjunctive participle (absolutive) lekara governing direct object pañcāratī."
+    "grammarNote": "Conjunctive participle (absolutive) lekara governing direct object pañcāratī.",
+    "sourceWords": [
+      {
+        "text": "लेकर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पंचारती",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-065": {
     "source": "करूँ बाबा की आरती",
@@ -2619,7 +5559,33 @@ window.SONG_LINES = {
         "gloss": "aarti (lamp offering worship)"
       }
     ],
-    "grammarNote": "First-person singular optative/subjunctive karū̃ with genitive phrase Bābā kī āratī as the object."
+    "grammarNote": "First-person singular optative/subjunctive karū̃ with genitive phrase Bābā kī āratī as the object.",
+    "sourceWords": [
+      {
+        "text": "करूँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-066": {
     "source": "करूँ साईं की आरती",
@@ -2644,7 +5610,33 @@ window.SONG_LINES = {
         "gloss": "aarti"
       }
     ],
-    "grammarNote": "Parallel to line-065 substituting Sāī̃ for Bābā."
+    "grammarNote": "Parallel to line-065 substituting Sāī̃ for Bābā.",
+    "sourceWords": [
+      {
+        "text": "करूँ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-067": {
     "source": "उठो उठो हे बांधव मनाओ ये रमाधव",
@@ -2681,7 +5673,51 @@ window.SONG_LINES = {
         "gloss": "Lord of Lakshmi (Vishnu)"
       }
     ],
-    "grammarNote": "Plural imperatives uṭhō and manāō addressed to the vocative bāndhava."
+    "grammarNote": "Plural imperatives uṭhō and manāō addressed to the vocative bāndhava.",
+    "sourceWords": [
+      {
+        "text": "उठो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "उठो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बांधव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मनाओ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रमाधव",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-068": {
     "source": "साईं रमाधव मनाओ ये रमाधव",
@@ -2710,7 +5746,39 @@ window.SONG_LINES = {
         "gloss": "Lord Viṣṇu"
       }
     ],
-    "grammarNote": "Epithet apposition identifying Sai with Ramadhava, with transitive imperative manāō."
+    "grammarNote": "Epithet apposition identifying Sai with Ramadhava, with transitive imperative manāō.",
+    "sourceWords": [
+      {
+        "text": "साईं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रमाधव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मनाओ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रमाधव",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-069": {
     "source": "कर लेना स्थिर मन देखो गंभीर ये ध्यान",
@@ -2751,7 +5819,57 @@ window.SONG_LINES = {
         "gloss": "meditation / meditative form"
       }
     ],
-    "grammarNote": "Two imperative clauses: kara lēnā sthira mana (make the mind steady) and dēkhō gambhīra yē dhyāna (behold this profound meditation)."
+    "grammarNote": "Two imperative clauses: kara lēnā sthira mana (make the mind steady) and dēkhō gambhīra yē dhyāna (behold this profound meditation).",
+    "sourceWords": [
+      {
+        "text": "कर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लेना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "स्थिर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "देखो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गंभीर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ध्यान",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-070": {
     "source": "साईं का ये ध्यान देखो गंभीर ये ध्यान",
@@ -2792,7 +5910,57 @@ window.SONG_LINES = {
         "gloss": "meditation / form"
       }
     ],
-    "grammarNote": "Genitive phrase Sāī̃ kā yē dhyāna acting as object of the imperative dēkhō."
+    "grammarNote": "Genitive phrase Sāī̃ kā yē dhyāna acting as object of the imperative dēkhō.",
+    "sourceWords": [
+      {
+        "text": "साईं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ध्यान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "देखो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गंभीर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ध्यान",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-071": {
     "source": "कृष्ण नाथा दत्त साईं पदों में चित्त जड़े साईं",
@@ -2837,7 +6005,63 @@ window.SONG_LINES = {
         "gloss": "holy master"
       }
     ],
-    "grammarNote": "Syncretic series of divine names; jaṛē expresses fixing/insetting the mind (citta) like a jewel at the holy feet (padō̃ mē̃)."
+    "grammarNote": "Syncretic series of divine names; jaṛē expresses fixing/insetting the mind (citta) like a jewel at the holy feet (padō̃ mē̃).",
+    "sourceWords": [
+      {
+        "text": "कृष्ण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नाथा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दत्त",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पदों",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "चित्त",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जड़े",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-072": {
     "source": "चित्त बाबा साईं पदों में चित्त जड़े साईं",
@@ -2878,7 +6102,57 @@ window.SONG_LINES = {
         "gloss": "holy master"
       }
     ],
-    "grammarNote": "Repetitive refrain emphasizing the fixation of consciousness at Baba Sai's feet."
+    "grammarNote": "Repetitive refrain emphasizing the fixation of consciousness at Baba Sai's feet.",
+    "sourceWords": [
+      {
+        "text": "चित्त",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पदों",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चित्त",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जड़े",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-073": {
     "source": "आरती साईं बाबा जीवा सुखकारी देवा",
@@ -2911,7 +6185,45 @@ window.SONG_LINES = {
         "gloss": "O Lord / God"
       }
     ],
-    "grammarNote": "Adapted from Marathi dative jīvā (to the soul); sukhakārī qualifies dēvā / āratī."
+    "grammarNote": "Adapted from Marathi dative jīvā (to the soul); sukhakārī qualifies dēvā / āratī.",
+    "sourceWords": [
+      {
+        "text": "आरती",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जीवा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुखकारी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "देवा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-074": {
     "source": "चरण धूली में दे दो विश्राम जीवा",
@@ -2948,7 +6260,51 @@ window.SONG_LINES = {
         "gloss": "to the soul"
       }
     ],
-    "grammarNote": "Compound imperative dē dō governing direct object viśrāma with indirect/dative recipient jīvā and locative caraṇa dhūlī mē̃."
+    "grammarNote": "Compound imperative dē dō governing direct object viśrāma with indirect/dative recipient jīvā and locative caraṇa dhūlī mē̃.",
+    "sourceWords": [
+      {
+        "text": "चरण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "धूली",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "विश्राम",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जीवा",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-075": {
     "source": "विश्राम जीवा आरती साईं बाबा",
@@ -2977,7 +6333,39 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Choral link connecting the prayer for spiritual repose (viśrāma jīvā) with the main refrain."
+    "grammarNote": "Choral link connecting the prayer for spiritual repose (viśrāma jīvā) with the main refrain.",
+    "sourceWords": [
+      {
+        "text": "विश्राम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जीवा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-076": {
     "source": "जला दिया अनंग स्वस्वरूप में है रंग",
@@ -3014,7 +6402,51 @@ window.SONG_LINES = {
         "gloss": "delight / absorption / color"
       }
     ],
-    "grammarNote": "Two clauses: jalā diyā anaṅga (destroyed desire/Kama) and svasvarūpa mē̃ hai raṅga (immersed in one's true nature)."
+    "grammarNote": "Two clauses: jalā diyā anaṅga (destroyed desire/Kama) and svasvarūpa mē̃ hai raṅga (immersed in one's true nature).",
+    "sourceWords": [
+      {
+        "text": "जला",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अनंग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्वस्वरूप",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रंग",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-077": {
     "source": "मोक्ष मार्गी को दिखाते राह दृष्टि से श्रीरंग",
@@ -3055,7 +6487,57 @@ window.SONG_LINES = {
         "gloss": "Shriranga (Lord Vishnu)"
       }
     ],
-    "grammarNote": "Mōkṣa mārgī kō is the indirect object, rāha the direct object, dṛṣṭi sē the instrumental modifier, and Śrīraṅga the subject."
+    "grammarNote": "Mōkṣa mārgī kō is the indirect object, rāha the direct object, dṛṣṭi sē the instrumental modifier, and Śrīraṅga the subject.",
+    "sourceWords": [
+      {
+        "text": "मोक्ष",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मार्गी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दिखाते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राह",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दृष्टि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "श्रीरंग",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-078": {
     "source": "दृष्टि से श्रीरंग आरती साईं बाबा",
@@ -3088,7 +6570,45 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Reprise of the hemistich tag dṛṣṭi sē Śrīraṅga merging into the choral refrain."
+    "grammarNote": "Reprise of the hemistich tag dṛṣṭi sē Śrīraṅga merging into the choral refrain.",
+    "sourceWords": [
+      {
+        "text": "दृष्टि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "श्रीरंग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-079": {
     "source": "जिसके मन में जैसा भाव उसे वैसा अनुभव",
@@ -3129,7 +6649,57 @@ window.SONG_LINES = {
         "gloss": "experience / spiritual realization"
       }
     ],
-    "grammarNote": "Correlative aphoristic syntax: jaisā bhāva (such disposition) correlates with vaisā anubhava (such experience)."
+    "grammarNote": "Correlative aphoristic syntax: jaisā bhāva (such disposition) correlates with vaisā anubhava (such experience).",
+    "sourceWords": [
+      {
+        "text": "जिसके",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जैसा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भाव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "उसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "वैसा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "अनुभव",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-080": {
     "source": "दिखलाते दयाघन ऐसी महिमा है देव",
@@ -3162,7 +6732,45 @@ window.SONG_LINES = {
         "gloss": "O Lord / God"
       }
     ],
-    "grammarNote": "Habitual/present participle 'dikhalātē' governing 'dayāghana' as an epithet subject; 'dēva' functions as a vocative."
+    "grammarNote": "Habitual/present participle 'dikhalātē' governing 'dayāghana' as an epithet subject; 'dēva' functions as a vocative.",
+    "sourceWords": [
+      {
+        "text": "दिखलाते",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दयाघन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ऐसी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "महिमा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-081": {
     "source": "महिमा है देव आरती साईं बाबा",
@@ -3195,7 +6803,45 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Repetition of the cadence transitioning into the nominal refrain offering the aarti to Sai Baba."
+    "grammarNote": "Repetition of the cadence transitioning into the nominal refrain offering the aarti to Sai Baba.",
+    "sourceWords": [
+      {
+        "text": "महिमा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-082": {
     "source": "नाम तुम्हारा जो ध्याता हरते संसृति व्यथा",
@@ -3232,7 +6878,51 @@ window.SONG_LINES = {
         "gloss": "affliction / sorrow / pain"
       }
     ],
-    "grammarNote": "Relative clause 'jō dhyātā' with an implicit correlative; 'haratē' is habitual present with Sai Baba as the implicit subject."
+    "grammarNote": "Relative clause 'jō dhyātā' with an implicit correlative; 'haratē' is habitual present with Sai Baba as the implicit subject.",
+    "sourceWords": [
+      {
+        "text": "नाम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम्हारा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ध्याता",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हरते",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "संसृति",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "व्यथा",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-083": {
     "source": "अगाध तेरी करणी मार्ग दिखाते अनाथा",
@@ -3265,7 +6955,45 @@ window.SONG_LINES = {
         "gloss": "to the shelterless / destitute"
       }
     ],
-    "grammarNote": "'Agādha tērī karaṇī' is a copula-less nominal clause; 'anāthā' functions as a dative direct/indirect object."
+    "grammarNote": "'Agādha tērī karaṇī' is a copula-less nominal clause; 'anāthā' functions as a dative direct/indirect object.",
+    "sourceWords": [
+      {
+        "text": "अगाध",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तेरी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करणी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मार्ग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिखाते",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "अनाथा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-084": {
     "source": "दिखाते अनाथा आरती साईं बाबा",
@@ -3294,7 +7022,39 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Hemistich echo linking the act of guidance directly to the choral refrain."
+    "grammarNote": "Hemistich echo linking the act of guidance directly to the choral refrain.",
+    "sourceWords": [
+      {
+        "text": "दिखाते",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अनाथा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-085": {
     "source": "कलियुगीन अवतार सगुण परब्रह्म साचार",
@@ -3323,7 +7083,39 @@ window.SONG_LINES = {
         "gloss": "tangible / truly embodied"
       }
     ],
-    "grammarNote": "Series of appositional noun phrases identifying Baba as the manifest Brahman in the Kaliyuga."
+    "grammarNote": "Series of appositional noun phrases identifying Baba as the manifest Brahman in the Kaliyuga.",
+    "sourceWords": [
+      {
+        "text": "कलियुगीन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अवतार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सगुण",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "परब्रह्म",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साचार",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-086": {
     "source": "अवतीर्ण हुए हैं स्वामी दत्त दिगंबर",
@@ -3356,7 +7148,45 @@ window.SONG_LINES = {
         "gloss": "sky-clad / Digambara"
       }
     ],
-    "grammarNote": "Periphrastic perfect 'avatīrṇa huē haĩ' with 'svāmī Datta Digambara' as subject."
+    "grammarNote": "Periphrastic perfect 'avatīrṇa huē haĩ' with 'svāmī Datta Digambara' as subject.",
+    "sourceWords": [
+      {
+        "text": "अवतीर्ण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हुए",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्वामी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दत्त",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दिगंबर",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-087": {
     "source": "दत्त दिगंबर आरती साईं बाबा",
@@ -3385,7 +7215,39 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Refrain cadence pairing Lord Datta's title directly with Sai Baba."
+    "grammarNote": "Refrain cadence pairing Lord Datta's title directly with Sai Baba.",
+    "sourceWords": [
+      {
+        "text": "दत्त",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिगंबर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-088": {
     "source": "अष्ट दिन गुरुवार भक्त आते तेरे द्वार",
@@ -3422,7 +7284,51 @@ window.SONG_LINES = {
         "gloss": "door / doorstep"
       }
     ],
-    "grammarNote": "'Aṣṭa dina guruvāra' indicates the recurring weekly Thursday; 'bhakta ātē' is habitual present plural."
+    "grammarNote": "'Aṣṭa dina guruvāra' indicates the recurring weekly Thursday; 'bhakta ātē' is habitual present plural.",
+    "sourceWords": [
+      {
+        "text": "अष्ट",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गुरुवार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्त",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आते",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तेरे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "द्वार",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-089": {
     "source": "प्रभु पद दर्शन को भव भय निवारणार्थ",
@@ -3459,7 +7365,51 @@ window.SONG_LINES = {
         "gloss": "for the purpose of dispelling"
       }
     ],
-    "grammarNote": "Purposive Sanskrit compound 'nivāraṇa-artha' governing the tatpuruṣa compound 'bhava-bhaya'; 'darśana kō' indicates purpose."
+    "grammarNote": "Purposive Sanskrit compound 'nivāraṇa-artha' governing the tatpuruṣa compound 'bhava-bhaya'; 'darśana kō' indicates purpose.",
+    "sourceWords": [
+      {
+        "text": "प्रभु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पद",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दर्शन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "निवारणार्थ",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-090": {
     "source": "भय निवारणार्थ आरती साईं बाबा",
@@ -3488,7 +7438,39 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Coda echo connecting the purposive phrase back to the main refrain."
+    "grammarNote": "Coda echo connecting the purposive phrase back to the main refrain.",
+    "sourceWords": [
+      {
+        "text": "भय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निवारणार्थ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-091": {
     "source": "मेरा निज द्रव्य कोष तव चरण रज सेवा",
@@ -3529,7 +7511,57 @@ window.SONG_LINES = {
         "gloss": "service"
       }
     ],
-    "grammarNote": "Equational nominal predicate equating the devotee's personal wealth treasury ('dravya kōṣa') with serving the dust of Baba's feet."
+    "grammarNote": "Equational nominal predicate equating the devotee's personal wealth treasury ('dravya kōṣa') with serving the dust of Baba's feet.",
+    "sourceWords": [
+      {
+        "text": "मेरा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "द्रव्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कोष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रज",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सेवा",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-092": {
     "source": "मांगता हूँ अभय ही तुमसे देवाधिदेवा",
@@ -3562,7 +7594,45 @@ window.SONG_LINES = {
         "gloss": "O God of gods"
       }
     ],
-    "grammarNote": "First-person singular present indicative 'māṅgatā hū̃' with the emphatic particle 'hī' and vocative 'dēvādhidēvā'."
+    "grammarNote": "First-person singular present indicative 'māṅgatā hū̃' with the emphatic particle 'hī' and vocative 'dēvādhidēvā'.",
+    "sourceWords": [
+      {
+        "text": "मांगता",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अभय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुमसे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "देवाधिदेवा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-093": {
     "source": "देवाधिदेवा आरती साईं बाबा",
@@ -3587,7 +7657,33 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Repeated vocative phrase leading into the refrain."
+    "grammarNote": "Repeated vocative phrase leading into the refrain.",
+    "sourceWords": [
+      {
+        "text": "देवाधिदेवा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-094": {
     "source": "इच्छित दीन चातक निर्मल तोय निज सुख",
@@ -3624,7 +7720,51 @@ window.SONG_LINES = {
         "gloss": "bliss / joy"
       }
     ],
-    "grammarNote": "Classical poetic trope: the devotee identifies as the 'cātaka' bird whose sole sustenance and joy is pure rain."
+    "grammarNote": "Classical poetic trope: the devotee identifies as the 'cātaka' bird whose sole sustenance and joy is pure rain.",
+    "sourceWords": [
+      {
+        "text": "इच्छित",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दीन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चातक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "निर्मल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तोय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सुख",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-095": {
     "source": "पिला देवे माधव को रखे वचनों की लाज",
@@ -3665,7 +7805,57 @@ window.SONG_LINES = {
         "gloss": "honor / pledge"
       }
     ],
-    "grammarNote": "Causative optative compound 'pilā dēvē' governing indirect object 'Mādhava kō'; 'rakhē vacanō̃ kī lāja' is an idiom for honoring one's word."
+    "grammarNote": "Causative optative compound 'pilā dēvē' governing indirect object 'Mādhava kō'; 'rakhē vacanō̃ kī lāja' is an idiom for honoring one's word.",
+    "sourceWords": [
+      {
+        "text": "पिला",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देवे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "माधव",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रखे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वचनों",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "लाज",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-096": {
     "source": "वचनों की लाज आरती साईं बाबा",
@@ -3698,7 +7888,45 @@ window.SONG_LINES = {
         "gloss": "father; revered master"
       }
     ],
-    "grammarNote": "Repeated phrase leading back into the standard aarti refrain."
+    "grammarNote": "Repeated phrase leading back into the standard aarti refrain.",
+    "sourceWords": [
+      {
+        "text": "वचनों",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लाज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आरती",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-097": {
     "source": "जीवा सुखकारी देवा",
@@ -3719,7 +7947,27 @@ window.SONG_LINES = {
         "gloss": "O Lord / God"
       }
     ],
-    "grammarNote": "Marathi-influenced dative 'jīvā' (for the soul) combined with the agentive compound adjective 'sukha-kārī' and vocative 'dēvā'."
+    "grammarNote": "Marathi-influenced dative 'jīvā' (for the soul) combined with the agentive compound adjective 'sukha-kārī' and vocative 'dēvā'.",
+    "sourceWords": [
+      {
+        "text": "जीवा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सुखकारी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "देवा",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-098": {
     "source": "जय देव जय देव दत्तावधूता ॐ साई अवधूता",
@@ -3760,7 +8008,57 @@ window.SONG_LINES = {
         "gloss": "O Avadhuta / liberated ascetic"
       }
     ],
-    "grammarNote": "Standard aarti exclamation 'jaya dēva' with vocative compound epithets invoking Dattatreya and Sai as Avadhuta."
+    "grammarNote": "Standard aarti exclamation 'jaya dēva' with vocative compound epithets invoking Dattatreya and Sai as Avadhuta.",
+    "sourceWords": [
+      {
+        "text": "जय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दत्तावधूता",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ॐ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "साई",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "अवधूता",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-099": {
     "source": "जोड़े कर चरणों में नतमस्तक होता जय देव जय देव",
@@ -3809,7 +8107,69 @@ window.SONG_LINES = {
         "gloss": "O Lord"
       }
     ],
-    "grammarNote": "Absolute participial phrase 'kara jōṛē' (with folded hands); 'natamastaka hōtā' indicates bodily prostration."
+    "grammarNote": "Absolute participial phrase 'kara jōṛē' (with folded hands); 'natamastaka hōtā' indicates bodily prostration.",
+    "sourceWords": [
+      {
+        "text": "जोड़े",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चरणों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नतमस्तक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "होता",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-100": {
     "source": "अवतरता होती जो धर्म की ग्लानि",
@@ -3842,7 +8202,45 @@ window.SONG_LINES = {
         "gloss": "decline / decay"
       }
     ],
-    "grammarNote": "Inverted conditional construction alluding to the Gita: 'jō dharma kī glāni hōtī' (whenever decline of righteousness occurs), '[he] avataratā' (incarnates)."
+    "grammarNote": "Inverted conditional construction alluding to the Gita: 'jō dharma kī glāni hōtī' (whenever decline of righteousness occurs), '[he] avataratā' (incarnates).",
+    "sourceWords": [
+      {
+        "text": "अवतरता",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "होती",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "धर्म",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ग्लानि",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-101": {
     "source": "नास्तिक को करता है तू निज भजनी",
@@ -3879,7 +8277,51 @@ window.SONG_LINES = {
         "gloss": "devotee / worshipper"
       }
     ],
-    "grammarNote": "Habitual present transitive 'karatā hai tū' taking 'nāstika kō' as direct object and 'nija bhajanī' as predicate object."
+    "grammarNote": "Habitual present transitive 'karatā hai tū' taking 'nāstika kō' as direct object and 'nija bhajanī' as predicate object.",
+    "sourceWords": [
+      {
+        "text": "नास्तिक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भजनी",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-102": {
     "source": "नाना रूप लीलाएं देते दर्शनी",
@@ -3908,7 +8350,39 @@ window.SONG_LINES = {
         "gloss": "in vision / as direct sight"
       }
     ],
-    "grammarNote": "'Nānā rūpa līlāeṁ' functions as direct object; 'darśanī' (derived from Marathi/Hindi locative) functions adverbially/predicatively as vision."
+    "grammarNote": "'Nānā rūpa līlāeṁ' functions as direct object; 'darśanī' (derived from Marathi/Hindi locative) functions adverbially/predicatively as vision.",
+    "sourceWords": [
+      {
+        "text": "नाना",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रूप",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लीलाएं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "देते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दर्शनी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-103": {
     "source": "हरते दीन जनों का संकट दिन रजनी",
@@ -3945,7 +8419,51 @@ window.SONG_LINES = {
         "gloss": "night"
       }
     ],
-    "grammarNote": "Habitual present 'harate' with object 'dīna janoṁ kā saṅkaṭa'; 'dina rajanī' is an adverbial temporal dvandva (day and night)."
+    "grammarNote": "Habitual present 'harate' with object 'dīna janoṁ kā saṅkaṭa'; 'dina rajanī' is an adverbial temporal dvandva (day and night).",
+    "sourceWords": [
+      {
+        "text": "हरते",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "दीन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जनों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "संकट",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दिन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रजनी",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-104": {
     "source": "जय देव जय देव दत्ता अवधूता ॐ साई अवधूता",
@@ -3990,7 +8508,63 @@ window.SONG_LINES = {
         "gloss": "O Avadhuta"
       }
     ],
-    "grammarNote": "Refrain repetition invoking Datta and Sai in the vocative case."
+    "grammarNote": "Refrain repetition invoking Datta and Sai in the vocative case.",
+    "sourceWords": [
+      {
+        "text": "जय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दत्ता",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "अवधूता",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ॐ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "साई",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "अवधूता",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-105": {
     "source": "यवन स्वरूपी एक को दर्शन प्रगटाया",
@@ -4023,7 +8597,45 @@ window.SONG_LINES = {
         "gloss": "manifested / revealed"
       }
     ],
-    "grammarNote": "Past transitive 'pragaṭāyā' with indirect dative object 'eka ko' and accusative object 'darśana'."
+    "grammarNote": "Past transitive 'pragaṭāyā' with indirect dative object 'eka ko' and accusative object 'darśana'.",
+    "sourceWords": [
+      {
+        "text": "यवन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "स्वरूपी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "एक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दर्शन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रगटाया",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-106": {
     "source": "संशय निरसन करके तद्वैत मिटाया",
@@ -4052,7 +8664,39 @@ window.SONG_LINES = {
         "gloss": "erased / dissolved"
       }
     ],
-    "grammarNote": "Conjunctive participle clause 'saṁśaya nirasana karake' preceding the main past transitive verb 'miṭāyā'."
+    "grammarNote": "Conjunctive participle clause 'saṁśaya nirasana karake' preceding the main past transitive verb 'miṭāyā'.",
+    "sourceWords": [
+      {
+        "text": "संशय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निरसन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तद्वैत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मिटाया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-107": {
     "source": "गोपीचंदा मंदा का उद्धार किया",
@@ -4081,7 +8725,39 @@ window.SONG_LINES = {
         "gloss": "did / performed"
       }
     ],
-    "grammarNote": "Past transitive compound verb construction 'uddhāra kiyā' governing the proper nouns as genitive direct object."
+    "grammarNote": "Past transitive compound verb construction 'uddhāra kiyā' governing the proper nouns as genitive direct object.",
+    "sourceWords": [
+      {
+        "text": "गोपीचंदा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मंदा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "उद्धार",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "किया",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-108": {
     "source": "मोमिन कुल में जन्मे जन को तार दिया",
@@ -4122,7 +8798,57 @@ window.SONG_LINES = {
         "gloss": "gave / did"
       }
     ],
-    "grammarNote": "Vector compound verb 'tāra diyā' (liberated / ferried across) with participial modifier 'momin kula meṁ janme'."
+    "grammarNote": "Vector compound verb 'tāra diyā' (liberated / ferried across) with participial modifier 'momin kula meṁ janme'.",
+    "sourceWords": [
+      {
+        "text": "मोमिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कुल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जन्मे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तार",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दिया",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-109": {
     "source": "भेद न तत्व में हिन्दू यवन का कोई",
@@ -4163,7 +8889,57 @@ window.SONG_LINES = {
         "gloss": "any"
       }
     ],
-    "grammarNote": "Existential negation stating that in ultimate reality ('tattva meṁ'), no difference ('bheda na ... koī') exists between Hindu and Muslim."
+    "grammarNote": "Existential negation stating that in ultimate reality ('tattva meṁ'), no difference ('bheda na ... koī') exists between Hindu and Muslim.",
+    "sourceWords": [
+      {
+        "text": "भेद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तत्व",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हिन्दू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "यवन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-110": {
     "source": "दिखलाने ही आए फिर से नर देही",
@@ -4200,7 +8976,51 @@ window.SONG_LINES = {
         "gloss": "body / embodiment"
       }
     ],
-    "grammarNote": "Purposive infinitive 'dikhalāne' with emphatic 'hī'; 'nara dehī' expresses the assumed bodily form."
+    "grammarNote": "Purposive infinitive 'dikhalāne' with emphatic 'hī'; 'nara dehī' expresses the assumed bodily form.",
+    "sourceWords": [
+      {
+        "text": "दिखलाने",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आए",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "फिर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "देही",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-111": {
     "source": "प्रेम से देखे हिन्दू यवन या कोई",
@@ -4237,7 +9057,51 @@ window.SONG_LINES = {
         "gloss": "anyone"
       }
     ],
-    "grammarNote": "Subjunctive/present conditional sense: whether a Hindu, Muslim, or anyone beholds with love ('prema se dekhe')."
+    "grammarNote": "Subjunctive/present conditional sense: whether a Hindu, Muslim, or anyone beholds with love ('prema se dekhe').",
+    "sourceWords": [
+      {
+        "text": "प्रेम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "देखे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हिन्दू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "यवन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "या",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कोई",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-112": {
     "source": "दिखलाते हैं सब को व्यापक हैं साई",
@@ -4274,7 +9138,51 @@ window.SONG_LINES = {
         "gloss": "holy master"
       }
     ],
-    "grammarNote": "Linked present clauses: 'dikhalāte haiṁ saba ko' (he reveals to all) followed by the predicate '[sāī] vyāpaka haiṁ' (Sai is omnipresent)."
+    "grammarNote": "Linked present clauses: 'dikhalāte haiṁ saba ko' (he reveals to all) followed by the predicate '[sāī] vyāpaka haiṁ' (Sai is omnipresent).",
+    "sourceWords": [
+      {
+        "text": "दिखलाते",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सब",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "व्यापक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "साई",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-113": {
     "source": "देवा साईनाथा त्वत्पद नत होते",
@@ -4303,7 +9211,39 @@ window.SONG_LINES = {
         "gloss": "become"
       }
     ],
-    "grammarNote": "Sanskritized compound 'tvatpada' (at your feet); 'nata hote' denotes the action of bowing in humility."
+    "grammarNote": "Sanskritized compound 'tvatpada' (at your feet); 'nata hote' denotes the action of bowing in humility.",
+    "sourceWords": [
+      {
+        "text": "देवा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईनाथा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "त्वत्पद",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "होते",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-114": {
     "source": "परमाया मोहित जन मोचन हो जाते",
@@ -4336,7 +9276,45 @@ window.SONG_LINES = {
         "gloss": "go / [passive-completion marker]"
       }
     ],
-    "grammarNote": "Compound modifier 'paramāyā-mohita' describing 'jana'; 'mocana ho jāte' is a passive/intransitive construction of release."
+    "grammarNote": "Compound modifier 'paramāyā-mohita' describing 'jana'; 'mocana ho jāte' is a passive/intransitive construction of release.",
+    "sourceWords": [
+      {
+        "text": "परमाया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मोहित",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मोचन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जाते",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-115": {
     "source": "त्वत्कृपया सकल संकट हट जाते",
@@ -4365,7 +9343,39 @@ window.SONG_LINES = {
         "gloss": "go / do"
       }
     ],
-    "grammarNote": "Sanskrit instrumental singular 'tvatkṛpayā' (by your grace); 'haṭa jāte' is an intransitive compound verb with plural subject 'sakala saṅkaṭa'."
+    "grammarNote": "Sanskrit instrumental singular 'tvatkṛpayā' (by your grace); 'haṭa jāte' is an intransitive compound verb with plural subject 'sakala saṅkaṭa'.",
+    "sourceWords": [
+      {
+        "text": "त्वत्कृपया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सकल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "संकट",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हट",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जाते",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-116": {
     "source": "पद्य श्लोक ये दो कृष्ण वस्को हैं गाते",
@@ -4406,7 +9416,57 @@ window.SONG_LINES = {
         "gloss": "singing"
       }
     ],
-    "grammarNote": "Signature colophon line: 'kṛṣṇa vasko' is the subject in the present continuous/habitual 'gāte haiṁ' with direct object 'ye do padya śloka'."
+    "grammarNote": "Signature colophon line: 'kṛṣṇa vasko' is the subject in the present continuous/habitual 'gāte haiṁ' with direct object 'ye do padya śloka'.",
+    "sourceWords": [
+      {
+        "text": "पद्य",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "श्लोक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कृष्ण",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वस्को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "गाते",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-117": {
     "source": "शिरडी मेरा पंढरपुर साईं बाबा रमावर",
@@ -4439,7 +9499,45 @@ window.SONG_LINES = {
         "gloss": "consort of Lakshmi / Lord Vithoba"
       }
     ],
-    "grammarNote": "Metaphorical identification equating Shirdi with Pandharpur and Sai Baba with Ramavara (Vitthala/Vishnu)."
+    "grammarNote": "Metaphorical identification equating Shirdi with Pandharpur and Sai Baba with Ramavara (Vitthala/Vishnu).",
+    "sourceWords": [
+      {
+        "text": "शिरडी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मेरा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पंढरपुर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "रमावर",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-118": {
     "source": "बाबा रमावर साईं बाबा रमावर",
@@ -4468,7 +9566,39 @@ window.SONG_LINES = {
         "gloss": "Lord of Lakshmi / Vithoba"
       }
     ],
-    "grammarNote": "Choral repetition reinforcing Baba's identity with Lord Vithoba of Pandharpur."
+    "grammarNote": "Choral repetition reinforcing Baba's identity with Lord Vithoba of Pandharpur.",
+    "sourceWords": [
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रमावर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रमावर",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-119": {
     "source": "शुद्ध भक्ति चंद्रभागा भाव पुंडलीक जागा",
@@ -4501,7 +9631,45 @@ window.SONG_LINES = {
         "gloss": "awakened / arose"
       }
     ],
-    "grammarNote": "Double metaphor: pure devotion is equated with the river Chandrabhaga, and divine love ('bhāva') is the awakened bhakta Pundalik."
+    "grammarNote": "Double metaphor: pure devotion is equated with the river Chandrabhaga, and divine love ('bhāva') is the awakened bhakta Pundalik.",
+    "sourceWords": [
+      {
+        "text": "शुद्ध",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भक्ति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चंद्रभागा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भाव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पुंडलीक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जागा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-120": {
     "source": "पुंडलीक जागा भाव पुंडलीक जागा",
@@ -4530,7 +9698,39 @@ window.SONG_LINES = {
         "gloss": "awoke"
       }
     ],
-    "grammarNote": "Repetition expressing the awakening of deep devotional sentiment as exemplified by devotee Pundalik."
+    "grammarNote": "Repetition expressing the awakening of deep devotional sentiment as exemplified by devotee Pundalik.",
+    "sourceWords": [
+      {
+        "text": "पुंडलीक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जागा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भाव",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पुंडलीक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जागा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-121": {
     "source": "आओ आओ सारे जन करें बाबा को वंदन",
@@ -4571,7 +9771,57 @@ window.SONG_LINES = {
         "gloss": "obeisance / salutation"
       }
     ],
-    "grammarNote": "Imperative call ('āao') followed by a first-person plural hortative/subjunctive clause ('kareṁ')."
+    "grammarNote": "Imperative call ('āao') followed by a first-person plural hortative/subjunctive clause ('kareṁ').",
+    "sourceWords": [
+      {
+        "text": "आओ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सारे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करें",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "वंदन",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-122": {
     "source": "साईं को वंदन करें बाबा को वंदन",
@@ -4608,7 +9858,51 @@ window.SONG_LINES = {
         "gloss": "salutation"
       }
     ],
-    "grammarNote": "Parallel hortative constructions offering obeisance to Sai and Baba."
+    "grammarNote": "Parallel hortative constructions offering obeisance to Sai and Baba.",
+    "sourceWords": [
+      {
+        "text": "साईं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वंदन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करें",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "वंदन",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-123": {
     "source": "गणु कहे बाबा साईं दौड़े आओ मेरे साईं",
@@ -4649,7 +9943,57 @@ window.SONG_LINES = {
         "gloss": "holy master"
       }
     ],
-    "grammarNote": "Poet signature (bhaṇitā) followed by a direct plea; 'dauṛe āao' is an adverbial participle construction meaning 'come running'."
+    "grammarNote": "Poet signature (bhaṇitā) followed by a direct plea; 'dauṛe āao' is an adverbial participle construction meaning 'come running'.",
+    "sourceWords": [
+      {
+        "text": "गणु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कहे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दौड़े",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-124": {
     "source": "आओ मेरे साईं दौड़े आओ मेरे साईं",
@@ -4686,7 +10030,51 @@ window.SONG_LINES = {
         "gloss": "holy master"
       }
     ],
-    "grammarNote": "Emphatic repeated imperative invocation to the deity/guru."
+    "grammarNote": "Emphatic repeated imperative invocation to the deity/guru.",
+    "sourceWords": [
+      {
+        "text": "आओ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दौड़े",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "साईं",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-125": {
     "source": "साष्टांग नमन वंदूं मैं चरण नैनों से देखूं रूप तेरा",
@@ -4735,7 +10123,69 @@ window.SONG_LINES = {
         "gloss": "your"
       }
     ],
-    "grammarNote": "Two first-person singular present verbs ('vandūṁ', 'dekhūṁ') expressing acts of physical surrender and devotion."
+    "grammarNote": "Two first-person singular present verbs ('vandūṁ', 'dekhūṁ') expressing acts of physical surrender and devotion.",
+    "sourceWords": [
+      {
+        "text": "साष्टांग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नमन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वंदूं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मैं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नैनों",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "देखूं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "रूप",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-126": {
     "source": "प्रेम आलिंगन आनंद पूजन भाव से पुकारूं कहे नामा",
@@ -4780,7 +10230,63 @@ window.SONG_LINES = {
         "gloss": "poet-saint"
       }
     ],
-    "grammarNote": "A succession of dvandva/tatpurusha nominal pairs expressing intimate worship, closed by the poet signature formula."
+    "grammarNote": "A succession of dvandva/tatpurusha nominal pairs expressing intimate worship, closed by the poet signature formula.",
+    "sourceWords": [
+      {
+        "text": "प्रेम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आलिंगन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आनंद",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पूजन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भाव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पुकारूं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कहे",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "नामा",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-127": {
     "source": "त्वमेव माता पिता त्वमेव त्वमेव बन्धुश्च सखा त्वमेव",
@@ -4821,7 +10327,57 @@ window.SONG_LINES = {
         "gloss": "you alone"
       }
     ],
-    "grammarNote": "Classical Sanskrit shloka line in Anushtubh metre; equational nominal sentences with copula omitted and restrictive particle 'eva'."
+    "grammarNote": "Classical Sanskrit shloka line in Anushtubh metre; equational nominal sentences with copula omitted and restrictive particle 'eva'.",
+    "sourceWords": [
+      {
+        "text": "त्वमेव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "माता",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पिता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "त्वमेव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "त्वमेव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बन्धुश्च",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सखा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "त्वमेव",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-128": {
     "source": "त्वमेव विद्या द्रविणं त्वमेव त्वमेव सर्वं मम देव देव",
@@ -4866,7 +10422,63 @@ window.SONG_LINES = {
         "gloss": "gods / O God"
       }
     ],
-    "grammarNote": "Continuation of the Sanskrit verse; 'mama deva deva' stands either as repeated vocatives or the vocative compound 'devadeva' (Lord of gods)."
+    "grammarNote": "Continuation of the Sanskrit verse; 'mama deva deva' stands either as repeated vocatives or the vocative compound 'devadeva' (Lord of gods).",
+    "sourceWords": [
+      {
+        "text": "त्वमेव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "विद्या",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "द्रविणं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "त्वमेव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "त्वमेव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सर्वं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-129": {
     "source": "कायेन वाचा मनसेन्द्रियैर्वा बुद्ध्यात्मना वा प्रकृतिस्वभावात्",
@@ -4899,7 +10511,45 @@ window.SONG_LINES = {
         "gloss": "from nature of one's disposition (ablative singular)"
       }
     ],
-    "grammarNote": "Bhagavata Purana verse (11.2.36); list of instrumentals of means and an ablative of cause governed by the verb in the following line."
+    "grammarNote": "Bhagavata Purana verse (11.2.36); list of instrumentals of means and an ablative of cause governed by the verb in the following line.",
+    "sourceWords": [
+      {
+        "text": "कायेन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वाचा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मनसेन्द्रियैर्वा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बुद्ध्यात्मना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रकृतिस्वभावात्",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-130": {
     "source": "करोमि यद्यत् सकलं परस्मै नारायणायेति समर्पयामि",
@@ -4932,7 +10582,45 @@ window.SONG_LINES = {
         "gloss": "I surrender / dedicate (1st singular present)"
       }
     ],
-    "grammarNote": "Relative clause 'yadyat karomi' serving as the object of 'samarpayāmi', directing the dedication to the dative 'parasmai nārāyaṇāya'."
+    "grammarNote": "Relative clause 'yadyat karomi' serving as the object of 'samarpayāmi', directing the dedication to the dative 'parasmai nārāyaṇāya'.",
+    "sourceWords": [
+      {
+        "text": "करोमि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "यद्यत्",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सकलं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "परस्मै",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नारायणायेति",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "समर्पयामि",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-131": {
     "source": "अच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम्",
@@ -4965,7 +10653,45 @@ window.SONG_LINES = {
         "gloss": "Hari (accusative singular)"
       }
     ],
-    "grammarNote": "Achyutashtakam opening; series of accusative divine epithets governed by 'bhaje' in the subsequent line."
+    "grammarNote": "Achyutashtakam opening; series of accusative divine epithets governed by 'bhaje' in the subsequent line.",
+    "sourceWords": [
+      {
+        "text": "अच्युतं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "केशवं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रामनारायणं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कृष्णदामोदरं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वासुदेवं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हरिम्",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-132": {
     "source": "श्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचंद्रं भजे",
@@ -4998,7 +10724,45 @@ window.SONG_LINES = {
         "gloss": "I worship / adore (1st singular present middle)"
       }
     ],
-    "grammarNote": "1st-person present verb 'bhaje' syntactically resolves the series of accusative objects spanning lines 131–132."
+    "grammarNote": "1st-person present verb 'bhaje' syntactically resolves the series of accusative objects spanning lines 131–132.",
+    "sourceWords": [
+      {
+        "text": "श्रीधरं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "माधवं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गोपिकावल्लभं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जानकीनायकं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रामचंद्रं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भजे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-133": {
     "source": "हरे राम हरे राम राम राम हरे हरे",
@@ -5039,7 +10803,57 @@ window.SONG_LINES = {
         "gloss": "O Hari / O Harā"
       }
     ],
-    "grammarNote": "Maha-mantra verse composed entirely of vocative singular divine names."
+    "grammarNote": "Maha-mantra verse composed entirely of vocative singular divine names.",
+    "sourceWords": [
+      {
+        "text": "हरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हरे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हरे",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-134": {
     "source": "हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे",
@@ -5080,7 +10894,57 @@ window.SONG_LINES = {
         "gloss": "O Hari / O Harā"
       }
     ],
-    "grammarNote": "Second half of the Maha-mantra consisting of vocative invocations of Krishna and Hari/Hara."
+    "grammarNote": "Second half of the Maha-mantra consisting of vocative invocations of Krishna and Hari/Hara.",
+    "sourceWords": [
+      {
+        "text": "हरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कृष्ण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कृष्ण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कृष्ण",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कृष्ण",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हरे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हरे",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-135": {
     "source": "श्री गुरुदेव दत्त",
@@ -5101,7 +10965,27 @@ window.SONG_LINES = {
         "gloss": "Lord Dattātreya"
       }
     ],
-    "grammarNote": "Sacred formulaic invocation and greeting of the Datta Sampradaya."
+    "grammarNote": "Sacred formulaic invocation and greeting of the Datta Sampradaya.",
+    "sourceWords": [
+      {
+        "text": "श्री",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गुरुदेव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दत्त",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-136": {
     "source": "हरिः ॐ यज्ञेन यज्ञमयजन्त देवास्तानि धर्माणि प्रथमान्यासन्",
@@ -5138,7 +11022,51 @@ window.SONG_LINES = {
         "gloss": "first / earliest were (prathamāni + āsan, 3rd plural imperfect)"
       }
     ],
-    "grammarNote": "Vedic Sanskrit verse (Rigveda 10.90.16 / Purusha Suktam); subject 'devāḥ' with verb 'ayajanta', and nominal clause 'dharmāṇi prathamāni āsan'."
+    "grammarNote": "Vedic Sanskrit verse (Rigveda 10.90.16 / Purusha Suktam); subject 'devāḥ' with verb 'ayajanta', and nominal clause 'dharmāṇi prathamāni āsan'.",
+    "sourceWords": [
+      {
+        "text": "हरिः",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ॐ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "यज्ञेन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "यज्ञमयजन्त",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "देवास्तानि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "धर्माणि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रथमान्यासन्",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-137": {
     "source": "ते ह नाकं महिमानः सचन्त यत्र पूर्वे साध्याः सन्ति देवाः",
@@ -5187,7 +11115,69 @@ window.SONG_LINES = {
         "gloss": "gods (nominative plural)"
       }
     ],
-    "grammarNote": "Relative clause completing the Purusha Suktam verse; 'sacanta' governs the accusative 'nākaṁ'."
+    "grammarNote": "Relative clause completing the Purusha Suktam verse; 'sacanta' governs the accusative 'nākaṁ'.",
+    "sourceWords": [
+      {
+        "text": "ते",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नाकं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "महिमानः",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सचन्त",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "यत्र",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पूर्वे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "साध्याः",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सन्ति",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "देवाः",
+        "wordIndices": [
+          9
+        ]
+      }
+    ]
   },
   "line-138": {
     "source": "ॐ राजाधिराजाय प्रसह्यसाहिने नमो वयं वैश्रवणाय कुर्महे",
@@ -5224,7 +11214,51 @@ window.SONG_LINES = {
         "gloss": "we render / make (1st plural present middle)"
       }
     ],
-    "grammarNote": "Opening of Mantra Pushpam (Taittiriya Aranyaka 1.31.2); 'namas kṛ' takes the dative of recipient."
+    "grammarNote": "Opening of Mantra Pushpam (Taittiriya Aranyaka 1.31.2); 'namas kṛ' takes the dative of recipient.",
+    "sourceWords": [
+      {
+        "text": "ॐ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "राजाधिराजाय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "प्रसह्यसाहिने",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नमो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वयं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वैश्रवणाय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कुर्महे",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-139": {
     "source": "स मे कामान् कामकामाय मह्यं कामेश्वरो वैश्रवणो दधातु",
@@ -5265,7 +11299,57 @@ window.SONG_LINES = {
         "gloss": "may he bestow / grant (3rd singular imperative)"
       }
     ],
-    "grammarNote": "Optative-benedictory prayer with double dative recipient ('kāmakāmāya mahyaṁ') and 3rd-person imperative verb 'dadhātu'."
+    "grammarNote": "Optative-benedictory prayer with double dative recipient ('kāmakāmāya mahyaṁ') and 3rd-person imperative verb 'dadhātu'.",
+    "sourceWords": [
+      {
+        "text": "स",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कामान्",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कामकामाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मह्यं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कामेश्वरो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "वैश्रवणो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दधातु",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-140": {
     "source": "कुबेराय वैश्रवणाय महाराजाय नमः",
@@ -5290,7 +11374,33 @@ window.SONG_LINES = {
         "gloss": "salutations"
       }
     ],
-    "grammarNote": "Standard dative salutation formula governed by the indeclinable 'namaḥ'."
+    "grammarNote": "Standard dative salutation formula governed by the indeclinable 'namaḥ'.",
+    "sourceWords": [
+      {
+        "text": "कुबेराय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वैश्रवणाय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "महाराजाय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-141": {
     "source": "ॐ स्वस्ति साम्राज्यं भौज्यं स्वाराज्यं वैराज्यं पारमेष्ठ्यं राज्यं महाराज्यमाधिपत्यमयं समन्तपर्यायी स्यात्",
@@ -5343,7 +11453,75 @@ window.SONG_LINES = {
         "gloss": "may he be / let it be (3rd singular optative)"
       }
     ],
-    "grammarNote": "Aitareya Brahmana (8.15) royal consecration formula reciting political/cosmic degrees of sovereignty; governed by optative 'syāt'."
+    "grammarNote": "Aitareya Brahmana (8.15) royal consecration formula reciting political/cosmic degrees of sovereignty; governed by optative 'syāt'.",
+    "sourceWords": [
+      {
+        "text": "ॐ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "स्वस्ति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साम्राज्यं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भौज्यं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्वाराज्यं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वैराज्यं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पारमेष्ठ्यं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "राज्यं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "महाराज्यमाधिपत्यमयं",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "समन्तपर्यायी",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "स्यात्",
+        "wordIndices": [
+          10
+        ]
+      }
+    ]
   },
   "line-142": {
     "source": "सार्वभौमः सार्वायुष आन्तादापरार्धात् पृथिव्यै समुद्रपर्यन्ताया एकराळिति",
@@ -5376,7 +11554,45 @@ window.SONG_LINES = {
         "gloss": "sole monarch (ekarāṭ) thus (iti)"
       }
     ],
-    "grammarNote": "Vedic Sandhi 'ekarāṭ + iti' -> 'ekarāḷiti' (intervocalic retroflex d/l change); describes the sovereign of the ocean-bound earth."
+    "grammarNote": "Vedic Sandhi 'ekarāṭ + iti' -> 'ekarāḷiti' (intervocalic retroflex d/l change); describes the sovereign of the ocean-bound earth.",
+    "sourceWords": [
+      {
+        "text": "सार्वभौमः",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सार्वायुष",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आन्तादापरार्धात्",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पृथिव्यै",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "समुद्रपर्यन्ताया",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "एकराळिति",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-143": {
     "source": "तदेष श्लोकोऽभिगीतो मरुतः परिवेष्टारो मरुत्तस्यावसन् गृहे",
@@ -5409,7 +11625,45 @@ window.SONG_LINES = {
         "gloss": "in the house (locative singular)"
       }
     ],
-    "grammarNote": "Introductory gatha citation from Aitareya Brahmana (8.21) / Shatapatha Brahmana praising the sacrifice of King Marutta Avikshita."
+    "grammarNote": "Introductory gatha citation from Aitareya Brahmana (8.21) / Shatapatha Brahmana praising the sacrifice of King Marutta Avikshita.",
+    "sourceWords": [
+      {
+        "text": "तदेष",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "श्लोकोऽभिगीतो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मरुतः",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "परिवेष्टारो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मरुत्तस्यावसन्",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गृहे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-144": {
     "source": "आविक्षितस्य कामप्रेर्विश्वे देवाः सभासद इति",
@@ -5442,7 +11696,40 @@ window.SONG_LINES = {
         "gloss": "thus (quotative particle)"
       }
     ],
-    "grammarNote": "Continuation of the gatha; genitive modifiers 'āvikṣitasya kāmapreḥ' qualifying Marutta, with nominal predicate 'viśve devāḥ sabhāsadaḥ'."
+    "grammarNote": "Continuation of the gatha; genitive modifiers 'āvikṣitasya kāmapreḥ' qualifying Marutta, with nominal predicate 'viśve devāḥ sabhāsadaḥ'.",
+    "sourceWords": [
+      {
+        "text": "आविक्षितस्य",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कामप्रेर्विश्वे",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "देवाः",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सभासद",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "इति",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-145": {
     "source": "श्री नारायण वासुदेवाय सच्चिदानन्द सद्गुरु",
@@ -5471,7 +11758,39 @@ window.SONG_LINES = {
         "gloss": "true Guru"
       }
     ],
-    "grammarNote": "Invocational epithet string combining dative dedication with vocative/stem titles of the Sadguru."
+    "grammarNote": "Invocational epithet string combining dative dedication with vocative/stem titles of the Sadguru.",
+    "sourceWords": [
+      {
+        "text": "श्री",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नारायण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वासुदेवाय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सच्चिदानन्द",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-146": {
     "source": "साईंनाथ महाराज की जय",
@@ -5496,7 +11815,33 @@ window.SONG_LINES = {
         "gloss": "victory / hail"
       }
     ],
-    "grammarNote": "Standard Hindi acclamation formula ('X kī jaya' = Victory to X)."
+    "grammarNote": "Standard Hindi acclamation formula ('X kī jaya' = Victory to X).",
+    "sourceWords": [
+      {
+        "text": "साईंनाथ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "महाराज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-147": {
     "source": "अनन्त तेरा स्तवन हम कैसे गाएँ",
@@ -5529,7 +11874,45 @@ window.SONG_LINES = {
         "gloss": "can we sing (1st plural subjunctive)"
       }
     ],
-    "grammarNote": "Rhetorical question expressing devotional inadequacy; 1st-person plural subject 'hama' with subjunctive 'gāeṁ'."
+    "grammarNote": "Rhetorical question expressing devotional inadequacy; 1st-person plural subject 'hama' with subjunctive 'gāeṁ'.",
+    "sourceWords": [
+      {
+        "text": "अनन्त",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "स्तवन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गाएँ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-148": {
     "source": "अनन्त तुम्हें हम शरण कैसे आएँ",
@@ -5562,7 +11945,45 @@ window.SONG_LINES = {
         "gloss": "can we come (1st plural subjunctive)"
       }
     ],
-    "grammarNote": "Devotional idiom 'śaraṇa ānā' (to take refuge in / come for surrender)."
+    "grammarNote": "Devotional idiom 'śaraṇa ānā' (to take refuge in / come for surrender).",
+    "sourceWords": [
+      {
+        "text": "अनन्त",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुम्हें",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "शरण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कैसे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आएँ",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-149": {
     "source": "अनन्त मुखी शेष गाते हैं थकता",
@@ -5595,7 +12016,45 @@ window.SONG_LINES = {
         "gloss": "tires / grows weary"
       }
     ],
-    "grammarNote": "Contraction of the continuous aspect 'gāte gāte thak jātā hai' expressing that even the thousand-mouthed Shesha tires singing the Lord's glory."
+    "grammarNote": "Contraction of the continuous aspect 'gāte gāte thak jātā hai' expressing that even the thousand-mouthed Shesha tires singing the Lord's glory.",
+    "sourceWords": [
+      {
+        "text": "अनन्त",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मुखी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "शेष",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गाते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "थकता",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-150": {
     "source": "स्मरण त्वत् पदों का करूं भक्ति भावें",
@@ -5632,7 +12091,51 @@ window.SONG_LINES = {
         "gloss": "with devotional feeling (oblique/instrumental)"
       }
     ],
-    "grammarNote": "Mixed Hindi-Braj register; 'smaraṇa karanā' governing the genitive object 'tvat padoṁ kā'."
+    "grammarNote": "Mixed Hindi-Braj register; 'smaraṇa karanā' governing the genitive object 'tvat padoṁ kā'.",
+    "sourceWords": [
+      {
+        "text": "स्मरण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "त्वत्",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पदों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करूं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भक्ति",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भावें",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-151": {
     "source": "बचा शेष जीवन भक्ति में ही गमावें",
@@ -5669,7 +12172,51 @@ window.SONG_LINES = {
         "gloss": "may we spend / pass (1st plural optative)"
       }
     ],
-    "grammarNote": "Tautological compound 'bacā śeṣa' (all the remaining); 'gamānā' in the sense of passing/spending one's days."
+    "grammarNote": "Tautological compound 'bacā śeṣa' (all the remaining); 'gamānā' in the sense of passing/spending one's days.",
+    "sourceWords": [
+      {
+        "text": "बचा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "शेष",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जीवन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्ति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "गमावें",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-152": {
     "source": "तरावे जगत् तारके मात-पिता",
@@ -5694,7 +12241,33 @@ window.SONG_LINES = {
         "gloss": "mother and father"
       }
     ],
-    "grammarNote": "Causative verb 'tarāve' (from taranā, to cross) invoking the deity as universal parent and savior."
+    "grammarNote": "Causative verb 'tarāve' (from taranā, to cross) invoking the deity as universal parent and savior.",
+    "sourceWords": [
+      {
+        "text": "तरावे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जगत्",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तारके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मात-पिता",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-153": {
     "source": "नमस्कार साष्टांग श्री साईनाथा",
@@ -5719,7 +12292,33 @@ window.SONG_LINES = {
         "gloss": "O Sai Nath (vocative)"
       }
     ],
-    "grammarNote": "Refrain line offering formal prostration directly to Sri Sai Nath."
+    "grammarNote": "Refrain line offering formal prostration directly to Sri Sai Nath.",
+    "sourceWords": [
+      {
+        "text": "नमस्कार",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साष्टांग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईनाथा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-154": {
     "source": "बसे जो सदा संत लीला दिखाते",
@@ -5752,7 +12351,45 @@ window.SONG_LINES = {
         "gloss": "displaying / showing (imperfective participle)"
       }
     ],
-    "grammarNote": "Relative clause describing the divine saint who continually performs līlā."
+    "grammarNote": "Relative clause describing the divine saint who continually performs līlā.",
+    "sourceWords": [
+      {
+        "text": "बसे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सदा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "संत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लीला",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दिखाते",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-155": {
     "source": "दिखे अज्ञ जन सा जन जो भी आते",
@@ -5793,7 +12430,57 @@ window.SONG_LINES = {
         "gloss": "come (imperfective participle)"
       }
     ],
-    "grammarNote": "Describes how to those who visit ('jo bhī āte jana'), the master outwardly appears like an ordinary simple man ('ajña jana sā')."
+    "grammarNote": "Describes how to those who visit ('jo bhī āte jana'), the master outwardly appears like an ordinary simple man ('ajña jana sā').",
+    "sourceWords": [
+      {
+        "text": "दिखे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अज्ञ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भी",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "आते",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-156": {
     "source": "उहैं आत्मज्ञानी कैवल्य दाता",
@@ -5818,7 +12505,33 @@ window.SONG_LINES = {
         "gloss": "giver / bestower"
       }
     ],
-    "grammarNote": "Dialectal pronoun 'uhaiṁ' functions as subject complement asserting the saint's true identity as the bestower of liberation."
+    "grammarNote": "Dialectal pronoun 'uhaiṁ' functions as subject complement asserting the saint's true identity as the bestower of liberation.",
+    "sourceWords": [
+      {
+        "text": "उहैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आत्मज्ञानी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कैवल्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दाता",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-157": {
     "source": "नर देह पाया उत्तम यही है",
@@ -5851,7 +12564,45 @@ window.SONG_LINES = {
         "gloss": "is (3rd singular present)"
       }
     ],
-    "grammarNote": "Syntactic topic-comment structure: having obtained a human birth ('nara deha pāyā') is the highest blessing ('uttama yahī hai')."
+    "grammarNote": "Syntactic topic-comment structure: having obtained a human birth ('nara deha pāyā') is the highest blessing ('uttama yahī hai').",
+    "sourceWords": [
+      {
+        "text": "नर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देह",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पाया",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "उत्तम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "यही",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-158": {
     "source": "करे साधना सार्थकता यही है",
@@ -5880,7 +12631,39 @@ window.SONG_LINES = {
         "gloss": "is (3rd singular present)"
       }
     ],
-    "grammarNote": "Conditional/equational clause stating that performing sādhanā is the true purpose ('sārthakatā') of existence."
+    "grammarNote": "Conditional/equational clause stating that performing sādhanā is the true purpose ('sārthakatā') of existence.",
+    "sourceWords": [
+      {
+        "text": "करे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साधना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सार्थकता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "यही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-159": {
     "source": "साई प्रेम से नष्ट होती अहंता",
@@ -5913,7 +12696,45 @@ window.SONG_LINES = {
         "gloss": "ego / I-ness (feminine singular)"
       }
     ],
-    "grammarNote": "Grammatical subject 'ahantā' (feminine) agrees in gender with the verbal phrase 'naṣṭa hotī [hai]'."
+    "grammarNote": "Grammatical subject 'ahantā' (feminine) agrees in gender with the verbal phrase 'naṣṭa hotī [hai]'.",
+    "sourceWords": [
+      {
+        "text": "साई",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रेम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नष्ट",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "होती",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "अहंता",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-160": {
     "source": "धरे करों से यह मूढ़ बालक",
@@ -5946,7 +12767,45 @@ window.SONG_LINES = {
         "gloss": "child"
       }
     ],
-    "grammarNote": "Direct object phrase with instrumental postposition: 'dhare karoṁ se' (holds with hands)."
+    "grammarNote": "Direct object phrase with instrumental postposition: 'dhare karoṁ se' (holds with hands).",
+    "sourceWords": [
+      {
+        "text": "धरे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "करों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "यह",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मूढ़",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-161": {
     "source": "चुमे गाल इसके हो धन्य बालक",
@@ -5979,7 +12838,45 @@ window.SONG_LINES = {
         "gloss": "child"
       }
     ],
-    "grammarNote": "Subjunctive / optative expressing tender affection and blessing for the child."
+    "grammarNote": "Subjunctive / optative expressing tender affection and blessing for the child.",
+    "sourceWords": [
+      {
+        "text": "चुमे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "गाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "इसके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धन्य",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "बालक",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-162": {
     "source": "मुख में खिलाए मधुर ग्रास दाता",
@@ -6012,7 +12909,45 @@ window.SONG_LINES = {
         "gloss": "giver / benefactor"
       }
     ],
-    "grammarNote": "Causative verb 'khilāe' (feeds) with subject 'dātā' and direct object 'madhura grāsa'."
+    "grammarNote": "Causative verb 'khilāe' (feeds) with subject 'dātā' and direct object 'madhura grāsa'.",
+    "sourceWords": [
+      {
+        "text": "मुख",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "खिलाए",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मधुर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ग्रास",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दाता",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-163": {
     "source": "सुरादिक जिनके चरण पूजते हैं",
@@ -6041,7 +12976,39 @@ window.SONG_LINES = {
         "gloss": "do / are"
       }
     ],
-    "grammarNote": "Relative clause in present habitual tense: 'surādika jinake caraṇa pūjate haiṁ'."
+    "grammarNote": "Relative clause in present habitual tense: 'surādika jinake caraṇa pūjate haiṁ'.",
+    "sourceWords": [
+      {
+        "text": "सुरादिक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जिनके",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पूजते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-164": {
     "source": "शुकादिक जिनको सम मानते हैं",
@@ -6070,7 +13037,39 @@ window.SONG_LINES = {
         "gloss": "do / are"
       }
     ],
-    "grammarNote": "Relative clause with 'mānate haiṁ' taking a double complement ('whom they regard as equanimous/equal')."
+    "grammarNote": "Relative clause with 'mānate haiṁ' taking a double complement ('whom they regard as equanimous/equal').",
+    "sourceWords": [
+      {
+        "text": "शुकादिक",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जिनको",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मानते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-165": {
     "source": "प्रयागादि तीरथ चरणों में झुकता",
@@ -6099,7 +13098,39 @@ window.SONG_LINES = {
         "gloss": "bows / bends"
       }
     ],
-    "grammarNote": "Habitual present verb 'jhukatā' with collective masculine singular subject 'tīratha'."
+    "grammarNote": "Habitual present verb 'jhukatā' with collective masculine singular subject 'tīratha'.",
+    "sourceWords": [
+      {
+        "text": "प्रयागादि",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तीरथ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चरणों",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "झुकता",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-166": {
     "source": "दर्शन चरण का करे गोप-बाली",
@@ -6128,7 +13159,39 @@ window.SONG_LINES = {
         "gloss": "cowherd maiden / gopi girl"
       }
     ],
-    "grammarNote": "Compound subject 'gopa-bālī' governing the light verb construction 'darśana kare' (beholds)."
+    "grammarNote": "Compound subject 'gopa-bālī' governing the light verb construction 'darśana kare' (beholds).",
+    "sourceWords": [
+      {
+        "text": "दर्शन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चरण",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गोप-बाली",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-167": {
     "source": "सदा निज रूप में काया है रंगली",
@@ -6165,7 +13228,51 @@ window.SONG_LINES = {
         "gloss": "dyed / steeped"
       }
     ],
-    "grammarNote": "Feminine perfective construction ('kāyā... raṅgalī hai') expressing being dyed/immersed in one's true nature."
+    "grammarNote": "Feminine perfective construction ('kāyā... raṅgalī hai') expressing being dyed/immersed in one's true nature.",
+    "sourceWords": [
+      {
+        "text": "सदा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रूप",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "काया",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रंगली",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-168": {
     "source": "रास मेरे संग करो कृष्णनाथा",
@@ -6194,7 +13301,39 @@ window.SONG_LINES = {
         "gloss": "O Lord Krishna"
       }
     ],
-    "grammarNote": "Imperative prayer addressed to Krishna: 'rāsa mere saṅga karo' (dance the rasa with me)."
+    "grammarNote": "Imperative prayer addressed to Krishna: 'rāsa mere saṅga karo' (dance the rasa with me).",
+    "sourceWords": [
+      {
+        "text": "रास",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मेरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "संग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कृष्णनाथा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-169": {
     "source": "मैं मांगता तुम से एक यही",
@@ -6227,7 +13366,45 @@ window.SONG_LINES = {
         "gloss": "this very thing"
       }
     ],
-    "grammarNote": "Habitual present with elided copula: 'I ask only this one thing from you'."
+    "grammarNote": "Habitual present with elided copula: 'I ask only this one thing from you'.",
+    "sourceWords": [
+      {
+        "text": "मैं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मांगता",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "एक",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "यही",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-170": {
     "source": "आया कर जोड़े अति भाव से ही",
@@ -6264,7 +13441,51 @@ window.SONG_LINES = {
         "gloss": "indeed / only"
       }
     ],
-    "grammarNote": "Participial clause 'kara joḍe' (with folded hands) modifying the perfective verb 'āyā'."
+    "grammarNote": "Participial clause 'kara joḍe' (with folded hands) modifying the perfective verb 'āyā'.",
+    "sourceWords": [
+      {
+        "text": "आया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जोड़े",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भाव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-171": {
     "source": "भव से मोहनीराज ही तारे नाथा",
@@ -6297,7 +13518,45 @@ window.SONG_LINES = {
         "gloss": "O Lord"
       }
     ],
-    "grammarNote": "Ablative separation 'bhava se' with 3rd-person verb 'tāre' (delivers); 'Mohanīrāja' is the subject."
+    "grammarNote": "Ablative separation 'bhava se' with 3rd-person verb 'tāre' (delivers); 'Mohanīrāja' is the subject.",
+    "sourceWords": [
+      {
+        "text": "भव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "से",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मोहनीराज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तारे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नाथा",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-172": {
     "source": "ऐसे आओ बाबा साई दिगंबरा",
@@ -6326,7 +13585,39 @@ window.SONG_LINES = {
         "gloss": "O sky-clad one / Dattatreya"
       }
     ],
-    "grammarNote": "Imperative invocation with vocatives 'bābā', 'sāī', and 'digambarā'."
+    "grammarNote": "Imperative invocation with vocatives 'bābā', 'sāī', and 'digambarā'.",
+    "sourceWords": [
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दिगंबरा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-173": {
     "source": "अक्षय रूपावतारा सर्वही व्यापक तू",
@@ -6355,7 +13646,39 @@ window.SONG_LINES = {
         "gloss": "you"
       }
     ],
-    "grammarNote": "Nominal sentence with elided copula: 'You [are] all-pervading, an imperishable incarnation'."
+    "grammarNote": "Nominal sentence with elided copula: 'You [are] all-pervading, an imperishable incarnation'.",
+    "sourceWords": [
+      {
+        "text": "अक्षय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रूपावतारा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सर्वही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "व्यापक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तू",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-174": {
     "source": "श्रुतिसारा अनुसयात्रिकुमारा ऐसे आओ बाबा",
@@ -6384,7 +13707,39 @@ window.SONG_LINES = {
         "gloss": "O Baba"
       }
     ],
-    "grammarNote": "Vocative compounds ('śrutisārā', 'anusayā-atri-kumārā') leading into the refrain imperative."
+    "grammarNote": "Vocative compounds ('śrutisārā', 'anusayā-atri-kumārā') leading into the refrain imperative.",
+    "sourceWords": [
+      {
+        "text": "श्रुतिसारा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अनुसयात्रिकुमारा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-175": {
     "source": "काशी स्नान जप प्रतिदिन ही",
@@ -6413,7 +13768,39 @@ window.SONG_LINES = {
         "gloss": "indeed"
       }
     ],
-    "grammarNote": "Elliptical nominal phrase describing Dattatreya's daily spiritual routine."
+    "grammarNote": "Elliptical nominal phrase describing Dattatreya's daily spiritual routine.",
+    "sourceWords": [
+      {
+        "text": "काशी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "स्नान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जप",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "प्रतिदिन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-176": {
     "source": "कोल्हापुर भिक्षार्थ निर्मल नदी तुंगा",
@@ -6442,7 +13829,39 @@ window.SONG_LINES = {
         "gloss": "lofty; high"
       }
     ],
-    "grammarNote": "Purposive compound 'bhikṣārtha' (for begging alms) and locational references in the Dattatreya tradition."
+    "grammarNote": "Purposive compound 'bhikṣārtha' (for begging alms) and locational references in the Dattatreya tradition.",
+    "sourceWords": [
+      {
+        "text": "कोल्हापुर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भिक्षार्थ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "निर्मल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नदी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुंगा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-177": {
     "source": "जल प्राशी निद्रा माहुर देशी ऐसे आओ बाबा",
@@ -6483,7 +13902,57 @@ window.SONG_LINES = {
         "gloss": "O Baba"
       }
     ],
-    "grammarNote": "Nominal sequence of traditional abodes of Dattatreya (drinking Tunga water, sleeping in Mahur)."
+    "grammarNote": "Nominal sequence of traditional abodes of Dattatreya (drinking Tunga water, sleeping in Mahur).",
+    "sourceWords": [
+      {
+        "text": "जल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्राशी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "निद्रा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "माहुर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "देशी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-178": {
     "source": "झोली झूल रही वाम कर में",
@@ -6516,7 +13985,45 @@ window.SONG_LINES = {
         "gloss": "in"
       }
     ],
-    "grammarNote": "Continuous aspect ('jhūla rahī') agreeing with feminine singular subject 'jholī'."
+    "grammarNote": "Continuous aspect ('jhūla rahī') agreeing with feminine singular subject 'jholī'.",
+    "sourceWords": [
+      {
+        "text": "झोली",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "झूल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वाम",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-179": {
     "source": "त्रिशूल डमरु धारी भक्तावरद सदा",
@@ -6545,7 +14052,39 @@ window.SONG_LINES = {
         "gloss": "always"
       }
     ],
-    "grammarNote": "Compound epithets ('triśūla-ḍamaru-dhārī', 'bhakta-vara-da') describing Lord Dattatreya."
+    "grammarNote": "Compound epithets ('triśūla-ḍamaru-dhārī', 'bhakta-vara-da') describing Lord Dattatreya.",
+    "sourceWords": [
+      {
+        "text": "त्रिशूल",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "डमरु",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "धारी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्तावरद",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सदा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-180": {
     "source": "सुखकारी देते हो मुक्ति चारी ऐसे आओ बाबा",
@@ -6586,7 +14125,57 @@ window.SONG_LINES = {
         "gloss": "O Baba"
       }
     ],
-    "grammarNote": "Present habitual honorific clause: 'dete ho mukti cārī' (you grant the four types of liberation)."
+    "grammarNote": "Present habitual honorific clause: 'dete ho mukti cārī' (you grant the four types of liberation).",
+    "sourceWords": [
+      {
+        "text": "सुखकारी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "देते",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मुक्ति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चारी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-181": {
     "source": "पग में पादुका जपमाला",
@@ -6611,7 +14200,33 @@ window.SONG_LINES = {
         "gloss": "rosary of beads"
       }
     ],
-    "grammarNote": "Elliptical list of ascetic emblems worn/held by the deity."
+    "grammarNote": "Elliptical list of ascetic emblems worn/held by the deity.",
+    "sourceWords": [
+      {
+        "text": "पग",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पादुका",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जपमाला",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-182": {
     "source": "कमंडलु मृगछाला धारित है सिर पे",
@@ -6644,7 +14259,45 @@ window.SONG_LINES = {
         "gloss": "on"
       }
     ],
-    "grammarNote": "Passive/attributive construction with locative 'sira pe' continuing into the next line."
+    "grammarNote": "Passive/attributive construction with locative 'sira pe' continuing into the next line.",
+    "sourceWords": [
+      {
+        "text": "कमंडलु",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मृगछाला",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "धारित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सिर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पे",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-183": {
     "source": "नागजटा मुकुट सोहता माथा ऐसे आओ बाबा",
@@ -6681,7 +14334,51 @@ window.SONG_LINES = {
         "gloss": "O Baba"
       }
     ],
-    "grammarNote": "Verb 'sohata' (adorns) with compound subject 'nāgajaṭā mukuṭa' and accusative/locative 'māthā'."
+    "grammarNote": "Verb 'sohata' (adorns) with compound subject 'nāgajaṭā mukuṭa' and accusative/locative 'māthā'.",
+    "sourceWords": [
+      {
+        "text": "नागजटा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मुकुट",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सोहता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "माथा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-184": {
     "source": "तत्पर तुमरे हैं जो ध्यानी",
@@ -6710,7 +14407,39 @@ window.SONG_LINES = {
         "gloss": "meditators"
       }
     ],
-    "grammarNote": "Relative clause: 'Those meditators who are intent upon you...' (correlative in line 185)."
+    "grammarNote": "Relative clause: 'Those meditators who are intent upon you...' (correlative in line 185).",
+    "sourceWords": [
+      {
+        "text": "तत्पर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तुमरे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हैं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ध्यानी",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-185": {
     "source": "अक्षय उनके घर में लक्ष्मी वास करे",
@@ -6747,7 +14476,51 @@ window.SONG_LINES = {
         "gloss": "makes / dwells"
       }
     ],
-    "grammarNote": "Correlative clause completing line 184: 'lakṣmī vāsa kare' (Lakshmi dwells)."
+    "grammarNote": "Correlative clause completing line 184: 'lakṣmī vāsa kare' (Lakshmi dwells).",
+    "sourceWords": [
+      {
+        "text": "अक्षय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "उनके",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "में",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लक्ष्मी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वास",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-186": {
     "source": "दिन रजनी संकट करते छटनी ऐसे आओ बाबा",
@@ -6788,7 +14561,57 @@ window.SONG_LINES = {
         "gloss": "O Baba"
       }
     ],
-    "grammarNote": "Adverbial pair 'dina rajanī' (day and night) with idiomatic 'saṅkaṭa chaṭanī karate' (clearing away troubles)."
+    "grammarNote": "Adverbial pair 'dina rajanī' (day and night) with idiomatic 'saṅkaṭa chaṭanī karate' (clearing away troubles).",
+    "sourceWords": [
+      {
+        "text": "दिन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रजनी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "संकट",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "करते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "छटनी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          7
+        ]
+      }
+    ]
   },
   "line-187": {
     "source": "ऐसा ध्यान तेरा गुरुराया",
@@ -6813,7 +14636,33 @@ window.SONG_LINES = {
         "gloss": "O King of Gurus"
       }
     ],
-    "grammarNote": "Exclamatory nominal phrase with vocative compound 'gururāyā'."
+    "grammarNote": "Exclamatory nominal phrase with vocative compound 'gururāyā'.",
+    "sourceWords": [
+      {
+        "text": "ऐसा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ध्यान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तेरा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुरुराया",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-188": {
     "source": "दर्शन नैनों ने पाया पूर्णानंदित है",
@@ -6846,7 +14695,45 @@ window.SONG_LINES = {
         "gloss": "is"
       }
     ],
-    "grammarNote": "Ergative clause ('nainoṁ ne pāyā') joined with the stative predicate 'pūrṇānandita hai'."
+    "grammarNote": "Ergative clause ('nainoṁ ne pāyā') joined with the stative predicate 'pūrṇānandita hai'.",
+    "sourceWords": [
+      {
+        "text": "दर्शन",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नैनों",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ने",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाया",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पूर्णानंदित",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "है",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-189": {
     "source": "यह काया हरि गुण गाने लगाया ऐसे आओ बाबा",
@@ -6891,7 +14778,63 @@ window.SONG_LINES = {
         "gloss": "O Baba"
       }
     ],
-    "grammarNote": "Purposive/inceptive construction with oblique infinitive: 'gāne lagāyā' (engaged in singing)."
+    "grammarNote": "Purposive/inceptive construction with oblique infinitive: 'gāne lagāyā' (engaged in singing).",
+    "sourceWords": [
+      {
+        "text": "यह",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "काया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हरि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "गुण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गाने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लगाया",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          8
+        ]
+      }
+    ]
   },
   "line-190": {
     "source": "सदासत्स्वरूपं चिदानन्दकन्दं",
@@ -6908,7 +14851,21 @@ window.SONG_LINES = {
         "gloss": "the root-source of consciousness and bliss"
       }
     ],
-    "grammarNote": "Sanskrit compound accusatives in apposition to 'sāīnātham' (line 193)."
+    "grammarNote": "Sanskrit compound accusatives in apposition to 'sāīnātham' (line 193).",
+    "sourceWords": [
+      {
+        "text": "सदासत्स्वरूपं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "चिदानन्दकन्दं",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-191": {
     "source": "जगत्सम्भवस्थानसंहारहेतुम्",
@@ -6921,7 +14878,15 @@ window.SONG_LINES = {
         "gloss": "the cause of the universe's creation, preservation, and dissolution"
       }
     ],
-    "grammarNote": "Complex tatpuruṣa compound in accusative singular modifying 'sāīnātham'."
+    "grammarNote": "Complex tatpuruṣa compound in accusative singular modifying 'sāīnātham'.",
+    "sourceWords": [
+      {
+        "text": "जगत्सम्भवस्थानसंहारहेतुम्",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-192": {
     "source": "स्वभक्तेच्छया मानुषं दर्शयन्तं",
@@ -6942,7 +14907,27 @@ window.SONG_LINES = {
         "gloss": "displaying / manifesting"
       }
     ],
-    "grammarNote": "Causative present participle 'darśayantam' (acc. sg. masc.) governing direct object 'mānuṣaṁ' with instrumental 'sva-bhaktecchayā'."
+    "grammarNote": "Causative present participle 'darśayantam' (acc. sg. masc.) governing direct object 'mānuṣaṁ' with instrumental 'sva-bhaktecchayā'.",
+    "sourceWords": [
+      {
+        "text": "स्वभक्तेच्छया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मानुषं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दर्शयन्तं",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-193": {
     "source": "नमामीश्वरं सद्गुरुं साईनाथम्",
@@ -6963,7 +14948,27 @@ window.SONG_LINES = {
         "gloss": "Lord Sai"
       }
     ],
-    "grammarNote": "Finite verb 'namāmi' (1sg pres.) with sandhi to 'īśvaram', followed by accusative epithets."
+    "grammarNote": "Finite verb 'namāmi' (1sg pres.) with sandhi to 'īśvaram', followed by accusative epithets.",
+    "sourceWords": [
+      {
+        "text": "नमामीश्वरं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सद्गुरुं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईनाथम्",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-194": {
     "source": "भवध्वान्तविध्वंसमार्तण्डमीड्यं",
@@ -6976,7 +14981,15 @@ window.SONG_LINES = {
         "gloss": "the sun destroying the darkness of worldly existence, the praiseworthy one"
       }
     ],
-    "grammarNote": "Compound with sandhi ('-mārtaṇḍam + īḍyam') in accusative singular modifying the deity."
+    "grammarNote": "Compound with sandhi ('-mārtaṇḍam + īḍyam') in accusative singular modifying the deity.",
+    "sourceWords": [
+      {
+        "text": "भवध्वान्तविध्वंसमार्तण्डमीड्यं",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-195": {
     "source": "मनोवागतीतं मुनिर्ध्यानगम्यम्",
@@ -6993,7 +15006,21 @@ window.SONG_LINES = {
         "gloss": "attainable through the meditation of sages"
       }
     ],
-    "grammarNote": "Compound adjectives in accusative singular describing the transcendental nature of the Guru."
+    "grammarNote": "Compound adjectives in accusative singular describing the transcendental nature of the Guru.",
+    "sourceWords": [
+      {
+        "text": "मनोवागतीतं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मुनिर्ध्यानगम्यम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-196": {
     "source": "जगद्व्यापकं निर्मलं निर्गुणं त्वां",
@@ -7018,7 +15045,33 @@ window.SONG_LINES = {
         "gloss": "you"
       }
     ],
-    "grammarNote": "Series of accusative singular adjectives qualifying the 2nd person pronoun 'tvām'."
+    "grammarNote": "Series of accusative singular adjectives qualifying the 2nd person pronoun 'tvām'.",
+    "sourceWords": [
+      {
+        "text": "जगद्व्यापकं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "निर्मलं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "निर्गुणं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "त्वां",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-197": {
     "source": "भवाम्भोधिमग्नार्दितानां जनानां",
@@ -7035,7 +15088,21 @@ window.SONG_LINES = {
         "gloss": "of souls / people"
       }
     ],
-    "grammarNote": "Genitive plural compound modifying 'janānām' (the beings in samsara to be saved)."
+    "grammarNote": "Genitive plural compound modifying 'janānām' (the beings in samsara to be saved).",
+    "sourceWords": [
+      {
+        "text": "भवाम्भोधिमग्नार्दितानां",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जनानां",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-198": {
     "source": "स्वपादाश्रितानां स्वभक्तिप्रियाणाम्",
@@ -7052,7 +15119,21 @@ window.SONG_LINES = {
         "gloss": "of those dear through / devoted to your worship"
       }
     ],
-    "grammarNote": "Parallel genitive plural compounds agreeing with 'janānām' (line 197)."
+    "grammarNote": "Parallel genitive plural compounds agreeing with 'janānām' (line 197).",
+    "sourceWords": [
+      {
+        "text": "स्वपादाश्रितानां",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "स्वभक्तिप्रियाणाम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-199": {
     "source": "समुद्धरणार्थं कलौ संभवन्तं",
@@ -7073,7 +15154,27 @@ window.SONG_LINES = {
         "gloss": "taking birth / manifesting"
       }
     ],
-    "grammarNote": "Present participle 'sambhavantam' (acc. sg. masc.) with locative 'kalau' and purposive compound 'samuddharaṇārthaṁ'."
+    "grammarNote": "Present participle 'sambhavantam' (acc. sg. masc.) with locative 'kalau' and purposive compound 'samuddharaṇārthaṁ'.",
+    "sourceWords": [
+      {
+        "text": "समुद्धरणार्थं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कलौ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "संभवन्तं",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-200": {
     "source": "सदानिम्बवृक्षस्य मूलाधिवासात्",
@@ -7090,7 +15191,21 @@ window.SONG_LINES = {
         "gloss": "from dwelling at the base/root"
       }
     ],
-    "grammarNote": "Genitive singular compound sadā-nimba-vṛkṣasya depends on the ablative of place/cause mūlādhivāsāt (mūla + adhivāsa + -āt)."
+    "grammarNote": "Genitive singular compound sadā-nimba-vṛkṣasya depends on the ablative of place/cause mūlādhivāsāt (mūla + adhivāsa + -āt).",
+    "sourceWords": [
+      {
+        "text": "सदानिम्बवृक्षस्य",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मूलाधिवासात्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-201": {
     "source": "सुधास्राविणं तिक्तमप्यप्रियन्तम्",
@@ -7107,7 +15222,21 @@ window.SONG_LINES = {
         "gloss": "bitter-even-disagreeable"
       }
     ],
-    "grammarNote": "Accusative singular objects describing the tree (taruṁ); sandhi in second token: tiktam + api + apriyantam."
+    "grammarNote": "Accusative singular objects describing the tree (taruṁ); sandhi in second token: tiktam + api + apriyantam.",
+    "sourceWords": [
+      {
+        "text": "सुधास्राविणं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तिक्तमप्यप्रियन्तम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-202": {
     "source": "तरुं कल्पवृक्षाधिकं साधयन्तं",
@@ -7128,7 +15257,27 @@ window.SONG_LINES = {
         "gloss": "rendering / transforming into"
       }
     ],
-    "grammarNote": "Accusative singular present participle sādhayantam taking taruṁ as direct object and kalpa-vṛkṣādhikaṁ as predicate adjective."
+    "grammarNote": "Accusative singular present participle sādhayantam taking taruṁ as direct object and kalpa-vṛkṣādhikaṁ as predicate adjective.",
+    "sourceWords": [
+      {
+        "text": "तरुं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कल्पवृक्षाधिकं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साधयन्तं",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-203": {
     "source": "सदा कल्पवृक्षस्य तस्याधिमूले",
@@ -7149,7 +15298,27 @@ window.SONG_LINES = {
         "gloss": "at the base of that [tree]"
       }
     ],
-    "grammarNote": "Sandhi: tasya + adhimūle. Locative singular adhimūlē specifies location."
+    "grammarNote": "Sandhi: tasya + adhimūle. Locative singular adhimūlē specifies location.",
+    "sourceWords": [
+      {
+        "text": "सदा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कल्पवृक्षस्य",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तस्याधिमूले",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-204": {
     "source": "भवद्भावबुद्ध्या सपर्यादिसेवाम्",
@@ -7166,7 +15335,21 @@ window.SONG_LINES = {
         "gloss": "worship and other ritual services"
       }
     ],
-    "grammarNote": "Instrumental singular bhavadbhāvabuddhyā qualifies the mental attitude during service; saparyādisēvām is the accusative singular direct object of kurvatām."
+    "grammarNote": "Instrumental singular bhavadbhāvabuddhyā qualifies the mental attitude during service; saparyādisēvām is the accusative singular direct object of kurvatām.",
+    "sourceWords": [
+      {
+        "text": "भवद्भावबुद्ध्या",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सपर्यादिसेवाम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-205": {
     "source": "नृणां कुर्वतां भुक्तिमुक्तिप्रदन्तम्",
@@ -7187,7 +15370,27 @@ window.SONG_LINES = {
         "gloss": "bestowing both enjoyment and liberation"
       }
     ],
-    "grammarNote": "Genitive plural present participle kurvatāṃ denotes the recipients; bhuktimuktipradantam is accusative singular modifying the Lord."
+    "grammarNote": "Genitive plural present participle kurvatāṃ denotes the recipients; bhuktimuktipradantam is accusative singular modifying the Lord.",
+    "sourceWords": [
+      {
+        "text": "नृणां",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कुर्वतां",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भुक्तिमुक्तिप्रदन्तम्",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-206": {
     "source": "अनेकाश्रुतातर्क्यलीलाविलासैः",
@@ -7200,7 +15403,15 @@ window.SONG_LINES = {
         "gloss": "through playful displays of countless unheard-of and inconceivable divine sports"
       }
     ],
-    "grammarNote": "Instrumental plural compound (aneka + aśruta + atarkya + līlā-vilāsaiḥ) expressing the means of manifestation."
+    "grammarNote": "Instrumental plural compound (aneka + aśruta + atarkya + līlā-vilāsaiḥ) expressing the means of manifestation.",
+    "sourceWords": [
+      {
+        "text": "अनेकाश्रुतातर्क्यलीलाविलासैः",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-207": {
     "source": "समाविष्कृतेशानभास्वत्प्रभावम्",
@@ -7213,7 +15424,15 @@ window.SONG_LINES = {
         "gloss": "who has fully manifested the radiant majesty of the Supreme Lord"
       }
     ],
-    "grammarNote": "Accusative singular bahuvrīhi compound (samāviṣkṛta + īśāna + bhāsvat-prabhāvam) qualifying Sai Baba."
+    "grammarNote": "Accusative singular bahuvrīhi compound (samāviṣkṛta + īśāna + bhāsvat-prabhāvam) qualifying Sai Baba.",
+    "sourceWords": [
+      {
+        "text": "समाविष्कृतेशानभास्वत्प्रभावम्",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-208": {
     "source": "अहंभावहीनं प्रसन्नात्मभावम्",
@@ -7230,7 +15449,21 @@ window.SONG_LINES = {
         "gloss": "possessing a serene and gracious inner self"
       }
     ],
-    "grammarNote": "Accusative singular compounds modifying the object of adoration."
+    "grammarNote": "Accusative singular compounds modifying the object of adoration.",
+    "sourceWords": [
+      {
+        "text": "अहंभावहीनं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रसन्नात्मभावम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-209": {
     "source": "सतां विश्रमाराममेवाभिरामम्",
@@ -7251,7 +15484,22 @@ window.SONG_LINES = {
         "gloss": "indeed delightful"
       }
     ],
-    "grammarNote": "Sandhi: eva + abhirāmam. Accusative singular describing the Lord as the peaceful grove for the virtuous."
+    "grammarNote": "Sandhi: eva + abhirāmam. Accusative singular describing the Lord as the peaceful grove for the virtuous.",
+    "sourceWords": [
+      {
+        "text": "सतां",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "विश्रमाराममेवाभिरामम्",
+        "wordIndices": [
+          1,
+          2
+        ]
+      }
+    ]
   },
   "line-210": {
     "source": "सदा सज्जनैः संस्तुतं संनमद्भिः",
@@ -7276,7 +15524,33 @@ window.SONG_LINES = {
         "gloss": "by [those] bowing down reverently"
       }
     ],
-    "grammarNote": "Passive participle saṃstutaṃ (acc.sg. masc.) with agent expressed in instrumental plural sajjanaiḥ sannamadbhiḥ."
+    "grammarNote": "Passive participle saṃstutaṃ (acc.sg. masc.) with agent expressed in instrumental plural sajjanaiḥ sannamadbhiḥ.",
+    "sourceWords": [
+      {
+        "text": "सदा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सज्जनैः",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "संस्तुतं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "संनमद्भिः",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-211": {
     "source": "जनामोददं भक्तभद्रप्रदन्तम्",
@@ -7293,7 +15567,21 @@ window.SONG_LINES = {
         "gloss": "granting auspicious welfare to devotees"
       }
     ],
-    "grammarNote": "Accusative singular upapada compounds functioning as descriptive epithets."
+    "grammarNote": "Accusative singular upapada compounds functioning as descriptive epithets.",
+    "sourceWords": [
+      {
+        "text": "जनामोददं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भक्तभद्रप्रदन्तम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-212": {
     "source": "अजन्माद्यमेकं परब्रह्म साक्षात्",
@@ -7318,7 +15606,28 @@ window.SONG_LINES = {
         "gloss": "manifest / in direct perception"
       }
     ],
-    "grammarNote": "Accusative singular phrase identifying the Guru directly with the unmanifest Supreme Absolute."
+    "grammarNote": "Accusative singular phrase identifying the Guru directly with the unmanifest Supreme Absolute.",
+    "sourceWords": [
+      {
+        "text": "अजन्माद्यमेकं",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "परब्रह्म",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साक्षात्",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-213": {
     "source": "स्वयं संभवं राममेवावतीर्णम्",
@@ -7343,7 +15652,28 @@ window.SONG_LINES = {
         "gloss": "verily descended / incarnated"
       }
     ],
-    "grammarNote": "Sandhi: eva + avatīrṇam. Accusative singular phrase depicting the descent of Rama."
+    "grammarNote": "Sandhi: eva + avatīrṇam. Accusative singular phrase depicting the descent of Rama.",
+    "sourceWords": [
+      {
+        "text": "स्वयं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "संभवं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "राममेवावतीर्णम्",
+        "wordIndices": [
+          2,
+          3
+        ]
+      }
+    ]
   },
   "line-214": {
     "source": "भवद्दर्शनात् संपुनीतः प्रभोऽहम्",
@@ -7368,7 +15698,28 @@ window.SONG_LINES = {
         "gloss": "I"
       }
     ],
-    "grammarNote": "Sandhi: prabho + aham -> prabhō 'ham. Ablative of cause bhavaddarśanāt; saṃpunītaḥ agrees with 1st person subject aham."
+    "grammarNote": "Sandhi: prabho + aham -> prabhō 'ham. Ablative of cause bhavaddarśanāt; saṃpunītaḥ agrees with 1st person subject aham.",
+    "sourceWords": [
+      {
+        "text": "भवद्दर्शनात्",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "संपुनीतः",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "प्रभोऽहम्",
+        "wordIndices": [
+          2,
+          3
+        ]
+      }
+    ]
   },
   "line-215": {
     "source": "श्रीसायीश कृपानिधेऽखिलनृणां सर्वार्थसिद्धिप्रद",
@@ -7393,7 +15744,28 @@ window.SONG_LINES = {
         "gloss": "O bestower of the accomplishment of all goals"
       }
     ],
-    "grammarNote": "Series of vocatives; sandhi elision in 'khilanṛṇāṃ (kṛpānidhe + akhila- -> kṛpānidhē 'khila-)."
+    "grammarNote": "Series of vocatives; sandhi elision in 'khilanṛṇāṃ (kṛpānidhe + akhila- -> kṛpānidhē 'khila-).",
+    "sourceWords": [
+      {
+        "text": "श्रीसायीश",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कृपानिधेऽखिलनृणां",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "सर्वार्थसिद्धिप्रद",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-216": {
     "source": "युष्मत्पादरजःप्रभावमतुलं धातापि वक्ताक्षमः",
@@ -7418,7 +15790,28 @@ window.SONG_LINES = {
         "gloss": "is incapable of expressing"
       }
     ],
-    "grammarNote": "Sandhi: dhātā + api -> dhātāpi; vaktā + akṣamaḥ (or vaktum + akṣamaḥ). Accusative object yuṣmatpādarajaprabhāvam atulaṃ."
+    "grammarNote": "Sandhi: dhātā + api -> dhātāpi; vaktā + akṣamaḥ (or vaktum + akṣamaḥ). Accusative object yuṣmatpādarajaprabhāvam atulaṃ.",
+    "sourceWords": [
+      {
+        "text": "युष्मत्पादरजःप्रभावमतुलं",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "धातापि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वक्ताक्षमः",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-217": {
     "source": "सद्भक्त्या शरणं कृताञ्जलिपुटं संप्रापितोऽस्मि प्रभो",
@@ -7451,7 +15844,40 @@ window.SONG_LINES = {
         "gloss": "O Lord"
       }
     ],
-    "grammarNote": "Sandhi: saṃprāpitaḥ + asmi -> saṃprāpitō 'smi. Idiomatic construction for seeking shelter with palms joined."
+    "grammarNote": "Sandhi: saṃprāpitaḥ + asmi -> saṃprāpitō 'smi. Idiomatic construction for seeking shelter with palms joined.",
+    "sourceWords": [
+      {
+        "text": "सद्भक्त्या",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "शरणं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कृताञ्जलिपुटं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "संप्रापितोऽस्मि",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "प्रभो",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-218": {
     "source": "श्रीमत्सायिपरेशपादकमलान् नान्यच्छरण्यं मम",
@@ -7476,7 +15902,28 @@ window.SONG_LINES = {
         "gloss": "for me"
       }
     ],
-    "grammarNote": "Complex sandhi: -āt + na -> -ān na; na + anyat + śaraṇyam -> nānyac charaṇyam. Ablative of comparison dependent on anyat."
+    "grammarNote": "Complex sandhi: -āt + na -> -ān na; na + anyat + śaraṇyam -> nānyac charaṇyam. Ablative of comparison dependent on anyat.",
+    "sourceWords": [
+      {
+        "text": "श्रीमत्सायिपरेशपादकमलान्",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नान्यच्छरण्यं",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "मम",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-219": {
     "source": "साईरूपधर राघवोत्तमम्",
@@ -7493,7 +15940,21 @@ window.SONG_LINES = {
         "gloss": "the best of the Raghus (Rama)"
       }
     ],
-    "grammarNote": "Vocative sāyīrūpadhara; rāghavōttamam is accusative singular direct object of cintayāmi in line 222."
+    "grammarNote": "Vocative sāyīrūpadhara; rāghavōttamam is accusative singular direct object of cintayāmi in line 222.",
+    "sourceWords": [
+      {
+        "text": "साईरूपधर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "राघवोत्तमम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-220": {
     "source": "भक्तकामविबुधद्रुमं प्रभुम्",
@@ -7510,7 +15971,21 @@ window.SONG_LINES = {
         "gloss": "the Lord"
       }
     ],
-    "grammarNote": "Accusative singular epithets continued from line 219."
+    "grammarNote": "Accusative singular epithets continued from line 219.",
+    "sourceWords": [
+      {
+        "text": "भक्तकामविबुधद्रुमं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रभुम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-221": {
     "source": "माययोपहतचित्तशुद्धये",
@@ -7523,7 +15998,15 @@ window.SONG_LINES = {
         "gloss": "for the purification of the mind afflicted by delusion"
       }
     ],
-    "grammarNote": "Sandhi: māyayā + upahata... Dative singular of purpose (śuddhaye) explaining why one meditates."
+    "grammarNote": "Sandhi: māyayā + upahata... Dative singular of purpose (śuddhaye) explaining why one meditates.",
+    "sourceWords": [
+      {
+        "text": "माययोपहतचित्तशुद्धये",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-222": {
     "source": "चिन्तयाम्यहमहर्निशं मुदा",
@@ -7548,7 +16031,23 @@ window.SONG_LINES = {
         "gloss": "with joy"
       }
     ],
-    "grammarNote": "Sandhi: cintayāmi + aham -> cintayāmy aham. First person singular present indicative with adverbial compound aharniśam."
+    "grammarNote": "Sandhi: cintayāmi + aham -> cintayāmy aham. First person singular present indicative with adverbial compound aharniśam.",
+    "sourceWords": [
+      {
+        "text": "चिन्तयाम्यहमहर्निशं",
+        "wordIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "text": "मुदा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-223": {
     "source": "शरत्सुधांशुप्रतिमं प्रकाशम्",
@@ -7565,7 +16064,21 @@ window.SONG_LINES = {
         "gloss": "radiant / lustrous"
       }
     ],
-    "grammarNote": "Accusative/nominative singular compound modifying kṛpātapatram in line 224."
+    "grammarNote": "Accusative/nominative singular compound modifying kṛpātapatram in line 224.",
+    "sourceWords": [
+      {
+        "text": "शरत्सुधांशुप्रतिमं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रकाशम्",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-224": {
     "source": "कृपातपत्रं तव साईनाथ",
@@ -7586,7 +16099,27 @@ window.SONG_LINES = {
         "gloss": "O Lord Sai"
       }
     ],
-    "grammarNote": "Compound kṛpātapatraṃ (kṛpā + ātapatram) functions as subject for the optative/imperative verb in line 226."
+    "grammarNote": "Compound kṛpātapatraṃ (kṛpā + ātapatram) functions as subject for the optative/imperative verb in line 226.",
+    "sourceWords": [
+      {
+        "text": "कृपातपत्रं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-225": {
     "source": "त्वदीयपादाब्जसमाश्रितानाम्",
@@ -7599,7 +16132,15 @@ window.SONG_LINES = {
         "gloss": "of those who have taken refuge in Your lotus feet"
       }
     ],
-    "grammarNote": "Genitive plural compound specifying whose distress is dispelled."
+    "grammarNote": "Genitive plural compound specifying whose distress is dispelled.",
+    "sourceWords": [
+      {
+        "text": "त्वदीयपादाब्जसमाश्रितानाम्",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-226": {
     "source": "स्वच्छायया तापमपाकरोतु",
@@ -7620,7 +16161,22 @@ window.SONG_LINES = {
         "gloss": "may it dispel / remove"
       }
     ],
-    "grammarNote": "Imperative 3rd singular (apa-ā-kṛ) taking accusative tāpam as direct object and instrumental svacchāyayā as means."
+    "grammarNote": "Imperative 3rd singular (apa-ā-kṛ) taking accusative tāpam as direct object and instrumental svacchāyayā as means.",
+    "sourceWords": [
+      {
+        "text": "स्वच्छायया",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "तापमपाकरोतु",
+        "wordIndices": [
+          1,
+          2
+        ]
+      }
+    ]
   },
   "line-227": {
     "source": "उपासनादैवत साईनाथ",
@@ -7637,7 +16193,21 @@ window.SONG_LINES = {
         "gloss": "O Lord Sai"
       }
     ],
-    "grammarNote": "Vocative singular invocations addressed to Sai Baba."
+    "grammarNote": "Vocative singular invocations addressed to Sai Baba.",
+    "sourceWords": [
+      {
+        "text": "उपासनादैवत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-228": {
     "source": "स्तवैर्मयोपासनिना स्तुतस्त्वम्",
@@ -7662,7 +16232,23 @@ window.SONG_LINES = {
         "gloss": "You"
       }
     ],
-    "grammarNote": "Sandhi: stavaiḥ + mayā + upāsaninā -> stavair mayōpāsaninā; stutaḥ + tvam -> stutas tvam. Passive construction with 1st person agent mayā in apposition with upāsaninā."
+    "grammarNote": "Sandhi: stavaiḥ + mayā + upāsaninā -> stavair mayōpāsaninā; stutaḥ + tvam -> stutas tvam. Passive construction with 1st person agent mayā in apposition with upāsaninā.",
+    "sourceWords": [
+      {
+        "text": "स्तवैर्मयोपासनिना",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "स्तुतस्त्वम्",
+        "wordIndices": [
+          2,
+          3
+        ]
+      }
+    ]
   },
   "line-229": {
     "source": "रमेन्मनो मे तव पादयुग्मे",
@@ -7691,7 +16277,34 @@ window.SONG_LINES = {
         "gloss": "in the pair of feet"
       }
     ],
-    "grammarNote": "Sandhi: ramet + manaḥ -> ramēn manaḥ; manaḥ + me -> manō mē. Optative 3rd singular verb ramēt expressing prayerful wish."
+    "grammarNote": "Sandhi: ramet + manaḥ -> ramēn manaḥ; manaḥ + me -> manō mē. Optative 3rd singular verb ramēt expressing prayerful wish.",
+    "sourceWords": [
+      {
+        "text": "रमेन्मनो",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "मे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पादयुग्मे",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-230": {
     "source": "भृङ्गो यथाब्जे मकरन्दलुब्धः",
@@ -7712,7 +16325,27 @@ window.SONG_LINES = {
         "gloss": "eager / longing for nectar"
       }
     ],
-    "grammarNote": "Sandhi: bhṛṅgaḥ -> bhṛṅgō; yathā + abje -> yathābjē. Standard devotional simile (upmāna)."
+    "grammarNote": "Sandhi: bhṛṅgaḥ -> bhṛṅgō; yathā + abje -> yathābjē. Standard devotional simile (upmāna).",
+    "sourceWords": [
+      {
+        "text": "भृङ्गो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "यथाब्जे",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मकरन्दलुब्धः",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-231": {
     "source": "अनेकजन्मार्जितपापसंक्षयो",
@@ -7725,7 +16358,15 @@ window.SONG_LINES = {
         "gloss": "the complete destruction of sins accumulated through many births"
       }
     ],
-    "grammarNote": "Nominative singular masculine compound functioning as the subject of bhavēd in line 232."
+    "grammarNote": "Nominative singular masculine compound functioning as the subject of bhavēd in line 232.",
+    "sourceWords": [
+      {
+        "text": "अनेकजन्मार्जितपापसंक्षयो",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-232": {
     "source": "भवेद्भवत्पादसरोजदर्शनात्",
@@ -7742,7 +16383,16 @@ window.SONG_LINES = {
         "gloss": "from the sight of Your lotus feet"
       }
     ],
-    "grammarNote": "Sandhi: bhavet + bhavat... Ablative of cause bhavatpādasarōjadarśanāt governing the optative bhavēd."
+    "grammarNote": "Sandhi: bhavet + bhavat... Ablative of cause bhavatpādasarōjadarśanāt governing the optative bhavēd.",
+    "sourceWords": [
+      {
+        "text": "भवेद्भवत्पादसरोजदर्शनात्",
+        "wordIndices": [
+          0,
+          1
+        ]
+      }
+    ]
   },
   "line-233": {
     "source": "क्षमस्व सर्वानपराधपुञ्जकान्",
@@ -7763,7 +16413,22 @@ window.SONG_LINES = {
         "gloss": "heaps / multitudes of transgressions"
       }
     ],
-    "grammarNote": "Imperative 2nd singular middle (kṣamasva) governing the accusative plural object sarvān aparādhapuñjakān."
+    "grammarNote": "Imperative 2nd singular middle (kṣamasva) governing the accusative plural object sarvān aparādhapuñjakān.",
+    "sourceWords": [
+      {
+        "text": "क्षमस्व",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सर्वानपराधपुञ्जकान्",
+        "wordIndices": [
+          1,
+          2
+        ]
+      }
+    ]
   },
   "line-234": {
     "source": "प्रसीद साईश गुरो दयानिधे",
@@ -7788,7 +16453,33 @@ window.SONG_LINES = {
         "gloss": "O treasure-store of mercy"
       }
     ],
-    "grammarNote": "Imperative 2nd singular active verb prasīda followed by multiple vocative epithets."
+    "grammarNote": "Imperative 2nd singular active verb prasīda followed by multiple vocative epithets.",
+    "sourceWords": [
+      {
+        "text": "प्रसीद",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईश",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गुरो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दयानिधे",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-235": {
     "source": "श्रीसाईनाथचरणामृतपूतचित्तास्",
@@ -7801,7 +16492,15 @@ window.SONG_LINES = {
         "gloss": "those whose minds are purified by the nectar of the feet of Lord Sri Sai"
       }
     ],
-    "grammarNote": "Nominative plural masculine bahuvrīhi compound, joined in sandhi with line 236 (cittāḥ -> cittās before t-)."
+    "grammarNote": "Nominative plural masculine bahuvrīhi compound, joined in sandhi with line 236 (cittāḥ -> cittās before t-).",
+    "sourceWords": [
+      {
+        "text": "श्रीसाईनाथचरणामृतपूतचित्तास्",
+        "wordIndices": [
+          0
+        ]
+      }
+    ]
   },
   "line-236": {
     "source": "तत्पादसेवनरताः सततं च भक्त्या",
@@ -7826,7 +16525,33 @@ window.SONG_LINES = {
         "gloss": "with devotion"
       }
     ],
-    "grammarNote": "Sandhi: satatam + ca -> satatañ ca. Nominative plural adjective describing the devotees."
+    "grammarNote": "Sandhi: satatam + ca -> satatañ ca. Nominative plural adjective describing the devotees.",
+    "sourceWords": [
+      {
+        "text": "तत्पादसेवनरताः",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सततं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "च",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्त्या",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-237": {
     "source": "संसारजन्यदुरितौघविनिर्गतास्ते",
@@ -7843,7 +16568,16 @@ window.SONG_LINES = {
         "gloss": "they"
       }
     ],
-    "grammarNote": "Sandhi: vinirgatāḥ + te -> vinirgatās tē. Demonstrative pronoun tē is the subject of samavāpnuvanti."
+    "grammarNote": "Sandhi: vinirgatāḥ + te -> vinirgatās tē. Demonstrative pronoun tē is the subject of samavāpnuvanti.",
+    "sourceWords": [
+      {
+        "text": "संसारजन्यदुरितौघविनिर्गतास्ते",
+        "wordIndices": [
+          0,
+          1
+        ]
+      }
+    ]
   },
   "line-238": {
     "source": "कैवल्यधाम परमं समवाप्नुवन्ति",
@@ -7864,7 +16598,27 @@ window.SONG_LINES = {
         "gloss": "they attain fully"
       }
     ],
-    "grammarNote": "Present 3rd plural verb samavāpnuvanti (sam-ava-āp) taking accusative singular object kaivalyadhāma paramaṃ."
+    "grammarNote": "Present 3rd plural verb samavāpnuvanti (sam-ava-āp) taking accusative singular object kaivalyadhāma paramaṃ.",
+    "sourceWords": [
+      {
+        "text": "कैवल्यधाम",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "परमं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "समवाप्नुवन्ति",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-239": {
     "source": "स्तोत्रमेतत् पठेद् भक्त्या",
@@ -7889,7 +16643,28 @@ window.SONG_LINES = {
         "gloss": "with devotion"
       }
     ],
-    "grammarNote": "Sandhi: paṭhet + bhaktyā -> paṭhēd bhaktyā. Optative 3rd singular verb paṭhēt expressing the phalaśruti injunctive condition."
+    "grammarNote": "Sandhi: paṭhet + bhaktyā -> paṭhēd bhaktyā. Optative 3rd singular verb paṭhēt expressing the phalaśruti injunctive condition.",
+    "sourceWords": [
+      {
+        "text": "स्तोत्रमेतत्",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "पठेद्",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्त्या",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-240": {
     "source": "यो नरस्तन्मनाः सदा",
@@ -7914,7 +16689,28 @@ window.SONG_LINES = {
         "gloss": "always / constantly"
       }
     ],
-    "grammarNote": "Relative clause subject; 'yō naras' reflects sandhi for 'yaḥ naraḥ' before 'tanmanāḥ' (visarga becomes 's' before 't-'). 'tanmanāḥ' is a bahuvrīhi compound ('tad-manas', nom. sg. masc.)."
+    "grammarNote": "Relative clause subject; 'yō naras' reflects sandhi for 'yaḥ naraḥ' before 'tanmanāḥ' (visarga becomes 's' before 't-'). 'tanmanāḥ' is a bahuvrīhi compound ('tad-manas', nom. sg. masc.).",
+    "sourceWords": [
+      {
+        "text": "यो",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "नरस्तन्मनाः",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "सदा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-241": {
     "source": "सद्गुरोः साईनाथस्य",
@@ -7931,7 +16727,21 @@ window.SONG_LINES = {
         "gloss": "of Sai Nath"
       }
     ],
-    "grammarNote": "Both nouns are masculine genitive singulars ('sadguru' -> 'sadguroḥ', 'sāyinātha' -> 'sāyināthasya') specifying whose grace is obtained in line 242."
+    "grammarNote": "Both nouns are masculine genitive singulars ('sadguru' -> 'sadguroḥ', 'sāyinātha' -> 'sāyināthasya') specifying whose grace is obtained in line 242.",
+    "sourceWords": [
+      {
+        "text": "सद्गुरोः",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "साईनाथस्य",
+        "wordIndices": [
+          1
+        ]
+      }
+    ]
   },
   "line-242": {
     "source": "कृपापात्रं भवेद् ध्रुवम्",
@@ -7952,7 +16762,27 @@ window.SONG_LINES = {
         "gloss": "surely / certainly"
       }
     ],
-    "grammarNote": "'kṛpāpātraṃ' is a neuter nominative singular compound ('kṛpā' + 'pātram'). 'bhavēd' is optative 3rd person singular of √bhū (sandhi: 'bhavet' -> 'bhaved' before 'dhr-'). 'dhruvam' functions adverbially."
+    "grammarNote": "'kṛpāpātraṃ' is a neuter nominative singular compound ('kṛpā' + 'pātram'). 'bhavēd' is optative 3rd person singular of √bhū (sandhi: 'bhavet' -> 'bhaved' before 'dhr-'). 'dhruvam' functions adverbially.",
+    "sourceWords": [
+      {
+        "text": "कृपापात्रं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "भवेद्",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ध्रुवम्",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "line-243": {
     "source": "करचरणकृतं वाक्कायजं कर्मजं वा",
@@ -7977,7 +16807,33 @@ window.SONG_LINES = {
         "gloss": "or"
       }
     ],
-    "grammarNote": "Opening line of the standard kṣamāprārthanā (forgiveness prayer). The compounds are accusative singular modifiers agreeing with 'aparādham' in line 244."
+    "grammarNote": "Opening line of the standard kṣamāprārthanā (forgiveness prayer). The compounds are accusative singular modifiers agreeing with 'aparādham' in line 244.",
+    "sourceWords": [
+      {
+        "text": "करचरणकृतं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वाक्कायजं",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कर्मजं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-244": {
     "source": "श्रवणनयनजं वा मानसं वापराधम्",
@@ -8002,7 +16858,33 @@ window.SONG_LINES = {
         "gloss": "or [any] offense"
       }
     ],
-    "grammarNote": "'vāparādham' contains sandhi for 'vā' + 'aparādham'. 'aparādham' (masculine accusative singular) is the head noun for the string of qualifiers across lines 243–244."
+    "grammarNote": "'vāparādham' contains sandhi for 'vā' + 'aparādham'. 'aparādham' (masculine accusative singular) is the head noun for the string of qualifiers across lines 243–244.",
+    "sourceWords": [
+      {
+        "text": "श्रवणनयनजं",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मानसं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वापराधम्",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "line-245": {
     "source": "विहितमविहितं वा सर्वमेतत् क्षमस्व",
@@ -8035,7 +16917,35 @@ window.SONG_LINES = {
         "gloss": "forgive / pardon"
       }
     ],
-    "grammarNote": "'kṣamasva' is imperative 2nd person singular middle of √kṣam. 'vihitam' and 'avihitaṃ' refer to enjoined and forbidden actions; 'sarvam ētat' is neuter accusative singular direct object."
+    "grammarNote": "'kṣamasva' is imperative 2nd person singular middle of √kṣam. 'vihitam' and 'avihitaṃ' refer to enjoined and forbidden actions; 'sarvam ētat' is neuter accusative singular direct object.",
+    "sourceWords": [
+      {
+        "text": "विहितमविहितं",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्वमेतत्",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "क्षमस्व",
+        "wordIndices": [
+          5
+        ]
+      }
+    ]
   },
   "line-246": {
     "source": "जय जय करुणाब्धे श्रीप्रभो साईनाथ",
@@ -8064,7 +16974,39 @@ window.SONG_LINES = {
         "gloss": "O Sai Nath"
       }
     ],
-    "grammarNote": "Vocative addresses: 'karuṇābdhē' (voc. sg. of karuṇābdhi), 'śrīprabhō' (voc. sg. of śrīprabhu), 'sāyinātha' (voc. sg. of sāyinātha). 'jaya jaya' is an imperative repetition used as an acclamation."
+    "grammarNote": "Vocative addresses: 'karuṇābdhē' (voc. sg. of karuṇābdhi), 'śrīprabhō' (voc. sg. of śrīprabhu), 'sāyinātha' (voc. sg. of sāyinātha). 'jaya jaya' is an imperative repetition used as an acclamation.",
+    "sourceWords": [
+      {
+        "text": "जय",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करुणाब्धे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "श्रीप्रभो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "line-247": {
     "source": "श्री सच्चिदानन्द सद्गुरु साईनाथ महाराज की जय",
@@ -8101,7 +17043,51 @@ window.SONG_LINES = {
         "gloss": "victory / hail"
       }
     ],
-    "grammarNote": "Hindi devotional jaikāra (proclamation of victory). 'kī' is the feminine genitive postposition agreeing with feminine noun 'jai'."
+    "grammarNote": "Hindi devotional jaikāra (proclamation of victory). 'kī' is the feminine genitive postposition agreeing with feminine noun 'jai'.",
+    "sourceWords": [
+      {
+        "text": "श्री",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सच्चिदानन्द",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सद्गुरु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "महाराज",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जय",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
   },
   "line-248": {
     "source": "राजाधिराज योगिराज परब्रह्म साईनाथ महाराज",
@@ -8130,7 +17116,39 @@ window.SONG_LINES = {
         "gloss": "great king"
       }
     ],
-    "grammarNote": "A string of exalted vocative titles and epithets in apposition addressing Sai Baba as the supreme cosmic sovereign and ultimate reality."
+    "grammarNote": "A string of exalted vocative titles and epithets in apposition addressing Sai Baba as the supreme cosmic sovereign and ultimate reality.",
+    "sourceWords": [
+      {
+        "text": "राजाधिराज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "योगिराज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "परब्रह्म",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "महाराज",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 

@@ -58,7 +58,39 @@ window.SONG_LINES = {
         "gloss": "O bird"
       }
     ],
-    "grammarNote": "Imperative clause with 2nd-person singular verb 'ghe' and vocative address 're pākharā'. 'Ākāśī' is locative."
+    "grammarNote": "Imperative clause with 2nd-person singular verb 'ghe' and vocative address 're pākharā'. 'Ākāśī' is locative.",
+    "sourceWords": [
+      {
+        "text": "आकाशी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "झेप",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पाखरा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "sodi-sonyaca-pinjara": {
     "source": "सोडी सोन्याचा पिंजरा",
@@ -79,7 +111,27 @@ window.SONG_LINES = {
         "gloss": "cage"
       }
     ],
-    "grammarNote": "Poetic imperative 'soḍī' governing the direct object 'pinjarā', modified by the genitive adjective 'sonyācā'."
+    "grammarNote": "Poetic imperative 'soḍī' governing the direct object 'pinjarā', modified by the genitive adjective 'sonyācā'.",
+    "sourceWords": [
+      {
+        "text": "सोडी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "सोन्याचा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पिंजरा",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "tujabhavati-vaibhava-maya": {
     "source": "तुजभवती वैभव, माया",
@@ -102,7 +154,27 @@ window.SONG_LINES = {
         "preserve_in_english": true
       }
     ],
-    "grammarNote": "Verbless nominal clause. The official printed poem separates 'vaibhava' and 'māyā' with a comma, so they are coordinate nouns—not a phrase meaning 'opulent māyā'."
+    "grammarNote": "Verbless nominal clause. The official printed poem separates 'vaibhava' and 'māyā' with a comma, so they are coordinate nouns—not a phrase meaning 'opulent māyā'.",
+    "sourceWords": [
+      {
+        "text": "तुजभवती",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "वैभव,",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "माया",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "phal-rasal-milte-khaya": {
     "source": "फळ रसाळ मिळते खाया",
@@ -127,7 +199,33 @@ window.SONG_LINES = {
         "gloss": "to eat"
       }
     ],
-    "grammarNote": "Habitual present verb 'miḷate' agreeing with neuter singular 'phaḷa'. 'Khāyā' is a poetic infinitive of purpose ('khāyālā')."
+    "grammarNote": "Habitual present verb 'miḷate' agreeing with neuter singular 'phaḷa'. 'Khāyā' is a poetic infinitive of purpose ('khāyālā').",
+    "sourceWords": [
+      {
+        "text": "फळ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "रसाळ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मिळते",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "खाया",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "sukhalolupa-jhali-kaya": {
     "source": "सुखलोलुप झाली काया",
@@ -148,7 +246,27 @@ window.SONG_LINES = {
         "gloss": "body"
       }
     ],
-    "grammarNote": "Intransitive perfective verb 'jhālī' agreeing with feminine singular subject 'kāyā', complemented by predicate adjective 'sukhalolupa'."
+    "grammarNote": "Intransitive perfective verb 'jhālī' agreeing with feminine singular subject 'kāyā', complemented by predicate adjective 'sukhalolupa'.",
+    "sourceWords": [
+      {
+        "text": "सुखलोलुप",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "झाली",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "काया",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "ha-kuthavara-vedya-ghesi-asara": {
     "source": "हा कुठवर वेड्या घेशी आसरा",
@@ -177,7 +295,39 @@ window.SONG_LINES = {
         "gloss": "shelter / refuge"
       }
     ],
-    "grammarNote": "Rhetorical interrogative clause; 'veḍyā' is vocative masculine singular; 'gheśī' is a 2nd-person singular poetic present/future form."
+    "grammarNote": "Rhetorical interrogative clause; 'veḍyā' is vocative masculine singular; 'gheśī' is a 2nd-person singular poetic present/future form.",
+    "sourceWords": [
+      {
+        "text": "हा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कुठवर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वेड्या",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "घेशी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "आसरा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "ghara-kasale-hi-tara-kara": {
     "source": "घर कसले ही तर कारा",
@@ -206,7 +356,39 @@ window.SONG_LINES = {
         "gloss": "prison / captivity"
       }
     ],
-    "grammarNote": "Rhetorical contrastive statement; 'kasale' functions as a dismissive interrogative, and feminine 'hī' agrees with predicate noun 'kārā'."
+    "grammarNote": "Rhetorical contrastive statement; 'kasale' functions as a dismissive interrogative, and feminine 'hī' agrees with predicate noun 'kārā'.",
+    "sourceWords": [
+      {
+        "text": "घर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कसले",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कारा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "vishasamana-moti-cara": {
     "source": "विषसमान मोती चारा",
@@ -227,7 +409,27 @@ window.SONG_LINES = {
         "gloss": "grain / feed"
       }
     ],
-    "grammarNote": "Nominal clause equating the fine feed ('motī cārā') with poison ('viṣasamāna') without an explicit copula."
+    "grammarNote": "Nominal clause equating the fine feed ('motī cārā') with poison ('viṣasamāna') without an explicit copula.",
+    "sourceWords": [
+      {
+        "text": "विषसमान",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मोती",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चारा",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "mohace-bandhana-dvara": {
     "source": "मोहाचे बंधन द्वारा",
@@ -248,7 +450,27 @@ window.SONG_LINES = {
         "gloss": "at the door / threshold"
       }
     ],
-    "grammarNote": "Nominal metaphor; genitive 'mohāce' modifies 'bandhana', identifying the doorway ('dvārā') as a bond of delusion."
+    "grammarNote": "Nominal metaphor; genitive 'mohāce' modifies 'bandhana', identifying the doorway ('dvārā') as a bond of delusion.",
+    "sourceWords": [
+      {
+        "text": "मोहाचे",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "बंधन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "द्वारा",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "tuja-adavito-ha-kaisa-umbara": {
     "source": "तुज अडवितो हा कैसा उंबरा",
@@ -277,7 +499,39 @@ window.SONG_LINES = {
         "gloss": "doorframe / threshold"
       }
     ],
-    "grammarNote": "Interrogative clause where masculine subject 'hā umbarā' governs the present imperfective verb 'aḍavito', with 'tuja' as dative/accusative object."
+    "grammarNote": "Interrogative clause where masculine subject 'hā umbarā' governs the present imperfective verb 'aḍavito', with 'tuja' as dative/accusative object.",
+    "sourceWords": [
+      {
+        "text": "तुज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "अडवितो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कैसा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "उंबरा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "tuja-pankha-dile-devane": {
     "source": "तुज पंख दिले देवाने",
@@ -302,7 +556,33 @@ window.SONG_LINES = {
         "gloss": "by God"
       }
     ],
-    "grammarNote": "Ergative construction (karmani prayog); agent in instrumental 'devāne', recipient 'tuja', and plural direct object 'paṅkha' determining verb agreement 'dile'."
+    "grammarNote": "Ergative construction (karmani prayog); agent in instrumental 'devāne', recipient 'tuja', and plural direct object 'paṅkha' determining verb agreement 'dile'.",
+    "sourceWords": [
+      {
+        "text": "तुज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "पंख",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "दिले",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "देवाने",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "kara-vihara-samarthyane": {
     "source": "कर विहार सामर्थ्याने",
@@ -323,7 +603,27 @@ window.SONG_LINES = {
         "gloss": "with strength / mightily"
       }
     ],
-    "grammarNote": "Imperative verbal compound 'vihāra kara' modified by instrumental adverbial noun 'sāmarthyāne'."
+    "grammarNote": "Imperative verbal compound 'vihāra kara' modified by instrumental adverbial noun 'sāmarthyāne'.",
+    "sourceWords": [
+      {
+        "text": "कर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "विहार",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सामर्थ्याने",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "dari-dongara-hiravi-rane": {
     "source": "दरी डोंगर हिरवी राने",
@@ -348,7 +648,33 @@ window.SONG_LINES = {
         "gloss": "forests / meadows"
       }
     ],
-    "grammarNote": "Coordinated nominal direct objects in asyndeton, governed by the action of crossing in the next line. 'Hiravī' agrees with neuter plural 'rāne'."
+    "grammarNote": "Coordinated nominal direct objects in asyndeton, governed by the action of crossing in the next line. 'Hiravī' agrees with neuter plural 'rāne'.",
+    "sourceWords": [
+      {
+        "text": "दरी",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "डोंगर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हिरवी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राने",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "ja-olanduniya-sarita-sagara": {
     "source": "जा ओलांडुनिया सरिता सागरा",
@@ -373,7 +699,33 @@ window.SONG_LINES = {
         "gloss": "oceans / seas"
       }
     ],
-    "grammarNote": "Conjunctive participial construction with archaic/poetic absolutive suffix '-uniyā' ('olāṇḍuniyā') preceding imperative verb 'jā'."
+    "grammarNote": "Conjunctive participial construction with archaic/poetic absolutive suffix '-uniyā' ('olāṇḍuniyā') preceding imperative verb 'jā'.",
+    "sourceWords": [
+      {
+        "text": "जा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ओलांडुनिया",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सरिता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सागरा",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "kashtavina-phala-na-milate": {
     "source": "कष्टाविण फळ ना मिळते",
@@ -398,7 +750,33 @@ window.SONG_LINES = {
         "gloss": "is obtained / is achieved"
       }
     ],
-    "grammarNote": "Gnomic present negative statement; 'kaṣṭāviṇa' is an oblique noun with postposition '-viṇa' (without)."
+    "grammarNote": "Gnomic present negative statement; 'kaṣṭāviṇa' is an oblique noun with postposition '-viṇa' (without).",
+    "sourceWords": [
+      {
+        "text": "कष्टाविण",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "फळ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मिळते",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "tuja-kalate-pari-na-valate": {
     "source": "तुज कळते परि ना वळते",
@@ -427,7 +805,39 @@ window.SONG_LINES = {
         "gloss": "is put into practice / turns into habit"
       }
     ],
-    "grammarNote": "Proverbial idiom of cognitive realization versus behavioral application; dative-experiencer construction with adversative coordinator 'pari'."
+    "grammarNote": "Proverbial idiom of cognitive realization versus behavioral application; dative-experiencer construction with adversative coordinator 'pari'.",
+    "sourceWords": [
+      {
+        "text": "तुज",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "कळते",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "परि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वळते",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "hridayata-vyatha-hi-jalate": {
     "source": "हृदयात व्यथा ही जळते",
@@ -452,7 +862,33 @@ window.SONG_LINES = {
         "gloss": "burns"
       }
     ],
-    "grammarNote": "Intransitive clause; locative 'hṛdayāta' with feminine subject 'hī vyathā' governing the 3rd-person singular present verb 'jaḷate'."
+    "grammarNote": "Intransitive clause; locative 'hṛdayāta' with feminine subject 'hī vyathā' governing the 3rd-person singular present verb 'jaḷate'.",
+    "sourceWords": [
+      {
+        "text": "हृदयात",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "व्यथा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जळते",
+        "wordIndices": [
+          3
+        ]
+      }
+    ]
   },
   "ka-jiva-bicara-hoi-bavara": {
     "source": "का जीव बिचारा होई बावरा",
@@ -481,7 +917,39 @@ window.SONG_LINES = {
         "gloss": "bewildered / flustered"
       }
     ],
-    "grammarNote": "Interrogative clause; 'hoī' is poetic 3rd-person singular present linking verb between subject 'jīva bicārā' and predicate adjective 'bāvarā'."
+    "grammarNote": "Interrogative clause; 'hoī' is poetic 3rd-person singular present linking verb between subject 'jīva bicārā' and predicate adjective 'bāvarā'.",
+    "sourceWords": [
+      {
+        "text": "का",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "जीव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बिचारा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "होई",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बावरा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   },
   "ghamatuna-moti-phulale": {
     "source": "घामातून मोती फुलले",
@@ -502,7 +970,27 @@ window.SONG_LINES = {
         "gloss": "blossomed / sprouted"
       }
     ],
-    "grammarNote": "Metaphorical clause; ablative 'ghāmātūna' indicates origin, while plural/collective subject 'motī' governs perfective verb 'phulale'."
+    "grammarNote": "Metaphorical clause; ablative 'ghāmātūna' indicates origin, while plural/collective subject 'motī' governs perfective verb 'phulale'.",
+    "sourceWords": [
+      {
+        "text": "घामातून",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "मोती",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "फुलले",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "shramadeva-ghari-avatarale": {
     "source": "श्रमदेव घरी अवतरले",
@@ -523,7 +1011,27 @@ window.SONG_LINES = {
         "gloss": "manifested / descended"
       }
     ],
-    "grammarNote": "Honorific plural/perfective verb 'avatarale' agreeing with masculine compound subject 'śramadeva'; 'gharī' is locative."
+    "grammarNote": "Honorific plural/perfective verb 'avatarale' agreeing with masculine compound subject 'śramadeva'; 'gharī' is locative.",
+    "sourceWords": [
+      {
+        "text": "श्रमदेव",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "घरी",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "अवतरले",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "ghara-prasannatene-natale": {
     "source": "घर प्रसन्नतेने नटले",
@@ -544,7 +1052,27 @@ window.SONG_LINES = {
         "gloss": "adorned itself / flourished"
       }
     ],
-    "grammarNote": "Intransitive perfective clause; neuter singular subject 'ghara' governs verb 'naṭale', modified by instrumental of manner 'prasannatene'."
+    "grammarNote": "Intransitive perfective clause; neuter singular subject 'ghara' governs verb 'naṭale', modified by instrumental of manner 'prasannatene'.",
+    "sourceWords": [
+      {
+        "text": "घर",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "प्रसन्नतेने",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नटले",
+        "wordIndices": [
+          2
+        ]
+      }
+    ]
   },
   "ha-yoga-jivani-ala-sajira": {
     "source": "हा योग जीवनी आला साजरा",
@@ -573,7 +1101,39 @@ window.SONG_LINES = {
         "gloss": "beautiful / auspicious"
       }
     ],
-    "grammarNote": "Discontinuous subject phrase 'hā yoga ... sājirā' with masculine singular perfective verb 'ālā' and locative 'jīvanī'."
+    "grammarNote": "Discontinuous subject phrase 'hā yoga ... sājirā' with masculine singular perfective verb 'ālā' and locative 'jīvanī'.",
+    "sourceWords": [
+      {
+        "text": "हा",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "योग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "जीवनी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "आला",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साजरा",
+        "wordIndices": [
+          4
+        ]
+      }
+    ]
   }
 };
 
