@@ -1,6 +1,40 @@
 {
   "version": 1,
   "works": {
+    "gaiye-ganpati-jagvandan": {
+      "title": "Vinay Patrika, pad 1 — Gāiye Gaṇapati Jagavandan",
+      "author": "Tulsīdās",
+      "verification_status": "public-working-witness",
+      "authority_note": "A Government of Tamil Nadu school-textbook transcription. It is a public working witness, not authority to overwrite an audible recording variant.",
+      "retriever": "pdf-text-range",
+      "url": "https://nammakalvi.com/books/12em/hindi.pdf",
+      "page": 2,
+      "start_marker": "गाइये गणपति",
+      "end_marker": "2. जाके प्रिय",
+      "bibliography": {
+        "publisher": "Government of Tamil Nadu",
+        "document": "Higher Secondary Hindi textbook, Tulsī-taraṅga",
+        "source_url": "https://nammakalvi.com/books/12em/hindi.pdf"
+      },
+      "comparison_policy": "Audio is authoritative for this recording. This school-text witness only focuses the second audio audit; preserve audible wording such as a performance-specific particle or spelling, and leave unresolved readings uncertain."
+    },
+    "jaake-priya-na-rama": {
+      "title": "Vinay Patrika pad — Jāke Priya Na Rāma Vaidēhī",
+      "author": "Tulsīdās",
+      "verification_status": "public-working-witness",
+      "authority_note": "A Government of Tamil Nadu school-textbook transcription. It is a public working witness, not authority to overwrite an audible recording variant.",
+      "retriever": "pdf-text-range",
+      "url": "https://nammakalvi.com/books/12em/hindi.pdf",
+      "page": 2,
+      "start_marker": "जाके प्रिय",
+      "end_marker": "1. गणपति वं दना",
+      "bibliography": {
+        "publisher": "Government of Tamil Nadu",
+        "document": "Higher Secondary Hindi textbook, Tulsī-taraṅga",
+        "source_url": "https://nammakalvi.com/books/12em/hindi.pdf"
+      },
+      "comparison_policy": "Audio is authoritative for this recording. This school-text witness only focuses the second audio audit; preserve audible wording such as a performance-specific particle or spelling, and leave unresolved readings uncertain."
+    },
     "hanuman-bahuk": {
       "title": "Hanumān Bāhuk",
       "author": "Tulsīdās",

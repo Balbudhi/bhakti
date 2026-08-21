@@ -35,6 +35,18 @@ class SourceWitnessTests(unittest.TestCase):
         witness = {"witness": {}, "lines": [{"page": 2, "text": "बिलकुल अलग पाठ"}]}
         self.assertEqual(source_witness.prompt_context(witness, [{"source_text": "हनुमान की जय"}]), "")
 
+    def test_pdf_range_extractor_keeps_only_the_configured_verse_text(self) -> None:
+        text = """भूमिका
+गाइये गणपति जगवंदन । शंकर सुवन भवानीनंदन ।
+सिद्धि सदन गजवदन विनायक ।
+प्रश्न: इस कविता का सार लिखिए।
+अतिरिक्त गद्य"""
+        self.assertEqual(source_witness._extract_pdf_text_range(text, "गाइये गणपति", "प्रश्न:"), [
+            "गाइये गणपति जगवंदन ।",
+            "शंकर सुवन भवानीनंदन ।",
+            "सिद्धि सदन गजवदन विनायक ।",
+        ])
+
 
 if __name__ == "__main__":
     unittest.main()
