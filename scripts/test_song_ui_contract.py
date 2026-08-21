@@ -113,17 +113,15 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('"EB Garamond", "Cormorant Garamond"', site_css)
         self.assertIn('overflow-wrap: anywhere', song_css)
 
-    def test_top_controls_match_the_home_control_and_the_unlinked_state_is_visibly_broken(self) -> None:
+    def test_top_controls_match_the_home_control_and_dim_without_replacing_the_link(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
         pipeline = (ROOT / "scripts" / "bhakti_pipeline.py").read_text(encoding="utf-8")
         self.assertIn('background-color: var(--kh-bg);', song_css)
         self.assertIn('opacity: 1;', song_css)
         self.assertIn('top: max(8px, calc(env(safe-area-inset-top) - 16px));', song_css)
-        self.assertIn('.chain-unlinked { display: none; }', song_css)
-        self.assertIn('#songSync[aria-pressed="false"] .chain-unlinked { display: block; }', song_css)
-        self.assertIn('class="chain-unlinked"', pipeline)
+        self.assertNotIn('chain-unlinked', song_css)
+        self.assertNotIn('chain-unlinked', pipeline)
         self.assertIn('m10.6 13.4 2.8-2.8', pipeline)
-        self.assertIn('m8.8 10.2-1.4-1.4', pipeline)
         self.assertIn('border-style: dashed;', song_css)
         self.assertIn('svg { opacity: 0.52; }', song_css)
 
