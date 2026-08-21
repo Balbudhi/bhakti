@@ -243,7 +243,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ONE",
-        "gloss": "proper name or untranslated term",
+        "gloss": "television channel name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -273,7 +273,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bel",
-        "gloss": "proper name or untranslated term",
+        "gloss": "a bell",
         "concept_key": "",
         "preserve_in_english": false
       },

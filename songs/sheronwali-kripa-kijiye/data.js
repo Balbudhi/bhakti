@@ -477,7 +477,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manindar",
-        "gloss": "proper name",
+        "gloss": "performer addressed by the speaker",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -561,7 +561,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manindar",
-        "gloss": "proper name",
+        "gloss": "performer addressed by the speaker",
         "concept_key": "",
         "preserve_in_english": false
       },

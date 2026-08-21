@@ -1220,7 +1220,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Muslima",
-        "gloss": "proper name or untranslated term",
+        "gloss": "a Muslim; follower of Islam",
         "concept_key": "",
         "preserve_in_english": false
       },

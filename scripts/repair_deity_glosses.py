@@ -93,6 +93,39 @@ GLOSSES = {
     "ahirāvana": "underworld demon defeated by Hanumān",
     "girijā": "“mountain-born”; epithet of Pārvatī",
 }
+# These cards are deliberately scoped to the recorded line.  Similar-looking
+# words elsewhere may have another referent, so they must never be promoted to
+# the global form table above.  The explanations are based on the local lyric
+# context and, where relevant, the documented Odia music / named-aarti sources
+# in docs/SANSKRIT_POPUP_REVIEW.md.
+CONTEXTUAL_GLOSSES = {
+    ("chalo-shirdi-ku-jibare-sabhien", "verse2-1", 3): "khola, high-pitched Odia double-headed drum",
+    ("e-barashe-aasi-achi", "v1-ghanta", 3): "mardala, principal percussion drum of Odissi music",
+    ("e-barashe-aasi-achi", "v1-ghanta", 4): "kāhāḷī, traditional wind horn or trumpet",
+    ("hanuman-bahuk", "line-025", 1): "Droṇa, the Kuru teacher and warrior named with Bhīṣma",
+    ("jai-ambe-gauri", "verse-12-line-3", 1): "named authorial voice of this ārati",
+    ("jai-ambe-gauri", "verse-12-line-3", 4): "named authorial voice of this ārati",
+    ("jai-durge-durgati-pariharini", "o-brahmananda-sharana-me-aayo", 1): "poet's signature-name",
+    ("jai-durge-durgati-pariharini", "aayo-brahmananda-alap", 1): "poet's signature-name",
+    ("jai-durge-durgati-pariharini", "aayo-brahmananda-alap", 2): "poet's signature-name",
+    ("jai-durge-durgati-pariharini", "brahmananda-brahmananda-sharana-me-aayo", 1): "poet's signature-name",
+    ("jai-shiva-shankar-jai-gangadhar", "vaidyanath-kedar-hare", 1): "Kedārnāth, Śiva's Himalayan shrine-name",
+    ("kakad-aarti", "line-078", 2): "Śrīraṅga, a name of Viṣṇu",
+    ("koi-bhaje", "refrain-koi-bhaje", 5): "Viṣṇu's avatāra; husband of Sītā",
+    ("koi-bhaje", "chorus-hare-krishna-hare-rama", 3): "Viṣṇu's avatāra; husband of Sītā",
+    ("koi-bhaje", "chorus-hare-krishna-hare-rama", 7): "Viṣṇu's avatāra; husband of Sītā",
+    ("kyun-nahin-manegi-meri-maa", "promo-mh-one", 11): "television channel name",
+    ("kyun-nahin-manegi-meri-maa", "promo-mh-one", 16): "a bell",
+    ("leke-bhesh-fakirika", "aur-muslim-ko-kahein-ram-ram", 1): "a Muslim; follower of Islam",
+    ("main-dharu-tiharo-dhyan", "ooche-parbat-basa", 4): "Dhaulāgaṛh, mountain-shrine name of the Goddess",
+    ("meri-maa-jagdambe-man-jaye", "promo-spoken", 11): "television channel name",
+    ("meri-maa-jagdambe-man-jaye", "promo-spoken", 16): "a bell",
+    ("namaskar-mera", "guru-nityananda", 2): "honorific personal name",
+    ("sadho-rama-anupam-bani", "verse4-line1", 1): "poet's signature-name",
+    ("sheronwali-kripa-kijiye", "spoken-intro-1", 28): "performer addressed by the speaker",
+    ("sheronwali-kripa-kijiye", "spoken-intro-1", 42): "performer addressed by the speaker",
+    ("shri-guru-prarthana", "verse-6a", 0): "route or way",
+}
 PLACEHOLDERS = {"proper name", "proper name or untranslated term", "untranslated term"}
 
 
@@ -123,10 +156,11 @@ def main() -> int:
             continue
         page = load(path)
         count = 0
-        for line in page.get("SONG_LINES", {}).values():
-            for word in line.get("words", []):
-                replacement = GLOSSES.get(canonical(str(word.get("roman") or "")))
-                if replacement:
+        for line_id, line in page.get("SONG_LINES", {}).items():
+            for word_index, word in enumerate(line.get("words", [])):
+                replacement = CONTEXTUAL_GLOSSES.get((song.name, line_id, word_index))
+                replacement = replacement or GLOSSES.get(canonical(str(word.get("roman") or "")))
+                if replacement and word.get("gloss") != replacement:
                     word["gloss"] = replacement
                     count += 1
         if count:

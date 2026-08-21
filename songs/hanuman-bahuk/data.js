@@ -2875,7 +2875,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "drona",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Droṇa, the Kuru teacher and warrior named with Bhīṣma",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -660,7 +660,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmānanda",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet's signature-name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -760,13 +760,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmānanda...",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet's signature-name",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "brahmānanda...",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet's signature-name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -825,7 +825,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmānanda",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet's signature-name",
         "concept_key": "",
         "preserve_in_english": false
       },

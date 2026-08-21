@@ -3580,7 +3580,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śivānanda",
-        "gloss": "proper name or untranslated term",
+        "gloss": "named authorial voice of this ārati",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3598,7 +3598,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śivānanda",
-        "gloss": "proper name or untranslated term",
+        "gloss": "named authorial voice of this ārati",
         "concept_key": "",
         "preserve_in_english": false
       },
