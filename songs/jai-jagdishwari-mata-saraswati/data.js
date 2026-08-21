@@ -115,7 +115,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sarasvatī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }

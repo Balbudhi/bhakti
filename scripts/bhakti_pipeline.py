@@ -2252,7 +2252,7 @@ def page_html(meta: dict[str, Any]) -> str:
     escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                            .replace('"', "&quot;").replace("'", "&#39;"))
     people: dict[str, list[str]] = {}
-    for field, label in (("writer", "Poet"), ("singer", "Singer"), ("composer", "Music")):
+    for field, label in (("writer", "Poet"), ("singer", "Singer"), ("composer", "Composer")):
         person = str(meta.get(field) or "").strip()
         if person:
             people.setdefault(person, []).append(label)
