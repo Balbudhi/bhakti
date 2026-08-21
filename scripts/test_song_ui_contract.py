@@ -28,7 +28,7 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertIn('song.js?v=contract-20260821-8', text)
                 self.assertIn('data.js?v=contract-20260821-9', text)
                 self.assertIn('pwa.js?v=contract-20260821-8', text)
-                self.assertIn('song.css?v=contract-20260821-9', text)
+                self.assertIn('song.css?v=contract-20260821-10', text)
                 self.assertEqual(text.count('id="songShare"'), 1)
                 self.assertEqual(text.count('id="songSync"'), 1)
                 self.assertIn('family=EB+Garamond:wght@400;500', text)
@@ -104,9 +104,13 @@ class SongUiContractTests(unittest.TestCase):
 
     def test_top_controls_match_the_home_control_and_the_unlinked_state_is_visibly_broken(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
-        self.assertIn('background: var(--kh-bg);', song_css)
-        self.assertIn('background: rgba(244, 234, 208, 0.10);', song_css)
-        self.assertIn('#songSync[aria-pressed="false"]::after', song_css)
+        pipeline = (ROOT / "scripts" / "bhakti_pipeline.py").read_text(encoding="utf-8")
+        self.assertIn('background-color: var(--kh-bg);', song_css)
+        self.assertIn('opacity: 1;', song_css)
+        self.assertIn('top: max(22px, calc(14px + env(safe-area-inset-top)));', song_css)
+        self.assertIn('.chain-unlinked { display: none; }', song_css)
+        self.assertIn('#songSync[aria-pressed="false"] .chain-unlinked { display: block; }', song_css)
+        self.assertIn('class="chain-unlinked"', pipeline)
         self.assertIn('border-style: dashed;', song_css)
 
     def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:

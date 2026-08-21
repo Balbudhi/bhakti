@@ -59,7 +59,9 @@ html, body {
 #songShare,
 #songSync {
   position: fixed;
-  top: max(18px, calc(10px + env(safe-area-inset-top)));
+  /* Keep these comfortably below the rounded top edge on an iPhone rather
+     than pinning them to the very top of the viewport. */
+  top: max(24px, calc(16px + env(safe-area-inset-top)));
   width: 34px;
   height: 34px;
   display: inline-flex;
@@ -70,9 +72,11 @@ html, body {
   border: 1px solid var(--kh-ink-mid);
   border-radius: 50%;
   color: var(--kh-ink);
-  /* An opaque fill in the same ground colour keeps these on the same visual
-     level as the home control, rather than introducing a second accent red. */
-  background: var(--kh-bg);
+  /* This is deliberately a solid ground-colour disc — exactly the player
+     ground and the home control's visual family, not a translucent overlay
+     or a second accent red. */
+  background-color: var(--kh-bg);
+  opacity: 1;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
@@ -85,7 +89,7 @@ html, body {
 #songSync:hover,
 #songSync[aria-pressed="true"] {
   border-color: rgba(244, 234, 208, 0.55);
-  background: rgba(244, 234, 208, 0.10);
+  background-color: var(--kh-bg);
 }
 #songShare:active,
 #songSync:active { transform: scale(0.94); }
@@ -94,21 +98,18 @@ html, body {
 #songShare svg,
 #songSync svg { width: 18px; height: 18px; }
 
+/* The same control contains both icon states. Keeping the unlinked artwork
+   in the markup avoids implying a link is merely crossed out: it is visibly
+   two separated chain ends. */
+#songSync .chain-unlinked { display: none; }
+#songSync[aria-pressed="false"] .chain-linked { display: none; }
+#songSync[aria-pressed="false"] .chain-unlinked { display: block; }
+
 /* The off state is an intentional visual distinction, not a disabled control:
    playback continues, but it no longer moves the reading position. */
 #songSync[aria-pressed="false"] {
   color: var(--kh-ink-soft);
   border-style: dashed;
-}
-#songSync[aria-pressed="false"]::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 1.5px;
-  border-radius: 99px;
-  background: currentColor;
-  transform: rotate(-45deg);
-  pointer-events: none;
 }
 
 /* A quiet confirmation, deliberately adjacent to Share rather than a modal or
@@ -504,7 +505,7 @@ html, body {
 
 /* ---------- Mobile ---------- */
 @media (max-width: 720px) {
-  .song-page { padding: 52px 22px calc(186px + env(safe-area-inset-bottom)); }
+  .song-page { padding: 76px 22px calc(186px + env(safe-area-inset-bottom)); }
   .song-title { font-size: 40px; line-height: 1.15; }
   .song-attrib em { font-size: 19px; }
   .song-hero { margin-bottom: 56px; padding-bottom: 28px; }
@@ -529,7 +530,7 @@ html, body {
   .song-home { width: 36px; height: 36px; }
   #songShare,
   #songSync {
-    top: max(14px, calc(8px + env(safe-area-inset-top)));
+    top: max(22px, calc(14px + env(safe-area-inset-top)));
     width: 36px;
     height: 36px;
   }
