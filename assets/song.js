@@ -437,6 +437,18 @@ function renderSourceNotice(notice) {
   return `<aside class="source-notice"><h2>${escapeHtml(notice.title || "")}</h2>${poet}${detail}</aside>`;
 }
 
+function renderEditionNote(note) {
+  if (!note || !note.summary) return "";
+  const title = escapeHtml(note.title || "Text note");
+  const summary = escapeHtml(note.summary);
+  const detail = note.detail ? `<p>${escapeHtml(note.detail)}</p>` : "";
+  const url = String(note.sourceUrl || "");
+  const source = /^https:\/\//.test(url)
+    ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(note.sourceLabel || "Edition source")}</a>`
+    : "";
+  return `<details class="edition-note"><summary><span>${title}</span>${summary}</summary>${detail}${source}</details>`;
+}
+
 function renderSongMeta() {
   const meta = PAGE_META;
   const hero = document.querySelector(".song-hero");
@@ -462,14 +474,15 @@ function renderSongMeta() {
     ...(meta.subjectTags || []).map(tag => `<span class="song-tag subject-tag">${escapeHtml(tag)}</span>`),
     ...(meta.languages || []).map(tag => `<span class="song-tag language-tag">${escapeHtml(tag)}</span>`),
   ].join("");
+  const edition = renderEditionNote(meta.editionNote);
   let songMeta = hero.querySelector(".song-meta");
   if (!songMeta) {
     songMeta = document.createElement("div");
     songMeta.className = "song-meta";
     hero.querySelector(".song-hint")?.before(songMeta);
   }
-  songMeta.innerHTML = `${credits ? `<dl class="song-credits">${credits}</dl>` : ""}${tags ? `<div class="song-meta-tags" aria-label="Tags">${tags}</div>` : ""}`;
-  songMeta.hidden = !credits && !tags;
+  songMeta.innerHTML = `${credits ? `<dl class="song-credits">${credits}</dl>` : ""}${tags ? `<div class="song-meta-tags" aria-label="Tags">${tags}</div>` : ""}${edition}`;
+  songMeta.hidden = !credits && !tags && !edition;
 }
 
 function render() {

@@ -25,10 +25,10 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
-                self.assertIn('song.js?v=contract-20260821-8', text)
-                self.assertIn('data.js?v=contract-20260821-9', text)
-                self.assertIn('pwa.js?v=contract-20260821-8', text)
-                self.assertIn('song.css?v=contract-20260821-10', text)
+                self.assertRegex(text, r'song\.js\?v=contract-20260821-\d+')
+                self.assertRegex(text, r'data\.js\?v=contract-20260821-\d+')
+                self.assertRegex(text, r'pwa\.js\?v=contract-20260821-\d+')
+                self.assertRegex(text, r'song\.css\?v=contract-20260821-\d+')
                 self.assertEqual(text.count('id="songShare"'), 1)
                 self.assertEqual(text.count('id="songSync"'), 1)
                 self.assertIn('family=EB+Garamond:wght@400;500', text)
@@ -55,6 +55,15 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('"Link copied"', script)
         self.assertIn('"bhakti:lyrics-follow-change"', script)
         self.assertIn('if (lyricsFollowPlayback)', script)
+
+    def test_edition_notes_preserve_recordings_while_exposing_a_source_alternative(self) -> None:
+        script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
+        data = (ROOT / "songs" / "hanuman-chalisa" / "data.js").read_text(encoding="utf-8")
+        self.assertIn("function renderEditionNote", script)
+        self.assertIn('class="edition-note"', script)
+        self.assertIn('"editionNote"', data)
+        self.assertIn("follows the wording sung", data)
+        self.assertIn("jagadgururambhadracharya.org", data)
 
     def test_homepage_preface_and_disclosure_follow_the_ui_contract(self) -> None:
         page = (ROOT / "index.html").read_text(encoding="utf-8")

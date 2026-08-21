@@ -220,6 +220,45 @@ html, body {
   color: var(--kh-ink);
 }
 
+/* A source-aware alternative edition belongs beside the attribution, not in
+   the timed lyric sequence. It is collapsed by default so a recording remains
+   an uninterrupted listening page. */
+.edition-note {
+  width: min(100%, 620px);
+  box-sizing: border-box;
+  border: 1px solid var(--kh-rule);
+  border-radius: 10px;
+  color: var(--kh-ink-soft);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  line-height: 1.55;
+  text-align: left;
+}
+.edition-note summary {
+  display: grid;
+  gap: 3px;
+  padding: 10px 12px;
+  color: var(--kh-ink-soft);
+  cursor: pointer;
+  list-style: none;
+}
+.edition-note summary::-webkit-details-marker { display: none; }
+.edition-note summary span {
+  color: var(--kh-ink);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+.edition-note[open] summary { border-bottom: 1px solid var(--kh-rule); }
+.edition-note p { margin: 0; padding: 10px 12px 0; }
+.edition-note a {
+  display: inline-block;
+  margin: 8px 12px 11px;
+  color: var(--kh-ink);
+  text-underline-offset: 2px;
+}
+
 /* ---------- Source notices for composite liturgies ---------- */
 .source-notice {
   border-top: 1px solid var(--kh-rule);
