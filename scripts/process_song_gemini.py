@@ -103,6 +103,11 @@ def request_headers(provider: str, api_key: str) -> dict[str, str]:
     return headers
 
 
+def permanent_provider_error(provider: str, status: int, detail: str) -> bool:
+    lowered = detail.casefold()
+    return provider == "google" and status == 429 and "prepayment credits are depleted" in lowered
+
+
 def encoded_audio(audio: Path, provider: str) -> tuple[str, str]:
     """Return an OpenAI-compatible audio payload without changing song time.
 
@@ -290,6 +295,8 @@ def call(
             break
         except urllib.error.HTTPError as exc:
             detail = exc.read().decode("utf-8", errors="replace")[:800]
+            if permanent_provider_error(provider, exc.code, detail):
+                raise RuntimeError(f"{provider} HTTP {exc.code}: {detail}") from exc
             if exc.code in {429, 502, 503, 504} and attempt < 5:
                 retry_after = 0.0
                 try:

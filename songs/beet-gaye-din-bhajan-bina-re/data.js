@@ -196,7 +196,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kabīr",
-        "gloss": "Kabir"
+        "gloss": "poet-saint"
       },
       {
         "roman": "suno",

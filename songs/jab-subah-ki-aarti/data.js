@@ -165,7 +165,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai's",
+        "gloss": "holy master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -246,7 +246,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba (Sai Baba)",
+        "gloss": "father; revered master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -369,7 +369,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai",
+        "gloss": "holy master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -408,7 +408,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai's",
+        "gloss": "holy master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -573,7 +573,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai",
+        "gloss": "holy master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -663,7 +663,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai's",
+        "gloss": "holy master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -720,7 +720,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai",
+        "gloss": "holy master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -861,7 +861,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba",
+        "gloss": "father; revered master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -873,7 +873,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba",
+        "gloss": "father; revered master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -885,7 +885,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba",
+        "gloss": "father; revered master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -930,7 +930,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "Baba",
+        "gloss": "father; revered master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1095,7 +1095,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "Sai",
+        "gloss": "holy master",
         "concept_key": "",
         "preserve_in_english": false
       },

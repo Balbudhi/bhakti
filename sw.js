@@ -1,4 +1,4 @@
-const CACHE = "bhakti-shell-v6";
+const CACHE = "bhakti-shell-v7";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/assets/site.css", "/assets/library.js", "/data/songs.js", "/assets/favicon.svg", "/assets/favicon.png"];
 
 self.addEventListener("install", event => event.waitUntil(

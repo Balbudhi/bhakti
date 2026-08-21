@@ -408,26 +408,30 @@ function renderSongMeta() {
   if (title && meta.title) title.textContent = meta.title;
   if (meta.title) document.title = meta.title;
 
-  const subtitleText = meta.subtitle || (meta.subjectTags || [])[0] || "";
-  let subtitle = hero.querySelector(".song-attrib");
-  if (subtitleText && !subtitle) {
-    subtitle = document.createElement("p");
-    subtitle.className = "song-attrib";
-    subtitle.innerHTML = "<em></em>";
-    (hero.querySelector(".song-credit") || hero.querySelector(".song-hint"))?.before(subtitle);
+  hero.querySelectorAll(".song-attrib, .song-credit").forEach(element => element.remove());
+  const people = new Map();
+  [["writer", "Poet"], ["singer", "Singer"], ["composer", "Music"]].forEach(([field, role]) => {
+    const person = String(meta[field] || "").trim();
+    if (!person) return;
+    people.set(person, [...(people.get(person) || []), role]);
+  });
+  const credits = [...people].map(([person, roles]) => `
+    <div class="song-credit-entry">
+      <dt>${escapeHtml(roles.join(" · "))}</dt>
+      <dd>${escapeHtml(person)}</dd>
+    </div>`).join("");
+  const tags = [
+    ...(meta.subjectTags || []).map(tag => `<span class="song-tag subject-tag">${escapeHtml(tag)}</span>`),
+    ...(meta.languages || []).map(tag => `<span class="song-tag language-tag">${escapeHtml(tag)}</span>`),
+  ].join("");
+  let songMeta = hero.querySelector(".song-meta");
+  if (!songMeta) {
+    songMeta = document.createElement("div");
+    songMeta.className = "song-meta";
+    hero.querySelector(".song-hint")?.before(songMeta);
   }
-  if (subtitle) {
-    subtitle.hidden = !subtitleText;
-    const value = subtitle.querySelector("em") || subtitle;
-    value.textContent = subtitleText;
-  }
-
-  const creditText = meta.pageCredit || meta.singer || meta.credit || "";
-  const credit = hero.querySelector(".song-credit");
-  if (credit) {
-    credit.hidden = !creditText;
-    credit.textContent = creditText;
-  }
+  songMeta.innerHTML = `${credits ? `<dl class="song-credits">${credits}</dl>` : ""}${tags ? `<div class="song-meta-tags" aria-label="Tags">${tags}</div>` : ""}`;
+  songMeta.hidden = !credits && !tags;
 }
 
 function render() {

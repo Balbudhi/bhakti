@@ -79,25 +79,62 @@ html, body {
   color: var(--kh-ink);
   letter-spacing: 0.005em;
 }
-.song-attrib {
+.song-meta {
+  display: grid;
+  justify-items: center;
+  gap: 17px;
+}
+.song-credits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px 28px;
   margin: 0;
 }
-.song-attrib em {
-  font-family: var(--kh-serif);
-  font-style: normal;
-  font-weight: 400;
-  color: var(--kh-ink-soft);
-  font-size: 22px;
-  letter-spacing: 0.04em;
-  text-transform: none;
+.song-credit-entry {
+  display: grid;
+  gap: 3px;
+  min-width: 112px;
 }
-.song-credit {
-  margin: 14px 0 0;
-  font-family: var(--kh-serif);
-  font-size: 17px;
+.song-credit-entry dt {
   color: var(--kh-ink-soft);
-  letter-spacing: 0.04em;
+  font-family: Inter, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.song-credit-entry dd {
+  color: var(--kh-ink);
+  font-family: var(--kh-serif);
+  font-size: 18px;
   font-weight: 400;
+  letter-spacing: 0.015em;
+  line-height: 1.25;
+  margin: 0;
+}
+.song-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+.song-tag {
+  border: 1px solid var(--kh-rule);
+  border-radius: 999px;
+  color: var(--kh-ink-soft);
+  font-family: Inter, sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  line-height: 1;
+  padding: 6px 9px;
+  white-space: nowrap;
+}
+.song-tag.subject-tag {
+  border-color: rgba(244, 234, 208, 0.44);
+  color: var(--kh-ink);
 }
 
 /* ---------- Audio player (fixed, blends into body) ---------- */

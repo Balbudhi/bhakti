@@ -106,7 +106,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Jagannātha",
-        "gloss": "Jagannatha / Lord of the Universe",
+        "gloss": "Lord of the universe",
         "concept_key": "",
         "preserve_in_english": false
       }

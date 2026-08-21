@@ -300,7 +300,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kabīr",
-        "gloss": "Kabir [proper name]"
+        "gloss": "poet-saint"
       },
       {
         "roman": "sun",

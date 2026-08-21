@@ -45,7 +45,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīṃ",
-        "gloss": "Sai; revered master"
+        "gloss": "holy master"
       }
     ]
   },
@@ -506,10 +506,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 69.45,
-    "end": 81.0
+    "end": 81
   },
   {
-    "start": 81.0,
+    "start": 81,
     "end": 86.8
   },
   {

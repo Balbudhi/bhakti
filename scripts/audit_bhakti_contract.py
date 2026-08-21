@@ -15,11 +15,13 @@ from pathlib import Path
 from typing import Any
 
 import tag_taxonomy
+import gloss_policy
 
 
 ROOT = Path(__file__).resolve().parents[1]
 VALID_SECTIONS = {"invocation", "refrain", "verse", "bridge", "closing", "spoken", "instrumental"}
-REQUIRED_META = {"title", "credit", "languages", "subjectTags", "timingStatus", "translationStatus", "sourceStatus"}
+REQUIRED_META = {"title", "credit", "writer", "singer", "composer", "languages", "subjectTags",
+                 "timingStatus", "translationStatus", "sourceStatus"}
 PRESERVED_TERMS = json.loads((ROOT / "data" / "preserved_terms.json").read_text(encoding="utf-8")).get("terms", {})
 
 
@@ -51,6 +53,11 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
             problems.append("SONG_META languages must be a non-empty list")
         if not isinstance(meta.get("subjectTags"), list):
             problems.append("SONG_META subjectTags must be a list")
+        for role in ("writer", "singer", "composer"):
+            if not isinstance(meta.get(role), str):
+                problems.append(f"SONG_META {role} must be a string")
+        if not str(meta.get("singer", "")).strip():
+            problems.append("SONG_META singer is required for a published reader")
         if meta.get("timingStatus") != "start-only-reviewed":
             problems.append("SONG_META timingStatus is not start-only-reviewed")
     lines = data.get("SONG_LINES", {})
@@ -91,6 +98,8 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
                 if at < 0 or not gloss.strip():
                     problems.append(f"{line_id} word[{word_index}] cannot map to roman text or lacks a gloss")
                     break
+                if gloss_policy.is_self_referential(token, gloss):
+                    problems.append(f"{line_id} word[{word_index}] gloss repeats the visible term instead of explaining it")
                 cursor = at + len(token)
                 concept_key = word.get("concept_key") if isinstance(word, dict) else None
                 preserve = word.get("preserve_in_english") if isinstance(word, dict) else False

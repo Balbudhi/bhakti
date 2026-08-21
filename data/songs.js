@@ -1,25 +1,23 @@
 window.BHAKTI_SONGS = [
   {
-    "slug": "aisa-pyar-baha-de-maiya",
-    "title": "Aisā Pyār Bahā De Maiyā",
-    "credit": "Hari Om Sharan",
+    "slug": "koi-hor-nahi",
+    "title": "Koī Hor Nahī Hai Merā",
+    "credit": "Aman Ji · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
-      "Hindi",
-      "Sanskrit"
+      "Punjabi"
     ],
     "subjectTags": [
-      "Śakti",
-      "Durgā"
+      "Śakti"
     ],
     "searchAliases": [
-      "Aisa Pyar Baha De Maiya",
-      "Durga Vandana",
-      "Hari Om Sharan"
+      "Koi Hor Nahi Hai Mera",
+      "Aman Ji",
+      "Shri Mata Vaishno Devi Bhawan"
     ],
     "writer": "",
-    "singer": "",
+    "singer": "Aman Ji",
     "composer": "",
-    "subtitle": "Durgā Vandanā"
+    "subtitle": "Jai Mātā Dī"
   },
   {
     "slug": "rom-rom-mein-basne-wale-ram",
@@ -240,20 +238,42 @@ window.BHAKTI_SONGS = [
     "subtitle": "Kabīr"
   },
   {
-    "slug": "duniya-de-dukhan",
-    "title": "Duniyā De Dukhāṅ Menū Baṛā Hī Satāyā Mā",
-    "credit": "Suresh Ji · Shri Mata Vaishno Devi Bhawan",
+    "slug": "yeh-garv-bhara-mastak",
+    "title": "Yeh Garv Bharā Mastak Merā",
+    "credit": "Hari Om Sharan",
     "languageTags": [
-      "Punjabi"
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Hari Om Sharan"
+    ],
+    "writer": "",
+    "singer": "Hari Om Sharan",
+    "composer": "",
+    "subtitle": "Prārthanā"
+  },
+  {
+    "slug": "aisa-pyar-baha-de-maiya",
+    "title": "Aisā Pyār Bahā De Maiyā",
+    "credit": "Hari Om Sharan",
+    "languageTags": [
+      "Hindi",
+      "Sanskrit"
     ],
     "subjectTags": [
-      "Śakti"
+      "Śakti",
+      "Durgā"
     ],
-    "searchAliases": [],
+    "searchAliases": [
+      "Aisa Pyar Baha De Maiya",
+      "Durga Vandana",
+      "Hari Om Sharan"
+    ],
     "writer": "",
-    "singer": "",
+    "singer": "Hari Om Sharan",
     "composer": "",
-    "subtitle": "Jai Mātā Dī"
+    "subtitle": "Durgā Vandanā"
   },
   {
     "slug": "jhoothe-jag-ne",
@@ -271,27 +291,7 @@ window.BHAKTI_SONGS = [
       "Shri Mata Vaishno Devi Bhawan"
     ],
     "writer": "",
-    "singer": "",
-    "composer": "",
-    "subtitle": "Jai Mātā Dī"
-  },
-  {
-    "slug": "koi-hor-nahi",
-    "title": "Koī Hor Nahī Hai Merā",
-    "credit": "Aman Ji · Shri Mata Vaishno Devi Bhawan",
-    "languageTags": [
-      "Punjabi"
-    ],
-    "subjectTags": [
-      "Śakti"
-    ],
-    "searchAliases": [
-      "Koi Hor Nahi Hai Mera",
-      "Aman Ji",
-      "Shri Mata Vaishno Devi Bhawan"
-    ],
-    "writer": "",
-    "singer": "",
+    "singer": "Maninder Ji",
     "composer": "",
     "subtitle": "Jai Mātā Dī"
   },
@@ -371,7 +371,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "thanu-karagadavaralli",
     "title": "Tanu Karagadavaralli Puṣpavanolle",
-    "credit": "Akkamahādevī · Sangeeta Katti Kulkarni",
+    "credit": "Akkamahādevī · Sangeeta Katti Kulkarni · N. S. Prasad",
     "languageTags": [
       "Kannada"
     ],
@@ -385,7 +385,7 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Akkamahādevī",
     "singer": "Sangeeta Katti Kulkarni",
-    "composer": "",
+    "composer": "N. S. Prasad",
     "subtitle": "A Vachana by Akkamahādevī"
   },
   {
@@ -675,19 +675,19 @@ window.BHAKTI_SONGS = [
     "subtitle": "Aaram Haram Aahe"
   },
   {
-    "slug": "yeh-garv-bhara-mastak",
-    "title": "Yeh Garv Bharā Mastak Merā",
-    "credit": "Hari Om Sharan",
+    "slug": "duniya-de-dukhan",
+    "title": "Duniyā De Dukhāṅ Menū Baṛā Hī Satāyā Mā",
+    "credit": "Suresh Ji · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
-      "Hindi"
+      "Punjabi"
     ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Hari Om Sharan"
+    "subjectTags": [
+      "Śakti"
     ],
+    "searchAliases": [],
     "writer": "",
-    "singer": "",
+    "singer": "Suresh Ji",
     "composer": "",
-    "subtitle": "Prārthanā"
+    "subtitle": "Jai Mātā Dī"
   }
 ];

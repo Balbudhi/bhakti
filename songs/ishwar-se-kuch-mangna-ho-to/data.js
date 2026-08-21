@@ -272,7 +272,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Hari",
-        "gloss": "Hari, the Lord"
+        "gloss": "Lord Viṣṇu; remover of suffering"
       },
       {
         "roman": "pūjā",
@@ -581,18 +581,18 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 220.8,
-    "end": 236.0
+    "end": 236
   },
   {
-    "start": 236.0,
+    "start": 236,
     "end": 250.62
   },
   {
     "start": 250.62,
-    "end": 258.0
+    "end": 258
   },
   {
-    "start": 258.0,
+    "start": 258,
     "end": 272.7
   },
   {
