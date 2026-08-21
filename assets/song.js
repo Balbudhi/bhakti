@@ -459,7 +459,11 @@ function renderEditionSwitch(meta) {
   const keys = Object.keys(variants);
   if (keys.length < 2) return "";
   const active = selectedEdition(meta);
-  const options = keys.map(key => `<option value="${escapeHtml(key)}"${key === active ? " selected" : ""}>${escapeHtml(variants[key].label || key)}</option>`).join("");
+  const options = keys.map(key => {
+    const variant = variants[key] || {};
+    const label = variant.shortLabel || variant.label || key;
+    return `<option value="${escapeHtml(key)}"${key === active ? " selected" : ""}>${escapeHtml(label)}</option>`;
+  }).join("");
   return `<div class="edition-switch"><label class="visually-hidden" for="editionSelect">Text edition</label><select class="edition-select" id="editionSelect" aria-label="Text edition">${options}</select></div>`;
 }
 
