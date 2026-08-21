@@ -32,6 +32,9 @@ class NamingTests(unittest.TestCase):
     def test_slugify_uses_plain_searchable_spelling(self) -> None:
         self.assertEqual(naming.slugify("Ākāśī Jhep Ghe Re Pākharā"), "akashi-jhep-ghe-re-pakhara")
 
+    def test_combining_vocalic_letters_normalize_to_standard_iast(self) -> None:
+        self.assertEqual(naming.canonical_iast("hr̥daya kr̥̄pā kl̥pta"), "hṛdaya kṝpā kḷpta")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -18,7 +18,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "source-script-migration-required",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-dil-udaas-ho-to.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -92,7 +98,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "name"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "lenā",

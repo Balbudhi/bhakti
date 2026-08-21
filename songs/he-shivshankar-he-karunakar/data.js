@@ -22,11 +22,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-shivshankar-he-karunakar.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-shivshankar-he-karunakar.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -50,7 +50,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śivaśaṅkara",
-        "gloss": "Shiva-Shankara (Auspicious Cause of Good)",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -133,7 +133,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śivaśaṅkara",
-        "gloss": "Shiva-Shankara",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1247,7 +1247,7 @@ window.SONG_LINES = {
     "source": "झुक गया माथा कि तुमने हाँ कहा जिस पल उमापति",
     "sourceLanguage": "hi",
     "roman": "jhuka gayā māthā ki tumane hāñ kahā jisa pala umāpati",
-    "english": "{2:My head }{0,1:bowed }{3,7,8:the very moment }{4,5,6:you said yes, }{9:O Lord of Uma,}",
+    "english": "{2:My head }{0,1:bowed }{3,7,8:the very moment }{4,5,6:you said yes, }{9:O cherisher of Umā,}",
     "words": [
       {
         "roman": "jhuka",
@@ -1305,7 +1305,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "umāpati",
-        "gloss": "Lord of Uma (Shiva)",
+        "gloss": "cherisher of Umā (Śiva)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1894,7 +1894,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śivaśaṅkara",
-        "gloss": "Shiva-Shankara",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1929,7 +1929,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śivaśaṅkara",
-        "gloss": "Shiva-Shankara",
+        "gloss": "Śiva as the auspicious maker of good",
         "concept_key": "",
         "preserve_in_english": false
       },

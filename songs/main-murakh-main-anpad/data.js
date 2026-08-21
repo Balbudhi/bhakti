@@ -1,13 +1,14 @@
 window.SONG_META = {
   "title": "Main Mūrakh Main Anpaṛh Bālak",
-  "credit": "Shri Chandra Bhanu Satpathy",
-  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
+  "pageCredit": "Deepak Kumar",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "Shri Chandra Bhanu Satpathy",
+  "singer": "Deepak Kumar",
   "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Main Murakh Main Anpad Balak",
     "Satpathy Baba",
+    "Deepak Kumar",
     "Shirdi Sai"
   ],
   "languages": [
@@ -18,7 +19,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "source-script-migration-required",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-murakh-main-anpad.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -390,7 +397,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "name"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "agar",

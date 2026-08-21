@@ -18,7 +18,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/zara-to-itana-bata-do-sai.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {

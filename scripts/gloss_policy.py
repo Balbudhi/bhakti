@@ -74,6 +74,7 @@ MEANING_ONLY = {
     "rudra": "fierce form of Śiva",
     "sai": "holy master",
     "sainath": "Lord Sai",
+    "sivasankara": "Śiva as the auspicious maker of good",
     "sudama": "impoverished devotee and friend of Kṛṣṇa",
     "tunga": "lofty; high",
     "vasko": "the poet's name",
@@ -81,9 +82,17 @@ MEANING_ONLY = {
 
 
 def is_self_referential(roman: object, gloss: object) -> bool:
-    gloss_key = key(gloss)
+    def loose(value: str) -> str:
+        # Model output often substitutes English digraphs for IAST letters:
+        # śivaśaṅkara → Shiva-Shankara. This remains repetition, not meaning.
+        return value.replace(" ", "").replace("sh", "s")
+
+    gloss_key = loose(key(gloss))
     return any(
-        len(roman_key) >= 3 and (gloss_key == roman_key or gloss_key.startswith(f"{roman_key} "))
+        len(roman_key) >= 3 and (
+            gloss_key == loose(roman_key)
+            or gloss_key.startswith(loose(roman_key))
+        )
         for roman_key in roman_keys(roman)
     )
 

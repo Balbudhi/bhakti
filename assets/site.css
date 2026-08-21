@@ -48,7 +48,7 @@ main {
 
 .library-invocation-roman {
   color: var(--ink);
-  font: 400 clamp(20px, 2.7vw, 26px) / 1.42 "Cormorant Garamond", Georgia, serif;
+  font: 400 clamp(20px, 2.7vw, 26px) / 1.42 "EB Garamond", "Cormorant Garamond", Georgia, serif;
   letter-spacing: 0.008em;
   margin: 13px 0 0;
 }
@@ -276,13 +276,13 @@ main {
 }
 
 .song-title {
-  font: 400 clamp(30px, 3.5vw, 42px) / 1.04 "Cormorant Garamond", Georgia, serif;
+  font: 400 clamp(30px, 3.5vw, 42px) / 1.04 "EB Garamond", "Cormorant Garamond", Georgia, serif;
   letter-spacing: -0.012em;
 }
 
 .credit {
   color: var(--muted);
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", "Cormorant Garamond", Georgia, serif;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.015em;

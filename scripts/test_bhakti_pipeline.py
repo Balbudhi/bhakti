@@ -193,6 +193,17 @@ class PipelineTests(unittest.TestCase):
             {"start": 7.0, "end": 8.0},
         ])
 
+    def test_does_not_merge_adjacent_near_refrains_with_a_real_terminal_variation(self) -> None:
+        sequence = [
+            {"ref": "hari-bhajana-ko-mana-le", "section": "refrain", "repeats": 3},
+            {"ref": "hari-bhajana-ko-mana-re", "section": "refrain", "repeats": 2},
+        ]
+        timings = [{"start": 1.0, "end": 10.0}, {"start": 10.0, "end": 16.0}]
+        merged_sequence, merged_timings, merged = pipeline.compress_adjacent_reader_entries(sequence, timings)
+        self.assertEqual(merged, 0)
+        self.assertEqual(merged_sequence, sequence)
+        self.assertEqual(merged_timings, timings)
+
     def test_start_only_response_derives_intervals_and_blocks_reordering(self) -> None:
         occurrences = [
             {"occurrence_id": "occ-000", "ref": "a", "section": "refrain", "repeats": 2},
@@ -224,6 +235,34 @@ class PipelineTests(unittest.TestCase):
         sequence = pipeline.uniform_coarse_sequence(occurrences, 10.0)
         self.assertEqual([entry["start"] for entry in sequence], [2.5, 7.5])
         self.assertEqual([entry["repeats"] for entry in sequence], [1, 2])
+
+    def test_fallback_grid_routes_without_voting_and_keeps_valid_partial_window_starts(self) -> None:
+        occurrences = [
+            {"occurrence_id": "occ-000", "ref": "a", "section": "verse", "repeats": 1},
+            {"occurrence_id": "occ-001", "ref": "b", "section": "refrain", "repeats": 1},
+        ]
+        coarse = pipeline.uniform_coarse_sequence(occurrences, 10.0)
+
+        def timing_report(_audio, _occurrences, chunk, _options, _destination, _cache_path, **_kwargs):
+            second_pass = chunk["grid"] == "dispute-verification"
+            return {
+                "index": chunk["index"],
+                "starts": [
+                    {"occurrence_id": "occ-000", "start": 1.1 if second_pass else 1.0},
+                    {"occurrence_id": "occ-001", "start": 8.1 if second_pass else 8.0},
+                ],
+                # A malformed sibling entry must not erase valid starts.
+                "validation_errors": ["one sibling onset was malformed"] if not second_pass else [],
+            }
+
+        with mock.patch.object(pipeline, "refine_timing_chunk", side_effect=timing_report):
+            sequence, _evidence, errors = pipeline.refine_all_starts(
+                Path("unused.m4a"), occurrences, coarse, 10.0, mock.Mock(model="test", timeout=1),
+                coarse_is_evidence=False, max_coarse_delta=10.0,
+            )
+        self.assertEqual(errors, [])
+        self.assertEqual([entry["start"] for entry in sequence], [1.05, 8.05])
+        self.assertNotIn(2.5, [entry["start"] for entry in sequence])
 
     def test_new_timing_evidence_can_agree_with_the_existing_verifier(self) -> None:
         # Coarse and window disagree, but one narrow check agreeing with either
@@ -288,6 +327,33 @@ class PipelineTests(unittest.TestCase):
         (song / "audio.m4a").touch()
         (song / "audio.webm").touch()
         self.assertEqual(pipeline.preferred_listener_audio(song).name, "audio.webm")
+
+    def test_published_audio_uses_release_manifest_without_losing_local_development_fallback(self) -> None:
+        song = self.root / "songs" / "release-audio"
+        song.mkdir()
+        (song / "audio.m4a").touch()
+        self.assertEqual(pipeline.published_audio_sources(song), [
+            {"src": "audio.m4a", "type": "audio/mp4"},
+        ])
+        remote = [{"src": "https://github.com/example/release-audio.m4a", "type": "audio/mp4"}]
+        (self.root / "data" / "media.json").write_text(
+            json.dumps({"songs": {"release-audio": remote}}), encoding="utf-8"
+        )
+        self.assertEqual(pipeline.published_audio_sources(song), remote)
+
+    def test_language_hold_detects_sanskrit_from_first_pass_metadata(self) -> None:
+        self.assertTrue(pipeline.is_sanskrit_first_pass({"packet": {"metadata": {"languages": ["sa"]}}}))
+        self.assertFalse(pipeline.is_sanskrit_first_pass({"packet": {"metadata": {"languages": ["Hindi", "Marathi"]}}}))
+
+    def test_language_hold_retains_transcript_without_generating_a_reader(self) -> None:
+        song = self.root / "songs" / "held-song"
+        (song / ".transcription" / "pipeline").mkdir(parents=True)
+        raw = {"packet": {"metadata": {"languages": ["Sanskrit"]}}, "usage": {"cost": 0.01}}
+        packet = pipeline.language_hold_packet(song, {"source_file": "held.m4a"}, raw, 0.0)
+        saved = json.loads((song / ".transcription" / "pipeline" / "song-packet.json").read_text(encoding="utf-8"))
+        self.assertEqual(packet["publication_status"], "held-language")
+        self.assertEqual(saved["transcript"], raw)
+        self.assertFalse((song / "data.js").exists())
 
     def test_intake_normalizes_music_watch_urls_to_canonical_webpage_url(self) -> None:
         metadata = {"webpage_url": "https://www.youtube.com/watch?v=Xw0yC-5bK_I", "id": "Xw0yC-5bK_I"}

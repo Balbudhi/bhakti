@@ -20,7 +20,13 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jhoothe-jag-ne.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -606,7 +612,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Baccheyāṅ toṅ pīṛā huṇ jāndiyāṅ nā jhall mā",
-    "english": "{2:The pains }{4,5,6:cannot be endured }{0,1:by the children }{3:now, }{7:O Mother.}",
+    "english": "{0,1:The children }{3,4,5,6:can no longer bear }{2:the pain, }{7:O Mother.}",
     "words": [
       {
         "roman": "Baccheyāṅ",
@@ -906,7 +912,7 @@ window.SONG_LINES = {
   },
   "v3a": {
     "roman": "Waqt diyāṅ ṭhokarāṅ den parshāniyāṅ",
-    "english": "{2:The stumbles }{0,1:of time }{3:give }{4:troubles.}",
+    "english": "{0,1:Time's }{2:blows }{3:bring }{4:troubles.}",
     "words": [
       {
         "roman": "Waqt",
@@ -1226,7 +1232,7 @@ window.SONG_LINES = {
   },
   "v4b": {
     "roman": "Injh peā lagge jiveṅ sāh huṇ mukkeyā",
-    "english": "{1,2:It seems }{0:this way, }{3:as if }{4:breath }{6:is finished }{5:now.}",
+    "english": "{0,1,2:It feels }{3:as though }{4:my breath }{5,6:has now run out.}",
     "words": [
       {
         "roman": "Injh",

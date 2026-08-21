@@ -19,11 +19,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rom-rom-mein-basne-wale-ram.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rom-rom-mein-basne-wale-ram.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -36,7 +36,7 @@ window.SONG_LINES = {
   "intro-alap": {
     "source": "हे रोम-रोम में बसने वाले राम, आ...",
     "sourceLanguage": "hi",
-    "roman": "he rom-rom mẽ basne vāle rām, ā...",
+    "roman": "he rom-rom mẽ basne vāle rām, ā...",
     "english": "{0:O} {5:Ram} {3,4:who dwells} {2:in} {1:every pore,} {6:ah...}",
     "words": [
       {
@@ -52,7 +52,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -71,7 +71,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām,",
-        "gloss": "Rama / Lord (vocative)",
+        "gloss": "Lord (vocative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -131,7 +131,7 @@ window.SONG_LINES = {
   "refrain-rom-rom": {
     "source": "हे रोम-रोम में बसने वाले राम",
     "sourceLanguage": "hi",
-    "roman": "he rom-rom mẽ basne vāle rām",
+    "roman": "he rom-rom mẽ basne vāle rām",
     "english": "{0:O} {5:Ram} {3,4:who dwells} {2:in} {1:every pore,}",
     "words": [
       {
@@ -147,7 +147,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in",
         "concept_key": "",
         "preserve_in_english": false
@@ -166,7 +166,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rama / Lord (vocative)",
+        "gloss": "Lord (vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -285,11 +285,11 @@ window.SONG_LINES = {
   "refrain-main-tujhse": {
     "source": "मैं तुझसे क्या माँगूँ",
     "sourceLanguage": "hi",
-    "roman": "maĩ tujhse kyā māṅgū̃",
+    "roman": "maĩ tujhse kyā māṅgū̃",
     "english": "{2:what} {0,3:should I ask} {1:of you?}",
     "words": [
       {
-        "roman": "maĩ",
+        "roman": "maĩ",
         "gloss": "I (1st person singular pronoun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -545,7 +545,7 @@ window.SONG_LINES = {
   "v1-nath-mere": {
     "source": "नाथ मेरे मैं क्यों कुछ सोचूँ",
     "sourceLanguage": "hi",
-    "roman": "nāth mere maĩ kyõ kuch socū̃",
+    "roman": "nāth mere maĩ kyõ kuch socū̃",
     "english": "{0,1:My Lord,} {3:why} {2,5:should I think} {4:of anything?}",
     "words": [
       {
@@ -561,13 +561,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "maĩ",
+        "roman": "maĩ",
         "gloss": "I (1st person singular pronoun)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kyõ",
+        "roman": "kyõ",
         "gloss": "why (interrogative adverb)",
         "concept_key": "",
         "preserve_in_english": false
@@ -841,7 +841,7 @@ window.SONG_LINES = {
   "v2-bhaag-mere": {
     "source": "भाग मेरे जो मैंने पाया",
     "sourceLanguage": "hi",
-    "roman": "bhāg mere jo maĩne pāyā",
+    "roman": "bhāg mere jo maĩne pāyā",
     "english": "{0,1:Blessed is my fortune} {2:that} {3,4:I have found}",
     "words": [
       {
@@ -863,7 +863,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "maĩne",
+        "roman": "maĩne",
         "gloss": "I (1st person singular pronoun with ergative marker 'ne')",
         "concept_key": "",
         "preserve_in_english": false
@@ -875,7 +875,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Ergative construction 'maĩne pāyā' agreeing in masculine singular with the implied object 'dhām' from the next line.",
+    "grammarNote": "Ergative construction 'maĩne pāyā' agreeing in masculine singular with the implied object 'dhām' from the next line.",
     "sourceWords": [
       {
         "text": "भाग",
@@ -912,7 +912,7 @@ window.SONG_LINES = {
   "v2-in-charnon-mein": {
     "source": "इन चरणों में धाम",
     "sourceLanguage": "hi",
-    "roman": "in caraṇõ mẽ dhām",
+    "roman": "in caraṇõ mẽ dhām",
     "english": "{3:an abode} {0,1,2:at these feet.}",
     "words": [
       {
@@ -922,13 +922,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "caraṇõ",
+        "roman": "caraṇõ",
         "gloss": "feet (masculine plural oblique)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mẽ",
+        "roman": "mẽ",
         "gloss": "in / at (locative postposition)",
         "concept_key": "",
         "preserve_in_english": false
@@ -940,7 +940,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative phrase 'in caraṇõ mẽ' qualifying the direct object 'dhām'.",
+    "grammarNote": "Locative phrase 'in caraṇõ mẽ' qualifying the direct object 'dhām'.",
     "sourceWords": [
       {
         "text": "इन",
@@ -1125,7 +1125,7 @@ window.SONG_LINES = {
   "v3-tere-kiye-ko": {
     "source": "तेरे किए को हम क्या देवें",
     "sourceLanguage": "hi",
-    "roman": "tere kiye ko ham kyā devẽ",
+    "roman": "tere kiye ko ham kyā devẽ",
     "english": "{0,1,2:To what you have done,} {3,4,5:what should we give—}",
     "words": [
       {
@@ -1159,13 +1159,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "devẽ",
+        "roman": "devẽ",
         "gloss": "should we give / assign (1st person plural subjunctive)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Substantivized perfect participle 'kiye' used as a noun ('that which is done by you'), governing the dative postposition 'ko'. Verb 'devẽ' is 1st person plural subjunctive.",
+    "grammarNote": "Substantivized perfect participle 'kiye' used as a noun ('that which is done by you'), governing the dative postposition 'ko'. Verb 'devẽ' is 1st person plural subjunctive.",
     "sourceWords": [
       {
         "text": "तेरे",
@@ -1225,7 +1225,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "name / label / designation",
+        "gloss": "label / designation",
         "concept_key": "",
         "preserve_in_english": false
       }

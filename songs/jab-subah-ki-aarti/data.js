@@ -20,11 +20,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.mp3",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-subah-ki-aarti.mp3",
       "type": "audio/mpeg"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-subah-ki-aarti.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -42,7 +42,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śirḍī",
-        "gloss": "Shirdi (place name)",
+        "gloss": "place name",
         "concept_key": "",
         "preserve_in_english": false
       },

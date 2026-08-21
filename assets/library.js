@@ -202,7 +202,7 @@
     <a class="song-card" href="songs/${song.slug}/" aria-label="Open ${song.title}">
       <span class="song-copy">
         <span class="song-title">${song.title}</span>
-        <span class="credit">${song.singer || song.credit}</span>
+        ${song.singer || song.credit ? `<span class="credit">${song.singer || song.credit}</span>` : ""}
       </span>
       <span class="tags" aria-label="${[...song.subjectTags, ...song.languageTags].join(", ")}">
         ${song.subjectTags.map(tag => `<span class="subject-tag">${tag}</span>`).join("")}

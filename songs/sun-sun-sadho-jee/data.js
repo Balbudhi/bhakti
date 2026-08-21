@@ -22,7 +22,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sun-sun-sadho-jee.m4a",
       "type": "audio/mp4"
     }
   ],

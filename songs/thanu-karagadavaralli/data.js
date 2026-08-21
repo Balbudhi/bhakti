@@ -18,7 +18,17 @@ window.SONG_META = {
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thanu-karagadavaralli.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thanu-karagadavaralli.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {

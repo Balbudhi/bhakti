@@ -14,7 +14,17 @@ window.SONG_META = {
   "subjectTags": [],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
-  "timingStatus": "start-only-reviewed"
+  "timingStatus": "start-only-reviewed",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-garv-bhara-mastak.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-garv-bhara-mastak.m4a",
+      "type": "audio/mp4"
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -208,7 +218,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "name"
+        "gloss": "proper name or untranslated term"
       },
       {
         "roman": "kī",

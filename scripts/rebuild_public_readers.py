@@ -10,6 +10,7 @@ import audit_bhakti_contract as audit
 import bhakti_pipeline as pipeline
 import gloss_policy
 import source_word_map
+import naming
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,9 +29,22 @@ def rebuild(directory: Path) -> tuple[bool, bool]:
         return False, False
     data = audit.load_data(data_path)
     changed = False
+    audio_sources = pipeline.published_audio_sources(directory)
+    if audio_sources and audio_sources != data["SONG_META"].get("audioSources"):
+        data["SONG_META"]["audioSources"] = audio_sources
+        changed = True
     for line in data["SONG_LINES"].values():
+        roman = naming.canonical_iast(line.get("roman", ""))
+        if roman != line.get("roman"):
+            line["roman"] = roman
+            changed = True
+        grammar_note = naming.canonical_iast(line.get("grammarNote", ""))
+        if grammar_note != line.get("grammarNote", ""):
+            line["grammarNote"] = grammar_note
+            changed = True
         words = line.get("words", [])
-        cleaned = [gloss_policy.clean_word(word) for word in words]
+        cleaned = [gloss_policy.clean_word({**word, "roman": naming.canonical_iast(word.get("roman", ""))})
+                   for word in words]
         if cleaned != words:
             line["words"] = cleaned
             words = cleaned

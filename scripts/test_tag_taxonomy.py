@@ -45,6 +45,10 @@ class TagTaxonomyTests(unittest.TestCase):
         inferred = tags.infer_named_subject_tags([{"roman": "pavanaputra hanumāna saṅkaṭa harana"}])
         self.assertIn("Hanumān", inferred)
 
+    def test_ganesha_names_are_recognized(self) -> None:
+        inferred = tags.infer_named_subject_tags([{"roman": "gajavadan gaṇapati vināyaka"}])
+        self.assertIn("Gaṇeśa", inferred)
+
     def test_vaishno_devi_is_both_specific_and_shakti(self) -> None:
         inferred = tags.infer_named_subject_tags([{"roman": "Vaishno Devi"}])
         self.assertIn("Śakti", inferred)

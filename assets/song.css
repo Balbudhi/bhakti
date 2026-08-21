@@ -11,10 +11,11 @@
   --kh-ink-mid:   rgba(244, 234, 208, 0.28);
   --kh-rule:      rgba(244, 234, 208, 0.18);
 
-  /* Cormorant Garamond — Garamond revival, elegant and well-
-     spaced. Designed by Christian Thalmann; one of the
-     loveliest open fonts for poetry/devotional bodies. */
+  /* Cormorant retains the devotional display character. EB Garamond is the
+     companion IAST face: its Latin Extended glyphs keep dots, rings, macrons,
+     and under-marks optically consistent at large mobile sizes. */
   --kh-serif:   "Cormorant Garamond", "EB Garamond", Georgia, "Times New Roman", serif;
+  --kh-iast-serif: "EB Garamond", "Cormorant Garamond", Georgia, "Times New Roman", serif;
 }
 
 html, body {
@@ -29,7 +30,7 @@ html, body {
   padding: 80px 36px 140px;
   color: var(--kh-ink);
   font-family: var(--kh-serif);
-  padding-bottom: calc(140px + env(safe-area-inset-bottom));
+  padding-bottom: calc(156px + env(safe-area-inset-bottom));
 }
 
 .song-home {
@@ -70,7 +71,7 @@ html, body {
   text-align: center;
 }
 .song-title {
-  font-family: var(--kh-serif);
+  font-family: var(--kh-iast-serif);
   font-weight: 400;
   font-style: normal;
   font-size: 56px;
@@ -107,7 +108,7 @@ html, body {
 }
 .song-credit-entry dd {
   color: var(--kh-ink);
-  font-family: var(--kh-serif);
+  font-family: var(--kh-iast-serif);
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.015em;
@@ -185,7 +186,9 @@ html, body {
   right: 0;
   bottom: 0;
   min-height: 60px;
-  padding: 0 28px max(0px, env(safe-area-inset-bottom));
+  /* Keep the bottom visually continuous with the curved phone edge, while
+     lifting controls clear of the home-indicator reach zone. */
+  padding: 0 28px calc(18px + env(safe-area-inset-bottom));
   background: var(--kh-bg);
   display: flex;
   align-items: center;
@@ -268,6 +271,9 @@ html, body {
 .line-source,
 .line-roman,
 .line-english {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
   -webkit-user-select: text;
   user-select: text;
 }
@@ -306,7 +312,7 @@ html, body {
   background: rgba(244, 234, 208, 0.06);
 }
 .line-roman {
-  font-family: var(--kh-serif);
+  font-family: var(--kh-iast-serif);
   font-size: 26px;
   line-height: 1.5;
   color: var(--kh-ink);
@@ -417,7 +423,7 @@ html, body {
 
 /* ---------- Mobile ---------- */
 @media (max-width: 720px) {
-  .song-page { padding: 52px 22px calc(130px + env(safe-area-inset-bottom)); }
+  .song-page { padding: 52px 22px calc(150px + env(safe-area-inset-bottom)); }
   .song-title { font-size: 40px; line-height: 1.15; }
   .song-attrib em { font-size: 19px; }
   .song-hero { margin-bottom: 56px; padding-bottom: 28px; }
@@ -434,8 +440,8 @@ html, body {
   }
 
   .audio-player {
-    min-height: 62px;
-    padding: 0 18px max(0px, env(safe-area-inset-bottom));
+    min-height: 60px;
+    padding: 0 18px calc(18px + env(safe-area-inset-bottom));
     gap: 14px;
   }
   .ap-btn { width: 36px; height: 36px; }
@@ -444,7 +450,7 @@ html, body {
 }
 
 @media (max-width: 380px) {
-  .audio-player { padding: 0 14px; gap: 10px; }
+  .audio-player { padding: 0 14px calc(18px + env(safe-area-inset-bottom)); gap: 10px; }
   .ap-time { font-size: 13px; min-width: 68px; }
 }
 

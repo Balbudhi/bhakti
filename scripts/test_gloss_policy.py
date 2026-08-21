@@ -34,6 +34,13 @@ class GlossPolicyTests(unittest.TestCase):
         self.assertTrue(gloss_policy.is_self_referential("Sāī̃", "Sai"))
         self.assertTrue(gloss_policy.is_self_referential("Sāīṃ", "Sai"))
 
+    def test_divine_compound_never_falls_back_to_an_unexplained_spelling(self) -> None:
+        self.assertTrue(gloss_policy.is_self_referential("śivaśaṅkara", "Shiva-Shankara"))
+        self.assertEqual(
+            gloss_policy.meaning_only_gloss("śivaśaṅkara", "Shiva-Shankara"),
+            "Śiva as the auspicious maker of good",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

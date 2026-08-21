@@ -17,6 +17,7 @@ SCRIPT_RANGES = (
     (0x0900, 0x097F, "DEVANAGARI"),
     (0x0A00, 0x0A7F, "GURMUKHI"),
     (0x0B00, 0x0B7F, "ORIYA"),
+    (0x0B80, 0x0BFF, "TAMIL"),
     (0x0C80, 0x0CFF, "KANNADA"),
 )
 
