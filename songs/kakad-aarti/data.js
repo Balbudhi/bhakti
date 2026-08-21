@@ -6561,7 +6561,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīraṅga",
-        "gloss": "Śrīraṅga, a name of Viṣṇu"
+        "gloss": "a name of Viṣṇu"
       },
       {
         "roman": "āratī",

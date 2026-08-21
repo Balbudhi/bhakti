@@ -604,7 +604,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kēdāra",
-        "gloss": "Kedārnāth, Śiva's Himalayan shrine-name",
+        "gloss": "Śiva's Himalayan shrine-name",
         "concept_key": "",
         "preserve_in_english": false
       },
