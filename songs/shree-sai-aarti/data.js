@@ -31,6 +31,10 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
+  "sectionNotices": [
+    {"sequenceIndex": 0, "title": "Āratī Sāī Bābā", "poet": "Mādhavrao Vāmanrao Adkar"}
+  ],
+  "adaptedSequenceIndices": [],
   "sourceStatus": "reviewed"
 };
 

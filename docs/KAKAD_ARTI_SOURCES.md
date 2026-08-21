@@ -25,6 +25,14 @@ Additional cross-checks:
   `Jaya Deva Datta Avadhūta` — Kṛṣṇa Jogīśvara Bhīṣma:
   https://www.shirdiusa.com/images/madyaan%20noon/Madhyaan_English.pdf
 
+The Hindi Pramod Medhi `Kakad Aarti Suryoday Purav` song page follows the
+same six source components in its Hindi rendering: Tukārām's opening Bhūpālī,
+Janābāī's `Uṭho Pāṇḍuraṅga`, Bhīṣma's `Uṭho Uṭho Śrī Sāīnātha`, Nāmdev's
+second Bhūpālī, and Bhīṣma's Pañcāratī and Kākaḍ Āratī. The component order
+and authors are cross-checked against:
+
+- https://bhaktikalpa.com/Shirdi_sai1.aspx
+
 ## Adaptation markers
 
 Only exact displayed response lines supported by comparison are marked `Sai
