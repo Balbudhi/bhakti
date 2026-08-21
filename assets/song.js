@@ -340,7 +340,7 @@ function escapeHtml(s) {
   }[c]));
 }
 
-const PAGE_META = window.SONG_META || null;
+const PAGE_META = {...(window.SONG_META || {}), ...(window.BHAKTI_EDITION_META || {})};
 const PAGE_LINES = window.SONG_LINES || null;
 const PAGE_SEQUENCE = window.SONG_SEQUENCE || null;
 const PAGE_TIMINGS = window.SONG_TIMINGS || null;
