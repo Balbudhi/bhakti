@@ -100,6 +100,18 @@ def is_youtube_or_query(value: str) -> bool:
     return ytmusic.looks_like_youtube_reference(value) or (not is_url(value) and not Path(value).expanduser().exists())
 
 
+def media_metadata(reference: str) -> dict[str, Any]:
+    result = subprocess.run(
+        ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", reference],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode:
+        detail = result.stderr.strip()[-2000:] or "yt-dlp returned no diagnostic"
+        raise RuntimeError(f"media metadata extraction failed for {reference}: {detail}")
+    return json.loads(result.stdout)
+
+
 def embedded_audio_metadata(path: Path) -> dict[str, Any]:
     result = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format_tags=title,artist,album,composer,genre,date,track",
                              "-of", "json", str(path)], check=True, capture_output=True, text=True)
@@ -129,10 +141,7 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
         keep_original = bool(supplied_override.get("keepOriginal"))
         resolved = ytmusic.resolve_reference(url) if is_youtube_or_query(url) and not keep_original else None
         source_value = resolved["resolved_url"] if resolved else url
-        metadata = json.loads(subprocess.run(
-            ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", source_value],
-            check=True, capture_output=True, text=True,
-        ).stdout)
+        metadata = media_metadata(source_value)
         fields: dict[str, str] = {}
         for line in str(metadata.get("description") or "").splitlines():
             match = re.match(r"\s*([^:]{2,30})\s*:\s*(.+?)\s*$", line)
@@ -197,10 +206,7 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
     else:
         resolution = None
     if is_url(source_value):
-        metadata = job.get("_source_metadata") or json.loads(subprocess.run(
-            ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", source_value],
-            check=True, capture_output=True, text=True,
-        ).stdout)
+        metadata = job.get("_source_metadata") or media_metadata(source_value)
         source = {
             "source_url": metadata.get("webpage_url") or source_value,
             "title": metadata.get("title"), "uploader": metadata.get("uploader"),

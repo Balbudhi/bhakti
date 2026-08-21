@@ -46,11 +46,20 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
       - name: Install media dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-          python -m pip install --upgrade pip yt-dlp
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade --pre "yt-dlp[default]"
+          install -d /home/runner/.config/yt-dlp
+          printf '%s\n' '--js-runtimes node' > /home/runner/.config/yt-dlp/config
+          node --version
+          yt-dlp --version
 
       - name: Run production intake pipeline
         env:

@@ -310,6 +310,12 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(value["subjectTags"], ["Hanumān"])
         self.assertTrue(value["keepOriginal"])
 
+    def test_media_metadata_surfaces_extractor_diagnostics(self) -> None:
+        failed = subprocess.CompletedProcess(["yt-dlp"], 1, stdout="", stderr="challenge solver missing")
+        with mock.patch.object(pipeline.subprocess, "run", return_value=failed):
+            with self.assertRaisesRegex(RuntimeError, "challenge solver missing"):
+                pipeline.media_metadata("https://example.com/song")
+
     def test_preflight_blocks_when_shared_openrouter_credits_are_exhausted(self) -> None:
         options = type("Options", (), {"generate_only": False, "timeout": 300.0})()
         with mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
