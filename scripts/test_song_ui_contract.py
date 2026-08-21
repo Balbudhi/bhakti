@@ -92,8 +92,8 @@ class SongUiContractTests(unittest.TestCase):
     def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
         self.assertIn("left: 0;\n  right: 0;\n  bottom: 0;", song_css)
-        self.assertIn("padding: 8px 28px calc(28px + env(safe-area-inset-bottom));", song_css)
-        self.assertIn("padding: 8px 18px calc(28px + env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 16px 28px calc(36px + env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 16px 18px calc(36px + env(safe-area-inset-bottom));", song_css)
 
     def test_hosted_intake_is_owner_only_and_public_media_only(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "run-bhakti-intake.yml").read_text(encoding="utf-8")

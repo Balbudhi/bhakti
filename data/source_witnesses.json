@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "works": {
+    "hanuman-bahuk": {
+      "title": "Hanumān Bāhuk",
+      "author": "Tulsīdās",
+      "verification_status": "public-working-witness",
+      "authority_note": "A digitized 2016 reading edition. It is an identified textual witness, not a critical edition and not authority to overwrite an audible performance variant.",
+      "retriever": "pustak-ebook-pages",
+      "base_url": "https://ebooks.pustak.org/index.php/books/bookdetails/9697/1/{page}",
+      "first_page": 2,
+      "last_page": 45,
+      "bibliography": {
+        "publisher": "Bhāratīya Sāhitya Saṅgraha",
+        "year": 2016,
+        "ebook_id": "9697",
+        "landing_url": "https://ebooks.pustak.org/index.php/books/bookdetails/9697/1/2"
+      },
+      "comparison_policy": "Audio is authoritative for this recording. The witness supplies an independently digitized candidate reading: compare it after the first audio draft, use it to focus a second audio audit, retain every audible performance variant, and leave an unresolved disagreement blocked rather than silently selecting the witness."
+    }
+  }
+}

@@ -188,7 +188,7 @@ html, body {
   min-height: 60px;
   /* Keep the bottom visually continuous with the curved phone edge, while
      lifting controls clear of the home-indicator reach zone. */
-  padding: 8px 28px calc(28px + env(safe-area-inset-bottom));
+  padding: 16px 28px calc(36px + env(safe-area-inset-bottom));
   background: var(--kh-bg);
   display: flex;
   align-items: center;
@@ -423,7 +423,7 @@ html, body {
 
 /* ---------- Mobile ---------- */
 @media (max-width: 720px) {
-  .song-page { padding: 52px 22px calc(170px + env(safe-area-inset-bottom)); }
+  .song-page { padding: 52px 22px calc(186px + env(safe-area-inset-bottom)); }
   .song-title { font-size: 40px; line-height: 1.15; }
   .song-attrib em { font-size: 19px; }
   .song-hero { margin-bottom: 56px; padding-bottom: 28px; }
@@ -441,7 +441,7 @@ html, body {
 
   .audio-player {
     min-height: 60px;
-    padding: 8px 18px calc(28px + env(safe-area-inset-bottom));
+    padding: 16px 18px calc(36px + env(safe-area-inset-bottom));
     gap: 14px;
   }
   .ap-btn { width: 36px; height: 36px; }
@@ -450,7 +450,7 @@ html, body {
 }
 
 @media (max-width: 380px) {
-  .audio-player { padding: 8px 14px calc(28px + env(safe-area-inset-bottom)); gap: 10px; }
+  .audio-player { padding: 16px 14px calc(36px + env(safe-area-inset-bottom)); gap: 10px; }
   .ap-time { font-size: 13px; min-width: 68px; }
 }
 

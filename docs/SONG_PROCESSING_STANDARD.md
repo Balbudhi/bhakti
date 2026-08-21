@@ -40,6 +40,38 @@ review. If it is not Sanskrit, the normal pipeline continues unchanged.
   segment overlap and strict monotonic/coverage checks catch seam failures.
   Local code derives ends from the next accepted start. The model never
   determines order, grouping, repeats, or ends.
+
+### Textual-witness verification
+
+Some sung works have an independently digitized text or a responsibly
+identified transcription. Those witnesses address a specific failure mode: a
+model can hear a plausible near-word in dense, archaic, or rapidly sung
+diction. They never authorize the system to overwrite what this performance
+actually sings.
+
+`data/source_witnesses.json` registers only a work, its edition/witness,
+stable acquisition pages, verification state, and comparison policy—not a
+copied text. `scripts/source_witness.py` acquires a working copy only into the
+ignored song review packet. After the first audio transcript, the audit selects
+relevant witness excerpts and asks the model to listen again. It must accept a
+witness reading only when the audio supports it; preserve an audible variant
+and record the difference; and leave an unresolved disagreement explicitly
+uncertain (which blocks generation). Private comparison reports retain page
+URLs and every candidate mismatch.
+
+The initial registered implementation is *Hanumān Bāhuk*, using a digitized
+2016 *Bhāratīya Sāhitya Saṅgraha* reading edition as a public working witness,
+not as a claimed critical edition. To recheck a previously transcribed
+registered work without repeating the first audio pass, run:
+
+```sh
+python3 scripts/bhakti_pipeline.py --song hanuman-bahuk=EXISTING_SOURCE \
+  --source-witness-audit --publish
+```
+
+That invalidates only the witness-aware audit and dependent timing/gloss/
+translation artifacts; it preserves the first audio transcript and listener
+master.
 - A failed full-track timing response may trigger a deterministic evenly spaced
   grid, but that grid is a routing hint only: it is never accepted as onset
   evidence and never rejects an accurate clip-relative start. Each valid start
