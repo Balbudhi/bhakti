@@ -20,6 +20,11 @@ class GlossPolicyTests(unittest.TestCase):
         self.assertEqual(gloss_policy.meaning_only_gloss("māyā", "worldly appearance and attachment"),
                          "worldly appearance and attachment")
 
+    def test_epic_names_receive_context_instead_of_repetition(self) -> None:
+        self.assertEqual(gloss_policy.meaning_only_gloss("laṅkā", "Lanka"), "island kingdom of Rāvaṇa")
+        self.assertEqual(gloss_policy.meaning_only_gloss("holikā", "Holika fire"), "bonfire; destructive blaze")
+        self.assertEqual(gloss_policy.meaning_only_gloss("hanumāna", "Hanuman"), "monkey-god; son of the Wind")
+
     def test_self_reference_detection_ignores_diacritics_and_punctuation(self) -> None:
         self.assertTrue(gloss_policy.is_self_referential("buddhi,", "buddhi (intellect)"))
         self.assertTrue(gloss_policy.is_self_referential("Sāī̃", "Sai"))

@@ -41,6 +41,7 @@ import tag_taxonomy
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 2
+LONG_TRANSCRIPT_CONTRACT_VERSION = 1
 GLOSS_CONTRACT_VERSION = 4
 TRANSLATION_INPUT_VERSION = 7
 SEMANTIC_FRAME_FIELDS = (
@@ -165,7 +166,7 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
                      "languages": list(override.get("languages") or []),
                      "subjectTags": list(override.get("subjectTags") or []),
                      "searchAliases": [raw_title, *(override.get("searchAliases") or [])], "_source_metadata": metadata,
-                     "_source_resolution": resolved})
+                     "_source_resolution": resolved, "_keep_original": keep_original})
     if options.batch:
         raw = json.loads(options.batch.read_text(encoding="utf-8"))
         entries = raw.get("songs", []) if isinstance(raw, dict) else raw
@@ -201,8 +202,12 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
     review_dir.mkdir(exist_ok=True)
     source_value = job["source"]
     if is_youtube_or_query(source_value):
-        resolution = job.get("_source_resolution") or ytmusic.resolve_reference(source_value)
-        source_value = str(resolution["resolved_url"])
+        if job.get("_keep_original"):
+            resolution = None
+            source_value = ytmusic.canonicalize_reference(source_value)
+        else:
+            resolution = job.get("_source_resolution") or ytmusic.resolve_reference(source_value)
+            source_value = str(resolution["resolved_url"])
     else:
         resolution = None
     if is_url(source_value):
@@ -431,6 +436,8 @@ def transcribe_long_audio(
     song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace
 ) -> dict[str, Any]:
     segments = adaptive_audio_segments(audio)
+    cache_dir = song_dir / ".transcription" / "pipeline" / "transcript-segments"
+    cache_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="bhakti-long-transcript-") as temporary:
         destination = Path(temporary)
         jobs = []
@@ -443,6 +450,11 @@ def transcribe_long_audio(
 
         def run(job: tuple[dict[str, Any], Path]) -> dict[str, Any]:
             segment, clip = job
+            cache_path = cache_dir / f"segment-{segment['index']:03d}.json"
+            cached = read_packet(cache_path)
+            if (cached and cached.get("contract_version") == LONG_TRANSCRIPT_CONTRACT_VERSION
+                    and cached.get("segment") == segment and isinstance(cached.get("response"), dict)):
+                return cached
             prompt = f"""Transcribe this complete devotional-song excerpt with extreme care. Listen through the entire clip repeatedly enough to avoid missing a single sung, spoken, lead, response, invocation, refrain, pickup, repeated, or closing line. Do not translate. Do not infer unheard text. Mark uncertainty rather than guessing.
 
 This is segment {segment['index']} of a longer recording. Its audio covers absolute source seconds {segment['clip_start']:.3f}–{segment['clip_end']:.3f}; its non-overlap core is {segment['core_start']:.3f}–{segment['core_end']:.3f}. Text in the overlap is intentionally duplicated and must still be transcribed. Identify the language and native script per line, including code-switching.
@@ -452,10 +464,22 @@ Source metadata is only a lead, never proof:
 
 Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
-            response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=options.timeout,
-                                   response_schema=segment_transcript_schema(), schema_name="bhakti_segment_transcript",
-                                   reasoning_effort="high", max_completion_tokens=32768)
-            return {"segment": segment, "response": response}
+            response = None
+            for attempt in range(2):
+                try:
+                    response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=options.timeout,
+                                           response_schema=segment_transcript_schema(), schema_name="bhakti_segment_transcript",
+                                           reasoning_effort="high", max_completion_tokens=32768)
+                    break
+                except RuntimeError as exc:
+                    if attempt or "required JSON packet" not in str(exc):
+                        raise
+            if response is None:
+                raise RuntimeError(f"segment {segment['index']} produced no transcription response")
+            item = {"contract_version": LONG_TRANSCRIPT_CONTRACT_VERSION,
+                    "segment": segment, "response": response}
+            write_json(cache_path, item)
+            return item
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(jobs))) as pool:
             responses = list(pool.map(run, jobs))
@@ -1000,22 +1024,83 @@ def align_long_segments(
     song_dir: Path, audio: Path, audited: dict[str, Any], occurrences: list[dict[str, Any]],
     coarse_sequence: list[dict[str, Any]], duration: float, options: argparse.Namespace,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[str]]:
-    """Align long recordings in their audited 4–6 minute segments, once each."""
+    """Align long recordings in bounded lyric-aware windows.
+
+    Valid historical segment caches remain reusable. Fresh or failed 4–6 minute
+    segment packets are divided into at most ten exact audited occurrences per
+    request, with overlap around their deterministic coarse positions. This
+    keeps the model's job to onset lookup rather than long-range bookkeeping.
+    """
     chunks = build_long_timing_chunks(audited, occurrences, coarse_sequence, duration)
     cache_dir = song_dir / ".transcription" / "pipeline" / "long-timing-segments"
     cache_dir.mkdir(parents=True, exist_ok=True)
+
+    def subchunks(parent: dict[str, Any]) -> list[dict[str, Any]]:
+        children = []
+        indices = parent["target_indices"]
+        for child_index, offset in enumerate(range(0, len(indices), 10)):
+            child_indices = indices[offset:offset + 10]
+            first, last = child_indices[0], child_indices[-1]
+            first_coarse = float(coarse_sequence[first]["start"])
+            last_coarse = float(coarse_sequence[last]["start"])
+            children.append({
+                "index": int(parent["index"]) * 100 + child_index,
+                "parent_segment_index": int(parent["index"]),
+                "grid": "long-segment-window",
+                "core_start": first_coarse,
+                "core_end": last_coarse,
+                "clip_start": max(float(parent["clip_start"]), first_coarse - 20.0),
+                "clip_end": min(float(parent["clip_end"]), last_coarse + 20.0),
+                "target_indices": child_indices,
+                "target_occurrences": [
+                    {**occurrences[index], "coarse_source_start": coarse_sequence[index]["start"]}
+                    for index in child_indices
+                ],
+                "preceding_context": occurrences[first - 1] if first else None,
+                "following_context": occurrences[last + 1] if last + 1 < len(occurrences) else None,
+            })
+        return children
+
     with tempfile.TemporaryDirectory(prefix="bhakti-long-timing-") as temporary:
         destination = Path(temporary)
-        with concurrent.futures.ThreadPoolExecutor(max_workers=min(2, len(chunks))) as pool:
-            reports = list(pool.map(
-                lambda chunk: refine_timing_chunk(
-                    audio, occurrences, chunk, options, destination,
-                    cache_dir / f"segment-{chunk['index']:03d}.json",
+        retained_reports: list[dict[str, Any]] = []
+        work: list[tuple[dict[str, Any], Path]] = []
+        superseded_by_parent: dict[int, dict[str, Any]] = {}
+        for chunk in chunks:
+            parent_path = cache_dir / f"segment-{chunk['index']:03d}.json"
+            cached = read_packet(parent_path)
+            if cached:
+                parent_report = refine_timing_chunk(
+                    audio, occurrences, chunk, options, destination, parent_path,
                     max_coarse_delta=max(90.0, chunk["clip_end"] - chunk["clip_start"]),
                     reasoning_effort="high", max_completion_tokens=65536,
-                ),
-                chunks,
-            ))
+                )
+                if not parent_report["validation_errors"]:
+                    retained_reports.append(parent_report)
+                    continue
+                superseded_by_parent[int(chunk["index"])] = parent_report
+            for child_index, child in enumerate(subchunks(chunk)):
+                work.append((child, cache_dir / f"segment-{chunk['index']:03d}-window-{child_index:02d}.json"))
+
+        def align_window(item: tuple[dict[str, Any], Path]) -> dict[str, Any]:
+            child, path = item
+            return refine_timing_chunk(
+                audio, occurrences, child, options, destination, path,
+                max_coarse_delta=max(30.0, child["clip_end"] - child["clip_start"]),
+                reasoning_effort="high", max_completion_tokens=32768,
+            )
+
+        if work:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(2, len(work))) as pool:
+                window_reports = list(pool.map(align_window, work))
+        else:
+            window_reports = []
+        for report in window_reports:
+            parent_index = int(report.get("parent_segment_index", -1))
+            if parent_index in superseded_by_parent:
+                report["superseded_parent"] = superseded_by_parent.pop(parent_index)
+            retained_reports.append(report)
+        reports = retained_reports
     errors = [f"segment {report['index']}: {error}" for report in reports for error in report["validation_errors"]]
     starts_by_id: dict[str, float] = {}
     for report in reports:
@@ -1373,10 +1458,39 @@ def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str
     return errors
 
 
+def clean_gloss_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    cleaned = []
+    for row in rows:
+        value = dict(row)
+        value["word_glosses"] = [gloss_policy.clean_word(word) for word in row.get("word_glosses", [])
+                                 if any(character.isalnum() for character in str(word.get("roman", "")))]
+        cleaned.append(value)
+    return cleaned
+
+
+def normalize_gloss_rows(lines: list[dict[str, Any]], rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    line_by_id = {line.get("id"): line for line in lines}
+    normalized = []
+    for row in rows:
+        value = dict(row)
+        words = [dict(word) for word in row.get("word_glosses", [])
+                 if any(character.isalnum() for character in str(word.get("roman", "")))]
+        expected = [token for token in str(line_by_id.get(row.get("id"), {}).get("roman", "")).split()
+                    if any(character.isalnum() for character in token)]
+        if len(words) == len(expected):
+            for index, token in enumerate(expected):
+                words[index]["roman"] = token
+        value["word_glosses"] = [gloss_policy.clean_word(word) for word in words]
+        normalized.append(value)
+    return normalized
+
+
 def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
     existing = read_packet(target)
+    if existing and isinstance(existing.get("packet", {}).get("glosses"), list):
+        existing["packet"]["glosses"] = normalize_gloss_rows(lines, existing["packet"]["glosses"])
     if (existing and not options.force and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
             and not gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []))):
         return existing
@@ -1384,7 +1498,7 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
         term_registry = preserved_term_registry()
         return f"""Create a literal word-by-word reading of the TARGET audited devotional lyrics. Work line by line and use the surrounding song context.
 
-Create exactly one word_gloss entry for each whitespace-delimited surface token in the supplied roman line, in the identical order. The `roman` value must copy that complete displayed surface token exactly; never split sandhi or a written compound into separate entries, and never substitute an underlying dictionary form. Give the contextually correct primary sense first. A gloss is semantic evidence, not an English draft: do not bake a clumsy phrase such as “cast a glance of mercy” into a token gloss when the phrase-level meaning is “look upon someone with mercy.” Put phrase meaning and idiom in the semantic frame instead.
+Create exactly one word_gloss entry for each lexical whitespace-delimited surface token in the supplied roman line, in the identical order. Omit a token made entirely of punctuation, such as `।`, `॥`, a dash, or an ellipsis; punctuation remains visible but is not a word or hover target. The `roman` value must copy that complete displayed lexical token exactly; never split sandhi or a written compound into separate entries, and never substitute an underlying dictionary form. Give the contextually correct primary sense first. A gloss is semantic evidence, not an English draft: do not bake a clumsy phrase such as “cast a glance of mercy” into a token gloss when the phrase-level meaning is “look upon someone with mercy.” Put phrase meaning and idiom in the semantic frame instead.
 
 Before any later translation, explicitly reconstruct the semantic frame: who is acting or experiencing; the action or state; its patient or complement; modifiers; negation or modality; the exact literal image and agency; any established idiom; and how the line connects grammatically to its neighbors. Preserve personification and unusual agency rather than normalizing them. Distinguish a suffered or resultant state from a self-caused act: if the line says the speaker is broken, undone, struck, or seized, do not reinterpret it as the speaker actively breaking, undoing, striking, or seizing themself. Do not replace one metaphor with another: if a feeling “takes hold,” do not relabel it as kindling or stirring. Preserve a spatial word directly—“inside” remains “inside”—rather than upgrading it to “deep within” unless the source actually expresses depth. Represent reduplication as emphasis or repetition without inventing a new image. Expand relational objects when English requires their complement—a hem is the hem of a garment. Distinguish culturally specific objects precisely, such as an alms bag rather than a generic satchel, and palm/open palm rather than an abstract “hand” when the source requires it. For `raham nazar`, record the phrase-level meaning “look upon someone with mercy,” never “cast a glance.”
 
@@ -1419,6 +1533,7 @@ Return strict JSON:
         result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=options.timeout,
                              response_schema=schema, schema_name="bhakti_word_glosses",
                              reasoning_effort="high", max_completion_tokens=65536)
+        result["packet"]["glosses"] = normalize_gloss_rows(lines, result["packet"].get("glosses", []))
     else:
         batches = [lines[index:index + 40] for index in range(0, len(lines), 40)]
         cache_dir = song_dir / ".transcription" / "pipeline" / "gloss-batches"
@@ -1430,7 +1545,8 @@ Return strict JSON:
             cache_path = cache_dir / f"batch-{index:03d}.json"
             cached = read_packet(cache_path)
             if cached and cached.get("target_ids") == expected and not options.force:
-                cached_rows = cached.get("response", {}).get("packet", {}).get("glosses", [])
+                cached_rows = normalize_gloss_rows(batch, cached.get("response", {}).get("packet", {}).get("glosses", []))
+                cached["response"]["packet"]["glosses"] = cached_rows
                 if (cached.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
                         and not gloss_contract_errors(batch, cached_rows)):
                     return cached
@@ -1439,7 +1555,8 @@ Return strict JSON:
             response = gemini.call(options.model, gemini.key(), prompt_for(batch, context), audio=None,
                                    timeout=options.timeout, response_schema=schema,
                                    schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
-                                   max_completion_tokens=32768)
+                                   max_completion_tokens=65536)
+            response["packet"]["glosses"] = normalize_gloss_rows(batch, response["packet"].get("glosses", []))
             returned = [row.get("id") for row in response["packet"].get("glosses", [])]
             if returned != expected:
                 raise RuntimeError(f"gloss batch {index} returned IDs out of order or incomplete")
@@ -1490,7 +1607,10 @@ def independently_review_translations(
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
-    batches = [lines[index:index + 40] for index in range(0, len(lines), 40)]
+    # Review outputs are verbose enough that 40-line packets can hit a model or
+    # gateway output ceiling on long works. Twenty-line parent caches, issued as
+    # ten-line requests below, keep evidence complete without a failed response.
+    batches = [lines[index:index + 20] for index in range(0, len(lines), 20)]
     cache_dir = song_dir / ".transcription" / "pipeline" / "translation-review-batches"
     cache_dir.mkdir(parents=True, exist_ok=True)
 
@@ -1507,7 +1627,8 @@ def independently_review_translations(
         cached = read_packet(path)
         if cached and cached.get("fingerprint") == fingerprint and not options.force:
             return cached
-        prompt = f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
+        def review_prompt(target_evidence: list[dict[str, Any]]) -> str:
+            return f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
 
 For each line, compare the draft against the indexed glosses, semantic frame, grammar, source, neighboring relation, and material alternatives. Check separately: grammatical agency/experiencer; literal image and metaphor; every negation, modality, modifier and emphasis; unsupported additions; and whether two defensible readings differ materially in agency, metaphor, ambiguity, or poetic force.
 
@@ -1518,17 +1639,52 @@ If a locked human translation is supplied and the draft copies it exactly, do no
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
 EVIDENCE:
-{json.dumps(evidence, ensure_ascii=False)}
+{json.dumps(target_evidence, ensure_ascii=False)}
 
 LOCKED HUMAN TRANSLATION (or none):
 {provided_translation}"""
-        response = gemini.call(options.model, gemini.key(), prompt, audio=None, timeout=options.timeout,
-                               response_schema=translation_review_schema(), schema_name="bhakti_translation_review",
-                               reasoning_effort="high", max_completion_tokens=32768)
-        observed = [row.get("id") for row in response["packet"].get("reviews", [])]
-        if observed != expected:
-            raise RuntimeError(f"translation review batch {index} returned IDs out of order or incomplete")
-        result = {"fingerprint": fingerprint, "target_ids": expected, "response": response}
+
+        def request(target_evidence: list[dict[str, Any]], target_ids: list[str], label: str) -> dict[str, Any]:
+            response = gemini.call(options.model, gemini.key(), review_prompt(target_evidence), audio=None,
+                                   timeout=options.timeout, response_schema=translation_review_schema(),
+                                   schema_name="bhakti_translation_review", reasoning_effort="high",
+                                   max_completion_tokens=32768)
+            observed = [row.get("id") for row in response["packet"].get("reviews", [])]
+            if observed != target_ids:
+                raise RuntimeError(f"translation review batch {label} returned IDs out of order or incomplete")
+            return response
+
+        if len(batch) > 10:
+            children = []
+            for child_index, offset in enumerate(range(0, len(batch), 10)):
+                child_evidence = evidence[offset:offset + 10]
+                child_ids = expected[offset:offset + 10]
+                child_fingerprint = hashlib.sha256(json.dumps(
+                    {"version": TRANSLATION_INPUT_VERSION, "model": options.model,
+                     "evidence": child_evidence, "provided_translation": provided_translation},
+                    ensure_ascii=False, sort_keys=True,
+                ).encode()).hexdigest()
+                child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
+                child_packet = read_packet(child_path)
+                if not (child_packet and child_packet.get("fingerprint") == child_fingerprint
+                        and not options.force):
+                    child_packet = {
+                        "fingerprint": child_fingerprint,
+                        "target_ids": child_ids,
+                        "response": request(child_evidence, child_ids, f"{index}.{child_index}"),
+                    }
+                    write_json(child_path, child_packet)
+                children.append(child_packet)
+            response = {
+                "packet": {"reviews": [row for child in children
+                                        for row in child["response"]["packet"]["reviews"]]},
+                "resolved_model": options.model,
+            }
+            result = {"fingerprint": fingerprint, "target_ids": expected,
+                      "response": response, "child_batches": children}
+        else:
+            result = {"fingerprint": fingerprint, "target_ids": expected,
+                      "response": request(evidence, expected, str(index))}
         write_json(path, result)
         return result
 
@@ -1620,6 +1776,11 @@ Return strict JSON:
                              response_schema=schema, schema_name="bhakti_literal_translation",
                              reasoning_effort="high", max_completion_tokens=65536)
     else:
+        # Preserve the historical 40-line parent cache shape so already
+        # completed work remains reusable, but issue fresh requests in bounded
+        # 20-line children. Long translation JSON contains indexed segments and
+        # fidelity evidence; a 40-line response can be truncated even with the
+        # provider ceiling set to 65,536 tokens.
         batches = [lines[index:index + 40] for index in range(0, len(lines), 40)]
         cache_dir = song_dir / ".transcription" / "pipeline" / "translation-batches"
         cache_dir.mkdir(parents=True, exist_ok=True)
@@ -1633,17 +1794,52 @@ Return strict JSON:
                     and cached.get("input_contract_version") == TRANSLATION_INPUT_VERSION and not options.force):
                 return cached
             start = index * 40
-            context = lines[max(0, start - 2):start] + lines[start + len(batch):start + len(batch) + 2]
-            response = gemini.call(options.model, gemini.key(), prompt_for(batch, context), audio=None,
-                                   timeout=options.timeout, response_schema=schema,
-                                   schema_name="bhakti_translation_batch", reasoning_effort="high",
-                                   max_completion_tokens=32768)
-            returned = [row.get("id") for row in response["packet"].get("translations", [])]
-            compared = [row.get("id") for row in response["packet"].get("comparison", [])]
-            if returned != expected or compared != expected:
-                raise RuntimeError(f"translation batch {index} returned IDs out of order or incomplete")
-            packet = {"target_ids": expected, "input_contract_version": TRANSLATION_INPUT_VERSION,
-                      "response": response}
+
+            def request(target_lines: list[dict[str, Any]], absolute_start: int, label: str) -> dict[str, Any]:
+                target_ids = [line["id"] for line in target_lines]
+                context = (lines[max(0, absolute_start - 2):absolute_start]
+                           + lines[absolute_start + len(target_lines):absolute_start + len(target_lines) + 2])
+                response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
+                                       timeout=options.timeout, response_schema=schema,
+                                       schema_name="bhakti_translation_batch", reasoning_effort="high",
+                                       max_completion_tokens=65536)
+                returned = [row.get("id") for row in response["packet"].get("translations", [])]
+                compared = [row.get("id") for row in response["packet"].get("comparison", [])]
+                if returned != target_ids or compared != target_ids:
+                    raise RuntimeError(f"translation batch {label} returned IDs out of order or incomplete")
+                return response
+
+            if len(batch) > 20:
+                children = []
+                for child_index, offset in enumerate(range(0, len(batch), 20)):
+                    child = batch[offset:offset + 20]
+                    child_ids = [line["id"] for line in child]
+                    child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
+                    child_packet = read_packet(child_path)
+                    if not (child_packet and child_packet.get("target_ids") == child_ids
+                            and child_packet.get("input_contract_version") == TRANSLATION_INPUT_VERSION
+                            and not options.force):
+                        child_packet = {
+                            "target_ids": child_ids,
+                            "input_contract_version": TRANSLATION_INPUT_VERSION,
+                            "response": request(child, start + offset, f"{index}.{child_index}"),
+                        }
+                        write_json(child_path, child_packet)
+                    children.append(child_packet)
+                response = {
+                    "packet": {
+                        "translations": [row for child in children
+                                         for row in child["response"]["packet"]["translations"]],
+                        "comparison": [row for child in children
+                                       for row in child["response"]["packet"]["comparison"]],
+                    },
+                    "resolved_model": options.model,
+                }
+                packet = {"target_ids": expected, "input_contract_version": TRANSLATION_INPUT_VERSION,
+                          "response": response, "child_batches": children}
+            else:
+                packet = {"target_ids": expected, "input_contract_version": TRANSLATION_INPUT_VERSION,
+                          "response": request(batch, start, str(index))}
             write_json(cache_path, packet)
             return packet
 
