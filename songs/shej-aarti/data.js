@@ -1058,7 +1058,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Tukā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1537,7 +1537,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Nārada",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sage and divine minstrel",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2205,7 +2205,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Brahma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5604,7 +5604,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tukā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6251,7 +6251,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tukā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },

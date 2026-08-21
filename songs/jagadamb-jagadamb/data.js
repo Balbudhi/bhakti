@@ -460,7 +460,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārada",
-        "gloss": "sage Narada",
+        "gloss": "sage and divine minstrel",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -501,7 +501,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārada",
-        "gloss": "sage Narada",
+        "gloss": "sage and divine minstrel",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -630,7 +630,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmā",
-        "gloss": "Lord Brahma (the Creator)",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },

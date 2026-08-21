@@ -380,7 +380,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaikeyī",
-        "gloss": "stepmother of Rama",
+        "gloss": "Rāma's stepmother, queen of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -445,7 +445,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaikeyī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma's stepmother, queen of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       },

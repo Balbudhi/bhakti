@@ -616,7 +616,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rādhikā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Kṛṣṇa's beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -794,7 +794,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rādhikā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Kṛṣṇa's beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       },

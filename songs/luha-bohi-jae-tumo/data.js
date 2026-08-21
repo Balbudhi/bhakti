@@ -371,7 +371,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāmē",
-        "gloss": "by the name; in the name",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       }

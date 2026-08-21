@@ -781,7 +781,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Tukā",
-        "gloss": "Saint Tukaram",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1066,7 +1066,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Garuḍa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "eagle mount of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1137,7 +1137,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Garuḍa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "eagle mount of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1321,7 +1321,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Nārada",
-        "gloss": "the divine sage",
+        "gloss": "sage and divine minstrel",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4302,7 +4302,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Garuḍa",
-        "gloss": "divine mount of Vishnu",
+        "gloss": "eagle mount of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7193,7 +7193,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "of a knower of Brahman; of a sacred soul / brahmin",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7448,7 +7448,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Tukā",
-        "gloss": "Sant Tukaram, the devotee-poet",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },

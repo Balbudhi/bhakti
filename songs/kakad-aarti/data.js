@@ -3594,7 +3594,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Allā",
-        "gloss": "proper name or untranslated term"
+        "gloss": "Arabic name for God"
       },
       {
         "roman": "Ilāhī",

@@ -1784,7 +1784,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śraddhā",
-        "gloss": "faith; reverent devotion",
+        "gloss": "faith; trusting devotional commitment",
         "concept_key": "",
         "preserve_in_english": false
       },

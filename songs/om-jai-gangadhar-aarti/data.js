@@ -2073,7 +2073,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmā",
-        "gloss": "Lord Brahmā [the creator]",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3082,10 +3082,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 127.85,
-    "end": 137.0
+    "end": 137
   },
   {
-    "start": 137.0,
+    "start": 137,
     "end": 141.3
   },
   {

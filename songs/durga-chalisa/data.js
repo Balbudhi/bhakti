@@ -1069,7 +1069,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmā",
-        "gloss": "the creator deity",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1332,7 +1332,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarasvatī",
-        "gloss": "goddess of speech, learning, and inspired expression",
+        "gloss": "she who possesses flowing waters; Vedic goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1452,7 +1452,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prahlāda",
-        "gloss": "the devoted child prince",
+        "gloss": "devotee saved by Narasiṃha",
         "concept_key": "",
         "preserve_in_english": false
       },

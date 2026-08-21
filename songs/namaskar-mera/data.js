@@ -541,7 +541,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmā",
-        "gloss": "Lord Brahma (the creator)",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1144,7 +1144,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiṣṇo",
-        "gloss": "Mother Vaishnavi",
+        "gloss": "mountain goddess worshipped at Katra",
         "concept_key": "",
         "preserve_in_english": false
       },

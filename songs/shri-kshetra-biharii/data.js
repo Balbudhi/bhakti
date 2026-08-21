@@ -1485,7 +1485,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "the Absolute Reality",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3565,10 +3565,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 116.675,
-    "end": 124.0
+    "end": 124
   },
   {
-    "start": 124.0,
+    "start": 124,
     "end": 131.35
   },
   {
@@ -3693,10 +3693,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 487.98,
-    "end": 495.0
+    "end": 495
   },
   {
-    "start": 495.0,
+    "start": 495,
     "end": 502.39
   },
   {
@@ -3769,10 +3769,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 698.625,
-    "end": 706.0
+    "end": 706
   },
   {
-    "start": 706.0,
+    "start": 706,
     "end": 717.665
   },
   {

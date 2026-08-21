@@ -383,7 +383,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Brahmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },

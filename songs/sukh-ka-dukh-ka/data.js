@@ -1452,7 +1452,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śraddhā",
-        "gloss": "faith; devoted trust",
+        "gloss": "faith; trusting devotional commitment",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1619,7 +1619,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "allāha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Arabic name for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1649,7 +1649,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "allāha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Arabic name for God",
         "concept_key": "",
         "preserve_in_english": false
       },

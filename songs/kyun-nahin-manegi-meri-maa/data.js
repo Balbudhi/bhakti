@@ -183,7 +183,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiṣṇo",
-        "gloss": "proper name or untranslated term",
+        "gloss": "mountain goddess worshipped at Katra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -249,7 +249,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śraddhā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "faith; trusting devotional commitment",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -637,7 +637,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5386,10 +5386,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 487.76,
-    "end": 494.0
+    "end": 494
   },
   {
-    "start": 494.0,
+    "start": 494,
     "end": 501.42
   },
   {

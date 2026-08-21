@@ -479,7 +479,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1563,7 +1563,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "brahmā",
-        "gloss": "the creator",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -725,7 +725,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śraddhā",
-        "gloss": "faith; reverent trust",
+        "gloss": "faith; trusting devotional commitment",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -802,7 +802,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śraddhā",
-        "gloss": "faith; reverent trust",
+        "gloss": "faith; trusting devotional commitment",
         "concept_key": "",
         "preserve_in_english": false
       },

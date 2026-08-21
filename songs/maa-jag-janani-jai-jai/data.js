@@ -423,7 +423,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -482,7 +482,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1449,7 +1449,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rādhā",
-        "gloss": "Krishna's beloved",
+        "gloss": "Kṛṣṇa's beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1508,7 +1508,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rādhā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Kṛṣṇa's beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       }

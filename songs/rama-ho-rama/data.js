@@ -264,7 +264,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ayodhyā,",
-        "gloss": "in Ayodhya",
+        "gloss": "Rāma's royal city",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -276,7 +276,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ayodhyā",
-        "gloss": "in Ayodhya",
+        "gloss": "Rāma's royal city",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1298,7 +1298,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ayodhyā,",
-        "gloss": "in Ayodhya",
+        "gloss": "Rāma's royal city",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1310,7 +1310,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ayodhyā",
-        "gloss": "in Ayodhya",
+        "gloss": "Rāma's royal city",
         "concept_key": "",
         "preserve_in_english": false
       },

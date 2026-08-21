@@ -311,7 +311,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "brahmā",
-        "gloss": "the creator",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },

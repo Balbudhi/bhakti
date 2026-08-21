@@ -1905,7 +1905,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prārabdha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "already-begun karma bearing its present result",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2428,10 +2428,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 170.9,
-    "end": 178.0
+    "end": 178
   },
   {
-    "start": 178.0,
+    "start": 178,
     "end": 179.8
   },
   {

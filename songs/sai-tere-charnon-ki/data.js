@@ -1483,7 +1483,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śraddhā",
-        "gloss": "faith; devotion; reverent trust",
+        "gloss": "faith; trusting devotional commitment",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2178,10 +2178,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 67.45,
-    "end": 72.0
+    "end": 72
   },
   {
-    "start": 72.0,
+    "start": 72,
     "end": 81.05
   },
   {

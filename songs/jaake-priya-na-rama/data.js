@@ -264,7 +264,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Prahlāda",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee saved by Narasiṃha",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -311,7 +311,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bharata",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma's brother and devoted ruler of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       },

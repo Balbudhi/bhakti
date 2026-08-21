@@ -760,7 +760,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "the Supreme Reality; Brahman",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1568,14 +1568,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 146.225,
-    "end": 160.0
+    "end": 160
   },
   {
-    "start": 160.0,
-    "end": 167.0
+    "start": 160,
+    "end": 167
   },
   {
-    "start": 167.0,
+    "start": 167,
     "end": 180.775
   },
   {

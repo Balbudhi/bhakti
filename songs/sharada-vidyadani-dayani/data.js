@@ -461,7 +461,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarasvatī",
-        "gloss": "goddess of speech, learning, and inspired expression",
+        "gloss": "she who possesses flowing waters; Vedic goddess of speech, learning, and inspired expression",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1005,7 +1005,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārvatī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Śiva's consort; mountain-born goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
