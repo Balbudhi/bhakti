@@ -698,9 +698,17 @@ def balanced_overlap(left: list[dict[str, Any]], right: list[dict[str, Any]], li
             right_text = "".join(lyric_signature(line) for line in right[:right_count])
             if min(len(left_text), len(right_text)) < 15:
                 continue
-            similarity = difflib.SequenceMatcher(None, left_text, right_text).ratio()
-            balance = min(len(left_text), len(right_text)) / max(len(left_text), len(right_text))
-            score = similarity * balance
+            # A segment boundary can split a model's over-long line into two
+            # complete source units.  When its opening units are exactly the
+            # suffix of the preceding segment, they are overlapping evidence,
+            # not a new performance.  This avoids a low fuzzy score merely
+            # because the left line also contains the preceding unit.
+            if left_text.endswith(right_text):
+                score = 1.0
+            else:
+                similarity = difflib.SequenceMatcher(None, left_text, right_text).ratio()
+                balance = min(len(left_text), len(right_text)) / max(len(left_text), len(right_text))
+                score = similarity * balance
             if score > best[2]:
                 best = (left_count, right_count, score)
     return best
