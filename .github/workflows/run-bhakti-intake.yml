@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       songs:
-        description: "One per line: a YouTube URL or slug=/absolute/path."
+        description: "One YouTube URL per line."
         required: true
       workers:
         description: "Independent song workers."
@@ -24,6 +24,9 @@ jobs:
   intake:
     runs-on: ubuntu-latest
     timeout-minutes: 330
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -94,12 +97,8 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git commit -m "Bhakti: publish workflow-ingested readers
-
-Constraint: workflow-dispatched intake must publish and deploy without relying on a laptop
-Rejected: chained push deploy | GITHUB_TOKEN pushes do not trigger a second workflow
-Confidence: high
-Scope-risk: moderate"
+          git commit -m "Bhakti: publish workflow-ingested readers" \
+            -m "Workflow-dispatched intake publishes and deploys without relying on a laptop."
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
