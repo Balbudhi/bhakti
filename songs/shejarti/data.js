@@ -28,6 +28,10 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
+  "sectionNotices": [
+    {"sequenceIndex": 0, "title": "Śrī Sāī Aṣṭottaraśatanāmāvalī", "poet": "Traditional"}
+  ],
+  "adaptedSequenceIndices": [],
   "sourceStatus": "reviewed"
 };
 

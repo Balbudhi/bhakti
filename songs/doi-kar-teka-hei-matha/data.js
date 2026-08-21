@@ -28,6 +28,16 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
+  "sectionNotices": [
+    {"sequenceIndex": 0, "title": "Bhūpālī · Doī Kara Jore", "poet": "Sant Tukārām"},
+    {"sequenceIndex": 9, "title": "Bhūpālī · Uṭho Pāṇḍuraṅga", "poet": "Sant Janābāī"},
+    {"sequenceIndex": 17, "title": "Bhūpālī · Uṭho Uṭho Śrī Sāīnātha", "poet": "Kṛṣṇa Jogīśvara Bhīṣma"},
+    {"sequenceIndex": 41, "title": "Bhūpālī · Uṭho Pāṇḍuraṅga", "poet": "Sant Nāmdev"},
+    {"sequenceIndex": 53, "title": "Pañcāratī", "poet": "Kṛṣṇa Jogīśvara Bhīṣma"},
+    {"sequenceIndex": 57, "title": "Kākaḍ Āratī", "poet": "Kṛṣṇa Jogīśvara Bhīṣma"},
+    {"sequenceIndex": 85, "title": "Āratī Utārūṁ", "poet": "Sant Tukārām"}
+  ],
+  "adaptedSequenceIndices": [],
   "sourceStatus": "reviewed"
 };
 
