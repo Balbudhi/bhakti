@@ -14,6 +14,16 @@ the half-price `--economy` Batch API mode remains a separate path because
 OpenRouter batches can take up to about 24 hours while GitHub-hosted jobs are
 limited to 6 hours.
 
+To run it: open **Actions → Intake Bhakti Songs → Run workflow**, paste one
+publicly downloadable HTTPS media link per line (up to 50), choose 1–7 workers,
+and run it. YouTube, YouTube Music, and other URLs supported by `yt-dlp` use the
+same intake path. The job
+is owner-only even if the repository is public; it has no issue/comment,
+pull-request, webhook, or public-form trigger. Inputs must resolve only to
+public internet addresses, may not contain credentials, and the OpenRouter key
+stays in GitHub's encrypted repository secrets. Random visitors therefore
+cannot submit songs or spend the API balance.
+
 The production client supports two explicit providers with the same prompts,
 audio payloads, structured schemas, retries, and publication gates:
 

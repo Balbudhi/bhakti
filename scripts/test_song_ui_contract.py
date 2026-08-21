@@ -45,11 +45,25 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('class="library-invocation-roman"', page)
         self.assertIn('class="preface-word"', page)
         self.assertIn('class="preface-meaning"', page)
+        self.assertIn('इन भजनों को रचने वाले कवियों और इन्हें स्वर देने वाले गायकों को सादर नमन।', page)
         self.assertIn('class="about-toggle"', page)
-        self.assertIn('automatically by AI', page)
+        self.assertIn('AI-based transcription, timing, and translation pipeline', page)
         self.assertIn('not to the poet or singer', page)
+        self.assertNotIn('please forgive', page.casefold())
         self.assertNotIn('corrections are welcome', page.casefold())
         self.assertIn('song.singer || song.credit', script)
+
+    def test_hosted_intake_is_owner_only_and_public_media_only(self) -> None:
+        workflow = (ROOT / ".github" / "workflows" / "run-bhakti-intake.yml").read_text(encoding="utf-8")
+        self.assertIn("if: github.actor == github.repository_owner", workflow)
+        self.assertIn('if len(lines) > 50:', workflow)
+        self.assertIn('parsed.scheme != "https"', workflow)
+        self.assertIn('ipaddress.ip_address', workflow)
+        self.assertIn('.is_global', workflow)
+        self.assertIn('parsed.username or parsed.password', workflow)
+        self.assertIn("BHAKTI_GEMINI_PROVIDER: openrouter", workflow)
+        self.assertNotIn("pull_request:", workflow)
+        self.assertNotIn("repository_dispatch:", workflow)
 
 
 if __name__ == "__main__":

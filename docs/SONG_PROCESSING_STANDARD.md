@@ -155,13 +155,15 @@ The homepage acknowledgment is centered and follows the reader's three-level
 order: Hindi source, interactive IAST, then linked literal English. Tapping or
 hovering an IAST word shows its meaning and highlights the corresponding
 English phrase. The English line is: `Respectful salutations to the poets who
-created these bhajans and the singers who gave them voice.`
+created these bhajans and the singers who gave them voice.` The Hindi is
+original site copy, not a quotation: `इन भजनों को रचने वाले कवियों और इन्हें
+स्वर देने वाले गायकों को सादर नमन।`
 
 The automation notice stays behind the circular `?` control rather than in the
-main reading flow. It states plainly that transcription, timing, and
-translation are automated by AI and that any faults belong to the system, not
-the poet or singer. It asks forgiveness for errors and does not solicit
-corrections or imply that a correction channel exists.
+main reading flow. It states professionally that the readers are produced by
+an AI-based transcription, timing, and translation pipeline, and that any
+errors belong to the pipeline rather than the poet or singer. It contains
+neither an apology nor a request for corrections.
 
 Run the hidden difficult-line benchmark after changing either prompt:
 
@@ -263,6 +265,21 @@ runs the same synchronous production pipeline, commits generated readers with
 `GITHUB_TOKEN`, and deploys Pages in the same workflow. Keep `--economy` off in
 that hosted path: GitHub-hosted jobs are limited to 6 hours, while OpenRouter's
 Batch API may take around 24 hours even when the underlying work is correct.
+
+The hosted control surface is GitHub itself; do not build a second login or a
+public submission form. The job runs only when `github.actor` equals the
+repository owner. It accepts at most 50 publicly downloadable HTTPS media URLs,
+rejects embedded credentials and any hostname resolving to local, private,
+reserved, or otherwise non-global addresses, restricts workers to 1–7, has no
+public event or webhook trigger, and reads the OpenRouter key from an encrypted
+repository secret. YouTube, YouTube Music, and other `yt-dlp`-supported public
+media URLs share the same path. A public visitor may view the repository but
+cannot dispatch a billable run. To use it, open **Actions → Intake Bhakti Songs
+→ Run workflow**, paste one link per line, choose the worker count, and run it.
+When a source description is unstructured but independently establishes roles,
+record a reviewed source-ID override in `data/source_credits.json`; the one-link
+hosted intake then receives the verified title, poet, singer, music, language,
+and subject tags without guessing from an uploader name.
 
 ### Direct Google provider
 
