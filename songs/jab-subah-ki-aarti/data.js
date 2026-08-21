@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Jab Subah Kī Āratī",
   "subtitle": "Sai Teri Kripa Se",
-  "credit": "Pramod Medhi",
+  "credit": "Traditional · Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],

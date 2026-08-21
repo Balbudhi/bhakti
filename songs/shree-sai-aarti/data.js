@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Shree Sai Aarti",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
-  "pageCredit": "Pramod Medhi",
+  "credit": "",
+  "pageCredit": "",
   "writer": "",
-  "singer": "Pramod Medhi",
+  "singer": "",
   "composer": "",
   "languages": [
     "Marathi"

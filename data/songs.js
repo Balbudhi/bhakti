@@ -1731,7 +1731,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "jab-subah-ki-aarti",
     "title": "Jab Subah Kī Āratī",
-    "credit": "Pramod Medhi",
+    "credit": "Traditional · Pramod Medhi · Sudhanshu–Samir",
     "languageTags": [
       "Hindi"
     ],
@@ -1744,9 +1744,9 @@ window.BHAKTI_SONGS = [
       "Sirdi Sai",
       "Jab Subah Ki Aarti Khatam Hui Aur Baba Ne Snan Kiya"
     ],
-    "writer": "",
+    "writer": "Traditional",
     "singer": "Pramod Medhi",
-    "composer": "",
+    "composer": "Sudhanshu–Samir",
     "subtitle": "Sai Teri Kripa Se"
   },
   {
