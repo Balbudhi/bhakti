@@ -42,7 +42,7 @@ import source_witness
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
-LONG_MERGE_VERSION = 4
+LONG_MERGE_VERSION = 5
 LONG_TRANSCRIPT_CONTRACT_VERSION = 1
 GLOSS_CONTRACT_VERSION = 4
 TRANSLATION_INPUT_VERSION = 7
@@ -1314,9 +1314,16 @@ def align_long_segments(
             destination = Path(temporary)
             def recover(index: int) -> dict[str, Any]:
                 occurrence_id = occurrences[index]["occurrence_id"]
+                prior = next((starts_by_id.get(occurrences[left]["occurrence_id"])
+                              for left in range(index - 1, -1, -1)
+                              if starts_by_id.get(occurrences[left]["occurrence_id"]) is not None), 0.0)
+                following = next((starts_by_id.get(occurrences[right]["occurrence_id"])
+                                  for right in range(index + 1, len(occurrences))
+                                  if starts_by_id.get(occurrences[right]["occurrence_id"]) is not None), duration)
                 candidates = [starts_by_id[occurrence_id]] if occurrence_id in starts_by_id else []
-                candidates.append(float(coarse_sequence[index]["start"]))
-                return refine_single_start(audio, occurrences, index, candidates, duration, options, destination)
+                candidates.append(max(float(prior) + 0.01, min(float(coarse_sequence[index]["start"]), float(following) - 0.01)))
+                return refine_single_start(audio, occurrences, index, candidates, duration, options, destination,
+                                           lower_bound=float(prior), upper_bound=float(following))
             with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(missing))) as pool:
                 recoveries = list(pool.map(recover, missing))
         for report in recoveries:
@@ -1394,10 +1401,14 @@ def corroborated_by_existing(point: float, measurements: list[float], tolerance:
 def refine_single_start(
     audio: Path, occurrences: list[dict[str, Any]], index: int, candidate_measurements: list[float],
     duration: float, options: argparse.Namespace, destination: Path, *, clip_radius: float = 20.0,
+    lower_bound: float | None = None, upper_bound: float | None = None,
 ) -> dict[str, Any]:
     target = occurrences[index]
     candidate = median(candidate_measurements)
-    clip_start, clip_end = max(0.0, candidate - clip_radius), min(duration, candidate + clip_radius)
+    if lower_bound is not None and upper_bound is not None and upper_bound > lower_bound:
+        clip_start, clip_end = max(0.0, lower_bound - 6.0), min(duration, upper_bound + 6.0)
+    else:
+        clip_start, clip_end = max(0.0, candidate - clip_radius), min(duration, candidate + clip_radius)
     clip = destination / f"single-{target['occurrence_id']}.m4a"
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{clip_start:.3f}",
                     "-i", str(audio), "-t", f"{clip_end - clip_start:.3f}", "-vn", "-c:a", "aac", "-b:a", "192k",
@@ -1431,8 +1442,10 @@ Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0
             # legitimately expose a several-second systematic coarse offset;
             # permit that pair to win, while retaining a hard 12-second guard
             # against drifting into a different repeated occurrence.
-            if not clip_start <= point <= clip_end or abs(point - candidate) > 12.0:
+            if not clip_start <= point <= clip_end or (lower_bound is None and abs(point - candidate) > 12.0):
                 errors.append("single start is outside the candidate clip")
+            if lower_bound is not None and upper_bound is not None and not lower_bound < point < upper_bound:
+                errors.append("single start is outside the accepted-neighbour bracket")
             if any(marker in uncertainty for marker in ("not_in_clip", "not in clip", "not present", "not heard", "unable", "cannot locate")):
                 errors.append("single start is not locatable")
             attempts.append({"attempt": attempt + 1, "start": round(point, 3), "uncertainty_note": uncertainty,
