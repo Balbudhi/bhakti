@@ -99,6 +99,32 @@ def read_packet(path: Path) -> dict[str, Any] | None:
     return value if isinstance(value, dict) else None
 
 
+def apply_verified_text_corrections(song_dir: Path, audited: dict[str, Any]) -> bool:
+    """Apply source-and-audio-confirmed corrections after every audit.
+
+    This registry is reviewed evidence, never model output. It prevents a
+    future regeneration from restoring an earlier mishearing.
+    """
+    registry = read_packet(ROOT / "data" / "verified_text_corrections.json") or {}
+    changes = registry.get("songs", {}).get(song_dir.name, {}).get("lines", {})
+    lines = {line.get("id"): line for line in audited.get("packet", {}).get("verified_lines", [])}
+    changed = False
+    for line_id, correction in changes.items():
+        line = lines.get(line_id)
+        if not line:
+            continue
+        for key in ("source_text", "roman"):
+            value = correction.get(key)
+            if isinstance(value, str) and line.get(key) != value:
+                line[key] = value
+                changed = True
+        note = correction.get("verification")
+        if isinstance(note, str) and note and note not in str(line.get("translation_notes") or ""):
+            line["translation_notes"] = (str(line.get("translation_notes") or "").strip() + " " + note).strip()
+            changed = True
+    return changed
+
+
 def is_url(value: str) -> bool:
     return value.startswith(("https://", "http://"))
 
@@ -2559,6 +2585,12 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
         (song_dir / ".transcription" / "pipeline" / "03-timing.json").unlink(missing_ok=True)
         (song_dir / ".transcription" / "pipeline" / "song-packet.json").unlink(missing_ok=True)
     audited = audit_transcript(song_dir, raw, audio, options)
+    if apply_verified_text_corrections(song_dir, audited):
+        packet_dir = song_dir / ".transcription" / "pipeline"
+        write_json(packet_dir / "02-transcript-audit.json", audited)
+        # Gloss and translation results depend on the old source surface.
+        for filename in ("04-glosses.json", "05-translation.json"):
+            (packet_dir / filename).unlink(missing_ok=True)
     timing = align(song_dir, audited, audio, options)
     glosses = gloss(song_dir, audited, options)
     translations = translate(song_dir, audited, glosses, job, options)
