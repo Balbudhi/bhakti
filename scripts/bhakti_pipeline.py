@@ -37,6 +37,7 @@ import naming
 import resolve_youtube_music_audio as ytmusic
 import tag_taxonomy
 import source_word_map
+import source_witness
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -79,6 +80,10 @@ def parse_args() -> argparse.Namespace:
                         help="Publish existing reviewed artifacts without running or paying for API stages; implies --publish.")
     parser.add_argument("--timeout", type=float, default=300)
     parser.add_argument("--force", action="store_true", help="Rerun cached API stages for an existing intake.")
+    parser.add_argument("--source-witness-audit", action="store_true",
+                        help="Rerun only the transcript-audit-and-downstream stages with an identified textual witness; preserves the first audio transcript and listener master.")
+    parser.add_argument("--refresh-timing", action="store_true",
+                        help="Rerun only lyric-aware onset alignment; preserves verified transcript, glosses, and translation.")
     return parser.parse_args()
 
 
@@ -704,6 +709,7 @@ def audit_long_transcript(
     song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace
 ) -> dict[str, Any]:
     segments = raw["packet"]["segments"]
+    witness = source_witness.acquire(song_dir, song_dir.name)
     cache_dir = song_dir / ".transcription" / "pipeline" / "audit-segments"
     cache_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="bhakti-long-audit-") as temporary:
@@ -722,8 +728,12 @@ def audit_long_transcript(
             segment, first = item["segment"], item["transcript"]
             cached_path = cache_dir / f"segment-{segment['index']:03d}.json"
             cached = read_packet(cached_path)
-            if cached:
+            # A source-witness audit is specifically a new audio pass with
+            # witness excerpts. Reusing a prior non-witness segment would
+            # falsely report that verification happened.
+            if cached and not options.source_witness_audit:
                 return cached
+            witness_context = source_witness.prompt_context(witness, first.get("lines", []))
             prompt = f"""This is the required second transcription pass for one segment of a long devotional recording. Audit the entire first-pass transcript below against the complete attached segment. Use the first transcript as your working draft; do not start over.
 
 Be extremely careful not to miss, hallucinate, reorder, or silently correct any sung, spoken, lead, response, invocation, refrain, pickup, repeated, or closing line. Preserve overlap text because local code reconciles it. For Indic source text, retain the natural script and give a consistent scholarly ISO 15919/IAST-style romanization with accurate vowel length, retroflexion, aspiration, and language-appropriate pronunciation. Do not translate or estimate timestamps. Mark genuine uncertainty rather than guessing.
@@ -732,6 +742,7 @@ Segment audio: absolute source seconds {segment['clip_start']:.3f}–{segment['c
 
 FIRST TRANSCRIPT:
 {json.dumps(first, ensure_ascii=False)}
+{witness_context}
 
 Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
@@ -755,13 +766,14 @@ Return strict JSON:
             audited_segments = list(pool.map(run, jobs))
     merged = merge_audited_segments(audited_segments)
     return {"packet": merged, "segment_audits": audited_segments,
+            "source_witness": witness.get("witness") if witness else None,
             "merge_contract_version": LONG_MERGE_VERSION, "resolved_model": options.model}
 
 
 def audit_transcript(song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "02-transcript-audit.json"
     existing = read_packet(target)
-    if existing and not options.force:
+    if existing and not options.force and not options.source_witness_audit:
         if existing.get("segment_audits") and existing.get("merge_contract_version") != LONG_MERGE_VERSION:
             existing["packet"] = merge_audited_segments(existing["segment_audits"])
             existing["merge_contract_version"] = LONG_MERGE_VERSION
@@ -770,13 +782,17 @@ def audit_transcript(song_dir: Path, raw: dict[str, Any], audio: Path, options: 
     if raw.get("packet", {}).get("segmented"):
         result = audit_long_transcript(song_dir, raw, audio, options)
         write_json(target, result)
+        source_witness.write_comparison_report(song_dir, song_dir.name, result)
         return result
+    witness = source_witness.acquire(song_dir, song_dir.name)
+    witness_context = source_witness.prompt_context(witness, raw.get("packet", {}).get("lines", []))
     prompt = f"""This is the required second transcription pass. Audit the entire first-pass transcript below against the complete attached devotional recording from beginning to end. Use the first transcript as your explicit working draft; do not start from an empty guess. This is transcription verification, not timing or translation.
 
 Be extremely careful: correct every missed, hallucinated, duplicated, reordered, or misheard lyric. Preserve every audible performance occurrence in exact order, including lead pickups before answers and later returns. When the draft came from overlapping segments, reconcile duplicate overlap evidence without deleting genuine repeated performances. For Indic source text, retain the natural script and give a consistent scholarly ISO 15919/IAST-style romanization with accurate vowel length, retroflexion, aspiration, and language-appropriate pronunciation; do not mix plain and scholarly spellings. Do not translate or estimate timestamps. If any content remains unclear, put it in uncertainties; do not silently guess.
 
 Candidate transcript:
 {json.dumps(raw['packet'], ensure_ascii=False)}
+{witness_context}
 
 Return strict JSON:
 {{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"verified_lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"changes":[],"uncertainties":[]}}"""
@@ -804,6 +820,10 @@ Return strict JSON:
                                                        target_seconds=150.0, minimum_core=90.0)
                 result = audit_long_transcript(song_dir, segmented_raw, audio, options)
     write_json(target, result)
+    if witness:
+        result["source_witness"] = witness.get("witness")
+        write_json(target, result)
+        source_witness.write_comparison_report(song_dir, song_dir.name, result)
     return result
 
 
@@ -1171,7 +1191,6 @@ def align_long_segments(
         destination = Path(temporary)
         retained_reports: list[dict[str, Any]] = []
         work: list[tuple[dict[str, Any], Path]] = []
-        superseded_by_parent: dict[int, dict[str, Any]] = {}
         for chunk in chunks:
             parent_path = cache_dir / f"segment-{chunk['index']:03d}.json"
             cached = read_packet(parent_path)
@@ -1181,10 +1200,13 @@ def align_long_segments(
                     max_coarse_delta=max(90.0, chunk["clip_end"] - chunk["clip_start"]),
                     reasoning_effort="high", max_completion_tokens=65536,
                 )
-                if not parent_report["validation_errors"]:
-                    retained_reports.append(parent_report)
-                    continue
-                superseded_by_parent[int(chunk["index"])] = parent_report
+                # A malformed or uncertain sibling must not discard exact,
+                # independently valid starts in this same bounded window.
+                # The unresolved occurrences receive narrow two-pass recovery
+                # below; the valid ones remain evidence rather than causing a
+                # costly re-timing cascade across the whole long recording.
+                retained_reports.append(parent_report)
+                continue
             for child_index, child in enumerate(subchunks(chunk)):
                 work.append((child, cache_dir / f"segment-{chunk['index']:03d}-window-{child_index:02d}.json"))
 
@@ -1202,20 +1224,65 @@ def align_long_segments(
         else:
             window_reports = []
         for report in window_reports:
-            parent_index = int(report.get("parent_segment_index", -1))
-            if parent_index in superseded_by_parent:
-                report["superseded_parent"] = superseded_by_parent.pop(parent_index)
             retained_reports.append(report)
         reports = retained_reports
-    errors = [f"segment {report['index']}: {error}" for report in reports for error in report["validation_errors"]]
     starts_by_id: dict[str, float] = {}
+    missing: list[int] = []
     for report in reports:
-        if report["validation_errors"]:
-            continue
+        uncertain = set(str(value) for value in report.get("uncertain_ids", []))
         for entry in report["starts"]:
+            if entry["occurrence_id"] in uncertain:
+                continue
             if entry["occurrence_id"] in starts_by_id:
-                errors.append(f"{entry['occurrence_id']}: duplicate long-segment timing")
+                continue
             starts_by_id[entry["occurrence_id"]] = float(entry["start"])
+    for index, occurrence in enumerate(occurrences):
+        if occurrence["occurrence_id"] not in starts_by_id:
+            missing.append(index)
+    recoveries: list[dict[str, Any]] = []
+    if missing:
+        with tempfile.TemporaryDirectory(prefix="bhakti-long-single-starts-") as temporary:
+            destination = Path(temporary)
+            def recover(index: int) -> dict[str, Any]:
+                occurrence_id = occurrences[index]["occurrence_id"]
+                candidates = [starts_by_id[occurrence_id]] if occurrence_id in starts_by_id else []
+                candidates.append(float(coarse_sequence[index]["start"]))
+                return refine_single_start(audio, occurrences, index, candidates, duration, options, destination)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(missing))) as pool:
+                recoveries = list(pool.map(recover, missing))
+        for report in recoveries:
+            if not report["validation_errors"]:
+                starts_by_id[report["occurrence_id"]] = float(report["start"])
+    # A repeated refrain can make a locally perfect narrow response land on
+    # the earlier occurrence. Check it against already accepted neighbours and
+    # make one bounded, order-aware recovery rather than publishing a shifted
+    # sequence or restarting every timing window.
+    order_repairs: list[dict[str, Any]] = []
+    violations: list[int] = []
+    previous = -1.0
+    for index, occurrence in enumerate(occurrences):
+        value = starts_by_id.get(occurrence["occurrence_id"])
+        if value is not None and value <= previous:
+            violations.append(index)
+        elif value is not None:
+            previous = value
+    if violations:
+        with tempfile.TemporaryDirectory(prefix="bhakti-order-aware-starts-") as temporary:
+            destination = Path(temporary)
+            def recover_order(index: int) -> dict[str, Any]:
+                prior = starts_by_id.get(occurrences[index - 1]["occurrence_id"], 0.0) if index else 0.0
+                following = next((starts_by_id.get(occurrences[right]["occurrence_id"])
+                                  for right in range(index + 1, len(occurrences))
+                                  if starts_by_id.get(occurrences[right]["occurrence_id"]) is not None), duration)
+                candidate = max(prior + 0.5, min(float(coarse_sequence[index]["start"]), float(following) - 0.5))
+                return refine_single_start(audio, occurrences, index, [candidate], duration, options, destination)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(violations))) as pool:
+                order_repairs = list(pool.map(recover_order, violations))
+        for report in order_repairs:
+            if not report["validation_errors"]:
+                starts_by_id[report["occurrence_id"]] = float(report["start"])
+    errors = [f"{report['occurrence_id']}: {error}" for report in recoveries for error in report["validation_errors"]]
+    errors.extend(f"{report['occurrence_id']}: {error}" for report in order_repairs for error in report["validation_errors"])
     starts = [starts_by_id.get(occurrence["occurrence_id"]) for occurrence in occurrences]
     if any(start is None for start in starts):
         errors.append("long-segment timing is missing one or more occurrences")
@@ -1229,7 +1296,7 @@ def align_long_segments(
             sequence.append({"occurrence_id": occurrence["occurrence_id"], "ref": occurrence["ref"],
                              "section": occurrence["section"], "repeats": occurrence["repeats"],
                              "start": start, "end": end})
-    return sequence, reports, errors
+    return sequence, reports + recoveries + order_repairs, errors
 
 
 def single_start_schema() -> dict[str, Any]:
@@ -1257,11 +1324,11 @@ def corroborated_by_existing(point: float, measurements: list[float], tolerance:
 
 def refine_single_start(
     audio: Path, occurrences: list[dict[str, Any]], index: int, candidate_measurements: list[float],
-    duration: float, options: argparse.Namespace, destination: Path,
+    duration: float, options: argparse.Namespace, destination: Path, *, clip_radius: float = 20.0,
 ) -> dict[str, Any]:
     target = occurrences[index]
     candidate = median(candidate_measurements)
-    clip_start, clip_end = max(0.0, candidate - 20.0), min(duration, candidate + 20.0)
+    clip_start, clip_end = max(0.0, candidate - clip_radius), min(duration, candidate + clip_radius)
     clip = destination / f"single-{target['occurrence_id']}.m4a"
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{clip_start:.3f}",
                     "-i", str(audio), "-t", f"{clip_end - clip_start:.3f}", "-vn", "-c:a", "aac", "-b:a", "192k",
@@ -1290,9 +1357,14 @@ Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0
             errors = []
             if packet.get("occurrence_id") != target["occurrence_id"]:
                 errors.append("response occurrence ID differs from target")
-            if not clip_start <= point <= clip_end or abs(point - candidate) > 6.0:
+            # The coarse long-segment route is deliberately only a routing
+            # hint. A pair of tightly agreeing lyric-aware measurements may
+            # legitimately expose a several-second systematic coarse offset;
+            # permit that pair to win, while retaining a hard 12-second guard
+            # against drifting into a different repeated occurrence.
+            if not clip_start <= point <= clip_end or abs(point - candidate) > 12.0:
                 errors.append("single start is outside the candidate clip")
-            if any(marker in uncertainty for marker in ("not_in_clip", "not in clip", "not heard", "unable", "cannot locate")):
+            if any(marker in uncertainty for marker in ("not_in_clip", "not in clip", "not present", "not heard", "unable", "cannot locate")):
                 errors.append("single start is not locatable")
             attempts.append({"attempt": attempt + 1, "start": round(point, 3), "uncertainty_note": uncertainty,
                              "response": response, "validation_errors": errors})
@@ -2443,6 +2515,15 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
         return {"slug": job["slug"], "status": packet["publication_status"],
                 "elapsed_seconds": packet["elapsed_seconds"],
                 "reported_openrouter_cost": packet["reported_openrouter_cost"]}
+    if options.source_witness_audit:
+        # Preserve the first audio transcription. A witness is deliberately a
+        # second-pass aid, so only dependent artifacts are invalidated.
+        packet_dir = song_dir / ".transcription" / "pipeline"
+        for filename in ("02-transcript-audit.json", "03-timing.json", "04-glosses.json", "05-translation.json", "song-packet.json"):
+            (packet_dir / filename).unlink(missing_ok=True)
+    elif options.refresh_timing:
+        (song_dir / ".transcription" / "pipeline" / "03-timing.json").unlink(missing_ok=True)
+        (song_dir / ".transcription" / "pipeline" / "song-packet.json").unlink(missing_ok=True)
     audited = audit_transcript(song_dir, raw, audio, options)
     timing = align(song_dir, audited, audio, options)
     glosses = gloss(song_dir, audited, options)
