@@ -13,3 +13,15 @@ readers, and deploys Pages in the same run. It is for normal synchronous jobs;
 the half-price `--economy` Batch API mode remains a separate path because
 OpenRouter batches can take up to about 24 hours while GitHub-hosted jobs are
 limited to 6 hours.
+
+The production client supports two explicit providers with the same prompts,
+audio payloads, structured schemas, retries, and publication gates:
+
+- `BHAKTI_GEMINI_PROVIDER=openrouter` uses the shared Dev OpenRouter key and is
+  the default.
+- `BHAKTI_GEMINI_PROVIDER=google` uses the direct Gemini OpenAI-compatible API
+  with `GEMINI_API_KEY` or a private `~/Dev/gemini.key` file.
+
+Google direct mode must pass a real audio/schema equivalence probe before it is
+selected for a production batch. It does not silently emulate `--economy`;
+OpenRouter remains the supported Batch API path.

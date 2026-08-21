@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a complete, reviewable song packet with Gemini Flash through OpenRouter.
+"""Create a complete, reviewable song packet with Gemini Flash.
 
 The pipeline deliberately uses three different tasks, not duplicate generic
 passes: full-song transcription, lyric-aware full-song alignment, then
@@ -28,10 +28,12 @@ import subprocess
 
 MODEL = "google/gemini-3.7-flash"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
+GOOGLE_API_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 BATCH_API_URL = "https://openrouter.ai/api/beta/batches"
 AUTH_KEY_URL = "https://openrouter.ai/api/v1/auth/key"
 CREDITS_URL = "https://openrouter.ai/api/v1/credits"
 DEFAULT_KEY = Path.home() / "Dev" / "openrouter.key"
+DEFAULT_GOOGLE_KEY = Path.home() / "Dev" / "gemini.key"
 API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "3")))
 BATCH_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_BATCH_MAX_CONCURRENCY", "32")))
 API_MIN_START_INTERVAL = max(0.0, float(os.environ.get("BHAKTI_API_MIN_START_INTERVAL", "0.35")))
@@ -60,18 +62,74 @@ def args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def key() -> str:
-    value = os.environ.get("OPENROUTER_API_KEY", "").strip()
+def provider_name() -> str:
+    value = os.environ.get("BHAKTI_GEMINI_PROVIDER", "openrouter").strip().casefold()
+    if value not in {"openrouter", "google"}:
+        raise RuntimeError("BHAKTI_GEMINI_PROVIDER must be 'openrouter' or 'google'")
+    return value
+
+
+def _secure_key(environment: str, file_environment: str, default_path: Path, label: str) -> str:
+    value = os.environ.get(environment, "").strip()
     if value:
         return value
-    path = Path(os.environ.get("OPENROUTER_API_KEY_FILE", DEFAULT_KEY)).expanduser()
+    path = Path(os.environ.get(file_environment, default_path)).expanduser()
     mode = path.stat().st_mode & 0o777
     if mode & 0o077:
         raise RuntimeError(f"refusing insecure key file: {path}")
     value = path.read_text(encoding="utf-8").strip()
     if not value:
-        raise RuntimeError("OpenRouter key is empty")
+        raise RuntimeError(f"{label} key is empty")
     return value
+
+
+def key() -> str:
+    if provider_name() == "google":
+        return _secure_key("GEMINI_API_KEY", "GEMINI_API_KEY_FILE", DEFAULT_GOOGLE_KEY, "Gemini")
+    return _secure_key("OPENROUTER_API_KEY", "OPENROUTER_API_KEY_FILE", DEFAULT_KEY, "OpenRouter")
+
+
+def provider_model(model: str, provider: str) -> str:
+    model = batch_base_model(model)
+    if provider == "google":
+        return model.removeprefix("google/")
+    return model
+
+
+def request_headers(provider: str, api_key: str) -> dict[str, str]:
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    if provider == "openrouter":
+        headers.update({"HTTP-Referer": "https://bhakti.eeshan.xyz/", "X-Title": "Bhakti song processing"})
+    return headers
+
+
+def encoded_audio(audio: Path, provider: str) -> tuple[str, str]:
+    """Return an OpenAI-compatible audio payload without changing song time.
+
+    OpenRouter accepts the listener's native container. Google's compatibility
+    documentation demonstrates WAV and its native API does not list WebM/Opus
+    or M4A containers. For direct Google requests, use the original MP3 or make
+    an in-memory mono MP3 at a rate well above Gemini's documented internal
+    audio resolution. This avoids persistent duplicate files and stays under
+    the 20 MB inline-request limit for the pipeline's <=15 minute core jobs.
+    """
+    if provider == "openrouter":
+        encoded = base64.b64encode(audio.read_bytes()).decode("ascii")
+        return encoded, audio.suffix.removeprefix(".")
+    if audio.suffix.casefold() == ".mp3":
+        raw = audio.read_bytes()
+    else:
+        result = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(audio), "-vn",
+             "-ac", "1", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "112k", "-f", "mp3", "pipe:1"],
+            check=True,
+            capture_output=True,
+        )
+        raw = result.stdout
+    encoded = base64.b64encode(raw).decode("ascii")
+    if len(encoded) > 18_000_000:
+        raise RuntimeError("direct Google inline audio exceeds the safe request budget; segment the audio first")
+    return encoded, "mp3"
 
 
 def _json_request(url: str, api_key: str, *, timeout: float) -> dict[str, Any]:
@@ -181,39 +239,46 @@ def call(
     reasoning_effort: str | None = None,
     max_completion_tokens: int | None = None,
 ) -> dict[str, Any]:
+    provider = provider_name()
+    if provider == "google" and model.endswith(":batch"):
+        raise RuntimeError("direct Google Batch is not enabled; use OpenRouter for --economy")
     content: list[dict[str, Any]] = [{"type": "text", "text": prompt}]
     if audio:
+        audio_data, audio_format = encoded_audio(audio, provider)
         content.append({
             "type": "input_audio",
-            "input_audio": {"data": base64.b64encode(audio.read_bytes()).decode("ascii"), "format": audio.suffix.removeprefix(".")},
+            "input_audio": {"data": audio_data, "format": audio_format},
         })
     payload = {
-        "model": model,
+        "model": provider_model(model, provider),
         "temperature": 0,
         "messages": [{"role": "user", "content": content}],
         "response_format": ({"type": "json_schema", "json_schema": {"name": schema_name, "strict": True, "schema": response_schema}}
                             if response_schema else {"type": "json_object"}),
     }
-    payload["provider"] = {
-        "allow_fallbacks": True,
-        "sort": os.environ.get("OPENROUTER_PROVIDER_SORT", "throughput"),
-    }
-    if response_schema:
-        payload["provider"]["require_parameters"] = True
-    if reasoning_effort:
-        payload["reasoning"] = {"effort": reasoning_effort}
+    if provider == "openrouter":
+        payload["provider"] = {
+            "allow_fallbacks": True,
+            "sort": os.environ.get("OPENROUTER_PROVIDER_SORT", "throughput"),
+        }
+        if response_schema:
+            payload["provider"]["require_parameters"] = True
+        if reasoning_effort:
+            payload["reasoning"] = {"effort": reasoning_effort}
+    elif reasoning_effort:
+        payload["reasoning_effort"] = reasoning_effort
     if max_completion_tokens:
         payload["max_tokens"] = max_completion_tokens
-    if model.endswith(":batch"):
+    if provider == "openrouter" and model.endswith(":batch"):
         with _BATCH_SLOTS:
             _wait_for_api_start()
             result = call_batch(payload, api_key, timeout=timeout)
     else:
         result = None
     request = urllib.request.Request(
-        API_URL,
+        GOOGLE_API_URL if provider == "google" else API_URL,
         data=json.dumps(payload).encode("utf-8"),
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "HTTP-Referer": "https://bhakti.eeshan.xyz/", "X-Title": "Bhakti song processing"},
+        headers=request_headers(provider, api_key),
         method="POST",
     )
     for attempt in range(6) if result is None else []:
@@ -233,9 +298,9 @@ def call(
                     pass
                 time.sleep(max(retry_after, min(32, 2 ** (attempt + 1))))
                 continue
-            raise RuntimeError(f"OpenRouter HTTP {exc.code}: {detail}") from exc
+            raise RuntimeError(f"{provider} HTTP {exc.code}: {detail}") from exc
     if result is None:
-        raise RuntimeError("OpenRouter returned no response after retries")
+        raise RuntimeError(f"{provider} returned no response after retries")
     try:
         text = result["choices"][0]["message"]["content"]
         if isinstance(text, list):

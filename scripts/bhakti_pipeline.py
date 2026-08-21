@@ -1954,7 +1954,7 @@ def reported_cost(*artifacts: Any) -> float | None:
 
 
 def preflight_blocked_reason(options: argparse.Namespace) -> str | None:
-    if options.generate_only:
+    if options.generate_only or gemini.provider_name() != "openrouter":
         return None
     try:
         status = gemini.openrouter_account_status(gemini.key(), timeout=min(20.0, options.timeout))
