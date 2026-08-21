@@ -587,6 +587,14 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual([line["source_text"] for line in merged["verified_lines"]],
                          ["पूर्व", "नमामीश्वरं सद्गुरुं साईनाथम्"])
 
+    def test_long_merge_recognises_a_split_suffix_as_overlap(self) -> None:
+        left = [{"source_text": "पूर्व पंक्ति। गरजहिं तरजहिं सहज असंका। मानहु ग्रसन चहत हहिं लंका।"}]
+        right = [
+            {"source_text": "गरजहिं तरजहिं सहज असंका"},
+            {"source_text": "मानहु ग्रसन चहत हहिं लंका"},
+        ]
+        self.assertEqual(pipeline.balanced_overlap(left, right), (1, 2, 1.0))
+
     def test_hydrate_pipeline_artifacts_backfills_missing_stage_files(self) -> None:
         packet_dir = self.root / "songs" / "hydrated-song" / ".transcription" / "pipeline"
         packet_dir.mkdir(parents=True)
