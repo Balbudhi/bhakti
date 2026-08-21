@@ -42,7 +42,7 @@ import source_witness
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
-LONG_MERGE_VERSION = 2
+LONG_MERGE_VERSION = 3
 LONG_TRANSCRIPT_CONTRACT_VERSION = 1
 GLOSS_CONTRACT_VERSION = 4
 TRANSLATION_INPUT_VERSION = 7
@@ -845,6 +845,7 @@ def audit_transcript(song_dir: Path, raw: dict[str, Any], audio: Path, options: 
         if existing.get("segment_audits") and existing.get("merge_contract_version") != LONG_MERGE_VERSION:
             existing["packet"] = merge_audited_segments(existing["segment_audits"])
             existing["merge_contract_version"] = LONG_MERGE_VERSION
+            existing["merge_contract_rebuilt"] = True
             write_json(target, existing)
         return existing
     if raw.get("packet", {}).get("segmented"):
@@ -2597,6 +2598,14 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
         (song_dir / ".transcription" / "pipeline" / "03-timing.json").unlink(missing_ok=True)
         (song_dir / ".transcription" / "pipeline" / "song-packet.json").unlink(missing_ok=True)
     audited = audit_transcript(song_dir, raw, audio, options)
+    if audited.pop("merge_contract_rebuilt", False):
+        # A new deterministic reconciliation can alter canonical lines and
+        # occurrence order. Reuse audio evidence but never keep glosses or
+        # translations derived from the old source surface.
+        packet_dir = song_dir / ".transcription" / "pipeline"
+        for filename in ("04-glosses.json", "05-translation.json"):
+            (packet_dir / filename).unlink(missing_ok=True)
+        write_json(packet_dir / "02-transcript-audit.json", audited)
     if apply_verified_text_corrections(song_dir, audited):
         packet_dir = song_dir / ".transcription" / "pipeline"
         write_json(packet_dir / "02-transcript-audit.json", audited)
