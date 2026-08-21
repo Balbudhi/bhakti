@@ -17,7 +17,7 @@ documentation/evaluation only.
 For one or more local audio files or source URLs, use:
 
 ```sh
-python3 scripts/bhakti_pipeline.py --workers 4 --publish \
+python3 scripts/bhakti_pipeline.py --workers 7 --publish \
   --song song-slug='https://www.youtube.com/watch?v=…'
 ```
 
@@ -28,7 +28,7 @@ For a larger batch, use a JSON manifest:
 ```
 
 ```sh
-python3 scripts/bhakti_pipeline.py --workers 4 --publish --batch intake.json
+python3 scripts/bhakti_pipeline.py --workers 7 --publish --batch intake.json
 ```
 
 To regenerate pages and the shared catalogue from already reviewed artifacts
@@ -47,7 +47,7 @@ The pipeline preserves audio-only source input, then performs distinct stages:
 6. an independent adversarial translation review that cannot rewrite; and
 7. deterministic `data.js`, reader HTML, and catalogue generation.
 
-Song concurrency and API concurrency are separate. The default four song
+Song concurrency and API concurrency are separate. The default seven song
 workers keep local intake, FFmpeg, validation, and generation busy, while the
 shared OpenRouter scheduler permits at most three simultaneous outbound calls
 and staggers starts by 350 ms. It routes to the highest-throughput compatible

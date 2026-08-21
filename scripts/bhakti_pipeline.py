@@ -53,6 +53,10 @@ def preserved_term_registry() -> dict[str, Any]:
     return json.loads((ROOT / "data" / "preserved_terms.json").read_text(encoding="utf-8"))
 
 
+def economy_model(model: str) -> str:
+    return model if model.endswith(":batch") else model + ":batch"
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--song", action="append", default=[], metavar="SLUG=SOURCE",
@@ -61,9 +65,11 @@ def parse_args() -> argparse.Namespace:
                         help="YouTube/media URL with automatic slug, title, and description-credit extraction. Repeat for a batch.")
     parser.add_argument("--batch", type=Path,
                         help="JSON: {songs:[{slug, source, title?, writer?, singer?, composer?, languages?, subjectTags?, searchAliases?}]}")
-    parser.add_argument("--workers", type=int, default=4,
-                        help="Independent songs to process concurrently (default: 4; outbound API calls are separately rate-gated).")
+    parser.add_argument("--workers", type=int, default=7,
+                        help="Independent songs to process concurrently (default: 7; outbound API calls are separately rate-gated).")
     parser.add_argument("--model", default=MODEL)
+    parser.add_argument("--economy", action="store_true",
+                        help="Use the same Gemini model through OpenRouter's half-price asynchronous Batch API.")
     parser.add_argument("--publish", action="store_true",
                         help="Generate readers and update data/songs.js after all required checks pass.")
     parser.add_argument("--generate-only", action="store_true",
@@ -1024,11 +1030,17 @@ def consensus_value(values: list[float], tolerance: float = 0.5) -> float | None
     return round(median(best), 3) if len(best) >= 2 else None
 
 
+def corroborated_by_existing(point: float, measurements: list[float], tolerance: float = 0.75) -> bool:
+    """Whether a new independent onset agrees with any evidence already paid for."""
+    return any(abs(point - existing) <= tolerance for existing in measurements)
+
+
 def refine_single_start(
-    audio: Path, occurrences: list[dict[str, Any]], index: int, candidate: float,
+    audio: Path, occurrences: list[dict[str, Any]], index: int, candidate_measurements: list[float],
     duration: float, options: argparse.Namespace, destination: Path,
 ) -> dict[str, Any]:
     target = occurrences[index]
+    candidate = median(candidate_measurements)
     clip_start, clip_end = max(0.0, candidate - 20.0), min(duration, candidate + 20.0)
     clip = destination / f"single-{target['occurrence_id']}.m4a"
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{clip_start:.3f}",
@@ -1047,7 +1059,7 @@ Return only the exact first audible syllable start of TARGET's first repetition.
 
 Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0.0,"uncertainty":""}}"""
     attempts: list[dict[str, Any]] = []
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=options.timeout,
                                    response_schema=single_start_schema(), schema_name="bhakti_single_start",
@@ -1067,14 +1079,15 @@ Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0
         except (RuntimeError, KeyError, TypeError, ValueError) as exc:
             attempts.append({"attempt": attempt + 1, "error": str(exc), "validation_errors": ["unusable single response"]})
         valid = [item for item in attempts if not item["validation_errors"]]
-        if len(valid) == 1 and abs(valid[0]["start"] - candidate) <= 0.5:
+        if valid and corroborated_by_existing(valid[-1]["start"], candidate_measurements):
             break
         if len(valid) >= 2 and max(item["start"] for item in valid) - min(item["start"] for item in valid) <= 0.5:
             break
     valid = [item for item in attempts if not item["validation_errors"]]
     errors: list[str] = []
-    if len(valid) == 1 and abs(valid[0]["start"] - candidate) <= 0.5:
-        point = valid[0]["start"]
+    corroborated = [item for item in valid if corroborated_by_existing(item["start"], candidate_measurements)]
+    if corroborated:
+        point = corroborated[-1]["start"]
     elif len(valid) >= 2:
         values = [item["start"] for item in valid]
         point = median(values)
@@ -1083,9 +1096,9 @@ Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0
     else:
         point = candidate
         errors.append("single start lacks agreeing evidence")
-    response = min(valid, key=lambda item: abs(item["start"] - point))["response"] if valid else attempts[-1].get("response", {"error": "no valid response"})
-    return {"kind": "single", "occurrence_id": target["occurrence_id"], "candidate": candidate,
-            "start": round(point, 3), "attempts": attempts, "response": response, "validation_errors": errors}
+    return {"kind": "single", "occurrence_id": target["occurrence_id"],
+            "candidate": candidate, "candidate_measurements": candidate_measurements,
+            "start": round(point, 3), "attempts": attempts, "validation_errors": errors}
 
 
 
@@ -1139,7 +1152,9 @@ def refine_all_starts(
             destination = Path(temporary)
             with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(unresolved))) as pool:
                 recoveries = list(pool.map(
-                    lambda index: refine_single_start(audio, occurrences, index, coarse_sequence[index]["start"],
+                    lambda index: refine_single_start(
+                                                      audio, occurrences, index,
+                                                      measurements[occurrences[index]["occurrence_id"]],
                                                       duration, options, destination), unresolved))
         for report in recoveries:
             if not report["validation_errors"]:
@@ -1887,6 +1902,8 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
 
 def main() -> int:
     options = parse_args()
+    if options.economy:
+        options.model = economy_model(options.model)
     jobs = normalise_jobs(options)
     results: list[dict[str, Any]] = []
     blocked_reason = preflight_blocked_reason(options)
