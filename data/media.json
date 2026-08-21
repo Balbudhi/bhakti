@@ -171,6 +171,13 @@
         "sha256": "2a7e119a13fc9ec0da6383b88d09717d0a15c57c6e3ea7c123784d75cfbd18ce"
       }
     ],
+    "damaru-har-kar-baaje": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/damaru-har-kar-baaje.m4a",
+        "type": "audio/mp4",
+        "sha256": "0e8673ef37639f58807c42b866ee2bf0aa5964aa8412ca0ca8d9d3404c329c69"
+      }
+    ],
     "darsan-dena-pran-piyare": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/darsan-dena-pran-piyare.m4a",
@@ -200,6 +207,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dekho-mand-mand.m4a",
         "type": "audio/mp4",
         "sha256": "f1e0367eb3e5bc495ea12e0cee90560136e6d8369bf231fb395da0371cc1a9a8"
+      }
+    ],
+    "dev-bade-data-bade": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dev-bade-data-bade.m4a",
+        "type": "audio/mp4",
+        "sha256": "b90d4ffce5454d56c370b7a314da151a95533408bc4a78feae6d3ae205b91b45"
       }
     ],
     "dhoop-aarti": [
@@ -438,6 +452,13 @@
         "sha256": "c161360986280698058f3106e18672687c12c3c8f05c2250895cdd020a47e711"
       }
     ],
+    "jai-bhole-nath": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-bhole-nath.m4a",
+        "type": "audio/mp4",
+        "sha256": "3c5fe3f16edd319f3cd681c41c426d7519d5aee4f5695ef4ae10331fd28421b5"
+      }
+    ],
     "jai-durge-durgati-pariharini": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-durge-durgati-pariharini.m4a",
@@ -473,6 +494,27 @@
         "sha256": "10abe2f12f8e835447fb231cf2fc467f5a3fbad30c6d6c255a26bf9559ed409c"
       }
     ],
+    "jai-mahakali-aarti": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-mahakali-aarti.m4a",
+        "type": "audio/mp4",
+        "sha256": "c1883ec940be49dc9fdb0f21607acd462797fecc98caf1f597c91bea9e434815"
+      }
+    ],
+    "jai-shankar-bhole": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shankar-bhole.m4a",
+        "type": "audio/mp4",
+        "sha256": "78fda79a7d39b7e5988ae6b84e671d45018bd212563f81d654345db1cfd19a4a"
+      }
+    ],
+    "jai-shiva-shankar-jai-gangadhar": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shiva-shankar-jai-gangadhar.m4a",
+        "type": "audio/mp4",
+        "sha256": "2cb409d5ab7e52fdd689f60933a3be595b8b552d6a318fbc2569ee4d186a283b"
+      }
+    ],
     "jai-shri-shankar-sut-ganesh": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shri-shankar-sut-ganesh.m4a",
@@ -480,11 +522,25 @@
         "sha256": "ec510ed51c741628c786447200d8c7b314e4edf63624a0202a599331e15f2f7e"
       }
     ],
+    "janam-janam-ka-das-tumhara": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janam-janam-ka-das-tumhara.m4a",
+        "type": "audio/mp4",
+        "sha256": "0bbbe44042ed53de54f303d637df7c8114161e9108bc6f6ba2eb9b9c982c2c67"
+      }
+    ],
     "janani-main-na-jiyun-bin-rama": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janani-main-na-jiyun-bin-rama.m4a",
         "type": "audio/mp4",
         "sha256": "8b1be9bce56d1fa5f707bc84dad8310351ed2a750d93ba4b2e7c14bb3ed3b797"
+      }
+    ],
+    "janchiye-girijapati-kashi": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janchiye-girijapati-kashi.m4a",
+        "type": "audio/mp4",
+        "sha256": "2e7314237e3b452136b21d7c3166fe8ceb18fe6a403457fb3f305bda8e364867"
       }
     ],
     "janena-mu-kiba-debi": [
@@ -558,6 +614,18 @@
         "sha256": "75bc641be06587472dea8b2bc562c6160cdf12284a2c7531d02b1fcc7016e623"
       }
     ],
+    "kai-janmon-se-bula-rahi-hoon": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kai-janmon-se-bula-rahi-hoon.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "d7b37fcc527ae060249bb68f2b9ea1bccd2afc4a5b1f9a6742db372e955096ea"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kai-janmon-se-bula-rahi-hoon.m4a",
+        "type": "audio/mp4",
+        "sha256": "9dba7652c58fdc97372126480967442905bdd3b1570c80f2e46b70bbf883a501"
+      }
+    ],
     "kaise-lagaun-tumse-main-preet": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaise-lagaun-tumse-main-preet.webm",
@@ -601,6 +669,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koi-hor-nahi.m4a",
         "type": "audio/mp4",
         "sha256": "2e050a19ad203c0d2db6217cb22c26cca64cf9c244357c7fef0fde0be85e4a08"
+      }
+    ],
+    "kyun-nahin-manegi-meri-maa": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kyun-nahin-manegi-meri-maa.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "b3fb2caf9c859556b8dc807fc12801bd173c849eaa1c03441e8fb6a3db0d4d1d"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kyun-nahin-manegi-meri-maa.m4a",
+        "type": "audio/mp4",
+        "sha256": "4c786eb23789abb9dd72e08c31b3a66d4fde14509a68e2912d4c58e64223341e"
       }
     ],
     "lalakari": [
@@ -821,6 +901,18 @@
         "sha256": "7f4f65e6d9704121ef8b2d8c7ee8974fdafd5df80bdcca9cf9a98b8c9acebe66"
       }
     ],
+    "meri-maa-jagdambe-man-jaye": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2a7f30786c4cada349be1efce8ed49b1504798182a5ec4d5e075c875c63e88de"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.m4a",
+        "type": "audio/mp4",
+        "sha256": "68ed4b01ee262536c48a3748e5e87b484c769c18be64ef4ff000009e89536e93"
+      }
+    ],
     "mero-abgun-bisra-karo": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mero-abgun-bisra-karo.m4a",
@@ -907,6 +999,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdiwale-sai.m4a",
         "type": "audio/mp4",
         "sha256": "b032dbb6a497209d767272ff43cf5cba87e5190aa9be6209c93243c9ccc9f12e"
+      }
+    ],
+    "om-jai-gangadhar-aarti": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-jai-gangadhar-aarti.m4a",
+        "type": "audio/mp4",
+        "sha256": "9087a17ec3dd413d3bd34864e778e5c8c2f3281e5fec5cce4d71b11e07c1de41"
       }
     ],
     "parvati-devi-mahamayavini": [
@@ -1098,6 +1197,13 @@
         "sha256": "2049c1f78d61e2be40362b01f4db3296fbaf9e69ac0b250b2f0e826ef2e51163"
       }
     ],
+    "sai-tum-humse-jaldi-milo": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-tum-humse-jaldi-milo.m4a",
+        "type": "audio/mp4",
+        "sha256": "ec9396ac7fae2f728030dc350f1b66c5e59e896736705dd1fc030534339f917c"
+      }
+    ],
     "samapti": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/samapti.m4a",
@@ -1126,11 +1232,25 @@
         "sha256": "a10b43cdc68493ce271e9f9902f5b2a4e94f2ad246c2704bb55fc0879021f953"
       }
     ],
+    "shankar-ho": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shankar-ho.m4a",
+        "type": "audio/mp4",
+        "sha256": "8f7c4a17ceab405716a98ada5238768293440236b75db2b1f4cfec3a3c3a3e65"
+      }
+    ],
     "sharada-vidyadani-dayani": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sharada-vidyadani-dayani.m4a",
         "type": "audio/mp4",
         "sha256": "bf0ab5aad8b7c1d0c869c57f80ac26c091cf508dfbbdd7eaf8d795c5982d746b"
+      }
+    ],
+    "sheesh-gang-ardhang-parvati": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sheesh-gang-ardhang-parvati.m4a",
+        "type": "audio/mp4",
+        "sha256": "a96057d0bbefddaa30e95cddac23eca2e16d15e48b9e74c41c450bd282cc11bc"
       }
     ],
     "shej-aarti": [
@@ -1155,6 +1275,39 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shejarti.m4a",
         "type": "audio/mp4",
         "sha256": "f552e0c57e0306a8a5a42b39148b94e0e5fb1fdf6b10b58fa5c9c3009ab6414c"
+      }
+    ],
+    "sheronwali-kripa-kijiye": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sheronwali-kripa-kijiye.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "f8b4a150d766e6618147c8e79912727a942815984e7fcad310e754d843d6eb24"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sheronwali-kripa-kijiye.m4a",
+        "type": "audio/mp4",
+        "sha256": "58243878ad0fbf84401db6c426cef9953ca8c7a64f87146e90c89381727ca4df"
+      }
+    ],
+    "shirdi-wale-sai-baba": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shirdi-wale-sai-baba.m4a",
+        "type": "audio/mp4",
+        "sha256": "f7d19c9d753b1df0b8aa76c7c42b2d19324eca68e6587b870d3cd27d6d7bac9e"
+      }
+    ],
+    "shiv-ka-naam-japo-sansari": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shiv-ka-naam-japo-sansari.m4a",
+        "type": "audio/mp4",
+        "sha256": "518f320e40f55ccf7abbb34edb174571c43e3fc5c42b9922a6102cb4e5f62a1f"
+      }
+    ],
+    "shiva-shiva-hoi-prasanna": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shiva-shiva-hoi-prasanna.m4a",
+        "type": "audio/mp4",
+        "sha256": "bc486226bf7f0b17564ec1fbb4f51231b2f7e3bd24cf3f7abfc0e3fe6b8b4a1b"
       }
     ],
     "shrdi-sai-dwarka-maai": [
@@ -1266,6 +1419,18 @@
         "sha256": "b24ab7d9a16dcfd9760f104f7593cba3792be2858068573c0305a95df21ba7d4"
       }
     ],
+    "thoda-dhyan-laga": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thoda-dhyan-laga.mp3",
+        "type": "audio/mpeg",
+        "sha256": "7619795214803324ca844c12e71be0b8d75b6fd4033a667a913a47d83e731080"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thoda-dhyan-laga.m4a",
+        "type": "audio/mp4",
+        "sha256": "3a4f04153df2a9f165f25600d8f85b85841a1dec9fd90a007c4618cd1869fd9c"
+      }
+    ],
     "tumhi-mere-lagan-lagai-re": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tumhi-mere-lagan-lagai-re.m4a",
@@ -1273,11 +1438,30 @@
         "sha256": "5fb1262b75428be99183425281ff78342a057e6e8f5f6f2746aaef542f2778a3"
       }
     ],
+    "uttho-uttho": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/uttho-uttho.m4a",
+        "type": "audio/mp4",
+        "sha256": "b1f088cedf93870bfbd4b1927077acfce96ea6b063cd2b7d4993adddbf869afd"
+      }
+    ],
     "vighnaharan-gajvadan": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vighnaharan-gajvadan.m4a",
         "type": "audio/mp4",
         "sha256": "1b77f86f13d4c5f07872c1c8ca5b7d25e838905c6a6db6a74efa0682acc0f9e7"
+      }
+    ],
+    "vyartha-gavaya-is": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vyartha-gavaya-is.mp3",
+        "type": "audio/mpeg",
+        "sha256": "15396abefdc83bbf3ef8c31eada2b95eda29300214c309482c2b8c60155921c2"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vyartha-gavaya-is.m4a",
+        "type": "audio/mp4",
+        "sha256": "9ecc21ec9e672ffbab2b56d02edfe28b44458a5714ea248c7419dd1a83f7257c"
       }
     ],
     "ye-tanu-mundna-be-mundna": [

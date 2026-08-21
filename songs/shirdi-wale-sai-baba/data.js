@@ -21,7 +21,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shirdi-wale-sai-baba.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -1757,10 +1757,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 379.4,
-    "end": 398.0
+    "end": 398
   },
   {
-    "start": 398.0,
+    "start": 398,
     "end": 412.15
   },
   {

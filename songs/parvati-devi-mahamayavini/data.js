@@ -52,7 +52,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pārvatī Devī Mahāmāyāvinī",
-    "english": "{1:Goddess }{0:Parvati}{2:, supreme wielder of cosmic power}",
+    "english": "{1:Goddess }{0:Parvati}{2:, she who wields great māyā}",
     "words": [
       {
         "roman": "Pārvatī",
@@ -68,7 +68,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mahāmāyāvinī",
-        "gloss": "supreme wielder of cosmic power (māyā)",
+        "gloss": "she who possesses/wields great māyā; cosmic creative power",
         "concept_key": "",
         "preserve_in_english": false
       }

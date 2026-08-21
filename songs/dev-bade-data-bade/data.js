@@ -20,7 +20,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dev-bade-data-bade.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -1089,10 +1089,10 @@ window.SONG_SEQUENCE = [
 window.SONG_TIMINGS = [
   {
     "start": 5.7,
-    "end": 49.0
+    "end": 49
   },
   {
-    "start": 49.0,
+    "start": 49,
     "end": 71.3
   },
   {
@@ -1121,10 +1121,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 226.4,
-    "end": 234.0
+    "end": 234
   },
   {
-    "start": 234.0,
+    "start": 234,
     "end": 255.35
   },
   {
