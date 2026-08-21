@@ -10,8 +10,6 @@
   --kh-ink-soft:  rgba(244, 234, 208, 0.68);
   --kh-ink-mid:   rgba(244, 234, 208, 0.28);
   --kh-rule:      rgba(244, 234, 208, 0.18);
-  --kh-control-red: #861824;                    /* opaque red for fixed controls */
-  --kh-control-red-hover: #981d2a;
 
   /* Cormorant retains the devotional display character. EB Garamond is the
      companion IAST face: its Latin Extended glyphs keep dots, rings, macrons,
@@ -62,8 +60,8 @@ html, body {
 #songSync {
   position: fixed;
   top: max(18px, calc(10px + env(safe-area-inset-top)));
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +70,9 @@ html, body {
   border: 1px solid var(--kh-ink-mid);
   border-radius: 50%;
   color: var(--kh-ink);
-  background: var(--kh-control-red);
+  /* An opaque fill in the same ground colour keeps these on the same visual
+     level as the home control, rather than introducing a second accent red. */
+  background: var(--kh-bg);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
@@ -84,8 +84,8 @@ html, body {
 #songShare:hover,
 #songSync:hover,
 #songSync[aria-pressed="true"] {
-  border-color: rgba(244, 234, 208, 0.58);
-  background: var(--kh-control-red-hover);
+  border-color: rgba(244, 234, 208, 0.55);
+  background: rgba(244, 234, 208, 0.10);
 }
 #songShare:active,
 #songSync:active { transform: scale(0.94); }
@@ -530,8 +530,8 @@ html, body {
   #songShare,
   #songSync {
     top: max(14px, calc(8px + env(safe-area-inset-top)));
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
   #songSync { left: max(14px, calc(8px + env(safe-area-inset-left))); }
   #songShare { right: max(14px, calc(8px + env(safe-area-inset-right))); }
