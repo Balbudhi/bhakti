@@ -9,6 +9,10 @@ import naming
 
 
 class NamingTests(unittest.TestCase):
+    def test_canonical_person_keeps_satpathy_searchable(self) -> None:
+        self.assertEqual(naming.canonical_person("Satpathy Baba"), "Shri Chandra Bhanu Satpathy")
+        self.assertEqual(naming.person_search_aliases(["Satpathy Baba"]), ["Satpathy Baba"])
+
     def test_common_search_spelling_preserves_digraphs(self) -> None:
         self.assertEqual(naming.common_romanization("Śirḍī Sāī"), "Shirdi Sai")
 

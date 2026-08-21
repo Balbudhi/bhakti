@@ -3,9 +3,9 @@ window.SONG_META = {
   "subtitle": "Chala Patha Ra Geeta",
   "credit": "Shri Chandra Bhanu Satpathy",
   "pageCredit": "Shri Chandra Bhanu Satpathy",
-  "writer": "",
+  "writer": "Shri Chandra Bhanu Satpathy",
   "singer": "Shri Chandra Bhanu Satpathy",
-  "composer": "",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Odia"
   ],

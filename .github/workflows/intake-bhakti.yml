@@ -1,0 +1,104 @@
+name: Intake Bhakti Songs
+
+on:
+  workflow_dispatch:
+    inputs:
+      songs:
+        description: "One per line: a YouTube URL or slug=/absolute/path."
+        required: true
+        type: string
+      workers:
+        description: "Independent song workers."
+        required: true
+        default: "7"
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: bhakti-intake
+  queue: max
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install media dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip yt-dlp
+
+      - name: Run production intake pipeline
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          BHAKTI_WORKFLOW_SONGS: ${{ inputs.songs }}
+          BHAKTI_WORKFLOW_WORKERS: ${{ inputs.workers }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import shlex
+          import subprocess
+          import sys
+
+          lines = [line.strip() for line in os.environ["BHAKTI_WORKFLOW_SONGS"].splitlines() if line.strip()]
+          if not lines:
+              raise SystemExit("workflow input 'songs' is empty")
+          command = [
+              "python3",
+              "scripts/bhakti_pipeline.py",
+              "--publish",
+              "--workers",
+              os.environ["BHAKTI_WORKFLOW_WORKERS"],
+          ]
+          for line in lines:
+              if line.startswith(("https://", "http://")):
+                  command.extend(["--url", line])
+              else:
+                  command.extend(["--song", line])
+          print("Running:", " ".join(shlex.quote(part) for part in command))
+          raise SystemExit(subprocess.call(command))
+          PY
+
+      - name: Commit generated readers
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/songs.js songs/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Bhakti: publish workflow-ingested readers
+
+Constraint: workflow-dispatched intake must publish and deploy without relying on a laptop
+Rejected: chained push deploy | GITHUB_TOKEN pushes do not trigger a second workflow
+Confidence: high
+Scope-risk: moderate"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

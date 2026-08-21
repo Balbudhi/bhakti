@@ -23,6 +23,58 @@ main {
   padding: clamp(72px, 12vw, 150px) 0;
 }
 
+.library-intro {
+  margin: 0 10px 26px;
+}
+
+.library-invocation,
+.library-invocation-english,
+.library-note {
+  margin: 0;
+}
+
+.library-invocation {
+  color: var(--ink);
+  font: 500 clamp(17px, 2vw, 20px) / 1.2 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.02em;
+}
+
+.library-invocation-english {
+  color: var(--muted);
+  font: 13px/1.45 Inter, sans-serif;
+  margin-top: 4px;
+}
+
+.library-note {
+  color: var(--muted);
+  font: 13px/1.45 Inter, sans-serif;
+  margin-top: 10px;
+}
+
+.library-note summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  width: fit-content;
+}
+
+.library-note summary::-webkit-details-marker {
+  display: none;
+}
+
+.library-note summary::after {
+  content: " ?";
+}
+
+.library-note[open] summary {
+  color: var(--ink);
+}
+
+.library-note p {
+  margin: 8px 0 0;
+  max-width: 42rem;
+}
+
 .song-search {
   display: block;
   margin: 0 10px 16px;
@@ -158,6 +210,10 @@ main {
   main {
     width: min(100% - 32px, 940px);
     padding-top: 52px;
+  }
+
+  .library-intro {
+    margin-bottom: 22px;
   }
 
   .tag-filters { margin-bottom: 24px; }

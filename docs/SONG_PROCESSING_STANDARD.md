@@ -237,6 +237,13 @@ ignored `.transcription/`, and emits no reader/catalogue output when a gate
 fails. It does not commit or push; after the normal visual checks, GitHub
 Actions deploys a path-scoped commit.
 
+For hosted normal intake on the public repository, use the `Intake Bhakti
+Songs` `workflow_dispatch` workflow on `main`. It accepts one URL per line,
+runs the same synchronous production pipeline, commits generated readers with
+`GITHUB_TOKEN`, and deploys Pages in the same workflow. Keep `--economy` off in
+that hosted path: GitHub-hosted jobs are limited to 6 hours, while OpenRouter's
+Batch API may take around 24 hours even when the underlying work is correct.
+
 Seven songs may progress concurrently without producing an uncontrolled API
 burst. A process-wide scheduler independently caps Gemini requests at three,
 starts them at least 350 ms apart, prefers OpenRouter's highest-throughput
