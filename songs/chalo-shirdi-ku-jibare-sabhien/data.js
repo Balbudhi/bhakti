@@ -692,7 +692,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "khoḷa",
-        "gloss": "khola, high-pitched Odia double-headed drum",
+        "gloss": "high-pitched Odia double-headed drum",
         "concept_key": "",
         "preserve_in_english": false
       },
