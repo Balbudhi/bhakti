@@ -10,6 +10,24 @@
       "languages": ["Braj"],
       "subjectTags": ["Hanumān"],
       "searchAliases": ["Hanuman Bahuk", "Hanuman Bahuk Sarita Joshi"]
+    },
+    "Kk_qZOL7R3w": {
+      "keepOriginal": true,
+      "title": "Bhāgyada Lakṣmī Bārāmma",
+      "writer": "Purandaradāsa",
+      "languages": ["Kannada"],
+      "subjectTags": ["Lakṣmī"],
+      "searchAliases": ["Bhagyada Lakshmi Baramma", "Bhagyada Lakshmi Baaramma"]
+    },
+    "hqHM7h0Jkjo": {
+      "keepOriginal": true,
+      "title": "Jaise Sūraj Kī Garmī Se",
+      "writer": "Ramanand Sharma",
+      "singer": "Sharma Bandhu",
+      "composer": "Jaidev",
+      "languages": ["Hindi"],
+      "subjectTags": ["Rāma"],
+      "searchAliases": ["Jaise Suraj Ki Garmi Se", "Jaise Suraj Ki Garmi Se Jalte Hue Tan Ko"]
     }
   }
 }

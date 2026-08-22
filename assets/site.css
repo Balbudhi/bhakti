@@ -319,6 +319,48 @@ main {
 .tags .subject-tag { border-color: rgba(244, 234, 208, 0.52); }
 .tags .language-tag { color: var(--muted); }
 
+/* Living-room displays sit farther away than a laptop. Use the available
+   canvas there, with larger readable metadata and controls rather than
+   centering the same narrow desktop column in a much wider screen. */
+@media (min-width: 1200px) {
+  main {
+    width: min(calc(100% - clamp(96px, 8vw, 180px)), 1680px);
+    padding: clamp(84px, 7vw, 144px) 0;
+  }
+
+  .library-intro {
+    max-width: 1120px;
+    margin-bottom: 60px;
+    padding: 0 72px;
+  }
+
+  .library-invocation { font-size: clamp(34px, 2.6vw, 48px); }
+  .library-invocation-roman { font-size: clamp(30px, 2.25vw, 42px); margin-top: 18px; }
+  .library-invocation-english { font-size: clamp(24px, 1.8vw, 32px); margin-top: 14px; }
+  .preface-tooltip { font-size: 18px; padding: 11px 15px; max-width: 400px; }
+
+  .about-toggle { width: 52px; height: 52px; font-size: 24px; top: 24px; right: 20px; }
+  .about-panel { top: 80px; right: 20px; width: min(520px, calc(100% - 40px)); padding: 28px 58px 28px 28px; }
+  .about-panel h2 { font-size: 30px; }
+  .about-panel p { font-size: 20px; }
+  .about-close { width: 42px; height: 42px; font-size: 30px; }
+
+  .song-search { margin: 0 20px 22px; }
+  .song-search input { font-size: 24px; padding: 18px 24px; }
+  .tag-filters { gap: 12px; margin: 0 20px 42px; }
+  .tag-row { flex-wrap: wrap; gap: 10px; overflow: visible; padding-bottom: 5px; }
+  .tag-filter { font-size: 20px; padding: 16px 24px; min-height: 58px; }
+
+  .song-card { gap: 48px; padding: 36px 20px; }
+  .song-card:hover,
+  .song-card:focus-visible { padding-right: 28px; padding-left: 28px; }
+  .song-copy { gap: 10px; }
+  .song-title { font-size: clamp(48px, 3.25vw, 66px); }
+  .credit { font-size: 24px; }
+  .tags { gap: 9px; max-width: 440px; }
+  .tags span { font-size: 18px; padding: 12px 18px; }
+}
+
 @media (max-width: 600px) {
   main {
     width: min(100% - 32px, 940px);
