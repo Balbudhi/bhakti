@@ -32,20 +32,20 @@
     "6I3p0hjxraw": {
       "title": "Kyā Tan Mā̃jhatā",
       "writer": "Kabīr",
-      "singer": "Sounds of Isha",
+      "subjectTags": ["Nirguṇa"],
       "searchAliases": ["Kya Tan Manjhta", "Kya Tan Manjta"]
     },
     "Dh87_uRmCSA": {
       "keepOriginal": true,
       "title": "Mana Masta Huā",
       "writer": "Kabīr",
-      "singer": "Sounds of Isha",
+      "subjectTags": ["Nirguṇa"],
       "searchAliases": ["Mann Mast Hua", "Mann Mast Hua Phir Kya Bole"]
     },
     "0ChRYZ381Q4": {
       "title": "Nirguṇa Galiyā̃",
       "writer": "Kabīr",
-      "singer": "Sounds of Isha",
+      "subjectTags": ["Nirguṇa"],
       "searchAliases": ["Nirgun Galiyan"]
     },
     "z_EZE54hFUs": {
@@ -58,20 +58,21 @@
       "keepOriginal": true,
       "title": "Rāma Rasa",
       "writer": "Kabīr",
-      "singer": "Sounds of Isha",
+      "subjectTags": ["Rāma", "Nirguṇa"],
       "searchAliases": ["Ram Ras"]
     },
     "LA_lHx9qroQ": {
       "title": "Rehnā Nahī̃ Isa Desa",
       "writer": "Kabīr",
       "singer": "Shujaat Khan",
+      "subjectTags": ["Nirguṇa"],
       "searchAliases": ["Rehna Nahi Is Des", "Rehna Nahi Is Des Mein"]
     },
     "IN8fQT4qJEQ": {
       "keepOriginal": true,
       "title": "Suntā Hai",
       "writer": "Kabīr",
-      "singer": "Sounds of Isha",
+      "subjectTags": ["Nirguṇa"],
       "searchAliases": ["Sunta Hai", "Sunta Hai Guru Gyani"]
     }
   }

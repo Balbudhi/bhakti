@@ -1535,6 +1535,109 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śiva"
   },
   {
+    "slug": "kya-tan-majhata",
+    "title": "Kyā Tan Mā̃jhatā",
+    "credit": "Kabīr",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Kya Tan Mãjhata",
+      "Kabir",
+      "Kya Tan Manjhta (Live)",
+      "Kya Tan Manjhta",
+      "Kya Tan Manjta"
+    ],
+    "writer": "Kabīr",
+    "singer": "",
+    "composer": ""
+  },
+  {
+    "slug": "sunta-hai",
+    "title": "Suntā Hai",
+    "credit": "Kabīr",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Kabir",
+      "Sunta Hai - Kabir song | Sounds of Isha",
+      "Sunta Hai Guru Gyani"
+    ],
+    "writer": "Kabīr",
+    "singer": "",
+    "composer": ""
+  },
+  {
+    "slug": "mana-masta-hua",
+    "title": "Mana Masta Huā",
+    "credit": "Kabīr",
+    "languageTags": [
+      "Hindi",
+      "bra"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Kabir",
+      "Mann Mast Hua | Kabir | मन मस्त हुआ | Devotional Poem | Alaap - Songs from Sadhguru Darshan",
+      "Mann Mast Hua",
+      "Mann Mast Hua Phir Kya Bole"
+    ],
+    "writer": "Kabīr",
+    "singer": "",
+    "composer": "",
+    "subtitle": "Viṣṇu"
+  },
+  {
+    "slug": "nirguna-galiya",
+    "title": "Nirguṇa Galiyā̃",
+    "credit": "Kabīr",
+    "languageTags": [
+      "raj",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Kabir",
+      "Nirgun Galiyan"
+    ],
+    "writer": "Kabīr",
+    "singer": "",
+    "composer": ""
+  },
+  {
+    "slug": "rama-rasa",
+    "title": "Rāma Rasa",
+    "credit": "Kabīr",
+    "languageTags": [
+      "raj",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Rama",
+      "Kabir",
+      "Ram Ras"
+    ],
+    "writer": "Kabīr",
+    "singer": "",
+    "composer": "",
+    "subtitle": "Rāma"
+  },
+  {
     "slug": "tere-dvar-khara-bhagvan",
     "title": "Tere Dvār Khaṛā Bhagvān",
     "credit": "Kavi Pradeep · Avinash Vyas",
@@ -3701,7 +3804,9 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Hindi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
     "searchAliases": [
       "Patta Bola Vrksa Se",
       "Kabir · Shujaat Khan",
@@ -3719,7 +3824,9 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Hindi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
     "searchAliases": [
       "Kabir · Shujaat Khan",
       "Kabir",
@@ -3782,109 +3889,6 @@ window.BHAKTI_SONGS = [
     "singer": "Shurjo Bhattacharya",
     "composer": "Swami Srikantananda",
     "subtitle": "Śrī Śāradā Devī"
-  },
-  {
-    "slug": "kya-tan-majhata",
-    "title": "Kyā Tan Mā̃jhatā",
-    "credit": "Kabīr · Sounds of Isha",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Kya Tan Mãjhata",
-      "Kabir · Sounds of Isha",
-      "Kabir",
-      "Kya Tan Manjhta (Live)",
-      "Kya Tan Manjhta",
-      "Kya Tan Manjta"
-    ],
-    "writer": "Kabīr",
-    "singer": "Sounds of Isha",
-    "composer": ""
-  },
-  {
-    "slug": "sunta-hai",
-    "title": "Suntā Hai",
-    "credit": "Kabīr · Sounds of Isha",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Kabir · Sounds of Isha",
-      "Kabir",
-      "Sunta Hai - Kabir song | Sounds of Isha",
-      "Sunta Hai Guru Gyani"
-    ],
-    "writer": "Kabīr",
-    "singer": "Sounds of Isha",
-    "composer": ""
-  },
-  {
-    "slug": "nirguna-galiya",
-    "title": "Nirguṇa Galiyā̃",
-    "credit": "Kabīr · Sounds of Isha",
-    "languageTags": [
-      "raj",
-      "Hindi"
-    ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Kabir · Sounds of Isha",
-      "Kabir",
-      "Nirgun Galiyan"
-    ],
-    "writer": "Kabīr",
-    "singer": "Sounds of Isha",
-    "composer": ""
-  },
-  {
-    "slug": "rama-rasa",
-    "title": "Rāma Rasa",
-    "credit": "Kabīr · Sounds of Isha",
-    "languageTags": [
-      "raj",
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Rāma"
-    ],
-    "searchAliases": [
-      "Rama",
-      "Kabir · Sounds of Isha",
-      "Kabir",
-      "Ram Ras"
-    ],
-    "writer": "Kabīr",
-    "singer": "Sounds of Isha",
-    "composer": "",
-    "subtitle": "Rāma"
-  },
-  {
-    "slug": "mana-masta-hua",
-    "title": "Mana Masta Huā",
-    "credit": "Kabīr · Sounds of Isha",
-    "languageTags": [
-      "Hindi",
-      "bra"
-    ],
-    "subjectTags": [
-      "Viṣṇu"
-    ],
-    "searchAliases": [
-      "Vishnu",
-      "Visnu",
-      "Kabir · Sounds of Isha",
-      "Kabir",
-      "Mann Mast Hua | Kabir | मन मस्त हुआ | Devotional Poem | Alaap - Songs from Sadhguru Darshan",
-      "Mann Mast Hua",
-      "Mann Mast Hua Phir Kya Bole"
-    ],
-    "writer": "Kabīr",
-    "singer": "Sounds of Isha",
-    "composer": "",
-    "subtitle": "Viṣṇu"
   },
   {
     "slug": "akashi-zep-ghe-re-pakhara",

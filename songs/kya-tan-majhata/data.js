@@ -1,18 +1,19 @@
 window.SONG_META = {
   "title": "Kyā Tan Mā̃jhatā",
   "subtitle": "",
-  "credit": "Kabīr · Sounds of Isha",
-  "pageCredit": "Sounds of Isha",
+  "credit": "Kabīr",
+  "pageCredit": "",
   "writer": "Kabīr",
-  "singer": "Sounds of Isha",
+  "singer": "",
   "composer": "",
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Nirguṇa"
+  ],
   "searchAliases": [
     "Kya Tan Mãjhata",
-    "Kabir · Sounds of Isha",
     "Kabir",
     "Kya Tan Manjhta (Live)",
     "Kya Tan Manjhta",

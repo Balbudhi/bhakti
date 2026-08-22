@@ -16,7 +16,8 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
         "krishna", "nandalala", "manmohan", "govinda", "gopal", "damodara",
         "vasudeva", "keshava", "achyuta", "madhava", "gopikavallabha",
     ),
-    "Viṣṇu": ("vishnu", "narayana", "hari"),
+    "Viṣṇu": ("vishnu", "narayana"),
+    "Nirguṇa": ("nirgun", "nirguna"),
     "Śiva": (
         "shiva", "shiv", "shankara", "shankar", "maheshvara", "maheshwar",
         "umapati", "mallikarjuna", "chennamallikarjuna", "nilakantha",
