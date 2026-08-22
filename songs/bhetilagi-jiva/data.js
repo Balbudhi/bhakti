@@ -11,7 +11,9 @@ window.SONG_META = {
   "languages": [
     "Marathi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
   "searchAliases": [
     "Bhētilagi Jiva",
     "Tukaram · Anuradha Paudwal",
@@ -406,7 +408,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "divāḷīcyā muḷā lekī āsāvalī",
-    "english": "{0:For the Diwali }{1:messenger, }{2:the married daughter }{3:has yearned,}",
+    "english": "{0:At Diwali, }{2:a married daughter }{3:longs }{1:for an invitation to her mother's home,}",
     "words": [
       {
         "roman": "divāḷīcyā",
@@ -416,7 +418,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "muḷā",
-        "gloss": "for the messenger; for the festive summons",
+        "gloss": "for the Diwali homecoming; for the occasion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -433,7 +435,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "divāḷīcyā is genitive feminine singular modifying muḷā (dative/oblique singular, from mūḷa in the sense of festive invitation/messenger). lekī is nominative feminine singular; āsāvalī is 3rd person feminine singular past tense."
+    "grammarNote": "divāḷīcyā is genitive feminine singular. muḷā is an older/dialectal postpositional form ('for; on account of'); in this Diwali simile, a married daughter awaits an invitation from her mother's home. lekī is nominative feminine singular; āsāvalī is 3rd person feminine singular past tense."
   },
   "verse-2b": {
     "source": "लेकी आसावली",
@@ -453,7 +455,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lekī āsāvalī",
-    "english": "{0:the daughter }{1:has yearned,}",
+    "english": "{0:the daughter }{1:longs,}",
     "words": [
       {
         "roman": "lekī",
@@ -463,7 +465,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āsāvalī",
-        "gloss": "has become full of yearning; has longed",
+        "gloss": "has become full of yearning; longs",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -828,7 +830,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhāvunī śrīmukha",
-    "english": "{0:Come running with }{1:Your holy face—}",
+    "english": "{0:Run to me with }{1:Your sacred face—}",
     "words": [
       {
         "roman": "dhāvunī",
@@ -838,7 +840,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīmukha",
-        "gloss": "holy face; radiant countenance",
+        "gloss": "sacred face; radiant countenance",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -863,7 +865,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dāvī devā",
-    "english": "{0:show it, }{1:O God!}",
+    "english": "{1:O God, }{0:show it to me!}",
     "words": [
       {
         "roman": "dāvī",

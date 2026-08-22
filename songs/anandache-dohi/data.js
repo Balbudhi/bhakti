@@ -94,11 +94,11 @@ window.SONG_LINES = {
     "grammarNote": "ḍohī is the locative singular of the masculine noun ḍoha (deep pool); taraṁga is a masculine plural/collective noun acting as predicate nominative."
   },
   "anandachi-anga": {
-    "source": "आनंदाची अंग आनंदाची अंग",
+    "source": "आनंदचि अंग आनंदचि अंग",
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "आनंदाची",
+        "text": "आनंदचि",
         "wordIndices": [
           0
         ]
@@ -110,7 +110,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "आनंदाची",
+        "text": "आनंदचि",
         "wordIndices": [
           2
         ]
@@ -122,12 +122,12 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Ānaṁdācī aṁga ānaṁdācī aṁga",
-    "english": "{1:Limbs }{0:of bliss, }{3:limbs }{2:of bliss.}",
+    "roman": "Ānaṁdaci aṁga ānaṁdaci aṁga",
+    "english": "{1:Every limb is }{0:bliss itself, }{3:every limb is }{2:bliss itself.}",
     "words": [
       {
-        "roman": "Ānaṁdācī",
-        "gloss": "of bliss",
+        "roman": "Ānaṁdaci",
+        "gloss": "bliss itself; indeed bliss",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -138,8 +138,8 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ānaṁdācī",
-        "gloss": "of bliss",
+        "roman": "ānaṁdaci",
+        "gloss": "bliss itself; indeed bliss",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -150,7 +150,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "ānaṁdācī is the genitive modifier inflected in Old Marathi syntax to agree with aṁga (neuter plural / feminine collective 'limbs, body'); the phrase is repeated verbatim for musical and affective amplification."
+    "grammarNote": "ānaṁdaci is the emphatic Old Marathi particle ci joined to ānaṁda ('bliss itself'); aṁga is a neuter plural / feminine collective for 'limbs, body'. The phrase is repeated verbatim for musical and affective amplification."
   },
   "anandache-anandache-dohi": {
     "source": "आनंदाचे आनंदाचे डोही आनंद तरंग",
@@ -626,7 +626,7 @@ window.SONG_LINES = {
     "grammarNote": "Yethīṁcā is an adjectival genitive derived from the locative adverb yetha; biṁbe is 3rd person singular present indicative of biṁbaṇe (to reflect, imprint, shine through)."
   },
   "tuka-mhane-taisa": {
-    "source": "तुका म्हणे तैसा पुतळा शेठसा",
+    "source": "तुका म्हणे तैसा ओतलासे ठसा",
     "sourceLanguage": "mr",
     "sourceWords": [
       {
@@ -648,20 +648,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पुतळा",
+        "text": "ओतलासे",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "शेठसा",
+        "text": "ठसा",
         "wordIndices": [
           4
         ]
       }
     ],
-    "roman": "Tukā mhaṇe taisā putalā śeṭhasā",
-    "english": "{0:Tuka }{1:says, }{2:just so }{3:is an image }{4:of solid casting,}",
+    "roman": "Tukā mhaṇe taisā otalāse ṭhasā",
+    "english": "{0:Tuka }{1:says: }{2:just so, }{4:an impression }{3:is cast;}",
     "words": [
       {
         "roman": "Tukā",
@@ -682,19 +682,19 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "putalā",
-        "gloss": "an effigy; a carved image; a sculpted figure",
+        "roman": "otalāse",
+        "gloss": "is poured; is cast",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "śeṭhasā",
-        "gloss": "of pure cast metal; of a solid casting",
+        "roman": "ṭhasā",
+        "gloss": "an imprint; a stamp; a mark",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Tukā is nominative singular; mhaṇe is 3rd person singular present ('says'); putalā śeṭhasā is a masculine nominative phrase referring to a solid cast metal effigy."
+    "grammarNote": "Tukā is nominative singular and mhaṇe is 3rd person singular present ('says'). Otalāse is a contracted perfective form of otane ('to pour, cast'); ṭhasā is the resulting imprint or stamp."
   },
   "anubhava-sarisa-pickup": {
     "source": "अनुभवा सरिसा",
@@ -714,22 +714,22 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Anubhavā sarisā",
-    "english": "{1:Along with }{0:direct experience...}",
+    "english": "{1:That very }{0:experience...}",
     "words": [
       {
         "roman": "Anubhavā",
-        "gloss": "with direct experience; to the immediate realization",
+        "gloss": "experience; direct realization",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sarisā",
-        "gloss": "along with; identical with; matched to",
+        "gloss": "just so; the very same",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Anubhavā is the oblique singular of anubhava, governed by the postposition sarisā ('together with / in unison with')."
+    "grammarNote": "Anubhavā is the oblique singular of anubhava ('experience'); sarisā conveys likeness or identity ('just so / the very same')."
   },
   "anubhava-sarisa-mukha-aala": {
     "source": "अनुभवा सरिसा मुखा आला",
@@ -761,17 +761,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Anubhavā sarisā mukhā ālā",
-    "english": "{1:along with }{0:direct experience, }{3:it has come }{2:to the mouth.}",
+    "english": "{1:That very }{0:experience }{3:has come }{2:to the lips.}",
     "words": [
       {
         "roman": "Anubhavā",
-        "gloss": "with direct experience; to the immediate realization",
+        "gloss": "experience; direct realization",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sarisā",
-        "gloss": "along with; identical with; matched to",
+        "gloss": "just so; the very same",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -788,7 +788,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "mukhā is dative/locative singular of mukha ('to the mouth'); ālā is masculine singular perfective/past participle of the verb yeṇe ('to come')."
+    "grammarNote": "Anubhavā is the oblique singular of anubhava ('experience'); sarisā conveys likeness or identity ('just so / the very same'). Mukhā is dative/locative singular of mukha ('to the mouth'), and ālā is a masculine singular perfective of yeṇe ('to come')."
   },
   "chorus-anandache-dohi-single": {
     "source": "आनंदाचे डोही आनंद तरंग",

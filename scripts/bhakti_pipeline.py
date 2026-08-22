@@ -1259,7 +1259,11 @@ def refine_timing_chunk(
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{chunk['clip_start']:.3f}",
                     "-i", str(audio), "-t", f"{chunk['clip_end'] - chunk['clip_start']:.3f}", "-vn",
                     "-c:a", "aac", "-b:a", "192k", str(clip)], check=True)
+    performers = sorted({str(target.get("performer_context") or "").strip() for target in targets if str(target.get("performer_context") or "").strip()})
+    performer_note = (f"\nPERFORMER CONTEXT (a listening cue only; never alter the lyric text or order): {', '.join(performers)}\n"
+                      if performers else "")
     prompt = f"""The lyric transcription, order, repeat grouping, and occurrence IDs below are already final. Do not transcribe, correct, identify, reorder, group, or explain anything.
+{performer_note}
 
 The attached timing clip is source seconds {chunk['clip_start']:.3f}–{chunk['clip_end']:.3f}. Return times RELATIVE TO THIS CLIP.
 
@@ -1401,6 +1405,7 @@ def build_long_timing_subchunks(
 def align_long_segments(
     song_dir: Path, audio: Path, audited: dict[str, Any], occurrences: list[dict[str, Any]],
     coarse_sequence: list[dict[str, Any]], duration: float, options: argparse.Namespace,
+    prior_refinements: list[dict[str, Any]] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[str]]:
     """Align long recordings in bounded lyric-aware windows.
 
@@ -1468,8 +1473,15 @@ def align_long_segments(
     for index, occurrence in enumerate(occurrences):
         if occurrence["occurrence_id"] not in starts_by_id:
             missing.append(index)
-    recoveries: list[dict[str, Any]] = []
-    if missing:
+    prior_recoveries = {
+        str(report["occurrence_id"]): report
+        for report in (prior_refinements or [])
+        if needs_targeted_long_recovery(report)
+    }
+    recoveries = [prior_recoveries[occurrences[index]["occurrence_id"]]
+                  for index in missing if occurrences[index]["occurrence_id"] in prior_recoveries]
+    new_missing = [index for index in missing if occurrences[index]["occurrence_id"] not in prior_recoveries]
+    if new_missing:
         with tempfile.TemporaryDirectory(prefix="bhakti-long-single-starts-") as temporary:
             destination = Path(temporary)
             def recover(index: int) -> dict[str, Any]:
@@ -1484,9 +1496,48 @@ def align_long_segments(
                 candidates.append(max(float(prior) + 0.01, min(float(coarse_sequence[index]["start"]), float(following) - 0.01)))
                 return refine_single_start(audio, occurrences, index, candidates, duration, options, destination,
                                            lower_bound=float(prior), upper_bound=float(following))
-            with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(missing))) as pool:
-                recoveries = list(pool.map(recover, missing))
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(new_missing))) as pool:
+                recoveries.extend(pool.map(recover, new_missing))
         for report in recoveries:
+            if not report["validation_errors"]:
+                starts_by_id[report["occurrence_id"]] = float(report["start"])
+    # Apply a single, bounded retry only after the first recovery wave has
+    # contributed its valid neighbours.  A repeated refrain can otherwise
+    # make the first wave's bracket too early or too late; reopening every
+    # timing window would spend needlessly and discard good evidence.
+    targeted_recoveries: list[dict[str, Any]] = []
+    retry_indices = [index for index in missing
+                     if needs_targeted_long_recovery(next(
+                         (report for report in recoveries
+                          if report["occurrence_id"] == occurrences[index]["occurrence_id"]), {}
+                     ))]
+    if retry_indices:
+        with tempfile.TemporaryDirectory(prefix="bhakti-long-targeted-recovery-") as temporary:
+            destination = Path(temporary)
+
+            def retry(index: int) -> dict[str, Any]:
+                prior = next((starts_by_id.get(occurrences[left]["occurrence_id"])
+                              for left in range(index - 1, -1, -1)
+                              if starts_by_id.get(occurrences[left]["occurrence_id"]) is not None), 0.0)
+                following = next((starts_by_id.get(occurrences[right]["occurrence_id"])
+                                  for right in range(index + 1, len(occurrences))
+                                  if (starts_by_id.get(occurrences[right]["occurrence_id"]) is not None
+                                      and float(starts_by_id[occurrences[right]["occurrence_id"]]) > float(prior) + 0.01)), duration)
+                if float(following) <= float(prior) + 0.02:
+                    return {"kind": "single", "occurrence_id": occurrences[index]["occurrence_id"],
+                            "candidate": None, "candidate_measurements": [],
+                            "accepted_lower_bound": prior, "accepted_upper_bound": following,
+                            "attempts": [], "validation_errors": ["targeted recovery has no valid neighbour bracket"]}
+                candidate = max(float(prior) + 0.01,
+                                min(float(coarse_sequence[index]["start"]), float(following) - 0.01))
+                return refine_single_start(
+                    audio, occurrences, index, [candidate], duration, options, destination,
+                    lower_bound=float(prior), upper_bound=float(following),
+                )
+
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(retry_indices))) as pool:
+                targeted_recoveries = list(pool.map(retry, retry_indices))
+        for report in targeted_recoveries:
             if not report["validation_errors"]:
                 starts_by_id[report["occurrence_id"]] = float(report["start"])
     # A repeated refrain can make a locally perfect narrow response land on
@@ -1525,7 +1576,13 @@ def align_long_segments(
         for report in order_repairs:
             if not report["validation_errors"]:
                 starts_by_id[report["occurrence_id"]] = float(report["start"])
-    errors = [f"{report['occurrence_id']}: {error}" for report in recoveries for error in report["validation_errors"]]
+    targeted_successes = {report["occurrence_id"] for report in targeted_recoveries
+                          if not report["validation_errors"]}
+    errors = [f"{report['occurrence_id']}: {error}" for report in recoveries
+              if report["occurrence_id"] not in targeted_successes
+              for error in report["validation_errors"]]
+    errors.extend(f"{report['occurrence_id']}: {error}" for report in targeted_recoveries
+                  for error in report["validation_errors"])
     errors.extend(f"{report['occurrence_id']}: {error}" for report in order_repairs for error in report["validation_errors"])
     starts = [starts_by_id.get(occurrence["occurrence_id"]) for occurrence in occurrences]
     if any(start is None for start in starts):
@@ -1540,7 +1597,7 @@ def align_long_segments(
             sequence.append({"occurrence_id": occurrence["occurrence_id"], "ref": occurrence["ref"],
                              "section": occurrence["section"], "repeats": occurrence["repeats"],
                              "start": start, "end": end})
-    return sequence, reports + recoveries + order_repairs, errors
+    return sequence, reports + recoveries + targeted_recoveries + order_repairs, errors
 
 
 def single_start_schema() -> dict[str, Any]:
@@ -1566,6 +1623,16 @@ def corroborated_by_existing(point: float, measurements: list[float], tolerance:
     return any(abs(point - existing) <= tolerance for existing in measurements)
 
 
+def needs_targeted_long_recovery(report: dict[str, Any]) -> bool:
+    """Whether an otherwise usable long-recording recovery merits one retry."""
+    return (
+        report.get("kind") == "single"
+        and isinstance(report.get("occurrence_id"), str)
+        and report.get("validation_errors") == ["single start lacks agreeing evidence"]
+        and isinstance(report.get("candidate"), (int, float))
+    )
+
+
 def refine_single_start(
     audio: Path, occurrences: list[dict[str, Any]], index: int, candidate_measurements: list[float],
     duration: float, options: argparse.Namespace, destination: Path, *, clip_radius: float = 20.0,
@@ -1583,7 +1650,10 @@ def refine_single_start(
                     str(clip)], check=True)
     previous = occurrences[index - 1] if index else None
     following = occurrences[index + 1] if index + 1 < len(occurrences) else None
+    performer_note = (f"\nPERFORMER CONTEXT (a listening cue only; never alter the lyric text or order): {target['performer_context']}\n"
+                      if str(target.get("performer_context") or "").strip() else "")
     prompt = f"""The transcription, order, repeats, target ID, and approximate source location are already final. Do not transcribe, correct, identify, reorder, group, or explain anything.
+{performer_note}
 
 This attached clip is source seconds {clip_start:.3f}–{clip_end:.3f}. Return a time RELATIVE TO THIS CLIP.
 PRECEDING CONTEXT: {json.dumps(previous, ensure_ascii=False) if previous else '(none)'}
@@ -1640,6 +1710,7 @@ Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0
         errors.append("single start lacks agreeing evidence")
     return {"kind": "single", "occurrence_id": target["occurrence_id"],
             "candidate": candidate, "candidate_measurements": candidate_measurements,
+            "accepted_lower_bound": lower_bound, "accepted_upper_bound": upper_bound,
             "start": round(point, 3), "attempts": attempts, "validation_errors": errors}
 
 
@@ -1806,9 +1877,21 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
         return existing
     packet = audited["packet"]
     occurrences = display_occurrences(packet)
+    source = read_packet(song_dir / ".transcription" / "source.json") or {}
+    performer = str(source.get("uploader") or source.get("channel") or "").strip()
+    if performer:
+        for occurrence in occurrences:
+            occurrence["performer_context"] = performer
     duration = gemini.duration_seconds(audio)
     if not packet.get("verified_lines") or not occurrences:
         raise RuntimeError("audited transcript lacks canonical lines or performance order")
+    prior_refinements: list[dict[str, Any]] = []
+    if existing and audited.get("segment_audits"):
+        prior_occurrences = existing.get("ordered_occurrences", [])
+        if [entry.get("occurrence_id") for entry in prior_occurrences] == [
+            entry["occurrence_id"] for entry in occurrences
+        ]:
+            prior_refinements = [entry for entry in existing.get("refinements", []) if isinstance(entry, dict)]
     with tempfile.TemporaryDirectory(prefix="bhakti-timing-audio-") as temporary:
         model_audio = canonical_timing_audio(audio, Path(temporary) / "timing.m4a")
         if audited.get("segment_audits"):
@@ -1834,7 +1917,8 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
         refinements: list[dict[str, Any]] = []
         if not errors and audited.get("segment_audits"):
             sequence, refinements, refinement_errors = align_long_segments(
-                song_dir, model_audio, audited, occurrences, coarse_sequence, duration, options
+                song_dir, model_audio, audited, occurrences, coarse_sequence, duration, options,
+                prior_refinements=prior_refinements,
             )
             errors.extend(refinement_errors)
         elif not errors:

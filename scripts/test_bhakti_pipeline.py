@@ -667,6 +667,20 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(child["grid"], "long-segment-routing")
         self.assertEqual((child["clip_start"], child["clip_end"]), (0.0, 100.0))
 
+    def test_targeted_long_recovery_only_retries_missing_agreement(self) -> None:
+        self.assertTrue(pipeline.needs_targeted_long_recovery({
+            "kind": "single", "occurrence_id": "occ-042", "candidate": 42.0,
+            "validation_errors": ["single start lacks agreeing evidence"],
+        }))
+        self.assertFalse(pipeline.needs_targeted_long_recovery({
+            "kind": "single", "occurrence_id": "occ-042", "candidate": 42.0,
+            "validation_errors": ["single start is outside the candidate clip"],
+        }))
+        self.assertFalse(pipeline.needs_targeted_long_recovery({
+            "kind": "window", "occurrence_id": "occ-042", "candidate": 42.0,
+            "validation_errors": ["single start lacks agreeing evidence"],
+        }))
+
     def test_reconcile_segment_seams_removes_only_a_false_script_warning(self) -> None:
         def segment(index: int, source_text: str, roman: str) -> dict:
             line = {"id": f"line-{index}", "source_text": source_text, "roman": roman}

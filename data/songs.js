@@ -67,25 +67,6 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
-    "slug": "bhetilagi-jiva",
-    "title": "Bhēṭīlāgī Jīvā",
-    "credit": "Tukārām · Anuradha Paudwal",
-    "languageTags": [
-      "Marathi"
-    ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Bhētilagi Jiva",
-      "Tukaram · Anuradha Paudwal",
-      "Tukaram",
-      "Bhaitilagi Jeewa",
-      "Bhetilagi Jiva Lagalise Aas"
-    ],
-    "writer": "Tukārām",
-    "singer": "Anuradha Paudwal",
-    "composer": ""
-  },
-  {
     "slug": "khel-mandiyela",
     "title": "Khel Māṇḍiyelā",
     "credit": "Tukārām · Anuradha Paudwal",
@@ -303,6 +284,27 @@ window.BHAKTI_SONGS = [
     "singer": "Anuradha Paudwal",
     "composer": "Surinder Kohli",
     "subtitle": "Bhajan Sandhya Vol.1"
+  },
+  {
+    "slug": "bhetilagi-jiva",
+    "title": "Bhēṭīlāgī Jīvā",
+    "credit": "Tukārām · Anuradha Paudwal",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Bhētilagi Jiva",
+      "Tukaram · Anuradha Paudwal",
+      "Tukaram",
+      "Bhaitilagi Jeewa",
+      "Bhetilagi Jiva Lagalise Aas"
+    ],
+    "writer": "Tukārām",
+    "singer": "Anuradha Paudwal",
+    "composer": ""
   },
   {
     "slug": "om-jai-gangadhar-aarti",
