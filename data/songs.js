@@ -2553,6 +2553,24 @@ window.BHAKTI_SONGS = [
     "subtitle": "Sur Sangam"
   },
   {
+    "slug": "benti-chaupai",
+    "title": "Benti Chaupai",
+    "credit": "Guru Gobind Singh · Rajinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
+      "Bentee Chaupai",
+      "Chaupai Sahib",
+      "Benti Chaupai Sahib"
+    ],
+    "writer": "Guru Gobind Singh",
+    "singer": "Rajinder Singh",
+    "composer": ""
+  },
+  {
     "slug": "arunachala-akshara-mana-malai",
     "title": "Arunachala Akshara Mana Malai",
     "credit": "Ramana Maharshi",
