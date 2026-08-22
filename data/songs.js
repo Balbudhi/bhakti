@@ -3695,6 +3695,24 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "patta-bola-vrksha-se",
+    "title": "Pattā Bolā Vṛkṣa Se",
+    "credit": "Kabīr · Shujaat Khan",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Patta Bola Vrksa Se",
+      "Kabir · Shujaat Khan",
+      "Kabir",
+      "Patta Bola Vriksh Se"
+    ],
+    "writer": "Kabīr",
+    "singer": "Shujaat Khan",
+    "composer": ""
+  },
+  {
     "slug": "rehna-nahi-isa-desa",
     "title": "Rehnā Nahī̃ Isa Desa",
     "credit": "Kabīr · Shujaat Khan",
