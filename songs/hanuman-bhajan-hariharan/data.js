@@ -21221,10 +21221,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 31.8,
-    "end": 38.0
+    "end": 38
   },
   {
-    "start": 38.0,
+    "start": 38,
     "end": 43.4
   },
   {
@@ -21233,10 +21233,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 48.7,
-    "end": 54.0
+    "end": 54
   },
   {
-    "start": 54.0,
+    "start": 54,
     "end": 59.5
   },
   {
@@ -21413,10 +21413,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 393.7,
-    "end": 399.0
+    "end": 399
   },
   {
-    "start": 399.0,
+    "start": 399,
     "end": 404.3
   },
   {
