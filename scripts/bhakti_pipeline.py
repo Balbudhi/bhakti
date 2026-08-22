@@ -719,7 +719,8 @@ def normalized_language(value: str) -> str:
     return {"hi": "Hindi", "hin": "Hindi", "hindi": "Hindi", "mr": "Marathi", "mar": "Marathi",
             "marathi": "Marathi", "sa": "Sanskrit", "san": "Sanskrit", "sanskrit": "Sanskrit",
             "pa": "Punjabi", "pan": "Punjabi", "punjabi": "Punjabi", "kn": "Kannada", "kan": "Kannada",
-            "kannada": "Kannada"}.get(key, value.strip())
+            "kannada": "Kannada", "bra": "Braj", "braj": "Braj", "raj": "Rajasthani",
+            "rajasthani": "Rajasthani"}.get(key, value.strip())
 
 
 def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, Any]:

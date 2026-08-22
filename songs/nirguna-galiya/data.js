@@ -7,8 +7,7 @@ window.SONG_META = {
   "singer": "",
   "composer": "",
   "languages": [
-    "raj",
-    "Hindi"
+    "Rajasthani"
   ],
   "subjectTags": [
     "Nirguṇa"

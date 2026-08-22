@@ -7,7 +7,7 @@ window.SONG_META = {
   "singer": "",
   "composer": "",
   "languages": [
-    "raj",
+    "Rajasthani",
     "Hindi"
   ],
   "subjectTags": [
