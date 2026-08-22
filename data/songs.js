@@ -1580,7 +1580,7 @@ window.BHAKTI_SONGS = [
     "credit": "Kabīr",
     "languageTags": [
       "Hindi",
-      "bra"
+      "Braj"
     ],
     "subjectTags": [
       "Nirguṇa"
@@ -1601,8 +1601,7 @@ window.BHAKTI_SONGS = [
     "title": "Nirguṇa Galiyā̃",
     "credit": "Kabīr",
     "languageTags": [
-      "raj",
-      "Hindi"
+      "Rajasthani"
     ],
     "subjectTags": [
       "Nirguṇa"
@@ -1620,7 +1619,7 @@ window.BHAKTI_SONGS = [
     "title": "Rāma Rasa",
     "credit": "Kabīr",
     "languageTags": [
-      "raj",
+      "Rajasthani",
       "Hindi"
     ],
     "subjectTags": [

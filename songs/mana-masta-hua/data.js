@@ -8,7 +8,7 @@ window.SONG_META = {
   "composer": "",
   "languages": [
     "Hindi",
-    "bra"
+    "Braj"
   ],
   "subjectTags": [
     "Nirguṇa"
