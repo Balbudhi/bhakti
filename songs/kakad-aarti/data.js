@@ -16092,7 +16092,7 @@ window.SONG_LINES = {
     "source": "कृपातपत्रं तव साईनाथ",
     "sourceLanguage": "hi",
     "roman": "kṛpātapatraṃ tava sāyinātha",
-    "english": "{0:the umbrella of mercy}{1: Your,}{2: O Lord Sai,}",
+    "english": "{1:Your }{0:umbrella of mercy, }{2:O Lord Sai,}",
     "words": [
       {
         "roman": "kṛpātapatraṃ",
@@ -16262,7 +16262,7 @@ window.SONG_LINES = {
     "source": "रमेन्मनो मे तव पादयुग्मे",
     "sourceLanguage": "hi",
     "roman": "ramēn manō mē tava pādayugmē",
-    "english": "{0:may it delight,}{1: the mind}{2: my,}{3: in Your}{4: pair of feet,}",
+    "english": "{0:May }{2:my }{1:mind }{0:delight }{4:in }{3:Your }{4:pair of feet,}",
     "words": [
       {
         "roman": "ramēn",
@@ -16632,7 +16632,7 @@ window.SONG_LINES = {
     "source": "स्तोत्रमेतत् पठेद् भक्त्या",
     "sourceLanguage": "hi",
     "roman": "stōtram ētat paṭhēd bhaktyā",
-    "english": "{0:hymn of praise}{1: this}{2: should recite}{3: with devotion.}",
+    "english": "{2:Should recite }{1:this }{0:hymn of praise }{3:with devotion,}",
     "words": [
       {
         "roman": "stōtram",

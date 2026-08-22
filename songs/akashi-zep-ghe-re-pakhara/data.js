@@ -137,7 +137,7 @@ window.SONG_LINES = {
     "source": "तुजभवती वैभव, माया",
     "sourceLanguage": "mr",
     "roman": "tujabhavatī vaibhava, māyā",
-    "english": "{0:Around you}{1: are splendor}{2: and māyā,}",
+    "english": "{0:Around you are }{1:opulence }and {2:māyā,}",
     "words": [
       {
         "roman": "tujabhavatī",
@@ -231,7 +231,7 @@ window.SONG_LINES = {
     "source": "सुखलोलुप झाली काया",
     "sourceLanguage": "mr",
     "roman": "sukhalolupa jhālī kāyā",
-    "english": "{2:your body}{1: has grown}{0: addicted to pleasure.}",
+    "english": "{2:your body }{1:has grown }{0:addicted to pleasure.}",
     "words": [
       {
         "roman": "sukhalolupa",
@@ -333,7 +333,7 @@ window.SONG_LINES = {
     "source": "घर कसले ही तर कारा",
     "sourceLanguage": "mr",
     "roman": "ghara kasale hī tara kārā",
-    "english": "{0,1:What kind of home is this?}{3: Rather,}{2: this is}{4: a prison!}",
+    "english": "{1:What kind of }{0:home is this? }{3:Rather, }{2:this }{4:is a prison!}",
     "words": [
       {
         "roman": "ghara",
@@ -394,7 +394,7 @@ window.SONG_LINES = {
     "source": "विषसमान मोती चारा",
     "sourceLanguage": "mr",
     "roman": "viṣasamāna motī cārā",
-    "english": "{1:This feed of pearls}{0: is like}{2: poison,}",
+    "english": "{2:This feed }{1:of pearls }{0:is like poison,}",
     "words": [
       {
         "roman": "viṣasamāna",
@@ -435,7 +435,7 @@ window.SONG_LINES = {
     "source": "मोहाचे बंधन द्वारा",
     "sourceLanguage": "mr",
     "roman": "mohāce bandhana dvārā",
-    "english": "{2:the doorway}{1: is a bond}{0: of attachment.}",
+    "english": "{2:the doorway }{1:is a bond }{0:of attachment.}",
     "words": [
       {
         "roman": "mohāce",
@@ -894,7 +894,7 @@ window.SONG_LINES = {
     "source": "का जीव बिचारा होई बावरा",
     "sourceLanguage": "mr",
     "roman": "kā jīva bicārā hoī bāvarā",
-    "english": "{0:why}{2: does the poor}{1: jīva}{3: become}{4: bewildered?}",
+    "english": "{0:why }{2:does the poor }{1:jīva }{3:become }{4:bewildered?}",
     "words": [
       {
         "roman": "kā",

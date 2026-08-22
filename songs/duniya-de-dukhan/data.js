@@ -32,7 +32,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation": {
     "roman": "Jai karā sherān wālī maiyā jī dā... Bol sache darbār kī jai",
-    "english": "{0:Hail }{5:to }{3,4:Mother }{1,2:who rides the lion... }{6:Chant: }{10:Glory }{9:to }the {7:true }{8:court!}",
+    "english": "{0,3,4,5:Hail to the Mother}{1,2: who rides the lion...}{6: Chant:}{10: Glory}{7,9: to the true}{8: court!}",
     "words": [
       {
         "roman": "Jai karā",
@@ -708,7 +708,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Ik vārī maiyā merī bigḍī sawār de",
-    "english": "{2:Mother, }{5,6:set right }{3:my }{4:ruined state, }just {0,1:once.}",
+    "english": "{2:Mother,}{5,6: set right}{3: my}{4: ruined state}{0,1: just once.}",
     "words": [
       {
         "roman": "Ik",
@@ -1314,7 +1314,7 @@ window.SONG_LINES = {
   },
   "v4b": {
     "roman": "Godī 'ch biṭhā ke sānū māwān wālā pyār de",
-    "english": "{2,3:Having seated }{4:me }{1:in }Your {0:lap, }{8:give }{4:me }a {5,6:mother's }{7:love.}",
+    "english": "{2:Seat}{4: me}{0,1: in Your lap}{3: and}{8: give me}{5,6: a mother's}{7: love.}",
     "words": [
       {
         "roman": "Godī",

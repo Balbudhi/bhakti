@@ -236,7 +236,7 @@ window.SONG_LINES = {
   },
   "sab_chhod_de_tera_saath": {
     "roman": "Sab chhoṛ de terā sāth",
-    "english": "{0:When everyone}{1: leaves}{2: your}{3: company…}",
+    "english": "When {0:everyone }{1:leaves }{2:your }{3:side…}",
     "words": [
       {
         "roman": "Sab",
@@ -408,7 +408,7 @@ window.SONG_LINES = {
   },
   "roshan_nahin_hota": {
     "roman": "Roshan nahīṅ hotā",
-    "english": "{1:…does not}{2: become}{0: bright.}",
+    "english": "…{2:is }{1:not }{0:bright.}",
     "words": [
       {
         "roman": "Roshan",
