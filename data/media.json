@@ -93,6 +93,18 @@
         "sha256": "fb83f0dc44e733634944d41fbd9ba534333a4c09b6b246ab94a426a95c4f7ee0"
       }
     ],
+    "anuraniya-thokada": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anuraniya-thokada.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "0556f3a4d961cf9e99d304eed0890f984868df251095af9a821c4b77657bc1da"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anuraniya-thokada.m4a",
+        "type": "audio/mp4",
+        "sha256": "d1b891bbc7194fb28eaa0c56121b4dbc4ceab34b2015c11bc5a2a12549f505a5"
+      }
+    ],
     "arunachala-akshara-mana-malai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.webm",
@@ -153,6 +165,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balada-beka-re-lagila-ghanti.m4a",
         "type": "audio/mp4",
         "sha256": "2771b6ca6aa52bec444da97ae80109b8450b806839c99a843f4441b0fef8f9cb"
+      }
+    ],
+    "baso-mere-nainan-me-nandalal": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baso-mere-nainan-me-nandalal.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "749169062f58df8e42b2e6d10768fe21b6096b83f9613fc6fe9d5014afb8a32e"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baso-mere-nainan-me-nandalal.m4a",
+        "type": "audio/mp4",
+        "sha256": "bd4d7e72754b94eaeb5ea183c146a0da6b8f70eb9a2ac105056ef9f4e1b4ff6e"
       }
     ],
     "beet-gaye-din-bhajan-bina-re": [
@@ -227,6 +251,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bolo-lakshmi-maat-ki-jai.m4a",
         "type": "audio/mp4",
         "sha256": "1bc7dc9d3e287933358c210622c587a9cefc4a4acd722ef4f2bf2d4d336c71d7"
+      }
+    ],
+    "chakar-rakho-ji": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "4cb9001c6ea58efca35bf4c85c7d9185c8df8c1a1a5632c971c180de14cd2c16"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.m4a",
+        "type": "audio/mp4",
+        "sha256": "7598b398151e1f821004cff3a221a397243d3d60297697ac1c46d9979894b31a"
       }
     ],
     "chal-der-na-ho-jaye": [
@@ -1473,6 +1509,18 @@
         "sha256": "ff993767bc788c22d6cafe5c43d93d34c9906d175462a821e17111d3757b11f2"
       }
     ],
+    "prabhu-ji-tuma-candana-hama-pani": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-ji-tuma-candana-hama-pani.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "7bcccef5ad49850bf07f3d3742600045b2099008ad41f1e642e66348f0adeb45"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-ji-tuma-candana-hama-pani.m4a",
+        "type": "audio/mp4",
+        "sha256": "b6e8818b9fb9844e468fe06d070d2d9b85e2723da739d5899042bee483a9841d"
+      }
+    ],
     "prabhu-kar-sab-dukh-door-hamare": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-kar-sab-dukh-door-hamare.m4a",
@@ -1705,6 +1753,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sankat-mochan-naam-tiharo.m4a",
         "type": "audio/mp4",
         "sha256": "a10b43cdc68493ce271e9f9902f5b2a4e94f2ad246c2704bb55fc0879021f953"
+      }
+    ],
+    "saso-ki-mala-par-simaru-nisdina-pi-ka-nama": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saso-ki-mala-par-simaru-nisdina-pi-ka-nama.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "30ef9731cf67c1f3eaf842ed756b43285f00c53054c4560c3a4fd63126589e85"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saso-ki-mala-par-simaru-nisdina-pi-ka-nama.m4a",
+        "type": "audio/mp4",
+        "sha256": "7b2863f85201544ddf8085b5634d3feae9124becfe4b0748a2f0120ca1b05c9a"
       }
     ],
     "shankar-ho": [

@@ -683,7 +683,12 @@ def audited_transcript_schema() -> dict[str, Any]:
 
 
 def lyric_signature(line: dict[str, Any]) -> str:
-    value = str(line.get("source_text") or line.get("roman") or "").casefold()
+    # Adjacent long-recording audits can legitimately choose different Indic
+    # scripts for the same audible line.  The reviewed romanization is the
+    # shared comparison surface; using source_text first made Urdu and
+    # Devanagari copies of one line look unrelated and produced false seam
+    # failures plus corrupt coarse timing hints.
+    value = str(line.get("roman") or line.get("source_text") or "").casefold()
     value = unicodedata.normalize("NFKD", value)
     return "".join(character for character in value if character.isalnum() and not unicodedata.combining(character))
 
@@ -787,6 +792,26 @@ def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, 
             "uncertainties": uncertainties}
 
 
+def reconcile_segment_seam_uncertainties(
+    audited_segments: list[dict[str, Any]], uncertainties: list[str]
+) -> list[str]:
+    """Re-evaluate only deterministic seam confidence for a cached audit.
+
+    This deliberately preserves its reviewed surface and performance order.
+    It is safe for a historical packet because script-normalized overlap can
+    resolve a false seam warning without rewriting any text or timing.
+    """
+    retained = [str(value) for value in uncertainties
+                if not str(value).startswith("segment seam ")]
+    for index in range(1, len(audited_segments)):
+        previous = ordered_segment_lines(audited_segments[index - 1]["audit"]["packet"])
+        current = ordered_segment_lines(audited_segments[index]["audit"]["packet"])
+        _left, _right, score = balanced_overlap(previous, current)
+        if score < 0.8:
+            retained.append(f"segment seam {index - 1}/{index} overlap score is only {score:.3f}")
+    return retained
+
+
 def audit_long_transcript(
     song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace
 ) -> dict[str, Any]:
@@ -861,6 +886,15 @@ def audit_transcript(song_dir: Path, raw: dict[str, Any], audio: Path, options: 
             existing["merge_contract_version"] = LONG_MERGE_VERSION
             existing["merge_contract_rebuilt"] = True
             write_json(target, existing)
+        elif existing.get("segment_audits"):
+            packet = existing.get("packet", {})
+            if isinstance(packet, dict):
+                reconciled = reconcile_segment_seam_uncertainties(
+                    existing["segment_audits"], list(packet.get("uncertainties", []))
+                )
+                if reconciled != packet.get("uncertainties", []):
+                    packet["uncertainties"] = reconciled
+                    write_json(target, existing)
         return existing
     if raw.get("packet", {}).get("segmented"):
         result = audit_long_transcript(song_dir, raw, audio, options)

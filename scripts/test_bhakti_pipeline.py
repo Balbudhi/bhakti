@@ -611,6 +611,34 @@ class PipelineTests(unittest.TestCase):
         ]
         self.assertEqual(pipeline.balanced_overlap(left, right), (1, 2, 1.0))
 
+    def test_long_merge_matches_the_same_line_across_indic_scripts(self) -> None:
+        left = [{
+            "source_text": "سانسوں کی مالا پہ سمروں میں پی کا نام",
+            "roman": "Sā̃sō̃ kī mālā pe simrū̃ maĩ pī kā nām",
+        }]
+        right = [{
+            "source_text": "साँसों की माला पे सिमरूँ मैं पी का नाम",
+            "roman": "Sā̃sō̃ kī mālā pe simrū̃ maĩ pī kā nām",
+        }]
+        self.assertEqual(pipeline.balanced_overlap(left, right), (1, 1, 1.0))
+
+    def test_reconcile_segment_seams_removes_only_a_false_script_warning(self) -> None:
+        def segment(index: int, source_text: str, roman: str) -> dict:
+            line = {"id": f"line-{index}", "source_text": source_text, "roman": roman}
+            return {"segment": {"index": index}, "audit": {"packet": {
+                "lines": [line], "performance_order": [{"line_id": line["id"]}],
+            }}}
+
+        audits = [
+            segment(0, "سانسوں کی مالا پہ سمروں میں پی کا نام", "Sā̃sō̃ kī mālā pe simrū̃ maĩ pī kā nām"),
+            segment(1, "साँसों की माला पे सिमरूँ मैं पी का नाम", "Sā̃sō̃ kī mālā pe simrū̃ maĩ pī kā nām"),
+        ]
+        self.assertEqual(
+            pipeline.reconcile_segment_seam_uncertainties(
+                audits, ["humanly reviewed uncertainty", "segment seam 0/1 overlap score is only 0.000"]),
+            ["humanly reviewed uncertainty"],
+        )
+
     def test_hydrate_pipeline_artifacts_backfills_missing_stage_files(self) -> None:
         packet_dir = self.root / "songs" / "hydrated-song" / ".transcription" / "pipeline"
         packet_dir.mkdir(parents=True)

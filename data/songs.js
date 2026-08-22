@@ -93,6 +93,78 @@ window.BHAKTI_SONGS = [
     "subtitle": "Kālī"
   },
   {
+    "slug": "baso-mere-nainan-me-nandalal",
+    "title": "Baso Mere Nainan Mẽ Nandalāl",
+    "credit": "Mīrābāī · Anuradha Paudwal · Gopal Marathe",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Mirabai · Anuradha Paudwal · Gopal Marathe",
+      "Mirabai",
+      "Krshna",
+      "Krsna",
+      "Baso Mere Nainan Krishna Bhajan Full with Hindi English Lyrics Anuradha Paudwal I SWARANJALI",
+      "Baso Mere Nainan Mein Nandlal",
+      "Baso Mere Nainan Mein"
+    ],
+    "writer": "Mīrābāī",
+    "singer": "Anuradha Paudwal",
+    "composer": "Gopal Marathe",
+    "subtitle": "Swaranjali"
+  },
+  {
+    "slug": "chakar-rakho-ji",
+    "title": "Chākar Rākho Jī",
+    "credit": "Mīrābāī · Anuradha Paudwal",
+    "languageTags": [
+      "Braj",
+      "Rajasthani"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Krshna",
+      "Krsna",
+      "Mirabai · Anuradha Paudwal",
+      "Mirabai",
+      "Chaakar Rakho Jee",
+      "Chaakar Rakho Ji",
+      "Shyam Mane Chakar Rakho Ji"
+    ],
+    "writer": "Mīrābāī",
+    "singer": "Anuradha Paudwal",
+    "composer": "",
+    "subtitle": "Kṛṣṇa"
+  },
+  {
+    "slug": "prabhu-ji-tuma-candana-hama-pani",
+    "title": "Prabhu Jī Tuma Candana Hama Pānī",
+    "credit": "Ravidās · Anuradha Paudwal · Surinder Kohli",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Ravidas · Anuradha Paudwal · Surinder Kohli",
+      "Ravidas",
+      "Rama",
+      "श्रीहरि का अति सुंदर भजन, प्रभुजी तुम चंदन हम पानी, Prabhuji Tum Chandan Hum Pani, ANURADHA PAUDWAL",
+      "Prabhuji Tum Chandan Hum Pani",
+      "Prabhu Ji Tum Chandan Hum Pani"
+    ],
+    "writer": "Ravidās",
+    "singer": "Anuradha Paudwal",
+    "composer": "Surinder Kohli",
+    "subtitle": "Bhajan Sandhya Vol.1"
+  },
+  {
     "slug": "om-jai-gangadhar-aarti",
     "title": "Om Jai Gangadhar Aarti",
     "credit": "Anuradha Paudwal",
@@ -356,6 +428,25 @@ window.BHAKTI_SONGS = [
     "singer": "Asif Jeriya & Ami Joshi",
     "composer": "Manoj-Vimal",
     "subtitle": "Kṛṣṇa"
+  },
+  {
+    "slug": "anuraniya-thokada",
+    "title": "Aṇuraṇiyā Thokadā",
+    "credit": "Tukārām · Bhimsen Joshi · Ram Pathak",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Tukaram · Bhimsen Joshi · Ram Pathak",
+      "Tukaram",
+      "Anuraniya Thokada with lyrics | Pt. Bhimsen Joshi | अणुरेणिया थोकडा | Marathi Bhajan |",
+      "Anuraniya Thokda"
+    ],
+    "writer": "Tukārām",
+    "singer": "Bhimsen Joshi",
+    "composer": "Ram Pathak",
+    "subtitle": "Gajalele Abhang"
   },
   {
     "slug": "darsan-dena-pran-piyare",
