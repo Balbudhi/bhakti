@@ -1540,6 +1540,27 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śiva"
   },
   {
+    "slug": "tere-dvar-khara-bhagvan",
+    "title": "Tere Dvār Khaṛā Bhagvān",
+    "credit": "Kavi Pradeep · Avinash Vyas",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Vishnu",
+      "Visnu",
+      "Tere Dwar Khada Bhagwan",
+      "Bhagat Bhar De Re Jholi"
+    ],
+    "writer": "Kavi Pradeep",
+    "singer": "Kavi Pradeep",
+    "composer": "Avinash Vyas",
+    "subtitle": "Viṣṇu"
+  },
+  {
     "slug": "jai-ambe-gauri",
     "title": "Jai Ambe Gauri",
     "credit": "Balbir Nirdosh · Lata Mangeshkar · Surendra Kohli",
