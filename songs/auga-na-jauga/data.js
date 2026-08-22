@@ -27,12 +27,12 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
-      "type": "audio/mp4"
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/auga-na-jauga.webm",
+      "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.webm",
-      "type": "audio/webm; codecs=opus"
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/auga-na-jauga.m4a",
+      "type": "audio/mp4"
     }
   ],
   "timingStatus": "start-only-reviewed",
@@ -2982,10 +2982,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 141.75,
-    "end": 152.0
+    "end": 152
   },
   {
-    "start": 152.0,
+    "start": 152,
     "end": 167.85
   },
   {
@@ -3038,10 +3038,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 391.9,
-    "end": 406.0
+    "end": 406
   },
   {
-    "start": 406.0,
+    "start": 406,
     "end": 428.05
   },
   {
@@ -3050,10 +3050,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 451.45,
-    "end": 461.0
+    "end": 461
   },
   {
-    "start": 461.0,
+    "start": 461,
     "end": 480.56
   },
   {

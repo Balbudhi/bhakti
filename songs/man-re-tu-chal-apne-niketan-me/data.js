@@ -20,12 +20,12 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
-      "type": "audio/mp4"
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-re-tu-chal-apne-niketan-me.webm",
+      "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.webm",
-      "type": "audio/webm; codecs=opus"
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-re-tu-chal-apne-niketan-me.m4a",
+      "type": "audio/mp4"
     }
   ],
   "timingStatus": "start-only-reviewed",
