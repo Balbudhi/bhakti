@@ -2169,6 +2169,29 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "bhagyada-lakshmi-baramma",
+    "title": "Bhāgyada Lakṣmī Bārāmma",
+    "credit": "Purandaradāsa",
+    "languageTags": [
+      "Kannada"
+    ],
+    "subjectTags": [
+      "Lakṣmī"
+    ],
+    "searchAliases": [
+      "Bhagyada Laksmi Baramma",
+      "Lakshmi",
+      "Laksmi",
+      "Purandaradasa",
+      "BHAGYADA LAKSHMI BARAMMA Kannada Bhajans [Full Song] SHRI VARAMAHALAKSHMI DARSHANA",
+      "Bhagyada Lakshmi Baaramma"
+    ],
+    "writer": "Purandaradāsa",
+    "singer": "",
+    "composer": "",
+    "subtitle": "Lakṣmī"
+  },
+  {
     "slug": "raat-dhal-gayee",
     "title": "Raat Dhal Gayee",
     "credit": "",
@@ -2613,6 +2636,26 @@ window.BHAKTI_SONGS = [
     "singer": "Shankar Mahadevan",
     "composer": "",
     "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "jaise-suraj-ki-garmi-se",
+    "title": "Jaise Sūraj Kī Garmī Se",
+    "credit": "Ramanand Sharma · Sharma Bandhu · Jaidev",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Rama",
+      "Jaise Suraj Ki Garmi Se | Parinay | Hindi Movie Devotional Song | Sharma Bandhu",
+      "Jaise Suraj Ki Garmi Se Jalte Hue Tan Ko"
+    ],
+    "writer": "Ramanand Sharma",
+    "singer": "Sharma Bandhu",
+    "composer": "Jaidev",
+    "subtitle": "Rāma"
   },
   {
     "slug": "shejarti",

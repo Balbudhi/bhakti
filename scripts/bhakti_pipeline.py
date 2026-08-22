@@ -135,7 +135,7 @@ def is_youtube_or_query(value: str) -> bool:
 
 def media_metadata(reference: str) -> dict[str, Any]:
     result = subprocess.run(
-        ["yt-dlp", "--no-playlist", "--dump-single-json", "--skip-download", reference],
+        ["yt-dlp", "-4", "--no-playlist", "--dump-single-json", "--skip-download", reference],
         capture_output=True,
         text=True,
     )
@@ -262,14 +262,14 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
             "source_resolution": resolution,
             "review_note": "Source metadata is evidence to verify, never automatic public credit.",
         }
-        subprocess.run(["yt-dlp", "--no-playlist", "-f", "bestaudio", "-o", str(song_dir / "audio.%(ext)s"), source_value], check=True)
+        subprocess.run(["yt-dlp", "-4", "--no-playlist", "-f", "bestaudio", "-o", str(song_dir / "audio.%(ext)s"), source_value], check=True)
         originals = [path for path in song_dir.glob("audio.*") if path.suffix not in {".part", ".ytdl"}]
         if len(originals) != 1:
             raise RuntimeError(f"expected one best-audio download from {source_value}, found {len(originals)}")
         primary = originals[0]
         if primary.suffix.casefold() != ".m4a":
             try:
-                subprocess.run(["yt-dlp", "--no-playlist", "-f", "bestaudio[ext=m4a]", "-o", str(audio), source_value], check=True)
+                subprocess.run(["yt-dlp", "-4", "--no-playlist", "-f", "bestaudio[ext=m4a]", "-o", str(audio), source_value], check=True)
             except subprocess.CalledProcessError:
                 subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(primary),
                                 "-vn", "-c:a", "aac", "-b:a", "192k", str(audio)], check=True)
