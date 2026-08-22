@@ -36,7 +36,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation_1": {
     "roman": "Yā devī sarvabhūteṣu dayā-rūpeṇa saṃsthitā",
-    "english": "{1:O Goddess, }{0:who }{5:abides }{2:in all beings }{4:as }{3:compassion.}",
+    "english": "{0,1:To the Goddess who }{5:abides }{2:in all beings }{4:in the form of }{3:compassion,}",
     "words": [
       {
         "roman": "Yā",
@@ -101,7 +101,7 @@ window.SONG_LINES = {
   },
   "invocation_2": {
     "roman": "Namastasyai namastasyai namastasyai namo namaḥ",
-    "english": "{0:I bow to Her, }{1:I bow to Her, }{2:I bow to Her }— {3:reverent bows again and again.}",
+    "english": "{0:Salutations to Her, }{1:salutations to Her, }{2:salutations to Her, }{3:salutations again and again.}",
     "words": [
       {
         "roman": "Namastasyai",
@@ -439,7 +439,7 @@ window.SONG_LINES = {
   },
   "refrain_c": {
     "roman": "Sab andhakār miṭā de maiyā",
-    "english": "{2:Erase }{0:all }{1:darkness, }{3:O Mother.}",
+    "english": "{2:Dispel }{0:all }{1:darkness, }{3:O Mother.}",
     "words": [
       {
         "roman": "Sab",
@@ -495,7 +495,7 @@ window.SONG_LINES = {
   },
   "refrain_d": {
     "roman": "Daras terā kar pāūṅ main",
-    "english": "{2,3:May I attain }{0:the sacred sight }{1:of You.}",
+    "english": "{3:May I }{0,2:behold }{1:You.}",
     "words": [
       {
         "roman": "Daras",
@@ -1073,7 +1073,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Nahīṅ ārādhan jap tap jānūṅ, main avaguṇ kī khān hūṅ",
-    "english": "{4:I know }{0:neither }{1:worship, }{2:repetition of a sacred name, }{0:nor }{3:austerity; }{5:I }{9:am }{8:a mine }{7:of }{6:flaws.}",
+    "english": "{4:I know }{0:neither }{1:worship, }{2:chanting, }{0:nor }{3:austerity; }{5,9:I am }{7,8:a mine of }{6:flaws.}",
     "words": [
       {
         "roman": "Nahīṅ",
@@ -1293,7 +1293,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "De aisā vardān he maiyā",
-    "english": "{0:Give }{1:such }{2:a boon, }{3,4:O Mother.}",
+    "english": "{0:Grant }{1:such a }{2:boon, }{3:O }{4:Mother.}",
     "words": [
       {
         "roman": "De",
@@ -1353,7 +1353,7 @@ window.SONG_LINES = {
   },
   "v2d": {
     "roman": "De aisā vardān he maiyā, sumiran terā gāūṅ main",
-    "english": "{0:Give }{1:such }{2:a boon, }{3,4:O Mother: }{7,8:may I }{7:sing }{6:Your }{5:remembrance.}",
+    "english": "{0:Grant }{1:such a }{2:boon, }{3:O }{4:Mother: }{8:may I }{7:sing }{6:Your }{5:remembrance.}",
     "words": [
       {
         "roman": "De",
@@ -1615,7 +1615,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Terī kṛpā hī miṭegī, bhītar jo bhī khoṭ hai",
-    "english": "{2:Only }by {0:Your }{1:grace }{3:will be erased }{5:whatever }{6:flaw }{7:is }{4:within.}",
+    "english": "{2:Only }{0:by Your }{1:grace }{3:will }{5:whatever }{6:flaw }{4,7:is within }{3:be erased.}",
     "words": [
       {
         "roman": "Terī",

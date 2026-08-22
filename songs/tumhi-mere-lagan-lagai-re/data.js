@@ -111,7 +111,7 @@ window.SONG_LINES = {
   "ham_to_sowat": {
     "source": "हम तो सोवत रहली ओढ़ के चदरवा",
     "roman": "Ham to sowat rahlī oṛh ke chadarwā",
-    "english": "{0,1:I }{3:was }{2:sleeping, }{4,5:wrapped in }{6:a sheet. }",
+    "english": "{0,1:I}{2,3: was sleeping,}{4,5: wrapped in}{6: a sheet.}",
     "words": [
       {
         "roman": "Ham",
@@ -338,7 +338,7 @@ window.SONG_LINES = {
   "jahā̃_jāū̃_tohe": {
     "source": "जहाँ जाऊँ तोहे पाऊँ बनूँ रे बावरिया",
     "roman": "Jahā̃ jāū̃ tohe pāū̃ banū re bāwariyā",
-    "english": "{0:Wherever }{1:I go, }{3:I find }{2:You; }{4:I become }{5,6:a love-maddened one.}",
+    "english": "{0:Wherever}{1: I go,}{2,3: I find You;}{4: I become}{5,6: mad with love.}",
     "words": [
       {
         "roman": "Jahā̃",
@@ -417,7 +417,7 @@ window.SONG_LINES = {
   "more_ghaṭ_mẽ": {
     "source": "मोरे घट में है तोरी साँस रे फकीरवा",
     "roman": "More ghaṭ mẽ hai torī sā̃s re fakīrwā",
-    "english": "{4:Your }{5:breath }{3:is }{2:within }{0,1:my inner vessel, }{6:O }{7:fakir.}",
+    "english": "{4:Your}{5: breath}{3: is}{2: within}{0: my}{1: vessel,}{6: O}{7: fakir.}",
     "words": [
       {
         "roman": "More",
