@@ -74,6 +74,7 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
+      "Kālī",
       "Śakti",
       "Viṣṇu",
       "Śiva"
@@ -89,7 +90,7 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Anuradha Paudwal",
     "composer": "",
-    "subtitle": "Śakti"
+    "subtitle": "Kālī"
   },
   {
     "slug": "om-jai-gangadhar-aarti",
@@ -274,6 +275,28 @@ window.BHAKTI_SONGS = [
     "subtitle": "Gaṇeśa"
   },
   {
+    "slug": "main-dharu-tiharo-dhyan",
+    "title": "Main Dharu Tiharo Dhyan",
+    "credit": "Kālīrām · Ashwini Bhide",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Kālī",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Kaliram · Ashwini Bhide",
+      "Kaliram"
+    ],
+    "writer": "Kālīrām",
+    "singer": "Ashwini Bhide",
+    "composer": "",
+    "subtitle": "Kālī"
+  },
+  {
     "slug": "jai-jai-jai-giriraj-kishori",
     "title": "Jai Jai Jai Giriraj Kishori",
     "credit": "Tulsīdās · Ashwini Bhide",
@@ -290,27 +313,6 @@ window.BHAKTI_SONGS = [
       "Tulsidas"
     ],
     "writer": "Tulsīdās",
-    "singer": "Ashwini Bhide",
-    "composer": "",
-    "subtitle": "Śakti"
-  },
-  {
-    "slug": "main-dharu-tiharo-dhyan",
-    "title": "Main Dharu Tiharo Dhyan",
-    "credit": "Kālīrām · Ashwini Bhide",
-    "languageTags": [
-      "Braj"
-    ],
-    "subjectTags": [
-      "Śakti"
-    ],
-    "searchAliases": [
-      "Shakti",
-      "Sakti",
-      "Kaliram · Ashwini Bhide",
-      "Kaliram"
-    ],
-    "writer": "Kālīrām",
     "singer": "Ashwini Bhide",
     "composer": "",
     "subtitle": "Śakti"
@@ -627,25 +629,6 @@ window.BHAKTI_SONGS = [
     "subtitle": "Rāma"
   },
   {
-    "slug": "jai-jagdishwari-mata-saraswati",
-    "title": "Jai Jagdishwari Mata Saraswati",
-    "credit": "Swami Brahmanand · Bhimsen Joshi",
-    "languageTags": [
-      "Braj"
-    ],
-    "subjectTags": [
-      "Śakti"
-    ],
-    "searchAliases": [
-      "Shakti",
-      "Sakti"
-    ],
-    "writer": "Swami Brahmanand",
-    "singer": "Bhimsen Joshi",
-    "composer": "",
-    "subtitle": "Śakti"
-  },
-  {
     "slug": "maharaj-bhavani-brahmabhuvan-ki-rani",
     "title": "Mahārāja Bhavānī Brahmabhuvana Kī Rānī",
     "credit": "Surdas · Bhimsen Joshi",
@@ -664,6 +647,26 @@ window.BHAKTI_SONGS = [
     "singer": "Bhimsen Joshi",
     "composer": "",
     "subtitle": "Śakti"
+  },
+  {
+    "slug": "jai-jagdishwari-mata-saraswati",
+    "title": "Jai Jagdishwari Mata Saraswati",
+    "credit": "Swami Brahmanand · Bhimsen Joshi",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Sarasvatī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti"
+    ],
+    "writer": "Swami Brahmanand",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "subtitle": "Sarasvatī"
   },
   {
     "slug": "sharada-vidyadani-dayani",
@@ -1368,6 +1371,7 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
+      "Kālī",
       "Rāma",
       "Viṣṇu"
     ],
@@ -1392,6 +1396,7 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
+      "Kālī",
       "Rāma",
       "Viṣṇu",
       "Śiva",
@@ -1420,8 +1425,10 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
+      "Kālī",
       "Viṣṇu",
-      "Śiva"
+      "Śiva",
+      "Sarasvatī"
     ],
     "searchAliases": [
       "Shakti",
@@ -1846,6 +1853,7 @@ window.BHAKTI_SONGS = [
       "Viṣṇu",
       "Gaṇeśa",
       "Śakti",
+      "Kālī",
       "Vaiṣṇo Devī"
     ],
     "searchAliases": [
@@ -2319,7 +2327,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śirḍī Sāī",
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Sarasvatī"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -3203,7 +3212,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Jagannātha"
+      "Jagannātha",
+      "Nirguṇa"
     ],
     "searchAliases": [
       "Jagannatha",
@@ -3749,7 +3759,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śakti"
+      "Śakti",
+      "Kālī"
     ],
     "searchAliases": [
       "Shakti",

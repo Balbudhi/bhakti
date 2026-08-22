@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śakti"
+    "Śakti",
+    "Kālī"
   ],
   "searchAliases": [
     "Shakti",

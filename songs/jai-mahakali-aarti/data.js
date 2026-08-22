@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Jai Mahakali Aarti",
-  "subtitle": "Śakti",
+  "subtitle": "Kālī",
   "credit": "Anuradha Paudwal",
   "pageCredit": "Anuradha Paudwal",
   "writer": "",
@@ -10,6 +10,7 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
+    "Kālī",
     "Śakti",
     "Viṣṇu",
     "Śiva"

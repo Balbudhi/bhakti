@@ -10,7 +10,8 @@ window.SONG_META = {
     "Odia"
   ],
   "subjectTags": [
-    "Jagannātha"
+    "Jagannātha",
+    "Nirguṇa"
   ],
   "searchAliases": [
     "Jagannatha",

@@ -12,27 +12,28 @@ class TagTaxonomyTests(unittest.TestCase):
             {"roman": "nandalālā mere nainana ke pyāre"},
             {"roman": "hari bhajana ko māna le"},
         ]
-        self.assertEqual(tags.infer_named_subject_tags(lines), ["Rāma", "Kṛṣṇa", "Viṣṇu"])
+        self.assertEqual(tags.infer_named_subject_tags(lines), ["Rāma", "Kṛṣṇa"])
 
     def test_generic_sai_does_not_claim_shirdi(self) -> None:
         self.assertNotIn("Śirḍī Sāī", tags.infer_named_subject_tags([{"roman": "bhūkhā sāīṁ"}]))
         self.assertIn("Śirḍī Sāī", tags.infer_named_subject_tags([{"roman": "Śirḍī Sāī Bābā"}]))
 
     def test_kali_age_does_not_claim_shakti(self) -> None:
-        self.assertNotIn("Śakti", tags.infer_named_subject_tags([{"roman": "Kali yuga"}]))
-        self.assertIn("Śakti", tags.infer_named_subject_tags([{"roman": "Mahākālī"}]))
+        self.assertNotIn("Kālī", tags.infer_named_subject_tags([{"roman": "Kali yuga"}]))
+        self.assertIn("Kālī", tags.infer_named_subject_tags([{"roman": "Mahākālī"}]))
+        self.assertIn("Kālī", tags.infer_named_subject_tags([{"roman": "He Kālī Mā"}]))
 
     def test_merge_preserves_editorial_tags(self) -> None:
         merged = tags.merge_subject_tags(["Nirguṇa"], [{"roman": "Rāma nāma japa karanā"}])
         self.assertEqual(merged, ["Nirguṇa", "Rāma"])
 
-    def test_named_modern_saints_are_recognized(self) -> None:
+    def test_ambiguous_historical_names_are_not_inferred(self) -> None:
         inferred = tags.infer_named_subject_tags([
             {"roman": "Śāradā Mā tum hṛdaya nivāsinī"},
             {"roman": "Rāmakṛṣṇa prabhu isa yuga ke nāyaka"},
         ])
-        self.assertIn("Śāradā Devī", inferred)
-        self.assertIn("Śrī Rāmakṛṣṇa", inferred)
+        self.assertNotIn("Śāradā Devī", inferred)
+        self.assertNotIn("Śrī Rāmakṛṣṇa", inferred)
 
     def test_subject_tag_aliases_collapse_without_duplicates(self) -> None:
         merged = tags.merge_subject_tags(

@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Main Dharu Tiharo Dhyan",
-  "subtitle": "Śakti",
+  "subtitle": "Kālī",
   "credit": "Kālīrām · Ashwini Bhide",
   "pageCredit": "Ashwini Bhide",
   "writer": "Kālīrām",
@@ -10,6 +10,7 @@ window.SONG_META = {
     "Braj"
   ],
   "subjectTags": [
+    "Kālī",
     "Śakti"
   ],
   "searchAliases": [
