@@ -22,11 +22,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-more-avagun-citta-na-dharo.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-more-avagun-citta-na-dharo.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -760,7 +760,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0.0,
+    "start": 0,
     "end": 30.86
   },
   {
