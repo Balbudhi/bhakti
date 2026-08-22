@@ -1,6 +1,6 @@
 window.SONG_META = {
-  "title": "Hanuman Bhajan",
-  "subtitle": "Hanumān",
+  "title": "Sundarakāṇḍa (selections)",
+  "subtitle": "Rāmcaritmānas · Sundarakāṇḍa",
   "credit": "Hariharan",
   "pageCredit": "Hariharan",
   "writer": "",
@@ -18,12 +18,40 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Hanuman",
+    "Hanuman Bhajan",
+    "Hariharan Hanuman Bhajan",
+    "Sundarkand",
+    "Sundar Kand",
+    "Ramcharitmanas",
+    "Ramcharit Manas",
+    "Tulsidas",
     "Rama",
     "Vishnu",
     "Visnu",
     "Shakti",
     "Sakti"
   ],
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Rāmcaritmānas · Sundarakāṇḍa",
+      "poet": "Tulsīdās",
+      "note": "A continuous sung extract from Sundarakāṇḍa 48 through the canto’s conclusion."
+    },
+    {
+      "sequenceIndex": 216,
+      "title": "Acclamations",
+      "poet": "",
+      "note": "The audible acclamations are not part of the preceding Rāmcaritmānas extract."
+    },
+    {
+      "sequenceIndex": 220,
+      "title": "Hindi closing bhajan",
+      "poet": "",
+      "note": "The recording’s closing Hindi verses; poet and composer have not been verified."
+    }
+  ],
+  "adaptedSequenceIndices": [],
   "audioSources": [
     {
       "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bhajan-hariharan.m4a",

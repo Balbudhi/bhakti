@@ -1423,6 +1423,40 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śakti"
   },
   {
+    "slug": "hanuman-bhajan-hariharan",
+    "title": "Sundarakāṇḍa (selections)",
+    "credit": "Hariharan",
+    "languageTags": [
+      "Awadhi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Hanumān",
+      "Rāma",
+      "Viṣṇu",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Hanuman",
+      "Hanuman Bhajan",
+      "Hariharan Hanuman Bhajan",
+      "Sundarkand",
+      "Sundar Kand",
+      "Ramcharitmanas",
+      "Ramcharit Manas",
+      "Tulsidas",
+      "Rama",
+      "Vishnu",
+      "Visnu",
+      "Shakti",
+      "Sakti"
+    ],
+    "writer": "",
+    "singer": "Hariharan",
+    "composer": "",
+    "subtitle": "Rāmcaritmānas · Sundarakāṇḍa"
+  },
+  {
     "slug": "jai-bhole-nath",
     "title": "Jai Bhole Nath",
     "credit": "",
@@ -4122,17 +4156,5 @@ window.BHAKTI_SONGS = [
     "singer": "",
     "composer": "",
     "subtitle": "Śiva"
-  },
-  {
-    "slug": "hanuman-bhajan-hariharan",
-    "title": "Hanuman Bhajan",
-    "credit": "Hariharan",
-    "languageTags": ["Awadhi", "Hindi"],
-    "subjectTags": ["Hanumān", "Rāma", "Viṣṇu"],
-    "searchAliases": ["Hariharan Hanuman Bhajan"],
-    "writer": "",
-    "singer": "Hariharan",
-    "composer": "",
-    "subtitle": "Hanumān"
   }
 ];
