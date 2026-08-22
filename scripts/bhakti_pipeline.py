@@ -390,7 +390,7 @@ def detect_youtube_trim(song_dir: Path, source: dict[str, Any], options: argpars
             edge, clip_start, clip = job
             prompt = f"""Classify the {edge} edge of a YouTube-sourced song. This clip covers absolute source seconds {clip_start:.3f}–{clip_start + edge_length:.3f}.
 
-Crop only definite non-song platform material: spoken channel promotion, logo sting, advertisement, countdown, unrelated narration, or post-song promotional speech. Preserve every musical introduction, instrumental prelude, devotional invocation, wordless vocal, intentional silence, final sung note, and natural fade.
+Crop only definite non-song material: spoken channel promotion, logo sting, advertisement, countdown, unrelated narration, post-song promotional speech, or unrelated post-song film dialogue. Preserve every musical introduction, instrumental prelude, devotional invocation, wordless vocal, intentional silence, final sung note, and natural fade.
 
 For the start edge, boundary is the relative second where the actual song recording begins. For the end edge, boundary is the relative second through which the actual song/fade must be kept. If no crop is justified, decision must be keep and boundary must be 0 for start or {edge_length:.3f} for end. Use trim only with high confidence.
 
@@ -404,7 +404,8 @@ Return strict JSON only."""
             results = list(pool.map(run, jobs))
     by_edge = {item["edge"]: item for item in results}
     allowed = {"platform_spoken", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
-               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration"}
+               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration",
+               "post_song_film_dialogue"}
     start_packet = by_edge["start"]["response"]["packet"]
     end_packet = by_edge["end"]["response"]["packet"]
     trim_start = (float(start_packet["boundary"]) if start_packet.get("decision") == "trim"
@@ -427,7 +428,8 @@ Return strict JSON only."""
 def normalize_trim_artifact(artifact: dict[str, Any]) -> dict[str, Any]:
     """Recalculate trim bounds from retained edge decisions without an API call."""
     allowed = {"platform_spoken", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
-               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration"}
+               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration",
+               "post_song_film_dialogue"}
     duration = float(artifact["duration"])
     start = artifact["start"]["response"]["packet"]
     end = artifact["end"]["response"]["packet"]

@@ -567,52 +567,6 @@ window.SONG_LINES = {
       }
     ],
     "grammarNote": "Symmetrical vocative structure framing the central divine epithets with doubled vocative mā̃ at both flanks."
-  },
-  "thakur-spoken": {
-    "source": "ठाकुर!",
-    "sourceLanguage": "hi",
-    "sourceWords": [
-      {
-        "text": "ठाकुर!",
-        "wordIndices": [
-          0
-        ]
-      }
-    ],
-    "roman": "Ṭhākur!",
-    "english": "{0:Master!}",
-    "words": [
-      {
-        "roman": "Ṭhākur!",
-        "gloss": "Master!",
-        "concept_key": "",
-        "preserve_in_english": false
-      }
-    ],
-    "grammarNote": "Vocative singular noun with exclamatory force."
-  },
-  "naren-spoken": {
-    "source": "नरेन!",
-    "sourceLanguage": "hi",
-    "sourceWords": [
-      {
-        "text": "नरेन!",
-        "wordIndices": [
-          0
-        ]
-      }
-    ],
-    "roman": "Naren!",
-    "english": "{0:Naren!}",
-    "words": [
-      {
-        "roman": "Naren!",
-        "gloss": "proper name or untranslated term",
-        "concept_key": "",
-        "preserve_in_english": false
-      }
-    ],
-    "grammarNote": "Proper noun in vocative singular with exclamatory force."
   }
 };
 
@@ -661,16 +615,6 @@ window.SONG_SEQUENCE = [
     "ref": "karali-kali",
     "section": "refrain",
     "repeats": 1
-  },
-  {
-    "ref": "thakur-spoken",
-    "section": "spoken",
-    "repeats": 1
-  },
-  {
-    "ref": "naren-spoken",
-    "section": "spoken",
-    "repeats": 1
   }
 ];
 
@@ -710,13 +654,5 @@ window.SONG_TIMINGS = [
   {
     "start": 58.75,
     "end": 63.3
-  },
-  {
-    "start": 63.3,
-    "end": 67.75
-  },
-  {
-    "start": 67.75,
-    "end": 69.081
   }
 ];

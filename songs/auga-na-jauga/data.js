@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Āū̃gā Nā Jāū̃gā",
   "subtitle": "Nirguṇa",
-  "credit": "Kabīr, Shakeel Badayuni & others · Maulvi Haider Hassan & Zameer Hassan Khan",
-  "pageCredit": "Maulvi Haider Hassan & Zameer Hassan Khan",
+  "credit": "Kabīr, Shakeel Badayuni & others · Maulvi Haider Hassan Vehranwale Qawwal and Party",
+  "pageCredit": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
   "writer": "Kabīr, Shakeel Badayuni & others",
-  "singer": "Maulvi Haider Hassan & Zameer Hassan Khan",
-  "vocalist": "Saqib Hassan",
+  "singer": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
+  "vocalist": "",
   "composer": "",
-  "ensemble": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
+  "ensemble": "",
   "languages": [
     "Urdu",
     "Punjabi",
@@ -20,10 +20,52 @@ window.SONG_META = {
   "searchAliases": [
     "Aũga Na Jaũga",
     "Nirguna",
-    "Kabir, Shakeel Badayuni & others · Maulvi Haider Hassan & Zameer Hassan Khan",
+    "Kabir, Shakeel Badayuni & others · Maulvi Haider Hassan Vehranwale Qawwal and Party",
     "Kabir, Shakeel Badayuni & others",
     "Aaoon Ga Na Jaoon Ga - Bhagat Kabir",
     "Aaoon Ga Na Jaoon Ga"
+  ],
+  "sectionNotices": [
+    {
+      "sequenceIndex": 1,
+      "title": "Na Fanā Merī Na Baqā Merī",
+      "poet": "Shakeel Badayuni"
+    },
+    {
+      "sequenceIndex": 8,
+      "title": "Fanā Kaisī, Baqā Kaisī",
+      "poet": "Amīr Mīnāʻī"
+    },
+    {
+      "sequenceIndex": 10,
+      "title": "Persian couplet",
+      "poet": "ʿAbd al-Quddūs Gangohī"
+    },
+    {
+      "sequenceIndex": 11,
+      "title": "Āū̃gā Nā Jāū̃gā",
+      "poet": "Kabīr"
+    },
+    {
+      "sequenceIndex": 12,
+      "title": "Inserted couplet",
+      "note": "Author not established."
+    },
+    {
+      "sequenceIndex": 16,
+      "title": "Kabīr's verses",
+      "poet": "Kabīr"
+    },
+    {
+      "sequenceIndex": 28,
+      "title": "Woh Aur Hoṅge",
+      "poet": "Bedam Shah Warsi"
+    },
+    {
+      "sequenceIndex": 30,
+      "title": "Jīwnā Kyā Agyān Hai",
+      "poet": "Kabīr"
+    }
   ],
   "audioSources": [
     {
