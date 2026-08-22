@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Āū̃gā Nā Jāū̃gā",
   "subtitle": "Nirguṇa",
-  "credit": "Kabīr, Shakeel Badayuni & others · Maulvi Haider Hassan Vehranwale Qawwal and Party",
+  "credit": "Kabīr and other poets · Maulvi Haider Hassan Vehranwale Qawwal and Party",
   "pageCredit": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
-  "writer": "Kabīr, Shakeel Badayuni & others",
+  "writer": "Kabīr and other poets",
   "singer": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
   "vocalist": "",
   "composer": "",
@@ -20,8 +20,8 @@ window.SONG_META = {
   "searchAliases": [
     "Aũga Na Jaũga",
     "Nirguna",
-    "Kabir, Shakeel Badayuni & others · Maulvi Haider Hassan Vehranwale Qawwal and Party",
-    "Kabir, Shakeel Badayuni & others",
+    "Kabir and other poets · Maulvi Haider Hassan Vehranwale Qawwal and Party",
+    "Kabir and other poets",
     "Aaoon Ga Na Jaoon Ga - Bhagat Kabir",
     "Aaoon Ga Na Jaoon Ga"
   ],
@@ -44,7 +44,7 @@ window.SONG_META = {
     {
       "sequenceIndex": 11,
       "title": "Āū̃gā Nā Jāū̃gā",
-      "poet": "Kabīr"
+      "note": "Attributed to Kabīr in this performance; an independent textual source is still under review."
     },
     {
       "sequenceIndex": 12,
@@ -53,18 +53,18 @@ window.SONG_META = {
     },
     {
       "sequenceIndex": 16,
-      "title": "Kabīr's verses",
-      "poet": "Kabīr"
+      "title": "Kabīr sequence",
+      "note": "Attributed to Kabīr in this performance; individual textual witnesses are still under review."
     },
     {
       "sequenceIndex": 28,
       "title": "Woh Aur Hoṅge",
-      "poet": "Bedam Shah Warsi"
+      "note": "Contains the signature Bedam; the author has not been established from a published source."
     },
     {
       "sequenceIndex": 30,
       "title": "Jīwnā Kyā Agyān Hai",
-      "poet": "Kabīr"
+      "note": "Attributed to Kabīr in this performance; an independent textual source is still under review."
     }
   ],
   "audioSources": [
