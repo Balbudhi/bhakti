@@ -42,7 +42,7 @@ import source_witness
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = gemini.MODEL
-LONG_MERGE_VERSION = 5
+LONG_MERGE_VERSION = 7
 LONG_TRANSCRIPT_CONTRACT_VERSION = 1
 GLOSS_CONTRACT_VERSION = 4
 TRANSLATION_INPUT_VERSION = 7
@@ -696,8 +696,6 @@ def balanced_overlap(left: list[dict[str, Any]], right: list[dict[str, Any]], li
         left_text = "".join(lyric_signature(line) for line in left[-left_count:])
         for right_count in range(1, min(limit, len(right)) + 1):
             right_text = "".join(lyric_signature(line) for line in right[:right_count])
-            if min(len(left_text), len(right_text)) < 15:
-                continue
             # A segment boundary can split a model's over-long line into two
             # complete source units.  When its opening units are exactly the
             # suffix of the preceding segment, they are overlapping evidence,
@@ -706,6 +704,8 @@ def balanced_overlap(left: list[dict[str, Any]], right: list[dict[str, Any]], li
             if left_text.endswith(right_text):
                 score = 1.0
             else:
+                if min(len(left_text), len(right_text)) < 15:
+                    continue
                 similarity = difflib.SequenceMatcher(None, left_text, right_text).ratio()
                 balance = min(len(left_text), len(right_text)) / max(len(left_text), len(right_text))
                 score = similarity * balance
@@ -729,7 +729,8 @@ def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, 
     uncertainties: list[str] = []
     for index, item in enumerate(audited_segments):
         packet = item["audit"]["packet"]
-        current = ordered_segment_lines(packet)
+        raw_current = ordered_segment_lines(packet)
+        current = raw_current
         # Overlap lets the adjoining segment carry the complete line. Internal
         # leading/trailing fragments are evidence, not separate performances.
         if index > 0:
@@ -746,6 +747,15 @@ def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, 
         score = 1.0
         if merged:
             left_overlap, overlap, score = balanced_overlap(merged, current)
+            # A complete lyric line at a segment edge may be marked
+            # ``trailing`` in the preceding clip and therefore omitted from
+            # ``merged`` to avoid duplication.  It is still decisive evidence
+            # that the following segment begins at the same performance.  Use
+            # raw adjoining packets for seam confidence, but retain the
+            # trimmed lists for public occurrence deduplication.
+            previous_raw = ordered_segment_lines(audited_segments[index - 1]["audit"]["packet"])
+            _raw_left, _raw_right, raw_score = balanced_overlap(previous_raw, raw_current)
+            score = max(score, raw_score)
             if score < 0.8:
                 uncertainties.append(f"segment seam {index - 1}/{index} overlap score is only {score:.3f}")
         seam_matches.append({"left_segment": max(0, index - 1), "right_segment": index,
@@ -1331,27 +1341,35 @@ def align_long_segments(
                 starts_by_id[report["occurrence_id"]] = float(report["start"])
     # A repeated refrain can make a locally perfect narrow response land on
     # the earlier occurrence. Check it against already accepted neighbours and
-    # make one bounded, order-aware recovery rather than publishing a shifted
-    # sequence or restarting every timing window.
+    # make bounded, order-aware recoveries rather than publishing a shifted
+    # sequence or restarting every timing window. A first correction can make
+    # the following identical refrain newly out of order, so iterate a small
+    # number of times over the affected local run.
     order_repairs: list[dict[str, Any]] = []
-    violations: list[int] = []
-    previous = -1.0
-    for index, occurrence in enumerate(occurrences):
-        value = starts_by_id.get(occurrence["occurrence_id"])
-        if value is not None and value <= previous:
-            violations.append(index)
-        elif value is not None:
-            previous = value
-    if violations:
+    for _round in range(3):
+        violations: list[int] = []
+        previous = -1.0
+        for index, occurrence in enumerate(occurrences):
+            value = starts_by_id.get(occurrence["occurrence_id"])
+            if value is not None and value <= previous:
+                violations.append(index)
+            elif value is not None:
+                previous = value
+        if not violations:
+            break
         with tempfile.TemporaryDirectory(prefix="bhakti-order-aware-starts-") as temporary:
             destination = Path(temporary)
             def recover_order(index: int) -> dict[str, Any]:
                 prior = starts_by_id.get(occurrences[index - 1]["occurrence_id"], 0.0) if index else 0.0
                 following = next((starts_by_id.get(occurrences[right]["occurrence_id"])
                                   for right in range(index + 1, len(occurrences))
-                                  if starts_by_id.get(occurrences[right]["occurrence_id"]) is not None), duration)
+                                  if (starts_by_id.get(occurrences[right]["occurrence_id"]) is not None
+                                      and float(starts_by_id[occurrences[right]["occurrence_id"]]) > float(prior) + 0.01)), duration)
                 candidate = max(prior + 0.5, min(float(coarse_sequence[index]["start"]), float(following) - 0.5))
-                return refine_single_start(audio, occurrences, index, [candidate], duration, options, destination)
+                return refine_single_start(
+                    audio, occurrences, index, [candidate], duration, options, destination,
+                    lower_bound=float(prior), upper_bound=float(following),
+                )
             with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(violations))) as pool:
                 order_repairs = list(pool.map(recover_order, violations))
         for report in order_repairs:
@@ -2611,8 +2629,13 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
         for filename in ("02-transcript-audit.json", "03-timing.json", "04-glosses.json", "05-translation.json", "song-packet.json"):
             (packet_dir / filename).unlink(missing_ok=True)
     elif options.refresh_timing:
-        (song_dir / ".transcription" / "pipeline" / "03-timing.json").unlink(missing_ok=True)
-        (song_dir / ".transcription" / "pipeline" / "song-packet.json").unlink(missing_ok=True)
+        packet_dir = song_dir / ".transcription" / "pipeline"
+        (packet_dir / "03-timing.json").unlink(missing_ok=True)
+        (packet_dir / "song-packet.json").unlink(missing_ok=True)
+        # A timing refresh must remeasure every bounded long-recording window;
+        # retaining a prior disputed window would merely reproduce the onset
+        # it was asked to repair.
+        shutil.rmtree(packet_dir / "long-timing-segments", ignore_errors=True)
     audited = audit_transcript(song_dir, raw, audio, options)
     if audited.pop("merge_contract_rebuilt", False):
         # A new deterministic reconciliation can alter canonical lines and
