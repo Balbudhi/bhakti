@@ -200,6 +200,13 @@ main {
 .song-search input::placeholder { color: var(--muted); }
 .song-search input:focus { border-color: rgba(244, 234, 208, 0.65); }
 
+/* iOS Safari magnifies a page when a focused form control is below 16px.
+   Keep the library search at that threshold on touch-sized viewports while
+   preserving normal user-controlled pinch zoom. */
+@media (max-width: 720px) {
+  .song-search input { font-size: 16px; }
+}
+
 .tag-filters {
   display: grid;
   gap: 8px;
