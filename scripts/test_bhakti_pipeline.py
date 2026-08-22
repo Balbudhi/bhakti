@@ -131,6 +131,22 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(normalized["trim_end"], 100.0)
         self.assertEqual(normalized["validation_errors"], [])
 
+    def test_post_song_film_dialogue_is_a_valid_trim_target(self) -> None:
+        artifact = {
+            "duration": 69.081,
+            "start": {"response": {"packet": {
+                "decision": "keep", "boundary": 0.0, "outside_type": "none", "confidence": "high"
+            }}},
+            "end": {"clip_start": 0.0, "response": {"packet": {
+                "decision": "trim", "boundary": 63.3, "outside_type": "post_song_film_dialogue", "confidence": "high"
+            }}},
+            "trim_start": 0.0, "trim_end": 69.081, "validation_errors": []
+        }
+        normalized = pipeline.normalize_trim_artifact(artifact)
+        self.assertEqual(normalized["trim_start"], 0.0)
+        self.assertEqual(normalized["trim_end"], 63.3)
+        self.assertEqual(normalized["validation_errors"], [])
+
     def test_punctuation_only_glosses_are_not_public_words(self) -> None:
         rows = [{"id": "line", "word_glosses": [
             {"roman": "hanumāna", "gloss": "Hanuman"},

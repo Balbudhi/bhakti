@@ -1798,7 +1798,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "auga-na-jauga",
     "title": "Āū̃gā Nā Jāū̃gā",
-    "credit": "Kabīr, Shakeel Badayuni & others · Maulvi Haider Hassan & Zameer Hassan Khan",
+    "credit": "Kabīr, Shakeel Badayuni & others · Maulvi Haider Hassan Vehranwale Qawwal and Party",
     "languageTags": [
       "Urdu",
       "Punjabi",
@@ -1811,13 +1811,13 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Aũga Na Jaũga",
       "Nirguna",
-      "Kabir, Shakeel Badayuni & others · Maulvi Haider Hassan & Zameer Hassan Khan",
+      "Kabir, Shakeel Badayuni & others · Maulvi Haider Hassan Vehranwale Qawwal and Party",
       "Kabir, Shakeel Badayuni & others",
       "Aaoon Ga Na Jaoon Ga - Bhagat Kabir",
       "Aaoon Ga Na Jaoon Ga"
     ],
     "writer": "Kabīr, Shakeel Badayuni & others",
-    "singer": "Maulvi Haider Hassan & Zameer Hassan Khan",
+    "singer": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
     "composer": "",
     "subtitle": "Nirguṇa"
   },

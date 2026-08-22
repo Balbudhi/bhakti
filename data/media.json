@@ -1066,12 +1066,12 @@
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-karali-kali-ma.webm",
         "type": "audio/webm; codecs=opus",
-        "sha256": "b0fa676436338064f2f0c590af74ebc313425b5e539253fb4b352746c80744fc"
+        "sha256": "83f6f5dc1fe145cf8286b61dfc5784300be64e48cc0b327df11f4fc588f1ce38"
       },
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-karali-kali-ma.m4a",
         "type": "audio/mp4",
-        "sha256": "39e18c01e93e94e058ff1a1593195babc775e92b2690637700c3306fb182d65d"
+        "sha256": "c5e81bc4d4b94c9a17708e3da2b0996f9b3bb6dd24a1450adc5a656ac67312d4"
       }
     ],
     "ma-tumko-kaise-batalau": [
