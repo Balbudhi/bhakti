@@ -1813,6 +1813,13 @@
         "type": "audio/mp4",
         "sha256": "24faac740f60df31394510c696e2903532f423f0dfe39223f379f25dd3744c01"
       }
+    ],
+    "hanuman-bhajan-hariharan": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bhajan-hariharan.m4a",
+        "type": "audio/mp4",
+        "sha256": "e2e5afec4bbb577ddd2b854a7384d963b3dd3ca021c9c32526a24fda78f57834"
+      }
     ]
   }
 }
