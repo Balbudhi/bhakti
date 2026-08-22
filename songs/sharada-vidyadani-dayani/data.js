@@ -11,13 +11,13 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Śāradā Devī"
+    "Sarasvatī"
   ],
   "searchAliases": [
     "Shakti",
     "Sakti",
-    "Sharada Devi",
-    "Sarada Devi"
+    "Sharada Vidyadani Dayani",
+    "Sharada Saraswati"
   ],
   "audioSources": [
     {

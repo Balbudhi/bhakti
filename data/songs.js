@@ -666,6 +666,28 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śakti"
   },
   {
+    "slug": "sharada-vidyadani-dayani",
+    "title": "Sharada Vidyadani Dayani",
+    "credit": "Bhimsen Joshi",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Sarasvatī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Sharada Vidyadani Dayani",
+      "Sharada Saraswati"
+    ],
+    "writer": "",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "subtitle": "Śakti"
+  },
+  {
     "slug": "jai-durge-durgati-pariharini",
     "title": "Jaya Durge Durgati Parihāriṇī",
     "credit": "Swami Brahmanand · Bhimsen Joshi",
@@ -687,28 +709,6 @@ window.BHAKTI_SONGS = [
       "Siva"
     ],
     "writer": "Swami Brahmanand",
-    "singer": "Bhimsen Joshi",
-    "composer": "",
-    "subtitle": "Śakti"
-  },
-  {
-    "slug": "sharada-vidyadani-dayani",
-    "title": "Sharada Vidyadani Dayani",
-    "credit": "Bhimsen Joshi",
-    "languageTags": [
-      "Braj"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Śāradā Devī"
-    ],
-    "searchAliases": [
-      "Shakti",
-      "Sakti",
-      "Sharada Devi",
-      "Sarada Devi"
-    ],
-    "writer": "",
     "singer": "Bhimsen Joshi",
     "composer": "",
     "subtitle": "Śakti"
@@ -1113,8 +1113,7 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Hanumān",
       "Rāma",
-      "Viṣṇu",
-      "Śāradā Devī"
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Hanuman",
@@ -1122,9 +1121,7 @@ window.BHAKTI_SONGS = [
       "Tulsidas",
       "Rama",
       "Vishnu",
-      "Visnu",
-      "Sharada Devi",
-      "Sarada Devi"
+      "Visnu"
     ],
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
@@ -1398,7 +1395,7 @@ window.BHAKTI_SONGS = [
       "Rāma",
       "Viṣṇu",
       "Śiva",
-      "Śāradā Devī"
+      "Sarasvatī"
     ],
     "searchAliases": [
       "Shakti",
@@ -1407,9 +1404,7 @@ window.BHAKTI_SONGS = [
       "Vishnu",
       "Visnu",
       "Shiva",
-      "Siva",
-      "Sharada Devi",
-      "Sarada Devi"
+      "Siva"
     ],
     "writer": "",
     "singer": "Hari Om Sharan",
@@ -3700,6 +3695,24 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "rehna-nahi-isa-desa",
+    "title": "Rehnā Nahī̃ Isa Desa",
+    "credit": "Kabīr · Shujaat Khan",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Kabir · Shujaat Khan",
+      "Kabir",
+      "Rehna Nahi Is Des",
+      "Rehna Nahi Is Des Mein"
+    ],
+    "writer": "Kabīr",
+    "singer": "Shujaat Khan",
+    "composer": ""
+  },
+  {
     "slug": "kaise-lagaun-tumse-main-preet",
     "title": "Kaise Lagāū̃ Tumse Maĩ Prīt",
     "credit": "Swami Srikantananda · Shurjo Bhattacharya",
@@ -3751,6 +3764,109 @@ window.BHAKTI_SONGS = [
     "singer": "Shurjo Bhattacharya",
     "composer": "Swami Srikantananda",
     "subtitle": "Śrī Śāradā Devī"
+  },
+  {
+    "slug": "kya-tan-majhata",
+    "title": "Kyā Tan Mā̃jhatā",
+    "credit": "Kabīr · Sounds of Isha",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Kya Tan Mãjhata",
+      "Kabir · Sounds of Isha",
+      "Kabir",
+      "Kya Tan Manjhta (Live)",
+      "Kya Tan Manjhta",
+      "Kya Tan Manjta"
+    ],
+    "writer": "Kabīr",
+    "singer": "Sounds of Isha",
+    "composer": ""
+  },
+  {
+    "slug": "sunta-hai",
+    "title": "Suntā Hai",
+    "credit": "Kabīr · Sounds of Isha",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Kabir · Sounds of Isha",
+      "Kabir",
+      "Sunta Hai - Kabir song | Sounds of Isha",
+      "Sunta Hai Guru Gyani"
+    ],
+    "writer": "Kabīr",
+    "singer": "Sounds of Isha",
+    "composer": ""
+  },
+  {
+    "slug": "nirguna-galiya",
+    "title": "Nirguṇa Galiyā̃",
+    "credit": "Kabīr · Sounds of Isha",
+    "languageTags": [
+      "raj",
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Kabir · Sounds of Isha",
+      "Kabir",
+      "Nirgun Galiyan"
+    ],
+    "writer": "Kabīr",
+    "singer": "Sounds of Isha",
+    "composer": ""
+  },
+  {
+    "slug": "rama-rasa",
+    "title": "Rāma Rasa",
+    "credit": "Kabīr · Sounds of Isha",
+    "languageTags": [
+      "raj",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Rama",
+      "Kabir · Sounds of Isha",
+      "Kabir",
+      "Ram Ras"
+    ],
+    "writer": "Kabīr",
+    "singer": "Sounds of Isha",
+    "composer": "",
+    "subtitle": "Rāma"
+  },
+  {
+    "slug": "mana-masta-hua",
+    "title": "Mana Masta Huā",
+    "credit": "Kabīr · Sounds of Isha",
+    "languageTags": [
+      "Hindi",
+      "bra"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Vishnu",
+      "Visnu",
+      "Kabir · Sounds of Isha",
+      "Kabir",
+      "Mann Mast Hua | Kabir | मन मस्त हुआ | Devotional Poem | Alaap - Songs from Sadhguru Darshan",
+      "Mann Mast Hua",
+      "Mann Mast Hua Phir Kya Bole"
+    ],
+    "writer": "Kabīr",
+    "singer": "Sounds of Isha",
+    "composer": "",
+    "subtitle": "Viṣṇu"
   },
   {
     "slug": "akashi-zep-ghe-re-pakhara",
@@ -3899,6 +4015,26 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "chitrakoot-ati-vichitra",
+    "title": "Chitrakoot Ati Vichitra",
+    "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
+    "languageTags": [
+      "Awadhi"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Rama",
+      "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
+      "Tulsidas"
+    ],
+    "writer": "Tulsīdās",
+    "singer": "Umakant Gundecha & Ramakant Gundecha",
+    "composer": "",
+    "subtitle": "Rāma"
+  },
+  {
     "slug": "jab-hi-raghupati-sang-siya-chali",
     "title": "Jab Hi Raghupati Sang Siya Chali",
     "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
@@ -3978,29 +4114,6 @@ window.BHAKTI_SONGS = [
       "Tulsidas",
       "Vishnu",
       "Visnu"
-    ],
-    "writer": "Tulsīdās",
-    "singer": "Umakant Gundecha & Ramakant Gundecha",
-    "composer": "",
-    "subtitle": "Rāma"
-  },
-  {
-    "slug": "chitrakoot-ati-vichitra",
-    "title": "Chitrakoot Ati Vichitra",
-    "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
-    "languageTags": [
-      "Awadhi"
-    ],
-    "subjectTags": [
-      "Rāma",
-      "Śāradā Devī"
-    ],
-    "searchAliases": [
-      "Rama",
-      "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
-      "Tulsidas",
-      "Sharada Devi",
-      "Sarada Devi"
     ],
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
