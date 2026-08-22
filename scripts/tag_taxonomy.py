@@ -28,7 +28,8 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
     # modern historical Śāradā Devī. Never infer the historical person from
     # that ambiguous surface form; retain her only as an explicit reviewed tag.
     "Sarasvatī": ("saraswati", "sarasvati"),
-    "Śrī Rāmakṛṣṇa": ("ramakrishna", "ramakrshna"),
+    # Historical people are editorial subjects, not automatic deity matches.
+    # Add them only through an explicit reviewed subject tag.
     # Bare `kali` is excluded because devotional corpora frequently mean the
     # Kali age rather than the goddess; require an unambiguous named form.
     "Śakti": ("durga", "mahakali", "vaishno", "jhandewali", "ambika", "bhavani"),
