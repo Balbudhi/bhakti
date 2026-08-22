@@ -19,7 +19,18 @@ SCRIPT_RANGES = (
     (0x0B00, 0x0B7F, "ORIYA"),
     (0x0B80, 0x0BFF, "TAMIL"),
     (0x0C80, 0x0CFF, "KANNADA"),
+    (0x0600, 0x06FF, "ARABIC"),
 )
+
+ARABIC_SKELETON = {
+    "ا": "", "آ": "", "أ": "", "إ": "", "ء": "", "ئ": "y", "ؤ": "w",
+    "ب": "b", "پ": "p", "ت": "t", "ٹ": "t", "ث": "s", "ج": "j", "چ": "c",
+    "ح": "h", "خ": "kh", "د": "d", "ڈ": "d", "ذ": "z", "ر": "r", "ڑ": "r",
+    "ز": "z", "ژ": "zh", "س": "s", "ش": "sh", "ص": "s", "ض": "z", "ط": "t",
+    "ظ": "z", "ع": "", "غ": "gh", "ف": "f", "ق": "q", "ک": "k", "گ": "g",
+    "ل": "l", "م": "m", "ن": "n", "ں": "n", "و": "w", "ہ": "h", "ھ": "h",
+    "ی": "y", "ے": "y", "ۃ": "t",
+}
 
 
 def lexical_tokens(value: str) -> list[str]:
@@ -34,14 +45,34 @@ def _normal(value: str) -> str:
 
 
 def _source_scheme(value: str) -> Any:
-    if sanscript is None:
-        return None
     for character in value:
         point = ord(character)
         for lower, upper, name in SCRIPT_RANGES:
             if lower <= point <= upper:
+                if name == "ARABIC":
+                    return "ARABIC"
+                if sanscript is None:
+                    return None
                 return getattr(sanscript, name)
     return None
+
+
+def _arabic_skeleton(value: str) -> str:
+    """Compare Urdu/Arabic and scholarly romanization by consonant skeleton.
+
+    Arabic-family orthography leaves many short vowels unwritten, so this is
+    intentionally used only to associate already-reviewed source tokens with
+    their public word-gloss indices; it never alters either display form.
+    """
+    result: list[str] = []
+    for character in unicodedata.normalize("NFKD", str(value)).casefold():
+        if unicodedata.combining(character):
+            continue
+        if character in ARABIC_SKELETON:
+            result.append(ARABIC_SKELETON[character])
+        elif character.isalpha() and character not in "aeiou":
+            result.append(character)
+    return "".join(result)
 
 
 def _edit_distance(left: str, right: str) -> int:
@@ -59,18 +90,22 @@ def _edit_distance(left: str, right: str) -> int:
 
 
 def _compound_alignment(source: str, source_tokens: list[str], words: list[dict[str, Any]]) -> list[tuple[int, int, int, int]]:
-    if sanscript is None:
-        raise RuntimeError(
-            "indic-transliteration is required when source-script and romanized whitespace differ"
-        )
     scheme = _source_scheme(source)
     if scheme is None:
-        raise RuntimeError("source-script mapping cannot identify the Indic script")
-    source_forms = [
-        _normal(sanscript.transliterate(token, scheme, sanscript.IAST))
-        for token in source_tokens
-    ]
-    roman_forms = [_normal(word.get("roman", "")) for word in words]
+        raise RuntimeError("source-script mapping cannot identify the source script")
+    if scheme == "ARABIC":
+        source_forms = [_arabic_skeleton(token) for token in source_tokens]
+        roman_forms = [_arabic_skeleton(word.get("roman", "")) for word in words]
+    else:
+        if sanscript is None:
+            raise RuntimeError(
+                "indic-transliteration is required when source-script and romanized whitespace differ"
+            )
+        source_forms = [
+            _normal(sanscript.transliterate(token, scheme, sanscript.IAST))
+            for token in source_tokens
+        ]
+        roman_forms = [_normal(word.get("roman", "")) for word in words]
     source_count, word_count = len(source_tokens), len(words)
 
     @lru_cache(maxsize=None)

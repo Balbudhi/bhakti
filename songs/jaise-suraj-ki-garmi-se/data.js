@@ -1978,7 +1978,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "patjhaṛ",
-        "gloss": "autumn; leaf-fall season",
+        "gloss": "autumn",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1535,6 +1535,27 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śiva"
   },
   {
+    "slug": "ma-karali-kali-ma",
+    "title": "Mā̃ Karālī Kālī Mā̃",
+    "credit": "J. Misra · Javed Ali",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Kālī"
+    ],
+    "searchAliases": [
+      "Kali",
+      "MAA KARALI KALI (Hindi Version) www.tricolourproductions.net",
+      "Maa Karali Kali",
+      "Maa Karali Kali Maa"
+    ],
+    "writer": "J. Misra",
+    "singer": "Javed Ali",
+    "composer": "",
+    "subtitle": "Kālī"
+  },
+  {
     "slug": "kya-tan-majhata",
     "title": "Kyā Tan Mā̃jhatā",
     "credit": "Kabīr",
@@ -1658,6 +1679,26 @@ window.BHAKTI_SONGS = [
     "subtitle": "Viṣṇu"
   },
   {
+    "slug": "prabhu-more-avagun-citta-na-dharo",
+    "title": "Prabhu Jī More Avaguṇa Cita Nā Dharo",
+    "credit": "Sūrdās · Kavita Krishnamurthy",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Prabhu Ji More Avaguna Cita Na Dharo",
+      "Surdas · Kavita Krishnamurthy",
+      "Surdas",
+      "PRABHU MORE AWGOON CHIT NA DHARO (Hindi Version)) www.tricolourproductions.net",
+      "Prabhu More Avgun Chit Na Dharo",
+      "Prabhu Ji Mere Avagun"
+    ],
+    "writer": "Sūrdās",
+    "singer": "Kavita Krishnamurthy",
+    "composer": ""
+  },
+  {
     "slug": "jai-ambe-gauri",
     "title": "Jai Ambe Gauri",
     "credit": "Balbir Nirdosh · Lata Mangeshkar · Surendra Kohli",
@@ -1746,6 +1787,32 @@ window.BHAKTI_SONGS = [
     "singer": "Maninder Ji",
     "composer": "",
     "subtitle": "Jai Mātā Dī"
+  },
+  {
+    "slug": "auga-na-jauga",
+    "title": "Āū̃gā Nā Jāū̃gā",
+    "credit": "Kabīr, Shakeel Badayuni & others · Maulvi Haider Hassan & Zameer Hassan Khan",
+    "languageTags": [
+      "Urdu",
+      "Punjabi",
+      "Persian",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Aũga Na Jaũga",
+      "Nirguna",
+      "Kabir, Shakeel Badayuni & others · Maulvi Haider Hassan & Zameer Hassan Khan",
+      "Kabir, Shakeel Badayuni & others",
+      "Aaoon Ga Na Jaoon Ga - Bhagat Kabir",
+      "Aaoon Ga Na Jaoon Ga"
+    ],
+    "writer": "Kabīr, Shakeel Badayuni & others",
+    "singer": "Maulvi Haider Hassan & Zameer Hassan Khan",
+    "composer": "",
+    "subtitle": "Nirguṇa"
   },
   {
     "slug": "mera-jeevan-tere",
@@ -4015,6 +4082,47 @@ window.BHAKTI_SONGS = [
     "singer": "Suresh Ji",
     "composer": "",
     "subtitle": "Jai Mātā Dī"
+  },
+  {
+    "slug": "man-re-tu-chal-apne-niketan-me",
+    "title": "Man Re Tū Cal Apne Niketan Meṁ",
+    "credit": "J. Misra · Suresh Wadkar",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Man Re Tu Cal Apne Niketan Mem",
+      "MAAN RE TU CHAL APNE NIKETAN MAI Hindi Version) www.tricolourproductions.net",
+      "Maan Re Tu Chal Apne Niketan Mai",
+      "Man Re Tu Chal Apne Niketan Mein"
+    ],
+    "writer": "J. Misra",
+    "singer": "Suresh Wadkar",
+    "composer": ""
+  },
+  {
+    "slug": "duhkh-me-sumiran-sab-kare",
+    "title": "Dukh Mẽ Sumiran Sab Kare",
+    "credit": "Kabīr, Nānak & others · Suresh Wadkar",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Dukh Me Sumiran Sab Kare",
+      "Nirguna",
+      "Kabir, Nanak & others · Suresh Wadkar",
+      "Kabir, Nanak & others",
+      "DUKH MAI SUMIRAN SAB KARE (Hindi Version) www.tricolourproductions.net",
+      "Dukh Mai Sumiran Sab Kare"
+    ],
+    "writer": "Kabīr, Nānak & others",
+    "singer": "Suresh Wadkar",
+    "composer": "",
+    "subtitle": "Nirguṇa"
   },
   {
     "slug": "sadguru-mujhko-alag-na-kariyo",

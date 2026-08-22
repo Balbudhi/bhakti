@@ -74,6 +74,52 @@
       "writer": "Kabīr",
       "subjectTags": ["Nirguṇa"],
       "searchAliases": ["Sunta Hai", "Sunta Hai Guru Gyani"]
+    },
+    "eWPMY16qoq0": {
+      "title": "Āū̃gā Nā Jāū̃gā",
+      "writer": "Kabīr, Shakeel Badayuni & others",
+      "singer": "Maulvi Haider Hassan & Zameer Hassan Khan",
+      "vocalist": "Saqib Hassan",
+      "ensemble": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
+      "keepOriginal": true,
+      "languages": ["Urdu", "Punjabi", "Persian", "Hindi"],
+      "subjectTags": ["Nirguṇa"],
+      "searchAliases": ["Aaoon Ga Na Jaoon Ga", "Aaoon Ga Na Jaoon Ga Bhagat Kabir"]
+    },
+    "8f7nBpu53hc": {
+      "title": "Duḥkh Mẽ Sumiran Sab Kare",
+      "writer": "Kabīr, Nānak & others",
+      "singer": "Suresh Wadkar",
+      "keepOriginal": true,
+      "languages": ["Hindi"],
+      "subjectTags": ["Nirguṇa"],
+      "searchAliases": ["Dukh Mai Sumiran Sab Kare", "Dukh Me Sumiran Sab Kare"]
+    },
+    "GcZoTU2T_R4": {
+      "title": "Prabhu More Avaguṇ Citta Nā Dharo",
+      "writer": "Sūrdās",
+      "singer": "Kavita Krishnamurthy",
+      "keepOriginal": true,
+      "languages": ["Hindi"],
+      "searchAliases": ["Prabhu More Avgun Chit Na Dharo", "Prabhu Ji Mere Avagun"]
+    },
+    "1BYEY-Br5Iw": {
+      "title": "Mā̃ Karālī Kālī Mā̃",
+      "displayTitle": "Mā̃ Karālī Kālī Mā̃",
+      "writer": "J. Misra",
+      "singer": "Javed Ali",
+      "keepOriginal": true,
+      "languages": ["Hindi"],
+      "subjectTags": ["Kālī"],
+      "searchAliases": ["Maa Karali Kali", "Maa Karali Kali Maa"]
+    },
+    "NAKQtw4z7uc": {
+      "title": "Man Re Tū Chal Apne Niketan Mẽ",
+      "writer": "J. Misra",
+      "singer": "Suresh Wadkar",
+      "keepOriginal": true,
+      "languages": ["Hindi"],
+      "searchAliases": ["Maan Re Tu Chal Apne Niketan Mai", "Man Re Tu Chal Apne Niketan Mein"]
     }
   }
 }
