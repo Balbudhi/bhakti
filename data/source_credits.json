@@ -77,7 +77,7 @@
     },
     "eWPMY16qoq0": {
       "title": "Āū̃gā Nā Jāū̃gā",
-      "writer": "Kabīr, Shakeel Badayuni & others",
+      "writer": "Kabīr and other poets",
       "singer": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
       "keepOriginal": true,
       "languages": ["Urdu", "Punjabi", "Persian", "Hindi"],
@@ -126,6 +126,13 @@
       "keepOriginal": true,
       "languages": ["Punjabi"],
       "searchAliases": ["Bentee Chaupai", "Chaupai Sahib", "Benti Chaupai Sahib"]
+    },
+    "c6J13QO-1fE": {
+      "title": "Sā̃sõ Kī Mālā Par Simarū̃ Nisdina Pī Kā Nāma",
+      "writer": "Tufail Hoshiarpuri",
+      "singer": "Nusrat Fateh Ali Khan",
+      "subjectTags": ["Kṛṣṇa"],
+      "searchAliases": ["Sanson Ki Mala", "Saanson Ki Mala Pe", "Sanson Ki Mala Pe Simrun Main"]
     }
   }
 }
