@@ -86,6 +86,13 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('song.singer || song.credit', script)
         self.assertIn('song.singer || song.credit ? `<span class="credit">', script)
 
+    def test_credit_roles_pluralize_for_named_collaborators(self) -> None:
+        script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
+        pipeline = (ROOT / "scripts" / "bhakti_pipeline.py").read_text(encoding="utf-8")
+        self.assertIn('(?:&|and)', script)
+        self.assertIn('`${role}s`', script)
+        self.assertIn('def display_roles(', pipeline)
+
     def test_every_text_layer_uses_the_same_interactive_word_mapping(self) -> None:
         script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
         self.assertIn('linkedWord("ws"', script)

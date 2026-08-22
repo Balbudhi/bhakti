@@ -491,9 +491,13 @@ function renderSongMeta() {
     if (!person) return;
     people.set(person, [...(people.get(person) || []), role]);
   });
+  const displayRoles = (person, roles) => {
+    const peopleCount = String(person).split(/\s+(?:&|and)\s+/i).filter(Boolean).length;
+    return roles.map(role => peopleCount > 1 ? `${role}s` : role).join(" · ");
+  };
   const credits = [...people].map(([person, roles]) => `
     <div class="song-credit-entry">
-      <dt>${escapeHtml(roles.join(" · "))}</dt>
+      <dt>${escapeHtml(displayRoles(person, roles))}</dt>
       <dd>${escapeHtml(person)}</dd>
     </div>`).join("");
   const tags = [
