@@ -10,15 +10,12 @@ window.SONG_META = {
     "Awadhi"
   ],
   "subjectTags": [
-    "Rāma",
-    "Śāradā Devī"
+    "Rāma"
   ],
   "searchAliases": [
     "Rama",
     "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
-    "Tulsidas",
-    "Sharada Devi",
-    "Sarada Devi"
+    "Tulsidas"
   ],
   "audioSources": [
     {

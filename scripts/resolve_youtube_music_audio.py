@@ -28,6 +28,8 @@ def arguments() -> argparse.Namespace:
 
 
 def _run_json(command: list[str]) -> dict[str, Any]:
+    if command and command[0] == "yt-dlp":
+        command = ["yt-dlp", "-4", *command[1:]]
     result = subprocess.run(command, check=True, capture_output=True, text=True)
     payload = json.loads(result.stdout)
     if not isinstance(payload, dict):

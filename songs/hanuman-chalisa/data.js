@@ -12,8 +12,7 @@ window.SONG_META = {
   "subjectTags": [
     "Hanumān",
     "Rāma",
-    "Viṣṇu",
-    "Śāradā Devī"
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Hanuman",
@@ -21,9 +20,7 @@ window.SONG_META = {
     "Tulsidas",
     "Rama",
     "Vishnu",
-    "Visnu",
-    "Sharada Devi",
-    "Sarada Devi"
+    "Visnu"
   ],
   "editionNote": {
     "title": "Text note",

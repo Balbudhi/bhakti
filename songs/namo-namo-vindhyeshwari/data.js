@@ -14,7 +14,7 @@ window.SONG_META = {
     "Rāma",
     "Viṣṇu",
     "Śiva",
-    "Śāradā Devī"
+    "Sarasvatī"
   ],
   "searchAliases": [
     "Shakti",
@@ -23,9 +23,7 @@ window.SONG_META = {
     "Vishnu",
     "Visnu",
     "Shiva",
-    "Siva",
-    "Sharada Devi",
-    "Sarada Devi"
+    "Siva"
   ],
   "audioSources": [
     {
