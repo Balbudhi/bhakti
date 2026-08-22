@@ -243,7 +243,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jai Bolo Mā̃ Kālī Kī Jai Bolo Kāl Karālī Kī",
-    "english": "{0,1:Proclaim victory }{2:to Mother }{3,4:Kali, }{5,6:proclaim victory }{7,8,9:to the formidable destroyer of Time!}",
+    "english": "{0,1:Proclaim victory }{2:to Mother }{3,4:Kali; }{5,6:proclaim victory }{7,8,9:to the fearsome Kāl Karālī!}",
     "words": [
       {
         "roman": "Jai",
@@ -289,13 +289,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kāl",
-        "gloss": "Time; Death",
+        "gloss": "time; death",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Karālī",
-        "gloss": "formidable; terrible one",
+        "gloss": "fearsome one; terrible (feminine)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -306,7 +306,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`Jai bolo ... kī` is a Hindi idiomatic imperative construction where `kī` agrees with feminine `jai`. `Kāl Karālī` is a composite epithet signifying the dread destroyer of Time/Death."
+    "grammarNote": "`Jai bolo ... kī` is a Hindi idiomatic imperative construction where `kī` agrees with feminine `jai`. `Kāl Karālī` is a fearsome epithet of Kali; it does not state that she destroys Time."
   },
   "verse-1-1": {
     "source": "चण्डनाशिनी तू ही प्रचण्डा तू ही दुर्गा तू चामुण्डा",
