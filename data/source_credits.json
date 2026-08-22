@@ -118,6 +118,14 @@
       "keepOriginal": true,
       "languages": ["Hindi"],
       "searchAliases": ["Maan Re Tu Chal Apne Niketan Mai", "Man Re Tu Chal Apne Niketan Mein"]
+    },
+    "T1Uw2FHZawA": {
+      "title": "Benti Chaupai",
+      "writer": "Guru Gobind Singh",
+      "singer": "Rajinder Singh",
+      "keepOriginal": true,
+      "languages": ["Punjabi"],
+      "searchAliases": ["Bentee Chaupai", "Chaupai Sahib", "Benti Chaupai Sahib"]
     }
   }
 }
