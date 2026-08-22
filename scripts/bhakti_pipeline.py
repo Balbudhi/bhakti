@@ -2389,7 +2389,7 @@ def page_html(meta: dict[str, Any]) -> str:
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
   <script src="data.js?v=contract-20260822-1"></script>
-  <script src="../../assets/song.js?v=contract-20260821-12"></script>
+  <script src="../../assets/song.js?v=contract-20260822-1"></script>
   <script src="../../assets/pwa.js?v=contract-20260821-8"></script>
 </body>
 </html>
