@@ -15,6 +15,7 @@ window.SONG_META = {
     "Viṣṇu",
     "Gaṇeśa",
     "Śakti",
+    "Kālī",
     "Vaiṣṇo Devī"
   ],
   "searchAliases": [

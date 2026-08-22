@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Jai Jagdishwari Mata Saraswati",
-  "subtitle": "Śakti",
+  "subtitle": "Sarasvatī",
   "credit": "Swami Brahmanand · Bhimsen Joshi",
   "pageCredit": "Bhimsen Joshi",
   "writer": "Swami Brahmanand",
@@ -10,7 +10,8 @@ window.SONG_META = {
     "Braj"
   ],
   "subjectTags": [
-    "Śakti"
+    "Śakti",
+    "Sarasvatī"
   ],
   "searchAliases": [
     "Shakti",

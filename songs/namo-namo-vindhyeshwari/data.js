@@ -11,6 +11,7 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
+    "Kālī",
     "Rāma",
     "Viṣṇu",
     "Śiva",

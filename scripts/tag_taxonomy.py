@@ -34,6 +34,7 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
     # Bare `kali` is excluded because devotional corpora frequently mean the
     # Kali age rather than the goddess; require an unambiguous named form.
     "Śakti": ("durga", "mahakali", "vaishno", "jhandewali", "ambika", "bhavani"),
+    "Kālī": ("mahakali", "bhadrakali", "kalika", "bhavatarini"),
     "Vaiṣṇo Devī": ("vaishno",),
 }
 
@@ -46,6 +47,15 @@ SARASVATI_SHARADA_MARKERS = {
     "vidya", "vidyadani", "vani", "veena", "vina", "brahma", "brahmani", "hansa",
 }
 
+# A bare `kālī` can be the Kali age, an adjective meaning black, or a verb in
+# several languages. These constructions name the goddess directly and are
+# safe to classify without relying on a loose keyword match.
+KALI_GODDESS_PATTERNS = (
+    r"\b(?:jai|jaya)(?:\s+(?:jai|jaya))?\s+(?:maa\s+|ma\s+)?kali\b",
+    r"\b(?:he|karali|kalatita)\s+kali\b",
+    r"\bkali\s+(?:mata|maa|asura)\b",
+)
+
 
 def normalized_tokens(value: str) -> set[str]:
     common = naming.unaccented(naming.common_romanization(value)).casefold()
@@ -54,9 +64,15 @@ def normalized_tokens(value: str) -> set[str]:
 
 def infer_named_subject_tags(lines: Iterable[dict[str, Any]]) -> list[str]:
     tokens: set[str] = set()
+    lyric_text: list[str] = []
     for line in lines:
-        tokens.update(normalized_tokens(str(line.get("roman") or "")))
+        roman = str(line.get("roman") or "")
+        tokens.update(normalized_tokens(roman))
+        lyric_text.append(naming.unaccented(naming.common_romanization(roman)).casefold())
     inferred = [tag for tag, aliases in TAG_ALIASES.items() if tokens.intersection(aliases)]
+
+    if any(re.search(pattern, text) for text in lyric_text for pattern in KALI_GODDESS_PATTERNS):
+        inferred.append("Kālī")
 
     # Śāradā is an ancient name of Sarasvatī as well as a modern historical
     # person's name.  Infer the goddess only when nearby theological markers
