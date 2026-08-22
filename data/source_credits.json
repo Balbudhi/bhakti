@@ -166,6 +166,64 @@
       "keepOriginal": true,
       "languages": ["Marathi"],
       "searchAliases": ["Anuraniya Thokada", "Anuraniya Thokda"]
+    },
+    "c7Q96_G5fak": {
+      "title": "Mere To Giridhar Gopāl",
+      "writer": "Mīrābāī",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Braj"],
+      "subjectTags": ["Kṛṣṇa"],
+      "searchAliases": ["Mere To Giridhar Gopal", "Mere Toh Giridhar Gopal"]
+    },
+    "jajpQsPWFPA": {
+      "title": "Mhare Ghar Āo Prītam Pyārā",
+      "writer": "Mīrābāī",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Braj", "Rajasthani"],
+      "subjectTags": ["Kṛṣṇa"],
+      "searchAliases": ["Mhare Ghar Aao Pritam Pyara", "Mhare Ghar Aao Pritam Pyaara"]
+    },
+    "XOXhGWwFBfg": {
+      "title": "Sundar Te Dhyān",
+      "writer": "Tukārām",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Marathi"],
+      "searchAliases": ["Sunder Te Dhyan", "Sundar Te Dhyan"]
+    },
+    "gAdefhsQ2-c": {
+      "title": "Khel Māṇḍiyelā",
+      "writer": "Tukārām",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Marathi"],
+      "searchAliases": ["Khel Mandiyela", "Khel Mandiyela Vithoba"]
+    },
+    "4eaYE0rKV70": {
+      "title": "Ānandāche Dohī",
+      "writer": "Tukārām",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Marathi"],
+      "searchAliases": ["Anandache Dohi", "Anandache Dohi Anand Tarang"]
+    },
+    "Kfebpyl-PZg": {
+      "title": "Vṛkṣavallī Āmhā",
+      "writer": "Tukārām",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Marathi"],
+      "searchAliases": ["Vrikshavalli Amha", "Vrukshavalli Amha Soyare Vanachare"]
+    },
+    "2Zc1StVcnQY": {
+      "title": "Bhēṭīlāgī Jīvā",
+      "writer": "Tukārām",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Marathi"],
+      "searchAliases": ["Bhetilagi Jiva", "Bhetilagi Jiva Lagalise Aas"]
     }
   }
 }

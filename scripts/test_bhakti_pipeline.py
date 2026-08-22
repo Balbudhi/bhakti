@@ -622,6 +622,51 @@ class PipelineTests(unittest.TestCase):
         }]
         self.assertEqual(pipeline.balanced_overlap(left, right), (1, 1, 1.0))
 
+    def test_long_coarse_sequence_routes_retained_only_occurrences(self) -> None:
+        def line(identifier: str, roman: str) -> dict:
+            return {"id": identifier, "source_text": roman, "roman": roman,
+                    "kind": "verse", "partial": "none"}
+
+        retained = [line("a", "first verse"), line("extra", "inserted refrain"), line("b", "last verse")]
+        segment_lines = [retained[0], retained[2]]
+        audited = {"packet": {
+            "verified_lines": retained,
+            "performance_order": [{"line_id": item["id"]} for item in retained],
+        }, "segment_audits": [{
+            "segment": {"index": 0, "core_start": 0.0, "core_end": 30.0,
+                        "clip_start": 0.0, "clip_end": 30.0},
+            "audit": {"packet": {
+                "lines": segment_lines,
+                "performance_order": [{"line_id": item["id"]} for item in segment_lines],
+            }},
+        }]}
+        occurrences = pipeline.display_occurrences(audited["packet"])
+        coarse = pipeline.long_coarse_sequence(audited, occurrences, 30.0)
+        self.assertEqual(len(coarse), 3)
+        self.assertEqual([entry["routing_only"] for entry in coarse], [False, True, False])
+        self.assertLess(coarse[0]["start"], coarse[1]["start"])
+        self.assertLess(coarse[1]["start"], coarse[2]["start"])
+
+    def test_long_coarse_alignment_tolerates_a_reviewed_nasal_variant(self) -> None:
+        occurrences = [{"roman": "Sāṅsoṅ kī mālā pe simrūṅ maiṅ pī kā nām"}]
+        rebuilt = [{"line": {"roman": "Sām̐sōṁ kī mālā pē simarūm̐ maim̐ pī kā nāma"}}]
+        self.assertEqual(pipeline.align_long_coarse_entries(occurrences, rebuilt), [(0, 0)])
+
+    def test_routing_only_long_timing_child_uses_its_full_parent_clip(self) -> None:
+        occurrences = [{"occurrence_id": f"occ-{index:03d}", "ref": str(index), "section": "verse"}
+                       for index in range(3)]
+        coarse = [
+            {"start": 10.0, "routing_only": False},
+            {"start": 20.0, "routing_only": True},
+            {"start": 30.0, "routing_only": False},
+        ]
+        parent = {"index": 4, "clip_start": 0.0, "clip_end": 100.0,
+                  "target_indices": [0, 1, 2]}
+        child = pipeline.build_long_timing_subchunks(parent, occurrences, coarse)[0]
+        self.assertTrue(child["routing_only"])
+        self.assertEqual(child["grid"], "long-segment-routing")
+        self.assertEqual((child["clip_start"], child["clip_end"]), (0.0, 100.0))
+
     def test_reconcile_segment_seams_removes_only_a_false_script_warning(self) -> None:
         def segment(index: int, source_text: str, roman: str) -> dict:
             line = {"id": f"line-{index}", "source_text": source_text, "roman": roman}
