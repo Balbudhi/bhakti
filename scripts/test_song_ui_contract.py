@@ -111,7 +111,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
         self.assertIn('audioIsPlaying()', client)
         self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
-        self.assertIn('bhakti-shell-v15', worker)
+        self.assertIn('bhakti-shell-v16', worker)
 
     def test_iast_uses_the_extended_garamond_face(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
