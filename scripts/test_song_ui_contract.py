@@ -92,6 +92,8 @@ class SongUiContractTests(unittest.TestCase):
         pipeline = (ROOT / "scripts" / "bhakti_pipeline.py").read_text(encoding="utf-8")
         self.assertIn('(?:&|and)', script)
         self.assertIn('`${role}s`', script)
+        self.assertIn('["vocalist", "Vocalist"]', script)
+        self.assertIn('["ensemble", "Recital"]', script)
         self.assertIn('def display_roles(', pipeline)
 
     def test_every_text_layer_uses_the_same_interactive_word_mapping(self) -> None:

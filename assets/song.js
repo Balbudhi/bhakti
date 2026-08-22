@@ -486,14 +486,14 @@ function renderSongMeta() {
 
   hero.querySelectorAll(".song-attrib, .song-credit").forEach(element => element.remove());
   const people = new Map();
-  [["writer", "Poet"], ["singer", "Singer"], ["composer", "Composer"]].forEach(([field, role]) => {
+  [["writer", "Poet"], ["singer", "Singer"], ["vocalist", "Vocalist"], ["composer", "Composer"], ["ensemble", "Recital"]].forEach(([field, role]) => {
     const person = String(meta[field] || "").trim();
     if (!person) return;
     people.set(person, [...(people.get(person) || []), role]);
   });
   const displayRoles = (person, roles) => {
     const peopleCount = String(person).split(/\s+(?:&|and)\s+/i).filter(Boolean).length;
-    return roles.map(role => peopleCount > 1 ? `${role}s` : role).join(" · ");
+    return roles.map(role => role === "Recital" || peopleCount === 1 ? role : `${role}s`).join(" · ");
   };
   const credits = [...people].map(([person, roles]) => `
     <div class="song-credit-entry">
