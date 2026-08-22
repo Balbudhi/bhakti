@@ -176,6 +176,8 @@
   const filters = document.getElementById("tagFilters");
   const search = document.getElementById("songSearch");
   const songs = window.BHAKTI_SONGS || [];
+  const aboutHeading = document.getElementById("aboutHeading");
+  if (aboutHeading) aboutHeading.textContent = `About these ${songs.length} songs`;
   if (!root || !filters || !search) return;
   const selectedLanguages = new Set();
   const selectedSubjects = new Set();
