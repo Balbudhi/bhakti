@@ -4122,5 +4122,17 @@ window.BHAKTI_SONGS = [
     "singer": "",
     "composer": "",
     "subtitle": "Śiva"
+  },
+  {
+    "slug": "hanuman-bhajan-hariharan",
+    "title": "Hanuman Bhajan",
+    "credit": "Hariharan",
+    "languageTags": ["Awadhi", "Hindi"],
+    "subjectTags": ["Hanumān", "Rāma", "Viṣṇu"],
+    "searchAliases": ["Hariharan Hanuman Bhajan"],
+    "writer": "",
+    "singer": "Hariharan",
+    "composer": "",
+    "subtitle": "Hanumān"
   }
 ];
