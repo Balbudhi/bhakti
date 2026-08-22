@@ -335,6 +335,27 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śakti"
   },
   {
+    "slug": "choti-choti-gaiya-chote-chote-gwal",
+    "title": "Chhoṭī Chhoṭī Gaiyā̃, Chhoṭe Chhoṭe Gwāl",
+    "credit": "Traditional · Asif Jeriya & Ami Joshi · Manoj-Vimal",
+    "languageTags": [
+      "Hindi",
+      "Braj"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Chhoti Chhoti Gaiyã, Chhote Chhote Gwal",
+      "Krshna",
+      "Krsna"
+    ],
+    "writer": "Traditional",
+    "singer": "Asif Jeriya & Ami Joshi",
+    "composer": "Manoj-Vimal",
+    "subtitle": "Kṛṣṇa"
+  },
+  {
     "slug": "darsan-dena-pran-piyare",
     "title": "Darśan Denā Prāṇ Piyāre",
     "credit": "Rasik Khushal · Bhimsen Joshi · Shrinivas Khale",
