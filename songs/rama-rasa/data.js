@@ -1,21 +1,21 @@
 window.SONG_META = {
   "title": "Rāma Rasa",
   "subtitle": "Rāma",
-  "credit": "Kabīr · Sounds of Isha",
-  "pageCredit": "Sounds of Isha",
+  "credit": "Kabīr",
+  "pageCredit": "",
   "writer": "Kabīr",
-  "singer": "Sounds of Isha",
+  "singer": "",
   "composer": "",
   "languages": [
     "raj",
     "Hindi"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Nirguṇa"
   ],
   "searchAliases": [
     "Rama",
-    "Kabir · Sounds of Isha",
     "Kabir",
     "Ram Ras"
   ],

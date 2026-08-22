@@ -1,18 +1,19 @@
 window.SONG_META = {
   "title": "Nirguṇa Galiyā̃",
   "subtitle": "",
-  "credit": "Kabīr · Sounds of Isha",
-  "pageCredit": "Sounds of Isha",
+  "credit": "Kabīr",
+  "pageCredit": "",
   "writer": "Kabīr",
-  "singer": "Sounds of Isha",
+  "singer": "",
   "composer": "",
   "languages": [
     "raj",
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Nirguṇa"
+  ],
   "searchAliases": [
-    "Kabir · Sounds of Isha",
     "Kabir",
     "Nirgun Galiyan"
   ],

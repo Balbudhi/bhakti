@@ -1,17 +1,18 @@
 window.SONG_META = {
   "title": "Suntā Hai",
   "subtitle": "",
-  "credit": "Kabīr · Sounds of Isha",
-  "pageCredit": "Sounds of Isha",
+  "credit": "Kabīr",
+  "pageCredit": "",
   "writer": "Kabīr",
-  "singer": "Sounds of Isha",
+  "singer": "",
   "composer": "",
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Nirguṇa"
+  ],
   "searchAliases": [
-    "Kabir · Sounds of Isha",
     "Kabir",
     "Sunta Hai - Kabir song | Sounds of Isha",
     "Sunta Hai Guru Gyani"

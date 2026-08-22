@@ -9,7 +9,9 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Nirguṇa"
+  ],
   "searchAliases": [
     "Patta Bola Vrksa Se",
     "Kabir · Shujaat Khan",

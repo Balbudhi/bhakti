@@ -1,22 +1,19 @@
 window.SONG_META = {
   "title": "Mana Masta Huā",
   "subtitle": "Viṣṇu",
-  "credit": "Kabīr · Sounds of Isha",
-  "pageCredit": "Sounds of Isha",
+  "credit": "Kabīr",
+  "pageCredit": "",
   "writer": "Kabīr",
-  "singer": "Sounds of Isha",
+  "singer": "",
   "composer": "",
   "languages": [
     "Hindi",
     "bra"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Nirguṇa"
   ],
   "searchAliases": [
-    "Vishnu",
-    "Visnu",
-    "Kabir · Sounds of Isha",
     "Kabir",
     "Mann Mast Hua | Kabir | मन मस्त हुआ | Devotional Poem | Alaap - Songs from Sadhguru Darshan",
     "Mann Mast Hua",
