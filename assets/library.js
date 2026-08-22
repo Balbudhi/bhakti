@@ -195,10 +195,9 @@
       return matchesLanguage && matchesSubject && matchesSearch(song, query);
     });
 
-    const nothingSelected = !selectedLanguages.size && !selectedSubjects.size;
     filters.innerHTML = `
-      <div class="tag-row">${button("All", "all", nothingSelected)}${subjects.map(tag => button(tag, "subject", selectedSubjects.has(tag))).join("")}</div>
-      <div class="tag-row">${languages.map(tag => button(tag, "language", selectedLanguages.has(tag))).join("")}</div>`;
+      <div class="tag-row">${button("All", "all-subjects", !selectedSubjects.size)}${subjects.map(tag => button(tag, "subject", selectedSubjects.has(tag))).join("")}</div>
+      <div class="tag-row">${button("All", "all-languages", !selectedLanguages.size)}${languages.map(tag => button(tag, "language", selectedLanguages.has(tag))).join("")}</div>`;
 
     root.innerHTML = visibleSongs.map(song => `
     <a class="song-card" href="songs/${song.slug}/" aria-label="Open ${song.title}">
@@ -217,9 +216,10 @@
     const button = event.target.closest(".tag-filter");
     if (!button) return;
     const { kind, tag } = button.dataset;
-    if (kind === "all") {
-      selectedLanguages.clear();
+    if (kind === "all-subjects") {
       selectedSubjects.clear();
+    } else if (kind === "all-languages") {
+      selectedLanguages.clear();
     } else {
       const selected = kind === "language" ? selectedLanguages : selectedSubjects;
       selected.has(tag) ? selected.delete(tag) : selected.add(tag);

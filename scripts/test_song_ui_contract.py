@@ -86,6 +86,8 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn('corrections are welcome', page.casefold())
         self.assertIn('song.singer || song.credit', script)
         self.assertIn('song.singer || song.credit ? `<span class="credit">', script)
+        self.assertIn('"all-subjects"', script)
+        self.assertIn('"all-languages"', script)
 
     def test_credit_roles_pluralize_for_named_collaborators(self) -> None:
         script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
