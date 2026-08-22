@@ -322,7 +322,7 @@ main {
 /* Living-room displays sit farther away than a laptop. Use the available
    canvas there, with larger readable metadata and controls rather than
    centering the same narrow desktop column in a much wider screen. */
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
   main {
     width: min(calc(100% - clamp(96px, 8vw, 180px)), 1680px);
     padding: clamp(84px, 7vw, 144px) 0;
