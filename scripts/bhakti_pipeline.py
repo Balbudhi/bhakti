@@ -2304,8 +2304,11 @@ def page_html(meta: dict[str, Any]) -> str:
         person = str(meta.get(field) or "").strip()
         if person:
             people.setdefault(person, []).append(label)
+    def display_roles(person: str, roles: list[str]) -> str:
+        person_count = len([part for part in re.split(r"\s+(?:&|and)\s+", person, flags=re.I) if part])
+        return " · ".join(f"{role}s" if person_count > 1 else role for role in roles)
     credits = "".join(
-        f'<div class="song-credit-entry"><dt>{escape(" · ".join(roles))}</dt><dd>{escape(person)}</dd></div>'
+        f'<div class="song-credit-entry"><dt>{escape(display_roles(person, roles))}</dt><dd>{escape(person)}</dd></div>'
         for person, roles in people.items()
     )
     tags = "".join(
@@ -2359,7 +2362,7 @@ def page_html(meta: dict[str, Any]) -> str:
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
   <script src="data.js?v=contract-20260821-9"></script>
-  <script src="../../assets/song.js?v=contract-20260821-11"></script>
+  <script src="../../assets/song.js?v=contract-20260821-12"></script>
   <script src="../../assets/pwa.js?v=contract-20260821-8"></script>
 </body>
 </html>
