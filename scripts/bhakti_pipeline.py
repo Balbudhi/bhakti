@@ -193,8 +193,9 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
         composer = (override.get("composer") or fields.get("music director") or fields.get("composer")
                     or fields.get("composed") or fields.get("music") or "")
         jobs.append({"slug": naming.slugify(title), "source": metadata.get("webpage_url") or source_value,
-                     "title": title, "subtitle": fields.get("album", ""),
-                     "writer": writer, "singer": singer, "composer": composer,
+                     "title": title, "displayTitle": str(override.get("displayTitle") or ""), "subtitle": fields.get("album", ""),
+                     "writer": writer, "singer": singer, "vocalist": str(override.get("vocalist") or ""),
+                     "ensemble": str(override.get("ensemble") or ""), "composer": composer,
                      "languages": list(override.get("languages") or []),
                      "subjectTags": list(override.get("subjectTags") or []),
                      "searchAliases": [raw_title, *(override.get("searchAliases") or [])], "_source_metadata": metadata,
@@ -1981,9 +1982,13 @@ LOCKED HUMAN TRANSLATION (or none):
                                    timeout=options.timeout, response_schema=translation_review_schema(),
                                    schema_name="bhakti_translation_review", reasoning_effort="high",
                                    max_completion_tokens=32768)
-            observed = [row.get("id") for row in response["packet"].get("reviews", [])]
-            if observed != target_ids:
+            reviews = response["packet"].get("reviews", [])
+            observed = [row.get("id") for row in reviews]
+            if len(observed) != len(target_ids) or set(observed) != set(target_ids):
                 raise RuntimeError(f"translation review batch {label} returned IDs out of order or incomplete")
+            if observed != target_ids:
+                by_id = {row["id"]: row for row in reviews}
+                response["packet"]["reviews"] = [by_id[item_id] for item_id in target_ids]
             return response
 
         if len(batch) > 10:
@@ -2319,13 +2324,16 @@ def page_html(meta: dict[str, Any]) -> str:
     escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                            .replace('"', "&quot;").replace("'", "&#39;"))
     people: dict[str, list[str]] = {}
-    for field, label in (("writer", "Poet"), ("singer", "Singer"), ("composer", "Composer")):
+    for field, label in (("writer", "Poet"), ("singer", "Singer"), ("vocalist", "Vocalist"),
+                         ("composer", "Composer"), ("ensemble", "Recital")):
         person = str(meta.get(field) or "").strip()
         if person:
             people.setdefault(person, []).append(label)
     def display_roles(person: str, roles: list[str]) -> str:
         person_count = len([part for part in re.split(r"\s+(?:&|and)\s+", person, flags=re.I) if part])
-        return " · ".join(f"{role}s" if person_count > 1 else role for role in roles)
+        return " · ".join(
+            role if role == "Recital" or person_count == 1 else f"{role}s" for role in roles
+        )
     credits = "".join(
         f'<div class="song-credit-entry"><dt>{escape(display_roles(person, roles))}</dt><dd>{escape(person)}</dd></div>'
         for person, roles in people.items()
@@ -2380,7 +2388,7 @@ def page_html(meta: dict[str, Any]) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260821-9"></script>
+  <script src="data.js?v=contract-20260822-1"></script>
   <script src="../../assets/song.js?v=contract-20260821-12"></script>
   <script src="../../assets/pwa.js?v=contract-20260821-8"></script>
 </body>
@@ -2482,7 +2490,9 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     # supply researched roles; otherwise the compact credit line is absent.
     writer = naming.canonical_person(job.get("writer", ""))
     singer = naming.canonical_person(job.get("singer") or source.get("artist") or "")
+    vocalist = naming.canonical_person(job.get("vocalist", ""))
     composer = naming.canonical_person(job.get("composer") or source.get("composer") or "")
+    ensemble = str(job.get("ensemble") or "").strip()
     distinct_people = list(dict.fromkeys(person for person in (writer, singer, composer) if person))
     credit = str(job.get("credit", "")).strip() or " · ".join(distinct_people)
     page_credit = str(job.get("pageCredit", "")).strip() or singer or credit
@@ -2490,15 +2500,15 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     subtitle = str(job.get("subtitle", "")).strip() or (subjects[0] if subjects else "")
     aliases = naming.search_aliases(
         [job["slug"].replace("-", " "), title, subtitle, credit, page_credit,
-         writer, singer, composer, *subjects, *(job.get("languages") or meta_from_model.get("languages", []))],
-        [*naming.person_search_aliases((job.get("writer"), job.get("singer"), job.get("composer"), writer, singer, composer)),
+         writer, singer, vocalist, composer, ensemble, *subjects, *(job.get("languages") or meta_from_model.get("languages", []))],
+        [*naming.person_search_aliases((job.get("writer"), job.get("singer"), job.get("vocalist"), job.get("composer"), writer, singer, vocalist, composer)),
          *(job.get("searchAliases") or [])],
     )
     languages = list(dict.fromkeys(normalized_language(str(language))
                                    for language in (job.get("languages") or meta_from_model.get("languages", []))
                                    if str(language).strip()))
     meta = {"title": title, "subtitle": subtitle, "credit": credit, "pageCredit": page_credit,
-            "writer": writer, "singer": singer, "composer": composer,
+            "writer": writer, "singer": singer, "vocalist": vocalist, "composer": composer, "ensemble": ensemble,
             "languages": languages,
             "subjectTags": subjects, "searchAliases": aliases,
             "audioSources": published_audio_sources(song_dir),

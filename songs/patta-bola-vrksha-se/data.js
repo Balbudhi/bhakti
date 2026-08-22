@@ -176,7 +176,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aba ke patajhaṛa nā mile",
-    "english": "{0,1:in this}{2: leaf-fall}{3,4: we will not meet,}",
+    "english": "{0,1:in this}{2: autumn}{3,4: we will not meet,}",
     "words": [
       {
         "roman": "Aba",
@@ -192,7 +192,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "patajhaṛa",
-        "gloss": "leaf-fall / autumn",
+        "gloss": "autumn",
         "concept_key": "",
         "preserve_in_english": false
       },
