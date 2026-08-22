@@ -129,10 +129,43 @@
     },
     "c6J13QO-1fE": {
       "title": "Sā̃sõ Kī Mālā Par Simarū̃ Nisdina Pī Kā Nāma",
-      "writer": "Tufail Hoshiarpuri",
       "singer": "Nusrat Fateh Ali Khan",
       "subjectTags": ["Kṛṣṇa"],
       "searchAliases": ["Sanson Ki Mala", "Saanson Ki Mala Pe", "Sanson Ki Mala Pe Simrun Main"]
+    },
+    "XJ4Ka9E_T7Q": {
+      "title": "Baso Mere Nainan Mẽ Nandalāl",
+      "writer": "Mīrābāī",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Braj"],
+      "subjectTags": ["Kṛṣṇa"],
+      "searchAliases": ["Baso Mere Nainan Mein Nandlal", "Baso Mere Nainan Mein"]
+    },
+    "_52RcW639Kc": {
+      "title": "Chākar Rākho Jī",
+      "writer": "Mīrābāī",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Braj", "Rajasthani"],
+      "subjectTags": ["Kṛṣṇa"],
+      "searchAliases": ["Chaakar Rakho Ji", "Shyam Mane Chakar Rakho Ji"]
+    },
+    "mhK03kecgr0": {
+      "title": "Prabhu Jī Tuma Candana Hama Pānī",
+      "writer": "Ravidās",
+      "singer": "Anuradha Paudwal",
+      "keepOriginal": true,
+      "languages": ["Braj"],
+      "searchAliases": ["Prabhuji Tum Chandan Hum Pani", "Prabhu Ji Tum Chandan Hum Pani"]
+    },
+    "yVsBKpIuMEM": {
+      "title": "Aṇuraṇiyā Thokadā",
+      "writer": "Tukārām",
+      "singer": "Bhimsen Joshi",
+      "keepOriginal": true,
+      "languages": ["Marathi"],
+      "searchAliases": ["Anuraniya Thokada", "Anuraniya Thokda"]
     }
   }
 }

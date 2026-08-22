@@ -44,7 +44,8 @@ window.SONG_META = {
     {
       "sequenceIndex": 11,
       "title": "Āū̃gā Nā Jāū̃gā",
-      "note": "Attributed to Kabīr in this performance; an independent textual source is still under review."
+      "poet": "Kabīr",
+      "note": "Core refrain attested in Śyām Sundar Dās's Kabīr Granthāvalī, pada 331."
     },
     {
       "sequenceIndex": 12,
@@ -53,8 +54,14 @@ window.SONG_META = {
     },
     {
       "sequenceIndex": 16,
-      "title": "Kabīr sequence",
-      "note": "Attributed to Kabīr in this performance; individual textual witnesses are still under review."
+      "title": "Kabīr traditional song text",
+      "poet": "Kabīr",
+      "note": "Documented in a 1924 printed Kabīr-song sequence; oral variants are present."
+    },
+    {
+      "sequenceIndex": 27,
+      "title": "Hum Jo Marenge",
+      "note": "Author not established from a published textual source."
     },
     {
       "sequenceIndex": 28,
