@@ -1004,24 +1004,122 @@ def long_coarse_sequence(
                  for index, line in enumerate(current)]
         overlap = balanced_overlap([line for line, _, _ in merged], current)[1] if merged else 0
         merged.extend(timed[overlap:])
-    compressed: list[tuple[float, int]] = []
+    compressed: list[tuple[dict[str, Any], float, int]] = []
     previous_signature = None
     for line, point, segment_index in merged:
         signature = lyric_signature(line)
         if signature == previous_signature:
             continue
-        compressed.append((point, segment_index))
+        compressed.append((line, point, segment_index))
         previous_signature = signature
-    if len(compressed) != len(occurrences):
-        raise RuntimeError(f"long-audio coarse hints differ from display occurrences ({len(compressed)} vs {len(occurrences)})")
     starts: list[float] = []
-    for point, _ in compressed:
+    for _line, point, _segment_index in compressed:
         starts.append(round(min(duration, max(point, starts[-1] + 0.1 if starts else 0.0)), 3))
-    return [{"occurrence_id": occurrence["occurrence_id"], "ref": occurrence["ref"],
-             "section": occurrence["section"], "repeats": occurrence["repeats"], "start": starts[index],
-             "end": starts[index + 1] if index + 1 < len(starts) else duration,
-             "segment_index": compressed[index][1]}
-            for index, occurrence in enumerate(occurrences)]
+    rebuilt = [{"line": line, "start": starts[index], "segment_index": segment_index}
+               for index, (line, _point, segment_index) in enumerate(compressed)]
+    pairs = align_long_coarse_entries(occurrences, rebuilt)
+    matched_actual = {actual_index for actual_index, _coarse_index in pairs}
+    matched_coarse = {coarse_index for _actual_index, coarse_index in pairs}
+    if len(matched_coarse) != len(rebuilt):
+        raise RuntimeError(
+            "long-audio coarse reconciliation leaves "
+            f"{len(rebuilt) - len(matched_coarse)} rebuilt occurrences unmatched"
+        )
+
+    coarse_by_actual = {actual_index: coarse_index for actual_index, coarse_index in pairs}
+    result: list[dict[str, Any]] = []
+    for index, occurrence in enumerate(occurrences):
+        coarse_index = coarse_by_actual.get(index)
+        routing_only = coarse_index is None
+        if routing_only:
+            preceding = next((left for left in range(index - 1, -1, -1)
+                              if left in coarse_by_actual), None)
+            following = next((right for right in range(index + 1, len(occurrences))
+                              if right in coarse_by_actual), None)
+            if preceding is None or following is None:
+                raise RuntimeError("long-audio coarse reconciliation cannot bracket an unmatched occurrence")
+            left = rebuilt[coarse_by_actual[preceding]]
+            right = rebuilt[coarse_by_actual[following]]
+            if right["start"] <= left["start"]:
+                raise RuntimeError("long-audio coarse reconciliation has non-increasing matched anchors")
+            position = (index - preceding) / (following - preceding)
+            start = round(float(left["start"]) + (float(right["start"]) - float(left["start"])) * position, 3)
+            # The following segment owns a cross-segment gap and its clip
+            # includes the intentional overlap; otherwise retain the known
+            # parent segment.  This hint is routing-only, never timing proof.
+            segment_index = (right if left["segment_index"] != right["segment_index"] else left)["segment_index"]
+        else:
+            entry = rebuilt[coarse_index]
+            start = float(entry["start"])
+            segment_index = entry["segment_index"]
+        result.append({"occurrence_id": occurrence["occurrence_id"], "ref": occurrence["ref"],
+                       "section": occurrence["section"], "repeats": occurrence["repeats"],
+                       "start": start, "segment_index": segment_index,
+                       "routing_only": routing_only})
+    for index, entry in enumerate(result):
+        entry["end"] = result[index + 1]["start"] if index + 1 < len(result) else duration
+    return result
+
+
+def coarse_match_similarity(actual: dict[str, Any], rebuilt: dict[str, Any]) -> float | None:
+    """Return a conservative, script-independent coarse-routing match score."""
+    left = lyric_signature(actual)
+    right = lyric_signature(rebuilt.get("line", rebuilt))
+    if not left or not right:
+        return None
+    if left == right:
+        return 1.0
+    if min(len(left), len(right)) < 12:
+        return None
+    score = difflib.SequenceMatcher(None, left, right, autojunk=False).ratio()
+    return score if score >= 0.82 else None
+
+
+def align_long_coarse_entries(
+    occurrences: list[dict[str, Any]], rebuilt: list[dict[str, Any]]
+) -> list[tuple[int, int]]:
+    """Align rebuilt coarse cues to a retained reviewed display order.
+
+    This is intentionally a routing alignment, not a timing alignment.  It
+    matches all rebuilt cues in order and leaves only retained-only display
+    occurrences for bracketed interpolation.  Exact romanized signatures are
+    preferred; conservative fuzzy matches tolerate audited vowel/nasal
+    transliteration differences at script-switch seams.
+    """
+    count_actual, count_rebuilt = len(occurrences), len(rebuilt)
+    # Values rank match count first, then lexical similarity, then fewer gaps.
+    table = [[(0, 0, 0) for _ in range(count_rebuilt + 1)] for _ in range(count_actual + 1)]
+    for actual_index in range(count_actual - 1, -1, -1):
+        for rebuilt_index in range(count_rebuilt - 1, -1, -1):
+            skip_actual = table[actual_index + 1][rebuilt_index]
+            skip_actual = (skip_actual[0], skip_actual[1], skip_actual[2] - 1)
+            skip_rebuilt = table[actual_index][rebuilt_index + 1]
+            skip_rebuilt = (skip_rebuilt[0], skip_rebuilt[1], skip_rebuilt[2] - 1)
+            best = max(skip_actual, skip_rebuilt)
+            similarity = coarse_match_similarity(occurrences[actual_index], rebuilt[rebuilt_index])
+            if similarity is not None:
+                following = table[actual_index + 1][rebuilt_index + 1]
+                matched = (following[0] + 1, following[1] + round(similarity * 1_000_000), following[2])
+                best = max(best, matched)
+            table[actual_index][rebuilt_index] = best
+
+    pairs: list[tuple[int, int]] = []
+    actual_index = rebuilt_index = 0
+    while actual_index < count_actual and rebuilt_index < count_rebuilt:
+        similarity = coarse_match_similarity(occurrences[actual_index], rebuilt[rebuilt_index])
+        if similarity is not None:
+            following = table[actual_index + 1][rebuilt_index + 1]
+            matched = (following[0] + 1, following[1] + round(similarity * 1_000_000), following[2])
+            if matched == table[actual_index][rebuilt_index]:
+                pairs.append((actual_index, rebuilt_index))
+                actual_index += 1
+                rebuilt_index += 1
+                continue
+        if table[actual_index + 1][rebuilt_index] >= table[actual_index][rebuilt_index + 1]:
+            actual_index += 1
+        else:
+            rebuilt_index += 1
+    return pairs
 
 
 def timing_sequence_from_response(
@@ -1263,6 +1361,43 @@ def build_long_timing_chunks(
     return chunks
 
 
+def build_long_timing_subchunks(
+    parent: dict[str, Any], occurrences: list[dict[str, Any]], coarse_sequence: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Split a parent segment while keeping interpolated hints broad.
+
+    A routing-only hint exists solely to place an occurrence in a bounded
+    audio region.  It may never constrain a measured onset to its interpolated
+    second, so any child containing one receives the full parent clip.
+    """
+    children = []
+    indices = parent["target_indices"]
+    for child_index, offset in enumerate(range(0, len(indices), 10)):
+        child_indices = indices[offset:offset + 10]
+        first, last = child_indices[0], child_indices[-1]
+        first_coarse = float(coarse_sequence[first]["start"])
+        last_coarse = float(coarse_sequence[last]["start"])
+        routing_only = any(bool(coarse_sequence[index].get("routing_only")) for index in child_indices)
+        children.append({
+            "index": int(parent["index"]) * 100 + child_index,
+            "parent_segment_index": int(parent["index"]),
+            "grid": "long-segment-routing" if routing_only else "long-segment-window",
+            "core_start": first_coarse,
+            "core_end": last_coarse,
+            "clip_start": float(parent["clip_start"]) if routing_only else max(float(parent["clip_start"]), first_coarse - 20.0),
+            "clip_end": float(parent["clip_end"]) if routing_only else min(float(parent["clip_end"]), last_coarse + 20.0),
+            "routing_only": routing_only,
+            "target_indices": child_indices,
+            "target_occurrences": [
+                {**occurrences[index], "coarse_source_start": coarse_sequence[index]["start"]}
+                for index in child_indices
+            ],
+            "preceding_context": occurrences[first - 1] if first else None,
+            "following_context": occurrences[last + 1] if last + 1 < len(occurrences) else None,
+        })
+    return children
+
+
 def align_long_segments(
     song_dir: Path, audio: Path, audited: dict[str, Any], occurrences: list[dict[str, Any]],
     coarse_sequence: list[dict[str, Any]], duration: float, options: argparse.Namespace,
@@ -1277,32 +1412,6 @@ def align_long_segments(
     chunks = build_long_timing_chunks(audited, occurrences, coarse_sequence, duration)
     cache_dir = song_dir / ".transcription" / "pipeline" / "long-timing-segments"
     cache_dir.mkdir(parents=True, exist_ok=True)
-
-    def subchunks(parent: dict[str, Any]) -> list[dict[str, Any]]:
-        children = []
-        indices = parent["target_indices"]
-        for child_index, offset in enumerate(range(0, len(indices), 10)):
-            child_indices = indices[offset:offset + 10]
-            first, last = child_indices[0], child_indices[-1]
-            first_coarse = float(coarse_sequence[first]["start"])
-            last_coarse = float(coarse_sequence[last]["start"])
-            children.append({
-                "index": int(parent["index"]) * 100 + child_index,
-                "parent_segment_index": int(parent["index"]),
-                "grid": "long-segment-window",
-                "core_start": first_coarse,
-                "core_end": last_coarse,
-                "clip_start": max(float(parent["clip_start"]), first_coarse - 20.0),
-                "clip_end": min(float(parent["clip_end"]), last_coarse + 20.0),
-                "target_indices": child_indices,
-                "target_occurrences": [
-                    {**occurrences[index], "coarse_source_start": coarse_sequence[index]["start"]}
-                    for index in child_indices
-                ],
-                "preceding_context": occurrences[first - 1] if first else None,
-                "following_context": occurrences[last + 1] if last + 1 < len(occurrences) else None,
-            })
-        return children
 
     with tempfile.TemporaryDirectory(prefix="bhakti-long-timing-") as temporary:
         destination = Path(temporary)
@@ -1324,14 +1433,17 @@ def align_long_segments(
                 # costly re-timing cascade across the whole long recording.
                 retained_reports.append(parent_report)
                 continue
-            for child_index, child in enumerate(subchunks(chunk)):
+            for child_index, child in enumerate(build_long_timing_subchunks(chunk, occurrences, coarse_sequence)):
                 work.append((child, cache_dir / f"segment-{chunk['index']:03d}-window-{child_index:02d}.json"))
 
         def align_window(item: tuple[dict[str, Any], Path]) -> dict[str, Any]:
             child, path = item
+            coarse_guard = (float(child["clip_end"]) - float(child["clip_start"])
+                            if child.get("routing_only")
+                            else max(30.0, float(child["clip_end"]) - float(child["clip_start"])))
             return refine_timing_chunk(
                 audio, occurrences, child, options, destination, path,
-                max_coarse_delta=max(30.0, child["clip_end"] - child["clip_start"]),
+                max_coarse_delta=coarse_guard,
                 reasoning_effort="high", max_completion_tokens=32768,
             )
 

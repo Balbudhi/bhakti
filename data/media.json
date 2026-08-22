@@ -93,6 +93,18 @@
         "sha256": "fb83f0dc44e733634944d41fbd9ba534333a4c09b6b246ab94a426a95c4f7ee0"
       }
     ],
+    "anandache-dohi": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anandache-dohi.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "db5b01c6610097b04eb9e5d1d4bf04d8068a4ab57ff759d72bb78869c161af57"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anandache-dohi.m4a",
+        "type": "audio/mp4",
+        "sha256": "06f55d8a74fdaa81ebac2c257d3e02ddcdc9d35193fda6127900182eeb0e412b"
+      }
+    ],
     "anuraniya-thokada": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anuraniya-thokada.webm",
@@ -232,6 +244,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhanga-kudia-mu-sajai-rakhichi.m4a",
         "type": "audio/mp4",
         "sha256": "b168b3564a4c38eaf2944b2fc2555b81bad9277be5b40faca3c615da54fd582e"
+      }
+    ],
+    "bhetilagi-jiva": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhetilagi-jiva.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "fbfb5626fe8a0d3997119e1fc60f9bb025c008894e09479b4295e997684f8f28"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhetilagi-jiva.m4a",
+        "type": "audio/mp4",
+        "sha256": "6e7101602292c90dd0c65a5f5e8e4712a81e573248180bb21546534185099971"
       }
     ],
     "bhiksha-de-de-maai": [
@@ -1007,6 +1031,18 @@
         "sha256": "0c3e368a4f9c3c91f1f8e011ac63ab023f5395dbf4ccfa0ee6637c332222ae7a"
       }
     ],
+    "khel-mandiyela": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/khel-mandiyela.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "10d16ea74cbe88d20cbdf625813ac1a153cb085c4e17d5b00f2aeb967cea2f32"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/khel-mandiyela.m4a",
+        "type": "audio/mp4",
+        "sha256": "96db0db7fc51f22fe644a811f01689d93af290373eaf2eacb4bc72771936e941"
+      }
+    ],
     "kie-se-aamaku-paliba-kuha": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kie-se-aamaku-paliba-kuha.webm",
@@ -1333,6 +1369,18 @@
         "sha256": "eae57f00bc5c855da117559804e3b23f200017ff85c56656c801e59c6887f3f5"
       }
     ],
+    "mere-to-giridhar-gopal": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-to-giridhar-gopal.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "cd9ed6a3ed67282b7a81a00298460af2ef00ae5335fa8e4f819e79f1c830cd1d"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-to-giridhar-gopal.m4a",
+        "type": "audio/mp4",
+        "sha256": "871f4e826afe7bb6ed7a7bf433684ad743f80da6dc1255754ef0aefe8e51f204"
+      }
+    ],
     "meri-ek-antar-abhilash": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-ek-antar-abhilash.m4a",
@@ -1357,6 +1405,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mero-abgun-bisra-karo.m4a",
         "type": "audio/mp4",
         "sha256": "4c3d66ea5e4fce55d66c3f1dae33a161286420ffc5c36ec973c88510a6ff6863"
+      }
+    ],
+    "mhare-ghar-ao-pritam-pyara": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhare-ghar-ao-pritam-pyara.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "6577a679a6477b671e273f27ba6898854dddffaa1089f8cb2072586e9ac08588"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhare-ghar-ao-pritam-pyara.m4a",
+        "type": "audio/mp4",
+        "sha256": "fb9f7689557c74719e177a42f9ffa33335243b2b6b1985bcbd19e90c37ac0639"
       }
     ],
     "mohodadhi-kule": [
@@ -1933,6 +1993,18 @@
         "sha256": "df3e56f0d4fbaef556f7ba8dcf6404dc2381a9a0aa2a2aa258f5b4ac54a67312"
       }
     ],
+    "sundar-te-dhyan": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sundar-te-dhyan.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "0d44d3b00d7b1bbdaf6f0f8463e8c1ba0ff3e77696ce531551fdecb10a0a02f9"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sundar-te-dhyan.m4a",
+        "type": "audio/mp4",
+        "sha256": "9a89a3af38b3b1aaf6ca50483e9c8c8456ba521e7ad535ceb10db29a1eab5aff"
+      }
+    ],
     "sunta-hai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sunta-hai.webm",
@@ -2045,6 +2117,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vighnaharan-gajvadan.m4a",
         "type": "audio/mp4",
         "sha256": "1b77f86f13d4c5f07872c1c8ca5b7d25e838905c6a6db6a74efa0682acc0f9e7"
+      }
+    ],
+    "vrkshavalli-amha": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vrkshavalli-amha.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "09adec4641907532b8cf3fde9b30c6806b02139cedf1aed0469886383da4af8a"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vrkshavalli-amha.m4a",
+        "type": "audio/mp4",
+        "sha256": "3638033826394ef686b23e695617ff377c61927b7af1e49613887a88f144d139"
       }
     ],
     "vyartha-gavaya-is": [

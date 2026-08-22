@@ -67,6 +67,97 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śirḍī Sāī"
   },
   {
+    "slug": "bhetilagi-jiva",
+    "title": "Bhēṭīlāgī Jīvā",
+    "credit": "Tukārām · Anuradha Paudwal",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Bhētilagi Jiva",
+      "Tukaram · Anuradha Paudwal",
+      "Tukaram",
+      "Bhaitilagi Jeewa",
+      "Bhetilagi Jiva Lagalise Aas"
+    ],
+    "writer": "Tukārām",
+    "singer": "Anuradha Paudwal",
+    "composer": ""
+  },
+  {
+    "slug": "khel-mandiyela",
+    "title": "Khel Māṇḍiyelā",
+    "credit": "Tukārām · Anuradha Paudwal",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Tukaram · Anuradha Paudwal",
+      "Tukaram",
+      "Khel Mandiyela Vithoba"
+    ],
+    "writer": "Tukārām",
+    "singer": "Anuradha Paudwal",
+    "composer": ""
+  },
+  {
+    "slug": "sundar-te-dhyan",
+    "title": "Sundar Te Dhyān",
+    "credit": "Tukārām · Anuradha Paudwal",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Tukaram · Anuradha Paudwal",
+      "Tukaram",
+      "Sunder Te Dhyan"
+    ],
+    "writer": "Tukārām",
+    "singer": "Anuradha Paudwal",
+    "composer": ""
+  },
+  {
+    "slug": "vrkshavalli-amha",
+    "title": "Vṛkṣavallī Āmhā",
+    "credit": "Tukārām · Anuradha Paudwal",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Vrksavalli Amha",
+      "Tukaram · Anuradha Paudwal",
+      "Tukaram",
+      "Vrikshavalli Aamha",
+      "Vrikshavalli Amha",
+      "Vrukshavalli Amha Soyare Vanachare"
+    ],
+    "writer": "Tukārām",
+    "singer": "Anuradha Paudwal",
+    "composer": ""
+  },
+  {
+    "slug": "anandache-dohi",
+    "title": "Ānandāche Dohī",
+    "credit": "Tukārām · Anuradha Paudwal",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Tukaram · Anuradha Paudwal",
+      "Tukaram",
+      "Anaandche Dohi",
+      "Anandache Dohi Anand Tarang"
+    ],
+    "writer": "Tukārām",
+    "singer": "Anuradha Paudwal",
+    "composer": ""
+  },
+  {
     "slug": "jai-mahakali-aarti",
     "title": "Jai Mahakali Aarti",
     "credit": "Anuradha Paudwal",
@@ -117,6 +208,30 @@ window.BHAKTI_SONGS = [
     "subtitle": "Swaranjali"
   },
   {
+    "slug": "mere-to-giridhar-gopal",
+    "title": "Mere To Giridhara Gopāla",
+    "credit": "Mīrābāī · Anuradha Paudwal",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Mere To Giridhara Gopala",
+      "Krshna",
+      "Krsna",
+      "Mirabai · Anuradha Paudwal",
+      "Mirabai",
+      "Anuradha Paudwal - Mere To Giridhar Gopal (Pseudo Video)",
+      "Mere Toh Giridhar Gopal"
+    ],
+    "writer": "Mīrābāī",
+    "singer": "Anuradha Paudwal",
+    "composer": "",
+    "subtitle": "Kṛṣṇa"
+  },
+  {
     "slug": "chakar-rakho-ji",
     "title": "Chākar Rākho Jī",
     "credit": "Mīrābāī · Anuradha Paudwal",
@@ -135,6 +250,31 @@ window.BHAKTI_SONGS = [
       "Chaakar Rakho Jee",
       "Chaakar Rakho Ji",
       "Shyam Mane Chakar Rakho Ji"
+    ],
+    "writer": "Mīrābāī",
+    "singer": "Anuradha Paudwal",
+    "composer": "",
+    "subtitle": "Kṛṣṇa"
+  },
+  {
+    "slug": "mhare-ghar-ao-pritam-pyara",
+    "title": "Mhāre Ghara Āo Prītama Pyārā",
+    "credit": "Mīrābāī · Anuradha Paudwal",
+    "languageTags": [
+      "Braj",
+      "Rajasthani"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Mhare Ghara Ao Pritama Pyara",
+      "Krshna",
+      "Krsna",
+      "Mirabai · Anuradha Paudwal",
+      "Mirabai",
+      "Mhare Ghar Aao Pritam Pyara",
+      "Mhare Ghar Aao Pritam Pyaara"
     ],
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
