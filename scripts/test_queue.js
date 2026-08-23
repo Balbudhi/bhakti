@@ -188,7 +188,7 @@ assert.deepEqual(slugs(fullRoundTrip), slugs(fullState));
 
 const seededFullState = Queue.shuffle(fullCatalogue, () => 0.314159, "seeded-full-session");
 const seededFullPayload = Queue.encode(seededFullState);
-assert.ok(seededFullPayload.length <= 16, `full-catalogue seeded payload unexpectedly long: ${seededFullPayload.length}`);
+assert.ok(seededFullPayload.length <= 11, `full-catalogue seeded payload unexpectedly long: ${seededFullPayload.length}`);
 const seededFullRoundTrip = Queue.decode(
   seededFullPayload,
   new Map(fullCatalogue.map(item => [item.queueId, item])),
@@ -209,10 +209,18 @@ assert.equal(restoredSeeded.shuffleSeed, seededFullState.shuffleSeed);
 assert.equal(Queue.encode(restoredSeeded), seededFullPayload);
 const advancedSeeded = Queue.advance(seededFullState).state;
 assert.equal(advancedSeeded.shuffleAll, true);
-assert.ok(Queue.encode(advancedSeeded).length <= 16);
+assert.ok(Queue.encode(advancedSeeded).length <= 12);
 const modifiedSeeded = Queue.remove(seededFullState, 1);
 assert.equal(modifiedSeeded.shuffleAll, false);
 assert.equal(modifiedSeeded.shuffleSeed, null);
+const movedSeeded = Queue.move(seededFullState, 1, 3);
+assert.equal(movedSeeded.shuffleAll, true);
+const movedSeededPayload = Queue.encode(movedSeeded);
+assert.ok(movedSeededPayload.length <= 16, `single-move seeded payload unexpectedly long: ${movedSeededPayload.length}`);
+assert.deepEqual(
+  slugs(Queue.decode(movedSeededPayload, new Map(fullCatalogue.map(item => [item.queueId, item])), "moved-seeded", 229)),
+  slugs(movedSeeded),
+);
 const reverseOrderedShuffle = Queue.shuffle([...fullCatalogue].reverse(), () => 0.314159, "reverse-session");
 assert.equal(reverseOrderedShuffle.shuffleAll, true);
 assert.deepEqual(slugs(reverseOrderedShuffle), slugs(seededFullState));

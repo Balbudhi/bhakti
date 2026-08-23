@@ -3,6 +3,7 @@
 
   const VERSION = 1;
   const SHARE_VERSION = 2;
+  const SHUFFLE_DELTA_VERSION = 3;
   const SHUFFLE_ALL_CODE = 3;
   const MAX_PAYLOAD_CHARACTERS = 4096;
   const MODES = new Set(["standalone", "custom", "shuffle"]);
@@ -108,7 +109,7 @@
     const next = removeExistingEntry(state, item);
     const insertionIndex = next.currentIndex + 1;
     next.items.splice(insertionIndex, 0, item);
-    return rebuild(state, next.items, insertionIndex);
+    return rebuild(state, next.items, insertionIndex, state.mode, state.shuffleAll);
   };
 
   const append = (state, item, sessionId) => {
@@ -132,7 +133,7 @@
     const items = [...state.items];
     const [item] = items.splice(fromIndex, 1);
     items.splice(toIndex, 0, item);
-    return rebuild(state, items);
+    return rebuild(state, items, state.currentIndex, state.mode, state.shuffleAll);
   };
 
   const remove = (state, index) => {
@@ -158,7 +159,7 @@
     return rebuild(state, [
       ...state.items.slice(0, state.currentIndex + 1),
       ...reordered,
-    ]);
+    ], state.currentIndex, state.mode, state.shuffleAll);
   };
 
   const advance = state => state.currentIndex + 1 < state.items.length
@@ -194,7 +195,7 @@
       sessionId,
     });
     const sample = Math.max(0, Math.min(0.9999999999999999, Number(random()) || 0));
-    const shuffleSeed = Math.floor(sample * 0x100000000) >>> 0;
+    const shuffleSeed = Math.floor(sample * 0x1000000) >>> 0;
     return create({
       mode: "shuffle",
       items: fisherYates(activeCatalogue(), seededRandom(shuffleSeed)),
@@ -208,7 +209,7 @@
   const shuffleRemaining = (state, random) => rebuild(state, [
     ...state.items.slice(0, state.currentIndex + 1),
     ...fisherYates(state.items.slice(state.currentIndex + 1), random),
-  ]);
+  ], state.currentIndex, state.mode, state.shuffleAll);
 
   const catalogueMap = catalogue => catalogue instanceof Map
     ? catalogue
@@ -316,6 +317,19 @@
     return value >>> 0;
   };
 
+  const writeUint24 = (value, bytes) => {
+    bytes.push((value >>> 16) & 0xff, (value >>> 8) & 0xff, value & 0xff);
+  };
+
+  const readUint24 = (bytes, offsetRef) => {
+    if (offsetRef.index + 3 > bytes.length) throw new RangeError("truncated uint24");
+    const value = (bytes[offsetRef.index] << 16)
+      | (bytes[offsetRef.index + 1] << 8)
+      | bytes[offsetRef.index + 2];
+    offsetRef.index += 3;
+    return value >>> 0;
+  };
+
   const encode = state => {
     const songs = activeCatalogue();
     const indexByQueueId = catalogueIndexMap(songs);
@@ -325,10 +339,34 @@
     // count, then catalogue-index varints. A full-library shuffle stores its
     // reproducible 32-bit seed instead of all 229 shuffled indices.
     if (state.mode === "shuffle" && state.shuffleAll && Number.isInteger(state.shuffleSeed)) {
-      const payload = [SHARE_VERSION, SHUFFLE_ALL_CODE, fingerprint >>> 8, fingerprint & 0xff];
+      const baseItems = fisherYates(songs, seededRandom(state.shuffleSeed));
+      const working = baseItems.map(item => item.queueId);
+      const target = state.items.map(item => item.queueId);
+      const moves = [];
+      for (let targetIndex = 0; targetIndex < target.length; targetIndex += 1) {
+        const fromIndex = working.indexOf(target[targetIndex], targetIndex);
+        if (fromIndex < 0) return encodeLegacy(state);
+        if (fromIndex === targetIndex) continue;
+        const [queueId] = working.splice(fromIndex, 1);
+        working.splice(targetIndex, 0, queueId);
+        moves.push([fromIndex, targetIndex]);
+      }
+      if (state.shuffleSeed > 0xffffff) {
+        if (moves.length) return encodeLegacy(state);
+        const payload = [SHARE_VERSION, SHUFFLE_ALL_CODE, fingerprint >>> 8, fingerprint & 0xff];
+        writeVarint(state.currentIndex, payload);
+        writeVarint(songs.length, payload);
+        writeUint32(state.shuffleSeed, payload);
+        return base64UrlEncodeBytes(payload);
+      }
+      const payload = [SHUFFLE_DELTA_VERSION, fingerprint >>> 8, fingerprint & 0xff];
       writeVarint(state.currentIndex, payload);
-      writeVarint(songs.length, payload);
-      writeUint32(state.shuffleSeed, payload);
+      writeUint24(state.shuffleSeed, payload);
+      writeVarint(moves.length, payload);
+      moves.forEach(([fromIndex, toIndex]) => {
+        writeVarint(fromIndex, payload);
+        writeVarint(toIndex, payload);
+      });
       return base64UrlEncodeBytes(payload);
     }
     const payload = [SHARE_VERSION, MODE_TO_CODE[state.mode], fingerprint >>> 8, fingerprint & 0xff];
@@ -354,6 +392,32 @@
     return create({
       mode: "shuffle",
       items: fisherYates(songs, seededRandom(shuffleSeed)),
+      currentIndex,
+      sessionId,
+      shuffleSeed,
+      shuffleAll: true,
+    });
+  };
+
+  const decodeShuffleDelta = (bytes, songs, sessionId, maximum) => {
+    if (bytes.length < 3 || ((bytes[1] << 8) | bytes[2]) !== catalogueFingerprint(songs)) return null;
+    const offsetRef = { index: 3 };
+    const currentIndex = readVarint(bytes, offsetRef);
+    const shuffleSeed = readUint24(bytes, offsetRef);
+    const moveCount = readVarint(bytes, offsetRef);
+    if (!Number.isInteger(maximum) || maximum < 1 || songs.length > maximum || moveCount > songs.length) return null;
+    const items = fisherYates(songs, seededRandom(shuffleSeed));
+    for (let index = 0; index < moveCount; index += 1) {
+      const fromIndex = readVarint(bytes, offsetRef);
+      const toIndex = readVarint(bytes, offsetRef);
+      if (fromIndex >= items.length || toIndex >= items.length) return null;
+      const [item] = items.splice(fromIndex, 1);
+      items.splice(toIndex, 0, item);
+    }
+    if (offsetRef.index !== bytes.length) return null;
+    return create({
+      mode: "shuffle",
+      items,
       currentIndex,
       sessionId,
       shuffleSeed,
@@ -397,6 +461,7 @@
     if (typeof payload !== "string" || !payload.length || payload.length > MAX_PAYLOAD_CHARACTERS) return null;
     try {
       const bytes = base64UrlDecodeBytes(payload);
+      if (bytes[0] === SHUFFLE_DELTA_VERSION) return decodeShuffleDelta(bytes, activeCatalogue(catalogue), sessionId, maximum);
       if (bytes[0] === SHARE_VERSION) return decodeCompact(bytes, catalogue, sessionId, maximum);
       return decodeLegacy(payload, catalogue, sessionId, maximum);
     } catch (_) {
