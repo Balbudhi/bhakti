@@ -44,6 +44,8 @@
   let advancing = false;
   let draggedRow = null;
   let dragPointerId = null;
+  let dragStartY = 0;
+  let dragActive = false;
   let dragMoved = false;
   let queueToolsExpanded = false;
   const songDataCache = new Map();
@@ -92,6 +94,22 @@
 
   const activeItems = state => state ? state.items.slice(state.currentIndex) : [];
   const queueIsVisible = state => Boolean(state && state.mode !== "standalone");
+
+  const animateQueueReorder = (list, before) => {
+    for (const row of list.querySelectorAll(".queue-row:not(.is-dragging)")) {
+      const previous = before.get(row.dataset.queueEntryId);
+      const next = row.getBoundingClientRect();
+      if (!previous) continue;
+      const delta = previous.top - next.top;
+      if (Math.abs(delta) < 1) continue;
+      row.style.transition = "none";
+      row.style.transform = `translateY(${delta}px)`;
+      requestAnimationFrame(() => {
+        row.style.transition = "transform 180ms cubic-bezier(.2,.8,.2,1)";
+        row.style.transform = "";
+      });
+    }
+  };
 
   const renderQueuePill = () => {
     const visible = queueIsVisible(queueState);
@@ -591,25 +609,40 @@
     showStatus(`${title} removed`);
   });
   queueSheet.addEventListener("pointerdown", event => {
-    const row = event.target.closest?.(".queue-row:not(.is-current)");
-    if (!row || event.target.closest(".queue-song-select, .queue-remove-text")) return;
+    const handle = event.target.closest?.("[data-queue-drag]");
+    if (!handle) return;
+    const row = handle.closest(".queue-row:not(.is-current)");
+    if (!row) return;
     draggedRow = row;
     dragPointerId = event.pointerId;
+    dragStartY = event.clientY;
+    dragActive = false;
     dragMoved = false;
-    row.setPointerCapture(event.pointerId);
-    draggedRow.classList.add("is-dragging");
+    handle.setPointerCapture(event.pointerId);
     event.preventDefault();
   });
   queueSheet.addEventListener("pointermove", event => {
     if (!draggedRow || event.pointerId !== dragPointerId) return;
+    if (!dragActive) {
+      if (Math.abs(event.clientY - dragStartY) < 6) return;
+      dragActive = true;
+      draggedRow.classList.add("is-dragging");
+    }
     const list = queueSheet.querySelector(".queue-list");
     const listRect = list.getBoundingClientRect();
-    if (event.clientY < listRect.top + 48) list.scrollTop -= 14;
-    else if (event.clientY > listRect.bottom - 48) list.scrollTop += 14;
+    const edge = 56;
+    if (event.clientY < listRect.top + edge) {
+      list.scrollTop -= Math.ceil(((listRect.top + edge - event.clientY) / edge) * 18);
+    } else if (event.clientY > listRect.bottom - edge) {
+      list.scrollTop += Math.ceil(((event.clientY - (listRect.bottom - edge)) / edge) * 18);
+    }
     const target = document.elementFromPoint(event.clientX, event.clientY)?.closest(".queue-row:not(.is-current)");
     if (!target || target === draggedRow || target.parentElement !== draggedRow.parentElement) return;
+    const beforeRects = new Map([...list.querySelectorAll(".queue-row")]
+      .map(row => [row.dataset.queueEntryId, row.getBoundingClientRect()]));
     const before = event.clientY < target.getBoundingClientRect().top + target.getBoundingClientRect().height / 2;
     target.parentElement.insertBefore(draggedRow, before ? target : target.nextSibling);
+    animateQueueReorder(list, beforeRects);
     dragMoved = true;
   });
   const finishDrag = event => {
@@ -620,9 +653,10 @@
       .map(row => row.dataset.queueEntryId);
     draggedRow = null;
     dragPointerId = null;
+    dragStartY = 0;
+    dragActive = false;
     dragMoved = false;
     if (moved) {
-      rowToolsEntryId = "";
       setQueueState(Queue.reorderUpcoming(queueState, orderedEntryIds));
       showStatus("Playlist reordered");
     }
@@ -632,15 +666,14 @@
     if (!draggedRow || event.pointerId !== dragPointerId) return;
     draggedRow = null;
     dragPointerId = null;
+    dragStartY = 0;
+    dragActive = false;
     dragMoved = false;
     renderQueueSheet();
   });
   document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
-      if (rowToolsEntryId) {
-        rowToolsEntryId = "";
-        renderQueueSheet();
-      } else if (!queueSheet.hidden) closeQueue({ returnFocus: true });
+      if (!queueSheet.hidden) closeQueue({ returnFocus: true });
       return;
     }
   });

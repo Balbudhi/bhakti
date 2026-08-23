@@ -181,11 +181,11 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   margin: 0 auto 8px;
   padding: 11px 12px;
   border-radius: 6px;
+  transition: transform 180ms cubic-bezier(.2,.8,.2,1), background-color 140ms ease, opacity 140ms ease;
 }
-.queue-row:not(.is-current) { cursor: grab; }
-.queue-row.is-dragging { cursor: grabbing; }
+.queue-row:not(.is-current) { cursor: default; }
+.queue-row.is-dragging { cursor: grabbing; z-index: 1; opacity: 0.72; background: rgba(244, 234, 208, 0.12); }
 .queue-row.is-current { background: rgba(244, 234, 208, 0.055); }
-.queue-row.is-dragging { background: rgba(244, 234, 208, 0.09); }
 .queue-current-dot { color: rgba(244, 234, 208, 0.54); font-size: 8px; text-align: center; }
 .queue-copy { min-width: 0; }
 .queue-song-title,

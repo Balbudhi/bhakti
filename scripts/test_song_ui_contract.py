@@ -182,8 +182,9 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('Queue.reorderUpcoming(queueState, orderedEntryIds)', app)
         self.assertIn('if (queueIsVisible(queueState)) url.searchParams.set("queue", Queue.encode(queueState))', app)
         self.assertIn('data-queue-drag=', app)
-        self.assertIn('event.target.closest?.(".queue-row:not(.is-current)")', app)
-        self.assertIn('event.target.closest(".queue-song-select, .queue-remove-text")', app)
+        self.assertIn('event.target.closest?.("[data-queue-drag]")', app)
+        self.assertIn("const animateQueueReorder", app)
+        self.assertIn("Math.abs(event.clientY - dragStartY) < 6", app)
         self.assertIn('body.queue-open .app-stage', css)
         self.assertIn('body.queue-open .audio-player', css)
         self.assertIn('@keyframes app-view-in-left', css)
@@ -205,6 +206,8 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn("queue-inline-tools", app)
         self.assertIn(".queue-sheet-tools", css)
         self.assertIn("--queue-control-height", css)
+        self.assertIn("queue-row-remove", app)
+        self.assertIn('data-queue-action="remove"', app)
         self.assertIn("const reorderUpcoming", queue)
 
     def test_design_standard_is_part_of_repository_authority(self) -> None:
