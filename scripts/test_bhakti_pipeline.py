@@ -622,6 +622,11 @@ class PipelineTests(unittest.TestCase):
         }]
         self.assertEqual(pipeline.balanced_overlap(left, right), (1, 1, 1.0))
 
+    def test_prompts_distinguish_jati_and_varṇa(self) -> None:
+        source = Path(pipeline.__file__).read_text(encoding="utf-8")
+        self.assertIn("Do not flatten jāti, jñātī, jāta-pāta, and varṇa", source)
+        self.assertIn("Varṇa is a distinct broad fourfold normative social order", source)
+
     def test_long_coarse_sequence_routes_retained_only_occurrences(self) -> None:
         def line(identifier: str, roman: str) -> dict:
             return {"id": identifier, "source_text": roman, "roman": roman,

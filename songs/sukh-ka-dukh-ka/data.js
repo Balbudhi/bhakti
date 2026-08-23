@@ -1270,11 +1270,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāta-pāta kā bheda nā kholo",
-    "english": "{3,4:Do not open }{2:distinctions }{0,1:of caste and creed}",
+    "english": "{3,4:Do not draw }{2:distinctions }{0,1:of community and lineage}",
     "words": [
       {
         "roman": "jāta-pāta",
-        "gloss": "caste and creed; lineage distinctions",
+        "gloss": "community and lineage; inherited social distinctions",
         "concept_key": "",
         "preserve_in_english": false
       },

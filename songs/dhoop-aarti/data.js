@@ -8659,7 +8659,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "puso na priya soyare priya sage na jñātī puso",
-    "english": "{0:Let}{2: dear}{3: relatives}{0,1: not inquire,}{6: nor}{4: dear}{5: kinsmen,}{6,8: nor let}{7: caste-fellows}{8: ask.}",
+    "english": "{0:Let}{2: dear}{3: relatives}{0,1: not inquire,}{6: nor}{4: dear}{5: kinsmen,}{6,8: nor let}{7: community members}{8: ask.}",
     "words": [
       {
         "roman": "puso",
@@ -8705,7 +8705,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jñātī",
-        "gloss": "caste-fellows; clan members",
+        "gloss": "community members; clan fellows",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8716,7 +8716,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sage' and 'soyare' are masculine plural nominative forms. 'jñātī' functions here as a collective or plural term for caste/community members."
+    "grammarNote": "'sage' and 'soyare' are masculine plural nominative forms. 'jñātī' functions here as a collective term for members of a kin or local community."
   },
   "line-123": {
     "source": "पुसो सुहृद ना सखा स्वजन नाप्तबन्धू पुसो",

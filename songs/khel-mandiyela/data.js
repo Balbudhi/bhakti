@@ -517,11 +517,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "varṇābhimāna visaralī yātī",
-    "english": "{2:All castes }{1:have forgotten }{0:caste pride,}",
+    "english": "{2:Jāti communities }{1:have forgotten }{0:pride in varṇa,}",
     "words": [
       {
         "roman": "varṇābhimāna",
-        "gloss": "caste pride; pride in social rank",
+        "gloss": "pride in varṇa; pride in the fourfold social order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -533,12 +533,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "yātī",
-        "gloss": "castes; social groups; communities",
+        "gloss": "jāti communities; local birth or occupational groups",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "yātī (archaic Marathi for jātī) is feminine plural nominative subject; visaralī is 3rd feminine plural past tense agreeing with yātī; varṇābhimāna is masculine singular direct object."
+    "grammarNote": "yātī (archaic Marathi for jātī) is feminine plural nominative subject; visaralī is 3rd feminine plural past tense agreeing with yātī; varṇābhimāna is masculine singular direct object. The line distinguishes local jātī communities from varṇa as a broader social order."
   },
   "eka-eka-lotangani-jati": {
     "source": "एकएकां लोटांगणी जाती",

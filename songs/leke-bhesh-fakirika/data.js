@@ -412,11 +412,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāta pāta kā bhēda miṭā'ō",
-    "english": "{4:Erase }{3:the distinction }{2:of }{0:caste }{1:and lineage;}",
+    "english": "{4:Erase }{3:the distinction }{2:of }{0:community }{1:and lineage;}",
     "words": [
       {
         "roman": "Jāta",
-        "gloss": "caste; birth-group",
+        "gloss": "community; birth or occupational group",
         "concept_key": "",
         "preserve_in_english": false
       },
