@@ -131,7 +131,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('event.request.mode === "navigate"', worker)
         self.assertIn('cache.put(cacheKey, copy)', worker)
         self.assertIn('caches.match(cacheKey)', worker)
-        self.assertIn('bhakti-shell-v17', worker)
+        self.assertIn('bhakti-shell-v18', worker)
         self.assertIn('/assets/queue.js', worker)
         self.assertIn('/assets/app.js', worker)
 
@@ -182,6 +182,8 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('Queue.reorderUpcoming(queueState, orderedEntryIds)', app)
         self.assertIn('if (queueIsVisible(queueState)) url.searchParams.set("queue", Queue.encode(queueState))', app)
         self.assertIn('data-queue-drag=', app)
+        self.assertIn('event.target.closest?.(".queue-row:not(.is-current)")', app)
+        self.assertIn('event.target.closest(".queue-song-select, .queue-remove-text")', app)
         self.assertIn('body.queue-open .app-stage', css)
         self.assertIn('body.queue-open .audio-player', css)
         self.assertIn('@keyframes app-view-in-left', css)

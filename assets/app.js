@@ -369,8 +369,8 @@
           ? `<span class="queue-current-dot" aria-hidden="true">●</span>`
           : `<button class="queue-drag-handle" type="button" data-queue-action="row-tools" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder or edit ${escapeHtml(item.title)}; drag, use arrow keys, or press for options" title="Drag to reorder; press for options">⋮⋮</button>`}
         <div class="queue-copy">${currentRow
-          ? `<div class="queue-song-title">${escapeHtml(item.title)}</div>`
-          : `<button class="queue-song-select" type="button" data-queue-action="play">${escapeHtml(item.title)}</button>`}${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}</div>
+          ? `<div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}`
+          : `<button class="queue-song-select" type="button" data-queue-action="play"><span class="queue-song-title">${escapeHtml(item.title)}</span>${item.credit ? `<span class="queue-credit">${escapeHtml(item.credit)}</span>` : ""}</button>`}</div>
         ${!currentRow && rowToolsEntryId === item.entryId
           ? `<button class="queue-remove-text" type="button" data-queue-action="remove">Remove</button>`
           : `<span aria-hidden="true"></span>`}
@@ -598,12 +598,12 @@
     showStatus(`${title} removed`);
   });
   queueSheet.addEventListener("pointerdown", event => {
-    const handle = event.target.closest?.("[data-queue-drag]");
-    if (!handle) return;
-    draggedRow = handle.closest(".queue-row");
+    const row = event.target.closest?.(".queue-row:not(.is-current)");
+    if (!row || event.target.closest(".queue-song-select, .queue-remove-text")) return;
+    draggedRow = row;
     dragPointerId = event.pointerId;
     dragMoved = false;
-    handle.setPointerCapture(event.pointerId);
+    row.setPointerCapture(event.pointerId);
     draggedRow.classList.add("is-dragging");
     event.preventDefault();
   });

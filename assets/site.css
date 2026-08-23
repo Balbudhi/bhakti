@@ -442,6 +442,9 @@ main {
     padding-left: 10px;
   }
 
+  .song-actions-trigger { width: 42px; height: 42px; }
+  .song-actions-trigger svg { width: 19px; height: 19px; }
+
   .library-song-title { font-size: 31px; }
 
   .tags {
@@ -449,4 +452,10 @@ main {
     margin-top: 12px;
     max-width: none;
   }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .song-card { grid-template-columns: minmax(0, 1fr) 48px; }
+  .song-actions-trigger { width: 42px; height: 42px; }
+  .song-actions-trigger svg { width: 20px; height: 20px; }
 }
