@@ -261,7 +261,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -467,13 +467,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -544,13 +544,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },

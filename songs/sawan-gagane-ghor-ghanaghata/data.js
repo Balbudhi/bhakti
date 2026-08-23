@@ -283,7 +283,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yamunā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred river associated with Kṛṣṇa's Braj",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1536,10 +1536,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 104.9,
-    "end": 111.0
+    "end": 111
   },
   {
-    "start": 111.0,
+    "start": 111,
     "end": 116.55
   },
   {

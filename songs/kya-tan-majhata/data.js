@@ -796,7 +796,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "holī,",
-        "gloss": "proper name or untranslated term",
+        "gloss": "spring festival of colour, bonfires, and renewal",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -826,7 +826,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "holī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "spring festival of colour, bonfires, and renewal",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1651,10 +1651,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 33.7,
-    "end": 43.0
+    "end": 43
   },
   {
-    "start": 43.0,
+    "start": 43,
     "end": 52.3
   },
   {
@@ -1691,10 +1691,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 159.67,
-    "end": 184.0
+    "end": 184
   },
   {
-    "start": 184.0,
+    "start": 184,
     "end": 199.06
   },
   {

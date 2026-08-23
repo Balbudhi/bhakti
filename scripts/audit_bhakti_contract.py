@@ -109,6 +109,8 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
                     break
                 if gloss_policy.is_self_referential(token, gloss):
                     problems.append(f"{line_id} word[{word_index}] gloss repeats the visible term instead of explaining it")
+                if gloss_policy.is_placeholder_gloss(gloss):
+                    problems.append(f"{line_id} word[{word_index}] gloss is a placeholder rather than an explanation")
                 fictional = gloss_policy.fictional_coinages(gloss)
                 if fictional:
                     problems.append(f"{line_id} word[{word_index}] gloss uses fictional coinage {fictional}")

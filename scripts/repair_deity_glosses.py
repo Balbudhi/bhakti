@@ -117,6 +117,32 @@ GLOSSES = {
     "mahādeva": "the great god; epithet of Śiva",
     "mahādev": "the great god; epithet of Śiva",
     "keśarī": "Keśarī, Hanumān’s father",
+    # Exact remaining public hover forms.  These are identities or ordinary
+    # meanings, never a fallback label that leaves the listener guessing.
+    "siv": "Śiva, “the auspicious one”; deity of transformation",
+    "siva": "Śiva, “the auspicious one”; deity of transformation",
+    "mahādēv": "mahā, “great” + deva, “god”; epithet of Śiva",
+    "purandara": "Purandaradāsa, “servant of Purandara”; Kannada composer-poet devoted to Viṭṭhala",
+    "ved": "Vedas; sacred knowledge texts",
+    "darbha": "sacred kuśa grass used in ritual",
+    "sugrīva": "su, “good” + grīva, “neck”; monkey king and Rāma’s ally",
+    "nīla": "“dark-blue one”; monkey commander who helps build Rāma’s bridge",
+    "nala": "“reed”; monkey commander who helps build Rāma’s bridge",
+    "gada": "monkey warrior named Gada",
+    "dadhimukha": "dadhi, “curd” + mukha, “face”; guardian of Sugrīva’s honey grove",
+    "nisaṭha": "monkey warrior named Nisaṭha",
+    "saṭha": "monkey warrior named Saṭha",
+    "maheśa": "mahā, “great” + īśa, “lord”; epithet of Śiva",
+    "gōpāl": "go, “cow” + pāla, “protector”; epithet of Kṛṣṇa",
+    "gōvind": "go, “cow” + √vid, “find/know”; finder of cows, epithet of Kṛṣṇa",
+    "murārī": "Mura + ari, “enemy”; slayer of Mura, epithet of Kṛṣṇa",
+    "vaiṣṇava": "devotee of Viṣṇu",
+    "holī": "spring festival of colour, bonfires, and renewal",
+    "dharmadās": "dharma + dāsa, “servant”; Kabīr’s disciple and named addressee",
+    "rāmā": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
+    "instrumental": "instrumental music",
+    "sitāra": "sitar; long-necked plucked lute",
+    "ālāpa": "unmetered melodic introduction",
 }
 # These cards are deliberately scoped to the recorded line.  Similar-looking
 # words elsewhere may have another referent, so they must never be promoted to
@@ -156,7 +182,7 @@ PLACEHOLDERS = {"proper name", "proper name or untranslated term", "untranslated
 
 def canonical(value: str) -> str:
     value = value.casefold()
-    return re.sub(r"[^a-zāīūṛṝḷṅñṭḍṇśṣḥ]", "", value)
+    return re.sub(r"[^a-zāīūēōṛṝḷṅñṭḍṇśṣḥ]", "", value)
 
 
 def load(path: Path) -> dict:
@@ -183,6 +209,8 @@ def main() -> int:
         count = 0
         for line_id, line in page.get("SONG_LINES", {}).items():
             for word_index, word in enumerate(line.get("words", [])):
+                if str(word.get("gloss") or "").strip().casefold() not in PLACEHOLDERS:
+                    continue
                 replacement = CONTEXTUAL_GLOSSES.get((song.name, line_id, word_index))
                 replacement = replacement or GLOSSES.get(canonical(str(word.get("roman") or "")))
                 if replacement and word.get("gloss") != replacement:

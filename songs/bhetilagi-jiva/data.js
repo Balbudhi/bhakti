@@ -758,7 +758,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tukā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1070,10 +1070,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 157.14,
-    "end": 163.0
+    "end": 163
   },
   {
-    "start": 163.0,
+    "start": 163,
     "end": 174.27
   },
   {

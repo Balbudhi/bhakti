@@ -68,19 +68,19 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "[Instrumental:",
-        "gloss": "proper name or untranslated term",
+        "gloss": "instrumental music",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Sitāra",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sitar; long-necked plucked lute",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ālāpa]",
-        "gloss": "proper name or untranslated term",
+        "gloss": "unmetered melodic introduction",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -772,13 +772,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "[Instrumental:",
-        "gloss": "proper name or untranslated term",
+        "gloss": "instrumental music",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Sitāra",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sitar; long-necked plucked lute",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -930,7 +930,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0.0,
+    "start": 0,
     "end": 121.15
   },
   {
@@ -971,10 +971,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 288.44,
-    "end": 387.0
+    "end": 387
   },
   {
-    "start": 387.0,
+    "start": 387,
     "end": 396.75
   },
   {

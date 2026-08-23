@@ -594,7 +594,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Mīrā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "poet-saint devoted to Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -937,10 +937,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 168.05,
-    "end": 175.0
+    "end": 175
   },
   {
-    "start": 175.0,
+    "start": 175,
     "end": 188.25
   },
   {

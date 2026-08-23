@@ -2738,7 +2738,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3082,7 +3082,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Śiva, “the auspicious one”; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4811,7 +4811,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5509,7 +5509,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darbha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred kuśa grass used in ritual",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5633,7 +5633,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāvana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "king of Laṅkā and Rāma's adversary",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5900,7 +5900,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6184,7 +6184,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sugrīva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "su, “good” + grīva, “neck”; monkey king and Rāma’s ally",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6326,7 +6326,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sugrīva",
-        "gloss": "proper name or untranslated term",
+        "gloss": "su, “good” + grīva, “neck”; monkey king and Rāma’s ally",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6876,7 +6876,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāvana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "king of Laṅkā and Rāma's adversary",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7119,7 +7119,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Rāma's consort",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7356,7 +7356,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7421,7 +7421,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāvana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "king of Laṅkā and Rāma's adversary",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8781,7 +8781,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9175,7 +9175,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9647,13 +9647,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nīla",
-        "gloss": "proper name or untranslated term",
+        "gloss": "“dark-blue one”; monkey commander who helps build Rāma’s bridge",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nala",
-        "gloss": "proper name or untranslated term",
+        "gloss": "“reed”; monkey commander who helps build Rāma’s bridge",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9665,7 +9665,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gada",
-        "gloss": "proper name or untranslated term",
+        "gloss": "monkey warrior named Gada",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9677,7 +9677,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dadhimukha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "dadhi, “curd” + mukha, “face”; guardian of Sugrīva’s honey grove",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9689,13 +9689,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nisaṭha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "monkey warrior named Nisaṭha",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "saṭha",
-        "gloss": "proper name or untranslated term",
+        "gloss": "monkey warrior named Saṭha",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10842,7 +10842,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -10984,7 +10984,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12274,7 +12274,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāvana",
-        "gloss": "proper name or untranslated term",
+        "gloss": "king of Laṅkā and Rāma's adversary",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -12517,7 +12517,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12755,7 +12755,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13279,7 +13279,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14023,7 +14023,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14267,7 +14267,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14517,7 +14517,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17278,13 +17278,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nīla",
-        "gloss": "proper name or untranslated term",
+        "gloss": "“dark-blue one”; monkey commander who helps build Rāma’s bridge",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nala",
-        "gloss": "proper name or untranslated term",
+        "gloss": "“reed”; monkey commander who helps build Rāma’s bridge",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18089,7 +18089,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19562,19 +19562,19 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "brahmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "viṣṇu",
-        "gloss": "proper name or untranslated term",
+        "gloss": "deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "maheśa",
-        "gloss": "proper name or untranslated term",
+        "gloss": "mahā, “great” + īśa, “lord”; epithet of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -19609,7 +19609,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },

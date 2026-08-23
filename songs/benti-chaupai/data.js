@@ -2115,7 +2115,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Śiva, “the auspicious one”; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2180,7 +2180,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "creator deity of the cosmic triad",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4487,7 +4487,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Mahādēv",
-        "gloss": "proper name or untranslated term",
+        "gloss": "mahā, “great” + deva, “god”; epithet of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6765,7 +6765,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7812,10 +7812,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 176.705,
-    "end": 180.0
+    "end": 180
   },
   {
-    "start": 180.0,
+    "start": 180,
     "end": 183.3
   },
   {
@@ -7936,10 +7936,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 278.7,
-    "end": 282.0
+    "end": 282
   },
   {
-    "start": 282.0,
+    "start": 282,
     "end": 285.3
   },
   {
@@ -7976,10 +7976,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 311.75,
-    "end": 315.0
+    "end": 315
   },
   {
-    "start": 315.0,
+    "start": 315,
     "end": 318.3
   },
   {
@@ -8016,10 +8016,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 344.7,
-    "end": 348.0
+    "end": 348
   },
   {
-    "start": 348.0,
+    "start": 348,
     "end": 351.3
   },
   {

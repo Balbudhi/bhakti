@@ -132,7 +132,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiṣṇava",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -887,7 +887,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiṣṇava",
-        "gloss": "proper name or untranslated term",
+        "gloss": "devotee of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -946,7 +946,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tukā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },

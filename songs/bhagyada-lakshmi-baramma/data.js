@@ -482,7 +482,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -512,7 +512,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -737,7 +737,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "goddess of flourishing and fortune",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1479,7 +1479,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandara",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Purandaradāsa, “servant of Purandara”; Kannada composer-poet devoted to Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },

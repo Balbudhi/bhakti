@@ -12,6 +12,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 PRESERVED = json.loads((ROOT / "data" / "preserved_terms.json").read_text(encoding="utf-8")).get("terms", {})
+PLACEHOLDER_GLOSSES = frozenset({"proper name", "proper name or untranslated term", "untranslated term"})
 
 FICTIONAL_COINAGES = {
     "adamantium": "fictional Marvel alloy",
@@ -97,6 +98,11 @@ def is_self_referential(roman: object, gloss: object) -> bool:
     )
 
 
+def is_placeholder_gloss(gloss: object) -> bool:
+    """Whether a gloss tells the listener nothing about the displayed word."""
+    return str(gloss or "").strip().casefold() in PLACEHOLDER_GLOSSES
+
+
 def meaning_only_gloss(roman: object, gloss: object, concept_key: object = "") -> str:
     text = str(gloss or "").strip()
     if not is_self_referential(roman, text):
@@ -114,7 +120,9 @@ def meaning_only_gloss(roman: object, gloss: object, concept_key: object = "") -
         candidate = tail[1].rstrip(")] ").strip()
         if candidate and not is_self_referential(roman, candidate):
             return candidate
-    return "proper name or untranslated term"
+    raise ValueError(
+        f"unresolved self-referential gloss for {roman!r}; provide an identity or contextual meaning before publication"
+    )
 
 
 def clean_word(word: dict[str, Any]) -> dict[str, Any]:

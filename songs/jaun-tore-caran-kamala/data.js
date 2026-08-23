@@ -162,19 +162,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "gōpāl",
-        "gloss": "proper name or untranslated term",
+        "gloss": "go, “cow” + pāla, “protector”; epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gōvind",
-        "gloss": "proper name or untranslated term",
+        "gloss": "go, “cow” + √vid, “find/know”; finder of cows, epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "murārī",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Mura + ari, “enemy”; slayer of Mura, epithet of Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       }

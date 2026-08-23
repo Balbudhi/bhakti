@@ -2972,7 +2972,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Dharmadās",
-        "gloss": "proper name or untranslated term",
+        "gloss": "dharma + dāsa, “servant”; Kabīr’s disciple and named addressee",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3700,10 +3700,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 202.4,
-    "end": 208.0
+    "end": 208
   },
   {
-    "start": 208.0,
+    "start": 208,
     "end": 217.5
   },
   {
@@ -3712,10 +3712,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 228.75,
-    "end": 239.0
+    "end": 239
   },
   {
-    "start": 239.0,
+    "start": 239,
     "end": 249.725
   },
   {

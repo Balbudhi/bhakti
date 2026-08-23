@@ -2302,10 +2302,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 286.375,
-    "end": 296.0
+    "end": 296
   },
   {
-    "start": 296.0,
+    "start": 296,
     "end": 305.4
   },
   {
@@ -2346,10 +2346,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 431.61,
-    "end": 441.0
+    "end": 441
   },
   {
-    "start": 441.0,
+    "start": 441,
     "end": 450.375
   },
   {

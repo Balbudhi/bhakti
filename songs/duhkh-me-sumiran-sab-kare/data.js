@@ -463,7 +463,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -724,7 +724,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "sacred invocation; devotional recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -902,7 +902,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ved",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Vedas; sacred knowledge texts",
         "concept_key": "",
         "preserve_in_english": false
       },

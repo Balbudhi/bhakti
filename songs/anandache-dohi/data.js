@@ -665,7 +665,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Tukā",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Marathi poet-saint; signature-name of Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       },

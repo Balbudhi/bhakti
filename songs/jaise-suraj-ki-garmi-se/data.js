@@ -598,7 +598,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "proper name or untranslated term",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2450,10 +2450,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 226.8,
-    "end": 249.0
+    "end": 249
   },
   {
-    "start": 249.0,
+    "start": 249,
     "end": 266.3
   },
   {
@@ -2478,10 +2478,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 322.65,
-    "end": 333.0
+    "end": 333
   },
   {
-    "start": 333.0,
+    "start": 333,
     "end": 389.421
   }
 ];

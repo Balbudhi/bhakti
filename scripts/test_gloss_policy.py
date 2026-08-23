@@ -41,6 +41,10 @@ class GlossPolicyTests(unittest.TestCase):
             "Śiva as the auspicious maker of good",
         )
 
+    def test_unknown_name_blocks_publication_instead_of_emitting_a_placeholder(self) -> None:
+        with self.assertRaisesRegex(ValueError, "unresolved self-referential gloss"):
+            gloss_policy.meaning_only_gloss("UnresolvedName", "UnresolvedName")
+
 
 if __name__ == "__main__":
     unittest.main()
