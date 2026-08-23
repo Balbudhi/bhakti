@@ -103,14 +103,41 @@ body.queue-open .audio-player { bottom: 0; }
   background: transparent;
   color: rgba(244, 234, 208, 0.78);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, transform 120ms ease;
 }
+.queue-pill::before,
+.queue-action::before,
+.queue-row-action::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(244, 234, 208, 0.10);
+  opacity: 0;
+  transform: scale(0.25);
+  transition: opacity 140ms ease, transform 160ms cubic-bezier(.2,.8,.2,1);
+}
+.queue-pill:hover::before,
+.queue-pill:focus-visible::before,
+.queue-pill[aria-expanded="true"]::before,
+.queue-action:hover::before,
+.queue-action:focus-visible::before,
+.queue-row-action:hover::before,
+.queue-row-action:focus-visible::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.queue-pill > svg,
+.queue-action > svg,
+.queue-row-action > svg { position: relative; z-index: 1; }
 .queue-pill:hover,
 .queue-pill:focus-visible,
 .queue-pill[aria-expanded="true"] {
   color: #f4ead0;
   border-color: rgba(244, 234, 208, 0.62);
-  background: rgba(244, 234, 208, 0.10);
+  background: transparent;
   outline: none;
 }
 .queue-pill:active { transform: scale(0.94); }
@@ -163,6 +190,8 @@ body.queue-open .audio-player { bottom: 0; }
   background: transparent;
   color: rgba(244, 234, 208, 0.58);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
 .queue-tools { display: flex; align-items: center; gap: 4px; }
@@ -170,7 +199,7 @@ body.queue-open .audio-player { bottom: 0; }
 .queue-action:focus-visible {
   color: #f4ead0;
   border-color: rgba(244, 234, 208, 0.48);
-  background: rgba(244, 234, 208, 0.08);
+  background: transparent;
   outline: none;
 }
 .queue-action:disabled { opacity: 0.24; cursor: default; }
@@ -248,10 +277,12 @@ body.queue-open .audio-player { bottom: 0; }
   background: transparent;
   color: rgba(244, 234, 208, 0.58);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
 .queue-row-action:hover,
-.queue-row-action:focus-visible { color: #f4ead0; border-color: rgba(244, 234, 208, 0.52); background: rgba(244, 234, 208, 0.08); outline: none; }
+.queue-row-action:focus-visible { color: #f4ead0; border-color: rgba(244, 234, 208, 0.52); background: transparent; outline: none; }
 .queue-row-action:active { transform: scale(0.92); }
 .queue-empty { padding: 36px 22px; color: rgba(244, 234, 208, 0.68); text-align: center; font: 400 17px/1.4 "Cormorant Garamond", Georgia, serif; }
 
@@ -380,4 +411,11 @@ body.queue-open .audio-player { bottom: 0; }
     transform: none;
   }
   .queue-row { transition: none; }
+  .queue-pill,
+  .queue-action,
+  .queue-row-action,
+  .queue-drag-handle,
+  .queue-pill::before,
+  .queue-action::before,
+  .queue-row-action::before { transition: none; }
 }

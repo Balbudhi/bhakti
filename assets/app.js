@@ -486,7 +486,6 @@
       replaceHistoryMarker();
       hidePlayer();
     }
-    showStatus("Playlist cleared");
   };
 
   const advanceQueue = ({ failed = false } = {}) => {
@@ -512,7 +511,6 @@
         queueState = decoded;
         currentSong = decoded.items[decoded.currentIndex];
         persistQueue();
-        showStatus("Shared playlist ready — press Play");
       } else {
         showStatus("That playlist link is not valid");
       }
@@ -563,7 +561,6 @@
     selectAudioSong(currentSong, { force: true });
     await showSong(currentSong.slug);
     attemptPlay();
-    showStatus(`Shuffled ${songs.length} song${songs.length === 1 ? "" : "s"}`);
   });
   document.addEventListener("click", event => {
     const link = event.target.closest?.(".song-card-link");
@@ -634,16 +631,13 @@
     const entryId = row.dataset.queueEntryId;
     setQueueState(Queue.move(queueState, index, target));
     requestAnimationFrame(() => queueSheet.querySelector(`[data-queue-drag="${CSS.escape(entryId)}"]`)?.focus());
-    showStatus(`${queueState.items[target].title} moved`);
   });
   queueSheet.addEventListener("keydown", event => {
     const handle = event.target.closest?.("[data-queue-drag]");
     if (!handle || (event.key !== "Delete" && event.key !== "Backspace")) return;
     event.preventDefault();
     const row = handle.closest("[data-queue-index]");
-    const title = queueState.items[Number(row.dataset.queueIndex)].title;
     setQueueState(Queue.remove(queueState, Number(row.dataset.queueIndex)));
-    showStatus(`${title} removed`);
   });
   const clearDragHold = () => {
     clearTimeout(dragHoldTimer);
@@ -667,7 +661,7 @@
     dragVisualY = 0;
     dragActive = false;
     dragMoved = false;
-    if (pointerId !== null && row?.hasPointerCapture?.(pointerId)) row.releasePointerCapture(pointerId);
+    if (pointerId !== null && queueSheet.hasPointerCapture?.(pointerId)) queueSheet.releasePointerCapture(pointerId);
   };
   const activateDrag = () => {
     clearDragHold();
@@ -677,7 +671,7 @@
     }
     if (dragPointerId !== null) {
       try {
-        draggedRow.setPointerCapture(dragPointerId);
+        queueSheet.setPointerCapture(dragPointerId);
       } catch {
         resetDragGesture();
         return;
@@ -812,7 +806,6 @@
     }
     if (moved) {
       setQueueState(Queue.reorderUpcoming(queueState, orderedEntryIds));
-      showStatus("Playlist reordered");
     }
   };
   const cancelDragGesture = () => {
@@ -830,7 +823,7 @@
   });
   queueSheet.addEventListener("pointerleave", event => {
     if (!draggedRow || event.pointerId !== dragPointerId) return;
-    if (dragActive && draggedRow.hasPointerCapture?.(dragPointerId)) return;
+    if (dragActive && queueSheet.hasPointerCapture?.(dragPointerId)) return;
     cancelDragGesture();
   });
   queueSheet.addEventListener("lostpointercapture", event => {
