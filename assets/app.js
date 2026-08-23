@@ -47,7 +47,10 @@
   let dragStartY = 0;
   let dragActive = false;
   let dragMoved = false;
-  let queueToolsExpanded = false;
+  let queuePillPointerId = null;
+  let queuePillStartY = 0;
+  let queuePillDragged = false;
+  let suppressQueuePillClick = false;
   const songDataCache = new Map();
 
   const initialData = window.BHAKTI_READER?.snapshotGlobals?.();
@@ -118,7 +121,9 @@
     const count = activeItems(queueState).length;
     queuePill.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9"/></svg><span>${count}</span>`;
     const expanded = queuePill.getAttribute("aria-expanded") === "true";
-    queuePill.setAttribute("aria-label", `${expanded ? "Hide" : "Show"} playlist, ${count} song${count === 1 ? "" : "s"}`);
+    const action = `${expanded ? "Hide" : "Show"} playlist, ${count} song${count === 1 ? "" : "s"}`;
+    queuePill.setAttribute("aria-label", action);
+    queuePill.title = `${action}. Swipe up here to open, or down to close.`;
   };
 
   const updateViewToggle = () => {
@@ -394,11 +399,10 @@
       </div>`;
     queueSheet.innerHTML = `
       <div class="queue-sheet-tools">
-        <button class="queue-tools-toggle" type="button" data-queue-action="tools" aria-label="${queueToolsExpanded ? "Hide" : "Show"} playlist actions" aria-expanded="${queueToolsExpanded}">•••</button>
-        <div class="queue-tools"${queueToolsExpanded ? "" : " hidden"}>
-          <button class="queue-action" type="button" data-queue-action="share">Share</button>
-          <button class="queue-action" type="button" data-queue-action="shuffle"${future.length < 2 ? " disabled" : ""}>Shuffle</button>
-          <button class="queue-action" type="button" data-queue-action="clear">Clear</button>
+        <div class="queue-tools" role="group" aria-label="Playlist actions">
+          <button class="queue-action" type="button" data-queue-action="share" title="Share this playlist">Share</button>
+          <button class="queue-action" type="button" data-queue-action="shuffle" title="Shuffle upcoming songs"${future.length < 2 ? " disabled" : ""}>Shuffle</button>
+          <button class="queue-action" type="button" data-queue-action="clear" title="Clear this playlist">Clear</button>
         </div>
       </div>
       <div class="queue-list">
@@ -411,7 +415,6 @@
 
   const openQueue = () => {
     if (!queueIsVisible(queueState)) return;
-    queueToolsExpanded = false;
     renderQueueSheet();
     queueSheet.hidden = false;
     document.body.classList.add("queue-open");
@@ -565,7 +568,38 @@
     if (view === "song") showLibrary();
     else if (currentSong) showSong(currentSong.slug);
   });
-  queuePill.addEventListener("click", () => queueSheet.hidden ? openQueue() : closeQueue());
+  queuePill.addEventListener("click", () => {
+    if (suppressQueuePillClick) {
+      suppressQueuePillClick = false;
+      return;
+    }
+    if (queueSheet.hidden) openQueue();
+    else closeQueue();
+  });
+  queuePill.addEventListener("pointerdown", event => {
+    queuePillPointerId = event.pointerId;
+    queuePillStartY = event.clientY;
+    queuePillDragged = false;
+    queuePill.setPointerCapture(event.pointerId);
+  });
+  queuePill.addEventListener("pointermove", event => {
+    if (event.pointerId !== queuePillPointerId) return;
+    if (Math.abs(event.clientY - queuePillStartY) > 10) queuePillDragged = true;
+  });
+  const finishQueuePillGesture = event => {
+    if (event.pointerId !== queuePillPointerId) return;
+    const distance = event.clientY - queuePillStartY;
+    queuePillPointerId = null;
+    if (!queuePillDragged || Math.abs(distance) < 24) return;
+    suppressQueuePillClick = true;
+    if (distance < 0) openQueue();
+    else closeQueue();
+  };
+  queuePill.addEventListener("pointerup", finishQueuePillGesture);
+  queuePill.addEventListener("pointercancel", () => {
+    queuePillPointerId = null;
+    queuePillDragged = false;
+  });
   queueSheet.addEventListener("click", event => {
     const button = event.target.closest("[data-queue-action]");
     if (!button || button.disabled || !queueState) return;
@@ -580,11 +614,6 @@
     } else if (action === "shuffle") setQueueState(Queue.shuffleRemaining(queueState, Math.random));
     else if (action === "share") shareQueue();
     else if (action === "clear") clearQueue();
-    else if (action === "tools") {
-      queueToolsExpanded = !queueToolsExpanded;
-      renderQueueSheet();
-      queueSheet.querySelector("[data-queue-action='tools']")?.focus();
-    }
   });
   queueSheet.addEventListener("keydown", event => {
     const handle = event.target.closest?.("[data-queue-drag]");

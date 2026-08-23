@@ -201,7 +201,9 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn('queue-sheet-footer', app)
         self.assertNotIn('queue-remove"', app)
         self.assertIn('bhakti:add-to-queue', app)
-        self.assertIn('data-queue-action="tools"', app)
+        self.assertNotIn('data-queue-action="tools"', app)
+        for action in ("share", "shuffle", "clear"):
+            self.assertIn(f'data-queue-action="{action}"', app)
         self.assertIn("document.body.append(queuePill)", app)
         self.assertNotIn("queue-inline-tools", app)
         self.assertIn(".queue-sheet-tools", css)
