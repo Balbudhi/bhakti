@@ -902,7 +902,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tomāre dāo, āśā purāo, tumi eso kāche.",
-    "english": "{1:Give }{0:Yourself, }{3:fulfill }{2:our hope, }{4:You }{5:come }{6:near.}",
+    "english": "{1:Give }{0:Yourself; }{3:fulfill }{2:our hope; }{4:You—}{5:come }{6:near.}",
     "words": [
       {
         "roman": "Tomāre",
