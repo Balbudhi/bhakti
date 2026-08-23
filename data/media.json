@@ -886,6 +886,18 @@
         "sha256": "275c2c5d879e10e88492de152cd6cbad97685af3e2f457193ae131660b2e47c0"
       }
     ],
+    "jaun-tore-caran-kamala": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaun-tore-caran-kamala.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "c23c3489054a9a0a490d5924fc25a42d430c7d6a44309bb5ce2bec807b292a0e"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaun-tore-caran-kamala.m4a",
+        "type": "audio/mp4",
+        "sha256": "2a2f7175f246cc899fa0199da2d4519da0da34ddb6ae368f42815f89bdf95787"
+      }
+    ],
     "jaya-jagdisha-hare": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaya-jagdisha-hare.m4a",
@@ -1647,6 +1659,18 @@
         "sha256": "a4795b91885b2a30c887449117768cc1763177841bb9bee8bc3f128da0c63c06"
       }
     ],
+    "rama-rama-ratte-ratte": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rama-ratte-ratte.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "d9f4b8acd80c55f06512100eb489f2e96974e9a85d1123a4ee8230c624fd9cf3"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rama-ratte-ratte.m4a",
+        "type": "audio/mp4",
+        "sha256": "e02512c273c4c5b9d45ef85cd3edae36db4f00f6f5abf405116c83d82e327682"
+      }
+    ],
     "rama-rasa": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rasa.webm",
@@ -1787,6 +1811,18 @@
         "sha256": "ec9396ac7fae2f728030dc350f1b66c5e59e896736705dd1fc030534339f917c"
       }
     ],
+    "sakatore-oi-kandiche-sakale": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sakatore-oi-kandiche-sakale.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "3ece95b0dfb3914cca2a6dee7333f7cf3beaa3d155313412842a4decf1a37f14"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sakatore-oi-kandiche-sakale.m4a",
+        "type": "audio/mp4",
+        "sha256": "247b996d49493291cd45ebeae0d3bdc5a032503bba4613c46c25ac5885a2710d"
+      }
+    ],
     "samapti": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/samapti.m4a",
@@ -1825,6 +1861,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saso-ki-mala-par-simaru-nisdina-pi-ka-nama.m4a",
         "type": "audio/mp4",
         "sha256": "7b2863f85201544ddf8085b5634d3feae9124becfe4b0748a2f0120ca1b05c9a"
+      }
+    ],
+    "sawan-gagane-ghor-ghanaghata": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sawan-gagane-ghor-ghanaghata.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "ea753a8dbfa28bd6c813a0cf677b5963cf469b7bf2581b2010661297509bf1f9"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sawan-gagane-ghor-ghanaghata.m4a",
+        "type": "audio/mp4",
+        "sha256": "96e51fa15abc425cee947a1a696c7e2dcc545536eb0ca932a72efbb63dec37f2"
       }
     ],
     "shankar-ho": [

@@ -1713,6 +1713,28 @@ window.BHAKTI_SONGS = [
     "subtitle": "Rāmcaritmānas · Sundarakāṇḍa"
   },
   {
+    "slug": "sawan-gagane-ghor-ghanaghata",
+    "title": "Śāona Gagane Ghora Ghanaghaṭā",
+    "credit": "Rabindranath Tagore · Hemanta Mukhopadhyay · Prajna Dutta",
+    "languageTags": [
+      "Bengali"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Shaona Gagane Ghora Ghanaghata",
+      "Saona Gagane Ghora Ghanaghata",
+      "Krshna",
+      "Krsna",
+      "Hemanta Mukherjee"
+    ],
+    "writer": "Rabindranath Tagore",
+    "singer": "Hemanta Mukhopadhyay",
+    "composer": "Prajna Dutta",
+    "subtitle": "Kṛṣṇa"
+  },
+  {
     "slug": "jai-bhole-nath",
     "title": "Jai Bhole Nath",
     "credit": "",
@@ -1964,6 +1986,30 @@ window.BHAKTI_SONGS = [
     "subtitle": "Śakti"
   },
   {
+    "slug": "jaun-tore-caran-kamala",
+    "title": "Jāū̃ Tōrē Caran Kamal Par Vārī",
+    "credit": "Vasant Dev · Lata Mangeshkar, Rajan Mishra and Sajan Mishra · Laxmikant–Pyarelal",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Jaũ Tōrē Caran Kamal Par Vari",
+      "Jau Tore Caran Kamal Par Vari",
+      "Krshna",
+      "Krsna",
+      "Jaoon Tore Charan Kamal",
+      "Jaaun Tore Charan Kamal",
+      "Gopal Govind Murari"
+    ],
+    "writer": "Vasant Dev",
+    "singer": "Lata Mangeshkar, Rajan Mishra and Sajan Mishra",
+    "composer": "Laxmikant–Pyarelal",
+    "subtitle": "Kṛṣṇa"
+  },
+  {
     "slug": "leke-bhesh-fakirika",
     "title": "Leke Bhesh Fakirika",
     "credit": "",
@@ -2189,6 +2235,27 @@ window.BHAKTI_SONGS = [
     "singer": "Pandit Jasraj",
     "composer": "Pandit Maniram",
     "subtitle": "Śakti"
+  },
+  {
+    "slug": "rama-rama-ratte-ratte",
+    "title": "Rāmā Rāmā Raṭate Raṭate",
+    "credit": "Sanjay Dhoopa Mishra · Papon · Vipin Patwa",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Rama Rama Ratate Ratate",
+      "Rama",
+      "Rama Rama Ratte",
+      "Papon Rama Rama"
+    ],
+    "writer": "Sanjay Dhoopa Mishra",
+    "singer": "Papon",
+    "composer": "Vipin Patwa",
+    "subtitle": "Rāma"
   },
   {
     "slug": "data-ek-sai",
@@ -2863,6 +2930,25 @@ window.BHAKTI_SONGS = [
     "singer": "Sadhna Sargam",
     "composer": "",
     "subtitle": "Śirḍī Sāī"
+  },
+  {
+    "slug": "sakatore-oi-kandiche-sakale",
+    "title": "Sakātare Oi Kā̃diche Sakale",
+    "credit": "Rabindranath Tagore · Sahana Bajpaie",
+    "languageTags": [
+      "Bengali"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Sakatare Oi Kãdiche Sakale",
+      "Sakatare Oi Kadiche Sakale",
+      "Sokatore Oi",
+      "Sokatore Oi Kadiche Shokole",
+      "Sokatore Oi Kandichhe Sakale"
+    ],
+    "writer": "Rabindranath Tagore",
+    "singer": "Sahana Bajpaie",
+    "composer": ""
   },
   {
     "slug": "sai-ba-prakash-hai",

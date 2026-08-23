@@ -532,7 +532,7 @@ function render() {
   const notices = new Map((PAGE_META?.sectionNotices || []).map(notice => [Number(notice.sequenceIndex), notice]));
   const adapted = new Set((PAGE_META?.adaptedSequenceIndices || []).map(Number));
   const language = (PAGE_META?.languages || [])[0];
-  const defaultSourceLanguage = { Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn", Marathi: "mr", Odia: "or", Braj: "bra" }[language] || "";
+  const defaultSourceLanguage = { Bengali: "bn", Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn", Marathi: "mr", Odia: "or", Braj: "bra" }[language] || "";
   seq.forEach((entry, idx) => {
     const line = lineForEdition(lines[entry.ref], entry.ref, PAGE_META);
     if (!line) return;
