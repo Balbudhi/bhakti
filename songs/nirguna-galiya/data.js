@@ -2972,7 +2972,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Dharmadās",
-        "gloss": "dharma + dāsa, “servant”; Kabīr’s disciple and named addressee",
+        "gloss": "one whose service is to dharma; Kabīr’s disciple and named addressee",
         "concept_key": "",
         "preserve_in_english": false
       },

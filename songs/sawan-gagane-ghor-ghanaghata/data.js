@@ -161,7 +161,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuñjapathe sakhī kaise jāoba",
-    "english": "{1:O friend,}{2: how}{3: shall I go}{0: along the grove path,}",
+    "english": "{1:O friend, }{2:how }{3:shall I go}{0: along the grove path—}",
     "words": [
       {
         "roman": "kuñjapathe",
@@ -214,7 +214,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "abalā kāminī re",
-    "english": "{2:O }{0:helpless }{1:maiden.}",
+    "english": "{0:I, who am but a helpless }{1:maiden}{2:!}",
     "words": [
       {
         "roman": "abalā",
@@ -267,7 +267,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "unmada pabane yamunā tarjita",
-    "english": "{0:In the frenzied}{1: wind,}{2: the Yamuna }{3:is assailed,}",
+    "english": "{0:By the frenzied}{1: wind, }{2:the Yamuna }{3:is lashed;}",
     "words": [
       {
         "roman": "unmada",
@@ -379,7 +379,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "damakata bidyuta pathataruluṇṭhita",
-    "english": "{1:lightning}{0: flashes; }{2:the roadside trees are torn down,}",
+    "english": "{1:lightning}{0: flashes; }{2:the roadside trees are battered,}",
     "words": [
       {
         "roman": "damakata",
@@ -426,7 +426,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tharathara kampita deha",
-    "english": "{2:the body}{0: shudders}{1: and trembles.}",
+    "english": "{2:my body }{0:shudders}{1: and trembles.}",
     "words": [
       {
         "roman": "tharathara",
@@ -879,7 +879,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "motimahāre beśa banā de",
-    "english": "{2,3:Make }{1:an adornment }{0:with a necklace of pearls,}",
+    "english": "{2,3:Dress me }{1:in adornment }{0:with a necklace of pearls;}",
     "words": [
       {
         "roman": "motimahāre",
@@ -938,7 +938,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sī̃thi lagā de bhāle",
-    "english": "{1,2:place }{0:the hair-parting ornament }{3:on the forehead,}",
+    "english": "{1,2:adorn }{0:the parting of my hair }{3:on my brow;}",
     "words": [
       {
         "roman": "sī̃thi",
@@ -968,11 +968,11 @@ window.SONG_LINES = {
     "grammarNote": "sī̃thi refers to the maang tikka / hair-parting ornament (from Sanskrit sīmanta). bhāle is locative singular of bhāla (forehead)."
   },
   "line-19": {
-    "source": "উড়হি বিলুণ্ঠিত লোল চিকুর মম",
+    "source": "উরহি বিলুণ্ঠিত লোল চিকুর মম",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "উড়হি",
+        "text": "উরহি",
         "wordIndices": [
           0
         ]
@@ -1002,12 +1002,12 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "uṛahi biluṇṭhita lola cikura mama",
-    "english": "{4:my}{2: restless}{3: hair}{0: blows}{1: wildly disheveled,}",
+    "roman": "ūrahi biluṇṭhita lola cikura mama",
+    "english": "{4:My }{2:restless, }{1:scattered }{3:hair }{0:lies across my breast;}",
     "words": [
       {
-        "roman": "uṛahi",
-        "gloss": "flying; blowing; fluttering",
+        "roman": "ūrahi",
+        "gloss": "on the breast",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1036,7 +1036,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "uṛahi is Brajabuli present participle/verb form from √uḍ. mama is genitive singular pronoun. cikura is nominative plural/collective."
+    "grammarNote": "ūrahi is a Brajabuli locative phrase, on the breast. mama is genitive singular pronoun. cikura is nominative plural/collective."
   },
   "line-20": {
     "source": "বান্ধহ চম্পকমালে",
@@ -1074,7 +1074,7 @@ window.SONG_LINES = {
     "grammarNote": "bāndhaha is Brajabuli 2nd person imperative. campakamāle is instrumental/locative singular of campaka-mālā."
   },
   "line-21": {
-    "source": "গহন রয়নে না যাব বালা",
+    "source": "গহন রয়নমে ন যাও, বালা",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -1084,19 +1084,19 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "রয়নে",
+        "text": "রয়নমে",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "না",
+        "text": "ন",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "যাব",
+        "text": "যাও,",
         "wordIndices": [
           3
         ]
@@ -1108,8 +1108,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gahana rayane nā jāba bālā",
-    "english": "{0:Into the deep}{1: night}{4: the young maiden}{2: should not}{3: go,}",
+    "roman": "gahana rāyaname na jāo, bālā",
+    "english": "{2:Do not }{3:go }{0:into the deep }{1:night, }{4:young girl,}",
     "words": [
       {
         "roman": "gahana",
@@ -1118,20 +1118,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rayane",
+        "roman": "rāyaname",
         "gloss": "in the night",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nā",
+        "roman": "na",
         "gloss": "not",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "jāba",
-        "gloss": "should go; let go",
+        "roman": "jāo,",
+        "gloss": "go; imperative form",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1142,7 +1142,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "rayane is locative singular (Brajabuli rayana < Sanskrit rajanī). bālā is nominative singular. jāba functions as 3rd person subjunctive/hortative."
+    "grammarNote": "rāyaname is a Brajabuli locative phrase, in the night. na jāo is a direct negative imperative addressed to bālā, young girl/maiden."
   },
   "line-22": {
     "source": "নওল কিশোরক পাশ",
@@ -1168,7 +1168,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "naola kiśoraka pāśa",
-    "english": "{2:to the side of}{0: the youthful}{1: Krishna.}",
+    "english": "{2:to the side of}{0: that youthful}{1: lover.}",
     "words": [
       {
         "roman": "naola",
@@ -1233,7 +1233,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "garaje ghana ghana bahu ḍara pāoba",
-    "english": "{0:Thunder rumbles}{1,2: incessantly;}{5: I shall feel}{3: great}{4: fear,}",
+    "english": "{0:Thunder rumbles}{1,2: again and again;}{5: you will feel}{3: great}{4: fear,}",
     "words": [
       {
         "roman": "garaje",
@@ -1272,7 +1272,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "garaje is 3rd person present verb. ghana ghana is adverbial reduplication. pāoba is 3rd person future."
+    "grammarNote": "garaje is 3rd person present verb. ghana ghana is adverbial reduplication. pāoba is a future form directed to the addressed bālā, young girl."
   },
   "line-24": {
     "source": "কহে ভানু তব দাস",

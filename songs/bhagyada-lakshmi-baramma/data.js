@@ -1479,7 +1479,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandara",
-        "gloss": "Purandaradāsa, “servant of Purandara”; Kannada composer-poet devoted to Viṭṭhala",
+        "gloss": "Kannada composer-poet and devotee of Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },

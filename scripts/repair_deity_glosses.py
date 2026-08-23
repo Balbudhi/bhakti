@@ -119,11 +119,11 @@ GLOSSES = {
     "keśarī": "Keśarī, Hanumān’s father",
     # Exact remaining public hover forms.  These are identities or ordinary
     # meanings, never a fallback label that leaves the listener guessing.
-    "siv": "Śiva, “the auspicious one”; deity of transformation",
-    "siva": "Śiva, “the auspicious one”; deity of transformation",
+    "siv": "the auspicious one; deity of transformation",
+    "siva": "the auspicious one; deity of transformation",
     "mahādēv": "mahā, “great” + deva, “god”; epithet of Śiva",
-    "purandara": "Purandaradāsa, “servant of Purandara”; Kannada composer-poet devoted to Viṭṭhala",
-    "ved": "Vedas; sacred knowledge texts",
+    "purandara": "Kannada composer-poet and devotee of Viṭṭhala",
+    "ved": "sacred knowledge texts",
     "darbha": "sacred kuśa grass used in ritual",
     "sugrīva": "su, “good” + grīva, “neck”; monkey king and Rāma’s ally",
     "nīla": "“dark-blue one”; monkey commander who helps build Rāma’s bridge",
@@ -138,10 +138,10 @@ GLOSSES = {
     "murārī": "Mura + ari, “enemy”; slayer of Mura, epithet of Kṛṣṇa",
     "vaiṣṇava": "devotee of Viṣṇu",
     "holī": "spring festival of colour, bonfires, and renewal",
-    "dharmadās": "dharma + dāsa, “servant”; Kabīr’s disciple and named addressee",
-    "rāmā": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
-    "instrumental": "instrumental music",
-    "sitāra": "sitar; long-necked plucked lute",
+    "dharmadās": "one whose service is to dharma; Kabīr’s disciple and named addressee",
+    "rāmā": "the delightful one; Viṣṇu’s avatāra",
+    "instrumental": "music without sung words",
+    "sitāra": "long-necked plucked lute",
     "ālāpa": "unmetered melodic introduction",
 }
 # These cards are deliberately scoped to the recorded line.  Similar-looking

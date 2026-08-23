@@ -68,13 +68,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "[Instrumental:",
-        "gloss": "instrumental music",
+        "gloss": "music without sung words",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Sitāra",
-        "gloss": "sitar; long-necked plucked lute",
+        "gloss": "long-necked plucked lute",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -772,13 +772,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "[Instrumental:",
-        "gloss": "instrumental music",
+        "gloss": "music without sung words",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Sitāra",
-        "gloss": "sitar; long-necked plucked lute",
+        "gloss": "long-necked plucked lute",
         "concept_key": "",
         "preserve_in_english": false
       },

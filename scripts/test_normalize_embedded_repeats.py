@@ -33,7 +33,7 @@ class NormalizeEmbeddedRepeatsTests(unittest.TestCase):
         line = page["SONG_LINES"]["refrain"]
         self.assertEqual(line["source"], "राम नाम")
         self.assertEqual(line["roman"], "Rām nām")
-        self.assertEqual(line["english"], "{0:Rāma }{1:name,}")
+        self.assertEqual(line["english"], "{0:Rāma }{1:name, }")
         self.assertEqual(len(line["words"]), 2)
         self.assertEqual(page["SONG_SEQUENCE"][0]["repeats"], 2)
 

@@ -902,7 +902,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ved",
-        "gloss": "Vedas; sacred knowledge texts",
+        "gloss": "sacred knowledge texts",
         "concept_key": "",
         "preserve_in_english": false
       },

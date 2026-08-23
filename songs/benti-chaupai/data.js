@@ -2115,7 +2115,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siv",
-        "gloss": "Śiva, “the auspicious one”; deity of transformation",
+        "gloss": "the auspicious one; deity of transformation",
         "concept_key": "",
         "preserve_in_english": false
       },

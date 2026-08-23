@@ -467,13 +467,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
+        "gloss": "the delightful one; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāmā",
-        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
+        "gloss": "the delightful one; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -544,13 +544,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
+        "gloss": "the delightful one; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāmā",
-        "gloss": "Rāma, “the delightful one”; Viṣṇu’s avatāra",
+        "gloss": "the delightful one; Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
