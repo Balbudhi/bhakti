@@ -59,6 +59,22 @@ body.queue-open .audio-player { bottom: 0; }
 .app-stage {
   position: relative;
   min-height: 100dvh;
+  /* One source of truth for view motion. app.js reads --app-view-duration, so
+     the page slide, the inner layers, and the JS teardown can never drift
+     apart the way they had. */
+  --app-view-duration: 220ms;
+  --app-view-ease: cubic-bezier(.22, 1, .36, 1);
+  /* The lyric layers keep settling after the page has landed. app.js reads
+     --app-view-settle so the teardown waits for the slowest layer instead of
+     cutting it off. */
+  --app-view-settle: 380ms;
+  /* The page curve is deliberately front-loaded — it puts 73% of the slide in
+     the first 60ms, which is what makes the swipe feel instant. That same curve
+     on the lyric layers is why their travel could not be seen: everything
+     happened in a blur, then crept. The text uses a curve that spreads its
+     travel across the whole duration instead, so three layers moving at three
+     speeds actually reads as three layers. */
+  --lyric-settle-ease: cubic-bezier(.4, 0, .2, 1);
 }
 .app-stage.is-view-transitioning { overflow: hidden; }
 .app-stage.is-view-transitioning > main { will-change: transform; }
@@ -69,26 +85,41 @@ body.queue-open .audio-player { bottom: 0; }
   right: 0;
   left: 0;
 }
-.app-view-in-left { animation: app-view-in-left 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right { animation: app-view-out-right 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-in-right { animation: app-view-in-right 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-left { animation: app-view-out-left 220ms cubic-bezier(.22,1,.36,1); }
-@keyframes app-view-in-left { from { transform: translateX(-100vw); } to { transform: translateX(0); } }
-@keyframes app-view-out-right { from { transform: translateX(0); } to { transform: translateX(100vw); } }
-@keyframes app-view-in-right { from { transform: translateX(100vw); } to { transform: translateX(0); } }
-@keyframes app-view-out-left { from { transform: translateX(0); } to { transform: translateX(-100vw); } }
-@keyframes lyric-source-in { from { transform: translateX(10px); } to { transform: translateX(0); } }
-@keyframes lyric-roman-in { from { transform: translateX(18px); } to { transform: translateX(0); } }
-@keyframes lyric-english-in { from { transform: translateX(6px); } to { transform: translateX(0); } }
-@keyframes lyric-source-out { from { transform: translateX(0); } to { transform: translateX(10px); } }
-@keyframes lyric-roman-out { from { transform: translateX(0); } to { transform: translateX(18px); } }
-@keyframes lyric-english-out { from { transform: translateX(0); } to { transform: translateX(6px); } }
-.app-view-in-right .line-source { animation: lyric-source-in 210ms cubic-bezier(.22,1,.36,1); }
-.app-view-in-right .line-roman { animation: lyric-roman-in 180ms cubic-bezier(.22,1,.36,1); }
-.app-view-in-right .line-english { animation: lyric-english-in 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right .line-source { animation: lyric-source-out 210ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right .line-roman { animation: lyric-roman-out 180ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right .line-english { animation: lyric-english-out 220ms cubic-bezier(.22,1,.36,1); }
+.app-view-in-left { animation: app-view-in-left var(--app-view-duration) var(--app-view-ease); }
+.app-view-out-right { animation: app-view-out-right var(--app-view-duration) var(--app-view-ease); }
+.app-view-in-right { animation: app-view-in-right var(--app-view-duration) var(--app-view-ease); }
+.app-view-out-left { animation: app-view-out-left var(--app-view-duration) var(--app-view-ease); }
+/* Percentages track the stage box; vw included the scrollbar and overshot. */
+@keyframes app-view-in-left { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+@keyframes app-view-out-right { from { transform: translateX(0); } to { transform: translateX(100%); } }
+@keyframes app-view-in-right { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@keyframes app-view-out-left { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+
+/* The three lyric layers arrive separately, so you can read the relationship
+   between script, romanization, and English as they settle. Romanization
+   travels farthest and lands first; the source follows; the English drifts in
+   last and slowest. The page itself has already landed at --app-view-duration,
+   so the swipe stays snappy while the text keeps settling behind it.
+
+   Distances and durations are far enough apart to actually be seen — the
+   previous 6-18px over 180-220ms was below the threshold where a reader can
+   perceive three separate layers, so it registered as one blurry lurch.
+
+   Only the first lyric rows animate. Below the fold nothing is visible during
+   a third of a second, and animating every row of a long song was promoting
+   well over a hundred elements to their own compositor layer at once. */
+@keyframes lyric-roman-in { from { transform: translateX(40px); } to { transform: translateX(0); } }
+@keyframes lyric-source-in { from { transform: translateX(28px); } to { transform: translateX(0); } }
+@keyframes lyric-english-in { from { transform: translateX(22px); } to { transform: translateX(0); } }
+@keyframes lyric-roman-out { from { transform: translateX(0); } to { transform: translateX(40px); } }
+@keyframes lyric-source-out { from { transform: translateX(0); } to { transform: translateX(28px); } }
+@keyframes lyric-english-out { from { transform: translateX(0); } to { transform: translateX(22px); } }
+.app-view-in-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-in 260ms var(--lyric-settle-ease); }
+.app-view-in-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-in 320ms var(--lyric-settle-ease); }
+.app-view-in-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-in 380ms var(--lyric-settle-ease); }
+.app-view-out-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-out 260ms var(--lyric-settle-ease); }
+.app-view-out-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-out 320ms var(--lyric-settle-ease); }
+.app-view-out-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-out 380ms var(--lyric-settle-ease); }
 .queue-pill {
   appearance: none;
   width: 34px;
@@ -397,15 +428,17 @@ body.queue-open .audio-player { bottom: 0; }
   .app-view-out-left { animation: none; }
   .app-stage,
   .audio-player { transition: none; }
+  /* These must match the cascade selectors' specificity, or the reduce
+     preference silently loses to them and the motion still plays. */
   .line-source,
   .line-roman,
   .line-english,
-  .app-view-in-right .line-source,
-  .app-view-in-right .line-roman,
-  .app-view-in-right .line-english,
-  .app-view-out-right .line-source,
-  .app-view-out-right .line-roman,
-  .app-view-out-right .line-english {
+  .app-view-in-right .line:nth-child(-n + 12) .line-source,
+  .app-view-in-right .line:nth-child(-n + 12) .line-roman,
+  .app-view-in-right .line:nth-child(-n + 12) .line-english,
+  .app-view-out-right .line:nth-child(-n + 12) .line-source,
+  .app-view-out-right .line:nth-child(-n + 12) .line-roman,
+  .app-view-out-right .line:nth-child(-n + 12) .line-english {
     animation: none;
     transition: none;
     transform: none;

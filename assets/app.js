@@ -281,6 +281,22 @@
     return songRoot;
   };
 
+  // The stylesheet owns the timings; read them rather than restating them here.
+  let cachedMotion = null;
+  const viewMotion = () => {
+    if (cachedMotion) return cachedMotion;
+    const styles = getComputedStyle(appStage);
+    const readMs = name => {
+      const raw = styles.getPropertyValue(name).trim();
+      const parsed = raw.endsWith("ms") ? parseFloat(raw)
+        : raw.endsWith("s") ? parseFloat(raw) * 1000
+        : NaN;
+      return Number.isFinite(parsed) ? parsed : null;
+    };
+    cachedMotion = { duration: readMs("--app-view-duration") ?? 220, settle: readMs("--app-view-settle") ?? 380 };
+    return cachedMotion;
+  };
+
   const transitionTo = async (nextRoot, direction, prepare) => {
     const currentRoot = appStage.querySelector(":scope > main");
     if (currentRoot === nextRoot) {
@@ -301,18 +317,37 @@
     const outgoingClass = direction === "right" ? "app-view-out-right" : "app-view-out-left";
     appStage.style.height = `${Math.max(currentRoot?.offsetHeight || 0, nextRoot.offsetHeight)}px`;
     appStage.classList.add("is-view-transitioning");
-    nextRoot.classList.add(incomingClass);
-    currentRoot?.classList.add(outgoingClass);
+    // Promote both views to their own compositor layer and let that land before
+    // the keyframes start. Adding will-change in the same frame as the animation
+    // costs the first frame, which is the frame the eye is most sensitive to.
+    void appStage.offsetHeight;
+    // Wait one painted frame, but never depend on one: rAF is paused in a
+    // hidden or backgrounded tab, and the transition must still complete.
     await new Promise(resolve => {
-      let settled = false;
-      const finish = () => {
-        if (settled) return;
-        settled = true;
+      let released = false;
+      const release = () => {
+        if (released) return;
+        released = true;
         resolve();
       };
-      nextRoot.addEventListener("animationend", finish, { once: true });
-      setTimeout(finish, 280);
+      requestAnimationFrame(release);
+      setTimeout(release, 32);
     });
+    nextRoot.classList.add(incomingClass);
+    currentRoot?.classList.add(outgoingClass);
+    // Wait for every layer, not just the page. The lyric rows go on settling
+    // after the slide has landed, and the previous listener ended the whole
+    // transition on the first animationend — which bubbles from descendants —
+    // so the slowest layer was cut off mid-travel and the outgoing view, the
+    // height pin, and the overflow clip all dropped while the page still moved.
+    const inMotion = [nextRoot, currentRoot]
+      .filter(root => root && typeof root.getAnimations === "function")
+      .flatMap(root => root.getAnimations({ subtree: true }))
+      .filter(animation => /^(?:app-view-|lyric-)/.test(animation.animationName || ""));
+    await Promise.race([
+      Promise.allSettled(inMotion.map(animation => animation.finished)),
+      new Promise(resolve => setTimeout(resolve, viewMotion().settle + 120)),
+    ]);
     currentRoot?.classList.remove(outgoingClass);
     currentRoot?.remove();
     nextRoot.classList.remove(incomingClass);

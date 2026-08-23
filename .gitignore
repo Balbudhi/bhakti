@@ -11,3 +11,4 @@ songs/*/audio.wav
 songs/*/audio.flac
 .pytest_cache/
 .omx/
+.claude/

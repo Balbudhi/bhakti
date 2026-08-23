@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 import unittest
 from pathlib import Path
 
@@ -131,7 +132,8 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('event.request.mode === "navigate"', worker)
         self.assertIn('cache.put(cacheKey, copy)', worker)
         self.assertIn('caches.match(cacheKey)', worker)
-        self.assertIn('bhakti-shell-v22', worker)
+        self.assertRegex(worker, r'const CACHE = "bhakti-shell-v\d+";',
+                         "the shell cache must stay versioned so a release invalidates it")
         self.assertIn('/assets/queue.js', worker)
         self.assertIn('/assets/app.js', worker)
 
@@ -283,7 +285,31 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn("body.queue-open { overflow: visible; }", css)
         self.assertIn("border: 1px solid rgba(244, 234, 208, 0.24);", css)
         self.assertIn("border: 1px solid rgba(244, 234, 208, 0.22);", css)
+        self.assertIn("--app-view-duration:", css)
+        self.assertIn("--app-view-settle:", css)
+        # The three lyric layers must stay perceptibly separate: different
+        # distances and different durations, ordered roman -> source -> english.
         self.assertIn("@keyframes lyric-roman-in", css)
+        distances = {
+            name: int(re.search(rf"@keyframes lyric-{name}-in .*?translateX\((\d+)px\)", css).group(1))
+            for name in ("roman", "source", "english")
+        }
+        self.assertGreater(distances["roman"], distances["source"])
+        self.assertGreater(distances["source"], distances["english"])
+        durations = {
+            name: int(re.search(rf"\.app-view-in-right [^{{]*\.line-{name} \{{ animation: lyric-{name}-in (\d+)ms", css).group(1))
+            for name in ("roman", "source", "english")
+        }
+        self.assertLess(durations["roman"], durations["source"])
+        self.assertLess(durations["source"], durations["english"])
+        # Only the rows above the fold cascade.
+        self.assertIn(".line:nth-child(-n + 12) .line-roman", css)
+        # The lyric layers must not borrow the page's front-loaded curve: it
+        # spends ~73% of the travel in the first 60ms, which is what made three
+        # separate layers read as one blur.
+        self.assertIn("--lyric-settle-ease:", css)
+        for name in ("roman", "source", "english"):
+            self.assertRegex(css, rf"\.line-{name} {{ animation: lyric-{name}-in \d+ms var\(--lyric-settle-ease\); }}")
         self.assertIn("body.queue-open .line-roman { transform: translateX(-13px); }", css)
         self.assertIn(".queue-action:active:not(:disabled)", css)
         self.assertIn("const reorderUpcoming", queue)
