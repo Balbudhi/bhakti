@@ -1,12 +1,4 @@
 :root {
-  /* One source of truth for view motion, on :root rather than .app-stage: the
-     fixed top controls are a sibling of the stage, so anything scoped to the
-     stage does not reach them and every var() in their animation shorthand
-     resolves to nothing, silently disabling it. app.js reads these too, so the
-     stylesheet and the teardown cannot drift apart. */
-  --app-view-duration: 220ms;
-  --app-view-ease: cubic-bezier(.22, 1, .36, 1);
-  --app-view-settle: 220ms;
   --app-player-height: 0px;
   --queue-panel-height: min(60dvh, 720px);
   --queue-panel-width: clamp(340px, 29vw, 460px);
@@ -52,14 +44,6 @@
 [data-app-view="library"] .app-view-icon-home,
 [data-app-view="song"] .app-view-icon-song { display: none; }
 
-/* The fixed top controls live in the shell, not inside <main>. A transform on
-   an ancestor becomes the containing block for position: fixed, so while the
-   page slid these buttons were anchored to <main> instead of the viewport —
-   they flew off by exactly the scroll offset and snapped back when the
-   transform was removed. Out here they never move. They act on the current
-   song, so they are hidden while the library is showing. */
-[data-app-view="library"] .song-top-controls { display: none; }
-
 .session-player-visible .library-page,
 .session-player-visible .library-view {
   padding-bottom: calc(164px + var(--app-player-height) + 24px);
@@ -85,50 +69,26 @@ body.queue-open .audio-player { bottom: 0; }
   right: 0;
   left: 0;
 }
-.app-view-in-left { animation: app-view-in-left var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-out-right { animation: app-view-out-right var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-in-right { animation: app-view-in-right var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-out-left { animation: app-view-out-left var(--app-view-duration) var(--app-view-ease) both; }
-/* Percentages track the stage box; vw included the scrollbar and overshot. */
-@keyframes app-view-in-left { from { transform: translateX(-100%); } to { transform: translateX(0); } }
-@keyframes app-view-out-right { from { transform: translateX(0); } to { transform: translateX(100%); } }
-@keyframes app-view-in-right { from { transform: translateX(100%); } to { transform: translateX(0); } }
-@keyframes app-view-out-left { from { transform: translateX(0); } to { transform: translateX(-100%); } }
-
-/* The three lyric layers carry small differential offsets so the text reads as
-   its own plane sliding over the ground, but they share one duration and one
-   curve: they arrive together and the whole move stays snappy. Staggering the
-   arrival times was tried and rejected — it reads as lag, not as depth.
-
-   Only the rows above the fold animate. Below it nothing is visible for the
-   length of the transition, and animating every row of a long song promoted
-   well over a hundred elements to their own compositor layer at once. */
-@keyframes lyric-roman-in { from { transform: translateX(18px); } to { transform: translateX(0); } }
+.app-view-in-left { animation: app-view-in-left 220ms cubic-bezier(.22,1,.36,1); }
+.app-view-out-right { animation: app-view-out-right 220ms cubic-bezier(.22,1,.36,1); }
+.app-view-in-right { animation: app-view-in-right 220ms cubic-bezier(.22,1,.36,1); }
+.app-view-out-left { animation: app-view-out-left 220ms cubic-bezier(.22,1,.36,1); }
+@keyframes app-view-in-left { from { transform: translateX(-100vw); } to { transform: translateX(0); } }
+@keyframes app-view-out-right { from { transform: translateX(0); } to { transform: translateX(100vw); } }
+@keyframes app-view-in-right { from { transform: translateX(100vw); } to { transform: translateX(0); } }
+@keyframes app-view-out-left { from { transform: translateX(0); } to { transform: translateX(-100vw); } }
 @keyframes lyric-source-in { from { transform: translateX(10px); } to { transform: translateX(0); } }
+@keyframes lyric-roman-in { from { transform: translateX(18px); } to { transform: translateX(0); } }
 @keyframes lyric-english-in { from { transform: translateX(6px); } to { transform: translateX(0); } }
-@keyframes lyric-roman-out { from { transform: translateX(0); } to { transform: translateX(18px); } }
 @keyframes lyric-source-out { from { transform: translateX(0); } to { transform: translateX(10px); } }
+@keyframes lyric-roman-out { from { transform: translateX(0); } to { transform: translateX(18px); } }
 @keyframes lyric-english-out { from { transform: translateX(0); } to { transform: translateX(6px); } }
-.app-view-in-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-in var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-in-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-in var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-in-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-in var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-out-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-out var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-out-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-out var(--app-view-duration) var(--app-view-ease) both; }
-.app-view-out-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-out var(--app-view-duration) var(--app-view-ease) both; }
-
-/* The fixed top controls sit in the shell so they never re-anchor mid-slide,
-   which means they also do not inherit the page's transform. They travel on
-   their own, on the page's exact timing, so the lock and share buttons ride the
-   swipe instead of sitting still. Viewport units here, not percentages: these
-   are small buttons, and 100% of a 34px button is not a slide. */
-@keyframes app-chrome-in-right { from { transform: translateX(100vw); } to { transform: translateX(0); } }
-@keyframes app-chrome-out-right { from { transform: translateX(0); } to { transform: translateX(100vw); } }
-.song-top-controls.app-chrome-in-right { animation: app-chrome-in-right var(--app-view-duration) var(--app-view-ease) both; }
-.song-top-controls.app-chrome-out-right { animation: app-chrome-out-right var(--app-view-duration) var(--app-view-ease) both; }
-/* Visible while sliding whichever view the body still reports. */
-.song-top-controls.app-chrome-in-right,
-.song-top-controls.app-chrome-out-right { display: flex; }
-
+.app-view-in-right .line-source { animation: lyric-source-in 210ms cubic-bezier(.22,1,.36,1); }
+.app-view-in-right .line-roman { animation: lyric-roman-in 180ms cubic-bezier(.22,1,.36,1); }
+.app-view-in-right .line-english { animation: lyric-english-in 220ms cubic-bezier(.22,1,.36,1); }
+.app-view-out-right .line-source { animation: lyric-source-out 210ms cubic-bezier(.22,1,.36,1); }
+.app-view-out-right .line-roman { animation: lyric-roman-out 180ms cubic-bezier(.22,1,.36,1); }
+.app-view-out-right .line-english { animation: lyric-english-out 220ms cubic-bezier(.22,1,.36,1); }
 .queue-pill {
   appearance: none;
   width: 34px;
@@ -434,22 +394,18 @@ body.queue-open .audio-player { bottom: 0; }
   .app-view-in-left,
   .app-view-out-right,
   .app-view-in-right,
-  .app-view-out-left,
-  .song-top-controls.app-chrome-in-right,
-  .song-top-controls.app-chrome-out-right { animation: none; }
+  .app-view-out-left { animation: none; }
   .app-stage,
   .audio-player { transition: none; }
-  /* These must match the cascade selectors' specificity, or the reduce
-     preference silently loses to them and the motion still plays. */
   .line-source,
   .line-roman,
   .line-english,
-  .app-view-in-right .line:nth-child(-n + 12) .line-source,
-  .app-view-in-right .line:nth-child(-n + 12) .line-roman,
-  .app-view-in-right .line:nth-child(-n + 12) .line-english,
-  .app-view-out-right .line:nth-child(-n + 12) .line-source,
-  .app-view-out-right .line:nth-child(-n + 12) .line-roman,
-  .app-view-out-right .line:nth-child(-n + 12) .line-english {
+  .app-view-in-right .line-source,
+  .app-view-in-right .line-roman,
+  .app-view-in-right .line-english,
+  .app-view-out-right .line-source,
+  .app-view-out-right .line-roman,
+  .app-view-out-right .line-english {
     animation: none;
     transition: none;
     transform: none;
