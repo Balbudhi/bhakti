@@ -5,8 +5,8 @@ lyrics in their original script, an IAST transliteration, a literal English
 translation, and a hover-or-tap gloss for each individual word — all synchronised to
 the recording, so the line you are reading is the line being sung.
 
-**Live site: [bhakti.eeshan.xyz](https://bhakti.eeshan.xyz)** · 229 songs · no build
-step, no framework, no tracking.
+**Live site: [bhakti.eeshan.xyz](https://bhakti.eeshan.xyz)** — no build step, no
+framework, no tracking.
 
 ## What a song page shows
 
@@ -147,11 +147,16 @@ under an ignored `.transcription/` directory and are never published.
 ## Deployment
 
 Pushing to `main` deploys the site to GitHub Pages via
-`.github/workflows/deploy-pages.yml`. A second workflow, `Intake Bhakti Songs`, runs the
-same pipeline on a hosted runner; it is `workflow_dispatch`-only, restricted to the
-repository owner, and accepts only public HTTPS media URLs. It has no public form,
-issue, comment, or webhook trigger, and reads its API key from an encrypted repository
-secret — a visitor can read the repository but cannot dispatch a billable run.
+`.github/workflows/deploy-pages.yml`. That workflow publishes an allowlist — the
+reader pages, assets, and catalogue — rather than the whole repository, so the
+engineering docs and pipeline scripts stay in the repository and off the website.
+A file added here is not served unless the allowlist names it.
+
+A second workflow, `Intake Bhakti Songs`, runs the same pipeline on a hosted runner.
+It is `workflow_dispatch`-only, restricted to the repository owner, and accepts only
+public HTTPS media URLs. It has no public form, issue, comment, or webhook trigger,
+and reads its API key from an encrypted repository secret — a visitor can read the
+repository but cannot dispatch a billable run.
 
 ## Contributing
 
