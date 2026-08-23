@@ -83,17 +83,19 @@ window.SONG_META = {
     {
       "sequenceIndex": 184,
       "title": "Mantra Puṣpāñjali",
-      "poet": "Traditional · Vedic",
-      "note": ""
+      "poet": "Vedic excerpts",
+      "note": "A ritual compilation rather than one authored song: Ṛgveda 10.90.16 opens it, the Kubera prayer is Taittirīya Āraṇyaka 1.31.6, and the sovereignty blessing is Aitareya Brāhmaṇa 8.15.1. These are anonymously transmitted Vedic texts."
     },
     {
       "sequenceIndex": 193,
-      "title": "Prārthanā",
-      "poet": "Traditional",
-      "note": "Closing Karacaraṇakṛtaṃ prayer and acclamations."
+      "title": "Śivāparādha-kṣamāpaṇa · Prārthanā",
+      "poet": "Traditionally attributed to Ādi Śaṅkarācārya",
+      "note": "The closing forgiveness verse is a Shaiva prayer. This Sai recension replaces its standard final address, Śrī Mahādeva Śambho, with Śrīprabho Sāīnātha; that substitution is marked."
     }
   ],
-  "adaptedSequenceIndices": []
+  "adaptedSequenceIndices": [
+    194
+  ]
 };
 
 window.SONG_LINES = {
@@ -11487,7 +11489,7 @@ window.SONG_LINES = {
   },
   "line-152": {
     "source": "हरिः ॐ यज्ञेन यज्ञमयजन्त देवास्तानि धर्माणि प्रथमान्यासन् ।",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "हरिः",
@@ -11582,7 +11584,7 @@ window.SONG_LINES = {
   },
   "line-153": {
     "source": "ते ह नाकं महिमानः सचन्त यत्र पूर्वे साध्याः सन्ति देवाः ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ते",
@@ -11713,7 +11715,7 @@ window.SONG_LINES = {
   },
   "line-154": {
     "source": "ॐ राजाधिराजाय प्रसह्यसाहिने । नमो वयं वैश्रवणाय कुर्महे ।",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -11769,7 +11771,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rājādhirājāya",
-        "gloss": "to the supreme king of kings",
+        "gloss": "to the king above kings (rājā + adhirāja)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11793,7 +11795,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇāya",
-        "gloss": "unto Vaishravana; unto Kubera",
+        "gloss": "to Vaiśravaṇa—\"son of Viśravas,\" a name of Kubera",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11804,11 +11806,11 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'rājādhirājāya', 'prasahyasāhine', and 'vaiśravaṇāya' are dative singular masculine. 'kurmahe' is present middle 1st person plural of 'kṛ'."
+    "grammarNote": "'rājādhirājāya' is rājā + adhirāja, literally a king above kings; it, 'prasahyasāhine', and 'vaiśravaṇāya' are dative singular masculine. Vaiśravaṇa is the patronymic \"son of Viśravas,\" used here for Kubera. 'kurmahe' is present middle 1st person plural of 'kṛ'."
   },
   "line-155": {
     "source": "स मे कामान् कामकामाय मह्यम् । कामेश्वरो वैश्रवणो दधातु ।",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स",
@@ -11860,7 +11862,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sa me kāmān kāmakāmāya mahyam | kāmeśvaro vaiśravaṇo dadhātu |",
-    "english": "{0:May he }{7:grant }{1:my }{2:kāmas }{4:unto me }{3:who desire desires; }{6:may Vaiśravaṇa, }{5:the Lord of desires, }{7:bestow them.}",
+    "english": "{0:May he—}{6:Vaiśravaṇa, Kubera, }{5:the Lord of desires—}{7:grant }{1:my }{2:kāmas }{4:to me, }{3:one who desires kāmas.}",
     "words": [
       {
         "roman": "sa",
@@ -11900,7 +11902,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇo",
-        "gloss": "Vaishravana; Kubera",
+        "gloss": "Vaiśravaṇa—\"son of Viśravas,\" a name of Kubera",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11911,11 +11913,11 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kāmān' is accusative plural masculine. 'kāmakāmāya' is a compound adjective in dative singular agreeing with 'mahyam'. 'dadhātu' is 3sg imperative of 'dhā'."
+    "grammarNote": "'kāmān' is accusative plural masculine. 'kāmakāmāya' is kāma + kāma, \"one who desires desires,\" in dative singular agreeing with 'mahyam'. Vaiśravaṇa is the patronymic \"son of Viśravas,\" a name of Kubera. 'dadhātu' is 3sg imperative of 'dhā'."
   },
   "line-156": {
     "source": "कुबेराय वैश्रवणाय महाराजाय नमः ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कुबेराय",
@@ -11947,13 +11949,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kuberāya",
-        "gloss": "unto Kubera",
+        "gloss": "to Kubera",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vaiśravaṇāya",
-        "gloss": "unto Vaishravana",
+        "gloss": "to Vaiśravaṇa—\"son of Viśravas,\" a name of Kubera",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11970,11 +11972,11 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dative constructions governed by 'namaḥ': 'kuberāya', 'vaiśravaṇāya', and 'mahārājāya'."
+    "grammarNote": "All three names are dative singular and are governed by 'namaḥ'. Vaiśravaṇa is not a second figure here: it is Kubera's patronymic, \"son of Viśravas.\""
   },
   "line-157": {
     "source": "ॐ स्वस्ति साम्राज्यं भौज्यं स्वाराज्यं वैराज्यं पारमेष्ठ्यं राज्यं महाराज्यमाधिपत्यमयं समन्तपर्यायी स्यात्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -12117,7 +12119,7 @@ window.SONG_LINES = {
   },
   "line-158": {
     "source": "सार्वभौमः सार्वायुष आन्तादापरार्धात् पृथिव्यै समुद्रपर्यन्ताया",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सार्वभौमः",
@@ -12188,7 +12190,7 @@ window.SONG_LINES = {
   },
   "line-159": {
     "source": "एकराळिति तदप्येष श्लोकोऽभिगीतो मरुतः परिवेष्टारो मरुत्तस्यावसन् गृहे । आविक्षितस्य कामप्रेर्विश्वेदेवाः सभासद इति ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "एकराळिति",
@@ -12450,7 +12452,7 @@ window.SONG_LINES = {
   },
   "line-161": {
     "source": "करचरणकृतं वाक्कायजं कर्मजं वा श्रवणनयनजं वा मानसं वापराधम् ।",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "करचरणकृतं",
@@ -12557,7 +12559,7 @@ window.SONG_LINES = {
   },
   "line-162": {
     "source": "विहितमविहितं वा सर्वमेतत्क्षमस्व जय जय करुणाब्धे श्रीप्रभो साईनाथ ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "विहितमविहितं",
