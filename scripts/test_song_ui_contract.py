@@ -201,6 +201,10 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn('queue-remove"', app)
         self.assertIn('bhakti:add-to-queue', app)
         self.assertIn('data-queue-action="tools"', app)
+        self.assertIn("document.body.append(queuePill)", app)
+        self.assertNotIn("queue-inline-tools", app)
+        self.assertIn(".queue-sheet-tools", css)
+        self.assertIn("--queue-control-height", css)
         self.assertIn("const reorderUpcoming", queue)
 
     def test_design_standard_is_part_of_repository_authority(self) -> None:

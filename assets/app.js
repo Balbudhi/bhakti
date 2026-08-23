@@ -45,7 +45,6 @@
   let draggedRow = null;
   let dragPointerId = null;
   let dragMoved = false;
-  let rowToolsEntryId = "";
   let queueToolsExpanded = false;
   const songDataCache = new Map();
 
@@ -62,7 +61,7 @@
   queuePill.hidden = true;
   queuePill.setAttribute("aria-expanded", "false");
   queuePill.setAttribute("aria-controls", "queueSheet");
-  player.append(queuePill);
+  document.body.append(queuePill);
 
   const queueSheet = document.createElement("section");
   queueSheet.className = "queue-sheet";
@@ -367,26 +366,26 @@
       <div class="queue-row${currentRow ? " is-current" : ""}" data-queue-index="${absoluteIndex}" data-queue-entry-id="${escapeHtml(item.entryId)}">
         ${currentRow
           ? `<span class="queue-current-dot" aria-hidden="true">●</span>`
-          : `<button class="queue-drag-handle" type="button" data-queue-action="row-tools" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder or edit ${escapeHtml(item.title)}; drag, use arrow keys, or press for options" title="Drag to reorder; press for options">⋮⋮</button>`}
+          : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag or use arrow keys" title="Drag to reorder; use arrow keys">⋮⋮</button>`}
         <div class="queue-copy">${currentRow
           ? `<div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}`
           : `<button class="queue-song-select" type="button" data-queue-action="play"><span class="queue-song-title">${escapeHtml(item.title)}</span>${item.credit ? `<span class="queue-credit">${escapeHtml(item.credit)}</span>` : ""}</button>`}</div>
-        ${!currentRow && rowToolsEntryId === item.entryId
-          ? `<button class="queue-remove-text" type="button" data-queue-action="remove">Remove</button>`
+        ${!currentRow
+          ? `<button class="queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>`
           : `<span aria-hidden="true"></span>`}
       </div>`;
     queueSheet.innerHTML = `
+      <div class="queue-sheet-tools">
+        <button class="queue-tools-toggle" type="button" data-queue-action="tools" aria-label="${queueToolsExpanded ? "Hide" : "Show"} playlist actions" aria-expanded="${queueToolsExpanded}">•••</button>
+        <div class="queue-tools"${queueToolsExpanded ? "" : " hidden"}>
+          <button class="queue-action" type="button" data-queue-action="share">Share</button>
+          <button class="queue-action" type="button" data-queue-action="shuffle"${future.length < 2 ? " disabled" : ""}>Shuffle</button>
+          <button class="queue-action" type="button" data-queue-action="clear">Clear</button>
+        </div>
+      </div>
       <div class="queue-list">
         ${row(current, absoluteStart, true)}
         ${future.map((item, index) => row(item, absoluteStart + index + 1)).join("")}
-        <div class="queue-inline-tools">
-          <button class="queue-tools-toggle" type="button" data-queue-action="tools" aria-label="${queueToolsExpanded ? "Hide" : "Show"} playlist actions" aria-expanded="${queueToolsExpanded}">•••</button>
-          <div class="queue-tools"${queueToolsExpanded ? "" : " hidden"}>
-            <button class="queue-action" type="button" data-queue-action="share">Share</button>
-            <button class="queue-action" type="button" data-queue-action="shuffle"${future.length < 2 ? " disabled" : ""}>Shuffle</button>
-            <button class="queue-action" type="button" data-queue-action="clear">Clear</button>
-          </div>
-        </div>
       </div>
       `;
     queueSheet.querySelector(".queue-list").scrollTop = previousScrollTop;
@@ -395,7 +394,6 @@
   const openQueue = () => {
     if (!queueIsVisible(queueState)) return;
     queueToolsExpanded = false;
-    rowToolsEntryId = "";
     renderQueueSheet();
     queueSheet.hidden = false;
     document.body.classList.add("queue-open");
@@ -568,11 +566,6 @@
       queueToolsExpanded = !queueToolsExpanded;
       renderQueueSheet();
       queueSheet.querySelector("[data-queue-action='tools']")?.focus();
-    } else if (action === "row-tools") {
-      rowToolsEntryId = rowToolsEntryId === row.dataset.queueEntryId ? "" : row.dataset.queueEntryId;
-      const entryId = row.dataset.queueEntryId;
-      renderQueueSheet();
-      queueSheet.querySelector(`[data-queue-drag="${CSS.escape(entryId)}"]`)?.focus();
     }
   });
   queueSheet.addEventListener("keydown", event => {
