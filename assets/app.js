@@ -49,7 +49,7 @@
   let dataLoadChain = Promise.resolve();
   let advancing = false;
   const TOUCH_DRAG_HOLD_MS = 350;
-  const DRAG_SLOP_PX = 8;
+  const DRAG_SLOP_PX = 12;
   let draggedRow = null;
   let dragPointerId = null;
   let dragTouchId = null;
@@ -696,14 +696,15 @@
     dragActive = false;
     dragMoved = false;
   };
-  const dragTargetRow = target => {
+  const dragTargetRow = (target, allowActionButtons = false) => {
     const row = target.closest?.(".queue-row:not(.is-current)");
-    if (!row || target.closest(".queue-copy, [data-queue-action]")) return null;
+    if (!row || target.closest(".queue-copy")) return null;
+    if (!allowActionButtons && target.closest("[data-queue-action]")) return null;
     return row;
   };
   queueSheet.addEventListener("pointerdown", event => {
     if (event.pointerType === "touch" || draggedRow) return;
-    const row = dragTargetRow(event.target);
+    const row = dragTargetRow(event.target, true);
     if (!row) return;
     startDragGesture({
       row,
@@ -730,7 +731,7 @@
     .find(touch => touch.identifier === dragTouchId);
   queueSheet.addEventListener("touchstart", event => {
     if (draggedRow || event.touches.length !== 1) return;
-    const row = dragTargetRow(event.target);
+    const row = dragTargetRow(event.target, true);
     const touch = event.changedTouches[0];
     if (!row || !touch) return;
     startDragGesture({
