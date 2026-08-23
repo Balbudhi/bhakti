@@ -21,11 +21,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rasa.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rasa.m4a",
       "type": "audio/mp4"
     }
   ],

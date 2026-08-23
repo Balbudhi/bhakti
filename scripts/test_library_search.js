@@ -19,7 +19,7 @@ vm.runInNewContext(
   context
 );
 
-const { matchesSearch } = context.window.BHAKTI_SEARCH;
+const { matchesSearch, filterSongs } = context.window.BHAKTI_SEARCH;
 const song = {
   slug: "thanu-karagadavaralli",
   title: "Tanu Karagadavaralli Puṣpavanolle",
@@ -49,5 +49,12 @@ for (const slug of ["koi-hor-nahi", "jhoothe-jag-ne", "duniya-de-dukhan"]) {
   assert.equal(vaishnoSong.subjectTags.includes("Vaiṣṇo Devī"), true);
   assert.equal(matchesSearch(vaishnoSong, "Vaishno Devi"), true);
 }
+
+const filtered = filterSongs([
+  song,
+  { ...song, slug: "other", title: "Other", languageTags: ["Hindi"], subjectTags: ["Kṛṣṇa"] },
+  { ...song, slug: "third", title: "Third", languageTags: ["Kannada"], subjectTags: ["Kṛṣṇa"] },
+], { languages: ["Kannada"], subjects: ["Śiva"], query: "Akkamahadevi" });
+assert.deepEqual(filtered.map(item => item.slug), ["thanu-karagadavaralli"]);
 
 process.stdout.write("library search aliases: ok\n");

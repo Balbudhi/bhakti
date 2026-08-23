@@ -1,5 +1,12 @@
 # Bhakti song-page contract
 
+## Design authority
+
+`docs/DESIGN_STANDARD.md` is the maintained visual and interaction contract.
+Read and apply it before changing public UI, responsive behavior, controls,
+icons, disclosure, player layout, or motion. New features reuse the established
+language before introducing another surface or component style.
+
 This repository is a public static song library deployed at
 `https://bhakti.eeshan.xyz`. Its source/deployment repository is not a public
 product URL. Do not expose review packets, local paths, extraction notes, or

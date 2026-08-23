@@ -340,10 +340,10 @@ function escapeHtml(s) {
   }[c]));
 }
 
-const PAGE_META = {...(window.SONG_META || {}), ...(window.BHAKTI_EDITION_META || {})};
-const PAGE_LINES = window.SONG_LINES || null;
-const PAGE_SEQUENCE = window.SONG_SEQUENCE || null;
-const PAGE_TIMINGS = window.SONG_TIMINGS || null;
+let PAGE_META = {...(window.SONG_META || {}), ...(window.BHAKTI_EDITION_META || {})};
+let PAGE_LINES = window.SONG_LINES || null;
+let PAGE_SEQUENCE = window.SONG_SEQUENCE || null;
+let PAGE_TIMINGS = window.SONG_TIMINGS || null;
 
 function indicesFrom(value) {
   return String(value || "").split(/\s+/).filter(Boolean).map(Number).filter(Number.isInteger);
@@ -596,7 +596,10 @@ function deactivateAll(root) {
   root.querySelectorAll(".word-link.is-hi").forEach(el => el.classList.remove("is-hi"));
 }
 
+const WIRED_INTERACTION_ROOTS = new WeakSet();
 function wireInteractions(root) {
+  if (WIRED_INTERACTION_ROOTS.has(root)) return;
+  WIRED_INTERACTION_ROOTS.add(root);
   let stickyWord = null;
   let hoverWord  = null;
 
@@ -687,40 +690,32 @@ function writeLyricsFollowPreference(enabled) {
 }
 let lyricsFollowPlayback = readLyricsFollowPreference();
 
+const WIRED_KARAOKE_AUDIO = new WeakSet();
 function setupKaraoke() {
   const audio = document.getElementById("songAudio");
-  const TIMINGS = PAGE_TIMINGS || [];
-  if (!audio || !TIMINGS.length) return;
+  if (!audio || WIRED_KARAOKE_AUDIO.has(audio)) return;
+  WIRED_KARAOKE_AUDIO.add(audio);
 
   let activeIdx = -1;
   let karaokeFrame = 0;
-  const seq = PAGE_SEQUENCE || SEQUENCE;
 
+  const activeArticle = () => {
+    const seq = PAGE_SEQUENCE || SEQUENCE;
+    return activeIdx >= 0 && seq[activeIdx]
+      ? document.getElementById(`ln-${activeIdx}-${seq[activeIdx].ref}`)
+      : null;
+  };
   const updateKaraoke = () => {
-    const t = audio.currentTime;
-    const idx = TIMINGS.findIndex(seg => t >= seg.start && t < seg.end);
-    if (idx === activeIdx) return;
-    activeIdx = idx;
-
-    document.querySelectorAll(".line.is-singing").forEach(el => el.classList.remove("is-singing"));
-    if (idx < 0) return;
-
-    const article = document.getElementById(`ln-${idx}-${seq[idx].ref}`);
+    const timings = PAGE_TIMINGS || [];
+    const nextIndex = timings.findIndex(segment => audio.currentTime >= segment.start && audio.currentTime < segment.end);
+    if (nextIndex === activeIdx) return;
+    activeIdx = nextIndex;
+    document.querySelectorAll(".line.is-singing").forEach(element => element.classList.remove("is-singing"));
+    const article = activeArticle();
     if (!article) return;
     article.classList.add("is-singing");
-
-    if (lyricsFollowPlayback) {
-      article.scrollIntoView({ behavior: "auto", block: "center" });
-    }
+    if (lyricsFollowPlayback) article.scrollIntoView({ behavior: "auto", block: "center" });
   };
-
-  // If the listener re-links playback after reading elsewhere, bring the
-  // current line back into view once. Playback and highlighting never pause.
-  window.addEventListener("bhakti:lyrics-follow-change", event => {
-    if (!event.detail?.enabled || activeIdx < 0) return;
-    const active = document.getElementById(`ln-${activeIdx}-${seq[activeIdx].ref}`);
-    active?.scrollIntoView({ behavior: "auto", block: "center" });
-  });
   const tickKaraoke = () => {
     updateKaraoke();
     if (!audio.paused && !audio.ended) karaokeFrame = requestAnimationFrame(tickKaraoke);
@@ -730,28 +725,33 @@ function setupKaraoke() {
     updateKaraoke();
     if (!karaokeFrame) karaokeFrame = requestAnimationFrame(tickKaraoke);
   };
+  const resetKaraoke = () => {
+    activeIdx = -1;
+    document.querySelectorAll(".line.is-singing").forEach(element => element.classList.remove("is-singing"));
+    if (!audio.paused) startKaraokeClock();
+  };
+
   audio.addEventListener("play", startKaraokeClock);
   audio.addEventListener("seeking", updateKaraoke);
   audio.addEventListener("seeked", updateKaraoke);
   audio.addEventListener("timeupdate", updateKaraoke);
+  window.addEventListener("bhakti:song-change", resetKaraoke);
+  window.addEventListener("bhakti:lyrics-follow-change", event => {
+    if (event.detail?.enabled) activeArticle()?.scrollIntoView({ behavior: "auto", block: "center" });
+  });
 
-  // Seeking is explicit. Lyric text remains available for selection, copying,
-  // and word meanings without unexpectedly moving audio on touch devices.
-  document.getElementById("songRoot").addEventListener("click", e => {
-    const seekButton = e.target.closest(".line-seek");
+  // Seeking is explicit. Event delegation keeps this binding valid when the
+  // reader is replaced during a persistent listening session.
+  document.addEventListener("click", event => {
+    const seekButton = event.target.closest?.(".line-seek");
     if (!seekButton) return;
     const article = seekButton.closest(".line");
-    if (!article) return;
-    const start = Number(article.dataset.start);
+    const start = Number(article?.dataset.start);
     if (!Number.isFinite(start)) return;
     const seekAndPlay = () => {
       audio.currentTime = start;
       audio.play().catch(() => {});
     };
-
-    // A click may arrive before preload="metadata" has resolved. Setting
-    // currentTime then can be silently reset to 0 by the browser, making a
-    // correct timing map appear wrong. Seek only once the duration is known.
     if (audio.readyState >= HTMLMediaElement.HAVE_METADATA) seekAndPlay();
     else audio.addEventListener("loadedmetadata", seekAndPlay, { once: true });
   });
@@ -762,6 +762,7 @@ function setupKaraoke() {
    ============================================================= */
 
 function canonicalSongUrl() {
+  if (PAGE_META?.slug) return new URL(`/songs/${encodeURIComponent(PAGE_META.slug)}/`, window.location.origin).href;
   const canonical = document.querySelector('link[rel="canonical"]')?.href;
   const url = new URL(canonical || window.location.href);
   url.search = "";
@@ -824,7 +825,8 @@ function setupTopControls() {
   const shareButton = document.getElementById("songShare") || document.querySelector(".song-share");
   const syncButton = document.getElementById("songSync") || document.querySelector(".song-sync");
 
-  if (shareButton) {
+  if (shareButton && !shareButton.dataset.bhaktiBound) {
+    shareButton.dataset.bhaktiBound = "true";
     shareButton.addEventListener("click", async () => {
       const url = canonicalSongUrl();
       if (shouldUseNativeShare()) {
@@ -841,7 +843,8 @@ function setupTopControls() {
     });
   }
 
-  if (syncButton) {
+  if (syncButton && !syncButton.dataset.bhaktiBound) {
+    syncButton.dataset.bhaktiBound = "true";
     const updateSyncButton = () => {
       syncButton.classList.toggle("is-unlinked", !lyricsFollowPlayback);
       syncButton.setAttribute("aria-pressed", String(lyricsFollowPlayback));
@@ -880,7 +883,8 @@ function setupAudioPlayer() {
   const barEl   = document.getElementById("apProgressBar");
   const elapsed = document.getElementById("apElapsed");
   const duration = document.getElementById("apDuration");
-  if (!audio || !btn) return;
+  if (!audio || !btn || audio.dataset.bhaktiPlayerBound) return;
+  audio.dataset.bhaktiPlayerBound = "true";
 
   const updateTime = () => {
     if (elapsed) elapsed.textContent = fmtTime(audio.currentTime || 0);
@@ -941,9 +945,38 @@ function setupAudioPlayer() {
   updateTime();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function snapshotGlobals() {
+  return {
+    meta: {...(window.SONG_META || {}), ...(window.BHAKTI_EDITION_META || {})},
+    lines: window.SONG_LINES || null,
+    sequence: window.SONG_SEQUENCE || null,
+    timings: window.SONG_TIMINGS || null,
+  };
+}
+
+function setSong(data) {
+  if (!data?.meta || !data?.lines || !data?.sequence || !data?.timings) {
+    throw new TypeError("complete song data is required");
+  }
+  PAGE_META = {...data.meta};
+  PAGE_LINES = data.lines;
+  PAGE_SEQUENCE = data.sequence;
+  PAGE_TIMINGS = data.timings;
+  selectedTextEdition = null;
   render();
   setupTopControls();
   setupAudioPlayer();
   setupKaraoke();
-});
+  window.dispatchEvent(new CustomEvent("bhakti:song-change", { detail: { slug: PAGE_META.slug || "" } }));
+}
+
+function mount() {
+  render();
+  setupTopControls();
+  setupAudioPlayer();
+  setupKaraoke();
+}
+
+window.BHAKTI_READER = Object.freeze({ mount, setSong, snapshotGlobals });
+
+document.addEventListener("DOMContentLoaded", mount, { once: true });

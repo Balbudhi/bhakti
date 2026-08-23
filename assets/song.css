@@ -98,13 +98,12 @@ html, body {
 #songShare svg,
 #songSync svg { width: 18px; height: 18px; }
 
-/* The off state is an intentional visual distinction, not a disabled control:
-   playback continues, but it no longer moves the reading position. The link
-   glyph itself stays constant; only its weight and its ring change. */
-#songSync[aria-pressed="false"] {
-  border-style: dashed;
-}
-#songSync[aria-pressed="false"] svg { opacity: 0.52; }
+/* A matched lock pair communicates the state directly without changing the
+   control's ring, weight, or position. Locked means lyrics follow playback;
+   unlocked means the reader has detached scrolling from playback. */
+#songSync .sync-icon { display: block; }
+#songSync[aria-pressed="true"] .sync-icon-unlock,
+#songSync[aria-pressed="false"] .sync-icon-lock { display: none; }
 
 /* A quiet confirmation, deliberately adjacent to Share rather than a modal or
    screen-wide banner. It exists only after a desktop copy attempt. */

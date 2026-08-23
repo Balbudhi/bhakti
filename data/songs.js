@@ -1,6 +1,7 @@
 window.BHAKTI_SONGS = [
   {
     "slug": "koi-hor-nahi",
+    "queueId": "1b54ca76",
     "title": "Koī Hor Nahī Hai Merā",
     "credit": "Aman Ji · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
@@ -19,10 +20,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Aman Ji",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koi-hor-nahi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jai Mātā Dī"
   },
   {
     "slug": "bolo-lakshmi-maat-ki-jai",
+    "queueId": "4d238066",
     "title": "Bolo Lakṣmī Māt Kī Jay!",
     "credit": "Amit Kumar",
     "languageTags": [
@@ -45,10 +53,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Amit Kumar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bolo-lakshmi-maat-ki-jai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "jaya-jagdisha-hare",
+    "queueId": "0eddb422",
     "title": "Jaya Jagdisha Hare",
     "credit": "Pandit Shardha Ram Phillauri · Anup Jalota",
     "languageTags": [
@@ -64,10 +79,17 @@ window.BHAKTI_SONGS = [
     "writer": "Pandit Shardha Ram Phillauri",
     "singer": "Anup Jalota",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaya-jagdisha-hare.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "khel-mandiyela",
+    "queueId": "00ce4003",
     "title": "Khel Māṇḍiyelā",
     "credit": "Tukārām · Anuradha Paudwal",
     "languageTags": [
@@ -81,10 +103,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/khel-mandiyela.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/khel-mandiyela.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "sundar-te-dhyan",
+    "queueId": "3c5bad14",
     "title": "Sundar Te Dhyān",
     "credit": "Tukārām · Anuradha Paudwal",
     "languageTags": [
@@ -98,10 +131,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sundar-te-dhyan.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sundar-te-dhyan.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "vrkshavalli-amha",
+    "queueId": "6fc8236b",
     "title": "Vṛkṣavallī Āmhā",
     "credit": "Tukārām · Anuradha Paudwal",
     "languageTags": [
@@ -118,10 +162,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vrkshavalli-amha.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vrkshavalli-amha.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "anandache-dohi",
+    "queueId": "64c2cc21",
     "title": "Ānandāche Dohī",
     "credit": "Tukārām · Anuradha Paudwal",
     "languageTags": [
@@ -136,10 +191,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anandache-dohi.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anandache-dohi.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "jai-mahakali-aarti",
+    "queueId": "e2616bc7",
     "title": "Jai Mahakali Aarti",
     "credit": "Anuradha Paudwal",
     "languageTags": [
@@ -162,10 +228,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Anuradha Paudwal",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-mahakali-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kālī"
   },
   {
     "slug": "baso-mere-nainan-me-nandalal",
+    "queueId": "46fc7fb6",
     "title": "Baso Mere Nainan Mẽ Nandalāl",
     "credit": "Mīrābāī · Anuradha Paudwal · Gopal Marathe",
     "languageTags": [
@@ -186,10 +259,21 @@ window.BHAKTI_SONGS = [
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
     "composer": "Gopal Marathe",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baso-mere-nainan-me-nandalal.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baso-mere-nainan-me-nandalal.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Swaranjali"
   },
   {
     "slug": "mere-to-giridhar-gopal",
+    "queueId": "77a76cd2",
     "title": "Mere To Giridhara Gopāla",
     "credit": "Mīrābāī · Anuradha Paudwal",
     "languageTags": [
@@ -210,10 +294,21 @@ window.BHAKTI_SONGS = [
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-to-giridhar-gopal.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-to-giridhar-gopal.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "chakar-rakho-ji",
+    "queueId": "77e5ac2d",
     "title": "Chākar Rākho Jī",
     "credit": "Mīrābāī · Anuradha Paudwal",
     "languageTags": [
@@ -235,10 +330,21 @@ window.BHAKTI_SONGS = [
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "mhare-ghar-ao-pritam-pyara",
+    "queueId": "8f8a03f9",
     "title": "Mhāre Ghara Āo Prītama Pyārā",
     "credit": "Mīrābāī · Anuradha Paudwal",
     "languageTags": [
@@ -260,10 +366,21 @@ window.BHAKTI_SONGS = [
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhare-ghar-ao-pritam-pyara.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhare-ghar-ao-pritam-pyara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "prabhu-ji-tuma-candana-hama-pani",
+    "queueId": "bd3e7502",
     "title": "Prabhu Jī Tuma Candana Hama Pānī",
     "credit": "Ravidās · Anuradha Paudwal · Surinder Kohli",
     "languageTags": [
@@ -283,10 +400,21 @@ window.BHAKTI_SONGS = [
     "writer": "Ravidās",
     "singer": "Anuradha Paudwal",
     "composer": "Surinder Kohli",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-ji-tuma-candana-hama-pani.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-ji-tuma-candana-hama-pani.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Bhajan Sandhya Vol.1"
   },
   {
     "slug": "bhetilagi-jiva",
+    "queueId": "c926fd92",
     "title": "Bhēṭīlāgī Jīvā",
     "credit": "Tukārām · Anuradha Paudwal",
     "languageTags": [
@@ -304,10 +432,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhetilagi-jiva.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhetilagi-jiva.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "om-jai-gangadhar-aarti",
+    "queueId": "02354c80",
     "title": "Om Jai Gangadhar Aarti",
     "credit": "Anuradha Paudwal",
     "languageTags": [
@@ -323,10 +462,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Anuradha Paudwal",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-jai-gangadhar-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "ghana-shyama-sundara",
+    "queueId": "f260a099",
     "title": "Ghanashyāma Sundarā",
     "credit": "Anuradha Paudwal & Ravindra Sathe",
     "languageTags": [
@@ -343,10 +489,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Anuradha Paudwal & Ravindra Sathe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ghana-shyama-sundara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "koi-bhaje",
+    "queueId": "0e44c39b",
     "title": "Koi Bhaje Krishna",
     "credit": "Aparna Mayekar · Sandeep, Santosh & Anant Thorat",
     "languageTags": [
@@ -367,10 +520,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Aparna Mayekar",
     "composer": "Sandeep, Santosh & Anant Thorat",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koi-bhaje.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koi-bhaje.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "rom-rom-mein-basne-wale-ram",
+    "queueId": "9c7c7fa8",
     "title": "Rom Rom Meṃ Basne Vāle Rām",
     "credit": "Sahir Ludhianvi · Asha Bhosle · Ravi",
     "languageTags": [
@@ -387,10 +551,21 @@ window.BHAKTI_SONGS = [
     "writer": "Sahir Ludhianvi",
     "singer": "Asha Bhosle",
     "composer": "Ravi",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rom-rom-mein-basne-wale-ram.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rom-rom-mein-basne-wale-ram.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Neel Kamal"
   },
   {
     "slug": "kaha-dhundhu-sai",
+    "queueId": "e7066e86",
     "title": "Kaha Dhundhu Sai",
     "credit": "Ashok Khare · Sandeep, Santosh & Anant Thorat",
     "languageTags": [
@@ -406,10 +581,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Ashok Khare",
     "composer": "Sandeep, Santosh & Anant Thorat",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaha-dhundhu-sai.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaha-dhundhu-sai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "jehi-sumirat-siddhi-hoi",
+    "queueId": "e467474d",
     "title": "Jehi Sumirat Siddhi Hoi",
     "credit": "Tulsīdās · Ashwini Bhide",
     "languageTags": [
@@ -427,10 +613,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Ashwini Bhide",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jehi-sumirat-siddhi-hoi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "jai-ganesh-gananath-dayanidhi",
+    "queueId": "958337ae",
     "title": "Jai Ganesh Gananath Dayanidhi",
     "credit": "Ashwini Bhide",
     "languageTags": [
@@ -446,10 +639,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Ashwini Bhide",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-ganesh-gananath-dayanidhi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "jai-shri-shankar-sut-ganesh",
+    "queueId": "af2352fd",
     "title": "Jai Shri Shankar Sut Ganesh",
     "credit": "Ashwini Bhide",
     "languageTags": [
@@ -465,10 +665,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Ashwini Bhide",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shri-shankar-sut-ganesh.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "ganapat-vighna-haran",
+    "queueId": "4e0f2a07",
     "title": "Ganapat Vighna Haran",
     "credit": "Ashwini Bhide",
     "languageTags": [
@@ -486,10 +693,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Ashwini Bhide",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ganapat-vighna-haran.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "main-dharu-tiharo-dhyan",
+    "queueId": "1c0cf168",
     "title": "Main Dharu Tiharo Dhyan",
     "credit": "Kālīrām · Ashwini Bhide",
     "languageTags": [
@@ -508,10 +722,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kālīrām",
     "singer": "Ashwini Bhide",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-dharu-tiharo-dhyan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kālī"
   },
   {
     "slug": "jai-jai-jai-giriraj-kishori",
+    "queueId": "94f67325",
     "title": "Jai Jai Jai Giriraj Kishori",
     "credit": "Tulsīdās · Ashwini Bhide",
     "languageTags": [
@@ -529,10 +750,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Ashwini Bhide",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-jai-jai-giriraj-kishori.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "tero-chakar-kare-pukar",
+    "queueId": "7375e77a",
     "title": "Tero Chakar Kare Pukar",
     "credit": "Ashwini Bhide",
     "languageTags": [
@@ -548,10 +776,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Ashwini Bhide",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tero-chakar-kare-pukar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "choti-choti-gaiya-chote-chote-gwal",
+    "queueId": "a46714ba",
     "title": "Chhoṭī Chhoṭī Gaiyā̃, Chhoṭe Chhoṭe Gwāl",
     "credit": "Traditional · Asif Jeriya & Ami Joshi · Manoj-Vimal",
     "languageTags": [
@@ -569,10 +804,21 @@ window.BHAKTI_SONGS = [
     "writer": "Traditional",
     "singer": "Asif Jeriya & Ami Joshi",
     "composer": "Manoj-Vimal",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/choti-choti-gaiya-chote-chote-gwal.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/choti-choti-gaiya-chote-chote-gwal.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "anuraniya-thokada",
+    "queueId": "aef9a379",
     "title": "Aṇuraṇiyā Thokadā",
     "credit": "Tukārām · Bhimsen Joshi · Ram Pathak",
     "languageTags": [
@@ -588,10 +834,21 @@ window.BHAKTI_SONGS = [
     "writer": "Tukārām",
     "singer": "Bhimsen Joshi",
     "composer": "Ram Pathak",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anuraniya-thokada.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anuraniya-thokada.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gajalele Abhang"
   },
   {
     "slug": "darsan-dena-pran-piyare",
+    "queueId": "bc6038cc",
     "title": "Darśan Denā Prāṇ Piyāre",
     "credit": "Rasik Khushal · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -608,10 +865,17 @@ window.BHAKTI_SONGS = [
     "writer": "Rasik Khushal",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/darsan-dena-pran-piyare.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rasik Khushal"
   },
   {
     "slug": "beet-gaye-din-bhajan-bina-re",
+    "queueId": "ec52d942",
     "title": "Bīt Gaye Din Bhajan Binā Re",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -630,10 +894,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/beet-gaye-din-bhajan-bina-re.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kabīr"
   },
   {
     "slug": "kaya-nahin-teri-nahin-teri",
+    "queueId": "01597cd7",
     "title": "Kāyā Nahīṃ Terī Nahīṃ Terī",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -652,10 +923,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaya-nahin-teri-nahin-teri.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kabīr"
   },
   {
     "slug": "naam-japan-kyon-chhod-diya",
+    "queueId": "4dd13911",
     "title": "Nām Japan Kyoṃ Choṛ Diyā",
     "credit": "Khalas · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -672,10 +950,17 @@ window.BHAKTI_SONGS = [
     "writer": "Khalas",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naam-japan-kyon-chhod-diya.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Khalas"
   },
   {
     "slug": "sab-paise-ke-bhai",
+    "queueId": "f4291178",
     "title": "Sab Paise Ke Bhāī",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -694,10 +979,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sab-paise-ke-bhai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kabīr"
   },
   {
     "slug": "sangat-santan-ki-karle",
+    "queueId": "48474519",
     "title": "Saṅgat Santan Kī Kar Le",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -716,10 +1008,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sangat-santan-ki-karle.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kabīr"
   },
   {
     "slug": "sun-sun-sadho-jee",
+    "queueId": "5285ce6f",
     "title": "Sun Sun Sādho Jī",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -739,10 +1038,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sun-sun-sadho-jee.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kabīr"
   },
   {
     "slug": "ye-tanu-mundna-be-mundna",
+    "queueId": "f99c7178",
     "title": "Ye Tanu Muṇḍanā Be Muṇḍanā",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -762,10 +1068,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ye-tanu-mundna-be-mundna.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kabīr"
   },
   {
     "slug": "mat-kar-moh-too-hari-bhajan-ko-maan-re",
+    "queueId": "38fc197f",
     "title": "Mat Kar Moh Tū Hari Bhajan Ko Mān Re",
     "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
     "languageTags": [
@@ -786,10 +1099,17 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
     "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mat-kar-moh-too-hari-bhajan-ko-maan-re.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kabīr"
   },
   {
     "slug": "prabhu-kar-sab-dukh-door-hamare",
+    "queueId": "f1ce0198",
     "title": "Prabhu Kar Sab Dukh Door Hamare",
     "credit": "Brahmanand · Bhimsen Joshi",
     "languageTags": [
@@ -804,10 +1124,17 @@ window.BHAKTI_SONGS = [
     "writer": "Brahmanand",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-kar-sab-dukh-door-hamare.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "rama-rama-rama-bhajo",
+    "queueId": "e10c7707",
     "title": "Rama Rama Rama Bhajo",
     "credit": "Hanuman Prasad Poddar · Bhimsen Joshi",
     "languageTags": [
@@ -822,10 +1149,17 @@ window.BHAKTI_SONGS = [
     "writer": "Hanuman Prasad Poddar",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rama-rama-bhajo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "siri-ram-kahe-samjhayi",
+    "queueId": "023f2e95",
     "title": "Siri Ram Kahe Samjhayi",
     "credit": "Brahmanand · Bhimsen Joshi",
     "languageTags": [
@@ -840,10 +1174,17 @@ window.BHAKTI_SONGS = [
     "writer": "Brahmanand",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siri-ram-kahe-samjhayi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "sadho-rama-anupam-bani",
+    "queueId": "12b8af38",
     "title": "Sādho Rāma Anupama Bānī",
     "credit": "Dariya Sahib · Bhimsen Joshi",
     "languageTags": [
@@ -859,10 +1200,17 @@ window.BHAKTI_SONGS = [
     "writer": "Dariya Sahib",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sadho-rama-anupam-bani.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "maharaj-bhavani-brahmabhuvan-ki-rani",
+    "queueId": "8e0f504d",
     "title": "Mahārāja Bhavānī Brahmabhuvana Kī Rānī",
     "credit": "Surdas · Bhimsen Joshi",
     "languageTags": [
@@ -879,10 +1227,17 @@ window.BHAKTI_SONGS = [
     "writer": "Surdas",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maharaj-bhavani-brahmabhuvan-ki-rani.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "jai-jagdishwari-mata-saraswati",
+    "queueId": "bcf8e76e",
     "title": "Jai Jagdishwari Mata Saraswati",
     "credit": "Swami Brahmanand · Bhimsen Joshi",
     "languageTags": [
@@ -899,10 +1254,17 @@ window.BHAKTI_SONGS = [
     "writer": "Swami Brahmanand",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-jagdishwari-mata-saraswati.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Sarasvatī"
   },
   {
     "slug": "sharada-vidyadani-dayani",
+    "queueId": "f2654a12",
     "title": "Sharada Vidyadani Dayani",
     "credit": "Bhimsen Joshi",
     "languageTags": [
@@ -921,10 +1283,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sharada-vidyadani-dayani.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "jai-durge-durgati-pariharini",
+    "queueId": "11b9d070",
     "title": "Jaya Durge Durgati Parihāriṇī",
     "credit": "Swami Brahmanand · Bhimsen Joshi",
     "languageTags": [
@@ -947,10 +1316,17 @@ window.BHAKTI_SONGS = [
     "writer": "Swami Brahmanand",
     "singer": "Bhimsen Joshi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-durge-durgati-pariharini.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "ab-to-mujhko-bata-mere-sai",
+    "queueId": "afcd1324",
     "title": "Ab To Mujhko Batā Mere Sāī̃",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -967,10 +1343,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ab-to-mujhko-bata-mere-sai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "baba-tum-antaryami",
+    "queueId": "0764be2f",
     "title": "Bābā Tum Antaryāmī",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -987,10 +1370,17 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
-    "composer": "Shri Chandra Bhanu Satpathy"
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baba-tum-antaryami.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "hey-nath-ab-to-aisi-daya-h",
+    "queueId": "6b683322",
     "title": "He Nātha Aba To Aisī Dayā Ho",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1008,10 +1398,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-nath-ab-to-aisi-daya-h.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "he-sai-apne-charno-mein",
+    "queueId": "26d30094",
     "title": "He Sai Apne Charno Mein",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1028,10 +1425,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-sai-apne-charno-mein.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "main-murakh-main-anpad",
+    "queueId": "99d84a7b",
     "title": "Main Mūrakh Main Anpaṛh Bālak",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1048,10 +1452,17 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
-    "composer": "Shri Chandra Bhanu Satpathy"
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-murakh-main-anpad.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "man-ke-manjeere-se",
+    "queueId": "b7f1cd35",
     "title": "Man Ke Manjeere Se",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1068,10 +1479,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-ke-manjeere-se.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "mere-sai-ke-darbar-mein",
+    "queueId": "578d42c1",
     "title": "Mere Sai Ke Darbar Mein",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1088,10 +1506,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-sai-ke-darbar-mein.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "o-bhagwan",
+    "queueId": "66d0e33b",
     "title": "O Bhagwan",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1108,10 +1533,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-bhagwan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "tumhi-mere-lagan-lagai-re",
+    "queueId": "65c70186",
     "title": "Tumhī More Lagan Lagāī Re Fakīrwā",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1128,10 +1560,17 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
-    "composer": "Shri Chandra Bhanu Satpathy"
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tumhi-mere-lagan-lagai-re.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "mere-ram-tum",
+    "queueId": "afd60e8b",
     "title": "Mere Ram Tum",
     "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
     "languageTags": [
@@ -1153,10 +1592,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Deepak Kumar",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-ram-tum.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "ghanshyam-sundara",
+    "queueId": "f4f44a8b",
     "title": "Ghanaśyāma Sundarā",
     "credit": "",
     "languageTags": [
@@ -1174,10 +1620,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ghanshyam-sundara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "maili-chadar-odhe-ke",
+    "queueId": "49682a95",
     "title": "Maili Chadar Odhe Ke",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1187,10 +1640,17 @@ window.BHAKTI_SONGS = [
     "searchAliases": [],
     "writer": "",
     "singer": "Hari Om Sharan",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maili-chadar-odhe-ke.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "samapti",
+    "queueId": "1fb896e3",
     "title": "Samapti",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1200,10 +1660,17 @@ window.BHAKTI_SONGS = [
     "searchAliases": [],
     "writer": "",
     "singer": "Hari Om Sharan",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/samapti.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "yeh-garv-bhara-mastak",
+    "queueId": "583abf72",
     "title": "Yeh Garv Bharā Mastak Merā",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1216,10 +1683,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-garv-bhara-mastak.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-garv-bhara-mastak.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Prārthanā"
   },
   {
     "slug": "sankat-mochan-naam-tiharo",
+    "queueId": "ee27a809",
     "title": "Sankat Mochan Naam Tiharo",
     "credit": "Tulsīdās · Hari Om Sharan",
     "languageTags": [
@@ -1236,10 +1714,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sankat-mochan-naam-tiharo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "aarti-kijiye-hanuman-lala-ki",
+    "queueId": "409794d6",
     "title": "Aarti Kijiye Hanuman Lala Ki",
     "credit": "Tulsīdās · Hari Om Sharan",
     "languageTags": [
@@ -1256,10 +1741,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aarti-kijiye-hanuman-lala-ki.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "jo-kachu-sankat-hoye-hamaro",
+    "queueId": "57e8dd36",
     "title": "Jo Kachu Sankat Hoye Hamaro",
     "credit": "Tulsīdās · Hari Om Sharan",
     "languageTags": [
@@ -1278,10 +1770,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-kachu-sankat-hoye-hamaro.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "hanuman",
+    "queueId": "a5146764",
     "title": "Hanuman",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1297,10 +1796,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "he-dukhbhanjan",
+    "queueId": "748f4841",
     "title": "He Dukhbhanjan",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1317,10 +1823,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-dukhbhanjan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "sampati-vandana",
+    "queueId": "702f2453",
     "title": "Sampati Vandana",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1337,10 +1850,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sampati-vandana.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "hanuman-chalisa",
+    "queueId": "4e0365bb",
     "title": "Hanuman Chalisa",
     "credit": "Tulsīdās · Hari Om Sharan",
     "languageTags": [
@@ -1362,10 +1882,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-chalisa.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "mahavir-hanuman-gosain",
+    "queueId": "6cc87b66",
     "title": "Mahavir Hanuman Gosain",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1385,10 +1912,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mahavir-hanuman-gosain.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "shree-radhey-govinda",
+    "queueId": "88b016b2",
     "title": "Shree Radhey Govinda",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1410,10 +1944,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shree-radhey-govinda.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "aarti-kunj-bihari-ki",
+    "queueId": "9eb6e683",
     "title": "Aarti Kunj Bihari Ki",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1432,10 +1973,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aarti-kunj-bihari-ki.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "prabhu-ham-pe-kripa-karna",
+    "queueId": "f2eeaf02",
     "title": "Prabhu Ham Pe Kripa Karna",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1450,10 +1998,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-ham-pe-kripa-karna.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "ram-sumir-ke-raham-kare-na",
+    "queueId": "8a4a3a0c",
     "title": "Ram Sumir Ke Raham Kare Na",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1468,10 +2023,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ram-sumir-ke-raham-kare-na.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "daata-ek-ram",
+    "queueId": "f808b489",
     "title": "Daata Ek Ram",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1489,10 +2051,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/daata-ek-ram.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "tera-ram-ji-karenge-beda-paar",
+    "queueId": "55d91291",
     "title": "Tera Ram Ji Karenge Beda Paar",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1510,10 +2079,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tera-ram-ji-karenge-beda-paar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "prem-sahit-sab-bolo-kirtan",
+    "queueId": "eb2b5c37",
     "title": "Prem Sahit Sab Bolo Kirtan",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1533,10 +2109,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prem-sahit-sab-bolo-kirtan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "man-maila-aur-tan-ko-dhoye",
+    "queueId": "3f907f6a",
     "title": "Man Maila Aur Tan Ko Dhoye",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1552,10 +2135,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-maila-aur-tan-ko-dhoye.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Viṣṇu"
   },
   {
     "slug": "sweekaro-mere-pranam",
+    "queueId": "41654b60",
     "title": "Sweekaro Mere Pranam",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1571,10 +2161,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sweekaro-mere-pranam.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Viṣṇu"
   },
   {
     "slug": "aisa-pyar-baha-de-maiya",
+    "queueId": "f09292f0",
     "title": "Aisā Pyār Bahā De Maiyā",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1593,10 +2190,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aisa-pyar-baha-de-maiya.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aisa-pyar-baha-de-maiya.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Durgā Vandanā"
   },
   {
     "slug": "maa-jag-janani-jai-jai",
+    "queueId": "ac2b623b",
     "title": "Maa Jag Janani Jai Jai",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1618,10 +2226,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maa-jag-janani-jai-jai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "namo-namo-vindhyeshwari",
+    "queueId": "6ca4bf0e",
     "title": "Namo Namo Vindhyeshwari",
     "credit": "Hari Om Sharan",
     "languageTags": [
@@ -1647,10 +2262,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namo-namo-vindhyeshwari.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "durga-chalisa",
+    "queueId": "eca781d4",
     "title": "Durga Chalisa",
     "credit": "Devidāsa · Hari Om Sharan",
     "languageTags": [
@@ -1676,10 +2298,17 @@ window.BHAKTI_SONGS = [
     "writer": "Devidāsa",
     "singer": "Hari Om Sharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/durga-chalisa.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "hanuman-bhajan-hariharan",
+    "queueId": "195decf1",
     "title": "Sundarakāṇḍa (selections)",
     "credit": "Hariharan",
     "languageTags": [
@@ -1710,10 +2339,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Hariharan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bhajan-hariharan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāmcaritmānas · Sundarakāṇḍa"
   },
   {
     "slug": "sawan-gagane-ghor-ghanaghata",
+    "queueId": "f16954e4",
     "title": "Śāona Gagane Ghora Ghanaghaṭā",
     "credit": "Rabindranath Tagore · Hemanta Mukhopadhyay · Prajna Dutta",
     "languageTags": [
@@ -1732,10 +2368,21 @@ window.BHAKTI_SONGS = [
     "writer": "Rabindranath Tagore",
     "singer": "Hemanta Mukhopadhyay",
     "composer": "Prajna Dutta",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sawan-gagane-ghor-ghanaghata.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sawan-gagane-ghor-ghanaghata.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "jai-bhole-nath",
+    "queueId": "2fc9f74a",
     "title": "Jai Bhole Nath",
     "credit": "",
     "languageTags": [
@@ -1751,10 +2398,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-bhole-nath.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "jai-shankar-bhole",
+    "queueId": "e312ca97",
     "title": "Jai Shankar Bhole",
     "credit": "",
     "languageTags": [
@@ -1772,10 +2426,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shankar-bhole.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "janam-janam-ka-das-tumhara",
+    "queueId": "83af0d39",
     "title": "Janam Janam Ka Das Tumhara",
     "credit": "",
     "languageTags": [
@@ -1794,10 +2455,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janam-janam-ka-das-tumhara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "ma-karali-kali-ma",
+    "queueId": "9f40cd73",
     "title": "Mā̃ Karālī Kālī Mā̃",
     "credit": "J. Misra · Javed Ali",
     "languageTags": [
@@ -1815,10 +2483,21 @@ window.BHAKTI_SONGS = [
     "writer": "J. Misra",
     "singer": "Javed Ali",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-karali-kali-ma.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-karali-kali-ma.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kālī"
   },
   {
     "slug": "kya-tan-majhata",
+    "queueId": "3d42eea5",
     "title": "Kyā Tan Mā̃jhatā",
     "credit": "Kabīr",
     "languageTags": [
@@ -1836,10 +2515,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Kabīr",
     "singer": "",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kya-tan-majhata.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kya-tan-majhata.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "sunta-hai",
+    "queueId": "22a0cedd",
     "title": "Suntā Hai",
     "credit": "Kabīr",
     "languageTags": [
@@ -1855,10 +2545,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Kabīr",
     "singer": "",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sunta-hai.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sunta-hai.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "mana-masta-hua",
+    "queueId": "215de2da",
     "title": "Mana Masta Huā",
     "credit": "Kabīr",
     "languageTags": [
@@ -1877,10 +2578,21 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mana-masta-hua.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mana-masta-hua.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Viṣṇu"
   },
   {
     "slug": "nirguna-galiya",
+    "queueId": "41165975",
     "title": "Nirguṇa Galiyā̃",
     "credit": "Kabīr",
     "languageTags": [
@@ -1895,10 +2607,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Kabīr",
     "singer": "",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nirguna-galiya.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nirguna-galiya.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "rama-rasa",
+    "queueId": "f3f59cb6",
     "title": "Rāma Rasa",
     "credit": "Kabīr",
     "languageTags": [
@@ -1917,10 +2640,21 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rasa.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rasa.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "tere-dvar-khara-bhagvan",
+    "queueId": "4d8b5269",
     "title": "Tere Dvār Khaṛā Bhagvān",
     "credit": "Kavi Pradeep · Avinash Vyas",
     "languageTags": [
@@ -1938,10 +2672,21 @@ window.BHAKTI_SONGS = [
     "writer": "Kavi Pradeep",
     "singer": "Kavi Pradeep",
     "composer": "Avinash Vyas",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tere-dvar-khara-bhagvan.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tere-dvar-khara-bhagvan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Viṣṇu"
   },
   {
     "slug": "prabhu-more-avagun-citta-na-dharo",
+    "queueId": "0917f4cb",
     "title": "Prabhu Jī More Avaguṇa Cita Nā Dharo",
     "credit": "Sūrdās · Kavita Krishnamurthy",
     "languageTags": [
@@ -1958,10 +2703,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Sūrdās",
     "singer": "Kavita Krishnamurthy",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-more-avagun-citta-na-dharo.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-more-avagun-citta-na-dharo.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "jai-ambe-gauri",
+    "queueId": "0f9bfd9f",
     "title": "Jai Ambe Gauri",
     "credit": "Balbir Nirdosh · Lata Mangeshkar · Surendra Kohli",
     "languageTags": [
@@ -1983,10 +2739,17 @@ window.BHAKTI_SONGS = [
     "writer": "Balbir Nirdosh",
     "singer": "Lata Mangeshkar",
     "composer": "Surendra Kohli",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-ambe-gauri.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "jaun-tore-caran-kamala",
+    "queueId": "9d637ec2",
     "title": "Jāū̃ Tōrē Caran Kamal Par Vārī",
     "credit": "Vasant Dev · Lata Mangeshkar, Rajan Mishra and Sajan Mishra · Laxmikant–Pyarelal",
     "languageTags": [
@@ -2007,10 +2770,21 @@ window.BHAKTI_SONGS = [
     "writer": "Vasant Dev",
     "singer": "Lata Mangeshkar, Rajan Mishra and Sajan Mishra",
     "composer": "Laxmikant–Pyarelal",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaun-tore-caran-kamala.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaun-tore-caran-kamala.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Kṛṣṇa"
   },
   {
     "slug": "leke-bhesh-fakirika",
+    "queueId": "bf55ac57",
     "title": "Leke Bhesh Fakirika",
     "credit": "",
     "languageTags": [
@@ -2028,10 +2802,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-bhesh-fakirika.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-bhesh-fakirika.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sheronwali-kripa-kijiye",
+    "queueId": "c862251d",
     "title": "Sheronwali Kripa Kijiye",
     "credit": "Maninder Ji",
     "languageTags": [
@@ -2050,10 +2835,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Maninder Ji",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sheronwali-kripa-kijiye.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sheronwali-kripa-kijiye.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "jhoothe-jag-ne",
+    "queueId": "71764ce6",
     "title": "Jhūṭhe Jag Ne Liyā Mainū Lūṭ Mā",
     "credit": "Maninder Ji · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
@@ -2072,10 +2868,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Maninder Ji",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jhoothe-jag-ne.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jai Mātā Dī"
   },
   {
     "slug": "auga-na-jauga",
+    "queueId": "81c0061f",
     "title": "Āū̃gā Nā Jāū̃gā",
     "credit": "Kabīr and other poets · Maulvi Haider Hassan Vehranwale Qawwal and Party",
     "languageTags": [
@@ -2098,10 +2901,21 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr and other poets",
     "singer": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/auga-na-jauga.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/auga-na-jauga.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Nirguṇa"
   },
   {
     "slug": "mera-jeevan-tere",
+    "queueId": "5bbbd328",
     "title": "Mera Jeevan Tere",
     "credit": "",
     "languageTags": [
@@ -2117,10 +2931,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-jeevan-tere.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-jeevan-tere.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "namaskar-mera",
+    "queueId": "32ea02c9",
     "title": "Namaskar Mera",
     "credit": "",
     "languageTags": [
@@ -2151,10 +2976,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namaskar-mera.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namaskar-mera.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "o-shirdi-ke-sai",
+    "queueId": "54f4f422",
     "title": "O Shirdi Ke Sai",
     "credit": "",
     "languageTags": [
@@ -2172,10 +3008,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdi-ke-sai.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdi-ke-sai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "o-shirdiwale-sai",
+    "queueId": "f169b949",
     "title": "O Shirdiwale Sai",
     "credit": "",
     "languageTags": [
@@ -2191,10 +3038,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdiwale-sai.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdiwale-sai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "meri-ek-antar-abhilash",
+    "queueId": "dad840d9",
     "title": "Mērī Ēk Antar Abhilāṣ",
     "credit": "Pandit Jasraj",
     "languageTags": [
@@ -2212,10 +3070,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pandit Jasraj",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-ek-antar-abhilash.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "jagadamb-jagadamb",
+    "queueId": "f9b32671",
     "title": "Jagadamb Jagadamb",
     "credit": "Maharaja Jaiwant Singhji Vaghela · Pandit Jasraj · Pandit Maniram",
     "languageTags": [
@@ -2234,10 +3099,17 @@ window.BHAKTI_SONGS = [
     "writer": "Maharaja Jaiwant Singhji Vaghela",
     "singer": "Pandit Jasraj",
     "composer": "Pandit Maniram",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagadamb-jagadamb.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "rama-rama-ratte-ratte",
+    "queueId": "33ba2dc5",
     "title": "Rāmā Rāmā Raṭate Raṭate",
     "credit": "Sanjay Dhoopa Mishra · Papon · Vipin Patwa",
     "languageTags": [
@@ -2255,10 +3127,21 @@ window.BHAKTI_SONGS = [
     "writer": "Sanjay Dhoopa Mishra",
     "singer": "Papon",
     "composer": "Vipin Patwa",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rama-ratte-ratte.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-rama-ratte-ratte.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "data-ek-sai",
+    "queueId": "4c4055bb",
     "title": "Data Ek Sai",
     "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
     "languageTags": [
@@ -2274,10 +3157,21 @@ window.BHAKTI_SONGS = [
     "writer": "Kishore Gagare & Jayshree Medhi",
     "singer": "Pramod Medhi",
     "composer": "Suresh–Sanjay",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/data-ek-sai.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/data-ek-sai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "jab-subah-ki-aarti",
+    "queueId": "817c8ed9",
     "title": "Jab Subah Kī Āratī",
     "credit": "Traditional · Pramod Medhi · Sudhanshu–Samir",
     "languageTags": [
@@ -2295,10 +3189,21 @@ window.BHAKTI_SONGS = [
     "writer": "Traditional",
     "singer": "Pramod Medhi",
     "composer": "Sudhanshu–Samir",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-subah-ki-aarti.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-subah-ki-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Sai Teri Kripa Se"
   },
   {
     "slug": "jeevan-ke-har-mode",
+    "queueId": "f6c76af7",
     "title": "Jeevan Ke Har Mode",
     "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
     "languageTags": [
@@ -2314,10 +3219,21 @@ window.BHAKTI_SONGS = [
     "writer": "Kishore Gagare & Jayshree Medhi",
     "singer": "Pramod Medhi",
     "composer": "Suresh–Sanjay",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jeevan-ke-har-mode.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jeevan-ke-har-mode.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "doi-kar-teka-hei-matha",
+    "queueId": "68f11e59",
     "title": "Kakad Aarti Suryoday Purav",
     "credit": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev · Pramod Medhi",
     "languageTags": [
@@ -2337,10 +3253,17 @@ window.BHAKTI_SONGS = [
     "writer": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/doi-kar-teka-hei-matha.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "lalakari",
+    "queueId": "a33391f4",
     "title": "Lalakari",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2356,10 +3279,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/lalakari.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/lalakari.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "main-kismat-ka-mara",
+    "queueId": "38a3439a",
     "title": "Main Kismat Ka Mara",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2375,10 +3309,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-kismat-ka-mara.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-kismat-ka-mara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "muha-fer-jidhar-dekhoon",
+    "queueId": "db6ab1e0",
     "title": "Muha Fer Jidhar Dekhoon",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2394,10 +3339,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/muha-fer-jidhar-dekhoon.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/muha-fer-jidhar-dekhoon.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sai-ke-11-vachan",
+    "queueId": "f8cb209d",
     "title": "Sai Ke 11 Vachan",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2413,10 +3369,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-ke-11-vachan.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-ke-11-vachan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sai-meri-raksha-karna",
+    "queueId": "4a5e447c",
     "title": "Sai Meri Raksha Karna",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2432,10 +3399,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-meri-raksha-karna.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-meri-raksha-karna.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sai-tere-charnon-ki",
+    "queueId": "bf4231d1",
     "title": "Sai Tere Charnon Ki",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2451,10 +3429,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-tere-charnon-ki.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-tere-charnon-ki.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "vyartha-gavaya-is",
+    "queueId": "e6cf7d6d",
     "title": "Vyartha Gavāyā Ho...",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2471,10 +3460,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vyartha-gavaya-is.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vyartha-gavaya-is.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "bhiksha-de-de-maai",
+    "queueId": "90e02a31",
     "title": "Bhikṣā De De Māī",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2493,10 +3493,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhiksha-de-de-maai.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhiksha-de-de-maai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "leke-chalo-palkhi",
+    "queueId": "efbb2558",
     "title": "Leke Chalo Palkhi",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2513,10 +3524,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-chalo-palkhi.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-chalo-palkhi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "thoda-dhyan-laga",
+    "queueId": "dc1f449c",
     "title": "Thoṛā Dhyān Lagā",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2535,10 +3557,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thoda-dhyan-laga.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thoda-dhyan-laga.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "shej-aarti",
+    "queueId": "45e22600",
     "title": "Śej Āratī",
     "credit": "Pramod Medhi · Milind Mohite",
     "languageTags": [
@@ -2559,10 +3592,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "Milind Mohite",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shej-aarti.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shej-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "kakad-aarti",
+    "queueId": "158ddcdf",
     "title": "Kākaḍ Āratī",
     "credit": "Pramod Medhi",
     "languageTags": [
@@ -2587,10 +3631,17 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "",
     "singer": "Pramod Medhi",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kakad-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "madhyahna-aarti",
+    "queueId": "07da903b",
     "title": "Madhyāhna Āratī",
     "credit": "Pramod Medhi · Milind Mohite",
     "languageTags": [
@@ -2614,10 +3665,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "Milind Mohite",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/madhyahna-aarti.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/madhyahna-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "dhoop-aarti",
+    "queueId": "31978dc2",
     "title": "Sāīñcī Dhūpāratī",
     "credit": "Pramod Medhi · Milind Mohite",
     "languageTags": [
@@ -2641,10 +3703,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi",
     "composer": "Milind Mohite",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhoop-aarti.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhoop-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "naiya-paar-karna",
+    "queueId": "4ed1497a",
     "title": "Naiya Paar Karna",
     "credit": "Pramod Medhi & Kishore Gagare",
     "languageTags": [
@@ -2660,10 +3733,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Pramod Medhi & Kishore Gagare",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naiya-paar-karna.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naiya-paar-karna.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "bhagyada-lakshmi-baramma",
+    "queueId": "5ca79e61",
     "title": "Bhāgyada Lakṣmī Bārāmma",
     "credit": "Purandaradāsa",
     "languageTags": [
@@ -2683,10 +3767,21 @@ window.BHAKTI_SONGS = [
     "writer": "Purandaradāsa",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhagyada-lakshmi-baramma.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhagyada-lakshmi-baramma.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Lakṣmī"
   },
   {
     "slug": "raat-dhal-gayee",
+    "queueId": "13b7a5a5",
     "title": "Raat Dhal Gayee",
     "credit": "",
     "languageTags": [
@@ -2702,10 +3797,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raat-dhal-gayee.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raat-dhal-gayee.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "gaiye-ganpati-jagvandan",
+    "queueId": "d27fb511",
     "title": "Gaiye Ganpati Jagvandan",
     "credit": "Tulsīdās · Rajan Mishra & Sajan Mishra",
     "languageTags": [
@@ -2728,10 +3834,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gaiye-ganpati-jagvandan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "vighnaharan-gajvadan",
+    "queueId": "1db10197",
     "title": "Vighnaharan Gajvadan",
     "credit": "Rajan Mishra & Sajan Mishra",
     "languageTags": [
@@ -2750,10 +3863,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vighnaharan-gajvadan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "janani-main-na-jiyun-bin-rama",
+    "queueId": "d1ab933f",
     "title": "Janani Main Na Jiyun Bin Rama",
     "credit": "Tulsīdās · Rajan Mishra & Sajan Mishra",
     "languageTags": [
@@ -2770,10 +3890,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janani-main-na-jiyun-bin-rama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "damaru-har-kar-baaje",
+    "queueId": "dfe9501f",
     "title": "Damaru Har Kar Baaje",
     "credit": "Rajan Mishra & Sajan Mishra",
     "languageTags": [
@@ -2789,10 +3916,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/damaru-har-kar-baaje.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "jai-shiva-shankar-jai-gangadhar",
+    "queueId": "d547507b",
     "title": "Jai Shiva Shankar Jai Gangadhar",
     "credit": "Rajan Mishra & Sajan Mishra",
     "languageTags": [
@@ -2808,10 +3942,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shiva-shankar-jai-gangadhar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "sheesh-gang-ardhang-parvati",
+    "queueId": "decf09b9",
     "title": "Sheesh Gang Ardhang Parvati",
     "credit": "Rajan Mishra & Sajan Mishra",
     "languageTags": [
@@ -2827,10 +3968,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sheesh-gang-ardhang-parvati.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "he-shivshankar-he-karunakar",
+    "queueId": "249cfecd",
     "title": "He Śivśaṅkar He Karuṇākar",
     "credit": "Vasant Dev · Rajan Mishra & Sajan Mishra · Laxmikant–Pyarelal",
     "languageTags": [
@@ -2850,10 +3998,21 @@ window.BHAKTI_SONGS = [
     "writer": "Vasant Dev",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "Laxmikant–Pyarelal",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-shivshankar-he-karunakar.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-shivshankar-he-karunakar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Sur Sangam"
   },
   {
     "slug": "benti-chaupai",
+    "queueId": "ab86db97",
     "title": "Benti Chaupai",
     "credit": "Guru Gobind Singh · Rajinder Singh",
     "languageTags": [
@@ -2868,10 +4027,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Guru Gobind Singh",
     "singer": "Rajinder Singh",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/benti-chaupai.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/benti-chaupai.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "arunachala-akshara-mana-malai",
+    "queueId": "927edb40",
     "title": "Arunachala Akshara Mana Malai",
     "credit": "Ramana Maharshi",
     "languageTags": [
@@ -2891,10 +4061,21 @@ window.BHAKTI_SONGS = [
     "writer": "Ramana Maharshi",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Arunāchala"
   },
   {
     "slug": "chhanan-chhan",
+    "queueId": "29bccb35",
     "title": "Chhanan Chhan",
     "credit": "Sadhana Sargam · Sandeep, Santosh & Anant Thorat",
     "languageTags": [
@@ -2910,10 +4091,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Sadhana Sargam",
     "composer": "Sandeep, Santosh & Anant Thorat",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chhanan-chhan.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chhanan-chhan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "mann-ke-pawan-mandir-main",
+    "queueId": "fae1247c",
     "title": "Mann Ke Pawan Mandir Main",
     "credit": "Sadhna Sargam",
     "languageTags": [
@@ -2929,10 +4121,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Sadhna Sargam",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mann-ke-pawan-mandir-main.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sakatore-oi-kandiche-sakale",
+    "queueId": "e4057ba2",
     "title": "Sakātare Oi Kā̃diche Sakale",
     "credit": "Rabindranath Tagore · Sahana Bajpaie",
     "languageTags": [
@@ -2948,10 +4147,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Rabindranath Tagore",
     "singer": "Sahana Bajpaie",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sakatore-oi-kandiche-sakale.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sakatore-oi-kandiche-sakale.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "sai-ba-prakash-hai",
+    "queueId": "23cf919c",
     "title": "Sai Ba Prakash Hai",
     "credit": "",
     "languageTags": [
@@ -2969,10 +4179,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-ba-prakash-hai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sai-ram-ram-jap-le",
+    "queueId": "65039a8e",
     "title": "Sai Ram Ram Jap Le",
     "credit": "",
     "languageTags": [
@@ -2990,10 +4207,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-ram-ram-jap-le.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "thanu-karagadavaralli",
+    "queueId": "83db05d3",
     "title": "Tanu Karagadavaralli Puṣpavanolle",
     "credit": "Akkamahādevī · Sangeeta Katti Kulkarni · N. S. Prasad",
     "languageTags": [
@@ -3010,10 +4234,21 @@ window.BHAKTI_SONGS = [
     "writer": "Akkamahādevī",
     "singer": "Sangeeta Katti Kulkarni",
     "composer": "N. S. Prasad",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thanu-karagadavaralli.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thanu-karagadavaralli.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "A Vachana by Akkamahādevī"
   },
   {
     "slug": "chal-der-na-ho-jaye",
+    "queueId": "cac464ca",
     "title": "Chal Der Na Ho Jaye",
     "credit": "Sanjayraj & Pramod Medhi",
     "languageTags": [
@@ -3029,10 +4264,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Sanjayraj & Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chal-der-na-ho-jaye.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chal-der-na-ho-jaye.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "he-sai-shankar",
+    "queueId": "21f364a4",
     "title": "He Sai Shankar",
     "credit": "Sanjayraj & Pramod Medhi",
     "languageTags": [
@@ -3051,10 +4297,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Sanjayraj & Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-sai-shankar.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-sai-shankar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "patita-pavan-jai-raam",
+    "queueId": "231661a5",
     "title": "Patita Pavan Jai Raam",
     "credit": "Sapna Mukherjee",
     "languageTags": [
@@ -3072,10 +4329,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Sapna Mukherjee",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patita-pavan-jai-raam.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patita-pavan-jai-raam.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "madhur-madhur-sai-naam",
+    "queueId": "884d8105",
     "title": "Madhur Madhur Sai Naam",
     "credit": "Sapna Mukherjee",
     "languageTags": [
@@ -3096,10 +4364,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Sapna Mukherjee",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/madhur-madhur-sai-naam.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/madhur-madhur-sai-naam.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "hanuman-bahuk",
+    "queueId": "19c9a0cb",
     "title": "Hanumān Bāhuk",
     "credit": "Tulsīdās · Sarita Joshi · Dinesh Dubey",
     "languageTags": [
@@ -3125,10 +4404,21 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Sarita Joshi",
     "composer": "Dinesh Dubey",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bahuk.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bahuk.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Hanumān"
   },
   {
     "slug": "shankar-ho",
+    "queueId": "2c83ad45",
     "title": "Shankar Ho",
     "credit": "",
     "languageTags": [
@@ -3147,10 +4437,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shankar-ho.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "mati-re-mati-re",
+    "queueId": "7ba0dfa9",
     "title": "Māṭī Re Māṭī Re",
     "credit": "Shankar Mahadevan",
     "languageTags": [
@@ -3166,10 +4463,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shankar Mahadevan",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mati-re-mati-re.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "jaise-suraj-ki-garmi-se",
+    "queueId": "1b085c1d",
     "title": "Jaise Sūraj Kī Garmī Se",
     "credit": "Ramanand Sharma · Sharma Bandhu · Jaidev",
     "languageTags": [
@@ -3186,10 +4490,21 @@ window.BHAKTI_SONGS = [
     "writer": "Ramanand Sharma",
     "singer": "Sharma Bandhu",
     "composer": "Jaidev",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaise-suraj-ki-garmi-se.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaise-suraj-ki-garmi-se.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "shejarti",
+    "queueId": "e05904a2",
     "title": "Shejarti",
     "credit": "",
     "languageTags": [
@@ -3205,10 +4520,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shejarti.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shejarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "geet-jaisa-main-hun-nirashrit",
+    "queueId": "cc52b89e",
     "title": "Geet Jaisa Main Hun Nirashrit",
     "credit": "Shilpa Rao",
     "languageTags": [
@@ -3224,10 +4550,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shilpa Rao",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/geet-jaisa-main-hun-nirashrit.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "shirdi-wale-sai-baba",
+    "queueId": "5b289d2a",
     "title": "Shirdi Wale Sai Baba",
     "credit": "",
     "languageTags": [
@@ -3246,10 +4579,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shirdi-wale-sai-baba.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "shree-sai-aarti",
+    "queueId": "2b47c991",
     "title": "Shree Sai Aarti",
     "credit": "",
     "languageTags": [
@@ -3268,10 +4608,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shree-sai-aarti.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shree-sai-aarti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "balada-beka-re-lagila-ghanti",
+    "queueId": "94594894",
     "title": "Baḷada Bekare Lāgilā Ghaṇṭi",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3288,10 +4639,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balada-beka-re-lagila-ghanti.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balada-beka-re-lagila-ghanti.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Guru"
   },
   {
     "slug": "chala-patha-ra-geeta",
+    "queueId": "269f7912",
     "title": "Chala Patha Ra Geeta",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3307,10 +4669,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chala-patha-ra-geeta.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chala-patha-ra-geeta.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Guru"
   },
   {
     "slug": "he-guru-gobinda-gosain",
+    "queueId": "3260fa4b",
     "title": "He Guru Gobinda Gosain",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3326,10 +4699,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-guru-gobinda-gosain.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-guru-gobinda-gosain.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Guru"
   },
   {
     "slug": "he-sadaguru-tume-mor-haatku-dhara",
+    "queueId": "12d9d168",
     "title": "He Sadaguru Tume Mor Haatku Dhara",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3344,10 +4728,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-sadaguru-tume-mor-haatku-dhara.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-sadaguru-tume-mor-haatku-dhara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Chala Patha Ra Geeta"
   },
   {
     "slug": "jiba-dale-dale-jae-lo",
+    "queueId": "0a2e324c",
     "title": "Jiba Dale Dale Jae Lo",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3363,10 +4758,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jiba-dale-dale-jae-lo.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jiba-dale-dale-jae-lo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Guru"
   },
   {
     "slug": "jogii-re-kian-jau-dura-deshe",
+    "queueId": "b1ad858e",
     "title": "Jogii Re Kian Jau Dura Deshe",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3382,10 +4788,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jogii-re-kian-jau-dura-deshe.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jogii-re-kian-jau-dura-deshe.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Guru"
   },
   {
     "slug": "mati-re-mati-re-kete-dakuchi-re-tote",
+    "queueId": "98a9124a",
     "title": "Mati Re Mati Re Kete Dakuchi Re Tote",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3401,10 +4818,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mati-re-mati-re-kete-dakuchi-re-tote.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mati-re-mati-re-kete-dakuchi-re-tote.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Guru"
   },
   {
     "slug": "shri-guru-prarthana",
+    "queueId": "3aa334dc",
     "title": "Shri Guru Prarthana",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3420,10 +4848,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-guru-prarthana.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-guru-prarthana.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Guru"
   },
   {
     "slug": "bela-gadi-jae-kala-sari-jae",
+    "queueId": "9dde6a77",
     "title": "Bela Gadi Jae Kala Sari Jae",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3440,10 +4879,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bela-gadi-jae-kala-sari-jae.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bela-gadi-jae-kala-sari-jae.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jagannātha"
   },
   {
     "slug": "dake-aahe-jagannath",
+    "queueId": "5809bc7f",
     "title": "Dake Aahe Jagannath",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3460,10 +4910,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dake-aahe-jagannath.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dake-aahe-jagannath.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jagannātha"
   },
   {
     "slug": "e-barashe-aasi-achi",
+    "queueId": "e3ce2da9",
     "title": "E Barashe Aasi Achi",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3480,10 +4941,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/e-barashe-aasi-achi.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/e-barashe-aasi-achi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jagannātha"
   },
   {
     "slug": "jagannath-jagannath",
+    "queueId": "2d435de5",
     "title": "Jagannath Jagannath",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3500,10 +4972,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jagannātha"
   },
   {
     "slug": "janena-mu-kiba-debi",
+    "queueId": "71bb179d",
     "title": "Janena Mu Kiba Debi",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3519,10 +5002,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-kiba-debi.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-kiba-debi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Baishi Pahacha"
   },
   {
     "slug": "mohodadhi-kule",
+    "queueId": "03dfafcc",
     "title": "Mohodadhi Kule",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3539,10 +5033,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mohodadhi-kule.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mohodadhi-kule.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jagannātha"
   },
   {
     "slug": "shri-kshetra-biharii",
+    "queueId": "dbc29b39",
     "title": "Shri Kshetra Biharii",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3560,10 +5065,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jagannātha"
   },
   {
     "slug": "baishi-pahacha",
+    "queueId": "94584ce7",
     "title": "Baishi Pahacha",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3583,10 +5099,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baishi-pahacha.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baishi-pahacha.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jagannātha"
   },
   {
     "slug": "aao-aao-padharo-mere-guruwar",
+    "queueId": "7bd422f6",
     "title": "Aao Aao Padharo Mere Guruwar",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3603,10 +5130,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aao-aao-padharo-mere-guruwar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "jab-dil-udaas-ho-to",
+    "queueId": "a4147270",
     "title": "Jab Dil Udās Ho To",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3622,10 +5156,17 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Shri Chandra Bhanu Satpathy",
-    "composer": "Shri Chandra Bhanu Satpathy"
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-dil-udaas-ho-to.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "mero-abgun-bisra-karo",
+    "queueId": "1470a0d6",
     "title": "Mero Avaguṇ Bisrā Karo",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3643,10 +5184,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mero-abgun-bisra-karo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sai-tum-humse-jaldi-milo",
+    "queueId": "097346bd",
     "title": "Sai Tum Humse Jaldi Milo",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3663,10 +5211,17 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-tum-humse-jaldi-milo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "zara-to-itana-bata-do-sai",
+    "queueId": "60579208",
     "title": "Zarā To Itnā Batā Do Sāī",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3682,10 +5237,17 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Shri Chandra Bhanu Satpathy",
-    "composer": "Shri Chandra Bhanu Satpathy"
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/zara-to-itana-bata-do-sai.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "aasa-sai-pashe-mora",
+    "queueId": "39d4457e",
     "title": "Aasa Sai Pashe Mora",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3703,10 +5265,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aasa-sai-pashe-mora.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aasa-sai-pashe-mora.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "aatma-ra-antar-kone",
+    "queueId": "1bd4a15c",
     "title": "Aatma Ra Antar Kone",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3724,10 +5297,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aatma-ra-antar-kone.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aatma-ra-antar-kone.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "bhanga-kudia-mu-sajai-rakhichi",
+    "queueId": "fcc8e57f",
     "title": "Bhanga Kudia Mu Sajai Rakhichi",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3744,10 +5328,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhanga-kudia-mu-sajai-rakhichi.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhanga-kudia-mu-sajai-rakhichi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Shri Sai Charane"
   },
   {
     "slug": "chalo-shirdi-ku-jibare-sabhien",
+    "queueId": "35dee302",
     "title": "Chalo Shirdi Ku Jibare Sabhien",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3765,10 +5360,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-shirdi-ku-jibare-sabhien.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-shirdi-ku-jibare-sabhien.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "deha-re-mo-lagilani",
+    "queueId": "785dd687",
     "title": "Deha Re Mo Lagilani",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3786,10 +5392,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deha-re-mo-lagilani.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deha-re-mo-lagilani.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "guru-charana-re-karo-dhyana",
+    "queueId": "1206cf7c",
     "title": "Guru Caraṇare Kara Dhyāna",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3808,10 +5425,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-charana-re-karo-dhyana.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-charana-re-karo-dhyana.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "guru-he-mote-ete-para-kian-kala",
+    "queueId": "069ba2d6",
     "title": "Guru He Mote Ete Para Kiā̃ Kala",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3830,10 +5458,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-he-mote-ete-para-kian-kala.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-he-mote-ete-para-kian-kala.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "guru-karo-aparadha-kshyama",
+    "queueId": "83a04fd4",
     "title": "Guru Kara Aparādha Kṣamā",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3853,10 +5492,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Shri Sai Charane"
   },
   {
     "slug": "he-aanadamaya-prabhu",
+    "queueId": "2ed56236",
     "title": "He Aanadamaya Prabhu",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3874,10 +5524,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-aanadamaya-prabhu.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-aanadamaya-prabhu.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "janena-mu-debata-ke-janena-mu-ishwara",
+    "queueId": "6b712c75",
     "title": "Janena Mu Debata Ke Janena Mu Ishwara",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3895,10 +5556,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-debata-ke-janena-mu-ishwara.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-debata-ke-janena-mu-ishwara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "jhare-tumo-krupa-ghana",
+    "queueId": "eac007c7",
     "title": "Jhare Tumo Krupa Ghana",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3916,10 +5588,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jhare-tumo-krupa-ghana.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jhare-tumo-krupa-ghana.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "kie-se-aamaku-paliba-kuha",
+    "queueId": "1b3e3e6e",
     "title": "Kie Bā Āmaku Pāḷiba Kuha",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3938,10 +5621,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kie-se-aamaku-paliba-kuha.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kie-se-aamaku-paliba-kuha.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "luha-bohi-jae-tumo",
+    "queueId": "86a9ca11",
     "title": "Luha Bohi Jae Tumo",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3959,10 +5653,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/luha-bohi-jae-tumo.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/luha-bohi-jae-tumo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "thara-ku-thara-mu-adhia-paduchi",
+    "queueId": "2a3e09c3",
     "title": "Thara Ku Thara Mu Adhia Paduchi",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -3979,10 +5684,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thara-ku-thara-mu-adhia-paduchi.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thara-ku-thara-mu-adhia-paduchi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Shri Sai Charane"
   },
   {
     "slug": "tumo-krupa-bina-prabhu",
+    "queueId": "581e608c",
     "title": "Tumo Krupa Bina Prabhu",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -4000,10 +5716,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tumo-krupa-bina-prabhu.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tumo-krupa-bina-prabhu.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "ishwar-se-kuch-mangna-ho-to",
+    "queueId": "52e297a9",
     "title": "Īśvar Se Kuch Māṅgnā Ho To",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -4020,10 +5747,17 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "Shri Chandra Bhanu Satpathy",
-    "composer": "Shri Chandra Bhanu Satpathy"
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ishwar-se-kuch-mangna-ho-to.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "kete-lagaichu-tu-naat-re",
+    "queueId": "6f0873a2",
     "title": "Kete Lagāichu Tu Nāṭa Re",
     "credit": "Shri Chandra Bhanu Satpathy",
     "languageTags": [
@@ -4045,10 +5779,21 @@ window.BHAKTI_SONGS = [
     "writer": "Shri Chandra Bhanu Satpathy",
     "singer": "",
     "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kete-lagaichu-tu-naat-re.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kete-lagaichu-tu-naat-re.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "jai-ganesh-jai-ganesh-pyare",
+    "queueId": "6c8d9d58",
     "title": "Jai Ganesh Jai Ganesh Pyare",
     "credit": "Shruti Sadolikar",
     "languageTags": [
@@ -4064,10 +5809,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shruti Sadolikar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-ganesh-jai-ganesh-pyare.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "aarti-gajvadan-vinayak-ki",
+    "queueId": "18e0c9b6",
     "title": "Aarti Gajvadan Vinayak Ki",
     "credit": "Shruti Sadolikar",
     "languageTags": [
@@ -4086,10 +5838,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shruti Sadolikar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aarti-gajvadan-vinayak-ki.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "parvati-devi-mahamayavini",
+    "queueId": "82a2c97f",
     "title": "Pārvatī Devī Mahāmāyāvinī",
     "credit": "Shruti Sadolikar",
     "languageTags": [
@@ -4106,10 +5865,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shruti Sadolikar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/parvati-devi-mahamayavini.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "aarti-kijiye-shailsuta-ki",
+    "queueId": "58f391b3",
     "title": "Āratī Kījai Śailasutā Kī",
     "credit": "Shruti Sadolikar",
     "languageTags": [
@@ -4133,10 +5899,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shruti Sadolikar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aarti-kijiye-shailsuta-ki.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "dekho-mand-mand",
+    "queueId": "d06b0c77",
     "title": "Dekho Mand Mand",
     "credit": "Shubhram Bahal & Pramod Medhi",
     "languageTags": [
@@ -4152,10 +5925,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shubhram Bahal & Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dekho-mand-mand.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dekho-mand-mand.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "duniya-se-door",
+    "queueId": "ec851c67",
     "title": "Duniya Se Dil Lagakar",
     "credit": "Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir & Shubhram Bahal",
     "languageTags": [
@@ -4171,10 +5955,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shubhram Bahal & Pramod Medhi",
     "composer": "Sudhanshu–Samir & Shubhram Bahal",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/duniya-se-door.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/duniya-se-door.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "mera-aap-ki-krupa-se",
+    "queueId": "5026652a",
     "title": "Mera Aap Ki Krupa Se",
     "credit": "Shubhram Bahal & Pramod Medhi",
     "languageTags": [
@@ -4190,10 +5985,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shubhram Bahal & Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-aap-ki-krupa-se.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-aap-ki-krupa-se.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "mera-chhotasa-sansar",
+    "queueId": "0b9b4eae",
     "title": "Mera Chhotasa Sansar",
     "credit": "Shubhram Bahal & Pramod Medhi",
     "languageTags": [
@@ -4209,10 +6015,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shubhram Bahal & Pramod Medhi",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-chhotasa-sansar.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-chhotasa-sansar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "patta-bola-vrksha-se",
+    "queueId": "b26ddf6b",
     "title": "Pattā Bolā Vṛkṣa Se",
     "credit": "Kabīr · Shujaat Khan",
     "languageTags": [
@@ -4229,10 +6046,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Kabīr",
     "singer": "Shujaat Khan",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patta-bola-vrksha-se.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patta-bola-vrksha-se.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "rehna-nahi-isa-desa",
+    "queueId": "8d12cca2",
     "title": "Rehnā Nahī̃ Isa Desa",
     "credit": "Kabīr · Shujaat Khan",
     "languageTags": [
@@ -4249,10 +6077,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Kabīr",
     "singer": "Shujaat Khan",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rehna-nahi-isa-desa.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rehna-nahi-isa-desa.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "kaise-lagaun-tumse-main-preet",
+    "queueId": "bcfb21de",
     "title": "Kaise Lagāū̃ Tumse Maĩ Prīt",
     "credit": "Swami Srikantananda · Shurjo Bhattacharya",
     "languageTags": [
@@ -4274,10 +6113,21 @@ window.BHAKTI_SONGS = [
     "writer": "Swami Srikantananda",
     "singer": "Shurjo Bhattacharya",
     "composer": "Shurjo Bhattacharya",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaise-lagaun-tumse-main-preet.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kaise-lagaun-tumse-main-preet.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Bhavanjali"
   },
   {
     "slug": "ma-tumko-kaise-batalau",
+    "queueId": "28676d3f",
     "title": "Maa Tumko Kaise Batlaun",
     "credit": "Shurjo Bhattacharya · Swami Srikantananda",
     "languageTags": [
@@ -4302,10 +6152,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Shurjo Bhattacharya",
     "composer": "Swami Srikantananda",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-tumko-kaise-batalau.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ma-tumko-kaise-batalau.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śrī Śāradā Devī"
   },
   {
     "slug": "akashi-zep-ghe-re-pakhara",
+    "queueId": "7c5595d8",
     "title": "Ākāśī Jhepa Ghe Re Pākharā",
     "credit": "Jagdish Khebudkar · Sudhir Phadke",
     "languageTags": [
@@ -4320,10 +6181,21 @@ window.BHAKTI_SONGS = [
     "writer": "Jagdish Khebudkar",
     "singer": "Sudhir Phadke",
     "composer": "Sudhir Phadke",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/akashi-zep-ghe-re-pakhara.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/akashi-zep-ghe-re-pakhara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Aaram Haram Aahe"
   },
   {
     "slug": "sukh-ka-dukh-ka",
+    "queueId": "3cada786",
     "title": "Sukh Ka Dukh Ka",
     "credit": "",
     "languageTags": [
@@ -4341,10 +6213,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sukh-ka-dukh-ka.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sukh-ka-dukh-ka.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "sai-ki-palki",
+    "queueId": "aa89a3b9",
     "title": "Sai Ki Palki",
     "credit": "Sukhwinder Singh",
     "languageTags": [
@@ -4363,10 +6246,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Sukhwinder Singh",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-ki-palki.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "kyun-nahin-manegi-meri-maa",
+    "queueId": "ddbf7cf0",
     "title": "Kyun Nahin Manegi Meri Maa",
     "credit": "Suresh Ji",
     "languageTags": [
@@ -4385,10 +6275,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Suresh Ji",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kyun-nahin-manegi-meri-maa.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kyun-nahin-manegi-meri-maa.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "meri-maa-jagdambe-man-jaye",
+    "queueId": "d9438e3a",
     "title": "Meri Maa Jagdambe Man Jaye",
     "credit": "Suresh Ji",
     "languageTags": [
@@ -4407,10 +6308,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Suresh Ji",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "duniya-de-dukhan",
+    "queueId": "42ebc7e8",
     "title": "Duniyā De Dukhāṅ Menū Baṛā Hī Satāyā Mā",
     "credit": "Suresh Ji · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
@@ -4429,10 +6341,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Suresh Ji",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/duniya-de-dukhan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Jai Mātā Dī"
   },
   {
     "slug": "man-re-tu-chal-apne-niketan-me",
+    "queueId": "c23bbd79",
     "title": "Man Re Tū Cal Apne Niketan Meṁ",
     "credit": "J. Misra · Suresh Wadkar",
     "languageTags": [
@@ -4447,10 +6366,21 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "J. Misra",
     "singer": "Suresh Wadkar",
-    "composer": ""
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-re-tu-chal-apne-niketan-me.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-re-tu-chal-apne-niketan-me.m4a",
+        "type": "audio/mp4"
+      }
+    ]
   },
   {
     "slug": "duhkh-me-sumiran-sab-kare",
+    "queueId": "12e5d2d2",
     "title": "Dukh Mẽ Sumiran Sab Kare",
     "credit": "Kabīr, Nānak & others · Suresh Wadkar",
     "languageTags": [
@@ -4470,10 +6400,21 @@ window.BHAKTI_SONGS = [
     "writer": "Kabīr, Nānak & others",
     "singer": "Suresh Wadkar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/duhkh-me-sumiran-sab-kare.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/duhkh-me-sumiran-sab-kare.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Nirguṇa"
   },
   {
     "slug": "sadguru-mujhko-alag-na-kariyo",
+    "queueId": "7520c8b3",
     "title": "Sadguru Mujhko Alag Na Kariyo",
     "credit": "Suresh Wadkar",
     "languageTags": [
@@ -4489,10 +6430,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Suresh Wadkar",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sadguru-mujhko-alag-na-kariyo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "chitrakoot-ati-vichitra",
+    "queueId": "2041d310",
     "title": "Chitrakoot Ati Vichitra",
     "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
     "languageTags": [
@@ -4509,10 +6457,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chitrakoot-ati-vichitra.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "jab-hi-raghupati-sang-siya-chali",
+    "queueId": "efbd7ba7",
     "title": "Jab Hi Raghupati Sang Siya Chali",
     "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
     "languageTags": [
@@ -4529,10 +6484,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-hi-raghupati-sang-siya-chali.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "rann-jeeti-rama-rao-aye",
+    "queueId": "ce9d3be2",
     "title": "Rann Jeeti Rama Rao Aye",
     "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
     "languageTags": [
@@ -4549,10 +6511,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rann-jeeti-rama-rao-aye.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "ghana-ghamand-nabh-garajat-ghora",
+    "queueId": "e3945970",
     "title": "Ghana Ghamand Nabh Garajat Ghora",
     "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
     "languageTags": [
@@ -4572,10 +6541,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ghana-ghamand-nabh-garajat-ghora.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "raghuvar-doori-jayi-mriga-maryo",
+    "queueId": "344ed542",
     "title": "Raghuvar Doori Jayi Mriga Maryo",
     "credit": "Tulsīdās · Umakant Gundecha & Ramakant Gundecha",
     "languageTags": [
@@ -4595,10 +6571,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raghuvar-doori-jayi-mriga-maryo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "uttho-uttho",
+    "queueId": "8c323993",
     "title": "Uttho Uttho",
     "credit": "",
     "languageTags": [
@@ -4620,10 +6603,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/uttho-uttho.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śirḍī Sāī"
   },
   {
     "slug": "siddh-bhajo-omkar-avadho",
+    "queueId": "06871d8d",
     "title": "Siddh Bhajo Omkar Avadho",
     "credit": "Veena Sahasrabuddhe",
     "languageTags": [
@@ -4639,10 +6629,17 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siddh-bhajo-omkar-avadho.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Gaṇeśa"
   },
   {
     "slug": "rama-ho-rama",
+    "queueId": "80ff729f",
     "title": "Rama Ho Rama",
     "credit": "Tulsīdās · Veena Sahasrabuddhe",
     "languageTags": [
@@ -4659,10 +6656,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rama-ho-rama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "baithe-hain-rama-lakhan",
+    "queueId": "ea0a037b",
     "title": "Baithe Hain Rama Lakhan",
     "credit": "Tulsīdās · Veena Sahasrabuddhe",
     "languageTags": [
@@ -4679,10 +6683,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baithe-hain-rama-lakhan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "jaake-priya-na-rama",
+    "queueId": "67bc5d29",
     "title": "Jaake Priya Na Rama",
     "credit": "Tulsīdās · Veena Sahasrabuddhe",
     "languageTags": [
@@ -4699,10 +6710,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaake-priya-na-rama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "kahan-ke-pathik-kahan",
+    "queueId": "9ff1e14d",
     "title": "Kahan Ke Pathik Kahan",
     "credit": "Tulsīdās · Veena Sahasrabuddhe",
     "languageTags": [
@@ -4719,10 +6737,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahan-ke-pathik-kahan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Rāma"
   },
   {
     "slug": "dev-bade-data-bade",
+    "queueId": "8929a24c",
     "title": "Dev Bade Data Bade",
     "credit": "Tulsīdās · Veena Sahasrabuddhe",
     "languageTags": [
@@ -4740,10 +6765,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dev-bade-data-bade.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "janchiye-girijapati-kashi",
+    "queueId": "3cbbf0d3",
     "title": "Janchiye Girijapati Kashi",
     "credit": "Tulsīdās · Veena Sahasrabuddhe",
     "languageTags": [
@@ -4761,10 +6793,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janchiye-girijapati-kashi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "shiva-shiva-hoi-prasanna",
+    "queueId": "e847338b",
     "title": "Shiva Shiva Hoi Prasanna",
     "credit": "Tulsīdās · Veena Sahasrabuddhe",
     "languageTags": [
@@ -4787,10 +6826,17 @@ window.BHAKTI_SONGS = [
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shiva-shiva-hoi-prasanna.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   },
   {
     "slug": "kai-janmon-se-bula-rahi-hoon",
+    "queueId": "6fd945f0",
     "title": "Kai Janmon Se Bula Rahi Hoon",
     "credit": "Vijay Ji",
     "languageTags": [
@@ -4809,10 +6855,21 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "Vijay Ji",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kai-janmon-se-bula-rahi-hoon.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kai-janmon-se-bula-rahi-hoon.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śakti"
   },
   {
     "slug": "shiv-ka-naam-japo-sansari",
+    "queueId": "c8aab4ce",
     "title": "Śiva Kā Nāma Japo Saṁsārī",
     "credit": "",
     "languageTags": [
@@ -4830,6 +6887,12 @@ window.BHAKTI_SONGS = [
     "writer": "",
     "singer": "",
     "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shiv-ka-naam-japo-sansari.m4a",
+        "type": "audio/mp4"
+      }
+    ],
     "subtitle": "Śiva"
   }
 ];

@@ -20,11 +20,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patta-bola-vrksha-se.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patta-bola-vrksha-se.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -2040,10 +2040,10 @@ window.SONG_SEQUENCE = [
 window.SONG_TIMINGS = [
   {
     "start": 136.85,
-    "end": 144.0
+    "end": 144
   },
   {
-    "start": 144.0,
+    "start": 144,
     "end": 150.65
   },
   {

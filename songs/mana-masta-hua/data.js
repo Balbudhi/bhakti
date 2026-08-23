@@ -21,11 +21,11 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mana-masta-hua.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mana-masta-hua.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -1324,10 +1324,10 @@ window.SONG_SEQUENCE = [
 window.SONG_TIMINGS = [
   {
     "start": 3.875,
-    "end": 12.0
+    "end": 12
   },
   {
-    "start": 12.0,
+    "start": 12,
     "end": 20.2
   },
   {

@@ -21,7 +21,8 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertEqual(text.count('rel="icon"'), 1)
                 self.assertEqual(text.count('rel="apple-touch-icon"'), 1)
                 self.assertEqual(text.count('rel="manifest"'), 1)
-                self.assertEqual(text.count('class="song-home"'), 1)
+                self.assertEqual(text.count('class="song-home app-view-toggle"'), 1)
+                self.assertEqual(text.count('id="appViewToggle"'), 1)
                 self.assertEqual(text.count('id="apTime"'), 1)
                 self.assertEqual(text.count('id="apElapsed"'), 1)
                 self.assertEqual(text.count('id="apDuration"'), 1)
@@ -31,6 +32,13 @@ class SongUiContractTests(unittest.TestCase):
                 self.assertRegex(text, r'song\.css\?v=contract-\d{8}-\d+')
                 self.assertEqual(text.count('id="songShare"'), 1)
                 self.assertEqual(text.count('id="songSync"'), 1)
+                self.assertEqual(text.count('player-icons.svg#icon-lock'), 1)
+                self.assertEqual(text.count('player-icons.svg#icon-unlock'), 1)
+                self.assertEqual(text.count('player-icons.svg#icon-home'), 1)
+                self.assertEqual(text.count('player-icons.svg#icon-music'), 1)
+                self.assertEqual(text.count('assets/queue.js'), 1)
+                self.assertEqual(text.count('assets/app.js'), 1)
+                self.assertEqual(text.count('assets/app.css'), 1)
                 self.assertIn('family=EB+Garamond:wght@400;500', text)
                 self.assertIn('name="apple-mobile-web-app-capable" content="yes"', text)
                 self.assertEqual(text.count('class="song-meta"'), 1)
@@ -40,7 +48,7 @@ class SongUiContractTests(unittest.TestCase):
     def test_seeking_is_bound_to_the_dedicated_control(self) -> None:
         script = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
         self.assertIn('class="line-seek"', script)
-        self.assertIn('const seekButton = e.target.closest(".line-seek")', script)
+        self.assertIn('const seekButton = event.target.closest?.(".line-seek")', script)
         self.assertIn('if (!seekButton) return;', script)
         self.assertIn('const elapsed = document.getElementById("apElapsed")', script)
         self.assertIn('const duration = document.getElementById("apDuration")', script)
@@ -79,6 +87,11 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('>प्रणाम</span>।', page)
         self.assertIn('Countless</span>', page)
         self.assertIn('class="about-toggle"', page)
+        self.assertIn('id="shuffleVisible"', page)
+        self.assertIn('id="appViewToggle"', page)
+        self.assertIn('id="songAudio"', page)
+        self.assertIn('assets/queue.js', page)
+        self.assertIn('assets/app.js', page)
         self.assertIn('AI-based transcription, timing, and translation pipeline', page)
         self.assertIn('<h2 id="aboutHeading">About these songs</h2>', page)
         self.assertIn('<p>These pages are produced by an AI-based transcription, timing, and translation pipeline.</p>', page)
@@ -115,7 +128,12 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
         self.assertIn('audioIsPlaying()', client)
         self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
-        self.assertIn('bhakti-shell-v16', worker)
+        self.assertIn('event.request.mode === "navigate"', worker)
+        self.assertIn('cache.put(cacheKey, copy)', worker)
+        self.assertIn('caches.match(cacheKey)', worker)
+        self.assertIn('bhakti-shell-v17', worker)
+        self.assertIn('/assets/queue.js', worker)
+        self.assertIn('/assets/app.js', worker)
 
     def test_iast_uses_the_extended_garamond_face(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
@@ -125,17 +143,72 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('"EB Garamond", "Cormorant Garamond"', site_css)
         self.assertIn('overflow-wrap: anywhere', song_css)
 
-    def test_top_controls_match_the_home_control_and_dim_without_replacing_the_link(self) -> None:
+    def test_top_controls_use_matched_lock_states_and_shared_player_icons(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
         pipeline = (ROOT / "scripts" / "bhakti_pipeline.py").read_text(encoding="utf-8")
+        icons = (ROOT / "assets" / "player-icons.svg").read_text(encoding="utf-8")
         self.assertIn('background-color: var(--kh-bg);', song_css)
         self.assertIn('opacity: 1;', song_css)
         self.assertIn('top: max(8px, calc(env(safe-area-inset-top) - 16px));', song_css)
-        self.assertNotIn('chain-unlinked', song_css)
-        self.assertNotIn('chain-unlinked', pipeline)
-        self.assertIn('m10.6 13.4 2.8-2.8', pipeline)
-        self.assertIn('border-style: dashed;', song_css)
-        self.assertIn('svg { opacity: 0.52; }', song_css)
+        self.assertIn('sync-icon-unlock', song_css)
+        self.assertIn('player-icons.svg#icon-lock', pipeline)
+        self.assertIn('player-icons.svg#icon-unlock', pipeline)
+        for symbol in ('icon-lock', 'icon-unlock', 'icon-home', 'icon-music'):
+            self.assertEqual(icons.count(f'id="{symbol}"'), 1)
+        self.assertEqual(icons.count('stroke-width="1.6"'), 4)
+
+    def test_catalogue_is_queue_ready_and_collision_free(self) -> None:
+        import json
+        import subprocess
+        script = "global.window={};require(process.argv[1]);process.stdout.write(JSON.stringify(window.BHAKTI_SONGS));"
+        raw = subprocess.run(
+            ["node", "-e", script, str(ROOT / "data" / "songs.js")],
+            check=True, text=True, capture_output=True,
+        ).stdout
+        songs = json.loads(raw)
+        self.assertGreater(len(songs), 0)
+        self.assertEqual(len({song["queueId"] for song in songs}), len(songs))
+        for song in songs:
+            self.assertRegex(song["queueId"], r"^[0-9a-f]{8}$")
+            self.assertGreater(len(song["audioSources"]), 0)
+            self.assertTrue(all(source.get("src") and source.get("type") for source in song["audioSources"]))
+
+    def test_playlist_reveals_as_an_integrated_same_palette_region(self) -> None:
+        app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+        css = (ROOT / "assets" / "app.css").read_text(encoding="utf-8")
+        queue = (ROOT / "assets" / "queue.js").read_text(encoding="utf-8")
+        self.assertIn('queueSheet.setAttribute("role", "region")', app)
+        self.assertIn('document.body.classList.add("queue-open")', app)
+        self.assertIn('Queue.reorderUpcoming(queueState, orderedEntryIds)', app)
+        self.assertIn('if (queueIsVisible(queueState)) url.searchParams.set("queue", Queue.encode(queueState))', app)
+        self.assertIn('data-queue-drag=', app)
+        self.assertIn('body.queue-open .app-stage', css)
+        self.assertIn('body.queue-open .audio-player', css)
+        self.assertIn('@keyframes app-view-in-left', css)
+        self.assertIn('@keyframes app-view-out-right', css)
+        self.assertIn('@keyframes app-view-in-right', css)
+        self.assertIn('@keyframes app-view-out-left', css)
+        self.assertIn('background: var(--kh-bg, #6b0e16);', css)
+        self.assertNotIn("box-shadow", css)
+        self.assertNotIn("#5c0c13", css)
+        self.assertNotIn("app-backdrop", app)
+        self.assertNotIn("song-actions-menu", app)
+        self.assertNotIn('aria-modal', app)
+        self.assertNotIn('queue-sheet-header', app)
+        self.assertNotIn('queue-sheet-footer', app)
+        self.assertNotIn('queue-remove"', app)
+        self.assertIn('bhakti:add-to-queue', app)
+        self.assertIn('data-queue-action="tools"', app)
+        self.assertIn("const reorderUpcoming", queue)
+
+    def test_design_standard_is_part_of_repository_authority(self) -> None:
+        agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        standard = (ROOT / "docs" / "DESIGN_STANDARD.md").read_text(encoding="utf-8")
+        self.assertIn("docs/DESIGN_STANDARD.md", agents)
+        self.assertIn("docs/DESIGN_STANDARD.md", readme)
+        for heading in ("## Palette", "## Controls and icons", "## Motion", "## Anti-patterns"):
+            self.assertIn(heading, standard)
 
     def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")

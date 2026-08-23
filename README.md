@@ -6,6 +6,10 @@ word-level meanings. It deploys independently to GitHub Pages at
 project URL is deployment infrastructure; the public site URL is the custom
 domain.
 
+Public UI follows the maintained [Bhakti design standard](docs/DESIGN_STANDARD.md):
+one ground, one ink, established type and control roles, progressive disclosure,
+and short directional motion.
+
 On iPhone or iPad, use Safari's **Share → Add to Home Screen**. The manifest
 opens Bhakti as a standalone web app. It checks for a newly deployed service
 worker when opened or resumed and reloads once only when a new release takes
