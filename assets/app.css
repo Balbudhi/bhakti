@@ -203,7 +203,7 @@ body.queue-open .audio-player { bottom: 0; }
   background: transparent;
   color: rgba(244, 234, 208, 0.42);
 }
-.queue-drag-handle { cursor: grab; touch-action: none; font: 500 18px/1 Inter, sans-serif; letter-spacing: -4px; }
+.queue-drag-handle { cursor: grab; touch-action: pan-y; font: 500 18px/1 Inter, sans-serif; letter-spacing: -4px; }
 .queue-drag-handle:active { cursor: grabbing; }
 .queue-drag-handle:hover,
 .queue-drag-handle:focus-visible { color: #f4ead0; outline: none; }

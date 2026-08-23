@@ -48,14 +48,24 @@
   let viewRequest = 0;
   let dataLoadChain = Promise.resolve();
   let advancing = false;
+  const TOUCH_DRAG_HOLD_MS = 350;
+  const DRAG_SLOP_PX = 8;
   let draggedRow = null;
   let dragPointerId = null;
+  let dragPointerType = "";
+  let dragStartX = 0;
   let dragStartY = 0;
-  let dragEligibleAt = 0;
+  let dragHoldTimer = 0;
   let dragActive = false;
   let dragMoved = false;
   let suppressQueueRowAction = false;
   const songDataCache = new Map();
+
+  const pulseDragHaptic = duration => {
+    if (!standaloneDisplay || !["touch", "pen"].includes(dragPointerType)
+      || typeof navigator.vibrate !== "function") return;
+    try { navigator.vibrate(duration); } catch (_) {}
+  };
 
   const initialData = window.BHAKTI_READER?.snapshotGlobals?.();
   const initialPageSlug = pathSlug();
@@ -380,6 +390,7 @@
   };
 
   const renderQueueSheet = () => {
+    if (draggedRow) resetDragGesture();
     const previousScrollTop = queueSheet.querySelector(".queue-list")?.scrollTop || 0;
     if (!queueState) {
       queueSheet.innerHTML = `<div class="queue-empty">No songs queued yet.</div>`;
@@ -430,6 +441,7 @@
 
   const closeQueue = ({ returnFocus = false, immediate = false } = {}) => {
     if (queueSheet.hidden || queueSheet.classList.contains("is-closing")) return;
+    if (draggedRow) resetDragGesture();
     document.body.classList.remove("queue-open");
     queuePill.setAttribute("aria-expanded", "false");
     renderQueuePill();
@@ -613,26 +625,59 @@
     setQueueState(Queue.remove(queueState, Number(row.dataset.queueIndex)));
     showStatus(`${title} removed`);
   });
-  queueSheet.addEventListener("pointerdown", event => {
-    const row = event.target.closest?.(".queue-row:not(.is-current)");
-    if (!row || event.target.closest("[data-queue-action]")) return;
-    const handle = event.target.closest("[data-queue-drag]");
-    draggedRow = row;
-    dragPointerId = event.pointerId;
-    dragStartY = event.clientY;
-    dragEligibleAt = performance.now() + (handle || event.pointerType === "mouse" ? 0 : 160);
+  const clearDragHold = () => {
+    clearTimeout(dragHoldTimer);
+    dragHoldTimer = 0;
+  };
+  const resetDragGesture = () => {
+    const row = draggedRow;
+    const pointerId = dragPointerId;
+    clearDragHold();
+    row?.classList.remove("is-dragging");
+    draggedRow = null;
+    dragPointerId = null;
+    dragPointerType = "";
+    dragStartX = 0;
+    dragStartY = 0;
     dragActive = false;
     dragMoved = false;
-    row.setPointerCapture(event.pointerId);
-    if (handle) event.preventDefault();
+    if (row?.hasPointerCapture?.(pointerId)) row.releasePointerCapture(pointerId);
+  };
+  const activateDrag = () => {
+    clearDragHold();
+    if (!draggedRow?.isConnected || dragPointerId === null) {
+      resetDragGesture();
+      return;
+    }
+    dragActive = true;
+    draggedRow.classList.add("is-dragging");
+    try {
+      draggedRow.setPointerCapture(dragPointerId);
+      pulseDragHaptic(18);
+    } catch {
+      resetDragGesture();
+    }
+  };
+  queueSheet.addEventListener("pointerdown", event => {
+    const row = event.target.closest?.(".queue-row:not(.is-current)");
+    if (draggedRow || !row || event.target.closest(".queue-copy, [data-queue-action]")) return;
+    draggedRow = row;
+    dragPointerId = event.pointerId;
+    dragPointerType = event.pointerType;
+    dragStartX = event.clientX;
+    dragStartY = event.clientY;
+    dragActive = false;
+    dragMoved = false;
+    if (event.pointerType === "mouse") activateDrag();
+    else dragHoldTimer = setTimeout(activateDrag, TOUCH_DRAG_HOLD_MS);
   });
   queueSheet.addEventListener("pointermove", event => {
     if (!draggedRow || event.pointerId !== dragPointerId) return;
     if (!dragActive) {
-      if (Math.abs(event.clientY - dragStartY) < 6) return;
-      if (performance.now() < dragEligibleAt) return;
-      dragActive = true;
-      draggedRow.classList.add("is-dragging");
+      if (Math.hypot(event.clientX - dragStartX, event.clientY - dragStartY) > DRAG_SLOP_PX) {
+        resetDragGesture();
+      }
+      return;
     }
     event.preventDefault();
     const list = queueSheet.querySelector(".queue-list");
@@ -648,40 +693,48 @@
     const beforeRects = new Map([...list.querySelectorAll(".queue-row")]
       .map(row => [row.dataset.queueEntryId, row.getBoundingClientRect()]));
     const before = event.clientY < target.getBoundingClientRect().top + target.getBoundingClientRect().height / 2;
+    const alreadyPlaced = before
+      ? draggedRow.nextElementSibling === target
+      : target.nextElementSibling === draggedRow;
+    if (alreadyPlaced) return;
     target.parentElement.insertBefore(draggedRow, before ? target : target.nextSibling);
     animateQueueReorder(list, beforeRects);
+    pulseDragHaptic(8);
     dragMoved = true;
   });
+  queueSheet.addEventListener("touchmove", event => {
+    if (dragActive) event.preventDefault();
+  }, { passive: false });
   const finishDrag = event => {
     if (!draggedRow || event.pointerId !== dragPointerId) return;
-    draggedRow.classList.remove("is-dragging");
     const moved = dragMoved;
     const suppressAction = dragActive;
     const orderedEntryIds = [...queueSheet.querySelectorAll(".queue-row:not(.is-current)")]
       .map(row => row.dataset.queueEntryId);
-    draggedRow = null;
-    dragPointerId = null;
-    dragStartY = 0;
-    dragEligibleAt = 0;
-    dragActive = false;
-    dragMoved = false;
-    if (suppressAction) suppressQueueRowAction = true;
+    resetDragGesture();
+    if (suppressAction) {
+      suppressQueueRowAction = true;
+      setTimeout(() => { suppressQueueRowAction = false; }, 0);
+    }
     if (moved) {
       setQueueState(Queue.reorderUpcoming(queueState, orderedEntryIds));
       showStatus("Playlist reordered");
     }
   };
-  queueSheet.addEventListener("pointerup", finishDrag);
-  queueSheet.addEventListener("pointercancel", event => {
+  const cancelDrag = event => {
     if (!draggedRow || event.pointerId !== dragPointerId) return;
-    draggedRow = null;
-    dragPointerId = null;
-    dragStartY = 0;
-    dragEligibleAt = 0;
-    dragActive = false;
-    dragMoved = false;
-    renderQueueSheet();
+    const restoreOrder = dragActive && dragMoved;
+    resetDragGesture();
+    if (restoreOrder) renderQueueSheet();
+  };
+  document.addEventListener("pointerup", finishDrag);
+  document.addEventListener("pointercancel", cancelDrag);
+  queueSheet.addEventListener("pointerleave", event => {
+    if (!draggedRow || event.pointerId !== dragPointerId) return;
+    if (dragActive && draggedRow.hasPointerCapture?.(dragPointerId)) return;
+    cancelDrag(event);
   });
+  queueSheet.addEventListener("lostpointercapture", cancelDrag);
   document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
       if (!queueSheet.hidden) closeQueue({ returnFocus: true });
