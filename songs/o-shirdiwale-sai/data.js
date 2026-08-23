@@ -270,7 +270,7 @@ window.SONG_LINES = {
     "grammarNote": "Dative pronoun 'tumko' governing the quantified direct object 'lākhõ praṇām' with optative copula 'ho', repeated for emphasis."
   },
   "refrain-chorus": {
-    "source": "तुमको लाखों प्रणाम बाबा तुमको लाखों प्रणाम, तुमको लाखों प्रणाम बाबा तुमको लाखों प्रणाम",
+    "source": "तुमको लाखों प्रणाम बाबा तुमको लाखों प्रणाम,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -314,52 +314,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "तुमको",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "लाखों",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "प्रणाम",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "बाबा",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "तुमको",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "लाखों",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "प्रणाम",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "Tumko lākhõ praṇām Bābā tumko lākhõ praṇām, tumko lākhõ praṇām Bābā tumko lākhõ praṇām",
-    "english": "{1,2:Hundreds of thousands of bows}{0: to you,}{3: Baba,}{5,6: hundreds of thousands of bows}{4: to you;}{8,9: hundreds of thousands of bows}{7: to you,}{10: Baba,}{12,13: hundreds of thousands of bows}{11: to you!}",
+    "roman": "Tumko lākhõ praṇām Bābā tumko lākhõ praṇām,",
+    "english": "{1,2:Hundreds of thousands of bows}{0: to you,}{3: Baba,}{5,6: hundreds of thousands of bows}{4: to you;}",
     "words": [
       {
         "roman": "Tumko",
@@ -400,48 +358,6 @@ window.SONG_LINES = {
       {
         "roman": "praṇām,",
         "gloss": "reverent bows / obeisances,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tumko",
-        "gloss": "to you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lākhõ",
-        "gloss": "hundreds of thousands of / lakhs of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "praṇām",
-        "gloss": "reverent bows / obeisances",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Bābā",
-        "gloss": "O Baba",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tumko",
-        "gloss": "to you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lākhõ",
-        "gloss": "hundreds of thousands of / lakhs of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "praṇām",
-        "gloss": "reverent bows / obeisances",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2853,7 +2769,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-chorus",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "alap-intro",
@@ -2908,7 +2824,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-chorus",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "alap-intro",
@@ -2963,7 +2879,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-chorus",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "alap-intro",
@@ -3018,7 +2934,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-chorus",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "alap-intro",

@@ -268,7 +268,7 @@ window.SONG_LINES = {
     "grammarNote": "Series of vocative proper nouns punctuated by descriptive feminine epithets."
   },
   "refrain-chant-1": {
-    "source": "शारदा शारदा शारदा शारदा शारदा शारदा शारदा शारदा",
+    "source": "शारदा शारदा",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -282,83 +282,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "शारदा",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "शारदा",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "शारदा",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "शारदा",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "शारदा",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "शारदा",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "śāradā śāradā śāradā śāradā śāradā śāradā śāradā śāradā",
-    "english": "{0:Sharada, }{1:Sharada, }{2:Sharada, }{3:Sharada, }{4:Sharada, }{5:Sharada, }{6:Sharada, }{7:Sharada}",
+    "roman": "śāradā śāradā",
+    "english": "{0:Sharada, }{1:Sharada, }",
     "words": [
-      {
-        "roman": "śāradā",
-        "gloss": "goddess of speech, learning, and inspired expression",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śāradā",
-        "gloss": "goddess of speech, learning, and inspired expression",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śāradā",
-        "gloss": "goddess of speech, learning, and inspired expression",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śāradā",
-        "gloss": "goddess of speech, learning, and inspired expression",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śāradā",
-        "gloss": "goddess of speech, learning, and inspired expression",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śāradā",
-        "gloss": "goddess of speech, learning, and inspired expression",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "śāradā",
         "gloss": "goddess of speech, learning, and inspired expression",
@@ -1229,7 +1157,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-chant-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "verse1-line1",

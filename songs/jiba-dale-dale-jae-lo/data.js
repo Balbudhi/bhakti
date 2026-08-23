@@ -965,7 +965,7 @@ window.SONG_LINES = {
     "grammarNote": "Compound parallel sentence with symmetrical locative reduplicated distributives: 'ḍāḷe ḍāḷe' and 'patre patre'."
   },
   "refrain-main-2": {
-    "source": "ଛକାଛକି ଖେଳ ଚାଲେ ଜୀବନରେ, ଛକାଛକି ଖେଳ ଚାଲେ ଜୀବନରେ",
+    "source": "ଛକାଛକି ଖେଳ ଚାଲେ ଜୀବନରେ,",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -991,34 +991,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "ଛକାଛକି",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ଖେଳ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ଚାଲେ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ଜୀବନରେ",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Chhakāchhaki kheḷa chāle jībanare, chhakāchhaki kheḷa chāle jībanare",
-    "english": "{1:A game}{0: of mutual evasion}{2: goes on}{3: in life,}{5: a game}{4: of mutual evasion}{6: goes on}{7: in life.}",
+    "roman": "Chhakāchhaki kheḷa chāle jībanare,",
+    "english": "{1:A game}{0: of mutual evasion}{2: goes on}{3: in life,}",
     "words": [
       {
         "roman": "Chhakāchhaki",
@@ -1041,30 +1017,6 @@ window.SONG_LINES = {
       {
         "roman": "jībanare,",
         "gloss": "in life,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "chhakāchhaki",
-        "gloss": "game of outwitting / mutual evasion / hide-and-seek",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kheḷa",
-        "gloss": "game / play",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "chāle",
-        "gloss": "goes on / proceeds",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jībanare",
-        "gloss": "in life",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1727,7 +1679,7 @@ window.SONG_LINES = {
     "grammarNote": "'Aṅkābaṅkā' is an echo-compound adjective. 'dei' acts as a postposition meaning 'via/through'. 'muṇḍe' is a locative of 'muṇḍa' (head/extremity)."
   },
   "verse-2-line-2": {
-    "source": "ଶ୍ମଶାନ ପଦାର ବାଉଁଶ ଭିତରୁ, ଶ୍ମଶାନ ପଦାର ବାଉଁଶ ଭିତରୁ",
+    "source": "ଶ୍ମଶାନ ପଦାର ବାଉଁଶ ଭିତରୁ,",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -1753,34 +1705,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "ଶ୍ମଶାନ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ପଦାର",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ବାଉଁଶ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ଭିତରୁ",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Śmaśāna padāra bāum̐śa bhitaru, śmaśāna padāra bāum̐śa bhitaru",
-    "english": "{3:From within}{2: the bamboo}{0: of the cremation ground}{1: field,}{7: from within}{6: the bamboo}{4: of the cremation ground}{5: field,}",
+    "roman": "Śmaśāna padāra bāum̐śa bhitaru,",
+    "english": "{3:From within}{2: the bamboo}{0: of the cremation ground}{1: field,}",
     "words": [
       {
         "roman": "Śmaśāna",
@@ -1803,30 +1731,6 @@ window.SONG_LINES = {
       {
         "roman": "bhitaru,",
         "gloss": "from within / inside,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śmaśāna",
-        "gloss": "cremation ground",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "padāra",
-        "gloss": "of the open field / clearing",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bāum̐śa",
-        "gloss": "bamboo (grove / clump)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhitaru",
-        "gloss": "from within / inside",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2120,7 +2024,7 @@ window.SONG_LINES = {
     "grammarNote": "Compound noun 'Bhāgabata ṭuṅgi' + locative 'ghare'. Intransitive/passive-middle verb 'diśe' ('appears / is visible')."
   },
   "verse-3-line-2": {
-    "source": "ଶରଣ ନିଏ ଯେ ଗୁରୁଙ୍କ ଚରଣେ, ଶରଣ ନିଏ ଯେ ଗୁରୁଙ୍କ ଚରଣେ",
+    "source": "ଶରଣ ନିଏ ଯେ ଗୁରୁଙ୍କ ଚରଣେ,",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -2152,40 +2056,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "ଶରଣ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ନିଏ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ଯେ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "ଗୁରୁଙ୍କ",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "ଚରଣେ",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Śaraṇa nie ye guruṅka charaṇe, śaraṇa nie ye guruṅka charaṇe",
-    "english": "{2:Whoever}{1: takes}{0: refuge}{3: at the Guru's}{4: feet,}{7: whoever}{6: takes}{5: refuge}{8: at the Guru's}{9: feet,}",
+    "roman": "Śaraṇa nie ye guruṅka charaṇe,",
+    "english": "{2:Whoever}{1: takes}{0: refuge}{3: at the Guru's}{4: feet,}",
     "words": [
       {
         "roman": "Śaraṇa",
@@ -2214,36 +2088,6 @@ window.SONG_LINES = {
       {
         "roman": "charaṇe,",
         "gloss": "at the feet of,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śaraṇa",
-        "gloss": "refuge / shelter / surrender",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nie",
-        "gloss": "takes",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ye",
-        "gloss": "whoever / he who",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "guruṅka",
-        "gloss": "of the Guru / spiritual teacher",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "charaṇe",
-        "gloss": "at the feet of",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2455,7 +2299,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main-3",
@@ -2475,7 +2319,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main-3",
@@ -2515,7 +2359,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-2-line-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-2-line-3",
@@ -2535,7 +2379,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-3-line-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-3-line-3",
@@ -2555,7 +2399,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-main-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main-3",

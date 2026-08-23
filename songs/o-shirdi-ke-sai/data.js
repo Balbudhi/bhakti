@@ -35,7 +35,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "sai-ram-sai-shyam": {
-    "source": "साईं राम साईं श्याम साईं राम साईं श्याम",
+    "source": "साईं राम साईं श्याम",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -61,59 +61,11 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "राम",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "श्याम",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Sāīṁ Rām Sāīṁ Śyām Sāīṁ Rām Sāīṁ Śyām",
-    "english": "{0,1:Sai Ram, }{2,3:Sai Shyam, }{4,5:Sai Ram, }{6,7:Sai Shyam}",
+    "roman": "Sāīṁ Rām Sāīṁ Śyām",
+    "english": "{0,1:Sai Ram, }{2,3:Sai Shyam, }",
     "words": [
-      {
-        "roman": "Sāīṁ",
-        "gloss": "holy master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Sāīṁ",
-        "gloss": "holy master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Śyām",
-        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "Sāīṁ",
         "gloss": "holy master",
@@ -249,7 +201,7 @@ window.SONG_LINES = {
     "grammarNote": "Ergative construction: tūne (agent) governs feminine singular object duniyā, triggering feminine agreement on the perfective verb banāī."
   },
   "kisko-kya-de-1": {
-    "source": "किसको क्या दे किसको क्या दे",
+    "source": "किसको क्या दे",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -269,49 +221,13 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "किसको",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "क्या",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "दे",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Kisko kyā de kisko kyā de",
-    "english": "{1:What }{2:he gives }{0:to whom, }{4:what }{5:he gives }{3:to whom,}",
+    "roman": "Kisko kyā de",
+    "english": "{1:What }{2:he gives }{0:to whom, }",
     "words": [
       {
         "roman": "Kisko",
-        "gloss": "to whom (interrogative dative/accusative pronoun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kyā",
-        "gloss": "what (interrogative pronoun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "de",
-        "gloss": "[he/you] gives (third/second person singular subjunctive/present verb)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kisko",
         "gloss": "to whom (interrogative dative/accusative pronoun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -570,7 +486,7 @@ window.SONG_LINES = {
     "grammarNote": "Juxtaposes an imperative clause (iṅsānoṁ kī bhakti dekho) with a nominal equative clause (svārath hī unkī dukān) with elided copula hai."
   },
   "swarath-hi-chorus": {
-    "source": "स्वारथ ही उनकी दुकान स्वारथ ही उनकी दुकान",
+    "source": "स्वारथ ही उनकी दुकान",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -596,61 +512,13 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "स्वारथ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ही",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "उनकी",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "दुकान",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Svārath hī unkī dukān svārath hī unkī dukān",
-    "english": "{0:Self-interest }{1:alone }{2:is their }{3:shop, }{4:self-interest }{5:alone }{6:is their }{7:shop!}",
+    "roman": "Svārath hī unkī dukān",
+    "english": "{0:Self-interest }{1:alone }{2:is their }{3:shop, }",
     "words": [
       {
         "roman": "Svārath",
-        "gloss": "self-interest / selfishness (masculine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hī",
-        "gloss": "only / alone (emphatic particle)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "unkī",
-        "gloss": "their (third-person plural feminine genitive pronoun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dukān",
-        "gloss": "shop / trade (feminine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "svārath",
         "gloss": "self-interest / selfishness (masculine noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -796,7 +664,7 @@ window.SONG_LINES = {
     "grammarNote": "Dative subject construction: usko (dative experiencer) + cāhie (invariant modal) + coordinate noun subjects."
   },
   "roti-kapda-chorus": {
-    "source": "रोटी कपड़ा और मकान रोटी कपड़ा और मकान",
+    "source": "रोटी कपड़ा और मकान",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -822,61 +690,13 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "रोटी",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "कपड़ा",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "और",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "मकान",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Roṭī kapaṛā aur makān roṭī kapaṛā aur makān",
-    "english": "{0:Food, }{1:clothing, }{2:and }{3:shelter; }{4:food, }{5:clothing, }{6:and }{7:shelter!}",
+    "roman": "Roṭī kapaṛā aur makān",
+    "english": "{0:Food, }{1:clothing, }{2:and }{3:shelter; }",
     "words": [
       {
         "roman": "Roṭī",
-        "gloss": "bread / food (feminine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kapaṛā",
-        "gloss": "clothing (masculine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "aur",
-        "gloss": "and (conjunction)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "makān",
-        "gloss": "shelter / house (masculine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "roṭī",
         "gloss": "bread / food (feminine noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1248,7 +1068,7 @@ window.SONG_LINES = {
     "grammarNote": "Compound sentence: first clause uses habitual detā with dative dhanvānoṁ ko; second clause uses perfective lagāī agreeing with feminine noun lat."
   },
   "kaisi-lat-chorus": {
-    "source": "कैसी लत ये लगाई कैसी लत ये लगाई",
+    "source": "कैसी लत ये लगाई",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1274,61 +1094,13 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "कैसी",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "लत",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ये",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "लगाई",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Kaisī lat ye lagāī kaisī lat ye lagāī",
-    "english": "{0:What an }{1:addiction }{2:this is }{3:you have instilled, }{4:what an }{5:addiction }{6:this is }{7:you have instilled!}",
+    "roman": "Kaisī lat ye lagāī",
+    "english": "{0:What an }{1:addiction }{2:this is }{3:you have instilled, }",
     "words": [
       {
         "roman": "Kaisī",
-        "gloss": "what kind of / what a strange (feminine singular interrogative adjective)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lat",
-        "gloss": "addiction / craving (feminine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ye",
-        "gloss": "this (proximal demonstrative)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lagāī",
-        "gloss": "instilled / attached (perfective feminine singular verb)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kaisī",
         "gloss": "what kind of / what a strange (feminine singular interrogative adjective)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1498,7 +1270,7 @@ window.SONG_LINES = {
     "grammarNote": "Two paratactic clauses: first with negative potential construction (so nā pāe), second with transitive perfective curāī agreeing with feminine noun nīnd."
   },
   "aankhon-se-neend-chorus": {
-    "source": "आंखों से नींद चुराई आंखों से नींद चुराई",
+    "source": "आंखों से नींद चुराई",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1524,61 +1296,13 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "आंखों",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "से",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "नींद",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "चुराई",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Āṅkhoṁ se nīnd curāī āṅkhoṁ se nīnd curāī",
-    "english": "{2:Sleep }{3:has been stolen }{0,1:from their eyes, }{6:sleep }{7:has been stolen }{4,5:from their eyes!}",
+    "roman": "Āṅkhoṁ se nīnd curāī",
+    "english": "{2:Sleep }{3:has been stolen }{0,1:from their eyes, }",
     "words": [
       {
         "roman": "Āṅkhoṁ",
-        "gloss": "eyes (oblique plural noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "se",
-        "gloss": "from (ablative postposition)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nīnd",
-        "gloss": "sleep / slumber (feminine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "curāī",
-        "gloss": "stole / robbed (perfective feminine singular verb)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "āṅkhoṁ",
         "gloss": "eyes (oblique plural noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1902,7 +1626,7 @@ window.SONG_LINES = {
     "grammarNote": "Coupled clauses: first is negative indefinite (pyār kare nā koī kisī se), second is transitive perfective with elided subject (paisoṁ se hī prīt lagāī)."
   },
   "paison-se-preet-chorus": {
-    "source": "पैसों से ही प्रीत लगाई पैसों से ही प्रीत लगाई",
+    "source": "पैसों से ही प्रीत लगाई",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1934,73 +1658,13 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "पैसों",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "से",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ही",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "प्रीत",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "लगाई",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Paisoṁ se hī prīt lagāī paisoṁ se hī prīt lagāī",
-    "english": "{4:They have attached }{3:love }{2:only }{0,1:to money, }{9:they have attached }{8:love }{7:only }{5,6:to money!}",
+    "roman": "Paisoṁ se hī prīt lagāī",
+    "english": "{4:They have attached }{3:love }{2:only }{0,1:to money, }",
     "words": [
       {
         "roman": "Paisoṁ",
-        "gloss": "money / coins (oblique plural noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "se",
-        "gloss": "with / to (postposition)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hī",
-        "gloss": "only / alone (emphatic particle)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prīt",
-        "gloss": "love / affection (feminine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lagāī",
-        "gloss": "attached / formed (perfective feminine singular verb)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "paisoṁ",
         "gloss": "money / coins (oblique plural noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -2164,7 +1828,7 @@ window.SONG_LINES = {
     "grammarNote": "Ergative compound noun subject (is dhan daulat ne) governs compound verb kar dī agreeing with feminine object judāī."
   },
   "insano-mein-judai-chorus": {
-    "source": "इंसानों में जुदाई इंसानों में जुदाई",
+    "source": "इंसानों में जुदाई",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2184,49 +1848,13 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "इंसानों",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "में",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "जुदाई",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Iṅsānoṁ meṁ judāī iṅsānoṁ meṁ judāī",
-    "english": "{2:Division }{0,1:among human beings, }{5:division }{3,4:among human beings!}",
+    "roman": "Iṅsānoṁ meṁ judāī",
+    "english": "{2:Division }{0,1:among human beings, }",
     "words": [
       {
         "roman": "Iṅsānoṁ",
-        "gloss": "humans / human beings (oblique plural noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "meṁ",
-        "gloss": "among / between (locative postposition)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "judāī",
-        "gloss": "separation / estrangement (feminine noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "iṅsānoṁ",
         "gloss": "humans / human beings (oblique plural noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -2430,7 +2058,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "sai-ram-sai-shyam",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "o-shirdi-ke-sai",
@@ -2440,7 +2068,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "kisko-kya-de-1",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kisko-kya-de-vah-re",
@@ -2460,7 +2088,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "swarath-hi-chorus",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jeene-ke-liye",
@@ -2470,7 +2098,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "roti-kapda-chorus",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "aaj-bhi-dekho-1",
@@ -2490,7 +2118,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "sai-ram-sai-shyam",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "dhanvano-ko-deta",
@@ -2500,7 +2128,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "kaisi-lat-chorus",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chain-se-bhi-woh",
@@ -2510,7 +2138,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "aankhon-se-neend-chorus",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "rookhi-sookhi-1",
@@ -2535,7 +2163,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "paison-se-preet-chorus",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "is-dhan-daulat-ne",
@@ -2545,7 +2173,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "insano-mein-judai-chorus",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "bhala-karoge-1",
@@ -2565,7 +2193,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "kisko-kya-de-1",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kisko-kya-de-vah-re",

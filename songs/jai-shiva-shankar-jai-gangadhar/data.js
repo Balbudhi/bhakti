@@ -963,7 +963,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative particle 'Hē' followed by sixfold rhythmic chanting sequence of 'jaya Śiva Śaṅkara'."
   },
   "closing-shiva-shankar": {
-    "source": "जय शिव शंकर जय शिव शंकर जय शिव शंकर",
+    "source": "जय शिव शंकर",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -983,85 +983,13 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "शिव",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "शंकर",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "शिव",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "शंकर",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "Jaya Śiva Śaṅkara jaya Śiva Śaṅkara jaya Śiva Śaṅkara",
-    "english": "{0:Hail }{1:Shiva }{2:Shankara, }{3:hail }{4:Shiva }{5:Shankara, }{6:hail }{7:Shiva }{8:Shankara!}",
+    "roman": "Jaya Śiva Śaṅkara",
+    "english": "{0:Hail }{1:Shiva }{2:Shankara, }",
     "words": [
       {
         "roman": "Jaya",
-        "gloss": "victory; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Śiva",
-        "gloss": "the auspicious one; deity of transformation",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Śaṅkara",
-        "gloss": "Śiva as the auspicious maker of good",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
-        "gloss": "victory; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Śiva",
-        "gloss": "the auspicious one; deity of transformation",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Śaṅkara",
-        "gloss": "Śiva as the auspicious maker of good",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
         "gloss": "victory; hail",
         "concept_key": "",
         "preserve_in_english": false
@@ -1297,7 +1225,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "closing-shiva-shankar",
     "section": "closing",
-    "repeats": 1
+    "repeats": 3
   }
 ];
 

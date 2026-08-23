@@ -3197,7 +3197,7 @@ window.SONG_LINES = {
     "grammarNote": "'ghor' (awful/deep) and 'gahir' (profound/deep) modify 'samundar'. 'dil dā kinārā' uses the genitive postposition 'dā'."
   },
   "v2-l4-rep": {
-    "source": "ओ मेरे दिल दा किनारा इक पासे, ओ मेरे दिल दा किनारा इक पासे",
+    "source": "ओ मेरे दिल दा किनारा इक पासे,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -3241,52 +3241,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "ओ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "मेरे",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "दिल",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "दा",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "किनारा",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "इक",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "पासे",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "O mere dil dā kinārā ik pāse, o mere dil dā kinārā ik pāse",
-    "english": "{0:Oh, }{1,2,3:my heart's }{4:shore }{5,6:on one side, }{7:oh, }{8,9,10:my heart's }{11:shore }{12,13:on the other side.}",
+    "roman": "O mere dil dā kinārā ik pāse,",
+    "english": "{0:Oh, }{1,2,3:my heart's }{4:shore }{5,6:on one side, }",
     "words": [
       {
         "roman": "O",
@@ -3326,48 +3284,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "pāse,",
-        "gloss": "side",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "o",
-        "gloss": "oh",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mere",
-        "gloss": "my",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dil",
-        "gloss": "heart",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dā",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kinārā",
-        "gloss": "shore",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ik",
-        "gloss": "one",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pāse",
         "gloss": "side",
         "concept_key": "",
         "preserve_in_english": false
@@ -3662,7 +3578,7 @@ window.SONG_LINES = {
     "grammarNote": "'lagāyā nahī̃ jāndā' is passive of incapacity using the causative stem 'lagāṇā' with auxiliary 'jānā'."
   },
   "v3-l2-rep": {
-    "source": "थाँ-थाँ ते लगाया नहीं जांदा, थाँ-थाँ ते लगाया नहीं जांदा",
+    "source": "थाँ-थाँ ते लगाया नहीं जांदा,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -3694,40 +3610,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "थाँ-थाँ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ते",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "लगाया",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "नहीं",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "जांदा",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Thā̃-thā̃ te lagāyā nahī̃ jāndā, thā̃-thā̃ te lagāyā nahī̃ jāndā",
-    "english": "{2,3,4:It cannot be attached }{0,1:at every place, }{7,8,9:it cannot be attached }{5,6:at every place.}",
+    "roman": "Thā̃-thā̃ te lagāyā nahī̃ jāndā,",
+    "english": "{2,3,4:It cannot be attached }{0,1:at every place, }",
     "words": [
       {
         "roman": "Thā̃-thā̃",
@@ -3755,36 +3641,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāndā,",
-        "gloss": "goes",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "thā̃-thā̃",
-        "gloss": "place-to-place",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "te",
-        "gloss": "at",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lagāyā",
-        "gloss": "attached",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nahī̃",
-        "gloss": "not",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jāndā",
         "gloss": "goes",
         "concept_key": "",
         "preserve_in_english": false
@@ -4174,7 +4030,7 @@ window.SONG_LINES = {
     "grammarNote": "'sātõ' (or 'sāthõ') is the 1st person plural ablative/instrumental ('by us'). 'manāyā nahī̃ jāndā' is passive of incapacity."
   },
   "v3-l4-rep": {
-    "source": "सातों जगत मनाया नहीं जांदा, सातों जगत मनाया नहीं जांदा",
+    "source": "सातों जगत मनाया नहीं जांदा,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -4206,40 +4062,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "सातों",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "जगत",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "मनाया",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "नहीं",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "जांदा",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Sātõ jagat manāyā nahī̃ jāndā, sātõ jagat manāyā nahī̃ jāndā",
-    "english": "{1:The world }{2,3,4:cannot be pleased }{0:by us, }{6:the world }{7,8,9:cannot be pleased }{5:by us.}",
+    "roman": "Sātõ jagat manāyā nahī̃ jāndā,",
+    "english": "{1:The world }{2,3,4:cannot be pleased }{0:by us, }",
     "words": [
       {
         "roman": "Sātõ",
@@ -4267,36 +4093,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāndā,",
-        "gloss": "goes",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sātõ",
-        "gloss": "by us",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jagat",
-        "gloss": "world",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "manāyā",
-        "gloss": "pleased",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nahī̃",
-        "gloss": "not",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jāndā",
         "gloss": "goes",
         "concept_key": "",
         "preserve_in_english": false
@@ -5474,7 +5270,7 @@ window.SONG_LINES = {
     "grammarNote": "'bhulā ke' is conjunctive participle of the causative verb bhulāṇā; 'vasānā e' is an infinitive with auxiliary forming a prescriptive statement."
   },
   "v4-l4-rep": {
-    "source": "हो इस दिल विच माँ नू वसाना ए, हो इस दिल विच माँ नू वसाना ए",
+    "source": "हो इस दिल विच माँ नू वसाना ए,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -5524,58 +5320,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "हो",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "इस",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "दिल",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "विच",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "माँ",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "नू",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "वसाना",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "ए",
-        "wordIndices": [
-          15
-        ]
       }
     ],
-    "roman": "Ho is dil vic mā̃ nū vasānā e, ho is dil vic mā̃ nū vasānā e",
-    "english": "{0:Oh, }{6,7:one must enshrine }{4,5:Mother }{1,2,3:in this heart, }{8:oh, }{14,15:one must enshrine }{12,13:Mother }{9,10,11:in this heart.}",
+    "roman": "Ho is dil vic mā̃ nū vasānā e,",
+    "english": "{0:Oh, }{6,7:one must enshrine }{4,5:Mother }{1,2,3:in this heart, }",
     "words": [
       {
         "roman": "Ho",
@@ -5621,54 +5369,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "e,",
-        "gloss": "is",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ho",
-        "gloss": "oh",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "is",
-        "gloss": "this",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dil",
-        "gloss": "heart",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vic",
-        "gloss": "in",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mā̃",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nū",
-        "gloss": "to",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vasānā",
-        "gloss": "to enshrine",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "e",
         "gloss": "is",
         "concept_key": "",
         "preserve_in_english": false
@@ -6154,7 +5854,7 @@ window.SONG_LINES = {
     "grammarNote": "'ghuṭ' (masc. pl.) agrees with 'pīne painde ne'; 'gal' (fem. sg.) agrees with 'sahanī paindī e'. 'zaharā̃' and 'sabarā̃' are Punjabi oblique plurals."
   },
   "v5-l2-rep": {
-    "source": "हो गल सबरां दी सहनी पैंदी ए, हो गल सबरां दी सहनी पैंदी ए",
+    "source": "हो गल सबरां दी सहनी पैंदी ए,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -6198,52 +5898,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "हो",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "गल",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "सबरां",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "दी",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "सहनी",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "पैंदी",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "ए",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "Ho gal sabarā̃ dī sahanī paindī e, ho gal sabarā̃ dī sahanī paindī e",
-    "english": "{0:Oh, }{1:the matter }{2,3:of patience }{4,5,6:has to be endured, }{7:oh, }{8:the matter }{9,10:of patience }{11,12,13:has to be endured.}",
+    "roman": "Ho gal sabarā̃ dī sahanī paindī e,",
+    "english": "{0:Oh, }{1:the matter }{2,3:of patience }{4,5,6:has to be endured, }",
     "words": [
       {
         "roman": "Ho",
@@ -6283,48 +5941,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "e,",
-        "gloss": "is",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ho",
-        "gloss": "oh",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "gal",
-        "gloss": "word",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sabarā̃",
-        "gloss": "patiences",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dī",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sahanī",
-        "gloss": "enduring",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "paindī",
-        "gloss": "falls",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "e",
         "gloss": "is",
         "concept_key": "",
         "preserve_in_english": false
@@ -8992,7 +8608,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v2-l4-rep",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1-var",
@@ -9027,7 +8643,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v3-l2-rep",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v3-l3",
@@ -9047,7 +8663,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v3-l4-rep",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1-var",
@@ -9107,7 +8723,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v4-l4-rep",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1-var",
@@ -9147,7 +8763,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "v5-l2-rep",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "v5-l3",

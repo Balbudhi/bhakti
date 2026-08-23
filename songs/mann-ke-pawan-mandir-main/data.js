@@ -277,7 +277,7 @@ window.SONG_LINES = {
     "grammarNote": "Two parallel locative postpositional phrases (`... mẽ`) acting as adverbial goals for the imperative verb in refrain-2."
   },
   "refrain-2": {
-    "source": "साईं बाबा तुम आ जाओ, साईं बाबा तुम आ जाओ",
+    "source": "साईं बाबा तुम आ जाओ,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -309,40 +309,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "बाबा",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "जाओ",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "sāī̃ bābā tum ā jāo, sāī̃ bābā tum ā jāo",
-    "english": "{0,1,2,3,4:Sai Baba, come, }{5,6,7,8,9:Sai Baba, come}",
+    "roman": "sāī̃ bābā tum ā jāo,",
+    "english": "{0,1,2,3,4:Sai Baba, come, }",
     "words": [
       {
         "roman": "sāī̃",
@@ -370,36 +340,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāo,",
-        "gloss": "go / come (imperative auxiliary)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāī̃",
-        "gloss": "holy master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bābā",
-        "gloss": "father; revered master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you (2nd person pronoun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "come (verb stem)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jāo",
         "gloss": "go / come (imperative auxiliary)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1549,7 +1489,7 @@ window.SONG_LINES = {
     "grammarNote": "Standalone vocative phrase in the outro."
   },
   "outro-aajao": {
-    "source": "आ जाओ... आ जाओ...",
+    "source": "आ जाओ...",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1563,35 +1503,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "जाओ...",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "ā jāo... ā jāo...",
-    "english": "{0,1:Come... }{2,3:come...}",
+    "roman": "ā jāo...",
+    "english": "{0,1:Come... }",
     "words": [
-      {
-        "roman": "ā",
-        "gloss": "come (verb stem)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jāo...",
-        "gloss": "go / come (imperative auxiliary)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "ā",
         "gloss": "come (verb stem)",
@@ -1633,7 +1549,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "refrain-3",
@@ -1663,7 +1579,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-3",
@@ -1693,7 +1609,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-3",
@@ -1723,7 +1639,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-3",
@@ -1738,7 +1654,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "outro-aajao",
     "section": "closing",
-    "repeats": 1
+    "repeats": 2
   }
 ];
 

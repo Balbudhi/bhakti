@@ -112,7 +112,7 @@ window.SONG_LINES = {
     "grammarNote": "Mhāre is the Rajasthani first-person possessive/dative pronoun ('my / to my'). Ghara functions adverbially as the directional locative ('to [my] home'). Āo is the 2nd person honorific imperative."
   },
   "refrain-2": {
-    "source": "प्रीतम प्यारा प्रीतम प्यारा",
+    "source": "प्रीतम प्यारा",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -126,37 +126,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "प्रीतम",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "प्यारा",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "Prītama pyārā prītama pyārā",
-    "english": "{1:Dear }{0:beloved, }{3:dear }{2:beloved}",
+    "roman": "Prītama pyārā",
+    "english": "{1:Dear }{0:beloved, }",
     "words": [
       {
         "roman": "Prītama",
-        "gloss": "beloved",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pyārā",
-        "gloss": "dear; beloved",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prītama",
         "gloss": "beloved",
         "concept_key": "",
         "preserve_in_english": false
@@ -783,7 +759,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",
@@ -863,7 +839,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-1",

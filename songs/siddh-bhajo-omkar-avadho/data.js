@@ -29,7 +29,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "siddha-bhajo-1": {
-    "source": "सिद्ध भजो सिद्ध भजो",
+    "source": "सिद्ध भजो",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -43,35 +43,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "सिद्ध",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "भजो",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "siddha bhajo siddha bhajo",
-    "english": "{1:Meditate on}{0: the Siddha,}{3: meditate on}{2: the Siddha}",
+    "roman": "siddha bhajo",
+    "english": "{1:Meditate on}{0: the Siddha,}",
     "words": [
-      {
-        "roman": "siddha",
-        "gloss": "perfected master; adept",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhajo",
-        "gloss": "worship; meditate upon",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "siddha",
         "gloss": "perfected master; adept",
@@ -774,7 +750,7 @@ window.SONG_LINES = {
     "grammarNote": "Subject ātmā with adverbial temporal compound dina raina and repeated predicate adjective bhorī."
   },
   "utho-re-hansa": {
-    "source": "उठो रे हंसा उठो रे हंसा",
+    "source": "उठो रे हंसा",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -794,47 +770,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "उठो",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "रे",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "हंसा",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "uṭho re haṁsā uṭho re haṁsā",
-    "english": "{0:Arise,}{1: O}{2: swan,}{3: arise,}{4: O}{5: swan}",
+    "roman": "uṭho re haṁsā",
+    "english": "{0:Arise,}{1: O}{2: swan,}",
     "words": [
-      {
-        "roman": "uṭho",
-        "gloss": "arise; awaken",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "re",
-        "gloss": "O (vocative particle)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "haṁsā",
-        "gloss": "swan; soul; vital breath",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "uṭho",
         "gloss": "arise; awaken",
@@ -1177,7 +1117,7 @@ window.SONG_LINES = {
     "grammarNote": "Interrogative pronoun kauṇa modifying caraṇa dhārā, with the compound phrase caraṇa dhārā repeated."
   },
   "man-agun-ka-ek-dwara": {
-    "source": "मन औगुन को एक द्वारा मन औगुन को एक द्वारा",
+    "source": "मन औगुन को एक द्वारा",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1209,71 +1149,11 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "मन",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "औगुन",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "को",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "एक",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "द्वारा",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "mana auguna ko eka dvārā mana auguna ko eka dvārā",
-    "english": "{0:The mind}{3: is one}{4: gateway}{1,2: of vice;}{5: the mind}{8: is one}{9: gateway}{6,7: of vice.}",
+    "roman": "mana auguna ko eka dvārā",
+    "english": "{0:The mind}{3: is one}{4: gateway}{1,2: of vice;}",
     "words": [
-      {
-        "roman": "mana",
-        "gloss": "mind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "auguna",
-        "gloss": "fault; vice; moral defect",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ko",
-        "gloss": "of; relating to",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "eka",
-        "gloss": "one; single",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dvārā",
-        "gloss": "door; gateway",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "mana",
         "gloss": "mind",
@@ -1610,7 +1490,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siddha-bhajo-omkar",
@@ -1625,7 +1505,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "omkar-avadho-short",
@@ -1640,7 +1520,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kaya-manjan-1",
@@ -1655,7 +1535,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "shikhar-bheetar-1",
@@ -1685,7 +1565,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "utho-re-hansa",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "piyo-re-paani-triveni",
@@ -1695,7 +1575,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siddha-bhajo-omkar",
@@ -1710,7 +1590,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "pancha-jaane-nirankara",
@@ -1730,7 +1610,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "man-agun-ka-ek-dwara",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jo-bhaje-so-omkara",
@@ -1750,7 +1630,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "utho-re-hansa",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "hansa-re-hansa-piyo-pani",
@@ -1760,7 +1640,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siddha-bhajo-omkar",
@@ -1775,7 +1655,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "omkar-avadho-short",
@@ -1790,7 +1670,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "omkar-avadho-short",
@@ -1805,7 +1685,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kaya-manjan-1",
@@ -1820,7 +1700,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siddha-bhajo-1",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   }
 ];
 
@@ -1839,10 +1719,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 50.425,
-    "end": 60.0
+    "end": 60
   },
   {
-    "start": 60.0,
+    "start": 60,
     "end": 65.425
   },
   {
@@ -1855,10 +1735,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 77.325,
-    "end": 96.0
+    "end": 96
   },
   {
-    "start": 96.0,
+    "start": 96,
     "end": 104.225
   },
   {
@@ -1887,10 +1767,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 195.6,
-    "end": 204.0
+    "end": 204
   },
   {
-    "start": 204.0,
+    "start": 204,
     "end": 216.75
   },
   {

@@ -442,7 +442,7 @@ window.SONG_LINES = {
     "grammarNote": "Bahuvrīhi compound epithets ('lambōdara', 'gaja-vadana') and upapada compound 'manōharā' (manas + hara) with lengthened final vowel for meter."
   },
   "verse-2-line-1b": {
-    "source": "लम्बोदर... आ... लम्बोदर... आ...",
+    "source": "लम्बोदर... आ...",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -456,37 +456,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "लम्बोदर...",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "आ...",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "Lambōdara... ā... lambōdara... ā...",
-    "english": "{0:O large-bellied Lord... }{1:ah... }{2:O large-bellied Lord... }{3:ah...}",
+    "roman": "Lambōdara... ā...",
+    "english": "{0:O large-bellied Lord... }{1:ah... }",
     "words": [
       {
         "roman": "Lambōdara...",
-        "gloss": "large-bellied Lord (melodically prolonged)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā...",
-        "gloss": "ah (melodic vocalization)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lambōdara...",
         "gloss": "large-bellied Lord (melodically prolonged)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1115,7 +1091,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-2-line-1b",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-2-line-1a",

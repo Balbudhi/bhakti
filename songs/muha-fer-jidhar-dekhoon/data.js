@@ -1483,7 +1483,7 @@ window.SONG_LINES = {
     "grammarNote": "Infinitive + hai constructs an obligative/purposive statement ('one is to live / one is to die')."
   },
   "marna-hai-to-teri": {
-    "source": "मरना है तो तेरी मरना है तो तेरी",
+    "source": "मरना है तो तेरी",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1509,61 +1509,13 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "मरना",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "है",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "तो",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "तेरी",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Marnā hai to terī marnā hai to terī",
-    "english": "{1,2:if we must }{0:die, }{3:then at your—}{5,6:if we must }{4:die, }{7:then at your}",
+    "roman": "Marnā hai to terī",
+    "english": "{1,2:if we must }{0:die, }{3:then at your—}",
     "words": [
       {
         "roman": "Marnā",
-        "gloss": "to die (infinitive verbal noun)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hai",
-        "gloss": "is / must be (present auxiliary)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "to",
-        "gloss": "then; if so (conditional/emphatic particle)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "terī",
-        "gloss": "your (feminine singular possessive)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "marnā",
         "gloss": "to die (infinitive verbal noun)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1875,7 +1827,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "marna-hai-to-teri",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chaukhat-pe-hi-mar-jaaye",

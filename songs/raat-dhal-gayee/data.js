@@ -174,7 +174,7 @@ window.SONG_LINES = {
     "grammarNote": "Two coordinate clauses in parataxis: feminine singular rāt ḍhal gaī followed by masculine singular inverted clause huā savērā."
   },
   "refrain-3": {
-    "source": "जागो साईं प्रभु, जागो साईं प्रभु",
+    "source": "जागो साईं प्रभु,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -194,28 +194,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "जागो",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Jāgō Sāīṁ prabhu, jāgō Sāīṁ prabhu",
-    "english": "{0:Awake, }{1,2:Lord Sai, }{3:awake, }{4,5:Lord Sai}",
+    "roman": "Jāgō Sāīṁ prabhu,",
+    "english": "{0:Awake, }{1,2:Lord Sai, }",
     "words": [
       {
         "roman": "Jāgō",
@@ -231,24 +213,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "prabhu,",
-        "gloss": "Lord; Master (vocative)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jāgō",
-        "gloss": "awake; wake up (imperative)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Sāīṁ",
-        "gloss": "Lord Sai; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
         "gloss": "Lord; Master (vocative)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1797,7 +1761,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-3",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-4",
@@ -1827,7 +1791,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-3",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-4",
@@ -1862,7 +1826,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-3",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-4",
@@ -1892,7 +1856,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-3",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-4",
@@ -1927,7 +1891,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-3",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-4",
@@ -1968,10 +1932,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 136.86,
-    "end": 157.0
+    "end": 157
   },
   {
-    "start": 157.0,
+    "start": 157,
     "end": 167.425
   },
   {

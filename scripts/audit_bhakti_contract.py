@@ -17,6 +17,7 @@ from typing import Any
 import tag_taxonomy
 import gloss_policy
 import source_word_map
+import normalize_embedded_repeats
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -91,6 +92,11 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
         if not isinstance(line.get("words"), list) or not line["words"]:
             problems.append(f"{line_id} lacks word glosses")
         else:
+            repeated_phrase_count = normalize_embedded_repeats.repeat_factor(line["words"])
+            if repeated_phrase_count > 1:
+                problems.append(
+                    f"{line_id} embeds an exact {repeated_phrase_count}× repeated phrase instead of using sequence repeats"
+                )
             if line_id not in instrumental_refs:
                 problems.extend(
                     f"{line_id} {problem}"

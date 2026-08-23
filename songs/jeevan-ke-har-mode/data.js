@@ -2122,7 +2122,7 @@ window.SONG_LINES = {
     "grammarNote": "Non-lexical vocable syllables."
   },
   "vocalise-humming-1": {
-    "source": "हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ",
+    "source": "हूँ हूँ हूँ",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2142,83 +2142,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ",
-    "english": "{0:Hmm}{1: hmm}{2: hmm}{3: hmm}{4: hmm}{5: hmm}{6: hmm}{7: hmm}{8: hmm}",
+    "roman": "hūṁ hūṁ hūṁ",
+    "english": "{0:Hmm}{1: hmm}{2: hmm}",
     "words": [
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "hūṁ",
         "gloss": "nasal melodic vocable",
@@ -2241,7 +2169,7 @@ window.SONG_LINES = {
     "grammarNote": "Onomatopoeic humming syllables representing nasalized vocal music."
   },
   "vocalise-humming-2": {
-    "source": "हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ",
+    "source": "हूँ हूँ हूँ",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2261,83 +2189,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "हूँ",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ hūṁ",
-    "english": "{0:Hmm}{1: hmm}{2: hmm}{3: hmm}{4: hmm}{5: hmm}{6: hmm}{7: hmm}{8: hmm}",
+    "roman": "hūṁ hūṁ hūṁ",
+    "english": "{0:Hmm}{1: hmm}{2: hmm}",
     "words": [
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hūṁ",
-        "gloss": "nasal melodic vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "hūṁ",
         "gloss": "nasal melodic vocable",
@@ -2585,12 +2441,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "vocalise-humming-1",
     "section": "closing",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "vocalise-humming-2",
     "section": "closing",
-    "repeats": 1
+    "repeats": 3
   }
 ];
 
@@ -2653,10 +2509,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 106.4,
-    "end": 111.0
+    "end": 111
   },
   {
-    "start": 111.0,
+    "start": 111,
     "end": 115.85
   },
   {

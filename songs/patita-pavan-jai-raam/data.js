@@ -448,7 +448,7 @@ window.SONG_LINES = {
     "grammarNote": "Genitive tatpuruṣa compound functioning as an independent vocative epithet."
   },
   "jai-sai-ram-jai-sai-ram": {
-    "source": "जय साईं राम जय साईं राम",
+    "source": "जय साईं राम",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -468,49 +468,13 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "राम",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Jaya sāīṁ rāma jaya sāīṁ rāma",
-    "english": "{0:Victory to }{1:Sai }{2:Ram, }{3:victory to }{4:Sai }{5:Ram!}",
+    "roman": "Jaya sāīṁ rāma",
+    "english": "{0:Victory to }{1:Sai }{2:Ram, }",
     "words": [
       {
         "roman": "Jaya",
-        "gloss": "victory; triumph; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāīṁ",
-        "gloss": "holy master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
         "gloss": "victory; triumph; hail",
         "concept_key": "",
         "preserve_in_english": false
@@ -641,7 +605,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "jai-sai-ram-jai-sai-ram",
     "section": "bridge",
-    "repeats": 17
+    "repeats": 34
   },
   {
     "ref": "saguna-svarupa-sai-ram",

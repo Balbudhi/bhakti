@@ -173,7 +173,7 @@ window.SONG_LINES = {
     "grammarNote": "Apne is reflexive possessive referring to the addressee. Caraṇõ is honorific plural oblique governed by postposition mẽ. Sabko is the compound pronominal base sab + accusative/dative postposition -ko. De is intimate/direct imperative."
   },
   "refrain-sub-1": {
-    "source": "भुला दे कि हम कौन हैं, भुला दे कि हम कौन हैं",
+    "source": "भुला दे कि हम कौन हैं,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -211,46 +211,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "भुला",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "दे",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "कि",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "कौन",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "हैं",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "Bhulā de ki ham kaun ha͠i, bhulā de ki ham kaun ha͠i",
-    "english": "{0,1:Make us forget }{2,4:who }{3,5:we are, }{6,7:make us forget }{8,10:who }{9,11:we are}",
+    "roman": "Bhulā de ki ham kaun ha͠i,",
+    "english": "{0,1:Make us forget }{2,4:who }{3,5:we are, }",
     "words": [
       {
         "roman": "Bhulā",
@@ -287,48 +251,12 @@ window.SONG_LINES = {
         "gloss": "are",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "bhulā",
-        "gloss": "cause to forget; efface",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "de",
-        "gloss": "give; complete the action",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ki",
-        "gloss": "that",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kaun",
-        "gloss": "who",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ha͠i",
-        "gloss": "are",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Bhulā denā is a transitive causative compound verb (bhulānā + denā). The subordinate clause ki ham kaun ha͠i acts as the direct complement."
   },
   "refrain-sub-2": {
-    "source": "बस तेरे ही चरणों में रहने दे, बस तेरे ही चरणों में रहने दे",
+    "source": "बस तेरे ही चरणों में रहने दे,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -372,52 +300,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "बस",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तेरे",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "ही",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "चरणों",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "में",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "रहने",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "दे",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "Bas tere hī caraṇõ mẽ rahne de, bas tere hī caraṇõ mẽ rahne de",
-    "english": "{0:Just }{5,6:let us remain }{1,2,3,4:at your feet alone, }{7:just }{12,13:let us remain }{8,9,10,11:at your feet alone}",
+    "roman": "Bas tere hī caraṇõ mẽ rahne de,",
+    "english": "{0:Just }{5,6:let us remain }{1,2,3,4:at your feet alone, }",
     "words": [
       {
         "roman": "Bas",
@@ -457,48 +343,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "de,",
-        "gloss": "let; allow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bas",
-        "gloss": "only; just",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tere",
-        "gloss": "your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hī",
-        "gloss": "alone; exclusively",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "caraṇõ",
-        "gloss": "feet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mẽ",
-        "gloss": "in; at",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rahne",
-        "gloss": "remaining; staying",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "de",
         "gloss": "let; allow",
         "concept_key": "",
         "preserve_in_english": false
@@ -638,7 +482,7 @@ window.SONG_LINES = {
     "grammarNote": "Bhar ke is a conjunctive participle indicating prior action. Banā denā is a compound verb where denā functions as a completive/benefactive auxiliary in the imperative form."
   },
   "verse-1-line-2": {
-    "source": "इक रात के लिए ही सही, इक रात के लिए ही सही",
+    "source": "इक रात के लिए ही सही,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -676,46 +520,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "इक",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "रात",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "के",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "लिए",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "ही",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "सही",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "Ik rāt ke lie hī sahī, ik rāt ke lie hī sahī",
-    "english": "{5:Even if }{4:only }{0,1,2,3:for a single night, }{11:even if }{10:only }{6,7,8,9:for a single night}",
+    "roman": "Ik rāt ke lie hī sahī,",
+    "english": "{5:Even if }{4:only }{0,1,2,3:for a single night, }",
     "words": [
       {
         "roman": "Ik",
@@ -749,42 +557,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "sahī,",
-        "gloss": "let it be; conceded",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ik",
-        "gloss": "one; a single",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rāt",
-        "gloss": "night",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ke",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lie",
-        "gloss": "for",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hī",
-        "gloss": "only; even",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sahī",
         "gloss": "let it be; conceded",
         "concept_key": "",
         "preserve_in_english": false
@@ -1079,7 +851,7 @@ window.SONG_LINES = {
     "grammarNote": "Continuous aspect formed with imperfective participles (gāte, ha͠ste) + subjunctive auxiliary rahẽ. Guṇ is direct object of gāte. Śaraṇ is feminine noun taking feminine possessive terī."
   },
   "verse-2-line-2": {
-    "source": "हम से तुम परीक्षा मत लेना, हम से तुम परीक्षा मत लेना",
+    "source": "हम से तुम परीक्षा मत लेना,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1117,46 +889,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "से",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "परीक्षा",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "मत",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "लेना",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "Ham se tum parīkṣā mat lenā, ham se tum parīkṣā mat lenā",
-    "english": "{4:Do not }{0,1,2:put us }{3,5:to the test, }{10:do not }{6,7,8:put us }{9,11:to the test}",
+    "roman": "Ham se tum parīkṣā mat lenā,",
+    "english": "{4:Do not }{0,1,2:put us }{3,5:to the test, }",
     "words": [
       {
         "roman": "Ham",
@@ -1193,48 +929,12 @@ window.SONG_LINES = {
         "gloss": "take",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "we; us",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "se",
-        "gloss": "from; of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "parīkṣā",
-        "gloss": "test; examination; trial",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mat",
-        "gloss": "do not",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lenā",
-        "gloss": "take",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Mat is the prohibitive particle used exclusively with imperative/infinitive commands. Lenā functions as a direct imperative. Ham se indicates the source from whom the test is taken."
   },
   "verse-2-line-3": {
-    "source": "हम हारेंगे तो रो देंगे, हम हारेंगे तो रो देंगे",
+    "source": "हम हारेंगे तो रो देंगे,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1266,40 +966,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "हारेंगे",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "तो",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "रो",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "देंगे",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Ham hārẽge to ro dẽge, ham hārẽge to ro dẽge",
-    "english": "{0,1,2:If we lose, }{3,4:we will weep, }{5,6,7:if we lose, }{8,9:we will weep}",
+    "roman": "Ham hārẽge to ro dẽge,",
+    "english": "{0,1,2:If we lose, }{3,4:we will weep, }",
     "words": [
       {
         "roman": "Ham",
@@ -1327,36 +997,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "dẽge,",
-        "gloss": "will give; will burst into",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hārẽge",
-        "gloss": "will lose; will fail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "to",
-        "gloss": "then",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ro",
-        "gloss": "weep; cry",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dẽge",
         "gloss": "will give; will burst into",
         "concept_key": "",
         "preserve_in_english": false
@@ -1508,7 +1148,7 @@ window.SONG_LINES = {
     "grammarNote": "Pāp-puṇya is a dvandva compound. Kyā jānẽ uses the 1st plural subjunctive rhetorically to mean 'we know nothing'. Bacā de is a transitive compound verb with direct object hamẽ and ablative source is uljhan se."
   },
   "verse-3-line-2": {
-    "source": "हम तेरे गीत सदा गाएँ, हम तेरे गीत सदा गाएँ",
+    "source": "हम तेरे गीत सदा गाएँ,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1540,40 +1180,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "तेरे",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "गीत",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "सदा",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "गाएँ",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Ham tere gīt sadā gāẽ, ham tere gīt sadā gāẽ",
-    "english": "{0:May we }{3:always }{4:sing }{1,2:your songs, }{5:may we }{8:always }{9:sing }{6,7:your songs}",
+    "roman": "Ham tere gīt sadā gāẽ,",
+    "english": "{0:May we }{3:always }{4:sing }{1,2:your songs, }",
     "words": [
       {
         "roman": "Ham",
@@ -1604,42 +1214,12 @@ window.SONG_LINES = {
         "gloss": "may sing",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tere",
-        "gloss": "your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "gīt",
-        "gloss": "songs",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sadā",
-        "gloss": "always; ever",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "gāẽ",
-        "gloss": "may sing",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Gāẽ is 1st person plural subjunctive expressing wish or prayer. Tere gīt is direct object masculine plural."
   },
   "verse-3-line-3": {
-    "source": "हमें तेरी ही यादों में खोने दे, हमें तेरी ही यादों में खोने दे",
+    "source": "हमें तेरी ही यादों में खोने दे,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1683,52 +1263,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "हमें",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तेरी",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "ही",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "यादों",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "में",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "खोने",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "दे",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "Hamẽ terī hī yādõ mẽ khone de, hamẽ terī hī yādõ mẽ khone de",
-    "english": "{0,5,6:Let us lose ourselves }{1,2,3,4:in remembrance of you alone, }{7,12,13:let us lose ourselves }{8,9,10,11:in remembrance of you alone}",
+    "roman": "Hamẽ terī hī yādõ mẽ khone de,",
+    "english": "{0,5,6:Let us lose ourselves }{1,2,3,4:in remembrance of you alone, }",
     "words": [
       {
         "roman": "Hamẽ",
@@ -1768,48 +1306,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "de,",
-        "gloss": "let; allow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hamẽ",
-        "gloss": "us",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "terī",
-        "gloss": "your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hī",
-        "gloss": "only; alone",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "yādõ",
-        "gloss": "remembrances; memories",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mẽ",
-        "gloss": "in",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "khone",
-        "gloss": "losing oneself; being absorbed",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "de",
         "gloss": "let; allow",
         "concept_key": "",
         "preserve_in_english": false
@@ -1911,12 +1407,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-sub-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-sub-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main",
@@ -1931,7 +1427,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-1-line-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-1-line-3",
@@ -1951,12 +1447,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-2-line-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-2-line-3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main",
@@ -1971,12 +1467,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-3-line-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-3-line-3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main",
@@ -1986,12 +1482,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-sub-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-sub-2",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main",

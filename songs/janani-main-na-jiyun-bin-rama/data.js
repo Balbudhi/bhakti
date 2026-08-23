@@ -408,7 +408,7 @@ window.SONG_LINES = {
     "grammarNote": "First person singular subject pronoun 'maiṁ' with negated 1sg verb 'jīyūm̐'."
   },
   "he-janani-he-janani": {
-    "source": "हे जननी हे जननी",
+    "source": "हे जननी",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -422,35 +422,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "हे",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "जननी",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "he jananī he jananī",
-    "english": "{0:O }{1:Mother, }{2:O }{3:Mother}",
+    "roman": "he jananī",
+    "english": "{0:O }{1:Mother, }",
     "words": [
-      {
-        "roman": "he",
-        "gloss": "O",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jananī",
-        "gloss": "mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "he",
         "gloss": "O",
@@ -1272,7 +1248,7 @@ window.SONG_LINES = {
     "grammarNote": "Chiasmic/interspersed vocative construction 'jananī he jananī'."
   },
   "main-na-jiyun-2x": {
-    "source": "मैं न जीयूँ मैं न जीयूँ",
+    "source": "मैं न जीयूँ",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1292,47 +1268,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "मैं",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "न",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "जीयूँ",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "maiṁ na jīyūm̐ maiṁ na jīyūm̐",
-    "english": "{0:I }{1:will not }{2:live, }{3:I }{4:will not }{5:live}",
+    "roman": "maiṁ na jīyūm̐",
+    "english": "{0:I }{1:will not }{2:live, }",
     "words": [
-      {
-        "roman": "maiṁ",
-        "gloss": "I",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "na",
-        "gloss": "not",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jīyūm̐",
-        "gloss": "will live / can survive",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "maiṁ",
         "gloss": "I",
@@ -1985,7 +1925,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "he-janani-he-janani",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "main-na-jiyun-bin-ram-3x-janani",
@@ -2070,7 +2010,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "main-na-jiyun-2x",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "bin-ram-3x-janani",

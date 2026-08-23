@@ -31,7 +31,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "siram-ram-jap-le": {
-    "source": "साईं राम राम जप ले, साईं राम राम जप ले",
+    "source": "साईं राम राम जप ले,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -63,40 +63,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "राम",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "राम",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "जप",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "ले",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Sāīṁ Rām Rām jap le, Sāīṁ Rām Rām jap le",
-    "english": "{3,4:Chant }{0,1,2:Sai Ram Ram, }{8,9:chant }{5,6,7:Sai Ram Ram}",
+    "roman": "Sāīṁ Rām Rām jap le,",
+    "english": "{3,4:Chant }{0,1,2:Sai Ram Ram, }",
     "words": [
       {
         "roman": "Sāīṁ",
@@ -127,42 +97,12 @@ window.SONG_LINES = {
         "gloss": "take (auxiliary marking reflexive benefit)",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "Sāīṁ",
-        "gloss": "holy master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jap",
-        "gloss": "chant; repeat",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "le",
-        "gloss": "take (auxiliary marking reflexive benefit)",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Compound verb 'jap le' (root 'jap' + imperative auxiliary 'le' from 'lenā' indicating an action done for oneself); whole half-line is repeated for rhythmic emphasis."
   },
   "uljhan-me-rahne-vale": {
-    "source": "उलझन में रहने वाले, उलझन में रहने वाले",
+    "source": "उलझन में रहने वाले,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -188,34 +128,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "उलझन",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "में",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "रहने",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "वाले",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Uljhan meṁ rahne vāle, uljhan meṁ rahne vāle",
-    "english": "{3:O you }{2:living }{1:in }{0:entanglement, }{7:O you }{6:living }{5:in }{4:entanglement}",
+    "roman": "Uljhan meṁ rahne vāle,",
+    "english": "{3:O you }{2:living }{1:in }{0:entanglement, }",
     "words": [
       {
         "roman": "Uljhan",
@@ -237,30 +153,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāle,",
-        "gloss": "O one who / O dweller",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "uljhan",
-        "gloss": "entanglement; confusion; perplexity",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "meṁ",
-        "gloss": "in",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rahne",
-        "gloss": "living; dwelling; remaining",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vāle",
         "gloss": "O one who / O dweller",
         "concept_key": "",
         "preserve_in_english": false
@@ -507,7 +399,7 @@ window.SONG_LINES = {
     "grammarNote": "First clause has an equational copular structure ('mānav janam hai hīrā'); second clause has transitive compound imperative 'saphal banā le'."
   },
   "har-saans-pe-rate-ja": {
-    "source": "हर साँस पे रटे जा, हर साँस पे रटे जा",
+    "source": "हर साँस पे रटे जा,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -539,40 +431,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "हर",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "साँस",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "पे",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "रटे",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "जा",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Har sā̃s pe raṭe jā, har sā̃s pe raṭe jā",
-    "english": "{3,4:Keep repeating }{2:with }{0:every }{1:breath, }{8,9:keep repeating }{7:with }{5:every }{6:breath}",
+    "roman": "Har sā̃s pe raṭe jā,",
+    "english": "{3,4:Keep repeating }{2:with }{0:every }{1:breath, }",
     "words": [
       {
         "roman": "Har",
@@ -603,42 +465,12 @@ window.SONG_LINES = {
         "gloss": "go on; keep (continuative auxiliary)",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "har",
-        "gloss": "every; each",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sā̃s",
-        "gloss": "breath",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pe",
-        "gloss": "on; with; at",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "raṭe",
-        "gloss": "repeating; chanting",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jā",
-        "gloss": "go on; keep (continuative auxiliary)",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Continuative aspectual compound imperative 'raṭe jā' (imperfective/oblique stem 'raṭe' + imperative 'jā' of 'jānā'); repeated for rhythm."
   },
   "sai-ram-bhole-bhale": {
-    "source": "साईं राम भोले-भाले, साईं राम भोले-भाले",
+    "source": "साईं राम भोले-भाले,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -658,28 +490,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "राम",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "भोले-भाले",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Sāīṁ Rām bhole-bhāle, Sāīṁ Rām bhole-bhāle",
-    "english": "{0,1:Sai Ram, }{2:innocent and guileless, }{3,4:Sai Ram, }{5:innocent and guileless}",
+    "roman": "Sāīṁ Rām bhole-bhāle,",
+    "english": "{0,1:Sai Ram, }{2:innocent and guileless, }",
     "words": [
       {
         "roman": "Sāīṁ",
@@ -695,24 +509,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhole-bhāle,",
-        "gloss": "innocent; guileless; simple-hearted and benevolent",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Sāīṁ",
-        "gloss": "holy master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhole-bhāle",
         "gloss": "innocent; guileless; simple-hearted and benevolent",
         "concept_key": "",
         "preserve_in_english": false
@@ -983,7 +779,7 @@ window.SONG_LINES = {
     "grammarNote": "Reduplicative abstract noun 'calā-calī' (from 'calnā', expressing continuous/imminent movement); 'bo jā' is a transitive compound imperative."
   },
   "beeti-ka-kya-hai-shikva": {
-    "source": "बीती का क्या है शिकवा, बीती का क्या है शिकवा",
+    "source": "बीती का क्या है शिकवा,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1015,40 +811,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "बीती",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "का",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "क्या",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "है",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "शिकवा",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Bītī kā kyā hai śikvā, bītī kā kyā hai śikvā",
-    "english": "{2:What }{4:complaint }{3:is there }{0,1:of the past, }{7:what }{9:complaint }{8:is there }{5,6:of the past}",
+    "roman": "Bītī kā kyā hai śikvā,",
+    "english": "{2:What }{4:complaint }{3:is there }{0,1:of the past, }",
     "words": [
       {
         "roman": "Bītī",
@@ -1079,42 +845,12 @@ window.SONG_LINES = {
         "gloss": "complaint; grievance; lament",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "bītī",
-        "gloss": "that which has passed; the past",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kā",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kyā",
-        "gloss": "what",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hai",
-        "gloss": "is",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śikvā",
-        "gloss": "complaint; grievance; lament",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Nominalized feminine perfective participle 'bītī' used as an abstract noun meaning 'the past'; repeated for rhetorical emphasis."
   },
   "aage-ko-pag-badha-le": {
-    "source": "आगे को पग बढ़ा ले, आगे को पग बढ़ा ले",
+    "source": "आगे को पग बढ़ा ले,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1146,40 +882,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "आगे",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "को",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "पग",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "बढ़ा",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "ले",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Āge ko pag baṛhā le, āge ko pag baṛhā le",
-    "english": "{3,4:Advance }{2:your step }{0,1:forward, }{8,9:advance }{7:your step }{5,6:forward}",
+    "roman": "Āge ko pag baṛhā le,",
+    "english": "{3,4:Advance }{2:your step }{0,1:forward, }",
     "words": [
       {
         "roman": "Āge",
@@ -1207,36 +913,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "le,",
-        "gloss": "take (auxiliary marking reflexive benefit)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "āge",
-        "gloss": "forward; ahead",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ko",
-        "gloss": "to; toward",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pag",
-        "gloss": "step; footstep",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "baṛhā",
-        "gloss": "advance; extend; move forward",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "le",
         "gloss": "take (auxiliary marking reflexive benefit)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1459,7 +1135,7 @@ window.SONG_LINES = {
     "grammarNote": "Personified feminine adjective 'nigoṛī' functioning as an epithet/noun for death; 'ā jāe' is a compound subjunctive verb."
   },
   "drig-khol-bol-munh-se": {
-    "source": "दृग खोल बोल मुँह से, दृग खोल बोल मुँह से",
+    "source": "दृग खोल बोल मुँह से,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1491,40 +1167,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "दृग",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "खोल",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "बोल",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "मुँह",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "से",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Dṛg khol bol mū̃h se, dṛg khol bol mū̃h se",
-    "english": "{1:Open }{0:your eyes, }{2:speak }{3,4:from your mouth, }{6:open }{5:your eyes, }{7:speak }{8,9:from your mouth}",
+    "roman": "Dṛg khol bol mū̃h se,",
+    "english": "{1:Open }{0:your eyes, }{2:speak }{3,4:from your mouth, }",
     "words": [
       {
         "roman": "Dṛg",
@@ -1555,42 +1201,12 @@ window.SONG_LINES = {
         "gloss": "from; with",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "dṛg",
-        "gloss": "eyes",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "khol",
-        "gloss": "open",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bol",
-        "gloss": "speak; utter",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mū̃h",
-        "gloss": "mouth",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "se",
-        "gloss": "from; with",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Tatsama noun 'dṛg' (eyes); paired bare root imperatives 'khol' and 'bol' with instrumental adjunct 'mū̃h se'."
   },
   "jai-baba-shirdi-vale": {
-    "source": "जय बाबा शिरडी वाले, जय बाबा शिरडी वाले",
+    "source": "जय बाबा शिरडी वाले,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1616,34 +1232,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "बाबा",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "शिरडी",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "वाले",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Jay Bābā Śirḍī vāle, jay Bābā Śirḍī vāle",
-    "english": "{0:Victory }{1:to Baba }{2,3:of Shirdi, }{4:victory }{5:to Baba }{6,7:of Shirdi}",
+    "roman": "Jay Bābā Śirḍī vāle,",
+    "english": "{0:Victory }{1:to Baba }{2,3:of Shirdi, }",
     "words": [
       {
         "roman": "Jay",
@@ -1665,30 +1257,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāle,",
-        "gloss": "O dweller of / O one of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory; glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Bābā",
-        "gloss": "father; revered master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Śirḍī",
-        "gloss": "town associated with Sāī Bābā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vāle",
         "gloss": "O dweller of / O one of",
         "concept_key": "",
         "preserve_in_english": false
@@ -1899,7 +1467,7 @@ window.SONG_LINES = {
     "grammarNote": "Adverbial Persian dvandva compound 'subh-o-śām' (morning-and-evening); transitive verb 'navānā' takes direct object 'sar' and locative complement 'carṇoṁ meṁ'."
   },
   "ab-meri-bhi-banana": {
-    "source": "अब मेरी भी बनाना, अब मेरी भी बनाना",
+    "source": "अब मेरी भी बनाना,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1925,34 +1493,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "अब",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "मेरी",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "भी",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "बनाना",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Ab merī bhī banānā, ab merī bhī banānā",
-    "english": "{0:Now }{3:mend }{1:my plight }{2:as well, }{4:now }{7:mend }{5:my plight }{6:as well}",
+    "roman": "Ab merī bhī banānā,",
+    "english": "{0:Now }{3:mend }{1:my plight }{2:as well, }",
     "words": [
       {
         "roman": "Ab",
@@ -1977,36 +1521,12 @@ window.SONG_LINES = {
         "gloss": "mend; make right; resolve",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "ab",
-        "gloss": "now",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "merī",
-        "gloss": "my (plight / ruined condition)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhī",
-        "gloss": "also; too",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "banānā",
-        "gloss": "mend; make right; resolve",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Feminine possessive pronoun 'merī' elliptically qualifies 'bigṛī' (ruined state); infinitive 'banānā' functions as a supplication imperative."
   },
   "bigdi-banane-vale": {
-    "source": "बिगड़ी बनाने वाले, बिगड़ी बनाने वाले",
+    "source": "बिगड़ी बनाने वाले,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2026,28 +1546,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "बिगड़ी",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "बनाने",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "वाले",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Bigṛī banāne vāle, bigṛī banāne vāle",
-    "english": "{1,2:O Mender }{0:of ruined fortunes, }{4,5:O Mender }{3:of ruined fortunes}",
+    "roman": "Bigṛī banāne vāle,",
+    "english": "{1,2:O Mender }{0:of ruined fortunes, }",
     "words": [
       {
         "roman": "Bigṛī",
@@ -2066,24 +1568,6 @@ window.SONG_LINES = {
         "gloss": "O One who / O Redeemer",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "bigṛī",
-        "gloss": "that which is ruined; spoiled condition",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "banāne",
-        "gloss": "making; mending; restoring",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vāle",
-        "gloss": "O One who / O Redeemer",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Agentive vocative noun phrase 'bigṛī banāne vāle' formed by direct object feminine participle 'bigṛī' + oblique infinitive 'banāne' + suffix 'vāle'."
@@ -2094,42 +1578,42 @@ window.SONG_SEQUENCE = [
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sai-ram-ko-mana-le",
@@ -2144,22 +1628,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "har-saans-pe-rate-ja",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sai-ram-bhole-bhale",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sai-yaad-me-tu-kho-ja",
@@ -2174,22 +1658,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "beeti-ka-kya-hai-shikva",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "aage-ko-pag-badha-le",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jeevan-ki-avadhi-thodi",
@@ -2204,22 +1688,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "drig-khol-bol-munh-se",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jai-baba-shirdi-vale",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "tera-das-das-data",
@@ -2234,42 +1718,42 @@ window.SONG_SEQUENCE = [
   {
     "ref": "ab-meri-bhi-banana",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "bigdi-banane-vale",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "siram-ram-jap-le",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "uljhan-me-rahne-vale",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   }
 ];
 

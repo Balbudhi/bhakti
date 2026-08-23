@@ -94,7 +94,7 @@ window.SONG_LINES = {
     "grammarNote": "ḍohī is the locative singular of the masculine noun ḍoha (deep pool); taraṁga is a masculine plural/collective noun acting as predicate nominative."
   },
   "anandachi-anga": {
-    "source": "आनंदचि अंग आनंदचि अंग",
+    "source": "आनंदचि अंग",
     "sourceLanguage": "mr",
     "sourceWords": [
       {
@@ -108,37 +108,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "आनंदचि",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "अंग",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "Ānaṁdaci aṁga ānaṁdaci aṁga",
-    "english": "{1:Every limb is }{0:bliss itself, }{3:every limb is }{2:bliss itself.}",
+    "roman": "Ānaṁdaci aṁga",
+    "english": "{1:Every limb is }{0:bliss itself, }",
     "words": [
       {
         "roman": "Ānaṁdaci",
-        "gloss": "bliss itself; indeed bliss",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "aṁga",
-        "gloss": "limbs; the body",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ānaṁdaci",
         "gloss": "bliss itself; indeed bliss",
         "concept_key": "",
         "preserve_in_english": false
@@ -224,7 +200,7 @@ window.SONG_LINES = {
     "grammarNote": "Reduplication of ānaṁdāce functions as stylistic and melodic intensification; ḍohī is locative singular."
   },
   "chorus-anandache-dohi-double": {
-    "source": "आनंदाचे डोही आनंद तरंग । आनंदाचे डोही आनंद तरंग",
+    "source": "आनंदाचे डोही आनंद तरंग",
     "sourceLanguage": "mr",
     "sourceWords": [
       {
@@ -250,59 +226,11 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "आनंदाचे",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "डोही",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "आनंद",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "तरंग",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Ānaṁdāce ḍohī ānaṁda taraṁga | Ānaṁdāce ḍohī ānaṁda taraṁga",
-    "english": "{1:In the deep pool }{0:of bliss, }{3:waves }{2:of bliss; }{5:in the deep pool }{4:of bliss, }{7:waves }{6:of bliss.}",
+    "roman": "Ānaṁdāce ḍohī ānaṁda taraṁga",
+    "english": "{1:In the deep pool }{0:of bliss, }{3:waves }{2:of bliss; }",
     "words": [
-      {
-        "roman": "Ānaṁdāce",
-        "gloss": "of bliss",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ḍohī",
-        "gloss": "in the deep pool",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ānaṁda",
-        "gloss": "bliss",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "taraṁga",
-        "gloss": "waves",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "Ānaṁdāce",
         "gloss": "of bliss",
@@ -860,7 +788,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "anandachi-anga",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "anandache-anandache-dohi",
@@ -870,7 +798,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-anandache-dohi-double",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kaya-sangu-zhale",
@@ -890,7 +818,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-anandache-dohi-double",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "garbhache-aavadi",
@@ -905,7 +833,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-anandache-dohi-double",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "tuka-mhane-taisa",
@@ -925,12 +853,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-anandache-dohi-double",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "anandachi-anga",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "anandache-anandache-dohi",

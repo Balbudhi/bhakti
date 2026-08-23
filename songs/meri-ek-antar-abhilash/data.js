@@ -1219,7 +1219,7 @@ window.SONG_LINES = {
     "grammarNote": "Imperative + vocative + adverb + imperative."
   },
   "maiya-maiya-maiya-maiya": {
-    "source": "मैया मैया मैया मैया",
+    "source": "मैया मैया",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1233,37 +1233,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "मैया",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "मैया",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "Maiyā maiyā maiyā maiyā",
-    "english": "{0:Mother, }{1:Mother, }{2:Mother, }{3:Mother}",
+    "roman": "Maiyā maiyā",
+    "english": "{0:Mother, }{1:Mother, }",
     "words": [
       {
         "roman": "Maiyā",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "maiyā",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "maiyā",
         "gloss": "Mother",
         "concept_key": "",
         "preserve_in_english": false
@@ -1719,7 +1695,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "maiya-maiya-maiya-maiya",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "maiya-begi-aao-daras-dikhao",
@@ -1795,10 +1771,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 136.95,
-    "end": 148.0
+    "end": 148
   },
   {
-    "start": 148.0,
+    "start": 148,
     "end": 167.35
   },
   {
@@ -1815,10 +1791,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 188.25,
-    "end": 195.0
+    "end": 195
   },
   {
-    "start": 195.0,
+    "start": 195,
     "end": 203.2
   },
   {
@@ -1827,10 +1803,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 207.8,
-    "end": 217.0
+    "end": 217
   },
   {
-    "start": 217.0,
+    "start": 217,
     "end": 229.1
   },
   {

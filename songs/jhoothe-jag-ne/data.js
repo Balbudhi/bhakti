@@ -31,8 +31,8 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "invocation": {
-    "roman": "He mā... he mā...",
-    "english": "{0:O}{1: Mother...}{2: O}{3: Mother...}",
+    "roman": "He mā",
+    "english": "{0:O}{1: Mother...}",
     "words": [
       {
         "roman": "He",
@@ -41,17 +41,9 @@ window.SONG_LINES = {
       {
         "roman": "mā",
         "gloss": "Mother"
-      },
-      {
-        "roman": "he",
-        "gloss": "O"
-      },
-      {
-        "roman": "mā",
-        "gloss": "Mother"
       }
     ],
-    "source": "ਹੇ ਮਾਂ... ਹੇ ਮਾਂ...",
+    "source": "ਹੇ ਮਾਂ...",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -64,18 +56,6 @@ window.SONG_LINES = {
         "text": "ਮਾਂ...",
         "wordIndices": [
           1
-        ]
-      },
-      {
-        "text": "ਹੇ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਮਾਂ...",
-        "wordIndices": [
-          3
         ]
       }
     ]
@@ -1506,7 +1486,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "invocation",
     "section": "invocation",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain",

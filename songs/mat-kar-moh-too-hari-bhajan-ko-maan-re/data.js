@@ -594,10 +594,10 @@ window.SONG_LINES = {
     ]
   },
   "sadho-variations": {
-    "source": "साधो... साधो... साधो साधो",
+    "source": "साधो... साधो...",
     "sourceLanguage": "hi",
-    "roman": "sādho... sādho... sādho sādho",
-    "english": "{0:O seekers... }{1:O seekers... }{2:O seekers, }{3:O seekers}",
+    "roman": "sādho... sādho...",
+    "english": "{0:O seekers... }{1:O seekers... }",
     "words": [
       {
         "roman": "sādho...",
@@ -606,14 +606,6 @@ window.SONG_LINES = {
       {
         "roman": "sādho...",
         "gloss": "O seekers... [vocative plural with sustain]"
-      },
-      {
-        "roman": "sādho",
-        "gloss": "O seekers [vocative plural]"
-      },
-      {
-        "roman": "sādho",
-        "gloss": "O seekers [vocative plural]"
       }
     ],
     "grammarNote": "Successive vocative plural tokens of 'sādhu' with musical extensions.",
@@ -628,18 +620,6 @@ window.SONG_LINES = {
         "text": "साधो...",
         "wordIndices": [
           1
-        ]
-      },
-      {
-        "text": "साधो",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "साधो",
-        "wordIndices": [
-          3
         ]
       }
     ]
@@ -801,7 +781,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "sadho-variations",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kanchan-nipjat-khaan-re",

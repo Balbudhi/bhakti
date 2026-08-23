@@ -100,7 +100,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative noun 'Rāmā' with emphatic vocative interjection 'ho'."
   },
   "refrain-full": {
-    "source": "रामा हो रामा, रामा हो रामा",
+    "source": "रामा हो रामा,",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -120,28 +120,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "रामा",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "हो",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "रामा",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Rāmā ho Rāmā, Rāmā ho Rāmā",
-    "english": "{0,1:O Rama, }{2:O Rama, }{3,4:O Rama, }{5:O Rama}",
+    "roman": "Rāmā ho Rāmā,",
+    "english": "{0,1:O Rama, }{2:O Rama, }",
     "words": [
       {
         "roman": "Rāmā",
@@ -157,24 +139,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā,",
-        "gloss": "O Rama",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Rāmā",
-        "gloss": "O Rama",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ho",
-        "gloss": "O (vocative particle)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Rāmā",
         "gloss": "O Rama",
         "concept_key": "",
         "preserve_in_english": false
@@ -1411,7 +1375,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-full",
     "section": "refrain",
-    "repeats": 3
+    "repeats": 6
   },
   {
     "ref": "verse-1",
@@ -1431,7 +1395,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-full",
     "section": "refrain",
-    "repeats": 3
+    "repeats": 6
   },
   {
     "ref": "verse-2-a",
@@ -1446,7 +1410,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-full",
     "section": "refrain",
-    "repeats": 3
+    "repeats": 6
   },
   {
     "ref": "verse-3-a",
@@ -1466,7 +1430,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-full",
     "section": "refrain",
-    "repeats": 4
+    "repeats": 8
   },
   {
     "ref": "verse-4-a",
@@ -1486,7 +1450,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-full",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-close",
@@ -1496,7 +1460,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-full",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   }
 ];
 

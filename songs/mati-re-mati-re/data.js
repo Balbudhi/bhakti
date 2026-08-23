@@ -29,7 +29,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "mati-re-mati-re": {
-    "source": "माटी रे माटी रे",
+    "source": "माटी रे",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -43,35 +43,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "माटी",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "रे",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "māṭī re māṭī re",
-    "english": "{1:O }{0:dust, }{3:O }{2:dust}",
+    "roman": "māṭī re",
+    "english": "{1:O }{0:dust, }",
     "words": [
-      {
-        "roman": "māṭī",
-        "gloss": "dust; soil; mortal clay",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "re",
-        "gloss": "O (vocative particle)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "māṭī",
         "gloss": "dust; soil; mortal clay",
@@ -1401,7 +1377,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "mati-re",
@@ -1441,7 +1417,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "mati-re",

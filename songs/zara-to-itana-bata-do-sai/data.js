@@ -468,20 +468,12 @@ window.SONG_LINES = {
     ]
   },
   "verse_1_3": {
-    "source": "पुकारता मन पुकारता मन",
-    "roman": "Pukārtā man pukārtā man",
-    "english": "{1:The mind }{0:calls out; }{3:the mind }{2:calls out.}",
+    "source": "पुकारता मन",
+    "roman": "Pukārtā man",
+    "english": "{1:The mind }{0:calls out; }",
     "words": [
       {
         "roman": "Pukārtā",
-        "gloss": "calling out"
-      },
-      {
-        "roman": "man",
-        "gloss": "mind, heart"
-      },
-      {
-        "roman": "pukārtā",
         "gloss": "calling out"
       },
       {
@@ -500,18 +492,6 @@ window.SONG_LINES = {
         "text": "मन",
         "wordIndices": [
           1
-        ]
-      },
-      {
-        "text": "पुकारता",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "मन",
-        "wordIndices": [
-          3
         ]
       }
     ]
@@ -764,20 +744,12 @@ window.SONG_LINES = {
     ]
   },
   "verse_2_3": {
-    "source": "तुम्ही को लेकर तुम्ही को लेकर",
-    "roman": "Tumhī ko lekar tumhī ko lekar",
-    "english": "{1:Taking }{0:You alone }{1:along, }{3:taking }{2:You alone }{3:along…}",
+    "source": "तुम्ही को लेकर",
+    "roman": "Tumhī ko lekar",
+    "english": "{1:Taking }{0:You alone }{1:along, }",
     "words": [
       {
         "roman": "Tumhī ko",
-        "gloss": "You alone"
-      },
-      {
-        "roman": "lekar",
-        "gloss": "having taken, taking along"
-      },
-      {
-        "roman": "tumhī ko",
         "gloss": "You alone"
       },
       {
@@ -802,24 +774,6 @@ window.SONG_LINES = {
         "text": "लेकर",
         "wordIndices": [
           1
-        ]
-      },
-      {
-        "text": "तुम्ही",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "को",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "लेकर",
-        "wordIndices": [
-          3
         ]
       }
     ]
@@ -962,7 +916,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse_1_3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse_1_4",
@@ -997,7 +951,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse_2_3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse_2_4",

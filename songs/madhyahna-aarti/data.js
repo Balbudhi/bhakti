@@ -3529,7 +3529,7 @@ window.SONG_LINES = {
     "grammarNote": "'joḍuni' is an absolutive / conjunctive participle; 'ṭhevito' is 1st person masculine singular present indicative."
   },
   "line-043": {
-    "source": "जय देव जय देव",
+    "source": "जय देव",
     "sourceLanguage": "mr",
     "sourceWords": [
       {
@@ -3543,35 +3543,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "देव",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "jaya deva jaya deva",
-    "english": "{0:Hail, }{1:O Lord, }{2:hail, }{3:O Lord!}",
+    "roman": "jaya deva",
+    "english": "{0:Hail, }{1:O Lord, }",
     "words": [
-      {
-        "roman": "jaya",
-        "gloss": "victory; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "deva",
-        "gloss": "O Lord; O divine one",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "jaya",
         "gloss": "victory; hail",
@@ -12308,7 +12284,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-043",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-044",
@@ -12348,7 +12324,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-043",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "line-048",

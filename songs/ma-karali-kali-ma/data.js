@@ -308,7 +308,7 @@ window.SONG_LINES = {
     "grammarNote": "A sequence of Sanskrit feminine agent nouns ending in -inī; duṣṭajana functions as the genitive/accusative complement governed by nāśinī."
   },
   "bhaktajana-rakshadayini": {
-    "source": "भक्तजन रक्षादायिनी भक्तजन रक्षादायिनी",
+    "source": "भक्तजन रक्षादायिनी",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -322,37 +322,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "भक्तजन",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "रक्षादायिनी",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "Bhaktajana rakṣādāyinī bhaktajana rakṣādāyinī",
-    "english": "{1:Protector }{0:of devotees, }{3:protector }{2:of devotees}",
+    "roman": "Bhaktajana rakṣādāyinī",
+    "english": "{1:Protector }{0:of devotees, }",
     "words": [
       {
         "roman": "Bhaktajana",
-        "gloss": "to devotees",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rakṣādāyinī",
-        "gloss": "protection-giver",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhaktajana",
         "gloss": "to devotees",
         "concept_key": "",
         "preserve_in_english": false
@@ -367,7 +343,7 @@ window.SONG_LINES = {
     "grammarNote": "Repeated compound phrase comprising dative/genitive complement bhaktajana and feminine agentive epithet rakṣā-dāyinī."
   },
   "jaya-maa-bhavatarini": {
-    "source": "जय माँ भवतारिणी जय माँ भवतारिणी जय माँ भवतारिणी",
+    "source": "जय माँ भवतारिणी",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -387,85 +363,13 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "माँ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "भवतारिणी",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "माँ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "भवतारिणी",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "Jaya mā̃ bhavatāriṇī jaya mā̃ bhavatāriṇī jaya mā̃ bhavatāriṇī",
-    "english": "{0:Hail }{1:Mother }{2:Bhavatāriṇī, }{3:hail }{4:Mother }{5:Bhavatāriṇī, }{6:hail }{7:Mother }{8:Bhavatāriṇī}",
+    "roman": "Jaya mā̃ bhavatāriṇī",
+    "english": "{0:Hail }{1:Mother }{2:Bhavatāriṇī, }",
     "words": [
       {
         "roman": "Jaya",
-        "gloss": "victory be to",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mā̃",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhavatāriṇī",
-        "gloss": "deliverer across worldly existence",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
-        "gloss": "victory be to",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mā̃",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhavatāriṇī",
-        "gloss": "deliverer across worldly existence",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
         "gloss": "victory be to",
         "concept_key": "",
         "preserve_in_english": false
@@ -599,12 +503,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "bhaktajana-rakshadayini",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jaya-maa-bhavatarini",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 3
   },
   {
     "ref": "maa-maa-karali-kali-maa-maa",

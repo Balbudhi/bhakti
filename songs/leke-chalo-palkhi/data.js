@@ -34,7 +34,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "leke-chalo-call": {
-    "source": "लेके चलो ओ लेके चलो, लेके चलो ओ लेके चलो",
+    "source": "लेके चलो ओ लेके चलो,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -66,40 +66,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "लेके",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "चलो",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ओ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "लेके",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "चलो",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "lēkē calō ō lēkē calō, lēkē calō ō lēkē calō",
-    "english": "{0,1:Carry onward}{2:, O }{3,4:carry onward, }{5,6:carry onward}{7:, O }{8,9:carry onward}",
+    "roman": "lēkē calō ō lēkē calō,",
+    "english": "{0,1:Carry onward}{2:, O }{3,4:carry onward, }",
     "words": [
       {
         "roman": "lēkē",
@@ -130,42 +100,12 @@ window.SONG_LINES = {
         "gloss": "walk / proceed,",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "lēkē",
-        "gloss": "taking / bearing",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "calō",
-        "gloss": "walk / proceed",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ō",
-        "gloss": "O / oh",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lēkē",
-        "gloss": "taking / bearing",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "calō",
-        "gloss": "walk / proceed",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "Serial verb construction combining absolutive / conjunctive participle 'lēkē' with polite imperative 'calō' to signify continuous transport in motion."
   },
   "leke-chalo-palki": {
-    "source": "लेके चलो पालकी शिरडी के नाथ की, लेके चलो पालकी शिरडी के नाथ की",
+    "source": "लेके चलो पालकी शिरडी के नाथ की,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -209,52 +149,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "लेके",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "चलो",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "पालकी",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "शिरडी",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "के",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "नाथ",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "की",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "lēkē calō pālakī śiraḍī kē nātha kī, lēkē calō pālakī śiraḍī kē nātha kī",
-    "english": "{0,1:Carry forward }{2:the palanquin }{3,4,5,6:of the Lord of Shirdi, }{7,8:carry forward }{9:the palanquin }{10,11,12,13:of the Lord of Shirdi}",
+    "roman": "lēkē calō pālakī śiraḍī kē nātha kī,",
+    "english": "{0,1:Carry forward }{2:the palanquin }{3,4,5,6:of the Lord of Shirdi, }",
     "words": [
       {
         "roman": "lēkē",
@@ -295,48 +193,6 @@ window.SONG_LINES = {
       {
         "roman": "kī,",
         "gloss": "of (feminine),",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lēkē",
-        "gloss": "taking / bearing",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "calō",
-        "gloss": "walk / proceed",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pālakī",
-        "gloss": "palanquin / litter",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śiraḍī",
-        "gloss": "of Shirdi",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kē",
-        "gloss": "of (oblique masculine)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nātha",
-        "gloss": "Lord / Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kī",
-        "gloss": "of (feminine)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -344,7 +200,7 @@ window.SONG_LINES = {
     "grammarNote": "Nested genitive construction: 'śiraḍī kē nātha' (oblique masculine marked by 'kē') followed by feminine genitive 'kī' agreeing with feminine head noun 'pālakī'."
   },
   "kandha-laga-ke-solo": {
-    "source": "कांधा लगा के बोलो जय साईंनाथ की, कांधा लगा के बोलो जय साईंनाथ की",
+    "source": "कांधा लगा के बोलो जय साईंनाथ की,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -388,52 +244,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "कांधा",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "लगा",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "के",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "बोलो",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "साईंनाथ",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "की",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "kāndhā lagā kē bōlō jaya sāīṁnātha kī, kāndhā lagā kē bōlō jaya sāīṁnātha kī",
-    "english": "{0,1,2:Lend your shoulder }{3:and proclaim }{4,5,6:victory to Sainath, }{7,8,9:lend your shoulder }{10:and proclaim }{11,12,13:victory to Sainath}",
+    "roman": "kāndhā lagā kē bōlō jaya sāīṁnātha kī,",
+    "english": "{0,1,2:Lend your shoulder }{3:and proclaim }{4,5,6:victory to Sainath, }",
     "words": [
       {
         "roman": "kāndhā",
@@ -474,48 +288,6 @@ window.SONG_LINES = {
       {
         "roman": "kī,",
         "gloss": "of (feminine),",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kāndhā",
-        "gloss": "shoulder",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lagā",
-        "gloss": "applying / putting",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kē",
-        "gloss": "having",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bōlō",
-        "gloss": "say / proclaim / chant",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
-        "gloss": "victory / hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāīṁnātha",
-        "gloss": "Sainath (Lord Sai)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kī",
-        "gloss": "of (feminine)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -523,7 +295,7 @@ window.SONG_LINES = {
     "grammarNote": "Conjunctive participle 'lagā kē' modifying 'bōlō'; genitive postposition 'kī' agrees with feminine noun 'jaya'."
   },
   "kandha-laga-ke-chorus": {
-    "source": "कांधा लगा के बोलो जय साईंनाथ की, कांधा लगा के बोलो जय साईंनाथ की",
+    "source": "कांधा लगा के बोलो जय साईंनाथ की,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -567,52 +339,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "कांधा",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "लगा",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "के",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "बोलो",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "साईंनाथ",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "की",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "kāndhā lagā kē bōlō jaya sāīṁnātha kī, kāndhā lagā kē bōlō jaya sāīṁnātha kī",
-    "english": "{0,1,2:Lend your shoulder }{3:and proclaim }{4,5,6:victory to Sainath, }{7,8,9:lend your shoulder }{10:and proclaim }{11,12,13:victory to Sainath}",
+    "roman": "kāndhā lagā kē bōlō jaya sāīṁnātha kī,",
+    "english": "{0,1,2:Lend your shoulder }{3:and proclaim }{4,5,6:victory to Sainath, }",
     "words": [
       {
         "roman": "kāndhā",
@@ -653,48 +383,6 @@ window.SONG_LINES = {
       {
         "roman": "kī,",
         "gloss": "of (feminine),",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kāndhā",
-        "gloss": "shoulder",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lagā",
-        "gloss": "applying / putting",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kē",
-        "gloss": "having",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bōlō",
-        "gloss": "say / proclaim / chant",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
-        "gloss": "victory / hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāīṁnātha",
-        "gloss": "Sainath (Lord Sai)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kī",
-        "gloss": "of (feminine)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -940,7 +628,7 @@ window.SONG_LINES = {
     "grammarNote": "Continuative aspect: imperfective participle 'karatā' + imperative 'cala'; genitive 'kā' connects masculine noun 'japa' with 'sāīṁ kē nāma'."
   },
   "saath-hai-tere-baba-aage": {
-    "source": "साथ है तेरे बाबा बस आगे चलता जा, साथ है तेरे बाबा बस आगे चलता जा",
+    "source": "साथ है तेरे बाबा बस आगे चलता जा,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -990,58 +678,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "साथ",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "है",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "तेरे",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "बाबा",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "बस",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "आगे",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "चलता",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "जा",
-        "wordIndices": [
-          15
-        ]
       }
     ],
-    "roman": "sātha hai tērē bābā basa āgē calatā jā, sātha hai tērē bābā basa āgē calatā jā",
-    "english": "{3:Baba }{0,1,2:is with you, }{4:just }{6,7:keep walking }{5:forward, }{11:Baba }{8,9,10:is with you, }{12:just }{14,15:keep walking }{13:forward}",
+    "roman": "sātha hai tērē bābā basa āgē calatā jā,",
+    "english": "{3:Baba }{0,1,2:is with you, }{4:just }{6,7:keep walking }{5:forward, }",
     "words": [
       {
         "roman": "sātha",
@@ -1088,54 +728,6 @@ window.SONG_LINES = {
       {
         "roman": "jā,",
         "gloss": "go / keep on,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sātha",
-        "gloss": "with / beside",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hai",
-        "gloss": "is",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tērē",
-        "gloss": "with you / your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bābā",
-        "gloss": "father; revered master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "basa",
-        "gloss": "only / just / simply",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "āgē",
-        "gloss": "ahead / forward",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "calatā",
-        "gloss": "walking / proceeding",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jā",
-        "gloss": "go / keep on",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1452,7 +1044,7 @@ window.SONG_LINES = {
     "grammarNote": "Present habitual 'rakhatā hai vō'; adverbial participial clause 'āsana pē baiṭhā huā' describing the subject's bodily posture."
   },
   "saath-hai-tere-baba-darna": {
-    "source": "साथ है तेरे बाबा फिर काहे का डरना, साथ है तेरे बाबा फिर काहे का डरना",
+    "source": "साथ है तेरे बाबा फिर काहे का डरना,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1502,58 +1094,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "साथ",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "है",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "तेरे",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "बाबा",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "फिर",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "काहे",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "का",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "डरना",
-        "wordIndices": [
-          15
-        ]
       }
     ],
-    "roman": "sātha hai tērē bābā phira kāhē kā daranā, sātha hai tērē bābā phira kāhē kā daranā",
-    "english": "{3:Baba }{0,1,2:is with you, }{5:why }{4:then }{6,7:fear at all, }{11:Baba }{8,9,10:is with you, }{13:why }{12:then }{14,15:fear at all}",
+    "roman": "sātha hai tērē bābā phira kāhē kā daranā,",
+    "english": "{3:Baba }{0,1,2:is with you, }{5:why }{4:then }{6,7:fear at all, }",
     "words": [
       {
         "roman": "sātha",
@@ -1600,54 +1144,6 @@ window.SONG_LINES = {
       {
         "roman": "daranā,",
         "gloss": "fearing / fear,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sātha",
-        "gloss": "with / beside",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hai",
-        "gloss": "is",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tērē",
-        "gloss": "with you / your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bābā",
-        "gloss": "father; revered master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "phira",
-        "gloss": "then / in that case",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kāhē",
-        "gloss": "what (oblique)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kā",
-        "gloss": "of (masculine)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "daranā",
-        "gloss": "fearing / fear",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1881,7 +1377,7 @@ window.SONG_LINES = {
     "grammarNote": "Compound sentence: 1) equational clause 'usakē liē saba ēka haiṁ'; 2) transitive habitual clause 'karatā hai sabakā bhalā' with unexpressed third-person singular subject."
   },
   "saath-hai-tere-baba-dega": {
-    "source": "साथ है तेरे बाबा जो मांगोगे देगा, साथ है तेरे बाबा जो मांगोगे देगा",
+    "source": "साथ है तेरे बाबा जो मांगोगे देगा,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1925,52 +1421,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "साथ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "है",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "तेरे",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "बाबा",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "जो",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "मांगोगे",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "देगा",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "sātha hai tērē bābā jō māṅgōgē dēgā, sātha hai tērē bābā jō māṅgōgē dēgā",
-    "english": "{3:Baba }{0,1,2:is with you, }{4:whatever }{5:you ask }{6:he will give, }{10:Baba }{7,8,9:is with you, }{11:whatever }{12:you ask }{13:he will give}",
+    "roman": "sātha hai tērē bābā jō māṅgōgē dēgā,",
+    "english": "{3:Baba }{0,1,2:is with you, }{4:whatever }{5:you ask }{6:he will give, }",
     "words": [
       {
         "roman": "sātha",
@@ -2011,48 +1465,6 @@ window.SONG_LINES = {
       {
         "roman": "dēgā,",
         "gloss": "he will give,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sātha",
-        "gloss": "with / beside",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hai",
-        "gloss": "is",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tērē",
-        "gloss": "with you / your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bābā",
-        "gloss": "father; revered master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jō",
-        "gloss": "whatever / what",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgōgē",
-        "gloss": "you will ask / pray for",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dēgā",
-        "gloss": "he will give",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2136,22 +1548,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "leke-chalo-call",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "leke-chalo-palki",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-solo",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-chorus",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "aasani-se-kat-jayega",
@@ -2176,7 +1588,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "saath-hai-tere-baba-aage",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sainath-chant",
@@ -2186,22 +1598,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "leke-chalo-call",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "leke-chalo-palki",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-solo",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-chorus",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "saathi-hai-wo-dukh-dard-ka",
@@ -2226,7 +1638,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "saath-hai-tere-baba-darna",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sainath-chant",
@@ -2236,22 +1648,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "leke-chalo-call",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "leke-chalo-palki",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-solo",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-chorus",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "bande-tera-mazhab",
@@ -2276,7 +1688,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "saath-hai-tere-baba-dega",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sainath-chant",
@@ -2286,22 +1698,22 @@ window.SONG_SEQUENCE = [
   {
     "ref": "leke-chalo-call",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "leke-chalo-palki",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-solo",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kandha-laga-ke-chorus",
     "section": "refrain",
-    "repeats": 4
+    "repeats": 8
   },
   {
     "ref": "closing-jaykara",
@@ -2381,10 +1793,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 178.04,
-    "end": 185.0
+    "end": 185
   },
   {
-    "start": 185.0,
+    "start": 185,
     "end": 199.2
   },
   {
@@ -2417,10 +1829,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 259.1,
-    "end": 266.0
+    "end": 266
   },
   {
-    "start": 266.0,
+    "start": 266,
     "end": 272.9
   },
   {

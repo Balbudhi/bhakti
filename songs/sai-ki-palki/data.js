@@ -32,7 +32,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "bol-taran-taran": {
-    "source": "तारंग तारंग तारंग तारंग तंग, तारंग तारंग तारंग तारंग तंग",
+    "source": "तारंग तारंग तारंग तारंग तंग,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -64,40 +64,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "तारंग",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "तारंग",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "तारंग",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तारंग",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "तंग",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "tāraṅga tāraṅga tāraṅga tāraṅga taṅga, tāraṅga tāraṅga tāraṅga tāraṅga taṅga",
-    "english": "{0:Tarang }{1:tarang }{2:tarang }{3:tarang }{4:tang, }{5:tarang }{6:tarang }{7:tarang }{8:tarang }{9:tang}",
+    "roman": "tāraṅga tāraṅga tāraṅga tāraṅga taṅga,",
+    "english": "{0:Tarang }{1:tarang }{2:tarang }{3:tarang }{4:tang, }",
     "words": [
       {
         "roman": "tāraṅga",
@@ -125,36 +95,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "taṅga,",
-        "gloss": "rhythmic percussion strike",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tāraṅga",
-        "gloss": "rhythmic percussion syllable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tāraṅga",
-        "gloss": "rhythmic percussion syllable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tāraṅga",
-        "gloss": "rhythmic percussion syllable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tāraṅga",
-        "gloss": "rhythmic percussion syllable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "taṅga",
         "gloss": "rhythmic percussion strike",
         "concept_key": "",
         "preserve_in_english": false
@@ -689,7 +629,7 @@ window.SONG_LINES = {
     "grammarNote": "Identical grammar to refrain-male-full: repetitive syntactic structure typical of devotional congregational choruses."
   },
   "alaap-interlude-1": {
-    "source": "आ आ आ आ आ आ आ आ",
+    "source": "आ आ",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -703,83 +643,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "ā ā ā ā ā ā ā ā",
-    "english": "{0:Aa }{1:aa }{2:aa }{3:aa }{4:aa }{5:aa }{6:aa }{7:aa}",
+    "roman": "ā ā",
+    "english": "{0:Aa }{1:aa }",
     "words": [
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "ā",
         "gloss": "vocalized syllable; alaap vocable",
@@ -2289,7 +2157,7 @@ window.SONG_LINES = {
     "grammarNote": "caraṇoṁ ko is direct object with differential object marker ko; dhoe, cūme, chue, nāce are 3rd pers. sg. present/habitual verbs."
   },
   "alaap-interlude-2": {
-    "source": "आ आ आ आ आ आ आ आ",
+    "source": "आ आ",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2303,83 +2171,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "आ",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "ā ā ā ā ā ā ā ā",
-    "english": "{0:Aa }{1:aa }{2:aa }{3:aa }{4:aa }{5:aa }{6:aa }{7:aa}",
+    "roman": "ā ā",
+    "english": "{0:Aa }{1:aa }",
     "words": [
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ā",
-        "gloss": "vocalized syllable; alaap vocable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "ā",
         "gloss": "vocalized syllable; alaap vocable",
@@ -3429,7 +3225,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "bol-taran-taran",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-male-full",
@@ -3444,7 +3240,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "alaap-interlude-1",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "verse-1-male",
@@ -3469,7 +3265,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "bol-taran-taran",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-2-male",
@@ -3494,7 +3290,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "alaap-interlude-2",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "verse-3-male",

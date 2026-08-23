@@ -485,7 +485,7 @@ window.SONG_LINES = {
     "grammarNote": "A series of non-lexical musical vocables (nom-tom ālāp) framed by the sacred pranava 'om'."
   },
   "refrain-1": {
-    "source": "चित्रकूट अति विचित्र चित्रकूट अति विचित्र",
+    "source": "चित्रकूट अति विचित्र",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -505,47 +505,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "चित्रकूट",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "अति",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "विचित्र",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "citrakūṭa ati vicitra citrakūṭa ati vicitra",
-    "english": "{0:Chitrakoot }is {1:exceedingly }{2:wondrous; }{3:Chitrakoot }is {4:exceedingly }{5:wondrous.}",
+    "roman": "citrakūṭa ati vicitra",
+    "english": "{0:Chitrakoot }is {1:exceedingly }{2:wondrous; }",
     "words": [
-      {
-        "roman": "citrakūṭa",
-        "gloss": "Chitrakoot (holy mountain/forest)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ati",
-        "gloss": "exceedingly; very",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vicitra",
-        "gloss": "wondrous; marvelous; extraordinary",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "citrakūṭa",
         "gloss": "Chitrakoot (holy mountain/forest)",
@@ -568,7 +532,7 @@ window.SONG_LINES = {
     "grammarNote": "Nominal sentence with omitted copula. 'citrakūṭa' acts as subject with adjective phrase 'ati vicitra' as predicate."
   },
   "sthayi-sub-1": {
-    "source": "सुन्दर बन महि पवित्र सुन्दर बन महि पवित्र",
+    "source": "सुन्दर बन महि पवित्र",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -594,59 +558,11 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "सुन्दर",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "बन",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "महि",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "पवित्र",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "sundara bana mahi pavitra sundara bana mahi pavitra",
-    "english": "{0:Beautiful }{1:is the forest, }{3:holy }{2:is the earth; }{4:beautiful }{5:is the forest, }{7:holy }{6:is the earth.}",
+    "roman": "sundara bana mahi pavitra",
+    "english": "{0:Beautiful }{1:is the forest, }{3:holy }{2:is the earth; }",
     "words": [
-      {
-        "roman": "sundara",
-        "gloss": "beautiful; lovely",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bana",
-        "gloss": "forest; woodlands",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mahi",
-        "gloss": "earth; ground; land",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pavitra",
-        "gloss": "holy; sacred; pure",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "sundara",
         "gloss": "beautiful; lovely",
@@ -1067,7 +983,7 @@ window.SONG_LINES = {
     "grammarNote": "'vāmāṅga' functions adverbially/locatively. 'bhāmāvara' and 'viśvavandinī' are feminine epithets referring to Sita."
   },
   "antar-2": {
-    "source": "चितवत मुनिगन चकोर चितवत मुनिगन चकोर",
+    "source": "चितवत मुनिगन चकोर",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -1087,28 +1003,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "चितवत",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "मुनिगन",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "चकोर",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "citavata munigana cakora citavata munigana cakora",
-    "english": "{1:The assemblies of sages }{0:gaze }{2:like cakora birds, }{4:the assemblies of sages }{3:gaze }{5:like cakora birds.}",
+    "roman": "citavata munigana cakora",
+    "english": "{1:The assemblies of sages }{0:gaze }{2:like cakora birds, }",
     "words": [
       {
         "roman": "citavata",
@@ -1127,30 +1025,12 @@ window.SONG_LINES = {
         "gloss": "moon-loving partridge of Sanskrit poetic imagery",
         "concept_key": "",
         "preserve_in_english": false
-      },
-      {
-        "roman": "citavata",
-        "gloss": "gaze upon; watch intently",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "munigana",
-        "gloss": "assemblies of sages",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "cakora",
-        "gloss": "moon-loving partridge of Sanskrit poetic imagery",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "'citavata' is a Braj 3rd person plural verb/participle agreeing with 'munigana'. 'cakora' acts as a rupaka/simile complement."
   },
   "antar-2-sub": {
-    "source": "बैठे निज ठौर ठौर बैठे निज ठौर ठौर",
+    "source": "बैठे निज ठौर ठौर",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -1176,34 +1056,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "बैठे",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "निज",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ठौर",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ठौर",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "baiṭhe nija ṭhaura ṭhaura baiṭhe nija ṭhaura ṭhaura",
-    "english": "{0:Seated }{1:in their }{2:respective }{3:places, }{4:seated }{5:in their }{6:respective }{7:places.}",
+    "roman": "baiṭhe nija ṭhaura ṭhaura",
+    "english": "{0:Seated }{1:in their }{2:respective }{3:places, }",
     "words": [
       {
         "roman": "baiṭhe",
@@ -1226,30 +1082,6 @@ window.SONG_LINES = {
       {
         "roman": "ṭhaura",
         "gloss": "place; hermitage (reduplicated: in their respective places)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "baiṭhe",
-        "gloss": "seated; sitting",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nija",
-        "gloss": "their own",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ṭhaura",
-        "gloss": "place; hermitage; spot",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ṭhaura",
-        "gloss": "place; hermitage",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1328,7 +1160,7 @@ window.SONG_LINES = {
     "grammarNote": "'canda' (< Sanskrit candra) and 'candinī' (< Sanskrit candrikā / cāndnī) form a coordinate pair representing the divine couple."
   },
   "antar-3": {
-    "source": "उदित सदा बन अकास उदित सदा बन अकास",
+    "source": "उदित सदा बन अकास",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -1354,59 +1186,11 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "उदित",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "सदा",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "बन",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "अकास",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "udita sadā bana akāsa udita sadā bana akāsa",
-    "english": "{1:Eternally }{0:risen }{2:in the forest }{3:sky, }{5:eternally }{4:risen }{6:in the forest }{7:sky.}",
+    "roman": "udita sadā bana akāsa",
+    "english": "{1:Eternally }{0:risen }{2:in the forest }{3:sky, }",
     "words": [
-      {
-        "roman": "udita",
-        "gloss": "risen; ascended; shining",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sadā",
-        "gloss": "always; perpetually; ever",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bana",
-        "gloss": "forest; woodlands",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "akāsa",
-        "gloss": "sky; firmament",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "udita",
         "gloss": "risen; ascended; shining",
@@ -1765,12 +1549,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "sthayi-sub-1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sthayi-sub-2",
@@ -1800,12 +1584,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "antar-2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "antar-2-sub",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "antar-2-sub-2",
@@ -1820,7 +1604,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "antar-3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "antar-3-sub",
@@ -1835,12 +1619,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "refrain-1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sthayi-sub-1",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sthayi-sub-2-short",

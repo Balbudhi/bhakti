@@ -808,7 +808,7 @@ window.SONG_LINES = {
     "grammarNote": "jaba se functions as a temporal subordinating conjunction; dekhī hai is a present perfect construction agreeing in feminine singular with suratiyā; bholī suratiyā is reduplicated for emotional intensity."
   },
   "sudh-budh-khoi": {
-    "source": "सुध-बुध खोई मोरी सुध-बुध खोई मोरी",
+    "source": "सुध-बुध खोई मोरी",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -828,47 +828,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "सुध-बुध",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "खोई",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "मोरी",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "sudha-budha khoī morī sudha-budha khoī morī",
-    "english": "{2:My}{0: wits and senses}{1: were lost}{5:, my}{3: wits and senses}{4: were lost,}",
+    "roman": "sudha-budha khoī morī",
+    "english": "{2:My}{0: wits and senses}{1: were lost}",
     "words": [
-      {
-        "roman": "sudha-budha",
-        "gloss": "conscious awareness and wits; presence of mind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "khoī",
-        "gloss": "lost; departed",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "morī",
-        "gloss": "my",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "sudha-budha",
         "gloss": "conscious awareness and wits; presence of mind",
@@ -1376,7 +1340,7 @@ window.SONG_LINES = {
     "grammarNote": "Transitive compound verb (choṛanā + denā) in perfective aspect; agrees in masculine singular with saṁsāra."
   },
   "koi-na-mera": {
-    "source": "कोई न मेरा कोई न मेरा",
+    "source": "कोई न मेरा",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1396,47 +1360,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "कोई",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "न",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "मेरा",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "koī na merā koī na merā",
-    "english": "{0,1:No one}{2: is mine,}{3,4: no one}{5: is mine,}",
+    "roman": "koī na merā",
+    "english": "{0,1:No one}{2: is mine,}",
     "words": [
-      {
-        "roman": "koī",
-        "gloss": "anyone; someone",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "na",
-        "gloss": "not; no one",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "merā",
-        "gloss": "mine; of me",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "koī",
         "gloss": "anyone; someone",
@@ -1945,7 +1873,7 @@ window.SONG_LINES = {
     "grammarNote": "kaṇṭhanahāra is a compound (kaṇṭha + hāra); nominal clause with implied 2nd person plural/honorific copula ho."
   },
   "janam-maran-ka": {
-    "source": "जनम मरण का जनम मरण का",
+    "source": "जनम मरण का",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1965,47 +1893,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "जनम",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "मरण",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "का",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "janama maraṇa kā janama maraṇa kā",
-    "english": "{2:Of}{0: birth}{1: and death,}{5: of}{3: birth}{4: and death,}",
+    "roman": "janama maraṇa kā",
+    "english": "{2:Of}{0: birth}{1: and death,}",
     "words": [
-      {
-        "roman": "janama",
-        "gloss": "birth",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "maraṇa",
-        "gloss": "death",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kā",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "janama",
         "gloss": "birth",
@@ -2428,7 +2320,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "sudh-budh-khoi",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sudh-budh-khoi-bawariya",
@@ -2483,7 +2375,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "koi-na-mera",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "koi-na-mera-sangi",
@@ -2533,7 +2425,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "janam-maran-ka",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "janam-maran-ka-pher",

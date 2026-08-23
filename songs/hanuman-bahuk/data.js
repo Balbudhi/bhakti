@@ -28415,47 +28415,11 @@ window.SONG_LINES = {
     ]
   },
   "line-200": {
-    "source": "जय हनुमान जय हनुमान जय हनुमान जय हनुमान",
+    "source": "जय हनुमान",
     "sourceLanguage": "bra",
-    "roman": "jaya hanumāna jaya hanumāna jaya hanumāna jaya hanumāna",
-    "english": "{0,1:Victory to Hanuman, }{2,3:victory to Hanuman, }{4,5:victory to Hanuman, }{6,7:victory to Hanuman!}",
+    "roman": "jaya hanumāna",
+    "english": "{0,1:Victory to Hanuman, }",
     "words": [
-      {
-        "roman": "jaya",
-        "gloss": "victory; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
-        "gloss": "victory; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
-        "gloss": "victory; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "jaya",
         "gloss": "victory; hail",
@@ -28481,42 +28445,6 @@ window.SONG_LINES = {
         "text": "हनुमान",
         "wordIndices": [
           1
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "हनुमान",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "हनुमान",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "हनुमान",
-        "wordIndices": [
-          7
         ]
       }
     ]
@@ -29634,7 +29562,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-200",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "line-201",
@@ -29644,7 +29572,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-200",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   }
 ];
 

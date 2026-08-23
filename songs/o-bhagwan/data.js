@@ -292,7 +292,7 @@ window.SONG_LINES = {
     "grammarNote": "Superlative predicate adjective phrase ('sabase pāvan') with emphatic 'to', coordinated with a genitive metaphor ('karuṇā ke sāvan') under copula 'ho'."
   },
   "tum-daya-ke-aakash": {
-    "source": "तुम दया के आकाश हो साईं, तुम दया के आकाश हो साईं",
+    "source": "तुम दया के आकाश हो साईं,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -330,46 +330,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "दया",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "के",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "आकाश",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "हो",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "tum dayā ke ākāś ho sāī̃, tum dayā ke ākāś ho sāī̃",
-    "english": "{0:You }{4:are }{3:the sky }{1,2:of mercy, }{5:O Sai, }{6:you }{10:are }{9:the sky }{7,8:of mercy, }{11:O Sai}",
+    "roman": "tum dayā ke ākāś ho sāī̃,",
+    "english": "{0:You }{4:are }{3:the sky }{1,2:of mercy, }{5:O Sai, }",
     "words": [
       {
         "roman": "tum",
@@ -404,42 +368,6 @@ window.SONG_LINES = {
       {
         "roman": "sāī̃,",
         "gloss": "O Sai,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dayā",
-        "gloss": "grace / mercy",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ke",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ākāś",
-        "gloss": "sky / boundless expanse",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ho",
-        "gloss": "are",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāī̃",
-        "gloss": "O Sai",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -649,7 +577,7 @@ window.SONG_LINES = {
     "grammarNote": "Compound line composed of a locative existential clause ('tīrath sāre tum mẽ haĩ') followed by a second-person copular clause ('tum mantrõ ke prakāś ho')."
   },
   "sab-dharmo-ke-saar": {
-    "source": "सब धर्मों के सार हो तुम साईं, सब धर्मों के सार हो तुम साईं",
+    "source": "सब धर्मों के सार हो तुम साईं,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -693,52 +621,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "सब",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "धर्मों",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "के",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "सार",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "हो",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "sab dharmõ ke sār ho tum sāī̃, sab dharmõ ke sār ho tum sāī̃",
-    "english": "{5:You }{4:are }{3:the essence }{0,2:of all }{1:dharmas, }{6:O Sai, }{12:you }{11:are }{10:the essence }{7,9:of all }{8:dharmas, }{13:O Sai}",
+    "roman": "sab dharmõ ke sār ho tum sāī̃,",
+    "english": "{5:You }{4:are }{3:the essence }{0,2:of all }{1:dharmas, }{6:O Sai, }",
     "words": [
       {
         "roman": "sab",
@@ -779,48 +665,6 @@ window.SONG_LINES = {
       {
         "roman": "sāī̃,",
         "gloss": "O Sai,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sab",
-        "gloss": "all",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dharmõ",
-        "gloss": "right order, duty, or sustaining principle; religions",
-        "concept_key": "dharma",
-        "preserve_in_english": true
-      },
-      {
-        "roman": "ke",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sār",
-        "gloss": "essence / core",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ho",
-        "gloss": "are",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāī̃",
-        "gloss": "O Sai",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1030,7 +874,7 @@ window.SONG_LINES = {
     "grammarNote": "Compound verse with two parallel copular predicates ('pūjā phir arpaṇ ho' and 'jag māyā ke ant ho') sharing subject 'tum'."
   },
   "saare-jagat-ki-shakti": {
-    "source": "सारे जगत की शक्ति हो तुम साईं, सारे जगत की शक्ति हो तुम साईं",
+    "source": "सारे जगत की शक्ति हो तुम साईं,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1074,52 +918,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "सारे",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "जगत",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "की",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "शक्ति",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "हो",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "साईं",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "sāre jagat kī śakti ho tum sāī̃, sāre jagat kī śakti ho tum sāī̃",
-    "english": "{5:You }{4:are }{3:the power }{0,2:of the entire }{1:world, }{6:O Sai, }{12:you }{11:are }{10:the power }{7,9:of the entire }{8:world, }{13:O Sai}",
+    "roman": "sāre jagat kī śakti ho tum sāī̃,",
+    "english": "{5:You }{4:are }{3:the power }{0,2:of the entire }{1:world, }{6:O Sai, }",
     "words": [
       {
         "roman": "sāre",
@@ -1160,48 +962,6 @@ window.SONG_LINES = {
       {
         "roman": "sāī̃,",
         "gloss": "O Sai,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāre",
-        "gloss": "entire / all",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jagat",
-        "gloss": "world / cosmos",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kī",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śakti",
-        "gloss": "power / energy / creative force",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ho",
-        "gloss": "are",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sāī̃",
-        "gloss": "O Sai",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1378,7 +1138,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "tum-daya-ke-aakash",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "tum-bhagwan-saakar-ho",
@@ -1398,7 +1158,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "sab-dharmo-ke-saar",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "vishwa-ke-aadhaar-ho",
@@ -1418,7 +1178,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "saare-jagat-ki-shakti",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "sab-ke-hriday-ki-bhakti",
@@ -1484,10 +1244,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 366.855,
-    "end": 372.0
+    "end": 372
   },
   {
-    "start": 372.0,
+    "start": 372,
     "end": 414.235
   },
   {

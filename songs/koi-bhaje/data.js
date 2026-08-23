@@ -204,7 +204,7 @@ window.SONG_LINES = {
     "grammarNote": "First-person singular habitual/present verb `bhajūm̐`; `subaho śām` uses the Persianate copulative connective `-o-` (subh-o-śām) adverbially."
   },
   "chorus-hare-krishna-hare-rama": {
-    "source": "हरे कृष्णा हरे रामा, हरे कृष्णा हरे रामा",
+    "source": "हरे कृष्णा हरे रामा,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -230,34 +230,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "हरे",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "कृष्णा",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "हरे",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "रामा",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Hare kṛṣṇā hare rāmā, hare kṛṣṇā hare rāmā",
-    "english": "{0:Hare }{1:Krishna }{2:Hare }{3:Rama, }{4:Hare }{5:Krishna }{6:Hare }{7:Rama}",
+    "roman": "Hare kṛṣṇā hare rāmā,",
+    "english": "{0:Hare }{1:Krishna }{2:Hare }{3:Rama, }",
     "words": [
       {
         "roman": "Hare",
@@ -279,30 +255,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmā,",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hare",
-        "gloss": "O Hari / O Lord",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kṛṣṇā",
-        "gloss": "Krishna",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hare",
-        "gloss": "O Hari / O Lord",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rāmā",
         "gloss": "Viṣṇu's avatāra; husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
@@ -537,7 +489,7 @@ window.SONG_LINES = {
     "grammarNote": "Relative clause (`jo jape nirantar`) with an implied correlative subject in the result clause (`[uskā] uddhār ho jāe`); `ho jāe` is a compound verb (`honā` + `jānā`)."
   },
   "verse-wo-hai-vishnu-ke-avatar": {
-    "source": "वो हैं विष्णु के अवतार, वो हैं विष्णु के अवतार",
+    "source": "वो हैं विष्णु के अवतार,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -569,40 +521,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "वो",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "हैं",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "विष्णु",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "के",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "अवतार",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Vo haiṁ viṣṇu ke avatār, vo haiṁ viṣṇu ke avatār",
-    "english": "{0:They }{1:are }{4:incarnations }{3:of }{2:Vishnu, }{5:they }{6:are }{9:incarnations }{8:of }{7:Vishnu}",
+    "roman": "Vo haiṁ viṣṇu ke avatār,",
+    "english": "{0:They }{1:are }{4:incarnations }{3:of }{2:Vishnu, }",
     "words": [
       {
         "roman": "Vo",
@@ -631,36 +553,6 @@ window.SONG_LINES = {
       {
         "roman": "avatār,",
         "gloss": "incarnations / descents,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vo",
-        "gloss": "they",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "haiṁ",
-        "gloss": "are",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "viṣṇu",
-        "gloss": "deity who preserves cosmic order",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ke",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "avatār",
-        "gloss": "incarnations / descents",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1373,7 +1265,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-hare-krishna-hare-rama",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "refrain-koi-bhaje",
@@ -1388,7 +1280,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-hare-krishna-hare-rama",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "verse-ram-krishna-hai-ishta",
@@ -1403,12 +1295,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-wo-hai-vishnu-ke-avatar",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chorus-hare-krishna-hare-rama",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "verse-ram-dhanurdhar-krishna-bhi-giridhar",
@@ -1423,12 +1315,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-wo-hai-vishnu-ke-avatar",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chorus-hare-krishna-hare-rama",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "verse-kaam-krodh-mad-matsar-tyaago",
@@ -1443,12 +1335,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-wo-hai-vishnu-ke-avatar",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chorus-hare-krishna-hare-rama",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "verse-bhajo-ram-aur-krishna-kanhaiya",
@@ -1463,12 +1355,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-wo-hai-vishnu-ke-avatar",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chorus-hare-krishna-hare-rama",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "refrain-koi-bhaje",
@@ -1483,7 +1375,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-hare-krishna-hare-rama",
     "section": "refrain",
-    "repeats": 5
+    "repeats": 10
   }
 ];
 

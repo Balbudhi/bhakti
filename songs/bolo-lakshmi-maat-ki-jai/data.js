@@ -261,7 +261,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative noun phrases 'Lakṣmī mātā' and 'maiyā' framed by interjectional salutations 'Jay'."
   },
   "tumko-nisadin-sevat": {
-    "source": "तुमको निसदिन सेवत, तुमको निसदिन सेवत",
+    "source": "तुमको निसदिन सेवत,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -281,28 +281,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "तुमको",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "निसदिन",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "सेवत",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Tumko nisadin sevat, tumko nisadin sevat",
-    "english": "{1:Day and night }{2:they serve }{0:You, }{4:day and night }{5:they serve }{3:You,}",
+    "roman": "Tumko nisadin sevat,",
+    "english": "{1:Day and night }{2:they serve }{0:You, }",
     "words": [
       {
         "roman": "Tumko",
@@ -318,24 +300,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "sevat,",
-        "gloss": "serve, worship, attend upon",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tumko",
-        "gloss": "to You",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nisadin",
-        "gloss": "day and night, perpetually",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sevat",
         "gloss": "serve, worship, attend upon",
         "concept_key": "",
         "preserve_in_english": false
@@ -664,7 +628,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative 'Maiyā' followed by emphatic second-person copular clause."
   },
   "surya-chandrama-dhyavat": {
-    "source": "सूर्य चन्द्रमा ध्यावत, सूर्य चन्द्रमा ध्यावत",
+    "source": "सूर्य चन्द्रमा ध्यावत,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -684,28 +648,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "सूर्य",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "चन्द्रमा",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ध्यावत",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Sūrya Candramā dhyāvat, Sūrya Candramā dhyāvat",
-    "english": "{0:The Sun }{1:and Moon }{2:meditate upon You, }{3:the Sun }{4:and Moon }{5:meditate upon You,}",
+    "roman": "Sūrya Candramā dhyāvat,",
+    "english": "{0:The Sun }{1:and Moon }{2:meditate upon You, }",
     "words": [
       {
         "roman": "Sūrya",
@@ -721,24 +667,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhyāvat,",
-        "gloss": "meditate upon, contemplate in worship",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Sūrya",
-        "gloss": "Sun",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "Candramā",
-        "gloss": "Moon",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dhyāvat",
         "gloss": "meditate upon, contemplate in worship",
         "concept_key": "",
         "preserve_in_english": false
@@ -936,7 +864,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative 'Maiyā' followed by compound agent noun 'sukh sampati dātā'."
   },
   "jo-koi-tumko-dhyavat": {
-    "source": "जो कोई तुमको ध्यावत, जो कोई तुमको ध्यावत",
+    "source": "जो कोई तुमको ध्यावत,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -962,34 +890,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "जो",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "कोई",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "तुमको",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ध्यावत",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Jo koī tumko dhyāvat, jo koī tumko dhyāvat",
-    "english": "{0,1:Whoever }{3:meditates upon }{2:You, }{4,5:whoever }{7:meditates upon }{6:You,}",
+    "roman": "Jo koī tumko dhyāvat,",
+    "english": "{0,1:Whoever }{3:meditates upon }{2:You, }",
     "words": [
       {
         "roman": "Jo",
@@ -1011,30 +915,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhyāvat,",
-        "gloss": "meditates, contemplates in devotion",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jo",
-        "gloss": "whoever",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "koī",
-        "gloss": "anyone",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tumko",
-        "gloss": "upon You",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dhyāvat",
         "gloss": "meditates, contemplates in devotion",
         "concept_key": "",
         "preserve_in_english": false
@@ -1244,7 +1124,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative 'Maiyā' with emphatic second-person subject 'tū hī' and predicate noun 'śubhadātā'."
   },
   "karma-prabhav-prakashini": {
-    "source": "कर्म प्रभाव प्रकाशिनी, कर्म प्रभाव प्रकाशिनी",
+    "source": "कर्म प्रभाव प्रकाशिनी,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1264,28 +1144,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "कर्म",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "प्रभाव",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "प्रकाशिनी",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Karma prabhāv prakāśinī, karma prabhāv prakāśinī",
-    "english": "{2:Revealer of }{1:the power of }{0:karma, }{5:revealer of }{4:the power of }{3:karma,}",
+    "roman": "Karma prabhāv prakāśinī,",
+    "english": "{2:Revealer of }{1:the power of }{0:karma, }",
     "words": [
       {
         "roman": "Karma",
@@ -1302,24 +1164,6 @@ window.SONG_LINES = {
       {
         "roman": "prakāśinī,",
         "gloss": "illuminator, revealer, one who manifests (feminine)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "karma",
-        "gloss": "action and its consequences; cosmic moral cause and effect",
-        "concept_key": "karma",
-        "preserve_in_english": true
-      },
-      {
-        "roman": "prabhāv",
-        "gloss": "power, efficacy, influence",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prakāśinī",
-        "gloss": "illuminator, revealer (feminine)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1552,7 +1396,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative 'Maiyā' with locative complement 'tehi meṁ' and subject-verb 'guṇ ātā'."
   },
   "kar-na-sake-sohi-kar-le": {
-    "source": "कर न सके सोही कर ले, कर न सके सोही कर ले",
+    "source": "कर न सके सोही कर ले,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1590,46 +1434,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "कर",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "न",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "सके",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "सोही",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "कर",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "ले",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "Kar na sake sohī kar le, kar na sake sohī kar le",
-    "english": "{2:What one could }{1:not }{0:do, }{3:that very thing }{4,5:one accomplishes; }{8:what one could }{7:not }{6:do, }{9:that very thing }{10,11:one accomplishes,}",
+    "roman": "Kar na sake sohī kar le,",
+    "english": "{2:What one could }{1:not }{0:do, }{3:that very thing }{4,5:one accomplishes; }",
     "words": [
       {
         "roman": "Kar",
@@ -1664,42 +1472,6 @@ window.SONG_LINES = {
       {
         "roman": "le,",
         "gloss": "takes, accomplishes (completive/reflexive light verb)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kar",
-        "gloss": "do, perform",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "na",
-        "gloss": "not",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sake",
-        "gloss": "could, can",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sohī",
-        "gloss": "that very thing",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kar",
-        "gloss": "do, accomplish",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "le",
-        "gloss": "accomplishes",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1944,7 +1716,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative 'Maiyā' followed by direct object 'vastra', negative particle 'na', indefinite subject 'koī', and verb 'pātā'."
   },
   "khan-pan-ko-vaibhav": {
-    "source": "खान पान को वैभव, खान पान को वैभव",
+    "source": "खान पान को वैभव,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1970,34 +1742,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "खान",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "पान",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "को",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "वैभव",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Khān pān ko vaibhav, khān pān ko vaibhav",
-    "english": "{3:The abundance }{2:of }{0:food }{1:and drink, }{7:the abundance }{6:of }{4:food }{5:and drink—}",
+    "roman": "Khān pān ko vaibhav,",
+    "english": "{3:The abundance }{2:of }{0:food }{1:and drink, }",
     "words": [
       {
         "roman": "Khān",
@@ -2019,30 +1767,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaibhav,",
-        "gloss": "abundance, splendor, bounty",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "khān",
-        "gloss": "food, eating",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pān",
-        "gloss": "drink, drinking",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ko",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vaibhav",
         "gloss": "abundance, splendor, bounty",
         "concept_key": "",
         "preserve_in_english": false
@@ -2240,7 +1964,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative 'Maiyā' followed by ablative origin compound 'Kṣīranidhi jātā'."
   },
   "ratna-chaturdash-toko": {
-    "source": "रत्न चतुर्दश तोको, रत्न चतुर्दश तोको",
+    "source": "रत्न चतुर्दश तोको,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2260,28 +1984,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "रत्न",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "चतुर्दश",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "तोको",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "Ratna caturdaś toko, ratna caturdaś toko",
-    "english": "{1:The fourteen }{0:gems }{2:belong to You, }{4:the fourteen }{3:gems }{5:belong to You,}",
+    "roman": "Ratna caturdaś toko,",
+    "english": "{1:The fourteen }{0:gems }{2:belong to You, }",
     "words": [
       {
         "roman": "Ratna",
@@ -2298,24 +2004,6 @@ window.SONG_LINES = {
       {
         "roman": "toko,",
         "gloss": "to You, matching You (Braj/Old Hindi dative/accusative)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ratna",
-        "gloss": "gems, jewels, precious treasures",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "caturdaś",
-        "gloss": "fourteen",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "toko",
-        "gloss": "to You, matching You",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2536,7 +2224,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative 'Maiyā' followed by relative clause 'jo koī gātā'."
   },
   "ur-anand-ati-umade": {
-    "source": "उर आनंद अति उमड़े, उर आनंद अति उमड़े",
+    "source": "उर आनंद अति उमड़े,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2562,34 +2250,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "उर",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "आनंद",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "अति",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "उमड़े",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Ur ānand ati umaṛe, ur ānand ati umaṛe",
-    "english": "{2:Immense }{1:bliss }{3:surges }{0:in the heart, }{6:immense }{5:bliss }{7:surges }{4:in the heart,}",
+    "roman": "Ur ānand ati umaṛe,",
+    "english": "{2:Immense }{1:bliss }{3:surges }{0:in the heart, }",
     "words": [
       {
         "roman": "Ur",
@@ -2611,30 +2275,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "umaṛe,",
-        "gloss": "wells up, surges, overflows",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ur",
-        "gloss": "in the heart, heart",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ānand",
-        "gloss": "bliss, joy",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ati",
-        "gloss": "greatly, exceedingly",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "umaṛe",
         "gloss": "wells up, surges, overflows",
         "concept_key": "",
         "preserve_in_english": false
@@ -2710,7 +2350,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "tumko-nisadin-sevat",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "har-vishnu-vidhata",
@@ -2735,7 +2375,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "surya-chandrama-dhyavat",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "narad-rishi-gata",
@@ -2760,7 +2400,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "jo-koi-tumko-dhyavat",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "riddhi-siddhi-pata",
@@ -2785,7 +2425,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "karma-prabhav-prakashini",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "jaganidhi-ki-trata",
@@ -2810,7 +2450,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "kar-na-sake-sohi-kar-le",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "man-nahi-bharapata",
@@ -2835,7 +2475,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "khan-pan-ko-vaibhav",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "tum-bin-ko-data",
@@ -2860,7 +2500,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "ratna-chaturdash-toko",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "koi-nahi-pata",
@@ -2885,7 +2525,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "ur-anand-ati-umade",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "par-utar-jata",
@@ -2905,7 +2545,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "tumko-nisadin-sevat",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "har-vishnu-vidhata",

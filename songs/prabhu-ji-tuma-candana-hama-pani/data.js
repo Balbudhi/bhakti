@@ -120,7 +120,7 @@ window.SONG_LINES = {
     "grammarNote": "Vocative noun marking the resolution of the opening vocal alap."
   },
   "chorus-tum-chandan-x4": {
-    "source": "प्रभु जी तुम चन्दन हम पानी, प्रभु जी तुम चन्दन हम पानी, प्रभु जी तुम चन्दन हम पानी, प्रभु जी तुम चन्दन हम पानी",
+    "source": "प्रभु जी तुम चन्दन हम पानी,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -158,118 +158,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "चन्दन",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "पानी,",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "चन्दन",
-        "wordIndices": [
-          15
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          16
-        ]
-      },
-      {
-        "text": "पानी,",
-        "wordIndices": [
-          17
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          18
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          19
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          20
-        ]
-      },
-      {
-        "text": "चन्दन",
-        "wordIndices": [
-          21
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          22
-        ]
-      },
-      {
-        "text": "पानी",
-        "wordIndices": [
-          23
-        ]
       }
     ],
-    "roman": "Prabhu jī tum candan ham pānī, prabhu jī tum candan ham pānī, prabhu jī tum candan ham pānī, prabhu jī tum candan ham pānī",
-    "english": "{0,1:O Lord,}{2,3: you are sandalwood,}{4,5: I am water,}{6,7: O Lord,}{8,9: you are sandalwood,}{10,11: I am water,}{12,13: O Lord,}{14,15: you are sandalwood,}{16,17: I am water,}{18,19: O Lord,}{20,21: you are sandalwood,}{22,23: I am water}",
+    "roman": "Prabhu jī tum candan ham pānī,",
+    "english": "{0,1:O Lord,}{2,3: you are sandalwood,}{4,5: I am water,}",
     "words": [
       {
         "roman": "Prabhu",
@@ -303,114 +195,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "pānī,",
-        "gloss": "water",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "candan",
-        "gloss": "sandalwood",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pānī,",
-        "gloss": "water",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "candan",
-        "gloss": "sandalwood",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pānī,",
-        "gloss": "water",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "candan",
-        "gloss": "sandalwood",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "pānī",
         "gloss": "water",
         "concept_key": "",
         "preserve_in_english": false
@@ -502,7 +286,7 @@ window.SONG_LINES = {
     "grammarNote": "Lead solo delivery of the equational refrain line with an elongated honorific vocative pickup (jī...)."
   },
   "verse-1-jaki-ang-ang": {
-    "source": "जाकी अंग-अंग बास समानी, जाकी अंग-अंग बास समानी",
+    "source": "जाकी अंग-अंग बास समानी,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -528,34 +312,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "जाकी",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "अंग-अंग",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "बास",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "समानी",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Jākī aṅg-aṅg bās samānī, jākī aṅg-aṅg bās samānī",
-    "english": "{0:Whose}{2: fragrance}{3: has permeated}{1: every limb,}{4: whose}{6: fragrance}{7: has permeated}{5: every limb}",
+    "roman": "Jākī aṅg-aṅg bās samānī,",
+    "english": "{0:Whose}{2: fragrance}{3: has permeated}{1: every limb,}",
     "words": [
       {
         "roman": "Jākī",
@@ -577,30 +337,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "samānī,",
-        "gloss": "has permeated; has infused",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jākī",
-        "gloss": "whose",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "aṅg-aṅg",
-        "gloss": "in every limb; through every part of the body",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bās",
-        "gloss": "fragrance; scent",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "samānī",
         "gloss": "has permeated; has infused",
         "concept_key": "",
         "preserve_in_english": false
@@ -739,7 +475,7 @@ window.SONG_LINES = {
     "grammarNote": "Single iteration of the relative clause concluding the first verse."
   },
   "chorus-tum-ghan-ban-x4": {
-    "source": "प्रभु जी तुम घन बन हम मोरा, प्रभु जी तुम घन बन हम मोरा, प्रभु जी तुम घन बन हम मोरा, प्रभु जी तुम घन बन हम मोरा",
+    "source": "प्रभु जी तुम घन बन हम मोरा,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -783,136 +519,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "घन",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "बन",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "मोरा,",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          15
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          16
-        ]
-      },
-      {
-        "text": "घन",
-        "wordIndices": [
-          17
-        ]
-      },
-      {
-        "text": "बन",
-        "wordIndices": [
-          18
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          19
-        ]
-      },
-      {
-        "text": "मोरा,",
-        "wordIndices": [
-          20
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          21
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          22
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          23
-        ]
-      },
-      {
-        "text": "घन",
-        "wordIndices": [
-          24
-        ]
-      },
-      {
-        "text": "बन",
-        "wordIndices": [
-          25
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          26
-        ]
-      },
-      {
-        "text": "मोरा",
-        "wordIndices": [
-          27
-        ]
       }
     ],
-    "roman": "Prabhu jī tum ghan ban ham morā, prabhu jī tum ghan ban ham morā, prabhu jī tum ghan ban ham morā, prabhu jī tum ghan ban ham morā",
-    "english": "{0,1:O Lord,}{2,3,4: you are the forest raincloud,}{5,6: I am the peacock,}{7,8: O Lord,}{9,10,11: you are the forest raincloud,}{12,13: I am the peacock,}{14,15: O Lord,}{16,17,18: you are the forest raincloud,}{19,20: I am the peacock,}{21,22: O Lord,}{23,24,25: you are the forest raincloud,}{26,27: I am the peacock}",
+    "roman": "Prabhu jī tum ghan ban ham morā,",
+    "english": "{0,1:O Lord,}{2,3,4: you are the forest raincloud,}{5,6: I am the peacock,}",
     "words": [
       {
         "roman": "Prabhu",
@@ -952,132 +562,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "morā,",
-        "gloss": "peacock",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ghan",
-        "gloss": "rain-cloud; dense cloud",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ban",
-        "gloss": "forest; woodland",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "morā,",
-        "gloss": "peacock",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ghan",
-        "gloss": "rain-cloud; dense cloud",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ban",
-        "gloss": "forest; woodland",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "morā,",
-        "gloss": "peacock",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ghan",
-        "gloss": "rain-cloud; dense cloud",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ban",
-        "gloss": "forest; woodland",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "morā",
         "gloss": "peacock",
         "concept_key": "",
         "preserve_in_english": false
@@ -1181,7 +665,7 @@ window.SONG_LINES = {
     "grammarNote": "Lead solo variation with sustained honorific vocative marker (jī...)."
   },
   "verse-2-jaise-chitvat-x2": {
-    "source": "जैसे चितवत चन्द चकोरा, जैसे चितवत चन्द चकोरा",
+    "source": "जैसे चितवत चन्द चकोरा,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1207,34 +691,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "जैसे",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "चितवत",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "चन्द",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "चकोरा",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Jaise citvat cand cakorā, jaise citvat cand cakorā",
-    "english": "{0:Just as}{3: the chakor bird}{1: gazes upon}{2: the moon,}{4: just as}{7: the chakor bird}{5: gazes upon}{6: the moon}",
+    "roman": "Jaise citvat cand cakorā,",
+    "english": "{0:Just as}{3: the chakor bird}{1: gazes upon}{2: the moon,}",
     "words": [
       {
         "roman": "Jaise",
@@ -1256,30 +716,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "cakorā,",
-        "gloss": "chakor bird (Greek partridge fabled to gaze at the moon)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaise",
-        "gloss": "just as; like",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "citvat",
-        "gloss": "gazes upon; watches unblinkingly",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "cand",
-        "gloss": "the moon",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "cakorā",
         "gloss": "chakor bird (Greek partridge fabled to gaze at the moon)",
         "concept_key": "",
         "preserve_in_english": false
@@ -1347,7 +783,7 @@ window.SONG_LINES = {
     "grammarNote": "Single iteration of the comparative verse line."
   },
   "chorus-tum-deepak-x4": {
-    "source": "प्रभु जी तुम दीपक हम बाती, प्रभु जी तुम दीपक हम बाती, प्रभु जी तुम दीपक हम बाती, प्रभु जी तुम दीपक हम बाती",
+    "source": "प्रभु जी तुम दीपक हम बाती,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1385,118 +821,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "दीपक",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "बाती,",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "दीपक",
-        "wordIndices": [
-          15
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          16
-        ]
-      },
-      {
-        "text": "बाती,",
-        "wordIndices": [
-          17
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          18
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          19
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          20
-        ]
-      },
-      {
-        "text": "दीपक",
-        "wordIndices": [
-          21
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          22
-        ]
-      },
-      {
-        "text": "बाती",
-        "wordIndices": [
-          23
-        ]
       }
     ],
-    "roman": "Prabhu jī tum dīpak ham bātī, prabhu jī tum dīpak ham bātī, prabhu jī tum dīpak ham bātī, prabhu jī tum dīpak ham bātī",
-    "english": "{0,1:O Lord,}{2,3: you are the lamp,}{4,5: I am the wick,}{6,7: O Lord,}{8,9: you are the lamp,}{10,11: I am the wick,}{12,13: O Lord,}{14,15: you are the lamp,}{16,17: I am the wick,}{18,19: O Lord,}{20,21: you are the lamp,}{22,23: I am the wick}",
+    "roman": "Prabhu jī tum dīpak ham bātī,",
+    "english": "{0,1:O Lord,}{2,3: you are the lamp,}{4,5: I am the wick,}",
     "words": [
       {
         "roman": "Prabhu",
@@ -1530,114 +858,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "bātī,",
-        "gloss": "wick",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dīpak",
-        "gloss": "lamp; oil lamp",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bātī,",
-        "gloss": "wick",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dīpak",
-        "gloss": "lamp; oil lamp",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bātī,",
-        "gloss": "wick",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dīpak",
-        "gloss": "lamp; oil lamp",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bātī",
         "gloss": "wick",
         "concept_key": "",
         "preserve_in_english": false
@@ -1729,7 +949,7 @@ window.SONG_LINES = {
     "grammarNote": "Lead solo variation of the lamp-wick equative phrase with sustained vocative."
   },
   "verse-3-jaki-jot-x2": {
-    "source": "जाकी जोत बरै दिन राती, जाकी जोत बरै दिन राती",
+    "source": "जाकी जोत बरै दिन राती,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1761,40 +981,10 @@ window.SONG_LINES = {
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "जाकी",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "जोत",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "बरै",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "दिन",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "राती",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Jākī jot barai din rātī, jākī jot barai din rātī",
-    "english": "{0:Whose}{1: light}{2: burns}{3,4: day and night,}{5: whose}{6: light}{7: burns}{8,9: day and night}",
+    "roman": "Jākī jot barai din rātī,",
+    "english": "{0:Whose}{1: light}{2: burns}{3,4: day and night,}",
     "words": [
       {
         "roman": "Jākī",
@@ -1822,36 +1012,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "rātī,",
-        "gloss": "night",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jākī",
-        "gloss": "whose",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jot",
-        "gloss": "radiant flame; light",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "barai",
-        "gloss": "burns; shines",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "din",
-        "gloss": "day",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rātī",
         "gloss": "night",
         "concept_key": "",
         "preserve_in_english": false
@@ -2014,7 +1174,7 @@ window.SONG_LINES = {
     "grammarNote": "Single relative clause iteration concluding the third verse."
   },
   "chorus-tum-moti-x4": {
-    "source": "प्रभु जी तुम मोती हम धागा, प्रभु जी तुम मोती हम धागा, प्रभु जी तुम मोती हम धागा, प्रभु जी तुम मोती हम धागा",
+    "source": "प्रभु जी तुम मोती हम धागा,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -2052,118 +1212,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "मोती",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "धागा,",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "मोती",
-        "wordIndices": [
-          15
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          16
-        ]
-      },
-      {
-        "text": "धागा,",
-        "wordIndices": [
-          17
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          18
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          19
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          20
-        ]
-      },
-      {
-        "text": "मोती",
-        "wordIndices": [
-          21
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          22
-        ]
-      },
-      {
-        "text": "धागा",
-        "wordIndices": [
-          23
-        ]
       }
     ],
-    "roman": "Prabhu jī tum motī ham dhāgā, prabhu jī tum motī ham dhāgā, prabhu jī tum motī ham dhāgā, prabhu jī tum motī ham dhāgā",
-    "english": "{0,1:O Lord,}{2,3: you are the pearl,}{4,5: I am the thread,}{6,7: O Lord,}{8,9: you are the pearl,}{10,11: I am the thread,}{12,13: O Lord,}{14,15: you are the pearl,}{16,17: I am the thread,}{18,19: O Lord,}{20,21: you are the pearl,}{22,23: I am the thread}",
+    "roman": "Prabhu jī tum motī ham dhāgā,",
+    "english": "{0,1:O Lord,}{2,3: you are the pearl,}{4,5: I am the thread,}",
     "words": [
       {
         "roman": "Prabhu",
@@ -2197,114 +1249,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhāgā,",
-        "gloss": "thread",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "motī",
-        "gloss": "pearl",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dhāgā,",
-        "gloss": "thread",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "motī",
-        "gloss": "pearl",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dhāgā,",
-        "gloss": "thread",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "motī",
-        "gloss": "pearl",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dhāgā",
         "gloss": "thread",
         "concept_key": "",
         "preserve_in_english": false
@@ -2396,7 +1340,7 @@ window.SONG_LINES = {
     "grammarNote": "Lead solo variation of the pearl-thread equative phrase."
   },
   "verse-4-jaise-sone-x2": {
-    "source": "जैसे सोने मिलत सुहागा, जैसे सोने मिलत सुहागा",
+    "source": "जैसे सोने मिलत सुहागा,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -2422,34 +1366,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "जैसे",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "सोने",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "मिलत",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "सुहागा",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Jaise sone milat suhāgā, jaise sone milat suhāgā",
-    "english": "{0:Just as}{3: borax}{2: blends with}{1: gold,}{4: just as}{7: borax}{6: blends with}{5: gold}",
+    "roman": "Jaise sone milat suhāgā,",
+    "english": "{0:Just as}{3: borax}{2: blends with}{1: gold,}",
     "words": [
       {
         "roman": "Jaise",
@@ -2471,30 +1391,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "suhāgā,",
-        "gloss": "borax (flux for purifying and fusing gold)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaise",
-        "gloss": "just as; like",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sone",
-        "gloss": "gold",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "milat",
-        "gloss": "mixes with; blends with; fuses",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "suhāgā",
         "gloss": "borax (flux for purifying and fusing gold)",
         "concept_key": "",
         "preserve_in_english": false
@@ -2574,7 +1470,7 @@ window.SONG_LINES = {
     "grammarNote": "Emotive interjection 'Ho' introducing the comparative phrase jaise sone milat suhāgā."
   },
   "chorus-tum-swami-x4": {
-    "source": "प्रभु जी तुम स्वामी हम दासा, प्रभु जी तुम स्वामी हम दासा, प्रभु जी तुम स्वामी हम दासा, प्रभु जी तुम स्वामी हम दासा",
+    "source": "प्रभु जी तुम स्वामी हम दासा,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -2612,118 +1508,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "स्वामी",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "दासा,",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "स्वामी",
-        "wordIndices": [
-          15
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          16
-        ]
-      },
-      {
-        "text": "दासा,",
-        "wordIndices": [
-          17
-        ]
-      },
-      {
-        "text": "प्रभु",
-        "wordIndices": [
-          18
-        ]
-      },
-      {
-        "text": "जी",
-        "wordIndices": [
-          19
-        ]
-      },
-      {
-        "text": "तुम",
-        "wordIndices": [
-          20
-        ]
-      },
-      {
-        "text": "स्वामी",
-        "wordIndices": [
-          21
-        ]
-      },
-      {
-        "text": "हम",
-        "wordIndices": [
-          22
-        ]
-      },
-      {
-        "text": "दासा",
-        "wordIndices": [
-          23
-        ]
       }
     ],
-    "roman": "Prabhu jī tum svāmī ham dāsā, prabhu jī tum svāmī ham dāsā, prabhu jī tum svāmī ham dāsā, prabhu jī tum svāmī ham dāsā",
-    "english": "{0,1:O Lord,}{2,3: you are the Master,}{4,5: I am the servant,}{6,7: O Lord,}{8,9: you are the Master,}{10,11: I am the servant,}{12,13: O Lord,}{14,15: you are the Master,}{16,17: I am the servant,}{18,19: O Lord,}{20,21: you are the Master,}{22,23: I am the servant}",
+    "roman": "Prabhu jī tum svāmī ham dāsā,",
+    "english": "{0,1:O Lord,}{2,3: you are the Master,}{4,5: I am the servant,}",
     "words": [
       {
         "roman": "Prabhu",
@@ -2757,114 +1545,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "dāsā,",
-        "gloss": "servant; devotee",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "svāmī",
-        "gloss": "Master; Lord",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dāsā,",
-        "gloss": "servant; devotee",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "svāmī",
-        "gloss": "Master; Lord",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dāsā,",
-        "gloss": "servant; devotee",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "prabhu",
-        "gloss": "O Lord; Master",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jī",
-        "gloss": "honorific particle",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tum",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "svāmī",
-        "gloss": "Master; Lord",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ham",
-        "gloss": "I / we",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dāsā",
         "gloss": "servant; devotee",
         "concept_key": "",
         "preserve_in_english": false
@@ -2956,7 +1636,7 @@ window.SONG_LINES = {
     "grammarNote": "Lead solo delivery of the master-servant declaration with sustained vocative."
   },
   "verse-5-aisi-bhagati-x2": {
-    "source": "ऐसी भगति करै रैदासा, ऐसी भगति करै रैदासा",
+    "source": "ऐसी भगति करै रैदासा,",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -2982,34 +1662,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "ऐसी",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "भगति",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "करै",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "रैदासा",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Aisī bhagati karai raidāsā, aisī bhagati karai raidāsā",
-    "english": "{0:Such}{1: devotion}{3: Ravidas}{2: renders,}{4: such}{5: devotion}{7: Ravidas}{6: renders}",
+    "roman": "Aisī bhagati karai raidāsā,",
+    "english": "{0:Such}{1: devotion}{3: Ravidas}{2: renders,}",
     "words": [
       {
         "roman": "Aisī",
@@ -3031,30 +1687,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "raidāsā,",
-        "gloss": "Ravidas (Sant Ravidas)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "aisī",
-        "gloss": "such; of this kind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhagati",
-        "gloss": "devotion; loving surrender",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "karai",
-        "gloss": "renders; performs",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "raidāsā",
         "gloss": "Ravidas (Sant Ravidas)",
         "concept_key": "",
         "preserve_in_english": false
@@ -3379,7 +2011,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-tum-chandan-x4",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "solo-tum-chandan",
@@ -3389,7 +2021,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-1-jaki-ang-ang",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-1-ho-jaki",
@@ -3404,7 +2036,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-tum-ghan-ban-x4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "solo-tum-ghan-ban",
@@ -3414,7 +2046,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-2-jaise-chitvat-x2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-2-jaise-chitvat-single",
@@ -3424,7 +2056,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-tum-deepak-x4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "solo-tum-deepak",
@@ -3434,7 +2066,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-3-jaki-jot-x2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-3-ho-jaki-jot",
@@ -3464,7 +2096,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-tum-moti-x4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "solo-tum-moti",
@@ -3474,7 +2106,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-4-jaise-sone-x2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-4-ho-jaise-sone",
@@ -3484,7 +2116,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-tum-swami-x4",
     "section": "verse",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "solo-tum-swami",
@@ -3494,7 +2126,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-5-aisi-bhagati-x2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse-5-ho-aisi-bhagati",
@@ -3509,7 +2141,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-tum-chandan-x4",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "solo-tum-chandan-short",
@@ -3534,7 +2166,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chorus-tum-chandan-x4",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   }
 ];
 

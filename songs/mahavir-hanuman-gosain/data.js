@@ -33,7 +33,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "invoc-lead-1": {
-    "source": "जय श्री हनुमान, जय श्री हनुमान",
+    "source": "जय श्री हनुमान,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -53,28 +53,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "श्री",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "हनुमान",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "jaya śrī hanumāna, jaya śrī hanumāna",
-    "english": "{0:Victory to }{1:Śrī }{2:Hanumān, }{3:victory to }{4:Śrī }{5:Hanumān}",
+    "roman": "jaya śrī hanumāna,",
+    "english": "{0:Victory to }{1:Śrī }{2:Hanumān, }",
     "words": [
       {
         "roman": "jaya",
@@ -90,24 +72,6 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna,",
-        "gloss": "monkey-god; son of the Wind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jaya",
-        "gloss": "victory; hail",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śrī",
-        "gloss": "holy; auspicious; blessed",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hanumāna",
         "gloss": "monkey-god; son of the Wind",
         "concept_key": "",
         "preserve_in_english": false
@@ -1313,7 +1277,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "invoc-lead-1",
     "section": "invocation",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "intro-doha-chorus-1",

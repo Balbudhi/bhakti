@@ -7254,7 +7254,7 @@ window.SONG_LINES = {
     "grammarNote": "Relative clause 'jō bhī man mēṁ hō' with subjunctive 'hō' acting as conditional antecedent."
   },
   "verse4-man-2": {
-    "source": "हे माँ, हे माँ",
+    "source": "हे माँ,",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -7268,22 +7268,10 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "हे",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "माँ",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "hē mā̃, hē mā̃",
-    "english": "{0:O }{1:Mother, }{2:O }{3:Mother}",
+    "roman": "hē mā̃,",
+    "english": "{0:O }{1:Mother, }",
     "words": [
       {
         "roman": "hē",
@@ -7294,18 +7282,6 @@ window.SONG_LINES = {
       {
         "roman": "mā̃,",
         "gloss": "Mother,",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hē",
-        "gloss": "O [vocative particle]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mā̃",
-        "gloss": "Mother",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -8148,7 +8124,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse4-man-2",
     "section": "bridge",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse4-man-3",

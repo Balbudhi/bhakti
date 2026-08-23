@@ -33,7 +33,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "mati-re-mati-re": {
-    "source": "ମାଟି ରେ ମାଟି ରେ",
+    "source": "ମାଟି ରେ",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -47,37 +47,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "ମାଟି",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ରେ",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "Māṭi re māṭi re",
-    "english": "{1:O }{0:clay, }{3:O }{2:clay,}",
+    "roman": "Māṭi re",
+    "english": "{1:O }{0:clay, }",
     "words": [
       {
         "roman": "Māṭi",
-        "gloss": "earth; clay; soil",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "re",
-        "gloss": "O (vocative address particle)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṭi",
         "gloss": "earth; clay; soil",
         "concept_key": "",
         "preserve_in_english": false
@@ -793,7 +769,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kete-dakuchi-re-tote",
@@ -808,7 +784,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kete-dakuchi-re-tote",
@@ -823,7 +799,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kete-dakuchi-re-tote",
@@ -873,7 +849,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kete-dakuchi-re-tote",
@@ -933,7 +909,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kete-dakuchi-re-tote",
@@ -948,7 +924,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "mati-re-mati-re",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "kete-dakuchi-re-tote",
