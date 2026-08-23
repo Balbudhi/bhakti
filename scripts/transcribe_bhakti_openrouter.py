@@ -27,7 +27,7 @@ from typing import Any
 
 
 DEFAULT_MODEL = "google/gemini-3.7-flash"
-DEFAULT_KEY_FILE = Path.home() / "Dev" / "openrouter.key"
+DEFAULT_KEY_FILE = Path(os.environ.get("BHAKTI_KEY_DIR") or (Path.home() / ".config" / "bhakti")).expanduser() / "openrouter.key"
 CHAT_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
@@ -50,7 +50,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--chunk-seconds", type=float, default=42.0, help="Core chunk duration (default: 42)")
     parser.add_argument("--overlap-seconds", type=float, default=2.0, help="Context overlap on both sides (default: 2)")
     parser.add_argument("--timeout", type=float, default=180.0, help="Per-request timeout in seconds (default: 180)")
-    parser.add_argument("--key-file", type=Path, help="Read key from this owner-only file instead of the Dev default")
+    parser.add_argument("--key-file", type=Path, help="Read the key from this owner-only file instead of the default")
     return parser.parse_args()
 
 
@@ -161,7 +161,7 @@ def send_request(api_key: str, model: str, audio_path: Path, prompt: str, timeou
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://vedanta.eeshan.xyz/",
+            "HTTP-Referer": "https://bhakti.eeshan.xyz/",
             "X-Title": "Vedanta Timeline Bhakti transcription review",
         },
         method="POST",

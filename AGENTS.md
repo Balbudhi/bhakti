@@ -15,8 +15,9 @@ generic provenance filler on a song page page.
 ## One-command production pipeline
 
 The API production model is `google/gemini-3.7-flash` through OpenRouter. It
-uses the Dev-wide owner-only key file documented in `~/Dev/AGENTS.md`.
-Never read, print, commit, or copy that key. Production transcription and
+reads its credential from `OPENROUTER_API_KEY`, or from an owner-only key file
+named by `OPENROUTER_API_KEY_FILE` with mode `0600`. Never read, print, commit,
+or copy that key, and never write a key into a shell history or an argument. Production transcription and
 timing use only the OpenRouter/Gemini API; do not invoke Superwhisper or silently
 replace this path with a local or unrelated cloud model. Local ASR research is
 documentation/evaluation only.

@@ -32,8 +32,11 @@ GOOGLE_API_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/c
 BATCH_API_URL = "https://openrouter.ai/api/beta/batches"
 AUTH_KEY_URL = "https://openrouter.ai/api/v1/auth/key"
 CREDITS_URL = "https://openrouter.ai/api/v1/credits"
-DEFAULT_KEY = Path.home() / "Dev" / "openrouter.key"
-DEFAULT_GOOGLE_KEY = Path.home() / "Dev" / "gemini.key"
+# Keys are never stored in the repository. Set OPENROUTER_API_KEY / GEMINI_API_KEY,
+# or point OPENROUTER_API_KEY_FILE / GEMINI_API_KEY_FILE at an owner-only file.
+KEY_DIR = Path(os.environ.get("BHAKTI_KEY_DIR") or (Path.home() / ".config" / "bhakti")).expanduser()
+DEFAULT_KEY = KEY_DIR / "openrouter.key"
+DEFAULT_GOOGLE_KEY = KEY_DIR / "gemini.key"
 API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "4")))
 BATCH_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_BATCH_MAX_CONCURRENCY", "32")))
 API_MIN_START_INTERVAL = max(0.0, float(os.environ.get("BHAKTI_API_MIN_START_INTERVAL", "0.35")))

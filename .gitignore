@@ -9,3 +9,5 @@ songs/*/audio.webm
 songs/*/audio.ogg
 songs/*/audio.wav
 songs/*/audio.flac
+.pytest_cache/
+.omx/

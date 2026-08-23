@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://bhakti.eeshan.xyz/sitemap.xml

@@ -41,6 +41,7 @@ import source_witness
 
 
 ROOT = Path(__file__).resolve().parents[1]
+SITE_ORIGIN = "https://bhakti.eeshan.xyz"
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 7
 LONG_TRANSCRIPT_CONTRACT_VERSION = 1
@@ -2555,7 +2556,7 @@ def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:
     return candidate
 
 
-def page_html(meta: dict[str, Any]) -> str:
+def page_html(meta: dict[str, Any], slug: str) -> str:
     title = meta["title"]
     escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                            .replace('"', "&quot;").replace("'", "&#39;"))
@@ -2584,6 +2585,13 @@ def page_html(meta: dict[str, Any]) -> str:
     meta_html = f'      <div class="song-meta">{credit_html}{tag_html}</div>\n'
     audio_sources = meta.get("audioSources") or [{"src": "audio.m4a", "type": "audio/mp4"}]
     source_html = "".join(f'<source src="{escape(source["src"])}" type="{escape(source["type"])}">' for source in audio_sources)
+    canonical = f"{SITE_ORIGIN}/songs/{slug}/"
+    subtitle = str(meta.get("subtitle") or "").strip()
+    heading = f"{title} — {subtitle}" if subtitle else title
+    performer = str(meta.get("credit") or "").strip()
+    description = (f"{heading}: synchronised devotional lyrics with IAST transliteration, "
+                   f"a literal English translation, and word-by-word meanings."
+                   + (f" Sung by {performer}." if performer else ""))
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -2596,7 +2604,14 @@ def page_html(meta: dict[str, Any]) -> str:
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/favicon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex" />
+  <link rel="canonical" href="{canonical}" />
+  <meta name="description" content="{escape(description)}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bhakti" />
+  <meta property="og:title" content="{escape(heading)}" />
+  <meta property="og:description" content="{escape(description)}" />
+  <meta property="og:url" content="{canonical}" />
+  <meta name="twitter:card" content="summary" />
   <meta name="referrer" content="no-referrer" />
   <title>{escape(title)}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2694,6 +2709,19 @@ def write_catalogue() -> None:
         "window.BHAKTI_SONGS = " + json.dumps(catalogue, ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8",
     )
+    write_sitemap(entry["slug"] for entry in catalogue)
+
+
+def write_sitemap(slugs: Any) -> None:
+    """Keep sitemap.xml in step with the catalogue so every song page is discoverable."""
+    urls = [f"{SITE_ORIGIN}/"] + [f"{SITE_ORIGIN}/songs/{slug}/" for slug in slugs]
+    body = "".join(f"  <url><loc>{url}</loc></url>\n" for url in urls)
+    (ROOT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{body}</urlset>\n",
+        encoding="utf-8",
+    )
 
 
 def load_catalogue() -> list[dict[str, Any]]:
@@ -2786,7 +2814,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_TIMINGS = " + json.dumps(times, ensure_ascii=False, indent=2) + ";\n")
     (song_dir / "data.js").write_text(data, encoding="utf-8")
-    (song_dir / "index.html").write_text(page_html(meta), encoding="utf-8")
+    (song_dir / "index.html").write_text(page_html(meta, song_dir.name), encoding="utf-8")
     if write_catalogue_after:
         write_catalogue()
 

@@ -359,9 +359,9 @@ all independent songs/windows in a stage may wait in OpenRouter concurrently.
 
 ### Measured cost trace
 
-The seven-song, 42.34-minute official-audio batch on 2026-08-20 finished the
-synchronous path in 5m54s , including focused repairs. The
-cached provider artifacts attribute the ordinary path approximately as follows:
+A seven-song, 42.34-minute official-audio batch finished the synchronous path in
+5m54s, including focused repairs. The cached provider artifacts attribute the
+ordinary path approximately as follows:
 
 - primary transcription: 7.5%;
 - transcript-aware audit: 13.6%;
@@ -378,8 +378,8 @@ narrow recovery independently corroborates it; never demand a redundant second
 narrow call merely because the narrow result disagrees with the coarse pass.
 Generation from reviewed artifacts remains zero-cost with `--generate-only`.
 A live strict-schema probe resolved to `google/gemini-3.7-flash`, returned the
-required JSON, and cost $0.00016125 for 90 input plus 154 output tokens—exactly
-half the $0.00032250 synchronous list-price calculation for the same usage.
+required JSON, and was billed at exactly half the synchronous list-price
+calculation for the same 90 input plus 154 output tokens.
 
 If every review artifact already exists and only deterministic song page or
 catalogue output needs refreshing, run `--generate-only --batch intake.json`.
@@ -426,8 +426,8 @@ remain searchable aliases.
 As tested on August 21, 2026, YouTube rejects GitHub-hosted runner IPs with
 `Sign in to confirm you're not a bot` before metadata or audio extraction. The
 current nightly yt-dlp, EJS solver, Node 24, and cookie-free `web_embedded`
-client do not remove that IP-level gate. Do not upload a personal YouTube
-session cookie to GitHub as a workaround. The hosted path remains fully usable
+client do not remove that IP-level gate. Do not upload an account session cookie
+to GitHub as a workaround. The hosted path remains fully usable
 for public direct media URLs; YouTube requires the local fetch stage or a future
 separately trusted downloader with suitable egress.
 
@@ -442,8 +442,9 @@ BHAKTI_GEMINI_PROVIDER=openrouter python3 scripts/bhakti_pipeline.py --publish -
 ```
 
 Direct Google uses its official OpenAI-compatible audio and structured-output
-endpoint. Supply the key through `GEMINI_API_KEY`, or store it in
-`~/Dev/gemini.key` with mode `0600`:
+endpoint. Supply the key through `GEMINI_API_KEY`, or store it in an owner-only
+file with mode `0600` and name that file in `GEMINI_API_KEY_FILE`
+(default: `~/.config/bhakti/gemini.key`):
 
 ```sh
 BHAKTI_GEMINI_PROVIDER=google python3 scripts/bhakti_pipeline.py --publish --url URL
@@ -458,13 +459,13 @@ production default, run a short audio plus strict-schema probe and compare its
 JSON, model resolution, timing behavior, and validation result with the
 OpenRouter path.
 
-The August 21, 2026 live probe used a 16-second Hindi song excerpt and the same
-strict JSON schema on both transports. OpenRouter resolved to Gemini 3.7 Flash,
-returned the exact expected source and Roman line, and cost `$0.00197025`.
-Google rejected the request before inference with `429 RESOURCE_EXHAUSTED`:
-the calling Google project had no available quota.
-That is a billing-state failure, not a model-quality result. The hosted workflow
-is pinned to OpenRouter until a future direct key successfully passes:
+A live probe on a 16-second Hindi excerpt, using the same strict JSON schema on
+both transports, resolved to Gemini 3.7 Flash through OpenRouter and returned the
+exact expected source and Roman line. The direct Google transport was rejected
+before inference with `429 RESOURCE_EXHAUSTED`, which is a quota/billing state on
+the calling project rather than a model-quality result. OpenRouter therefore
+remains the pinned default for hosted intake. Before switching a deployment to the
+direct transport, confirm that its own key passes:
 
 ```sh
 python3 scripts/probe_gemini_provider.py AUDIO --start SECONDS \
