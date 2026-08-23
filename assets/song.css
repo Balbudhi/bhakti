@@ -577,12 +577,15 @@ html, body {
   .song-home { width: 36px; height: 36px; }
   #songShare,
   #songSync {
-    top: max(6px, calc(env(safe-area-inset-top) - 18px));
+    /* Redefine the custom property, never `top` directly: app.css adds the
+       swipe compensation to --song-control-top, and a raw override here would
+       leave it correcting against the wrong resting offset. */
+    --song-control-top: max(6px, calc(env(safe-area-inset-top) - 18px));
     width: 36px;
     height: 36px;
   }
-  #songSync { left: max(14px, calc(8px + env(safe-area-inset-left))); }
-  #songShare { right: max(14px, calc(8px + env(safe-area-inset-right))); }
+  #songSync { --song-control-left: max(14px, calc(8px + env(safe-area-inset-left))); }
+  #songShare { --song-control-right: max(14px, calc(8px + env(safe-area-inset-right))); }
   .song-control-status {
     top: max(60px, calc(48px + env(safe-area-inset-top)));
     right: max(12px, calc(8px + env(safe-area-inset-right)));
@@ -676,6 +679,6 @@ html, body {
   #songShare,
   #songSync { width: 42px; height: 42px; }
   .ap-time { font-size: 19px; min-width: 100px; }
-  #songSync { left: max(30px, calc(18px + env(safe-area-inset-left))); }
-  #songShare { right: max(30px, calc(18px + env(safe-area-inset-right))); }
+  #songSync { --song-control-left: max(30px, calc(18px + env(safe-area-inset-left))); }
+  #songShare { --song-control-right: max(30px, calc(18px + env(safe-area-inset-right))); }
 }
