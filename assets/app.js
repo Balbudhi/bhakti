@@ -552,12 +552,14 @@
   };
 
   document.addEventListener("bhakti:add-to-queue", event => addSongToPlaylist(event.detail.song));
-  document.addEventListener("bhakti:shuffle-request", event => {
+  document.addEventListener("bhakti:shuffle-request", async event => {
     const songs = event.detail?.songs || [];
     if (!songs.length) return;
     const next = Queue.shuffle(songs, Math.random, newSessionId());
     setQueueState(next);
-    selectAudioSong(currentSong, { autoplay: true, force: true });
+    selectAudioSong(currentSong, { force: true });
+    await showSong(currentSong.slug);
+    attemptPlay();
     showStatus(`Shuffled ${songs.length} song${songs.length === 1 ? "" : "s"}`);
   });
   document.addEventListener("click", event => {
@@ -574,12 +576,20 @@
     if (view === "song") showLibrary();
     else if (currentSong) showSong(currentSong.slug);
   });
-  queuePill.addEventListener("click", () => {
-    if (queueSheet.hidden) openQueue();
-    else closeQueue();
+  queuePill.addEventListener("click", async () => {
+    if (!queueSheet.hidden) {
+      closeQueue();
+      return;
+    }
+    if (view === "library" && currentSong) {
+      await showSong(currentSong.slug);
+      if (view !== "song") return;
+    }
+    openQueue();
   });
   document.addEventListener("click", event => {
     if (queueSheet.hidden || queueSheet.contains(event.target) || player.contains(event.target)) return;
+    if (matchMedia("(min-width: 1101px)").matches) return;
     event.preventDefault();
     event.stopPropagation();
     if (!queueSheet.classList.contains("is-closing")) closeQueue();
@@ -595,13 +605,19 @@
     const action = button.dataset.queueAction;
     const row = button.closest("[data-queue-index]");
     const index = Number(row?.dataset.queueIndex);
-    if (action === "queue-play") attemptPlay();
+    if (action === "queue-play") {
+      if (view === "library" && currentSong) void showSong(currentSong.slug, { historyMode: "replace" });
+      attemptPlay();
+    }
     else if (action === "remove") setQueueState(Queue.remove(queueState, index));
     else if (action === "play") {
       setQueueState(Queue.playNow(queueState, queueState.items[index]));
       selectAudioSong(currentSong, { autoplay: true, force: true });
-      if (view === "song") showSong(currentSong.slug, { historyMode: "replace" });
-    } else if (action === "shuffle") setQueueState(Queue.shuffleRemaining(queueState, Math.random));
+      if (currentSong) void showSong(currentSong.slug, { historyMode: "replace" });
+    } else if (action === "shuffle") {
+      setQueueState(Queue.shuffleRemaining(queueState, Math.random));
+      if (view === "library" && currentSong) void showSong(currentSong.slug, { historyMode: "replace" });
+    }
     else if (action === "clear") clearQueue();
   });
   queueSheet.addEventListener("keydown", event => {
@@ -816,6 +832,7 @@
     } else if (queueState) {
       persistQueue();
     }
+    if (view === "library" && currentSong) void showSong(currentSong.slug);
   });
   window.addEventListener("popstate", () => {
     const slug = pathSlug();

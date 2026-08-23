@@ -82,7 +82,7 @@ Motion explains spatial relationships and then gets out of the way.
 
 - Song → Library: Song exits right; Library enters from the left.
 - Library → Song: Library exits left; Song enters from the right.
-- Playlist reveal: the current view and fixed player lift together, exposing the playlist below.
+- Playlist reveal: on mobile and tablet, the playlist rises above the fixed player and temporarily owns the interaction. On desktop and TV, a non-modal content-width playlist enters from the right while the reading view pans left into the remaining space; the fixed player and song remain scrollable and interactive.
 - Use `transform` (and opacity only when necessary), not per-frame width, height, margin, or positional layout animation.
 - Target duration is 200–220ms with a restrained ease curve.
 - `prefers-reduced-motion: reduce` must produce an immediate, complete state change.
@@ -118,7 +118,7 @@ Reject a design that introduces any of these without an explicit revision to thi
 - a dashboard, sidebar, or card grid for listening controls;
 - multiple visible controls where one disclosed control is sufficient;
 - headings, dividers, and close buttons that repeat an already-visible toggle;
-- a different playlist paradigm at each breakpoint;
+- unrelated playlist paradigms beyond the approved bottom-sheet-to-right-panel responsive adaptation;
 - moving player controls between slots across views;
 - drag-only, hover-only, or swipe-only functionality;
 - long or layout-triggering animations;

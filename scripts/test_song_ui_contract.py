@@ -257,6 +257,17 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('if (event.pointerType === "mouse") activateDrag()', app)
         self.assertIn('queueSheet.contains(event.target) || player.contains(event.target)', app)
         self.assertIn('event.stopPropagation();', app)
+        self.assertIn('document.addEventListener("bhakti:shuffle-request", async event', app)
+        self.assertIn('await showSong(currentSong.slug);', app)
+        self.assertIn('queuePill.addEventListener("click", async ()', app)
+        self.assertIn('if (view === "library" && currentSong) void showSong(currentSong.slug);', app)
+        self.assertIn("--queue-panel-width: clamp(340px, 29vw, 460px);", css)
+        self.assertIn("@keyframes queue-sheet-in-right", css)
+        self.assertIn("@keyframes queue-sheet-out-right", css)
+        self.assertIn('if (matchMedia("(min-width: 1101px)").matches) return;', app)
+        self.assertIn("body.queue-open { overflow: visible; }", css)
+        self.assertIn("border: 1px solid rgba(244, 234, 208, 0.24);", css)
+        self.assertIn("border: 1px solid rgba(244, 234, 208, 0.22);", css)
         self.assertIn("const reorderUpcoming", queue)
 
     def test_touch_words_do_not_inherit_hover_or_stale_focus_highlights(self) -> None:
