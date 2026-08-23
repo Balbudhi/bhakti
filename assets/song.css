@@ -562,7 +562,7 @@ html, body {
 
   .audio-player {
     min-height: 60px;
-    padding: 10px 18px max(10px, env(safe-area-inset-bottom));
+    padding: 0 18px calc(18px + env(safe-area-inset-bottom));
     gap: 14px;
   }
   .ap-btn { width: 36px; height: 36px; }
@@ -583,7 +583,7 @@ html, body {
 }
 
 @media (max-width: 380px) {
-  .audio-player { padding: 10px 14px max(10px, env(safe-area-inset-bottom)); gap: 10px; }
+  .audio-player { padding: 0 14px calc(18px + env(safe-area-inset-bottom)); gap: 10px; }
   .ap-time { font-size: 13px; min-width: 68px; }
 }
 

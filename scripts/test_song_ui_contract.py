@@ -243,7 +243,7 @@ class SongUiContractTests(unittest.TestCase):
         app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
         self.assertIn("left: 0;\n  right: 0;\n  bottom: 0;", song_css)
         self.assertIn("padding: 10px 28px max(10px, env(safe-area-inset-bottom));", song_css)
-        self.assertIn("padding: 10px 18px max(10px, env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 0 18px calc(18px + env(safe-area-inset-bottom));", song_css)
         self.assertIn("player.append(queuePill)", app)
 
     def test_hosted_intake_is_owner_only_and_public_media_only(self) -> None:
