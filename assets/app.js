@@ -56,6 +56,8 @@
   let dragInputType = "";
   let dragStartX = 0;
   let dragStartY = 0;
+  let dragGrabOffsetY = 0;
+  let dragVisualY = 0;
   let dragHoldTimer = 0;
   let dragPressTimer = 0;
   let dragActive = false;
@@ -654,12 +656,15 @@
     const pointerId = dragPointerId;
     clearDragHold();
     row?.classList.remove("is-pressing", "is-dragging");
+    row?.style.removeProperty("--queue-drag-y");
     draggedRow = null;
     dragPointerId = null;
     dragTouchId = null;
     dragInputType = "";
     dragStartX = 0;
     dragStartY = 0;
+    dragGrabOffsetY = 0;
+    dragVisualY = 0;
     dragActive = false;
     dragMoved = false;
     if (pointerId !== null && row?.hasPointerCapture?.(pointerId)) row.releasePointerCapture(pointerId);
@@ -670,9 +675,6 @@
       resetDragGesture();
       return;
     }
-    dragActive = true;
-    draggedRow.classList.remove("is-pressing");
-    draggedRow.classList.add("is-dragging");
     if (dragPointerId !== null) {
       try {
         draggedRow.setPointerCapture(dragPointerId);
@@ -681,7 +683,17 @@
         return;
       }
     }
+    dragActive = true;
+    draggedRow.classList.remove("is-pressing");
+    draggedRow.classList.add("is-dragging");
     pulseDragHaptic(18);
+  };
+  const positionDraggedRow = clientY => {
+    const rect = draggedRow.getBoundingClientRect();
+    const layoutTop = rect.top - dragVisualY;
+    const desiredTop = clientY - dragGrabOffsetY;
+    dragVisualY = desiredTop - layoutTop;
+    draggedRow.style.setProperty("--queue-drag-y", `${dragVisualY}px`);
   };
   const moveDraggedRow = (clientX, clientY) => {
     const list = queueSheet.querySelector(".queue-list");
@@ -692,6 +704,7 @@
     } else if (clientY > listRect.bottom - edge) {
       list.scrollTop += Math.ceil(((clientY - (listRect.bottom - edge)) / edge) * 18);
     }
+    positionDraggedRow(clientY);
     const target = document.elementFromPoint(clientX, clientY)?.closest(".queue-row:not(.is-current)");
     if (!target || target === draggedRow || target.parentElement !== draggedRow.parentElement) return;
     const beforeRects = new Map([...list.querySelectorAll(".queue-row")]
@@ -703,6 +716,7 @@
     if (alreadyPlaced) return;
     target.parentElement.insertBefore(draggedRow, before ? target : target.nextSibling);
     animateQueueReorder(list, beforeRects);
+    positionDraggedRow(clientY);
     pulseDragHaptic(8);
     dragMoved = true;
   };
@@ -713,6 +727,8 @@
     dragInputType = inputType;
     dragStartX = clientX;
     dragStartY = clientY;
+    dragGrabOffsetY = clientY - row.getBoundingClientRect().top;
+    dragVisualY = 0;
     dragActive = false;
     dragMoved = false;
   };
