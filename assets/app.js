@@ -560,6 +560,12 @@
     if (queueSheet.hidden) openQueue();
     else closeQueue();
   });
+  document.addEventListener("click", event => {
+    if (queueSheet.hidden || queueSheet.contains(event.target) || player.contains(event.target)) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (!queueSheet.classList.contains("is-closing")) closeQueue();
+  }, true);
   queueSheet.addEventListener("click", event => {
     if (suppressQueueRowAction) {
       suppressQueueRowAction = false;

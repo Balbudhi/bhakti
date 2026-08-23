@@ -217,6 +217,8 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('role="group" aria-label="Playlist actions"', app)
         self.assertIn('event.target.closest("[data-queue-action]")', app)
         self.assertIn('handle || event.pointerType === "mouse"', app)
+        self.assertIn('queueSheet.contains(event.target) || player.contains(event.target)', app)
+        self.assertIn('event.stopPropagation();', app)
         self.assertIn("const reorderUpcoming", queue)
 
     def test_touch_words_do_not_inherit_hover_or_stale_focus_highlights(self) -> None:
