@@ -771,11 +771,15 @@ function setupKaraoke() {
    ============================================================= */
 
 function canonicalSongUrl() {
-  if (PAGE_META?.slug) return new URL(`/songs/${encodeURIComponent(PAGE_META.slug)}/`, window.location.origin).href;
-  const canonical = document.querySelector('link[rel="canonical"]')?.href;
-  const url = new URL(canonical || window.location.href);
+  const current = new URL(window.location.href);
+  const queue = current.searchParams.get("queue");
+  const canonical = PAGE_META?.slug
+    ? new URL(`/songs/${encodeURIComponent(PAGE_META.slug)}/`, window.location.origin)
+    : new URL(document.querySelector('link[rel="canonical"]')?.href || current.href);
+  const url = new URL(canonical);
   url.search = "";
   url.hash = "";
+  if (queue) url.searchParams.set("queue", queue);
   return url.href;
 }
 

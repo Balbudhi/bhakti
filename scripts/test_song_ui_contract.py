@@ -157,6 +157,13 @@ class SongUiContractTests(unittest.TestCase):
             self.assertEqual(icons.count(f'id="{symbol}"'), 1)
         self.assertEqual(icons.count('stroke-width="1.6"'), 4)
 
+    def test_song_share_preserves_only_the_encoded_queue_suffix(self) -> None:
+        reader = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
+        self.assertIn('const queue = current.searchParams.get("queue");', reader)
+        self.assertIn('if (queue) url.searchParams.set("queue", queue);', reader)
+        self.assertIn('url.search = "";', reader)
+        self.assertIn('url.hash = "";', reader)
+
     def test_catalogue_is_queue_ready_and_collision_free(self) -> None:
         import json
         import subprocess
