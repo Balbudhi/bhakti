@@ -69,10 +69,10 @@ body.queue-open .audio-player { bottom: 0; }
   right: 0;
   left: 0;
 }
-.app-view-in-left { animation: app-view-in-left 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right { animation: app-view-out-right 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-in-right { animation: app-view-in-right 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-left { animation: app-view-out-left 220ms cubic-bezier(.22,1,.36,1); }
+.app-view-in-left { animation: app-view-in-left 220ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-out-right { animation: app-view-out-right 220ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-in-right { animation: app-view-in-right 220ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-out-left { animation: app-view-out-left 220ms cubic-bezier(.22,1,.36,1) both; }
 @keyframes app-view-in-left { from { transform: translateX(-100vw); } to { transform: translateX(0); } }
 @keyframes app-view-out-right { from { transform: translateX(0); } to { transform: translateX(100vw); } }
 @keyframes app-view-in-right { from { transform: translateX(100vw); } to { transform: translateX(0); } }
@@ -83,12 +83,40 @@ body.queue-open .audio-player { bottom: 0; }
 @keyframes lyric-source-out { from { transform: translateX(0); } to { transform: translateX(10px); } }
 @keyframes lyric-roman-out { from { transform: translateX(0); } to { transform: translateX(18px); } }
 @keyframes lyric-english-out { from { transform: translateX(0); } to { transform: translateX(6px); } }
-.app-view-in-right .line-source { animation: lyric-source-in 210ms cubic-bezier(.22,1,.36,1); }
-.app-view-in-right .line-roman { animation: lyric-roman-in 180ms cubic-bezier(.22,1,.36,1); }
-.app-view-in-right .line-english { animation: lyric-english-in 220ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right .line-source { animation: lyric-source-out 210ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right .line-roman { animation: lyric-roman-out 180ms cubic-bezier(.22,1,.36,1); }
-.app-view-out-right .line-english { animation: lyric-english-out 220ms cubic-bezier(.22,1,.36,1); }
+.app-view-in-right .line-source { animation: lyric-source-in 210ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-in-right .line-roman { animation: lyric-roman-in 180ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-in-right .line-english { animation: lyric-english-in 220ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-out-right .line-source { animation: lyric-source-out 210ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-out-right .line-roman { animation: lyric-roman-out 180ms cubic-bezier(.22,1,.36,1) both; }
+.app-view-out-right .line-english { animation: lyric-english-out 220ms cubic-bezier(.22,1,.36,1) both; }
+
+/* #songSync and #songShare are position: fixed, and they live inside <main>. A
+   transform on an ancestor becomes the containing block for fixed descendants,
+   so the instant the swipe starts these two stop being measured from the
+   viewport and are measured from <main>: they jump up by exactly the scroll
+   offset, ride the slide from the wrong place, and snap back when the transform
+   is removed. app.js records the scroll position for the length of the
+   transition; adding it back holds them where the reader already sees them, so
+   they travel with the page instead of leaving it. */
+.app-stage.is-view-transitioning #songSync,
+.app-stage.is-view-transitioning #songShare {
+  /* Corrected through `top`, not `transform`: these buttons carry
+     `transition: transform 120ms` for their press feedback, so a transform
+     correction would ease in over 120ms and ease back out again when the class
+     is removed — the same jump twice, just slower. `top` is not in their
+     transition list, so it lands on the first frame and leaves on the last. */
+  top: calc(var(--song-control-top) + var(--app-swipe-scroll, 0px));
+}
+/* The same switch moves them sideways too: their left/right are measured from
+   <main>'s padding box, which is inset from the viewport by the page margin, so
+   they hop by that margin before the slide even starts. app.js measures the
+   inset rather than restating the margin here. */
+.app-stage.is-view-transitioning #songSync {
+  left: calc(var(--song-control-left) - var(--app-swipe-inset-left, 0px));
+}
+.app-stage.is-view-transitioning #songShare {
+  right: calc(var(--song-control-right) - var(--app-swipe-inset-right, 0px));
+}
 .queue-pill {
   appearance: none;
   width: 34px;

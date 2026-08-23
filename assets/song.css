@@ -60,8 +60,11 @@ html, body {
 #songSync {
   position: fixed;
   /* Sit just into the upper safe-area margin on a phone: present without
-     consuming the first reading line below the status area. */
-  top: max(8px, calc(env(safe-area-inset-top) - 16px));
+     consuming the first reading line below the status area. One name for the
+     resting offset: app.css adds the scroll compensation to it during a view
+     swipe and must not restate the expression. */
+  --song-control-top: max(8px, calc(env(safe-area-inset-top) - 16px));
+  top: var(--song-control-top);
   width: 34px;
   height: 34px;
   display: inline-flex;
@@ -83,8 +86,10 @@ html, body {
   transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, transform 120ms ease;
   z-index: 45;
 }
-#songSync { left: max(18px, calc(10px + env(safe-area-inset-left))); }
-#songShare { right: max(18px, calc(10px + env(safe-area-inset-right))); }
+/* Named for the same reason as --song-control-top: app.css subtracts the
+   containing-block inset from these during a swipe. */
+#songSync { --song-control-left: max(18px, calc(10px + env(safe-area-inset-left))); left: var(--song-control-left); }
+#songShare { --song-control-right: max(18px, calc(10px + env(safe-area-inset-right))); right: var(--song-control-right); }
 #songShare:hover,
 #songSync:hover,
 #songSync[aria-pressed="true"] {

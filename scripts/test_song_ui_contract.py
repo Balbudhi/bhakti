@@ -131,7 +131,11 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('event.request.mode === "navigate"', worker)
         self.assertIn('cache.put(cacheKey, copy)', worker)
         self.assertIn('caches.match(cacheKey)', worker)
-        self.assertIn('bhakti-shell-v22', worker)
+        # The cache name is versioned rather than fixed, and a new version has to
+        # purge the old ones — pinning the literal here only recorded whichever
+        # release was current and had to be edited on every asset change.
+        self.assertRegex(worker, r'const CACHE = "bhakti-shell-v\d+";')
+        self.assertIn('keys.filter(key => key !== CACHE)', worker)
         self.assertIn('/assets/queue.js', worker)
         self.assertIn('/assets/app.js', worker)
 

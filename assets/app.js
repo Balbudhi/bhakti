@@ -301,6 +301,16 @@
     const outgoingClass = direction === "right" ? "app-view-out-right" : "app-view-out-left";
     appStage.style.height = `${Math.max(currentRoot?.offsetHeight || 0, nextRoot.offsetHeight)}px`;
     appStage.classList.add("is-view-transitioning");
+    /* The song's fixed top controls are measured from <main> rather than the
+       viewport for as long as <main> carries a transform, which drops them by
+       the scroll offset. The document does not scroll until after this await,
+       so one reading holds for the whole transition. */
+    const controlHost = currentRoot?.querySelector("#songSync") ? currentRoot : nextRoot;
+    const hostBox = controlHost.getBoundingClientRect();
+    appStage.style.setProperty("--app-swipe-scroll", `${Math.round(window.scrollY)}px`);
+    appStage.style.setProperty("--app-swipe-inset-left", `${Math.round(hostBox.left)}px`);
+    appStage.style.setProperty("--app-swipe-inset-right",
+      `${Math.round(document.documentElement.clientWidth - hostBox.right)}px`);
     nextRoot.classList.add(incomingClass);
     currentRoot?.classList.add(outgoingClass);
     await new Promise(resolve => {
@@ -308,15 +318,27 @@
       const finish = () => {
         if (settled) return;
         settled = true;
+        nextRoot.removeEventListener("animationend", onAnimationEnd);
+        clearTimeout(timer);
         resolve();
       };
-      nextRoot.addEventListener("animationend", finish, { once: true });
-      setTimeout(finish, 280);
+      /* animationend bubbles. The lyric layers inside an arriving song finish
+         at 180ms and 210ms, before the page's own 220ms slide, so an unfiltered
+         listener here ended the transition at whichever descendant finished
+         first and cut the slide short. Only the page's own animation counts. */
+      const onAnimationEnd = event => {
+        if (event.target === nextRoot) finish();
+      };
+      nextRoot.addEventListener("animationend", onAnimationEnd);
+      const timer = setTimeout(finish, 280);
     });
     currentRoot?.classList.remove(outgoingClass);
     currentRoot?.remove();
     nextRoot.classList.remove(incomingClass);
     appStage.classList.remove("is-view-transitioning");
+    appStage.style.removeProperty("--app-swipe-scroll");
+    appStage.style.removeProperty("--app-swipe-inset-left");
+    appStage.style.removeProperty("--app-swipe-inset-right");
     appStage.style.height = "";
   };
 
