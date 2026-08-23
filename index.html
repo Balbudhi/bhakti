@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css?v=contract-20260823-3">
   <link rel="stylesheet" href="/assets/song.css?v=contract-20260823-7">
-  <link rel="stylesheet" href="/assets/app.css?v=contract-20260823-11">
+  <link rel="stylesheet" href="/assets/app.css?v=contract-20260823-14">
 </head>
 <body data-app-view="library">
   <main class="library-page" id="libraryView">
@@ -90,6 +90,10 @@
     <nav id="tagFilters" class="tag-filters" aria-label="Filter songs by tag"></nav>
     <div id="songList" class="song-list" aria-label="Songs" aria-live="polite"></div>
   </main>
+  <div class="song-top-controls" aria-label="Song controls">
+    <button class="song-sync" id="songSync" type="button" aria-label="Keep lyrics synced to playback" aria-pressed="true" title="Lyrics follow playback"><svg class="sync-icon sync-icon-lock" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="/assets/player-icons.svg#icon-lock"/></svg><svg class="sync-icon sync-icon-unlock" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="/assets/player-icons.svg#icon-unlock"/></svg></button>
+    <button class="song-share" id="songShare" type="button" aria-label="Share this song" title="Share"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 15.2V3.8m0 0L8.3 7.5M12 3.8l3.7 3.7M5 12.5v5.7c0 .99.81 1.8 1.8 1.8h10.4c.99 0 1.8-.81 1.8-1.8v-5.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
   <div class="audio-player" id="audioPlayer" hidden>
     <a class="song-home app-view-toggle" id="appViewToggle" href="/" aria-label="Browse songs" title="Browse songs">
       <svg class="app-view-icon app-view-icon-home" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><use href="/assets/player-icons.svg#icon-home"/></svg>
@@ -104,7 +108,7 @@
   <script src="/assets/queue.js?v=contract-20260823-4"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
   <script src="/assets/song.js?v=contract-20260823-3"></script>
-  <script src="/assets/app.js?v=contract-20260823-15"></script>
+  <script src="/assets/app.js?v=contract-20260823-17"></script>
   <script src="/assets/pwa.js?v=contract-20260821-5"></script>
 </body>
 </html>

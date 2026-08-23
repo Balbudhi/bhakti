@@ -1,4 +1,12 @@
 :root {
+  /* One source of truth for view motion, on :root rather than .app-stage: the
+     fixed top controls are a sibling of the stage, so anything scoped to the
+     stage does not reach them and every var() in their animation shorthand
+     resolves to nothing, silently disabling it. app.js reads these too, so the
+     stylesheet and the teardown cannot drift apart. */
+  --app-view-duration: 220ms;
+  --app-view-ease: cubic-bezier(.22, 1, .36, 1);
+  --app-view-settle: 220ms;
   --app-player-height: 0px;
   --queue-panel-height: min(60dvh, 720px);
   --queue-panel-width: clamp(340px, 29vw, 460px);
@@ -44,6 +52,14 @@
 [data-app-view="library"] .app-view-icon-home,
 [data-app-view="song"] .app-view-icon-song { display: none; }
 
+/* The fixed top controls live in the shell, not inside <main>. A transform on
+   an ancestor becomes the containing block for position: fixed, so while the
+   page slid these buttons were anchored to <main> instead of the viewport —
+   they flew off by exactly the scroll offset and snapped back when the
+   transform was removed. Out here they never move. They act on the current
+   song, so they are hidden while the library is showing. */
+[data-app-view="library"] .song-top-controls { display: none; }
+
 .session-player-visible .library-page,
 .session-player-visible .library-view {
   padding-bottom: calc(164px + var(--app-player-height) + 24px);
@@ -59,22 +75,6 @@ body.queue-open .audio-player { bottom: 0; }
 .app-stage {
   position: relative;
   min-height: 100dvh;
-  /* One source of truth for view motion. app.js reads --app-view-duration, so
-     the page slide, the inner layers, and the JS teardown can never drift
-     apart the way they had. */
-  --app-view-duration: 220ms;
-  --app-view-ease: cubic-bezier(.22, 1, .36, 1);
-  /* The lyric layers keep settling after the page has landed. app.js reads
-     --app-view-settle so the teardown waits for the slowest layer instead of
-     cutting it off. */
-  --app-view-settle: 380ms;
-  /* The page curve is deliberately front-loaded — it puts 73% of the slide in
-     the first 60ms, which is what makes the swipe feel instant. That same curve
-     on the lyric layers is why their travel could not be seen: everything
-     happened in a blur, then crept. The text uses a curve that spreads its
-     travel across the whole duration instead, so three layers moving at three
-     speeds actually reads as three layers. */
-  --lyric-settle-ease: cubic-bezier(.4, 0, .2, 1);
 }
 .app-stage.is-view-transitioning { overflow: hidden; }
 .app-stage.is-view-transitioning > main { will-change: transform; }
@@ -85,41 +85,50 @@ body.queue-open .audio-player { bottom: 0; }
   right: 0;
   left: 0;
 }
-.app-view-in-left { animation: app-view-in-left var(--app-view-duration) var(--app-view-ease); }
-.app-view-out-right { animation: app-view-out-right var(--app-view-duration) var(--app-view-ease); }
-.app-view-in-right { animation: app-view-in-right var(--app-view-duration) var(--app-view-ease); }
-.app-view-out-left { animation: app-view-out-left var(--app-view-duration) var(--app-view-ease); }
+.app-view-in-left { animation: app-view-in-left var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-out-right { animation: app-view-out-right var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-in-right { animation: app-view-in-right var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-out-left { animation: app-view-out-left var(--app-view-duration) var(--app-view-ease) both; }
 /* Percentages track the stage box; vw included the scrollbar and overshot. */
 @keyframes app-view-in-left { from { transform: translateX(-100%); } to { transform: translateX(0); } }
 @keyframes app-view-out-right { from { transform: translateX(0); } to { transform: translateX(100%); } }
 @keyframes app-view-in-right { from { transform: translateX(100%); } to { transform: translateX(0); } }
 @keyframes app-view-out-left { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 
-/* The three lyric layers arrive separately, so you can read the relationship
-   between script, romanization, and English as they settle. Romanization
-   travels farthest and lands first; the source follows; the English drifts in
-   last and slowest. The page itself has already landed at --app-view-duration,
-   so the swipe stays snappy while the text keeps settling behind it.
+/* The three lyric layers carry small differential offsets so the text reads as
+   its own plane sliding over the ground, but they share one duration and one
+   curve: they arrive together and the whole move stays snappy. Staggering the
+   arrival times was tried and rejected — it reads as lag, not as depth.
 
-   Distances and durations are far enough apart to actually be seen — the
-   previous 6-18px over 180-220ms was below the threshold where a reader can
-   perceive three separate layers, so it registered as one blurry lurch.
-
-   Only the first lyric rows animate. Below the fold nothing is visible during
-   a third of a second, and animating every row of a long song was promoting
+   Only the rows above the fold animate. Below it nothing is visible for the
+   length of the transition, and animating every row of a long song promoted
    well over a hundred elements to their own compositor layer at once. */
-@keyframes lyric-roman-in { from { transform: translateX(40px); } to { transform: translateX(0); } }
-@keyframes lyric-source-in { from { transform: translateX(28px); } to { transform: translateX(0); } }
-@keyframes lyric-english-in { from { transform: translateX(22px); } to { transform: translateX(0); } }
-@keyframes lyric-roman-out { from { transform: translateX(0); } to { transform: translateX(40px); } }
-@keyframes lyric-source-out { from { transform: translateX(0); } to { transform: translateX(28px); } }
-@keyframes lyric-english-out { from { transform: translateX(0); } to { transform: translateX(22px); } }
-.app-view-in-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-in 260ms var(--lyric-settle-ease); }
-.app-view-in-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-in 320ms var(--lyric-settle-ease); }
-.app-view-in-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-in 380ms var(--lyric-settle-ease); }
-.app-view-out-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-out 260ms var(--lyric-settle-ease); }
-.app-view-out-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-out 320ms var(--lyric-settle-ease); }
-.app-view-out-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-out 380ms var(--lyric-settle-ease); }
+@keyframes lyric-roman-in { from { transform: translateX(18px); } to { transform: translateX(0); } }
+@keyframes lyric-source-in { from { transform: translateX(10px); } to { transform: translateX(0); } }
+@keyframes lyric-english-in { from { transform: translateX(6px); } to { transform: translateX(0); } }
+@keyframes lyric-roman-out { from { transform: translateX(0); } to { transform: translateX(18px); } }
+@keyframes lyric-source-out { from { transform: translateX(0); } to { transform: translateX(10px); } }
+@keyframes lyric-english-out { from { transform: translateX(0); } to { transform: translateX(6px); } }
+.app-view-in-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-in var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-in-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-in var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-in-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-in var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-out-right .line:nth-child(-n + 12) .line-roman { animation: lyric-roman-out var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-out-right .line:nth-child(-n + 12) .line-source { animation: lyric-source-out var(--app-view-duration) var(--app-view-ease) both; }
+.app-view-out-right .line:nth-child(-n + 12) .line-english { animation: lyric-english-out var(--app-view-duration) var(--app-view-ease) both; }
+
+/* The fixed top controls sit in the shell so they never re-anchor mid-slide,
+   which means they also do not inherit the page's transform. They travel on
+   their own, on the page's exact timing, so the lock and share buttons ride the
+   swipe instead of sitting still. Viewport units here, not percentages: these
+   are small buttons, and 100% of a 34px button is not a slide. */
+@keyframes app-chrome-in-right { from { transform: translateX(100vw); } to { transform: translateX(0); } }
+@keyframes app-chrome-out-right { from { transform: translateX(0); } to { transform: translateX(100vw); } }
+.song-top-controls.app-chrome-in-right { animation: app-chrome-in-right var(--app-view-duration) var(--app-view-ease) both; }
+.song-top-controls.app-chrome-out-right { animation: app-chrome-out-right var(--app-view-duration) var(--app-view-ease) both; }
+/* Visible while sliding whichever view the body still reports. */
+.song-top-controls.app-chrome-in-right,
+.song-top-controls.app-chrome-out-right { display: flex; }
+
 .queue-pill {
   appearance: none;
   width: 34px;
@@ -425,7 +434,9 @@ body.queue-open .audio-player { bottom: 0; }
   .app-view-in-left,
   .app-view-out-right,
   .app-view-in-right,
-  .app-view-out-left { animation: none; }
+  .app-view-out-left,
+  .song-top-controls.app-chrome-in-right,
+  .song-top-controls.app-chrome-out-right { animation: none; }
   .app-stage,
   .audio-player { transition: none; }
   /* These must match the cascade selectors' specificity, or the reduce

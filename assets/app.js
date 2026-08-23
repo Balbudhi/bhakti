@@ -307,6 +307,12 @@
     const motionClasses = ["app-view-in-left", "app-view-out-right", "app-view-in-right", "app-view-out-left"];
     currentRoot?.classList.remove(...motionClasses);
     nextRoot.classList.remove(...motionClasses);
+    // The fixed top controls live outside the stage, so they do not inherit the
+    // page's transform and would otherwise sit still while everything else
+    // slides. They ride the same timing on their own.
+    const chrome = document.querySelector(".song-top-controls");
+    const chromeClasses = ["app-chrome-in-right", "app-chrome-out-right"];
+    chrome?.classList.remove(...chromeClasses);
     appStage.append(nextRoot);
     prepare?.();
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -317,24 +323,14 @@
     const outgoingClass = direction === "right" ? "app-view-out-right" : "app-view-out-left";
     appStage.style.height = `${Math.max(currentRoot?.offsetHeight || 0, nextRoot.offsetHeight)}px`;
     appStage.classList.add("is-view-transitioning");
-    // Promote both views to their own compositor layer and let that land before
-    // the keyframes start. Adding will-change in the same frame as the animation
-    // costs the first frame, which is the frame the eye is most sensitive to.
-    void appStage.offsetHeight;
-    // Wait one painted frame, but never depend on one: rAF is paused in a
-    // hidden or backgrounded tab, and the transition must still complete.
-    await new Promise(resolve => {
-      let released = false;
-      const release = () => {
-        if (released) return;
-        released = true;
-        resolve();
-      };
-      requestAnimationFrame(release);
-      setTimeout(release, 32);
-    });
+    // The motion classes must be applied in the same synchronous block as the
+    // append. Yielding to a frame first — even one — lets the browser paint the
+    // incoming view in normal flow at its final position, so the reader sees it
+    // land and only then slide in from the edge.
     nextRoot.classList.add(incomingClass);
     currentRoot?.classList.add(outgoingClass);
+    // Entering the song, the controls arrive with it; leaving, they go with it.
+    chrome?.classList.add(direction === "left" ? "app-chrome-in-right" : "app-chrome-out-right");
     // Wait for every layer, not just the page. The lyric rows go on settling
     // after the slide has landed, and the previous listener ended the whole
     // transition on the first animationend — which bubbles from descendants —
@@ -351,6 +347,7 @@
     currentRoot?.classList.remove(outgoingClass);
     currentRoot?.remove();
     nextRoot.classList.remove(incomingClass);
+    chrome?.classList.remove(...chromeClasses);
     appStage.classList.remove("is-view-transitioning");
     appStage.style.height = "";
   };

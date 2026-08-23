@@ -83,32 +83,37 @@ Motion explains spatial relationships and then gets out of the way.
 - Song → Library: Song exits right; Library enters from the left.
 - Library → Song: Library exits left; Song enters from the right.
 - Playlist reveal: on mobile and tablet, the playlist rises above the fixed player and temporarily owns the interaction. On desktop and TV, a non-modal content-width playlist enters from the right while the reading view pans left into the remaining space; the fixed player and song remain scrollable and interactive.
-- During horizontal song transitions the three lyric layers arrive separately, so
-  the reader can see the relationship between script, romanization, and English
-  as it settles. Romanization travels farthest (40px) and lands first (260ms),
-  the source follows (28px, 320ms), and the English drifts in last and slowest
-  (22px, 380ms). These offsets and durations are deliberately above the earlier
-  6–18px over 180–220ms, which was below the threshold at which a reader can
-  perceive three distinct layers and so registered as a single blurry lurch.
-- The layers must differ in distance *and* duration, and they must not borrow
-  the page's ease curve. `--app-view-ease` is deliberately front-loaded — it
-  spends about 73% of the slide in the first 60ms, which is what makes the swipe
-  feel instant, and what made the lyric travel invisible. The layers use
-  `--lyric-settle-ease`, which spreads travel across the full duration. Each
-  animates only `transform`.
-- A `prefers-reduced-motion` override must match the cascade selectors'
-  specificity; a shorter selector silently loses to them and the motion plays
-  anyway.
+- During horizontal song transitions the three lyric layers carry small
+  differential offsets — romanization 18px, source 10px, English 6px — so the
+  text reads as its own plane sliding over the ground. They share one duration
+  and one curve and arrive together. Staggering their arrival times so the
+  layers could be told apart individually was tried and rejected: at any spacing
+  large enough to notice, it reads as lag rather than as depth, and it costs the
+  snap that makes the swipe feel good.
+- Every animation in the transition needs `animation-fill-mode: both`. Without
+  it a layer's transform reverts the instant its animation ends — the fastest
+  layer snaps back to its origin while slower ones are still moving, and an
+  outgoing view springs back on screen before it is removed.
+- The motion classes must be applied in the same synchronous block that inserts
+  the incoming view. Yielding even one frame first lets the browser paint both
+  views in normal flow, so the reader sees the new view land and only then slide
+  in from the edge.
+- Fixed-position chrome must live outside the animating stage. A transform on an
+  ancestor becomes the containing block for `position: fixed`, so chrome inside
+  the sliding view re-anchors to the viewport the moment the transform is
+  removed and jumps by the full scroll offset. Chrome outside the stage does not
+  inherit the page transform either, so it carries its own matching slide.
 - Only the lyric rows above the fold animate. Cascading every row of a long song
   promotes a hundred-plus elements to their own compositor layer at once, which
   is what made the transition stutter.
 - On the desktop playlist reveal the same three layers use the quieter 4–13px
   offsets; that motion accompanies a panel, not a page change.
 - Use `transform` (and opacity only when necessary), not per-frame width, height, margin, or positional layout animation.
-- The page slide itself stays snappy at 200–220ms. The lyric layers keep settling
-  behind it until 380ms; `--app-view-duration` and `--app-view-settle` in
-  `assets/app.css` are the single source of both, and `assets/app.js` reads them
-  so the teardown waits for the slowest layer rather than the first to finish.
+- Target duration is 200–220ms with a restrained ease curve, for every layer.
+  `--app-view-duration` and `--app-view-settle` in `assets/app.css` are the
+  single source of truth, and `assets/app.js` reads them so the teardown waits
+  for the actual animations rather than the first `animationend` — which
+  bubbles, and so used to end the transition early.
 - `prefers-reduced-motion: reduce` must produce an immediate, complete state change.
 
 The current implementation is in `assets/app.css` under `.app-stage`, `.queue-sheet`, and the four `app-view-*` keyframes.
@@ -156,7 +161,6 @@ Before release, answer yes to all of these:
 2. Is every permanently visible control necessary in the default state?
 3. Did we reuse an established control shape and icon weight?
 4. Is secondary functionality disclosed locally rather than presented as another surface?
-5. Does motion clarify where the listener went, land the page slide under 220ms,
-   let the lyric layers settle by 380ms, and reduce cleanly?
+5. Does motion clarify where the listener went, stay under 220ms, and reduce cleanly?
 6. Are touch, keyboard, focus, media failure, and all four display classes verified?
 7. Does the result still feel primarily like lyrics and listening rather than software controls?
