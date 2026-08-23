@@ -57,6 +57,7 @@
   let dragStartX = 0;
   let dragStartY = 0;
   let dragHoldTimer = 0;
+  let dragPressTimer = 0;
   let dragActive = false;
   let dragMoved = false;
   let suppressQueueRowAction = false;
@@ -645,12 +646,14 @@
   const clearDragHold = () => {
     clearTimeout(dragHoldTimer);
     dragHoldTimer = 0;
+    clearTimeout(dragPressTimer);
+    dragPressTimer = 0;
   };
   const resetDragGesture = () => {
     const row = draggedRow;
     const pointerId = dragPointerId;
     clearDragHold();
-    row?.classList.remove("is-dragging");
+    row?.classList.remove("is-pressing", "is-dragging");
     draggedRow = null;
     dragPointerId = null;
     dragTouchId = null;
@@ -668,6 +671,7 @@
       return;
     }
     dragActive = true;
+    draggedRow.classList.remove("is-pressing");
     draggedRow.classList.add("is-dragging");
     if (dragPointerId !== null) {
       try {
@@ -714,8 +718,13 @@
   };
   const dragTargetRow = target => {
     const row = target.closest?.(".queue-row:not(.is-current)");
-    if (!row || target.closest(".queue-copy, [data-queue-action]")) return null;
+    if (!row || target.closest("[data-queue-action]")) return null;
     return row;
+  };
+  const scheduleDragFeedback = () => {
+    dragPressTimer = setTimeout(() => {
+      if (draggedRow?.isConnected && !dragActive) draggedRow.classList.add("is-pressing");
+    }, 90);
   };
   queueSheet.addEventListener("pointerdown", event => {
     if (event.pointerType === "touch" || draggedRow) return;
@@ -729,7 +738,10 @@
       clientY: event.clientY,
     });
     if (event.pointerType === "mouse") activateDrag();
-    else dragHoldTimer = setTimeout(activateDrag, TOUCH_DRAG_HOLD_MS);
+    else {
+      scheduleDragFeedback();
+      dragHoldTimer = setTimeout(activateDrag, TOUCH_DRAG_HOLD_MS);
+    }
   });
   queueSheet.addEventListener("pointermove", event => {
     if (!draggedRow || event.pointerId !== dragPointerId) return;
@@ -756,6 +768,7 @@
       clientX: touch.clientX,
       clientY: touch.clientY,
     });
+    scheduleDragFeedback();
     dragHoldTimer = setTimeout(activateDrag, TOUCH_DRAG_HOLD_MS);
   }, { passive: true });
   queueSheet.addEventListener("touchmove", event => {

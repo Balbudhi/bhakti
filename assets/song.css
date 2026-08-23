@@ -245,7 +245,10 @@ html, body {
   font: 500 10px/1.2 Inter, sans-serif;
   letter-spacing: 0.035em;
   cursor: pointer;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease;
 }
+.edition-select:hover { color: var(--kh-ink); border-color: rgba(244, 234, 208, 0.48); }
+.edition-select:active { opacity: 0.76; }
 .edition-select:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 2px; }
 .edition-select option { color: #2a0710; background: #f4ead0; }
 .visually-hidden {

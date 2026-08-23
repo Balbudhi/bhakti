@@ -70,7 +70,7 @@ main {
   letter-spacing: inherit;
   margin: 0;
   padding: 0 2px;
-  transition: box-shadow 120ms ease, background-color 120ms ease;
+  transition: box-shadow 120ms ease, background-color 120ms ease, opacity 120ms ease;
 }
 
 .preface-token {
@@ -78,7 +78,7 @@ main {
   cursor: pointer;
   outline: none;
   padding: 0 2px;
-  transition: box-shadow 120ms ease, background-color 120ms ease;
+  transition: box-shadow 120ms ease, background-color 120ms ease, opacity 120ms ease;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -128,7 +128,7 @@ main {
   cursor: pointer;
   display: inline-flex;
   font-family: Inter, sans-serif;
-  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
 
 .about-toggle {
@@ -152,6 +152,8 @@ main {
   color: var(--ink);
   outline: none;
 }
+.about-toggle:active,
+.about-close:active { opacity: 0.76; transform: scale(0.94); }
 
 .about-panel {
   position: absolute;
@@ -238,6 +240,7 @@ main {
   cursor: pointer;
   font: 500 11px/1 Inter, sans-serif;
   padding: 8px 11px;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
 
 .tag-filter[aria-pressed="true"],
@@ -248,6 +251,8 @@ main {
   color: var(--ink);
   outline: none;
 }
+.tag-filter:active { opacity: 0.76; transform: scale(0.97); }
+.preface-token:active { opacity: 0.72; }
 
 .sr-only {
   clip: rect(0, 0, 0, 0);
@@ -278,7 +283,7 @@ main {
   color: inherit;
   padding: 28px 10px;
   text-decoration: none;
-  transition: color 160ms ease, padding 160ms ease;
+  transition: color 160ms ease, padding 160ms ease, opacity 120ms ease;
 }
 
 .song-card:hover { background: rgba(244, 234, 208, 0.075); }
@@ -290,6 +295,7 @@ main {
 }
 
 .song-card-link:focus-visible { box-shadow: inset 2px 0 var(--ink); }
+.song-card-link:active { opacity: 0.78; }
 
 .song-actions-trigger {
   appearance: none;

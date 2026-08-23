@@ -83,6 +83,7 @@ Motion explains spatial relationships and then gets out of the way.
 - Song → Library: Song exits right; Library enters from the left.
 - Library → Song: Library exits left; Song enters from the right.
 - Playlist reveal: on mobile and tablet, the playlist rises above the fixed player and temporarily owns the interaction. On desktop and TV, a non-modal content-width playlist enters from the right while the reading view pans left into the remaining space; the fixed player and song remain scrollable and interactive.
+- During horizontal song or desktop-playlist transitions, the three lyric layers may use differential offsets no larger than 18px; Romanization travels farthest and settles first, while source and English remain quieter.
 - Use `transform` (and opacity only when necessary), not per-frame width, height, margin, or positional layout animation.
 - Target duration is 200–220ms with a restrained ease curve.
 - `prefers-reduced-motion: reduce` must produce an immediate, complete state change.
