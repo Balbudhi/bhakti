@@ -83,7 +83,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sakātare oi kā̃diche sakale, śono śono pitā.",
-    "english": "{0:In anguish }{1:yonder }{3:all }{2:are weeping, }{4:listen, }{5:listen, }{6:Father.}",
+    "english": "{0:In anguish, }{3:all }{2:are weeping }{1:yonder—}{4:listen, }{5:listen, }{6:Father.}",
     "words": [
       {
         "roman": "Sakātare",
@@ -273,7 +273,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kṣudra āśā niẏe raẏeche bā̃ciẏe, sadāi bhābanā—",
-    "english": "{2:Holding }{0:petty }{1:hope, }{3:they remain }{4:alive, }{5:ever }{6:in anxiety—}",
+    "english": "{2:Nursing }{0:small }{1:hopes, }{3:they go on }{4:living, }{5:ever }{6:anxious—}",
     "words": [
       {
         "roman": "Kṣudra",
@@ -374,7 +374,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jā kichu pāẏa hārāẏe jāẏa, nā māne sāntvanā.",
-    "english": "{0,1:Whatever }{2:is gained }{3,4:slips away lost, }{5,6:accepting no }{7:consolation.}",
+    "english": "{0,1:Whatever }{2:they gain }{3,4:is lost again, }{5,6:accepting no }{7:consolation.}",
     "words": [
       {
         "roman": "Jā",
@@ -469,7 +469,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sukha-āśe diśe diśe dhāẏa tāra pāche,",
-    "english": "{0:In hope of happiness }{3:they rush }{1,2:in every direction }{4,5:after it,}",
+    "english": "{0:In hope of happiness, }{3:they rush }{1,2:in every direction }{4,5:after it,}",
     "words": [
       {
         "roman": "Sukha-āśe",
@@ -807,7 +807,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kī habe gati, biśvapati, śānti kothā āche?",
-    "english": "{0:What }{1:will be }{2:the destiny, }{3:Lord of the Universe, }{5:where }{6:is }{4:peace?}",
+    "english": "{0:What }{1:will be }{2:our way, }{3:Lord of the Universe—}{5:where }{6:is }{4:peace?}",
     "words": [
       {
         "roman": "Kī",
@@ -902,7 +902,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tomāre dāo, āśā purāo, tumi eso kāche.",
-    "english": "{1:Give }{0:Yourself, }{3:fulfill }{2:longing, }{4:You }{5:come }{6:near.}",
+    "english": "{1:Give }{0:Yourself, }{3:fulfill }{2:our hope, }{4:You }{5:come }{6:near.}",
     "words": [
       {
         "roman": "Tomāre",

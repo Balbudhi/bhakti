@@ -81,7 +81,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāū̃ tōrē caran kamal par vārī",
-    "english": "{0,5:I offer myself wholly}{4: upon }{1:your }{3:lotus }{2:feet}",
+    "english": "{0,5:I offer myself wholly}{4: at }{1:your }{3:lotus }{2:feet}",
     "words": [
       {
         "roman": "Jāū̃",
@@ -152,7 +152,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hē gōpāl gōvind murārī",
-    "english": "{0:O }{1:Gopal, }{2:Govind, }{3:Murari}",
+    "english": "{0:O }{1:Gopāla, }{2:Govinda, }{3:Murāri}",
     "words": [
       {
         "roman": "Hē",
@@ -211,7 +211,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śaraṇāgat hū̃ dvār tihār",
-    "english": "{1:I am }{0:a seeker of refuge }{3:at your }{2:threshold}",
+    "english": "{1:I have come }{0:for refuge }{3:to your }{2:door}",
     "words": [
       {
         "roman": "Śaraṇāgat",
@@ -1207,7 +1207,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sananananana sanana pavan jhakōrā ātā",
-    "english": "{0:Whistling, }{1:rushing, }{3:a gust of }{2:wind }{4:comes}",
+    "english": "{0:With a whistle, }{1:rushing, }{3:a gust of }{2:wind }{4:comes}",
     "words": [
       {
         "roman": "Sananananana",
@@ -1272,7 +1272,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sanana pavan jhakōrā ātā",
-    "english": "{0:Whistling, }{2:a gust of }{1:wind }{3:comes}",
+    "english": "{0:With a whistle, }{2:a gust of }{1:wind }{3:comes}",
     "words": [
       {
         "roman": "Sanana",
@@ -1331,7 +1331,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hārā man kā̃patā ghabarātā",
-    "english": "{0:The defeated }{1:heart }{2:trembles }{3:and panics}",
+    "english": "{0:The defeated }{1:heart }{2:trembles }{3:in panic}",
     "words": [
       {
         "roman": "Hārā",
@@ -1461,7 +1461,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mōrapaṅkh kī kiran jagākar",
-    "english": "{3:Awakening }{2:the ray }{1:of }{0:the peacock feather}",
+    "english": "{3:Awakening }{2:the glow }{1:of }{0:the peacock feather}",
     "words": [
       {
         "roman": "Mōrapaṅkh",
@@ -1526,7 +1526,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jagākar mōrapaṅkh kī kiran jagākar",
-    "english": "{0:Awakening, }{4:awakening }{3:the ray }{2:of }{1:the peacock feather}",
+    "english": "{0:Awakening, }{4:awakening }{3:the glow }{2:of }{1:the peacock feather}",
     "words": [
       {
         "roman": "Jagākar",

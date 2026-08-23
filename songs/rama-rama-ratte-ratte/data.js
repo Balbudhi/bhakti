@@ -96,7 +96,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ās bhare mere do nainā palak nahī̃ jhapkāte haĩ",
-    "english": "{1:Filled with }{0:hope, }{2:my }{3:two }{4:eyes }{6:do not }{7,8:blink }{5:an eyelid.}",
+    "english": "{2:My }{3:two }{4:eyes, }{1:full of }{0:hope, }{6:do not }{7,8:blink }{5:an eyelid.}",
     "words": [
       {
         "roman": "Ās",
@@ -463,7 +463,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā Rāmā raṭate raṭate bītī re umariyā",
-    "english": "{2,3:Constantly chanting }{0:Rama, }{1:Rama, }{5:O, }{6:a lifetime }{4:has passed away.}",
+    "english": "{2,3:Chanting }{0:Rāma, }{1:Rāma, }{6:a lifetime }{4:has slipped by, }{5:O.}",
     "words": [
       {
         "roman": "Rāmā",
@@ -540,7 +540,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā Rāmā raṭate raṭate",
-    "english": "{2,3:Constantly chanting }{0:Rama, }{1:Rama,}",
+    "english": "{2,3:Chanting }{0:Rāma, }{1:Rāma,}",
     "words": [
       {
         "roman": "Rāmā",
@@ -630,7 +630,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gīt bhajan sandhyā kar ke Prabhu barasõ baras bitāye haĩ",
-    "english": "{3,4:Performing }{0:songs, }{1:hymns, }{2:and evening prayers, }{5:O Lord, }{8,9:we have spent }{6,7:years upon years.}",
+    "english": "{3,4:In }{0:song, }{1:devotional song, }{2:and evening prayer, }{5:O Lord, }{8,9:we have spent }{6,7:years upon years.}",
     "words": [
       {
         "roman": "Gīt",
@@ -1111,7 +1111,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chandan kī chaukī kā āsan tere lie banāyā hai",
-    "english": "{4:A seat }{3:upon }{0,1:a sandalwood }{2:stool }{7,8:has been prepared }{5,6:for You,}",
+    "english": "{4:A seat }{3:on }{0,1:a sandalwood }{2:stool }{7,8:has been prepared }{5,6:for You,}",
     "words": [
       {
         "roman": "Chandan",
@@ -1236,7 +1236,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rolī kumkum aur phūlõ se man kā thāl sajāyā hai",
-    "english": "{4:With }{0:sacred red powder, }{1:kumkum, }{2:and }{3:flowers, }{7:the platter }{5,6:of the heart }{8,9:has been adorned.}",
+    "english": "{4:With }{0:ritual red powder, }{1:kumkum, }{2:and }{3:flowers, }{7:the platter }{5,6:of the heart }{8,9:is adorned.}",
     "words": [
       {
         "roman": "Rolī",

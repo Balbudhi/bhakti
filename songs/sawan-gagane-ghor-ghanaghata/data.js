@@ -67,7 +67,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śāona gagane ghora ghanaghaṭā",
-    "english": "{0:In the Shravana}{1: sky,}{2: a dark}{3: gathering of dense clouds,}",
+    "english": "{0:In the monsoon}{1: sky,}{2: a dark}{3:mass of dense clouds,}",
     "words": [
       {
         "roman": "śāona",
@@ -114,7 +114,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "niśīthayāminī re",
-    "english": "{0:the midnight night,}{1: O!}",
+    "english": "{1:O, }{0:midnight night!}",
     "words": [
       {
         "roman": "niśīthayāminī",
@@ -673,7 +673,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kaha re sajanī e durayoge",
-    "english": "{0:Tell me,}{1: O}{2: companion,}{3: in this}{4: foul tempest,}",
+    "english": "{0:Tell me,}{1: O}{2: companion,}{3: in this}{4: dire storm,}",
     "words": [
       {
         "roman": "kaha",
@@ -1233,7 +1233,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "garaje ghana ghana bahu ḍara pāoba",
-    "english": "{0:Thunder rumbles}{1,2: incessantly;}{5: she will feel}{3: great}{4: fear,}",
+    "english": "{0:Thunder rumbles}{1,2: incessantly;}{5: I shall feel}{3: great}{4: fear,}",
     "words": [
       {
         "roman": "garaje",
