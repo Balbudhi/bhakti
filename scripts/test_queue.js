@@ -214,7 +214,8 @@ const modifiedSeeded = Queue.remove(seededFullState, 1);
 assert.equal(modifiedSeeded.shuffleAll, false);
 assert.equal(modifiedSeeded.shuffleSeed, null);
 const reverseOrderedShuffle = Queue.shuffle([...fullCatalogue].reverse(), () => 0.314159, "reverse-session");
-assert.equal(reverseOrderedShuffle.shuffleAll, false);
+assert.equal(reverseOrderedShuffle.shuffleAll, true);
+assert.deepEqual(slugs(reverseOrderedShuffle), slugs(seededFullState));
 
 const mediumState = Queue.create({
   mode: "custom",

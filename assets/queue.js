@@ -197,7 +197,7 @@
     const shuffleSeed = Math.floor(sample * 0x100000000) >>> 0;
     return create({
       mode: "shuffle",
-      items: fisherYates(items, seededRandom(shuffleSeed)),
+      items: fisherYates(activeCatalogue(), seededRandom(shuffleSeed)),
       currentIndex: 0,
       sessionId,
       shuffleSeed,
@@ -224,7 +224,8 @@
   const isFullCatalogue = items => {
     const songs = activeCatalogue();
     if (!songs.length || items.length !== songs.length) return false;
-    return items.every((item, index) => item.queueId === songs[index].queueId);
+    const queueIds = new Set(items.map(item => item.queueId));
+    return queueIds.size === songs.length && songs.every(song => queueIds.has(song.queueId));
   };
 
   const catalogueFingerprint = songs => {

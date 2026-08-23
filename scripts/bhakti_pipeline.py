@@ -2628,7 +2628,7 @@ def page_html(meta: dict[str, Any]) -> str:
   </div>
   <script src="data.js?v=contract-20260823-1"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
-  <script src="/assets/queue.js?v=contract-20260823-2"></script>
+  <script src="/assets/queue.js?v=contract-20260823-3"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
   <script src="/assets/song.js?v=contract-20260823-3"></script>
   <script src="/assets/app.js?v=contract-20260823-11"></script>
