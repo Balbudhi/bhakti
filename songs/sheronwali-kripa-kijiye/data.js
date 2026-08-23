@@ -7788,12 +7788,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse1-palkon-1",
     "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "verse1-palkon-3",
-    "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse1-palkon-2",
@@ -8335,10 +8330,6 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 209.725,
-    "end": 217.725
-  },
-  {
-    "start": 217.725,
     "end": 222.25
   },
   {
