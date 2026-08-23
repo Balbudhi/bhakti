@@ -1,4 +1,4 @@
-const CACHE = "bhakti-shell-v20";
+const CACHE = "bhakti-shell-v21";
 const SHELL = [
   "/", "/index.html", "/manifest.webmanifest",
   "/assets/site.css", "/assets/song.css", "/assets/app.css",

@@ -696,15 +696,14 @@
     dragActive = false;
     dragMoved = false;
   };
-  const dragTargetRow = (target, allowActionButtons = false) => {
+  const dragTargetRow = target => {
     const row = target.closest?.(".queue-row:not(.is-current)");
-    if (!row || target.closest(".queue-copy")) return null;
-    if (!allowActionButtons && target.closest("[data-queue-action]")) return null;
+    if (!row || target.closest(".queue-copy, [data-queue-action]")) return null;
     return row;
   };
   queueSheet.addEventListener("pointerdown", event => {
     if (event.pointerType === "touch" || draggedRow) return;
-    const row = dragTargetRow(event.target, true);
+    const row = dragTargetRow(event.target);
     if (!row) return;
     startDragGesture({
       row,
@@ -731,7 +730,7 @@
     .find(touch => touch.identifier === dragTouchId);
   queueSheet.addEventListener("touchstart", event => {
     if (draggedRow || event.touches.length !== 1) return;
-    const row = dragTargetRow(event.target, true);
+    const row = dragTargetRow(event.target);
     const touch = event.changedTouches[0];
     if (!row || !touch) return;
     startDragGesture({
