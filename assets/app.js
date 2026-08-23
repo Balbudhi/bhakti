@@ -1,6 +1,11 @@
 (() => {
   "use strict";
 
+  const standaloneDisplay = navigator.standalone === true
+    || matchMedia("(display-mode: standalone)").matches
+    || matchMedia("(display-mode: fullscreen)").matches;
+  document.documentElement.classList.toggle("bhakti-standalone", standaloneDisplay);
+
   const Queue = window.BHAKTI_QUEUE;
   const catalogue = window.BHAKTI_SONGS || [];
   if (!Queue || !catalogue.length) return;
@@ -401,7 +406,7 @@
         <div class="queue-tools" role="group" aria-label="Playlist actions">
           <button class="queue-action" type="button" data-queue-action="queue-play" aria-label="Play the current queue song" title="Play current song"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg></button>
           <button class="queue-action" type="button" data-queue-action="shuffle" aria-label="Shuffle upcoming songs" title="Shuffle upcoming songs"${future.length < 2 ? " disabled" : ""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></button>
-          <button class="queue-action" type="button" data-queue-action="clear" aria-label="Clear this playlist" title="Clear playlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 10v6M14 10v6"/></svg></button>
+          <button class="queue-action" type="button" data-queue-action="clear" aria-label="Clear this playlist" title="Clear playlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></button>
         </div>
       </div>
       <div class="queue-list">
