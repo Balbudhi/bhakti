@@ -7788,7 +7788,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse1-palkon-1",
     "section": "verse",
-    "repeats": 2
+    "repeats": 1
+  },
+  {
+    "ref": "verse1-palkon-3",
+    "section": "verse",
+    "repeats": 1
   },
   {
     "ref": "verse1-palkon-2",
@@ -8329,19 +8334,23 @@ window.SONG_TIMINGS = [
     "end": 209.725
   },
   {
-    "start": 209.725,
-    "end": 222.25
+    "start": 209.59,
+    "end": 217.505
   },
   {
-    "start": 222.25,
-    "end": 226
+    "start": 217.505,
+    "end": 222.125
   },
   {
-    "start": 226,
-    "end": 234.1
+    "start": 222.125,
+    "end": 225.785
   },
   {
-    "start": 234.1,
+    "start": 225.785,
+    "end": 234.28
+  },
+  {
+    "start": 234.28,
     "end": 242.65
   },
   {
