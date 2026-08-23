@@ -1,7 +1,6 @@
 :root {
   --app-player-height: 0px;
   --queue-panel-height: min(76dvh, 860px);
-  --queue-control-height: calc(42px + env(safe-area-inset-bottom));
 }
 
 [hidden] { display: none !important; }
@@ -44,14 +43,16 @@
 [data-app-view="song"] .app-view-icon-song { display: none; }
 
 .session-player-visible .library-page,
-.session-player-visible .library-view { padding-bottom: calc(164px + var(--queue-control-height) + env(safe-area-inset-bottom)); }
+.session-player-visible .library-view {
+  padding-bottom: calc(164px + var(--app-player-height) + 24px);
+}
 
-.audio-player { z-index: 80; bottom: var(--queue-control-height); }
+.audio-player { z-index: 80; bottom: 0; }
 .app-stage,
 .audio-player { transition: transform 200ms cubic-bezier(.2,.8,.2,1), bottom 200ms cubic-bezier(.2,.8,.2,1); }
 body.queue-open { overflow: hidden; }
-body.queue-open .app-stage { transform: translateY(calc(-1 * var(--queue-panel-height))); }
-body.queue-open .audio-player { bottom: calc(var(--queue-panel-height) + var(--queue-control-height)); }
+body.queue-open .app-stage { transform: none; }
+body.queue-open .audio-player { bottom: 0; }
 
 .app-stage {
   position: relative;
@@ -78,7 +79,7 @@ body.queue-open .audio-player { bottom: calc(var(--queue-panel-height) + var(--q
   position: fixed;
   z-index: 81;
   left: 50%;
-  bottom: max(4px, env(safe-area-inset-bottom));
+  bottom: calc(var(--app-player-height) + 16px + env(safe-area-inset-bottom));
   transform: translateX(-50%);
   touch-action: none;
 }
@@ -111,14 +112,17 @@ body.queue-open .audio-player { bottom: calc(var(--queue-panel-height) + var(--q
 .queue-pill:active { transform: translateX(-50%) scale(0.96); }
 .queue-pill svg { transition: transform 180ms ease; }
 .queue-pill[aria-expanded="true"] svg { transform: rotate(180deg); }
-body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-area-inset-bottom)); }
+body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + var(--app-player-height) + 12px); }
+body.queue-open .queue-pill {
+  bottom: calc(var(--app-player-height) + 16px + env(safe-area-inset-bottom));
+}
 
 .queue-sheet {
   position: fixed;
   z-index: 78;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: var(--app-player-height);
   width: 100%;
   height: var(--queue-panel-height);
   display: grid;
@@ -138,23 +142,32 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   align-items: center;
   justify-content: flex-end;
   min-height: 52px;
-  padding: 10px 16px 6px;
+  padding: 10px 14px 6px;
 }
 .queue-action {
   appearance: none;
-  border: 0;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(244, 234, 208, 0.24);
+  border-radius: 50%;
   background: transparent;
   color: rgba(244, 234, 208, 0.58);
   cursor: pointer;
 }
-.queue-tools { display: flex; align-items: center; gap: 22px; }
-.queue-action { min-height: 34px; padding: 7px 2px; font: 500 11px/1 Inter, sans-serif; letter-spacing: 0.02em; }
+.queue-tools { display: flex; align-items: center; gap: 8px; }
+.queue-action { font: 500 11px/1 Inter, sans-serif; letter-spacing: 0.02em; }
 .queue-action:hover,
 .queue-action:focus-visible {
   color: #f4ead0;
+  border-color: rgba(244, 234, 208, 0.48);
   outline: none;
 }
 .queue-action:disabled { opacity: 0.24; cursor: default; }
+.queue-action svg { width: 15px; height: 15px; }
 .queue-list {
   width: min(760px, 100%);
   margin: 0 auto;
@@ -172,10 +185,11 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   margin: 0 auto 8px;
   padding: 11px 12px;
   border-radius: 6px;
+  touch-action: pan-y;
   transition: transform 180ms cubic-bezier(.2,.8,.2,1), background-color 140ms ease, opacity 140ms ease;
 }
-.queue-row:not(.is-current) { cursor: default; }
-.queue-row.is-dragging { cursor: grabbing; z-index: 1; opacity: 0.72; background: rgba(244, 234, 208, 0.12); }
+.queue-row:not(.is-current) { cursor: grab; }
+.queue-row.is-dragging { cursor: grabbing; z-index: 1; opacity: 0.76; background: rgba(244, 234, 208, 0.12); }
 .queue-row.is-current { background: rgba(244, 234, 208, 0.055); }
 .queue-current-dot { color: rgba(244, 234, 208, 0.54); font-size: 8px; text-align: center; }
 .queue-copy { min-width: 0; }
@@ -215,7 +229,7 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   background: transparent;
   color: rgba(244, 234, 208, 0.42);
 }
-.queue-drag-handle { cursor: grab; touch-action: none; font: 500 17px/1 Inter, sans-serif; letter-spacing: -4px; }
+.queue-drag-handle { cursor: grab; touch-action: none; font: 500 18px/1 Inter, sans-serif; letter-spacing: -4px; }
 .queue-drag-handle:active { cursor: grabbing; }
 .queue-drag-handle:hover,
 .queue-drag-handle:focus-visible { color: #f4ead0; outline: none; }
@@ -280,8 +294,8 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   .queue-drag-handle { width: 44px; height: 44px; font-size: 19px; }
   .queue-remove-text { min-height: 44px; font-size: 12px; }
   .queue-row-remove { width: 44px; height: 44px; }
-  .queue-sheet-tools { min-height: 58px; padding: 10px 14px 4px; }
-  .queue-action { min-height: 44px; font-size: 12px; }
+  .queue-sheet-tools { min-height: 58px; padding: 10px 12px 4px; }
+  .queue-action { width: 36px; height: 36px; font-size: 12px; }
 }
 
 @media (min-width: 601px) and (max-width: 1100px) {
@@ -292,7 +306,7 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   .queue-drag-handle { width: 46px; height: 46px; font-size: 21px; }
   .queue-remove-text { min-height: 46px; font-size: 13px; }
   .queue-row-remove { width: 46px; height: 46px; }
-  .queue-action { font-size: 13px; }
+  .queue-action { width: 38px; height: 38px; font-size: 13px; }
 }
 
 @media (min-width: 1101px) and (max-width: 1799px) {
@@ -303,7 +317,7 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   .queue-drag-handle { width: 46px; height: 46px; font-size: 21px; }
   .queue-remove-text { min-height: 46px; font-size: 13px; }
   .queue-row-remove { width: 46px; height: 46px; }
-  .queue-action { font-size: 13px; }
+  .queue-action { width: 38px; height: 38px; font-size: 13px; }
 }
 
 @media (min-width: 1800px) {
@@ -318,7 +332,7 @@ body.queue-open .queue-pill { bottom: calc(var(--queue-panel-height) + env(safe-
   .queue-drag-handle { width: 54px; height: 54px; font-size: 25px; }
   .queue-remove-text { min-height: 52px; font-size: 16px; }
   .queue-row-remove { width: 54px; height: 54px; }
-  .queue-action { min-height: 52px; padding: 12px 19px; font-size: 16px; }
+  .queue-action { width: 44px; height: 44px; font-size: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

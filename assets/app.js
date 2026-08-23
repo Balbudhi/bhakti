@@ -45,8 +45,10 @@
   let draggedRow = null;
   let dragPointerId = null;
   let dragStartY = 0;
+  let dragEligibleAt = 0;
   let dragActive = false;
   let dragMoved = false;
+  let suppressQueueRowAction = false;
   let queuePillPointerId = null;
   let queuePillStartY = 0;
   let queuePillDragged = false;
@@ -389,7 +391,7 @@
       <div class="queue-row${currentRow ? " is-current" : ""}" data-queue-index="${absoluteIndex}" data-queue-entry-id="${escapeHtml(item.entryId)}">
         ${currentRow
           ? `<span class="queue-current-dot" aria-hidden="true">●</span>`
-          : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag or use arrow keys" title="Drag to reorder; use arrow keys">⋮⋮</button>`}
+          : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag here or hold then drag the row; use arrow keys" title="Drag to reorder; hold and drag anywhere in the row; use arrow keys">⋮⋮</button>`}
         <div class="queue-copy">${currentRow
           ? `<div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}`
           : `<button class="queue-song-select" type="button" data-queue-action="play"><span class="queue-song-title">${escapeHtml(item.title)}</span>${item.credit ? `<span class="queue-credit">${escapeHtml(item.credit)}</span>` : ""}</button>`}</div>
@@ -400,6 +402,7 @@
     queueSheet.innerHTML = `
       <div class="queue-sheet-tools">
         <div class="queue-tools" role="group" aria-label="Playlist actions">
+          <button class="queue-action" type="button" data-queue-action="queue-play" title="Play the current queue song">Play</button>
           <button class="queue-action" type="button" data-queue-action="share" title="Share this playlist">Share</button>
           <button class="queue-action" type="button" data-queue-action="shuffle" title="Shuffle upcoming songs"${future.length < 2 ? " disabled" : ""}>Shuffle</button>
           <button class="queue-action" type="button" data-queue-action="clear" title="Clear this playlist">Clear</button>
@@ -601,12 +604,18 @@
     queuePillDragged = false;
   });
   queueSheet.addEventListener("click", event => {
+    if (suppressQueueRowAction) {
+      suppressQueueRowAction = false;
+      event.preventDefault();
+      return;
+    }
     const button = event.target.closest("[data-queue-action]");
     if (!button || button.disabled || !queueState) return;
     const action = button.dataset.queueAction;
     const row = button.closest("[data-queue-index]");
     const index = Number(row?.dataset.queueIndex);
-    if (action === "remove") setQueueState(Queue.remove(queueState, index));
+    if (action === "queue-play") attemptPlay();
+    else if (action === "remove") setQueueState(Queue.remove(queueState, index));
     else if (action === "play") {
       setQueueState(Queue.playNow(queueState, queueState.items[index]));
       selectAudioSong(currentSong, { autoplay: true, force: true });
@@ -638,25 +647,27 @@
     showStatus(`${title} removed`);
   });
   queueSheet.addEventListener("pointerdown", event => {
-    const handle = event.target.closest?.("[data-queue-drag]");
-    if (!handle) return;
-    const row = handle.closest(".queue-row:not(.is-current)");
-    if (!row) return;
+    const row = event.target.closest?.(".queue-row:not(.is-current)");
+    if (!row || event.target.closest(".queue-row-remove")) return;
+    const handle = event.target.closest("[data-queue-drag]");
     draggedRow = row;
     dragPointerId = event.pointerId;
     dragStartY = event.clientY;
+    dragEligibleAt = performance.now() + (handle ? 0 : 180);
     dragActive = false;
     dragMoved = false;
-    handle.setPointerCapture(event.pointerId);
-    event.preventDefault();
+    row.setPointerCapture(event.pointerId);
+    if (handle) event.preventDefault();
   });
   queueSheet.addEventListener("pointermove", event => {
     if (!draggedRow || event.pointerId !== dragPointerId) return;
     if (!dragActive) {
       if (Math.abs(event.clientY - dragStartY) < 6) return;
+      if (performance.now() < dragEligibleAt) return;
       dragActive = true;
       draggedRow.classList.add("is-dragging");
     }
+    event.preventDefault();
     const list = queueSheet.querySelector(".queue-list");
     const listRect = list.getBoundingClientRect();
     const edge = 56;
@@ -678,13 +689,16 @@
     if (!draggedRow || event.pointerId !== dragPointerId) return;
     draggedRow.classList.remove("is-dragging");
     const moved = dragMoved;
+    const suppressAction = dragActive;
     const orderedEntryIds = [...queueSheet.querySelectorAll(".queue-row:not(.is-current)")]
       .map(row => row.dataset.queueEntryId);
     draggedRow = null;
     dragPointerId = null;
     dragStartY = 0;
+    dragEligibleAt = 0;
     dragActive = false;
     dragMoved = false;
+    if (suppressAction) suppressQueueRowAction = true;
     if (moved) {
       setQueueState(Queue.reorderUpcoming(queueState, orderedEntryIds));
       showStatus("Playlist reordered");
@@ -696,6 +710,7 @@
     draggedRow = null;
     dragPointerId = null;
     dragStartY = 0;
+    dragEligibleAt = 0;
     dragActive = false;
     dragMoved = false;
     renderQueueSheet();

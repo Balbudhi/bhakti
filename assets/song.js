@@ -602,6 +602,7 @@ function wireInteractions(root) {
   WIRED_INTERACTION_ROOTS.add(root);
   let stickyWord = null;
   let hoverWord  = null;
+  let keyboardFocus = false;
 
   // Touch Safari may synthesize mouseover when karaoke scrolling moves a word
   // beneath the last touch location. Only a device with a real fine hover
@@ -625,6 +626,12 @@ function wireInteractions(root) {
     });
   }
 
+  root.addEventListener("pointerdown", e => {
+    keyboardFocus = false;
+    if (e.target.closest(".word-link")) return;
+    if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
+  }, true);
+
   root.addEventListener("click", e => {
     const w = e.target.closest(".word-link");
     if (!w) return;
@@ -645,20 +652,22 @@ function wireInteractions(root) {
 
   root.addEventListener("focusin", e => {
     const w = e.target.closest(".word-link");
-    if (!w) return;
+    if (!w || !keyboardFocus) return;
     activate(w);
   });
   root.addEventListener("focusout", e => {
     const w = e.target.closest(".word-link");
-    if (!w || w === stickyWord) return;
+    if (!w || !keyboardFocus || w === stickyWord) return;
     deactivate(w);
   });
 
   window.addEventListener("scroll", () => {
     if (tooltipEl) tooltipEl.hidden = true;
+    if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
   }, { passive: true });
 
   document.addEventListener("keydown", e => {
+    if (e.key === "Tab") keyboardFocus = true;
     const word = e.target.closest?.(".word-link");
     if (word && (e.key === "Enter" || e.key === " ")) {
       e.preventDefault();

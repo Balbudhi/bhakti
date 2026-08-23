@@ -202,15 +202,26 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn('queue-remove"', app)
         self.assertIn('bhakti:add-to-queue', app)
         self.assertNotIn('data-queue-action="tools"', app)
-        for action in ("share", "shuffle", "clear"):
+        for action in ("queue-play", "share", "shuffle", "clear"):
             self.assertIn(f'data-queue-action="{action}"', app)
         self.assertIn("document.body.append(queuePill)", app)
         self.assertNotIn("queue-inline-tools", app)
         self.assertIn(".queue-sheet-tools", css)
-        self.assertIn("--queue-control-height", css)
+        self.assertIn("body.queue-open .queue-pill", css)
+        self.assertIn("bottom: 0;", css)
         self.assertIn("queue-row-remove", app)
         self.assertIn('data-queue-action="remove"', app)
+        self.assertIn("queuePill.title", app)
+        self.assertIn('role="group" aria-label="Playlist actions"', app)
         self.assertIn("const reorderUpcoming", queue)
+
+    def test_touch_words_do_not_inherit_hover_or_stale_focus_highlights(self) -> None:
+        reader = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
+        css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
+        self.assertIn('root.addEventListener("pointerdown"', reader)
+        self.assertIn('if (stickyWord) { deactivate(stickyWord); stickyWord = null; }', reader)
+        self.assertIn('if (!w || !keyboardFocus) return;', reader)
+        self.assertIn("@media (hover: hover) and (pointer: fine)", css)
 
     def test_design_standard_is_part_of_repository_authority(self) -> None:
         agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
