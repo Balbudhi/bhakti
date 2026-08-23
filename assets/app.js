@@ -39,6 +39,7 @@
   let queueState = null;
   let currentSong = null;
   let statusTimer = 0;
+  let queueCloseTimer = 0;
   let viewRequest = 0;
   let dataLoadChain = Promise.resolve();
   let advancing = false;
@@ -49,10 +50,6 @@
   let dragActive = false;
   let dragMoved = false;
   let suppressQueueRowAction = false;
-  let queuePillPointerId = null;
-  let queuePillStartY = 0;
-  let queuePillDragged = false;
-  let suppressQueuePillClick = false;
   const songDataCache = new Map();
 
   const initialData = window.BHAKTI_READER?.snapshotGlobals?.();
@@ -68,7 +65,7 @@
   queuePill.hidden = true;
   queuePill.setAttribute("aria-expanded", "false");
   queuePill.setAttribute("aria-controls", "queueSheet");
-  document.body.append(queuePill);
+  player.append(queuePill);
 
   const queueSheet = document.createElement("section");
   queueSheet.className = "queue-sheet";
@@ -121,11 +118,11 @@
     queuePill.hidden = !visible;
     if (!visible) return;
     const count = activeItems(queueState).length;
-    queuePill.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9"/></svg><span>${count}</span>`;
+    queuePill.innerHTML = `<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/><path d="m17 16 3 2-3 2z" fill="currentColor" stroke="none"/></svg>`;
     const expanded = queuePill.getAttribute("aria-expanded") === "true";
     const action = `${expanded ? "Hide" : "Show"} playlist, ${count} song${count === 1 ? "" : "s"}`;
     queuePill.setAttribute("aria-label", action);
-    queuePill.title = `${action}. Swipe up here to open, or down to close.`;
+    queuePill.title = action;
   };
 
   const updateViewToggle = () => {
@@ -394,18 +391,17 @@
           : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag here or hold then drag the row; use arrow keys" title="Drag to reorder; hold and drag anywhere in the row; use arrow keys">⋮⋮</button>`}
         <div class="queue-copy">${currentRow
           ? `<div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}`
-          : `<button class="queue-song-select" type="button" data-queue-action="play"><span class="queue-song-title">${escapeHtml(item.title)}</span>${item.credit ? `<span class="queue-credit">${escapeHtml(item.credit)}</span>` : ""}</button>`}</div>
+          : `<div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}`}</div>
         ${!currentRow
-          ? `<button class="queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>`
+          ? `<div class="queue-row-actions"><button class="queue-row-action" type="button" data-queue-action="play" aria-label="Play ${escapeHtml(item.title)} now" title="Play now"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg></button><button class="queue-row-action queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button></div>`
           : `<span aria-hidden="true"></span>`}
       </div>`;
     queueSheet.innerHTML = `
       <div class="queue-sheet-tools">
         <div class="queue-tools" role="group" aria-label="Playlist actions">
-          <button class="queue-action" type="button" data-queue-action="queue-play" title="Play the current queue song">Play</button>
-          <button class="queue-action" type="button" data-queue-action="share" title="Share this playlist">Share</button>
-          <button class="queue-action" type="button" data-queue-action="shuffle" title="Shuffle upcoming songs"${future.length < 2 ? " disabled" : ""}>Shuffle</button>
-          <button class="queue-action" type="button" data-queue-action="clear" title="Clear this playlist">Clear</button>
+          <button class="queue-action" type="button" data-queue-action="queue-play" aria-label="Play the current queue song" title="Play current song"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg></button>
+          <button class="queue-action" type="button" data-queue-action="shuffle" aria-label="Shuffle upcoming songs" title="Shuffle upcoming songs"${future.length < 2 ? " disabled" : ""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></button>
+          <button class="queue-action" type="button" data-queue-action="clear" aria-label="Clear this playlist" title="Clear playlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 10v6M14 10v6"/></svg></button>
         </div>
       </div>
       <div class="queue-list">
@@ -418,6 +414,8 @@
 
   const openQueue = () => {
     if (!queueIsVisible(queueState)) return;
+    clearTimeout(queueCloseTimer);
+    queueSheet.classList.remove("is-closing");
     renderQueueSheet();
     queueSheet.hidden = false;
     document.body.classList.add("queue-open");
@@ -425,42 +423,29 @@
     renderQueuePill();
   };
 
-  const closeQueue = ({ returnFocus = false } = {}) => {
-    if (queueSheet.hidden) return;
-    queueSheet.hidden = true;
+  const closeQueue = ({ returnFocus = false, immediate = false } = {}) => {
+    if (queueSheet.hidden || queueSheet.classList.contains("is-closing")) return;
     document.body.classList.remove("queue-open");
     queuePill.setAttribute("aria-expanded", "false");
     renderQueuePill();
     if (returnFocus) queuePill.focus();
-  };
-
-  const shareQueue = async () => {
-    const remaining = activeItems(queueState);
-    const shareState = Queue.create({
-      mode: queueState.mode,
-      items: remaining,
-      currentIndex: 0,
-      sessionId: queueState.sessionId,
-    });
-    const url = new URL(view === "song" && currentSong ? songPath(currentSong.slug) : "/", location.origin);
-    url.searchParams.set("queue", Queue.encode(shareState));
-    try {
-      if (navigator.share) {
-        await navigator.share({ title: "Bhakti playlist", url: url.href });
-        return;
-      }
-      await navigator.clipboard.writeText(url.href);
-      showStatus("Playlist link copied");
-    } catch (error) {
-      if (error?.name !== "AbortError") showStatus("Could not share playlist");
+    const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (immediate || reduceMotion) {
+      queueSheet.hidden = true;
+      return;
     }
+    queueSheet.classList.add("is-closing");
+    queueCloseTimer = setTimeout(() => {
+      queueSheet.hidden = true;
+      queueSheet.classList.remove("is-closing");
+    }, 180);
   };
 
   const clearQueue = () => {
     audio.pause();
     try { audio.currentTime = 0; } catch (_) {}
     try { sessionStorage.removeItem(SESSION_KEY); } catch (_) {}
-    closeQueue();
+    closeQueue({ immediate: true });
     if (view === "song" && bySlug.has(visibleSongSlug)) {
       queueState = null;
       currentSong = null;
@@ -572,36 +557,8 @@
     else if (currentSong) showSong(currentSong.slug);
   });
   queuePill.addEventListener("click", () => {
-    if (suppressQueuePillClick) {
-      suppressQueuePillClick = false;
-      return;
-    }
     if (queueSheet.hidden) openQueue();
     else closeQueue();
-  });
-  queuePill.addEventListener("pointerdown", event => {
-    queuePillPointerId = event.pointerId;
-    queuePillStartY = event.clientY;
-    queuePillDragged = false;
-    queuePill.setPointerCapture(event.pointerId);
-  });
-  queuePill.addEventListener("pointermove", event => {
-    if (event.pointerId !== queuePillPointerId) return;
-    if (Math.abs(event.clientY - queuePillStartY) > 10) queuePillDragged = true;
-  });
-  const finishQueuePillGesture = event => {
-    if (event.pointerId !== queuePillPointerId) return;
-    const distance = event.clientY - queuePillStartY;
-    queuePillPointerId = null;
-    if (!queuePillDragged || Math.abs(distance) < 24) return;
-    suppressQueuePillClick = true;
-    if (distance < 0) openQueue();
-    else closeQueue();
-  };
-  queuePill.addEventListener("pointerup", finishQueuePillGesture);
-  queuePill.addEventListener("pointercancel", () => {
-    queuePillPointerId = null;
-    queuePillDragged = false;
   });
   queueSheet.addEventListener("click", event => {
     if (suppressQueueRowAction) {
@@ -621,7 +578,6 @@
       selectAudioSong(currentSong, { autoplay: true, force: true });
       if (view === "song") showSong(currentSong.slug, { historyMode: "replace" });
     } else if (action === "shuffle") setQueueState(Queue.shuffleRemaining(queueState, Math.random));
-    else if (action === "share") shareQueue();
     else if (action === "clear") clearQueue();
   });
   queueSheet.addEventListener("keydown", event => {
@@ -648,12 +604,12 @@
   });
   queueSheet.addEventListener("pointerdown", event => {
     const row = event.target.closest?.(".queue-row:not(.is-current)");
-    if (!row || event.target.closest(".queue-row-remove")) return;
+    if (!row || event.target.closest("[data-queue-action]")) return;
     const handle = event.target.closest("[data-queue-drag]");
     draggedRow = row;
     dragPointerId = event.pointerId;
     dragStartY = event.clientY;
-    dragEligibleAt = performance.now() + (handle ? 0 : 180);
+    dragEligibleAt = performance.now() + (handle || event.pointerType === "mouse" ? 0 : 160);
     dragActive = false;
     dragMoved = false;
     row.setPointerCapture(event.pointerId);

@@ -202,17 +202,21 @@ class SongUiContractTests(unittest.TestCase):
         self.assertNotIn('queue-remove"', app)
         self.assertIn('bhakti:add-to-queue', app)
         self.assertNotIn('data-queue-action="tools"', app)
-        for action in ("queue-play", "share", "shuffle", "clear"):
+        for action in ("queue-play", "shuffle", "clear"):
             self.assertIn(f'data-queue-action="{action}"', app)
-        self.assertIn("document.body.append(queuePill)", app)
+        self.assertNotIn('data-queue-action="share"', app)
+        self.assertIn("player.append(queuePill)", app)
         self.assertNotIn("queue-inline-tools", app)
         self.assertIn(".queue-sheet-tools", css)
-        self.assertIn("body.queue-open .queue-pill", css)
         self.assertIn("bottom: 0;", css)
+        self.assertIn("queue-row-actions", app)
         self.assertIn("queue-row-remove", app)
+        self.assertNotIn("queue-song-select", app)
         self.assertIn('data-queue-action="remove"', app)
         self.assertIn("queuePill.title", app)
         self.assertIn('role="group" aria-label="Playlist actions"', app)
+        self.assertIn('event.target.closest("[data-queue-action]")', app)
+        self.assertIn('handle || event.pointerType === "mouse"', app)
         self.assertIn("const reorderUpcoming", queue)
 
     def test_touch_words_do_not_inherit_hover_or_stale_focus_highlights(self) -> None:
@@ -232,11 +236,13 @@ class SongUiContractTests(unittest.TestCase):
         for heading in ("## Palette", "## Controls and icons", "## Motion", "## Anti-patterns"):
             self.assertIn(heading, standard)
 
-    def test_mobile_player_stays_integrated_but_lifts_controls_above_the_home_indicator(self) -> None:
+    def test_mobile_player_stays_compact_and_integrates_the_queue_toggle(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
+        app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
         self.assertIn("left: 0;\n  right: 0;\n  bottom: 0;", song_css)
-        self.assertIn("padding: 16px 28px calc(36px + env(safe-area-inset-bottom));", song_css)
-        self.assertIn("padding: 16px 18px calc(36px + env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 10px 28px max(10px, env(safe-area-inset-bottom));", song_css)
+        self.assertIn("padding: 10px 18px max(10px, env(safe-area-inset-bottom));", song_css)
+        self.assertIn("player.append(queuePill)", app)
 
     def test_hosted_intake_is_owner_only_and_public_media_only(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "run-bhakti-intake.yml").read_text(encoding="utf-8")
