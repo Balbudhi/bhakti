@@ -2620,7 +2620,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <link rel="stylesheet" href="/assets/style.css?v=contract-20260821-8" />
   <link rel="stylesheet" href="/assets/song.css?v=contract-20260823-9" />
   <link rel="stylesheet" href="/assets/site.css?v=contract-20260823-3" />
-  <link rel="stylesheet" href="/assets/app.css?v=contract-20260823-15" />
+  <link rel="stylesheet" href="/assets/app.css?v=contract-20260823-16" />
 </head>
 <body data-app-view="song">
   <main class="song-page" id="songView">
@@ -2643,7 +2643,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   </div>
   <script src="data.js?v=contract-20260823-1"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
-  <script src="/assets/queue.js?v=contract-20260823-4"></script>
+  <script src="/assets/queue.js?v=contract-20260823-5"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
   <script src="/assets/song.js?v=contract-20260823-3"></script>
   <script src="/assets/app.js?v=contract-20260823-18"></script>
@@ -2692,6 +2692,40 @@ def catalogue_entry(song_dir: Path, meta: dict[str, Any]) -> dict[str, Any]:
     return entry
 
 
+QUEUE_NUMBERS_PATH = ROOT / "data" / "queue_numbers.json"
+
+
+def assign_queue_numbers(slugs: list[str]) -> dict[str, int]:
+    """Return a permanent slug -> small-integer map, appending only.
+
+    Shared playlist links encode these numbers. A number is therefore assigned
+    once and never reused or reordered: reassigning one would silently repoint
+    every link that already contains it. New slugs take the next free integer,
+    which keeps the numbering dense enough to bit-pack.
+    """
+    registry: dict[str, Any] = {"schemaVersion": 1, "numbers": {}}
+    if QUEUE_NUMBERS_PATH.is_file():
+        loaded = json.loads(QUEUE_NUMBERS_PATH.read_text(encoding="utf-8"))
+        if not isinstance(loaded, dict) or not isinstance(loaded.get("numbers"), dict):
+            raise RuntimeError(f"malformed queue number registry: {QUEUE_NUMBERS_PATH}")
+        registry = loaded
+    numbers: dict[str, int] = {str(k): int(v) for k, v in registry["numbers"].items()}
+    if len(set(numbers.values())) != len(numbers):
+        raise RuntimeError("queue number registry contains a duplicate number")
+    next_number = max(numbers.values()) + 1 if numbers else 0
+    for slug in sorted(slugs):
+        if slug not in numbers:
+            numbers[slug] = next_number
+            next_number += 1
+    if numbers != {str(k): int(v) for k, v in registry["numbers"].items()}:
+        QUEUE_NUMBERS_PATH.write_text(
+            json.dumps({"schemaVersion": 1, "numbers": dict(sorted(numbers.items()))},
+                       ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+    return numbers
+
+
 def write_catalogue() -> None:
     catalogue: list[dict[str, Any]] = []
     for song_dir in sorted((ROOT / "songs").glob("*")):
@@ -2704,6 +2738,9 @@ def write_catalogue() -> None:
     queue_ids = [entry["queueId"] for entry in catalogue]
     if len(queue_ids) != len(set(queue_ids)):
         raise RuntimeError("catalogue queueId collision")
+    queue_numbers = assign_queue_numbers([entry["slug"] for entry in catalogue])
+    for entry in catalogue:
+        entry["queueNumber"] = queue_numbers[entry["slug"]]
     catalogue.sort(key=catalogue_sort_key)
     (ROOT / "data" / "songs.js").write_text(
         "window.BHAKTI_SONGS = " + json.dumps(catalogue, ensure_ascii=False, indent=2) + ";\n",

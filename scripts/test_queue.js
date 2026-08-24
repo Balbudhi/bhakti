@@ -238,4 +238,79 @@ assert.deepEqual(
   slugs(mediumState),
 );
 
+/* Share v4: permanent numbers, so a link survives publishing.
+
+   v2 addressed songs by catalogue position and carried a fingerprint of the
+   whole catalogue to notice that positions had moved, which meant every shared
+   link stopped working the next time a song was published. These assertions
+   pin the property that replaced it. */
+const numbered = Array.from({ length: 300 }, (_, index) => ({
+  ...song(`numbered-${index}`, String(index + 1000).padStart(8, "0")),
+  queueNumber: index,
+}));
+global.window.BHAKTI_SONGS = numbered;
+const numberedById = list => new Map(list.map(item => [item.queueId, item]));
+
+const chosen = [numbered[7], numbered[299], numbered[0], numbered[128], numbered[42]];
+const v4State = Queue.create({ mode: "custom", items: chosen, currentIndex: 3, sessionId: "v4" });
+const v4Payload = Queue.encode(v4State);
+// 300 songs needs 9 bits each: 5 songs = 45 bits = 6 bytes, after a 5-byte
+// header (version, mode, current index, width, count) = 11 bytes = 15 chars.
+assert.equal(v4Payload.length, 15, `5-song v4 payload should be 15 chars, got ${v4Payload.length}`);
+assert.deepEqual(
+  slugs(Queue.decode(v4Payload, numberedById(numbered), "v4-received", 300)),
+  slugs(v4State),
+);
+
+// Publishing songs changes display order and catalogue size; numbers do not move.
+const afterPublishing = [
+  { ...song("published-first", "ffff0001"), queueNumber: 300 },
+  ...numbered.slice().reverse(),
+  { ...song("published-last", "ffff0002"), queueNumber: 301 },
+];
+global.window.BHAKTI_SONGS = afterPublishing;
+const survived = Queue.decode(v4Payload, numberedById(afterPublishing), "later", afterPublishing.length);
+assert.ok(survived, "a v4 link must still decode after the catalogue grows");
+assert.deepEqual(slugs(survived), slugs(v4State), "a v4 link must resolve to the same songs");
+assert.equal(survived.currentIndex, 3, "a v4 link must keep its current song");
+
+/* A number this build does not know is a song it has not got - an older client
+   opening a newer link, or a withdrawn song. Drop it and keep the rest
+   playable rather than rejecting the whole playlist. */
+const withoutEarlier = afterPublishing.filter(item => item.queueNumber !== 7);
+global.window.BHAKTI_SONGS = withoutEarlier;
+const droppedEarlier = Queue.decode(v4Payload, numberedById(withoutEarlier), "partial", withoutEarlier.length);
+assert.deepEqual(slugs(droppedEarlier), slugs(v4State).filter(slug => slug !== "numbered-7"));
+assert.equal(droppedEarlier.currentIndex, 2,
+  "losing a song ahead of the current one must shift the current index back with it");
+assert.equal(droppedEarlier.items[droppedEarlier.currentIndex].slug, "numbered-128",
+  "the same song must still be the current one");
+
+// Losing the current song itself lands on the one that followed it.
+const withoutCurrent = afterPublishing.filter(item => item.queueNumber !== 128);
+global.window.BHAKTI_SONGS = withoutCurrent;
+const droppedCurrent = Queue.decode(v4Payload, numberedById(withoutCurrent), "partial", withoutCurrent.length);
+assert.deepEqual(slugs(droppedCurrent), slugs(v4State).filter(slug => slug !== "numbered-128"));
+assert.equal(droppedCurrent.items[droppedCurrent.currentIndex].slug, "numbered-42");
+
+// Packing width follows the catalogue, and the stream is exact.
+const wide = Array.from({ length: 5 }, (_, index) => ({
+  ...song(`wide-${index}`, String(index + 5000).padStart(8, "0")),
+  queueNumber: index === 4 ? 1023 : index,
+}));
+global.window.BHAKTI_SONGS = wide;
+const widePayload = Queue.encode(Queue.create({
+  mode: "custom", items: wide, currentIndex: 0, sessionId: "wide",
+}));
+assert.deepEqual(
+  slugs(Queue.decode(widePayload, numberedById(wide), "wide-received", 5)),
+  wide.map(item => item.slug),
+  "a catalogue needing 10 bits per song must round-trip",
+);
+
+// A catalogue with no numbers still shares, through the older format.
+global.window.BHAKTI_SONGS = [a, b, c, d];
+const unnumbered = Queue.encode(make([a, c], 1));
+assert.deepEqual(slugs(Queue.decode(unnumbered, catalogue, "legacy", 4)), ["alpha-song", "gamma-song"]);
+
 process.stdout.write("queue state and sharing contract: ok\n");

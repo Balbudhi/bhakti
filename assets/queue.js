@@ -4,6 +4,7 @@
   const VERSION = 1;
   const SHARE_VERSION = 2;
   const SHUFFLE_DELTA_VERSION = 3;
+  const PACKED_VERSION = 4;
   const SHUFFLE_ALL_CODE = 3;
   const MAX_PAYLOAD_CHARACTERS = 4096;
   const MODES = new Set(["standalone", "custom", "shuffle"]);
@@ -246,6 +247,79 @@
     activeCatalogue(catalogue).map((item, index) => [item.queueId, index]),
   );
 
+  /* Share v4 addresses songs by their permanent catalogue number rather than
+     by position. A position shifts whenever a song is published ahead of it,
+     which is why v2 had to carry a fingerprint of the whole catalogue and
+     refuse the link once anything changed. A number is assigned once in
+     data/queue_numbers.json and never reused, so a link stays valid for good
+     and needs no fingerprint. */
+  const numberToItem = catalogue => {
+    const map = new Map();
+    for (const item of activeCatalogue(catalogue)) {
+      const number = item?.queueNumber;
+      if (Number.isInteger(number) && number >= 0) map.set(number, item);
+    }
+    return map;
+  };
+  const queueIdToNumber = catalogue => {
+    const map = new Map();
+    for (const item of activeCatalogue(catalogue)) {
+      const number = item?.queueNumber;
+      if (Number.isInteger(number) && number >= 0) map.set(item.queueId, number);
+    }
+    return map;
+  };
+  const bitsFor = maxValue => {
+    let bits = 1;
+    while (maxValue >>> bits) bits += 1;
+    return bits;
+  };
+  /* Fixed-width big-endian bit stream. A varint spends 7 usable bits per byte
+     and doubles at 128, so a 229-song catalogue paid 8 or 16 bits for an index
+     that needs 8. Packing at exactly the catalogue's width lands within one
+     percent of the information-theoretic floor at any size. */
+  const packBits = (values, bits) => {
+    const bytes = [];
+    let accumulator = 0;
+    let held = 0;
+    for (const value of values) {
+      accumulator = (accumulator * (2 ** bits)) + value;
+      held += bits;
+      while (held >= 8) {
+        held -= 8;
+        const divisor = 2 ** held;
+        const byte = Math.floor(accumulator / divisor);
+        bytes.push(byte & 0xff);
+        accumulator -= byte * divisor;
+      }
+    }
+    if (held) bytes.push((accumulator * (2 ** (8 - held))) & 0xff);
+    return bytes;
+  };
+  const unpackBits = (bytes, offset, count, bits) => {
+    const needed = Math.ceil((count * bits) / 8);
+    if (offset + needed !== bytes.length) return null;
+    const values = [];
+    let accumulator = 0;
+    let held = 0;
+    let index = offset;
+    while (values.length < count) {
+      if (held < bits) {
+        if (index >= bytes.length) return null;
+        accumulator = (accumulator * 256) + bytes[index];
+        index += 1;
+        held += 8;
+        continue;
+      }
+      held -= bits;
+      const divisor = 2 ** held;
+      const value = Math.floor(accumulator / divisor);
+      accumulator -= value * divisor;
+      values.push(value);
+    }
+    return values;
+  };
+
   const base64UrlEncodeBytes = bytes => {
     if (typeof Buffer !== "undefined") return Buffer.from(bytes).toString("base64url");
     let binary = "";
@@ -330,8 +404,94 @@
     return value >>> 0;
   };
 
+  const encodePacked = (state, songs, numberByQueueId) => {
+    const payload = [PACKED_VERSION, MODE_TO_CODE[state.mode]];
+    writeVarint(state.currentIndex, payload);
+    /* A whole-library shuffle stores its seed and re-derives the order from
+       whatever the library holds when the link is opened. That is the honest
+       meaning of "the library, shuffled this way" and it survives publishing. */
+    if (state.mode === "shuffle" && state.shuffleAll && Number.isInteger(state.shuffleSeed)) {
+      const reproduced = fisherYates(songs, seededRandom(state.shuffleSeed)).map(item => item.queueId);
+      const wanted = state.items.map(item => item.queueId);
+      if (reproduced.length === wanted.length && reproduced.every((id, at) => id === wanted[at])) {
+        payload[1] = SHUFFLE_ALL_CODE;
+        writeUint32(state.shuffleSeed, payload);
+        return base64UrlEncodeBytes(payload);
+      }
+    }
+    let highest = 0;
+    const numbers = [];
+    for (const item of state.items) {
+      const number = numberByQueueId.get(item.queueId);
+      if (!Number.isInteger(number) || number < 0) return null;
+      if (number > highest) highest = number;
+      numbers.push(number);
+    }
+    const bits = bitsFor(highest);
+    payload.push(bits);
+    writeVarint(numbers.length, payload);
+    payload.push(...packBits(numbers, bits));
+    return base64UrlEncodeBytes(payload);
+  };
+
+  const decodePacked = (bytes, catalogue, sessionId, maximum) => {
+    const songs = activeCatalogue(catalogue);
+    if (!songs.length || bytes.length < 3) return null;
+    const offsetRef = { index: 2 };
+    const currentIndex = readVarint(bytes, offsetRef);
+    if (!Number.isInteger(maximum) || maximum < 1) return null;
+    if (bytes[1] === SHUFFLE_ALL_CODE) {
+      const seed = readUint32(bytes, offsetRef);
+      if (offsetRef.index !== bytes.length || songs.length > maximum) return null;
+      const items = fisherYates(songs, seededRandom(seed));
+      return create({
+        mode: "shuffle",
+        items,
+        currentIndex: Math.min(currentIndex, items.length - 1),
+        sessionId,
+        shuffleSeed: seed,
+        shuffleAll: true,
+      });
+    }
+    const mode = CODE_TO_MODE[bytes[1]];
+    if (!mode) return null;
+    const bits = bytes[offsetRef.index];
+    offsetRef.index += 1;
+    if (!Number.isInteger(bits) || bits < 1 || bits > 32) return null;
+    const count = readVarint(bytes, offsetRef);
+    if (count < 1 || count > maximum) return null;
+    const numbers = unpackBits(bytes, offsetRef.index, count, bits);
+    if (!numbers) return null;
+    /* A number the reader does not know is a song this build has not got —
+       an older client opening a newer link, or a withdrawn song. Drop it and
+       keep the rest playable rather than rejecting the whole playlist. */
+    const byNumber = numberToItem(songs);
+    const items = [];
+    let adjustedIndex = currentIndex;
+    numbers.forEach((number, position) => {
+      const item = byNumber.get(number);
+      if (item) items.push(item);
+      else if (position < currentIndex) adjustedIndex -= 1;
+    });
+    if (!items.length) return null;
+    if (mode === "standalone" && items.length !== 1) return null;
+    return create({
+      mode,
+      items,
+      currentIndex: Math.max(0, Math.min(adjustedIndex, items.length - 1)),
+      sessionId,
+    });
+  };
+
   const encode = state => {
     const songs = activeCatalogue();
+    const numberByQueueId = queueIdToNumber(songs);
+    /* Every song carries a permanent number, so emit v4. A catalogue that
+       predates the registry falls through to the older formats below. */
+    if (numberByQueueId.size === songs.length && songs.length) {
+      const packed = encodePacked(state, songs, numberByQueueId);
+      if (packed) return packed;
+    }
     const indexByQueueId = catalogueIndexMap(songs);
     if (!indexByQueueId.size) return encodeLegacy(state);
     const fingerprint = catalogueFingerprint(songs);
@@ -461,6 +621,7 @@
     if (typeof payload !== "string" || !payload.length || payload.length > MAX_PAYLOAD_CHARACTERS) return null;
     try {
       const bytes = base64UrlDecodeBytes(payload);
+      if (bytes[0] === PACKED_VERSION) return decodePacked(bytes, catalogue, sessionId, maximum);
       if (bytes[0] === SHUFFLE_DELTA_VERSION) return decodeShuffleDelta(bytes, activeCatalogue(catalogue), sessionId, maximum);
       if (bytes[0] === SHARE_VERSION) return decodeCompact(bytes, catalogue, sessionId, maximum);
       return decodeLegacy(payload, catalogue, sessionId, maximum);

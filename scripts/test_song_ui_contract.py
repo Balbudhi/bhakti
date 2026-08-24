@@ -120,6 +120,36 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('matchMedia?.("(hover: hover) and (pointer: fine)")', script)
         self.assertIn('if (hasRealHover)', script)
 
+    def test_the_generator_still_reproduces_every_committed_song_page(self) -> None:
+        """The generator and the committed pages must not drift apart.
+
+        Song pages are generated output, so any edit to the template or to an
+        asset cache-buster has to be made in the generator and re-emitted. This
+        caught a real drift: the pages were bumped to one app.css version while
+        the generator still wrote the previous one, which would have silently
+        reverted 229 pages on the next regeneration.
+        """
+        import json
+        import re
+        import sys
+
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import bhakti_pipeline
+
+        drifted = []
+        for song_dir in sorted((ROOT / "songs").iterdir()):
+            data = song_dir / "data.js"
+            page = song_dir / "index.html"
+            if not data.is_file() or not page.is_file():
+                continue
+            match = re.search(r"window\.SONG_META = (\{.*?\});\n\n",
+                              data.read_text(encoding="utf-8"), re.S)
+            self.assertIsNotNone(match, f"{song_dir.name} has no SONG_META")
+            meta = json.loads(match.group(1))
+            if bhakti_pipeline.page_html(meta, song_dir.name) != page.read_text(encoding="utf-8"):
+                drifted.append(song_dir.name)
+        self.assertEqual(drifted, [], "generator output no longer matches these committed pages")
+
     def test_pwa_checks_for_releases_without_reloading_every_launch(self) -> None:
         client = (ROOT / "assets" / "pwa.js").read_text(encoding="utf-8")
         worker = (ROOT / "sw.js").read_text(encoding="utf-8")
