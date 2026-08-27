@@ -344,6 +344,16 @@ let PAGE_META = {...(window.SONG_META || {}), ...(window.BHAKTI_EDITION_META || 
 let PAGE_LINES = window.SONG_LINES || null;
 let PAGE_SEQUENCE = window.SONG_SEQUENCE || null;
 let PAGE_TIMINGS = window.SONG_TIMINGS || null;
+// A long recitation can contain hundreds of individually interactive words.
+// Rendering every one at once exhausts mobile Safari while navigating between
+// the reader and library, so long readers reveal calm contiguous chunks as the
+// listener approaches them. A direct seek still materializes its target.
+const LAZY_LINE_THRESHOLD = 180;
+const INITIAL_LINE_BATCH = 56;
+const NEXT_LINE_BATCH = 40;
+let lazyLineCount = 0;
+let lazyAppendLines = null;
+let lazyObserver = null;
 
 function indicesFrom(value) {
   return String(value || "").split(/\s+/).filter(Boolean).map(Number).filter(Number.isInteger);
@@ -521,11 +531,7 @@ function renderSongMeta() {
   }));
 }
 
-function render() {
-  renderSongMeta();
-  const root = document.getElementById("songRoot");
-  if (!root) return;
-  let html = "";
+function lineRenderContext() {
   const seq = PAGE_SEQUENCE || SEQUENCE;
   const lines = PAGE_LINES || LINES;
   const timings = PAGE_TIMINGS || [];
@@ -533,13 +539,63 @@ function render() {
   const adapted = new Set((PAGE_META?.adaptedSequenceIndices || []).map(Number));
   const language = (PAGE_META?.languages || [])[0];
   const defaultSourceLanguage = { Bengali: "bn", Hindi: "hi", Sanskrit: "sa", Punjabi: "pa", Kannada: "kn", Marathi: "mr", Odia: "or", Braj: "bra" }[language] || "";
-  seq.forEach((entry, idx) => {
-    const line = lineForEdition(lines[entry.ref], entry.ref, PAGE_META);
-    if (!line) return;
-    if (notices.has(idx)) html += renderSourceNotice(notices.get(idx));
-    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`, defaultSourceLanguage, timings[idx]?.start, adapted.has(idx));
-  });
-  root.innerHTML = html;
+  return { seq, lines, timings, notices, adapted, defaultSourceLanguage };
+}
+
+function renderLineRange(context, start, end) {
+  let html = "";
+  for (let idx = start; idx < end; idx++) {
+    const entry = context.seq[idx];
+    const line = lineForEdition(context.lines[entry.ref], entry.ref, PAGE_META);
+    if (!line) continue;
+    if (context.notices.has(idx)) html += renderSourceNotice(context.notices.get(idx));
+    html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`,
+      context.defaultSourceLanguage, context.timings[idx]?.start, context.adapted.has(idx));
+  }
+  return html;
+}
+
+function ensureRenderedThrough(index) {
+  if (typeof lazyAppendLines === "function" && index >= lazyLineCount) lazyAppendLines(index + 1);
+}
+
+function render() {
+  renderSongMeta();
+  const root = document.getElementById("songRoot");
+  if (!root) return;
+  lazyObserver?.disconnect();
+  lazyObserver = null;
+  lazyAppendLines = null;
+  lazyLineCount = 0;
+  root.replaceChildren();
+  const context = lineRenderContext();
+  const lazy = context.seq.length > LAZY_LINE_THRESHOLD;
+  const sentinel = lazy ? document.createElement("div") : null;
+  if (sentinel) {
+    sentinel.className = "line-load-sentinel";
+    sentinel.setAttribute("aria-hidden", "true");
+    root.append(sentinel);
+  }
+  lazyAppendLines = target => {
+    const end = Math.min(context.seq.length, Math.max(target, lazyLineCount + NEXT_LINE_BATCH));
+    if (end <= lazyLineCount) return;
+    const html = renderLineRange(context, lazyLineCount, end);
+    if (sentinel?.isConnected) sentinel.insertAdjacentHTML("beforebegin", html);
+    else root.insertAdjacentHTML("beforeend", html);
+    lazyLineCount = end;
+    if (lazyLineCount >= context.seq.length) {
+      sentinel?.remove();
+      lazyObserver?.disconnect();
+      lazyObserver = null;
+    }
+  };
+  lazyAppendLines(lazy ? INITIAL_LINE_BATCH : context.seq.length);
+  if (lazy && "IntersectionObserver" in window && sentinel?.isConnected) {
+    lazyObserver = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) lazyAppendLines(lazyLineCount + NEXT_LINE_BATCH);
+    }, { rootMargin: "900px 0px" });
+    lazyObserver.observe(sentinel);
+  }
   wireInteractions(root);
 }
 
@@ -710,6 +766,7 @@ function setupKaraoke() {
 
   const activeArticle = () => {
     const seq = PAGE_SEQUENCE || SEQUENCE;
+    ensureRenderedThrough(activeIdx);
     return activeIdx >= 0 && seq[activeIdx]
       ? document.getElementById(`ln-${activeIdx}-${seq[activeIdx].ref}`)
       : null;
