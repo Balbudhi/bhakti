@@ -91,7 +91,15 @@ window.SONG_META = {
     "line-518": "Dohā 45",
     "line-528": "Dohā 46",
     "line-538": "Dohā 47"
-  }
+  },
+  "sectionNotices": [
+    {
+      "sequenceIndex": 312,
+      "title": "Sītā’s message to Rāma",
+      "poet": "",
+      "note": "After giving Hanumān her crest-jewel, Sītā dictates the message he will carry to Rāma."
+    }
+  ]
 };
 
 window.SONG_LINES = {
@@ -38329,7 +38337,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahēhu tāta asa mōra pranāmā. saba prakāra prabhu pūranakāmā.",
-    "english": "{0:“Convey }{2:thus }{3:my }{4:obeisance, }{1:dear one: }{5:in every }{6:way }{7:the Lord }{8:is one whose desires are fulfilled.}",
+    "english": "{1:“Dear child, }{0:carry }{7:Rāma }{2,3,4:my reverent greeting: }{5,6,8:in every way, He is fulfilled.”}",
     "words": [
       {
         "roman": "kahēhu",
@@ -38448,7 +38456,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dīna dayāla biridu saṁbhārī. harahu nātha mama saṁkaṭa bhārī.",
-    "english": "{3:Calling to mind }{2:Your vow of }{1:compassion to }{0:the humble, }{4:dispel, }{5:O Lord, }{6:my }{8:heavy }{7:affliction.}",
+    "english": "{3:“Remember }{2:Your renown }{1:for compassion }{0:toward the helpless; }{5:O protector, }{4:lift }{8,7:this heavy affliction }{6:from me.”}",
     "words": [
       {
         "roman": "dīna",
@@ -38561,7 +38569,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tāta sakrasuta kathā sunāēhu. bāna pratāpa prabhuhi samujhāēhu.",
-    "english": "{0:Dear one, }{3:recount }{2:the episode }{1:of Indra’s son, }{7:and remind }{6:the Lord }{5:of the power }{4:of His arrow.}",
+    "english": "{0:“Dear child, }{3,6:tell Rāma }{2:the story }{1:of Indra’s son; }{7:remind Him }{5:of the power }{4:of His arrow.”}",
     "words": [
       {
         "roman": "tāta",
@@ -38692,7 +38700,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "māsa divasa mahuṁ nāthu na āvā. tau puni mōhi jiata nahiṁ pāvā.",
-    "english": "{2:If within }{1:the span }{0:of a month }{3:the Lord }{4:does not }{5:come, }{6:then }{7:thereafter }{10:He will not }{11:find }{8:me }{9:alive.”}",
+    "english": "{2:“If }{3:Rāma }{4,5:does not come }{0,1:within a month, }{6,7:He will not }{10,11:find }{8,9:me alive.”}",
     "words": [
       {
         "roman": "māsa",
@@ -38841,7 +38849,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahu kapi kēhi bidhi rākhauṁ prānā. tumhahū tāta kahata aba jānā.",
-    "english": "{0:“Tell me, }{1:O monkey, }{2:in what }{3:way }{4:shall I keep }{5:my life-breaths? }{6:You too, }{7:dear one, }{8:speak }{9:now }{10:of departing.}",
+    "english": "{0:“Tell me, }{1:Hanumān, }{2,3:how can I }{4:keep }{5:my life-breaths? }{7:Dear child, }{6:you too }{8,9:now speak }{10:of departing.”}",
     "words": [
       {
         "roman": "kahu",
@@ -38851,7 +38859,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kapi",
-        "gloss": "O monkey (Hanumān)",
+        "gloss": "monkey; ape—here, Hanumān",
         "concept_key": "",
         "preserve_in_english": false
       },
