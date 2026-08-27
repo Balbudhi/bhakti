@@ -94,10 +94,28 @@ window.SONG_META = {
   },
   "sectionNotices": [
     {
+      "sequenceIndex": 19,
+      "title": "Maināka’s offered rest",
+      "poet": "",
+      "note": "Recognizing Rāma’s envoy, the Ocean asks the mountain Maināka to rise and offer Hanumān rest. Hanumān honors the welcome but refuses delay in Rāma’s work."
+    },
+    {
+      "sequenceIndex": 22,
+      "title": "Surāsā’s test",
+      "poet": "",
+      "note": "At the gods’ request, Surāsā tests Hanumān by demanding that he enter her mouth. He matches her growing form, then becomes tiny, enters and exits at once, and continues without violence."
+    },
+    {
+      "sequenceIndex": 235,
+      "title": "The missile of Brahmā",
+      "poet": "",
+      "note": "Indrajit binds Hanumān with Brahmā’s missile. Hanumān recognizes its sacred force and accepts capture, allowing himself to be brought before Rāvaṇa and to see Laṅkā’s court from within."
+    },
+    {
       "sequenceIndex": 312,
       "title": "Sītā’s message to Rāma",
       "poet": "",
-      "note": "After giving Hanumān her crest-jewel, Sītā dictates the message he will carry to Rāma."
+      "note": "Jayanta, Indra’s son, once came as a crow and wounded Sītā while Rāma slept. Rāma’s grass-blade arrow pursued him until he yielded. Sītā asks Hanumān to invoke that remembered protection—and says she cannot survive another month."
     }
   ]
 };
@@ -38849,7 +38867,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahu kapi kēhi bidhi rākhauṁ prānā. tumhahū tāta kahata aba jānā.",
-    "english": "{0:“Tell me, }{1:Hanumān, }{2,3:how can I }{4:keep }{5:my life-breaths? }{7:Dear child, }{6:you too }{8,9:now speak }{10:of departing.”}",
+    "english": "{0:“Tell me, }{1:O monkey, }{2,3:how can I }{4:keep }{5:my life-breaths? }{7:Dear child, }{6:you too }{8,9:now speak }{10:of departing.”}",
     "words": [
       {
         "roman": "kahu",
@@ -38859,7 +38877,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kapi",
-        "gloss": "monkey; ape—here, Hanumān",
+        "gloss": "monkey; ape",
         "concept_key": "",
         "preserve_in_english": false
       },
