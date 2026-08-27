@@ -309,6 +309,26 @@ html, body {
   margin: 8px 0 0;
 }
 
+/* ---------- Meter markers (textual structure, never lyric content) ---------- */
+.structural-marker {
+  align-items: center;
+  color: var(--kh-ink-soft);
+  display: flex;
+  font: 600 10px/1 Inter, sans-serif;
+  gap: 10px;
+  letter-spacing: 0.12em;
+  margin: 38px 0 18px;
+  text-transform: uppercase;
+}
+.structural-marker::before,
+.structural-marker::after {
+  background: var(--kh-rule);
+  content: "";
+  height: 1px;
+}
+.structural-marker::before { width: 28px; }
+.structural-marker::after { flex: 1; }
+
 /* ---------- Audio player (fixed, blends into body) ---------- */
 .audio-player {
   position: fixed;

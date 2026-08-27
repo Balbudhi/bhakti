@@ -447,6 +447,10 @@ function renderSourceNotice(notice) {
   return `<aside class="source-notice"><h2>${escapeHtml(notice.title || "")}</h2>${poet}${detail}</aside>`;
 }
 
+function renderStructuralMarker(label) {
+  return `<div class="structural-marker" role="note"><span>${escapeHtml(label)}</span></div>`;
+}
+
 let selectedTextEdition = null;
 
 function selectedEdition(meta) {
@@ -549,6 +553,8 @@ function renderLineRange(context, start, end) {
     const line = lineForEdition(context.lines[entry.ref], entry.ref, PAGE_META);
     if (!line) continue;
     if (context.notices.has(idx)) html += renderSourceNotice(context.notices.get(idx));
+    const marker = PAGE_META?.structuralMarkers?.[entry.ref];
+    if (marker) html += renderStructuralMarker(marker);
     html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`,
       context.defaultSourceLanguage, context.timings[idx]?.start, context.adapted.has(idx));
   }

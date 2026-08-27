@@ -41,7 +41,57 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "structuralMarkers": {
+    "line-020": "Dohā 1",
+    "line-034": "Dohā 2",
+    "line-047": "Chhand",
+    "line-059": "Dohā 3",
+    "line-069": "Dohā 4",
+    "line-079": "Dohā 5",
+    "line-089": "Dohā 6",
+    "line-099": "Dohā 7",
+    "line-109": "Dohā 8",
+    "line-120": "Dohā 9",
+    "line-131": "Dohā 10",
+    "line-141": "Dohā 11",
+    "line-155": "Sorathā",
+    "line-168": "Dohā 13",
+    "line-180": "Dohā 14",
+    "line-192": "Dohā 15",
+    "line-203": "Dohā 16",
+    "line-214": "Dohā 17",
+    "line-224": "Dohā 18",
+    "line-235": "Dohā 19",
+    "line-245": "Dohā 20",
+    "line-256": "Dohā 21",
+    "line-268": "Dohā 22",
+    "line-278": "Dohā 23",
+    "line-289": "Dohā 24",
+    "line-300": "Dohā 25",
+    "line-310": "Dohā 26",
+    "line-320": "Dohā 27",
+    "line-330": "Dohā 28",
+    "line-340": "Dohā 29",
+    "line-350": "Dohā 30",
+    "line-361": "Dohā 31",
+    "line-371": "Dohā 32",
+    "line-382": "Dohā 33",
+    "line-392": "Dohā 34",
+    "line-404": "Chhand",
+    "line-412": "Dohā 35",
+    "line-424": "Dohā 36",
+    "line-435": "Dohā 37",
+    "line-445": "Dohā 38",
+    "line-466": "Dohā 40",
+    "line-477": "Dohā 41",
+    "line-487": "Dohā 42",
+    "line-498": "Dohā 43",
+    "line-508": "Dohā 44",
+    "line-518": "Dohā 45",
+    "line-528": "Dohā 46",
+    "line-538": "Dohā 47"
+  }
 };
 
 window.SONG_LINES = {
@@ -318,7 +368,7 @@ window.SONG_LINES = {
     "grammarNote": "Accusative singular masculine nouns and tatpuruṣa/karmadhāraya compounds ('rāma-ākhyam', 'jagat-īśvaram', 'sura-gurum', 'māyā-manuṣyam', 'harim'), all acting as direct objects of 'vande'."
   },
   "line-004": {
-    "source": "वन्देऽहं करुणाकरं रघुवरं भूपालचूड़ामणिम् ॥ १ ॥",
+    "source": "वन्देऽहं करुणाकरं रघुवरं भूपालचूड़ामणिम्",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -566,7 +616,7 @@ window.SONG_LINES = {
     "grammarNote": "'bhaktiṁ' (acc. sg. fem.) is modified by 'nirbharāṁ' (acc. sg. fem.), both direct objects of 'prayaccha' (2nd sg. imperative active of pra-√yam). 'raghupuṅgava' is a vocative compound (Raghu + puṅgava, literally 'bull among the Raghus', an honorific for foremost leader). 'me' is enclitic dative/genitive singular."
   },
   "line-008": {
-    "source": "कामादिदोषरहितं कुरु मानसं च ॥ २ ॥",
+    "source": "कामादिदोषरहितं कुरु मानसं च",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -730,7 +780,7 @@ window.SONG_LINES = {
     "grammarNote": "Sanskrit compound accusatives: sakala-guṇa-nidhānam and vānarāṇām-adhīśam (tatpuruṣa compound governed by genitive plural vānarāṇām)."
   },
   "line-012": {
-    "source": "रघुपतिप्रियभक्तं वातजातं नमामि ॥ ३ ॥",
+    "source": "रघुपतिप्रियभक्तं वातजातं नमामि",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -748,7 +798,8 @@ window.SONG_LINES = {
       {
         "text": "नमामि",
         "wordIndices": [
-          2
+          2,
+          3
         ]
       }
     ],
@@ -1652,67 +1703,55 @@ window.SONG_LINES = {
     "grammarNote": "bicārī is a conjunctive participle ('having recognized'); direct speech follows with 2nd sg. pronoun taiṃ, vocative maināka, and 2nd sg. imperative hohi."
   },
   "line-020": {
-    "source": "दो. हनूमान तेहि परसा कर पुनि कीन्ह प्रनाम।",
+    "source": "हनूमान तेहि परसा कर पुनि कीन्ह प्रनाम।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "हनूमान",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "हनूमान",
+        "text": "तेहि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "तेहि",
+        "text": "परसा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "परसा",
+        "text": "कर",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कर",
+        "text": "पुनि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "पुनि",
+        "text": "कीन्ह",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कीन्ह",
+        "text": "प्रनाम।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "प्रनाम।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. hanūmāna tehi parasā kara puni kīnha pranāma।",
-    "english": "{0,1:Hanumān }{3:touched }{2:him }{4:with his hand, }{5:then }{6:made }{7:obeisance.}",
+    "roman": "hanūmāna tehi parasā kara puni kīnha pranāma।",
+    "english": "{0:Hanumān }{2:touched }{1:him }{3:with his hand, }{4:then }{5:made }{6:obeisance.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (meter indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "hanūmāna",
         "gloss": "monkey-god; son of the Wind",
@@ -1759,7 +1798,7 @@ window.SONG_LINES = {
     "grammarNote": "Awadhi past narrative construction: transitive past 'parasā' (3sg) with instrumental noun 'kara' ('with hand'), coordinated with 'kīnha pranāma' ('made obeisance')."
   },
   "line-021": {
-    "source": "राम काजु कीन्हें बिनु मोहि कहाँ बिश्राम ॥ १ ॥",
+    "source": "राम काजु कीन्हें बिनु मोहि कहाँ बिश्राम",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -1801,11 +1840,12 @@ window.SONG_LINES = {
       {
         "text": "बिश्राम",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "rāma kāju kīnheṃ binu mohi kahā~ biśrāma ॥ 1 ॥",
+    "roman": "rāma kāju kīnheṃ binu mohi kahā~ biśrāma",
     "english": "{3:“Without }{2:accomplishing }{0:Rāma’s }{1:work, }{5:where is }{6:rest }{4,7:for me?”}",
     "words": [
       {
@@ -3432,73 +3472,61 @@ window.SONG_LINES = {
     "grammarNote": "'suranha' carries the Awadhi plural oblique/ergative marker -anha acting as subject of 'paṭhāvā'. 'budhi bala maramu' is an appositional genitive phrase governed by possessive pronoun 'tora' and direct object of 'pāvā'. 'budhi' represents the curated concept 'buddhi'."
   },
   "line-034": {
-    "source": "दो. राम काजु सबु करिहहु तुम्ह बल बुद्धि निधान।",
+    "source": "राम काजु सबु करिहहु तुम्ह बल बुद्धि निधान।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "राम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "राम",
+        "text": "काजु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "काजु",
+        "text": "सबु",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सबु",
+        "text": "करिहहु",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "करिहहु",
+        "text": "तुम्ह",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "तुम्ह",
+        "text": "बल",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "बल",
+        "text": "बुद्धि",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "बुद्धि",
+        "text": "निधान।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "निधान।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. rāma kāju sabu karihahu tumha bala buddhi nidhāna।",
-    "english": "{0,5:“You }{4:will accomplish }{3:all of }{1:Rāma’s }{2:work, }{8:O abode }{6:of strength }{7:and buddhi.”}",
+    "roman": "rāma kāju sabu karihahu tumha bala buddhi nidhāna।",
+    "english": "{4:“You }{3:will accomplish }{2:all of }{0:Rāma’s }{1:work, }{7:O abode }{5:of strength }{6:and buddhi.”}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet (dohā meter marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "rāma",
         "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
@@ -3551,7 +3579,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' is an abbreviated section label. 'karihahu' is second-person future/precative agreeing with 'tumha'. 'bala-buddhi-nidhāna' is a bahuvrīhi/tatpuruṣa vocative compound addressing Hanumān. 'buddhi' matches the curated preserved term registry."
   },
   "line-035": {
-    "source": "आसिष देह गई सो हरषि चलेउ हनुमान ॥ २ ॥",
+    "source": "आसिष देह गई सो हरषि चलेउ हनुमान",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -3593,11 +3621,12 @@ window.SONG_LINES = {
       {
         "text": "हनुमान",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "āsiṣa deha gaī so haraṣi caleu hanumāna. 2.",
+    "roman": "āsiṣa deha gaī so haraṣi caleu hanumāna.",
     "english": "{1:Giving }{0:her blessing, }{3:she }{2:departed; }{4:rejoicing, }{6:Hanumān }{5,7:went on.}",
     "words": [
       {
@@ -5141,11 +5170,11 @@ window.SONG_LINES = {
     "grammarNote": "'Cahu pāsā' functions adverbially. 'Kanaka koṭa kara' uses the masculine genitive postposition 'kara'."
   },
   "line-047": {
-    "source": "छं=कनक कोट बिचित्र मनि कृत सुंदरायतना घना।",
+    "source": "कनक कोट बिचित्र मनि कृत सुंदरायतना घना।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "छं=कनक",
+        "text": "कनक",
         "wordIndices": [
           0
         ]
@@ -5187,11 +5216,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "chaṃ=kanaka koṭa bicitra mani kṛta suṃdarāyatanā ghanā.",
+    "roman": "kanaka koṭa bicitra mani kṛta suṃdarāyatanā ghanā.",
     "english": "{0:The golden}{1: rampart}{4: was inlaid with}{2: wondrous}{3: gems,}{6: with dense,}{5: beautiful residences;}",
     "words": [
       {
-        "roman": "chaṃ=kanaka",
+        "roman": "kanaka",
         "gloss": "golden",
         "concept_key": "",
         "preserve_in_english": false
@@ -5474,7 +5503,7 @@ window.SONG_LINES = {
     "grammarNote": "Rhetorical question with 3sg optative/present verb 'ganai'. 'Barūthinha' features the Awadhi plural oblique marker '-inha'."
   },
   "line-050": {
-    "source": "बहुरूप निसिचर जूथ अतिबल सेन बरनत नहिं बनै ॥ १ ॥",
+    "source": "बहुरूप निसिचर जूथ अतिबल सेन बरनत नहिं बनै",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -5522,11 +5551,12 @@ window.SONG_LINES = {
       {
         "text": "बनै",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "bahurūpa nisicara jūtha atibala sena baranata nahi~ banai. 1.",
+    "roman": "bahurūpa nisicara jūtha atibala sena baranata nahi~ banai.",
     "english": "{4:The army}{3: of immensely mighty}{2: troops}{0: of multiform}{1: night-wanderers}{5,6,7: defies description.}",
     "words": [
       {
@@ -5920,7 +5950,7 @@ window.SONG_LINES = {
     "grammarNote": "'māla' reflects Sanskrit 'malla' (wrestler/fighter). 'deha bisāla saila samāna' functions as a descriptive bahuvrīhi-type adjectival phrase modifying 'māla'. 'garjahī~' is 3rd person plural present."
   },
   "line-054": {
-    "source": "नाना अखारेन्ह भिरहिं बहु बिधि एक एकन्ह तर्जहीं ॥ २ ॥",
+    "source": "नाना अखारेन्ह भिरहिं बहु बिधि एक एकन्ह तर्जहीं",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -5968,11 +5998,12 @@ window.SONG_LINES = {
       {
         "text": "तर्जहीं",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "nānā akhārenha bhirahī~ bahu bidhi eka ekanha tarjahī~. 2.",
+    "roman": "nānā akhārenha bhirahī~ bahu bidhi eka ekanha tarjahī~.",
     "english": "{0:in diverse}{1: arenas}{2: they grapple}{3: in many}{4: ways,}{7: and challenge}{5,6: one another.}",
     "words": [
       {
@@ -6414,7 +6445,7 @@ window.SONG_LINES = {
     "grammarNote": "'ehi lāgi' is an oblique demonstrative + postposition expressing causality ('for this reason'). 'hai kahī' is present perfect tense agreeing with feminine singular object 'kathā'."
   },
   "line-058": {
-    "source": "रघुबीर सर तीरथ सरीरन्हि त्यागि गति पैहहिं सही ॥ ३ ॥",
+    "source": "रघुबीर सर तीरथ सरीरन्हि त्यागि गति पैहहिं सही",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -6462,11 +6493,12 @@ window.SONG_LINES = {
       {
         "text": "सही",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "raghubīra sara tīratha sarīranhi tyāgi gati paihahi~ sahī. 3.",
+    "roman": "raghubīra sara tīratha sarīranhi tyāgi gati paihahi~ sahī.",
     "english": "{4:relinquishing}{3: their bodies}{2: at the sacred ford}{0: of the Hero of Raghu's line's}{1: arrows,}{7: they will truly}{6: attain}{5: liberation.}",
     "words": [
       {
@@ -6527,73 +6559,61 @@ window.SONG_LINES = {
     "grammarNote": "'raghubīra sara tīratha' is a metaphorical compound (rūpaka alaṅkāra: the arrow as tīrtha). 'tyāgi' is an absolutive participle with direct object 'sarīranhi' (plural). 'paihahi~' is 3rd person plural future."
   },
   "line-059": {
-    "source": "दो. पुर रखवारे देखि बहु कपि मन कीन्ह बिचार।",
+    "source": "पुर रखवारे देखि बहु कपि मन कीन्ह बिचार।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "पुर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "पुर",
+        "text": "रखवारे",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "रखवारे",
+        "text": "देखि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "देखि",
+        "text": "बहु",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "बहु",
+        "text": "कपि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "कपि",
+        "text": "मन",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मन",
+        "text": "कीन्ह",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "कीन्ह",
+        "text": "बिचार।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "बिचार।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. pura rakhavāre dekhi bahu kapi mana kīnha bicāra.",
-    "english": "{0:Dohā:}{3: Seeing}{4: the numerous}{2: guards}{1: of the city,}{5: the monkey}{7,8: reflected}{6: in his mind:}",
+    "roman": "pura rakhavāre dekhi bahu kapi mana kīnha bicāra.",
+    "english": "{2: Seeing}{3: the numerous}{1: guards}{0: of the city,}{4: the monkey}{6,7: reflected}{5: in his mind:}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (meter indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "pura",
         "gloss": "city; fortress",
@@ -6646,7 +6666,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' abbreviates 'dohā'. 'dekhi' is an absolutive participle. 'kapi mana kīnha bicāra' is an Awadhi transitive perfective clause with masculine singular agreement between 'kīnha' and 'bicāra'."
   },
   "line-060": {
-    "source": "अति लघु रूप धरौं निसि नगर करौं पइसार ॥ ३ ॥",
+    "source": "अति लघु रूप धरौं निसि नगर करौं पइसार",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -6698,7 +6718,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "ati laghu rūpa dharauṁ nisi nagara karauṁ paisāra || 3 ||",
+    "roman": "ati laghu rūpa dharauṁ nisi nagara karauṁ paisāra",
     "english": "{3:I shall assume }{0:an exceedingly }{1:minute }{2:form }{6:and make }{7:entry }{5:into the city }{4:at night.}",
     "words": [
       {
@@ -7765,73 +7785,61 @@ window.SONG_LINES = {
     "grammarNote": "Tāta is an affectionate vocative address. Punya bahūtā is the predicate with intensive ati. Nayana functions instrumentally ('with my eyes'). Rāma kara dūtā contains the Awadhi genitive postposition kara."
   },
   "line-069": {
-    "source": "दो. तात स्वर्ग अपबर्ग सुख धरिअ तुला एक अंग।",
+    "source": "तात स्वर्ग अपबर्ग सुख धरिअ तुला एक अंग।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "तात",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "तात",
+        "text": "स्वर्ग",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "स्वर्ग",
+        "text": "अपबर्ग",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "अपबर्ग",
+        "text": "सुख",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सुख",
+        "text": "धरिअ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "धरिअ",
+        "text": "तुला",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "तुला",
+        "text": "एक",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "एक",
+        "text": "अंग।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "अंग।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. tāta svarga apabarga sukha dharia tulā eka aṅga.",
-    "english": "{0:Doha. }{1:O dear one, }{4:if the bliss }{2:of heaven }{3:and liberation }{5:be placed }{7:on one }{8:pan }{6:of a balance,}",
+    "roman": "tāta svarga apabarga sukha dharia tulā eka aṅga.",
+    "english": "{0:O dear one, }{3:if the bliss }{1:of heaven }{2:and liberation }{4:be placed }{6:on one }{7:pan }{5:of a balance,}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (couplet meter marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "tāta",
         "gloss": "O dear one; O beloved",
@@ -7884,7 +7892,7 @@ window.SONG_LINES = {
     "grammarNote": "Do. is the metric header abbreviation for dohā. Tāta is vocative. Svarga apabarga sukha is a dvandva-tatpuruṣa compound ('the joys of heaven and liberation'). Dharia is an impersonal passive/optative verb form in Awadhi. Eka aṅga is locative in meaning ('on one side/limb')."
   },
   "line-070": {
-    "source": "तूल न ताहि सकल मिलि जो सुख लव सतसंग ॥ ४ ॥",
+    "source": "तूल न ताहि सकल मिलि जो सुख लव सतसंग",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -7938,11 +7946,12 @@ window.SONG_LINES = {
       {
         "text": "सतसंग",
         "wordIndices": [
-          8
+          8,
+          9
         ]
       }
     ],
-    "roman": "tūla na tāhi sakala mili jo sukha lava satasaṅga || 4 ||",
+    "roman": "tūla na tāhi sakala mili jo sukha lava satasaṅga",
     "english": "{3:all of them }{4:combined }{1:do not }{0:equal }{2:that }{6:bliss }{5:which }{7:comes from an instant }{8:of communion with the virtuous.}",
     "words": [
       {
@@ -9021,67 +9030,55 @@ window.SONG_LINES = {
     "grammarNote": "'dīkha' functions transitively with elided subject Hanumān ('he saw a pleasing house') or intransitively with 'bhavana' as subject. 'banāvā' is a passive perfective participle ('[was] built')."
   },
   "line-079": {
-    "source": "दो. रामायुध अंकित गृह सोभा बरनि न जाइ।",
+    "source": "रामायुध अंकित गृह सोभा बरनि न जाइ।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "रामायुध",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "रामायुध",
+        "text": "अंकित",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "अंकित",
+        "text": "गृह",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "गृह",
+        "text": "सोभा",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सोभा",
+        "text": "बरनि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "बरनि",
+        "text": "न",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "न",
+        "text": "जाइ।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "जाइ।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. rāmāyudha aṁkita gṛha sobhā barani na jāi.",
-    "english": "{0:Doha. }{3:The house }{2:was marked }{1:with Rama's weapons; }{4:its splendor }{6,7:cannot }{5:be described.}",
+    "roman": "rāmāyudha aṁkita gṛha sobhā barani na jāi.",
+    "english": "{2:The house }{1:was marked }{0:with Rama's weapons; }{3:its splendor }{5,6:cannot }{4:be described.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet; dohā [meter marker]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "rāmāyudha",
         "gloss": "with Rāma's weapons [bow and arrow]",
@@ -9128,7 +9125,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' abbreviates 'dohā' (couplet marker). 'rāmāyudha aṁkita' is a compound modifier ('marked with the weapons of Rāma') qualifying 'gṛha'. 'barani na jāi' is a passive potential construction with verbal noun 'barani' and auxiliary 'jāi'."
   },
   "line-080": {
-    "source": "नव तुलसिका बृंद तहँ देखि हरषि कपिराइ ॥ ५ ॥",
+    "source": "नव तुलसिका बृंद तहँ देखि हरषि कपिराइ",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -9174,7 +9171,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "nava tulasikā bṛṁda taham̐ dekhi haraṣi kapirāi ॥ 5 ॥",
+    "roman": "nava tulasikā bṛṁda taham̐ dekhi haraṣi kapirāi",
     "english": "{4:Seeing }{2:a cluster }{0:of fresh }{1:tulsi plants }{3:there, }{6:the king of monkeys }{5:rejoiced.}",
     "words": [
       {
@@ -10259,73 +10256,61 @@ window.SONG_LINES = {
     "grammarNote": "‘dīna anurāgī’ is a tatpuruṣa compound qualifying ‘rāmu’ or in apposition to ‘tumha’. ‘āyahu’ is a 2nd person preterite verb. ‘karana’ is an infinitive of purpose."
   },
   "line-089": {
-    "source": "दो. तब हनुमंत कही सब राम कथा निज नाम।",
+    "source": "तब हनुमंत कही सब राम कथा निज नाम।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "तब",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "तब",
+        "text": "हनुमंत",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "हनुमंत",
+        "text": "कही",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कही",
+        "text": "सब",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सब",
+        "text": "राम",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "राम",
+        "text": "कथा",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कथा",
+        "text": "निज",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "निज",
+        "text": "नाम।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "नाम।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. taba hanumaṁta kahī saba rāma kathā nija nāma.",
-    "english": "{0:Dohā. }{1:Then }{2:Hanuman }{3:told }{4:the whole }{5,6:saga of Rama }{7:and his own }{8:name.}",
+    "roman": "taba hanumaṁta kahī saba rāma kathā nija nāma.",
+    "english": "{0:Then }{1:Hanuman }{2:told }{3:the whole }{4,5:saga of Rama }{6:and his own }{7:name.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (couplet meter header)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "taba",
         "gloss": "then; at that point",
@@ -10378,7 +10363,7 @@ window.SONG_LINES = {
     "grammarNote": "‘do.’ abbreviates the poetic meter dohā. ‘kahī’ is the feminine singular past tense verb agreeing with primary feminine noun ‘kathā’ in this compound object phrase."
   },
   "line-090": {
-    "source": "सुनत जुगल तन पुलक मन मगन सुमिरि गुन ग्राम ॥ ६ ॥",
+    "source": "सुनत जुगल तन पुलक मन मगन सुमिरि गुन ग्राम",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -10436,7 +10421,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sunata jugala tana pulaka mana magana sumiri guna grāma ॥ 6 ॥",
+    "roman": "sunata jugala tana pulaka mana magana sumiri guna grāma",
     "english": "{0:Upon hearing, }{2:the bodies }{1:of both }{3:thrilled with bristling hair }{4:and their minds }{5:became immersed, }{6:remembering }{8:the multitude }{7:of guṇas.}",
     "words": [
       {
@@ -11545,73 +11530,61 @@ window.SONG_LINES = {
     "grammarNote": "Relative-correlative conditional construction: jo ... tāhi. lei is 3rd singular present/subjunctive. milai is 3rd singular present/subjunctive with dative experiencer tāhi. tehi dina is an oblique temporal modifier."
   },
   "line-099": {
-    "source": "दो. अस मैं अधम सखा सुनु मोहू पर रघुबीर।",
+    "source": "अस मैं अधम सखा सुनु मोहू पर रघुबीर।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "अस",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "अस",
+        "text": "मैं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मैं",
+        "text": "अधम",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "अधम",
+        "text": "सखा",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सखा",
+        "text": "सुनु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सुनु",
+        "text": "मोहू",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मोहू",
+        "text": "पर",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "पर",
+        "text": "रघुबीर।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "रघुबीर।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. asa maiṁ adhama sakhā sunu mohū para raghubīra.",
-    "english": "{0:Dohā. }{1:So }{3:wretched am }{2:I; }{4:O friend, }{5:listen, }{6,7:even upon me, }{8:the hero of Raghu’s line...}",
+    "roman": "asa maiṁ adhama sakhā sunu mohū para raghubīra.",
+    "english": "{0:So }{2:wretched am }{1:I; }{3:O friend, }{4:listen, }{5,6:even upon me, }{7:the hero of Raghu’s line...}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet marker (dohā)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "asa",
         "gloss": "such; like this",
@@ -11664,7 +11637,7 @@ window.SONG_LINES = {
     "grammarNote": "do. denotes the meter dohā. sunu is 2nd singular imperative. mohū is the emphatic form of 1st person pronoun mohi (mohi + hū = 'even on me'). The hemistich is an enjambed clause completed in the following line."
   },
   "line-100": {
-    "source": "कीन्ही कृपा सुमिरि गुन भरे बिलोचन नीर ॥ ७ ॥",
+    "source": "कीन्ही कृपा सुमिरि गुन भरे बिलोचन नीर",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -11706,11 +11679,12 @@ window.SONG_LINES = {
       {
         "text": "नीर",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "kīnhī kṛpā sumiri guna bhare bilocana nīra. 7.",
+    "roman": "kīnhī kṛpā sumiri guna bhare bilocana nīra.",
     "english": "{2:Remembering }{1:the grace }{0:shown }and his {3:guṇa} s, {5:his eyes }{4:filled }{6:with tears.}",
     "words": [
       {
@@ -12789,79 +12763,67 @@ window.SONG_LINES = {
     "grammarNote": "Descriptive adjectival compounds 'kṛsa tana' and 'sīsa jaṭā eka benī' modifying Sītā; 3sg fem. present verb 'japati'; locative 'hṛdayam̐'; 'raghupati' rendered as 'guardian of Raghu's line' per -pati rule."
   },
   "line-109": {
-    "source": "दो. निज पद नयन दिएँ मन राम पद कमल लीन।",
+    "source": "निज पद नयन दिएँ मन राम पद कमल लीन।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "निज",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "निज",
+        "text": "पद",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "पद",
+        "text": "नयन",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "नयन",
+        "text": "दिएँ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "दिएँ",
+        "text": "मन",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "मन",
+        "text": "राम",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "राम",
+        "text": "पद",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "पद",
+        "text": "कमल",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "कमल",
+        "text": "लीन।",
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "लीन।",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "do. nija pada nayana diem̐ mana rāma pada kamala līna.",
-    "english": "{0:Dohā. }{3:With her eyes }{4:fixed }{1:on her own }{2:feet, }{5:her mind }{9:was absorbed }{8:in the lotus }{7:feet }{6:of Rāma.}",
+    "roman": "nija pada nayana diem̐ mana rāma pada kamala līna.",
+    "english": "{2:With her eyes }{3:fixed }{0:on her own }{1:feet, }{4:her mind }{8:was absorbed }{7:in the lotus }{6:feet }{5:of Rāma.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet marker; dohā abbreviation",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "nija",
         "gloss": "her own",
@@ -12920,7 +12882,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' marks the meter; absolute participial phrase 'nayana diem̐'; 'pada kamala' is a karmadhāraya compound (lotus-like feet); predicate participle 'līna' completes 'mana'."
   },
   "line-110": {
-    "source": "परम दुखी भा पवनसुत देखि जानकी दीन ॥ ८ ॥",
+    "source": "परम दुखी भा पवनसुत देखि जानकी दीन",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -12962,11 +12924,12 @@ window.SONG_LINES = {
       {
         "text": "दीन",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "parama dukhī bhā pavanasuta dekhi jānakī dīna. 8.",
+    "roman": "parama dukhī bhā pavanasuta dekhi jānakī dīna.",
     "english": "{3:The son of the wind }{2:became }{0:supremely }{1:grieved }{4:seeing }{5:Jānakī }{6:distressed.}",
     "words": [
       {
@@ -14176,67 +14139,55 @@ window.SONG_LINES = {
     "grammarNote": "saṭha, adhama, and nilajja are masculine vocative singulars. hari is an absolutive forming a compound/serial past construction with ānehi (2nd person singular past transitive). sūne functions as an oblique locative ('in the solitude'). lāja nahiṁ tohī is a dative-experiencer construction ('is there no shame to you?')."
   },
   "line-120": {
-    "source": "दो. आपुहि सुनि खद्योत सम रामहि भानु समान।",
+    "source": "आपुहि सुनि खद्योत सम रामहि भानु समान।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "आपुहि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "आपुहि",
+        "text": "सुनि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सुनि",
+        "text": "खद्योत",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "खद्योत",
+        "text": "सम",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सम",
+        "text": "रामहि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "रामहि",
+        "text": "भानु",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "भानु",
+        "text": "समान।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "समान।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. āpuhi suni khadyota sama rāmahi bhānu samāna.",
-    "english": "{0:Dohā. }{2:Hearing }{1:himself }{3,4:like a firefly }{5:and Rāma }{6,7:equal to the sun,}",
+    "roman": "āpuhi suni khadyota sama rāmahi bhānu samāna.",
+    "english": "{1:Hearing }{0:himself }{2,3:like a firefly }{4:and Rāma }{5,6:equal to the sun,}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (couplet meter indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "āpuhi",
         "gloss": "oneself; himself",
@@ -14283,7 +14234,7 @@ window.SONG_LINES = {
     "grammarNote": "do. marks the meter. āpuhi and rāmahi take the accusative/objective marker -hi. samāna. carries closing punctuation."
   },
   "line-121": {
-    "source": "परुष बचन सुनि काढ़ि असि बोला अति खिसिआन ॥ ९ ॥",
+    "source": "परुष बचन सुनि काढ़ि असि बोला अति खिसिआन",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -14331,11 +14282,12 @@ window.SONG_LINES = {
       {
         "text": "खिसिआन",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "paruṣa bacana suni kāṛhi asi bolā ati khisiāna || 9 ||",
+    "roman": "paruṣa bacana suni kāṛhi asi bolā ati khisiāna",
     "english": "{2:hearing }{0:harsh }{1:words, }{3:drawing }{4:his sword, }{5:he spoke, }{6:exceedingly }{7,8:enraged.}",
     "words": [
       {
@@ -15623,61 +15575,49 @@ window.SONG_LINES = {
     "grammarNote": "Conditional construction with unexpressed correlative 'jau' before 'kahā na mānā', answered by 'tau'. 'mārabi' is an Old Awadhi 1st-person singular future form. 'kāṛhi' is an absolutive conjunctive participle."
   },
   "line-131": {
-    "source": "दो. भवन गयउ दसकंधर इहाँ पिसाचिनि बृंद।",
+    "source": "भवन गयउ दसकंधर इहाँ पिसाचिनि बृंद।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "भवन",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "भवन",
+        "text": "गयउ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "गयउ",
+        "text": "दसकंधर",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "दसकंधर",
+        "text": "इहाँ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "इहाँ",
+        "text": "पिसाचिनि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "पिसाचिनि",
+        "text": "बृंद।",
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "बृंद।",
-        "wordIndices": [
-          6
-        ]
       }
     ],
-    "roman": "do. bhavana gayau dasakaṁdhara ihām̐ pisācini bṛnda |",
-    "english": "{0:Dohā. }{3:The Ten-necked one }{2:departed }{1:for his palace; }{4:here, }{6:the host }{5:of demonesses,}",
+    "roman": "bhavana gayau dasakaṁdhara ihām̐ pisācini bṛnda |",
+    "english": "{2:The Ten-necked one }{1:departed }{0:for his palace; }{3:here, }{5:the host }{4:of demonesses,}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "doha marker; couplet abbreviation",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "bhavana",
         "gloss": "palace; mansion",
@@ -15718,7 +15658,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' marks the meter change to dohā. 'dasakaṁdhara' is a bahuvrīhi compound. 'pisācini bṛnda' is a collective noun phrase serving as the subject for line 132."
   },
   "line-132": {
-    "source": "सीतहि त्रास देखावहि धरहिं रूप बहु मंद ॥ १० ॥",
+    "source": "सीतहि त्रास देखावहि धरहिं रूप बहु मंद",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -15760,11 +15700,12 @@ window.SONG_LINES = {
       {
         "text": "मंद",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "sītahi trāsa dekhāvahi dharahiṁ rūpa bahu maṁda || 10 ||",
+    "roman": "sītahi trāsa dekhāvahi dharahiṁ rūpa bahu maṁda",
     "english": "{2:displayed }{1:terror }{0:to Sītā }{3:and assumed }{5:many }{6:vile }{4,7:forms.}",
     "words": [
       {
@@ -16795,79 +16736,67 @@ window.SONG_LINES = {
     "grammarNote": "`tāsu` is genitive singular pronoun; `suni` is an absolutive participle; `te saba` is the 3rd person feminine plural subject agreeing with feminine past plural verbs `ḍarīṁ` and `parīṁ` (marked by anusvāra); `carananhi` is oblique plural in locative relation."
   },
   "line-141": {
-    "source": "दो. जहँ तहँ गईं सकल तब सीता कर मन सोच।",
+    "source": "जहँ तहँ गईं सकल तब सीता कर मन सोच।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "जहँ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जहँ",
+        "text": "तहँ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "तहँ",
+        "text": "गईं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "गईं",
+        "text": "सकल",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सकल",
+        "text": "तब",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "तब",
+        "text": "सीता",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "सीता",
+        "text": "कर",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "कर",
+        "text": "मन",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "मन",
+        "text": "सोच।",
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "सोच।",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "do. jaham̐ taham̐ gaīṁ sakala taba sītā kara mana soca |",
-    "english": "{0,5:Then }{4:all }{3:dispersed }{1,2:here and there; }{9:anxious grief arose }{7:in }{6:Sītā's }{8:mind.}",
+    "roman": "jaham̐ taham̐ gaīṁ sakala taba sītā kara mana soca |",
+    "english": "{4:Then }{3:all }{2:dispersed }{0,1:here and there; }{8:anxious grief arose }{6:in }{5:Sītā's }{7:mind.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (meter indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "jaham̐",
         "gloss": "wherever",
@@ -16926,7 +16855,7 @@ window.SONG_LINES = {
     "grammarNote": "`do.` indicates the start of a couplet; `jaham̐ taham̐` is a correlative spatial phrase; `gaīṁ` is 3rd plural feminine past; `kara` functions as an Avadhi genitive postposition connecting `sītā` to `mana`."
   },
   "line-142": {
-    "source": "मास दिवस बीतें मोहि मारिहि निसिचर पोच ॥ ११ ॥",
+    "source": "मास दिवस बीतें मोहि मारिहि निसिचर पोच",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -16968,7 +16897,8 @@ window.SONG_LINES = {
       {
         "text": "पोच",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
@@ -18635,73 +18565,61 @@ window.SONG_LINES = {
     "grammarNote": "dekhi is an absolutive participle. kapihi takes the dative/experiencer suffix -hi. bītā is 3sg masculine perfective agreeing with chana."
   },
   "line-155": {
-    "source": "सो. कपि करि हृदयँ बिचार दीन्हि मुद्रिका डारी तब।",
+    "source": "कपि करि हृदयँ बिचार दीन्हि मुद्रिका डारी तब।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "सो.",
+        "text": "कपि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कपि",
+        "text": "करि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "करि",
+        "text": "हृदयँ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "हृदयँ",
+        "text": "बिचार",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "बिचार",
+        "text": "दीन्हि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "दीन्हि",
+        "text": "मुद्रिका",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मुद्रिका",
+        "text": "डारी",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "डारी",
+        "text": "तब।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "तब।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "so. kapi kari hṛdayam̐ bicāra dīnhi mudrikā ḍārī taba.",
-    "english": "{0,8:Then }{1:the monkey, }{2,4:having deliberated }{3:in his heart, }{5,7:dropped down }{6:the signet ring.}",
+    "roman": "kapi kari hṛdayam̐ bicāra dīnhi mudrikā ḍārī taba.",
+    "english": "{7:Then }{0:the monkey, }{1,3:having deliberated }{2:in his heart, }{4,6:dropped down }{5:the signet ring.}",
     "words": [
-      {
-        "roman": "so.",
-        "gloss": "[sorathā meter]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kapi",
         "gloss": "the monkey (Hanuman)",
@@ -18754,7 +18672,7 @@ window.SONG_LINES = {
     "grammarNote": "so. is the textual meter tag for sorathā. ḍārī dīnhi is a split compound verb (ḍāranā + denā) with feminine agreement matching mudrikā."
   },
   "line-156": {
-    "source": "जनु असोक अंगार दीन्हि हरषि उठि कर गहेउ ॥ १२ ॥",
+    "source": "जनु असोक अंगार दीन्हि हरषि उठि कर गहेउ",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -18802,7 +18720,8 @@ window.SONG_LINES = {
       {
         "text": "गहेउ",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
@@ -20248,73 +20167,61 @@ window.SONG_LINES = {
     "grammarNote": "'bānarahi' is an inflected genitive/oblique form with 'saṅga'. 'kahu' is 2nd person imperative. 'kahi' is 3rd person past transitive. 'bhaī' is feminine past agreeing with 'saṅgati'."
   },
   "line-168": {
-    "source": "दो. कपि के बचन सप्रेम सुनि उपजा मन बिस्वास ॥",
+    "source": "कपि के बचन सप्रेम सुनि उपजा मन बिस्वास ॥",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "कपि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कपि",
+        "text": "के",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "के",
+        "text": "बचन",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "बचन",
+        "text": "सप्रेम",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सप्रेम",
+        "text": "सुनि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सुनि",
+        "text": "उपजा",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "उपजा",
+        "text": "मन",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "मन",
+        "text": "बिस्वास",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "बिस्वास",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō. kapi kē bacana saprēma suni upajā mana bisvāsa.",
-    "english": "{0:Dohā: }{5:Hearing }{1,2:the monkey’s }{4:loving }{3:words, }{8:trust }{6:arose }{7:in her mind.}",
+    "roman": "kapi kē bacana saprēma suni upajā mana bisvāsa.",
+    "english": "{4:Hearing }{0,1:the monkey’s }{3:loving }{2:words, }{7:trust }{5:arose }{6:in her mind.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "couplet indicator (dohā)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kapi",
         "gloss": "of the monkey",
@@ -20367,7 +20274,7 @@ window.SONG_LINES = {
     "grammarNote": "'dō.' is the standard editorial abbreviation for the meter 'dohā'. 'suni' is an absolutive participle (having heard). 'upajā' is past intransitive 3rd person masculine singular agreeing with 'bisvāsa'."
   },
   "line-169": {
-    "source": "जाना मन क्रम बचन यह कृपासिंधु कर दास ॥ १३ ॥",
+    "source": "जाना मन क्रम बचन यह कृपासिंधु कर दास",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -20415,11 +20322,12 @@ window.SONG_LINES = {
       {
         "text": "दास",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "jānā mana krama bacana yaha kṛpāsindhu kara dāsa. 13.",
+    "roman": "jānā mana krama bacana yaha kṛpāsindhu kara dāsa.",
     "english": "{0:She recognized }{1:in thought, }{2:deed, }{3:and word }{4:that this one }{7:is a servant }{5,6:of the Ocean of Grace.}",
     "words": [
       {
@@ -21742,73 +21650,61 @@ window.SONG_LINES = {
     "grammarNote": "jani is the standard Awadhi prohibitive particle preceding the imperative mānahu; jiyaṁ is a locative singular ('in the heart'); tē is an ablative/comparative postposition ('than you')."
   },
   "line-180": {
-    "source": "दो. रघुपति कर संदेसु अब सुनु जननी धरि धीर।",
+    "source": "रघुपति कर संदेसु अब सुनु जननी धरि धीर।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "रघुपति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "रघुपति",
+        "text": "कर",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कर",
+        "text": "संदेसु",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "संदेसु",
+        "text": "अब",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "अब",
+        "text": "सुनु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सुनु",
+        "text": "जननी",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "जननी",
+        "text": "धरि",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "धरि",
+        "text": "धीर।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "धीर।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō. raghupati kara sandēsu aba sunu jananī dhari dhīra.",
-    "english": "{0:Doha. }{6:O Mother, }{7:holding }{8:fortitude, }{4:now }{5:hear }{3:the message }{2:of }{1:the guardian of Raghu's line.}",
+    "roman": "raghupati kara sandēsu aba sunu jananī dhari dhīra.",
+    "english": "{5:O Mother, }{6:holding }{7:fortitude, }{3:now }{4:hear }{2:the message }{1:of }{0:the guardian of Raghu's line.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā (couplet indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "raghupati",
         "gloss": "guardian of Raghu's line",
@@ -21861,7 +21757,7 @@ window.SONG_LINES = {
     "grammarNote": "dō. abbreviates the Doha meter. raghupati kara is a genitive phrase modifying sandēsu. sunu is 2nd person singular imperative from sunanā. dhari is an absolute/conjunctive participle with dhīra as its direct object."
   },
   "line-181": {
-    "source": "अस कहि कपि गद गद भयउ भरे बिलोचन नीर ॥ १४ ॥",
+    "source": "अस कहि कपि गद गद भयउ भरे बिलोचन नीर",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -21915,11 +21811,12 @@ window.SONG_LINES = {
       {
         "text": "नीर",
         "wordIndices": [
-          8
+          8,
+          9
         ]
       }
     ],
-    "roman": "asa kahi kapi gada gada bhayau bharē bilōcana nīra. 14.",
+    "roman": "asa kahi kapi gada gada bhayau bharē bilōcana nīra.",
     "english": "{1:Having }{1:spoken }{0:thus, }{2:the monkey }{5:became }{3,4:choked with emotion, }{7:and his eyes }{6:filled }{8:with tears.}",
     "words": [
       {
@@ -23344,67 +23241,55 @@ window.SONG_LINES = {
     "grammarNote": "Polite imperative endings in '-ahu' ('ānahu', 'tajahu'); 'suni' is a conjunctive participle (absolutive); 'raghupati' represents the protector and leader of the Raghu lineage."
   },
   "line-192": {
-    "source": "दो. निसिचर निकर पतंग सम रघुपति बान कृसानु।",
+    "source": "निसिचर निकर पतंग सम रघुपति बान कृसानु।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "निसिचर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "निसिचर",
+        "text": "निकर",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "निकर",
+        "text": "पतंग",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "पतंग",
+        "text": "सम",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सम",
+        "text": "रघुपति",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "रघुपति",
+        "text": "बान",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "बान",
+        "text": "कृसानु।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "कृसानु।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "dō. nisicara nikara pataṅga sama raghupati bāna kṛsānu.",
-    "english": "{0:Doha. }{2:The swarms }{1:of night-wanderers }{4:are like }{3:moths, }{6:and the arrows }{5:of the guardian of Raghu's line }{7:are fire.}",
+    "roman": "nisicara nikara pataṅga sama raghupati bāna kṛsānu.",
+    "english": "{1:The swarms }{0:of night-wanderers }{3:are like }{2:moths, }{5:and the arrows }{4:of the guardian of Raghu's line }{6:are fire.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "couplet [meter indicator]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "nisicara",
         "gloss": "of night-wanderers; demons",
@@ -23451,7 +23336,7 @@ window.SONG_LINES = {
     "grammarNote": "A dual nominal metaphor without overt copula: [nisicara nikara] [pataṅga sama], [raghupati bāna] [kṛsānu]."
   },
   "line-193": {
-    "source": "जननी हृदयँ धीर धरु जरे निसाचर जानु ॥ १५ ॥",
+    "source": "जननी हृदयँ धीर धरु जरे निसाचर जानु",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -23493,11 +23378,12 @@ window.SONG_LINES = {
       {
         "text": "जानु",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "jananī hṛdayam̐ dhīra dharu jare nisācara jānu. 15.",
+    "roman": "jananī hṛdayam̐ dhīra dharu jare nisācara jānu.",
     "english": "{0:O Mother, }{3:hold }{2:fortitude }{1:in your heart; }{6:consider }{5:the night-wanderers }{4:already burnt.}",
     "words": [
       {
@@ -24659,67 +24545,55 @@ window.SONG_LINES = {
     "grammarNote": "bhayaū and layaū are Avadhi masculine singular past tense forms. pavanasuta is a tatpuruṣa compound: pavana (wind) + suta (son)."
   },
   "line-203": {
-    "source": "दो. सुनु माता साखामृग नहिं बल बुद्धि बिसाल।",
+    "source": "सुनु माता साखामृग नहिं बल बुद्धि बिसाल।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "सुनु",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सुनु",
+        "text": "माता",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "माता",
+        "text": "साखामृग",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "साखामृग",
+        "text": "नहिं",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "नहिं",
+        "text": "बल",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "बल",
+        "text": "बुद्धि",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "बुद्धि",
+        "text": "बिसाल।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "बिसाल।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. sunu mātā sākhāmṛga nahiṁ bala buddhi bisāla.",
-    "english": "{0:Dohā: }{1:“Listen, }{2:O Mother: }{3:monkeys }{4:have no }{7:vast }{5:strength }or {6:buddhi.}",
+    "roman": "sunu mātā sākhāmṛga nahiṁ bala buddhi bisāla.",
+    "english": "{0:“Listen, }{1:O Mother: }{2:monkeys }{3:have no }{6:vast }{4:strength }or {5:buddhi.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā metre indicator",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "sunu",
         "gloss": "listen",
@@ -24766,7 +24640,7 @@ window.SONG_LINES = {
     "grammarNote": "sunu is an imperative singular. sākhāmṛga is a saptamī tatpuruṣa compound (śākhā + mṛga)."
   },
   "line-204": {
-    "source": "प्रभु प्रताप तें गरुड़हि खाइ परम लघु ब्याल ॥ १६ ॥",
+    "source": "प्रभु प्रताप तें गरुड़हि खाइ परम लघु ब्याल",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -24814,11 +24688,12 @@ window.SONG_LINES = {
       {
         "text": "ब्याल",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "prabhu pratāpa teṁ garuṛahi khāi parama laghu byāla. 16.",
+    "roman": "prabhu pratāpa teṁ garuṛahi khāi parama laghu byāla.",
     "english": "{2:Through }{0:the Lord’s }{1:majesty, }{5:an extremely }{6:tiny }{7:serpent }{4:devours }{3:Garuḍa.}",
     "words": [
       {
@@ -26034,73 +25909,61 @@ window.SONG_LINES = {
     "grammarNote": "'tinha kara' is genitive plural governing 'bhaya'. 'mānahu' is 2pl present/subjunctive in a conditional protasis introduced by 'jauṁ'."
   },
   "line-214": {
-    "source": "दो. देखि बुद्धि बल निपुन कपि कहेउ जानकीं जाहु।",
+    "source": "देखि बुद्धि बल निपुन कपि कहेउ जानकीं जाहु।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "देखि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "देखि",
+        "text": "बुद्धि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बुद्धि",
+        "text": "बल",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "बल",
+        "text": "निपुन",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "निपुन",
+        "text": "कपि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "कपि",
+        "text": "कहेउ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कहेउ",
+        "text": "जानकीं",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "जानकीं",
+        "text": "जाहु।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "जाहु।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. dekhi buddhi bala nipuna kapi kaheu jānakīṁ jāhu.",
-    "english": "{0:Dohā: }{1:Seeing }{5:the monkey }{4:skilled in }{2:buddhi }{3:and strength, }{7:Jānakī }{6:said, }{8:“Go,}",
+    "roman": "dekhi buddhi bala nipuna kapi kaheu jānakīṁ jāhu.",
+    "english": "{0:Seeing }{4:the monkey }{3:skilled in }{1:buddhi }{2:and strength, }{6:Jānakī }{5:said, }{7:“Go,}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "dekhi",
         "gloss": "perceiving",
@@ -26153,7 +26016,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' abbreviates 'dohā'. 'jānakīṁ' features the Awadhi instrumental/ergative marker '-ṁ' governing the transitive past verb 'kaheu'. 'jāhu' is 2pl imperative."
   },
   "line-215": {
-    "source": "रघुपति चरन हृदयँ धरि तात मधुर फल खाहु ॥ १७ ॥",
+    "source": "रघुपति चरन हृदयँ धरि तात मधुर फल खाहु",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -26201,11 +26064,12 @@ window.SONG_LINES = {
       {
         "text": "खाहु",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "raghupati carana hṛdaya~ dhari tāta madhura phala khāhu. 17.",
+    "roman": "raghupati carana hṛdaya~ dhari tāta madhura phala khāhu.",
     "english": "{3:holding }{1:the feet of }{0:the guardian of Raghu’s line }{2:in your heart, }{4:dear child, }{7:eat }{5:the sweet }{6:fruits.”}",
     "words": [
       {
@@ -27242,73 +27106,61 @@ window.SONG_LINES = {
     "grammarNote": "āvata is an imperfect/present active participle. gahi and nipāti are absolutives functioning sequentially before the finite verbs tarjā and garjā. mahādhuni is used adverbially (mahā + dhvani)."
   },
   "line-224": {
-    "source": "दो. कछु मारेसि कछु मर्देसि कछु मिलएसि धरि धूरि।",
+    "source": "कछु मारेसि कछु मर्देसि कछु मिलएसि धरि धूरि।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "कछु",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कछु",
+        "text": "मारेसि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मारेसि",
+        "text": "कछु",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कछु",
+        "text": "मर्देसि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "मर्देसि",
+        "text": "कछु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "कछु",
+        "text": "मिलएसि",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मिलएसि",
+        "text": "धरि",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "धरि",
+        "text": "धूरि।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "धूरि।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. kachu māresi kachu mardesi kachu milaesi dhari dhūri.",
-    "english": "{0:Dohā. }{1:Some }{2:he killed, }{3:some }{4:he crushed, }{5:and some }{7:he seized }{6:and ground }{8:into the dust.}",
+    "roman": "kachu māresi kachu mardesi kachu milaesi dhari dhūri.",
+    "english": "{0:Some }{1:he killed, }{2:some }{3:he crushed, }{4:and some }{6:he seized }{5:and ground }{7:into the dust.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (couplet meter marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kachu",
         "gloss": "some",
@@ -27361,7 +27213,7 @@ window.SONG_LINES = {
     "grammarNote": "māresi, mardesi, milaesi are Awadhi past tense 3rd person singular forms with the pronominal/aspectual -si suffix. dhari is an absolutive participle."
   },
   "line-225": {
-    "source": "कछु पुनि जाइ पुकारे प्रभु मर्कट बल भूरि ॥ १८ ॥",
+    "source": "कछु पुनि जाइ पुकारे प्रभु मर्कट बल भूरि",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -27409,11 +27261,12 @@ window.SONG_LINES = {
       {
         "text": "भूरि",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "kachu puni jāi pukāre prabhu markaṭa bala bhūri. 18.",
+    "roman": "kachu puni jāi pukāre prabhu markaṭa bala bhūri.",
     "english": "{1:Then }{0:some }{2:went }{3:and cried out, }{4:“O master, }{5:the monkey’s }{6:strength }{7:is immense!”}",
     "words": [
       {
@@ -28581,73 +28434,61 @@ window.SONG_LINES = {
     "grammarNote": "kīnhisi carries the Awadhi 3rd person singular past affix -si. jīti na jāi is a passive potential construction with passive auxiliary jāi."
   },
   "line-235": {
-    "source": "दो. ब्रह्म अस्त्र तेहिं साँधा कपि मन कीन्ह बिचार।",
+    "source": "ब्रह्म अस्त्र तेहिं साँधा कपि मन कीन्ह बिचार।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "ब्रह्म",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ब्रह्म",
+        "text": "अस्त्र",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "अस्त्र",
+        "text": "तेहिं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "तेहिं",
+        "text": "साँधा",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "साँधा",
+        "text": "कपि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "कपि",
+        "text": "मन",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मन",
+        "text": "कीन्ह",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "कीन्ह",
+        "text": "बिचार।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "बिचार।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. brahma astra tehiṃ sā~dhā kapi mana kīnha bicāra.",
-    "english": "{0:Dohā. }{3:He }{4:aimed }{2:the weapon }{1:of Brahmā; }{5:the monkey }{7,8:reflected }{6:in his mind:}",
+    "roman": "brahma astra tehiṃ sā~dhā kapi mana kīnha bicāra.",
+    "english": "{2:He }{3:aimed }{1:the weapon }{0:of Brahmā; }{4:the monkey }{6,7:reflected }{5:in his mind:}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā [couplet marker].",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "brahma",
         "gloss": "of Brahmā",
@@ -28700,7 +28541,7 @@ window.SONG_LINES = {
     "grammarNote": "brahma astra is an unjoined tatpuruṣa compound. tehiṃ is the instrumental/ergative 3rd person pronoun. kīnha bicāra forms a light-verb compound predicate."
   },
   "line-236": {
-    "source": "जौं न ब्रह्मसर मानउँ महिमा मिटइ अपार ॥ १९ ॥",
+    "source": "जौं न ब्रह्मसर मानउँ महिमा मिटइ अपार",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -28742,11 +28583,12 @@ window.SONG_LINES = {
       {
         "text": "अपार",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "jauṃ na brahmasara mānau~ mahimā miṭai apāra. 19.",
+    "roman": "jauṃ na brahmasara mānau~ mahimā miṭai apāra.",
     "english": "{0:“If }{1:I do not }{3:honor }{2:Brahmā’s shaft, }{6:its boundless }{4:glory }{5:will be wiped out.”}",
     "words": [
       {
@@ -29849,61 +29691,49 @@ window.SONG_LINES = {
     "grammarNote": "'Ahigana' is a compound of 'ahi' (serpent) + 'gana' (multitude/host). 'Mahu~' is the locative postposition 'in/among'."
   },
   "line-245": {
-    "source": "दो. कपिहि बिलोकि दसानन बिहसा कहि दुर्बाद।",
+    "source": "कपिहि बिलोकि दसानन बिहसा कहि दुर्बाद।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "कपिहि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कपिहि",
+        "text": "बिलोकि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बिलोकि",
+        "text": "दसानन",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "दसानन",
+        "text": "बिहसा",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "बिहसा",
+        "text": "कहि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "कहि",
+        "text": "दुर्बाद।",
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "दुर्बाद।",
-        "wordIndices": [
-          6
-        ]
       }
     ],
-    "roman": "do. kapihi biloki dasānana bihasā kahi durbāda.",
-    "english": "{0,2:Looking }{1:at the monkey, }{3:the Ten-headed one }{4:laughed mockingly, }{5:speaking }{6:insulting words:}",
+    "roman": "kapihi biloki dasānana bihasā kahi durbāda.",
+    "english": "{1:Looking }{0:at the monkey, }{2:the Ten-headed one }{3:laughed mockingly, }{4:speaking }{5:insulting words:}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā (couplet marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kapihi",
         "gloss": "at the monkey",
@@ -29944,7 +29774,7 @@ window.SONG_LINES = {
     "grammarNote": "'Kapihi' is marked with the accusative/dative suffix '-hi'. 'Durbāda' is a Sanskrit tatpuruṣa/karmadhāraya compound ('dur-' bad + 'vāda' speech)."
   },
   "line-246": {
-    "source": "सुत बध सुरति कीन्हि पुनि उपजा हृदयँ बिषाद ॥ २० ॥",
+    "source": "सुत बध सुरति कीन्हि पुनि उपजा हृदयँ बिषाद",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -29992,11 +29822,12 @@ window.SONG_LINES = {
       {
         "text": "बिषाद",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "suta badha surati kīnhi puni upajā hṛdaya~ biṣāda. 20.",
+    "roman": "suta badha surati kīnhi puni upajā hṛdaya~ biṣāda.",
     "english": "{4:Then }{2,3:he recalled }{1:the slaying of }{0:his son, }{7:and grief }{5:arose }{6,8:in his heart.}",
     "words": [
       {
@@ -31236,67 +31067,55 @@ window.SONG_LINES = {
     "grammarNote": "badhe is 3pl/passive perfect agreeing with the compound masculine plural direct object. balasālī stands for Sanskrit bala-śālin (possessor of strength)."
   },
   "line-256": {
-    "source": "दो. जाके बल लवलेस तें जितेहु चराचर झारि।",
+    "source": "जाके बल लवलेस तें जितेहु चराचर झारि।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "जाके",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जाके",
+        "text": "बल",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बल",
+        "text": "लवलेस",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "लवलेस",
+        "text": "तें",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "तें",
+        "text": "जितेहु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "जितेहु",
+        "text": "चराचर",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "चराचर",
+        "text": "झारि।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "झारि।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. jāke bala lavalesa teṃ jitehu carācara jhāri.",
-    "english": "{0,4:By }{3:a mere fraction of }{1:whose }{2:power }{5:you conquered }{6:the moving and unmoving creation }{7:completely,}",
+    "roman": "jāke bala lavalesa teṃ jitehu carācara jhāri.",
+    "english": "{3:By }{2:a mere fraction of }{0:whose }{1:power }{4:you conquered }{5:the moving and unmoving creation }{6:completely,}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "doha (couplet marker).",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "jāke",
         "gloss": "whose",
@@ -31343,7 +31162,7 @@ window.SONG_LINES = {
     "grammarNote": "jāke is genitive relative pronoun. lavalesa is a compound (lava + leśa, tiny droplet/particle). jitehu is 2pl perfect indicative. jhāri functions adverbially."
   },
   "line-257": {
-    "source": "तासु दूत मैं जा करि हरि आनेहु प्रिय नारि ॥ २१ ॥",
+    "source": "तासु दूत मैं जा करि हरि आनेहु प्रिय नारि",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -31397,11 +31216,12 @@ window.SONG_LINES = {
       {
         "text": "नारि",
         "wordIndices": [
-          8
+          8,
+          9
         ]
       }
     ],
-    "roman": "tāsu dūta maiṁ jā kari hari ānēhu priya nāri . 21 .",
+    "roman": "tāsu dūta maiṁ jā kari hari ānēhu priya nāri .",
     "english": "{2:I am }{0:His }{1:messenger, }{3,4:whose }{7:beloved }{8:wife }{5:you abducted }{6,9:and brought away.}",
     "words": [
       {
@@ -32802,55 +32622,43 @@ window.SONG_LINES = {
     "grammarNote": "kījai and dījai are Awadhi polite passive/optative imperatives. mōrē kahēṁ is a locative/instrumental participial clause."
   },
   "line-268": {
-    "source": "दो. प्रनतपाल रघुनायक करुना सिंधु खरारि।",
+    "source": "प्रनतपाल रघुनायक करुना सिंधु खरारि।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "प्रनतपाल",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रनतपाल",
+        "text": "रघुनायक",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "रघुनायक",
+        "text": "करुना",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "करुना",
+        "text": "सिंधु",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सिंधु",
+        "text": "खरारि।",
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "खरारि।",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "dō. pranatapāla raghunāyaka karunā sindhu kharāri.",
-    "english": "{0:Doha. }{1:Protector of the surrendered, }{2:leader of the Raghus, }{4:ocean }{3:of compassion, }{5:enemy of Khara:}",
+    "roman": "pranatapāla raghunāyaka karunā sindhu kharāri.",
+    "english": "{0:Protector of the surrendered, }{1:leader of the Raghus, }{3:ocean }{2:of compassion, }{4:enemy of Khara:}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā (meter indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "pranatapāla",
         "gloss": "protector of the surrendered",
@@ -32885,7 +32693,7 @@ window.SONG_LINES = {
     "grammarNote": "pranatapāla, raghunāyaka, karunā sindhu, and kharāri are nominative epithets serving as the compound subject of rākhihaiṁ in line-269."
   },
   "line-269": {
-    "source": "गएँ सरन प्रभु राखिहैं तव अपराध बिसारि ॥ २२ ॥",
+    "source": "गएँ सरन प्रभु राखिहैं तव अपराध बिसारि",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -32927,11 +32735,12 @@ window.SONG_LINES = {
       {
         "text": "बिसारि",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "gaēm̐ sarana prabhu rākhihaiṁ tava aparādha bisāri . 22 .",
+    "roman": "gaēm̐ sarana prabhu rākhihaiṁ tava aparādha bisāri .",
     "english": "{0:Upon taking }{1:refuge, }{2:the Lord }{3:will protect you, }{6:having forgotten }{4:your }{5:offenses.}",
     "words": [
       {
@@ -34058,67 +33867,55 @@ window.SONG_LINES = {
     "grammarNote": "'saṅkara sahasa biṣnu aja' forms a composite plural subject governing the third-person plural auxiliary 'sakahiṁ'. 'rākhi' is an uninflected infinitive/verbal stem. 'rāma kara drōhī' stands in apposition to the object pronoun 'tōhī'."
   },
   "line-278": {
-    "source": "दो. मोहमूल बहु सूल प्रद त्यागहु तम अभिमान।",
+    "source": "मोहमूल बहु सूल प्रद त्यागहु तम अभिमान।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "मोहमूल",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "मोहमूल",
+        "text": "बहु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बहु",
+        "text": "सूल",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सूल",
+        "text": "प्रद",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "प्रद",
+        "text": "त्यागहु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "त्यागहु",
+        "text": "तम",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "तम",
+        "text": "अभिमान।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "अभिमान।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "dō. mōhamūla bahu sūla prada tyāgahu tama abhimāna.",
-    "english": "{0:Doha. }{5:Renounce }{6:dark }{7:pride, }{1:rooted in delusion }{4:and yielding }{2:much }{3:torment.}",
+    "roman": "mōhamūla bahu sūla prada tyāgahu tama abhimāna.",
+    "english": "{4:Renounce }{5:dark }{6:pride, }{0:rooted in delusion }{3:and yielding }{1:much }{2:torment.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "mōhamūla",
         "gloss": "rooted in delusion",
@@ -34165,7 +33962,7 @@ window.SONG_LINES = {
     "grammarNote": "'dō.' is the sectional meter tag (dohā). 'mōhamūla' and 'bahu sūla prada' are adjectival compounds modifying 'abhimāna'. 'tyāgahu' is a respectful/plural imperative."
   },
   "line-279": {
-    "source": "भजहु राम रघुनायक कृपा सिंधु भगवान ॥ २३ ॥",
+    "source": "भजहु राम रघुनायक कृपा सिंधु भगवान",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -34201,11 +33998,12 @@ window.SONG_LINES = {
       {
         "text": "भगवान",
         "wordIndices": [
-          5
+          5,
+          6
         ]
       }
     ],
-    "roman": "bhajahu rāma raghunāyaka kṛpā sindhu bhagavāna . 23 .",
+    "roman": "bhajahu rāma raghunāyaka kṛpā sindhu bhagavāna .",
     "english": "{0:Worship }{1:Rama, }{2:leader of the Raghus, }{4:ocean }{3:of grace, }{5:the Supreme Lord.}",
     "words": [
       {
@@ -35397,73 +35195,61 @@ window.SONG_LINES = {
     "grammarNote": "dasakandhara is an epithet of Ravana (dasa + kandhara, ten-shouldered/necked). paṭhaia is an impersonal passive/optative form governing the direct object bandara."
   },
   "line-289": {
-    "source": "दो. कपि कें ममता पूँछ पर सबहि कहउँ समुझाइ।",
+    "source": "कपि कें ममता पूँछ पर सबहि कहउँ समुझाइ।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "कपि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कपि",
+        "text": "कें",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कें",
+        "text": "ममता",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ममता",
+        "text": "पूँछ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "पूँछ",
+        "text": "पर",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "पर",
+        "text": "सबहि",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "सबहि",
+        "text": "कहउँ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "कहउँ",
+        "text": "समुझाइ।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "समुझाइ।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō. kapi kēṁ mamatā pūm̐cha para sabahi kahauṁ samujhāi.",
-    "english": "{0:Doha: }{1,2:“A monkey }{3:has attachment }{4,5:to its tail; }{8:I explain }{7:and say }{6:to all:}",
+    "roman": "kapi kēṁ mamatā pūm̐cha para sabahi kahauṁ samujhāi.",
+    "english": "{0,1:“A monkey }{2:has attachment }{3,4:to its tail; }{7:I explain }{6:and say }{5:to all:}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "couplet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kapi",
         "gloss": "a monkey",
@@ -35516,7 +35302,7 @@ window.SONG_LINES = {
     "grammarNote": "dō. marks the dohā metric section. kapi kēṁ uses the genitive postposition kēṁ. kahauṁ is 1st person singular present indicative. samujhāi is an absolutive participle compounding with the main verb."
   },
   "line-290": {
-    "source": "तेल बोरि पट बाँधि पुनि पावक देहु लगाइ ॥ २४ ॥",
+    "source": "तेल बोरि पट बाँधि पुनि पावक देहु लगाइ",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -35564,11 +35350,12 @@ window.SONG_LINES = {
       {
         "text": "लगाइ",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "tēla bōri paṭa bām̐dhi puni pāvaka dēhu lagāi || 24 ||",
+    "roman": "tēla bōri paṭa bām̐dhi puni pāvaka dēhu lagāi",
     "english": "{1:Soaking }{2:cloth }{0:in oil }{3:and binding it, }{4:then }{7:set }{5:fire }{6:to it.”}",
     "words": [
       {
@@ -36767,67 +36554,55 @@ window.SONG_LINES = {
     "grammarNote": "'nibuki' is an absolutive participle expressing the act of slipping out of bonds. 'kanaka aṭārīṁ' has a nasalized plural locative/accusative ending '-īṁ' indicating the destination of motion. In the second hemistich, 'bhaī' is feminine plural agreeing with 'nisācara nārīṁ' (demon women)."
   },
   "line-300": {
-    "source": "दो. हरि प्रेरित तेहि अवसर चले मरुत उनचास।",
+    "source": "हरि प्रेरित तेहि अवसर चले मरुत उनचास।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "हरि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "हरि",
+        "text": "प्रेरित",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "प्रेरित",
+        "text": "तेहि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "तेहि",
+        "text": "अवसर",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "अवसर",
+        "text": "चले",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "चले",
+        "text": "मरुत",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मरुत",
+        "text": "उनचास।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "उनचास।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "dō. hari prērita tēhi avasara calē maruta unacāsa.",
-    "english": "{0,2:Impelled }{1:by Hari }{3:at that }{4:instant, }{7:the forty-nine }{6:winds }{5:began to blow.}",
+    "roman": "hari prērita tēhi avasara calē maruta unacāsa.",
+    "english": "{1:Impelled }{0:by Hari }{2:at that }{3:instant, }{6:the forty-nine }{5:winds }{4:began to blow.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā (couplet marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "hari",
         "gloss": "by Hari (Rama / Supreme Lord)",
@@ -36874,7 +36649,7 @@ window.SONG_LINES = {
     "grammarNote": "'hari prērita' functions as an adjectival/participial tatpuruṣa compound modifying 'maruta unacāsa'; 'calē' is masculine plural past/perfective agreeing with 'maruta'."
   },
   "line-301": {
-    "source": "अट्टहास करि गर्ज़ा कपि बढ़ि लाग अकास ॥ २५ ॥",
+    "source": "अट्टहास करि गर्ज़ा कपि बढ़ि लाग अकास",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -36916,11 +36691,12 @@ window.SONG_LINES = {
       {
         "text": "अकास",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "aṭṭahāsa kari garzā kapi baṛhi lāga akāsa. 25.",
+    "roman": "aṭṭahāsa kari garzā kapi baṛhi lāga akāsa.",
     "english": "{0,1:With a roaring laugh, }{3:the monkey }{2:roared, }{4:and expanding, }{5:touched }{6:the sky.}",
     "words": [
       {
@@ -38059,73 +37835,61 @@ window.SONG_LINES = {
     "grammarNote": "'ulaṭi palaṭi' is a reduplicated/rhyming pair of absolutives functioning adverbially with transitive verb 'jārī' (feminine perfective agreeing with 'laṁkā'); 'kūdi parā' is a compound verb of motion with absolutive 'kūdi' and vector verb 'parā'."
   },
   "line-310": {
-    "source": "दो. पूँछ बुझाइ खोइ श्रम धरि लघु रूप बहोरि।",
+    "source": "पूँछ बुझाइ खोइ श्रम धरि लघु रूप बहोरि।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "पूँछ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "पूँछ",
+        "text": "बुझाइ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बुझाइ",
+        "text": "खोइ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "खोइ",
+        "text": "श्रम",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "श्रम",
+        "text": "धरि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "धरि",
+        "text": "लघु",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "लघु",
+        "text": "रूप",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "रूप",
+        "text": "बहोरि।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "बहोरि।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō. pūm̐cha bujhāi khōi śrama dhari laghu rūpa bahōri.",
-    "english": "{0,2:Having extinguished }{1:his tail, }{3:dispelled }{4:his weariness, }{5:and assumed }{6:a small }{7:form }{8:once more,}",
+    "roman": "pūm̐cha bujhāi khōi śrama dhari laghu rūpa bahōri.",
+    "english": "{1:Having extinguished }{0:his tail, }{2:dispelled }{3:his weariness, }{4:and assumed }{5:a small }{6:form }{7:once more,}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "couplet marker",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "pūm̐cha",
         "gloss": "tail",
@@ -38178,7 +37942,7 @@ window.SONG_LINES = {
     "grammarNote": "Series of absolutive conjunctive participles in Awadhi (`bujhāi`, `khōi`, `dhari`) expressing sequential actions subordinate to the main clause in line 311."
   },
   "line-311": {
-    "source": "जनकसुता के आगें ठाढ़ भयउ कर जोरि ॥ २६ ॥",
+    "source": "जनकसुता के आगें ठाढ़ भयउ कर जोरि",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -38220,11 +37984,12 @@ window.SONG_LINES = {
       {
         "text": "जोरि",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "janakasutā kē āgēṁ ṭhāṛha bhayau kara jōri. 26.",
+    "roman": "janakasutā kē āgēṁ ṭhāṛha bhayau kara jōri.",
     "english": "{3,4:he stood }{1,2:before }{0:Janaka’s daughter }{6:with joined }{5:palms.}",
     "words": [
       {
@@ -39303,67 +39068,55 @@ window.SONG_LINES = {
     "grammarNote": "`dēkhi` is an absolutive participle. `sītali bhai chātī` exhibits feminine agreement (`chātī` is feminine in Awadhi). `mō kahuṁ` is a postpositional experiencer dative."
   },
   "line-320": {
-    "source": "दो. जनकसुतहि समुझाइ करि बहु बिधि धीरजु दीन्ह।",
+    "source": "जनकसुतहि समुझाइ करि बहु बिधि धीरजु दीन्ह।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "जनकसुतहि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जनकसुतहि",
+        "text": "समुझाइ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "समुझाइ",
+        "text": "करि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "करि",
+        "text": "बहु",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "बहु",
+        "text": "बिधि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "बिधि",
+        "text": "धीरजु",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "धीरजु",
+        "text": "दीन्ह।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "दीन्ह।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. janakasutahi samujhā'i kari bahu bidhi dhīraju dīnha.",
-    "english": "{0,2,3:Having consoled }{1:Janaka’s daughter, }{6,7:he gave her courage }{4,5:in many ways.}",
+    "roman": "janakasutahi samujhā'i kari bahu bidhi dhīraju dīnha.",
+    "english": "{1,2:Having consoled }{0:Janaka’s daughter, }{5,6:he gave her courage }{3,4:in many ways.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā [couplet marker]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "janakasutahi",
         "gloss": "to Janaka's daughter [Sītā]",
@@ -39410,7 +39163,7 @@ window.SONG_LINES = {
     "grammarNote": "janakasutahi contains the accusative/dative postpositional suffix -hi. samujhā'i kari is a compound absolutive functioning as 'having thoroughly reassured/consoled'. dīnha is the masculine singular perfective participle agreeing with dhīraju."
   },
   "line-321": {
-    "source": "चरन कमल सिरु नाइ कपि गवनु राम पहिं कीन्ह ॥ २७ ॥",
+    "source": "चरन कमल सिरु नाइ कपि गवनु राम पहिं कीन्ह",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -39464,11 +39217,12 @@ window.SONG_LINES = {
       {
         "text": "कीन्ह",
         "wordIndices": [
-          8
+          8,
+          9
         ]
       }
     ],
-    "roman": "carana kamala siru nā'i kapi gavanu rāma pahiṁ kīnha. 27.",
+    "roman": "carana kamala siru nā'i kapi gavanu rāma pahiṁ kīnha.",
     "english": "{2,3:Bowing his head }{1:to her lotus }{0:feet, }{4:the monkey }{5,8:set forth }{6,7,9:towards Rāma.}",
     "words": [
       {
@@ -40499,67 +40253,55 @@ window.SONG_LINES = {
     "grammarNote": "barajana lāge is an inceptive verbal construction (inflected infinitive barajana + lāge). muṣṭi prahāra is a tatpuruṣa compound ('fist-blows'). hanata is an imperfective participle indicating either the monkeys striking them or the guards being battered during the flight."
   },
   "line-330": {
-    "source": "दो. जाइ पुकारे ते सब बन उजार जुबराज।",
+    "source": "जाइ पुकारे ते सब बन उजार जुबराज।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "जाइ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जाइ",
+        "text": "पुकारे",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "पुकारे",
+        "text": "ते",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ते",
+        "text": "सब",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सब",
+        "text": "बन",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "बन",
+        "text": "उजार",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "उजार",
+        "text": "जुबराज।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "जुबराज।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. jā'i pukāre te saba bana ujāra jubarāja.",
-    "english": "{0,1:Going, }{3:they }{4:all }{2:cried out in complaint: }{7:“The crown prince }{6:has laid waste }{5:to the grove!”}",
+    "roman": "jā'i pukāre te saba bana ujāra jubarāja.",
+    "english": "{0:Going, }{2:they }{3:all }{1:cried out in complaint: }{6:“The crown prince }{5:has laid waste }{4:to the grove!”}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "dohā / couplet marker",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "jā'i",
         "gloss": "having gone",
@@ -40606,7 +40348,7 @@ window.SONG_LINES = {
     "grammarNote": "Absolutive participle jā'i ('having gone') preceding the finite verb pukāre ('cried out/called'). Jubarāja stands as the subject of the reported clause ujāra ('laid waste')."
   },
   "line-331": {
-    "source": "सुनि सुग्रीव हरष कपि करि आए प्रभु काज ॥ २८ ॥",
+    "source": "सुनि सुग्रीव हरष कपि करि आए प्रभु काज",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -40654,11 +40396,12 @@ window.SONG_LINES = {
       {
         "text": "काज",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "suni sugrīva haraṣa kapi kari ā'e prabhu kāja. 28.",
+    "roman": "suni sugrīva haraṣa kapi kari ā'e prabhu kāja.",
     "english": "{0:Hearing this, }{1:Sugrīva }{2:rejoiced: }{3:“The monkeys }{5:have returned, }{4:having accomplished }{6:the master’s }{7,8:task.”}",
     "words": [
       {
@@ -41791,67 +41534,55 @@ window.SONG_LINES = {
     "grammarNote": "Phaṭika silā is a noun-noun determinative compound ('crystal slab'). Carananhi is oblique/locative plural ('at the feet'). Jā'ī is absolutive participle ('having gone')."
   },
   "line-340": {
-    "source": "दो. प्रीति सहित सब भेटे रघुपति करुना पुंज।",
+    "source": "प्रीति सहित सब भेटे रघुपति करुना पुंज।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "प्रीति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रीति",
+        "text": "सहित",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सहित",
+        "text": "सब",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सब",
+        "text": "भेटे",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "भेटे",
+        "text": "रघुपति",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "रघुपति",
+        "text": "करुना",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "करुना",
+        "text": "पुंज।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "पुंज।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. prīti sahita saba bheṭe raghupati karunā puṃja.",
-    "english": "{0:Doha. }{2:With }{1:affection, }{5:the guardian of Raghu's line, }{6,7:an embodiment of compassion, }{4:embraced }{3:all.}",
+    "roman": "prīti sahita saba bheṭe raghupati karunā puṃja.",
+    "english": "{1:With }{0:affection, }{4:the guardian of Raghu's line, }{5,6:an embodiment of compassion, }{3:embraced }{2:all.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet [doha marker]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "prīti",
         "gloss": "affection; love",
@@ -41898,7 +41629,7 @@ window.SONG_LINES = {
     "grammarNote": "'bheṭe' is 3rd person honorific perfective verb taking 'raghupati' as subject and 'saba' as direct object. 'karunā puṃja' stands in apposition to 'raghupati'."
   },
   "line-341": {
-    "source": "पूँछी कुसल नाथ अब कुसल देखि पद कंज ॥ २९ ॥",
+    "source": "पूँछी कुसल नाथ अब कुसल देखि पद कंज",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -41946,11 +41677,12 @@ window.SONG_LINES = {
       {
         "text": "कंज",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "pūm̐chī kusala nātha aba kusala dekhi pada kaṃja ॥ 29 ॥",
+    "roman": "pūm̐chī kusala nātha aba kusala dekhi pada kaṃja",
     "english": "{0:He asked after }{1:their welfare: }{2:“O master, }{3:now }{4:all is well }{5:upon seeing }{7:your lotus }{6:feet.”}",
     "words": [
       {
@@ -43047,67 +42779,55 @@ window.SONG_LINES = {
     "grammarNote": "'kahahu' is 2nd person honorific imperative. 'kehi bhāomti' is an interrogative adverbial phrase. 'rahati' and 'karati' are feminine imperfective habitual verbs agreeing with 'jānakī'."
   },
   "line-350": {
-    "source": "दो. नाम पाहरु दिवस निसि ध्यान तुम्हार कपाट।",
+    "source": "नाम पाहरु दिवस निसि ध्यान तुम्हार कपाट।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "नाम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "नाम",
+        "text": "पाहरु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "पाहरु",
+        "text": "दिवस",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "दिवस",
+        "text": "निसि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "निसि",
+        "text": "ध्यान",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ध्यान",
+        "text": "तुम्हार",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "तुम्हार",
+        "text": "कपाट।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "कपाट।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. nāma pāharu divasa nisi dhyāna tumhāra kapāṭa.",
-    "english": "{0:Doha. }{1:The Name is the }{2:watchman }{3:day }{4:and night, }{5:and meditation }{6:upon you is the }{7:door-panels;}",
+    "roman": "nāma pāharu divasa nisi dhyāna tumhāra kapāṭa.",
+    "english": "{0:The Name is the }{1:watchman }{2:day }{3:and night, }{4:and meditation }{5:upon you is the }{6:door-panels;}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "doha (couplet marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "nāma",
         "gloss": "name",
@@ -43154,7 +42874,7 @@ window.SONG_LINES = {
     "grammarNote": "Nominal equational metaphor lacking a copula ('nāma pāharu', 'dhyāna tumhāra kapāṭa'). 'do.' abbreviates dohā."
   },
   "line-351": {
-    "source": "लोचन निज पद जंत्रित जाहिं प्रान केहिं बाट ॥ ३० ॥",
+    "source": "लोचन निज पद जंत्रित जाहिं प्रान केहिं बाट",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -43202,11 +42922,12 @@ window.SONG_LINES = {
       {
         "text": "बाट",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "locana nija pada jaṃtrita jāhiṃ prāna kehiṃ bāṭa ॥ 30 ॥",
+    "roman": "locana nija pada jaṃtrita jāhiṃ prāna kehiṃ bāṭa",
     "english": "{0,1,2,3,4,5,6,7,8:Her eyes are locked upon her own feet; by what path could her life-breaths depart?}",
     "words": [
       {
@@ -44410,11 +44131,11 @@ window.SONG_LINES = {
     "grammarNote": "ke ... bipati marks genitive/experiencer relation ('Sītā's distress'). binahiṃ kaheṃ is an absolute/infinitival construction with emphatic -hiṃ ('without being spoken'). dīnadayālā is a vocative compound (dīna + dayāla)."
   },
   "line-361": {
-    "source": "दो. निमिष निमिष करुनानिधि जाहिं कलप सम बीति।",
+    "source": "निमिष निमिष करुनानिधि जाहिं कलप सम बीति।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "निमिष",
         "wordIndices": [
           0
         ]
@@ -44426,51 +44147,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "निमिष",
+        "text": "करुनानिधि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "करुनानिधि",
+        "text": "जाहिं",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "जाहिं",
+        "text": "कलप",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "कलप",
+        "text": "सम",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "सम",
+        "text": "बीति।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "बीति।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "do. nimiṣa nimiṣa karunānidhi jāhiṁ kalapa sama bīti.",
-    "english": "{0:Dohā.}{1,2: Every single}{1,2: instant,}{3: O treasure of compassion,}{4,7: passes by}{6: like}{5: an aeon.}",
+    "roman": "nimiṣa nimiṣa karunānidhi jāhiṁ kalapa sama bīti.",
+    "english": "{0,1: Every single}{0,1: instant,}{2: O treasure of compassion,}{3,6: passes by}{5: like}{4: an aeon.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet; dohā [meter marker]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "nimiṣa",
         "gloss": "instant; blink of an eye",
@@ -44517,7 +44226,7 @@ window.SONG_LINES = {
     "grammarNote": "nimiṣa nimiṣa is an adverbial reduplication denoting distributive duration ('every single instant'). bīti jāhiṁ is an aspectual compound verb (bītnā + jānā 3pl). karunānidhi is a vocative tatpuruṣa compound (karunā + nidhi)."
   },
   "line-362": {
-    "source": "बेगि चलिय प्रभु आनिअ भुज बल खल दल जीति ॥ ३१ ॥",
+    "source": "बेगि चलिय प्रभु आनिअ भुज बल खल दल जीति",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -44571,11 +44280,12 @@ window.SONG_LINES = {
       {
         "text": "जीति",
         "wordIndices": [
-          8
+          8,
+          9
         ]
       }
     ],
-    "roman": "begi caliya prabhu ānia bhuja bala khala dala jīti ॥ 31 ॥",
+    "roman": "begi caliya prabhu ānia bhuja bala khala dala jīti",
     "english": "{1:March}{0: swiftly,}{2: O Lord,}{8: and having conquered}{6,7: the host of the wicked}{5: by the strength}{4: of Your arms,}{3: bring Her back.}",
     "words": [
       {
@@ -45738,73 +45448,61 @@ window.SONG_LINES = {
     "grammarNote": "Awadhi imperfective/present verb citava with compound agent suratrātā (sura + trātā). Accusative/dative enclitic -hi in kapihi. The second hemistich uses parataxis with unexpressed locative markers: locana [maham̐] nīra, gātā [par] ati pulaka."
   },
   "line-371": {
-    "source": "दो. सुनि प्रभु बचन बिलोकि मुख गात हरषि हनुमंत।",
+    "source": "सुनि प्रभु बचन बिलोकि मुख गात हरषि हनुमंत।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "सुनि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सुनि",
+        "text": "प्रभु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "प्रभु",
+        "text": "बचन",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "बचन",
+        "text": "बिलोकि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "बिलोकि",
+        "text": "मुख",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "मुख",
+        "text": "गात",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "गात",
+        "text": "हरषि",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "हरषि",
+        "text": "हनुमंत।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "हनुमंत।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "do. suni prabhu bacana biloki mukha gāta haraṣi hanumaṁta.",
-    "english": "{0:Dohā.}{1: Hearing}{2: the Lord’s}{3: words}{4: and beholding}{5: His face}{6: and limbs,}{8: Hanumān}{7: rejoiced;}",
+    "roman": "suni prabhu bacana biloki mukha gāta haraṣi hanumaṁta.",
+    "english": "{0: Hearing}{1: the Lord’s}{2: words}{3: and beholding}{4: His face}{5: and limbs,}{7: Hanumān}{6: rejoiced;}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "doha (couplet marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "suni",
         "gloss": "having heard",
@@ -45857,7 +45555,7 @@ window.SONG_LINES = {
     "grammarNote": "do. is the scribal abbreviation for doha. Absolutive/conjunctive participles suni (< śrutvā), biloki (< vilokya), and haraṣi (< harṣitvā) share the subject hanumaṁta."
   },
   "line-372": {
-    "source": "चरन परेउ प्रेमाकुल त्राहि त्राहि भगवंत ॥ ३२ ॥",
+    "source": "चरन परेउ प्रेमाकुल त्राहि त्राहि भगवंत",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -45893,11 +45591,12 @@ window.SONG_LINES = {
       {
         "text": "भगवंत",
         "wordIndices": [
-          5
+          5,
+          6
         ]
       }
     ],
-    "roman": "carana pareu premākula trāhi trāhi bhagavaṁta ॥ 32 ॥",
+    "roman": "carana pareu premākula trāhi trāhi bhagavaṁta",
     "english": "{2:overwhelmed with love,}{1: he fell}{0: at His feet,}{3: crying, “Protect me,}{4: protect me,}{5: O Blessed Lord!”}",
     "words": [
       {
@@ -46994,85 +46693,73 @@ window.SONG_LINES = {
     "grammarNote": "Awadhi bipartite declarative sentence with two vocatives (raghurāī, nātha). The copula is omitted in both clauses. 'raghurāī' is a compound of Raghu + rāī (king/ruler)."
   },
   "line-382": {
-    "source": "दो. ता कहुँ प्रभु कछु अगम नहिं जा पर तुम्ह अनुकुल।",
+    "source": "ता कहुँ प्रभु कछु अगम नहिं जा पर तुम्ह अनुकुल।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "ता",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ता",
+        "text": "कहुँ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कहुँ",
+        "text": "प्रभु",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "प्रभु",
+        "text": "कछु",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कछु",
+        "text": "अगम",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "अगम",
+        "text": "नहिं",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "नहिं",
+        "text": "जा",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "जा",
+        "text": "पर",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "पर",
+        "text": "तुम्ह",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "तुम्ह",
+        "text": "अनुकुल।",
         "wordIndices": [
           9
         ]
-      },
-      {
-        "text": "अनुकुल।",
-        "wordIndices": [
-          10
-        ]
       }
     ],
-    "roman": "dō. tā kahu~ prabhu kachu agama nahiṃ jā para tumha anukula.",
-    "english": "{0,3:O Lord, }{4,6:nothing }{5:is inaccessible }{1,2:to that one }{7,8:upon whom }{9,10:you are gracious.}",
+    "roman": "tā kahu~ prabhu kachu agama nahiṃ jā para tumha anukula.",
+    "english": "{2:O Lord, }{3,5:nothing }{4:is inaccessible }{0,1:to that one }{6,7:upon whom }{8,9:you are gracious.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā (couplet meter)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "tā",
         "gloss": "that person",
@@ -47137,7 +46824,7 @@ window.SONG_LINES = {
     "grammarNote": "Relative-correlative construction: 'jā para... tā kahu~'. 'dō.' marks the meter change from Chaupāī to Dohā. 'anukula' is used predicatively."
   },
   "line-383": {
-    "source": "तब प्रभावँ बड़वानलहिं जारि सकइ खलु तूल ॥ ३३ ॥",
+    "source": "तब प्रभावँ बड़वानलहिं जारि सकइ खलु तूल",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -47179,11 +46866,12 @@ window.SONG_LINES = {
       {
         "text": "तूल",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "taba prabhāva~ baṛavānalahiṃ jāri sakai khalu tūla || 33 ||",
+    "roman": "taba prabhāva~ baṛavānalahiṃ jāri sakai khalu tūla",
     "english": "{0,1:By your power, }{6:cotton }{4:can }{5:truly }{3:burn up }{2,7:the submarine fire.}",
     "words": [
       {
@@ -48274,61 +47962,49 @@ window.SONG_LINES = {
     "grammarNote": "Absolutives 'dekhi' and 'baraṣī' show sequential actions preceding the finite past verb 'cale'; 'haraṣī' acts as an adverbial participle of state."
   },
   "line-392": {
-    "source": "दो. कपिपति बेगि बोलाए आए जूथप जूथ।",
+    "source": "कपिपति बेगि बोलाए आए जूथप जूथ।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "कपिपति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कपिपति",
+        "text": "बेगि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बेगि",
+        "text": "बोलाए",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "बोलाए",
+        "text": "आए",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "आए",
+        "text": "जूथप",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "जूथप",
+        "text": "जूथ।",
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "जूथ।",
-        "wordIndices": [
-          6
-        ]
       }
     ],
-    "roman": "dō. kapipati begi bolāe āe jūthapa jūtha.",
-    "english": "{0,1:The king of the monkeys }{2:swiftly }{3:summoned them, }{6:and hosts }{5:of troop commanders }{4:arrived.}",
+    "roman": "kapipati begi bolāe āe jūthapa jūtha.",
+    "english": "{0:The king of the monkeys }{1:swiftly }{2:summoned them, }{5:and hosts }{4:of troop commanders }{3:arrived.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā (couplet indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kapipati",
         "gloss": "leader of the monkeys; monkey ruler (Sugrīva)",
@@ -48369,7 +48045,7 @@ window.SONG_LINES = {
     "grammarNote": "'kapipati' functions as the agent of 'bolāe' (past participle with active force); 'jūthapa jūtha' is the subject of the intransitive past verb 'āe'."
   },
   "line-393": {
-    "source": "नाना बरन अतुल बल बानर भालु बरूथ ॥ ३४ ॥",
+    "source": "नाना बरन अतुल बल बानर भालु बरूथ",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -48411,11 +48087,12 @@ window.SONG_LINES = {
       {
         "text": "बरूथ",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "nānā barana atula bala bānara bhālu barūtha || 34 ||",
+    "roman": "nānā barana atula bala bānara bhālu barūtha",
     "english": "{6:Hosts }{4:of monkeys }{5:and bears }{0:of various }{1:colors }{2:and incomparable }{3,7:might.}",
     "words": [
       {
@@ -49660,18 +49337,13 @@ window.SONG_LINES = {
     "grammarNote": "Consists of two coordinate clauses: (1) bhālu kapi keharināda karahīṃ (transitive), (2) diggaja ḍagamagāhiṃ cikkarahīṃ (intransitive coordinate verbs). All finite verbs carry the 3rd person plural present ending -hīṃ."
   },
   "line-404": {
-    "source": "छं. चिक्करहिं दिग्गज डोल महि गिरि लोल सागर खरभरे।",
+    "source": "चिक्करहिं दिग्गज डोल महि गिरि लोल सागर खरभरे।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "छं.",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
         "text": "चिक्करहिं",
         "wordIndices": [
+          0,
           1
         ]
       },
@@ -49718,11 +49390,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "chaṃ. cikkarahiṃ diggaja ḍola mahi giri lola sāgara kharabhare.",
+    "roman": "cikkarahiṃ diggaja ḍola mahi giri lola sāgara kharabhare.",
     "english": "{0:Chhand. }{2:The world-elephants}{1: trumpet}{4:, the earth}{3: quakes}{5:, mountains}{6: sway}{7:, and oceans}{8: roil in turmoil.}",
     "words": [
       {
-        "roman": "chaṃ.",
+        "roman": "",
         "gloss": "meter tag; chhand indicator",
         "concept_key": "",
         "preserve_in_english": false
@@ -50017,7 +49689,7 @@ window.SONG_LINES = {
     "grammarNote": "kaṭakaṭahiṃ is an onomatopoeic denominative verb (3pl pres). koṭinha is an oblique plural used adverbially with reduplication (koṭi koṭinha) for intensification ('by the crores')."
   },
   "line-407": {
-    "source": "जय राम प्रबल प्रताप कोसलनाथ गुन गन गावहीं ॥ १ ॥",
+    "source": "जय राम प्रबल प्रताप कोसलनाथ गुन गन गावहीं",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -50065,11 +49737,12 @@ window.SONG_LINES = {
       {
         "text": "गावहीं",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "jaya rāma prabala pratāpa kosalanātha guna gana gāvahīṃ || 1 ||",
+    "roman": "jaya rāma prabala pratāpa kosalanātha guna gana gāvahīṃ",
     "english": "{0:‘Victory}{1: to Rāma}{2:, of mighty}{3: majesty}{4:, the guardian of Kosala!’—}{7:they sing}{6: the hosts of}{5: his guṇas.}",
     "words": [
       {
@@ -50475,7 +50148,7 @@ window.SONG_LINES = {
     "grammarNote": "raghubīra is a tatpuruṣa compound (raghu + vīra, 'hero of the Raghu lineage'). jāni is an absolutive participle ('having recognized/knowing') serving to introduce the utprekṣā. suhāvanī is a feminine adjective agreeing with prasthiti."
   },
   "line-411": {
-    "source": "जनु कमठ खर्पर सर्पराज सो लिखत अबिचल पावनी ॥ २ ॥",
+    "source": "जनु कमठ खर्पर सर्पराज सो लिखत अबिचल पावनी",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -50511,29 +50184,23 @@ window.SONG_LINES = {
       {
         "text": "लिखत",
         "wordIndices": [
-          5,
-          6,
-          7
+          5
         ]
       },
       {
         "text": "अबिचल",
         "wordIndices": [
-          5,
-          6,
-          7
+          6
         ]
       },
       {
         "text": "पावनी",
         "wordIndices": [
-          5,
-          6,
           7
         ]
       }
     ],
-    "roman": "janu kamaṭha kharpara sarparāja so लिखत अबिचल पावनी || 2 ||",
+    "roman": "janu kamaṭha kharpara sarparāja so लिखत अबिचल पावनी",
     "english": "{0:as though}{1: upon the tortoise’s}{2: carapace}{3: the king of serpents}{5: is writing}{4: that}{6: indelible,}{7: purifying story.}",
     "words": [
       {
@@ -50588,67 +50255,55 @@ window.SONG_LINES = {
     "grammarNote": "Poetic simile (janu). 'sarparāja' is the nominative subject governing the continuous present participle 'likhata'. 'abicala pāvanī' functions as the adjectival direct object phrase."
   },
   "line-412": {
-    "source": "दो. एहि बिधि जाइ कृपानिधि उतरे सागर तीर।",
+    "source": "एहि बिधि जाइ कृपानिधि उतरे सागर तीर।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "एहि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "एहि",
+        "text": "बिधि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बिधि",
+        "text": "जाइ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "जाइ",
+        "text": "कृपानिधि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कृपानिधि",
+        "text": "उतरे",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "उतरे",
+        "text": "सागर",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "सागर",
+        "text": "तीर।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "तीर।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "dō. ēhi bidhi jāi kṛpānidhi utarē sāgara tīra.",
-    "english": "{0:Doha. }{1:In this}{2: manner, }{4:the reservoir of grace}{3: went}{5: and encamped}{6: on the ocean}{7: shore.}",
+    "roman": "ēhi bidhi jāi kṛpānidhi utarē sāgara tīra.",
+    "english": "{0:In this}{1: manner, }{3:the reservoir of grace}{2: went}{4: and encamped}{5: on the ocean}{6: shore.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "couplet (dohā marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "ēhi",
         "gloss": "in this",
@@ -50695,7 +50350,7 @@ window.SONG_LINES = {
     "grammarNote": "'dō.' is the generic meter label. 'kṛpānidhi' is an honorific singular agent with the absolutive 'jāi' leading to past finite verb 'utarē'."
   },
   "line-413": {
-    "source": "जहँ तहँ लागे खान फल भालु बिपुल कपि बीर ॥ ३५ ॥",
+    "source": "जहँ तहँ लागे खान फल भालु बिपुल कपि बीर",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -50753,7 +50408,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jaham̐ taham̐ lāgē khāna phala bhālu bipula kapi bīra || 35 ||",
+    "roman": "jaham̐ taham̐ lāgē khāna phala bhālu bipula kapi bīra",
     "english": "{0:Here}{1: and there, }{6:the countless}{5: bears}{7: and monkey}{8: heroes}{2: began}{3: to eat}{4: fruits}",
     "words": [
       {
@@ -52148,73 +51803,61 @@ window.SONG_LINES = {
     "grammarNote": "'dīnhēm̐' and 'kīnhēm̐' are oblique past participles used adverbially with conditional/concessive sense."
   },
   "line-424": {
-    "source": "दो. -राम बान अहि गन सरिस निकर निसाचर भेक।",
+    "source": "राम बान अहि गन सरिस निकर निसाचर भेक।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "राम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "-राम",
+        "text": "बान",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बान",
+        "text": "अहि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "अहि",
+        "text": "गन",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "गन",
+        "text": "सरिस",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सरिस",
+        "text": "निकर",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "निकर",
+        "text": "निसाचर",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "निसाचर",
+        "text": "भेक।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "भेक।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō. -rāma bāna ahi gana sarisa nikara nisācara bhēka.",
-    "english": "{0:Dohā.}{1: Rāma's}{2: arrows}{5: are like}{3,4: a swarm of serpents,}{6: and the host of}{7: night-roaming demons}{8: are frogs.}",
+    "roman": "-rāma bāna ahi gana sarisa nikara nisācara bhēka.",
+    "english": "{0: Rāma's}{1: arrows}{4: are like}{2,3: a swarm of serpents,}{5: and the host of}{6: night-roaming demons}{7: are frogs.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "couplet marker (dohā)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "-rāma",
         "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
@@ -52267,7 +51910,7 @@ window.SONG_LINES = {
     "grammarNote": "'ahi gana sarisa' is an adjectival phrase modifying 'rāma bāna'. 'nikara nisācara bhēka' places 'demons' in apposition to 'frogs'."
   },
   "line-425": {
-    "source": "जब लगि ग्रसत न तब लगि जतनु करहु तजि टेक ॥ ३६ ॥",
+    "source": "जब लगि ग्रसत न तब लगि जतनु करहु तजि टेक",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -52327,11 +51970,12 @@ window.SONG_LINES = {
       {
         "text": "टेक",
         "wordIndices": [
-          9
+          9,
+          10
         ]
       }
     ],
-    "roman": "jaba lagi grasata na taba lagi jatanu karahu taji ṭēka || 36 ||",
+    "roman": "jaba lagi grasata na taba lagi jatanu karahu taji ṭēka",
     "english": "{0:As}{1: long as}{3: they have not}{2: devoured them,}{4,5: until then}{7: make}{6: an effort,}{8: abandoning}{9: stubborn obstinacy.}",
     "words": [
       {
@@ -53559,79 +53203,67 @@ window.SONG_LINES = {
     "grammarNote": "'jitēhu' is 2nd person honorific past. 'surāsura' is a dvandva compound (sura + asura). 'kēhi lēkhē māhī' is a rhetorical locative idiom expressing complete insignificance."
   },
   "line-435": {
-    "source": "दो. सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस।",
+    "source": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "सचिव",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सचिव",
+        "text": "बैद",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बैद",
+        "text": "गुर",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "गुर",
+        "text": "तीनि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "तीनि",
+        "text": "जौं",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "जौं",
+        "text": "प्रिय",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "प्रिय",
+        "text": "बोलहिं",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "बोलहिं",
+        "text": "भय",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "भय",
+        "text": "आस।",
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "आस।",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "do. saciva baida gura tīni jauṁ priya bolahiṁ bhaya āsa.",
-    "english": "{0:Dohā.}{5: If}{4: these three—}{1:a minister,}{2: a physician,}{3: and a spiritual teacher—}{7:speak}{6: flattering words}{8: out of fear}{9: or hope of gain,}",
+    "roman": "saciva baida gura tīni jauṁ priya bolahiṁ bhaya āsa.",
+    "english": "{4: If}{3: these three—}{0:a minister,}{1: a physician,}{2: and a spiritual teacher—}{6:speak}{5: flattering words}{7: out of fear}{8: or hope of gain,}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "couplet (dohā marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "saciva",
         "gloss": "a minister; counselor",
@@ -53690,7 +53322,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' abbreviates 'dohā'. 'jauṁ' opens the conditional clause with 3rd person plural verb 'bolahiṁ'. 'bhaya āsa' forms a compound of motive without case markers."
   },
   "line-436": {
-    "source": "राज धर्म तन तीनि कर होइ बेगिहीं नास ॥ ३७ ॥",
+    "source": "राज धर्म तन तीनि कर होइ बेगिहीं नास",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -53738,11 +53370,12 @@ window.SONG_LINES = {
       {
         "text": "नास",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "rāja dharma tana tīni kara hoi begihīṁ nāsa ॥ 37 ॥",
+    "roman": "rāja dharma tana tīni kara hoi begihīṁ nāsa",
     "english": "{3,4:for these three—}{0:realm,}{1: dharma,}{2: and the body—}{7:destruction}{6: swiftly}{5: occurs.}",
     "words": [
       {
@@ -54827,79 +54460,67 @@ window.SONG_LINES = {
     "grammarNote": "'guna sāgara' is a tatpuruṣa/rūpaka compound (ocean of virtues). 'alapa lobha' is an ablative/causal adverbial condition (because of slight greed). 'na koū' forms the negative indefinite subject 'no one'."
   },
   "line-445": {
-    "source": "दो. काम क्रोध मद लोभ सब नाथ नरक के पंथ।",
+    "source": "काम क्रोध मद लोभ सब नाथ नरक के पंथ।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "काम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "काम",
+        "text": "क्रोध",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "क्रोध",
+        "text": "मद",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "मद",
+        "text": "लोभ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "लोभ",
+        "text": "सब",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सब",
+        "text": "नाथ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "नाथ",
+        "text": "नरक",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "नरक",
+        "text": "के",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "के",
+        "text": "पंथ।",
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "पंथ।",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "do. kāma krodha mada lobha saba nātha naraka ke paṁtha.",
-    "english": "{0:[Dohā] }{1:Kāma, }{2:anger, }{3:pride, }{4:and greed—}{5:all, }{6:O lord, }{8,9:are paths }{7:to hell.}",
+    "roman": "kāma krodha mada lobha saba nātha naraka ke paṁtha.",
+    "english": "{0:Kāma, }{1:anger, }{2:pride, }{3:and greed—}{4:all, }{5:O lord, }{7,8:are paths }{6:to hell.}",
     "words": [
-      {
-        "roman": "do.",
-        "gloss": "[Dohā]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kāma",
         "gloss": "desire; sensual longing,",
@@ -54958,7 +54579,7 @@ window.SONG_LINES = {
     "grammarNote": "'do.' is an abbreviation for 'dohā' (couplet marker). The four vices form a dvandva-like list summed up by 'saba', acting as the predicate subject with copula omitted."
   },
   "line-446": {
-    "source": "सब परिहरि रघुबीरहि भजहु भजहिं जेहि संत ॥ ३८ ॥",
+    "source": "सब परिहरि रघुबीरहि भजहु भजहिं जेहि संत",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -55000,11 +54621,12 @@ window.SONG_LINES = {
       {
         "text": "संत",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "saba parihari raghubīrahi bhajahu bhajahiṁ jehi saṁta ॥ 38 ॥",
+    "roman": "saba parihari raghubīrahi bhajahu bhajahiṁ jehi saṁta",
     "english": "{1:Renouncing }{0:all these, }{3:worship }{2:the hero of Raghu's line, }{5:whom }{6:holy saints }{4:worship.}",
     "words": [
       {
@@ -57464,67 +57086,55 @@ window.SONG_LINES = {
     "grammarNote": "'kālarāti' is in predicate apposition to 'sītā'. 'kērī' is the feminine genitive postposition agreeing with 'kālarāti'. 'para' is the locative/directional postposition governed by 'prīti'."
   },
   "line-466": {
-    "source": "दो. तात चरन गहि मागउँ राखहु मोर दुलार।",
+    "source": "तात चरन गहि मागउँ राखहु मोर दुलार।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "तात",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "तात",
+        "text": "चरन",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "चरन",
+        "text": "गहि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "गहि",
+        "text": "मागउँ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "मागउँ",
+        "text": "राखहु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "राखहु",
+        "text": "मोर",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मोर",
+        "text": "दुलार।",
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "दुलार।",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "dō. tāta carana gahi māgaum̐ rākhahu mōra dulāra.",
-    "english": "{0:Doha. }{3:Grasping }{2:your feet, }{1:O brother, }{4:I beg: }{5:honor }{6:my }{7:fond entreaty.}",
+    "roman": "tāta carana gahi māgaum̐ rākhahu mōra dulāra.",
+    "english": "{2:Grasping }{1:your feet, }{0:O brother, }{3:I beg: }{4:honor }{5:my }{6:fond entreaty.}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā (couplet marker)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "tāta",
         "gloss": "O revered brother; O dear one",
@@ -57571,7 +57181,7 @@ window.SONG_LINES = {
     "grammarNote": "'dō.' is the sectional meter abbreviation. 'tāta' is vocative. 'gahi' is an absolutival/conjunctive participle ('having grasped'). 'māgaum̐' is 1st person singular present indicative; 'rākhahu' is 2nd person honorific/plural imperative."
   },
   "line-467": {
-    "source": "सीत देहु राम कहुँ अहित न होइ तुम्हार ॥ ४० ॥",
+    "source": "सीत देहु राम कहुँ अहित न होइ तुम्हार",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -57619,11 +57229,12 @@ window.SONG_LINES = {
       {
         "text": "तुम्हार",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "sīta dēhu rāma kahum̐ ahita na hōi tumhāra. 40.",
+    "roman": "sīta dēhu rāma kahum̐ ahita na hōi tumhāra.",
     "english": "{1:Give }{0:Sita }{2,3:to Rama, }{5:so that no }{4:harm }{6:befalls }{7:you.}",
     "words": [
       {
@@ -58947,11 +58558,11 @@ window.SONG_LINES = {
     "grammarNote": "lai and sunāi are absolutives/conjunctive participles. kahata bhayau is an inceptive/aspectual compound verb ('began saying' / 'proceeded to say')."
   },
   "line-477": {
-    "source": "दो०=रामु सत्यसंकल्प प्रभु सभा कालबस तोरि।",
+    "source": "रामु सत्यसंकल्प प्रभु सभा कालबस तोरि।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो०=रामु",
+        "text": "रामु",
         "wordIndices": [
           0
         ]
@@ -58959,43 +58570,37 @@ window.SONG_LINES = {
       {
         "text": "सत्यसंकल्प",
         "wordIndices": [
-          1
+          0
         ]
       },
       {
         "text": "प्रभु",
         "wordIndices": [
-          2
+          1
         ]
       },
       {
         "text": "सभा",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "कालबस",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "तोरि।",
         "wordIndices": [
-          5
+          4
         ]
       }
     ],
-    "roman": "dō.=rāmu satyasaṅkalpa prabhu sabhā kālabasa tōri.",
-    "english": "{0:Doha. }{0:Rama }{2:is the sovereign master }{1:of unfailing resolve, }{5:while your }{3:assembly }{4:is in the grip of death.}",
+    "roman": "rāmu satyasaṅkalpa prabhu sabhā kālabasa tōri.",
+    "english": "{1:is the sovereign master }{0:of unfailing resolve, }{4:while your }{2:assembly }{3:is in the grip of death.}",
     "words": [
-      {
-        "roman": "dō.=rāmu",
-        "gloss": "dohā marker + Rāma",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "satyasaṅkalpa",
         "gloss": "of unfailing resolve",
@@ -59030,7 +58635,7 @@ window.SONG_LINES = {
     "grammarNote": "dō.=rāmu prefixes the dohā metre indicator to the proper noun Rāma. satyasaṅkalpa is a bahuvrīhi compound qualifying prabhu. tōri is feminine genitive 2sg agreeing with sabhā."
   },
   "line-478": {
-    "source": "मै रघुबीर सरन अब जाउँ देहु जनि खोरि ॥ ४१ ॥",
+    "source": "मै रघुबीर सरन अब जाउँ देहु जनि खोरि",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -59078,11 +58683,12 @@ window.SONG_LINES = {
       {
         "text": "खोरि",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "mai raghubīra sarana aba jāuṁ dēhu jani khōri ॥ 41 ॥",
+    "roman": "mai raghubīra sarana aba jāuṁ dēhu jani khōri",
     "english": "{0:I }{4:go }{3:now }{2:to the shelter }{1:of the hero of Raghu's line; }{6:do not }{5:lay }{7:blame upon me.}",
     "words": [
       {
@@ -60095,73 +59701,61 @@ window.SONG_LINES = {
     "grammarNote": "Extended metaphor (rūpaka) 'ura sara sarōja' (lotus in the lake of the heart). Correlative closure: 'jēī' is resolved by demonstrative direct object 'tēī' governed by 'dēkhihauṁ'."
   },
   "line-487": {
-    "source": "दो०= जिन्ह पायन्ह के पादुकन्हि भरतु रहे मन लाइ।",
+    "source": "जिन्ह पायन्ह के पादुकन्हि भरतु रहे मन लाइ।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो०=",
+        "text": "जिन्ह",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जिन्ह",
+        "text": "पायन्ह",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "पायन्ह",
+        "text": "के",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "के",
+        "text": "पादुकन्हि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "पादुकन्हि",
+        "text": "भरतु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "भरतु",
+        "text": "रहे",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "रहे",
+        "text": "मन",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "मन",
+        "text": "लाइ।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "लाइ।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō.= jinha pāyanha kē pādukanhi bharatu rahē mana lāi.",
-    "english": "{0:Dohā: }{4:To the wooden sandals}{3: of}{1: whose}{2: feet}{5: Bharata}{6: remained}{7: with mind}{8: devotedly fixed,}",
+    "roman": "jinha pāyanha kē pādukanhi bharatu rahē mana lāi.",
+    "english": "{3:To the wooden sandals}{2: of}{0: whose}{1: feet}{4: Bharata}{5: remained}{6: with mind}{7: devotedly fixed,}",
     "words": [
-      {
-        "roman": "dō.=",
-        "gloss": "dōhā (couplet indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "jinha",
         "gloss": "whose; of which",
@@ -60214,7 +59808,7 @@ window.SONG_LINES = {
     "grammarNote": "'dō.=' is the structural marker for the doha verse form. Oblique plural forms 'pāyanha' and 'pādukanhi'. Compound verb construction 'mana lāi rahē' (continued fixing the mind)."
   },
   "line-488": {
-    "source": "ते पद आजु बिलोकिहउँ इन्ह नयनन्हि अब जाइ ॥ ४२ ॥",
+    "source": "ते पद आजु बिलोकिहउँ इन्ह नयनन्हि अब जाइ",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -60262,11 +59856,12 @@ window.SONG_LINES = {
       {
         "text": "जाइ",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "tē pada āju bilōkihauṁ inha nayananhi aba jāi ॥ 42 ॥",
+    "roman": "tē pada āju bilōkihauṁ inha nayananhi aba jāi",
     "english": "{0:those}{1: feet}{3: I shall behold}{2: today}{4: with these}{5: eyes,}{7: going}{6: now.}",
     "words": [
       {
@@ -61398,11 +60993,11 @@ window.SONG_LINES = {
     "grammarNote": "suni is a conjunctive participle; haraṣa is past tense (haraṣā / rejoiced); bacchala is the Tadbhava of Sanskrit vatsala (affectionate, protective like a cow to her calf)."
   },
   "line-498": {
-    "source": "दो०=सरनागत कहुँ जे तजहिं निज अनहित अनुमानि।",
+    "source": "सरनागत कहुँ जे तजहिं निज अनहित अनुमानि।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो०=सरनागत",
+        "text": "सरनागत",
         "wordIndices": [
           0
         ]
@@ -61410,49 +61005,43 @@ window.SONG_LINES = {
       {
         "text": "कहुँ",
         "wordIndices": [
-          1
+          0
         ]
       },
       {
         "text": "जे",
         "wordIndices": [
-          2
+          1
         ]
       },
       {
         "text": "तजहिं",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "निज",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "अनहित",
         "wordIndices": [
-          5
+          4
         ]
       },
       {
         "text": "अनुमानि।",
         "wordIndices": [
-          6
+          5
         ]
       }
     ],
-    "roman": "dō0=saranāgata kahum̐ jē tajahiṁ nija anahita anumāni.",
-    "english": "{0:Dohā: }{2:Those who}{3: abandon}{0,1: one who has come for refuge,}{6: calculating}{5: harm}{4: to themselves,}",
+    "roman": "saranāgata kahum̐ jē tajahiṁ nija anahita anumāni.",
+    "english": "{1:Those who}{2: abandon}{0: one who has come for refuge,}{5: calculating}{4: harm}{3: to themselves,}",
     "words": [
-      {
-        "roman": "dō0=saranāgata",
-        "gloss": "dohā: one who has come for refuge / the refugee",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "kahum̐",
         "gloss": "unto / to",
@@ -61493,7 +61082,7 @@ window.SONG_LINES = {
     "grammarNote": "dō0= is the verse type indicator prefixed to saranāgata; kahum̐ is the accusative/dative postposition; tajahiṁ is third-person plural present; anumāni is a conjunctive participle (having inferred)."
   },
   "line-499": {
-    "source": "ते नर पावँर पापमय तिन्हहि बिलोकत हानि ॥ ४३ ॥",
+    "source": "ते नर पावँर पापमय तिन्हहि बिलोकत हानि",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -61535,7 +61124,8 @@ window.SONG_LINES = {
       {
         "text": "हानि",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
@@ -62654,11 +62244,11 @@ window.SONG_LINES = {
     "grammarNote": "sabhīta is an adjectival adjunct modifying the elided subject of āvā; rakhiha'um̐ is 1st singular future indicative; prāna kī nāī is a comparative postpositional phrase."
   },
   "line-508": {
-    "source": "दो०=उभय भाँति तेहि आनहु हँसि कह कृपानिकेत।",
+    "source": "उभय भाँति तेहि आनहु हँसि कह कृपानिकेत।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो०=उभय",
+        "text": "उभय",
         "wordIndices": [
           0
         ]
@@ -62666,49 +62256,43 @@ window.SONG_LINES = {
       {
         "text": "भाँति",
         "wordIndices": [
-          1
+          0
         ]
       },
       {
         "text": "तेहि",
         "wordIndices": [
-          2
+          1
         ]
       },
       {
         "text": "आनहु",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "हँसि",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "कह",
         "wordIndices": [
-          5
+          4
         ]
       },
       {
         "text": "कृपानिकेत।",
         "wordIndices": [
-          6
+          5
         ]
       }
     ],
-    "roman": "dō0=ubhaya bhām̐ti tēhi ānahu ham̐si kaha kṛpānikēta.",
-    "english": "{4:Smiling, }{6:the abode of grace }{5:said: }{3:“Bring }{2:him }{0:in either }{1:case!”}",
+    "roman": "ubhaya bhām̐ti tēhi ānahu ham̐si kaha kṛpānikēta.",
+    "english": "{3:Smiling, }{5:the abode of grace }{4:said: }{2:“Bring }{1:him }{0:case!”}",
     "words": [
-      {
-        "roman": "dō0=ubhaya",
-        "gloss": "dohā tag + in both; either",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "bhām̐ti",
         "gloss": "ways; cases",
@@ -62749,7 +62333,7 @@ window.SONG_LINES = {
     "grammarNote": "dō0= is the meter identifier prefixed to ubhaya; ubhaya bhām̐ti functions adverbially; ānahu is 2nd plural imperative; ham̐si is a conjunctive participle (absolutive); kṛpānikēta is a tatpuruṣa compound (kṛpā + nikēta) functioning as nominative subject of kaha."
   },
   "line-509": {
-    "source": "जय कृपाल कहि चले अंगद हनू समेत ॥ ४४ ॥",
+    "source": "जय कृपाल कहि चले अंगद हनू समेत",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -62791,7 +62375,8 @@ window.SONG_LINES = {
       {
         "text": "समेत",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
@@ -63838,73 +63423,61 @@ window.SONG_LINES = {
     "grammarNote": "pāpapriya is a bahuvrīhi/tatpuruṣa compound. ulūkahi has the dative/genitive suffix -hi. jathā introduces the similitude."
   },
   "line-518": {
-    "source": "दो. श्रवन सुजसु सुनि आयउँ प्रभु भंजन भव भीर।",
+    "source": "श्रवन सुजसु सुनि आयउँ प्रभु भंजन भव भीर।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "श्रवन",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "श्रवन",
+        "text": "सुजसु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सुजसु",
+        "text": "सुनि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सुनि",
+        "text": "आयउँ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "आयउँ",
+        "text": "प्रभु",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "प्रभु",
+        "text": "भंजन",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "भंजन",
+        "text": "भव",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "भव",
+        "text": "भीर।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "भीर।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō. śravana sujasu suni āyaum̐ prabhu bhañjana bhava bhīra.",
-    "english": "{3:Having heard }{2:your glorious renown }{1:with my ears, }{4:I have come, }{5:O sovereign protector, }{6:shatterer }{8:of the distress }{0,7:of worldly existence,}",
+    "roman": "śravana sujasu suni āyaum̐ prabhu bhañjana bhava bhīra.",
+    "english": "{2:Having heard }{1:your glorious renown }{0:with my ears, }{3:I have come, }{4:O sovereign protector, }{5:shatterer }{7:of the distress }{6:of worldly existence,}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "śravana",
         "gloss": "with ears",
@@ -63957,7 +63530,7 @@ window.SONG_LINES = {
     "grammarNote": "dō. abbreviates dohā (couplet). śravana is used instrumentally ('with the ears'). suni is an absolutive participle. āyaum̐ is 1st person singular past."
   },
   "line-519": {
-    "source": "त्राहि त्राहि आरति हरन सरन सुखद रघुबीर ॥ ४५ ॥",
+    "source": "त्राहि त्राहि आरति हरन सरन सुखद रघुबीर",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -63999,11 +63572,12 @@ window.SONG_LINES = {
       {
         "text": "रघुबीर",
         "wordIndices": [
-          6
+          6,
+          7
         ]
       }
     ],
-    "roman": "trāhi trāhi ārati harana sarana sukhada raghubīra. 45.",
+    "roman": "trāhi trāhi ārati harana sarana sukhada raghubīra.",
     "english": "{0:Save me! }{1:Save me! }{3:O dispeller }{2:of distress, }{5:giver of peace }{4:in shelter, }{6,7:O hero of Raghu’s line!”}",
     "words": [
       {
@@ -65118,79 +64692,67 @@ window.SONG_LINES = {
     "grammarNote": "dēkhi and jāni are conjunctive participles. raghurāyā is a vocative compound (Raghu + rāyā). kīnha is 2sg/polite past transitive."
   },
   "line-528": {
-    "source": "दो. तब लगि कुसल न जीव कहुँ सपनेहुँ मन बिश्राम।",
+    "source": "तब लगि कुसल न जीव कहुँ सपनेहुँ मन बिश्राम।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "तब",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "तब",
+        "text": "लगि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "लगि",
+        "text": "कुसल",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कुसल",
+        "text": "न",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "न",
+        "text": "जीव",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "जीव",
+        "text": "कहुँ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कहुँ",
+        "text": "सपनेहुँ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "सपनेहुँ",
+        "text": "मन",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "मन",
+        "text": "बिश्राम।",
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "बिश्राम।",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "dō. taba lagi kusala na jīva kahum̐ sapanēhum̐ mana biśrāma.",
-    "english": "{0:Dohā. }{1,2:Until then, }{4:there is no }{3:well-being }{6:for a }{5:jīva, }{9:nor rest }{8:for the mind }{7:even in a dream,}",
+    "roman": "taba lagi kusala na jīva kahum̐ sapanēhum̐ mana biśrāma.",
+    "english": "{0,1:Until then, }{3:there is no }{2:well-being }{5:for a }{4:jīva, }{8:nor rest }{7:for the mind }{6:even in a dream,}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "dohā (couplet meter indicator)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "taba",
         "gloss": "until then; so long",
@@ -65249,7 +64811,7 @@ window.SONG_LINES = {
     "grammarNote": "dō. is an editorial metrical label. kahum̐ is the dative/accusative postposition. sapanēhum̐ has the emphatic marker -hum̐ suffixed to the locative form sapana-ē."
   },
   "line-529": {
-    "source": "जब लगि भजत न राम कहुँ सोक धाम तजि काम ॥ ४६ ॥",
+    "source": "जब लगि भजत न राम कहुँ सोक धाम तजि काम",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -65309,11 +64871,12 @@ window.SONG_LINES = {
       {
         "text": "काम",
         "wordIndices": [
-          9
+          9,
+          10
         ]
       }
     ],
-    "roman": "jaba lagi bhajata na rāma kahum̐ sōka dhāma taji kāma. 46.",
+    "roman": "jaba lagi bhajata na rāma kahum̐ sōka dhāma taji kāma.",
     "english": "{0,1:so long as }{3:one does not }{2:worship }{4,5:Rāma, }{8:having renounced }{9:kāma, }{7:the abode }{6,10:of sorrow.}",
     "words": [
       {
@@ -66506,73 +66069,61 @@ window.SONG_LINES = {
     "grammarNote": "'jāsu ... tēhiṁ' relative-correlative construction. 'tēhiṁ prabhu' functions as the agent in ergative/instrumental construction with transitive past verb 'lāvā'."
   },
   "line-538": {
-    "source": "दो. -अहोभाग्य मम अमित अति राम कृपा सुख पुंज।",
+    "source": "अहोभाग्य मम अमित अति राम कृपा सुख पुंज।",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
-        "text": "दो.",
+        "text": "अहोभाग्य",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "-अहोभाग्य",
+        "text": "मम",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मम",
+        "text": "अमित",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "अमित",
+        "text": "अति",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "अति",
+        "text": "राम",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "राम",
+        "text": "कृपा",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कृपा",
+        "text": "सुख",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "सुख",
+        "text": "पुंज।",
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "पुंज।",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "dō. -ahōbhāgya mama amita ati rāma kṛpā sukha puñja.",
-    "english": "{0:Dohā. }{4:Exceedingly }{3:boundless }{2:is my }{1:supreme fortune, }{5:O Rāma, }{6,8:embodiment of grace }{7:and bliss,}",
+    "roman": "-ahōbhāgya mama amita ati rāma kṛpā sukha puñja.",
+    "english": "{3:Exceedingly }{2:boundless }{1:is my }{0:supreme fortune, }{4:O Rāma, }{5,7:embodiment of grace }{6:and bliss,}",
     "words": [
-      {
-        "roman": "dō.",
-        "gloss": "couplet marker",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "-ahōbhāgya",
         "gloss": "O supreme good fortune",
@@ -66625,7 +66176,7 @@ window.SONG_LINES = {
     "grammarNote": "'dō.' is a metrical section header abbreviation for dohā. 'kṛpā sukha puñja' is a vocative or nominative compound modifying Rāma."
   },
   "line-539": {
-    "source": "देखेउँ नयन बिरंचि सिब सेब्य जुगल पद कंज ॥ ४७ ॥",
+    "source": "देखेउँ नयन बिरंचि सिब सेब्य जुगल पद कंज",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -66673,11 +66224,12 @@ window.SONG_LINES = {
       {
         "text": "कंज",
         "wordIndices": [
-          7
+          7,
+          8
         ]
       }
     ],
-    "roman": "dēkhēuṁ nayana birañci siba sēbya jugala pada kañja. 47.",
+    "roman": "dēkhēuṁ nayana birañci siba sēbya jugala pada kañja.",
     "english": "{1:for with my own eyes }{0:I have seen }{5:the pair }{7:of lotus }{6:feet }{4:served by }{2:Brahmā }{3,8:and Śiva.}",
     "words": [
       {

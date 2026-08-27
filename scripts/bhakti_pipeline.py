@@ -2713,8 +2713,15 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
 
 
 VERSE_MARKER_SOURCE = re.compile(r"(?:॥|\|\|)\s*[०-९0-9]+\s*(?:॥|\|\|)\s*$")
-VERSE_MARKER_ROMAN = re.compile(r"\s*(?:\.\.)\s*[0-9]+\s*(?:\.\.)\s*$")
+VERSE_MARKER_ROMAN = re.compile(r"\s*(?:(?:\.\.)|॥|\|\|)?\s*[0-9]+\s*(?:(?:\.\.)|॥|\|\||\.)?\s*$")
 VERSE_MARKER_ENGLISH = re.compile(r"\s*(?:[.॥|]*\s*)?[0-9]+(?:\s*[.॥|]+)?\s*$")
+DOHA_PREFIX_SOURCE = re.compile(r"^\s*दो(?:हा)?(?:[.०0=]+)?\s*[-=]?\s*")
+CHHAND_PREFIX_SOURCE = re.compile(r"^\s*छं(?:[.=]+)?\s*")
+SORATHA_PREFIX_SOURCE = re.compile(r"^\s*सो(?:[.=]+)\s*")
+DOHA_PREFIX_ROMAN = re.compile(r"^\s*d[ōo](?:[.0=]+)?\s*")
+CHHAND_PREFIX_ROMAN = re.compile(r"^\s*chaṃ(?:[.=]+)?\s*")
+SORATHA_PREFIX_ROMAN = re.compile(r"^\s*s[ōo](?:[.=]+)\s*")
+DEVANAGARI_DIGITS = str.maketrans("०१२३४५६७८९", "0123456789")
 
 
 def has_terminal_verse_marker(source: str) -> bool:
@@ -2726,12 +2733,34 @@ def display_roman_without_verse_marker(roman: str, source: str) -> str:
     return VERSE_MARKER_ROMAN.sub("", roman).rstrip() if has_terminal_verse_marker(source) else roman
 
 
+def display_source_without_verse_marker(source: str) -> str:
+    return VERSE_MARKER_SOURCE.sub("", str(source or "")).rstrip()
+
+
 def is_verse_marker_english_segment(text: object) -> bool:
     return bool(VERSE_MARKER_ENGLISH.fullmatch(str(text or "")))
 
 
 def strip_terminal_verse_marker_english(text: object) -> str:
     return VERSE_MARKER_ENGLISH.sub("", str(text or "")).rstrip()
+
+
+def metrical_prefix(source: str) -> tuple[str, str, re.Pattern[str] | None]:
+    """Return a display note and source without a printed meter abbreviation."""
+    for title, pattern in (("Dohā", DOHA_PREFIX_SOURCE), ("Chhand", CHHAND_PREFIX_SOURCE),
+                           ("Sorathā", SORATHA_PREFIX_SOURCE)):
+        if pattern.match(source):
+            return title, pattern.sub("", source, count=1), pattern
+    return "", source, None
+
+
+def nearby_dohā_number(lines: list[dict[str, Any]], line_index: int) -> str:
+    """Dohā labels name the couplet whose printed number follows within two lines."""
+    for candidate in lines[line_index:line_index + 3]:
+        match = re.search(r"[॥|]\s*([०-९0-9]+)\s*[॥|]\s*$", str(candidate.get("source_text", "")))
+        if match:
+            return match.group(1).translate(DEVANAGARI_DIGITS)
+    return ""
 
 
 def language_code(language: str) -> str:
@@ -2814,7 +2843,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css?v=contract-20260821-8" />
-  <link rel="stylesheet" href="/assets/song.css?v=contract-20260823-9" />
+  <link rel="stylesheet" href="/assets/song.css?v=contract-20260827-10" />
   <link rel="stylesheet" href="/assets/site.css?v=contract-20260823-3" />
   <link rel="stylesheet" href="/assets/app.css?v=contract-20260823-16" />
 </head>
@@ -2837,11 +2866,11 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260823-1"></script>
+  <script src="data.js?v=contract-20260827-2"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=contract-20260823-5"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
-  <script src="/assets/song.js?v=contract-20260827-5"></script>
+  <script src="/assets/song.js?v=contract-20260827-6"></script>
   <script src="/assets/app.js?v=contract-20260823-18"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>
@@ -3059,29 +3088,59 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "translationStatus": "gloss-derived literal",
             "sourceStatus": "reviewed"}
     line_data: dict[str, Any] = {}
-    for line in lines:
+    structural_markers: dict[str, str] = {}
+    for line_index, line in enumerate(lines):
         line_id = line["id"]
         row = translation_by_id[line_id]
         words = [gloss_policy.clean_word({**word, "roman": naming.canonical_iast(word.get("roman", ""))})
                  for word in gloss_by_id[line_id].get("word_glosses", [])]
         source = line.get("source_text", "")
+        source_has_verse_marker = has_terminal_verse_marker(source)
+        marker_title, display_source, marker_pattern = metrical_prefix(display_source_without_verse_marker(source))
+        display_roman = naming.canonical_iast(line.get("roman", ""))
+        hidden_word_indices: set[int] = set()
+        if marker_pattern is DOHA_PREFIX_SOURCE:
+            structural_markers[line_id] = " ".join(filter(None, (marker_title, nearby_dohā_number(lines, line_index))))
+            display_roman = DOHA_PREFIX_ROMAN.sub("", display_roman, count=1)
+            hidden_word_indices.add(0)
+        elif marker_pattern is CHHAND_PREFIX_SOURCE:
+            structural_markers[line_id] = marker_title
+            display_roman = CHHAND_PREFIX_ROMAN.sub("", display_roman, count=1)
+            if words:
+                words[0]["roman"] = CHHAND_PREFIX_ROMAN.sub("", words[0]["roman"], count=1)
+        elif marker_pattern is SORATHA_PREFIX_SOURCE:
+            structural_markers[line_id] = marker_title
+            display_roman = SORATHA_PREFIX_ROMAN.sub("", display_roman, count=1)
+            hidden_word_indices.add(0)
+        index_map = {old: new for new, old in enumerate(index for index in range(len(words))
+                                                          if index not in hidden_word_indices)}
+        words = [word for index, word in enumerate(words) if index not in hidden_word_indices]
+        remapped_parts = []
+        for part in row.get("segments", []):
+            original_indices = [index for index in part.get("word_indices", []) if isinstance(index, int)]
+            indices = [index_map[index] for index in original_indices if index in index_map]
+            if original_indices and not indices:
+                continue
+            remapped_parts.append({**part, "word_indices": indices})
         marker_indexes = {index for index, word in enumerate(words)
                           if re.fullmatch(r"[0-9]+", str(word.get("roman", "")).strip())}
-        source_words = [mapping for mapping in source_word_map.build_source_words(source, words)
+        source_words = [mapping for mapping in source_word_map.build_source_words(display_source, words)
                         if not (set(mapping.get("wordIndices", [])).issubset(marker_indexes)
-                                or (has_terminal_verse_marker(source)
+                                or (source_has_verse_marker
                                     and re.fullmatch(r"[०-९0-9]+", str(mapping.get("text", "")).strip())))]
-        english_parts = [part for part in row.get("segments", [])
+        english_parts = [part for part in remapped_parts
                          if not is_verse_marker_english_segment(part.get("text"))]
-        if has_terminal_verse_marker(source) and english_parts:
+        if source_has_verse_marker and english_parts:
             english_parts = [dict(part) for part in english_parts]
             english_parts[-1]["text"] = strip_terminal_verse_marker_english(english_parts[-1].get("text"))
         english_fallback = strip_terminal_verse_marker_english(row.get("literal_english", ""))
-        line_data[line_id] = {"source": source, "sourceLanguage": language_code((meta["languages"] or [""])[0]),
+        line_data[line_id] = {"source": display_source, "sourceLanguage": language_code((meta["languages"] or [""])[0]),
                               "sourceWords": source_words,
-                              "roman": display_roman_without_verse_marker(naming.canonical_iast(line.get("roman", "")), source), "english": segment_english(english_parts, english_fallback),
+                              "roman": display_roman_without_verse_marker(display_roman, source), "english": segment_english(english_parts, english_fallback),
                               "words": words,
                               "grammarNote": naming.canonical_iast(gloss_by_id[line_id].get("grammar_note", ""))}
+    if structural_markers:
+        meta["structuralMarkers"] = structural_markers
     sequence = [{"ref": event["ref"],
                  "section": event.get("section") or next((line.get("kind", "verse")
                                                            for line in lines if line["id"] == event["ref"]), "verse"),
