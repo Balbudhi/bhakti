@@ -884,9 +884,10 @@ function setupTopControls() {
 
 function fmtTime(s) {
   if (!isFinite(s)) return "—:—";
-  const m = Math.floor(s / 60);
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
   const sec = Math.floor(s % 60).toString().padStart(2, "0");
-  return `${m}:${sec}`;
+  return h ? `${h}:${m.toString().padStart(2, "0")}:${sec}` : `${m}:${sec}`;
 }
 
 function setupAudioPlayer() {
