@@ -28,7 +28,7 @@
 
   window.addEventListener("load", async () => {
     try {
-      const registration = await navigator.serviceWorker.register("/sw.js", { updateViaCache: "none" });
+      const registration = await navigator.serviceWorker.register("/sw.js?v=31", { updateViaCache: "none" });
       const checkForUpdate = () => {
         const now = Date.now();
         if (now - lastCheck < 5 * 60 * 1000) return;
