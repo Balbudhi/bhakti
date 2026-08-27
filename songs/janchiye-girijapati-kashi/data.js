@@ -290,7 +290,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāciye girijāpati kāsī",
-    "english": "{0:Beseech }{1:the Lord of Girija }{2:in Kashi,}",
+    "english": "{0:Beseech }{1:Girijā’s protector-consort }{2:in Kashi,}",
     "words": [
       {
         "roman": "Jāciye",
@@ -300,7 +300,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "girijāpati",
-        "gloss": "the Lord of Girija (Parvati)",
+        "gloss": "Girijā’s protector-consort; Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -755,7 +755,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raghupati",
-        "gloss": "of Lord Raghupati (Rama)",
+        "gloss": "of Rāma, guardian of Raghu’s line",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -826,7 +826,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raghupati",
-        "gloss": "of Lord Raghupati (Rama)",
+        "gloss": "of Rāma, guardian of Raghu’s line",
         "concept_key": "",
         "preserve_in_english": false
       },

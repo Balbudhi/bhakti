@@ -1708,7 +1708,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū hī hai kailāśa pati tū parvata para dole\nsaba devõ mẽ deva nirāle jaya bama bama bhole",
-    "english": "{0,1,2,3,4:You alone are the Lord of Kailash, }{5,6,7,8:You roam upon the mountain;\n}{9,10,11,12,13: Peerless God among all gods, }{14,15,16,17:victory, Bam Bam Bhole!}",
+    "english": "{0,1,2,3,4:You alone are guardian of Kailāśa, }{5,6,7,8:You roam upon the mountain;\n}{9,10,11,12,13: Peerless God among all gods, }{14,15,16,17:victory, Bam Bam Bhole!}",
     "words": [
       {
         "roman": "tū",
@@ -1736,7 +1736,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pati",
-        "gloss": "Lord / Sovereign",
+        "gloss": "guardian-ruler; protector",
         "concept_key": "",
         "preserve_in_english": false
       },

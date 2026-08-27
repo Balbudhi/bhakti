@@ -20,6 +20,28 @@ FICTIONAL_COINAGES = {
     "mithril": "fictional Tolkien metal",
 }
 
+# Sanskrit pati (and the transparent -pati compounds built with it) ranges over
+# guardian, protector, sustaining partner, husband/consort, ruler, and leader.
+# English "lord" is too easy a default: it drops the relation named by the
+# compound and imports a specifically English feudal/theological overtone.
+# This is deliberately a rejection rule rather than a universal replacement;
+# a homographic vernacular token still needs its local sense.
+PATI_NON_LEMMAS = (
+    "patit", "patita", "patitap", "sampati", "kapati", "vipati", "patisahi",
+)
+
+
+def is_pati_lexeme(roman: object) -> bool:
+    normalized = key(roman).replace(" ", "")
+    if not normalized or normalized.startswith(PATI_NON_LEMMAS):
+        return False
+    return normalized == "pati" or bool(re.search(r"pati(?:hi|m|na|ne|no|yo|ye)?$", normalized))
+
+
+def has_flat_pati_lord_gloss(roman: object, gloss: object) -> bool:
+    """Whether a pati-term has been flattened to the prohibited bare title."""
+    return is_pati_lexeme(roman) and bool(re.search(r"\blord\b", str(gloss or ""), re.I))
+
 
 def key(value: object) -> str:
     text = unicodedata.normalize("NFKD", str(value or ""))
@@ -75,6 +97,8 @@ MEANING_ONLY = {
     "rudra": "fierce form of Śiva",
     "sai": "holy master",
     "sainath": "Lord Sai",
+    "shiva": "the auspicious one; deity of transformation and yogic asceticism",
+    "siva": "the auspicious one; deity of transformation and yogic asceticism",
     "sivasankara": "Śiva as the auspicious maker of good",
     "sudama": "impoverished devotee and friend of Kṛṣṇa",
     "tunga": "lofty; high",

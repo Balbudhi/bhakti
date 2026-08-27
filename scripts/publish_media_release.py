@@ -55,10 +55,12 @@ def release_assets(repository: str, tag: str) -> dict[str, int]:
     return {str(asset["name"]): int(asset["size"]) for asset in release.get("assets", [])}
 
 
-def local_audio() -> dict[str, list[tuple[Path, str, str]]]:
+def local_audio(selected_slugs: set[str] | None = None) -> dict[str, list[tuple[Path, str, str]]]:
     songs: dict[str, list[tuple[Path, str, str]]] = {}
     for directory in sorted((ROOT / "songs").iterdir()):
         if not directory.is_dir():
+            continue
+        if selected_slugs is not None and directory.name not in selected_slugs:
             continue
         sources = []
         for suffix in PREFERRED:
@@ -95,6 +97,8 @@ def main() -> int:
     parser.add_argument("--tag", default="media-v1")
     parser.add_argument("--repository", default="")
     parser.add_argument("--manifest-only", action="store_true")
+    parser.add_argument("--song", action="append", default=[], metavar="SLUG",
+                        help="Publish only this song's listener audio; repeat for a small release batch.")
     args = parser.parse_args()
 
     repository = args.repository or repository_name()
@@ -106,7 +110,12 @@ def main() -> int:
         for sources in manifest_songs.values() if isinstance(sources, list)
         for source in sources if isinstance(source, dict)
     }
-    local = local_audio()
+    selected = set(args.song) if args.song else None
+    local = local_audio(selected)
+    if selected:
+        missing = sorted(selected - set(local))
+        if missing:
+            raise SystemExit(f"selected songs lack listener audio: {', '.join(missing)}")
     assets = {} if args.manifest_only else release_assets(repository, args.tag)
 
     pending: list[tuple[Path, str]] = []

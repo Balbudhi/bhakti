@@ -9485,7 +9485,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahipatī",
-        "gloss": "kings; lords of the earth",
+        "gloss": "earthly kings and rulers",
         "concept_key": "",
         "preserve_in_english": false
       },

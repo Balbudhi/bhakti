@@ -29,7 +29,10 @@ def arguments() -> argparse.Namespace:
 
 def _run_json(command: list[str]) -> dict[str, Any]:
     if command and command[0] == "yt-dlp":
-        command = ["yt-dlp", "-4", *command[1:]]
+        # Resolver lookups are metadata-only. Bound network retries so an
+        # unavailable YouTube Music search fails closed instead of stranding a
+        # whole intake batch before it can report an ambiguity.
+        command = ["yt-dlp", "-4", "--socket-timeout", "15", "--retries", "2", *command[1:]]
     result = subprocess.run(command, check=True, capture_output=True, text=True)
     payload = json.loads(result.stdout)
     if not isinstance(payload, dict):

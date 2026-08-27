@@ -1490,7 +1490,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma hō ēka agōcara, sabakē prāṇapati",
-    "english": "{0:You }{1:are }{2:the one }{3:beyond sense perception, }{5:the Lord of life }{4:of all;}",
+    "english": "{0:You }{1:are }{2:the one }{3:beyond sense perception, }{5:the guardian of life }{4:of all;}",
     "words": [
       {
         "roman": "tuma",
@@ -1524,7 +1524,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prāṇapati",
-        "gloss": "Lord of life; Master of vital breath",
+        "gloss": "guardian of life; protector of vital breath",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1555,7 +1555,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svāmī sabakē prāṇapati",
-    "english": "{0:O Master, }{2:Lord of life }{1:of all;}",
+    "english": "{0:O Master, }{2:guardian of life }{1:of all;}",
     "words": [
       {
         "roman": "svāmī",
@@ -1571,7 +1571,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prāṇapati",
-        "gloss": "Lord of life; Master of vital breath",
+        "gloss": "guardian of life; protector of vital breath",
         "concept_key": "",
         "preserve_in_english": false
       }

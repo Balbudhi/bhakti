@@ -304,7 +304,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jabahīṁ raghupati saṅga siya calī",
-    "english": "{0:The very moment }{3:Sita }{4:set forth }{2:with }{1:the Lord of the Raghus,}",
+    "english": "{0:The very moment }{3:Sita }{4:set forth }{2:with }{1:Rāma, guardian of the Raghus,}",
     "words": [
       {
         "roman": "jabahīṁ",
@@ -314,7 +314,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raghupati",
-        "gloss": "the Lord of Raghu's line (Rama)",
+        "gloss": "guardian of Raghu’s line; Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },

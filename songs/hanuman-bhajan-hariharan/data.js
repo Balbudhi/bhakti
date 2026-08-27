@@ -3812,7 +3812,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunu kapīsa laṁkāpati bīrā",
-    "english": "{0:“Listen, }{1:O lord of monkeys, }{2:O lord of Lanka, }{3:O heroes,}",
+    "english": "{0:“Listen, }{1:O leader of the monkeys, }{2:O guardian-ruler of Lanka, }{3:O heroes,}",
     "words": [
       {
         "roman": "sunu",
@@ -3828,7 +3828,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "laṁkāpati",
-        "gloss": "O lord of Lanka (Vibhishana)",
+        "gloss": "guardian-ruler of Laṅkā; Vibhīṣaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15150,7 +15150,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "asa kahi raghupati cāpa caṛhāvā. yaha mata lachimana kē mana bhāvā.",
-    "english": "{1:Having spoken }{0:thus, }{2:the Lord of the Raghus }{4:strung }{3:his bow; }{5:this }{6:resolve }{10:pleased }{7,8:Lakṣmaṇa’s }{9:heart.}",
+    "english": "{1:Having spoken }{0:thus, }{2:Rāma, guardian of Raghu’s line, }{4:strung }{3:his bow; }{5:this }{6:resolve }{10:pleased }{7,8:Lakṣmaṇa’s }{9:heart.}",
     "words": [
       {
         "roman": "asa",
@@ -15166,7 +15166,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raghupati",
-        "gloss": "the Lord of the Raghu lineage (Rāma)",
+        "gloss": "guardian of the Raghu lineage; Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18416,7 +18416,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nija bhavana gavaneu sindhu śrīraghupatihi yaha mata bhāyaū",
-    "english": "{3:The ocean}{2: departed}{0: to his own}{1: abode,}{5: and this}{6: counsel}{7: pleased}{4: Shri Raghupati.}",
+    "english": "{3:The ocean}{2: departed}{0: to his own}{1: abode,}{5: and this}{6: counsel}{7: pleased}{4: Śrī Rāma, guardian of the Raghu lineage.}",
     "words": [
       {
         "roman": "nija",
@@ -18444,7 +18444,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīraghupatihi",
-        "gloss": "to Shri Raghupati [Lord Rama]",
+        "gloss": "to Śrī Rāma, guardian of the Raghu lineage",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18624,7 +18624,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukha bhavana saṁsaya samana davana bisāda raghupati guna ganā",
-    "english": "{8:The multitude}{6: of Raghupati's}{7: guṇas}{1: is an abode}{0: of joy,}{3: the queller}{2: of doubt,}{4: and the subduer}{5: of grief;}",
+    "english": "{8:The multitude}{6: of Rāma’s}{7: guṇas}{1: is an abode}{0: of joy,}{3: the queller}{2: of doubt,}{4: and the subduer}{5: of grief;}",
     "words": [
       {
         "roman": "sukha",
@@ -18664,7 +18664,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raghupati",
-        "gloss": "of the Lord of the Raghus [Rama]",
+        "gloss": "of Rāma, guardian of the Raghus",
         "concept_key": "",
         "preserve_in_english": false
       },

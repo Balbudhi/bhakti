@@ -19,17 +19,21 @@ class PipelineTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix="bhakti-pipeline-test-")
         self.root = Path(self.temp.name)
         self.original_root = pipeline.ROOT
+        self.original_queue_numbers_path = pipeline.QUEUE_NUMBERS_PATH
         registry = (self.original_root / "data" / "preserved_terms.json").read_text(encoding="utf-8")
         source_credits = (self.original_root / "data" / "source_credits.json").read_text(encoding="utf-8")
         pipeline.ROOT = self.root
         (self.root / "songs").mkdir()
         (self.root / "data").mkdir()
         (self.root / "data" / "songs.js").write_text("window.BHAKTI_SONGS = [];\n", encoding="utf-8")
+        (self.root / "data" / "queue_numbers.json").write_text('{"schemaVersion": 1, "numbers": {}}\n', encoding="utf-8")
         (self.root / "data" / "preserved_terms.json").write_text(registry, encoding="utf-8")
         (self.root / "data" / "source_credits.json").write_text(source_credits, encoding="utf-8")
+        pipeline.QUEUE_NUMBERS_PATH = self.root / "data" / "queue_numbers.json"
 
     def tearDown(self) -> None:
         pipeline.ROOT = self.original_root
+        pipeline.QUEUE_NUMBERS_PATH = self.original_queue_numbers_path
         self.temp.cleanup()
 
     def test_local_mp3_is_transcoded_to_real_m4a(self) -> None:
@@ -86,6 +90,25 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("Shirdi Sai Baba", (self.root / "data" / "songs.js").read_text(encoding="utf-8"))
         self.assertIn("manifest.webmanifest", page)
 
+    def test_generation_preserves_only_valid_reviewed_composite_metadata(self) -> None:
+        song = self.root / "songs" / "composite-song"
+        song.mkdir()
+        audited = {"packet": {"metadata": {"languages": ["Sanskrit"]}, "uncertainties": [], "verified_lines": [
+            {"id": "line-one", "source_text": "ॐ", "roman": "oṁ", "kind": "invocation"}
+        ]}}
+        timing = {"sequence": [{"ref": "line-one", "start": 0.0, "end": 1.0}], "validation_errors": []}
+        glosses = {"packet": {"glosses": [{"id": "line-one", "word_glosses": [{"roman": "oṁ", "gloss": "Om"}],
+                                               "grammar_note": "", "uncertainty": ""}]}}
+        translations = {"packet": {"translations": [{"id": "line-one", "literal_english": "Om.",
+            "segments": [{"text": "Om.", "word_indices": [0]}], "uncertainty": ""}]}}
+        job = {"slug": "composite-song", "source": "unused", "title": "Composite", "languages": ["Sanskrit"],
+               "sectionNotices": [{"sequenceIndex": 0, "title": "Source text", "poet": "Vedic Sanskrit", "note": "Exact recitation."}],
+               "adaptedSequenceIndices": [0]}
+        pipeline.generate(song, job, {}, audited, timing, glosses, translations)
+        data = (song / "data.js").read_text(encoding="utf-8")
+        self.assertIn('"sectionNotices"', data)
+        self.assertIn('"adaptedSequenceIndices"', data)
+
     def test_publication_gate_rejects_uncertainty(self) -> None:
         audited = {"packet": {"verified_lines": [], "uncertainties": ["unclear word"]}}
         timing = {"sequence": [], "validation_errors": []}
@@ -112,6 +135,14 @@ class PipelineTests(unittest.TestCase):
         rows = [{"id": "line", "word_glosses": [{"roman": "sāṁs", "gloss": "breath"}]}]
         self.assertIn("line lacks a complete semantic frame", pipeline.gloss_contract_errors(lines, rows))
 
+    def test_pati_lord_flattening_blocks_gloss_contract(self) -> None:
+        lines = [{"id": "line", "roman": "raghupati", "source_text": "रघुपति"}]
+        rows = [{"id": "line", "word_glosses": [{"roman": "raghupati", "gloss": "Lord of Raghu",
+                                                        "concept_key": "", "preserve_in_english": False}],
+                 "semantic_frame": {field: "" for field in pipeline.SEMANTIC_FRAME_FIELDS},
+                 "grammar_note": "", "uncertainty": ""}]
+        self.assertIn("line word gloss 0 flattens pati to Lord", pipeline.gloss_contract_errors(lines, rows))
+
     def test_long_transcript_cache_contract_is_versioned(self) -> None:
         self.assertGreaterEqual(pipeline.LONG_TRANSCRIPT_CONTRACT_VERSION, 1)
 
@@ -129,6 +160,21 @@ class PipelineTests(unittest.TestCase):
         normalized = pipeline.normalize_trim_artifact(artifact)
         self.assertEqual(normalized["trim_start"], 8.25)
         self.assertEqual(normalized["trim_end"], 100.0)
+        self.assertEqual(normalized["validation_errors"], [])
+
+    def test_channel_promotion_intro_is_a_valid_trim_target(self) -> None:
+        artifact = {
+            "duration": 100.0,
+            "start": {"response": {"packet": {
+                "decision": "trim", "boundary": 16.14, "outside_type": "channel_promotion", "confidence": "high"
+            }}},
+            "end": {"clip_start": 25.0, "response": {"packet": {
+                "decision": "keep", "boundary": 75.0, "outside_type": "none", "confidence": "high"
+            }}},
+            "trim_start": 0.0, "trim_end": 100.0, "validation_errors": []
+        }
+        normalized = pipeline.normalize_trim_artifact(artifact)
+        self.assertEqual(normalized["trim_start"], 16.14)
         self.assertEqual(normalized["validation_errors"], [])
 
     def test_post_song_film_dialogue_is_a_valid_trim_target(self) -> None:

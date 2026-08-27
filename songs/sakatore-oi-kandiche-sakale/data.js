@@ -807,7 +807,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kī habe gati, biśvapati, śānti kothā āche?",
-    "english": "{0:What }{1:will be }{2:our way, }{3:Lord of the Universe—}{5:where }{6:is }{4:peace?}",
+    "english": "{0:What }{1:will be }{2:our way, }{3:guardian of the universe—}{5:where }{6:is }{4:peace?}",
     "words": [
       {
         "roman": "Kī",
@@ -829,7 +829,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "biśvapati,",
-        "gloss": "Lord of the Universe",
+        "gloss": "guardian-ruler of the universe",
         "concept_key": "",
         "preserve_in_english": false
       },

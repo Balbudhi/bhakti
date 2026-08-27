@@ -1440,7 +1440,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pati",
-        "gloss": "husband; Lord (Shiva)",
+        "gloss": "husband and protector; Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }

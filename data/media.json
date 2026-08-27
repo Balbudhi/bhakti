@@ -313,6 +313,18 @@
         "sha256": "669da510dfa8b48242073aa10b0667cced9e98a7cfaef766ae46d0ea0d485d75"
       }
     ],
+    "chalo-man-jayen-ghar-apne": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "15ad815fc9b174f38438f82b27c0cf091bc12e51da4f59df39329b08184035bb"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.m4a",
+        "type": "audio/mp4",
+        "sha256": "7bea418d469f7dc9b4c2dfd22424b228135795de2c709376ac67ee5ce2f0e53e"
+      }
+    ],
     "chalo-shirdi-ku-jibare-sabhien": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-shirdi-ku-jibare-sabhien.webm",
@@ -1543,6 +1555,37 @@
         "sha256": "9087a17ec3dd413d3bd34864e778e5c8c2f3281e5fec5cce4d71b11e07c1de41"
       }
     ],
+    "om-namah-shivaya-damaru-paani-shool": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-namah-shivaya-damaru-paani-shool.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2f905d1c60f4600d41597876b66c88d91594999145f325e6db6a889a6ca22ff8"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-namah-shivaya-damaru-paani-shool.m4a",
+        "type": "audio/mp4",
+        "sha256": "ae3ff45b3835e996947633a53b3b8b9e94699194c5081e35e834178f11bac895"
+      }
+    ],
+    "om-pandit-jasraj-extended": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-pandit-jasraj-extended.m4a",
+        "type": "audio/mp4",
+        "sha256": "eac3f3939b0bc6dc54b9e9084dd701626ac594803946553f4e86fd967cfa1913"
+      }
+    ],
+    "om-pandit-jasraj-mandukya": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-pandit-jasraj-mandukya.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "22c20c956a6a583ab66ffb1e596a7e53ff8c6dc3e7580e9c613a611be48d5e2e"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-pandit-jasraj-mandukya.m4a",
+        "type": "audio/mp4",
+        "sha256": "cd06fbe28fd5df349ef0a348efd075d7115a989664a493de9509a267dbad9de7"
+      }
+    ],
     "parvati-devi-mahamayavini": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/parvati-devi-mahamayavini.m4a",
@@ -1610,6 +1653,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-more-avagun-citta-na-dharo.m4a",
         "type": "audio/mp4",
         "sha256": "c80b1302af24cfc4ef7e0b27de3ac666f297173ea2b05a3ece3d4ba1fe2e16c0"
+      }
+    ],
+    "pradnya-vivardhan-stotra": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pradnya-vivardhan-stotra.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2e3b5ad3f382a31fe30209dcc4068cc7b099b05760f502a578fea3f15c7e907c"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pradnya-vivardhan-stotra.m4a",
+        "type": "audio/mp4",
+        "sha256": "cf7798b49aae3c73d949b52ce914788e48ff1e07916b1efc19c923c4161f4a13"
       }
     ],
     "prem-sahit-sab-bolo-kirtan": [

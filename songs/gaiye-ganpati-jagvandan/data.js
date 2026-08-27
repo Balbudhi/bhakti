@@ -92,7 +92,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇapati",
-        "gloss": "lord of the celestial attendants (Gaṇeśa)",
+        "gloss": "Gaṇeśa; leader and guardian of the celestial attendants",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -133,7 +133,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇapati...",
-        "gloss": "lord of the celestial attendants (Gaṇeśa)",
+        "gloss": "Gaṇeśa; leader and guardian of the celestial attendants",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -676,7 +676,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇapati",
-        "gloss": "lord of the celestial attendants (Gaṇeśa)",
+        "gloss": "Gaṇeśa; leader and guardian of the celestial attendants",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -752,7 +752,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gaṇapati",
-        "gloss": "lord of the celestial attendants (Gaṇeśa)",
+        "gloss": "Gaṇeśa; leader and guardian of the celestial attendants",
         "concept_key": "",
         "preserve_in_english": false
       },

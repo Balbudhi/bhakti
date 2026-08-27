@@ -632,7 +632,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāyaka dāyaka sukha jaya jaya siddhi pati",
-    "english": "{0:Leader, }{1:bestower of }{2:joy, }{3:victory, }{4:victory to }{6:the Lord of }{5:Siddhi!}",
+    "english": "{0:Leader, }{1:bestower of }{2:joy, }{3:victory, }{4:victory to }{6:the guardian-consort of }{5:Siddhi!}",
     "words": [
       {
         "roman": "nāyaka",
@@ -672,7 +672,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pati",
-        "gloss": "master; lord; consort",
+        "gloss": "guardian; consort; sustaining partner",
         "concept_key": "",
         "preserve_in_english": false
       }

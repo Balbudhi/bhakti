@@ -654,7 +654,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇapati",
-        "gloss": "Lord Ganesha; lord of the celestial hosts",
+        "gloss": "Gaṇeśa; leader and guardian of the celestial hosts",
         "concept_key": "",
         "preserve_in_english": false
       },

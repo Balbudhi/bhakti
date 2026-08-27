@@ -205,6 +205,9 @@ exception, not model-inferred structure. `adaptedSequenceIndices` may mark an
 exact displayed line as a Sai-specific adaptation when a source comparison
 establishes the substitution. The badge attributes only the adaptation; it
 must not imply that the original poet wrote the substituted divine name.
+For new composite intake, pass the reviewed values through the manifest as
+`sectionNotices` and `adaptedSequenceIndices`; the generator preserves only
+valid, in-range manual records and never asks a model to invent provenance.
 The reviewed implementation and source batch for the composite morning song page
 are recorded in `docs/KAKAD_ARTI_SOURCES.md`.
 

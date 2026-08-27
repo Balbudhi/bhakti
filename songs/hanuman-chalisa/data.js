@@ -1828,11 +1828,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "raghupati kīnhī bahuta baṛāī । tuma mama priya bharatahi sama bhāī ॥",
-    "english": "{0:The Lord of the Raghus}{1,3: praised}{2: you greatly, saying,}{4: 'You}{6: are as dear}{5: to me}{8: as}{9: brother}{7: Bharata.'}",
+    "english": "{0:Rāma, guardian of the Raghus,}{1,3: praised}{2: you greatly, saying,}{4: 'You}{6: are as dear}{5: to me}{8: as}{9: brother}{7: Bharata.'}",
     "words": [
       {
         "roman": "raghupati",
-        "gloss": "Lord of the Raghus (Rama)",
+        "gloss": "guardian of the Raghus; Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1959,7 +1959,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sahasa badana tumharo jasa gāvaiṁ । asa kahi śrīpati kaṇṭha lagāvaiṁ ॥",
-    "english": "{0:'The thousand-}{1:mouthed serpent}{4: sings}{2: your}{3: glory';}{6: saying}{5: this,}{7: the Lord of Lakshmi}{8,9: embraced you.}",
+    "english": "{0:'The thousand-}{1:mouthed serpent}{4: sings}{2: your}{3: glory';}{6: saying}{5: this,}{7: Śrī’s consort and protector}{8,9: embraced you.}",
     "words": [
       {
         "roman": "sahasa",
@@ -2005,7 +2005,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīpati",
-        "gloss": "Lord of Shri (Rama)",
+        "gloss": "Śrī’s consort and protector; Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4374,7 +4374,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raghupati",
-        "gloss": "of the Lord of the Raghus (Rama)",
+        "gloss": "of Rāma, guardian of the Raghus",
         "concept_key": "",
         "preserve_in_english": false
       },

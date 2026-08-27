@@ -3154,6 +3154,65 @@ window.BHAKTI_SONGS = [
     "queueNumber": 158
   },
   {
+    "slug": "om-pandit-jasraj-extended",
+    "queueId": "98403d5e",
+    "title": "Om",
+    "credit": "Pandit Jasraj",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Oṃ"
+    ],
+    "searchAliases": [
+      "Pandit Jasraj Om extended",
+      "Om chant Pandit Jasraj"
+    ],
+    "writer": "",
+    "singer": "Pandit Jasraj",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-pandit-jasraj-extended.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Oṃ",
+    "queueNumber": 231
+  },
+  {
+    "slug": "om-pandit-jasraj-mandukya",
+    "queueId": "137b38ea",
+    "title": "Oṃ",
+    "credit": "Pandit Jasraj",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Oṃ"
+    ],
+    "searchAliases": [
+      "Om",
+      "Pandit Jasraj Om",
+      "Mandukya Upanishad Om"
+    ],
+    "writer": "",
+    "singer": "Pandit Jasraj",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-pandit-jasraj-mandukya.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-pandit-jasraj-mandukya.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Oṃ",
+    "queueNumber": 232
+  },
+  {
     "slug": "meri-ek-antar-abhilash",
     "queueId": "dad840d9",
     "title": "Mērī Ēk Antar Abhilāṣ",
@@ -4564,6 +4623,41 @@ window.BHAKTI_SONGS = [
     "queueNumber": 59
   },
   {
+    "slug": "om-namah-shivaya-damaru-paani-shool",
+    "queueId": "14b05f80",
+    "title": "Oṃ Namaḥ Śivāya: Ḍamarū Pāṇi Śūla Pāṇi",
+    "credit": "Ravindra Jain · Satish Dehra",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Om Namah Shivaya: Damaru Pani Shula Pani",
+      "Om Namah Sivaya: Damaru Pani Sula Pani",
+      "Shiva",
+      "Siva",
+      "Om Namah Shivaya Damru Paani Shool Paani",
+      "Damru Pani Shool Pani"
+    ],
+    "writer": "Ravindra Jain",
+    "singer": "Satish Dehra",
+    "composer": "Ravindra Jain",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-namah-shivaya-damaru-paani-shool.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-namah-shivaya-damaru-paani-shool.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śiva",
+    "queueNumber": 234
+  },
+  {
     "slug": "shankar-ho",
     "queueId": "2c83ad45",
     "title": "Shankar Ho",
@@ -4592,6 +4686,39 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śiva",
     "queueNumber": 194
+  },
+  {
+    "slug": "pradnya-vivardhan-stotra",
+    "queueId": "a35f026d",
+    "title": "Prājñā Vivardhana Stotra",
+    "credit": "Traditional · Shankar Mahadevan · Kedar Pandit",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Sarasvatī"
+    ],
+    "searchAliases": [
+      "Prajnya Vivardhana Stotra",
+      "Prajna Vivardhana Stotra",
+      "Sarasvati",
+      "Pragya Vivardhan Stotra"
+    ],
+    "writer": "Traditional",
+    "singer": "Shankar Mahadevan",
+    "composer": "Kedar Pandit",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pradnya-vivardhan-stotra.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pradnya-vivardhan-stotra.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Sarasvatī",
+    "queueNumber": 233
   },
   {
     "slug": "mati-re-mati-re",
@@ -6650,6 +6777,39 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 179
+  },
+  {
+    "slug": "chalo-man-jayen-ghar-apne",
+    "queueId": "32e65e4f",
+    "title": "Chalo Man Jāyẽ Ghar Apne",
+    "credit": "Traditional Bengali devotional song",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāmakṛṣṇa"
+    ],
+    "searchAliases": [
+      "Chalo Man Jayẽ Ghar Apne",
+      "Ramakrshna",
+      "Ramakrsna",
+      "Chalo Mann Jayen Ghar Apne"
+    ],
+    "writer": "Traditional Bengali devotional song",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāmakṛṣṇa",
+    "queueNumber": 230
   },
   {
     "slug": "chitrakoot-ati-vichitra",

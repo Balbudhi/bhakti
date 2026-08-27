@@ -28,6 +28,8 @@ class GlossPolicyTests(unittest.TestCase):
         self.assertEqual(gloss_policy.meaning_only_gloss("laṅkā", "Lanka"), "island kingdom of Rāvaṇa")
         self.assertEqual(gloss_policy.meaning_only_gloss("holikā", "Holika fire"), "bonfire; destructive blaze")
         self.assertEqual(gloss_policy.meaning_only_gloss("hanumāna", "Hanuman"), "monkey-god; son of the Wind")
+        self.assertEqual(gloss_policy.meaning_only_gloss("Śiva", "Shiva"),
+                         "the auspicious one; deity of transformation and yogic asceticism")
 
     def test_self_reference_detection_ignores_diacritics_and_punctuation(self) -> None:
         self.assertTrue(gloss_policy.is_self_referential("buddhi,", "buddhi (intellect)"))
@@ -44,6 +46,13 @@ class GlossPolicyTests(unittest.TestCase):
     def test_unknown_name_blocks_publication_instead_of_emitting_a_placeholder(self) -> None:
         with self.assertRaisesRegex(ValueError, "unresolved self-referential gloss"):
             gloss_policy.meaning_only_gloss("UnresolvedName", "UnresolvedName")
+
+    def test_pati_compounds_cannot_be_flattened_to_lord(self) -> None:
+        self.assertTrue(gloss_policy.is_pati_lexeme("raghupati"))
+        self.assertTrue(gloss_policy.has_flat_pati_lord_gloss("śrīpati", "Lord of Śrī"))
+        self.assertFalse(gloss_policy.has_flat_pati_lord_gloss("girijāpati", "Girijā's consort and protector"))
+        self.assertFalse(gloss_policy.is_pati_lexeme("patita"))
+        self.assertFalse(gloss_policy.is_pati_lexeme("sampati"))
 
 
 if __name__ == "__main__":

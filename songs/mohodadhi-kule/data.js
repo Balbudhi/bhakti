@@ -518,7 +518,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Akhiḷa brahmāṇḍapati ho...",
-    "english": "{1:Lord of the }{0:entire }{1:universe, }{2:O...}",
+    "english": "{1:Guardian of the }{0:entire }{1:universe, }{2:O...}",
     "words": [
       {
         "roman": "Akhiḷa",
@@ -528,7 +528,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmāṇḍapati",
-        "gloss": "Lord of the universe",
+        "gloss": "guardian-ruler of the universe",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -813,7 +813,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jagatajanaṅka pati ho...",
-    "english": "{1:Lord }{0:of the people of the world, }{2:O...}",
+    "english": "{1:Guardian }{0:of the people of the world, }{2:O...}",
     "words": [
       {
         "roman": "Jagatajanaṅka",
@@ -823,7 +823,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pati",
-        "gloss": "Lord",
+        "gloss": "guardian and sustaining protector",
         "concept_key": "",
         "preserve_in_english": false
       },

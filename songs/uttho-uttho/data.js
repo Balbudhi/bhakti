@@ -239,7 +239,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇapati",
-        "gloss": "lord of the attendants",
+        "gloss": "leader and guardian of the attendants; Gaṇeśa",
         "concept_key": "",
         "preserve_in_english": false
       }

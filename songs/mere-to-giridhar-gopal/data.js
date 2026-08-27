@@ -250,7 +250,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pati",
-        "gloss": "husband; lord",
+        "gloss": "husband; protector and sustaining partner",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1305,7 +1305,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "umāpati",
-        "gloss": "cherisher of Umā (Śiva)",
+        "gloss": "Umā’s cherishing protector and consort; Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }

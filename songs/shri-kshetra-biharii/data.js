@@ -858,11 +858,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śaṅkhakṣetrapati Śrīkṣetra īśa",
-    "english": "{0:Lord of the Conch Realm, }{2:Sovereign }{1:of Sriksetra,}",
+    "english": "{0:Guardian of the Conch Realm, }{2:Sovereign }{1:of Sriksetra,}",
     "words": [
       {
         "roman": "Śaṅkhakṣetrapati",
-        "gloss": "Lord of the conch-shaped holy realm (Puri)",
+        "gloss": "guardian of the conch-shaped holy realm; Puri",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1570,7 +1570,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śrīguṇḍicā kautukī āhe Śrīpati",
-    "english": "{1:Delighter }{0:in Sri Gundicha, }{2:O }{3:Lord of Sri,}",
+    "english": "{1:Delighter }{0:in Sri Gundicha, }{2:O }{3:Śrī’s consort and protector,}",
     "words": [
       {
         "roman": "Śrīguṇḍicā",
@@ -1592,7 +1592,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīpati",
-        "gloss": "Lord of Sri (Lakshmi)",
+        "gloss": "Śrī’s consort and protector; Lakṣmī’s partner",
         "concept_key": "",
         "preserve_in_english": false
       }

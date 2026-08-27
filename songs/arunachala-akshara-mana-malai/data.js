@@ -135,7 +135,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇapatiyē",
-        "gloss": "O Ganapati",
+        "gloss": "O Gaṇeśa, leader and guardian of the attendant hosts",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -45,8 +45,8 @@ SITE_ORIGIN = "https://bhakti.eeshan.xyz"
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 7
 LONG_TRANSCRIPT_CONTRACT_VERSION = 1
-GLOSS_CONTRACT_VERSION = 4
-TRANSLATION_INPUT_VERSION = 7
+GLOSS_CONTRACT_VERSION = 5
+TRANSLATION_INPUT_VERSION = 8
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
@@ -404,7 +404,7 @@ Return strict JSON only."""
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
             results = list(pool.map(run, jobs))
     by_edge = {item["edge"]: item for item in results}
-    allowed = {"platform_spoken", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
+    allowed = {"platform_spoken", "channel_promotion", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
                "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration",
                "post_song_film_dialogue"}
     start_packet = by_edge["start"]["response"]["packet"]
@@ -428,7 +428,7 @@ Return strict JSON only."""
 
 def normalize_trim_artifact(artifact: dict[str, Any]) -> dict[str, Any]:
     """Recalculate trim bounds from retained edge decisions without an API call."""
-    allowed = {"platform_spoken", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
+    allowed = {"platform_spoken", "channel_promotion", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
                "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration",
                "post_song_film_dialogue"}
     duration = float(artifact["duration"])
@@ -1988,6 +1988,8 @@ def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str
                 errors.append(f"{line_id} word gloss {word_index} preserves an uncurated concept")
             if gloss_policy.is_self_referential(word.get("roman", ""), word.get("gloss", "")):
                 errors.append(f"{line_id} word gloss {word_index} repeats the visible term instead of explaining it")
+            if gloss_policy.has_flat_pati_lord_gloss(word.get("roman", ""), word.get("gloss", "")):
+                errors.append(f"{line_id} word gloss {word_index} flattens pati to Lord")
     return errors
 
 
@@ -2036,6 +2038,8 @@ Create exactly one word_gloss entry for each lexical whitespace-delimited surfac
 Before any later translation, explicitly reconstruct the semantic frame: who is acting or experiencing; the action or state; its patient or complement; modifiers; negation or modality; the exact literal image and agency; any established idiom; and how the line connects grammatically to its neighbors. Preserve personification and unusual agency rather than normalizing them. Distinguish a suffered or resultant state from a self-caused act: if the line says the speaker is broken, undone, struck, or seized, do not reinterpret it as the speaker actively breaking, undoing, striking, or seizing themself. Do not replace one metaphor with another: if a feeling “takes hold,” do not relabel it as kindling or stirring. Preserve a spatial word directly—“inside” remains “inside”—rather than upgrading it to “deep within” unless the source actually expresses depth. Represent reduplication as emphasis or repetition without inventing a new image. Expand relational objects when English requires their complement—a hem is the hem of a garment. Distinguish culturally specific objects precisely, such as an alms bag rather than a generic satchel, and palm/open palm rather than an abstract “hand” when the source requires it. For `raham nazar`, record the phrase-level meaning “look upon someone with mercy,” never “cast a glance.”
 
 Explain internal morphemes inside the token's `gloss` or `grammar_note`. Give a short grammar note for ellipsis, agreement, sandhi, compounds, or syntax. Choose the contextually supported sense of a polysemous word; do not call ordinary dictionary polysemy uncertain. Use uncertainty only when the audited lyric itself remains genuinely unresolved. Do not write a fluent English sentence in this stage.
+
+For the Sanskrit/Indic noun `pati` and transparent `-pati` compounds, do not default to “Lord.” Its operative range includes guardian, protector, sustaining partner, husband/consort, ruler, and leader (historically from √pā, “protect”). Translate the relation actually expressed by the first member: `raghu-pati` is a guardian of Raghu’s line, `śrī-pati` Śrī’s consort/protector, and `girijā-pati` Girijā’s husband/consort. A bare devotional title is not enough. This instruction does not apply to unrelated look-alikes such as `patita` “fallen,” `sampati` “wealth,” or a locally evidenced vernacular homograph; if the form cannot be distinguished from context, mark it uncertain rather than guessing.
 
 Do not collapse South Asian social terminology into the single English word “caste.” A jāti or jñātī is ordinarily a local birth, kin, or occupational community; gloss it as community, clan, kin group, or occupational group as the line warrants. Varṇa is a distinct broad fourfold normative social order; name that distinction explicitly when it matters. Preserve a source phrase that contrasts these terms rather than treating them as synonyms.
 
@@ -2485,6 +2489,8 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
             fictional = gloss_policy.fictional_coinages(word.get("gloss", ""))
             if fictional:
                 errors.append(f"{line_id} word gloss uses fictional coinage {fictional}")
+            if gloss_policy.has_flat_pati_lord_gloss(word.get("roman", ""), word.get("gloss", "")):
+                errors.append(f"{line_id} word gloss flattens pati to Lord")
         independent = translation.get("independent_review", {})
         if independent:
             if not independent.get("passes"):
@@ -2786,6 +2792,41 @@ def publication_errors(audited: dict[str, Any], timing: dict[str, Any], glosses:
     return errors
 
 
+def reviewed_composite_metadata(job: dict[str, Any], sequence_length: int) -> tuple[list[dict[str, Any]], list[int]]:
+    """Validate manual, source-backed notices for a composite liturgy.
+
+    Models do not infer public provenance or adaptations.  A researched intake
+    manifest may carry these small display notices, and invalid indices must
+    fail generation rather than silently attaching a notice to another line.
+    """
+    notices = job.get("sectionNotices", [])
+    adapted = job.get("adaptedSequenceIndices", [])
+    if not isinstance(notices, list):
+        raise RuntimeError("sectionNotices must be a list")
+    if not isinstance(adapted, list):
+        raise RuntimeError("adaptedSequenceIndices must be a list")
+    cleaned_notices: list[dict[str, Any]] = []
+    seen_indices: set[int] = set()
+    for index, notice in enumerate(notices):
+        if not isinstance(notice, dict):
+            raise RuntimeError(f"sectionNotices[{index}] must be an object")
+        sequence_index = notice.get("sequenceIndex")
+        title = str(notice.get("title") or "").strip()
+        poet = notice.get("poet", "")
+        note = notice.get("note", "")
+        if (not isinstance(sequence_index, int) or not 0 <= sequence_index < sequence_length
+                or sequence_index in seen_indices or not title
+                or not isinstance(poet, str) or not isinstance(note, str)):
+            raise RuntimeError(f"sectionNotices[{index}] is invalid for the reviewed sequence")
+        seen_indices.add(sequence_index)
+        cleaned_notices.append({"sequenceIndex": sequence_index, "title": title,
+                                "poet": poet.strip(), "note": note.strip()})
+    cleaned_adapted = sorted(set(adapted))
+    if any(not isinstance(index, int) or not 0 <= index < sequence_length for index in cleaned_adapted):
+        raise RuntimeError("adaptedSequenceIndices contains an invalid reviewed sequence index")
+    return cleaned_notices, cleaned_adapted
+
+
 def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
     errors = publication_errors(audited, timing, glosses, translations)
     if errors:
@@ -2846,6 +2887,11 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
                 for event in timing["sequence"]]
     times = [{"start": round(event["start"], 3), "end": round(event["end"], 3)} for event in timing["sequence"]]
     sequence, times, _ = compress_adjacent_reader_entries(sequence, times)
+    notices, adapted_indices = reviewed_composite_metadata(job, len(sequence))
+    if notices:
+        meta["sectionNotices"] = notices
+    if adapted_indices:
+        meta["adaptedSequenceIndices"] = adapted_indices
     data = ("window.SONG_META = " + json.dumps(meta, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_LINES = " + json.dumps(line_data, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +

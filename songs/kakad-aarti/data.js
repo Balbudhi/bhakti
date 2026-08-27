@@ -87,8 +87,27 @@ window.SONG_META = {
     },
     {
       "sequenceIndex": 185,
-      "title": "Vedic Benedictions",
-      "poet": ""
+      "title": "Puruṣa Sūkta — Ṛgveda 10.90.16",
+      "poet": "Vedic Sanskrit",
+      "note": "The verse is recited intact after the liturgical opening Hariḥ Oṃ."
+    },
+    {
+      "sequenceIndex": 187,
+      "title": "Vaiśravaṇa (Kubera) mantra — Taittirīya Āraṇyaka 1.31.6",
+      "poet": "Vedic Sanskrit",
+      "note": "The liturgical Oṃ precedes an otherwise intact salutation to Vaiśravaṇa (Kubera)."
+    },
+    {
+      "sequenceIndex": 190,
+      "title": "Royal benediction and Marutta verse — Aitareya Brāhmaṇa 8.15",
+      "poet": "Vedic Sanskrit",
+      "note": "The Vedic quotation runs through the Marutta verse at sequence 193; the next two lines are the Sai liturgy’s added dedication and acclamation."
+    },
+    {
+      "sequenceIndex": 194,
+      "title": "Sai dedication",
+      "poet": "",
+      "note": "Liturgical addition following the Vedic benedictions."
     },
     {
       "sequenceIndex": 196,
@@ -98,7 +117,8 @@ window.SONG_META = {
     {
       "sequenceIndex": 227,
       "title": "Aisā Yeī Bā Sāī Digambarā",
-      "poet": ""
+      "poet": "Traditional Datta-oriented Sai invocation",
+      "note": "The refrain directly addresses Sai as Digambara. The next verse invokes Dattātreya through the epithet “son of Anasūyā and Atri”; it does not rename the refrain as “Datta Digambara.”"
     },
     {
       "sequenceIndex": 248,
@@ -117,7 +137,9 @@ window.SONG_META = {
     105,
     108,
     110,
-    112
+    112,
+    194,
+    195
   ],
   "audioSources": [
     {
@@ -10997,13 +11019,13 @@ window.SONG_LINES = {
   },
   "line-136": {
     "source": "हरिः ॐ यज्ञेन यज्ञमयजन्त देवास्तानि धर्माणि प्रथमान्यासन्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "hariḥ oṁ yajñena yajñamayajanta devāstāni dharmāṇi prathamānyāsan",
-    "english": "{0,1:Harih Om.}{2: With sacrifice}{3,4: the gods worshipped the sacrifice;}{4,6: those were the first}{5: primal ordinances.}",
+    "english": "{0,1:Hariḥ Oṃ.}{2: With sacrifice,}{3,4: the gods sacrificed the sacrifice;}{5,6: those were the first foundations.}",
     "words": [
       {
         "roman": "hariḥ",
-        "gloss": "Hari"
+      "gloss": "Hari; liturgical invocation"
       },
       {
         "roman": "oṁ",
@@ -11023,14 +11045,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmāṇi",
-        "gloss": "primal cosmic laws / ordainments (neuter plural)"
+      "gloss": "foundations; established ordinances (neuter plural)"
       },
       {
         "roman": "prathamānyāsan",
         "gloss": "first / earliest were (prathamāni + āsan, 3rd plural imperfect)"
       }
     ],
-    "grammarNote": "Vedic Sanskrit verse (Rigveda 10.90.16 / Purusha Suktam); subject 'devāḥ' with verb 'ayajanta', and nominal clause 'dharmāṇi prathamāni āsan'.",
+    "grammarNote": "Ṛgveda 10.90.16, the closing verse of the Puruṣa Sūkta. Hariḥ Oṃ is a recitational opening; the Vedic text begins with yajñena. The subject devāḥ governs ayajanta; dharmāṇi prathamāni āsan is the nominal clause.",
     "sourceWords": [
       {
         "text": "हरिः",
@@ -11078,9 +11100,9 @@ window.SONG_LINES = {
   },
   "line-137": {
     "source": "ते ह नाकं महिमानः सचन्त यत्र पूर्वे साध्याः सन्ति देवाः",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "te ha nākaṁ mahimānaḥ sacanta yatra pūrve sādhyāḥ santi devāḥ",
-    "english": "{0,1:They indeed,}{3: the glorious ones,}{2,4: reached the heavenly realm}{5: where}{6: the ancient}{7: Sadhyas}{8,9: and gods dwell.}",
+    "english": "{0,1:They indeed,}{3: in their greatness,}{2,4: reached the heavenly realm}{5: where}{6: the ancient}{7: Sādhyas}{8,9: and gods dwell.}",
     "words": [
       {
         "roman": "te",
@@ -11096,7 +11118,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahimānaḥ",
-        "gloss": "the mighty / glorious ones (nominative plural)"
+      "gloss": "greatnesses; mighty powers (nominative plural)"
       },
       {
         "roman": "sacanta",
@@ -11123,7 +11145,7 @@ window.SONG_LINES = {
         "gloss": "gods (nominative plural)"
       }
     ],
-    "grammarNote": "Relative clause completing the Purusha Suktam verse; 'sacanta' governs the accusative 'nākaṁ'.",
+    "grammarNote": "Completion of Ṛgveda 10.90.16. Sacanta governs the accusative nākaṁ; the verse’s mahimānaḥ can carry “greatnesses/mighty powers,” not a second personal subject.",
     "sourceWords": [
       {
         "text": "ते",
@@ -11189,9 +11211,9 @@ window.SONG_LINES = {
   },
   "line-138": {
     "source": "ॐ राजाधिराजाय प्रसह्यसाहिने नमो वयं वैश्रवणाय कुर्महे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "oṁ rājādhirājāya prasahyasāhine namo vayaṁ vaiśravaṇāya kurmahe",
-    "english": "{0:Om.}{1: To the King of kings,}{2: the subduer of hardships,}{4: we}{6: render}{3: obeisance}{5: to Vaishravana.}",
+    "english": "{0:Oṃ.}{1: To the king above kings,}{2: the overpowering conqueror,}{4: we}{6: offer}{3: homage}{5: to Vaiśravaṇa.}",
     "words": [
       {
         "roman": "oṁ",
@@ -11199,11 +11221,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "rājādhirājāya",
-        "gloss": "to the King of kings (dative singular)"
+      "gloss": "to the king above kings (dative singular)"
       },
       {
         "roman": "prasahyasāhine",
-        "gloss": "to the subduer of conquerors / hardships (dative singular)"
+      "gloss": "to the overpowering conqueror (dative singular)"
       },
       {
         "roman": "namo",
@@ -11215,14 +11237,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇāya",
-        "gloss": "to Vaishravana (dative singular)"
+      "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
       },
       {
         "roman": "kurmahe",
-        "gloss": "we render / make (1st plural present middle)"
+      "gloss": "we make; offer (1st plural present middle)"
       }
     ],
-    "grammarNote": "Opening of Mantra Pushpam (Taittiriya Aranyaka 1.31.2); 'namas kṛ' takes the dative of recipient.",
+    "grammarNote": "Taittirīya Āraṇyaka 1.31.6. Oṃ is a recitational opening; namas kṛ takes the dative of recipient.",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -11270,9 +11292,9 @@ window.SONG_LINES = {
   },
   "line-139": {
     "source": "स मे कामान् कामकामाय मह्यं कामेश्वरो वैश्रवणो दधातु",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "sa me kāmān kāmakāmāya mahyaṁ kāmeśvaro vaiśravaṇo dadhātu",
-    "english": "{0:May he,}{6: Vaishravana,}{5: the Lord of desires,}{7: bestow}{1,2: my desires}{3,4: upon me, the seeker of desires.}",
+    "english": "{0:May he,}{6: Vaiśravaṇa,}{5: the sovereign of desires,}{7: grant}{1,2: my desires}{3,4: to me, a seeker of desires.}",
     "words": [
       {
         "roman": "sa",
@@ -11296,11 +11318,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāmeśvaro",
-        "gloss": "the Lord of desires (kāmeśvaraḥ, nominative singular)"
+      "gloss": "the sovereign of desires (kāmeśvaraḥ, nominative singular)"
       },
       {
         "roman": "vaiśravaṇo",
-        "gloss": "Vaishravana (vaiśravaṇaḥ, nominative singular)"
+      "gloss": "Vaiśravaṇa, Kubera (vaiśravaṇaḥ, nominative singular)"
       },
       {
         "roman": "dadhātu",
@@ -11361,7 +11383,7 @@ window.SONG_LINES = {
   },
   "line-140": {
     "source": "कुबेराय वैश्रवणाय महाराजाय नमः",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "kuberāya vaiśravaṇāya mahārājāya namaḥ",
     "english": "{3:Salutations}{0: to Kubera,}{1: to Vaishravana,}{2: the Great King.}",
     "words": [
@@ -11371,7 +11393,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇāya",
-        "gloss": "to Vaishravana (dative singular)"
+      "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
       },
       {
         "roman": "mahārājāya",
@@ -11412,9 +11434,9 @@ window.SONG_LINES = {
   },
   "line-141": {
     "source": "ॐ स्वस्ति साम्राज्यं भौज्यं स्वाराज्यं वैराज्यं पारमेष्ठ्यं राज्यं महाराज्यमाधिपत्यमयं समन्तपर्यायी स्यात्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "oṁ svasti sāmrājyaṁ bhaujyaṁ svārājyaṁ vairājyaṁ pārameṣṭhyaṁ rājyaṁ mahārājyamādhipatyamayaṁ samantaparyāyī syāt",
-    "english": "{0,1:Om, well-being!}{2,10: May there be universal empire,}{3: enjoyment of dominion,}{4: self-rule,}{5: supreme reign,}{6: highest authority of Parameshthi,}{7: kingship,}{8: great sovereignty and paramount lordship,}{9: all-encompassing.}",
+    "english": "{0,1:Oṃ, may there be well-being:}{2: universal sovereignty,}{3: bounteous dominion,}{4: self-rule,}{5: distinguished sovereignty,}{6: the highest authority,}{7: kingship,}{8: great sovereignty and paramount rule,}{9: extending in every direction,}{10: may it be.}",
     "words": [
       {
         "roman": "oṁ",
@@ -11430,7 +11452,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhaujyaṁ",
-        "gloss": "enjoyment of dominion"
+      "gloss": "bounteous dominion; prosperous rule"
       },
       {
         "roman": "svārājyaṁ",
@@ -11438,11 +11460,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "vairājyaṁ",
-        "gloss": "supreme / distinguished reign"
+      "gloss": "distinguished sovereignty"
       },
       {
         "roman": "pārameṣṭhyaṁ",
-        "gloss": "highest authority of Parameshthi"
+      "gloss": "the highest authority; rule of the supreme station"
       },
       {
         "roman": "rājyaṁ",
@@ -11450,7 +11472,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahārājyamādhipatyamayaṁ",
-        "gloss": "great sovereignty (mahārājyam) paramount lordship (ādhipatyam) this (ayam)"
+      "gloss": "great sovereignty and paramount rule (mahārājyam + ādhipatyam + ayam)"
       },
       {
         "roman": "samantaparyāyī",
@@ -11461,7 +11483,7 @@ window.SONG_LINES = {
         "gloss": "may he be / let it be (3rd singular optative)"
       }
     ],
-    "grammarNote": "Aitareya Brahmana (8.15) royal consecration formula reciting political/cosmic degrees of sovereignty; governed by optative 'syāt'.",
+    "grammarNote": "Aitareya Brāhmaṇa 8.15, a royal-consecration blessing. The opening Oṃ is liturgical; the Vedic formula is governed by optative syāt and enumerates forms of sovereignty.",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -11533,13 +11555,13 @@ window.SONG_LINES = {
   },
   "line-142": {
     "source": "सार्वभौमः सार्वायुष आन्तादापरार्धात् पृथिव्यै समुद्रपर्यन्ताया एकराळिति",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "sārvabhaumaḥ sārvāyuṣa āntādāparārdhāt pṛthivyai samudraparyantāyā ekarāḷiti",
-    "english": "{0:Ruler of the whole earth,}{1: possessing full lifespan}{2: unto the utmost limit,}{5: the sole monarch}{3,4: of the earth extending to the ocean.}",
+    "english": "{0:May he be sovereign over all the earth,}{1: of full life,}{2: to the farthest limit—}{5:the sole ruler}{3,4: of earth as far as the ocean.}",
     "words": [
       {
         "roman": "sārvabhaumaḥ",
-        "gloss": "ruler of the whole earth (nominative singular)"
+      "gloss": "sovereign over all the earth (nominative singular)"
       },
       {
         "roman": "sārvāyuṣa",
@@ -11559,10 +11581,10 @@ window.SONG_LINES = {
       },
       {
         "roman": "ekarāḷiti",
-        "gloss": "sole monarch (ekarāṭ) thus (iti)"
+      "gloss": "sole ruler (ekarāṭ), thus (iti)"
       }
     ],
-    "grammarNote": "Vedic Sandhi 'ekarāṭ + iti' -> 'ekarāḷiti' (intervocalic retroflex d/l change); describes the sovereign of the ocean-bound earth.",
+    "grammarNote": "Continuation of Aitareya Brāhmaṇa 8.15. Vedic sandhi ekarāṭ + iti gives ekarāḷiti; the formula describes sovereignty over the ocean-bounded earth.",
     "sourceWords": [
       {
         "text": "सार्वभौमः",
@@ -11604,9 +11626,9 @@ window.SONG_LINES = {
   },
   "line-143": {
     "source": "तदेष श्लोकोऽभिगीतो मरुतः परिवेष्टारो मरुत्तस्यावसन् गृहे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "tadeṣa śloko'bhigīto marutaḥ pariveṣṭāro maruttasyāvasan gṛhe",
-    "english": "{0:Concerning that, this}{1: verse is sung:}{2: 'The Maruts}{4: resided}{3: as attendants}{5: in the house}{4: of Marutta;'}",
+    "english": "{0:Concerning this, a}{1: verse is recited:}{2: 'The Maruts,}{3: as attendants,}{4: resided}{5: in Marutta’s house;'}",
     "words": [
       {
         "roman": "tadeṣa",
@@ -11626,14 +11648,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "maruttasyāvasan",
-        "gloss": "of King Marutta (maruttasya) resided (avasan, 3rd plural imperfect)"
+      "gloss": "of Marutta (maruttasya); resided (avasan, 3rd plural imperfect)"
       },
       {
         "roman": "gṛhe",
         "gloss": "in the house (locative singular)"
       }
     ],
-    "grammarNote": "Introductory gatha citation from Aitareya Brahmana (8.21) / Shatapatha Brahmana praising the sacrifice of King Marutta Avikshita.",
+    "grammarNote": "Continuation of the Marutta citation in Aitareya Brāhmaṇa 8.15. The prose introduces a verse; Marutta is the son of Avikṣit in the following line.",
     "sourceWords": [
       {
         "text": "तदेष",
@@ -11675,13 +11697,13 @@ window.SONG_LINES = {
   },
   "line-144": {
     "source": "आविक्षितस्य कामप्रेर्विश्वे देवाः सभासद इति",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "roman": "āvikṣitasya kāmaprer viśve devāḥ sabhāsada iti",
-    "english": "{0:'of the son of Avikshit,}{1: the fulfiller of desires;}{2,3: all the gods}{4,5: were members of the assembly.'}",
+    "english": "{0:'of Avikṣit’s son,}{1: the fulfiller of desires;}{2,3: all the gods}{4,5: were assembly-members.'}",
     "words": [
       {
         "roman": "āvikṣitasya",
-        "gloss": "of the son of Avikshit (genitive singular)"
+      "gloss": "of Avikṣit’s son (genitive singular)"
       },
       {
         "roman": "kāmaprer",
@@ -11697,14 +11719,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "sabhāsada",
-        "gloss": "assembly members / courtiers (sabhāsadaḥ, nominative plural)"
+      "gloss": "assembly-members; courtiers (sabhāsadaḥ, nominative plural)"
       },
       {
         "roman": "iti",
         "gloss": "thus (quotative particle)"
       }
     ],
-    "grammarNote": "Continuation of the gatha; genitive modifiers 'āvikṣitasya kāmapreḥ' qualifying Marutta, with nominal predicate 'viśve devāḥ sabhāsadaḥ'.",
+    "grammarNote": "Completion of the Marutta verse in Aitareya Brāhmaṇa 8.15. The genitives āvikṣitasya kāmapreḥ qualify Marutta; viśve devāḥ sabhāsadaḥ is a nominal predicate.",
     "sourceWords": [
       {
         "text": "आविक्षितस्य",
@@ -13593,7 +13615,7 @@ window.SONG_LINES = {
         "gloss": "sky-clad; one whose garment is the sky/directions"
       }
     ],
-    "grammarNote": "Imperative invocation with vocatives 'bābā', 'sāī', and 'digambarā'.",
+    "grammarNote": "Traditional Datta-oriented Sai invocation. The refrain directly addresses Sāī as digambarā; it does not grammatically say “Datta Digambara.”",
     "sourceWords": [
       {
         "text": "ऐसे",
@@ -13692,15 +13714,15 @@ window.SONG_LINES = {
     "source": "श्रुतिसारा अनुसयात्रिकुमारा ऐसे आओ बाबा",
     "sourceLanguage": "hi",
     "roman": "śrutisārā anusayātrikumārā aise āo bābā",
-    "english": "{0:O essence of the Vedas,}{1: O son of Anasuya and Atri,}{2,3: come thus,}{4: O Baba!}",
+    "english": "{0:O essence of the Śrutis,}{1: O son of Anasūyā and Atri,}{2,3: come thus,}{4: O Baba!}",
     "words": [
       {
         "roman": "śrutisārā",
-        "gloss": "essence of the Vedas"
+      "gloss": "essence of the Śrutis; Vedic revelation"
       },
       {
         "roman": "anusayātrikumārā",
-        "gloss": "son of Anasuya and Atri"
+      "gloss": "son of Anasūyā and Atri; Dattātreya epithet"
       },
       {
         "roman": "aise",
@@ -13715,7 +13737,7 @@ window.SONG_LINES = {
         "gloss": "O Baba"
       }
     ],
-    "grammarNote": "Vocative compounds ('śrutisārā', 'anusayā-atri-kumārā') leading into the refrain imperative.",
+    "grammarNote": "Vocative compounds leading into the refrain imperative. Anasūyā-Atri-kumārā conventionally invokes Dattātreya, while the grammatical addressee remains Sai from the refrain.",
     "sourceWords": [
       {
         "text": "श्रुतिसारा",

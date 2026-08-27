@@ -27070,11 +27070,11 @@ window.SONG_LINES = {
     "source": "सीतापती साहेब सहाय हनुमान नित हित उपदेस को महेस मानो गुर कै",
     "sourceLanguage": "bra",
     "roman": "sītāpatī sāheba sahāya hanumāna nita hita upadesa ko mahesa māno gura kai",
-    "english": "{0,1:The Lord of Sītā is Master, }{2,3,4:Hanumān is constant helper, }{5,6,7:and for wholesome instruction, }{8,9:regard the Great Lord }{10,11:as Guru.}",
+    "english": "{0,1:Sītā’s guardian-husband is Master, }{2,3,4:Hanumān is constant helper, }{5,6,7:and for wholesome instruction, }{8,9:regard the great protector }{10,11:as Guru.}",
     "words": [
       {
         "roman": "sītāpatī",
-        "gloss": "Lord of Sita [Rama]",
+        "gloss": "Sītā’s guardian-husband; Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },

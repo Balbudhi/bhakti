@@ -117,6 +117,8 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
                     problems.append(f"{line_id} word[{word_index}] gloss repeats the visible term instead of explaining it")
                 if gloss_policy.is_placeholder_gloss(gloss):
                     problems.append(f"{line_id} word[{word_index}] gloss is a placeholder rather than an explanation")
+                if gloss_policy.has_flat_pati_lord_gloss(token, gloss):
+                    problems.append(f"{line_id} word[{word_index}] flattens pati to Lord")
                 fictional = gloss_policy.fictional_coinages(gloss)
                 if fictional:
                     problems.append(f"{line_id} word[{word_index}] gloss uses fictional coinage {fictional}")

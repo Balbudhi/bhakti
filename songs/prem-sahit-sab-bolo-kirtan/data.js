@@ -145,11 +145,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "raghupati rāghava rājā rāma",
-    "english": "{0:Lord of the Raghus}, {1:Scion of Raghu}, {2:King} {3:Rama}",
+    "english": "{0:Guardian of the Raghus}, {1:Scion of Raghu}, {2:King} {3:Rama}",
     "words": [
       {
         "roman": "raghupati",
-        "gloss": "lord of the Raghu dynasty",
+        "gloss": "guardian of the Raghu dynasty",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -204,11 +204,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "raghupati rāghava rājā rāma",
-    "english": "{0:Lord of the Raghus}, {1:Scion of Raghu}, {2:King} {3:Rama}",
+    "english": "{0:Guardian of the Raghus}, {1:Scion of Raghu}, {2:King} {3:Rama}",
     "words": [
       {
         "roman": "raghupati",
-        "gloss": "lord of the Raghu dynasty",
+        "gloss": "guardian of the Raghu dynasty",
         "concept_key": "",
         "preserve_in_english": false
       },

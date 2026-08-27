@@ -647,11 +647,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāśīpati Śrī Viśvanātha jaya",
-    "english": "{0:Master of Kashi, }{1:holy }{2:Vishvanatha, }{3:hail!}",
+    "english": "{0:Guardian-ruler of Kashi, }{1:holy }{2:Vishvanatha, }{3:hail!}",
     "words": [
       {
         "roman": "Kāśīpati",
-        "gloss": "master of Kashi / Varanasi",
+        "gloss": "guardian-ruler of Kashi / Varanasi",
         "concept_key": "",
         "preserve_in_english": false
       },
