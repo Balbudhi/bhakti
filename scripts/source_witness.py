@@ -131,6 +131,37 @@ def _extract_pdf_text_range(text: str, start_marker: str, end_marker: str = "") 
     return lines
 
 
+def _extract_html_pre_text_range(document: str, start_marker: str, end_marker: str = "") -> list[str]:
+    """Extract a bounded Devanagari verse range from a source-text ``<pre>``.
+
+    Sanskrit Documents serves the verified poem as a single text block followed
+    by unrelated ITRANS metadata.  Selecting the content block and an explicit
+    marker range keeps titles, site chrome, and metadata out of the private
+    witness cache while retaining the edition's lineation.
+    """
+    match = re.search(r'<pre[^>]+(?:id=["\']content["\']|class=["\'][^"\']*stotra[^"\']*)[^>]*>(.*?)</pre>',
+                      document, flags=re.IGNORECASE | re.DOTALL)
+    if not match:
+        return []
+    text = html.unescape(re.sub(r"<[^>]+>", "", match.group(1))).replace("\xa0", " ")
+    start = text.find(start_marker)
+    if start < 0:
+        return []
+    text = text[start:]
+    if end_marker:
+        end = text.find(end_marker)
+        if end < 0:
+            return []
+        end += len(end_marker)
+        text = text[:end]
+    lines: list[str] = []
+    for raw in text.splitlines():
+        candidate = _clean_line(raw)
+        if candidate and DEVANAGARI.search(candidate) and len(re.sub(r"[^\u0900-\u097f]", "", candidate)) >= 3:
+            lines.append(candidate)
+    return lines
+
+
 def _acquire_pdf_text_range(record: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     """Fetch a registered PDF and retain only the configured lyric range."""
     url = str(record["url"])
@@ -146,6 +177,13 @@ def _acquire_pdf_text_range(record: dict[str, Any]) -> tuple[list[dict[str, Any]
     return pages, [{"page": page, "url": url, "text": line} for line in text]
 
 
+def _acquire_html_pre_text_range(record: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    url = str(record["url"])
+    text = _extract_html_pre_text_range(_fetch(url), str(record["start_marker"]), str(record.get("end_marker") or ""))
+    pages = [{"page": 1, "url": url, "line_count": len(text)}]
+    return pages, [{"page": 1, "url": url, "text": line} for line in text]
+
+
 def acquire(song_dir: Path, slug: str, *, refresh: bool = False) -> dict[str, Any] | None:
     """Acquire a registered public witness into ignored local review evidence."""
     record = record_for_slug(slug)
@@ -157,6 +195,19 @@ def acquire(song_dir: Path, slug: str, *, refresh: bool = False) -> dict[str, An
         return cached
     if record.get("retriever") == "pdf-text-range":
         pages, lines = _acquire_pdf_text_range(record)
+        result = {
+            "schema_version": 1,
+            "work": slug,
+            "witness": record,
+            "pages": pages,
+            "lines": lines,
+            "acquisition_note": "Private comparison cache. Do not publish this text or treat it as a critical edition.",
+        }
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        return result
+    if record.get("retriever") == "html-pre-text-range":
+        pages, lines = _acquire_html_pre_text_range(record)
         result = {
             "schema_version": 1,
             "work": slug,

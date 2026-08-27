@@ -264,6 +264,7 @@ def call(
     schema_name: str = "bhakti_response",
     reasoning_effort: str | None = None,
     max_completion_tokens: int | None = None,
+    max_attempts: int = 6,
 ) -> dict[str, Any]:
     provider = provider_name()
     requested_batch = model.endswith(":batch")
@@ -312,7 +313,11 @@ def call(
         headers=request_headers(provider, api_key),
         method="POST",
     )
-    for attempt in range(6) if result is None else []:
+    # Long source-controlled work is checkpointed by its caller.  Let those
+    # callers fail one bounded request rather than silently holding a worker in
+    # a multi-minute retry loop while no completed unit can be saved.
+    attempts = max(1, int(max_attempts))
+    for attempt in range(attempts) if result is None else []:
         try:
             with _API_SLOTS:
                 _wait_for_api_start()
@@ -323,7 +328,7 @@ def call(
             detail = exc.read().decode("utf-8", errors="replace")[:800]
             if permanent_provider_error(provider, exc.code, detail):
                 raise RuntimeError(f"{provider} HTTP {exc.code}: {detail}") from exc
-            if exc.code in {429, 502, 503, 504} and attempt < 5:
+            if exc.code in {429, 502, 503, 504} and attempt < attempts - 1:
                 retry_after = 0.0
                 try:
                     retry_after = float(exc.headers.get("Retry-After", 0) or 0)

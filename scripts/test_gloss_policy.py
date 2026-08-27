@@ -30,6 +30,10 @@ class GlossPolicyTests(unittest.TestCase):
         self.assertEqual(gloss_policy.meaning_only_gloss("hanumāna", "Hanuman"), "monkey-god; son of the Wind")
         self.assertEqual(gloss_policy.meaning_only_gloss("Śiva", "Shiva"),
                          "the auspicious one; deity of transformation and yogic asceticism")
+        self.assertEqual(gloss_policy.meaning_only_gloss("Rāma", "Rama"),
+                         "hero of the Rāmāyaṇa and Viṣṇu’s avatāra")
+        self.assertEqual(gloss_policy.meaning_only_gloss("Surāsā", "Surasa"),
+                         "serpent-mother who tests Hanumān on his journey")
 
     def test_self_reference_detection_ignores_diacritics_and_punctuation(self) -> None:
         self.assertTrue(gloss_policy.is_self_referential("buddhi,", "buddhi (intellect)"))

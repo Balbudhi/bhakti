@@ -1,6 +1,16 @@
 {
   "version": 1,
   "sources": {
+    "d4yKGNg6PzE": {
+      "keepOriginal": true,
+      "sourceFirstWitness": true,
+      "title": "Sampūrṇa Sundarakāṇḍa",
+      "writer": "Tulsīdās",
+      "singer": "Hari Om Sharan",
+      "languages": ["Awadhi"],
+      "subjectTags": ["Hanumān", "Rāma"],
+      "searchAliases": ["Sampoorna Sunder Kand", "Sampoorna Sundarkand Hari Om Sharan", "Ramcharitmanas Sundarkand"]
+    },
     "aLWFJaF9HsU": {
       "keepOriginal": true,
       "title": "Hanumān Bāhuk",

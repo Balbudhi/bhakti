@@ -51,6 +51,24 @@
         "landing_url": "https://ebooks.pustak.org/index.php/books/bookdetails/9697/1/2"
       },
       "comparison_policy": "Audio is authoritative for this recording. The witness supplies an independently digitized candidate reading: compare it after the first audio draft, use it to focus a second audio audit, retain every audible performance variant, and leave an unresolved disagreement blocked rather than silently selecting the witness."
+    },
+    "sampurna-sundarakanda": {
+      "title": "Rāmacaritamānasa, Sundarakāṇḍa",
+      "author": "Tulsīdās",
+      "verification_status": "public-working-witness",
+      "authority_note": "A complete public Devanagari working witness for the Awadhi text. It is not authority to overwrite a sung performance variant.",
+      "retriever": "html-pre-text-range",
+      "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/sundarakaaNDa.html",
+      "start_marker": "शान्तं शाश्वतमप्रमेयमनघं",
+      "end_marker": "सादर सुनहिं ते तरहिं भव सिंधु बिना जलजान",
+      "performance_additions": [
+        "मंगल भवन अमंगल हारी द्रवहु सुदसरथ अजिर बिहारी"
+      ],
+      "bibliography": {
+        "document": "Sundarakāṇḍa from Rāmacaritamānasa",
+        "source_url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/sundarakaaNDa.html"
+      },
+      "comparison_policy": "The performance remains authoritative. Use this complete Awadhi witness to constrain each audio-aware transcription and audit pass; preserve an audible variant, and block any unresolved disagreement rather than silently selecting the witness."
     }
   }
 }

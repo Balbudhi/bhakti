@@ -72,36 +72,60 @@ PRESERVED_HINTS = {
 # repeating the token itself.
 MEANING_ONLY = {
     "baba": "father; revered master",
+    "angada": "Vānara prince and envoy of Rāma",
+    "asoka": "the Aśoka tree; in the name of Sītā’s grove",
     "bhavani": "the Goddess; Śakti as the source of being",
     "dha": "sixth note of the Indian scale",
+    "dandaka": "the Dandaka forest of Rāma’s exile",
     "damaru": "hourglass drum associated with Śiva",
     "datta": "Lord Dattātreya",
     "durga": "the inaccessible, protecting Goddess",
+    "dusana": "a demon commander slain by Rāma",
     "ganga": "the sacred river descended from heaven",
     "ganu": "devotee-poet",
     "guru": "spiritual teacher",
     "hari": "Lord Viṣṇu; remover of suffering",
     "hanuman": "monkey-god; son of the Wind",
+    "hanu": "the Vānara hero and Rāma’s devoted envoy",
+    "jambavan": "the wise bear-king who counsels Hanumān",
+    "janaki": "daughter of King Janaka; Sītā",
     "hindu": "follower of the dharma",
     "holika": "bonfire; destructive blaze",
     "jagannatha": "Lord of the universe",
     "jhandewali": "the Goddess of Jhandewalan",
     "kabir": "poet-saint",
+    "khara": "Rāvaṇa’s demon kinsman slain by Rāma",
+    "kinnara": "celestial musician; mythical human-bird being",
     "lanka": "island kingdom of Rāvaṇa",
     "madhava": "the poet's signature-name",
     "maharaja": "great king; revered sovereign",
     "manda": "a proper name here",
+    "mainaka": "the mountain who rises from the sea to offer Hanumān rest",
+    "mainak": "the mountain who rises from the sea to offer Hanumān rest",
+    "meghanada": "Rāvaṇa’s son, famed as a warrior",
     "nama": "poet-saint",
     "narayana": "Lord Viṣṇu",
+    "naga": "serpent being; dragon-like guardian",
+    "purana": "ancient sacred narrative and teaching tradition",
+    "patha": "recitation; devotional reading aloud",
+    "rama": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
     "ramadhava": "Lord Viṣṇu",
+    "ravana": "king of Laṅkā and Sītā’s captor",
     "rudra": "fierce form of Śiva",
     "sai": "holy master",
     "sainath": "Lord Sai",
+    "sankara": "Śiva; the beneficent deity",
+    "sita": "Rāma’s wife and heroine of the Rāmāyaṇa",
     "shiva": "the auspicious one; deity of transformation and yogic asceticism",
     "siva": "the auspicious one; deity of transformation and yogic asceticism",
     "sivasankara": "Śiva as the auspicious maker of good",
     "sudama": "impoverished devotee and friend of Kṛṣṇa",
+    "sugriva": "Vānara king and ally of Rāma",
+    "surasa": "serpent-mother who tests Hanumān on his journey",
+    "vibhishana": "Rāvaṇa’s brother who seeks refuge with Rāma",
     "tunga": "lofty; high",
+    "trisira": "a three-headed demon commander slain by Rāma",
+    "uma": "Pārvatī, Śiva’s consort",
     "vasko": "the poet's name",
 }
 
@@ -129,6 +153,12 @@ def is_placeholder_gloss(gloss: object) -> bool:
 
 def meaning_only_gloss(roman: object, gloss: object, concept_key: object = "") -> str:
     text = str(gloss or "").strip()
+    # Some model outputs use a decomposed or accented spelling in the visible
+    # label and a different normalized spelling in the gloss.  Resolve this
+    # recurring Sundarakāṇḍa proper name before the generic self-reference
+    # detector, which deliberately treats either form as repetition.
+    if any(key in {"mainaka", "mainak"} for key in roman_keys(roman)):
+        return MEANING_ONLY["mainaka"]
     if not is_self_referential(roman, text):
         return text
     concept_hint = str(PRESERVED.get(str(concept_key or ""), {}).get("shortGlossHint") or "").strip()

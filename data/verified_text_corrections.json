@@ -1,6 +1,15 @@
 {
   "version": 1,
   "songs": {
+    "sampurna-sundarakanda": {
+      "lines": {
+        "line-379": {
+          "source_text": "नाघि सिंधु हाटकपुर जारा। निसिचर गन बधि बिपिन उजारा।",
+          "roman": "nāghi siṁdhu hāṭakapura jārā. nisicara gana badhi bipina ujārā.",
+          "verification": "The Hari Om Sharan recording audibly sings bādhi/badhi, the conjunctive form ‘having slain’; the public working witness’s bidhi is contextually inapposite here."
+        }
+      }
+    },
     "arunachala-akshara-mana-malai": {
       "lines": {
         "line-095": {

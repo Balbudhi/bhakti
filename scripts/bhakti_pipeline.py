@@ -44,7 +44,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE_ORIGIN = "https://bhakti.eeshan.xyz"
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 7
-LONG_TRANSCRIPT_CONTRACT_VERSION = 1
+LONG_TRANSCRIPT_CONTRACT_VERSION = 4
 GLOSS_CONTRACT_VERSION = 5
 TRANSLATION_INPUT_VERSION = 8
 SEMANTIC_FRAME_FIELDS = (
@@ -200,7 +200,8 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
                      "languages": list(override.get("languages") or []),
                      "subjectTags": list(override.get("subjectTags") or []),
                      "searchAliases": [raw_title, *(override.get("searchAliases") or [])], "_source_metadata": metadata,
-                     "_source_resolution": resolved, "_keep_original": keep_original})
+                     "_source_resolution": resolved, "_keep_original": keep_original,
+                     "sourceFirstWitness": bool(override.get("sourceFirstWitness"))})
     if options.batch:
         raw = json.loads(options.batch.read_text(encoding="utf-8"))
         entries = raw.get("songs", []) if isinstance(raw, dict) else raw
@@ -235,7 +236,8 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
         # is safe to resume; never overwrite an actual partial reader instead.
         entries = list(song_dir.iterdir())
         resumable_empty_scaffold = all(
-            entry.name == ".transcription" and entry.is_dir() and not any(entry.iterdir())
+            (entry.name == ".transcription" and entry.is_dir() and not any(entry.iterdir()))
+            or (entry.name.startswith("audio.") and entry.suffix in {".part", ".webm", ".ogg", ".mp3", ".wav", ".flac"})
             for entry in entries
         )
         if not resumable_empty_scaffold:
@@ -264,6 +266,8 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
             "source_resolution": resolution,
             "review_note": "Source metadata is evidence to verify, never automatic public credit.",
         }
+        if job.get("sourceFirstWitness"):
+            source["source_first_witness"] = True
         subprocess.run(["yt-dlp", "-4", "--no-playlist", "-f", "bestaudio", "-o", str(song_dir / "audio.%(ext)s"), source_value], check=True)
         originals = [path for path in song_dir.glob("audio.*") if path.suffix not in {".part", ".ytdl"}]
         if len(originals) != 1:
@@ -569,6 +573,12 @@ def transcribe_long_audio(
     target_seconds: float = 300.0, minimum_core: float = 180.0,
 ) -> dict[str, Any]:
     segments = adaptive_audio_segments(audio, target_seconds=target_seconds, minimum_core=minimum_core)
+    source_first = bool(source.get("source_first_witness"))
+    witness = source_witness.acquire(song_dir, song_dir.name, refresh=source_first) if source_first else None
+    witness_lines = ([{"text": value} for value in (witness or {}).get("witness", {}).get("performance_additions", [])]
+                     + list(witness.get("lines", [])) if witness else [])
+    if source_first and not witness_lines:
+        raise RuntimeError("source-first intake requires a complete registered textual witness")
     cache_dir = song_dir / ".transcription" / "pipeline" / "transcript-segments"
     cache_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="bhakti-long-transcript-") as temporary:
@@ -581,19 +591,38 @@ def transcribe_long_audio(
                             "-c:a", "aac", "-b:a", "192k", str(clip)], check=True)
             jobs.append((segment, clip))
 
-        def run(job: tuple[dict[str, Any], Path]) -> dict[str, Any]:
+        def run(job: tuple[dict[str, Any], Path], source_anchor: int | None = None) -> dict[str, Any]:
             segment, clip = job
             cache_path = cache_dir / f"segment-{segment['index']:03d}.json"
             cached = read_packet(cache_path)
             if (cached and cached.get("contract_version") == LONG_TRANSCRIPT_CONTRACT_VERSION
                     and cached.get("segment") == segment and isinstance(cached.get("response"), dict)):
                 return cached
+            source_first_context = ""
+            if source_first:
+                if source_anchor is None:
+                    raise RuntimeError("source-first segment lacks a verified preceding witness anchor")
+                # A segment can begin inside the preceding line. Retain a
+                # narrow look-back for that overlap, then advance only from
+                # the last source line the prior segment actually confirmed.
+                start = max(0, source_anchor - 12)
+                end = min(len(witness_lines), start + 140)
+                candidates = [{"source_index": index, "source_text": witness_lines[index]["text"]}
+                              for index in range(start, end)]
+                source_first_context = f"""
+SOURCE-CONTROLLED TRANSCRIPTION:
+This is a complete performance of an identified Awadhi original-text witness. Do not freely transcribe, normalize, or reconstruct a lyric. Every returned `source_text` must copy one candidate line exactly, every returned `language` must be `Awadhi`, and returned lines must remain in candidate order. Select every candidate line audibly performed in this clip, including a line crossing an overlap; omit a candidate only when it is not heard. If the audible wording differs materially from every candidate, report that disagreement in `uncertainties` rather than inventing text.
+
+Candidate witness lines:
+{json.dumps(candidates, ensure_ascii=False)}
+"""
             prompt = f"""Transcribe this complete devotional-song excerpt with extreme care. Listen through the entire clip repeatedly enough to avoid missing a single sung, spoken, lead, response, invocation, refrain, pickup, repeated, or closing line. Do not translate. Do not infer unheard text. Mark uncertainty rather than guessing.
 
 This is segment {segment['index']} of a longer recording. Its audio covers absolute source seconds {segment['clip_start']:.3f}–{segment['clip_end']:.3f}; its non-overlap core is {segment['core_start']:.3f}–{segment['core_end']:.3f}. Text in the overlap is intentionally duplicated and must still be transcribed. Identify the language and native script per line, including code-switching.
 
 Source metadata is only a lead, never proof:
 {json.dumps(source, ensure_ascii=False)}
+{source_first_context}
 
 Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
@@ -609,14 +638,39 @@ Return strict JSON:
                         raise
             if response is None:
                 raise RuntimeError(f"segment {segment['index']} produced no transcription response")
+            if source_first:
+                returned = [str(line.get("source_text") or "") for line in response["packet"].get("lines", [])]
+                cursor = 0
+                indices: list[int] = []
+                for text in returned:
+                    match = next((item["source_index"] for item in candidates[cursor:]
+                                  if str(item["source_text"]) == text), None)
+                    if match is None:
+                        raise RuntimeError(f"segment {segment['index']} returned text outside its witness window")
+                    indices.append(match)
+                    cursor = next(index for index, item in enumerate(candidates)
+                                  if item["source_index"] == match) + 1
+                if not indices:
+                    raise RuntimeError(f"segment {segment['index']} selected no witness lines")
             item = {"contract_version": LONG_TRANSCRIPT_CONTRACT_VERSION,
                     "segment": segment, "response": response}
+            if source_first:
+                item["source_first_indices"] = indices
             write_json(cache_path, item)
             return item
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(jobs))) as pool:
-            responses = list(pool.map(run, jobs))
-    packet = {"segmented": True, "segments": [{"segment": item["segment"], "transcript": item["response"]["packet"]}
+        if source_first:
+            responses = []
+            anchor = 0
+            for job in jobs:
+                item = run(job, anchor)
+                responses.append(item)
+                anchor = max(item["source_first_indices"]) + 1
+        else:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(jobs))) as pool:
+                responses = list(pool.map(run, jobs))
+    packet = {"segmented": True, "source_first_witness": source_first,
+              "segments": [{"segment": item["segment"], "transcript": item["response"]["packet"]}
                                                 for item in responses],
               "instruction": "Overlaps are duplicate evidence. The full-audio audit must reconcile them into one exact performance order."}
     return {"packet": packet, "segment_responses": responses, "resolved_model": options.model}
@@ -728,7 +782,7 @@ def normalized_language(value: str) -> str:
     return {"hi": "Hindi", "hin": "Hindi", "hindi": "Hindi", "mr": "Marathi", "mar": "Marathi",
             "marathi": "Marathi", "sa": "Sanskrit", "san": "Sanskrit", "sanskrit": "Sanskrit",
             "pa": "Punjabi", "pan": "Punjabi", "punjabi": "Punjabi", "kn": "Kannada", "kan": "Kannada",
-            "kannada": "Kannada", "bra": "Braj", "braj": "Braj", "raj": "Rajasthani",
+            "kannada": "Kannada", "awa": "Awadhi", "awadhi": "Awadhi", "bra": "Braj", "braj": "Braj", "raj": "Rajasthani",
             "rajasthani": "Rajasthani"}.get(key, value.strip())
 
 
@@ -817,6 +871,7 @@ def audit_long_transcript(
     song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace
 ) -> dict[str, Any]:
     segments = raw["packet"]["segments"]
+    source_first = bool(raw["packet"].get("source_first_witness"))
     witness = source_witness.acquire(song_dir, song_dir.name)
     cache_dir = song_dir / ".transcription" / "pipeline" / "audit-segments"
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -842,6 +897,17 @@ def audit_long_transcript(
             if cached and not options.source_witness_audit:
                 return cached
             witness_context = source_witness.prompt_context(witness, first.get("lines", []))
+            source_first_context = ""
+            if source_first:
+                exact_lines = [{"source_text": line.get("source_text", "")}
+                               for line in first.get("lines", [])]
+                source_first_context = f"""
+SOURCE-CONTROLLED AUDIT:
+The first pass selected its text from an identified original witness. Do not rewrite, normalize, or replace its source text. Every returned `source_text` must exactly copy one item from the first-pass source list below. Use the audio only to confirm presence, order, overlap status, and an audible variant that must be reported as uncertainty.
+
+First-pass source lines:
+{json.dumps(exact_lines, ensure_ascii=False)}
+"""
             prompt = f"""This is the required second transcription pass for one segment of a long devotional recording. Audit the entire first-pass transcript below against the complete attached segment. Use the first transcript as your working draft; do not start over.
 
 Be extremely careful not to miss, hallucinate, reorder, or silently correct any sung, spoken, lead, response, invocation, refrain, pickup, repeated, or closing line. Preserve overlap text because local code reconciles it. For Indic source text, retain the natural script and give a consistent scholarly ISO 15919/IAST-style romanization with accurate vowel length, retroflexion, aspiration, and language-appropriate pronunciation. Do not translate or estimate timestamps. Mark genuine uncertainty rather than guessing.
@@ -851,6 +917,7 @@ Segment audio: absolute source seconds {segment['clip_start']:.3f}–{segment['c
 FIRST TRANSCRIPT:
 {json.dumps(first, ensure_ascii=False)}
 {witness_context}
+{source_first_context}
 
 Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
@@ -860,6 +927,12 @@ Return strict JSON:
                     response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=options.timeout,
                                            response_schema=segment_transcript_schema(), schema_name="bhakti_segment_audit",
                                            reasoning_effort="high", max_completion_tokens=32768)
+                    if source_first:
+                        allowed_text = {str(line.get("source_text") or "") for line in first.get("lines", [])}
+                        invented = [str(line.get("source_text") or "") for line in response["packet"].get("lines", [])
+                                    if str(line.get("source_text") or "") not in allowed_text]
+                        if invented:
+                            raise RuntimeError(f"source-first audit segment {segment['index']} rewrote witness text")
                     result = {"segment": segment, "first": first, "audit": response}
                     write_json(cached_path, result)
                     return result
@@ -873,7 +946,28 @@ Return strict JSON:
         with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(jobs))) as pool:
             audited_segments = list(pool.map(run, jobs))
     merged = merge_audited_segments(audited_segments)
-    return {"packet": merged, "segment_audits": audited_segments,
+    if raw["packet"].get("source_first_witness"):
+        source_responses = {item.get("segment", {}).get("index"): item
+                            for item in raw.get("segment_responses", []) if isinstance(item, dict)}
+        confirmed_seams = set()
+        for index in range(1, len(segments)):
+            left = source_responses.get(segments[index - 1]["segment"].get("index"), {})
+            right = source_responses.get(segments[index]["segment"].get("index"), {})
+            if set(left.get("source_first_indices", [])).intersection(right.get("source_first_indices", [])):
+                confirmed_seams.add((index - 1, index))
+        merged["uncertainties"] = [value for value in merged.get("uncertainties", [])
+                                   if not any(str(value).startswith(f"segment seam {left}/{right}")
+                                              for left, right in confirmed_seams)]
+        expected = {str(value) for value in (witness or {}).get("witness", {}).get("performance_additions", [])}
+        expected.update(str(item.get("text") or "") for item in (witness or {}).get("lines", []))
+        line_by_id = {line["id"]: line for line in merged.get("verified_lines", [])}
+        observed = [str(line_by_id.get(item.get("line_id"), {}).get("source_text") or "")
+                    for item in merged.get("performance_order", [])]
+        if any(item not in expected for item in observed):
+            merged.setdefault("uncertainties", []).append(
+                "source-first performance uses text outside the registered witness"
+            )
+    return {"packet": merged, "segment_audits": audited_segments, "source_first_witness": source_first,
             "source_witness": witness.get("witness") if witness else None,
             "merge_contract_version": LONG_MERGE_VERSION, "resolved_model": options.model}
 
@@ -1018,13 +1112,29 @@ def long_coarse_sequence(
         starts.append(round(min(duration, max(point, starts[-1] + 0.1 if starts else 0.0)), 3))
     rebuilt = [{"line": line, "start": starts[index], "segment_index": segment_index}
                for index, (line, _point, segment_index) in enumerate(compressed)]
-    pairs = align_long_coarse_entries(occurrences, rebuilt)
+    if audited.get("source_first_witness"):
+        if len(rebuilt) != len(occurrences):
+            raise RuntimeError(
+                "source-first long-audio coarse sequence differs from the audited performance order"
+            )
+        # Both sequences derive from the same source-controlled, independently
+        # audited performance order. Pairing by position preserves a reviewed
+        # audible spelling correction (for example bādhi vs. a witness's
+        # bidhi) without allowing fuzzy text matching to drop that occurrence.
+        pairs = list(enumerate(range(len(occurrences))))
+    else:
+        pairs = align_long_coarse_entries(occurrences, rebuilt)
     matched_actual = {actual_index for actual_index, _coarse_index in pairs}
     matched_coarse = {coarse_index for _actual_index, coarse_index in pairs}
-    if len(matched_coarse) != len(rebuilt):
+    if len(matched_coarse) != len(rebuilt) and not audited.get("source_first_witness"):
         raise RuntimeError(
             "long-audio coarse reconciliation leaves "
             f"{len(rebuilt) - len(matched_coarse)} rebuilt occurrences unmatched"
+        )
+    if audited.get("source_first_witness") and len(matched_actual) != len(occurrences):
+        raise RuntimeError(
+            "source-first long-audio coarse reconciliation leaves "
+            f"{len(occurrences) - len(matched_actual)} displayed occurrences unmatched"
         )
 
     coarse_by_actual = {actual_index: coarse_index for actual_index, coarse_index in pairs}
@@ -1482,6 +1592,49 @@ def align_long_segments(
     recoveries = [prior_recoveries[occurrences[index]["occurrence_id"]]
                   for index in missing if occurrences[index]["occurrence_id"] in prior_recoveries]
     new_missing = [index for index in missing if occurrences[index]["occurrence_id"] not in prior_recoveries]
+    if new_missing and audited.get("source_first_witness"):
+        parent_chunks = {chunk["index"]: chunk
+                         for chunk in build_long_timing_chunks(audited, occurrences, coarse_sequence, duration)}
+        grouped: list[dict[str, Any]] = []
+        for parent_index, indices in __import__("itertools").groupby(
+            new_missing, key=lambda index: int(coarse_sequence[index]["segment_index"])
+        ):
+            values = list(indices)
+            parent = parent_chunks[parent_index]
+            for offset in range(0, len(values), 10):
+                selected = values[offset:offset + 10]
+                first, last = selected[0], selected[-1]
+                grouped.append({
+                    "index": parent_index * 1000 + offset // 10,
+                    "grid": "source-first-grouped-recovery",
+                    "core_start": float(parent["clip_start"]), "core_end": float(parent["clip_end"]),
+                    "clip_start": float(parent["clip_start"]), "clip_end": float(parent["clip_end"]),
+                    "target_indices": selected,
+                    "target_occurrences": [{**occurrences[index], "coarse_source_start": coarse_sequence[index]["start"]}
+                                           for index in selected],
+                    "preceding_context": occurrences[first - 1] if first else None,
+                    "following_context": occurrences[last + 1] if last + 1 < len(occurrences) else None,
+                })
+        with tempfile.TemporaryDirectory(prefix="bhakti-source-first-grouped-recovery-") as temporary:
+            destination = Path(temporary)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(2, len(grouped))) as pool:
+                grouped_reports = list(pool.map(
+                    lambda chunk: refine_timing_chunk(
+                        audio, occurrences, chunk, options, destination, None,
+                        max_coarse_delta=float(chunk["clip_end"]) - float(chunk["clip_start"]),
+                        reasoning_effort="high", max_completion_tokens=32768,
+                    ), grouped,
+                ))
+        reports.extend(grouped_reports)
+        for report in grouped_reports:
+            uncertain = set(str(value) for value in report.get("uncertain_ids", []))
+            for entry in report["starts"]:
+                if entry["occurrence_id"] not in uncertain:
+                    starts_by_id[entry["occurrence_id"]] = float(entry["start"])
+        unresolved = [index for index in new_missing if occurrences[index]["occurrence_id"] not in starts_by_id]
+        if unresolved:
+            return [], reports, [f"source-first grouped timing recovery leaves {len(unresolved)} occurrences unresolved"]
+        new_missing = []
     if new_missing:
         with tempfile.TemporaryDirectory(prefix="bhakti-long-single-starts-") as temporary:
             destination = Path(temporary)
@@ -2049,7 +2202,9 @@ CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
 
 TARGET LYRICS (return these IDs only):
-{json.dumps(batch, ensure_ascii=False)}
+{json.dumps([{**line, "surface_tokens": [token for token in str(line.get("roman", "")).split()
+                                             if any(character.isalnum() for character in token)]}
+            for line in batch], ensure_ascii=False)}
 
 NEARBY CONTEXT (do not return these IDs unless also targets):
 {json.dumps(context, ensure_ascii=False)}
@@ -2074,8 +2229,13 @@ Return strict JSON:
                              reasoning_effort="high", max_completion_tokens=65536)
         result["packet"]["glosses"] = normalize_gloss_rows(lines, result["packet"].get("glosses", []))
     else:
-        batches = [lines[index:index + 40] for index in range(0, len(lines), 40)]
-        cache_dir = song_dir / ".transcription" / "pipeline" / "gloss-batches"
+        batch_size = int(getattr(options, "gloss_batch_size", 40) or 40)
+        if batch_size < 1:
+            raise RuntimeError("gloss_batch_size must be positive")
+        batches = [lines[index:index + batch_size] for index in range(0, len(lines), batch_size)]
+        cache_dir = song_dir / ".transcription" / "pipeline" / (
+            "gloss-batches" if batch_size == 40 else f"gloss-batches-{batch_size}"
+        )
         cache_dir.mkdir(parents=True, exist_ok=True)
 
         def run(index: int) -> dict[str, Any]:
@@ -2098,7 +2258,14 @@ Return strict JSON:
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=options.timeout, response_schema=schema,
                                        schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
-                                       max_completion_tokens=65536)
+                                       max_completion_tokens=65536,
+                                       max_attempts=getattr(options, "max_attempts", 6))
+                # Preserve a private candidate before normalization so a
+                # deterministic mapping rejection can be repaired without
+                # paying to regenerate otherwise sound lexical work.
+                write_json(cache_dir / f"candidate-{label.replace('.', '-')}.json", {
+                    "target_ids": target_ids, "response": response,
+                })
                 response["packet"]["glosses"] = normalize_gloss_rows(
                     target_lines, response["packet"].get("glosses", [])
                 )
@@ -2140,7 +2307,8 @@ Return strict JSON:
             write_json(cache_path, packet)
             return packet
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        with concurrent.futures.ThreadPoolExecutor(
+                max_workers=min(max(1, int(getattr(options, "gloss_workers", 2) or 2)), len(batches))) as pool:
             packets = list(pool.map(run, range(len(batches))))
         result = {"packet": {"glosses": [row for packet in packets
                                            for row in packet["response"]["packet"]["glosses"]]},
@@ -2546,7 +2714,7 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
 
 def language_code(language: str) -> str:
     return {"Hindi": "hi", "Sanskrit": "sa", "Punjabi": "pa", "Kannada": "kn", "Marathi": "mr",
-            "Braj": "bra"}.get(language, "")
+            "Awadhi": "awa", "Braj": "bra"}.get(language, "")
 
 
 def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:

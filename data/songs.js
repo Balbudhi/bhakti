@@ -1990,6 +1990,48 @@ window.BHAKTI_SONGS = [
     "queueNumber": 61
   },
   {
+    "slug": "sampurna-sundarakanda",
+    "queueId": "e4bd6898",
+    "title": "Sampūrṇa Sundarakāṇḍa",
+    "credit": "Tulsīdās · Hari Om Sharan",
+    "languageTags": [
+      "Awadhi"
+    ],
+    "subjectTags": [
+      "Hanumān",
+      "Rāma",
+      "Śakti",
+      "Sarasvatī"
+    ],
+    "searchAliases": [
+      "Hanuman",
+      "Tulsidas · Hari Om Sharan",
+      "Tulsidas",
+      "Rama",
+      "Shakti",
+      "Sakti",
+      "Sarasvati",
+      "Sampoorna Sunder Kand",
+      "Sampoorna Sundarkand Hari Om Sharan",
+      "Ramcharitmanas Sundarkand"
+    ],
+    "writer": "Tulsīdās",
+    "singer": "Hari Om Sharan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sampurna-sundarakanda.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sampurna-sundarakanda.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Hanumān",
+    "queueNumber": 235
+  },
+  {
     "slug": "mahavir-hanuman-gosain",
     "queueId": "6cc87b66",
     "title": "Mahavir Hanuman Gosain",

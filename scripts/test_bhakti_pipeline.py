@@ -64,6 +64,20 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(song.name, "resume-test")
         self.assertTrue((song / "audio.m4a").is_file())
 
+    def test_intake_resumes_a_partial_youtube_download(self) -> None:
+        source = self.root / "input.m4a"
+        subprocess.run([
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=0.1",
+            "-c:a", "aac", str(source),
+        ], check=True)
+        song_dir = self.root / "songs" / "partial-test"
+        (song_dir / ".transcription").mkdir(parents=True)
+        (song_dir / "audio.webm").write_bytes(b"partial listener source")
+        with mock.patch.object(pipeline, "is_youtube_or_query", return_value=False):
+            song, _evidence = pipeline.intake({"slug": "partial-test", "source": str(source)}, force=False)
+        self.assertEqual(song.name, "partial-test")
+        self.assertTrue((song / "audio.m4a").is_file())
+
     def test_generation_uses_roles_and_canonical_reader_contract(self) -> None:
         song = self.root / "songs" / "sample-song"
         song.mkdir()
@@ -144,7 +158,7 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("line word gloss 0 flattens pati to Lord", pipeline.gloss_contract_errors(lines, rows))
 
     def test_long_transcript_cache_contract_is_versioned(self) -> None:
-        self.assertGreaterEqual(pipeline.LONG_TRANSCRIPT_CONTRACT_VERSION, 1)
+        self.assertGreaterEqual(pipeline.LONG_TRANSCRIPT_CONTRACT_VERSION, 4)
 
     def test_historical_spoken_intro_evidence_is_repaired_without_an_api_call(self) -> None:
         artifact = {

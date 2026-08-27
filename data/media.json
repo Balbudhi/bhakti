@@ -1892,6 +1892,18 @@
         "sha256": "f4d6f9ad3d65f883257b0714e285c6b2d1468b94cb80d4ceede79d0e62d64c02"
       }
     ],
+    "sampurna-sundarakanda": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sampurna-sundarakanda.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "fee32605de1f30b421ca0eee08bf31d15636d1506bc1310bc1ee2e0e2ce5a2f1"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sampurna-sundarakanda.m4a",
+        "type": "audio/mp4",
+        "sha256": "8c4b8a79b1ab63856a992a858d39e9910c561120ace298ad5a5519e0cbe48dae"
+      }
+    ],
     "sangat-santan-ki-karle": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sangat-santan-ki-karle.m4a",

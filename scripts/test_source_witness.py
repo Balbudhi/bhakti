@@ -47,6 +47,19 @@ class SourceWitnessTests(unittest.TestCase):
             "सिद्धि सदन गजवदन विनायक ।",
         ])
 
+    def test_html_pre_range_extractor_keeps_the_source_poem_without_metadata(self) -> None:
+        document = '''<pre class="stotra" id="content">भूमिका
+जामवंत के बचन सुहाए।
+सुनि हनुमंत हृदय अति भाए ॥
+दोहा सकल सुमंगल दायक रघुनायक गुन गान।</pre>
+        <pre class="inf">% Text title metadata</pre>'''
+        self.assertEqual(source_witness._extract_html_pre_text_range(
+            document, "जामवंत के बचन सुहाए", "दोहा सकल सुमंगल दायक रघुनायक गुन गान。"
+        ), [])
+        self.assertEqual(source_witness._extract_html_pre_text_range(
+            document, "जामवंत के बचन सुहाए", "दोहा सकल सुमंगल दायक रघुनायक गुन गान।"
+        ), ["जामवंत के बचन सुहाए।", "सुनि हनुमंत हृदय अति भाए ॥", "दोहा सकल सुमंगल दायक रघुनायक गुन गान।"])
+
 
 if __name__ == "__main__":
     unittest.main()
