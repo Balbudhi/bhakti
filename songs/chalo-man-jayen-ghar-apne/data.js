@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Chalo Man Jāyẽ Ghar Apne",
   "subtitle": "Rāmakṛṣṇa",
-  "credit": "Traditional Bengali devotional song",
-  "pageCredit": "Traditional Bengali devotional song",
-  "writer": "Traditional Bengali devotional song",
+  "credit": "",
+  "pageCredit": "",
+  "writer": "",
   "singer": "",
   "vocalist": "",
   "composer": "",

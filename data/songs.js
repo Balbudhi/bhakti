@@ -1370,6 +1370,39 @@ window.BHAKTI_SONGS = [
     "queueNumber": 79
   },
   {
+    "slug": "chalo-man-jayen-ghar-apne",
+    "queueId": "32e65e4f",
+    "title": "Chalo Man Jāyẽ Ghar Apne",
+    "credit": "",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāmakṛṣṇa"
+    ],
+    "searchAliases": [
+      "Chalo Man Jayẽ Ghar Apne",
+      "Ramakrshna",
+      "Ramakrsna",
+      "Chalo Mann Jayen Ghar Apne"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāmakṛṣṇa",
+    "queueNumber": 230
+  },
+  {
     "slug": "ab-to-mujhko-bata-mere-sai",
     "queueId": "afcd1324",
     "title": "Ab To Mujhko Batā Mere Sāī̃",
@@ -6777,39 +6810,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 179
-  },
-  {
-    "slug": "chalo-man-jayen-ghar-apne",
-    "queueId": "32e65e4f",
-    "title": "Chalo Man Jāyẽ Ghar Apne",
-    "credit": "Traditional Bengali devotional song",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Rāmakṛṣṇa"
-    ],
-    "searchAliases": [
-      "Chalo Man Jayẽ Ghar Apne",
-      "Ramakrshna",
-      "Ramakrsna",
-      "Chalo Mann Jayen Ghar Apne"
-    ],
-    "writer": "Traditional Bengali devotional song",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chalo-man-jayen-ghar-apne.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Rāmakṛṣṇa",
-    "queueNumber": 230
   },
   {
     "slug": "chitrakoot-ati-vichitra",
