@@ -344,16 +344,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "१",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "vande'haṁ karuṇākaraṁ raghuvaraṁ bhūpālacūṛāmaṇim .. 1 ..",
-    "english": "{0:I bow to Him, }{1:the mine of compassion, }{2:the foremost of the Raghus, }{3:the crest-jewel among kings. 1}",
+    "roman": "vande'haṁ karuṇākaraṁ raghuvaraṁ bhūpālacūṛāmaṇim",
+    "english": "{0:I bow to Him, }{1:the mine of compassion, }{2:the foremost of the Raghus, }{3:the crest-jewel among kings}",
     "words": [
       {
         "roman": "vande'haṁ",
@@ -598,16 +592,10 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
-      },
-      {
-        "text": "२",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "kāmādidoṣarahitaṁ kuru mānasaṁ ca .. 2 ..",
-    "english": "{3:and }{1:render }{2:my mind }{0:devoid of faults such as lust. 2}",
+    "roman": "kāmādidoṣarahitaṁ kuru mānasaṁ ca",
+    "english": "{3:and }{1:render }{2:my mind }{0:devoid of faults such as lust}",
     "words": [
       {
         "roman": "kāmādidoṣarahitaṁ",
@@ -762,16 +750,10 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "३",
-        "wordIndices": [
-          3
-        ]
       }
     ],
-    "roman": "raghupatipriyabhaktaṁ vātajātaṁ namāmi .. 3 ..",
-    "english": "{0:beloved devotee of the guardian of Raghu's line, }{1:son of the wind—}{2:I bow to him. }{3:3}",
+    "roman": "raghupatipriyabhaktaṁ vātajātaṁ namāmi",
+    "english": "{0:beloved devotee of the guardian of Raghu's line, }{1:son of the wind—}{2:I bow to him.}",
     "words": [
       {
         "roman": "raghupatipriyabhaktaṁ",
@@ -1820,12 +1802,6 @@ window.SONG_LINES = {
         "text": "बिश्राम",
         "wordIndices": [
           6
-        ]
-      },
-      {
-        "text": "१",
-        "wordIndices": [
-          7
         ]
       }
     ],
@@ -3618,12 +3594,6 @@ window.SONG_LINES = {
         "text": "हनुमान",
         "wordIndices": [
           6
-        ]
-      },
-      {
-        "text": "२",
-        "wordIndices": [
-          7
         ]
       }
     ],
@@ -5554,16 +5524,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "१",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "bahurūpa nisicara jūtha atibala sena baranata nahi~ banai. 1.",
-    "english": "{4:The army}{3: of immensely mighty}{2: troops}{0: of multiform}{1: night-wanderers}{5,6,7: defies description.}{8: || 1 ||}",
+    "english": "{4:The army}{3: of immensely mighty}{2: troops}{0: of multiform}{1: night-wanderers}{5,6,7: defies description.}",
     "words": [
       {
         "roman": "bahurūpa",
@@ -6006,16 +5970,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "२",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "nānā akhārenha bhirahī~ bahu bidhi eka ekanha tarjahī~. 2.",
-    "english": "{0:in diverse}{1: arenas}{2: they grapple}{3: in many}{4: ways,}{7: and challenge}{5,6: one another.}{8: || 2 ||}",
+    "english": "{0:in diverse}{1: arenas}{2: they grapple}{3: in many}{4: ways,}{7: and challenge}{5,6: one another.}",
     "words": [
       {
         "roman": "nānā",
@@ -6506,16 +6464,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "३",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "raghubīra sara tīratha sarīranhi tyāgi gati paihahi~ sahī. 3.",
-    "english": "{4:relinquishing}{3: their bodies}{2: at the sacred ford}{0: of the Hero of Raghu's line's}{1: arrows,}{7: they will truly}{6: attain}{5: liberation.}{8: || 3 ||}",
+    "english": "{4:relinquishing}{3: their bodies}{2: at the sacred ford}{0: of the Hero of Raghu's line's}{1: arrows,}{7: they will truly}{6: attain}{5: liberation.}",
     "words": [
       {
         "roman": "raghubīra",
@@ -6741,12 +6693,6 @@ window.SONG_LINES = {
       },
       {
         "text": "पइसार",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "३",
         "wordIndices": [
           7
         ]
@@ -7994,16 +7940,10 @@ window.SONG_LINES = {
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "४",
-        "wordIndices": [
-          9
-        ]
       }
     ],
     "roman": "tūla na tāhi sakala mili jo sukha lava satasaṅga || 4 ||",
-    "english": "{3:all of them }{4:combined }{1:do not }{0:equal }{2:that }{6:bliss }{5:which }{7:comes from an instant }{8:of communion with the virtuous. }{9:|| 4 ||}",
+    "english": "{3:all of them }{4:combined }{1:do not }{0:equal }{2:that }{6:bliss }{5:which }{7:comes from an instant }{8:of communion with the virtuous.}",
     "words": [
       {
         "roman": "tūla",
@@ -9229,12 +9169,6 @@ window.SONG_LINES = {
       },
       {
         "text": "कपिराइ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "५",
         "wordIndices": [
           6
         ]
@@ -10497,12 +10431,6 @@ window.SONG_LINES = {
       },
       {
         "text": "ग्राम",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "६",
         "wordIndices": [
           8
         ]
@@ -11780,16 +11708,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "७",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "kīnhī kṛpā sumiri guna bhare bilocana nīra. 7.",
-    "english": "{2:Remembering }{1:the grace }{0:shown }and his {3:guṇa} s, {5:his eyes }{4:filled }{6:with tears.}{7: 7.}",
+    "english": "{2:Remembering }{1:the grace }{0:shown }and his {3:guṇa} s, {5:his eyes }{4:filled }{6:with tears.}",
     "words": [
       {
         "roman": "kīnhī",
@@ -13042,16 +12964,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "८",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "parama dukhī bhā pavanasuta dekhi jānakī dīna. 8.",
-    "english": "{3:The son of the wind }{2:became }{0:supremely }{1:grieved }{4:seeing }{5:Jānakī }{6:distressed.}{7: 8.}",
+    "english": "{3:The son of the wind }{2:became }{0:supremely }{1:grieved }{4:seeing }{5:Jānakī }{6:distressed.}",
     "words": [
       {
         "roman": "parama",
@@ -14417,16 +14333,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "९",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "paruṣa bacana suni kāṛhi asi bolā ati khisiāna || 9 ||",
-    "english": "{2:hearing }{0:harsh }{1:words, }{3:drawing }{4:his sword, }{5:he spoke, }{6:exceedingly }{7,8:enraged. || 9 ||}",
+    "english": "{2:hearing }{0:harsh }{1:words, }{3:drawing }{4:his sword, }{5:he spoke, }{6:exceedingly }{7,8:enraged.}",
     "words": [
       {
         "roman": "paruṣa",
@@ -15852,16 +15762,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "१०",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "sītahi trāsa dekhāvahi dharahiṁ rūpa bahu maṁda || 10 ||",
-    "english": "{2:displayed }{1:terror }{0:to Sītā }{3:and assumed }{5:many }{6:vile }{4,7:forms. || 10 ||}",
+    "english": "{2:displayed }{1:terror }{0:to Sītā }{3:and assumed }{5:many }{6:vile }{4,7:forms.}",
     "words": [
       {
         "roman": "sītahi",
@@ -17066,15 +16970,9 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "११",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "māsa divasa bītẽ mohi mārihi nisicara poca .. 11 ..",
+    "roman": "māsa divasa bītẽ mohi mārihi nisicara poca",
     "english": "“When the {1:span }{0:of a month }{2:has passed, }{6:the vile }{5:demon }{4:will kill }{3,7:me.”}",
     "words": [
       {
@@ -18906,15 +18804,9 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "१२",
-        "wordIndices": [
-          8
-        ]
       }
     ],
-    "roman": "janu asoka aṅgāra dīnhi haraṣi uṭhi kara gaheu .. 12 ..",
+    "roman": "janu asoka aṅgāra dīnhi haraṣi uṭhi kara gaheu",
     "english": "{0:Thinking that }{1:the Aśoka tree }{3:had given }{2:an ember, }{5:she rose }{4:in joy }{7,8:and caught it }{6:in her hand.}",
     "words": [
       {
@@ -20525,16 +20417,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "१३",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "jānā mana krama bacana yaha kṛpāsindhu kara dāsa. 13.",
-    "english": "{0:She recognized }{1:in thought, }{2:deed, }{3:and word }{4:that this one }{7:is a servant }{5,6:of the Ocean of Grace. }{8:|| 13 ||}",
+    "english": "{0:She recognized }{1:in thought, }{2:deed, }{3:and word }{4:that this one }{7:is a servant }{5,6:of the Ocean of Grace.}",
     "words": [
       {
         "roman": "jānā",
@@ -22031,16 +21917,10 @@ window.SONG_LINES = {
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "१४",
-        "wordIndices": [
-          9
-        ]
       }
     ],
     "roman": "asa kahi kapi gada gada bhayau bharē bilōcana nīra. 14.",
-    "english": "{1:Having }{1:spoken }{0:thus, }{2:the monkey }{5:became }{3,4:choked with emotion, }{7:and his eyes }{6:filled }{8:with tears. }{9:14.}",
+    "english": "{1:Having }{1:spoken }{0:thus, }{2:the monkey }{5:became }{3,4:choked with emotion, }{7:and his eyes }{6:filled }{8:with tears.}",
     "words": [
       {
         "roman": "asa",
@@ -23615,16 +23495,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "१५",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "jananī hṛdayam̐ dhīra dharu jare nisācara jānu. 15.",
-    "english": "{0:O Mother, }{3:hold }{2:fortitude }{1:in your heart; }{6:consider }{5:the night-wanderers }{4:already burnt. }{7:15.}",
+    "english": "{0:O Mother, }{3:hold }{2:fortitude }{1:in your heart; }{6:consider }{5:the night-wanderers }{4:already burnt.}",
     "words": [
       {
         "roman": "jananī",
@@ -24942,16 +24816,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "१६",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "prabhu pratāpa teṁ garuṛahi khāi parama laghu byāla. 16.",
-    "english": "{2:Through }{0:the Lord’s }{1:majesty, }{5:an extremely }{6:tiny }{7:serpent }{4:devours }{3:Garuḍa. }{8:|| 16 ||}",
+    "english": "{2:Through }{0:the Lord’s }{1:majesty, }{5:an extremely }{6:tiny }{7:serpent }{4:devours }{3:Garuḍa.}",
     "words": [
       {
         "roman": "prabhu",
@@ -26335,16 +26203,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "१७",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "raghupati carana hṛdaya~ dhari tāta madhura phala khāhu. 17.",
-    "english": "{3:holding }{1:the feet of }{0:the guardian of Raghu’s line }{2:in your heart, }{4:dear child, }{7:eat }{5:the sweet }{6:fruits.” }{8:|| 17 ||}",
+    "english": "{3:holding }{1:the feet of }{0:the guardian of Raghu’s line }{2:in your heart, }{4:dear child, }{7:eat }{5:the sweet }{6:fruits.”}",
     "words": [
       {
         "roman": "raghupati",
@@ -27549,16 +27411,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "१८",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "kachu puni jāi pukāre prabhu markaṭa bala bhūri. 18.",
-    "english": "{1:Then }{0:some }{2:went }{3:and cried out, }{4:“O master, }{5:the monkey’s }{6:strength }{7:is immense!” }{8:|| 18 ||}",
+    "english": "{1:Then }{0:some }{2:went }{3:and cried out, }{4:“O master, }{5:the monkey’s }{6:strength }{7:is immense!”}",
     "words": [
       {
         "roman": "kachu",
@@ -28888,16 +28744,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "१९",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "jauṃ na brahmasara mānau~ mahimā miṭai apāra. 19.",
-    "english": "{0:“If }{1:I do not }{3:honor }{2:Brahmā’s shaft, }{6:its boundless }{4:glory }{5:will be wiped out.” }{7:|| 19 ||}",
+    "english": "{0:“If }{1:I do not }{3:honor }{2:Brahmā’s shaft, }{6:its boundless }{4:glory }{5:will be wiped out.”}",
     "words": [
       {
         "roman": "jauṃ",
@@ -30143,12 +29993,6 @@ window.SONG_LINES = {
         "text": "बिषाद",
         "wordIndices": [
           7
-        ]
-      },
-      {
-        "text": "२०",
-        "wordIndices": [
-          8
         ]
       }
     ],
@@ -31554,12 +31398,6 @@ window.SONG_LINES = {
         "text": "नारि",
         "wordIndices": [
           8
-        ]
-      },
-      {
-        "text": "२१",
-        "wordIndices": [
-          9
         ]
       }
     ],
@@ -33091,16 +32929,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "२२",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "gaēm̐ sarana prabhu rākhihaiṁ tava aparādha bisāri . 22 .",
-    "english": "{0:Upon taking }{1:refuge, }{2:the Lord }{3:will protect you, }{6:having forgotten }{4:your }{5:offenses. }{7:|| 22 ||}",
+    "english": "{0:Upon taking }{1:refuge, }{2:the Lord }{3:will protect you, }{6:having forgotten }{4:your }{5:offenses.}",
     "words": [
       {
         "roman": "gaēm̐",
@@ -34371,16 +34203,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "२३",
-        "wordIndices": [
-          6
-        ]
       }
     ],
     "roman": "bhajahu rāma raghunāyaka kṛpā sindhu bhagavāna . 23 .",
-    "english": "{0:Worship }{1:Rama, }{2:leader of the Raghus, }{4:ocean }{3:of grace, }{5:the Supreme Lord. }{6:|| 23 ||}",
+    "english": "{0:Worship }{1:Rama, }{2:leader of the Raghus, }{4:ocean }{3:of grace, }{5:the Supreme Lord.}",
     "words": [
       {
         "roman": "bhajahu",
@@ -35740,16 +35566,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "२४",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "tēla bōri paṭa bām̐dhi puni pāvaka dēhu lagāi || 24 ||",
-    "english": "{1:Soaking }{2:cloth }{0:in oil }{3:and binding it, }{4:then }{7:set }{5:fire }{6:to it.” }{8:|| 24 ||}",
+    "english": "{1:Soaking }{2:cloth }{0:in oil }{3:and binding it, }{4:then }{7:set }{5:fire }{6:to it.”}",
     "words": [
       {
         "roman": "tēla",
@@ -37098,16 +36918,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "२५",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "aṭṭahāsa kari garzā kapi baṛhi lāga akāsa. 25.",
-    "english": "{0,1:With a roaring laugh, }{3:the monkey }{2:roared, }{4:and expanding, }{5:touched }{6:the sky. }{7:25.}",
+    "english": "{0,1:With a roaring laugh, }{3:the monkey }{2:roared, }{4:and expanding, }{5:touched }{6:the sky.}",
     "words": [
       {
         "roman": "aṭṭahāsa",
@@ -38408,16 +38222,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "२६",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "janakasutā kē āgēṁ ṭhāṛha bhayau kara jōri. 26.",
-    "english": "{3,4:he stood }{1,2:before }{0:Janaka’s daughter }{6:with joined }{5:palms. }{7:26.}",
+    "english": "{3,4:he stood }{1,2:before }{0:Janaka’s daughter }{6:with joined }{5:palms.}",
     "words": [
       {
         "roman": "janakasutā",
@@ -39658,12 +39466,6 @@ window.SONG_LINES = {
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "२७",
-        "wordIndices": [
-          9
-        ]
       }
     ],
     "roman": "carana kamala siru nā'i kapi gavanu rāma pahiṁ kīnha. 27.",
@@ -40853,12 +40655,6 @@ window.SONG_LINES = {
         "text": "काज",
         "wordIndices": [
           7
-        ]
-      },
-      {
-        "text": "२८",
-        "wordIndices": [
-          8
         ]
       }
     ],
@@ -42152,16 +41948,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "२९",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "pūm̐chī kusala nātha aba kusala dekhi pada kaṃja ॥ 29 ॥",
-    "english": "{0:He asked after }{1:their welfare: }{2:“O master, }{3:now }{4:all is well }{5:upon seeing }{7:your lotus }{6:feet.” }{8:29.}",
+    "english": "{0:He asked after }{1:their welfare: }{2:“O master, }{3:now }{4:all is well }{5:upon seeing }{7:your lotus }{6:feet.”}",
     "words": [
       {
         "roman": "pūm̐chī",
@@ -43413,12 +43203,6 @@ window.SONG_LINES = {
         "text": "बाट",
         "wordIndices": [
           7
-        ]
-      },
-      {
-        "text": "३०",
-        "wordIndices": [
-          8
         ]
       }
     ],
@@ -44789,16 +44573,10 @@ window.SONG_LINES = {
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "३१",
-        "wordIndices": [
-          9
-        ]
       }
     ],
     "roman": "begi caliya prabhu ānia bhuja bala khala dala jīti ॥ 31 ॥",
-    "english": "{1:March}{0: swiftly,}{2: O Lord,}{8: and having conquered}{6,7: the host of the wicked}{5: by the strength}{4: of Your arms,}{3: bring Her back.}{9: || 31 ||}",
+    "english": "{1:March}{0: swiftly,}{2: O Lord,}{8: and having conquered}{6,7: the host of the wicked}{5: by the strength}{4: of Your arms,}{3: bring Her back.}",
     "words": [
       {
         "roman": "begi",
@@ -46117,16 +45895,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "३२",
-        "wordIndices": [
-          6
-        ]
       }
     ],
     "roman": "carana pareu premākula trāhi trāhi bhagavaṁta ॥ 32 ॥",
-    "english": "{2:overwhelmed with love,}{1: he fell}{0: at His feet,}{3: crying, “Protect me,}{4: protect me,}{5: O Blessed Lord!”}{6: || 32 ||}",
+    "english": "{2:overwhelmed with love,}{1: he fell}{0: at His feet,}{3: crying, “Protect me,}{4: protect me,}{5: O Blessed Lord!”}",
     "words": [
       {
         "roman": "carana",
@@ -47409,12 +47181,6 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "३३",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "taba prabhāva~ baṛavānalahiṃ jāri sakai khalu tūla || 33 ||",
@@ -48646,12 +48412,6 @@ window.SONG_LINES = {
         "text": "बरूथ",
         "wordIndices": [
           6
-        ]
-      },
-      {
-        "text": "३४",
-        "wordIndices": [
-          7
         ]
       }
     ],
@@ -50307,16 +50067,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "१",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "jaya rāma prabala pratāpa kosalanātha guna gana gāvahīṃ || 1 ||",
-    "english": "{0:‘Victory}{1: to Rāma}{2:, of mighty}{3: majesty}{4:, the guardian of Kosala!’—}{7:they sing}{6: the hosts of}{5: his guṇas.}{8: 1.}",
+    "english": "{0:‘Victory}{1: to Rāma}{2:, of mighty}{3: majesty}{4:, the guardian of Kosala!’—}{7:they sing}{6: the hosts of}{5: his guṇas.}",
     "words": [
       {
         "roman": "jaya",
@@ -50777,18 +50531,10 @@ window.SONG_LINES = {
           6,
           7
         ]
-      },
-      {
-        "text": "२",
-        "wordIndices": [
-          5,
-          6,
-          7
-        ]
       }
     ],
     "roman": "janu kamaṭha kharpara sarparāja so लिखत अबिचल पावनी || 2 ||",
-    "english": "{0:as though}{1: upon the tortoise’s}{2: carapace}{3: the king of serpents}{5: is writing}{4: that}{6: indelible,}{7: purifying story.} 2.",
+    "english": "{0:as though}{1: upon the tortoise’s}{2: carapace}{3: the king of serpents}{5: is writing}{4: that}{6: indelible,}{7: purifying story.}",
     "words": [
       {
         "roman": "janu",
@@ -51005,16 +50751,10 @@ window.SONG_LINES = {
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "३५",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "jaham̐ taham̐ lāgē khāna phala bhālu bipula kapi bīra || 35 ||",
-    "english": "{0:Here}{1: and there, }{6:the countless}{5: bears}{7: and monkey}{8: heroes}{2: began}{3: to eat}{4: fruits. 35.}",
+    "english": "{0:Here}{1: and there, }{6:the countless}{5: bears}{7: and monkey}{8: heroes}{2: began}{3: to eat}{4: fruits}",
     "words": [
       {
         "roman": "jaham̐",
@@ -52589,16 +52329,10 @@ window.SONG_LINES = {
         "wordIndices": [
           9
         ]
-      },
-      {
-        "text": "३६",
-        "wordIndices": [
-          10
-        ]
       }
     ],
     "roman": "jaba lagi grasata na taba lagi jatanu karahu taji ṭēka || 36 ||",
-    "english": "{0:As}{1: long as}{3: they have not}{2: devoured them,}{4,5: until then}{7: make}{6: an effort,}{8: abandoning}{9: stubborn obstinacy.}{10: || 36 ||}",
+    "english": "{0:As}{1: long as}{3: they have not}{2: devoured them,}{4,5: until then}{7: make}{6: an effort,}{8: abandoning}{9: stubborn obstinacy.}",
     "words": [
       {
         "roman": "jaba",
@@ -54006,16 +53740,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "३७",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "rāja dharma tana tīni kara hoi begihīṁ nāsa ॥ 37 ॥",
-    "english": "{3,4:for these three—}{0:realm,}{1: dharma,}{2: and the body—}{7:destruction}{6: swiftly}{5: occurs.}{8: || 37 ||}",
+    "english": "{3,4:for these three—}{0:realm,}{1: dharma,}{2: and the body—}{7:destruction}{6: swiftly}{5: occurs.}",
     "words": [
       {
         "roman": "rāja",
@@ -55274,16 +55002,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "३८",
-        "wordIndices": [
-          7
-        ]
       }
     ],
     "roman": "saba parihari raghubīrahi bhajahu bhajahiṁ jehi saṁta ॥ 38 ॥",
-    "english": "{1:Renouncing }{0:all these, }{3:worship }{2:the hero of Raghu's line, }{5:whom }{6:holy saints }{4:worship. }{7:|| 38 ||}",
+    "english": "{1:Renouncing }{0:all these, }{3:worship }{2:the hero of Raghu's line, }{5:whom }{6:holy saints }{4:worship.}",
     "words": [
       {
         "roman": "saba",
@@ -57899,16 +57621,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "४०",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "sīta dēhu rāma kahum̐ ahita na hōi tumhāra. 40.",
-    "english": "{1:Give }{0:Sita }{2,3:to Rama, }{5:so that no }{4:harm }{6:befalls }{7:you. }{8:40.}",
+    "english": "{1:Give }{0:Sita }{2,3:to Rama, }{5:so that no }{4:harm }{6:befalls }{7:you.}",
     "words": [
       {
         "roman": "sīta",
@@ -59364,16 +59080,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "४१",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "mai raghubīra sarana aba jāuṁ dēhu jani khōri ॥ 41 ॥",
-    "english": "{0:I }{4:go }{3:now }{2:to the shelter }{1:of the hero of Raghu's line; }{6:do not }{5:lay }{7:blame upon me. }{8:41.}",
+    "english": "{0:I }{4:go }{3:now }{2:to the shelter }{1:of the hero of Raghu's line; }{6:do not }{5:lay }{7:blame upon me.}",
     "words": [
       {
         "roman": "mai",
@@ -60554,16 +60264,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "४२",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "tē pada āju bilōkihauṁ inha nayananhi aba jāi ॥ 42 ॥",
-    "english": "{0:those}{1: feet}{3: I shall behold}{2: today}{4: with these}{5: eyes,}{7: going}{6: now.}{8: || 42 ||}",
+    "english": "{0:those}{1: feet}{3: I shall behold}{2: today}{4: with these}{5: eyes,}{7: going}{6: now.}",
     "words": [
       {
         "roman": "tē",
@@ -61833,16 +61537,10 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "४३",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "tē nara pāvam̐ra pāpamaya tinhahi bilōkata hāni .. 43 ..",
-    "english": "{0:those}{1: men}{2: are vile}{3: and full of sin;}{5: merely looking upon}{4: them}{6: brings harm.}{7: || 43 ||}",
+    "roman": "tē nara pāvam̐ra pāpamaya tinhahi bilōkata hāni",
+    "english": "{0:those}{1: men}{2: are vile}{3: and full of sin;}{5: merely looking upon}{4: them}{6: brings harm.}",
     "words": [
       {
         "roman": "tē",
@@ -63095,15 +62793,9 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "४४",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "jaya kṛpāla kahi calē aṅgada hanū samēta .. 44 ..",
+    "roman": "jaya kṛpāla kahi calē aṅgada hanū samēta",
     "english": "{2:Saying, }{0:“Victory }{1:to the Gracious One!”, }{4:Aṅgada }{3:set out }{6:along with }{5,7:Hanumān.}",
     "words": [
       {
@@ -64308,12 +64000,6 @@ window.SONG_LINES = {
         "text": "रघुबीर",
         "wordIndices": [
           6
-        ]
-      },
-      {
-        "text": "४५",
-        "wordIndices": [
-          7
         ]
       }
     ],
@@ -65625,16 +65311,10 @@ window.SONG_LINES = {
         "wordIndices": [
           9
         ]
-      },
-      {
-        "text": "४६",
-        "wordIndices": [
-          10
-        ]
       }
     ],
     "roman": "jaba lagi bhajata na rāma kahum̐ sōka dhāma taji kāma. 46.",
-    "english": "{0,1:so long as }{3:one does not }{2:worship }{4,5:Rāma, }{8:having renounced }{9:kāma, }{7:the abode }{6,10:of sorrow. || 46 ||}",
+    "english": "{0,1:so long as }{3:one does not }{2:worship }{4,5:Rāma, }{8:having renounced }{9:kāma, }{7:the abode }{6,10:of sorrow.}",
     "words": [
       {
         "roman": "jaba",
@@ -66995,16 +66675,10 @@ window.SONG_LINES = {
         "wordIndices": [
           7
         ]
-      },
-      {
-        "text": "४७",
-        "wordIndices": [
-          8
-        ]
       }
     ],
     "roman": "dēkhēuṁ nayana birañci siba sēbya jugala pada kañja. 47.",
-    "english": "{1:for with my own eyes }{0:I have seen }{5:the pair }{7:of lotus }{6:feet }{4:served by }{2:Brahmā }{3,8:and Śiva. || 47 ||}",
+    "english": "{1:for with my own eyes }{0:I have seen }{5:the pair }{7:of lotus }{6:feet }{4:served by }{2:Brahmā }{3,8:and Śiva.}",
     "words": [
       {
         "roman": "dēkhēuṁ",

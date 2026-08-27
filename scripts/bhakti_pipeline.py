@@ -2712,6 +2712,28 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
     return "".join(rendered)
 
 
+VERSE_MARKER_SOURCE = re.compile(r"(?:॥|\|\|)\s*[०-९0-9]+\s*(?:॥|\|\|)\s*$")
+VERSE_MARKER_ROMAN = re.compile(r"\s*(?:\.\.)\s*[0-9]+\s*(?:\.\.)\s*$")
+VERSE_MARKER_ENGLISH = re.compile(r"\s*(?:[.॥|]*\s*)?[0-9]+(?:\s*[.॥|]+)?\s*$")
+
+
+def has_terminal_verse_marker(source: str) -> bool:
+    """A metrical number is bibliographic structure, not sung/translatable text."""
+    return bool(VERSE_MARKER_SOURCE.search(str(source or "")))
+
+
+def display_roman_without_verse_marker(roman: str, source: str) -> str:
+    return VERSE_MARKER_ROMAN.sub("", roman).rstrip() if has_terminal_verse_marker(source) else roman
+
+
+def is_verse_marker_english_segment(text: object) -> bool:
+    return bool(VERSE_MARKER_ENGLISH.fullmatch(str(text or "")))
+
+
+def strip_terminal_verse_marker_english(text: object) -> str:
+    return VERSE_MARKER_ENGLISH.sub("", str(text or "")).rstrip()
+
+
 def language_code(language: str) -> str:
     return {"Hindi": "hi", "Sanskrit": "sa", "Punjabi": "pa", "Kannada": "kn", "Marathi": "mr",
             "Awadhi": "awa", "Braj": "bra"}.get(language, "")
@@ -3043,9 +3065,21 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
         words = [gloss_policy.clean_word({**word, "roman": naming.canonical_iast(word.get("roman", ""))})
                  for word in gloss_by_id[line_id].get("word_glosses", [])]
         source = line.get("source_text", "")
+        marker_indexes = {index for index, word in enumerate(words)
+                          if re.fullmatch(r"[0-9]+", str(word.get("roman", "")).strip())}
+        source_words = [mapping for mapping in source_word_map.build_source_words(source, words)
+                        if not (set(mapping.get("wordIndices", [])).issubset(marker_indexes)
+                                or (has_terminal_verse_marker(source)
+                                    and re.fullmatch(r"[०-९0-9]+", str(mapping.get("text", "")).strip())))]
+        english_parts = [part for part in row.get("segments", [])
+                         if not is_verse_marker_english_segment(part.get("text"))]
+        if has_terminal_verse_marker(source) and english_parts:
+            english_parts = [dict(part) for part in english_parts]
+            english_parts[-1]["text"] = strip_terminal_verse_marker_english(english_parts[-1].get("text"))
+        english_fallback = strip_terminal_verse_marker_english(row.get("literal_english", ""))
         line_data[line_id] = {"source": source, "sourceLanguage": language_code((meta["languages"] or [""])[0]),
-                              "sourceWords": source_word_map.build_source_words(source, words),
-                              "roman": naming.canonical_iast(line.get("roman", "")), "english": segment_english(row.get("segments", []), row.get("literal_english", "")),
+                              "sourceWords": source_words,
+                              "roman": display_roman_without_verse_marker(naming.canonical_iast(line.get("roman", "")), source), "english": segment_english(english_parts, english_fallback),
                               "words": words,
                               "grammarNote": naming.canonical_iast(gloss_by_id[line_id].get("grammar_note", ""))}
     sequence = [{"ref": event["ref"],
