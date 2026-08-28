@@ -39348,7 +39348,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "calata mahādhuni garjesi bhārī. garbha sravahiṁ suni nisicara nārī.",
-    "english": "{0:While departing, }{2:he roared }{3:with a tremendous, }{1:mighty sound; }{6:upon hearing it, }{4:the fetuses }{7:of the demon }{8:women }{5:miscarried.}",
+    "english": "{0:As he departed, }{2:he gave }{1:a mighty, }{3:thunderous roar; }{6:at its sound, }{7:the demon }{8:women }{5:lost }{4:their pregnancies.}",
     "words": [
       {
         "roman": "calata",
@@ -39376,13 +39376,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "garbha",
-        "gloss": "fetuses / wombs",
+        "gloss": "pregnancy; embryo; womb",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sravahiṁ",
-        "gloss": "miscarry / drop",
+        "gloss": "miscarry; be lost; flow out",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -51338,7 +51338,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "samujhata jāsu dūta ka-i karanī. sravahīṁ garbha rajanīcara dharanī.",
-    "english": "{0:Merely remembering}{4: the deeds}{1,3: of whose}{2: messenger, }{6:the fetuses}{7: of the night-wanderers’}{8: wives}{5: drop.’}",
+    "english": "{0:Even recalling }{4:the deeds }{1,3:of Hari’s }{2:messenger }makes {7:the demon }{8:women }{5:lose }{6:their pregnancies.}",
     "words": [
       {
         "roman": "samujhata",
@@ -51372,13 +51372,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "sravahīṁ",
-        "gloss": "miscarry; drop; flow out",
+        "gloss": "miscarry; be lost; flow out",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "garbha",
-        "gloss": "the wombs; fetuses",
+        "gloss": "pregnancy; embryo; womb",
         "concept_key": "",
         "preserve_in_english": false
       },
