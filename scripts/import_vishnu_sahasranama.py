@@ -39,6 +39,8 @@ def literal_and_segments(template: str) -> tuple[str, list[dict[str, Any]]]:
 def simple_word(raw: dict[str, Any], index: int) -> dict[str, Any]:
     return {
         "roman": str(raw.get("surface_iast") or raw.get("iast") or "").strip(),
+        "citationRoman": str(raw.get("citation_iast") or raw.get("iast") or raw.get("surface_iast") or "").strip(),
+        "deva": str(raw.get("deva") or "").strip(),
         "gloss": str(raw.get("gloss") or raw.get("whole_gloss") or "").strip(),
         "concept_key": "",
         "preserve_in_english": False,
@@ -60,6 +62,8 @@ def name_stanza(stanza: dict[str, Any]) -> tuple[dict[str, Any], str]:
         words.append({
             "surface_iast": name.get("surface_iast") or name.get("citation_iast"),
             "iast": name.get("citation_iast"),
+            "citation_iast": name.get("citation_iast"),
+            "deva": analysis.get("citation_devanagari") or name.get("deva"),
             "gloss": name.get("meaning") or analysis.get("whole_gloss"),
         })
     return {
@@ -140,7 +144,8 @@ def main() -> int:
             english = "".join(part["text"] for part in segments)
         else:
             english, segments = literal_and_segments(str(unit["english"]))
-        lines.append({"id": unit_id, "source_text": source, "roman": roman, "kind": kind, "translation_notes": ""})
+        lines.append({"id": unit_id, "source_text": source, "roman": roman, "kind": kind,
+                      "name_table": bool(unit.get("name_sequence")), "translation_notes": ""})
         glosses.append({"id": unit_id, "word_glosses": words, "semantic_frame": frame(), "grammar_note": "", "uncertainty": ""})
         translations.append({
             "id": unit_id, "literal_english": english, "segments": segments,

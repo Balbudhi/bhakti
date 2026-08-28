@@ -421,6 +421,20 @@ function renderSourceWithSpans(source, sourceWords, words) {
   return html;
 }
 
+function renderNameTable(words) {
+  const rows = words.map((word, index) => `
+    <div class="name-table-row" role="row">
+      <div class="name-table-cell name-table-deva" role="cell" lang="sa-Deva">${linkedWord("ws", word.deva || "", [index], words)}</div>
+      <div class="name-table-cell name-table-iast" role="cell" lang="sa-Latn">${linkedWord("w", word.citationRoman || word.roman || "", [index], words)}</div>
+      <div class="name-table-cell name-table-meaning" role="cell">${linkedWord("we", word.gloss || "", [index], words)}</div>
+    </div>`).join("");
+  return `<div class="name-table" role="table" aria-label="Devanāgarī, IAST, and meanings">
+    <div class="name-table-head" role="row" aria-hidden="true">
+      <span role="columnheader">Devanāgarī</span><span role="columnheader">IAST</span><span role="columnheader">Meaning</span>
+    </div>${rows}
+  </div>`;
+}
+
 function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds, adapted = false, label = "") {
   const repBadge = repeats && repeats > 1
     ? `<span class="rep" aria-label="repeated ${repeats} times">×${repeats}</span>`
@@ -429,15 +443,17 @@ function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSecon
     ? `<span class="adapted-badge" aria-label="Sai-specific adaptation">Sai adaptation</span>`
     : "";
   const startAttr = Number.isFinite(startSeconds) ? ` data-start="${startSeconds}"` : "";
+  const nameTable = Boolean(line.nameTable && line.words?.length && line.words.every(word => word.deva));
   return `
-    <article class="line${adapted ? " is-adapted" : ""}" id="${instanceId}"${startAttr}>
+    <article class="line${nameTable ? " name-table-line" : ""}${adapted ? " is-adapted" : ""}" id="${instanceId}"${startAttr}>
       <button class="line-seek" type="button" aria-label="Play from this line" title="Play from this line">
         <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
       </button>
       ${label ? `<div class="line-label">${escapeHtml(label)}</div>` : ""}
-      ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${renderSourceWithSpans(line.source, line.sourceWords, line.words)}</div>` : ""}
-      <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}${adaptedBadge}</div>
-      <div class="line-english">${renderEnglishWithSpans(line.english, line.words)}</div>
+      ${nameTable ? renderNameTable(line.words) : `
+        ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${renderSourceWithSpans(line.source, line.sourceWords, line.words)}</div>` : ""}
+        <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}${adaptedBadge}</div>
+        <div class="line-english">${renderEnglishWithSpans(line.english, line.words)}</div>`}
     </article>
   `;
 }
