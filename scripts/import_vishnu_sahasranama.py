@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Adapt the reviewed Viṣṇu Sahasranāma reader into a Bhakti song packet.
 
-This is a deterministic importer: it copies the reviewed Sanskrit, the
-existing start timings, and the direct name meanings grounded in Swami
-Chinmayananda's commentary. It never calls a model.
+This is a deterministic importer: it copies the reviewed Sanskrit, existing
+start timings, and the Vedānta site's finalized site-generated Simplified
+summaries. The summaries are derived from Chinmayananda's commentary but are
+not his translation and receive no translator credit. It never calls a model.
 """
 
 from __future__ import annotations
@@ -99,11 +100,11 @@ def reader_job(reader: dict[str, Any]) -> dict[str, Any]:
     section_notices.append({"sequenceIndex": cursor + len(reader["stanzas"]), "title": "Closing"})
     return {
         "slug": SLUG, "title": "Viṣṇu Sahasranāma", "writer": "Vyāsa",
-        "translator": "Swami Chinmayananda", "translatorAttribution": "Translation",
+        "translator": "", "translatorAttribution": "",
         "singer": str(reader["audio"]["performer"]), "languages": ["Sanskrit"],
         "subjectTags": ["Viṣṇu"],
         "searchAliases": ["Vishnu Sahasranama", "Vishnu Sahastranam", "Vishnu Sahasranam",
-                          "Sanjeev Abhyankar Vishnu Sahasranama", "Swami Chinmayananda Vishnu Sahasranama"],
+                          "Sanjeev Abhyankar Vishnu Sahasranama"],
         "sectionNotices": section_notices, "lineLabels": labels,
     }
 
@@ -150,9 +151,9 @@ def main() -> int:
         translations.append({
             "id": unit_id, "literal_english": english, "segments": segments,
             "material_alternatives": [], "human_review_recommended": False,
-            "choice_note": "Direct name-level meaning from the reviewed Vedānta reader, grounded in Swami Chinmayananda's commentary.",
+            "choice_note": "Site-generated Simplified summary imported from the reviewed Vedānta reader; derived from Chinmayananda's explanation but not credited as his wording or translation.",
             "fidelity": {"agency_and_image_preserved": True, "all_meaning_accounted_for": True,
-                         "unsupported_additions": [], "notes": "Imported from the independently validated Simple reader."},
+                         "unsupported_additions": [], "notes": "Imported from the independently validated Simplified layer."},
             "uncertainty": "",
         })
         timing.append({"ref": unit_id, "section": kind, "repeats": 1,
@@ -175,7 +176,7 @@ def main() -> int:
         raise RuntimeError("import violates Bhakti contract: " + "; ".join(errors[:8]))
     source = {"source_url": reader["audio"]["src"], "title": reader["title"],
               "artist": reader["audio"]["performer"], "duration_seconds": reader["audio"]["duration_seconds"],
-              "review_note": "Imported from the reviewed Vedānta reader; Sanskrit and direct meanings have passed its full-population checks."}
+              "review_note": "Imported from the reviewed Vedānta reader; Sanskrit and site-generated Simplified summaries passed its full-population checks. No translator is credited."}
     pipeline.write_json(song_dir / ".transcription" / "source.json", source)
     pipeline.write_json(packet_dir / "02-transcript-audit.json", audited)
     pipeline.write_json(packet_dir / "03-timing.json", timing_packet)

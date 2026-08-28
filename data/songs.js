@@ -4384,8 +4384,11 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Nirguṇa"
+    ],
     "searchAliases": [
+      "Nirguna",
       "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
       "Bentee Chaupai",
       "Chaupai Sahib",
@@ -4404,6 +4407,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "subtitle": "Nirguṇa",
     "queueNumber": 21
   },
   {
@@ -4689,7 +4693,7 @@ window.BHAKTI_SONGS = [
     "slug": "vishnu-sahasranama",
     "queueId": "f4647a5c",
     "title": "Viṣṇu Sahasranāma",
-    "credit": "Vyāsa · Swami Chinmayananda · Sanjeev Abhyankar",
+    "credit": "Vyāsa · Sanjeev Abhyankar",
     "languageTags": [
       "Sanskrit"
     ],
@@ -4700,12 +4704,11 @@ window.BHAKTI_SONGS = [
       "Visnu Sahasranama",
       "Vishnu",
       "Visnu",
-      "Vyasa · Swami Chinmayananda · Sanjeev Abhyankar",
+      "Vyasa · Sanjeev Abhyankar",
       "Vyasa",
       "Vishnu Sahastranam",
       "Vishnu Sahasranam",
-      "Sanjeev Abhyankar Vishnu Sahasranama",
-      "Swami Chinmayananda Vishnu Sahasranama"
+      "Sanjeev Abhyankar Vishnu Sahasranama"
     ],
     "writer": "Vyāsa",
     "singer": "Sanjeev Abhyankar",
