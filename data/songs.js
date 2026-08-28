@@ -4279,6 +4279,55 @@ window.BHAKTI_SONGS = [
     "queueNumber": 68
   },
   {
+    "slug": "mahadeva-vishambar",
+    "queueId": "850bb0b6",
+    "title": "Mahadeva Vishambar",
+    "credit": "Rajan & Sajan Mishra & Shruti Sadolikar",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [],
+    "writer": "",
+    "singer": "Rajan & Sajan Mishra & Shruti Sadolikar",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "audio.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 240
+  },
+  {
+    "slug": "shri-ramachandra-kripalu-bhajman",
+    "queueId": "477088da",
+    "title": "Shri Ramachandra Kripalu Bhajman",
+    "credit": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
+    "languageTags": [
+      "Sanskrit",
+      "Awadhi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Rama"
+    ],
+    "writer": "",
+    "singer": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "audio.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāma",
+    "queueNumber": 241
+  },
+  {
     "slug": "benti-chaupai",
     "queueId": "ab86db97",
     "title": "Benti Chaupai",
@@ -7065,6 +7114,62 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 222
+  },
+  {
+    "slug": "ekdant-gajvadan",
+    "queueId": "9cdf86cd",
+    "title": "Ekdant Gajvadan",
+    "credit": "Various Artists",
+    "languageTags": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Gaṇeśa"
+    ],
+    "searchAliases": [
+      "Ganesha",
+      "Ganesa"
+    ],
+    "writer": "",
+    "singer": "Various Artists",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "audio.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gaṇeśa",
+    "queueNumber": 237
+  },
+  {
+    "slug": "jayati-jayati-shri-ganesh",
+    "queueId": "38af146f",
+    "title": "Jayati, Jayati, Shri Ganesh",
+    "credit": "Various Artists",
+    "languageTags": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Gaṇeśa"
+    ],
+    "searchAliases": [
+      "Ganesha",
+      "Ganesa"
+    ],
+    "writer": "",
+    "singer": "Various Artists",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "audio.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gaṇeśa",
+    "queueNumber": 238
   },
   {
     "slug": "siddh-bhajo-omkar-avadho",
