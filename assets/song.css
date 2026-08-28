@@ -476,6 +476,14 @@ html, body {
   line-height: 1.25;
   margin: 0 0 6px;
 }
+
+.line-label {
+  color: var(--kh-ink-soft);
+  font: 600 10px/1 Inter, sans-serif;
+  letter-spacing: 0.12em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
 .line-english {
   font-family: var(--kh-serif);
   font-style: normal;

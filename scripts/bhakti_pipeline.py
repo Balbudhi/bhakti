@@ -2845,7 +2845,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css?v=contract-20260821-8" />
-  <link rel="stylesheet" href="/assets/song.css?v=contract-20260827-10" />
+  <link rel="stylesheet" href="/assets/song.css?v=contract-20260827-11" />
   <link rel="stylesheet" href="/assets/site.css?v=contract-20260823-3" />
   <link rel="stylesheet" href="/assets/app.css?v=contract-20260823-16" />
 </head>
@@ -2872,7 +2872,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=contract-20260823-5"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
-  <script src="/assets/song.js?v=contract-20260827-7"></script>
+  <script src="/assets/song.js?v=contract-20260827-8"></script>
   <script src="/assets/app.js?v=contract-20260823-18"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>
@@ -3048,6 +3048,20 @@ def reviewed_composite_metadata(job: dict[str, Any], sequence_length: int) -> tu
     return cleaned_notices, cleaned_adapted
 
 
+def reviewed_line_labels(job: dict[str, Any], lines: list[dict[str, Any]]) -> dict[str, str]:
+    labels = job.get("lineLabels", {})
+    if not isinstance(labels, dict):
+        raise RuntimeError("lineLabels must be an object")
+    valid_ids = {str(line.get("id")) for line in lines}
+    cleaned: dict[str, str] = {}
+    for line_id, label in labels.items():
+        text = str(label).strip()
+        if not isinstance(line_id, str) or line_id not in valid_ids or not text:
+            raise RuntimeError(f"lineLabels has an invalid entry for {line_id!r}")
+        cleaned[line_id] = text
+    return cleaned
+
+
 def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
     errors = publication_errors(audited, timing, glosses, translations)
     if errors:
@@ -3160,6 +3174,9 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
         meta["sectionNotices"] = notices
     if adapted_indices:
         meta["adaptedSequenceIndices"] = adapted_indices
+    labels = reviewed_line_labels(job, lines)
+    if labels:
+        meta["lineLabels"] = labels
     data = ("window.SONG_META = " + json.dumps(meta, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_LINES = " + json.dumps(line_data, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +

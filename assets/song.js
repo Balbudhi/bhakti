@@ -421,7 +421,7 @@ function renderSourceWithSpans(source, sourceWords, words) {
   return html;
 }
 
-function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds, adapted = false) {
+function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds, adapted = false, label = "") {
   const repBadge = repeats && repeats > 1
     ? `<span class="rep" aria-label="repeated ${repeats} times">×${repeats}</span>`
     : "";
@@ -434,6 +434,7 @@ function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSecon
       <button class="line-seek" type="button" aria-label="Play from this line" title="Play from this line">
         <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
       </button>
+      ${label ? `<div class="line-label">${escapeHtml(label)}</div>` : ""}
       ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${renderSourceWithSpans(line.source, line.sourceWords, line.words)}</div>` : ""}
       <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}${adaptedBadge}</div>
       <div class="line-english">${renderEnglishWithSpans(line.english, line.words)}</div>
@@ -556,7 +557,8 @@ function renderLineRange(context, start, end) {
     const marker = PAGE_META?.structuralMarkers?.[entry.ref];
     if (marker) html += renderStructuralMarker(marker);
     html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`,
-      context.defaultSourceLanguage, context.timings[idx]?.start, context.adapted.has(idx));
+      context.defaultSourceLanguage, context.timings[idx]?.start, context.adapted.has(idx),
+      PAGE_META?.lineLabels?.[entry.ref] || "");
   }
   return html;
 }

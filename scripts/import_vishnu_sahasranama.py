@@ -79,6 +79,31 @@ def imported_units(reader: dict[str, Any]) -> list[tuple[dict[str, Any], str]]:
     return units
 
 
+def reader_job(reader: dict[str, Any]) -> dict[str, Any]:
+    section_notices = []
+    cursor = 0
+    for group in reader["preface"]["groups"]:
+        section_notices.append({"sequenceIndex": cursor, "title": str(group["title"])})
+        cursor += len(group["units"])
+    section_notices.append({"sequenceIndex": cursor, "title": "The thousand names"})
+    labels = {}
+    for stanza in reader["stanzas"]:
+        numbers = [int(number) for number in stanza["name_numbers"]]
+        labels[f"stanza-{stanza['number']}"] = (
+            f"Names {numbers[0]}–{numbers[-1]}" if len(numbers) > 1 else f"Name {numbers[0]}"
+        )
+    section_notices.append({"sequenceIndex": cursor + len(reader["stanzas"]), "title": "Closing"})
+    return {
+        "slug": SLUG, "title": "Viṣṇu Sahasranāma", "writer": "Vyāsa",
+        "translator": "Swami Chinmayananda", "translatorAttribution": "Translation",
+        "singer": str(reader["audio"]["performer"]), "languages": ["Sanskrit"],
+        "subjectTags": ["Viṣṇu"],
+        "searchAliases": ["Vishnu Sahasranama", "Vishnu Sahastranam", "Vishnu Sahasranam",
+                          "Sanjeev Abhyankar Vishnu Sahasranama", "Swami Chinmayananda Vishnu Sahasranama"],
+        "sectionNotices": section_notices, "lineLabels": labels,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-root", type=Path, default=DEFAULT_SOURCE_ROOT)
