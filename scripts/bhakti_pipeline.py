@@ -2845,7 +2845,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css?v=contract-20260821-8" />
-  <link rel="stylesheet" href="/assets/song.css?v=contract-20260827-12" />
+  <link rel="stylesheet" href="/assets/song.css?v=contract-20260827-13" />
   <link rel="stylesheet" href="/assets/site.css?v=contract-20260823-3" />
   <link rel="stylesheet" href="/assets/app.css?v=contract-20260823-16" />
 </head>
@@ -2872,7 +2872,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=contract-20260823-5"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
-  <script src="/assets/song.js?v=contract-20260827-9"></script>
+  <script src="/assets/song.js?v=contract-20260827-10"></script>
   <script src="/assets/app.js?v=contract-20260823-18"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>

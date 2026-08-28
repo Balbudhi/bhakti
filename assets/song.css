@@ -498,23 +498,13 @@ html, body {
 /* Viṣṇu Sahasranāma's reviewed Simple reading: table structure without
    visible table chrome. Alignment, type, and space carry the hierarchy. */
 .name-table { margin-top: 2px; }
-.name-table-head,
 .name-table-row {
   display: grid;
   grid-template-columns: minmax(96px, .78fr) minmax(112px, .92fr) minmax(0, 1.72fr);
   gap: 0;
 }
-.name-table-head {
-  margin-bottom: 5px;
-  color: var(--kh-ink-soft);
-  font: 600 9px/1.2 Inter, sans-serif;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-}
-.name-table-head > span { min-width: 0; padding: 4px 10px; }
 .name-table-row { align-items: baseline; margin: 1px 0; }
 .name-table-cell { min-width: 0; padding: 8px 10px; overflow-wrap: anywhere; }
-.name-table-head > span:first-child,
 .name-table-cell:first-child { padding-left: 0; }
 .name-table-deva {
   color: var(--kh-ink);
@@ -631,11 +621,8 @@ html, body {
   .line-seek { top: 8px; right: 10px; width: 32px; height: 32px; }
   .line-roman { font-size: 23px; line-height: 1.55; font-weight: 400; }
   .line-english { font-size: 20px; line-height: 1.55; }
-  .name-table-head,
   .name-table-row { grid-template-columns: minmax(0, .82fr) minmax(0, .95fr) minmax(0, 1.45fr); }
-  .name-table-head > span { padding: 4px 7px; }
   .name-table-cell { padding: 8px 7px; }
-  .name-table-head > span:first-child,
   .name-table-cell:first-child { padding-left: 0; }
   .name-table-deva { font-size: 19px; }
   .name-table-iast { font-size: 18px; }

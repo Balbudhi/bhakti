@@ -429,9 +429,7 @@ function renderNameTable(words) {
       <div class="name-table-cell name-table-meaning" role="cell">${linkedWord("we", word.gloss || "", [index], words)}</div>
     </div>`).join("");
   return `<div class="name-table" role="table" aria-label="Devanāgarī, IAST, and meanings">
-    <div class="name-table-head" role="row" aria-hidden="true">
-      <span role="columnheader">Devanāgarī</span><span role="columnheader">IAST</span><span role="columnheader">Meaning</span>
-    </div>${rows}
+    ${rows}
   </div>`;
 }
 
