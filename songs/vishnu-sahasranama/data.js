@@ -5082,7 +5082,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "viśvaṃ viṣṇur vaṣaṭkāro bhūtabhavyabhavatprabhuḥ bhūtakṛd bhūtabhṛd bhāvo bhūtātmā bhūtabhāvanaḥ",
-    "english": "{0:He whose manifestation is the whole universe of forms: the virāṭ-puruṣa} · {1:The term Viṣṇu is dissolved as veveṣṭi vyāpnoti iti viṣṇuḥ — That which pervades everywhere is Viṣṇu} · {2:In the ritualistic portion of the Vedas we find many mantras ending with 'vaṣaṭ' and they are used in pouring devoted and dedicated oblations} · {3:He who is the Lord (Prabhu) of the Past (bhūta), the Future (Bhavya) and the Present (Bhavat)} · {4:The Creator (kṛt) of all creatures (bhūta)} · {5:One who nurtures and nourishes all beings (living creatures) in all their attitudes is this Great Reality and, therefore, He is called as the bhūta Bhrit} · {6:One who 'becomes' (Bhavati iti bhāvaḥ) Himself into the movable and the Immovable beings and things in the world} · {7:He is the ātman of all the beings: The very 'Be' in all the living beings} · {8:One who creates and multiplies the creatures; meaning the One, who is the cause for the birth and who is responsible for the growth of all living creatures}",
+    "english": "{0:He whose manifestation is the whole universe of forms: the virāṭ-puruṣa} · {1:The all-pervading one} · {2:The sacred vaṣaṭ call through which offerings are made} · {3:He who is the Lord (Prabhu) of the Past (bhūta), the Future (Bhavya) and the Present (Bhavat)} · {4:The Creator (kṛt) of all creatures (bhūta)} · {5:The sustainer and nourisher of all beings} · {6:Existence becoming all moving and unmoving beings} · {7:He is the ātman of all the beings: The very 'Be' in all the living beings} · {8:The creator and nourisher of all beings}",
     "words": [
       {
         "roman": "viśvaṃ",
@@ -5092,13 +5092,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇur",
-        "gloss": "The term Viṣṇu is dissolved as veveṣṭi vyāpnoti iti viṣṇuḥ — That which pervades everywhere is Viṣṇu",
+        "gloss": "The all-pervading one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vaṣaṭkāro",
-        "gloss": "In the ritualistic portion of the Vedas we find many mantras ending with 'vaṣaṭ' and they are used in pouring devoted and dedicated oblations",
+        "gloss": "The sacred vaṣaṭ call through which offerings are made",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5116,13 +5116,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhūtabhṛd",
-        "gloss": "One who nurtures and nourishes all beings (living creatures) in all their attitudes is this Great Reality and, therefore, He is called as the bhūta Bhrit",
+        "gloss": "The sustainer and nourisher of all beings",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhāvo",
-        "gloss": "One who 'becomes' (Bhavati iti bhāvaḥ) Himself into the movable and the Immovable beings and things in the world",
+        "gloss": "Existence becoming all moving and unmoving beings",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5134,7 +5134,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhūtabhāvanaḥ",
-        "gloss": "One who creates and multiplies the creatures; meaning the One, who is the cause for the birth and who is responsible for the growth of all living creatures",
+        "gloss": "The creator and nourisher of all beings",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5222,17 +5222,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pūtātmā paramātmā muktānāṃ paramā gatiḥ avyayaḥ puruṣaḥ sākṣī kṣetrajño akṣara",
-    "english": "{0:One with an extremely Pure (pūtam) Essence: One who is not affected the least by the impurities of māyā} · {1:The Supreme, meaning that which transcends all limitations and imperfections of matter: in short, the Transcendental Reality} · {2:He who is the final Goal, that is reached by all the liberated souls} · {3:\"Vyaya\" means destruction: destruction cannot be without change; therefore, that which is \"without destruction\" (avyayaḥ) is the changeless} · {4:One who dwells in the Fort-city} · {5:Witness} · {6:One who knows the body and all the experiences from within the body, is the Knower-of-the-field, kṣetrajñaḥ} · {7:Indestructible: things which are finite are necessarily conditioned by time and space; the Infinite is unconditioned, and so It is akṣaraḥ}",
+    "english": "{0:The supremely pure Self} · {1:The supreme self beyond all material limitations} · {2:He who is the final Goal, that is reached by all the liberated souls} · {3:The changeless and imperishable one} · {4:One who dwells in the Fort-city} · {5:Witness} · {6:One who knows the body and all the experiences from within the body, is the Knower-of-the-field, kṣetrajñaḥ} · {7:Indestructible}",
     "words": [
       {
         "roman": "pūtātmā",
-        "gloss": "One with an extremely Pure (pūtam) Essence: One who is not affected the least by the impurities of māyā",
+        "gloss": "The supremely pure Self",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paramātmā",
-        "gloss": "The Supreme, meaning that which transcends all limitations and imperfections of matter: in short, the Transcendental Reality",
+        "gloss": "The supreme self beyond all material limitations",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5244,7 +5244,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "avyayaḥ",
-        "gloss": "\"Vyaya\" means destruction: destruction cannot be without change; therefore, that which is \"without destruction\" (avyayaḥ) is the changeless",
+        "gloss": "The changeless and imperishable one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5268,7 +5268,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "akṣara",
-        "gloss": "Indestructible: things which are finite are necessarily conditioned by time and space; the Infinite is unconditioned, and so It is akṣaraḥ",
+        "gloss": "Indestructible",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5329,7 +5329,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yogo yogavidāṃ netā pradhānapuruṣeśvaraḥ nārasiṃhavapuḥ śrīmān keśavaḥ puruṣottamaḥ",
-    "english": "{0:The one who is to be known or realized through yoga} · {1:One who guides all the activities of all men 'who knows yoga' (Yogavit)} · {2:Lord of both pradhāna and puruṣa} · {3:One whose form is half human and half lion} · {4:One who is always with Śrī} · {5:He who has beautiful and graceful locks of hair} · {6:The constitution of the individuality, jīva, when analysed, we find that it is made up of both the perishable-matter and the Imperishable — Spirit}",
+    "english": "{0:The one who is to be known or realized through yoga} · {1:One who guides all the activities of all men 'who knows yoga' (Yogavit)} · {2:Lord of both pradhāna and puruṣa} · {3:One whose form is half human and half lion} · {4:One who is always with Śrī} · {5:He who has beautiful and graceful locks of hair} · {6:The supreme person, beyond the perishable and imperishable}",
     "words": [
       {
         "roman": "yogo",
@@ -5369,7 +5369,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "puruṣottamaḥ",
-        "gloss": "The constitution of the individuality, jīva, when analysed, we find that it is made up of both the perishable-matter and the Imperishable — Spirit",
+        "gloss": "The supreme person, beyond the perishable and imperishable",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5439,7 +5439,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sarvaḥ śarvaḥ śivaḥ sthāṇur bhūtādir nidhiravyayaḥ sambhavo bhāvano bhartā prabhavaḥ prabhur īśvaraḥ",
-    "english": "{0:He who is the all} · {1:The Auspicious One: meaning, the One who gives auspiciousness to those who hear of Him, to those who have a vision of Him, and to those who meditate upon Him} · {2:The One who is Eternally Pure} · {3:Generally this term sthāṇuḥ is used for the permanent pillars that mark the frontiers of a country} · {4:The very cause for the five great elements: Space, Air, Fire, Water and Earth} · {5:The Imperishable treasure} · {6:One who takes up by his own free-will various incarnations for the glory of the world is saṃbhavaḥ} · {7:To do Bhaavana is to give: One who gives everything to His devotees is bhāvanaḥ} · {8:The One who 'Governs' the entire living world} · {9:The One who is the very womb of all the Five Great Elements} · {10:The Almighty Lord} · {11:One who has the ability to do anything without the help of other beings or things is called īśvaraḥ}",
+    "english": "{0:He who is the all} · {1:The auspicious one who bestows auspiciousness} · {2:The One who is Eternally Pure} · {3:The firm and immovable one} · {4:The very cause for the five great elements: Space, Air, Fire, Water and Earth} · {5:The Imperishable treasure} · {6:One who takes up by his own free-will various incarnations for the glory of the world is saṃbhavaḥ} · {7:To do bhāvanā is to give: One who gives everything to His devotees is bhāvanaḥ} · {8:The One who 'Governs' the entire living world} · {9:The One who is the very womb of all the Five Great Elements} · {10:The Almighty Lord} · {11:The independent lord whose power needs no aid}",
     "words": [
       {
         "roman": "sarvaḥ",
@@ -5449,7 +5449,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śarvaḥ",
-        "gloss": "The Auspicious One: meaning, the One who gives auspiciousness to those who hear of Him, to those who have a vision of Him, and to those who meditate upon Him",
+        "gloss": "The auspicious one who bestows auspiciousness",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5461,7 +5461,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sthāṇur",
-        "gloss": "Generally this term sthāṇuḥ is used for the permanent pillars that mark the frontiers of a country",
+        "gloss": "The firm and immovable one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5485,7 +5485,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhāvano",
-        "gloss": "To do Bhaavana is to give: One who gives everything to His devotees is bhāvanaḥ",
+        "gloss": "To do bhāvanā is to give: One who gives everything to His devotees is bhāvanaḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5509,7 +5509,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "īśvaraḥ",
-        "gloss": "One who has the ability to do anything without the help of other beings or things is called īśvaraḥ",
+        "gloss": "The independent lord whose power needs no aid",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5571,7 +5571,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svayambhūḥ śambhur ādityaḥ puṣkarākṣo mahāsvanaḥ anādinidhano dhātā vidhātā dhāturuttamaḥ",
-    "english": "{0:The one who manifests Himself from Himself is considered as self-made} · {1:He who brings Auspiciousness— both inner goodness and outer prosperity to His devotees} · {2:The Truth (puruṣa) that glows with a golden splendour in the solar orb is called ādityaḥ} · {3:One who has eyes like the lotus} · {4:One who possesses thundering voice of compulsion: Svana means 'sound'}· {5:One who has neither birth (ādi) nor death (Nidhanam)} · {6:One who is the Substratum for the world of names and forms, and who supports all fields of experiences in all} · {7:The One who is the Dispenser of all 'fruits-of-actions'}· {8:The fundamentals that form the reinforcement on any existent thing are called dhātu}",
+    "english": "{0:The one who manifests Himself from Himself is considered as self-made} · {1:He who brings Auspiciousness— both inner goodness and outer prosperity to His devotees} · {2:The golden person shining within the sun} · {3:One who has eyes like the lotus} · {4:The one whose commanding voice is thunderous} · {5:One who has neither birth (ādi) nor death (Nidhanam)} · {6:One who is the Substratum for the world of names and forms, and who supports all fields of experiences in all} · {7:The One who is the Dispenser of all 'fruits-of-actions'}· {8:The supreme essence underlying every existent thing}",
     "words": [
       {
         "roman": "svayambhūḥ",
@@ -5587,7 +5587,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ādityaḥ",
-        "gloss": "The Truth (puruṣa) that glows with a golden splendour in the solar orb is called ādityaḥ",
+        "gloss": "The golden person shining within the sun",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5599,7 +5599,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahāsvanaḥ",
-        "gloss": "One who possesses thundering voice of compulsion: Svana means 'sound'",
+        "gloss": "The one whose commanding voice is thunderous",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5623,7 +5623,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhāturuttamaḥ",
-        "gloss": "The fundamentals that form the reinforcement on any existent thing are called dhātu",
+        "gloss": "The supreme essence underlying every existent thing",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5686,17 +5686,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aprameyo hṛṣīkeśaḥ padmanābho 'maraprabhuḥ viśvakarmā manus tvaṣṭā sthaviṣṭhaḥ sthaviro dhruvaḥ",
-    "english": "{0:He, who cannot be defined and explained in terms of any logical terms of reference with other things, should necessarily be inexpressible} · {1:In the Puranic literature the meaning for this term is 'close-cropped' or 'One who has coiled up his locks of hair' (Hris+keśa)} · {2:One from whose navel springs the Lotus, which is the seat of the four-faced Creator} · {3:The Lord of the Immortals, the Devas} · {4:The very creator—of the world-of-objects, of all equipments-of-experiences, and of all experiences in all bosoms is called the Visva — Karmaa} · {5:The term means One who has the ability to reflect upon the Higher (Mananaseelah manuḥ)} · {6:One who makes gross things of huge dimensions into minutest particles} · {7:It is the superlative degree of gross (sthoola) and thus 'the Supremely gross' is the subtlest Reality} · {8:The Ancient (Sthavirah) and the Motionless or firm (Dhruvah)}",
+    "english": "{0:The one beyond definition and comparison} · {1:The lord of the senses} · {2:One from whose navel springs the Lotus, which is the seat of the four-faced Creator} · {3:The Lord of the Immortals, the Devas} · {4:The maker of the universe and all experience} · {5:The reflective thinker who contemplates the highest} · {6:One who makes gross things of huge dimensions into minutest particles} · {7:The greatest and most substantial} · {8:The Ancient (Sthavirah) and the Motionless or firm (Dhruvah)}",
     "words": [
       {
         "roman": "aprameyo",
-        "gloss": "He, who cannot be defined and explained in terms of any logical terms of reference with other things, should necessarily be inexpressible",
+        "gloss": "The one beyond definition and comparison",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hṛṣīkeśaḥ",
-        "gloss": "In the Puranic literature the meaning for this term is 'close-cropped' or 'One who has coiled up his locks of hair' (Hris+keśa)",
+        "gloss": "The lord of the senses",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5714,13 +5714,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "viśvakarmā",
-        "gloss": "The very creator—of the world-of-objects, of all equipments-of-experiences, and of all experiences in all bosoms is called the Visva — Karmaa",
+        "gloss": "The maker of the universe and all experience",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "manus",
-        "gloss": "The term means One who has the ability to reflect upon the Higher (Mananaseelah manuḥ)",
+        "gloss": "The reflective thinker who contemplates the highest",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5732,7 +5732,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sthaviṣṭhaḥ",
-        "gloss": "It is the superlative degree of gross (sthoola) and thus 'the Supremely gross' is the subtlest Reality",
+        "gloss": "The greatest and most substantial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5805,11 +5805,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "agrāhyaḥ śāśvataḥ kṛṣṇo lohitākṣaḥ pratardanaḥ prabhūtas trikakubdhāma pavitraṃ maṅgalaṃparam",
-    "english": "{0:That which cannot be perceived through the play of the sense-organs; in short, that which is not an 'object' of perception, but which is the very 'subject'—who is the Perceiver in all that is perceived} · {1:That which remains at all times the same is the Permanent} · {2:The word Kṛṣṇa means in Sanskrit 'the dark'}· {3:Red-eyed} · {4:The root Tarda means \"destruction\" and with the prefix Pra the root (Pra-tarda) means \"supreme destruction\"}· {5:The term means 'born full' or 'ever-full'}· {6:One who is the very foundation or support (dhāma) of the three quarters (Kakubh)} · {7:One who gives purity to the heart} · {8:Mangalam is that which not only removes the dark pains of evil, but brings the bright joys of merit}",
+    "english": "{0:The ungraspable subject, never an object of perception} · {1:That which remains at all times the same is the Permanent} · {2:The dark-hued one} · {3:Red-eyed} · {4:The supreme destroyer} · {5:The ever-full and abundant one} · {6:One who is the very foundation or support (dhāma) of the three quarters (Kakubh)} · {7:One who gives purity to the heart} · {8:Mangalam is that which not only removes the dark pains of evil, but brings the bright joys of merit}",
     "words": [
       {
         "roman": "agrāhyaḥ",
-        "gloss": "That which cannot be perceived through the play of the sense-organs; in short, that which is not an 'object' of perception, but which is the very 'subject'—who is the Perceiver in all that is perceived",
+        "gloss": "The ungraspable subject, never an object of perception",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5821,7 +5821,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇo",
-        "gloss": "The word Kṛṣṇa means in Sanskrit 'the dark'",
+        "gloss": "The dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5833,13 +5833,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "pratardanaḥ",
-        "gloss": "The root Tarda means \"destruction\" and with the prefix Pra the root (Pra-tarda) means \"supreme destruction\"",
+        "gloss": "The supreme destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prabhūtas",
-        "gloss": "The term means 'born full' or 'ever-full'",
+        "gloss": "The ever-full and abundant one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5930,7 +5930,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "īśānaḥ prāṇadaḥ prāṇo jyeṣṭhaḥ śreṣṭhaḥ prajāpatiḥ hiraṇyagarbho bhūgarbho mādhavo madhusūdanaḥ",
-    "english": "{0:\"The Controller of all the five Great Elements\"}· {1:One who gives (Dadaati) the Pragnas to all} · {2:That which sustains is prāṇa, and that which has got prāṇa functioning in it is called a Praanee} · {3:Older than all} · {4:The most Glorious One: Here again it is the superlative degree of glorious, Sreyah} · {5:The Lord (Pati) of all living creatures (prajāḥ)} · {6:One who dwells in the womb (garbha) of the world (hiraṇya)} · {7:One who is the very womb of the world (Bhooh)} · {8:The Lord of māyā, Spouse of Mahaalakshmee} · {9:One who destroyed the great demon Madhu}",
+    "english": "{0:\"The Controller of all the five Great Elements\"}· {1:One who gives (dadāti) the Pragnas to all} · {2:The life-breath that sustains all} · {3:Older than all} · {4:The most excellent and glorious one} · {5:The Lord (Pati) of all living creatures (prajāḥ)} · {6:One who dwells in the womb (garbha) of the world (hiraṇya)} · {7:One who is the very womb of the world (bhūḥ)} · {8:The Lord of māyā, Spouse of Mahālakṣmī} · {9:One who destroyed the great demon Madhu}",
     "words": [
       {
         "roman": "īśānaḥ",
@@ -5940,13 +5940,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "prāṇadaḥ",
-        "gloss": "One who gives (Dadaati) the Pragnas to all",
+        "gloss": "One who gives (dadāti) the Pragnas to all",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prāṇo",
-        "gloss": "That which sustains is prāṇa, and that which has got prāṇa functioning in it is called a Praanee",
+        "gloss": "The life-breath that sustains all",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5958,7 +5958,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śreṣṭhaḥ",
-        "gloss": "The most Glorious One: Here again it is the superlative degree of glorious, Sreyah",
+        "gloss": "The most excellent and glorious one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5976,13 +5976,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhūgarbho",
-        "gloss": "One who is the very womb of the world (Bhooh)",
+        "gloss": "One who is the very womb of the world (bhūḥ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mādhavo",
-        "gloss": "The Lord of māyā, Spouse of Mahaalakshmee",
+        "gloss": "The Lord of māyā, Spouse of Mahālakṣmī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6062,7 +6062,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "īśvaro vikramī dhanvī medhāvī vikramaḥ kramaḥ anuttamo durādharṣaḥ kṛtajñaḥ kṛtir ātmavān",
-    "english": "{0:One who is Omnipotent, and so has all powers in Him to the full} · {1:One full of prowess (Vikrama), courage, daring} · {2:Lord Viṣṇu's Divine Bow is called 'Śārṅga' and it is described as the mightiest among the weapons} · {3:Supremely intelligent; One who is capable of understanding everything} · {4:While describing the term Vikramee (75) we had already explained the meaning contents of Vikrama, and thus Vikrama is an appellation that had come to Viṣṇu as a result of His Supernatural Act of measuring the universe with three steps} · {5:He who is All — Pervading is kramaḥ} · {6:One who is 'incomparably Great' in glory-anuttamaḥ} · {7:One who cannot be attacked, stormed or beleaguered successfully} · {8:He who knows all that is done by all: the One Knower who knows all physical activities, all emotional feelings, and all intellectual thoughts and motives} · {9:The One, who is the very dynamism behind all activities} · {10:One who is the Self in all beings}",
+    "english": "{0:One who is Omnipotent, and so has all powers in Him to the full} · {1:One full of prowess (Vikrama), courage, daring} · {2:The wielder of the divine bow Śārṅga} · {3:Supremely intelligent; One who is capable of understanding everything} · {4:The one of mighty stride who measured the universe} · {5:He who is All — Pervading is kramaḥ} · {6:One who is 'incomparably Great' in glory-anuttamaḥ} · {7:One who cannot be attacked, stormed or beleaguered successfully} · {8:The knower of all deeds} · {9:The One, who is the very dynamism behind all activities} · {10:One who is the Self in all beings}",
     "words": [
       {
         "roman": "īśvaro",
@@ -6078,7 +6078,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhanvī",
-        "gloss": "Lord Viṣṇu's Divine Bow is called 'Śārṅga' and it is described as the mightiest among the weapons",
+        "gloss": "The wielder of the divine bow Śārṅga",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6090,7 +6090,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vikramaḥ",
-        "gloss": "While describing the term Vikramee (75) we had already explained the meaning contents of Vikrama, and thus Vikrama is an appellation that had come to Viṣṇu as a result of His Supernatural Act of measuring the universe with three steps",
+        "gloss": "The one of mighty stride who measured the universe",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6114,7 +6114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛtajñaḥ",
-        "gloss": "He who knows all that is done by all: the One Knower who knows all physical activities, all emotional feelings, and all intellectual thoughts and motives",
+        "gloss": "The knower of all deeds",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6199,11 +6199,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sureśaḥ śaraṇaṃ śarma viśvaretāḥ prajābhavaḥ ahaḥ saṃvatsaro vyālaḥ pratyayaḥ sarvadarśanaḥ",
-    "english": "{0:The denizens of the Heavens are called in the Purāṇas as Suras} · {1:The Refuge for all who are suffering from the thraldom of imperfection in life} · {2:One who is Himself the Infinite Bliss} · {3:Retas means 'seed'; the term connotes that He is the seed from which the tree of life has sprung forth} · {4:He from whom all living creatures (prajā) spring forth (Bhava) is known as prajābhavaḥ} · {5:Ahan has got two meanings: the 24-hour-day or the 12-hour day-time} · {6:One who is of the nature of year-meaning One who is the Lord of Time; He, from whom the very 'concept of Time' rises} · {7:One who is unapproachable} · {8:One whose very nature is Knowledge} · {9:This term, \"All-seeing\", is very appropriate}",
+    "english": "{0:The lord of the gods} · {1:The Refuge for all who are suffering from the thraldom of imperfection in life} · {2:One who is Himself the Infinite Bliss} · {3:The seed from which the universe arises} · {4:He from whom all living creatures (prajā) spring forth (Bhava) is known as prajābhavaḥ} · {5:Ahan has got two meanings: the 24-hour-day or the 12-hour day-time} · {6:Time itself, the source of the year} · {7:One who is unapproachable} · {8:One whose very nature is Knowledge} · {9:The all-seeing one}",
     "words": [
       {
         "roman": "sureśaḥ",
-        "gloss": "The denizens of the Heavens are called in the Purāṇas as Suras",
+        "gloss": "The lord of the gods",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6221,7 +6221,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viśvaretāḥ",
-        "gloss": "Retas means 'seed'; the term connotes that He is the seed from which the tree of life has sprung forth",
+        "gloss": "The seed from which the universe arises",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6239,7 +6239,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṃvatsaro",
-        "gloss": "One who is of the nature of year-meaning One who is the Lord of Time; He, from whom the very 'concept of Time' rises",
+        "gloss": "Time itself, the source of the year",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6257,7 +6257,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarvadarśanaḥ",
-        "gloss": "This term, \"All-seeing\", is very appropriate",
+        "gloss": "The all-seeing one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -6314,7 +6314,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ajaḥ sarveśvaraḥ siddhaḥ siddhiḥ sarvādir acyutaḥ vṛṣākapir ameyātmā sarvayogaviniḥsṛtaḥ",
-    "english": "{0:Unborn} · {1:God of all gods or the Supreme Controller of all} · {2:One who has achieved all that has to be achieved, as He Himself is the Final Goal for all} · {3:He who is available for recognition (Siddha) everywhere at all points in His nature as Pure Consciousness} · {4:One who is the very beginning (ādi) of all; One who was in existence earlier than everything else} · {5:Chyutah= Fallen; acyutaḥ: One who has never fallen: the Ever — Pure Reality which is never fallen into the mis-conceptions of Samsar: the Pure Knowledge in which ignorance has never come to pollute Its purity} · {6:There is a lot of controversy among pundits upon the exact meaning of this term} · {7:One who has His manifestations (ātmā) in Infinite varieties, almost unaccountable (Ameya)} · {8:Yoga is from Yuj 'to join'; 'to attach'}",
+    "english": "{0:Unborn} · {1:God of all gods or the Supreme Controller of all} · {2:One who has achieved all that has to be achieved, as He Himself is the Final Goal for all} · {3:He who is available for recognition (Siddha) everywhere at all points in His nature as Pure Consciousness} · {4:The beginning of all} · {5:The unfallen and ever-pure one} · {6:The Boar who raises the world from adharma to dharma} · {7:One who has His manifestations (ātmā) in Infinite varieties, almost unaccountable (Ameya)} · {8:The one free from every bond and attachment}",
     "words": [
       {
         "roman": "ajaḥ",
@@ -6342,19 +6342,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarvādir",
-        "gloss": "One who is the very beginning (ādi) of all; One who was in existence earlier than everything else",
+        "gloss": "The beginning of all",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "acyutaḥ",
-        "gloss": "Chyutah= Fallen; acyutaḥ: One who has never fallen: the Ever — Pure Reality which is never fallen into the mis-conceptions of Samsar: the Pure Knowledge in which ignorance has never come to pollute Its purity",
+        "gloss": "The unfallen and ever-pure one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vṛṣākapir",
-        "gloss": "There is a lot of controversy among pundits upon the exact meaning of this term",
+        "gloss": "The Boar who raises the world from adharma to dharma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6366,7 +6366,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarvayogaviniḥsṛtaḥ",
-        "gloss": "Yoga is from Yuj 'to join'; 'to attach'",
+        "gloss": "The one free from every bond and attachment",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -6429,7 +6429,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vasur vasumanāḥ satyaḥ samātmā sammitaḥ samaḥ amoghaḥ puṇḍarīkākṣo vṛṣakarmā vṛṣākṛtiḥ",
-    "english": "{0:The One who is the very support of all elements, and the One who Himself is the very Essence of the elements} · {1:One who has a mind which is Supremely Pure; meaning a mind that has none of the sins of passions and pains; none of the storms of desires and jealousies; none of the quakes of likes and dislikes} · {2:He is the Real} · {3:He who is equally in all} · {4:The term Sammatam means 'acceptable'}· {5:Equal; the same} · {6:Moghah means \"useless fellow\" (Nishphalah), \"a disappointing power\"}· {7:One who can be contacted and fully experienced in the Heart Space (Pundareekam)} · {8:vṛṣa means dharma} · {9:One who is of the form (Aakriti) of dharma (vṛṣa)}",
+    "english": "{0:The One who is the very support of all elements, and the One who Himself is the very Essence of the elements} · {1:The one whose mind is supremely pure} · {2:He is the Real} · {3:He who is equally in all} · {4:The acceptable one, equal to all} · {5:Equal; the same} · {6:The unfailing one whose acts are never futile} · {7:The one realized in the lotus of the heart} · {8:The one whose actions are dharma} · {9:One who is of the form (ākṛti) of dharma (vṛṣa)}",
     "words": [
       {
         "roman": "vasur",
@@ -6439,7 +6439,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vasumanāḥ",
-        "gloss": "One who has a mind which is Supremely Pure; meaning a mind that has none of the sins of passions and pains; none of the storms of desires and jealousies; none of the quakes of likes and dislikes",
+        "gloss": "The one whose mind is supremely pure",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6457,7 +6457,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sammitaḥ",
-        "gloss": "The term Sammatam means 'acceptable'",
+        "gloss": "The acceptable one, equal to all",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6469,25 +6469,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "amoghaḥ",
-        "gloss": "Moghah means \"useless fellow\" (Nishphalah), \"a disappointing power\"",
+        "gloss": "The unfailing one whose acts are never futile",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "puṇḍarīkākṣo",
-        "gloss": "One who can be contacted and fully experienced in the Heart Space (Pundareekam)",
+        "gloss": "The one realized in the lotus of the heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vṛṣakarmā",
-        "gloss": "vṛṣa means dharma",
+        "gloss": "The one whose actions are dharma",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vṛṣākṛtiḥ",
-        "gloss": "One who is of the form (Aakriti) of dharma (vṛṣa)",
+        "gloss": "One who is of the form (ākṛti) of dharma (vṛṣa)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -6544,7 +6544,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rudro bahuśirā babhrur viśvayoniḥ śuciśravāḥ amṛtaḥ śāśvatasthāṇur varāroho mahātapāḥ",
-    "english": "{0:One who makes all people weep} · {1:One who has many heads} · {2:One who rules over the worlds} · {3:One who is the Total Cause from which alone the entire world of experiences has emerged out} · {4:One who has beautiful and efficient ears} · {5:One who is Immortal and Immutable} · {6:One who is both permanent (Saasvatah) and irremovable (sthāṇuḥ)} · {7:He who is the most Glorious (Vara) Destination (Aaroha)} · {8:One of great Tapas}",
+    "english": "{0:One who makes all people weep} · {1:One who has many heads} · {2:One who rules over the worlds} · {3:One who is the Total Cause from which alone the entire world of experiences has emerged out} · {4:One who has beautiful and efficient ears} · {5:One who is Immortal and Immutable} · {6:One who is both permanent (śāśvataḥ) and irremovable (sthāṇuḥ)} · {7:He who is the most Glorious (Vara) Destination (āroha)} · {8:One of great Tapas}",
     "words": [
       {
         "roman": "rudro",
@@ -6584,13 +6584,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "śāśvatasthāṇur",
-        "gloss": "One who is both permanent (Saasvatah) and irremovable (sthāṇuḥ)",
+        "gloss": "One who is both permanent (śāśvataḥ) and irremovable (sthāṇuḥ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "varāroho",
-        "gloss": "He who is the most Glorious (Vara) Destination (Aaroha)",
+        "gloss": "He who is the most Glorious (Vara) Destination (āroha)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6659,35 +6659,35 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sarvagaḥ sarvavidbhānur viṣvakseno janārdanaḥ vedo vedavid avyaṅgo vedāṅgo vedavit kaviḥ",
-    "english": "{0:\"He who has gone everywhere\", meaning \"One who pervades everything\"}· {1:One who is All- Knowing (Sarvavit) and Effulgent (Bhaanuh)} · {2:He, while facing whom, even the mighty army of the gods retreat and scatter away, is called as viṣvaksenaḥ} · {3:The term Ardayati is a verb meaning both 'giving sorrow' or 'giving joy'}· {4:The term Veda comes from the root vid: 'to know'}· {5:'One who knows the veda'}· {6:He who has no imperfections (Vyanga) anywhere in him—The All — Perfect} · {7:One whose very limbs are the Vedas} · {8:‘One who contemplates upon the Veda is vedavit’: (Vedam Vichaarayati = vedavit)} · {9:The term Kavi in the Vedas means the 'Seer'}",
+    "english": "{0:The all-pervading one who has gone everywhere} · {1:One who is All- Knowing (Sarvavit) and Effulgent (bhānuḥ)} · {2:The one before whom hostile armies scatter} · {3:The one who brings both discipline and joy to beings} · {4:The Veda; knowledge itself} · {5:'One who knows the veda'}· {6:He who has no imperfections (Vyanga) anywhere in him—The All — Perfect} · {7:One whose very limbs are the Vedas} · {8:The knower and contemplator of the Veda} · {9:The seer}",
     "words": [
       {
         "roman": "sarvagaḥ",
-        "gloss": "\"He who has gone everywhere\", meaning \"One who pervades everything\"",
+        "gloss": "The all-pervading one who has gone everywhere",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sarvavidbhānur",
-        "gloss": "One who is All- Knowing (Sarvavit) and Effulgent (Bhaanuh)",
+        "gloss": "One who is All- Knowing (Sarvavit) and Effulgent (bhānuḥ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "viṣvakseno",
-        "gloss": "He, while facing whom, even the mighty army of the gods retreat and scatter away, is called as viṣvaksenaḥ",
+        "gloss": "The one before whom hostile armies scatter",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "janārdanaḥ",
-        "gloss": "The term Ardayati is a verb meaning both 'giving sorrow' or 'giving joy'",
+        "gloss": "The one who brings both discipline and joy to beings",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vedo",
-        "gloss": "The term Veda comes from the root vid: 'to know'",
+        "gloss": "The Veda; knowledge itself",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6711,13 +6711,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vedavit",
-        "gloss": "‘One who contemplates upon the Veda is vedavit’: (Vedam Vichaarayati = vedavit)",
+        "gloss": "The knower and contemplator of the Veda",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaviḥ",
-        "gloss": "The term Kavi in the Vedas means the 'Seer'",
+        "gloss": "The seer",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -6768,7 +6768,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lokādhyakṣaḥ surādhyakṣo dharmādhyakṣaḥ kṛtākṛtaḥ caturātmā caturvyūhaś caturdaṃṣṭraś caturbhujaḥ",
-    "english": "{0:One who presides over all fields of experiences — all lokas} · {1:The President of the Heavens to whom the Devas run for protection when they are threatened by their constant enemies - the Daityas and the Asuras} · {2:Presiding over the activities of the living organisms, Consciousness revels, illumining both the good and the evil therein} · {3:kṛtam = that which is done = that which is manifested or created} · {4:The Self is described as four-fold when we consider the Atman as the Glory (vibhūti) of the Self} · {5:One who manifests into the four mighty powers (vyūha)} · {6:The canine teeth fully developed in the upper and the lower rows, as in the case of carnivorous animals, are called in Sanskrit as daṃṣṭrā} · {7:\"One who has four hands\" It is famous that Maha Viṣṇu has four hands and they carry the Conch, the Discus, the Mace, and the Lotus}",
+    "english": "{0:One who presides over all fields of experiences — all lokas} · {1:The lord of the gods} · {2:Presiding over the activities of the living organisms, Consciousness revels, illumining both the good and the evil therein} · {3:The one who is both cause and manifested effect} · {4:The fourfold self} · {5:One who manifests into the four mighty powers (vyūha)} · {6:The four-tusked one} · {7:\"One who has four hands\" It is famous that Maha Viṣṇu has four hands and they carry the Conch, the Discus, the Mace, and the Lotus}",
     "words": [
       {
         "roman": "lokādhyakṣaḥ",
@@ -6778,7 +6778,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "surādhyakṣo",
-        "gloss": "The President of the Heavens to whom the Devas run for protection when they are threatened by their constant enemies - the Daityas and the Asuras",
+        "gloss": "The lord of the gods",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6790,13 +6790,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛtākṛtaḥ",
-        "gloss": "kṛtam = that which is done = that which is manifested or created",
+        "gloss": "The one who is both cause and manifested effect",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "caturātmā",
-        "gloss": "The Self is described as four-fold when we consider the Atman as the Glory (vibhūti) of the Self",
+        "gloss": "The fourfold self",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6808,7 +6808,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "caturdaṃṣṭraś",
-        "gloss": "The canine teeth fully developed in the upper and the lower rows, as in the case of carnivorous animals, are called in Sanskrit as daṃṣṭrā",
+        "gloss": "The four-tusked one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6877,7 +6877,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhrājiṣṇur bhojanaṃ bhoktā sahiṣṇur jagadādijaḥ anagho vijayo jetā viśvayoniḥ punarvasuḥ",
-    "english": "{0:Self — Effulgent Consciousness illumines everything; and it is not borrowing Its Light from any other source} · {1:The immediate meaning of the term is food, viz} · {2:The \"Experiencer\"}· {3:One who is capable of patiently suffering, in his perfect detachment, all that is happening around, is a sahishnuh} · {4:One who had born (Jah) in the very beginning (aadi) of the world (jagat) is called jagadādijaḥ} · {5:Agham means sin (pāpa), impurities (mala); and therefore, anaghaḥ means One who has no imperfections and who is not affected by the good and bad vāsanās left over in the personality as a result of the wilful actions} · {6:\"The Victorious\"}· {7:\"Ever Successful\"}· {8:It can be interpreted in two ways as (a) He who is the Cause of the universe or (b) He who has the world as His Cause} · {9:One who comes to live again and again in various equipments of living organisms is punarvasuḥ}",
+    "english": "{0:Self — Effulgent Consciousness illumines everything; and it is not borrowing Its Light from any other source} · {1:Food; all that is experienced} · {2:The \"Experiencer\"}· {3:One who is capable of patiently suffering, in his perfect detachment, all that is happening around, is a sahishnuh} · {4:The one born at the very beginning of the world} · {5:The sinless and faultless one} · {6:\"The Victorious\"}· {7:\"Ever Successful\"}· {8:The source of the universe, or he whose source is the universe} · {9:One who comes to live again and again in various equipments of living organisms is punarvasuḥ}",
     "words": [
       {
         "roman": "bhrājiṣṇur",
@@ -6887,7 +6887,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhojanaṃ",
-        "gloss": "The immediate meaning of the term is food, viz",
+        "gloss": "Food; all that is experienced",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6905,13 +6905,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "jagadādijaḥ",
-        "gloss": "One who had born (Jah) in the very beginning (aadi) of the world (jagat) is called jagadādijaḥ",
+        "gloss": "The one born at the very beginning of the world",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "anagho",
-        "gloss": "Agham means sin (pāpa), impurities (mala); and therefore, anaghaḥ means One who has no imperfections and who is not affected by the good and bad vāsanās left over in the personality as a result of the wilful actions",
+        "gloss": "The sinless and faultless one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6929,7 +6929,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viśvayoniḥ",
-        "gloss": "It can be interpreted in two ways as (a) He who is the Cause of the universe or (b) He who has the world as His Cause",
+        "gloss": "The source of the universe, or he whose source is the universe",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7010,7 +7010,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upendro vāmanaḥ prāṃśur amoghaḥ śucir ūrjitaḥ atīndraḥ saṅgrahaḥ sargo dhṛtātmā niyamo yamaḥ",
-    "english": "{0:The younger brother of Indra} · {1:Of the ten great incarnations, the fifth one is Vāmana; and the very name indicates 'One who has a small body'}· {2:One whose body is vast is called prāṃśuḥ} · {3:One whose activities are ever a fulfilment of some great purpose} · {4:One who is spotlessly 'clean', and therefore, Ever — Pure} · {5:One who has infinite strength and vitality} · {6:One who is beyond Indra in knowledge, glory and strength} · {7:One who holds the entire world of beings-and-things together in an indissoluble embrace unto Himself} · {8:One who has created out of Himself the whole world} · {9:One who supports Himself by Himself} · {10:The Appointing Authority: It is He, who orders all the mighty forces of nature and prescribes for each the Laws of their conduct, the ways of their behaviour and the methods of their functions} · {11:One who is the mighty Power that administers all the forces of Nature under His Law}",
+    "english": "{0:The younger brother of Indra} · {1:The small-bodied Vāmana incarnation} · {2:The tall one whose body fills the sky} · {3:One whose activities are ever a fulfilment of some great purpose} · {4:One who is spotlessly 'clean', and therefore, Ever — Pure} · {5:One who has infinite strength and vitality} · {6:One who is beyond Indra in knowledge, glory and strength} · {7:One who holds the entire world of beings-and-things together in an indissoluble embrace unto Himself} · {8:One who has created out of Himself the whole world} · {9:One who supports Himself by Himself} · {10:The appointing authority who orders the laws of nature} · {11:One who is the mighty Power that administers all the forces of Nature under His Law}",
     "words": [
       {
         "roman": "upendro",
@@ -7020,13 +7020,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāmanaḥ",
-        "gloss": "Of the ten great incarnations, the fifth one is Vāmana; and the very name indicates 'One who has a small body'",
+        "gloss": "The small-bodied Vāmana incarnation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prāṃśur",
-        "gloss": "One whose body is vast is called prāṃśuḥ",
+        "gloss": "The tall one whose body fills the sky",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7074,7 +7074,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "niyamo",
-        "gloss": "The Appointing Authority: It is He, who orders all the mighty forces of nature and prescribes for each the Laws of their conduct, the ways of their behaviour and the methods of their functions",
+        "gloss": "The appointing authority who orders the laws of nature",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7153,7 +7153,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vedyo vaidyaḥ sadāyogī vīrahā mādhavo madhuḥ atīndriyo mahāmāyo mahotsāho mahābalaḥ",
-    "english": "{0:That which is to be known; in the language of the Gītā, it is Ineyam} · {1:The One Supreme Doctor who alone can minister to the world suffering from ego and egocentric misconceptions} · {2:To the confused and the deluded to detach themselves from the false vestures-of-matter and to seek their identity with the ETERNAL Self is called Yoga} · {3:\"He who destroys the mighty heroes\"}· {4:Earlier this term was used (72) where we interpreted the term as the \"Lord of Lakṣmī.\"}· {5:The term madhuḥ familiarly stands for \"honey\"}· {6:One who is beyond the sense-organs not only in the sense, that the sense-organs cannot perceive Him as their 'object' but also in the sense that He is other than the sense-organs and their functions} · {7:One who is the Supreme Master of all māyā} · {8:The Great Enthusiast: the Ever — Dynamic Accomplisher} · {9:One who has Supreme Strength}",
+    "english": "{0:That which is to be known; in the language of the Gītā, it is Ineyam} · {1:The One Supreme Doctor who alone can minister to the world suffering from ego and egocentric misconceptions} · {2:The one always united in yoga} · {3:\"He who destroys the mighty heroes\"}· {4:The lord of Lakṣmī} · {5:The one sweet as honey to his devotees} · {6:The one beyond the senses and their functions} · {7:One who is the Supreme Master of all māyā} · {8:The Great Enthusiast: the Ever — Dynamic Accomplisher} · {9:One who has Supreme Strength}",
     "words": [
       {
         "roman": "vedyo",
@@ -7169,7 +7169,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sadāyogī",
-        "gloss": "To the confused and the deluded to detach themselves from the false vestures-of-matter and to seek their identity with the ETERNAL Self is called Yoga",
+        "gloss": "The one always united in yoga",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7181,19 +7181,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "mādhavo",
-        "gloss": "Earlier this term was used (72) where we interpreted the term as the \"Lord of Lakṣmī.\"",
+        "gloss": "The lord of Lakṣmī",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "madhuḥ",
-        "gloss": "The term madhuḥ familiarly stands for \"honey\"",
+        "gloss": "The one sweet as honey to his devotees",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "atīndriyo",
-        "gloss": "One who is beyond the sense-organs not only in the sense, that the sense-organs cannot perceive Him as their 'object' but also in the sense that He is other than the sense-organs and their functions",
+        "gloss": "The one beyond the senses and their functions",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7257,11 +7257,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mahābuddhir mahāvīryo mahāśaktir mahādyutiḥ anirdeśyavapuḥ śrīmān ameyātmā mahādridhṛk",
-    "english": "{0:In the previous term, we were told He is Omnipotent} · {1:One who is the Supreme Essence} · {2:All — Powerful} · {3:Of Splendorous Light} · {4:One whose form is indefinable, indescribable, inexplicable} · {5:Śrī means Glory (Aisvarya)} · {6:He whose Essence (ātmā) is inestimable and immeasurable (Ameya)} · {7:One who supports the great Mountain}",
+    "english": "{0:The one of great intelligence} · {1:One who is the Supreme Essence} · {2:All — Powerful} · {3:Of Splendorous Light} · {4:One whose form is indefinable, indescribable, inexplicable} · {5:The possessor of glory} · {6:He whose Essence (ātmā) is inestimable and immeasurable (Ameya)} · {7:One who supports the great Mountain}",
     "words": [
       {
         "roman": "mahābuddhir",
-        "gloss": "In the previous term, we were told He is Omnipotent",
+        "gloss": "The one of great intelligence",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7291,7 +7291,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīmān",
-        "gloss": "Śrī means Glory (Aisvarya)",
+        "gloss": "The possessor of glory",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7376,11 +7376,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maheṣvāso mahībhartā śrīnivāsaḥ satāṃ gatiḥ aniruddhaḥ surānando govindo govidāṃ patiḥ",
-    "english": "{0:One who wears or wields the Great Bow called Śārṅga} · {1:The husband of Mother Farth} · {2:The permanent abode of Śrī} · {3:For the truly virtuous and for all spiritual seekers (Sat — People) He who is the final Goal} · {4:One who cannot be obstructed or resisted by anyone} · {5:The One who doles out happiness (Aananda) even for the Denizens-of-the Heavens (Suras)} · {6:The word Go in Sanskrit has four meanings: 'Earth', 'Cows', 'Speech' and 'Vedas'}· {7:One, who is the Lord of all 'seers' and \"Men of Wisdom\"}",
+    "english": "{0:The wielder of the great bow Śārṅga} · {1:The husband of Mother Farth} · {2:The permanent abode of Śrī} · {3:For the truly virtuous and for all spiritual seekers (Sat — People) He who is the final Goal} · {4:One who cannot be obstructed or resisted by anyone} · {5:The One who doles out happiness (ānanda) even for the Denizens-of-the Heavens (Suras)} · {6:The protector of cows and restorer of the earth} · {7:One, who is the Lord of all 'seers' and \"Men of Wisdom\"}",
     "words": [
       {
         "roman": "maheṣvāso",
-        "gloss": "One who wears or wields the Great Bow called Śārṅga",
+        "gloss": "The wielder of the great bow Śārṅga",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7410,13 +7410,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "surānando",
-        "gloss": "The One who doles out happiness (Aananda) even for the Denizens-of-the Heavens (Suras)",
+        "gloss": "The One who doles out happiness (ānanda) even for the Denizens-of-the Heavens (Suras)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "govindo",
-        "gloss": "The word Go in Sanskrit has four meanings: 'Earth', 'Cows', 'Speech' and 'Vedas'",
+        "gloss": "The protector of cows and restorer of the earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7484,35 +7484,35 @@ window.SONG_LINES = {
       }
     ],
     "roman": "marīcir damano haṃsaḥ suparṇo bhujagottamaḥ hiraṇyanābhaḥ sutapāḥ padmanābhaḥ prajāpatiḥ",
-    "english": "{0:The term marīciḥ means 'Effulgence'}· {1:One who restrains and controls every Raakshasic impulse within the bosom} · {2:One of the great declarations of the Vedas is: \"I am Brahman\" (ahaṃ brahmāsmi)} · {3:Parna means wings; Suparna means that which has beautiful wings-bird} · {4:The sacred serpent named in the puranas as Ananta} · {5:He, who supports at His navel, the creator, Hiranyagarbha} · {6:One who has glorious Tapas} · {7:One who supports at His navel the very seat of all creative-power} · {8:The Lord of the creatures}",
+    "english": "{0:The ray of light in all that shines} · {1:One who restrains and controls every rākṣasic impulse within the bosom} · {2:The divine swan expressing the identity of self and Brahman} · {3:The beautiful-winged one} · {4:The greatest serpent, Ananta} · {5:He, who supports at His navel, the creator, Hiranyagarbha} · {6:One who has glorious Tapas} · {7:One who supports at His navel the very seat of all creative-power} · {8:The Lord of the creatures}",
     "words": [
       {
         "roman": "marīcir",
-        "gloss": "The term marīciḥ means 'Effulgence'",
+        "gloss": "The ray of light in all that shines",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "damano",
-        "gloss": "One who restrains and controls every Raakshasic impulse within the bosom",
+        "gloss": "One who restrains and controls every rākṣasic impulse within the bosom",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "haṃsaḥ",
-        "gloss": "One of the great declarations of the Vedas is: \"I am Brahman\" (ahaṃ brahmāsmi)",
+        "gloss": "The divine swan expressing the identity of self and Brahman",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "suparṇo",
-        "gloss": "Parna means wings; Suparna means that which has beautiful wings-bird",
+        "gloss": "The beautiful-winged one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhujagottamaḥ",
-        "gloss": "The sacred serpent named in the puranas as Ananta",
+        "gloss": "The greatest serpent, Ananta",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7615,7 +7615,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amṛtyuḥ sarvadṛk siṃhaḥ sandhātā sandhimān sthiraḥ ajo durmarṣaṇaḥ śāstā viśrutātmā surārihā",
-    "english": "{0:One who knows no decay} · {1:The seer and knower of everything} · {2:One who destroys} · {3:The Co-relator, the Regulator, the One who co-relates the actions and their fruits} · {4:The structural engineering of individuality is the mightiest of phenomenon available in nature} · {5:Firm, consistent} · {6:Unborn} · {7:One who cannot be attacked and vanquished} · {8:One who rules over the universe} · {9:The famous term ātmā, famous in all the Vedas, is Viṣṇu} · {10:Sura=\"God of the Heaven\", Ari=\"enemies\", Ha=\"destroyer\"}",
+    "english": "{0:One who knows no decay} · {1:The seer and knower of everything} · {2:One who destroys} · {3:The Co-relator, the Regulator, the One who co-relates the actions and their fruits} · {4:The structural engineering of individuality is the mightiest of phenomenon available in nature} · {5:Firm, consistent} · {6:Unborn} · {7:One who cannot be attacked and vanquished} · {8:One who rules over the universe} · {9:The self celebrated throughout the Vedas} · {10:The destroyer of the enemies of the gods}",
     "words": [
       {
         "roman": "amṛtyuḥ",
@@ -7673,13 +7673,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "viśrutātmā",
-        "gloss": "The famous term ātmā, famous in all the Vedas, is Viṣṇu",
+        "gloss": "The self celebrated throughout the Vedas",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "surārihā",
-        "gloss": "Sura=\"God of the Heaven\", Ari=\"enemies\", Ha=\"destroyer\"",
+        "gloss": "The destroyer of the enemies of the gods",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7736,17 +7736,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gurur gurutamo dhāma satyaḥ satyaparākramaḥ nimiṣo nimiṣaḥ sragvī vācaspatirudāradhīḥ",
-    "english": "{0:The teacher, who initiates seekers into the secrets of the sacred scriptures is called the Guru} · {1:The Greatest Teacher; One who had inspired with knowledge and initiated the very Creator Brahmājī into the knowledge of the four Vedas} · {2:The Goal; the Sacred destination of a pilgrimage} · {3:One who is Himself the Truth} · {4:Dynamic Truth} · {5:The condition of \"the eyelids closed\" is called nimiṣaḥ; the unwinking is called Animishah} · {6:One who remains unwinking} · {7:A garland is called Srak and, therefore, the term means One who is constantly wearing a garland of undecaying flowers} · {8:vācaspati is a term given to One who is eloquent in championing the Supreme law of life; and dhī means the power of intelligence; and udāradhīḥ one who has a \"Large-hearted intelligence\", One who is not puritanical in his viewpoints}",
+    "english": "{0:The teacher} · {1:The greatest teacher} · {2:The Goal; the Sacred destination of a pilgrimage} · {3:One who is Himself the Truth} · {4:Dynamic Truth} · {5:The one whose eyes close in inward contemplation} · {6:One who remains unwinking} · {7:The wearer of an unfading garland} · {8:The lord of speech, endowed with generous intelligence}",
     "words": [
       {
         "roman": "gurur",
-        "gloss": "The teacher, who initiates seekers into the secrets of the sacred scriptures is called the Guru",
+        "gloss": "The teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gurutamo",
-        "gloss": "The Greatest Teacher; One who had inspired with knowledge and initiated the very Creator Brahmājī into the knowledge of the four Vedas",
+        "gloss": "The greatest teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7770,7 +7770,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nimiṣo",
-        "gloss": "The condition of \"the eyelids closed\" is called nimiṣaḥ; the unwinking is called Animishah",
+        "gloss": "The one whose eyes close in inward contemplation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7782,13 +7782,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "sragvī",
-        "gloss": "A garland is called Srak and, therefore, the term means One who is constantly wearing a garland of undecaying flowers",
+        "gloss": "The wearer of an unfading garland",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vācaspatirudāradhīḥ",
-        "gloss": "vācaspati is a term given to One who is eloquent in championing the Supreme law of life; and dhī means the power of intelligence; and udāradhīḥ one who has a \"Large-hearted intelligence\", One who is not puritanical in his viewpoints",
+        "gloss": "The lord of speech, endowed with generous intelligence",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7856,7 +7856,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "agraṇīr grāmaṇīḥ śrīmān nyāyo netā samīraṇaḥ sahasramūrdhā viśvātmā sahasrākṣaḥ sahasrapāt",
-    "english": "{0:One who guides us to the end - the peak} · {1:One who controls, guides and leads the \"Collection\", the \"flock\" (grāma)} · {2:Śrī means Light, Effulgence or glory} · {3:The word in its direct meaning is \"Justice\"}· {4:The leader—one who protects, nurtures, nourishes and guides all living creatures in the world} · {5:One who efficiently administers all movements of all living creatures} · {6:One who has endless number of heads} · {7:The very Soul of the Universe; the very inner Essence in all living creatures} · {8:In describing the macrocosmic form of the Lord we have an endorsement of this declaration in the Bhagavad Gītā} · {9:The One Infinite Consciousness expresses everywhere, in all forms, at all times}",
+    "english": "{0:One who guides us to the end - the peak} · {1:One who controls, guides and leads the \"Collection\", the \"flock\" (grāma)} · {2:The radiant possessor of splendor} · {3:Justice and right reasoning} · {4:The leader—one who protects, nurtures, nourishes and guides all living creatures in the world} · {5:One who efficiently administers all movements of all living creatures} · {6:One who has endless number of heads} · {7:The very Soul of the Universe; the very inner Essence in all living creatures} · {8:The thousand-eyed cosmic form} · {9:The One Infinite Consciousness expresses everywhere, in all forms, at all times}",
     "words": [
       {
         "roman": "agraṇīr",
@@ -7872,13 +7872,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīmān",
-        "gloss": "Śrī means Light, Effulgence or glory",
+        "gloss": "The radiant possessor of splendor",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nyāyo",
-        "gloss": "The word in its direct meaning is \"Justice\"",
+        "gloss": "Justice and right reasoning",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7908,7 +7908,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sahasrākṣaḥ",
-        "gloss": "In describing the macrocosmic form of the Lord we have an endorsement of this declaration in the Bhagavad Gītā",
+        "gloss": "The thousand-eyed cosmic form",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7976,7 +7976,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āvartano nivṛttātmā saṃvṛtaḥ sampramardanaḥ ahaḥ saṃvartako vahnir anilo dharaṇīdharaḥ",
-    "english": "{0:One who is the Unseen Dynamism behind the ever-whirling wheel-of time upon which play the endless drama of birth and death} · {1:The pure Self, which has retreated totally from all Its identifications with matter} · {2:One who is completely veiled from the recognition of the \"Perceiving-feeling-thinking entity\", the ego (jīva)} · {3:One who persecutes relentlessly men, who are sensuous, evil-minded, and so, fully extrovert in their personality (rākṣasas)} · {4:One who thrills the day (Ahas) and makes it function vigorously (pravartakah)} · {5:Fire} · {6:This term has four distinct meanings} · {7:One who supports (Dharah) the earth (dharaṇī)}",
+    "english": "{0:One who is the Unseen Dynamism behind the ever-whirling wheel-of time upon which play the endless drama of birth and death} · {1:The pure Self, which has retreated totally from all Its identifications with matter} · {2:One who is completely veiled from the recognition of the \"Perceiving-feeling-thinking entity\", the ego (jīva)} · {3:One who persecutes relentlessly men, who are sensuous, evil-minded, and so, fully extrovert in their personality (rākṣasas)} · {4:One who thrills the day (Ahas) and makes it function vigorously (pravartakah)} · {5:Fire} · {6:The wind, needing no impulse from another} · {7:One who supports (Dharah) the earth (dharaṇī)}",
     "words": [
       {
         "roman": "āvartano",
@@ -8016,7 +8016,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "anilo",
-        "gloss": "This term has four distinct meanings",
+        "gloss": "The wind, needing no impulse from another",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8081,7 +8081,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "suprasādaḥ prasannātmā viśvadhṛg viśvabhug vibhuḥ satkartā satkṛtaḥ sādhur jahnur nārāyaṇo naraḥ",
-    "english": "{0:One who is full of the Supreme Grace and who, so little, so easily, becomes so entirely satisfied} · {1:Ever — Pure and All- Blissful Self} · {2:As a Mighty Source of all existence in every thing and every being} · {3:The One who enjoys or swallows (Bhuk) all experiences (Visva)} · {4:One who manifests Himself in an endless variety of forms} · {5:One who revels and adores those who are good and wise} · {6:One who is adored by all good people, not only is He adored and worshipped by great men of wisdom and devotion—as the Sanatkumaaras, Naarada and others—but He is invoked and worshipped consciously by all living creatures} · {7:One, who functions strictly according to the righteous code of living is a sādhuḥ} · {8:Leader of men; the One who leads all creatures along the path of an inexorable law—the law of action and reaction, the rhythm of Karma} · {9:This simple sacred word has an endless number of direct and indirect meanings, imports and suggestions, and Vyasa seems to have explored almost all its possibilities} · {10:The Guide}",
+    "english": "{0:One who is full of the Supreme Grace and who, so little, so easily, becomes so entirely satisfied} · {1:Ever — Pure and All- Blissful Self} · {2:As a Mighty Source of all existence in every thing and every being} · {3:The One who enjoys or swallows (Bhuk) all experiences (Visva)} · {4:One who manifests Himself in an endless variety of forms} · {5:One who revels and adores those who are good and wise} · {6:The one honored and worshiped by the good} · {7:One, who functions strictly according to the righteous code of living is a sādhuḥ} · {8:Leader of men; the One who leads all creatures along the path of an inexorable law—the law of action and reaction, the rhythm of Karma} · {9:The resting place of all beings} · {10:The Guide}",
     "words": [
       {
         "roman": "suprasādaḥ",
@@ -8121,7 +8121,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "satkṛtaḥ",
-        "gloss": "One who is adored by all good people, not only is He adored and worshipped by great men of wisdom and devotion—as the Sanatkumaaras, Naarada and others—but He is invoked and worshipped consciously by all living creatures",
+        "gloss": "The one honored and worshiped by the good",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8139,7 +8139,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇo",
-        "gloss": "This simple sacred word has an endless number of direct and indirect meanings, imports and suggestions, and Vyasa seems to have explored almost all its possibilities",
+        "gloss": "The resting place of all beings",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8202,17 +8202,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "asaṅkhyeyo' prameyātmā viśiṣṭaḥ śiṣṭakṛc chuciḥ siddhārthaḥ siddhasaṅkalpaḥ siddhidaḥ siddhisādhanaḥ",
-    "english": "{0:Sankhyaa means number; Asankhya=numberless} · {1:Prameya=pramāṇa Vishaya—anything that can be known through any of the \"Sources-of-knowledge\"—direct or indirect} · {2:The One who transcends everything, in His Glory is the Supreme (viśiṣṭaḥ)} · {3:One who governs; One who is the Law Maker and the Law that governs the universe} · {4:One who is Pure} · {5:One who has gained all that has to be gained and achieved all that has to be achieved} · {6:saṅkalpa means \"intellectual willing and wishing\"}· {7:One who is the Giver of the appropriate reward for all actions, for those who are doing spiritual practices} · {8:One who is the very secret force which enables the seeker to diligently continue all efforts of his seeking}",
+    "english": "{0:The one beyond all counting} · {1:The one whose self cannot be measured by any proof} · {2:The One who transcends everything, in His Glory is the Supreme (viśiṣṭaḥ)} · {3:One who governs; One who is the Law Maker and the Law that governs the universe} · {4:One who is Pure} · {5:One who has gained all that has to be gained and achieved all that has to be achieved} · {6:The one whose resolve is always fulfilled} · {7:One who is the Giver of the appropriate reward for all actions, for those who are doing spiritual practices} · {8:One who is the very secret force which enables the seeker to diligently continue all efforts of his seeking}",
     "words": [
       {
         "roman": "asaṅkhyeyo'",
-        "gloss": "Sankhyaa means number; Asankhya=numberless",
+        "gloss": "The one beyond all counting",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prameyātmā",
-        "gloss": "Prameya=pramāṇa Vishaya—anything that can be known through any of the \"Sources-of-knowledge\"—direct or indirect",
+        "gloss": "The one whose self cannot be measured by any proof",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8242,7 +8242,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siddhasaṅkalpaḥ",
-        "gloss": "saṅkalpa means \"intellectual willing and wishing\"",
+        "gloss": "The one whose resolve is always fulfilled",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8316,17 +8316,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vṛṣāhī vṛṣabho viṣṇur vṛṣaparvā vṛṣodaraḥ vardhano vardhamānaś viviktaḥ śrutisāgaraḥ",
-    "english": "{0:The term Vrishah is very familiar in the ritualistic portion of the Vedas and it connotes objectively the sacred \"Left over\" after the yajña functions} · {1:The term vṛṣa though not very familiar now is used in the Vedic literature to indicate dharma—\"the essential nature of a thing without which the thing cannot remain as the thing\" is its dharma} · {2:All — Pervading: Long — Strident} · {3:We had already explained that vṛṣa means dharma} · {4:vṛṣa, that which rains; Udara=belly} · {5:One who is the nurturer and nourisher everywhere, at all levels of life, both material and spiritual} · {6:One who can grow Himself into any dimensions; ever-growing} · {7:Alone=solitary} · {8:The ocean for all the rivers of all scriptural thoughts}",
+    "english": "{0:The one whose days are devoted to dharma} · {1:The embodiment of dharma who showers desired fruits} · {2:All — Pervading: Long — Strident} · {3:The ladder whose steps are dharma} · {4:The one whose depths contain the source of creation} · {5:One who is the nurturer and nourisher everywhere, at all levels of life, both material and spiritual} · {6:One who can grow Himself into any dimensions; ever-growing} · {7:The solitary and distinct one} · {8:The ocean for all the rivers of all scriptural thoughts}",
     "words": [
       {
         "roman": "vṛṣāhī",
-        "gloss": "The term Vrishah is very familiar in the ritualistic portion of the Vedas and it connotes objectively the sacred \"Left over\" after the yajña functions",
+        "gloss": "The one whose days are devoted to dharma",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vṛṣabho",
-        "gloss": "The term vṛṣa though not very familiar now is used in the Vedic literature to indicate dharma—\"the essential nature of a thing without which the thing cannot remain as the thing\" is its dharma",
+        "gloss": "The embodiment of dharma who showers desired fruits",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8338,13 +8338,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vṛṣaparvā",
-        "gloss": "We had already explained that vṛṣa means dharma",
+        "gloss": "The ladder whose steps are dharma",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vṛṣodaraḥ",
-        "gloss": "vṛṣa, that which rains; Udara=belly",
+        "gloss": "The one whose depths contain the source of creation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8362,7 +8362,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viviktaḥ",
-        "gloss": "Alone=solitary",
+        "gloss": "The solitary and distinct one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8441,7 +8441,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "subhujo durdharo vāgmī mahendro vasudo vasuḥ naikarūpo bṛhadrūpaḥ śipiviṣṭaḥ prakāśanaḥ",
-    "english": "{0:He who has graceful arms} · {1:One who cannot be comprehended even by Great yogīs, who spend long periods of time in meditation} · {2:One who is cloquent of His Glory} · {3:One who is Lord of even Indra, the Lord of gods} · {4:Vasu means wealth and, therefore, vasudaḥ means One who enriches all, both in their outer prosperity and in their inner well-being} · {5:The term Vasu has got three meanings: Wealth (Dhana), Veil (Aacchaadana) and Sun (Aaditya); thus He is the One who manifests Himself in the form of the external wealth, for He, as the very sun, nurtures and nourishes the world} · {6:One who is of Infinite forms in His manifestations; the single waker's mind becomes itself variegated to serve as the endless items of the dream-world} · {7:Vast, of Infinite dimensions;Pervading all} · {8:Sipi is the name given to the \"Sacrificial cow\"}· {9:The One who illuminates; expressing Itself as the All-pervading Consciousness in every equipment}",
+    "english": "{0:He who has graceful arms} · {1:One who cannot be comprehended even by Great yogīs, who spend long periods of time in meditation} · {2:One who is cloquent of His Glory} · {3:One who is Lord of even Indra, the Lord of gods} · {4:The giver of wealth} · {5:The one manifest as wealth, the veil, and the nourishing sun} · {6:The one of infinite forms} · {7:Vast, of Infinite dimensions;Pervading all} · {8:Sipi is the name given to the \"Sacrificial cow\"}· {9:The One who illuminates; expressing Itself as the All-pervading Consciousness in every equipment}",
     "words": [
       {
         "roman": "subhujo",
@@ -8469,19 +8469,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "vasudo",
-        "gloss": "Vasu means wealth and, therefore, vasudaḥ means One who enriches all, both in their outer prosperity and in their inner well-being",
+        "gloss": "The giver of wealth",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vasuḥ",
-        "gloss": "The term Vasu has got three meanings: Wealth (Dhana), Veil (Aacchaadana) and Sun (Aaditya); thus He is the One who manifests Himself in the form of the external wealth, for He, as the very sun, nurtures and nourishes the world",
+        "gloss": "The one manifest as wealth, the veil, and the nourishing sun",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "naikarūpo",
-        "gloss": "One who is of Infinite forms in His manifestations; the single waker's mind becomes itself variegated to serve as the endless items of the dream-world",
+        "gloss": "The one of infinite forms",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8550,7 +8550,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ojastejodyutidharaḥ prakāśātmā pratāpanaḥ ṛddhaḥ spaṣṭākṣaro mantraś candrāṃśur bhāskaradyutiḥ",
-    "english": "{0:One who is the possessor (Dharah) of Perfect physical virility (Ojas), all brilliancy (Tejas) and every beauty (dyuti)} · {1:The Effulgent Self} · {2:The One who manifests Himself as the Essential Thermal Energy, that lends Life Potential to the very atmosphere around each living creature} · {3:One who is ever full of all prosperity} · {4:Spashtam=clear} · {5:One who is of the nature of the Mantras of the Vedas} · {6:Rays of the moon} · {7:The Effulgence of the Sun}",
+    "english": "{0:One who is the possessor (Dharah) of Perfect physical virility (Ojas), all brilliancy (Tejas) and every beauty (dyuti)} · {1:The Effulgent Self} · {2:The One who manifests Himself as the Essential Thermal Energy, that lends Life Potential to the very atmosphere around each living creature} · {3:One who is ever full of all prosperity} · {4:The one whose imperishable syllable is clear} · {5:One who is of the nature of the Mantras of the Vedas} · {6:Rays of the moon} · {7:The Effulgence of the Sun}",
     "words": [
       {
         "roman": "ojastejodyutidharaḥ",
@@ -8578,7 +8578,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "spaṣṭākṣaro",
-        "gloss": "Spashtam=clear",
+        "gloss": "The one whose imperishable syllable is clear",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8657,11 +8657,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amṛtāṃśūdbhavo bhānuḥ śaśabinduḥ sureśvaraḥ auṣadhaṃ jagataḥ setuḥ satyadharmaparākramaḥ",
-    "english": "{0:The moon who has consoling rays that gives the essential food-value (Rasa) to the plants and fruits is called in Sanskrit as Amritaamsuh} · {1:Self — Effulgent; One who expresses Himself for the blessing of the world in the form of the Sun and presides over the entire solar system} · {2:The patch in the moon looks like the silhouette of a rabbit for the naked eye; that which has a \"beauty-spot\" (Bindu) in the shape of a rabbit (Sasa) is called Sasabindu — the moon} · {3:Sura means Deva and so the term indicates \"the God of all gods\"}· {4:Medicine} · {5:A reclamation bund thrown across waters connecting distant islands to the main land is called Setu} · {6:One who champions heroically for Truth (Satya) and Righteousness (dharma)}",
+    "english": "{0:The source of the nectar-rayed moon} · {1:Self — Effulgent; One who expresses Himself for the blessing of the world in the form of the Sun and presides over the entire solar system} · {2:The moon marked like a hare} · {3:The lord of the shining gods} · {4:Medicine} · {5:The bridge across the world's waters} · {6:One who champions heroically for Truth (Satya) and Righteousness (dharma)}",
     "words": [
       {
         "roman": "amṛtāṃśūdbhavo",
-        "gloss": "The moon who has consoling rays that gives the essential food-value (Rasa) to the plants and fruits is called in Sanskrit as Amritaamsuh",
+        "gloss": "The source of the nectar-rayed moon",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8673,13 +8673,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaśabinduḥ",
-        "gloss": "The patch in the moon looks like the silhouette of a rabbit for the naked eye; that which has a \"beauty-spot\" (Bindu) in the shape of a rabbit (Sasa) is called Sasabindu — the moon",
+        "gloss": "The moon marked like a hare",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sureśvaraḥ",
-        "gloss": "Sura means Deva and so the term indicates \"the God of all gods\"",
+        "gloss": "The lord of the shining gods",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8691,7 +8691,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jagataḥ setuḥ",
-        "gloss": "A reclamation bund thrown across waters connecting distant islands to the main land is called Setu",
+        "gloss": "The bridge across the world's waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8760,7 +8760,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhūtabhavyabhavannāthaḥ pavanaḥ pāvano 'nalaḥ kāmahā kāmakṛt kāntaḥ kāmaḥ kāmapradaḥ prabhuḥ",
-    "english": "{0:The Lord of the three periods of time: the past, the present and the future} · {1:One who purifies everything} · {2:In the earlier term \"Pavanah\" the Lord is indicated as the One who has, in the form of the atmospheric air, filled the universe} · {3:The term itself means Fire} · {4:One who destroys all desires} · {5:One who fulfils all desires} · {6:One who is of enchanting form} · {7:One who is the beloved} · {8:One who supplies the desired objects; One who fulfils all desires} · {9:He is the Lord, the Master, the Owner, the proprietor}",
+    "english": "{0:The Lord of the three periods of time: the past, the present and the future} · {1:One who purifies everything} · {2:The purifier who fills the universe as wind} · {3:The sacred fire} · {4:One who destroys all desires} · {5:One who fulfils all desires} · {6:One who is of enchanting form} · {7:One who is the beloved} · {8:One who supplies the desired objects; One who fulfils all desires} · {9:He is the Lord, the Master, the Owner, the proprietor}",
     "words": [
       {
         "roman": "bhūtabhavyabhavannāthaḥ",
@@ -8776,13 +8776,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "pāvano",
-        "gloss": "In the earlier term \"Pavanah\" the Lord is indicated as the One who has, in the form of the atmospheric air, filled the universe",
+        "gloss": "The purifier who fills the universe as wind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "'nalaḥ",
-        "gloss": "The term itself means Fire",
+        "gloss": "The sacred fire",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8869,17 +8869,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yugādikṛd yugāvarto naikamāyo mahāśanaḥ adṛśyo vyaktarūpaś sahasrajid anantajit",
-    "english": "{0:One who is the creator of the divisions of aeons, described in our Purāṇas, as Yugas} · {1:In the previous term the Lord is indicated as the Creator of the Yugas, and here we are told that He is also the Power behind the wheel of time that goes on changing and repeating itself, i.e} · {2:One whose delusory forms are endless and variegated} · {3:This word can be dissolved as He who eats up everything} · {4:Through the sense-organs, the mind-and intellect at this moment, we are aware of the outer objects and our subjective emotions and thoughts} · {5:He who has a form— clearly perceptible to the meditator in his meditation} · {6:One who vanquishes thousands} · {7:Ever-victorious}",
+    "english": "{0:The creator of the ages} · {1:The one who turns the wheel of the ages} · {2:One whose delusory forms are endless and variegated} · {3:The great devourer who consumes all at dissolution} · {4:The one unseen by senses, mind, or intellect} · {5:He who has a form— clearly perceptible to the meditator in his meditation} · {6:One who vanquishes thousands} · {7:Ever-victorious}",
     "words": [
       {
         "roman": "yugādikṛd",
-        "gloss": "One who is the creator of the divisions of aeons, described in our Purāṇas, as Yugas",
+        "gloss": "The creator of the ages",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yugāvarto",
-        "gloss": "In the previous term the Lord is indicated as the Creator of the Yugas, and here we are told that He is also the Power behind the wheel of time that goes on changing and repeating itself, i.e",
+        "gloss": "The one who turns the wheel of the ages",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8891,13 +8891,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahāśanaḥ",
-        "gloss": "This word can be dissolved as He who eats up everything",
+        "gloss": "The great devourer who consumes all at dissolution",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "adṛśyo",
-        "gloss": "Through the sense-organs, the mind-and intellect at this moment, we are aware of the outer objects and our subjective emotions and thoughts",
+        "gloss": "The one unseen by senses, mind, or intellect",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8978,11 +8978,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "iṣṭo 'viśiṣṭaḥ śiṣṭeṣṭaḥ śikhaṇḍī nahuṣo vṛṣaḥ krodhahā krodhakṛtkartā viśvabāhur mahīdharaḥ",
-    "english": "{0:This term can be interpreted in two ways} · {1:One who is the noblest and the most sacred} · {2:To all spiritually minded good people and therefore sincere seekers, the Lord is the greatest beloved} · {3:One who wears śikhaṇḍa, meaning \"the peacock feather\"}· {4:The term Nahanam means bondage; therefore, the term stands for \"One who is familiar with bondages.\"}· {5:There is a famous statement in the Hindu tradition from which we can gather that the Lord is of the nature of dharma} · {6:One who destroys anger in all sincere seekers} · {7:One who generates in a sincere and serious seeker anger against the lower tendencies when they manifest} · {8:One who has number of hands; whose hands are everywhere doing all activities in the universe} · {9:One who is the Substratum and support for the Earth}",
+    "english": "{0:The beloved one} · {1:One who is the noblest and the most sacred} · {2:To all spiritually minded good people and therefore sincere seekers, the Lord is the greatest beloved} · {3:The wearer of the peacock plume} · {4:The one who binds beings through māyā} · {5:The embodiment of dharma} · {6:One who destroys anger in all sincere seekers} · {7:One who generates in a sincere and serious seeker anger against the lower tendencies when they manifest} · {8:One who has number of hands; whose hands are everywhere doing all activities in the universe} · {9:One who is the Substratum and support for the Earth}",
     "words": [
       {
         "roman": "iṣṭo",
-        "gloss": "This term can be interpreted in two ways",
+        "gloss": "The beloved one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9000,19 +9000,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "śikhaṇḍī",
-        "gloss": "One who wears śikhaṇḍa, meaning \"the peacock feather\"",
+        "gloss": "The wearer of the peacock plume",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nahuṣo",
-        "gloss": "The term Nahanam means bondage; therefore, the term stands for \"One who is familiar with bondages.\"",
+        "gloss": "The one who binds beings through māyā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vṛṣaḥ",
-        "gloss": "There is a famous statement in the Hindu tradition from which we can gather that the Lord is of the nature of dharma",
+        "gloss": "The embodiment of dharma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9093,7 +9093,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "acyutaḥ prathitaḥ prāṇaḥ prāṇado vāsavānujaḥ apāṃnidhir adhiṣṭhānam apramattaḥ pratiṣṭhitaḥ",
-    "english": "{0:One who has not got any modifications—such as birth, growth, decay, disease, death etc} · {1:One who exists pervading all; spreading Himself everywhere} · {2:All manifested expressions of life are called as the prāṇa} · {3:One who gives strength (prāṇa) to everywhere} · {4:The Brother of Indra} · {5:Treasure of waters, meaning the ocean} · {6:The Substratum for the entire universe} · {7:One who has no pramāda, meaning, One who never commits a mistake in judgement} · {8:Everything in the world depends upon something else to serve as its cause}",
+    "english": "{0:One who has not got any modifications—such as birth, growth, decay, disease, death etc} · {1:One who exists pervading all; spreading Himself everywhere} · {2:The life manifest in every living being} · {3:One who gives strength (prāṇa) to everywhere} · {4:The Brother of Indra} · {5:The ocean, treasury of the waters} · {6:The Substratum for the entire universe} · {7:The unerring one who is never careless} · {8:Everything in the world depends upon something else to serve as its cause}",
     "words": [
       {
         "roman": "acyutaḥ",
@@ -9109,7 +9109,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prāṇaḥ",
-        "gloss": "All manifested expressions of life are called as the prāṇa",
+        "gloss": "The life manifest in every living being",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9127,7 +9127,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "apāṃnidhir",
-        "gloss": "Treasure of waters, meaning the ocean",
+        "gloss": "The ocean, treasury of the waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9139,7 +9139,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "apramattaḥ",
-        "gloss": "One who has no pramāda, meaning, One who never commits a mistake in judgement",
+        "gloss": "The unerring one who is never careless",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9207,11 +9207,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "skandaḥ skandadharo dhuryo varado vāyuvāhanaḥ vāsudevo bṛhadbhānur ādidevaḥ purandaraḥ",
-    "english": "{0:This is one of the names of the youngest son of Lord Siva, Subrahmanya, who is described in the Purāṇa as Commander-in — Chief of the righteous army} · {1:\"One who upholds the withering righteousness.\"}· {2:One who carries the Lord} · {3:One who blesses all true devotees and fulfils their request for boons} · {4:\"The One who controls, regulates and moves the great winds\"}· {5:One who is at once both Vāsu and Deva} · {6:Possessed of endless rays, meaning \"One who illumines the world with the rays of the Sun and the Moon.\"}· {7:\"One who is the Primary source for everything,\" meaning the Lord} · {8:\"The destroyer of the cities.\"}",
+    "english": "{0:Skanda, commander of the righteous host} · {1:\"One who upholds the withering righteousness.\"}· {2:One who carries the Lord} · {3:One who blesses all true devotees and fulfils their request for boons} · {4:\"The One who controls, regulates and moves the great winds\"}· {5:One who is at once both Vāsu and Deva} · {6:The vast light whose rays illumine sun and moon} · {7:The first of the gods} · {8:\"The destroyer of the cities.\"}",
     "words": [
       {
         "roman": "skandaḥ",
-        "gloss": "This is one of the names of the youngest son of Lord Siva, Subrahmanya, who is described in the Purāṇa as Commander-in — Chief of the righteous army",
+        "gloss": "Skanda, commander of the righteous host",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9247,13 +9247,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bṛhadbhānur",
-        "gloss": "Possessed of endless rays, meaning \"One who illumines the world with the rays of the Sun and the Moon.\"",
+        "gloss": "The vast light whose rays illumine sun and moon",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ādidevaḥ",
-        "gloss": "\"One who is the Primary source for everything,\" meaning the Lord",
+        "gloss": "The first of the gods",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9317,7 +9317,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aśokas tāraṇas tāraḥ śūraḥ śaurir janeśvaraḥ anukūlaḥ śatāvartaḥ padmī padmanibhekṣaṇaḥ",
-    "english": "{0:\"One who has no sorrows.\"}· {1:“One who enables others to cross.”} · {2:One who saves is called tāraḥ} · {3:\"The Valiant\"}· {4:Soorasena is the father of Vasudeva, and we have already found that Vasudeva's son is Vāsudeva} · {5:The Lord of the people (jana)} · {6:“A hearty well-wisher, or friend of everyone”} · {7:Sata means \"hundred\", and here it is used as \"innumerable\"}· {8:\"One who has the lotus in his hand\"}· {9:“One whose eyes are as beautiful as the Lotus.\"}",
+    "english": "{0:\"One who has no sorrows.\"}· {1:“One who enables others to cross.”} · {2:The savior from the fear of rebirth} · {3:\"The Valiant\"}· {4:Kṛṣṇa, descendant of Śūrasena} · {5:The Lord of the people (jana)} · {6:“A hearty well-wisher, or friend of everyone”} · {7:The one of innumerable manifestations} · {8:\"One who has the lotus in his hand\"}· {9:“One whose eyes are as beautiful as the Lotus.\"}",
     "words": [
       {
         "roman": "aśokas",
@@ -9333,7 +9333,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tāraḥ",
-        "gloss": "One who saves is called tāraḥ",
+        "gloss": "The savior from the fear of rebirth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9345,7 +9345,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaurir",
-        "gloss": "Soorasena is the father of Vasudeva, and we have already found that Vasudeva's son is Vāsudeva",
+        "gloss": "Kṛṣṇa, descendant of Śūrasena",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9363,7 +9363,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śatāvartaḥ",
-        "gloss": "Sata means \"hundred\", and here it is used as \"innumerable\"",
+        "gloss": "The one of innumerable manifestations",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9432,7 +9432,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "padmanābho 'ravindākṣaḥ padmagarbhaḥ śarīrabhṛt maharddhir ṛddho vṛddhātmā mahākṣo garuḍadhvajaḥ",
-    "english": "{0:\"One who has the lotus in his navel\"}· {1:“One who has eyes as beautiful as the lotus”} · {2:\"One who is being meditated upon in the centre of the lotus-of-the-heart.\"}· {3:\"One who sustains or nourishes all bodies\"}· {4:“One who has great riddhi, meaning, prosperity and power”} · {5:“One who has expanded Himself to be the universe.\"}· {6:\"The ancient Self.\"}· {7:\"The Great-eyed\", meaning} · {8:One who has the eagle (Garuda) as his insignia on his flag}",
+    "english": "{0:\"One who has the lotus in his navel\"}· {1:“One who has eyes as beautiful as the lotus”} · {2:\"One who is being meditated upon in the centre of the lotus-of-the-heart.\"}· {3:\"One who sustains or nourishes all bodies\"}· {4:The one of magnificent prosperity and power} · {5:“One who has expanded Himself to be the universe.\"}· {6:\"The ancient Self.\"}· {7:The great-eyed one} · {8:One who has the eagle (Garuda) as his insignia on his flag}",
     "words": [
       {
         "roman": "padmanābho",
@@ -9460,7 +9460,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maharddhir",
-        "gloss": "“One who has great riddhi, meaning, prosperity and power”",
+        "gloss": "The one of magnificent prosperity and power",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9478,7 +9478,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahākṣo",
-        "gloss": "\"The Great-eyed\", meaning",
+        "gloss": "The great-eyed one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9545,7 +9545,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "atulaḥ śarabho bhīmaḥ samayajño havirhariḥ sarvalakṣaṇalakṣaṇyo lakṣmīvān samitiñjayaḥ",
-    "english": "{0:\"Incomparable.\"}· {1:“One who dwells and shines forth through the bodies.”} · {2:\"The All-inspiring, the Terrible,\" meaning} · {3:“Knower of all six systems of philosophy,\" or it can mean \"One who knows the exact time (samaya) for creation, preservation and destruction.\"}· {4:\"The receiver of all oblation.\"}· {5:“Known through all methods of proofs,\" meaning \"He is the One Self that is ultimately proved by all scientific investiga-tions and philosophical enquiries.\"}· {6:The consort of Lakṣmī} · {7:\"Ever — Victorious.\"}",
+    "english": "{0:\"Incomparable.\"}· {1:“One who dwells and shines forth through the bodies.”} · {2:The formidable and awe-inspiring one} · {3:The knower of every philosophy and the right time for every act} · {4:\"The receiver of all oblation.\"}· {5:The one indicated by every valid mark and method of knowledge} · {6:The consort of Lakṣmī} · {7:\"Ever — Victorious.\"}",
     "words": [
       {
         "roman": "atulaḥ",
@@ -9561,13 +9561,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhīmaḥ",
-        "gloss": "\"The All-inspiring, the Terrible,\" meaning",
+        "gloss": "The formidable and awe-inspiring one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "samayajño",
-        "gloss": "“Knower of all six systems of philosophy,\" or it can mean \"One who knows the exact time (samaya) for creation, preservation and destruction.\"",
+        "gloss": "The knower of every philosophy and the right time for every act",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9579,7 +9579,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarvalakṣaṇalakṣaṇyo",
-        "gloss": "“Known through all methods of proofs,\" meaning \"He is the One Self that is ultimately proved by all scientific investiga-tions and philosophical enquiries.\"",
+        "gloss": "The one indicated by every valid mark and method of knowledge",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9654,17 +9654,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vikṣaro rohito mārgo hetur dāmodaraḥ sahaḥ mahīdharo mahābhāgo vegavān amitāśanaḥ",
-    "english": "{0:kṣaraḥ means \"decaying,\" \"that which is perishing\", and so vikṣaraḥ means \"Imperishable\"}· {1:The term 'Rohita' means fish, and this name has come to indicate Lord Viṣṇu because of His first incarnation as the Fish} · {2:\"The Path.\"}· {3:\"The Cause\"}· {4:This term has come to indicate the Lord because, He is One who is known through a mind which is purified (Udara) by means of self-control (dama) and such other qualities} · {5:\"All enduring\"}· {6:\"The Supporter or the Bearer of the Earth\"}· {7:He who has extreme beauty in all His limbs, or He who is ever fortunate, or He who gets the greatest share (Bhaaga) in every yajña} · {8:\"He who is swift\"; One who is the fastest in reaching the devotee the moment his loving heart remembers Him} · {9:\"Of endless appetite.\"}",
+    "english": "{0:The imperishable one} · {1:The red-hued Fish incarnation} · {2:\"The Path.\"}· {3:\"The Cause\"}· {4:The one known through self-control and a purified mind} · {5:\"All enduring\"}· {6:\"The Supporter or the Bearer of the Earth\"}· {7:He who has extreme beauty in all His limbs, or He who is ever fortunate, or He who gets the greatest share (bhāga) in every yajña} · {8:\"He who is swift\"; One who is the fastest in reaching the devotee the moment his loving heart remembers Him} · {9:\"Of endless appetite.\"}",
     "words": [
       {
         "roman": "vikṣaro",
-        "gloss": "kṣaraḥ means \"decaying,\" \"that which is perishing\", and so vikṣaraḥ means \"Imperishable\"",
+        "gloss": "The imperishable one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rohito",
-        "gloss": "The term 'Rohita' means fish, and this name has come to indicate Lord Viṣṇu because of His first incarnation as the Fish",
+        "gloss": "The red-hued Fish incarnation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9682,7 +9682,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dāmodaraḥ",
-        "gloss": "This term has come to indicate the Lord because, He is One who is known through a mind which is purified (Udara) by means of self-control (dama) and such other qualities",
+        "gloss": "The one known through self-control and a purified mind",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9700,7 +9700,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahābhāgo",
-        "gloss": "He who has extreme beauty in all His limbs, or He who is ever fortunate, or He who gets the greatest share (Bhaaga) in every yajña",
+        "gloss": "He who has extreme beauty in all His limbs, or He who is ever fortunate, or He who gets the greatest share (bhāga) in every yajña",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9791,7 +9791,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udbhavaḥ , kṣobhaṇo devaḥ śrīgarbhaḥ parameśvaraḥ karaṇaṃ kāraṇaṃ kartā vikartā gahano guhaḥ",
-    "english": "{0:\"The Originator\"}· {1:\"The Agitator\"}· {2:One who revels is Deva} · {3:\"Containing all glories within: One in whom are all glories (Aisvarya)\"}· {4:The Supreme (Parama) Lord (Īśvara)} · {5:\"The Instrument.\"}· {6:\"The Cause.\"}· {7:\"The Doer\"}· {8:“One who creates the infinite varieties that constitute the universe.\"}· {9:“The Un-knowable”} · {10:\"One who dwells in the cave of the heart\" meaning \"One who is the very core of every living creature.\"}",
+    "english": "{0:\"The Originator\"}· {1:\"The Agitator\"}· {2:One who revels is Deva} · {3:\"Containing all glories within: One in whom are all glories (Aisvarya)\"}· {4:The Supreme (Parama) Lord (Īśvara)} · {5:\"The Instrument.\"}· {6:\"The Cause.\"}· {7:\"The Doer\"}· {8:“One who creates the infinite varieties that constitute the universe.\"}· {9:“The Un-knowable”} · {10:The one hidden in the cave of the heart}",
     "words": [
       {
         "roman": "udbhavaḥ",
@@ -9855,7 +9855,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "guhaḥ",
-        "gloss": "\"One who dwells in the cave of the heart\" meaning \"One who is the very core of every living creature.\"",
+        "gloss": "The one hidden in the cave of the heart",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -9923,7 +9923,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vyavasāyo vyavasthānaḥ saṃsthānaḥ sthānado dhruvaḥ pararddhiḥ paramaspaṣṭas tuṣṭaḥ puṣṭaḥ śubhekṣaṇaḥ",
-    "english": "{0:\"Resolute.\"}· {1:\"The Basis or the Substratum.\"}· {2:\"The Ultimate Authority, State or Goal.\"}· {3:\"One who confers the right abode.\"}· {4:\"The stable; the Firm.\"}· {5:“One who has Supreme Manifestations (ṛddhi)”} · {6:\"The extremely vivid.\"}· {7:\"The ever — Contented,\" meaning \"the One who is happy at the minimum offering of a devotee.\"}· {8:\"One who is ever-full.\"}· {9:“All auspicious gaze.”}",
+    "english": "{0:\"Resolute.\"}· {1:\"The Basis or the Substratum.\"}· {2:\"The Ultimate Authority, State or Goal.\"}· {3:\"One who confers the right abode.\"}· {4:\"The stable; the Firm.\"}· {5:“One who has Supreme Manifestations (ṛddhi)”} · {6:\"The extremely vivid.\"}· {7:The ever-contented one} · {8:\"One who is ever-full.\"}· {9:“All auspicious gaze.”}",
     "words": [
       {
         "roman": "vyavasāyo",
@@ -9969,7 +9969,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tuṣṭaḥ",
-        "gloss": "\"The ever — Contented,\" meaning \"the One who is happy at the minimum offering of a devotee.\"",
+        "gloss": "The ever-contented one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10061,7 +10061,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāmo virāmo virajo mārgo neyo nayo 'nayaḥ vīraḥ śaktimatāṃ śreṣṭho dharmo dharmaviduttamaḥ",
-    "english": "{0:That which revels in every form or that in which all yogins in their meditation revel} · {1:“He in whom the creatures rest; The Abode of perfect rest”, having reached which, there is no return into the realms of experiences} · {2:\"Passionless.\"}· {3:‘The path.’} · {4:\"The Guide\", the \"Conductor.\"}· {5:“One who leads.”} · {6:If the ego is led by the Lord (as Naya) to the Highest, then when once the Supreme State is reached, It has none to lead or guide It} · {7:\"The Valiant.\"}· {8:\"The best among those who have power.\"}· {9:This term is used in Hinduism in thousands of different shades that, to the early student, the meaning of this term is lost in confusion} · {10:“One who is the Highest among men of realisation.”}",
+    "english": "{0:That which revels in every form or that in which all yogins in their meditation revel} · {1:The abode of perfect rest} · {2:\"Passionless.\"}· {3:‘The path.’} · {4:\"The Guide\", the \"Conductor.\"}· {5:“One who leads.”} · {6:If the ego is led by the Lord (as Naya) to the Highest, then when once the Supreme State is reached, It has none to lead or guide It} · {7:\"The Valiant.\"}· {8:\"The best among those who have power.\"}· {9:Dharma itself, the law that upholds} · {10:“One who is the Highest among men of realisation.”}",
     "words": [
       {
         "roman": "rāmo",
@@ -10071,7 +10071,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "virāmo",
-        "gloss": "“He in whom the creatures rest; The Abode of perfect rest”, having reached which, there is no return into the realms of experiences",
+        "gloss": "The abode of perfect rest",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10119,7 +10119,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmo",
-        "gloss": "This term is used in Hinduism in thousands of different shades that, to the early student, the meaning of this term is lost in confusion",
+        "gloss": "Dharma itself, the law that upholds",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10199,7 +10199,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vaikuṇṭhaḥ puruṣaḥ prāṇaḥ prāṇadaḥ praṇavaḥ pṛthuḥ hiraṇyagarbhaḥ śatrughno vyāpto vāyur adhokṣajaḥ",
-    "english": "{0:“One who prevents men from going astray into wrong paths (Vikunthah).\"}· {1:\"One who dwells in all bodies (Puris).\"}· {2:One who in the form of 'prāṇa' exists in the body, propels all sense-organs to act in their appointed fields} · {3:This can mean \"One who gives 'prāṇa' or as \"One who takes away 'prāṇa', because, the root 'da' has both the meanings, 'to give' and 'to break.'}· {4:“That which is praised or adored by even the gods.”} · {5:“The expanded.”} · {6:It is a term used in Vedānta for the \"Creator.\"}· {7:\"The destroyer of the enemies.\"}· {8:\"The Pervader.\"}· {9:“One who in the form of the atmospheric air, sustains all life everywhere.\"}· {10:One who is not available for the powers of the sense organs to perceive}",
+    "english": "{0:“One who prevents men from going astray into wrong paths (Vikunthah).\"}· {1:\"One who dwells in all bodies (Puris).\"}· {2:One who in the form of 'prāṇa' exists in the body, propels all sense-organs to act in their appointed fields} · {3:The giver and withdrawer of life-breath} · {4:“That which is praised or adored by even the gods.”} · {5:“The expanded.”} · {6:The golden womb, the cosmic creator} · {7:\"The destroyer of the enemies.\"}· {8:\"The Pervader.\"}· {9:“One who in the form of the atmospheric air, sustains all life everywhere.\"}· {10:One who is not available for the powers of the sense organs to perceive}",
     "words": [
       {
         "roman": "vaikuṇṭhaḥ",
@@ -10221,7 +10221,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prāṇadaḥ",
-        "gloss": "This can mean \"One who gives 'prāṇa' or as \"One who takes away 'prāṇa', because, the root 'da' has both the meanings, 'to give' and 'to break.'",
+        "gloss": "The giver and withdrawer of life-breath",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10239,7 +10239,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hiraṇyagarbhaḥ",
-        "gloss": "It is a term used in Vedānta for the \"Creator.\"",
+        "gloss": "The golden womb, the cosmic creator",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10336,17 +10336,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ṛtuḥ sudarśanaḥ kālaḥ parameṣṭhī parigrahaḥ ugraḥ saṃvatsaro dakṣo viśrāmo viśvadakṣiṇaḥ",
-    "english": "{0:\"Seasons\"—Here it means, the Lord of Time, who governs the seasons} · {1:“One who is easy to be perceived if the seeker has sufficient devotion,” or “He whose meeting is auspicious inasmuch as it removes the seeker's worldly worries.\"}· {2:\"One who measures the merits and defects in each individual, and who doles out the appropriate results.\"}· {3:\"One who is centred in His own infinite glory.\"}· {4:\"The Receiver.\"}· {5:\"The Terrible.\"}· {6:“The Year,” which is the abode of all living creatures} · {7:\"The Smart.\"}· {8:\"The resting place;\" \"the Quiet.\"}· {9:“The most skilful and efficient.”}",
+    "english": "{0:Time as the ordered cycle of seasons} · {1:The one whose auspicious vision is readily gained through devotion} · {2:\"One who measures the merits and defects in each individual, and who doles out the appropriate results.\"}· {3:\"One who is centred in His own infinite glory.\"}· {4:\"The Receiver.\"}· {5:\"The Terrible.\"}· {6:“The Year,” which is the abode of all living creatures} · {7:\"The Smart.\"}· {8:\"The resting place;\" \"the Quiet.\"}· {9:“The most skilful and efficient.”}",
     "words": [
       {
         "roman": "ṛtuḥ",
-        "gloss": "\"Seasons\"—Here it means, the Lord of Time, who governs the seasons",
+        "gloss": "Time as the ordered cycle of seasons",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sudarśanaḥ",
-        "gloss": "“One who is easy to be perceived if the seeker has sufficient devotion,” or “He whose meeting is auspicious inasmuch as it removes the seeker's worldly worries.\"",
+        "gloss": "The one whose auspicious vision is readily gained through devotion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10566,7 +10566,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anirviṇṇaḥ sthaviṣṭho 'bhūr dharmayūpo mahāmakhaḥ nakṣatranemir nakṣatrī kṣamaḥ kṣāmaḥ samīhanaḥ",
-    "english": "{0:One who has no nirveda} · {1:One who is supremely gross} · {2:One who has no birth, or the one, having realised whom, the seeker will no more have births} · {3:Yoopah is the name given to the post to which the sacrificial animal is tied in a vaaga} · {4:The Great Sacrificer} · {5:The Nave of the stars} · {6:One who is the Lord of the stars} · {7:One who is supremely efficient in all undertakings} · {8:One who ever remains without any scarcity—(kshaama)} · {9:One whose desires are auspicious}",
+    "english": "{0:One who has no nirveda} · {1:One who is supremely gross} · {2:One who has no birth, or the one, having realised whom, the seeker will no more have births} · {3:yūpaḥ is the name given to the post to which the sacrificial animal is tied in a vaaga} · {4:The Great Sacrificer} · {5:The Nave of the stars} · {6:One who is the Lord of the stars} · {7:One who is supremely efficient in all undertakings} · {8:One who ever remains without any scarcity—(kṣāma)} · {9:One whose desires are auspicious}",
     "words": [
       {
         "roman": "anirviṇṇaḥ",
@@ -10588,7 +10588,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmayūpo",
-        "gloss": "Yoopah is the name given to the post to which the sacrificial animal is tied in a vaaga",
+        "gloss": "yūpaḥ is the name given to the post to which the sacrificial animal is tied in a vaaga",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10618,7 +10618,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṣāmaḥ",
-        "gloss": "One who ever remains without any scarcity—(kshaama)",
+        "gloss": "One who ever remains without any scarcity—(kṣāma)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11067,7 +11067,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dharmagub dharmakṛd dharmī sad asat kṣaram akṣaram avijñātā sahasrāṃśur vidhātā kṛtalakṣaṇaḥ",
-    "english": "{0:One who protects the dharma} · {1:One who acts dharma} · {2:The Supporter of dharma; meaning the very Seat of all dharma} · {3:The Existence in all things and beings is the same ever, and it is All-pervading} · {4:The Conditioned; Limited; the One who appears at this moment as the limited, conditioned, and therefore confined only to the world of plurality} · {5:The Perishing} · {6:Imperishable} · {7:The Non-knower} · {8:The thousand-rayed} · {9:All-supporter} · {10:One who is famous because of six qualities, such as glory, righteousness, fame, wealth, knowledge and detachment}",
+    "english": "{0:One who protects the dharma} · {1:One who acts dharma} · {2:The upholder in whom dharma rests} · {3:The Existence in all things and beings is the same ever, and it is All-pervading} · {4:The conditioned one} · {5:The Perishing} · {6:Imperishable} · {7:The Non-knower} · {8:The thousand-rayed} · {9:All-supporter} · {10:One who is famous because of six qualities, such as glory, righteousness, fame, wealth, knowledge and detachment}",
     "words": [
       {
         "roman": "dharmagub",
@@ -11083,7 +11083,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmī",
-        "gloss": "The Supporter of dharma; meaning the very Seat of all dharma",
+        "gloss": "The upholder in whom dharma rests",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11095,7 +11095,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "asat",
-        "gloss": "The Conditioned; Limited; the One who appears at this moment as the limited, conditioned, and therefore confined only to the world of plurality",
+        "gloss": "The conditioned one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11295,7 +11295,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "uttaro gopatir goptā jñānagamyaḥ purātanaḥ śarīrabhūtabhṛd bhoktā kapīndro bhūridakṣiṇaḥ",
-    "english": "{0:One who helps to lift us from (uttaraḥ) the ocean of Samsar} · {1:The shepherd—As one who played the part of a cow-herd in His Kṛṣṇa-incarnation} · {2:The protector} · {3:The One who is to be attained only through the subtle perception of jñāna} · {4:He who was even before Time} · {5:One who nurses and nourishes the very element from which the bodies are constituted} · {6:The Enjoyer or the Protector} · {7:One who is the Lord of the Monkeys-Śrī Ramachandraji} · {8:He who gives away large gifts (Dakshinaa), as presents distributed at the end of the Sacrifices}",
+    "english": "{0:One who helps to lift us from (uttaraḥ) the ocean of Samsar} · {1:The shepherd—As one who played the part of a cow-herd in His Kṛṣṇa-incarnation} · {2:The protector} · {3:The One who is to be attained only through the subtle perception of jñāna} · {4:He who was even before Time} · {5:One who nurses and nourishes the very element from which the bodies are constituted} · {6:The Enjoyer or the Protector} · {7:One who is the Lord of the Monkeys-Śrī Ramachandraji} · {8:He who gives away large gifts (dakṣiṇā), as presents distributed at the end of the Sacrifices}",
     "words": [
       {
         "roman": "uttaro",
@@ -11347,7 +11347,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhūridakṣiṇaḥ",
-        "gloss": "He who gives away large gifts (Dakshinaa), as presents distributed at the end of the Sacrifices",
+        "gloss": "He who gives away large gifts (dakṣiṇā), as presents distributed at the end of the Sacrifices",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -11410,7 +11410,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "somapo 'mṛtapaḥ somaḥ purujit purusattamaḥ vinayo jayaḥ satyasandho dāśārhaḥ sātvatāmpatiḥ",
-    "english": "{0:One who drinks the Soma-juice in the yajñas, in the form of the deity that has been invoked by the householder} · {1:One who drinks the nectar} · {2:One who in the form of the moonlight (Soma) nourishes all the plant-kingdom with their respective essential sap} · {3:One who has won over numerous enemies} · {4:One who is Greater among the great} · {5:In direct meaning, of course, it means \"He who shows the supreme humility.\"}· {6:The Victorious} · {7:Of truthful resolution (saṅkalpa)} · {8:It is a name of Lord Kṛṣṇa since He was born in the Dasaarha race (Yaadava-kula)} · {9:The Lord of the Saatvat-people}",
+    "english": "{0:One who drinks the Soma-juice in the yajñas, in the form of the deity that has been invoked by the householder} · {1:One who drinks the nectar} · {2:One who in the form of the moonlight (Soma) nourishes all the plant-kingdom with their respective essential sap} · {3:One who has won over numerous enemies} · {4:One who is Greater among the great} · {5:The one of supreme humility} · {6:The Victorious} · {7:Of truthful resolution (saṅkalpa)} · {8:Kṛṣṇa of the Dāśārha lineage} · {9:The Lord of the Sātvata-people}",
     "words": [
       {
         "roman": "somapo",
@@ -11444,7 +11444,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vinayo",
-        "gloss": "In direct meaning, of course, it means \"He who shows the supreme humility.\"",
+        "gloss": "The one of supreme humility",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11462,13 +11462,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "dāśārhaḥ",
-        "gloss": "It is a name of Lord Kṛṣṇa since He was born in the Dasaarha race (Yaadava-kula)",
+        "gloss": "Kṛṣṇa of the Dāśārha lineage",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sātvatāmpatiḥ",
-        "gloss": "The Lord of the Saatvat-people",
+        "gloss": "The Lord of the Sātvata-people",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -11520,7 +11520,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvo vinayitā sākṣī mukundo 'mitavikramaḥ ambhonidhir anantātmā mahodadhiśayo 'ntakaḥ",
-    "english": "{0:One who remains as the limited-ego (jīvaḥ), who in its sense of separateness comes to experience the endless joys and sorrows in the fields of life} · {1:The Witness of modesty} · {2:One who gives liberation} · {3:Of immeasurable Prowess or One whose step (Vikramah) is immeasurable (Amita)} · {4:The direct meaning of the word is \"ocean\"}· {5:The Infinite Self} · {6:One who rests on the great ocean} · {7:The Death}",
+    "english": "{0:One who remains as the limited-ego (jīvaḥ), who in its sense of separateness comes to experience the endless joys and sorrows in the fields of life} · {1:The Witness of modesty} · {2:One who gives liberation} · {3:Of immeasurable Prowess or One whose step (Vikramah) is immeasurable (Amita)} · {4:The ocean} · {5:The Infinite Self} · {6:One who rests on the great ocean} · {7:The Death}",
     "words": [
       {
         "roman": "jīvo",
@@ -11548,7 +11548,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambhonidhir",
-        "gloss": "The direct meaning of the word is \"ocean\"",
+        "gloss": "The ocean",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11855,7 +11855,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mahāvarāho govindaḥ suṣeṇaḥ kanakāṅgadī guhyo gabhīro gahano guptaś cakragadādharaḥ",
-    "english": "{0:One who had manifested as the Great Boar} · {1:One who is to be known (Vid) through the declarations of the Vedānta (Go)} · {2:He who has a charming army} · {3:The bright-as-gold armlets} · {4:The mysterious; the Profound} · {5:“The Unfathomable.”} · {6:He is impenetrable; Imponderable} · {7:The Well-concealed} · {8:One who is the bearer of the Discus and the Mace}",
+    "english": "{0:One who had manifested as the Great Boar} · {1:The one known through the declarations of the Veda} · {2:He who has a charming army} · {3:The bright-as-gold armlets} · {4:The mysterious; the Profound} · {5:“The Unfathomable.”} · {6:He is impenetrable; Imponderable} · {7:The Well-concealed} · {8:One who is the bearer of the Discus and the Mace}",
     "words": [
       {
         "roman": "mahāvarāho",
@@ -11865,7 +11865,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "govindaḥ",
-        "gloss": "One who is to be known (Vid) through the declarations of the Vedānta (Go)",
+        "gloss": "The one known through the declarations of the Veda",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11981,7 +11981,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vedhāḥ svāṅgo 'jitaḥ kṛṣṇo dṛḍhaḥ saṅkarṣaṇo'cyutaḥ varuṇo vāruṇo vṛkṣaḥ puṣkarākṣo mahāmanāḥ",
-    "english": "{0:One who is the Creator of the whole universe, the Supreme who is expressing Himself for the apparent function of creating the world of plurality} · {1:It is commented upon by some, as one who is beautiful, who has well proportioned limbs} · {2:One who is vanquished by none—unconquered—and therefore, the unconquerable in any of His incarnations} · {3:One who incarnated in the Yaadava tribe as the son of Vasudeva and Devakī} · {4:\"The Firm.\"}· {5:During the great dissolution of the entire universe of names and forms, He, being the one who merges the entire plurality into His own essence—He is called 'Sankarshanah.'}· {6:Since, in the evening, the sun reaches the western horizon (Varuna — Dik), the sun is called varuṇaḥ} · {7:The son of Varunah is called vāruṇaḥ} · {8:The saṃsāra — Vriksha—the Tree of Life} · {9:One who has eyes (Aksha) as beautiful as the lotus flowers (Pushkara); the descriptive epithet: 'Lotus-eyed.'}· {10:“One who has a great mind.\"}",
+    "english": "{0:One who is the Creator of the whole universe, the Supreme who is expressing Himself for the apparent function of creating the world of plurality} · {1:The beautiful one whose limbs are perfectly proportioned} · {2:One who is vanquished by none—unconquered—and therefore, the unconquerable in any of His incarnations} · {3:One who incarnated in the Yādava tribe as the son of Vasudeva and Devakī} · {4:\"The Firm.\"}· {5:The one who draws all into himself yet never falls} · {6:The evening sun at the western horizon} · {7:The son of Varuṇa} · {8:The saṃsāra — Vriksha—the Tree of Life} · {9:One who has eyes (Aksha) as beautiful as the lotus flowers (Pushkara); the descriptive epithet: 'Lotus-eyed.'}· {10:“One who has a great mind.\"}",
     "words": [
       {
         "roman": "vedhāḥ",
@@ -11991,7 +11991,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "svāṅgo",
-        "gloss": "It is commented upon by some, as one who is beautiful, who has well proportioned limbs",
+        "gloss": "The beautiful one whose limbs are perfectly proportioned",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12003,7 +12003,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇo",
-        "gloss": "One who incarnated in the Yaadava tribe as the son of Vasudeva and Devakī",
+        "gloss": "One who incarnated in the Yādava tribe as the son of Vasudeva and Devakī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12015,19 +12015,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṅkarṣaṇo'cyutaḥ",
-        "gloss": "During the great dissolution of the entire universe of names and forms, He, being the one who merges the entire plurality into His own essence—He is called 'Sankarshanah.'",
+        "gloss": "The one who draws all into himself yet never falls",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "varuṇo",
-        "gloss": "Since, in the evening, the sun reaches the western horizon (Varuna — Dik), the sun is called varuṇaḥ",
+        "gloss": "The evening sun at the western horizon",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vāruṇo",
-        "gloss": "The son of Varunah is called vāruṇaḥ",
+        "gloss": "The son of Varuṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12102,11 +12102,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhagavān bhagahā ''nandī vanamālī halāyudhaḥ ādityo jyotirādityaḥ sahiṣṇur gatisattamaḥ",
-    "english": "{0:One who has all the Six Great Glories—Wealth, Power, dharma, Fame, Character, Knowledge and Dispassion—is called bhagavān} · {1:One who destroys, during the deluge, the Six Glories just mentioned} · {2:\"The one who gives delight.\"}· {3:One who wears always a garland of leaves and flowers named Vaijavantee} · {4:“One who has the plough as His weapon.\"}· {5:One who was born as the son of Aditi and Kasyapa as Vāmana, who begged of Emperor Bali three steps of ground and got all the three worlds} · {6:\"The Supreme who is the resplendence in the Sun.\"}· {7:One who calmly endures the pairs-of-opposites} · {8:The ultimate refuge for all devotees; the best (Highest) destination and at once the noblest path}",
+    "english": "{0:The possessor of wealth, power, dharma, fame, character, knowledge, and detachment} · {1:One who destroys, during the deluge, the Six Glories just mentioned} · {2:\"The one who gives delight.\"}· {3:One who wears always a garland of leaves and flowers named Vaijayantī} · {4:“One who has the plough as His weapon.\"}· {5:The son of Aditi} · {6:\"The Supreme who is the resplendence in the Sun.\"}· {7:One who calmly endures the pairs-of-opposites} · {8:The ultimate refuge for all devotees; the best (Highest) destination and at once the noblest path}",
     "words": [
       {
         "roman": "bhagavān",
-        "gloss": "One who has all the Six Great Glories—Wealth, Power, dharma, Fame, Character, Knowledge and Dispassion—is called bhagavān",
+        "gloss": "The possessor of wealth, power, dharma, fame, character, knowledge, and detachment",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12124,7 +12124,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vanamālī",
-        "gloss": "One who wears always a garland of leaves and flowers named Vaijavantee",
+        "gloss": "One who wears always a garland of leaves and flowers named Vaijayantī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12136,7 +12136,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ādityo",
-        "gloss": "One who was born as the son of Aditi and Kasyapa as Vāmana, who begged of Emperor Bali three steps of ground and got all the three worlds",
+        "gloss": "The son of Aditi",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12204,17 +12204,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sudhanvā khaṇḍaparaśur dāruṇo draviṇapradaḥ divaspṛk sarvadṛgvyāso vācaspatirayonijaḥ",
-    "english": "{0:One who has His glorious bow-called \"Śārṅga.\"}· {1:One who has the axe-weapon—called \"Parasu.\"}· {2:\"The one who is merciless towards the unrighteous.\"}· {3:One who lavishly gives wealth asked for by His devotees} · {4:\"The Sky-reaching.\"}· {5:When considered as one word it means: \"One who creates many omniscient men of wisdom.\"}· {6:One who is a master of all knowledge (vidyās) and who is unborn through a mother's womb}",
+    "english": "{0:The bearer of the splendid bow Śārṅga} · {1:The bearer of the battle-axe} · {2:\"The one who is merciless towards the unrighteous.\"}· {3:One who lavishly gives wealth asked for by His devotees} · {4:\"The Sky-reaching.\"}· {5:The all-seeing Vyāsa who arranged the Vedas} · {6:One who is a master of all knowledge (vidyās) and who is unborn through a mother's womb}",
     "words": [
       {
         "roman": "sudhanvā",
-        "gloss": "One who has His glorious bow-called \"Śārṅga.\"",
+        "gloss": "The bearer of the splendid bow Śārṅga",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "khaṇḍaparaśur",
-        "gloss": "One who has the axe-weapon—called \"Parasu.\"",
+        "gloss": "The bearer of the battle-axe",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12238,7 +12238,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarvadṛgvyāso",
-        "gloss": "When considered as one word it means: \"One who creates many omniscient men of wisdom.\"",
+        "gloss": "The all-seeing Vyāsa who arranged the Vedas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12324,11 +12324,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "trisāmā sāmagaḥ sāma nirvāṇaṃ bheṣajaṃ bhiṣak saṃnyāsakṛc chamaḥ śānto niṣṭhā śāntiḥ parāyaṇam",
-    "english": "{0:\"One who has been glorified by the three Saamas.\"}· {1:\"The singer of the Sāman songs.\"}· {2:The Lord is the sāma Veda} · {3:The Lord is of the very nature of \"Ever-liberated, Ever-free.\"}· {4:‘bheṣajaṃ’ means ‘medicine.'}· {5:One who is the 'Physician,' who is the 'cure' for the disease of Samsar} · {6:Lord is the institutor of the fourth stage of life (Aasrama) called 'saṃnyāsa' which is meant for those who walk the path of total renunciation} · {7:\"The Calm.\"}· {8:One who is quiet within, as in Him the sense-organs are perfectly controlled} · {9:The Abode of all beings, not only while living, but during the Pralaya (deluge)} · {10:\"One whose very nature is Peace.\"}· {11:The Supreme Goal is Nārāyaṇa}",
+    "english": "{0:\"One who has been glorified by the three Sāmans.\"}· {1:\"The singer of the Sāman songs.\"}· {2:The Lord is the sāma Veda} · {3:The Lord is of the very nature of \"Ever-liberated, Ever-free.\"}· {4:The medicine for worldly suffering} · {5:One who is the 'Physician,' who is the 'cure' for the disease of Samsar} · {6:The institutor of renunciation} · {7:\"The Calm.\"}· {8:One who is quiet within, as in Him the sense-organs are perfectly controlled} · {9:The Abode of all beings, not only while living, but during the Pralaya (deluge)} · {10:\"One whose very nature is Peace.\"}· {11:The Supreme Goal is Nārāyaṇa}",
     "words": [
       {
         "roman": "trisāmā",
-        "gloss": "\"One who has been glorified by the three Saamas.\"",
+        "gloss": "\"One who has been glorified by the three Sāmans.\"",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12352,7 +12352,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bheṣajaṃ",
-        "gloss": "medicine; remedy",
+        "gloss": "The medicine for worldly suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12364,7 +12364,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṃnyāsakṛc",
-        "gloss": "Lord is the institutor of the fourth stage of life (Aasrama) called 'saṃnyāsa' which is meant for those who walk the path of total renunciation",
+        "gloss": "The institutor of renunciation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12462,7 +12462,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śubhāṅgaḥ śāntidaḥ sraṣṭā kumudaḥ kuvaleśayaḥ gohito gopatir goptā vṛṣabhākṣo vṛṣapriyaḥ",
-    "english": "{0:One who has the most beautiful form} · {1:Nārāyaṇa dispenses that Peace which puts an end to likes and dislikes (Raaga — Dvesha)} · {2:\"The Creator of all beings.\"}· {3:The reveller in the Earth} · {4:He who reclines in the waters (Kuvala)} · {5:One who does the Cow-welfare-work, always} · {6:\"The husband of the Earth.\"}· {7:The root Gup has two meanings: to protect; to veil} · {8:One whose eyes rain fulfilment of all desires of His devotees} · {9:Viṣṇu delights in dharma}",
+    "english": "{0:One who has the most beautiful form} · {1:Nārāyaṇa dispenses that Peace which puts an end to likes and dislikes (rāga — dveṣa)} · {2:\"The Creator of all beings.\"}· {3:The reveller in the Earth} · {4:He who reclines in the waters (Kuvala)} · {5:One who does the Cow-welfare-work, always} · {6:\"The husband of the Earth.\"}· {7:The protector who also veils himself} · {8:One whose eyes rain fulfilment of all desires of His devotees} · {9:Viṣṇu delights in dharma}",
     "words": [
       {
         "roman": "śubhāṅgaḥ",
@@ -12472,7 +12472,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śāntidaḥ",
-        "gloss": "Nārāyaṇa dispenses that Peace which puts an end to likes and dislikes (Raaga — Dvesha)",
+        "gloss": "Nārāyaṇa dispenses that Peace which puts an end to likes and dislikes (rāga — dveṣa)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12508,7 +12508,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "goptā",
-        "gloss": "The root Gup has two meanings: to protect; to veil",
+        "gloss": "The protector who also veils himself",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12921,7 +12921,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udīrṇaḥ sarvataścakṣur anīśaḥ śāśvatasthiraḥ bhūśayo bhūṣaṇo bhūtir viśokaḥ śokanāśanaḥ",
-    "english": "{0:“The Great Transcendent.”He is the Infinite beyond all finitude, beyond all limitations and change, and therefore, beyond decay} · {1:\"One Who has eyes everywhere.\"}· {2:\"One Who has none to lord over Him.\"}· {3:\"One Who is ever Eternal and Stable\"-never changing, thus permanent (Eternal) and ever-the-same (Stable)} · {4:\"Resting on the Earth\" is the word-meaning of this term, so it may signify One Who rested on the shores of the ocean, on His Way to Lankareferring to Śrī Ramachandraji} · {5:One Who adorns the world: physically with the infinite beauties of His Creation} · {6:One Who is the Pure “BE”-ness or Existence} · {7:Nārāyaṇa is sorrow-less; griefless} · {8:The destroyer of all sorrows for His devotees}",
+    "english": "{0:“The Great Transcendent.”He is the Infinite beyond all finitude, beyond all limitations and change, and therefore, beyond decay} · {1:\"One Who has eyes everywhere.\"}· {2:\"One Who has none to lord over Him.\"}· {3:\"One Who is ever Eternal and Stable\"-never changing, thus permanent (Eternal) and ever-the-same (Stable)} · {4:Rāma resting upon the earth beside the ocean} · {5:One Who adorns the world: physically with the infinite beauties of His Creation} · {6:One Who is the Pure “BE”-ness or Existence} · {7:Nārāyaṇa is sorrow-less; griefless} · {8:The destroyer of all sorrows for His devotees}",
     "words": [
       {
         "roman": "udīrṇaḥ",
@@ -12949,7 +12949,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhūśayo",
-        "gloss": "\"Resting on the Earth\" is the word-meaning of this term, so it may signify One Who rested on the shores of the ocean, on His Way to Lankareferring to Śrī Ramachandraji",
+        "gloss": "Rāma resting upon the earth beside the ocean",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13144,7 +13144,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kālaneminihā vīraḥ śauriḥ śūrajaneśvaraḥ trilokātmā trilokeśaḥ keśavaḥ keśihā hariḥ",
-    "english": "{0:The slayer of the Asura, kālanemi} · {1:\"The Heroic Victor.\"}· {2:Born in the Soorasena-clan, in Jagannaath—which, in the Purāṇas, is called the Utkala country} · {3:“The Lord of the valiant.”} · {4:\"The Reality, the Self of the three worlds.\"}· {5:\"The Lord of the three-worlds.\"}· {6:Generally it is meant to describe Lord Kṛṣṇa as \"One Who has long hairs.\"}· {7:One Who destroyed the Asura called Kesi} · {8:The Lord is called \"The Destroyer.\"}",
+    "english": "{0:The slayer of the Asura, kālanemi} · {1:\"The Heroic Victor.\"}· {2:Kṛṣṇa of the Śūrasena clan} · {3:“The Lord of the valiant.”} · {4:\"The Reality, the Self of the three worlds.\"}· {5:\"The Lord of the three-worlds.\"}· {6:The long-haired Kṛṣṇa} · {7:The slayer of the demon Keśī} · {8:The destroyer who removes sorrow and sin}",
     "words": [
       {
         "roman": "kālaneminihā",
@@ -13160,7 +13160,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śauriḥ",
-        "gloss": "Born in the Soorasena-clan, in Jagannaath—which, in the Purāṇas, is called the Utkala country",
+        "gloss": "Kṛṣṇa of the Śūrasena clan",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13184,19 +13184,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "keśavaḥ",
-        "gloss": "Generally it is meant to describe Lord Kṛṣṇa as \"One Who has long hairs.\"",
+        "gloss": "The long-haired Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "keśihā",
-        "gloss": "One Who destroyed the Asura called Kesi",
+        "gloss": "The slayer of the demon Keśī",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hariḥ",
-        "gloss": "The Lord is called \"The Destroyer.\"",
+        "gloss": "The destroyer who removes sorrow and sin",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -13254,7 +13254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāmadevaḥ kāmapālaḥ kāmī kāntaḥ kṛtāgamaḥ anirdeśyavapur viṣṇur vīro 'nanto dhanañjayaḥ",
-    "english": "{0:“The Beloved Lord.”} · {1:\"The Fulfiller of Desires of all His true devotees.\"}· {2:One who has fulfilled all His desires} · {3:“Of Enchanting — Form;” “Supremely — Handsome;” the “Beauty of Beauty itself.”} · {4:The author of the Scriptures (Aagamas)} · {5:“Of Indescribable Form;” “Of Indefinable Nature.”} · {6:\"All — Pervading.\"}· {7:\"The Valiant;\" \"The Courageous— the One of heroic exploits.\"}· {8:\"Infinite; Endless.\"}· {9:One Who had gained through his conquest and his prowess vast wealth for the enrichment of his country}",
+    "english": "{0:“The Beloved Lord.”} · {1:\"The Fulfiller of Desires of all His true devotees.\"}· {2:One who has fulfilled all His desires} · {3:“Of Enchanting — Form;” “Supremely — Handsome;” the “Beauty of Beauty itself.”} · {4:The author of the Scriptures (Āgamas)} · {5:“Of Indescribable Form;” “Of Indefinable Nature.”} · {6:\"All — Pervading.\"}· {7:\"The Valiant;\" \"The Courageous— the One of heroic exploits.\"}· {8:\"Infinite; Endless.\"}· {9:One Who had gained through his conquest and his prowess vast wealth for the enrichment of his country}",
     "words": [
       {
         "roman": "kāmadevaḥ",
@@ -13282,7 +13282,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛtāgamaḥ",
-        "gloss": "The author of the Scriptures (Aagamas)",
+        "gloss": "The author of the Scriptures (Āgamas)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13385,7 +13385,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "brahmaṇyo brahmakṛd brahmā brahma brahmavivardhanaḥ brahmavid brāhmaṇo brahmī brahmajño brāhmaṇapriyaḥ",
-    "english": "{0:One Who is a great friend of Brahman} · {1:The One Who performs the Brahman—meaning the one who lives in Truth, who abides in Tapas, etc} · {2:\"Creator.\"}· {3:\"The Biggest, the Vastest, the All- Pervading.\"}· {4:“One Who increases the Brahman.\"}· {5:\"One Who knows Brahman.\"}· {6:One who has realised that the pluralistic world is a mere superimposition upon the Brahman caused by an error of judgement, and who experiences the Supreme Consciousness of the One Reality is a brāhmaṇaḥ} · {7:\"One Who is with Brahma.\"}· {8:One Who lives ever in Brahman, and so \"knows\" the nature of the Brahman} · {9:One Who is the beloved of and One Who is the lover of true men of full realisation, the Braahmanas}",
+    "english": "{0:One Who is a great friend of Brahman} · {1:The one who brings forth and lives in sacred knowledge} · {2:\"Creator.\"}· {3:\"The Biggest, the Vastest, the All- Pervading.\"}· {4:“One Who increases the Brahman.\"}· {5:\"One Who knows Brahman.\"}· {6:The knower of Brahman who sees unity beneath plurality} · {7:\"One Who is with Brahma.\"}· {8:One Who lives ever in Brahman, and so \"knows\" the nature of the Brahman} · {9:One Who is the beloved of and One Who is the lover of true men of full realisation, the brāhmaṇas}",
     "words": [
       {
         "roman": "brahmaṇyo",
@@ -13395,7 +13395,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmakṛd",
-        "gloss": "The One Who performs the Brahman—meaning the one who lives in Truth, who abides in Tapas, etc",
+        "gloss": "The one who brings forth and lives in sacred knowledge",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13425,7 +13425,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brāhmaṇo",
-        "gloss": "One who has realised that the pluralistic world is a mere superimposition upon the Brahman caused by an error of judgement, and who experiences the Supreme Consciousness of the One Reality is a brāhmaṇaḥ",
+        "gloss": "The knower of Brahman who sees unity beneath plurality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13443,7 +13443,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brāhmaṇapriyaḥ",
-        "gloss": "One Who is the beloved of and One Who is the lover of true men of full realisation, the Braahmanas",
+        "gloss": "One Who is the beloved of and One Who is the lover of true men of full realisation, the brāhmaṇas",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -13740,7 +13740,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "manojavas tīrthakaro vasuretā vasupradaḥ vasuprado vāsudevo vasur vasumanā haviḥ",
-    "english": "{0:Fleet as the mind is the Lord's movement} · {1:\"The Teacher of the Teerthas,\" The term, Teerthas, means vidyās} · {2:“He Whose Essence is Golden.”} · {3:\"The Free — Giver of Wealth.\"}· {4:Again, the same term as we read above, but here it means \"The Giver of Salvation.\"}· {5:“The son of Vasudeva,”Lord Kṛṣṇa} · {6:\"The Refuge for all.\"}· {7:One Who is attentive to, and, therefore, concerned with every object and being in this world: \"Omnipresent.\"}· {8:\"The Oblation.\"}",
+    "english": "{0:Fleet as the mind is the Lord's movement} · {1:The teacher who opens the sacred fords of knowledge} · {2:“He Whose Essence is Golden.”} · {3:\"The Free — Giver of Wealth.\"}· {4:The giver of liberation} · {5:“The son of Vasudeva,”Lord Kṛṣṇa} · {6:\"The Refuge for all.\"}· {7:One Who is attentive to, and, therefore, concerned with every object and being in this world: \"Omnipresent.\"}· {8:\"The Oblation.\"}",
     "words": [
       {
         "roman": "manojavas",
@@ -13750,7 +13750,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tīrthakaro",
-        "gloss": "\"The Teacher of the Teerthas,\" The term, Teerthas, means vidyās",
+        "gloss": "The teacher who opens the sacred fords of knowledge",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13768,7 +13768,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vasuprado",
-        "gloss": "Again, the same term as we read above, but here it means \"The Giver of Salvation.\"",
+        "gloss": "The giver of liberation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13859,7 +13859,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadgatiḥ satkṛtiḥ sattā sadbhūtiḥ satparāyaṇaḥ śūraseno yaduśreṣṭhaḥ sannivāsaḥ suyāmunaḥ",
-    "english": "{0:\"The goal of good and noble seekers.\"}· {1:\"One Who is full of Good Actions.\"}· {2:The Lord is the One without a second} · {3:\"One Who has Rich Glories.\"}· {4:The Supreme Goal for the \"Good\" who pursue the path of Truth} · {5:\"One Who has heroic and valiant armies.\"}· {6:“The Best among the Yadava clan.”} · {7:\"The Abode of the Good.\"}· {8:One Who is attended by the righteous Yaamunas—meaning Gopas who live on the Yamuna banks}",
+    "english": "{0:\"The goal of good and noble seekers.\"}· {1:\"One Who is full of Good Actions.\"}· {2:The Lord is the One without a second} · {3:\"One Who has Rich Glories.\"}· {4:The Supreme Goal for the \"Good\" who pursue the path of Truth} · {5:\"One Who has heroic and valiant armies.\"}· {6:“The Best among the Yadava clan.”} · {7:\"The Abode of the Good.\"}· {8:The one attended by the righteous people of the Yamunā}",
     "words": [
       {
         "roman": "sadgatiḥ",
@@ -13911,7 +13911,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "suyāmunaḥ",
-        "gloss": "One Who is attended by the righteous Yaamunas—meaning Gopas who live on the Yamuna banks",
+        "gloss": "The one attended by the righteous people of the Yamunā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -13968,7 +13968,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhūtāvāso vāsudevaḥ sarvāsunilayo 'nalaḥ darpahā darpado dṛpto durdharo aparājitaḥ",
-    "english": "{0:\"The very dwelling place of the Great Elements.\"}· {1:One Who envelops the world with His māyā-powers of veiling and agitations} · {2:\"The Abode of all Life — Energies.\"}· {3:“One Who is of Unlimited Wealth, Power and Glory.”} · {4:-\"The Destroyer of pride in evil-minded people.\"}· {5:“One Who gives pride to the righteous,”—meaning, One Who creates in the Good an anxious urge to be the best among the righteous and virtuous} · {6:One Who is ever drunk with the Infinite Bliss of His own essential nature as sat-cit-ānanda} · {7:The object of contemplation which is indeed very difficult to attain:—the One Who is realised by yogīs through arduous processes of intense, single-pointed contemplation} · {8:“The Unvanquished.”}",
+    "english": "{0:\"The very dwelling place of the Great Elements.\"}· {1:One Who envelops the world with His māyā-powers of veiling and agitations} · {2:\"The Abode of all Life — Energies.\"}· {3:“One Who is of Unlimited Wealth, Power and Glory.”} · {4:-\"The Destroyer of pride in evil-minded people.\"}· {5:The one who grants dignity to the righteous} · {6:One Who is ever drunk with the Infinite Bliss of His own essential nature as sat-cit-ānanda} · {7:The one difficult to hold in contemplation} · {8:“The Unvanquished.”}",
     "words": [
       {
         "roman": "bhūtāvāso",
@@ -14002,7 +14002,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darpado",
-        "gloss": "“One Who gives pride to the righteous,”—meaning, One Who creates in the Good an anxious urge to be the best among the righteous and virtuous",
+        "gloss": "The one who grants dignity to the righteous",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14014,7 +14014,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "durdharo",
-        "gloss": "The object of contemplation which is indeed very difficult to attain:—the One Who is realised by yogīs through arduous processes of intense, single-pointed contemplation",
+        "gloss": "The one difficult to hold in contemplation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14061,7 +14061,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "viśvamūrtir mahāmūrtir dīptamūrtir amūrtimān anekamūrtir avyaktaḥ śatamūrtiḥ śatānanaḥ",
-    "english": "{0:“Of the Form of the entire Universe.\"}· {1:The Great — Form- Divine of the Lord as He reclines upon the Sesha couch as the very support for the Creator to bring into existence the Universe of forms and plurality} · {2:“Of the Resplendent Form.”} · {3:“Having no Form.”} · {4:\"Multi — Formed\": One Who Himself has become the world of varieties of Forms -Who has Himself taken the various Incarnations in order to help the world of beings to evolve quicker and fuller} · {5:\"Unmanifest.\"}· {6:\"Of Myriad — Forms\": even though Consciousness, like Light, has no form of its own, all thought and the thought-projected world of infinite forms are all illumined by the Supreme} · {7:\"Many — Faced\": because He is of the Universal — Form, all faces are His only}",
+    "english": "{0:“Of the Form of the entire Universe.\"}· {1:The great cosmic form supporting creation} · {2:“Of the Resplendent Form.”} · {3:“Having no Form.”} · {4:The one of many forms and incarnations} · {5:\"Unmanifest.\"}· {6:The one of myriad forms} · {7:\"Many — Faced\": because He is of the Universal — Form, all faces are His only}",
     "words": [
       {
         "roman": "viśvamūrtir",
@@ -14071,7 +14071,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahāmūrtir",
-        "gloss": "The Great — Form- Divine of the Lord as He reclines upon the Sesha couch as the very support for the Creator to bring into existence the Universe of forms and plurality",
+        "gloss": "The great cosmic form supporting creation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14089,7 +14089,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "anekamūrtir",
-        "gloss": "\"Multi — Formed\": One Who Himself has become the world of varieties of Forms -Who has Himself taken the various Incarnations in order to help the world of beings to evolve quicker and fuller",
+        "gloss": "The one of many forms and incarnations",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14101,7 +14101,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śatamūrtiḥ",
-        "gloss": "\"Of Myriad — Forms\": even though Consciousness, like Light, has no form of its own, all thought and the thought-projected world of infinite forms are all illumined by the Supreme",
+        "gloss": "The one of myriad forms",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14310,11 +14310,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "suvarṇavarṇo hemāṅgo varāṅgaś candanāṅgadī vīrahā viṣamaḥ śūnyo ghṛtāśīr acalaś calaḥ",
-    "english": "{0:“Golden Coloured” is Śrī Nārāyaṇa for He is, in the devotee, the pure Self; and in all, He is the very All — Illumining Pure Awareness} · {1:“One who has limbs of Gold.”} · {2:\"With beautiful limbs.\"}· {3:This is made up of two terms, \"Joy-giving\" (Chandana) and \"armlets\" (Angada)} · {4:\"The destroyer of the valiant heroes\"—in order to uphold righteousness, Lord Hari takes His Incarnations and destroys the intrepid and daring Asuras in battle} · {5:“Unequalled.”} · {6:“The Void.”} · {7:“One Who has no need for any good wishes from any one.”} · {8:\"The non-moving.\"}· {9:\"Moving.\"}",
+    "english": "{0:The golden-coloured one} · {1:“One who has limbs of Gold.”} · {2:\"With beautiful limbs.\"}· {3:This is made up of two terms, \"Joy-giving\" (Chandana) and \"armlets\" (Angada)} · {4:\"The destroyer of the valiant heroes\"—in order to uphold righteousness, Lord Hari takes His Incarnations and destroys the intrepid and daring Asuras in battle} · {5:“Unequalled.”} · {6:“The Void.”} · {7:“One Who has no need for any good wishes from any one.”} · {8:\"The non-moving.\"}· {9:\"Moving.\"}",
     "words": [
       {
         "roman": "suvarṇavarṇo",
-        "gloss": "“Golden Coloured” is Śrī Nārāyaṇa for He is, in the devotee, the pure Self; and in all, He is the very All — Illumining Pure Awareness",
+        "gloss": "The golden-coloured one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14566,7 +14566,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tejovṛṣo dyutidharaḥ sarvaśastrabhṛtāṃ varaḥ pragraho nigraho vyagro naikaśṛṅgo gadāgrajaḥ",
-    "english": "{0:\"One Who showers Radiance.\"}· {1:The term 'Dyuti' indicates the glow of beauty and strength in a form; thus the term means \"One Who bears an Effulgent Form.\"}· {2:- \"The best among those who wield weapons.\"}· {3:One Who is the sole receiver of all the worship of every devotee, irrespective of his creed or race, or his location in the world, at all times} · {4:“The killer.”} · {5:\"One Who is ever engaged in fulfilling the devotee's desires.\"}· {6:“One Who has many (na-eka=Naika) horns.”} · {7:\"The elder brother of Gada.\"}",
+    "english": "{0:\"One Who showers Radiance.\"}· {1:The bearer of radiance} · {2:- \"The best among those who wield weapons.\"}· {3:One Who is the sole receiver of all the worship of every devotee, irrespective of his creed or race, or his location in the world, at all times} · {4:“The killer.”} · {5:\"One Who is ever engaged in fulfilling the devotee's desires.\"}· {6:The many-horned one} · {7:\"The elder brother of Gada.\"}",
     "words": [
       {
         "roman": "tejovṛṣo",
@@ -14576,7 +14576,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dyutidharaḥ",
-        "gloss": "The term 'Dyuti' indicates the glow of beauty and strength in a form; thus the term means \"One Who bears an Effulgent Form.\"",
+        "gloss": "The bearer of radiance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14606,7 +14606,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "naikaśṛṅgo",
-        "gloss": "“One Who has many (na-eka=Naika) horns.”",
+        "gloss": "The many-horned one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14983,7 +14983,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udbhavaḥ sundaraḥ sundo ratnanābhaḥ sulocanaḥ arko vājasanaḥ śṛṅgī jayantaḥ sarvavijjayī",
-    "english": "{0:\"The ultimate source\"— the very spring of Creation} · {1:“Of unrivalled beauty.”} · {2:“Of Great Mercy.”} · {3:\"Of beautiful navel.\"}· {4:-\"One Who has the most enchanting eyes.\"}· {5:\"One Who is in the form of the Sun.\"}· {6:\"The giver of food.\"}· {7:\"The horned one.\"}· {8:\"The conqueror of all enemies.\"}· {9:\"One Who is at once Omniscient (Sarvavit) and victorious (Jayee).\"}",
+    "english": "{0:\"The ultimate source\"— the very spring of Creation} · {1:“Of unrivalled beauty.”} · {2:“Of Great Mercy.”} · {3:\"Of beautiful navel.\"}· {4:-\"One Who has the most enchanting eyes.\"}· {5:\"One Who is in the form of the Sun.\"}· {6:\"The giver of food.\"}· {7:\"The horned one.\"}· {8:\"The conqueror of all enemies.\"}· {9:\"One Who is at once Omniscient (Sarvavit) and victorious (jayī).\"}",
     "words": [
       {
         "roman": "udbhavaḥ",
@@ -15041,7 +15041,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarvavijjayī",
-        "gloss": "\"One Who is at once Omniscient (Sarvavit) and victorious (Jayee).\"",
+        "gloss": "\"One Who is at once Omniscient (Sarvavit) and victorious (jayī).\"",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -15194,7 +15194,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kumudaḥ kundaraḥ kundaḥ parjanyaḥ pāvano 'nilaḥ amṛtāśo 'mṛtavapuḥ sarvajñaḥ sarvatomukhaḥ",
-    "english": "{0:“One Who gladdens the earth,” or “one who gets gladdened by the earth.”} · {1:The one who tore the earth in His Incarnation as the Boar in order to destroy the mighty tyrant, Hiraṇyākṣa} · {2:Here we read it as 'Kunda flower.'}· {3:\"He who is similar to the rain-bearing clouds.\"}· {4:\"One Who ever purifies.\"}· {5:Like the atmospheric air the Lord is the life-giver everywhere, and also He is All-pervading} · {6:Since 'amrita' has both the meanings of 'nectar' and 'immortality,' the term is interpreted to mean \"One whose desires are never fruitless,\" as well as \"One whose greatest desire is for the State of Immortality.\"}· {7:“He Whose Form is Immortal.”} · {8:\"Omniscient.\"}· {9:\"One Who has His face turned everywhere\"—just as the light in the sun, or the light of a lamp}",
+    "english": "{0:“One Who gladdens the earth,” or “one who gets gladdened by the earth.”} · {1:The one who tore the earth in His Incarnation as the Boar in order to destroy the mighty tyrant, Hiraṇyākṣa} · {2:The one lovely as the white jasmine flower} · {3:\"He who is similar to the rain-bearing clouds.\"}· {4:\"One Who ever purifies.\"}· {5:Like the atmospheric air the Lord is the life-giver everywhere, and also He is All-pervading} · {6:The one whose aspiration is immortality} · {7:“He Whose Form is Immortal.”} · {8:\"Omniscient.\"}· {9:\"One Who has His face turned everywhere\"—just as the light in the sun, or the light of a lamp}",
     "words": [
       {
         "roman": "kumudaḥ",
@@ -15210,7 +15210,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kundaḥ",
-        "gloss": "Here we read it as 'Kunda flower.'",
+        "gloss": "The one lovely as the white jasmine flower",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15234,7 +15234,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "amṛtāśo",
-        "gloss": "Since 'amrita' has both the meanings of 'nectar' and 'immortality,' the term is interpreted to mean \"One whose desires are never fruitless,\" as well as \"One whose greatest desire is for the State of Immortality.\"",
+        "gloss": "The one whose aspiration is immortality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15299,11 +15299,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sulabhaḥ suvrataḥ siddhaḥ śatrujic chatrutāpanaḥ nyagrodho 'dumbaro 'śvatthaś cāṇūrāndhraniṣūdanaḥ",
-    "english": "{0:“One Who is readily available” and, therefore, easily attainable for those who have true devotion and the heroism to put forth the right effort in unveiling Him from the miserable pits of matter} · {1:He Who has taken the most auspicious Forms—to destroy the evil and to protect the good} · {2:\"One Who is Perfection\"—not one who has attained perfection} · {3:\"One Who is ever victorious over His hosts of enemies.\"}· {4:“The Scorcher of enemies.”} · {5:\"The One Who, while controlling all beings, veils Himself behind this māyā.\"}· {6:“He Who is the Nourisher of all living creatures”—supplying each with its appropriate food} · {7:In the Upaniṣad, (Kaṭhopaniṣad) and in the Bhagavad Gītā (Chapter XV), Lord Nārāyaṇa is indicated as the great \"Tree of Life,\" the Asvattha} · {8:The slayer of Chaanoora, the great wrestler}",
+    "english": "{0:The one readily attained through true devotion} · {1:He Who has taken the most auspicious Forms—to destroy the evil and to protect the good} · {2:\"One Who is Perfection\"—not one who has attained perfection} · {3:\"One Who is ever victorious over His hosts of enemies.\"}· {4:“The Scorcher of enemies.”} · {5:\"The One Who, while controlling all beings, veils Himself behind this māyā.\"}· {6:“He Who is the Nourisher of all living creatures”—supplying each with its appropriate food} · {7:The tree of life} · {8:The slayer of Cāṇūra, the great wrestler}",
     "words": [
       {
         "roman": "sulabhaḥ",
-        "gloss": "“One Who is readily available” and, therefore, easily attainable for those who have true devotion and the heroism to put forth the right effort in unveiling Him from the miserable pits of matter",
+        "gloss": "The one readily attained through true devotion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15345,13 +15345,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "'śvatthaś",
-        "gloss": "In the Upaniṣad, (Kaṭhopaniṣad) and in the Bhagavad Gītā (Chapter XV), Lord Nārāyaṇa is indicated as the great \"Tree of Life,\" the Asvattha",
+        "gloss": "The tree of life",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cāṇūrāndhraniṣūdanaḥ",
-        "gloss": "The slayer of Chaanoora, the great wrestler",
+        "gloss": "The slayer of Cāṇūra, the great wrestler",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -15668,7 +15668,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhārabhṛt kathito yogī yogīśaḥ sarvakāmadaḥ āśramaḥ śramaṇaḥ , kṣāmaḥ suparṇo vāyuvāhanaḥ",
-    "english": "{0:“One Who carries the load of the Universe.”} · {1:\"One Who is glorified in the Vedas and other spiritual text books.\"}· {2:“One Who can be realised through Yoga:\" \"One Who is the greatest yogī.\"}· {3:\"The King of yogīs.\"}· {4:\"One Who fulfils all desires of all true devotees.\"}· {5:Śrī Nārāyaṇa is the harbour, the sequestered haven for all who are tossed about in the storms of life without and within} · {6:\"One Who persecutes the worldly people\"—who, driven by their hungers and passions, seek sense-gratifications} · {7:“One Who destroys everything during the final deluge\"—He Who prunes our agitations and shrinks our desire-prompted world-projections} · {8:\"The Golden Leaf.\"}· {9:“The mover of the winds.”}",
+    "english": "{0:“One Who carries the load of the Universe.”} · {1:\"One Who is glorified in the Vedas and other spiritual text books.\"}· {2:The supreme yogī, realized through yoga} · {3:\"The King of yogīs.\"}· {4:\"One Who fulfils all desires of all true devotees.\"}· {5:Śrī Nārāyaṇa is the harbour, the sequestered haven for all who are tossed about in the storms of life without and within} · {6:\"One Who persecutes the worldly people\"—who, driven by their hungers and passions, seek sense-gratifications} · {7:“One Who destroys everything during the final deluge\"—He Who prunes our agitations and shrinks our desire-prompted world-projections} · {8:\"The Golden Leaf.\"}· {9:“The mover of the winds.”}",
     "words": [
       {
         "roman": "bhārabhṛt",
@@ -15684,7 +15684,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yogī",
-        "gloss": "“One Who can be realised through Yoga:\" \"One Who is the greatest yogī.\"",
+        "gloss": "The supreme yogī, realized through yoga",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15789,7 +15789,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhanurdharo dhanurvedo daṇḍo damayitā damaḥ aparājitaḥ sarvasaho niyantā 'niyamo yamaḥ",
-    "english": "{0:\"The wielder of the Bow.\"}· {1:\"One Who declared the Science of Archery.\"}· {2:\"One Who punishes the wicked.\"}· {3:\"The Controller.\"}· {4:That which is ultimately gained by the worldly punishments—the final experience of Beatitude in the Self} · {5:\"The Invincible; One Who cannot be defeated.\"}· {6:\"One Who carries the entire Universe.\"}· {7:“One Who has none above Him to control Him.\"}· {8:\"One Who is not under the laws of anyone else.\"}· {9:\"One Who knows no death.\"}",
+    "english": "{0:\"The wielder of the Bow.\"}· {1:The revealer of the science of archery} · {2:\"One Who punishes the wicked.\"}· {3:\"The Controller.\"}· {4:That which is ultimately gained by the worldly punishments—the final experience of Beatitude in the Self} · {5:\"The Invincible; One Who cannot be defeated.\"}· {6:\"One Who carries the entire Universe.\"}· {7:The supreme controller, controlled by none} · {8:\"One Who is not under the laws of anyone else.\"}· {9:\"One Who knows no death.\"}",
     "words": [
       {
         "roman": "dhanurdharo",
@@ -15799,7 +15799,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhanurvedo",
-        "gloss": "\"One Who declared the Science of Archery.\"",
+        "gloss": "The revealer of the science of archery",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15835,7 +15835,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "niyantā",
-        "gloss": "“One Who has none above Him to control Him.\"",
+        "gloss": "The supreme controller, controlled by none",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15909,7 +15909,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sattvavān sāttvikaḥ satyaḥ satyadharmaparāyaṇaḥ abhiprāyaḥ priyārho 'rhaḥ priyakṛt prītivardhanaḥ",
-    "english": "{0:\"One Who is full of exploits and courage.\"}· {1:\"One Who is full of sāttvika qualities.\"}· {2:\"Truth.\"}· {3:“One Who is the very abode of Truth and Righteousness.”} · {4:“One Who is faced by all seekers marching to the Infinite.\"}· {5:\"One Who deserves all our love.\"}· {6:Nārāyaṇa is the One Who deserves to be worshipped by all devotees} · {7:“One Who is ever-obliging in fulfilling our wishes”—One Who is anxiously eager for the well-being of all devotees} · {8:The sense of drunken joy that arises in one's bosom when one loves deeply and truly is called prīti}",
+    "english": "{0:\"One Who is full of exploits and courage.\"}· {1:\"One Who is full of sāttvika qualities.\"}· {2:\"Truth.\"}· {3:“One Who is the very abode of Truth and Righteousness.”} · {4:“One Who is faced by all seekers marching to the Infinite.\"}· {5:\"One Who deserves all our love.\"}· {6:Nārāyaṇa is the One Who deserves to be worshipped by all devotees} · {7:“One Who is ever-obliging in fulfilling our wishes”—One Who is anxiously eager for the well-being of all devotees} · {8:The one who increases love and joy}",
     "words": [
       {
         "roman": "sattvavān",
@@ -15961,7 +15961,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prītivardhanaḥ",
-        "gloss": "The sense of drunken joy that arises in one's bosom when one loves deeply and truly is called prīti",
+        "gloss": "The one who increases love and joy",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -16014,11 +16014,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vihāyasagatir jyotiḥ surucir hutabhug vibhuḥ ravir virocanaḥ sūryaḥ savitā ravilocanaḥ",
-    "english": "{0:The term vihāyasa means pertaining to, depending on, the space—aerial} · {1:\"Effulgent with His own inherent Light.\"}· {2:The suffix ‘Su’ indicates Auspiciousness (sobhana): the term ‘Ruchi’ is Glory or Desire} · {3:“One Who receives and enjoys all that is offered into the sacred fire during the Vedic Rituals—yajñas and yāgas.”} · {4:\"All-pervading.\"}· {5:“One Who absorbs the vapours (Rasa) from everything.”} · {6:“One Who shines in different forms.”} · {7:The term etymologically means the One Source from which all things have been born or out of which they have been delivered} · {8:\"The One Who brings forth, from Himself, the Universe of things and beings.\"}· {9:\"One Whose Eyes are the Sun.\"}",
+    "english": "{0:The one whose path is the sky} · {1:\"Effulgent with His own inherent Light.\"}· {2:The one of beautiful radiance and auspicious will} · {3:“One Who receives and enjoys all that is offered into the sacred fire during the Vedic Rituals—yajñas and yāgas.”} · {4:\"All-pervading.\"}· {5:“One Who absorbs the vapours (Rasa) from everything.”} · {6:“One Who shines in different forms.”} · {7:The sun, source of all brilliance} · {8:\"The One Who brings forth, from Himself, the Universe of things and beings.\"}· {9:\"One Whose Eyes are the Sun.\"}",
     "words": [
       {
         "roman": "vihāyasagatir",
-        "gloss": "The term vihāyasa means pertaining to, depending on, the space—aerial",
+        "gloss": "The one whose path is the sky",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16030,7 +16030,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "surucir",
-        "gloss": "The suffix ‘Su’ indicates Auspiciousness (sobhana): the term ‘Ruchi’ is Glory or Desire",
+        "gloss": "The one of beautiful radiance and auspicious will",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16060,7 +16060,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sūryaḥ",
-        "gloss": "The term etymologically means the One Source from which all things have been born or out of which they have been delivered",
+        "gloss": "The sun, source of all brilliance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16241,7 +16241,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sanāt sanātanatamaḥ kapilaḥ kapir avyayaḥ svastidaḥ svastikṛt svasti svastibhuk svastidakṣiṇaḥ",
-    "english": "{0:\"The Beginningless and the Endless factor is He.\"}· {1:\"The most Ancient.\"}· {2:The Lord Himself, manifested as the great ṛṣi Kapila, propounded the Saamkhya philosophy} · {3:One Who drinks water} · {4:\"The One in Whom the entire Universe merges\"—during the great deluge when the Total-mind—the Creator—rests} · {5:\"One Who gives Svasti to all His sincere devotees.\"}· {6:As in many earlier terms which were preceded by the suffix 'kṛt,' here also, it expands into two meanings: \"One Who brings Auspiciousness\" or \"One who robs all Auspiciousness.\"}· {7:\"One Who is the Source of all Auspiciousness\"—as He is Himself the Auspicious} · {8:\"One Who constantly lives in His Experience a perpetual sense of holy Auspiciousness\"-as it is His very nature-divine} · {9:Lord is ever engaged in smartly distributing Auspiciousness}",
+    "english": "{0:\"The Beginningless and the Endless factor is He.\"}· {1:\"The most Ancient.\"}· {2:The Lord Himself, manifested as the great ṛṣi Kapila, propounded the Sāṅkhya philosophy} · {3:One Who drinks water} · {4:\"The One in Whom the entire Universe merges\"—during the great deluge when the Total-mind—the Creator—rests} · {5:\"One Who gives Svasti to all His sincere devotees.\"}· {6:The maker and remover of auspicious conditions} · {7:\"One Who is the Source of all Auspiciousness\"—as He is Himself the Auspicious} · {8:\"One Who constantly lives in His Experience a perpetual sense of holy Auspiciousness\"-as it is His very nature-divine} · {9:Lord is ever engaged in smartly distributing Auspiciousness}",
     "words": [
       {
         "roman": "sanāt",
@@ -16257,7 +16257,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kapilaḥ",
-        "gloss": "The Lord Himself, manifested as the great ṛṣi Kapila, propounded the Saamkhya philosophy",
+        "gloss": "The Lord Himself, manifested as the great ṛṣi Kapila, propounded the Sāṅkhya philosophy",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16281,7 +16281,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "svastikṛt",
-        "gloss": "As in many earlier terms which were preceded by the suffix 'kṛt,' here also, it expands into two meanings: \"One Who brings Auspiciousness\" or \"One who robs all Auspiciousness.\"",
+        "gloss": "The maker and remover of auspicious conditions",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16361,7 +16361,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "araudraḥ kuṇḍalī cakrī vikramy ūrjitaśāsanaḥ śabdātigaḥ śabdasahaḥ śiśiraḥ śarvarīkaraḥ",
-    "english": "{0:\"One Who has none of the negative terrible urges and emotions.\"}· {1:“One Who wears the famous ear-ring called the Makara — Kundala.\"}· {2:“He Who wears ever His Discus called Su — Darsana (Auspicious Vision).”} · {3:“He Who is more daring than all others.”} · {4:“One Who commands and administers with His Hand.\"}· {5:\"He Who transcends all words\"—One Who is Indescribable} · {6:“One Who allows Himself to be invoked by the Vedic declarations.”} · {7:The term means winter, the cold season} · {8:The word Sarvaree means 'night' or 'darkness'; therefore, the term defines the Lord as \"One Who creates darkness.\"}",
+    "english": "{0:\"One Who has none of the negative terrible urges and emotions.\"}· {1:The wearer of makara earrings} · {2:The bearer of the discus Sudarśana} · {3:“He Who is more daring than all others.”} · {4:“One Who commands and administers with His Hand.\"}· {5:\"He Who transcends all words\"—One Who is Indescribable} · {6:The one who permits invocation through sacred sound} · {7:The cool season that relieves burning heat} · {8:The maker of night and darkness}",
     "words": [
       {
         "roman": "araudraḥ",
@@ -16371,13 +16371,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kuṇḍalī",
-        "gloss": "“One Who wears the famous ear-ring called the Makara — Kundala.\"",
+        "gloss": "The wearer of makara earrings",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cakrī",
-        "gloss": "“He Who wears ever His Discus called Su — Darsana (Auspicious Vision).”",
+        "gloss": "The bearer of the discus Sudarśana",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16401,19 +16401,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "śabdasahaḥ",
-        "gloss": "“One Who allows Himself to be invoked by the Vedic declarations.”",
+        "gloss": "The one who permits invocation through sacred sound",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śiśiraḥ",
-        "gloss": "The term means winter, the cold season",
+        "gloss": "The cool season that relieves burning heat",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śarvarīkaraḥ",
-        "gloss": "The word Sarvaree means 'night' or 'darkness'; therefore, the term defines the Lord as \"One Who creates darkness.\"",
+        "gloss": "The maker of night and darkness",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -16474,7 +16474,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "akrūraḥ peśalo dakṣo dakṣiṇaḥ , kṣamiṇāṃ varaḥ vidvattamo vītabhayaḥ puṇyaśravaṇakīrtanaḥ",
-    "english": "{0:\"Never-cruel.\"}· {1:\"One Who is supremely soft.\"}· {2:This term stands for the quality of 'promptitude.'}· {3:“One Who is most liberal.”} · {4:\"One Who has the greatest amount of patience with the sinners and for-giveness for their sins.\"}· {5:“One Who has the greatest Wisdom.\"}· {6:\"One Who has lost all fears.\"}· {7:One Whose Glory when heard and sung causes merits to grow in the bosom of that devotee}",
+    "english": "{0:\"Never-cruel.\"}· {1:\"One Who is supremely soft.\"}· {2:The prompt and capable one} · {3:“One Who is most liberal.”} · {4:\"One Who has the greatest amount of patience with the sinners and for-giveness for their sins.\"}· {5:“One Who has the greatest Wisdom.\"}· {6:\"One Who has lost all fears.\"}· {7:One Whose Glory when heard and sung causes merits to grow in the bosom of that devotee}",
     "words": [
       {
         "roman": "akrūraḥ",
@@ -16490,7 +16490,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dakṣo",
-        "gloss": "This term stands for the quality of 'promptitude.'",
+        "gloss": "The prompt and capable one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16587,7 +16587,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "uttāraṇo duṣkṛtihā puṇyo duḥsvapnanāśanaḥ vīrahā rakṣaṇaḥ santo jīvanaḥ paryavasthitaḥ",
-    "english": "{0:“One Who lifts us out of the ocean-of-change.”} · {1:‘Kriti’ means actions; 'Dush-kriti' means bad actions} · {2:\"Supremely Pure.\"}· {3:\"One Who destroys all 'bad dreams'.\"}· {4:\"One Who ends the passage from womb-to-womb—the wheel of birth and death.\"}· {5:\"One Who is the Protector of the Universe.\"}· {6:This term, used in the plural number, indicates \"the good people.\"}· {7:\"The Life — Spark in all living creatures.\"}· {8:In all places, in all creatures, He dwells}",
+    "english": "{0:“One Who lifts us out of the ocean-of-change.”} · {1:The destroyer of evil deeds} · {2:\"Supremely Pure.\"}· {3:\"One Who destroys all 'bad dreams'.\"}· {4:\"One Who ends the passage from womb-to-womb—the wheel of birth and death.\"}· {5:\"One Who is the Protector of the Universe.\"}· {6:The one present as the good and saintly} · {7:\"The Life — Spark in all living creatures.\"}· {8:In all places, in all creatures, He dwells}",
     "words": [
       {
         "roman": "uttāraṇo",
@@ -16597,7 +16597,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "duṣkṛtihā",
-        "gloss": "‘Kriti’ means actions; 'Dush-kriti' means bad actions",
+        "gloss": "The destroyer of evil deeds",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16627,7 +16627,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "santo",
-        "gloss": "This term, used in the plural number, indicates \"the good people.\"",
+        "gloss": "The one present as the good and saintly",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16800,7 +16800,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anādir bhūrbhuvo lakṣmīḥ suvīro rucirāṅgadaḥ janano janajanmādir bhīmo bhīmaparākramaḥ",
-    "english": "{0:\"One Who is the First Cause\" -and Who is Himself the Uncaused} · {1:“The very substratum or support for the Earth.”} · {2:“One Who is the wealth, the richness or glory of the Universe.”} · {3:\"One Who moves through various ways which are all divinely glorious.\"}· {4:“One Who wears resplendent shoulder-caps”—a kind of ornament used by ancient Indian kings to protect their upper arms and shoulders from their enemies' slashing swords} · {5:\"He Who delivers all living creatures.\"}· {6:\"One Who is the sole Cause of birth for all living creatures in the Universe.\"}· {7:“One Whose form is terrible and frightening to the sinners.\"}· {8:“One Whose prowess is irresistible and fearful to His enemies.\"}",
+    "english": "{0:\"One Who is the First Cause\" -and Who is Himself the Uncaused} · {1:“The very substratum or support for the Earth.”} · {2:“One Who is the wealth, the richness or glory of the Universe.”} · {3:\"One Who moves through various ways which are all divinely glorious.\"}· {4:The wearer of radiant armlets} · {5:\"He Who delivers all living creatures.\"}· {6:\"One Who is the sole Cause of birth for all living creatures in the Universe.\"}· {7:“One Whose form is terrible and frightening to the sinners.\"}· {8:“One Whose prowess is irresistible and fearful to His enemies.\"}",
     "words": [
       {
         "roman": "anādir",
@@ -16828,7 +16828,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rucirāṅgadaḥ",
-        "gloss": "“One Who wears resplendent shoulder-caps”—a kind of ornament used by ancient Indian kings to protect their upper arms and shoulders from their enemies' slashing swords",
+        "gloss": "The wearer of radiant armlets",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16914,7 +16914,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ādhāranilayo 'dhātā puṣpahāsaḥ prajāgaraḥ ūrdhvagaḥ satpathācāraḥ prāṇadaḥ praṇavaḥ paṇaḥ",
-    "english": "{0:“One Who is the fundamental sustainer\"—the support for all that exists} · {1:“Above Whom there is no other to control or to command”—One Who is the Supreme Controller of all} · {2:\"He Who shines like an opening flower.\"}· {3:\"Ever — Awakened\"—He Who knows no sleep} · {4:\"One Who is on the top of everything\"—One Who ever goes high, for He is the highest Truth, the Summit of evolution} · {5:“One Who walks the path of truth”—a path which others implicitly follow to reach the Truth Infinite} · {6:\"One Who gives 'prāṇa' to all.\"}· {7:\"Om-kaara is Pranava.\"}· {8:“The Supreme Manager of the Universe.”}",
+    "english": "{0:“One Who is the fundamental sustainer\"—the support for all that exists} · {1:The unsurpassed supreme controller} · {2:\"He Who shines like an opening flower.\"}· {3:\"Ever — Awakened\"—He Who knows no sleep} · {4:The exalted one} · {5:“One Who walks the path of truth”—a path which others implicitly follow to reach the Truth Infinite} · {6:\"One Who gives 'prāṇa' to all.\"}· {7:\"oṃkāra is praṇava.\"}· {8:“The Supreme Manager of the Universe.”}",
     "words": [
       {
         "roman": "ādhāranilayo",
@@ -16924,7 +16924,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "'dhātā",
-        "gloss": "“Above Whom there is no other to control or to command”—One Who is the Supreme Controller of all",
+        "gloss": "The unsurpassed supreme controller",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16942,7 +16942,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ūrdhvagaḥ",
-        "gloss": "\"One Who is on the top of everything\"—One Who ever goes high, for He is the highest Truth, the Summit of evolution",
+        "gloss": "The exalted one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16960,7 +16960,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "praṇavaḥ",
-        "gloss": "\"Om-kaara is Pranava.\"",
+        "gloss": "\"oṃkāra is praṇava.\"",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17017,7 +17017,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pramāṇaṃ prāṇanilayaḥ prāṇabhṛt prāṇajīvanaḥ tattvaṃ tattvavid ekātmā janmamṛtyujarātigaḥ",
-    "english": "{0:“He Whose very form is the Vedas\"—which are the only 'proof' for the Eternal Reality} · {1:“He in Whom all ‘prāṇas’ stand established.”} · {2:\"He Who rules over all 'Pragnas' \"-Śrī Hari is the One Who causes everyone to eat} · {3:\"He Who maintains the life-breath in all living creatures.\"}· {4:\"The Reality\"—That which is Eternal, the Essence} · {5:\"One Who has realised fully the Reality\"—meaning the original essential nature of the Self} · {6:\"The Advaita Reality\"— Nārāyaṇa is the One Self, the Oversoul, Who expresses Himself as the individualities of the infinite entities in the universe} · {7:“One Who knows no change or modifications in Himself.\"}",
+    "english": "{0:“He Whose very form is the Vedas\"—which are the only 'proof' for the Eternal Reality} · {1:“He in Whom all ‘prāṇas’ stand established.”} · {2:\"He Who rules over all 'Pragnas' \"-Śrī Hari is the One Who causes everyone to eat} · {3:\"He Who maintains the life-breath in all living creatures.\"}· {4:\"The Reality\"—That which is Eternal, the Essence} · {5:The knower of reality as it truly is} · {6:The one Self} · {7:“One Who knows no change or modifications in Himself.\"}",
     "words": [
       {
         "roman": "pramāṇaṃ",
@@ -17051,13 +17051,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "tattvavid",
-        "gloss": "\"One Who has realised fully the Reality\"—meaning the original essential nature of the Self",
+        "gloss": "The knower of reality as it truly is",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ekātmā",
-        "gloss": "\"The Advaita Reality\"— Nārāyaṇa is the One Self, the Oversoul, Who expresses Himself as the individualities of the infinite entities in the universe",
+        "gloss": "The one Self",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17239,11 +17239,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yajñabhṛd yajñakṛd yajñī yajñabhug yajñasādhanaḥ yajñāntakṛd yajñaguhyam annam annāda",
-    "english": "{0:\"The Ruler of the yajñas\"— the One Who helps us to conclude successfully all our 'good, dedicated, selfless acts of service to others'—Yainas} · {1:“One Who performs yajña.\"}· {2:\"One Who is the constant 'Enjoyer' of the perpetual yajñas.\"}· {3:One receiver of all that is offered} · {4:“One Who fulfils all yajñas.\"}· {5:“One Who performs the last, concluding act in all yajñas.\"}· {6:\"Śrī Nārāyaṇa is the most profound truth to be realised in all yajñas.\"}· {7:“One Who has Himself become the 'food' \"-sense-objects which are the 'food' consumed by the sense-organs} · {8:\"One Who eats the 'food.\"}",
+    "english": "{0:The ruler of yajñas} · {1:“One Who performs yajña.\"}· {2:\"One Who is the constant 'Enjoyer' of the perpetual yajñas.\"}· {3:One receiver of all that is offered} · {4:“One Who fulfils all yajñas.\"}· {5:“One Who performs the last, concluding act in all yajñas.\"}· {6:\"Śrī Nārāyaṇa is the most profound truth to be realised in all yajñas.\"}· {7:“One Who has Himself become the 'food' \"-sense-objects which are the 'food' consumed by the sense-organs} · {8:\"One Who eats the 'food.\"}",
     "words": [
       {
         "roman": "yajñabhṛd",
-        "gloss": "\"The Ruler of the yajñas\"— the One Who helps us to conclude successfully all our 'good, dedicated, selfless acts of service to others'—Yainas",
+        "gloss": "The ruler of yajñas",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17352,23 +17352,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ātmayoniḥ svayañjāto vaikhānaḥ sāmagāyanaḥ devakīnandanaḥ sraṣṭā kṣitīśaḥ pāpanāśanaḥ",
-    "english": "{0:“One Who is Himself the 'material Cause' (Upaadaana kāraṇa) for Himself:\" the Self-born, the Uncaused Cause} · {1:“One Who, as the Lord of the Universe, has no other ‘Instrumental Cause’ (nimitta-kāraṇa) in projecting Himself.\"}· {2:\"The One Who dug through the earth\"—cutting through the denseness of the gross to reach, apprehend and kill the subtle Hiraṇyākṣa, the terrible and the monstrous who had tried to destroy the spiritual values in the world} · {3:\"One Who sings the Sāma-songs.\"}· {4:\"He Who appeared as born to Devakī in His Incarnation as Kṛṣṇa.\"}· {5:\"One Who creates.\"}· {6:\"One Who is the Lord of the Earth.\"}· {7:Meditating upon Whom, all vāsanās (sins) are liquidated}",
+    "english": "{0:Self-born} · {1:Self-born} · {2:The Boar who dug through the earth to destroy Hiraṇyākṣa} · {3:\"One Who sings the Sāma-songs.\"}· {4:\"He Who appeared as born to Devakī in His Incarnation as Kṛṣṇa.\"}· {5:\"One Who creates.\"}· {6:\"One Who is the Lord of the Earth.\"}· {7:Meditating upon Whom, all vāsanās (sins) are liquidated}",
     "words": [
       {
         "roman": "ātmayoniḥ",
-        "gloss": "“One Who is Himself the 'material Cause' (Upaadaana kāraṇa) for Himself:\" the Self-born, the Uncaused Cause",
+        "gloss": "Self-born",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "svayañjāto",
-        "gloss": "“One Who, as the Lord of the Universe, has no other ‘Instrumental Cause’ (nimitta-kāraṇa) in projecting Himself.\"",
+        "gloss": "Self-born",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vaikhānaḥ",
-        "gloss": "\"The One Who dug through the earth\"—cutting through the denseness of the gross to reach, apprehend and kill the subtle Hiraṇyākṣa, the terrible and the monstrous who had tried to destroy the spiritual values in the world",
+        "gloss": "The Boar who dug through the earth to destroy Hiraṇyākṣa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17449,7 +17449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaṅkhabhṛn nandakī cakrī śārṅgadhanvā gadādharaḥ rathāṅgapāṇir akṣobhyaḥ sarvapraharaṇāyudhaḥ",
-    "english": "{0:One Who has the divine conch named Pāñcajanya} · {1:The Lord's sword is called Nandaka} · {2:“One Who carries the Discus called Sudarśana.”} · {3:“One Who aims His unerring Bow called Śārṅga.”} · {4:\"One who holds His divine Club (Mace) celebrated as Kaumodakī-which generates and spreads beauty and joy.\"}· {5:The traditional meaning is, of course, \"One Who has the 'wheel of the chariot' as His weapon.\"}· {6:\"One Who cannot be exasperated by anyone, by any act or acts, however blasphemous they may be.\"}· {7:“He Who has all implements for all kinds of assault and fight.\"}",
+    "english": "{0:One Who has the divine conch named Pāñcajanya} · {1:The bearer of the sword Nandaka} · {2:The bearer of the discus Sudarśana} · {3:The wielder of the bow Śārṅga} · {4:The mace-bearer} · {5:The one whose hand holds the chariot wheel} · {6:\"One Who cannot be exasperated by anyone, by any act or acts, however blasphemous they may be.\"}· {7:“He Who has all implements for all kinds of assault and fight.\"}",
     "words": [
       {
         "roman": "śaṅkhabhṛn",
@@ -17459,31 +17459,31 @@ window.SONG_LINES = {
       },
       {
         "roman": "nandakī",
-        "gloss": "The Lord's sword is called Nandaka",
+        "gloss": "The bearer of the sword Nandaka",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cakrī",
-        "gloss": "“One Who carries the Discus called Sudarśana.”",
+        "gloss": "The bearer of the discus Sudarśana",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śārṅgadhanvā",
-        "gloss": "“One Who aims His unerring Bow called Śārṅga.”",
+        "gloss": "The wielder of the bow Śārṅga",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gadādharaḥ",
-        "gloss": "\"One who holds His divine Club (Mace) celebrated as Kaumodakī-which generates and spreads beauty and joy.\"",
+        "gloss": "The mace-bearer",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rathāṅgapāṇir",
-        "gloss": "The traditional meaning is, of course, \"One Who has the 'wheel of the chariot' as His weapon.\"",
+        "gloss": "The one whose hand holds the chariot wheel",
         "concept_key": "",
         "preserve_in_english": false
       },

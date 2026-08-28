@@ -2,8 +2,8 @@
 """Adapt the reviewed Viṣṇu Sahasranāma reader into a Bhakti song packet.
 
 This is a deterministic importer: it copies the reviewed Sanskrit, the
-existing start timings, and Swami Chinmayananda's supplied name meanings.  It
-never calls a model and never rewrites the supplied English.
+existing start timings, and the direct name meanings grounded in Swami
+Chinmayananda's commentary. It never calls a model.
 """
 
 from __future__ import annotations
@@ -107,6 +107,7 @@ def reader_job(reader: dict[str, Any]) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-root", type=Path, default=DEFAULT_SOURCE_ROOT)
+    parser.add_argument("--generate", action="store_true", help="Regenerate the public song and catalogue")
     args = parser.parse_args()
     source_root = args.source_root.resolve()
     reader_path = source_root / "gita" / "vishnu-sahasranama" / "reader.json"
@@ -144,9 +145,9 @@ def main() -> int:
         translations.append({
             "id": unit_id, "literal_english": english, "segments": segments,
             "material_alternatives": [], "human_review_recommended": False,
-            "choice_note": "Swami Chinmayananda's supplied English is preserved exactly.",
+            "choice_note": "Direct name-level meaning from the reviewed Vedānta reader, grounded in Swami Chinmayananda's commentary.",
             "fidelity": {"agency_and_image_preserved": True, "all_meaning_accounted_for": True,
-                         "unsupported_additions": [], "notes": "Imported without rewriting the supplied English."},
+                         "unsupported_additions": [], "notes": "Imported from the independently validated Simple reader."},
             "uncertainty": "",
         })
         timing.append({"ref": unit_id, "section": kind, "repeats": 1,
@@ -169,13 +170,16 @@ def main() -> int:
         raise RuntimeError("import violates Bhakti contract: " + "; ".join(errors[:8]))
     source = {"source_url": reader["audio"]["src"], "title": reader["title"],
               "artist": reader["audio"]["performer"], "duration_seconds": reader["audio"]["duration_seconds"],
-              "review_note": "Imported from the owner's reviewed Vedanta reader; Sanskrit witness and Chinmayananda English are preserved."}
+              "review_note": "Imported from the reviewed Vedānta reader; Sanskrit and direct meanings have passed its full-population checks."}
     pipeline.write_json(song_dir / ".transcription" / "source.json", source)
     pipeline.write_json(packet_dir / "02-transcript-audit.json", audited)
     pipeline.write_json(packet_dir / "03-timing.json", timing_packet)
     pipeline.write_json(packet_dir / "04-glosses.json", gloss_packet)
     pipeline.write_json(packet_dir / "05-translation.json", translation_packet)
-    print(json.dumps({"slug": SLUG, "lines": len(lines), "duration": reader["audio"]["duration_seconds"]}, ensure_ascii=False))
+    if args.generate:
+        pipeline.generate(song_dir, reader_job(reader), source, audited, timing_packet, gloss_packet, translation_packet)
+    print(json.dumps({"slug": SLUG, "lines": len(lines), "duration": reader["audio"]["duration_seconds"],
+                      "generated": args.generate}, ensure_ascii=False))
     return 0
 
 

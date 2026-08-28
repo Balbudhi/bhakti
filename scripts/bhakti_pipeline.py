@@ -2868,7 +2868,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260827-6"></script>
+  <script src="data.js?v=contract-20260827-7"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=contract-20260823-5"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
