@@ -59754,7 +59754,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jinha pāyanha kē pādukanhi bharatu rahē mana lāi.",
-    "english": "{3:To the wooden sandals}{2: of}{0: whose}{1: feet}{4: Bharata}{5: remained}{6: with mind}{7: devotedly fixed,}",
+    "english": "{3:On the wooden sandals }{2:of }{0:those }{1:feet, }{4:Bharata }{5:kept }{6:his mind }{7:fixed in devotion,}",
     "words": [
       {
         "roman": "jinha",
