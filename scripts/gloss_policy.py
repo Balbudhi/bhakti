@@ -75,6 +75,8 @@ MEANING_ONLY = {
     "angada": "Vānara prince and envoy of Rāma",
     "asoka": "the Aśoka tree; in the name of Sītā’s grove",
     "bhavani": "the Goddess; Śakti as the source of being",
+    "bhesaja": "medicine; remedy",
+    "brahma": "the creator deity Brahmā",
     "dha": "sixth note of the Indian scale",
     "dandaka": "the Dandaka forest of Rāma’s exile",
     "damaru": "hourglass drum associated with Śiva",
@@ -105,6 +107,8 @@ MEANING_ONLY = {
     "meghanada": "Rāvaṇa’s son, famed as a warrior",
     "nama": "poet-saint",
     "narayana": "Lord Viṣṇu",
+    "vishnu": "the all-pervading divine reality",
+    "visnu": "the all-pervading divine reality",
     "naga": "serpent being; dragon-like guardian",
     "purana": "ancient sacred narrative and teaching tradition",
     "patha": "recitation; devotional reading aloud",
@@ -127,6 +131,7 @@ MEANING_ONLY = {
     "trisira": "a three-headed demon commander slain by Rāma",
     "uma": "Pārvatī, Śiva’s consort",
     "vasko": "the poet's name",
+    "vyasa": "poet of the Mahābhārata",
 }
 
 

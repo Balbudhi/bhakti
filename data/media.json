@@ -2234,6 +2234,13 @@
         "sha256": "1b77f86f13d4c5f07872c1c8ca5b7d25e838905c6a6db6a74efa0682acc0f9e7"
       }
     ],
+    "vishnu-sahasranama": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vishnu-sahasranama.m4a",
+        "type": "audio/mp4",
+        "sha256": "9e3b185314c009376eb1b6b07936b1077bc665a29f9bbdba52491b92a8c5f342"
+      }
+    ],
     "vrkshavalli-amha": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vrkshavalli-amha.webm",

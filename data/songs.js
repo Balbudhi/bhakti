@@ -4588,6 +4588,40 @@ window.BHAKTI_SONGS = [
     "queueNumber": 67
   },
   {
+    "slug": "vishnu-sahasranama",
+    "queueId": "f4647a5c",
+    "title": "Viṣṇu Sahasranāma",
+    "credit": "Vyāsa · Swami Chinmayananda · Sanjeev Abhyankar",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Visnu Sahasranama",
+      "Vishnu",
+      "Visnu",
+      "Vyasa · Swami Chinmayananda · Sanjeev Abhyankar",
+      "Vyasa",
+      "Vishnu Sahastranam",
+      "Vishnu Sahasranam",
+      "Sanjeev Abhyankar Vishnu Sahasranama",
+      "Swami Chinmayananda Vishnu Sahasranama"
+    ],
+    "writer": "Vyāsa",
+    "singer": "Sanjeev Abhyankar",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vishnu-sahasranama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 236
+  },
+  {
     "slug": "patita-pavan-jai-raam",
     "queueId": "231661a5",
     "title": "Patita Pavan Jai Raam",

@@ -10,16 +10,16 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/favicon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="canonical" href="https://bhakti.eeshan.xyz/songs/man-maila-aur-tan-ko-dhoye/" />
-  <meta name="description" content="Man Maila Aur Tan Ko Dhoye — Viṣṇu: synchronised devotional lyrics with IAST transliteration, a literal English translation, and word-by-word meanings. Sung by Hari Om Sharan." />
+  <link rel="canonical" href="https://bhakti.eeshan.xyz/songs/vishnu-sahasranama/" />
+  <meta name="description" content="Viṣṇu Sahasranāma — Viṣṇu: synchronised devotional lyrics with IAST transliteration, a literal English translation, and word-by-word meanings. Sung by Vyāsa · Swami Chinmayananda · Sanjeev Abhyankar." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bhakti" />
-  <meta property="og:title" content="Man Maila Aur Tan Ko Dhoye — Viṣṇu" />
-  <meta property="og:description" content="Man Maila Aur Tan Ko Dhoye — Viṣṇu: synchronised devotional lyrics with IAST transliteration, a literal English translation, and word-by-word meanings. Sung by Hari Om Sharan." />
-  <meta property="og:url" content="https://bhakti.eeshan.xyz/songs/man-maila-aur-tan-ko-dhoye/" />
+  <meta property="og:title" content="Viṣṇu Sahasranāma — Viṣṇu" />
+  <meta property="og:description" content="Viṣṇu Sahasranāma — Viṣṇu: synchronised devotional lyrics with IAST transliteration, a literal English translation, and word-by-word meanings. Sung by Vyāsa · Swami Chinmayananda · Sanjeev Abhyankar." />
+  <meta property="og:url" content="https://bhakti.eeshan.xyz/songs/vishnu-sahasranama/" />
   <meta name="twitter:card" content="summary" />
   <meta name="referrer" content="no-referrer" />
-  <title>Man Maila Aur Tan Ko Dhoye</title>
+  <title>Viṣṇu Sahasranāma</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
@@ -35,8 +35,8 @@
         <button class="song-sync" id="songSync" type="button" aria-label="Keep lyrics synced to playback" aria-pressed="true" title="Lyrics follow playback"><svg class="sync-icon sync-icon-lock" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="/assets/player-icons.svg#icon-lock"/></svg><svg class="sync-icon sync-icon-unlock" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="/assets/player-icons.svg#icon-unlock"/></svg></button>
         <button class="song-share" id="songShare" type="button" aria-label="Share this song" title="Share"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 15.2V3.8m0 0L8.3 7.5M12 3.8l3.7 3.7M5 12.5v5.7c0 .99.81 1.8 1.8 1.8h10.4c.99 0 1.8-.81 1.8-1.8v-5.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       </div>
-      <h1 class="song-title">Man Maila Aur Tan Ko Dhoye</h1>
-      <div class="song-meta"><dl class="song-credits"><div class="song-credit-entry"><dt>Singer</dt><dd>Hari Om Sharan</dd></div></dl><div class="song-meta-tags" aria-label="Tags"><span class="song-tag subject-tag">Viṣṇu</span><span class="song-tag language-tag">Hindi</span></div></div>
+      <h1 class="song-title">Viṣṇu Sahasranāma</h1>
+      <div class="song-meta"><dl class="song-credits"><div class="song-credit-entry"><dt>Poet</dt><dd>Vyāsa</dd></div><div class="song-credit-entry"><dt>Translation</dt><dd>Swami Chinmayananda</dd></div><div class="song-credit-entry"><dt>Singer</dt><dd>Sanjeev Abhyankar</dd></div></dl><div class="song-meta-tags" aria-label="Tags"><span class="song-tag subject-tag">Viṣṇu</span><span class="song-tag language-tag">Sanskrit</span></div></div>
       <p class="song-hint">Tap or hover over any word to see its meaning.</p>
     </header>
     <section class="song-root" id="songRoot" aria-live="polite"></section>
@@ -46,7 +46,7 @@
     <button class="ap-btn" id="apPlayPause" type="button" aria-label="Play"><svg class="ap-icon ap-icon-play" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg><svg class="ap-icon ap-icon-pause" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg></button>
     <div class="ap-progress" id="apProgress"><div class="ap-progress-bar" id="apProgressBar"></div></div>
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
-    <audio id="songAudio" preload="metadata"><source src="https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-maila-aur-tan-ko-dhoye.m4a" type="audio/mp4"></audio>
+    <audio id="songAudio" preload="metadata"><source src="https://github.com/Balbudhi/bhakti/releases/download/media-v1/vishnu-sahasranama.m4a" type="audio/mp4"></audio>
   </div>
   <script src="data.js?v=contract-20260827-6"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>

@@ -2786,7 +2786,9 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                            .replace('"', "&quot;").replace("'", "&#39;"))
     people: dict[str, list[str]] = {}
-    for field, label in (("writer", "Poet"), ("singer", "Singer"), ("vocalist", "Vocalist"),
+    for field, label in (("writer", str(meta.get("writerAttribution") or "Poet")),
+                         ("translator", str(meta.get("translatorAttribution") or "Translation")),
+                         ("singer", "Singer"), ("vocalist", "Vocalist"),
                          ("composer", "Composer"), ("ensemble", "Recital")):
         person = str(meta.get(field) or "").strip()
         if person:
@@ -2870,7 +2872,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=contract-20260823-5"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
-  <script src="/assets/song.js?v=contract-20260827-6"></script>
+  <script src="/assets/song.js?v=contract-20260827-7"></script>
   <script src="/assets/app.js?v=contract-20260823-18"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>
@@ -3061,26 +3063,31 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     # Do not manufacture a public role from a model candidate. Callers may
     # supply researched roles; otherwise the compact credit line is absent.
     writer = naming.canonical_person(job.get("writer", ""))
+    translator = naming.canonical_person(job.get("translator", ""))
+    translator_attribution = str(job.get("translatorAttribution", "")).strip()
+    writer_attribution = str(job.get("writerAttribution", "")).strip()
     singer = naming.canonical_person(job.get("singer") or source.get("artist") or "")
     vocalist = naming.canonical_person(job.get("vocalist", ""))
     composer = naming.canonical_person(job.get("composer") or source.get("composer") or "")
     ensemble = str(job.get("ensemble") or "").strip()
-    distinct_people = list(dict.fromkeys(person for person in (writer, singer, composer) if person))
+    distinct_people = list(dict.fromkeys(person for person in (writer, translator, singer, composer) if person))
     credit = str(job.get("credit", "")).strip() or " · ".join(distinct_people)
     page_credit = str(job.get("pageCredit", "")).strip() or singer or credit
     subjects = tag_taxonomy.merge_subject_tags(job.get("subjectTags", []), lines)
     subtitle = str(job.get("subtitle", "")).strip() or (subjects[0] if subjects else "")
     aliases = naming.search_aliases(
         [job["slug"].replace("-", " "), title, subtitle, credit, page_credit,
-         writer, singer, vocalist, composer, ensemble, *subjects, *(job.get("languages") or meta_from_model.get("languages", []))],
-        [*naming.person_search_aliases((job.get("writer"), job.get("singer"), job.get("vocalist"), job.get("composer"), writer, singer, vocalist, composer)),
+         writer, translator, singer, vocalist, composer, ensemble, *subjects, *(job.get("languages") or meta_from_model.get("languages", []))],
+        [*naming.person_search_aliases((job.get("writer"), job.get("translator"), job.get("singer"), job.get("vocalist"), job.get("composer"), writer, translator, singer, vocalist, composer)),
          *(job.get("searchAliases") or [])],
     )
     languages = list(dict.fromkeys(normalized_language(str(language))
                                    for language in (job.get("languages") or meta_from_model.get("languages", []))
                                    if str(language).strip()))
     meta = {"title": title, "subtitle": subtitle, "credit": credit, "pageCredit": page_credit,
-            "writer": writer, "singer": singer, "vocalist": vocalist, "composer": composer, "ensemble": ensemble,
+            "writer": writer, "writerAttribution": writer_attribution,
+            "translator": translator, "translatorAttribution": translator_attribution,
+            "singer": singer, "vocalist": vocalist, "composer": composer, "ensemble": ensemble,
             "languages": languages,
             "subjectTags": subjects, "searchAliases": aliases,
             "audioSources": published_audio_sources(song_dir),

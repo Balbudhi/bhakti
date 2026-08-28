@@ -500,7 +500,7 @@ function renderSongMeta() {
 
   hero.querySelectorAll(".song-attrib, .song-credit").forEach(element => element.remove());
   const people = new Map();
-  [["writer", "Poet"], ["singer", "Singer"], ["vocalist", "Vocalist"], ["composer", "Composer"], ["ensemble", "Recital"]].forEach(([field, role]) => {
+  [["writer", meta.writerAttribution || "Poet"], ["translator", meta.translatorAttribution || "Translation"], ["singer", "Singer"], ["vocalist", "Vocalist"], ["composer", "Composer"], ["ensemble", "Recital"]].forEach(([field, role]) => {
     const person = String(meta[field] || "").trim();
     if (!person) return;
     people.set(person, [...(people.get(person) || []), role]);
