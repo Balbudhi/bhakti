@@ -4327,6 +4327,28 @@ window.BHAKTI_SONGS = [
     "queueNumber": 240
   },
   {
+    "slug": "jaagiye-raghunath-kunwar",
+    "queueId": "c982912d",
+    "title": "Jaagiye Raghunath Kunwar",
+    "credit": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
+    "languageTags": [
+      "Sanskrit",
+      "Awadhi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [],
+    "writer": "",
+    "singer": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "audio.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 243
+  },
+  {
     "slug": "shri-ramachandra-kripalu-bhajman",
     "queueId": "477088da",
     "title": "Shri Ramachandra Kripalu Bhajman",
