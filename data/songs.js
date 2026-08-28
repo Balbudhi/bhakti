@@ -3165,6 +3165,33 @@ window.BHAKTI_SONGS = [
     "queueNumber": 153
   },
   {
+    "slug": "neelkanth-mahadev-dayalu",
+    "queueId": "c41d8cff",
+    "title": "Neelkanth Mahadev Dayalu",
+    "credit": "",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "audio.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śiva",
+    "queueNumber": 242
+  },
+  {
     "slug": "o-shirdi-ke-sai",
     "queueId": "54f4f422",
     "title": "O Shirdi Ke Sai",
