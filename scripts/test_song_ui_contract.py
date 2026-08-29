@@ -120,6 +120,40 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('matchMedia?.("(hover: hover) and (pointer: fine)")', script)
         self.assertIn('if (hasRealHover)', script)
 
+    def test_vishnu_name_table_uses_analysis_hover_not_visible_meaning(self) -> None:
+        import json
+        import subprocess
+
+        script_path = ROOT / "assets" / "song.js"
+        reader = script_path.read_text(encoding="utf-8")
+        self.assertIn("function analysisFor(words, indices)", reader)
+        self.assertIn('linkedWord("we", word.gloss || "", [index], words, false)', reader)
+        node = (
+            "global.window={};require(process.argv[1]);"
+            "process.stdout.write(JSON.stringify(window.SONG_LINES));"
+        )
+        raw = subprocess.run(
+            ["node", "-e", node, str(ROOT / "songs" / "vishnu-sahasranama" / "data.js")],
+            check=True,
+            text=True,
+            capture_output=True,
+        ).stdout
+        lines = json.loads(raw)
+        names = [word for line in lines.values() if line.get("nameTable") for word in line["words"]]
+        self.assertEqual(len(names), 1000)
+        for word in names:
+            self.assertTrue(word.get("analysis"))
+            self.assertNotEqual(word["analysis"], word.get("gloss"))
+        ksetrajna = next(word for word in names if word.get("citationRoman") == "kṣetrajñaḥ")
+        self.assertEqual(
+            ksetrajna["analysis"],
+            "kṣetra — field · jña — knowing; knower · nominative singular masculine",
+        )
+        self.assertEqual(
+            ksetrajna["gloss"],
+            "The knower of the body and all experiences arising within it",
+        )
+
     def test_the_generator_still_reproduces_every_committed_song_page(self) -> None:
         """The generator and the committed pages must not drift apart.
 

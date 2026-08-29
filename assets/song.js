@@ -363,9 +363,17 @@ function glossFor(words, indices) {
   return [...new Set(indices.map(index => words?.[index]?.gloss).filter(Boolean))].join(" · ");
 }
 
-function linkedWord(className, surface, indices, words) {
+function analysisFor(words, indices) {
+  return [...new Set(indices.map(index => words?.[index]?.analysis).filter(Boolean))].join(" · ");
+}
+
+function linkedWord(className, surface, indices, words, tooltip = undefined) {
   const value = indices.join(" ");
-  return `<span class="${className} word-link" data-word-i="${value}" data-gloss="${escapeHtml(glossFor(words, indices))}" role="button" tabindex="0">${escapeHtml(surface)}</span>`;
+  const tooltipText = tooltip === false
+    ? ""
+    : (typeof tooltip === "string" ? tooltip : glossFor(words, indices));
+  const tooltipAttr = tooltipText ? ` data-gloss="${escapeHtml(tooltipText)}"` : "";
+  return `<span class="${className} word-link" data-word-i="${value}"${tooltipAttr} role="button" tabindex="0">${escapeHtml(surface)}</span>`;
 }
 
 function renderEnglishWithSpans(english, words) {
@@ -424,9 +432,9 @@ function renderSourceWithSpans(source, sourceWords, words) {
 function renderNameTable(words) {
   const rows = words.map((word, index) => `
     <div class="name-table-row" role="row">
-      <div class="name-table-cell name-table-deva" role="cell" lang="sa-Deva">${linkedWord("ws", word.deva || "", [index], words)}</div>
-      <div class="name-table-cell name-table-iast" role="cell" lang="sa-Latn">${linkedWord("w", word.citationRoman || word.roman || "", [index], words)}</div>
-      <div class="name-table-cell name-table-meaning" role="cell">${linkedWord("we", word.gloss || "", [index], words)}</div>
+      <div class="name-table-cell name-table-deva" role="cell" lang="sa-Deva">${linkedWord("ws", word.deva || "", [index], words, analysisFor(words, [index]))}</div>
+      <div class="name-table-cell name-table-iast" role="cell" lang="sa-Latn">${linkedWord("w", word.citationRoman || word.roman || "", [index], words, analysisFor(words, [index]))}</div>
+      <div class="name-table-cell name-table-meaning" role="cell">${linkedWord("we", word.gloss || "", [index], words, false)}</div>
     </div>`).join("");
   return `<div class="name-table" role="table" aria-label="Devanāgarī, IAST, and meanings">
     ${rows}
@@ -633,6 +641,10 @@ function ensureTooltip() {
   return tooltipEl;
 }
 function showTooltip(span, text) {
+  if (!text) {
+    hideTooltip();
+    return;
+  }
   const tip = ensureTooltip();
   tip.textContent = text;
   tip.hidden = false;
@@ -661,7 +673,9 @@ function activate(span) {
     const linked = indicesFrom(element.dataset.wordI);
     element.classList.toggle("is-hi", linked.some(index => selected.has(index)));
   });
-  showTooltip(span, span.dataset.gloss || "");
+  const tooltip = span.dataset.gloss || "";
+  if (tooltip) showTooltip(span, tooltip);
+  else hideTooltip();
 }
 function deactivate(span) {
   const article = span.closest(".line");

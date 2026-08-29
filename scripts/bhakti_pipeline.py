@@ -2818,6 +2818,8 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     subtitle = str(meta.get("subtitle") or "").strip()
     heading = f"{title} — {subtitle}" if subtitle else title
     performer = str(meta.get("credit") or "").strip()
+    song_asset_version = str(meta.get("songAssetVersion") or "contract-20260827-10")
+    data_asset_version = str(meta.get("dataAssetVersion") or "contract-20260827-8")
     description = (f"{heading}: synchronised devotional lyrics with IAST transliteration, "
                    f"a literal English translation, and word-by-word meanings."
                    + (f" Sung by {performer}." if performer else ""))
@@ -2870,11 +2872,11 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     <div class="ap-time" id="apTime" aria-label="Playback time"><span id="apElapsed">0:00</span><span class="ap-time-sep">/</span><span class="ap-time-total" id="apDuration">—:—</span></div>
     <audio id="songAudio" preload="metadata">{source_html}</audio>
   </div>
-  <script src="data.js?v=contract-20260827-8"></script>
+  <script src="data.js?v={escape(data_asset_version)}"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=contract-20260823-5"></script>
   <script src="/assets/library.js?v=contract-20260823-1"></script>
-  <script src="/assets/song.js?v=contract-20260827-10"></script>
+  <script src="/assets/song.js?v={escape(song_asset_version)}"></script>
   <script src="/assets/app.js?v=contract-20260823-18"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>
@@ -3110,6 +3112,9 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "timingStatus": "start-only-reviewed",
             "translationStatus": "gloss-derived literal",
             "sourceStatus": "reviewed"}
+    for version_field in ("songAssetVersion", "dataAssetVersion"):
+        if job.get(version_field):
+            meta[version_field] = str(job[version_field])
     line_data: dict[str, Any] = {}
     structural_markers: dict[str, str] = {}
     for line_index, line in enumerate(lines):

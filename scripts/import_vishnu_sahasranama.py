@@ -43,6 +43,7 @@ def simple_word(raw: dict[str, Any], index: int) -> dict[str, Any]:
         "citationRoman": str(raw.get("citation_iast") or raw.get("iast") or raw.get("surface_iast") or "").strip(),
         "deva": str(raw.get("deva") or "").strip(),
         "gloss": str(raw.get("gloss") or raw.get("whole_gloss") or "").strip(),
+        "analysis": str(raw.get("analysis") or "").strip(),
         "concept_key": "",
         "preserve_in_english": False,
     }
@@ -50,6 +51,29 @@ def simple_word(raw: dict[str, Any], index: int) -> dict[str, Any]:
 
 def frame() -> dict[str, str]:
     return {field: "" for field in pipeline.SEMANTIC_FRAME_FIELDS}
+
+
+def concise_name_analysis(analysis: dict[str, Any]) -> str:
+    pieces = []
+    for part in analysis.get("parts", []):
+        if part.get("kind") == "ending":
+            continue
+        form = str(part.get("form_iast") or "").strip()
+        gloss = str(part.get("gloss") or "").strip().rstrip(".")
+        if form and gloss:
+            pieces.append(f"{form} — {gloss}")
+    root = analysis.get("root") or {}
+    root_form = str(root.get("form") or "").strip()
+    root_gloss = str(root.get("gloss") or "").strip().removeprefix("to ").rstrip(".")
+    if root_form and root_gloss and not any(piece.startswith(root_form) for piece in pieces):
+        pieces.append(f"{root_form} — {root_gloss}")
+    morph = str(analysis.get("morph") or "").strip().rstrip(".")
+    if morph:
+        pieces.append(morph)
+    result = " · ".join(dict.fromkeys(pieces))
+    if not result:
+        raise RuntimeError(f"name {analysis.get('number')} lacks concise analysis content")
+    return result
 
 
 def preface_units(reader: dict[str, Any]) -> list[tuple[dict[str, Any], str]]:
@@ -66,6 +90,7 @@ def name_stanza(stanza: dict[str, Any]) -> tuple[dict[str, Any], str]:
             "citation_iast": name.get("citation_iast"),
             "deva": analysis.get("citation_devanagari") or name.get("deva"),
             "gloss": name.get("meaning") or analysis.get("whole_gloss"),
+            "analysis": concise_name_analysis(analysis),
         })
     return {
         "id": f"stanza-{stanza['number']}",
@@ -103,6 +128,8 @@ def reader_job(reader: dict[str, Any]) -> dict[str, Any]:
         "translator": "", "translatorAttribution": "",
         "singer": str(reader["audio"]["performer"]), "languages": ["Sanskrit"],
         "subjectTags": ["Viṣṇu"],
+        "songAssetVersion": "contract-20260828-11",
+        "dataAssetVersion": "contract-20260828-9",
         "searchAliases": ["Vishnu Sahasranama", "Vishnu Sahastranam", "Vishnu Sahasranam",
                           "Sanjeev Abhyankar Vishnu Sahasranama"],
         "sectionNotices": section_notices, "lineLabels": labels,
@@ -159,6 +186,17 @@ def main() -> int:
         timing.append({"ref": unit_id, "section": kind, "repeats": 1,
                        "start": float(audio["start"]), "end": float(audio["end"])})
 
+    name_words = [
+        word
+        for line in lines
+        if line.get("name_table")
+        for word in next(row["word_glosses"] for row in glosses if row["id"] == line["id"])
+    ]
+    if len(name_words) != 1000:
+        raise RuntimeError(f"expected exactly 1,000 imported names, found {len(name_words)}")
+    if any(not word.get("analysis") or word["analysis"] == word.get("gloss") for word in name_words):
+        raise RuntimeError("every imported name requires a non-redundant concise analysis hover")
+
     audited = {"packet": {"metadata": {"languages": ["Sanskrit"]}, "verified_lines": lines,
                             "performance_order": [{"line_id": line["id"], "occurrence": 1} for line in lines],
                             "changes": [], "uncertainties": []},
@@ -183,7 +221,16 @@ def main() -> int:
     pipeline.write_json(packet_dir / "04-glosses.json", gloss_packet)
     pipeline.write_json(packet_dir / "05-translation.json", translation_packet)
     if args.generate:
-        pipeline.generate(song_dir, reader_job(reader), source, audited, timing_packet, gloss_packet, translation_packet)
+        pipeline.generate(
+            song_dir,
+            reader_job(reader),
+            source,
+            audited,
+            timing_packet,
+            gloss_packet,
+            translation_packet,
+            write_catalogue_after=False,
+        )
     print(json.dumps({"slug": SLUG, "lines": len(lines), "duration": reader["audio"]["duration_seconds"],
                       "generated": args.generate}, ensure_ascii=False))
     return 0

@@ -98,6 +98,11 @@ The current implementation is in `assets/app.css` under `.app-stage`, `.queue-sh
 - Labels describe the action and state (`Show playlist, 8 songs`, `Unlink lyrics from playback`), even when the visible control is icon-only.
 - Media controls reflect actual media events and fulfilled/rejected `play()` promises.
 - No destructive action is gesture-only.
+- In a three-column Sanskrit name table, the visible English cell is already
+  the meaning and must not be repeated in a tooltip. Devanāgarī and IAST may
+  disclose one concise analysis line (members/root plus morphology); the
+  English cell remains linked for bidirectional highlighting but opens no
+  redundant hover surface. Ordinary lyric word tooltips remain meaning-only.
 
 ## Responsive acceptance
 
