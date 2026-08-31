@@ -2465,7 +2465,7 @@ window.BHAKTI_SONGS = [
     "slug": "hanuman-bhajan-hariharan",
     "queueId": "195decf1",
     "title": "Sundarakāṇḍa (selections)",
-    "credit": "Hariharan",
+    "credit": "Tulsīdās · Hari Om Sharan",
     "languageTags": [
       "Awadhi",
       "Hindi"
@@ -2479,9 +2479,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Hanuman",
       "Hanuman Bhajan",
-      "Hariharan Hanuman Bhajan",
+      "Hari Om Sharan",
+      "Tulsidas · Hari Om Sharan",
       "Sundarkand",
       "Sundar Kand",
+      "Sampoorna Sundarkand Part 3",
       "Ramcharitmanas",
       "Ramcharit Manas",
       "Tulsidas",
@@ -2491,8 +2493,8 @@ window.BHAKTI_SONGS = [
       "Shakti",
       "Sakti"
     ],
-    "writer": "",
-    "singer": "Hariharan",
+    "writer": "Tulsīdās",
+    "singer": "Hari Om Sharan",
     "composer": "",
     "audioSources": [
       {

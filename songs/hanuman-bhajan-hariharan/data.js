@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Sundarakāṇḍa (selections)",
   "subtitle": "Rāmcaritmānas · Sundarakāṇḍa",
-  "credit": "Hariharan",
-  "pageCredit": "Hariharan",
-  "writer": "",
-  "singer": "Hariharan",
+  "credit": "Tulsīdās · Hari Om Sharan",
+  "pageCredit": "Hari Om Sharan",
+  "writer": "Tulsīdās",
+  "singer": "Hari Om Sharan",
   "composer": "",
   "languages": [
     "Awadhi",
@@ -19,9 +19,11 @@ window.SONG_META = {
   "searchAliases": [
     "Hanuman",
     "Hanuman Bhajan",
-    "Hariharan Hanuman Bhajan",
+    "Hari Om Sharan",
+    "Tulsidas · Hari Om Sharan",
     "Sundarkand",
     "Sundar Kand",
+    "Sampoorna Sundarkand Part 3",
     "Ramcharitmanas",
     "Ramcharit Manas",
     "Tulsidas",
@@ -60,7 +62,8 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "dataAssetVersion": "contract-20260831-1"
 };
 
 window.SONG_LINES = {
