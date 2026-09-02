@@ -640,6 +640,77 @@ function ensureTooltip() {
   document.body.appendChild(tooltipEl);
   return tooltipEl;
 }
+
+function highlightedWordRects(anchor) {
+  const line = anchor.closest(".line");
+  const nodes = line ? [...line.querySelectorAll(".word-link.is-hi")] : [anchor];
+  if (!nodes.includes(anchor)) nodes.push(anchor);
+  return nodes.flatMap(node => [...node.getClientRects()]).filter(rect =>
+    rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight
+  );
+}
+
+function placeTooltip(tip, anchor) {
+  const anchorRect = anchor.getBoundingClientRect();
+  const viewportWidth = document.documentElement.clientWidth;
+  const viewportHeight = window.innerHeight;
+  const margin = 8;
+  const gap = 8;
+  const rootTop = document.getElementById("songRoot")?.getBoundingClientRect().top;
+  const safeTop = Math.max(margin, Number.isFinite(rootTop) ? rootTop : margin);
+  const safeBottom = viewportHeight - margin;
+
+  tip.style.maxHeight = "";
+  tip.style.left = "0px";
+  tip.style.top = "0px";
+  let tipRect = tip.getBoundingClientRect();
+  const protectedRects = highlightedWordRects(anchor);
+  const bounds = protectedRects.reduce((box, rect) => ({
+    left: Math.min(box.left, rect.left),
+    right: Math.max(box.right, rect.right),
+    top: Math.min(box.top, rect.top),
+    bottom: Math.max(box.bottom, rect.bottom),
+  }), { left: anchorRect.left, right: anchorRect.right, top: anchorRect.top, bottom: anchorRect.bottom });
+
+  const clampLeft = left => Math.max(margin, Math.min(viewportWidth - tipRect.width - margin, left));
+  const clampTop = top => Math.max(safeTop, Math.min(safeBottom - tipRect.height, top));
+  const overlapsProtected = candidate => protectedRects.some(rect => !(
+    candidate.left + tipRect.width <= rect.left
+    || candidate.left >= rect.right
+    || candidate.top + tipRect.height <= rect.top
+    || candidate.top >= rect.bottom
+  ));
+  const fitsViewport = candidate => candidate.left >= margin
+    && candidate.left + tipRect.width <= viewportWidth - margin
+    && candidate.top >= safeTop
+    && candidate.top + tipRect.height <= safeBottom;
+  const centeredLeft = clampLeft(anchorRect.left + anchorRect.width / 2 - tipRect.width / 2);
+  const centeredTop = clampTop(anchorRect.top + anchorRect.height / 2 - tipRect.height / 2);
+  const candidates = [
+    { left: centeredLeft, top: bounds.top - tipRect.height - gap },
+    { left: centeredLeft, top: bounds.bottom + gap },
+    { left: bounds.left - tipRect.width - gap, top: centeredTop },
+    { left: bounds.right + gap, top: centeredTop },
+  ];
+  let chosen = candidates.find(candidate => fitsViewport(candidate) && !overlapsProtected(candidate));
+
+  if (!chosen) {
+    const topRoom = Math.max(0, bounds.top - gap - safeTop);
+    const bottomRoom = Math.max(0, safeBottom - bounds.bottom - gap);
+    const useBottom = bottomRoom >= topRoom;
+    const availableHeight = Math.max(1, useBottom ? bottomRoom : topRoom);
+    tip.style.maxHeight = `${Math.min(tipRect.height, availableHeight)}px`;
+    tipRect = tip.getBoundingClientRect();
+    chosen = {
+      left: clampLeft(anchorRect.left + anchorRect.width / 2 - tipRect.width / 2),
+      top: useBottom ? bounds.bottom + gap : bounds.top - gap - tipRect.height,
+    };
+  }
+
+  tip.style.left = `${chosen.left + window.scrollX}px`;
+  tip.style.top = `${chosen.top + window.scrollY}px`;
+}
+
 function showTooltip(span, text) {
   if (!text) {
     hideTooltip();
@@ -648,20 +719,7 @@ function showTooltip(span, text) {
   const tip = ensureTooltip();
   tip.textContent = text;
   tip.hidden = false;
-  const r = span.getBoundingClientRect();
-  tip.style.left = "0px";
-  tip.style.top  = "0px";
-  const tr = tip.getBoundingClientRect();
-  const margin = 8;
-  let left = r.left + r.width / 2 - tr.width / 2 + window.scrollX;
-  let top  = r.top - tr.height - 8 + window.scrollY;
-  const minLeft = window.scrollX + margin;
-  const maxLeft = window.scrollX + document.documentElement.clientWidth - tr.width - margin;
-  if (left < minLeft) left = minLeft;
-  if (left > maxLeft) left = maxLeft;
-  if (top < window.scrollY + margin) top = r.bottom + 8 + window.scrollY;
-  tip.style.left = left + "px";
-  tip.style.top  = top + "px";
+  placeTooltip(tip, span);
 }
 function hideTooltip() { if (tooltipEl) tooltipEl.hidden = true; }
 

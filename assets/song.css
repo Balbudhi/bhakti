@@ -608,6 +608,9 @@ html, body {
   border-radius: 6px;
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55),
               0 2px 8px  rgba(0, 0, 0, 0.30);
+  max-height: min(40dvh, 280px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   pointer-events: none;
 }
 
