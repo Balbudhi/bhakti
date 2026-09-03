@@ -1102,12 +1102,8 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [
-      "Śakti"
-    ],
+    "subjectTags": [],
     "searchAliases": [
-      "Shakti",
-      "Sakti",
       "So Dar Keha",
       "So Dar Tera Keha So Ghar Keha"
     ],
@@ -1124,7 +1120,6 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śakti",
     "queueNumber": 254
   },
   {

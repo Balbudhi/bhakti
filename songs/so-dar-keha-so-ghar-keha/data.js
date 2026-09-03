@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "So Dar Keha So Ghar Keha",
-  "subtitle": "Śakti",
+  "subtitle": "",
   "credit": "Guru Nanak · Bhai Nirmal Singh Khalsa",
   "pageCredit": "Bhai Nirmal Singh Khalsa",
   "writer": "Guru Nanak",
@@ -14,12 +14,8 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [
-    "Śakti"
-  ],
+  "subjectTags": [],
   "searchAliases": [
-    "Shakti",
-    "Sakti",
     "So Dar Keha",
     "So Dar Tera Keha So Ghar Keha"
   ],

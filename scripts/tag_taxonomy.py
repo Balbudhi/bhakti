@@ -33,7 +33,10 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
     # Add them only through an explicit reviewed subject tag.
     # Bare `kali` is excluded because devotional corpora frequently mean the
     # Kali age rather than the goddess; require an unambiguous named form.
-    "Śakti": ("durga", "mahakali", "vaishno", "jhandewali", "ambika", "bhavani"),
+    # Bare bhāvani is also a Punjabi verb form (“who please”), so it is not
+    # a safe automatic match for Bhavānī. Explicit devotional constructions
+    # are handled below.
+    "Śakti": ("durga", "mahakali", "vaishno", "jhandewali", "ambika"),
     "Kālī": ("mahakali", "bhadrakali", "kalika", "bhavatarini"),
     "Vaiṣṇo Devī": ("vaishno",),
 }
@@ -56,6 +59,12 @@ KALI_GODDESS_PATTERNS = (
     r"\bkali\s+(?:mata|maa|asura)\b",
 )
 
+SHAKTI_GODDESS_PATTERNS = (
+    r"\b(?:maa|ma|mata)\s+bhavani\b",
+    r"\bbhavani\s+(?:maa|ma|mata)\b",
+    r"\bjai\s+(?:jai\s+)?bhavani\b",
+)
+
 
 def normalized_tokens(value: str) -> set[str]:
     common = naming.unaccented(naming.common_romanization(value)).casefold()
@@ -73,6 +82,9 @@ def infer_named_subject_tags(lines: Iterable[dict[str, Any]]) -> list[str]:
 
     if any(re.search(pattern, text) for text in lyric_text for pattern in KALI_GODDESS_PATTERNS):
         inferred.append("Kālī")
+
+    if any(re.search(pattern, text) for text in lyric_text for pattern in SHAKTI_GODDESS_PATTERNS):
+        inferred.append("Śakti")
 
     # Śāradā is an ancient name of Sarasvatī as well as a modern historical
     # person's name.  Infer the goddess only when nearby theological markers

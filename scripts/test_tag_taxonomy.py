@@ -23,6 +23,16 @@ class TagTaxonomyTests(unittest.TestCase):
         self.assertIn("Kālī", tags.infer_named_subject_tags([{"roman": "Mahākālī"}]))
         self.assertIn("Kālī", tags.infer_named_subject_tags([{"roman": "He Kālī Mā"}]))
 
+    def test_punjabi_bhavani_verb_does_not_claim_shakti(self) -> None:
+        self.assertNotIn(
+            "Śakti",
+            tags.infer_named_subject_tags([{"roman": "jo tudhu bhāvani ratē"}]),
+        )
+        self.assertIn(
+            "Śakti",
+            tags.infer_named_subject_tags([{"roman": "Jai Maa Bhavani"}]),
+        )
+
     def test_merge_preserves_editorial_tags(self) -> None:
         merged = tags.merge_subject_tags(["Nirguṇa"], [{"roman": "Rāma nāma japa karanā"}])
         self.assertEqual(merged, ["Nirguṇa", "Rāma"])
