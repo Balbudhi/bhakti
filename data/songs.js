@@ -844,6 +844,317 @@ window.BHAKTI_SONGS = [
     "queueNumber": 33
   },
   {
+    "slug": "gur-satgur-ka-jo-sikh-akhaye",
+    "queueId": "798a5adc",
+    "title": "Gur Satgur Ka Jo Sikh Akhaye",
+    "credit": "Guru Ram Das · Bhai Harjinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Gur Satgur Ka Jo Sikh Akhaaye"
+    ],
+    "writer": "Guru Ram Das",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gur-satgur-ka-jo-sikh-akhaye.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gur-satgur-ka-jo-sikh-akhaye.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 252
+  },
+  {
+    "slug": "jin-prem-kiyo",
+    "queueId": "96561dc4",
+    "title": "Jin Prem Kiyo",
+    "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Jin Prem Kiyo Tin Hi Prabh Payo",
+      "Sach Kahu Sun Leho Sabhe"
+    ],
+    "writer": "Guru Gobind Singh",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jin-prem-kiyo.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jin-prem-kiyo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 246
+  },
+  {
+    "slug": "koee-aan-milavai-mera-pritam-pyara",
+    "queueId": "d16c821a",
+    "title": "Koī Āṇi Milāvai Merā Prītamu Piārā",
+    "credit": "Guru Arjan · Bhai Harjinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Koi Ani Milavai Mera Pritamu Piara",
+      "Koi Aan Milave Mera Pritam Pyara",
+      "Koi Aan Milave"
+    ],
+    "writer": "Guru Arjan",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koee-aan-milavai-mera-pritam-pyara.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koee-aan-milavai-mera-pritam-pyara.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 248
+  },
+  {
+    "slug": "mittar-pyare-nu",
+    "queueId": "01cbef0a",
+    "title": "Mittar Pyare Nu",
+    "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Mitar Pyare Nu",
+      "Haal Mureedan Da",
+      "Mittar Pyare Nu Haal Mureedan Da Kehna"
+    ],
+    "writer": "Guru Gobind Singh",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mittar-pyare-nu.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mittar-pyare-nu.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 249
+  },
+  {
+    "slug": "tu-thakur-tum-peh-ardas",
+    "queueId": "86f7320f",
+    "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
+    "credit": "Guru Arjan · Bhai Harjinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Tũ Thakuru Tum Pehi Ardasi ॥",
+      "Tu Thakur Tum Pe Ardas",
+      "Tu Thakur Tum Pahey Ardas"
+    ],
+    "writer": "Guru Arjan",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tu-thakur-tum-peh-ardas.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tu-thakur-tum-peh-ardas.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 253
+  },
+  {
+    "slug": "tera-kiya-meetha-laage",
+    "queueId": "0da4181a",
+    "title": "Tera Kiya Meetha Laage",
+    "credit": "Guru Arjan · Bhai Lakhwinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Tera Kiya Meetha Lage"
+    ],
+    "writer": "Guru Arjan",
+    "singer": "Bhai Lakhwinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tera-kiya-meetha-laage.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tera-kiya-meetha-laage.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 251
+  },
+  {
+    "slug": "gagan-mein-thaal",
+    "queueId": "947be942",
+    "title": "Gagan Mein Thaal",
+    "credit": "Guru Nanak · Bhai Nirmal Singh · Uttam Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Gagan Mein Thaal Rav Chand Deepak Bane",
+      "Guru Nanak Aarti"
+    ],
+    "writer": "Guru Nanak",
+    "singer": "Bhai Nirmal Singh",
+    "composer": "Uttam Singh",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gagan-mein-thaal.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gagan-mein-thaal.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 244
+  },
+  {
+    "slug": "jo-nar-dukh-mein-dukh-nahin-jaane",
+    "queueId": "ec1f7376",
+    "title": "Jo Nar Dukh Mein Dukh Nahin Jaane",
+    "credit": "Guru Tegh Bahadur · Bhai Nirmal Singh Khalsa",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Jo Nar Dukh Mein Dukh Nahi Mane"
+    ],
+    "writer": "Guru Tegh Bahadur",
+    "singer": "Bhai Nirmal Singh Khalsa",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-nar-dukh-mein-dukh-nahin-jaane.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-nar-dukh-mein-dukh-nahin-jaane.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 247
+  },
+  {
+    "slug": "mera-man-lochai",
+    "queueId": "03b91d44",
+    "title": "Mera Man Lochai",
+    "credit": "Guru Arjan · Bhai Nirmal Singh Khalsa",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Mera Man Lochai Gur Darshan Tai"
+    ],
+    "writer": "Guru Arjan",
+    "singer": "Bhai Nirmal Singh Khalsa",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-man-lochai.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-man-lochai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 255
+  },
+  {
+    "slug": "so-dar-keha-so-ghar-keha",
+    "queueId": "b91e295a",
+    "title": "So Dar Keha So Ghar Keha",
+    "credit": "Guru Nanak · Bhai Nirmal Singh Khalsa",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "So Dar Keha",
+      "So Dar Tera Keha So Ghar Keha"
+    ],
+    "writer": "Guru Nanak",
+    "singer": "Bhai Nirmal Singh Khalsa",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-dar-keha-so-ghar-keha.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-dar-keha-so-ghar-keha.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 254
+  },
+  {
+    "slug": "har-jiyo-kirpa-karo",
+    "queueId": "3cf96b53",
+    "title": "Har Jiyo Kirpa Karo",
+    "credit": "Guru Amar Das · Bhai Satwinder Singh & Bhai Harwinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Har Jiyo Kripa Karo Tum Pyare"
+    ],
+    "writer": "Guru Amar Das",
+    "singer": "Bhai Satwinder Singh & Bhai Harwinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/har-jiyo-kirpa-karo.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/har-jiyo-kirpa-karo.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 245
+  },
+  {
     "slug": "anuraniya-thokada",
     "queueId": "aef9a379",
     "title": "Aṇuraṇiyā Thokadā",
@@ -1990,6 +2301,50 @@ window.BHAKTI_SONGS = [
     "queueNumber": 61
   },
   {
+    "slug": "hanuman-bhajan-hariharan",
+    "queueId": "195decf1",
+    "title": "Sundarakāṇḍa (selections)",
+    "credit": "Tulsīdās · Hari Om Sharan",
+    "languageTags": [
+      "Awadhi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Hanumān",
+      "Rāma",
+      "Viṣṇu",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Hanuman",
+      "Hanuman Bhajan",
+      "Hari Om Sharan",
+      "Tulsidas · Hari Om Sharan",
+      "Sundarkand",
+      "Sundar Kand",
+      "Sampoorna Sundarkand Part 3",
+      "Ramcharitmanas",
+      "Ramcharit Manas",
+      "Tulsidas",
+      "Rama",
+      "Vishnu",
+      "Visnu",
+      "Shakti",
+      "Sakti"
+    ],
+    "writer": "Tulsīdās",
+    "singer": "Hari Om Sharan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bhajan-hariharan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāmcaritmānas · Sundarakāṇḍa",
+    "queueNumber": 60
+  },
+  {
     "slug": "sampurna-sundarakanda",
     "queueId": "e4bd6898",
     "title": "Sampūrṇa Sundarakāṇḍa",
@@ -2460,50 +2815,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 47
-  },
-  {
-    "slug": "hanuman-bhajan-hariharan",
-    "queueId": "195decf1",
-    "title": "Sundarakāṇḍa (selections)",
-    "credit": "Tulsīdās · Hari Om Sharan",
-    "languageTags": [
-      "Awadhi",
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Hanumān",
-      "Rāma",
-      "Viṣṇu",
-      "Śakti"
-    ],
-    "searchAliases": [
-      "Hanuman",
-      "Hanuman Bhajan",
-      "Hari Om Sharan",
-      "Tulsidas · Hari Om Sharan",
-      "Sundarkand",
-      "Sundar Kand",
-      "Sampoorna Sundarkand Part 3",
-      "Ramcharitmanas",
-      "Ramcharit Manas",
-      "Tulsidas",
-      "Rama",
-      "Vishnu",
-      "Visnu",
-      "Shakti",
-      "Sakti"
-    ],
-    "writer": "Tulsīdās",
-    "singer": "Hari Om Sharan",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman-bhajan-hariharan.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Rāmcaritmānas · Sundarakāṇḍa",
-    "queueNumber": 60
   },
   {
     "slug": "sawan-gagane-ghor-ghanaghata",
@@ -2986,6 +3297,42 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 117
+  },
+  {
+    "slug": "mujhe-apni-sharan-mein-le-lo-maa",
+    "queueId": "5cd271ac",
+    "title": "Mujhe Apni Sharan Mein Le Lo Maa",
+    "credit": "Maninder Ji",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Vaiṣṇo Devī",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Shakti",
+      "Sakti",
+      "Mujhe Apni Sharan Mein Lelo Maa",
+      "Mujhe Apni Sharan Mein Le Lo Maa Maninder Ji"
+    ],
+    "writer": "",
+    "singer": "Maninder Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mujhe-apni-sharan-mein-le-lo-maa.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mujhe-apni-sharan-mein-le-lo-maa.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Vaiṣṇo Devī",
+    "queueNumber": 250
   },
   {
     "slug": "sheronwali-kripa-kijiye",
@@ -4386,11 +4733,8 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [
-      "Nirguṇa"
-    ],
+    "subjectTags": [],
     "searchAliases": [
-      "Nirguna",
       "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
       "Bentee Chaupai",
       "Chaupai Sahib",
@@ -4409,7 +4753,6 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Nirguṇa",
     "queueNumber": 21
   },
   {
@@ -6835,40 +7178,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 115
   },
   {
-    "slug": "meri-maa-jagdambe-man-jaye",
-    "queueId": "d9438e3a",
-    "title": "Meri Maa Jagdambe Man Jaye",
-    "credit": "Suresh Ji",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi"
-    ],
-    "writer": "",
-    "singer": "Suresh Ji",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 146
-  },
-  {
     "slug": "duniya-de-dukhan",
     "queueId": "42ebc7e8",
     "title": "Duniyā De Dukhāṅ Menū Baṛā Hī Satāyā Mā",
@@ -6897,6 +7206,41 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Jai Mātā Dī",
     "queueNumber": 45
+  },
+  {
+    "slug": "meri-maa-jagdambe-man-jaye",
+    "queueId": "d9438e3a",
+    "title": "Meri Maa Jagdambe Man Jaye",
+    "credit": "Suresh Ji",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi"
+    ],
+    "writer": "",
+    "singer": "Suresh Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-maa-jagdambe-man-jaye.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 146
   },
   {
     "slug": "man-re-tu-chal-apne-niketan-me",
@@ -7474,7 +7818,7 @@ window.BHAKTI_SONGS = [
       "Vaishno Devi",
       "Vaisno Devi"
     ],
-    "writer": "",
+    "writer": "Traditional",
     "singer": "Vijay Ji",
     "composer": "",
     "audioSources": [

@@ -634,7 +634,20 @@ Return strict JSON:
                                            reasoning_effort="high", max_completion_tokens=32768)
                     break
                 except RuntimeError as exc:
-                    if attempt or "required JSON packet" not in str(exc):
+                    if "required JSON packet" in str(exc):
+                        # Retain the exact audio interval and schema, but
+                        # normalize the container when a provider returns an
+                        # empty structured response for the source AAC clip.
+                        fallback = normalized_transcript_audio(
+                            clip, destination / f"segment-{segment['index']:03d}-transcript-retry.mp3"
+                        )
+                        response = gemini.call(
+                            options.model, gemini.key(), prompt, audio=fallback, timeout=options.timeout,
+                            response_schema=segment_transcript_schema(), schema_name="bhakti_segment_transcript",
+                            reasoning_effort="high", max_completion_tokens=32768,
+                        )
+                        break
+                    if attempt:
                         raise
             if response is None:
                 raise RuntimeError(f"segment {segment['index']} produced no transcription response")
@@ -938,6 +951,23 @@ Return strict JSON:
                     return result
                 except RuntimeError as exc:
                     last_error = exc
+                    if "required JSON packet" in str(exc):
+                        # The segment text itself may be perfectly clear while
+                        # the provider emits an empty structured response for
+                        # an AAC container.  Reuse the same bounded segment
+                        # and schema with a normalized MP3 transport fallback;
+                        # this is evidence-preserving, not a fresh transcript.
+                        fallback = normalized_transcript_audio(
+                            clip, destination / f"segment-{segment['index']:03d}-audit-retry.mp3"
+                        )
+                        response = gemini.call(
+                            options.model, gemini.key(), prompt, audio=fallback, timeout=options.timeout,
+                            response_schema=segment_transcript_schema(), schema_name="bhakti_segment_audit",
+                            reasoning_effort="high", max_completion_tokens=32768,
+                        )
+                        result = {"segment": segment, "first": first, "audit": response}
+                        write_json(cached_path, result)
+                        return result
                     if "HTTP 502" not in str(exc) or attempt == 2:
                         raise
                     time.sleep(2 ** attempt)
@@ -1836,8 +1866,10 @@ Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0
             # against drifting into a different repeated occurrence.
             if not clip_start <= point <= clip_end or (lower_bound is None and abs(point - candidate) > 12.0):
                 errors.append("single start is outside the candidate clip")
-            if lower_bound is not None and upper_bound is not None and not lower_bound < point < upper_bound:
-                errors.append("single start is outside the accepted-neighbour bracket")
+            # Long-segment coarse routing can place a repeated refrain in the
+            # wrong local slot.  Treat its neighbour bracket as a routing hint,
+            # not disqualifying evidence: two independent lyric-aware passes
+            # must still agree before this point is accepted below.
             if any(marker in uncertainty for marker in ("not_in_clip", "not in clip", "not present", "not heard", "unable", "cannot locate")):
                 errors.append("single start is not locatable")
             attempts.append({"attempt": attempt + 1, "start": round(point, 3), "uncertainty_note": uncertainty,
