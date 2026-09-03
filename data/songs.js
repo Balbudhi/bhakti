@@ -7311,7 +7311,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
