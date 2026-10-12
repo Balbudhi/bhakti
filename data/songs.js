@@ -4753,19 +4753,22 @@ window.BHAKTI_SONGS = [
   {
     "slug": "arunachala-akshara-mana-malai",
     "queueId": "927edb40",
-    "title": "Arunachala Akshara Mana Malai",
+    "title": "Aruṇācala Akṣaramaṇamālai",
     "credit": "Ramana Maharshi",
     "languageTags": [
       "Tamil"
     ],
     "subjectTags": [
-      "Arunāchala",
+      "Aruṇācala",
       "Śiva"
     ],
     "searchAliases": [
-      "Arunachala",
+      "Arunacala Aksharamanamalai",
+      "Arunacala Aksaramanamalai",
+      "Arunacala",
       "Shiva",
       "Siva",
+      "Arunachala",
       "Arunachala Aksharamanamalai",
       "Marital Garland of Letters"
     ],
@@ -4774,15 +4777,15 @@ window.BHAKTI_SONGS = [
     "composer": "",
     "audioSources": [
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.webm",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.webm",
         "type": "audio/webm; codecs=opus"
       },
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.m4a",
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Arunāchala",
+    "subtitle": "Aruṇācala",
     "queueNumber": 12
   },
   {

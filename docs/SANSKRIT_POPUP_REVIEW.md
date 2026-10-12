@@ -90,3 +90,37 @@ retain the audible wording and explain only what the evidence supports.
 This document proposes short word-card text only.  It does not authorize
 retrofitting source script, word boundaries, or a formal Pāṇinian parse without
 a verified Sanskrit witness, as required by the Vedanta translation standard.
+
+## Aruṇācala Akṣaramaṇamālai review (2026-10-11)
+
+The Tamil reader was reviewed as a complete work: 108 verses, invocation,
+refrains and benediction (115 distinct lines and 775 popup word records).
+The English was derived from the contextual word readings and compared with
+K. Swaminathan's Sri Ramanasramam [Five Hymns to Arunachala](https://www.gururamana.org/Teachings/five_hymns.pdf)
+and Sadhu Om / Michael James's [Sri Arunachala Stuti Panchakam](https://sriramanateachings.org/Sri_Arunachala_Stuti_Panchakam.pdf).
+Their English was comparison evidence, not a replacement translation to copy.
+Tamil grammar and sung sandhi govern this reader; Sanskrit look-alikes do not
+justify replacing Tamil meanings (notably nām, “we”).
+
+- Gaṇapati means leader of the gaṇas, explained as Śiva's attendant beings.
+  Aruṇācala is the red mountain; Śiva, Ramaṇa and other meaningful names receive
+  contextual explanations rather than repeated names.
+- Both aḻaku and sundaram mean beauty. The English makes the comparison
+  intelligible; popups retain the traditional allusion to the poet's parents.
+- Metaphors remain concrete: the fruit's juice, rays as hands, nectar-mouth,
+  garments, tears, the spider and its prey, and bones melting with love.
+- Where the commentaries support different readings, the selected English is
+  grammatically coherent and the relevant popup or grammar note distinguishes
+  the alternative. Interpretations are not combined into a synthetic reading.
+- Disputed source readings were checked with focused excerpts of the original
+  recording through the production Gemini API. Identical sound realizations
+  were resolved using the printed Tamil and syntax, not a fabricated acoustic
+  distinction. The original packets and editorial resolutions remain in the
+  song's private transcription records.
+
+The leading silence was removed by stream copy, retaining every subsequent
+encoded packet unchanged in both Opus and AAC. The measured Opus time shift is
+24.821 seconds (AAC differs by approximately 1 ms); all 123 displayed lyric
+starts and ends were shifted by that amount. The musical introduction remains.
+Versioned media filenames keep existing playback paired with its old timings
+until the updated reader loads.

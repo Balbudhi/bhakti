@@ -36,6 +36,15 @@ class PipelineTests(unittest.TestCase):
         pipeline.QUEUE_NUMBERS_PATH = self.original_queue_numbers_path
         self.temp.cleanup()
 
+    def test_page_description_uses_only_evidenced_singer(self) -> None:
+        # A poet credit must not become a performance attribution in search previews.
+        meta = {"title": "Test poem", "credit": "The poet", "writer": "The poet"}
+        html = pipeline.page_html(meta, "test-poem")
+        self.assertNotIn("Sung by", html)
+        html = pipeline.page_html({**meta, "singer": "The singer"}, "test-poem")
+        self.assertIn("Sung by The singer.", html)
+        self.assertNotIn("Sung by The poet.", html)
+
     def test_local_mp3_is_transcoded_to_real_m4a(self) -> None:
         source = self.root / "input.mp3"
         subprocess.run([

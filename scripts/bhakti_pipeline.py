@@ -2849,7 +2849,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     canonical = f"{SITE_ORIGIN}/songs/{slug}/"
     subtitle = str(meta.get("subtitle") or "").strip()
     heading = f"{title} — {subtitle}" if subtitle else title
-    performer = str(meta.get("credit") or "").strip()
+    performer = str(meta.get("singer") or meta.get("vocalist") or "").strip()
     song_asset_version = str(meta.get("songAssetVersion") or "contract-20260827-10")
     data_asset_version = str(meta.get("dataAssetVersion") or "contract-20260827-8")
     description = (f"{heading}: synchronised devotional lyrics with IAST transliteration, "

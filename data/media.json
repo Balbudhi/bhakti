@@ -119,14 +119,14 @@
     ],
     "arunachala-akshara-mana-malai": [
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.webm",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.webm",
         "type": "audio/webm; codecs=opus",
-        "sha256": "9eaa4da8219a178c2b7cd20705055ade3725d3ef0fd1ed4a0eca2b4aa91187c1"
+        "sha256": "a1be9c38b2c4307da5b2f973f571057392e59be4ce3a8c4260f44d3e0340259f"
       },
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.m4a",
         "type": "audio/mp4",
-        "sha256": "62dc0b1070d0e01f3d8942c3343034e67d5427e8661232c76f3977c9a93ac88a"
+        "sha256": "c9d82daa30eb7e27802c7299a89808d04a7e4a3093afdb7f455ef96c0be604b4"
       }
     ],
     "auga-na-jauga": [

@@ -1,38 +1,47 @@
 window.SONG_META = {
-  "title": "Arunachala Akshara Mana Malai",
-  "subtitle": "Arunāchala",
+  "title": "Aruṇācala Akṣaramaṇamālai",
+  "subtitle": "Aruṇācala",
   "credit": "Ramana Maharshi",
   "pageCredit": "Ramana Maharshi",
   "writer": "Ramana Maharshi",
+  "writerAttribution": "",
+  "translator": "",
+  "translatorAttribution": "",
   "singer": "",
+  "vocalist": "",
   "composer": "",
+  "ensemble": "",
   "languages": [
     "Tamil"
   ],
   "subjectTags": [
-    "Arunāchala",
+    "Aruṇācala",
     "Śiva"
   ],
   "searchAliases": [
-    "Arunachala",
+    "Arunacala Aksharamanamalai",
+    "Arunacala Aksaramanamalai",
+    "Arunacala",
     "Shiva",
     "Siva",
+    "Arunachala",
     "Arunachala Aksharamanamalai",
     "Marital Garland of Letters"
   ],
   "audioSources": [
     {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.m4a",
       "type": "audio/mp4"
     }
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "dataAssetVersion": "arunachala-20261011"
 };
 
 window.SONG_LINES = {
@@ -66,11 +75,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aruṇācala vararkēṟṟa akṣaramaṇamālai cāttak",
-    "english": "{3:To adorn }{2:the bridal garland of letters }{1:suited to the Bridegroom }{0:Arunachala,}",
+    "english": "{3:To offer }{2:this wedding garland of letters, }{1:worthy of the bridegroom }{0:Aruṇācala,}",
     "words": [
       {
         "roman": "aruṇācala",
-        "gloss": "of Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -82,17 +91,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "akṣaramaṇamālai",
-        "gloss": "bridal garland of letters",
+        "gloss": "bridal garland of letters; akṣara also means imperishable",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cāttak",
-        "gloss": "in order to adorn",
+        "gloss": "to place upon; to offer as a garland",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Dative compound vararku + ēṟṟa (fit for the bridegroom); cātta + k is a purposive infinitive governing the compound accusative object akṣaramaṇamālai."
   },
   "line-001": {
@@ -125,33 +135,34 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karuṇākara kaṇapatiyē karamaruḷik kāppāyē",
-    "english": "{1:O Ganapati, }{0:ocean of compassion, }{2:bestow your hand }{3:and protect!}",
+    "english": "{1:O Gaṇapati, }{0:treasure of compassion, }{2:lend Your gracious hand }{3:and protect me!}",
     "words": [
       {
         "roman": "karuṇākara",
-        "gloss": "O ocean of compassion",
+        "gloss": "treasure or source of compassion (karuṇā, compassion, + ākara, source or store)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṇapatiyē",
-        "gloss": "O Gaṇeśa, leader and guardian of the attendant hosts",
+        "gloss": "leader of the gaṇas, Śiva’s attendant beings; the elephant-headed Gaṇeśa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karamaruḷik",
-        "gloss": "bestowing your hand",
+        "gloss": "graciously extending Your hand",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kāppāyē",
-        "gloss": "please protect",
+        "gloss": "protect me",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Vocatives karuṇākara and kaṇapatiyē; karam (hand/trunk) + aruḷi (bestowing) + kāppāyē (2nd person singular optative/imperative with addressing -ē)."
   },
   "line-002": {
@@ -202,51 +213,52 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aruṇācala civa aruṇācala civa aruṇācala civa aruṇācalā",
-    "english": "{0:Arunachala }{1:Shiva, }{2:Arunachala }{3:Shiva, }{4:Arunachala }{5:Shiva, }{6:Arunachala!}",
+    "english": "{0:Aruṇācala }{1:Śiva, }{2:Aruṇācala }{3:Śiva, }{4:Aruṇācala }{5:Śiva, }{6:Aruṇācala!}",
     "words": [
       {
         "roman": "aruṇācala",
-        "gloss": "Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "civa",
-        "gloss": "Shiva",
+        "gloss": "the auspicious one; the deity worshipped here as the sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācala",
-        "gloss": "Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "civa",
-        "gloss": "Shiva",
+        "gloss": "the auspicious one; the deity worshipped here as the sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācala",
-        "gloss": "Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "civa",
-        "gloss": "Shiva",
+        "gloss": "the auspicious one; the deity worshipped here as the sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Repetition of the divine compound names ending in the lengthened vocative suffix -ā."
   },
   "line-003": {
@@ -291,17 +303,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aruṇācalamena akamē ninaippavar akattai vēraṟuppāy aruṇācalā",
-    "english": "{4:You uproot }{3:the ego of }{2:those who think }{0:'Arunachala' }{1:within the heart itself, }{5:O Arunachala!}",
+    "english": "{4:You uproot }{3:the ego of }{2:those who think }{0:'Aruṇācala' }{1:within the heart itself, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "aruṇācalamena",
-        "gloss": "as Arunachala",
+        "gloss": "saying or thinking “Aruṇācala”, the red mountain; Śiva as the sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "akamē",
-        "gloss": "within the heart itself",
+        "gloss": "in the heart itself; also “I myself” in the reading “I am Aruṇācala”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -313,7 +325,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "akattai",
-        "gloss": "the ego",
+        "gloss": "the ego; the sense of being a separate I",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -325,15 +337,16 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "aruṇācalam + ena (adverbial marker); akamē has emphatic -ē; ninaippavar is a participatory noun (plural); akattai is accusative of akam; vēraṟuppāy is compound verb vēr + aṟu (2nd pers. sing. habitual/future)."
+    "nameTable": false,
+    "grammarNote": "The repeated akam supports two connected readings: remembering Aruṇācala in the heart, and remembering “I am Aruṇācala”. The last akam is the separate ego that is uprooted."
   },
   "line-004": {
-    "source": "அழகு சுந்தரம்போல் அகமும் நீயுமாய் அபின்னமாய் இருப்போம் அருணாசலா",
+    "source": "அழகு சுந்தரம்போல் அகமும் நீயும் உற்று அபின்னமாய் இருப்போம் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -356,83 +369,96 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "நீயுமாய்",
+        "text": "நீயும்",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "அபின்னமாய்",
+        "text": "உற்று",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "இருப்போம்",
+        "text": "அபின்னமாய்",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "அருணாசலா",
+        "text": "இருப்போம்",
         "wordIndices": [
           7
         ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          8
+        ]
       }
     ],
-    "roman": "aḻaku cuntaram pōl akamum nīyumāy apinnamāy iruppōm aruṇācalā",
-    "english": "{2:Like }{0:‘aḻaku’ }{1:and ‘sundaram,’ }{3,4:may I and You }{6:abide }{5:as non-different, }{7:O Arunachala!}",
+    "roman": "aḻaku cuntaram pōl akamum nīyum uṟṟu apinnamāy iruppōm aruṇācalā",
+    "english": "{2:Like }{0:aḻaku }{1:and sundaram}{0,1:—both “beauty”—}{3,4:may I and You }{5:unite }{7:and remain }{6:inseparably one, }{8:O Aruṇācala!}",
     "words": [
       {
         "roman": "aḻaku",
-        "gloss": "beauty",
+        "gloss": "beauty in Tamil; also recalls Ramaṇa’s mother Aḻaku",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cuntaram",
-        "gloss": "sundaram",
+        "gloss": "beauty in Sanskrit; also recalls Ramaṇa’s father Sundaram",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pōl",
-        "gloss": "just as",
+        "gloss": "like",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "akamum",
-        "gloss": "the Self",
+        "gloss": "I, with “and”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nīyumāy",
+        "roman": "nīyum",
         "gloss": "and You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
+        "roman": "uṟṟu",
+        "gloss": "joining; uniting",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
         "roman": "apinnamāy",
-        "gloss": "non-different",
+        "gloss": "undivided; not different",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "iruppōm",
-        "gloss": "let us abide",
+        "gloss": "may we remain",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "aḻaku (Tamil) and cuntaram (Sanskrit) are synonyms; akamum nīyumāy joins both subjects with conjunctive -um; apinnamāy is adverbial predicate formed with -āy; iruppōm is 1st person plural future/optative."
+    "nameTable": false,
+    "grammarNote": "Aḻaku and sundaram both mean beauty, in Tamil and Sanskrit respectively; they also recall Ramaṇa’s mother Aḻaku and father Sundaram. Their different names and single meaning give the comparison its force. Akamum means “and I”; nīyum uṟṟu means “and You, uniting”."
   },
   "line-005": {
     "source": "அகம் புகுந்து ஈர்த்துன் அககுகை சிறையாய் அமர்வித்தது என்கொல் அருணாசலா",
@@ -488,11 +514,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "akam pukuntu īrttun akakukai ciṟaiyāy amarvittatu enkol aruṇācalā",
-    "english": "{1:Entering }{0:the heart }{2:and drawing me into }{2,3:Your heart-cave, }{6:what is this }{5:making me settle }{4:as a prisoner, }{7:O Arunachala?}",
+    "english": "{1:You entered }{0:my heart, }{2:drew me in, }{5:and kept me }{4:captive }{2,3:in Your heart’s cave—}{6:what is this, }{7:O Aruṇācala?}",
     "words": [
       {
         "roman": "akam",
-        "gloss": "into the heart",
+        "gloss": "my heart; also the inner home",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -504,41 +530,42 @@ window.SONG_LINES = {
       },
       {
         "roman": "īrttun",
-        "gloss": "pulling in and your",
+        "gloss": "having drawn me in; Your",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "akakukai",
-        "gloss": "heart-cave",
+        "gloss": "the cave of the heart; the inward dwelling of the Self",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ciṟaiyāy",
-        "gloss": "as a prisoner",
+        "gloss": "as a captive",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "amarvittatu",
-        "gloss": "making settle",
+        "gloss": "made to remain; kept",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "enkol",
-        "gloss": "what is this",
+        "gloss": "what is this?; why?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "akam (noun used locatively); pukuntu and īrttu are adverbial past participles; īrttu + un joins in sandhi; amarvittatu is a causative participial noun (neuter singular); enkol is an interrogative particle."
   },
   "line-006": {
@@ -589,7 +616,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ārukkā veṉai āṇṭanai akaṟṟiṭil akilam paḻittiṭum aruṇācalā",
-    "english": "{0:For whose sake }{2:did You claim }{1:me? }{3:If You cast me off, }{4:the world }{5:will reproach You, }{6:O Arunachala!}",
+    "english": "{0:For whose sake }{2:did You claim }{1:me? }{3:If You cast me off, }{4:the world }{5:will reproach You, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "ārukkā",
@@ -629,11 +656,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "ārukku + ā (dative interrogative with emphatic/question suffix); v-enai has sandhi glide v-; āṇṭanai is 2nd pers. sing. past; akaṟṟiṭil is conditional (akaṟṟu + iṭil); paḻittiṭum is future/habitual 3rd pers. neuter."
   },
   "line-007": {
@@ -684,7 +712,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ippaḻi tappunai ēṉinaippittāy ini yār viṭuvār aruṇācalā",
-    "english": "{1:To escape }{0:this blame, }{2:why did You make me remember }{1:You? }{4:Who }{5:will let You go }{3:now, }{6:O Arunachala?}",
+    "english": "{1:Escape }{0:this blame! }{2:Why did You make me remember }{1:You? }{3:Now, }{4:who }{5:can let go, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "ippaḻi",
@@ -694,13 +722,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "tappunai",
-        "gloss": "escape to you",
+        "gloss": "escape; You (tappu + unai)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ēṉinaippittāy",
-        "gloss": "why did you make remember",
+        "gloss": "why did You cause me to remember?",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -718,18 +746,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṭuvār",
-        "gloss": "will let go",
+        "gloss": "will let go; can leave",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "ippaḻi (proximate demonstrative compound); tappu (infinitive/imperative base) + unai; ēṉ (why) + ninaippittāy (causative 2nd pers. sing. past); yār (interrogative pronoun); viṭuvār (3rd pers. epicene future)."
+    "nameTable": false,
+    "grammarNote": "Tappunai joins tappu, “escape”, with unai, “You”, the object of remember. The final question does not specify whom one lets go of; it can apply to either lover."
   },
   "line-008": {
     "source": "ஈன்றிடும் அன்னையிற் பெரிதருள் புரிவோய் இதுவோ உனதருள் அருணாசலா",
@@ -779,11 +808,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "īnṟiṭum annaiyiṟ peritaruḷ purivōy iduvō unataruḷ aruṇācalā",
-    "english": "{3:O One who bestows }{2:greater grace }{1:than a mother }{0:who gave birth, }{4:is this }{5:Your grace, }{6:O Arunachala?}",
+    "english": "{2,3:O You whose grace exceeds that }{1:of the mother }{0:who bore me, }{4:is this }{5:Your grace, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "īnṟiṭum",
-        "gloss": "who gave birth",
+        "gloss": "who gives birth; the mother who bore me",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -819,25 +848,26 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "īnṟiṭum is relative participle; annaiyiṟ is ablative of comparison (-il/-iṉ); peritu + aruḷ compound; purivōy is participatory noun vocative; unataruḷ is genitive compound (unatu + aruḷ)."
   },
   "line-009": {
-    "source": "உனையே காட்டி யோடாது உளத்தின்மேல் உறுதியாய் இருப்பாய் அருணாசலா",
+    "source": "உனை ஏமாற்றி யோடாது உளத்தின்மேல் உறுதியாய் இருப்பாய் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "உனையே",
+        "text": "உனை",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "காட்டி",
+        "text": "ஏமாற்றி",
         "wordIndices": [
           1
         ]
@@ -873,36 +903,36 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "unaiyē kāṭṭi yōṭātu uḷattinmēl uṟutiyāy iruppāy aruṇācalā",
-    "english": "{1:Having revealed }{0:Yourself alone, }{2:without running away, }{5:remain }{4:steadfast }{3:upon the heart, }{6:O Arunachala!}",
+    "roman": "unai ēmāṟṟi yōṭātu uḷattinmēl uṟutiyāy iruppāy aruṇācalā",
+    "english": "{5:Remain }{4:firmly }{3:upon my mind, }{2:so that it cannot run away, }{1:deceiving }{0:You, }{6:O Aruṇācala!}",
     "words": [
       {
-        "roman": "unaiyē",
-        "gloss": "Yourself alone",
+        "roman": "unai",
+        "gloss": "You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kāṭṭi",
-        "gloss": "having revealed",
+        "roman": "ēmāṟṟi",
+        "gloss": "deceiving; cheating",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yōṭātu",
-        "gloss": "without running away",
+        "gloss": "so that it does not run away",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "uḷattinmēl",
-        "gloss": "upon the heart",
+        "gloss": "upon the mind or heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "uṟutiyāy",
-        "gloss": "steadfastly",
+        "gloss": "firmly; steadfastly",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -914,15 +944,16 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "unai + ē (accusative with emphatic -ē); kāṭṭi (past participle); y-ōṭātu (negative adverbial participle with sandhi y-); uḷattin + mēl (locative postposition); uṟutiyāy (adverbial); iruppāy (2nd pers. sing. optative)."
+    "nameTable": false,
+    "grammarNote": "The mind is the implied subject of deceiving and running; Aruṇācala is addressed by iruppāy, remain. This continues the appeal to hold the mind within."
   },
   "line-010": {
-    "source": "ஊர்சுற்ற வுளவிடா துனைக்கண் டடங்கிட வுன்னழ கைக்காட் டருணாசலா",
+    "source": "ஊர்சுற்ற வுளவிடாது உனைக்கண்டு அடங்கிட வுன்னழகைக் காட்டருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -932,83 +963,78 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "வுளவிடா",
+        "text": "வுளவிடாது",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "துனைக்கண்",
+        "text": "உனைக்கண்டு",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "டடங்கிட",
+        "text": "அடங்கிட",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "வுன்னழ",
+        "text": "வுன்னழகைக்",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "கைக்காட்",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "டருணாசலா",
+        "text": "காட்டருணாசலா",
         "wordIndices": [
           5
         ]
       }
     ],
-    "roman": "ūrcuṟṟa vuḷaviṭā tuṉaikkaṇ ṭaṭaṅkiṭa vuṉṉaḻakaik kāṭṭaruṇācalā",
-    "english": "{1:Without leaving room }{0:to wander about, }{5:show }{4:Your beauty }{2:so that, seeing You, }{3:it may subside, }{5:O Arunachala!}",
+    "roman": "ūrcuṟṟa vuḷaviṭātu uṉaikkaṇṭu aṭaṅkiṭa vuṉṉaḻakaik kāṭṭaruṇācalā",
+    "english": "{5:Show }{4:Your beauty, }{2:so that, seeing You, }{3:I may grow still, }{1:with no room left }{0:for wandering, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "ūrcuṟṟa",
-        "gloss": "to wander outside",
+        "gloss": "to wander about the town or world",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vuḷaviṭā",
-        "gloss": "without leaving room",
+        "roman": "vuḷaviṭātu",
+        "gloss": "leaving no room",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tuṉaikkaṇ",
-        "gloss": "seeing you",
+        "roman": "uṉaikkaṇṭu",
+        "gloss": "seeing You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṭaṭaṅkiṭa",
-        "gloss": "to subside",
+        "roman": "aṭaṅkiṭa",
+        "gloss": "so that I may subside; become still",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vuṉṉaḻakaik",
-        "gloss": "your beauty",
+        "gloss": "Your beauty",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kāṭṭaruṇācalā",
-        "gloss": "show O Arunachala",
+        "gloss": "show; O Aruṇācala, the red mountain worshipped as Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi fuses multiple words: ūr-cuṟṟa + uḷam-viṭātu + unai-kaṇṭu + aṭaṅkiṭa + un-aḻakai-k + kāṭṭu + aruṇācalā. Infinitive purpose clauses (ūrcuṟṟa, aṭaṅkiṭa) dependent on imperative kāṭṭu."
+    "nameTable": false,
+    "grammarNote": "Uḷaviṭātu means leaving no room; the speaker is the one who sees the beauty and becomes still. The request keeps the outward-wandering and inward-stilling contrast."
   },
   "line-011": {
     "source": "எனையழித் திப்போ தெனைக் கலவாவிடில் இதுவோ ஆண்மை அருணாசலா",
@@ -1058,7 +1084,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "enaiyaḻit tippō teṉaik kalavāviṭil iduvō āṇmai aruṇācalā",
-    "english": "{0:Having destroyed me }{1:now, }{3:if You do not merge }{2:with me, }{4:is this }{5:manliness, }{6:O Arunachala?}",
+    "english": "{0:Having destroyed me }{1:now, }{3:if You do not merge }{2:with me, }{4:is this }{5:manliness, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "enaiyaḻit",
@@ -1098,11 +1124,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi breaks: enai-aḻittu + ippōtu + enai-k + kalavā-viṭil. kalavāviṭil is negative conditional (kalavātu + viṭil); āṇmai is abstract noun of virility/courage."
   },
   "line-012": {
@@ -1153,7 +1180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ēṉinta vuṟakkam eṉaippiṟar iḻukka iduvunak kaḻakō aruṇācalā",
-    "english": "{0:Why this }{1:slumber }{2:while others }{2,3:drag me away? }{4:Is this }{5:befitting }{4:You, }{6:O Arunachala?}",
+    "english": "{0:Why this }{1:slumber }{2:while others }{2,3:drag me away? }{4:Is this }{5:befitting }{4:You, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "ēṉinta",
@@ -1169,7 +1196,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "eṉaippiṟar",
-        "gloss": "while others me",
+        "gloss": "me; others (eṉai + piṟar)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1181,7 +1208,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "iduvunak",
-        "gloss": "this to you",
+        "gloss": "this; for You (itu + unakku)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1193,11 +1220,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "ēṉ + inta; v-uṟakkam with euphonic glide; enai + piṟar (accusative pronoun + subject); iḻukka is infinitive of attendant circumstance; idu + unakku + aḻaku + ō."
   },
   "line-013": {
@@ -1248,17 +1276,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aimpulak kaḷvar akattinil pukumpōtu akattinī illaiyō aruṇācalā",
-    "english": "{3:When }{1:the robbers }{0:of the five senses }{3:enter }{2:into the heart, }{4:are You }{5:not }{4:inside, }{6:O Arunachala?}",
+    "english": "{3:When }{0,1:the five sense-thieves }{3:enter }{2:my heart, }{4,5:are You not there within, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "aimpulak",
-        "gloss": "of the five senses",
+        "gloss": "the five senses, pictured as thieves",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaḷvar",
-        "gloss": "robbers",
+        "gloss": "thieves",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1276,23 +1304,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "akattinī",
-        "gloss": "inside are you",
+        "gloss": "You within",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "illaiyō",
-        "gloss": "not present",
+        "gloss": "are You not there?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "aim-pulan-k (compound noun); kaḷvar is plural noun; akattinil is locative; pukumpōtu is temporal participle; akattil + nī (locative + 2nd pers. pronoun); illaiyō is negative existential interrogative."
   },
   "line-014": {
@@ -1342,53 +1371,54 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "oruvanā munnai yoḷittevar varuvār uṉcūtē yitu aruṇācalā",
-    "english": "{2,3:Who can come, }{1,2:hiding from You }{0:who are the sole One? }{5:This is }{4:indeed Your trickery, }{6:O Arunachala!}",
+    "roman": "oruvanām unnai yoḷittevar varuvār uṉcūtē yitu aruṇācalā",
+    "english": "{2:Who }{3:could enter }{2:unseen by }{1:You, }{0:the One alone? }{5:This }{4:is Your own trick, }{6:O Aruṇācala!}",
     "words": [
       {
-        "roman": "oruvanā",
-        "gloss": "as the sole One",
+        "roman": "oruvanām",
+        "gloss": "who is the sole One",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "munnai",
-        "gloss": "before you",
+        "roman": "unnai",
+        "gloss": "You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yoḷittevar",
-        "gloss": "hiding who",
+        "gloss": "who, hidden from You? (oḷittu + evar)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "varuvār",
-        "gloss": "can come",
+        "gloss": "can enter",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "uṉcūtē",
-        "gloss": "your trickery indeed",
+        "gloss": "Your own trick indeed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yitu",
-        "gloss": "this is",
+        "gloss": "this",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "oruvan-ām (predicative noun) + unnai (accusative); oḷittu + evar (participle + interrogative pronoun); varuvār (3rd pers. future); un + cūtu + ē (genitive + noun + emphatic); y-itu (demonstrative pronoun)."
+    "nameTable": false,
+    "grammarNote": "The metrical text crosses word boundaries: oruvan-ām unnai oḷittu evar varuvār. The question asks who could enter hidden from the sole One; it continues the preceding thieves image."
   },
   "line-015": {
     "source": "ஓங்காரப் பொருள் ஒப்புயர்வில்லோய் உனை யார் அறிவார் அருணாசலா",
@@ -1438,23 +1468,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ōṅkārap poruḷ oppuyarvillōy unai yār aṟivār aruṇācalā",
-    "english": "{1:O Reality }{0:of Omkara, }{2:One without equal or superior, }{4:who }{5:can know }{3:You, }{6:O Arunachala?}",
+    "english": "{1:O meaning }{0:of Oṃ, }{2:without equal or superior, }{4:who }{5:can know }{3:You, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "ōṅkārap",
-        "gloss": "of the sacred syllable Om",
+        "gloss": "of Oṃ, the sacred syllable",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "poruḷ",
-        "gloss": "reality",
+        "gloss": "meaning; reality signified",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "oppuyarvillōy",
-        "gloss": "O peerless and unequalled One",
+        "gloss": "O One with neither equal nor superior",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1478,11 +1508,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "ōṅkāram + poruḷ (compound); oppu (equal) + uyarvu (higher) + illōy (appellative vocative 'O one without...'); unai is accusative; yār is interrogative pronoun; aṟivār is 3rd pers. epicene future."
   },
   "line-016": {
@@ -1533,7 +1564,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "auvaipōl eṉakkun aruḷait tanteṉai āḷuvatun kaṭan aruṇācalā",
-    "english": "{0:Like a mother, }{1,2,3:giving me Your grace }{3,4:and taking charge of me }{4,5:is Your duty, }{6:O Arunachala!}",
+    "english": "{0:Like a mother, }{1,2,3:giving me Your grace }{3,4:and taking charge of me }{4,5:is Your duty, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "auvaipōl",
@@ -1543,7 +1574,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "eṉakkun",
-        "gloss": "to me your",
+        "gloss": "to me; Your (eṉakku + un)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1555,13 +1586,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "tanteṉai",
-        "gloss": "giving and me",
+        "gloss": "having given; me (tantu + eṉai)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "āḷuvatun",
-        "gloss": "ruling is your",
+        "gloss": "taking charge; Your (āḷuvatu + un)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1573,11 +1604,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "auvai (mother / saint Avvai) + pōl; enakku + un (dative + genitive); aruḷai + t (accusative); tantu + enai (participle + accusative); āḷuvatu + un (verbal noun + genitive); kaṭan (predicate noun)."
   },
   "line-017": {
@@ -1628,17 +1660,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kaṇṇukkuk kaṇṇāyk kaṇṇinṟik kāṇuṉai kāṇuvatēvar pār aruṇācalā",
-    "english": "{1:As the Eye }{0:of the eye, }{3:seeing }{2:without eyes, }{3,4:who can see You? }{5:See me, }{6:O Arunachala!}",
+    "english": "{1:As the Eye }{0:of the eye, }{3:seeing }{2:without eyes, }{3,4:who can see You? }{5:See me, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "kaṇṇukkuk",
-        "gloss": "to the eye",
+        "gloss": "for the eye; the power by which the eye sees",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṇṇāyk",
-        "gloss": "as the Eye",
+        "gloss": "as the eye",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1656,7 +1688,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāṇuvatēvar",
-        "gloss": "who can see",
+        "gloss": "who can see?",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1668,11 +1700,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "kaṇṇukku + k (dative); kaṇ + āy + k (adverbial predicate); kaṇ + inṟi + k (negative adverbial participle); kāṇ (relative participle) + unai (accusative); kāṇuvatu (verbal noun) + ēvar (interrogative pronoun); pār (imperative)."
   },
   "line-018": {
@@ -1723,45 +1756,46 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāntam irumpupōl kavarnteṉai viṭāmal kalanteṉōṭiruppāy aruṇācalā",
-    "english": "{0:Like a magnet }{1:drawing iron, }{2:draw me }{3:without releasing, }{4:and abide united with me, }{5:O Arunachala!}",
+    "english": "{2:Draw me }{0,1:as a magnet draws iron, }{3:never let me go, }{4:and remain united with me, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "kāntam",
-        "gloss": "magnet",
+        "gloss": "a magnet",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "irumpupōl",
-        "gloss": "like iron",
+        "gloss": "as iron is drawn",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kavarnteṉai",
-        "gloss": "attracting me",
+        "gloss": "drawing me to You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "viṭāmal",
-        "gloss": "without releasing",
+        "gloss": "without letting go",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kalanteṉōṭiruppāy",
-        "gloss": "unite and abide with me",
+        "gloss": "uniting, remain with me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "kāntam (subject in simile) + irumpu-pōl; kavarntu + enai (past participle + accusative); viṭāmal (negative adverbial participle); kalantu + enōṭu + iruppāy (participle + sociative pronoun + 2nd pers. optative)."
   },
   "line-019": {
@@ -1812,7 +1846,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kiriyuruvākiya kirupaik kaṭalē kirupai kūrntaruḷuvāy aruṇācalā",
-    "english": "{2:O Ocean }{1:of grace }{0:who took the form of a mountain, }{3,4:bestow Your grace }{4:abundantly, }{5:O Arunachala!}",
+    "english": "{2:O Ocean }{1:of grace }{0:who took the form of a mountain, }{3,4:bestow Your grace }{4:abundantly, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "kiriyuruvākiya",
@@ -1846,11 +1880,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "kiri (mountain) + uru (form) + ākiya (relative participle); kirupai + k (genitive compound attribute) + kaṭalē (vocative); kirupai (accusative object); kūrntu (participle of intensity) + aruḷuvāy (optative)."
   },
   "line-020": {
@@ -1907,7 +1942,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kīḻmēl eṅkum kiḷaroḷi maṇiyeṉ kīḻmaiyaip pāḻcey aruṇācalā",
-    "english": "{2,3:O Gem of resplendent light }{0:shining below, above, }{1:and everywhere, }{5:destroy }{3:my }{4:baseness, }{6:O Arunachala!}",
+    "english": "{2,3:O Gem of resplendent light }{0:shining below, above, }{1:and everywhere, }{5:destroy }{3:my }{4:baseness, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "kīḻmēl",
@@ -1929,7 +1964,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṇiyeṉ",
-        "gloss": "O Gem my",
+        "gloss": "O jewel; my (maṇi + eṉ)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1947,11 +1982,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "kīḻ-mēl (compound adverb); eṅkum (universal adverb); kiḷar (shining) + oḷi (light); maṇi (vocative) + en (genitive); kīḻmai + ai + p (accusative of abstract noun); pāḻ + cey (compound imperative)."
   },
   "line-021": {
@@ -2008,29 +2044,29 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuṟṟamuṟṟaṟutteṉai guṇamāyp paṇittāḷ kuruvuruvāy oḷir aruṇācalā",
-    "english": "{4:Shining }{3:in the form of the Guru, }{0:cut away all my flaws completely, }{1:make me virtuous, }{2:and rule over me, }{5:O Arunachala!}",
+    "english": "{4:Shining }{3:as the teacher, }{0:root out all my faults, }{1:make me virtuous, }{2:and take charge of me, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "kuṟṟamuṟṟaṟutteṉai",
-        "gloss": "cutting off all flaws and me",
+        "gloss": "cutting away all faults completely; me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "guṇamāyp",
-        "gloss": "as virtuous",
+        "gloss": "virtuous; endowed with good qualities",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paṇittāḷ",
-        "gloss": "command and rule",
+        "gloss": "direct and rule over me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kuruvuruvāy",
-        "gloss": "in the form of the Guru",
+        "gloss": "in the form of the guru, the spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2042,11 +2078,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "kuṟṟam + muṟṟu + aṟuttu + enai; guṇam + āy + p (adverbial complement); paṇittu + āḷ (compound imperative: paṇittu 'having ordered/enslaved' + āḷ 'rule'); kuru + uru + āy (predicate); oḷir (relative participle/imperative root)."
   },
   "line-022": {
@@ -2097,51 +2134,52 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kūrvāṭ kaṇṇiyar koṭumaiyiṟ paṭātaruḷ kūrnteṉaic cērntaruḷ aruṇācalā",
-    "english": "{3:Without letting me fall }{2:into the cruelty }{0:of sword-eyed }{1:women, }{4:shower Your grace }{4,5:and unite with me, }{6:O Arunachala!}",
+    "english": "{3:Keep me from falling }{2:into the cruelty }{0,1:of women with sharp sword-like eyes; }{3,4:in abundant grace, }{4,5:unite with me, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "kūrvāṭ",
-        "gloss": "sharp sword",
+        "gloss": "a sharp sword",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṇṇiyar",
-        "gloss": "women with eyes like",
+        "gloss": "women whose eyes are like (swords)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koṭumaiyiṟ",
-        "gloss": "in the cruelty",
+        "gloss": "into the cruelty",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paṭātaruḷ",
-        "gloss": "without falling grace",
+        "gloss": "so that I do not fall; grace (paṭātu + aruḷ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kūrnteṉaic",
-        "gloss": "shower keen and me",
+        "gloss": "increasing or abounding; me (kūrntu + enai)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cērntaruḷ",
-        "gloss": "unite in grace",
+        "gloss": "graciously join with me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "kūr (sharp) + vāḷ (sword) + kaṇṇiyar (feminine plural noun); koṭumaiyil (locative); paṭātu (negative participle) + aruḷ (noun/verb); kūrntu + enai + c; cērntu + aruḷ (compound imperative)."
   },
   "line-023": {
@@ -2192,7 +2230,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "keñciyum vañciyāyk koñcamum iraṅkilai añcaleṉṟē aruḷ aruṇācalā",
-    "english": "{0:Though I beg, }{1:like a deceiver }{3:You do not relent }{2:in the least; }{4:say 'Fear not' }{5:and bestow Your grace, }{6:O Arunachala!}",
+    "english": "{0:Though I plead, }{1:like a deceiver }{3:You show no pity }{2:at all. }{4:Say “Do not fear,” }{5:and grant Your grace, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "keñciyum",
@@ -2214,13 +2252,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "iraṅkilai",
-        "gloss": "you do not relent",
+        "gloss": "You do not show compassion",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "añcaleṉṟē",
-        "gloss": "saying fear not",
+        "gloss": "saying “do not fear”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2232,11 +2270,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "keñci + um (concessive participle); vañci + āy + k (adverbial); koñcam + um (scalar emphatic); iraṅkilai (2nd pers. sing. negative past/present); añcal (imperative 'do not fear') + eṉṟu + ē; aruḷ (root imperative)."
   },
   "line-024": {
@@ -2287,11 +2326,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kēḷātaḷikkumun kēṭil pukaḻaik kēṭu ceyyātaruḷ aruṇācalā",
-    "english": "{3,4:Do not bring blemish }{0:upon Your }{1:flawless }{2:fame }{0:of giving unasked; }{4:bestow Your grace, }{5:O Arunachala!}",
+    "english": "{3,4:Do not bring blemish }{0:upon Your }{1:flawless }{2:fame }{0:of giving unasked; }{4:bestow Your grace, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "kēḷātaḷikkumun",
-        "gloss": "giving unasked your",
+        "gloss": "Your giving without being asked (kēḷātu + aḷikkum + un)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2315,25 +2354,26 @@ window.SONG_LINES = {
       },
       {
         "roman": "ceyyātaruḷ",
-        "gloss": "do not bring grant grace",
+        "gloss": "do not cause; grant grace (ceyyātu + aruḷ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "kēḷātu (negative participle) + aḷikkum (relative participle) + un (genitive); kēṭu + il (adjective 'ruinless'); pukaḻai + k (accusative); kēṭu (noun); ceyyātu (negative participle) + aruḷ (imperative)."
   },
   "line-025": {
-    "source": "கையினீர் கனியுன் கைரசங் கொண்டு நான் களிவெறி கொளஅருள் அருணாசலா",
+    "source": "கையினிற் கனியுன் மெய்ரசங் கொண்டு உவகை வெறி கொள அருள் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "கையினீர்",
+        "text": "கையினிற்",
         "wordIndices": [
           0
         ]
@@ -2341,106 +2381,119 @@ window.SONG_LINES = {
       {
         "text": "கனியுன்",
         "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "கைரசங்",
-        "wordIndices": [
+          1,
           2
         ]
       },
       {
-        "text": "கொண்டு",
+        "text": "மெய்ரசங்",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "நான்",
+        "text": "கொண்டு",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "களிவெறி",
+        "text": "உவகை",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "கொளஅருள்",
+        "text": "வெறி",
         "wordIndices": [
-          6,
+          6
+        ]
+      },
+      {
+        "text": "கொள",
+        "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "அருள்",
+        "wordIndices": [
+          8
         ]
       },
       {
         "text": "அருணாசலா",
         "wordIndices": [
-          8
+          9
         ]
       }
     ],
-    "roman": "kaiyiṉīr kaṉiyun kairacaṅ koṇṭu nāṉ kaḷiveṟi koḷa aruḷ aruṇācalā",
-    "english": "{3:Taking }{2:the juice of Your hand }{1:like a fruit }{0:in hand, }{7:grant that }{4:I }{5,6:may be intoxicated with joy, }{8:O Arunachala!}",
+    "roman": "kaiyiṉiṟ kaṉi yun meyracaṅ koṇṭu uvakai veṟi koḷa aruḷ aruṇācalā",
+    "english": "{0,1:O fruit in my hand, }{8:grant that }{4:I may drink }{2,3:the juice of Your true being }{5,6,7:and become drunk with joy, }{9:O Aruṇācala!}",
     "words": [
       {
-        "roman": "kaiyiṉīr",
-        "gloss": "water in the hand",
+        "roman": "kaiyiṉiṟ",
+        "gloss": "in the hand",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kaṉiyun",
-        "gloss": "fruit your",
+        "roman": "kaṉi",
+        "gloss": "fruit",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kairacaṅ",
-        "gloss": "savor of your hand",
+        "roman": "yun",
+        "gloss": "Your",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "meyracaṅ",
+        "gloss": "juice or essence of true being; the fruit’s sweetness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koṇṭu",
-        "gloss": "taking",
+        "gloss": "taking; drinking",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nāṉ",
-        "gloss": "I",
+        "roman": "uvakai",
+        "gloss": "joy",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kaḷiveṟi",
-        "gloss": "drunken ecstasy",
+        "roman": "veṟi",
+        "gloss": "intoxication; rapture",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koḷa",
-        "gloss": "to obtain",
+        "gloss": "to experience",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruḷ",
-        "gloss": "grant",
+        "gloss": "grant grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "kaiyil + nīr; kaṉi + un; kai + racam + koṇṭu; nāṉ (subject pronoun); kaḷi + veṟi (compound noun 'joy-intoxication'); koḷa (infinitive); aruḷ (imperative)."
+    "nameTable": false,
+    "grammarNote": "The fruit already in the hand is immediately present. Its mey-racam is both true sweetness and the essence of reality; koṇṭu, taking, is rendered “drink” within the fruit-juice image."
   },
   "line-026": {
     "source": "கொடியிட் டடியரைக் கொல்லுனைக் கட்டிக் கொண்டெங்ஙன் வாழ்வேன் அருணாசலா",
@@ -2490,7 +2543,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koṭiyiṭ ṭaṭiyaraik kolluṉaik kaṭṭik koṇṭeṅṅaṉ vāḻvēṉ aruṇācalā",
-    "english": "{0:Hoisting a banner, }{2:You slay }{1:Your devotees; }{2,3:embracing You, }{4:how }{5:shall I live, }{6:O Arunachala?}",
+    "english": "{0:Hoisting a banner, }{2:You slay }{1:Your devotees; }{2,3:embracing You, }{4:how }{5:shall I live, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "koṭiyiṭ",
@@ -2506,19 +2559,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "kolluṉaik",
-        "gloss": "you who slay",
+        "gloss": "You who slay; the devotional image is the death of the separate ego",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṭṭik",
-        "gloss": "embracing",
+        "gloss": "embracing; also wedding",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koṇṭeṅṅaṉ",
-        "gloss": "holding how",
+        "gloss": "having taken; how? (koṇṭu + eṅṅaṉ)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2530,11 +2583,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "koṭi + iṭṭu (participle compound); aṭiyar-ai-k (accusative plural); kol (slayer/slaying) + unai-k (accusative); kaṭṭi-k + koṇṭu (compound participle); eṅṅan (interrogative adverb); vāḻvēn (1st pers. sing. future)."
   },
   "line-027": {
@@ -2585,7 +2639,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kōpamil guṇattōy kuṟiyāyeṉaik koḷak kuṟaiyeṉ ceytēṉ aruṇācalā",
-    "english": "{1:O You whose nature }{0:is free of wrath, }{4:what fault }{5:did I commit }{3:that You take }{2:me as Your target, }{6:O Arunachala?}",
+    "english": "{1:O You whose nature }{0:is free of wrath, }{4:what fault }{5:did I commit }{3:that You take }{2:me as Your target, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "kōpamil",
@@ -2625,12 +2679,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "kōpam + il (compound adjective); guṇattōy (vocative appellative noun); kuṟi + āy + enai + k (predicate + accusative); koḷa + k (infinitive); kuṟai + en (noun + interrogative); ceytēṉ (1st pers. sing. past)."
+    "nameTable": false,
+    "grammarNote": "The question deliberately plays with blame and grace: “what fault did I commit?” accompanies being made the target. Traditional readings also hear “what penance did I perform?” in kuṟai ceytal; the target is the separate ego."
   },
   "line-028": {
     "source": "கௌதமர் போற்றும் கருணைமா மலையே கடைக்கணித் தாள்வா யருணாச்சலா",
@@ -2680,11 +2735,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gautamar pōṟṟum karuṇaimā malaiyē kaṭaikkaṇit tāḷvā yaruṇācalā",
-    "english": "{2,3:O great Mountain }{2:of Mercy }{0,1:praised by Gautama, }{4:look upon me with the corner of Your eye }{5:and rule over me, }{6:O Arunachala!}",
+    "english": "{2,3:O great mountain of compassion, }{0,1:praised by Gautama, }{4:cast Your sidelong glance on me }{5:and take charge of me, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Gautamar",
-        "gloss": "by Sage Gautama",
+        "gloss": "the ancient sage Gautama, associated with this sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2696,7 +2751,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "karuṇaimā",
-        "gloss": "great merciful",
+        "gloss": "great compassion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2708,23 +2763,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṭaikkaṇit",
-        "gloss": "looking with the corner of your eye",
+        "gloss": "looking from the corner of the eye; a gracious glance",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tāḷvā",
-        "gloss": "rule over me",
+        "gloss": "take charge of me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Gautamar (honorific proper noun); pōṟṟum (relative participle); karuṇai + mā (compound); malaiyē (vocative); kaṭaikkaṇittu (adverbial past participle); tāḷvāy = t + āḷvāy (2nd pers. sing. optative/imperative)."
   },
   "line-029": {
@@ -2752,34 +2808,35 @@ window.SONG_LINES = {
       {
         "text": "யினமன",
         "wordIndices": [
-          3
+          3,
+          4
         ]
       },
       {
         "text": "ஜலஜ",
         "wordIndices": [
-          4
+          5
         ]
       },
       {
         "text": "மலர்த்தி",
         "wordIndices": [
-          5
+          6
         ]
       },
       {
         "text": "டருணாச்சலா",
         "wordIndices": [
-          6
+          7
         ]
       }
     ],
-    "roman": "Sakalamum viḻuṅguṅ kadiroḷi yiṉamana jalaja malartti ṭaruṇācalā",
-    "english": "{2:O Sun of radiant light }{1:that swallows }{0:all things, }{4:make the lotus }{3:of this mind }{5:blossom, }{6:O Arunachala!}",
+    "roman": "Sakalamum viḻuṅguṅ kadiroḷi yiṉa mana jalaja malarttiṭ aruṇācalā",
+    "english": "{2,3:O radiant sun }{1:that swallows }{0:everything, }{6:make }{4,5:the lotus of my mind }{6:blossom, }{7:O Aruṇācala!}",
     "words": [
       {
         "roman": "Sakalamum",
-        "gloss": "all things",
+        "gloss": "everything",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2791,134 +2848,130 @@ window.SONG_LINES = {
       },
       {
         "roman": "kadiroḷi",
-        "gloss": "radiant sunlight",
+        "gloss": "radiant light; shining rays",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yiṉamana",
-        "gloss": "of this mind",
+        "roman": "yiṉa",
+        "gloss": "O sun",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mana",
+        "gloss": "mind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jalaja",
-        "gloss": "lotus",
+        "gloss": "lotus; literally water-born",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "malartti",
+        "roman": "malarttiṭ",
         "gloss": "make blossom",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṭaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sakalam + um (universal pronoun); viḻuṅkum (relative participle with sandhi ṅ); katir + oḷi (sunbeam light); iṉa/ina-mana (genitive/attributive); jalaja (lotus); malarttiṭu + aruṇācalā (causative imperative compound)."
+    "nameTable": false,
+    "grammarNote": "Katiroḷi ina addresses the radiant sun; mana-jalaja is the mind-lotus. The metrical yiṉamana spans ina + mana."
   },
   "line-030": {
-    "source": "சாப்பா டுன்னைச் சார்குண வாயான் சாந்தமாய்ப் போவ னருணாச்சலா",
+    "source": "சாப்பாடுன்னைச் சார்ந்துணவாய் யான் சாந்தமாய்ப் போவன் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "சாப்பா",
+        "text": "சாப்பாடுன்னைச்",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "டுன்னைச்",
+        "text": "சார்ந்துணவாய்",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "சார்குண",
+        "text": "யான்",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "வாயான்",
+        "text": "சாந்தமாய்ப்",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "சாந்தமாய்ப்",
+        "text": "போவன்",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "போவ",
+        "text": "அருணாசலா",
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "னருணாச்சலா",
-        "wordIndices": [
-          6
-        ]
       }
     ],
-    "roman": "Sāppā ṭuṉṉaic cārguṇa vāyāṉ cāntamāyp pōva ṉaruṇācalā",
-    "english": "{1:Making You }{0:my food, }{2,3:as one whose nature }{2:is to resort to You, }{5:I shall pass }{4:into peace, }{6:O Arunachala!}",
+    "roman": "cāppāṭuṉṉaic cārntuṇavāy yāṉ cāntamāyp pōvaṉ aruṇācalā",
+    "english": "{0:Seeking food, }{2:I }{1:turn to }{0:You; }{1:becoming food myself, }{4:I shall pass }{3:into peace, }{5:O Aruṇācala!}",
     "words": [
       {
-        "roman": "Sāppā",
-        "gloss": "food",
+        "roman": "cāppāṭuṉṉaic",
+        "gloss": "food; You (cāppāṭu + unnai)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṭuṉṉaic",
-        "gloss": "you as",
+        "roman": "cārntuṇavāy",
+        "gloss": "having turned to You; becoming food (cārntu + uṇavāy)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "cārguṇa",
-        "gloss": "resorting nature",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "vāyāṉ",
-        "gloss": "having as one",
+        "roman": "yāṉ",
+        "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cāntamāyp",
-        "gloss": "becoming peace",
+        "gloss": "becoming peaceful; an alternate traditional reading is as a mendicant",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "pōva",
-        "gloss": "I shall go",
+        "roman": "pōvaṉ",
+        "gloss": "I shall go; pass into",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sāppāṭu (noun food); unnai-c (accusative); cār (resorting) + guṇa (quality/nature) + vāyān (pronominal noun 'one who has'); cāntam + āy + p (adverbial); pōvan (1st pers. sing. future) + aruṇācalā."
+    "nameTable": false,
+    "grammarNote": "The food image turns back on the speaker: approaching Aruṇācala for food, I become His food and find peace. Another traditional reading takes uṇavā as “was it merely to eat?” and cāntam as a mendicant: “Did I come as a mendicant merely to eat by depending on You?” The two readings are alternatives."
   },
   "line-031": {
-    "source": "சித்தம் குளிரக் கதிரத்தம் வைத்தமு தவாயைத் திறவருண் மதியரு ணாச்சலா",
+    "source": "சித்தம் குளிரக் கதிர் அத்தம் வைத்து அமுத வாயைத் திற அருண்மதி அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -2934,95 +2987,120 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "கதிரத்தம்",
+        "text": "கதிர்",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "வைத்தமு",
+        "text": "அத்தம்",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "தவாயைத்",
+        "text": "வைத்து",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "திறவருண்",
+        "text": "அமுத",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "மதியரு",
+        "text": "வாயைத்",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ணாச்சலா",
+        "text": "திற",
         "wordIndices": [
           7
         ]
+      },
+      {
+        "text": "அருண்மதி",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          9
+        ]
       }
     ],
-    "roman": "Cittam kuḷirak katirattam vaittamu tavāyait tiṟavaruṇ matiyaru ṇācalā",
-    "english": "{2,3:Placing Your ray-hands }{0:so that my mind }{1:cools, }{5:graciously open }{3,4:the mouth of nectar, }{6,7:O Moon of Arunachala!}",
+    "roman": "cittam kuḷirak katir attam vaittu amuta vāyait tiṟa aruṇmati aruṇācalā",
+    "english": "{4:Lay }{2,3:Your ray-like hands on me }{0,1:to cool my mind, }{7:and open }{5,6:the nectar-mouth, }{8:O moon of grace, }{9:Aruṇācala!}",
     "words": [
       {
-        "roman": "Cittam",
-        "gloss": "mind",
+        "roman": "cittam",
+        "gloss": "mind; heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kuḷirak",
-        "gloss": "to cool",
+        "gloss": "so that it cools",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "katirattam",
-        "gloss": "ray-hand",
+        "roman": "katir",
+        "gloss": "rays of light",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vaittamu",
-        "gloss": "placing nectar",
+        "roman": "attam",
+        "gloss": "hands; from Sanskrit hasta",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tavāyait",
-        "gloss": "mouth of",
+        "roman": "vaittu",
+        "gloss": "having placed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tiṟavaruṇ",
-        "gloss": "open graciously O Arunachala",
+        "roman": "amuta",
+        "gloss": "nectar; the drink of immortality",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "matiyaru",
-        "gloss": "Moon",
+        "roman": "vāyait",
+        "gloss": "the mouth or opening; with nectar, also understood as the gate of immortality",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṇācalā",
-        "gloss": "Arunachala",
+        "roman": "tiṟa",
+        "gloss": "open",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "aruṇmati",
+        "gloss": "O moon of grace (aruḷ, grace, + mati, moon)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "cittam (noun); kuḷira + k (infinitive of result); katir (ray) + attam (hand/hasta); vaittu (participle) + amuta (nectar); vāyai + t (accusative of vāy 'mouth'); tiṟava + aruḷ (infinitive + imperative); mati (moon) + aruṇācalā."
+    "nameTable": false,
+    "grammarNote": "Katir-attam pictures rays as hands. Amuta-vāy means nectar-mouth or opening; aruṇmati is the joined form of aruḷ-mati, “moon of grace”. The verse pairs the moon’s cooling touch with an opening of sweetness within."
   },
   "line-032": {
     "source": "சீரை யழித்து நிர்வாண மாச்செய்தருள் சீரளித் தருளரு ணாச்சலா",
@@ -3071,52 +3149,53 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Cīrai yaḻittu nirvāṇa mācceytaruḷ cīraḷit taruḷaru ṇācalā",
-    "english": "{1:Stripping away }{0:my garment, }{2,3:make me naked, }{4,5:and graciously bestow }{4:Your glory, }{6:O Arunachala!}",
+    "roman": "Cīrai yaḻittu nirvāṇam ācceytaruḷ cīr aḷittaruḷ aruṇācalā",
+    "english": "{1:Strip away }{0:my covering, }{2,3:leave me bare, }{5:and graciously grant }{4:Your glory, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Cīrai",
-        "gloss": "garment",
+        "gloss": "covering or garment; also worldly glory",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yaḻittu",
-        "gloss": "stripping away",
+        "gloss": "destroying; stripping away",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nirvāṇa",
-        "gloss": "naked",
+        "roman": "nirvāṇam",
+        "gloss": "bare or unveiled; also evokes liberation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mācceytaruḷ",
-        "gloss": "making grant grace",
+        "roman": "ācceytaruḷ",
+        "gloss": "graciously make",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "cīraḷit",
-        "gloss": "bestowing glory",
+        "roman": "cīr",
+        "gloss": "glory; splendor",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "taruḷaru",
-        "gloss": "graciously bestow O",
+        "roman": "aḷittaruḷ",
+        "gloss": "graciously grant",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṇācalā",
-        "gloss": "Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "cīrai + y (accusative); aḻittu (participle); nirvāṇam + āka + ceytu + aruḷ (compound imperative); cīr (excellence/grace) + aḷittu (participle) + aruḷ + aruṇācalā."
   },
   "line-033": {
@@ -3166,8 +3245,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Sukakkaḍal poṅgac colluṇar vaḍaṅgac summā poruntiḍaṅ garuṇācalā",
-    "english": "{0:As the ocean of bliss }{1:surges }{2:and speech and thought }{3:subside, }{5:grant that I abide }{4:in still silence, }{6:O Arunachala!}",
+    "roman": "Sukakkaḍal poṅgac colluṇarv aḍaṅgac summā poruntiḍaṅg aruṇācalā",
+    "english": "{5:Be united with me there }{4:in stillness, }{1:so that }{0:the ocean of bliss }{1:surges }{2:and speech and thought }{3:subside, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Sukakkaḍal",
@@ -3177,42 +3256,43 @@ window.SONG_LINES = {
       },
       {
         "roman": "poṅgac",
-        "gloss": "to surge",
+        "gloss": "so that it surges",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "colluṇar",
-        "gloss": "speech and thought",
+        "roman": "colluṇarv",
+        "gloss": "speech and thought or awareness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vaḍaṅgac",
-        "gloss": "to subside",
+        "roman": "aḍaṅgac",
+        "gloss": "so that they subside",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "summā",
-        "gloss": "in still silence",
+        "gloss": "still; without action",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "poruntiḍaṅ",
-        "gloss": "to abide merged",
+        "roman": "poruntiḍaṅg",
+        "gloss": "be united there; contracted poruntiḍu aṅku",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "garuṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sukam + kaḍal (compound); poṅga + c (infinitive); col (word) + uṇarvu (awareness/feeling); aḍaṅga + c (infinitive); summā (indeclinable adverb 'in stillness'); poruntiḍa + m (infinitive) + k-aruṇācalā."
+    "nameTable": false,
+    "grammarNote": "The metrical poruntiḍaṅk can represent poruntiḍu aṅku, be united there, with vowel elision. Aruṇācala is addressed; the accompanying clauses describe bliss swelling and speech/thought subsiding."
   },
   "line-034": {
     "source": "சூதுசெய் தென்னைச் சோதியா தினியுன் ஜோதியு ருக்காட்ட ருணாச்சலா",
@@ -3262,11 +3342,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Cūtucey teṉṉaic cōtiyā tiṉiyun jōtiyu rukkāṭṭa ruṇācalā",
-    "english": "{2:Without testing }{1:me }{3:anymore }{0:by playing tricks, }{5:show }{3,4,5:Your form of light, }{6:O Arunachala!}",
+    "english": "{2:Without testing }{1:me }{3:anymore }{0:by playing tricks, }{5:show }{3,4,5:Your form of light, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Cūtucey",
-        "gloss": "playing tricks",
+        "gloss": "playing tricks (cūtu + ceytu)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3278,35 +3358,36 @@ window.SONG_LINES = {
       },
       {
         "roman": "cōtiyā",
-        "gloss": "without testing",
+        "gloss": "without testing me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tiṉiyun",
-        "gloss": "anymore your",
+        "gloss": "any longer; Your (ini + un)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jōtiyu",
-        "gloss": "of light",
+        "gloss": "light (jōti)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rukkāṭṭa",
-        "gloss": "show the form",
+        "gloss": "show the form (uru + kāṭṭu)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "O Aruṇācala",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "cūtu + ceytu (participle compound); t-ennai-c (accusative); cōtiyātu (negative participle); ini (temporal adverb) + un (genitive); jōti + uru + k + kāṭṭu + aruṇācalā."
   },
   "line-035": {
@@ -3356,53 +3437,54 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Ceppaḍi vittaikaṟ ṟippaḍi mayakkuviṭ ṭuruppaḍu vittaigāṭ ṭaruṇācalā",
-    "english": "{3:Leaving off }{3:deluding me }{2:in this way }{0,1:with jugglery, }{5:show me }{4,5:the saving wisdom, }{6:O Arunachala!}",
+    "roman": "Ceppaḍi vittai kaṟṟippaḍi mayakku viṭṭuruppaḍu vittai gāṭṭaruṇācalā",
+    "english": "{4:Free me from }{3:the delusion }{2:of this world, }{2:from learning }{0,1:the arts of deception, }{6:and show me }{5:the art }{4:of abiding as I truly am, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Ceppaḍi",
-        "gloss": "cup-and-ball",
+        "gloss": "sleight of hand; deception",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vittaikaṟ",
-        "gloss": "tricks learning",
+        "roman": "vittai",
+        "gloss": "art or skill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṟippaḍi",
-        "gloss": "in this manner",
+        "roman": "kaṟṟippaḍi",
+        "gloss": "having learned; of this world or in this way (kaṟṟu + ippaṭi)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mayakkuviṭ",
-        "gloss": "leaving delusion",
+        "roman": "mayakku",
+        "gloss": "delusion; bewilderment",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṭuruppaḍu",
-        "gloss": "fruitful",
+        "roman": "viṭṭuruppaḍu",
+        "gloss": "having left behind; becoming sound or abiding as one’s true form (viṭṭu + uruppaṭu)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vittaigāṭ",
-        "gloss": "show the science",
+        "roman": "vittai",
+        "gloss": "art; knowledge",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṭaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "gāṭṭaruṇācalā",
+        "gloss": "show; O Aruṇācala, the red mountain worshipped as Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "ceppaḍi + vittai (compound); kaṟṟu (participle); ippaḍi (adverb); mayakku (noun/participle delusion) + viṭṭu (participle); uruppaḍu (adjective forming fruitful/saving) + vittai + kāṭṭu + aruṇācalā."
+    "nameTable": false,
+    "grammarNote": "Ceppaṭi-vittai is the art of deception or conjuring. Uruppaṭu-vittai contrasts it with knowledge that makes one sound or real; traditionally explained here as abiding in one’s true form, the Self."
   },
   "line-036": {
     "source": "சேரா யெனின்மெய் நீராயு ருகிக்கண் ணீராற் றழிவே னருணாச்சலா",
@@ -3451,52 +3533,53 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Cērā yeṉiṉmey nīrāyu rugikkaṇ ṇīrāṟ ṟaḻivē ṉaruṇācalā",
-    "english": "{0,1:If You do not unite with me, }{1:my body }{3:melting }{2:into water, }{5:I shall perish }{3,4:in a river of tears, }{6:O Arunachala!}",
+    "roman": "Cērā yeṉiṉ mey nīrāy urugi kkaṇṇīrāṟṟaḻivēṉ aruṇācalā",
+    "english": "{0,1:If You do not unite with me, }{2:my body }{4:will melt }{3:into water, }{5:and I shall perish }{5:in a river of tears, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Cērā",
-        "gloss": "if you do not unite",
+        "gloss": "You do not unite",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yeṉiṉmey",
-        "gloss": "then body",
+        "roman": "yeṉiṉ",
+        "gloss": "if",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nīrāyu",
+        "roman": "mey",
+        "gloss": "my body",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nīrāy",
         "gloss": "into water",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "rugikkaṇ",
-        "gloss": "melting tears",
+        "roman": "urugi",
+        "gloss": "melting",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṇīrāṟ",
-        "gloss": "by the river of",
+        "roman": "kkaṇṇīrāṟṟaḻivēṉ",
+        "gloss": "I shall perish in a river of tears (kaṇṇīr-āṟṟil + aḻivēṉ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṟaḻivē",
-        "gloss": "I shall perish",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "cērāy (negative 2nd pers.) + eniṉ (conditional marker); mey (noun body); nīr + āy + u (adverbial predicate); uruki (participle); kaṇ-nīr (tears) + āṟṟāl (instrumental of āṟu 'river'); aḻivēn (1st pers. sing. future) + aruṇācalā."
   },
   "line-037": {
@@ -3547,11 +3630,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Caiyeṉat taḷḷiṟ ceyviṉai cuḍumala tuyvagai yēturai yaruṇācalā",
-    "english": "{1:If You push me away }{0:saying 'Fie!', }{2:past deeds }{3:will burn me; }{5:tell me }{3,5:what other way }{4:of deliverance }there is, {6:O Arunachala!}",
+    "english": "{1:If You reject me }{0:with “Away!”, }{2:my deeds }{3:will burn me. }{5:Tell me, }{3,4,5:what other way of escape is there, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "Caiyeṉat",
-        "gloss": "saying Fie",
+        "gloss": "saying “Away!” with contempt",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3569,29 +3652,30 @@ window.SONG_LINES = {
       },
       {
         "roman": "cuḍumala",
-        "gloss": "will burn other than that",
+        "gloss": "will burn; otherwise (cuṭum + alatu)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tuyvagai",
-        "gloss": "way of redemption",
+        "gloss": "a way to be saved",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yēturai",
-        "gloss": "what is it tell",
+        "gloss": "what?; tell me (ētu + urai)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "cai (interjection of disgust) + eṉa + t; taḷḷil (conditional); cey-vinai (compound noun deeds done); cuḍum (3rd pers. neuter future) + allatu (connective 'otherwise'); uy-vakai (means of salvation); ētu (interrogative pronoun) + urai (imperative) + y-aruṇācalā."
   },
   "line-038": {
@@ -3641,8 +3725,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Collātu coliṉī collaṟa nilleṉṟu summā viruntā yaruṇācalā",
-    "english": "{1:Speaking }{0:without speaking, }{1,3:You said, }{3:'Stand }{2:where speech ceases,' }{5:and remained }{4:in silent stillness, }{6:O Arunachala!}",
+    "roman": "Collātu coliṉī collaṟa nilleṉṟu summā viruntāy aruṇācalā",
+    "english": "{0,1,3:Without speaking, You said, }{3:“Remain }{2:without speech,” }{5:and You stayed }{4:utterly still, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Collātu",
@@ -3652,41 +3736,42 @@ window.SONG_LINES = {
       },
       {
         "roman": "coliṉī",
-        "gloss": "you having spoken",
+        "gloss": "having said; You (coli + nī)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "collaṟa",
-        "gloss": "where speech ceases",
+        "gloss": "without speech",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nilleṉṟu",
-        "gloss": "saying Stand still",
+        "gloss": "saying “remain” (nil + eṉṟu)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "summā",
-        "gloss": "in silent stillness",
+        "gloss": "still; without activity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "viruntā",
-        "gloss": "you remained",
+        "roman": "viruntāy",
+        "gloss": "You remained",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "collātu (negative adverbial participle); colli (past participle) + nī (subject pronoun); col + aṟa (infinitive of cessation); nil (imperative) + eṉṟu (quotative participle); summā (indeclinable); iruntāy (2nd pers. past) + aruṇācalā."
   },
   "line-039": {
@@ -3737,51 +3822,52 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aruṇācala Civa Aruṇācala Civa Aruṇācala Civa Aruṇācalā",
-    "english": "{0:Arunachala }{1:Shiva, }{2:Arunachala }{3:Shiva, }{4:Arunachala }{5:Shiva, }{6:O Arunachala!}",
+    "english": "{0:Aruṇācala }{1:Śiva, }{2:Aruṇācala }{3:Śiva, }{4:Aruṇācala }{5:Śiva, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Aruṇācala",
-        "gloss": "Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Civa",
-        "gloss": "Shiva",
+        "gloss": "the auspicious one; the deity worshipped here as the sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Aruṇācala",
-        "gloss": "Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Civa",
-        "gloss": "Shiva",
+        "gloss": "the auspicious one; the deity worshipped here as the sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Aruṇācala",
-        "gloss": "Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Civa",
-        "gloss": "Shiva",
+        "gloss": "the auspicious one; the deity worshipped here as the sacred hill",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Repetition of divine compound names with the final vocative lengthened into -ā."
   },
   "line-040": {
@@ -3809,74 +3895,69 @@ window.SONG_LINES = {
       {
         "text": "டுறங்கிடிற்",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "சொல்வே",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "றென்கதி",
         "wordIndices": [
-          5
+          4
         ]
       },
       {
         "text": "யருணாச்சலா",
         "wordIndices": [
-          6
+          5
         ]
       }
     ],
-    "roman": "Cōmpiya summā sugamuṇ ṭuṟaṅgiḍiṟ colvē ṟeṉgati yaruṇācalā",
-    "english": "{3:If, }{0:turning sluggish }{1:in stillness, }{3:I sleep }{2:in ease, }{4:tell me, }{4,5:what other refuge is mine, }{6:O Arunachala?}",
+    "roman": "Cōmpiya summā sugamuṇṭuṟaṅgiḍiṟ col vēṟeṉgati yaruṇācalā",
+    "english": "{2:If You sleep }{1:in stillness, }{0:like an idler, }{2:enjoying bliss, }{3:tell me, }{4:what other fate is left to me, }{5:O Aruṇācala?}",
     "words": [
       {
         "roman": "Cōmpiya",
-        "gloss": "becoming indolent / turning lazy",
+        "gloss": "idle; inactive",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "summā",
-        "gloss": "quietly / merely being still",
+        "gloss": "simply; in stillness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sugamuṇ",
-        "gloss": "there is pleasure / ease",
+        "roman": "sugamuṇṭuṟaṅgiḍiṟ",
+        "gloss": "if You sleep enjoying bliss (cukam uṇṭu + uṟaṅkiṭil)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṭuṟaṅgiḍiṟ",
-        "gloss": "if [I] fall asleep",
+        "roman": "col",
+        "gloss": "tell me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "colvē",
-        "gloss": "tell / declare",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ṟeṉgati",
-        "gloss": "what is my refuge / state",
+        "roman": "vēṟeṉgati",
+        "gloss": "what other fate is mine? (vēṟu + eṉ gati)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi: sugam + uṇṭu + uṟaṅgiṭil -> sugamuṇ ṭuṟaṅgiḍiṟ; col + vēṟu + eṉ + gati -> colvē ṟeṉgati; y- glide in vocative yaruṇācalā."
   },
   "line-041": {
@@ -3927,7 +4008,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sauriyaṅ kāṭṭiṉai caḻakkaṟṟa teṉṟē caliyā tiruntā yaruṇācalā",
-    "english": "{0,1:You showed prowess; }{2,3:deeming all deceit destroyed, }{4,5:you remained unmoving, }{6:O Arunachala.}",
+    "english": "{0,1:You showed prowess; }{2,3:deeming all deceit destroyed, }{4,5:you remained unmoving, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "Sauriyaṅ",
@@ -3943,19 +4024,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "caḻakkaṟṟa",
-        "gloss": "deceit / crookedness is gone",
+        "gloss": "crookedness has ended (caḻakku + aṟṟatu)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "teṉṟē",
-        "gloss": "saying / deeming that it is so",
+        "gloss": "saying; considering that",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "caliyā",
-        "gloss": "without wavering / motionless",
+        "gloss": "without moving or wavering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3967,11 +4048,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "yaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "caḻakku + aṟṟatu + eṉṟē -> caḻakkaṟṟateṉṟē; caliyātu + iruntāy -> caliyā tiruntāy; second person past forms kāṭṭiṉai and iruntāy."
   },
   "line-042": {
@@ -3993,37 +4075,36 @@ window.SONG_LINES = {
       {
         "text": "நான்என்",
         "wordIndices": [
-          2,
-          3
+          2
         ]
       },
       {
         "text": "னுறுதியால்",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "நாடினின்",
         "wordIndices": [
-          5
+          4
         ]
       },
       {
         "text": "னுறுவே",
         "wordIndices": [
-          6
+          5
         ]
       },
       {
         "text": "னருணாச்சலா",
         "wordIndices": [
-          7
+          6
         ]
       }
     ],
-    "roman": "Ñamaliyiṟ kēḍā nān eṉ ṉuṟutiyāl nāḍiniṉ ṉuṟuvē ṉaruṇācalā",
-    "english": "{1:Viler }{0:than a dog, }{2,6:can I, }{3,4:by my own resolve, }{5,6:seek and reach You, }{7:O Arunachala?}",
+    "roman": "Ñamaliyiṟ kēḍā nān eṉṉuṟutiyāl nāḍi niṉṉuṟuvēṉ aruṇācalā",
+    "english": "{2:I am }{1:worse }{0:than a dog; }{3:with what strength }{5:could I }{4:seek }{5:and reach You, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "Ñamaliyiṟ",
@@ -4033,7 +4114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kēḍā",
-        "gloss": "viler / baser",
+        "gloss": "worse; baser",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4044,36 +4125,31 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "eṉ",
-        "gloss": "my",
+        "roman": "eṉṉuṟutiyāl",
+        "gloss": "with what strength?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṉuṟutiyāl",
-        "gloss": "by resolve / by strength",
+        "roman": "nāḍi",
+        "gloss": "seeking",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nāḍiniṉ",
-        "gloss": "seeking, You",
+        "roman": "niṉṉuṟuvēṉ",
+        "gloss": "can I attain You? (nin + uṟuvēṉ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṉuṟuvē",
-        "gloss": "will I attain / reach?",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Comparative locative/ablative -il on ñamali; Sandhi: eṉ + uṟutiyāl -> eṉ ṉuṟutiyāl; nāṭi + niṉ + uṟuvēṉ -> nāḍiniṉ ṉuṟuvēṉ; 1st person future uṟuvēṉ with vocative attachment."
   },
   "line-043": {
@@ -4089,86 +4165,75 @@ window.SONG_LINES = {
       {
         "text": "லாதுன்",
         "wordIndices": [
-          1
+          0
         ]
       },
       {
         "text": "னாசையாற்",
         "wordIndices": [
-          2
+          0
         ]
       },
       {
         "text": "றளரவற",
         "wordIndices": [
-          3
+          1
         ]
       },
       {
         "text": "ஞானந்",
         "wordIndices": [
-          4
+          2
         ]
       },
       {
         "text": "தெரித்தரு",
         "wordIndices": [
-          5
+          3
         ]
       },
       {
         "text": "ளருணாச்சலா",
         "wordIndices": [
-          6
+          4
         ]
       }
     ],
-    "roman": "Ñāṉamil lātuṉ ṉāsaiyāṟ ṟaḷaravaṟa ñānan terittaru ḷaruṇācalā",
-    "english": "{0,1:Lacking wisdom, }{3:as I languish }{1,2:from longing for You, }{4,5:reveal wisdom }{3,5:and bestow grace so exhaustion ends, }{6:O Arunachala.}",
+    "roman": "Ñāṉamillātuṉṉāsaiyāṟ ṟaḷaravaṟa ñānan terittaruḷ aruṇācalā",
+    "english": "{0:Without knowledge, }{0:I long for You }{1:and grow weary. }{3:Graciously reveal }{2:true knowledge }{1:and end this weariness, }{4:O Aruṇācala!}",
     "words": [
       {
-        "roman": "Ñāṉamil",
-        "gloss": "wisdom / spiritual knowledge lacking",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lātuṉ",
-        "gloss": "without, your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ṉāsaiyāṟ",
-        "gloss": "through longing / desire for",
+        "roman": "Ñāṉamillātuṉṉāsaiyāṟ",
+        "gloss": "without knowledge; through longing for You (ñānam illātu + un ācaiyāl)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṟaḷaravaṟa",
-        "gloss": "as [I] droop / languish, completely ending [it]",
+        "gloss": "so that weariness ends",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ñānan",
-        "gloss": "wisdom / direct knowledge",
+        "gloss": "knowledge; direct understanding",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "terittaru",
-        "gloss": "making clear, bestow grace",
+        "roman": "terittaruḷ",
+        "gloss": "graciously make clear",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ḷaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi: ñāṉam + illātu + uṉ + āsaiyāl -> Ñāṉamil lātuṉ ṉāsaiyāṟ; taḷara + aṟa -> ṟaḷaravaṟa; terittu (verbal participle) + aruḷ (imperative)."
   },
   "line-044": {
@@ -4202,28 +4267,32 @@ window.SONG_LINES = {
       {
         "text": "நேர்நின்ற",
         "wordIndices": [
-          4
+          4,
+          5,
+          6
         ]
       },
       {
         "text": "னையென்",
         "wordIndices": [
-          5
+          4,
+          5,
+          6
         ]
       },
       {
         "text": "னருணாச்சலா",
         "wordIndices": [
-          6
+          7
         ]
       }
     ],
-    "roman": "Ñimiṟipō ṉīyum malarntilai yeṉṟē nērniṉṟa ṉaiyen ṉaruṇācalā",
-    "english": "{0:Like a bee, }{1:You too }{4,5:stood directly before me, }{3:saying, }{2:“You have not blossomed!” }{5,6:O my Arunachala.}",
+    "roman": "Ñimiṟipō ṉīyum malarntilai yeṉṟē nēr niṉṟaṉai yen ṉaruṇācalā",
+    "english": "{0:Like a bee, }{1:You too }{4,5:stood before me, }{3:saying, }{2:“You have not blossomed.” }{6:Why, }{7:O Aruṇācala?}",
     "words": [
       {
         "roman": "Ñimiṟipō",
-        "gloss": "like a bee / beetle",
+        "gloss": "like a bee",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4235,36 +4304,43 @@ window.SONG_LINES = {
       },
       {
         "roman": "malarntilai",
-        "gloss": "you have not blossomed / opened",
+        "gloss": "You have not blossomed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yeṉṟē",
-        "gloss": "saying / declaring thus",
+        "gloss": "saying",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nērniṉṟa",
-        "gloss": "stood directly face to face",
+        "roman": "nēr",
+        "gloss": "face to face",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṉaiyen",
-        "gloss": "you stood, my",
+        "roman": "niṉṟaṉai",
+        "gloss": "You stood",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yen",
+        "gloss": "why?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi: ñimiṟi + pōl + nīyum -> Ñimiṟipō ṉīyum; malarntilai + eṉṟē -> malarntilai yeṉṟē; nēr + niṉṟaṉai + eṉ -> nērniṉṟa ṉaiyen; niṉṟaṉai is 2nd person past."
+    "nameTable": false,
+    "grammarNote": "The address asks why Aruṇācala waits like a bee at an unopened flower. The bud image allows the popup note that blossoming suggests ripeness, without substituting that abstract interpretation for the literal flower."
   },
   "line-045": {
     "source": "தத்துவந் தெரியா தத்தனை யுற்றாய் தத்துவ மிதுவென் னருணாச்சலா",
@@ -4303,63 +4379,71 @@ window.SONG_LINES = {
       {
         "text": "மிதுவென்",
         "wordIndices": [
-          5
+          5,
+          6
         ]
       },
       {
         "text": "னருணாச்சலா",
         "wordIndices": [
-          6
+          7
         ]
       }
     ],
-    "roman": "Tattuvan teriyā tattaṉai yuṟṟāy tattuva mituven ṉaruṇācalā",
-    "english": "{0,1:When I knew not the truth, }{2,3:You embraced me in that state; }{5:now declare, }{4,5:“This is the truth,” }{6:O Arunachala.}",
+    "roman": "Tattuvan teriyā tattaṉai yuṟṟāy tattuva mitu ven ṉaruṇācalā",
+    "english": "{3:You took possession of }{2:me, a flawed one }{1:who did not know }{0:truth. }{6:What }{4:a principle }{5:this is, }{7:O Aruṇācala!}",
     "words": [
       {
         "roman": "Tattuvan",
-        "gloss": "reality / truth / principle",
+        "gloss": "truth; principles of reality",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "teriyā",
-        "gloss": "not knowing / unaware",
+        "gloss": "not knowing",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tattaṉai",
-        "gloss": "that much / in that state",
+        "gloss": "me, the flawed one; an alternative division attaṉai means God or That itself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yuṟṟāy",
-        "gloss": "you approached / embraced / attained",
+        "gloss": "You took possession of; You attained",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tattuva",
-        "gloss": "reality / essence",
+        "gloss": "principle; truth",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mituven",
-        "gloss": "this is, say / declare",
+        "roman": "mitu",
+        "gloss": "this",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ven",
+        "gloss": "what!; alternatively “declare”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi: tattuvam + teriyātu + attaṉai + uṟṟāy -> Tattuvan teriyā tattaṉai yuṟṟāy; tattuvam + itu + eṉ -> tattuva mituven."
+    "nameTable": false,
+    "grammarNote": "The joined Tamil permits different divisions. This rendering follows teriyā dattanai, “the flawed one who did not know”, and en, “what!” Another traditional reading divides teriyātu attaṉai, “without knowing, You attained God/That itself”, and takes en as “declare”: “Declare that this is the truth.” These are alternate readings, not simultaneous clauses."
   },
   "line-046": {
     "source": "தானே தானே தத்துவ மிதனைத் தானே காட்டுவா யருணாச்சலா",
@@ -4408,52 +4492,53 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Tānē tānē tattuva mitanait tānē kāṭṭuvā yaruṇācalā",
-    "english": "{0:As the Self alone, }{1:spontaneously, }{4,5:You Yourself will reveal }{2,3:this truth, }{6:O Arunachala.}",
+    "roman": "Tānē tānē tattuvam itanait tānē kāṭṭuvāy aruṇācalā",
+    "english": "{0,1:The Self itself }{2:is reality. }{4:You Yourself }{5:reveal }{3:this, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "Tānē",
-        "gloss": "Yourself / as the Self",
+        "gloss": "the Self itself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tānē",
-        "gloss": "spontaneously / of itself / indeed",
+        "gloss": "itself alone; emphatic repetition",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tattuva",
-        "gloss": "reality / truth",
+        "roman": "tattuvam",
+        "gloss": "reality; true nature",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mitanait",
-        "gloss": "this [reality]",
+        "roman": "itanait",
+        "gloss": "this",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tānē",
-        "gloss": "Yourself / directly",
+        "gloss": "You Yourself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kāṭṭuvā",
-        "gloss": "you will reveal / show",
+        "roman": "kāṭṭuvāy",
+        "gloss": "please reveal",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Triple emphatic particle -ē attached to reflexive pronoun tān; accusative itanai; future 2nd person kāṭṭuvāy with sandhi loss of final consonant before y- glide."
   },
   "line-047": {
@@ -4475,36 +4560,39 @@ window.SONG_LINES = {
       {
         "text": "தினமகக்",
         "wordIndices": [
-          2
+          2,
+          3
         ]
       },
       {
         "text": "கண்காணத்",
         "wordIndices": [
-          3
+          4,
+          5
         ]
       },
       {
         "text": "தெரியுமென்",
         "wordIndices": [
-          4
+          6
         ]
       },
       {
         "text": "றனையென்",
         "wordIndices": [
-          5
+          7,
+          8
         ]
       },
       {
         "text": "னருணாச்சலா",
         "wordIndices": [
-          6
+          9
         ]
       }
     ],
-    "roman": "Tirumpi yakantaṉait tiṉamagak kaṇkāṇat teriyumen ṟaṉaiyen ṉaruṇācalā",
-    "english": "{0:Turning inward }{1:to the Heart }{2,3:daily so the inner eye sees, }{4,5:You said }{4:it would be known, }{5,6:O my Arunachala.}",
+    "roman": "Tirumpi yakantaṉait tiṉam agak kaṇ kāṇat teriyum enṟaṉai yen ṉaruṇācalā",
+    "english": "{7:You said, }{0:“Turn inward; }{2:each day }{5:look }{3,4:with the inner eye }{1:at the ‘I’, }{6:and it will become clear,” }{8,9:O my Aruṇācala!}",
     "words": [
       {
         "roman": "Tirumpi",
@@ -4514,41 +4602,60 @@ window.SONG_LINES = {
       },
       {
         "roman": "yakantaṉait",
-        "gloss": "the inner self / the heart",
+        "gloss": "the I; one’s own inner self",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tiṉamagak",
-        "gloss": "daily / constantly, inside",
+        "roman": "tiṉam",
+        "gloss": "daily",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kaṇkāṇat",
-        "gloss": "so the eye [of the heart] sees",
+        "roman": "agak",
+        "gloss": "inner",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "teriyumen",
-        "gloss": "it will be known, saying",
+        "roman": "kaṇ",
+        "gloss": "eye",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṟaṉaiyen",
-        "gloss": "you said, my",
+        "roman": "kāṇat",
+        "gloss": "to see; look",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "teriyum",
+        "gloss": "it will become known",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "enṟaṉai",
+        "gloss": "You said",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yen",
+        "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi: tirumpi + akam-taṉai -> Tirumpi yakantaṉait; tiṉam + akam + kaṇ + kāṇa -> tiṉamagak kaṇkāṇat; teriyum + eṉṟaṉai + eṉ -> teriyumen ṟaṉaiyen; eṉṟaṉai is 2nd person past."
   },
   "line-048": {
@@ -4564,18 +4671,19 @@ window.SONG_LINES = {
       {
         "text": "லகத்திற்",
         "wordIndices": [
-          1
+          0
         ]
       },
       {
         "text": "றேடியுந்",
         "wordIndices": [
-          2
+          1
         ]
       },
       {
         "text": "தனையான்",
         "wordIndices": [
+          2,
           3
         ]
       },
@@ -4598,52 +4706,53 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Tīramil lagattiṟ ṟēḍiyun taṉaiyāṉ tirumpavuṟ ṟēṉaru ḷaruṇācalā",
-    "english": "{0:Lacking courage, }{1,2,3:though seeking You within, }{3,4,5:I turned back; }{5:bestow grace, }{6:O Arunachala.}",
+    "roman": "Tīramillagattiṟ ṟēḍi yun taṉai yāṉ tirumpavuṟṟēṉ aruḷ aruṇācalā",
+    "english": "{1,2,3:I sought You }{0:with a mind }{0:that lacked courage, }{4:and turned back. }{5:Grant Your grace, }{6:O Aruṇācala!}",
     "words": [
       {
-        "roman": "Tīramil",
-        "gloss": "without courage / lacking fortitude",
+        "roman": "Tīramillagattiṟ",
+        "gloss": "with a mind lacking courage or firmness (tīram il + akattil)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "lagattiṟ",
-        "gloss": "in the inner realm / within",
+        "roman": "ṟēḍi",
+        "gloss": "having sought",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṟēḍiyun",
-        "gloss": "even though seeking",
+        "roman": "yun taṉai",
+        "gloss": "You Yourself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "taṉaiyāṉ",
-        "gloss": "Yourself / the Self, I",
+        "roman": "yāṉ",
+        "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tirumpavuṟ",
-        "gloss": "turning back, came to be",
+        "roman": "tirumpavuṟṟēṉ",
+        "gloss": "returned; turned back",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṟēṉaru",
-        "gloss": "I experienced / I ended up; bestow grace",
+        "roman": "aruḷ",
+        "gloss": "grant grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ḷaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi: tīram + il + akattil -> Tīramil lagattiṟ; tēḍiyum + taṉai + yāṉ -> ṟēḍiyun taṉaiyāṉ; tirumpa + uṟṟēṉ + aruḷ -> tirumpavuṟ ṟēṉaruḷ."
   },
   "line-049": {
@@ -4659,90 +4768,85 @@ window.SONG_LINES = {
       {
         "text": "வில்லா",
         "wordIndices": [
-          1
+          0
         ]
       },
       {
         "text": "விப்பிறப்",
         "wordIndices": [
-          2
+          1
         ]
       },
       {
         "text": "பென்பய",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "னொப்பிட",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "வாயே",
         "wordIndices": [
-          5
+          4
         ]
       },
       {
         "text": "னருணாச்சலா",
         "wordIndices": [
-          6
+          5
         ]
       }
     ],
-    "roman": "Tuppaṟi villā vippiṟap peṉpaya ṉoppiḍa vāyē ṉaruṇācalā",
-    "english": "{0,1:Devoid of pure discernment, }{3:what is the use }{2:of this birth? }{5:Will You not come }{4:to accept it, }{6:O Arunachala?}",
+    "roman": "Tuppaṟivillā vippiṟappeṉ payaṉ oppiḍa vāyēṉ aruṇācalā",
+    "english": "{1,2:What use is }{1:this birth }{0:without }{0:knowledge through inquiry? }{4:Come }{3:and make it worthy, }{5:O Aruṇācala!}",
     "words": [
       {
-        "roman": "Tuppaṟi",
-        "gloss": "pure discernment / investigative inquiry",
+        "roman": "Tuppaṟivillā",
+        "gloss": "without knowledge through inquiry; lacking discernment to investigate oneself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "villā",
-        "gloss": "without / devoid of",
+        "roman": "vippiṟappeṉ",
+        "gloss": "this birth; what? (ip-piṟappu + eṉ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vippiṟap",
-        "gloss": "this human birth",
+        "roman": "payaṉ",
+        "gloss": "use; benefit",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "peṉpaya",
-        "gloss": "what benefit / what use",
+        "roman": "oppiḍa",
+        "gloss": "to make worthy; to remedy the deficiency",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṉoppiḍa",
-        "gloss": "to hand over / surrender / accept",
+        "roman": "vāyēṉ",
+        "gloss": "please come",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vāyē",
-        "gloss": "come / will you not come?",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "tuppu + aṟivu + illā -> tuppaṟivillā; i- + piṟappu + eṉ + payaṉ -> vippiṟappeṉpayaṉ; oppiṭa + vāyēṉ -> ṉoppiḍa vāyēṉ."
+    "nameTable": false,
+    "grammarNote": "Tuppaṟivu combines investigation and knowledge, traditionally understood here as inquiry into oneself. Oppiṭa means making equal or filling a deficiency; thus “make it worthy”. Another traditional division asks, “How could I open my mouth to compare?”"
   },
   "line-050": {
-    "source": "தூய்மன மொழியர் தோயுமுன் னையகந் தோயவே யருளென் னருணாச்சலா",
+    "source": "தூய்மன மொழியர் தோயுமுன் மெய்யகந் தோயவே யருளென் னருணாச்சலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -4760,36 +4864,38 @@ window.SONG_LINES = {
       {
         "text": "தோயுமுன்",
         "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "னையகந்",
-        "wordIndices": [
+          2,
           3
         ]
       },
       {
-        "text": "தோயவே",
+        "text": "மெய்யகந்",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "யருளென்",
+        "text": "தோயவே",
         "wordIndices": [
           5
         ]
       },
       {
+        "text": "யருளென்",
+        "wordIndices": [
+          6,
+          7
+        ]
+      },
+      {
         "text": "னருணாச்சலா",
         "wordIndices": [
-          6
+          8
         ]
       }
     ],
-    "roman": "Tūymana moḻiyar tōyumuṉ ṉaiyagan tōyavē yaruḷen ṉaruṇācalā",
-    "english": "{0:As those of pure mind }{1:and speech }{2,3:merge in You, }{3,4,5:grant that my heart may merge, }{5,6:O my Arunachala.}",
+    "roman": "Tūymana moḻiyar tōyum uṉ meyyagan tōyavē yaruḷ en ṉaruṇācalā",
+    "english": "{6:Grant that }{5:I may merge }{3,4:in Your true self, }{2:where }{0,1:those pure in mind and speech }{2:merge, }{7,8:O my Aruṇācala!}",
     "words": [
       {
         "roman": "Tūymana",
@@ -4799,131 +4905,136 @@ window.SONG_LINES = {
       },
       {
         "roman": "moḻiyar",
-        "gloss": "and speech, those possessing",
+        "gloss": "people with pure speech",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tōyumuṉ",
-        "gloss": "who merge in, your",
+        "roman": "tōyum",
+        "gloss": "who merge",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṉaiyagan",
-        "gloss": "You / the inner Heart",
+        "roman": "uṉ",
+        "gloss": "Your",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "meyyagan",
+        "gloss": "true self; true heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tōyavē",
-        "gloss": "to merge / immerse completely",
+        "gloss": "so that I may merge",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yaruḷen",
-        "gloss": "bestow grace, my",
+        "roman": "yaruḷ",
+        "gloss": "grant grace",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "en",
+        "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṉaruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi: tūy + maṉam + moḻiyār -> Tūymana moḻiyar; tōyum + uṉṉai + akam -> tōyumuṉ ṉaiyagan; tōyavē + aruḷ + eṉ -> tōyavē yaruḷen."
   },
   "line-051": {
-    "source": "தெய்வமென் றுன்னைச் சாரவென் னைநீ தேரவொ ழித்தா யருணாச்சலா",
+    "source": "தெய்வமென்றுன்னைச் சாரவேயென்னைச் சேரவொழித்தாய் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "தெய்வமென்",
+        "text": "தெய்வமென்றுன்னைச்",
         "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "றுன்னைச்",
-        "wordIndices": [
+          0,
           1
         ]
       },
       {
-        "text": "சாரவென்",
+        "text": "சாரவேயென்னைச்",
         "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "னைநீ",
-        "wordIndices": [
+          2,
           3
         ]
       },
       {
-        "text": "தேரவொ",
+        "text": "சேரவொழித்தாய்",
         "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ழித்தா",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "யருணாச்சலா",
-        "wordIndices": [
+          4,
           5
         ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          6
+        ]
       }
     ],
-    "roman": "Teyvamen ṟuṉṉaic cāraven ṉainī tēravoḻittā yaruṇācalā",
-    "english": "{1,2:When I approached You }{0:as God, }{4:You examined }{2,3,4:and dissolved me, }{5:O Arunachala.}",
+    "roman": "teyvam eṉṟuṉṉaic cāravē yeṉṉaic cēra voḻittāy aruṇācalā",
+    "english": "{0,1:Taking You as God, }{2:I came for refuge }{1:to You, }{5:and You wiped }{3:me }{4:out completely, }{6:O Aruṇācala!}",
     "words": [
       {
-        "roman": "Teyvamen",
-        "gloss": "as God, saying / considering",
+        "roman": "teyvam",
+        "gloss": "God; the divine",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṟuṉṉaic",
-        "gloss": "You",
+        "roman": "eṉṟuṉṉaic",
+        "gloss": "taking You to be (eṉṟu + unnai)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "cāraven",
-        "gloss": "to approach / rely upon, me",
+        "roman": "cāravē",
+        "gloss": "when I came for refuge",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṉainī",
-        "gloss": "me, You",
+        "roman": "yeṉṉaic",
+        "gloss": "me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tēravoḻittā",
-        "gloss": "upon inquiring / examining, dissolved / abolished",
+        "roman": "cēra",
+        "gloss": "completely",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "voḻittāy",
+        "gloss": "You abolished; You put an end to",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi: teyvam + eṉṟu + uṉṉai -> Teyvamen ṟuṉṉaic; cāra + eṉṉai + nī -> cāraven ṉainī; tēra + oḻittāy -> tēravoḻittāy (2nd person past)."
+    "nameTable": false,
+    "grammarNote": "The speaker comes to God for refuge and finds the separate self brought to an end. Cēra means completely; the strong verb oḻittāy sustains the poem’s startled bridal address."
   },
   "line-052": {
     "source": "தேடா துற்றநற் றிருவருள் நிதியகத் தியக்கந் தீர்த்தரு ளருணாச்சலா",
@@ -4938,86 +5049,81 @@ window.SONG_LINES = {
       {
         "text": "துற்றநற்",
         "wordIndices": [
-          1
+          0
         ]
       },
       {
         "text": "றிருவருள்",
         "wordIndices": [
-          2
+          1
         ]
       },
       {
         "text": "நிதியகத்",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "தியக்கந்",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "தீர்த்தரு",
         "wordIndices": [
-          5
+          4
         ]
       },
       {
         "text": "ளருணாச்சலா",
         "wordIndices": [
-          6
+          5
         ]
       }
     ],
-    "roman": "Tēḍā tuṟṟanaṟ ṟiruvaruḷ nitiyakat tiyakkan tīrttaru ḷaruṇācalā",
-    "english": "{1,2,3:O treasure of sacred grace }{0,1:gained unsought, }{4,5:dispel the agitation }{3:in my heart }{5:and bestow grace, }{6:O Arunachala.}",
+    "roman": "Tēḍātuṟṟa naṟṟiruvaruḷ niti yakattiyakkan tīrttaruḷ aruṇācalā",
+    "english": "{1,2:O good treasure of sacred grace, }{0,1:found without seeking, }{4:graciously dispel }{3:my heart’s confusion, }{5:O Aruṇācala!}",
     "words": [
       {
-        "roman": "Tēḍā",
-        "gloss": "without seeking / unsought",
+        "roman": "Tēḍātuṟṟa",
+        "gloss": "found without seeking",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tuṟṟanaṟ",
-        "gloss": "obtained, the good",
+        "roman": "naṟṟiruvaruḷ",
+        "gloss": "good sacred grace (nal + tiru-aruḷ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ṟiruvaruḷ",
-        "gloss": "sacred grace",
+        "roman": "niti",
+        "gloss": "treasure",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nitiyakat",
-        "gloss": "treasure, in the heart",
+        "roman": "yakattiyakkan",
+        "gloss": "confusion in the heart (akam + tiyakkam)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tiyakkan",
-        "gloss": "agitation / confusion / trembling",
+        "roman": "tīrttaruḷ",
+        "gloss": "graciously dispel",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tīrttaru",
-        "gloss": "dispelling, grant grace",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ḷaruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇācalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi: tēḍātu + uṟṟa + nal -> Tēḍā tuṟṟanaṟ; tiru-aruḷ + niti + akattu -> ṟiruvaruḷ nitiyakat; tiyakkam + tīrttu + aruḷ -> tiyakkan tīrttaruḷ."
   },
   "line-053": {
@@ -5074,7 +5180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tairiyamōṭu uṉ meyyaka nāṭa yāṉ taṭṭaḻintēn aruḷ aruṇācalā",
-    "english": "{0,3:When I boldly sought }{1,2:Your true inner realm, }{4,5:I was shattered; }{6:bestow grace, }{7:O Arunachala.}",
+    "english": "{0,3:When I boldly sought }{1,2:Your true inner realm, }{4,5:I was shattered; }{6:bestow grace, }{7:O Aruṇācala.}",
     "words": [
       {
         "roman": "tairiyamōṭu",
@@ -5120,11 +5226,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sociative marker -ōṭu on tairiyam; adjectival mey + akam; infinitive nāṭa; 1st person singular past taṭṭaḻintēn."
   },
   "line-054": {
@@ -5140,58 +5247,65 @@ window.SONG_LINES = {
       {
         "text": "கைமெய்",
         "wordIndices": [
-          1
+          1,
+          2
         ]
       },
       {
         "text": "கட்டிடாயெனில்",
         "wordIndices": [
-          2
+          3
         ]
       },
       {
         "text": "யான்",
         "wordIndices": [
-          3
+          4
         ]
       },
       {
         "text": "நட்டமாவேன்",
         "wordIndices": [
-          4
+          5
         ]
       },
       {
         "text": "அருள்",
         "wordIndices": [
-          5
+          6
         ]
       },
       {
         "text": "அருணாச்சலா",
         "wordIndices": [
-          6
+          7
         ]
       }
     ],
-    "roman": "toṭṭaruḷ kaimey kaṭṭiṭāyeṉil yāṉ naṭṭamāvēn aruḷ aruṇācalā",
-    "english": "{0:Touching me with grace, }{1,2:if You do not hold me fast in body and hand, }{3,4:I shall be ruined; }{5:bestow grace, }{6:O Arunachala.}",
+    "roman": "toṭṭaruḷ kai mey kaṭṭiṭāyeṉil yāṉ naṭṭamāvēn aruḷ aruṇācalā",
+    "english": "{3:If You do not }{0:touch me }{0,1:with Your gracious hand }{2,3:and embrace my body, }{4,5:I shall be lost. }{6:Grant Your grace, }{7:O Aruṇācala!}",
     "words": [
       {
         "roman": "toṭṭaruḷ",
-        "gloss": "touching graciously",
+        "gloss": "having touched; grace (toṭṭu + aruḷ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kaimey",
-        "gloss": "body and hand / real embrace",
+        "roman": "kai",
+        "gloss": "hand",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mey",
+        "gloss": "body",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṭṭiṭāyeṉil",
-        "gloss": "if you do not embrace / hold fast",
+        "gloss": "if You do not embrace",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5203,7 +5317,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "naṭṭamāvēn",
-        "gloss": "will be ruined / lost",
+        "gloss": "shall be lost; shall suffer loss",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5215,42 +5329,93 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Compound toṭṭu + aruḷ; kai + mey (dvandva / hendiadys); negative conditional verb kaṭṭiṭāy + eṉil; 1st person future naṭṭam āvēṉ."
   },
   "line-055": {
-    "source": "தோடமிலகத்தோடொன்றியென்றுஞ்சந்தோடமொன்றிட அருள் அருணாச்சலா",
+    "source": "தோடமில் நீ அகத்தோடொன்றி என்றுஞ்சந்தோடமொன்றிட அருள் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "தோடமிலகத்தோடொன்றியென்றுஞ்சந்தோடமொன்றிட",
+        "text": "தோடமில்",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "அருள்",
+        "text": "நீ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "அருணாச்சலா",
+        "text": "அகத்தோடொன்றி",
         "wordIndices": [
           2
         ]
+      },
+      {
+        "text": "என்றுஞ்சந்தோடமொன்றிட",
+        "wordIndices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "text": "அருள்",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          7
+        ]
       }
     ],
-    "roman": "tōṭamilakattōṭoṉṟiyeṉṟuñcantōṭamoṉṟiṭa aruḷ aruṇācalā",
-    "english": "{0:Uniting with the faultless Heart }{0:so that everlasting joy merges, }{1:bestow grace, }{2:O Arunachala.}",
+    "roman": "tōṭamil nī akattōṭoṉṟi eṉṟuñ cantōṭam oṉṟiṭa aruḷ aruṇācalā",
+    "english": "{1:You }{0:who are free of fault, }{2:unite with my heart }{6:and grant that }{4:joy }{5:may abide }{3:forever, }{7:O Aruṇācala!}",
     "words": [
       {
-        "roman": "tōṭamilakattōṭoṉṟiyeṉṟuñcantōṭamoṉṟiṭa",
-        "gloss": "uniting with the faultless heart so that everlasting joy merges",
+        "roman": "tōṭamil",
+        "gloss": "free of fault (tōṭam + il)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nī",
+        "gloss": "You",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "akattōṭoṉṟi",
+        "gloss": "uniting with my heart (akattōṭu + oṉṟi)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "eṉṟuñ",
+        "gloss": "always; forever",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "cantōṭam",
+        "gloss": "joy; happiness",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "oṉṟiṭa",
+        "gloss": "to remain as one; to abide",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5262,12 +5427,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Extended sandhi compound: tōṭam (dōṣa/fault) + il (without) + akattōṭu (with the heart) + oṉṟi (having united) + eṉṟum (always) + cantōṭam (joy) + oṉṟiṭa (to merge); followed by imperative aruḷ."
+    "nameTable": false,
+    "grammarNote": "Nī, “You”, is the subject of uniting. The two forms of oṉṟu sustain the image of oneness: unite with the heart, so that joy remains as one or abides. Tōṭam is fault; cantōṭam is joy."
   },
   "line-056": {
     "source": "நகைக்கிடமிலை நின்னாடிய எனை அருணகையிட்டுப் பார் நீ அருணாச்சலா",
@@ -5317,7 +5483,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nakaikkiṭamilai niṉṉāṭiya eṉai aruṇakaiyiṭṭup pār nī aruṇācalā",
-    "english": "{0:There is no room for ridicule; }{2,4:look upon me }{1:who sought You }{3:with a smile of grace, }{5:You, }{6:O Arunachala.}",
+    "english": "{0:There is no room for mockery. }{4,5:Look }{2:upon me, }{1:who sought You, }{3:with Your gracious smile, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "nakaikkiṭamilai",
@@ -5339,7 +5505,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇakaiyiṭṭup",
-        "gloss": "wearing a gracious smile / adorning with grace",
+        "gloss": "with a gracious smile; also, adorning with grace (aruḷ + nakai, smile or ornament)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5351,21 +5517,22 @@ window.SONG_LINES = {
       },
       {
         "roman": "nī",
-        "gloss": "You",
+        "gloss": "You, the one asked to look",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Dative compound nakaikku + iṭam + ilai -> nakaikkiṭamilai; relative participle niṉ + nāṭiya -> niṉṉāṭiya; aruḷ + nakai + iṭṭu -> aruṇakaiyiṭṭup; imperative pār with pronoun nī."
   },
   "line-057": {
-    "source": "நாணிலை நாடிட நானாயொன்றியித் தாணுவா நின்றனையருணாச்சலா",
+    "source": "நாணிலை நாடிட நானாய் ஒன்றி நீ தாணுவாய் நின்றனை அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -5381,73 +5548,103 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "நானாயொன்றியித்",
+        "text": "நானாய்",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "தாணுவா",
+        "text": "ஒன்றி",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "நின்றனையருணாச்சலா",
+        "text": "நீ",
         "wordIndices": [
-          4,
+          4
+        ]
+      },
+      {
+        "text": "தாணுவாய்",
+        "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "நின்றனை",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          7
         ]
       }
     ],
-    "roman": "nāṇilai nāṭiṭa nānāyoṉṟiyit tāṇuvā niṉṟaṉai aruṇācalā",
-    "english": "{0:Shameless You are! }{1:When sought, }{2:uniting as “I”, }{4:You stood }{2,3:as this motionless pillar, }{5:O Arunachala.}",
+    "roman": "nāṇilai nāṭiṭa nāṉāy oṉṟi nī tāṇuvāy niṉṟaṉai aruṇācalā",
+    "english": "{0:You had no shyness! }{1:When I sought You, }{4:You }{3:united with me }{2:as my very self }{6:and stood }{5:unmoving as a pillar, }{7:O Aruṇācala!}",
     "words": [
       {
         "roman": "nāṇilai",
-        "gloss": "shameless You are / without shame",
+        "gloss": "You have no shame; also, without shyness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nāṭiṭa",
-        "gloss": "when sought / when inquired into",
+        "gloss": "when I sought You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nānāyoṉṟiyit",
-        "gloss": "uniting as 'I', this",
+        "roman": "nāṉāy",
+        "gloss": "as I myself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tāṇuvā",
-        "gloss": "as the motionless pillar / firm column",
+        "roman": "oṉṟi",
+        "gloss": "becoming one; uniting",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nī",
+        "gloss": "You",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tāṇuvāy",
+        "gloss": "as an unmoving pillar; evokes Śiva as Sthāṇu, the steadfast one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "niṉṟaṉai",
-        "gloss": "you stood",
+        "gloss": "You stood; You remained",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "nāṇ + ilai -> nāṇilai; infinitive nāṭiṭa; nāṉ + āy + oṉṟi + i- -> nānāyoṉṟiyit; tāṇu (Sthāṇu / pillar) + āy -> tāṇuvā(y); 2nd person past niṉṟaṉai."
+    "nameTable": false,
+    "grammarNote": "The bridal speaker reproaches the beloved’s lack of shyness. Nāṉāy oṉṟi also supports “becoming one as I myself”; tāṇu is a pillar and recalls Śiva’s name Sthāṇu, the immovable one. Another traditional reading relates lack of shame to the speaker’s own approach."
   },
   "line-058": {
-    "source": "நின்னெறி யெரித்தெனை யீறாக்கிடுமுன் இன்னருள் மழை பொழி அருணாச்சலா",
+    "source": "நின்னெரி யெரித்தெனை நீறாக்கிடுமுன் இன்னருள் மழை பொழி அருணாச்சலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "நின்னெறி",
+        "text": "நின்னெரி",
         "wordIndices": [
           0
         ]
@@ -5459,7 +5656,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "யீறாக்கிடுமுன்",
+        "text": "நீறாக்கிடுமுன்",
         "wordIndices": [
           2
         ]
@@ -5489,24 +5686,24 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "ninṉeṟi yeritteṉai yīṟākkiṭumuṉ iṉṉaruḷ maḻai poḻi aruṇācalā",
-    "english": "{0,2:Before Your fire }{1:burns me }{2:to ashes, }{5:shower }{3,4:a rain of sweet grace, }{6:O Arunachala.}",
+    "roman": "ninṉeri yeritteṉai nīṟākkiṭumuṉ iṉṉaruḷ maḻai poḻi aruṇāccalā",
+    "english": "{0,2:Before Your fire }{1:burns me }{2:to ashes, }{5:pour down }{4:the rain }{3:of sweet grace, }{6:O Aruṇācala!}",
     "words": [
       {
-        "roman": "ninṉeṟi",
-        "gloss": "your fire",
+        "roman": "ninṉeri",
+        "gloss": "Your fire",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yeritteṉai",
-        "gloss": "burning, me",
+        "gloss": "burning me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yīṟākkiṭumuṉ",
-        "gloss": "before reducing to ashes / an end",
+        "roman": "nīṟākkiṭumuṉ",
+        "gloss": "before reducing to ashes",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5524,37 +5721,38 @@ window.SONG_LINES = {
       },
       {
         "roman": "poḻi",
-        "gloss": "shower / pour down",
+        "gloss": "pour down; shower",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "roman": "aruṇāccalā",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Sandhi: niṉ + eṟi -> ninṉeṟi; erittu + eṉai -> yeritteṉai; īṟu + ākkiṭum + muṉ -> yīṟākkiṭumuṉ; iṉ (sweet) + aruḷ -> iṉṉaruḷ; imperative poḻi."
   },
   "line-059": {
-    "source": "நீயற நானறப் பொலிநிதங்களி மயமா நின்றிடு நிலையருள் அருணாச்சலா",
+    "source": "நீநான் அறப்புலி நிதங்களி மயமா நின்றிடு நிலையருள் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "நீயற",
+        "text": "நீநான்",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "நானறப்",
+        "text": "அறப்புலி",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "பொலிநிதங்களி",
+        "text": "நிதங்களி",
         "wordIndices": [
           2
         ]
@@ -5578,62 +5776,63 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "அருணாச்சலா",
+        "text": "அருணாசலா",
         "wordIndices": [
           6
         ]
       }
     ],
-    "roman": "nīyaṟa nāṉaṟap polinitankaḷi mayamā niṉṟiṭu nilaiyaruḷ aruṇācalā",
-    "english": "{0:As “You” cease }{1:and “I” ceases, }{5:grant that state }{4:of abiding }{2,3:full of ever-shining joy, }{6:O Arunachala.}",
+    "roman": "nīnāṉ aṟappuli nitaṅkaḷi mayamā niṉṟiṭu nilaiyaruḷ aruṇācalā",
+    "english": "{1:Unite with me so that }{0:“You” and “I” }{1:cease. }{5:Grant the state }{4:of abiding }{2,3:forever full of joy, }{6:O Aruṇācala.}",
     "words": [
       {
-        "roman": "nīyaṟa",
-        "gloss": "as You cease [as separate] / without 'You'",
+        "roman": "nīnāṉ",
+        "gloss": "You and I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nāṉaṟap",
-        "gloss": "as 'I' ceases / without 'I'",
+        "roman": "aṟappuli",
+        "gloss": "unite so that the distinction ceases",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "polinitankaḷi",
-        "gloss": "shining ever with supreme joy",
+        "roman": "nitaṅkaḷi",
+        "gloss": "ever joyful",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mayamā",
-        "gloss": "pervaded by / full of",
+        "gloss": "filled with; consisting of",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "niṉṟiṭu",
-        "gloss": "abiding / standing",
+        "gloss": "remaining; abiding",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nilaiyaruḷ",
-        "gloss": "grant that state",
+        "gloss": "graciously grant the state",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Infinitives of cessation nī aṟa and nāṉ aṟa; nitam (nityam / constantly); mayam + ā -> mayamā (adverbial marker); relative participle niṉṟiṭu modifying nilai; compound nilai + aruḷ."
+    "nameTable": false,
+    "grammarNote": "nī and nāṉ are You and I; aṟa means to cease and puli means join. nitam is always; kaḷi-mayam-ā describes being full of joy. nilai aruḷ is grant the state."
   },
   "line-060": {
-    "source": "நுண்ணுரு வோனையான் விண்ணுரு நண்ணிட வெண்ணலை யிருமென் றருணாச்சலா",
+    "source": "நுண்ணுரு வுனையான் விண்ணுரு நண்ணிட எண்ணலை யிறுமென் றருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -5643,7 +5842,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "வோனையான்",
+        "text": "வுனையான்",
         "wordIndices": [
           1
         ]
@@ -5661,26 +5860,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "வெண்ணலை",
+        "text": "எண்ணலை",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "யிருமென்",
+        "text": "யிறுமென்",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "றருணாச்சலா",
+        "text": "றருணாசலா",
         "wordIndices": [
           6
         ]
       }
     ],
-    "roman": "nuṇṇuru vōṉaiyāṉ viṇṇuru naṇṇiṭa veṇṇalai yirumeṉ ṟaruṇācalā",
-    "english": "{5:Saying, }{5:'Remain still }{4:without thought-waves,' }{1:so that I }{3:may reach }{0,1:You of subtle form }{2:as space-form, }{6:O Arunachala!}",
+    "roman": "nuṇṇuru vuṉaiyāṉ viṇṇuru naṇṇiṭa eṇṇalai yiṟumeṉ ṟaruṇācalā",
+    "english": "{5,6:When }{5:will }{4:the waves of thought }{5:cease, }{3:so that }{1:I }{3:may unite with }{1:You, }{0,2:whose form is subtle space, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "nuṇṇuru",
@@ -5689,43 +5888,44 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vōṉaiyāṉ",
-        "gloss": "the one possessing [subtle form] (acc.) + I (nom.)",
+        "roman": "vuṉaiyāṉ",
+        "gloss": "You; I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "viṇṇuru",
-        "gloss": "space-form; etheric nature",
+        "gloss": "form of space",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "naṇṇiṭa",
-        "gloss": "to reach; to merge into",
+        "gloss": "so that I may reach or unite with",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "veṇṇalai",
-        "gloss": "thought-waves (acc.); waving thoughts",
+        "roman": "eṇṇalai",
+        "gloss": "waves of thought",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yirumeṉ",
-        "gloss": "remain still, saying",
+        "roman": "yiṟumeṉ",
+        "gloss": "will cease; when?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṟaruṇācalā",
-        "gloss": "thus, O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi combines nuṇ-uru-vōṉai (acc.) with yāṉ (nom.); v-eṇṇal-alai (thought-wave) with irum (imperative plural/polite) and eṉṟu (quotative particle)."
+    "nameTable": false,
+    "grammarNote": "nuṇ uru uṉai yāṉ viṇ uru naṇṇiṭa leads to the question eṇ alai iṟum eṉṟu, when will thought-waves cease? eṉṟu is interrogative here. iṟum is future of cease, not a quoted imperative remain."
   },
   "line-061": {
     "source": "நூலறி வறியாப் பேதைய னென்றன் மாலறி வறுத்தரு ளருணாச்சலா",
@@ -5775,7 +5975,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nūlaṟi vaṟiyāp pētaiye ṉeṉṟaṉ mālaṟi vaṟuttaru ḷaruṇācalā",
-    "english": "{5:Sever }{4:the deluded knowledge }{3:of mine, }{2:a simpleton }{1:knowing no }{0:scriptural learning, }{5,6:and bestow grace, }{6:O Arunachala!}",
+    "english": "{5,6:Graciously cut away }{3:my }{4:deluded understanding; }{2:I am a fool }{1:unacquainted with }{0:scriptural learning, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "nūlaṟi",
@@ -5791,7 +5991,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pētaiye",
-        "gloss": "ignorant fool; simpleton [am I]",
+        "gloss": "I am an ignorant person; a fool",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5803,23 +6003,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "mālaṟi",
-        "gloss": "deluded knowledge; confused intellect",
+        "gloss": "deluded understanding; knowledge clouded by error",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vaṟuttaru",
-        "gloss": "severing and gracing",
+        "gloss": "cut away, graciously",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ḷaruṇācalā",
-        "gloss": "bestow grace, O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Negative relative participle aṟiyā modifies pētaiyen (nominal 1st-person subject); eṉṟaṉ is genitive; aṟuttu is verbal participle preceding imperative aruḷ."
   },
   "line-062": {
@@ -5864,7 +6065,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nekku nekkurukiyāṉ pukkiṭa vuṉaippuka ṉakkaṉā niṉṟaṉaiyaruṇācalā",
-    "english": "{1:As I, }{0:softening }{1:and melting again and again, }{2:entered }{3:to seek refuge in You, }{5:You stood }{4:naked, }{5:O Arunachala!}",
+    "english": "{1:As I, }{0:softening }{1:and melting again and again, }{2:entered }{3:to seek refuge in You, }{5:You stood }{4:naked, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "nekku",
@@ -5892,17 +6093,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "ṉakkaṉā",
-        "gloss": "as the naked one; stripped of all coverings",
+        "gloss": "naked; unveiled, free of coverings",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "niṉṟaṉaiyaruṇācalā",
-        "gloss": "you stood, O Arunachala",
+        "gloss": "You stood; O Aruṇācala, the red mountain worshipped as Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Reduplicated participle nekku nekku denotes repeated melting; pukkiṭa is infinitive; nakkaṉā is adverbial predicate formed with suffix -ā(y)."
   },
   "line-063": {
@@ -5953,7 +6155,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nēcamil eṉakkuṉ ṉācaiyaik kāṭṭinī mōcamceyyāt aruḷ aruṇācalā",
-    "english": "{3:Having shown }{1,2:longing for You }{1:to me }{0:who lack love, }{4:do not deceive me, }{5:bestow grace, }{6:O Arunachala!}",
+    "english": "{3:You awakened }{1,2:longing for You }{1:in me, }{0:who had no love. }{4:Do not disappoint me; }{5:grant Your grace, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "nēcamil",
@@ -5975,13 +6177,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāṭṭinī",
-        "gloss": "having shown, you",
+        "gloss": "having shown or awakened, You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mōcamceyyāt",
-        "gloss": "without deceiving; do not betray",
+        "gloss": "do not deceive or disappoint",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5993,11 +6195,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "nēcam-il is compound relative participle; eṉakku is dative experiencer; āsaiyai is accusative; ceyyātu is negative adverbial participle acting prohibitively before imperative aruḷ."
   },
   "line-064": {
@@ -6048,51 +6251,52 @@ window.SONG_LINES = {
       }
     ],
     "roman": "naindaḻik kaniyā nalaṉilai patattiṉ nāṭiyuṭ koḷanalam aruṇācalā",
-    "english": "{0:If it spoils and rots }{1:as fruit, }{2:there is no good; }{3:at the ripe stage, }{4:seeking }{4,5:and taking it within }{5:is good, }{6:O Arunachala!}",
+    "english": "{0,1:A fruit that wastes away and rots }{2:is of no use. }{5:It is good }{4,5:to seek it out and eat it }{3:while it is ripe, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "naindaḻik",
-        "gloss": "wasting and rotting; spoiling",
+        "gloss": "wasting away and rotting",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaniyā",
-        "gloss": "as decayed fruit; if fruit rots",
+        "gloss": "fruit",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalaṉilai",
-        "gloss": "there is no benefit; it is of no use",
+        "gloss": "there is no benefit",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "patattiṉ",
-        "gloss": "at the ripe stage; in proper season",
+        "gloss": "while ripe; at the right stage",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nāṭiyuṭ",
-        "gloss": "seeking and within",
+        "gloss": "seeking out, within",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koḷanalam",
-        "gloss": "taking in is good; good to consume",
+        "gloss": "to take in or eat is good",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "naindu-aḻi describes the rotten state; patattiṉ is locative; uṭkoḷa is infinitive governed by the evaluative nominal predicate nalam."
   },
   "line-065": {
@@ -6143,11 +6347,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nontiṭā tuṉṟaṉait tanteṉaik koṇṭilai antakaṉ nīyeṉak karuṇācalā",
-    "english": "{0:Without suffering, }{2:having given }{1:Yourself, }{3:did You not take }{2:me? }{5:You are }{4:the Ender }{5:to me, }{6:O Arunachala!}",
+    "english": "{3:If You do not take }{2:me }{2:and give }{1:Yourself }{0:so that I do not suffer, }{5:You are }{4:Death itself }{5:to me, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "nontiṭā",
-        "gloss": "without suffering; painlessly",
+        "gloss": "without suffering; so that I do not suffer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6165,13 +6369,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "koṇṭilai",
-        "gloss": "did you not take?; you took [me]",
+        "gloss": "You have not taken; if You do not take",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "antakaṉ",
-        "gloss": "Yama; the Destroyer; the Ender",
+        "gloss": "Death; Antaka, the ender of life, a name of Yama",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6183,12 +6387,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "karuṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "nontiṭātu is negative verbal participle; tantu is past verbal participle; koṇṭilai is 2nd-person past functioning as rhetorical confirmation."
+    "nameTable": false,
+    "grammarNote": "nontiṭātu is a negative participle; tantu means having given; koṇṭilai is second-person negative, read conditionally here. antakaṉ names Death, the consequence of not taking the speaker."
   },
   "line-066": {
     "source": "நோக்கியே கருதி மெய்த் தாக்கியே பக்குவ மாக்கினீ யாண்டருள் அருணாச்சலா",
@@ -6244,29 +6449,29 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nōkkiyē karuti meyt tākkiyē pakkuva mākkinī yāṇṭaruḷ aruṇācalā",
-    "english": "{0:By gazing, }{1:by thinking, }{3:and by touching }{2:the body, }{5:having made me }{4:ripe, }{5:You }{6:rule and bestow grace, }{7:O Arunachala!}",
+    "english": "{4,5:Having made me ripe }{0:by Your gaze, }{1:Your thought, }{3:and Your touch }{2:upon my body, }{5,6:graciously take me as Your own, }{7:O Aruṇācala.}",
     "words": [
       {
         "roman": "nōkkiyē",
-        "gloss": "by gazing alone; looking intently",
+        "gloss": "by looking at me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karuti",
-        "gloss": "by thinking; contemplating",
+        "gloss": "by thinking of me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "meyt",
-        "gloss": "body; physical touch",
+        "gloss": "body",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tākkiyē",
-        "gloss": "by touching; contacting",
+        "gloss": "by touching",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6284,21 +6489,22 @@ window.SONG_LINES = {
       },
       {
         "roman": "yāṇṭaruḷ",
-        "gloss": "rule and bestow grace",
+        "gloss": "graciously rule me; take me as Your own",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "A chain of verbal participles nōkki, karuti, tākki, mākki leads to subject nī and the compound imperative āṇṭu aruḷ."
   },
   "line-067": {
-    "source": "பற்றிமால் விடந்தலை யுற்றிடு முனமருள் பற்றிட அருள்புரி அருணாச்சலா",
+    "source": "பற்றிமால் விடந்தலை யுற்றிறு முனமருள் பற்றிட அருள்புரி அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -6314,7 +6520,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "யுற்றிடு",
+        "text": "யுற்றிறு",
         "wordIndices": [
           2
         ]
@@ -6338,59 +6544,60 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "அருணாச்சலா",
+        "text": "அருணாசலா",
         "wordIndices": [
           6
         ]
       }
     ],
-    "roman": "paṟṟimāl viṭantalai yuṟṟiṭu muṉamaruḷ paṟṟiṭa aruḷpuri aruṇācalā",
-    "english": "{3:Before }{0:the seizing }{1:venom }{0:of delusion }{2:reaches }{1:the head, }{5:bestow grace }{3:that Your grace }{4:may take hold, }{6:O Arunachala!}",
+    "roman": "paṟṟimāl viṭantalai yuṟṟiṟu muṉamaruḷ paṟṟiṭa aruḷpuri aruṇācalā",
+    "english": "{3:Before }{0,1:the poison of delusion }{0:seizes me, }{1,2:reaches my head and kills me, }{5:grant that }{3:Your grace }{4:may take hold of me, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "paṟṟimāl",
-        "gloss": "seizing, delusion; infatuating madness",
+        "gloss": "seizing; delusion",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "viṭantalai",
-        "gloss": "the venom, to the head",
+        "gloss": "poison; head",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yuṟṟiṭu",
-        "gloss": "reaches; ascends to",
+        "roman": "yuṟṟiṟu",
+        "gloss": "reaching and killing",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "muṉamaruḷ",
-        "gloss": "before, grace",
+        "gloss": "before; grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paṟṟiṭa",
-        "gloss": "to take hold; to grasp",
+        "gloss": "to take hold",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruḷpuri",
-        "gloss": "bestow grace",
+        "gloss": "grant grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "paṟṟi is verbal participle; talai uṟṟiṭu muṉam is a temporal clause ('before reaching the head'); aruḷ paṟṟiṭa is purpose clause governing compound imperative aruḷ puri."
+    "nameTable": false,
+    "grammarNote": "paṟṟi is seizing; māl viṭam is poison of delusion. talai uṟṟu iṟu means reaching the head and killing; muṉam is before. aruḷ paṟṟiṭa states the result sought."
   },
   "line-068": {
     "source": "பார்த்தருள் மாலறப் பார்த்திலையெனினருள் பாருனக் கார்சொல்வர் அருணாச்சலா",
@@ -6434,11 +6641,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pārttaruḷ mālaṟap pārttilaiyeṉiṉaruḷ pāruṉak kārcolvar aruṇācalā",
-    "english": "{0:Look and bestow grace }{1:so that delusion ceases; }{2:if You do not look, }{3,4:who in the world }{3,4:will tell You }{2:to bestow grace, }{5:O Arunachala!}",
+    "english": "{0:Look on me with grace }{1:and end my delusion. }{2:If You will not look, }{3,4:who can tell You, }{2,3:“Look with grace”? }{5:O Aruṇācala.}",
     "words": [
       {
         "roman": "pārttaruḷ",
-        "gloss": "look and bestow grace",
+        "gloss": "look graciously",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6450,43 +6657,44 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārttilaiyeṉiṉaruḷ",
-        "gloss": "if you do not look, grace",
+        "gloss": "if You do not look; graciously",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pāruṉak",
-        "gloss": "look / world, to you",
+        "gloss": "look; to You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kārcolvar",
-        "gloss": "who will tell?; who can command?",
+        "gloss": "who can tell?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "māl aṟa is infinitive of result; pārttilai eṉiṉ is negative conditional; ār colvar is honorific 3rd-person future/potential interrogative."
+    "nameTable": false,
+    "grammarNote": "māl aṟa expresses the end of delusion; pārttilai eṉiṉ is a negative condition; aruḷ pār is the quoted request to look graciously, followed by unakku ār colvar, who can tell You."
   },
   "line-069": {
-    "source": "பித்தினில் உனைநேர் பித்தனாக்கினை அருட்பித்தந் தெளிமருந்தருணாச்சலா",
+    "source": "பித்துவிட்டுனை நேர் பித்தனாக்கினை அருள் பித்தந் தெளிமருந்தருணாச்சலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "பித்தினில்",
+        "text": "பித்துவிட்டுனை",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "உனைநேர்",
+        "text": "நேர்",
         "wordIndices": [
           1
         ]
@@ -6498,53 +6706,66 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "அருட்பித்தந்",
+        "text": "அருள்",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "தெளிமருந்தருணாச்சலா",
+        "text": "பித்தந்",
         "wordIndices": [
           4
         ]
+      },
+      {
+        "text": "தெளிமருந்தருணாச்சலா",
+        "wordIndices": [
+          5
+        ]
       }
     ],
-    "roman": "pittiṉil uṉainēr pittaṉākkiṉai aruṭpittaṉ teḷimaruntaruṇācalā",
-    "english": "{0:In madness }{2:You made me a madman }{1:equal to You, }{4:O Arunachala, }{4:medicine }{4:that cures }{3:the madness of grace!}",
+    "roman": "pittuviṭṭuṉai nēr pittaṉākkiṉai aruḷ pittan teḷimaruntaruṇācalā",
+    "english": "{0:You removed my madness }{2:and made me a madman }{0,1:like You. }{3:Grant }{5:the medicine to cure }{4:this madness, }{5:O Aruṇācala.}",
     "words": [
       {
-        "roman": "pittiṉil",
-        "gloss": "in madness; in divine frenzy",
+        "roman": "pittuviṭṭuṉai",
+        "gloss": "having removed madness; You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "uṉainēr",
-        "gloss": "equal to you; matching you",
+        "roman": "nēr",
+        "gloss": "like; equal to",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pittaṉākkiṉai",
-        "gloss": "you made [me] a madman",
+        "gloss": "You made me a madman",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "aruṭpittaṉ",
-        "gloss": "the madness of grace; divine frenzy",
+        "roman": "aruḷ",
+        "gloss": "graciously grant",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pittan",
+        "gloss": "madness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "teḷimaruntaruṇācalā",
-        "gloss": "curing medicine, O Arunachala",
+        "gloss": "medicine that cures; O Aruṇācala, the red mountain worshipped as Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "pittiṉil is locative; uṉai nēr is accusative with defective noun of comparison nēr; pittaṉ ākkiṉai is 2nd-person past; teḷi maruntu is a verbal noun compound."
+    "nameTable": false,
+    "grammarNote": "pittu viṭṭu is having removed madness; uṉai nēr is like You. pittaṉ ākkiṉai is You made me a madman. aruḷ is the imperative graciously grant; pittam teḷi maruntu is medicine that clears madness."
   },
   "line-070": {
     "source": "பீதியில் உனைச்சார் பீதியில் எனைச்சேர் பீதியுன்றனக்கேன் அருணாச்சலா",
@@ -6588,29 +6809,29 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pītiyil uṉaiccār pītiyil eṉaiccēr pītiyuṉṟaṉakkēṉ aruṇācalā",
-    "english": "{0:In fear }{1:I take refuge in You; }{2:fearlessly }{3:unite with me! }{4:Why is there fear }{4:for You, }{5:O Arunachala!}",
+    "english": "{3:Unite with me, }{2:who in fear }{1:has sought You, }{0:the fearless one. }{4:Why should You fear, }{5:O Aruṇācala?}",
     "words": [
       {
         "roman": "pītiyil",
-        "gloss": "in fear; out of dread",
+        "gloss": "without fear; fearless, describing You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "uṉaiccār",
-        "gloss": "I take refuge in you; I approach you",
+        "gloss": "having sought or taken refuge in You",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pītiyil",
-        "gloss": "without fear; fearlessly",
+        "gloss": "in fear, describing me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "eṉaiccēr",
-        "gloss": "unite with me; receive me",
+        "gloss": "unite with me",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6622,12 +6843,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Polysemic pun on pītiyil: first is locative noun pīti-yil (in fear), second is privative noun compound pīti-il (fear-lacking / fearlessly); eṉaiccēr is imperative; ēn is interrogative particle."
+    "nameTable": false,
+    "grammarNote": "First pīti-il is privative, fearless, qualifying You; second pīti-yil is locative, in fear, qualifying the speaker. eṉai cēr is the imperative unite with me."
   },
   "line-071": {
     "source": "புல்லறிவேதுரை நல்லறிவேதுரை புல்லிடவே அருள் அருணாச்சலா",
@@ -6665,39 +6887,40 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pullaṟivēturai nallaṟivēturai pulliṭavē aruḷ aruṇācalā",
-    "english": "{0:Tell }{0:what is petty knowledge! }{1:Tell }{1:what is noble knowledge! }{3:Bestow grace }{2:that we may embrace, }{4:O Arunachala!}",
+    "english": "{0:Tell }{0:what is petty knowledge! }{1:Tell }{1:what is noble knowledge! }{3:Bestow grace }{2:that we may embrace, }{4:O Aruṇācala!}",
     "words": [
       {
         "roman": "pullaṟivēturai",
-        "gloss": "what is petty knowledge? Tell!",
+        "gloss": "tell: what is base knowledge? Also: where is the base mind?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nallaṟivēturai",
-        "gloss": "what is noble knowledge? Tell!",
+        "gloss": "tell: what is good knowledge? Also: where is the good mind?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pulliṭavē",
-        "gloss": "to embrace; to unite closely",
+        "gloss": "to embrace or unite; also when grace embraces",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruḷ",
-        "gloss": "bestow grace",
+        "gloss": "grant grace; also grace as the subject of embracing",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "ētu is interrogative pronoun; urai is imperative verb; pulliṭavē is infinitive with emphatic -ē; aruḷ is root imperative."
   },
   "line-072": {
@@ -6748,17 +6971,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pūmaṇa māmaṉam pūraṇa maṇaṅkoḷap pūraṇa maṇamaruḷ aruṇācalā",
-    "english": "{1:So that the mind }{0,1:drawn to flower-fragrance }{3:may attain }{2:full }{3:fragrance, }{5:bestow }{4:the perfect }{5:wedlock, }{6:O Arunachala!}",
+    "english": "{5:Grant me }{4:complete }{5:union, }{1:so that the mind, }{0:steeped in earthly scent, }{2,3:may take on perfect fragrance, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "pūmaṇa",
-        "gloss": "flower-fragrance; earthly scent",
+        "gloss": "earthly scent; worldly tendencies; also flower-fragrance",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "māmaṉam",
-        "gloss": "the mind",
+        "gloss": "the mind which is so",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6770,7 +6993,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṇaṅkoḷap",
-        "gloss": "to receive fragrance; to attain wedlock",
+        "gloss": "may acquire fragrance; also attain union",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6782,18 +7005,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṇamaruḷ",
-        "gloss": "bestow wedding; fragrant union",
+        "gloss": "grant union or marriage",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sustained paronomasia (sleṣa) on maṇam (fragrance / marriage) and maṉam (mind); maṇaṅ koḷa is infinitive; maṇam aruḷ is compound imperative."
+    "nameTable": false,
+    "grammarNote": "pū-maṇam ām maṉam describes the mind bearing earthly scent or tendencies; maṇam also means marriage or union. pūraṇa maṇam aruḷ asks for complete union."
   },
   "line-073": {
     "source": "பெயர் நினைத்திடவே பிடித்திழுத்தனை யுன் பெருமையாரறிவாரருணாச்சலா",
@@ -6831,7 +7055,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "peyar niṉaittiṭavē piṭittiḻuttaṉai yuṉ perumaiyāraṟivāraruṇācalā",
-    "english": "{1:The very moment }{0,3:Your name }{1:is remembered, }{2:You seized }{2:and dragged me; }{4:who can know }{3,4:Your greatness, }{4:O Arunachala?}",
+    "english": "{1:The very moment I thought of }{0,3:Your name, }{2:You seized and drew me. }{4:Who can know }{3,4:Your greatness, O Aruṇācala?}",
     "words": [
       {
         "roman": "peyar",
@@ -6841,13 +7065,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "niṉaittiṭavē",
-        "gloss": "the very moment one thinks",
+        "gloss": "the very moment I thought",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "piṭittiḻuttaṉai",
-        "gloss": "you seized and dragged [me]",
+        "gloss": "You seized and drew me",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6859,15 +7083,16 @@ window.SONG_LINES = {
       },
       {
         "roman": "perumaiyāraṟivāraruṇācalā",
-        "gloss": "who can know your greatness, O Arunachala?",
+        "gloss": "who can know the greatness? O red mountain, worshipped as Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "niṉaittiṭa is infinitive with emphatic -ē forming an immediate temporal clause; piṭittu iḻuttaṉai is compound 2nd-person past verb; ār aṟivār is honorific interrogative."
   },
   "line-074": {
-    "source": "பேய்த்தனம் விடாவிடாப் பேயாப் பிடித்தெனைப் பேயனாக்கினையென் அருணாச்சலா",
+    "source": "பேய்த்தனம் விடவிடாப் பேயாப் பிடித்தெனைப் பேயனாக்கினையென் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -6877,7 +7102,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "விடாவிடாப்",
+        "text": "விடவிடாப்",
         "wordIndices": [
           1
         ]
@@ -6901,53 +7126,54 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "அருணாச்சலா",
+        "text": "அருணாசலா",
         "wordIndices": [
           5
         ]
       }
     ],
-    "roman": "pēyttaṉam viṭāviṭāp pēyāp piṭitteṉaip pēyaṉākkiṉaiyeṉ aruṇācalā",
-    "english": "{1:With unceasing }{0:ghostly madness, }{3:seizing me }{2:like a ghost, }{4:You made me a ghost-possessed madman}{4:—what wonder, }{5:O Arunachala!}",
+    "roman": "pēyttaṉam viṭaviṭāp pēyāp piṭitteṉaip pēyaṉākkiṉaiyeṉ aruṇācalā",
+    "english": "{1:To drive out }{0:my ghostly nature, }{3:You possessed me }{2:as a ghost }{1:that will not leave, }{4:and made me one possessed. What a wonder, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "pēyttaṉam",
-        "gloss": "demonic madness; ghostly conduct",
+        "gloss": "ghostly or demonic nature",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "viṭāviṭāp",
-        "gloss": "unyielding and unceasing",
+        "roman": "viṭaviṭāp",
+        "gloss": "so it may leave; that will not leave",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pēyāp",
-        "gloss": "as a ghost; like a possessing spirit",
+        "gloss": "as a possessing ghost",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "piṭitteṉaip",
-        "gloss": "possessing me; seizing me",
+        "gloss": "having seized or possessed me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pēyaṉākkiṉaiyeṉ",
-        "gloss": "you made me a ghost-possessed madman, what a wonder!",
+        "gloss": "You made me one possessed; what a wonder",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated negative participle viṭā viṭā functions adverbially; pēyā(y) is adverbial; pēyaṉ ākkiṉai is transitive past verb with nominal complement; eṉ is exclamatory particle."
+    "nameTable": false,
+    "grammarNote": "viṭa is the infinitive so that it leaves, applied to pēyttaṉam. viṭā is the negative relative participle that will not leave, applied to pēy. The speaker is possessed in order to lose the former ghostly nature."
   },
   "line-075": {
     "source": "பைங்கொடியானான் பற்றின்றி வாடாமற் பற்றுக்கோடாய்க் கா அருணாச்சலா",
@@ -6991,7 +7217,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paiṅkoṭiyāṉāṉ paṟṟiṉṟi vāṭāmaṟ paṟṟukkōṭāyk kā aruṇācalā",
-    "english": "{0:So that I, }{0:who am a tender green vine, }{2:do not wither }{1:without support, }{4:protect me }{3:as a supporting stake, }{5:O Arunachala!}",
+    "english": "{0:So that I, }{0:who am a tender green vine, }{2:do not wither }{1:without support, }{4:protect me }{3:as a supporting stake, }{5:O Aruṇācala!}",
     "words": [
       {
         "roman": "paiṅkoṭiyāṉāṉ",
@@ -7025,11 +7251,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "paiṅkoṭi āṉa nāṉ is an appositional subject noun phrase; paṟṟiṉṟi is a negative adverbial modifier; vāṭāmal is negative verbal participle; kā is root imperative."
   },
   "line-076": {
@@ -7080,11 +7307,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "poṭiyāṉ mayakkiyeṉ pōtattaip paṟittuṉ pōtattaik kāṭṭiṉai aruṇācalā",
-    "english": "{1:Bewitching me }{0:with powder, }{3:snatching away }{1:my }{2:awareness, }{5:You revealed }{3:Your }{4:Consciousness, }{6:O Arunachala!}",
+    "english": "{1:Bewitching me }{0:with powder }{3:and snatching away }{1:my }{2:awareness, }{5:You revealed }{3:Your }{4:awareness, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "poṭiyāṉ",
-        "gloss": "with magical powder; with sacred ash",
+        "gloss": "with bewitching powder",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7096,7 +7323,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pōtattaip",
-        "gloss": "consciousness; worldly intellect (acc.)",
+        "gloss": "awareness; here, the sense of separate individuality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7108,7 +7335,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pōtattaik",
-        "gloss": "pure Consciousness; supreme Awareness (acc.)",
+        "gloss": "awareness; here, knowledge of the Self",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7120,11 +7347,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "poṭiyāl is instrumental governing mayakki; accusative eṉ pōtattai is the object of paṟittu, and uṉ pōtattai is the object of kāṭṭiṉai."
   },
   "line-077": {
@@ -7169,7 +7397,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pōkkum varavumil potuveḷiyiṉilaruṭ pōrāṭṭaṅ kāṭṭaruḷ aruṇācalā",
-    "english": "{2:In the open expanse }{1:devoid of }{0:going }{1:and coming, }{4:reveal }{2,3:the play of grace }{4:and bestow grace, }{5:O Arunachala!}",
+    "english": "{4:Graciously show }{2,3:the battle-play of grace }{2:in the common expanse }{1:where there is no }{0:going }{1:or coming, }{5:O Aruṇācala.}",
     "words": [
       {
         "roman": "pōkkum",
@@ -7185,33 +7413,34 @@ window.SONG_LINES = {
       },
       {
         "roman": "potuveḷiyiṉilaruṭ",
-        "gloss": "in the universal open expanse of grace",
+        "gloss": "in the common open expanse; of grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pōrāṭṭaṅ",
-        "gloss": "play; struggle; divine contest",
+        "gloss": "battle-play; struggle or contest",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kāṭṭaruḷ",
-        "gloss": "reveal and bestow grace",
+        "gloss": "graciously show",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "pōkkum varavum il is a relative adjectival clause qualifying potuveḷi; potuveḷiyil is locative; aruṭ-pōrāṭṭam is accusative object of compound imperative kāṭṭu aruḷ."
   },
   "line-078": {
-    "source": "பௌதிக மாமுடற் பற்றற நாளுமுன் பவிசுகண்டுரகருள் அருணாச்சலா",
+    "source": "பௌதிக மாமுடற் பற்றற்று நாளுமுன் பவிசு கண்டுறவருள் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -7227,7 +7456,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "பற்றற",
+        "text": "பற்றற்று",
         "wordIndices": [
           2
         ]
@@ -7239,59 +7468,72 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "பவிசுகண்டுரகருள்",
+        "text": "பவிசு",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "அருணாச்சலா",
+        "text": "கண்டுறவருள்",
         "wordIndices": [
           5
         ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          6
+        ]
       }
     ],
-    "roman": "pautika māmuṭaṟ paṟṟaṟa nāḷumuṉ pavicukaṇṭuraharuḷ aruṇācalā",
-    "english": "{2:So that attachment }{1:to the gross }{0,1:physical body }{2:ceases, }{4:bestow grace }{4:to behold }{3:Your }{4:majesty }{3:daily }{4:and rejoice within, }{5:O Arunachala!}",
+    "roman": "pautika māmuṭaṟ paṟṟaṟṟu nāḷumuṉ pavicu kaṇṭuṟavaruḷ aruṇācalā",
+    "english": "{5:Grant that, }{2:having relinquished attachment }{0,1:to the material body, }{5:I may behold and unite with }{3:Your }{4:splendor }{3:always, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "pautika",
-        "gloss": "physical; elemental; material",
+        "gloss": "material; elemental",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "māmuṭaṟ",
-        "gloss": "gross body",
+        "gloss": "the body, which is material",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "paṟṟaṟa",
-        "gloss": "so attachment ceases; attachment being severed",
+        "roman": "paṟṟaṟṟu",
+        "gloss": "having relinquished attachment",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nāḷumuṉ",
-        "gloss": "constantly your; daily your",
+        "gloss": "always; Your",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "pavicukaṇṭuraharuḷ",
-        "gloss": "beholding splendor, to rejoice/melt within, bestow grace",
+        "roman": "pavicu",
+        "gloss": "splendor",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kaṇṭuṟavaruḷ",
+        "gloss": "graciously grant that I may behold and unite with",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "pautika mām uṭal paṟṟu aṟa is an infinitive clause of purpose; kaṇṭu is verbal participle; uraha is infinitive governed by imperative aruḷ."
+    "nameTable": false,
+    "grammarNote": "pautikam ām uṭal is the body made of elements. paṟṟu aṟṟu means having relinquished attachment. kaṇṭu uṟa is to see and attain or unite, governed by aruḷ. No rejoice or melt verb occurs."
   },
   "line-079": {
     "source": "மலைமருந்திட நீ மலைத்திடவோ அருண்மலை மருந்தாய் ஒளிர் அருணாசலா",
@@ -7342,11 +7584,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "malaimaruntu iṭa nī malaittiṭavō aruṇmalai maruntāy oḷir aruṇācalā",
-    "english": "{7:O Arunachala, }{6:who shine }{4,5:as Aruna, the mountain-medicine, }{2:need You }{3:hesitate }{1:to give }{0,3:the medicine for bewilderment?}",
+    "english": "{7:O Aruṇācala, }{6:You shine }{4,5:as the healing mountain of grace. }{2,3:Why hesitate }{1:to give }{0:the cure for bewilderment?}",
     "words": [
       {
         "roman": "malaimaruntu",
-        "gloss": "medicine for bewilderment; mountain-medicine",
+        "gloss": "medicine for bewilderment; also mountain-medicine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7370,13 +7612,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇmalai",
-        "gloss": "the Aruna Hill",
+        "gloss": "mountain of grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "maruntāy",
-        "gloss": "as medicine",
+        "gloss": "as medicine; as a remedy",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7388,11 +7630,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-080": {
@@ -7443,7 +7686,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "māṉamkoṇṭu uṟubavar māṉattai aḻittu abhimāṉamillātu oḷir aruṇācalā",
-    "english": "{3:Destroying }{2:the attachment }{1:of those who approach You }{0:with attachment, }{5:shine }{4:free of attachment, }{6:O Arunachala!}",
+    "english": "{3:Destroying }{2:the attachment }{1:of those who approach You }{0:with attachment, }{5:shine }{4:free of attachment, }{6:O Aruṇācala!}",
     "words": [
       {
         "roman": "māṉamkoṇṭu",
@@ -7483,15 +7726,16 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-081": {
-    "source": "மிஞ்சிடிற் கெஞ்சிடுங் கொஞ்சவறிவிதையான் வஞ்சியாதருளென்னை அருணாச்சலா",
+    "source": "மிஞ்சிடிற் கெஞ்சிடுங் கொஞ்ச அறிவனியான் வஞ்சியா தருளெனை அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -7507,66 +7751,84 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "கொஞ்சவறிவிதையான்",
+        "text": "கொஞ்ச",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "வஞ்சியாதருளென்னை",
+        "text": "அறிவனியான்",
         "wordIndices": [
-          3,
+          3
+        ]
+      },
+      {
+        "text": "வஞ்சியா",
+        "wordIndices": [
           4
         ]
       },
       {
-        "text": "அருணாச்சலா",
+        "text": "தருளெனை",
         "wordIndices": [
           5
         ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          6
+        ]
       }
     ],
-    "roman": "miñciṭiṟ keñciṭuṅ koñcavaṟivitaiyāṉ vañciyāt aruḷeṉṉai aruṇācalā",
-    "english": "{0:If dominated}, {1:it cringes}; {2:I am this petty intellect}—{3:without deceiving}, {4:bestow grace upon me}, {5:O Arunachala}!",
+    "roman": "miñciṭiṟ keñciṭuṅ koñca aṟivaṉiyāṉ vañciyā taruḷeṉai aruṇācalā",
+    "english": "{3:I have }{2:little }{3:understanding: }{0:when overwhelmed, }{1:I plead. }{4:Without deceiving me, }{5:grant me Your grace, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "miñciṭiṟ",
-        "gloss": "if [someone] acts haughtily / dominates",
+        "gloss": "when overwhelmed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "keñciṭuṅ",
-        "gloss": "begs / cringes",
+        "gloss": "who pleads",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "koñcavaṟivitaiyāṉ",
-        "gloss": "this petty intellect, I",
+        "roman": "koñca",
+        "gloss": "little",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vañciyāt",
+        "roman": "aṟivaṉiyāṉ",
+        "gloss": "I am one of understanding",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vañciyā",
         "gloss": "without deceiving",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "aruḷeṉṉai",
-        "gloss": "bestow grace upon me",
+        "roman": "taruḷeṉai",
+        "gloss": "grant grace to me",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "miñciṭil (conditional) + keñciṭum (habitual future relative participle) + koñca-aṟivu-itai (adjective + noun + demonstrative) + yāṉ (1sg pronoun) + vañciyātu (negative participle) + aruḷ (imperative) + eṉṉai (1sg accusative)."
+    "nameTable": false,
+    "grammarNote": "koñca qualifies aṟivaṉ: one of little understanding; yāṉ is I. vañciyātu is without deceiving, divided across vañciyā taruḷeṉai; its final t joins aruḷ. miñciṭil means if overwhelmed, and keñciṭum is who pleads."
   },
   "line-082": {
     "source": "மீகாமனில்லாமல் மாகாற்றலைகலம் ஆகாமற்காத்தருள் அருணாசலா",
@@ -7598,7 +7860,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mīgāmaṉillāmal mākāṟṟalaikalam ākāmaṟkāttaruḷ aruṇācalā",
-    "english": "{2:Lest I become }{1:a ship tossed by the tempest} {0:without a helmsman}, {2:protect me and bestow grace}, {3:O Arunachala}!",
+    "english": "{2:Protect me with grace, lest I become }{1:a ship tossed by a great storm }{0:without a helmsman, }{3:O Aruṇācala.}",
     "words": [
       {
         "roman": "Mīgāmaṉillāmal",
@@ -7608,7 +7870,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mākāṟṟalaikalam",
-        "gloss": "a ship tossed by a storm-wind / tempest",
+        "gloss": "a ship tossed by a great storm-wind",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7620,11 +7882,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "mīgāmaṉ-illāmal (noun + negative adverbial) + mā-kāṟṟu-alai-kalam (adj + noun + verb-noun + noun compound) + ākāmal-kāttu-aruḷ (negative participle + verbal participle + imperative)."
   },
   "line-083": {
@@ -7671,7 +7934,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "muṭiyaṭi kāṇā muṭi viṭuttu aṉainēr muṭiviṭak kaṭaṉilai aruṇācalā",
-    "english": "{3:Having untied }{2:the knot }{0:whose beginning and end }{1:are unknown, }{6:is it not Your duty, }{4:like a mother, }{5:to place me in the final goal, }{7:O Arunachala?}",
+    "english": "{3:Having untied }{2:the knot }{0:whose beginning and end }{1:are unknown, }{6:is it not Your duty, }{4:like a mother, }{5:to place me in the final goal, }{7:O Aruṇācala?}",
     "words": [
       {
         "roman": "muṭiyaṭi",
@@ -7717,11 +7980,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-084": {
@@ -7773,7 +8037,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mūkkilaṉ muṉkāṭṭum mukuram ākātu eṉait tūkki aṇaintaruḷ aruṇācalā",
-    "english": "{3:Instead of being like }{2:a mirror }{1:held before }{0:a noseless man, }{6:graciously }{5:lift }{4,6:and embrace me, }{7:O Arunachala!}",
+    "english": "{3:Instead of being like }{2:a mirror }{1:held before }{0:a noseless man, }{6:graciously }{5:lift }{4,6:and embrace me, }{7:O Aruṇācala!}",
     "words": [
       {
         "roman": "mūkkilaṉ",
@@ -7819,11 +8083,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-085": {
@@ -7870,7 +8135,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "meyyakattiṉ maṉa meṉmalar-aṇaiyil nām meykalantiṭa aruḷ aruṇācalā",
-    "english": "{7:O Arunachala, }{6:bestow Your grace }{3:so that we }{5:may unite }{4:as Reality }{2:on the soft flower-bed }{1:of the mind }{0:in the house of the body!}",
+    "english": "{6:Grant that }{3:we }{4,5:may unite as reality }{2:on the soft flower-bed }{1:of the mind }{0:within the house of the body, }{7:O Aruṇācala.}",
     "words": [
       {
         "roman": "meyyakattiṉ",
@@ -7892,7 +8157,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation",
+        "gloss": "we; You and I",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7916,11 +8181,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-086": {
@@ -7973,7 +8239,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mēṉmēl tāḻntiṭum melliyar cērntu nī mēṉmai uṟṟaṉai eṉ aruṇācalā",
-    "english": "{3:By uniting }{2:with tender-natured devotees }{0,1:who are more and more humble, }{4:You }{5,6:have attained greatness—}{7:what a wonder, }{8:O Arunachala!}",
+    "english": "{3:By uniting }{2:with tender-natured devotees }{0,1:who are more and more humble, }{4:You }{5,6:have attained greatness—}{7:what a wonder, }{8:O Aruṇācala!}",
     "words": [
       {
         "roman": "mēṉmēl",
@@ -8025,11 +8291,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-087": {
@@ -8076,7 +8343,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maimayal nīttu aruḷmaiyiṉāl uṉatu uṇmai vacam ākkiṉai aruṇācalā",
-    "english": "{0,1:Removing my dense delusion }{2:with the eye-salve of Your grace, }{6:You brought me }{5:under the sway }{3,4:of Your Reality, }{7:O Arunachala!}",
+    "english": "{0,1:Removing my dense delusion }{2:with the eye-salve of Your grace, }{6:You brought me }{5:under the sway }{3,4:of Your Reality, }{7:O Aruṇācala!}",
     "words": [
       {
         "roman": "maimayal",
@@ -8092,7 +8359,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruḷmaiyiṉāl",
-        "gloss": "with the eye-salve of grace",
+        "gloss": "with the enchanting eye-salve of grace",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8122,11 +8389,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-088": {
@@ -8159,11 +8427,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Moṭṭaiyaḍitteṉai veṭṭaveḷiyinī naṭṭamāḍinaiyeṉ aruṇācalā",
-    "english": "{0:Having shaved my head bare}, {1:in the open expanse} {1:you} {2:danced}, {2:my} {3:Arunachala}!",
+    "english": "{0:Having shaved me bare, }{1:You }{2:danced }{1:in the open expanse. }{2:What a wonder, }{3:O Aruṇācala!}",
     "words": [
       {
         "roman": "Moṭṭaiyaḍitteṉai",
-        "gloss": "having shaved my head / stripped me bare, me",
+        "gloss": "having shaved me bare; figuratively stripped me of all possessions",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8175,17 +8443,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "naṭṭamāḍinaiyeṉ",
-        "gloss": "danced [the cosmic dance], my",
+        "gloss": "You danced; what a wonder",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "moṭṭai-aḍittu-eṉai (noun + participle + 1sg accusative) + veṭṭa-veḷiyil-nī (noun phrase in locative + 2sg pronoun) + naṭṭam-āḍiṉai-eṉ (noun + 2sg past verb + 1sg genitive clitic)."
   },
   "line-089": {
@@ -8254,7 +8523,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mōkam tavirttu uṉ mōkamāy vaittu eṉ mōkam tīrāy eṉ aruṇācalā",
-    "english": "{0,1:Dispelling my desire }{2,3,4:and making me desirous of You, }{5,6,7:fulfil my desire, }{8,9:my Arunachala!}",
+    "english": "{0,1:Dispelling my desire }{2,3,4:and making me desirous of You, }{5,6,7:fulfil my desire, }{8,9:my Aruṇācala!}",
     "words": [
       {
         "roman": "mōkam",
@@ -8312,11 +8581,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "Corrected against the published Tamil word-by-word edition."
   },
   "line-090": {
@@ -8361,7 +8631,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mauniyāyk kaṟpōl malarā dirundāl maunamidāmō aruṇācalā",
-    "english": "{3:If you remain} {0:as a silent one} {1:like a stone} {2:without blossoming}, {4:can this be silence}, {5:O Arunachala}?",
+    "english": "{3:If you remain} {0:as a silent one} {1:like a stone} {2:without blossoming}, {4:can this be silence}, {5:O Aruṇācala}?",
     "words": [
       {
         "roman": "Mauniyāyk",
@@ -8395,11 +8665,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "mauniyāy (noun + adverbial marker) + kal-pōl (noun + comparative postposition) + malarātu-irundāl (negative participle + conditional verb) + maunam-idu-āmō (noun + demonstrative + interrogative suffix -ō)."
   },
   "line-091": {
@@ -8450,11 +8721,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yavaṉeṉ vāyin maṇṇiṉai yaṭṭi yeṉbiḻaip poḻitta daruṇācalā",
-    "english": "{0:The one who} {3:threw} {2:dirt} {0,1:into my mouth} {5:and ruined} {4:my livelihood}—{6:that was Arunachala}!",
+    "english": "{0:Who }{3:put }{2:dirt }{0,1:in my mouth }{5:and ruined }{4:my livelihood, }{6:O Aruṇācala?}",
     "words": [
       {
         "roman": "Yavaṉeṉ",
-        "gloss": "who [it was], my",
+        "gloss": "who; my",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8466,35 +8737,36 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṇṇiṉai",
-        "gloss": "handfuls of mud / dirt",
+        "gloss": "dirt; earth",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yaṭṭi",
-        "gloss": "having thrown / poured",
+        "gloss": "putting or pouring",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yeṉbiḻaip",
-        "gloss": "my worldly livelihood / existence",
+        "gloss": "my livelihood; my means of living",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "poḻitta",
-        "gloss": "destroyed / ruined",
+        "gloss": "ruined; brought to an end",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "daruṇācalā",
-        "gloss": "that [was] Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "yavaṉ (interrogative pronoun 'who') + eṉ (1sg genitive) + vāyil (locative noun) + maṇṇiṉai (accusative noun) + aṭṭi (verbal participle) + eṉ-piḻaippu (noun compound) + oḻittatu (past neuter participatory noun) + aruṇācalā (predicate vocative)."
   },
   "line-092": {
@@ -8539,7 +8811,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yārumaṟiyādeṉ madhiyiṉai maruṭṭi evarkkoḷḷai koṇḍadu aruṇācalā",
-    "english": "{2:Bewitching} {0:my} {1:mind} {0:without anyone knowing}, {3:for whose plunder} {4:was it seized}, {5:O Arunachala}?",
+    "english": "{3:Who }{2:bewitched }{0,1:my mind }{4:and stole it away }{0:without anyone knowing, }{5:O Aruṇācala?}",
     "words": [
       {
         "roman": "Yārumaṟiyādeṉ",
@@ -8561,23 +8833,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "evarkkoḷḷai",
-        "gloss": "for whose plunder / booty",
+        "gloss": "who; as plunder",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koṇḍadu",
-        "gloss": "was it seized / stolen?",
+        "gloss": "seized or carried off",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "yārum-aṟiyātu (indefinite pronoun + negative participle) + eṉ (1sg genitive) + madhiyiṉai (accusative noun) + maruṭṭi (verbal participle) + evarkku (dative interrogative pronoun) + koḷḷai-koṇḍatu (noun + past neuter finite verb)."
   },
   "line-093": {
@@ -8628,11 +8901,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ramaṇaṉ eṉṟuraittēn rōsaṅkoḷḷādeṉai ramittiḍac ceyya vā aruṇācalā",
-    "english": "{1:I called you} {0:'Ramana'}—{2:without taking offense}, {5:come} {4:to make} {2:me} {3:delight}, {6:O Arunachala}!",
+    "english": "{1:I called You }{0:“Ramaṇa,” my beloved. }{2:Do not take offense; }{5:come }{4:and make }{2,3:me rejoice, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "Ramaṇaṉ",
-        "gloss": "Ramana (the delighting one / beloved)",
+        "gloss": "beloved or husband; one who gives delight",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8650,7 +8923,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ramittiḍac",
-        "gloss": "to delight / revel in bliss",
+        "gloss": "rejoice; delight",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8668,11 +8941,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "ramaṇaṉ (proper name / noun) + eṉṟu-uraittēn (quotative particle + 1sg past verb) + rōsam-koḷḷātu (noun + negative participle) + eṉai (1sg accusative) + ramittiḍa-ceyya (infinitive + causative infinitive) + vā (imperative)."
   },
   "line-094": {
@@ -8717,7 +8991,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāppagalillā veṟuveḷi vīṭṭil ramittiḍuvōm vā aruṇācalā",
-    "english": "{2:In the abode} {1:of the empty expanse} {0:where there is no night and day}, {4:come}, {3:let us rejoice}, {5:O Arunachala}!",
+    "english": "{2:In the abode} {1:of the empty expanse} {0:where there is no night and day}, {4:come}, {3:let us rejoice}, {5:O Aruṇācala}!",
     "words": [
       {
         "roman": "Rāppagalillā",
@@ -8751,11 +9025,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "rā-pagal-illā (noun compound + negative relative participle) + veṟu-veḷi (adj + noun compound) + vīṭṭil (locative noun: vīṭu = house/liberation) + ramittiḍuvōm (1pl future/hortative verb) + vā (imperative)."
   },
   "line-095": {
@@ -8807,7 +9082,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lakṣiyam vaittu aruḷ astiram viṭṭeṉai pakṣittāy prāṇanōṭu aruṇācalā",
-    "english": "{0,1:Having fixed Your aim, }{2,3:and released the arrow of grace }{4:at me, }{5:You consumed me }{6:alive, }{7:O Arunachala!}",
+    "english": "{0,1:You took aim }{2,3,4:and fired the arrow of grace; }{4,5:You devoured me }{6:together with my life-breath, }{7:O Aruṇācala.}",
     "words": [
       {
         "roman": "Lakṣiyam",
@@ -8835,7 +9110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṭṭeṉai",
-        "gloss": "having released at me",
+        "gloss": "having released; me",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8847,17 +9122,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "prāṇanōṭu",
-        "gloss": "with life; alive",
+        "gloss": "together with life or life-breath",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "lakṣiyam (aim) + vaittu (verbal participle) + aruḷ-astiram (grace-arrow compound) + viṭṭu eṉai (having released [it] at me) + pakṣittāy (2nd-person past: You consumed) + prāṇa-nōṭu (with life; alive)."
   },
   "line-096": {
@@ -8902,11 +9178,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lābanī ihapara lābamillaiyeṉai yuṟṟulāba meṉuṟṟaṉai aruṇācalā",
-    "english": "{0:You are the gain}; {2:there is no gain} {1:in this world or the next}; {2,3:by acquiring me}, {3:what gain} {4:did you obtain}, {5:O Arunachala}?",
+    "english": "{0:You are the gain. }{4:What }{3:have You gained }{2,3:by gaining me, }{2:who has gained nothing }{1:here or hereafter, }{5:O Aruṇācala?}",
     "words": [
       {
         "roman": "Lābanī",
-        "gloss": "the supreme gain [are] you",
+        "gloss": "You are the gain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8918,37 +9194,38 @@ window.SONG_LINES = {
       },
       {
         "roman": "lābamillaiyeṉai",
-        "gloss": "there is no gain; me",
+        "gloss": "me, who has no gain",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yuṟṟulāba",
-        "gloss": "having acquired, what gain",
+        "gloss": "having obtained; gain",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "meṉuṟṟaṉai",
-        "gloss": "what did you obtain?",
+        "gloss": "what did You obtain?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "lābham (noun) + nī (2sg) + iha-para-lābham (compound noun) + illai (negative predicate) + eṉai (1sg accusative) + uṟṟu (verbal participle) + lābham-eṉ-uṟṟaṉai (noun + interrogative pronoun + 2sg past verb)."
+    "nameTable": false,
+    "grammarNote": "iha-para-lābham-il qualifies eṉai, me who has no gain here or hereafter. uṟṟu is having obtained; lābham eṉ uṟṟaṉai asks what gain You obtained."
   },
   "line-097": {
-    "source": "வருபடி சொலிலை வந்தென்படியள வருந்திடுமுன் தலைவிதி அருணாசலா",
+    "source": "வரும்படி சொலிலை வந்தென் படியள வருந்திடுன் தலைவிதி அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "வருபடி",
+        "text": "வரும்படி",
         "wordIndices": [
           0
         ]
@@ -8960,90 +9237,103 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "வந்தென்படியள",
+        "text": "வந்தென்",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "வருந்திடுமுன்",
+        "text": "படியள",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "தலைவிதி",
+        "text": "வருந்திடுன்",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "அருணாசலா",
+        "text": "தலைவிதி",
         "wordIndices": [
           5
         ]
+      },
+      {
+        "text": "அருணாசலா",
+        "wordIndices": [
+          6
+        ]
       }
     ],
-    "roman": "Varubaḍi solilai vandeṉbaḍiyaḷa varundiḍumuṉ talaividi aruṇācalā",
-    "english": "{1:You did not state} {0:the income}; {2:come and measure out} {2:my sustenance}, {3:lest your} {4:destiny} {3:suffer}, {5:O Arunachala}!",
+    "roman": "varumpaṭi colilai vanteṉ paṭiyaḷa varuntiṭuṉ talaiviti aruṇācalā",
+    "english": "{1:Did You not tell me }{0:to come? }{2:Come and }{3:measure out }{2:my }{3:portion. }{4:The trouble of doing so }{4,5:is Your fate, }{6:O Aruṇācala.}",
     "words": [
       {
-        "roman": "Varubaḍi",
-        "gloss": "income / revenue / way of coming",
+        "roman": "varumpaṭi",
+        "gloss": "to come",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "solilai",
-        "gloss": "you did not specify / tell",
+        "roman": "colilai",
+        "gloss": "did You not tell?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vandeṉbaḍiyaḷa",
-        "gloss": "come and measure out my daily portion/sustenance",
+        "roman": "vanteṉ",
+        "gloss": "come; my",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "varundiḍumuṉ",
-        "gloss": "will suffer, your",
+        "roman": "paṭiyaḷa",
+        "gloss": "to measure out the portion",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "talaividi",
-        "gloss": "fate / head-destiny",
+        "roman": "varuntiṭuṉ",
+        "gloss": "take the trouble or suffer; Your",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "talaiviti",
+        "gloss": "fate; what is allotted",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "varubaḍi (noun 'income/manner') + sol-ilai (verb + negative suffix) + vandu (verbal participle) + eṉ (1sg genitive) + paḍi (noun) + aḷa (imperative) + varundiḍum (habitual future verb) + uṉ (2sg genitive) + talai-vidi (compound noun)."
+    "nameTable": false,
+    "grammarNote": "varumpaṭi is to come; colilai is the rhetorical did You not tell. vantu eṉ paṭi aḷa gives come and measure out my portion, traditionally daily sustenance. varuntiṭu un is take the trouble (or suffer); Your. talaiviti is fate."
   },
   "line-098": {
-    "source": "வாவென்றகம்புக்க உன் வாழ்வருளென் வாழ்விழந்தேன் அருள் அருணாசலா",
+    "source": "வாவென்றகம்புக்குன் வாழ்வருள் அன்றேயென் வாழ்விழந்தேன் அருள் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "வாவென்றகம்புக்க",
+        "text": "வாவென்றகம்புக்குன்",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "உன்",
+        "text": "வாழ்வருள்",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "வாழ்வருளென்",
+        "text": "அன்றேயென்",
         "wordIndices": [
           2
         ]
@@ -9067,47 +9357,48 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Vāveṉṟagambukka uṉ vāḻvaruḷeṉ vāḻviḻandēṉ aruḷ aruṇācalā",
-    "english": "{0:Having entered my heart} {0:saying 'Come'}, {2:grant} {1,2:your life}; {2,3:I have lost my life}, {4:bestow grace}, {5:O Arunachala}!",
+    "roman": "vāveṉṟakampukkuṉ vāḻvaruḷ aṉṟēyeṉ vāḻviḻantēṉ aruḷ aruṇācalā",
+    "english": "{0:Saying “Come,” You entered my heart }{1:and bestowed }{0:Your }{1:life; }{2:at that very moment }{3:I lost }{2:my }{3:life. }{4:Such grace, }{5:O Aruṇācala!}",
     "words": [
       {
-        "roman": "Vāveṉṟagambukka",
-        "gloss": "having called 'Come' and entered the house/heart",
+        "roman": "vāveṉṟakampukkuṉ",
+        "gloss": "saying Come, having entered the heart; Your",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "uṉ",
-        "gloss": "your",
+        "roman": "vāḻvaruḷ",
+        "gloss": "bestow life; here read as You bestowed Your life",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vāḻvaruḷeṉ",
-        "gloss": "bestow [your] life/state; my",
+        "roman": "aṉṟēyeṉ",
+        "gloss": "at that very moment; my",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vāḻviḻandēṉ",
-        "gloss": "I lost my [worldly] life",
+        "roman": "vāḻviḻantēṉ",
+        "gloss": "I lost my life; traditionally, separate individuality",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruḷ",
-        "gloss": "bestow grace",
+        "gloss": "grace; also an appeal: grant grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "vā-eṉṟu-agam-pukka (imperative + quotative + noun + relative participle) + uṉ (2sg genitive) + vāḻvu-aruḷ (noun + imperative) + eṉ (1sg genitive) + vāḻvu-iḻandēṉ (noun + 1sg past verb) + aruḷ (imperative)."
+    "nameTable": false,
+    "grammarNote": "vā eṉṟu is saying Come; akam pukku is having entered the heart; uṉ vāḻvu is Your life. aṉṟē means at that very moment and iḻantēṉ means I lost. The past attainment reading is explicitly supported by Sadhu Om; an equally attested prayer asks Aruṇācala to enter and grant His life so that the speaker’s separate life is lost. aruḷ permits bestow/grant as verb and grace as noun; this alternative is kept in the word card."
   },
   "line-099": {
     "source": "விட்டிடிற் கட்டமாம் விட்டிடாதுனை உயிர் விட்டிட அருள் புரி அருணாசலா",
@@ -9163,7 +9454,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Viṭṭidiṟ kaṭṭamām viṭṭidāduṉai uyir viṭṭiḍa aruḷpuri aruṇācalā",
-    "english": "{0:To let go} {1:is misery}; {5:grant grace} {4:that I may give up} {3:life} {2:without letting go} {2:of you}, {6:O Arunachala}!",
+    "english": "{0:To let go} {1:is misery}; {5:grant grace} {4:that I may give up} {3:life} {2:without letting go} {2:of you}, {6:O Aruṇācala}!",
     "words": [
       {
         "roman": "Viṭṭidiṟ",
@@ -9203,15 +9494,16 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "viṭṭiḍil (conditional) + kaṭṭam-ām (kaṣṭam + 3sg future copula) + viṭṭiḍātu (negative participle) + uṉai (2sg accusative) + uyir (noun) + viṭṭiḍa (infinitive) + aruḷ-puri (compound imperative)."
   },
   "line-100": {
-    "source": "வீடுவிட்டீர்த்துள வீடுகுகையிலுன் வீடுகாட்டினை அருள் அருணாசலா",
+    "source": "வீடுவிட்டீர்த்துள வீடுபுக்குப் பையவுன் வீடுகாட்டினையருள் அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -9221,19 +9513,19 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "வீடுகுகையிலுன்",
+        "text": "வீடுபுக்குப்",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "வீடுகாட்டினை",
+        "text": "பையவுன்",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "அருள்",
+        "text": "வீடுகாட்டினையருள்",
         "wordIndices": [
           3
         ]
@@ -9245,41 +9537,42 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Vīḍuviṭṭīrttuḷa vīḍukugaiyiluṉ vīḍukāṭṭiṉai aruḷ aruṇācalā",
-    "english": "{0:Drawing me from home into the inner }{1:cave-abode, your }{2:abode of liberation you showed; }{3:bestow grace, }{4:O Arunachala!}",
+    "roman": "vīṭuviṭṭīrttuḷa vīṭupukkup paiyavuṉ vīṭukāṭṭiṉaiyaruḷ aruṇācalā",
+    "english": "{0:You drew me out of home, }{2:stealthily }{1:entered the home }{0:of my heart, }{3:and revealed }{2:Your }{3:home. Such grace, }{4:O Aruṇācala.}",
     "words": [
       {
-        "roman": "Vīḍuviṭṭīrttuḷa",
-        "gloss": "drawing [me] out of home into the inner",
+        "roman": "vīṭuviṭṭīrttuḷa",
+        "gloss": "having drawn me out of home; heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vīḍukugaiyiluṉ",
-        "gloss": "house-cave of the heart, your",
+        "roman": "vīṭupukkup",
+        "gloss": "having entered the home",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vīḍukāṭṭiṉai",
-        "gloss": "abode of liberation you showed",
+        "roman": "paiyavuṉ",
+        "gloss": "stealthily; Your",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "aruḷ",
-        "gloss": "bestow grace",
+        "roman": "vīṭukāṭṭiṉaiyaruḷ",
+        "gloss": "You revealed the home; home also means liberation here; grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "vīḍu-viṭṭu-īrttu-uḷa (noun + participle + participle + adjective) + vīḍu-kugaiyil (noun compound in locative) + uṉ (2sg genitive) + vīḍu-kāṭṭiṉai (noun + 2sg past verb) + aruḷ (imperative)."
+    "nameTable": false,
+    "grammarNote": "vīṭu viṭṭu īrttu is drawing out of home; uḷa vīṭu is the home of the heart; pukku is entering. paiya is stealthily or gently. uṉ vīṭu kāṭṭiṉai means You revealed Your home, with vīṭu also meaning liberation. aruḷ here is grace. All three homes are retained."
   },
   "line-101": {
     "source": "வெளிவிட்டேன் உன் செயல் வெறுத்திடாதுன் அருள் வெளிவிட்டென்னைக் கா அருணாசலா",
@@ -9335,7 +9628,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Veḷiviṭṭēṉ uṉ seyal veṟuttiḍāduṉ aruḷ veḷiviṭṭeṉṉaik kā aruṇācalā",
-    "english": "{0:I revealed }{1:your }{2:deeds; }{3:without despising me, }{5:openly manifesting }{3:your }{4:grace, }{5,6:protect me, }{7:O Arunachala!}",
+    "english": "{0:I have disclosed }{1:Your }{2:deeds. }{3:Do not resent me; }{5:openly reveal }{3:Your }{4:grace }{5,6:and protect me, }{7:O Aruṇācala.}",
     "words": [
       {
         "roman": "Veḷiviṭṭēṉ",
@@ -9351,13 +9644,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "seyal",
-        "gloss": "secret deeds / mystery",
+        "gloss": "deed; action",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "veṟuttiḍāduṉ",
-        "gloss": "without despising [me], your",
+        "gloss": "without resenting me; Your",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9381,11 +9674,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "veḷi-viṭṭēṉ (compound 1sg past verb) + uṉ (2sg genitive) + seyal (noun) + veṟuttiḍātu (negative participle) + uṉ (2sg genitive) + aruḷ (noun) + veḷi-viṭṭu (participle) + eṉṉai (1sg accusative) + kā (imperative verb root)."
   },
   "line-102": {
@@ -9436,17 +9730,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vēdāntattē vēṟaṟa viḷaṅgum vēdap poruḷ aruḷ aruṇācalā",
-    "english": "{0:In Vedanta itself, }{2:shining }{1:without distinction, }{3,4:the essence of the Vedas }{5:grant, }{6:O Arunachala!}",
+    "english": "{5:Grant me }{3,4:the reality of the Vedas, }{2:shining }{1:without another }{0:in Vedānta itself, }{6:O Aruṇācala.}",
     "words": [
       {
         "roman": "Vēdāntattē",
-        "gloss": "in Vedanta itself / the culmination of knowledge",
+        "gloss": "in Vedānta itself: the end or culmination of the Vedas, especially the Upaniṣads",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vēṟaṟa",
-        "gloss": "without difference / non-dually",
+        "gloss": "without another; without difference",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9458,13 +9752,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vēdap",
-        "gloss": "of the Vedas",
+        "gloss": "of the Vedas, the ancient sacred texts",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "poruḷ",
-        "gloss": "supreme essence / reality",
+        "gloss": "meaning; essence; reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9476,11 +9770,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "vēdāntattē (locative noun + emphatic -ē) + vēṟu-aṟa (noun + adverbial infinitive) + viḷaṅgum (relative participle) + vēda-poruḷ (noun compound) + aruḷ (imperative)."
   },
   "line-103": {
@@ -9525,7 +9820,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vaidalai vāḻttā vaittaruṭkuḍiyāy vaitteṉai viḍādaruḷ aruṇācalā",
-    "english": "{2:Taking }{0:reproach }{1:as praise, }{3:keeping me }{2:as a subject of grace, }{4:without forsaking, bestow grace, }{5:O Arunachala!}",
+    "english": "{2:Take }{0:my reproach }{1:as praise; }{3:keep me }{2:in Your household of grace, }{4:and graciously never forsake me, }{5:O Aruṇācala.}",
     "words": [
       {
         "roman": "Vaidalai",
@@ -9541,7 +9836,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaittaruṭkuḍiyāy",
-        "gloss": "taking [it], as a subject / citizen of grace",
+        "gloss": "taking it; as a member of the household of grace",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9559,11 +9854,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "vaidalai (verbal noun in accusative) + vāḻttu-ā (noun + adverbial suffix -ā) + vaittu (participle) + aruḷ-kuḍi-āy (noun compound + adverbial) + vaittu (participle) + eṉai (1sg accusative) + viḍātu-aruḷ (negative participle + imperative)."
   },
   "line-104": {
@@ -9614,7 +9910,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ambuvilālipōl anburu vuṉileṉai aṉbāk karaittaruḷ aruṇācalā",
-    "english": "{0:Like a hailstone in water, }{1,2:in you, the form of love, }{2,4:dissolve me }{3:as love }{4:and bestow grace, }{5:O Arunachala!}",
+    "english": "{4:Graciously dissolve }{2:me }{3:into love }{2:in You, }{1:love embodied, }{0:like a hailstone in water, }{5:O Aruṇācala.}",
     "words": [
       {
         "roman": "Ambuvilālipōl",
@@ -9636,96 +9932,85 @@ window.SONG_LINES = {
       },
       {
         "roman": "aṉbāk",
-        "gloss": "as love",
+        "gloss": "into love; as love",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karaittaruḷ",
-        "gloss": "dissolve [me] and bestow grace",
+        "gloss": "graciously dissolve",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "ambu-il-āli-pōl (water + locative + hailstone + comparative marker) + anbu-uru (noun compound) + uṉil (2sg locative) + eṉai (1sg accusative) + anbu-āka (noun + adverbial) + karaittu-aruḷ (verbal participle + imperative)."
   },
   "line-105": {
-    "source": "அருணையென்றெண்ணியான் அருட்பணி பட்டேன் உன் அருள்வலை தப்புமோ அருணாசலா",
+    "source": "அருணையென்றெண்ணயான் அருட்கண்ணி பட்டேனுன் அருள்வலை தப்புமோ அருணாசலா",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "அருணையென்றெண்ணியான்",
+        "text": "அருணையென்றெண்ணயான்",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "அருட்பணி",
+        "text": "அருட்கண்ணி",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "பட்டேன்",
+        "text": "பட்டேனுன்",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "உன்",
+        "text": "அருள்வலை",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "அருள்வலை",
+        "text": "தப்புமோ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "தப்புமோ",
+        "text": "அருணாசலா",
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "அருணாசலா",
-        "wordIndices": [
-          6
-        ]
       }
     ],
-    "roman": "Aruṇaiyeṉṟeṇṇiyāṉ aruṭpaṇi paṭṭēṉ uṉ aruḷvalai tappumō aruṇācalā",
-    "english": "{0:Thinking 'Arunai', I }{2:was caught }{1:in the snare of grace; }{5:can anyone escape }{3:your }{4:net of grace, }{6:O Arunachala?}",
+    "roman": "aruṇaiyeṉṟeṇṇayāṉ aruṭkaṇṇi paṭṭēṉuṉ aruḷvalai tappumō aruṇācalā",
+    "english": "{0:The moment I thought “Aruṇai,” }{2:I was caught }{1:in the snare of grace. }{4:Could }{2:Your }{3:net of grace }{4:ever fail, }{5:O Aruṇācala?}",
     "words": [
       {
-        "roman": "Aruṇaiyeṉṟeṇṇiyāṉ",
-        "gloss": "thinking of [you as] Arunai, I",
+        "roman": "aruṇaiyeṉṟeṇṇayāṉ",
+        "gloss": "as I thought of Aruṇai, the Tamil name of the red mountain worshipped as Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "aruṭpaṇi",
-        "gloss": "snare / task of grace",
+        "roman": "aruṭkaṇṇi",
+        "gloss": "snare of grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "paṭṭēṉ",
-        "gloss": "was caught / entrapped",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "uṉ",
-        "gloss": "your",
+        "roman": "paṭṭēṉuṉ",
+        "gloss": "I was caught; Your",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9737,18 +10022,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "tappumō",
-        "gloss": "can anyone escape?",
+        "gloss": "could it fail?; also, could one escape?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "aruṇai-eṉṟu-eṇṇi-yāṉ (proper noun + quotative + participle + 1sg pronoun) + aruḷ-paṇi (noun compound) + paṭṭēṉ (1sg past verb) + uṉ (2sg genitive) + aruḷ-valai (noun compound) + tappum-ō (habitual future verb + interrogative clitic)."
+    "nameTable": false,
+    "grammarNote": "aruṇai eṉṟu eṇṇa means upon thinking Aruṇai; yāṉ paṭṭēṉ is I was caught. aruṭkaṇṇi is grace-snare, not aruṭpaṇi. uṉ aruḷvalai is Your net of grace; tappumō admits fail or escape, with net as the grammatical subject in the adopted reading."
   },
   "line-106": {
     "source": "சிந்தித்தருள்படச் சிலந்திபோல் கட்டிச் சிறையிட்டுண்டனை அருணாசலா",
@@ -9786,11 +10072,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sindittaruḷbaḍac silandipōl kaṭṭic siṟaiyiṭṭuṇḍaṉai aruṇācalā",
-    "english": "{0:As I meditated to be caught in grace, }{1:like a spider }{2:binding me, }{3:you imprisoned and devoured me, }{4:O Arunachala!}",
+    "english": "{0:Having resolved to catch me in grace, }{1:like a spider }{2:You bound me, }{3:imprisoned and devoured me, }{4:O Aruṇācala.}",
     "words": [
       {
         "roman": "Sindittaruḷbaḍac",
-        "gloss": "as I meditated, to be caught in grace",
+        "gloss": "having resolved that I should fall into grace",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9814,12 +10100,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sindittu-aruḷ-paḍa (verbal participle + noun + infinitive) + silandi-pōl (noun + comparative) + kaṭṭi (verbal participle) + siṟai-iṭṭu-uṇḍaṉai (noun + participle + 2sg past verb)."
+    "nameTable": false,
+    "grammarNote": "cintittu, having thought or resolved, shares the second-person subject of uṇṭaṉai, You devoured. aruḷ-paṭa states the intended result; kaṭṭi and ciṟaiyiṭṭu continue the spider image."
   },
   "line-107": {
     "source": "அன்போடுன் நாமங்கேள் அன்பர்தம் அன்பருக்கன்பனாயிட அருள் அருணாசலா",
@@ -9863,7 +10150,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Anbōḍuṉ nāmangēḷ anbardam anbarukkanbaṉāyiḍa aruḷ aruṇācalā",
-    "english": "{3:To become a devotee of the devotees }{1,2:of the loving ones who hear }{0,1:your name with love, }{4:bestow grace, }{5:O Arunachala!}",
+    "english": "{4:Grant that }{3:I may love the devotees }{2:of the devotees }{1:who hear }{0,1:Your name with love, }{5:O Aruṇācala.}",
     "words": [
       {
         "roman": "Anbōḍuṉ",
@@ -9873,7 +10160,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāmangēḷ",
-        "gloss": "those who hear/chant the name",
+        "gloss": "hear the name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9885,7 +10172,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "anbarukkanbaṉāyiḍa",
-        "gloss": "to become a devotee of the devotees",
+        "gloss": "to become a loving devotee of the devotees",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9897,11 +10184,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "anbu-ōḍu-uṉ (noun + sociative suffix + 2sg genitive) + nāmam-kēḷ (noun + relative participle/noun) + anbar-tam (pronominal noun + genitive clitic) + anbarukku-anbaṉ-āyiḍa (dative noun + noun + infinitive) + aruḷ (imperative)."
   },
   "line-108": {
@@ -9958,7 +10246,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eṉbōlum dīṉarai inbuṟak kāttu nī ennāḷum vāḻndaruḷ aruṇācalā",
-    "english": "{3:Protecting }{1:destitute ones }{0:like me }{2:so that they experience bliss, }{4:may you }{5,6:thrive in grace forever, }{7:O Arunachala!}",
+    "english": "{4:May You }{6:graciously live }{5:forever, }{3:protecting }{1:helpless ones }{0:like me }{2:so that they experience bliss, }{7:O Aruṇācala.}",
     "words": [
       {
         "roman": "Eṉbōlum",
@@ -9968,7 +10256,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dīṉarai",
-        "gloss": "the destitute / humble ones",
+        "gloss": "helpless or destitute ones",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9998,17 +10286,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāḻndaruḷ",
-        "gloss": "thrive and reign in grace",
+        "gloss": "graciously live; flourish",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "eṉ-pōlum (1sg pronoun + comparative postposition) + dīṉarai (accusative noun) + inbu-uṟa (noun + infinitive) + kāttu (participle) + nī (2sg) + ennāḷum (universal temporal adverb) + vāḻndu-aruḷ (participle + imperative)."
   },
   "line-109": {
@@ -10060,11 +10349,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Enburuk kaṉbardam iṉsoṟkoḷ seviyum eṉbuṉmoḻi koḷa aruḷ aruṇācalā",
-    "english": "{6:Grant that }{3:your ear, }{2:which receives the sweet words }{1:of loving devotees }{0:that melt the bones, }{5:may accept }{3,4:my poor words too, }{7:O Arunachala!}",
+    "english": "{6:Let }{3:Your ears, }{2:which hear the sweet words }{1:of devotees }{0:whose very bones melt with love, }{5:receive }{4:my poor words }{3:too, }{7:O Aruṇācala.}",
     "words": [
       {
         "roman": "Enburuk",
-        "gloss": "bone-melting / heart-melting",
+        "gloss": "whose bones melt with love",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10082,7 +10371,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "seviyum",
-        "gloss": "ear also",
+        "gloss": "ear; also",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10106,11 +10395,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "enbu-uruku (noun + relative participle) + anbar-tam (noun + genitive clitic) + iṉ-sol-koḷ (adj + noun + relative participle) + seviyum (noun + additive -um) + eṉ-puṉ-moḻi (1sg genitive + adj + noun) + koḷa (infinitive) + aruḷ (imperative)."
   },
   "line-110": {
@@ -10155,7 +10445,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Poṟumaiyām būdhara puṉsolai naṉsolāp poṟuttaruḷiṣṭambin aruṇācalā",
-    "english": "{0,1:O Mountain of patience, }{2,4:forbear my poor words }{3:as noble words }{4:and bestow grace; }{4:thereafter, do as you will, }{5:O Arunachala!}",
+    "english": "{0,1:O mountain of patience, }{4:graciously bear with }{2:my poor words }{3:as fine words; }{4:then do as You wish, }{5:O Aruṇācala.}",
     "words": [
       {
         "roman": "Poṟumaiyām",
@@ -10165,7 +10455,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "būdhara",
-        "gloss": "O mountain / bearer of the earth",
+        "gloss": "O mountain; literally earth-bearer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10177,23 +10467,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "naṉsolāp",
-        "gloss": "as noble / fine words",
+        "gloss": "as good or fine words",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "poṟuttaruḷiṣṭambin",
-        "gloss": "forbear with grace, [and do as] your pleasure thereafter",
+        "gloss": "bear with graciously; then, as You wish",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "poṟumai-ām (noun + adjective suffix) + bhūdhara (vocative Sanskrit loan 'mountain') + puṉ-solai (adj + noun in accusative) + nal-sol-ā (adj + noun + adverbial -ā) + poṟuttu-aruḷ (participle + imperative) + iṣṭam-piṉ (noun + postposition 'thereafter')."
   },
   "line-111": {
@@ -10232,7 +10523,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mālaiyaḷit taruṇācala ramaṇaveṉ mālaiyaṇindaruḷ aruṇācalā",
-    "english": "{0:Bestowing your garland, }{1:O Arunachala }{2:Ramana, }{2,3:wear my }{3:garland and bestow grace, }{4:O Arunachala!}",
+    "english": "{0:You have given Your garland; }{1:O Aruṇācala }{2:Ramaṇa, }{2,3:graciously wear my garland, }{4:O Aruṇācala.}",
     "words": [
       {
         "roman": "Mālaiyaḷit",
@@ -10242,29 +10533,30 @@ window.SONG_LINES = {
       },
       {
         "roman": "taruṇācala",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ramaṇaveṉ",
-        "gloss": "O Ramana, my",
+        "gloss": "O beloved or giver of delight; my",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mālaiyaṇindaruḷ",
-        "gloss": "wear the garland [of verses] and bestow grace",
+        "gloss": "graciously wear the garland; here, these verses",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "aruṇācalā",
-        "gloss": "O Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "mālai-aḷittu (noun + verbal participle) + aruṇācala (vocative) + ramaṇa (vocative) + eṉ (1sg genitive) + mālai-aṇindu-aruḷ (noun + participle + imperative)."
   },
   "line-112": {
@@ -10285,11 +10577,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aruṇācalam vāḻi",
-    "english": "{0:May Arunachala }{1:flourish!}",
+    "english": "{0:May Aruṇācala }{1:flourish!}",
     "words": [
       {
         "roman": "Aruṇācalam",
-        "gloss": "Arunachala",
+        "gloss": "the red mountain; Śiva as the sacred hill at Tiruvaṇṇāmalai",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10300,6 +10592,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "aruṇācalam (proper noun) + vāḻi (optative/benedictive verb)."
   },
   "line-113": {
@@ -10335,6 +10628,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "anbargaḷ-um (plural noun + additive particle) + vāḻi (optative/benedictive verb)."
   },
   "line-114": {
@@ -10359,7 +10653,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Akṣaramaṇamālai",
-        "gloss": "The Marital Garland of Letters",
+        "gloss": "bridal garland of letters; akṣara also means imperishable",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10370,6 +10664,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
+    "nameTable": false,
     "grammarNote": "akṣara-maṇa-mālai (compound proper noun: akṣara 'letter/imperishable' + maṇam 'marriage/fragrance' + mālai 'garland') + vāḻi (optative/benedictive verb)."
   }
 };
@@ -10994,495 +11289,495 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 40.94,
-    "end": 55.95
+    "start": 16.119,
+    "end": 31.129
   },
   {
-    "start": 55.95,
-    "end": 92.415
+    "start": 31.129,
+    "end": 67.594
   },
   {
-    "start": 92.415,
-    "end": 110.02
+    "start": 67.594,
+    "end": 85.199
   },
   {
-    "start": 110.02,
-    "end": 118.325
+    "start": 85.199,
+    "end": 93.504
   },
   {
-    "start": 118.325,
-    "end": 126.65
+    "start": 93.504,
+    "end": 101.829
   },
   {
-    "start": 126.65,
-    "end": 135
+    "start": 101.829,
+    "end": 110.179
   },
   {
-    "start": 135,
-    "end": 143.3
+    "start": 110.179,
+    "end": 118.479
   },
   {
-    "start": 143.3,
-    "end": 151.6
+    "start": 118.479,
+    "end": 126.779
   },
   {
-    "start": 151.6,
-    "end": 159.9
+    "start": 126.779,
+    "end": 135.079
   },
   {
-    "start": 159.9,
-    "end": 169.408
+    "start": 135.079,
+    "end": 144.587
   },
   {
-    "start": 169.408,
-    "end": 177.658
+    "start": 144.587,
+    "end": 152.837
   },
   {
-    "start": 177.658,
-    "end": 186.033
+    "start": 152.837,
+    "end": 161.212
   },
   {
-    "start": 186.033,
-    "end": 194.408
+    "start": 161.212,
+    "end": 169.587
   },
   {
-    "start": 194.408,
-    "end": 202.808
+    "start": 169.587,
+    "end": 177.987
   },
   {
-    "start": 202.808,
-    "end": 211.233
+    "start": 177.987,
+    "end": 186.412
   },
   {
-    "start": 211.233,
-    "end": 244.558
+    "start": 186.412,
+    "end": 219.737
   },
   {
-    "start": 244.558,
-    "end": 252.833
+    "start": 219.737,
+    "end": 228.012
   },
   {
-    "start": 252.833,
-    "end": 261.033
+    "start": 228.012,
+    "end": 236.212
   },
   {
-    "start": 261.033,
-    "end": 269.358
+    "start": 236.212,
+    "end": 244.537
   },
   {
-    "start": 269.358,
-    "end": 277.117
+    "start": 244.537,
+    "end": 252.296
   },
   {
-    "start": 277.117,
-    "end": 285.317
+    "start": 252.296,
+    "end": 260.496
   },
   {
-    "start": 285.317,
-    "end": 293.617
+    "start": 260.496,
+    "end": 268.796
   },
   {
-    "start": 293.617,
-    "end": 301.867
+    "start": 268.796,
+    "end": 277.046
   },
   {
-    "start": 301.867,
-    "end": 310.167
+    "start": 277.046,
+    "end": 285.346
   },
   {
-    "start": 310.167,
-    "end": 318.517
+    "start": 285.346,
+    "end": 293.696
   },
   {
-    "start": 318.517,
-    "end": 326.717
+    "start": 293.696,
+    "end": 301.896
   },
   {
-    "start": 326.717,
-    "end": 334.917
+    "start": 301.896,
+    "end": 310.096
   },
   {
-    "start": 334.917,
-    "end": 343.117
+    "start": 310.096,
+    "end": 318.296
   },
   {
-    "start": 343.117,
-    "end": 376.167
+    "start": 318.296,
+    "end": 351.346
   },
   {
-    "start": 376.167,
-    "end": 384.1
+    "start": 351.346,
+    "end": 359.279
   },
   {
-    "start": 384.1,
-    "end": 392.6
+    "start": 359.279,
+    "end": 367.779
   },
   {
-    "start": 392.6,
-    "end": 401.1
+    "start": 367.779,
+    "end": 376.279
   },
   {
-    "start": 401.1,
-    "end": 409.47
+    "start": 376.279,
+    "end": 384.649
   },
   {
-    "start": 409.47,
-    "end": 417.9
+    "start": 384.649,
+    "end": 393.079
   },
   {
-    "start": 417.9,
-    "end": 426.35
+    "start": 393.079,
+    "end": 401.529
   },
   {
-    "start": 426.35,
-    "end": 434.8
+    "start": 401.529,
+    "end": 409.979
   },
   {
-    "start": 434.8,
-    "end": 443.25
+    "start": 409.979,
+    "end": 418.429
   },
   {
-    "start": 443.25,
-    "end": 451.7
+    "start": 418.429,
+    "end": 426.879
   },
   {
-    "start": 451.7,
-    "end": 460.05
+    "start": 426.879,
+    "end": 435.229
   },
   {
-    "start": 460.05,
-    "end": 467.546
+    "start": 435.229,
+    "end": 442.725
   },
   {
-    "start": 467.546,
-    "end": 475.806
+    "start": 442.725,
+    "end": 450.985
   },
   {
-    "start": 475.806,
-    "end": 508.406
+    "start": 450.985,
+    "end": 483.585
   },
   {
-    "start": 508.406,
-    "end": 517.106
+    "start": 483.585,
+    "end": 492.285
   },
   {
-    "start": 517.106,
-    "end": 525.646
+    "start": 492.285,
+    "end": 500.825
   },
   {
-    "start": 525.646,
-    "end": 534.046
+    "start": 500.825,
+    "end": 509.225
   },
   {
-    "start": 534.046,
-    "end": 542.446
+    "start": 509.225,
+    "end": 517.625
   },
   {
-    "start": 542.446,
-    "end": 550.906
+    "start": 517.625,
+    "end": 526.085
   },
   {
-    "start": 550.906,
-    "end": 559.106
+    "start": 526.085,
+    "end": 534.285
   },
   {
-    "start": 559.106,
-    "end": 567.346
+    "start": 534.285,
+    "end": 542.525
   },
   {
-    "start": 567.346,
-    "end": 574.982
+    "start": 542.525,
+    "end": 550.161
   },
   {
-    "start": 574.982,
-    "end": 583.252
+    "start": 550.161,
+    "end": 558.431
   },
   {
-    "start": 583.252,
-    "end": 591.552
+    "start": 558.431,
+    "end": 566.731
   },
   {
-    "start": 591.552,
-    "end": 600.002
+    "start": 566.731,
+    "end": 575.181
   },
   {
-    "start": 600.002,
-    "end": 608.552
+    "start": 575.181,
+    "end": 583.731
   },
   {
-    "start": 608.552,
-    "end": 642.352
+    "start": 583.731,
+    "end": 617.531
   },
   {
-    "start": 642.352,
-    "end": 649.97
+    "start": 617.531,
+    "end": 625.149
   },
   {
-    "start": 649.97,
-    "end": 658.53
+    "start": 625.149,
+    "end": 633.709
   },
   {
-    "start": 658.53,
-    "end": 667.13
+    "start": 633.709,
+    "end": 642.309
   },
   {
-    "start": 667.13,
-    "end": 675.45
+    "start": 642.309,
+    "end": 650.629
   },
   {
-    "start": 675.45,
-    "end": 683.77
+    "start": 650.629,
+    "end": 658.949
   },
   {
-    "start": 683.77,
-    "end": 692.2
+    "start": 658.949,
+    "end": 667.379
   },
   {
-    "start": 692.2,
-    "end": 700.45
+    "start": 667.379,
+    "end": 675.629
   },
   {
-    "start": 700.45,
-    "end": 708.75
+    "start": 675.629,
+    "end": 683.929
   },
   {
-    "start": 708.75,
-    "end": 717.15
+    "start": 683.929,
+    "end": 692.329
   },
   {
-    "start": 717.15,
-    "end": 725.4
+    "start": 692.329,
+    "end": 700.579
   },
   {
-    "start": 725.4,
-    "end": 733.419
+    "start": 700.579,
+    "end": 708.598
   },
   {
-    "start": 733.419,
-    "end": 741.479
+    "start": 708.598,
+    "end": 716.658
   },
   {
-    "start": 741.479,
-    "end": 774.909
+    "start": 716.658,
+    "end": 750.088
   },
   {
-    "start": 774.909,
-    "end": 783.239
+    "start": 750.088,
+    "end": 758.418
   },
   {
-    "start": 783.239,
-    "end": 791.709
+    "start": 758.418,
+    "end": 766.888
   },
   {
-    "start": 791.709,
-    "end": 800.019
+    "start": 766.888,
+    "end": 775.198
   },
   {
-    "start": 800.019,
-    "end": 808.409
+    "start": 775.198,
+    "end": 783.588
   },
   {
-    "start": 808.409,
-    "end": 816.719
+    "start": 783.588,
+    "end": 791.898
   },
   {
-    "start": 816.719,
-    "end": 825.099
+    "start": 791.898,
+    "end": 800.278
   },
   {
-    "start": 825.099,
-    "end": 833.449
+    "start": 800.278,
+    "end": 808.628
   },
   {
-    "start": 833.449,
-    "end": 842.018
+    "start": 808.628,
+    "end": 817.197
   },
   {
-    "start": 842.018,
-    "end": 850.408
+    "start": 817.197,
+    "end": 825.587
   },
   {
-    "start": 850.408,
-    "end": 858.918
+    "start": 825.587,
+    "end": 834.097
   },
   {
-    "start": 858.918,
-    "end": 867.518
+    "start": 834.097,
+    "end": 842.697
   },
   {
-    "start": 867.518,
-    "end": 875.918
+    "start": 842.697,
+    "end": 851.097
   },
   {
-    "start": 875.918,
-    "end": 909.218
+    "start": 851.097,
+    "end": 884.397
   },
   {
-    "start": 909.218,
-    "end": 917.618
+    "start": 884.397,
+    "end": 892.797
   },
   {
-    "start": 917.618,
-    "end": 925.918
+    "start": 892.797,
+    "end": 901.097
   },
   {
-    "start": 925.918,
-    "end": 934.288
+    "start": 901.097,
+    "end": 909.467
   },
   {
-    "start": 934.288,
-    "end": 942.518
+    "start": 909.467,
+    "end": 917.697
   },
   {
-    "start": 942.518,
-    "end": 950.786
+    "start": 917.697,
+    "end": 925.965
   },
   {
-    "start": 950.786,
-    "end": 958.776
+    "start": 925.965,
+    "end": 933.955
   },
   {
-    "start": 958.776,
-    "end": 967.526
+    "start": 933.955,
+    "end": 942.705
   },
   {
-    "start": 967.526,
-    "end": 976.176
+    "start": 942.705,
+    "end": 951.355
   },
   {
-    "start": 976.176,
-    "end": 984.076
+    "start": 951.355,
+    "end": 959.255
   },
   {
-    "start": 984.076,
-    "end": 992.276
+    "start": 959.255,
+    "end": 967.455
   },
   {
-    "start": 992.276,
-    "end": 1000.576
+    "start": 967.455,
+    "end": 975.755
   },
   {
-    "start": 1000.576,
-    "end": 1008.976
+    "start": 975.755,
+    "end": 984.155
   },
   {
-    "start": 1008.976,
-    "end": 1042.176
+    "start": 984.155,
+    "end": 1017.355
   },
   {
-    "start": 1042.176,
-    "end": 1050.076
+    "start": 1017.355,
+    "end": 1025.255
   },
   {
-    "start": 1050.076,
-    "end": 1058.376
+    "start": 1025.255,
+    "end": 1033.555
   },
   {
-    "start": 1058.376,
-    "end": 1066.37
+    "start": 1033.555,
+    "end": 1041.549
   },
   {
-    "start": 1066.37,
-    "end": 1074.75
+    "start": 1041.549,
+    "end": 1049.929
   },
   {
-    "start": 1074.75,
-    "end": 1083.11
+    "start": 1049.929,
+    "end": 1058.289
   },
   {
-    "start": 1083.11,
-    "end": 1091.54
+    "start": 1058.289,
+    "end": 1066.719
   },
   {
-    "start": 1091.54,
-    "end": 1099.91
+    "start": 1066.719,
+    "end": 1075.089
   },
   {
-    "start": 1099.91,
-    "end": 1108.3
+    "start": 1075.089,
+    "end": 1083.479
   },
   {
-    "start": 1108.3,
-    "end": 1116.51
+    "start": 1083.479,
+    "end": 1091.689
   },
   {
-    "start": 1116.51,
-    "end": 1124.67
+    "start": 1091.689,
+    "end": 1099.849
   },
   {
-    "start": 1124.67,
-    "end": 1132.79
+    "start": 1099.849,
+    "end": 1107.969
   },
   {
-    "start": 1132.79,
-    "end": 1140.91
+    "start": 1107.969,
+    "end": 1116.089
   },
   {
-    "start": 1140.91,
-    "end": 1173.328
+    "start": 1116.089,
+    "end": 1148.507
   },
   {
-    "start": 1173.328,
-    "end": 1181.528
+    "start": 1148.507,
+    "end": 1156.707
   },
   {
-    "start": 1181.528,
-    "end": 1189.928
+    "start": 1156.707,
+    "end": 1165.107
   },
   {
-    "start": 1189.928,
-    "end": 1198.228
+    "start": 1165.107,
+    "end": 1173.407
   },
   {
-    "start": 1198.228,
-    "end": 1206.428
+    "start": 1173.407,
+    "end": 1181.607
   },
   {
-    "start": 1206.428,
-    "end": 1214.828
+    "start": 1181.607,
+    "end": 1190.007
   },
   {
-    "start": 1214.828,
-    "end": 1223.028
+    "start": 1190.007,
+    "end": 1198.207
   },
   {
-    "start": 1223.028,
-    "end": 1231.428
+    "start": 1198.207,
+    "end": 1206.607
   },
   {
-    "start": 1231.428,
-    "end": 1239.528
+    "start": 1206.607,
+    "end": 1214.707
   },
   {
-    "start": 1239.528,
-    "end": 1247.728
+    "start": 1214.707,
+    "end": 1222.907
   },
   {
-    "start": 1247.728,
-    "end": 1255.345
+    "start": 1222.907,
+    "end": 1230.524
   },
   {
-    "start": 1255.345,
-    "end": 1264.01
+    "start": 1230.524,
+    "end": 1239.189
   },
   {
-    "start": 1264.01,
-    "end": 1280.46
+    "start": 1239.189,
+    "end": 1255.639
   },
   {
-    "start": 1280.46,
-    "end": 1298.21
+    "start": 1255.639,
+    "end": 1273.389
   },
   {
-    "start": 1298.21,
-    "end": 1305.485
+    "start": 1273.389,
+    "end": 1280.664
   },
   {
-    "start": 1305.485,
-    "end": 1313.81
+    "start": 1280.664,
+    "end": 1288.989
   },
   {
-    "start": 1313.81,
-    "end": 1334.361
+    "start": 1288.989,
+    "end": 1309.54
   }
 ];
