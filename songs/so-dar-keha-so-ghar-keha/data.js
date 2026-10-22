@@ -15,7 +15,10 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Nirguṇa",
+    "Śiva",
+    "Śakti"
   ],
   "searchAliases": [
     "So Dar Keha",

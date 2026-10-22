@@ -15,7 +15,10 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Guru",
+    "Kṛṣṇa",
+    "Nirguṇa"
   ],
   "searchAliases": [
     "Jo Nar Dukh Mein Dukh Nahi Mane",

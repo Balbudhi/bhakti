@@ -22,7 +22,9 @@ def apply(meta: dict, slug: str, sequence: list[dict]) -> None:
     meta["writer"] = record["writer"]
     if old_writer:
         meta["credit"] = meta.get("credit", "").replace(old_writer, record["writer"])
-    meta["subjectTags"] = list(dict.fromkeys([*meta.get("subjectTags", []), "Gurbāṇī"]))
+    meta["subjectTags"] = list(dict.fromkeys([
+        *meta.get("subjectTags", []), "Gurbāṇī", *record.get("subjectTags", []),
+    ]))
     meta["searchAliases"] = list(dict.fromkeys([
         *meta.get("searchAliases", []), "Gurbani", "Sikh", "Sikhi", "Sikhī",
         "Guru Granth Sahib", record["writer"],

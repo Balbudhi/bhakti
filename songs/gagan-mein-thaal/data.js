@@ -15,7 +15,10 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Guru",
+    "Viṣṇu",
+    "Nirguṇa"
   ],
   "searchAliases": [
     "Gagan Mein Thaal Rav Chand Deepak Bane",

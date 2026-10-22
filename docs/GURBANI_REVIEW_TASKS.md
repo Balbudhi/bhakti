@@ -186,3 +186,21 @@ check confirms 13 prepared jobs, zero fresh pipeline artifacts, and zero new
 public readers. There is no running pipeline to wait for. Resume after credits
 are restored; do not mark the full objective complete or substitute a different
 transcription provider.
+
+## Reviewed subject tags
+
+Subject tags describe devotional themes and named divine references in the
+performed text. Gurbāṇī is a source/tradition facet and does not replace those
+subjects. Reuse existing devotional filters: Hari invocations use Viṣṇu, Govinda
+and Murāri use Kṛṣṇa, and the bow-bearing epithet in Merā also supports Viṣṇu.
+Guru is applied where teacher devotion or the performed Vāhigurū invocation
+appears. Nirguṇa marks the supported cosmic/inward, birthless or limitless
+Divine themes; it is not assigned to every Gurbāṇī song automatically. So Dar
+also receives Śiva and Śakti for its explicitly named divine singers. No Rāma
+tag is inferred from the author's name Rām Dās.
+
+No separate Hari or singleton Brahmā/Indra filters were added, following the
+owner's request to keep tags minimal and useful for devotional browsing.
+Per-song decisions and lyric evidence are stored in scripture_metadata.json
+and reapplied by the generator. Metadata-only validation confirms all lyrics,
+word maps, translations, order and timings are unchanged.

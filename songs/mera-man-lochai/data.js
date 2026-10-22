@@ -15,7 +15,10 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Guru",
+    "Kṛṣṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Mera Man Lochai Gur Darshan Tai",

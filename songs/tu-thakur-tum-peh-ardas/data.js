@@ -15,7 +15,9 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Guru",
+    "Nirguṇa"
   ],
   "searchAliases": [
     "Tũ Thakuru Tum Pehi Ardasi ॥",

@@ -852,7 +852,9 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Gur Satgur Ka Jo Sikh Akhaaye",
@@ -916,7 +918,9 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Koi Ani Milavai Mera Pritamu Piara",
@@ -982,7 +986,9 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Nirguṇa"
     ],
     "searchAliases": [
       "Tũ Thakuru Tum Pehi Ardasi ॥",
@@ -1020,7 +1026,9 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Tera Kiya Meetha Lage",
@@ -1056,7 +1064,10 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Viṣṇu",
+      "Nirguṇa"
     ],
     "searchAliases": [
       "Gagan Mein Thaal Rav Chand Deepak Bane",
@@ -1093,7 +1104,10 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Kṛṣṇa",
+      "Nirguṇa"
     ],
     "searchAliases": [
       "Jo Nar Dukh Mein Dukh Nahi Mane",
@@ -1129,7 +1143,10 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Mera Man Lochai Gur Darshan Tai",
@@ -1165,7 +1182,10 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Nirguṇa",
+      "Śiva",
+      "Śakti"
     ],
     "searchAliases": [
       "So Dar Keha",
@@ -1202,7 +1222,9 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Har Jiyo Kripa Karo Tum Pyare",

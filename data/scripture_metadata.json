@@ -10,7 +10,13 @@
         "note": "Gurū Granth Sāhib · Aṅg 13 · Rāga Dhanāsarī · Excerpts; also appears at aṅg 663.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=13"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Viṣṇu",
+      "Nirguṇa"
+    ],
+    "tagEvidence": "gur-saakhi-jot names the Guru and revealed light; har-charan-kamal invokes Hari’s lotus feet; the cosmic offering addresses divine light throughout nature. Hari is indexed under the existing Viṣṇu facet; no separate Hari tag."
   },
   "gur-satgur-ka-jo-sikh-akhaye": {
     "writer": "Gurū Rām Dās",
@@ -23,7 +29,12 @@
         "note": "Gurū Granth Sāhib · Aṅg 305–306 · Gauṛī kī Vār · Salok, Mahallā 4.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=305"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Viṣṇu"
+    ],
+    "tagEvidence": "The refrain names Guru/Satguru and meditation on Hari; the verses center on the Guru’s teaching and the disciple’s practice. Hari is indexed under the existing Viṣṇu facet; no separate Hari tag."
   },
   "har-jiyo-kirpa-karo": {
     "writer": "Gurū Amar Dās",
@@ -36,7 +47,12 @@
         "note": "Gurū Granth Sāhib · Aṅg 603–604 · Rāga Soraṭhi · Mahallā 3.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=603"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Viṣṇu"
+    ],
+    "tagEvidence": "hari jīu kripā karahu directly invokes Hari; satiguru dātā meli milāvahu asks for union with the true Guru. Hari is indexed under the existing Viṣṇu facet; no separate Hari tag."
   },
   "jo-nar-dukh-mein-dukh-nahin-jaane": {
     "writer": "Gurū Teg Bahādar",
@@ -49,7 +65,13 @@
         "note": "Gurū Granth Sāhib · Aṅg 633 · Rāga Soraṭhi · Mahallā 9.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=633"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Kṛṣṇa",
+      "Nirguṇa"
+    ],
+    "tagEvidence": "gur kirpā names the Guru; gobind is the Govinda epithet indexed under Kṛṣṇa; braham dwelling within and merging like water with water support Nirguṇa."
   },
   "koee-aan-milavai-mera-pritam-pyara": {
     "writer": "Gurū Rām Dās",
@@ -62,7 +84,12 @@
         "note": "Gurū Granth Sāhib · Aṅg 757 · Rāga Sūhī · Mahallā 4 · Stanzas 1–6 and refrain.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=757"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Viṣṇu"
+    ],
+    "tagEvidence": "darsanu hari and hari hari nāmu invoke Hari; satiguru mele asks for union with the true Guru. Hari is indexed under the existing Viṣṇu facet; no separate Hari tag."
   },
   "so-dar-keha-so-ghar-keha": {
     "writer": "Gurū Nānak",
@@ -75,7 +102,13 @@
         "note": "Gurū Granth Sāhib · Aṅg 6 · Japu Jī Sāhib · Pauṛī 27.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=6"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Nirguṇa",
+      "Śiva",
+      "Śakti"
+    ],
+    "tagEvidence": "The birthless creator sustains all worlds; īsaru, baramā, devī and ind explicitly name Śiva, Brahmā, the goddess/deities and Indra among those singing. These are reference tags as well as devotional subjects. Keep the existing Nirguṇa, Śiva and Śakti facets; do not create singleton Brahmā/Indra filters for incidental participants."
   },
   "tera-kiya-meetha-laage": {
     "writer": "Gurū Arjan",
@@ -88,7 +121,12 @@
         "note": "Gurū Granth Sāhib · Aṅg 394 · Rāga Āsā · Mahallā 5.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=394"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Viṣṇu"
+    ],
+    "tagEvidence": "hari nāmu and hari kā nāmu repeatedly invoke Hari; guru merai saṅgi sadā hai nāle names the Guru’s constant presence. Hari is indexed under the existing Viṣṇu facet; no separate Hari tag."
   },
   "tu-thakur-tum-peh-ardas": {
     "writer": "Gurū Arjan",
@@ -101,7 +139,12 @@
         "note": "Gurū Granth Sāhib · Aṅg 268 · Sukhmanī Sāhib · Aṣṭapadī 4, stanza 8.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=268"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Nirguṇa"
+    ],
+    "tagEvidence": "The performed vāhigurū invocation supplies Guru; the limitless creator, beyond all measure and sustaining all creation, supports Nirguṇa."
   },
   "mera-man-lochai": {
     "writer": "Gurū Arjan · Gurū Rām Dās · Kabīr",
@@ -170,6 +213,12 @@
         "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain.",
         "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=96"
       }
-    ]
+    ],
+    "subjectTags": [
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu"
+    ],
+    "tagEvidence": "gur darasana centers the Guru; murāre invokes Kṛṣṇa’s Murāri epithet and sāriṅgapāṇī the bow-bearing Viṣṇu epithet; inserted passages explicitly invoke Hari. Hari is indexed under the existing Viṣṇu facet; no separate Hari tag."
   }
 }

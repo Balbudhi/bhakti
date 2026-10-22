@@ -15,7 +15,9 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Guru",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Koi Ani Milavai Mera Pritamu Piara",
