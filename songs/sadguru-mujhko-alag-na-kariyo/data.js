@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Sadguru Mujhko Alag Na Kariyo",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Guru",
   "credit": "Suresh Wadkar",
   "pageCredit": "Suresh Wadkar",
   "writer": "",
@@ -10,7 +10,6 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī",
     "Guru"
   ],
   "searchAliases": [

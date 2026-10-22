@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Koi Bhaje Krishna",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Rāma · Kṛṣṇa",
   "credit": "Aparna Mayekar · Sandeep, Santosh & Anant Thorat",
   "pageCredit": "Aparna Mayekar",
   "writer": "",
@@ -10,7 +10,6 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī",
     "Rāma",
     "Viṣṇu",
     "Kṛṣṇa"

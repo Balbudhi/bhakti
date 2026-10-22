@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Ghanashyāma Sundarā",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Kṛṣṇa",
   "credit": "Anuradha Paudwal & Ravindra Sathe",
   "pageCredit": "Anuradha Paudwal & Ravindra Sathe",
   "writer": "",
@@ -10,7 +10,6 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī",
     "Kṛṣṇa"
   ],
   "searchAliases": [

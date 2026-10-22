@@ -14,9 +14,7 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [
-    "Śirḍī Sāī"
-  ],
+  "subjectTags": [],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
   "timingStatus": "start-only-reviewed",
@@ -25,7 +23,8 @@ window.SONG_META = {
       "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tumhi-mere-lagan-lagai-re.m4a",
       "type": "audio/mp4"
     }
-  ]
+  ],
+  "subtitle": ""
 };
 
 window.SONG_LINES = {

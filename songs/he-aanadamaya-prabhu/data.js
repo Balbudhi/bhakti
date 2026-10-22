@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "He Aanadamaya Prabhu",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Viṣṇu",
   "credit": "Shri Chandra Bhanu Satpathy",
   "pageCredit": "Shri Chandra Bhanu Satpathy",
   "writer": "Shri Chandra Bhanu Satpathy",
@@ -10,7 +10,7 @@ window.SONG_META = {
     "Odia"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Shirdi Sai",

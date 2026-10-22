@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Ghanaśyāma Sundarā",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Kṛṣṇa",
   "credit": "",
   "pageCredit": "",
   "writer": "",
@@ -10,7 +10,6 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī",
     "Kṛṣṇa"
   ],
   "searchAliases": [

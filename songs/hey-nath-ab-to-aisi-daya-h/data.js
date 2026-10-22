@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "He Nātha Aba To Aisī Dayā Ho",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "",
   "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
   "pageCredit": "Deepak Kumar",
   "writer": "Shri Chandra Bhanu Satpathy",
@@ -9,9 +9,7 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [
-    "Śirḍī Sāī"
-  ],
+  "subjectTags": [],
   "searchAliases": [
     "He Natha Aba To Aisi Daya Ho",
     "Shirdi Sai",

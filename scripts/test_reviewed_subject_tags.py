@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import tempfile
 import unittest
@@ -9,6 +10,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import audit_bhakti_contract as audit
+import bhakti_pipeline as pipeline
 import tag_taxonomy as tags
 
 
@@ -171,6 +173,105 @@ class ReviewedSubjectTagTests(unittest.TestCase):
             self.lines['goddess']['source'] = 'Changed source'
             problems = audit.audit_song(path)['problems']
             self.assertTrue(any('Rāma evidence changed' in p for p in problems), problems)
+
+    def whole_source_removal(self) -> None:
+        self.removal_record()
+        # This extra non-witness line must still be covered by the decision.
+        self.lines['other'] = {'source': 'प्रभु कृपा करो'}
+        self.sequence.append({'ref': 'other'})
+        sources = sorted({self.lines[entry['ref']]['source'] for entry in self.sequence})
+        self.registry['songs']['reviewed']['performedSourcesSha256'] = hashlib.sha256(
+            json.dumps(sources, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+        ).hexdigest()
+        self.save()
+
+    def test_whole_source_guard_rejects_new_sai_verse_before_any_mutation(self) -> None:
+        self.whole_source_removal()
+        self.lines['new-sai'] = {'source': 'साईं बाबा'}
+        self.sequence.append({'ref': 'new-sai'})
+        meta = {'subjectTags': ['Rāma', 'Śakti']}
+        with self.assertRaisesRegex(ValueError, 'performed source coverage changed'):
+            self.apply(meta)
+        self.assertEqual(meta['subjectTags'], ['Rāma', 'Śakti'])
+
+    def test_whole_source_guard_rejects_replaced_non_witness_line(self) -> None:
+        self.whole_source_removal()
+        self.lines['other']['source'] = 'साईं कृपा करो'
+        with self.assertRaisesRegex(ValueError, 'performed source coverage changed'):
+            self.apply({'subjectTags': ['Rāma']})
+
+    def test_whole_source_guard_allows_renumber_reorder_repeats_and_unperformed_text(self) -> None:
+        self.whole_source_removal()
+        self.lines['renumbered'] = self.lines.pop('other')
+        self.sequence = [{'ref': 'renumbered' if e['ref'] == 'other' else e['ref']} for e in reversed(self.sequence)]
+        self.sequence.append({'ref': 'new-id', 'repeats': 4})
+        self.lines['unused-sai'] = {'source': 'साईं बाबा'}
+        meta = {'subjectTags': ['Rāma', 'Śakti']}
+        self.apply(meta)
+        self.assertEqual(meta['subjectTags'], ['Śakti', 'Guru', 'Viṣṇu'])
+
+    def test_whole_source_guard_rejects_malformed_digest_and_missing_source(self) -> None:
+        self.whole_source_removal()
+        self.registry['songs']['reviewed']['performedSourcesSha256'] = 'not-a-digest'
+        self.save()
+        with self.assertRaises(ValueError):
+            self.apply({'subjectTags': ['Rāma']})
+        self.whole_source_removal()
+        self.lines['other'] = {}
+        with self.assertRaisesRegex(ValueError, 'missing performed source'):
+            self.apply({'subjectTags': ['Rāma']})
+
+    def test_reviewed_subtitle_rejects_malformed_value_and_waits_for_all_guards(self) -> None:
+        self.whole_source_removal()
+        record = self.registry['songs']['reviewed']
+        record['reviewedSubtitle'] = None
+        self.save()
+        meta = {'subjectTags': ['Rāma'], 'subtitle': 'Old label'}
+        with self.assertRaises(ValueError):
+            self.apply(meta)
+        self.assertEqual(meta, {'subjectTags': ['Rāma'], 'subtitle': 'Old label'})
+        record['reviewedSubtitle'] = 'Guru'
+        self.save()
+        self.lines['other']['source'] = 'साईं बाबा'
+        with self.assertRaisesRegex(ValueError, 'performed source coverage changed'):
+            self.apply(meta)
+        self.assertEqual(meta, {'subjectTags': ['Rāma'], 'subtitle': 'Old label'})
+
+    def test_real_generator_replaces_album_subtitle_and_supports_intentional_blank(self) -> None:
+        (self.root / 'data' / 'editorial_baselines.json').write_text('{"version":1,"songs":{}}')
+        directory = self.root / 'songs' / 'reviewed'
+        directory.mkdir(parents=True)
+        for subtitle, source, roman, gloss, additions in (
+            ('Guru', 'गुरु', 'guru', 'spiritual teacher', ['Guru']),
+            ('', 'प्रभु', 'prabhu', 'master', []),
+        ):
+            with self.subTest(subtitle=subtitle):
+                evidence = [{'operation': 'remove', 'tag': 'Śirḍī Sāī', 'source': source,
+                             'reason': 'Performed address does not identify this specific saint.'}]
+                if additions:
+                    evidence.append({'operation': 'add', 'tag': 'Guru', 'source': source, 'reason': 'Explicit teacher address.'})
+                self.registry = {'version': 1, 'songs': {'reviewed': {
+                    'addTags': additions, 'removeTags': ['Śirḍī Sāī'], 'evidence': evidence,
+                    'reviewedSubtitle': subtitle,
+                    'performedSourcesSha256': hashlib.sha256(json.dumps([source], ensure_ascii=False,
+                        separators=(',', ':')).encode('utf-8')).hexdigest(),
+                }}}
+                self.save()
+                with patch.object(pipeline, 'ROOT', self.root), patch.object(pipeline, 'publication_errors', return_value=[]):
+                    pipeline.generate(directory, {'slug': 'reviewed', 'displayTitle': 'Example',
+                        'languages': ['Hindi'], 'subtitle': 'Śirḍī Sāī', 'subjectTags': ['Śirḍī Sāī']}, {},
+                        {'packet': {'verified_lines': [{'id': 'line', 'source_text': source, 'roman': roman, 'kind': 'verse'}]}},
+                        {'sequence': [{'ref': 'line', 'start': 0, 'end': 5}]},
+                        {'packet': {'glosses': [{'id': 'line', 'word_glosses': [{'roman': roman, 'gloss': gloss}]}]}},
+                        {'packet': {'translations': [{'id': 'line', 'segments': [{'text': gloss, 'word_indices': [0]}]}]}},
+                        write_catalogue_after=False)
+                meta = audit.load_data(directory / 'data.js')['SONG_META']
+                self.assertEqual(meta['subtitle'], subtitle)
+                self.assertEqual(meta['subjectTags'], additions)
+                page = (directory / 'index.html').read_text()
+                self.assertNotIn('— Śirḍī Sāī', page)
+                expected_heading = 'Example — Guru' if subtitle else 'Example'
+                self.assertIn(f'<meta property="og:title" content="{expected_heading}"', page)
 
 
 if __name__ == '__main__':

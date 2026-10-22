@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Janena Mu Debata Ke Janena Mu Ishwara",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Guru",
   "credit": "Shri Chandra Bhanu Satpathy",
   "pageCredit": "Shri Chandra Bhanu Satpathy",
   "writer": "Shri Chandra Bhanu Satpathy",
@@ -10,7 +10,6 @@ window.SONG_META = {
     "Odia"
   ],
   "subjectTags": [
-    "Śirḍī Sāī",
     "Guru"
   ],
   "searchAliases": [

@@ -72,7 +72,6 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Viṣṇu"
     ],
     "searchAliases": [
@@ -88,7 +87,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Viṣṇu",
     "queueNumber": 95
   },
   {
@@ -502,7 +501,6 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Kṛṣṇa"
     ],
     "searchAliases": [
@@ -519,7 +517,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Kṛṣṇa",
     "queueNumber": 53
   },
   {
@@ -531,7 +529,6 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Rāma",
       "Viṣṇu",
       "Kṛṣṇa"
@@ -556,7 +553,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Rāma · Kṛṣṇa",
     "queueNumber": 112
   },
   {
@@ -1887,9 +1884,7 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Hindi"
     ],
-    "subjectTags": [
-      "Śirḍī Sāī"
-    ],
+    "subjectTags": [],
     "searchAliases": [
       "He Natha Aba To Aisi Daya Ho",
       "Shirdi Sai",
@@ -1905,7 +1900,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "",
     "queueNumber": 69
   },
   {
@@ -2056,9 +2051,7 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Hindi"
     ],
-    "subjectTags": [
-      "Śirḍī Sāī"
-    ],
+    "subjectTags": [],
     "searchAliases": [
       "Tumhi Mere Lagan Lagai Re",
       "Satpathy Baba",
@@ -2074,7 +2067,8 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "queueNumber": 220
+    "queueNumber": 220,
+    "subtitle": ""
   },
   {
     "slug": "mere-ram-tum",
@@ -2118,7 +2112,6 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Kṛṣṇa"
     ],
     "searchAliases": [
@@ -2136,7 +2129,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Kṛṣṇa",
     "queueNumber": 54
   },
   {
@@ -6447,7 +6440,6 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Guru"
     ],
     "searchAliases": [
@@ -6470,7 +6462,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Guru",
     "queueNumber": 55
   },
   {
@@ -6517,7 +6509,6 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Guru"
     ],
     "searchAliases": [
@@ -6541,7 +6532,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Shri Sai Charane",
+    "subtitle": "Guru",
     "queueNumber": 57
   },
   {
@@ -6553,7 +6544,7 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6574,7 +6565,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Viṣṇu",
     "queueNumber": 62
   },
   {
@@ -6586,7 +6577,6 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Guru"
     ],
     "searchAliases": [
@@ -6608,7 +6598,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Guru",
     "queueNumber": 92
   },
   {
@@ -6753,9 +6743,7 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Odia"
     ],
-    "subjectTags": [
-      "Śirḍī Sāī"
-    ],
+    "subjectTags": [],
     "searchAliases": [
       "Shirdi Sai",
       "Sirdi Sai",
@@ -6775,7 +6763,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "",
     "queueNumber": 221
   },
   {
@@ -7503,7 +7491,6 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Guru"
     ],
     "searchAliases": [
@@ -7519,7 +7506,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Guru",
     "queueNumber": 179
   },
   {
@@ -7677,7 +7664,6 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī",
       "Śiva",
       "Gaṇeśa"
     ],
@@ -7698,7 +7684,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Śirḍī Sāī",
+    "subtitle": "Gaṇeśa",
     "queueNumber": 222
   },
   {

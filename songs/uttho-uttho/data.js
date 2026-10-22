@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Uttho Uttho",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Gaṇeśa",
   "credit": "",
   "pageCredit": "",
   "writer": "",
@@ -10,7 +10,6 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī",
     "Śiva",
     "Gaṇeśa"
   ],

@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Tumo Krupa Bina Prabhu",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "",
   "credit": "Shri Chandra Bhanu Satpathy",
   "pageCredit": "Shri Chandra Bhanu Satpathy",
   "writer": "Shri Chandra Bhanu Satpathy",
@@ -9,9 +9,7 @@ window.SONG_META = {
   "languages": [
     "Odia"
   ],
-  "subjectTags": [
-    "Śirḍī Sāī"
-  ],
+  "subjectTags": [],
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",

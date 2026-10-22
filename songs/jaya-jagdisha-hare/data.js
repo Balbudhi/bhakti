@@ -1,6 +1,6 @@
 window.SONG_META = {
   "title": "Jaya Jagdisha Hare",
-  "subtitle": "Śirḍī Sāī",
+  "subtitle": "Viṣṇu",
   "credit": "Pandit Shardha Ram Phillauri · Anup Jalota",
   "pageCredit": "Anup Jalota",
   "writer": "Pandit Shardha Ram Phillauri",
@@ -10,7 +10,6 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī",
     "Viṣṇu"
   ],
   "searchAliases": [

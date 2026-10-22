@@ -238,8 +238,20 @@
           "lineId": "refrain-1",
           "source": "ଗୁରୁ ଚରଣରେ କର ଧ୍ୟାନ",
           "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "refrain-1",
+          "source": "ଗୁରୁ ଚରଣରେ କର ଧ୍ୟାନ",
+          "reason": "All performed verses discuss the Guru’s feet, name, guidance and grace. This supports Guru, already reviewed, but never identifies that teacher as Sāī; an album or dedication cannot turn the general teacher into a named saint."
         }
-      ]
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "ba61f4579d5af2bf94aa6408feb5f49c947e3b7aa221ce4f8ceb8fdd1138202a",
+      "reviewedSubtitle": "Guru"
     },
     "guru-he-mote-ete-para-kian-kala": {
       "addTags": [
@@ -266,8 +278,20 @@
           "lineId": "refrain-1",
           "source": "ଗୁରୁ କର ଅପରାଧ କ୍ଷମା",
           "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "refrain-1",
+          "source": "ଗୁରୁ କର ଅପରାଧ କ୍ଷମା",
+          "reason": "The complete performed prayer seeks forgiveness from the Guru; no verse supplies a Sāī or Śirḍī identity. Retain the meaningful Guru subject without importing an artist/album dedication."
         }
-      ]
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "9612ca4596e46227cd34eb3e659b0bb884631bf2e3f131b3067c24048cc31550",
+      "reviewedSubtitle": "Guru"
     },
     "hanuman-chalisa": {
       "addTags": [
@@ -308,8 +332,20 @@
           "lineId": "tathapi-he-gurubara",
           "source": "ତଥାପି ହେ ଗୁରୁବର",
           "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "shri-guru-tama-padare",
+          "source": "ଶ୍ରୀଗୁରୁ ତମ ପାଦରେ",
+          "reason": "The complete performed lyric repeatedly addresses Śrīguru/Gurubara, Nātha and the Lord in intimate devotion; it gives no Sāī/Śirḍī identity. Retain Guru, but do not infer the specific saint from the recording’s collection."
         }
-      ]
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "98444804ed47dea0f0d1e8cc51f47617d0b0a9e012c0399c830bfbe916728575",
+      "reviewedSubtitle": "Guru"
     },
     "kakad-aarti": {
       "addTags": [
@@ -698,8 +734,20 @@
           "lineId": "jago-he-krishna-murari-giridhari",
           "source": "जागो हे कृष्ण मुरारी गिरिधारी",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "jago-he-krishna-murari-giridhari",
+          "source": "जागो हे कृष्ण मुरारी गिरिधारी",
+          "reason": "The complete performed song awakens Kṛṣṇa-Murāri-Giridhāri, with Yamunā, peacock crown, yellow garment and flute. No Sāī identification appears; album attribution is not a lyric subject."
         }
-      ]
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "aa56cd77bf30b446b8bfb5b0a532a50c337c78ac8347fb7869cfdf2b6346d399",
+      "reviewedSubtitle": "Kṛṣṇa"
     },
     "ghanshyam-sundara": {
       "addTags": [
@@ -712,8 +760,20 @@
           "lineId": "jaago-he-krishna-murari-giridhari",
           "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "jaago-he-krishna-murari-giridhari",
+          "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
+          "reason": "The complete performed song awakens Kṛṣṇa-Murāri-Giridhāri, with Yamunā, peacock crown, yellow garment and flute. No Sāī identification appears; album attribution is not a lyric subject."
         }
-      ]
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "874811727d11a109edd775c971eaafd95feeab60d465938fc721805907fa8e0b",
+      "reviewedSubtitle": "Kṛṣṇa"
     },
     "koi-bhaje": {
       "addTags": [
@@ -726,8 +786,20 @@
           "lineId": "refrain-koi-bhaje",
           "source": "कोई भजे कृष्णा, कोई भजे रामा",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "verse-ram-krishna-hai-ishta",
+          "source": "राम कृष्ण हैं इष्ट देवता, परम पूज्य हैं हमार",
+          "reason": "All performed verses explicitly praise Rāma and Kṛṣṇa as chosen deities and Viṣṇu avatars. No Sāī identification appears; source-writing determines the devotional subject."
         }
-      ]
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "3983e098c0f7f9a60fd0ae811c66e836a0578a5945dbc5fc3fd0334d907215cf",
+      "reviewedSubtitle": "Rāma · Kṛṣṇa"
     },
     "maa-jag-janani-jai-jai": {
       "addTags": [
@@ -878,8 +950,20 @@
           "lineId": "om-jai-jagdish-hare",
           "source": "ॐ जय जगदीश हरे",
           "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        },
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "om-jai-jagdish-hare",
+          "source": "ॐ जय जगदीश हरे",
+          "reason": "The complete performed ārati addresses Jagadīśa-Hari, the universal Lord. No performed line identifies Sāī or Śirḍī; the Sāī collection/dedication cannot supply a lyric subject."
         }
-      ]
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "d35437583dd59eb3d97d6687f1c47929c6c516886e2ae084c3084b5b2561ffae",
+      "reviewedSubtitle": "Viṣṇu"
     },
     "sampurna-sundarakanda": {
       "addTags": [
@@ -1120,6 +1204,117 @@
           "reason": "Whole poem depicts Vaiṣṇava devotees dancing with gopīcandana and tulasī garlands; a clear devotional tradition reference, not a cognate or author-name inference."
         }
       ]
+    },
+    "hey-nath-ab-to-aisi-daya-h": {
+      "addTags": [],
+      "evidence": [
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "refrain-1",
+          "source": "हे नाथ अब तो ऐसी दया हो",
+          "reason": "The complete performed prayer addresses the unnamed Lord (Nātha), asking for a meaningful life, selfless love and freedom from fear. It supplies no Sāī/Śirḍī identity; do not infer one from artist or collection."
+        }
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "12beb16d5cc0aa1515b09bd601f1dd5572cabf46107cbcf021af389c0f356918",
+      "reviewedSubtitle": ""
+    },
+    "tumhi-mere-lagan-lagai-re": {
+      "addTags": [],
+      "evidence": [
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "manwā_lāge_na",
+          "source": "मनवा लागे न कहीं तोरे बिन सइयाँ",
+          "reason": "The performed सइयाँ (saiyā̃) is the beloved, distinct from the saint-name साईं/Sāī; surrounding verses address a fakir and mystical beloved without identifying Śirḍī Sāī. Do not convert a shared roman-prefix or album association into a saint identity."
+        }
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "5ecf737ad88f8a6024433830cee78fa1c29c88b5e9af795ee8bc71909daa4aa2",
+      "reviewedSubtitle": ""
+    },
+    "he-aanadamaya-prabhu": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "v2-4",
+          "source": "ତେଣୁ ହେ ଶ୍ରୀହରି ମୋତେ ଆନନ୍ଦମୟ କର",
+          "reason": "The performed prayer names Śrīhari and otherwise addresses the blissful Prabhu through creation and grace. None of its performed lines identifies Sāī; retained Hari/Viṣṇu classification is independent of the collection."
+        },
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "v2-4",
+          "source": "ତେଣୁ ହେ ଶ୍ରୀହରି ମୋତେ ଆନନ୍ଦମୟ କର",
+          "reason": "Direct performed address to Śrīhari; Viṣṇu name-reference classification follows the owner’s Hari convention. The whole performed source is separately guarded for the Sāī removal."
+        }
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "8dedd9b06430f0864b421b2aa375e903a7a79a6f249ca3adcb050bedca7e9ebe",
+      "reviewedSubtitle": "Viṣṇu"
+    },
+    "tumo-krupa-bina-prabhu": {
+      "addTags": [],
+      "evidence": [
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "refrain-1",
+          "source": "ତୁମ କୃପା ବିନା ପ୍ରଭୁ ଆମେ କି କରିବୁ",
+          "reason": "The complete performed prayer addresses the unnamed Prabhu, grace, feet and liberation. No Sāī identity is sung; the generic devotional address cannot support a specific saint tag from metadata alone."
+        }
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "90a6f7e89169a6d254a1c0d4d68e71660f50a627c7489b1fe820398779663755",
+      "reviewedSubtitle": ""
+    },
+    "sadguru-mujhko-alag-na-kariyo": {
+      "addTags": [],
+      "evidence": [
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "refrain-1",
+          "source": "सद्गुरु मुझको अलग न करियो",
+          "reason": "The entire performed text addresses Sadguru as the lifelong master, beloved and source of grace. It supports the Guru subject but never names Sāī or Śirḍī; no artist/dedication inference is permitted."
+        }
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "ea3127b6d7d8bddbe92badcd294d58886795b026047388d342cbc590bd3ce742",
+      "reviewedSubtitle": "Guru"
+    },
+    "uttho-uttho": {
+      "addTags": [],
+      "evidence": [
+        {
+          "operation": "remove",
+          "tag": "Śirḍī Sāī",
+          "lineId": "refrain-4",
+          "source": "गजवदना गणपति",
+          "reason": "All performed verses invoke Gajānana/Gaṇapati, Girijā-Śiva’s son, Siddhi-Vināyaka and Vighneśvara. No Sāī identity appears; retain the actual Gaṇeśa subject rather than an album association."
+        }
+      ],
+      "removeTags": [
+        "Śirḍī Sāī"
+      ],
+      "performedSourcesSha256": "cc36c7b825e1dfba5ac4478d74497eb7b28b9f1962661513fb499507d44bdafd",
+      "reviewedSubtitle": "Gaṇeśa"
     }
   }
 }

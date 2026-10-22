@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from collections.abc import Iterable, Mapping
@@ -142,6 +143,10 @@ def apply_reviewed_subject_tags(
     Validate all applicable evidence before changing meta. Removals require an
     explicit remove witness; surviving tags keep their order before additions.
     A stale witness requires fresh review, even when a removal is already applied.
+    Whole-song exclusions may also pin all unique performed source strings;
+    reordered/repeated occurrences do not change that lexical coverage.
+    A reviewedSubtitle (including an intentional blank) supersedes album labels
+    only after the same evidence has passed, including during page generation.
     """
     path = Path(root) / "data" / "song_tag_overrides.json"
     try:
@@ -177,6 +182,12 @@ def apply_reviewed_subject_tags(
             covered.add((witness.get("operation", "add"), witness["tag"]))
         if covered != actions:
             raise ValueError(f"{song}: every reviewed tag action needs source evidence")
+        if "performedSourcesSha256" in record and (
+                not isinstance(record["performedSourcesSha256"], str)
+                or not re.fullmatch(r"[0-9a-f]{64}", record["performedSourcesSha256"])):
+            raise ValueError(f"{song}: invalid performed source coverage digest")
+        if "reviewedSubtitle" in record and not isinstance(record["reviewedSubtitle"], str):
+            raise ValueError(f"{song}: invalid reviewed subtitle")
     record = registry["songs"].get(slug)
     if record is None:
         return
@@ -194,6 +205,10 @@ def apply_reviewed_subject_tags(
     for witness in record["evidence"]:
         if witness["source"] not in performed_sources:
             raise ValueError(f"{slug}: {witness['tag']} evidence changed or is not performed; review its tag")
+    if "performedSourcesSha256" in record:
+        coverage = json.dumps(sorted(performed_sources), ensure_ascii=False, separators=(",", ":"))
+        if hashlib.sha256(coverage.encode("utf-8")).hexdigest() != record["performedSourcesSha256"]:
+            raise ValueError(f"{slug}: performed source coverage changed; review its whole-song tag decision")
     existing = meta.get("subjectTags", [])
     if not isinstance(existing, list) or any(not isinstance(tag, str) for tag in existing):
         raise ValueError(f"{slug}: invalid existing subjectTags")
@@ -201,3 +216,5 @@ def apply_reviewed_subject_tags(
     meta["subjectTags"] = list(dict.fromkeys([
         *(tag for tag in existing if tag not in removed), *record["addTags"],
     ]))
+    if "reviewedSubtitle" in record:
+        meta["subtitle"] = record["reviewedSubtitle"]
