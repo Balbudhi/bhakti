@@ -7,7 +7,7 @@ window.SONG_META = {
   "singer": "Anuradha Paudwal & Ravindra Sathe",
   "composer": "",
   "languages": [
-    "Marathi"
+    "Hindi"
   ],
   "subjectTags": [
     "Kṛṣṇa"
@@ -31,7 +31,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "ghanashyama-sundara-call": {
     "source": "घनश्याम सुंदरा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "घनश्याम",
@@ -66,7 +66,7 @@ window.SONG_LINES = {
   },
   "ghanashyama-sundara-shridhara": {
     "source": "घनश्याम सुंदरा श्रीधरा पलकें रवि ने खोलीं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "घनश्याम",
@@ -161,7 +161,7 @@ window.SONG_LINES = {
   },
   "jago-he-krishna-murari-giridhari": {
     "source": "जागो हे कृष्ण मुरारी गिरिधारी",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "जागो",
@@ -232,7 +232,7 @@ window.SONG_LINES = {
   },
   "jago-he-krishna-murari-jagaye": {
     "source": "जागो हे कृष्ण मुरारी जगाए पवन ये मतवारी",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "जागो",
@@ -339,7 +339,7 @@ window.SONG_LINES = {
   },
   "ghanashyama-sundara-short": {
     "source": "घनश्याम सुंदरा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "घनश्याम",
@@ -374,7 +374,7 @@ window.SONG_LINES = {
   },
   "female-alap-1": {
     "source": "आ...",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "आ...",
@@ -397,7 +397,7 @@ window.SONG_LINES = {
   },
   "leke-munivar-hath-mein-mala": {
     "source": "लेके मुनिवर हाथ में माला",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "लेके",
@@ -468,7 +468,7 @@ window.SONG_LINES = {
   },
   "naam-tera-bhajate": {
     "source": "नाम तेरा भजते मनन तेरा करते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "नाम",
@@ -551,7 +551,7 @@ window.SONG_LINES = {
   },
   "akhila-vishwa-ke-bhakta": {
     "source": "अखिल विश्व के भक्त तुम्हारा ध्यान सदा धरते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "अखिल",
@@ -658,7 +658,7 @@ window.SONG_LINES = {
   },
   "mandir-mein-baj-uthin": {
     "source": "मंदिर में बज उठीं घंटियाँ शंख भी ये कहते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मंदिर",
@@ -777,7 +777,7 @@ window.SONG_LINES = {
   },
   "bhor-bhayi-sab-panchi-jage": {
     "source": "भोर भई सब पंछी जागे यमुना की जागी है लहर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "भोर",
@@ -908,7 +908,7 @@ window.SONG_LINES = {
   },
   "mora-mukuta-pitambara-dhari": {
     "source": "मोर मुकुट पीतांबर धारी जागो दया के सागर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मोर",
@@ -1015,7 +1015,7 @@ window.SONG_LINES = {
   },
   "madhura-rasili-murali": {
     "source": "मधुर रसीली मुरली की धुन की सुधा बरसाओ हम पर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मधुर",
@@ -1146,7 +1146,7 @@ window.SONG_LINES = {
   },
   "tum-jago-to-bhagya-bhi-jage": {
     "source": "तुम जागो तो भाग्य भी जागे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "तुम",
@@ -1229,7 +1229,7 @@ window.SONG_LINES = {
   },
   "mira-ke-giridhar": {
     "source": "मीरा के गिरिधर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मीरा",
@@ -1276,7 +1276,7 @@ window.SONG_LINES = {
   },
   "sato-hi-sur-shehanai-ke-kahate": {
     "source": "सातों ही सुर शहनाई के कहते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "सातों",
@@ -1359,7 +1359,7 @@ window.SONG_LINES = {
   },
   "utho-he-vanshidhar": {
     "source": "उठो हे वंशीधर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "उठो",
@@ -1406,7 +1406,7 @@ window.SONG_LINES = {
   },
   "ghanashyama-sundara-closing": {
     "source": "घनश्याम सुंदरा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "घनश्याम",

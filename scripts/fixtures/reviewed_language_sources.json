@@ -1,0 +1,1325 @@
+[
+  {
+    "slug": "ghana-shyama-sundara",
+    "languages": [
+      "Hindi"
+    ],
+    "lines": [
+      {
+        "id": "ghanashyama-sundara-call",
+        "source_text": "घनश्याम सुंदरा",
+        "roman": "Ghanashyāma sundarā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "ghanashyama-sundara-shridhara",
+        "source_text": "घनश्याम सुंदरा श्रीधरा पलकें रवि ने खोलीं",
+        "roman": "Ghanashyāma sundarā śrīdharā palakeṁ ravi ne kholīṁ",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "jago-he-krishna-murari-giridhari",
+        "source_text": "जागो हे कृष्ण मुरारी गिरिधारी",
+        "roman": "Jāgo he kṛṣṇa murārī giridhārī",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "jago-he-krishna-murari-jagaye",
+        "source_text": "जागो हे कृष्ण मुरारी जगाए पवन ये मतवारी",
+        "roman": "Jāgo he kṛṣṇa murārī jagāe pavana ye matavārī",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "ghanashyama-sundara-short",
+        "source_text": "घनश्याम सुंदरा",
+        "roman": "Ghanashyāma sundarā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "female-alap-1",
+        "source_text": "आ...",
+        "roman": "Ā...",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "leke-munivar-hath-mein-mala",
+        "source_text": "लेके मुनिवर हाथ में माला",
+        "roman": "Leke munivara hātha meṁ mālā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "naam-tera-bhajate",
+        "source_text": "नाम तेरा भजते मनन तेरा करते",
+        "roman": "Nāma terā bhajate manana terā karate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "akhila-vishwa-ke-bhakta",
+        "source_text": "अखिल विश्व के भक्त तुम्हारा ध्यान सदा धरते",
+        "roman": "Akhila viśva ke bhakta tumhārā dhyāna sadā dharate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "mandir-mein-baj-uthin",
+        "source_text": "मंदिर में बज उठीं घंटियाँ शंख भी ये कहते",
+        "roman": "Mandira meṁ baja uṭhīṁ ghaṇṭiyāṁ śaṅkha bhī ye kahate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "bhor-bhayi-sab-panchi-jage",
+        "source_text": "भोर भई सब पंछी जागे यमुना की जागी है लहर",
+        "roman": "Bhora bhaī saba pañchī jāge yamunā kī jāgī hai lahara",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "mora-mukuta-pitambara-dhari",
+        "source_text": "मोर मुकुट पीतांबर धारी जागो दया के सागर",
+        "roman": "Mora mukuṭa pītāmbara dhārī jāgo dayā ke sāgara",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "madhura-rasili-murali",
+        "source_text": "मधुर रसीली मुरली की धुन की सुधा बरसाओ हम पर",
+        "roman": "Madhura rasīlī muralī kī dhuna kī sudhā barasāo hama para",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "tum-jago-to-bhagya-bhi-jage",
+        "source_text": "तुम जागो तो भाग्य भी जागे",
+        "roman": "Tum jāgo to bhāgya bhī jāge",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "mira-ke-giridhar",
+        "source_text": "मीरा के गिरिधर",
+        "roman": "Mīrā ke giridhara",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "sato-hi-sur-shehanai-ke-kahate",
+        "source_text": "सातों ही सुर शहनाई के कहते",
+        "roman": "Sātoṁ hī sura śahanāī ke kahate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "utho-he-vanshidhar",
+        "source_text": "उठो हे वंशीधर",
+        "roman": "Uṭho he vaṁśīdhara",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "ghanashyama-sundara-closing",
+        "source_text": "घनश्याम सुंदरा",
+        "roman": "Ghanashyāma sundarā",
+        "sourceLanguage": "hi"
+      }
+    ],
+    "order": [
+      {
+        "ref": "ghanashyama-sundara-call",
+        "section": "invocation",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanashyama-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-jagaye",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanashyama-sundara-short",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "female-alap-1",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "leke-munivar-hath-mein-mala",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "naam-tera-bhajate",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "akhila-vishwa-ke-bhakta",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "mandir-mein-baj-uthin",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-jagaye",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanashyama-sundara-short",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "bhor-bhayi-sab-panchi-jage",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "mora-mukuta-pitambara-dhari",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "madhura-rasili-murali",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "tum-jago-to-bhagya-bhi-jage",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "female-alap-1",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "mira-ke-giridhar",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "sato-hi-sur-shehanai-ke-kahate",
+        "section": "bridge",
+        "repeats": 2
+      },
+      {
+        "ref": "utho-he-vanshidhar",
+        "section": "bridge",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanashyama-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-jagaye",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanashyama-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jago-he-krishna-murari-jagaye",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanashyama-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanashyama-sundara-closing",
+        "section": "closing",
+        "repeats": 1
+      }
+    ],
+    "source_basis": "canonical audited source_text, independently compared to reviewed reader; rendering differences recorded separately"
+  },
+  {
+    "slug": "ghanshyam-sundara",
+    "languages": [
+      "Hindi"
+    ],
+    "lines": [
+      {
+        "id": "ghanshyam-sundara-short",
+        "source_text": "घनश्याम सुंदरा",
+        "roman": "Ghanaśyāma sundarā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "ghanshyam-sundara-shridhara",
+        "source_text": "घनश्याम सुंदरा श्रीधरा",
+        "roman": "Ghanaśyāma sundarā śrīdharā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "palke-ravi-ne-kholi",
+        "source_text": "पलकें रवि ने खोलीं",
+        "roman": "Palakeṁ ravi ne kholīṁ",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "jaago-he-krishna-murari-giridhari",
+        "source_text": "जागो हे कृष्ण मुरारी, गिरिधारी",
+        "roman": "Jāgo he kṛṣṇa murārī, giridhārī",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "jaago-he-krishna-murari-jagaye-pawan",
+        "source_text": "जागो हे कृष्ण मुरारी, जगाये पवन ये मतवारी",
+        "roman": "Jāgo he kṛṣṇa murārī, jagāye pavana ye matavārī",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "female-aalaap",
+        "source_text": "आ...",
+        "roman": "Ā...",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "leke-munivar-haath-me-maala",
+        "source_text": "लेके मुनिवर हाथ में माला",
+        "roman": "Leke munivara hātha meṁ mālā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "naam-tera-bhajate",
+        "source_text": "नाम तेरा भजते",
+        "roman": "Nāma terā bhajate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "manan-tera-karte",
+        "source_text": "मनन तेरा करते",
+        "roman": "Manana terā karate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "akhil-vishwa-ke-bhakta",
+        "source_text": "अखिल विश्व के भक्त तुम्हारा ध्यान सदा धरते",
+        "roman": "Akhila viśva ke bhakta tumhārā dhyāna sadā dharate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "mandir-me-baj-uthi-ghantiya",
+        "source_text": "मंदिर में बज उठीं घंटियाँ, शंख भी ये कहते",
+        "roman": "Mandira meṁ baja uṭhīṁ ghaṇṭiyāṁ, śaṅkha bhī ye kahate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "bhor-bhayi-sab-panchhi-jaage",
+        "source_text": "भोर भई सब पंछी जागे",
+        "roman": "Bhora bhaī saba pañchī jāge",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "yamuna-ki-jaagi-hai-lehar",
+        "source_text": "यमुना की जागी है लहर",
+        "roman": "Yamunā kī jāgī hai lahara",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "mor-mukut-peetambar-dhari",
+        "source_text": "मोर मुकुट पीतांबर धारी",
+        "roman": "Mora mukuṭa pītāmbara dhārī",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "jaago-daya-ke-saagar",
+        "source_text": "जागो दया के सागर",
+        "roman": "Jāgo dayā ke sāgara",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "madhur-raseeli-murali-ki-dhun",
+        "source_text": "मधुर रसीली मुरली की धुन की सुधा बरसाओ हम पर",
+        "roman": "Madhura rasīlī muralī kī dhuna kī sudhā barasāo hama para",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "tum-jaago-to-bhagya-bhi-jaage",
+        "source_text": "तुम जागो तो भाग्य भी जागे",
+        "roman": "Tuma jāgo to bhāgya bhī jāge",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "meera-ke-giridhar",
+        "source_text": "मीरा के गिरिधर",
+        "roman": "Mīrā ke giridhara",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "saaton-hi-sur-shehnai-ke-kahte",
+        "source_text": "सातों ही सुर शहनाई के कहते",
+        "roman": "Sātoṁ hī sura śahanāī ke kahate",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "utho-hey-bansidhar",
+        "source_text": "उठो हे बंसीधर",
+        "roman": "Uṭho he baṁsīdhara",
+        "sourceLanguage": "hi"
+      }
+    ],
+    "order": [
+      {
+        "ref": "ghanshyam-sundara-short",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanshyam-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "palke-ravi-ne-kholi",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-jagaye-pawan",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanshyam-sundara-short",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "female-aalaap",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "leke-munivar-haath-me-maala",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "naam-tera-bhajate",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "manan-tera-karte",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "akhil-vishwa-ke-bhakta",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "mandir-me-baj-uthi-ghantiya",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-jagaye-pawan",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanshyam-sundara-short",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "bhor-bhayi-sab-panchhi-jaage",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "yamuna-ki-jaagi-hai-lehar",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "mor-mukut-peetambar-dhari",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-daya-ke-saagar",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "madhur-raseeli-murali-ki-dhun",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "tum-jaago-to-bhagya-bhi-jaage",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "female-aalaap",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "meera-ke-giridhar",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "saaton-hi-sur-shehnai-ke-kahte",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "utho-hey-bansidhar",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanshyam-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "palke-ravi-ne-kholi",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-jagaye-pawan",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanshyam-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "palke-ravi-ne-kholi",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-giridhari",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "jaago-he-krishna-murari-jagaye-pawan",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanshyam-sundara-shridhara",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "palke-ravi-ne-kholi",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "ghanshyam-sundara-short",
+        "section": "refrain",
+        "repeats": 1
+      }
+    ],
+    "source_basis": "canonical audited source_text, independently compared to reviewed reader; rendering differences recorded separately"
+  },
+  {
+    "slug": "meri-maa-jagdambe-man-jaye",
+    "languages": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "lines": [
+      {
+        "id": "promo-spoken",
+        "source_text": "माँ वैष्णो देवी के भजन सुनने के लिए हमारा चैनल MH ONE श्रद्धा सब्सक्राइब करें और बेल आइकन दबाकर पाएँ सभी नोटिफिकेशन।",
+        "roman": "Mā̃ Vaiṣṇo Devī ke bhajan sunne ke lie hamārā chainal MH ONE Śraddhā sabskrāib karẽ aur bel āikan dabākar pāẽ sabhī noṭiphikeśan.",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "jaikara-intro",
+        "source_text": "जयकारा मेरी शेराँवाली मैया जी दा, बोल सच्चे दरबार की जय!",
+        "roman": "Jaikārā merī Śerā̃vālī Maiyā jī dā, bol sacce darabār kī jay!",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "refrain-1",
+        "source_text": "मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
+        "roman": "Merī mā̃ Jagadambe man jāye, asā̃ jag nū manā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "refrain-1-var",
+        "source_text": "ओ मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
+        "roman": "O merī mā̃ Jagadambe man jāye, asā̃ jag nū manā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "refrain-2",
+        "source_text": "ओ मेरे मन विच मैया वस जाये, असां जग नू वसा के की लैणा",
+        "roman": "O mere man vic Maiyā vas jāye, asā̃ jag nū vasā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "refrain-2-chorus",
+        "source_text": "मेरे मन विच मैया वस जाये, असां जग नू वसा के की लैणा",
+        "roman": "Mere man vic Maiyā vas jāye, asā̃ jag nū vasā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "spoken-interlude",
+        "source_text": "ताली की आवाज धीमी है, सभी अपने हाथ ऊपर उठा कर माँ के चरणों में हाजिरी देंगे और ऊँचा बोलेंगे, मिलकर।",
+        "roman": "Tālī kī āvāj dhīmī hai, sabhī apne hāth ūpar uṭhā kar mā̃ ke caraṇõ mẽ hāzirī dẽge aur ū̃cā bolẽge, milkar.",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v1-l1",
+        "source_text": "मेरी माँ जगदम्बे दे द्वारे जेहड़ा भुल के भी इक वारी आ जांदा",
+        "roman": "Merī mā̃ Jagadambe de dvāre jehṛā bhul ke bhī ik vārī ā jāndā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v1-l2",
+        "source_text": "ओदे ग़म मिट जांदे ने सारे, ओ जग विच सब कुछ पा जांदा",
+        "roman": "Ode ġam miṭ jānde ne sāre, o jag vic sab kuch pā jāndā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v1-l2-rep",
+        "source_text": "ओ जग विच सब कुछ पा जांदा",
+        "roman": "O jag vic sab kuch pā jāndā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v1-l3",
+        "source_text": "जेहड़ा दिल 'च वसा के मैया नू ओदे प्रेम दी जोत जगा लैंदा",
+        "roman": "Jehṛā dil 'ca vasā ke Maiyā nū ode prem dī jot jagā laindā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v1-l4",
+        "source_text": "ओ रह के मस्ती विच दिन-रात सदा, दुनिया तों किनारा पा लैंदा",
+        "roman": "O rah ke mastī vic din-rāt sadā, dunīyā tõ kinārā pā laindā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v1-l4-rep",
+        "source_text": "ओ दुनिया तों किनारा पा लैंदा, दुनिया तों किनारा पा लैंदा",
+        "roman": "O dunīyā tõ kinārā pā laindā, dunīyā tõ kinārā pā laindā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v2-l1",
+        "source_text": "सारे जग दियाँ खुशियाँ इक पासे, मेरी माँ दा द्वारा इक पासे",
+        "roman": "Sāre jag dīā̃ khuśīā̃ ik pāse, merī mā̃ dā dvārā ik pāse",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v2-l2",
+        "source_text": "दुनिया दे नज़ारे इक पासे, मेरी माँ दा नज़ारा इक पासे",
+        "roman": "Dunīyā de nazāre ik pāse, merī mā̃ dā nazārā ik pāse",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v2-l2-rep",
+        "source_text": "ओ मेरी माँ दा नज़ारा इक पासे, मेरी माँ दा नज़ारा इक पासे",
+        "roman": "O merī mā̃ dā nazārā ik pāse, merī mā̃ dā nazārā ik pāse",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v2-l3",
+        "source_text": "ओ सारे जग दा चानण इक पासे, ज्योति उजियारा इक पासे",
+        "roman": "O sāre jag dā cānaṇ ik pāse, jyoti ujiyārā ik pāse",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v2-l3-ch",
+        "source_text": "सारे जग दा चानण इक पासे, ओ ज्योति उजियारा इक पासे",
+        "roman": "Sāre jag dā cānaṇ ik pāse, o jyoti ujiyārā ik pāse",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v2-l4",
+        "source_text": "ओ एह घोर गहिर समुंदर इक पासे, मेरे दिल दा किनारा इक पासे",
+        "roman": "O eh ghor gahir samundar ik pāse, mere dil dā kinārā ik pāse",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v2-l4-rep",
+        "source_text": "ओ मेरे दिल दा किनारा इक पासे, ओ मेरे दिल दा किनारा इक पासे",
+        "roman": "O mere dil dā kinārā ik pāse,",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v3-l1",
+        "source_text": "एह सिर है अमानत मैया दी, थाँ-थाँ ते झुकाया नहीं जांदा",
+        "roman": "Eh sir hai amānat Maiyā dī, thā̃-thā̃ te jhukāyā nahī̃ jāndā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v3-l2",
+        "source_text": "एह दिल है अमानत मैया दी, थाँ-थाँ ते लगाया नहीं जांदा",
+        "roman": "Eh dil hai amānat Maiyā dī, thā̃-thā̃ te lagāyā nahī̃ jāndā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v3-l2-rep",
+        "source_text": "थाँ-थाँ ते लगाया नहीं जांदा, थाँ-थाँ ते लगाया नहीं जांदा",
+        "roman": "Thā̃-thā̃ te lagāyā nahī̃ jāndā,",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v3-l3",
+        "source_text": "असी कीते कौल निभावांगे, असी नदियाँ चीर के आवांगे",
+        "roman": "Asī kīte kaul nibhāvā̃ge, asī nadīā̃ cīr ke āvā̃ge",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v3-l3-ch",
+        "source_text": "हाय असी कीते कौल निभावांगे, असी नदियाँ चीर के आवांगे",
+        "roman": "Hāy asī kīte kaul nibhāvā̃ge, asī nadīā̃ cīr ke āvā̃ge",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v3-l4",
+        "source_text": "असी अपनी माँ नू मनावांगे, सातों जगत मनाया नहीं जांदा",
+        "roman": "Asī apnī mā̃ nū manāvā̃ge, sātõ jagat manāyā nahī̃ jāndā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v3-l4-rep",
+        "source_text": "सातों जगत मनाया नहीं जांदा, सातों जगत मनाया नहीं जांदा",
+        "roman": "Sātõ jagat manāyā nahī̃ jāndā,",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l1",
+        "source_text": "तू जग रुसदा ए तां रुसदा रवे, असां माँ नू अपना बनाना ए",
+        "roman": "Tū jag rusdā e tā̃ rusdā rave, asā̃ mā̃ nū apnā banānā e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l1-ch",
+        "source_text": "जग रुसदा ए ते रुसदा रवे, असां माँ नू अपना बनाना ए",
+        "roman": "Jag rusdā e te rusdā rave, asā̃ mā̃ nū apnā banānā e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l2",
+        "source_text": "कोई कुछ कहंदा ए कहंदा रवे, असां अपनी माँ नू मनाना ए",
+        "roman": "Koī kuch kahndā e kahndā rave, asā̃ apnī mā̃ nū manānā e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l2-rep",
+        "source_text": "हो असां अपनी माँ नू मनाना ए, असां अपनी माँ नू मनाना ए",
+        "roman": "Ho asā̃ apnī mā̃ nū manānā e, asā̃ apnī mā̃ nū manānā e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l3",
+        "source_text": "हो तेरे नां विच रह के मस्त सदा, तेरे नां विच नचना-गाना ए",
+        "roman": "Ho tere nā̃ vic rah ke mast sadā, tere nā̃ vic nacnā-gānā e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l3-ch",
+        "source_text": "तेरे नां विच रह के मस्त सदा, माँ तेरे नां विच गाना ए",
+        "roman": "Tere nā̃ vic rah ke mast sadā, mā̃ tere nā̃ vic gānā e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l4",
+        "source_text": "इस दुनिया नू असां दिल तों भुला के, इस दिल विच माँ नू वसाना ए",
+        "roman": "Is dunīyā nū asā̃ dil tõ bhulā ke, is dil vic mā̃ nū vasānā e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v4-l4-rep",
+        "source_text": "हो इस दिल विच माँ नू वसाना ए, हो इस दिल विच माँ नू वसाना ए",
+        "roman": "Ho is dil vic mā̃ nū vasānā e,",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l1",
+        "source_text": "इस प्रेम दा पाना सौखा नहीं, जिंद तली ते धरनी पैंदी ए",
+        "roman": "Is prem dā pānā saukhā nahī̃, jind talī te dharanī paindī e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l1-ch",
+        "source_text": "इस प्रेम दा पाना सौखा नहीं, जिंद तली ते धरनी पैंदी ए",
+        "roman": "Is prem dā pānā saukhā nahī̃, jind talī te dharanī paindī e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l2",
+        "source_text": "हो घुट ज़हरां दे पीने पैंदे ने, गल सबरां दी सहनी पैंदी ए",
+        "roman": "Ho ghuṭ zaharā̃ de pīne painde ne, gal sabarā̃ dī sahanī paindī e",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l2-rep",
+        "source_text": "हो गल सबरां दी सहनी पैंदी ए, हो गल सबरां दी सहनी पैंदी ए",
+        "roman": "Ho gal sabarā̃ dī sahanī paindī e,",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l3",
+        "source_text": "ओहनां की इस दुनिया तों लैणा, जेहदा मैया ते ऐतबार होवे",
+        "roman": "Ohnā̃ kī is dunīyā tõ laiṇā, jehdā Maiyā te aitabār hove",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l3-ch",
+        "source_text": "ओहनां की इस दुनिया तों लैणा, जेहदा मैया ते ऐतबार होवे",
+        "roman": "Ohnā̃ kī is dunīyā tõ laiṇā, jehdā Maiyā te aitabār hove",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l4",
+        "source_text": "ओहनू किसे चीज़ दी कमी नहीं, माँ दे चरणां विच जेहदा प्यार होवे",
+        "roman": "Ohnū kise cīz dī kamī nahī̃, mā̃ de caraṇā̃ vic jehdā pyār hove",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v5-l4-rep",
+        "source_text": "हो माँ दे चरणां विच जेहदा प्यार होवे, माँ दे चरणां विच जेहदा प्यार होवे",
+        "roman": "Ho mā̃ de caraṇā̃ vic jehdā pyār hove, mā̃ de caraṇā̃ vic jehdā pyār hove",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "v6-l1",
+        "source_text": "इक माँ को ही अपना मीत बना, मेरी माँ जो शेरों वाली है",
+        "roman": "Ik mā̃ ko hī apnā mīt banā, merī mā̃ jo śerõ vālī hai",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v6-l1-ch",
+        "source_text": "इक माँ को ही अपना मीत बना, मेरी माँ जो शेरों वाली है",
+        "roman": "Ik mā̃ ko hī apnā mīt banā, merī mā̃ jo śerõ vālī hai",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v6-l2",
+        "source_text": "तू अपना-आप उसी पे लुटा, मेरी माँ की छटा निराली है",
+        "roman": "Tū apnā-āp usī pe luṭā, merī mā̃ kī chaṭā nirālī hai",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v6-l2-rep",
+        "source_text": "मेरी माँ की छटा निराली है, हाँ मेरी माँ की छटा निराली है",
+        "roman": "Merī mā̃ kī chaṭā nirālī hai, hā̃ merī mā̃ kī chaṭā nirālī hai",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v6-l3",
+        "source_text": "गर मिल जाये मैया तुझको, तो मुझसे भी मिलवा देना",
+        "roman": "Gar mil jāye Maiyā tujhko, to mujhse bhī milvā denā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v6-l3-ch",
+        "source_text": "गर मिल जाये मैया तुझको, तो मुझको भी मिलवा देना",
+        "roman": "Gar mil jāye Maiyā tujhko, to mujhko bhī milvā denā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v6-l4",
+        "source_text": "हो तेरी बात जो हो जाये माँ से, मेरी भी बात करा देना",
+        "roman": "Ho terī bāt jo ho jāye mā̃ se, merī bhī bāt karā denā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "v6-l4-rep",
+        "source_text": "हो मेरी भी बात करा देना, हाँ मेरी भी बात करा देना",
+        "roman": "Ho merī bhī bāt karā denā, hā̃ merī bhī bāt karā denā",
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "refrain-triple-o",
+        "source_text": "ओ मेरी, ओ मेरी, ओ मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
+        "roman": "O merī, o merī, o merī mā̃ Jagadambe man jāye, asā̃ jag nū manā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "outro-loop-ho",
+        "source_text": "हो असां जग नू मना के की लैणा",
+        "roman": "Ho asā̃ jag nū manā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "outro-loop-plain",
+        "source_text": "असां जग नू मना के की लैणा",
+        "roman": "Asā̃ jag nū manā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "outro-loop-hay",
+        "source_text": "हाय असां जग नू मना के की लैणा",
+        "roman": "Hāy asā̃ jag nū manā ke kī laiṇā",
+        "sourceLanguage": "pa"
+      },
+      {
+        "id": "jaikara-outro",
+        "source_text": "जयकारा मेरी शेराँवाली मैया जी दा, बोल सच्चे दरबार की जय!",
+        "roman": "Jaikārā merī Śerā̃vālī Maiyā jī dā, bol sacce darabār kī jay!",
+        "sourceLanguage": "pa"
+      }
+    ],
+    "order": [
+      {
+        "ref": "jaikara-intro",
+        "section": "invocation",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 2
+      },
+      {
+        "ref": "refrain-1-var",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2-chorus",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 2
+      },
+      {
+        "ref": "spoken-interlude",
+        "section": "spoken",
+        "repeats": 1
+      },
+      {
+        "ref": "v1-l1",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "v1-l2",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v1-l2-rep",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "v1-l3",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "v1-l4",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v1-l4-rep",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1-var",
+        "section": "refrain",
+        "repeats": 2
+      },
+      {
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2-chorus",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "v2-l1",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "v2-l2",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v2-l2-rep",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v2-l3",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v2-l3-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v2-l4",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v2-l4-rep",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "refrain-1-var",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2-chorus",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "v3-l1",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "v3-l2",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v3-l2-rep",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "v3-l3",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v3-l3-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v3-l4",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v3-l4-rep",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "refrain-1-var",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2-chorus",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l1",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l1-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l2",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l2-rep",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l3",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l3-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l4",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v4-l4-rep",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "refrain-1-var",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2-chorus",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "v5-l1",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v5-l1-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v5-l2",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v5-l2-rep",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "v5-l3",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v5-l3-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v5-l4",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v5-l4-rep",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1-var",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2-chorus",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l1",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l1-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l2",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l2-rep",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l3",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l3-ch",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l4",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "v6-l4-rep",
+        "section": "verse",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-triple-o",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "refrain-2-chorus",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "outro-loop-ho",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "outro-loop-plain",
+        "section": "refrain",
+        "repeats": 1
+      },
+      {
+        "ref": "outro-loop-ho",
+        "section": "refrain",
+        "repeats": 4
+      },
+      {
+        "ref": "outro-loop-hay",
+        "section": "refrain",
+        "repeats": 2
+      },
+      {
+        "ref": "jaikara-outro",
+        "section": "closing",
+        "repeats": 1
+      }
+    ],
+    "source_basis": "canonical audited source_text, independently compared to reviewed reader; rendering differences recorded separately"
+  }
+]

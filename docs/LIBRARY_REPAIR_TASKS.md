@@ -60,7 +60,7 @@ additions. Do not claim that pipeline execution alone establishes correctness.
   Sundarakāṇḍa marker-map repairs (`5bd8fdfe`; 11 readers).
 - [x] Complete the bounded Gemini 3.7/3.8 comparison; retain 3.7 as baseline,
   reject the failed text candidates, and record the limits of this comparison.
-- [ ] Recover the existing Vedanta translation-engine design and research a
+- [x] Recover the existing Vedanta translation-engine design and research a
   small embedding/dictionary implementation with contextual sense selection.
 - [ ] Identify the newly mentioned backlog recordings from saved requests and
   intake evidence; review and publish the intended additions.
@@ -72,9 +72,9 @@ additions. Do not claim that pipeline execution alone establishes correctness.
 - [ ] Visually verify corrected readers in the Codex in-app Browser and confirm
   deployed files match reviewed changes.
 
-## Current step and next step
+## Earlier release evidence
 
-Current: the contextual pipeline and first eleven-reader repair batch are live.
+At the first release: the contextual pipeline and first eleven-reader repair batch are live.
 Deployment succeeded; all 22 published data/page files match the reviewed commit.
 Desktop and 390px checks covered the corrected reader presentation and selected
 word interactions. This does not establish fresh audio/timing accuracy.
@@ -106,9 +106,9 @@ combined marker/lyric tokens, and the new contract guard detects uncovered IAST
 letters. The 254-reader scan has no remaining uncovered-letter findings.
 Representative repaired wording and popups pass desktop and 390px checks.
 
-The four additions are running from strict committed code with a $12 shared
-reservation ledger, three simultaneous API calls and a 600-second request
-deadline. Six new edge-trim requests completed; drafts are not public releases.
+The four additions ran from strict committed code with a $12 shared
+reservation ledger, three simultaneous API calls and bounded request deadlines.
+Their final accounting and remaining timing hold are recorded below.
 
 A whole-library tag review supports 77 additional actions and four semantic
 removals; five incidental-name additions and three uncertain dedication removals
@@ -165,15 +165,15 @@ this task document. Existing-song repairs and backlog intake both remain require
   another project's budget. Qualify semantic behavior separately.
 - [ ] Review connotation, readable source-supported compounds and contextual
   vocabulary consistency alongside literal agency and imagery.
-- [ ] Publish four further reviewed southern readers; resolve Kolaru's repeated
+- [x] Publish four further reviewed southern readers; resolve Kolaru's repeated
   phrase representation separately before release.
 - [ ] Correct backlog recording identities: Harivarasanam needs the evidenced
   307-second Sony/Magnasound Yesudas art track; the Shweta Mohan recording is
   Jagadoddharana Jaya Jagadeesha, a Sathya Sai bhajan, not the Purandaradasa hymn.
-- [ ] Audit evidenced section-level attribution for composite aartis and long
-  traditional recordings, retaining the established Sai aarti presentation.
-- [ ] Fix mobile filter row position/touch highlighting and add a singer facet.
-- [ ] Add play-next versus append choices, retain played queue history and previous
+- [x] Correct the seven reviewed composite readers using evidenced section-level
+  attribution and the established Sai aarti presentation. Wider library review remains open.
+- [x] Fix mobile filter row position/touch highlighting and add a singer facet.
+- [x] Add play-next versus append choices, retain played queue history and previous
   navigation, and clear upcoming songs without interrupting current playback.
 
 The four-song Gurbani run stopped on an explicit provider503 after 51 successful
@@ -225,3 +225,49 @@ Next automatic-pipeline slice: persist rejected drafts, attach typed repair
 findings/evidence, reconstruct affected glosses before re-deriving English, and
 re-review within bounded attempts and money. Never use the unrelated working-tree
 autoaccept function to clear semantic uncertainty.
+
+## Current step and next step — 22 October
+
+Published `6a8ebfbe` makes selected long word meanings scrollable and keeps them
+above the player. Native in-app Browser pointer and keyboard checks reached the
+last definition in a 844 × 390 landscape view without scrolling the page; Escape
+returned focus to the source word. Ten interaction cases and the placement
+regression pass. All tracked entry pages use the new asset version.
+
+Published `399a28c1` covers all 15 catalogue languages in ISO metadata. It does not
+resolve mixed-language lines by guessing from the first language or script. Three
+independently reviewed reader corrections now have exact-source registry
+persistence: 18 and 20 Hindi line codes in the two Ghana recordings, and
+46 Punjabi codes in Meri alongside its retained Hindi lines. Their lyrics,
+word maps and timing remain unchanged; mobile labels and bounds were checked.
+
+The five-song text-only audit completed 84 lines in five calls for $0.2676105, with
+no retries or active calls. All proposed English exactly retained the current
+wording and all source-token indices were covered. This checks compatibility with
+existing glosses; it is not independent proof of transcription, gloss accuracy or
+audio completeness. Frozen inputs, raw responses and accounting remain in the
+local five-song audit evidence.
+
+The four-Gurbāṇī production/recovery run finished 111 requests, accounting for
+$4.0813095 including the retained $0.01898925 unknown reservation from the 503.
+Three readers are published in `373d26bc` with independently adjudicated text
+and clean timing evidence. The committed catalogue now contains 264 songs.
+All 109 browser line-seek controls reach their cached starts; desktop/390px
+citations, word meanings and layout have been inspected. Source-backed minimal
+tags are applied and survive generation. All 273 affected public files from the
+popup/language-map/three-reader release match their committed deployed bytes. The long Satgur recording remains held: two
+additional ending passes confirmed the expanded phrase order but did not resolve
+its first-syllable timing disagreement; normalized sung variants were not adopted.
+
+The automatic semantic-repair implementation has passed independent code review
+and staged-source integration tests. It is not yet linguistically qualified for
+paid production. Scheduler-deadline, recording/order identity, cache-reuse,
+interrupted-adoption and distant-English-context defects have verified fixes. Continue
+with source-first repair, preserving exact owner English and prior paid evidence.
+
+Next: qualify the bounded repair implementation on actual held semantic cases.
+A separate two-recording Kabīr audio audit is authorized with a fresh $0.60 cap,
+two calls maximum, retained original evidence and no automatic retries. It asks
+whether Sunta’s omitted printed stanzas are sung in this abridged recording and
+what is audible before Kya Tan’s returning refrain, without inserting printed text. Continue the whole-library recording/translation audit and the
+remaining backlog. No complete-library accuracy or goal-completion claim.

@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "songs": {
+    "ghana-shyama-sundara": {
+      "languages": [
+        "Hindi"
+      ],
+      "performedSourcesSha256": "aa56cd77bf30b446b8bfb5b0a532a50c337c78ac8347fb7869cfdf2b6346d399",
+      "lines": [
+        {
+          "source": "घनश्याम सुंदरा",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "घनश्याम सुंदरा श्रीधरा पलकें रवि ने खोलीं",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "जागो हे कृष्ण मुरारी गिरिधारी",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "जागो हे कृष्ण मुरारी जगाए पवन ये मतवारी",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "आ...",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "लेके मुनिवर हाथ में माला",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "नाम तेरा भजते मनन तेरा करते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "अखिल विश्व के भक्त तुम्हारा ध्यान सदा धरते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मंदिर में बज उठीं घंटियाँ शंख भी ये कहते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "भोर भई सब पंछी जागे यमुना की जागी है लहर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मोर मुकुट पीतांबर धारी जागो दया के सागर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मधुर रसीली मुरली की धुन की सुधा बरसाओ हम पर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "तुम जागो तो भाग्य भी जागे",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मीरा के गिरिधर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "सातों ही सुर शहनाई के कहते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "उठो हे वंशीधर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        }
+      ]
+    },
+    "ghanshyam-sundara": {
+      "languages": [
+        "Hindi"
+      ],
+      "performedSourcesSha256": "874811727d11a109edd775c971eaafd95feeab60d465938fc721805907fa8e0b",
+      "lines": [
+        {
+          "source": "घनश्याम सुंदरा",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "घनश्याम सुंदरा श्रीधरा",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "पलकें रवि ने खोलीं",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "जागो हे कृष्ण मुरारी, जगाये पवन ये मतवारी",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "आ...",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "लेके मुनिवर हाथ में माला",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "नाम तेरा भजते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मनन तेरा करते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "अखिल विश्व के भक्त तुम्हारा ध्यान सदा धरते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मंदिर में बज उठीं घंटियाँ, शंख भी ये कहते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "भोर भई सब पंछी जागे",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "यमुना की जागी है लहर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मोर मुकुट पीतांबर धारी",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "जागो दया के सागर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मधुर रसीली मुरली की धुन की सुधा बरसाओ हम पर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "तुम जागो तो भाग्य भी जागे",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मीरा के गिरिधर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "सातों ही सुर शहनाई के कहते",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "उठो हे बंसीधर",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        }
+      ]
+    },
+    "meri-maa-jagdambe-man-jaye": {
+      "languages": [
+        "Punjabi",
+        "Hindi"
+      ],
+      "performedSourcesSha256": "1ffe4aba93666559c6287e93d605efcbdd585488bbd393292686e0ea8674e1fc",
+      "lines": [
+        {
+          "source": "माँ वैष्णो देवी के भजन सुनने के लिए हमारा चैनल MH ONE श्रद्धा सब्सक्राइब करें और बेल आइकन दबाकर पाएँ सभी नोटिफिकेशन।",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "जयकारा मेरी शेराँवाली मैया जी दा, बोल सच्चे दरबार की जय!",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ मेरे मन विच मैया वस जाये, असां जग नू वसा के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "मेरे मन विच मैया वस जाये, असां जग नू वसा के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ताली की आवाज धीमी है, सभी अपने हाथ ऊपर उठा कर माँ के चरणों में हाजिरी देंगे और ऊँचा बोलेंगे, मिलकर।",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मेरी माँ जगदम्बे दे द्वारे जेहड़ा भुल के भी इक वारी आ जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओदे ग़म मिट जांदे ने सारे, ओ जग विच सब कुछ पा जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ जग विच सब कुछ पा जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "जेहड़ा दिल 'च वसा के मैया नू ओदे प्रेम दी जोत जगा लैंदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ रह के मस्ती विच दिन-रात सदा, दुनिया तों किनारा पा लैंदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ दुनिया तों किनारा पा लैंदा, दुनिया तों किनारा पा लैंदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "सारे जग दियाँ खुशियाँ इक पासे, मेरी माँ दा द्वारा इक पासे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "दुनिया दे नज़ारे इक पासे, मेरी माँ दा नज़ारा इक पासे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ मेरी माँ दा नज़ारा इक पासे, मेरी माँ दा नज़ारा इक पासे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ सारे जग दा चानण इक पासे, ज्योति उजियारा इक पासे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "सारे जग दा चानण इक पासे, ओ ज्योति उजियारा इक पासे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ एह घोर गहिर समुंदर इक पासे, मेरे दिल दा किनारा इक पासे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओ मेरे दिल दा किनारा इक पासे, ओ मेरे दिल दा किनारा इक पासे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "एह सिर है अमानत मैया दी, थाँ-थाँ ते झुकाया नहीं जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "एह दिल है अमानत मैया दी, थाँ-थाँ ते लगाया नहीं जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "थाँ-थाँ ते लगाया नहीं जांदा, थाँ-थाँ ते लगाया नहीं जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "असी कीते कौल निभावांगे, असी नदियाँ चीर के आवांगे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हाय असी कीते कौल निभावांगे, असी नदियाँ चीर के आवांगे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "असी अपनी माँ नू मनावांगे, सातों जगत मनाया नहीं जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "सातों जगत मनाया नहीं जांदा, सातों जगत मनाया नहीं जांदा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "तू जग रुसदा ए तां रुसदा रवे, असां माँ नू अपना बनाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "जग रुसदा ए ते रुसदा रवे, असां माँ नू अपना बनाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "कोई कुछ कहंदा ए कहंदा रवे, असां अपनी माँ नू मनाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हो असां अपनी माँ नू मनाना ए, असां अपनी माँ नू मनाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हो तेरे नां विच रह के मस्त सदा, तेरे नां विच नचना-गाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "तेरे नां विच रह के मस्त सदा, माँ तेरे नां विच गाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "इस दुनिया नू असां दिल तों भुला के, इस दिल विच माँ नू वसाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हो इस दिल विच माँ नू वसाना ए, हो इस दिल विच माँ नू वसाना ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "इस प्रेम दा पाना सौखा नहीं, जिंद तली ते धरनी पैंदी ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हो घुट ज़हरां दे पीने पैंदे ने, गल सबरां दी सहनी पैंदी ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हो गल सबरां दी सहनी पैंदी ए, हो गल सबरां दी सहनी पैंदी ए",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओहनां की इस दुनिया तों लैणा, जेहदा मैया ते ऐतबार होवे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "ओहनू किसे चीज़ दी कमी नहीं, माँ दे चरणां विच जेहदा प्यार होवे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हो माँ दे चरणां विच जेहदा प्यार होवे, माँ दे चरणां विच जेहदा प्यार होवे",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "इक माँ को ही अपना मीत बना, मेरी माँ जो शेरों वाली है",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "तू अपना-आप उसी पे लुटा, मेरी माँ की छटा निराली है",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "मेरी माँ की छटा निराली है, हाँ मेरी माँ की छटा निराली है",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "गर मिल जाये मैया तुझको, तो मुझसे भी मिलवा देना",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "गर मिल जाये मैया तुझको, तो मुझको भी मिलवा देना",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "हो तेरी बात जो हो जाये माँ से, मेरी भी बात करा देना",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "हो मेरी भी बात करा देना, हाँ मेरी भी बात करा देना",
+          "language": "hi",
+          "reason": "Reviewed Hindi grammar and performed song context; devotional names/vocalise do not imply Marathi."
+        },
+        {
+          "source": "ओ मेरी, ओ मेरी, ओ मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हो असां जग नू मना के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "असां जग नू मना के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        },
+        {
+          "source": "हाय असां जग नू मना के की लैणा",
+          "language": "pa",
+          "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
+        }
+      ]
+    }
+  }
+}

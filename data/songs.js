@@ -498,7 +498,7 @@ window.BHAKTI_SONGS = [
     "title": "Ghanashyāma Sundarā",
     "credit": "Anuradha Paudwal & Ravindra Sathe",
     "languageTags": [
-      "Marathi"
+      "Hindi"
     ],
     "subjectTags": [
       "Kṛṣṇa"
@@ -2227,7 +2227,7 @@ window.BHAKTI_SONGS = [
     "title": "Ghanaśyāma Sundarā",
     "credit": "",
     "languageTags": [
-      "Marathi"
+      "Hindi"
     ],
     "subjectTags": [
       "Kṛṣṇa"

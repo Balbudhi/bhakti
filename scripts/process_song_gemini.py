@@ -115,8 +115,20 @@ def _bounded_update(path: Path, budget: float, request_id: str, *, block: bool =
             ledger["blocked"] = True
 
 
+
+def _remaining_timeout(timeout: float, deadline_at: float | None) -> float:
+    if deadline_at is None:
+        return timeout
+    if not math.isfinite(deadline_at):
+        raise RuntimeError('invalid absolute API deadline')
+    remaining = deadline_at - time.time()
+    if remaining <= 0:
+        raise RuntimeError('absolute API deadline exceeded before dispatch')
+    return min(timeout, remaining)
+
+
 def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
-                  timeout: float) -> tuple[dict[str, Any], tuple[Path, float, str]]:
+                  timeout: float, deadline_at: float | None = None) -> tuple[dict[str, Any], tuple[Path, float, str]]:
     """Opt-in synchronous 3.7 run with prepaid reservations and hard deadlines.
 
     BHAKTI_API_RUN_LEDGER and BHAKTI_API_RUN_BUDGET_USD enable this path.
@@ -156,6 +168,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
     artifacts.mkdir(mode=0o700, exist_ok=True)
     response_path = artifacts / (request_id + ".response.json")
     with _locked_run_ledger(path, budget) as ledger:
+        _remaining_timeout(timeout, deadline_at)
         if ledger.get("blocked"):
             raise RuntimeError("bounded API run is blocked; review saved evidence before another dispatch")
         committed = sum(row.get("reported_cost_usd", row["reservation_usd"]) for row in ledger["requests"])
@@ -176,11 +189,12 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
         with _locked_run_ledger(path, budget) as ledger:
             if ledger.get("blocked") or str(path) in _ABORTED_RUNS:
                 raise RuntimeError("bounded API run blocked before dispatch")
+            job['timeout'] = _remaining_timeout(timeout, deadline_at)
             worker = subprocess.Popen([sys.executable, "-c", _BOUNDED_HTTP_WORKER],
                                       stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             row = next(item for item in ledger["requests"] if item["id"] == request_id)
             row.update(status="dispatched", worker_pid=worker.pid)
-        stdout, _stderr = worker.communicate(input=json.dumps(job).encode(), timeout=timeout)
+        stdout, _stderr = worker.communicate(input=json.dumps(job).encode(), timeout=_remaining_timeout(timeout, deadline_at))
         if worker.returncode:
             raise RuntimeError("bounded HTTP worker failed")
         status = json.loads(stdout)["http_status"]
@@ -210,6 +224,9 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
                         error="hard wall deadline exceeded; upstream outcome and charge unknown")
         raise RuntimeError("bounded API hard wall deadline exceeded; reservation retained, run blocked") from exc
     except Exception as exc:
+        if worker is not None and worker.poll() is None:
+            worker.kill()
+            worker.communicate()
         _bounded_update(path, budget, request_id, block=True, status="invalid-response",
                         elapsed_seconds=round(time.monotonic() - started, 3), error=type(exc).__name__)
         raise RuntimeError("bounded API response invalid; evidence retained and run blocked") from exc
@@ -447,6 +464,7 @@ def call(
     reasoning_effort: str | None = None,
     max_completion_tokens: int | None = None,
     max_attempts: int = 6,
+    deadline_at: float | None = None,
 ) -> dict[str, Any]:
     provider = provider_name()
     if provider == "together" and audio is not None:
@@ -497,8 +515,14 @@ def call(
     if os.environ.get("BHAKTI_API_RUN_LEDGER"):
         with _API_SLOTS:
             _wait_for_api_start()
-            result, bounded_context = _bounded_call(payload, api_key, audio, timeout)
+            effective_timeout = _remaining_timeout(timeout, deadline_at)
+            if deadline_at is None:
+                result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout)
+            else:
+                result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout, deadline_at=deadline_at)
     elif provider == "openrouter" and effective_model.endswith(":batch"):
+        if deadline_at is not None:
+            raise RuntimeError('absolute API deadline requires synchronous transport, not batch polling')
         with _BATCH_SLOTS:
             _wait_for_api_start()
             result = call_batch(payload, api_key, timeout=timeout)
@@ -518,7 +542,7 @@ def call(
         try:
             with _API_SLOTS:
                 _wait_for_api_start()
-                with urllib.request.urlopen(request, timeout=timeout) as response:
+                with urllib.request.urlopen(request, timeout=_remaining_timeout(timeout, deadline_at)) as response:
                     result = json.loads(response.read().decode("utf-8"))
             break
         except urllib.error.HTTPError as exc:
@@ -531,7 +555,10 @@ def call(
                     retry_after = float(exc.headers.get("Retry-After", 0) or 0)
                 except (TypeError, ValueError):
                     pass
-                time.sleep(max(retry_after, min(32, 2 ** (attempt + 1))))
+                wait_seconds = max(retry_after, min(32, 2 ** (attempt + 1)))
+                if deadline_at is not None and _remaining_timeout(wait_seconds, deadline_at) < wait_seconds:
+                    raise RuntimeError('absolute API deadline would expire during retry wait') from exc
+                time.sleep(wait_seconds)
                 continue
             raise RuntimeError(f"{provider} HTTP {exc.code}: {detail}") from exc
     if result is None:

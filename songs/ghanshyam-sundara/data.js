@@ -7,7 +7,7 @@ window.SONG_META = {
   "singer": "",
   "composer": "",
   "languages": [
-    "Marathi"
+    "Hindi"
   ],
   "subjectTags": [
     "Kṛṣṇa"
@@ -32,7 +32,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "ghanshyam-sundara-short": {
     "source": "घनश्याम सुंदरा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "घनश्याम",
@@ -67,7 +67,7 @@ window.SONG_LINES = {
   },
   "ghanshyam-sundara-shridhara": {
     "source": "घनश्याम सुंदरा श्रीधरा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "घनश्याम",
@@ -114,7 +114,7 @@ window.SONG_LINES = {
   },
   "palke-ravi-ne-kholi": {
     "source": "पलकें रवि ने खोलीं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "पलकें",
@@ -173,7 +173,7 @@ window.SONG_LINES = {
   },
   "jaago-he-krishna-murari-giridhari": {
     "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "जागो",
@@ -244,7 +244,7 @@ window.SONG_LINES = {
   },
   "jaago-he-krishna-murari-jagaye-pawan": {
     "source": "जागो हे कृष्ण मुरारी, जगाये पवन ये मतवारी",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "जागो",
@@ -351,7 +351,7 @@ window.SONG_LINES = {
   },
   "female-aalaap": {
     "source": "आ...",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "आ...",
@@ -374,7 +374,7 @@ window.SONG_LINES = {
   },
   "leke-munivar-haath-me-maala": {
     "source": "लेके मुनिवर हाथ में माला",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "लेके",
@@ -445,7 +445,7 @@ window.SONG_LINES = {
   },
   "naam-tera-bhajate": {
     "source": "नाम तेरा भजते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "नाम",
@@ -492,7 +492,7 @@ window.SONG_LINES = {
   },
   "manan-tera-karte": {
     "source": "मनन तेरा करते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मनन",
@@ -539,7 +539,7 @@ window.SONG_LINES = {
   },
   "akhil-vishwa-ke-bhakta": {
     "source": "अखिल विश्व के भक्त तुम्हारा ध्यान सदा धरते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "अखिल",
@@ -646,7 +646,7 @@ window.SONG_LINES = {
   },
   "mandir-me-baj-uthi-ghantiya": {
     "source": "मंदिर में बज उठीं घंटियाँ, शंख भी ये कहते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मंदिर",
@@ -765,7 +765,7 @@ window.SONG_LINES = {
   },
   "bhor-bhayi-sab-panchhi-jaage": {
     "source": "भोर भई सब पंछी जागे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "भोर",
@@ -836,7 +836,7 @@ window.SONG_LINES = {
   },
   "yamuna-ki-jaagi-hai-lehar": {
     "source": "यमुना की जागी है लहर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "यमुना",
@@ -907,7 +907,7 @@ window.SONG_LINES = {
   },
   "mor-mukut-peetambar-dhari": {
     "source": "मोर मुकुट पीतांबर धारी",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मोर",
@@ -966,7 +966,7 @@ window.SONG_LINES = {
   },
   "jaago-daya-ke-saagar": {
     "source": "जागो दया के सागर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "जागो",
@@ -1025,7 +1025,7 @@ window.SONG_LINES = {
   },
   "madhur-raseeli-murali-ki-dhun": {
     "source": "मधुर रसीली मुरली की धुन की सुधा बरसाओ हम पर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मधुर",
@@ -1156,7 +1156,7 @@ window.SONG_LINES = {
   },
   "tum-jaago-to-bhagya-bhi-jaage": {
     "source": "तुम जागो तो भाग्य भी जागे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "तुम",
@@ -1239,7 +1239,7 @@ window.SONG_LINES = {
   },
   "meera-ke-giridhar": {
     "source": "मीरा के गिरिधर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मीरा",
@@ -1286,7 +1286,7 @@ window.SONG_LINES = {
   },
   "saaton-hi-sur-shehnai-ke-kahte": {
     "source": "सातों ही सुर शहनाई के कहते",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "सातों",
@@ -1369,7 +1369,7 @@ window.SONG_LINES = {
   },
   "utho-hey-bansidhar": {
     "source": "उठो हे बंसीधर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "उठो",

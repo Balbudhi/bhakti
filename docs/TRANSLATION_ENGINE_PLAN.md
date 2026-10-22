@@ -212,3 +212,35 @@ use a precise short phrase and meaningful gloss. Do not concatenate every
 dictionary sense. No named Joycean/portmanteau engine was found in the inspected
 Vedanta, Prakriya or Anvaya design files. Such handling remains a contextual
 editorial procedure to qualify, not an implemented generator of compounds.
+
+## Bounded semantic repair implementation
+
+`bhakti_semantic_repair.py` now connects the production `run_one` caller to typed
+independent-review feedback. A gloss-sense or grammatical-frame defect rebuilds
+the affected word map before deriving English again; an English-only defect
+keeps the accepted glosses. The assembled result receives another independent
+review, including referenced distant source, gloss and English context. At most
+two repair rounds are allowed. Missing source evidence and locked-owner conflicts
+remain holds; the implementation does not clear adverse review flags.
+
+Repair dispatch requires `BHAKTI_API_RUN_LEDGER` and a positive
+`BHAKTI_API_RUN_BUDGET_USD`. `--semantic-repair-seconds` defaults to 600 seconds
+for the semantic run; `--semantic-repair-rounds` accepts 0–2. Absolute deadlines
+survive resume and are checked after the shared scheduler and immediately before
+the bounded worker dispatch. A restart cannot reset spent rounds or money. Use
+one active process per song; overlapping independent launches are unsupported.
+
+Exact compatible existing gloss/English artifacts are reused. Historical English
+without recording/order context is retained as a draft for fresh review instead
+of being regenerated. Adopted candidates persist before the first gloss checkpoint
+so interruption also preserves that saving. Acceptance binds the performed order,
+actual audio hashes, trim evidence and exact semantic pair. Generation and
+generate-only hydration both require that accepted pair for repair-managed songs.
+Owner-supplied English remains exact at every acceptance and publication boundary.
+
+Independent review and 33 semantic plus 15 local transport tests cover these
+orchestration guarantees. They do not qualify linguistic accuracy: a bounded run
+on real held cases, followed by source-first editorial review, is still required.
+Production runs use the committed source; unrelated unreviewed local pipeline
+edits are excluded. Exact-response replay wrappers must forward optional
+`deadline_at` to the bounded transport.

@@ -7,6 +7,7 @@ window.SONG_META = {
   "singer": "Suresh Ji",
   "composer": "",
   "languages": [
+    "Punjabi",
     "Hindi"
   ],
   "subjectTags": [
@@ -312,7 +313,7 @@ window.SONG_LINES = {
   },
   "jaikara-intro": {
     "source": "जयकारा मेरी शेराँवाली मैया जी दा, बोल सच्चे दरबार की जय!",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "जयकारा",
@@ -455,7 +456,7 @@ window.SONG_LINES = {
   },
   "refrain-1": {
     "source": "मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "मेरी",
@@ -610,7 +611,7 @@ window.SONG_LINES = {
   },
   "refrain-1-var": {
     "source": "ओ मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -777,7 +778,7 @@ window.SONG_LINES = {
   },
   "refrain-2": {
     "source": "ओ मेरे मन विच मैया वस जाये, असां जग नू वसा के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -956,7 +957,7 @@ window.SONG_LINES = {
   },
   "refrain-2-chorus": {
     "source": "मेरे मन विच मैया वस जाये, असां जग नू वसा के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "मेरे",
@@ -1386,7 +1387,7 @@ window.SONG_LINES = {
   },
   "v1-l1": {
     "source": "मेरी माँ जगदम्बे दे द्वारे जेहड़ा भुल के भी इक वारी आ जांदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "मेरी",
@@ -1553,7 +1554,7 @@ window.SONG_LINES = {
   },
   "v1-l2": {
     "source": "ओदे ग़म मिट जांदे ने सारे, ओ जग विच सब कुछ पा जांदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओदे",
@@ -1720,7 +1721,7 @@ window.SONG_LINES = {
   },
   "v1-l2-rep": {
     "source": "ओ जग विच सब कुछ पा जांदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -1815,7 +1816,7 @@ window.SONG_LINES = {
   },
   "v1-l3": {
     "source": "जेहड़ा दिल 'च वसा के मैया नू ओदे प्रेम दी जोत जगा लैंदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "जेहड़ा",
@@ -1982,7 +1983,7 @@ window.SONG_LINES = {
   },
   "v1-l4": {
     "source": "ओ रह के मस्ती विच दिन-रात सदा, दुनिया तों किनारा पा लैंदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -2137,7 +2138,7 @@ window.SONG_LINES = {
   },
   "v1-l4-rep": {
     "source": "ओ दुनिया तों किनारा पा लैंदा, दुनिया तों किनारा पा लैंदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -2280,7 +2281,7 @@ window.SONG_LINES = {
   },
   "v2-l1": {
     "source": "सारे जग दियाँ खुशियाँ इक पासे, मेरी माँ दा द्वारा इक पासे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "सारे",
@@ -2435,7 +2436,7 @@ window.SONG_LINES = {
   },
   "v2-l2": {
     "source": "दुनिया दे नज़ारे इक पासे, मेरी माँ दा नज़ारा इक पासे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "दुनिया",
@@ -2578,7 +2579,7 @@ window.SONG_LINES = {
   },
   "v2-l2-rep": {
     "source": "ओ मेरी माँ दा नज़ारा इक पासे, मेरी माँ दा नज़ारा इक पासे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -2745,7 +2746,7 @@ window.SONG_LINES = {
   },
   "v2-l3": {
     "source": "ओ सारे जग दा चानण इक पासे, ज्योति उजियारा इक पासे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -2888,7 +2889,7 @@ window.SONG_LINES = {
   },
   "v2-l3-ch": {
     "source": "सारे जग दा चानण इक पासे, ओ ज्योति उजियारा इक पासे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "सारे",
@@ -3031,7 +3032,7 @@ window.SONG_LINES = {
   },
   "v2-l4": {
     "source": "ओ एह घोर गहिर समुंदर इक पासे, मेरे दिल दा किनारा इक पासे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -3198,7 +3199,7 @@ window.SONG_LINES = {
   },
   "v2-l4-rep": {
     "source": "ओ मेरे दिल दा किनारा इक पासे,",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -3293,7 +3294,7 @@ window.SONG_LINES = {
   },
   "v3-l1": {
     "source": "एह सिर है अमानत मैया दी, थाँ-थाँ ते झुकाया नहीं जांदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "एह",
@@ -3436,7 +3437,7 @@ window.SONG_LINES = {
   },
   "v3-l2": {
     "source": "एह दिल है अमानत मैया दी, थाँ-थाँ ते लगाया नहीं जांदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "एह",
@@ -3579,7 +3580,7 @@ window.SONG_LINES = {
   },
   "v3-l2-rep": {
     "source": "थाँ-थाँ ते लगाया नहीं जांदा,",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "थाँ-थाँ",
@@ -3650,7 +3651,7 @@ window.SONG_LINES = {
   },
   "v3-l3": {
     "source": "असी कीते कौल निभावांगे, असी नदियाँ चीर के आवांगे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "असी",
@@ -3769,7 +3770,7 @@ window.SONG_LINES = {
   },
   "v3-l3-ch": {
     "source": "हाय असी कीते कौल निभावांगे, असी नदियाँ चीर के आवांगे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हाय",
@@ -3900,7 +3901,7 @@ window.SONG_LINES = {
   },
   "v3-l4": {
     "source": "असी अपनी माँ नू मनावांगे, सातों जगत मनाया नहीं जांदा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "असी",
@@ -4031,7 +4032,7 @@ window.SONG_LINES = {
   },
   "v3-l4-rep": {
     "source": "सातों जगत मनाया नहीं जांदा,",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "सातों",
@@ -4102,7 +4103,7 @@ window.SONG_LINES = {
   },
   "v4-l1": {
     "source": "तू जग रुसदा ए तां रुसदा रवे, असां माँ नू अपना बनाना ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "तू",
@@ -4269,7 +4270,7 @@ window.SONG_LINES = {
   },
   "v4-l1-ch": {
     "source": "जग रुसदा ए ते रुसदा रवे, असां माँ नू अपना बनाना ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "जग",
@@ -4424,7 +4425,7 @@ window.SONG_LINES = {
   },
   "v4-l2": {
     "source": "कोई कुछ कहंदा ए कहंदा रवे, असां अपनी माँ नू मनाना ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "कोई",
@@ -4579,7 +4580,7 @@ window.SONG_LINES = {
   },
   "v4-l2-rep": {
     "source": "हो असां अपनी माँ नू मनाना ए, असां अपनी माँ नू मनाना ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हो",
@@ -4746,7 +4747,7 @@ window.SONG_LINES = {
   },
   "v4-l3": {
     "source": "हो तेरे नां विच रह के मस्त सदा, तेरे नां विच नचना-गाना ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हो",
@@ -4913,7 +4914,7 @@ window.SONG_LINES = {
   },
   "v4-l3-ch": {
     "source": "तेरे नां विच रह के मस्त सदा, माँ तेरे नां विच गाना ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "तेरे",
@@ -5080,7 +5081,7 @@ window.SONG_LINES = {
   },
   "v4-l4": {
     "source": "इस दुनिया नू असां दिल तों भुला के, इस दिल विच माँ नू वसाना ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "इस",
@@ -5271,7 +5272,7 @@ window.SONG_LINES = {
   },
   "v4-l4-rep": {
     "source": "हो इस दिल विच माँ नू वसाना ए,",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हो",
@@ -5378,7 +5379,7 @@ window.SONG_LINES = {
   },
   "v5-l1": {
     "source": "इस प्रेम दा पाना सौखा नहीं, जिंद तली ते धरनी पैंदी ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "इस",
@@ -5533,7 +5534,7 @@ window.SONG_LINES = {
   },
   "v5-l1-ch": {
     "source": "इस प्रेम दा पाना सौखा नहीं, जिंद तली ते धरनी पैंदी ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "इस",
@@ -5688,7 +5689,7 @@ window.SONG_LINES = {
   },
   "v5-l2": {
     "source": "हो घुट ज़हरां दे पीने पैंदे ने, गल सबरां दी सहनी पैंदी ए",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हो",
@@ -5855,7 +5856,7 @@ window.SONG_LINES = {
   },
   "v5-l2-rep": {
     "source": "हो गल सबरां दी सहनी पैंदी ए,",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हो",
@@ -5950,7 +5951,7 @@ window.SONG_LINES = {
   },
   "v5-l3": {
     "source": "ओहनां की इस दुनिया तों लैणा, जेहदा मैया ते ऐतबार होवे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओहनां",
@@ -6093,7 +6094,7 @@ window.SONG_LINES = {
   },
   "v5-l3-ch": {
     "source": "ओहनां की इस दुनिया तों लैणा, जेहदा मैया ते ऐतबार होवे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओहनां",
@@ -6236,7 +6237,7 @@ window.SONG_LINES = {
   },
   "v5-l4": {
     "source": "ओहनू किसे चीज़ दी कमी नहीं, माँ दे चरणां विच जेहदा प्यार होवे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओहनू",
@@ -6403,7 +6404,7 @@ window.SONG_LINES = {
   },
   "v5-l4-rep": {
     "source": "हो माँ दे चरणां विच जेहदा प्यार होवे, माँ दे चरणां विच जेहदा प्यार होवे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हो",
@@ -7822,7 +7823,7 @@ window.SONG_LINES = {
   },
   "refrain-triple-o": {
     "source": "ओ मेरी, ओ मेरी, ओ मेरी माँ जगदम्बे मन जाये, असां जग नू मना के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "ओ",
@@ -8037,7 +8038,7 @@ window.SONG_LINES = {
   },
   "outro-loop-ho": {
     "source": "हो असां जग नू मना के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हो",
@@ -8144,7 +8145,7 @@ window.SONG_LINES = {
   },
   "outro-loop-plain": {
     "source": "असां जग नू मना के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "असां",
@@ -8239,7 +8240,7 @@ window.SONG_LINES = {
   },
   "outro-loop-hay": {
     "source": "हाय असां जग नू मना के की लैणा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "हाय",
@@ -8346,7 +8347,7 @@ window.SONG_LINES = {
   },
   "jaikara-outro": {
     "source": "जयकारा मेरी शेराँवाली मैया जी दा, बोल सच्चे दरबार की जय!",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "pa",
     "sourceWords": [
       {
         "text": "जयकारा",

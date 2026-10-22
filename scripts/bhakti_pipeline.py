@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import base64
 import concurrent.futures
+import copy
 import difflib
 import hashlib
 import json
@@ -34,6 +35,7 @@ from typing import Any
 import process_song_gemini as gemini
 import gloss_policy
 import bhakti_translation_policy
+import bhakti_semantic_repair
 import editorial_baselines
 from display_word_map import clean_display_word_map
 import naming
@@ -50,7 +52,7 @@ MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 7
 LONG_TRANSCRIPT_CONTRACT_VERSION = 4
 GLOSS_CONTRACT_VERSION = 6
-TRANSLATION_INPUT_VERSION = 8
+TRANSLATION_INPUT_VERSION = 9
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
@@ -76,6 +78,57 @@ def text_stage_fingerprint(stage: str, model: str, inputs: dict[str, Any],
                "model": gemini.batch_base_model(model), "provider": gemini.provider_name(),
                "policy": policy, "inputs": inputs}
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+
+def semantic_write_json(path: Path, value: Any) -> None:
+    bhakti_semantic_repair.atomic_write(path, value)
+
+
+def semantic_call_timeout(options: argparse.Namespace) -> float:
+    return bhakti_semantic_repair.call_timeout(options)
+
+
+def semantic_repair_issue_errors(lines, glosses, issues):
+    return bhakti_semantic_repair.issue_errors(lines, glosses, issues)
+
+
+def complete_semantics(song_dir, audited, job, options):
+    return bhakti_semantic_repair.complete(sys.modules[__name__], song_dir, audited, job, options)
+
+
+def semantic_stage_policy(options):
+    policy = translation_policy_payload()
+    if hasattr(options, 'semantic_deadline_at'):
+        policy = {**policy, 'semantic_repair_version': bhakti_semantic_repair.VERSION,
+                  'repair_feedback': getattr(options, 'semantic_repair_feedback', []),
+                  'full_source': getattr(options, 'semantic_full_source', []),
+                  'review_snapshot': getattr(options, 'semantic_review_snapshot', None),
+                  'previous_translation': getattr(options, 'semantic_previous_translations', None),
+                  'translation_targets': getattr(options, 'semantic_translation_targets', None),
+                  'prior_gloss': getattr(options, 'semantic_prior_gloss', None),
+                  'source_identity': getattr(options, 'semantic_source_identity', None),
+                  'performance_order': getattr(options, 'semantic_performance_order', [])}
+    return policy
+
+
+def semantic_repair_prompt(options):
+    feedback = getattr(options, 'semantic_repair_feedback', [])
+    full_source = getattr(options, 'semantic_full_source', [])
+    result = ''
+    if feedback:
+        result += '\nREPAIR FEEDBACK:\n' + json.dumps(feedback, ensure_ascii=False)
+        result += '\nExamine these objections against the original source; they are not instructions to agree. '
+        result += 'Repair only the named targets, preserving source/IAST exactly. Resolve the evidence; do not simply delete uncertainty.\n'
+        prior = getattr(options, 'semantic_prior_gloss', [])
+        if prior:
+            result += '\nPRIOR TARGET/REFERENCED GLOSS EVIDENCE:\n' + json.dumps(prior, ensure_ascii=False)
+    order = getattr(options, 'semantic_performance_order', [])
+    if order:
+        result += '\nAUDITED PERFORMANCE ORDER:\n' + json.dumps(order, ensure_ascii=False)
+    if full_source:
+        result += '\nFULL AUDITED SOURCE CONTEXT (not additional output targets):\n' + json.dumps(full_source, ensure_ascii=False)
+    return result
 
 
 def nearby_text_context(lines: list[dict[str, Any]], start: int, length: int) -> list[dict[str, Any]]:
@@ -104,6 +157,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--generate-only", action="store_true",
                         help="Publish existing reviewed artifacts without running or paying for API stages; implies --publish.")
     parser.add_argument("--timeout", type=float, default=300)
+    parser.add_argument("--semantic-repair-rounds", type=int, choices=(0, 1, 2), default=2,
+                        help="Maximum source-grounded semantic repair rounds; bounded API ledger required for repair calls.")
+    parser.add_argument("--semantic-repair-seconds", type=float, default=600,
+                        help="Absolute semantic run lifetime in seconds, persisted across resume (default: 600).")
     parser.add_argument("--force", action="store_true", help="Rerun cached API stages for an existing intake.")
     parser.add_argument("--source-witness-audit", action="store_true",
                         help="Rerun only the transcript-audit-and-downstream stages with an identified textual witness; preserves the first audio transcript and listener master.")
@@ -2298,7 +2355,7 @@ def normalize_gloss_rows(lines: list[dict[str, Any]], rows: list[dict[str, Any]]
 def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
-    policy = translation_policy_payload()
+    policy = semantic_stage_policy(options)
     languages = audited["packet"].get("metadata", {}).get("languages")
     fingerprint = text_stage_fingerprint("gloss", options.model,
                                          {"lines": lines, "languages": languages}, policy)
@@ -2344,6 +2401,8 @@ TOKEN CANDIDATES (complete surface bindings, not preselected meanings):
 CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
 
+{semantic_repair_prompt(options)}
+
 TARGET LYRICS (return these IDs only):
 {json.dumps([{**line, "surface_tokens": [token for token in str(line.get("roman", "")).split()
                                              if any(character.isalnum() for character in token)]}
@@ -2368,9 +2427,11 @@ Return strict JSON:
         "required": ["id", "word_glosses", "semantic_frame", "grammar_note", "uncertainty", "sense_decisions"], "additionalProperties": False}}},
         "required": ["glosses"], "additionalProperties": False}
     if len(lines) <= 80:
-        result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=options.timeout,
+        result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=semantic_call_timeout(options),
+                                       deadline_at=getattr(options, "semantic_deadline_at", None),
                              response_schema=schema, schema_name="bhakti_word_glosses",
                              reasoning_effort="high", max_completion_tokens=65536)
+        semantic_write_json(target.parent / 'gloss-candidate.json', result)
         result["packet"]["glosses"] = normalize_gloss_rows(lines, result["packet"].get("glosses", []))
     else:
         batch_size = int(getattr(options, "gloss_batch_size", 40) or 40)
@@ -2405,7 +2466,8 @@ Return strict JSON:
                 target_ids = [line["id"] for line in target_lines]
                 context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
-                                       timeout=options.timeout, response_schema=schema,
+                                       timeout=semantic_call_timeout(options),
+                                       deadline_at=getattr(options, "semantic_deadline_at", None), response_schema=schema,
                                        schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
                                        max_completion_tokens=65536,
                                        max_attempts=getattr(options, "max_attempts", 6))
@@ -2493,8 +2555,8 @@ def translation_review_schema() -> dict[str, Any]:
             "agency_preserved": {"type": "boolean"}, "imagery_preserved": {"type": "boolean"},
             "all_meaning_accounted_for": {"type": "boolean"},
             "unsupported_additions": {"type": "array", "items": {"type": "string"}},
-            "material_choice": {"type": "string"}, "reason": {"type": "string"}},
-        "required": ["id", "passes", "human_review_recommended", "agency_preserved", "imagery_preserved",
+            "material_choice": {"type": "string"}, "reason": {"type": "string"}, "issues": bhakti_semantic_repair.issue_schema()},
+        "required": ["issues", "id", "passes", "human_review_recommended", "agency_preserved", "imagery_preserved",
                      "all_meaning_accounted_for", "unsupported_additions", "material_choice", "reason"],
         "additionalProperties": False}}}, "required": ["reviews"], "additionalProperties": False}
 
@@ -2506,7 +2568,7 @@ def independently_review_translations(
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
-    policy = translation_policy_payload()
+    policy = semantic_stage_policy(options)
     # Review outputs are verbose enough that 40-line packets can hit a model or
     # gateway output ceiling on long works. Twenty-line parent caches, issued as
     # ten-line requests below, keep evidence complete without a failed response.
@@ -2540,7 +2602,18 @@ Check that each English segment uses the same contextual sense as the gloss at i
 
 {bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages)}
 
+{bhakti_semantic_repair.REVIEW_GUIDANCE}
+
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
+
+AUDITED PERFORMANCE ORDER:
+{json.dumps(getattr(options, 'semantic_performance_order', []), ensure_ascii=False)}
+
+FULL SOURCE CONTEXT (context only; not additional output targets):
+{json.dumps(getattr(options, 'semantic_full_source', []), ensure_ascii=False)}
+
+REFERENCED DISTANT SEMANTIC CONTEXT (context only):
+{json.dumps(getattr(options, 'semantic_distant_context', []), ensure_ascii=False)}
 
 NEARBY SOURCE CONTEXT (context only; do not return these IDs):
 {json.dumps(source_context, ensure_ascii=False)}
@@ -2554,7 +2627,8 @@ LOCKED HUMAN TRANSLATION (or none):
         def request(target_evidence: list[dict[str, Any]], target_ids: list[str], label: str,
                     source_context: list[dict[str, Any]]) -> dict[str, Any]:
             response = gemini.call(options.model, gemini.key(), review_prompt(target_evidence, source_context), audio=None,
-                                   timeout=options.timeout, response_schema=translation_review_schema(),
+                                   timeout=semantic_call_timeout(options),
+                                       deadline_at=getattr(options, "semantic_deadline_at", None), response_schema=translation_review_schema(),
                                    schema_name="bhakti_translation_review", reasoning_effort="high",
                                    max_completion_tokens=32768)
             reviews = response["packet"].get("reviews", [])
@@ -2605,7 +2679,7 @@ LOCKED HUMAN TRANSLATION (or none):
     return reviews, packets
 
 
-def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
+def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace, *, candidate_only: bool = False) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "05-translation.json"
     lines = audited['packet'].get('verified_lines', [])
     gloss_rows = glosses['packet'].get('glosses', [])
@@ -2624,7 +2698,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     sense_errors = bhakti_translation_policy.sense_decision_errors(lines, gloss_rows, languages)
     if sense_errors:
         raise RuntimeError(f"translation input violates sense evidence contract: {sense_errors[:3]}")
-    policy = translation_policy_payload()
+    policy = semantic_stage_policy(options)
     fingerprint = text_stage_fingerprint("translation", options.model,
         {"lines": lines, "glosses": gloss_rows, "provided_translation": provided_translation,
          "languages": languages}, policy)
@@ -2666,6 +2740,8 @@ Use established English words. A rare but attested word is acceptable when it is
 Resolve ordinary polysemy from the supplied grammar/song context. When two defensible renderings differ materially in agency, metaphor, ambiguity, or poetic force, include both in `material_alternatives` and set `human_review_recommended=true` instead of silently optimizing for smoothness. This is not required for trivial synonyms. The completed segments must reconstruct `literal_english` exactly, including ordinary spacing and punctuation. Then report a fidelity check: whether agency/image and all source meaning were preserved, every unsupported addition (normally none), and a concise note naming any nonliteral idiom or necessary English function word.
 
 Do not flatten jāti, jñātī, jāta-pāta, and varṇa into an undifferentiated “caste.” Translate jāti/jñātī contextually as community, clan, kin group, or occupational group; translate varṇa as the broader fourfold social order or its rank/classification. When a source contrasts jāti and varṇa, make that distinction intelligible in English.
+
+{semantic_repair_prompt(options)}
 
 TARGET audited source lines (return these IDs only):
 {json.dumps(batch, ensure_ascii=False)}
@@ -2710,8 +2786,20 @@ Return strict JSON:
             "material_change": {"type": "boolean"}, "reason": {"type": "string"}},
             "required": ["id", "supplied", "chosen", "material_change", "reason"], "additionalProperties": False}},
     }, "required": ["translations", "comparison"], "additionalProperties": False}
-    if len(lines) <= 80:
-        result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=options.timeout,
+    selected = getattr(options, 'semantic_translation_targets', None)
+    candidate_lines = [line for line in lines if line['id'] in selected] if selected is not None else lines
+    if not candidate_lines:
+        raise RuntimeError('semantic repair has no translation targets')
+    cached_candidate = read_packet(target.parent / 'translation-candidate.json') if candidate_only else None
+    reuse_candidate = bool(cached_candidate and cached_candidate.get('fingerprint') == fingerprint
+                           and cached_candidate.get('input_contract_version') == TRANSLATION_INPUT_VERSION)
+    if reuse_candidate:
+        result = copy.deepcopy(cached_candidate)
+    elif candidate_only and getattr(options, 'semantic_seed_translation', None):
+        result = copy.deepcopy(options.semantic_seed_translation)
+    elif len(candidate_lines) <= 80:
+        result = gemini.call(options.model, gemini.key(), prompt_for(candidate_lines, []), audio=None, timeout=semantic_call_timeout(options),
+                                       deadline_at=getattr(options, "semantic_deadline_at", None),
                              response_schema=schema, schema_name="bhakti_literal_translation",
                              reasoning_effort="high", max_completion_tokens=65536)
     else:
@@ -2720,7 +2808,7 @@ Return strict JSON:
         # 20-line children. Long translation JSON contains indexed segments and
         # fidelity evidence; a 40-line response can be truncated even with the
         # provider ceiling set to 65,536 tokens.
-        batches = [lines[index:index + 40] for index in range(0, len(lines), 40)]
+        batches = [candidate_lines[index:index + 40] for index in range(0, len(candidate_lines), 40)]
         cache_dir = song_dir / ".transcription" / "pipeline" / "translation-batches"
         cache_dir.mkdir(parents=True, exist_ok=True)
 
@@ -2746,7 +2834,8 @@ Return strict JSON:
                 target_ids = [line["id"] for line in target_lines]
                 context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
-                                       timeout=options.timeout, response_schema=schema,
+                                       timeout=semantic_call_timeout(options),
+                                       deadline_at=getattr(options, "semantic_deadline_at", None), response_schema=schema,
                                        schema_name="bhakti_translation_batch", reasoning_effort="high",
                                        max_completion_tokens=65536)
                 returned = [row.get("id") for row in response["packet"].get("translations", [])]
@@ -2801,17 +2890,46 @@ Return strict JSON:
                                      for row in packet["response"]["packet"]["comparison"]],
                   }, "batch_responses": packets, "input_contract_version": TRANSLATION_INPUT_VERSION,
                   "resolved_model": options.model}
+    if selected is not None and not reuse_candidate:
+        returned = result['packet']['translations']
+        if [row.get('id') for row in returned] != [row['id'] for row in candidate_lines]:
+            raise RuntimeError('semantic repair translation target population changed')
+        replacements = {row['id']: row for row in returned}
+        old = {row['id']: row for row in getattr(options, 'semantic_previous_translations', [])}
+        if set(old) != {line['id'] for line in lines}:
+            raise RuntimeError('semantic repair previous translation population changed')
+        result['packet']['translations'] = [copy.deepcopy(replacements.get(line['id'], old[line['id']])) for line in lines]
+    for row in result['packet']['translations']:
+        row.pop('independent_review', None)
     result["input_contract_version"] = TRANSLATION_INPUT_VERSION
     result["fingerprint"] = fingerprint
+    candidate_path = target.parent / 'translation-candidate.json'
+    semantic_write_json(candidate_path, result)
+    bhakti_semantic_repair.assert_baseline(getattr(options, 'semantic_baseline', None), result['packet']['translations'])
+    review_options = copy.copy(options)
+    if hasattr(options, 'semantic_deadline_at'):
+        # All final review batches bind the complete assembled evidence. Their
+        # payload stays bounded: full source, targets, explicit distant refs.
+        review_options.semantic_review_snapshot = bhakti_semantic_repair.digest({
+            'lines': lines, 'glosses': gloss_rows, 'translations': result['packet']['translations']})
+        references = {ref['line_id'] for issue in getattr(options, 'semantic_repair_feedback', [])
+                      for ref in issue.get('references', [])}
+        review_options.semantic_distant_context = [
+            {'source': line, 'gloss': gloss_by_id[line['id']],
+             'draft': next(row for row in result['packet']['translations'] if row['id'] == line['id'])}
+            for line in lines if line['id'] in references]
     independent_reviews, review_packets = independently_review_translations(
-        song_dir, lines, gloss_rows, result["packet"]["translations"], provided_translation, options,
+        song_dir, lines, gloss_rows, result["packet"]["translations"], provided_translation, review_options,
         languages=languages
     )
     review_by_id = {row["id"]: row for row in independent_reviews}
     for row in result["packet"]["translations"]:
         row["independent_review"] = review_by_id.get(row["id"], {})
     result["review_responses"] = review_packets
+    semantic_write_json(candidate_path, result)
     errors = fresh_translation_contract_errors(lines, gloss_rows, result["packet"]["translations"])
+    if candidate_only:
+        return result
     if errors:
         raise RuntimeError(f"translation output violates fresh contract: {errors[:3]}")
     write_json(target, result)
@@ -3030,6 +3148,114 @@ def language_code(language: str) -> str:
     return {"Hindi": "hi", "Sanskrit": "sa", "Punjabi": "pa", "Kannada": "kn", "Marathi": "mr",
             "Awadhi": "awa", "Braj": "bra", "Rajasthani": "raj", "Tamil": "ta", "Telugu": "te",
             "Odia": "or", "Bengali": "bn", "Malayalam": "ml", "Persian": "fa", "Urdu": "ur"}.get(language, "")
+
+
+def resolve_reviewed_languages(
+    slug: str, audited_lines: list[dict[str, Any]], performance_order: list[dict[str, Any]],
+    supplied_song_languages: list[str], *, root: Path,
+) -> dict[str, Any]:
+    """Resolve exact audited-source language evidence without guessing from script.
+
+    The registry pins unique performed source_text strings, before display cleanup.
+    Unperformed definitions retain annotations but cannot supply performed evidence.
+    This function validates everything before returning; it never mutates inputs.
+    """
+    def unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError(f"duplicate language registry key: {key}")
+            result[key] = value
+        return result
+
+    def known_language(value: Any) -> tuple[str, str]:
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("reviewed language must be a nonempty language name or code")
+        name = normalized_language(value)
+        code = language_code(name)
+        if not code:
+            raise ValueError(f"unrecognized reviewed language: {value!r}")
+        return name, code
+
+    path = Path(root) / "data" / "song_language_overrides.json"
+    try:
+        registry = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_object)
+    except FileNotFoundError:
+        registry = {"version": 1, "songs": {}}
+    except (OSError, ValueError) as exc:
+        raise ValueError(f"invalid language registry: {exc}") from exc
+    if (not isinstance(registry, dict) or type(registry.get("version")) is not int
+            or registry["version"] != 1 or not isinstance(registry.get("songs"), dict)):
+        raise ValueError("invalid language registry structure")
+    records = {}
+    for registered_slug, record in registry["songs"].items():
+        if (not isinstance(registered_slug, str) or not registered_slug.strip()
+                or not isinstance(record, dict) or not isinstance(record.get("languages"), list)
+                or not record["languages"] or not isinstance(record.get("lines"), list)
+                or not isinstance(record.get("performedSourcesSha256"), str)
+                or not re.fullmatch(r"[0-9a-f]{64}", record["performedSourcesSha256"])):
+            raise ValueError(f"invalid language registry record: {registered_slug!r}")
+        languages = [known_language(value)[0] for value in record["languages"]]
+        if len(set(languages)) != len(languages):
+            raise ValueError(f"{registered_slug}: duplicate reviewed song languages")
+        assignments = {}
+        for item in record["lines"]:
+            if (not isinstance(item, dict) or not isinstance(item.get("source"), str)
+                    or not isinstance(item.get("reason"), str) or not item["reason"].strip()):
+                raise ValueError(f"{registered_slug}: invalid language source evidence")
+            name, code = known_language(item.get("language"))
+            if name not in languages:
+                raise ValueError(f"{registered_slug}: line language is outside reviewed song languages")
+            if item["source"] in assignments and assignments[item["source"]] != code:
+                raise ValueError(f"{registered_slug}: conflicting source language assignments")
+            assignments[item["source"]] = code
+        records[registered_slug] = (languages, assignments, record["performedSourcesSha256"])
+    if not isinstance(audited_lines, list) or not isinstance(performance_order, list):
+        raise ValueError("invalid audited lines or language performance order")
+    lines_by_id = {}
+    for line in audited_lines:
+        if (not isinstance(line, dict) or not isinstance(line.get("id"), str) or not line["id"]
+                or line["id"] in lines_by_id or not isinstance(line.get("source_text"), str)):
+            raise ValueError("invalid or duplicate audited language source line")
+        lines_by_id[line["id"]] = line
+    performed_sources = set()
+    for event in performance_order:
+        ref = event.get("ref", event.get("line_id")) if isinstance(event, dict) else None
+        if not isinstance(ref, str) or ref not in lines_by_id:
+            raise ValueError(f"invalid language performance reference: {ref!r}")
+        performed_sources.add(lines_by_id[ref]["source_text"])
+    assignments = {}
+    if slug in records:
+        languages, assignments, expected_digest = records[slug]
+        coverage = json.dumps(sorted(performed_sources), ensure_ascii=False, separators=(",", ":"))
+        if hashlib.sha256(coverage.encode("utf-8")).hexdigest() != expected_digest:
+            raise ValueError(f"{slug}: performed language source coverage changed; review required")
+        if performed_sources.difference(assignments):
+            raise ValueError(f"{slug}: reviewed language assignments do not cover every performed source")
+    else:
+        if (not isinstance(supplied_song_languages, list)
+                or any(not isinstance(value, str) for value in supplied_song_languages)):
+            raise ValueError("song languages must be a list of language names or codes")
+        languages = list(dict.fromkeys(normalized_language(value) for value in supplied_song_languages
+                                       if value.strip()))
+    by_line_id = {}
+    review_items = []
+    for line_id, line in lines_by_id.items():
+        explicit = (known_language(line["sourceLanguage"])
+                    if "sourceLanguage" in line and line["sourceLanguage"] != "" else None)
+        if line["source_text"] in assignments:
+            code = assignments[line["source_text"]]
+        elif explicit is not None:
+            name, code = explicit
+            if name not in languages:
+                raise ValueError(f"{slug}:{line_id}: explicit line language is outside song languages")
+        else:
+            code = language_code(languages[0]) if len(languages) == 1 else ""
+            if not code:
+                review_items.append({"id": line_id,
+                                     "reason": "No reviewed per-line language; song languages are multiple or undetermined."})
+        by_line_id[line_id] = code
+    return {"song_languages": languages, "by_line_id": by_line_id, "review_items": review_items}
 
 
 def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:
@@ -3330,6 +3556,7 @@ def reviewed_line_labels(job: dict[str, Any], lines: list[dict[str, Any]]) -> di
 
 
 def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
+    bhakti_semantic_repair.require_acceptance(sys.modules[__name__], song_dir / '.transcription/pipeline', glosses, translations, audited=audited)
     errors = publication_errors(audited, timing, glosses, translations)
     if errors:
         raise RuntimeError("publication blocked: " + "; ".join(errors))
@@ -3356,15 +3583,17 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     page_credit = str(job.get("pageCredit", "")).strip() or singer or credit
     subjects = tag_taxonomy.merge_subject_tags(job.get("subjectTags", []), lines)
     subtitle = str(job.get("subtitle", "")).strip() or (subjects[0] if subjects else "")
+    language_resolution = resolve_reviewed_languages(
+        song_dir.name, lines, timing["sequence"],
+        job.get("languages") or meta_from_model.get("languages", []), root=ROOT,
+    )
+    languages = language_resolution["song_languages"]
     aliases = naming.search_aliases(
         [job["slug"].replace("-", " "), title, subtitle, credit, page_credit,
-         writer, translator, singer, vocalist, composer, ensemble, *subjects, *(job.get("languages") or meta_from_model.get("languages", []))],
+         writer, translator, singer, vocalist, composer, ensemble, *subjects, *languages],
         [*naming.person_search_aliases((job.get("writer"), job.get("translator"), job.get("singer"), job.get("vocalist"), job.get("composer"), writer, translator, singer, vocalist, composer)),
          *(job.get("searchAliases") or [])],
     )
-    languages = list(dict.fromkeys(normalized_language(str(language))
-                                   for language in (job.get("languages") or meta_from_model.get("languages", []))
-                                   if str(language).strip()))
     meta = {"title": title, "subtitle": subtitle, "credit": credit, "pageCredit": page_credit,
             "writer": writer, "writerAttribution": writer_attribution,
             "translator": translator, "translatorAttribution": translator_attribution,
@@ -3437,7 +3666,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             english_parts = [dict(part) for part in english_parts]
             english_parts[-1]["text"] = strip_terminal_verse_marker_english(english_parts[-1].get("text"))
         english_fallback = strip_terminal_verse_marker_english(row.get("literal_english", ""))
-        line_data[line_id] = {"source": display_source, "sourceLanguage": language_code((meta["languages"] or [""])[0]),
+        line_data[line_id] = {"source": display_source, "sourceLanguage": language_resolution["by_line_id"][line_id],
                               "sourceWords": source_words,
                               "roman": display_roman_without_verse_marker(display_roman, source), "english": segment_english(english_parts, english_fallback),
                               "words": words,
@@ -3471,6 +3700,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_TIMINGS = " + json.dumps(times, ensure_ascii=False, indent=2) + ";\n")
     editorial_baselines.assert_english_preserved(song_dir.name, line_data, root=ROOT)
+    write_json(song_dir / ".transcription" / "language-review.json", language_resolution)
     (song_dir / "data.js").write_text(data, encoding="utf-8")
     (song_dir / "index.html").write_text(page_html(meta, song_dir.name), encoding="utf-8")
     if write_catalogue_after:
@@ -3548,6 +3778,9 @@ def language_hold_packet(song_dir: Path, source: dict[str, Any], raw: dict[str, 
 
 def hydrate_pipeline_artifacts(packet_dir: Path) -> None:
     summary = read_packet(packet_dir / "song-packet.json") or {}
+    glosses = read_packet(packet_dir / '04-glosses.json') or summary.get('glosses')
+    translations = read_packet(packet_dir / '05-translation.json') or summary.get('translation')
+    bhakti_semantic_repair.require_acceptance(sys.modules[__name__], packet_dir, glosses, translations, summary)
     for filename, key in (
         ("01-transcript.json", "transcript"),
         ("02-transcript-audit.json", "audit"),
@@ -3609,8 +3842,7 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
         for filename in ("04-glosses.json", "05-translation.json"):
             (packet_dir / filename).unlink(missing_ok=True)
     timing = align(song_dir, audited, audio, options)
-    glosses = gloss(song_dir, audited, options)
-    translations = translate(song_dir, audited, glosses, job, options)
+    glosses, translations = complete_semantics(song_dir, audited, job, options)
     errors = publication_errors(audited, timing, glosses, translations)
     status = "blocked" if errors else "review-required"
     packet = {"source": source, "model_requested": options.model, "created_at": time.time(), "transcript": raw,
@@ -3656,13 +3888,13 @@ def main() -> int:
                 continue
             song_dir = ROOT / "songs" / job["slug"]
             packet_dir = song_dir / ".transcription" / "pipeline"
-            hydrate_pipeline_artifacts(packet_dir)
-            source = read_packet(song_dir / ".transcription" / "source.json") or {}
-            audited = read_packet(packet_dir / "02-transcript-audit.json")
-            timing = read_packet(packet_dir / "03-timing.json")
-            glosses = read_packet(packet_dir / "04-glosses.json")
-            translations = read_packet(packet_dir / "05-translation.json")
             try:
+                hydrate_pipeline_artifacts(packet_dir)
+                source = read_packet(song_dir / ".transcription" / "source.json") or {}
+                audited = read_packet(packet_dir / "02-transcript-audit.json")
+                timing = read_packet(packet_dir / "03-timing.json")
+                glosses = read_packet(packet_dir / "04-glosses.json")
+                translations = read_packet(packet_dir / "05-translation.json")
                 if not all((audited, timing, glosses, translations)):
                     raise RuntimeError(f"missing pipeline artifact for {job['slug']}")
                 generate(song_dir, job, source, audited, timing, glosses, translations, write_catalogue_after=False)
