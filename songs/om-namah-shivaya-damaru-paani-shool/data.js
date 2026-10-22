@@ -39,7 +39,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "om-namah-shivaya-solo": {
-    "source": "ॐ नमः शिवाय ॐ नमः शिवाय",
+    "source": "ॐ नमः शिवाय",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -59,47 +59,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "ॐ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "नमः",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "शिवाय",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "oṁ namaḥ śivāya oṁ namaḥ śivāya",
-    "english": "{0:Om, }{1,2:salutations to Shiva; }{3:Om, }{4,5:salutations to Shiva.}",
+    "roman": "oṁ namaḥ śivāya",
+    "english": "{0:Om, }{1,2:salutations to Shiva.}",
     "words": [
-      {
-        "roman": "oṁ",
-        "gloss": "sacred primordial syllable",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namaḥ",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "śivāya",
-        "gloss": "to Śiva (the auspicious one)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "oṁ",
         "gloss": "sacred primordial syllable",
@@ -324,7 +288,7 @@ window.SONG_LINES = {
     "grammarNote": "Bahuvrīhi compound epithets 'ḍamarū pāṇi' and 'śūla pāṇi' followed by the vocative 'he naṭarājana' and sandhi-modified 'namo' (< namaḥ)."
   },
   "namo-namo-call-response": {
-    "source": "नमो नमो नमो नमो नमो नमो नमो नमो नमो नमो",
+    "source": "नमो नमो",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -338,107 +302,11 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "नमो",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "namo namo namo namo namo namo namo namo namo namo",
-    "english": "{0:Salutations, }{1:salutations, }{2:salutations, }{3:salutations, }{4:salutations, }{5:salutations, }{6:salutations, }{7:salutations, }{8:salutations, }{9:salutations.}",
+    "roman": "namo namo",
+    "english": "{0:Salutations, }{1:salutations.}",
     "words": [
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "namo",
-        "gloss": "salutations / bow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "namo",
         "gloss": "salutations / bow",
@@ -1755,7 +1623,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "om-namah-shivaya-solo",
     "section": "invocation",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "om-namah-shivaya-chorus-1",
@@ -1770,7 +1638,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "namo-namo-call-response",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "sheesh-gang-solo",
@@ -1780,7 +1648,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "namo-namo-call-response",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "damaru-pani-chorus",
@@ -1815,7 +1683,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "namo-namo-call-response",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "damaru-pani-chorus",
@@ -1850,7 +1718,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "namo-namo-call-response",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "damaru-pani-solo",
@@ -1860,7 +1728,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "namo-namo-call-response",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 5
   },
   {
     "ref": "damaru-pani-chorus",

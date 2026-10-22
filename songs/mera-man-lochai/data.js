@@ -181,7 +181,7 @@ window.SONG_LINES = {
     "grammarNote": "merā manu is masculine singular nominative; locai is a 3rd person singular present indicative verb; tāī is a postposition governing the compound/genitive phrase gur darasana."
   },
   "line-001": {
-    "source": "ਗੁਰ ਦਰਸਨ ਤਾਈ ਗੁਰ ਦਰਸਨ ਤਾਈ ॥",
+    "source": "ਗੁਰ ਦਰਸਨ ਤਾਈ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -201,47 +201,11 @@ window.SONG_LINES = {
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "ਗੁਰ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਦਰਸਨ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ਤਾਈ",
-        "wordIndices": [
-          5
-        ]
       }
     ],
-    "roman": "gur darasana tāī gur darasana tāī ॥",
-    "english": "{2:For }{1:the sight }{0:of the Guru, }{5:for }{4:the sight }{3:of the Guru.}",
+    "roman": "gur darasana tāī ॥",
+    "english": "{2:For }{1:the sight }{0:of the Guru.}",
     "words": [
-      {
-        "roman": "gur",
-        "gloss": "of the Guru; spiritual guide",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "darasana",
-        "gloss": "vision; blessed sight",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tāī",
-        "gloss": "for; towards",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "gur",
         "gloss": "of the Guru; spiritual guide",
@@ -3743,7 +3707,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "line-001",
     "section": "refrain",
-    "repeats": 2
+    "repeats": 4
   },
   {
     "ref": "line-000",

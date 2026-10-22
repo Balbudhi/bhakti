@@ -186,7 +186,7 @@ window.SONG_LINES = {
     "grammarNote": "nānaku has nominative singular -u. nāmu and padārathu are accusative singulars in apposition, both bearing masculine singular noun ending -u. māṅgai is 3rd person singular present indicative."
   },
   "nanak-mange-chant": {
-    "source": "ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ",
+    "source": "ਨਾਨਕੁ ਮਾਂਗੈ",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -200,85 +200,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          7
-        ]
       }
     ],
-    "roman": "Nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai",
-    "english": "{0:Nānak }{1:begs, }{2:Nānak }{3:begs, }{4:Nānak }{5:begs, }{6:Nānak }{7:begs}",
+    "roman": "Nānaku māṅgai",
+    "english": "{0:Nānak }{1:begs.}",
     "words": [
       {
         "roman": "Nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
         "gloss": "Nānak, the devotee-poet",
         "concept_key": "",
         "preserve_in_english": false
@@ -594,7 +522,7 @@ window.SONG_LINES = {
     "grammarNote": "simari simari is a repeated conjunctive participle, remembering again and again. tisu is the object, that One. samhāle is read in the first-person devotional context as I hold in remembrance."
   },
   "nanak-mange-closing": {
-    "source": "ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ॥",
+    "source": "ਨਾਨਕੁ ਮਾਂਗੈ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -608,181 +536,13 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          13
-        ]
-      },
-      {
-        "text": "ਨਾਨਕੁ",
-        "wordIndices": [
-          14
-        ]
-      },
-      {
-        "text": "ਮਾਂਗੈ",
-        "wordIndices": [
-          15
-        ]
       }
     ],
-    "roman": "Nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai ॥",
-    "english": "{0:Nānak }{1:begs, }{2:Nānak }{3:begs, }{4:Nānak }{5:begs, }{6:Nānak }{7:begs, }{8:Nānak }{9:begs, }{10:Nānak }{11:begs, }{12:Nānak }{13:begs, }{14:Nānak }{15:begs.}",
+    "roman": "Nānaku māṅgai ॥",
+    "english": "{0:Nānak }{1:begs.}",
     "words": [
       {
         "roman": "Nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "māṅgai",
-        "gloss": "begs; asks",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nānaku",
         "gloss": "Nānak, the devotee-poet",
         "concept_key": "",
         "preserve_in_english": false
@@ -813,7 +573,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "tera-kiya-meetha-laage",
@@ -828,7 +588,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "har-ka-naam-ridhai-nit-dhiaai",
@@ -853,7 +613,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "tera-kiya-meetha-laage",
@@ -868,7 +628,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "gur-merai-sang-sada-hai-naale",
@@ -893,7 +653,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "har-naam-padarath-nanak-mange",
@@ -913,7 +673,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "tera-kiya-meetha-laage",
@@ -938,7 +698,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "tera-kiya-meetha-laage",
@@ -953,7 +713,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-chant",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 4
   },
   {
     "ref": "har-naam-padarath-nanak-mange",
@@ -973,7 +733,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "nanak-mange-closing",
     "section": "closing",
-    "repeats": 1
+    "repeats": 8
   }
 ];
 

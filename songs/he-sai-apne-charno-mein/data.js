@@ -565,7 +565,7 @@ window.SONG_LINES = {
     "grammarNote": "Ke lie is a compound postposition of purpose/duration. Sahī is an indeclinable concessive particle used with hī."
   },
   "verse-1-line-3": {
-    "source": "तेरे चरणों में खिलने दे, तेरे चरणों में खिलने दे",
+    "source": "तेरे चरणों में खिलने दे",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -593,77 +593,17 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दे,",
+        "text": "दे",
         "wordIndices": [
           4
         ]
-      },
-      {
-        "text": "तेरे",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "चरणों",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "में",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "खिलने",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "दे",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "Tere caraṇõ mẽ khilne de, tere caraṇõ mẽ khilne de",
-    "english": "{3,4:Let us bloom }{0,1,2:at your feet, }{8,9:let us bloom }{5,6,7:at your feet}",
+    "roman": "Tere caraṇõ mẽ khilne de",
+    "english": "{3,4:Let us bloom }{0,1,2:at your feet.}",
     "words": [
       {
         "roman": "Tere",
-        "gloss": "your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "caraṇõ",
-        "gloss": "feet",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mẽ",
-        "gloss": "in; at",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "khilne",
-        "gloss": "blooming; blossoming",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "de,",
-        "gloss": "let; allow",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tere",
         "gloss": "your",
         "concept_key": "",
         "preserve_in_english": false
@@ -1432,7 +1372,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse-1-line-3",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "refrain-main",

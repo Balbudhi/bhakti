@@ -1351,7 +1351,7 @@ window.SONG_LINES = {
     "grammarNote": "Dar dar is reduplicated expressing distribution ('from door to door'); bhaṭakā and āyā are masculine singular perfective participles agreeing with maĩ; tērē dvārē is oblique locative; sahārē is locative masculine singular governed by postpositional sense."
   },
   "verse1-line1-chorus-rep": {
-    "source": "ज़िंदगी है मेरी अब तेरे ही सहारे ज़िंदगी है मेरी अब तेरे ही सहारे",
+    "source": "ज़िंदगी है मेरी अब तेरे ही सहारे",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1395,97 +1395,13 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "ज़िंदगी",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "है",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "मेरी",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "अब",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "तेरे",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "ही",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "सहारे",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "Zindagī hai mērī ab tērē hī sahārē zindagī hai mērī ab tērē hī sahārē",
-    "english": "{2:My }{0:life }{1:is }{3:now }{4,6:on your support }{5:alone; }{9:my }{7:life }{8:is }{10:now }{11,13:on your support }{12:alone}",
+    "roman": "Zindagī hai mērī ab tērē hī sahārē",
+    "english": "{2:My }{0:life }{1:is }{3:now }{4,6:on your support }{5:alone.}",
     "words": [
       {
         "roman": "Zindagī",
-        "gloss": "life",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hai",
-        "gloss": "is",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mērī",
-        "gloss": "my",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "ab",
-        "gloss": "now",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tērē",
-        "gloss": "your",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "hī",
-        "gloss": "alone / only",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sahārē",
-        "gloss": "on the support",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "zindagī",
         "gloss": "life",
         "concept_key": "",
         "preserve_in_english": false
@@ -2659,7 +2575,7 @@ window.SONG_LINES = {
     "grammarNote": "Relative-correlative construction: jō bhī... āyā (relative clause) followed by ergative main clause tūnē usakō... lauṭāyā; ā kē is conjunctive participle; nā is standard pre-verbal negation."
   },
   "verse2-line1-chorus-rep": {
-    "source": "कभी तूने उसको माँ खाली ना लौटाया कभी तूने उसको माँ खाली ना लौटाया",
+    "source": "कभी तूने उसको माँ खाली ना लौटाया",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -2703,97 +2619,13 @@ window.SONG_LINES = {
         "wordIndices": [
           6
         ]
-      },
-      {
-        "text": "कभी",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "तूने",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "उसको",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "माँ",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "खाली",
-        "wordIndices": [
-          11
-        ]
-      },
-      {
-        "text": "ना",
-        "wordIndices": [
-          12
-        ]
-      },
-      {
-        "text": "लौटाया",
-        "wordIndices": [
-          13
-        ]
       }
     ],
-    "roman": "Kabhī tūnē usakō mā̃ khālī nā lauṭāyā kabhī tūnē usakō mā̃ khālī nā lauṭāyā",
-    "english": "{0,5:Never }{1:have you }{2,6:turned them back }{4:empty-handed, }{3:Mother; }{7,12:never }{8:have you }{9,13:turned them back }{11:empty-handed, }{10:Mother}",
+    "roman": "Kabhī tūnē usakō mā̃ khālī nā lauṭāyā",
+    "english": "{0,5:Never }{1:have you }{2,6:turned them back }{4:empty-handed, }{3:Mother.}",
     "words": [
       {
         "roman": "Kabhī",
-        "gloss": "ever",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "tūnē",
-        "gloss": "you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "usakō",
-        "gloss": "him / that one",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mā̃",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "khālī",
-        "gloss": "empty-handed",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "nā",
-        "gloss": "not",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "lauṭāyā",
-        "gloss": "turned away / sent back",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kabhī",
         "gloss": "ever",
         "concept_key": "",
         "preserve_in_english": false
@@ -3763,7 +3595,7 @@ window.SONG_LINES = {
     "grammarNote": "Triple ornamental vocative pickup hō mujhē preceding the standard compound imperative clause."
   },
   "chant-jai-maa-lead1": {
-    "source": "जय जय जय जय जय माँ जय जय जय जय जय माँ",
+    "source": "जय जय जय जय जय माँ",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -3801,85 +3633,13 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "माँ",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "Jay jay jay jay jay mā̃ jay jay jay jay jay mā̃",
-    "english": "{0:Victory, }{1:victory, }{2:victory, }{3:victory, }{4:victory }{5:to the Mother! }{6:Victory, }{7:victory, }{8:victory, }{9:victory, }{10:victory }{11:to the Mother!}",
+    "roman": "Jay jay jay jay jay mā̃",
+    "english": "{0:Victory, }{1:victory, }{2:victory, }{3:victory, }{4:victory }{5:to the Mother!}",
     "words": [
       {
         "roman": "Jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mā̃",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
         "gloss": "victory / glory",
         "concept_key": "",
         "preserve_in_english": false
@@ -3919,7 +3679,7 @@ window.SONG_LINES = {
     "grammarNote": "Reduplicated victory noun jay acting as an acclamatory interjection addressing vocative mā̃."
   },
   "chant-jai-maa-chorus1": {
-    "source": "जय जय जय जय जय माँ जय जय जय जय जय माँ",
+    "source": "जय जय जय जय जय माँ",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -3957,85 +3717,13 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "जय",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "माँ",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "Jay jay jay jay jay mā̃ jay jay jay jay jay mā̃",
-    "english": "{0:Victory, }{1:victory, }{2:victory, }{3:victory, }{4:victory }{5:to the Mother! }{6:Victory, }{7:victory, }{8:victory, }{9:victory, }{10:victory }{11:to the Mother!}",
+    "roman": "Jay jay jay jay jay mā̃",
+    "english": "{0:Victory, }{1:victory, }{2:victory, }{3:victory, }{4:victory }{5:to the Mother!}",
     "words": [
       {
         "roman": "Jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
-        "gloss": "victory / glory",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mā̃",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "jay",
         "gloss": "victory / glory",
         "concept_key": "",
         "preserve_in_english": false
@@ -5815,7 +5503,7 @@ window.SONG_LINES = {
     "grammarNote": "Prefixed with vocative pickup hō mā̃ followed by the full compound sentence."
   },
   "verse4-line1-chorus-rep2": {
-    "source": "भक्ति का मुझे वर दो मैया भक्ति का मुझे वर दो मैया",
+    "source": "भक्ति का मुझे वर दो मैया",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -5853,85 +5541,13 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "भक्ति",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "का",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "मुझे",
-        "wordIndices": [
-          8
-        ]
-      },
-      {
-        "text": "वर",
-        "wordIndices": [
-          9
-        ]
-      },
-      {
-        "text": "दो",
-        "wordIndices": [
-          10
-        ]
-      },
-      {
-        "text": "मैया",
-        "wordIndices": [
-          11
-        ]
       }
     ],
-    "roman": "Bhakti kā mujhē var dō maiyā bhakti kā mujhē var dō maiyā",
-    "english": "{4:Grant }{2:me }{3:the boon }{1:of }{0:devotion, }{5:Mother; }{10:grant }{8:me }{9:the boon }{7:of }{6:devotion, }{11:Mother}",
+    "roman": "Bhakti kā mujhē var dō maiyā",
+    "english": "{4:Grant }{2:me }{3:the boon }{1:of }{0:devotion, }{5:Mother.}",
     "words": [
       {
         "roman": "Bhakti",
-        "gloss": "devotion / loving service",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "kā",
-        "gloss": "of",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mujhē",
-        "gloss": "to me",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "var",
-        "gloss": "boon / blessing",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "dō",
-        "gloss": "grant / give",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "maiyā",
-        "gloss": "Mother",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "bhakti",
         "gloss": "devotion / loving service",
         "concept_key": "",
         "preserve_in_english": false
@@ -7045,7 +6661,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse1-line1-chorus-rep",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse1-line1-lead-ho",
@@ -7105,7 +6721,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse2-line1-chorus-rep",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse2-line1-lead-rep",
@@ -7160,12 +6776,12 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chant-jai-maa-lead1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chant-jai-maa-chorus1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chant-jai-maa-lead2",
@@ -7175,7 +6791,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chant-jai-maa-chorus1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse3-line1-lead",
@@ -7285,7 +6901,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chant-jai-maa-chorus1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "chant-jai-maa-lead-ho",
@@ -7295,7 +6911,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "chant-jai-maa-chorus1",
     "section": "refrain",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse4-line1-lead",
@@ -7315,7 +6931,7 @@ window.SONG_SEQUENCE = [
   {
     "ref": "verse4-line1-chorus-rep2",
     "section": "verse",
-    "repeats": 1
+    "repeats": 2
   },
   {
     "ref": "verse4-line2-lead",
