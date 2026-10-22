@@ -1170,6 +1170,18 @@
         "sha256": "2e050a19ad203c0d2db6217cb22c26cca64cf9c244357c7fef0fde0be85e4a08"
       }
     ],
+    "koodarai-vellum-seer-govinda": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koodarai-vellum-seer-govinda.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "db79601abe91a2e4f42fbcc2ce5d01c74de1fa0cce15bfa1e15c1dda2a7fb10a"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koodarai-vellum-seer-govinda.m4a",
+        "type": "audio/mp4",
+        "sha256": "be3730eaee5136251569308d62d176e91c07c7ef4f5c3e5c101c83abae34fd1c"
+      }
+    ],
     "kya-tan-majhata": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kya-tan-majhata.webm",
@@ -2331,6 +2343,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thoda-dhyan-laga.m4a",
         "type": "audio/mp4",
         "sha256": "3a4f04153df2a9f165f25600d8f85b85841a1dec9fd90a007c4618cd1869fd9c"
+      }
+    ],
+    "thodudaiya-seviyan": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thodudaiya-seviyan.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "fd1401bde2f7b4c10d89d2951926ea14213a9b287d186c3c4568729b38b3ae38"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thodudaiya-seviyan.m4a",
+        "type": "audio/mp4",
+        "sha256": "a28d7116b79d173091e5664a058f7270169f7ed15c3767ab0700399d9110c340"
       }
     ],
     "tu-thakur-tum-peh-ardas": [

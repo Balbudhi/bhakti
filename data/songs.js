@@ -8051,5 +8051,81 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śiva",
     "queueNumber": 201
+  },
+  {
+    "slug": "thodudaiya-seviyan",
+    "queueId": "67621b38",
+    "title": "Toṭuṭaiya Seviyan",
+    "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Totutaiya Seviyan",
+      "Shiva",
+      "Siva",
+      "Tirujnyanasambandar · Dharmapuram P. Swaminathan",
+      "Tirujnanasambandar · Dharmapuram P. Swaminathan",
+      "Tirujnyanasambandar",
+      "Tirujnanasambandar",
+      "Thodudaiya Seviyan Dharmapuram P Swaminathan"
+    ],
+    "writer": "Tirujñānasambandar",
+    "singer": "Dharmapuram P. Swaminathan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thodudaiya-seviyan.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thodudaiya-seviyan.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śiva",
+    "queueNumber": 259
+  },
+  {
+    "slug": "koodarai-vellum-seer-govinda",
+    "queueId": "416a39b1",
+    "title": "Kūḍārai Vellum Sīr Gōvindā",
+    "credit": "Āṇḍāḷ · M. L. Vasanthakumari",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa",
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Kudarai Vellum Sir Gōvinda",
+      "Kudarai Vellum Sir Govinda",
+      "Krshna",
+      "Krsna",
+      "Andal · M. L. Vasanthakumari",
+      "Andal",
+      "Vishnu",
+      "Visnu",
+      "Thiruppavai 27"
+    ],
+    "writer": "Āṇḍāḷ",
+    "singer": "M. L. Vasanthakumari",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koodarai-vellum-seer-govinda.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koodarai-vellum-seer-govinda.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Kṛṣṇa",
+    "queueNumber": 262
   }
 ];

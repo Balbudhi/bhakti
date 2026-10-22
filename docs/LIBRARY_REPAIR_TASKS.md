@@ -123,3 +123,25 @@ additions. Preserve unreviewed intake work until its evidence supports adoption.
 The previous Gurbāṇī evidence and selected additions remain documented in
 `GURBANI_REVIEW_TASKS.md`. Private preparation output is under
 `.transcription/library-review/`; it is not public song-page content.
+
+## Southern backlog release evidence
+
+Two reviewed Tamil readers are being released: Toṭuṭaiya Seviyan (Dharmapuram
+P. Swaminathan) and Tiruppāvai 27, Kūḍārai Vellum Sīr Gōvindā (M. L.
+Vasanthakumari). Both were regenerated through the production generator from
+reviewed cached stages. All 20 display groups retain cached performance order
+and timing; native AAC/Opus durations and trim records agree. All 20 browser
+seek controls reach their indexed starts with range-capable audio. Desktop and
+390px presentation checks pass. Four native media assets were uploaded.
+
+The timing evidence remains the saved full pass plus verification windows,
+not a new independent listening pass. Two Toṭuṭaiya starts have 0.68/0.75-second
+measurement spread within the existing tolerance; their limits are retained in
+the private release evidence. Historical caches lack source-audio hashes.
+
+The other local readers are not all release-ready. Jagadoddharana contains a
+different Sāī composition; Harivarasanam's cached transcript contains only
+humming/instrumental records, which may be a wrong version or a transcription
+omission. Neither fulfills the intended hymn without recording review.
+Uyarvara has source, attribution and gloss issues; Brahmam has an unresolved
+verb interpretation. Five further readers have guarded editorial proposals.
