@@ -223,6 +223,8 @@ main {
 
 .tag-row {
   display: flex;
+  align-items: center;
+  min-height: 44px;
   gap: 7px;
   overflow-x: auto;
   padding-bottom: 3px;
@@ -232,6 +234,7 @@ main {
 .tag-row::-webkit-scrollbar { display: none; }
 
 .tag-filter {
+  position: relative;
   flex: 0 0 auto;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -242,14 +245,30 @@ main {
   padding: 8px 11px;
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
+.tag-filter::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  min-height: 44px;
+  transform: translateY(-50%);
+}
 
 .tag-filter[aria-pressed="true"],
-.tag-filter:hover,
 .tag-filter:focus-visible {
   background: rgba(244, 234, 208, 0.12);
   border-color: rgba(244, 234, 208, 0.52);
   color: var(--ink);
   outline: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .tag-filter:hover {
+    background: rgba(244, 234, 208, 0.12);
+    border-color: rgba(244, 234, 208, 0.52);
+    color: var(--ink);
+  }
 }
 .tag-filter:active { opacity: 0.76; transform: scale(0.97); }
 .preface-token:active { opacity: 0.72; }
@@ -464,4 +483,38 @@ main {
   .song-card { grid-template-columns: minmax(0, 1fr) 48px; }
   .song-actions-trigger { width: 42px; height: 42px; }
   .song-actions-trigger svg { width: 20px; height: 20px; }
+}
+
+/* Secondary playlist choices stay inside the song row, behind its one toggle. */
+.song-queue-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 10px 12px;
+}
+.song-queue-actions[hidden] { display: none; }
+.song-queue-choice {
+  appearance: none;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  opacity: .76;
+}
+.song-queue-choice:hover { opacity: 1; }
+.song-queue-choice:focus-visible { outline: 1px solid var(--ink); outline-offset: -3px; opacity: 1; }
+
+.song-actions-trigger { position: relative; }
+.song-actions-trigger::before {
+  content: "";
+  position: absolute;
+  min-width: 44px;
+  min-height: 44px;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
 }

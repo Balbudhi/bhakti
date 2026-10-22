@@ -448,3 +448,30 @@ body.queue-open .audio-player { bottom: 0; }
   .queue-action::before,
   .queue-row-action::before { transition: none; }
 }
+
+/* Played entries remain available inside the playlist, without another panel. */
+.queue-history { margin: 14px 14px 8px; color: rgba(244, 234, 208, .66); }
+.queue-history summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  font: 500 12px/20px Inter, sans-serif;
+}
+.queue-history-song {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.queue-history-song:hover { color: #f4ead0; }
+.queue-history summary:focus-visible,
+.queue-history-song:focus-visible { outline: 1px solid currentColor; outline-offset: 3px; }

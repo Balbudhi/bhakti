@@ -30,6 +30,7 @@
     song.title,
     song.subtitle,
     song.credit,
+    song.singer,
     ...(song.searchAliases || []),
     ...(song.languageTags || []),
     ...(song.subjectTags || []),
@@ -53,15 +54,17 @@
     return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
   };
 
-  const filterSongs = (songs, { languages = [], subjects = [], query = "" } = {}) => {
+  const filterSongs = (songs, { languages = [], subjects = [], singers = [], query = "" } = {}) => {
     const selectedLanguages = new Set(languages);
     const selectedSubjects = new Set(subjects);
+    const selectedSingers = new Set(singers);
     return songs.filter(song => {
       const matchesLanguage = !selectedLanguages.size
         || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
       const matchesSubject = !selectedSubjects.size
         || [...selectedSubjects].some(tag => song.subjectTags.includes(tag));
-      return matchesLanguage && matchesSubject && matchesSearch(song, query);
+      const matchesSinger = !selectedSingers.size || selectedSingers.has(song.singer);
+      return matchesLanguage && matchesSubject && matchesSinger && matchesSearch(song, query);
     });
   };
 
@@ -197,8 +200,11 @@
     const songs = window.BHAKTI_SONGS || [];
     const selectedLanguages = new Set();
     const selectedSubjects = new Set();
+    const selectedSingers = new Set();
     const languages = [...new Set(songs.flatMap(song => song.languageTags || []).sort())];
     const subjects = [...new Set(songs.flatMap(song => song.subjectTags || []).sort())];
+    const singers = [...new Set(songs.map(song => song.singer).filter(singer => typeof singer === "string" && singer.trim()))]
+      .sort((left, right) => sortKey(left).localeCompare(sortKey(right)));
     const orderedSongs = sortSongs(songs);
     const shuffleButton = root.querySelector("#shuffleVisible");
     const aboutHeading = root.querySelector("#aboutHeading");
@@ -206,18 +212,30 @@
 
     let visibleSongs = [];
     const filterButton = (tag, kind, selected) => `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${kind}" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`;
+    const facets = [
+      { kind: "subject", all: "all-subjects", label: "Subjects", tags: subjects, selected: selectedSubjects },
+      { kind: "language", all: "all-languages", label: "Languages", tags: languages, selected: selectedLanguages },
+      { kind: "singer", all: "all-singers", label: "Singers", tags: singers, selected: selectedSingers },
+    ];
+    // Keep the actual controls mounted: replacing a scrolled row moves another
+    // tag underneath the finger and discards keyboard focus after selection.
+    filters.innerHTML = facets.map(facet => `
+      <div class="tag-row" role="group" aria-label="${facet.label}">${filterButton("All", facet.all, true)}${facet.tags.map(tag => filterButton(tag, facet.kind, false)).join("")}</div>`).join("");
 
     const render = () => {
       const query = search.value.trim();
       visibleSongs = filterSongs(orderedSongs, {
         languages: selectedLanguages,
         subjects: selectedSubjects,
+        singers: selectedSingers,
         query,
       });
 
-      filters.innerHTML = `
-        <div class="tag-row">${filterButton("All", "all-subjects", !selectedSubjects.size)}${subjects.map(tag => filterButton(tag, "subject", selectedSubjects.has(tag))).join("")}</div>
-        <div class="tag-row">${filterButton("All", "all-languages", !selectedLanguages.size)}${languages.map(tag => filterButton(tag, "language", selectedLanguages.has(tag))).join("")}</div>`;
+      filters.querySelectorAll(".tag-filter").forEach(button => {
+        const facet = facets.find(item => item.kind === button.dataset.kind || item.all === button.dataset.kind);
+        const pressed = button.dataset.kind === facet.all ? !facet.selected.size : facet.selected.has(button.dataset.tag);
+        button.setAttribute("aria-pressed", String(pressed));
+      });
 
       listRoot.innerHTML = visibleSongs.map(song => `
         <article class="song-card" data-song-slug="${escapeHtml(song.slug)}">
@@ -231,9 +249,13 @@
               ${(song.languageTags || []).map(tag => `<span class="language-tag">${escapeHtml(tag)}</span>`).join("")}
             </span>
           </a>
-          <button class="song-actions-trigger" type="button" data-add-to-queue="${escapeHtml(song.slug)}" aria-label="Add ${escapeHtml(song.title)} to playlist" title="Add to playlist">
+          <button class="song-actions-trigger" type="button" data-queue-choices="${escapeHtml(song.slug)}" aria-expanded="false" aria-controls="queue-choices-${escapeHtml(song.slug)}" aria-label="Playlist options for ${escapeHtml(song.title)}" title="Playlist options">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M4 12h8M4 17h6M18 11v8M14 15h8"/></svg>
           </button>
+          <div class="song-queue-actions" id="queue-choices-${escapeHtml(song.slug)}" hidden>
+            <button class="song-queue-choice" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="next">Play next</button>
+            <button class="song-queue-choice" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="end">Add to end</button>
+          </div>
         </article>`).join("");
 
       if (shuffleButton) {
@@ -255,12 +277,10 @@
       const button = event.target.closest(".tag-filter");
       if (!button) return;
       const { kind, tag } = button.dataset;
-      if (kind === "all-subjects") selectedSubjects.clear();
-      else if (kind === "all-languages") selectedLanguages.clear();
-      else {
-        const selected = kind === "language" ? selectedLanguages : selectedSubjects;
-        selected.has(tag) ? selected.delete(tag) : selected.add(tag);
-      }
+      const facet = facets.find(item => item.kind === kind || item.all === kind);
+      if (!facet) return;
+      if (kind === facet.all) facet.selected.clear();
+      else facet.selected.has(tag) ? facet.selected.delete(tag) : facet.selected.add(tag);
       render();
     });
     search.addEventListener("input", render);
@@ -268,15 +288,42 @@
       bubbles: true,
       detail: { songs: [...visibleSongs] },
     })));
+    const closeQueueChoices = ({ returnFocus = false } = {}) => {
+      const trigger = listRoot.querySelector('[data-queue-choices][aria-expanded="true"]');
+      if (!trigger) return;
+      trigger.setAttribute("aria-expanded", "false");
+      trigger.closest(".song-card").querySelector(".song-queue-actions").hidden = true;
+      if (returnFocus) trigger.focus();
+    };
     listRoot.addEventListener("click", event => {
+      const trigger = event.target.closest("[data-queue-choices]");
+      if (trigger) {
+        const wasOpen = trigger.getAttribute("aria-expanded") === "true";
+        closeQueueChoices();
+        if (!wasOpen) {
+          trigger.setAttribute("aria-expanded", "true");
+          trigger.closest(".song-card").querySelector(".song-queue-actions").hidden = false;
+        }
+        return;
+      }
       const button = event.target.closest("[data-add-to-queue]");
       if (!button) return;
       const selected = songs.find(song => song.slug === button.dataset.addToQueue);
       if (!selected) return;
+      closeQueueChoices({ returnFocus: true });
       root.dispatchEvent(new CustomEvent("bhakti:add-to-queue", {
         bubbles: true,
-        detail: { song: selected },
+        detail: { song: selected, position: button.dataset.queuePosition },
       }));
+    });
+    listRoot.addEventListener("keydown", event => {
+      if (event.key === "Escape" && event.target.closest(".song-card")) {
+        closeQueueChoices({ returnFocus: true });
+      }
+    });
+    root.addEventListener("click", event => {
+      const open = listRoot.querySelector('[data-queue-choices][aria-expanded="true"]');
+      if (open && event.target.closest(".song-card") !== open.closest(".song-card")) closeQueueChoices();
     });
 
     wireAbout(root);

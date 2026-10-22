@@ -118,10 +118,31 @@
     return rebuild(state, [...state.items, {...item, entryId: ""}], state.currentIndex, "custom");
   };
 
+  const playNext = (state, item, sessionId) => {
+    if (!state) return append(null, item, sessionId);
+    const items = [...state.items];
+    items.splice(state.currentIndex + 1, 0, {...item, entryId: ""});
+    return rebuild(state, items, state.currentIndex, "custom");
+  };
+
+  const clearUpcoming = state => !state || state.currentIndex === state.items.length - 1
+    ? state
+    : rebuild(state, state.items.slice(0, state.currentIndex + 1), state.currentIndex, "custom");
+
+  const previous = state => state && state.currentIndex > 0
+    ? { state: rebuild(state, state.items, state.currentIndex - 1, state.mode, true), moved: true }
+    : { state, moved: false };
+
   const assertIndex = (state, index) => {
     if (!Number.isInteger(index) || index < 0 || index >= state.items.length) {
       throw new RangeError("queue index is out of range");
     }
+  };
+
+  const selectHistory = (state, index) => {
+    assertIndex(state, index);
+    if (index >= state.currentIndex) throw new RangeError("only played queue entries may be selected");
+    return rebuild(state, state.items, index, state.mode, true);
   };
 
   const move = (state, fromIndex, toIndex) => {
@@ -659,6 +680,10 @@
     standalone,
     playNow,
     append,
+    playNext,
+    clearUpcoming,
+    previous,
+    selectHistory,
     move,
     remove,
     reorderUpcoming,
