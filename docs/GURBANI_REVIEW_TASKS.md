@@ -9,14 +9,15 @@ Use the approved Gemini/OpenRouter pipeline, then editorial review; third-party
 translations are comparison evidence, never replacement English. Preserve
 literal imagery, agency, repetition and source ambiguity. Publish scoped work.
 
-Current step: release the independently reviewed textual corrections from the
-existing Gurmukhi and word maps: 132 distinct reviewed proposal records, with
-139 lines changed including danda cleanup across all nine readers. The fresh
-13-song API batch stopped at credit
-preflight; no new audio, timing or translation model calls ran.
-Next: publish the safe editorial slice; resume fresh audio-aware stages when
-OpenRouter credits are restored, adjudicate differences, regenerate reviewed
-readers and source notices, verify and publish. The real callers are the library,
+Current step: the editorial slice is published in commit `24040780`. All nine
+readers and the catalogue were verified live: 19 files match the committed
+bytes. The slice contains 132 distinct reviewed proposal records and changes
+139 lines including danda cleanup.
+
+Next: resume the prepared 13-song batch when OpenRouter credits are restored,
+then complete audio-aware review, additions and browser verification. The
+batch stopped at credit preflight; no new audio, timing or translation model
+calls ran. The full goal remains active and unfinished. The real callers are the library,
 song reader, hover/tap word mapping, and first-syllable player seek.
 
 ## Task list
@@ -37,7 +38,8 @@ song reader, hover/tap word mapping, and first-syllable player seek.
 - [ ] Remap source-section boundaries after transcription/order changes.
 - [ ] Run contract, audio quality, trim and scoped regression checks.
 - [ ] Check desktop/mobile in the Codex in-app Browser when available.
-- [ ] Inspect exact staged diff, publish and verify deployed pages/media.
+- [x] Inspect and publish the scoped editorial slice; verify all 19 deployed files.
+- [ ] Publish and verify the remaining audio repairs and four new readers/media.
 
 ## Ownership and dependencies
 
