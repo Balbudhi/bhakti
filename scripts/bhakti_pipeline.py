@@ -821,7 +821,11 @@ def normalized_language(value: str) -> str:
             "marathi": "Marathi", "sa": "Sanskrit", "san": "Sanskrit", "sanskrit": "Sanskrit",
             "pa": "Punjabi", "pan": "Punjabi", "punjabi": "Punjabi", "kn": "Kannada", "kan": "Kannada",
             "kannada": "Kannada", "awa": "Awadhi", "awadhi": "Awadhi", "bra": "Braj", "braj": "Braj", "raj": "Rajasthani",
-            "rajasthani": "Rajasthani"}.get(key, value.strip())
+            "rajasthani": "Rajasthani", "ta": "Tamil", "tam": "Tamil", "tamil": "Tamil",
+            "te": "Telugu", "tel": "Telugu", "telugu": "Telugu", "or": "Odia", "ori": "Odia", "odia": "Odia",
+            "bn": "Bengali", "ben": "Bengali", "bengali": "Bengali", "ml": "Malayalam", "mal": "Malayalam",
+            "malayalam": "Malayalam", "fa": "Persian", "fas": "Persian", "per": "Persian", "persian": "Persian",
+            "ur": "Urdu", "urd": "Urdu", "urdu": "Urdu"}.get(key, value.strip())
 
 
 def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, Any]:
@@ -3024,7 +3028,8 @@ def nearby_dohā_number(lines: list[dict[str, Any]], line_index: int) -> str:
 
 def language_code(language: str) -> str:
     return {"Hindi": "hi", "Sanskrit": "sa", "Punjabi": "pa", "Kannada": "kn", "Marathi": "mr",
-            "Awadhi": "awa", "Braj": "bra"}.get(language, "")
+            "Awadhi": "awa", "Braj": "bra", "Rajasthani": "raj", "Tamil": "ta", "Telugu": "te",
+            "Odia": "or", "Bengali": "bn", "Malayalam": "ml", "Persian": "fa", "Urdu": "ur"}.get(language, "")
 
 
 def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:
