@@ -3,11 +3,15 @@
 
 from __future__ import annotations
 
+import json
 import re
-from collections.abc import Iterable
+from collections.abc import Iterable, Mapping
+from pathlib import Path
 from typing import Any
 
 import naming
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 TAG_ALIASES: dict[str, tuple[str, ...]] = {
@@ -114,3 +118,77 @@ def merge_subject_tags(explicit: Iterable[object], lines: Iterable[dict[str, Any
         if tag not in values:
             values.append(tag)
     return values
+
+
+def _unique_registry_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate reviewed-tag registry key {key!r}")
+        result[key] = value
+    return result
+
+
+def apply_reviewed_subject_tags(
+    meta: dict[str, Any], slug: str, lines: Mapping[str, dict[str, Any]],
+    sequence: list[dict[str, Any]], *, root: Path = ROOT,
+) -> None:
+    """Append researched tags only while their exact performed text remains.
+
+    The registry owns contextual classification; this operation does not infer
+    identities from author metadata or keywords. Evidence lineId is an optional
+    locator, not identity: regeneration may renumber lines. Every evidence source
+    must match a complete line referenced by sequence, without normalization.
+    Validate all applicable evidence before changing meta; existing tags stay in
+    order and additions are deduplicated. A stale witness requires fresh review.
+    """
+    path = Path(root) / "data" / "song_tag_overrides.json"
+    try:
+        registry = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=_unique_registry_object)
+    except (OSError, ValueError) as exc:
+        raise ValueError(f"invalid reviewed-tag registry {path}: {exc}") from exc
+    if (not isinstance(registry, dict) or type(registry.get("version")) is not int
+            or registry["version"] != 1 or not isinstance(registry.get("songs"), dict)):
+        raise ValueError(f"invalid reviewed-tag registry structure: {path}")
+    for song, record in registry["songs"].items():
+        if not isinstance(song, str) or not song.strip() or not isinstance(record, dict):
+            raise ValueError(f"invalid reviewed-tag record: {song!r}")
+        additions, evidence = record.get("addTags"), record.get("evidence")
+        if (not isinstance(additions, list) or not additions
+                or any(not isinstance(tag, str) or not tag.strip() for tag in additions)
+                or len(set(additions)) != len(additions)
+                or not isinstance(evidence, list) or not evidence):
+            raise ValueError(f"{song}: invalid reviewed tags or evidence")
+        covered = set()
+        for witness in evidence:
+            if (not isinstance(witness, dict)
+                    or any(not isinstance(witness.get(field), str) or not witness[field].strip()
+                           for field in ("tag", "source", "reason"))
+                    or witness["tag"] not in additions
+                    or ("lineId" in witness and
+                        (not isinstance(witness["lineId"], str) or not witness["lineId"].strip()))):
+                raise ValueError(f"{song}: invalid reviewed-tag witness")
+            covered.add(witness["tag"])
+        if covered != set(additions):
+            raise ValueError(f"{song}: every reviewed tag needs source evidence")
+    record = registry["songs"].get(slug)
+    if record is None:
+        return
+    if not isinstance(lines, Mapping) or not isinstance(sequence, list):
+        raise ValueError(f"{slug}: invalid lines or sequence for reviewed tags")
+    performed_sources = set()
+    for entry in sequence:
+        ref = entry.get("ref") if isinstance(entry, dict) else None
+        if not isinstance(ref, str) or ref not in lines or not isinstance(lines[ref], Mapping):
+            raise ValueError(f"{slug}: invalid performed reference {ref!r}")
+        source = lines[ref].get("source")
+        if not isinstance(source, str):
+            raise ValueError(f"{slug}:{ref}: missing performed source")
+        performed_sources.add(source)
+    for witness in record["evidence"]:
+        if witness["source"] not in performed_sources:
+            raise ValueError(f"{slug}: {witness['tag']} evidence changed or is not performed; review its tag")
+    existing = meta.get("subjectTags", [])
+    if not isinstance(existing, list) or any(not isinstance(tag, str) for tag in existing):
+        raise ValueError(f"{slug}: invalid existing subjectTags")
+    meta["subjectTags"] = list(dict.fromkeys([*existing, *record["addTags"]]))

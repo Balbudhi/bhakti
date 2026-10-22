@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "songs": {
+    "auga-na-jauga": {
+      "addTags": [
+        "Guru",
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse-guraan-ke-shabad",
+          "source": "گراں کے شبد پیالا ہری رس پیؤں گا",
+          "reason": "The performed lyric explicitly refers to the spiritual teacher through the Word, teaching, feet, refuge or sought country."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "verse-guraan-ke-shabad",
+          "source": "گراں کے شبد پیالا ہری رس پیؤں گا",
+          "reason": "Explicit devotional Hari name; reviewed name-reference classification under owner policy, without changing contextual translation or asserting an incarnation narrative."
+        }
+      ]
+    },
+    "duhkh-me-sumiran-sab-kare": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "teri-beeti-umar",
+          "source": "तेरी बीती उमर हरि नाम बिना",
+          "reason": "Explicit devotional Hari name; reviewed name-reference classification under owner policy, without changing contextual translation or asserting an incarnation narrative."
+        }
+      ]
+    },
+    "nirguna-galiya": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "line-25",
+          "source": "या तो लाग्या भजन वाला बाण म्हारी हेली ओ, चालो गुरुजी रे देश",
+          "reason": "The performed lyric explicitly refers to the spiritual teacher through the Word, teaching, feet, refuge or sought country."
+        }
+      ]
+    },
+    "patta-bola-vrksha-se": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "line-019",
+          "source": "ये सतगुर की सीख",
+          "reason": "The performed lyric explicitly refers to the spiritual teacher through the Word, teaching, feet, refuge or sought country."
+        }
+      ]
+    },
+    "rehna-nahi-isa-desa": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse-3-line-2",
+          "source": "सतगुरु नाम ठिकाना है",
+          "reason": "The performed lyric explicitly refers to the spiritual teacher through the Word, teaching, feet, refuge or sought country."
+        }
+      ]
+    },
+    "sangat-santan-ki-karle": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse1-line3",
+          "source": "सद्गुरु चरण लाग बावा",
+          "reason": "The performed lyric explicitly refers to the spiritual teacher through the Word, teaching, feet, refuge or sought country."
+        }
+      ]
+    },
+    "sunta-hai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sunta-hai-guru-gyani",
+          "source": "सुनता है गुरु ज्ञानी ज्ञानी ज्ञानी ज्ञानी ज्ञानी",
+          "reason": "The performed refrain explicitly names the wise spiritual teacher. Subject/address ambiguity does not alter the teacher reference."
+        }
+      ]
+    }
+  }
+}

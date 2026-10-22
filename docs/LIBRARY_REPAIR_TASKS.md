@@ -46,12 +46,14 @@ additions. Do not claim that pipeline execution alone establishes correctness.
 - [x] Independently review 20 guarded wording/spelling proposals across three songs.
 - [x] Implement and independently review pipeline cache, contextual-sense and
   dictionary integration; resolve the identified review defects.
-- [ ] Publish the verified pipeline and preparation changes.
+- [x] Publish the verified pipeline and preparation changes (`b1c90598`).
 - [x] Finish the deterministic repair inventory and enforce saved owner baselines.
 - [x] Update the processing instructions and restored provider configuration.
-- [ ] Apply, inspect and publish the 20 reviewed textual corrections.
+- [x] Apply, inspect and publish the 20 reviewed textual corrections plus three
+  contextual rasa corrections, seven reader transliteration repairs, and 48
+  Sundarakāṇḍa marker-map repairs (`5bd8fdfe`; 11 readers).
 - [ ] Qualify Gemini 3.7 Flash versus 3.8 Flash on representative audio and
-  translation cases after credits are available; use stronger models only when
+  translation cases with the replenished credits; use stronger models only when
   their measured quality warrants their cost.
 - [ ] Review every published song's source, glosses, English, mappings and tags;
   route actual lexical defects through fresh gloss reconstruction.
@@ -63,24 +65,31 @@ additions. Do not claim that pipeline execution alone establishes correctness.
 
 ## Current step and next step
 
-Current: all three integration findings are resolved. Fresh production output
-must contain complete fidelity/review evidence; a cache cannot bypass that gate.
-The two saved owner baselines protect 136 lines even if the current reader is
-changed. Twenty reviewed corrections have been applied locally and inspected
-on desktop and 390px mobile. Seven mixed-script repairs and Sundarakāṇḍa marker
-mapping fixes are in review; preserve unrelated dirty intake work.
+Current: the contextual pipeline and first eleven-reader repair batch are live.
+Deployment succeeded; all 22 published data/page files match the reviewed commit.
+Desktop and 390px checks covered the corrected reader presentation and selected
+word interactions. This does not establish fresh audio/timing accuracy.
 
-Credits were replenished: the read-only check showed about $29.99 available.
-The first bounded Gemini comparison request returned a documented MAX_TOKENS
-failure: its 16,384-token allowance was consumed mainly by reasoning. It cost
-$0.06263025 and produced no usable complete transcript. No remaining requests
-were launched on that configuration. The comparison is being corrected to use
-the production audio output allowance, within the cumulative $2 experiment cap.
-No model winner, fresh audio verification, or full-library accuracy is claimed.
+Seven further readers now have eight reviewed tag additions: explicit Guru
+references and Hari classified under the existing Viṣṇu facet. The registry
+requires the exact supporting text to remain in the performance sequence and is
+integrated into generation. The largest tag group wraps cleanly at 390px.
+Independent review confirmed the witnesses and found no missing clear existing
+facet in the nine Gurbāṇī readers. This tag batch is being released.
 
-Next: publish the verified infrastructure and first editorial batch, complete
-model qualification, then process audio and text repair batches. The goal remains
-the complete library and four additions, not these preliminary fixes.
+The bounded Gemini comparison remains under its cumulative $2 cap. The first
+16,384-token audio request exhausted its allowance in reasoning and cost
+$0.06263025. At the corrected allowance, both models returned the Gagan clip;
+3.8 used more tokens and time, without establishing superior accuracy. The 3.7
+Merā clip exceeded the intended wall deadline; its full reservation remains
+charged against the experiment until actual cost is known, and it was not
+retried. Both models' gloss candidates still need contextual editorial review.
+No model winner or full-library accuracy is claimed.
+
+Next: release the reviewed tag batch; finish model comparison; inspect all 17
+Kabīr readers' English and contextual glosses; resolve newly identified
+Sundarakāṇḍa lexical-token loss. Continue bounded audio and text batches toward
+all 254 readers and the four additions. Preserve unrelated dirty intake work.
 
 The previous Gurbāṇī evidence and selected additions remain documented in
 `GURBANI_REVIEW_TASKS.md`. Private preparation output is under

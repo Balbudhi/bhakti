@@ -1437,7 +1437,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Guru"
     ],
     "searchAliases": [
       "Sangat Santan Ki Kar Le",
@@ -3108,7 +3109,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Guru"
     ],
     "searchAliases": [
       "Kabir",
@@ -3173,7 +3175,8 @@ window.BHAKTI_SONGS = [
       "Rajasthani"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Guru"
     ],
     "searchAliases": [
       "Kabir",
@@ -3507,7 +3510,9 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Aũga Na Jaũga",
@@ -7018,7 +7023,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Guru"
     ],
     "searchAliases": [
       "Patta Bola Vrksa Se",
@@ -7050,7 +7056,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Guru"
     ],
     "searchAliases": [
       "Kabir · Shujaat Khan",
@@ -7381,7 +7388,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Nirguṇa"
+      "Nirguṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Dukh Me Sumiran Sab Kare",

@@ -12,7 +12,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Nirguṇa"
+    "Nirguṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Dukh Me Sumiran Sab Kare",

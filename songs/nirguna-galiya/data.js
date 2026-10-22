@@ -10,7 +10,8 @@ window.SONG_META = {
     "Rajasthani"
   ],
   "subjectTags": [
-    "Nirguṇa"
+    "Nirguṇa",
+    "Guru"
   ],
   "searchAliases": [
     "Kabir",

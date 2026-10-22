@@ -3354,6 +3354,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     if labels:
         meta["lineLabels"] = labels
     scripture_metadata.apply(meta, song_dir.name, sequence)
+    tag_taxonomy.apply_reviewed_subject_tags(meta, song_dir.name, line_data, sequence, root=ROOT)
     data = ("window.SONG_META = " + json.dumps(meta, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_LINES = " + json.dumps(line_data, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +

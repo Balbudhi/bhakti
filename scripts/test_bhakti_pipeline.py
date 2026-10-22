@@ -30,6 +30,8 @@ class PipelineTests(unittest.TestCase):
         (self.root / "data" / "preserved_terms.json").write_text(registry, encoding="utf-8")
         (self.root / "data" / "editorial_baselines.json").write_text(
             (self.original_root / "data" / "editorial_baselines.json").read_text(encoding="utf-8"), encoding="utf-8")
+        (self.root / "data" / "song_tag_overrides.json").write_text(
+            (self.original_root / "data" / "song_tag_overrides.json").read_text(encoding="utf-8"), encoding="utf-8")
         (self.root / "data" / "source_credits.json").write_text(source_credits, encoding="utf-8")
         pipeline.QUEUE_NUMBERS_PATH = self.root / "data" / "queue_numbers.json"
 
@@ -100,6 +102,9 @@ class PipelineTests(unittest.TestCase):
         translations = {"packet": {"translations": [{"id": "line-one", "literal_english": "Sai.", "segments": [{"text": "Sai", "word_indices": [0]}, {"text": ".", "word_indices": []}], "uncertainty": ""}]}}
         job = {"slug": "sample-song", "source": "unused", "title": "Sample Song", "writer": "Writer", "singer": "Singer",
                "languages": ["Hindi"], "subjectTags": ["Śirḍī Sāī"], "searchAliases": ["Shirdi Sai Baba"]}
+        (self.root / "data" / "song_tag_overrides.json").write_text(json.dumps({"version": 1, "songs": {
+            "sample-song": {"addTags": ["Guru"], "evidence": [{"tag": "Guru", "source": "साईं", "reason": "Reviewed fixture"}]}
+        }}), encoding="utf-8")
         pipeline.generate(song, job, {}, audited, timing, glosses, translations)
         page = (song / "index.html").read_text(encoding="utf-8")
         data = (song / "data.js").read_text(encoding="utf-8")
@@ -107,6 +112,8 @@ class PipelineTests(unittest.TestCase):
         self.assertIn('<dt>Poet</dt><dd>Writer</dd>', page)
         self.assertIn('<dt>Singer</dt><dd>Singer</dd>', page)
         self.assertIn('<span class="song-tag subject-tag">Śirḍī Sāī</span>', page)
+        self.assertIn('<span class="song-tag subject-tag">Guru</span>', page)
+        self.assertIn('"Guru"', (self.root / "data" / "songs.js").read_text(encoding="utf-8"))
         self.assertNotIn('class="song-attrib"', page)
         self.assertIn('"sourceLanguage": "hi"', data)
         self.assertIn('"gloss": "holy master"', data)
