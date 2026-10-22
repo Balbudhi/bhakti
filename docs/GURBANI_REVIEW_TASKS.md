@@ -18,7 +18,7 @@ Next: resume the prepared 13-song batch when OpenRouter credits are restored,
 then complete audio-aware review and the four additions. The existing nine
 readers have now passed desktop and 390px browser layout checks. The
 batch stopped at credit preflight; no new audio, timing or translation model
-calls ran. The full goal remains active and unfinished. The real callers are the library,
+calls ran. The full goal is blocked and unfinished pending restored OpenRouter credits. The real callers are the library,
 song reader, hover/tap word mapping, and first-syllable player seek.
 
 ## Task list
@@ -175,3 +175,14 @@ prepared song directories have both original listener audio formats, and all
 fresh stage directories remain empty: there is no running pipeline to wait on.
 The previous goal turn made progress by publishing the editorial slice; this
 continuation completed the previously unavailable visual checks.
+
+## Dependency audit
+
+The original goal turn and both subsequent continuations confirmed the same
+exhausted OpenRouter account. The intervening turns completed editorial
+publication and browser verification; no authorized independent work remains
+that can establish audio accuracy or produce the four new readers. The latest
+check confirms 13 prepared jobs, zero fresh pipeline artifacts, and zero new
+public readers. There is no running pipeline to wait for. Resume after credits
+are restored; do not mark the full objective complete or substitute a different
+transcription provider.
