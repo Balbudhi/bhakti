@@ -1811,8 +1811,60 @@ def align_long_segments(
 
 def single_start_schema() -> dict[str, Any]:
     return {"type": "object", "properties": {
-        "occurrence_id": {"type": "string"}, "start": {"type": "number"}, "uncertainty": {"type": "string"}},
-        "required": ["occurrence_id", "start", "uncertainty"], "additionalProperties": False}
+        "occurrence_id": {"type": "string"}, "start": {"type": "number"}, "uncertainty": {"type": "string"},
+        "onset_at_clip_start": {"type": "boolean"}},
+        "required": ["occurrence_id", "start", "uncertainty", "onset_at_clip_start"], "additionalProperties": False}
+
+
+def single_start_uncertainty_errors(packet: dict[str, Any]) -> list[str]:
+    """Declared doubt cannot become first-syllable evidence through agreement."""
+    errors = []
+    uncertainty = packet.get("uncertainty", "")
+    if not isinstance(uncertainty, str) or uncertainty.strip().casefold() not in {"", "none", "no", "null", "n/a"}:
+        errors.append("single start has unresolved uncertainty")
+    if float(packet.get("start", -1)) == 0 and packet.get("onset_at_clip_start") is not True:
+        errors.append("clip-boundary start lacks explicit complete-onset evidence")
+    return errors
+
+
+def timing_uncertainty_errors(timing: dict[str, Any]) -> list[str]:
+    """Recheck selected cached evidence, allowing later clean repairs to supersede it."""
+    errors = []
+    if timing.get("uncertain_occurrence_ids"):
+        errors.append("timing has unresolved uncertain occurrence IDs")
+    selected = {item.get("occurrence_id"): item.get("start")
+                for item in timing.get("sequence", [])}
+    reports = {}
+    for report in timing.get("refinements", []):
+        if report.get("kind") != "single" or report.get("validation_errors"):
+            continue
+        occurrence_id = report.get("occurrence_id")
+        if "sequence" in timing and occurrence_id not in selected:
+            continue
+        if occurrence_id in selected and report.get("start") != selected[occurrence_id]:
+            continue
+        reports[occurrence_id] = report
+    for occurrence_id, report in reports.items():
+        valid = []
+        for attempt in report.get("attempts", []):
+            if attempt.get("validation_errors"):
+                continue
+            packet = dict(attempt.get("response", {}).get("packet", {}))
+            packet.setdefault("uncertainty", attempt.get("uncertainty_note", ""))
+            if not single_start_uncertainty_errors(packet):
+                valid.append(float(attempt["start"]))
+        # Re-derive which clear measurements can support the selected start.
+        # Old validators sometimes left rejected boundary doubts unmarked.
+        corroborated = [value for value in valid
+                        if corroborated_by_existing(value, report.get("candidate_measurements", []))]
+        chosen = None
+        if corroborated:
+            chosen = corroborated[-1]
+        elif len(valid) >= 2 and max(valid) - min(valid) <= 0.5:
+            chosen = median(valid)
+        if chosen is None or abs(round(chosen, 3) - float(report["start"])) > 0.001:
+            errors.append(f"{occurrence_id}: selected single start lacks clear agreeing evidence")
+    return errors
 
 
 def median(values: list[float]) -> float:
@@ -1869,9 +1921,9 @@ PRECEDING CONTEXT: {json.dumps(previous, ensure_ascii=False) if previous else '(
 TARGET: {json.dumps({**target, 'coarse_source_start': candidate}, ensure_ascii=False)}
 FOLLOWING CONTEXT: {json.dumps(following, ensure_ascii=False) if following else '(none)'}
 
-Return only the exact first audible syllable start of TARGET's first repetition. Do not choose another identical occurrence. Mark uncertainty rather than guessing.
+Return only the exact first audible syllable start of TARGET's first repetition. Do not choose another identical occurrence. Mark uncertainty rather than guessing. Set onset_at_clip_start=true only if the COMPLETE initial syllable audibly begins at the clip boundary; an already ongoing or cut-off syllable is uncertain, never a clear zero start. Otherwise set it false.
 
-Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0.0,"uncertainty":""}}"""
+Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0.0,"uncertainty":"","onset_at_clip_start":false}}"""
     attempts: list[dict[str, Any]] = []
     for attempt in range(2):
         try:
@@ -1895,8 +1947,7 @@ Return strict JSON only: {{"occurrence_id":"{target['occurrence_id']}","start":0
             # wrong local slot.  Treat its neighbour bracket as a routing hint,
             # not disqualifying evidence: two independent lyric-aware passes
             # must still agree before this point is accepted below.
-            if any(marker in uncertainty for marker in ("not_in_clip", "not in clip", "not present", "not heard", "unable", "cannot locate")):
-                errors.append("single start is not locatable")
+            errors.extend(single_start_uncertainty_errors(packet))
             attempts.append({"attempt": attempt + 1, "start": round(point, 3), "uncertainty_note": uncertainty,
                              "response": response, "validation_errors": errors})
         except (RuntimeError, KeyError, TypeError, ValueError) as exc:
@@ -2085,6 +2136,9 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
     target = song_dir / ".transcription" / "pipeline" / "03-timing.json"
     existing = read_packet(target)
     if existing and not options.force and existing.get("publication_status") != "blocked":
+        cached_errors = timing_uncertainty_errors(existing)
+        if cached_errors:
+            raise RuntimeError("cached timing requires review: " + "; ".join(cached_errors))
         return existing
     packet = audited["packet"]
     occurrences = display_occurrences(packet)
@@ -2138,6 +2192,8 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
                 song_dir / ".transcription" / "pipeline" / "timing-windows",
             )
             errors.extend(refinement_errors)
+            if not refinement_errors and {row["occurrence_id"] for row in sequence} == {row["occurrence_id"] for row in occurrences}:
+                uncertain = []
         elif not audited.get("segment_audits"):
             fallback_coarse_sequence = uniform_coarse_sequence(occurrences, duration)
             sequence, refinements, refinement_errors = refine_all_starts(
@@ -3210,6 +3266,7 @@ def publication_errors(audited: dict[str, Any], timing: dict[str, Any], glosses:
     errors.extend(validate_line_contract(lines, gloss_rows, translation_rows))
     if timing.get("validation_errors"):
         errors.extend(timing["validation_errors"])
+    errors.extend(timing_uncertainty_errors(timing))
     if audited["packet"].get("uncertainties"):
         errors.append("audited transcription has unresolved uncertainties")
     if any(str(row.get("uncertainty") or "").strip().casefold() not in {"", "none", "no", "null", "n/a"}
