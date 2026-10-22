@@ -51,8 +51,7 @@ window.SONG_META = {
     },
     {
       "sequenceIndex": 12,
-      "title": "Inserted couplet",
-      "note": "Author not established."
+      "title": "Inserted couplet"
     },
     {
       "sequenceIndex": 16,
@@ -62,18 +61,17 @@ window.SONG_META = {
     },
     {
       "sequenceIndex": 27,
-      "title": "Hum Jo Marenge",
-      "note": "Author not established from a published textual source."
+      "title": "Hum Jo Marenge"
     },
     {
       "sequenceIndex": 28,
       "title": "Woh Aur Hoṅge",
-      "note": "Contains the signature Bedam; the author has not been established from a published source."
+      "note": "The verse carries the signature Bedam."
     },
     {
       "sequenceIndex": 30,
       "title": "Jīwnā Kyā Agyān Hai",
-      "note": "Attributed to Kabīr in this performance; an independent textual source is still under review."
+      "note": "Attributed to Kabīr in this performance."
     }
   ],
   "audioSources": [

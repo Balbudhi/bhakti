@@ -89,19 +89,19 @@ window.SONG_META = {
     {
       "sequenceIndex": 185,
       "title": "Puruṣa Sūkta — Ṛgveda 10.90.16",
-      "poet": "Vedic Sanskrit",
+      "poet": "",
       "note": "The verse is recited intact after the liturgical opening Hariḥ Oṃ."
     },
     {
       "sequenceIndex": 187,
       "title": "Vaiśravaṇa (Kubera) mantra — Taittirīya Āraṇyaka 1.31.6",
-      "poet": "Vedic Sanskrit",
+      "poet": "",
       "note": "The liturgical Oṃ precedes an otherwise intact salutation to Vaiśravaṇa (Kubera)."
     },
     {
       "sequenceIndex": 190,
       "title": "Royal benediction and Marutta verse — Aitareya Brāhmaṇa 8.15",
-      "poet": "Vedic Sanskrit",
+      "poet": "",
       "note": "The Vedic quotation runs through the Marutta verse at sequence 193; the next two lines are the Sai liturgy’s added dedication and acclamation."
     },
     {
@@ -118,7 +118,7 @@ window.SONG_META = {
     {
       "sequenceIndex": 227,
       "title": "Aisā Yeī Bā Sāī Digambarā",
-      "poet": "Traditional Datta-oriented Sai invocation",
+      "poet": "",
       "note": "The refrain directly addresses Sai as Digambara. The next verse invokes Dattātreya through the epithet “son of Anasūyā and Atri”; it does not rename the refrain as “Datta Digambara.”"
     },
     {
@@ -11026,7 +11026,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariḥ",
-      "gloss": "Hari; liturgical invocation"
+        "gloss": "Hari; liturgical invocation"
       },
       {
         "roman": "oṁ",
@@ -11046,7 +11046,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmāṇi",
-      "gloss": "foundations; established ordinances (neuter plural)"
+        "gloss": "foundations; established ordinances (neuter plural)"
       },
       {
         "roman": "prathamānyāsan",
@@ -11119,7 +11119,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahimānaḥ",
-      "gloss": "greatnesses; mighty powers (nominative plural)"
+        "gloss": "greatnesses; mighty powers (nominative plural)"
       },
       {
         "roman": "sacanta",
@@ -11222,11 +11222,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "rājādhirājāya",
-      "gloss": "to the king above kings (dative singular)"
+        "gloss": "to the king above kings (dative singular)"
       },
       {
         "roman": "prasahyasāhine",
-      "gloss": "to the overpowering conqueror (dative singular)"
+        "gloss": "to the overpowering conqueror (dative singular)"
       },
       {
         "roman": "namo",
@@ -11238,11 +11238,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇāya",
-      "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
+        "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
       },
       {
         "roman": "kurmahe",
-      "gloss": "we make; offer (1st plural present middle)"
+        "gloss": "we make; offer (1st plural present middle)"
       }
     ],
     "grammarNote": "Taittirīya Āraṇyaka 1.31.6. Oṃ is a recitational opening; namas kṛ takes the dative of recipient.",
@@ -11319,11 +11319,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāmeśvaro",
-      "gloss": "the sovereign of desires (kāmeśvaraḥ, nominative singular)"
+        "gloss": "the sovereign of desires (kāmeśvaraḥ, nominative singular)"
       },
       {
         "roman": "vaiśravaṇo",
-      "gloss": "Vaiśravaṇa, Kubera (vaiśravaṇaḥ, nominative singular)"
+        "gloss": "Vaiśravaṇa, Kubera (vaiśravaṇaḥ, nominative singular)"
       },
       {
         "roman": "dadhātu",
@@ -11394,7 +11394,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇāya",
-      "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
+        "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
       },
       {
         "roman": "mahārājāya",
@@ -11453,7 +11453,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhaujyaṁ",
-      "gloss": "bounteous dominion; prosperous rule"
+        "gloss": "bounteous dominion; prosperous rule"
       },
       {
         "roman": "svārājyaṁ",
@@ -11461,11 +11461,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "vairājyaṁ",
-      "gloss": "distinguished sovereignty"
+        "gloss": "distinguished sovereignty"
       },
       {
         "roman": "pārameṣṭhyaṁ",
-      "gloss": "the highest authority; rule of the supreme station"
+        "gloss": "the highest authority; rule of the supreme station"
       },
       {
         "roman": "rājyaṁ",
@@ -11473,7 +11473,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahārājyamādhipatyamayaṁ",
-      "gloss": "great sovereignty and paramount rule (mahārājyam + ādhipatyam + ayam)"
+        "gloss": "great sovereignty and paramount rule (mahārājyam + ādhipatyam + ayam)"
       },
       {
         "roman": "samantaparyāyī",
@@ -11562,7 +11562,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sārvabhaumaḥ",
-      "gloss": "sovereign over all the earth (nominative singular)"
+        "gloss": "sovereign over all the earth (nominative singular)"
       },
       {
         "roman": "sārvāyuṣa",
@@ -11582,7 +11582,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ekarāḷiti",
-      "gloss": "sole ruler (ekarāṭ), thus (iti)"
+        "gloss": "sole ruler (ekarāṭ), thus (iti)"
       }
     ],
     "grammarNote": "Continuation of Aitareya Brāhmaṇa 8.15. Vedic sandhi ekarāṭ + iti gives ekarāḷiti; the formula describes sovereignty over the ocean-bounded earth.",
@@ -11649,7 +11649,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maruttasyāvasan",
-      "gloss": "of Marutta (maruttasya); resided (avasan, 3rd plural imperfect)"
+        "gloss": "of Marutta (maruttasya); resided (avasan, 3rd plural imperfect)"
       },
       {
         "roman": "gṛhe",
@@ -11704,7 +11704,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "āvikṣitasya",
-      "gloss": "of Avikṣit’s son (genitive singular)"
+        "gloss": "of Avikṣit’s son (genitive singular)"
       },
       {
         "roman": "kāmaprer",
@@ -11720,7 +11720,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sabhāsada",
-      "gloss": "assembly-members; courtiers (sabhāsadaḥ, nominative plural)"
+        "gloss": "assembly-members; courtiers (sabhāsadaḥ, nominative plural)"
       },
       {
         "roman": "iti",
@@ -13719,11 +13719,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrutisārā",
-      "gloss": "essence of the Śrutis; Vedic revelation"
+        "gloss": "essence of the Śrutis; Vedic revelation"
       },
       {
         "roman": "anusayātrikumārā",
-      "gloss": "son of Anasūyā and Atri; Dattātreya epithet"
+        "gloss": "son of Anasūyā and Atri; Dattātreya epithet"
       },
       {
         "roman": "aise",

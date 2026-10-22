@@ -73,7 +73,7 @@ window.SONG_META = {
     {
       "sequenceIndex": 92,
       "title": "Puṣpāñjali",
-      "poet": "Traditional · Vedic",
+      "poet": "",
       "note": ""
     },
     {
@@ -85,8 +85,8 @@ window.SONG_META = {
     {
       "sequenceIndex": 143,
       "title": "Aisā Yeī Bā Sāī Digambarā",
-      "poet": "Poet unresolved",
-      "note": "Attribution intentionally left unresolved."
+      "poet": "",
+      "note": ""
     },
     {
       "sequenceIndex": 164,
@@ -97,7 +97,7 @@ window.SONG_META = {
     {
       "sequenceIndex": 205,
       "title": "Prārthanā",
-      "poet": "Traditional",
+      "poet": "",
       "note": "Closing Karacaraṇakṛtaṃ prayer and acclamations."
     }
   ],

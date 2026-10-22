@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Shree Sai Aarti",
+  "title": "Āratī Sāī Bābā",
   "subtitle": "Śirḍī Sāī",
   "credit": "",
   "pageCredit": "",

@@ -62,9 +62,21 @@ window.SONG_META = {
       "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
     },
     {
-      "sequenceIndex": 85,
+      "sequenceIndex": 83,
       "title": "Āratī Utārūṁ",
-      "poet": "Sant Tukārām"
+      "poet": "Sant Tukārām",
+      "note": "Hindi rendering of the Marathi ārati."
+    },
+    {
+      "sequenceIndex": 94,
+      "title": "Uṭho Sādhu Santa",
+      "poet": "",
+      "note": "Hindi rendering of the Marathi pada Uṭhā Sādhusanta."
+    },
+    {
+      "sequenceIndex": 106,
+      "title": "Sāīnātha Guru Merī Māī",
+      "poet": ""
     }
   ],
   "adaptedSequenceIndices": [],

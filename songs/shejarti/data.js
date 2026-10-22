@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Shejarti",
+  "title": "Śrī Sāī Aṣṭottaraśatanāmāvalī",
   "subtitle": "Śirḍī Sāī",
   "credit": "",
   "pageCredit": "",
@@ -7,7 +7,7 @@ window.SONG_META = {
   "singer": "",
   "composer": "",
   "languages": [
-    "Marathi"
+    "Sanskrit"
   ],
   "subjectTags": [
     "Śirḍī Sāī",
@@ -38,7 +38,7 @@ window.SONG_META = {
     {
       "sequenceIndex": 0,
       "title": "Śrī Sāī Aṣṭottaraśatanāmāvalī",
-      "poet": "Traditional"
+      "poet": ""
     }
   ],
   "adaptedSequenceIndices": [],
@@ -48,7 +48,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "line-001": {
     "source": "ॐ श्री साईनाथाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -107,7 +107,7 @@ window.SONG_LINES = {
   },
   "line-002": {
     "source": "ॐ लक्ष्मीनारायणाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -154,7 +154,7 @@ window.SONG_LINES = {
   },
   "line-003": {
     "source": "ॐ कृष्णरामशिवमारुत्यादिरूपाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -201,7 +201,7 @@ window.SONG_LINES = {
   },
   "line-004": {
     "source": "ॐ शेषशायिने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -248,7 +248,7 @@ window.SONG_LINES = {
   },
   "line-005": {
     "source": "ॐ गोदावरीतटशिरडीवासिने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -295,7 +295,7 @@ window.SONG_LINES = {
   },
   "line-006": {
     "source": "ॐ भक्तहृदालयाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -342,7 +342,7 @@ window.SONG_LINES = {
   },
   "line-007": {
     "source": "ॐ सर्वहृन्निलयाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -389,7 +389,7 @@ window.SONG_LINES = {
   },
   "line-008": {
     "source": "ॐ भूतावासाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -436,7 +436,7 @@ window.SONG_LINES = {
   },
   "line-009": {
     "source": "ॐ भूतभविष्यद्भाववर्जिताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -483,7 +483,7 @@ window.SONG_LINES = {
   },
   "line-010": {
     "source": "ॐ कालातीताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -530,7 +530,7 @@ window.SONG_LINES = {
   },
   "line-011": {
     "source": "ॐ कालाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -577,7 +577,7 @@ window.SONG_LINES = {
   },
   "line-012": {
     "source": "ॐ कालकालाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -624,7 +624,7 @@ window.SONG_LINES = {
   },
   "line-013": {
     "source": "ॐ कालदर्पदमनाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -671,7 +671,7 @@ window.SONG_LINES = {
   },
   "line-014": {
     "source": "ॐ मृत्युञ्जयाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -718,7 +718,7 @@ window.SONG_LINES = {
   },
   "line-015": {
     "source": "ॐ अमर्त्याय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -765,7 +765,7 @@ window.SONG_LINES = {
   },
   "line-016": {
     "source": "ॐ मर्त्याभयप्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -812,7 +812,7 @@ window.SONG_LINES = {
   },
   "line-017": {
     "source": "ॐ जीवाधाराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -859,7 +859,7 @@ window.SONG_LINES = {
   },
   "line-018": {
     "source": "ॐ सर्वाधाराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -906,7 +906,7 @@ window.SONG_LINES = {
   },
   "line-019": {
     "source": "ॐ भक्तावनसमर्थाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -953,7 +953,7 @@ window.SONG_LINES = {
   },
   "line-020": {
     "source": "ॐ भक्तावनप्रतिज्ञाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1000,7 +1000,7 @@ window.SONG_LINES = {
   },
   "line-021": {
     "source": "ॐ अन्नवस्त्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1047,7 +1047,7 @@ window.SONG_LINES = {
   },
   "line-022": {
     "source": "ॐ आरोग्यक्षेमदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1094,7 +1094,7 @@ window.SONG_LINES = {
   },
   "line-023": {
     "source": "ॐ धनमाङ्गल्यप्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1141,7 +1141,7 @@ window.SONG_LINES = {
   },
   "line-024": {
     "source": "ॐ ऋद्धिसिद्धिदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1188,7 +1188,7 @@ window.SONG_LINES = {
   },
   "line-025": {
     "source": "ॐ पुत्रमित्रकलत्रबन्धुदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1235,7 +1235,7 @@ window.SONG_LINES = {
   },
   "line-026": {
     "source": "ॐ योगक्षेमवहाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1282,7 +1282,7 @@ window.SONG_LINES = {
   },
   "line-027": {
     "source": "ॐ आपद्बान्धवाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1329,7 +1329,7 @@ window.SONG_LINES = {
   },
   "line-028": {
     "source": "ॐ मार्गबन्धवे नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1376,7 +1376,7 @@ window.SONG_LINES = {
   },
   "line-029": {
     "source": "ॐ भुक्तिमुक्तिस्वर्गापवर्गदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1423,7 +1423,7 @@ window.SONG_LINES = {
   },
   "line-030": {
     "source": "ॐ प्रियाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1470,7 +1470,7 @@ window.SONG_LINES = {
   },
   "line-031": {
     "source": "ॐ प्रीतिवर्धनाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1517,7 +1517,7 @@ window.SONG_LINES = {
   },
   "line-032": {
     "source": "ॐ अन्तर्यामिने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1564,7 +1564,7 @@ window.SONG_LINES = {
   },
   "line-033": {
     "source": "ॐ सच्चिदात्मने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1611,7 +1611,7 @@ window.SONG_LINES = {
   },
   "line-034": {
     "source": "ॐ नित्यानन्दाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1658,7 +1658,7 @@ window.SONG_LINES = {
   },
   "line-035": {
     "source": "ॐ परमसुखदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1705,7 +1705,7 @@ window.SONG_LINES = {
   },
   "line-036": {
     "source": "ॐ परमेश्वराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1752,7 +1752,7 @@ window.SONG_LINES = {
   },
   "line-037": {
     "source": "ॐ परब्रह्मणे नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1799,7 +1799,7 @@ window.SONG_LINES = {
   },
   "line-038": {
     "source": "ॐ परमात्मने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1846,7 +1846,7 @@ window.SONG_LINES = {
   },
   "line-039": {
     "source": "ॐ ज्ञानस्वरूपिणे नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1893,7 +1893,7 @@ window.SONG_LINES = {
   },
   "line-040": {
     "source": "ॐ जगत्पित्रे नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1940,7 +1940,7 @@ window.SONG_LINES = {
   },
   "line-041": {
     "source": "ॐ भक्तानां मातृधातृपितामहाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1999,7 +1999,7 @@ window.SONG_LINES = {
   },
   "line-042": {
     "source": "ॐ भक्ताभयप्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2046,7 +2046,7 @@ window.SONG_LINES = {
   },
   "line-043": {
     "source": "ॐ भक्तपराधीनाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2093,7 +2093,7 @@ window.SONG_LINES = {
   },
   "line-044": {
     "source": "ॐ भक्तानुग्रहकातराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2140,7 +2140,7 @@ window.SONG_LINES = {
   },
   "line-045": {
     "source": "ॐ शरणागतवत्सलाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2187,7 +2187,7 @@ window.SONG_LINES = {
   },
   "line-046": {
     "source": "ॐ भक्तिशक्तिप्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2234,7 +2234,7 @@ window.SONG_LINES = {
   },
   "line-047": {
     "source": "ॐ ज्ञानवैराग्यदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2281,7 +2281,7 @@ window.SONG_LINES = {
   },
   "line-048": {
     "source": "ॐ प्रेमप्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2328,7 +2328,7 @@ window.SONG_LINES = {
   },
   "line-049": {
     "source": "ॐ संशय हृदयदौर्बल्य पापकर्म वासनाक्षयकराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2411,7 +2411,7 @@ window.SONG_LINES = {
   },
   "line-050": {
     "source": "ॐ हृदयग्रन्थिभेदकाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2458,7 +2458,7 @@ window.SONG_LINES = {
   },
   "line-051": {
     "source": "ॐ कर्मध्वंसिने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2505,7 +2505,7 @@ window.SONG_LINES = {
   },
   "line-052": {
     "source": "ॐ शुद्धसत्त्वस्थिताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2552,7 +2552,7 @@ window.SONG_LINES = {
   },
   "line-053": {
     "source": "ॐ गुणातीतगुणात्मने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2599,7 +2599,7 @@ window.SONG_LINES = {
   },
   "line-054": {
     "source": "ॐ अनन्तकल्याणगुणाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2646,7 +2646,7 @@ window.SONG_LINES = {
   },
   "line-055": {
     "source": "ॐ अमितपराक्रमाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2693,7 +2693,7 @@ window.SONG_LINES = {
   },
   "line-056": {
     "source": "ॐ जयिने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2740,7 +2740,7 @@ window.SONG_LINES = {
   },
   "line-057": {
     "source": "ॐ दुर्धर्षाक्षोभ्याय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2787,7 +2787,7 @@ window.SONG_LINES = {
   },
   "line-058": {
     "source": "ॐ अपराजिताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2834,7 +2834,7 @@ window.SONG_LINES = {
   },
   "line-059": {
     "source": "ॐ त्रिलोकेष्वविघातगतये नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2881,7 +2881,7 @@ window.SONG_LINES = {
   },
   "line-060": {
     "source": "ॐ अशक्यरहिताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2928,7 +2928,7 @@ window.SONG_LINES = {
   },
   "line-061": {
     "source": "ॐ सर्वशक्तिमूर्तये नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -2975,7 +2975,7 @@ window.SONG_LINES = {
   },
   "line-062": {
     "source": "ॐ सुरूपसुन्दराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3022,7 +3022,7 @@ window.SONG_LINES = {
   },
   "line-063": {
     "source": "ॐ सुलोचनाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3069,7 +3069,7 @@ window.SONG_LINES = {
   },
   "line-064": {
     "source": "ॐ बहुरूपविश्वमूर्तये नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3116,7 +3116,7 @@ window.SONG_LINES = {
   },
   "line-065": {
     "source": "ॐ अरूपाव्यक्ताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3163,7 +3163,7 @@ window.SONG_LINES = {
   },
   "line-066": {
     "source": "ॐ अचिन्त्याय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3210,7 +3210,7 @@ window.SONG_LINES = {
   },
   "line-067": {
     "source": "ॐ सूक्ष्माय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3257,7 +3257,7 @@ window.SONG_LINES = {
   },
   "line-068": {
     "source": "ॐ सर्वान्तर्यामिने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3304,7 +3304,7 @@ window.SONG_LINES = {
   },
   "line-069": {
     "source": "ॐ मनोवागतीताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3351,7 +3351,7 @@ window.SONG_LINES = {
   },
   "line-070": {
     "source": "ॐ प्रेममूर्तये नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3398,7 +3398,7 @@ window.SONG_LINES = {
   },
   "line-071": {
     "source": "ॐ सुलभदुर्लभाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3445,7 +3445,7 @@ window.SONG_LINES = {
   },
   "line-072": {
     "source": "ॐ असहायसहायाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3492,7 +3492,7 @@ window.SONG_LINES = {
   },
   "line-073": {
     "source": "ॐ अनाथनाथदीनबन्धवे नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3539,7 +3539,7 @@ window.SONG_LINES = {
   },
   "line-074": {
     "source": "ॐ सर्वभारभृते नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3586,7 +3586,7 @@ window.SONG_LINES = {
   },
   "line-075": {
     "source": "ॐ अकर्मानेककर्मसुकर्मिणे नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3633,7 +3633,7 @@ window.SONG_LINES = {
   },
   "line-076": {
     "source": "ॐ पुण्यश्रवणकीर्तनाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3680,7 +3680,7 @@ window.SONG_LINES = {
   },
   "line-077": {
     "source": "ॐ तीर्थाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3727,7 +3727,7 @@ window.SONG_LINES = {
   },
   "line-078": {
     "source": "ॐ वासुदेवाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3774,7 +3774,7 @@ window.SONG_LINES = {
   },
   "line-079": {
     "source": "ॐ सतांगतये नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3821,7 +3821,7 @@ window.SONG_LINES = {
   },
   "line-080": {
     "source": "ॐ सत्परायणाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3868,7 +3868,7 @@ window.SONG_LINES = {
   },
   "line-081": {
     "source": "ॐ लोकनाथाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3915,7 +3915,7 @@ window.SONG_LINES = {
   },
   "line-082": {
     "source": "ॐ पावनानघाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -3962,7 +3962,7 @@ window.SONG_LINES = {
   },
   "line-083": {
     "source": "ॐ अमृतांशवे नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4009,7 +4009,7 @@ window.SONG_LINES = {
   },
   "line-084": {
     "source": "ॐ भास्करप्रभाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4056,7 +4056,7 @@ window.SONG_LINES = {
   },
   "line-085": {
     "source": "ॐ ब्रह्मचर्यतपश्चर्यादिसुव्रताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4103,7 +4103,7 @@ window.SONG_LINES = {
   },
   "line-086": {
     "source": "ॐ सत्यधर्मपरायणाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4150,7 +4150,7 @@ window.SONG_LINES = {
   },
   "line-087": {
     "source": "ॐ सिद्धेश्वराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4197,7 +4197,7 @@ window.SONG_LINES = {
   },
   "line-088": {
     "source": "ॐ सिद्धसङ्कल्पाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4244,7 +4244,7 @@ window.SONG_LINES = {
   },
   "line-089": {
     "source": "ॐ योगेश्वराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4291,7 +4291,7 @@ window.SONG_LINES = {
   },
   "line-090": {
     "source": "ॐ भगवते नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4338,7 +4338,7 @@ window.SONG_LINES = {
   },
   "line-091": {
     "source": "ॐ भक्तवत्सलाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4385,7 +4385,7 @@ window.SONG_LINES = {
   },
   "line-092": {
     "source": "ॐ सत्पुरुषाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4432,7 +4432,7 @@ window.SONG_LINES = {
   },
   "line-093": {
     "source": "ॐ पुरुषोत्तमाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4479,7 +4479,7 @@ window.SONG_LINES = {
   },
   "line-094": {
     "source": "ॐ सत्यतत्त्वबोधकाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4526,7 +4526,7 @@ window.SONG_LINES = {
   },
   "line-095": {
     "source": "ॐ कामादिषड्वैरिध्वंसिने नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4573,7 +4573,7 @@ window.SONG_LINES = {
   },
   "line-096": {
     "source": "ॐ अभेदानन्दानुभवप्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4620,7 +4620,7 @@ window.SONG_LINES = {
   },
   "line-097": {
     "source": "ॐ समसर्वसम्मताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4667,7 +4667,7 @@ window.SONG_LINES = {
   },
   "line-098": {
     "source": "ॐ श्री दक्षिणामूर्तये नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4726,7 +4726,7 @@ window.SONG_LINES = {
   },
   "line-099": {
     "source": "ॐ श्री वेङ्कटेशारमणाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4785,7 +4785,7 @@ window.SONG_LINES = {
   },
   "line-100": {
     "source": "ॐ अद्भुतानन्दचर्याय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4832,7 +4832,7 @@ window.SONG_LINES = {
   },
   "line-101": {
     "source": "ॐ प्रपन्नार्तिहराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4879,7 +4879,7 @@ window.SONG_LINES = {
   },
   "line-102": {
     "source": "ॐ संसारसर्वदुःखक्षयकराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4926,7 +4926,7 @@ window.SONG_LINES = {
   },
   "line-103": {
     "source": "ॐ सर्ववित्सर्वतोमुखाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -4973,7 +4973,7 @@ window.SONG_LINES = {
   },
   "line-104": {
     "source": "ॐ सर्वान्तर्बहिःस्थिताय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -5020,7 +5020,7 @@ window.SONG_LINES = {
   },
   "line-105": {
     "source": "ॐ सर्वमङ्गलकराय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -5067,7 +5067,7 @@ window.SONG_LINES = {
   },
   "line-106": {
     "source": "ॐ सर्वाभीष्टप्रदाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -5114,7 +5114,7 @@ window.SONG_LINES = {
   },
   "line-107": {
     "source": "ॐ समरससन्मार्गस्थापनाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -5161,7 +5161,7 @@ window.SONG_LINES = {
   },
   "line-108": {
     "source": "ॐ श्री समर्थ सद्गुरु साईनाथाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -5854,10 +5854,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 108.7,
-    "end": 114.0
+    "end": 114
   },
   {
-    "start": 114.0,
+    "start": 114,
     "end": 119.5
   },
   {

@@ -67,8 +67,8 @@ window.SONG_META = {
     {
       "sequenceIndex": 87,
       "title": "Aisā Yeī Bā Sāī Digambarā",
-      "poet": "Poet unresolved",
-      "note": "Attribution intentionally left unresolved."
+      "poet": "",
+      "note": ""
     },
     {
       "sequenceIndex": 108,
@@ -85,7 +85,7 @@ window.SONG_META = {
     {
       "sequenceIndex": 184,
       "title": "Mantra Puṣpāñjali",
-      "poet": "Vedic excerpts",
+      "poet": "",
       "note": "A ritual compilation rather than one authored song: Ṛgveda 10.90.16 opens it, the Kubera prayer is Taittirīya Āraṇyaka 1.31.6, and the sovereignty blessing is Aitareya Brāhmaṇa 8.15.1. These are anonymously transmitted Vedic texts."
     },
     {

@@ -5488,10 +5488,10 @@ window.BHAKTI_SONGS = [
   {
     "slug": "shejarti",
     "queueId": "e05904a2",
-    "title": "Shejarti",
+    "title": "Śrī Sāī Aṣṭottaraśatanāmāvalī",
     "credit": "",
     "languageTags": [
-      "Marathi"
+      "Sanskrit"
     ],
     "subjectTags": [
       "Śirḍī Sāī",
@@ -5582,7 +5582,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "shree-sai-aarti",
     "queueId": "2b47c991",
-    "title": "Shree Sai Aarti",
+    "title": "Āratī Sāī Bābā",
     "credit": "",
     "languageTags": [
       "Marathi"
