@@ -5,7 +5,7 @@
 Review all nine published songs in `data/scripture_metadata.json` against their
 actual recordings, repair transcription, IAST/symbols, timing, word mappings,
 glosses and English, and add four suitable recordings by existing performers.
-Use the approved Gemini/OpenRouter pipeline, then editorial review; third-party
+Use the owner-selected Together provider, then editorial review; third-party
 translations are comparison evidence, never replacement English. Preserve
 literal imagery, agency, repetition and source ambiguity. Publish scoped work.
 
@@ -14,16 +14,28 @@ readers and the catalogue were verified live: 19 files match the committed
 bytes. The slice contains 132 distinct reviewed proposal records and changes
 139 lines including danda cleanup.
 
-Next: resume the prepared 13-song batch when OpenRouter credits are restored,
-then complete audio-aware review and the four additions. The existing nine
-readers have now passed desktop and 390px browser layout checks. The
-batch stopped at credit preflight; no new audio, timing or translation model
-calls ran. The full goal is blocked and unfinished pending restored OpenRouter credits. The real callers are the library,
-song reader, hover/tap word mapping, and first-syllable player seek.
+Current continuation: minimal devotional tags are published in `7a026203` and
+all 19 deployed metadata files match the commit. Together credentials are
+configured locally; text requests work. Six Whisper clip responses omitted
+phrases and corrupted repeated lines, so full audio intake remains held.
+A short GPT-OSS gloss reconstruction also made substantive errors. A bounded candidate-only style review was attempted but produced no usable
+review packet. No Together proposal was applied and no review process remains
+running.
+
+Next: establish reliable text review and a qualified audio route before
+resuming the prepared 13-song batch. All nine existing readers passed desktop
+and 390px browser checks. Every-line first-syllable listening and the four new
+readers remain unfinished. The real callers are the library, song reader,
+hover/tap word mapping, and first-syllable player seek.
 
 ## Task list
 
 - [x] Inventory nine readers and assign parallel reviews.
+- [x] Publish minimal devotional tags without a separate Hari filter.
+- [x] Switch default text processing and hosted configuration to Together;
+  update credentials guidance and processing documentation.
+- [x] Run bounded sung-Punjabi audio qualification; preserve failed evidence.
+- [ ] Establish a replacement audio route that retains all sung occurrences.
 - [ ] Inspect every unique lyric and every performance occurrence against audio.
 - [ ] Correct mixed scripts, Romanization, punctuation and source word mapping.
 - [ ] Reconstruct glosses before deriving literal, intelligible poetic English.
@@ -70,8 +82,9 @@ calls for stylistic preference or hide unresolved fidelity flags.
 - Initial browser alias lookup failed. Browser inventory identified the working
   Codex in-app connection (ID 1); visual QA of the nine current readers is done.
 - Preserve all unrelated dirty/untracked intake work in the main workspace.
-- The configured OpenRouter account has exhausted its credit limit. No provider
-  substitution or automatic retry loop is authorized by this task's procedure.
+- The owner explicitly replaced OpenRouter with Together. The old credit hold
+  is superseded by failed Together audio qualification; see
+  [the pilot report](TOGETHER_AUDIO_QUALIFICATION.md). No silent provider fallback.
 
 ## Editorial slice and held audio questions
 
@@ -121,8 +134,8 @@ public contract; Merā and Terā retain only their pre-existing repetition
 findings, which need new audio/timing evidence. Seven source-witness tests and
 two mixed-script reader regressions pass, along with Python compilation and
 diff whitespace checks. No new recording or first-syllable verification is
-claimed. The full goal remains unfinished until credits allow its outstanding audio
-checks and additions.
+claimed. The full goal remains unfinished pending a qualified audio route for its
+outstanding checks and additions.
 
 Release evidence before editorial integration: 272 listener-audio inventories
 passed; 108 stored trim reviews passed; Python compilation passed. The full
@@ -170,13 +183,13 @@ returns exactly nine readers; searching the old title “Gagan Mein Thaal” fin
 the renamed reader. This verifies these visible interactions, not every lyric
 seek or a renewed comparison with the audio.
 
-The read-only OpenRouter account check still reports exhausted credits. All 13
+At that earlier checkpoint, the OpenRouter account reported exhausted credits. All 13
 prepared song directories have both original listener audio formats, and all
 fresh stage directories remain empty: there is no running pipeline to wait on.
 The previous goal turn made progress by publishing the editorial slice; this
 continuation completed the previously unavailable visual checks.
 
-## Dependency audit
+## Historical dependency audit (before the Together instruction)
 
 The original goal turn and both subsequent continuations confirmed the same
 exhausted OpenRouter account. The intervening turns completed editorial
@@ -204,3 +217,49 @@ owner's request to keep tags minimal and useful for devotional browsing.
 Per-song decisions and lyric evidence are stored in scripture_metadata.json
 and reapplied by the generator. Metadata-only validation confirms all lyrics,
 word maps, translations, order and timings are unchanged.
+
+The tag release passed the catalogue/metadata checks and mobile browser review.
+No standalone Hari filter was created.
+
+## Together migration validation
+
+Commit `02d5c5f8` is pushed and Pages deployment `39850497374` succeeded.
+Sixteen provider regressions, three preflight cases, and four text-review tests
+passed. The preflight permits deterministic generation, blocks unqualified
+Together audio before download/model requests, and does not query OpenRouter.
+Python compilation and diff checks passed. Listener audio-quality audit and
+108 stored trim reviews passed. The repository-wide content contract still
+reports existing migration findings, including the held Merā/Terā repetitions;
+this migration makes no source, timing, or translation changes.
+
+Together counts internal reasoning against the same token cap as the JSON
+response. After calls at 4,096–5,376 tokens returned empty final content, the
+style review allowance was raised to 16,384 tokens for GPT-OSS. The earlier
+calls are not counted as reviewed lines; their parser errors did not preserve
+finish reasons, so token exhaustion is an inference rather than a confirmed
+provider diagnostic.
+
+### Substantive text qualification outcome
+
+The tiny strict-schema canary succeeded with `openai/gpt-oss-120b`; this proves
+request/schema compatibility only. A separate one-line reconstruction and
+review produced wrong lexical readings (including `mai` as “I” and `janaka`
+as “creator”) and was rejected. Existing-gloss style batches with smaller caps
+returned empty final content. The remaining queued work was stopped; incomplete
+in-flight billing is unknown. One Gagan batch at 16,384 tokens and high reasoning
+then hit its 120-second read timeout. It was not retried; the remaining eight
+songs were not launched on that configuration. The conservative reserved cost
+ceiling across these style attempts was $0.0819411, not an actual billing total.
+
+A single distinct non-reasoning Qwen3-Next-80B-A3B-Instruct request was rejected
+with HTTP 400 `model_not_available`. Its
+[official model page](https://www.together.ai/models/qwen3-next-80b-a3b-instruct)
+requires a dedicated deployment. No endpoint was deployed, no retries were
+made, and no default was changed. Earlier Qwen3.6-Plus access was blocked by the
+account's third-party data-sharing policy; that policy was left unchanged.
+
+Private raw audio trials remain under song-local `.transcription/together-pilot/`.
+The isolated workspace preserves text qualification and Qwen response packets;
+local style-attempt logs and call journals record the failures. No fresh full
+transcription, timing pass, or complete nine-song Together review is claimed.
+The already published independent editorial review remains the textual baseline.

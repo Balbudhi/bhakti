@@ -30,9 +30,12 @@ review. If it is not Sanskrit, the normal pipeline continues unchanged.
   `~/.config/bhakti/together.key`. `BHAKTI_GEMINI_PROVIDER` is retained as the
   backward-compatible selector name and now defaults to `together`.
   `BHAKTI_MODEL` or `--model` selects a supported model explicitly.
-- **Current supported operation:** text-only review of existing readers:
+- **Available candidate-review command:** text-only review of existing readers:
   `python3 scripts/audit_translation_style.py SONG_SLUG --workers 2`.
-  Proposed changes still require editorial adjudication; the command never
+  Substantive GPT-OSS Gurbāṇī trials returned empty final content or timed out;
+  only small schema compatibility is established. See
+  [the task record](GURBANI_REVIEW_TASKS.md) for qualification limits.
+  Proposed changes require editorial adjudication; the command never
   overwrites public translations. `--generate-only` can regenerate reviewed
   pipeline artifacts. Together Batch/economy is not implemented in this client.
 - **Historical audio route:** `google/gemini-3.7-flash` through OpenRouter.
