@@ -14,7 +14,11 @@ from __future__ import annotations
 
 import argparse
 import base64
+import contextlib
+import fcntl
+import hashlib
 import json
+import math
 import os
 import re
 import sys
@@ -51,6 +55,168 @@ _API_SLOTS = threading.BoundedSemaphore(API_MAX_CONCURRENCY)
 _BATCH_SLOTS = threading.BoundedSemaphore(BATCH_MAX_CONCURRENCY)
 _API_START_LOCK = threading.Lock()
 _LAST_API_START = 0.0
+_LEDGER_LOCK = threading.Lock()
+_ABORTED_RUNS: set[str] = set()
+
+# The child receives headers through an anonymous pipe, never an argument,
+# environment addition, cache file or log. Only provider response bytes persist.
+_BOUNDED_HTTP_WORKER = r"""
+import json, os, sys, urllib.request, urllib.error
+from pathlib import Path
+job = json.load(sys.stdin)
+request = urllib.request.Request(job['url'], data=json.dumps(job['payload']).encode(),
+                                 headers=job['headers'], method='POST')
+try:
+    response = urllib.request.urlopen(request, timeout=job['timeout'])
+except urllib.error.HTTPError as error:
+    response = error
+with response:
+    raw = response.read()
+    path = Path(job['response_path'])
+    with open(path, 'wb') as output:
+        os.chmod(path, 0o600)
+        output.write(raw)
+    print(json.dumps({'http_status': response.code}))
+"""
+
+
+def _private_json(path: Path, value: Any) -> None:
+    temporary = path.with_name(path.name + "." + uuid.uuid4().hex + ".tmp")
+    with open(temporary, "w", encoding="utf-8") as output:
+        os.chmod(temporary, 0o600)
+        json.dump(value, output, ensure_ascii=False, indent=2)
+        output.write("\n")
+    temporary.replace(path)
+
+
+@contextlib.contextmanager
+def _locked_run_ledger(path: Path, budget: float):
+    """Serialize reservations across song threads and cooperating processes."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with _LEDGER_LOCK, open(path.with_suffix(path.suffix + ".lock"), "a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        ledger = (json.loads(path.read_text()) if path.exists() else
+                  {"version": 1, "budget_usd": budget, "requests": [], "blocked": False})
+        if ledger.get("version") != 1 or ledger.get("budget_usd") != budget:
+            raise RuntimeError("bounded API ledger version/budget differs; review before resuming")
+        yield ledger
+        _private_json(path, ledger)
+
+
+def _bounded_update(path: Path, budget: float, request_id: str, *, block: bool = False,
+                    **fields: Any) -> None:
+    if block:
+        # Even an unwritable ledger must stop this process dispatching again.
+        _ABORTED_RUNS.add(str(path))
+    with _locked_run_ledger(path, budget) as ledger:
+        row = next(item for item in ledger["requests"] if item["id"] == request_id)
+        row.update(fields)
+        if block:
+            ledger["blocked"] = True
+
+
+def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
+                  timeout: float) -> tuple[dict[str, Any], tuple[Path, float, str]]:
+    """Opt-in synchronous 3.7 run with prepaid reservations and hard deadlines.
+
+    BHAKTI_API_RUN_LEDGER and BHAKTI_API_RUN_BUDGET_USD enable this path.
+    Every failure blocks further dispatch through that ledger, including a
+    pipeline-level retry. Already active calls may finish and retain evidence.
+    Unknown outcomes keep their full reservation until explicit reconciliation.
+    """
+    path = Path(os.environ["BHAKTI_API_RUN_LEDGER"]).expanduser().resolve()
+    if str(path) in _ABORTED_RUNS:
+        raise RuntimeError("bounded API run is blocked; review saved evidence before another dispatch")
+    budget = float(os.environ.get("BHAKTI_API_RUN_BUDGET_USD", "0"))
+    cap = payload.get("max_tokens")
+    if (provider_name() != "openrouter" or payload.get("model") != GEMINI_MODEL
+            or not math.isfinite(budget) or budget <= 0
+            or type(cap) is not int or not 0 < cap <= 65536
+            or not math.isfinite(timeout) or timeout <= 0):
+        raise RuntimeError("bounded API requires OpenRouter Gemini 3.7, positive budget/deadline and explicit max_tokens <=65536")
+    # Reserve a conservative upper bound: UTF-8 bytes bound text tokens, and
+    # Google documents 32 tokens/second for native audio. No cache discount.
+    evidence = json.loads(json.dumps(payload))
+    for message in evidence.get("messages", []):
+        for part in message.get("content", []):
+            if part.get("type") == "input_audio":
+                encoded = part["input_audio"]["data"]
+                part["input_audio"]["data"] = {"base64_sha256": hashlib.sha256(encoded.encode()).hexdigest(),
+                                                "base64_bytes": len(encoded)}
+    audio_tokens = math.ceil(duration_seconds(audio) * 32) if audio is not None else 0
+    input_bound = len(json.dumps(evidence, ensure_ascii=False).encode()) + 1024 + audio_tokens
+    reservation = math.ceil((input_bound * .75 + cap * 3.75) / 1_000_000 * 1e8) / 1e8
+    payload["provider"] = {"only": ["google-ai-studio"], "order": ["google-ai-studio"],
+                           "ignore": ["google-ai-studio/flex", "google-ai-studio/priority"],
+                           "allow_fallbacks": False, "require_parameters": True,
+                           "max_price": {"prompt": .75, "completion": 3.75}}
+    evidence["provider"] = payload["provider"]
+    request_id = uuid.uuid4().hex
+    artifacts = path.parent / (path.stem + "-responses")
+    artifacts.mkdir(mode=0o700, exist_ok=True)
+    response_path = artifacts / (request_id + ".response.json")
+    with _locked_run_ledger(path, budget) as ledger:
+        if ledger.get("blocked"):
+            raise RuntimeError("bounded API run is blocked; review saved evidence before another dispatch")
+        committed = sum(row.get("reported_cost_usd", row["reservation_usd"]) for row in ledger["requests"])
+        if committed + reservation > budget:
+            raise RuntimeError("bounded API budget exhausted; no request sent")
+        ledger["requests"].append({"id": request_id, "status": "reserved", "started_at": time.time(),
+                                   "model": payload["model"], "reservation_usd": reservation,
+                                   "input_token_upper_bound": input_bound, "max_tokens": cap,
+                                   "response_path": str(response_path)})
+    started = time.monotonic()
+    job = {"url": API_URL, "payload": payload, "headers": request_headers("openrouter", api_key),
+           "response_path": str(response_path), "timeout": timeout}
+    worker = None
+    try:
+        _private_json(artifacts / (request_id + ".request.json"), evidence)
+        # A sibling may fail after this request reserves funds. Recheck while
+        # holding the same interprocess lock through the actual child launch.
+        with _locked_run_ledger(path, budget) as ledger:
+            if ledger.get("blocked") or str(path) in _ABORTED_RUNS:
+                raise RuntimeError("bounded API run blocked before dispatch")
+            worker = subprocess.Popen([sys.executable, "-c", _BOUNDED_HTTP_WORKER],
+                                      stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            row = next(item for item in ledger["requests"] if item["id"] == request_id)
+            row.update(status="dispatched", worker_pid=worker.pid)
+        stdout, _stderr = worker.communicate(input=json.dumps(job).encode(), timeout=timeout)
+        if worker.returncode:
+            raise RuntimeError("bounded HTTP worker failed")
+        status = json.loads(stdout)["http_status"]
+        raw = response_path.read_bytes()  # Exact bytes already persisted by child.
+        _bounded_update(path, budget, request_id, status="response-received", http_status=status,
+                        elapsed_seconds=round(time.monotonic() - started, 3))
+        result = json.loads(raw)
+        fields: dict[str, Any] = {"status": "response-received", "http_status": status,
+                                  "elapsed_seconds": round(time.monotonic() - started, 3),
+                                  "resolved_model": result.get("model"), "provider": result.get("provider"),
+                                  "usage": result.get("usage", {})}
+        cost = result.get("usage", {}).get("cost")
+        if type(cost) in (int, float) and math.isfinite(cost) and cost >= 0:
+            fields["reported_cost_usd"] = cost
+        _bounded_update(path, budget, request_id, **fields)
+        if status != 200:
+            raise RuntimeError(f"bounded API HTTP {status}; response retained")
+        return result, (path, budget, request_id)
+    except subprocess.TimeoutExpired as exc:
+        # Stop the network worker before touching storage: ledger I/O must not
+        # extend the deadline or leave an upstream request running locally.
+        if worker is not None and worker.poll() is None:
+            worker.kill()
+            worker.communicate()
+        _bounded_update(path, budget, request_id, block=True, status="unknown-outcome",
+                        elapsed_seconds=round(time.monotonic() - started, 3),
+                        error="hard wall deadline exceeded; upstream outcome and charge unknown")
+        raise RuntimeError("bounded API hard wall deadline exceeded; reservation retained, run blocked") from exc
+    except Exception as exc:
+        _bounded_update(path, budget, request_id, block=True, status="invalid-response",
+                        elapsed_seconds=round(time.monotonic() - started, 3), error=type(exc).__name__)
+        raise RuntimeError("bounded API response invalid; evidence retained and run blocked") from exc
+    finally:
+        if worker is not None and worker.poll() is None:
+            worker.kill()
+            worker.communicate()
 
 
 def _wait_for_api_start() -> None:
@@ -327,7 +493,12 @@ def call(
         payload["reasoning_effort"] = reasoning_effort
     if max_completion_tokens:
         payload["max_tokens"] = max_completion_tokens
-    if provider == "openrouter" and effective_model.endswith(":batch"):
+    bounded_context = None
+    if os.environ.get("BHAKTI_API_RUN_LEDGER"):
+        with _API_SLOTS:
+            _wait_for_api_start()
+            result, bounded_context = _bounded_call(payload, api_key, audio, timeout)
+    elif provider == "openrouter" and effective_model.endswith(":batch"):
         with _BATCH_SLOTS:
             _wait_for_api_start()
             result = call_batch(payload, api_key, timeout=timeout)
@@ -370,9 +541,28 @@ def call(
         if isinstance(text, list):
             text = "".join(part.get("text", "") for part in text if isinstance(part, dict))
         parsed = parse_json_packet(text)
-    except (KeyError, IndexError, TypeError, ValueError, json.JSONDecodeError) as exc:
+    except (KeyError, IndexError, TypeError, ValueError, json.JSONDecodeError, RuntimeError) as exc:
+        if bounded_context:
+            _bounded_update(*bounded_context, block=True, status="invalid-response",
+                            error="model content was not the required JSON object")
+            raise RuntimeError("bounded API response invalid; raw response retained and run blocked") from exc
+        if isinstance(exc, RuntimeError):
+            raise  # Preserve the unbounded client's previous exception behavior.
         preview = str(locals().get("text", ""))[:800]
         raise RuntimeError(f"{provider} model did not return the required JSON packet; content preview: {preview!r}") from exc
+    if bounded_context:
+        try:
+            _bounded_update(*bounded_context, status="parsed")
+        except Exception as exc:
+            # The response may be valid, but it cannot be treated as a safely
+            # checkpointed success. Poison this run even if storage stays down.
+            _ABORTED_RUNS.add(str(bounded_context[0]))
+            try:
+                _bounded_update(*bounded_context, block=True, status="invalid-response",
+                                error="could not finalize successful response in run ledger")
+            except Exception:
+                pass
+            raise RuntimeError("bounded API ledger finalization failed; run blocked") from exc
     return {"packet": parsed, "usage": result.get("usage", {}), "resolved_model": result.get("model", effective_model), "provider": provider}
 
 
