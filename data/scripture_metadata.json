@@ -1,0 +1,175 @@
+{
+  "gagan-mein-thaal": {
+    "writer": "Gurū Nānak",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "gagan-mai-thaal",
+        "title": "Gagana Mai Thālu",
+        "poet": "Gurū Nānak",
+        "note": "Gurū Granth Sāhib · Aṅg 13 · Rāga Dhanāsarī · Excerpts; also appears at aṅg 663.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=13"
+      }
+    ]
+  },
+  "gur-satgur-ka-jo-sikh-akhaye": {
+    "writer": "Gurū Rām Dās",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "refrain-1",
+        "title": "Gur Satigur Kā Jo Sikhu Akhāe",
+        "poet": "Gurū Rām Dās",
+        "note": "Gurū Granth Sāhib · Aṅg 305–306 · Gauṛī kī Vār · Salok, Mahallā 4.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=305"
+      }
+    ]
+  },
+  "har-jiyo-kirpa-karo": {
+    "writer": "Gurū Amar Dās",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "refrain-1",
+        "title": "Hari Jīu Kripā Karahu",
+        "poet": "Gurū Amar Dās",
+        "note": "Gurū Granth Sāhib · Aṅg 603–604 · Rāga Soraṭhi · Mahallā 3.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=603"
+      }
+    ]
+  },
+  "jo-nar-dukh-mein-dukh-nahin-jaane": {
+    "writer": "Gurū Teg Bahādar",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "line-000",
+        "title": "Jo Naru Dukh Mai Dukhu Nahī Mānai",
+        "poet": "Gurū Teg Bahādar",
+        "note": "Gurū Granth Sāhib · Aṅg 633 · Rāga Soraṭhi · Mahallā 9.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=633"
+      }
+    ]
+  },
+  "koee-aan-milavai-mera-pritam-pyara": {
+    "writer": "Gurū Rām Dās",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "koee-aan-milavai",
+        "title": "Koī Āṇi Milāvai Merā Prītamu Piārā",
+        "poet": "Gurū Rām Dās",
+        "note": "Gurū Granth Sāhib · Aṅg 757 · Rāga Sūhī · Mahallā 4 · Stanzas 1–6 and refrain.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=757"
+      }
+    ]
+  },
+  "so-dar-keha-so-ghar-keha": {
+    "writer": "Gurū Nānak",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 1,
+        "expectedRef": "so-dar-keha-1",
+        "title": "So Daru Kehā So Gharu Kehā",
+        "poet": "Gurū Nānak",
+        "note": "Gurū Granth Sāhib · Aṅg 6 · Japu Jī Sāhib · Pauṛī 27.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=6"
+      }
+    ]
+  },
+  "tera-kiya-meetha-laage": {
+    "writer": "Gurū Arjan",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "tera-kiya-meetha-laage",
+        "title": "Terā Kīā Mīṭhā Lāgai",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 394 · Rāga Āsā · Mahallā 5.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=394"
+      }
+    ]
+  },
+  "tu-thakur-tum-peh-ardas": {
+    "writer": "Gurū Arjan",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "tu-thakur-tum-peh-ardas",
+        "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 268 · Sukhmanī Sāhib · Aṣṭapadī 4, stanza 8.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=268"
+      }
+    ]
+  },
+  "mera-man-lochai": {
+    "writer": "Gurū Arjan · Gurū Rām Dās · Kabīr",
+    "sectionNotices": [
+      {
+        "sequenceIndex": 0,
+        "expectedRef": "line-000",
+        "title": "Merā Manu Locai",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 96–97 · Rāga Mājha · Mahallā 5.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=96"
+      },
+      {
+        "sequenceIndex": 66,
+        "expectedRef": "line-031",
+        "title": "Antari Piāsa Uṭhī Prabha Kerī",
+        "poet": "Gurū Rām Dās",
+        "note": "Gurū Granth Sāhib · Aṅg 835–836 · Rāga Bilāvalu · Mahallā 4 · Excerpt.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=835"
+      },
+      {
+        "sequenceIndex": 70,
+        "expectedRef": "line-000",
+        "title": "Merā Manu Locai",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=96"
+      },
+      {
+        "sequenceIndex": 71,
+        "expectedRef": "line-035",
+        "title": "Kaise Kahau Mohi Jīa Bedanāī",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 1206 · Rāga Sāraṅga · Mahallā 5 · Excerpt.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1206"
+      },
+      {
+        "sequenceIndex": 75,
+        "expectedRef": "line-039",
+        "title": "Panthu Nihārai Kāmanī",
+        "poet": "Kabīr",
+        "note": "Gurū Granth Sāhib · Aṅg 337 · Rāga Gauṛī · Kabīr · Stanza 1.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=337"
+      },
+      {
+        "sequenceIndex": 79,
+        "expectedRef": "line-000",
+        "title": "Merā Manu Locai",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=96"
+      },
+      {
+        "sequenceIndex": 80,
+        "expectedRef": "line-043",
+        "title": "Darasana Piāsī Dinasu Rāti",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 703 · Rāga Jaitasarī · Mahallā 5 · Salok.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=703"
+      },
+      {
+        "sequenceIndex": 84,
+        "expectedRef": "line-000",
+        "title": "Merā Manu Locai",
+        "poet": "Gurū Arjan",
+        "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain.",
+        "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=96"
+      }
+    ]
+  }
+}

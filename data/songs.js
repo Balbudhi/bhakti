@@ -847,15 +847,23 @@ window.BHAKTI_SONGS = [
     "slug": "gur-satgur-ka-jo-sikh-akhaye",
     "queueId": "798a5adc",
     "title": "Gur Satgur Ka Jo Sikh Akhaye",
-    "credit": "Guru Ram Das · Bhai Harjinder Singh",
+    "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Gur Satgur Ka Jo Sikh Akhaaye"
+    "subjectTags": [
+      "Gurbāṇī"
     ],
-    "writer": "Guru Ram Das",
+    "searchAliases": [
+      "Gur Satgur Ka Jo Sikh Akhaaye",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Rām Dās"
+    ],
+    "writer": "Gurū Rām Dās",
     "singer": "Bhai Harjinder Singh",
     "composer": "",
     "audioSources": [
@@ -902,17 +910,25 @@ window.BHAKTI_SONGS = [
     "slug": "koee-aan-milavai-mera-pritam-pyara",
     "queueId": "d16c821a",
     "title": "Koī Āṇi Milāvai Merā Prītamu Piārā",
-    "credit": "Guru Arjan · Bhai Harjinder Singh",
+    "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
     "searchAliases": [
       "Koi Ani Milavai Mera Pritamu Piara",
       "Koi Aan Milave Mera Pritam Pyara",
-      "Koi Aan Milave"
+      "Koi Aan Milave",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Rām Dās"
     ],
-    "writer": "Guru Arjan",
+    "writer": "Gurū Rām Dās",
     "singer": "Bhai Harjinder Singh",
     "composer": "",
     "audioSources": [
@@ -960,17 +976,25 @@ window.BHAKTI_SONGS = [
     "slug": "tu-thakur-tum-peh-ardas",
     "queueId": "86f7320f",
     "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
-    "credit": "Guru Arjan · Bhai Harjinder Singh",
+    "credit": "Gurū Arjan · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
     "searchAliases": [
       "Tũ Thakuru Tum Pehi Ardasi ॥",
       "Tu Thakur Tum Pe Ardas",
-      "Tu Thakur Tum Pahey Ardas"
+      "Tu Thakur Tum Pahey Ardas",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Arjan"
     ],
-    "writer": "Guru Arjan",
+    "writer": "Gurū Arjan",
     "singer": "Bhai Harjinder Singh",
     "composer": "",
     "audioSources": [
@@ -989,15 +1013,23 @@ window.BHAKTI_SONGS = [
     "slug": "tera-kiya-meetha-laage",
     "queueId": "0da4181a",
     "title": "Tera Kiya Meetha Laage",
-    "credit": "Guru Arjan · Bhai Lakhwinder Singh",
+    "credit": "Gurū Arjan · Bhai Lakhwinder Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Tera Kiya Meetha Lage"
+    "subjectTags": [
+      "Gurbāṇī"
     ],
-    "writer": "Guru Arjan",
+    "searchAliases": [
+      "Tera Kiya Meetha Lage",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Arjan"
+    ],
+    "writer": "Gurū Arjan",
     "singer": "Bhai Lakhwinder Singh",
     "composer": "",
     "audioSources": [
@@ -1016,16 +1048,24 @@ window.BHAKTI_SONGS = [
     "slug": "gagan-mein-thaal",
     "queueId": "947be942",
     "title": "Gagan Mein Thaal",
-    "credit": "Guru Nanak · Bhai Nirmal Singh · Uttam Singh",
+    "credit": "Gurū Nānak · Bhai Nirmal Singh · Uttam Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
     "searchAliases": [
       "Gagan Mein Thaal Rav Chand Deepak Bane",
-      "Guru Nanak Aarti"
+      "Guru Nanak Aarti",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Nānak"
     ],
-    "writer": "Guru Nanak",
+    "writer": "Gurū Nānak",
     "singer": "Bhai Nirmal Singh",
     "composer": "Uttam Singh",
     "audioSources": [
@@ -1044,15 +1084,23 @@ window.BHAKTI_SONGS = [
     "slug": "jo-nar-dukh-mein-dukh-nahin-jaane",
     "queueId": "ec1f7376",
     "title": "Jo Nar Dukh Mein Dukh Nahin Jaane",
-    "credit": "Guru Tegh Bahadur · Bhai Nirmal Singh Khalsa",
+    "credit": "Gurū Teg Bahādar · Bhai Nirmal Singh Khalsa",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Jo Nar Dukh Mein Dukh Nahi Mane"
+    "subjectTags": [
+      "Gurbāṇī"
     ],
-    "writer": "Guru Tegh Bahadur",
+    "searchAliases": [
+      "Jo Nar Dukh Mein Dukh Nahi Mane",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Teg Bahādar"
+    ],
+    "writer": "Gurū Teg Bahādar",
     "singer": "Bhai Nirmal Singh Khalsa",
     "composer": "",
     "audioSources": [
@@ -1071,15 +1119,23 @@ window.BHAKTI_SONGS = [
     "slug": "mera-man-lochai",
     "queueId": "03b91d44",
     "title": "Mera Man Lochai",
-    "credit": "Guru Arjan · Bhai Nirmal Singh Khalsa",
+    "credit": "Gurū Arjan · Gurū Rām Dās · Kabīr · Bhai Nirmal Singh Khalsa",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Mera Man Lochai Gur Darshan Tai"
+    "subjectTags": [
+      "Gurbāṇī"
     ],
-    "writer": "Guru Arjan",
+    "searchAliases": [
+      "Mera Man Lochai Gur Darshan Tai",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Arjan · Gurū Rām Dās · Kabīr"
+    ],
+    "writer": "Gurū Arjan · Gurū Rām Dās · Kabīr",
     "singer": "Bhai Nirmal Singh Khalsa",
     "composer": "",
     "audioSources": [
@@ -1098,16 +1154,24 @@ window.BHAKTI_SONGS = [
     "slug": "so-dar-keha-so-ghar-keha",
     "queueId": "b91e295a",
     "title": "So Dar Keha So Ghar Keha",
-    "credit": "Guru Nanak · Bhai Nirmal Singh Khalsa",
+    "credit": "Gurū Nānak · Bhai Nirmal Singh Khalsa",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
     "searchAliases": [
       "So Dar Keha",
-      "So Dar Tera Keha So Ghar Keha"
+      "So Dar Tera Keha So Ghar Keha",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Nānak"
     ],
-    "writer": "Guru Nanak",
+    "writer": "Gurū Nānak",
     "singer": "Bhai Nirmal Singh Khalsa",
     "composer": "",
     "audioSources": [
@@ -1126,15 +1190,23 @@ window.BHAKTI_SONGS = [
     "slug": "har-jiyo-kirpa-karo",
     "queueId": "3cf96b53",
     "title": "Har Jiyo Kirpa Karo",
-    "credit": "Guru Amar Das · Bhai Satwinder Singh & Bhai Harwinder Singh",
+    "credit": "Gurū Amar Dās · Bhai Satwinder Singh & Bhai Harwinder Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Har Jiyo Kripa Karo Tum Pyare"
+    "subjectTags": [
+      "Gurbāṇī"
     ],
-    "writer": "Guru Amar Das",
+    "searchAliases": [
+      "Har Jiyo Kripa Karo Tum Pyare",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Guru Granth Sahib",
+      "Gurū Amar Dās"
+    ],
+    "writer": "Gurū Amar Dās",
     "singer": "Bhai Satwinder Singh & Bhai Harwinder Singh",
     "composer": "",
     "audioSources": [

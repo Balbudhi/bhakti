@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "So Dar Keha So Ghar Keha",
   "subtitle": "",
-  "credit": "Guru Nanak · Bhai Nirmal Singh Khalsa",
+  "credit": "Gurū Nānak · Bhai Nirmal Singh Khalsa",
   "pageCredit": "Bhai Nirmal Singh Khalsa",
-  "writer": "Guru Nanak",
+  "writer": "Gurū Nānak",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,10 +14,18 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
     "So Dar Keha",
-    "So Dar Tera Keha So Ghar Keha"
+    "So Dar Tera Keha So Ghar Keha",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Nānak"
   ],
   "audioSources": [
     {
@@ -31,7 +39,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 1,
+      "title": "So Daru Kehā So Gharu Kehā",
+      "poet": "Gurū Nānak",
+      "note": "Gurū Granth Sāhib · Aṅg 6 · Japu Jī Sāhib · Pauṛī 27."
+    }
+  ]
 };
 
 window.SONG_LINES = {

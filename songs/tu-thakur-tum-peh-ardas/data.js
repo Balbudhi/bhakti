@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
   "subtitle": "",
-  "credit": "Guru Arjan · Bhai Harjinder Singh",
+  "credit": "Gurū Arjan · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
-  "writer": "Guru Arjan",
+  "writer": "Gurū Arjan",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,11 +14,19 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
     "Tũ Thakuru Tum Pehi Ardasi ॥",
     "Tu Thakur Tum Pe Ardas",
-    "Tu Thakur Tum Pahey Ardas"
+    "Tu Thakur Tum Pahey Ardas",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Arjan"
   ],
   "audioSources": [
     {
@@ -32,7 +40,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 268 · Sukhmanī Sāhib · Aṣṭapadī 4, stanza 8."
+    }
+  ]
 };
 
 window.SONG_LINES = {

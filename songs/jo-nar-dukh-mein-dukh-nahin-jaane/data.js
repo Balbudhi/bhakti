@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Jo Nar Dukh Mein Dukh Nahin Jaane",
   "subtitle": "",
-  "credit": "Guru Tegh Bahadur · Bhai Nirmal Singh Khalsa",
+  "credit": "Gurū Teg Bahādar · Bhai Nirmal Singh Khalsa",
   "pageCredit": "Bhai Nirmal Singh Khalsa",
-  "writer": "Guru Tegh Bahadur",
+  "writer": "Gurū Teg Bahādar",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,9 +14,17 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
-    "Jo Nar Dukh Mein Dukh Nahi Mane"
+    "Jo Nar Dukh Mein Dukh Nahi Mane",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Teg Bahādar"
   ],
   "audioSources": [
     {
@@ -30,7 +38,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Jo Naru Dukh Mai Dukhu Nahī Mānai",
+      "poet": "Gurū Teg Bahādar",
+      "note": "Gurū Granth Sāhib · Aṅg 633 · Rāga Soraṭhi · Mahallā 9."
+    }
+  ]
 };
 
 window.SONG_LINES = {

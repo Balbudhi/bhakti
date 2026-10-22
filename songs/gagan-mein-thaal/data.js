@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Gagan Mein Thaal",
   "subtitle": "",
-  "credit": "Guru Nanak · Bhai Nirmal Singh · Uttam Singh",
+  "credit": "Gurū Nānak · Bhai Nirmal Singh · Uttam Singh",
   "pageCredit": "Bhai Nirmal Singh",
-  "writer": "Guru Nanak",
+  "writer": "Gurū Nānak",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,10 +14,18 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
     "Gagan Mein Thaal Rav Chand Deepak Bane",
-    "Guru Nanak Aarti"
+    "Guru Nanak Aarti",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Nānak"
   ],
   "audioSources": [
     {
@@ -31,7 +39,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Gagana Mai Thālu",
+      "poet": "Gurū Nānak",
+      "note": "Gurū Granth Sāhib · Aṅg 13 · Rāga Dhanāsarī · Excerpts; also appears at aṅg 663."
+    }
+  ]
 };
 
 window.SONG_LINES = {

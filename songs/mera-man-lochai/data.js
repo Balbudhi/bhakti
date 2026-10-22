@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Mera Man Lochai",
   "subtitle": "",
-  "credit": "Guru Arjan · Bhai Nirmal Singh Khalsa",
+  "credit": "Gurū Arjan · Gurū Rām Dās · Kabīr · Bhai Nirmal Singh Khalsa",
   "pageCredit": "Bhai Nirmal Singh Khalsa",
-  "writer": "Guru Arjan",
+  "writer": "Gurū Arjan · Gurū Rām Dās · Kabīr",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,9 +14,17 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
-    "Mera Man Lochai Gur Darshan Tai"
+    "Mera Man Lochai Gur Darshan Tai",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Arjan · Gurū Rām Dās · Kabīr"
   ],
   "audioSources": [
     {
@@ -30,7 +38,57 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Merā Manu Locai",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 96–97 · Rāga Mājha · Mahallā 5."
+    },
+    {
+      "sequenceIndex": 66,
+      "title": "Antari Piāsa Uṭhī Prabha Kerī",
+      "poet": "Gurū Rām Dās",
+      "note": "Gurū Granth Sāhib · Aṅg 835–836 · Rāga Bilāvalu · Mahallā 4 · Excerpt."
+    },
+    {
+      "sequenceIndex": 70,
+      "title": "Merā Manu Locai",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain."
+    },
+    {
+      "sequenceIndex": 71,
+      "title": "Kaise Kahau Mohi Jīa Bedanāī",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 1206 · Rāga Sāraṅga · Mahallā 5 · Excerpt."
+    },
+    {
+      "sequenceIndex": 75,
+      "title": "Panthu Nihārai Kāmanī",
+      "poet": "Kabīr",
+      "note": "Gurū Granth Sāhib · Aṅg 337 · Rāga Gauṛī · Kabīr · Stanza 1."
+    },
+    {
+      "sequenceIndex": 79,
+      "title": "Merā Manu Locai",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain."
+    },
+    {
+      "sequenceIndex": 80,
+      "title": "Darasana Piāsī Dinasu Rāti",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 703 · Rāga Jaitasarī · Mahallā 5 · Salok."
+    },
+    {
+      "sequenceIndex": 84,
+      "title": "Merā Manu Locai",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain."
+    }
+  ]
 };
 
 window.SONG_LINES = {

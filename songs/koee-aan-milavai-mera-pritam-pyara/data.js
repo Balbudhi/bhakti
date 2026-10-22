@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Koī Āṇi Milāvai Merā Prītamu Piārā",
   "subtitle": "",
-  "credit": "Guru Arjan · Bhai Harjinder Singh",
+  "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
-  "writer": "Guru Arjan",
+  "writer": "Gurū Rām Dās",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,11 +14,19 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
     "Koi Ani Milavai Mera Pritamu Piara",
     "Koi Aan Milave Mera Pritam Pyara",
-    "Koi Aan Milave"
+    "Koi Aan Milave",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Rām Dās"
   ],
   "audioSources": [
     {
@@ -32,7 +40,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Koī Āṇi Milāvai Merā Prītamu Piārā",
+      "poet": "Gurū Rām Dās",
+      "note": "Gurū Granth Sāhib · Aṅg 757 · Rāga Sūhī · Mahallā 4 · Stanzas 1–6 and refrain."
+    }
+  ]
 };
 
 window.SONG_LINES = {

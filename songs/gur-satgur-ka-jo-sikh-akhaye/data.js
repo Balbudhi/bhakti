@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Gur Satgur Ka Jo Sikh Akhaye",
   "subtitle": "",
-  "credit": "Guru Ram Das · Bhai Harjinder Singh",
+  "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
-  "writer": "Guru Ram Das",
+  "writer": "Gurū Rām Dās",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,9 +14,17 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
-    "Gur Satgur Ka Jo Sikh Akhaaye"
+    "Gur Satgur Ka Jo Sikh Akhaaye",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Rām Dās"
   ],
   "audioSources": [
     {
@@ -30,7 +38,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Gur Satigur Kā Jo Sikhu Akhāe",
+      "poet": "Gurū Rām Dās",
+      "note": "Gurū Granth Sāhib · Aṅg 305–306 · Gauṛī kī Vār · Salok, Mahallā 4."
+    }
+  ]
 };
 
 window.SONG_LINES = {

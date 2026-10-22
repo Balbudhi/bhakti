@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Tera Kiya Meetha Laage",
   "subtitle": "",
-  "credit": "Guru Arjan · Bhai Lakhwinder Singh",
+  "credit": "Gurū Arjan · Bhai Lakhwinder Singh",
   "pageCredit": "Bhai Lakhwinder Singh",
-  "writer": "Guru Arjan",
+  "writer": "Gurū Arjan",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,9 +14,17 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
-    "Tera Kiya Meetha Lage"
+    "Tera Kiya Meetha Lage",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Arjan"
   ],
   "audioSources": [
     {
@@ -30,7 +38,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Terā Kīā Mīṭhā Lāgai",
+      "poet": "Gurū Arjan",
+      "note": "Gurū Granth Sāhib · Aṅg 394 · Rāga Āsā · Mahallā 5."
+    }
+  ]
 };
 
 window.SONG_LINES = {

@@ -38,6 +38,7 @@ import resolve_youtube_music_audio as ytmusic
 import tag_taxonomy
 import source_word_map
 import source_witness
+import scripture_metadata
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -3217,6 +3218,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     labels = reviewed_line_labels(job, lines)
     if labels:
         meta["lineLabels"] = labels
+    scripture_metadata.apply(meta, song_dir.name, sequence)
     data = ("window.SONG_META = " + json.dumps(meta, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_LINES = " + json.dumps(line_data, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +

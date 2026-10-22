@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Har Jiyo Kirpa Karo",
   "subtitle": "",
-  "credit": "Guru Amar Das · Bhai Satwinder Singh & Bhai Harwinder Singh",
+  "credit": "Gurū Amar Dās · Bhai Satwinder Singh & Bhai Harwinder Singh",
   "pageCredit": "Bhai Satwinder Singh & Bhai Harwinder Singh",
-  "writer": "Guru Amar Das",
+  "writer": "Gurū Amar Dās",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -14,9 +14,17 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
-    "Har Jiyo Kripa Karo Tum Pyare"
+    "Har Jiyo Kripa Karo Tum Pyare",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Guru Granth Sahib",
+    "Gurū Amar Dās"
   ],
   "audioSources": [
     {
@@ -30,7 +38,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Hari Jīu Kripā Karahu",
+      "poet": "Gurū Amar Dās",
+      "note": "Gurū Granth Sāhib · Aṅg 603–604 · Rāga Soraṭhi · Mahallā 3."
+    }
+  ]
 };
 
 window.SONG_LINES = {
