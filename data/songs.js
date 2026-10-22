@@ -8265,5 +8265,44 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Viṣṇu",
     "queueNumber": 265
+  },
+  {
+    "slug": "kolaru-pathigam",
+    "queueId": "bda159b5",
+    "title": "Kōḷaṟu Pātikam",
+    "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Kōlaṟu Patikam",
+      "Kolaru Patikam",
+      "Shiva",
+      "Siva",
+      "Tirujnyanasambandar · Dharmapuram P. Swaminathan",
+      "Tirujnanasambandar · Dharmapuram P. Swaminathan",
+      "Tirujnyanasambandar",
+      "Tirujnanasambandar",
+      "Vaiyour Tholipangan",
+      "Kolaru Thirupathikam"
+    ],
+    "writer": "Tirujñānasambandar",
+    "singer": "Dharmapuram P. Swaminathan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śiva",
+    "queueNumber": 266
   }
 ];

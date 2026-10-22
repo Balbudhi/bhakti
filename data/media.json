@@ -1182,6 +1182,18 @@
         "sha256": "2e050a19ad203c0d2db6217cb22c26cca64cf9c244357c7fef0fde0be85e4a08"
       }
     ],
+    "kolaru-pathigam": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "de7514be8fe71487a1f1b69bc75733fcd1d7bb8d4b919978d6caa5078a6ef1a0"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.m4a",
+        "type": "audio/mp4",
+        "sha256": "870671f6e323d74f49e880181524db6d1d41cc3ea9663a3558164ed92c6de311"
+      }
+    ],
     "koodarai-vellum-seer-govinda": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koodarai-vellum-seer-govinda.webm",
