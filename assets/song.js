@@ -631,11 +631,13 @@ function render() {
 
 /* ----- Tooltip (single, reused) ----- */
 let tooltipEl = null;
+let tooltipAnchor = null;
 function ensureTooltip() {
   if (tooltipEl) return tooltipEl;
   tooltipEl = document.createElement("div");
   tooltipEl.className = "word-tooltip";
   tooltipEl.setAttribute("role", "tooltip");
+  tooltipEl.tabIndex = -1;
   tooltipEl.hidden = true;
   document.body.appendChild(tooltipEl);
   return tooltipEl;
@@ -658,7 +660,11 @@ function placeTooltip(tip, anchor) {
   const gap = 8;
   const rootTop = document.getElementById("songRoot")?.getBoundingClientRect().top;
   const safeTop = Math.max(margin, Number.isFinite(rootTop) ? rootTop : margin);
-  const safeBottom = viewportHeight - margin;
+  const playerRect = document.querySelector(".audio-player")?.getBoundingClientRect();
+  const playerVisible = playerRect && playerRect.width > 0 && playerRect.height > 0
+    && playerRect.bottom > 0 && playerRect.top < viewportHeight;
+  const safeBottom = Math.min(viewportHeight - margin,
+    playerVisible ? playerRect.top - margin : viewportHeight - margin);
 
   tip.style.maxHeight = "";
   tip.style.left = "0px";
@@ -711,19 +717,31 @@ function placeTooltip(tip, anchor) {
   tip.style.top = `${chosen.top + window.scrollY}px`;
 }
 
-function showTooltip(span, text) {
+function showTooltip(span, text, interactive = false) {
   if (!text) {
     hideTooltip();
     return;
   }
   const tip = ensureTooltip();
+  tooltipAnchor = span;
   tip.textContent = text;
+  tip.scrollTop = 0;
+  tip.tabIndex = -1;
+  tip.classList.toggle("is-interactive", interactive);
   tip.hidden = false;
   placeTooltip(tip, span);
+  if (interactive && tip.scrollHeight > tip.clientHeight) tip.tabIndex = 0;
 }
-function hideTooltip() { if (tooltipEl) tooltipEl.hidden = true; }
+function hideTooltip() {
+  if (tooltipEl) {
+    tooltipEl.hidden = true;
+    tooltipEl.tabIndex = -1;
+    tooltipEl.classList.remove("is-interactive");
+  }
+  tooltipAnchor = null;
+}
 
-function activate(span) {
+function activate(span, interactive = false) {
   const article = span.closest(".line");
   if (!article) return;
   const selected = new Set(indicesFrom(span.dataset.wordI));
@@ -732,7 +750,7 @@ function activate(span) {
     element.classList.toggle("is-hi", linked.some(index => selected.has(index)));
   });
   const tooltip = span.dataset.gloss || "";
-  if (tooltip) showTooltip(span, tooltip);
+  if (tooltip) showTooltip(span, tooltip, interactive);
   else hideTooltip();
 }
 function deactivate(span) {
@@ -742,7 +760,7 @@ function deactivate(span) {
   hideTooltip();
 }
 function deactivateAll(root) {
-  if (tooltipEl) tooltipEl.hidden = true;
+  hideTooltip();
   root.querySelectorAll(".word-link.is-hi").forEach(el => el.classList.remove("is-hi"));
 }
 
@@ -753,6 +771,15 @@ function wireInteractions(root) {
   let stickyWord = null;
   let hoverWord  = null;
   let keyboardFocus = false;
+  const tip = ensureTooltip();
+  tip.addEventListener("focusout", event => {
+    if (!stickyWord || tooltipAnchor !== stickyWord || tip.contains(event.relatedTarget)) return;
+    // Let a pointer click on the same word reach its existing toggle-off path.
+    if (!keyboardFocus && event.relatedTarget === stickyWord) return;
+    const previous = stickyWord;
+    stickyWord = null;
+    deactivate(previous);
+  });
 
   // Touch Safari may synthesize mouseover when karaoke scrolling moves a word
   // beneath the last touch location. Only a device with a real fine hover
@@ -764,7 +791,7 @@ function wireInteractions(root) {
       if (!w || w === hoverWord) return;
       if (hoverWord && hoverWord !== stickyWord) deactivate(hoverWord);
       hoverWord = w;
-      activate(w);
+      activate(w, w === stickyWord);
     });
     root.addEventListener("mouseout", e => {
       const w = e.target.closest(".word-link");
@@ -793,17 +820,18 @@ function wireInteractions(root) {
     }
     if (stickyWord) deactivate(stickyWord);
     stickyWord = w;
-    activate(w);
+    activate(w, true);
+    if (keyboardFocus && !tip.hidden && tip.tabIndex === 0) tip.focus({ preventScroll: true });
   });
   document.addEventListener("click", event => {
-    if (event.target.closest?.(".word-link")) return;
+    if (event.target.closest?.(".word-link") || tip.contains(event.target)) return;
     if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
   });
 
   root.addEventListener("focusin", e => {
     const w = e.target.closest(".word-link");
     if (!w || !keyboardFocus) return;
-    activate(w);
+    activate(w, w === stickyWord);
   });
   root.addEventListener("focusout", e => {
     const w = e.target.closest(".word-link");
@@ -811,22 +839,49 @@ function wireInteractions(root) {
     deactivate(w);
   });
 
-  window.addEventListener("scroll", () => {
-    if (tooltipEl) tooltipEl.hidden = true;
+  window.addEventListener("scroll", event => {
+    if (tip.contains(event.target)) return;
+    hideTooltip();
     if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
   }, { passive: true });
 
   document.addEventListener("keydown", e => {
     if (e.key === "Tab") keyboardFocus = true;
+    const ownsSelection = stickyWord && tooltipAnchor === stickyWord;
+    if (ownsSelection && !tip.hidden && tip.contains(e.target) && tip.contains(document.activeElement)) {
+      const maxScroll = Math.max(0, tip.scrollHeight - tip.clientHeight);
+      const scrollTargets = {
+        PageDown: tip.scrollTop + tip.clientHeight,
+        PageUp: tip.scrollTop - tip.clientHeight,
+        ArrowDown: tip.scrollTop + 40,
+        ArrowUp: tip.scrollTop - 40,
+        Home: 0,
+        End: maxScroll,
+      };
+      if (Object.prototype.hasOwnProperty.call(scrollTargets, e.key)) {
+        // Keep scroll keys inside the selected popup, including at its bounds,
+        // so a second PageDown cannot scroll the page.
+        e.preventDefault();
+        tip.scrollTop = Math.max(0, Math.min(maxScroll, scrollTargets[e.key]));
+        return;
+      }
+    }
     const word = e.target.closest?.(".word-link");
-    if (word && (e.key === "Enter" || e.key === " ")) {
+    if (word && root.contains(word) && (e.key === "Enter" || e.key === " ")) {
       e.preventDefault();
+      keyboardFocus = true;
       word.click();
       return;
     }
     if (e.key === "Escape") {
+      if (!root.contains(e.target) && !ownsSelection) return;
+      const restoreFocus = ownsSelection && tip.contains(document.activeElement) ? stickyWord : null;
       if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
       else deactivateAll(root);
+      if (restoreFocus) {
+        keyboardFocus = false;
+        restoreFocus.focus({ preventScroll: true });
+      }
     }
   });
 }

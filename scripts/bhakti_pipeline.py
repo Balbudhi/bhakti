@@ -3075,7 +3075,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     subtitle = str(meta.get("subtitle") or "").strip()
     heading = f"{title} — {subtitle}" if subtitle else title
     performer = str(meta.get("singer") or meta.get("vocalist") or "").strip()
-    song_asset_version = str(meta.get("songAssetVersion") or "contract-20260827-10")
+    song_asset_version = str(meta.get("songAssetVersion") or "tooltip-20261022-5")
     data_asset_version = str(meta.get("dataAssetVersion") or "contract-20260827-8")
     description = (f"{heading}: synchronised devotional lyrics with IAST transliteration, "
                    f"a literal English translation, and word-by-word meanings."
@@ -3106,7 +3106,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css?v=contract-20260821-8" />
-  <link rel="stylesheet" href="/assets/song.css?v=contract-20260827-13" />
+  <link rel="stylesheet" href="/assets/song.css?v=tooltip-20261022-5" />
   <link rel="stylesheet" href="/assets/site.css?v=ui-20261022" />
   <link rel="stylesheet" href="/assets/app.css?v=ui-20261022" />
 </head>

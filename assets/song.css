@@ -613,6 +613,11 @@ html, body {
   overscroll-behavior: contain;
   pointer-events: none;
 }
+.word-tooltip.is-interactive { pointer-events: auto; }
+.word-tooltip:focus-visible {
+  outline: 1px solid rgba(244, 234, 208, 0.52);
+  outline-offset: 2px;
+}
 
 /* ---------- Mobile ---------- */
 @media (max-width: 720px) {
