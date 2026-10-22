@@ -444,6 +444,18 @@
         "sha256": "b90d4ffce5454d56c370b7a314da151a95533408bc4a78feae6d3ae205b91b45"
       }
     ],
+    "dhan-dhan-ramdas-guru": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhan-dhan-ramdas-guru.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "9042a96df8f76e6d556c21a269ddc3b338ef7f264adb73cd95faf0cd835ea6c5"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhan-dhan-ramdas-guru.m4a",
+        "type": "audio/mp4",
+        "sha256": "6871c3264c96d5bd0067ac8d8201c58db9216591311dc38b09eb74ad5a1b595d"
+      }
+    ],
     "dhoop-aarti": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhoop-aarti.webm",
@@ -1944,6 +1956,18 @@
         "sha256": "23e7f2511151b0976882ea685ecf0e0ce41e1f6a5fc48d4503df6675e429ddbe"
       }
     ],
+    "sabh-gobind-hai": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sabh-gobind-hai.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "acc3ed5719bfe04410ab17fd21b565d6e662640649b6277242eb1b64773fa9de"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sabh-gobind-hai.m4a",
+        "type": "audio/mp4",
+        "sha256": "fb73340adfad116104b6e7482b1d160b5df5a20af594127025f0dfad3dbf5f09"
+      }
+    ],
     "sadguru-mujhko-alag-na-kariyo": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sadguru-mujhko-alag-na-kariyo.m4a",
@@ -2267,6 +2291,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-dar-keha-so-ghar-keha.m4a",
         "type": "audio/mp4",
         "sha256": "59c2e463ca05169fcf51f67c9d198d1ae97f6ff92ade5fc4c066076f3202a3ba"
+      }
+    ],
+    "so-satgur-pyara-mere-naal-hai": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-satgur-pyara-mere-naal-hai.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "e97309e41c99b25962c3e9e266b99a1e3852d00961092cb16a37006fa5089709"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-satgur-pyara-mere-naal-hai.m4a",
+        "type": "audio/mp4",
+        "sha256": "16259b9ca9a3fd2d5bdb8a5f1d59e983ad653ff7792d2a38d423cf6bc8e958bf"
       }
     ],
     "sukh-ka-dukh-ka": [

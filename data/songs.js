@@ -851,6 +851,85 @@ window.BHAKTI_SONGS = [
     "queueNumber": 33
   },
   {
+    "slug": "dhan-dhan-ramdas-guru",
+    "queueId": "07e2972b",
+    "title": "Dhannu Dhannu Rāmadāsa Guru",
+    "credit": "Sattā · Balvaṇḍ · Bhai Harjinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī",
+      "Guru"
+    ],
+    "searchAliases": [
+      "Dhannu Dhannu Ramadasa Guru",
+      "Gurbani",
+      "Satta · Balvand · Bhai Harjinder Singh",
+      "Satta · Balvand",
+      "Dhan Dhan Ram Das Guru",
+      "Sikh",
+      "Sikhi",
+      "Guru Granth Sahib"
+    ],
+    "writer": "Sattā · Balvaṇḍ",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhan-dhan-ramdas-guru.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhan-dhan-ramdas-guru.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 267
+  },
+  {
+    "slug": "sabh-gobind-hai",
+    "queueId": "5e985f18",
+    "title": "Sabhu Gobindu Hai",
+    "credit": "Nāmadev · Bhai Harjinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī",
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Gurbani",
+      "Namadev · Bhai Harjinder Singh",
+      "Namadev",
+      "Sab Gobind Hai",
+      "Sab Govind Hai",
+      "Namdev",
+      "Sikh",
+      "Sikhi",
+      "Guru Granth Sahib"
+    ],
+    "writer": "Nāmadev",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sabh-gobind-hai.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sabh-gobind-hai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 268
+  },
+  {
     "slug": "gur-satgur-ka-jo-sikh-akhaye",
     "queueId": "798a5adc",
     "title": "Gur Satigur Kā Jo Sikhu Akhāe",
@@ -1023,6 +1102,45 @@ window.BHAKTI_SONGS = [
       }
     ],
     "queueNumber": 253
+  },
+  {
+    "slug": "so-satgur-pyara-mere-naal-hai",
+    "queueId": "2f122572",
+    "title": "So Satiguru Piārā Merai Nāli Hai",
+    "credit": "Gurū Rām Dās · Bhai Lakhwinder Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī",
+      "Guru",
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "So Satiguru Piara Merai Nali Hai",
+      "Gurbani",
+      "Guru Ram Das · Bhai Lakhwinder Singh",
+      "Guru Ram Das",
+      "So Satguru Pyara Mere Nal Hai",
+      "Sikh",
+      "Sikhi",
+      "Guru Granth Sahib"
+    ],
+    "writer": "Gurū Rām Dās",
+    "singer": "Bhai Lakhwinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-satgur-pyara-mere-naal-hai.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-satgur-pyara-mere-naal-hai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 269
   },
   {
     "slug": "tera-kiya-meetha-laage",

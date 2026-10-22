@@ -1315,6 +1315,66 @@
       ],
       "performedSourcesSha256": "cc36c7b825e1dfba5ac4478d74497eb7b28b9f1962661513fb499507d44bdafd",
       "reviewedSubtitle": "Gaṇeśa"
+    },
+    "so-satgur-pyara-mere-naal-hai": {
+      "addTags": [
+        "Guru",
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "so-satgur-pyara",
+          "source": "ਸੋ ਸਤਿਗੁਰੁ ਪਿਆਰਾ ਮੇਰੈ ਨਾਲਿ ਹੈ",
+          "reason": "The performed refrain explicitly praises the beloved true Guru as present with the speaker."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "jin-har-seva-banat-banai",
+          "source": "ਜਿਨਿ ਹਰਿ ਸੇਵਾ ਬਣਤ ਬਣਾਈ",
+          "reason": "Explicit devotional Hari in service to Hari. Under the existing owner policy and Gurbāṇī registry precedent, index the name under Viṣṇu without changing contextual English or asserting an incarnation narrative."
+        }
+      ]
+    },
+    "dhan-dhan-ramdas-guru": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "dhan-dhan-ramdas-gur",
+          "source": "ਧੰਨੁ ਧੰਨੁ ਰਾਮਦਾਸ ਗੁਰੁ",
+          "reason": "Explicit praise of Guru Rām Dās. Rām Dās is the named historical Guru, not an independent Rāma invocation."
+        }
+      ]
+    },
+    "sabh-gobind-hai": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa",
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sukrit-mansa-gur-updesi",
+          "source": "ਸੁਕ੍ਰਿਤ ਮਨਸਾ ਗੁਰ ਉਪਦੇਸੀ",
+          "reason": "The performed line explicitly invokes the Guru’s teaching as the means of good understanding."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "keval-ek-murari",
+          "source": "ਕੇਵਲ ਏਕ ਮੁਰਾਰੀ",
+          "reason": "The performed divine name Murārī means enemy/slayer of Mura, an established Kṛṣṇa/Viṣṇu epithet; Govinda is repeatedly invoked in the refrain. Existing Kṛṣṇa facet indexes this name-reference without imposing an incarnation narrative on the hymn."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "kahat-namdeu-har-ki-rachna",
+          "source": "ਕਹਤ ਨਾਮਦੇਉ ਹਰਿ ਕੀ ਰਚਨਾ",
+          "reason": "Explicit Hari name in Hari’s creation; existing owner policy indexes devotional Hari under Viṣṇu. This is a sung divine reference, not author or album metadata."
+        }
+      ]
     }
   }
 }
