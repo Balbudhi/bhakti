@@ -74,7 +74,7 @@ The default state shows only what is necessary for reading or the current playba
 - Do not add a title that merely repeats what the initiating icon already communicates.
 - Prefer an integrated continuation of the page over a modal, drawer, floating card, dimmed backdrop, or toolbar.
 - Secondary actions may expand inline behind one quiet ellipsis; they must not become a permanently visible action bar.
-- Catalogue rows get one small add-to-playlist control. Opening the row remains the path to the song; playlist order supplies “next.”
+- Catalogue rows get one small playlist-options control, revealing “Play next” and “Add to end” in place. Opening the row remains the path to the song. Played history stays inside the expanded playlist; clearing upcoming songs preserves the current audio and prior entries.
 
 ## Motion
 

@@ -170,3 +170,45 @@ text-only repairs. Publish only after source/evidence review, alignment and owne
 baseline gates pass; retain a per-unit evidence/review ledger and re-open only
 dependencies of later corrections. Report actual coverage and unresolved items,
 without claiming that a dictionary index solved all translation problems.
+
+## Reusing the existing agent harness
+
+Read-only research found a working adaptive-worker boundary in
+[`shilpa/scripts/task-together.mjs`](../../shilpa/scripts/task-together.mjs)
+(`openTogether`), [`src/together.ts`](../../shilpa/src/together.ts)
+(`create_together_driver`) and [`src/provider.ts`](../../shilpa/src/provider.ts).
+It composes DSH tools and retained sessions, explicit tool/write scope, request
+identities, cancellation/reconciliation, request limits and absolute deadlines.
+Its provider transport delegates monetary accounting to a separate broker and
+budget. Reuse must retain a Bhakti-owned reservation; another project's wallet
+or old run allowance is not transferable.
+
+The [Prakriya direct Together study](../../prakriya/docs/DIRECT_TOGETHER_AGENT.md)
+records successful transport/source access but a rejected lexical-procedure
+report: valid citations did not prevent wrong local-symbol and attachment rules.
+Shilpa's [status](../../shilpa/README.md) likewise separates working components
+from unfinished whole-workflow qualification. Time Crystals' current
+[procedure](../../somu/time-crystals/RESEARCH-PROCEDURE.md) and
+[implementation ledger](../../somu/time-crystals/planning/research-design-tasks.md)
+distinguish archived controllers from the partially implemented replacement.
+None establishes a qualified Bhakti agent engine.
+
+The narrow proposed reuse is an optional bounded source-investigation worker for
+a named missing lexical, compound or syntactic dependency. Give it exact source
+copies and read/search tools; require cited spans, competing readings, the
+evidence distinguishing them and any unresolved dependence. Review those findings
+before admitting evidence into the existing lexicon and sense decisions. Keep
+complete-context gloss/translation/review in the existing pipeline; a question
+whose evidence is already supplied does not need a persistent tool loop. No new
+agent/provider route was activated by this research.
+
+For connotation and compounds, reuse the Vedanta standard's §§6.3, 7.4–7.7 and 8:
+distinguish attested meanings from meanings activated by the present passage;
+preserve literal referents, grammar and images; reject English with added
+overtones. Its examples distinguish governable from servile “biddable” and
+affection from weaker “fondness.” A transparent English compound is useful when
+its parts and relation preserve the source and remain intelligible; otherwise
+use a precise short phrase and meaningful gloss. Do not concatenate every
+dictionary sense. No named Joycean/portmanteau engine was found in the inspected
+Vedanta, Prakriya or Anvaya design files. Such handling remains a contextual
+editorial procedure to qualify, not an implemented generator of compounds.

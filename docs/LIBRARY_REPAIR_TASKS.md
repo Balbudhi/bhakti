@@ -29,7 +29,9 @@ additions. Do not claim that pipeline execution alone establishes correctness.
   instruction reopens the Vedanta translation-engine design: recover that design,
   research embedding/API/local options, and identify a fast, principled
   implementation. Reuse the design rather than inventing a competing system.
-- Keep tags minimal and grounded in the song. Preserve the existing reader UI,
+- Keep tags minimal and grounded in the actual sung text. Album, artist or
+  dedication metadata does not establish a subject. Remove inherited Sāī labels
+  when the writing does not refer to Sāī. Preserve the existing reader UI,
   scripture-section styling and linked word interactions.
 - Keep the measured Gemini 3.7 baseline and focus on the harness; use a more
   capable model for typed unresolved cases when justified, without continuing
@@ -180,3 +182,46 @@ reservation within its $12 cap. Exact successful-request replay is being reviewe
 for recovery; no completed paid evidence should be needlessly regenerated.
 So Satgur's timing/gloss stages are available; Dhan Dhan still has two unresolved
 first-syllable measurements. No new Gurbani reader is published from this run.
+
+UI batch `aa480e47` adds a singer facet and preserves horizontal tag position and
+focus. It adds disclosed play-next/append choices, clears only upcoming entries,
+keeps previous navigation and exposes played history within the queue. Five DOM
+regressions, queue/session/sharing checks and desktop/390px browser checks pass.
+The actual audio continued from 8.404 to 8.438 seconds without pausing on clear;
+history remained after reload and selecting a played occurrence retained order.
+Asset versions changed across all tracked entry pages and the generator template.
+
+The content-only Sāī pass covers all 83 tagged recordings in the 256-song
+committed catalogue: 13 removals independently reviewed against 222 performed
+line definitions, 70 retained with explicit sung witnesses. These removals and
+related misleading subtitles are being integrated with whole-performed-source
+guards. A direct Śrīhari address also supports Viṣṇu in one of those songs;
+incidental parentage alone does not justify adding another minimal facet.
+
+## Latest published content batches
+
+- `ae3ebcc4`: Mārgaḻi Tiṅgaḷ, Palukē Baṅgāramāyenā, Jō Acyutānanda
+  and Veṅkaṭācala Nilayam published with eight verified native release assets.
+  All 80 browser seek controls reach their cached starts; corrected word popups
+  and 390px text bounds checked. This is not a fresh first-syllable listening audit.
+- `36d2ea1f`: all 13 approved album-derived Sāī tags removed, misleading subtitles
+  aligned, and direct Śrīhari tagged Viṣṇu. Whole-performed-source hashes guard
+  removals; reviewed subtitles survive future generation.
+- `e99abf84`: Kōḷaṟu Pātikam published. Two exact contiguous repeats display ×2/×4
+  with unchanged expanded words and timestamps; all 49 seek controls checked.
+- `6921f970`: seven composite readers receive ten reviewed metadata corrections.
+  Doi's distinct compositions now begin at83/94/106; the 108-name Sanskrit litany
+  replaces the misleading Shejarti/Marathi label. Mobile dividers match existing
+  style, with no fabricated author.
+
+The committed catalogue now has 261 songs (seven additions to the initial254).
+Four prepared southern items still require source/meaning/recording repairs.
+Three new Gurbani recordings have complete transcription/timing/gloss stages;
+all55 source/gloss/English rows have an independent textual review with exact
+correction proposals. Their material issues remain held pending adjudication and
+derived-packet review. The long Satgur recording still has timing disagreement.
+
+Next automatic-pipeline slice: persist rejected drafts, attach typed repair
+findings/evidence, reconstruct affected glosses before re-deriving English, and
+re-review within bounded attempts and money. Never use the unrelated working-tree
+autoaccept function to clear semantic uncertainty.
