@@ -15,7 +15,8 @@ bytes. The slice contains 132 distinct reviewed proposal records and changes
 139 lines including danda cleanup.
 
 Next: resume the prepared 13-song batch when OpenRouter credits are restored,
-then complete audio-aware review, additions and browser verification. The
+then complete audio-aware review and the four additions. The existing nine
+readers have now passed desktop and 390px browser layout checks. The
 batch stopped at credit preflight; no new audio, timing or translation model
 calls ran. The full goal remains active and unfinished. The real callers are the library,
 song reader, hover/tap word mapping, and first-syllable player seek.
@@ -37,7 +38,9 @@ song reader, hover/tap word mapping, and first-syllable player seek.
 - [ ] Run new recordings through the complete production pipeline.
 - [ ] Remap source-section boundaries after transcription/order changes.
 - [ ] Run contract, audio quality, trim and scoped regression checks.
-- [ ] Check desktop/mobile in the Codex in-app Browser when available.
+- [x] Check all nine published readers at desktop and 390px mobile in the Codex
+  in-app Browser; compare the established Sāī ārati section styling.
+- [ ] Verify the four new readers in-browser after the pipeline produces them.
 - [x] Inspect and publish the scoped editorial slice; verify all 19 deployed files.
 - [ ] Publish and verify the remaining audio repairs and four new readers/media.
 
@@ -64,7 +67,8 @@ calls for stylistic preference or hide unresolved fidelity flags.
   replacement by the printed text.
 - Existing API cache refresh flags do not invalidate all nested caches; isolate
   fresh processing so old evidence cannot masquerade as a new audit.
-- In-app Browser unavailable on the initial attempt; visual QA remains pending.
+- Initial browser alias lookup failed. Browser inventory identified the working
+  Codex in-app connection (ID 1); visual QA of the nine current readers is done.
 - Preserve all unrelated dirty/untracked intake work in the main workspace.
 - The configured OpenRouter account has exhausted its credit limit. No provider
   substitution or automatic retry loop is authorized by this task's procedure.
@@ -117,16 +121,16 @@ public contract; Merā and Terā retain only their pre-existing repetition
 findings, which need new audio/timing evidence. Seven source-witness tests and
 two mixed-script reader regressions pass, along with Python compilation and
 diff whitespace checks. No new recording or first-syllable verification is
-claimed. The full goal remains unfinished until credits and browser access
-allow its outstanding checks and additions.
+claimed. The full goal remains unfinished until credits allow its outstanding audio
+checks and additions.
 
 Release evidence before editorial integration: 272 listener-audio inventories
 passed; 108 stored trim reviews passed; Python compilation passed. The full
 contract audit still reports existing issues, including repeated phrases in
 Merā/Terā and mixed-script text in other readers. The new regression exercises
 the real public data reader and detects script leakage even when both Roman
-text and its linked word token share the corruption. Browser visual checks are
-unavailable because the Codex in-app browser cannot be opened in this session.
+text and its linked word token share the corruption. The initial browser alias failure was resolved using the browser inventory;
+see the completed visual verification below.
 
 ## Selected additions
 
@@ -149,3 +153,25 @@ text even when the line and word token contain the same corruption.
 Audio audit targets include `prema` versus `pria` in Merā Manu Locai, second-
 person verbs in Koī Āṇi Milāvai, and Japu/Rehrās wording in So Dar. Printed text
 remains secondary evidence; do not erase clearly performed variants.
+
+## Browser verification after publication
+
+All nine current readers were inspected in the Codex in-app Browser at its
+1280px desktop width and a temporary 390 × 844 mobile viewport. Titles, source
+script, IAST, tags and section notes render without horizontal overflow or
+replacement glyphs. The internal Kabīr section in Merā was inspected at both
+sizes, and the Sāī ārati reader confirms the same hairline, typography and
+spacing treatment. The viewport override was reset afterward.
+
+Tapping `locai` displayed “longs; yearns” and highlighted its source, Roman and
+English counterparts. Tapping repaired `japāvai` displayed its causative meaning
+and linked the corresponding source and English phrases. The Gurbāṇī filter
+returns exactly nine readers; searching the old title “Gagan Mein Thaal” finds
+the renamed reader. This verifies these visible interactions, not every lyric
+seek or a renewed comparison with the audio.
+
+The read-only OpenRouter account check still reports exhausted credits. All 13
+prepared song directories have both original listener audio formats, and all
+fresh stage directories remain empty: there is no running pipeline to wait on.
+The previous goal turn made progress by publishing the editorial slice; this
+continuation completed the previously unavailable visual checks.
