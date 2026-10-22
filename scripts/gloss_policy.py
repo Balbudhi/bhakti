@@ -52,6 +52,9 @@ def key(value: object) -> str:
 def roman_keys(value: object) -> list[str]:
     raw = str(value or "")
     values = [key(raw)]
+    # Source-evidenced Awadhi nominative रामु names Rāma, not a new entity.
+    if values[0] == "ramu":
+        values.append("rama")
     if any(mark in raw for mark in ("ṃ", "ṁ")) and values[0].endswith("m"):
         values.append(values[0][:-1])
     if len(values[0]) > 4 and values[0].endswith("a"):

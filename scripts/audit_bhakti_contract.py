@@ -47,6 +47,23 @@ def non_latin_roman_characters(value: str) -> str:
     ))
 
 
+def uncovered_roman_spans(roman: str, words: list[dict[str, Any]]) -> list[str]:
+    """Allow compound subdivisions, but require every lyric letter to be linked."""
+    folded = roman.casefold()
+    cursor = 0
+    gaps = []
+    for word in words:
+        token = str(word.get("roman", "")).casefold() if isinstance(word, dict) else ""
+        position = folded.find(token, cursor) if token else -1
+        if position < 0:
+            # The existing word-mapping check reports the malformed token.
+            return []
+        gaps.append(folded[cursor:position])
+        cursor = position + len(token)
+    gaps.append(folded[cursor:])
+    return [gap for gap in gaps if any(character.isalpha() for character in gap)]
+
+
 def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -> dict[str, Any]:
     data_path = directory / "data.js"
     problems: list[str] = []
@@ -120,6 +137,9 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
                     )
                 )
             roman = str(line.get("roman", ""))
+            uncovered = uncovered_roman_spans(roman, line["words"])
+            if uncovered:
+                problems.append(f"{line_id} IAST has letters without a word gloss: {uncovered!r}")
             cursor = 0
             for word_index, word in enumerate(line["words"]):
                 token = str(word.get("roman", "")) if isinstance(word, dict) else ""

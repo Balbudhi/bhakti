@@ -5,7 +5,7 @@
 Review all nine published songs in `data/scripture_metadata.json` against their
 actual recordings, repair transcription, IAST/symbols, timing, word mappings,
 glosses and English, and add four suitable recordings by existing performers.
-Use the owner-selected Together provider, then editorial review; third-party
+Use OpenRouter/Gemini with independent editorial review; third-party
 translations are comparison evidence, never replacement English. Preserve
 literal imagery, agency, repetition and source ambiguity. Publish scoped work.
 
@@ -14,26 +14,32 @@ readers and the catalogue were verified live: 19 files match the committed
 bytes. The slice contains 132 distinct reviewed proposal records and changes
 139 lines including danda cleanup.
 
-Current continuation: minimal devotional tags are published in `7a026203` and
-all 19 deployed metadata files match the commit. Together credentials are
-configured locally; text requests work. Six Whisper clip responses omitted
-phrases and corrupted repeated lines, so full audio intake remains held.
-A short GPT-OSS gloss reconstruction also made substantive errors. A bounded candidate-only style review was attempted but produced no usable
-review packet. No Together proposal was applied and no review process remains
-running.
+Current continuation: the whole-library goal and active tasks now live in
+[LIBRARY_REPAIR_TASKS.md](LIBRARY_REPAIR_TASKS.md). Minimal devotional tags were
+published in `7a026203`; all 19 deployed metadata files matched the commit.
+The Together investigation remains recorded below as historical evidence: its
+six Whisper clips omitted/corrupted performed text, and its text candidates did
+not meet the editorial standard. No Together proposal was adopted.
 
-Next: establish reliable text review and a qualified audio route before
-resuming the prepared 13-song batch. All nine existing readers passed desktop
-and 390px browser checks. Every-line first-syllable listening and the four new
-readers remain unfinished. The real callers are the library, song reader,
-hover/tap word mapping, and first-syllable player seek.
+OpenRouter/Gemini was restored in `b1c90598` after the owner's credits were
+replenished. The bounded Gemini 3.7/3.8 comparison does not establish an overall
+winner; keep 3.7 as the production baseline and independently review outputs.
+The new candidates' semantic failures must not overwrite the already reviewed
+Gurbāṇī wording. Every-line first-syllable listening and the four new readers
+remain unfinished. All nine existing readers passed the previous desktop and
+390px presentation checks; those checks are not fresh audio verification.
+
+Next: finish the prepared recordings through the production pipeline and
+independent editorial review, retaining source-section notices and minimal tags.
+The real callers remain the library, song reader, hover/tap word mapping, and
+first-syllable player seek.
 
 ## Task list
 
 - [x] Inventory nine readers and assign parallel reviews.
 - [x] Publish minimal devotional tags without a separate Hari filter.
-- [x] Switch default text processing and hosted configuration to Together;
-  update credentials guidance and processing documentation.
+- [x] Investigate Together, record its qualification failures, and restore
+  OpenRouter/Gemini with updated production documentation.
 - [x] Run bounded sung-Punjabi audio qualification; preserve failed evidence.
 - [ ] Establish a replacement audio route that retains all sung occurrences.
 - [ ] Inspect every unique lyric and every performance occurrence against audio.

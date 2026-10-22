@@ -210,7 +210,7 @@ window.SONG_LINES = {
     "source": "नयन दिये दरसन करने को",
     "sourceLanguage": "hi",
     "roman": "nayana diye darasana karane ko",
-    "english": "{0:Eyes }{1:were given }{4:for }{2:sacred }{3:beholding.}",
+    "english": "{0:Eyes }{1:were given }{4:for }{2,3:sacred beholding.}",
     "words": [
       {
         "roman": "nayana",
@@ -464,7 +464,7 @@ window.SONG_LINES = {
     "source": "कहत कबीर सुनो भाई साधो",
     "sourceLanguage": "hi",
     "roman": "kahata kabīra suno bhāī sādho",
-    "english": "{1:Kabir }{0:says: }{2:listen, }{3:O brother }{4:seekers.}",
+    "english": "{1:Kabīr }{0:says: }{2:listen, }{3:O brother }{4:seekers.}",
     "words": [
       {
         "roman": "kahata",
@@ -525,7 +525,7 @@ window.SONG_LINES = {
     "source": "कबीर...",
     "sourceLanguage": "hi",
     "roman": "kabīra...",
-    "english": "{0:Kabir...}",
+    "english": "{0:Kabīr...}",
     "words": [
       {
         "roman": "kabīra...",

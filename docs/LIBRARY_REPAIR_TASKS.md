@@ -25,11 +25,15 @@ additions. Do not claim that pipeline execution alone establishes correctness.
 - Preserve supplied human translations. Aruṇācala Akṣaramaṇamālai and Koī Hor
   Nahī Hai Merā are editorial references; investigate source/gloss conflicts
   separately rather than silently rewriting the owner's English.
-- Use modest dictionary assistance and automated preparation/review. Defer the
-  Vedanta project's full indexed language-model and grammar architecture.
+- Use dictionary assistance and automated preparation/review. The latest owner
+  instruction reopens the Vedanta translation-engine design: recover that design,
+  research embedding/API/local options, and identify a fast, principled
+  implementation. Reuse the design rather than inventing a competing system.
 - Keep tags minimal and grounded in the song. Preserve the existing reader UI,
   scripture-section styling and linked word interactions.
-- Check the current Gemini options rather than assuming a newer model is better.
+- Keep the measured Gemini 3.7 baseline and focus on the harness; use a more
+  capable model for typed unresolved cases when justified, without continuing
+  broad model comparisons. The owner permits higher model cost when needed.
   Restore the usable OpenRouter route; account credits have been replenished. Any batch must have an explicit
   bounded reservation and retained response evidence.
 - Review corrections autonomously and publish verified batches; keep uncertain
@@ -52,9 +56,12 @@ additions. Do not claim that pipeline execution alone establishes correctness.
 - [x] Apply, inspect and publish the 20 reviewed textual corrections plus three
   contextual rasa corrections, seven reader transliteration repairs, and 48
   Sundarakāṇḍa marker-map repairs (`5bd8fdfe`; 11 readers).
-- [ ] Qualify Gemini 3.7 Flash versus 3.8 Flash on representative audio and
-  translation cases with the replenished credits; use stronger models only when
-  their measured quality warrants their cost.
+- [x] Complete the bounded Gemini 3.7/3.8 comparison; retain 3.7 as baseline,
+  reject the failed text candidates, and record the limits of this comparison.
+- [ ] Recover the existing Vedanta translation-engine design and research a
+  small embedding/dictionary implementation with contextual sense selection.
+- [ ] Identify the newly mentioned backlog recordings from saved requests and
+  intake evidence; review and publish the intended additions.
 - [ ] Review every published song's source, glosses, English, mappings and tags;
   route actual lexical defects through fresh gloss reconstruction.
 - [ ] Verify missing lyrics, clipping, repetitions and timing against recordings.
@@ -75,9 +82,11 @@ references and Hari classified under the existing Viṣṇu facet. The registry
 requires the exact supporting text to remain in the performance sequence and is
 integrated into generation. The largest tag group wraps cleanly at 390px.
 Independent review confirmed the witnesses and found no missing clear existing
-facet in the nine Gurbāṇī readers. This tag batch is being released.
+facet in the nine Gurbāṇī readers. This tag batch is live in `28739e7b`; all 15 deployed page/data/catalogue files
+match the commit, and the library Guru filter includes the corrected songs.
 
-The bounded Gemini comparison remains under its cumulative $2 cap. The first
+The bounded Gemini comparison is complete under its cumulative $2 cap
+($0.41718375 reported plus $0.26 reserved for an unknown outcome). The first
 16,384-token audio request exhausted its allowance in reasoning and cost
 $0.06263025. At the corrected allowance, both models returned the Gagan clip;
 3.8 used more tokens and time, without establishing superior accuracy. The 3.7
@@ -86,10 +95,20 @@ charged against the experiment until actual cost is known, and it was not
 retried. Both models' gloss candidates still need contextual editorial review.
 No model winner or full-library accuracy is claimed.
 
-Next: release the reviewed tag batch; finish model comparison; inspect all 17
-Kabīr readers' English and contextual glosses; resolve newly identified
-Sundarakāṇḍa lexical-token loss. Continue bounded audio and text batches toward
-all 254 readers and the four additions. Preserve unrelated dirty intake work.
+The second reviewed batch repairs 26 lines in 12 Kabīr-associated readers:
+21 source-supported name spellings and five concept/mapping corrections. The
+17-reader audit accounts for 309 stored lines; six source/semantic questions
+remain held. Eight further Sundarakāṇḍa lines restore lost lexical tokens,
+remove structural markers or clarify name glosses. Generation now preserves
+combined marker/lyric tokens, and the new contract guard detects uncovered IAST
+letters. The 254-reader scan has no remaining uncovered-letter findings.
+Representative repaired wording and popups pass desktop and 390px checks.
+
+Next: finish the bounded production transport and run the four prepared additions;
+review the 11 locally prepared southern readers before release; integrate the
+independently reviewed wider tag corrections; recover the translation-engine
+implementation plan. Continue the goal across all 254 readers and the requested
+additions. Preserve unreviewed intake work until its evidence supports adoption.
 
 The previous Gurbāṇī evidence and selected additions remain documented in
 `GURBANI_REVIEW_TASKS.md`. Private preparation output is under

@@ -733,7 +733,7 @@ window.SONG_LINES = {
     "source": "कहत कबीरा सुनो भाई साधो",
     "sourceLanguage": "hi",
     "roman": "Kahat Kabīrā suno bhāī sādho",
-    "english": "{1:Kabir }{0:says: }{2:listen, }{4:O seekers, }{3:my brothers:}",
+    "english": "{1:Kabīr }{0:says: }{2:listen, }{4:O seekers, }{3:my brothers:}",
     "words": [
       {
         "roman": "Kahat",
@@ -804,7 +804,7 @@ window.SONG_LINES = {
     "source": "कहत कबीरा",
     "sourceLanguage": "hi",
     "roman": "Kahat Kabīrā",
-    "english": "{0:Says }{1:Kabir}",
+    "english": "{0:Says }{1:Kabīr}",
     "words": [
       {
         "roman": "Kahat",
@@ -992,7 +992,7 @@ window.SONG_LINES = {
     "source": "राम नाम जप करना",
     "sourceLanguage": "hi",
     "roman": "Rāma nāma japa karanā",
-    "english": "{2,3:chant }{1:the Name of }{0:Ram.}",
+    "english": "{2,3:chant }{1:the Name of }{0:Rāma.}",
     "words": [
       {
         "roman": "Rāma",

@@ -1083,7 +1083,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahai nānak śāh sun bhagavantā",
-    "english": "{0:Says }{1:Nanak }{2:Shah, }{3:listen, }{4:O Lord:}",
+    "english": "{0:Says }{1:Nānak }{2:Śāh, }{3:listen, }{4:O Lord:}",
     "words": [
       {
         "roman": "kahai",
@@ -1093,7 +1093,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānak",
-        "gloss": "Guru Nanak",
+        "gloss": "Guru Nānak",
         "concept_key": "",
         "preserve_in_english": false
       },

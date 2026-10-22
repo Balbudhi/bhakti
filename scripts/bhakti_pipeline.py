@@ -503,7 +503,8 @@ def apply_lossless_trim(song_dir: Path, artifact: dict[str, Any]) -> None:
 
 
 def ask(prompt: str, audio: Path | None, options: argparse.Namespace) -> dict[str, Any]:
-    return gemini.call(options.model, gemini.key(), prompt, audio=audio, timeout=options.timeout)
+    return gemini.call(options.model, gemini.key(), prompt, audio=audio, timeout=options.timeout,
+                       reasoning_effort="high", max_completion_tokens=65536)
 
 
 def canonical_timing_audio(source: Path, destination: Path) -> Path:
@@ -2437,20 +2438,21 @@ def independently_review_translations(
 
     def run(index: int) -> dict[str, Any]:
         batch = batches[index]
+        context = nearby_text_context(lines, index * 20, len(batch))
         expected = [line["id"] for line in batch]
         evidence = [{"source": line, "gloss": gloss_by_id[line["id"]],
                      "draft": translation_by_id[line["id"]]} for line in batch]
         fingerprint = text_stage_fingerprint("translation-review", options.model,
-            {"evidence": evidence, "provided_translation": provided_translation,
+            {"evidence": evidence, "context": context, "provided_translation": provided_translation,
              "languages": languages}, policy)
         path = cache_dir / f"batch-{index:03d}.json"
         cached = read_packet(path)
         if cached and cached.get("fingerprint") == fingerprint and not options.force:
             return cached
-        def review_prompt(target_evidence: list[dict[str, Any]]) -> str:
+        def review_prompt(target_evidence: list[dict[str, Any]], source_context: list[dict[str, Any]]) -> str:
             return f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
 
-For each line, compare the draft against the indexed glosses, semantic frame, grammar, source, neighboring relation, and material alternatives. Check separately: grammatical agency/experiencer; literal image and metaphor; every negation, modality, modifier and emphasis; unsupported additions; and whether two defensible readings differ materially in agency, metaphor, ambiguity, or poetic force.
+For each line, first derive agency and grammatical attachment from the source and actual neighboring source lines before comparing the supplied semantic frame, indexed glosses, grammar and draft. Flag contradictory attachments even if uncertainty is reported as none, a name gloss that merely repeats its name, and unsupported claims in the frame rather than inheriting them as facts. Check separately: grammatical agency/experiencer; literal image and metaphor; every negation, modality, modifier and emphasis; unsupported additions; and whether two defensible readings differ materially in agency, metaphor, ambiguity, or poetic force.
 
 Conventional English is not automatically better. Preserve personification, repetition, transparent spatial language, and concrete ritual images. A breath that abandons a speaker is materially different from a speaker releasing breath; a speaker who is broken from the inside is materially different from a speaker actively breaking; “takes hold” is materially different from “kindles”; palm is materially different from an abstract inner state. If the draft and an alternative make such a material choice and no locked human baseline resolves it, set human_review_recommended=true. Do not flag trivial synonyms or punctuation.
 
@@ -2462,14 +2464,18 @@ Check that each English segment uses the same contextual sense as the gloss at i
 
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
+NEARBY SOURCE CONTEXT (context only; do not return these IDs):
+{json.dumps(source_context, ensure_ascii=False)}
+
 EVIDENCE:
 {json.dumps(target_evidence, ensure_ascii=False)}
 
 LOCKED HUMAN TRANSLATION (or none):
 {provided_translation}"""
 
-        def request(target_evidence: list[dict[str, Any]], target_ids: list[str], label: str) -> dict[str, Any]:
-            response = gemini.call(options.model, gemini.key(), review_prompt(target_evidence), audio=None,
+        def request(target_evidence: list[dict[str, Any]], target_ids: list[str], label: str,
+                    source_context: list[dict[str, Any]]) -> dict[str, Any]:
+            response = gemini.call(options.model, gemini.key(), review_prompt(target_evidence, source_context), audio=None,
                                    timeout=options.timeout, response_schema=translation_review_schema(),
                                    schema_name="bhakti_translation_review", reasoning_effort="high",
                                    max_completion_tokens=32768)
@@ -2487,8 +2493,9 @@ LOCKED HUMAN TRANSLATION (or none):
             for child_index, offset in enumerate(range(0, len(batch), 10)):
                 child_evidence = evidence[offset:offset + 10]
                 child_ids = expected[offset:offset + 10]
+                child_context = nearby_text_context(lines, index * 20 + offset, len(child_evidence))
                 child_fingerprint = text_stage_fingerprint("translation-review", options.model,
-                    {"evidence": child_evidence, "provided_translation": provided_translation,
+                    {"evidence": child_evidence, "context": child_context, "provided_translation": provided_translation,
                      "languages": languages}, policy)
                 child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
                 child_packet = read_packet(child_path)
@@ -2497,7 +2504,7 @@ LOCKED HUMAN TRANSLATION (or none):
                     child_packet = {
                         "fingerprint": child_fingerprint,
                         "target_ids": child_ids,
-                        "response": request(child_evidence, child_ids, f"{index}.{child_index}"),
+                        "response": request(child_evidence, child_ids, f"{index}.{child_index}", child_context),
                     }
                     write_json(child_path, child_packet)
                 children.append(child_packet)
@@ -2510,7 +2517,7 @@ LOCKED HUMAN TRANSLATION (or none):
                       "response": response, "child_batches": children}
         else:
             result = {"fingerprint": fingerprint, "target_ids": expected,
-                      "response": request(evidence, expected, str(index))}
+                      "response": request(evidence, expected, str(index), context)}
         write_json(path, result)
         return result
 
@@ -2878,9 +2885,9 @@ def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
     return "".join(rendered)
 
 
-VERSE_MARKER_SOURCE = re.compile(r"(?:॥|\|\|)\s*[०-९0-9]+\s*(?:॥|\|\|)\s*$")
-VERSE_MARKER_ROMAN = re.compile(r"\s*(?:(?:\.\.)|॥|\|\|)?\s*[0-9]+\s*(?:(?:\.\.)|॥|\|\||\.)?\s*$")
-VERSE_MARKER_ENGLISH = re.compile(r"\s*(?:[.॥|]*\s*)?[0-9]+(?:\s*[.॥|]+)?\s*$")
+VERSE_MARKER_SOURCE = re.compile(r"(?:॥|\|\|)\s*[०-९0-9]+(?:\([कख]\))?\s*(?:॥|\|\|)\s*$")
+VERSE_MARKER_ROMAN = re.compile(r"\s*(?:(?:\.\.)|॥|\|\|)?\s*[0-9]+(?:\((?:ka|kha)\))?\s*(?:(?:\.\.)|॥|\|\||\.)?\s*$")
+VERSE_MARKER_ENGLISH = re.compile(r"\s*(?:[.॥|]*\s*)?[0-9]+[ab]?(?:\s*[.॥|]+)?\s*$")
 DOHA_PREFIX_SOURCE = re.compile(r"^\s*दो(?:हा)?(?:[.०0=]+)?\s*[-=]?\s*")
 CHHAND_PREFIX_SOURCE = re.compile(r"^\s*छं(?:[.=]+)?\s*")
 SORATHA_PREFIX_SOURCE = re.compile(r"^\s*सो(?:[.=]+)\s*")
@@ -3291,24 +3298,36 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
         marker_title, display_source, marker_pattern = metrical_prefix(display_source_without_verse_marker(source))
         display_roman = naming.canonical_iast(line.get("roman", ""))
         hidden_word_indices: set[int] = set()
+        roman_prefix = None
         if marker_pattern is DOHA_PREFIX_SOURCE:
             structural_markers[line_id] = " ".join(filter(None, (marker_title, nearby_dohā_number(lines, line_index))))
-            display_roman = DOHA_PREFIX_ROMAN.sub("", display_roman, count=1)
-            hidden_word_indices.add(0)
+            roman_prefix = DOHA_PREFIX_ROMAN
         elif marker_pattern is CHHAND_PREFIX_SOURCE:
             structural_markers[line_id] = marker_title
-            display_roman = CHHAND_PREFIX_ROMAN.sub("", display_roman, count=1)
-            if words:
-                words[0]["roman"] = CHHAND_PREFIX_ROMAN.sub("", words[0]["roman"], count=1)
+            roman_prefix = CHHAND_PREFIX_ROMAN
         elif marker_pattern is SORATHA_PREFIX_SOURCE:
             structural_markers[line_id] = marker_title
-            display_roman = SORATHA_PREFIX_ROMAN.sub("", display_roman, count=1)
-            hidden_word_indices.add(0)
+            roman_prefix = SORATHA_PREFIX_ROMAN
+        if roman_prefix is not None:
+            display_roman = roman_prefix.sub("", display_roman, count=1)
+            if words:
+                # A printed marker may share a token with the first sung word.
+                words[0]["roman"] = roman_prefix.sub("", words[0]["roman"], count=1)
+                if not words[0]["roman"].strip():
+                    hidden_word_indices.add(0)
+                else:
+                    words[0]["gloss"] = re.sub(
+                        r"^\s*(?:doh[āa]|chhand|sorath[āa])\s*(?:marker|tag)?\s*[:+]\s*",
+                        "", words[0].get("gloss", ""), count=1, flags=re.I)
+                    words[0] = gloss_policy.clean_word(words[0])
         index_map = {old: new for new, old in enumerate(index for index in range(len(words))
                                                           if index not in hidden_word_indices)}
         words = [word for index, word in enumerate(words) if index not in hidden_word_indices]
         remapped_parts = []
         for part in row.get("segments", []):
+            if marker_title and re.fullmatch(r"\s*(?:doh[āa]|chhand|sorath[āa])[.:]?\s*",
+                                            str(part.get("text", "")), flags=re.I):
+                continue
             original_indices = [index for index in part.get("word_indices", []) if isinstance(index, int)]
             indices = [index_map[index] for index in original_indices if index in index_map]
             if original_indices and not indices:

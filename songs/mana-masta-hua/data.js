@@ -1090,7 +1090,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahata Kabīra sunō bhāī sādhō",
-    "english": "{1:Kabir }{0:says, }{2:listen, }{3:O brother }{4:seekers:}",
+    "english": "{1:Kabīr }{0:says, }{2:listen, }{3:O brother }{4:seekers:}",
     "words": [
       {
         "roman": "Kahata",

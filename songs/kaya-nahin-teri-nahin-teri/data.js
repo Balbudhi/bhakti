@@ -718,7 +718,7 @@ window.SONG_LINES = {
     "source": "कहत कबीरा सुन नर ज्ञानी",
     "sourceLanguage": "hi",
     "roman": "Kahat Kabīrā sun nar jñānī",
-    "english": "{0:Says }{1:Kabir, }{2:listen, }{4:O wise }{3:man}",
+    "english": "{0:Says }{1:Kabīr, }{2:listen, }{4:O wise }{3:man}",
     "words": [
       {
         "roman": "Kahat",
@@ -779,7 +779,7 @@ window.SONG_LINES = {
     "source": "कबीरा",
     "sourceLanguage": "hi",
     "roman": "Kabīrā",
-    "english": "{0:Kabir}",
+    "english": "{0:Kabīr}",
     "words": [
       {
         "roman": "Kabīrā",
@@ -800,7 +800,7 @@ window.SONG_LINES = {
     "source": "कहत कबीरा",
     "sourceLanguage": "hi",
     "roman": "Kahat Kabīrā",
-    "english": "{0:Says }{1:Kabir}",
+    "english": "{0:Says }{1:Kabīr}",
     "words": [
       {
         "roman": "Kahat",

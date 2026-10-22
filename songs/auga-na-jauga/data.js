@@ -140,7 +140,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yeh Bhagat Kabīr ṣāḥib ke ślok haiṅ.",
-    "english": "{0,6:These are}{4,5: the verses of }{1,2,3:Bhagat Kabir Sahib.}",
+    "english": "{0,6:These are}{4,5: the verses of }{1,2,3:Bhagat Kabīr Sahib.}",
     "words": [
       {
         "roman": "Yeh",
@@ -1569,7 +1569,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gurāṅ ke śabad pyālā harī ras pī'ūṅgā",
-    "english": "{3:From the cup}{0,1: of the Guru's}{2: Word,}{6: I will drink} the {5:rasa}{4: of Hari.}",
+    "english": "{3:From the cup}{0,1: of the Guru's}{2: Word,}{6: I will drink} the {5:juice}{4: of Hari.}",
     "words": [
       {
         "roman": "Gurāṅ",
@@ -1603,9 +1603,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "ras",
-        "gloss": "essence; aesthetic savor; devotional nectar",
+        "gloss": "juice; savor, here the drink of Hari in the Word-cup metaphor",
         "concept_key": "rasa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "pī'ūṅgā",
@@ -1854,7 +1854,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ko'ī phere mālā te ko'ī phere tasbīḥ",
-    "english": "{0:One person}{1: turns}{2: the mala beads,}{3: and}{4: another}{5: turns}{6: the tasbih,}",
+    "english": "{0:One person}{1: turns}{2: Hindu prayer beads,}{3: and}{4: another}{5: turns}{6: Muslim prayer beads,}",
     "words": [
       {
         "roman": "Ko'ī",
@@ -2032,7 +2032,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ko'ī jāve Makke te ko'ī jāve Kāśī",
-    "english": "{0:One person}{1: goes}{2: to Mecca,}{3: and}{4: another}{5: goes}{6: to Kashi.}",
+    "english": "{0:One person}{1: goes}{2: to Mecca,}{3: and}{4: another}{5: goes}{6: to Kāśī.}",
     "words": [
       {
         "roman": "Ko'ī",
@@ -2072,7 +2072,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kāśī",
-        "gloss": "to Kashi; to Varanasi (sacred Hindu pilgrimage city)",
+        "gloss": "to Kāśī; to Varanasi (sacred Hindu pilgrimage city)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2198,7 +2198,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahat Kabīr suno morī lo'ī",
-    "english": "{0:Says}{1: Kabir:}{2: listen,}{3: my}{4: Loi,}",
+    "english": "{0:Says}{1: Kabīr:}{2: listen,}{3: my}{4: Loi,}",
     "words": [
       {
         "roman": "Kahat",
@@ -2226,7 +2226,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lo'ī",
-        "gloss": "Kabir's companion / disciple",
+        "gloss": "Kabīr's companion / disciple",
         "concept_key": "",
         "preserve_in_english": false
       }

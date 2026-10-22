@@ -9,9 +9,12 @@ import unicodedata
 
 def _number(value: str) -> str | None:
     value = value.strip(" \t\r\n.।॥|")
-    if not value or not all(character.isdecimal() for character in value):
+    match = re.fullmatch(r"(\d+)(?:\((ka|kha|क|ख)\))?", value)
+    if not match:
         return None
-    return "".join(str(unicodedata.decimal(character)) for character in value)
+    number = "".join(str(unicodedata.decimal(character)) for character in match[1])
+    suffix = {"क": "ka", "ख": "kha"}.get(match[2], match[2])
+    return number + (f"({suffix})" if suffix else "")
 
 
 def clean_display_word_map(line: dict) -> tuple[dict, dict]:

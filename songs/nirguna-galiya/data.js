@@ -2784,7 +2784,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ kahai Kabīr Dharmadās se mhārī helī",
-    "english": "{0:Yes, }{2:Kabir }{1:says }{3,4:to Dharmadas, }{5:my }{6:companion.}",
+    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2806,7 +2806,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Dharmadās",
-        "gloss": "disciple of Kabir",
+        "gloss": "disciple of Kabīr",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2951,7 +2951,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ kahai Kabīr Dharmadās se mhārī helī, na to mare na būṛhā hoy mhārī helī o, cālo mhārā deś",
-    "english": "{0:Yes, }{2:Kabir }{1:says }{3,4:to Dharmadas, }{5:my }{6:companion: }{7,8:one neither }{9:dies }{10:nor }{11,12:grows old, }{15:O }{13:my }{14:companion, }{16:let us go }{17:to my }{18:country.}",
+    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion: }{7,8:one neither }{9:dies }{10:nor }{11,12:grows old, }{15:O }{13:my }{14:companion, }{16:let us go }{17:to my }{18:country.}",
     "words": [
       {
         "roman": "Hā̃",

@@ -10163,7 +10163,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmu",
-        "gloss": "Rama",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -49145,7 +49145,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cikkarahiṃ diggaja ḍola mahi giri lola sāgara kharabhare.",
-    "english": "Chhand. {1:The world-elephants}{0: trumpet}{3:, the earth}{2: quakes}{4:, mountains}{5: sway}{6:, and oceans}{7: roil in turmoil.}",
+    "english": "{1:The world-elephants}{0: trumpet}{3:, the earth}{2: quakes}{4:, mountains}{5: sway}{6:, and oceans}{7: roil in turmoil.}",
     "words": [
       {
         "roman": "cikkarahiṃ",
@@ -55401,7 +55401,7 @@ window.SONG_LINES = {
     "grammarNote": "'Jāsu' is the genitive relative pronoun ('whose'). 'Nasāvana' acts as an agentive verbal adjective ('destroyer of / that which dispels'). 'Jiyaṁ' is a locative form ('in the heart/mind')."
   },
   "line-455": {
-    "source": "परिहरि मान मोह मद भजहु कोसलाधीस ॥ ३९(क) ॥",
+    "source": "परिहरि मान मोह मद भजहु कोसलाधीस",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -55439,16 +55439,10 @@ window.SONG_LINES = {
         "wordIndices": [
           5
         ]
-      },
-      {
-        "text": "३९(क)",
-        "wordIndices": [
-          6
-        ]
       }
     ],
-    "roman": "parihari māna mōha mada bhajahu kōsalādhīsa. 39(ka).",
-    "english": "{0:Having cast off }{1:pride, }{2:delusion, }{3:and conceit, }{4:worship }{5:the sovereign ruler of Kosala. }{6:|| 39a ||}",
+    "roman": "parihari māna mōha mada bhajahu kōsalādhīsa.",
+    "english": "{0:Having cast off }{1:pride, }{2:delusion, }{3:and conceit, }{4:worship }{5:the sovereign ruler of Kosala. }",
     "words": [
       {
         "roman": "parihari",
@@ -55483,12 +55477,6 @@ window.SONG_LINES = {
       {
         "roman": "kōsalādhīsa.",
         "gloss": "the sovereign ruler of Kosala (Rāma).",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "39(ka).",
-        "gloss": "doha 39a marker.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -55615,7 +55603,7 @@ window.SONG_LINES = {
     "grammarNote": "'Pulasti' represents the Sanskrit sage name Pulastya. 'Sana' functions here as an instrumental/agentive postposition ('through / via'). 'Kahi paṭhaī' is a compound verbal construction meaning 'sent word'."
   },
   "line-457": {
-    "source": "तुरत सो मैं प्रभु सन कही पाइ सुअवसरु तात ॥ ३९(ख) ॥",
+    "source": "तुरत सो मैं प्रभु सन कही पाइ सुअवसरु तात",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -55671,16 +55659,10 @@ window.SONG_LINES = {
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "३९(ख)",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "turata sō maim̐ prabhu sana kahī pāi suavasaru tāta. 39(kha).",
-    "english": "{6:finding }{7:a favorable opportunity, }{8:O brother, }{2:I }{5:related }{1:that }{0:at once }{3,4:to my master. }{9:|| 39b ||}",
+    "roman": "turata sō maim̐ prabhu sana kahī pāi suavasaru tāta.",
+    "english": "{6:finding }{7:a favorable opportunity, }{8:O brother, }{2:I }{5:related }{1:that }{0:at once }{3,4:to my master. }",
     "words": [
       {
         "roman": "turata",
@@ -55733,12 +55715,6 @@ window.SONG_LINES = {
       {
         "roman": "tāta.",
         "gloss": "O dear brother; O respected one.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "39(kha).",
-        "gloss": "doha 39b marker.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -58096,7 +58072,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmu",
-        "gloss": "Rāma",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -58283,37 +58259,43 @@ window.SONG_LINES = {
       {
         "text": "सत्यसंकल्प",
         "wordIndices": [
-          0
+          1
         ]
       },
       {
         "text": "प्रभु",
         "wordIndices": [
-          1
+          2
         ]
       },
       {
         "text": "सभा",
         "wordIndices": [
-          2
+          3
         ]
       },
       {
         "text": "कालबस",
         "wordIndices": [
-          3
+          4
         ]
       },
       {
         "text": "तोरि।",
         "wordIndices": [
-          4
+          5
         ]
       }
     ],
     "roman": "rāmu satyasaṅkalpa prabhu sabhā kālabasa tōri.",
-    "english": "{1:is the sovereign master }{0:of unfailing resolve, }{4:while your }{2:assembly }{3:is in the grip of death.}",
+    "english": "{0:Rāma }{2:is the sovereign master }{1:of unfailing resolve, }{5:while your }{3:assembly }{4:is in the grip of death.}",
     "words": [
+      {
+        "roman": "rāmu",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
       {
         "roman": "satyasaṅkalpa",
         "gloss": "of unfailing resolve",
@@ -58345,7 +58327,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "dō.=rāmu prefixes the dohā metre indicator to the proper noun Rāma. satyasaṅkalpa is a bahuvrīhi compound qualifying prabhu. tōri is feminine genitive 2sg agreeing with sabhā."
+    "grammarNote": "satyasaṅkalpa is a bahuvrīhi compound qualifying prabhu. tōri is feminine genitive 2sg agreeing with sabhā."
   },
   "line-478": {
     "source": "मै रघुबीर सरन अब जाउँ देहु जनि खोरि",
@@ -60704,43 +60686,49 @@ window.SONG_LINES = {
       {
         "text": "कहुँ",
         "wordIndices": [
-          0
+          1
         ]
       },
       {
         "text": "जे",
         "wordIndices": [
-          1
+          2
         ]
       },
       {
         "text": "तजहिं",
         "wordIndices": [
-          2
+          3
         ]
       },
       {
         "text": "निज",
         "wordIndices": [
-          3
+          4
         ]
       },
       {
         "text": "अनहित",
         "wordIndices": [
-          4
+          5
         ]
       },
       {
         "text": "अनुमानि।",
         "wordIndices": [
-          5
+          6
         ]
       }
     ],
     "roman": "saranāgata kahum̐ jē tajahiṁ nija anahita anumāni.",
-    "english": "{1:Those who}{2: abandon}{0: one who has come for refuge,}{5: calculating}{4: harm}{3: to themselves,}",
+    "english": "{2:Those who}{3: abandon}{0,1: one who has come for refuge,}{6: calculating}{5: harm}{4: to themselves,}",
     "words": [
+      {
+        "roman": "saranāgata",
+        "gloss": "one who has come for refuge; the refugee",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
       {
         "roman": "kahum̐",
         "gloss": "unto / to",
@@ -60778,7 +60766,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "dō0= is the verse type indicator prefixed to saranāgata; kahum̐ is the accusative/dative postposition; tajahiṁ is third-person plural present; anumāni is a conjunctive participle (having inferred)."
+    "grammarNote": "kahum̐ is the accusative/dative postposition; tajahiṁ is third-person plural present; anumāni is a conjunctive participle (having inferred)."
   },
   "line-499": {
     "source": "ते नर पावँर पापमय तिन्हहि बिलोकत हानि",
@@ -61948,43 +61936,49 @@ window.SONG_LINES = {
       {
         "text": "भाँति",
         "wordIndices": [
-          0
+          1
         ]
       },
       {
         "text": "तेहि",
         "wordIndices": [
-          1
+          2
         ]
       },
       {
         "text": "आनहु",
         "wordIndices": [
-          2
+          3
         ]
       },
       {
         "text": "हँसि",
         "wordIndices": [
-          3
+          4
         ]
       },
       {
         "text": "कह",
         "wordIndices": [
-          4
+          5
         ]
       },
       {
         "text": "कृपानिकेत।",
         "wordIndices": [
-          5
+          6
         ]
       }
     ],
     "roman": "ubhaya bhām̐ti tēhi ānahu ham̐si kaha kṛpānikēta.",
-    "english": "{3:Smiling, }{5:the abode of grace }{4:said: }{2:“Bring }{1:him }{0:case!”}",
+    "english": "{4:Smiling, }{6:the abode of grace }{5:said: }{3:“Bring }{2:him }{0:in either }{1:case!”}",
     "words": [
+      {
+        "roman": "ubhaya",
+        "gloss": "in both; either",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
       {
         "roman": "bhām̐ti",
         "gloss": "ways; cases",
@@ -62022,7 +62016,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "dō0= is the meter identifier prefixed to ubhaya; ubhaya bhām̐ti functions adverbially; ānahu is 2nd plural imperative; ham̐si is a conjunctive participle (absolutive); kṛpānikēta is a tatpuruṣa compound (kṛpā + nikēta) functioning as nominative subject of kaha."
+    "grammarNote": "ubhaya bhām̐ti functions adverbially; ānahu is 2nd plural imperative; ham̐si is a conjunctive participle (absolutive); kṛpānikēta is a tatpuruṣa compound (kṛpā + nikēta) functioning as nominative subject of kaha."
   },
   "line-509": {
     "source": "जय कृपाल कहि चले अंगद हनू समेत",

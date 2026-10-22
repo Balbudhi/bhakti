@@ -994,7 +994,7 @@ window.SONG_LINES = {
     "source": "कहत कबीरा सुनो भाई साधो",
     "sourceLanguage": "hi",
     "roman": "Kahat Kabīrā suno bhāī sādho",
-    "english": "{1:Kabir }{0:says: }{2:listen, }{4:O seekers, }{3:my brothers:}",
+    "english": "{1:Kabīr }{0:says: }{2:listen, }{4:O seekers, }{3:my brothers:}",
     "words": [
       {
         "roman": "Kahat",

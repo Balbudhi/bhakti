@@ -373,7 +373,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ye sansāra kāgaza kī puṛiyā",
-    "english": "{0:This }{1:saṃsāra }is {4:a packet }{3:of }{2:paper}",
+    "english": "{0:This }{1:world }is {4:a packet }{3:of }{2:paper}",
     "words": [
       {
         "roman": "ye",
@@ -383,9 +383,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "sansāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "world; worldly existence, here portrayed as fragile and perishable",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kāgaza",
@@ -503,7 +503,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ye sansāra jhāṛō-jhīṅkhara",
-    "english": "{0:This }{1:saṃsāra }is {2:a thicket of thorny bushes}",
+    "english": "{0:This }{1:world }is {2:a thicket of thorny bushes}",
     "words": [
       {
         "roman": "ye",
@@ -513,9 +513,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "sansāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "world; worldly existence, here portrayed as fragile and perishable",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jhāṛō-jhīṅkhara",
@@ -633,7 +633,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahata kabīra sunō bhāī sādhō",
-    "english": "{0:Says }{1:Kabir, }{2:listen, }{3:O brother }{4:seekers}",
+    "english": "{0:Says }{1:Kabīr, }{2:listen, }{3:O brother }{4:seekers}",
     "words": [
       {
         "roman": "kahata",

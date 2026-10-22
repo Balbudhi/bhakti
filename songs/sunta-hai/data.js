@@ -725,7 +725,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahē Kabīrā ā ā Kabīrā ā ā",
-    "english": "{0:Says }{1:Kabir, }{2:ah, }{3:ah, }{4:Kabir, }{5:ah, }{6:ah}",
+    "english": "{0:Says }{1:Kabīr, }{2:ah, }{3:ah, }{4:Kabīr, }{5:ah, }{6:ah}",
     "words": [
       {
         "roman": "Kahē",
@@ -838,7 +838,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahē Kabīr sunō bhāī sādhō jāyē agam kī bānī rē",
-    "english": "{0:Says }{1:Kabir, }{2:listen, }{3:O brother }{4:seekers: }{8:the word }{7:of the }{6:unfathomable }{5:goes forth, }{9:O!}",
+    "english": "{0:Says }{1:Kabīr, }{2:listen, }{3:O brother }{4:seekers: }{8:the word }{7:of the }{6:unfathomable }{5:goes forth, }{9:O!}",
     "words": [
       {
         "roman": "Kahē",
