@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
+  "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi",
   "subtitle": "",
   "credit": "Gurū Arjan · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
@@ -26,7 +26,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Arjan"
+    "Gurū Arjan",
+    "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥"
   ],
   "audioSources": [
     {
@@ -88,7 +89,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū̃ ṭhākuru tum pehi ardāsi ॥",
-    "english": "{0:You }{1:are the Master; }{3:unto }{2:You }{4:is this prayer.}",
+    "english": "{0:You }{1:are the Master; }{4:this prayer is }{3:before }{2:You.}",
     "words": [
       {
         "roman": "tū̃",
@@ -482,7 +483,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "`ūce te ūcā` is an ablative comparative construction serving as a superlative predicate; `bhagvantu` is masculine nominative singular with terminal `-u`."
+    "grammarNote": "ūce te ūcā is a comparative construction, higher than the high, idiomatically supreme. bhagvant names the blessed Lord; the English treats it as direct address within the prayer. The printed Gurmukhi form ਭਗਵੰਤ has no final auṅkaṛ vowel sign."
   },
   "sagal-samagri-tumrai-sutri-dhari": {
     "source": "ਸਗਲ ਸਮਗ੍ਰੀ ਤੁਮਰੈ ਸੂਤ੍ਰਿ ਧਾਰੀ ॥",
@@ -742,11 +743,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak dās sadā kurbānī ॥",
-    "english": "{1:Servant }{0:Nanak }{2:is forever }{3:a sacrifice.}",
+    "english": "{1:Servant }{0:Nānak }{2:is forever }{3:a sacrifice.}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "Guru Nanak (the poet-preceptor)",
+        "gloss": "the Gurū’s poetic signature",
         "concept_key": "",
         "preserve_in_english": false
       },

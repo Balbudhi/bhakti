@@ -4,11 +4,39 @@
 from __future__ import annotations
 
 import unittest
+from unittest.mock import patch
 
 import source_witness
 
 
 class SourceWitnessTests(unittest.TestCase):
+    def test_srigranth_parser_keeps_only_visible_gurmukhi_source(self) -> None:
+        document = '''<script>ਗਲਤ</script>
+        <font face="AnmolUniPr"><a title="invented interpretation">ਗਗਨ </a>
+        <a>ਮੈ </a>ਥਾਲੁ ॥੧॥</font><br>
+        <font color="#008080">गगन मै थालु</font>
+        <font face="TAHOMA">Gagan mai thaal</font>
+        <font face="TAHOMA">The sky is a plate.</font>
+        <font face="AnmolUniPr">ਸਮੑਾਲੇ&nbsp;॥</font>
+        <div>ਅਨੁਵਾਦ</div>'''
+        self.assertEqual(source_witness._extract_srigranth_gurmukhi(document), [
+            "ਗਗਨ ਮੈ ਥਾਲੁ ॥੧॥", "ਸਮੑਾਲੇ ॥",
+        ])
+
+    def test_srigranth_acquisition_keeps_page_provenance_and_rejects_empty_source(self) -> None:
+        record = {"pages": [6, 9]}
+        with patch.object(source_witness, "_fetch", side_effect=[
+            '<font face="AnmolUniPr">ਸੋ ਦਰੁ ਕੇਹਾ ॥</font>',
+            '<font face="AnmolUniPr">ਸੋ ਦਰੁ ਤੇਰਾ ਕੇਹਾ ॥</font>',
+        ]):
+            pages, lines = source_witness._acquire_srigranth_pages(record)
+        self.assertEqual([row["page"] for row in lines], [6, 9])
+        self.assertTrue(lines[1]["url"].endswith("Param=9"))
+        self.assertEqual([row["line_count"] for row in pages], [1, 1])
+        with patch.object(source_witness, "_fetch", return_value="<p>Unavailable</p>"):
+            with self.assertRaisesRegex(RuntimeError, "no Gurmukhi source"):
+                source_witness._acquire_srigranth_pages({"pages": [6]})
+
     def test_pustak_parser_excludes_page_chrome_and_commentary(self) -> None:
         html = '''<div id="freeread">
           सभी कष्टों की पीड़ा से निवारण का मूल मंत्र<br>

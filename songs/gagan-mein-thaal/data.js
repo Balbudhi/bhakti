@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Gagan Mein Thaal",
+  "title": "Gagana Mai Thālu",
   "subtitle": "",
   "credit": "Gurū Nānak · Bhai Nirmal Singh · Uttam Singh",
   "pageCredit": "Bhai Nirmal Singh",
@@ -25,7 +25,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Nānak"
+    "Gurū Nānak",
+    "Gagan Mein Thaal"
   ],
   "audioSources": [
     {
@@ -122,8 +123,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gagana mai thālu ravi candu dīpaka bane tārikā maṇḍala janaka motī ||",
-    "english": "{1:In }{0:the sky }{2:is the salver; }{3:the sun }{4:and moon }{6:have become }{5:lamps, }{8:the sphere }{7:of stars }{9:like }{10:pearls.}",
+    "roman": "gagana mai thālu ravi candu dīpaka bane tārikā maṇḍala janaka motī ॥",
+    "english": "{0,1:The sky itself }{2:is the tray; }{3:the sun }{4:and moon }{6:have become }{5:lamps; }{7:the stars }{8:in their array }{9:are like }{10:pearls.}",
     "words": [
       {
         "roman": "gagana",
@@ -133,13 +134,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mai",
-        "gloss": "in",
+        "gloss": "formed of; here, the sky itself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "thālu",
-        "gloss": "salver",
+        "gloss": "offering tray",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -175,13 +176,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṇḍala",
-        "gloss": "sphere",
+        "gloss": "array; circle",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "janaka",
-        "gloss": "like",
+        "gloss": "as though; like",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -193,7 +194,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Locative postposition mai links gagana to the subject thālu (singular masculine with Gurmukhi aukar u-ending). Ravi and candu are a dvandva pair functioning as the compound subject for the plural predicate dīpaka bane. Janaka serves as an utprekṣā particle meaning 'as if' or 'like'."
+    "grammarNote": "Gagana mai is read here as sky-formed: the whole sky itself is the tray. Ravi and candu form the compound subject of dīpaka bane. Tārikā maṇḍala names the array of stars; janaka introduces the comparison with pearls."
   },
   "dhoop-malianlo": {
     "source": "ਧੂਪੁ ਮਲਆਨਲੋ ਪਵਣੁ ਚਵਰੋ ਕਰੇ ਸਗਲ ਬਨਰਾਇ ਫੂਲੰਤ ਜੋਤੀ ॥",
@@ -254,8 +255,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "dhūpu mala'ānalo pavaṇu cavaro kare sagala banarāi phūlanta jotī ||",
-    "english": "{1:The sandalwood breeze }{0:is incense, }{2:the wind }{4:waves }{3:the fly-whisk, }{5:and all }{6:vegetation }{7:flowers into }{8:radiant light.}",
+    "roman": "dhūpu malaānalo pavaṇu cavaro kare sagala banarāi phūlanta jotī ॥",
+    "english": "{1:The sandalwood breeze }{0:is incense, }{2:the wind }{4:waves }{3:the fly-whisk, }{5:and all }{6:vegetation }{7:bears flowers }{8:for the divine Light.}",
     "words": [
       {
         "roman": "dhūpu",
@@ -264,7 +265,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mala'ānalo",
+        "roman": "malaānalo",
         "gloss": "sandalwood breeze",
         "concept_key": "",
         "preserve_in_english": false
@@ -301,19 +302,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "phūlanta",
-        "gloss": "flowering",
+        "gloss": "bears flowers",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jotī",
-        "gloss": "radiant light",
+        "gloss": "the divine Light",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Mala'ānalo is a compound sandhi of malaya (the sandalwood-rich southern mountain) and anila (wind). Pavaṇu is the agent for the transitive verb kare with object cavaro. Phūlanta is a present participle modifying sagala banarāi in apposition to jotī."
+    "grammarNote": "Malaānalo names the breeze from the sandalwood-bearing Malaya mountains. Pavaṇu is the subject of kare, with cavaro as its object. Phūlanta describes the vegetation bearing flowers; jotī names the divine Light for whom those flowers are offered."
   },
   "gur-saakhi-jot": {
     "source": "ਗੁਰ ਸਾਖੀ ਜੋਤਿ ਪਰਗਟੁ ਹੋਇ ॥ ਜੋ ਤਿਸੁ ਭਾਵੈ ਸੁ ਆਰਤੀ ਹੋਇ ॥",
@@ -386,7 +387,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gura sākhī joti paragaṭu hoi || jo tisu bhāvai su āratī hoi ||",
+    "roman": "gura sākhī joti paragaṭu hoi ॥ jo tisu bhāvai su āratī hoi ॥",
     "english": "{0:Through the spiritual teacher's }{1:instruction }{2:the divine light }{4:becomes }{3:manifest; }{5:whatever }{7:is pleasing }{6:to Him, }{8:that }{10:is }{9:the worship.}",
     "words": [
       {
@@ -524,7 +525,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "hari caraṇa kamala makaranda lobhita mano anadinō mohi āhī pi'āsā ||",
+    "roman": "hari caraṇa kamala makaranda lobhita mano anadino mohi āhī piāsā ॥",
     "english": "{5:The mind }{4:longs for }{3:the nectar of }{0:Hari's }{2:lotus }{1:feet; }{6:day and night, }{9:thirst }{8:persists }{7:in me.}",
     "words": [
       {
@@ -564,7 +565,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "anadinō",
+        "roman": "anadino",
         "gloss": "day and night",
         "concept_key": "",
         "preserve_in_english": false
@@ -582,7 +583,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pi'āsā",
+        "roman": "piāsā",
         "gloss": "thirst",
         "concept_key": "",
         "preserve_in_english": false
@@ -620,11 +621,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "anadinō mohi āhī pi'āsā ||",
+    "roman": "anadino mohi āhī piāsā ॥",
     "english": "{0:Day and night, }{3:thirst }{2:persists }{1:in me.}",
     "words": [
       {
-        "roman": "anadinō",
+        "roman": "anadino",
         "gloss": "day and night",
         "concept_key": "",
         "preserve_in_english": false
@@ -642,7 +643,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pi'āsā",
+        "roman": "piāsā",
         "gloss": "thirst",
         "concept_key": "",
         "preserve_in_english": false
@@ -693,7 +694,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kripā jalu dehi nānaka sāriṅga kau",
-    "english": "{2:Give }{1:the water }{0:of grace }{3,5:unto Nanak, }{4:the pied cuckoo,}",
+    "english": "{2:Give }{1:the water }{0:of grace }{5:to }{3:Nānak, }{4:the pied cuckoo,}",
     "words": [
       {
         "roman": "kripā",
@@ -715,7 +716,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānaka",
-        "gloss": "unto Nanak (the poet-preceptor)",
+        "gloss": "the poet’s signature",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -776,8 +777,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "hoi jā te terai nāmi vāsā ||",
-    "english": "{1,2:whereby }{5:dwelling }{3:in Your }{4:Name }{0:comes to be.}",
+    "roman": "hoi jā te terai nāmi vāsā ॥",
+    "english": "{1,2:whereby }{5:dwelling }{4:in }{3:Your }{4:Name }{0:comes to be.}",
     "words": [
       {
         "roman": "hoi",
@@ -799,13 +800,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "terai",
-        "gloss": "in Your",
+        "gloss": "Your",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nāmi",
-        "gloss": "divine name",
+        "gloss": "in the divine Name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -843,17 +844,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terai nāmi vāsā",
-    "english": "{2:dwelling }{0:in Your }{1:Name}",
+    "english": "{2:dwelling }{1:in }{0:Your }{1:Name}",
     "words": [
       {
         "roman": "terai",
-        "gloss": "in Your",
+        "gloss": "Your",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nāmi",
-        "gloss": "divine name",
+        "gloss": "in the divine Name",
         "concept_key": "",
         "preserve_in_english": false
       },

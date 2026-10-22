@@ -1,0 +1,708 @@
+{
+  "songs": [
+    {
+      "title": "Gagan Mein Thaal",
+      "subtitle": "",
+      "credit": "Gurū Nānak · Bhai Nirmal Singh · Uttam Singh",
+      "pageCredit": "Bhai Nirmal Singh",
+      "writer": "Gurū Nānak",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Nirmal Singh",
+      "vocalist": "",
+      "composer": "Uttam Singh",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Gagan Mein Thaal Rav Chand Deepak Bane",
+        "Guru Nanak Aarti",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Nānak"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gagan-mein-thaal.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gagan-mein-thaal.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Gagana Mai Thālu",
+          "poet": "Gurū Nānak",
+          "note": "Gurū Granth Sāhib · Aṅg 13 · Rāga Dhanāsarī · Excerpts; also appears at aṅg 663."
+        }
+      ],
+      "slug": "gagan-mein-thaal",
+      "source": "https://www.youtube.com/watch?v=jNeQY2lnjko",
+      "displayTitle": "Gagana Mai Thālu"
+    },
+    {
+      "title": "Gur Satgur Ka Jo Sikh Akhaye",
+      "subtitle": "",
+      "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
+      "pageCredit": "Bhai Harjinder Singh",
+      "writer": "Gurū Rām Dās",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Harjinder Singh",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Gur Satgur Ka Jo Sikh Akhaaye",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Rām Dās"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gur-satgur-ka-jo-sikh-akhaye.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/gur-satgur-ka-jo-sikh-akhaye.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Gur Satigur Kā Jo Sikhu Akhāe",
+          "poet": "Gurū Rām Dās",
+          "note": "Gurū Granth Sāhib · Aṅg 305–306 · Gauṛī kī Vār · Salok, Mahallā 4."
+        }
+      ],
+      "slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "source": "https://www.youtube.com/watch?v=pxfjoi-FCUg",
+      "displayTitle": "Gur Satigur Kā Jo Sikhu Akhāe"
+    },
+    {
+      "title": "Har Jiyo Kirpa Karo",
+      "subtitle": "",
+      "credit": "Gurū Amar Dās · Bhai Satwinder Singh & Bhai Harwinder Singh",
+      "pageCredit": "Bhai Satwinder Singh & Bhai Harwinder Singh",
+      "writer": "Gurū Amar Dās",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Satwinder Singh & Bhai Harwinder Singh",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Har Jiyo Kripa Karo Tum Pyare",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Amar Dās"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/har-jiyo-kirpa-karo.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/har-jiyo-kirpa-karo.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Hari Jīu Kripā Karahu",
+          "poet": "Gurū Amar Dās",
+          "note": "Gurū Granth Sāhib · Aṅg 603–604 · Rāga Soraṭhi · Mahallā 3."
+        }
+      ],
+      "slug": "har-jiyo-kirpa-karo",
+      "source": "https://www.youtube.com/watch?v=AceYwQfDPJA",
+      "displayTitle": "Hari Jīu Kripā Karahu"
+    },
+    {
+      "title": "Jo Nar Dukh Mein Dukh Nahin Jaane",
+      "subtitle": "",
+      "credit": "Gurū Teg Bahādar · Bhai Nirmal Singh Khalsa",
+      "pageCredit": "Bhai Nirmal Singh Khalsa",
+      "writer": "Gurū Teg Bahādar",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Nirmal Singh Khalsa",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Jo Nar Dukh Mein Dukh Nahi Mane",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Teg Bahādar"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-nar-dukh-mein-dukh-nahin-jaane.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-nar-dukh-mein-dukh-nahin-jaane.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Jo Naru Dukh Mai Dukhu Nahī Mānai",
+          "poet": "Gurū Teg Bahādar",
+          "note": "Gurū Granth Sāhib · Aṅg 633 · Rāga Soraṭhi · Mahallā 9."
+        }
+      ],
+      "slug": "jo-nar-dukh-mein-dukh-nahin-jaane",
+      "source": "https://www.youtube.com/watch?v=Yrxkld3VIo8",
+      "displayTitle": "Jo Naru Dukh Mai Dukhu Nahī Mānai"
+    },
+    {
+      "title": "Koī Āṇi Milāvai Merā Prītamu Piārā",
+      "subtitle": "",
+      "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
+      "pageCredit": "Bhai Harjinder Singh",
+      "writer": "Gurū Rām Dās",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Harjinder Singh",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Koi Ani Milavai Mera Pritamu Piara",
+        "Koi Aan Milave Mera Pritam Pyara",
+        "Koi Aan Milave",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Rām Dās"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koee-aan-milavai-mera-pritam-pyara.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/koee-aan-milavai-mera-pritam-pyara.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Koī Āṇi Milāvai Merā Prītamu Piārā",
+          "poet": "Gurū Rām Dās",
+          "note": "Gurū Granth Sāhib · Aṅg 757 · Rāga Sūhī · Mahallā 4 · Stanzas 1–6 and refrain."
+        }
+      ],
+      "slug": "koee-aan-milavai-mera-pritam-pyara",
+      "source": "https://www.youtube.com/watch?v=whwlUv9zMFA",
+      "displayTitle": "Koī Āṇi Milāvai Merā Prītamu Piārā"
+    },
+    {
+      "title": "So Dar Keha So Ghar Keha",
+      "subtitle": "",
+      "credit": "Gurū Nānak · Bhai Nirmal Singh Khalsa",
+      "pageCredit": "Bhai Nirmal Singh Khalsa",
+      "writer": "Gurū Nānak",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Nirmal Singh Khalsa",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "So Dar Keha",
+        "So Dar Tera Keha So Ghar Keha",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Nānak"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-dar-keha-so-ghar-keha.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-dar-keha-so-ghar-keha.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 1,
+          "title": "So Daru Kehā So Gharu Kehā",
+          "poet": "Gurū Nānak",
+          "note": "Gurū Granth Sāhib · Aṅg 6 · Japu Jī Sāhib · Pauṛī 27."
+        }
+      ],
+      "slug": "so-dar-keha-so-ghar-keha",
+      "source": "https://www.youtube.com/watch?v=WL7_XIeqXMU",
+      "displayTitle": "So Daru Kehā So Gharu Kehā"
+    },
+    {
+      "title": "Tera Kiya Meetha Laage",
+      "subtitle": "",
+      "credit": "Gurū Arjan · Bhai Lakhwinder Singh",
+      "pageCredit": "Bhai Lakhwinder Singh",
+      "writer": "Gurū Arjan",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Lakhwinder Singh",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Tera Kiya Meetha Lage",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Arjan"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tera-kiya-meetha-laage.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tera-kiya-meetha-laage.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Terā Kīā Mīṭhā Lāgai",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 394 · Rāga Āsā · Mahallā 5."
+        }
+      ],
+      "slug": "tera-kiya-meetha-laage",
+      "source": "https://www.youtube.com/watch?v=HuPJZ0ICFug",
+      "displayTitle": "Terā Kīā Mīṭhā Lāgai"
+    },
+    {
+      "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
+      "subtitle": "",
+      "credit": "Gurū Arjan · Bhai Harjinder Singh",
+      "pageCredit": "Bhai Harjinder Singh",
+      "writer": "Gurū Arjan",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Harjinder Singh",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Tũ Thakuru Tum Pehi Ardasi ॥",
+        "Tu Thakur Tum Pe Ardas",
+        "Tu Thakur Tum Pahey Ardas",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Arjan"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tu-thakur-tum-peh-ardas.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tu-thakur-tum-peh-ardas.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 268 · Sukhmanī Sāhib · Aṣṭapadī 4, stanza 8."
+        }
+      ],
+      "slug": "tu-thakur-tum-peh-ardas",
+      "source": "https://www.youtube.com/watch?v=BpMxd2gT9G0",
+      "displayTitle": "Tū̃ Ṭhākuru Tum Pehi Ardāsi"
+    },
+    {
+      "title": "Mera Man Lochai",
+      "subtitle": "",
+      "credit": "Gurū Arjan · Gurū Rām Dās · Kabīr · Bhai Nirmal Singh Khalsa",
+      "pageCredit": "Bhai Nirmal Singh Khalsa",
+      "writer": "Gurū Arjan · Gurū Rām Dās · Kabīr",
+      "writerAttribution": "",
+      "translator": "",
+      "translatorAttribution": "",
+      "singer": "Bhai Nirmal Singh Khalsa",
+      "vocalist": "",
+      "composer": "",
+      "ensemble": "",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Mera Man Lochai Gur Darshan Tai",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Sikhī",
+        "Guru Granth Sahib",
+        "Gurū Arjan · Gurū Rām Dās · Kabīr"
+      ],
+      "audioSources": [
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-man-lochai.webm",
+          "type": "audio/webm; codecs=opus"
+        },
+        {
+          "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mera-man-lochai.m4a",
+          "type": "audio/mp4"
+        }
+      ],
+      "timingStatus": "start-only-reviewed",
+      "translationStatus": "gloss-derived literal",
+      "sourceStatus": "reviewed",
+      "sectionNotices": [
+        {
+          "sequenceIndex": 0,
+          "title": "Merā Manu Locai",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 96–97 · Rāga Mājha · Mahallā 5."
+        },
+        {
+          "sequenceIndex": 66,
+          "title": "Antari Piāsa Uṭhī Prabha Kerī",
+          "poet": "Gurū Rām Dās",
+          "note": "Gurū Granth Sāhib · Aṅg 835–836 · Rāga Bilāvalu · Mahallā 4 · Excerpt."
+        },
+        {
+          "sequenceIndex": 70,
+          "title": "Merā Manu Locai",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain."
+        },
+        {
+          "sequenceIndex": 71,
+          "title": "Kaise Kahau Mohi Jīa Bedanāī",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 1206 · Rāga Sāraṅga · Mahallā 5 · Excerpt."
+        },
+        {
+          "sequenceIndex": 75,
+          "title": "Panthu Nihārai Kāmanī",
+          "poet": "Kabīr",
+          "note": "Gurū Granth Sāhib · Aṅg 337 · Rāga Gauṛī · Kabīr · Stanza 1."
+        },
+        {
+          "sequenceIndex": 79,
+          "title": "Merā Manu Locai",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain."
+        },
+        {
+          "sequenceIndex": 80,
+          "title": "Darasana Piāsī Dinasu Rāti",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 703 · Rāga Jaitasarī · Mahallā 5 · Salok."
+        },
+        {
+          "sequenceIndex": 84,
+          "title": "Merā Manu Locai",
+          "poet": "Gurū Arjan",
+          "note": "Gurū Granth Sāhib · Aṅg 96–97 · Refrain."
+        }
+      ],
+      "slug": "mera-man-lochai",
+      "source": "https://www.youtube.com/watch?v=AP1khplLu1M",
+      "displayTitle": "Merā Manu Locai"
+    },
+    {
+      "slug": "satgur-kai-bhane-chal",
+      "source": "https://www.youtube.com/watch?v=Ghw7GYZoQFs",
+      "title": "Satigur Kai Bhāṇai Calu",
+      "writer": "Gurū Amar Dās",
+      "singer": "Bhai Harjinder Singh",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Satgur Kai Bhane Chal",
+        "Man Mere Satgur Kai Bhane Chal",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Guru Granth Sahib"
+      ],
+      "_source_resolution": {
+        "resolved_url": "https://www.youtube.com/watch?v=Ghw7GYZoQFs",
+        "duration_seconds": 957,
+        "official": true,
+        "verified_with": "scripts/resolve_youtube_music_audio.py"
+      },
+      "_research": {
+        "canonical_passage": "Sirīrāgu · Mahallā 3 · hymn ending 4.26.59",
+        "ang": [
+          36,
+          37
+        ],
+        "primary_text_sources": [
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=36&g=1&h=0&r=0&t=0&p=0&k=0",
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=37&g=1&h=0&r=0&t=0&p=0&k=0"
+        ],
+        "review_notes": [
+          "Existing intake-gurbani-studio-masters.json item has no public page/catalogue entry. Complete this intake rather than create a duplicate.",
+          "Primary text starts on Ang 36 and continues at 37; do not use recording title alone as citation."
+        ],
+        "status": "Candidate metadata and main canonical passage verified; full performed text, insertions, timing, transliteration, and translation still require production pipeline and editorial review."
+      },
+      "displayTitle": "Satigur Kai Bhāṇai Calu"
+    },
+    {
+      "slug": "dhan-dhan-ramdas-guru",
+      "source": "https://www.youtube.com/watch?v=GZHqwq2nZQs",
+      "title": "Dhannu Dhannu Rāmadāsa Guru",
+      "writer": "Sattā · Balvaṇḍ",
+      "singer": "Bhai Harjinder Singh",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Dhan Dhan Ramdas Guru",
+        "Dhan Dhan Ram Das Guru",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Guru Granth Sahib"
+      ],
+      "_source_resolution": {
+        "resolved_url": "https://www.youtube.com/watch?v=GZHqwq2nZQs",
+        "duration_seconds": 584,
+        "official": true,
+        "verified_with": "scripts/resolve_youtube_music_audio.py"
+      },
+      "_research": {
+        "canonical_passage": "Rāmakalī kī vāra · Rāi Balvaṇḍ and Sattā · Pauṛī 7",
+        "ang": [
+          968
+        ],
+        "primary_text_sources": [
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=966&g=1&h=0&r=0&t=0&p=0&k=0",
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=968&g=1&h=0&r=0&t=0&p=0&k=0"
+        ],
+        "review_notes": [
+          "Ang 966 establishes the Vār attribution; the actual Dhan Dhan passage is on 968, not 966.",
+          "Title names Guru Ram Das as subject, not author.",
+          "Resolver selected official T-Series art track; album Dhan Dhan Ram Das Guru."
+        ],
+        "status": "Candidate metadata and main canonical passage verified; full performed text, insertions, timing, transliteration, and translation still require production pipeline and editorial review."
+      },
+      "displayTitle": "Dhannu Dhannu Rāmadāsa Guru"
+    },
+    {
+      "slug": "so-satgur-pyara-mere-naal-hai",
+      "source": "https://www.youtube.com/watch?v=ZEo98d5uogo",
+      "title": "So Satiguru Piārā Merai Nāli Hai",
+      "writer": "Gurū Rām Dās",
+      "singer": "Bhai Lakhwinder Singh",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "So Satgur Pyara Mere Naal Hai",
+        "So Satguru Pyara Mere Nal Hai",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Guru Granth Sahib"
+      ],
+      "_source_resolution": {
+        "resolved_url": "https://www.youtube.com/watch?v=ZEo98d5uogo",
+        "duration_seconds": 481,
+        "official": true,
+        "verified_with": "scripts/resolve_youtube_music_audio.py"
+      },
+      "_research": {
+        "canonical_passage": "Vaḍahaṃsa kī vāra · Mahallā 4 · Pauṛī 5",
+        "ang": [
+          587,
+          588
+        ],
+        "primary_text_sources": [
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=585&g=1&h=0&r=0&t=0&p=0&k=0",
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=587&g=1&h=0&r=0&t=0&p=0&k=0",
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=588&g=1&h=0&r=0&t=0&p=0&k=0"
+        ],
+        "review_notes": [
+          "Important attribution trap: adjacent saloks are Guru Amar Das (M3), but this pauri belongs to Vadhans Var Mahalla 4, heading on Ang 585, and is Guru Ram Das.",
+          "Pauri begins at bottom of Ang 587, title line appears on 588. Several lyric sites mistakenly assign only 587 and/or Amar Das.",
+          "Direct official T-Series art track from So Satgur Pyara Vol-1; search query was ambiguous, so the independently discovered exact official art track was directly resolved."
+        ],
+        "status": "Candidate metadata and main canonical passage verified; full performed text, insertions, timing, transliteration, and translation still require production pipeline and editorial review."
+      },
+      "displayTitle": "So Satiguru Piārā Merai Nāli Hai"
+    },
+    {
+      "slug": "sabh-gobind-hai",
+      "source": "https://www.youtube.com/watch?v=h1E7P0zRSug",
+      "title": "Sabhu Gobindu Hai",
+      "writer": "Nāmadev",
+      "singer": "Bhai Harjinder Singh",
+      "languages": [
+        "Punjabi"
+      ],
+      "subjectTags": [
+        "Gurbāṇī"
+      ],
+      "searchAliases": [
+        "Sabh Gobind Hai",
+        "Sab Gobind Hai",
+        "Sab Govind Hai",
+        "Namdev",
+        "Gurbani",
+        "Sikh",
+        "Sikhi",
+        "Guru Granth Sahib"
+      ],
+      "_source_resolution": {
+        "resolved_url": "https://www.youtube.com/watch?v=h1E7P0zRSug",
+        "duration_seconds": 608,
+        "official": true,
+        "verified_with": "scripts/resolve_youtube_music_audio.py"
+      },
+      "_research": {
+        "canonical_passage": "Rāga Āsā · Bāṇī Srī Nāmadeu Jī kī · hymn 1",
+        "ang": [
+          485
+        ],
+        "primary_text_sources": [
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=485&g=1&h=0&r=0&t=0&p=0&k=0"
+        ],
+        "review_notes": [
+          "Primary text explicitly attributes the hymn to Namdev.",
+          "Preserve the thread and beads, water and waves/foam/bubbles images in the literal translation. Do not simplify them into generic theological prose.",
+          "Official art track provided by SSG, album Sabh Gobind Hai, 2009 release."
+        ],
+        "status": "Candidate metadata and main canonical passage verified; full performed text, insertions, timing, transliteration, and translation still require production pipeline and editorial review."
+      },
+      "displayTitle": "Sabhu Gobindu Hai"
+    }
+  ]
+}

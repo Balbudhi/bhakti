@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Tera Kiya Meetha Laage",
+  "title": "Terā Kīā Mīṭhā Lāgai",
   "subtitle": "",
   "credit": "Gurū Arjan · Bhai Lakhwinder Singh",
   "pageCredit": "Bhai Lakhwinder Singh",
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Arjan"
+    "Gurū Arjan",
+    "Tera Kiya Meetha Laage"
   ],
   "audioSources": [
     {
@@ -79,11 +80,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Tērā kīā mīṭhā lāgai ॥",
+    "roman": "Terā kīā mīṭhā lāgai ॥",
     "english": "{0:Your }{1:doing }{3:feels }{2:sweet.}",
     "words": [
       {
-        "roman": "Tērā",
+        "roman": "Terā",
         "gloss": "your",
         "concept_key": "",
         "preserve_in_english": false
@@ -146,7 +147,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hari nāmu padārathu nānaku māṅgai ॥",
-    "english": "{3:Nanak }{4:begs for }{2:the treasure }{0:of the Divine }{1:Name.}",
+    "english": "{3:Nānak }{4:begs for }{2:the treasure }{0:of the Divine }{1:Name.}",
     "words": [
       {
         "roman": "Hari",
@@ -236,7 +237,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai",
-    "english": "{0:Nanak }{1:begs, }{2:Nanak }{3:begs, }{4:Nanak }{5:begs, }{6:Nanak }{7:begs}",
+    "english": "{0:Nānak }{1:begs, }{2:Nānak }{3:begs, }{4:Nānak }{5:begs, }{6:Nānak }{7:begs}",
     "words": [
       {
         "roman": "Nānaku",
@@ -332,7 +333,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hari kā nāmu ridai nit dhiāī ॥",
-    "english": "{5:Meditating }{4:continually }{2:upon the Name }{0,1:of the Divine }{3:in the heart,}",
+    "english": "{5:I meditate }{4:continually }{2:upon the Name }{0,1:of the Divine }{3:in the heart.}",
     "words": [
       {
         "roman": "Hari",
@@ -366,13 +367,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhiāī",
-        "gloss": "meditates upon; I meditate upon",
+        "gloss": "I meditate upon",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "ridai is locative singular of hṛdaya/ridā ('in the heart'). dhiāī is 1st person singular present/subjunctive or continuous participle from dhiāuṇā ('to meditate')."
+    "grammarNote": "ridai is locative, in the heart. dhiāī is a first-person singular present/subjunctive form: I meditate, or may I meditate. This is the devotee’s own utterance, continuing into the following first-person clause."
   },
   "sangi-saathi-sagal-taraai": {
     "source": "ਸੰਗੀ ਸਾਥੀ ਸਗਲ ਤਰਾਈ ॥",
@@ -404,7 +405,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saṅgī sāthī sagal tarāī ॥",
-    "english": "{3:ferrying }{2:all }{0:companions }{1:and friends }{3:across.}",
+    "english": "{3:I ferry }{2:all }{0:companions }{1:and friends }{3:across.}",
     "words": [
       {
         "roman": "Saṅgī",
@@ -426,13 +427,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "tarāī",
-        "gloss": "carries across; ferrying across",
+        "gloss": "I ferry across; I bring across",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "tarāī is a causative transitive verb form (from √tṝ / tarnā -> tarāuṇā) meaning 'causes to cross / ferries across'. Saṅgī sāthī sagal forms the compound direct object."
+    "grammarNote": "tarāī is a first-person causative verb here: I bring across. saṅgī sāthī sagal is its direct object. It continues the first-person voice of the preceding meditation line."
   },
   "gur-merai-sang-sada-hai-naale": {
     "source": "ਗੁਰੁ ਮੇਰੈ ਸੰਗਿ ਸਦਾ ਹੈ ਨਾਲੇ ॥",
@@ -475,7 +476,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Guru mērai saṅgi sadā hai nālē ॥",
+    "roman": "Guru merai saṅgi sadā hai nāle ॥",
     "english": "{1:My }{0:Guru }{4:is }{3:always }{1,2:with me, }{5:by my side.}",
     "words": [
       {
@@ -485,7 +486,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mērai",
+        "roman": "merai",
         "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
@@ -509,14 +510,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nālē",
+        "roman": "nāle",
         "gloss": "alongside; by my side",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Guru is nominative singular with grammatical -u. mērai is oblique 1st person possessive agreeing with the locative postposition saṅgi. nālē reinforces proximity adverbially."
+    "grammarNote": "Guru is nominative singular with grammatical -u. merai is oblique 1st person possessive agreeing with the locative postposition saṅgi. nāle reinforces proximity adverbially."
   },
   "simar-simar-tis-sada-samhale": {
     "source": "ਸਿਮਰਿ ਸਿਮਰਿ ਤਿਸੁ ਸਦਾ ਸਮ੍ਹ੍ਹਾਲੇ ॥",
@@ -553,7 +554,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Simari simari tisu sadā sam̐hālē ॥",
+    "roman": "Simari simari tisu sadā samhāle ॥",
     "english": "{0:Remembering, }{1:remembering, }{3:I always }{4:cherish }{2:Him.}",
     "words": [
       {
@@ -581,14 +582,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sam̐hālē",
-        "gloss": "cherishes; contemplates; holds in remembrance",
+        "roman": "samhāle",
+        "gloss": "I keep in remembrance; I cherish",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Simari simari is a reduplicated conjunctive participle indicating repeated, sustained action. tisu is oblique 3rd person singular object pronoun. sam̐hālē is 3rd/1st person present indicative."
+    "grammarNote": "simari simari is a repeated conjunctive participle, remembering again and again. tisu is the object, that One. samhāle is read in the first-person devotional context as I hold in remembrance."
   },
   "nanak-mange-closing": {
     "source": "ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ਨਾਨਕੁ ਮਾਂਗੈ ॥",
@@ -692,7 +693,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai nānaku māṅgai ॥",
-    "english": "{0:Nanak }{1:begs, }{2:Nanak }{3:begs, }{4:Nanak }{5:begs, }{6:Nanak }{7:begs, }{8:Nanak }{9:begs, }{10:Nanak }{11:begs, }{12:Nanak }{13:begs, }{14:Nanak }{15:begs.}",
+    "english": "{0:Nānak }{1:begs, }{2:Nānak }{3:begs, }{4:Nānak }{5:begs, }{6:Nānak }{7:begs, }{8:Nānak }{9:begs, }{10:Nānak }{11:begs, }{12:Nānak }{13:begs, }{14:Nānak }{15:begs.}",
     "words": [
       {
         "roman": "Nānaku",

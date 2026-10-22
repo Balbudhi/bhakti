@@ -94,7 +94,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī āṇi milāvai merā prītamu piārā",
-    "english": "{0:If someone }{1:brings }{2:and unites }{3:my }{5:cherished }{4:Beloved,}",
+    "english": "{0:If someone }{1:brings }{3:my }{5:cherished }{4:Beloved }{2:to meet me,}",
     "words": [
       {
         "roman": "koī",
@@ -110,7 +110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "milāvai",
-        "gloss": "causes to meet",
+        "gloss": "causes to meet; brings me into meeting",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -742,7 +742,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tanu manu kāṭi kāṭi sabhu arapī vici aganī āpu jalāī",
-    "english": "{2:Cutting }{0:body }{1:and mind }{3:piece by piece, }{5:I offer }{4:all; }{6:into }{7:the fire, }{9:I burn }{8:myself.}",
+    "english": "{2:Cutting }{0:body }{1:and mind }{3:piece by piece, }{5:I offer }{4:all; }{6:in }{7:the fire, }{9:I burn }{8:myself.}",
     "words": [
       {
         "roman": "tanu",
@@ -782,7 +782,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vici",
-        "gloss": "into",
+        "gloss": "in; within",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -976,11 +976,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaku garību ḍhahi paiā duārai hari meli lehu vaḍiāī",
-    "english": "{1:Humble }{0:Nanak }{2,3:has collapsed }{4:at the threshold; }{5:O Lord, }{6,7:receive me into union }{8:by Your greatness.}",
+    "english": "{1:Humble }{0:Nānak }{2,3:has fallen }{4:at the threshold; }{5:O Lord, }{6,7:unite me with You—}{8:grant this gracious favor.}",
     "words": [
       {
         "roman": "nānaku",
-        "gloss": "Nanak the devotee-poet",
+        "gloss": "Nānak the devotee-poet",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1028,13 +1028,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaḍiāī",
-        "gloss": "for Your glorious greatness",
+        "gloss": "greatness shown as gracious favor",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Compound past-aspectual verb ḍhahi paiā governing locative duārai, followed by vocative hari and compound imperative meli lehu."
+    "grammarNote": "ḍhahi paiā is a compound completed action, has fallen, with duārai, at the threshold. hari is direct address. meli lehu is a compound imperative asking for union. The final vaḍiāī names that requested act as gracious favor, rather than an instrument by which it occurs."
   },
   "koee-aan-closing": {
     "source": "ਕੋਈ ਆਣਿ ਮਿਲਾਵੈ ਮੇਰਾ ਪ੍ਰੀਤਮੁ",
@@ -1072,7 +1072,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī āṇi milāvai merā prītamu",
-    "english": "{0:If someone }{1:brings }{2:and unites }{3:my }{4:Beloved.}",
+    "english": "{0:If someone }{1:brings }{3:my }{4:Beloved }{2:to meet me…}",
     "words": [
       {
         "roman": "koī",
@@ -1088,7 +1088,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "milāvai",
-        "gloss": "causes to meet",
+        "gloss": "causes to meet; brings me into meeting",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Har Jiyo Kirpa Karo",
+  "title": "Hari Jīu Kripā Karahu",
   "subtitle": "",
   "credit": "Gurū Amar Dās · Bhai Satwinder Singh & Bhai Harwinder Singh",
   "pageCredit": "Bhai Satwinder Singh & Bhai Harwinder Singh",
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Amar Dās"
+    "Gurū Amar Dās",
+    "Har Jiyo Kirpa Karo"
   ],
   "audioSources": [
     {
@@ -504,7 +505,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dāte",
-        "gloss": "the Givers; Bestowers",
+        "gloss": "giver; bestower (respectful address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -606,7 +607,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sahaji",
-        "gloss": "in celestial equipoise; in natural stillness",
+        "gloss": "in natural stillness; in equipoise",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -692,23 +693,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari rasu cākhi manu nirmalu hoā kilbikha kāṭaṇhārā",
-    "english": "{2:Tasting }{1:the nectar }{0:of the Divine, }{3:the mind }{5:becomes }{4:immaculate, }{7:cutting away }{6:sins.}",
+    "english": "{2:Having tasted }{0:Hari’s }{1:rasa, }{7:which cuts away }{6:sins, }{3:the mind }{5:has become }{4:pure.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "of the Divine; Hari's",
+        "gloss": "the Divine",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rasu",
-        "gloss": "essence; nectar; devotional savor",
-        "concept_key": "",
-        "preserve_in_english": false
+        "gloss": "the savor of the divine Name",
+        "concept_key": "rasa",
+        "preserve_in_english": true
       },
       {
         "roman": "cākhi",
-        "gloss": "having tasted; having savored",
+        "gloss": "having tasted",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -720,13 +721,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nirmalu",
-        "gloss": "pure; stainless; immaculate",
+        "gloss": "pure; stainless",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hoā",
-        "gloss": "became",
+        "gloss": "has become",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -738,13 +739,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāṭaṇhārā",
-        "gloss": "the destroyer; the one who cuts away",
+        "gloss": "that which cuts away",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "'cākhi' is an absolutive participle; 'nirmalu' is a predicate adjective agreeing with masculine singular subject 'manu'; 'kilbikha kāṭaṇhārā' forms an agentive noun phrase."
+    "grammarNote": "Cākhi is an absolutive: having tasted. Manu is the subject of nirmalu hoā. Kilbikha kāṭaṇhārā is an agentive expression, the cutter-away of sins, describing the divine Name experienced as Hari’s rasa in this verse. The relative clause in English attaches that power to the rasa; it does not make the purified mind the agent of cutting sins."
   },
   "v3-1": {
     "source": "ਸਬਦਿ ਮਰਹੁ ਫਿਰਿ ਜੀਵਹੁ ਸਦ ਹੀ ਤਾ ਫਿਰਿ ਮਰਣੁ ਨ ਹੋਈ",
@@ -944,7 +945,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amritu nāmu sadā mani mīṭhā sabade pāvai koī",
-    "english": "{0:The ambrosial }{1:Name }{2:is ever }{4:sweet }{3:in the mind; }{5:through the Word, }{7:a rare one }{6:attains it.}",
+    "english": "{0:The ambrosial }{1:Name }{2:is ever }{4:sweet }{3:in the mind; }{5:through the Word, }{7:one }{6:attains it.}",
     "words": [
       {
         "roman": "amritu",
@@ -990,13 +991,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "koī",
-        "gloss": "some rare one; someone",
+        "gloss": "one; someone",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "'amritu nāmu' is qualified by predicate adjective 'mīṭhā' with locative 'mani'; 'sabade' is instrumental governed by the 3rd person singular verb 'pāvai'."
+    "grammarNote": "Amritu nāmu is qualified by mīṭhā, with locative mani. Sabade means through the Word. Koī is an indefinite subject, someone or one, of pāvai; no word in this clause explicitly states rarity."
   },
   "v4-1": {
     "source": "ਦਾਤੈ ਦਾਤਿ ਰਖੀ ਹਥਿ ਅਪਣੈ ਜਿਸੁ ਭਾਵੈ ਤਿਸੁ ਦੇਈ",
@@ -1058,7 +1059,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dātai dāti rakhī hathi apaṇai jisu bhāvai tisu deī",
-    "english": "{0:The Giver }{2:has kept }{1:the gift }{4:in His own }{3:hand; }{5:to whomever }{6:it pleases Him, }{7:to that one }{8:He gives it.}",
+    "english": "{0:The Giver }{2:has kept }{1:the gift }{3:in }{4:His own }{3:hand; }{5:to whomever }{6:it pleases Him, }{7:to that one }{8:He gives it.}",
     "words": [
       {
         "roman": "dātai",
@@ -1172,11 +1173,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaka nāmi rate sukhu pāiā daragaha jāpahi seī",
-    "english": "{0:O Nanak, }{2:those imbued }{1:with the Name }{4:attain }{3:peace, }{7:and they alone }{6:are recognized }{5:in the Divine Court.}",
+    "english": "{0:O Nānak, }{2:those imbued }{1:with the Name }{4:attain }{3:peace, }{7:and they alone }{6:are recognized }{5:in the Divine Court.}",
     "words": [
       {
         "roman": "nānaka",
-        "gloss": "poetic signature of the Guru",
+        "gloss": "the poetic signature shared by the Sikh Gurūs",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -846,7 +846,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "gur-satgur-ka-jo-sikh-akhaye",
     "queueId": "798a5adc",
-    "title": "Gur Satgur Ka Jo Sikh Akhaye",
+    "title": "Gur Satigur Kā Jo Sikhu Akhāe",
     "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
@@ -861,7 +861,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Rām Dās"
+      "Gurū Rām Dās",
+      "Gur Satgur Ka Jo Sikh Akhaye"
     ],
     "writer": "Gurū Rām Dās",
     "singer": "Bhai Harjinder Singh",
@@ -975,7 +976,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "tu-thakur-tum-peh-ardas",
     "queueId": "86f7320f",
-    "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
+    "title": "Tū̃ Ṭhākuru Tum Pehi Ardāsi",
     "credit": "Gurū Arjan · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
@@ -992,7 +993,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Arjan"
+      "Gurū Arjan",
+      "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥"
     ],
     "writer": "Gurū Arjan",
     "singer": "Bhai Harjinder Singh",
@@ -1012,7 +1014,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "tera-kiya-meetha-laage",
     "queueId": "0da4181a",
-    "title": "Tera Kiya Meetha Laage",
+    "title": "Terā Kīā Mīṭhā Lāgai",
     "credit": "Gurū Arjan · Bhai Lakhwinder Singh",
     "languageTags": [
       "Punjabi"
@@ -1027,7 +1029,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Arjan"
+      "Gurū Arjan",
+      "Tera Kiya Meetha Laage"
     ],
     "writer": "Gurū Arjan",
     "singer": "Bhai Lakhwinder Singh",
@@ -1047,7 +1050,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "gagan-mein-thaal",
     "queueId": "947be942",
-    "title": "Gagan Mein Thaal",
+    "title": "Gagana Mai Thālu",
     "credit": "Gurū Nānak · Bhai Nirmal Singh · Uttam Singh",
     "languageTags": [
       "Punjabi"
@@ -1063,7 +1066,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Nānak"
+      "Gurū Nānak",
+      "Gagan Mein Thaal"
     ],
     "writer": "Gurū Nānak",
     "singer": "Bhai Nirmal Singh",
@@ -1083,7 +1087,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "jo-nar-dukh-mein-dukh-nahin-jaane",
     "queueId": "ec1f7376",
-    "title": "Jo Nar Dukh Mein Dukh Nahin Jaane",
+    "title": "Jo Naru Dukh Mai Dukhu Nahī Mānai",
     "credit": "Gurū Teg Bahādar · Bhai Nirmal Singh Khalsa",
     "languageTags": [
       "Punjabi"
@@ -1098,7 +1102,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Teg Bahādar"
+      "Gurū Teg Bahādar",
+      "Jo Nar Dukh Mein Dukh Nahin Jaane"
     ],
     "writer": "Gurū Teg Bahādar",
     "singer": "Bhai Nirmal Singh Khalsa",
@@ -1118,7 +1123,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "mera-man-lochai",
     "queueId": "03b91d44",
-    "title": "Mera Man Lochai",
+    "title": "Merā Manu Locai",
     "credit": "Gurū Arjan · Gurū Rām Dās · Kabīr · Bhai Nirmal Singh Khalsa",
     "languageTags": [
       "Punjabi"
@@ -1133,7 +1138,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Arjan · Gurū Rām Dās · Kabīr"
+      "Gurū Arjan · Gurū Rām Dās · Kabīr",
+      "Mera Man Lochai"
     ],
     "writer": "Gurū Arjan · Gurū Rām Dās · Kabīr",
     "singer": "Bhai Nirmal Singh Khalsa",
@@ -1153,7 +1159,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "so-dar-keha-so-ghar-keha",
     "queueId": "b91e295a",
-    "title": "So Dar Keha So Ghar Keha",
+    "title": "So Daru Kehā So Gharu Kehā",
     "credit": "Gurū Nānak · Bhai Nirmal Singh Khalsa",
     "languageTags": [
       "Punjabi"
@@ -1169,7 +1175,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Nānak"
+      "Gurū Nānak",
+      "So Dar Keha So Ghar Keha"
     ],
     "writer": "Gurū Nānak",
     "singer": "Bhai Nirmal Singh Khalsa",
@@ -1189,7 +1196,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "har-jiyo-kirpa-karo",
     "queueId": "3cf96b53",
-    "title": "Har Jiyo Kirpa Karo",
+    "title": "Hari Jīu Kripā Karahu",
     "credit": "Gurū Amar Dās · Bhai Satwinder Singh & Bhai Harwinder Singh",
     "languageTags": [
       "Punjabi"
@@ -1204,7 +1211,8 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Amar Dās"
+      "Gurū Amar Dās",
+      "Har Jiyo Kirpa Karo"
     ],
     "writer": "Gurū Amar Dās",
     "singer": "Bhai Satwinder Singh & Bhai Harwinder Singh",

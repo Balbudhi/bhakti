@@ -69,6 +69,161 @@
         "source_url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/sundarakaaNDa.html"
       },
       "comparison_policy": "The performance remains authoritative. Use this complete Awadhi witness to constrain each audio-aware transcription and audit pass; preserve an audible variant, and block any unresolved disagreement rather than silently selecting the witness."
+    },
+    "gagan-mein-thaal": {
+      "title": "Gurū Granth Sāhib — Gagana Mai Thālu",
+      "author": "Gurū Nānak",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        663,
+        13
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
+    },
+    "gur-satgur-ka-jo-sikh-akhaye": {
+      "title": "Gurū Granth Sāhib — Gur Satigur Kā Jo Sikhu Akhāe",
+      "author": "Gurū Rām Dās",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        305,
+        306
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. Listen especially for the causative ਜਪਾਵੈ: distinguish causing others to recite from merely reciting oneself."
+    },
+    "har-jiyo-kirpa-karo": {
+      "title": "Gurū Granth Sāhib — Hari Jīu Kripā Karahu",
+      "author": "Gurū Amar Dās",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        603,
+        604
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
+    },
+    "jo-nar-dukh-mein-dukh-nahin-jaane": {
+      "title": "Gurū Granth Sāhib — Jo Naru Dukh Mai Dukhu Nahī Mānai",
+      "author": "Gurū Teg Bahādar",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        633
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
+    },
+    "koee-aan-milavai-mera-pritam-pyara": {
+      "title": "Gurū Granth Sāhib — Koī Āṇi Milāvai Merā Prītamu Piārā",
+      "author": "Gurū Rām Dās",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        757
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. Compare the canonical ਕਰਹਿ and ਮੇਲਹਿ with a possible recorded ਕਰੇ and ਮੇਲੇ; determine grammatical person and agency from the sung form, and preserve audible variation."
+    },
+    "so-dar-keha-so-ghar-keha": {
+      "title": "Gurū Granth Sāhib — So Daru Kehā So Gharu Kehā",
+      "author": "Gurū Nānak",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        6,
+        9
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. The recording may blend the forms at aṅgs 6 and 9. Compare ਬੀਚਾਰੇ and ਸੁਰਗੁ ਮਛੁ against the audio; do not silently replace the performed version with one canonical occurrence."
+    },
+    "tera-kiya-meetha-laage": {
+      "title": "Gurū Granth Sāhib — Terā Kīā Mīṭhā Lāgai",
+      "author": "Gurū Arjan",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        394
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. Check the source form ਸਮੑਾਲੇ against a suspected doubled subjoined-h representation ਸਮ੍ਹ੍ਹਾਲੇ. Preserve the correctly encoded source form for the actual sung word; distinguish orthographic encoding from audible variation."
+    },
+    "tu-thakur-tum-peh-ardas": {
+      "title": "Gurū Granth Sāhib — Tū̃ Ṭhākuru Tum Pehi Ardāsi",
+      "author": "Gurū Arjan",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        268
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
+    },
+    "mera-man-lochai": {
+      "title": "Gurū Granth Sāhib — Merā Manu Locai",
+      "author": "Gurū Arjan · Gurū Rām Dās · Kabīr",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        96,
+        97,
+        835,
+        836,
+        1206,
+        337,
+        703
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. The aṅg 1206 passage has ਪ੍ਰਿਅ; listen carefully whether this recording instead sings ਪ੍ਰੇਮ. It includes several different passages, so retain all inserted verses in actual order. Prior recording review targets (approximate seconds are listening locators only, not fixed timings): 830–838 seconds ਪ੍ਰੇਮ/prema versus ਪ੍ਰਿਅ/pria; 855–862 seconds ਪਗ/pag versus ਪਗੁ/pagu; 882–889 seconds ਖੋਲਿ ਕਪਟੁ/kholi kapaṭu versus the source spelling ਖੋਲੑਿ ਕਪਟ (check aspiration and the door-word’s vowel against the audio). Decide from audio and report unresolved ambiguity."
+    },
+    "satgur-kai-bhane-chal": {
+      "title": "Gurū Granth Sāhib — Satigur Kai Bhāṇai Calu",
+      "author": "Gurū Amar Dās",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        36,
+        37
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
+    },
+    "dhan-dhan-ramdas-guru": {
+      "title": "Gurū Granth Sāhib — Dhannu Dhannu Rāmadāsa Guru",
+      "author": "Sattā · Balvaṇḍ",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        968
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
+    },
+    "so-satgur-pyara-mere-naal-hai": {
+      "title": "Gurū Granth Sāhib — So Satiguru Piārā Merai Nāli Hai",
+      "author": "Gurū Rām Dās",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        587,
+        588
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
+    },
+    "sabh-gobind-hai": {
+      "title": "Gurū Granth Sāhib — Sabhu Gobindu Hai",
+      "author": "Nāmadev",
+      "verification_status": "public-working-witness",
+      "authority_note": "SriGranth Unicode Gurmukhi transcription of the identified scripture aṅgs. Only source text is acquired; translations and dictionary definitions are excluded. This is a working textual witness, not permission to overwrite a performed variant.",
+      "retriever": "srigranth-gurmukhi-pages",
+      "pages": [
+        485
+      ],
+      "comparison_policy": "Audio is authoritative for this recording. Use this source text only during the second audit to locate potential mishearings. Retain every audible variation, insertion and occurrence, and mark unresolved differences uncertain rather than forcing canonical wording. "
     }
   }
 }

@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -33,6 +34,17 @@ vm.runInNewContext(fs.readFileSync(process.argv[1],'utf8'),ctx,{filename:process
 process.stdout.write(JSON.stringify(ctx.window));"""
     output = subprocess.run(["node", "-e", script, str(path)], check=True, text=True, capture_output=True).stdout
     return json.loads(output)
+
+
+def non_latin_roman_characters(value: str) -> str:
+    """Find script leakage while preserving IAST accents and transliteration signs."""
+    return "".join(dict.fromkeys(
+        character for character in value
+        if unicodedata.category(character)[0] in {"L", "M"}
+        and not unicodedata.name(character, "").startswith(
+            ("LATIN ", "COMBINING ", "MODIFIER LETTER ")
+        )
+    ))
 
 
 def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -84,6 +96,9 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
             problems.append(f"{line_id} lacks source script")
         if not str(line.get("roman", "")).strip():
             problems.append(f"{line_id} lacks IAST")
+        mixed_script = non_latin_roman_characters(str(line.get("roman", "")))
+        if mixed_script:
+            problems.append(f"{line_id} IAST contains non-Latin letters or marks: {mixed_script!r}")
         if not str(line.get("english", "")).strip():
             problems.append(f"{line_id} lacks literal English")
         fictional = gloss_policy.fictional_coinages(line.get("english", ""))

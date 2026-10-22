@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Jo Nar Dukh Mein Dukh Nahin Jaane",
+  "title": "Jo Naru Dukh Mai Dukhu Nahī Mānai",
   "subtitle": "",
   "credit": "Gurū Teg Bahādar · Bhai Nirmal Singh Khalsa",
   "pageCredit": "Bhai Nirmal Singh Khalsa",
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Teg Bahādar"
+    "Gurū Teg Bahādar",
+    "Jo Nar Dukh Mein Dukh Nahin Jaane"
   ],
   "audioSources": [
     {
@@ -97,11 +98,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jō naru dukh mai dukhu nahī mānai",
+    "roman": "jo naru dukh mai dukhu nahī mānai",
     "english": "{0,1:That person who }{3:in }{2:suffering }{5:does not }{6:take }{4:suffering }{6:to heart,}",
     "words": [
       {
-        "roman": "jō",
+        "roman": "jo",
         "gloss": "that; who [relative pronoun]",
         "concept_key": "",
         "preserve_in_english": false
@@ -265,8 +266,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sukh sanēhu aru bhai nahī jā kai",
-    "english": "{5,6:Unto whom }{4:there is no }{0:pleasure, }{1:affectionate attachment, }{2:or }{3:fear,}",
+    "roman": "sukh sanehu aru bhai nahī jā kai",
+    "english": "{5,6:In whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
     "words": [
       {
         "roman": "sukh",
@@ -275,8 +276,8 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sanēhu",
-        "gloss": "affectionate attachment; clinging fondness",
+        "roman": "sanehu",
+        "gloss": "attachment; fondness",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -300,19 +301,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "jā",
-        "gloss": "whom; whose [relative pronoun oblique]",
+        "gloss": "whom; whose",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kai",
-        "gloss": "with; unto; in the possession of",
+        "gloss": "in; with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Possessive/locative postpositional phrase 'jā kai' ('unto whom') governs the compound subject 'sukh sanēhu aru bhai' with an implied existential copula."
+    "grammarNote": "Sukha sanehu means attachment to pleasure: sukha qualifies sanehu rather than forming a separate item in the list. The relative possessive phrase jā kai locates the absence of that attachment and of fear in the person described."
   },
   "line-003": {
     "source": "ਕੰਚਨ ਮਾਟੀ ਮਾਨੈ",
@@ -404,7 +405,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nah nindiā nah ustati jā kai",
-    "english": "{4,5:Unto whom }{0:there is neither }{1:slander }{2:nor }{3:praise,}",
+    "english": "{4,5:In whom }{0:there is neither }{1:slander }{2:nor }{3:flattery,}",
     "words": [
       {
         "roman": "nah",
@@ -414,7 +415,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nindiā",
-        "gloss": "slander; censure; blame",
+        "gloss": "slander; speaking ill of others",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -426,25 +427,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "ustati",
-        "gloss": "praise; adulation",
+        "gloss": "praise; here, flattery",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jā",
-        "gloss": "whom; whose [relative pronoun oblique]",
+        "gloss": "whom; whose",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kai",
-        "gloss": "with; unto; in the possession of",
+        "gloss": "in; with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Correlative negative particles 'nah... nah...' with possessive/dative construction 'jā kai' ('to whom')."
+    "grammarNote": "Nah ... nah negates the two coordinated nouns. Jā kai is the relative possessive-locative phrase, in whom or in whose heart. Nindiā and ustati here describe slander and flattering praise within the person, followed in the next phrase by greed, attachment and pride."
   },
   "line-005": {
     "source": "ਲੋਭੁ ਮੋਹੁ ਅਭਿਮਾਨਾ",
@@ -469,17 +470,17 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "lōbhu mōhu abhimānā",
+    "roman": "lobhu mohu abhimānā",
     "english": "{0:Nor greed, }{1:delusional attachment, }{2:or pride,}",
     "words": [
       {
-        "roman": "lōbhu",
+        "roman": "lobhu",
         "gloss": "greed; avarice",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mōhu",
+        "roman": "mohu",
         "gloss": "delusional attachment; infatuation",
         "concept_key": "",
         "preserve_in_english": false
@@ -529,7 +530,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "harakh sōg tē rahai niārau",
+    "roman": "harakh sog te rahai niārau",
     "english": "Who {3:remains }{4:aloof }{2:from }{0:joy }{1:and sorrow,}",
     "words": [
       {
@@ -539,13 +540,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sōg",
+        "roman": "sog",
         "gloss": "sorrow; grief",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tē",
+        "roman": "te",
         "gloss": "from; beyond",
         "concept_key": "",
         "preserve_in_english": false
@@ -590,11 +591,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāhi mān apmānā",
-    "english": "{0:There is no }{1:honor }{2:or dishonor.}",
+    "english": "{0:untouched by }{1:honor }{2:or dishonor.}",
     "words": [
       {
         "roman": "nāhi",
-        "gloss": "not; there is no",
+        "gloss": "not; here, unaffected by",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -606,13 +607,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "apmānā",
-        "gloss": "dishonor; disrespect; humiliation",
+        "gloss": "dishonor; humiliation",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Negative existential statement with omitted copula; 'mān apmānā' forms a dvandva-like coordinate compound."
+    "grammarNote": "Nāhi negates honor and dishonor as influences on the person. This brief clause continues the preceding description of remaining apart from elation and sorrow. English supplies untouched from that context; it does not assert that honor and dishonor cease to exist."
   },
   "line-008": {
     "source": "ਦੁਖੁ ਮੈ ਦੁਖੁ ਨਹੀ ਮਾਨੈ",
@@ -846,7 +847,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kām",
-        "gloss": "desire; sensual longing",
+        "gloss": "sensual desire; longing",
         "concept_key": "kama",
         "preserve_in_english": true
       },
@@ -908,23 +909,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tih ghaṭ braham nivāsā",
-    "english": "{0,1:Within }{0:that }{1:vessel }{2:Brahman }{3:abides.}",
+    "english": "{1:Within }{0:that }{1:vessel }{2:the Divine }{3:abides.}",
     "words": [
       {
         "roman": "tih",
-        "gloss": "that person's; his",
+        "gloss": "that person’s",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ghaṭ",
-        "gloss": "heart; inner vessel; bodily abode",
+        "gloss": "in the vessel; in the heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "braham",
-        "gloss": "the supreme transcendent reality; Brahman",
+        "gloss": "the Divine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1082,7 +1083,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukh sanehu ar bhai nahī jā kai",
-    "english": "{5,6:Unto whom }{4:there is no }{0:pleasure, }{1:affectionate attachment, }{2:or }{3:fear,}",
+    "english": "{5,6:In whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
     "words": [
       {
         "roman": "sukh",
@@ -1092,7 +1093,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sanehu",
-        "gloss": "affectionate attachment; clinging fondness",
+        "gloss": "attachment; fondness",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1116,19 +1117,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "jā",
-        "gloss": "whom; whose [relative pronoun oblique]",
+        "gloss": "whom; whose",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kai",
-        "gloss": "with; unto; in the possession of",
+        "gloss": "in; with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Spelling variant 'ar' for conjunction 'aru'; possessive frame matches line-002."
+    "grammarNote": "Sukha sanehu means attachment to pleasure: sukha qualifies sanehu rather than forming a separate item in the list. The relative possessive phrase jā kai locates the absence of that attachment and of fear in the person described."
   },
   "line-015": {
     "source": "ਕੰਚਨ ਮਾਟੀ ਮਾਨੈ",
@@ -1153,11 +1154,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kanchan māṭī mānai",
+    "roman": "kañcan māṭī mānai",
     "english": "{2:Deems }{0:gold }{1:as clay,}",
     "words": [
       {
-        "roman": "kanchan",
+        "roman": "kañcan",
         "gloss": "gold",
         "concept_key": "",
         "preserve_in_english": false
@@ -1291,7 +1292,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "tih ih jugat pachhānī",
+    "roman": "tih ih jugat pachānī",
     "english": "{0:That person }{3:has recognized }{1:this }{2:way,}",
     "words": [
       {
@@ -1313,7 +1314,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pachhānī",
+        "roman": "pachānī",
         "gloss": "recognized; comprehended; realized",
         "concept_key": "",
         "preserve_in_english": false
@@ -1358,41 +1359,41 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak līn bhaio gobind sio",
-    "english": "{0:Nanak }{2:has become }{1:merged }{4:with }{3:Govinda,}",
+    "english": "{0:O Nānak, }{2:that person has become }{1:merged }{4:with }{3:Govinda,}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "poet-preceptor and ninth Guru in the Sikh lineage",
+        "gloss": "the poetic signature shared by the Sikh Gurūs",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "līn",
-        "gloss": "merged; absorbed; dissolved",
+        "gloss": "merged; absorbed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhaio",
-        "gloss": "became; has become",
+        "gloss": "has become",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gobind",
-        "gloss": "the Divine Master; Govinda",
+        "gloss": "Govinda, the Divine",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sio",
-        "gloss": "with; in union with",
+        "gloss": "with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Poetic signature 'nānak' serves as grammatical subject with past copular/intransitive verb 'bhaio' and associative postpositional phrase 'gobind sio'."
+    "grammarNote": "Nānak is the poetic signature expressed as an address. The understood subject of līn bhaio continues the person granted the Gurū’s grace in jih nar kau and referred to as tih in the preceding line. Gobind sio is the phrase with Govinda. That person is supplied in English to make this carried subject explicit, rather than treating the signature as the subject."
   },
   "line-019": {
     "source": "ਨਾਨਕ ਲੀਨ",
@@ -1412,23 +1413,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak līn",
-    "english": "{0:Nanak }{1:merged,}",
+    "english": "{0:O Nānak—}{1:merged,}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "poet-preceptor and ninth Guru in the Sikh lineage",
+        "gloss": "the poetic signature shared by the Sikh Gurūs",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "līn",
-        "gloss": "merged; absorbed; dissolved",
+        "gloss": "merged; absorbed",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Elliptic vocal phrase repeating the signature subject and stative participle 'līn'."
+    "grammarNote": "A repeated fragment of the signature/address and līn from the full line. The subject remains the person described in the preceding stanza; the fragment does not introduce Nānak as a new subject."
   },
   "line-020": {
     "source": "ਨਾਨਕ",
@@ -1442,17 +1443,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak",
-    "english": "{0:Nanak,}",
+    "english": "{0:O Nānak,}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "poet-preceptor and ninth Guru in the Sikh lineage",
+        "gloss": "the poetic signature shared by the Sikh Gurūs",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Isolated proper noun/signature in performance."
+    "grammarNote": "An isolated repetition of the poetic signature/address from the full clause, not a change in the person who merges."
   },
   "line-021": {
     "source": "ਨਾਨਕ ਲੀਨ ਲੀਨ",
@@ -1478,29 +1479,29 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak līn līn",
-    "english": "{0:Nanak }{1:merged, }{2:merged,}",
+    "english": "{0:O Nānak—}{1:merged, }{2:merged,}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "poet-preceptor and ninth Guru in the Sikh lineage",
+        "gloss": "the poetic signature shared by the Sikh Gurūs",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "līn",
-        "gloss": "merged; absorbed; dissolved",
+        "gloss": "merged; absorbed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "līn",
-        "gloss": "merged; absorbed; dissolved",
+        "gloss": "merged; absorbed",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Reduplication of the participle 'līn' emphasizing intensity and permanence of spiritual union."
+    "grammarNote": "The signature/address is followed by repeated līn from the full clause. The repetition intensifies the sung expression; it does not itself encode an additional claim of permanence. The subject remains the graced person from the preceding lines."
   },
   "line-022": {
     "source": "ਜਿਉ ਪਾਨੀ ਸੰਗਿ ਪਾਨੀ",
@@ -1778,7 +1779,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukha sanehu aru bhai nahī jā kai",
-    "english": "{5,6:Unto whom }{4:there is no }{0:pleasure, }{1:affectionate attachment, }{2:or }{3:fear,}",
+    "english": "{5,6:In whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
     "words": [
       {
         "roman": "sukha",
@@ -1788,7 +1789,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sanehu",
-        "gloss": "affectionate attachment; clinging fondness",
+        "gloss": "attachment; fondness",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1812,19 +1813,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "jā",
-        "gloss": "whom; whose [relative pronoun oblique]",
+        "gloss": "whom; whose",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kai",
-        "gloss": "with; unto; in the possession of",
+        "gloss": "in; with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Possessive/locative construction matching line-002."
+    "grammarNote": "Sukha sanehu means attachment to pleasure: sukha qualifies sanehu rather than forming a separate item in the list. The relative possessive phrase jā kai locates the absence of that attachment and of fear in the person described."
   },
   "line-026": {
     "source": "ਕੰਚਨ ਮਾਟੀ ਮਾਨੈ",
@@ -1916,7 +1917,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nah nindiā nah usatati jā kai",
-    "english": "{4,5:Unto whom }{0:there is neither }{1:slander }{2:nor }{3:praise,}",
+    "english": "{4,5:In whom }{0:there is neither }{1:slander }{2:nor }{3:flattery,}",
     "words": [
       {
         "roman": "nah",
@@ -1926,7 +1927,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nindiā",
-        "gloss": "slander; censure; blame",
+        "gloss": "slander; speaking ill of others",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1938,25 +1939,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "usatati",
-        "gloss": "praise; adulation",
+        "gloss": "praise; here, flattery",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jā",
-        "gloss": "whom; whose [relative pronoun oblique]",
+        "gloss": "whom; whose",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kai",
-        "gloss": "with; unto; in the possession of",
+        "gloss": "in; with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Slight orthographic variation 'usatati' for 'ustati'; syntax matches line-004."
+    "grammarNote": "Nah ... nah negates the two coordinated nouns. Jā kai is the relative possessive-locative phrase, in whom or in whose heart. Nindiā and ustati here describe slander and flattering praise within the person, followed in the next phrase by greed, attachment and pride."
   },
   "line-028": {
     "source": "ਹਰਖ ਸੋਗ ਤੇ ਰਹੈ ਨਿਆਰਉ",
@@ -2054,11 +2055,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāhi mānu apamānā",
-    "english": "{0:There is no }{1:honor }{2:or dishonor.}",
+    "english": "{0:untouched by }{1:honor }{2:or dishonor.}",
     "words": [
       {
         "roman": "nāhi",
-        "gloss": "not; there is no",
+        "gloss": "not; here, unaffected by",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2070,13 +2071,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "apamānā",
-        "gloss": "dishonor; disrespect; humiliation",
+        "gloss": "dishonor; humiliation",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Nominative masculine singular 'mānu' with aunkar; syntax matches line-007."
+    "grammarNote": "Nāhi negates honor and dishonor as influences on the person. This brief clause continues the preceding description of remaining apart from elation and sorrow. English supplies untouched from that context; it does not assert that honor and dishonor cease to exist."
   }
 };
 

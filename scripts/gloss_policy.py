@@ -171,18 +171,22 @@ def meaning_only_gloss(roman: object, gloss: object, concept_key: object = "") -
     if not is_self_referential(roman, text):
         return text
     concept_hint = str(PRESERVED.get(str(concept_key or ""), {}).get("shortGlossHint") or "").strip()
-    hint = concept_hint or next((PRESERVED_HINTS.get(candidate) or MEANING_ONLY.get(candidate)
-                                 for candidate in roman_keys(roman)
-                                 if PRESERVED_HINTS.get(candidate) or MEANING_ONLY.get(candidate)), "")
-    if hint:
-        return hint
-    # A previously unseen proper name may still have useful explanatory text
-    # after its repeated label. Retain that explanation when possible.
+    preserved_hint = concept_hint or next((PRESERVED_HINTS[candidate]
+                                           for candidate in roman_keys(roman)
+                                           if candidate in PRESERVED_HINTS), "")
+    if preserved_hint:
+        return preserved_hint
+    # A reviewed explanation belongs to this occurrence. Keep it ahead of a
+    # generic name identity, which may describe a different person or context.
     tail = re.split(r"\s*[,(/\[]\s*", text, maxsplit=1)
     if len(tail) == 2:
         candidate = tail[1].rstrip(")] ").strip()
-        if candidate and not is_self_referential(roman, candidate):
+        if candidate and not is_self_referential(roman, candidate) and not is_placeholder_gloss(candidate):
             return candidate
+    hint = next((MEANING_ONLY[candidate] for candidate in roman_keys(roman)
+                 if candidate in MEANING_ONLY), "")
+    if hint:
+        return hint
     raise ValueError(
         f"unresolved self-referential gloss for {roman!r}; provide an identity or contextual meaning before publication"
     )

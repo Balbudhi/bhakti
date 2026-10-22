@@ -16,6 +16,7 @@ import subprocess
 import tempfile
 import unicodedata
 import urllib.request
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
@@ -184,6 +185,59 @@ def _acquire_html_pre_text_range(record: dict[str, Any]) -> tuple[list[dict[str,
     return pages, [{"page": 1, "url": url, "text": line} for line in text]
 
 
+def _extract_srigranth_gurmukhi(document: str) -> list[str]:
+    """Read the site's source-font elements, excluding translated sibling text.
+
+    Dictionary-link attributes contain definitions and are never lyric input.
+    Preserve source code points, including Gurmukhi combining marks and dandas.
+    """
+    class SourceParser(HTMLParser):
+        def __init__(self) -> None:
+            super().__init__(convert_charrefs=True)
+            self.font_depth = 0
+            self.parts: list[str] = []
+            self.lines: list[str] = []
+
+        def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+            if tag == "font":
+                if self.font_depth:
+                    self.font_depth += 1
+                elif str(dict(attrs).get("face") or "").casefold() == "anmolunipr":
+                    self.font_depth = 1
+                    self.parts = []
+
+        def handle_endtag(self, tag: str) -> None:
+            if tag == "font" and self.font_depth:
+                self.font_depth -= 1
+                if not self.font_depth:
+                    line = " ".join("".join(self.parts).split())
+                    if any("\u0a00" <= character <= "\u0a7f" for character in line):
+                        self.lines.append(line)
+
+        def handle_data(self, data: str) -> None:
+            if self.font_depth:
+                self.parts.append(data)
+
+    parser = SourceParser()
+    parser.feed(document)
+    parser.close()
+    return parser.lines
+
+
+def _acquire_srigranth_pages(record: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    pages, lines = [], []
+    for page in record["pages"]:
+        if not isinstance(page, int) or not 1 <= page <= 1430:
+            raise ValueError(f"invalid Gurū Granth Sāhib aṅg: {page!r}")
+        url = f"https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param={page}"
+        text = _extract_srigranth_gurmukhi(_fetch(url))
+        if not text:
+            raise RuntimeError(f"no Gurmukhi source found at {url}")
+        pages.append({"page": page, "url": url, "line_count": len(text)})
+        lines.extend({"page": page, "url": url, "text": line} for line in text)
+    return pages, lines
+
+
 def acquire(song_dir: Path, slug: str, *, refresh: bool = False) -> dict[str, Any] | None:
     """Acquire a registered public witness into ignored local review evidence."""
     record = record_for_slug(slug)
@@ -193,6 +247,19 @@ def acquire(song_dir: Path, slug: str, *, refresh: bool = False) -> dict[str, An
     cached = _read_json(path)
     if cached and not refresh:
         return cached
+    if record.get("retriever") == "srigranth-gurmukhi-pages":
+        pages, lines = _acquire_srigranth_pages(record)
+        result = {
+            "schema_version": 1,
+            "work": slug,
+            "witness": record,
+            "pages": pages,
+            "lines": lines,
+            "acquisition_note": "Private source-text comparison cache. English translations and dictionary definitions are excluded. The recording controls performance variants.",
+        }
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        return result
     if record.get("retriever") == "pdf-text-range":
         pages, lines = _acquire_pdf_text_range(record)
         result = {

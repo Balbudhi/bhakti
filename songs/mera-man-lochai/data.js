@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Mera Man Lochai",
+  "title": "Merā Manu Locai",
   "subtitle": "",
   "credit": "Gurū Arjan · Gurū Rām Dās · Kabīr · Bhai Nirmal Singh Khalsa",
   "pageCredit": "Bhai Nirmal Singh Khalsa",
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Arjan · Gurū Rām Dās · Kabīr"
+    "Gurū Arjan · Gurū Rām Dās · Kabīr",
+    "Mera Man Lochai"
   ],
   "audioSources": [
     {
@@ -133,11 +134,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "mērā manu lōcai gur darasana tāī ||",
+    "roman": "merā manu locai gur darasana tāī ॥",
     "english": "{0:My }{1:mind }{2:yearns }{5:for }{4:the sight }{3:of the Guru.}",
     "words": [
       {
-        "roman": "mērā",
+        "roman": "merā",
         "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
@@ -149,7 +150,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "lōcai",
+        "roman": "locai",
         "gloss": "longs; yearns",
         "concept_key": "",
         "preserve_in_english": false
@@ -174,7 +175,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "mērā manu is masculine singular nominative; lōcai is a 3rd person singular present indicative verb; tāī is a postposition governing the compound/genitive phrase gur darasana."
+    "grammarNote": "merā manu is masculine singular nominative; locai is a 3rd person singular present indicative verb; tāī is a postposition governing the compound/genitive phrase gur darasana."
   },
   "line-001": {
     "source": "ਗੁਰ ਦਰਸਨ ਤਾਈ ਗੁਰ ਦਰਸਨ ਤਾਈ ॥",
@@ -217,7 +218,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gur darasana tāī gur darasana tāī ||",
+    "roman": "gur darasana tāī gur darasana tāī ॥",
     "english": "{2:For }{1:the sight }{0:of the Guru, }{5:for }{4:the sight }{3:of the Guru.}",
     "words": [
       {
@@ -295,7 +296,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "bilapa karē cātrika kī niāī ||",
+    "roman": "bilapa kare cātrika kī niāī ॥",
     "english": "{0,1:It cries out }{3,4:like }{2:the pied cuckoo.}",
     "words": [
       {
@@ -305,7 +306,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karē",
+        "roman": "kare",
         "gloss": "makes; cries out",
         "concept_key": "",
         "preserve_in_english": false
@@ -330,7 +331,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "bilapa karē is a conjunct verb (bilapa + karē, 3rd person singular present indicative); cātrika kī niāī is a postpositional comparative phrase."
+    "grammarNote": "bilapa kare is a conjunct verb (bilapa + kare, 3rd person singular present indicative); cātrika kī niāī is a postpositional comparative phrase."
   },
   "line-003": {
     "source": "ਤ੍ਰਿਖਾ ਨ ਉਤਰੈ ਸਾਂਤਿ ਨ ਆਵੈ ਬਿਨੁ ਦਰਸਨ ਸੰਤ ਪਿਆਰੇ ਜੀਉ ॥",
@@ -403,7 +404,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "trikhā na utarai sānti na āvai binu darasana santa piārē jīu ||",
+    "roman": "trikhā na utarai sānti na āvai binu darasana santa piāre jīu ॥",
     "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved, }{10:revered }{8:Saint.}",
     "words": [
       {
@@ -461,7 +462,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "piārē",
+        "roman": "piāre",
         "gloss": "beloved",
         "concept_key": "",
         "preserve_in_english": false
@@ -474,7 +475,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Compound coordinate clause with two negated 3rd person singular present verbs (utarai, āvai); binu acts as a preposition governing the oblique noun phrase darasana santa piārē; jīu is an honorific particle."
+    "grammarNote": "Compound coordinate clause with two negated 3rd person singular present verbs (utarai, āvai); binu acts as a preposition governing the oblique noun phrase darasana santa piāre; jīu is an honorific particle."
   },
   "line-004": {
     "source": "ਹਉ ਘੋਲੀ ਜੀਉ ਘੋਲਿ ਘੁਮਾਈ ॥",
@@ -511,7 +512,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "hau ghōlī jīu ghōli ghumāī ||",
+    "roman": "hau gholī jīu gholi ghumāī ॥",
     "english": "{0,1:I am a sacrifice; }{2:my life }{4:is surrendered }{3:in sacrifice.}",
     "words": [
       {
@@ -521,7 +522,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ghōlī",
+        "roman": "gholī",
         "gloss": "am devoted; offered as sacrifice",
         "concept_key": "",
         "preserve_in_english": false
@@ -533,7 +534,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ghōli",
+        "roman": "gholi",
         "gloss": "having sacrificed",
         "concept_key": "",
         "preserve_in_english": false
@@ -546,7 +547,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "hau is 1st person singular nominative pronoun; ghōlī and ghumāī are feminine 1st person perfective participles used in passive/middle devotional sense; ghōli is a conjunctive participle."
+    "grammarNote": "hau is the first-person subject. gholī and gholi ghumāī express the repeated devotional idiom of offering oneself; jīu is read here as life or soul."
   },
   "line-005": {
     "source": "ਗੁਰ ਦਰਸਨ ਸੰਤ ਪਿਆਰੇ ਜੀਉ ॥",
@@ -583,7 +584,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gur darasana santa piārē jīu ||",
+    "roman": "gur darasana santa piāre jīu ॥",
     "english": "{1:Unto the sight }{0:of the Guru, }{3:the beloved, }{4:revered }{2:Saint.}",
     "words": [
       {
@@ -605,7 +606,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "piārē",
+        "roman": "piāre",
         "gloss": "beloved",
         "concept_key": "",
         "preserve_in_english": false
@@ -667,11 +668,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "tērā mukhu suhāvā jīu sahaja dhuni bāṇī ||",
-    "english": "{0:Your }{1:face }{2:is beauteous, }{3:O revered one, }{5:and the sound }{6:of your speech }{4:is poised harmony.}",
+    "roman": "terā mukhu suhāvā jīu sahaja dhuni bāṇī ॥",
+    "english": "{0:Your }{1:face }{2:is beauteous, }{3:O revered one; }{6:your speech is }{5:a melody }{4:of natural poise.}",
     "words": [
       {
-        "roman": "tērā",
+        "roman": "terā",
         "gloss": "your",
         "concept_key": "",
         "preserve_in_english": false
@@ -696,13 +697,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "sahaja",
-        "gloss": "poised; spontaneous; natural spiritual harmony",
+        "gloss": "natural spiritual poise; inner steadiness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dhuni",
-        "gloss": "sound; resonant melody",
+        "gloss": "sound; melody; resonant flow",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -714,7 +715,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Nominal clause with elided copula; tērā mukhu is masculine singular nominative paired with predicate adjective suhāvā; sahaja dhuni qualifies the feminine noun bāṇī."
+    "grammarNote": "terā mukhu is the subject of the first nominal clause. In the second, sahaja dhuni qualifies bāṇī: speech characterized by the melody or flow of natural spiritual poise. The copulas are supplied in English."
   },
   "line-007": {
     "source": "ਚਿਰੁ ਹੋਆ ਦੇਖੇ ਸਾਰਿੰਗਪਾਣੀ ॥",
@@ -745,8 +746,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "ciru hōā dēkhē sāriṅgapāṇī ||",
-    "english": "{0:A long time }{1:has passed }{2:since beholding }{3:the bow-wielding Lord.}",
+    "roman": "ciru hoā dekhe sāriṅgapāṇī ॥",
+    "english": "{0:A long time }{1:has passed }{2:since I saw you, }{3:O bow-wielding Lord.}",
     "words": [
       {
         "roman": "ciru",
@@ -755,26 +756,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hōā",
+        "roman": "hoā",
         "gloss": "has passed; has elapsed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dēkhē",
+        "roman": "dekhe",
         "gloss": "since seeing; having beheld",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sāriṅgapāṇī",
-        "gloss": "the bow-wielding Sovereign; Divine Sustainer",
+        "gloss": "O bow-wielding Lord; a divine epithet",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "sāriṅgapāṇī is an epithet (Skt. Śārṅgapāṇi, 'holding the bow Śārṅga in hand') used here as an accusative object of the oblique verbal participle dēkhē; ciru hōā is an impersonal temporal clause."
+    "grammarNote": "ciru hoā is an impersonal temporal expression. dekhe marks the elapsed time since seeing. sāriṅgapāṇī, literally the one holding the bow, is read as a direct address continuing terā in the preceding line."
   },
   "line-008": {
     "source": "ਧੰਨੁ ਸੁ ਦੇਸੁ ਜਹਾ ਤੂੰ ਵਸਿਆ ॥",
@@ -817,11 +818,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "dhanu su dēsu jahā tū̃ vasiā ||",
+    "roman": "dhannu su desu jahā tū̃ vasiā ॥",
     "english": "{0:Blessed is }{1:that }{2:land }{3:where }{4:you }{5:dwell,}",
     "words": [
       {
-        "roman": "dhanu",
+        "roman": "dhannu",
         "gloss": "blessed; praised",
         "concept_key": "",
         "preserve_in_english": false
@@ -833,7 +834,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dēsu",
+        "roman": "desu",
         "gloss": "land; country; place",
         "concept_key": "",
         "preserve_in_english": false
@@ -858,7 +859,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Relative-correlative construction: dhanu su dēsu (correlative main clause) + jahā tū̃ vasiā (relative clause with 2nd person singular past/perfective verb vasiā)."
+    "grammarNote": "Relative-correlative construction: dhannu su desu (correlative main clause) + jahā tū̃ vasiā (relative clause with 2nd person singular past/perfective verb vasiā)."
   },
   "line-009": {
     "source": "ਮੇਰੇ ਸਜਣ ਮੀਤ ਮੁਰਾਰੇ ਜੀਉ ॥",
@@ -895,11 +896,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "mērē sajaṇa mīta murārē jīu ||",
-    "english": "{0:O my }{1:companion, }{2:friend, }{4:and revered }{3:Lord Murari.}",
+    "roman": "mere sajaṇa mīta murāre jīu ॥",
+    "english": "{0:O my }{1:companion, }{2:friend, }{4:and revered }{3:Lord Murāri.}",
     "words": [
       {
-        "roman": "mērē",
+        "roman": "mere",
         "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
@@ -917,7 +918,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "murārē",
+        "roman": "murāre",
         "gloss": "O Lord Murāri; Divine Beloved",
         "concept_key": "",
         "preserve_in_english": false
@@ -930,7 +931,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Vocative series in the oblique/vocative case (mērē sajaṇa mīta murārē); murārē is the vocative of Murāri ('foe of the demon Mura', epithet for Krishna/God)."
+    "grammarNote": "Vocative series in the oblique/vocative case (mere sajaṇa mīta murāre); murāre is the vocative of Murāri ('foe of the demon Mura', epithet for Krishna/God)."
   },
   "line-010": {
     "source": "ਹਉ ਘੋਲੀ ਹਉ ਘੋਲਿ ਘੁਮਾਈ",
@@ -1039,8 +1040,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gur sajaṇ mīt murāre jīu ||",
-    "english": "{0:Unto the Guru, }{1:my companion, }{2:friend, }{4:and revered }{3:Lord Murari.}",
+    "roman": "gur sajaṇa mīta murāre jīu ॥",
+    "english": "{0:Unto the Guru, }{1:my companion, }{2:friend, }{4:and revered }{3:Lord Murāri.}",
     "words": [
       {
         "roman": "gur",
@@ -1049,13 +1050,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sajaṇ",
+        "roman": "sajaṇa",
         "gloss": "intimate companion",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mīt",
+        "roman": "mīta",
         "gloss": "friend",
         "concept_key": "",
         "preserve_in_english": false
@@ -1117,7 +1118,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "merā manu locai gur darasan tāī ||",
+    "roman": "merā manu locai gur darasana tāī ॥",
     "english": "{0:My }{1:mind }{2:yearns }{5:for }{4:the sight }{3:of the Guru.}",
     "words": [
       {
@@ -1145,7 +1146,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "darasan",
+        "roman": "darasana",
         "gloss": "vision; blessed sight",
         "concept_key": "",
         "preserve_in_english": false
@@ -1158,7 +1159,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Unmorphemic spelling variation of line-000 (darasan instead of darasana)."
+    "grammarNote": "merā manu is the subject; locai is a third-person singular present verb. tāī marks the purpose or object of longing: the sight of the Guru."
   },
   "line-013": {
     "source": "ਬਿਲਪ ਕਰੇ ਚਾਤ੍ਰਿਕ ਕੀ ਨਿਆਈ ॥",
@@ -1195,11 +1196,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "bilap kare cātrik kī niāī ||",
+    "roman": "bilapa kare cātrika kī niāī ॥",
     "english": "{0,1:It cries out }{3,4:like }{2:the pied cuckoo.}",
     "words": [
       {
-        "roman": "bilap",
+        "roman": "bilapa",
         "gloss": "wailing; pining cry",
         "concept_key": "",
         "preserve_in_english": false
@@ -1211,7 +1212,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "cātrik",
+        "roman": "cātrika",
         "gloss": "the pied cuckoo; rainbird",
         "concept_key": "",
         "preserve_in_english": false
@@ -1230,7 +1231,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Variant spelling of line-002 with ungeminated final consonants (bilap, cātrik, kare)."
+    "grammarNote": "The romanization bilapa and cātrika writes the inherent final vowels omitted in the earlier bilap and cātrik spellings. The source text and consonants are unchanged."
   },
   "line-014": {
     "source": "ਇਕ ਘੜੀ ਨ ਮਿਲਤੇ ਤਾ ਕਲਿਜੁਗੁ ਹੋਤਾ ॥",
@@ -1279,7 +1280,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "ik ghaṛī na milte tā kalijugu hotā ||",
+    "roman": "ik ghaṛī na milte tā kalijugu hotā ॥",
     "english": "If {0:for a single }{1:moment }{2,3:we do not meet, }{4:then }{6:it becomes }{5:the dark age.}",
     "words": [
       {
@@ -1369,7 +1370,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "huṇi kadi milīai pria tudhu bhagavantā ||",
+    "roman": "huṇi kadi milīai pria tudhu bhagavantā ॥",
     "english": "{0:Now, }{1:when }{2:shall I meet }{4:with you, }{3:O beloved, }{5:blessed Lord?}",
     "words": [
       {
@@ -1543,7 +1544,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "binu dekhe gur darabāre jīu ||",
+    "roman": "binu dekhe gur darabāre jīu ॥",
     "english": "{0:Without }{1:beholding }{3:the court }{4:of the revered }{2:Guru.}",
     "words": [
       {
@@ -1615,7 +1616,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "tisu sace gur darabāre jīu ||",
+    "roman": "tisu sace gur darabāre jīu ॥",
     "english": "{0:That }{1:true }{3:court }{4:of the revered }{2:Guru.}",
     "words": [
       {
@@ -1687,8 +1688,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "bhāgu hoā guri santu milāiā ||",
-    "english": "{0:Good fortune }{1:awoke, }{2:and the Guru }{4:united me with }{3:the Saint.}",
+    "roman": "bhāgu hoā guri santu milāiā ॥",
+    "english": "{0:Good fortune }{1:awoke, }{2:and the Guru }{4:united me with }{3:the holy one.}",
     "words": [
       {
         "roman": "bhāgu",
@@ -1710,7 +1711,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "santu",
-        "gloss": "the Saint; Divine Guide",
+        "gloss": "the holy one; understood here as the peaceful Lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1722,7 +1723,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "guri carries the agentive/instrumental -i case ending; milāiā is a causative transitive perfective verb with santu as object; bhāgu hoā is an introductory nominative clause."
+    "grammarNote": "guri is the agentive form: the Guru causes the meeting. santu is its object, rendered literally as the holy one; the following line identifies the imperishable Lord found within. bhāgu hoā introduces the awakening of good fortune."
   },
   "line-020": {
     "source": "ਪ੍ਰਭੁ ਅਬਿਨਾਸੀ ਘਰ ਮਹਿ ਪਾਇਆ ॥",
@@ -1759,7 +1760,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "prabhu abināsī ghar mahi pāiā ||",
+    "roman": "prabhu abināsī ghar mahi pāiā ॥",
     "english": "{4:I found }{1:the imperishable }{0:Lord }{3:within }{2:my home.}",
     "words": [
       {
@@ -1837,7 +1838,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sev karī palu chasā na vichuṛā",
+    "roman": "sev karī palu casā na vichuṛā",
     "english": "{0,1:I shall render service }{4,5:and not part }{2:for a moment }{3:or an instant,}",
     "words": [
       {
@@ -1854,13 +1855,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "palu",
-        "gloss": "a moment; 24 seconds",
+        "gloss": "a moment",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "chasā",
-        "gloss": "a fraction of a second; an instant",
+        "roman": "casā",
+        "gloss": "a tiny instant",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1878,7 +1879,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "sev karī is a 1st person singular present/future conjunct verb; palu chasā are adverbial accusatives of duration; vichuṛā is a 1st person singular present/subjunctive verb with negative particle na."
+    "grammarNote": "sev karī is a 1st person singular present/future conjunct verb; palu casā are adverbial accusatives of duration; vichuṛā is a 1st person singular present/subjunctive verb with negative particle na."
   },
   "line-022": {
     "source": "ਜਨ ਨਾਨਕ ਦਾਸ ਤੁਮਾਰੇ ਜੀਉ ॥",
@@ -1915,8 +1916,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jan nānak dās tumāre jīu ||",
-    "english": "{0:Servant }{1:Nanak }{3:is your }{2:humble servant, }{4:O revered Lord.}",
+    "roman": "jan nānak dās tumāre jīu ॥",
+    "english": "{0:Servant }{1:Nānak }{3:is your }{2:humble servant, }{4:O revered Lord.}",
     "words": [
       {
         "roman": "jan",
@@ -1926,7 +1927,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānak",
-        "gloss": "Nānak, the devotee-poet",
+        "gloss": "the Gurūs’ authorial signature; here, Gurū Arjan",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1993,7 +1994,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gur darasan tāī merā manu locai",
+    "roman": "gur darasana tāī merā manu locai",
     "english": "{2:For }{1:the sight }{0:of the Guru, }{3:my }{4:mind }{5:yearns.}",
     "words": [
       {
@@ -2003,7 +2004,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "darasan",
+        "roman": "darasana",
         "gloss": "vision; sight",
         "concept_key": "",
         "preserve_in_english": false
@@ -2077,7 +2078,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "trikhā na utrai sānti na āvai",
+    "roman": "trikhā na utarai sānti na āvai",
     "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come,}",
     "words": [
       {
@@ -2093,7 +2094,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "utrai",
+        "roman": "utarai",
         "gloss": "subsides; is quenched",
         "concept_key": "",
         "preserve_in_english": false
@@ -2118,7 +2119,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Coordinate negated clauses with parallel 3rd person singular present indicative verbs (utrai, āvai)."
+    "grammarNote": "Coordinate negated clauses with parallel 3rd person singular present indicative verbs (utarai, āvai)."
   },
   "line-025": {
     "source": "ਬਿਨੁ ਦਰਸਨ ਸੰਤ ਪਿਆਰੇ ਜੀਉ ॥",
@@ -2155,7 +2156,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "binu darasan sant piāre jīu ||",
+    "roman": "binu darasana santa piāre jīu ॥",
     "english": "{0:Without }{1:the sight }{3:of the beloved, }{4:revered }{2:Saint.}",
     "words": [
       {
@@ -2165,13 +2166,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "darasan",
+        "roman": "darasana",
         "gloss": "sight; vision",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sant",
+        "roman": "santa",
         "gloss": "of the saint; holy guide",
         "concept_key": "",
         "preserve_in_english": false
@@ -2383,7 +2384,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "trikhā na utarai sānti na āvai binu darasana santa pi'āre jī'o",
+    "roman": "trikhā na utarai sānti na āvai binu darasana santa piāre jīu",
     "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved, }{10:revered }{8:Saint.}",
     "words": [
       {
@@ -2441,20 +2442,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pi'āre",
+        "roman": "piāre",
         "gloss": "beloved",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "jī'o",
+        "roman": "jīu",
         "gloss": "revered one",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Full verse line repeated with phonetic transcription variants (pi'āre, jī'o)."
+    "grammarNote": "Full verse line repeated with phonetic transcription variants (piāre, jīu)."
   },
   "line-029": {
     "source": "ਹਉ ਘੋਲੀ ਜੀਉ ਘੋਲਿ ਘੁਮਾਈ",
@@ -2491,7 +2492,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "hau gholī jī'o gholi ghumā'ī",
+    "roman": "hau gholī jīu gholi ghumāī",
     "english": "{0,1:I am a sacrifice; }{2:my life }{4:is surrendered }{3:in sacrifice}",
     "words": [
       {
@@ -2507,7 +2508,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jī'o",
+        "roman": "jīu",
         "gloss": "my life; revered one",
         "concept_key": "",
         "preserve_in_english": false
@@ -2519,14 +2520,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ghumā'ī",
+        "roman": "ghumāī",
         "gloss": "circuited in total surrender; offered wholly",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Spelling variant of line-004 (jī'o, ghumā'ī)."
+    "grammarNote": "Spelling variant of line-004 (jīu, ghumāī)."
   },
   "line-030": {
     "source": "ਗੁਰ ਦਰਸਨ ਸੰਤ ਪਿਆਰੇ ਜੀਉ ॥",
@@ -2563,7 +2564,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gur darasana santa pi'āre jī'o",
+    "roman": "gur darasana santa piāre jīu",
     "english": "{1:Unto the sight }{0:of the Guru, }{3:the beloved, }{4:revered }{2:Saint.}",
     "words": [
       {
@@ -2585,13 +2586,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pi'āre",
+        "roman": "piāre",
         "gloss": "beloved",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "jī'o",
+        "roman": "jīu",
         "gloss": "revered one",
         "concept_key": "",
         "preserve_in_english": false
@@ -2635,7 +2636,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "antari pi'āsa uṭhī prabha kerī",
+    "roman": "antari piāsa uṭhī prabha kerī",
     "english": "{0:Within }{2:has arisen }{1:a thirst }{3,4:for the Lord;}",
     "words": [
       {
@@ -2645,7 +2646,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pi'āsa",
+        "roman": "piāsa",
         "gloss": "thirst; yearning",
         "concept_key": "",
         "preserve_in_english": false
@@ -2670,7 +2671,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "antari has the locative -i ending; pi'āsa is a feminine nominative noun paired with the feminine genitive postposition kerī and feminine perfective verb uṭhī."
+    "grammarNote": "antari has the locative -i ending; piāsa is a feminine nominative noun paired with the feminine genitive postposition kerī and feminine perfective verb uṭhī."
   },
   "line-032": {
     "source": "ਸੁਣਿ ਗੁਰ ਬਚਨ ਮਨਿ ਤੀਰ ਲਗਈਆ ॥",
@@ -2713,7 +2714,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "suṇi gura bacana mani tīra laga'ī'ā",
+    "roman": "suṇi gur bacana mani tīra lagaīā",
     "english": "{0:Hearing }{2:the words }{1:of the Guru, }{4:an arrow }{5:has pierced }{3:my heart.}",
     "words": [
       {
@@ -2723,7 +2724,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "gura",
+        "roman": "gur",
         "gloss": "of the Guru",
         "concept_key": "",
         "preserve_in_english": false
@@ -2747,14 +2748,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "laga'ī'ā",
+        "roman": "lagaīā",
         "gloss": "has struck; lodged",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "suṇi is a conjunctive participle ('having heard') governing the compound gura bacana; mani is locative singular ('in the mind'); laga'ī'ā is a masculine singular perfective verb agreeing with tīra."
+    "grammarNote": "suṇi is a conjunctive participle ('having heard') governing the compound gur bacana; mani is locative singular ('in the mind'); lagaīā is a masculine singular perfective verb agreeing with tīra."
   },
   "line-033": {
     "source": "ਮਨ ਕੀ ਬਿਰਥਾ ਮਨ ਹੀ ਜਾਣੈ",
@@ -2881,7 +2882,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "avaru ki jāṇai ko pīra para'ī'ā",
+    "roman": "avaru ki jāṇai ko pīra paraīā",
     "english": "{1:What }{3:can anyone }{0:else }{2:know }{5:of another's }{4:pain?}",
     "words": [
       {
@@ -2915,14 +2916,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "para'ī'ā",
+        "roman": "paraīā",
         "gloss": "of another; alien",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Rhetorical question functioning as a strong negation; avaru ko is an indefinite masculine subject; pīra is a feminine direct object modified by the adjective para'ī'ā."
+    "grammarNote": "Rhetorical question functioning as a strong negation; avaru ko is an indefinite masculine subject; pīra is a feminine direct object modified by the adjective paraīā."
   },
   "line-035": {
     "source": "ਕੈਸੇ ਕਹਉ ਮੋਹਿ ਜੀਅ ਬੇਦਨਾਈ ॥",
@@ -2959,8 +2960,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kaise kaha'u mohi jī'a bedanā'ī",
-    "english": "{0:How }{1:can I express }{4:the torment }{2:of my }{3:soul?}",
+    "roman": "kaise kahau mohi jīa bedanāī",
+    "english": "{0:How }{1,2:can I tell }{4:the pain }{3:in my heart?}",
     "words": [
       {
         "roman": "kaise",
@@ -2969,32 +2970,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kaha'u",
-        "gloss": "can I speak; express",
+        "roman": "kahau",
+        "gloss": "I say; may I tell",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mohi",
-        "gloss": "my; to me",
+        "gloss": "I; me (first-person oblique form)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "jī'a",
-        "gloss": "of the heart; soul",
+        "roman": "jīa",
+        "gloss": "heart; inner being",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bedanā'ī",
-        "gloss": "the pain; torment",
+        "roman": "bedanāī",
+        "gloss": "pain; anguish",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "kaha'u is 1st person singular optative/present ('how may I say?'); mohi is an oblique possessive pronoun; bedanā'ī is derived from Skt. vedanā ('torment, pain')."
+    "grammarNote": "kahau is first-person speech, here in the question how can I tell; mohi is a first-person oblique form, not an inherently possessive pronoun. jīa bedanāī is the pain of the heart; English my follows the first-person context."
   },
   "line-036": {
     "source": "ਦਰਸਨ ਪਿਆਸ ਪ੍ਰੇਮ ਪ੍ਰੀਤਿ ਮਨੋਹਰ",
@@ -3031,7 +3032,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "darasana pi'āsa prema prīti manohara",
+    "roman": "darasana piāsa prema prīti manohara",
     "english": "{1:Thirst }{0:for the blessed sight, }{2:loving }{3:devotion }{4:for the Heart-Ravisher—}",
     "words": [
       {
@@ -3041,7 +3042,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pi'āsa",
+        "roman": "piāsa",
         "gloss": "thirst; longing",
         "concept_key": "",
         "preserve_in_english": false
@@ -3092,7 +3093,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "manu na rahai",
-    "english": "{0:The mind }{1:cannot be }{2:restrained,}",
+    "english": "{0:The mind }{1,2:does not stay still,}",
     "words": [
       {
         "roman": "manu",
@@ -3108,7 +3109,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rahai",
-        "gloss": "remains still; is restrained",
+        "gloss": "stays; remains still",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3157,8 +3158,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "manu na rahai bahu bidhi umakā'ī",
-    "english": "{0:The mind }{1,2:cannot be restrained; }{3:in manifold }{4:ways }{5:it surges with longing.}",
+    "roman": "manu na rahai bahu bidhi umakāī",
+    "english": "{0:The mind }{1,2:does not stay still; }{3:in manifold }{4:ways }{5:it surges with longing.}",
     "words": [
       {
         "roman": "manu",
@@ -3174,7 +3175,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rahai",
-        "gloss": "remains still; is restrained",
+        "gloss": "stays; remains still",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3191,14 +3192,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "umakā'ī",
+        "roman": "umakāī",
         "gloss": "surges up; leaps with eager yearning",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "bahu bidhi is an adverbial phrase of manner ('in many ways'); umakā'ī is a 3rd person singular present/perfective verb expressing enthusiastic swelling of emotion."
+    "grammarNote": "bahu bidhi is an adverbial phrase of manner ('in many ways'); umakāī is a 3rd person singular present/perfective verb expressing enthusiastic swelling of emotion."
   },
   "line-039": {
     "source": "ਪੰਥੁ ਨਿਹਾਰੈ ਕਾਮਨੀ",
@@ -3240,7 +3241,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāmanī",
-        "gloss": "the longing woman; soul-bride",
+        "gloss": "woman; bride, here the yearning devotee",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3278,7 +3279,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "locana bharī le usāsā",
-    "english": "{0:Her eyes }{1:brimming with tears, }{2:drawing }{3:deep sighs.}",
+    "english": "{0,1:With eyes brimming with tears, }{2:she draws }{3:deep sighs.}",
     "words": [
       {
         "roman": "locana",
@@ -3350,7 +3351,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ura na bhījai paga nā khisai",
-    "english": "{0:Her heart }{1:is not }{2:cooled, }{3:yet her feet }{4:do not }{5:retreat,}",
+    "english": "{0:Her heart }{1:is not }{2:drenched; }{3:her foot }{4:does not }{5:slip,}",
     "words": [
       {
         "roman": "ura",
@@ -3366,13 +3367,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhījai",
-        "gloss": "is drenched; softened with relief",
+        "gloss": "is wetted; figuratively, finds satisfaction",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paga",
-        "gloss": "foot; steps",
+        "gloss": "foot; step",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3384,13 +3385,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "khisai",
-        "gloss": "slips; retreats; moves away",
+        "gloss": "slips; shifts away",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Parallel clauses with negated 3rd person singular present indicative verbs (bhījai, khisai); ura is nominative/locative; paga is direct subject."
+    "grammarNote": "The two clauses keep the heart and foot as their respective subjects. bhījai retains the image of wetting, with satisfaction or relief as its contextual sense; khisai is the foot slipping or shifting. The following line gives the hope for the sight of Hari."
   },
   "line-042": {
     "source": "ਹਰਿ ਦਰਸਨ ਕੀ ਆਸਾ ॥",
@@ -3481,7 +3482,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "darasana pi'āsī dinasu rāti",
+    "roman": "darasana piāsī dinasu rāti",
     "english": "{1:Thirsty }{0:for the sight }{2:day }{3:and night,}",
     "words": [
       {
@@ -3491,7 +3492,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pi'āsī",
+        "roman": "piāsī",
         "gloss": "thirsty",
         "concept_key": "",
         "preserve_in_english": false
@@ -3504,13 +3505,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāti",
-        "gloss": "and night",
+        "gloss": "night",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "pi'āsī is a feminine singular predicate adjective; dinasu rāti is an adverbial dvandva compound of duration."
+    "grammarNote": "piāsī is a feminine singular predicate adjective; dinasu rāti is an adverbial dvandva compound of duration."
   },
   "line-044": {
     "source": "ਚਿਤਵਉ ਅਨਦਿਨੁ ਨੀਤ ॥",
@@ -3535,18 +3536,18 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "citava'u anadinu nīta",
-    "english": "{0:I contemplate }{2:perpetually, }{1:day and night.}",
+    "roman": "citavau anadinu nīta",
+    "english": "{0:I contemplate }{2:perpetually, }{1:day after day.}",
     "words": [
       {
-        "roman": "citava'u",
+        "roman": "citavau",
         "gloss": "I contemplate; remember constantly",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "anadinu",
-        "gloss": "every day; day and night",
+        "gloss": "every day; day after day",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3558,7 +3559,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "citava'u is a 1st person singular present indicative verb; anadinu (Skt. ahar-niśam) and nīta (Skt. nityam) are reinforcing adverbs of time."
+    "grammarNote": "citavau is a 1st person singular present indicative verb; anadinu (Skt. anudinam) and nīta (Skt. nityam) are reinforcing adverbs of time."
   },
   "line-045": {
     "source": "ਖੋਲਿ ਕਪਟੁ ਗੁਰਿ ਮੇਲੀਆ",
@@ -3589,7 +3590,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kholi kapaṭu guri melī'ā",
+    "roman": "kholi kapaṭu guri melīā",
     "english": "{0:Throwing open }{1:the inner doors, }{2:the Guru }{3:has united me}",
     "words": [
       {
@@ -3611,7 +3612,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "melī'ā",
+        "roman": "melīā",
         "gloss": "has united; brought together",
         "concept_key": "",
         "preserve_in_english": false
@@ -3649,8 +3650,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "nānaka hari sangi mīta",
-    "english": "{0:O Nanak, }{1,2:with Hari, }{3:the Beloved Friend.}",
+    "roman": "nānaka hari saṅgi mīta",
+    "english": "{0:O Nānak, }{1,2:with Hari, }{3:the Beloved Friend.}",
     "words": [
       {
         "roman": "nānaka",
@@ -3665,7 +3666,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sangi",
+        "roman": "saṅgi",
         "gloss": "in the company of; united with",
         "concept_key": "",
         "preserve_in_english": false
@@ -3678,7 +3679,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "nānaka is vocative; sangi is a locative postposition ('in the company of') governing hari; mīta is in apposition with hari."
+    "grammarNote": "nānaka is vocative; saṅgi is a locative postposition ('in the company of') governing hari; mīta is in apposition with hari."
   },
   "line-047": {
     "source": "ਗੁਰ ਦਰਸਨ ਤਾਈ ॥",

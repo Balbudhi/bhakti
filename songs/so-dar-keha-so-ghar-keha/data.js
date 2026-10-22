@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "So Dar Keha So Ghar Keha",
+  "title": "So Daru Kehā So Gharu Kehā",
   "subtitle": "",
   "credit": "Gurū Nānak · Bhai Nirmal Singh Khalsa",
   "pageCredit": "Bhai Nirmal Singh Khalsa",
@@ -25,7 +25,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Nānak"
+    "Gurū Nānak",
+    "So Dar Keha So Ghar Keha"
   ],
   "audioSources": [
     {
@@ -116,11 +117,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sō daru kēhā sō gharu kēhā",
+    "roman": "so daru kehā so gharu kehā",
     "english": "{2:What sort of }{1:door }{0:is that, }{5:what sort of }{4:house }{3:is that,}",
     "words": [
       {
-        "roman": "sō",
+        "roman": "so",
         "gloss": "that",
         "concept_key": "",
         "preserve_in_english": false
@@ -132,13 +133,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kēhā",
+        "roman": "kehā",
         "gloss": "what sort; of what kind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sō",
+        "roman": "so",
         "gloss": "that",
         "concept_key": "",
         "preserve_in_english": false
@@ -150,14 +151,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kēhā",
+        "roman": "kehā",
         "gloss": "what sort; of what kind",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "sō is a distal demonstrative adjective modifying masculine singular nouns daru and gharu (both marked with auṅkaṛ for nominative singular). kēhā is an interrogative adjective."
+    "grammarNote": "so is a distal demonstrative adjective modifying masculine singular nouns daru and gharu (both marked with auṅkaṛ for nominative singular). kehā is an interrogative adjective."
   },
   "so-dar-keha-2": {
     "source": "ਸੋ ਦਰੁ ਕੇਹਾ ਸੋ ਘਰੁ ਕੇਹਾ",
@@ -200,11 +201,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sō daru kēhā sō gharu kēhā",
+    "roman": "so daru kehā so gharu kehā",
     "english": "{2:What sort of }{1:door }{0:is that, }{5:what sort of }{4:house }{3:is that,}",
     "words": [
       {
-        "roman": "sō",
+        "roman": "so",
         "gloss": "that",
         "concept_key": "",
         "preserve_in_english": false
@@ -216,13 +217,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kēhā",
+        "roman": "kehā",
         "gloss": "what sort; of what kind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sō",
+        "roman": "so",
         "gloss": "that",
         "concept_key": "",
         "preserve_in_english": false
@@ -234,7 +235,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kēhā",
+        "roman": "kehā",
         "gloss": "what sort; of what kind",
         "concept_key": "",
         "preserve_in_english": false
@@ -272,7 +273,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jitu bahi sarab samālē ॥",
+    "roman": "jitu bahi sarab samāle ॥",
     "english": "{0:wherein }{1:seated, }{3:You sustain }{2:all?}",
     "words": [
       {
@@ -294,14 +295,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "samālē",
+        "roman": "samāle",
         "gloss": "sustains; cherishes; takes care of",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "jitu is a locative singular relative pronoun. bahi is a conjunctive participle (absolutive). samālē is a 3rd person singular present indicative verb taking sarab as direct object."
+    "grammarNote": "jitu is a locative singular relative pronoun. bahi is a conjunctive participle (absolutive). samāle is a 3rd person singular present indicative verb taking sarab as direct object."
   },
   "jit-behai-2": {
     "source": "ਜਿਤੁ ਬਹਿ ਸਰਬ ਸਮਾਲੇ ॥",
@@ -332,7 +333,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jitu bahi sarab samālē ॥",
+    "roman": "jitu bahi sarab samāle ॥",
     "english": "{0:wherein }{1:seated, }{3:You sustain }{2:all?}",
     "words": [
       {
@@ -354,7 +355,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "samālē",
+        "roman": "samāle",
         "gloss": "sustains; cherishes; takes care of",
         "concept_key": "",
         "preserve_in_english": false
@@ -392,24 +393,24 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "vājē nād anēk asaṅkhā",
-    "english": "{2:Countless }{3:and innumerable }{1:sound vibrations }{0:resound,}",
+    "roman": "vāje nād anek asaṅkhā",
+    "english": "{2:Many, }{3:countless }{1:musical sounds }{0:resound,}",
     "words": [
       {
-        "roman": "vājē",
+        "roman": "vāje",
         "gloss": "sound; are played",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nād",
-        "gloss": "musical sounds; primal resonances",
+        "gloss": "musical sounds; tones",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "anēk",
-        "gloss": "countless; manifold",
+        "roman": "anek",
+        "gloss": "many; manifold",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -421,7 +422,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "vājē is a 3rd person plural present passive/intransitive verb. nād functions as nominative plural modified by numeral adjectives anēk and asaṅkhā."
+    "grammarNote": "vāje is a 3rd person plural present passive/intransitive verb. nād functions as nominative plural modified by numeral adjectives anek and asaṅkhā."
   },
   "vaje-naad-2": {
     "source": "ਵਾਜੇ ਨਾਦ ਅਨੇਕ ਅਸੰਖਾ",
@@ -452,24 +453,24 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "vājē nād anēk asaṅkhā",
-    "english": "{2:Countless }{3:and innumerable }{1:sound vibrations }{0:resound,}",
+    "roman": "vāje nād anek asaṅkhā",
+    "english": "{2:Many, }{3:countless }{1:musical sounds }{0:resound,}",
     "words": [
       {
-        "roman": "vājē",
+        "roman": "vāje",
         "gloss": "sound; are played",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nād",
-        "gloss": "musical sounds; primal resonances",
+        "gloss": "musical sounds; tones",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "anēk",
-        "gloss": "countless; manifold",
+        "roman": "anek",
+        "gloss": "many; manifold",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -500,24 +501,24 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kētē vāvaṇahārē ॥",
+    "roman": "kete vāvaṇahāre ॥",
     "english": "{0:so many are }{1:the instrument players.}",
     "words": [
       {
-        "roman": "kētē",
+        "roman": "kete",
         "gloss": "so many; how many",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vāvaṇahārē",
+        "roman": "vāvaṇahāre",
         "gloss": "players of instruments; musicians",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "kētē is a masculine plural quantitative adjective. vāvaṇahārē is an agentive noun formed with suffix -hārē on the verbal base vāvaṇ- (to play an instrument)."
+    "grammarNote": "kete is a masculine plural quantitative adjective. vāvaṇahāre is an agentive noun formed with suffix -hāre on the verbal base vāvaṇ- (to play an instrument)."
   },
   "kete-raag-1": {
     "source": "ਕੇਤੇ ਰਾਗ ਪਰੀ ਸਿਉ ਕਹੀਅਨਿ",
@@ -554,11 +555,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kētē rāg parī siu kahīani",
+    "roman": "kete rāg parī siu kahīani",
     "english": "{0:So many }{1:rāgas }{4:are sung }{3:along with }{2:their musical consorts,}",
     "words": [
       {
-        "roman": "kētē",
+        "roman": "kete",
         "gloss": "so many; how many",
         "concept_key": "",
         "preserve_in_english": false
@@ -571,7 +572,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "parī",
-        "gloss": "ragiṇīs; consort sub-modes",
+        "gloss": "musical consorts of rāgas; rāgiṇīs",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -626,11 +627,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kētē rāg parī siu kahīani",
+    "roman": "kete rāg parī siu kahīani",
     "english": "{0:So many }{1:rāgas }{4:are sung }{3:along with }{2:their musical consorts,}",
     "words": [
       {
-        "roman": "kētē",
+        "roman": "kete",
         "gloss": "so many; how many",
         "concept_key": "",
         "preserve_in_english": false
@@ -643,7 +644,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "parī",
-        "gloss": "ragiṇīs; consort sub-modes",
+        "gloss": "musical consorts of rāgas; rāgiṇīs",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -680,24 +681,24 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kētē gāvaṇahārē ॥",
+    "roman": "kete gāvaṇahāre ॥",
     "english": "{0:so many are }{1:the singers.}",
     "words": [
       {
-        "roman": "kētē",
+        "roman": "kete",
         "gloss": "so many; how many",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "gāvaṇahārē",
+        "roman": "gāvaṇahāre",
         "gloss": "singers; chanters",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "gāvaṇahārē is an agentive masculine plural noun derived from gāvaṇ- with suffix -hārē."
+    "grammarNote": "gāvaṇahāre is an agentive masculine plural noun derived from gāvaṇ- with suffix -hāre."
   },
   "gaveh-tuhno-pawan": {
     "source": "ਗਾਵਹਿ ਤੁਹਨੋ ਪਉਣੁ ਪਾਣੀ ਬੈਸੰਤਰੁ ਗਾਵੈ ਰਾਜਾ ਧਰਮੁ ਦੁਆਰੇ ॥",
@@ -758,8 +759,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi tuhnō pauṇu pāṇī baisantaru gāvai rājā dharamu duārē ॥",
-    "english": "{2:Wind, }{3:water, }{4:and fire }{0:sing }{1:unto You; }{6:King }{7:Dharam }{5:sings }{8:at the door.}",
+    "roman": "gāvahi tuhno pauṇu pāṇī baisantaru gāvai rājā dharamu duāre ॥",
+    "english": "{2:Wind, }{3:water, }{4:and fire }{0:sing }{1:unto You; }{6:King }{7:Dharma }{5:sings }{8:at the door.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -768,7 +769,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tuhnō",
+        "roman": "tuhno",
         "gloss": "unto You; Your praise",
         "concept_key": "",
         "preserve_in_english": false
@@ -805,19 +806,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharamu",
-        "gloss": "judge of righteous order (Dharam Rai)",
+        "gloss": "Dharma, the personified judge of deeds",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "duārē",
+        "roman": "duāre",
         "gloss": "at the door; at the threshold",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "gāvahi is 3rd person plural present indicative agreeing with pauṇu, pāṇī, baisantaru. gāvai is 3rd person singular present agreeing with rājā dharamu. duārē is locative singular."
+    "grammarNote": "gāvahi is 3rd person plural present indicative agreeing with pauṇu, pāṇī, baisantaru. gāvai is 3rd person singular present agreeing with rājā dharamu. duāre is locative singular."
   },
   "gaveh-chit-gupat": {
     "source": "ਗਾਵਹਿ ਚਿਤੁ ਗੁਪਤੁ ਲਿਖਿ ਜਾਣਹਿ ਲਿਖਿ ਲਿਖਿ ਧਰਮੁ ਵੀਚਾਰੇ ॥",
@@ -878,8 +879,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi citu gupatu likhi jāṇahi likhi likhi dharamu vīcārē ॥",
-    "english": "{1:Chitra }{2:and Gupta }{0:sing, }{4:who know }{3:how to write, }{5:and writing }{6:and writing, }{7:Dharam }{8:deliberates.}",
+    "roman": "gāvahi citu gupatu likhi jāṇahi likhi likhi dharamu vīcāre ॥",
+    "english": "{1:Citra }{2:and Gupta }{0:sing, }{4:knowing }{3:how to record; }{7:Dharma }{8:considers }{5,6:what they write, again and again.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -889,13 +890,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "citu",
-        "gloss": "Chitra (recording scribe of overt deeds)",
+        "gloss": "Citra, a recorder of deeds",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gupatu",
-        "gloss": "Gupta (recording scribe of covert deeds)",
+        "gloss": "Gupta, a recorder of deeds",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -925,19 +926,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharamu",
-        "gloss": "the judge of righteous order (Dharam Rai)",
+        "gloss": "Dharma, the personified judge of deeds",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vīcārē",
+        "roman": "vīcāre",
         "gloss": "deliberates; contemplates; evaluates",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "jāṇahi is 3rd person plural present taking conjunctive participle likhi as complement. likhi likhi is reduplicated absolutive showing continuous action. vīcārē is 3rd person singular present indicative."
+    "grammarNote": "jāṇahi is a third-person plural present verb: the recording figures know how to write. The repeated likhi likhi refers to their recording, whose content Dharma considers; vīcāre is third-person singular. The two clauses have different agents."
   },
   "likh-likh-dharm-vichare": {
     "source": "ਲਿਖਿ ਲਿਖਿ ਧਰਮੁ ਵੀਚਾਰੇ ॥",
@@ -968,8 +969,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "likhi likhi dharamu vīcārē ॥",
-    "english": "{0:Writing }{1:and writing, }{2:Dharam }{3:deliberates.}",
+    "roman": "likhi likhi dharamu vīcāre ॥",
+    "english": "{2:Dharma }{3:considers }{0,1:what they write, again and again.}",
     "words": [
       {
         "roman": "likhi",
@@ -985,19 +986,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharamu",
-        "gloss": "the judge of righteous order (Dharam Rai)",
+        "gloss": "Dharma, the personified judge of deeds",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vīcārē",
+        "roman": "vīcāre",
         "gloss": "deliberates; contemplates; evaluates",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "likhi likhi is a reduplicated conjunctive participle acting adverbially before 3rd person singular verb vīcārē."
+    "grammarNote": "This fragment repeats the end of the preceding line. The reduplicated likhi likhi refers to the scribes’ recording; Dharma is the subject of vīcāre, considers."
   },
   "gaveh-eesar-barma": {
     "source": "ਗਾਵਹਿ ਈਸਰੁ ਬਰਮਾ ਦੇਵੀ ਸੋਹਨਿ ਸਦਾ ਸਵਾਰੇ ॥",
@@ -1046,8 +1047,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi īsaru baramā dēvī sōhani sadā savārē ॥",
-    "english": "{1:Shiva, }{2:Brahma, }{3:and the goddesses }{0:sing, }{5:ever }{6:adorned }{4:and radiant.}",
+    "roman": "gāvahi īsaru baramā devī sohani sadā savāre ॥",
+    "english": "{1:Śiva, }{2:Brahmā, }{3:and the goddesses }{0:sing, }{5:ever }{6:adorned }{4:and radiant.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -1057,24 +1058,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "īsaru",
-        "gloss": "Shiva (Ishvara)",
+        "gloss": "Śiva (Īśvara)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "baramā",
-        "gloss": "Brahma",
+        "gloss": "Brahmā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dēvī",
+        "roman": "devī",
         "gloss": "the goddesses",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sōhani",
+        "roman": "sohani",
         "gloss": "look radiant; appear beauteous",
         "concept_key": "",
         "preserve_in_english": false
@@ -1086,14 +1087,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "savārē",
+        "roman": "savāre",
         "gloss": "adorned; embellished; fashioned",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "gāvahi and sōhani are 3rd person plural present indicative verbs. savārē is a masculine plural past participle modifying the deities."
+    "grammarNote": "gāvahi and sohani are 3rd person plural present indicative verbs. savāre is a masculine plural past participle modifying the deities."
   },
   "sohan-sada-savare": {
     "source": "ਸੋਹਨਿ ਸਦਾ ਸਵਾਰੇ ॥",
@@ -1118,11 +1119,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sōhani sadā savārē ॥",
+    "roman": "sohani sadā savāre ॥",
     "english": "{1:Ever }{2:adorned }{0:and radiant.}",
     "words": [
       {
-        "roman": "sōhani",
+        "roman": "sohani",
         "gloss": "look radiant; appear beauteous",
         "concept_key": "",
         "preserve_in_english": false
@@ -1134,7 +1135,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "savārē",
+        "roman": "savāre",
         "gloss": "adorned; embellished; fashioned",
         "concept_key": "",
         "preserve_in_english": false
@@ -1190,7 +1191,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi ind idāsaṇi baiṭhē dēvatiā dari nālē ॥",
+    "roman": "gāvahi ind idāsaṇi baiṭhe devatiā dari nāle ॥",
     "english": "{1:Indras }{3:seated }{2:on Indra's throne }{0:sing, }{6:along with }{4:the deities }{5:at the door.}",
     "words": [
       {
@@ -1201,7 +1202,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ind",
-        "gloss": "and all Indras",
+        "gloss": "divine kings",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1212,13 +1213,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "baiṭhē",
+        "roman": "baiṭhe",
         "gloss": "seated",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dēvatiā",
+        "roman": "devatiā",
         "gloss": "devas; deities",
         "concept_key": "",
         "preserve_in_english": false
@@ -1230,14 +1231,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nālē",
+        "roman": "nāle",
         "gloss": "along with; together with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "idāsaṇi is locative singular of the compound indra + āsana. baiṭhē is a masculine plural perfect participle. dari is locative singular (at the door). dēvatiā is oblique plural governed by postposition nālē."
+    "grammarNote": "idāsaṇi is locative singular of the compound indra + āsana. baiṭhe is a masculine plural perfect participle. dari is locative singular (at the door). devatiā is oblique plural governed by postposition nāle."
   },
   "devtia-dar-nale": {
     "source": "ਦੇਵਤਿਆ ਦਰਿ ਨਾਲੇ ॥",
@@ -1262,11 +1263,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "dēvatiā dari nālē ॥",
+    "roman": "devatiā dari nāle ॥",
     "english": "{2:along with }{0:the deities }{1:at the door.}",
     "words": [
       {
-        "roman": "dēvatiā",
+        "roman": "devatiā",
         "gloss": "devas; deities",
         "concept_key": "",
         "preserve_in_english": false
@@ -1278,7 +1279,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nālē",
+        "roman": "nāle",
         "gloss": "along with; together with",
         "concept_key": "",
         "preserve_in_english": false
@@ -1334,8 +1335,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi sidh samādhī andari gāvani sādh bīcārē ॥",
-    "english": "{1:The Siddhas }{0:sing }{3:within }{2:samādhi; }{5:the Sadhus }{4:sing }{6:in contemplation.}",
+    "roman": "gāvahi sidh samādhī andari gāvani sādh bīcāre ॥",
+    "english": "{1:The adepts }{0:sing }{3:in }{2:samādhi; }{5:holy seekers }{4:sing }{6:in contemplation.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -1345,7 +1346,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sidh",
-        "gloss": "adepts; perfected masters (siddhas)",
+        "gloss": "adepts; accomplished practitioners",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1369,19 +1370,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "sādh",
-        "gloss": "renunciants; seekers; sadhus",
+        "gloss": "holy seekers; saints",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bīcārē",
+        "roman": "bīcāre",
         "gloss": "in contemplation; reflecting",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "gāvahi and gāvani are parallel 3rd person plural present forms. bīcārē is an adverbial/participial form meaning 'in reflection/contemplation'."
+    "grammarNote": "gāvahi and gāvani are parallel 3rd person plural present forms. bīcāre is an adverbial/participial form meaning 'in reflection/contemplation'."
   },
   "gavan-jati-sati": {
     "source": "ਗਾਵਨਿ ਜਤੀ ਸਤੀ ਸੰਤੋਖੀ ਗਾਵਹਿ ਵੀਰ ਕਰਾਰੇ ॥",
@@ -1430,7 +1431,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvani jatī satī santōkhī gāvahi vīr karārē ॥",
+    "roman": "gāvani jatī satī santokhī gāvahi vīr karāre ॥",
     "english": "{1:The celibates, }{2:the truthful, }{3:and the contented }{0:sing; }{6:resolute }{5:heroes }{4:sing.}",
     "words": [
       {
@@ -1452,7 +1453,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "santōkhī",
+        "roman": "santokhī",
         "gloss": "the contented",
         "concept_key": "",
         "preserve_in_english": false
@@ -1470,14 +1471,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karārē",
+        "roman": "karāre",
         "gloss": "formidable; resolute; mighty",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "jatī, satī, santōkhī are nominalized adjectives functioning as plural subjects. vīr karārē forms a masculine plural subject phrase."
+    "grammarNote": "jatī, satī, santokhī are nominalized adjectives functioning as plural subjects. vīr karāre forms a masculine plural subject phrase."
   },
   "gaveh-vir-karare-1": {
     "source": "ਗਾਵਹਿ ਵੀਰ ਕਰਾਰੇ ॥",
@@ -1502,7 +1503,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi vīr karārē ॥",
+    "roman": "gāvahi vīr karāre ॥",
     "english": "{2:Resolute }{1:heroes }{0:sing.}",
     "words": [
       {
@@ -1518,14 +1519,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karārē",
+        "roman": "karāre",
         "gloss": "formidable; resolute; mighty",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "gāvahi is 3rd person plural present indicative agreeing with vīr karārē."
+    "grammarNote": "gāvahi is 3rd person plural present indicative agreeing with vīr karāre."
   },
   "gaveh-vir-karare-2": {
     "source": "ਗਾਵਹਿ ਵੀਰ ਕਰਾਰੇ ॥",
@@ -1550,7 +1551,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi vīr karārē ॥",
+    "roman": "gāvahi vīr karāre ॥",
     "english": "{2:Resolute }{1:heroes }{0:sing.}",
     "words": [
       {
@@ -1566,7 +1567,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karārē",
+        "roman": "karāre",
         "gloss": "formidable; resolute; mighty",
         "concept_key": "",
         "preserve_in_english": false
@@ -1628,7 +1629,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvani paṇḍit paṛani rakhīsar jugu jugu vēdā nālē ॥",
+    "roman": "gāvani paṇḍit paṛani rakhīsar jugu jugu vedā nāle ॥",
     "english": "{1:The scholars }{3:and great sages }{2:who recite }{0:sing, }{4:age }{5:after age }{7:along with }{6:the Vedas.}",
     "words": [
       {
@@ -1668,20 +1669,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vēdā",
+        "roman": "vedā",
         "gloss": "the Vedas; sacred scriptures",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nālē",
+        "roman": "nāle",
         "gloss": "along with; with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "paṛani is a 3rd person plural present participle/verb functioning relative to paṇḍit and rakhīsar. jugu jugu is reduplicated noun used adverbially. vēdā is oblique plural with postposition nālē."
+    "grammarNote": "paṛani is a 3rd person plural present participle/verb functioning relative to paṇḍit and rakhīsar. jugu jugu is reduplicated noun used adverbially. vedā is oblique plural with postposition nāle."
   },
   "gaveh-mohnian-man-mohan": {
     "source": "ਗਾਵਹਿ ਮੋਹਣੀਆ ਮਨੁ ਮੋਹਨਿ ਸੁਰਗੁ ਮਛੁ ਪਇਆਲੇ ॥",
@@ -1730,7 +1731,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi mōhaṇīā manu mōhani suragu macchu paiālē ॥",
+    "roman": "gāvahi mohaṇīā manu mohani suragu macchu paiāle ॥",
     "english": "{1:The enchanting maidens }{0:sing, }{3:captivating }{2:the mind }{4:in heaven, }{5:earth, }{6:and the netherworld.}",
     "words": [
       {
@@ -1740,7 +1741,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mōhaṇīā",
+        "roman": "mohaṇīā",
         "gloss": "enchanting celestial maidens; enchantresses",
         "concept_key": "",
         "preserve_in_english": false
@@ -1752,7 +1753,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mōhani",
+        "roman": "mohani",
         "gloss": "captivate; enchant",
         "concept_key": "",
         "preserve_in_english": false
@@ -1770,14 +1771,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "paiālē",
+        "roman": "paiāle",
         "gloss": "the nether realm (pātāla)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "mōhaṇīā is a feminine plural subject. mōhani is a 3rd person plural present verb governing direct object manu. suragu macchu paiālē lists the three cosmic realms in an asyndetic locative series."
+    "grammarNote": "mohaṇīā is a feminine plural subject. mohani is a 3rd person plural present verb governing direct object manu. suragu macchu paiāle lists the three cosmic realms in an asyndetic locative series."
   },
   "gavan-ratan-upaye": {
     "source": "ਗਾਵਨਿ ਰਤਨ ਉਪਾਏ ਤੇਰੇ ਅਠਸਠਿ ਤੀਰਥ ਨਾਲੇ ॥",
@@ -1826,7 +1827,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvani ratan upāē tērē aṭhasaṭhi tīrath nālē ॥",
+    "roman": "gāvani ratan upāe tere aṭhasaṭhi tīrath nāle ॥",
     "english": "{1:The jewels }{2:created }{3:by You }{0:sing, }{6:along with }{4:the sixty-eight }{5:sacred pilgrimage sites.}",
     "words": [
       {
@@ -1842,13 +1843,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "upāē",
+        "roman": "upāe",
         "gloss": "created; brought forth",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tērē",
+        "roman": "tere",
         "gloss": "by You; Your",
         "concept_key": "",
         "preserve_in_english": false
@@ -1866,14 +1867,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nālē",
+        "roman": "nāle",
         "gloss": "along with; with",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "upāē tērē is a passive participial relative clause modifying ratan ('the jewels created by You'). aṭhasaṭhi tīrath is governed by postposition nālē."
+    "grammarNote": "upāe tere is a passive participial relative clause modifying ratan ('the jewels created by You'). aṭhasaṭhi tīrath is governed by postposition nāle."
   },
   "gaveh-jodh-mahabal": {
     "source": "ਗਾਵਹਿ ਜੋਧ ਮਹਾਬਲ ਸੂਰਾ ਗਾਵਹਿ ਖਾਣੀ ਚਾਰੇ ॥",
@@ -1922,7 +1923,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi jōdh mahābal sūrā gāvahi khāṇī cārē ॥",
+    "roman": "gāvahi jodh mahābal sūrā gāvahi khāṇī cāre ॥",
     "english": "{2:The mighty }{1:warriors }{3:and brave heroes }{0:sing; }{6:all four }{5:sources of life }{4:sing.}",
     "words": [
       {
@@ -1932,7 +1933,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jōdh",
+        "roman": "jodh",
         "gloss": "warriors; combatants",
         "concept_key": "",
         "preserve_in_english": false
@@ -1962,14 +1963,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "cārē",
+        "roman": "cāre",
         "gloss": "all four",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "jōdh mahābal sūrā forms the first plural subject; khāṇī cārē forms the second plural subject, each taking 3rd person plural verb gāvahi."
+    "grammarNote": "jodh mahābal sūrā forms the first plural subject; khāṇī cāre forms the second plural subject, each taking 3rd person plural verb gāvahi."
   },
   "gaveh-khani-chare": {
     "source": "ਗਾਵਹਿ ਖਾਣੀ ਚਾਰੇ ॥",
@@ -1994,7 +1995,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi khāṇī cārē ॥",
+    "roman": "gāvahi khāṇī cāre ॥",
     "english": "{2:All four }{1:sources of life }{0:sing.}",
     "words": [
       {
@@ -2010,14 +2011,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "cārē",
+        "roman": "cāre",
         "gloss": "all four",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "gāvahi is 3rd person plural present agreeing with khāṇī cārē."
+    "grammarNote": "gāvahi is 3rd person plural present agreeing with khāṇī cāre."
   },
   "gaveh-khand-mandal": {
     "source": "ਗਾਵਹਿ ਖੰਡ ਮੰਡਲ ਵਰਭੰਡਾ ਕਰਿ ਕਰਿ ਰਖੇ ਧਾਰੇ ॥",
@@ -2072,7 +2073,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gāvahi khaṇḍ maṇḍal varabhaṇḍā kari kari rakhē dhārē ॥",
+    "roman": "gāvahi khaṇḍ maṇḍal varabhaṇḍā kari kari rakhe dhāre ॥",
     "english": "{1:The realms, }{2:solar systems, }{3:and universes }{0:sing, }{4,5:which You have fashioned }{6,7:and upheld.}",
     "words": [
       {
@@ -2112,20 +2113,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rakhē",
+        "roman": "rakhe",
         "gloss": "kept; placed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dhārē",
+        "roman": "dhāre",
         "gloss": "supported; established; sustained",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "khaṇḍ maṇḍal varabhaṇḍā is a compound plural subject. kari kari is a reduplicated conjunctive participle. rakhē dhārē is a compound past participial predicate modifying the cosmic realms."
+    "grammarNote": "khaṇḍ maṇḍal varabhaṇḍā is a compound plural subject. kari kari is a reduplicated conjunctive participle. rakhe dhāre is a compound past participial predicate modifying the cosmic realms."
   },
   "sayee-tudhno-gaveh": {
     "source": "ਸੇਈ ਤੁਧੁਨੋ ਗਾਵਹਿ ਜੋ ਤੁਧੁ ਭਾਵਨਿ ਰਤੇ ਤੇਰੇ ਭਗਤ ਰਸਾਲੇ ॥",
@@ -2192,17 +2193,17 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sēī tudhunō gāvahi jō tudhu bhāvani ratē tērē bhagat rasālē ॥",
-    "english": "{0:They alone }{2:sing }{1:unto You }{3:who }{4,5:please You, }{7:Your }{8:devotees }{6:imbued }{9:and steeped in nectar.}",
+    "roman": "seī tudhuno gāvahi jo tudhu bhāvani rate tere bhagat rasāle ॥",
+    "english": "{0:They alone }{2:sing }{1:to You }{3:who }{4,5:please You—}{7:Your }{8:devotees, }{6:dyed in love }{9:and full of delight.}",
     "words": [
       {
-        "roman": "sēī",
+        "roman": "seī",
         "gloss": "only those; they alone",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tudhunō",
+        "roman": "tudhuno",
         "gloss": "unto You; Your praise",
         "concept_key": "",
         "preserve_in_english": false
@@ -2214,7 +2215,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jō",
+        "roman": "jo",
         "gloss": "who; whoever",
         "concept_key": "",
         "preserve_in_english": false
@@ -2232,13 +2233,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ratē",
-        "gloss": "imbued; steeped; colored",
+        "roman": "rate",
+        "gloss": "dyed; imbued with love",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tērē",
+        "roman": "tere",
         "gloss": "Your",
         "concept_key": "",
         "preserve_in_english": false
@@ -2250,14 +2251,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rasālē",
-        "gloss": "steeped in divine nectar; delightful",
+        "roman": "rasāle",
+        "gloss": "full of relish; full of delight",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "sēī is an emphatic demonstrative pronoun correlated with relative jō. bhāvani is 3rd person plural present. ratē is a past participle modifying bhagat."
+    "grammarNote": "seī is an emphatic demonstrative pronoun correlated with relative jo. bhāvani is 3rd person plural present. rate is a past participle modifying bhagat."
   },
   "hor-kete-gavan": {
     "source": "ਹੋਰਿ ਕੇਤੇ ਗਾਵਨਿ ਸੇ ਮੈ ਚਿਤਿ ਨ ਆਵਨਿ ਨਾਨਕੁ ਕਿਆ ਵੀਚਾਰੇ ॥",
@@ -2330,17 +2331,17 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "hōri kētē gāvani sē mai citi na āvani nānaku kiā vīcārē ॥",
-    "english": "{1:So many }{0:others }{2:sing }{3:who }{6:do not }{7:come }{4:into my }{5:mind—}{9:what }{8:can Nanak }{10:contemplate?}",
+    "roman": "hori kete gāvani se mai citi na āvani nānaku kiā vīcāre ॥",
+    "english": "{1:So many }{0:others }{2:sing }{3:who }{6:do not }{7:come }{4:into my }{5:mind—}{9:what }{8:can Nānak }{10:contemplate?}",
     "words": [
       {
-        "roman": "hōri",
+        "roman": "hori",
         "gloss": "others; so many others",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kētē",
+        "roman": "kete",
         "gloss": "how many; countlessly many",
         "concept_key": "",
         "preserve_in_english": false
@@ -2352,7 +2353,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sē",
+        "roman": "se",
         "gloss": "they; those",
         "concept_key": "",
         "preserve_in_english": false
@@ -2383,7 +2384,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānaku",
-        "gloss": "Nanak (the author-speaker)",
+        "gloss": "Nānak (the author-speaker)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2394,14 +2395,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vīcārē",
+        "roman": "vīcāre",
         "gloss": "can contemplate; can deliberate",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "hōri kētē is nominative plural. sē is a resumptive pronoun. citi is locative singular (in the mind). āvani is 3rd person plural present. nānaku carries nominative auṅkaṛ; vīcārē is 3rd person singular present with modal force."
+    "grammarNote": "hori kete is nominative plural. se is a resumptive pronoun. citi is locative singular (in the mind). āvani is 3rd person plural present. nānaku carries nominative auṅkaṛ; vīcāre is 3rd person singular present with modal force."
   },
   "nanak-kia-vichare": {
     "source": "ਨਾਨਕੁ ਕਿਆ ਵੀਚਾਰੇ ॥",
@@ -2426,12 +2427,12 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "nānaku kiā vīcārē ॥",
-    "english": "{1:What }{0:can Nanak }{2:contemplate?}",
+    "roman": "nānaku kiā vīcāre ॥",
+    "english": "{1:What }{0:can Nānak }{2:contemplate?}",
     "words": [
       {
         "roman": "nānaku",
-        "gloss": "Nanak (the author-speaker)",
+        "gloss": "Nānak (the author-speaker)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2442,14 +2443,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vīcārē",
+        "roman": "vīcāre",
         "gloss": "can contemplate; can deliberate",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "nānaku is nominative singular subject; kiā is interrogative direct object; vīcārē is 3rd person singular verb."
+    "grammarNote": "nānaku is nominative singular subject; kiā is interrogative direct object; vīcāre is 3rd person singular verb."
   },
   "soi-soi-sada-sach": {
     "source": "ਸੋਈ ਸੋਈ ਸਦਾ ਸਚੁ ਸਾਹਿਬੁ ਸਾਚਾ ਸਾਚੀ ਨਾਈ ॥",
@@ -2504,17 +2505,17 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sōī sōī sadā sacu sāhibu sācā sācī nāī ॥",
-    "english": "{0,1:That very One }{2:is forever }{3:the true Reality; }{5:true is }{4:the Master, }{6:and true is }{7:His grandeur.}",
+    "roman": "soī soī sadā sacu sāhibu sācā sācī nāī ॥",
+    "english": "{0:That One, }{1:that very One, }{2:is forever }{3:true; }{5:true is }{4:the Master, }{6:true is }{7:His glory.}",
     "words": [
       {
-        "roman": "sōī",
+        "roman": "soī",
         "gloss": "He alone; that very One",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sōī",
+        "roman": "soī",
         "gloss": "He alone; that very One",
         "concept_key": "",
         "preserve_in_english": false
@@ -2527,7 +2528,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sacu",
-        "gloss": "true; eternal Reality",
+        "gloss": "true; enduring",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2551,13 +2552,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāī",
-        "gloss": "praise; renown; divine grandeur",
+        "gloss": "glory; renown",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "sōī sōī is reduplicated emphatic pronoun. sāhibu is masculine singular noun with auṅkaṛ. sācā is masculine adjective agreeing with sāhibu; sācī is feminine adjective agreeing with feminine noun nāī (glory/grandeur)."
+    "grammarNote": "soī soī is reduplicated emphatic pronoun. sāhibu is masculine singular noun with auṅkaṛ. sācā is masculine adjective agreeing with sāhibu; sācī is feminine adjective agreeing with feminine noun nāī (glory/grandeur)."
   },
   "hai-bhi-hosi-jae": {
     "source": "ਹੈ ਭੀ ਹੋਸੀ ਜਾਇ ਨ ਜਾਸੀ ਰਚਨਾ ਜਿਨਿ ਰਚਾਈ ॥",
@@ -2618,8 +2619,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "hai bhī hōsī jāi na jāsī racanā jini racāī ॥",
-    "english": "{0:He exists now, }{1:and }{2:shall ever be; }{4:He does not }{3:depart }{5:nor will He perish, }{7:who }{8:brought into being }{6:the creation.}",
+    "roman": "hai bhī hosī jāi na jāsī racanā jini racāī ॥",
+    "english": "{0:He is }{1:and }{2:shall be, }{4:neither }{3:born }{4:nor }{5:passing away—}{7:He who }{8:fashioned }{6:creation.}",
     "words": [
       {
         "roman": "hai",
@@ -2634,26 +2635,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hōsī",
+        "roman": "hosī",
         "gloss": "shall be; will exist",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jāi",
-        "gloss": "passes away; perishes",
+        "gloss": "birth; coming into being",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "na",
-        "gloss": "not",
+        "gloss": "not; neither",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jāsī",
-        "gloss": "shall pass away; will perish",
+        "gloss": "will pass away; will perish",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2677,7 +2678,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "hai is present 3rd person singular; hōsī is future 3rd person singular. jāi na jāsī combines present and future forms around negation. jini is instrumental/agentive relative pronoun modifying racāī."
+    "grammarNote": "hai is present being and hosī future being. jāi is birth or origination in this occurrence, as directly cited in Mahan Kosh; na denies both birth and jāsī, passing away. jini is the agentive relative, He who, governing racāī, fashioned."
   },
   "rangi-rangi-bhati": {
     "source": "ਰੰਗੀ ਰੰਗੀ ਭਾਤੀ ਕਰਿ ਕਰਿ ਜਿਨਸੀ ਮਾਇਆ ਜਿਨਿ ਉਪਾਈ ॥",
@@ -2858,7 +2859,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "kari kari vēkhai kītā āpaṇā jiv tis dī vaḍiāī ॥",
+    "roman": "kari kari vekhai kītā āpaṇā jiv tis dī vaḍiāī ॥",
     "english": "{0,1:Having made }{4:His own }{3:creation }{2:He beholds it, }{5:as is }{6,7:His }{8:greatness.}",
     "words": [
       {
@@ -2874,7 +2875,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vēkhai",
+        "roman": "vekhai",
         "gloss": "beholds; watches over",
         "concept_key": "",
         "preserve_in_english": false
@@ -2917,7 +2918,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "kari kari is a reduplicated conjunctive participle indicating repeated creation. vēkhai is 3rd person singular present. kītā āpaṇā is a nominalized past participle phrase acting as direct object. vaḍiāī is feminine singular governed by genitive dī."
+    "grammarNote": "kari kari is a reduplicated conjunctive participle indicating repeated creation. vekhai is 3rd person singular present. kītā āpaṇā is a nominalized past participle phrase acting as direct object. vaḍiāī is feminine singular governed by genitive dī."
   },
   "jo-tis-bhavai-soi": {
     "source": "ਜੋ ਤਿਸੁ ਭਾਵੈ ਸੋਈ ਕਰਸੀ ਹੁਕਮੁ ਨ ਕਰਣਾ ਜਾਈ ॥",
@@ -2978,11 +2979,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jō tisu bhāvai sōī karasī hukamu na karaṇā jāī ॥",
+    "roman": "jo tisu bhāvai soī karasī hukamu na karaṇā jāī ॥",
     "english": "{0:Whatever }{2:pleases }{1:Him, }{3:that very thing }{4:He does; }{6:no }{5:command }{7,8:can be given to Him.}",
     "words": [
       {
-        "roman": "jō",
+        "roman": "jo",
         "gloss": "whatever",
         "concept_key": "",
         "preserve_in_english": false
@@ -3000,7 +3001,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sōī",
+        "roman": "soī",
         "gloss": "that very thing",
         "concept_key": "",
         "preserve_in_english": false
@@ -3037,7 +3038,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "jō ... sōī is a relative-correlative structure. karasī is 3rd person singular future/habitual. karaṇā jāī is a passive potential construction with verbal noun karaṇā and auxiliary jāī."
+    "grammarNote": "jo ... soī is a relative-correlative structure. karasī is 3rd person singular future/habitual. karaṇā jāī is a passive potential construction with verbal noun karaṇā and auxiliary jāī."
   },
   "so-patishah-shaha": {
     "source": "ਸੋ ਪਾਤਿਸਾਹੁ ਸਾਹਾ ਪਾਤਿਸਾਹਿਬੁ ਨਾਨਕ ਰਹਣੁ ਰਜਾਈ ॥",
@@ -3086,11 +3087,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sō pātisāhu sāhā pātisāhibu nānak rahaṇu rajāī ॥",
-    "english": "{0:He is }{1:the Emperor, }{3:the Sovereign }{2:over kings; }{4:O Nanak, }{5:to abide }{6:in His will.}",
+    "roman": "so pātisāhu sāhā pātisāhibu nānak rahaṇu rajāī ॥",
+    "english": "{0:He is }{1:the Emperor, }{3:the Sovereign }{2:over kings; }{4:O Nānak, }{5:abide }{6:in His will.}",
     "words": [
       {
-        "roman": "sō",
+        "roman": "so",
         "gloss": "He",
         "concept_key": "",
         "preserve_in_english": false
@@ -3115,13 +3116,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānak",
-        "gloss": "O Nanak",
+        "gloss": "O Nānak",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rahaṇu",
-        "gloss": "dwelling; abiding; living",
+        "gloss": "to dwell; to abide (here, an exhortation to live)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3133,7 +3134,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Here sō functions as a 3rd person singular nominative pronoun (contrasting with its demonstrative adjective use in line 1). pātisāhu and pātisāhibu are masculine nominatives; sāhā is genitive plural. nānak is vocative. rahaṇu is a verbal noun functioning as subject/predicate with locative rajāī."
+    "grammarNote": "so refers to the divine sovereign; sāhā is of kings. rahaṇu is a verbal noun, dwelling or living. With the address nānak and rajāī, in His will, it carries the practical exhortation to abide in the sovereign will. The English supplies the natural imperative rather than leaving a dangling infinitive."
   },
   "nanak-rahan-rajai-1": {
     "source": "ਨਾਨਕ ਰਹਣੁ ਰਜਾਈ ॥",
@@ -3159,17 +3160,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak rahaṇu rajāī ॥",
-    "english": "{0:O Nanak, }{1:to abide }{2:in His will.}",
+    "english": "{0:O Nānak, }{1:abide }{2:in His will.}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "O Nanak",
+        "gloss": "O Nānak",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rahaṇu",
-        "gloss": "dwelling; abiding; living",
+        "gloss": "to dwell; to abide (here, an exhortation to live)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3181,7 +3182,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "nānak is vocative singular. rahaṇu is a verbal noun taking locative rajāī."
+    "grammarNote": "rahaṇu is a verbal noun, dwelling or living. With the address nānak and rajāī, in His will, it carries the practical exhortation to abide in the sovereign will. The English supplies the natural imperative rather than leaving a dangling infinitive."
   },
   "so-patishah-shaha-rep": {
     "source": "ਸੋ ਪਾਤਿਸਾਹੁ ਸਾਹਾ ਪਾਤਿਸਾਹਿਬੁ",
@@ -3212,11 +3213,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sō pātisāhu sāhā pātisāhibu",
+    "roman": "so pātisāhu sāhā pātisāhibu",
     "english": "{0:He is }{1:the Emperor, }{3:the Sovereign }{2:over kings.}",
     "words": [
       {
-        "roman": "sō",
+        "roman": "so",
         "gloss": "He",
         "concept_key": "",
         "preserve_in_english": false
@@ -3267,17 +3268,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak rahaṇu rajāī ॥",
-    "english": "{0:O Nanak, }{1:to abide }{2:in His will.}",
+    "english": "{0:O Nānak, }{1:abide }{2:in His will.}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "O Nanak",
+        "gloss": "O Nānak",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rahaṇu",
-        "gloss": "dwelling; abiding; living",
+        "gloss": "to dwell; to abide (here, an exhortation to live)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3289,7 +3290,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Identical structure to line 38."
+    "grammarNote": "rahaṇu is a verbal noun, dwelling or living. With the address nānak and rajāī, in His will, it carries the practical exhortation to abide in the sovereign will. The English supplies the natural imperative rather than leaving a dangling infinitive."
   },
   "nanak-rahan-rajai-3": {
     "source": "ਨਾਨਕ ਰਹਣੁ ਰਜਾਈ ॥",
@@ -3315,17 +3316,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak rahaṇu rajāī ॥",
-    "english": "{0:O Nanak, }{1:to abide }{2:in His will.}",
+    "english": "{0:O Nānak, }{1:abide }{2:in His will.}",
     "words": [
       {
         "roman": "nānak",
-        "gloss": "O Nanak",
+        "gloss": "O Nānak",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rahaṇu",
-        "gloss": "dwelling; abiding; living",
+        "gloss": "to dwell; to abide (here, an exhortation to live)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3337,7 +3338,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Identical structure to line 38; closing cadence."
+    "grammarNote": "rahaṇu is a verbal noun, dwelling or living. With the address nānak and rajāī, in His will, it carries the practical exhortation to abide in the sovereign will. The English supplies the natural imperative rather than leaving a dangling infinitive."
   }
 };
 

@@ -11,14 +11,39 @@ class GlossPolicyTests(unittest.TestCase):
         self.assertEqual(gloss_policy.fictional_coinages("adamantine claws"), [])
 
     def test_preserved_concept_explains_without_repeating_itself(self) -> None:
-        self.assertEqual(
-            gloss_policy.meaning_only_gloss("buddhi", "buddhi (intellect, faculty of discernment)", "buddhi"),
-            "intellect; faculty of discernment",
-        )
+        for concept_key in ("buddhi", ""):
+            with self.subTest(concept_key=concept_key):
+                self.assertEqual(
+                    gloss_policy.meaning_only_gloss("buddhi", "buddhi (intellect, faculty of discernment)", concept_key),
+                    "intellect; faculty of discernment",
+                )
 
     def test_devotional_title_explains_without_repeating_itself(self) -> None:
         self.assertEqual(gloss_policy.meaning_only_gloss("guru", "Guru / spiritual teacher"), "spiritual teacher")
-        self.assertEqual(gloss_policy.meaning_only_gloss("Bābā", "Baba, Father, Master"), "father; revered master")
+        self.assertEqual(gloss_policy.meaning_only_gloss("Bābā", "Baba, Father, Master"), "Father, Master")
+
+    def test_reviewed_name_context_survives_word_cleaning(self) -> None:
+        for roman, gloss, expected in (
+            ("Nānak", "Nānak, the Gurūs’ shared poetic signature; here Gurū Arjan",
+             "the Gurūs’ shared poetic signature; here Gurū Arjan"),
+            ("Hari", "Hari, the Divine", "the Divine"),
+            ("UnresolvedName", "UnresolvedName (the singer's companion)", "the singer's companion"),
+        ):
+            with self.subTest(roman=roman):
+                original = {"roman": roman, "gloss": gloss, "preserve_in_english": False}
+                cleaned = gloss_policy.clean_word(original)
+                self.assertEqual(cleaned, {**original, "gloss": expected})
+                self.assertEqual(original["gloss"], gloss)
+
+    def test_placeholder_tail_is_not_a_contextual_explanation(self) -> None:
+        with self.assertRaisesRegex(ValueError, "unresolved self-referential gloss"):
+            gloss_policy.meaning_only_gloss("UnresolvedName", "UnresolvedName (proper name)")
+
+    def test_curated_mainaka_identity_remains_authoritative(self) -> None:
+        self.assertEqual(
+            gloss_policy.meaning_only_gloss("Maināka", "Mainaka (golden mountain)"),
+            "the mountain who rises from the sea to offer Hanumān rest",
+        )
 
     def test_existing_meaning_first_gloss_is_preserved(self) -> None:
         self.assertEqual(gloss_policy.meaning_only_gloss("māyā", "worldly appearance and attachment"),

@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Gur Satgur Ka Jo Sikh Akhaye",
+  "title": "Gur Satigur Kā Jo Sikhu Akhāe",
   "subtitle": "",
   "credit": "Gurū Rām Dās · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Sikhi",
     "Sikhī",
     "Guru Granth Sahib",
-    "Gurū Rām Dās"
+    "Gurū Rām Dās",
+    "Gur Satgur Ka Jo Sikh Akhaye"
   ],
   "audioSources": [
     {
@@ -91,18 +92,18 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "gur satigur kā jō sikhu akhāē",
-    "english": "{3:One who }{5:calls oneself }{4:a disciple }{0,2:of the Guru, }{1:the True Guru,}",
+    "roman": "gur satigur kā jo sikhu akhāe",
+    "english": "{3:One who }{5:is called }{4:a disciple }{2:of }{0:the Gurū, }{1:the true Gurū,}",
     "words": [
       {
         "roman": "gur",
-        "gloss": "of the Guru; spiritual guide",
+        "gloss": "the Gurū; spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "satigur",
-        "gloss": "the true Guru; true spiritual teacher",
+        "gloss": "the true Gurū",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -113,26 +114,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jō",
+        "roman": "jo",
         "gloss": "whoever; who",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sikhu",
-        "gloss": "disciple; student; seeker",
+        "gloss": "disciple",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "akhāē",
-        "gloss": "calls oneself; claims to be",
+        "roman": "akhāe",
+        "gloss": "is called; is known as",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Relative clause structure with masculine singular nominative marker -u on sikhu; gur satigur kā functions as a genitive modifier phrase."
+    "grammarNote": "Jo introduces the relative clause and sikhu names the disciple. Akhāe means is called or known as; it need not express a self-made claim. Gur satigur kā forms the genitive phrase modifying sikhu. The corresponding su in the next line resumes this person."
   },
   "refrain-2": {
     "source": "ਸੁ ਭਲਕੇ ਉਠਿ ਹਰਿ ਨਾਮੁ ਧਿਆਵੈ",
@@ -175,7 +176,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "su bhalakē uṭhi hari nāmu dhiāvai",
+    "roman": "su bhalake uṭhi hari nāmu dhiāvai",
     "english": "{0:that one, }{2:rising }{1:early in the morning, }{5:meditates on }{4:the Name }{3:of Hari.}",
     "words": [
       {
@@ -185,7 +186,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhalakē",
+        "roman": "bhalake",
         "gloss": "early in the morning; at daybreak",
         "concept_key": "",
         "preserve_in_english": false
@@ -247,7 +248,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "udamu karē bhalakē parabhātī",
+    "roman": "udamu kare bhalake parabhātī",
     "english": "{1:Makes }{0:effort }{2:early in the morning, }{3:at daybreak,}",
     "words": [
       {
@@ -257,13 +258,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karē",
+        "roman": "kare",
         "gloss": "makes; puts forth",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhalakē",
+        "roman": "bhalake",
         "gloss": "early in the morning; at dawn",
         "concept_key": "",
         "preserve_in_english": false
@@ -313,7 +314,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "isnānu karē amrit sari nāvai",
+    "roman": "isnānu kare amrit sari nāvai",
     "english": "{1:takes }{0:a cleansing bath }{4:and bathes }{3:in the pool }{2:of nectar.}",
     "words": [
       {
@@ -323,7 +324,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karē",
+        "roman": "kare",
         "gloss": "performs; takes",
         "concept_key": "",
         "preserve_in_english": false
@@ -391,11 +392,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "upadēsi gurū hari hari japu jāpai",
+    "roman": "upadesi gurū hari hari japu jāpai",
     "english": "{0:Through the instruction }{1:of the Guru, }{5:chants }{4:the recitation }{2:of Hari, }{3:Hari,}",
     "words": [
       {
-        "roman": "upadēsi",
+        "roman": "upadesi",
         "gloss": "through the teaching; by the instruction",
         "concept_key": "",
         "preserve_in_english": false
@@ -475,7 +476,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sabhi kilavikh pāp dōkh lahi jāvai",
+    "roman": "sabhi kilavikh pāp dokh lahi jāvai",
     "english": "{0:all }{1:sins, }{2:misdeeds, }{3:and faults }{4,5:are washed away.}",
     "words": [
       {
@@ -497,7 +498,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dōkh",
+        "roman": "dokh",
         "gloss": "faults; blemishes; defects",
         "concept_key": "",
         "preserve_in_english": false
@@ -709,11 +710,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jō sāsi girāsi dhiāē mērā hari hari",
+    "roman": "jo sāsi girāsi dhiāe merā hari hari",
     "english": "{0:One who, }{1:with each breath }{2:and morsel, }{3:meditates on }{4:my }{5:Lord Hari, }{6:Hari,}",
     "words": [
       {
-        "roman": "jō",
+        "roman": "jo",
         "gloss": "whoever; who",
         "concept_key": "",
         "preserve_in_english": false
@@ -731,26 +732,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dhiāē",
+        "roman": "dhiāe",
         "gloss": "meditates upon; remembers",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mērā",
+        "roman": "merā",
         "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "the Divine",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "the Divine",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -793,11 +794,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sō gurasikhu gurū mani bhāvai",
+    "roman": "so gurasikhu gurū mani bhāvai",
     "english": "{0:that }{1:disciple of the Guru }{4:is pleasing }{2:to the Guru's }{3:heart.}",
     "words": [
       {
-        "roman": "sō",
+        "roman": "so",
         "gloss": "that; such a",
         "concept_key": "",
         "preserve_in_english": false
@@ -871,7 +872,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jis nō daiālu hōvai mērā suāmī",
+    "roman": "jis no daiālu hovai merā suāmī",
     "english": "{1:Unto }{0:whom }{4:my }{5:Master }{3:becomes }{2:merciful,}",
     "words": [
       {
@@ -881,7 +882,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nō",
+        "roman": "no",
         "gloss": "unto; to; towards",
         "concept_key": "",
         "preserve_in_english": false
@@ -893,13 +894,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hōvai",
+        "roman": "hovai",
         "gloss": "becomes; is",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mērā",
+        "roman": "merā",
         "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
@@ -949,7 +950,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "tisu gurasikh gurū upadēsu suṇāvai",
+    "roman": "tisu gurasikh gurū upadesu suṇāvai",
     "english": "{0:to that }{1:disciple of the Guru, }{2:the Guru }{4:imparts }{3:the instruction.}",
     "words": [
       {
@@ -971,7 +972,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "upadēsu",
+        "roman": "upadesu",
         "gloss": "spiritual instruction; teaching",
         "concept_key": "",
         "preserve_in_english": false
@@ -1034,7 +1035,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "janu nānaku dhūṛi maṅgai tisu gurasikh kī",
-    "english": "{0:Servant }{1:Nanak }{3:begs for }{2:the dust }{6:of }{4:that }{5:disciple of the Guru,}",
+    "english": "{0:Servant }{1:Nānak }{3:begs for }{2:the dust }{6:of }{4:that }{5:disciple of the Guru,}",
     "words": [
       {
         "roman": "janu",
@@ -1044,7 +1045,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānaku",
-        "gloss": "Nanak; Guru Nanak (signature of the poet-Guru)",
+        "gloss": "Nānak, the poetic signature shared by the Sikh Gurūs",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1123,11 +1124,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jō āpi japai avaraha nāmu japਾਵai",
+    "roman": "jo āpi japai avaraha nāmu japāvai",
     "english": "{0:who }{1:personally }{2:chants }{5:and inspires }{3:others }{5:to chant }{4:the Name.}",
     "words": [
       {
-        "roman": "jō",
+        "roman": "jo",
         "gloss": "whoever; who",
         "concept_key": "",
         "preserve_in_english": false
@@ -1157,8 +1158,8 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "japਾਵai",
-        "gloss": "inspires to chant; causes to meditate upon",
+        "roman": "japāvai",
+        "gloss": "causes to chant; leads others to recite",
         "concept_key": "",
         "preserve_in_english": false
       }
