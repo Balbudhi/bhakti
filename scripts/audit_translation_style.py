@@ -120,7 +120,11 @@ NEARBY CONTEXT (do not return these IDs unless they are also targets):
 Return strict JSON only."""
 
 
-def review_max_completion_tokens(targets: list[dict[str, Any]]) -> int:
+def review_max_completion_tokens(targets: list[dict[str, Any]], *, model: str = "") -> int:
+    # Together GPT-OSS counts internal reasoning against max_tokens. Small
+    # lexical batches exhausted 4096–5376 tokens before emitting any JSON.
+    if gemini.provider_name() == "together" and model in {"openai/gpt-oss-120b", "openai/gpt-oss-20b"}:
+        return 16384
     return min(16384, max(4096, len(targets) * 384))
 
 
@@ -171,7 +175,7 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
         response = gemini.call(
             options.model, gemini.key(), prompt(slug, targets, context), audio=None, timeout=options.timeout,
             response_schema=response_schema(), schema_name="bhakti_translation_style_audit",
-            reasoning_effort="high", max_completion_tokens=review_max_completion_tokens(targets),
+            reasoning_effort="high", max_completion_tokens=review_max_completion_tokens(targets, model=options.model),
         )
         errors = validate(targets, response["packet"].get("reviews", []))
         result = {"fingerprint": fingerprint, "target_ids": [target["id"] for target in targets],

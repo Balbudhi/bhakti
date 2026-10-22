@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Create a complete, reviewable song packet with Gemini Flash.
+"""Provider client and legacy complete-song packet processing.
+
+Together is the default text provider; audio requires a separately qualified
+route. The historical filename remains for existing script imports.
 
 The pipeline deliberately uses three different tasks, not duplicate generic
 passes: full-song transcription, lyric-aware full-song alignment, then
@@ -26,18 +29,22 @@ from typing import Any
 import subprocess
 
 
-MODEL = "google/gemini-3.7-flash"
+TOGETHER_MODEL = "openai/gpt-oss-120b"
+GEMINI_MODEL = "google/gemini-3.7-flash"
+MODEL = os.environ.get("BHAKTI_MODEL") or (TOGETHER_MODEL if os.environ.get("BHAKTI_GEMINI_PROVIDER", "together").strip().casefold() == "together" else GEMINI_MODEL)
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 GOOGLE_API_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+TOGETHER_API_URL = "https://api.together.ai/v1/chat/completions"
 BATCH_API_URL = "https://openrouter.ai/api/beta/batches"
 AUTH_KEY_URL = "https://openrouter.ai/api/v1/auth/key"
 CREDITS_URL = "https://openrouter.ai/api/v1/credits"
-# Keys are never stored in the repository. Set OPENROUTER_API_KEY / GEMINI_API_KEY,
-# or point OPENROUTER_API_KEY_FILE / GEMINI_API_KEY_FILE at an owner-only file.
+# Keys are never stored in the repository. Set the selected provider's
+# API_KEY variable or API_KEY_FILE reference to an owner-only file.
 KEY_DIR = Path(os.environ.get("BHAKTI_KEY_DIR") or (Path.home() / ".config" / "bhakti")).expanduser()
 DEFAULT_KEY = KEY_DIR / "openrouter.key"
 DEFAULT_GOOGLE_KEY = KEY_DIR / "gemini.key"
-API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "4")))
+DEFAULT_TOGETHER_KEY = KEY_DIR / "together.key"
+API_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_API_MAX_CONCURRENCY", "3")))
 BATCH_MAX_CONCURRENCY = max(1, int(os.environ.get("BHAKTI_BATCH_MAX_CONCURRENCY", "32")))
 API_MIN_START_INTERVAL = max(0.0, float(os.environ.get("BHAKTI_API_MIN_START_INTERVAL", "0.35")))
 _API_SLOTS = threading.BoundedSemaphore(API_MAX_CONCURRENCY)
@@ -66,10 +73,14 @@ def args() -> argparse.Namespace:
 
 
 def provider_name() -> str:
-    value = os.environ.get("BHAKTI_GEMINI_PROVIDER", "openrouter").strip().casefold()
-    if value not in {"openrouter", "google"}:
-        raise RuntimeError("BHAKTI_GEMINI_PROVIDER must be 'openrouter' or 'google'")
+    value = os.environ.get("BHAKTI_GEMINI_PROVIDER", "together").strip().casefold()
+    if value not in {"together", "openrouter", "google"}:
+        raise RuntimeError("BHAKTI_GEMINI_PROVIDER must be 'together', 'openrouter', or 'google'")
     return value
+
+
+def default_model() -> str:
+    return os.environ.get("BHAKTI_MODEL") or (TOGETHER_MODEL if provider_name() == "together" else GEMINI_MODEL)
 
 
 def _secure_key(environment: str, file_environment: str, default_path: Path, label: str) -> str:
@@ -77,6 +88,8 @@ def _secure_key(environment: str, file_environment: str, default_path: Path, lab
     if value:
         return value
     path = Path(os.environ.get(file_environment, default_path)).expanduser()
+    if not path.is_file():
+        raise RuntimeError(f"{label} credential is missing; set {environment} or {file_environment} to an owner-only key file")
     mode = path.stat().st_mode & 0o777
     if mode & 0o077:
         raise RuntimeError(f"refusing insecure key file: {path}")
@@ -87,6 +100,8 @@ def _secure_key(environment: str, file_environment: str, default_path: Path, lab
 
 
 def key() -> str:
+    if provider_name() == "together":
+        return _secure_key("TOGETHER_API_KEY", "TOGETHER_API_KEY_FILE", DEFAULT_TOGETHER_KEY, "Together")
     if provider_name() == "google":
         return _secure_key("GEMINI_API_KEY", "GEMINI_API_KEY_FILE", DEFAULT_GOOGLE_KEY, "Gemini")
     return _secure_key("OPENROUTER_API_KEY", "OPENROUTER_API_KEY_FILE", DEFAULT_KEY, "OpenRouter")
@@ -100,7 +115,8 @@ def provider_model(model: str, provider: str) -> str:
 
 
 def request_headers(provider: str, api_key: str) -> dict[str, str]:
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json",
+               "User-Agent": "Bhakti-song-processing/1.0"}
     if provider == "openrouter":
         headers.update({"HTTP-Referer": "https://bhakti.eeshan.xyz/", "X-Title": "Bhakti song processing"})
     return headers
@@ -267,7 +283,11 @@ def call(
     max_attempts: int = 6,
 ) -> dict[str, Any]:
     provider = provider_name()
+    if provider == "together" and audio is not None:
+        raise RuntimeError("Together text chat cannot perform the required audio-aware audit or lyric-start verification. Use a separately validated Together speech-evidence workflow; audio is never replaced by text silently.")
     requested_batch = model.endswith(":batch")
+    if provider == "together" and requested_batch:
+        raise RuntimeError("Together Batch is not enabled in this client; omit --economy")
     # OpenRouter Batch rejects every multimodal content part. Economy mode is
     # therefore hybrid: audio-dependent stages use the synchronous base model,
     # while later text-only gloss/translation stages retain Batch pricing.
@@ -297,6 +317,12 @@ def call(
             payload["provider"]["require_parameters"] = True
         if reasoning_effort:
             payload["reasoning"] = {"effort": reasoning_effort}
+    elif provider == "together" and reasoning_effort:
+        # Reasoning controls belong to the selected model, not the provider.
+        if effective_model in {"openai/gpt-oss-120b", "openai/gpt-oss-20b"}:
+            payload["reasoning_effort"] = reasoning_effort
+        elif effective_model in {"Qwen/Qwen3.6-Plus", "Qwen/Qwen3.5-9B"}:
+            payload["reasoning"] = {"enabled": True}
     elif reasoning_effort:
         payload["reasoning_effort"] = reasoning_effort
     if max_completion_tokens:
@@ -308,7 +334,7 @@ def call(
     else:
         result = None
     request = urllib.request.Request(
-        GOOGLE_API_URL if provider == "google" else API_URL,
+        {"google": GOOGLE_API_URL, "together": TOGETHER_API_URL, "openrouter": API_URL}[provider],
         data=json.dumps(payload).encode("utf-8"),
         headers=request_headers(provider, api_key),
         method="POST",
@@ -346,8 +372,8 @@ def call(
         parsed = parse_json_packet(text)
     except (KeyError, IndexError, TypeError, ValueError, json.JSONDecodeError) as exc:
         preview = str(locals().get("text", ""))[:800]
-        raise RuntimeError(f"Gemini did not return the required JSON packet; content preview: {preview!r}") from exc
-    return {"packet": parsed, "usage": result.get("usage", {}), "resolved_model": result.get("model", effective_model)}
+        raise RuntimeError(f"{provider} model did not return the required JSON packet; content preview: {preview!r}") from exc
+    return {"packet": parsed, "usage": result.get("usage", {}), "resolved_model": result.get("model", effective_model), "provider": provider}
 
 
 def source_metadata(song_dir: Path) -> dict[str, Any]:

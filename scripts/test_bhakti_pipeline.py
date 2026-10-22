@@ -537,9 +537,21 @@ class PipelineTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "challenge solver missing"):
                 pipeline.media_metadata("https://example.com/song")
 
+    def test_together_intake_requires_audio_qualification_but_generation_does_not(self) -> None:
+        options = type("Options", (), {"generate_only": False, "timeout": 300.0})()
+        with mock.patch.object(pipeline.gemini, "provider_name", return_value="together"), \
+             mock.patch.object(pipeline.gemini, "key") as key, \
+             mock.patch.object(pipeline.gemini, "openrouter_account_status") as legacy_probe:
+            self.assertIn("audio qualification failed", pipeline.preflight_blocked_reason(options))
+            options.generate_only = True
+            self.assertIsNone(pipeline.preflight_blocked_reason(options))
+        key.assert_not_called()
+        legacy_probe.assert_not_called()
+
     def test_preflight_blocks_when_shared_openrouter_credits_are_exhausted(self) -> None:
         options = type("Options", (), {"generate_only": False, "timeout": 300.0})()
-        with mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
+        with mock.patch.object(pipeline.gemini, "provider_name", return_value="openrouter"), \
+             mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
              mock.patch.object(
                  pipeline.gemini,
                  "openrouter_account_status",
@@ -550,7 +562,8 @@ class PipelineTests(unittest.TestCase):
 
     def test_preflight_probe_failure_does_not_block_processing(self) -> None:
         options = type("Options", (), {"generate_only": False, "timeout": 300.0})()
-        with mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
+        with mock.patch.object(pipeline.gemini, "provider_name", return_value="openrouter"), \
+             mock.patch.object(pipeline.gemini, "key", return_value="unused"), \
              mock.patch.object(pipeline.gemini, "openrouter_account_status", side_effect=OSError("offline")):
             self.assertIsNone(pipeline.preflight_blocked_reason(options))
 

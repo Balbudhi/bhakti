@@ -16,12 +16,31 @@ review. If it is not Sanskrit, the normal pipeline continues unchanged.
 
 ## Models and cost policy
 
-- **Authoritative audio, timing, translation, and reconciliation:**
-  `google/gemini-3.7-flash` through OpenRouter. Pin this explicit model for a
-  review packet so a song can be reproduced later.
-- **Optional preflight only:** `google/gemini-3.1-flash-lite`. It may inspect
-  metadata or draft a low-risk first pass, but it never alone determines a
-  public lyric, translation, sequence, or timestamp.
+- **Current provider:** Together AI, selected by the owner on 2026-10-22.
+  Text-only review uses `openai/gpt-oss-120b`. The hosted model accepts the
+  existing JSON schemas and reasoning controls. A short reconstruction pilot
+  produced incorrect glosses; its output is not qualified for unattended
+  Gurbāṇī reconstruction. Review suggestions require source adjudication.
+- **Audio qualification:** Together Whisper successfully accepted six sung
+  Punjabi clips but omitted phrases and corrupted repetitions. It is not
+  approved for full transcription/audit/timing. Full intake fails early;
+  [the qualification report](TOGETHER_AUDIO_QUALIFICATION.md) records the evidence.
+  Never present text-only reconciliation as an independent audio audit.
+- **Credentials:** `TOGETHER_API_KEY`, `TOGETHER_API_KEY_FILE`, or owner-only
+  `~/.config/bhakti/together.key`. `BHAKTI_GEMINI_PROVIDER` is retained as the
+  backward-compatible selector name and now defaults to `together`.
+  `BHAKTI_MODEL` or `--model` selects a supported model explicitly.
+- **Current supported operation:** text-only review of existing readers:
+  `python3 scripts/audit_translation_style.py SONG_SLUG --workers 2`.
+  Proposed changes still require editorial adjudication; the command never
+  overwrites public translations. `--generate-only` can regenerate reviewed
+  pipeline artifacts. Together Batch/economy is not implemented in this client.
+- **Historical audio route:** `google/gemini-3.7-flash` through OpenRouter.
+  Historical cost/Batch/direct-Google notes below describe that former route,
+  not the current default. Do not return to it without an owner instruction.
+
+The following audio processing requirements still govern any replacement:
+
 - For recordings up to 15 minutes, run one full-song transcription and one
   full-song audit that receives the first transcript. For longer recordings,
   FFmpeg selects low-energy boundaries near five-minute targets; 15-second
@@ -213,9 +232,9 @@ are recorded in `docs/KAKAD_ARTI_SOURCES.md`.
 
 ## Translation contract
 
-1. Gemini first transcribes source-language audio and identifies language,
+1. An audio-capable model first transcribes source-language audio and identifies language,
    script, and all audible lyric instances.
-2. Gemini first creates a complete word-level gloss map and grammar note for
+2. The text model first creates a complete word-level gloss map and grammar note for
    each verified line. The same record must identify the grammatical agent,
    action/state, patient/complement, modifiers, negation/modality, literal
    image and agency, idiom, and cross-line relation. Only then does it produce
@@ -233,12 +252,12 @@ are recorded in `docs/KAKAD_ARTI_SOURCES.md`.
 4. The final song page may publish only the reviewed result. The ignored review
    packet preserves source metadata, raw passes, reconciliation findings,
    suggested trims, translation comparison, and model/cost record.
-5. Without a human baseline, Gemini exposes materially different renderings
+5. Without a human baseline, the model exposes materially different renderings
    when they change agency, metaphor, ambiguity, or poetic force. Such a line
    blocks publication until reviewed; trivial synonyms do not. The fidelity
    record must affirm that agency and imagery are preserved, all meaning is
    accounted for, and there are no unsupported additions.
-6. A separate adversarial Gemini call reviews the completed draft. It cannot
+6. A separate adversarial model call reviews the completed draft. It cannot
    rewrite; it independently checks agency, imagery, completeness, additions,
    and unresolved poetic choices. Its failure or review recommendation blocks
    publication, so the drafting model never certifies itself.
@@ -331,8 +350,8 @@ or touches timing/audio data.
 
 ## Automated intake
 
-Run from this repository. This is the production command for both single songs
-and batches; it runs independent songs concurrently while serializing the final
+Full intake currently stops at Together audio preflight. After qualification,
+run from this repository for both single songs and batches; it runs independent songs concurrently while serializing the final
 shared catalogue write:
 
 ```sh
@@ -344,9 +363,12 @@ python3 scripts/bhakti_pipeline.py --workers 7 --publish \
 # Or: {"songs":[{"slug":"…","source":"/absolute/audio.m4a","searchAliases":["ordinary spelling"], ...}]}
 python3 scripts/bhakti_pipeline.py --workers 7 --publish --batch intake.json
 
-# Same Gemini 3.7 Flash quality; sync audio + half-price Batch text stages.
-python3 scripts/bhakti_pipeline.py --workers 7 --economy --publish --batch intake.json
 ```
+
+### Historical OpenRouter economy mode
+
+These retained measurements describe the former provider, not the current
+Together route. `--economy` is rejected for Together.
 
 OpenRouter Batch is text-only and rejects audio, video, image, and file content
 parts ([official Batch limitations](https://openrouter.ai/docs/batch-quickstart#limitations)). Economy mode is therefore deliberately hybrid: transcription,
@@ -395,26 +417,23 @@ ignored `.transcription/`, and emits no song-page/catalogue output when a gate
 fails. It does not commit or push; after the normal visual checks, GitHub
 Actions deploys a path-scoped commit.
 
-For hosted intake on the public repository, use the `Intake Bhakti Songs`
-`workflow_dispatch` workflow on `main`. It accepts one URL per line and exposes
-an explicit mode selector: `economy` (the default) uses synchronous audio stages
-plus half-price OpenRouter Batch for text-only stages; `fast` keeps every stage
-synchronous when completion time matters more. It commits generated
-song pages with `GITHUB_TOKEN` and deploys Pages in the same workflow. A GitHub
-hosted job has a 5.5-hour ceiling even though OpenRouter permits a batch to take
-up to about 24 hours, so use smaller owner-dispatched groups for economy mode
-rather than one enormous hosted submission.
+The `Intake Bhakti Songs` owner-dispatched workflow now selects Together and
+synchronous processing. Its full-intake preflight currently fails because the
+audio route is unqualified, before audio download or model calls. URL resolution
+and source-metadata discovery may run before that preflight. When that route
+is ready, hosted use also requires a `TOGETHER_API_KEY` repository secret; the
+local credential configuration does not provision that secret. The workflow
+retains its 5.5-hour ceiling and generated-page deployment steps.
 
 The hosted control surface is GitHub itself; do not build a second login or a
 public submission form. The job runs only when `github.actor` equals the
 repository owner. It accepts at most 50 publicly downloadable HTTPS media URLs,
 rejects embedded credentials and any hostname resolving to local, private,
 reserved, or otherwise non-global addresses, restricts workers to 1–7, has no
-public event or webhook trigger, and reads the OpenRouter key from an encrypted
+public event or webhook trigger, and reads the Together key from an encrypted
 repository secret. Public `yt-dlp`-supported media URLs share the same path. A public visitor may view the repository but
 cannot dispatch a billable run. To use it, open **Actions → Intake Bhakti Songs
-→ Run workflow**, paste one link per line, choose the worker count and processing
-mode, and run it.
+→ Run workflow**, paste one link per line, choose the worker count, and run it once audio qualification is complete.
 When a source description is unstructured but independently establishes roles,
 record a reviewed source-ID override in `data/source_credits.json`; the one-link
 hosted intake then receives the verified title, poet, singer, music, language,
@@ -436,9 +455,10 @@ separately trusted downloader with suitable egress.
 
 ### Direct Google provider
 
-Provider choice changes transport and billing only; it must never change the
-prompts, schemas, audio, reasoning effort, retries, uncertainty handling, or
-publication gates. OpenRouter remains the default:
+The following is the historical Gemini transport comparison. Those two
+transports preserved the same model and audio capabilities. Together requires
+a separate validated speech-evidence implementation and is now the default;
+these legacy examples are not an automatic fallback:
 
 ```sh
 BHAKTI_GEMINI_PROVIDER=openrouter python3 scripts/bhakti_pipeline.py --publish --url URL
@@ -466,8 +486,8 @@ A live probe on a 16-second Hindi excerpt, using the same strict JSON schema on
 both transports, resolved to Gemini 3.7 Flash through OpenRouter and returned the
 exact expected source and Roman line. The direct Google transport was rejected
 before inference with `429 RESOURCE_EXHAUSTED`, which is a quota/billing state on
-the calling project rather than a model-quality result. OpenRouter therefore
-remains the pinned default for hosted intake. Before switching a deployment to the
+the calling project rather than a model-quality result. At that time OpenRouter
+was the pinned default for hosted intake; the owner has since selected Together. Before switching a deployment to the
 direct transport, confirm that its own key passes:
 
 ```sh
@@ -489,10 +509,10 @@ change the song timeline, and is bounded so the base64 request stays below the
 20 MB inline limit. Longer recordings are segmented before transport.
 
 Seven songs may progress concurrently without producing an uncontrolled API
-burst. A process-wide scheduler independently caps Gemini requests at three,
-starts them at least 350 ms apart, prefers OpenRouter's highest-throughput
-compatible provider, allows provider fallbacks for the same model, and honors
-the server's `Retry-After` header before bounded backoff. This keeps the Mac and
+burst. A process-wide scheduler independently caps provider requests at three,
+starts them at least 350 ms apart, and honors the server's `Retry-After` header
+before bounded backoff. OpenRouter routing preferences and same-model provider
+fallbacks apply only when that legacy provider is explicitly selected. This keeps the Mac and
 local stages busy while respecting upstream rather than using a blunt two-song
 limit.
 

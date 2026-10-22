@@ -14,13 +14,26 @@ generic provenance filler on a song page page.
 
 ## One-command production pipeline
 
-The API production model is `google/gemini-3.7-flash` through OpenRouter. It
-reads its credential from `OPENROUTER_API_KEY`, or from an owner-only key file
-named by `OPENROUTER_API_KEY_FILE` with mode `0600`. Never read, print, commit,
-or copy that key, and never write a key into a shell history or an argument. Production transcription and
-timing use only the OpenRouter/Gemini API; do not invoke Superwhisper or silently
-replace this path with a local or unrelated cloud model. Local ASR research is
-documentation/evaluation only.
+The owner has selected Together AI as the default provider. Text-only review uses
+`openai/gpt-oss-120b` with structured output and high reasoning. Its initial
+gloss-reconstruction pilot made substantive errors; source adjudication is
+required before any proposal changes public wording. Credentials come from
+`TOGETHER_API_KEY` or an owner-only `TOGETHER_API_KEY_FILE` (mode `0600`), defaulting to
+`~/.config/bhakti/together.key`. Never print, commit, copy or put a key in a
+shell argument or history. A secure file reference may be used without copying
+its contents.
+
+Together's Whisper audio route failed the sung-Punjabi qualification: whole
+phrases and repetitions were omitted. Full intake remains blocked until an
+adequate audio path is validated; see `docs/TOGETHER_AUDIO_QUALIFICATION.md`.
+Do not silently fall back to OpenRouter, Google, local ASR or Superwhisper.
+A text model must never be described as having listened to the recording.
+The existing completeness, first-syllable timing and translation gates remain
+in force. Explicit legacy provider support is retained for reproducibility.
+
+The full-intake command below becomes usable after audio qualification; it
+currently fails before audio download or model calls. Text-only review and `--generate-only`
+remain available without a new audio pass.
 
 For one or more local audio files or source URLs, use:
 
@@ -57,10 +70,10 @@ The pipeline preserves audio-only source input, then performs distinct stages:
 
 Song concurrency and API concurrency are separate. The default seven song
 workers keep local intake, FFmpeg, validation, and generation busy, while the
-shared OpenRouter scheduler permits at most three simultaneous outbound calls
-and staggers starts by 350 ms. It routes to the highest-throughput compatible
-provider, retains same-model provider fallbacks, honors `Retry-After`, and then
-uses bounded exponential backoff. Tune only with `BHAKTI_API_MAX_CONCURRENCY`,
+shared provider scheduler permits at most three simultaneous outbound calls
+and staggers starts by 350 ms. It honors `Retry-After` and uses bounded exponential backoff.
+OpenRouter-specific routing applies only when that legacy provider is explicitly
+selected; Together does not inherit those fields. Tune only with `BHAKTI_API_MAX_CONCURRENCY`,
 `BHAKTI_API_MIN_START_INTERVAL`, or `OPENROUTER_PROVIDER_SORT`; never solve a
 429 by globally serializing the whole batch.
 

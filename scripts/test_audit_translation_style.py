@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
 import audit_translation_style as style
 
@@ -20,6 +21,14 @@ class AuditTranslationStylePromptTests(unittest.TestCase):
         self.assertEqual(style.review_max_completion_tokens([{}]), 4096)
         self.assertEqual(style.review_max_completion_tokens([{}] * 20), 7680)
         self.assertEqual(style.review_max_completion_tokens([{}] * 80), 16384)
+
+    def test_together_gpt_oss_reserves_reasoning_and_final_output(self) -> None:
+        with mock.patch.object(style.gemini, 'provider_name', return_value='together'):
+            self.assertEqual(style.review_max_completion_tokens([{}], model='openai/gpt-oss-120b'), 16384)
+            self.assertEqual(style.review_max_completion_tokens([{}] * 20, model='openai/gpt-oss-20b'), 16384)
+            self.assertEqual(style.review_max_completion_tokens([{}], model='Qwen/Qwen3.5-9B'), 4096)
+        with mock.patch.object(style.gemini, 'provider_name', return_value='openrouter'):
+            self.assertEqual(style.review_max_completion_tokens([{}], model='openai/gpt-oss-120b'), 4096)
 
     def test_normalize_segments_repairs_em_dash_spacing(self) -> None:
         segments = [

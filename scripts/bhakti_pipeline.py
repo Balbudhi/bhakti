@@ -3248,7 +3248,16 @@ def reported_cost(*artifacts: Any) -> float | None:
 
 
 def preflight_blocked_reason(options: argparse.Namespace) -> str | None:
-    if options.generate_only or gemini.provider_name() != "openrouter":
+    if options.generate_only:
+        return None
+    if gemini.provider_name() == "together":
+        return (
+            "Together text processing is configured, but the sung-Punjabi audio "
+            "qualification failed coverage checks. Full intake remains blocked; "
+            "see docs/TOGETHER_AUDIO_QUALIFICATION.md. Text-only review can use "
+            "scripts/audit_translation_style.py; reviewed artifacts can use --generate-only."
+        )
+    if gemini.provider_name() != "openrouter":
         return None
     try:
         status = gemini.openrouter_account_status(gemini.key(), timeout=min(20.0, options.timeout))

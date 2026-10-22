@@ -63,6 +63,12 @@ recording, times it, glosses it, and translates it using a large language model,
 emits deterministic `data.js` and HTML. This is stated plainly on the site itself, in
 the library's "About these songs" panel.
 
+Together AI is the configured provider for text processing. The current audio
+qualification found omissions in sung Punjabi, so new full intake remains
+blocked rather than publishing incomplete transcriptions. See
+[the processing standard](docs/SONG_PROCESSING_STANDARD.md) and
+[audio qualification](docs/TOGETHER_AUDIO_QUALIFICATION.md).
+
 The stages are deliberately separated so that each one can be checked:
 
 1. Transcription of the complete recording.
