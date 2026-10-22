@@ -4994,7 +4994,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Tere nā̃ vic rah ke mast sadā, mā̃ तेरे nā̃ vic gānā e",
+    "roman": "Tere nā̃ vic rah ke mast sadā, mā̃ tere nā̃ vic gānā e",
     "english": "{3,4:Remaining }{5,6:ever ecstatic }{0,1,2:in Your Name, }{7:Mother, }{11,12:one must sing }{8,9,10:in Your Name.}",
     "words": [
       {
@@ -5046,7 +5046,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "तेरे",
+        "roman": "tere",
         "gloss": "Your",
         "concept_key": "",
         "preserve_in_english": false
@@ -5076,7 +5076,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Includes 'mā̃' in direct address and Devanagari script token 'तेरे' preserved verbatim as displayed."
+    "grammarNote": "Includes 'mā̃' in direct address."
   },
   "v4-l4": {
     "source": "इस दुनिया नू असां दिल तों भुला के, इस दिल विच माँ नू वसाना ए",
