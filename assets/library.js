@@ -31,6 +31,7 @@
     song.subtitle,
     song.credit,
     song.singer,
+    song.writer,
     ...(song.searchAliases || []),
     ...(song.languageTags || []),
     ...(song.subjectTags || []),
@@ -54,17 +55,25 @@
     return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
   };
 
-  const filterSongs = (songs, { languages = [], subjects = [], singers = [], query = "" } = {}) => {
+  // Split explicit joint credits only; retain each credited spelling as supplied.
+  const poetsFor = song => typeof song.writer === "string" ? song.writer
+    .split(/\s*(?:·|;|&|,|\band\b)\s*/iu)
+    .map(name => name.trim())
+    .filter(name => name && !/^(?:others?|other poets|traditional)$/i.test(name)) : [];
+
+  const filterSongs = (songs, { languages = [], subjects = [], poets = [], singers = [], query = "" } = {}) => {
     const selectedLanguages = new Set(languages);
     const selectedSubjects = new Set(subjects);
     const selectedSingers = new Set(singers);
+    const selectedPoets = new Set(poets);
     return songs.filter(song => {
       const matchesLanguage = !selectedLanguages.size
         || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
       const matchesSubject = !selectedSubjects.size
         || [...selectedSubjects].some(tag => song.subjectTags.includes(tag));
       const matchesSinger = !selectedSingers.size || selectedSingers.has(song.singer);
-      return matchesLanguage && matchesSubject && matchesSinger && matchesSearch(song, query);
+      const matchesPoet = !selectedPoets.size || poetsFor(song).some(poet => selectedPoets.has(poet));
+      return matchesLanguage && matchesSubject && matchesPoet && matchesSinger && matchesSearch(song, query);
     });
   };
 
@@ -201,9 +210,12 @@
     const selectedLanguages = new Set();
     const selectedSubjects = new Set();
     const selectedSingers = new Set();
+    const selectedPoets = new Set();
     const languages = [...new Set(songs.flatMap(song => song.languageTags || []).sort())];
     const subjects = [...new Set(songs.flatMap(song => song.subjectTags || []).sort())];
     const singers = [...new Set(songs.map(song => song.singer).filter(singer => typeof singer === "string" && singer.trim()))]
+      .sort((left, right) => sortKey(left).localeCompare(sortKey(right)));
+    const poets = [...new Set(songs.flatMap(poetsFor))]
       .sort((left, right) => sortKey(left).localeCompare(sortKey(right)));
     const orderedSongs = sortSongs(songs);
     const shuffleButton = root.querySelector("#shuffleVisible");
@@ -215,6 +227,7 @@
     const facets = [
       { kind: "subject", all: "all-subjects", label: "Subjects", tags: subjects, selected: selectedSubjects },
       { kind: "language", all: "all-languages", label: "Languages", tags: languages, selected: selectedLanguages },
+      { kind: "poet", all: "all-poets", label: "Poets", tags: poets, selected: selectedPoets },
       { kind: "singer", all: "all-singers", label: "Singers", tags: singers, selected: selectedSingers },
     ];
     // Keep the actual controls mounted: replacing a scrolled row moves another
@@ -228,6 +241,7 @@
         languages: selectedLanguages,
         subjects: selectedSubjects,
         singers: selectedSingers,
+        poets: selectedPoets,
         query,
       });
 

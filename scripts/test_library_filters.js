@@ -7,13 +7,13 @@ const vm = require('node:vm');
 const { test } = require('node:test');
 
 const songs = [
-  { slug: 'one', title: 'One', singer: 'Singer A', languageTags: ['Hindi'], subjectTags: ['Rāma'] },
-  { slug: 'two', title: 'Two', singer: 'Singer B', languageTags: ['Hindi'], subjectTags: ['Śiva'] },
-  { slug: 'three', title: 'Three', singer: 'Singer A', languageTags: ['Punjabi'], subjectTags: ['Śiva'] },
+  { slug: 'one', title: 'One', writer: 'Kabīr', singer: 'Singer A', languageTags: ['Hindi'], subjectTags: ['Rāma'] },
+  { slug: 'two', title: 'Two', writer: 'Tulsīdās', singer: 'Singer B', languageTags: ['Hindi'], subjectTags: ['Śiva'] },
+  { slug: 'three', title: 'Three', writer: 'Kabīr', singer: 'Singer A', languageTags: ['Punjabi'], subjectTags: ['Śiva'] },
   { slug: 'four', title: 'Four', writer: 'Singer A', credit: 'Singer A', languageTags: ['Hindi'], subjectTags: ['Śiva'] },
 ];
 
-function mount() {
+function mount(catalogue = songs) {
   const filters = { listeners: {}, rows: [], buttons: [],
     addEventListener(type, handler) { this.listeners[type] = handler; },
     querySelectorAll(selector) { assert.equal(selector, '.tag-filter'); return this.buttons; },
@@ -59,7 +59,7 @@ function mount() {
     querySelector: selector => ({ '#tagFilters': filters, '#songSearch': search, '#songList': list }[selector] || null),
     dispatchEvent(event) { this.events.push(event); },
     addEventListener(type, handler) { this.listeners[type] = handler; }};
-  const context = { window: { BHAKTI_SONGS: songs }, document: {}, CustomEvent: class { constructor(type, detail) { Object.assign(this, { type }, detail); } } };
+  const context = { window: { BHAKTI_SONGS: catalogue }, document: {}, CustomEvent: class { constructor(type, detail) { Object.assign(this, { type }, detail); } } };
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/library.js'), 'utf8'), context);
   const controller = context.window.BHAKTI_LIBRARY.mount(root);
   const button = (kind, tag) => filters.buttons.find(b => b.dataset.kind === kind && b.dataset.tag === tag);
@@ -84,10 +84,10 @@ test('scrolled filter activation and search preserve row/button identity and sel
   assert.equal(app.button('subject', 'Śiva'), pressed);
 });
 
-test('singer is third independent facet; OR within a row, AND across rows and search', () => {
+test('singer follows poet facet; OR within a row, AND across rows and search', () => {
   const app = mount();
-  assert.equal(app.filters.rows.length, 3);
-  assert.match(app.filters.rows[2].html, /data-kind="singer"/);
+  assert.equal(app.filters.rows.length, 4);
+  assert.match(app.filters.rows[3].html, /data-kind="singer"/);
   app.click('singer', 'Singer A');
   assert.deepEqual(visible(app), ['one', 'three']);
   app.click('subject', 'Śiva');
@@ -110,6 +110,60 @@ test('pure singer filter never treats writer/credit as singer, and empty resets'
   assert.equal(api.filterSongs(songs, { singers: [] }).length, 4);
   assert.equal(api.filterSongs(songs, { singers: ['Unknown'] }).length, 0);
   assert.equal(api.matchesSearch(songs[1], 'Singer B'), true);
+});
+
+test('poets sit above singers with independent OR choices and an All reset', () => {
+  const app = mount();
+  assert.match(app.filters.rows[2].html, /data-kind="poet"/);
+  assert.match(app.filters.rows[3].html, /data-kind="singer"/);
+  const row = app.filters.rows[2]; row.scrollLeft = 120;
+  const button = app.button('poet', 'Kabīr');
+  app.click('poet', 'Kabīr');
+  assert.deepEqual(visible(app), ['one', 'three']);
+  app.click('poet', 'Tulsīdās');
+  assert.deepEqual(visible(app), ['one', 'three', 'two']);
+  app.click('subject', 'Śiva');
+  app.click('singer', 'Singer A');
+  assert.deepEqual(visible(app), ['three']);
+  app.click('all-poets', 'All');
+  assert.equal(button.getAttribute('aria-pressed'), 'false');
+  assert.equal(app.button('all-poets', 'All').getAttribute('aria-pressed'), 'true');
+  assert.equal(app.button('singer', 'Singer A').getAttribute('aria-pressed'), 'true');
+  assert.deepEqual(visible(app), ['three']);
+  assert.equal(app.filters.rows[2], row);
+  assert.equal(row.scrollLeft, 120);
+  assert.equal(app.button('poet', 'Kabīr'), button);
+});
+
+test('poet choices use writer only and folded search includes poet names', () => {
+  const { api, button } = mount();
+  assert.deepEqual(Array.from(api.filterSongs(songs, { poets: ['Singer A'] }), s => s.slug), ['four']);
+  assert.equal(api.filterSongs(songs, { poets: [] }).length, 4);
+  assert.equal(api.filterSongs(songs, { poets: ['Unknown'] }).length, 0);
+  assert.equal(button('poet', 'Singer B'), undefined);
+  assert.equal(api.matchesSearch(songs[0], 'Kabir'), true);
+  assert.deepEqual(Array.from(api.filterSongs(songs, { poets: ['Kabīr'], languages: ['Hindi'], query: 'One' }), s => s.slug), ['one']);
+});
+
+test('named poets in composite credits share facets with solo poems', () => {
+  const writers = ['Kabīr', 'Gurū Arjan · Gurū Rām Dās · Kabīr', 'Kabīr and other poets',
+    'Kabīr, Nānak & others', 'Sant Tukaram; Sant Janabai', 'Kishore Gagare & Jayshree Medhi', 'Traditional', '  '];
+  const catalogue = writers.map((writer, index) => ({slug: String(index), title: String(index), writer,
+    languageTags: [], subjectTags: []}));
+  const app = mount(catalogue);
+  app.click('poet', 'Kabīr');
+  assert.deepEqual(visible(app), ['0', '1', '2', '3']);
+  assert.ok(app.button('poet', 'Gurū Arjan'));
+  assert.ok(app.button('poet', 'Gurū Rām Dās'));
+  assert.ok(app.button('poet', 'Nānak'));
+  assert.ok(app.button('poet', 'Sant Janabai'));
+  assert.ok(app.button('poet', 'Kishore Gagare'));
+  assert.ok(app.button('poet', 'Jayshree Medhi'));
+  for (const tag of ['others', 'other poets', 'Traditional', '', writers[1]]) {
+    assert.equal(app.button('poet', tag), undefined);
+  }
+  assert.equal(app.filters.buttons.filter(button => button.dataset.kind === 'poet' && button.dataset.tag === 'Kabīr').length, 1);
+  assert.deepEqual(catalogue.map(song => song.writer), writers);
 });
 
 test('playlist disclosure keeps one row open and choices restore focus without navigation', () => {
