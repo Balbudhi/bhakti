@@ -16,7 +16,11 @@ window.SONG_META = {
     "Gaṇeśa",
     "Śakti",
     "Kālī",
-    "Vaiṣṇo Devī"
+    "Vaiṣṇo Devī",
+    "Guru",
+    "Kṛṣṇa",
+    "Śiva",
+    "Hanumān"
   ],
   "searchAliases": [
     "Shirdi Sai",

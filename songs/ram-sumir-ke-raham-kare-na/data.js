@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Rama"

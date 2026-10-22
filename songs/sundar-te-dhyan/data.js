@@ -11,7 +11,9 @@ window.SONG_META = {
   "languages": [
     "Marathi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
   "searchAliases": [
     "Tukaram · Anuradha Paudwal",
     "Tukaram",

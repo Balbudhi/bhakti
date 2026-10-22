@@ -10,7 +10,8 @@ window.SONG_META = {
     "Braj"
   ],
   "subjectTags": [
-    "Śakti"
+    "Śakti",
+    "Śiva"
   ],
   "searchAliases": [
     "Maharaja Bhavani Brahmabhuvana Ki Rani",

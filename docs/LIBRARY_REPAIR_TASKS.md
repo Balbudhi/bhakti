@@ -104,7 +104,17 @@ combined marker/lyric tokens, and the new contract guard detects uncovered IAST
 letters. The 254-reader scan has no remaining uncovered-letter findings.
 Representative repaired wording and popups pass desktop and 390px checks.
 
-Next: finish the bounded production transport and run the four prepared additions;
+The four additions are running from strict committed code with a $12 shared
+reservation ledger, three simultaneous API calls and a 600-second request
+deadline. Six new edge-trim requests completed; drafts are not public releases.
+
+A whole-library tag review supports 77 additional actions and four semantic
+removals; five incidental-name additions and three uncertain dedication removals
+were excluded. Applying against committed readers changes 61 metadata records
+(the working-tree count was 59 because two independently edited readers already
+had additions). Exact performed witnesses are retained for regeneration.
+
+Next: monitor the four additions through audio and text review;
 review the 11 locally prepared southern readers before release; integrate the
 independently reviewed wider tag corrections; recover the translation-engine
 implementation plan. Continue the goal across all 254 readers and the requested

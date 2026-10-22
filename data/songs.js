@@ -39,8 +39,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
-      "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Lakṣmī"
     ],
     "searchAliases": [
       "Bolo Lakshmi Mat Ki Jay!",
@@ -72,7 +72,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -98,7 +99,9 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Marathi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
     "searchAliases": [
       "Tukaram · Anuradha Paudwal",
       "Tukaram",
@@ -127,7 +130,9 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Marathi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
     "searchAliases": [
       "Tukaram · Anuradha Paudwal",
       "Tukaram",
@@ -156,7 +161,9 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Marathi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
     "searchAliases": [
       "Vrksavalli Amha",
       "Tukaram · Anuradha Paudwal",
@@ -467,7 +474,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Śakti"
     ],
     "searchAliases": [
       "Shiva",
@@ -494,7 +502,8 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Ghanashyama Sundara",
@@ -524,7 +533,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śirḍī Sāī",
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -1640,7 +1650,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Guru"
     ],
     "searchAliases": [
       "Sadho Rama Anupama Bani",
@@ -1667,7 +1678,8 @@ window.BHAKTI_SONGS = [
       "Braj"
     ],
     "subjectTags": [
-      "Śakti"
+      "Śakti",
+      "Śiva"
     ],
     "searchAliases": [
       "Maharaja Bhavani Brahmabhuvana Ki Rani",
@@ -2106,7 +2118,8 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Ghanashyama Sundara",
@@ -2205,7 +2218,8 @@ window.BHAKTI_SONGS = [
       "Awadhi"
     ],
     "subjectTags": [
-      "Hanumān"
+      "Hanumān",
+      "Rāma"
     ],
     "searchAliases": [
       "Hanuman",
@@ -2233,7 +2247,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Hanumān"
+      "Hanumān",
+      "Rāma"
     ],
     "searchAliases": [
       "Hanuman",
@@ -2376,7 +2391,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Hanumān",
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Guru"
     ],
     "searchAliases": [
       "Hanuman",
@@ -2454,7 +2470,8 @@ window.BHAKTI_SONGS = [
       "Hanumān",
       "Rāma",
       "Śakti",
-      "Sarasvatī"
+      "Sarasvatī",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Hanuman",
@@ -2587,7 +2604,7 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Rama"
@@ -2613,7 +2630,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Rama"
@@ -2700,7 +2718,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa",
+      "Hanumān"
     ],
     "searchAliases": [
       "Rama",
@@ -2819,7 +2839,9 @@ window.BHAKTI_SONGS = [
       "Śakti",
       "Kālī",
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa",
+      "Śiva"
     ],
     "searchAliases": [
       "Shakti",
@@ -2851,10 +2873,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śakti",
       "Kālī",
-      "Rāma",
       "Viṣṇu",
       "Śiva",
-      "Sarasvatī"
+      "Sarasvatī",
+      "Lakṣmī"
     ],
     "searchAliases": [
       "Shakti",
@@ -3272,7 +3294,9 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Hindi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Kṛṣṇa"
+    ],
     "searchAliases": [
       "Prabhu Ji More Avaguna Cita Na Dharo",
       "Surdas · Kavita Krishnamurthy",
@@ -3584,7 +3608,11 @@ window.BHAKTI_SONGS = [
       "Gaṇeśa",
       "Śakti",
       "Kālī",
-      "Vaiṣṇo Devī"
+      "Vaiṣṇo Devī",
+      "Guru",
+      "Kṛṣṇa",
+      "Śiva",
+      "Hanumān"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -3961,7 +3989,9 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -3992,7 +4022,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -4023,7 +4054,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -4245,7 +4277,8 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -4277,7 +4310,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śirḍī Sāī",
-      "Rāma"
+      "Rāma",
+      "Guru",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Thora Dhyan Laga",
@@ -4312,7 +4347,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śirḍī Sāī",
-      "Rāma"
+      "Rāma",
+      "Guru",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -4352,7 +4389,8 @@ window.BHAKTI_SONGS = [
       "Rāma",
       "Kṛṣṇa",
       "Viṣṇu",
-      "Jagannātha"
+      "Jagannātha",
+      "Guru"
     ],
     "searchAliases": [
       "Morning Arati",
@@ -4385,7 +4423,9 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śirḍī Sāī",
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Guru",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -4425,7 +4465,9 @@ window.BHAKTI_SONGS = [
       "Śirḍī Sāī",
       "Rāma",
       "Viṣṇu",
-      "Sarasvatī"
+      "Sarasvatī",
+      "Guru",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -4703,7 +4745,8 @@ window.BHAKTI_SONGS = [
       "Braj"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Śakti"
     ],
     "searchAliases": [
       "Shiva",
@@ -4764,7 +4807,9 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Hindi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Śiva"
+    ],
     "searchAliases": [],
     "writer": "",
     "singer": "Rajan & Sajan Mishra & Shruti Sadolikar",
@@ -4786,7 +4831,9 @@ window.BHAKTI_SONGS = [
       "Sanskrit",
       "Awadhi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Rāma"
+    ],
     "searchAliases": [],
     "writer": "",
     "singer": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
@@ -4835,7 +4882,10 @@ window.BHAKTI_SONGS = [
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Guru",
+      "Nirguṇa"
+    ],
     "searchAliases": [
       "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
       "Bentee Chaupai",
@@ -4904,7 +4954,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -5148,7 +5199,8 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Visnu Sahasranama",
@@ -5356,7 +5408,7 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Sarasvatī"
+      "Kārtikeya"
     ],
     "searchAliases": [
       "Prajnya Vivardhana Stotra",
@@ -5389,7 +5441,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -5448,7 +5501,13 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Rāma",
+      "Śiva",
+      "Hanumān"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -5537,7 +5596,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śirḍī Sāī",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -5882,7 +5942,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Jagannātha"
+      "Jagannātha",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Jagannatha",
@@ -6077,7 +6138,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6132,7 +6194,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Mero Avagun Bisra Karo",
@@ -6161,7 +6224,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6216,7 +6280,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6249,7 +6314,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6314,7 +6380,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6380,7 +6447,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Guru Caranare Kara Dhyana",
@@ -6414,7 +6482,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Guru He Mote Ete Para Kiã Kala",
@@ -6448,7 +6517,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Guru Kara Aparadha Kshama",
@@ -6516,7 +6586,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6582,7 +6653,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Kie Ba Amaku Paliba Kuha",
@@ -6649,7 +6721,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6715,7 +6788,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śirḍī Sāī",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Guru"
     ],
     "searchAliases": [
       "Ishwar Se Kuch Mangna Ho To",
@@ -6899,7 +6973,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6930,7 +7005,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6961,7 +7037,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -6992,7 +7069,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śirḍī Sāī"
+      "Śirḍī Sāī",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -7230,7 +7308,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śirḍī Sāī",
-      "Śiva"
+      "Śiva",
+      "Guru"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -7855,7 +7934,8 @@ window.BHAKTI_SONGS = [
       "Braj"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Rāma"
     ],
     "searchAliases": [
       "Shiva",

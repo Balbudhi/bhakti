@@ -6,7 +6,9 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
+import audit_bhakti_contract as audit
 import tag_taxonomy as tags
 
 
@@ -92,6 +94,83 @@ class ReviewedSubjectTagTests(unittest.TestCase):
         self.sequence.append({'ref': 'missing'})
         with self.assertRaises(ValueError):
             self.apply({'subjectTags': []})
+
+    def removal_record(self) -> None:
+        record = self.registry['songs']['reviewed']
+        record['removeTags'] = ['Rāma']
+        record['evidence'].append({'operation': 'remove', 'tag': 'Rāma',
+            'source': 'रमा लक्ष्मी', 'reason': 'Ramā names the goddess in this performed context.'})
+        self.lines['goddess'] = {'source': 'रमा लक्ष्मी'}
+        self.sequence.append({'ref': 'goddess'})
+        self.save()
+
+    def test_removal_precedes_append_and_both_actions_are_idempotent(self) -> None:
+        self.removal_record()
+        meta = {'subjectTags': ['Rāma', 'Śakti', 'Guru']}
+        self.apply(meta)
+        self.apply(meta)
+        self.assertEqual(meta['subjectTags'], ['Śakti', 'Guru', 'Viṣṇu'])
+
+    def test_stale_removal_evidence_prevents_every_mutation(self) -> None:
+        self.removal_record()
+        meta = {'subjectTags': ['Rāma', 'Śakti']}
+        self.lines['goddess']['source'] = 'Changed source'
+        with self.assertRaisesRegex(ValueError, 'Rāma.*evidence changed'):
+            self.apply(meta)
+        self.assertEqual(meta['subjectTags'], ['Rāma', 'Śakti'])
+
+    def test_removal_requires_explicit_action_and_complete_evidence(self) -> None:
+        self.removal_record()
+        record = self.registry['songs']['reviewed']
+        del record['evidence'][-1]['operation']
+        self.save()
+        with self.assertRaises(ValueError):
+            self.apply({'subjectTags': ['Rāma']})
+        record['evidence'][-1]['operation'] = 'remove'
+        record['addTags'].append('Rāma')
+        self.save()
+        with self.assertRaises(ValueError):
+            self.apply({'subjectTags': ['Rāma']})
+
+    def test_removal_only_record_is_supported(self) -> None:
+        self.removal_record()
+        record = self.registry['songs']['reviewed']
+        record['addTags'] = []
+        record['evidence'] = record['evidence'][-1:]
+        self.save()
+        meta = {'subjectTags': ['Rāma', 'Śakti']}
+        self.apply(meta)
+        self.assertEqual(meta['subjectTags'], ['Śakti'])
+
+    def test_contract_respects_semantic_removal_and_reports_stale_witness(self) -> None:
+        self.removal_record()
+        for ref, romans, meanings in (
+            ('new-id', ['guru', 'kā', 'śabda'], ['spiritual teacher', 'of', 'Word']),
+            ('hari', ['hari', 'nāma'], ['the Divine', 'Name']),
+            ('goddess', ['ramā', 'lakṣmī'], ['goddess of prosperity', 'goddess of abundance']),
+        ):
+            self.lines[ref].update(roman=' '.join(romans),
+                words=[{'roman': roman, 'gloss': meaning} for roman, meaning in zip(romans, meanings)],
+                sourceWords=[{'text': token, 'wordIndices': [i]} for i, token in enumerate(self.lines[ref]['source'].split())],
+                english=' '.join('{'+str(i)+':'+meaning+'}' for i, meaning in enumerate(meanings)))
+        for entry in self.sequence:
+            entry.update(section='verse', repeats=1)
+        meta = {'subjectTags': ['Śakti'], 'languages': ['Hindi'], 'title': 'Example',
+                'credit': '', 'writer': '', 'singer': '', 'composer': '',
+                'timingStatus': 'start-only-reviewed', 'translationStatus': 'reviewed', 'sourceStatus': 'reviewed'}
+        self.apply(meta)
+        data = {'SONG_META': meta, 'SONG_LINES': self.lines,
+                'SONG_SEQUENCE': self.sequence,
+                'SONG_TIMINGS': [{'start': i, 'end': i + 1} for i in range(len(self.sequence))]}
+        path = self.root / 'reviewed'
+        path.mkdir()
+        (path / 'data.js').touch()
+        with patch.object(audit, 'load_data', return_value=data), patch.object(audit, 'ROOT', self.root):
+            problems = audit.audit_song(path)['problems']
+            self.assertEqual(problems, [])
+            self.lines['goddess']['source'] = 'Changed source'
+            problems = audit.audit_song(path)['problems']
+            self.assertTrue(any('Rāma evidence changed' in p for p in problems), problems)
 
 
 if __name__ == '__main__':

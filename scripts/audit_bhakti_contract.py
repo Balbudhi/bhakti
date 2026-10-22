@@ -94,6 +94,14 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
         problems.append("SONG_LINES is not an object")
         lines = {}
     inferred_tags = tag_taxonomy.infer_named_subject_tags(lines.values())
+    reviewed_tags = {"subjectTags": inferred_tags}
+    try:
+        tag_taxonomy.apply_reviewed_subject_tags(
+            reviewed_tags, directory.name, lines, data.get("SONG_SEQUENCE", []), root=ROOT,
+        )
+        inferred_tags = reviewed_tags["subjectTags"]
+    except ValueError as exc:
+        problems.append(f"reviewed subject tags: {exc}")
     if isinstance(meta, dict):
         for tag in inferred_tags:
             if tag not in meta.get("subjectTags", []):

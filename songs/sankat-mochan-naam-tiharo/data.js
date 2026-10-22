@@ -10,7 +10,8 @@ window.SONG_META = {
     "Awadhi"
   ],
   "subjectTags": [
-    "Hanumān"
+    "Hanumān",
+    "Rāma"
   ],
   "searchAliases": [
     "Hanuman",

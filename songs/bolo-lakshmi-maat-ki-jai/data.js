@@ -11,8 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Rāma",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Lakṣmī"
   ],
   "searchAliases": [
     "Bolo Lakshmi Mat Ki Jay!",

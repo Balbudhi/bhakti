@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Guru"
   ],
   "searchAliases": [
     "Sadho Rama Anupama Bani",

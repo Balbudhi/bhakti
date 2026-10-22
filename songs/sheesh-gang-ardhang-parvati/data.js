@@ -10,7 +10,8 @@ window.SONG_META = {
     "Braj"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Śakti"
   ],
   "searchAliases": [
     "Shiva",

@@ -10,7 +10,8 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Ghanashyama Sundara",

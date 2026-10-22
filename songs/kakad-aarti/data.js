@@ -16,7 +16,8 @@ window.SONG_META = {
     "Rāma",
     "Kṛṣṇa",
     "Viṣṇu",
-    "Jagannātha"
+    "Jagannātha",
+    "Guru"
   ],
   "searchAliases": [
     "Morning Arati",

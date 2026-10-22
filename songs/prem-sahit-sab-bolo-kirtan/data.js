@@ -13,7 +13,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Rāma",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Kṛṣṇa",
+    "Hanumān"
   ],
   "searchAliases": [
     "Rama",

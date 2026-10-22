@@ -15,7 +15,9 @@ window.SONG_META = {
     "Sanskrit",
     "Awadhi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Rāma"
+  ],
   "searchAliases": [],
   "audioSources": [
     {

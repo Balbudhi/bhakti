@@ -15,7 +15,8 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Visnu Sahasranama",

@@ -10,7 +10,9 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Guru",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Shirdi Sai",

@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śirḍī Sāī",
-    "Rāma"
+    "Rāma",
+    "Guru",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Thora Dhyan Laga",

@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Guru"
   ],
   "searchAliases": [
     "Mero Avagun Bisra Karo",

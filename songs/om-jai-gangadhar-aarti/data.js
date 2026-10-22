@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Śakti"
   ],
   "searchAliases": [
     "Shiva",

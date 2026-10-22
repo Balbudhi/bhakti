@@ -12,7 +12,7 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Sarasvatī"
+    "Kārtikeya"
   ],
   "searchAliases": [
     "Prajnya Vivardhana Stotra",

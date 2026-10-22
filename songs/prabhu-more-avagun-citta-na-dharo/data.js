@@ -11,7 +11,9 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Kṛṣṇa"
+  ],
   "searchAliases": [
     "Prabhu Ji More Avaguna Cita Na Dharo",
     "Surdas · Kavita Krishnamurthy",

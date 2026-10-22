@@ -98,6 +98,1028 @@
           "reason": "The performed refrain explicitly names the wise spiritual teacher. Subject/address ambiguity does not alter the teacher reference."
         }
       ]
+    },
+    "aao-aao-padharo-mere-guruwar": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "aao-aao-padhaaro",
+          "source": "आओ आओ पधारो मेरे गुरुवर",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "aasa-sai-pashe-mora": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "gurudeba-priyatama",
+          "source": "ଗୁରୁଦେବ ପ୍ରିୟତମ",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "aatma-ra-antar-kone": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "verse2-5",
+          "source": "ଗୁରୁଙ୍କର ସେବା ହେଉ ଲକ୍ଷ୍ୟ ଜୀବନର",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "chalo-shirdi-ku-jibare-sabhien": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "verse3-4",
+          "source": "ଭଗତ ପିଲାଏ ଗୁରୁ ଅଗଣାରେ ଆନନ୍ଦେ କରନ୍ତି ଖେଳା",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "dekho-mand-mand": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-009",
+          "source": "सद्गुरु साईंनाथ महाराज की जय",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "dhoop-aarti": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-084",
+          "source": "यापरि ध्यान तुझे गुरुराया",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "line-039",
+          "source": "अच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम्",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "doi-kar-teka-hei-matha": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-05-kripa-drishti",
+          "source": "कृपा दृष्टि बरसाओ हे सद्गुरु राया",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "line-36-sahan-karke-aao",
+          "source": "सहन करके आओ चाहे भेट कृष्ण देवा",
+          "reason": "Direct divine address avoids existing line52 poet-versus-deity translation inconsistency."
+        }
+      ]
+    },
+    "duniya-se-door": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "sadguru-sainath-maharaj",
+          "source": "सद्गुरु साईंनाथ महाराज की जय",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "guru-charana-re-karo-dhyana": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "refrain-1",
+          "source": "ଗୁରୁ ଚରଣରେ କର ଧ୍ୟାନ",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "guru-he-mote-ete-para-kian-kala": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "guru-he-mote-ete-para-kian-kala",
+          "source": "ଗୁରୁ ହେ ମୋତେ ଏତେ ପର କିଆଁ କଲ",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "guru-karo-aparadha-kshyama": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "refrain-1",
+          "source": "ଗୁରୁ କର ଅପରାଧ କ୍ଷମା",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "hanuman-chalisa": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "doha-1a",
+          "source": "श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि ।",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "ishwar-se-kuch-mangna-ho-to": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "refrain_b",
+          "source": "ईश्वर से कुछ पूछना हो तो सद्गुरु का पता पूछिये।",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "janena-mu-debata-ke-janena-mu-ishwara": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "tathapi-he-gurubara",
+          "source": "ତଥାପି ହେ ଗୁରୁବର",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "kakad-aarti": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-002",
+          "source": "तथापि कर जोड़े करु अब गुरु प्रार्थना",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "kie-se-aamaku-paliba-kuha": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "guru-bina-kie-pahanchaiba-kuha",
+          "source": "ଗୁରୁ ବିନା କିଏ ପହଞ୍ଚାଇବ କୁହ",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "lalakari": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "shri-saccidananda-sadguru",
+          "source": "श्री सच्चिदानन्द सद्गुरु साईंनाथ महाराज की जय",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "leke-chalo-palkhi": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "closing-jaykara",
+          "source": "सद्गुरु साईंनाथ महाराज की जय!",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "madhyahna-aarti": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-134",
+          "source": "यापरी ध्यान तुझे गुरुराया",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "line-069",
+          "source": "कृष्णदामोदरं वासुदेवं हरिम्",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "main-kismat-ka-mara": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "closing-jai",
+          "source": "सद्गुरू साईंनाथ महाराज की जय",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "mati-re-mati-re": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "guru-to-aakash-hai",
+          "source": "गुरु तो आकाश है",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "mera-aap-ki-krupa-se": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "sadguru-sainath-maharaj-ki-jai",
+          "source": "सद्गुरु साईंनाथ महाराज की जय",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "mera-chhotasa-sansar": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "sadguru-sainath-maharaj-ki-jai",
+          "source": "सद्गुरु साईंनाथ महाराज की जय",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "mero-abgun-bisra-karo": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "tu-pavan-nath-sadguru-mera",
+          "source": "तू पावन नाथ सद्गुरु मेरा",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "namaskar-mera": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa",
+        "Śiva",
+        "Hanumān"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "guru-nityananda",
+          "source": "गुरु नित्यानंदा नाना महाराज",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "shri-ram-sita",
+          "source": "श्री राम सीता गोपाल कृष्णा",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "add",
+          "tag": "Śiva",
+          "lineId": "hari-om-ganesha",
+          "source": "हरि ॐ गणेशा हरि ॐ शंकर",
+          "reason": "Explicit named Śiva/Śaṅkara/Mahādeva invocation, personified action or parentage in the performed line; not adjective auspicious or substring of śaśivarṇa."
+        },
+        {
+          "operation": "add",
+          "tag": "Hanumān",
+          "lineId": "hanuman-rakshak",
+          "source": "हनुमान रक्षक हे दीनानाथा",
+          "reason": "Explicit Hanumanta/Hanumān/Māruti devotional reference in performed text."
+        }
+      ]
+    },
+    "sadho-rama-anupam-bani": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "verse3-line1",
+          "source": "गुरु के शब्द की कूंजी सेती",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "sai-ki-palki": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "verse-2-male",
+          "source": "कोई उतारे आरती, कोई उतारे आरती, श्री गुरु के चरणों में कोई हँसे कोई रोए रे",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "shej-aarti": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-001",
+          "source": "ओवाळू आरती माझ्या सद्गुरुनाथा माझ्या साईनाथा",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "line-075",
+          "source": "आता स्वामी सुखे निद्रा करा गोपाळा बाबा साई दयाळा",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "shejarti": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa",
+        "Viṣṇu",
+        "Rāma",
+        "Śiva",
+        "Hanumān"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-108",
+          "source": "ॐ श्री समर्थ सद्गुरु साईनाथाय नमः",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "line-003",
+          "source": "ॐ कृष्णरामशिवमारुत्यादिरूपाय नमः",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "line-002",
+          "source": "ॐ लक्ष्मीनारायणाय नमः",
+          "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        },
+        {
+          "operation": "add",
+          "tag": "Rāma",
+          "lineId": "line-003",
+          "source": "ॐ कृष्णरामशिवमारुत्यादिरूपाय नमः",
+          "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        },
+        {
+          "operation": "add",
+          "tag": "Śiva",
+          "lineId": "line-003",
+          "source": "ॐ कृष्णरामशिवमारुत्यादिरूपाय नमः",
+          "reason": "Explicit named Śiva/Śaṅkara/Mahādeva invocation, personified action or parentage in the performed line; not adjective auspicious or substring of śaśivarṇa."
+        },
+        {
+          "operation": "add",
+          "tag": "Hanumān",
+          "lineId": "line-003",
+          "source": "ॐ कृष्णरामशिवमारुत्यादिरूपाय नमः",
+          "reason": "Explicit Hanumanta/Hanumān/Māruti devotional reference in performed text."
+        }
+      ]
+    },
+    "shree-sai-aarti": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-jayakara-1",
+          "source": "श्री सच्चिदानन्द सद्गुरु साईंनाथ महाराज की जय",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "thara-ku-thara-mu-adhia-paduchi": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "verse-5-line-1",
+          "source": "ତୁମରି ସମାଧି ନିକଟେ ଗୁରୁ ହେ ସଭିଏଁ କରନ୍ତି ଆଳି",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        }
+      ]
+    },
+    "thoda-dhyan-laga": {
+      "addTags": [
+        "Guru",
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "muniyon-ne-rishiyon-ne-guru-shishya-mahima-ka",
+          "source": "मुनियों ने ऋषियों ने गुरु शिष्य महिमा का",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "hai-ram-ramaiyya-wo-hai-krishna-kanhaiyya-wo",
+          "source": "हैं राम रमैया वो, हैं कृष्ण कन्हैया वो",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "benti-chaupai": {
+      "addTags": [
+        "Guru",
+        "Nirguṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Guru",
+          "lineId": "line-36",
+          "source": "ਸੋਈ ਗੁਰੂ ਸਮਝਿਯਹੁ ਹਮਾਰਾ ॥",
+          "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "operation": "add",
+          "tag": "Nirguṇa",
+          "lineId": "line-57",
+          "source": "ਨਿਰੰਕਾਰ ਨ੍ਰਿਬਿਕਾਰ ਨਿਰਲੰਭ ॥",
+          "reason": "Explicit formless, changeless, unsupported-by-another Divine, reinforced by the following nirankār contrast. Do not label this Dasam composition as SGGS/Gurbāṇī merely by singer or script."
+        }
+      ]
+    },
+    "chhanan-chhan": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "sai-tum-mere-krishna",
+          "source": "साईं तुम मेरे कृष्ण कन्हैया कण्ठनहार मेरे",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "ghana-shyama-sundara": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "jago-he-krishna-murari-giridhari",
+          "source": "जागो हे कृष्ण मुरारी गिरिधारी",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "ghanshyam-sundara": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "jaago-he-krishna-murari-giridhari",
+          "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "koi-bhaje": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "refrain-koi-bhaje",
+          "source": "कोई भजे कृष्णा, कोई भजे रामा",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "maa-jag-janani-jai-jai": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "v5-lead",
+          "source": "राम कृष्ण तू सीता ब्रज रानी राधा",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "add",
+          "tag": "Śiva",
+          "lineId": "v1-lead-part2",
+          "source": "सत्य सनातन सुन्दर सत्य सनातन सुन्दर परशिव सुर भूपा",
+          "reason": "Explicit named Śiva/Śaṅkara/Mahādeva invocation, personified action or parentage in the performed line; not adjective auspicious or substring of śaśivarṇa."
+        }
+      ]
+    },
+    "prem-sahit-sab-bolo-kirtan": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Hanumān"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "mere-to-girdhar",
+          "source": "मेरे तो गिरधर गोपाल",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "add",
+          "tag": "Hanumān",
+          "lineId": "hanuman-ke-hridaya",
+          "source": "हनुमान के हृदय बिराजे",
+          "reason": "Explicit Hanumanta/Hanumān/Māruti devotional reference in performed text."
+        }
+      ]
+    },
+    "ram-sumir-ke-raham-kare-na": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "refrain-krishna",
+          "source": "कृष्ण सुमिर के कर्म करे ना, यूँ ही जग से जाएगा",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "sai-tum-humse-jaldi-milo": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "v4-2",
+          "source": "छलिया है रे तू कृष्ण कन्हैया",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "vishnu-sahasranama": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "meditation-7",
+          "source": "छायायां पारिजातस्य हेमसिंहासनोपरि ।\nआसीनमम्बुदश्याममायताक्षमलंकृतम् ।\nचन्द्राननं चतुर्बाहुं श्रीवत्साङ्कितवक्षसं ।\nरुक्मिणीसत्यभामाभ्यां सहितं कृष्णमाश्रये ॥",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "prabhu-ham-pe-kripa-karna": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "removeTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "v3-he-nath-braj-ke-vasi",
+          "source": "हे नाथ ब्रज के वासी",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "operation": "remove",
+          "tag": "Rāma",
+          "lineId": "v3-pranon-me-rama-karna",
+          "source": "प्राणों में रमा करना",
+          "reason": "ramā karanā here is a verb (dwell/be absorbed in the breath), not the name Rāma; direct address is Śyāma/Ghanaśyāma, Lord residing in Braj. Whole song inspected."
+        }
+      ]
+    },
+    "prabhu-more-avagun-citta-na-dharo": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "sur-shyam-jhagdo",
+          "source": "सूर श्याम झगड़ो",
+          "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        }
+      ]
+    },
+    "e-barashe-aasi-achi": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "v2-haribola",
+          "source": "ହରିବୋଲ ସଙ୍ଗେ ହୁଳହୁଳି ପଡ଼ୁଥିବ",
+          "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        }
+      ]
+    },
+    "jaya-jagdisha-hare": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "om-jai-jagdish-hare",
+          "source": "ॐ जय जगदीश हरे",
+          "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        }
+      ]
+    },
+    "sampurna-sundarakanda": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "line-003",
+          "source": "रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं",
+          "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        }
+      ]
+    },
+    "vrkshavalli-amha": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "verse-3-harikatha",
+          "source": "हरिकथा भोजन परवडी विस्तार",
+          "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        }
+      ]
+    },
+    "aarti-kijiye-hanuman-lala-ki": {
+      "addTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Rāma",
+          "lineId": "refrain-full",
+          "source": "आरती कीजै हनुमान लला की । दुष्ट दलन रघुनाथ कला की ॥",
+          "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        }
+      ]
+    },
+    "jaagiye-raghunath-kunwar": {
+      "addTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Rāma",
+          "lineId": "jagiye-raghunath-kunwar",
+          "source": "जागिये रघुनाथ कुँवर पंछी बन बोले",
+          "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        }
+      ]
+    },
+    "janchiye-girijapati-kashi": {
+      "addTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Rāma",
+          "lineId": "vimala-bhagati-raghupati-ke-pavai",
+          "source": "विमल भगति रघुपति के पावै",
+          "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        }
+      ]
+    },
+    "sankat-mochan-naam-tiharo": {
+      "addTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Rāma",
+          "lineId": "v6-l2",
+          "source": "श्रीरघुनाथ समेत सबै दल मोह भयो यह संकट भारो ॥",
+          "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        }
+      ]
+    },
+    "maharaj-bhavani-brahmabhuvan-ki-rani": {
+      "addTags": [
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Śiva",
+          "lineId": "verse-1",
+          "source": "आगे शंकर तांडव करत हैं करत हैं",
+          "reason": "Explicit named Śiva/Śaṅkara/Mahādeva invocation, personified action or parentage in the performed line; not adjective auspicious or substring of śaśivarṇa."
+        }
+      ]
+    },
+    "mahadeva-vishambar": {
+      "addTags": [
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Śiva",
+          "lineId": "mahadeva-refrain",
+          "source": "महादेव",
+          "reason": "Explicit named Śiva/Śaṅkara/Mahādeva invocation, personified action or parentage in the performed line; not adjective auspicious or substring of śaśivarṇa."
+        }
+      ]
+    },
+    "om-jai-gangadhar-aarti": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Śakti",
+          "lineId": "closing-shloka-2",
+          "source": "सदावसन्तं हृदयारविन्दे भवं भवानीसहितं नमामि",
+          "reason": "Explicit Bhavānī/Pārvatī accompanying Śiva and receiving homage; a deity reference, not a dark-colour adjective."
+        }
+      ]
+    },
+    "sheesh-gang-ardhang-parvati": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Śakti",
+          "lineId": "sheesh-gang-1",
+          "source": "शीश गंग अरधंग पार्वती सदा विराजत कैलासी",
+          "reason": "Explicit Bhavānī/Pārvatī accompanying Śiva and receiving homage; a deity reference, not a dark-colour adjective."
+        }
+      ]
+    },
+    "bolo-lakshmi-maat-ki-jai": {
+      "addTags": [
+        "Lakṣmī"
+      ],
+      "removeTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Lakṣmī",
+          "lineId": "chant-bolo-lakshmi-maat",
+          "source": "बोलो लक्ष्मी मात की जय!",
+          "reason": "The entire āratī repeatedly addresses Lakṣmī, an already existing useful facet."
+        },
+        {
+          "operation": "remove",
+          "tag": "Rāma",
+          "lineId": "uma-rama-brahmani",
+          "source": "उमा रमा ब्रह्माणी, तू ही जग की है माता",
+          "reason": "Ramā in the feminine list Umā Ramā Brahmāṇī is Lakṣmī, not Rāma. All performed lines inspected; no Rāma occurrence."
+        }
+      ]
+    },
+    "namo-namo-vindhyeshwari": {
+      "addTags": [
+        "Lakṣmī"
+      ],
+      "removeTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Lakṣmī",
+          "lineId": "verse-11",
+          "source": "दुर्गा दुर्ग विनाशिनी माता । तू ही लक्ष्मी जग सुखदाता ॥",
+          "reason": "Explicit identification of the Goddess as Lakṣmī; the neighbouring Ramā name confirms this useful existing facet."
+        },
+        {
+          "operation": "remove",
+          "tag": "Rāma",
+          "lineId": "verse-8",
+          "source": "रमा राधिका श्यामा काली । तू ही मातु संतन प्रतिपाली ॥",
+          "reason": "Ramā is a goddess name in the list Ramā Rādhikā Śyāmā Kālī, not Rāma. All performed lines inspected; no Rāma occurrence."
+        }
+      ]
+    },
+    "pradnya-vivardhan-stotra": {
+      "addTags": [
+        "Kārtikeya"
+      ],
+      "removeTags": [
+        "Sarasvatī"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Kārtikeya",
+          "lineId": "viniyoga-3",
+          "source": "स्वामी कार्तिकेयो देवता",
+          "reason": "The performed viniyoga explicitly names Kārtikeya as devatā; the whole hymn enumerates Skanda’s names and the closing explicitly calls it a Kārtikeya stotra. One new facet is justified by primary subject."
+        },
+        {
+          "operation": "remove",
+          "tag": "Sarasvatī",
+          "lineId": "verse-3a",
+          "source": "शब्दब्रह्मसमुद्रश्च सिद्धसारस्वतो गुहः ।",
+          "reason": "siddhasārasvato is an epithet in Skanda’s name list, not a separate invocation of Sarasvatī. Presiding-deity line and closing identify Kārtikeya. Entire performed hymn inspected."
+        }
+      ]
+    },
+    "sundar-te-dhyan": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "kanthi-kaustubhamani-virajita",
+          "source": "कंठी कौस्तुभमणी विराजित",
+          "reason": "Full image: deity standing on a brick, hands at waist, tulasī garland, yellow garment, makara earrings and Kaustubha jewel: Viṭṭhala/Viṣṇu. Use existing broad Viṣṇu facet rather than create another tag."
+        }
+      ]
+    },
+    "khel-mandiyela": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "nachati-vaishnav-bhai",
+          "source": "नाचती वैष्णव भाई रे",
+          "reason": "Whole poem depicts Vaiṣṇava devotees dancing with gopīcandana and tulasī garlands; a clear devotional tradition reference, not a cognate or author-name inference."
+        }
+      ]
     }
   }
 }

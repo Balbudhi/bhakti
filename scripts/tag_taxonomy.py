@@ -133,14 +133,15 @@ def apply_reviewed_subject_tags(
     meta: dict[str, Any], slug: str, lines: Mapping[str, dict[str, Any]],
     sequence: list[dict[str, Any]], *, root: Path = ROOT,
 ) -> None:
-    """Append researched tags only while their exact performed text remains.
+    """Apply researched tag changes while their exact performed text remains.
 
     The registry owns contextual classification; this operation does not infer
     identities from author metadata or keywords. Evidence lineId is an optional
     locator, not identity: regeneration may renumber lines. Every evidence source
     must match a complete line referenced by sequence, without normalization.
-    Validate all applicable evidence before changing meta; existing tags stay in
-    order and additions are deduplicated. A stale witness requires fresh review.
+    Validate all applicable evidence before changing meta. Removals require an
+    explicit remove witness; surviving tags keep their order before additions.
+    A stale witness requires fresh review, even when a removal is already applied.
     """
     path = Path(root) / "data" / "song_tag_overrides.json"
     try:
@@ -153,24 +154,29 @@ def apply_reviewed_subject_tags(
     for song, record in registry["songs"].items():
         if not isinstance(song, str) or not song.strip() or not isinstance(record, dict):
             raise ValueError(f"invalid reviewed-tag record: {song!r}")
-        additions, evidence = record.get("addTags"), record.get("evidence")
-        if (not isinstance(additions, list) or not additions
-                or any(not isinstance(tag, str) or not tag.strip() for tag in additions)
-                or len(set(additions)) != len(additions)
+        additions, removals = record.get("addTags"), record.get("removeTags", [])
+        evidence = record.get("evidence")
+        if (not isinstance(additions, list) or not isinstance(removals, list)
+                or not (additions or removals)
+                or any(not isinstance(tag, str) or not tag.strip() for tag in [*additions, *removals])
+                or len(set(additions)) != len(additions) or len(set(removals)) != len(removals)
+                or set(additions).intersection(removals)
                 or not isinstance(evidence, list) or not evidence):
             raise ValueError(f"{song}: invalid reviewed tags or evidence")
+        actions = {("add", tag) for tag in additions} | {("remove", tag) for tag in removals}
         covered = set()
         for witness in evidence:
             if (not isinstance(witness, dict)
                     or any(not isinstance(witness.get(field), str) or not witness[field].strip()
                            for field in ("tag", "source", "reason"))
-                    or witness["tag"] not in additions
+                    or not isinstance(witness.get("operation", "add"), str)
+                    or (witness.get("operation", "add"), witness["tag"]) not in actions
                     or ("lineId" in witness and
                         (not isinstance(witness["lineId"], str) or not witness["lineId"].strip()))):
                 raise ValueError(f"{song}: invalid reviewed-tag witness")
-            covered.add(witness["tag"])
-        if covered != set(additions):
-            raise ValueError(f"{song}: every reviewed tag needs source evidence")
+            covered.add((witness.get("operation", "add"), witness["tag"]))
+        if covered != actions:
+            raise ValueError(f"{song}: every reviewed tag action needs source evidence")
     record = registry["songs"].get(slug)
     if record is None:
         return
@@ -191,4 +197,7 @@ def apply_reviewed_subject_tags(
     existing = meta.get("subjectTags", [])
     if not isinstance(existing, list) or any(not isinstance(tag, str) for tag in existing):
         raise ValueError(f"{slug}: invalid existing subjectTags")
-    meta["subjectTags"] = list(dict.fromkeys([*existing, *record["addTags"]]))
+    removed = set(record.get("removeTags", []))
+    meta["subjectTags"] = list(dict.fromkeys([
+        *(tag for tag in existing if tag not in removed), *record["addTags"],
+    ]))

@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śirḍī Sāī",
-    "Śiva"
+    "Śiva",
+    "Guru"
   ],
   "searchAliases": [
     "Shirdi Sai",

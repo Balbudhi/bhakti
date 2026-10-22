@@ -11,7 +11,10 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Guru",
+    "Nirguṇa"
+  ],
   "searchAliases": [
     "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
     "Bentee Chaupai",

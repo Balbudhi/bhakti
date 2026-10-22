@@ -11,7 +11,8 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Guru"
   ],
   "searchAliases": [
     "Shirdi Sai",

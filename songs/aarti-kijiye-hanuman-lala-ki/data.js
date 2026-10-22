@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Hanumān"
+    "Hanumān",
+    "Rāma"
   ],
   "searchAliases": [
     "Hanuman",

@@ -14,7 +14,9 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Śiva"
+  ],
   "searchAliases": [],
   "audioSources": [
     {

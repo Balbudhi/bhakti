@@ -10,7 +10,8 @@ window.SONG_META = {
     "Odia"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Guru"
   ],
   "searchAliases": [
     "Guru He Mote Ete Para Kiã Kala",

@@ -13,7 +13,9 @@ window.SONG_META = {
   "subjectTags": [
     "Śirḍī Sāī",
     "Rāma",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Guru",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Shirdi Sai",
