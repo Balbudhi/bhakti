@@ -266,8 +266,27 @@ interrupted-adoption and distant-English-context defects have verified fixes. Co
 with source-first repair, preserving exact owner English and prior paid evidence.
 
 Next: qualify the bounded repair implementation on actual held semantic cases.
-A separate two-recording Kabīr audio audit is authorized with a fresh $0.60 cap,
-two calls maximum, retained original evidence and no automatic retries. It asks
-whether Sunta’s omitted printed stanzas are sung in this abridged recording and
-what is audible before Kya Tan’s returning refrain, without inserting printed text. Continue the whole-library recording/translation audit and the
+The separate two-recording Kabīr audio audit finished exactly two calls for
+$0.15923025, within its $0.60 cap, with no retries or unknown charges. It reported
+Sunta’s four extra printed stanza groups absent from this abridged recording and
+Kya Tan’s final questioned vowel as nonlexical before two returning refrains.
+New disagreements remain held: Sunta’s ending count and कहे/काहे, and Kya Tan’s
+पासा/आसा. No new source text, counts or timings were published from these audits. Continue the whole-library recording/translation audit and the
 remaining backlog. No complete-library accuracy or goal-completion claim.
+
+The semantic/language integration is published in `5a2b27ff`; all seven changed
+public catalogue/reader files match the deployment. Staged-source checks passed
+33 semantic tests, the transport test collection, and 19 language persistence
+cases. The whole-tree contract scan still identifies five existing repeat-unit
+migrations and seven unbuilt legacy directories; these are open content work.
+The next five-reader representation pass must preserve every expanded token and
+interval, including already-reviewed public spelling corrections.
+
+The correct 307-second Harivarāsanam recording is downloaded privately with native
+Opus/AAC and verified official metadata. The old 173-second folder is archived;
+no audio or semantic evidence from it can be transferred to the replacement. A
+fresh production run has not been authorized/dispatched yet.
+
+Completed paid evidence and original four-Gurbāṇī caches are preserved under the
+ignored project folder `.transcription/library-review/20261022-releases/` with an
+archive manifest. The live reader never exposes these research artifacts.
