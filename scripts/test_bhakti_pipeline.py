@@ -28,6 +28,8 @@ class PipelineTests(unittest.TestCase):
         (self.root / "data" / "songs.js").write_text("window.BHAKTI_SONGS = [];\n", encoding="utf-8")
         (self.root / "data" / "queue_numbers.json").write_text('{"schemaVersion": 1, "numbers": {}}\n', encoding="utf-8")
         (self.root / "data" / "preserved_terms.json").write_text(registry, encoding="utf-8")
+        (self.root / "data" / "editorial_baselines.json").write_text(
+            (self.original_root / "data" / "editorial_baselines.json").read_text(encoding="utf-8"), encoding="utf-8")
         (self.root / "data" / "source_credits.json").write_text(source_credits, encoding="utf-8")
         pipeline.QUEUE_NUMBERS_PATH = self.root / "data" / "queue_numbers.json"
 
@@ -224,7 +226,7 @@ class PipelineTests(unittest.TestCase):
         cleaned = pipeline.clean_gloss_rows(rows)
         self.assertEqual([word["roman"] for word in cleaned[0]["word_glosses"]], ["hanumāna"])
 
-    def test_gloss_surfaces_follow_audited_roman_tokens(self) -> None:
+    def test_gloss_surfaces_cannot_silently_relabel_prior_evidence(self) -> None:
         lines = [{"id": "line", "roman": "mana ko agama tana"}]
         rows = [{"id": "line", "word_glosses": [
             {"roman": "man", "gloss": "mind"}, {"roman": "ko", "gloss": "to"},
@@ -232,7 +234,8 @@ class PipelineTests(unittest.TestCase):
         ]}]
         normalized = pipeline.normalize_gloss_rows(lines, rows)
         self.assertEqual([word["roman"] for word in normalized[0]["word_glosses"]],
-                         ["mana", "ko", "agama", "tana"])
+                         ["man", "ko", "agam", "tan"])
+        self.assertTrue(pipeline.gloss_surface_errors(lines, normalized))
 
     def test_independent_translation_review_can_block_poetic_choice(self) -> None:
         lines = [{"id": "line", "source_text": "", "roman": "sāṁs"}]

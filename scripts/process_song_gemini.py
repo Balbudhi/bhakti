@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Provider client and legacy complete-song packet processing.
 
-Together is the default text provider; audio requires a separately qualified
-route. The historical filename remains for existing script imports.
+OpenRouter/Gemini is the default audio and text route. Together remains an
+explicit text-only option; it has no qualified song-audio route. The historical filename remains for existing script imports.
 
 The pipeline deliberately uses three different tasks, not duplicate generic
 passes: full-song transcription, lyric-aware full-song alignment, then
@@ -31,7 +31,7 @@ import subprocess
 
 TOGETHER_MODEL = "openai/gpt-oss-120b"
 GEMINI_MODEL = "google/gemini-3.7-flash"
-MODEL = os.environ.get("BHAKTI_MODEL") or (TOGETHER_MODEL if os.environ.get("BHAKTI_GEMINI_PROVIDER", "together").strip().casefold() == "together" else GEMINI_MODEL)
+MODEL = os.environ.get("BHAKTI_MODEL") or (TOGETHER_MODEL if os.environ.get("BHAKTI_GEMINI_PROVIDER", "openrouter").strip().casefold() == "together" else GEMINI_MODEL)
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 GOOGLE_API_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 TOGETHER_API_URL = "https://api.together.ai/v1/chat/completions"
@@ -73,7 +73,7 @@ def args() -> argparse.Namespace:
 
 
 def provider_name() -> str:
-    value = os.environ.get("BHAKTI_GEMINI_PROVIDER", "together").strip().casefold()
+    value = os.environ.get("BHAKTI_GEMINI_PROVIDER", "openrouter").strip().casefold()
     if value not in {"together", "openrouter", "google"}:
         raise RuntimeError("BHAKTI_GEMINI_PROVIDER must be 'together', 'openrouter', or 'google'")
     return value

@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 import bhakti_pipeline as pipeline
+import editorial_baselines
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,6 +37,7 @@ process.stdout.write(JSON.stringify(ctx.window));"""
 
 
 def write_reader(slug: str, data: dict[str, Any]) -> None:
+    editorial_baselines.assert_english_preserved(slug, data["SONG_LINES"], root=ROOT)
     path = ROOT / "songs" / slug / "data.js"
     content = ("window.SONG_META = " + json.dumps(data["SONG_META"], ensure_ascii=False, indent=2) + ";\n\n" +
                "window.SONG_LINES = " + json.dumps(data["SONG_LINES"], ensure_ascii=False, indent=2) + ";\n\n" +
@@ -122,6 +124,7 @@ def run_slug(slug: str, apply: bool) -> dict[str, Any]:
     if errors:
         raise RuntimeError("; ".join(errors[:5]))
     updated, changed = apply_review(reader, review)
+    editorial_baselines.assert_english_preserved(slug, updated["SONG_LINES"], root=ROOT)
     if apply and changed:
         write_reader(slug, updated)
     return {"slug": slug, "changed_lines": changed, "status": "ready" if not changed else ("applied" if apply else "reviewed")}

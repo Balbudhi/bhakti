@@ -53,6 +53,10 @@ class ApplyTranslationStyleReviewTests(unittest.TestCase):
     def test_run_slug_applies_review_from_disk(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
+            (root / "data").mkdir()
+            (root / "data" / "editorial_baselines.json").write_text(
+                json.dumps({"version": 1, "songs": {}}), encoding="utf-8"
+            )
             song_dir = root / "songs" / "demo"
             song_dir.mkdir(parents=True)
             write_reader(song_dir / "data.js", "{0:Sai.}")

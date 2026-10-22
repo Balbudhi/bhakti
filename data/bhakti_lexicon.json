@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "status": "small_dictionary_grounded_candidate_lexicon_not_song_gloss_authority",
+  "purpose": "Optional prompt lookup candidates only; semantic editor chooses or rejects a sense against the actual line, grammar, adjacent poetry and audio transcript. No search/index engine implied.",
+  "reviewed_on": "2026-10-22",
+  "sense_id_policy": "IDs are local curation labels, not sense numbers assigned by Platts. Exact print page, homograph and definition anchors identify the actual dictionary evidence.",
+  "language_boundary": "All five entries are directly attested classical Hindi/Hindustani entries in Platts. Sanskrit etymologies mentioned there are not independent Sanskrit lexical validation. Do not apply mechanically to Punjabi, Marathi, Sanskrit or any other language; acquire language-specific evidence first.",
+  "transliteration_boundary": "Roman search aliases reproduce convenient Platts-style headwords. They are retrieval keys, not authorization to rewrite performed IAST or source spelling.",
+  "semantic_review_needed": true,
+  "automatic_replacement": false,
+  "entries": [
+    {
+      "language": "hi",
+      "register": "classical Hindi / Hindustani, as covered by Platts 1884",
+      "lemma": "man",
+      "source_spellings": [
+        "मन"
+      ],
+      "roman_search_aliases": [
+        "man"
+      ],
+      "dictionary": {
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AE%E0%A4%A8&searchhws=yes&matchtype=exact",
+        "print_page": 1069,
+        "entry_locator": "First homograph: H मन man [Prk. maṇo; S. manas], masculine noun; distinguish second मन man measure-of-weight entry",
+        "evidence_status": "Exact headword response read directly from dictionary publisher HTML"
+      },
+      "senses": [
+        {
+          "sense_id": "hi.man.mind",
+          "short_english": "mind",
+          "dictionary_anchor": "The mind (considered as the seat of perception and passion)",
+          "context_hints": [
+            "Thought, attention, perception or instruction addressed to the mind."
+          ],
+          "prohibitions": [
+            "Do not force metaphysical soul or Sanskrit technical manas onto every occurrence."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.man.heart",
+          "short_english": "heart; inner feeling",
+          "dictionary_anchor": "the heart; soul; spirit",
+          "context_hints": [
+            "Affection, longing, sorrow or heart-captivation context."
+          ],
+          "prohibitions": [
+            "Keep any concrete heart image; do not decide from emotional vocabulary alone."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.man.will",
+          "short_english": "wish; intention",
+          "dictionary_anchor": "inclination; will; purpose",
+          "context_hints": [
+            "An expressed desire, intention or resolve; inspect the whole phrase."
+          ],
+          "prohibitions": [
+            "Do not render an addressed mind as desire merely because a wish occurs nearby."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.man.weight",
+          "short_english": "maund; a weight measure",
+          "dictionary_anchor": "Second homograph: A measure of weight",
+          "context_hints": [
+            "Quantity, weight or commodity measurement."
+          ],
+          "prohibitions": [
+            "Never infer this sense for a devotional address. Do not freeze the historical unit into a universal modern weight."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        }
+      ],
+      "project_policy": {
+        "automatic_replacement": false,
+        "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
+      }
+    },
+    {
+      "language": "hi",
+      "register": "classical Hindi / Hindustani, as covered by Platts 1884",
+      "lemma": "rāg",
+      "source_spellings": [
+        "राग"
+      ],
+      "roman_search_aliases": [
+        "rāg"
+      ],
+      "dictionary": {
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%B0%E0%A4%BE%E0%A4%97&searchhws=yes&matchtype=exact",
+        "print_page": 583,
+        "entry_locator": "S राग rāg, masculine noun; base headword plus rāg-dveś compound",
+        "evidence_status": "Exact headword response read directly from dictionary publisher HTML"
+      },
+      "senses": [
+        {
+          "sense_id": "hi.rag.attachment",
+          "short_english": "affection; attachment; passion",
+          "dictionary_anchor": "mental affection, emotion, feeling, passion, love, affection, desire",
+          "context_hints": [
+            "Affective relation, desire, or pairing with aversion; rāg-dveś is separately attested in entry."
+          ],
+          "prohibitions": [
+            "Do not use melodic mode merely because the text is sung."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.rag.music",
+          "short_english": "melodic mode; melody",
+          "dictionary_anchor": "a musical mode",
+          "context_hints": [
+            "Musical classification, mode name, instruments, singing or rāgiṇī context."
+          ],
+          "prohibitions": [
+            "Do not substitute attachment for a musical term. Dictionary listing of six modes is historical, not a modern exhaustive taxonomy."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.rag.colour",
+          "short_english": "colour; dye",
+          "dictionary_anchor": "Colour, hue, tint, dye",
+          "context_hints": [
+            "Explicit colour, dyeing or tint image."
+          ],
+          "prohibitions": [
+            "Do not flatten a dye image into abstract attachment without examining metaphor and syntax."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        }
+      ],
+      "project_policy": {
+        "automatic_replacement": false,
+        "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
+      }
+    },
+    {
+      "language": "hi",
+      "register": "classical Hindi / Hindustani, as covered by Platts 1884",
+      "lemma": "ras",
+      "source_spellings": [
+        "रस"
+      ],
+      "roman_search_aliases": [
+        "ras"
+      ],
+      "dictionary": {
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%B0%E0%A4%B8&searchhws=yes&matchtype=exact",
+        "print_page": 591,
+        "entry_locator": "S रस rasa, vulg. ras, masculine noun; base entry",
+        "evidence_status": "Exact headword response read directly from dictionary publisher HTML"
+      },
+      "senses": [
+        {
+          "sense_id": "hi.ras.liquid",
+          "short_english": "juice; sap",
+          "dictionary_anchor": "Sap, juice; syrup; a liquid, fluid",
+          "context_hints": [
+            "Fruit, plant, flowing, drinking or extracted liquid context; examine whether physical or metaphorical."
+          ],
+          "prohibitions": [
+            "Do not replace a liquid image by abstract pleasure merely to smooth the English."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.ras.taste",
+          "short_english": "taste; savour",
+          "dictionary_anchor": "taste, savour, flavour, relish",
+          "context_hints": [
+            "Tasting, tongue, sweetness, bitterness or relish."
+          ],
+          "prohibitions": [
+            "Do not automatically label every taste as nectar or aesthetic theory."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.ras.enjoyment",
+          "short_english": "savour; enjoyment",
+          "dictionary_anchor": "taste, inclination, appetite, enjoyment (of anything)",
+          "context_hints": [
+            "Pleasure taken in remembrance, song or devotion may select a contextual devotional savour reading."
+          ],
+          "prohibitions": [
+            "Devotional is context supplied, not a separately verified lexical definition. Preserve explicit tasting/drinking imagery."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.ras.aesthetic",
+          "short_english": "aesthetic sentiment",
+          "dictionary_anchor": "taste, sentiment, feeling, emotion, pathos",
+          "context_hints": [
+            "An explicit poetics, drama or named emotional-rasa framework."
+          ],
+          "prohibitions": [
+            "Do not import the full aesthetic classification into an ordinary devotional mention."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        }
+      ],
+      "project_policy": {
+        "automatic_replacement": false,
+        "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
+      }
+    },
+    {
+      "language": "hi",
+      "register": "classical Hindi / Hindustani, as covered by Platts 1884",
+      "lemma": "māyā",
+      "source_spellings": [
+        "माया"
+      ],
+      "roman_search_aliases": [
+        "māyā"
+      ],
+      "dictionary": {
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AE%E0%A4%BE%E0%A4%AF%E0%A4%BE&searchhws=yes&matchtype=exact",
+        "print_page": 987,
+        "entry_locator": "First homograph: S माया māyā, feminine noun; distinguish second H māyā masculine cross-reference",
+        "evidence_status": "Exact headword response read directly from dictionary publisher HTML"
+      },
+      "senses": [
+        {
+          "sense_id": "hi.maya.power",
+          "short_english": "mysterious or magical power",
+          "dictionary_anchor": "Extraordinary or supernatural power, magical or wonderful power",
+          "context_hints": [
+            "Divine creation, wondrous action, enchantment or magical power."
+          ],
+          "prohibitions": [
+            "Do not reduce to a deception alone when power or agency is expressed."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.maya.worldly",
+          "short_english": "worldly appearance or entanglement",
+          "dictionary_anchor": "the external world, natural phenomena, nature",
+          "context_hints": [
+            "Worldly appearance, attachment, transient possessions or a personified power in the actual passage."
+          ],
+          "prohibitions": [
+            "Do not treat the dictionary’s historical doctrinal exposition as the theology of every song. Do not flatten to bare illusion. Entanglement is a contextual explanation requiring passage evidence."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.maya.wealth",
+          "short_english": "wealth; possessions",
+          "dictionary_anchor": "prosperity, opulence, riches",
+          "context_hints": [
+            "Money, property, accumulation or worldly wealth context."
+          ],
+          "prohibitions": [
+            "Do not choose wealth from the headword alone."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.maya.affection",
+          "short_english": "affection; compassion",
+          "dictionary_anchor": "compassion, pity, sympathy, mercy, kindness, affection",
+          "context_hints": [
+            "Caring, pity or affectionate relationship, with phrase-level evidence."
+          ],
+          "prohibitions": [
+            "Do not automatically read all māyā as delusion; do not infer this Hindi sense for another language."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        }
+      ],
+      "project_policy": {
+        "automatic_replacement": false,
+        "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
+      }
+    },
+    {
+      "language": "hi",
+      "register": "classical Hindi / Hindustani, as covered by Platts 1884",
+      "lemma": "hār",
+      "source_spellings": [
+        "हार"
+      ],
+      "roman_search_aliases": [
+        "hār"
+      ],
+      "dictionary": {
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%B9%E0%A4%BE%E0%A4%B0&searchhws=yes&matchtype=exact",
+        "print_page": 1215,
+        "entry_locator": "Five separate headword results; retain homograph number and grammatical class",
+        "evidence_status": "Exact headword response read directly from dictionary publisher HTML"
+      },
+      "senses": [
+        {
+          "sense_id": "hi.har.garland",
+          "short_english": "garland; necklace",
+          "dictionary_anchor": "Homograph 1, masculine: a necklace ... a garland or chaplet",
+          "context_hints": [
+            "Flowers, pearls, neck, stringing or wearing."
+          ],
+          "prohibitions": [
+            "Do not confuse with feminine defeat or the agent suffix; do not strip long ā."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.har.defeat",
+          "short_english": "defeat; loss",
+          "dictionary_anchor": "Homograph 3, feminine: defeat, discomfiture",
+          "context_hints": [
+            "Victory/defeat pairing or conceding a contest; hār mānnā is explicitly attested."
+          ],
+          "prohibitions": [
+            "Do not translate a worn or offered garland as defeat."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.har.overcome",
+          "short_english": "having been overcome",
+          "dictionary_anchor": "Homograph 4, conjunctive participle of hārnā",
+          "context_hints": [
+            "Verbal sequence or hār-kar construction; inspect clause grammar."
+          ],
+          "prohibitions": [
+            "Do not label a participle as a noun by identical spelling."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        },
+        {
+          "sense_id": "hi.har.agent_suffix",
+          "short_english": "one who does; doer",
+          "dictionary_anchor": "Homograph 5, hār/hārā suffix ... nouns of agency",
+          "context_hints": [
+            "A supported verb-plus-agent formation such as karan-hār; the whole compound must be analyzed."
+          ],
+          "prohibitions": [
+            "No substring matching: this is not the sense of every word ending in hār. Never apply garland/defeat to an agentive compound by token suffix alone."
+          ],
+          "semantic_review_needed": true,
+          "selection_status": "unselected"
+        }
+      ],
+      "project_policy": {
+        "automatic_replacement": false,
+        "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
+      }
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "lemma": "guṇa / gun",
+      "reason": "Exact Platts query for गुण, गुन and gun returned no result in this lookup. Not admitted from memory or from cognate inference; this is not a claim that dictionaries lack the entry."
+    }
+  ]
+}

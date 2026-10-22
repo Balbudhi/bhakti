@@ -1,7 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
+  "defaultTreatment": "translate_contextually",
   "sourcePolicy": "../vedanta-timeline/docs/SANSKRIT_TRANSLATION_STANDARD.md#8-preserve-or-translate--which-words-stay-sanskrit",
-  "admissionPolicy": "Only curated entries may remain untranslated. Gemini may flag a new candidate but cannot add it or publish it without human review.",
+  "admissionPolicy": "Legacy preservation metadata, not a mandate for new opaque English. New translations use contextual English words or short phrases; retain proper names separately and preserve explicit supplied human English. No automatic replacements in existing readers.",
   "terms": {
     "maya": {
       "iast": "māyā",

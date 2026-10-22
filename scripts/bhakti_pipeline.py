@@ -33,6 +33,8 @@ from typing import Any
 
 import process_song_gemini as gemini
 import gloss_policy
+import bhakti_translation_policy
+import editorial_baselines
 import naming
 import resolve_youtube_music_audio as ytmusic
 import tag_taxonomy
@@ -57,6 +59,26 @@ SEMANTIC_FRAME_FIELDS = (
 
 def preserved_term_registry() -> dict[str, Any]:
     return json.loads((ROOT / "data" / "preserved_terms.json").read_text(encoding="utf-8"))
+
+
+def translation_policy_payload() -> dict[str, Any]:
+    """Snapshot all lexical policy that can affect cached text judgments."""
+    return {"preserved_terms": preserved_term_registry(),
+            "lexical_policy": bhakti_translation_policy.policy_payload()}
+
+
+def text_stage_fingerprint(stage: str, model: str, inputs: dict[str, Any],
+                           policy: dict[str, Any]) -> str:
+    """Bind a cached judgment to its exact evidence, model and policy."""
+    payload = {"stage": stage, "gloss_version": GLOSS_CONTRACT_VERSION,
+               "translation_version": TRANSLATION_INPUT_VERSION,
+               "model": gemini.batch_base_model(model), "provider": gemini.provider_name(),
+               "policy": policy, "inputs": inputs}
+    return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+def nearby_text_context(lines: list[dict[str, Any]], start: int, length: int) -> list[dict[str, Any]]:
+    return lines[max(0, start - 2):start] + lines[start + length:start + length + 2]
 
 
 def economy_model(model: str) -> str:
@@ -2141,16 +2163,14 @@ def gloss_surface_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str,
     for line in lines:
         line_id = line.get("id", "<unknown>")
         words = gloss_by_id.get(line_id, {}).get("word_glosses", [])
-        cursor = 0
-        folded = "".join(character for character in str(line.get("roman", "")).casefold() if character.isalnum())
+        expected = [token for token in str(line.get("roman", "")).split()
+                    if any(character.isalnum() for character in token)]
+        observed = [str(word.get("roman", "")) for word in words]
+        if observed != expected:
+            errors.append(f"{line_id} word gloss tokens differ from the complete ordered romanized source")
         for index, word in enumerate(words):
-            token = str(word.get("roman", "")).strip()
-            normalized_token = "".join(character for character in token.casefold() if character.isalnum())
-            at = folded.find(normalized_token, cursor) if normalized_token else -1
-            if not token or not str(word.get("gloss", "")).strip() or at < 0:
-                errors.append(f"{line_id} word gloss {index} cannot be mapped to romanized source")
-                break
-            cursor = at + len(normalized_token)
+            if not str(word.get("gloss", "")).strip():
+                errors.append(f"{line_id} word gloss {index} lacks a meaning")
     return errors
 
 
@@ -2179,6 +2199,22 @@ def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str
     return errors
 
 
+def fresh_gloss_contract_errors(lines: list[dict[str, Any]],
+                                gloss_rows: list[dict[str, Any]]) -> list[str]:
+    """Fresh glosses have no locked English that could authorize preservation.
+
+    Keep this separate from the legacy/public validator: generate-only must
+    still accept previously reviewed, explicitly retained concepts.
+    """
+    errors = gloss_contract_errors(lines, gloss_rows)
+    if preserved_term_registry().get("defaultTreatment") == "translate_contextually":
+        for row in gloss_rows:
+            for index, word in enumerate(row.get("word_glosses", [])):
+                if word.get("preserve_in_english") is True:
+                    errors.append(f"{row.get('id')} fresh gloss {index} cannot preserve a concept without locked English")
+    return errors
+
+
 def clean_gloss_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     cleaned = []
     for row in rows:
@@ -2190,30 +2226,22 @@ def clean_gloss_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def normalize_gloss_rows(lines: list[dict[str, Any]], rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    line_by_id = {line.get("id"): line for line in lines}
-    normalized = []
-    for row in rows:
-        value = dict(row)
-        words = [dict(word) for word in row.get("word_glosses", [])
-                 if any(character.isalnum() for character in str(word.get("roman", "")))]
-        expected = [token for token in str(line_by_id.get(row.get("id"), {}).get("roman", "")).split()
-                    if any(character.isalnum() for character in token)]
-        if len(words) == len(expected):
-            for index, token in enumerate(expected):
-                words[index]["roman"] = token
-        value["word_glosses"] = [gloss_policy.clean_word(word) for word in words]
-        normalized.append(value)
-    return normalized
+    # Cleaning may remove punctuation-only entries, never relabel lexical
+    # evidence. A changed surface needs a fresh judgment, even at equal length.
+    return clean_gloss_rows(rows)
 
 
 def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
+    policy = translation_policy_payload()
+    languages = audited["packet"].get("metadata", {}).get("languages")
+    fingerprint = text_stage_fingerprint("gloss", options.model,
+                                         {"lines": lines, "languages": languages}, policy)
     existing = read_packet(target)
-    if existing and isinstance(existing.get("packet", {}).get("glosses"), list):
-        existing["packet"]["glosses"] = normalize_gloss_rows(lines, existing["packet"]["glosses"])
-    if (existing and not options.force and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-            and not gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []))):
+    if (existing and existing.get("fingerprint") == fingerprint and not options.force
+            and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
+            and not fresh_gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []))):
         return existing
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
         term_registry = preserved_term_registry()
@@ -2231,7 +2259,9 @@ For `nām`, gloss the contextual sense as “name,” “divine name,” or “a
 
 Do not collapse South Asian social terminology into the single English word “caste.” A jāti or jñātī is ordinarily a local birth, kin, or occupational community; gloss it as community, clan, kin group, or occupational group as the line warrants. Varṇa is a distinct broad fourfold normative social order; name that distinction explicitly when it matters. Preserve a source phrase that contrasts these terms rather than treating them as synonyms.
 
-Only terms in the CURATED PRESERVED-TERM REGISTRY may remain in IAST in English. For a matching term, set `concept_key`, set `preserve_in_english=true`, use the canonical IAST form later, and write a short context-specific hover gloss rather than a flattening synonym. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a proper name or divine title, explain its identity or role rather than merely spelling the same name again. Build a local glossary while processing this song: when the same displayed token recurs in the same grammatical and devotional role, reuse its most specific established explanation verbatim. A changed explanation is allowed only when the local syntax or imagery materially changes; say why in that line's grammar note. In particular, bare “illusion” is not an adequate replacement for `māyā`. For ordinary words, set `concept_key` to the empty string and `preserve_in_english=false`. If a new term seems irreducible but is not curated, do not add it: put the candidate and reason in uncertainty so publication stops for human review.
+Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even when a concept is listed in the registry. A matching `concept_key` may identify a concept for bookkeeping; it does not require IAST in English. Set `preserve_in_english=false` for newly reconstructed glosses. `preserve_in_english=true` is reserved for explicitly supplied, locked English that retains that concept; no locked English is supplied at this gloss stage. Proper names are separate from concept preservation: retain genuine names in English and explain their evidenced identity or relationship in the hover. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a divine epithet, explain its operative meaning rather than merely spelling the same title again. Build a local glossary while processing this song: when the same displayed token recurs in the same grammatical and devotional role, reuse its most specific established explanation verbatim. A changed explanation is allowed only when the local syntax or imagery materially changes; say why in that line's grammar note. In particular, bare “illusion” is not an adequate contextual explanation for `māyā`. For ordinary words and proper names, set `concept_key` to the empty string and `preserve_in_english=false`. Do not invent new registry entries. Genuine unresolved source or semantic conflict belongs in uncertainty.
+
+{bhakti_translation_policy.guidance(batch + context, languages=languages)}
 
 CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
@@ -2277,19 +2307,24 @@ Return strict JSON:
             batch = batches[index]
             expected = [line["id"] for line in batch]
             cache_path = cache_dir / f"batch-{index:03d}.json"
+            start = index * batch_size
+            def batch_fingerprint(target_lines: list[dict[str, Any]], absolute_start: int) -> str:
+                return text_stage_fingerprint("gloss-batch", options.model,
+                    {"lines": target_lines,
+                     "context": nearby_text_context(lines, absolute_start, len(target_lines)),
+                     "languages": languages}, policy)
+            batch_identity = batch_fingerprint(batch, start)
             cached = read_packet(cache_path)
-            if cached and cached.get("target_ids") == expected and not options.force:
-                cached_rows = normalize_gloss_rows(batch, cached.get("response", {}).get("packet", {}).get("glosses", []))
-                cached["response"]["packet"]["glosses"] = cached_rows
+            if (cached and cached.get("target_ids") == expected
+                    and cached.get("fingerprint") == batch_identity and not options.force):
+                cached_rows = cached.get("response", {}).get("packet", {}).get("glosses", [])
                 if (cached.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-                        and not gloss_contract_errors(batch, cached_rows)):
+                        and not fresh_gloss_contract_errors(batch, cached_rows)):
                     return cached
-            start = index * 40
 
             def request(target_lines: list[dict[str, Any]], absolute_start: int, label: str) -> dict[str, Any]:
                 target_ids = [line["id"] for line in target_lines]
-                context = (lines[max(0, absolute_start - 2):absolute_start]
-                           + lines[absolute_start + len(target_lines):absolute_start + len(target_lines) + 2])
+                context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=options.timeout, response_schema=schema,
                                        schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
@@ -2307,7 +2342,7 @@ Return strict JSON:
                 returned = [row.get("id") for row in response["packet"].get("glosses", [])]
                 if returned != target_ids:
                     raise RuntimeError(f"gloss batch {label} returned IDs out of order or incomplete")
-                mapping_errors = gloss_contract_errors(target_lines, response["packet"]["glosses"])
+                mapping_errors = fresh_gloss_contract_errors(target_lines, response["packet"]["glosses"])
                 if mapping_errors:
                     raise RuntimeError(f"gloss batch {label} violates surface-token mapping: {mapping_errors[:3]}")
                 return response
@@ -2319,12 +2354,16 @@ Return strict JSON:
                     child_ids = [line["id"] for line in child]
                     child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
                     child_packet = read_packet(child_path)
+                    child_identity = batch_fingerprint(child, start + offset)
                     if not (child_packet and child_packet.get("target_ids") == child_ids
+                            and child_packet.get("fingerprint") == child_identity
                             and child_packet.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
+                            and not fresh_gloss_contract_errors(child, child_packet.get("response", {}).get("packet", {}).get("glosses", []))
                             and not options.force):
                         child_packet = {
                             "target_ids": child_ids,
                             "gloss_contract_version": GLOSS_CONTRACT_VERSION,
+                            "fingerprint": child_identity,
                             "response": request(child, start + offset, f"{index}.{child_index}"),
                         }
                         write_json(child_path, child_packet)
@@ -2335,10 +2374,10 @@ Return strict JSON:
                     "resolved_model": options.model,
                 }
                 packet = {"target_ids": expected, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
-                          "response": response, "child_batches": children}
+                          "fingerprint": batch_identity, "response": response, "child_batches": children}
             else:
                 packet = {"target_ids": expected, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
-                          "response": request(batch, start, str(index))}
+                          "fingerprint": batch_identity, "response": request(batch, start, str(index))}
             write_json(cache_path, packet)
             return packet
 
@@ -2349,7 +2388,11 @@ Return strict JSON:
                                            for row in packet["response"]["packet"]["glosses"]]},
                   "batch_responses": packets, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
                   "resolved_model": options.model}
+    errors = fresh_gloss_contract_errors(lines, result.get("packet", {}).get("glosses", []))
+    if errors:
+        raise RuntimeError(f"gloss output violates source contract: {errors[:3]}")
     result["gloss_contract_version"] = GLOSS_CONTRACT_VERSION
+    result["fingerprint"] = fingerprint
     write_json(target, result)
     return result
 
@@ -2379,9 +2422,11 @@ def translation_review_schema() -> dict[str, Any]:
 def independently_review_translations(
     song_dir: Path, lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
     translation_rows: list[dict[str, Any]], provided_translation: str, options: argparse.Namespace,
+    languages: list[str] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
+    policy = translation_policy_payload()
     # Review outputs are verbose enough that 40-line packets can hit a model or
     # gateway output ceiling on long works. Twenty-line parent caches, issued as
     # ten-line requests below, keep evidence complete without a failed response.
@@ -2394,10 +2439,9 @@ def independently_review_translations(
         expected = [line["id"] for line in batch]
         evidence = [{"source": line, "gloss": gloss_by_id[line["id"]],
                      "draft": translation_by_id[line["id"]]} for line in batch]
-        fingerprint = hashlib.sha256(json.dumps(
-            {"version": TRANSLATION_INPUT_VERSION, "model": gemini.batch_base_model(options.model), "evidence": evidence,
-             "provided_translation": provided_translation}, ensure_ascii=False, sort_keys=True,
-        ).encode()).hexdigest()
+        fingerprint = text_stage_fingerprint("translation-review", options.model,
+            {"evidence": evidence, "provided_translation": provided_translation,
+             "languages": languages}, policy)
         path = cache_dir / f"batch-{index:03d}.json"
         cached = read_packet(path)
         if cached and cached.get("fingerprint") == fingerprint and not options.force:
@@ -2410,6 +2454,10 @@ For each line, compare the draft against the indexed glosses, semantic frame, gr
 Conventional English is not automatically better. Preserve personification, repetition, transparent spatial language, and concrete ritual images. A breath that abandons a speaker is materially different from a speaker releasing breath; a speaker who is broken from the inside is materially different from a speaker actively breaking; “takes hold” is materially different from “kindles”; palm is materially different from an abstract inner state. If the draft and an alternative make such a material choice and no locked human baseline resolves it, set human_review_recommended=true. Do not flag trivial synonyms or punctuation.
 
 If a locked human translation is supplied and the draft copies it exactly, do not fail or rewrite it. If it conflicts with lexical evidence, keep passes=true but set human_review_recommended=true and explain the conflict for the human.
+
+Check that each English segment uses the same contextual sense as the gloss at its linked indices. Supported alternatives belong separately in the grammar note; a list of possibilities does not excuse a mismatch between English and its clickable gloss. Check that compounds and inflections contribute all their meaning and proper names have meaningful identity or relationship glosses. Dictionary candidates are evidence of possible senses only, never permission to override this line's language or grammar.
+
+{bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages)}
 
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
@@ -2438,11 +2486,9 @@ LOCKED HUMAN TRANSLATION (or none):
             for child_index, offset in enumerate(range(0, len(batch), 10)):
                 child_evidence = evidence[offset:offset + 10]
                 child_ids = expected[offset:offset + 10]
-                child_fingerprint = hashlib.sha256(json.dumps(
-                    {"version": TRANSLATION_INPUT_VERSION, "model": gemini.batch_base_model(options.model),
-                     "evidence": child_evidence, "provided_translation": provided_translation},
-                    ensure_ascii=False, sort_keys=True,
-                ).encode()).hexdigest()
+                child_fingerprint = text_stage_fingerprint("translation-review", options.model,
+                    {"evidence": child_evidence, "provided_translation": provided_translation,
+                     "languages": languages}, policy)
                 child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
                 child_packet = read_packet(child_path)
                 if not (child_packet and child_packet.get("fingerprint") == child_fingerprint
@@ -2475,13 +2521,23 @@ LOCKED HUMAN TRANSLATION (or none):
 
 def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "05-translation.json"
-    existing = read_packet(target)
-    if existing and not options.force and existing.get("input_contract_version") == TRANSLATION_INPUT_VERSION:
-        return existing
     lines = audited['packet'].get('verified_lines', [])
     gloss_rows = glosses['packet'].get('glosses', [])
     gloss_by_id = {row['id']: row for row in gloss_rows}
     provided_translation = supplied_translation(job)
+    languages = job.get("languages")
+    policy = translation_policy_payload()
+    fingerprint = text_stage_fingerprint("translation", options.model,
+        {"lines": lines, "glosses": gloss_rows, "provided_translation": provided_translation,
+         "languages": languages}, policy)
+    existing = read_packet(target)
+    if (existing and existing.get("fingerprint") == fingerprint and not options.force
+            and existing.get("input_contract_version") == TRANSLATION_INPUT_VERSION):
+        errors = fresh_translation_contract_errors(
+            lines, gloss_rows, existing.get("packet", {}).get("translations", []))
+        if errors:
+            raise RuntimeError(f"cached translation violates fresh contract: {errors[:3]}")
+        return existing
     provided_rule = ("A human translation is supplied and LOCKED. Copy its wording exactly for every matching line; "
                      "do not silently correct or polish it in this stage. If lexical evidence appears to conflict with it, "
                      "preserve the supplied wording, set human_review_recommended=true, and explain the conflict in choice_note."
@@ -2499,11 +2555,13 @@ For each line, reason in this order before choosing the final English:
 3. Preserve the source's agent, experiencer, and voice/state exactly. Never change “my breath abandons me” into “I breathe my last,” “I am broken from the inside” into “I broke from the inside,” a deity dwelling in a palm into an abstract spiritual state, or an interior image into a generic emotion merely because the alternative is conventional English.
 4. Apply an established idiom only when `idiom_or_phrase` identifies it and the idiom does not erase a deliberate image. The devotional phrase `raham nazar` means “look upon [someone] with mercy”; do not render it as “cast a glance.” Conversely, do not invent a replacement metaphor such as “kindle” or “stir” when the source image is that a feeling “takes hold.” A possessed relational noun such as a garment hem should remain explicit rather than becoming an ambiguous “your hem.”
 5. Make only the smallest grammatical adjustments needed for intelligible English. Prefer the source's transparent spatial vocabulary (“from the inside”) over a smoother intensifying substitute (“deep within”) unless depth is lexically present. Literal and poetic force outrank smoothness.
-6. If a word has `preserve_in_english=true`, print the registry's canonical IAST term in `literal_english` and map that English segment to the word's index. Do not replace it with a forbidden flattening. Use the short word gloss only in the hover data, not as substitute prose in the lyric.
+6. Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even for registry-listed concepts. A `concept_key` is bookkeeping, not an instruction to leave the term untranslated. Retain a concept in IAST only when explicitly supplied locked English does so; a legacy `preserve_in_english=true` flag alone cannot override this rule. Retain genuine proper names, whose clickable gloss must explain their evidenced identity or relationship. The sense used in every English segment must match the chosen primary meaning at its linked word indices, including compounds and inflections; supported alternatives remain separately explained in grammar notes.
+
+{bhakti_translation_policy.guidance(batch + context, languages=languages)}
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list. Every source word index must appear in at least one segment. Map particles, postpositions, tense/aspect, negation, modality, and honorifics to the English phrase they help create rather than leaving their source index uncovered.
 
-Write lucid devotional English, but do not confuse conventional English with better poetry. Literal strangeness, repetition, personification, unusual agency, and concrete bodily or ritual imagery may be the point. Preserve a supported image such as “my breath will abandon me” even if an English idiom such as “I will breathe my last” sounds smoother. Preserve suffered/resultant states as states: if the lyric says the speaker is broken, keep that brokenness rather than recasting it as the speaker actively broke. Never replace the source's agency, metaphor, ambiguity, or emotional logic merely to sound idiomatic. Correct wording only when it is demonstrably wrong, ungrammatical, or obstructs understanding. Avoid legalistic filler, accidental inversion, duplicate modifiers, and unsupported editorial verbs. Retain darshan or sacred vision, an alms bag, garment hem, cupped or open palm, lotus, dust, ocean, threshold, cage, and Mount Meru when the source supports them.
+Write lucid devotional English, but do not confuse conventional English with better poetry. Literal strangeness, repetition, personification, unusual agency, and concrete bodily or ritual imagery may be the point. Preserve a supported image such as “my breath will abandon me” even if an English idiom such as “I will breathe my last” sounds smoother. Preserve suffered/resultant states as states: if the lyric says the speaker is broken, keep that brokenness rather than recasting it as the speaker actively broke. Never replace the source's agency, metaphor, ambiguity, or emotional logic merely to sound idiomatic. Correct wording only when it is demonstrably wrong, ungrammatical, or obstructs understanding. Avoid legalistic filler, accidental inversion, duplicate modifiers, and unsupported editorial verbs. Retain sacred sight or encounter as the context warrants, an alms bag, garment hem, cupped or open palm, lotus, dust, ocean, threshold, cage, and Mount Meru when the source supports them.
 
 Use established English words. A rare but attested word is acceptable when it is precise and remains understandable in context. A transparent, source-supported compound may join two ordinary words, preferably with a hyphen when that aids reading. Never invent pseudo-Latin vocabulary or use a franchise-specific fictional coinage such as `adamantium`, `vibranium`, or `mithril`. `Adamantine` is an established English adjective and is not the fictional noun `adamantium`.
 
@@ -2572,16 +2630,23 @@ Return strict JSON:
             batch = batches[index]
             expected = [line["id"] for line in batch]
             cache_path = cache_dir / f"batch-{index:03d}.json"
+            start = index * 40
+            def batch_fingerprint(target_lines: list[dict[str, Any]], absolute_start: int) -> str:
+                return text_stage_fingerprint("translation-batch", options.model,
+                    {"lines": target_lines,
+                     "glosses": [gloss_by_id[line["id"]] for line in target_lines],
+                     "context": nearby_text_context(lines, absolute_start, len(target_lines)),
+                     "provided_translation": provided_translation, "languages": languages}, policy)
+            batch_identity = batch_fingerprint(batch, start)
             cached = read_packet(cache_path)
             if (cached and cached.get("target_ids") == expected
+                    and cached.get("fingerprint") == batch_identity
                     and cached.get("input_contract_version") == TRANSLATION_INPUT_VERSION and not options.force):
                 return cached
-            start = index * 40
 
             def request(target_lines: list[dict[str, Any]], absolute_start: int, label: str) -> dict[str, Any]:
                 target_ids = [line["id"] for line in target_lines]
-                context = (lines[max(0, absolute_start - 2):absolute_start]
-                           + lines[absolute_start + len(target_lines):absolute_start + len(target_lines) + 2])
+                context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=options.timeout, response_schema=schema,
                                        schema_name="bhakti_translation_batch", reasoning_effort="high",
@@ -2599,12 +2664,15 @@ Return strict JSON:
                     child_ids = [line["id"] for line in child]
                     child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
                     child_packet = read_packet(child_path)
+                    child_identity = batch_fingerprint(child, start + offset)
                     if not (child_packet and child_packet.get("target_ids") == child_ids
+                            and child_packet.get("fingerprint") == child_identity
                             and child_packet.get("input_contract_version") == TRANSLATION_INPUT_VERSION
                             and not options.force):
                         child_packet = {
                             "target_ids": child_ids,
                             "input_contract_version": TRANSLATION_INPUT_VERSION,
+                            "fingerprint": child_identity,
                             "response": request(child, start + offset, f"{index}.{child_index}"),
                         }
                         write_json(child_path, child_packet)
@@ -2619,10 +2687,10 @@ Return strict JSON:
                     "resolved_model": options.model,
                 }
                 packet = {"target_ids": expected, "input_contract_version": TRANSLATION_INPUT_VERSION,
-                          "response": response, "child_batches": children}
+                          "fingerprint": batch_identity, "response": response, "child_batches": children}
             else:
                 packet = {"target_ids": expected, "input_contract_version": TRANSLATION_INPUT_VERSION,
-                          "response": request(batch, start, str(index))}
+                          "fingerprint": batch_identity, "response": request(batch, start, str(index))}
             write_json(cache_path, packet)
             return packet
 
@@ -2636,13 +2704,18 @@ Return strict JSON:
                   }, "batch_responses": packets, "input_contract_version": TRANSLATION_INPUT_VERSION,
                   "resolved_model": options.model}
     result["input_contract_version"] = TRANSLATION_INPUT_VERSION
+    result["fingerprint"] = fingerprint
     independent_reviews, review_packets = independently_review_translations(
-        song_dir, lines, gloss_rows, result["packet"]["translations"], provided_translation, options
+        song_dir, lines, gloss_rows, result["packet"]["translations"], provided_translation, options,
+        languages=languages
     )
     review_by_id = {row["id"]: row for row in independent_reviews}
     for row in result["packet"]["translations"]:
-        row["independent_review"] = review_by_id[row["id"]]
+        row["independent_review"] = review_by_id.get(row["id"], {})
     result["review_responses"] = review_packets
+    errors = fresh_translation_contract_errors(lines, gloss_rows, result["packet"]["translations"])
+    if errors:
+        raise RuntimeError(f"translation output violates fresh contract: {errors[:3]}")
     write_json(target, result)
     return result
 
@@ -2724,6 +2797,63 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
             if not canonical or canonical.casefold() not in english.casefold():
                 errors.append(f"{line_id} must preserve {canonical or word.get('concept_key')} in English")
     return errors
+
+
+def fresh_translation_contract_errors(
+    lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
+    translation_rows: list[dict[str, Any]],
+) -> list[str]:
+    """Require affirmative semantic review before accepting a new 05 packet.
+
+    Historical generate-only packets retain their existing validation path.
+    Model assertions are necessary evidence here, not proof of linguistic truth.
+    """
+    errors = validate_ids(lines, gloss_rows, translation_rows)
+    expected_ids = [line.get("id") for line in lines]
+    if [row.get("id") for row in translation_rows] != expected_ids:
+        errors.append("fresh translation IDs must occur exactly once in source order")
+    instrumental = {line.get("id") for line in lines if line.get("kind") == "instrumental"}
+    for row in translation_rows:
+        line_id = row.get("id", "<unknown>")
+        if line_id in instrumental:
+            continue
+        for field, required in (
+            ("fidelity", ("agency_and_image_preserved", "all_meaning_accounted_for")),
+            ("independent_review", ("passes", "agency_preserved", "imagery_preserved", "all_meaning_accounted_for")),
+        ):
+            evidence = row.get(field)
+            if not isinstance(evidence, dict) or not evidence:
+                errors.append(f"{line_id} lacks a nonempty {field} record")
+                continue
+            for key in required:
+                if evidence.get(key) is not True:
+                    errors.append(f"{line_id} {field}.{key} must be true")
+            if evidence.get("unsupported_additions") != []:
+                errors.append(f"{line_id} {field}.unsupported_additions must be an empty list")
+        if row.get("human_review_recommended") is not False:
+            errors.append(f"{line_id} translation lacks an explicit resolved review status")
+        independent = row.get("independent_review")
+        if isinstance(independent, dict) and independent.get("human_review_recommended") is not False:
+            errors.append(f"{line_id} independent_review lacks an explicit resolved review status")
+        parts = row.get("segments")
+        if (not isinstance(parts, list) or not parts
+                or any(not isinstance(part, dict) or not isinstance(part.get("text"), str)
+                       or not isinstance(part.get("word_indices"), list) for part in parts)):
+            errors.append(f"{line_id} lacks valid English segments")
+        else:
+            # Render through the same spacing/punctuation normalizer as the
+            # public indexed English, omitting only the index markup.
+            displayed = segment_english([{**part, "word_indices": []} for part in parts], "")
+            if displayed != row.get("literal_english"):
+                errors.append(f"{line_id} English segments do not reconstruct literal_english")
+    for row in gloss_rows + translation_rows:
+        if str(row.get("uncertainty") or "").strip().casefold() not in {"", "none", "no", "null", "n/a"}:
+            errors.append(f"{row.get('id')} has unresolved gloss or translation uncertainty")
+    # The legacy validator assumes structurally valid rows; malformed fresh
+    # evidence must fail as a useful contract error rather than an exception.
+    if errors:
+        return errors
+    return validate_line_contract(lines, gloss_rows, translation_rows)
 
 
 def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
@@ -3223,6 +3353,7 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
             "window.SONG_LINES = " + json.dumps(line_data, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_TIMINGS = " + json.dumps(times, ensure_ascii=False, indent=2) + ";\n")
+    editorial_baselines.assert_english_preserved(song_dir.name, line_data, root=ROOT)
     (song_dir / "data.js").write_text(data, encoding="utf-8")
     (song_dir / "index.html").write_text(page_html(meta, song_dir.name), encoding="utf-8")
     if write_catalogue_after:

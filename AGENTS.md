@@ -14,26 +14,24 @@ generic provenance filler on a song page page.
 
 ## One-command production pipeline
 
-The owner has selected Together AI as the default provider. Text-only review uses
-`openai/gpt-oss-120b` with structured output and high reasoning. Its initial
-gloss-reconstruction pilot made substantive errors; source adjudication is
-required before any proposal changes public wording. Credentials come from
-`TOGETHER_API_KEY` or an owner-only `TOGETHER_API_KEY_FILE` (mode `0600`), defaulting to
-`~/.config/bhakti/together.key`. Never print, commit, copy or put a key in a
-shell argument or history. A secure file reference may be used without copying
-its contents.
+OpenRouter is again the default provider, with `google/gemini-3.7-flash` as the
+established audio/text baseline. Compare `google/gemini-3.8-flash` on actual song
+coverage and translation before changing the production model. Newer is not
+proof of better sung-language recognition. `BHAKTI_MODEL` or `--model` overrides
+it explicitly; `BHAKTI_GEMINI_PROVIDER` defaults to `openrouter`.
 
-Together's Whisper audio route failed the sung-Punjabi qualification: whole
-phrases and repetitions were omitted. Full intake remains blocked until an
-adequate audio path is validated; see `docs/TOGETHER_AUDIO_QUALIFICATION.md`.
-Do not silently fall back to OpenRouter, Google, local ASR or Superwhisper.
-A text model must never be described as having listened to the recording.
-The existing completeness, first-syllable timing and translation gates remain
-in force. Explicit legacy provider support is retained for reproducibility.
+Use the owner-only OpenRouter key file named by `OPENROUTER_API_KEY_FILE` or the
+configured secure Bhakti key-file reference. Never print, commit, copy or place
+credentials in command arguments/history. Hosted intake uses the existing
+`OPENROUTER_API_KEY` repository secret. Together remains an explicit text-only
+option; its failed audio qualification is recorded in
+`docs/TOGETHER_AUDIO_QUALIFICATION.md`. Do not substitute its Whisper output for
+Gemini's audio review. A text-only model has not listened to a recording.
 
-The full-intake command below becomes usable after audio qualification; it
-currently fails before audio download or model calls. Text-only review and `--generate-only`
-remain available without a new audio pass.
+The completeness, first-syllable timing, contextual translation and independent
+review gates remain in force. `--generate-only` uses already-reviewed artifacts
+without a new API call. The whole-library repair task is recorded in
+`docs/LIBRARY_REPAIR_TASKS.md`.
 
 For one or more local audio files or source URLs, use:
 
@@ -145,13 +143,16 @@ when no native-script form has been verified; never manufacture diacritics from
 English metadata. Internal search must also match ordinary spellings through
 automatic folding plus optional `searchAliases`; those aliases are not visible.
 
-`data/preserved_terms.json` is the only allowlist for philosophical terms that
-remain in IAST in English. A matching word keeps its canonical form and a short,
-contextual hover gloss; `māyā`, for example, must not be flattened to bare
-“illusion.” Gemini may flag an unlisted candidate but cannot add or publish it.
-Admission follows the Vedanta translation standard's deliberate decision
-procedure; never treat general glossary membership as permission to preserve a
-term. Do not import Vedanta's grammar cards or full expositions into song pages.
+Translate ordinary words and philosophical concepts into contextually precise
+English, including short phrases where necessary. Keep genuine proper names
+and explain their evidenced meaning or relationship in the linked gloss.
+`data/preserved_terms.json` retains legacy metadata, not a mandate to leave new
+English opaque. Existing owner-approved English remains locked. Do not flatten
+`māyā` to bare “illusion” everywhere or replace any term globally by spelling.
+`data/bhakti_lexicon.json` supplies cited, language-scoped candidate senses;
+choose by grammar and the whole passage. The chosen primary gloss and English
+must agree. Dictionary alternatives are not interchangeable popup definitions.
+Do not import Vedanta's full indexing engine, grammar cards or expositions.
 
 ## Release checks
 

@@ -38,10 +38,10 @@ def completion(model: str) -> FakeResponse:
 
 
 class ProviderTests(unittest.TestCase):
-    def test_default_provider_and_model_are_together(self) -> None:
+    def test_default_provider_and_model_are_openrouter(self) -> None:
         with mock.patch.dict(os.environ, {}, clear=True):
-            self.assertEqual(gemini.provider_name(), "together")
-            self.assertEqual(gemini.default_model(), "openai/gpt-oss-120b")
+            self.assertEqual(gemini.provider_name(), "openrouter")
+            self.assertEqual(gemini.default_model(), "google/gemini-3.7-flash")
 
     def test_together_text_preserves_schema_and_uses_documented_reasoning(self) -> None:
         schema = {"type": "object", "properties": {"ok": {"type": "boolean"}}}

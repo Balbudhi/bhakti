@@ -16,31 +16,60 @@ review. If it is not Sanskrit, the normal pipeline continues unchanged.
 
 ## Models and cost policy
 
-- **Current provider:** Together AI, selected by the owner on 2026-10-22.
-  Text-only review uses `openai/gpt-oss-120b`. The hosted model accepts the
-  existing JSON schemas and reasoning controls. A short reconstruction pilot
-  produced incorrect glosses; its output is not qualified for unattended
-  Gurbāṇī reconstruction. Review suggestions require source adjudication.
-- **Audio qualification:** Together Whisper successfully accepted six sung
-  Punjabi clips but omitted phrases and corrupted repetitions. It is not
-  approved for full transcription/audit/timing. Full intake fails early;
-  [the qualification report](TOGETHER_AUDIO_QUALIFICATION.md) records the evidence.
-  Never present text-only reconciliation as an independent audio audit.
-- **Credentials:** `TOGETHER_API_KEY`, `TOGETHER_API_KEY_FILE`, or owner-only
-  `~/.config/bhakti/together.key`. `BHAKTI_GEMINI_PROVIDER` is retained as the
-  backward-compatible selector name and now defaults to `together`.
-  `BHAKTI_MODEL` or `--model` selects a supported model explicitly.
-- **Available candidate-review command:** text-only review of existing readers:
-  `python3 scripts/audit_translation_style.py SONG_SLUG --workers 2`.
-  Substantive GPT-OSS Gurbāṇī trials returned empty final content or timed out;
-  only small schema compatibility is established. See
-  [the task record](GURBANI_REVIEW_TASKS.md) for qualification limits.
-  Proposed changes require editorial adjudication; the command never
-  overwrites public translations. `--generate-only` can regenerate reviewed
-  pipeline artifacts. Together Batch/economy is not implemented in this client.
-- **Historical audio route:** `google/gemini-3.7-flash` through OpenRouter.
-  Historical cost/Batch/direct-Google notes below describe that former route,
-  not the current default. Do not return to it without an owner instruction.
+- **Current provider:** OpenRouter, restored at the owner's instruction after
+  Together did not offer the same audio-capable Gemini model.
+- **Baseline:** `google/gemini-3.7-flash`, high reasoning. Gemini 3.8 Flash is
+  the first quality challenger; the standard endpoints currently have equal
+  token prices. Neither model is declared best without song-specific evidence.
+- **Credentials:** owner-only `OPENROUTER_API_KEY_FILE` or the configured secure
+  Bhakti key-file reference; hosted intake uses its encrypted OpenRouter secret.
+  `BHAKTI_GEMINI_PROVIDER` defaults to `openrouter`; `BHAKTI_MODEL`/`--model`
+  explicitly selects a model. Never expose credential contents.
+- **Preparation:** `python3 scripts/prepare_library_review.py` inventories the
+  committed catalogue without model calls. It records exact content hashes,
+  missing/uncertain evidence, lexical versus audio review routes and protected
+  editorial baselines. An inventory is not a finding that unflagged songs are
+  correct. Unknown human-translation provenance prevents automatic overwrite.
+- **Text-only review:** `python3 scripts/audit_translation_style.py SONG_SLUG
+  --workers 2` proposes changes when existing glosses are sound. Wrong glosses
+  require reconstruction, not English editing constrained to a false gloss.
+- **Generation:** `--generate-only` reuses reviewed artifacts without model calls.
+- **Together:** retained as an explicit text-only option, not an automatic
+  fallback. Its sung-Punjabi audio pilot failed; see
+  [qualification](TOGETHER_AUDIO_QUALIFICATION.md). Small schema success did not
+  establish substantive translation quality. Together economy is unsupported.
+
+### Contextual English and dictionary evidence
+
+The owner requests understandable English for ordinary and philosophical terms,
+with short phrases when one word cannot preserve the meaning. Keep genuine
+proper names and give their evidenced identity, relationship or literal meaning
+in the clickable gloss. Treat meaningful epithets according to their role in the
+line. Never invent an etymology or reduce every divine relationship to “Lord.”
+Preserve owner-supplied English exactly; the two explicit reference readers are
+registered in `data/editorial_baselines.json`.
+
+`bhakti_translation_policy.py` owns the shared instructions and supplies a small
+set of cited dictionary entries from `data/bhakti_lexicon.json`. The initial
+five entries have 19 unselected senses. Retrieval requires an explicit Hindi
+language label and exact source/roman token; it does not infer cognates,
+inflections, compounds or another language. A model must choose or reject a sense
+using syntax, speaker, agency and adjacent imagery. It records the reason and
+material alternatives privately, never invented dictionary citations. Missing
+lookup coverage is not proof that a word does not exist.
+
+The primary popup meaning must agree with the linked English. Preserve concrete
+images, repetition, wordplay, bodily states and purposeful literal strangeness;
+improve grammar without replacing them with generic devotional prose. Use the
+same rendering for the same role and sense; explain a contextually necessary
+change. Source indices establish linkage, not semantic accuracy.
+
+The legacy preserved-term registry is retained for historical readers and locked
+English. Newly reconstructed concept glosses use contextual English and
+`preserve_in_english=false`; no blanket replacement is made in existing readers.
+Gloss, translation and review caches bind their actual source/context, model,
+provider, languages, lexical policy and supplied English. Changed token spelling
+must not inherit an old gloss merely because the token count matches.
 
 The following audio processing requirements still govern any replacement:
 
@@ -267,19 +296,12 @@ are recorded in `docs/KAKAD_ARTI_SOURCES.md`.
 
 ### Preserved philosophical terms
 
-`data/preserved_terms.json` is a curated allowlist derived from the Vedanta
-translation standard—not from the much larger glossary manifest. A listed term
-stays in canonical IAST in English, remains linked to its source-word index, and
-uses the existing short hover for a context-specific explanation. A tooltip
-contains the meaning only; it never repeats the already-visible term before a
-parenthetical definition. Use `intellect; faculty of discernment`, not
-`buddhi (intellect; faculty of discernment)`. Divine names and proper names
-receive a role or contextual identity rather than the same spelling again. Bare
-flattenings forbidden by the entry fail validation; `māyā` may not become only
-“illusion.” An unlisted candidate is review output, never an automatic registry
-addition. New entries require the preserve-or-translate decision procedure and
-human approval. Bhakti deliberately does not inherit the Vedanta song page's full
-grammar cards or school-by-school glossary UI.
+`data/preserved_terms.json` retains legacy reviewed preservation metadata. New
+reconstruction follows the contextual-English policy above. Existing readers
+are migrated by reviewed occurrence, not global search-and-replace. A preserved
+legacy māyā can be reviewed for an English phrase such as worldly enchantment
+only when that passage's imagery and grammar support it; neither that phrase
+nor bare illusion is a universal replacement. Owner-approved English is locked.
 
 Public English uses attested words. Rare but established English is permitted
 when it is exact and understandable in context: `adamantine`, for example, is
@@ -353,8 +375,7 @@ or touches timing/audio data.
 
 ## Automated intake
 
-Full intake currently stops at Together audio preflight. After qualification,
-run from this repository for both single songs and batches; it runs independent songs concurrently while serializing the final
+Run from this repository for both single songs and batches; it runs independent songs concurrently while serializing the final
 shared catalogue write:
 
 ```sh
@@ -370,8 +391,8 @@ python3 scripts/bhakti_pipeline.py --workers 7 --publish --batch intake.json
 
 ### Historical OpenRouter economy mode
 
-These retained measurements describe the former provider, not the current
-Together route. `--economy` is rejected for Together.
+These retained measurements describe OpenRouter economy mode.
+`--economy` is rejected when Together is explicitly selected.
 
 OpenRouter Batch is text-only and rejects audio, video, image, and file content
 parts ([official Batch limitations](https://openrouter.ai/docs/batch-quickstart#limitations)). Economy mode is therefore deliberately hybrid: transcription,
@@ -420,23 +441,20 @@ ignored `.transcription/`, and emits no song-page/catalogue output when a gate
 fails. It does not commit or push; after the normal visual checks, GitHub
 Actions deploys a path-scoped commit.
 
-The `Intake Bhakti Songs` owner-dispatched workflow now selects Together and
-synchronous processing. Its full-intake preflight currently fails because the
-audio route is unqualified, before audio download or model calls. URL resolution
-and source-metadata discovery may run before that preflight. When that route
-is ready, hosted use also requires a `TOGETHER_API_KEY` repository secret; the
-local credential configuration does not provision that secret. The workflow
-retains its 5.5-hour ceiling and generated-page deployment steps.
+The `Intake Bhakti Songs` owner-dispatched workflow selects OpenRouter and
+synchronous processing. It requires the existing `OPENROUTER_API_KEY` repository
+secret and funded account. The local credential does not provision that secret.
+The workflow retains its 5.5-hour ceiling and generated-page deployment steps.
 
 The hosted control surface is GitHub itself; do not build a second login or a
 public submission form. The job runs only when `github.actor` equals the
 repository owner. It accepts at most 50 publicly downloadable HTTPS media URLs,
 rejects embedded credentials and any hostname resolving to local, private,
 reserved, or otherwise non-global addresses, restricts workers to 1–7, has no
-public event or webhook trigger, and reads the Together key from an encrypted
+public event or webhook trigger, and reads the OpenRouter key from an encrypted
 repository secret. Public `yt-dlp`-supported media URLs share the same path. A public visitor may view the repository but
 cannot dispatch a billable run. To use it, open **Actions → Intake Bhakti Songs
-→ Run workflow**, paste one link per line, choose the worker count, and run it once audio qualification is complete.
+→ Run workflow**, paste one link per line, choose the worker count, and run it.
 When a source description is unstructured but independently establishes roles,
 record a reviewed source-ID override in `data/source_credits.json`; the one-link
 hosted intake then receives the verified title, poet, singer, music, language,
@@ -460,8 +478,8 @@ separately trusted downloader with suitable egress.
 
 The following is the historical Gemini transport comparison. Those two
 transports preserved the same model and audio capabilities. Together requires
-a separate validated speech-evidence implementation and is now the default;
-these legacy examples are not an automatic fallback:
+a separate validated speech-evidence implementation. OpenRouter is the current
+default; direct Google remains an explicit alternative:
 
 ```sh
 BHAKTI_GEMINI_PROVIDER=openrouter python3 scripts/bhakti_pipeline.py --publish --url URL
@@ -490,7 +508,7 @@ both transports, resolved to Gemini 3.7 Flash through OpenRouter and returned th
 exact expected source and Roman line. The direct Google transport was rejected
 before inference with `429 RESOURCE_EXHAUSTED`, which is a quota/billing state on
 the calling project rather than a model-quality result. At that time OpenRouter
-was the pinned default for hosted intake; the owner has since selected Together. Before switching a deployment to the
+was the pinned default for hosted intake; Together was tried and OpenRouter has since been restored. Before switching a deployment to the
 direct transport, confirm that its own key passes:
 
 ```sh
@@ -515,7 +533,7 @@ Seven songs may progress concurrently without producing an uncontrolled API
 burst. A process-wide scheduler independently caps provider requests at three,
 starts them at least 350 ms apart, and honors the server's `Retry-After` header
 before bounded backoff. OpenRouter routing preferences and same-model provider
-fallbacks apply only when that legacy provider is explicitly selected. This keeps the Mac and
+fallback settings apply only to OpenRouter; benchmark requests pin their route. This keeps the Mac and
 local stages busy while respecting upstream rather than using a blunt two-song
 limit.
 
