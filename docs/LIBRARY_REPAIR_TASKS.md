@@ -126,7 +126,7 @@ The previous Gurbāṇī evidence and selected additions remain documented in
 
 ## Southern backlog release evidence
 
-Two reviewed Tamil readers are being released: Toṭuṭaiya Seviyan (Dharmapuram
+Two reviewed Tamil readers are live in `c48d702f` (six deployed public files match): Toṭuṭaiya Seviyan (Dharmapuram
 P. Swaminathan) and Tiruppāvai 27, Kūḍārai Vellum Sīr Gōvindā (M. L.
 Vasanthakumari). Both were regenerated through the production generator from
 reviewed cached stages. All 20 display groups retain cached performance order
@@ -145,3 +145,38 @@ humming/instrumental records, which may be a wrong version or a transcription
 omission. Neither fulfills the intended hymn without recording review.
 Uyarvara has source, attribution and gloss issues; Brahmam has an unresolved
 verb interpretation. Five further readers have guarded editorial proposals.
+
+## Expanded owner scope and active parallel work
+
+The latest owner instruction supersedes the original goal wording that deferred
+the Vedanta architecture: recover its design, inspect the Time Crystal/Dev
+DeepSeek harness, and implement useful economical parts. The maintained scope is
+this task document. Existing-song repairs and backlog intake both remain required.
+
+- [x] Recover the source-first Vedanta translation design and research API/local
+  embedding options in `TRANSLATION_ENGINE_PLAN.md`.
+- [x] Implement exact per-token dictionary-sense evidence and independent consumer
+  checks; 68 focused tests pass against the isolated scoped pipeline. This is
+  structural verification, not a claim of automatic linguistic correctness.
+- [ ] Reuse appropriate bounded source-research mechanics from the existing Dev
+  harness after inspecting actual code; do not import unfinished controllers or
+  another project's budget. Qualify semantic behavior separately.
+- [ ] Review connotation, readable source-supported compounds and contextual
+  vocabulary consistency alongside literal agency and imagery.
+- [ ] Publish four further reviewed southern readers; resolve Kolaru's repeated
+  phrase representation separately before release.
+- [ ] Correct backlog recording identities: Harivarasanam needs the evidenced
+  307-second Sony/Magnasound Yesudas art track; the Shweta Mohan recording is
+  Jagadoddharana Jaya Jagadeesha, a Sathya Sai bhajan, not the Purandaradasa hymn.
+- [ ] Audit evidenced section-level attribution for composite aartis and long
+  traditional recordings, retaining the established Sai aarti presentation.
+- [ ] Fix mobile filter row position/touch highlighting and add a singer facet.
+- [ ] Add play-next versus append choices, retain played queue history and previous
+  navigation, and clear upcoming songs without interrupting current playback.
+
+The four-song Gurbani run stopped on an explicit provider503 after 51 successful
+responses. It has $1.8996075 reported cost and a retained $0.01898925 unknown
+reservation within its $12 cap. Exact successful-request replay is being reviewed
+for recovery; no completed paid evidence should be needlessly regenerated.
+So Satgur's timing/gloss stages are available; Dhan Dhan still has two unresolved
+first-syllable measurements. No new Gurbani reader is published from this run.

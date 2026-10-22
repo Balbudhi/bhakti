@@ -9,6 +9,7 @@ from unittest.mock import patch
 
 import bhakti_pipeline as pipeline
 import retranslate_bhakti as repair
+from test_sense_decisions import decisions_for
 
 
 class ExistingReaderRepairTests(unittest.TestCase):
@@ -72,11 +73,13 @@ class ExistingReaderRepairTests(unittest.TestCase):
                   'TARGET audited source lines (return these IDs only):\n')
         lines = json.JSONDecoder().raw_decode(prompt.split(marker, 1)[1].lstrip())[0]
         if is_gloss:
+            decisions = decisions_for(lines, self.reader['SONG_META']['languages'])
             return {'packet': {'glosses': [{
                 'id': line['id'], 'word_glosses': [{'roman': token, 'gloss': 'contextual meaning',
                     'concept_key': '', 'preserve_in_english': False} for token in line['roman'].split()],
                 'semantic_frame': {field: '' for field in pipeline.SEMANTIC_FRAME_FIELDS},
                 'grammar_note': 'Reviewed syntax', 'uncertainty': '',
+                'sense_decisions': decisions[line['id']],
             } for line in lines]}}
         return {'packet': {'translations': [{
             'id': line['id'], 'literal_english': self.english[line['id']],

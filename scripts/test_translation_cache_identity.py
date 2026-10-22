@@ -7,6 +7,7 @@ import unittest
 from unittest.mock import patch
 
 import bhakti_pipeline as pipeline
+from test_sense_decisions import decisions_for
 
 REAL_REVIEW = pipeline.independently_review_translations
 
@@ -35,13 +36,14 @@ class TranslationCacheIdentityTests(unittest.TestCase):
         value = p.start(); self.addCleanup(p.stop)
         return value
 
-    @staticmethod
-    def rows(lines):
+    def rows(self, lines):
+        decisions = decisions_for(lines, self.audited.get('packet', {}).get('metadata', {}).get('languages'))
         return [{'id': line['id'], 'word_glosses': [
                     {'roman': token, 'gloss': 'contextual meaning', 'concept_key': '', 'preserve_in_english': False}
                     for token in line['roman'].split()],
                  'semantic_frame': {key: '' for key in pipeline.SEMANTIC_FRAME_FIELDS},
-                 'grammar_note': '', 'uncertainty': ''} for line in lines]
+                 'grammar_note': '', 'uncertainty': '',
+                 'sense_decisions': decisions[line['id']]} for line in lines]
 
     def provider(self, model, key, prompt, **kwargs):
         self.calls.append((kwargs['schema_name'], prompt))
@@ -225,11 +227,11 @@ class TranslationCacheIdentityTests(unittest.TestCase):
         self.audited['packet']['metadata'] = {'languages': ['Hindi']}
         self.gloss(); self.translate()
         self.assertIn('hi.man.mind', self.calls[0][1])
-        self.assertNotIn('hi.man.mind', self.calls[1][1])
+        self.assertIn('hi.man.mind', self.calls[1][1])
         self.translate(job={'languages': ['Hindi']})
         self.assertIn('hi.man.mind', self.calls[-1][1])
-        self.translate(job={'languages': ['Punjabi', 'Hindi']})
-        self.assertNotIn('hi.man.mind', self.calls[-1][1])
+        with self.assertRaisesRegex(RuntimeError, 'language'):
+            self.translate(job={'languages': ['Punjabi', 'Hindi']})
 
     def real_review(self, languages=None):
         translations = [{'id': line['id'], 'literal_english': 'meaning'} for line in self.lines]

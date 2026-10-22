@@ -84,7 +84,8 @@
       "project_policy": {
         "automatic_replacement": false,
         "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
-      }
+      },
+      "entry_id": "platts1884.man.p1069"
     },
     {
       "language": "hi",
@@ -148,7 +149,8 @@
       "project_policy": {
         "automatic_replacement": false,
         "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
-      }
+      },
+      "entry_id": "platts1884.rag.p583"
     },
     {
       "language": "hi",
@@ -225,7 +227,8 @@
       "project_policy": {
         "automatic_replacement": false,
         "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
-      }
+      },
+      "entry_id": "platts1884.ras.p591"
     },
     {
       "language": "hi",
@@ -302,7 +305,8 @@
       "project_policy": {
         "automatic_replacement": false,
         "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
-      }
+      },
+      "entry_id": "platts1884.maya.p987"
     },
     {
       "language": "hi",
@@ -379,7 +383,8 @@
       "project_policy": {
         "automatic_replacement": false,
         "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
-      }
+      },
+      "entry_id": "platts1884.har.p1215"
     }
   ],
   "excluded_candidates": [

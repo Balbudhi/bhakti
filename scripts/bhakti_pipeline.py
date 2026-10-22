@@ -49,7 +49,7 @@ SITE_ORIGIN = "https://bhakti.eeshan.xyz"
 MODEL = gemini.MODEL
 LONG_MERGE_VERSION = 7
 LONG_TRANSCRIPT_CONTRACT_VERSION = 4
-GLOSS_CONTRACT_VERSION = 5
+GLOSS_CONTRACT_VERSION = 6
 TRANSLATION_INPUT_VERSION = 8
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
@@ -2202,13 +2202,15 @@ def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str
 
 
 def fresh_gloss_contract_errors(lines: list[dict[str, Any]],
-                                gloss_rows: list[dict[str, Any]]) -> list[str]:
+                                gloss_rows: list[dict[str, Any]],
+                                languages: list[str] | None = None) -> list[str]:
     """Fresh glosses have no locked English that could authorize preservation.
 
     Keep this separate from the legacy/public validator: generate-only must
     still accept previously reviewed, explicitly retained concepts.
     """
     errors = gloss_contract_errors(lines, gloss_rows)
+    errors.extend(bhakti_translation_policy.sense_decision_errors(lines, gloss_rows, languages))
     if preserved_term_registry().get("defaultTreatment") == "translate_contextually":
         for row in gloss_rows:
             for index, word in enumerate(row.get("word_glosses", [])):
@@ -2243,7 +2245,7 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
     existing = read_packet(target)
     if (existing and existing.get("fingerprint") == fingerprint and not options.force
             and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-            and not fresh_gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []))):
+            and not fresh_gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []), languages)):
         return existing
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
         term_registry = preserved_term_registry()
@@ -2265,6 +2267,20 @@ Translate ordinary words and philosophical concepts into precise English, using 
 
 {bhakti_translation_policy.guidance(batch + context, languages=languages)}
 
+For every lexical word, return exactly one sense_decisions item in word-index order.
+Copy word_index and roman from TOKEN CANDIDATES. Account for every supplied
+(entry_id, sense_id) exactly once in chosen or rejected. Explain rejected senses,
+the chosen contextual meaning (including any deliberate simultaneous senses), and
+the grammatical role. dictionary_supported requires a selected supplied sense;
+contextual_inference uses no selected supplied sense and explains the grammar/context
+when no entry fits or no dictionary is supplied for this language. Do not invent IDs.
+missing_evidence means you cannot resolve the meaning, not a mere dictionary gap.
+The primary word gloss must express the choice, and the semantic frame must agree.
+These are your proposed interpretations, awaiting independent review.
+
+TOKEN CANDIDATES (complete surface bindings, not preselected meanings):
+{json.dumps(bhakti_translation_policy.token_candidates(batch, languages), ensure_ascii=False)}
+
 CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
 
@@ -2277,7 +2293,7 @@ NEARBY CONTEXT (do not return these IDs unless also targets):
 {json.dumps(context, ensure_ascii=False)}
 
 Return strict JSON:
-{{"glosses":[{{"id":"canonical-id","word_glosses":[{{"roman":"exact token","gloss":"short contextual meaning","concept_key":"","preserve_in_english":false}}],"semantic_frame":{{"agent":"","action_or_state":"","patient_or_complement":"","modifiers":"","negation_or_modality":"","literal_image_and_agency":"","idiom_or_phrase":"","cross_line_relation":""}},"grammar_note":"","uncertainty":""}}]}}"""
+{{"glosses":[{{"id":"canonical-id","word_glosses":[{{"roman":"exact token","gloss":"short contextual meaning","concept_key":"","preserve_in_english":false}}],"semantic_frame":{{"agent":"","action_or_state":"","patient_or_complement":"","modifiers":"","negation_or_modality":"","literal_image_and_agency":"","idiom_or_phrase":"","cross_line_relation":""}},"grammar_note":"","uncertainty":"","sense_decisions":[{{"word_index":0,"roman":"exact token","evidence_status":"contextual_inference","chosen":[],"rejected":[],"contextual_reason":"source/context reason","grammatical_role":"role in clause"}}]}}]}}"""
     schema = {"type": "object", "properties": {"glosses": {"type": "array", "items": {
         "type": "object", "properties": {
             "id": {"type": "string"}, "word_glosses": {"type": "array", "items": {"type": "object", "properties": {
@@ -2287,8 +2303,9 @@ Return strict JSON:
             "semantic_frame": {"type": "object", "properties": {
                 field: {"type": "string"} for field in SEMANTIC_FRAME_FIELDS},
                 "required": list(SEMANTIC_FRAME_FIELDS), "additionalProperties": False},
-            "grammar_note": {"type": "string"}, "uncertainty": {"type": "string"}},
-        "required": ["id", "word_glosses", "semantic_frame", "grammar_note", "uncertainty"], "additionalProperties": False}}},
+            "grammar_note": {"type": "string"}, "uncertainty": {"type": "string"},
+            "sense_decisions": bhakti_translation_policy.sense_decision_schema()},
+        "required": ["id", "word_glosses", "semantic_frame", "grammar_note", "uncertainty", "sense_decisions"], "additionalProperties": False}}},
         "required": ["glosses"], "additionalProperties": False}
     if len(lines) <= 80:
         result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=options.timeout,
@@ -2321,7 +2338,7 @@ Return strict JSON:
                     and cached.get("fingerprint") == batch_identity and not options.force):
                 cached_rows = cached.get("response", {}).get("packet", {}).get("glosses", [])
                 if (cached.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-                        and not fresh_gloss_contract_errors(batch, cached_rows)):
+                        and not fresh_gloss_contract_errors(batch, cached_rows, languages)):
                     return cached
 
             def request(target_lines: list[dict[str, Any]], absolute_start: int, label: str) -> dict[str, Any]:
@@ -2344,7 +2361,7 @@ Return strict JSON:
                 returned = [row.get("id") for row in response["packet"].get("glosses", [])]
                 if returned != target_ids:
                     raise RuntimeError(f"gloss batch {label} returned IDs out of order or incomplete")
-                mapping_errors = fresh_gloss_contract_errors(target_lines, response["packet"]["glosses"])
+                mapping_errors = fresh_gloss_contract_errors(target_lines, response["packet"]["glosses"], languages)
                 if mapping_errors:
                     raise RuntimeError(f"gloss batch {label} violates surface-token mapping: {mapping_errors[:3]}")
                 return response
@@ -2360,7 +2377,7 @@ Return strict JSON:
                     if not (child_packet and child_packet.get("target_ids") == child_ids
                             and child_packet.get("fingerprint") == child_identity
                             and child_packet.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-                            and not fresh_gloss_contract_errors(child, child_packet.get("response", {}).get("packet", {}).get("glosses", []))
+                            and not fresh_gloss_contract_errors(child, child_packet.get("response", {}).get("packet", {}).get("glosses", []), languages)
                             and not options.force):
                         child_packet = {
                             "target_ids": child_ids,
@@ -2390,10 +2407,11 @@ Return strict JSON:
                                            for row in packet["response"]["packet"]["glosses"]]},
                   "batch_responses": packets, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
                   "resolved_model": options.model}
-    errors = fresh_gloss_contract_errors(lines, result.get("packet", {}).get("glosses", []))
+    errors = fresh_gloss_contract_errors(lines, result.get("packet", {}).get("glosses", []), languages)
     if errors:
         raise RuntimeError(f"gloss output violates source contract: {errors[:3]}")
     result["gloss_contract_version"] = GLOSS_CONTRACT_VERSION
+    result["sense_languages"] = languages
     result["fingerprint"] = fingerprint
     write_json(target, result)
     return result
@@ -2533,7 +2551,19 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     gloss_rows = glosses['packet'].get('glosses', [])
     gloss_by_id = {row['id']: row for row in gloss_rows}
     provided_translation = supplied_translation(job)
-    languages = job.get("languages")
+    audited_languages = audited.get("packet", {}).get("metadata", {}).get("languages")
+    languages = job.get("languages", audited_languages)
+    def language_identity(value: Any) -> set[str]:
+        aliases = {"hi": "hindi", "hindustani": "hindi", "classical hindi": "hindi"}
+        return {aliases.get(str(item).strip().casefold(), str(item).strip().casefold())
+                for item in (value or [])}
+    for label, evidence_languages in (("audited source", audited_languages),
+                                      ("gloss evidence", glosses.get("sense_languages"))):
+        if evidence_languages is not None and language_identity(evidence_languages) != language_identity(languages):
+            raise RuntimeError(f"translation language conflicts with {label}")
+    sense_errors = bhakti_translation_policy.sense_decision_errors(lines, gloss_rows, languages)
+    if sense_errors:
+        raise RuntimeError(f"translation input violates sense evidence contract: {sense_errors[:3]}")
     policy = translation_policy_payload()
     fingerprint = text_stage_fingerprint("translation", options.model,
         {"lines": lines, "glosses": gloss_rows, "provided_translation": provided_translation,

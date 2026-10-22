@@ -1,10 +1,13 @@
 # Contextual translation engine
 
-Status: implementation proposal, researched 2026-10-22. No embedding or paid
-generation calls were run for this plan. The first release should add cited
-lexical retrieval and explicit contextual sense decisions to the existing
-pipeline, retaining Gemini 3.7 Flash as the normal generator and escalating only
-failed units. It should operate automatically within a frozen run budget.
+Status: first contextual-sense slice implemented and structurally checked; embedding
+retrieval remains a researched proposal. Five cited Hindi entries now have stable
+IDs. Fresh glosses record an exact per-token contextual decision and disposition
+of supplied senses; translation and independent review consume that evidence.
+Missing dictionaries permit explicit contextual inference; unresolved meaning
+blocks publication. These checks do not establish semantic accuracy across
+languages. No embedding calls were run. Gemini 3.7 Flash remains the normal
+generator, with escalation for failed units inside a frozen run budget.
 
 ## Recovered design and available assets
 
@@ -26,7 +29,7 @@ it does not claim to recover existing executable code.
 
 | Existing asset | Reuse | Limit |
 | --- | --- | --- |
-| `scripts/bhakti_translation_policy.py` and `data/bhakti_lexicon.json` | Shared editorial rules, exact-token language filters, 5 Platts entries / 19 candidate senses with print-page and homograph evidence | Hindi/Hindustani only; no inflection analysis or contextual selection; not a comprehensive dictionary |
+| `scripts/bhakti_translation_policy.py` and `data/bhakti_lexicon.json` | Shared editorial rules, exact-token language filters, 5 Platts entries / 19 candidate senses with print-page and homograph evidence | Hindi/Hindustani evidence only; explicit contextual decisions implemented, no inflection analysis; not a comprehensive dictionary |
 | `scripts/bhakti_pipeline.py` | Audited performed text; gloss → frame → English → independent review; actual neighboring source context; exact caches, scheduler, deterministic generation | Faithfulness flags are model claims; the demonstrated Har Jīu agency error passed them |
 | `scripts/editorial_baselines.py` | Saved owner English enforcement before writing | Never rewrite the owner's English to fit a new analysis; report conflicts separately |
 | `scripts/audit_translation_style.py` / `scripts/retranslate_bhakti.py` | Existing-text audit and explicit gloss reconstruction | Choose reconstruction when glosses are wrong; polishing English cannot repair them |
