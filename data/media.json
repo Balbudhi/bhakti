@@ -1015,6 +1015,18 @@
         "sha256": "7282cb2f96c2de8ac4b3918b7bf8e8981b9b4469f2ff90db130137c18c72a2ec"
       }
     ],
+    "jo-achyutananda": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-achyutananda.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "3c716ca60b213341a76c0ddeac54e17657f9673f17cfa15df7e1fafeaaf5d0f1"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-achyutananda.m4a",
+        "type": "audio/mp4",
+        "sha256": "121784b47005a0a27bd90c6997f35630490bf173de4cf45fda2e7d448f937fda"
+      }
+    ],
     "jo-kachu-sankat-hoye-hamaro": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-kachu-sankat-hoye-hamaro.m4a",
@@ -1401,6 +1413,18 @@
         "sha256": "f93fd9e5f9b2ef55618b34a64e9c428a4ceddf6860feb0f55c18e7bb484770b6"
       }
     ],
+    "margazhi-thingal-madhi-niraindha": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/margazhi-thingal-madhi-niraindha.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "1330aaa3b01e94d140c0faa99655458b7444ac433d4683966bfeaf4657226d0b"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/margazhi-thingal-madhi-niraindha.m4a",
+        "type": "audio/mp4",
+        "sha256": "78e115bcb948e4cccf8fd2bbbe0a18c3a53defa4c007559a89b727c4bf413d7c"
+      }
+    ],
     "mat-kar-moh-too-hari-bhajan-ko-maan-re": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mat-kar-moh-too-hari-bhajan-ko-maan-re.m4a",
@@ -1704,6 +1728,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/om-pandit-jasraj-mandukya.m4a",
         "type": "audio/mp4",
         "sha256": "cd06fbe28fd5df349ef0a348efd075d7115a989664a493de9509a267dbad9de7"
+      }
+    ],
+    "paluke-bangaramayena": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/paluke-bangaramayena.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "f9e71f3e12db5c475594408c8a3706b5bd53634727167d8bd550aa397acc92a4"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/paluke-bangaramayena.m4a",
+        "type": "audio/mp4",
+        "sha256": "333e390121f0067c3dbec55b4c3940f93b148f3ef7ebadec79e68f416dce963d"
       }
     ],
     "parvati-devi-mahamayavini": [
@@ -2393,6 +2429,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/uttho-uttho.m4a",
         "type": "audio/mp4",
         "sha256": "b1f088cedf93870bfbd4b1927077acfce96ea6b063cd2b7d4993adddbf869afd"
+      }
+    ],
+    "venkatachala-nilayam": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/venkatachala-nilayam.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "a9d77682a8e1b3f3fc25f9bb96016a79eb4acd2f07160a4bb1ace036662c5ead"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/venkatachala-nilayam.m4a",
+        "type": "audio/mp4",
+        "sha256": "492e07326361ebfc15a411b51adafb84aca9a03bac73a1f6d481252ea5f85289"
       }
     ],
     "vighnaharan-gajvadan": [

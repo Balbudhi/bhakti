@@ -8127,5 +8127,157 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Kṛṣṇa",
     "queueNumber": 262
+  },
+  {
+    "slug": "margazhi-thingal-madhi-niraindha",
+    "queueId": "3c8318ea",
+    "title": "Mārgaḻi Tiṅgaḷ Mati Niṟainta",
+    "credit": "Āṇḍāḷ · M. L. Vasanthakumari",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Margali Tingal Mati Niṟainta",
+      "Margali Tingal Mati Nirainta",
+      "Vishnu",
+      "Visnu",
+      "Andal · M. L. Vasanthakumari",
+      "Andal",
+      "Krshna",
+      "Krsna",
+      "Margazhi Thingal",
+      "Thiruppavai 1"
+    ],
+    "writer": "Āṇḍāḷ",
+    "singer": "M. L. Vasanthakumari",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/margazhi-thingal-madhi-niraindha.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/margazhi-thingal-madhi-niraindha.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 264
+  },
+  {
+    "slug": "paluke-bangaramayena",
+    "queueId": "5beaa702",
+    "title": "Palukē Baṅgāramāyenā",
+    "credit": "Bhadrācala Rāmadāsu · Uthara Unnikrishnan",
+    "languageTags": [
+      "Telugu"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Palukē Bangaramayena",
+      "Rama",
+      "Bhadracala Ramadasu · Uthara Unnikrishnan",
+      "Bhadracala Ramadasu",
+      "Paluke Bangaramayena Uthara Unnikrishnan",
+      "Paluke Bangaaramaayena"
+    ],
+    "writer": "Bhadrācala Rāmadāsu",
+    "singer": "Uthara Unnikrishnan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/paluke-bangaramayena.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/paluke-bangaramayena.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāma",
+    "queueNumber": 256
+  },
+  {
+    "slug": "jo-achyutananda",
+    "queueId": "eb9071eb",
+    "title": "Jō Acyutānanda",
+    "credit": "Annamācārya · Priya Sisters",
+    "languageTags": [
+      "Telugu"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Jō Acyutananda",
+      "Jo Acyutananda",
+      "Krshna",
+      "Krsna",
+      "Annamacarya · Priya Sisters",
+      "Annamacarya",
+      "Vishnu",
+      "Visnu",
+      "Rama",
+      "Jo Achyutananda Priya Sisters"
+    ],
+    "writer": "Annamācārya",
+    "singer": "Priya Sisters",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-achyutananda.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jo-achyutananda.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Kṛṣṇa",
+    "queueNumber": 258
+  },
+  {
+    "slug": "venkatachala-nilayam",
+    "queueId": "07d1bd83",
+    "title": "Veṅkaṭācala Nilayam",
+    "credit": "Purandaradāsa · Rahul Vellal",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Vengkatacala Nilayam",
+      "Venkatacala Nilayam",
+      "Vishnu",
+      "Visnu",
+      "Purandaradasa · Rahul Vellal",
+      "Purandaradasa",
+      "Venkatachala Nilayam Rahul Vellal"
+    ],
+    "writer": "Purandaradāsa",
+    "singer": "Rahul Vellal",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/venkatachala-nilayam.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/venkatachala-nilayam.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 265
   }
 ];
