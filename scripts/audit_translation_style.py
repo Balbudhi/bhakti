@@ -124,6 +124,10 @@ Return strict JSON only."""
 
 
 def review_max_completion_tokens(targets: list[dict[str, Any]], *, model: str = "") -> int:
+    # Saved high-reasoning 3.7 audits used 20,338 tokens for 18 lines and
+    # 24,447 for 30; the line-scaled cap truncated otherwise viable reviews.
+    if gemini.provider_name() == "openrouter" and model == gemini.GEMINI_MODEL:
+        return 32768
     # Together GPT-OSS counts internal reasoning against max_tokens. Small
     # lexical batches exhausted 4096–5376 tokens before emitting any JSON.
     if gemini.provider_name() == "together" and model in {"openai/gpt-oss-120b", "openai/gpt-oss-20b"}:
