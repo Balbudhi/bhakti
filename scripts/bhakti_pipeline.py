@@ -35,6 +35,7 @@ import process_song_gemini as gemini
 import gloss_policy
 import bhakti_translation_policy
 import editorial_baselines
+from display_word_map import clean_display_word_map
 import naming
 import resolve_youtube_music_audio as ytmusic
 import tag_taxonomy
@@ -3331,6 +3332,10 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
                               "words": words,
                               "nameTable": bool(line.get("name_table")),
                               "grammarNote": naming.canonical_iast(gloss_by_id[line_id].get("grammar_note", ""))}
+        line_data[line_id], marker_cleanup = clean_display_word_map(line_data[line_id])
+        if marker_cleanup["unlinkedEnglish"]:
+            write_json(song_dir / ".transcription" / "display-word-map" / f"{line_index:04d}.json",
+                       {"line_id": line_id, **marker_cleanup})
     if structural_markers:
         meta["structuralMarkers"] = structural_markers
     sequence = [{"ref": event["ref"],

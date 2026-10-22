@@ -629,7 +629,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Tere caraṇõ mẽ khilne de, तेरे caraṇõ mẽ khilne de",
+    "roman": "Tere caraṇõ mẽ khilne de, tere caraṇõ mẽ khilne de",
     "english": "{3,4:Let us bloom }{0,1,2:at your feet, }{8,9:let us bloom }{5,6,7:at your feet}",
     "words": [
       {
@@ -663,7 +663,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "तेरे",
+        "roman": "tere",
         "gloss": "your",
         "concept_key": "",
         "preserve_in_english": false
@@ -693,7 +693,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Permissive verb construction: oblique infinitive khilne + imperative de. The second half contains the surface Devanagari spelling tere copied exactly from the roman text."
+    "grammarNote": "Permissive verb construction: oblique infinitive khilne + imperative de. The phrase repeats the request to bloom at your feet."
   },
   "verse-2-line-1": {
     "source": "हम गाते रहें गुण तेरे सदा, हम हँसते रहें तेरी शरण में",

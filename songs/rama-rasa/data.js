@@ -101,7 +101,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maiṁ mērā ghara jāḷiyā rē jōgiyā jiyō, dīyā palītā hātha",
-    "english": "{0:I }{3:burned }{1:my }{2:house, }{4,5,6:O noble jogī, }{7:putting }{8:the torch }{9:in hand.}",
+    "english": "{0:I }{3:burned }{1:my }{2:house, }{4,5,6:O noble ascetic, }{7:putting }{8:the torch }{9:in hand.}",
     "words": [
       {
         "roman": "maiṁ",
@@ -135,7 +135,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -232,7 +232,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kōī jāḷō ghara āpaṇō rē jōgiyā jiyō, calō hamārē sātha",
-    "english": "{0:Whoever }{1:burns }{3:their own }{2:house, }{4,5,6:O noble jogī, }{7:walk }{8,9:with us.}",
+    "english": "{0:Whoever }{1:burns }{3:their own }{2:house, }{4,5,6:O noble ascetic, }{7:walk }{8,9:with us.}",
     "words": [
       {
         "roman": "kōī",
@@ -266,7 +266,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -321,7 +321,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kai rāma rasa",
-    "english": "{0:Indeed, }{2:the rasa }{1:of Rāma—}",
+    "english": "{0:Indeed, }{2:the juice }{1:of Rāma—}",
     "words": [
       {
         "roman": "kai",
@@ -337,9 +337,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasa",
-        "gloss": "devotional nectar; divine essence",
+        "gloss": "juice; here, the sweetness of devotion pictured as a drink",
         "concept_key": "rasa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Nominal phrase headed by the compound rāma rasa preceded by the exclamatory/emphatic particle kai."
@@ -404,7 +404,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mīṭhō ghaṇō rē jōgiyā jiyō, pīyē amara hōya jāya",
-    "english": "{1:it is exceedingly }{0:sweet, }{2,3,4:O noble jogī; }{5:whoever drinks it }{7,8:becomes }{6:immortal.}",
+    "english": "{1:it is exceedingly }{0:sweet, }{2,3,4:O noble ascetic; }{5:whoever drinks it }{7,8:becomes }{6:immortal.}",
     "words": [
       {
         "roman": "mīṭhō",
@@ -426,7 +426,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -535,7 +535,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ghara jāḷyō ghara ūbharē rē jōgiyā jiyō, ghara rākhō ghara jāya",
-    "english": "{0:If the house }{1:is burned, }{2:the home }{3:is saved, }{4,5,6:O noble jogī; }{7:if the house }{8:is kept, }{9:the home }{10:is lost.}",
+    "english": "{0:If the house }{1:is burned, }{2:the home }{3:is saved, }{4,5,6:O noble ascetic; }{7:if the house }{8:is kept, }{9:the home }{10:is lost.}",
     "words": [
       {
         "roman": "ghara",
@@ -569,7 +569,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -678,7 +678,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ēka acambhō maiṁ dēkhiyō rē jōgiyā jiyō, maḍhō kāla nē khāya",
-    "english": "{0,1:A wonder }{2,3:I saw, }{4,5,6:O noble jogī: }{7:the hut }{10:devours }{8,9:Death.}",
+    "english": "{0,1:A wonder }{2,3:I saw, }{4,5,6:O noble ascetic: }{7:the hut }{10:devours }{8,9:Death.}",
     "words": [
       {
         "roman": "ēka",
@@ -712,7 +712,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -838,7 +838,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āgē āgē dhāva jaḷē rē jōgiyā jiyō, pīchē hariyā hōya",
-    "english": "{0,1:Ahead and ahead }{2:the wildfire }{3:burns, }{4,5,6:O noble jogī, }{7:and behind, }{9:it turns }{8:green.}",
+    "english": "{0,1:Ahead and ahead }{2:the wildfire }{3:burns, }{4,5,6:O noble ascetic, }{7:and behind, }{9:it turns }{8:green.}",
     "words": [
       {
         "roman": "āgē",
@@ -872,7 +872,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -969,7 +969,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "balihārī una rūkhaṛī rē jōgiyā jiyō, jaṛa kāṭō phala hōya",
-    "english": "{0:Praise be }{1:to that }{2:tree, }{3,4,5:O noble jogī: }{6,7:cut the root, }{9:and it bears }{8:fruit.}",
+    "english": "{0:Praise be }{1:to that }{2:tree, }{3,4,5:O noble ascetic: }{6,7:cut the root, }{9:and it bears }{8:fruit.}",
     "words": [
       {
         "roman": "balihārī",
@@ -997,7 +997,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1100,7 +1100,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhruva piyō prahlāda piyō rē jōgiyā jiyō, pīyē rahyō ravidāsa",
-    "english": "{0:Dhruva }{1:drank, }{2:Prahlāda }{3:drank, }{4,5,6:O noble jogī, }{9:and Ravidās }{8:kept on }{7:drinking.}",
+    "english": "{0:Dhruva }{1:drank, }{2:Prahlāda }{3:drank, }{4,5,6:O noble ascetic, }{9:and Ravidās }{8:kept on }{7:drinking.}",
     "words": [
       {
         "roman": "dhruva",
@@ -1134,7 +1134,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1243,7 +1243,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhagata kabīra rasa pīyē rahyō rē jōgiyā jiyō, phēra pīvaṇa rī āsa",
-    "english": "{0:Devotee }{1:Kabīr }{3,4:kept drinking }{2:the rasa, }{5,6,7:O noble jogī, }{10,11:with longing }{9:to drink }{8:again.}",
+    "english": "{0:Devotee }{1:Kabīr }{3,4:kept drinking }{2:the juice, }{5,6,7:O noble ascetic, }{10,11:with longing }{9:to drink }{8:again.}",
     "words": [
       {
         "roman": "bhagata",
@@ -1259,9 +1259,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasa",
-        "gloss": "devotional nectar; divine essence",
+        "gloss": "juice; here, the sweetness of devotion pictured as a drink",
         "concept_key": "rasa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "pīyē",
@@ -1283,7 +1283,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgiyā",
-        "gloss": "renunciant; ascetic",
+        "gloss": "ascetic; renunciant (direct address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1344,7 +1344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kai rāma rasa",
-    "english": "{0:Indeed, }{2:the rasa }{1:of Rāma!}",
+    "english": "{0:Indeed, }{2:the juice }{1:of Rāma!}",
     "words": [
       {
         "roman": "kai",
@@ -1360,9 +1360,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasa",
-        "gloss": "devotional nectar; divine essence",
+        "gloss": "juice; here, the sweetness of devotion pictured as a drink",
         "concept_key": "rasa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Final repetition of the refrain's opening nominal phrase kai rāma rasa."

@@ -280,11 +280,11 @@ window.SONG_LINES = {
     "source": "राजाराम कहो जी कहो जी",
     "sourceLanguage": "hi",
     "roman": "rājārāma kaho jī kaho jī",
-    "english": "{0,1,2:Chant Rājā Rām—}{3,4:chant it!}",
+    "english": "{0,1,2:Chant Rājā Rāma—}{3,4:chant it!}",
     "words": [
       {
         "roman": "rājārāma",
-        "gloss": "King Rama / Sovereign Lord Ram (compound noun)"
+        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun)"
       },
       {
         "roman": "kaho",
@@ -341,11 +341,11 @@ window.SONG_LINES = {
     "source": "राजाराम कहो जी",
     "sourceLanguage": "hi",
     "roman": "rājārāma kaho jī",
-    "english": "{0,1,2:Chant Rājā Rām.}",
+    "english": "{0,1,2:Chant Rājā Rāma.}",
     "words": [
       {
         "roman": "rājārāma",
-        "gloss": "King Rama / Sovereign Lord Ram (compound noun)"
+        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun)"
       },
       {
         "roman": "kaho",
@@ -566,7 +566,7 @@ window.SONG_LINES = {
     "source": "भगत भूल गये राम दिवाने",
     "sourceLanguage": "hi",
     "roman": "bhagata bhūla gaye rāma divāne",
-    "english": "{0:Devotees }{3,4:enraptured by Ram }{1,2:forget themselves;}",
+    "english": "{0:Devotees }{3,4:enraptured by Rāma }{1,2:forget themselves;}",
     "words": [
       {
         "roman": "bhagata",
@@ -729,7 +729,7 @@ window.SONG_LINES = {
     "source": "सूरत क्या कुब्जे की",
     "sourceLanguage": "hi",
     "roman": "sūrata kyā kubje kī",
-    "english": "{1:What }{0:beauty }{2,3:did Kubja possess?}",
+    "english": "{1:What }{0:beauty }{2,3:did Kubjā possess?}",
     "words": [
       {
         "roman": "sūrata",
@@ -741,7 +741,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kubje",
-        "gloss": "of Kubja / the hunchbacked woman (oblique proper noun, Skt. kubjā)"
+        "gloss": "of Kubjā / the hunchbacked woman (oblique proper noun, Skt. kubjā)"
       },
       {
         "roman": "kī",
@@ -780,7 +780,7 @@ window.SONG_LINES = {
     "source": "धन भारी से राम मिलत",
     "sourceLanguage": "hi",
     "roman": "dhana bhārī se rāma milata",
-    "english": "{3,4:If Ram could be attained }{0,1,2:through immense wealth,}",
+    "english": "{3,4:If Rāma could be attained }{0,1,2:through immense wealth,}",
     "words": [
       {
         "roman": "dhana",
@@ -841,7 +841,7 @@ window.SONG_LINES = {
     "source": "धन भारी से राम मिलत पत जाने सुदाम जी की",
     "sourceLanguage": "hi",
     "roman": "dhana bhārī se rāma milata pata jāne sudāma jī kī",
-    "english": "{3,4:If Ram could be attained }{0,1,2:through immense wealth, }{7,8,9:revered Sudama's }{5:honor }{6:would be lost.}",
+    "english": "{3,4:If Rāma could be attained }{0,1,2:through immense wealth, }{7,8,9:revered Sudāmā's }{5:honor }{6:would be lost.}",
     "words": [
       {
         "roman": "dhana",
@@ -952,7 +952,7 @@ window.SONG_LINES = {
     "source": "कहत कबीर सुनो भाई साधो",
     "sourceLanguage": "hi",
     "roman": "kahata kabīra suno bhāī sādho",
-    "english": "{0,1:Kabir says: }{2:listen, }{3:O fellow }{4:seekers.}",
+    "english": "{0,1:Kabīr says: }{2:listen, }{3:O fellow }{4:seekers.}",
     "words": [
       {
         "roman": "kahata",
@@ -1013,7 +1013,7 @@ window.SONG_LINES = {
     "source": "राम मिलत है भक्ति",
     "sourceLanguage": "hi",
     "roman": "rāma milata hai bhakti",
-    "english": "{0:Ram }{1,2:is attained }{3:through devotion.}",
+    "english": "{0:Rāma }{1,2:is attained }{3:through devotion.}",
     "words": [
       {
         "roman": "rāma",
@@ -1115,7 +1115,7 @@ window.SONG_LINES = {
     "source": "राम भजन से ए मुक्ति",
     "sourceLanguage": "hi",
     "roman": "rāma bhajana se e mukti",
-    "english": "{3,4:This liberation }{2:comes through }{0,1:singing praise of Ram.}",
+    "english": "{3,4:This liberation }{2:comes through }{0,1:singing praise of Rāma.}",
     "words": [
       {
         "roman": "rāma",

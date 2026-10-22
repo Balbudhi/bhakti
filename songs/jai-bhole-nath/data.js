@@ -1331,7 +1331,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "rom rom meṁ lipaṭ ke रहूँ",
+    "roman": "rom rom meṁ lipaṭ ke rahūṁ",
     "english": "{3,4:Having clung }{2:to }{0,1:every single pore, }{5:may I remain}",
     "words": [
       {
@@ -1365,13 +1365,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "रहूँ",
+        "roman": "rahūṁ",
         "gloss": "may I remain; let me abide (1st person singular subjunctive)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated 'rom rom' creates an exhaustive distributive locative ('in every single pore'). Note that the final verb token 'रहूँ' appears in Devanagari script in the source roman transcription and represents standard 1st person singular subjunctive 'rahūṁ'."
+    "grammarNote": "Reduplicated 'rom rom' creates an exhaustive distributive locative ('in every single pore'). The final verb rahūṁ is first-person singular subjunctive: may I remain."
   },
   "hiran-ka-roop": {
     "source": "हिरन का रूप मैं धरूँ",

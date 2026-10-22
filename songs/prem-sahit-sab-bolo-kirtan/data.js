@@ -1866,7 +1866,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "mīrā kā ika tārā बोले",
+    "roman": "mīrā kā ika tārā bole",
     "english": "{0,1:Mira's} {2:one-stringed} {3:lute} {4:speaks:}",
     "words": [
       {
@@ -1894,13 +1894,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "बोले",
+        "roman": "bole",
         "gloss": "speaks / sings / resonates",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'ika tārā' represents the one-stringed musical instrument 'ektārā'. 'बोले' is the 3rd person singular present indicative verb ('speaks/resonates'), appearing in Devanagari script in the source romanization."
+    "grammarNote": "'ika tārā' represents the one-stringed musical instrument 'ektārā'. 'bole' is the 3rd person singular present indicative verb ('speaks/resonates')."
   },
   "girdhar-nagar-1": {
     "source": "गिरधर नागर नटवर श्याम",

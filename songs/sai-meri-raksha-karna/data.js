@@ -1688,7 +1688,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Mujha sā koī pāpī तेरे dara pe na āyā hogā",
+    "roman": "Mujha sā koī pāpī tere dara pe na āyā hogā",
     "english": "{2,7:No }{3:sinner }{0,1:like me }{9:would have }{8:come }{4:to your }{5,6:threshold,}",
     "words": [
       {
@@ -1716,7 +1716,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "तेरे",
+        "roman": "tere",
         "gloss": "your",
         "concept_key": "",
         "preserve_in_english": false
@@ -1752,7 +1752,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "The token 'तेरे' occurs in Devanagari in the roman source string and represents the 2sg possessive tere modifying masculine oblique noun dara; āyā hogā is presumptive perfective."
+    "grammarNote": "The second-person possessive tere modifies the masculine oblique noun dara; āyā hogā is presumptive perfective."
   },
   "verse-5-line-2": {
     "source": "और जो आया होगा खाली लौटाया न होगा",

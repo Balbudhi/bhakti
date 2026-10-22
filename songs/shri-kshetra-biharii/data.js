@@ -1192,7 +1192,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Daśa abatāradhାରī he Mādhaba",
+    "roman": "Daśa abatāradhārī he Mādhaba",
     "english": "{0,1:Bearer of the ten incarnations, }{2:O }{3:Madhava,}",
     "words": [
       {
@@ -1202,7 +1202,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "abatāradhାରī",
+        "roman": "abatāradhārī",
         "gloss": "bearer/wielder of incarnations",
         "concept_key": "",
         "preserve_in_english": false

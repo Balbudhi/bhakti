@@ -261,7 +261,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Yeh māyā moh kī nagrī sab",
-    "english": "{0:This }{5:whole }{4:realm }{3:of }{1:illusion }and {2:attachment…}",
+    "english": "{0:This }{5:whole }{4:realm }{3:of }{1:worldly enchantment }and {2:attachment…}",
     "words": [
       {
         "roman": "Yeh",
@@ -269,7 +269,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "illusion"
+        "gloss": "worldly appearance and its power to beguile; worldly enchantment"
       },
       {
         "roman": "moh",
@@ -1251,7 +1251,7 @@ window.SONG_LINES = {
   },
   "v3e": {
     "roman": "Moh māyā kā bhār bahut hai",
-    "english": "The {3:burden }{2:of }{0:attachment }and {1:illusion }{5:is }{4:great…}",
+    "english": "The {3:burden }{2:of }{0:attachment }and {1:worldly enchantment }{5:is }{4:great…}",
     "words": [
       {
         "roman": "Moh",
@@ -1259,7 +1259,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "illusion"
+        "gloss": "worldly appearance and its power to beguile; worldly enchantment"
       },
       {
         "roman": "kā",

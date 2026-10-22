@@ -1984,7 +1984,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "janama maraṇa kā phera miṭā de hātha meṁ hai तेरे",
+    "roman": "janama maraṇa kā phera miṭā de hātha meṁ hai tere",
     "english": "{4,5:Erase}{3: the cycle}{2: of}{0: birth}{1: and death;}{8: it lies}{7: in}{9: your}{6: hands,}",
     "words": [
       {
@@ -2042,7 +2042,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "तेरे",
+        "roman": "tere",
         "gloss": "your; in your power",
         "concept_key": "",
         "preserve_in_english": false

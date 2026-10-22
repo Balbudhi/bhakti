@@ -798,8 +798,7 @@ window.SONG_LINES = {
       {
         "text": "नमामि",
         "wordIndices": [
-          2,
-          3
+          2
         ]
       }
     ],
@@ -821,12 +820,6 @@ window.SONG_LINES = {
       {
         "roman": "namāmi",
         "gloss": "I bow to / I salute",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "3",
-        "gloss": "3",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1840,13 +1833,12 @@ window.SONG_LINES = {
       {
         "text": "बिश्राम",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "rāma kāju kīnheṃ binu mohi kahā~ biśrāma",
-    "english": "{3:“Without }{2:accomplishing }{0:Rāma’s }{1:work, }{5:where is }{6:rest }{4,7:for me?”}",
+    "english": "{3:“Without }{2:accomplishing }{0:Rāma’s }{1:work, }{5:where is }{6:rest }{4:for me?”}",
     "words": [
       {
         "roman": "rāma",
@@ -1887,12 +1879,6 @@ window.SONG_LINES = {
       {
         "roman": "biśrāma",
         "gloss": "rest / repose",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "1",
-        "gloss": "1 (couplet number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3621,13 +3607,12 @@ window.SONG_LINES = {
       {
         "text": "हनुमान",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "āsiṣa deha gaī so haraṣi caleu hanumāna.",
-    "english": "{1:Giving }{0:her blessing, }{3:she }{2:departed; }{4:rejoicing, }{6:Hanumān }{5,7:went on.}",
+    "english": "{1:Giving }{0:her blessing, }{3:she }{2:departed; }{4:rejoicing, }{6:Hanumān }{5:went on.}",
     "words": [
       {
         "roman": "āsiṣa",
@@ -3668,12 +3653,6 @@ window.SONG_LINES = {
       {
         "roman": "hanumāna.",
         "gloss": "monkey-god; son of the Wind",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "2.",
-        "gloss": "2 (doha number marker)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5551,8 +5530,7 @@ window.SONG_LINES = {
       {
         "text": "बनै",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -5604,12 +5582,6 @@ window.SONG_LINES = {
       {
         "roman": "banai.",
         "gloss": "is possible; comes about; is made",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "1.",
-        "gloss": "1 (verse number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5998,8 +5970,7 @@ window.SONG_LINES = {
       {
         "text": "तर्जहीं",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -6051,12 +6022,6 @@ window.SONG_LINES = {
       {
         "roman": "tarjahī~.",
         "gloss": "challenge; taunt; intimidate",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "2.",
-        "gloss": "2 (verse number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -6493,8 +6458,7 @@ window.SONG_LINES = {
       {
         "text": "सही",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -6546,12 +6510,6 @@ window.SONG_LINES = {
       {
         "roman": "sahī.",
         "gloss": "truly; surely; indeed",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "3.",
-        "gloss": "3 (verse number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7946,8 +7904,7 @@ window.SONG_LINES = {
       {
         "text": "सतसंग",
         "wordIndices": [
-          8,
-          9
+          8
         ]
       }
     ],
@@ -8005,12 +7962,6 @@ window.SONG_LINES = {
       {
         "roman": "satasaṅga",
         "gloss": "communion with the virtuous; fellowship with saints",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "4",
-        "gloss": "4",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -11679,8 +11630,7 @@ window.SONG_LINES = {
       {
         "text": "नीर",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -11726,12 +11676,6 @@ window.SONG_LINES = {
       {
         "roman": "nīra.",
         "gloss": "tears; water.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "7.",
-        "gloss": "7 (dohā marker).",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -12924,8 +12868,7 @@ window.SONG_LINES = {
       {
         "text": "दीन",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -12971,12 +12914,6 @@ window.SONG_LINES = {
       {
         "roman": "dīna.",
         "gloss": "distressed / wretched",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "8.",
-        "gloss": "verse 8 [doha marker]",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -14282,13 +14219,12 @@ window.SONG_LINES = {
       {
         "text": "खिसिआन",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
     "roman": "paruṣa bacana suni kāṛhi asi bolā ati khisiāna",
-    "english": "{2:hearing }{0:harsh }{1:words, }{3:drawing }{4:his sword, }{5:he spoke, }{6:exceedingly }{7,8:enraged.}",
+    "english": "{2:hearing }{0:harsh }{1:words, }{3:drawing }{4:his sword, }{5:he spoke, }{6:exceedingly }{7:enraged.}",
     "words": [
       {
         "roman": "paruṣa",
@@ -14335,12 +14271,6 @@ window.SONG_LINES = {
       {
         "roman": "khisiāna",
         "gloss": "enraged; exasperated; stung with humiliation",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "9",
-        "gloss": "9 (dohā verse number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -15700,13 +15630,12 @@ window.SONG_LINES = {
       {
         "text": "मंद",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "sītahi trāsa dekhāvahi dharahiṁ rūpa bahu maṁda",
-    "english": "{2:displayed }{1:terror }{0:to Sītā }{3:and assumed }{5:many }{6:vile }{4,7:forms.}",
+    "english": "{2:displayed }{1:terror }{0:to Sītā }{3:and assumed }{5:many }{6:vile }{4:forms.}",
     "words": [
       {
         "roman": "sītahi",
@@ -15747,12 +15676,6 @@ window.SONG_LINES = {
       {
         "roman": "maṁda",
         "gloss": "vile; hideous; repulsive",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "10",
-        "gloss": "10; couplet ten",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -16897,13 +16820,12 @@ window.SONG_LINES = {
       {
         "text": "पोच",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "māsa divasa bītẽ mohi mārihi nisicara poca",
-    "english": "“When the {1:span }{0:of a month }{2:has passed, }{6:the vile }{5:demon }{4:will kill }{3,7:me.”}",
+    "english": "“When the {1:span }{0:of a month }{2:has passed, }{6:the vile }{5:demon }{4:will kill }{3:me.”}",
     "words": [
       {
         "roman": "māsa",
@@ -16944,12 +16866,6 @@ window.SONG_LINES = {
       {
         "roman": "poca",
         "gloss": "vile / wicked",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "11",
-        "gloss": "11",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -18720,13 +18636,12 @@ window.SONG_LINES = {
       {
         "text": "गहेउ",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
     "roman": "janu asoka aṅgāra dīnhi haraṣi uṭhi kara gaheu",
-    "english": "{0:Thinking that }{1:the Aśoka tree }{3:had given }{2:an ember, }{5:she rose }{4:in joy }{7,8:and caught it }{6:in her hand.}",
+    "english": "{0:Thinking that }{1:the Aśoka tree }{3:had given }{2:an ember, }{5:she rose }{4:in joy }{7:and caught it }{6:in her hand.}",
     "words": [
       {
         "roman": "janu",
@@ -18773,12 +18688,6 @@ window.SONG_LINES = {
       {
         "roman": "gaheu",
         "gloss": "[she] seized; grasped",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "12",
-        "gloss": "12",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -20322,8 +20231,7 @@ window.SONG_LINES = {
       {
         "text": "दास",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -20375,12 +20283,6 @@ window.SONG_LINES = {
       {
         "roman": "dāsa.",
         "gloss": "servant; devotee",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "13.",
-        "gloss": "13",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -21811,8 +21713,7 @@ window.SONG_LINES = {
       {
         "text": "नीर",
         "wordIndices": [
-          8,
-          9
+          8
         ]
       }
     ],
@@ -21870,12 +21771,6 @@ window.SONG_LINES = {
       {
         "roman": "nīra.",
         "gloss": "with tears; with water",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "14.",
-        "gloss": "fourteen (dohā number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -23378,8 +23273,7 @@ window.SONG_LINES = {
       {
         "text": "जानु",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -23425,12 +23319,6 @@ window.SONG_LINES = {
       {
         "roman": "jānu.",
         "gloss": "know; consider [them]",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "15.",
-        "gloss": "15",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -24688,8 +24576,7 @@ window.SONG_LINES = {
       {
         "text": "ब्याल",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -24741,12 +24628,6 @@ window.SONG_LINES = {
       {
         "roman": "byāla.",
         "gloss": "serpent; snake.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "16.",
-        "gloss": "16 (dohā number).",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -26064,8 +25945,7 @@ window.SONG_LINES = {
       {
         "text": "खाहु",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -26117,12 +25997,6 @@ window.SONG_LINES = {
       {
         "roman": "khāhu.",
         "gloss": "eat",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "17.",
-        "gloss": "17",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -27261,8 +27135,7 @@ window.SONG_LINES = {
       {
         "text": "भूरि",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -27314,12 +27187,6 @@ window.SONG_LINES = {
       {
         "roman": "bhūri.",
         "gloss": "immense; vast",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "18.",
-        "gloss": "18",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -28583,8 +28450,7 @@ window.SONG_LINES = {
       {
         "text": "अपार",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -28630,12 +28496,6 @@ window.SONG_LINES = {
       {
         "roman": "apāra.",
         "gloss": "boundless / immeasurable.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "19.",
-        "gloss": "19.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -29822,13 +29682,12 @@ window.SONG_LINES = {
       {
         "text": "बिषाद",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
     "roman": "suta badha surati kīnhi puni upajā hṛdaya~ biṣāda.",
-    "english": "{4:Then }{2,3:he recalled }{1:the slaying of }{0:his son, }{7:and grief }{5:arose }{6,8:in his heart.}",
+    "english": "{4:Then }{2,3:he recalled }{1:the slaying of }{0:his son, }{7:and grief }{5:arose }{6:in his heart.}",
     "words": [
       {
         "roman": "suta",
@@ -29875,12 +29734,6 @@ window.SONG_LINES = {
       {
         "roman": "biṣāda.",
         "gloss": "grief / sorrow.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "20.",
-        "gloss": "20 (couplet number).",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -31216,13 +31069,12 @@ window.SONG_LINES = {
       {
         "text": "नारि",
         "wordIndices": [
-          8,
-          9
+          8
         ]
       }
     ],
     "roman": "tāsu dūta maiṁ jā kari hari ānēhu priya nāri .",
-    "english": "{2:I am }{0:His }{1:messenger, }{3,4:whose }{7:beloved }{8:wife }{5:you abducted }{6,9:and brought away.}",
+    "english": "{2:I am }{0:His }{1:messenger, }{3,4:whose }{7:beloved }{8:wife }{5:you abducted }{6:and brought away.}",
     "words": [
       {
         "roman": "tāsu",
@@ -31275,12 +31127,6 @@ window.SONG_LINES = {
       {
         "roman": "nāri",
         "gloss": "wife / woman",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "21",
-        "gloss": "21",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -32735,8 +32581,7 @@ window.SONG_LINES = {
       {
         "text": "बिसारि",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -32782,12 +32627,6 @@ window.SONG_LINES = {
       {
         "roman": "bisāri",
         "gloss": "having forgotten / pardoned",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "22",
-        "gloss": "22",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -33998,8 +33837,7 @@ window.SONG_LINES = {
       {
         "text": "भगवान",
         "wordIndices": [
-          5,
-          6
+          5
         ]
       }
     ],
@@ -34039,12 +33877,6 @@ window.SONG_LINES = {
       {
         "roman": "bhagavāna",
         "gloss": "the Supreme Lord; the Blessed One",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "23",
-        "gloss": "23",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -35350,8 +35182,7 @@ window.SONG_LINES = {
       {
         "text": "लगाइ",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -35403,12 +35234,6 @@ window.SONG_LINES = {
       {
         "roman": "lagāi",
         "gloss": "apply; set",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "24",
-        "gloss": "twenty-four (verse number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -35862,7 +35687,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "jātudhāna suni rāvana bacanā. lāgē racaiṁ मूṛha sōi racanā ||",
+    "roman": "jātudhāna suni rāvana bacanā. lāgē racaiṁ mūṛha sōi racanā ||",
     "english": "{1:Having heard }{2:Ravana’s }{3:words, }{6:the foolish }{0:demons }{4:began }{5:to prepare }{7:that very }{8:contrivance.}",
     "words": [
       {
@@ -35902,7 +35727,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "मूṛha",
+        "roman": "mūṛha",
         "gloss": "foolish ones; deluded",
         "concept_key": "",
         "preserve_in_english": false
@@ -35920,7 +35745,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'lāgē' combines with the inflected infinitive 'racaiṁ' to form an inceptive verbal construction ('began to prepare'). 'मूṛha' is an appositional adjective qualifying 'jātudhāna'. The token 'मूṛha' retains mixed Devanagari script from the source text."
+    "grammarNote": "'lāgē' combines with the inflected infinitive 'racaiṁ' to form an inceptive verbal construction ('began to prepare'). 'mūṛha' is an appositional adjective qualifying 'jātudhāna'."
   },
   "line-295": {
     "source": "रहा न नगर बसन घृत तेला। बाढ़ी पूँछ कीन्ह कपि खेला ॥",
@@ -36691,8 +36516,7 @@ window.SONG_LINES = {
       {
         "text": "अकास",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -36738,12 +36562,6 @@ window.SONG_LINES = {
       {
         "roman": "akāsa.",
         "gloss": "the sky / heaven.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "25.",
-        "gloss": "25 (verse number).",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -37984,8 +37802,7 @@ window.SONG_LINES = {
       {
         "text": "जोरि",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -38031,12 +37848,6 @@ window.SONG_LINES = {
       {
         "roman": "jōri.",
         "gloss": "having joined / folding",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "26.",
-        "gloss": "26",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -39217,13 +39028,12 @@ window.SONG_LINES = {
       {
         "text": "कीन्ह",
         "wordIndices": [
-          8,
-          9
+          8
         ]
       }
     ],
     "roman": "carana kamala siru nā'i kapi gavanu rāma pahiṁ kīnha.",
-    "english": "{2,3:Bowing his head }{1:to her lotus }{0:feet, }{4:the monkey }{5,8:set forth }{6,7,9:towards Rāma.}",
+    "english": "{2,3:Bowing his head }{1:to her lotus }{0:feet, }{4:the monkey }{5,8:set forth }{6,7:towards Rāma.}",
     "words": [
       {
         "roman": "carana",
@@ -39276,12 +39086,6 @@ window.SONG_LINES = {
       {
         "roman": "kīnha.",
         "gloss": "made.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "27.",
-        "gloss": "27.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -40396,13 +40200,12 @@ window.SONG_LINES = {
       {
         "text": "काज",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
     "roman": "suni sugrīva haraṣa kapi kari ā'e prabhu kāja.",
-    "english": "{0:Hearing this, }{1:Sugrīva }{2:rejoiced: }{3:“The monkeys }{5:have returned, }{4:having accomplished }{6:the master’s }{7,8:task.”}",
+    "english": "{0:Hearing this, }{1:Sugrīva }{2:rejoiced: }{3:“The monkeys }{5:have returned, }{4:having accomplished }{6:the master’s }{7:task.”}",
     "words": [
       {
         "roman": "suni",
@@ -40449,12 +40252,6 @@ window.SONG_LINES = {
       {
         "roman": "kāja.",
         "gloss": "task; mission",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "28.",
-        "gloss": "28",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -41677,8 +41474,7 @@ window.SONG_LINES = {
       {
         "text": "कंज",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -41730,12 +41526,6 @@ window.SONG_LINES = {
       {
         "roman": "kaṃja",
         "gloss": "lotus",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "29",
-        "gloss": "29 [doha 29 number]",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -42922,13 +42712,12 @@ window.SONG_LINES = {
       {
         "text": "बाट",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
     "roman": "locana nija pada jaṃtrita jāhiṃ prāna kehiṃ bāṭa",
-    "english": "{0,1,2,3,4,5,6,7,8:Her eyes are locked upon her own feet; by what path could her life-breaths depart?}",
+    "english": "{0,1,2,3,4,5,6,7:Her eyes are locked upon her own feet; by what path could her life-breaths depart?}",
     "words": [
       {
         "roman": "locana",
@@ -42975,12 +42764,6 @@ window.SONG_LINES = {
       {
         "roman": "bāṭa",
         "gloss": "path; way",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "30",
-        "gloss": "thirty (doha 30 marker)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -44280,8 +44063,7 @@ window.SONG_LINES = {
       {
         "text": "जीति",
         "wordIndices": [
-          8,
-          9
+          8
         ]
       }
     ],
@@ -44339,12 +44121,6 @@ window.SONG_LINES = {
       {
         "roman": "jīti",
         "gloss": "having conquered; having defeated",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "31",
-        "gloss": "thirty-one; [dohā] 31",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -45591,8 +45367,7 @@ window.SONG_LINES = {
       {
         "text": "भगवंत",
         "wordIndices": [
-          5,
-          6
+          5
         ]
       }
     ],
@@ -45632,12 +45407,6 @@ window.SONG_LINES = {
       {
         "roman": "bhagavaṁta",
         "gloss": "O blessed Lord!",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "32",
-        "gloss": "32",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -46866,13 +46635,12 @@ window.SONG_LINES = {
       {
         "text": "तूल",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "taba prabhāva~ baṛavānalahiṃ jāri sakai khalu tūla",
-    "english": "{0,1:By your power, }{6:cotton }{4:can }{5:truly }{3:burn up }{2,7:the submarine fire.}",
+    "english": "{0,1:By your power, }{6:cotton }{4:can }{5:truly }{3:burn up }{2:the submarine fire.}",
     "words": [
       {
         "roman": "taba",
@@ -46913,12 +46681,6 @@ window.SONG_LINES = {
       {
         "roman": "tūla",
         "gloss": "cotton / a tuft of cotton",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "33",
-        "gloss": "33",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -48087,13 +47849,12 @@ window.SONG_LINES = {
       {
         "text": "बरूथ",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "nānā barana atula bala bānara bhālu barūtha",
-    "english": "{6:Hosts }{4:of monkeys }{5:and bears }{0:of various }{1:colors }{2:and incomparable }{3,7:might.}",
+    "english": "{6:Hosts }{4:of monkeys }{5:and bears }{0:of various }{1:colors }{2:and incomparable }{3:might.}",
     "words": [
       {
         "roman": "nānā",
@@ -48134,12 +47895,6 @@ window.SONG_LINES = {
       {
         "roman": "barūtha",
         "gloss": "hosts; armies; multitudes",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "34",
-        "gloss": "34 (couplet number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -49343,62 +49098,55 @@ window.SONG_LINES = {
       {
         "text": "चिक्करहिं",
         "wordIndices": [
-          0,
-          1
+          0
         ]
       },
       {
         "text": "दिग्गज",
         "wordIndices": [
-          2
+          1
         ]
       },
       {
         "text": "डोल",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "महि",
         "wordIndices": [
-          4
+          3
         ]
       },
       {
         "text": "गिरि",
         "wordIndices": [
-          5
+          4
         ]
       },
       {
         "text": "लोल",
         "wordIndices": [
-          6
+          5
         ]
       },
       {
         "text": "सागर",
         "wordIndices": [
-          7
+          6
         ]
       },
       {
         "text": "खरभरे।",
         "wordIndices": [
-          8
+          7
         ]
       }
     ],
     "roman": "cikkarahiṃ diggaja ḍola mahi giri lola sāgara kharabhare.",
-    "english": "{0:Chhand. }{2:The world-elephants}{1: trumpet}{4:, the earth}{3: quakes}{5:, mountains}{6: sway}{7:, and oceans}{8: roil in turmoil.}",
+    "english": "Chhand. {1:The world-elephants}{0: trumpet}{3:, the earth}{2: quakes}{4:, mountains}{5: sway}{6:, and oceans}{7: roil in turmoil.}",
     "words": [
-      {
-        "roman": "",
-        "gloss": "meter tag; chhand indicator",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
       {
         "roman": "cikkarahiṃ",
         "gloss": "trumpet loudly; shriek",
@@ -49737,8 +49485,7 @@ window.SONG_LINES = {
       {
         "text": "गावहीं",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -49790,12 +49537,6 @@ window.SONG_LINES = {
       {
         "roman": "gāvahīṃ",
         "gloss": "sing; chant aloud",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "1",
-        "gloss": "1",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -50200,7 +49941,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "janu kamaṭha kharpara sarparāja so लिखत अबिचल पावनी",
+    "roman": "janu kamaṭha kharpara sarparāja so likhata abicala pāvanī",
     "english": "{0:as though}{1: upon the tortoise’s}{2: carapace}{3: the king of serpents}{5: is writing}{4: that}{6: indelible,}{7: purifying story.}",
     "words": [
       {
@@ -50234,19 +49975,19 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "लिखत",
+        "roman": "likhata",
         "gloss": "is writing; inscribing",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "अबिचल",
+        "roman": "abicala",
         "gloss": "unshakeable; indelible; eternal",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "पावनी",
+        "roman": "pāvanī",
         "gloss": "purifying (record/glory)",
         "concept_key": "",
         "preserve_in_english": false
@@ -51970,8 +51711,7 @@ window.SONG_LINES = {
       {
         "text": "टेक",
         "wordIndices": [
-          9,
-          10
+          9
         ]
       }
     ],
@@ -52035,12 +51775,6 @@ window.SONG_LINES = {
       {
         "roman": "ṭēka",
         "gloss": "stubborn pride; obstinacy",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "36",
-        "gloss": "36",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -53370,8 +53104,7 @@ window.SONG_LINES = {
       {
         "text": "नास",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -53423,12 +53156,6 @@ window.SONG_LINES = {
       {
         "roman": "nāsa",
         "gloss": "destruction; ruin",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "37",
-        "gloss": "37",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -54621,8 +54348,7 @@ window.SONG_LINES = {
       {
         "text": "संत",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -54668,12 +54394,6 @@ window.SONG_LINES = {
       {
         "roman": "saṁta",
         "gloss": "the holy saints.",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "38",
-        "gloss": "38.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -57229,8 +56949,7 @@ window.SONG_LINES = {
       {
         "text": "तुम्हार",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -57282,12 +57001,6 @@ window.SONG_LINES = {
       {
         "roman": "tumhāra.",
         "gloss": "your; to you",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "40.",
-        "gloss": "40 (couplet number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -58683,8 +58396,7 @@ window.SONG_LINES = {
       {
         "text": "खोरि",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -58736,12 +58448,6 @@ window.SONG_LINES = {
       {
         "roman": "khōri",
         "gloss": "blame",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "41",
-        "gloss": "41",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -59856,8 +59562,7 @@ window.SONG_LINES = {
       {
         "text": "जाइ",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
@@ -59909,12 +59614,6 @@ window.SONG_LINES = {
       {
         "roman": "jāi",
         "gloss": "going; having gone",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "42",
-        "gloss": "42 (verse numeral)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -61124,8 +60823,7 @@ window.SONG_LINES = {
       {
         "text": "हानि",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
@@ -61171,12 +60869,6 @@ window.SONG_LINES = {
       {
         "roman": "hāni",
         "gloss": "harm / spiritual demerit",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "43",
-        "gloss": "43 (dohā number)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -62375,13 +62067,12 @@ window.SONG_LINES = {
       {
         "text": "समेत",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "jaya kṛpāla kahi calē aṅgada hanū samēta",
-    "english": "{2:Saying, }{0:“Victory }{1:to the Gracious One!”, }{4:Aṅgada }{3:set out }{6:along with }{5,7:Hanumān.}",
+    "english": "{2:Saying, }{0:“Victory }{1:to the Gracious One!”, }{4:Aṅgada }{3:set out }{6:along with }{5:Hanumān.}",
     "words": [
       {
         "roman": "jaya",
@@ -62422,12 +62113,6 @@ window.SONG_LINES = {
       {
         "roman": "samēta",
         "gloss": "along with; together with",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "44",
-        "gloss": "44",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -63572,13 +63257,12 @@ window.SONG_LINES = {
       {
         "text": "रघुबीर",
         "wordIndices": [
-          6,
-          7
+          6
         ]
       }
     ],
     "roman": "trāhi trāhi ārati harana sarana sukhada raghubīra.",
-    "english": "{0:Save me! }{1:Save me! }{3:O dispeller }{2:of distress, }{5:giver of peace }{4:in shelter, }{6,7:O hero of Raghu’s line!”}",
+    "english": "{0:Save me! }{1:Save me! }{3:O dispeller }{2:of distress, }{5:giver of peace }{4:in shelter, }{6:O hero of Raghu’s line!”}",
     "words": [
       {
         "roman": "trāhi",
@@ -63619,12 +63303,6 @@ window.SONG_LINES = {
       {
         "roman": "raghubīra.",
         "gloss": "O hero of Raghu's line",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "45.",
-        "gloss": "45",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -64871,13 +64549,12 @@ window.SONG_LINES = {
       {
         "text": "काम",
         "wordIndices": [
-          9,
-          10
+          9
         ]
       }
     ],
     "roman": "jaba lagi bhajata na rāma kahum̐ sōka dhāma taji kāma.",
-    "english": "{0,1:so long as }{3:one does not }{2:worship }{4,5:Rāma, }{8:having renounced }{9:kāma, }{7:the abode }{6,10:of sorrow.}",
+    "english": "{0,1:so long as }{3:one does not }{2:worship }{4,5:Rāma, }{8:having renounced }{9:kāma, }{7:the abode }{6:of sorrow.}",
     "words": [
       {
         "roman": "jaba",
@@ -64938,12 +64615,6 @@ window.SONG_LINES = {
         "gloss": "desire; sensual longing",
         "concept_key": "kama",
         "preserve_in_english": true
-      },
-      {
-        "roman": "46.",
-        "gloss": "verse 46",
-        "concept_key": "",
-        "preserve_in_english": false
       }
     ],
     "grammarNote": "taji is an absolutive conjunctive participle. sōka dhāma is a genitive tatpuruṣa compound qualifying kāma. 46. is the numerical verse end-marker."
@@ -66224,13 +65895,12 @@ window.SONG_LINES = {
       {
         "text": "कंज",
         "wordIndices": [
-          7,
-          8
+          7
         ]
       }
     ],
     "roman": "dēkhēuṁ nayana birañci siba sēbya jugala pada kañja.",
-    "english": "{1:for with my own eyes }{0:I have seen }{5:the pair }{7:of lotus }{6:feet }{4:served by }{2:Brahmā }{3,8:and Śiva.}",
+    "english": "{1:for with my own eyes }{0:I have seen }{5:the pair }{7:of lotus }{6:feet }{4:served by }{2:Brahmā }{3:and Śiva.}",
     "words": [
       {
         "roman": "dēkhēuṁ",
@@ -66277,12 +65947,6 @@ window.SONG_LINES = {
       {
         "roman": "kañja.",
         "gloss": "lotus",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "47.",
-        "gloss": "47 (verse number)",
         "concept_key": "",
         "preserve_in_english": false
       }

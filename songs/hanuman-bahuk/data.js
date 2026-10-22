@@ -9494,7 +9494,7 @@ window.SONG_LINES = {
   "line-079": {
     "source": "जुग जुग जग तेरे बिरद बिराजे हैं ॥",
     "sourceLanguage": "bra",
-    "roman": "juga juga jaga तेरे birada birāje haĩ ॥",
+    "roman": "juga juga jaga tere birada birāje haĩ ॥",
     "english": "{0:age }{1:after age }{2:in the world }{3:your }{4:heroic titles }{5,6:shine resplendent.}",
     "words": [
       {
@@ -9516,7 +9516,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "तेरे",
+        "roman": "tere",
         "gloss": "your",
         "concept_key": "",
         "preserve_in_english": false
@@ -9540,7 +9540,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'juga juga' is a reduplicated temporal adverbial. 'birada' is Tadbhava for Sanskrit 'viruda' (heraldic title of fame/glory). Token 4 copied exactly as displayed in the audited roman line.",
+    "grammarNote": "'juga juga' is a reduplicated temporal adverbial. 'birada' is Tadbhava for Sanskrit 'viruda' (heraldic title of fame/glory).",
     "sourceWords": [
       {
         "text": "जुग",
