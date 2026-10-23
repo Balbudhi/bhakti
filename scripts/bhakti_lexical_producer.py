@@ -240,7 +240,7 @@ def lookup_english_cached(directory, lemmas, *, edition, cache_dir):
             'misses': [lemma for lemma in requested if not rows[lemma]]}
 
 
-def _english_discovery_query(line, proposal, gloss, bound, languages, context_lines, performance_order):
+def _english_discovery_query(line, proposal, gloss, bound, languages, context_lines, performance_order, source_discovery=None):
     context = json.loads(lexical.query_context(line, ' '.join(proposal['surfaces']), languages,
         context_lines=context_lines, performance_order=performance_order))
     decisions = [item for item in gloss['sense_decisions'] if item['word_index'] in proposal['word_indices']]
@@ -251,17 +251,36 @@ def _english_discovery_query(line, proposal, gloss, bound, languages, context_li
         definitions = [gloss['word_glosses'][index]['gloss'] for index in proposal['word_indices']]
     # Native source windows and actual source/gloss meanings only. Owner English,
     # previous draft English and catalog descriptions never enter this query.
-    return {'source_language': context['language'],
+    query = {'source_language': context['language'],
         'source_span': {'roman': proposal['surfaces'], 'word_indices': proposal['word_indices']},
         'source_context': {'target': context['target']['source_text'], 'windows': [
             {side: [item['source_text'] for item in window[side]] for side in ('before', 'after')}
             for window in context['performed_context']]},
         'sense_evidence': definitions,
         'grammatical_role': [item['grammatical_role'] for item in decisions]}
+    if source_discovery:
+        entries = {entry['entry_id']: entry for entry in source_discovery['entries']}
+        hypotheses = []
+        tokens = lexical.word_tokens(line)
+        for target in source_discovery['targets']:
+            if target['line_id'] != line['id'] or not set(target['word_indices']) <= set(proposal['word_indices']):
+                continue
+            support.require(target['source_language'] == context['language'] and
+                target['surfaces'] == [tokens[index] for index in target['word_indices']],
+                'English source hypothesis target language or exact token binding differs')
+            for entry_id in target['candidate_entry_ids']:
+                entry = entries[entry_id]
+                support.require(entry['language'] == context['language'], 'English source hypothesis language differs')
+                hypotheses.append({'entry_id': entry_id, 'source_target_id': target['id'],
+                    'word_indices': list(target['word_indices']), 'status': 'lookup_hypothesis',
+                    'definition': entry['dictionary']['whole_entry_text']})
+        if hypotheses:
+            query['source_hypotheses'] = hypotheses
+    return query
 
 
 def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisition_roots,
-                    wordnet_directory, edition, cache_dir, context_lines, performance_order):
+                    wordnet_directory, edition, cache_dir, context_lines, performance_order, source_discovery=None):
     errors = proposal_errors(lines, gloss_rows, languages)
     support.require(not errors, '; '.join(errors))
     by_line = {line['id']: line for line in lines}
@@ -296,11 +315,12 @@ def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisiti
                     for word in support.english_queries(candidate['english_lemmas'])))
         if discovery_config is not None and seeds:
             query = _english_discovery_query(by_line[row['id']], proposal, row, bound, languages,
-                                              context_lines, performance_order)
+                                              context_lines, performance_order, source_discovery)
             discovered = english_discovery.discover_english(wordnet_directory, seeds,
                 edition=edition, query=query, cache_dir=cache_dir, encoder=encoder,
                 space=discovery_config['space'], max_neighbor_synsets=discovery_config['max_neighbor_synsets'],
-                max_discovered_lemmas=discovery_config['max_discovered_lemmas'])
+                max_discovered_lemmas=discovery_config['max_discovered_lemmas'],
+                max_embedding_inputs=discovery_config['max_embedding_inputs'])
             tid = 'lexical:' + row['id'] + ':' + ','.join(map(str, proposal['word_indices']))
             discovery_queries[tid] = query
             diagnostics.extend({'line_id': row['id'], **item} for item in discovered['diagnostics'])
@@ -478,15 +498,16 @@ def prepare_translation(song_dir, audited, glosses, options):
     _legacy_queries(lines, rows, bindings, requested)
     errors = proposal_errors(lines, rows, languages, requested)
     support.require(not errors, '; '.join(errors))
+    import bhakti_source_discovery as discovery
+    source_evidence = discovery.prepare(lines, rows, languages, bindings, config, options)
     produced = produce_support(lines, rows, languages, token_candidates=bindings,
         acquisition_roots=config['roots'], wordnet_directory=config['directory'], edition=config['edition'],
         cache_dir=config['cache'], context_lines=getattr(options, 'semantic_full_source', lines),
-        performance_order=getattr(options, 'semantic_performance_order', audited['packet'].get('performance_order', [])))
+        performance_order=getattr(options, 'semantic_performance_order', audited['packet'].get('performance_order', [])),
+        source_discovery=source_evidence)
     augmented['packet']['glosses'] = produced['gloss_rows']
     if produced['packet'] is not None:
         local.semantic_lexical_support = produced['packet']
-    import bhakti_source_discovery as discovery
-    source_evidence = discovery.prepare(lines, rows, languages, bindings, config, options)
     if source_evidence is not None:
         local.automatic_source_discovery = source_evidence
         local.automatic_source_discovery_identity = support.content_digest(source_evidence)

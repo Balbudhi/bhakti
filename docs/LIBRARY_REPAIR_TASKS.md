@@ -30,8 +30,10 @@ run's allowance, including loss between two acquisitions. English embedding
 discovery is now integrated; the joined discovery, source, support and cache
 checks pass 139 tests. Compact evidence preserves adjective placement restrictions
 and lemma-specific verb frames, closing the grammar-loss defect. Real translation
-quality remains unqualified. Newly acquired source definitions must also inform
-the initial English ranking query, and the fresh-source outer route still needs
+quality remains unqualified. Newly acquired source definitions now inform
+the initial English ranking query as unselected, exact-token-bound hypotheses.
+Long queries preserve complete context/definition coverage within bounded parts;
+partial coverage never receives a numeric ranking. The fresh-source outer route still needs
 downstream renewal when materialized evidence changes under unchanged settings.
 Missing-source bootstrap now shares the new-intake transcription and independent
 audit stages. Long-recording timing ownership comes from audited segment

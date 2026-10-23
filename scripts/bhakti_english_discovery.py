@@ -6,6 +6,7 @@ those alternatives; they never select a meaning or rewrite a source gloss.
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import math
 import os
@@ -23,10 +24,112 @@ MAX_DISCOVERED_LEMMAS = 4
 POINTERS = {'&', '@', '~'}
 
 
+PROJECTION_VERSION = 1
+MAX_QUERY_PARTS = 32
+MAX_EMBEDDING_INPUTS = 64
+
+
+def _query_evidence(query):
+    rows = []
+    for index, value in enumerate(query.get('sense_evidence', [])):
+        rows.append(('sense_evidence', index, value if isinstance(value, str) else lexical.canonical(value)))
+    for index, value in enumerate(query.get('source_hypotheses', [])):
+        support.require(value.get('status') == 'lookup_hypothesis' and isinstance(value.get('definition'), str),
+                        'source discovery embedding input must remain an unselected hypothesis')
+        rows.append(('source_hypothesis', index, value['definition']))
+    return rows
+
+
+def query_projection(query, *, max_parts=MAX_QUERY_PARTS):
+    """Lossless evidence/window coverage under our conservative byte policy."""
+    support.require(type(max_parts) is int and 1 <= max_parts <= MAX_QUERY_PARTS,
+                    'query part allowance must be between one and32')
+    evidence = _query_evidence(query)
+    context = query['source_context']
+    windows = context.get('windows', []) if isinstance(context, dict) else []
+    groups = {}
+    for index, window in enumerate(windows):
+        groups.setdefault(lexical.canonical(window), {'window': window, 'indices': []})['indices'].append(index)
+    if not groups:
+        groups[''] = {'window': None, 'indices': []}
+    def span(role, index, text, start, end):
+        return {'role': role, 'index': index, 'start': start, 'end': end,
+                'sha256': hashlib.sha256(text.encode()).hexdigest()}
+    whole = lexical.canonical(query)
+    if len(whole.encode()) <= MAX_INPUT_BYTES:
+        return {'complete': True, 'parts': [{'text': whole, 'window_indices': list(range(len(windows))),
+                'evidence_slices': [span(role, index, text, 0, len(text)) for role, index, text in evidence]}],
+                'diagnostics': []}
+    parts = []
+    def gap(kind):
+        return {'complete': False, 'parts': [], 'diagnostics': [{'kind': kind,
+                'required_windows': len(groups), 'max_parts': max_parts}]}
+    for group in groups.values():
+        base = {key: copy.deepcopy(query[key]) for key in ('source_language', 'source_span', 'grammatical_role')}
+        base['source_context'] = (dict(context, windows=[group['window']] if group['window'] is not None else [])
+                                  if isinstance(context, dict) else context)
+        for role, index, text in evidence or [('context', 0, '')]:
+            def encode(start, end):
+                value = copy.deepcopy(base)
+                if role == 'source_hypothesis':
+                    hypothesis = copy.deepcopy(query['source_hypotheses'][index])
+                    hypothesis['definition'] = text[start:end]
+                    value['source_hypotheses'] = [hypothesis]
+                elif role == 'sense_evidence':
+                    value['sense_evidence'] = [text[start:end]]
+                return lexical.canonical(value)
+            if len(encode(0, 0).encode()) > MAX_INPUT_BYTES:
+                return gap('query_context_input_too_long')
+            start = 0
+            while start < len(text) or (start == 0 and not text):
+                low, high = start, len(text)
+                while low < high:
+                    middle = (low + high + 1)//2
+                    if len(encode(start, middle).encode()) <= MAX_INPUT_BYTES:
+                        low = middle
+                    else:
+                        high = middle - 1
+                if low == start and text:
+                    return gap('query_context_input_too_long')
+                end = low
+                if end < len(text):
+                    boundary = max(text.rfind(' ', start, end), text.rfind('\n', start, end))
+                    if boundary > start:
+                        end = boundary + 1
+                parts.append({'text': encode(start, end), 'window_indices': group['indices'],
+                    'evidence_slices': [] if role == 'context' else [span(role, index, text, start, end)]})
+                if len(parts) > max_parts:
+                    return gap('query_part_budget_exhausted')
+                if not text:
+                    break
+                start = end
+    return {'complete': True, 'parts': parts, 'diagnostics': []}
+
+
+def _group_scores(parts, values):
+    """Weight spans within whole items, then distinct contexts; never pick a sense."""
+    groups = {}
+    for part, value in zip(parts, values):
+        window = tuple(part['window_indices'])
+        for item in part['evidence_slices'] or [{'role': 'context', 'index': 0, 'start': 0, 'end': 1}]:
+            group = groups.setdefault((item['role'], item['index']), {})
+            totals = group.setdefault(window, [0., 0])
+            length = max(1, item['end'] - item['start'])
+            totals[0] += value * length
+            totals[1] += length
+    output = []
+    for (role, index), windows in groups.items():
+        rows = [{'window_indices': list(window), 'score': total/length}
+                for window, (total, length) in windows.items()]
+        output.append({'role': role, 'index': index, 'window_scores': rows,
+                       'score': sum(row['score'] for row in rows)/len(rows)})
+    return output
+
 def configuration():
     if os.environ.get('BHAKTI_ENGLISH_DISCOVERY') != '1':
         return None
-    return {'version': VERSION, 'max_neighbor_synsets': MAX_NEIGHBOR_SYNSETS,
+    return {'version': VERSION, 'projection_version': PROJECTION_VERSION, 'max_query_parts': MAX_QUERY_PARTS,
+            'max_embedding_inputs': MAX_EMBEDDING_INPUTS, 'max_neighbor_synsets': MAX_NEIGHBOR_SYNSETS,
             'max_discovered_lemmas': MAX_DISCOVERED_LEMMAS, 'space': copy.deepcopy(DEFAULT_SPACE)}
 
 
@@ -115,7 +218,8 @@ def _vectors(cache_dir, jobs, space, encoder):
 
 def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=None,
                      space=DEFAULT_SPACE, max_neighbor_synsets=MAX_NEIGHBOR_SYNSETS,
-                     max_discovered_lemmas=MAX_DISCOVERED_LEMMAS):
+                     max_discovered_lemmas=MAX_DISCOVERED_LEMMAS,
+                     max_embedding_inputs=MAX_EMBEDDING_INPUTS):
     directory = Path(directory).resolve()
     seeds = support.english_queries(seeds)
     support.require(1 <= len(seeds) <= 4, 'English discovery needs one to four seed lemmas')
@@ -129,6 +233,8 @@ def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=Non
     support.require(isinstance(space, dict) and type(space.get('dimensions')) is int and
                     space['dimensions'] > 0 and all(key in space for key in DEFAULT_SPACE),
                     'English discovery needs a complete embedding space')
+    support.require(type(max_embedding_inputs) is int and 1 <= max_embedding_inputs <= MAX_EMBEDDING_INPUTS,
+                    'embedding input allowance must be between one and64')
     seed_rows = support.lookup_wordnet(directory, seeds, edition=edition)
     receipt = support.wordnet_receipt(directory, edition, [])
     receipt.pop('directory')
@@ -166,8 +272,11 @@ def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=Non
     pool_rows = {row['id']: _content(row) for row in seed_rows}
     for row in explored:
         pool_rows.setdefault(row['id'], row)
-    text = lexical.canonical(query)
-    query_large = len(text.encode()) > MAX_INPUT_BYTES
+    projection = query_projection(query)
+    if len(projection['parts']) > max_embedding_inputs:
+        projection = {'complete': False, 'parts': [], 'diagnostics': [{'kind': 'query_embedding_budget_exhausted'}]}
+    diagnostics.extend(projection['diagnostics'])
+    query_large = not projection['complete']
     jobs = {}
     def add(text, kind, evidence_hash=''):
         identity = {'version': VERSION, 'space': space, 'text': text, 'kind': kind,
@@ -175,7 +284,8 @@ def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=Non
         key = support.digest(identity)
         jobs[key] = identity
         return key
-    qkey = None if query_large else add(text, 'query')
+    qkeys = [] if query_large else [add(part['text'], 'query') for part in projection['parts']]
+    omitted_documents = set()
     documents = {}
     for row in pool_rows.values():
         document = lexical.canonical({**{key: row[key] for key in
@@ -183,6 +293,8 @@ def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=Non
             'grammar': support.wordnet_grammar(row)})
         if len(document.encode()) > MAX_INPUT_BYTES:
             documents[row['id']] = None
+        elif not query_large and len(jobs) >= max_embedding_inputs:
+            omitted_documents.add(row['id'])
         elif not query_large:
             # Lookup/query bookkeeping does not change the dictionary definition.
             evidence_hash = support.digest({key: row[key] for key in
@@ -192,22 +304,32 @@ def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=Non
     def score(eid):
         dkey = documents.get(eid)
         value = None
+        part_scores, group_scores = [], []
         if query_large:
-            status = 'query_input_too_long'
-        elif qkey not in vectors:
-            status = 'query_not_cached'
+            status = 'query_input_too_long' if any(item['kind'] == 'query_context_input_too_long'
+                for item in projection['diagnostics']) else 'query_coverage_incomplete'
+        elif any(key not in vectors for key in qkeys):
+            status = 'partial_query_vectors' if any(key in vectors for key in qkeys) else 'query_not_cached'
         elif eid not in pool_rows:
             status = 'outside_ranked_pool'
+        elif eid in omitted_documents:
+            status = 'embedding_budget_exhausted'
         elif dkey is None:
             status = 'input_too_long'
         elif dkey not in vectors:
             status = 'document_not_cached'
         else:
-            left, right = vectors[qkey], vectors[dkey]
-            value = sum(a*b for a,b in zip(left,right)) / (
-                math.sqrt(sum(a*a for a in left)) * math.sqrt(sum(b*b for b in right)))
+            right = vectors[dkey]
+            for index, key in enumerate(qkeys):
+                left = vectors[key]
+                similarity = sum(a*b for a,b in zip(left,right)) / (
+                    math.sqrt(sum(a*a for a in left)) * math.sqrt(sum(b*b for b in right)))
+                part_scores.append({'part_index': index, 'score': similarity})
+            group_scores = _group_scores(projection['parts'], [row['score'] for row in part_scores])
+            value = max(row['score'] for row in group_scores)
             status = 'ranked'
-        return {'evidence_id': eid, 'score': value, 'status': status}
+        return {'evidence_id': eid, 'score': value, 'status': status,
+                'part_scores': part_scores, 'group_scores': group_scores}
     pool_scores = {eid: score(eid) for eid in pool_rows}
     def lemma_order(lemma):
         values = [pool_scores[eid]['score'] for eid, row in pool_rows.items()
@@ -240,8 +362,9 @@ def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=Non
                  'max_neighbor_synsets': max_neighbor_synsets,
                  'max_discovered_lemmas': max_discovered_lemmas,
                  'records': list(pool_rows.values()), 'limitations': ['bounded_pool_not_exhaustive']},
-        'diagnostics': diagnostics}
-    packet['identity'] = support.content_digest({'version': VERSION, 'space': space, 'query': query,
+        'diagnostics': diagnostics, 'query_coverage': projection}
+    packet['identity'] = support.content_digest({'version': VERSION, 'projection_version': PROJECTION_VERSION,
+        'max_embedding_inputs': max_embedding_inputs, 'space': space, 'query': query,
         'dictionary': receipt, 'max_neighbor_synsets': max_neighbor_synsets,
         'max_discovered_lemmas': max_discovered_lemmas, **packet})
     return packet

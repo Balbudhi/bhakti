@@ -1,0 +1,108 @@
+{
+  "source_language": "hi",
+  "source_span": {
+    "roman": [
+      "bajaraṅga"
+    ],
+    "word_indices": [
+      3
+    ]
+  },
+  "source_context": {
+    "target": "जय जय जय बजरंग बली",
+    "windows": [
+      {
+        "before": [
+          "पवनतनय संतन हितकारी",
+          "हृदय विराजत अवध बिहारी"
+        ],
+        "after": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ]
+      },
+      {
+        "before": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ],
+        "after": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ]
+      },
+      {
+        "before": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ],
+        "after": [
+          "साधु संत के हनुमत प्यारे",
+          "भक्त हृदय श्री राम दुलारे"
+        ]
+      },
+      {
+        "before": [
+          "तुम्हरी कृपा से हनुमत बीरा",
+          "सगरी बिपत टली"
+        ],
+        "after": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ]
+      },
+      {
+        "before": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ],
+        "after": [
+          "जय जय श्री हनुमान",
+          "जय जय जय बजरंग बली"
+        ]
+      },
+      {
+        "before": [
+          "जय जय जय बजरंग बली",
+          "जय जय श्री हनुमान"
+        ],
+        "after": [
+          "तुम्हरी शरण महा सुखदाई",
+          "जय जय जय हनुमान गुसाईं"
+        ]
+      },
+      {
+        "before": [
+          "शिव शक्ती की तुम्हरे हिरदय",
+          "ज्योत महान जली"
+        ],
+        "after": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ]
+      },
+      {
+        "before": [
+          "महावीर हनुमान गुसाईं",
+          "तुम्हरी याद भली"
+        ],
+        "after": [
+          "जय जय श्री हनुमान"
+        ]
+      }
+    ]
+  },
+  "sense_evidence": [
+    "one with adamantine limbs"
+  ],
+  "grammatical_role": [
+    "Existing reader lacks explicit grammatical role."
+  ],
+  "source_hypotheses": [
+    {
+      "entry_id": "platts1884.p1181.hw1ea57675c2756eb7.h1",
+      "status": "lookup_hypothesis",
+      "definition": "S وجر वज्र vajra, vulg. vajr, bajr, bajar , adj. (f. -ā, or -ī), Hard, adamantine, &c. (i.q. بجر bajr or bajr, q.v.); — s.m. A thunderbolt, &c. (see bajr); — sour grael; — a form of military array; — thunder-like denunciation, very harsh or severe language; — emblic myrobalan; — the blossom of the sesamum; — one of the lunar mansions; — a child; a pupil: — vajrābh (˚ra+ābha), adj. & s.m. Diamond-like, resembling a diamond; a kind of spar or valuable stone, (perhaps) the opal: — vajrābhyās (˚ra+abh˚), s.m. (in Arith.) Cross-multiplication: — vajrāng (˚ra+an˚), vulg. vajr-ang, bajr-ang, adj. & s.m. Having a hardy frame, hardy; — an epithet of Hauumān; — a robust or hardy man: — vajr-badh, s.m. Death by a thunderbolt or lightning; — (in Arith.) cross-multiplication: — vajr-bhr̤it, adj. Carrying or wielding the thunderbolt; — s.m. An epithet of Indra; — vajr-pāt, s.m. The fall of a thunderbolt; a stroke of lightning; — adj. Falling like a thunderbolt: — vajr-pāṇi, adj. & s.m. Grasping a thunderbolt; — holder of the thunderbolt, an epithet of Indra: — vajr-pushp, s.m. The blossom of sesamum: — vajr-dhāraṇ, or vajr-dhar, s.m. Holder of the thunderbolt, an epithet of Indra: — vajr-kaṅkaṭ, adj. & s.m. Adamantine-armoured; — a name of Hanumān (the monkey-god): — vajr-may, adj. Made of diamond or of adamant; adamantine, hard; (met.) hard-hearted: — vajr-vān, vulg. bajar-bān, s.m. A thunderbolt: — vajr-vallī, s.f. A species of sunflower, Heliotropium indicum. (For other compounds, see s.v. bajr or bajar.)"
+    }
+  ]
+}

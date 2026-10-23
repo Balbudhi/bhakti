@@ -375,6 +375,14 @@ def prompt(packet, target_ids, stage):
         discovery = target.get('english_discovery')
         if discovery is not None:
             discovery.get('pool', {}).pop('records', None)
+            coverage = discovery.get('query_coverage')
+            if coverage is not None:
+                coverage['part_count'] = len(coverage.pop('parts', []))
+                coverage['ranking_role'] = 'Exploration only; compare the complete source and English definitions independently.'
+            for candidate in discovery.get('candidates', []):
+                for score in candidate.get('scores', []):
+                    score.pop('part_scores', None)
+                    score.pop('group_scores', None)
     instruction=('Return support_decisions only for targeted lines: target_id, used_evidence_ids, role (operative_meaning, activated_image, background_only), reason. Background evidence cannot establish an inherited-language sense.' if stage=='gloss' else
         'Return wording_decisions only for targeted lines: target_id, chosen_candidate_id (null for a new composition), expression, kind (word, compositional_phrase, transparent_compound), english_evidence_ids, reason, word_indices, ordinary_paraphrase, component_word_indices. Prefer precise intelligible English. Compare word, phrase and transparent compound by meaning, image, connotation and tone, not a mandatory phrase-failure rule. A dictionary sense is not proof of its fit here.' if stage=='translation' else
         'Independently check source and wording decisions against these exact witnesses, passage grammar and English. Reject unsupported inherited meanings, unwanted connotations, opaque compounds and gloss/English disagreement. Writer decisions are claims, not authority. Preserve owner English; report alternatives privately.')

@@ -191,11 +191,11 @@ Accepted semantic runs bind the actual dictionary evidence they used. A relevant
 evidence change renews English and independent review with a validated glossary;
 unrelated cache growth does not renew the run. The fresh-source outer route still
 needs this renewal behavior for materialized evidence changes under unchanged
-configuration. Newly acquired source definitions currently reach wording and
-review after the first English ranking query is formed. Connecting those new
-hypotheses to that query, without selecting a source sense automatically or
-silently truncating definitions, remains required before claiming that the
-initial ranking uses the newly retrieved source dictionary evidence.
+configuration. Source acquisition now precedes the first English ranking query.
+New definitions enter that query as explicitly unselected hypotheses bound to
+the exact source language, line and token span; the complete definitions also
+reach wording and independent review. Acquisition does not select a sense or
+silently change the source glossary.
 Punjabi and Tamil dictionary adapters remain missing. The default five-entry
 Hindi corpus has no token matches in the five representative qualification songs;
 configuring an encoder alone cannot correct that coverage gap. No full-library
@@ -235,10 +235,17 @@ that canonical request; other models are rejected. There is no claim that a
 provider-specific retrieval task parameter was forwarded. Cache keys bind model,
 provider, dimension, task, formatting version, exact text and source-entry hash.
 Only currently retrieved candidates are embedded, never the whole corpus by
-default. The conservative input cap is 2,048 UTF-8 bytes per string; oversized
-entries or contexts retain their full evidence with an explicit unranked status,
-not a truncated meaning. Without a configured encoder, cache misses are reported
-as missing ranking evidence.
+default. The conservative input cap is 2,048 UTF-8 bytes per string. Longer
+queries repeat each complete performed context and grammar alongside contiguous
+source-definition spans, bounded to 32 parts and 64 total embedding inputs per
+target. Scores are weighted by span length within each complete evidence item,
+then equally across distinct performed contexts. The maximum across separate
+evidence hypotheses only prioritizes English exploration; it does not choose
+the source meaning. Incomplete coverage yields an explicit unranked status and
+preserves the full evidence for translation/review. English definitions that do
+not fit remain available without ranking. Without a configured encoder, cache
+misses are reported as missing ranking evidence. Existing unchanged short-query
+vectors remain reusable under their original identity.
 
 The live qualification returned real 768-dimensional vectors. In the actual
 “मन रे तू चल अपने निकेतन में” context, the saved candidates ranked **will, mind,

@@ -1,0 +1,145 @@
+{
+  "query": {
+    "source_language": "hi",
+    "source_span": {
+      "roman": [
+        "bajaraṅga"
+      ],
+      "word_indices": [
+        3
+      ]
+    },
+    "source_context": {
+      "target": "जय जय जय बजरंग बली",
+      "windows": []
+    },
+    "sense_evidence": [
+      "one with adamantine limbs"
+    ],
+    "grammatical_role": [
+      "Existing reader lacks explicit grammatical role."
+    ]
+  },
+  "records": [
+    {
+      "key": "55d6dab64dccfba36a5609e7d84045b0706e61447dbfaf9773bd897b519e405b",
+      "identity": {
+        "evidence_hash": "2a4bcce54ebf05fcd774eaab77806b2a87a46b5edbfd6f3450e36cdef17c9ffb",
+        "kind": "definition",
+        "space": {
+          "dimensions": 768,
+          "format_version": 1,
+          "model": "google/gemini-embedding-001",
+          "provider": "google-vertex",
+          "task": "default"
+        },
+        "text": "{\"gloss\":\"incapable of change; \\\"a man of inflexible purpose\\\"\",\"grammar\":{\"adjective_positions\":[],\"verb_frames\":[]},\"lemmas\":[\"inflexible\"],\"locus\":\"data.adj:01028212\",\"pos\":\"a\",\"source_url\":\"https://wordnet.princeton.edu/\",\"work\":\"Princeton WordNet 3.1\"}",
+        "version": 1
+      },
+      "vector_prefix": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "62139b1e6abe5dd1f55ddaccd86d9fab8a4fa95d4d648d259542b850cfc05aed",
+      "identity": {
+        "evidence_hash": "",
+        "kind": "query",
+        "space": {
+          "dimensions": 768,
+          "format_version": 1,
+          "model": "google/gemini-embedding-001",
+          "provider": "google-vertex",
+          "task": "default"
+        },
+        "text": "{\"grammatical_role\":[\"Existing reader lacks explicit grammatical role.\"],\"sense_evidence\":[\"one with adamantine limbs\"],\"source_context\":{\"target\":\"जय जय जय बजरंग बली\",\"windows\":[]},\"source_language\":\"hi\",\"source_span\":{\"roman\":[\"bajaraṅga\"],\"word_indices\":[3]}}",
+        "version": 1
+      },
+      "vector_prefix": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "key": "6a009b3603b92606c08a7b1f1bcbb26b0e7a7597290ac94ca00f5b5db02b9e35",
+      "identity": {
+        "evidence_hash": "69ba78f242196a4216868500e3eaf01e045a9225541017f3dbc73fe852c2f8b5",
+        "kind": "definition",
+        "space": {
+          "dimensions": 768,
+          "format_version": 1,
+          "model": "google/gemini-embedding-001",
+          "provider": "google-vertex",
+          "task": "default"
+        },
+        "text": "{\"gloss\":\"having the hardness of a diamond\",\"grammar\":{\"adjective_positions\":[],\"verb_frames\":[]},\"lemmas\":[\"adamantine\"],\"locus\":\"data.adj:01154749\",\"pos\":\"a\",\"source_url\":\"https://wordnet.princeton.edu/\",\"work\":\"Princeton WordNet 3.1\"}",
+        "version": 1
+      },
+      "vector_prefix": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "7079b4de204f1217312b7115130ef5ebccbc6dca8054e68eecadd5b9cfdc29e3",
+      "identity": {
+        "evidence_hash": "845b243c95ecce4989ce62815174f3c95d6083f78472d99fa088731565324ca5",
+        "kind": "definition",
+        "space": {
+          "dimensions": 768,
+          "format_version": 1,
+          "model": "google/gemini-embedding-001",
+          "provider": "google-vertex",
+          "task": "default"
+        },
+        "text": "{\"gloss\":\"resisting weight or pressure\",\"grammar\":{\"adjective_positions\":[],\"verb_frames\":[]},\"lemmas\":[\"hard\"],\"locus\":\"data.adj:01154418\",\"pos\":\"a\",\"source_url\":\"https://wordnet.princeton.edu/\",\"work\":\"Princeton WordNet 3.1\"}",
+        "version": 1
+      },
+      "vector_prefix": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "c5a853aec33b71ce1811e5bacbfe0bf9950e2ca4937333db8f78c1d0ab66cecb",
+      "identity": {
+        "evidence_hash": "36866adaa4e13b74f540ace7bbd9d592ed6d32e3ce322c1bd4780446eaa68522",
+        "kind": "definition",
+        "space": {
+          "dimensions": 768,
+          "format_version": 1,
+          "model": "google/gemini-embedding-001",
+          "provider": "google-vertex",
+          "task": "default"
+        },
+        "text": "{\"gloss\":\"consisting of or having the hardness of adamant\",\"grammar\":{\"adjective_positions\":[],\"verb_frames\":[]},\"lemmas\":[\"adamantine\"],\"locus\":\"data.adj:02613736\",\"pos\":\"a\",\"source_url\":\"https://wordnet.princeton.edu/\",\"work\":\"Princeton WordNet 3.1\"}",
+        "version": 1
+      },
+      "vector_prefix": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "f4bed6392979e81b9153eba6c2e042dbacfd58e32d12a464af78816ce991e31a",
+      "identity": {
+        "evidence_hash": "9147e021059352ab345242b448c32259ef8b97ab1e864a0539ee052f7d9fbc2a",
+        "kind": "definition",
+        "space": {
+          "dimensions": 768,
+          "format_version": 1,
+          "model": "google/gemini-embedding-001",
+          "provider": "google-vertex",
+          "task": "default"
+        },
+        "text": "{\"gloss\":\"impervious to pleas, persuasion, requests, reason; \\\"he is adamant in his refusal to change his mind\\\"; \\\"Cynthia was inexorable; she would have none of him\\\"- W.Churchill; \\\"an intransigent conservative opposed to every liberal tendency\\\"\",\"grammar\":{\"adjective_positions\":[],\"verb_frames\":[]},\"lemmas\":[\"adamant\",\"adamantine\",\"inexorable\",\"intransigent\"],\"locus\":\"data.adj:01028427\",\"pos\":\"a\",\"source_url\":\"https://wordnet.princeton.edu/\",\"work\":\"Princeton WordNet 3.1\"}",
+        "version": 1
+      },
+      "vector_prefix": [
+        1.0,
+        0.0
+      ]
+    }
+  ]
+}
