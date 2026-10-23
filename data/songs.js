@@ -2222,6 +2222,37 @@ window.BHAKTI_SONGS = [
     "queueNumber": 142
   },
   {
+    "slug": "kurai-ondrum-illai",
+    "queueId": "a354ecc5",
+    "title": "Kuṟai Oṉṟum Illai",
+    "credit": "C. Rajagopalachari · G. Gayathri Devi & Saindhavi",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa",
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Kurai Onrum Illai",
+      "Krshna",
+      "Krsna",
+      "Rajaji"
+    ],
+    "writer": "C. Rajagopalachari",
+    "singer": "G. Gayathri Devi & Saindhavi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kurai-ondrum-illai.m4a",
+        "type": "audio/mp4",
+        "sha256": "dea337ceb29302a6ee93d4ac934462993100498e85709d7499e2434aa3cef32c"
+      }
+    ],
+    "subtitle": "Kṛṣṇa",
+    "queueNumber": 239
+  },
+  {
     "slug": "ghanshyam-sundara",
     "queueId": "f4f44a8b",
     "title": "Ghanaśyāma Sundarā",
