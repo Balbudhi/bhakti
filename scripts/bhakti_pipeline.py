@@ -958,14 +958,17 @@ def ask(prompt: str, audio: Path | None, options: argparse.Namespace) -> dict[st
 
 
 def canonical_timing_audio(source: Path, destination: Path) -> Path:
-    """Create a metadata-free fixed-rate API copy without changing song time."""
+    """Create the API copy and validate decoded length, not browser time origin."""
+    from bhakti_boundary_timebase import single_audio_decoded_clock
+    source_clock = single_audio_decoded_clock(source)
     # This is an ephemeral model-timebase copy only. At 128 kb/s it remains
     # well above Gemini's internal audio resolution while keeping long inline
     # OpenRouter payloads below the provider's practical request ceiling.
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(source), "-map_metadata", "-1",
                     "-vn", "-ar", "48000", "-ac", "2", "-c:a", "aac", "-b:a", "128k", str(destination)], check=True)
-    source_duration = gemini.duration_seconds(source)
-    normalized_duration = gemini.duration_seconds(destination)
+    normalized_clock = single_audio_decoded_clock(destination)
+    source_duration = source_clock['decoded_samples'] / source_clock['sample_rate']
+    normalized_duration = normalized_clock['decoded_samples'] / normalized_clock['sample_rate']
     if abs(source_duration - normalized_duration) > 0.1:
         raise RuntimeError(f"canonical timing audio changed duration by {normalized_duration - source_duration:.3f}s")
     return destination

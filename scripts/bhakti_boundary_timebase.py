@@ -197,6 +197,23 @@ def inspect_historical_boundary(song_dir: Path) -> dict[str, Any]:
     return {**classify_historical_boundary_evidence(snapshot), 'snapshot': snapshot}
 
 
+def single_audio_decoded_clock(path: Path) -> dict[str, Any]:
+    """Inspect a unique audio stream's contiguous decoded clock.
+
+    Automatic FFmpeg stream selection need not choose a:0 when several audio
+    tracks exist. Reject that ambiguity before a caller compares this clock to
+    a conversion performed without an explicit stream mapping.
+    """
+    path = Path(path)
+    response = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'a',
+        '-show_entries', 'stream=index', '-of', 'json', str(path)],
+        capture_output=True, text=True, check=True)
+    streams = json.loads(response.stdout).get('streams', [])
+    if len(streams) != 1:
+        raise ValueError('canonical audio requires a single audio stream; multiple or missing tracks are ambiguous')
+    return _decoded_clock(path)
+
+
 def _decoded_clock(path: Path) -> dict[str, Any]:
     response = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'a:0',
         '-show_frames', '-show_streams', '-show_entries',

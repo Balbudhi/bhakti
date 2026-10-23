@@ -20,6 +20,11 @@ inserted onsets, only a failed long unit escalates, and completed measurements a
 not charged again on resume. These tests do not certify sung-audio recognition.
 Historical decoded-timebase inspection is present but crop adoption remains
 unactivated until source/timing migration and publication recovery are connected.
+Canonical model-audio conversion now compares decoded sample durations rather
+than container duration metadata, which included positive timestamp offsets in
+the observed Opus files. Four actual AAC/Opus checks cover nonzero origins,
+preserved landmarks, rejected truncation and ambiguous multiple audio tracks.
+This validates conversion length, not browser/model clock correspondence.
 
 Model-facing source dictionary discovery and materialized-evidence renewal are
 integrated. The joined source acquisition, translation/review, cache renewal and
@@ -59,6 +64,13 @@ translation weaknesses and does not qualify a broad translation pass. No further
 provider calls or song-content releases have occurred during these integration
 checks. Owner English remains locked. Uncommitted changes are not deployment
 evidence.
+
+Application network permission was revoked while the six parallel workers were
+running. Their private files remain available for local recovery; no worker
+completion or live qualification is inferred from the interruption. Local
+integration can continue. The shared difficult-term policy now permits explained
+retention when English would distort meaning; the older writer restriction and
+structured retention decisions still need the matching caller change.
 
 The owner reconfirmed this full goal and requested an exhaustive task list on
 23 October. The existing goal remains active; this document is the maintained
