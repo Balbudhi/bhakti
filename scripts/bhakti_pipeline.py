@@ -3321,6 +3321,8 @@ def _read_source_timing_declaration(declaration):
         return contract.load_data(path) if reader else read_packet(path)
     reader = load_bound(declaration['original_reader'], reader=True)
     receipt = source_pass._checked_adoption_receipt(declaration, reader)
+    if declaration.get('audio_transform') != receipt.get('audio_transform'):
+        raise ValueError('source timing boundary transform differs from accepted source receipt')
     prior = load_bound(declaration['prior_timing']) if declaration.get('prior_timing') is not None else None
     return reader, receipt, prior
 
@@ -3337,7 +3339,9 @@ def source_adoption_timing_measurements(timing):
     identity = timing['source_identity']; duration = timing['duration_seconds']
     plan = source_pass.plan_source_timing(reader, receipt['delta'], prior,
         audio_sha256=identity['audio_sha256'], trim=identity['source_identity']['trim'], duration_seconds=duration,
-        model_audio_sha256=report['model_audio_sha256'])
+        model_audio_sha256=report['model_audio_sha256'],
+        audio_transform=read_packet(Path(report['declaration']['audio_transform']['path']))
+            if report['declaration'].get('audio_transform') else None)
     if report['plan'] != plan:
         raise ValueError('source adoption timing lineage changed')
     occurrences = timing['ordered_occurrences']
@@ -3408,7 +3412,9 @@ def align_source_adoption(song_dir, audited, audio, options, existing, identity,
         model_hash = source_pass.file_hash(model_audio)
         plan = source_pass.plan_source_timing(reader, delta, prior,
             audio_sha256=identity['audio_sha256'], trim=identity['source_identity']['trim'], duration_seconds=duration,
-            model_audio_sha256=model_hash if needs_joint_binding else None)
+            model_audio_sha256=model_hash if needs_joint_binding else None,
+            audio_transform=read_packet(Path(declaration['audio_transform']['path']))
+                if declaration.get('audio_transform') else None)
         if any(region['clip_end'] - region['clip_start'] > 900 for region in plan['regions']):
             raise ValueError('source timing needs audited bounded segment ownership for long scope')
         if existing and existing.get('input_fingerprint') == fingerprint:

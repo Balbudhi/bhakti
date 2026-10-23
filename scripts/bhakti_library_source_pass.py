@@ -406,7 +406,7 @@ def file_hash(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, duration_seconds, model_audio_sha256=None):
+def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, duration_seconds, model_audio_sha256=None, audio_transform=None):
     """Plan fresh timing only where exact source lineage lacks audio evidence.
 
     A retained value is a corroborated measurement of the same performed block,
@@ -429,13 +429,18 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
                                        'performance_order': old_draft['performance_order']})
     new = pipeline.display_occurrences(delta['rebuilt'])
     measurements = {}; expanded_measurements = {}
+    prior_context={'audio_sha256':audio_sha256,'trim':trim,'duration_seconds':duration_seconds}
+    if audio_transform is not None and prior_timing:
+        from bhakti_boundary_adoption import timing_transform_context
+        prior_context=timing_transform_context(audio_transform,prior_timing.get('source_identity',{}),
+            audio_sha256=audio_sha256,trim=trim,duration_seconds=duration_seconds)
     if prior_timing:
         identity = prior_timing.get('source_identity', {})
         fingerprint = hashlib.sha256(json.dumps(identity, ensure_ascii=False, sort_keys=True, allow_nan=False).encode()).hexdigest()
-        if (identity.get('version') != 2 or identity.get('audio_sha256') != audio_sha256
-                or identity.get('source_identity', {}).get('trim') != trim
+        if (identity.get('version') != 2 or identity.get('audio_sha256') != prior_context['audio_sha256']
+                or identity.get('source_identity', {}).get('trim') != prior_context['trim']
                 or prior_timing.get('input_fingerprint') != fingerprint
-                or prior_timing.get('duration_seconds') != duration_seconds):
+                or prior_timing.get('duration_seconds') != prior_context['duration_seconds']):
             raise ValueError('prior timing identity differs from current recording/trim/duration')
         bound = identity.get('ordered_occurrences', [])
         if len(bound) != len(old) or prior_timing.get('ordered_occurrences') != bound:
@@ -444,11 +449,13 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
             if any(actual.get(key) != value for key, value in expected.items()):
                 raise ValueError('prior timing source differs from original performance')
         measurements = pipeline.retained_timing_measurements(bound,
-            prior_timing.get('refinements', []), duration_seconds, require_consensus=True)
+            prior_timing.get('refinements', []), prior_context['duration_seconds'], require_consensus=True)
         expanded_measurements.update({f'{oid}-r01':point for oid,point in measurements.items()})
         for report in prior_timing.get('refinements', []):
             if report.get('kind') not in {'joint', 'joint-selection'}:
                 continue
+            if audio_transform is not None:
+                raise ValueError('boundary timing canonical model clock origin is not qualified')
             if not isinstance(model_audio_sha256, str) or len(model_audio_sha256) != 64:
                 raise ValueError('prior joint measurements need current canonical model audio binding')
             if report['kind'] == 'joint-selection':
@@ -477,6 +484,14 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
             except (KeyError, TypeError, OSError, routes.RunFatal) as exc:
                 raise ValueError('prior source adoption timing evidence: ' + str(exc)) from exc
             measurements = {row['occurrence_id']:row['start'] for row in prior_timing['sequence']}
+
+    if audio_transform is not None and prior_timing:
+        interval=prior_context['interval'];offset=prior_context['offset']
+        def mapped(values):
+            return {key:point-offset for key,point in values.items()
+                if interval['start']<=point-offset<min(interval['end'],duration_seconds)}
+        measurements=mapped(measurements)
+        expanded_measurements=mapped(expanded_measurements)
 
     # Reconciliation lineage describes expanded performances. A displayed
     # repeated block can retain its start only when every constituent maps
@@ -835,6 +850,14 @@ def _checked_adoption_receipt(declaration, reader):
                 raise ValueError('accepted source route evidence invalid: ' + str(exc)) from exc
             if cached['state']['status'] != 'accepted':
                 raise ValueError('accepted source route is no longer accepted')
+    if receipt.get('audio_transform') is not None:
+        from bhakti_boundary_adoption import checked_audio_transform, require_removed_membership
+        declared=receipt['audio_transform']
+        body=json.loads(Path(declared['path']).read_text())
+        native=next(iter(body['native'].values()))
+        original=Path(native['before']['path']).parent; staged=Path(native['after']['path']).parent
+        checked=checked_audio_transform(declared,original,staged,reader)
+        require_removed_membership(checked,reader,delta,original)
     return receipt
 
 
@@ -867,8 +890,16 @@ def run_observed_source_candidate(*, root, slug, reader, workspace, route_dir, o
     flags=copy.deepcopy(getattr(options,'source_review_flags',{}))
     requested=set(getattr(options,'source_requested_stages',[]) or [])
     if requested.intersection({'audio-review','focused-audio-review'}):flags['audio']=True
-    evidence=collect_source_evidence(song,reader,flags=flags,
-        coverage_requested=getattr(options,'source_coverage_requested',False))
+    transform_declaration=getattr(options,'source_audio_transform',None)
+    transform=None
+    if transform_declaration is not None:
+        from bhakti_boundary_adoption import checked_audio_transform, staged_source_evidence
+        transform=checked_audio_transform(transform_declaration,song,target,reader)
+        evidence=staged_source_evidence(transform,song,target,reader,flags,
+            getattr(options,'source_coverage_requested',False))
+    else:
+        evidence=collect_source_evidence(song,reader,flags=flags,
+            coverage_requested=getattr(options,'source_coverage_requested',False))
     evidence['disagreements']=copy.deepcopy(flags.get('disagreements',[]))
     source_plan=plan_audio_review(reader,source_evidence=evidence,flags=flags,
                                   duration_seconds=evidence['duration_seconds'])
@@ -880,6 +911,9 @@ def run_observed_source_candidate(*, root, slug, reader, workspace, route_dir, o
                 'issues':[{'kind':kind,'detail':detail}],
                 'evidence':{'audio_review':observation,'source_delta':delta,**(extra or {})}}
     if delta['status']!='proposed':return hold('source_reconciliation',delta['issues'])
+    if transform is not None:
+        from bhakti_boundary_adoption import require_removed_membership
+        require_removed_membership(transform,reader,delta,song)
     confirmations={'status':'observed','unit_results':[],'issues':[]}
     if delta['requires_confirmation']:
         units,expected=_source_confirmation_units(reader,delta,observation)
@@ -899,6 +933,9 @@ def run_observed_source_candidate(*, root, slug, reader, workspace, route_dir, o
         'coverage_scope':delta['coverage_scope'],'confirmation':confirmations,
         'observation_fingerprint':observation['input_fingerprint'],'evidence_files':files,
         'remaining_obligations':['timing','semantics','candidate-validation']}
+    if transform is not None:
+        receipt['audio_transform']=copy.deepcopy(transform_declaration)
+        receipt['evidence_files'][transform_declaration['path']]=transform_declaration['sha256']
     identity=digest({'before':evidence['identity'],'reader':digest(reader),
                      'observation':observation['input_fingerprint'],'delta':delta})
     path=Path(route_dir)/'source-adoptions'/identity/'accepted-source-delta.json'
@@ -1075,7 +1112,12 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         editorial_baselines.assert_english_preserved(slug, reader['SONG_LINES'], root=root)
         original_audio = pipeline.preferred_listener_audio(song)
         audio = target / original_audio.name
-        if file_hash(audio) != file_hash(original_audio):
+        transform_declaration=getattr(options,'source_audio_transform',None)
+        transform=None
+        if transform_declaration is not None:
+            from bhakti_boundary_adoption import checked_audio_transform
+            transform=checked_audio_transform(transform_declaration,song,target,reader)
+        elif file_hash(audio) != file_hash(original_audio):
             raise ValueError('workspace audio differs from original native listener audio')
         requested = set(getattr(options, 'source_requested_stages', []) or [])
         coverage_requested = getattr(options, 'source_coverage_requested', False)
@@ -1202,6 +1244,8 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
             local.timing_source_adoption = {**copy.deepcopy(declaration),
                 'original_reader':{'path':str(archived_reader),'sha256':file_hash(archived_reader)},
                 'prior_timing':prior_timing}
+            if transform_declaration is not None:
+                local.timing_source_adoption['audio_transform']=copy.deepcopy(transform_declaration)
         new = process_new_targets(target, plan, metadata, local, route_dir, deadline_at) if plan['new_target_ids'] else {'glosses': {'packet': {'glosses': []}}, 'translations': {'packet': {'translations': []}}}
         if plan['new_target_ids']:
             errors = fresh_target_errors(plan, metadata, new)
@@ -1851,15 +1895,22 @@ def observe_source_candidate(*, reader, song_dir, original_song, audio, route_di
         raise ValueError('focused source review requires explicit line or occurrence locators')
     original_evidence = collect_source_evidence(original_song, reader, flags=flags, coverage_requested=coverage)
     evidence = collect_source_evidence(song_dir, reader, flags=flags, coverage_requested=coverage)
-    if original_evidence['identity'] != evidence['identity']:
+    transform_declaration=getattr(options,'source_audio_transform',None)
+    if transform_declaration is not None:
+        from bhakti_boundary_adoption import checked_audio_transform, staged_source_evidence
+        transform=checked_audio_transform(transform_declaration,original_song,song_dir,reader)
+        evidence=staged_source_evidence(transform,original_song,song_dir,reader,flags,coverage)
+    elif original_evidence['identity'] != evidence['identity']:
         raise ValueError('workspace source/trim/audio identity differs from original')
     # Historical packets are evidence, not an acceptance prerequisite. Freeze their
     # original hashes, while dispatching only the verified private native recording.
-    evidence['artifacts'] = original_evidence['artifacts']
+    if transform_declaration is None:
+        evidence['artifacts'] = original_evidence['artifacts']
     evidence['disagreements'] = copy.deepcopy(flags.get('disagreements', []))
     plan = plan_audio_review(reader, source_evidence=evidence, flags=flags,
                              duration_seconds=evidence['duration_seconds'])
     routing_identity = digest({'version':SOURCE_ROUTING_VERSION,'source':evidence['identity'],
+        **({'audio_transform':transform_declaration} if transform_declaration is not None else {}),
         'duration':evidence['duration_seconds'],'intervals':evidence['routing_intervals'],
         'flags':flags,'coverage_requested':coverage,
         'artifacts':{name:value['sha256'] if value else None for name,value in evidence['artifacts'].items()}})

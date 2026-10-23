@@ -35,6 +35,17 @@ Caller/FFmpeg tests establish these mechanics, not acoustic correctness. The
 stricter audit currently exposes six historical evidence failures recorded in
 the task list. Do not bypass those failures to publish content.
 
+The source/timing consumer accepts an explicit private boundary transform that
+binds every original and staged native format. Removal of a displayed occurrence
+requires original-edge hearing and independent confirmation of the exact ordered
+prefix/suffix; absence from the cropped attachment is insufficient. Durable
+receipts bind preserved original files and their source-support snapshot. Fresh
+admission also compares that archive with the authoritative live input, while
+post-install replay uses the archive without another provider call. This consumer
+is integrated; automatic historical preparation/installation remains inactive.
+Timing reuse still requires a qualified clock origin, and cannot substitute a
+requested trim length or decoded offset for the browser's playback clock.
+
 Boundary installation, reader generation, media publication and site assembly
 share per-song transaction locks. Audio preparation occurs before the brief
 installation lock; consumers reject pending or changed source snapshots. Changed

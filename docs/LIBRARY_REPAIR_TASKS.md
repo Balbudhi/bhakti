@@ -34,10 +34,15 @@ clamps a requested late seek and misses the second landmark; it is unresolved.
 This is local browser evidence, not a model-timestamp certificate or a song
 listening audit. Raw traces and analysis are retained privately under
 `/tmp/bhakti-browser-clock-qualification/`. Historical timing reuse remains held.
-The optional historical transform consumer passes 62 joined local checks, but
-its original-media receipt currently depends on the live pre-install path. It
-must use and validate an immutable original archive before installation/replay
-can be enabled. Those consumer edits remain uncommitted and unactivated.
+The optional historical transform consumer is integrated with 65 relevant local
+checks. Original media/support snapshots now survive replacement of the live
+song; source receipt replay reads the archive without provider dispatch and
+rejects altered archived evidence. Fresh processing still rejects changed live
+inputs. One test assertion initially compared unresolved macOS path aliases;
+canonicalizing both sides fixed that assertion, and its complete replay/tamper
+case passed. Actual hearing judgments and timing measurements in these caller
+tests are synthetic. Automatic historical preparation/installation and qualified
+clock origins remain open; the consumer has no production transform producer yet.
 
 Model-facing source dictionary discovery and materialized-evidence renewal are
 integrated. The joined source acquisition, translation/review, cache renewal and
