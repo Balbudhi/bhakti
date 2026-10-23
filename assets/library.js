@@ -147,31 +147,35 @@
       tooltip.style.top = `${above >= margin ? above : rect.bottom + 8}px`;
     };
     const hide = () => {
+      sticky = null;
       preface.querySelectorAll(".preface-token.is-hi").forEach(candidate => candidate.classList.remove("is-hi"));
       tooltip.hidden = true;
     };
     preface.addEventListener("pointerover", event => {
       const token = event.target.closest(".preface-token");
-      if (token) show(token);
+      if (token && !sticky && event.pointerType !== "touch"
+          && window.matchMedia?.("(hover: hover) and (pointer: fine)").matches) show(token);
     });
     preface.addEventListener("pointerout", event => {
       const token = event.target.closest(".preface-token");
-      if (token && token !== sticky && !token.contains(event.relatedTarget)) hide();
+      if (token && !sticky && !token.contains(event.relatedTarget)) hide();
     });
     preface.addEventListener("focusin", event => {
       const token = event.target.closest(".preface-token");
-      if (token) show(token);
+      if (token?.matches(":focus-visible")) {
+        hide();
+        show(token);
+      }
     });
     preface.addEventListener("focusout", event => {
       const token = event.target.closest(".preface-token");
-      if (token && token !== sticky) hide();
+      if (token) hide();
     });
     preface.addEventListener("click", event => {
       const token = event.target.closest(".preface-token");
       if (!token) return;
       event.stopPropagation();
       if (sticky === token) {
-        sticky = null;
         hide();
         return;
       }
@@ -188,15 +192,15 @@
     });
     document.addEventListener("click", event => {
       if (event.target.closest?.(".preface-token")) return;
-      if (sticky) hide();
-      sticky = null;
+      hide();
     });
-    document.addEventListener("bhakti:clear-preface", () => {
-      if (sticky) hide();
-      sticky = null;
-      tooltip.hidden = true;
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") hide();
     });
-    window.addEventListener("scroll", () => { tooltip.hidden = true; }, { passive: true });
+    document.addEventListener("bhakti:clear-preface", hide);
+    window.addEventListener("scroll", hide, { passive: true });
+    window.addEventListener("resize", hide);
+    window.addEventListener("popstate", hide);
   };
 
   const mount = (root = document) => {

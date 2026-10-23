@@ -136,3 +136,40 @@ Release trim audit with retained private evidence: 104 checked, no failures.
 The separate in-progress trim validator reports failures against local evidence;
 that validator and content work are excluded from this UI release. Python
 compilation and whitespace checks pass.
+
+## Touch feedback and state consistency
+
+Outcome: retain the approved appearance while removing sticky post-tap feedback
+from player, playlist, reader and library controls. Current step: implement the
+reviewed state rules and regression cases (done); publish the verified scoped assets.
+
+1. Guard all public hover decoration in site/song/app CSS by input capability;
+   keep selected/open/singing states outside that guard and keyboard focus distinct.
+2. Prevent disabled command hover/press and give main Play an explicit focus ring.
+3. Clear preface and reader word-preview highlights with their tooltip, including
+   scroll, Escape and cached-view cleanup; retain interactive tooltip scrolling.
+4. Verify state transitions in focused tests and the native in-app Browser; check
+   390px, tablet, desktop and large-screen layouts, then exact release callers.
+
+Independent review identified missing preface Escape/preview cleanup and reader
+hover-preview scroll cleanup. New regressions reproduce those defects. The in-app
+browser offers viewport resizing but no touch-input emulation; physical-phone
+input remains a separate acceptance check, not implied by the 390px screenshot.
+
+Verification: 36 focused JS tests pass, including red-before-fix cases for stale
+highlights, hybrid touch and resize. Independent review found no remaining
+blockers. Native browser checks cover preface dismissal/reopen, selected filters
+versus keyboard focus, Play/playlist focus rings, repeated playlist open/close,
+Skip reaching the last item, and disabled Skip retaining zero hover fill.
+53 Jaya Jagdisha Hare line controls seek to their stored starts. All four layout
+widths fit without document overflow; browser-parsed public CSS has zero unguarded
+hover rules. Small circles retain their visible size with 44px hit areas.
+
+Contract audit: 265 ready, no problems. Audio-quality audit: no errors. Python
+compilation and whitespace checks pass. Trim audit: 104 checked; six failures
+are byte-for-byte identical with unchanged baseline pipeline code (legacy review
+validity / applied-interval mismatch), with no verified-untrimmed-material failures.
+These evidence repairs remain separate from the UI release. Physical-phone touch
+and OS reduced-motion behavior were not available to this browser; input guards,
+pointer sequences and reduced-motion rules were checked without claiming device
+emulation.

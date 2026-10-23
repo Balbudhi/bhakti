@@ -93,10 +93,10 @@ test('focus leaving selected tooltip closes without stealing focus; document scr
 
 test('hover-only tooltip remains noninteractive and closes on mouseout', () => {
   const app = setup({ hover: true });
-  app.root.emit('mouseover', { target: app.word }); const tip = app.tip();
+  app.root.emit('pointerover', { target: app.word }); const tip = app.tip();
   assert.equal(tip.classList.contains('is-interactive'), false);
   assert.equal(tip.tabIndex, -1);
-  app.root.emit('mouseout', { target: app.word, relatedTarget: null });
+  app.root.emit('pointerout', { target: app.word, relatedTarget: null });
   assert.equal(tip.hidden, true);
 });
 
@@ -156,4 +156,39 @@ test('another mounted reader cannot handle the selected tooltip scroll key a sec
   select(app, true);
   app.document.emit('keydown', { target: app.tip(), key: 'ArrowDown' });
   assert.equal(app.tip().scrollTop, 40);
+});
+
+test('page scroll clears hover and keyboard-preview highlights while preserving focus', () => {
+  for (const keyboard of [false, true]) {
+    const app = setup({hover:true});
+    if (keyboard) {
+      app.word.focus(); app.document.emit('keydown',{key:'Tab',target:app.word});
+      app.root.emit('focusin',{target:app.word});
+    } else app.root.emit('pointerover',{target:app.word});
+    assert.equal(app.word.classList.contains('is-hi'),true);
+    app.window.emit('scroll',{target:app.document});
+    assert.equal(app.tip().hidden,true);
+    assert.equal(app.word.classList.contains('is-hi'),false);
+    assert.equal(app.linked.classList.contains('is-hi'),false);
+    if (keyboard) assert.equal(app.document.activeElement,app.word);
+    else {
+      app.root.emit('pointerover',{target:app.word});
+      assert.equal(app.tip().hidden,false);
+    }
+  }
+});
+
+test('hybrid touch contact cannot open a hover preview', () => {
+  const app = setup({hover:true});
+  app.root.emit('pointerover',{target:app.word,pointerType:'touch'});
+  app.root.emit('mouseover',{target:app.word});
+  assert.equal(app.word.classList.contains('is-hi'),false);
+  select(app); assert.equal(app.word.classList.contains('is-hi'),true);
+});
+test('resize clears selected meaning and the next click opens immediately', () => {
+  const app = setup(); select(app);
+  app.window.emit('resize');
+  assert.equal(app.tip().hidden,true);
+  assert.equal(app.linked.classList.contains('is-hi'),false);
+  select(app); assert.equal(app.tip().hidden,false);
 });

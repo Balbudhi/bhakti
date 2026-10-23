@@ -786,14 +786,16 @@ function wireInteractions(root) {
   // pointer may activate meanings without an explicit click or focus.
   const hasRealHover = window.matchMedia?.("(hover: hover) and (pointer: fine)").matches;
   if (hasRealHover) {
-    root.addEventListener("mouseover", e => {
+    root.addEventListener("pointerover", e => {
+      if (e.pointerType === "touch") return;
       const w = e.target.closest(".word-link");
       if (!w || w === hoverWord) return;
       if (hoverWord && hoverWord !== stickyWord) deactivate(hoverWord);
       hoverWord = w;
       activate(w, w === stickyWord);
     });
-    root.addEventListener("mouseout", e => {
+    root.addEventListener("pointerout", e => {
+      if (e.pointerType === "touch") return;
       const w = e.target.closest(".word-link");
       if (!w) return;
       const to = e.relatedTarget;
@@ -839,11 +841,15 @@ function wireInteractions(root) {
     deactivate(w);
   });
 
+  const dismissMeaning = () => {
+    deactivateAll(root);
+    stickyWord = null;
+    hoverWord = null;
+  };
   window.addEventListener("scroll", event => {
-    if (tip.contains(event.target)) return;
-    hideTooltip();
-    if (stickyWord) { deactivate(stickyWord); stickyWord = null; }
+    if (!tip.contains(event.target)) dismissMeaning();
   }, { passive: true });
+  window.addEventListener("resize", dismissMeaning);
 
   document.addEventListener("keydown", e => {
     if (e.key === "Tab") keyboardFocus = true;

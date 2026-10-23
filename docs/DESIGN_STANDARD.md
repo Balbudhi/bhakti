@@ -65,6 +65,45 @@ The current measures and breakpoints live in `assets/site.css:26-39,365-408` and
 
 The shared player symbols are in `assets/player-icons.svg`; established control geometry is in `assets/song.css:36-99,304-380`.
 
+## Control states and input methods
+
+A highlight must describe a current state, never merely the last thing touched.
+The same control family uses the same state rules in the library, reader and playlist.
+
+| State | Appearance and lifetime |
+| --- | --- |
+| Resting | Existing quiet cream icon/hairline; transparent or ground-colored surface. |
+| Hover | Subtle cream feedback only under `(hover: hover) and (pointer: fine)`. Apply this to parent-row hover and pseudo-elements too. Screen width does not identify an input device. |
+| Pressed | Brief `:active` opacity or scale feedback while held; no layout movement, latched fill or delayed reset. Disabled controls never get this feedback. |
+| Keyboard focus | A visible cream outline/edge independent of hover and selection, using `:focus-visible`. Keep DOM focus and native keyboard activation; never blur buttons to hide touch styling. |
+| Selected | Persistent only while backed by actual state: filter `aria-pressed`, lyric-following state, linked word selection or current lyric. A selected tag remains selected after a tap. |
+| Expanded | The disclosure trigger remains identifiable only while its region is open; closing removes that state even if the trigger still has focus. Keyboard focus may remain visible. |
+| Playing / loading | Matched Play/Pause glyphs and truthful accessible action/busy labels follow the media controller. A command does not acquire a selected fill merely because it ran. |
+| Disabled | Muted, non-actionable, excluded from hover/press decoration; native `disabled` where applicable. |
+
+Pointer hover and keyboard focus are independent. Shared selector groups must not
+accidentally put focus or real selection inside a hover-only media query. Avoid
+sticky touch hover in JavaScript previews too: touch contact is not hover, including
+on a device with a trackpad. Explicit tap/click remains the path to a selected meaning.
+Suppress the browser's colored tap flash only on controls that supply their own
+pressed/focus feedback. Small invisible hit areas must not overlap or be clipped.
+
+### Transient surfaces and feedback
+
+- Word meanings keep linked text highlighted exactly while the meaning is selected
+  or previewed. Dismissal clears the popup, all linked highlights and its selection
+  together; scrolling must not leave an invisible selection that takes two taps to reopen.
+- Escape, outside interaction and leaving the page clear transient state. Reposition
+  or dismiss on resize. Scrolling inside a scrollable meaning preserves that meaning;
+  scrolling the surrounding page dismisses it.
+- Preserve real filter/playlist state across navigation; do not preserve open menus
+  or orphaned word highlights in cached pages.
+- Action feedback is short, does not move content, and does not cover the control
+  needed next. Empty and failure states explain a useful next action in plain language.
+- Titles wrap, icon labels describe actions, and focus remains visible after
+  rerender/removal. Disabled boundaries, empty queues and unavailable audio must stay
+  understandable without relying on color alone.
+
 ## Disclosure
 
 The default state shows only what is necessary for reading or the current playback action.
@@ -126,7 +165,18 @@ Every material UI change is checked in the Codex in-app Browser at:
 - desktop computer;
 - TV / very large display.
 
-At each size verify no horizontal overflow, readable measure, safe-area clearance, reachable controls, stable player geometry, complete keyboard access, and the actual transition—not only the final state.
+At each size verify no horizontal overflow, readable measure, safe-area clearance,
+reachable controls, stable player geometry, complete keyboard access, and the actual
+transition—not only the final state. Also check long titles, expanded filters,
+menus beside viewport/player edges, queue boundaries, empty search and failed media.
+
+Input acceptance is separate from viewport acceptance. Exercise tap → release →
+repeat, open → close while the trigger keeps focus, mouse enter → leave, Tab / Shift+Tab,
+Enter / Space, Escape, scroll, resize and Back/Forward. Verify real selected states
+persist while transient feedback clears. A narrow desktop browser is a layout test,
+not proof of phone input behavior; record any unavailable device/input checks.
+Check reduced motion, text enlargement, portrait/landscape and safe areas when the
+available device supports them; do not claim an emulation the tools cannot perform.
 
 ## Anti-patterns
 

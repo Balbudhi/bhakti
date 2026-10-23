@@ -82,12 +82,18 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
-.preface-token:hover,
 .preface-token:focus-visible,
 .preface-token.is-hi {
   background: rgba(244, 234, 208, 0.08);
   box-shadow: 0 0 0 1px rgba(244, 234, 208, 0.60);
   outline: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .preface-token:hover {
+    background: rgba(244, 234, 208, 0.08);
+    box-shadow: 0 0 0 1px rgba(244, 234, 208, 0.60);
+    outline: none;
+  }
 }
 
 .library-invocation-english {
@@ -142,15 +148,22 @@ main {
   font-weight: 600;
 }
 
-.about-toggle:hover,
 .about-toggle:focus-visible,
 .about-toggle[aria-expanded="true"],
-.about-close:hover,
 .about-close:focus-visible {
   background: rgba(244, 234, 208, 0.10);
   border-color: rgba(244, 234, 208, 0.58);
   color: var(--ink);
   outline: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .about-toggle:hover,
+  .about-close:hover {
+    background: rgba(244, 234, 208, 0.10);
+    border-color: rgba(244, 234, 208, 0.58);
+    color: var(--ink);
+    outline: none;
+  }
 }
 .about-toggle:active,
 .about-close:active { opacity: 0.76; transform: scale(0.94); }
@@ -330,12 +343,20 @@ main {
   transition: color 160ms ease, padding 160ms ease, opacity 120ms ease;
 }
 
-.song-card:hover { background: rgba(244, 234, 208, 0.075); }
-.song-card-link:hover,
+@media (hover: hover) and (pointer: fine) {
+  .song-card:hover { background: rgba(244, 234, 208, 0.075); }
+}
 .song-card-link:focus-visible {
   color: var(--red-dark);
   outline: none;
   padding-left: 14px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .song-card-link:hover {
+    color: var(--red-dark);
+    outline: none;
+    padding-left: 14px;
+  }
 }
 
 .song-card-link:focus-visible { box-shadow: inset 2px 0 var(--ink); }
@@ -358,14 +379,22 @@ main {
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 140ms ease, transform 120ms ease;
 }
 
-.song-card:hover .song-actions-trigger,
-.song-actions-trigger:hover,
 .song-actions-trigger:focus-visible {
   opacity: 1;
   color: var(--ink);
   border-color: var(--line);
   background: rgba(244, 234, 208, 0.08);
   outline: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .song-card:hover .song-actions-trigger,
+  .song-actions-trigger:hover {
+    opacity: 1;
+    color: var(--ink);
+    border-color: var(--line);
+    background: rgba(244, 234, 208, 0.08);
+    outline: none;
+  }
 }
 .song-actions-trigger:active { transform: scale(0.94); }
 
@@ -446,8 +475,10 @@ main {
 
   .song-card { grid-template-columns: minmax(0, 1fr) 58px; }
   .song-card-link { gap: 48px; padding: 36px 20px; }
-  .song-card-link:hover,
   .song-card-link:focus-visible { padding-left: 28px; }
+  @media (hover: hover) and (pointer: fine) {
+    .song-card-link:hover { padding-left: 28px; }
+  }
   .song-actions-trigger { width: 52px; height: 52px; }
   .song-actions-trigger svg { width: 27px; height: 27px; }
   .song-copy { gap: 10px; }
@@ -487,9 +518,13 @@ main {
     padding: 18px 2px;
   }
 
-  .song-card-link:hover,
   .song-card-link:focus-visible {
     padding-left: 10px;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .song-card-link:hover {
+      padding-left: 10px;
+    }
   }
 
   .song-actions-trigger { width: 42px; height: 42px; }
@@ -540,8 +575,10 @@ main {
   cursor: pointer;
 }
 .song-queue-choice svg { width: 18px; height: 18px; flex: 0 0 18px; opacity: .75; }
-.song-queue-choice:hover,
 .song-queue-choice:focus-visible { background: rgba(244,234,208,.09); outline: 1px solid var(--line); outline-offset: -1px; }
+@media (hover: hover) and (pointer: fine) {
+  .song-queue-choice:hover { background: rgba(244,234,208,.09); outline: 1px solid var(--line); outline-offset: -1px; }
+}
 @media (min-width: 1800px) {
   .song-queue-actions { width: 240px; }
   .song-queue-choice { min-height: 54px; font-size: 18px; }
@@ -556,3 +593,13 @@ main {
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Selected tags and open disclosures keep their own state; focus adds an edge. */
+.tag-filter:focus-visible,
+.about-toggle:focus-visible,
+.about-close:focus-visible,
+.song-actions-trigger:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.song-actions-trigger[aria-expanded="true"] { opacity: 1; color: var(--ink); border-color: var(--line); }
+
+/* These controls already provide brief pressed feedback and keyboard focus. */
+button, .song-home { -webkit-tap-highlight-color: transparent; }

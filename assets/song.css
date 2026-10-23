@@ -48,7 +48,9 @@ html, body {
   -webkit-tap-highlight-color: transparent;
   transition: background-color 140ms ease, transform 120ms ease;
 }
-.song-home:hover { background: rgba(244, 234, 208, 0.10); border-color: rgba(244, 234, 208, 0.55); }
+@media (hover: hover) and (pointer: fine) {
+  .song-home:hover { background: rgba(244, 234, 208, 0.10); border-color: rgba(244, 234, 208, 0.55); }
+}
 .song-home:active { transform: scale(0.94); }
 .song-home:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 3px; }
 
@@ -90,11 +92,16 @@ html, body {
    containing-block inset from these during a swipe. */
 #songSync { --song-control-left: max(18px, calc(10px + env(safe-area-inset-left))); left: var(--song-control-left); }
 #songShare { --song-control-right: max(18px, calc(10px + env(safe-area-inset-right))); right: var(--song-control-right); }
-#songShare:hover,
-#songSync:hover,
 #songSync[aria-pressed="true"] {
   border-color: rgba(244, 234, 208, 0.55);
   background-color: var(--kh-bg);
+}
+@media (hover: hover) and (pointer: fine) {
+  #songShare:hover,
+  #songSync:hover {
+    border-color: rgba(244, 234, 208, 0.55);
+    background-color: var(--kh-bg);
+  }
 }
 #songShare:active,
 #songSync:active { transform: scale(0.94); }
@@ -252,7 +259,9 @@ html, body {
   cursor: pointer;
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease;
 }
-.edition-select:hover { color: var(--kh-ink); border-color: rgba(244, 234, 208, 0.48); }
+@media (hover: hover) and (pointer: fine) {
+  .edition-select:hover { color: var(--kh-ink); border-color: rgba(244, 234, 208, 0.48); }
+}
 .edition-select:active { opacity: 0.76; }
 .edition-select:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 2px; }
 .edition-select option { color: #2a0710; background: #f4ead0; }
@@ -358,8 +367,10 @@ html, body {
   padding: 0;
   transition: background-color 140ms ease, transform 120ms ease;
 }
-.ap-btn:hover { background: rgba(244, 234, 208, 0.10); }
-.ap-btn:active { transform: scale(0.94); }
+@media (hover: hover) and (pointer: fine) {
+  .ap-btn:not(:disabled):hover { background: rgba(244, 234, 208, 0.10); }
+}
+.ap-btn:active:not(:disabled) { transform: scale(0.94); }
 .ap-btn .ap-icon-play  { margin-left: 2px; }
 .ap-btn .ap-icon-pause { display: none; }
 .ap-btn.is-playing .ap-icon-play  { display: none; }
@@ -446,14 +457,22 @@ html, body {
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 140ms ease, transform 120ms ease;
 }
 .line-seek svg { margin-left: 1px; }
-.line:hover .line-seek,
 .line.is-singing .line-seek,
 .line-seek:focus-visible {
   opacity: 1;
   color: var(--kh-ink);
   border-color: rgba(244, 234, 208, 0.55);
 }
-.line-seek:hover { background: rgba(244, 234, 208, 0.08); }
+@media (hover: hover) and (pointer: fine) {
+  .line:hover .line-seek {
+    opacity: 1;
+    color: var(--kh-ink);
+    border-color: rgba(244, 234, 208, 0.55);
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .line-seek:hover { background: rgba(244, 234, 208, 0.08); }
+}
 .line-seek:active { transform: scale(0.92); }
 .line-seek:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 2px; }
 .line.is-singing {
@@ -691,7 +710,6 @@ html, body {
 /* Touch devices: hover-only styles off. */
 @media (hover: none) {
   .line .word-link { padding: 2px 3px; margin: 0 -3px; }
-  .line .word-link:hover { background: transparent; }
   .line .word-link.is-hi { background: rgba(244, 234, 208, 0.18); }
 }
 
@@ -757,3 +775,5 @@ html, body {
   #songSync { --song-control-left: max(30px, calc(18px + env(safe-area-inset-left))); }
   #songShare { --song-control-right: max(30px, calc(18px + env(safe-area-inset-right))); }
 }
+
+.ap-btn:focus-visible { outline: 2px solid var(--kh-ink); outline-offset: 3px; }

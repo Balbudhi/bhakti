@@ -30,12 +30,19 @@
   cursor: pointer;
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, transform 120ms ease;
 }
-.shuffle-visible:hover,
 .shuffle-visible:focus-visible {
   color: var(--ink);
   border-color: rgba(244, 234, 208, 0.58);
   background: rgba(244, 234, 208, 0.10);
   outline: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .shuffle-visible:not(:disabled):hover {
+    color: var(--ink);
+    border-color: rgba(244, 234, 208, 0.58);
+    background: rgba(244, 234, 208, 0.10);
+    outline: none;
+  }
 }
 .shuffle-visible:active { transform: scale(0.94); }
 .shuffle-visible:disabled { opacity: 0.34; cursor: default; transform: none; }
@@ -147,26 +154,38 @@ body.queue-open .audio-player { bottom: 0; }
   transform: scale(0.25);
   transition: opacity 140ms ease, transform 160ms cubic-bezier(.2,.8,.2,1);
 }
-.queue-pill:hover::before,
 .queue-pill:focus-visible::before,
 .queue-pill[aria-expanded="true"]::before,
-.queue-action:hover::before,
 .queue-action:focus-visible::before,
-.queue-row-action:hover::before,
 .queue-row-action:focus-visible::before {
   opacity: 1;
   transform: scale(1);
 }
+@media (hover: hover) and (pointer: fine) {
+  .queue-pill:hover::before,
+  .queue-action:not(:disabled):hover::before,
+  .queue-row-action:not(:disabled):hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .queue-pill > svg,
 .queue-action > svg,
 .queue-row-action > svg { position: relative; z-index: 1; }
-.queue-pill:hover,
 .queue-pill:focus-visible,
 .queue-pill[aria-expanded="true"] {
   color: #f4ead0;
   border-color: rgba(244, 234, 208, 0.62);
   background: transparent;
   outline: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .queue-pill:hover {
+    color: #f4ead0;
+    border-color: rgba(244, 234, 208, 0.62);
+    background: transparent;
+    outline: none;
+  }
 }
 .queue-pill:active { transform: scale(0.94); }
 
@@ -224,12 +243,19 @@ body.queue-open .audio-player { bottom: 0; }
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
 .queue-tools { display: flex; align-items: center; gap: 4px; }
-.queue-action:hover,
 .queue-action:focus-visible {
   color: #f4ead0;
   border-color: rgba(244, 234, 208, 0.48);
   background: transparent;
   outline: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .queue-action:not(:disabled):hover {
+    color: #f4ead0;
+    border-color: rgba(244, 234, 208, 0.48);
+    background: transparent;
+    outline: none;
+  }
 }
 .queue-action:disabled { opacity: 0.24; cursor: default; }
 .queue-action:active:not(:disabled) { transform: scale(0.92); }
@@ -292,8 +318,10 @@ body.queue-open .audio-player { bottom: 0; }
 }
 .queue-drag-handle { cursor: grab; touch-action: pan-y; font: 500 18px/1 Inter, sans-serif; letter-spacing: -4px; transition: color 140ms ease, opacity 120ms ease; }
 .queue-drag-handle:active { cursor: grabbing; }
-.queue-drag-handle:hover,
 .queue-drag-handle:focus-visible { color: #f4ead0; outline: none; }
+@media (hover: hover) and (pointer: fine) {
+  .queue-drag-handle:hover { color: #f4ead0; outline: none; }
+}
 .queue-row-actions { display: flex; align-items: center; gap: 6px; }
 .queue-row-action {
   appearance: none;
@@ -313,9 +341,11 @@ body.queue-open .audio-player { bottom: 0; }
   overflow: hidden;
   transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
-.queue-row-action:hover,
 .queue-row-action:focus-visible { color: #f4ead0; border-color: rgba(244, 234, 208, 0.52); background: transparent; outline: none; }
-.queue-row-action:active { transform: scale(0.92); }
+@media (hover: hover) and (pointer: fine) {
+  .queue-row-action:not(:disabled):hover { color: #f4ead0; border-color: rgba(244, 234, 208, 0.52); background: transparent; outline: none; }
+}
+.queue-row-action:active:not(:disabled) { transform: scale(0.92); }
 .queue-empty { padding: 36px 22px; color: rgba(244, 234, 208, 0.68); text-align: center; font: 400 17px/1.4 "Cormorant Garamond", Georgia, serif; }
 
 .app-status {
@@ -459,3 +489,46 @@ body.queue-open .audio-player { bottom: 0; }
 .queue-action:focus-visible,
 .queue-row-action:focus-visible,
 .queue-drag-handle:focus-visible { outline: 1px solid currentColor; outline-offset: 3px; }
+
+/* Focus is a keyboard location, independent of a selected/open state. */
+.shuffle-visible:focus-visible,
+.queue-pill:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* Expand hit areas without enlarging the established visible circles. */
+.ap-btn, .song-home, .shuffle-visible, .queue-drag-handle { position: relative; }
+.queue-pill { overflow: visible; }
+.ap-btn::after,
+.song-home::after,
+#songSync::after,
+#songShare::after,
+.line-seek::after,
+.shuffle-visible::after,
+.about-toggle::after,
+.about-close::after,
+.queue-pill::after,
+.queue-drag-handle::after {
+  content: "";
+  position: absolute;
+  min-width: 44px;
+  min-height: 44px;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+}
+.filter-toggle:active { opacity: .76; }
+.song-queue-choice:active { background: rgba(244,234,208,.09); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ap-btn, .song-home, #songSync, #songShare, .line-seek,
+  .shuffle-visible, .about-toggle, .about-close, .filter-toggle,
+  .tag-filter, .song-card-link, .song-actions-trigger, .song-queue-choice,
+  .preface-token, .word-link, .edition-select { transition: none; }
+  .ap-btn:active, .song-home:active, #songSync:active, #songShare:active,
+  .line-seek:active, .shuffle-visible:active, .about-toggle:active,
+  .about-close:active, .tag-filter:active, .song-actions-trigger:active,
+  .queue-pill:active, .queue-action:active:not(:disabled),
+  .queue-row-action:active { transform: none; }
+}
