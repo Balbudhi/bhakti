@@ -36,6 +36,30 @@ const last = create([a, b], 1);
 assert.deepEqual(ids(Queue.playNext(last, c)), ["a", "b", "c"]);
 assert.deepEqual(ids(Queue.playNext(Queue.standalone(a, "solo"), b)), ["a", "b"]);
 
+// Opening a different standalone song retains the first occurrence and session.
+// Returning to the same song later creates a distinct occurrence, not a dedupe.
+const solo = Queue.standalone(a, "solo");
+const secondSong = Queue.playNow(solo, b);
+assert.deepEqual(ids(secondSong), ["a", "b"]);
+assert.equal(secondSong.currentIndex, 1);
+assert.equal(secondSong.mode, "custom");
+assert.equal(secondSong.sessionId, "solo");
+assert.equal(secondSong.items[0].entryId, solo.items[0].entryId);
+const returnVisit = Queue.playNow(secondSong, a);
+assert.deepEqual(ids(returnVisit), ["a", "b", "a"]);
+assert.notEqual(returnVisit.items[0].entryId, returnVisit.items[2].entryId);
+assert.deepEqual(ids(Queue.restore(JSON.stringify(returnVisit), catalogue)), ["a", "b", "a"]);
+assert.deepEqual(ids(secondSong), ["a", "b"], "Revisiting a song must not rewrite the earlier session");
+
+// The number of occurrences can exceed the catalogue size: repeated listening
+// still shares its full ordered history and current occurrence.
+const longHistory = create([a, b, a, b, a, b, a, b], 6);
+const longHistoryShared = Queue.decode(Queue.encode(longHistory), catalogue, "received");
+assert.ok(longHistoryShared, "Repeated history must be shareable beyond catalogue size");
+assert.deepEqual(ids(longHistoryShared), ["a", "b", "a", "b", "a", "b", "a", "b"]);
+assert.equal(longHistoryShared.currentIndex, 6);
+assert.equal(new Set(longHistoryShared.items.map(item => item.entryId)).size, 8);
+
 assert.equal(Queue.clearUpcoming(null), null);
 assert.deepEqual(Queue.previous(null), {state: null, moved: false});
 const cleared = Queue.clearUpcoming(before);

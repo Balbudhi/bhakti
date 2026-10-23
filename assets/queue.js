@@ -7,6 +7,9 @@
   const PACKED_VERSION = 4;
   const SHUFFLE_ALL_CODE = 3;
   const MAX_PAYLOAD_CHARACTERS = 4096;
+  // Occurrences include repeats and history, so this limit is independent of
+  // the number of distinct songs in the catalogue.
+  const MAX_SHARE_ENTRIES = 4096;
   const MODES = new Set(["standalone", "custom", "shuffle"]);
   const MODE_TO_CODE = Object.freeze({
     standalone: 0,
@@ -106,11 +109,10 @@
     if (!state) return standalone(item, globalThis.crypto?.randomUUID?.() || `queue-${Date.now()}`);
     if (item.entryId && state.items[state.currentIndex].entryId === item.entryId) return state;
     if (!item.entryId && state.items[state.currentIndex].slug === item.slug) return state;
-    if (state.mode === "standalone") return standalone(item, state.sessionId);
     const next = removeExistingEntry(state, item);
     const insertionIndex = next.currentIndex + 1;
     next.items.splice(insertionIndex, 0, item);
-    return rebuild(state, next.items, insertionIndex, state.mode, state.shuffleAll);
+    return rebuild(state, next.items, insertionIndex, state.mode === "standalone" ? "custom" : state.mode, state.shuffleAll);
   };
 
   const append = (state, item, sessionId) => {
@@ -638,7 +640,7 @@
     return create({ mode: value.m, items, currentIndex: value.i, sessionId });
   };
 
-  const decode = (payload, catalogue, sessionId, maximum) => {
+  const decode = (payload, catalogue, sessionId, maximum = MAX_SHARE_ENTRIES) => {
     if (typeof payload !== "string" || !payload.length || payload.length > MAX_PAYLOAD_CHARACTERS) return null;
     try {
       const bytes = base64UrlDecodeBytes(payload);
@@ -676,6 +678,7 @@
 
   const api = Object.freeze({
     VERSION,
+    MAX_SHARE_ENTRIES,
     create,
     standalone,
     playNow,

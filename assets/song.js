@@ -946,7 +946,7 @@ function setupKaraoke() {
     if (!audio.paused) startKaraokeClock();
   };
 
-  audio.addEventListener("play", startKaraokeClock);
+  audio.addEventListener("playing", startKaraokeClock);
   audio.addEventListener("seeking", updateKaraoke);
   audio.addEventListener("seeked", updateKaraoke);
   audio.addEventListener("timeupdate", updateKaraoke);
@@ -963,12 +963,7 @@ function setupKaraoke() {
     const article = seekButton.closest(".line");
     const start = Number(article?.dataset.start);
     if (!Number.isFinite(start)) return;
-    const seekAndPlay = () => {
-      audio.currentTime = start;
-      audio.play().catch(() => {});
-    };
-    if (audio.readyState >= HTMLMediaElement.HAVE_METADATA) seekAndPlay();
-    else audio.addEventListener("loadedmetadata", seekAndPlay, { once: true });
+    getPlaybackController(audio).play(start);
   });
 }
 
@@ -1088,6 +1083,124 @@ function setupTopControls() {
    AUDIO PLAYER — custom controls bound to the hidden <audio>
    ============================================================= */
 
+// One owner for playback intent and source failures across every player control.
+// A request token invalidates deferred play/seek work on pause or replacement.
+const PLAYBACK_CONTROLLERS = new WeakMap();
+function getPlaybackController(audio) {
+  if (PLAYBACK_CONTROLLERS.has(audio)) return PLAYBACK_CONTROLLERS.get(audio);
+  let request = 0;
+  let intent = !audio.paused;
+  let playing = intent && audio.readyState >= 3;
+  let failed = false;
+  let pendingSeek = null;
+  const failedSources = new Set();
+  const notify = () => audio.dispatchEvent(new CustomEvent("bhakti:playback-state"));
+  const report = (message, advance = false) => {
+    const event = new CustomEvent("bhakti:playback-problem", { cancelable: true, detail: { message, advance } });
+    if (audio.dispatchEvent(event)) showControlStatus(message);
+  };
+  const pause = () => {
+    request++;
+    intent = false;
+    playing = false;
+    pendingSeek = null;
+    audio.pause();
+    notify();
+  };
+  const fail = () => {
+    if (failed && !intent) return;
+    const advance = intent;
+    failed = true;
+    pause();
+    report("This recording is unavailable", advance);
+  };
+  const seekWhenReady = () => {
+    if (!intent || pendingSeek === null || audio.readyState < 1) return;
+    audio.currentTime = pendingSeek;
+    pendingSeek = null;
+  };
+  const play = (start = null) => {
+    const token = ++request;
+    intent = true;
+    pendingSeek = Number.isFinite(start) ? start : null;
+    if (failed || audio.error || (!audio.querySelectorAll("source").length && !audio.src)) {
+      fail();
+      return;
+    }
+    seekWhenReady();
+    // Keep this call synchronous with the click/key gesture, including lyric seeks.
+    let attempt;
+    try { attempt = audio.play(); }
+    catch (error) { attempt = Promise.reject(error); }
+    notify();
+    if (!attempt?.then) return; // Older media APIs rely on the playing event.
+    Promise.resolve(attempt).then(() => {
+      if (token !== request || !intent || audio.paused || failed) return;
+      playing = true;
+      notify();
+    }, error => {
+      if (token !== request || !intent) return;
+      if (audio.error || error?.name === "NotSupportedError") {
+        fail();
+        return;
+      }
+      pause();
+      if (error?.name !== "AbortError") report(error?.name === "NotAllowedError"
+        ? "Press Play to continue" : "This recording could not start");
+    });
+  };
+  const reset = () => {
+    pause();
+    failed = false;
+    failedSources.clear();
+  };
+  audio.addEventListener("error", event => {
+    if (event.target === audio) {
+      if (audio.error) fail();
+      return;
+    }
+    const source = event.target;
+    if (source?.tagName !== "SOURCE" || source.parentElement !== audio) return;
+    failedSources.add(source);
+    const sources = [...audio.querySelectorAll("source")];
+    if (sources.length && sources.every(item => failedSources.has(item))) fail();
+  }, true); // <source> errors do not bubble, and one failure may have a valid fallback.
+  audio.addEventListener("loadedmetadata", seekWhenReady);
+  audio.addEventListener("playing", () => {
+    if (!intent || audio.paused || failed) return;
+    playing = true;
+    notify();
+  });
+  audio.addEventListener("pause", () => {
+    if (!audio.paused) return; // A queued pause may belong to the replaced recording.
+    request++;
+    intent = false;
+    playing = false;
+    pendingSeek = null;
+    notify();
+  });
+  audio.addEventListener("ended", () => {
+    request++;
+    intent = false;
+    playing = false;
+    pendingSeek = null;
+    notify();
+  });
+  audio.addEventListener("emptied", () => {
+    playing = false;
+    notify(); // load() can queue this after the latest play/seek request.
+  });
+  const controller = Object.freeze({ play, pause, reset,
+    isPlaying: () => playing && !audio.paused && !audio.ended,
+    isPending: () => intent && !playing,
+  });
+  PLAYBACK_CONTROLLERS.set(audio, controller);
+  // Preload can fail before this script binds. Restart only uninitialized media
+  // once, so all candidate errors are observed; preserve loaded/playing audio.
+  if (audio.paused && audio.readyState === 0 && audio.querySelectorAll("source").length) audio.load();
+  return controller;
+}
+
 function fmtTime(s) {
   if (!isFinite(s)) return "—:—";
   const h = Math.floor(s / 3600);
@@ -1105,18 +1218,27 @@ function setupAudioPlayer() {
   const duration = document.getElementById("apDuration");
   if (!audio || !btn || audio.dataset.bhaktiPlayerBound) return;
   audio.dataset.bhaktiPlayerBound = "true";
+  const playback = getPlaybackController(audio);
 
   const updateTime = () => {
     if (elapsed) elapsed.textContent = fmtTime(audio.currentTime || 0);
     if (duration) duration.textContent = fmtTime(audio.duration);
   };
 
-  btn.addEventListener("click", () => {
-    if (audio.paused) audio.play();
-    else audio.pause();
-  });
-  audio.addEventListener("play",  () => { btn.classList.add("is-playing");    btn.setAttribute("aria-label", "Pause"); });
-  audio.addEventListener("pause", () => { btn.classList.remove("is-playing"); btn.setAttribute("aria-label", "Play");  });
+  const togglePlayback = () => {
+    if (playback.isPlaying() || playback.isPending()) playback.pause();
+    else playback.play();
+  };
+  const updatePlayback = () => {
+    const playing = playback.isPlaying();
+    const pending = playback.isPending();
+    btn.classList.toggle("is-playing", playing);
+    btn.setAttribute("aria-label", pending ? "Cancel loading" : playing ? "Pause" : "Play");
+    btn.setAttribute("aria-busy", String(pending));
+  };
+  btn.addEventListener("click", togglePlayback);
+  audio.addEventListener("bhakti:playback-state", updatePlayback);
+  updatePlayback();
   audio.addEventListener("loadedmetadata", updateTime);
   audio.addEventListener("durationchange", updateTime);
 
@@ -1154,13 +1276,13 @@ function setupAudioPlayer() {
   progEl.addEventListener("pointerup", endDrag);
   progEl.addEventListener("pointercancel", endDrag);
 
-  // Spacebar play/pause when not focused in a form field.
+  // Spacebar play/pause leaves native controls and handled events alone.
   document.addEventListener("keydown", e => {
-    if (e.key !== " " && e.code !== "Space") return;
+    if (e.defaultPrevented || (e.key !== " " && e.code !== "Space")) return;
     const t = e.target;
-    if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+    if (t?.isContentEditable || t?.closest?.('button, a, summary, input, textarea, select, [role="button"]')) return;
     e.preventDefault();
-    if (audio.paused) audio.play(); else audio.pause();
+    togglePlayback();
   });
   updateTime();
 }
@@ -1197,6 +1319,6 @@ function mount() {
   setupKaraoke();
 }
 
-window.BHAKTI_READER = Object.freeze({ mount, setSong, snapshotGlobals });
+window.BHAKTI_READER = Object.freeze({ mount, setSong, snapshotGlobals, playback: getPlaybackController });
 
 document.addEventListener("DOMContentLoaded", mount, { once: true });

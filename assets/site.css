@@ -27,12 +27,12 @@ main {
   position: relative;
   width: min(100% - 48px, 940px);
   margin: 0 auto;
-  padding: clamp(72px, 12vw, 150px) 0;
+  padding: clamp(56px, 7vw, 96px) 0;
 }
 
 .library-intro {
   max-width: 780px;
-  margin: 0 auto 44px;
+  margin: 0 auto 28px;
   padding: 0 54px;
   position: relative;
   text-align: center;
@@ -218,8 +218,28 @@ main {
 .tag-filters {
   display: grid;
   gap: 0;
-  margin: 0 10px 18px;
+  margin: 0 0 12px;
 }
+
+.library-filters { margin: 0 10px 12px; }
+.library-filters summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  color: var(--muted);
+  font: 400 12px/1.4 Inter, sans-serif;
+  cursor: pointer;
+  list-style: none;
+}
+.library-filters summary::-webkit-details-marker { display: none; }
+.library-filters summary svg { flex: 0 0 16px; margin-left: auto; }
+.library-filters[open] summary svg { transform: rotate(180deg); }
+.library-filters summary:focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
+.filter-selection { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
+.filter-facet { min-width: 0; margin: 4px 0 8px; }
+.filter-facet-label { color: var(--muted); font-size: 11px; }
+.library-empty { padding: 28px 10px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 
 .tag-row {
   display: flex;
@@ -373,16 +393,15 @@ main {
 }
 
 .tags span {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--ink);
+  color: var(--muted);
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.025em;
-  line-height: 1;
-  padding: 6px 9px;
+  line-height: 1.4;
+  padding: 0;
   white-space: nowrap;
 }
+.tags span + span::before { content: "·"; margin-right: 5px; }
 
 .tags .subject-tag { border-color: rgba(244, 234, 208, 0.52); }
 .tags .language-tag { color: var(--muted); }
@@ -415,7 +434,10 @@ main {
 
   .song-search { margin: 0 20px 22px; }
   .song-search input { font-size: 24px; padding: 18px 24px; }
-  .tag-filters { gap: 6px; margin: 0 20px 30px; }
+  .library-filters { margin: 0 20px 24px; }
+  .library-filters summary { min-height: 58px; font-size: 18px; }
+  .filter-facet-label { font-size: 16px; }
+  .tag-filters { gap: 6px; margin-bottom: 16px; }
   .tag-row { flex-wrap: wrap; gap: 10px; overflow: visible; padding-bottom: 0; }
   .tag-filter { font-size: 20px; padding: 16px 24px; min-height: 58px; }
 
@@ -429,28 +451,28 @@ main {
   .library-song-title { font-size: clamp(48px, 3.25vw, 66px); }
   .credit { font-size: 24px; }
   .tags { gap: 9px; max-width: 440px; }
-  .tags span { font-size: 18px; padding: 12px 18px; }
+  .tags span { font-size: 18px; }
 }
 
 @media (max-width: 600px) {
   main {
     width: min(100% - 32px, 940px);
-    padding-top: 68px;
+    padding-top: 54px;
   }
 
   .library-intro {
-    margin-bottom: 34px;
-    padding: 0 8px;
+    margin-bottom: 22px;
+    padding: 0 4px;
   }
 
-  .library-invocation { font-size: 22px; }
-  .library-invocation-roman { font-size: 20px; }
-  .library-invocation-english { font-size: 16px; }
+  .library-invocation { font-size: 19px; }
+  .library-invocation-roman { font-size: 18px; margin-top: 10px; }
+  .library-invocation-english { font-size: 15px; margin-top: 8px; }
 
   .about-toggle { top: 16px; right: 0; }
   .about-panel { top: 56px; right: 0; width: 100%; }
 
-  .tag-filters { margin-bottom: 16px; }
+  .tag-filters { margin-bottom: 8px; }
 
   .song-card {
     display: grid;
@@ -459,7 +481,7 @@ main {
 
   .song-card-link {
     display: block;
-    padding: 24px 2px;
+    padding: 18px 2px;
   }
 
   .song-card-link:hover,
@@ -470,11 +492,11 @@ main {
   .song-actions-trigger { width: 42px; height: 42px; }
   .song-actions-trigger svg { width: 19px; height: 19px; }
 
-  .library-song-title { font-size: 31px; }
+  .library-song-title { font-size: 29px; }
 
   .tags {
     justify-content: flex-start;
-    margin-top: 12px;
+    margin-top: 8px;
     max-width: none;
   }
 }

@@ -4245,8 +4245,8 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css?v=contract-20260821-8" />
   <link rel="stylesheet" href="/assets/song.css?v=tooltip-20261022-5" />
-  <link rel="stylesheet" href="/assets/site.css?v=ui-20261022" />
-  <link rel="stylesheet" href="/assets/app.css?v=ui-20261022" />
+  <link rel="stylesheet" href="/assets/site.css?v=ui-20261023" />
+  <link rel="stylesheet" href="/assets/app.css?v=ui-20261023-2" />
 </head>
 <body data-app-view="song">
   <main class="song-page" id="songView">
@@ -4269,10 +4269,10 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   </div>
   <script src="data.js?v={escape(data_asset_version)}"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
-  <script src="/assets/queue.js?v=ui-20261022"></script>
-  <script src="/assets/library.js?v=ui-20261022"></script>
-  <script src="/assets/song.js?v={escape(song_asset_version)}"></script>
-  <script src="/assets/app.js?v=ui-20261022"></script>
+  <script src="/assets/queue.js?v=ui-20261023"></script>
+  <script src="/assets/library.js?v=ui-20261023"></script>
+  <script src="/assets/song.js?v=ui-20261023-3"></script>
+  <script src="/assets/app.js?v=ui-20261023-3"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>
 </html>

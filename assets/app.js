@@ -17,6 +17,7 @@
   const player = document.getElementById("audioPlayer");
   const viewToggle = document.getElementById("appViewToggle") || document.querySelector(".song-home");
   if (!audio || !player || !viewToggle) return;
+  const playback = window.BHAKTI_READER.playback(audio);
 
   const escapeHtml = value => String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -113,10 +114,10 @@
     document.documentElement.style.setProperty("--app-player-height", `${height}px`);
   };
 
-  const activeItems = state => state ? state.items.slice(state.currentIndex) : [];
   const queueIsVisible = state => Boolean(state && state.mode !== "standalone");
 
   const animateQueueReorder = (list, before) => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     for (const row of list.querySelectorAll(".queue-row:not(.is-dragging)")) {
       const previous = before.get(row.dataset.queueEntryId);
       const next = row.getBoundingClientRect();
@@ -136,7 +137,7 @@
     const visible = queueIsVisible(queueState);
     queuePill.hidden = !visible;
     if (!visible) return;
-    const count = activeItems(queueState).length;
+    const count = queueState.items.length;
     queuePill.innerHTML = `<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/><path d="m17 16 3 2-3 2z" fill="currentColor" stroke="none"/></svg>`;
     const expanded = queuePill.getAttribute("aria-expanded") === "true";
     const action = `${expanded ? "Hide" : "Show"} playlist, ${count} song${count === 1 ? "" : "s"}`;
@@ -178,10 +179,10 @@
     history.replaceState(nextState, "", playlistUrl(location.pathname));
   };
 
-  const setQueueState = (state, { persist = true } = {}) => {
+  const setQueueState = state => {
     queueState = state;
     currentSong = state?.items[state.currentIndex] || null;
-    if (persist) persistQueue();
+    persistQueue();
     renderQueuePill();
     updateViewToggle();
     replaceHistoryMarker();
@@ -193,20 +194,13 @@
     type: source.type || "",
   }));
 
-  const attemptPlay = () => {
-    const attempt = audio.play();
-    if (!attempt?.catch) return;
-    attempt.catch(error => {
-      if (error?.name === "NotAllowedError") showStatus("Press Play to continue");
-      else showStatus("This recording could not start");
-    });
-  };
+  const attemptPlay = () => playback.play();
 
   const selectAudioSong = (item, { autoplay = false, force = false } = {}) => {
     if (!item) return;
     const changed = force || audio.dataset.songSlug !== item.slug;
     if (changed) {
-      audio.pause();
+      playback.reset();
       audio.replaceChildren(...resolvedSources(item).map(source => {
         const element = document.createElement("source");
         element.src = source.src;
@@ -375,12 +369,10 @@
   const showSong = async (slug, { historyMode = "push" } = {}) => {
     if (!bySlug.has(slug)) return;
     if (queueState && currentSong?.slug !== slug) {
-      const wasPlaying = !audio.paused;
+      const wasPlaying = playback.isPlaying() || playback.isPending();
       const selectedEntry = queueState.items.slice(queueState.currentIndex + 1)
         .find(item => item.slug === slug) || bySlug.get(slug);
-      const next = queueState.mode === "standalone"
-        ? Queue.standalone(bySlug.get(slug), queueState.sessionId)
-        : Queue.playNow(queueState, selectedEntry);
+      const next = Queue.playNow(queueState, selectedEntry);
       setQueueState(next);
       selectAudioSong(currentSong, { autoplay: wasPlaying, force: true });
     }
@@ -397,7 +389,7 @@
       window.scrollTo({ top: 0, behavior: "auto" });
       if (!queueState) {
         const state = Queue.standalone(bySlug.get(slug), newSessionId());
-        setQueueState(state, { persist: false });
+        setQueueState(state);
         selectAudioSong(state.items[0]);
       }
     } catch (error) {
@@ -417,53 +409,76 @@
     showStatus(`${song.title} ${position === "next" && hadSession ? "plays next" : "added"}`);
   };
 
+  const playIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>';
+  const pauseIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>';
+  const updateQueuePlayback = () => {
+    const button = queueSheet.querySelector('[data-queue-action="queue-play"]');
+    if (!button) return;
+    const playing = playback.isPlaying();
+    const pending = playback.isPending();
+    const label = pending ? "Cancel loading" : `${playing ? "Pause" : "Play"} current song`;
+    button.setAttribute("aria-busy", String(pending));
+    button.innerHTML = playing ? pauseIcon : playIcon;
+    button.setAttribute("aria-label", label);
+    button.title = label;
+  };
+
   const renderQueueSheet = () => {
     if (draggedRow) resetDragGesture();
     const previousScrollTop = queueSheet.querySelector(".queue-list")?.scrollTop || 0;
-    const historyWasOpen = queueSheet.querySelector(".queue-history")?.open || false;
+    const focused = queueSheet.contains(document.activeElement) ? document.activeElement : null;
+    const focusedRow = focused?.closest("[data-queue-entry-id]");
+    const focusEntryId = focusedRow?.dataset.queueEntryId;
+    const focusIndex = focusedRow?.dataset.queueIndex;
+    const focusAction = focused?.dataset.queueAction;
+    const focusDrag = focused?.hasAttribute("data-queue-drag");
     if (!queueState) {
       queueSheet.innerHTML = `<div class="queue-empty">No songs queued yet.</div>`;
       return;
     }
-    const items = activeItems(queueState);
-    const absoluteStart = queueState.currentIndex;
-    const current = items[0];
-    const future = items.slice(1);
-    const played = queueState.items.slice(0, queueState.currentIndex);
-    const row = (item, absoluteIndex, currentRow = false) => `
-      <div class="queue-row${currentRow ? " is-current" : ""}" data-queue-index="${absoluteIndex}" data-queue-entry-id="${escapeHtml(item.entryId)}">
-        ${currentRow
-          ? `<span class="queue-current-dot" aria-hidden="true">●</span>`
-          : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag here or hold then drag the row; use arrow keys" title="Drag to reorder; hold and drag anywhere in the row; use arrow keys">⋮⋮</button>`}
-        <div class="queue-copy">${currentRow
-          ? `<div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}`
-          : `<div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}`}</div>
-        ${!currentRow
-          ? `<div class="queue-row-actions"><button class="queue-row-action" type="button" data-queue-action="play" aria-label="Play ${escapeHtml(item.title)} now" title="Play now"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg></button><button class="queue-row-action queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button></div>`
-          : `<span aria-hidden="true"></span>`}
+    const futureCount = queueState.items.length - queueState.currentIndex - 1;
+    const row = (item, index) => {
+      const current = index === queueState.currentIndex;
+      const played = index < queueState.currentIndex;
+      return `
+      <div class="queue-row ${current ? "is-current" : played ? "is-played" : "is-upcoming"}" data-queue-index="${index}" data-queue-entry-id="${escapeHtml(item.entryId)}"${current ? ' aria-current="true"' : ""}>
+        ${current || played
+          ? `<span class="queue-position" aria-hidden="true">${index + 1}</span>`
+          : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag or use arrow keys" title="Drag or use arrow keys to reorder"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M8 7h.01M16 7h.01M8 12h.01M16 12h.01M8 17h.01M16 17h.01"/></svg></button>`}
+        <div class="queue-copy"><div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}</div>
+        ${current
+          ? '<span class="queue-current-label">Current</span>'
+          : `<div class="queue-row-actions"><button class="queue-row-action" type="button" data-queue-action="${played ? "history" : "play"}" aria-label="Play ${escapeHtml(item.title)} ${played ? "again" : "now"}" title="${played ? "Play again" : "Play now"}">${playIcon}</button>${played ? "" : `<button class="queue-row-action queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>`}</div>`}
       </div>`;
+    };
     queueSheet.innerHTML = `
       <div class="queue-sheet-tools">
+        <span class="queue-progress" aria-label="Song ${queueState.currentIndex + 1} of ${queueState.items.length}">${queueState.currentIndex + 1} / ${queueState.items.length}</span>
         <div class="queue-tools" role="group" aria-label="Playlist actions">
           <button class="queue-action" type="button" data-queue-action="previous" aria-label="Play previous song" title="Play previous song"${queueState.currentIndex === 0 ? " disabled" : ""}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M19 5 8 12l11 7V5z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
-          <button class="queue-action" type="button" data-queue-action="queue-play" aria-label="Play the current queue song" title="Play current song"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg></button>
-          <button class="queue-action" type="button" data-queue-action="shuffle" aria-label="Shuffle upcoming songs" title="Shuffle upcoming songs"${future.length < 2 ? " disabled" : ""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></button>
-          <button class="queue-action" type="button" data-queue-action="clear" aria-label="Clear upcoming songs" title="Clear upcoming songs"${future.length ? "" : " disabled"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></button>
+          <button class="queue-action" type="button" data-queue-action="queue-play" aria-label="Play current song" title="Play current song">${playIcon}</button>
+          <button class="queue-action" type="button" data-queue-action="next" aria-label="Play next song" title="Play next song"${futureCount ? "" : " disabled"}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5l11 7-11 7V5z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
+          <button class="queue-action" type="button" data-queue-action="shuffle" aria-label="Shuffle upcoming songs" title="Shuffle upcoming songs"${futureCount < 2 ? " disabled" : ""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></button>
+          <button class="queue-action" type="button" data-queue-action="clear" aria-label="Clear upcoming songs" title="Clear upcoming songs"${futureCount ? "" : " disabled"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></button>
         </div>
       </div>
-      <div class="queue-list">
-        ${row(current, absoluteStart, true)}
-        ${future.map((item, index) => row(item, absoluteStart + index + 1)).join("")}
-        ${played.length ? `<details class="queue-history"${historyWasOpen ? " open" : ""}>
-          <summary>Played · ${played.length}</summary>
-          ${played.map((item, index) => `<button class="queue-history-song" type="button" data-queue-action="history" data-queue-index="${index}" aria-label="Play ${escapeHtml(item.title)} again">
-            <span class="queue-song-title">${escapeHtml(item.title)}</span>
-            ${item.credit ? `<span class="queue-credit">${escapeHtml(item.credit)}</span>` : ""}
-          </button>`).join("")}
-        </details>` : ""}
-      </div>
-      `;
+      <div class="queue-list">${queueState.items.map(row).join("")}</div>`;
     queueSheet.querySelector(".queue-list").scrollTop = previousScrollTop;
+    updateQueuePlayback();
+    if (focused) {
+      const rowSelector = focusEntryId ? `[data-queue-entry-id="${CSS.escape(focusEntryId)}"] ` : "";
+      const controlSelector = focusDrag ? "[data-queue-drag]" : `[data-queue-action="${CSS.escape(focusAction || "")}"]`;
+      const restoredFocus = queueSheet.querySelector(`${rowSelector}${controlSelector}:not(:disabled)`)
+        || (focusIndex && queueSheet.querySelector(`[data-queue-index="${focusIndex}"] ${controlSelector}:not(:disabled)`))
+        || queueSheet.querySelector('[data-queue-action="queue-play"]');
+      restoredFocus?.focus({ preventScroll: true });
+    }
+  };
+
+  const revealCurrentQueueRow = () => {
+    const list = queueSheet.querySelector(".queue-list");
+    const current = list?.querySelector(".is-current");
+    if (list && current) list.scrollTop = current.offsetTop - list.offsetTop - list.clientHeight / 3;
   };
 
   const openQueue = () => {
@@ -475,6 +490,7 @@
     document.body.classList.add("queue-open");
     queuePill.setAttribute("aria-expanded", "true");
     renderQueuePill();
+    revealCurrentQueueRow();
   };
 
   const closeQueue = ({ returnFocus = false, immediate = false } = {}) => {
@@ -513,15 +529,20 @@
       return;
     }
     setQueueState(next.state);
+    revealCurrentQueueRow();
     selectAudioSong(currentSong, { autoplay: true, force: true });
     if (view === "song") showSong(currentSong.slug, { historyMode: "replace" });
     advancing = false;
   };
 
   const initializeState = () => {
+    let restored = null;
+    try { restored = Queue.restore(sessionStorage.getItem(SESSION_KEY), byQueueId); } catch (_) {}
     const shared = new URL(location.href).searchParams.get("queue");
     if (shared) {
-      const decoded = Queue.decode(shared, byQueueId, newSessionId(), catalogue.length);
+      const decoded = restored && Queue.encode(restored) === shared
+        ? restored
+        : Queue.decode(shared, byQueueId, newSessionId());
       if (decoded) {
         queueState = decoded;
         currentSong = decoded.items[decoded.currentIndex];
@@ -529,23 +550,16 @@
       } else {
         showStatus("That playlist link is not valid");
       }
-    } else {
-      try {
-        const restored = Queue.restore(sessionStorage.getItem(SESSION_KEY), byQueueId);
-        if (restored && history.state?.bhaktiSessionId === restored.sessionId) {
-          queueState = restored;
-          currentSong = restored.items[restored.currentIndex];
-        }
-      } catch (_) {}
+    } else if (restored) {
+      queueState = restored;
+      currentSong = restored.items[restored.currentIndex];
     }
 
     const initialSlug = pathSlug();
     if (queueState && initialSlug && currentSong?.slug !== initialSlug && bySlug.has(initialSlug)) {
       const selectedEntry = queueState.items.slice(queueState.currentIndex + 1)
         .find(item => item.slug === initialSlug) || bySlug.get(initialSlug);
-      queueState = queueState.mode === "standalone"
-        ? Queue.standalone(bySlug.get(initialSlug), queueState.sessionId)
-        : Queue.playNow(queueState, selectedEntry);
+      queueState = Queue.playNow(queueState, selectedEntry);
       currentSong = queueState.items[queueState.currentIndex];
       persistQueue();
     }
@@ -554,6 +568,7 @@
       currentSong = queueState.items[0];
     }
     if (queueState) {
+      persistQueue();
       if (audio.querySelector("source") && initialSlug === currentSong.slug) audio.dataset.songSlug = currentSong.slug;
       else selectAudioSong(currentSong);
       player.hidden = false;
@@ -621,26 +636,28 @@
     const row = button.closest("[data-queue-index]");
     const index = Number(row?.dataset.queueIndex);
     if (action === "queue-play") {
-      if (view === "library" && currentSong) void showSong(currentSong.slug, { historyMode: "replace" });
-      attemptPlay();
+      if (playback.isPlaying() || playback.isPending()) playback.pause();
+      else attemptPlay();
     }
+    else if (action === "next") advanceQueue();
     else if (action === "history") {
       setQueueState(Queue.selectHistory(queueState, index));
+      revealCurrentQueueRow();
       selectAudioSong(currentSong, { autoplay: true, force: true });
       if (currentSong && view === "song") void showSong(currentSong.slug, { historyMode: "replace" });
-      queueSheet.querySelector('[data-queue-action="queue-play"]')?.focus();
     }
     else if (action === "previous") {
       const previous = Queue.previous(queueState);
       if (!previous.moved) return;
       setQueueState(previous.state);
+      revealCurrentQueueRow();
       selectAudioSong(currentSong, { autoplay: true, force: true });
       if (currentSong && view === "song") void showSong(currentSong.slug, { historyMode: "replace" });
-      queueSheet.querySelector('[data-queue-action="queue-play"]')?.focus();
     }
     else if (action === "remove") setQueueState(Queue.remove(queueState, index));
     else if (action === "play") {
       setQueueState(Queue.playNow(queueState, queueState.items[index]));
+      revealCurrentQueueRow();
       selectAudioSong(currentSong, { autoplay: true, force: true });
       if (currentSong) void showSong(currentSong.slug, { historyMode: "replace" });
     } else if (action === "shuffle") {
@@ -728,7 +745,7 @@
       list.scrollTop += Math.ceil(((clientY - (listRect.bottom - edge)) / edge) * 18);
     }
     positionDraggedRow(clientY);
-    const target = document.elementFromPoint(clientX, clientY)?.closest(".queue-row:not(.is-current)");
+    const target = document.elementFromPoint(clientX, clientY)?.closest(".queue-row.is-upcoming");
     if (!target || target === draggedRow || target.parentElement !== draggedRow.parentElement) return;
     const beforeRects = new Map([...list.querySelectorAll(".queue-row")]
       .map(row => [row.dataset.queueEntryId, row.getBoundingClientRect()]));
@@ -756,7 +773,7 @@
     dragMoved = false;
   };
   const dragTargetRow = target => {
-    const row = target.closest?.(".queue-row:not(.is-current)");
+    const row = target.closest?.(".queue-row.is-upcoming");
     if (!row || target.closest("[data-queue-action]")) return null;
     return row;
   };
@@ -826,7 +843,7 @@
   const finishDragGesture = () => {
     const moved = dragMoved;
     const suppressAction = dragActive;
-    const orderedEntryIds = [...queueSheet.querySelectorAll(".queue-row:not(.is-current)")]
+    const orderedEntryIds = [...queueSheet.querySelectorAll(".queue-row.is-upcoming")]
       .map(row => row.dataset.queueEntryId);
     resetDragGesture();
     if (suppressAction) {
@@ -873,11 +890,14 @@
       return;
     }
   });
+  audio.addEventListener("bhakti:playback-state", updateQueuePlayback);
   audio.addEventListener("ended", () => advanceQueue());
-  audio.addEventListener("error", () => {
-    if (audio.dataset.songSlug) advanceQueue({ failed: true });
+  audio.addEventListener("bhakti:playback-problem", event => {
+    event.preventDefault();
+    showStatus(event.detail.message);
+    if (event.detail.advance && audio.dataset.songSlug) advanceQueue({ failed: true });
   });
-  audio.addEventListener("play", () => {
+  audio.addEventListener("playing", () => {
     if (!queueState && audio.dataset.songSlug && bySlug.has(audio.dataset.songSlug)) {
       setQueueState(Queue.standalone(bySlug.get(audio.dataset.songSlug), newSessionId()));
     } else if (queueState) {

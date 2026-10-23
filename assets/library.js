@@ -219,6 +219,7 @@
       .sort((left, right) => sortKey(left).localeCompare(sortKey(right)));
     const orderedSongs = sortSongs(songs);
     const shuffleButton = root.querySelector("#shuffleVisible");
+    const filterSelection = root.querySelector("#filterSelection");
     const aboutHeading = root.querySelector("#aboutHeading");
     if (aboutHeading) aboutHeading.textContent = `About these ${songs.length} songs`;
 
@@ -233,7 +234,7 @@
     // Keep the actual controls mounted: replacing a scrolled row moves another
     // tag underneath the finger and discards keyboard focus after selection.
     filters.innerHTML = facets.map(facet => `
-      <div class="tag-row" role="group" aria-label="${facet.label}">${filterButton("All", facet.all, true)}${facet.tags.map(tag => filterButton(tag, facet.kind, false)).join("")}</div>`).join("");
+      <div class="filter-facet"><span class="filter-facet-label">${facet.label}</span><div class="tag-row" role="group" aria-label="${facet.label}">${filterButton("All", facet.all, true)}${facet.tags.map(tag => filterButton(tag, facet.kind, false)).join("")}</div></div>`).join("");
 
     const render = () => {
       const query = search.value.trim();
@@ -250,6 +251,7 @@
         const pressed = button.dataset.kind === facet.all ? !facet.selected.size : facet.selected.has(button.dataset.tag);
         button.setAttribute("aria-pressed", String(pressed));
       });
+      if (filterSelection) filterSelection.textContent = facets.flatMap(facet => [...facet.selected]).join(" · ");
 
       listRoot.innerHTML = visibleSongs.map(song => `
         <article class="song-card" data-song-slug="${escapeHtml(song.slug)}">
@@ -264,13 +266,13 @@
             </span>
           </a>
           <button class="song-actions-trigger" type="button" data-queue-choices="${escapeHtml(song.slug)}" aria-expanded="false" aria-controls="queue-choices-${escapeHtml(song.slug)}" aria-label="Playlist options for ${escapeHtml(song.title)}" title="Playlist options">
-            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M4 12h8M4 17h6M18 11v8M14 15h8"/></svg>
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
           </button>
           <div class="song-queue-actions" id="queue-choices-${escapeHtml(song.slug)}" hidden>
             <button class="song-queue-choice" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="next">Play next</button>
             <button class="song-queue-choice" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="end">Add to end</button>
           </div>
-        </article>`).join("");
+        </article>`).join("") || '<p class="library-empty">No songs match. Try changing your search or filters.</p>';
 
       if (shuffleButton) {
         shuffleButton.disabled = !visibleSongs.length;

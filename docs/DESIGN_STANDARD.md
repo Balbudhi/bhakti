@@ -74,7 +74,8 @@ The default state shows only what is necessary for reading or the current playba
 - Do not add a title that merely repeats what the initiating icon already communicates.
 - Prefer an integrated continuation of the page over a modal, drawer, floating card, dimmed backdrop, or toolbar.
 - Secondary actions may expand inline behind one quiet ellipsis; they must not become a permanently visible action bar.
-- Catalogue rows get one small playlist-options control, revealing “Play next” and “Add to end” in place. Opening the row remains the path to the song. Played history stays inside the expanded playlist; clearing upcoming songs preserves the current audio and prior entries.
+- Catalogue rows get one quiet ellipsis, revealing “Play next” and “Add to end” in place. Opening the row remains the path to the song. Previous, current and upcoming occurrences appear together in order inside the expanded playlist, with a restrained current-position label. Do not add a Played-count dropdown or decorative Unicode glyphs. Clearing upcoming songs preserves the current audio and prior entries.
+- The library exposes search and one Filters disclosure by default. Its four named facets retain selections when closed, with selected values visible in the summary. Song tags are quiet inline metadata rather than a second set of pill controls. On mobile, songs must appear within the initial viewport without hiding the dedication.
 
 ## Motion
 

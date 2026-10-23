@@ -31,9 +31,11 @@ function mount(catalogue = songs) {
   };
   const search = { value: '', listeners: {}, addEventListener(type, fn) { this.listeners[type] = fn; } };
   let focused = null;
-  const list = { listeners: {}, cards: [], addEventListener(type, fn) { this.listeners[type] = fn; },
+  const summary = {textContent: ''};
+  const list = { listeners: {}, cards: [], html: '', addEventListener(type, fn) { this.listeners[type] = fn; },
     querySelector() { return this.cards.map(card => card.trigger).find(button => button.getAttribute('aria-expanded') === 'true') || null; },
     set innerHTML(html) {
+      this.html = html;
       this.cards = [...html.matchAll(/<article class="song-card" data-song-slug="([^"]+)"/g)].map(match => {
         const slug = match[1];
         const panel = {hidden: true};
@@ -56,7 +58,7 @@ function mount(catalogue = songs) {
     },
   };
   const root = {listeners: {}, events: [],
-    querySelector: selector => ({ '#tagFilters': filters, '#songSearch': search, '#songList': list }[selector] || null),
+    querySelector: selector => ({ '#tagFilters': filters, '#songSearch': search, '#songList': list, '#filterSelection': summary }[selector] || null),
     dispatchEvent(event) { this.events.push(event); },
     addEventListener(type, handler) { this.listeners[type] = handler; }};
   const context = { window: { BHAKTI_SONGS: catalogue }, document: {}, CustomEvent: class { constructor(type, detail) { Object.assign(this, { type }, detail); } } };
@@ -64,10 +66,24 @@ function mount(catalogue = songs) {
   const controller = context.window.BHAKTI_LIBRARY.mount(root);
   const button = (kind, tag) => filters.buttons.find(b => b.dataset.kind === kind && b.dataset.tag === tag);
   const click = (kind, tag) => { const target = button(kind, tag); assert.ok(target, `${kind}:${tag} exists`); filters.listeners.click({ target }); };
-  return { filters, search, controller, button, click, list, root, getFocused: () => focused, api: context.window.BHAKTI_SEARCH };
+  return { filters, search, controller, button, click, list, root, summary, getFocused: () => focused, api: context.window.BHAKTI_SEARCH };
 }
 
 const visible = app => Array.from(app.controller.getVisibleSongs(), s => s.slug).sort();
+test('collapsed filter summary identifies retained choices and empty search has recovery guidance', () => {
+  const app = mount();
+  assert.equal(app.summary.textContent, '');
+  app.click('subject', 'Śiva');
+  app.click('language', 'Hindi');
+  assert.equal(app.summary.textContent, 'Śiva · Hindi');
+  app.search.value = 'no such song'; app.search.listeners.input();
+  assert.deepEqual(visible(app), []);
+  assert.match(app.list.html, /No songs match/);
+  assert.match(app.list.html, /search or filters/);
+  assert.equal(app.summary.textContent, 'Śiva · Hindi');
+  app.click('all-subjects', 'All'); app.click('all-languages', 'All');
+  assert.equal(app.summary.textContent, '');
+});
 test('scrolled filter activation and search preserve row/button identity and selected state', () => {
   const app = mount();
   const row = app.filters.rows[0];
