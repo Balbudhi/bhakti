@@ -218,27 +218,32 @@ main {
 .tag-filters {
   display: grid;
   gap: 0;
-  margin: 0 0 12px;
+  margin: -6px 10px 12px;
 }
 
-.library-filters { margin: 0 10px 12px; }
-.library-filters summary {
-  display: flex;
+/* Filtering belongs alongside search; the revealed choices are only tags. */
+.filter-toggle {
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  min-height: 44px;
+  justify-content: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  min-height: 41px;
+  position: relative;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
   color: var(--muted);
-  font: 400 12px/1.4 Inter, sans-serif;
+  font: 400 12px/1 Inter, sans-serif;
   cursor: pointer;
-  list-style: none;
 }
-.library-filters summary::-webkit-details-marker { display: none; }
-.library-filters summary svg { flex: 0 0 16px; margin-left: auto; }
-.library-filters[open] summary svg { transform: rotate(180deg); }
-.library-filters summary:focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
-.filter-selection { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
-.filter-facet { min-width: 0; margin: 4px 0 8px; }
-.filter-facet-label { color: var(--muted); font-size: 11px; }
+.filter-toggle::before { content: ""; position: absolute; inset: -2px; border-radius: inherit; }
+.filter-toggle[aria-expanded="true"],
+.filter-toggle:has(#filterCount:not([hidden])) { color: var(--ink); border-color: rgba(244,234,208,.52); }
+.filter-toggle:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
+.filter-toggle svg { flex-shrink: 0; }
+#filterCount { font-variant-numeric: tabular-nums; }
 .library-empty { padding: 28px 10px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 
 .tag-row {
@@ -434,11 +439,9 @@ main {
 
   .song-search { margin: 0 20px 22px; }
   .song-search input { font-size: 24px; padding: 18px 24px; }
-  .library-filters { margin: 0 20px 24px; }
-  .library-filters summary { min-height: 58px; font-size: 18px; }
-  .filter-facet-label { font-size: 16px; }
+  .filter-toggle { min-height: 52px; font-size: 18px; padding-inline: 14px; }
   .tag-filters { gap: 6px; margin-bottom: 16px; }
-  .tag-row { flex-wrap: wrap; gap: 10px; overflow: visible; padding-bottom: 0; }
+  .tag-row { gap: 10px; min-height: 64px; }
   .tag-filter { font-size: 20px; padding: 16px 24px; min-height: 58px; }
 
   .song-card { grid-template-columns: minmax(0, 1fr) 58px; }
@@ -507,29 +510,42 @@ main {
   .song-actions-trigger svg { width: 20px; height: 20px; }
 }
 
-/* Secondary playlist choices stay inside the song row, behind its one toggle. */
+/* Song actions float beside their trigger without changing catalogue geometry. */
 .song-queue-actions {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0 10px 12px;
+  position: fixed;
+  z-index: 90;
+  width: 184px;
+  max-width: calc(100vw - 16px);
+  padding: 4px;
+  border: 1px solid rgba(244, 234, 208, .36);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
 }
 .song-queue-actions[hidden] { display: none; }
 .song-queue-choice {
   appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
   min-height: 44px;
-  padding: 8px 12px;
+  padding: 10px 12px;
   border: 0;
+  border-radius: 3px;
   background: transparent;
-  color: var(--ink);
-  font: inherit;
-  font-size: 13px;
+  color: inherit;
+  text-align: left;
+  font: 400 13px/1.3 Inter, sans-serif;
   cursor: pointer;
-  opacity: .76;
 }
-.song-queue-choice:hover { opacity: 1; }
-.song-queue-choice:focus-visible { outline: 1px solid var(--ink); outline-offset: -3px; opacity: 1; }
+.song-queue-choice svg { width: 18px; height: 18px; flex: 0 0 18px; opacity: .75; }
+.song-queue-choice:hover,
+.song-queue-choice:focus-visible { background: rgba(244,234,208,.09); outline: 1px solid var(--line); outline-offset: -1px; }
+@media (min-width: 1800px) {
+  .song-queue-actions { width: 240px; }
+  .song-queue-choice { min-height: 54px; font-size: 18px; }
+}
 
 .song-actions-trigger { position: relative; }
 .song-actions-trigger::before {

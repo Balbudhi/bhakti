@@ -219,12 +219,13 @@
       .sort((left, right) => sortKey(left).localeCompare(sortKey(right)));
     const orderedSongs = sortSongs(songs);
     const shuffleButton = root.querySelector("#shuffleVisible");
-    const filterSelection = root.querySelector("#filterSelection");
+    const filterToggle = root.querySelector("#filterToggle");
+    const filterCount = root.querySelector("#filterCount");
     const aboutHeading = root.querySelector("#aboutHeading");
     if (aboutHeading) aboutHeading.textContent = `About these ${songs.length} songs`;
 
     let visibleSongs = [];
-    const filterButton = (tag, kind, selected) => `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${kind}" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`;
+    const filterButton = (tag, kind, selected, label = tag) => `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${kind}" data-tag="${escapeHtml(tag)}">${escapeHtml(label)}</button>`;
     const facets = [
       { kind: "subject", all: "all-subjects", label: "Subjects", tags: subjects, selected: selectedSubjects },
       { kind: "language", all: "all-languages", label: "Languages", tags: languages, selected: selectedLanguages },
@@ -234,7 +235,7 @@
     // Keep the actual controls mounted: replacing a scrolled row moves another
     // tag underneath the finger and discards keyboard focus after selection.
     filters.innerHTML = facets.map(facet => `
-      <div class="filter-facet"><span class="filter-facet-label">${facet.label}</span><div class="tag-row" role="group" aria-label="${facet.label}">${filterButton("All", facet.all, true)}${facet.tags.map(tag => filterButton(tag, facet.kind, false)).join("")}</div></div>`).join("");
+      <div class="tag-row" role="group" aria-label="${facet.label}">${filterButton("All", facet.all, true, `All ${facet.label.toLowerCase()}`)}${facet.tags.map(tag => filterButton(tag, facet.kind, false)).join("")}</div>`).join("");
 
     const render = () => {
       const query = search.value.trim();
@@ -251,7 +252,14 @@
         const pressed = button.dataset.kind === facet.all ? !facet.selected.size : facet.selected.has(button.dataset.tag);
         button.setAttribute("aria-pressed", String(pressed));
       });
-      if (filterSelection) filterSelection.textContent = facets.flatMap(facet => [...facet.selected]).join(" · ");
+      const selections = facets.flatMap(facet => [...facet.selected]);
+      if (filterCount) {
+        filterCount.textContent = String(selections.length);
+        filterCount.hidden = !selections.length;
+      }
+      if (filterToggle) filterToggle.title = selections.length
+        ? `Filters: ${selections.join(" · ")}` : "Filter by subject, language, poet or singer";
+      closeQueueChoices();
 
       listRoot.innerHTML = visibleSongs.map(song => `
         <article class="song-card" data-song-slug="${escapeHtml(song.slug)}">
@@ -265,12 +273,12 @@
               ${(song.languageTags || []).map(tag => `<span class="language-tag">${escapeHtml(tag)}</span>`).join("")}
             </span>
           </a>
-          <button class="song-actions-trigger" type="button" data-queue-choices="${escapeHtml(song.slug)}" aria-expanded="false" aria-controls="queue-choices-${escapeHtml(song.slug)}" aria-label="Playlist options for ${escapeHtml(song.title)}" title="Playlist options">
+          <button class="song-actions-trigger" type="button" data-queue-choices="${escapeHtml(song.slug)}" aria-haspopup="menu" aria-expanded="false" aria-controls="queue-choices-${escapeHtml(song.slug)}" aria-label="Playlist options for ${escapeHtml(song.title)}" title="Playlist options">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
           </button>
-          <div class="song-queue-actions" id="queue-choices-${escapeHtml(song.slug)}" hidden>
-            <button class="song-queue-choice" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="next">Play next</button>
-            <button class="song-queue-choice" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="end">Add to end</button>
+          <div class="song-queue-actions" role="menu" aria-label="Playlist options for ${escapeHtml(song.title)}" id="queue-choices-${escapeHtml(song.slug)}" hidden>
+            <button class="song-queue-choice" role="menuitem" tabindex="-1" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 5 10 7-10 7zM19 5v14"/></svg>Play next</button>
+            <button class="song-queue-choice" role="menuitem" tabindex="-1" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="end"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 11h12M4 16h7M17 14v7M13.5 17.5h7"/></svg>Add to end</button>
           </div>
         </article>`).join("") || '<p class="library-empty">No songs match. Try changing your search or filters.</p>';
 
@@ -300,6 +308,10 @@
       render();
     });
     search.addEventListener("input", render);
+    filterToggle?.addEventListener("click", () => {
+      filters.hidden = !filters.hidden;
+      filterToggle.setAttribute("aria-expanded", String(!filters.hidden));
+    });
     shuffleButton?.addEventListener("click", () => root.dispatchEvent(new CustomEvent("bhakti:shuffle-request", {
       bubbles: true,
       detail: { songs: [...visibleSongs] },
@@ -308,18 +320,32 @@
       const trigger = listRoot.querySelector('[data-queue-choices][aria-expanded="true"]');
       if (!trigger) return;
       trigger.setAttribute("aria-expanded", "false");
-      trigger.closest(".song-card").querySelector(".song-queue-actions").hidden = true;
-      if (returnFocus) trigger.focus();
+      const menu = trigger.closest(".song-card").querySelector(".song-queue-actions");
+      const restoreFocus = returnFocus || menu.contains(document.activeElement);
+      menu.hidden = true;
+      if (restoreFocus) trigger.focus({preventScroll: true});
+    };
+    const openQueueChoices = (trigger, last = false) => {
+      closeQueueChoices();
+      const menu = trigger.closest(".song-card").querySelector(".song-queue-actions");
+      trigger.setAttribute("aria-expanded", "true");
+      menu.hidden = false;
+      const anchor = trigger.getBoundingClientRect();
+      const box = menu.getBoundingClientRect();
+      const player = document.getElementById("audioPlayer");
+      const bottom = player && !player.hidden ? player.getBoundingClientRect().top : window.innerHeight;
+      menu.style.left = `${Math.max(8, Math.min(anchor.right - box.width, window.innerWidth - box.width - 8))}px`;
+      const top = anchor.bottom + box.height + 6 <= bottom - 8 ? anchor.bottom + 6 : anchor.top - box.height - 6;
+      menu.style.top = `${Math.max(8, Math.min(top, bottom - box.height - 8))}px`;
+      const choices = menu.querySelectorAll("[role=menuitem]");
+      choices[last ? choices.length - 1 : 0].focus({preventScroll: true});
     };
     listRoot.addEventListener("click", event => {
       const trigger = event.target.closest("[data-queue-choices]");
       if (trigger) {
         const wasOpen = trigger.getAttribute("aria-expanded") === "true";
         closeQueueChoices();
-        if (!wasOpen) {
-          trigger.setAttribute("aria-expanded", "true");
-          trigger.closest(".song-card").querySelector(".song-queue-actions").hidden = false;
-        }
+        if (!wasOpen) openQueueChoices(trigger);
         return;
       }
       const button = event.target.closest("[data-add-to-queue]");
@@ -333,14 +359,36 @@
       }));
     });
     listRoot.addEventListener("keydown", event => {
+      const trigger = event.target.closest("[data-queue-choices]");
+      if (trigger && ["ArrowDown", "ArrowUp"].includes(event.key)) {
+        event.preventDefault();
+        openQueueChoices(trigger, event.key === "ArrowUp");
+        return;
+      }
+      const menu = event.target.closest(".song-queue-actions");
+      if (menu && ["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) {
+        event.preventDefault();
+        const choices = [...menu.querySelectorAll("[role=menuitem]")];
+        const index = choices.indexOf(event.target);
+        const next = event.key === "Home" ? 0 : event.key === "End" ? choices.length - 1
+          : (index + (event.key === "ArrowDown" ? 1 : -1) + choices.length) % choices.length;
+        choices[next].focus();
+      }
+      if (menu && event.key === "Tab") closeQueueChoices({returnFocus: true});
       if (event.key === "Escape" && event.target.closest(".song-card")) {
+        event.preventDefault?.();
         closeQueueChoices({ returnFocus: true });
       }
     });
-    root.addEventListener("click", event => {
-      const open = listRoot.querySelector('[data-queue-choices][aria-expanded="true"]');
-      if (open && event.target.closest(".song-card") !== open.closest(".song-card")) closeQueueChoices();
-    });
+    const dismissOutside = event => {
+      if (!event.target.closest?.(".song-queue-actions, [data-queue-choices]")) closeQueueChoices();
+    };
+    document.addEventListener("click", dismissOutside);
+    document.addEventListener("focusin", dismissOutside);
+    window.addEventListener("scroll", () => closeQueueChoices(), {capture: true, passive: true});
+    window.addEventListener("resize", () => closeQueueChoices());
+    window.addEventListener("popstate", () => closeQueueChoices());
+    window.addEventListener("bhakti:song-change", () => closeQueueChoices());
 
     wireAbout(root);
     wirePreface(root);

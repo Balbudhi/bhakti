@@ -5,11 +5,12 @@ the existing palette, type, player and responsive playlist layout.
 
 ## Acceptance and ownership
 
-- `assets/library.js` owns search/filter selections and local row disclosures.
-  The homepage initially shows one Filters disclosure; opening it exposes all
-  four named facets. Closing it preserves selections, scroll and focus. A
-  selected-filter summary remains visible, and no-results searches explain the
-  empty list. The 390px initial view must show songs without scrolling.
+- `assets/library.js` owns search/filter selections and contextual song menus.
+  A compact Filter control beside search reveals four tag rows without headings;
+  descriptive reset chips explain each row. Closing preserves selections and
+  scroll, with an active-filter count on the control. Song actions use a small
+  anchored popover without moving rows. No-results searches explain recovery.
+  The 390px initial view must show songs without scrolling.
 - `assets/queue.js` owns ordered occurrence identity and the current index.
   Playing another song retains prior occurrences. Play next inserts immediately
   after current; Add to end appends; clearing removes only upcoming entries.
@@ -110,3 +111,27 @@ changes were staged; unrelated song and pipeline work was preserved.
 - Consider persistent listening history across browser sessions, with an
   explicit reset action. This repair preserves the existing same-tab session
   and shared-link model; it does not introduce cross-device storage.
+
+## Compact controls refinement
+
+Current step: publish verified compact controls and versioned callers, then
+check the live site. The design
+standard now distinguishes search filters, contextual actions and the playlist;
+it preserves the established palette, typography, dedication and player.
+
+- Filter opens only four closely stacked horizontal tag rows at all sizes.
+- Play next / Add to end use one anchored menu, bounded by viewport and player.
+- Outside click, focus leaving, Escape, scroll, resize, navigation and command
+  selection dismiss it; arrows navigate, Tab leaves, focus returns as needed.
+- Regression cases cover navigation dismissal and a trigger behind the player;
+  both reproduced failures before the fixes.
+
+Verification: 17 focused JS tests pass; independent review has no remaining
+material findings. Native mobile checks confirm both queue commands, retained
+selection and Back/Forward dismissal. Expanded filters fit at 390, 820, 1440
+and 1920px without document overflow. The 390px collapsed first row begins
+at 347px. Contract audit: 265 ready, no problems; audio quality: no errors.
+Release trim audit with retained private evidence: 104 checked, no failures.
+The separate in-progress trim validator reports failures against local evidence;
+that validator and content work are excluded from this UI release. Python
+compilation and whitespace checks pass.

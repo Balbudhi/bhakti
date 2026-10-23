@@ -13,8 +13,8 @@ const songs = [
   { slug: 'four', title: 'Four', writer: 'Singer A', credit: 'Singer A', languageTags: ['Hindi'], subjectTags: ['Śiva'] },
 ];
 
-function mount(catalogue = songs) {
-  const filters = { listeners: {}, rows: [], buttons: [],
+function mount(catalogue = songs, geometry = {}) {
+  const filters = { hidden: true, listeners: {}, rows: [], buttons: [],
     addEventListener(type, handler) { this.listeners[type] = handler; },
     querySelectorAll(selector) { assert.equal(selector, '.tag-filter'); return this.buttons; },
     set innerHTML(html) {
@@ -31,58 +31,122 @@ function mount(catalogue = songs) {
   };
   const search = { value: '', listeners: {}, addEventListener(type, fn) { this.listeners[type] = fn; } };
   let focused = null;
-  const summary = {textContent: ''};
+  const filterToggle = {listeners: {}, attrs: {'aria-expanded': 'false'}, title: '',
+    addEventListener(type, handler) {this.listeners[type] = handler;},
+    setAttribute(name, value) {this.attrs[name] = String(value);},
+    getAttribute(name) {return this.attrs[name];}, focus() {focused = this;}};
+  const filterCount = {textContent: '', hidden: true};
+  const documentEvents = {};
+  const windowEvents = {};
   const list = { listeners: {}, cards: [], html: '', addEventListener(type, fn) { this.listeners[type] = fn; },
     querySelector() { return this.cards.map(card => card.trigger).find(button => button.getAttribute('aria-expanded') === 'true') || null; },
     set innerHTML(html) {
       this.html = html;
       this.cards = [...html.matchAll(/<article class="song-card" data-song-slug="([^"]+)"/g)].map(match => {
         const slug = match[1];
-        const panel = {hidden: true};
+        const panel = {hidden: true, style: {}, getBoundingClientRect: () => ({width: 184, height: 96})};
         const card = {querySelector: () => panel, panel};
         const button = (kind, position) => {
           const attrs = {'aria-expanded': 'false'};
           return {dataset: kind === 'trigger' ? {queueChoices: slug} : {addToQueue: slug, queuePosition: position},
             getAttribute: name => attrs[name], setAttribute: (name, value) => { attrs[name] = String(value); },
             focus() { focused = this; },
+            getBoundingClientRect: () => geometry.anchor || ({top: 500, bottom: 542, right: 374}),
             closest(selector) {
               if (selector === '.song-card') return card;
               if (selector === '[data-queue-choices]' && kind === 'trigger') return this;
               if (selector === '[data-add-to-queue]' && kind === 'choice') return this;
+              if (selector === '.song-queue-actions' && kind === 'choice') return panel;
               return null;
             }};
         };
         card.trigger = button('trigger'); card.next = button('choice', 'next'); card.end = button('choice', 'end');
+        panel.querySelectorAll = () => [card.next, card.end];
+        panel.contains = target => target === card.next || target === card.end;
         return card;
       });
     },
   };
   const root = {listeners: {}, events: [],
-    querySelector: selector => ({ '#tagFilters': filters, '#songSearch': search, '#songList': list, '#filterSelection': summary }[selector] || null),
+    querySelector: selector => ({ '#tagFilters': filters, '#songSearch': search, '#songList': list, '#filterToggle': filterToggle, '#filterCount': filterCount }[selector] || null),
     dispatchEvent(event) { this.events.push(event); },
     addEventListener(type, handler) { this.listeners[type] = handler; }};
-  const context = { window: { BHAKTI_SONGS: catalogue }, document: {}, CustomEvent: class { constructor(type, detail) { Object.assign(this, { type }, detail); } } };
+  const context = { window: { BHAKTI_SONGS: catalogue, innerWidth:390, innerHeight:844, addEventListener(type, handler) {windowEvents[type] = handler;} },
+    document: {readyState:'loading', get activeElement() {return focused;}, addEventListener(type, handler) {documentEvents[type] = handler;}, getElementById: id => id === "audioPlayer" ? geometry.player : null},
+    CustomEvent: class { constructor(type, detail) { Object.assign(this, { type }, detail); } } };
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/library.js'), 'utf8'), context);
   const controller = context.window.BHAKTI_LIBRARY.mount(root);
   const button = (kind, tag) => filters.buttons.find(b => b.dataset.kind === kind && b.dataset.tag === tag);
   const click = (kind, tag) => { const target = button(kind, tag); assert.ok(target, `${kind}:${tag} exists`); filters.listeners.click({ target }); };
-  return { filters, search, controller, button, click, list, root, summary, getFocused: () => focused, api: context.window.BHAKTI_SEARCH };
+  return { filters, search, controller, button, click, list, root, filterToggle, filterCount, documentEvents, windowEvents, getFocused: () => focused, api: context.window.BHAKTI_SEARCH };
 }
 
 const visible = app => Array.from(app.controller.getVisibleSongs(), s => s.slug).sort();
+test('compact filter toggle preserves controls and selection while closing and reopening', () => {
+  const app = mount(); const rows = app.filters.rows;
+  app.filterToggle.listeners.click();
+  assert.equal(app.filters.hidden, false);
+  assert.equal(app.filterToggle.getAttribute('aria-expanded'), 'true');
+  app.click('language','Hindi');
+  app.filterToggle.listeners.click();
+  assert.equal(app.filters.hidden, true);
+  assert.equal(app.filterCount.textContent,'1');
+  app.filterToggle.listeners.click();
+  assert.equal(app.filters.rows,rows);
+  assert.equal(app.button('language','Hindi').getAttribute('aria-pressed'),'true');
+});
+test('action popover focuses its commands and supports arrow keys, Escape and outside focus', () => {
+  const app = mount(); const first = app.list.cards[0];
+  app.list.listeners.click({target:first.trigger});
+  assert.equal(app.getFocused(),first.next);
+  assert.equal(first.panel.style.left,'190px');
+  app.list.listeners.keydown({target:first.next,key:'ArrowDown',preventDefault(){}});
+  assert.equal(app.getFocused(),first.end);
+  app.list.listeners.keydown({target:first.end,key:'ArrowDown',preventDefault(){}});
+  assert.equal(app.getFocused(),first.next);
+  app.list.listeners.keydown({target:first.next,key:'Escape',preventDefault(){}});
+  assert.equal(first.panel.hidden,true);
+  assert.equal(app.getFocused(),first.trigger);
+  app.list.listeners.click({target:first.trigger});
+  app.documentEvents.focusin({target:{closest:()=>null}});
+  assert.equal(first.panel.hidden,true);
+});
+test('navigation and viewport changes dismiss cached library menus', () => {
+  const app = mount(); const first = app.list.cards[0];
+  for (const event of ['popstate', 'bhakti:song-change', 'scroll', 'resize']) {
+    app.list.listeners.click({target:first.trigger});
+    assert.equal(first.panel.hidden,false);
+    assert.equal(typeof app.windowEvents[event], 'function', `${event} has a dismissal handler`);
+    app.windowEvents[event]();
+    assert.equal(first.panel.hidden,true);
+    assert.equal(first.trigger.getAttribute('aria-expanded'),'false');
+  }
+});
+test('popover stays above the player even when its trigger is partly obscured', () => {
+  const app = mount(songs, {
+    anchor: {top:740, bottom:782, right:374},
+    player: {hidden:false, getBoundingClientRect:()=>({top:700})},
+  });
+  const first = app.list.cards[0];
+  app.list.listeners.keydown({target:first.trigger,key:'ArrowDown',preventDefault(){}});
+  assert.ok(parseFloat(first.panel.style.top) >= 8);
+  assert.ok(parseFloat(first.panel.style.top) + 96 <= 692);
+  assert.equal(app.getFocused(),first.next);
+});
 test('collapsed filter summary identifies retained choices and empty search has recovery guidance', () => {
   const app = mount();
-  assert.equal(app.summary.textContent, '');
+  assert.equal(app.filterCount.hidden, true);
   app.click('subject', 'Śiva');
   app.click('language', 'Hindi');
-  assert.equal(app.summary.textContent, 'Śiva · Hindi');
+  assert.equal(app.filterCount.textContent, '2');
+  assert.match(app.filterToggle.title, /Śiva · Hindi/);
   app.search.value = 'no such song'; app.search.listeners.input();
   assert.deepEqual(visible(app), []);
   assert.match(app.list.html, /No songs match/);
   assert.match(app.list.html, /search or filters/);
-  assert.equal(app.summary.textContent, 'Śiva · Hindi');
+  assert.equal(app.filterCount.textContent, '2');
   app.click('all-subjects', 'All'); app.click('all-languages', 'All');
-  assert.equal(app.summary.textContent, '');
+  assert.equal(app.filterCount.hidden, true);
 });
 test('scrolled filter activation and search preserve row/button identity and selected state', () => {
   const app = mount();
@@ -211,9 +275,9 @@ test('playlist Escape returns focus and a click outside the open row dismisses i
   assert.equal(first.panel.hidden, true);
   assert.equal(app.getFocused(), first.trigger);
   app.list.listeners.click({target: first.trigger});
-  app.root.listeners.click({target: {closest: () => second}});
+  app.documentEvents.click({target: {closest: () => null}});
   assert.equal(first.panel.hidden, true);
   app.list.listeners.click({target: first.trigger});
-  app.root.listeners.click({target: {closest: () => null}});
+  app.documentEvents.click({target: {closest: () => null}});
   assert.equal(first.panel.hidden, true);
 });

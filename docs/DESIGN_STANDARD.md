@@ -73,9 +73,21 @@ The default state shows only what is necessary for reading or the current playba
 - Do not add a second close button when the initiating toggle remains visible.
 - Do not add a title that merely repeats what the initiating icon already communicates.
 - Prefer an integrated continuation of the page over a modal, drawer, floating card, dimmed backdrop, or toolbar.
-- Secondary actions may expand inline behind one quiet ellipsis; they must not become a permanently visible action bar.
-- Catalogue rows get one quiet ellipsis, revealing “Play next” and “Add to end” in place. Opening the row remains the path to the song. Previous, current and upcoming occurrences appear together in order inside the expanded playlist, with a restrained current-position label. Do not add a Played-count dropdown or decorative Unicode glyphs. Clearing upcoming songs preserves the current audio and prior entries.
-- The library exposes search and one Filters disclosure by default. Its four named facets retain selections when closed, with selected values visible in the summary. Song tags are quiet inline metadata rather than a second set of pill controls. On mobile, songs must appear within the initial viewport without hiding the dedication.
+- Small secondary actions belong in a small anchored popover. They must not expand the catalogue row or displace adjacent songs. This is an explicit exception to the preference for in-page disclosure: two contextual commands need a transient menu, not another page section.
+- Catalogue rows get one quiet ellipsis, opening a two-action “Play next” / “Add to end” popover. Use the existing ground, cream hairline, small Inter labels and matched SVG icons; no title, backdrop, extra close button or shadow. Keep the menu inside the viewport and above the player; dismiss on outside click, Escape, focus leaving, scroll, navigation or action. Support arrow keys and restore focus appropriately. Tap/click remains sufficient; holding a song is not required.
+- The compact, labeled Filter control shares the search row. Opening it reveals only four closely stacked, horizontally scrolling tag rows. Use “All subjects”, “All languages”, “All poets” and “All singers” reset tags to explain each row; no separate headings, accordion arrow, full-width disclosure bar or section spacing. Preserve selection, horizontal scroll and focus. Indicate active filtering on the control even when collapsed.
+- Song tags remain quiet inline metadata. Previous, current and upcoming playlist occurrences stay together in order, with a restrained current-position label. Do not add a Played-count dropdown. Clearing upcoming songs preserves current audio and prior entries.
+
+### Choosing the right surface
+
+Keep the established devotional typography, dedication, reading column and player
+geometry as the baseline. A filter changes the catalogue and belongs beside
+search; its choices may reveal compactly below it. An action on one song belongs
+next to that song and floats temporarily without changing the list's geometry.
+The full playlist is a listening view and keeps its existing responsive sheet /
+right-panel behavior. Do not apply one disclosure pattern to all three simply
+because it is easy to implement. Check both the closed and open compositions,
+including the space occupied and whether the song titles remain dominant.
 
 ## Motion
 
