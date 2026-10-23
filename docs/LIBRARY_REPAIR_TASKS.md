@@ -82,10 +82,20 @@ regression also verifies that an unreturned response retains unknown-outcome,
 its reservation and replay block instead of being relabeled invalid JSON.
 The broader caller run found four pre-existing semantic-cache adoption failures
 and one stale context assertion, reproduced on the prior committed baseline.
-The cache bug needlessly reconstructs already accepted English because adoption
-uses an older fingerprint recipe; its repair must include current lexical evidence
-identity. Broad paid processing remains stopped until the affected reuse path is
-fixed. No new provider spending was incurred in this integration checkpoint.
+The cache bug is now repaired: creation and adoption share the current fingerprint
+inputs, acceptance binds lexical support and reading context, and cached decisions
+are revalidated. Current accepted and held candidates resume without unnecessary
+English generation; changed support cannot silently reuse an old judgment.
+The stale test now checks the actual complete reading-context payload.
+
+The context-free pati/Lord veto is also removed from fresh glosses, final reader
+validation and the public audit. Shared policy now distinguishes witnessed
+traditional formation from historical etymology and present-language meaning;
+it permits evidenced Lord/master relations without forcing them. No public
+English was changed. The combined policy, pipeline, automatic-repair, support and
+cache-adoption run passes 150 tests. Automatic retrieval, boundary caller recovery
+and selective timing remain unfinished, so broad paid processing is still stopped.
+No new provider spending was incurred in this integration checkpoint.
 
 Published `a3366b3f`: two source-word mapping corrections in Aruṇācala line 007.
 Exact comparison proves every other reader field, including owner English and

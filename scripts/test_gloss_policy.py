@@ -76,12 +76,16 @@ class GlossPolicyTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unresolved self-referential gloss"):
             gloss_policy.meaning_only_gloss("UnresolvedName", "UnresolvedName")
 
-    def test_pati_compounds_cannot_be_flattened_to_lord(self) -> None:
-        self.assertTrue(gloss_policy.is_pati_lexeme("raghupati"))
-        self.assertTrue(gloss_policy.has_flat_pati_lord_gloss("śrīpati", "Lord of Śrī"))
-        self.assertFalse(gloss_policy.has_flat_pati_lord_gloss("girijāpati", "Girijā's consort and protector"))
-        self.assertFalse(gloss_policy.is_pati_lexeme("patita"))
-        self.assertFalse(gloss_policy.is_pati_lexeme("sampati"))
+    def test_relational_titles_remain_available_for_contextual_review(self) -> None:
+        for roman, meaning in (
+            ("pati", "lord; master in this address"),
+            ("raghupati", "lord of Raghu's line"),
+            ("girijāpati", "Girijā's husband"),
+            ("patita", "fallen"),
+            ("sampati", "wealth"),
+        ):
+            with self.subTest(roman=roman):
+                self.assertEqual(gloss_policy.meaning_only_gloss(roman, meaning), meaning)
 
 
 if __name__ == "__main__":

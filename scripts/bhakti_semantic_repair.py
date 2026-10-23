@@ -228,16 +228,31 @@ def prior_fingerprints(pipeline, stage, inputs, options):
 def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, source_context, snapshots=None):
     def read(name):
         return snapshots.get(name) if snapshots is not None else pipeline.read_packet(packet_dir / name)
+    support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
+    policy = pipeline.semantic_stage_policy(options)
     glosses = read('04-glosses.json')
-    identities = prior_fingerprints(pipeline, 'gloss', {'lines': lines, 'languages': languages}, options)
+    gloss_inputs = {'lines': lines, 'languages': languages}
+    identities = {pipeline.text_stage_fingerprint('gloss', options.model, gloss_inputs, policy)}
+    # Historical signatures never bound lexical support. They can only seed a
+    # run without that new evidence; they are not current-policy equivalence.
+    no_support = getattr(options, 'semantic_lexical_support', None) is None
+    if no_support:
+        identities.update(prior_fingerprints(pipeline, 'gloss', gloss_inputs, options))
     if (not glosses or glosses.get('fingerprint') not in identities
             or glosses.get('gloss_contract_version') != pipeline.GLOSS_CONTRACT_VERSION
-            or pipeline.fresh_gloss_contract_errors(lines, glosses.get('packet', {}).get('glosses', []), languages)):
+            or pipeline.fresh_gloss_contract_errors(lines, glosses.get('packet', {}).get('glosses', []), languages)
+            or pipeline.bhakti_lexical_support.support_decision_errors(support, glosses.get('packet', {}).get('glosses', []))):
         return None, None
     rows = glosses['packet']['glosses']
-    inputs = {'lines': lines, 'glosses': rows, 'provided_translation': pipeline.supplied_translation(job),
-              'languages': job.get('languages', languages)}
-    identities = prior_fingerprints(pipeline, 'translation', inputs, options)
+    provided = pipeline.supplied_translation(job)
+    translation_languages = job.get('languages', languages)
+    current_inputs = pipeline.translation_stage_inputs(lines, rows, provided, translation_languages, options,
+        performance_order=source_context.get('performance_order', []))
+    identities = {pipeline.text_stage_fingerprint('translation', options.model, current_inputs, policy)}
+    if no_support and not current_inputs['reading_context_evidence']:
+        historical_inputs = {'lines': lines, 'glosses': rows, 'provided_translation': provided,
+                             'languages': translation_languages}
+        identities.update(prior_fingerprints(pipeline, 'translation', historical_inputs, options))
     for filename in ('05-translation.json', 'translation-candidate.json'):
         candidate = read(filename)
         if (not candidate or candidate.get('fingerprint') not in identities
@@ -245,6 +260,7 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
             continue
         translations = candidate.get('packet', {}).get('translations', [])
         if not candidate_structure_valid(pipeline, lines, rows, translations): continue
+        if pipeline.bhakti_lexical_support.support_decision_errors(support, rows, translations): continue
         candidate = copy.deepcopy(candidate)
         # Version8 did not bind performance order/recording. Preserve its
         # draft, but refresh review when that extra source context is present
@@ -316,10 +332,24 @@ def complete(pipeline, song_dir, audited, job, options):
     languages = audited.get('packet', {}).get('metadata', {}).get('languages')
     try:
         baseline = resolved_baseline(pipeline, song_dir, lines, job)
+        support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
         evidence = source_evidence(pipeline, song_dir, audited)
-        identity = digest({'version': VERSION, 'source_evidence': evidence, 'languages': languages,
-                           'baseline': baseline, 'policy': pipeline.translation_policy_payload(),
-                           'model': options.model, 'provider': pipeline.gemini.provider_name()})
+        policy = pipeline.translation_policy_payload()
+        full_support = getattr(options, 'semantic_lexical_support', None)
+        if full_support is not None:
+            policy = {**policy, 'lexical_support': pipeline.bhakti_lexical_support.content_digest(full_support)}
+        identity_inputs = {'version': VERSION, 'source_evidence': evidence, 'languages': languages,
+                           'baseline': baseline, 'policy': policy,
+                           'model': options.model, 'provider': pipeline.gemini.provider_name()}
+        # Keep exact no-additional-evidence historical run identities. Explicit
+        # reading evidence/overrides must bind acceptance before its early return.
+        context = getattr(options, 'semantic_context_evidence', [])
+        if context:
+            identity_inputs['reading_context_evidence'] = context
+        order = getattr(options, 'semantic_performance_order', evidence['performance_order'])
+        if order != evidence['performance_order']:
+            identity_inputs['reading_performance_order'] = order
+        identity = digest(identity_inputs)
         if prior_state.get('run_id') == identity:
             state = dict(prior_state)
             if state.get('status') == 'blocked':
@@ -334,7 +364,7 @@ def complete(pipeline, song_dir, audited, job, options):
         local.force = False  # A force rerun cannot reset this run's paid history.
         local.semantic_deadline_at = state['deadline_at_epoch']
         local.semantic_full_source = lines
-        local.semantic_performance_order = audited.get('packet', {}).get('performance_order', [])
+        local.semantic_performance_order = order
         local.semantic_source_identity = digest(evidence)
         local.semantic_baseline = baseline
         marker = {'version': VERSION, 'run_id': identity}
@@ -345,6 +375,7 @@ def complete(pipeline, song_dir, audited, job, options):
             require_acceptance(pipeline, packet_dir, glosses, translations, audited=audited, accepted_state=state)
             errors = pipeline.fresh_gloss_contract_errors(lines, glosses['packet']['glosses'], languages)
             errors += pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], translations['packet']['translations'])
+            errors += pipeline.bhakti_lexical_support.support_decision_errors(support, glosses['packet']['glosses'], translations['packet']['translations'])
             if errors: raise RuntimeError('accepted semantic cache violates contract: ' + str(errors[:3]))
             pipeline.semantic_write_json(state_path, state)
             return glosses, translations

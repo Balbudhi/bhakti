@@ -12,7 +12,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 4
+POLICY_VERSION = 5
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
@@ -30,6 +30,21 @@ genuine proper names, with their evidenced identity, relationship or literal
 meaning in the clickable gloss. Distinguish a person's name from a descriptive
 epithet; explain the epithet's operative meaning rather than flattening every
 divine title to Lord. Do not manufacture etymologies from a modern artist name.
+
+For pati or a verified -pati compound, choose the relation supported by the
+source language, grammar and passage. Lord or master is permitted when evidenced;
+husband/consort, ruler, guardian/protector and leader are other candidate senses,
+not compulsory substitutions. Preserve the relation expressed by each compound
+member; do not reduce a specific relationship to an unexplained devotional title.
+Do not infer a compound or Sanskrit ancestry from a similar spelling.
+
+An identified textual witness may supply a traditional formation or root-based
+explanation. Treat it as that witness's traditional analysis, not by itself as
+historical etymology or proof of a present-language sense. A Sanskrit explanation
+does not establish the meaning of a Hindi, Punjabi or other-language occurrence
+without language-specific evidence and context. Preserve a root image when the
+passage activates it; do not insert protection into every pati occurrence merely
+because a traditional explanation connects it with protecting.
 
 Keep the poem's concrete images, repetition, direct address, tenderness, boldness,
 wordplay and unusual agency. Supply English function words and natural syntax

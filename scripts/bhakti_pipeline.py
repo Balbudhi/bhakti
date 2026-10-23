@@ -83,6 +83,13 @@ def text_stage_fingerprint(stage: str, model: str, inputs: dict[str, Any],
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 
+def translation_stage_inputs(lines, gloss_rows, provided_translation, languages, options, *, performance_order=()):
+    """One current evidence identity for translation creation and draft adoption."""
+    return {"lines": lines, "glosses": gloss_rows, "provided_translation": provided_translation,
+            "languages": languages, "reading_context_contract": 1,
+            "reading_context_evidence": getattr(options, "semantic_context_evidence", []),
+            "reading_performance_order": getattr(options, "semantic_performance_order", performance_order)}
+
 
 def semantic_write_json(path: Path, value: Any) -> None:
     bhakti_semantic_repair.atomic_write(path, value)
@@ -2978,8 +2985,6 @@ def gloss_contract_errors(lines: list[dict[str, Any]], gloss_rows: list[dict[str
                 errors.append(f"{line_id} word gloss {word_index} preserves an uncurated concept")
             if gloss_policy.is_self_referential(word.get("roman", ""), word.get("gloss", "")):
                 errors.append(f"{line_id} word gloss {word_index} repeats the visible term instead of explaining it")
-            if gloss_policy.has_flat_pati_lord_gloss(word.get("roman", ""), word.get("gloss", "")):
-                errors.append(f"{line_id} word gloss {word_index} flattens pati to Lord")
     return errors
 
 
@@ -3040,8 +3045,6 @@ When a source line supplies lexical_tokens, copy that validated existing display
 Before any later translation, explicitly reconstruct the semantic frame: who is acting or experiencing; the action or state; its patient or complement; modifiers; negation or modality; the exact literal image and agency; any established idiom; and how the line connects grammatically to its neighbors. Preserve personification and unusual agency rather than normalizing them. Distinguish a suffered or resultant state from a self-caused act: if the line says the speaker is broken, undone, struck, or seized, do not reinterpret it as the speaker actively breaking, undoing, striking, or seizing themself. Do not replace one metaphor with another: if a feeling “takes hold,” do not relabel it as kindling or stirring. Preserve a spatial word directly—“inside” remains “inside”—rather than upgrading it to “deep within” unless the source actually expresses depth. Represent reduplication as emphasis or repetition without inventing a new image. Expand relational objects when English requires their complement—a hem is the hem of a garment. Distinguish culturally specific objects precisely, such as an alms bag rather than a generic satchel, and palm/open palm rather than an abstract “hand” when the source requires it. For `raham nazar`, record the phrase-level meaning “look upon someone with mercy,” never “cast a glance.”
 
 Explain internal morphemes inside the token's `gloss` or `grammar_note`. Give a short grammar note for ellipsis, agreement, sandhi, compounds, or syntax. Choose the contextually supported sense of a polysemous word; do not call ordinary dictionary polysemy uncertain. Use uncertainty only when the audited lyric itself remains genuinely unresolved. Do not write a fluent English sentence in this stage.
-
-For the Sanskrit/Indic noun `pati` and transparent `-pati` compounds, do not default to “Lord.” Its operative range includes guardian, protector, sustaining partner, husband/consort, ruler, and leader (historically from √pā, “protect”). Translate the relation actually expressed by the first member: `raghu-pati` is a guardian of Raghu’s line, `śrī-pati` Śrī’s consort/protector, and `girijā-pati` Girijā’s husband/consort. A bare devotional title is not enough. This instruction does not apply to unrelated look-alikes such as `patita` “fallen,” `sampati` “wealth,” or a locally evidenced vernacular homograph; if the form cannot be distinguished from context, mark it uncertain rather than guessing.
 
 For `nām`, gloss the contextual sense as “name,” “divine name,” or “appellation”; never repeat the visible term. For a proper name, state the evidenced identity or relationship rather than merely repeating it: in a Rāma context `Janaka` is Sītā’s father, the king of Mithilā.
 
@@ -3647,11 +3650,8 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
         raise RuntimeError("translation lexical support: " + str(support_errors[:3]))
     policy = semantic_stage_policy(options)
     fingerprint = text_stage_fingerprint("translation", options.model,
-        {"lines": lines, "glosses": gloss_rows, "provided_translation": provided_translation,
-         "languages": languages, "reading_context_contract": 1,
-         "reading_context_evidence": getattr(options, "semantic_context_evidence", []),
-         "reading_performance_order": getattr(options, "semantic_performance_order",
-             audited["packet"].get("performance_order", []))}, policy)
+        translation_stage_inputs(lines, gloss_rows, provided_translation, languages, options,
+            performance_order=audited["packet"].get("performance_order", [])), policy)
     existing = read_packet(target)
     if (existing and existing.get("fingerprint") == fingerprint and not options.force
             and existing.get("input_contract_version") == TRANSLATION_INPUT_VERSION):
@@ -3941,8 +3941,6 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
             fictional = gloss_policy.fictional_coinages(word.get("gloss", ""))
             if fictional:
                 errors.append(f"{line_id} word gloss uses fictional coinage {fictional}")
-            if gloss_policy.has_flat_pati_lord_gloss(word.get("roman", ""), word.get("gloss", "")):
-                errors.append(f"{line_id} word gloss flattens pati to Lord")
         independent = translation.get("independent_review", {})
         if independent:
             if not independent.get("passes"):

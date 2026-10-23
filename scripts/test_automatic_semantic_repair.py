@@ -251,7 +251,9 @@ class AutomaticRepairTests(unittest.TestCase):
         self.assertTrue(all(count == 2 for count in counts.values()), counts)
         final_distant = [c for c in self.calls if 'line-24' in c.get('ids', [])][-1]
         self.assertIn('line-0', final_distant['prompt'])
-        distant = self.payload(final_distant['prompt'], 'REFERENCED DISTANT SEMANTIC CONTEXT (context only):\n')
+        reading = self.payload(final_distant['prompt'], 'ENGLISH READING CONTEXT (context only; target obligations unchanged):\n')
+        self.assertIn({'line_id': 'line-24', 'cross_line_relation': 'Depends on line-0.'}, reading['relation_notes'])
+        distant = reading['context_rows']
         ref = next(item for item in distant if item.get('source', {}).get('id') == 'line-0')
         self.assertEqual(ref['gloss']['semantic_frame']['agent'], 'my breath')
         self.assertEqual(ref['draft']['literal_english'], 'My breath abandons me.')

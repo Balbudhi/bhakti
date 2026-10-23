@@ -167,13 +167,13 @@ class PipelineTests(unittest.TestCase):
         rows = [{"id": "line", "word_glosses": [{"roman": "sāṁs", "gloss": "breath"}]}]
         self.assertIn("line lacks a complete semantic frame", pipeline.gloss_contract_errors(lines, rows))
 
-    def test_pati_lord_flattening_blocks_gloss_contract(self) -> None:
+    def test_contextual_pati_lord_relation_is_not_rejected(self) -> None:
         lines = [{"id": "line", "roman": "raghupati", "source_text": "रघुपति"}]
         rows = [{"id": "line", "word_glosses": [{"roman": "raghupati", "gloss": "Lord of Raghu",
                                                         "concept_key": "", "preserve_in_english": False}],
                  "semantic_frame": {field: "" for field in pipeline.SEMANTIC_FRAME_FIELDS},
                  "grammar_note": "", "uncertainty": ""}]
-        self.assertIn("line word gloss 0 flattens pati to Lord", pipeline.gloss_contract_errors(lines, rows))
+        self.assertEqual(pipeline.gloss_contract_errors(lines, rows), [])
 
     def test_long_transcript_cache_contract_is_versioned(self) -> None:
         self.assertGreaterEqual(pipeline.LONG_TRANSCRIPT_CONTRACT_VERSION, 4)
