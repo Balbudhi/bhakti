@@ -88,8 +88,12 @@ pass 59 tests; these establish transport and validation, not linguistic quality.
 The private comparison driver now preserves typed semantic holds and continues
 independent cases only after checking both spending ledgers. Nine local checks
 cover continuation, no replay, exact held evidence, missing responses, unknown
-text/embedding outcomes and remaining budget. The current-code manifest and
-first-request capture still need renewal before any live dispatch; none occurred.
+text/embedding outcomes and remaining budget. The current-code v4 manifest and
+four exact first-request captures are now verified offline. Text remains capped
+at $1/eight calls and embeddings at $0.05/twelve calls; free dictionary HTTP is
+capped at 48 queries across the run. Downstream request sizes depend on returned
+glosses, and embedding expansion may reach its cap before all cases finish.
+Network restoration was requested; no live dispatch occurred.
 
 The owner reconfirmed this full goal and requested an exhaustive task list on
 23 October. The existing goal remains active; this document is the maintained
