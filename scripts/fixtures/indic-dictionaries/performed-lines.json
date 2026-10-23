@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "har-jiyo-kirpa-karo",
+    "line": {
+      "id": "rahao-2",
+      "source_text": "ਹਰਿ ਨਾਮੁ ਦੇਵਹੁ ਆਧਾਰੇ",
+      "roman": "hari nāmu devahu ādhāre",
+      "kind": "refrain",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-2",
+              "source_text": "ਕ੍ਰਿਪਾ ਕਰਹੁ ਤੁਮ ਪਿਆਰੇ",
+              "roman": "kripā karahu tum piāre"
+            },
+            {
+              "id": "rahao-1",
+              "source_text": "ਸਤਿਗੁਰੁ ਦਾਤਾ ਮੇਲਿ ਮਿਲਾਵਹੁ",
+              "roman": "satiguru dātā meli milāvahu"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "ਹਰਿ ਜੀਉ ਕ੍ਰਿਪਾ ਕਰਹੁ",
+              "roman": "hari jīu kripā karahu"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "ਕ੍ਰਿਪਾ ਕਰਹੁ ਤੁਮ ਪਿਆਰੇ",
+              "roman": "kripā karahu tum piāre"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "v1-2",
+              "source_text": "ਹਮ ਦੀਨ ਤੁਮ ਜੁਗੁ ਜੁਗੁ ਦਾਤੇ ਸਬਦੇ ਦੇਹਿ ਬੁਝਾਈ",
+              "roman": "hama dīna tum juga jugu dāte sabade dehi bujhāī"
+            },
+            {
+              "id": "rahao-1",
+              "source_text": "ਸਤਿਗੁਰੁ ਦਾਤਾ ਮੇਲਿ ਮਿਲਾਵਹੁ",
+              "roman": "satiguru dātā meli milāvahu"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "ਹਰਿ ਜੀਉ ਕ੍ਰਿਪਾ ਕਰਹੁ",
+              "roman": "hari jīu kripā karahu"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "ਕ੍ਰਿਪਾ ਕਰਹੁ ਤੁਮ ਪਿਆਰੇ",
+              "roman": "kripā karahu tum piāre"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "v2-2",
+              "source_text": "ਹਰਿ ਰਸੁ ਚਾਖਿ ਮਨੁ ਨਿਰਮਲੁ ਹੋਆ ਕਿਲਬਿਖ ਕਾਟਣਹਾਰਾ",
+              "roman": "hari rasu cākhi manu nirmalu hoā kilbikha kāṭaṇhārā"
+            },
+            {
+              "id": "rahao-1",
+              "source_text": "ਸਤਿਗੁਰੁ ਦਾਤਾ ਮੇਲਿ ਮਿਲਾਵਹੁ",
+              "roman": "satiguru dātā meli milāvahu"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "ਹਰਿ ਜੀਉ ਕ੍ਰਿਪਾ ਕਰਹੁ",
+              "roman": "hari jīu kripā karahu"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "ਕ੍ਰਿਪਾ ਕਰਹੁ ਤੁਮ ਪਿਆਰੇ",
+              "roman": "kripā karahu tum piāre"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "v3-2",
+              "source_text": "ਅੰਮ੍ਰਿਤੁ ਨਾਮੁ ਸਦਾ ਮਨਿ ਮੀਠਾ ਸਬਦੇ ਪਾਵੈ ਕੋਈ",
+              "roman": "amritu nāmu sadā mani mīṭhā sabade pāvai koī"
+            },
+            {
+              "id": "rahao-1",
+              "source_text": "ਸਤਿਗੁਰੁ ਦਾਤਾ ਮੇਲਿ ਮਿਲਾਵਹੁ",
+              "roman": "satiguru dātā meli milāvahu"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "ਹਰਿ ਜੀਉ ਕ੍ਰਿਪਾ ਕਰਹੁ",
+              "roman": "hari jīu kripā karahu"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "ਕ੍ਰਿਪਾ ਕਰਹੁ ਤੁਮ ਪਿਆਰੇ",
+              "roman": "kripā karahu tum piāre"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "v4-2",
+              "source_text": "ਨਾਨਕ ਨਾਮਿ ਰਤੇ ਸੁਖੁ ਪਾਇਆ ਦਰਗਹ ਜਾਪਹਿ ਸੇਈ",
+              "roman": "nānaka nāmi rate sukhu pāiā daragaha jāpahi seī"
+            },
+            {
+              "id": "rahao-1",
+              "source_text": "ਸਤਿਗੁਰੁ ਦਾਤਾ ਮੇਲਿ ਮਿਲਾਵਹੁ",
+              "roman": "satiguru dātā meli milāvahu"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "ਹਰਿ ਜੀਉ ਕ੍ਰਿਪਾ ਕਰਹੁ",
+              "roman": "hari jīu kripā karahu"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "ਕ੍ਰਿਪਾ ਕਰਹੁ ਤੁਮ ਪਿਆਰੇ",
+              "roman": "kripā karahu tum piāre"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "ਹਰਿ",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "ਨਾਮੁ",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ਦੇਵਹੁ",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "ਆਧਾਰੇ",
+          "wordIndices": [
+            3
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "hari",
+        "nāmu",
+        "devahu",
+        "ādhāre"
+      ],
+      "sourceLanguage": "pa"
+    },
+    "term": "ādhāre",
+    "head": "ਆਧਾਰ",
+    "language": "Punjabi"
+  },
+  {
+    "slug": "arunachala-akshara-mana-malai",
+    "line": {
+      "id": "line-004",
+      "source_text": "அழகு சுந்தரம்போல் அகமும் நீயும் உற்று அபின்னமாய் இருப்போம் அருணாசலா",
+      "roman": "aḻaku cuntaram pōl akamum nīyum uṟṟu apinnamāy iruppōm aruṇācalā",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "line-002",
+              "source_text": "அருணாசல சிவ அருணாசல சிவ அருணாசல சிவ அருணாசலா",
+              "roman": "aruṇācala civa aruṇācala civa aruṇācala civa aruṇācalā"
+            },
+            {
+              "id": "line-003",
+              "source_text": "அருணாசலமென அகமே நினைப்பவர் அகத்தை வேரறுப்பாய் அருணாசலா",
+              "roman": "aruṇācalamena akamē ninaippavar akattai vēraṟuppāy aruṇācalā"
+            }
+          ],
+          "after": [
+            {
+              "id": "line-005",
+              "source_text": "அகம் புகுந்து ஈர்த்துன் அககுகை சிறையாய் அமர்வித்தது என்கொல் அருணாசலா",
+              "roman": "akam pukuntu īrttun akakukai ciṟaiyāy amarvittatu enkol aruṇācalā"
+            },
+            {
+              "id": "line-006",
+              "source_text": "ஆருக்கா வெனை ஆண்டனை அகற்றிடில் அகிலம் பழித்திடும் அருணாசலா",
+              "roman": "ārukkā veṉai āṇṭanai akaṟṟiṭil akilam paḻittiṭum aruṇācalā"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "அழகு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "சுந்தரம்போல்",
+          "wordIndices": [
+            1,
+            2
+          ]
+        },
+        {
+          "text": "அகமும்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "நீயும்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "உற்று",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "அபின்னமாய்",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "இருப்போம்",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "அருணாசலா",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "aḻaku",
+        "cuntaram",
+        "pōl",
+        "akamum",
+        "nīyum",
+        "uṟṟu",
+        "apinnamāy",
+        "iruppōm",
+        "aruṇācalā"
+      ],
+      "sourceLanguage": ""
+    },
+    "term": "akamum",
+    "head": "அகம்",
+    "language": "Tamil"
+  }
+]

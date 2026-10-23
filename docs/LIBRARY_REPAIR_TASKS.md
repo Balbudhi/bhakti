@@ -53,9 +53,13 @@ translation quality. Historical crop adoption and source-language dictionary
 coverage remain open. Punjabi/Tamil dictionary acquisition and witness validation
 are now integrated with 83 local parser, acquisition and connected-caller checks.
 Complete entries, homographs, supplement citations and one shared request quota
-are preserved. Inflection relationships and their passage-level translation
-review still need completion; exact headword lookup alone is not verified
-Gurbani or Tamil grammatical interpretation.
+are preserved. Inflected-form claims now bind an attested headword and explicit
+ending/grammar explanation and reach independent review. Five actual caller
+controls cover Punjabi reader input, Tamil transcript input with seven homographs,
+missing explanations, false lemma claims and selective repair after a review
+objection; the joined source/discovery/evidence suite passes 58 tests. Provider
+judgments are synthetic. Exact headword lookup and these structural checks do
+not establish correct Gurbani or Tamil grammatical interpretation.
 
 Release consistency prerequisites are integrated and pass 32 focused checks:
 pending installs block consumers, immutable media preserves old live URLs,

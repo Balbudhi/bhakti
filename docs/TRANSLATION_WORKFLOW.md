@@ -216,9 +216,15 @@ Punjabi and Tamil acquisition now use separate DDSA adapters for Bhai Maya Singh
 Panjabi Dictionary and the University of Madras Tamil Lexicon. They preserve full
 entries and homographs, printed supplement loci, exact-query misses and one shared
 run allowance. A Punjabi word never falls back to the Hindi adapter. Inflected
-source-to-headword relationships and their actual translation/review caller
-coverage still need completion; a stem entry alone does not establish the meaning
-of its ending. The default five-entry Hindi corpus has no token matches in the five representative qualification songs;
+source-to-headword claims reach the actual translation/review callers; a stem
+entry alone does not establish the meaning of its ending. The source-form
+decision contract uses `inflected_form`: the
+attested lemma must be a witnessed headword and quotation, with a nonempty
+`form_explanation` accounting for the performed ending or particle and its role
+in the whole line. The target's original indices/spelling remain unchanged.
+This explanation is a model claim for independent review, not dictionary proof;
+a disagreement follows the existing typed glossary/frame repair path.
+The default five-entry Hindi corpus has no token matches in the five representative qualification songs;
 configuring an encoder alone cannot correct that coverage gap. No full-library
 translation-quality claim follows from these structural tests.
 

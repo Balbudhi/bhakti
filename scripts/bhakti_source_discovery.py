@@ -19,6 +19,7 @@ import dictionary_corpus as corpus
 import source_word_map
 
 VERSION = 1
+RELATION_POLICY_VERSION = 2
 MAX_SUGGESTIONS = 2
 
 
@@ -199,7 +200,7 @@ def acquire_source_candidates(plan, cache_dir, *, opener=None, max_new_requests=
     entries = corpus.merge_entries(all_entries)
     witnessed = producer.resolve_source_witnesses(entries, list(roots.values()))
     gaps.extend(witnessed['gaps'])
-    return {'version': VERSION, 'targets': targets, 'entries': entries,
+    return {'version': VERSION, 'relation_policy_version': RELATION_POLICY_VERSION, 'targets': targets, 'entries': entries,
             'evidence': witnessed['evidence'], 'entry_evidence_ids': witnessed['entry_evidence_ids'], 'gaps': gaps}
 
 
@@ -229,7 +230,7 @@ def discovery_decision_errors(discovery, decisions):
                             quotation in entry['dictionary']['whole_entry_text'], 'source quotation not witnessed')
             support.require(isinstance(form, str) and form and form in quotation, 'attested form absent from quotation')
             relation = decision.get('relation_kind')
-            support.require(relation in {'exact_form', 'vernacular_variant', 'compound_subentry'},
+            support.require(relation in {'exact_form', 'vernacular_variant', 'compound_subentry', 'inflected_form'},
                             'matched source relation kind missing')
             support.require(isinstance(decision.get('meaning_applied'), str) and decision['meaning_applied'].strip(),
                             'matched source meaning missing')
@@ -238,6 +239,13 @@ def discovery_decision_errors(discovery, decisions):
                 heads = entry['source_spellings'] + entry['roman_search_aliases']
                 support.require(any(lexical.token(value) == lexical.token(head) for value in native + target['surfaces']
                                     for head in heads), 'exact source-form claim has no matching witnessed headword')
+            if relation == 'inflected_form':
+                heads = entry['source_spellings'] + entry['roman_search_aliases']
+                support.require(any(lexical.token(form) == lexical.token(head) for head in heads),
+                                'inflected form needs an attested dictionary headword, not an arbitrary definition fragment')
+                explanation = decision.get('form_explanation')
+                support.require(isinstance(explanation, str) and explanation.strip() and len(explanation) <= 2000,
+                                'inflected form needs a bounded explanation of its ending and grammatical contribution')
         except (KeyError, TypeError, ValueError) as exc:
             errors.append(str(exc))
     if seen != expected:
@@ -283,7 +291,7 @@ def prepare(lines, gloss_rows, languages, bindings, config, options):
     if targets:
         gaps.append({'kind': 'source_discovery_budget_missing',
                      'detail': 'No shared run acquisition budget configured; no request dispatched.'})
-    return {'version': VERSION, 'targets': targets, 'entries': [], 'evidence': [],
+    return {'version': VERSION, 'relation_policy_version': RELATION_POLICY_VERSION, 'targets': targets, 'entries': [], 'evidence': [],
             'entry_evidence_ids': {}, 'gaps': gaps}
 
 
@@ -322,6 +330,10 @@ def prompt(options, line_ids):
         'For every target/entry pair return source_discovery_decisions with matched/rejected/unresolved, '
         'attested_form, exact quotation, relation_kind, meaning_applied, changes_gloss, and reason. '
         'A matched compound must quote the whole compound subentry, not just its root. '
+        'Use inflected_form for a performed form linked to an attested dictionary lemma; '
+        'provide form_explanation accounting for the ending or particle and its grammatical contribution in this whole line. '
+        'The lemma quotation does not prove that explanation. Preserve the complete performed token and its indices; '
+        'never silently stem it or discard suffix meaning. For other relations form_explanation may be empty. '
         'Check source language, whole-word meaning, current passage grammar, and source/gloss/frame agreement. '
         'If new evidence requires a changed gloss, set changes_gloss=true; do not silently replace the glossary. '
         'The independent reviewer must evaluate each relation and contextual meaning separately. '
@@ -335,9 +347,9 @@ def extend_schema(schema, options):
         return schema
     schema = copy.deepcopy(schema)
     props = {field: {'type': 'string'} for field in
-             ('target_id', 'entry_id', 'attested_form', 'quotation', 'meaning_applied', 'reason')}
+             ('target_id', 'entry_id', 'attested_form', 'quotation', 'meaning_applied', 'reason', 'form_explanation')}
     props.update(status={'type': 'string', 'enum': ['matched', 'rejected', 'unresolved']},
-                 relation_kind={'type': 'string', 'enum': ['exact_form', 'vernacular_variant', 'compound_subentry', 'unresolved']},
+                 relation_kind={'type': 'string', 'enum': ['exact_form', 'vernacular_variant', 'compound_subentry', 'inflected_form', 'unresolved']},
                  changes_gloss={'type': 'boolean'})
     row = schema['properties']['translations']['items']
     row['properties']['source_discovery_decisions'] = {'type': 'array', 'items': {
