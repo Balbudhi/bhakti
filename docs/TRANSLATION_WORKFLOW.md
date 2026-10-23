@@ -18,10 +18,13 @@ The latest local fixes separate the attested headword from its quoted definition
 remove duplicate model-facing dictionary metadata, and supply source-bound naming
 conventions through intake, repair, benchmark and standalone audit callers. They
 have passed focused integration checks with saved real artifacts and synthetic
-provider responses; they do not establish improved translation quality. A known
-review-input defect loses source-only neighboring lines from a short excerpt.
-Its correction precedes a bounded review of the unchanged failed draft. No new
-glossary or writer call is needed to test whether the reviewer detects that defect.
+provider responses; they do not establish improved translation quality. The
+reviewer now retains source-only neighboring lines from a short excerpt, with
+explicit local order and no invented neighbor translation. Conflicting or missing
+source definitions stop before dispatch. Review-task version 2 refreshes review
+only, preserves prior findings, and reuses validated unchanged writing. The joined
+34 context/cache checks pass. Next is a bounded review of the unchanged failed
+draft; no new glossary or writer call is needed to test defect detection.
 
 ## Bounded intake and boundary recovery
 

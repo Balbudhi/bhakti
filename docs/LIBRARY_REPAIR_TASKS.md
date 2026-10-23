@@ -9,11 +9,15 @@ latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
 Current step: finish the connected pipeline before further content releases.
-The next deliverable is a reviewer request that retains the failed excerpt's
-original neighboring lines, followed by one bounded review of the existing paid
-draft. This diagnostic buys no replacement glossary, writer or embeddings and
+The reviewer now retains the failed excerpt's original neighboring lines. The
+next deliverable is one bounded review of the existing paid draft. This
+diagnostic buys no replacement glossary, writer or embeddings and
 does not accept or publish the draft. The original unsupported `true` must be
 identified; merely clearing the citation validator is insufficient.
+The source-only context fix passed 34 joined context/cache checks. It preserves
+local before/after order without inventing global occurrences or translations,
+rejects missing/conflicting source definitions before dispatch, and refreshes
+only review when validated writing is unchanged. Prior findings survive renewal.
 
 Local integration now includes: witnessed headword/definition validation as
 separate fields; lossless dictionary metadata deduplication (21,305 fewer

@@ -61,9 +61,9 @@ LONG_MERGE_VERSION = 8
 LONG_TRANSCRIPT_CONTRACT_VERSION = 4
 GLOSS_CONTRACT_VERSION = 6
 TRANSLATION_INPUT_VERSION = 9
-REVIEW_TASK_VERSION = 1
+REVIEW_TASK_VERSION = 2
 # Exact older task shapes supported for evidence reuse; absence means task0.
-PRIOR_REVIEW_TASK_VERSIONS = (0,)
+PRIOR_REVIEW_TASK_VERSIONS = (0, 1)
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
@@ -4056,11 +4056,76 @@ def translation_reading_context(lines, gloss_rows, translation_rows, target_ids,
             "reading_windows": windows, "relation_notes": sorted(relations, key=lambda row: row["line_id"]), "scope_issues": []}
 
 
+def source_only_review_context(targets, reading, supplied_sources):
+    """Keep target-bound native neighbors without inventing English or order."""
+    fields = ('source_text', 'roman', 'sourceLanguage', 'kind')
+    definitions = {}
+    def remember(row):
+        if not isinstance(row, dict) or not isinstance(row.get('id'), str) or not row['id']:
+            raise ValueError('review source neighbor lacks a valid ID')
+        line_id = row['id']
+        value = definitions.setdefault(line_id, {'id': line_id})
+        for field in fields:
+            if field not in row or (field != 'source_text' and row[field] in (None, '')):
+                continue  # Unspecified optional language/roman/kind is not invented.
+            if not isinstance(row[field], str) or not row[field].strip():
+                raise ValueError('review source neighbor has invalid ' + field)
+            if field in value and value[field] != row[field]:
+                raise ValueError('review source context has conflicting definition: ' + line_id)
+            value[field] = row[field]
+        return line_id
+    for source in supplied_sources.values():
+        remember(source)
+    local_windows = []
+    for target in targets:
+        source = target['source']
+        contexts = source.get('performed_context', [])
+        if not isinstance(contexts, list):
+            raise ValueError('review source context windows must be an array')
+        for context in contexts:
+            if not isinstance(context, dict):
+                raise ValueError('review source context window is invalid')
+            window = {'anchor_id': source['id']}
+            for side in ('before', 'after'):
+                neighbors = context.get(side, [])
+                if not isinstance(neighbors, list):
+                    raise ValueError('review source context neighbors must be an array')
+                window[side] = [remember(neighbor) for neighbor in neighbors]
+            local_windows.append(window)
+    # Resolve ID-only references after collecting every supplied original
+    # definition. Do not recurse through a neighbor's incidental context.
+    for window in local_windows:
+        for line_id in window['before'] + window['after']:
+            if not definitions[line_id].get('source_text'):
+                raise ValueError('review source context lacks required native neighbor: ' + line_id)
+    missing = [row for line_id, row in definitions.items() if line_id not in supplied_sources]
+    if len(reading['context_rows']) + len(missing) > 80:
+        raise ValueError('review source context exceeds 80-row scope limit')
+    reading_orders = [[event['line_id'] for event in window['occurrences']]
+                      for window in reading['reading_windows']]
+    retained = []
+    references = 0
+    for window in local_windows:
+        sequence = window['before'] + [window['anchor_id']] + window['after']
+        if any(order[start:start + len(sequence)] == sequence
+               for order in reading_orders for start in range(len(order) - len(sequence) + 1)):
+            continue
+        retained.append(window)
+        references += len(window['before']) + len(window['after'])
+        if len(retained) > 80 or references > 640:
+            raise ValueError('review source context exceeds bounded window/reference limit')
+    if not retained:
+        return None
+    return {'version': 1, 'order_basis': 'source-bound-neighbor-windows',
+            'definitions': missing, 'windows': retained}
+
+
 def translation_review_payload(target_evidence: list[dict[str, Any]], reading_context: dict[str, Any]) -> dict[str, Any]:
     """One source definition per supplied row; actual windows own adjacency.
 
     Lexical retrieval still receives the original rich source internally. Only
-    redundant nested neighbor copies are removed from the review payload.
+    redundant nested neighbor copies are removed; missing source-only neighbors
+    retain their original definitions and local before/after relations.
     """
     targets = copy.deepcopy(target_evidence)
     reading = copy.deepcopy(reading_context)
@@ -4070,6 +4135,7 @@ def translation_review_payload(target_evidence: list[dict[str, Any]], reading_co
     if not isinstance(targets, list) or not targets or not isinstance(expected, list):
         raise ValueError("review payload requires exact target evidence")
     supplied = set()
+    supplied_sources = {}
     target_ids = []
     for index, row in enumerate(targets + reading["context_rows"]):
         if not isinstance(row, dict) or not isinstance(row.get("source"), dict):
@@ -4078,8 +4144,8 @@ def translation_review_payload(target_evidence: list[dict[str, Any]], reading_co
         if not isinstance(line_id, str) or not line_id or line_id in supplied:
             raise ValueError("review payload has missing or duplicate source definition")
         supplied.add(line_id)
+        supplied_sources[line_id] = row["source"]
         if index < len(targets): target_ids.append(line_id)
-        row["source"].pop("performed_context", None)
     if target_ids != expected:
         raise ValueError("review payload target IDs differ from reading obligations")
     windows = reading.get("reading_windows")
@@ -4095,6 +4161,11 @@ def translation_review_payload(target_evidence: list[dict[str, Any]], reading_co
             referenced.add(occurrence["line_id"])
     if referenced != supplied:
         raise ValueError("review payload has unbound source definitions")
+    source_context = source_only_review_context(targets, reading, supplied_sources)
+    if source_context is not None:
+        reading['source_only_context'] = source_context
+    for row in targets + reading['context_rows']:
+        row['source'].pop('performed_context', None)
     return {"target_evidence": targets, "reading_context": reading}
 
 
@@ -4211,6 +4282,8 @@ def independently_review_translations(
             return f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
 
 Review two outputs independently for every target: the indexed primary popup glosses and semantic frame, then the complete English and its links. Popup glosses are displayed content to verify, not trusted evidence. First compare each gloss and frame claim with the source and performed context, including its qualifiers, relationships, agency and imagery; then judge the English. A correct English sentence cannot cure an unsupported popup claim. Report a popup defect as gloss_sense at its exact source indices (and a distinct frame defect as frame_relation), even when the English avoids it. Set passes=false for that defect; describe the separate gloss and English conclusions briefly in reason. Do not invent an English defect merely to justify repairing a gloss.
+
+When reading context includes source_only_context, its definitions and bound before/after windows preserve original neighboring source only. They supply no neighbor English, gloss, or certified interpretation, and are not additional output targets. These local windows do not invent global occurrence numbers; use them to check contextual claims against the original words.
 
 For each line, first derive agency and grammatical attachment from the source and actual neighboring source lines before comparing the supplied semantic frame, indexed glosses, grammar and draft. Flag contradictory attachments even if uncertainty is reported as none, a name gloss that merely repeats its name, and unsupported claims in the frame rather than inheriting them as facts. Check separately: grammatical agency/experiencer; literal image and metaphor; every negation, modality, modifier and emphasis; unsupported additions; and whether two defensible readings differ materially in agency, metaphor, ambiguity, or poetic force.
 
