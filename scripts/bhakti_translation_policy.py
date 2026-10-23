@@ -12,7 +12,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 3
+POLICY_VERSION = 4
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
@@ -104,7 +104,10 @@ def _token(value: str) -> str:
 
 
 def dictionary_candidates(lines: list[dict], languages: list[str] | None = None) -> list[dict]:
-    lexicon = _lexicon_for(lines, languages)
+    return _dictionary_candidates(lines, languages, _lexicon_for(lines, languages))
+
+
+def _dictionary_candidates(lines, languages, lexicon):
     found = {}
     native, roman, _ = lexical_retrieval.lookup_tables(lexicon)
     for line in lines:
@@ -126,13 +129,30 @@ def dictionary_candidates(lines: list[dict], languages: list[str] | None = None)
 
 def guidance(lines: list[dict], languages: list[str] | None = None, *,
              context_lines: list[dict] | None = None, performance_order: list[dict] | None = None) -> str:
-    text = RULES + "\nSUPPLIED DICTIONARY CANDIDATES (unselected):\n" + json.dumps(
-        dictionary_candidates(lines, languages), ensure_ascii=False)
-    ranking = lexical_retrieval.guidance_rankings(lines, languages, _lexicon_for(lines, languages),
+    lexicon = _lexicon_for(lines, languages)
+    entries = _dictionary_candidates(lines, languages, lexicon)
+    tokens = lexical_retrieval.token_candidates(lines, languages, lexicon)
+    ranking = lexical_retrieval.guidance_rankings(lines, languages, lexicon,
         context_lines=context_lines, performance_order=performance_order)
-    if ranking:
-        text += "\nCONTEXTUAL SENSE RANKING (retrieval order only; retain and adjudicate every alternative; unranked statuses are explicit evidence gaps):\n" + json.dumps(ranking, ensure_ascii=False)
-    return text
+    packet = lexical_retrieval.compact_evidence(entries, tokens,
+        ranking if ranking or os.environ.get("BHAKTI_LEXICAL_INDEX") else None)
+    instructions = """
+CONTEXTUAL SENSE RANKING: retrieval order only; retain and adjudicate every alternative.
+The evidence below is normalized, not shortened. An object {"$text":"tN"} means
+use the exact complete string in text_blocks[tN]. All entry fields and senses
+remain supplied in entries. Each token's candidate_entry_ids binds only those
+entries to that exact line/word index, with any reviewed lemma_evidence retained.
+Each ranking's context_ref names its language, target and performed neighbors in
+contexts; its surface is that ranking's roman. Ranked entry_id/sense_id pairs
+refer to the full entry and sense above, including citation, register and source
+context. Scores/statuses only report retrieval; an unranked status is not a
+missing dictionary definition. Never choose the highest score automatically.
+ranking_available=false means no indexed ranking was supplied. Inspect all
+candidates even then. Continue using original entry_id/sense_id in decisions,
+not text or context reference IDs. No language transfer or top-k omission.
+COMPACT LEXICAL EVIDENCE (unselected):
+"""
+    return RULES + instructions + json.dumps(packet, ensure_ascii=False, separators=(",", ":"))
 
 
 def word_tokens(line: dict) -> list[str]:

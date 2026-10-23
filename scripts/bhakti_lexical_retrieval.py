@@ -19,8 +19,13 @@ def language(value):
     return key if key in LANGUAGES.values() else LANGUAGES.get(key,'')
 
 def line_language(line, languages):
-    if 'sourceLanguage' in line: return language(line['sourceLanguage'])
-    codes={language(item) for item in languages or []}
+    explicit = line.get('sourceLanguage')
+    # Blank generated fields carry no language decision; unknown nonblank ones do.
+    if explicit is not None and (not isinstance(explicit, str) or explicit.strip()):
+        return language(explicit)
+    if not isinstance(languages, list):
+        return ''
+    codes={language(item) for item in languages}
     return next(iter(codes)) if len(codes)==1 and '' not in codes else ''
 
 def validate_lexicon(lexicon):
@@ -107,6 +112,100 @@ def token_candidates(lines,languages,lexicon):
             rows.append(row)
         result[line['id']]=rows
     return result
+
+def compact_evidence(entries, token_bindings, rankings):
+    """Losslessly project lexical evidence into a nonduplicated prompt packet.
+
+    None means no ranking index. An indexed ranking list must account for every
+    candidate-bearing token; scores remain ordering evidence, never a selection.
+    """
+    by_id = {entry['entry_id']: entry for entry in validate_lexicon({'entries': entries})}
+    tokens, bound = {}, {}
+    for line_id, words in token_bindings.items():
+        tokens[line_id] = []
+        for word in words:
+            if 'candidate_entry_ids' in word:
+                raise ValueError('reserved candidate reference field in input evidence')
+            index = word['word_index']
+            key = (line_id, index)
+            if type(index) is not int or index < 0 or key in bound:
+                raise ValueError('duplicate or invalid lexical token index')
+            if not isinstance(word.get('roman'), str) or not word['roman']:
+                raise ValueError('lexical token surface missing')
+            ids = []
+            for entry in word['candidates']:
+                entry_id = entry['entry_id']
+                if entry_id not in by_id or by_id[entry_id] != entry or entry_id in ids:
+                    raise ValueError('stale, unknown or duplicate token candidate')
+                ids.append(entry_id)
+            bound[key] = word
+            tokens[line_id].append({**{k: v for k, v in word.items() if k != 'candidates'},
+                                    'candidate_entry_ids': ids})
+
+    contexts, context_ids, projected, seen = {}, {}, [], set()
+    for row in rankings or []:
+        if 'context_ref' in row:
+            raise ValueError('reserved context reference field in input evidence')
+        key = (row['line_id'], row['word_index'])
+        if key not in bound or key in seen or row['roman'] != bound[key]['roman']:
+            raise ValueError('unknown, duplicate or mismatched ranked token')
+        seen.add(key)
+        word = bound[key]
+        context = row['context']
+        languages = {entry['language'] for entry in word['candidates']}
+        if (not isinstance(context, dict) or context.get('surface') != row['roman']
+                or not isinstance(context.get('target'), dict)
+                or context['target'].get('id') != row['line_id']
+                or languages != {context.get('language')}):
+            raise ValueError('ranked context identity differs from token evidence')
+        shared_context = {k: v for k, v in context.items() if k != 'surface'}
+        identity = canonical(shared_context)
+        if identity not in context_ids:
+            context_ids[identity] = f'c{len(contexts) + 1}'
+            contexts[context_ids[identity]] = shared_context
+        expected = {(entry['entry_id'], sense['sense_id']): (entry, sense)
+                    for entry in word['candidates'] for sense in entry['senses']}
+        actual, senses = set(), []
+        for ranked in row['senses']:
+            pair = (ranked['entry_id'], ranked['sense_id'])
+            if pair not in expected or pair in actual:
+                raise ValueError('unknown or duplicate ranked alternative')
+            actual.add(pair)
+            entry, sense = expected[pair]
+            if (any(ranked.get(k) != entry[k] for k in ('language', 'register', 'dictionary'))
+                    or ranked.get('sense') != sense):
+                raise ValueError('ranked alternative disagrees with full source evidence')
+            senses.append({k: v for k, v in ranked.items()
+                           if k not in {'language', 'register', 'dictionary', 'sense'}})
+        if actual != set(expected):
+            raise ValueError('ranked alternatives do not cover all token candidates')
+        projected.append({**{k: v for k, v in row.items() if k not in {'context', 'senses'}},
+                          'context_ref': context_ids[identity], 'senses': senses})
+    if rankings is not None and seen != {key for key, word in bound.items() if word['candidates']}:
+        raise ValueError('rankings do not cover every candidate-bearing token exactly once')
+
+    body = {'entries': entries, 'tokens': tokens, 'contexts': contexts, 'rankings': projected}
+    counts = {}
+    def count(value):
+        if isinstance(value, str) and len(value) >= 128:
+            counts[value] = counts.get(value, 0) + 1
+        elif isinstance(value, list):
+            for child in value: count(child)
+        elif isinstance(value, dict):
+            if '$text' in value:
+                raise ValueError('reserved lexical text-reference key in input evidence')
+            for child in value.values(): count(child)
+    count(body)
+    references = {value: f't{i + 1}' for i, value in enumerate(v for v, n in counts.items() if n > 1)}
+    def project(value):
+        if isinstance(value, str) and value in references:
+            return {'$text': references[value]}
+        if isinstance(value, list): return [project(child) for child in value]
+        if isinstance(value, dict): return {k: project(v) for k, v in value.items()}
+        return value
+    return {'format': 'bhakti-lexical-evidence-v1', 'ranking_available': rankings is not None,
+            'text_blocks': {ref: value for value, ref in references.items()}, **project(body)}
+
 
 def source_view(line):
     return {'id':line.get('id'),'source_text':line.get('source_text',line.get('source','')),'roman':line.get('roman','')}

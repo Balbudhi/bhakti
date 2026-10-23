@@ -207,3 +207,27 @@ changes need not rerun translation. Publication still requires the content,
 audio, trim and in-app-browser checks in [the processing standard](SONG_PROCESSING_STANDARD.md)
 and [design standard](DESIGN_STANDARD.md), followed by review of the exact scoped
 diff. The library runner produces private candidates and has no `--publish` flag.
+
+### Lexical evidence and language resolution
+
+Policy version 4 sends each dictionary entry and repeated source passage once,
+with explicit entry, sense, token and context references. It retains all candidate
+senses and their citations; an embedding score still ranks evidence rather than
+choosing a translation. A saved Rehna request reconstructs exactly while shrinking
+from 468,914 to 163,332 characters (65.17%). This is a measured request-size
+reduction, not a measured provider bill or translation-quality improvement. The
+policy version invalidates older semantic request caches; do not insert this
+change into an already-frozen version-3 paid run.
+
+An empty or absent per-line language falls back only to one unambiguous known
+language in the song's language list. A nonempty unknown language, invalid
+metadata, or multilingual ambiguity stays unresolved. This fixes generated empty
+labels that had suppressed dictionary retrieval, including 105 lines in six
+recent readers. An existing explicit language remains authoritative; script alone
+does not determine language (for example, Sanskrit can be written in Kannada).
+
+The [recent-song editorial review](RECENT_SONG_EDITORIAL_REVIEW.md) is a concrete
+failure set for future pipeline qualification. Passing schema, token indices or a
+model's fidelity flags is not proof that the resulting English is grammatical or
+faithful. Read the joined verse and its returning variants; reconcile the chosen
+sense, source agency, imagery, English phrase and clickable word map together.

@@ -1,0 +1,146 @@
+{
+  "koodarai-vellum-seer-govinda": {
+    "languages": [
+      "Tamil"
+    ],
+    "id": "koodarai-vellum-seer-govinda",
+    "line": {
+      "source": "கூடாரை வெல்லும் சீர் கோவிந்தா",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "கூடாரை",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "வெல்லும்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "சீர்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "கோவிந்தா",
+          "wordIndices": [
+            3
+          ]
+        }
+      ],
+      "roman": "Kūḍārai vellum sīr gōvindā",
+      "english": "{3:O }{2:glorious }{3:Govinda, }{1:who conquer }{0:those who do not submit!}",
+      "words": [
+        {
+          "roman": "Kūḍārai",
+          "gloss": "those who do not submit [enemies / dissenting ones]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vellum",
+          "gloss": "conquering",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "sīr",
+          "gloss": "glorious",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "gōvindā",
+          "gloss": "O Govinda [Kṛṣṇa, protector of cattle and beings]",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "'Kūḍārai' is the accusative plural of the negative participial noun 'kūḍār' (from kūḍu, to unite/join). 'Vellum' is a relative participle (peyareccam) qualifying 'sīr gōvindā'. 'Gōvindā' is the elongated vocative form."
+    }
+  },
+  "jo-achyutananda": {
+    "languages": [
+      "Telugu"
+    ],
+    "id": "refrain-1",
+    "line": {
+      "source": "జో అచ్యుతానంద జో జో ముకుందా",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "జో",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "అచ్యుతానంద",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "జో",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "జో",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "ముకుందా",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "roman": "jō acyutānanda jō jō mukundā",
+      "english": "{0:Lullaby, }{1:O bliss of Acyuta, }{2:lullaby, }{3:lullaby, }{4:O Mukunda!}",
+      "words": [
+        {
+          "roman": "jō",
+          "gloss": "lullaby syllable; sleep",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "acyutānanda",
+          "gloss": "O bliss of Acyuta (the unswerving one)",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "jō",
+          "gloss": "lullaby syllable; sleep",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "jō",
+          "gloss": "lullaby syllable; sleep",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "mukundā",
+          "gloss": "O Mukunda (giver of liberation, Kṛṣṇa)",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Consists of rhythmic lullaby interjections and Sanskrit compound vocatives in -a lengthened to -ā in song metre (acyutānanda, mukundā)."
+    }
+  }
+}
