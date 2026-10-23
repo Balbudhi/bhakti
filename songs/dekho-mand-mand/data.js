@@ -449,7 +449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "candan kā tilak lagāē rē sāī̃ mērō śiraḍī mē̃",
-    "english": "{6:My }{5:Sai }{3:wears }{0:a sandalwood }{1,2:tilak, }{4:oh, }{8:in }{7:Shirdi!}",
+    "english": "{6:My }{5:Sai }{3:wears }{0:a sandalwood }{1,2:forehead mark, }{4:oh, }{8:in }{7:Shirdi!}",
     "words": [
       {
         "roman": "candan",
@@ -1051,10 +1051,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 148.95,
-    "end": 167.0
+    "end": 167
   },
   {
-    "start": 167.0,
+    "start": 167,
     "end": 184.55
   },
   {

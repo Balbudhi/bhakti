@@ -164,7 +164,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rājādhirāja yogirāja parabrahma sāīnātha mahārāja",
-    "english": "{0:King of kings, }{1:King of yogis, }{2:Supreme Brahman, }{3:Lord Sai, }{4:the Great King!}",
+    "english": "{0:King of kings, }{1:King of yogis, }{2:Supreme Reality, }{3:Lord Sai, }{4:the Great King!}",
     "words": [
       {
         "roman": "rājādhirāja",

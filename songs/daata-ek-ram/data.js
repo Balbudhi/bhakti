@@ -119,7 +119,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dātā ēka rāma bhikhārī sārī duniyā",
-    "english": "{1:The one }{0:giver }is {2:Rama, }{4:the whole }{5:world }{3:is beggars.}",
+    "english": "{1:The one }{0:giver }is {2:Rama, }{4:the whole }{5:world }{3:is a beggar.}",
     "words": [
       {
         "roman": "Dātā",
@@ -202,7 +202,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāma ēka dēvatā pujārī sārī duniyā",
-    "english": "{0:Rama }{1:is the one }{2:deity, }{4:the whole }{5:world }{3:is worshipers.}",
+    "english": "{0:Rama }{1:is the one }{2:deity, }{4:the whole }{5:world }{3:is a worshiper.}",
     "words": [
       {
         "roman": "Rāma",
@@ -267,7 +267,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pujārī sārī duniyā",
-    "english": "{1:The whole }{2:world }{0:is worshipers.}",
+    "english": "{1:The whole }{2:world }{0:is a worshiper.}",
     "words": [
       {
         "roman": "Pujārī",

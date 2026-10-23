@@ -1200,7 +1200,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo saṁsār merā bacā ke gae",
-    "english": "{0:who}{3: saved}{2: my}{1: saṃsāra}{4,5: and departed}",
+    "english": "{0:who}{3: saved}{2: my}{1: world}{4,5: and departed}",
     "words": [
       {
         "roman": "jo",
@@ -1210,9 +1210,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsār",
-        "gloss": "cycle of conditioned birth and death; worldly life / world",
+        "gloss": "world; worldly life and affairs",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "merā",
@@ -1509,7 +1509,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "itnā hai karzā mujh par mere sāīṁ kā",
-    "english": "{0:So great}{1,2: is the debt}{5,6,7: of my Sai}{3,4: upon me,}",
+    "english": "{0:So great}{1,2: is the debt}{3,4: upon me}{5,6,7: to my Sai,}",
     "words": [
       {
         "roman": "itnā",

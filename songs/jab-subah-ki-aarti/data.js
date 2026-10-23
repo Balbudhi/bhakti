@@ -251,7 +251,7 @@ window.SONG_LINES = {
     "source": "मैं साईं के गुण गाता हूँ",
     "sourceLanguage": "hi",
     "roman": "maiṁ sāīṁ kē guṇ gātā hūṁ",
-    "english": "{0:I }{4,5:sing }the {3:guṇas }{1,2:of Sai.}",
+    "english": "{0:I }{4,5:sing }{3:the praises }{1,2:of Sai.}",
     "words": [
       {
         "roman": "maiṁ",
@@ -273,9 +273,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇ",
-        "gloss": "divine qualities / virtues (guṇa)",
+        "gloss": "virtues; good qualities, here praised in song",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gātā",
@@ -334,7 +334,7 @@ window.SONG_LINES = {
     "source": "जब सुबह की आरती ख़त्म हुई और बाबा ने स्नान किया",
     "sourceLanguage": "hi",
     "roman": "jab subah kī āratī k͟hatam huī aur bābā nē snān kiyā",
-    "english": "{0:When }{1,2:the morning }{3:āratī }{4,5:ended }{6:and }{7,8:Baba }{9,10:took his bath,}",
+    "english": "{0:When }{1,2:the morning }{3:worship with lights }{4,5:ended }{6:and }{7,8:Baba }{9,10:took his bath,}",
     "words": [
       {
         "roman": "jab",
@@ -477,7 +477,7 @@ window.SONG_LINES = {
     "source": "उसे देख के मेरे पाप धुले",
     "sourceLanguage": "hi",
     "roman": "usē dēkh kē mērē pāp dhulē",
-    "english": "{0,1,2:Seeing that, }{3:my }{4:sins }{5:were washed away,}",
+    "english": "{0,1,2:When I saw that, }{3:my }{4:sins }{5:were washed away,}",
     "words": [
       {
         "roman": "usē",

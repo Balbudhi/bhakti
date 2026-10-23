@@ -691,7 +691,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "magar tū to baiṭhā hai samādhi mẽ jāke",
-    "english": "{0:But }{1,2:you, indeed, }{3,4:are seated }{7:having entered }{6:into }{5:samādhi.}",
+    "english": "{0:But }{1,2:you, indeed, }{3,4:are seated }{7:having entered }{6:into }{5:the tomb.}",
     "words": [
       {
         "roman": "magar",
@@ -725,9 +725,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "samādhi",
-        "gloss": "meditative absorption",
+        "gloss": "tomb; here Sāī Bābā’s burial shrine",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mẽ",
@@ -742,7 +742,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "baiṭhā hai is a stative present perfect construction formed from the participle of baiṭhnā; samādhi refers both to the inward yogic absorption and the Mahasamadhi shrine in Shirdi."
+    "grammarNote": "Baiṭhā hai describes a seated state; jāke means having gone or entered. Here samādhi is the tomb addressed in the singer’s visit to Shirdi; the line imagines Baba seated within it."
   },
   "verse2-1": {
     "source": "कोई कहता है पूजा करनी होगी",
@@ -1972,7 +1972,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gale se lagā le samādhi se uṭh ke",
-    "english": "{0,1,2,3:Embrace me, }{6,7:having risen }{5:from }{4:samādhi!}",
+    "english": "{0,1,2,3:Embrace me, }{6,7:having risen }{5:from }{4:the tomb!}",
     "words": [
       {
         "roman": "gale",
@@ -2000,9 +2000,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "samādhi",
-        "gloss": "meditative absorption",
+        "gloss": "tomb; here Sāī Bābā’s burial shrine",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "se",
@@ -2023,7 +2023,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "gale se lagā le is a compound imperative (lagā + le); samādhi se uṭh ke is an ablative participial phrase modifying the action."
+    "grammarNote": "Uṭh ke is a conjunctive participle: having risen. Samādhi se identifies the tomb from which the singer asks Baba to rise. Galē se lagā lē is an imperative asking to be embraced."
   },
   "outro-fade": {
     "source": "कहाँ",

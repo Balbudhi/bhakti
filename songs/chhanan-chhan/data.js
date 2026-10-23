@@ -1240,7 +1240,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "moha māyā āśā triṣṇā taja choṛa diyā saṁsāra",
-    "english": "{4:Renouncing}{0: delusion,}{1: māyā,}{2: expectation,}{3: and tṛṣṇā,}{5,6: I completely abandoned}{7: saṃsāra,}",
+    "english": "{4:Renouncing}{0: delusion,}{1: māyā,}{2: expectation,}{3: and craving,}{5,6: I completely abandoned}{7: the world,}",
     "words": [
       {
         "roman": "moha",
@@ -1264,7 +1264,7 @@ window.SONG_LINES = {
         "roman": "triṣṇā",
         "gloss": "thirst; craving",
         "concept_key": "trsna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "taja",
@@ -1286,9 +1286,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "the world; worldly life",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "taja is an absolutival participle (tyāga-kara); choṛa diyā is a transitive compound verb in the masculine singular perfective agreeing with saṁsāra."
@@ -1317,7 +1317,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "choṛa diyā saṁsāra",
-    "english": "{0,1:I completely abandoned}{2: saṃsāra.}",
+    "english": "{0,1:I completely abandoned}{2: the world.}",
     "words": [
       {
         "roman": "choṛa",
@@ -1333,9 +1333,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "the world; worldly life",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Transitive compound verb (choṛanā + denā) in perfective aspect; agrees in masculine singular with saṁsāra."
@@ -1595,7 +1595,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aba to lāgī mere mana meṁ",
-    "english": "{0:Now}{1: indeed}{2: it has taken hold}{5: in}{3: my}{4: manas,}",
+    "english": "{0:Now}{1: indeed}{2: it has taken hold}{5: in}{3: my}{4: mind,}",
     "words": [
       {
         "roman": "aba",
@@ -1623,9 +1623,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind; heart as the seat of feeling",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "meṁ",
@@ -1678,7 +1678,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aba to lāgī mere mana meṁ",
-    "english": "{0:Now}{1: indeed}{2: it has taken hold}{5: in}{3: my}{4: manas,}",
+    "english": "{0:Now}{1: indeed}{2: it has taken hold}{5: in}{3: my}{4: mind,}",
     "words": [
       {
         "roman": "aba",
@@ -1706,9 +1706,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind; heart as the seat of feeling",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "meṁ",
@@ -2140,7 +2140,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nācūm̐ gāūm̐ mana bahalāūm̐",
-    "english": "{0:I dance,}{1: I sing,}{3: I gladden} my{2: manas,}",
+    "english": "{0:I dance,}{1: I sing,}{3: I gladden} my{2: mind,}",
     "words": [
       {
         "roman": "nācūm̐",
@@ -2156,9 +2156,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind; heart as the seat of feeling",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bahalāūm̐",
@@ -2199,7 +2199,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nācūm̐ gāūm̐ mana bahalāūm̐",
-    "english": "{0:I dance,}{1: I sing,}{3: I gladden} my{2: manas,}",
+    "english": "{0:I dance,}{1: I sing,}{3: I gladden} my{2: mind,}",
     "words": [
       {
         "roman": "nācūm̐",
@@ -2215,9 +2215,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind; heart as the seat of feeling",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bahalāūm̐",

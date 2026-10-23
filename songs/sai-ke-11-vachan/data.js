@@ -223,7 +223,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mērī samādhi kī caṛhē jō sīṛhī duḥkh har lū̃gā usakē sabhī",
-    "english": "{4:Whoever}{3: climbs}{5: the steps}{0,2: of my}{1: samādhi}, {7,8:I will take away}{10: all}{9: their}{6: sorrows.}",
+    "english": "{4:Whoever}{3: climbs}{5: the steps}{0,2: of my}{1: tomb}, {7,8:I will take away}{10: all}{9: their}{6: sorrows.}",
     "words": [
       {
         "roman": "mērī",
@@ -233,9 +233,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "samādhi",
-        "gloss": "meditative absorption; tomb-shrine",
+        "gloss": "tomb; here Sāī Bābā’s burial shrine",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kī",
@@ -533,7 +533,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mērī samādhi pūrēgī manōtī dharē dṛṛh buddhi mērē prati",
-    "english": "{0:My}{1: samādhi}{2: will fulfill}{3: the prayer}{4:, if one holds}{5: firm}{6: buddhi}{7,8: towards me.}",
+    "english": "{0:My}{1: tomb}{2: will fulfill}{3: the votive prayer}{4:, if one keeps}{5,6: one’s mind steadfast}{7,8: toward me.}",
     "words": [
       {
         "roman": "mērī",
@@ -543,9 +543,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "samādhi",
-        "gloss": "meditative absorption; tomb-shrine",
+        "gloss": "tomb; here Sāī Bābā’s burial shrine",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "pūrēgī",
@@ -573,9 +573,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "buddhi",
-        "gloss": "intellect; faculty of discernment",
+        "gloss": "mind; understanding, here kept steadfast toward the speaker",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mērē",
@@ -590,7 +590,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Paratactic conditional: [yadi kōī] mērē prati dṛṛh buddhi dharē, [tō] mērī samādhi manōtī pūrēgī. pūrēgī is 3rd person feminine singular future agreeing with manōtī."
+    "grammarNote": "The conditional clause is implicit: if one keeps one’s mind steadfast toward me, my tomb will fulfill the votive prayer. Pūregī is feminine singular future; samādhi is the subject and manotī the object."
   },
   "vachan-5": {
     "source": "नित्य मैं जीवित हूँ यह सत्य जाने नित्य आजमाए अनुभव पाए",

@@ -1271,7 +1271,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jis ghar thāro vāso, tehi meṁ guṇ ātā",
-    "english": "{0:In whichever }{1:house }{2:is Your }{3:dwelling, }{5:into }{4:that }{6:guṇa }{7:enters,}",
+    "english": "{0:In whichever }{1:house }{2:is Your }{3:dwelling, }{5:into }{4:that }{6:virtue }{7:enters,}",
     "words": [
       {
         "roman": "Jis",
@@ -1311,9 +1311,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇ",
-        "gloss": "constituent quality of nature; virtue",
+        "gloss": "virtue; good quality",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ātā",
@@ -1360,7 +1360,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā tehi meṁ guṇ ātā",
-    "english": "{0:Mother, }{2:into }{1:that }{3:guṇa }{4:enters,}",
+    "english": "{0:Mother, }{2:into }{1:that }{3:virtue }{4:enters,}",
     "words": [
       {
         "roman": "Maiyā",
@@ -1382,9 +1382,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇ",
-        "gloss": "constituent quality of nature; virtue",
+        "gloss": "virtue; good quality",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ātā",
@@ -1502,13 +1502,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man nahīṁ bharapātā",
-    "english": "{0:the manas }{1:cannot }{2:be sated.}",
+    "english": "{0:the mind }{1:cannot }{2:be sated.}",
     "words": [
       {
         "roman": "Man",
-        "gloss": "sensory and deliberative mind; inner heart/mind",
+        "gloss": "mind; heart as the seat of feeling",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "nahīṁ",
@@ -1875,7 +1875,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śubh guṇ sundar muktā, Kṣīranidhi jātā",
-    "english": "{2:A beautiful }{3:pearl }{0:of auspicious }{1:guṇa, }{5:born of }{4:the Ocean of Milk,}",
+    "english": "{2:A beautiful }{3:pearl }{0:of auspicious }{1:virtues, }{5:born of }{4:the Ocean of Milk,}",
     "words": [
       {
         "roman": "Śubh",
@@ -1885,9 +1885,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇ",
-        "gloss": "constituent quality of nature; virtue",
+        "gloss": "virtue; good quality",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sundar",

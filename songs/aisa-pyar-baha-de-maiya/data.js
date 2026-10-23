@@ -551,7 +551,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Jag meṅ ākar jag ko maiyā, ab tak na pahchān sakā",
-    "english": "{2:Having come }{0,1:into the world, }{5:Mother, }{9:I have }{7:not }{6:yet }{8:recognized }{3,4:the world.}",
+    "english": "{2:Having come }{0,1:into the world, }{5:Mother, }{9:I have }{7:not }{6:yet }{9:been able to }{8:recognize }{3,4:the world.}",
     "words": [
       {
         "roman": "Jag",
@@ -667,7 +667,7 @@ window.SONG_LINES = {
   },
   "v1a_tail": {
     "roman": "Ab tak na pahchān sakā",
-    "english": "{3:I have }{1:not }{0:yet }{2:recognized }it.",
+    "english": "{3:I have }{1:not }{0:yet }{3:been able to }{2:recognize }it.",
     "words": [
       {
         "roman": "Ab tak",
@@ -1823,7 +1823,7 @@ window.SONG_LINES = {
   },
   "v3d": {
     "roman": "Sharaṇ lagā lo mujhko maiyā, tujh par balī balī jāūṅ main",
-    "english": "{1:Take }{2:me }{0:into Your refuge, }{3:Mother; }{8:I }{6,7:offer myself wholly }{4,5:to You.}",
+    "english": "{1:Take }{2:me }{0:into Your refuge, }{3:Mother; }{8:I }{6,7:offer myself again and again }{4,5:to You.}",
     "words": [
       {
         "roman": "Sharaṇ",

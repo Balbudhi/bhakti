@@ -1046,7 +1046,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāī̃ se prīt karke lok vo sudhār le",
-    "english": "{2,3:By forming love }{0,1:with Sai, }{6,7:redeem }{4,5:that world.}",
+    "english": "{2,3:By loving }{0,1:Sai, }{6,7:redeem }{4,5:that world.}",
     "words": [
       {
         "roman": "sāī̃",

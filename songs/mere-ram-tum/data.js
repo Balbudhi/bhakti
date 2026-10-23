@@ -947,7 +947,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mere Rām tum Rahmān tum",
-    "english": "{2:You are }{0:my }{1:Rama, }{4:you are }{3:Rahman.}",
+    "english": "{2:You are }{0:my }{1:Rama, }{4:you are }{3:the Merciful.}",
     "words": [
       {
         "roman": "Mere",
@@ -969,7 +969,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rahmān",
-        "gloss": "the Merciful (Rahman)",
+        "gloss": "the Merciful; Raḥmān, a divine epithet in Arabic",
         "concept_key": "",
         "preserve_in_english": false
       },

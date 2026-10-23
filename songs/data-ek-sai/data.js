@@ -1430,7 +1430,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paga-paga para sāīṁ mujhako sambhāle",
-    "english": "{0:At every }{1:step, }{2:Sai }{4:steadies }{3:me}",
+    "english": "{1:At }{0:every step, }{2:Sai }{4:steadies }{3:me}",
     "words": [
       {
         "roman": "paga-paga",

@@ -1135,7 +1135,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Param brahm Śrī Sāī̃ virāje",
-    "english": "{0,1:The Supreme Brahman, }{2,3:Sri Sai, }{4:presides in majesty}",
+    "english": "{0,1:The Supreme Reality, }{2,3:Sri Sai, }{4:presides in majesty}",
     "words": [
       {
         "roman": "Param",
@@ -1230,7 +1230,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O... param brahm Śrī Sāī̃ virāje sabko inhone pālā",
-    "english": "{0:Oh... }{1,2:the Supreme Brahman, }{3,4:Sri Sai, }{5:presides in majesty; }{7:He }{8:has nurtured }{6:everyone}",
+    "english": "{0:Oh... }{1,2:the Supreme Reality, }{3,4:Sri Sai, }{5:presides in majesty; }{7:He }{8:has nurtured }{6:everyone}",
     "words": [
       {
         "roman": "O...",

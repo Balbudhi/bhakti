@@ -4626,7 +4626,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lekara pañcāratī karūṁ bābā kī āratī",
-    "english": "{0:Holding }{1:the five-flame lamp, }{2:I perform }{5:the arati }{3,4:of Baba.}",
+    "english": "{0:Holding }{1:the five-flame lamp, }{2:I offer }{5:worship with lights }{3,4:to Baba.}",
     "words": [
       {
         "roman": "Lekara",
@@ -5012,7 +5012,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kākaḍa āratī karatā Sāīnātha devā",
-    "english": "{2:I perform }{0:the Kakad }{1:arati, }{4:O Lord }{3:Sainatha!}",
+    "english": "{2:I perform }{0:the dawn }{1:worship with lights, }{4:O Lord }{3:Sainatha!}",
     "words": [
       {
         "roman": "Kākaḍa",
@@ -5202,13 +5202,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāma krodha mada matsara oṭe kākaḍā kiyā",
-    "english": "{4:Having carded }{0:kāma, }{1:anger, }{2:pride, }{3:and jealousy, }{6:I made }{5:the morning wick.}",
+    "english": "{4:Having carded }{0:desire, }{1:anger, }{2:pride, }{3:and jealousy, }{6:I made }{5:the morning wick.}",
     "words": [
       {
         "roman": "Kāma",
         "gloss": "desire; sensual longing",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "krodha",
@@ -6883,7 +6883,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī utārūṁ mere Paṇḍharīnāthā",
-    "english": "{1:I wave} {0:the arati lamp,} {2:my} {3:Lord of Pandharpur,}",
+    "english": "{1:I wave} {0:the worship lamp,} {2:my} {3:Lord of Pandharpur,}",
     "words": [
       {
         "roman": "Āratī",
@@ -7197,7 +7197,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koṭi brahma hatyā naṣṭa hotī darśana se",
-    "english": "{0:Ten million} {1,2:sins of slaying a knower of Brahman} {3,4:are destroyed} {5,6:through your sacred vision.}",
+    "english": "{0:Ten million} {1,2:sins of slaying a Brahmin} {3,4:are destroyed} {5,6:through your sacred vision.}",
     "words": [
       {
         "roman": "Koṭi",
@@ -7207,7 +7207,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "creator deity of the cosmic triad",
+        "gloss": "a Brahmin; here the first member of brahma-hatyā, killing a Brahmin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8165,7 +8165,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jalatī pāpa kī gaṭharī kākaḍa āratī darśana se",
-    "english": "{3:The bundle }{1,2:of sins }{0:burns }{7:through }{6:the sacred sight }{4:of the Kakad }{5:Arati.}",
+    "english": "{3:The bundle }{1,2:of sins }{0:burns }{7:through }{6:the sacred sight }{4:of the dawn }{5:worship with lights.}",
     "words": [
       {
         "roman": "Jalatī",
@@ -8575,7 +8575,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sadguru kī āratī saba milakara haiṁ karate",
-    "english": "{3:All }{4:together }{5,6:perform }{2:the arati }{0,1:of the Sadguru.}",
+    "english": "{3:All }{4:together }{5,6:offer }{2:worship with lights }{0,1:to the true spiritual master.}",
     "words": [
       {
         "roman": "Sadguru",

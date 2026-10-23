@@ -261,7 +261,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vighnavināśaka śubha guṇa kānana",
-    "english": "{0:Destroyer of obstacles, }{3:a forest }{1:of auspicious }{2:guṇas,}",
+    "english": "{0:Destroyer of obstacles, }{3:a forest }{1:of auspicious }{2:virtues,}",
     "words": [
       {
         "roman": "Vighnavināśaka",
@@ -277,9 +277,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇa",
-        "gloss": "constituent quality of nature",
+        "gloss": "virtue; good quality",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kānana",

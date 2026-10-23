@@ -416,7 +416,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Raṅg sugandh bhar ke tū ham sabko phūl banā denā",
-    "english": "{0,2,3:Filling with color }{1:and fragrance, }{4,8,9:make }{5,6:all of us }{7:into flowers}",
+    "english": "{2,3:Filling }{5,6:us }{0:with color }{1:and fragrance, }{4,8,9:make }{5,6:all of us }{7:into flowers}",
     "words": [
       {
         "roman": "Raṅg",

@@ -624,7 +624,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sab dharmõ ke sār ho tum sāī̃,",
-    "english": "{5:You }{4:are }{3:the essence }{0,2:of all }{1:dharmas, }{6:O Sai, }",
+    "english": "{5:You }{4:are }{3:the essence }{0,2:of all }{1:religions, }{6:O Sai, }",
     "words": [
       {
         "roman": "sab",
@@ -634,9 +634,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmõ",
-        "gloss": "right order, duty, or sustaining principle; religions",
+        "gloss": "religions; religious traditions",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ke",

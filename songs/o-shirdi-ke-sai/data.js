@@ -224,7 +224,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kisko kyā de",
-    "english": "{1:What }{2:he gives }{0:to whom, }",
+    "english": "{1:What }{2:you give }{0:to whom, }",
     "words": [
       {
         "roman": "Kisko",
@@ -240,7 +240,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "de",
-        "gloss": "[he/you] gives (third/second person singular subjunctive/present verb)",
+        "gloss": "give; may give (you, in this address)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -313,7 +313,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kisko kyā de kisko kyā de vāh re terī khudāī",
-    "english": "{1:What }{2:he gives }{0:to whom, }{4:what }{5:he gives }{3:to whom—}{7:O, }{6:how wondrous }{8:is your }{9:divine governance!}",
+    "english": "{1:What }{2:you give }{0:to whom, }{4:what }{5:you give }{3:to whom—}{7:O, }{6:how wondrous }{8:is your }{9:divine governance!}",
     "words": [
       {
         "roman": "Kisko",
@@ -329,7 +329,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "de",
-        "gloss": "[he/you] gives (third/second person singular subjunctive/present verb)",
+        "gloss": "give; may give (you, in this address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -347,7 +347,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "de",
-        "gloss": "[he/you] gives (third/second person singular subjunctive/present verb)",
+        "gloss": "give; may give (you, in this address)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1008,7 +1008,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dhanvānoṁ ko detā dhan par kaisī lat ye lagāī",
-    "english": "{2:He gives }{3:wealth }{0,1:to the rich, }{4:but }{5:what an }{6:addiction }{7:this is }{8:you have instilled!}",
+    "english": "{2:You give }{3:wealth }{0,1:to the rich, }{4:but }{5:what kind of }{6:addiction }{7:is this }{8:that you have instilled?}",
     "words": [
       {
         "roman": "Dhanvānoṁ",
@@ -1024,7 +1024,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "detā",
-        "gloss": "gives (masculine singular habitual/present verb)",
+        "gloss": "give (habitual; addressed to you)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1097,7 +1097,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kaisī lat ye lagāī",
-    "english": "{0:What an }{1:addiction }{2:this is }{3:you have instilled, }",
+    "english": "{0:What kind of }{1:addiction }{2:is this }{3:that you have instilled?}",
     "words": [
       {
         "roman": "Kaisī",
@@ -1762,7 +1762,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Is dhan daulat ne hī kar dī iṅsānoṁ meṁ judāī",
-    "english": "{0:This }{4:very }{1:wealth }{2,3:and riches }{5,6:has caused }{9:division }{7,8:among human beings!}",
+    "english": "{0:This }{4:very }{1:wealth }{2,3:and riches }{5,6:have caused }{9:division }{7,8:among human beings!}",
     "words": [
       {
         "roman": "Is",

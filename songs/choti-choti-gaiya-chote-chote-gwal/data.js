@@ -1149,11 +1149,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāsa rachāve mero madana gopāl",
-    "english": "{2:My }{3,4:Madan Gopal }{1:enacts the }{0:Rasa dance}",
+    "english": "{2:My }{3,4:Madan Gopal }{1:enacts the }{0:dance with the cowherd maidens}",
     "words": [
       {
         "roman": "rāsa",
-        "gloss": "essence, aesthetic savor, or devotional mood",
+        "gloss": "the dance of Kṛṣṇa and the cowherd maidens; rāsa",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -66,7 +66,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āō āō padhārō mērē guruvar",
-    "english": "{0:Come, }{1:come, }{2:grace with your presence, }{3:my }{4:venerable Guru}",
+    "english": "{0:Come, }{1:come, }{2:grace me with your presence, }{3:my }{4:venerable Guru}",
     "words": [
       {
         "roman": "āō",
@@ -1915,10 +1915,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 434.2,
-    "end": 439.0
+    "end": 439
   },
   {
-    "start": 439.0,
+    "start": 439,
     "end": 443.9
   },
   {

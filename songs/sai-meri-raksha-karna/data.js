@@ -1885,7 +1885,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lauṭāyā na hogā",
-    "english": "{1,2:Would not have been }{0:turned back.}",
+    "english": "{1,2:They would not have been }{0:turned back.}",
     "words": [
       {
         "roman": "Lauṭāyā",
@@ -1938,7 +1938,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāīṁ lauṭāyā na hogā",
-    "english": "{0:Sai, }{2,3:would not have been }{1:turned back.}",
+    "english": "{0:Sai, }{2,3:they would not have been }{1:turned back.}",
     "words": [
       {
         "roman": "Sāīṁ",

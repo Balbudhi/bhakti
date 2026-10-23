@@ -336,7 +336,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaisē karama karōgē tuma vaisā hī phala pāēṁ",
-    "english": "{0:Just as }{1:the deeds }{3:you }{2:will do, }{4,5:precisely such }{6:fruit }{7:one receives.}",
+    "english": "{0:Whatever }{1:deeds }{3:you }{2:do, }{7:you will receive }{4,5:precisely such }{6:fruit.}",
     "words": [
       {
         "roman": "jaisē",
@@ -1230,7 +1230,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mōha māyā kē bandhana khōlō hē sāīṁ apanī śaraṇa mēṁ lē lō",
-    "english": "{4:Untie }{3:the bonds }{0,2:of delusion }{1:and māyā; }{5:O }{6:Sai, }{10,11:take }{7,9:into your own }{8:refuge.}",
+    "english": "{4:Untie }{3:the bonds }{0,2:of delusion }{1:and māyā; }{5:O }{6:Sai, }{10,11:take me }{7,9:into your own }{8:refuge.}",
     "words": [
       {
         "roman": "mōha",
@@ -1433,7 +1433,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hē sāīṁ apanī śaraṇa mēṁ lē lō isa pāpī kō tū apanā lē sāīṁ isē paga paga tū hī saṁbhālē",
-    "english": "{0:O }{1:Sai, }{5,6:take }{2,4:into your own }{3:refuge; }{11,12:claim }{7:this }{8,9:sinner }{10:as your own! }{13:O Sai, }{15,16:at every step }{17:may you }{18:alone }{19:sustain }{14:it.}",
+    "english": "{0:O }{1:Sai, }{5,6:take me }{2,4:into your own }{3:refuge; }{10,11,12:claim }{7:this }{8,9:sinner }{11:as your own! }{13:O Sai, }{15,16:at every step }{17:may you }{18:alone }{19:sustain }{14:me.}",
     "words": [
       {
         "roman": "hē",
@@ -1521,7 +1521,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "isē",
-        "gloss": "this [it]",
+        "gloss": "this one (the speaker, 'this sinner')",
         "concept_key": "",
         "preserve_in_english": false
       },
