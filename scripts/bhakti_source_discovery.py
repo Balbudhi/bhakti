@@ -59,7 +59,8 @@ def source_lookup_plan(lines, proposals, languages):
         code = lexical.line_language(line, languages)
         target_id = 'discovery:' + line_id + ':' + ','.join(map(str, indices))
         gap_base = {'target_id': target_id, 'line_id': line_id, 'word_indices': list(indices)}
-        if code != 'hi':
+        dictionary_id = next((key for key, spec in corpus.DICTIONARIES.items() if spec['language'] == code), None)
+        if dictionary_id is None:
             gaps.append({**gap_base, 'kind': 'source_adapter_unavailable', 'language': code})
             continue
         native = None
@@ -76,7 +77,7 @@ def source_lookup_plan(lines, proposals, languages):
         queries += [{'text': text, 'origin': 'model_hypothesis'} for text in suggestions if text != native]
         if queries:
             targets.append({'id': target_id, 'line_id': line_id, 'word_indices': list(indices),
-                'surfaces': list(proposal['surfaces']), 'source_language': code, 'queries': queries})
+                'surfaces': list(proposal['surfaces']), 'source_language': code, 'dictionary_id': dictionary_id, 'queries': queries})
     return {'version': VERSION, 'targets': targets, 'gaps': gaps}
 
 
@@ -119,59 +120,63 @@ def acquire_source_candidates(plan, cache_dir, *, opener=None, max_new_requests=
                     'source discovery timeout must be positive and bounded')
     support.require(plan.get('version') == VERSION, 'source discovery plan version differs')
     _budget_state(run_budget)
-    root = Path(cache_dir)/'platts-hi'
-    root.mkdir(parents=True, exist_ok=True)
     acquired, query_order, budgeted = {}, [], 0
+    roots = {}
     for target in plan['targets']:
-        support.require(target['source_language'] == 'hi', 'unsupported source dictionary language')
+        dictionary_id = target.get('dictionary_id', 'platts1884')
+        spec = corpus.dictionary_spec(dictionary_id)
+        support.require(target['source_language'] == spec['language'], 'source dictionary language differs')
+        roots[dictionary_id] = Path(cache_dir)/spec['cache_name']
         support.require(len(target['queries']) <= MAX_SUGGESTIONS+1, 'source lookup target query limit')
         for query in target['queries']:
             support.require(query['origin'] in {'native_surface', 'model_hypothesis'} and
                             isinstance(query['text'], str) and query['text'] and len(query['text']) <= 128,
                             'invalid source lookup query')
-            if query['text'] not in query_order:
-                query_order.append(query['text'])
-    # Acquisition owns one shared cache; preserve read/fetch/write transaction
-    # while independent songs remain free to do other pipeline work.
-    with file_lock(root/'acquisition.lock'):
-        manifest = root/'acquisition.json'
-        existing_rows = support.read_json(manifest) if manifest.exists() else []
-        existing = {row['query']: row for row in existing_rows}
-        for query in query_order:
+            key = (dictionary_id, query['text'])
+            if key not in query_order:
+                query_order.append(key)
+    # Each dictionary owns its cache transaction; every fresh request still uses
+    # one run ledger and one per-invocation allowance across all dictionaries.
+    for dictionary_id, query in query_order:
+        root = roots[dictionary_id]
+        root.mkdir(parents=True, exist_ok=True)
+        key = (dictionary_id, query)
+        with file_lock(root/'acquisition.lock'):
+            manifest = root/'acquisition.json'
+            existing_rows = support.read_json(manifest) if manifest.exists() else []
+            existing = {row['query']: row for row in existing_rows}
             prior = existing.get(query)
             new_request = prior is None or (retry_errors and 'error' in prior)
             if new_request and budgeted >= max_new_requests:
-                acquired[query] = {'status': 'budget_gap'}
+                acquired[key] = {'status': 'budget_gap'}
                 continue
             request_timeout = timeout
             if new_request:
                 reservation = _budget_state(run_budget, reserve=True)
                 if 'status' in reservation:
-                    acquired[query] = reservation
+                    acquired[key] = reservation
                     continue
                 request_timeout = min(timeout, reservation['remaining_seconds'])
                 budgeted += 1
                 if prior is not None:
-                    # Retry is explicit and bounded; a transport error was never
-                    # a lexical miss. Other successful cache evidence stays intact.
+                    # Explicit bounded retry; a transport error was never a miss.
                     existing_rows = [row for row in existing_rows if row['query'] != query]
                     _write_records(manifest, existing_rows)
-            record = corpus.acquire_queries(root, [query], opener=opener, timeout=request_timeout)[0]
-            existing[query] = record
-            existing_rows = support.read_json(manifest)
+            record = corpus.acquire_queries(root, [query], dictionary_id=dictionary_id,
+                opener=opener, timeout=request_timeout)[0]
             if 'error' in record:
-                acquired[query] = {'status': 'transport_error', 'detail': record['error']}
+                acquired[key] = {'status': 'transport_error', 'detail': record['error']}
                 continue
             raw = corpus.load_cached_witness(root, record)
             try:
-                entries = corpus.parse_platts_html(raw.decode('utf-8'), query=query,
+                entries = corpus.parse_dictionary_html(dictionary_id, raw.decode('utf-8'), query=query,
                     url=record['url'], witness_sha256=record['sha256'])
             except (ValueError, UnicodeError) as exc:
-                acquired[query] = {'status': 'parse_error', 'detail': str(exc),
-                                   'witness_sha256': record['sha256']}
+                acquired[key] = {'status': 'parse_error', 'detail': str(exc),
+                                 'witness_sha256': record['sha256']}
                 continue
-            acquired[query] = {'status': 'candidate_entries' if entries else 'witnessed_miss',
-                               'entries': entries, 'witness_sha256': record['sha256']}
+            acquired[key] = {'status': 'candidate_entries' if entries else 'witnessed_miss',
+                             'entries': entries, 'witness_sha256': record['sha256']}
     targets, all_entries, gaps = [], [], copy.deepcopy(plan['gaps'])
     for original in plan['targets']:
         target = copy.deepcopy(original)
@@ -179,7 +184,7 @@ def acquire_source_candidates(plan, cache_dir, *, opener=None, max_new_requests=
         target['candidate_entry_ids'] = []
         target['observations'] = []
         for query in target['queries']:
-            outcome = acquired[query['text']]
+            outcome = acquired[(target.get('dictionary_id', 'platts1884'), query['text'])]
             observation = {**query, **{key: value for key, value in outcome.items() if key != 'entries'}}
             target['observations'].append(observation)
             if outcome['status'] in {'transport_error', 'parse_error', 'budget_gap', 'deadline_gap'}:
@@ -192,7 +197,7 @@ def acquire_source_candidates(plan, cache_dir, *, opener=None, max_new_requests=
                     target['candidate_entry_ids'].append(entry['entry_id'])
         targets.append(target)
     entries = corpus.merge_entries(all_entries)
-    witnessed = producer.resolve_source_witnesses(entries, [root])
+    witnessed = producer.resolve_source_witnesses(entries, list(roots.values()))
     gaps.extend(witnessed['gaps'])
     return {'version': VERSION, 'targets': targets, 'entries': entries,
             'evidence': witnessed['evidence'], 'entry_evidence_ids': witnessed['entry_evidence_ids'], 'gaps': gaps}

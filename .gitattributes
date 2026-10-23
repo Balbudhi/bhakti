@@ -2,3 +2,4 @@
 scripts/fixtures/dictionary_corpus/witnesses/*.html -whitespace
 scripts/fixtures/lexical_producer/witnesses/*.html -whitespace
 scripts/fixtures/source_discovery/witnesses/*.html -whitespace
+scripts/fixtures/indic-dictionaries/*.html -whitespace

@@ -78,6 +78,13 @@ class SourceDiscoveryRequirements(unittest.TestCase):
     def test_punjabi_surface_does_not_silently_query_hindi_dictionary(self):
         self.line['sourceLanguage']='pa'
         plan=self.plan()
+        self.assertEqual(plan['targets'][0]['dictionary_id'],'singh1895')
+        self.assertEqual(plan['targets'][0]['source_language'],'pa')
+        self.assertFalse(plan['gaps'])
+
+    def test_unsupported_language_retains_adapter_gap_without_fallback(self):
+        self.line['sourceLanguage']='vi'
+        plan=self.plan()
         self.assertEqual(plan['gaps'][0]['kind'],'source_adapter_unavailable')
         self.assertEqual(plan['targets'],[])
 

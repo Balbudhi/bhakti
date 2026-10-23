@@ -167,7 +167,8 @@ def resolve_source_witnesses(entries, acquisition_roots):
             continue
         root, record = by_hash[digest]
         raw = corpus.load_cached_witness(root, record)
-        parsed = corpus.parse_platts_html(raw.decode(), query=record['query'], url=record['url'], witness_sha256=digest)
+        dictionary_id = record.get('dictionary_id', 'platts1884')
+        parsed = corpus.parse_dictionary_html(dictionary_id, raw.decode(), query=record['query'], url=record['url'], witness_sha256=digest)
         actual = next((item for item in parsed if item['entry_id'] == entry['entry_id']), None)
         support.require(actual is not None, 'source entry absent from original witness')
         for field in ('language', 'lemma', 'source_spellings', 'roman_search_aliases', 'senses'):
@@ -177,8 +178,7 @@ def resolve_source_witnesses(entries, acquisition_roots):
         # Citation attribution comes from the parser's known source and witnessed locus,
         # never from unchecked metadata attached to an otherwise genuine entry.
         dictionary = actual['dictionary']
-        parser = corpus.PlattsParser(raw.decode())
-        parser.feed(raw.decode()); parser.close()
+        parser = corpus.dictionary_parser(raw.decode(), dictionary_id)
         matching = [item['raw'] for item in parser.records if corpus.sha(item['raw'].encode()) == dictionary['entry_html_sha256']]
         support.require(len(matching) == 1, 'source entry quotation absent or ambiguous')
         quote = matching[0]

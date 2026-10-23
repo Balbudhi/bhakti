@@ -50,8 +50,12 @@ Separate glossary, writer and reviewer escalation is integrated. The joined
 semantic routing, selective repair, evidence renewal, acquisition and cache
 checks pass 108 tests. These use synthetic provider responses and do not qualify
 translation quality. Historical crop adoption and source-language dictionary
-coverage remain open. Hindi Platts acquisition exists; Punjabi and Tamil coverage must
-not be represented as equivalent verified dictionary support.
+coverage remain open. Punjabi/Tamil dictionary acquisition and witness validation
+are now integrated with 83 local parser, acquisition and connected-caller checks.
+Complete entries, homographs, supplement citations and one shared request quota
+are preserved. Inflection relationships and their passage-level translation
+review still need completion; exact headword lookup alone is not verified
+Gurbani or Tamil grammatical interpretation.
 
 Release consistency prerequisites are integrated and pass 32 focused checks:
 pending installs block consumers, immutable media preserves old live URLs,

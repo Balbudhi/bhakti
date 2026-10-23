@@ -212,8 +212,13 @@ New definitions enter that query as explicitly unselected hypotheses bound to
 the exact source language, line and token span; the complete definitions also
 reach wording and independent review. Acquisition does not select a sense or
 silently change the source glossary.
-Punjabi and Tamil dictionary adapters remain missing. The default five-entry
-Hindi corpus has no token matches in the five representative qualification songs;
+Punjabi and Tamil acquisition now use separate DDSA adapters for Bhai Maya Singh's
+Panjabi Dictionary and the University of Madras Tamil Lexicon. They preserve full
+entries and homographs, printed supplement loci, exact-query misses and one shared
+run allowance. A Punjabi word never falls back to the Hindi adapter. Inflected
+source-to-headword relationships and their actual translation/review caller
+coverage still need completion; a stem entry alone does not establish the meaning
+of its ending. The default five-entry Hindi corpus has no token matches in the five representative qualification songs;
 configuring an encoder alone cannot correct that coverage gap. No full-library
 translation-quality claim follows from these structural tests.
 

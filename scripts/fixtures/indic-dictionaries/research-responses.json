@@ -1,0 +1,112 @@
+[
+  {
+    "adapter": "singh",
+    "query": "ਰਸੁ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%B0%E0%A8%B8%E0%A9%81&searchhws=yes&matchtype=exact",
+    "sha256": "f29b7b0f7ef31d25b665c65b46bd35f5e1d2cfb9811d7ba0e90af701ca963fb7",
+    "path": "singh-f29b7b0f7ef3.html",
+    "bytes": 3989,
+    "elapsed": 0.38,
+    "miss": true
+  },
+  {
+    "adapter": "singh",
+    "query": "ਰਸ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%B0%E0%A8%B8&searchhws=yes&matchtype=exact",
+    "sha256": "18b3ce1d9ad262b08b6f448a893044bf2c8d944fc41d326c376c84eb17ea3178",
+    "path": "singh-18b3ce1d9ad2.html",
+    "bytes": 4989,
+    "elapsed": 0.369,
+    "miss": false
+  },
+  {
+    "adapter": "singh",
+    "query": "ਆਧਾਰੇ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%86%E0%A8%A7%E0%A8%BE%E0%A8%B0%E0%A9%87&searchhws=yes&matchtype=exact",
+    "sha256": "84d0c6ae2c4e1376d67e61245ad6472e8ed09630d13c449b2bde155a50d69872",
+    "path": "singh-84d0c6ae2c4e.html",
+    "bytes": 3995,
+    "elapsed": 0.353,
+    "miss": true
+  },
+  {
+    "adapter": "singh",
+    "query": "ਆਧਾਰ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%86%E0%A8%A7%E0%A8%BE%E0%A8%B0&searchhws=yes&matchtype=exact",
+    "sha256": "efbaf0cef409f9bb2c3b5de223037dfcb4b0fa178d8dc40d83b2df1a2098f41f",
+    "path": "singh-efbaf0cef409.html",
+    "bytes": 4970,
+    "elapsed": 0.351,
+    "miss": false
+  },
+  {
+    "adapter": "singh",
+    "query": "ਹਰਿ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%B9%E0%A8%B0%E0%A8%BF&searchhws=yes&matchtype=exact",
+    "sha256": "533dc3a20553f953ef2944a736a863f2ba9cc762ee5658165950c9be5cb3f4e5",
+    "path": "singh-533dc3a20553.html",
+    "bytes": 3989,
+    "elapsed": 0.363,
+    "miss": true
+  },
+  {
+    "adapter": "tamil-lex",
+    "query": "அகமும்",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=%E0%AE%85%E0%AE%95%E0%AE%AE%E0%AF%81%E0%AE%AE%E0%AF%8D&searchhws=yes&matchtype=exact",
+    "sha256": "522b21ea325ec7c1031dfd2de977b1dd1f7b4e410b8f07f09885650d98a79cd2",
+    "path": "tamil-lex-522b21ea325e.html",
+    "bytes": 6633,
+    "elapsed": 0.452,
+    "miss": true
+  },
+  {
+    "adapter": "tamil-lex",
+    "query": "அகம்",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=%E0%AE%85%E0%AE%95%E0%AE%AE%E0%AF%8D&searchhws=yes&matchtype=exact",
+    "sha256": "2e7f689b7d34e0335c7ebb00c8ff7d113b3b53d644ede582b557080107915e69",
+    "path": "tamil-lex-2e7f689b7d34.html",
+    "bytes": 13882,
+    "elapsed": 0.44,
+    "miss": false
+  },
+  {
+    "adapter": "tamil-lex",
+    "query": "குகை",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=%E0%AE%95%E0%AF%81%E0%AE%95%E0%AF%88&searchhws=yes&matchtype=exact",
+    "sha256": "8793e6734bf2cca6827ffe72cec28dbeda4fd686c2196e471e6cd19e0930d694",
+    "path": "tamil-lex-8793e6734bf2.html",
+    "bytes": 8866,
+    "elapsed": 0.437,
+    "miss": false
+  },
+  {
+    "adapter": "singh",
+    "query": "ਹਰੀ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%B9%E0%A8%B0%E0%A9%80&searchhws=yes&matchtype=exact",
+    "sha256": "c5c79d1ebaef3620b95dd8a933cb907bccba23f884eb8ce26240ce1337a2a166",
+    "path": "singh-c5c79d1ebaef.html",
+    "bytes": 4873,
+    "elapsed": 0.378,
+    "miss": false
+  },
+  {
+    "adapter": "singh",
+    "query": "ਹਰ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%B9%E0%A8%B0&searchhws=yes&matchtype=exact",
+    "sha256": "efd5cf9022a043d14c52a37e262f915242645f547b91a7557dd5c6abae97af2c",
+    "path": "singh-efd5cf9022a0.html",
+    "bytes": 5579,
+    "elapsed": 0.375,
+    "miss": false
+  },
+  {
+    "adapter": "tamil-lex",
+    "query": "உம்",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=%E0%AE%89%E0%AE%AE%E0%AF%8D&searchhws=yes&matchtype=exact",
+    "sha256": "00c7a31eb6208c987058ffb305ec6da603d7e003bf3eca397664f14a97504035",
+    "path": "tamil-lex-00c7a31eb620.html",
+    "bytes": 9911,
+    "elapsed": 0.454,
+    "miss": false
+  }
+]
