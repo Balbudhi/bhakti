@@ -53,10 +53,15 @@ the proof; re-entry reuses the first cropped hearing. The 28 boundary-admission/
 timing checks pass with real media/storage and synthetic hearing judgments,
 including both ends, contradictory hearing, exact lineage, unchanged declaration
 bytes and zero-call resume. Initial historical crop preparation/installation is
-still missing. Before that integration, sequence-indexed section credits and
-adaptation markers must be remapped through accepted occurrence lineage: the
-current source caller copies their indices unchanged, which can attach a valid
-credit to the wrong surviving lyric after removal.
+still missing. Sequence-indexed section credits and adaptation markers are now
+remapped through accepted occurrence lineage before generation. The actual
+source-caller regression previously accepted a heading on the wrong surviving
+lyric; it now preserves the heading's source span and exact credit prose.
+Private generation uses that verified mapping while ordinary intake keeps its
+scripture-registry checks. The 86 relevant source/generation/metadata checks pass,
+including both existing composite Sai ārati readers' unchanged metadata. These
+checks establish stored/rendered data contracts, not a new browser visual audit
+or real-song acoustic qualification.
 
 Model-facing source dictionary discovery and materialized-evidence renewal are
 integrated. The joined source acquisition, translation/review, cache renewal and

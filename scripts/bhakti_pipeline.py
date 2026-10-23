@@ -5209,13 +5209,20 @@ def reviewed_line_labels(job: dict[str, Any], lines: list[dict[str, Any]]) -> di
     return cleaned
 
 
-def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
+def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None) -> None:
+    # The source-repair caller validates this metadata against exact occurrence
+    # lineage before and after private generation. Reapplying registry indices
+    # from the old performance would undo that mapping. Ordinary intake retains
+    # its registry checks; this parameter is not an intake-manifest field.
+    if source_reader_metadata is not None and (write_catalogue_after or not isinstance(source_reader_metadata, dict)):
+        raise ValueError('preserved source metadata is only valid for private candidate generation')
     with boundary_transaction(song_dir):
         _generate(song_dir, job, source, audited, timing, glosses, translations,
-                  write_catalogue_after=write_catalogue_after)
+                  write_catalogue_after=write_catalogue_after,
+                  source_reader_metadata=source_reader_metadata)
 
 
-def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
+def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None) -> None:
     require_completed_boundary_transaction(song_dir)
     bhakti_semantic_repair.require_acceptance(sys.modules[__name__], song_dir / '.transcription/pipeline', glosses, translations, audited=audited)
     errors = publication_errors(audited, timing, glosses, translations)
@@ -5354,8 +5361,12 @@ def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audit
     labels = reviewed_line_labels(job, lines)
     if labels:
         meta["lineLabels"] = labels
-    scripture_metadata.apply(meta, song_dir.name, sequence)
-    tag_taxonomy.apply_reviewed_subject_tags(meta, song_dir.name, line_data, sequence, root=ROOT)
+    if source_reader_metadata is None:
+        scripture_metadata.apply(meta, song_dir.name, sequence)
+        tag_taxonomy.apply_reviewed_subject_tags(meta, song_dir.name, line_data, sequence, root=ROOT)
+    else:
+        reviewed_composite_metadata(source_reader_metadata, len(sequence))
+        meta = copy.deepcopy(source_reader_metadata)
     data = ("window.SONG_META = " + json.dumps(meta, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_LINES = " + json.dumps(line_data, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +

@@ -140,6 +140,17 @@ class PipelineTests(unittest.TestCase):
         data = (song / "data.js").read_text(encoding="utf-8")
         self.assertIn('"sectionNotices"', data)
         self.assertIn('"adaptedSequenceIndices"', data)
+        registry = self.root / 'scripture-boundary-test.json'
+        registry.write_text(json.dumps({'composite-song': {'writer': 'Known writer',
+            'sectionNotices': [{**job['sectionNotices'][0], 'expectedRef': 'different-line'}]}}))
+        with mock.patch.object(pipeline.scripture_metadata, 'REGISTRY', registry):
+            with self.assertRaisesRegex(ValueError, 'scripture boundary'):
+                pipeline.generate(song, job, {}, audited, timing, glosses, translations)
+        self.assertEqual((song / 'data.js').read_text(), data)
+        with self.assertRaisesRegex(ValueError, 'private candidate'):
+            pipeline.generate(song, job, {}, audited, timing, glosses, translations,
+                source_reader_metadata={'title': 'Unreviewed override'})
+        self.assertEqual((song / 'data.js').read_text(), data)
 
     def test_publication_gate_rejects_uncertainty(self) -> None:
         audited = {"packet": {"verified_lines": [], "uncertainties": ["unclear word"]}}

@@ -46,6 +46,14 @@ is integrated; automatic historical preparation/installation remains inactive.
 Timing reuse still requires a qualified clock origin, and cannot substitute a
 requested trim length or decoded offset for the browser's playback clock.
 
+Source repairs map section notices and adaptation markers through the accepted
+expanded performance lineage before generation. Credit wording and unrelated
+metadata remain exact. Empty attribution spans, new material between credited
+sections, or merged repeats with conflicting credits/markers hold for review.
+Private candidate generation preserves this checked reader metadata instead of
+reapplying old registry positions; ordinary intake keeps its scripture-reference
+checks. Saved source-result verification recomputes the same positional mapping.
+
 Boundary installation, reader generation, media publication and site assembly
 share per-song transaction locks. Audio preparation occurs before the brief
 installation lock; consumers reject pending or changed source snapshots. Changed

@@ -363,8 +363,116 @@ def plan_source(reader,rebuilt,*,reviewed_map=None,accepted_delta=None):
     return {'lines':lines,'performance_order':new_order,'raw_to_final':raw_to_final,
             'new_target_ids':new_targets,'reuse_by_id':reuse,'rebuilt_source_digest':digest(rebuilt)}
 
+def remap_sequence_metadata(reader, plan, new_sequence):
+    """Keep positional credits/markers with their evidenced performances.
+
+    Lineage indexes expanded performances, while public metadata indexes display
+    blocks. A heading owns its original span until the next heading. Only its
+    position may move; lost or ambiguous attribution is an explicit hold.
+    """
+    meta = copy.deepcopy(reader['SONG_META'])
+    notices = meta.get('sectionNotices', [])
+    adapted = meta.get('adaptedSequenceIndices', [])
+    if not isinstance(notices, list) or not isinstance(adapted, list):
+        raise ValueError('sequence metadata must contain lists')
+    if not notices and not adapted:
+        return meta
+
+    def expand(sequence):
+        refs, displays, starts = [], [], []
+        for index, row in enumerate(sequence):
+            repeats = row.get('repeats', 1)
+            if (type(repeats) is not int or repeats < 1
+                    or not isinstance(row.get('ref'), str) or not row['ref']):
+                raise ValueError('sequence metadata has an invalid performance block')
+            starts.append(len(refs))
+            refs.extend([row['ref']] * repeats)
+            displays.extend([index] * repeats)
+        return refs, displays, starts
+
+    old_refs, old_displays, old_starts = expand(reader['SONG_SEQUENCE'])
+    new_refs, new_displays, new_starts = expand(new_sequence)
+    notice_indices = []
+    for notice in notices:
+        if (not isinstance(notice, dict) or type(notice.get('sequenceIndex')) is not int
+                or not 0 <= notice['sequenceIndex'] < len(old_starts)):
+            raise ValueError('section notice has an invalid original sequence index')
+        notice_indices.append(notice['sequenceIndex'])
+    if len(set(notice_indices)) != len(notice_indices):
+        raise ValueError('section notices share an ambiguous original index')
+    if any(type(index) is not int or not 0 <= index < len(old_starts) for index in adapted):
+        raise ValueError('adaptation marker has an invalid original sequence index')
+
+    delta = plan.get('adopted_delta')
+    if delta is None:
+        if old_refs != new_refs:
+            raise ValueError('changed source order needs occurrence lineage for positional metadata')
+        lineage = [{'old_index': i, 'new_index': i} for i in range(len(old_refs))]
+    else:
+        lineage = delta.get('occurrence_lineage')
+    if not isinstance(lineage, list):
+        raise ValueError('positional metadata lacks complete occurrence lineage')
+    old_seen, new_seen, old_to_new, new_to_old = set(), set(), {}, {}
+    for row in lineage:
+        if not isinstance(row, dict) or set(row) != {'old_index', 'new_index'}:
+            raise ValueError('positional metadata has malformed occurrence lineage')
+        old, new = row['old_index'], row['new_index']
+        if old is None and new is None:
+            raise ValueError('positional metadata lineage contains no occurrence')
+        for index, size, seen in ((old, len(old_refs), old_seen), (new, len(new_refs), new_seen)):
+            if index is not None:
+                if type(index) is not int or not 0 <= index < size or index in seen:
+                    raise ValueError('positional metadata has invalid or duplicate lineage')
+                seen.add(index)
+        if old is not None and new is not None:
+            if old_refs[old] != new_refs[new]:
+                raise ValueError('positional metadata lineage changes source identity')
+            old_to_new[old] = new
+            new_to_old[new] = old
+    if old_seen != set(range(len(old_refs))) or new_seen != set(range(len(new_refs))):
+        raise ValueError('positional metadata lineage does not cover the complete performance')
+    mapped_order = [old_to_new[i] for i in sorted(old_to_new)]
+    if mapped_order != sorted(mapped_order):
+        raise ValueError('positional metadata lineage interleaves original sections')
+
+    spans = []
+    ordered = sorted(notice_indices)
+    for position, index in enumerate(ordered):
+        first = old_starts[index]
+        end = old_starts[ordered[position + 1]] if position + 1 < len(ordered) else len(old_refs)
+        retained = [old_to_new[i] for i in range(first, end) if i in old_to_new]
+        if not retained:
+            raise ValueError('section attribution span was fully removed; review its credit')
+        low, high = min(retained), max(retained)
+        if new_starts[new_displays[low]] != low:
+            raise ValueError('merged display block crosses a section credit boundary')
+        spans.append((index, low, high))
+    for position, (_, low, high) in enumerate(spans):
+        next_start = spans[position + 1][1] if position + 1 < len(spans) else len(new_refs)
+        if high >= next_start:
+            raise ValueError('section attribution spans overlap after source repair')
+        if any(i not in new_to_old for i in range(high + 1, next_start)):
+            raise ValueError('new source at a section boundary needs attribution review')
+    positions = {index: new_displays[low] for index, low, _ in spans}
+    if notices:
+        meta['sectionNotices'] = [{**notice, 'sequenceIndex': positions[notice['sequenceIndex']]}
+            for notice in notices]
+
+    if adapted:
+        marked = set(adapted)
+        states = [set() for _ in new_sequence]
+        for index, display in enumerate(new_displays):
+            old = new_to_old.get(index)
+            states[display].add(None if old is None else old_displays[old] in marked)
+        if any(True in values and values != {True} for values in states):
+            raise ValueError('merged display block has conflicting or unknown adaptation status')
+        meta['adaptedSequenceIndices'] = [i for i, values in enumerate(states) if values == {True}]
+    return meta
+
+
 def assert_source_candidate(before,after,plan,timing):
-    if before.get('SONG_META')!=after.get('SONG_META'):raise ValueError('source stage changed metadata')
+    expected_meta = remap_sequence_metadata(before, plan, after.get('SONG_SEQUENCE', []))
+    if expected_meta!=after.get('SONG_META'):raise ValueError('source stage changed metadata outside verified sequence positions')
     old=before['SONG_LINES'];new=after.get('SONG_LINES',{});expected={r['id']:r for r in plan['lines']}
     if set(new)!=set(expected):raise ValueError('candidate source population mismatch')
     preserved=plan.get('reuse_by_id',old) if 'adopted_delta' in plan else old
@@ -1224,6 +1332,8 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         normalized = copy.deepcopy(audit)
         normalized['packet'] = {**copy.deepcopy(rebuilt), 'metadata': metadata,
                                 'verified_lines': plan['lines'], 'performance_order': plan['performance_order']}
+        mapped_metadata = remap_sequence_metadata(reader, plan,
+            pipeline.display_occurrences(normalized['packet']))
         old_order = [event['ref'] for event in reader['SONG_SEQUENCE'] for _ in range(event.get('repeats', 1))]
         source_changed = bool(plan['new_target_ids'] or old_order != [event['line_id'] for event in plan['performance_order']])
         requested = set(getattr(options, 'source_requested_stages', []) or [])
@@ -1290,11 +1400,12 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         translations = {'packet': {'translations': [english_by[line['id']] for line in plan['lines']]}}
         errors = pipeline.publication_errors(normalized, timing, glosses, translations)
         if errors: return hold('source_publication_contract', '; '.join(errors))
-        job = {**copy.deepcopy(reader['SONG_META']), 'slug': slug,
+        job = {**copy.deepcopy(mapped_metadata), 'slug': slug,
                'displayTitle': reader['SONG_META']['title'], 'languages': metadata['languages']}
-        pipeline.generate(target, job, source, normalized, timing, glosses, translations, write_catalogue_after=False)
+        pipeline.generate(target, job, source, normalized, timing, glosses, translations,
+            write_catalogue_after=False, source_reader_metadata=mapped_metadata)
         candidate = contract.load_data(target / 'data.js')
-        candidate['SONG_META'] = copy.deepcopy(reader['SONG_META'])
+        candidate['SONG_META'] = copy.deepcopy(mapped_metadata)
         candidate['SONG_LINES'].update(copy.deepcopy(plan['reuse_by_id'] if adoption else reader['SONG_LINES']))
         assert_source_candidate(reader, candidate, plan, timing)
         # Native/English links of every new row are checked after actual rendering.

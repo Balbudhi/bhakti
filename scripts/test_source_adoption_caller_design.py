@@ -105,6 +105,40 @@ class SourceAdoptionCallerTests(unittest.TestCase):
         self.assertEqual((self.song/'data.js').read_bytes(), self.original)
         self.assertEqual(contract.load_data(self.workspace/'songs'/self.slug/'data.js'), result['reader'])
 
+    def test_source_prefix_deletion_keeps_heading_and_adaptation_with_their_lyric(self):
+        self.reader['SONG_SEQUENCE']=[{'ref':'line-1','section':'spoken','repeats':1},
+            {'ref':'line-0','section':'verse','repeats':1},{'ref':'line-2','section':'verse','repeats':1}]
+        self.reader['SONG_META']['sectionNotices']=[
+            {'sequenceIndex':1,'title':'Known section','poet':'Known poet','note':'Preserve the wording.'}]
+        self.reader['SONG_META']['adaptedSequenceIndices']=[1]
+        for folder in (self.song,self.workspace/'songs'/self.slug):js(folder/'data.js',self.reader)
+        self.remove_source=True
+        registry=self.base/'scripture-metadata.json'
+        write_json(registry,{self.slug:{'writer':'Known poet','sectionNotices':[
+            {**self.reader['SONG_META']['sectionNotices'][0],'expectedRef':'line-0'}]}})
+        with patch.object(pipeline.scripture_metadata,'REGISTRY',registry):
+            result=self.invoke()
+        self.assertEqual(result['status'],'accepted',result)
+        expected=copy.deepcopy(self.reader['SONG_META'])
+        expected['sectionNotices'][0]['sequenceIndex']=0;expected['adaptedSequenceIndices']=[0]
+        self.assertEqual(result['reader']['SONG_META'],expected)
+        self.assertEqual(contract.load_data(self.workspace/'songs'/self.slug/'data.js')['SONG_META'],expected)
+        with patch.object(pipeline.gemini,'call',side_effect=AssertionError('metadata resume cannot dispatch')):
+            self.assertEqual(self.invoke(),result)
+        changed=copy.deepcopy(result['reader']);changed['SONG_META']['title']='Unsupported replacement'
+        with self.assertRaisesRegex(ValueError,'metadata'):
+            source.assert_source_candidate(self.reader,changed,result['evidence']['plan'],result['evidence']['timing'])
+
+    def test_source_insertion_shifts_later_credit_without_attributing_uncredited_material(self):
+        self.reader['SONG_META']['sectionNotices']=[
+            {'sequenceIndex':2,'title':'Closing work','poet':'Closing poet','note':''}]
+        self.reader['SONG_META']['adaptedSequenceIndices']=[2]
+        for folder in (self.song,self.workspace/'songs'/self.slug):js(folder/'data.js',self.reader)
+        self.add_source=True
+        result=self.invoke();self.assertEqual(result['status'],'accepted',result)
+        self.assertEqual(result['reader']['SONG_META']['sectionNotices'][0]['sequenceIndex'],3)
+        self.assertEqual(result['reader']['SONG_META']['adaptedSequenceIndices'],[3])
+
     def test_new_source_is_confirmed_then_only_new_semantics_generated_without_manual_map(self):
         self.add_source = True
         result = self.invoke()
