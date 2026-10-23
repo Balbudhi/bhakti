@@ -38,16 +38,19 @@ and lemma-specific verb frames, closing the grammar-loss defect. Real translatio
 quality remains unqualified. Newly acquired source definitions now inform
 the initial English ranking query as unselected, exact-token-bound hypotheses.
 Long queries preserve complete context/definition coverage within bounded parts;
-partial coverage never receives a numeric ranking. The fresh-source outer route still needs
-downstream renewal when materialized evidence changes under unchanged settings.
+partial coverage never receives a numeric ranking. Fresh-source processing now
+shares the semantic coordinator and renews downstream wording/review when
+materialized evidence changes under unchanged settings.
 Missing-source bootstrap now shares the new-intake transcription and independent
 audit stages. Long-recording timing ownership comes from audited segment
 occurrences rather than interpolated timestamps. The joined source/bootstrap
 checks pass 74 tests using real routing, storage, FFmpeg and timing callers with
 synthetic model responses; this does not establish acoustic recognition quality.
-Shared semantic stage-level
-escalation, historical crop adoption and source-language dictionary coverage
-remain open. Hindi Platts acquisition exists; Punjabi and Tamil coverage must
+Separate glossary, writer and reviewer escalation is integrated. The joined
+semantic routing, selective repair, evidence renewal, acquisition and cache
+checks pass 108 tests. These use synthetic provider responses and do not qualify
+translation quality. Historical crop adoption and source-language dictionary
+coverage remain open. Hindi Platts acquisition exists; Punjabi and Tamil coverage must
 not be represented as equivalent verified dictionary support.
 
 Release consistency prerequisites are integrated and pass 32 focused checks:

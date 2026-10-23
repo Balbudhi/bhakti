@@ -76,14 +76,14 @@ class FreshAutomaticSupportTests(unittest.TestCase):
     def test_accepted_missing_wording_decision_is_rejected_without_dispatch(self):
         c = self.case
         self.run_target()
-        state_path = next(self.route_dir.rglob('route-state.json'))
-        state = json.loads(state_path.read_text())
-        result_path = state_path.parent / 'accepted-result.json'
+        result_path = next(self.route_dir.rglob('05-translation.json'))
+        manifest_path = result_path.parent / 'semantic-acceptance.json'
+        manifest = json.loads(manifest_path.read_text())
         value = json.loads(result_path.read_text())
-        value['translations']['packet']['translations'][0].pop('wording_decisions')
+        value['packet']['translations'][0].pop('wording_decisions')
         result_path.write_text(json.dumps(value))
-        state['accepted_sha256'] = routes._digest(value)
-        state_path.write_text(json.dumps(state))
+        manifest['translation_sha256'] = pipeline.bhakti_semantic_repair.digest(value)
+        manifest_path.write_text(json.dumps(manifest))
         with patch.object(pipeline.gemini, 'call', side_effect=AssertionError('Invalid acceptance must not dispatch.')):
             with self.assertRaisesRegex((ValueError, RuntimeError), 'decision|target|support'):
                 self.run_target()

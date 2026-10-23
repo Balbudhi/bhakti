@@ -679,36 +679,75 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
             validate_candidate=candidate_errors,
             output_dir=Path(route_dir) / 'editorial-adjudications' / digest(unit_id)[:16] / file_hash(decision_path)[:16])
         return {**recovered['candidate'], 'editorial_receipt': recovered['receipt']}
-    def execute(context):
-        local = library.route_options(options, context)
-        attempt_song = context.attempt_dir / 'songs' / song_dir.name
-        (attempt_song / '.transcription/pipeline').mkdir(parents=True, exist_ok=True)
-        if pipeline.bhakti_lexical_producer.settings(local) is not None:
-            from bhakti_embedding_client import file_lock
-            # English corpus changes do not repay the unchanged source glossary.
-            # Keep the original producing model and complete reading context bound.
-            gloss_identity = digest({**evidence, 'model': context.model,
-                'policy': pipeline.semantic_stage_policy(local, stage='gloss')})
-            gloss_root = Path(route_dir) / 'fresh-source-glosses' / gloss_identity
-            with file_lock(gloss_root / 'gloss.lock'):
-                glosses = pipeline.gloss(gloss_root / 'songs' / song_dir.name, audited, local)
-        else:
-            glosses = pipeline.gloss(attempt_song, audited, local)
-        errors = pipeline.fresh_gloss_contract_errors(targets, glosses['packet']['glosses'], languages)
-        if errors: raise routes.QualityFailure([{'kind': 'source_gloss_contract', 'detail': error} for error in errors])
-        translations = pipeline.translate(attempt_song, audited, glosses,
-            {'slug': song_dir.name, 'languages': languages}, local, candidate_only=True)
-        return {'glosses': glosses, 'translations': translations}
-    def validate(value):
-        return [{'kind': 'source_semantic_contract', 'detail': error} for error in candidate_errors(value)]
-    result = routes.run_unit(route_dir, song_dir.name + ':new-source-semantics', identity,
-        execute, validate, deadline_at=deadline_at, dependency_fingerprint=digest(evidence['policy']),
-        base_model=options.model, pro_model=options.pro_model)
-
-
+    # A source/context-stable workspace lets the existing selective coordinator
+    # renew materialized English evidence without creating a parallel repair loop.
+    source_identity = digest({key: value for key, value in evidence.items() if key != 'policy'})
+    semantic_song = Path(route_dir) / 'fresh-source-semantics' / source_identity / 'songs' / song_dir.name
+    pipeline.semantic_write_json(semantic_song / '.transcription/source-proposal.json',
+                                 {'plan': copy.deepcopy(plan), 'metadata': metadata})
+    baseline = pipeline.editorial_baselines.load_baselines(pipeline.ROOT).get(song_dir.name)
+    if baseline and set(baseline['plainEnglishByLine']) != {line['id'] for line in targets}:
+        raise RuntimeError('owner baseline line population changed: locked_baseline_population')
+    local = copy.copy(options)
+    local.semantic_deadline_at = min(float(deadline_at),
+        float(getattr(options, 'semantic_deadline_at', deadline_at)))
+    local.unit_deadline_at = min(float(deadline_at),
+        float(getattr(options, 'unit_deadline_at', deadline_at)))
+    packet_dir = semantic_song / '.transcription/pipeline'
+    if not (packet_dir / 'semantic-repair-state.json').exists():
+        # Exact historical pending effects retain their original attempt identity.
+        legacy_state = routes.unit_state_path(route_dir, unit_id, identity,
+            dependency_fingerprint=digest(evidence['policy']),
+            base_model=options.model, pro_model=options.pro_model)
+        if legacy_state.exists():
+            previous = routes.read_unit_cache(legacy_state)
+            if previous['state']['status'] != 'accepted':
+                raise routes.UnitUnresolved(unit_id, previous['state'].get('reason', 'historical attempt unresolved'),
+                    previous['state'].get('issues', []), legacy_state)
+            old = previous['result']
+            errors = candidate_errors(old)
+            if not errors:
+                return old
+            if errors != ['automatic model-input evidence receipt changed or missing']:
+                raise RuntimeError('historical semantic acceptance invalid: ' + str(errors[:3]))
+        # Match the source-stage fingerprint, not the changed English policy.
+        # Route hashes authenticate prior acceptance; source policy/context bind
+        # which glossary is reusable under today's target request.
+        seeds = []
+        for path in Path(route_dir).rglob('route-state.json'):
+            saved = pipeline.read_packet(path) or {}
+            if saved.get('unit_id') != unit_id or saved.get('base_model') != options.model:
+                continue
+            prior = routes.read_unit_cache(path)
+            if prior['state']['status'] != 'accepted':
+                continue
+            value = prior['result']; glossary = value.get('glosses', {})
+            model = glossary.get('resolved_model', prior['state'].get('accepted_model'))
+            expected = pipeline.text_stage_fingerprint('gloss', model,
+                {'lines': targets, 'languages': languages}, pipeline.semantic_stage_policy(local, stage='gloss'))
+            if (glossary.get('fingerprint') != expected
+                    or pipeline.fresh_gloss_contract_errors(targets, glossary.get('packet', {}).get('glosses', []), languages)):
+                continue
+            seeds.append((path, glossary))
+        if seeds:
+            if len({digest(value) for _, value in seeds}) != 1:
+                raise RuntimeError('historical accepted source glossary is ambiguous')
+            path, glossary = seeds[0]
+            glossary = copy.deepcopy(glossary)
+            glossary['historical_gloss_route'] = str(path)
+            pipeline.semantic_write_json(packet_dir / '04-glosses.json', glossary)
+    glosses, translations = pipeline.complete_semantics(semantic_song, audited,
+        {'slug': song_dir.name, 'languages': languages}, local)
+    # The adapter returns source-producing evidence, not mutable coordinator
+    # checkpoint labels. The complete acceptance retains and verifies those labels.
+    glosses = copy.deepcopy(glosses)
+    glosses['fingerprint'] = glosses.pop('producer_fingerprint', glosses.get('fingerprint'))
+    for key in ('semantic_request_identity', 'semantic_repair_version', 'semantic_run_id', 'historical_gloss_route'):
+        glosses.pop(key, None)
+    result = {'glosses': glosses, 'translations': translations}
     errors = candidate_errors(result)
     if errors:
-        raise ValueError('fresh source cached semantic evidence invalid: ' + '; '.join(errors))
+        raise RuntimeError('fresh source semantic evidence invalid: ' + '; '.join(errors))
     return result
 
 def fresh_target_errors(plan, metadata, value):

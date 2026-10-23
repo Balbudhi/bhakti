@@ -4282,7 +4282,7 @@ LOCKED HUMAN TRANSLATION (or none):
     return reviews, packets
 
 
-def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace, *, candidate_only: bool = False) -> dict[str, Any]:
+def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace, *, candidate_only: bool = False, defer_review: bool = False) -> dict[str, Any]:
     options, glosses = bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
     target = song_dir / ".transcription" / "pipeline" / "05-translation.json"
     lines = audited['packet'].get('verified_lines', [])
@@ -4505,6 +4505,7 @@ Return strict JSON:
                                      for row in packet["response"]["packet"]["comparison"]],
                   }, "batch_responses": packets, "input_contract_version": TRANSLATION_INPUT_VERSION,
                   "resolved_model": options.model}
+    result['packet']['translations'] = stage_model_rows(result, 'translations', options)
     if selected is not None and not reuse_candidate:
         returned = result['packet']['translations']
         if [row.get('id') for row in returned] != [row['id'] for row in candidate_lines]:
@@ -4527,6 +4528,34 @@ Return strict JSON:
     candidate_path = target.parent / 'translation-candidate.json'
     semantic_write_json(candidate_path, result)
     bhakti_semantic_repair.assert_baseline(getattr(options, 'semantic_baseline', None), result['packet']['translations'])
+    if defer_review:
+        return result  # A private writer candidate, never an affirmative 05 acceptance.
+    result = review_translation(song_dir, audited, glosses, job, options, result,
+                                prepared=True)
+    errors = fresh_translation_contract_errors(lines, gloss_rows, result["packet"]["translations"])
+    if candidate_only:
+        return result
+    source_issues = bhakti_source_discovery.repair_issues(
+        getattr(options, 'automatic_source_discovery', None), lines, result['packet']['translations'])
+    if source_issues:
+        stage_quality_failure(options, 'new source evidence requires glossary repair: ' + str(source_issues[:1]))
+    if errors:
+        stage_quality_failure(options, f"translation output violates fresh contract: {errors[:3]}")
+    write_json(target, result)
+    return result
+
+
+def review_translation(song_dir, audited, glosses, job, options, candidate, *, prepared=False):
+    """Review exact private writer bytes without reconstructing their English."""
+    if not prepared:
+        options, glosses = bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
+    result = copy.deepcopy(candidate)
+    lines = audited['packet']['verified_lines']
+    gloss_rows = glosses['packet']['glosses']
+    gloss_by_id = {row['id']: row for row in gloss_rows}
+    languages = job.get('languages', audited['packet'].get('metadata', {}).get('languages'))
+    provided_translation = supplied_translation(job)
+    candidate_path = song_dir / '.transcription/pipeline/translation-candidate.json'
     review_options = copy.copy(options)
     review_options.semantic_performance_order = copy.deepcopy(
         getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))
@@ -4550,16 +4579,6 @@ Return strict JSON:
         row["independent_review"] = review_by_id.get(row["id"], {})
     result["review_responses"] = review_packets
     semantic_write_json(candidate_path, result)
-    errors = fresh_translation_contract_errors(lines, gloss_rows, result["packet"]["translations"])
-    if candidate_only:
-        return result
-    source_issues = bhakti_source_discovery.repair_issues(
-        getattr(options, 'automatic_source_discovery', None), lines, result['packet']['translations'])
-    if source_issues:
-        stage_quality_failure(options, 'new source evidence requires glossary repair: ' + str(source_issues[:1]))
-    if errors:
-        stage_quality_failure(options, f"translation output violates fresh contract: {errors[:3]}")
-    write_json(target, result)
     return result
 
 
@@ -4644,7 +4663,7 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
 
 def fresh_translation_contract_errors(
     lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
-    translation_rows: list[dict[str, Any]],
+    translation_rows: list[dict[str, Any]], *, require_review: bool = True,
 ) -> list[str]:
     """Require affirmative semantic review before accepting a new 05 packet.
 
@@ -4660,10 +4679,10 @@ def fresh_translation_contract_errors(
         line_id = row.get("id", "<unknown>")
         if line_id in instrumental:
             continue
-        for field, required in (
-            ("fidelity", ("agency_and_image_preserved", "all_meaning_accounted_for")),
-            ("independent_review", ("passes", "agency_preserved", "imagery_preserved", "all_meaning_accounted_for")),
-        ):
+        records = [("fidelity", ("agency_and_image_preserved", "all_meaning_accounted_for"))]
+        if require_review:
+            records.append(("independent_review", ("passes", "agency_preserved", "imagery_preserved", "all_meaning_accounted_for")))
+        for field, required in records:
             evidence = row.get(field)
             if not isinstance(evidence, dict) or not evidence:
                 errors.append(f"{line_id} lacks a nonempty {field} record")
@@ -4964,9 +4983,9 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css?v=contract-20260821-8" />
-  <link rel="stylesheet" href="/assets/song.css?v=tooltip-20261022-5" />
-  <link rel="stylesheet" href="/assets/site.css?v=ui-20261023-2" />
-  <link rel="stylesheet" href="/assets/app.css?v=ui-20261023-2" />
+  <link rel="stylesheet" href="/assets/song.css?v=touch-20261023" />
+  <link rel="stylesheet" href="/assets/site.css?v=touch-20261023" />
+  <link rel="stylesheet" href="/assets/app.css?v=touch-20261023" />
 </head>
 <body data-app-view="song">
   <main class="song-page" id="songView">
@@ -4990,8 +5009,8 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <script src="data.js?v={escape(data_asset_version)}"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=ui-20261023"></script>
-  <script src="/assets/library.js?v=ui-20261023-2"></script>
-  <script src="/assets/song.js?v=ui-20261023-3"></script>
+  <script src="/assets/library.js?v=touch-20261023"></script>
+  <script src="/assets/song.js?v=touch-20261023"></script>
   <script src="/assets/app.js?v=ui-20261023-3"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>

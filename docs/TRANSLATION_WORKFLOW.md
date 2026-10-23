@@ -194,9 +194,9 @@ instead of creating a fresh allowance.
 
 Accepted semantic runs bind the actual dictionary evidence they used. A relevant
 evidence change renews English and independent review with a validated glossary;
-unrelated cache growth does not renew the run. The fresh-source outer route still
-needs this renewal behavior for materialized evidence changes under unchanged
-configuration. Source acquisition now precedes the first English ranking query.
+unrelated cache growth does not renew the run. Fresh-source processing now uses
+the same selective semantic coordinator, including materialized-evidence renewal
+under unchanged configuration. Source acquisition precedes the first English ranking query.
 New definitions enter that query as explicitly unselected hypotheses bound to
 the exact source language, line and token span; the complete definitions also
 reach wording and independent review. Acquisition does not select a sense or
@@ -273,6 +273,18 @@ Transport failures escalate only under the route's explicit classification;
 unknown outcomes require worker termination and retain their reservation.
 Authentication, budget, persistence and unreconciled active-request failures stop
 the run. Restarting does not create another Flash or Pro allowance.
+
+New intake and fresh-source repairs share separate glossary, writer and reviewer
+routes. A malformed reviewer response retries the reviewer while preserving the
+writer's English; a valid source-sense objection repairs the implicated glossary
+before rewriting. A valid English objection reuses the glossary and repairs the
+writer. Subsequent independent review starts at the baseline model. Explicit
+`semantic_stage_escalation=False` disables Pro for a bounded baseline experiment;
+zero semantic repair rounds alone does not disable malformed-output escalation.
+An unresolved, validated semantic judgment is saved as `SemanticQualityHold`
+with exact source/gloss/candidate file hashes. That outcome does not establish
+payment settlement: a batch must separately check its ledgers before continuing
+other songs. Generic transport, persistence and budget failures remain distinct.
 
 Chat and embeddings have separate ledgers and call caps. Their combined limits
 must fit the approved total. Each reserves a conservative amount before dispatch,

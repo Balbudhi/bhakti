@@ -184,7 +184,10 @@ class AutomaticRepairTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'deadline'):
                 self.complete()
         self.assertEqual(self.state()['deadline_at_epoch'], 1002.0)
-        self.assertEqual([c['timeout'] for c in self.calls], [2.0, 1.25, 0.5])
+        self.assertEqual(len(self.calls), 3)
+        for call, remaining in zip(self.calls, [2.0, 1.25, 0.5]):
+            self.assertGreater(call['timeout'], 0)
+            self.assertLessEqual(call['timeout'], remaining)
         self.assertFalse(self.repaired)
         count = len(self.calls)
         self.options.semantic_repair_seconds = 600

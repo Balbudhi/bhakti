@@ -231,8 +231,17 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
     support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
     policy = pipeline.semantic_stage_policy(options, stage='gloss')
     glosses = read('04-glosses.json')
+    gloss_model = options.model
+    if glosses and glosses.get('historical_gloss_route'):
+        import bhakti_model_routes as routes
+        prior = routes.read_unit_cache(Path(glosses['historical_gloss_route']))
+        original = {key: value for key, value in glosses.items() if key != 'historical_gloss_route'}
+        if (prior['state'].get('status') != 'accepted' or prior['state'].get('base_model') != options.model
+                or prior['result'].get('glosses') != original):
+            raise RuntimeError('historical source glossary receipt mismatch')
+        gloss_model = original.get('resolved_model', prior['state'].get('accepted_model'))
     gloss_inputs = {'lines': lines, 'languages': languages}
-    identities = {pipeline.text_stage_fingerprint('gloss', options.model, gloss_inputs, policy)}
+    identities = {pipeline.text_stage_fingerprint('gloss', gloss_model, gloss_inputs, policy)}
     # Historical signatures never bound lexical support. They can only seed a
     # run without that new evidence; they are not current-policy equivalence.
     no_support = getattr(options, 'semantic_lexical_support', None) is None
@@ -371,6 +380,172 @@ def validated_gloss_seed(pipeline, glossary, receipt, source_identity, glossary_
     return copy.deepcopy(glossary)
 
 
+def stage_routes_enabled(options):
+    import bhakti_model_routes as routes
+    return options.model in {routes.FLASH_MODEL, routes.PRO_MODEL}
+
+
+def stage_context(options):
+    keys = ('semantic_context_evidence', 'semantic_full_source', 'semantic_performance_order',
+            'semantic_source_identity', 'semantic_baseline', 'semantic_repair_feedback',
+            'semantic_prior_gloss', 'semantic_translation_targets', 'semantic_previous_translations',
+            'semantic_seed_translation', 'automatic_lexical_feedback')
+    return {key: copy.deepcopy(getattr(options, key)) for key in keys if hasattr(options, key)}
+
+
+def semantic_stage_route(pipeline, song_dir, stage, inputs, options, execute, validate, *, base_model=None):
+    """Own exactly one stage's attempt history; later stages cannot relabel it."""
+    import bhakti_model_routes as routes
+    base_model = base_model or options.model
+    pro_model = getattr(options, 'pro_model', routes.PRO_MODEL)
+    escalation = getattr(options, 'semantic_stage_escalation', True)
+    if type(escalation) is not bool:
+        raise RuntimeError('semantic_stage_escalation must be boolean')
+    if not escalation:
+        pro_model = base_model
+    deadlines = [float(getattr(options, key)) for key in
+                 ('semantic_deadline_at', 'unit_deadline_at') if getattr(options, key, None) is not None]
+    if not deadlines:
+        raise RuntimeError('semantic stage requires bounded deadline')
+    identity = digest({'stage': stage, 'inputs': inputs, 'context': stage_context(options),
+                       'escalation': escalation})
+    original_failure = []
+    def run(context):
+        local = copy.copy(options)
+        local.model = context.model
+        local.force = False
+        local.unit_context = context.transport_context
+        local.unit_deadline_at = context.deadline_at
+        local.semantic_deadline_at = min(deadlines + [context.deadline_at])
+        local.timeout = min(float(options.timeout), context.call_timeout_seconds)
+        target = context.attempt_dir / 'songs' / song_dir.name
+        try:
+            result = execute(target, local)
+        except (routes.QualityFailure, routes.UnitTransportFailure, routes.RunFatal):
+            raise
+        except Exception as exc:
+            original_failure.append(exc)
+            raise
+        result.setdefault('resolved_model', context.model)
+        return result
+    try:
+        result = routes.run_unit(song_dir / '.transcription/pipeline/stage-routes',
+            song_dir.name + ':semantic-' + stage, identity, run, validate,
+            deadline_at=min(deadlines), base_model=base_model, pro_model=pro_model)
+    except routes.UnitUnresolved:
+        # The route durably records the failed attempt; preserve the precise
+        # originating integration/baseline error instead of hiding its cause.
+        if original_failure:
+            raise original_failure[-1]
+        raise
+    errors = validate(copy.deepcopy(result))
+    if errors:
+        raise RuntimeError('accepted semantic stage violates current contract: ' + str(errors[:3]))
+    return result
+
+
+def routed_gloss(pipeline, song_dir, audited, options):
+    if not stage_routes_enabled(options):
+        return pipeline.gloss(song_dir, audited, options)
+    import bhakti_model_routes as routes
+    lines = audited['packet']['verified_lines']
+    languages = audited['packet'].get('metadata', {}).get('languages')
+    # Validation of corpus bytes remains before the first paid stage.
+    pipeline.bhakti_lexical_producer.configuration_identity(options)
+    policy = pipeline.semantic_stage_policy(options, stage='gloss')
+    feedback = getattr(options, 'semantic_repair_feedback', [])
+    repairing = any(issue['kind'] in {'gloss_sense', 'frame_relation'} for issue in feedback)
+    base_model = (getattr(options, 'pro_model', routes.PRO_MODEL)
+                  if repairing and getattr(options, 'semantic_stage_escalation', True) else options.model)
+    def validate(result):
+        errors = pipeline.fresh_gloss_contract_errors(lines, result.get('packet', {}).get('glosses', []), languages)
+        return [{'kind': 'source_gloss_contract', 'detail': error} for error in errors]
+    return semantic_stage_route(pipeline, song_dir, 'gloss',
+        {'lines': lines, 'languages': languages, 'policy': policy}, options,
+        lambda directory, local: pipeline.gloss(directory, audited, local), validate, base_model=base_model)
+
+
+def routed_translation(pipeline, song_dir, audited, glosses, job, options):
+    if not stage_routes_enabled(options):
+        return pipeline.translate(song_dir, audited, glosses, job, options, candidate_only=True)
+    import bhakti_model_routes as routes
+    lines = audited['packet']['verified_lines']
+    view_options, view_glosses = pipeline.bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
+    inputs = {'audited': audited, 'glosses': glosses, 'provided': pipeline.supplied_translation(job),
+              'policy': pipeline.semantic_stage_policy(view_options),
+              'automatic_evidence_receipt': pipeline.automatic_evidence_receipt(view_options)}
+    feedback = getattr(options, 'semantic_repair_feedback', [])
+    english_repair = any(issue['kind'] in {'english_realization', 'english_mapping'} for issue in feedback)
+    source_repair = any(issue['kind'] in {'gloss_sense', 'frame_relation'} for issue in feedback)
+    base_model = (getattr(options, 'pro_model', routes.PRO_MODEL) if english_repair and not source_repair
+                  and getattr(options, 'semantic_stage_escalation', True) else options.model)
+    def validate_writer(result):
+        errors = pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'],
+            result.get('packet', {}).get('translations', []), require_review=False)
+        errors += derived_support_errors(pipeline, song_dir, audited, glosses, result, options)
+        return [{'kind': 'english_contract', 'detail': error} for error in errors]
+    writer = semantic_stage_route(pipeline, song_dir, 'writer', inputs, options,
+        lambda directory, local: pipeline.translate(directory, audited, glosses, job, local,
+                                                     candidate_only=True, defer_review=True),
+        validate_writer, base_model=base_model)
+    def validate_review(result):
+        errors = []
+        for row in result.get('packet', {}).get('translations', []):
+            review = row.get('independent_review', {})
+            if any(type(review.get(key)) is not bool for key in
+                   ('passes', 'human_review_recommended', 'agency_preserved', 'imagery_preserved', 'all_meaning_accounted_for')):
+                errors.append('review requires explicit boolean judgments')
+            recorded = review.get('issues')
+            errors += issue_errors(lines, glosses['packet']['glosses'], recorded)
+            if review.get('passes') is True and recorded:
+                errors.append('passing review cannot contain repair issues')
+        if [row.get('literal_english') for row in result['packet']['translations']] != [
+                row.get('literal_english') for row in writer['packet']['translations']]:
+            errors.append('review changed writer English')
+        return [{'kind': 'review_contract', 'detail': error} for error in errors]
+    return semantic_stage_route(pipeline, song_dir, 'review', {**inputs, 'writer': writer}, options,
+        lambda directory, local: pipeline.review_translation(directory, audited, glosses, job, local, writer),
+        validate_review)
+
+
+class SemanticQualityHold(RuntimeError):
+    """A retained, valid semantic judgment; says nothing about spend settlement."""
+    def __init__(self, reason, issues, evidence):
+        self.reason = reason
+        self.issues = copy.deepcopy(issues)
+        self.evidence = copy.deepcopy(evidence)
+        self.candidate_path = evidence['candidate']['path']
+        super().__init__(reason)
+
+
+def quality_hold(pipeline, reason, issues, audited, glosses, candidate, directory):
+    evidence = {}
+    for name, value in (('audited_source', audited), ('gloss', glosses), ('candidate', candidate)):
+        path = directory / ('held-' + name + '.json')
+        pipeline.semantic_write_json(path, value)
+        evidence[name] = {'path': str(path), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
+    return SemanticQualityHold(reason, issues, evidence)
+
+
+def restore_quality_hold(pipeline, value):
+    evidence = value.get('evidence', {})
+    loaded = {}
+    for name in ('audited_source', 'gloss', 'candidate'):
+        record = evidence.get(name, {})
+        path = Path(record.get('path', ''))
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != record.get('sha256'):
+            raise RuntimeError('held semantic evidence hash mismatch')
+        artifact = pipeline.read_packet(path)
+        if not artifact:
+            raise RuntimeError('held semantic evidence is not a valid packet')
+        loaded[name] = artifact
+    errors = issue_errors(loaded['audited_source']['packet']['verified_lines'],
+                          loaded['gloss']['packet']['glosses'], value.get('issues'))
+    if errors:
+        raise RuntimeError('held semantic issues invalid: ' + str(errors[:3]))
+    return SemanticQualityHold(value['reason'], value['issues'], evidence)
+
+
 def complete(pipeline, song_dir, audited, job, options):
     packet_dir = song_dir / '.transcription/pipeline'
     state_path = packet_dir / 'semantic-repair-state.json'
@@ -410,6 +585,13 @@ def complete(pipeline, song_dir, audited, job, options):
             glossary_inputs['policy']['lexical_support'] = pipeline.bhakti_lexical_support.content_digest(
                 full_support, english_grammar=False)
         glossary_identity = digest(glossary_inputs)
+        if stage_routes_enabled(options):
+            import bhakti_model_routes as routes
+            escalation = getattr(options, 'semantic_stage_escalation', True)
+            if type(escalation) is not bool:
+                raise RuntimeError('semantic_stage_escalation must be boolean')
+            identity_inputs['stage_routing'] = {'version': 1, 'escalation': escalation,
+                'pro_model': getattr(options, 'pro_model', routes.PRO_MODEL)}
         identity = digest(identity_inputs)
         configuration_run_id = identity
         revision_receipt = None
@@ -463,6 +645,8 @@ def complete(pipeline, song_dir, audited, job, options):
         if prior_state.get('run_id') == identity:
             state = dict(prior_state)
             if state.get('status') == 'blocked':
+                if state.get('quality_hold'):
+                    raise restore_quality_hold(pipeline, state['quality_hold'])
                 raise RuntimeError(state.get('reason', 'semantic repair blocked'))
         else:
             seconds = float(getattr(options, 'semantic_repair_seconds', 600))
@@ -470,15 +654,17 @@ def complete(pipeline, song_dir, audited, job, options):
                 raise RuntimeError('invalid semantic repair deadline')
             state = {'version': VERSION, 'run_id': identity, 'status': 'in-progress',
                      'configuration_run_id': configuration_run_id,
-                     'rounds_used': 0, 'deadline_at_epoch': time.time() + seconds}
+                     'rounds_used': 0, 'deadline_at_epoch': min([time.time() + seconds] +
+                         [float(getattr(options, key)) for key in ('unit_deadline_at', 'semantic_deadline_at')
+                          if getattr(options, key, None) is not None])}
             if revision_receipt is not None:
                 state['automatic_evidence_receipt'] = copy.deepcopy(revision_receipt)
         local = copy.copy(options)
         local.force = False  # A force rerun cannot reset this run's paid history.
         local.semantic_deadline_at = state['deadline_at_epoch']
-        local.semantic_full_source = lines
+        local.semantic_full_source = copy.deepcopy(getattr(options, 'semantic_full_source', lines))
         local.semantic_performance_order = order
-        local.semantic_source_identity = digest(evidence)
+        local.semantic_source_identity = getattr(options, 'semantic_source_identity', digest(evidence))
         local.semantic_baseline = baseline
         if accepted_gloss is not None:
             # Persist the validated prior glossary before either mutable marker
@@ -592,12 +778,22 @@ def complete(pipeline, song_dir, audited, job, options):
                 elif number:
                     subset = copy.deepcopy(audited)
                     subset['packet']['verified_lines'] = [row for row in lines if row['id'] in lexical_targets]
-                    repaired = pipeline.gloss(round_dir, subset, local)
+                    repaired = routed_gloss(pipeline, round_dir, subset, local)
                     by_id = {row['id']: row for row in repaired['packet']['glosses']}
                     glosses = copy.deepcopy(previous_gloss)
                     glosses['packet']['glosses'] = [by_id.get(row['id'], row) for row in previous_gloss['packet']['glosses']]
+                    producing = dict(glosses.get('producing_models_by_line',
+                        {row['id']: glosses.get('resolved_model', local.model) for row in previous_gloss['packet']['glosses']}))
+                    producing.update({line_id: repaired.get('resolved_model', local.model) for line_id in by_id})
+                    glosses['producing_models_by_line'] = producing
+                    glosses['resolved_model'] = next(iter(set(producing.values()))) if len(set(producing.values())) == 1 else 'mixed'
+                    glosses.setdefault('repair_responses', []).append(copy.deepcopy(repaired))
+                    glosses['producer_fingerprint'] = digest({'glosses': glosses['packet'], 'producing_models': producing,
+                        'prior': previous_gloss.get('producer_fingerprint', previous_gloss.get('fingerprint')),
+                        'repair': repaired.get('fingerprint')})
                 else:
-                    glosses = seed_gloss or pipeline.gloss(round_dir, audited, local)
+                    glosses = seed_gloss or routed_gloss(pipeline, round_dir, audited, local)
+                glosses.setdefault('producer_fingerprint', glosses.get('fingerprint'))
                 glosses['semantic_request_identity'] = expected_gloss_identity
                 errors = pipeline.fresh_gloss_contract_errors(lines, glosses['packet']['glosses'], languages)
                 if errors: raise RuntimeError('gloss_contract_hold: ' + str(errors[:3]))
@@ -631,7 +827,7 @@ def complete(pipeline, song_dir, audited, job, options):
                 local.semantic_seed_translation = seed_translation if number == 0 else None
                 local.semantic_translation_targets = sorted(set(item for issue in feedback for item in issue['target_line_ids'])) if number else None
                 local.semantic_previous_translations = previous_translation['packet']['translations'] if number else None
-                translations = pipeline.translate(round_dir, audited, glosses, job, local, candidate_only=True)
+                translations = routed_translation(pipeline, round_dir, audited, glosses, job, local)
                 translations['semantic_request_identity'] = expected_translation_identity
                 if automatic is not None:
                     translations['automatic_lexical_feedback'] = copy.deepcopy(lookup_feedback)
@@ -675,9 +871,10 @@ def complete(pipeline, song_dir, audited, job, options):
                 return glosses, translations
             for issue in issues:
                 if issue['kind'] == 'unresolved_evidence':
-                    raise RuntimeError(issue['hold_reason'] + ': ' + issue['needed_evidence'])
+                    raise quality_hold(pipeline, issue['hold_reason'], issues, audited, glosses, translations, round_dir)
             if not issues: raise RuntimeError('semantic_contract_hold: ' + str(errors[:3]))
-            if number >= maximum: raise RuntimeError('repair_limit_exhausted')
+            if number >= maximum:
+                raise quality_hold(pipeline, 'repair_limit_exhausted', issues, audited, glosses, translations, round_dir)
             if not _bounded_ready(): raise RuntimeError('repair_budget_required')
             candidate_hash = digest({'glosses': glosses['packet'], 'translations': [
                 {key: value for key, value in row.items() if key != 'independent_review'} for row in rows]})
@@ -692,5 +889,7 @@ def complete(pipeline, song_dir, audited, job, options):
         if prior_state.get('status') == 'accepted' and not new_run_claimed:
             raise
         state['status'] = 'blocked'; state['reason'] = str(exc)
+        if isinstance(exc, SemanticQualityHold):
+            state['quality_hold'] = {'reason': exc.reason, 'issues': exc.issues, 'evidence': exc.evidence}
         pipeline.semantic_write_json(state_path, state)
         raise
