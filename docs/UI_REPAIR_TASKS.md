@@ -87,7 +87,14 @@ Playing visuals follow native `playing` or fulfilled `play()`, not an optimistic
 - Reduced-motion CSS and the reorder guard are source-reviewed; the available
   browser tooling does not emulate an OS reduced-motion preference.
 
-Current step: inspect the exact staged release, publish, and verify production.
+Completed: release `dbb69c32` was pushed to `main`; the subsequent main commit
+`a3366b3f` includes this release and GitHub Pages run `40002915596` succeeded.
+The first deployment run was superseded by that concurrent content commit.
+Production checks verified the versioned
+assets, 390px first-row position of 404px with no overflow, Play next/append,
+Next reaching actual playback (`readyState=4`, time advancing), and retained
+history/current position after reload. Only scoped UI files and asset-version
+changes were staged; unrelated song and pipeline work was preserved.
 
 ## Further work, separate from this UI release
 
