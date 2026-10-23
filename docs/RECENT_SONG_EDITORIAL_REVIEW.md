@@ -58,7 +58,7 @@ The follow-up changes 18 English fields, three matching glosses and three gramma
 
 ## Parallel Kabīr and related-reader correction — 22 October 2026
 
-Read 221 unique lyric definitions across 15 readers; retained the three readers without a demonstrated correction. Applied 123 reviewed field corrections across 72 definitions in the remaining 12 readers, including 44 English fields. A second reviewer checked each proposal against the source and context; the lead adjudicated syntax and sense disagreements before applying it.
+Read 232 unique lyric definitions across 15 readers; retained the three readers without a demonstrated correction. Applied 123 reviewed field corrections across 72 definitions in the remaining 12 readers, including 44 English fields. A second reviewer checked each proposal against the source and context; the lead adjudicated syntax and sense disagreements before applying it.
 
 | Reader | Definitions corrected | English fields |
 | --- | ---: | ---: |
