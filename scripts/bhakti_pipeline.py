@@ -68,7 +68,8 @@ def preserved_term_registry() -> dict[str, Any]:
 def translation_policy_payload() -> dict[str, Any]:
     """Snapshot all lexical policy that can affect cached text judgments."""
     return {"preserved_terms": preserved_term_registry(),
-            "lexical_policy": bhakti_translation_policy.policy_payload()}
+            "lexical_policy": bhakti_translation_policy.policy_payload(),
+            "reading_context_contract": 1, "context_findings_contract": 2}
 
 
 def text_stage_fingerprint(stage: str, model: str, inputs: dict[str, Any],
@@ -1985,6 +1986,70 @@ def joint_consensus_from_measurements(region: dict[str, Any], passes: list[dict[
             'validation_errors': errors, 'independent_passes': passes}
 
 
+def joint_pair_evidence(
+    report: dict[str, Any], *, expected_region: dict[str, Any],
+    expected_fingerprint: str, duration: float,
+) -> dict[str, Any]:
+    """Recover agreeing pairs without accepting an otherwise failed region."""
+    if (report.get("input_fingerprint") != expected_fingerprint
+            or report.get("region") != expected_region):
+        raise ValueError("joint evidence source/region fingerprint differs")
+    passes = report.get("passes")
+    if not isinstance(passes, list) or len(passes) != 2:
+        raise ValueError("joint evidence requires two independent saved passes")
+    checked = []
+    for index, saved in enumerate(passes):
+        region = {**expected_region, "clip_start": max(0., expected_region["clip_start"] - 10. * index)}
+        if saved.get("region") != region:
+            raise ValueError("joint evidence independent clip/context differs")
+        validated = validate_joint_timing_pass(region, saved.get("response", {}).get("packet", {}), duration)
+        if validated["validation_errors"]:
+            raise ValueError("joint evidence has invalid full packet: " + "; ".join(validated["validation_errors"]))
+        checked.append(validated["starts"])
+    agreed, held = [], []
+    targets = expanded_timing_targets(expected_region["target_occurrences"])
+    for target, first, second in zip(targets, *checked):
+        if abs(first["start"] - second["start"]) > .5:
+            held.append(target["timing_id"])
+        else:
+            agreed.append({**target, "start": round((first["start"] + second["start"]) / 2, 3),
+                           "measurements": [first["start"], second["start"]]})
+    return {"agreed": agreed, "held_timing_ids": held}
+
+
+def assemble_joint_pair_evidence(
+    occurrences: list[dict[str, Any]], pairs: list[dict[str, Any]], duration: float,
+) -> dict[str, Any]:
+    """Require complete exact repeat-level evidence before deriving display times."""
+    expanded = expanded_timing_targets(occurrences)
+    by_id = {}
+    for pair in pairs:
+        timing_id = pair.get("timing_id")
+        if not isinstance(timing_id, str) or timing_id in by_id:
+            raise ValueError("duplicate/invalid retained timing ID")
+        by_id[timing_id] = pair
+    if set(by_id) != {row["timing_id"] for row in expanded}:
+        raise ValueError("joint evidence does not cover every expanded performance")
+    previous = -1.
+    selected, display = [], []
+    for target in expanded:
+        pair = by_id[target["timing_id"]]
+        if any(pair.get(key) != value for key, value in target.items()):
+            raise ValueError("joint evidence source/order/identity changed")
+        point = pair.get("start")
+        if type(point) not in (int, float) or not math.isfinite(point) or not previous < point < duration:
+            raise ValueError("joint evidence is non-increasing or outside duration")
+        previous = point
+        selected.append({"timing_id": target["timing_id"], "start": point})
+        if target["repeat_index"] == 1:
+            display.append({"occurrence_id": target["occurrence_id"], "start": point})
+    sequence, errors, uncertain = timing_sequence_from_response(
+        occurrences, {"starts": display, "uncertain_occurrence_ids": []}, duration)
+    if errors or uncertain:
+        raise ValueError("joint evidence display sequence invalid: " + "; ".join(errors))
+    return {"sequence": sequence, "expanded_starts": selected}
+
+
 def retained_timing_measurements(occurrences: list[dict[str, Any]], reports: list[dict[str, Any]], duration: float,
                                  *, require_consensus: bool = False) -> dict[str, float]:
     """Recover real audio measurements; old coarse-distance veto is not evidence.
@@ -2188,12 +2253,149 @@ Return every timing_id exactly once in order, with start, uncertainty, and onset
     return result
 
 
+def joint_region_fingerprint(audio_sha256, region, duration, source_identity):
+    identity = {"version": 2, "audio_sha256": audio_sha256, "source_identity": source_identity,
+                "ordered_occurrences": region["target_occurrences"], "region": region, "duration": duration}
+    return hashlib.sha256(json.dumps(identity, ensure_ascii=False, sort_keys=True, allow_nan=False).encode()).hexdigest()
+
+
+def validate_joint_region_source(region, occurrences, duration):
+    by_id = {row["occurrence_id"]: (index, row) for index, row in enumerate(occurrences)}
+    indices = []
+    for row in region.get("target_occurrences", []):
+        original = by_id.get(row.get("occurrence_id"))
+        clean = {key: value for key, value in row.items() if key not in {"coarse_source_start", "routing_only"}}
+        if original is None or clean != original[1]:
+            raise ValueError("continuation region changes audited source occurrence")
+        indices.append(original[0])
+    if not indices or indices != sorted(set(indices)) or region.get("target_indices") != indices:
+        raise ValueError("continuation region changes target order/indices")
+    left, right = region.get("clip_start"), region.get("clip_end")
+    if (type(left) not in (int, float) or type(right) not in (int, float)
+            or not 0 <= left < right <= duration):
+        raise ValueError("continuation region has invalid audio bounds")
+    for key, index in (("preceding_context", indices[0] - 1), ("following_context", indices[-1] + 1)):
+        expected = occurrences[index] if 0 <= index < len(occurrences) else None
+        if region.get(key) != expected:
+            raise ValueError("continuation region context changes audited order")
+
+
+def selected_joint_pairs(evidence, occurrences, duration, audio_sha256, source_identity):
+    pairs = []
+    for item in evidence:
+        region = item["region"]
+        validate_joint_region_source(region, occurrences, duration)
+        fingerprint = joint_region_fingerprint(audio_sha256, region, duration, source_identity)
+        if item.get("input_fingerprint") != fingerprint:
+            raise ValueError("joint selection audio/source fingerprint differs")
+        checked = joint_pair_evidence(item["report"], expected_region=region,
+                                     expected_fingerprint=fingerprint, duration=duration)
+        by_id = {row["timing_id"]: row for row in checked["agreed"]}
+        selected = item.get("select_timing_ids")
+        if (not isinstance(selected, list) or not selected or len(set(selected)) != len(selected)
+                or not set(selected).issubset(by_id)):
+            raise ValueError("joint selection includes missing or held measurements")
+        pairs.extend(copy.deepcopy(by_id[timing_id]) for timing_id in selected)
+    return pairs
+
+
+def align_joint_continuation(song_dir, audio, occurrences, duration, options):
+    declaration = options.timing_joint_continuation
+    plan_path = Path(declaration["path"])
+    plan_bytes = plan_path.read_bytes()
+    plan_hash = hashlib.sha256(plan_bytes).hexdigest()
+    if plan_hash != declaration.get("sha256"):
+        raise ValueError("joint continuation plan hash changed")
+    plan = json.loads(plan_bytes)
+    audio_hash = hashlib.sha256(audio.read_bytes()).hexdigest()
+    source_identity = options.timing_source_identity
+    if (plan.get("version") != 1 or plan.get("audio_sha256") != audio_hash
+            or plan.get("source_identity") != source_identity
+            or plan.get("ordered_occurrences") != occurrences
+            or plan.get("duration_seconds") != duration):
+        raise ValueError("joint continuation changed frozen audio/source/order")
+    evidence = []
+    for saved in plan.get("retained", []):
+        raw = Path(saved["path"]).read_bytes()
+        if hashlib.sha256(raw).hexdigest() != saved.get("sha256"):
+            raise ValueError("retained joint report hash changed")
+        evidence.append({"region": saved["region"], "input_fingerprint": saved["input_fingerprint"],
+                         "select_timing_ids": saved["select_timing_ids"], "report": json.loads(raw),
+                         "original_report_sha256": saved["sha256"]})
+    retained = selected_joint_pairs(evidence, occurrences, duration, audio_hash, source_identity)
+    required = [row["timing_id"] for row in expanded_timing_targets(occurrences)]
+    declared = [row["timing_id"] for row in retained]
+    for pending in plan.get("pending", []):
+        validate_joint_region_source(pending["region"], occurrences, duration)
+        available = {row["timing_id"] for row in expanded_timing_targets(pending["region"]["target_occurrences"])}
+        selected = pending.get("select_timing_ids")
+        if not isinstance(selected, list) or not selected or not set(selected).issubset(available):
+            raise ValueError("pending joint scope has invalid selected IDs")
+        declared.extend(selected)
+    if len(declared) != len(set(declared)) or set(declared) != set(required):
+        raise ValueError("continuation must cover every repeat exactly once")
+    retained_by_id = {row["timing_id"]: row for row in retained}
+    previous = -1.
+    for timing_id in required:
+        if timing_id in retained_by_id:
+            point = retained_by_id[timing_id]["start"]
+            if point <= previous:
+                raise ValueError("retained joint measurements are globally non-increasing")
+            previous = point
+    destination = song_dir / ".transcription/pipeline/joint-continuations" / plan_hash
+    destination.mkdir(parents=True, exist_ok=True)
+    receipt = {"plan_sha256": plan_hash, "audio_sha256": audio_hash,
+               "source_identity": source_identity, "evidence": evidence, "pairs": retained}
+    receipt_path = destination / "retained.json"
+    if receipt_path.exists():
+        if read_packet(receipt_path) != receipt:
+            raise ValueError("durable retained joint receipt changed")
+    else:
+        write_json(receipt_path, receipt)
+    for pending in plan.get("pending", []):
+        region = pending["region"]
+        report = run_joint_timing_unit(song_dir, audio, region, duration, options, source_identity)
+        item = {"region": region, "input_fingerprint": joint_region_fingerprint(audio_hash, region, duration, source_identity),
+                "select_timing_ids": pending["select_timing_ids"], "report": report}
+        # Revalidate accepted output and selection before recording progress.
+        selected_joint_pairs([item], occurrences, duration, audio_hash, source_identity)
+        evidence.append(item)
+        write_json(destination / "progress.json", {"plan_sha256": plan_hash, "evidence": evidence})
+    assembled = assemble_joint_pair_evidence(
+        occurrences, selected_joint_pairs(evidence, occurrences, duration, audio_hash, source_identity), duration)
+    selection = {"kind": "joint-selection", "plan_sha256": plan_hash, "audio_sha256": audio_hash,
+                 "source_identity": source_identity, "ordered_occurrences": occurrences,
+                 "duration_seconds": duration, "evidence": evidence,
+                 "expanded_starts": assembled["expanded_starts"]}
+    write_json(destination / "accepted-selection.json", selection)
+    return assembled["sequence"], [selection], []
+
+
+def joint_selection_errors(selection, timing):
+    try:
+        occurrences = timing["ordered_occurrences"]
+        duration = timing["duration_seconds"]
+        if (selection["source_identity"] != timing["source_identity"]
+                or selection["ordered_occurrences"] != occurrences or selection["duration_seconds"] != duration):
+            raise ValueError("selected joint source/order/duration changed")
+        pairs = selected_joint_pairs(selection["evidence"], occurrences, duration,
+                                     selection["audio_sha256"], timing["source_identity"])
+        assembled = assemble_joint_pair_evidence(occurrences, pairs, duration)
+        if assembled["sequence"] != timing["sequence"] or assembled["expanded_starts"] != selection["expanded_starts"]:
+            raise ValueError("selected timing differs from independently revalidated joint pairs")
+        return []
+    except (KeyError, TypeError, ValueError) as exc:
+        return ["joint selection lacks complete independent evidence: " + str(exc)]
+
+
 def align_long_segments(
     song_dir: Path, audio: Path, audited: dict[str, Any], occurrences: list[dict[str, Any]],
     coarse_sequence: list[dict[str, Any]], duration: float, options: argparse.Namespace,
     prior_refinements: list[dict[str, Any]] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[str]]:
     """Jointly locate repeated regions before independent bounded verification."""
+    if getattr(options, "timing_joint_continuation", None) is not None:
+        return align_joint_continuation(song_dir, audio, occurrences, duration, options)
     plan=plan_joint_timing_regions(occurrences,coarse_sequence,audited,duration,prior_refinements or [])
     starts=dict(plan['retained_starts']);reports=list(prior_refinements or [])
     source_identity=getattr(options,'timing_source_identity',{})
@@ -2228,6 +2430,9 @@ def single_start_uncertainty_errors(packet: dict[str, Any]) -> list[str]:
 def timing_uncertainty_errors(timing: dict[str, Any]) -> list[str]:
     """Recheck selected cached evidence, allowing later clean repairs to supersede it."""
     errors = []
+    for report in timing.get("refinements", []):
+        if report.get("kind") == "joint-selection":
+            errors.extend(joint_selection_errors(report, timing))
     if timing.get("uncertain_occurrence_ids"):
         errors.append("timing has unresolved uncertain occurrence IDs")
     selected = {item.get("occurrence_id"): item.get("start")
@@ -2804,7 +3009,9 @@ Translate ordinary words and philosophical concepts into precise English, using 
 {bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}
 
 For every lexical word, return exactly one sense_decisions item in word-index order.
-Copy word_index and roman from TOKEN CANDIDATES. Account for every supplied
+Copy word_index and roman from tokens in COMPACT LEXICAL EVIDENCE.
+Use each token’s candidate_entry_ids to locate the complete entries and all their senses.
+Account for every supplied
 (entry_id, sense_id) exactly once in chosen or rejected. Explain rejected senses,
 the chosen contextual meaning (including any deliberate simultaneous senses), and
 the grammatical role. dictionary_supported requires a selected supplied sense;
@@ -2813,9 +3020,6 @@ when no entry fits or no dictionary is supplied for this language. Do not invent
 missing_evidence means you cannot resolve the meaning, not a mere dictionary gap.
 The primary word gloss must express the choice, and the semantic frame must agree.
 These are your proposed interpretations, awaiting independent review.
-
-TOKEN CANDIDATES (complete surface bindings, not preselected meanings):
-{json.dumps(bhakti_translation_policy.token_candidates(batch, languages), ensure_ascii=False)}
 
 CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
@@ -3015,6 +3219,158 @@ def select_translation_review_rows(
     return [by_id[line_id] for line_id in target_ids]
 
 
+def translation_reading_context(lines, gloss_rows, translation_rows, target_ids, *,
+                                performance_order=(), full_evidence=()):
+    """Bounded current English/gloss context, never additional output targets.
+
+    Target evidence wins over older full-context duplicates. All selected records
+    must exist; missing context and overflow fail before any reviewer dispatch.
+    """
+    evidence = {}
+    explicit_refs = set()
+    for row in full_evidence:
+        if not isinstance(row, dict) or not isinstance(row.get("source"), dict):
+            raise ValueError("translation context record lacks source")
+        line_id = row["source"].get("id")
+        if not isinstance(line_id, str) or not line_id:
+            raise ValueError("translation context source lacks ID")
+        if row.get("explicit_reference"):
+            explicit_refs.add(line_id)
+        value = {key: copy.deepcopy(row.get(key)) for key in ("source", "gloss", "draft")}
+        if (line_id in evidence and evidence[line_id] != value
+                and line_id not in {line.get("id") for line in lines}):
+            raise ValueError("translation context has conflicting duplicate evidence")
+        evidence[line_id] = value
+    def indexed(rows, label):
+        found = {}
+        for row in rows:
+            if not isinstance(row, dict) or not isinstance(row.get("id"), str) or row["id"] in found:
+                raise ValueError("translation context has invalid/duplicate " + label)
+            found[row["id"]] = row
+        return found
+    source_by_id = indexed(lines, "source")
+    gloss_by_id = indexed(gloss_rows, "gloss")
+    draft_by_id = indexed(translation_rows, "draft")
+    for line_id, line in source_by_id.items():
+        evidence[line_id] = {"source": copy.deepcopy(line),
+            "gloss": copy.deepcopy(gloss_by_id.get(line_id)),
+            "draft": copy.deepcopy(draft_by_id.get(line_id))}
+    if (not isinstance(target_ids, list) or len(target_ids) != len(set(target_ids))
+            or any(line_id not in evidence for line_id in target_ids)):
+        raise ValueError("translation context has invalid target IDs")
+    order_basis = "performed-order" if performance_order else "definition-order-unverified"
+    raw_order = performance_order or [{"line_id": line_id} for line_id in evidence]
+    occurrences = []
+    counts = {}
+    for event in raw_order:
+        if not isinstance(event, dict):
+            raise ValueError("translation context order event is invalid")
+        line_id = event.get("line_id", event.get("ref"))
+        repeats = event.get("repeats", 1)
+        if (line_id not in evidence or type(repeats) is not int or repeats < 1):
+            raise ValueError("translation context has unknown reference or invalid repeats")
+        for repeat in range(repeats):
+            counts[line_id] = counts.get(line_id, 0) + 1
+            occurrences.append({"line_id": line_id, "occurrence": counts[line_id], "repeat_index": repeat})
+    seeds = set(target_ids) | explicit_refs
+    relations = []
+    # Follow only actual target/referenced relations, not every incidental neighbor.
+    pending = list(seeds)
+    visited = set()
+    while pending:
+        line_id = pending.pop(0)
+        if line_id in visited:
+            continue
+        visited.add(line_id)
+        row = evidence.get(line_id)
+        if not row or not isinstance(row.get("gloss"), dict):
+            raise ValueError("translation context lacks referenced gloss: " + line_id)
+        relation = row["gloss"].get("semantic_frame", {}).get("cross_line_relation", "")
+        if relation:
+            relations.append({"line_id": line_id, "cross_line_relation": relation})
+            for known_id in evidence:
+                if re.search(r"(?<![\w-])" + re.escape(known_id) + r"(?![\w-])", str(relation)):
+                    if known_id not in seeds:
+                        seeds.add(known_id)
+                        pending.append(known_id)
+    intervals = []
+    seen_seeds = set()
+    for index, event in enumerate(occurrences):
+        if event["line_id"] in seeds:
+            seen_seeds.add(event["line_id"])
+            start, end = max(0, index - 3), min(len(occurrences), index + 4)
+            if intervals and start <= intervals[-1][1]:
+                intervals[-1][1] = max(intervals[-1][1], end)
+            else:
+                intervals.append([start, end])
+    if seeds - seen_seeds:
+        raise ValueError("translation context target/reference absent from order")
+    selected = []
+    windows = []
+    for start, end in intervals:
+        window = occurrences[start:end]
+        windows.append({"occurrences": window,
+                        "target_ids": [i for i in target_ids if any(o["line_id"] == i for o in window)]})
+        for occurrence in window:
+            if occurrence["line_id"] not in selected:
+                selected.append(occurrence["line_id"])
+    context_ids = [i for i in selected if i not in target_ids]
+    if len(context_ids) > 80:
+        raise ValueError("translation context exceeds 80-row scope limit")
+    for line_id in selected:
+        row = evidence[line_id]
+        if any(not isinstance(row.get(key), dict) or row[key].get("id") != line_id
+               for key in ("source", "gloss", "draft")):
+            raise ValueError("translation context lacks source/gloss/draft: " + line_id)
+        if not isinstance(row["draft"].get("literal_english"), str):
+            raise ValueError("translation context lacks English: " + line_id)
+    return {"version": 1, "order_basis": order_basis, "targets": list(target_ids),
+            "context_rows": [evidence[i] for i in context_ids],
+            "reading_windows": windows, "relation_notes": sorted(relations, key=lambda row: row["line_id"]), "scope_issues": []}
+
+
+def translation_review_payload(target_evidence: list[dict[str, Any]], reading_context: dict[str, Any]) -> dict[str, Any]:
+    """One source definition per supplied row; actual windows own adjacency.
+
+    Lexical retrieval still receives the original rich source internally. Only
+    redundant nested neighbor copies are removed from the review payload.
+    """
+    targets = copy.deepcopy(target_evidence)
+    reading = copy.deepcopy(reading_context)
+    if not isinstance(reading, dict) or not isinstance(reading.get("context_rows"), list):
+        raise ValueError("review payload requires bounded reading context")
+    expected = reading.get("targets")
+    if not isinstance(targets, list) or not targets or not isinstance(expected, list):
+        raise ValueError("review payload requires exact target evidence")
+    supplied = set()
+    target_ids = []
+    for index, row in enumerate(targets + reading["context_rows"]):
+        if not isinstance(row, dict) or not isinstance(row.get("source"), dict):
+            raise ValueError("review payload row lacks source")
+        line_id = row["source"].get("id")
+        if not isinstance(line_id, str) or not line_id or line_id in supplied:
+            raise ValueError("review payload has missing or duplicate source definition")
+        supplied.add(line_id)
+        if index < len(targets): target_ids.append(line_id)
+        row["source"].pop("performed_context", None)
+    if target_ids != expected:
+        raise ValueError("review payload target IDs differ from reading obligations")
+    windows = reading.get("reading_windows")
+    if not isinstance(windows, list) or not windows:
+        raise ValueError("review payload lacks performed reading windows")
+    referenced = set()
+    for window in windows:
+        if not isinstance(window, dict) or not isinstance(window.get("occurrences"), list):
+            raise ValueError("review payload has invalid reading window")
+        for occurrence in window["occurrences"]:
+            if not isinstance(occurrence, dict) or occurrence.get("line_id") not in supplied:
+                raise ValueError("review payload window refers to an absent source definition")
+            referenced.add(occurrence["line_id"])
+    if referenced != supplied:
+        raise ValueError("review payload has unbound source definitions")
+    return {"target_evidence": targets, "reading_context": reading}
+
+
 def independently_review_translations(
     song_dir: Path, lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
     translation_rows: list[dict[str, Any]], provided_translation: str, options: argparse.Namespace,
@@ -3023,7 +3379,7 @@ def independently_review_translations(
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
     policy = semantic_stage_policy(options)
-    policy = {**policy, 'pending_findings': getattr(options, 'semantic_pending_findings', []),
+    policy = {**policy, 'review_payload_contract': 1, 'pending_findings': getattr(options, 'semantic_pending_findings', []),
               'repair_findings': getattr(options, 'semantic_repair_findings', [])}
     review_schema = translation_review_schema()
     if getattr(options, 'semantic_repair_findings', []):
@@ -3040,20 +3396,55 @@ def independently_review_translations(
     # gateway output ceiling on long works. Twenty-line parent caches, issued as
     # ten-line requests below, keep evidence complete without a failed response.
     batches = [lines[index:index + 20] for index in range(0, len(lines), 20)]
+    # Preflight every eventual request before workers can spend on an earlier one.
+    full_evidence = list(getattr(options, "semantic_context_evidence", []))
+    full_evidence.extend({**row, "explicit_reference": True}
+                         for row in getattr(options, "semantic_distant_context", []))
+    reading_contexts = {}
+    for batch in batches:
+        for offset in range(0, len(batch), 10):
+            ids = tuple(line["id"] for line in batch[offset:offset + 10])
+            reading_contexts[ids] = translation_reading_context(
+                lines, gloss_rows, translation_rows, list(ids),
+                performance_order=getattr(options, "semantic_performance_order", []),
+                full_evidence=full_evidence)
+    review_payloads = {}
+    source_by_id = {line["id"]: line for line in lines}
+    for ids, reading in reading_contexts.items():
+        evidence = [{"source": source_by_id[line_id], "gloss": gloss_by_id[line_id],
+                     "draft": translation_by_id[line_id]} for line_id in ids]
+        review_payloads[ids] = translation_review_payload(evidence, reading)
     cache_dir = song_dir / ".transcription" / "pipeline" / "translation-review-batches"
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     def select_response(response, target_ids, source_context, label):
+        context_ids = list(target_ids)
+        for ids, reading in reading_contexts.items():
+            if set(target_ids).intersection(ids):
+                context_ids.extend(row["source"]["id"] for row in reading["context_rows"])
+        context_ids = list(dict.fromkeys(context_ids))
         observer = getattr(options, 'semantic_review_observer', None)
         if observer is not None:
-            observer(copy.deepcopy(response), list(target_ids), str(label))
+            observer(copy.deepcopy(response), list(target_ids), str(label), context_ids)
         reviews = stage_model_rows(response, 'reviews', options)
-        context_ids = [line["id"] for line in
-                       [*getattr(options, "semantic_full_source", []), *source_context]]
         try:
             selected = select_translation_review_rows(reviews, target_ids, context_ids)
         except ValueError as exc:
             stage_quality_failure(options, f"translation review batch {label}: {exc}")
+        if observer is None:
+            # Journal-aware audits retain these separately. Other callers must
+            # hold rather than silently discard material or malformed context.
+            fidelity = ("passes", "agency_preserved", "imagery_preserved",
+                        "all_meaning_accounted_for")
+            unresolved = [row["id"] for row in reviews if row["id"] not in target_ids
+                and (any(row.get(flag) is not True for flag in fidelity)
+                     or row.get("human_review_recommended") is not False
+                     or row.get("issues") != [] or row.get("unsupported_additions") != []
+                     or any(not isinstance(row.get(key), str) for key in ("reason", "material_choice")))]
+            if unresolved:
+                stage_quality_failure(options,
+                    f"translation review has unresolved or malformed context dependencies: {unresolved}",
+                    kind="unresolved_context")
         # Keep the provider response and its flags intact in candidate-*.json.
         result = copy.deepcopy(response)
         result["packet"]["reviews"] = copy.deepcopy(selected)
@@ -3073,7 +3464,8 @@ def independently_review_translations(
                      "draft": translation_by_id[line["id"]]} for line in batch]
         fingerprint = text_stage_fingerprint("translation-review", options.model,
             {"evidence": evidence, "context": context, "provided_translation": provided_translation,
-             "languages": languages}, policy)
+             "languages": languages, "reading_context": [reading_contexts[tuple(expected[offset:offset + 10])]
+                 for offset in range(0, len(expected), 10)]}, policy)
         path = cache_dir / f"batch-{index:03d}.json"
         cached = read_packet(path)
         if cached and cached.get("fingerprint") == fingerprint and not options.force:
@@ -3081,6 +3473,8 @@ def independently_review_translations(
             result["response"] = select_response(cached.get("response"), expected, context, str(index))
             return result
         def review_prompt(target_evidence: list[dict[str, Any]], source_context: list[dict[str, Any]]) -> str:
+            payload = review_payloads[tuple(item["source"]["id"] for item in target_evidence)]
+            reading = payload["reading_context"]
             return f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
 
 For each line, first derive agency and grammatical attachment from the source and actual neighboring source lines before comparing the supplied semantic frame, indexed glosses, grammar and draft. Flag contradictory attachments even if uncertainty is reported as none, a name gloss that merely repeats its name, and unsupported claims in the frame rather than inheriting them as facts. Check separately: grammatical agency/experiencer; literal image and metaphor; every negation, modality, modifier and emphasis; unsupported additions; and whether two defensible readings differ materially in agency, metaphor, ambiguity, or poetic force.
@@ -3099,9 +3493,6 @@ Check that each English segment uses the same contextual sense as the gloss at i
 
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
-AUDITED PERFORMANCE ORDER:
-{json.dumps(getattr(options, 'semantic_performance_order', []), ensure_ascii=False)}
-
 ORIGINAL READER ROWS FOR REPAIR COMPARISON:
 {json.dumps(getattr(options, 'semantic_original_reader', None), ensure_ascii=False)}
 
@@ -3117,21 +3508,19 @@ FINDING OBLIGATIONS FOR THIS REPAIR:
 When repair obligations are supplied, return finding_dispositions for each obligation on its target row. Use its exact finding_id and source_quote; explain whether the actual changed gloss/English remedies the original objection while preserving the original valid meaning. Mark repaired only when this precise obligation is corrected, otherwise unresolved. Clean overall fidelity or merely different wording is not a disposition. Never use this field to dismiss an open choice or to approve rewriting supplied owner English.
 
 
-FULL SOURCE CONTEXT (context only; not additional output targets):
-{json.dumps(getattr(options, 'semantic_full_source', []), ensure_ascii=False)}
+Read the draft English continuously through the occurrence windows below before judging targets. Check complete clause attachment, subject/verb/complement, misleading modifier attachment and intelligibility while retaining supported poetic strangeness and repetition. Do not require each deliberately continued line to be a separate sentence. Judge the assembled current candidate. Context rows are not output targets: cite a context-only defect as a dependency through the existing target issue rather than silently rewriting or approving that row. Synonym polishing is not a grammatical defect.
 
-REFERENCED DISTANT SEMANTIC CONTEXT (context only):
-{json.dumps(getattr(options, 'semantic_distant_context', []), ensure_ascii=False)}
+Source definitions appear once: targets in EVIDENCE and other rows in context_rows. reading_windows preserve the relevant performed order and each explicit repetition; separate windows are separate passages, never adjacent merely because listed together. relation_notes retain explicit distant dependencies.
 
-NEARBY SOURCE CONTEXT (context only; do not return these IDs):
-{json.dumps(source_context, ensure_ascii=False)}
+ENGLISH READING CONTEXT (context only; target obligations unchanged):
+{json.dumps(reading, ensure_ascii=False)}
 
 OUTPUT TARGET IDS (return exactly these, once each):
 {json.dumps([item["source"]["id"] for item in target_evidence], ensure_ascii=False)}
 Do not return reviews for any other ID appearing in context.
 
 EVIDENCE:
-{json.dumps(target_evidence, ensure_ascii=False)}
+{json.dumps(payload["target_evidence"], ensure_ascii=False)}
 
 LOCKED HUMAN TRANSLATION (or none):
 {provided_translation}"""
@@ -3154,7 +3543,7 @@ LOCKED HUMAN TRANSLATION (or none):
                 child_context = nearby_text_context(lines, index * 20 + offset, len(child_evidence))
                 child_fingerprint = text_stage_fingerprint("translation-review", options.model,
                     {"evidence": child_evidence, "context": child_context, "provided_translation": provided_translation,
-                     "languages": languages}, policy)
+                     "languages": languages, "reading_context": reading_contexts[tuple(child_ids)]}, policy)
                 child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
                 child_packet = read_packet(child_path)
                 if not (child_packet and child_packet.get("fingerprint") == child_fingerprint
@@ -3210,7 +3599,10 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     policy = semantic_stage_policy(options)
     fingerprint = text_stage_fingerprint("translation", options.model,
         {"lines": lines, "glosses": gloss_rows, "provided_translation": provided_translation,
-         "languages": languages}, policy)
+         "languages": languages, "reading_context_contract": 1,
+         "reading_context_evidence": getattr(options, "semantic_context_evidence", []),
+         "reading_performance_order": getattr(options, "semantic_performance_order",
+             audited["packet"].get("performance_order", []))}, policy)
     existing = read_packet(target)
     if (existing and existing.get("fingerprint") == fingerprint and not options.force
             and existing.get("input_contract_version") == TRANSLATION_INPUT_VERSION):
@@ -3418,6 +3810,8 @@ Return strict JSON:
     semantic_write_json(candidate_path, result)
     bhakti_semantic_repair.assert_baseline(getattr(options, 'semantic_baseline', None), result['packet']['translations'])
     review_options = copy.copy(options)
+    review_options.semantic_performance_order = copy.deepcopy(
+        getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))
     if hasattr(options, 'semantic_deadline_at'):
         # All final review batches bind the complete assembled evidence. Their
         # payload stays bounded: full source, targets, explicit distant refs.

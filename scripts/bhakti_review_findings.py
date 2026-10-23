@@ -46,7 +46,8 @@ def _context_identity(lines, glosses, reader_digest, dependency_fingerprint):
             'context_digest': digest({'lines': lines, 'glosses': glosses})}
 
 
-def classify_review(artifact, *, lines, glosses, reader_digest, dependency_fingerprint):
+def _classify_rows(artifact, *, lines, glosses, reader_digest, dependency_fingerprint,
+                   expected_review_ids=None):
     """Classify each unambiguous row; malformed siblings do not erase findings.
 
     A mismatched envelope cannot be adopted at all and raises ValueError. Row and
@@ -67,12 +68,12 @@ def classify_review(artifact, *, lines, glosses, reader_digest, dependency_finge
     reviews = artifact.get('reviews')
     if not isinstance(reviews, list):
         return {'contract_errors': ['review list missing'], 'findings': [], 'observations': []}
-    expected = [line['id'] for line in lines]
+    known = {line['id'] for line in lines}
+    expected = [line['id'] for line in lines] if expected_review_ids is None else expected_review_ids
     ids = [row.get('id') if isinstance(row, dict) else None for row in reviews]
     if ids != expected:
         errors.append('current review IDs incomplete, duplicated, unknown or reordered')
     counts = Counter(value for value in ids if isinstance(value, str))
-    known = set(expected)
     review_digest = digest(artifact)
     recorded_issues = []
     for row in reviews:
@@ -134,6 +135,70 @@ def classify_review(artifact, *, lines, glosses, reader_digest, dependency_finge
     unique_findings = {finding['finding_id']: finding for finding in findings}
     return {'contract_errors': errors, 'findings': list(unique_findings.values()),
             'observations': observations}
+
+
+
+def classify_review(artifact, *, lines, glosses, reader_digest, dependency_fingerprint):
+    """Retain target findings and separately scoped context dependencies.
+
+    A context observation never authorizes a target rewrite. Its original packet
+    is part of the hash-bound artifact and is reclassified on every journal read.
+    """
+    context = dict(lines=lines, glosses=glosses, reader_digest=reader_digest,
+                   dependency_fingerprint=dependency_fingerprint)
+    result = _classify_rows(artifact, **context)
+    packets = artifact.get('context_review_packets', [])
+    if not isinstance(packets, list):
+        result['contract_errors'].append('context review packets must be an array')
+        return result
+    known = {line['id'] for line in lines}
+    labels = set()
+    for packet in packets:
+        if not isinstance(packet, dict):
+            result['contract_errors'].append('context review packet must be an object')
+            continue
+        label = packet.get('label')
+        targets = packet.get('target_ids'); context_ids = packet.get('context_ids')
+        if (not isinstance(label, str) or not label or label in labels
+                or any(not isinstance(ids, list)
+                       or any(not isinstance(value, str) or value not in known for value in ids)
+                       or len(ids) != len(set(ids)) for ids in (targets, context_ids))
+                or not targets):
+            result['contract_errors'].append('context review scope is invalid or duplicated')
+            continue
+        labels.add(label)
+        response = packet.get('response')
+        body = response.get('packet') if isinstance(response, dict) else None
+        rows = body.get('reviews') if isinstance(body, dict) else None
+        if not isinstance(rows, list):
+            result['contract_errors'].append('context review response has no review array')
+            continue
+        # The original request scope, not mere membership in the reader, decides
+        # whether a row was context. Unknown rows remain contract failures.
+        scope_ids = set(targets) | set(context_ids)
+        if any(not isinstance(row, dict) or not isinstance(row.get('id'), str)
+               or row['id'] not in scope_ids for row in rows):
+            result['contract_errors'].append('context response contains an unknown or malformed row')
+        extra = [row for row in rows if isinstance(row, dict)
+                 and isinstance(row.get('id'), str)
+                 and row['id'] in context_ids and row['id'] not in targets]
+        if not extra:
+            continue
+        subset = {key: artifact[key] for key in
+                  ('reader_digest', 'dependency_fingerprint', 'attempt_id')}
+        subset.update(reviews=extra, issues=[issue for row in extra
+            if isinstance(row.get('issues'), list) for issue in row['issues']])
+        classified = _classify_rows(subset, **context,
+                                    expected_review_ids=[row['id'] for row in extra])
+        result['contract_errors'].extend(classified['contract_errors'])
+        for finding in classified['findings']:
+            retained = {key: value for key, value in finding.items() if key != 'finding_id'}
+            retained.update(kind='context_dependency', observed_kind=finding['kind'],
+                review_digest=digest(artifact), context_scope={
+                    'label': label, 'target_ids': copy.deepcopy(targets),
+                    'context_ids': copy.deepcopy(context_ids), 'response_digest': digest(response)})
+            result['findings'].append({**retained, 'finding_id': digest(retained)})
+    return result
 
 
 def _entry(artifact, context):

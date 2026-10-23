@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "source_request_sha256": "4925b3e298f2f2791b039ce10a0fb0399269fa554a65e2575882050d73e7dc6e",
+  "entries": [
+    {
+      "dictionary": {
+        "entry_html_sha256": "900de6bdb6273b59020352484cb1d9e1d428a84d07bb1914903d683159b03767",
+        "entry_locator": "باني बानी bānī; homograph 1 on printed page 128",
+        "evidence_status": "direct dictionary HTML; no semantic sense selection",
+        "headword_text": "باني बानी bānī",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "license": "CC BY-NC-ND 2.0; private candidate index only",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "print_page": 128,
+        "query": "बानी",
+        "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AC%E0%A4%BE%E0%A4%A8%E0%A5%80&searchhws=yes&matchtype=exact",
+        "source_revision": "DSAL digitization, site reports June 2024; exact downloaded HTML bound by hash",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=128",
+        "whole_entry_text": "H باني बानी bānī [S. वर्ण+इका], s.f. Peculiar disposition or mental constitution; natural temper; profession, pretension; any property or virtue, &c. upon which one prides or plumes oneself; fabric, structure; price paid for making a thing or for doing a work (syn. banwāʼī); — a yellow earth with which potters ornament vessels; — ashes; — a measure of weight equal to eighty rupees: — bānī-par ānā (apnī), To take one's stand upon one's pretension, dignity, &c.; to be roused so as to let one's temper appear, to show one's natural wrath, &c.",
+        "witness_sha256": "bb233b1aa01ead71ed34b21e4461166128fd68ff5359b2e6859a5fbd3c932d9c",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)"
+      },
+      "entry_id": "platts1884.p128.hw6dc593d1524a1b3b.h1",
+      "language": "hi",
+      "lemma": "bānī",
+      "register": "classical Hindi / Hindustani, as covered by Platts1884",
+      "roman_search_aliases": [
+        "bānī"
+      ],
+      "senses": [
+        {
+          "context_hints": [],
+          "dictionary_anchor": "H باني बानी bānī [S. वर्ण+इका], s.f. Peculiar disposition or mental constitution; natural temper; profession, pretension; any property or virtue, &c. upon which one prides or plumes oneself; fabric, structure; price paid for making a thing or for doing a work (syn. banwāʼī); — a yellow earth with which potters ornament vessels; — ashes; — a measure of weight equal to eighty rupees: — bānī-par ānā (apnī), To take one's stand upon one's pretension, dignity, &c.; to be roused so as to let one's temper appear, to show one's natural wrath, &c.",
+          "granularity": "entry_context",
+          "prohibitions": [
+            "Entry context supplies alternatives; do not treat every listed meaning as simultaneously intended."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "platts1884.p128.hw6dc593d1524a1b3b.h1:entry",
+          "short_english": "H باني बानी bānī [S. वर्ण+इका], s.f. Peculiar disposition or mental constitution; natural temper; profession, pretension; any property or virtue, &c. upon which one prides or plumes oneself; fabric, structure; price paid for making a thing or for doing a work (syn. banwāʼī); — a yellow earth with which potters ornament vessels; — ashes; — a measure of weight equal to eighty rupees: — bānī-par ānā (apnī), To take one's stand upon one's pretension, dignity, &c.; to be roused so as to let one's temper appear, to show one's natural wrath, &c."
+        }
+      ],
+      "source_spellings": [
+        "बानी"
+      ]
+    },
+    {
+      "dictionary": {
+        "entry_html_sha256": "fe5c0576113b72d8bd46d3268e2b5e779e1d532eff07b1283e83cdd295fc14f2",
+        "entry_locator": "باني बानी bānī; homograph 2 on printed page 128",
+        "evidence_status": "direct dictionary HTML; no semantic sense selection",
+        "headword_text": "باني बानी bānī",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "license": "CC BY-NC-ND 2.0; private candidate index only",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "print_page": 128,
+        "query": "बानी",
+        "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AC%E0%A4%BE%E0%A4%A8%E0%A5%80&searchhws=yes&matchtype=exact",
+        "source_revision": "DSAL digitization, site reports June 2024; exact downloaded HTML bound by hash",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=128",
+        "whole_entry_text": "H باني बानी bānī [S. वाणि, rt. वे], s.f. Weaving; thread with which cloth is woven: — bānī-bonī, s.f. Price or cost of weaving.",
+        "witness_sha256": "bb233b1aa01ead71ed34b21e4461166128fd68ff5359b2e6859a5fbd3c932d9c",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)"
+      },
+      "entry_id": "platts1884.p128.hw6dc593d1524a1b3b.h2",
+      "language": "hi",
+      "lemma": "bānī",
+      "register": "classical Hindi / Hindustani, as covered by Platts1884",
+      "roman_search_aliases": [
+        "bānī"
+      ],
+      "senses": [
+        {
+          "context_hints": [],
+          "dictionary_anchor": "H باني बानी bānī [S. वाणि, rt. वे], s.f. Weaving; thread with which cloth is woven: — bānī-bonī, s.f. Price or cost of weaving.",
+          "granularity": "entry_context",
+          "prohibitions": [
+            "Entry context supplies alternatives; do not treat every listed meaning as simultaneously intended."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "platts1884.p128.hw6dc593d1524a1b3b.h2:entry",
+          "short_english": "H باني बानी bānī [S. वाणि, rt. वे], s.f. Weaving; thread with which cloth is woven: — bānī-bonī, s.f. Price or cost of weaving."
+        }
+      ],
+      "source_spellings": [
+        "बानी"
+      ]
+    },
+    {
+      "dictionary": {
+        "entry_html_sha256": "68157a8f57c4cf45be975d4c6961d31169b1d4e6d47b54ba71ce0b8fe83e349f",
+        "entry_locator": "باني बानी bānī; homograph 3 on printed page 128",
+        "evidence_status": "direct dictionary HTML; no semantic sense selection",
+        "headword_text": "باني बानी bānī",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "license": "CC BY-NC-ND 2.0; private candidate index only",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "print_page": 128,
+        "query": "बानी",
+        "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AC%E0%A4%BE%E0%A4%A8%E0%A5%80&searchhws=yes&matchtype=exact",
+        "source_revision": "DSAL digitization, site reports June 2024; exact downloaded HTML bound by hash",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=128",
+        "whole_entry_text": "H باني बानी bānī [S. वाणी, rt. वण्], s.f. Sound, note, voice; speech, word, language, discourse; precept, doctrine; sectarian verses of mendicants; name of the goddess of speech (Sarasvatī); — adj. (used in comp.), voiced, tongued, &c. (e.g. amr̤it-bānī).",
+        "witness_sha256": "bb233b1aa01ead71ed34b21e4461166128fd68ff5359b2e6859a5fbd3c932d9c",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)"
+      },
+      "entry_id": "platts1884.p128.hw6dc593d1524a1b3b.h3",
+      "language": "hi",
+      "lemma": "bānī",
+      "register": "classical Hindi / Hindustani, as covered by Platts1884",
+      "roman_search_aliases": [
+        "bānī"
+      ],
+      "senses": [
+        {
+          "context_hints": [],
+          "dictionary_anchor": "H باني बानी bānī [S. वाणी, rt. वण्], s.f. Sound, note, voice; speech, word, language, discourse; precept, doctrine; sectarian verses of mendicants; name of the goddess of speech (Sarasvatī); — adj. (used in comp.), voiced, tongued, &c. (e.g. amr̤it-bānī).",
+          "granularity": "entry_context",
+          "prohibitions": [
+            "Entry context supplies alternatives; do not treat every listed meaning as simultaneously intended."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "platts1884.p128.hw6dc593d1524a1b3b.h3:entry",
+          "short_english": "H باني बानी bānī [S. वाणी, rt. वण्], s.f. Sound, note, voice; speech, word, language, discourse; precept, doctrine; sectarian verses of mendicants; name of the goddess of speech (Sarasvatī); — adj. (used in comp.), voiced, tongued, &c. (e.g. amr̤it-bānī)."
+        }
+      ],
+      "source_spellings": [
+        "बानी"
+      ]
+    },
+    {
+      "dictionary": {
+        "entry_html_sha256": "e6c13453fdacf6f14e0b51279fb73d343cba2b56db30ea8d3072a8bf8f203e11",
+        "entry_locator": "من मन man; homograph 1 on printed page 1069",
+        "evidence_status": "direct dictionary HTML; no semantic sense selection",
+        "headword_text": "من मन man",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "license": "CC BY-NC-ND 2.0; private candidate index only",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "print_page": 1069,
+        "query": "मन",
+        "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AE%E0%A4%A8&searchhws=yes&matchtype=exact",
+        "source_revision": "DSAL digitization, site reports June 2024; exact downloaded HTML bound by hash",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=1069",
+        "whole_entry_text": "H من मन man [Prk. मणो; S. मनस्], s.m. The mind (considered as the seat of perception and passion); power of mind; intellect, intelligence, understanding, perception, sense; — the heart; soul; spirit; — inclination; will; purpose; — character, disposition, mood, temper: — man aṭaknā, or man ulajhnā, The mind or heart (of a person, kā, or merā) to be captivated (by, -se); to be enamoured (of), to fall in love (with): — man uṭhnā, or uṭh-jānā, The mind, or affection, or attention (of, -kā, or merā) to be removed or withdrawn (from, -se); to be estranged (from); to be tired (of), or disgusted (with): — manārth (˚na+ar˚), s.m. Object or desire of the mind; desire, intention, object, aim, purpose: — man uktānā, or uktājānā, The mind (of, -kā, or merā) to weary (of, -se), to be tired or sick (of): — man-bićār, s.m., and man-bidyā, s.f. = man-vidyā, q.v.: — man basnā (kisī-ke), To dwell in, or to fill, the mind (of a person): — man bhārī karnā, or man burā karnā, To load or burden the mind with sorrow or care; to give way to grief; to take to heart; — man burā karnā, To take offence, to be displeased: — man bhānā, v.n. To be agreeable to the mind, to please; — adj. = man-bhāwan, q.v.; — man bhānā munḍiyā hilānā, To shake the head disapprovingly at what is agreeable to the mind; to pretend to refuse that which one desires in his heart (e.g. man bhāʼe munḍiyā hilāʼe): — man-bhāʼū, or man-bhāwtā, or man bhāwan, or man-bhāʼonā, or man-bhāyā, (Braj) man-bhāyau, adj. & s.m. Grateful or agreeable to the mind or soul; acceptable; pleasing; amusing, diverting; beautiful, charming; — a beloved object, sweetheart, mistress: — man bharnā or bhar-jānā, The mind (of, -kā, or merā) to be filled or satisfied (by, -se); to be sated or cloyed: — man bahlānā (-kā, or apnā), To amuse or divert the mind (of); to divert oneself (with, -se): — man par ānā, or man-par lānā (-ke, or mere, or apne), To come, or to bring, into the mind; to purpose, resolve, determine: — man-pūraṇ, s.m. Satisfaction of mind; confidence: — man-pai (or man-pe) dharnā (apne) = man-par lānā: — man-ćāʼū, adv. With pleasure, willingly, cheerfully: — man-ćāhī, s.f. Self-will; wilfulness, waywardness, obstinacy: — man-ćāhī karnā, To be self-willed, to act wilfully, to be wayward: — man-ćalā, adj. Giving the mind (to); assiduous; intent, eager; zealous; active; — bold, brave, courageous; — generous, liberal; — distracted or unsound in mind, crazy, daft, mad: — man-ćalnā (-par), The mind, or heart, to go (after), to desire eagerly, to long (for), to be eager (for); — to be distracted in mind, to become crazy or mad: — man-ćalī, s.f. Eagerness of mind; assiduity; intentness; zeal; — boldness, courage; — generosity, liberality; — distraction of mind, craziness, madness: — man-ćor, s.m. (f. -nī, or -in, or -ī), Heart-stealer: — man-cītā, adj. Desired of the heart; desired, wished for, sought, contemplated: — man-jāt (S. mano-jāta), adj. & s.m. (dialec.) 'Mind-born'; — love; the god of love (i.q. Kām-dev): — man-dar-āwardī, adj. 'What comes into the mind'; fanciful; invented (speech, or story): — man denā (-ko), or man lānā (-par), To give, or to bring, the mind (to), to apply the mind (to); to attend (to): — man-ranjak, adj. (f. -ikā), Heart-delighting; pleasing to the mind, agreeable, gratifying: — man-ranjan, s.m. The act of pleasing the mind; captivation of the mind; pleasingness, agreeableness, loveliness, pleasantness; — adj. = man-ranjak, q.v.: — man-samjhautī, s.f. Reasoning with oneself; comforting or consoling oneself; submission; resignation: — man-kā ćītā, s.m. The desire of the heart: — man-kāmnā, s.f. Heart's desire; desire, wish; inclination; purpose: — man-kā mailā, or man-kā khoṭā, or man-kā kapṭī, adj. 'Of bad or evil mind'; disingenuous; deceitful; crafty: — man kaććā karnā, v.n. To lose heart; to give way; to droop, become discouraged or dispirited; — to break the heart or spirit (of another), to discourage; to deter: — man karnā (-kā), To have a mind (for), to desire: — man-kelā, s.m.(?) A kind of pastime (i.q. phal-bujhauwal, q.v.): — man-ke laḍḍū phoṛnā, or man-ke laḍḍū lurhānā, To break, or to roll, imaginary laḍḍūs (q.v.); to build castles in the air: — man-ke-man-meṅ, adv. In the very mind itself; in the depths or recesses of the mind or soul: — man-kī man-meṅ rahnā, The desire of the mind to remain in the mind, a desire to remain unsatisfied: — man-kī mauj, s.f. = man-mauj, q.v.: — man-gyān, s.m. = man-vidyā, q.v.: — man lānā (-par), or man lagānā (-meṅ), To bring, or to apply, the mind (to); to fix the mind (upon), to be attentive (to); to set the heart or affections (upon): — man-lagan, s.m. Heart-attachment; heart-engaging: — man lagnā (-meṅ), The mind to be fixed (on); to have the heart or affections set (upon); to take delight (in): — man lenā (-kā), To captivate the heart (of), to charm, to win; — to take the opinion or views (of); to fathom the thoughts (of); to sound; 'to feel the pulse (of)': — man-mārā, part. adj. & s.m. (f. -ī), Having the desire repressed or mortified; grieved, sad, dejected; — one whose desires are repressed, &c.: — man-mār rahnā, or man mār-ke baiṭh-rahnā, 'To repress desire and remain patient or quiet'; to suffer grief, or loss, &c. with patience: — man mārnā (apnā), To repress desire or feeling; to restrain oneself; to deny oneself (a pleasure, &c.); to abstain; — to be grieved or troubled in mind: — man-mān, s.m., and man-mānī, s.f. Heart's desire; choice: — man-mānā (f. -ī), and man-māntā, adj. According to one's wish or inclination; to one's heart's content; satisfactory; — agreeable, or pleasing to the mind; soothing; charming; — optional; at pleasure; — s.m. (f. -ī), A sweetheart, mistress; spouse: — man-māne, adv. As the mind may desire; to heart's content; ad libitum: — man-mānī, s.f. = man-mān; — adj. & adv. = man-māntā, q.v.: — man-mānī, s.f. Self-will, wilfulness; wantonness: — man-mānya, adj. Self-willed, wilful; wanton: — man-matā, s.m. Mere opinion, surmise, conjecture: — man-mast, adj. Merry, jovial (i.q. man-mauji): — man-milā-ke, adv. With one mind, unanimously; in unison; sympathetically: — man milānā (-se), To put ooneself at accord (with), to sympathize (with): — man-milāʼū, and man-mel, adj. & s.m. Captivating the mind or heart; conciliating, winning, pleasing, that gains or wins all hearts; — sympathetic: — man milnā, To be of one mind; to be in sympathy (with, -se): — man-mile, s.m. pl. Those of one mind: — man-malīn, adj. Sad at heart, troubled in mind, dejected, downcast, melancholy; distressed; vexed, displeased: — man-mauj, s.f. Self-conceit; — a conceit in the mind; an amusing thought, a tickling fancy; — emotion of the mind; pleasure, rapture, ecstasy; — whim, caprice, crotchet: — man-maujī, adj. Self-conceited; — full of conceits; — fanciful, capricious, whimsical; — merry, jovial; — a self-conceited man, &c.: — man-mohan, adj. & s.m. (f. -ī), Mind-infatuating; heart-ravishing; fascinating, captivating, charming, engaging, delighting; — heart-ravisher, sweetheart; mistress; — an epithet of Krishṇa: — man-mohan-pyārā, s.m. (f. -ī), The beloved heart-ravisher, &c. (see man-mohan): — man-mailā, adj. = man-malīn, q.v.: — man-meṅ, (dialec.) man-māṅh, adv. In or into the mind; to oneself: — man-meṅ ānā (-ke, or mere), To come into the mind (of), to enter the mind, to occur (to); — (a thing) to commend itself (to), to meet with approval, to find a place in the heart: — man-meṇ kahnā, 'To say in the mind,' to say to oneself: — man-hārak (f. -ikā), and man-hārī (f. -iṇī), adj. & s.m. Heart-stealing, captivating the mind or heart, heart-ravishing, captivating, bewitching, fascinating, enchanting, charming, delightful (i.q. manohar); — heart-stealer, heart-ravisher, &c.: — man-haraṇ, s.m. Heart-ravishment, captivation, fascination, enchantment, charm; — adj. & s.m. = man-mohan, q.v.: — man-haraṇ-pyārā = man-mohan-pyārā, q.v.: — man harnā (-kā), To steal the heart (of): — man-hīṅ-man, adv. In (one's) heart of hearts; in (one's) innermost soul; with a sincere heart: — man-hī-meṅ, adv. In the very soul; in (one's) heart of hearts; quite to oneself (himself, herself, myself).",
+        "witness_sha256": "27d072a1bafe765b94474b29e50c3bd58b7566905ef5a2ddda2bd8b3c6b8a2db",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)"
+      },
+      "entry_id": "platts1884.p1069.hw3bac9614136f290b.h1",
+      "language": "hi",
+      "lemma": "man",
+      "register": "classical Hindi / Hindustani, as covered by Platts1884",
+      "roman_search_aliases": [
+        "man"
+      ],
+      "senses": [
+        {
+          "context_hints": [],
+          "dictionary_anchor": "H من मन man [Prk. मणो; S. मनस्], s.m. The mind (considered as the seat of perception and passion); power of mind; intellect, intelligence, understanding, perception, sense; — the heart; soul; spirit; — inclination; will; purpose; — character, disposition, mood, temper: — man aṭaknā, or man ulajhnā, The mind or heart (of a person, kā, or merā) to be captivated (by, -se); to be enamoured (of), to fall in love (with): — man uṭhnā, or uṭh-jānā, The mind, or affection, or attention (of, -kā, or merā) to be removed or withdrawn (from, -se); to be estranged (from); to be tired (of), or disgusted (with): — manārth (˚na+ar˚), s.m. Object or desire of the mind; desire, intention, object, aim, purpose: — man uktānā, or uktājānā, The mind (of, -kā, or merā) to weary (of, -se), to be tired or sick (of): — man-bićār, s.m., and man-bidyā, s.f. = man-vidyā, q.v.: — man basnā (kisī-ke), To dwell in, or to fill, the mind (of a person): — man bhārī karnā, or man burā karnā, To load or burden the mind with sorrow or care; to give way to grief; to take to heart; — man burā karnā, To take offence, to be displeased: — man bhānā, v.n. To be agreeable to the mind, to please; — adj. = man-bhāwan, q.v.; — man bhānā munḍiyā hilānā, To shake the head disapprovingly at what is agreeable to the mind; to pretend to refuse that which one desires in his heart (e.g. man bhāʼe munḍiyā hilāʼe): — man-bhāʼū, or man-bhāwtā, or man bhāwan, or man-bhāʼonā, or man-bhāyā, (Braj) man-bhāyau, adj. & s.m. Grateful or agreeable to the mind or soul; acceptable; pleasing; amusing, diverting; beautiful, charming; — a beloved object, sweetheart, mistress: — man bharnā or bhar-jānā, The mind (of, -kā, or merā) to be filled or satisfied (by, -se); to be sated or cloyed: — man bahlānā (-kā, or apnā), To amuse or divert the mind (of); to divert oneself (with, -se): — man par ānā, or man-par lānā (-ke, or mere, or apne), To come, or to bring, into the mind; to purpose, resolve, determine: — man-pūraṇ, s.m. Satisfaction of mind; confidence: — man-pai (or man-pe) dharnā (apne) = man-par lānā: — man-ćāʼū, adv. With pleasure, willingly, cheerfully: — man-ćāhī, s.f. Self-will; wilfulness, waywardness, obstinacy: — man-ćāhī karnā, To be self-willed, to act wilfully, to be wayward: — man-ćalā, adj. Giving the mind (to); assiduous; intent, eager; zealous; active; — bold, brave, courageous; — generous, liberal; — distracted or unsound in mind, crazy, daft, mad: — man-ćalnā (-par), The mind, or heart, to go (after), to desire eagerly, to long (for), to be eager (for); — to be distracted in mind, to become crazy or mad: — man-ćalī, s.f. Eagerness of mind; assiduity; intentness; zeal; — boldness, courage; — generosity, liberality; — distraction of mind, craziness, madness: — man-ćor, s.m. (f. -nī, or -in, or -ī), Heart-stealer: — man-cītā, adj. Desired of the heart; desired, wished for, sought, contemplated: — man-jāt (S. mano-jāta), adj. & s.m. (dialec.) 'Mind-born'; — love; the god of love (i.q. Kām-dev): — man-dar-āwardī, adj. 'What comes into the mind'; fanciful; invented (speech, or story): — man denā (-ko), or man lānā (-par), To give, or to bring, the mind (to), to apply the mind (to); to attend (to): — man-ranjak, adj. (f. -ikā), Heart-delighting; pleasing to the mind, agreeable, gratifying: — man-ranjan, s.m. The act of pleasing the mind; captivation of the mind; pleasingness, agreeableness, loveliness, pleasantness; — adj. = man-ranjak, q.v.: — man-samjhautī, s.f. Reasoning with oneself; comforting or consoling oneself; submission; resignation: — man-kā ćītā, s.m. The desire of the heart: — man-kāmnā, s.f. Heart's desire; desire, wish; inclination; purpose: — man-kā mailā, or man-kā khoṭā, or man-kā kapṭī, adj. 'Of bad or evil mind'; disingenuous; deceitful; crafty: — man kaććā karnā, v.n. To lose heart; to give way; to droop, become discouraged or dispirited; — to break the heart or spirit (of another), to discourage; to deter: — man karnā (-kā), To have a mind (for), to desire: — man-kelā, s.m.(?) A kind of pastime (i.q. phal-bujhauwal, q.v.): — man-ke laḍḍū phoṛnā, or man-ke laḍḍū lurhānā, To break, or to roll, imaginary laḍḍūs (q.v.); to build castles in the air: — man-ke-man-meṅ, adv. In the very mind itself; in the depths or recesses of the mind or soul: — man-kī man-meṅ rahnā, The desire of the mind to remain in the mind, a desire to remain unsatisfied: — man-kī mauj, s.f. = man-mauj, q.v.: — man-gyān, s.m. = man-vidyā, q.v.: — man lānā (-par), or man lagānā (-meṅ), To bring, or to apply, the mind (to); to fix the mind (upon), to be attentive (to); to set the heart or affections (upon): — man-lagan, s.m. Heart-attachment; heart-engaging: — man lagnā (-meṅ), The mind to be fixed (on); to have the heart or affections set (upon); to take delight (in): — man lenā (-kā), To captivate the heart (of), to charm, to win; — to take the opinion or views (of); to fathom the thoughts (of); to sound; 'to feel the pulse (of)': — man-mārā, part. adj. & s.m. (f. -ī), Having the desire repressed or mortified; grieved, sad, dejected; — one whose desires are repressed, &c.: — man-mār rahnā, or man mār-ke baiṭh-rahnā, 'To repress desire and remain patient or quiet'; to suffer grief, or loss, &c. with patience: — man mārnā (apnā), To repress desire or feeling; to restrain oneself; to deny oneself (a pleasure, &c.); to abstain; — to be grieved or troubled in mind: — man-mān, s.m., and man-mānī, s.f. Heart's desire; choice: — man-mānā (f. -ī), and man-māntā, adj. According to one's wish or inclination; to one's heart's content; satisfactory; — agreeable, or pleasing to the mind; soothing; charming; — optional; at pleasure; — s.m. (f. -ī), A sweetheart, mistress; spouse: — man-māne, adv. As the mind may desire; to heart's content; ad libitum: — man-mānī, s.f. = man-mān; — adj. & adv. = man-māntā, q.v.: — man-mānī, s.f. Self-will, wilfulness; wantonness: — man-mānya, adj. Self-willed, wilful; wanton: — man-matā, s.m. Mere opinion, surmise, conjecture: — man-mast, adj. Merry, jovial (i.q. man-mauji): — man-milā-ke, adv. With one mind, unanimously; in unison; sympathetically: — man milānā (-se), To put ooneself at accord (with), to sympathize (with): — man-milāʼū, and man-mel, adj. & s.m. Captivating the mind or heart; conciliating, winning, pleasing, that gains or wins all hearts; — sympathetic: — man milnā, To be of one mind; to be in sympathy (with, -se): — man-mile, s.m. pl. Those of one mind: — man-malīn, adj. Sad at heart, troubled in mind, dejected, downcast, melancholy; distressed; vexed, displeased: — man-mauj, s.f. Self-conceit; — a conceit in the mind; an amusing thought, a tickling fancy; — emotion of the mind; pleasure, rapture, ecstasy; — whim, caprice, crotchet: — man-maujī, adj. Self-conceited; — full of conceits; — fanciful, capricious, whimsical; — merry, jovial; — a self-conceited man, &c.: — man-mohan, adj. & s.m. (f. -ī), Mind-infatuating; heart-ravishing; fascinating, captivating, charming, engaging, delighting; — heart-ravisher, sweetheart; mistress; — an epithet of Krishṇa: — man-mohan-pyārā, s.m. (f. -ī), The beloved heart-ravisher, &c. (see man-mohan): — man-mailā, adj. = man-malīn, q.v.: — man-meṅ, (dialec.) man-māṅh, adv. In or into the mind; to oneself: — man-meṅ ānā (-ke, or mere), To come into the mind (of), to enter the mind, to occur (to); — (a thing) to commend itself (to), to meet with approval, to find a place in the heart: — man-meṇ kahnā, 'To say in the mind,' to say to oneself: — man-hārak (f. -ikā), and man-hārī (f. -iṇī), adj. & s.m. Heart-stealing, captivating the mind or heart, heart-ravishing, captivating, bewitching, fascinating, enchanting, charming, delightful (i.q. manohar); — heart-stealer, heart-ravisher, &c.: — man-haraṇ, s.m. Heart-ravishment, captivation, fascination, enchantment, charm; — adj. & s.m. = man-mohan, q.v.: — man-haraṇ-pyārā = man-mohan-pyārā, q.v.: — man harnā (-kā), To steal the heart (of): — man-hīṅ-man, adv. In (one's) heart of hearts; in (one's) innermost soul; with a sincere heart: — man-hī-meṅ, adv. In the very soul; in (one's) heart of hearts; quite to oneself (himself, herself, myself).",
+          "granularity": "entry_context",
+          "prohibitions": [
+            "Entry context supplies alternatives; do not treat every listed meaning as simultaneously intended."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "platts1884.p1069.hw3bac9614136f290b.h1:entry",
+          "short_english": "H من मन man [Prk. मणो; S. मनस्], s.m. The mind (considered as the seat of perception and passion); power of mind; intellect, intelligence, understanding, perception, sense; — the heart; soul; spirit; — inclination; will; purpose; — character, disposition, mood, temper: — man aṭaknā, or man ulajhnā, The mind or heart (of a person, kā, or merā) to be captivated (by, -se); to be enamoured (of), to fall in love (with): — man uṭhnā, or uṭh-jānā, The mind, or affection, or attention (of, -kā, or merā) to be removed or withdrawn (from, -se); to be estranged (from); to be tired (of), or disgusted (with): — manārth (˚na+ar˚), s.m. Object or desire of the mind; desire, intention, object, aim, purpose: — man uktānā, or uktājānā, The mind (of, -kā, or merā) to weary (of, -se), to be tired or sick (of): — man-bićār, s.m., and man-bidyā, s.f. = man-vidyā, q.v.: — man basnā (kisī-ke), To dwell in, or to fill, the mind (of a person): — man bhārī karnā, or man burā karnā, To load or burden the mind with sorrow or care; to give way to grief; to take to heart; — man burā karnā, To take offence, to be displeased: — man bhānā, v.n. To be agreeable to the mind, to please; — adj. = man-bhāwan, q.v.; — man bhānā munḍiyā hilānā, To shake the head disapprovingly at what is agreeable to the mind; to pretend to refuse that which one desires in his heart (e.g. man bhāʼe munḍiyā hilāʼe): — man-bhāʼū, or man-bhāwtā, or man bhāwan, or man-bhāʼonā, or man-bhāyā, (Braj) man-bhāyau, adj. & s.m. Grateful or agreeable to the mind or soul; acceptable; pleasing; amusing, diverting; beautiful, charming; — a beloved object, sweetheart, mistress: — man bharnā or bhar-jānā, The mind (of, -kā, or merā) to be filled or satisfied (by, -se); to be sated or cloyed: — man bahlānā (-kā, or apnā), To amuse or divert the mind (of); to divert oneself (with, -se): — man par ānā, or man-par lānā (-ke, or mere, or apne), To come, or to bring, into the mind; to purpose, resolve, determine: — man-pūraṇ, s.m. Satisfaction of mind; confidence: — man-pai (or man-pe) dharnā (apne) = man-par lānā: — man-ćāʼū, adv. With pleasure, willingly, cheerfully: — man-ćāhī, s.f. Self-will; wilfulness, waywardness, obstinacy: — man-ćāhī karnā, To be self-willed, to act wilfully, to be wayward: — man-ćalā, adj. Giving the mind (to); assiduous; intent, eager; zealous; active; — bold, brave, courageous; — generous, liberal; — distracted or unsound in mind, crazy, daft, mad: — man-ćalnā (-par), The mind, or heart, to go (after), to desire eagerly, to long (for), to be eager (for); — to be distracted in mind, to become crazy or mad: — man-ćalī, s.f. Eagerness of mind; assiduity; intentness; zeal; — boldness, courage; — generosity, liberality; — distraction of mind, craziness, madness: — man-ćor, s.m. (f. -nī, or -in, or -ī), Heart-stealer: — man-cītā, adj. Desired of the heart; desired, wished for, sought, contemplated: — man-jāt (S. mano-jāta), adj. & s.m. (dialec.) 'Mind-born'; — love; the god of love (i.q. Kām-dev): — man-dar-āwardī, adj. 'What comes into the mind'; fanciful; invented (speech, or story): — man denā (-ko), or man lānā (-par), To give, or to bring, the mind (to), to apply the mind (to); to attend (to): — man-ranjak, adj. (f. -ikā), Heart-delighting; pleasing to the mind, agreeable, gratifying: — man-ranjan, s.m. The act of pleasing the mind; captivation of the mind; pleasingness, agreeableness, loveliness, pleasantness; — adj. = man-ranjak, q.v.: — man-samjhautī, s.f. Reasoning with oneself; comforting or consoling oneself; submission; resignation: — man-kā ćītā, s.m. The desire of the heart: — man-kāmnā, s.f. Heart's desire; desire, wish; inclination; purpose: — man-kā mailā, or man-kā khoṭā, or man-kā kapṭī, adj. 'Of bad or evil mind'; disingenuous; deceitful; crafty: — man kaććā karnā, v.n. To lose heart; to give way; to droop, become discouraged or dispirited; — to break the heart or spirit (of another), to discourage; to deter: — man karnā (-kā), To have a mind (for), to desire: — man-kelā, s.m.(?) A kind of pastime (i.q. phal-bujhauwal, q.v.): — man-ke laḍḍū phoṛnā, or man-ke laḍḍū lurhānā, To break, or to roll, imaginary laḍḍūs (q.v.); to build castles in the air: — man-ke-man-meṅ, adv. In the very mind itself; in the depths or recesses of the mind or soul: — man-kī man-meṅ rahnā, The desire of the mind to remain in the mind, a desire to remain unsatisfied: — man-kī mauj, s.f. = man-mauj, q.v.: — man-gyān, s.m. = man-vidyā, q.v.: — man lānā (-par), or man lagānā (-meṅ), To bring, or to apply, the mind (to); to fix the mind (upon), to be attentive (to); to set the heart or affections (upon): — man-lagan, s.m. Heart-attachment; heart-engaging: — man lagnā (-meṅ), The mind to be fixed (on); to have the heart or affections set (upon); to take delight (in): — man lenā (-kā), To captivate the heart (of), to charm, to win; — to take the opinion or views (of); to fathom the thoughts (of); to sound; 'to feel the pulse (of)': — man-mārā, part. adj. & s.m. (f. -ī), Having the desire repressed or mortified; grieved, sad, dejected; — one whose desires are repressed, &c.: — man-mār rahnā, or man mār-ke baiṭh-rahnā, 'To repress desire and remain patient or quiet'; to suffer grief, or loss, &c. with patience: — man mārnā (apnā), To repress desire or feeling; to restrain oneself; to deny oneself (a pleasure, &c.); to abstain; — to be grieved or troubled in mind: — man-mān, s.m., and man-mānī, s.f. Heart's desire; choice: — man-mānā (f. -ī), and man-māntā, adj. According to one's wish or inclination; to one's heart's content; satisfactory; — agreeable, or pleasing to the mind; soothing; charming; — optional; at pleasure; — s.m. (f. -ī), A sweetheart, mistress; spouse: — man-māne, adv. As the mind may desire; to heart's content; ad libitum: — man-mānī, s.f. = man-mān; — adj. & adv. = man-māntā, q.v.: — man-mānī, s.f. Self-will, wilfulness; wantonness: — man-mānya, adj. Self-willed, wilful; wanton: — man-matā, s.m. Mere opinion, surmise, conjecture: — man-mast, adj. Merry, jovial (i.q. man-mauji): — man-milā-ke, adv. With one mind, unanimously; in unison; sympathetically: — man milānā (-se), To put ooneself at accord (with), to sympathize (with): — man-milāʼū, and man-mel, adj. & s.m. Captivating the mind or heart; conciliating, winning, pleasing, that gains or wins all hearts; — sympathetic: — man milnā, To be of one mind; to be in sympathy (with, -se): — man-mile, s.m. pl. Those of one mind: — man-malīn, adj. Sad at heart, troubled in mind, dejected, downcast, melancholy; distressed; vexed, displeased: — man-mauj, s.f. Self-conceit; — a conceit in the mind; an amusing thought, a tickling fancy; — emotion of the mind; pleasure, rapture, ecstasy; — whim, caprice, crotchet: — man-maujī, adj. Self-conceited; — full of conceits; — fanciful, capricious, whimsical; — merry, jovial; — a self-conceited man, &c.: — man-mohan, adj. & s.m. (f. -ī), Mind-infatuating; heart-ravishing; fascinating, captivating, charming, engaging, delighting; — heart-ravisher, sweetheart; mistress; — an epithet of Krishṇa: — man-mohan-pyārā, s.m. (f. -ī), The beloved heart-ravisher, &c. (see man-mohan): — man-mailā, adj. = man-malīn, q.v.: — man-meṅ, (dialec.) man-māṅh, adv. In or into the mind; to oneself: — man-meṅ ānā (-ke, or mere), To come into the mind (of), to enter the mind, to occur (to); — (a thing) to commend itself (to), to meet with approval, to find a place in the heart: — man-meṇ kahnā, 'To say in the mind,' to say to oneself: — man-hārak (f. -ikā), and man-hārī (f. -iṇī), adj. & s.m. Heart-stealing, captivating the mind or heart, heart-ravishing, captivating, bewitching, fascinating, enchanting, charming, delightful (i.q. manohar); — heart-stealer, heart-ravisher, &c.: — man-haraṇ, s.m. Heart-ravishment, captivation, fascination, enchantment, charm; — adj. & s.m. = man-mohan, q.v.: — man-haraṇ-pyārā = man-mohan-pyārā, q.v.: — man harnā (-kā), To steal the heart (of): — man-hīṅ-man, adv. In (one's) heart of hearts; in (one's) innermost soul; with a sincere heart: — man-hī-meṅ, adv. In the very soul; in (one's) heart of hearts; quite to oneself (himself, herself, myself)."
+        }
+      ],
+      "source_spellings": [
+        "मन"
+      ]
+    },
+    {
+      "dictionary": {
+        "entry_html_sha256": "87ffd8f06cfa2ef54f9296eece545c3fc9adf469d1c2781a79e10a6d6b1dfbe3",
+        "entry_locator": "من मन man; homograph 2 on printed page 1069",
+        "evidence_status": "direct dictionary HTML; no semantic sense selection",
+        "headword_text": "من मन man",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "license": "CC BY-NC-ND 2.0; private candidate index only",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "print_page": 1069,
+        "query": "मन",
+        "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AE%E0%A4%A8&searchhws=yes&matchtype=exact",
+        "source_revision": "DSAL digitization, site reports June 2024; exact downloaded HTML bound by hash",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=1069",
+        "whole_entry_text": "H من मन man [prob. S. मानः, fr. मा 'to measure'; Pers. man; A. mann], s.m. A measure of weight (usually 40 ser, or about 80 lbs., but varying in different parts of India), a 'maund.'",
+        "witness_sha256": "27d072a1bafe765b94474b29e50c3bd58b7566905ef5a2ddda2bd8b3c6b8a2db",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)"
+      },
+      "entry_id": "platts1884.p1069.hw3bac9614136f290b.h2",
+      "language": "hi",
+      "lemma": "man",
+      "register": "classical Hindi / Hindustani, as covered by Platts1884",
+      "roman_search_aliases": [
+        "man"
+      ],
+      "senses": [
+        {
+          "context_hints": [],
+          "dictionary_anchor": "H من मन man [prob. S. मानः, fr. मा 'to measure'; Pers. man; A. mann], s.m. A measure of weight (usually 40 ser, or about 80 lbs., but varying in different parts of India), a 'maund.'",
+          "granularity": "entry_context",
+          "prohibitions": [
+            "Entry context supplies alternatives; do not treat every listed meaning as simultaneously intended."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "platts1884.p1069.hw3bac9614136f290b.h2:entry",
+          "short_english": "H من मन man [prob. S. मानः, fr. मा 'to measure'; Pers. man; A. mann], s.m. A measure of weight (usually 40 ser, or about 80 lbs., but varying in different parts of India), a 'maund.'"
+        }
+      ],
+      "source_spellings": [
+        "मन"
+      ]
+    },
+    {
+      "dictionary": {
+        "entry_locator": "First homograph: H मन man [Prk. maṇo; S. manas], masculine noun; distinguish second मन man measure-of-weight entry",
+        "evidence_status": "Exact headword response read directly from dictionary publisher HTML",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "print_page": 1069,
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AE%E0%A4%A8&searchhws=yes&matchtype=exact",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)"
+      },
+      "entry_id": "platts1884.man.p1069",
+      "language": "hi",
+      "lemma": "man",
+      "project_policy": {
+        "automatic_replacement": false,
+        "note": "Choose a contextual English sense. Genuine proper names and explicit supplied English follow the editorial baseline policy."
+      },
+      "register": "classical Hindi / Hindustani, as covered by Platts 1884",
+      "roman_search_aliases": [
+        "man"
+      ],
+      "senses": [
+        {
+          "context_hints": [
+            "Thought, attention, perception or instruction addressed to the mind."
+          ],
+          "dictionary_anchor": "The mind (considered as the seat of perception and passion)",
+          "prohibitions": [
+            "Do not force metaphysical soul or Sanskrit technical manas onto every occurrence."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "hi.man.mind",
+          "short_english": "mind"
+        },
+        {
+          "context_hints": [
+            "Affection, longing, sorrow or heart-captivation context."
+          ],
+          "dictionary_anchor": "the heart; soul; spirit",
+          "prohibitions": [
+            "Keep any concrete heart image; do not decide from emotional vocabulary alone."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "hi.man.heart",
+          "short_english": "heart; inner feeling"
+        },
+        {
+          "context_hints": [
+            "An expressed desire, intention or resolve; inspect the whole phrase."
+          ],
+          "dictionary_anchor": "inclination; will; purpose",
+          "prohibitions": [
+            "Do not render an addressed mind as desire merely because a wish occurs nearby."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "hi.man.will",
+          "short_english": "wish; intention"
+        },
+        {
+          "context_hints": [
+            "Quantity, weight or commodity measurement."
+          ],
+          "dictionary_anchor": "Second homograph: A measure of weight",
+          "prohibitions": [
+            "Never infer this sense for a devotional address. Do not freeze the historical unit into a universal modern weight."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "hi.man.weight",
+          "short_english": "maund; a weight measure"
+        }
+      ],
+      "source_spellings": [
+        "मन"
+      ]
+    },
+    {
+      "dictionary": {
+        "entry_html_sha256": "c4caef6efc54a4f48970cbd35f0b583d2a93932043810f9a56c4d145956eab04",
+        "entry_locator": "کرنا करना karnā; homograph 2 on printed page 828",
+        "evidence_status": "direct dictionary HTML; no semantic sense selection",
+        "headword_text": "کرنا करना karnā",
+        "institution": "Digital Dictionaries of South Asia, University of Chicago",
+        "license": "CC BY-NC-ND 2.0; private candidate index only",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "print_page": 828,
+        "query": "करना",
+        "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A4%BE&searchhws=yes&matchtype=exact",
+        "source_revision": "DSAL digitization, site reports June 2024; exact downloaded HTML bound by hash",
+        "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=828",
+        "whole_entry_text": "H کرنا करना karnā [kar˚ = Prk. कर(इ) = S. करो(ति), Vedic also कर(ति), rt. कृ], v.t. To do, act, perform, practise, execute, transact (business), conduct; to hold (a court, e.g. kaćahrī karnā); to keep, to open (a shop); to set; to set up; to achieve, effect, accomplish; to commit (a crime); to administer; to engage in; to work (a sum, &c.); to use, ply, wield (a sword, &c.); to make, form, frame; to appoint; to devise, contrive; to apply; to exert; to avail; to impart, confer, bestow (e.g. 'izzat karnā); to render, to cause to be or become, to turn or change (into); to prepare, do, dress (the hair, or food, &c.); to kill (an animal, for use, e.g. bakrī kī hai), to effect, work upon, influence, bring under (one's) influence or subjection (in this sense kar-denā is more common); to put (in, -meṅ), to insert; to thrust, thrust in, pierce; to put on, wear (e.g. dhotī karnā); to take (in marriage); to cohabit with, coire; to cry or call out, raise a cry of: (karnā, annexed to participles, adjectives, and substantives, forms what the grammarians call Nominal verbs, e.g. dūshit karnā, 'to make disgraced,' 'to vitiate'; ćaurā karnā, 'to make wide,' 'to widen'; ḵẖiyāl karnā, 'to think, fancy,' &c.; — karnā, following a verb. n. or gerund in the form of an uninflected perfect part., forms a Frequentative or Continuative compound, e.g. likhā karnā, 'to write frequently,' 'to continue or keep on writing,' 'to be in the habit of writing'; — the conj. part., as well as the root, kar, prefixed to certain verbs, forms intensives, or completives, &c., examples of which will be found in what follows) — kar-ānā, v.n. To return from doing, &c. (see kar-lānā): — kar-baiṭhnā (-ko), To have done with, to rest or cease from; to do effectually or thoroughly; to do deliberately, or composedly, or unconcernedly: — kar-jānā (-ko), 'To finish and depart,' to have done with: — kar-dikhlānā, v.t. To show, exhibit; to make, to realize: — kar-denā, v.t. (intens. of karnā), To do (to, -par); to render, to cause to be or become; to cause to be given or sent (with, — e.g. paćās toṛe uske-sāth kar-diye); to put (into), to transfer (from; — e.g. ghaṛe-kā pānī kalse-meṅ kar-de): — kar-dekhnā, v.t. 'To do and see,' to try, test, put to the proof: — kar-guẓarnā (-ko), 'To do and leave,' to do (emphatically); to have done with: — kar-lānā (-ko), To effect, execute, accomplish, settle: — kar-lenā, v.t. (intens. of karnā), To do, effect, accomplish; to form, contract; to take (into keeping, or in marriage); to procure, acquire, gain; to learn: — karne-wālā, or karan-hār, or karan-hārā, s.m. Doer, maker, originator, agent: — karne-lāʼiq, or karne-jog, adj. Fit or proper to be done, fit, suitable; to be done, practicable.",
+        "witness_sha256": "a324cb9957876ac6f19b7c87873314a2378b4e29d39502c931740204aa4c905e",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)"
+      },
+      "entry_id": "platts1884.p828.hwbd786316985b0fee.h2",
+      "language": "hi",
+      "lemma": "karnā",
+      "lemma_links": [
+        {
+          "evidence": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884); p.828; کرنا करना karnā; homograph 2 on printed page 828; witness a324cb9957876ac6f19b7c87873314a2378b4e29d39502c931740204aa4c905e",
+          "language": "hi",
+          "reason": "Inflected kare of the verb karnā, not the homographic citron noun.",
+          "review_status": "accepted-retrieval-only",
+          "reviewer": "independent editorial review by discover_additions",
+          "roman_form": "kare",
+          "source_form": "करे"
+        }
+      ],
+      "register": "classical Hindi / Hindustani, as covered by Platts1884",
+      "roman_search_aliases": [
+        "karnā"
+      ],
+      "senses": [
+        {
+          "context_hints": [],
+          "dictionary_anchor": "H کرنا करना karnā [kar˚ = Prk. कर(इ) = S. करो(ति), Vedic also कर(ति), rt. कृ], v.t. To do, act, perform, practise, execute, transact (business), conduct; to hold (a court, e.g. kaćahrī karnā); to keep, to open (a shop); to set; to set up; to achieve, effect, accomplish; to commit (a crime); to administer; to engage in; to work (a sum, &c.); to use, ply, wield (a sword, &c.); to make, form, frame; to appoint; to devise, contrive; to apply; to exert; to avail; to impart, confer, bestow (e.g. 'izzat karnā); to render, to cause to be or become, to turn or change (into); to prepare, do, dress (the hair, or food, &c.); to kill (an animal, for use, e.g. bakrī kī hai), to effect, work upon, influence, bring under (one's) influence or subjection (in this sense kar-denā is more common); to put (in, -meṅ), to insert; to thrust, thrust in, pierce; to put on, wear (e.g. dhotī karnā); to take (in marriage); to cohabit with, coire; to cry or call out, raise a cry of: (karnā, annexed to participles, adjectives, and substantives, forms what the grammarians call Nominal verbs, e.g. dūshit karnā, 'to make disgraced,' 'to vitiate'; ćaurā karnā, 'to make wide,' 'to widen'; ḵẖiyāl karnā, 'to think, fancy,' &c.; — karnā, following a verb. n. or gerund in the form of an uninflected perfect part., forms a Frequentative or Continuative compound, e.g. likhā karnā, 'to write frequently,' 'to continue or keep on writing,' 'to be in the habit of writing'; — the conj. part., as well as the root, kar, prefixed to certain verbs, forms intensives, or completives, &c., examples of which will be found in what follows) — kar-ānā, v.n. To return from doing, &c. (see kar-lānā): — kar-baiṭhnā (-ko), To have done with, to rest or cease from; to do effectually or thoroughly; to do deliberately, or composedly, or unconcernedly: — kar-jānā (-ko), 'To finish and depart,' to have done with: — kar-dikhlānā, v.t. To show, exhibit; to make, to realize: — kar-denā, v.t. (intens. of karnā), To do (to, -par); to render, to cause to be or become; to cause to be given or sent (with, — e.g. paćās toṛe uske-sāth kar-diye); to put (into), to transfer (from; — e.g. ghaṛe-kā pānī kalse-meṅ kar-de): — kar-dekhnā, v.t. 'To do and see,' to try, test, put to the proof: — kar-guẓarnā (-ko), 'To do and leave,' to do (emphatically); to have done with: — kar-lānā (-ko), To effect, execute, accomplish, settle: — kar-lenā, v.t. (intens. of karnā), To do, effect, accomplish; to form, contract; to take (into keeping, or in marriage); to procure, acquire, gain; to learn: — karne-wālā, or karan-hār, or karan-hārā, s.m. Doer, maker, originator, agent: — karne-lāʼiq, or karne-jog, adj. Fit or proper to be done, fit, suitable; to be done, practicable.",
+          "granularity": "entry_context",
+          "prohibitions": [
+            "Entry context supplies alternatives; do not treat every listed meaning as simultaneously intended."
+          ],
+          "selection_status": "unselected",
+          "semantic_review_needed": true,
+          "sense_id": "platts1884.p828.hwbd786316985b0fee.h2:entry",
+          "short_english": "H کرنا करना karnā [kar˚ = Prk. कर(इ) = S. करो(ति), Vedic also कर(ति), rt. कृ], v.t. To do, act, perform, practise, execute, transact (business), conduct; to hold (a court, e.g. kaćahrī karnā); to keep, to open (a shop); to set; to set up; to achieve, effect, accomplish; to commit (a crime); to administer; to engage in; to work (a sum, &c.); to use, ply, wield (a sword, &c.); to make, form, frame; to appoint; to devise, contrive; to apply; to exert; to avail; to impart, confer, bestow (e.g. 'izzat karnā); to render, to cause to be or become, to turn or change (into); to prepare, do, dress (the hair, or food, &c.); to kill (an animal, for use, e.g. bakrī kī hai), to effect, work upon, influence, bring under (one's) influence or subjection (in this sense kar-denā is more common); to put (in, -meṅ), to insert; to thrust, thrust in, pierce; to put on, wear (e.g. dhotī karnā); to take (in marriage); to cohabit with, coire; to cry or call out, raise a cry of: (karnā, annexed to participles, adjectives, and substantives, forms what the grammarians call Nominal verbs, e.g. dūshit karnā, 'to make disgraced,' 'to vitiate'; ćaurā karnā, 'to make wide,' 'to widen'; ḵẖiyāl karnā, 'to think, fancy,' &c.; — karnā, following a verb. n. or gerund in the form of an uninflected perfect part., forms a Frequentative or Continuative compound, e.g. likhā karnā, 'to write frequently,' 'to continue or keep on writing,' 'to be in the habit of writing'; — the conj. part., as well as the root, kar, prefixed to certain verbs, forms intensives, or completives, &c., examples of which will be found in what follows) — kar-ānā, v.n. To return from doing, &c. (see kar-lānā): — kar-baiṭhnā (-ko), To have done with, to rest or cease from; to do effectually or thoroughly; to do deliberately, or composedly, or unconcernedly: — kar-jānā (-ko), 'To finish and depart,' to have done with: — kar-dikhlānā, v.t. To show, exhibit; to make, to realize: — kar-denā, v.t. (intens. of karnā), To do (to, -par); to render, to cause to be or become; to cause to be given or sent (with, — e.g. paćās toṛe uske-sāth kar-diye); to put (into), to transfer (from; — e.g. ghaṛe-kā pānī kalse-meṅ kar-de): — kar-dekhnā, v.t. 'To do and see,' to try, test, put to the proof: — kar-guẓarnā (-ko), 'To do and leave,' to do (emphatically); to have done with: — kar-lānā (-ko), To effect, execute, accomplish, settle: — kar-lenā, v.t. (intens. of karnā), To do, effect, accomplish; to form, contract; to take (into keeping, or in marriage); to procure, acquire, gain; to learn: — karne-wālā, or karan-hār, or karan-hārā, s.m. Doer, maker, originator, agent: — karne-lāʼiq, or karne-jog, adj. Fit or proper to be done, fit, suitable; to be done, practicable."
+        }
+      ],
+      "source_spellings": [
+        "करना"
+      ]
+    }
+  ]
+}

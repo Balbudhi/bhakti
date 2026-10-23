@@ -213,7 +213,9 @@ class ReconciliationTests(unittest.TestCase):
         changed=copy.deepcopy(old);changed['requests'][0]['id']='substituted'
         write(path,changed)
         with patch.object(library,'execute_song') as execute:
-            with self.assertRaisesRegex(ValueError,'ledger prefix'):self.invoke()
+            # Drained interruption now also acknowledges the latest ledger; either
+            # exact-prefix guard must reject substitution before any dispatch.
+            with self.assertRaisesRegex(ValueError,'ledger.*changed'):self.invoke()
             execute.assert_not_called()
         appended=copy.deepcopy(old);appended['requests'].append({'id':'legitimate-next','reported_cost_usd':.1})
         write(path,appended)

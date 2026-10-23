@@ -30,7 +30,7 @@ class RunnerTests(SelectivePassTests):
 
     def command(self, cap=2):
         return ['--root', str(self.root), '--state-dir', str(self.state), '--execute', '--all',
-                '--budget-usd', '1', '--max-calls', str(cap), '--deadline-seconds', '60']
+                '--workers', '1', '--budget-usd', '1', '--max-calls', str(cap), '--deadline-seconds', '60']
 
     def test_real_all_cli_finishes_two_songs_and_resume_has_zero_requests_or_public_changes(self):
         self.add_song('alpha'); self.add_song('beta'); self.commit()

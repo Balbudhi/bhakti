@@ -1,0 +1,924 @@
+{
+  "ids": [
+    "v1-l1",
+    "v1-l2",
+    "v1-l3",
+    "v1-l4"
+  ],
+  "before": {
+    "v1-l1": {
+      "source": "வேயுறு தோளி பங்கன் விடமுண்ட கண்டன் மிகநல்ல வீணை தடவி",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "வேயுறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "தோளி",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "பங்கன்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "விடமுண்ட",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "கண்டன்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "மிகநல்ல",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "வீணை",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "தடவி",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "vēyuṟu tōḷi paṅkaṉ viṭamuṇṭa kaṇṭaṉ mikanalla vīṇai taṭavi",
+      "english": "{2:The Sharer of Her}{1: whose shoulders}{0: resemble bamboo,}{4: whose throat}{3: swallowed poison,}{7: strumming}{5: the exceedingly sweet}{6: lute,}",
+      "words": [
+        {
+          "roman": "vēyuṟu",
+          "gloss": "resembling bamboo",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tōḷi",
+          "gloss": "one with shapely shoulders",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "paṅkaṉ",
+          "gloss": "He who shares His half with",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "viṭamuṇṭa",
+          "gloss": "poison-consumed",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kaṇṭaṉ",
+          "gloss": "throat-possessor",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "mikanalla",
+          "gloss": "exceedingly sweet",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vīṇai",
+          "gloss": "lute",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "taṭavi",
+          "gloss": "strumming / caressing",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Participial clause: vēyuṟu (vēy + uṟu), tōḷi (fem. noun), paṅkaṉ (masc. appellative noun), viṭam-uṇṭa (relative participle), kaṇṭaṉ (appellative), taṭavi (adverbial participle)."
+    },
+    "v1-l2": {
+      "source": "மாசறு திங்கள் கங்கை முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "மாசறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "திங்கள்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "கங்கை",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "முடிமே",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "லணிந்தென்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "உளமே",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "புகுந்த",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "அதனால்",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "mācaṟu tiṅkaḷ kaṅkai muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
+      "english": "{4:having adorned}{3: His crown with}{0: the spotless}{1: moon}{2: and Gaṅgā,}{7: because}{6: He entered}{4: into my}{5: heart,}",
+      "words": [
+        {
+          "roman": "mācaṟu",
+          "gloss": "spotless / fault-free",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tiṅkaḷ",
+          "gloss": "crescent moon",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kaṅkai",
+          "gloss": "River Gaṅgā",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "muṭimē",
+          "gloss": "upon [His] matted crown",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "laṇinteṉ",
+          "gloss": "having adorned + my",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "uḷamē",
+          "gloss": "inner heart / mind",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "pukunta",
+          "gloss": "entered",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ataṉāl",
+          "gloss": "because of that / therefore",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Sandhi splitting across whitespace tokens: muṭimēl split as muṭimē + laṇinteṉ (l + aṇintu + eṉ). Causal postposition ataṉāl governs the subsequent strophes."
+    },
+    "v1-l3": {
+      "source": "ஞாயிறு திங்கள் செவ்வாய் புதன் வியாழன் வெள்ளி சனி பாம்பிரண்டும் உடனே",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ஞாயிறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "திங்கள்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "செவ்வாய்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "புதன்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "வியாழன்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "வெள்ளி",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "சனி",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "பாம்பிரண்டும்",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "உடனே",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "roman": "ñāyiṟu tiṅkaḷ cevvāy putaṉ viyāḻaṉ veḷḷi caṉi pāmpiraṇṭum uṭaṉē",
+      "english": "{0:Sun,}{1: Moon,}{2: Mars,}{3: Mercury,}{4: Jupiter,}{5: Venus,}{6: Saturn,}{7: and both serpents}{8: together,}",
+      "words": [
+        {
+          "roman": "ñāyiṟu",
+          "gloss": "Sun",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tiṅkaḷ",
+          "gloss": "Moon",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "cevvāy",
+          "gloss": "Mars",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "putaṉ",
+          "gloss": "Mercury",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "viyāḻaṉ",
+          "gloss": "Jupiter",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "veḷḷi",
+          "gloss": "Venus",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "caṉi",
+          "gloss": "Saturn",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "pāmpiraṇṭum",
+          "gloss": "the two serpents [Rāhu and Ketu]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "uṭaṉē",
+          "gloss": "together / all alike",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "List of planetary deities ending in pāmpiraṇṭum (pāmpu + iraṇṭu + um) and adverbial clitic uṭaṉē."
+    },
+    "v1-l4": {
+      "source": "ஆசறு நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ஆசறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அவை",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "அடியா",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "ரவர்க்கு",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "மிகவே",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "roman": "ācaṟu nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
+      "english": "{0:are faultlessly}{1: good}{2: and auspicious;}{3: they}{4: are good}{5: and auspicious,}{8: exceedingly so}{6,7: for His devotees.}",
+      "words": [
+        {
+          "roman": "ācaṟu",
+          "gloss": "faultless / harmless",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good / auspicious",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good / auspicious",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "avai",
+          "gloss": "they [the planets]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good / auspicious",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good / auspicious",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aṭiyā",
+          "gloss": "devotees / servants",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ravarkku",
+          "gloss": "to them / for them",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "mikavē",
+          "gloss": "exceedingly / abundantly",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Reduplicated adjectives nalla nalla for superlative emphasis. Sandhi split across whitespace: aṭiyā + ravarkku (aṭiyār + avarkku, dative plural)."
+    }
+  },
+  "after": {
+    "v1-l1": {
+      "source": "வேயுறு தோளி பங்கன் விடமுண்ட கண்டன் மிகநல்ல வீணை தடவி",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "வேயுறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "தோளி",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "பங்கன்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "விடமுண்ட",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "கண்டன்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "மிகநல்ல",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "வீணை",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "தடவி",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "vēyuṟu tōḷi paṅkaṉ viṭamuṇṭa kaṇṭaṉ mikanalla vīṇai taṭavi",
+      "english": "{2:He who has as His half}{1: the woman whose shoulders}{0: resemble bamboo,}{3,4: the One whose throat swallowed poison,}{7: strumming}{5: the exceedingly sweet}{6: lute,}",
+      "words": [
+        {
+          "roman": "vēyuṟu",
+          "gloss": "resembling bamboo",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tōḷi",
+          "gloss": "one with shapely shoulders",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "paṅkaṉ",
+          "gloss": "He who shares His half with",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "viṭamuṇṭa",
+          "gloss": "poison-consumed",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kaṇṭaṉ",
+          "gloss": "throat-possessor",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "mikanalla",
+          "gloss": "exceedingly sweet",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vīṇai",
+          "gloss": "lute",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "taṭavi",
+          "gloss": "strumming / caressing",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Participial clause: vēyuṟu (vēy + uṟu), tōḷi (fem. noun), paṅkaṉ (masc. appellative noun), viṭam-uṇṭa (relative participle), kaṇṭaṉ (appellative), taṭavi (adverbial participle)."
+    },
+    "v1-l2": {
+      "source": "மாசறு திங்கள் கங்கை முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "மாசறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "திங்கள்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "கங்கை",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "முடிமே",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "லணிந்தென்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "உளமே",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "புகுந்த",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "அதனால்",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "mācaṟu tiṅkaḷ kaṅkai muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
+      "english": "{4:having adorned}{3: His crown with}{0: the spotless}{1: moon}{2: and Gaṅgā,}{6: entered}{4: into my}{5: heart;}{7: therefore,}",
+      "words": [
+        {
+          "roman": "mācaṟu",
+          "gloss": "spotless / fault-free",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tiṅkaḷ",
+          "gloss": "crescent moon",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kaṅkai",
+          "gloss": "River Gaṅgā",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "muṭimē",
+          "gloss": "upon [His] matted crown",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "laṇinteṉ",
+          "gloss": "having adorned + my",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "uḷamē",
+          "gloss": "inner heart / mind",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "pukunta",
+          "gloss": "entered",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ataṉāl",
+          "gloss": "because of that / therefore",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Sandhi splitting across whitespace tokens: muṭimēl split as muṭimē + laṇinteṉ (l + aṇintu + eṉ). Causal postposition ataṉāl links this entry to the following consequences within the stanza. The English presents the entry as a complete clause followed by therefore; this expresses the same causal relation without treating pukunta as a finite Tamil verb."
+    },
+    "v1-l3": {
+      "source": "ஞாயிறு திங்கள் செவ்வாய் புதன் வியாழன் வெள்ளி சனி பாம்பிரண்டும் உடனே",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ஞாயிறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "திங்கள்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "செவ்வாய்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "புதன்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "வியாழன்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "வெள்ளி",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "சனி",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "பாம்பிரண்டும்",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "உடனே",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "roman": "ñāyiṟu tiṅkaḷ cevvāy putaṉ viyāḻaṉ veḷḷi caṉi pāmpiraṇṭum uṭaṉē",
+      "english": "{0:Sun,}{1: Moon,}{2: Mars,}{3: Mercury,}{4: Jupiter,}{5: Venus,}{6: Saturn,}{7: and both serpents}{8: together}",
+      "words": [
+        {
+          "roman": "ñāyiṟu",
+          "gloss": "Sun",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tiṅkaḷ",
+          "gloss": "Moon",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "cevvāy",
+          "gloss": "Mars",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "putaṉ",
+          "gloss": "Mercury",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "viyāḻaṉ",
+          "gloss": "Jupiter",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "veḷḷi",
+          "gloss": "Venus",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "caṉi",
+          "gloss": "Saturn",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "pāmpiraṇṭum",
+          "gloss": "the two serpents [Rāhu and Ketu]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "uṭaṉē",
+          "gloss": "together / all alike",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "List of planetary deities ending in pāmpiraṇṭum (pāmpu + iraṇṭu + um) and adverbial clitic uṭaṉē."
+    },
+    "v1-l4": {
+      "source": "ஆசறு நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ஆசறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அவை",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "நல்ல",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "அடியா",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "ரவர்க்கு",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "மிகவே",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "roman": "ācaṟu nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
+      "english": "{0:are free of harm,}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
+      "words": [
+        {
+          "roman": "ācaṟu",
+          "gloss": "faultless / harmless",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good; beneficial",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good; beneficial",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "avai",
+          "gloss": "they [the planets]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good; beneficial",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nalla",
+          "gloss": "good; beneficial",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aṭiyā",
+          "gloss": "devotees / servants",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ravarkku",
+          "gloss": "to them / for them",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "mikavē",
+          "gloss": "exceedingly / abundantly",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Reduplicated adjectives nalla nalla for superlative emphasis. Sandhi split across whitespace: aṭiyā + ravarkku (aṭiyār + avarkku, dative plural)."
+    }
+  }
+}

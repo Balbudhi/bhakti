@@ -1,0 +1,877 @@
+{
+  "ids": [
+    "v11-l1",
+    "v11-l2",
+    "v11-l3",
+    "v11-l4"
+  ],
+  "before": {
+    "v11-l1": {
+      "source": "தேனமர் பொழில்கொள் ஆலை விளைசெந்நெல் துன்னி வளர்செம்பொன் எங்கும் நிகழ",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "தேனமர்",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "பொழில்கொள்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ஆலை",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "விளைசெந்நெல்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "துன்னி",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "வளர்செம்பொன்",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "எங்கும்",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "நிகழ",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "tēṉamar poḻilkoḷ ālai viḷaicennel tuṉṉi vaḷarcempoṉ eṅkum nikaḻa",
+      "english": "With {0:honey-rich }{1:groves, }{2:sugarcane mills, }and {3:ripening red paddy }{4:clustered together, }as {5:fine gold flourishes }{6:everywhere }{7:in view,}",
+      "words": [
+        {
+          "roman": "tēṉamar",
+          "gloss": "honey-abounding",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "poḻilkoḷ",
+          "gloss": "groves-holding",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ālai",
+          "gloss": "sugarcane mills",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "viḷaicennel",
+          "gloss": "ripening red paddy",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tuṉṉi",
+          "gloss": "densely crowding",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vaḷarcempoṉ",
+          "gloss": "flourishing fine gold",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "eṅkum",
+          "gloss": "everywhere",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nikaḻa",
+          "gloss": "manifesting",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Infinitive `nikaḻa` functions adverbially/circumstantially ('as ... shines/manifests'). Compound chain: `tēṉ-amar` (honey-settling), `poḻil-koḷ` (grove-bearing), `viḷai-cem-nel` (ripening-red-paddy), `vaḷar-cem-poṉ` (growing-fine-gold)."
+    },
+    "v11-l2": {
+      "source": "நான்முகன் ஆதி யாய பிரமா புரத்து மறைஞான ஞான முனிவன்",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "நான்முகன்",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "ஆதி",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "யாய",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "பிரமா",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "புரத்து",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "மறைஞான",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "ஞான",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "முனிவன்",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "nāṉmukaṉ āti yāya piramā purattu maṟaiñāṉa ñāṉa muṉivaṉ",
+      "english": "{7:the sage }{3,4:of Brahmapuram }{1,2:belonging to primeval }{0:Brahmā the Four-faced One, }{5:endowed with Vedic wisdom }{6:and divine knowledge,}",
+      "words": [
+        {
+          "roman": "nāṉmukaṉ",
+          "gloss": "Four-faced One [Brahmā]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "āti",
+          "gloss": "primeval",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "yāya",
+          "gloss": "who is",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "piramā",
+          "gloss": "Brahma-",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "purattu",
+          "gloss": "of the city [Brahmapuram]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "maṟaiñāṉa",
+          "gloss": "of Vedic wisdom",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ñāṉa",
+          "gloss": "divine wisdom",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "muṉivaṉ",
+          "gloss": "sage [Sambandar]",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "`nāṉmukaṉ āti āya` -> sandhi `yāya`. `piramā purattu` is the inflected genitive/locative form of Brahmapuram (`puram` -> `purattu`). `muṉivaṉ` is the subject of `uraicey` in v11-l3."
+    },
+    "v11-l3": {
+      "source": "தானுறு கோளும் நாளும் அடியாரை வந்து நலியாத வண்ணம் உரைசெய்",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "தானுறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "கோளும்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "நாளும்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அடியாரை",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "வந்து",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "நலியாத",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "வண்ணம்",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "உரைசெய்",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "tāṉuṟu kōḷum nāḷum aṭiyārai vantu naliyāta vaṇṇam uraicey",
+      "english": "{7:uttered }{6:so that }{1:planets }{2:and asterisms }{0:occurring in their course, }{4:coming near, }{5:shall not afflict }{3:devotees—}",
+      "words": [
+        {
+          "roman": "tāṉuṟu",
+          "gloss": "occurring in course",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kōḷum",
+          "gloss": "planets and",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nāḷum",
+          "gloss": "asterisms and",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aṭiyārai",
+          "gloss": "devotees",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vantu",
+          "gloss": "having approached",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "naliyāta",
+          "gloss": "not afflicting",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vaṇṇam",
+          "gloss": "in the manner that",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "uraicey",
+          "gloss": "uttered",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "`naliyāta` is a negative relative participle qualifying `vaṇṇam` ('manner/way'). `uraicey` is a past relative participle qualifying `mālai` in the following line."
+    },
+    "v11-l4": {
+      "source": "ஆனசொல் மாலை யோதும் அடியார்கள் வானில் அரசாள்வர் ஆணை நமதே",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ஆனசொல்",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "மாலை",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "யோதும்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அடியார்கள்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "வானில்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "அரசாள்வர்",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "ஆணை",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "நமதே",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "āṉacol mālai yōtum aṭiyārkaḷ vāṉil aracāḷvar āṇai namatē",
+      "english": "{3:devotees }{2:who recite }{1:this garland }{0:of potent words }{5:shall reign }{4:in heaven; }{7:this is our }{6:solemn decree!}",
+      "words": [
+        {
+          "roman": "āṉacol",
+          "gloss": "efficacious word",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "mālai",
+          "gloss": "garland",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "yōtum",
+          "gloss": "reciting",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aṭiyārkaḷ",
+          "gloss": "devotees",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vāṉil",
+          "gloss": "in heaven",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aracāḷvar",
+          "gloss": "they shall reign",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "āṇai",
+          "gloss": "solemn decree",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "namatē",
+          "gloss": "is ours indeed",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Sandhi: `mālai` + `ōtum` -> `mālai yōtum`. Future verb `aracāḷvar` asserts the promised fruit. `āṇai namatē` is an emphatic nominal sentence of sovereign declaration."
+    }
+  },
+  "after": {
+    "v11-l1": {
+      "source": "தேனமர் பொழில்கொள் ஆலை விளைசெந்நெல் துன்னி வளர்செம்பொன் எங்கும் நிகழ",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "தேனமர்",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "பொழில்கொள்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ஆலை",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "விளைசெந்நெல்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "துன்னி",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "வளர்செம்பொன்",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "எங்கும்",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "நிகழ",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "tēṉamar poḻilkoḷ ālai viḷaicennel tuṉṉi vaḷarcempoṉ eṅkum nikaḻa",
+      "english": "Amid {0:honey-rich }{1:groves, }{2:sugarcane mills, }and {3:ripening red rice }{4:clustered together, }{5:fine gold abounding }{6:everywhere }{7:in sight,}",
+      "words": [
+        {
+          "roman": "tēṉamar",
+          "gloss": "honey-abounding",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "poḻilkoḷ",
+          "gloss": "groves-holding",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ālai",
+          "gloss": "sugarcane mills",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "viḷaicennel",
+          "gloss": "ripening red rice",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "tuṉṉi",
+          "gloss": "densely crowding",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vaḷarcempoṉ",
+          "gloss": "fine gold increasing or abounding",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "eṅkum",
+          "gloss": "everywhere",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nikaḻa",
+          "gloss": "manifesting",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Infinitive `nikaḻa` functions adverbially/circumstantially ('as ... shines/manifests'). Compound chain: `tēṉ-amar` (honey-settling), `poḻil-koḷ` (grove-bearing), `viḷai-cem-nel` (ripening-red-paddy), `vaḷar-cem-poṉ` (growing-fine-gold)."
+    },
+    "v11-l2": {
+      "source": "நான்முகன் ஆதி யாய பிரமா புரத்து மறைஞான ஞான முனிவன்",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "நான்முகன்",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "ஆதி",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "யாய",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "பிரமா",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "புரத்து",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "மறைஞான",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "ஞான",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "முனிவன்",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "nāṉmukaṉ āti yāya piramā purattu maṟaiñāṉa ñāṉa muṉivaṉ",
+      "english": "{6:the wise }{7:sage, }{5:versed in Vedic knowledge, }{3,4:of Brahmapuram, }{1,2:which takes its name from }{0:the Four-faced One,}",
+      "words": [
+        {
+          "roman": "nāṉmukaṉ",
+          "gloss": "Four-faced One [Brahmā]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "āti",
+          "gloss": "origin or beginning; here, the origin of the city’s name",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "yāya",
+          "gloss": "being or becoming; linking the origin to Brahmapuram",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "piramā",
+          "gloss": "Brahma-",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "purattu",
+          "gloss": "of the city [Brahmapuram]",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "maṟaiñāṉa",
+          "gloss": "of Vedic wisdom",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ñāṉa",
+          "gloss": "wise; possessing knowledge",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "muṉivaṉ",
+          "gloss": "sage [Sambandar]",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Nāṉmukaṉ is the Four-faced One. Āti yāya relates the origin of Brahmapuram to him; it does not say that he owns the city. Maṟaiñāṉa gives Vedic knowledge, and ñāṉa qualifies the sage as wise. The English subject is this sage, continued by spoke in the next row."
+    },
+    "v11-l3": {
+      "source": "தானுறு கோளும் நாளும் அடியாரை வந்து நலியாத வண்ணம் உரைசெய்",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "தானுறு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "கோளும்",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "நாளும்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அடியாரை",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "வந்து",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "நலியாத",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "வண்ணம்",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "உரைசெய்",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "tāṉuṟu kōḷum nāḷum aṭiyārai vantu naliyāta vaṇṇam uraicey",
+      "english": "{7:spoke }{6:so that }{1:planets }{2:and asterisms, }{0:as they take their course, }{5:may not }{4:come }{5:and afflict }{3:devotees.}",
+      "words": [
+        {
+          "roman": "tāṉuṟu",
+          "gloss": "occurring in course",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kōḷum",
+          "gloss": "planets and",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nāḷum",
+          "gloss": "asterisms and",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aṭiyārai",
+          "gloss": "devotees",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vantu",
+          "gloss": "having approached",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "naliyāta",
+          "gloss": "not afflicting",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vaṇṇam",
+          "gloss": "in the manner that",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "uraicey",
+          "gloss": "spoke or composed; here, the sage’s utterance that forms the following word-garland",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Naliyāta is negative and qualifies vaṇṇam: so that they do not afflict. Uraicey is the utterance/composition expression linked to the following garland of words; do not assert an overt past-tense suffix absent from the supplied form. English uses spoke as a finite clause, then resumes the resulting garland with this in the next sentence."
+    },
+    "v11-l4": {
+      "source": "ஆனசொல் மாலை யோதும் அடியார்கள் வானில் அரசாள்வர் ஆணை நமதே",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ஆனசொல்",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "மாலை",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "யோதும்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அடியார்கள்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "வானில்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "அரசாள்வர்",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "ஆணை",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "நமதே",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "roman": "āṉacol mālai yōtum aṭiyārkaḷ vāṉil aracāḷvar āṇai namatē",
+      "english": "{3:Devotees }{2:who recite }{1:this garland }{0:of potent words }{5:shall reign }{4:in heaven; }{7:this is our }{6:solemn decree!}",
+      "words": [
+        {
+          "roman": "āṉacol",
+          "gloss": "efficacious word",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "mālai",
+          "gloss": "garland",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "yōtum",
+          "gloss": "reciting",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aṭiyārkaḷ",
+          "gloss": "devotees",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "vāṉil",
+          "gloss": "in heaven",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "aracāḷvar",
+          "gloss": "they shall reign",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "āṇai",
+          "gloss": "solemn decree",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "namatē",
+          "gloss": "is ours indeed",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Sandhi: `mālai` + `ōtum` -> `mālai yōtum`. Future verb `aracāḷvar` asserts the promised fruit. `āṇai namatē` is an emphatic nominal sentence of sovereign declaration."
+    }
+  },
+  "limitation": "Text delivery fixture, not model grammar certification."
+}

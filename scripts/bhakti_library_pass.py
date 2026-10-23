@@ -8,6 +8,8 @@ from __future__ import annotations
 
 import argparse
 import copy
+import concurrent.futures
+import fcntl
 from collections import Counter
 import hashlib
 import json
@@ -17,6 +19,7 @@ from pathlib import Path
 import re
 import shutil
 import time
+import threading
 from typing import Any
 
 import bhakti_pipeline as pipeline
@@ -27,6 +30,7 @@ import apply_translation_style_review as reader_writer
 import bhakti_review_findings as finding_store
 
 VERSION = 1
+_EXECUTION_OWNER = threading.Lock()
 ROOT = Path(__file__).resolve().parents[1]
 PRIORITY = ('patta-bola-vrksha-se', 'rehna-nahi-isa-desa')
 
@@ -300,8 +304,9 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
                                              active_attempt=context_attempt.attempt_id)
         local.semantic_pending_findings = finding_store.pending_findings(snapshot)
         observed = {}
-        def observe(response, target_ids, label):
-            evidence = {'response': response, 'target_ids': target_ids}
+        def observe(response, target_ids, label, context_ids):
+            evidence = {'response': response, 'target_ids': target_ids,
+                        'context_ids': context_ids, 'label': label}
             # A child is selected again when assembled into its parent cache.
             # Retain the first raw packet, not the later annotated projection.
             if label not in observed:
@@ -338,6 +343,19 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
                 'dependency_fingerprint': dependency_fingerprint, 'attempt_id': context_attempt.attempt_id,
                 'reviews': reviews, 'issues': issues, 'reviewPackets': packets,
                 'source_lines': lines, 'gloss_rows': glosses}
+        # Preserve only packets with extra rows: ordinary target-only responses
+        # are already in reviews/reviewPackets. These are evidence, not edit scope.
+        context_packets = []
+        for label in sorted(observed):
+            evidence = observed[label]
+            response = evidence['response']
+            packet = response.get('packet') if isinstance(response, dict) else None
+            rows = packet.get('reviews') if isinstance(packet, dict) else None
+            if isinstance(rows, list) and any(isinstance(row, dict)
+                    and row.get('id') not in evidence['target_ids'] for row in rows):
+                context_packets.append(copy.deepcopy(evidence))
+        if context_packets:
+            artifact['context_review_packets'] = context_packets
         if response_errors:
             artifact['response_contract_errors'] = response_errors
         finding_store.record_review(journal_path, artifact, **context)
@@ -409,6 +427,9 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
     def execute(context):
         local = route_options(options, context)
         local.semantic_full_source = lines
+        local.semantic_context_evidence = [
+            {'source': copy.deepcopy(source), 'gloss': copy.deepcopy(gloss), 'draft': copy.deepcopy(draft)}
+            for source, gloss, draft in zip(lines, original_glosses, original_translations)]
         local.semantic_performance_order = copy.deepcopy(reader['SONG_SEQUENCE'])
         local.semantic_source_identity = dependency_fingerprint
         local.semantic_repair_findings = repair_findings
@@ -536,7 +557,10 @@ def execute_song(root: Path, row: dict, state_dir: Path, options, deadline_at: f
     workspace = prepare_workspace(root, row, state_dir)
     route_dir = state_dir / 'routes'; source_result = None
     source_stages = {'source-merge', 'audio-review', 'focused-audio-review', 'timing-review'}
-    if source_stages.intersection(row['plannedStages']):
+    source_flags = copy.deepcopy(row.get('flags', {}))
+    if not isinstance(source_flags, dict) or type(source_flags.get('coverage_requested', False)) is not bool:
+        raise ValueError('source selection flags and coverage request are invalid')
+    if source_stages.intersection(row['plannedStages']) or source_flags.get('coverage_requested', False):
         from bhakti_library_source_pass import run_source_candidate
         checkpoint_path = state_dir / 'songs' / slug / 'source-checkpoint.json'
         checkpoint = read_json(checkpoint_path)
@@ -548,6 +572,8 @@ def execute_song(root: Path, row: dict, state_dir: Path, options, deadline_at: f
         else:
             source_options = copy.copy(options); source_options.timing_deadline_at = deadline_at
             source_options.source_requested_stages = row['plannedStages']
+            source_options.source_review_flags = source_flags
+            source_options.source_coverage_requested = source_flags.get('coverage_requested', False)
             source_options.source_confirmed_issues = row['defects'] + row['evidenceGaps']
             source_result = run_source_candidate(root=root, slug=slug, reader=before, workspace=workspace,
                 route_dir=route_dir, options=source_options, deadline_at=deadline_at)
@@ -755,11 +781,36 @@ def reconcile_editorial_continuations(state_dir: Path, run: dict, rows: list[dic
 
 
 def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> dict:
+    """One environment owner and one coordinator per durable private run."""
+    workers = getattr(options, 'workers', 7)
+    if type(workers) is not int or workers < 1:
+        raise ValueError('workers must be a positive integer')
+    if not _EXECUTION_OWNER.acquire(blocking=False):
+        raise ValueError('another library execution owns the active process environment')
+    try:
+        state_dir.mkdir(parents=True, exist_ok=True)
+        with (state_dir / '.execution.lock').open('a') as lock:
+            try:
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            except BlockingIOError as exc:
+                raise ValueError('another execution owns this private run state') from exc
+            try:
+                return _execute_inventory(root, inventory, state_dir, options)
+            finally:
+                fcntl.flock(lock, fcntl.LOCK_UN)
+    finally:
+        _EXECUTION_OWNER.release()
+
+
+def _execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> dict:
     import bhakti_model_routes as routes
     if (not math.isfinite(options.budget_usd or 0) or options.budget_usd <= 0
             or type(options.max_calls) is not int or options.max_calls <= 0
             or not math.isfinite(options.deadline_seconds) or options.deadline_seconds <= 0):
         raise ValueError('execution requires positive bounded dollars, calls and deadline')
+    slugs = [row['slug'] for row in inventory['songs']]
+    if len(set(slugs)) != len(slugs):
+        raise ValueError('inventory requires unique slugs; duplicate song refused')
     selected = set(options.slugs) if options.slugs else {row['slug'] for row in inventory['songs']}
     if selected - {row['slug'] for row in inventory['songs']}: raise ValueError('selection contains unpublished song')
     rows = [row for row in inventory['songs'] if row['slug'] in selected]
@@ -792,6 +843,7 @@ def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> 
         raise ValueError('another bounded API ledger is configured; do not overlap runs')
     os.environ.update(env)
     try:
+        ready = []
         for row in rows:
             slug = row['slug']
             if slug in run['songs'] and slug not in continuations:
@@ -829,30 +881,87 @@ def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> 
                         if not path.is_file() or file_hash(path) != accepted.get(field):
                             raise ValueError('accepted candidate changed; do not reuse publication evidence')
                 continue
-            summary = ledger_summary(ledger)
-            if (summary['blocked'] or summary['calls'] >= options.max_calls
-                    or summary['accounted_usd'] >= options.budget_usd or time.time() >= run['deadline_at']):
-                run['status'] = 'bounded-stop'; break
-            try:
-                for item in reuse_identity.values():
-                    if file_hash(Path(item['path'])) != item['sha256']:
-                        raise routes.RunFatal('reviewed source reuse map changed during run')
-                run['songs'][slug] = execute_song(root, row, state_dir, options, run['deadline_at'])
-            except routes.RunFatal as exc:
-                run['status'] = 'bounded-stop'; run['stopReason'] = str(exc); break
-            except (routes.UnitUnresolved, ValueError, RuntimeError, ImportError) as exc:
-                run['songs'][slug] = {'status': 'unresolved', 'publicationEligible': False,
-                                      'issues': [str(exc)], 'errorType': type(exc).__name__}
-            if slug in continuations:
-                run['reconciliations'].append({'phase': 'completed', 'id': continuations[slug]['id'],
-                    'slug': slug, 'result': copy.deepcopy(run['songs'][slug])})
-                del continuations[slug]
+            ready.append(row)
+        # Only this coordinator owns the shared run state. Song workers own
+        # disjoint workspaces/routes and receive isolated options values.
+        pending = {}; cursor = 0; stopped = False; interrupted = None
+        workers = getattr(options, 'workers', 7)
+        pool = concurrent.futures.ThreadPoolExecutor(max_workers=workers)
+
+        def checkpoint():
             run['remaining'] = [item['slug'] for item in rows
                                 if item['slug'] not in run['songs'] or item['slug'] in continuations]
             pipeline.semantic_write_json(run_path, run)
-        run['remaining'] = [row['slug'] for row in rows
-                            if row['slug'] not in run['songs'] or row['slug'] in continuations]
-        if not run['remaining']:
+
+        def stop(reason):
+            nonlocal stopped
+            stopped = True
+            run['status'] = 'bounded-stop'; run['stopReason'] = str(reason)
+            for future in pending:
+                future.cancel()  # Only work that has not started can cancel.
+
+        def collect(future):
+            nonlocal interrupted
+            row = pending.pop(future); slug = row['slug']
+            if future.cancelled(): return
+            completed = False
+            try:
+                run['songs'][slug] = future.result()
+                completed = True
+            except routes.RunFatal as exc:
+                stop(exc)
+            except (routes.UnitUnresolved, ValueError, RuntimeError, ImportError) as exc:
+                run['songs'][slug] = {'status': 'unresolved', 'publicationEligible': False,
+                                      'issues': [str(exc)], 'errorType': type(exc).__name__}
+                completed = True
+            except BaseException as exc:
+                # Includes KeyboardInterrupt raised by a worker. Its durable
+                # route evidence decides whether resume may retry anything.
+                if interrupted is None: interrupted = exc
+                stop(type(exc).__name__)
+            if completed and slug in continuations:
+                run['reconciliations'].append({'phase': 'completed', 'id': continuations[slug]['id'],
+                    'slug': slug, 'result': copy.deepcopy(run['songs'][slug])})
+                del continuations[slug]
+            checkpoint()
+
+        try:
+            while cursor < len(ready) or pending:
+                try:
+                    while not stopped and cursor < len(ready) and len(pending) < workers:
+                        summary = ledger_summary(ledger)
+                        if (summary['blocked'] or summary['calls'] >= options.max_calls
+                                or summary['accounted_usd'] >= options.budget_usd
+                                or time.time() >= run['deadline_at']):
+                            stop('shared budget, call limit, ledger or deadline prevents more work')
+                            break
+                        for item in reuse_identity.values():
+                            if file_hash(Path(item['path'])) != item['sha256']:
+                                raise routes.RunFatal('reviewed source reuse map changed during run')
+                        row = ready[cursor]
+                        future = pool.submit(execute_song, root, row, state_dir,
+                                             copy.deepcopy(options), run['deadline_at'])
+                        pending[future] = row; cursor += 1
+                    if not pending: break
+                    done, _ = concurrent.futures.wait(pending, return_when=concurrent.futures.FIRST_COMPLETED)
+                    # Deterministic processing of simultaneous completions; a
+                    # fatal outcome prevents replenishment before any new job.
+                    for future in list(pending):
+                        if future in done: collect(future)
+                except routes.RunFatal as exc:
+                    stop(exc)
+                except KeyboardInterrupt as exc:
+                    if interrupted is None: interrupted = exc
+                    stop('interrupted')
+                if stopped and not pending: break
+        finally:
+            # Do not restore process environment while an active request still
+            # uses it. Bounded transport owns request termination and charges.
+            pool.shutdown(wait=True, cancel_futures=True)
+        checkpoint()
+        if interrupted is not None:
+            run['status'] = 'interrupted'
+        elif not run['remaining']:
             run['status'] = 'unresolved' if any(row['status'] == 'unresolved' for row in run['songs'].values()) else 'complete'
         acknowledged_ledger = read_json(ledger)
         if run.get('reconciliations') and not isinstance(acknowledged_ledger, dict):
@@ -862,6 +971,8 @@ def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> 
             run['ledgerCheckpoint'] = {'ledger': acknowledged_ledger,
                                        'digest': prepare.json_digest(acknowledged_ledger)}
         pipeline.semantic_write_json(run_path, run)
+        if interrupted is not None:
+            raise interrupted
         return run
     finally:
         for key, value in old_env.items():
@@ -885,6 +996,7 @@ def main(argv=None) -> int:
     parser.add_argument('--max-calls', type=int)
     parser.add_argument('--deadline-seconds', type=float, default=3600)
     parser.add_argument('--timeout', type=float, default=600)
+    parser.add_argument('--workers', type=int, default=7)
     parser.add_argument('--model', default='google/gemini-3.7-flash')
     parser.add_argument('--pro-model', default='google/gemini-3.1-pro-preview')
     options = parser.parse_args(argv)

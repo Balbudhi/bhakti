@@ -78,9 +78,9 @@ class CallerTests(unittest.TestCase):
   plan=result['evidence']['plan'];self.assertEqual(actual['packet']['performance_order'],plan['performance_order']);self.assertEqual(len(plan['new_target_ids']),5);self.assertEqual(set(plan['reuse_by_id']),set(self.reader['SONG_LINES']))
  def test_unknown_audit_uncertainty_holds(self):
   self.audit['packet']['uncertainties']=['unresolved source'];write_json(self.root/'songs'/self.slug/'.transcription/pipeline/02-transcript-audit.json',self.audit);self.assertEqual(self.run_candidate()['status'],'unresolved');self.target.assert_not_called()
- def test_unsupported_audio_flags_are_not_cleared_by_cached_source(self):
+ def test_invalid_audio_cannot_be_cleared_by_cached_source(self):
   self.options.source_requested_stages=['audio-review'];self.options.source_confirmed_issues=['hearing unclear']
-  result=self.run_candidate();self.assertEqual(result['status'],'unresolved');self.assertEqual(result['issues'][0]['kind'],'unsupported_audio_source_review');self.target.assert_not_called();self.align.assert_not_called()
+  result=self.run_candidate();self.assertEqual(result['status'],'unresolved');self.assertEqual(result['issues'][0]['kind'],'source_stage_hold');self.assertIn('ffprobe',result['issues'][0]['detail']);self.target.assert_not_called();self.align.assert_not_called()
  def test_timing_only_calls_no_semantics_and_preserves_source(self):
   self.audit['packet']['verified_lines']=self.audit['packet']['verified_lines'][:1];self.audit['packet']['performance_order']=self.audit['packet']['performance_order'][:1]
   # Timing-only uses exact original IDs; any source remapping would invalidate cached evidence.
@@ -95,6 +95,12 @@ class TargetRouteTests(unittest.TestCase):
  def setUp(self):
   self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.directory=pathlib.Path(self.tmp.name);self.options=argparse.Namespace(model='google/gemini-3.7-flash',pro_model='google/gemini-3.1-pro-preview',timeout=20,force=False)
   self.plan={'lines':[{'id':'old','source_text':'मन','roman':'man','kind':'verse'},{'id':'new','source_text':'शीतल','roman':'śītal','kind':'verse'}],'performance_order':[{'line_id':'old'},{'line_id':'new'}],'new_target_ids':['new']};self.metadata={'languages':['Hindi']};self.value=fresh(self.plan);self.calls=[]
+  old={'source':'मन','roman':'man','sourceLanguage':'hi','sourceWords':[{'text':'मन','wordIndices':[0]}],
+       'english':'{0:Mind}','words':[{'roman':'man','gloss':'mind'}],'grammarNote':'Preserved noun.'}
+  self.plan['reuse_by_id']={'old':old}
+  self.context_evidence=[{'source':copy.deepcopy(self.plan['lines'][0]),
+    'gloss':{'id':'old','word_glosses':copy.deepcopy(old['words']),'grammar_note':'Preserved noun.'},
+    'draft':{'id':'old','literal_english':'Mind','segments':[{'text':'Mind','word_indices':[0]}]}}]
  def gloss(self,song,audited,options):
   self.calls.append(('gloss',options.model,audited,options));return copy.deepcopy(self.value['glosses'])
  def translate(self,song,audited,glosses,job,options,*,candidate_only):
@@ -107,7 +113,7 @@ class TargetRouteTests(unittest.TestCase):
   self.assertTrue(result['translations']['packet']['translations'][0]['independent_review']['passes'])
   self.assertEqual([(x[0],x[1]) for x in self.calls],[('gloss','google/gemini-3.7-flash'),('translate','google/gemini-3.7-flash'),('gloss','google/gemini-3.1-pro-preview'),('translate','google/gemini-3.1-pro-preview')])
   for _,_,audited,options in self.calls:
-   self.assertEqual([line['id'] for line in audited['packet']['verified_lines']],['new']);self.assertEqual(options.semantic_full_source,self.plan['lines']);self.assertEqual(options.semantic_performance_order,self.plan['performance_order']);self.assertTrue(options.unit_context);self.assertGreater(options.unit_deadline_at,time.time())
+   self.assertEqual([line['id'] for line in audited['packet']['verified_lines']],['new']);self.assertEqual(options.semantic_full_source,self.plan['lines']);self.assertEqual(options.semantic_performance_order,self.plan['performance_order']);self.assertEqual(options.semantic_context_evidence,self.context_evidence);self.assertTrue(options.unit_context);self.assertGreater(options.unit_deadline_at,time.time())
  def test_accepted_target_route_resumes_without_model_calls(self):
   with patch.object(pipeline,'gloss',side_effect=self.gloss),patch.object(pipeline,'translate',side_effect=self.translate):first=self.run_targets()
   with patch.object(pipeline,'gloss',side_effect=AssertionError('cached target rerun')),patch.object(pipeline,'translate',side_effect=AssertionError('cached target rerun')):self.assertEqual(self.run_targets(),first)
@@ -123,7 +129,7 @@ class EditorialSourceConsumerTests(unittest.TestCase):
   helper_path=os.environ.get('BHAKTI_TEST_EDITORIAL_ROOT')
   if helper_path:sys.path.insert(0,str(pathlib.Path(helper_path)))
   self.unit_id='test-source:new-source-semantics';self.route=self.directory/'routes';self.record=self.directory/'decision.json'
-  self.evidence={'targets':[self.plan['lines'][1]],'source':self.plan['lines'],'order':self.plan['performance_order'],'languages':self.metadata['languages'],'policy':pipeline.translation_policy_payload()}
+  self.evidence={'targets':[self.plan['lines'][1]],'source':self.plan['lines'],'order':self.plan['performance_order'],'languages':self.metadata['languages'],'reading_context':self.context_evidence,'policy':pipeline.translation_policy_payload()}
   self.input_id=adapter.digest(self.evidence);self.dependency=adapter.digest(self.evidence['policy'])
   self.candidate=copy.deepcopy(self.value);row=self.candidate['translations']['packet']['translations'][0]
   row['human_review_recommended']=True;row['material_alternatives']=['Be cool'];row['independent_review'].update(human_review_recommended=True,material_choice='Adjectival state versus direct imperative',issues=[])

@@ -14,15 +14,39 @@ the expanded corpus/index must be configured explicitly.
 priority run exposed real source, timing and translation holds; later model
 agreement does not erase an earlier concrete finding. Current boundaries are:
 
-- `bhakti_library_pass.py` executes its song loop serially. Production intake in
-  `bhakti_pipeline.py` has parallel song workers; those are different callers.
-- A general source-investigation caller is still missing. Registered source
-  witnesses and dictionary acquisition exist, and the library source adapter
-  handles reviewed cached reconstruction, but its current `run_source_candidate`
-  path explicitly holds broader `audio-review` / `focused-audio-review` requests.
-- Review receives target English, neighboring source and explicitly referenced
-  distant source/gloss/English. Complete assembled English context for every
-  review batch is still pending; a whole-candidate hash is not visible context.
+- `bhakti_library_pass.py` now has seven bounded song workers and preserves the
+  shared three-call API scheduler. Resume, interruption and concurrent caller
+  checks are implemented; the full paid library run has not been performed.
+- The general audio-investigation caller now records bounded source observations
+  with prior-hearing evidence. It does not yet adjudicate those observations into
+  a publishable source correction; that downstream step remains unfinished.
+- Review now receives neighboring source, glosses and current English in actual
+  performance order, including explicitly referenced distant dependencies. A
+  current-reader audit retains material findings returned about context rows;
+  those findings cannot silently authorize an edit or disappear after a clean
+  target-only review. The ordinary generation caller holds material or malformed
+  context findings without retrying them into a clean Pro result; its raw evidence
+  and unresolved state survive resume.
+- An offline census of the actual reviewer found a serious input-size defect:
+  rich full-song source objects, each containing duplicated neighbors, were sent
+  in every ten-line request. They account for 60.6% of 148.90 million prompt
+  characters across 779 requests (260 songs / 6,545 definitions). Five additional
+  songs / 196 definitions fail input checks before dispatch. Estimated review-only
+  cost for this uncorrected caller is $36–$87, depending on tokenization and
+  output/reasoning length; repairs, audio and retries are additional. No full run
+  was dispatched. Bounded, nonduplicated source context now reduces the same
+  frozen workload to 42.42 million prompt characters / 44.97 MB UTF-8 (71.5% fewer
+  characters), with the same 779 requests and five held inputs. Target source maps,
+  relevant performed windows, English/gloss context and explicit distant relations
+  remain supplied. At unchanged output/reasoning assumptions the remaining
+  review-only estimate is still $19–$59: high reasoning output remains unqualified
+  for broad dispatch. No cost reduction is claimed from an unrun medium setting.
+- A separate gloss-prompt duplication is fixed: dictionary entries and token
+  bindings are supplied once through the existing compact evidence packet.
+  Offline request replay reduced two priority gloss prompts by 50.7% and 56.8%
+  without removing senses, restrictions or source evidence. This is not a
+  measured whole-library cost reduction. High reasoning output remains a separate
+  cost to qualify before broad dispatch.
 - Connotation and compound handling are prompt/editorial rules, not a dedicated
   semantically validated module. Sense-ID/alternative checks establish structural
   accountability, not linguistic correctness or cross-language qualification.

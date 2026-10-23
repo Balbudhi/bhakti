@@ -43,15 +43,16 @@ class TranslationReviewContextTests(unittest.TestCase):
         )
 
     def context(self, call):
-        marker = 'NEARBY SOURCE CONTEXT (context only; do not return these IDs):\n'
+        marker = 'ENGLISH READING CONTEXT (context only; target obligations unchanged):\n'
         self.assertIn(marker, call['prompt'])
-        return json.JSONDecoder().raw_decode(call['prompt'].split(marker, 1)[1].lstrip())[0]
+        reading = json.JSONDecoder().raw_decode(call['prompt'].split(marker, 1)[1].lstrip())[0]
+        return [row['source'] for row in reading['context_rows']]
 
     def test_each_child_and_direct_request_has_its_actual_adjacent_source(self):
         reviews, _ = self.run_review()
         self.assertEqual([r['id'] for r in reviews], [line['id'] for line in self.lines])
         calls = {c['ids'][0]: c for c in self.calls}
-        expected = {'line-0': [10, 11], 'line-10': [8, 9, 20, 21], 'line-20': [18, 19]}
+        expected = {'line-0': [10, 11, 12], 'line-10': [7, 8, 9, 20, 21, 22], 'line-20': [17, 18, 19]}
         self.assertEqual(set(calls), set(expected))
         for first, positions in expected.items():
             self.assertEqual(self.context(calls[first]), [self.lines[i] for i in positions])
@@ -81,7 +82,7 @@ class TranslationReviewContextTests(unittest.TestCase):
         self.run_review()
         self.assertEqual({c['ids'][0] for c in self.calls}, {'line-10', 'line-20'})
         direct = next(c for c in self.calls if c['ids'][0] == 'line-20')
-        self.assertEqual(self.context(direct), self.lines[18:20])
+        self.assertEqual(self.context(direct), self.lines[17:20])
 
     def test_short_song_has_explicit_empty_context_and_target_ids_only(self):
         self.lines = self.lines[:2]

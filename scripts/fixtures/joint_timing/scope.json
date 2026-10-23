@@ -1,0 +1,809 @@
+{
+  "ordered_occurrences": [
+    {
+      "occurrence_id": "occ-000",
+      "ref": "line-000",
+      "repeats": 1,
+      "source_text": "पत्ता बोला वृक्ष से",
+      "roman": "Pattā bolā vṛkṣa se",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-001",
+      "ref": "line-001",
+      "repeats": 1,
+      "source_text": "सुनो वृक्ष वनराय",
+      "roman": "Suno vṛkṣa vanarāya",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-002",
+      "ref": "line-002",
+      "repeats": 1,
+      "source_text": "अब के पतझड़ ना मिले",
+      "roman": "Aba ke patajhaṛa nā mile",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-003",
+      "ref": "line-003",
+      "repeats": 1,
+      "source_text": "दूर पड़ेंगे जाय",
+      "roman": "Dūra paṛeṅge jāya",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-004",
+      "ref": "line-000",
+      "repeats": 1,
+      "source_text": "पत्ता बोला वृक्ष से",
+      "roman": "Pattā bolā vṛkṣa se",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-005",
+      "ref": "line-001",
+      "repeats": 1,
+      "source_text": "सुनो वृक्ष वनराय",
+      "roman": "Suno vṛkṣa vanarāya",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-006",
+      "ref": "line-002",
+      "repeats": 1,
+      "source_text": "अब के पतझड़ ना मिले",
+      "roman": "Aba ke patajhaṛa nā mile",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-007",
+      "ref": "line-003",
+      "repeats": 1,
+      "source_text": "दूर पड़ेंगे जाय",
+      "roman": "Dūra paṛeṅge jāya",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-008",
+      "ref": "line-004",
+      "repeats": 1,
+      "source_text": "वृक्ष बोला पत्ते से",
+      "roman": "Vṛkṣa bolā patte se",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-009",
+      "ref": "line-005",
+      "repeats": 1,
+      "source_text": "सुनो पत्ते मेरे भाई",
+      "roman": "Suno patte mere bhāī",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-010",
+      "ref": "line-006",
+      "repeats": 2,
+      "source_text": "यही जगत की रीत है",
+      "roman": "Yahī jagata kī rīta hai",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-011",
+      "ref": "line-007",
+      "repeats": 1,
+      "source_text": "इक आए इक जाय",
+      "roman": "Ika āye ika jāya",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-012",
+      "ref": "source-new-line-008",
+      "repeats": 1,
+      "source_text": "पत्ता बोला",
+      "roman": "Pattā bolā",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-013",
+      "ref": "line-008",
+      "repeats": 1,
+      "source_text": "साँस साँस में नाम ले",
+      "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-014",
+      "ref": "line-009",
+      "repeats": 1,
+      "source_text": "बचे साँस ना कोई",
+      "roman": "Bace sām̐sa nā koī",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-015",
+      "ref": "line-008",
+      "repeats": 1,
+      "source_text": "साँस साँस में नाम ले",
+      "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-016",
+      "ref": "line-009",
+      "repeats": 1,
+      "source_text": "बचे साँस ना कोई",
+      "roman": "Bace sām̐sa nā koī",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-017",
+      "ref": "line-010",
+      "repeats": 2,
+      "source_text": "क्या जाने फिर सांस का",
+      "roman": "kyā jāne phir sā̃s kā",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-018",
+      "ref": "line-011",
+      "repeats": 1,
+      "source_text": "आवन होए ना होए",
+      "roman": "āvan hoe nā hoe",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-019",
+      "ref": "line-012",
+      "repeats": 2,
+      "source_text": "बुरा जो देखन मैं चला",
+      "roman": "burā jo dekhan maĩ calā",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-020",
+      "ref": "line-013",
+      "repeats": 1,
+      "source_text": "बुरा ना मिलिया कोई",
+      "roman": "burā nā miliyā koī",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-021",
+      "ref": "line-012",
+      "repeats": 1,
+      "source_text": "बुरा जो देखन मैं चला",
+      "roman": "burā jo dekhan maĩ calā",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-022",
+      "ref": "line-013",
+      "repeats": 1,
+      "source_text": "बुरा ना मिलिया कोई",
+      "roman": "burā nā miliyā koī",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-023",
+      "ref": "line-014",
+      "repeats": 2,
+      "source_text": "जो मन खोजा आपना",
+      "roman": "jo man khojā āpanā",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-024",
+      "ref": "line-015",
+      "repeats": 1,
+      "source_text": "मुझसे बुरा ना कोई",
+      "roman": "mujhse burā nā koī",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-025",
+      "ref": "line-016",
+      "repeats": 1,
+      "source_text": "मांगन मरण समान है",
+      "roman": "mā̃gan maraṇ samān hai",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-026",
+      "ref": "line-017",
+      "repeats": 1,
+      "source_text": "मत कोई मांगे भीख",
+      "roman": "mat koī mā̃ge bhīkh",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-027",
+      "ref": "line-016",
+      "repeats": 1,
+      "source_text": "मांगन मरण समान है",
+      "roman": "mā̃gan maraṇ samān hai",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-028",
+      "ref": "line-017",
+      "repeats": 1,
+      "source_text": "मत कोई मांगे भीख",
+      "roman": "mat koī mā̃ge bhīkh",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-029",
+      "ref": "line-018",
+      "repeats": 2,
+      "source_text": "मांगन से मरना भला",
+      "roman": "mā̃gan se maranā bhalā",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-030",
+      "ref": "line-019",
+      "repeats": 1,
+      "source_text": "ये सतगुर की सीख",
+      "roman": "ye satagur kī sīkh",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-031",
+      "ref": "source-new-line-023",
+      "repeats": 1,
+      "source_text": "ऐसी बानी बोलिए",
+      "roman": "Aisī bānī boliye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-032",
+      "ref": "source-new-line-024",
+      "repeats": 1,
+      "source_text": "मन का आपा खोए",
+      "roman": "Man kā āpā khoye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-033",
+      "ref": "source-new-line-023",
+      "repeats": 1,
+      "source_text": "ऐसी बानी बोलिए",
+      "roman": "Aisī bānī boliye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-034",
+      "ref": "source-new-line-024",
+      "repeats": 1,
+      "source_text": "मन का आपा खोए",
+      "roman": "Man kā āpā khoye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-035",
+      "ref": "source-new-line-025",
+      "repeats": 2,
+      "source_text": "अपना तन शीतल करे",
+      "roman": "Apnā tan śītal kare",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-036",
+      "ref": "source-new-line-026",
+      "repeats": 1,
+      "source_text": "औरों को सुख देय",
+      "roman": "Auroṁ ko sukh deye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-037",
+      "ref": "line-021",
+      "repeats": 2,
+      "source_text": "दुख में सुमिरन सब करे",
+      "roman": "Dukh meṁ sumiran sab kare",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-038",
+      "ref": "line-020",
+      "repeats": 1,
+      "source_text": "सुख में करे न कोय",
+      "roman": "Sukh meṁ kare na koye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-039",
+      "ref": "line-021",
+      "repeats": 1,
+      "source_text": "दुख में सुमिरन सब करे",
+      "roman": "Dukh meṁ sumiran sab kare",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-040",
+      "ref": "line-020",
+      "repeats": 1,
+      "source_text": "सुख में करे न कोय",
+      "roman": "Sukh meṁ kare na koye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-041",
+      "ref": "line-022",
+      "repeats": 2,
+      "source_text": "जो सुख में सुमिरन करे",
+      "roman": "Jo sukh meṁ sumiran kare",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-042",
+      "ref": "line-023",
+      "repeats": 1,
+      "source_text": "दुख काहे को होय",
+      "roman": "Dukh kāhe ko hoye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-043",
+      "ref": "line-024",
+      "repeats": 1,
+      "source_text": "कागा किसका धन हरे",
+      "roman": "Kāgā kiskā dhan hare",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-044",
+      "ref": "line-025",
+      "repeats": 1,
+      "source_text": "कोयल किसको देय",
+      "roman": "Koyal kisko deye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-045",
+      "ref": "line-024",
+      "repeats": 1,
+      "source_text": "कागा किसका धन हरे",
+      "roman": "Kāgā kiskā dhan hare",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-046",
+      "ref": "line-025",
+      "repeats": 1,
+      "source_text": "कोयल किसको देय",
+      "roman": "Koyal kisko deye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-047",
+      "ref": "line-026",
+      "repeats": 1,
+      "source_text": "बस मीठा शब्द सुनाय के",
+      "roman": "Bas mīṭhā śabd sunāy ke",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-048",
+      "ref": "line-027",
+      "repeats": 1,
+      "source_text": "मीठा शब्द सुनाय के",
+      "roman": "Mīṭhā śabd sunāy ke",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-049",
+      "ref": "line-028",
+      "repeats": 1,
+      "source_text": "जग अपना कर लेय",
+      "roman": "Jag apnā kar leye",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    {
+      "occurrence_id": "occ-050",
+      "ref": "line-000",
+      "repeats": 1,
+      "source_text": "पत्ता बोला वृक्ष से",
+      "roman": "Pattā bolā vṛkṣa se",
+      "section": "refrain",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    }
+  ],
+  "focused_region": {
+    "index": 1015,
+    "grid": "joint-focused-disagreement",
+    "clip_start": 274.05,
+    "clip_end": 318.25,
+    "target_indices": [
+      15,
+      16,
+      17
+    ],
+    "target_occurrences": [
+      {
+        "occurrence_id": "occ-015",
+        "ref": "line-008",
+        "repeats": 1,
+        "source_text": "साँस साँस में नाम ले",
+        "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic"
+      },
+      {
+        "occurrence_id": "occ-016",
+        "ref": "line-009",
+        "repeats": 1,
+        "source_text": "बचे साँस ना कोई",
+        "roman": "Bace sām̐sa nā koī",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic"
+      },
+      {
+        "occurrence_id": "occ-017",
+        "ref": "line-010",
+        "repeats": 2,
+        "source_text": "क्या जाने फिर सांस का",
+        "roman": "kyā jāne phir sā̃s kā",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic"
+      }
+    ],
+    "preceding_context": {
+      "occurrence_id": "occ-014",
+      "ref": "line-009",
+      "repeats": 1,
+      "source_text": "बचे साँस ना कोई",
+      "roman": "Bace sām̐sa nā koī",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    "following_context": {
+      "occurrence_id": "occ-018",
+      "ref": "line-011",
+      "repeats": 1,
+      "source_text": "आवन होए ना होए",
+      "roman": "āvan hoe nā hoe",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    }
+  },
+  "third_region": {
+    "index": 2,
+    "grid": "long-segment",
+    "core_start": 554.25,
+    "core_end": 922.721,
+    "clip_start": 539.25,
+    "clip_end": 922.721,
+    "target_indices": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "target_occurrences": [
+      {
+        "occurrence_id": "occ-031",
+        "ref": "source-new-line-023",
+        "repeats": 1,
+        "source_text": "ऐसी बानी बोलिए",
+        "roman": "Aisī bānī boliye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 542.176
+      },
+      {
+        "occurrence_id": "occ-032",
+        "ref": "source-new-line-024",
+        "repeats": 1,
+        "source_text": "मन का आपा खोए",
+        "roman": "Man kā āpā khoye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 555.923
+      },
+      {
+        "occurrence_id": "occ-033",
+        "ref": "source-new-line-023",
+        "repeats": 1,
+        "source_text": "ऐसी बानी बोलिए",
+        "roman": "Aisī bānī boliye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 572.595
+      },
+      {
+        "occurrence_id": "occ-034",
+        "ref": "source-new-line-024",
+        "repeats": 1,
+        "source_text": "मन का आपा खोए",
+        "roman": "Man kā āpā khoye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 589.268
+      },
+      {
+        "occurrence_id": "occ-035",
+        "ref": "source-new-line-025",
+        "repeats": 2,
+        "source_text": "अपना तन शीतल करे",
+        "roman": "Apnā tan śītal kare",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 605.941
+      },
+      {
+        "occurrence_id": "occ-036",
+        "ref": "source-new-line-026",
+        "repeats": 1,
+        "source_text": "औरों को सुख देय",
+        "roman": "Auroṁ ko sukh deye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 639.286
+      },
+      {
+        "occurrence_id": "occ-037",
+        "ref": "line-021",
+        "repeats": 2,
+        "source_text": "दुख में सुमिरन सब करे",
+        "roman": "Dukh meṁ sumiran sab kare",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 655.959
+      },
+      {
+        "occurrence_id": "occ-038",
+        "ref": "line-020",
+        "repeats": 1,
+        "source_text": "सुख में करे न कोय",
+        "roman": "Sukh meṁ kare na koye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 689.304
+      },
+      {
+        "occurrence_id": "occ-039",
+        "ref": "line-021",
+        "repeats": 1,
+        "source_text": "दुख में सुमिरन सब करे",
+        "roman": "Dukh meṁ sumiran sab kare",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 705.977
+      },
+      {
+        "occurrence_id": "occ-040",
+        "ref": "line-020",
+        "repeats": 1,
+        "source_text": "सुख में करे न कोय",
+        "roman": "Sukh meṁ kare na koye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 722.649
+      },
+      {
+        "occurrence_id": "occ-041",
+        "ref": "line-022",
+        "repeats": 2,
+        "source_text": "जो सुख में सुमिरन करे",
+        "roman": "Jo sukh meṁ sumiran kare",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 739.322
+      },
+      {
+        "occurrence_id": "occ-042",
+        "ref": "line-023",
+        "repeats": 1,
+        "source_text": "दुख काहे को होय",
+        "roman": "Dukh kāhe ko hoye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 772.667
+      },
+      {
+        "occurrence_id": "occ-043",
+        "ref": "line-024",
+        "repeats": 1,
+        "source_text": "कागा किसका धन हरे",
+        "roman": "Kāgā kiskā dhan hare",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 789.34
+      },
+      {
+        "occurrence_id": "occ-044",
+        "ref": "line-025",
+        "repeats": 1,
+        "source_text": "कोयल किसको देय",
+        "roman": "Koyal kisko deye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 806.012
+      },
+      {
+        "occurrence_id": "occ-045",
+        "ref": "line-024",
+        "repeats": 1,
+        "source_text": "कागा किसका धन हरे",
+        "roman": "Kāgā kiskā dhan hare",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 822.685
+      },
+      {
+        "occurrence_id": "occ-046",
+        "ref": "line-025",
+        "repeats": 1,
+        "source_text": "कोयल किसको देय",
+        "roman": "Koyal kisko deye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 839.358
+      },
+      {
+        "occurrence_id": "occ-047",
+        "ref": "line-026",
+        "repeats": 1,
+        "source_text": "बस मीठा शब्द सुनाय के",
+        "roman": "Bas mīṭhā śabd sunāy ke",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 856.03
+      },
+      {
+        "occurrence_id": "occ-048",
+        "ref": "line-027",
+        "repeats": 1,
+        "source_text": "मीठा शब्द सुनाय के",
+        "roman": "Mīṭhā śabd sunāy ke",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 872.703
+      },
+      {
+        "occurrence_id": "occ-049",
+        "ref": "line-028",
+        "repeats": 1,
+        "source_text": "जग अपना कर लेय",
+        "roman": "Jag apnā kar leye",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 889.376
+      },
+      {
+        "occurrence_id": "occ-050",
+        "ref": "line-000",
+        "repeats": 1,
+        "source_text": "पत्ता बोला वृक्ष से",
+        "roman": "Pattā bolā vṛkṣa se",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 906.048
+      }
+    ],
+    "preceding_context": {
+      "occurrence_id": "occ-030",
+      "ref": "line-019",
+      "repeats": 1,
+      "source_text": "ये सतगुर की सीख",
+      "roman": "ye satagur kī sīkh",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    },
+    "following_context": null
+  },
+  "retained_region1_timing_ids": [
+    "occ-000-r01",
+    "occ-001-r01",
+    "occ-002-r01",
+    "occ-003-r01",
+    "occ-004-r01",
+    "occ-005-r01",
+    "occ-006-r01",
+    "occ-007-r01",
+    "occ-008-r01",
+    "occ-009-r01",
+    "occ-010-r01",
+    "occ-010-r02",
+    "occ-011-r01",
+    "occ-012-r01",
+    "occ-013-r01",
+    "occ-014-r01"
+  ],
+  "retained_region2_timing_ids": [
+    "occ-017-r02",
+    "occ-018-r01",
+    "occ-019-r01",
+    "occ-019-r02",
+    "occ-020-r01",
+    "occ-021-r01",
+    "occ-022-r01",
+    "occ-023-r01",
+    "occ-023-r02",
+    "occ-024-r01",
+    "occ-025-r01",
+    "occ-026-r01",
+    "occ-027-r01",
+    "occ-028-r01",
+    "occ-029-r01",
+    "occ-029-r02",
+    "occ-030-r01"
+  ],
+  "focused_select_only": [
+    "occ-015-r01",
+    "occ-016-r01",
+    "occ-017-r01"
+  ],
+  "source_identity": {
+    "audio_sha256": "fixture-native-audio",
+    "trim": {}
+  }
+}

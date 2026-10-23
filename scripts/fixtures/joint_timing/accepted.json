@@ -1,0 +1,1040 @@
+{
+  "region": {
+    "index": 0,
+    "grid": "long-segment",
+    "core_start": 0.0,
+    "core_end": 271.75,
+    "clip_start": 0.0,
+    "clip_end": 286.75,
+    "target_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "target_occurrences": [
+      {
+        "occurrence_id": "occ-000",
+        "ref": "line-000",
+        "repeats": 1,
+        "source_text": "पत्ता बोला वृक्ष से",
+        "roman": "Pattā bolā vṛkṣa se",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 0.0
+      },
+      {
+        "occurrence_id": "occ-001",
+        "ref": "line-001",
+        "repeats": 1,
+        "source_text": "सुनो वृक्ष वनराय",
+        "roman": "Suno vṛkṣa vanarāya",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 17.922
+      },
+      {
+        "occurrence_id": "occ-002",
+        "ref": "line-002",
+        "repeats": 1,
+        "source_text": "अब के पतझड़ ना मिले",
+        "roman": "Aba ke patajhaṛa nā mile",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 35.844
+      },
+      {
+        "occurrence_id": "occ-003",
+        "ref": "line-003",
+        "repeats": 1,
+        "source_text": "दूर पड़ेंगे जाय",
+        "roman": "Dūra paṛeṅge jāya",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 53.766
+      },
+      {
+        "occurrence_id": "occ-004",
+        "ref": "line-000",
+        "repeats": 1,
+        "source_text": "पत्ता बोला वृक्ष से",
+        "roman": "Pattā bolā vṛkṣa se",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 71.688
+      },
+      {
+        "occurrence_id": "occ-005",
+        "ref": "line-001",
+        "repeats": 1,
+        "source_text": "सुनो वृक्ष वनराय",
+        "roman": "Suno vṛkṣa vanarāya",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 89.609
+      },
+      {
+        "occurrence_id": "occ-006",
+        "ref": "line-002",
+        "repeats": 1,
+        "source_text": "अब के पतझड़ ना मिले",
+        "roman": "Aba ke patajhaṛa nā mile",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 107.531
+      },
+      {
+        "occurrence_id": "occ-007",
+        "ref": "line-003",
+        "repeats": 1,
+        "source_text": "दूर पड़ेंगे जाय",
+        "roman": "Dūra paṛeṅge jāya",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 125.453
+      },
+      {
+        "occurrence_id": "occ-008",
+        "ref": "line-004",
+        "repeats": 1,
+        "source_text": "वृक्ष बोला पत्ते से",
+        "roman": "Vṛkṣa bolā patte se",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 143.375
+      },
+      {
+        "occurrence_id": "occ-009",
+        "ref": "line-005",
+        "repeats": 1,
+        "source_text": "सुनो पत्ते मेरे भाई",
+        "roman": "Suno patte mere bhāī",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 161.297
+      },
+      {
+        "occurrence_id": "occ-010",
+        "ref": "line-006",
+        "repeats": 2,
+        "source_text": "यही जगत की रीत है",
+        "roman": "Yahī jagata kī rīta hai",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 179.219
+      },
+      {
+        "occurrence_id": "occ-011",
+        "ref": "line-007",
+        "repeats": 1,
+        "source_text": "इक आए इक जाय",
+        "roman": "Ika āye ika jāya",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 215.062
+      },
+      {
+        "occurrence_id": "occ-012",
+        "ref": "source-new-line-008",
+        "repeats": 1,
+        "source_text": "पत्ता बोला",
+        "roman": "Pattā bolā",
+        "section": "refrain",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 232.984
+      },
+      {
+        "occurrence_id": "occ-013",
+        "ref": "line-008",
+        "repeats": 1,
+        "source_text": "साँस साँस में नाम ले",
+        "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 250.906
+      },
+      {
+        "occurrence_id": "occ-014",
+        "ref": "line-009",
+        "repeats": 1,
+        "source_text": "बचे साँस ना कोई",
+        "roman": "Bace sām̐sa nā koī",
+        "section": "verse",
+        "performer_context": "Shujaat Husain Khan - Topic",
+        "coarse_source_start": 268.828
+      }
+    ],
+    "preceding_context": null,
+    "following_context": {
+      "occurrence_id": "occ-015",
+      "ref": "line-008",
+      "repeats": 1,
+      "source_text": "साँस साँस में नाम ले",
+      "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+      "section": "verse",
+      "performer_context": "Shujaat Husain Khan - Topic"
+    }
+  },
+  "input_fingerprint": "66f7ded6fa7bada4737d8b0e602d2ab02738cbeb717559bc1b5e74027748f0d2",
+  "starts": [
+    {
+      "occurrence_id": "occ-000",
+      "start": 137.85
+    },
+    {
+      "occurrence_id": "occ-001",
+      "start": 144.2
+    },
+    {
+      "occurrence_id": "occ-002",
+      "start": 150.95
+    },
+    {
+      "occurrence_id": "occ-003",
+      "start": 157.65
+    },
+    {
+      "occurrence_id": "occ-004",
+      "start": 177.5
+    },
+    {
+      "occurrence_id": "occ-005",
+      "start": 183.4
+    },
+    {
+      "occurrence_id": "occ-006",
+      "start": 190.15
+    },
+    {
+      "occurrence_id": "occ-007",
+      "start": 196.8
+    },
+    {
+      "occurrence_id": "occ-008",
+      "start": 203.4
+    },
+    {
+      "occurrence_id": "occ-009",
+      "start": 209.55
+    },
+    {
+      "occurrence_id": "occ-010",
+      "start": 215.45
+    },
+    {
+      "occurrence_id": "occ-011",
+      "start": 228.65
+    },
+    {
+      "occurrence_id": "occ-012",
+      "start": 234.85
+    },
+    {
+      "occurrence_id": "occ-013",
+      "start": 273.2
+    },
+    {
+      "occurrence_id": "occ-014",
+      "start": 280.05
+    }
+  ],
+  "expanded_starts": [
+    {
+      "timing_id": "occ-000-r01",
+      "start": 137.85
+    },
+    {
+      "timing_id": "occ-001-r01",
+      "start": 144.2
+    },
+    {
+      "timing_id": "occ-002-r01",
+      "start": 150.95
+    },
+    {
+      "timing_id": "occ-003-r01",
+      "start": 157.65
+    },
+    {
+      "timing_id": "occ-004-r01",
+      "start": 177.5
+    },
+    {
+      "timing_id": "occ-005-r01",
+      "start": 183.4
+    },
+    {
+      "timing_id": "occ-006-r01",
+      "start": 190.15
+    },
+    {
+      "timing_id": "occ-007-r01",
+      "start": 196.8
+    },
+    {
+      "timing_id": "occ-008-r01",
+      "start": 203.4
+    },
+    {
+      "timing_id": "occ-009-r01",
+      "start": 209.55
+    },
+    {
+      "timing_id": "occ-010-r01",
+      "start": 215.45
+    },
+    {
+      "timing_id": "occ-010-r02",
+      "start": 221.95
+    },
+    {
+      "timing_id": "occ-011-r01",
+      "start": 228.65
+    },
+    {
+      "timing_id": "occ-012-r01",
+      "start": 234.85
+    },
+    {
+      "timing_id": "occ-013-r01",
+      "start": 273.2
+    },
+    {
+      "timing_id": "occ-014-r01",
+      "start": 280.05
+    }
+  ],
+  "passes": [
+    {
+      "region": {
+        "index": 0,
+        "grid": "long-segment",
+        "core_start": 0.0,
+        "core_end": 271.75,
+        "clip_start": 0.0,
+        "clip_end": 286.75,
+        "target_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "target_occurrences": [
+          {
+            "occurrence_id": "occ-000",
+            "ref": "line-000",
+            "repeats": 1,
+            "source_text": "पत्ता बोला वृक्ष से",
+            "roman": "Pattā bolā vṛkṣa se",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 0.0
+          },
+          {
+            "occurrence_id": "occ-001",
+            "ref": "line-001",
+            "repeats": 1,
+            "source_text": "सुनो वृक्ष वनराय",
+            "roman": "Suno vṛkṣa vanarāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 17.922
+          },
+          {
+            "occurrence_id": "occ-002",
+            "ref": "line-002",
+            "repeats": 1,
+            "source_text": "अब के पतझड़ ना मिले",
+            "roman": "Aba ke patajhaṛa nā mile",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 35.844
+          },
+          {
+            "occurrence_id": "occ-003",
+            "ref": "line-003",
+            "repeats": 1,
+            "source_text": "दूर पड़ेंगे जाय",
+            "roman": "Dūra paṛeṅge jāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 53.766
+          },
+          {
+            "occurrence_id": "occ-004",
+            "ref": "line-000",
+            "repeats": 1,
+            "source_text": "पत्ता बोला वृक्ष से",
+            "roman": "Pattā bolā vṛkṣa se",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 71.688
+          },
+          {
+            "occurrence_id": "occ-005",
+            "ref": "line-001",
+            "repeats": 1,
+            "source_text": "सुनो वृक्ष वनराय",
+            "roman": "Suno vṛkṣa vanarāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 89.609
+          },
+          {
+            "occurrence_id": "occ-006",
+            "ref": "line-002",
+            "repeats": 1,
+            "source_text": "अब के पतझड़ ना मिले",
+            "roman": "Aba ke patajhaṛa nā mile",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 107.531
+          },
+          {
+            "occurrence_id": "occ-007",
+            "ref": "line-003",
+            "repeats": 1,
+            "source_text": "दूर पड़ेंगे जाय",
+            "roman": "Dūra paṛeṅge jāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 125.453
+          },
+          {
+            "occurrence_id": "occ-008",
+            "ref": "line-004",
+            "repeats": 1,
+            "source_text": "वृक्ष बोला पत्ते से",
+            "roman": "Vṛkṣa bolā patte se",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 143.375
+          },
+          {
+            "occurrence_id": "occ-009",
+            "ref": "line-005",
+            "repeats": 1,
+            "source_text": "सुनो पत्ते मेरे भाई",
+            "roman": "Suno patte mere bhāī",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 161.297
+          },
+          {
+            "occurrence_id": "occ-010",
+            "ref": "line-006",
+            "repeats": 2,
+            "source_text": "यही जगत की रीत है",
+            "roman": "Yahī jagata kī rīta hai",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 179.219
+          },
+          {
+            "occurrence_id": "occ-011",
+            "ref": "line-007",
+            "repeats": 1,
+            "source_text": "इक आए इक जाय",
+            "roman": "Ika āye ika jāya",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 215.062
+          },
+          {
+            "occurrence_id": "occ-012",
+            "ref": "source-new-line-008",
+            "repeats": 1,
+            "source_text": "पत्ता बोला",
+            "roman": "Pattā bolā",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 232.984
+          },
+          {
+            "occurrence_id": "occ-013",
+            "ref": "line-008",
+            "repeats": 1,
+            "source_text": "साँस साँस में नाम ले",
+            "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 250.906
+          },
+          {
+            "occurrence_id": "occ-014",
+            "ref": "line-009",
+            "repeats": 1,
+            "source_text": "बचे साँस ना कोई",
+            "roman": "Bace sām̐sa nā koī",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 268.828
+          }
+        ],
+        "preceding_context": null,
+        "following_context": {
+          "occurrence_id": "occ-015",
+          "ref": "line-008",
+          "repeats": 1,
+          "source_text": "साँस साँस में नाम ले",
+          "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+          "section": "verse",
+          "performer_context": "Shujaat Husain Khan - Topic"
+        }
+      },
+      "response": {
+        "packet": {
+          "starts": [
+            {
+              "timing_id": "occ-000-r01",
+              "start": 137.85,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-001-r01",
+              "start": 144.15,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-002-r01",
+              "start": 150.95,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-003-r01",
+              "start": 157.65,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-004-r01",
+              "start": 177.65,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-005-r01",
+              "start": 183.25,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-006-r01",
+              "start": 190.05,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-007-r01",
+              "start": 196.75,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-008-r01",
+              "start": 203.35,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-009-r01",
+              "start": 209.55,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-010-r01",
+              "start": 215.35,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-010-r02",
+              "start": 221.95,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-011-r01",
+              "start": 228.65,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-012-r01",
+              "start": 234.95,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-013-r01",
+              "start": 273.15,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-014-r01",
+              "start": 280.05,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            }
+          ]
+        }
+      },
+      "validation": {
+        "starts": [
+          {
+            "timing_id": "occ-000-r01",
+            "start": 137.85
+          },
+          {
+            "timing_id": "occ-001-r01",
+            "start": 144.15
+          },
+          {
+            "timing_id": "occ-002-r01",
+            "start": 150.95
+          },
+          {
+            "timing_id": "occ-003-r01",
+            "start": 157.65
+          },
+          {
+            "timing_id": "occ-004-r01",
+            "start": 177.65
+          },
+          {
+            "timing_id": "occ-005-r01",
+            "start": 183.25
+          },
+          {
+            "timing_id": "occ-006-r01",
+            "start": 190.05
+          },
+          {
+            "timing_id": "occ-007-r01",
+            "start": 196.75
+          },
+          {
+            "timing_id": "occ-008-r01",
+            "start": 203.35
+          },
+          {
+            "timing_id": "occ-009-r01",
+            "start": 209.55
+          },
+          {
+            "timing_id": "occ-010-r01",
+            "start": 215.35
+          },
+          {
+            "timing_id": "occ-010-r02",
+            "start": 221.95
+          },
+          {
+            "timing_id": "occ-011-r01",
+            "start": 228.65
+          },
+          {
+            "timing_id": "occ-012-r01",
+            "start": 234.95
+          },
+          {
+            "timing_id": "occ-013-r01",
+            "start": 273.15
+          },
+          {
+            "timing_id": "occ-014-r01",
+            "start": 280.05
+          }
+        ],
+        "validation_errors": []
+      }
+    },
+    {
+      "region": {
+        "index": 0,
+        "grid": "long-segment",
+        "core_start": 0.0,
+        "core_end": 271.75,
+        "clip_start": 0.0,
+        "clip_end": 286.75,
+        "target_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "target_occurrences": [
+          {
+            "occurrence_id": "occ-000",
+            "ref": "line-000",
+            "repeats": 1,
+            "source_text": "पत्ता बोला वृक्ष से",
+            "roman": "Pattā bolā vṛkṣa se",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 0.0
+          },
+          {
+            "occurrence_id": "occ-001",
+            "ref": "line-001",
+            "repeats": 1,
+            "source_text": "सुनो वृक्ष वनराय",
+            "roman": "Suno vṛkṣa vanarāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 17.922
+          },
+          {
+            "occurrence_id": "occ-002",
+            "ref": "line-002",
+            "repeats": 1,
+            "source_text": "अब के पतझड़ ना मिले",
+            "roman": "Aba ke patajhaṛa nā mile",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 35.844
+          },
+          {
+            "occurrence_id": "occ-003",
+            "ref": "line-003",
+            "repeats": 1,
+            "source_text": "दूर पड़ेंगे जाय",
+            "roman": "Dūra paṛeṅge jāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 53.766
+          },
+          {
+            "occurrence_id": "occ-004",
+            "ref": "line-000",
+            "repeats": 1,
+            "source_text": "पत्ता बोला वृक्ष से",
+            "roman": "Pattā bolā vṛkṣa se",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 71.688
+          },
+          {
+            "occurrence_id": "occ-005",
+            "ref": "line-001",
+            "repeats": 1,
+            "source_text": "सुनो वृक्ष वनराय",
+            "roman": "Suno vṛkṣa vanarāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 89.609
+          },
+          {
+            "occurrence_id": "occ-006",
+            "ref": "line-002",
+            "repeats": 1,
+            "source_text": "अब के पतझड़ ना मिले",
+            "roman": "Aba ke patajhaṛa nā mile",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 107.531
+          },
+          {
+            "occurrence_id": "occ-007",
+            "ref": "line-003",
+            "repeats": 1,
+            "source_text": "दूर पड़ेंगे जाय",
+            "roman": "Dūra paṛeṅge jāya",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 125.453
+          },
+          {
+            "occurrence_id": "occ-008",
+            "ref": "line-004",
+            "repeats": 1,
+            "source_text": "वृक्ष बोला पत्ते से",
+            "roman": "Vṛkṣa bolā patte se",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 143.375
+          },
+          {
+            "occurrence_id": "occ-009",
+            "ref": "line-005",
+            "repeats": 1,
+            "source_text": "सुनो पत्ते मेरे भाई",
+            "roman": "Suno patte mere bhāī",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 161.297
+          },
+          {
+            "occurrence_id": "occ-010",
+            "ref": "line-006",
+            "repeats": 2,
+            "source_text": "यही जगत की रीत है",
+            "roman": "Yahī jagata kī rīta hai",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 179.219
+          },
+          {
+            "occurrence_id": "occ-011",
+            "ref": "line-007",
+            "repeats": 1,
+            "source_text": "इक आए इक जाय",
+            "roman": "Ika āye ika jāya",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 215.062
+          },
+          {
+            "occurrence_id": "occ-012",
+            "ref": "source-new-line-008",
+            "repeats": 1,
+            "source_text": "पत्ता बोला",
+            "roman": "Pattā bolā",
+            "section": "refrain",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 232.984
+          },
+          {
+            "occurrence_id": "occ-013",
+            "ref": "line-008",
+            "repeats": 1,
+            "source_text": "साँस साँस में नाम ले",
+            "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 250.906
+          },
+          {
+            "occurrence_id": "occ-014",
+            "ref": "line-009",
+            "repeats": 1,
+            "source_text": "बचे साँस ना कोई",
+            "roman": "Bace sām̐sa nā koī",
+            "section": "verse",
+            "performer_context": "Shujaat Husain Khan - Topic",
+            "coarse_source_start": 268.828
+          }
+        ],
+        "preceding_context": null,
+        "following_context": {
+          "occurrence_id": "occ-015",
+          "ref": "line-008",
+          "repeats": 1,
+          "source_text": "साँस साँस में नाम ले",
+          "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+          "section": "verse",
+          "performer_context": "Shujaat Husain Khan - Topic"
+        }
+      },
+      "response": {
+        "packet": {
+          "starts": [
+            {
+              "timing_id": "occ-000-r01",
+              "start": 137.85,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-001-r01",
+              "start": 144.25,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-002-r01",
+              "start": 150.95,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-003-r01",
+              "start": 157.65,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-004-r01",
+              "start": 177.35,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-005-r01",
+              "start": 183.55,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-006-r01",
+              "start": 190.25,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-007-r01",
+              "start": 196.85,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-008-r01",
+              "start": 203.45,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-009-r01",
+              "start": 209.55,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-010-r01",
+              "start": 215.55,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-010-r02",
+              "start": 221.95,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-011-r01",
+              "start": 228.65,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-012-r01",
+              "start": 234.75,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-013-r01",
+              "start": 273.25,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            },
+            {
+              "timing_id": "occ-014-r01",
+              "start": 280.05,
+              "uncertainty": "",
+              "onset_at_clip_start": false
+            }
+          ]
+        }
+      },
+      "validation": {
+        "starts": [
+          {
+            "timing_id": "occ-000-r01",
+            "start": 137.85
+          },
+          {
+            "timing_id": "occ-001-r01",
+            "start": 144.25
+          },
+          {
+            "timing_id": "occ-002-r01",
+            "start": 150.95
+          },
+          {
+            "timing_id": "occ-003-r01",
+            "start": 157.65
+          },
+          {
+            "timing_id": "occ-004-r01",
+            "start": 177.35
+          },
+          {
+            "timing_id": "occ-005-r01",
+            "start": 183.55
+          },
+          {
+            "timing_id": "occ-006-r01",
+            "start": 190.25
+          },
+          {
+            "timing_id": "occ-007-r01",
+            "start": 196.85
+          },
+          {
+            "timing_id": "occ-008-r01",
+            "start": 203.45
+          },
+          {
+            "timing_id": "occ-009-r01",
+            "start": 209.55
+          },
+          {
+            "timing_id": "occ-010-r01",
+            "start": 215.55
+          },
+          {
+            "timing_id": "occ-010-r02",
+            "start": 221.95
+          },
+          {
+            "timing_id": "occ-011-r01",
+            "start": 228.65
+          },
+          {
+            "timing_id": "occ-012-r01",
+            "start": 234.75
+          },
+          {
+            "timing_id": "occ-013-r01",
+            "start": 273.25
+          },
+          {
+            "timing_id": "occ-014-r01",
+            "start": 280.05
+          }
+        ],
+        "validation_errors": []
+      }
+    }
+  ]
+}

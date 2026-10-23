@@ -272,7 +272,7 @@ def run_unit(state_dir: Path, unit_id: str, input_fingerprint: str,
             issues=_issues(exc.issues)
             if not issues:raise RunFatal('empty quality failure') from exc
             record.update(status='quality-failed',issues=issues,finished_at=time.time())
-            eligible=policy.quality_failure and not any(row['kind'] in {'locked_baseline_conflict','missing_source_evidence'} for row in issues)
+            eligible=policy.quality_failure and not any(row['kind'] in {'locked_baseline_conflict','missing_source_evidence','unresolved_context'} for row in issues)
             reason='quality failure'
         except UnitTransportFailure as exc:
             # A prior child request may have returned real diagnostic evidence.

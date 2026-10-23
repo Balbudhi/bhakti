@@ -1,6 +1,6 @@
 """Isolated source-stage candidates; preserve reviewed text and never publish."""
 from __future__ import annotations
-import copy,hashlib,json,math,time,unicodedata
+import copy,hashlib,json,math,subprocess,time,unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -121,8 +121,35 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
     import bhakti_model_routes as routes
     targets = [line for line in plan['lines'] if line['id'] in plan['new_target_ids']]
     languages = metadata.get('languages', [])
+    reused = plan.get('reuse_by_id', {})
+    planned = {line['id']: line for line in plan['lines']}
+    if set(reused) != set(planned) - set(plan['new_target_ids']):
+        raise ValueError('translation context lacks preserved source rows')
+    for line_id, old in reused.items():
+        if (old.get('source') != planned[line_id]['source_text']
+                or old.get('roman') != planned[line_id]['roman']
+                or not isinstance(old.get('english'), str)):
+            raise ValueError('translation context differs from preserved source/English')
+    context_evidence = []
+    if reused:
+        old_reader = {'SONG_META': metadata, 'SONG_LINES': copy.deepcopy(reused),
+            'SONG_SEQUENCE': [{'ref': event['line_id'], 'section': planned[event['line_id']].get('kind', 'verse'),
+                               'repeats': 1}
+                              for event in plan['performance_order'] if event['line_id'] in reused]}
+        old_sources, old_glosses, old_drafts = library.reader_evidence(old_reader)
+        context_evidence = [{'source': copy.deepcopy(planned[source['id']]),
+                             'gloss': gloss, 'draft': draft}
+                            for source, gloss, draft in zip(old_sources, old_glosses, old_drafts)]
+    # New English does not exist yet. These empty drafts check only known order,
+    # row availability and scope bounds; they are discarded, never model evidence.
+    pending_glosses = [{'id': line['id']} for line in targets]
+    pending_drafts = [{'id': line['id'], 'literal_english': ''} for line in targets]
+    for offset in range(0, len(targets), 10):
+        pipeline.translation_reading_context(targets, pending_glosses, pending_drafts,
+            [line['id'] for line in targets[offset:offset + 10]],
+            performance_order=plan['performance_order'], full_evidence=context_evidence)
     evidence = {'targets': targets, 'source': plan['lines'], 'order': plan['performance_order'],
-                'languages': languages, 'policy': pipeline.translation_policy_payload()}
+                'languages': languages, 'reading_context': context_evidence, 'policy': pipeline.translation_policy_payload()}
     identity = digest(evidence)
     unit_id = song_dir.name + ':new-source-semantics'
     decisions = getattr(options, 'editorial_adjudications', None) or {}
@@ -141,6 +168,7 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
     def execute(context):
         local = library.route_options(options, context)
         local.semantic_full_source = plan['lines']
+        local.semantic_context_evidence = copy.deepcopy(context_evidence)
         local.semantic_performance_order = plan['performance_order']
         local.semantic_source_identity = digest({'lines': plan['lines'], 'order': plan['performance_order']})
         attempt_song = context.attempt_dir / 'songs' / song_dir.name
@@ -209,11 +237,20 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
             raise ValueError('workspace owner registry differs from authoritative registry')
         baselines = editorial_baselines.load_baselines(root)
         editorial_baselines.assert_english_preserved(slug, reader['SONG_LINES'], root=root)
-        old_lines, old_glosses, old_translations = library.reader_evidence(reader)
         original_audio = pipeline.preferred_listener_audio(song)
         audio = target / original_audio.name
         if file_hash(audio) != file_hash(original_audio):
             raise ValueError('workspace audio differs from original native listener audio')
+        requested = set(getattr(options, 'source_requested_stages', []) or [])
+        coverage_requested = getattr(options, 'source_coverage_requested', False)
+        if type(coverage_requested) is not bool:
+            raise ValueError('source coverage selection must be boolean')
+        if requested.intersection({'audio-review', 'focused-audio-review'}) or coverage_requested:
+            if contract.load_data(target / 'data.js') != reader:
+                raise ValueError('workspace reader differs before source observation')
+            return observe_source_candidate(reader=reader, song_dir=target, original_song=song,
+                audio=audio, route_dir=route_dir, options=options, deadline_at=deadline_at)
+        old_lines, old_glosses, old_translations = library.reader_evidence(reader)
         audit = json.loads(original_audit.read_text())
         timing_before = json.loads(original_timing.read_text())
         mapping_path = (getattr(options, 'source_reuse_maps', {}) or {}).get(slug)
@@ -359,7 +396,7 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         raise
     except routes.UnitUnresolved as exc:
         return hold('source_unit_unresolved', exc)
-    except (ValueError, KeyError, OSError, RuntimeError) as exc:
+    except (ValueError, KeyError, OSError, RuntimeError, subprocess.CalledProcessError) as exc:
         # Deterministic input/contract failures are holds, never model escalation.
         return hold('source_stage_hold', exc)
 
@@ -511,7 +548,9 @@ def plan_audio_review(reader, *, source_evidence, flags, duration_seconds):
                       'target_occurrence_ids': [f'occ-{index:03d}' for index in indices],
                       'core_occurrence_indices': indices, 'context_occurrence_indices': indices,
                       'clip_start': 0.0, 'clip_end': float(duration_seconds),
-                      'hypotheses': copy.deepcopy(pending), 'prior_evidence': [], 'expanded_draft': draft})
+                      'hypotheses': copy.deepcopy(pending),
+                      'prior_evidence': [copy.deepcopy(item) for row in pending for item in row.get('evidence', [])],
+                      'expanded_draft': draft})
     elif mode == 'focused':
         timings = reader.get('SONG_TIMINGS')
         if not isinstance(timings, list) or len(timings) != len(sequence):
@@ -795,7 +834,172 @@ def review_audio_units(*, song_dir, units, audio, source_identity, options, rout
                                   dependency_fingerprint=dependency,base_model=options.model,pro_model=options.pro_model)
             errors=_observation_errors(unit,result)
             if errors:raise routes.RunFatal('cached source observation no longer validates')
-            observed.append({'unit':unit,'result':result,'input_fingerprint':fingerprint})
+            state_path = routes.unit_state_path(route_dir, song_dir.name+':source-observation:'+unit['id'],
+                fingerprint, dependency_fingerprint=dependency, base_model=options.model, pro_model=options.pro_model)
+            observed.append({'unit':unit,'result':result,'input_fingerprint':fingerprint,
+                             'route_state_path':str(state_path)})
         except routes.UnitUnresolved as exc:
             issues.append({'unit_id':unit['id'],'reason':exc.reason,'issues':exc.issues,'state_path':str(exc.state_path)})
     return {'status':'unresolved' if issues else 'observed','unit_results':observed,'issues':issues}
+
+
+def partition_source_plan(reader, plan, evidence, *, segments):
+    """Partition routing hypotheses; no core boundary certifies a sung onset."""
+    duration = evidence.get('duration_seconds')
+    if (plan.get('identity') != evidence.get('identity')
+            or evidence['identity'].get('reader_source_sha256') != reader_source_identity(reader)
+            or type(duration) not in (int, float) or not math.isfinite(duration) or duration <= 0):
+        raise ValueError('source partition identity/duration mismatch')
+    if not isinstance(segments, list) or not segments:
+        raise ValueError('source partition requires acoustic cores')
+    previous = 0.0
+    for i, segment in enumerate(segments):
+        if (not isinstance(segment, dict) or type(segment.get('index')) is not int or segment['index'] != i
+                or any(type(segment.get(k)) not in (int, float) or not math.isfinite(segment[k])
+                       for k in ('core_start','core_end','clip_start','clip_end'))
+                or not 0 <= segment['clip_start'] <= segment['core_start'] < segment['core_end'] <= segment['clip_end'] <= duration
+                or abs(segment['core_start'] - previous) > .0005):
+            raise ValueError('source partition has invalid, overlapping or gapped core bounds')
+        previous = segment['core_end']
+    if abs(previous - duration) > .0005:
+        raise ValueError('source partition omits recording end')
+    intervals = reader.get('SONG_TIMINGS')
+    sequence = reader['SONG_SEQUENCE']
+    if (not isinstance(intervals, list) or len(intervals) != len(sequence)
+            or intervals != evidence.get('routing_intervals')):
+        raise ValueError('bounded transcription needed: missing exact source routing intervals')
+    for i, interval in enumerate(intervals):
+        if (not isinstance(interval, dict)
+                or any(type(interval.get(k)) not in (int,float) or not math.isfinite(interval[k]) for k in ('start','end'))
+                or not 0 <= interval['start'] < interval['end'] <= duration
+                or i and intervals[i-1]['end'] > interval['start'] + .0005):
+            raise ValueError('bounded transcription needed: invalid source routing intervals')
+    # A short selected unit can remain intact; long units follow validated acoustic
+    # cores. Every selected display occurrence owns its whole contiguous repeat group.
+    units = []
+    for parent in plan.get('units', []):
+        if parent['clip_end'] - parent['clip_start'] <= 900:
+            single = {**copy.deepcopy(plan), 'units': [parent]}
+            units.extend(materialize_source_units(single, evidence, duration_seconds=duration))
+            continue
+        targets = set(parent['core_occurrence_indices'])
+        covered = []
+        for segment in segments:
+            if segment['core_end'] <= parent['clip_start'] or segment['core_start'] >= parent['clip_end']:
+                continue
+            core_start = max(segment['core_start'], parent['clip_start'])
+            core_end = min(segment['core_end'], parent['clip_end'])
+            selected = [i for i in sorted(targets) if core_start <= intervals[i]['start'] < core_end]
+            if not selected:
+                raise ValueError('bounded transcription needed: empty source core has no target draft')
+            start = max(parent['clip_start'], segment['clip_start'])
+            end = min(parent['clip_end'], segment['clip_end'])
+            start = min(start, *(intervals[i]['start'] for i in selected))
+            end = max(end, *(intervals[i]['end'] for i in selected))
+            if end-start > 900:
+                raise ValueError('bounded transcription needed: target repeat group exceeds 900-second clip')
+            context = {i for i,t in enumerate(intervals) if t['start'] < end and t['end'] > start}
+            for i in selected:
+                context.update(range(max(0,i-1),min(len(sequence),i+2)))
+            unit = copy.deepcopy(parent)
+            unit.update(id=parent['id']+'-segment-'+str(segment['index']),
+                segment_index=len(units), clip_start=start, clip_end=end,
+                core_start=core_start, core_end=core_end,
+                target_occurrence_ids=[f'occ-{i:03d}' for i in selected],
+                core_occurrence_indices=selected,context_occurrence_indices=sorted(context),
+                expanded_draft=source_draft(reader,sorted(context)))
+            units.append(unit);covered.extend(selected)
+        if sorted(covered) != sorted(targets) or len(covered) != len(set(covered)):
+            raise ValueError('source partition lost or duplicated a target occurrence')
+    for index,unit in enumerate(units):unit['segment_index']=index
+    return units
+
+
+def observe_source_candidate(*, reader, song_dir, original_song, audio, route_dir, options, deadline_at):
+    """Connect explicit library requests to retained, nonpublishable observations."""
+    import bhakti_pipeline as pipeline
+    song_dir, original_song, route_dir = Path(song_dir), Path(original_song), Path(route_dir)
+    requested = set(getattr(options, 'source_requested_stages', []) or [])
+    flags = copy.deepcopy(getattr(options, 'source_review_flags', {}))
+    if not isinstance(flags, dict):raise ValueError('source review flags must be an object')
+    coverage = getattr(options, 'source_coverage_requested', False)
+    if type(coverage) is not bool:raise ValueError('source coverage selection must be boolean')
+    if 'audio' in flags and type(flags['audio']) is not bool:
+        raise ValueError('audio flag must be a boolean')
+    if requested.intersection({'audio-review','focused-audio-review'}):
+        # The stage may be scheduled by an independent saved uncertainty even
+        # when no user audio flag is set. It must never become empty observation.
+        flags['audio'] = True
+    if 'focused-audio-review' in requested and not (flags.get('line_ids') or flags.get('occurrence_ids')):
+        raise ValueError('focused source review requires explicit line or occurrence locators')
+    original_evidence = collect_source_evidence(original_song, reader, flags=flags, coverage_requested=coverage)
+    evidence = collect_source_evidence(song_dir, reader, flags=flags, coverage_requested=coverage)
+    if original_evidence['identity'] != evidence['identity']:
+        raise ValueError('workspace source/trim/audio identity differs from original')
+    # Historical packets are evidence, not an acceptance prerequisite. Freeze their
+    # original hashes, while dispatching only the verified private native recording.
+    evidence['artifacts'] = original_evidence['artifacts']
+    evidence['disagreements'] = copy.deepcopy(flags.get('disagreements', []))
+    plan = plan_audio_review(reader, source_evidence=evidence, flags=flags,
+                             duration_seconds=evidence['duration_seconds'])
+    witness_record = pipeline.source_witness.record_for_slug(song_dir.name)
+    witness_path = pipeline.source_witness.cache_path(song_dir)
+    witness = {'record':witness_record,'sha256':file_hash(witness_path) if witness_path.is_file() else None}
+    identity = digest({'version':1,'source':evidence['identity'], 'duration':evidence['duration_seconds'],
+        'intervals':evidence['routing_intervals'],'flags':flags,'coverage_requested':coverage,
+        'artifacts':{name:value['sha256'] if value else None for name,value in evidence['artifacts'].items()},
+        'witness':witness,'models':{'base':options.model,'pro':options.pro_model},
+        'adapter':file_hash(__file__),'pipeline':file_hash(pipeline.__file__)})
+    directory = route_dir/'source-observations'/identity
+    receipt_path = directory/(song_dir.name+'-source-observed.json')
+    saved = json.loads(receipt_path.read_text()) if receipt_path.is_file() else None
+    if saved is not None and (not isinstance(saved,dict) or saved.get('version') != 1
+            or saved.get('input_fingerprint') != identity or saved.get('result_digest') != digest(saved.get('result'))):
+        raise ValueError('source observation receipt identity/digest changed')
+    plan_path = directory/'routing-plan.json'
+    stored_plan = json.loads(plan_path.read_text()) if plan_path.is_file() else None
+    if stored_plan is not None:
+        if (not isinstance(stored_plan,dict) or stored_plan.get('input_fingerprint') != identity
+                or stored_plan.get('digest') != digest(stored_plan.get('units'))):
+            raise ValueError('source routing plan identity/digest changed')
+        units = stored_plan['units']
+        # Compare deterministic partition output as well as its self hash. The
+        # original acoustic segments are retained; resume never rescans audio.
+        if 'segments' in stored_plan:
+            expected = partition_source_plan(reader,plan,evidence,segments=stored_plan['segments'])
+        else:
+            expected = materialize_source_units(plan,evidence,duration_seconds=evidence['duration_seconds'])
+        if units != expected:raise ValueError('source routing plan differs from bound source')
+    else:
+        segments = None
+        if any(u['clip_end']-u['clip_start']>900 for u in plan['units']):
+            segments = pipeline.adaptive_audio_segments(audio)
+            units = partition_source_plan(reader,plan,evidence,segments=segments)
+        else:
+            units = materialize_source_units(plan,evidence,duration_seconds=evidence['duration_seconds'])
+        record = {'input_fingerprint':identity,'units':units,'digest':digest(units)}
+        if segments is not None:record['segments']=segments
+        atomic_json(plan_path,record)
+    if not units:
+        raise ValueError('explicit source observation request has no audio units')
+    # Always enter the existing router to verify all candidate digests. Successful
+    # units return before FFmpeg/provider; a receipt is never a substitute for them.
+    if saved is not None:
+        prior = saved['result']
+        paths = [item.get('route_state_path') for item in prior.get('unit_results', [])]
+        paths.extend(item.get('state_path') for item in prior.get('issues', []))
+        if len(paths) != len(units) or any(not isinstance(value,str)
+                or not Path(value).resolve().is_relative_to(route_dir.resolve())
+                or not Path(value).is_file() for value in paths):
+            raise ValueError('source observation receipt lacks its durable route history')
+    observed = review_audio_units(song_dir=song_dir,units=units,audio=audio,
+        source_identity=evidence['identity'],options=options,route_dir=route_dir,deadline_at=deadline_at)
+    result = {**observed,'input_fingerprint':identity,'units':units,
+              'remaining_obligations':['source-adjudication','coverage','timing']}
+    if saved is not None and saved['result'] != result:
+        raise ValueError('source observation receipt no longer matches routed evidence')
+    atomic_json(receipt_path,{'version':1,'input_fingerprint':identity,'result':result,'result_digest':digest(result)})
+    return {'status':'unresolved','reader':reader,'source_changed':False,'publicationEligible':False,
+        'evidence':{'audio_review':{**result,'receipt_path':str(receipt_path)}},
+        'issues':[{'kind':'source_observation_only',
+                   'detail':'Audio observations retained; source adjudication, coverage acceptance and exact timing remain required.'}]}

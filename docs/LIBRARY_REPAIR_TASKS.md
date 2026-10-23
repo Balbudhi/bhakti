@@ -1,5 +1,40 @@
 # Whole-library repair task
 
+## Current step — 22 October 2026 cost and naming correction
+
+The whole-library goal remains active. The committed catalogue now contains
+265 songs / 6,741 stored definitions; the older counts below are release history.
+The latest published editorial batch changed 72 definitions across 12 readers
+(`c043b7f6`); it did not freshly validate their audio.
+
+Paid processing is stopped while the measured review-payload defect is corrected.
+Account check: $22.95 remaining; $2.02262705 spent today. Priority processing used
+$2.006987 across 23 model calls, embeddings $0.0023958, and the separate Kuṟai
+opening check $0.01324425. The earlier $4 figure was a cap, not the price of a song.
+Do not resume the prepared Pattā timing continuation as a side effect of text work.
+
+The reviewed naming batch is live in `8b36c963`: 54 English/popup fields across
+nine Gurbāṇī readers, with all nine deployed data files matching reviewed bytes.
+
+The follow-up `575de356` corrects eight Vāhigurū fields across four readers;
+all four deployed data files match. Together these batches touch eleven readers.
+
+Current deliverable:
+remove repeated full-song source data from the actual library review caller;
+retain neighboring-line findings; measure the revised whole-library request cost
+before dispatch. A separate dictionary duplication fix is implemented. Parallel
+song workers and continuous English context are integrated, but a successful
+whole-library paid pass is still outstanding. The generic audio caller currently
+records observations only; source adjudication and remaining backlog publication
+are separate unfinished steps.
+
+Verification: exact source/order/timing and owner-English preservation for wording
+changes; real-caller review/context/cache and parallel-resume checks; zero-API
+whole-library payload census; desktop/mobile reader checks and deployed-byte
+verification for published content. Five preflight input holds involve archived
+trimmed spoken definitions or a wordless ālāp and need explicit review eligibility,
+not guessed new source text.
+
 ## Goal
 
 Repair and publish the entire Bhakti song library with complete performed lyrics,
