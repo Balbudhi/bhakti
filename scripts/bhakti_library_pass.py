@@ -505,6 +505,157 @@ def execute_song(root: Path, row: dict, state_dir: Path, options, deadline_at: f
     return result
 
 
+def reconcile_editorial_continuations(state_dir: Path, run: dict, rows: list[dict], options,
+                                     run_path: Path) -> dict[str, dict]:
+    """Record explicit source continuation without changing spent route history.
+
+    This preflight binds files and the original run only. The source adapter
+    must independently validate the editorial choice against its actual source
+    and policy before consuming the retained candidate.
+    """
+    decisions = getattr(options, 'editorial_adjudications', {})
+    if not isinstance(decisions, dict):
+        raise ValueError('editorial adjudications must map exact source units to decision files')
+    selected = {row['slug']: row for row in rows}
+    pending = {}
+    for unit, filename in decisions.items():
+        if not isinstance(unit, str) or not unit.endswith(':new-source-semantics'):
+            raise ValueError('editorial continuation only supports exact new-source-semantics units')
+        slug = unit.removesuffix(':new-source-semantics')
+        row = selected.get(slug)
+        if (not row or not row['dispatchEligible']
+                or not {'source-merge', 'audio-review', 'focused-audio-review', 'timing-review'}
+                       .intersection(row['plannedStages'])):
+            raise ValueError('editorial continuation requires a selected dispatch-eligible source stage')
+        record_path = Path(filename).resolve()
+        record = read_json(record_path)
+        if (not isinstance(record, dict) or record.get('unit_id') != unit
+                or record.get('decision_kind') != 'retain_existing_primary'):
+            raise ValueError('editorial decision does not name this exact source unit')
+        route_path = Path(record.get('route_state_path', '')).resolve()
+        candidate_path = Path(record.get('candidate_path', '')).resolve()
+        if (not route_path.is_relative_to((state_dir / 'routes').resolve())
+                or route_path.name != 'route-state.json'
+                or candidate_path not in [route_path.parent / attempt / 'candidate.json'
+                                          for attempt in ('flash', 'pro')]):
+            raise ValueError('editorial source decision escaped the original run route or attempt')
+        for path, field in ((route_path, 'route_state_sha256'),
+                            (candidate_path, 'candidate_file_sha256')):
+            if not path.is_file() or file_hash(path) != record.get(field):
+                raise ValueError('editorial decision original route or candidate changed')
+        route = read_json(route_path)
+        if (not isinstance(route, dict) or route.get('unit_id') != unit
+                or route.get('status') != 'unresolved'):
+            raise ValueError('editorial continuation requires the exact unresolved source route')
+        binding = {'baseIdentityDigest': prepare.json_digest(run['identity']),
+                   'deadline_at': run['deadline_at'],
+                   'unit': unit, 'decisionPath': str(record_path), 'decisionSha256': file_hash(record_path),
+                   'routeStateSha256': record['route_state_sha256'],
+                   'candidateSha256': record['candidate_file_sha256'],
+                   'reviewedLedgerSha256': record.get('run_ledger_sha256')}
+        journal = run.get('reconciliations', [])
+        if not isinstance(journal, list): raise ValueError('invalid reconciliation journal')
+        existing = [event for event in journal if event.get('phase') == 'authorized'
+                    and event.get('continuationIdentity', {}).get('unit') == unit]
+        if len(existing) > 1: raise ValueError('duplicate editorial continuation authorization')
+        ledger_path = state_dir / 'api-ledger.json'
+        ledger = read_json(ledger_path)
+        if (not isinstance(ledger, dict) or not isinstance(ledger.get('requests'), list)
+                or not all(isinstance(item, dict) for item in ledger['requests'])
+                or type(ledger.get('blocked')) is not bool
+                or ledger.get('budget_usd') != run['identity']['budget_usd']
+                or ledger.get('max_calls') != run['identity']['max_calls']):
+            raise ValueError('editorial continuation requires the original bounded spending ledger')
+        saved_spending = run.get('ledger')
+        current_spending = ledger_summary(ledger_path)
+        if (not isinstance(saved_spending, dict)
+                or current_spending['calls'] < saved_spending.get('calls', 0)
+                or current_spending['accounted_usd'] < saved_spending.get('accounted_usd', 0)
+                or (saved_spending.get('blocked') and not current_spending['blocked'])):
+            raise ValueError('editorial continuation ledger rolled back acknowledged spending')
+        latest = run.get('ledgerCheckpoint')
+        if latest is not None:
+            acknowledged = latest.get('ledger') if isinstance(latest, dict) else None
+            if (not isinstance(acknowledged, dict)
+                    or prepare.json_digest(acknowledged) != latest.get('digest')
+                    or not isinstance(acknowledged.get('requests'), list)
+                    or ledger['requests'][:len(acknowledged['requests'])] != acknowledged['requests']
+                    or {k: v for k, v in ledger.items() if k not in ('requests', 'blocked')}
+                       != {k: v for k, v in acknowledged.items() if k not in ('requests', 'blocked')}
+                    or (acknowledged.get('blocked') and not ledger['blocked'])):
+                raise ValueError('editorial continuation latest acknowledged ledger changed')
+        if existing:
+            event = existing[0]
+            ledger_archive = state_dir / 'reconciliations' / event['id'] / 'original-api-ledger.json'
+            if (not ledger_archive.is_file()
+                    or file_hash(ledger_archive) != record.get('run_ledger_sha256')):
+                raise ValueError('editorial continuation original ledger archive changed')
+            original_ledger = read_json(ledger_archive)
+            if (not isinstance(original_ledger, dict)
+                    or prepare.json_digest(original_ledger) != event.get('originalLedgerDigest')
+                    or ledger['requests'][:len(original_ledger.get('requests', []))] != original_ledger.get('requests')
+                    or {k: v for k, v in ledger.items() if k not in ('requests', 'blocked')}
+                       != {k: v for k, v in original_ledger.items() if k not in ('requests', 'blocked')}
+                    or (original_ledger.get('blocked') and not ledger['blocked'])):
+                raise ValueError('editorial continuation spending ledger prefix changed')
+            expected = {**binding, 'previousResultDigest': prepare.json_digest(event.get('previousResult'))}
+            if event.get('continuationIdentity') != expected:
+                raise ValueError('editorial continuation decision or frozen identity changed')
+            archive = Path(event.get('originalRunPath', '')).resolve()
+            expected_archive = state_dir.resolve() / 'reconciliations' / event['id'] / 'original-run.json'
+            if (archive != expected_archive or not archive.is_file()
+                    or file_hash(archive) != event.get('originalRunSha256')):
+                raise ValueError('editorial continuation original run archive changed')
+            completed = [item for item in journal if item.get('phase') == 'completed'
+                         and item.get('id') == event['id']]
+            if len(completed) > 1: raise ValueError('duplicate editorial continuation completion')
+            if completed:
+                if run['songs'].get(slug) != completed[0].get('result'):
+                    raise ValueError('completed editorial continuation result changed')
+                continue
+            if run['songs'].get(slug) != event.get('previousResult'):
+                raise ValueError('pending editorial continuation original result changed')
+        else:
+            if (file_hash(ledger_path) != record.get('run_ledger_sha256')
+                    or ledger_summary(ledger_path) != run.get('ledger')):
+                raise ValueError('editorial continuation spending ledger differs from reviewed decision or saved run')
+            checkpoint = read_json(state_dir / 'songs' / slug / 'source-checkpoint.json')
+            if checkpoint and checkpoint.get('result', {}).get('status') == 'accepted':
+                raise ValueError('editorial continuation cannot reopen a completed source stage')
+            previous = run['songs'].get(slug)
+            if not isinstance(previous, dict) or previous.get('status') != 'unresolved':
+                raise ValueError('editorial continuation can only reopen an unresolved song')
+            source_failure = previous.get('source')
+            if not ((isinstance(source_failure, dict) and source_failure.get('status') == 'unresolved')
+                    or previous.get('errorType') == 'UnitUnresolved'):
+                raise ValueError('unresolved result is not a recorded source-stage failure')
+            identity = {**binding, 'previousResultDigest': prepare.json_digest(previous)}
+            identifier = prepare.json_digest(identity)
+            archive = state_dir / 'reconciliations' / identifier / 'original-run.json'
+            original = run_path.read_bytes()
+            if archive.exists():
+                if archive.read_bytes() != original:
+                    raise ValueError('existing original run archive disagrees with pending authorization')
+            else:
+                archive.parent.mkdir(parents=True, exist_ok=True)
+                # Preserve exact bytes, not a reserialization of historical results.
+                with archive.open('xb') as stream: stream.write(original)
+            ledger_archive = archive.parent / 'original-api-ledger.json'
+            if ledger_archive.exists():
+                if file_hash(ledger_archive) != record['run_ledger_sha256']:
+                    raise ValueError('existing original ledger archive changed')
+            else:
+                with ledger_archive.open('xb') as stream: stream.write(ledger_path.read_bytes())
+            event = {'phase': 'authorized', 'id': identifier, 'slug': slug,
+                     'continuationIdentity': identity, 'previousResult': copy.deepcopy(previous),
+                     'originalRunPath': str(archive.resolve()), 'originalRunSha256': file_hash(archive),
+                     'originalLedger': copy.deepcopy(ledger), 'originalLedgerDigest': prepare.json_digest(ledger)}
+            run.setdefault('reconciliations', []).append(event)
+            pipeline.semantic_write_json(run_path, run)
+        pending[slug] = event
+    return pending
+
+
 def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> dict:
     import bhakti_model_routes as routes
     if (not math.isfinite(options.budget_usd or 0) or options.budget_usd <= 0
@@ -527,10 +678,13 @@ def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> 
     if run:
         if run.get('identity') != identity: raise ValueError('frozen run inputs or limits changed; existing evidence retained')
     else:
+        if getattr(options, 'editorial_adjudications', {}):
+            raise ValueError('editorial continuation requires an existing bounded run')
         run = {'version': VERSION, 'identity': identity, 'deadline_at': time.time() + options.deadline_seconds,
                'songs': {}, 'remaining': [row['slug'] for row in rows], 'status': 'running'}
         pipeline.semantic_write_json(state_dir / 'frozen-inventory.json', inventory)
         pipeline.semantic_write_json(run_path, run)
+    continuations = reconcile_editorial_continuations(state_dir, run, rows, options, run_path)
     ledger = state_dir / 'api-ledger.json'
     env = {'BHAKTI_API_RUN_LEDGER': str(ledger), 'BHAKTI_API_RUN_BUDGET_USD': str(options.budget_usd),
            'BHAKTI_API_RUN_MAX_CALLS': str(options.max_calls), 'BHAKTI_GEMINI_PROVIDER': 'openrouter'}
@@ -542,7 +696,7 @@ def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> 
     try:
         for row in rows:
             slug = row['slug']
-            if slug in run['songs']:
+            if slug in run['songs'] and slug not in continuations:
                 accepted = run['songs'][slug]
                 if accepted.get('status') == 'accepted':
                     candidate_root = Path(accepted['candidateRoot']).resolve()
@@ -567,12 +721,24 @@ def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> 
             except (routes.UnitUnresolved, ValueError, RuntimeError, ImportError) as exc:
                 run['songs'][slug] = {'status': 'unresolved', 'publicationEligible': False,
                                       'issues': [str(exc)], 'errorType': type(exc).__name__}
-            run['remaining'] = [item['slug'] for item in rows if item['slug'] not in run['songs']]
+            if slug in continuations:
+                run['reconciliations'].append({'phase': 'completed', 'id': continuations[slug]['id'],
+                    'slug': slug, 'result': copy.deepcopy(run['songs'][slug])})
+                del continuations[slug]
+            run['remaining'] = [item['slug'] for item in rows
+                                if item['slug'] not in run['songs'] or item['slug'] in continuations]
             pipeline.semantic_write_json(run_path, run)
-        run['remaining'] = [row['slug'] for row in rows if row['slug'] not in run['songs']]
+        run['remaining'] = [row['slug'] for row in rows
+                            if row['slug'] not in run['songs'] or row['slug'] in continuations]
         if not run['remaining']:
             run['status'] = 'unresolved' if any(row['status'] == 'unresolved' for row in run['songs'].values()) else 'complete'
+        acknowledged_ledger = read_json(ledger)
+        if run.get('reconciliations') and not isinstance(acknowledged_ledger, dict):
+            raise ValueError('editorial continuation spending ledger disappeared during execution')
         run['ledger'] = ledger_summary(ledger)
+        if isinstance(acknowledged_ledger, dict):
+            run['ledgerCheckpoint'] = {'ledger': acknowledged_ledger,
+                                       'digest': prepare.json_digest(acknowledged_ledger)}
         pipeline.semantic_write_json(run_path, run)
         return run
     finally:
@@ -588,6 +754,7 @@ def main(argv=None) -> int:
     parser.add_argument('--state-dir', type=Path, required=True)
     parser.add_argument('--flags', type=Path)
     parser.add_argument('--source-reuse-maps', type=Path, dest='source_reuse_maps_file')
+    parser.add_argument('--editorial-adjudications', type=Path, dest='editorial_adjudications_file')
     parser.add_argument('--execute', action='store_true')
     selection = parser.add_mutually_exclusive_group()
     selection.add_argument('--all', action='store_true')
@@ -600,6 +767,8 @@ def main(argv=None) -> int:
     parser.add_argument('--pro-model', default='google/gemini-3.1-pro-preview')
     options = parser.parse_args(argv)
     options.source_reuse_maps = read_json(options.source_reuse_maps_file) if options.source_reuse_maps_file else {}
+    options.editorial_adjudications = (read_json(options.editorial_adjudications_file)
+                                      if options.editorial_adjudications_file else {})
     root = options.root.resolve(); output = options.state_dir.resolve()
     if output == root or (output.is_relative_to(root) and not output.is_relative_to(root / '.transcription')):
         raise ValueError('state directory must be private and outside public source paths')

@@ -124,6 +124,20 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
     evidence = {'targets': targets, 'source': plan['lines'], 'order': plan['performance_order'],
                 'languages': languages, 'policy': pipeline.translation_policy_payload()}
     identity = digest(evidence)
+    unit_id = song_dir.name + ':new-source-semantics'
+    decisions = getattr(options, 'editorial_adjudications', None) or {}
+    if not isinstance(decisions, dict):
+        raise ValueError('editorial_adjudications must map exact unit IDs to decision paths')
+    if unit_id in decisions:
+        from bhakti_editorial_adjudication import recover_editorial_candidate
+        decision_path = Path(decisions[unit_id])
+        recovered = recover_editorial_candidate(decision_path,
+            unit_id=unit_id, input_fingerprint=identity,
+            dependency_fingerprint=digest(evidence['policy']),
+            source_evidence=evidence, policy_payload=evidence['policy'],
+            validate_candidate=lambda value: fresh_target_errors(plan, metadata, value),
+            output_dir=Path(route_dir) / 'editorial-adjudications' / digest(unit_id)[:16] / file_hash(decision_path)[:16])
+        return {**recovered['candidate'], 'editorial_receipt': recovered['receipt']}
     def execute(context):
         local = library.route_options(options, context)
         local.semantic_full_source = plan['lines']
@@ -211,7 +225,14 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         for path in [song / '.transcription/source.json', song / '.transcription/trim-applied.json',
                      song / '.transcription/pipeline/01-transcript.json', song / '.transcription/pipeline/song-packet.json']:
             if path.is_file(): dependencies[str(path.relative_to(root))] = file_hash(path)
+        editorial_paths = getattr(options, 'editorial_adjudications', None) or {}
+        if not isinstance(editorial_paths, dict):
+            raise ValueError('editorial_adjudications must be an exact unit-to-path mapping')
+        editorial_unit = slug + ':new-source-semantics'
+        editorial_identity = ({editorial_unit: file_hash(editorial_paths[editorial_unit])}
+                              if editorial_unit in editorial_paths else {})
         identity = digest({'version': VERSION, 'dependencies': dependencies, 'map': mapping,
+                           'editorial_adjudications': editorial_identity,
                            'requested_stages': getattr(options, 'source_requested_stages', []),
                            'confirmed_issues': getattr(options, 'source_confirmed_issues', []),
                            'policy': pipeline.translation_policy_payload(),

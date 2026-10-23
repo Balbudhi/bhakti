@@ -2864,6 +2864,40 @@ def translation_review_schema() -> dict[str, Any]:
         "additionalProperties": False}}}, "required": ["reviews"], "additionalProperties": False}
 
 
+def select_translation_review_rows(
+    rows: Any, target_ids: list[str], context_ids: list[str],
+) -> list[dict[str, Any]]:
+    """Project unique semantic review records onto their explicit requested IDs.
+
+    Context records may be returned by a model, but never become target evidence
+    for another request. This is not an audio or performance-order repair.
+    """
+    if (not isinstance(target_ids, list) or not target_ids
+            or any(not isinstance(item, str) or not item for item in target_ids)
+            or len(target_ids) != len(set(target_ids))):
+        raise ValueError("translation review target IDs must be unique nonempty strings")
+    if (not isinstance(context_ids, list)
+            or any(not isinstance(item, str) or not item for item in context_ids)):
+        raise ValueError("translation review context IDs must be nonempty strings")
+    if not isinstance(rows, list):
+        raise ValueError("translation reviews must be an array")
+    known = set(target_ids) | set(context_ids)
+    by_id = {}
+    for row in rows:
+        if not isinstance(row, dict) or not isinstance(row.get("id"), str) or not row["id"]:
+            raise ValueError("translation review row must have a nonempty string ID")
+        line_id = row["id"]
+        if line_id in by_id:
+            raise ValueError(f"duplicate translation review ID: {line_id}")
+        if line_id not in known:
+            raise ValueError(f"unknown translation review ID: {line_id}")
+        by_id[line_id] = row
+    missing = [line_id for line_id in target_ids if line_id not in by_id]
+    if missing:
+        raise ValueError(f"missing translation review target IDs: {missing}")
+    return [by_id[line_id] for line_id in target_ids]
+
+
 def independently_review_translations(
     song_dir: Path, lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
     translation_rows: list[dict[str, Any]], provided_translation: str, options: argparse.Namespace,
@@ -2879,6 +2913,25 @@ def independently_review_translations(
     cache_dir = song_dir / ".transcription" / "pipeline" / "translation-review-batches"
     cache_dir.mkdir(parents=True, exist_ok=True)
 
+    def select_response(response, target_ids, source_context, label):
+        reviews = stage_model_rows(response, 'reviews', options)
+        context_ids = [line["id"] for line in
+                       [*getattr(options, "semantic_full_source", []), *source_context]]
+        try:
+            selected = select_translation_review_rows(reviews, target_ids, context_ids)
+        except ValueError as exc:
+            stage_quality_failure(options, f"translation review batch {label}: {exc}")
+        # Keep the provider response and its flags intact in candidate-*.json.
+        result = copy.deepcopy(response)
+        result["packet"]["reviews"] = copy.deepcopy(selected)
+        observed = [row["id"] for row in reviews]
+        if "review_selection" not in result or observed != target_ids:
+            result["review_selection"] = {
+                "version": 1, "observed_ids": observed, "target_ids": list(target_ids),
+                "excluded_context_ids": [line_id for line_id in observed if line_id not in target_ids],
+            }
+        return result
+
     def run(index: int) -> dict[str, Any]:
         batch = batches[index]
         context = nearby_text_context(lines, index * 20, len(batch))
@@ -2891,8 +2944,9 @@ def independently_review_translations(
         path = cache_dir / f"batch-{index:03d}.json"
         cached = read_packet(path)
         if cached and cached.get("fingerprint") == fingerprint and not options.force:
-            stage_model_rows(cached.get('response'), 'reviews', options)
-            return cached
+            result = copy.deepcopy(cached)
+            result["response"] = select_response(cached.get("response"), expected, context, str(index))
+            return result
         def review_prompt(target_evidence: list[dict[str, Any]], source_context: list[dict[str, Any]]) -> str:
             return f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
 
@@ -2930,6 +2984,10 @@ REFERENCED DISTANT SEMANTIC CONTEXT (context only):
 NEARBY SOURCE CONTEXT (context only; do not return these IDs):
 {json.dumps(source_context, ensure_ascii=False)}
 
+OUTPUT TARGET IDS (return exactly these, once each):
+{json.dumps([item["source"]["id"] for item in target_evidence], ensure_ascii=False)}
+Do not return reviews for any other ID appearing in context.
+
 EVIDENCE:
 {json.dumps(target_evidence, ensure_ascii=False)}
 
@@ -2944,14 +3002,7 @@ LOCKED HUMAN TRANSLATION (or none):
                                    schema_name="bhakti_translation_review", reasoning_effort="high",
                                    max_completion_tokens=32768, **stage_transport_context(options))
             write_json(cache_dir / f"candidate-{label.replace('.', '-')}.json", response)
-            reviews = stage_model_rows(response, 'reviews', options)
-            observed = [row.get("id") for row in reviews]
-            if len(observed) != len(target_ids) or set(observed) != set(target_ids):
-                stage_quality_failure(options, f"translation review batch {label} returned IDs out of order or incomplete")
-            if observed != target_ids:
-                by_id = {row["id"]: row for row in reviews}
-                response["packet"]["reviews"] = [by_id[item_id] for item_id in target_ids]
-            return response
+            return select_response(response, target_ids, source_context, label)
 
         if len(batch) > 10:
             children = []
@@ -2972,6 +3023,9 @@ LOCKED HUMAN TRANSLATION (or none):
                         "response": request(child_evidence, child_ids, f"{index}.{child_index}", child_context),
                     }
                     write_json(child_path, child_packet)
+                child_packet = copy.deepcopy(child_packet)
+                child_packet["response"] = select_response(
+                    child_packet.get("response"), child_ids, child_context, f"{index}.{child_index}")
                 children.append(child_packet)
             response = {
                 "packet": {"reviews": [row for child in children

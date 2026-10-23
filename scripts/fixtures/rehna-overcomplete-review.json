@@ -1,0 +1,3066 @@
+{
+  "request_sha256": "db601db5ae819a0db5ddd2f5f0dd1d4e3fea80a4181eede43f29eb27fc55e252",
+  "response_sha256": "8455153eeb07165de49ee9d4c12d80ea762bd4f961eb037cc3370ec8feec834b",
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "Google AI Studio",
+  "usage": {
+    "prompt_tokens": 169202,
+    "completion_tokens": 2584,
+    "total_tokens": 171786,
+    "cost": 0.369412,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.369412,
+      "upstream_inference_prompt_cost": 0.338404,
+      "upstream_inference_completions_cost": 0.031008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1266,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "target_ids": [
+    "intro-instrumental",
+    "refrain-1",
+    "refrain-2",
+    "refrain-des-veerana",
+    "verse-1-line-1",
+    "verse-1-line-2",
+    "verse-2-line-1",
+    "verse-2-line-2",
+    "verse-3-line-1",
+    "verse-3-line-2"
+  ],
+  "context_ids": [
+    "intro-instrumental",
+    "refrain-1",
+    "refrain-2",
+    "refrain-des-veerana",
+    "verse-1-line-1",
+    "verse-1-line-2",
+    "verse-2-line-1",
+    "verse-2-line-2",
+    "verse-3-line-1",
+    "verse-3-line-2",
+    "outro-instrumental"
+  ],
+  "packet": {
+    "reviews": [
+      {
+        "id": "intro-instrumental",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately reflects the source text and glosses.",
+        "issues": []
+      },
+      {
+        "id": "refrain-1",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the impersonal deontic modal construction and preserves the meaning of the source.",
+        "issues": []
+      },
+      {
+        "id": "refrain-2",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates both coordinate clauses, preserving the meaning and imagery of the source.",
+        "issues": []
+      },
+      {
+        "id": "refrain-des-veerana",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the copular clause and preserves the meaning of the source.",
+        "issues": []
+      },
+      {
+        "id": "verse-1-line-1",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the equational nominal sentence and preserves the imagery of the source.",
+        "issues": []
+      },
+      {
+        "id": "verse-1-line-2",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the conditional time clause and the telic compound verb, preserving the meaning and imagery of the source.",
+        "issues": []
+      },
+      {
+        "id": "verse-2-line-1",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the equational nominal sentence and preserves the imagery of the source.",
+        "issues": []
+      },
+      {
+        "id": "verse-2-line-2",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the conditional clause and the completive compound verb, preserving the meaning and imagery of the source.",
+        "issues": []
+      },
+      {
+        "id": "verse-3-line-1",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the present indicative and imperative clauses, preserving the meaning and direct address of the source.",
+        "issues": []
+      },
+      {
+        "id": "verse-3-line-2",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately translates the attributive nominal compound and copular clause, preserving the meaning of the source.",
+        "issues": []
+      },
+      {
+        "id": "outro-instrumental",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "None",
+        "reason": "The draft accurately reflects the source text and glosses.",
+        "issues": []
+      }
+    ]
+  },
+  "target_evidence": [
+    {
+      "source": {
+        "id": "intro-instrumental",
+        "source_text": "[वाद्य संगीत: सितार आलाप]",
+        "roman": "[Instrumental: Sitāra ālāpa]",
+        "kind": "instrumental",
+        "performed_context": [
+          {
+            "before": [],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-2",
+                "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+                "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "[वाद्य",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "संगीत:",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "सितार",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "आलाप]",
+            "wordIndices": [
+              2
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "[Instrumental:",
+          "Sitāra",
+          "ālāpa]"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "intro-instrumental",
+        "word_glosses": [
+          {
+            "roman": "[Instrumental:",
+            "gloss": "music without sung words",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "Sitāra",
+            "gloss": "long-necked plucked lute",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "ālāpa]",
+            "gloss": "unmetered melodic introduction",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Performance / stage direction in brackets."
+      },
+      "draft": {
+        "id": "intro-instrumental",
+        "literal_english": "[Instrumental: Sitar alap]",
+        "segments": [
+          {
+            "text": "[Instrumental: ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "Sitar ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "alap]",
+            "word_indices": [
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "refrain-1",
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "kind": "refrain",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "intro-instrumental",
+                "source_text": "[वाद्य संगीत: सितार आलाप]",
+                "roman": "[Instrumental: Sitāra ālāpa]"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-2",
+                "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+                "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-2",
+                "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+                "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "verse-1-line-1",
+                "source_text": "ये संसार कागज़ की पुड़िया",
+                "roman": "ye sansāra kāgaza kī puṛiyā"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "verse-1-line-1",
+                "source_text": "ये संसार कागज़ की पुड़िया",
+                "roman": "ye sansāra kāgaza kī puṛiyā"
+              },
+              {
+                "id": "verse-1-line-2",
+                "source_text": "बूंद पड़े ढल जाना है",
+                "roman": "būnda paṛē ḍhala jānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "verse-2-line-1",
+                "source_text": "ये संसार झाड़ो-झींखर",
+                "roman": "ye sansāra jhāṛō-jhīṅkhara"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "verse-2-line-1",
+                "source_text": "ये संसार झाड़ो-झींखर",
+                "roman": "ye sansāra jhāṛō-jhīṅkhara"
+              },
+              {
+                "id": "verse-2-line-2",
+                "source_text": "आग लगे जल जाना है",
+                "roman": "āga lagē jala jānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "verse-3-line-1",
+                "source_text": "कहत कबीर सुनो भाई साधो",
+                "roman": "kahata kabīra sunō bhāī sādhō"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "verse-3-line-1",
+                "source_text": "कहत कबीर सुनो भाई साधो",
+                "roman": "kahata kabīra sunō bhāī sādhō"
+              },
+              {
+                "id": "verse-3-line-2",
+                "source_text": "सतगुरु नाम ठिकाना है",
+                "roman": "sataguru nāma ṭhikānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "outro-instrumental",
+                "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+                "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "रहना",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "नहीं",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "इस",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "देस",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "में",
+            "wordIndices": [
+              4
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "rahanā",
+          "nahīṁ",
+          "isa",
+          "desa",
+          "meṁ"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "refrain-1",
+        "word_glosses": [
+          {
+            "roman": "rahanā",
+            "gloss": "to stay; dwelling",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "nahīṁ",
+            "gloss": "not",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "isa",
+            "gloss": "this",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "desa",
+            "gloss": "land; country",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "meṁ",
+            "gloss": "in",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Infinitive 'rahanā' with negative particle 'nahīṁ' functions as an impersonal deontic modal construction ('one must not dwell')."
+      },
+      "draft": {
+        "id": "refrain-1",
+        "literal_english": "One must not dwell in this land",
+        "segments": [
+          {
+            "text": "One must not dwell ",
+            "word_indices": [
+              0,
+              1
+            ]
+          },
+          {
+            "text": "in ",
+            "word_indices": [
+              4
+            ]
+          },
+          {
+            "text": "this ",
+            "word_indices": [
+              2
+            ]
+          },
+          {
+            "text": "land",
+            "word_indices": [
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "refrain-2",
+        "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+        "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai",
+        "kind": "refrain",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "intro-instrumental",
+                "source_text": "[वाद्य संगीत: सितार आलाप]",
+                "roman": "[Instrumental: Sitāra ālāpa]"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "रहना",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "नहीं",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "इस",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "देस",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "में,",
+            "wordIndices": [
+              4
+            ]
+          },
+          {
+            "text": "देस",
+            "wordIndices": [
+              5
+            ]
+          },
+          {
+            "text": "ये",
+            "wordIndices": [
+              6
+            ]
+          },
+          {
+            "text": "वीराना",
+            "wordIndices": [
+              7
+            ]
+          },
+          {
+            "text": "है",
+            "wordIndices": [
+              8
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "rahanā",
+          "nahīṁ",
+          "isa",
+          "desa",
+          "meṁ,",
+          "desa",
+          "ye",
+          "vīrānā",
+          "hai"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "refrain-2",
+        "word_glosses": [
+          {
+            "roman": "rahanā",
+            "gloss": "to stay; dwelling",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "nahīṁ",
+            "gloss": "not",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "isa",
+            "gloss": "this",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "desa",
+            "gloss": "land; country",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "meṁ,",
+            "gloss": "in",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "desa",
+            "gloss": "land; country",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "ye",
+            "gloss": "this",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "vīrānā",
+            "gloss": "desolate wilderness; barren waste",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "hai",
+            "gloss": "is",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Two coordinate clauses: first clause is an impersonal modal prohibition ('rahanā nahīṁ isa desa meṁ'), second is a copular clause ('desa ye vīrānā hai') with postnominal demonstrative 'ye' for poetic emphasis."
+      },
+      "draft": {
+        "id": "refrain-2",
+        "literal_english": "One must not dwell in this land, this land is a desolate wilderness",
+        "segments": [
+          {
+            "text": "One must not dwell ",
+            "word_indices": [
+              0,
+              1
+            ]
+          },
+          {
+            "text": "in ",
+            "word_indices": [
+              4
+            ]
+          },
+          {
+            "text": "this ",
+            "word_indices": [
+              2
+            ]
+          },
+          {
+            "text": "land, ",
+            "word_indices": [
+              3,
+              4
+            ]
+          },
+          {
+            "text": "this ",
+            "word_indices": [
+              6
+            ]
+          },
+          {
+            "text": "land ",
+            "word_indices": [
+              5
+            ]
+          },
+          {
+            "text": "is ",
+            "word_indices": [
+              8
+            ]
+          },
+          {
+            "text": "a desolate wilderness",
+            "word_indices": [
+              7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "refrain-des-veerana",
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "kind": "refrain",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-2",
+                "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+                "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "verse-1-line-1",
+                "source_text": "ये संसार कागज़ की पुड़िया",
+                "roman": "ye sansāra kāgaza kī puṛiyā"
+              },
+              {
+                "id": "verse-1-line-2",
+                "source_text": "बूंद पड़े ढल जाना है",
+                "roman": "būnda paṛē ḍhala jānā hai"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "verse-1-line-2",
+                "source_text": "बूंद पड़े ढल जाना है",
+                "roman": "būnda paṛē ḍhala jānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "verse-2-line-1",
+                "source_text": "ये संसार झाड़ो-झींखर",
+                "roman": "ye sansāra jhāṛō-jhīṅkhara"
+              },
+              {
+                "id": "verse-2-line-2",
+                "source_text": "आग लगे जल जाना है",
+                "roman": "āga lagē jala jānā hai"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "verse-2-line-2",
+                "source_text": "आग लगे जल जाना है",
+                "roman": "āga lagē jala jānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "verse-3-line-1",
+                "source_text": "कहत कबीर सुनो भाई साधो",
+                "roman": "kahata kabīra sunō bhāī sādhō"
+              },
+              {
+                "id": "verse-3-line-2",
+                "source_text": "सतगुरु नाम ठिकाना है",
+                "roman": "sataguru nāma ṭhikānā hai"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "verse-3-line-2",
+                "source_text": "सतगुरु नाम ठिकाना है",
+                "roman": "sataguru nāma ṭhikānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ],
+            "after": [
+              {
+                "id": "outro-instrumental",
+                "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+                "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "देस",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "ये",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "वीराना",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "है",
+            "wordIndices": [
+              3
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "desa",
+          "ye",
+          "vīrānā",
+          "hai"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "refrain-des-veerana",
+        "word_glosses": [
+          {
+            "roman": "desa",
+            "gloss": "land; country",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "ye",
+            "gloss": "this",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "vīrānā",
+            "gloss": "desolate wilderness; barren waste",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "hai",
+            "gloss": "is",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Copular clause with subject 'desa', postposed demonstrative pronoun 'ye', predicate adjective/noun 'vīrānā', and present copula 'hai'."
+      },
+      "draft": {
+        "id": "refrain-des-veerana",
+        "literal_english": "This land is a desolate wilderness",
+        "segments": [
+          {
+            "text": "This ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "land ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "is ",
+            "word_indices": [
+              3
+            ]
+          },
+          {
+            "text": "a desolate wilderness",
+            "word_indices": [
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "verse-1-line-1",
+        "source_text": "ये संसार कागज़ की पुड़िया",
+        "roman": "ye sansāra kāgaza kī puṛiyā",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "verse-1-line-2",
+                "source_text": "बूंद पड़े ढल जाना है",
+                "roman": "būnda paṛē ḍhala jānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "ये",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "संसार",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "कागज़",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "की",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "पुड़िया",
+            "wordIndices": [
+              4
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "ye",
+          "sansāra",
+          "kāgaza",
+          "kī",
+          "puṛiyā"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "verse-1-line-1",
+        "word_glosses": [
+          {
+            "roman": "ye",
+            "gloss": "this",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "sansāra",
+            "gloss": "world; worldly existence, here portrayed as fragile and perishable",
+            "concept_key": "samsara",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "kāgaza",
+            "gloss": "paper",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "kī",
+            "gloss": "of",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "puṛiyā",
+            "gloss": "small folded packet; paper pouch",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Equational nominal sentence with elided copula. The genitive postposition 'kī' agrees in feminine gender with 'puṛiyā'."
+      },
+      "draft": {
+        "id": "verse-1-line-1",
+        "literal_english": "This world is a packet of paper",
+        "segments": [
+          {
+            "text": "This ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "world ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "is ",
+            "word_indices": []
+          },
+          {
+            "text": "a packet ",
+            "word_indices": [
+              4
+            ]
+          },
+          {
+            "text": "of ",
+            "word_indices": [
+              3
+            ]
+          },
+          {
+            "text": "paper",
+            "word_indices": [
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "verse-1-line-2",
+        "source_text": "बूंद पड़े ढल जाना है",
+        "roman": "būnda paṛē ḍhala jānā hai",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "verse-1-line-1",
+                "source_text": "ये संसार कागज़ की पुड़िया",
+                "roman": "ye sansāra kāgaza kī puṛiyā"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "बूंद",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "पड़े",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "ढल",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "जाना",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "है",
+            "wordIndices": [
+              4
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "būnda",
+          "paṛē",
+          "ḍhala",
+          "jānā",
+          "hai"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "verse-1-line-2",
+        "word_glosses": [
+          {
+            "roman": "būnda",
+            "gloss": "drop (of water)",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "paṛē",
+            "gloss": "upon falling; when falling",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "ḍhala",
+            "gloss": "dissolving; slipping away; melting down",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "jānā",
+            "gloss": "to go; (as auxiliary) undergoing completion",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "hai",
+            "gloss": "is; is destined to",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "'būnda paṛē' is an oblique/absolutive participial construction serving as a conditional time clause ('upon a drop falling'). 'ḍhala jānā' is an intransitive telic compound verb (ḍhalnā + jānā); combined with 'hai', it expresses inevitable certainty."
+      },
+      "draft": {
+        "id": "verse-1-line-2",
+        "literal_english": "Upon a drop falling, it is bound to dissolve",
+        "segments": [
+          {
+            "text": "Upon a drop ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "falling, ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "it is bound ",
+            "word_indices": [
+              4
+            ]
+          },
+          {
+            "text": "to dissolve",
+            "word_indices": [
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "verse-2-line-1",
+        "source_text": "ये संसार झाड़ो-झींखर",
+        "roman": "ye sansāra jhāṛō-jhīṅkhara",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "verse-2-line-2",
+                "source_text": "आग लगे जल जाना है",
+                "roman": "āga lagē jala jānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "ये",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "संसार",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "झाड़ो-झींखर",
+            "wordIndices": [
+              2
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "ye",
+          "sansāra",
+          "jhāṛō-jhīṅkhara"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "verse-2-line-1",
+        "word_glosses": [
+          {
+            "roman": "ye",
+            "gloss": "this",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "sansāra",
+            "gloss": "world; worldly existence, here portrayed as fragile and perishable",
+            "concept_key": "samsara",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "jhāṛō-jhīṅkhara",
+            "gloss": "thicket of thorny bushes and dry scrub",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Equational nominal sentence with elided copula. 'jhāṛō-jhīṅkhara' is an echo-compound / dvandva denoting thorny, desiccated brushwood."
+      },
+      "draft": {
+        "id": "verse-2-line-1",
+        "literal_english": "This world is a thicket of thorny bushes",
+        "segments": [
+          {
+            "text": "This ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "world ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "is ",
+            "word_indices": []
+          },
+          {
+            "text": "a thicket of thorny bushes",
+            "word_indices": [
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "verse-2-line-2",
+        "source_text": "आग लगे जल जाना है",
+        "roman": "āga lagē jala jānā hai",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "verse-2-line-1",
+                "source_text": "ये संसार झाड़ो-झींखर",
+                "roman": "ye sansāra jhāṛō-jhīṅkhara"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "आग",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "लगे",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "जल",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "जाना",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "है",
+            "wordIndices": [
+              4
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "āga",
+          "lagē",
+          "jala",
+          "jānā",
+          "hai"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "verse-2-line-2",
+        "word_glosses": [
+          {
+            "roman": "āga",
+            "gloss": "fire",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "lagē",
+            "gloss": "upon catching; when catching",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "jala",
+            "gloss": "burning",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "jānā",
+            "gloss": "to go; (as auxiliary) undergoing completion",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "hai",
+            "gloss": "is; is destined to",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "'āga lagē' is an absolutive/oblique construction functioning as a conditional clause ('upon fire catching'). 'jala jānā' is a completive compound verb (jalnā + jānā) with auxiliary 'hai' conveying destined outcome."
+      },
+      "draft": {
+        "id": "verse-2-line-2",
+        "literal_english": "Upon fire catching, it is bound to burn down",
+        "segments": [
+          {
+            "text": "Upon fire ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "catching, ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "it is bound ",
+            "word_indices": [
+              4
+            ]
+          },
+          {
+            "text": "to burn down",
+            "word_indices": [
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "verse-3-line-1",
+        "source_text": "कहत कबीर सुनो भाई साधो",
+        "roman": "kahata kabīra sunō bhāī sādhō",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "verse-3-line-2",
+                "source_text": "सतगुरु नाम ठिकाना है",
+                "roman": "sataguru nāma ṭhikānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "कहत",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "कबीर",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "सुनो",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "भाई",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "साधो",
+            "wordIndices": [
+              4
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "kahata",
+          "kabīra",
+          "sunō",
+          "bhāī",
+          "sādhō"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "verse-3-line-1",
+        "word_glosses": [
+          {
+            "roman": "kahata",
+            "gloss": "says; declares",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "kabīra",
+            "gloss": "poet-saint",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "sunō",
+            "gloss": "listen; hear",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "bhāī",
+            "gloss": "O brother; O brothers",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "sādhō",
+            "gloss": "O seekers; O spiritual practitioners",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Imperfective participle 'kahata' functions as present indicative ('Kabir says'). 'sunō' is 2nd-person plural imperative governing the vocative phrase 'bhāī sādhō'."
+      },
+      "draft": {
+        "id": "verse-3-line-1",
+        "literal_english": "Says Kabīr, listen, O brother seekers",
+        "segments": [
+          {
+            "text": "Says ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "Kabīr, ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "listen, ",
+            "word_indices": [
+              2
+            ]
+          },
+          {
+            "text": "O brother ",
+            "word_indices": [
+              3
+            ]
+          },
+          {
+            "text": "seekers",
+            "word_indices": [
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "verse-3-line-2",
+        "source_text": "सतगुरु नाम ठिकाना है",
+        "roman": "sataguru nāma ṭhikānā hai",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "verse-3-line-1",
+                "source_text": "कहत कबीर सुनो भाई साधो",
+                "roman": "kahata kabīra sunō bhāī sādhō"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "सतगुरु",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "नाम",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "ठिकाना",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "है",
+            "wordIndices": [
+              3
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "sataguru",
+          "nāma",
+          "ṭhikānā",
+          "hai"
+        ],
+        "sourceLanguage": "hi"
+      },
+      "gloss": {
+        "id": "verse-3-line-2",
+        "word_glosses": [
+          {
+            "roman": "sataguru",
+            "gloss": "true Guru; authentic spiritual teacher",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "nāma",
+            "gloss": "Name; divine Name",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "ṭhikānā",
+            "gloss": "true resting place; refuge; destination",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "hai",
+            "gloss": "is",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "grammar_note": "Attributive nominal compound 'sataguru nāma' ('the Satguru's Name') functions as subject; 'ṭhikānā' is predicate noun; 'hai' is present copula."
+      },
+      "draft": {
+        "id": "verse-3-line-2",
+        "literal_english": "The true Guru's Name is the true refuge",
+        "segments": [
+          {
+            "text": "The true Guru's ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "Name ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "is ",
+            "word_indices": [
+              3
+            ]
+          },
+          {
+            "text": "the true refuge",
+            "word_indices": [
+              2
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "source_context": [
+    {
+      "id": "intro-instrumental",
+      "source_text": "[वाद्य संगीत: सितार आलाप]",
+      "roman": "[Instrumental: Sitāra ālāpa]",
+      "kind": "instrumental",
+      "performed_context": [
+        {
+          "before": [],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "[वाद्य",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संगीत:",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "सितार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "आलाप]",
+          "wordIndices": [
+            2
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "[Instrumental:",
+        "Sitāra",
+        "ālāpa]"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "refrain-1",
+      "source_text": "रहना नहीं इस देस में",
+      "roman": "rahanā nahīṁ isa desa meṁ",
+      "kind": "refrain",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "intro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार आलाप]",
+              "roman": "[Instrumental: Sitāra ālāpa]"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            },
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            },
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            },
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "outro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+              "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "रहना",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "नहीं",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "इस",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "देस",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "में",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "rahanā",
+        "nahīṁ",
+        "isa",
+        "desa",
+        "meṁ"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "refrain-2",
+      "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+      "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai",
+      "kind": "refrain",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "intro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार आलाप]",
+              "roman": "[Instrumental: Sitāra ālāpa]"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "रहना",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "नहीं",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "इस",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "देस",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "में,",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "देस",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "ये",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "वीराना",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "rahanā",
+        "nahīṁ",
+        "isa",
+        "desa",
+        "meṁ,",
+        "desa",
+        "ye",
+        "vīrānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "refrain-des-veerana",
+      "source_text": "देस ये वीराना है",
+      "roman": "desa ye vīrānā hai",
+      "kind": "refrain",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            },
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            },
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            },
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "outro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+              "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "देस",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "ये",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "वीराना",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            3
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "desa",
+        "ye",
+        "vīrānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-1-line-1",
+      "source_text": "ये संसार कागज़ की पुड़िया",
+      "roman": "ye sansāra kāgaza kī puṛiyā",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "ये",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संसार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "कागज़",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "की",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "पुड़िया",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "ye",
+        "sansāra",
+        "kāgaza",
+        "kī",
+        "puṛiyā"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-1-line-2",
+      "source_text": "बूंद पड़े ढल जाना है",
+      "roman": "būnda paṛē ḍhala jānā hai",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "बूंद",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "पड़े",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ढल",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "जाना",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "būnda",
+        "paṛē",
+        "ḍhala",
+        "jānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-2-line-1",
+      "source_text": "ये संसार झाड़ो-झींखर",
+      "roman": "ye sansāra jhāṛō-jhīṅkhara",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "ये",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संसार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "झाड़ो-झींखर",
+          "wordIndices": [
+            2
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "ye",
+        "sansāra",
+        "jhāṛō-jhīṅkhara"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-2-line-2",
+      "source_text": "आग लगे जल जाना है",
+      "roman": "āga lagē jala jānā hai",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "आग",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "लगे",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "जल",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "जाना",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "āga",
+        "lagē",
+        "jala",
+        "jānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-3-line-1",
+      "source_text": "कहत कबीर सुनो भाई साधो",
+      "roman": "kahata kabīra sunō bhāī sādhō",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "कहत",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "कबीर",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "सुनो",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "भाई",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "साधो",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "kahata",
+        "kabīra",
+        "sunō",
+        "bhāī",
+        "sādhō"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-3-line-2",
+      "source_text": "सतगुरु नाम ठिकाना है",
+      "roman": "sataguru nāma ṭhikānā hai",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "सतगुरु",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "नाम",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ठिकाना",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            3
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "sataguru",
+        "nāma",
+        "ṭhikānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "outro-instrumental",
+      "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+      "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]",
+      "kind": "instrumental",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": []
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "[वाद्य",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संगीत:",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "सितार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "एवं",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "तबला",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "समापन]",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "[Instrumental:",
+        "Sitāra",
+        "evaṁ",
+        "tabalā",
+        "samāpana]"
+      ],
+      "sourceLanguage": "hi"
+    }
+  ]
+}

@@ -89,7 +89,7 @@ class CallerTests(unittest.TestCase):
   self.timing['sequence']=self.timing['sequence'][:1];self.timing['sequence'][0]['start']=.1
   for root in [self.root,self.workspace]:write_json(root/'songs'/self.slug/'.transcription/pipeline/03-timing.json',{'uncertain_occurrence_ids':['occ-000']})
   result=self.run_candidate();self.assertEqual(result['status'],'accepted',result);self.target.assert_not_called();self.assertFalse(result['source_changed']);self.assertEqual(result['reader']['SONG_LINES'],self.reader['SONG_LINES']);opts=self.align.call_args.args[3];self.assertEqual(opts.timing_repair_occurrence_ids,['occ-000']);self.assertIn('audio_sha256',opts.timing_legacy_evidence_identity)
-if __name__=='__main__':unittest.main()
+
 
 class TargetRouteTests(unittest.TestCase):
  def setUp(self):
@@ -115,3 +115,44 @@ class TargetRouteTests(unittest.TestCase):
   import bhakti_model_routes as routes
   with patch.object(pipeline,'gloss',side_effect=routes.RunFatal('credentials rejected')) as stage, self.assertRaises(routes.RunFatal):self.run_targets()
   self.assertEqual(stage.call_count,1)
+
+class EditorialSourceConsumerTests(unittest.TestCase):
+ """Explicit receipt consumes real verifier; no router state is reopened."""
+ def setUp(self):
+  TargetRouteTests.setUp(self)
+  helper_path=os.environ.get('BHAKTI_TEST_EDITORIAL_ROOT')
+  if helper_path:sys.path.insert(0,str(pathlib.Path(helper_path)))
+  self.unit_id='test-source:new-source-semantics';self.route=self.directory/'routes';self.record=self.directory/'decision.json'
+  self.evidence={'targets':[self.plan['lines'][1]],'source':self.plan['lines'],'order':self.plan['performance_order'],'languages':self.metadata['languages'],'policy':pipeline.translation_policy_payload()}
+  self.input_id=adapter.digest(self.evidence);self.dependency=adapter.digest(self.evidence['policy'])
+  self.candidate=copy.deepcopy(self.value);row=self.candidate['translations']['packet']['translations'][0]
+  row['human_review_recommended']=True;row['material_alternatives']=['Be cool'];row['independent_review'].update(human_review_recommended=True,material_choice='Adjectival state versus direct imperative',issues=[])
+  self.state_path=self.directory/'old-unit/route-state.json';self.candidate_path=self.directory/'old-unit/flash/candidate.json'
+  state={'unit_id':self.unit_id,'input_fingerprint':self.input_id,'dependency_fingerprint':self.dependency,'status':'unresolved','attempts':[{'attempt_id':'saved-flash','status':'quality-failed'}]}
+  write_json(self.state_path,state);write_json(self.candidate_path,self.candidate)
+  self.effective=copy.deepcopy(self.candidate);effective_row=self.effective['translations']['packet']['translations'][0];effective_row['human_review_recommended']=False;effective_row['independent_review']['human_review_recommended']=False
+  import hashlib
+  sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
+  record={'version':1,'decision_kind':'retain_existing_primary','reviewer':'fixture editor','rationale':'Fixture chooses the existing descriptive adjective; no real content judgment claimed.', 'source_references':[{'line_id':'new','source_quote':'शीतल'}], 'unit_id':self.unit_id,'input_fingerprint':self.input_id,'dependency_fingerprint':self.dependency,'source_digest':adapter.digest(self.evidence),'policy_digest':self.dependency,'line_id':'new','attempt_id':'saved-flash','candidate_path':str(self.candidate_path),'candidate_file_sha256':sha(self.candidate_path),'candidate_digest':adapter.digest(self.candidate),'route_state_path':str(self.state_path),'route_state_sha256':sha(self.state_path),'original_row_digest':adapter.digest(row),'selected_literal_english':'Cool','expected_flags':{'translation_human_review_recommended':True,'independent_human_review_recommended':True},'expected_result_digest':adapter.digest(self.effective)}
+  write_json(self.record,record);self.options.editorial_adjudications={self.unit_id:str(self.record)}
+ run_targets=TargetRouteTests.run_targets
+ def test_explicit_verified_receipt_uses_original_candidate_with_zero_dispatch(self):
+  import bhakti_model_routes as routes
+  original_state=self.state_path.read_bytes();original_candidate=self.candidate_path.read_bytes()
+  with patch.object(routes,'run_unit',side_effect=AssertionError('must not reopen router')),patch.object(pipeline,'gloss',side_effect=AssertionError('no gloss call')),patch.object(pipeline,'translate',side_effect=AssertionError('no translation call')):
+   result=self.run_targets();again=self.run_targets()
+  self.assertEqual(result['glosses'],self.effective['glosses']);self.assertEqual(result['translations'],self.effective['translations']);self.assertEqual(result,again);self.assertEqual(len(result['editorial_receipt']['effective_changes']),2);self.assertEqual(self.state_path.read_bytes(),original_state);self.assertEqual(self.candidate_path.read_bytes(),original_candidate)
+ def test_stale_receipt_does_not_fall_back_to_paid_router(self):
+  import bhakti_model_routes as routes
+  record=json.loads(self.record.read_text());record['source_digest']='0'*64;write_json(self.record,record)
+  with patch.object(routes,'run_unit',side_effect=AssertionError('invalid receipt cannot dispatch')),self.assertRaises(ValueError):self.run_targets()
+ def test_real_fresh_gloss_validator_still_blocks_editorial_override(self):
+  import bhakti_model_routes as routes
+  import hashlib
+  self.candidate['glosses']['packet']['glosses'][0]['semantic_frame']={}
+  write_json(self.candidate_path,self.candidate);effective=copy.deepcopy(self.candidate);row=effective['translations']['packet']['translations'][0];row['human_review_recommended']=False;row['independent_review']['human_review_recommended']=False
+  record=json.loads(self.record.read_text());record.update(candidate_file_sha256=hashlib.sha256(self.candidate_path.read_bytes()).hexdigest(),candidate_digest=adapter.digest(self.candidate),expected_result_digest=adapter.digest(effective));write_json(self.record,record)
+  with patch.object(routes,'run_unit',side_effect=AssertionError('invalid receipt cannot dispatch')),self.assertRaises(ValueError):self.run_targets()
+
+
+if __name__=='__main__':unittest.main()
