@@ -60,7 +60,17 @@ class CallerTests(unittest.TestCase):
    draft['performance_order'].insert(1,{'line_id':'heard-extra','occurrence':1})
   draft['uncertainties']=[]
   return {'packet':draft,'resolved_model':model}
- def invoke(self):return adapter.run_source_candidate(root=self.root,slug=self.slug,reader=self.reader,workspace=self.workspace,route_dir=self.route,options=self.options,deadline_at=self.deadline)
+ def invoke(self):
+  # This fixture qualifies the observation stage and its original admission
+  # guards. Automatic adoption is separately exercised by the full caller tests.
+  def observation_only(**arguments):
+   target=arguments['workspace']/'songs'/arguments['slug']
+   original=arguments['root']/'songs'/arguments['slug']
+   return adapter.observe_source_candidate(reader=arguments['reader'],song_dir=target,
+    original_song=original,audio=target/pipeline.preferred_listener_audio(original).name,
+    route_dir=arguments['route_dir'],options=arguments['options'],deadline_at=arguments['deadline_at'])
+  with patch.object(adapter,'run_observed_source_candidate',side_effect=observation_only):
+   return adapter.run_source_candidate(root=self.root,slug=self.slug,reader=self.reader,workspace=self.workspace,route_dir=self.route,options=self.options,deadline_at=self.deadline)
  def observed(self,result):
   self.assertEqual(result['status'],'unresolved',result);self.assertFalse(result['publicationEligible']);self.assertFalse(result['source_changed']);self.assertEqual(result['reader'],self.reader)
   self.assertIn('audio_review',result['evidence'],result);obs=result['evidence']['audio_review'];self.assertEqual(obs['status'],'observed');self.assertTrue(pathlib.Path(obs['receipt_path']).is_file())

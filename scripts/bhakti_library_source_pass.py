@@ -6,6 +6,256 @@ from typing import Any
 
 VERSION=1
 
+def _source_lexical_key(line):
+    """Lexical equality for adoption; do not fold meaningful vowel marks."""
+    return (unicodedata.normalize('NFC', line['source_text']),
+            canonical_iast(line['roman']), line.get('kind', 'verse'))
+
+
+def _source_key(line):
+    import bhakti_lexical_retrieval as lexical
+    return (*_source_lexical_key(line), lexical.language(line.get('sourceLanguage') or line.get('language')))
+
+
+def _certain_occurrence_matches(old, new):
+    """Pairs present in every longest exact, order-preserving match.
+
+    Every maximum alignment contains one pair at each match rank. A rank with
+    only one possible pair therefore identifies a retained performance. Other
+    ranks deliberately supply no timestamp lineage. O(n*m) time and storage;
+    there is no exponential enumeration of repeated-refrain alternatives.
+    """
+    n, m = len(old), len(new)
+    prefix = [[0] * (m + 1) for _ in range(n + 1)]
+    suffix = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n):
+        for j in range(m):
+            prefix[i + 1][j + 1] = (prefix[i][j] + 1 if old[i] == new[j]
+                                     else max(prefix[i][j + 1], prefix[i + 1][j]))
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            suffix[i][j] = (suffix[i + 1][j + 1] + 1 if old[i] == new[j]
+                            else max(suffix[i + 1][j], suffix[i][j + 1]))
+    ranks = {}; possible_old = set()
+    for i in range(n):
+        for j in range(m):
+            if old[i] == new[j] and prefix[i][j] + 1 + suffix[i + 1][j + 1] == prefix[n][m]:
+                ranks.setdefault(prefix[i][j] + 1, []).append((i, j))
+                possible_old.add(i)
+    certain = sorted(values[0] for values in ranks.values() if len(values) == 1)
+    return certain, sorted(possible_old - {i for i, _ in certain})
+
+
+def reconcile_source_observations(reader, plan, observed):
+    """Propose source/order differences from bound observations, without effects.
+
+    The caller must first verify the durable observation receipt/router history.
+    This checks its supplied identity/digests again; it does not turn a model
+    observation into publication approval. Changed source requires subsequent
+    independent audio confirmation, and timing is always a separate obligation.
+    """
+    import bhakti_lexical_retrieval as lexical
+    def hold(detail):
+        return {'status': 'unresolved', 'issues': [{'kind': 'source_reconciliation', 'detail': detail}]}
+    identity = plan.get('identity')
+    if (not isinstance(identity, dict) or identity != observed.get('source_identity')
+            or identity.get('reader_source_sha256') != reader_source_identity(reader)):
+        raise ValueError('source observation identity differs from current recording/source')
+    if observed.get('status') != 'observed' or observed.get('issues'):
+        return hold('Not every requested audio unit has a usable observation')
+    original = source_draft(reader)
+    definitions = {line['id']: line for line in original['lines']}
+    old_languages = {}
+    song_languages = reader.get('SONG_META', {}).get('languages', [])
+    for lid, line in definitions.items():
+        current = reader['SONG_LINES'][lid]
+        code = lexical.line_language(current, song_languages)
+        if 'sourceLanguage' in current:
+            line['sourceLanguage'] = copy.deepcopy(current['sourceLanguage'])
+        elif code:
+            line['sourceLanguage'] = code
+        if code:
+            old_languages.setdefault(_source_lexical_key(line), set()).add(code)
+    old_events = original['performance_order']
+    old_rows = [definitions[event['line_id']] for event in old_events]
+    old_keys = [_source_key(row) for row in old_rows]
+    results = observed.get('unit_results')
+    if not isinstance(results, list) or not results:
+        return hold('No source observations')
+    prepared = []; unit_ids = set(); covered_targets = []
+    for item in results:
+        unit, raw = item.get('unit'), item.get('result')
+        if not isinstance(unit, dict) or not isinstance(raw, dict) or item.get('result_digest') != digest(raw):
+            raise ValueError('source observation content digest changed')
+        if unit.get('id') in unit_ids:
+            raise ValueError('duplicate source observation unit')
+        unit_ids.add(unit.get('id'))
+        errors = _observation_errors(unit, raw)
+        if errors:
+            return hold('; '.join(error['detail'] for error in errors))
+        segment = raw['segment_audits'][0]['segment']
+        if (segment.get('index') != unit.get('segment_index')
+                or any(segment.get(k) != unit.get(k) for k in ('clip_start', 'clip_end', 'core_start', 'core_end'))):
+            raise ValueError('observed segment differs from requested audio bounds')
+        if (any(type(unit.get(k)) not in (int, float) or not math.isfinite(unit[k])
+                for k in ('clip_start', 'clip_end', 'core_start', 'core_end'))
+                or not 0 <= unit['clip_start'] <= unit['core_start'] < unit['core_end'] <= unit['clip_end']):
+            raise ValueError('invalid observed core/clip bounds')
+        context = unit.get('context_occurrence_indices', [])
+        if unit.get('expanded_draft') != source_draft(reader, context):
+            raise ValueError('observation draft differs from exact current context')
+        targets = unit.get('target_occurrence_ids', [])
+        expected_targets = [f'occ-{i:03d}' for i in unit.get('core_occurrence_indices', [])]
+        if targets != expected_targets:
+            raise ValueError('observation target lineage differs from requested core')
+        covered_targets.extend(targets)
+        packet = raw['segment_audits'][0]['audit']['packet']
+        by_id = {row['id']: row for row in packet['lines']}
+        rows = [copy.deepcopy(by_id[event['line_id']]) for event in packet['performance_order']]
+        for row in rows:
+            heard = row.get('language', '')
+            if not isinstance(heard, str) or heard.strip() and not lexical.language(heard):
+                return hold('Observed source language is malformed or unidentified')
+            code = lexical.language(heard)
+            previous = old_languages.get(_source_lexical_key(row), set())
+            if code and previous and code not in previous:
+                return hold('Observed language conflicts with the existing explicit source language')
+            if not code:
+                code = next(iter(previous)) if len(previous) == 1 else lexical.line_language({}, song_languages)
+            if not code:
+                return hold('Observed source in a mixed-language performance lacks an identified language')
+            row['sourceLanguage'] = code
+        prepared.append((unit, rows))
+    expected_targets = {target for unit in plan.get('units', []) for target in unit['target_occurrence_ids']}
+    if set(covered_targets) != expected_targets or len(covered_targets) != len(set(covered_targets)):
+        return hold('Observed units lost or duplicated requested source cores')
+    prepared.sort(key=lambda value: (value[0]['core_start'], value[0]['core_end']))
+    whole = plan.get('mode') == 'whole_recording'
+    if whole:
+        requested = plan.get('units', [])
+        if len(requested) != 1:
+            return hold('Whole-recording plan does not have one complete parent scope')
+        start, end = requested[0]['clip_start'], requested[0]['clip_end']
+        if (start != 0 or abs(prepared[0][0]['core_start'] - start) > .0005
+                or abs(prepared[-1][0]['core_end'] - end) > .0005
+                or any(abs(left[0]['core_end'] - right[0]['core_start']) > .0005
+                       for left, right in zip(prepared, prepared[1:]))):
+            return hold('Whole-recording cores have a gap, overlap, or missing edge')
+        rows = []
+        for index, (unit, current) in enumerate(prepared):
+            if index and prepared[index - 1][0]['clip_end'] > unit['clip_start']:
+                left = prepared[index - 1][1]
+                seams = [length for length in range(1, min(len(left), len(current)) + 1)
+                         if [_source_key(r) for r in left[-length:]] == [_source_key(r) for r in current[:length]]]
+                if len(seams) != 1:
+                    return hold('Overlapping source observations conflict or have ambiguous repeated context')
+                current = current[seams[0]:]
+            rows.extend(current)
+        if any(row.get('partial') != 'none' for row in rows):
+            return hold('Whole source retains an unresolved clipped fragment')
+    else:
+        # Focused units contain unchanged context as anchors. Preserve all
+        # outside-target performances, including unselected interior neighbors.
+        replacements = []
+        for unit, current in prepared:
+            context_ids = {f'occ-{i:03d}' for i in unit['context_occurrence_indices']}
+            indices = [i for i, event in enumerate(old_events) if event['display_occurrence_id'] in context_ids]
+            if not indices or indices != list(range(indices[0], indices[-1] + 1)):
+                return hold('Focused context is not one contiguous source span')
+            local_old = [old_keys[i] for i in indices]
+            pairs, _ = _certain_occurrence_matches(local_old, [_source_key(row) for row in current])
+            by_old = dict(pairs)
+            targets = set(unit['target_occurrence_ids'])
+            core_positions = [i for i, absolute in enumerate(indices)
+                              if old_events[absolute]['display_occurrence_id'] in targets]
+            if not core_positions:
+                return hold('Focused observation has no core occurrence')
+            prefix_count = core_positions[0]
+            suffix_count = len(indices) - core_positions[-1] - 1
+            current_keys = [_source_key(row) for row in current]
+            if (current_keys[:prefix_count] != local_old[:prefix_count]
+                    or suffix_count and current_keys[-suffix_count:] != local_old[-suffix_count:]):
+                return hold('Focused observation inserts or changes source beyond its context anchors')
+            for local, absolute in enumerate(indices):
+                if old_events[absolute]['display_occurrence_id'] not in targets and local not in by_old:
+                    return hold('Focused observation changes or ambiguously identifies outside-core context')
+            for local, absolute in enumerate(indices):
+                if local in by_old and old_events[absolute]['display_occurrence_id'] not in targets:
+                    # Retain exact complete context; an allowable partial edge
+                    # is only routing evidence, never a replacement definition.
+                    current[by_old[local]] = {**copy.deepcopy(old_rows[absolute]), 'partial': 'none'}
+            if any(row.get('partial') != 'none' for row in current):
+                return hold('Focused observation retains unresolved partial core source')
+            replacements.append((indices[0], indices[-1] + 1, current))
+        if any(left[1] > right[0] for left, right in zip(replacements, replacements[1:])):
+            return hold('Focused replacement contexts overlap; combine and review their source together')
+        rows = []; cursor = 0
+        for start, end, replacement in replacements:
+            rows.extend(copy.deepcopy(old_rows[cursor:start])); rows.extend(replacement); cursor = end
+        rows.extend(copy.deepcopy(old_rows[cursor:]))
+    if not rows:
+        return hold('Audio observation would remove the entire performance')
+    new_keys = [_source_key(row) for row in rows]
+    certain, ambiguous_old = _certain_occurrence_matches(old_keys, new_keys)
+    old_for_new = {j: i for i, j in certain}
+    definition_ids = {}
+    for lid, line in definitions.items():
+        definition_ids.setdefault(_source_key(line), []).append(lid)
+    canonical = {}; fresh = []; reused = []; order = []; counts = {}
+    fresh_by_key = {}
+    for j, row in enumerate(rows):
+        key = new_keys[j]
+        if j in old_for_new:
+            lid = old_events[old_for_new[j]]['line_id']
+        elif len(definition_ids.get(key, [])) == 1:
+            lid = definition_ids[key][0]
+        elif len(definition_ids.get(key, [])) > 1:
+            return hold('Identical source definitions have distinct editorial identity and ambiguous occurrence context')
+        else:
+            if key not in fresh_by_key:
+                candidate = 'source-new-' + digest(key)[:16]
+                if candidate in reader['SONG_LINES']:
+                    raise ValueError('fresh source ID collides with current definition')
+                fresh_by_key[key] = candidate
+            lid = fresh_by_key[key]
+        if lid not in canonical:
+            if lid in definitions:
+                canonical[lid] = copy.deepcopy(definitions[lid]); reused.append(lid)
+            else:
+                heard_language = row.get('language', '')
+                if not isinstance(heard_language, str):
+                    return hold('Fresh source language is malformed')
+                language_code = row['sourceLanguage']
+                if heard_language.strip() and not language_code:
+                    return hold('Fresh source language is not a supported identified language')
+                if not language_code:
+                    language_code = lexical.line_language({}, reader.get('SONG_META', {}).get('languages', []))
+                if not language_code:
+                    return hold('Fresh source in a mixed-language performance lacks an identified language')
+                canonical[lid] = {'id': lid, 'source_text': row['source_text'], 'roman': row['roman'],
+                                  'kind': row['kind'], 'language': heard_language,
+                                  'sourceLanguage': language_code, 'translation_notes': row.get('notes', '')}
+                fresh.append(lid)
+        counts[lid] = counts.get(lid, 0) + 1
+        order.append({'line_id': lid, 'occurrence': counts[lid], 'notes': ''})
+    lineage = []; old_cursor = new_cursor = 0
+    for i, j in certain + [(len(old_rows), len(rows))]:
+        lineage.extend({'old_index': k, 'new_index': None} for k in range(old_cursor, i))
+        lineage.extend({'old_index': None, 'new_index': k} for k in range(new_cursor, j))
+        if i < len(old_rows):
+            lineage.append({'old_index': i, 'new_index': j})
+        old_cursor, new_cursor = i + 1, j + 1
+    return {'status': 'proposed', 'issues': [], 'before_identity': copy.deepcopy(identity),
+            'rebuilt': {'metadata': {'languages': copy.deepcopy(reader.get('SONG_META', {}).get('languages', []))},
+                        'verified_lines': list(canonical.values()), 'performance_order': order,
+                        'changes': [], 'uncertainties': []},
+            'reused_line_ids': reused, 'fresh_line_ids': fresh,
+            'removed_line_ids': [lid for lid in definitions if lid not in canonical],
+            'requires_confirmation': old_keys != new_keys,
+            'coverage_scope': 'whole_recording' if whole else 'focused',
+            'occurrence_lineage': lineage, 'timing_unresolved_old_indices': ambiguous_old,
+            'observation_digests': [item['result_digest'] for item in results]}
+
 def digest(value):
     return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()
 
@@ -17,9 +267,9 @@ def canonical_iast(value):
     # Unicode equivalence only. Reviewed lexical/roman aliases need an explicit map.
     return unicodedata.normalize('NFC',value).strip()
 
-def plan_source(reader,rebuilt,*,reviewed_map=None):
+def plan_source(reader,rebuilt,*,reviewed_map=None,accepted_delta=None):
     if rebuilt.get('uncertainties'):raise ValueError('rebuilt source has unresolved uncertainty')
-    old=reader.get('SONG_LINES',{});raw=rebuilt.get('verified_lines',[]);order=rebuilt.get('performance_order',[])
+    old=reader.get('SONG_LINES',{});raw=copy.deepcopy(rebuilt.get('verified_lines',[]));order=rebuilt.get('performance_order',[])
     if not isinstance(old,dict) or not old or not isinstance(raw,list) or not raw or not isinstance(order,list) or not order:raise ValueError('incomplete source population')
     raw_by={}
     for line in raw:
@@ -29,6 +279,29 @@ def plan_source(reader,rebuilt,*,reviewed_map=None):
         raw_by[lid]=line
     if any(not isinstance(r,dict) or r.get('line_id') not in raw_by for r in order):raise ValueError('unknown source occurrence reference')
     if {r['line_id'] for r in order}!=set(raw_by):raise ValueError('unperformed audited source rows')
+    if accepted_delta is not None:
+        if reviewed_map is not None or accepted_delta.get('rebuilt') != rebuilt:
+            raise ValueError('accepted source delta differs from normalized source')
+        reused = accepted_delta.get('reused_line_ids', [])
+        fresh = accepted_delta.get('fresh_line_ids', [])
+        removed = accepted_delta.get('removed_line_ids', [])
+        if (len(reused) != len(set(reused)) or len(fresh) != len(set(fresh))
+                or set(reused) & set(fresh) or set(reused) | set(fresh) != set(raw_by)
+                or set(reused) | set(removed) != set(old) or set(reused) & set(removed)
+                or set(fresh) & set(old)):
+            raise ValueError('accepted source delta populations are inconsistent')
+        reuse = {}
+        for lid in reused:
+            row = raw_by[lid]
+            if (row['source_text'] != old[lid]['source'] or row['roman'] != old[lid]['roman']):
+                raise ValueError('accepted reuse changes existing source identity')
+            reuse[lid] = copy.deepcopy(old[lid])
+            for field in ('sourceWords', 'sourceLanguage'):
+                if field in old[lid]: row[field] = copy.deepcopy(old[lid][field])
+        return {'lines':copy.deepcopy(raw), 'performance_order':copy.deepcopy(order),
+                'raw_to_final':{lid:lid for lid in raw_by}, 'new_target_ids':list(fresh),
+                'removed_line_ids':list(removed), 'reuse_by_id':reuse,
+                'rebuilt_source_digest':digest(rebuilt), 'adopted_delta':copy.deepcopy(accepted_delta)}
     mapping={}
     if reviewed_map is not None:
         for item in reviewed_map.get('mapping',[]):
@@ -78,8 +351,11 @@ def assert_source_candidate(before,after,plan,timing):
     if before.get('SONG_META')!=after.get('SONG_META'):raise ValueError('source stage changed metadata')
     old=before['SONG_LINES'];new=after.get('SONG_LINES',{});expected={r['id']:r for r in plan['lines']}
     if set(new)!=set(expected):raise ValueError('candidate source population mismatch')
-    for lid,line in old.items():
+    preserved=plan.get('reuse_by_id',old) if 'adopted_delta' in plan else old
+    for lid,line in preserved.items():
         if new.get(lid)!=line:raise ValueError('changed existing reviewed row '+lid)
+    if 'adopted_delta' in plan and set(old)-set(preserved)!=set(plan['removed_line_ids']):
+        raise ValueError('source candidate removed unexpected old definitions')
     for lid,line in expected.items():
         if new[lid].get('source')!=line['source_text'] or new[lid].get('roman')!=line['roman']:raise ValueError('candidate changed planned source/roman '+lid)
     expanded=[]
@@ -114,6 +390,122 @@ def file_hash(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, duration_seconds, model_audio_sha256=None):
+    """Plan fresh timing only where exact source lineage lacks audio evidence.
+
+    A retained value is a corroborated measurement of the same performed block,
+    never an old display timestamp shifted by position. Caller validates the
+    durable source receipt and prior timing artifact before supplying them.
+    Unsupported historical report shapes simply contribute no measurements.
+    """
+    import bhakti_pipeline as pipeline
+    before = delta.get('before_identity', {})
+    if (delta.get('status') != 'proposed' or before.get('audio_sha256') != audio_sha256
+            or before.get('reader_source_sha256') != reader_source_identity(reader)):
+        raise ValueError('source timing delta no longer matches recording/source')
+    if type(duration_seconds) not in (int, float) or not math.isfinite(duration_seconds) or duration_seconds <= 0:
+        raise ValueError('source timing duration invalid')
+    old_draft = source_draft(reader)
+    old = pipeline.display_occurrences({'verified_lines': old_draft['lines'],
+                                       'performance_order': old_draft['performance_order']})
+    new = pipeline.display_occurrences(delta['rebuilt'])
+    measurements = {}
+    if prior_timing:
+        identity = prior_timing.get('source_identity', {})
+        fingerprint = hashlib.sha256(json.dumps(identity, ensure_ascii=False, sort_keys=True, allow_nan=False).encode()).hexdigest()
+        if (identity.get('version') != 2 or identity.get('audio_sha256') != audio_sha256
+                or identity.get('source_identity', {}).get('trim') != trim
+                or prior_timing.get('input_fingerprint') != fingerprint
+                or prior_timing.get('duration_seconds') != duration_seconds):
+            raise ValueError('prior timing identity differs from current recording/trim/duration')
+        bound = identity.get('ordered_occurrences', [])
+        if len(bound) != len(old) or prior_timing.get('ordered_occurrences') != bound:
+            raise ValueError('prior timing order differs from original source')
+        for expected, actual in zip(old, bound):
+            if any(actual.get(key) != value for key, value in expected.items()):
+                raise ValueError('prior timing source differs from original performance')
+        measurements = pipeline.retained_timing_measurements(bound,
+            prior_timing.get('refinements', []), duration_seconds, require_consensus=True)
+        for report in prior_timing.get('refinements', []):
+            if report.get('kind') not in {'joint', 'joint-selection'}:
+                continue
+            if not isinstance(model_audio_sha256, str) or len(model_audio_sha256) != 64:
+                raise ValueError('prior joint measurements need current canonical model audio binding')
+            if report['kind'] == 'joint-selection':
+                if report['audio_sha256'] != model_audio_sha256:
+                    raise ValueError('prior joint selection canonical audio changed')
+                errors = pipeline.joint_selection_errors(report, prior_timing)
+                if errors:raise ValueError('; '.join(errors))
+                measurements.update({row['occurrence_id']:row['start'] for row in prior_timing['sequence']})
+                continue
+            region = report['region']
+            pipeline.validate_joint_region_source(region, bound, duration_seconds)
+            fingerprint = pipeline.joint_region_fingerprint(model_audio_sha256, region, duration_seconds, identity)
+            pairs = pipeline.joint_pair_evidence(report, expected_region=region,
+                expected_fingerprint=fingerprint, duration=duration_seconds)
+            agreed = {row['timing_id']:row for row in pairs['agreed']}
+            for occurrence in region['target_occurrences']:
+                required = pipeline.expanded_timing_targets([occurrence])
+                if all(row['timing_id'] in agreed for row in required):
+                    measurements[occurrence['occurrence_id']] = agreed[required[0]['timing_id']]['start']
+        if any(row.get('kind') == 'source-adoption' for row in prior_timing.get('refinements', [])):
+            errors = pipeline.source_adoption_timing_errors(prior_timing)
+            if errors:raise ValueError('; '.join(errors))
+            measurements = {row['occurrence_id']:row['start'] for row in prior_timing['sequence']}
+
+    # Reconciliation lineage describes expanded performances. A displayed
+    # repeated block can retain its start only when every constituent maps
+    # consecutively to the complete old block, including its first performance.
+    lineage = {row['new_index']: row['old_index'] for row in delta['occurrence_lineage']
+               if row['old_index'] is not None and row['new_index'] is not None}
+    old_blocks = {}; offset = 0
+    for occurrence in old:
+        old_blocks[offset] = occurrence
+        offset += occurrence['repeats']
+    retained = {}; provenance = {}; offset = 0
+    for occurrence in new:
+        count = occurrence['repeats']; old_first = lineage.get(offset)
+        original = old_blocks.get(old_first)
+        if (original and count == original['repeats']
+                and all(lineage.get(offset+i) == old_first+i for i in range(count))
+                and all(occurrence[key] == original[key] for key in ('ref','source_text','roman','section'))
+                and original['occurrence_id'] in measurements):
+            oid = occurrence['occurrence_id']
+            retained[oid] = measurements[original['occurrence_id']]
+            provenance[oid] = {'old_occurrence_id': original['occurrence_id'],
+                               'old_expanded_index': old_first, 'new_expanded_index': offset}
+        offset += count
+    previous = -1.
+    for occurrence in new:
+        point = retained.get(occurrence['occurrence_id'])
+        if point is not None:
+            if point <= previous:
+                raise ValueError('retained performance measurements contradict source order')
+            previous = point
+    pending = [i for i,row in enumerate(new) if row['occurrence_id'] not in retained]
+    groups = []
+    for index in pending:
+        if groups and index == groups[-1][-1]+1: groups[-1].append(index)
+        else: groups.append([index])
+    regions = []
+    for group in groups:
+        first,last = group[0],group[-1]
+        preceding = copy.deepcopy(new[first-1]) if first else None
+        following = copy.deepcopy(new[last+1]) if last+1 < len(new) else None
+        left = retained[preceding['occurrence_id']] if preceding else None
+        right = retained[following['occurrence_id']] if following else None
+        regions.append({'index': len(regions), 'grid': 'joint-context',
+            'clip_start': max(0., left-10.) if left is not None else 0.,
+            'clip_end': min(duration_seconds, right+20.) if right is not None else duration_seconds,
+            'target_indices': group, 'target_occurrences': copy.deepcopy(new[first:last+1]),
+            'preceding_context': preceding, 'following_context': following,
+            'retained_anchor_starts': {row['occurrence_id']: retained[row['occurrence_id']]
+                                       for row in (preceding,following) if row}})
+    return {'retained_starts': retained, 'regions': regions, 'ordered_occurrences': new,
+            'retained_lineage': provenance, 'prior_timing_digest': digest(prior_timing),
+            'source_delta_digest': digest(delta)}
+
+
 def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_at):
     """Fresh text is a routed, independently reviewed subset, never old English."""
     import bhakti_pipeline as pipeline
@@ -121,6 +513,17 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
     import bhakti_model_routes as routes
     targets = [line for line in plan['lines'] if line['id'] in plan['new_target_ids']]
     languages = metadata.get('languages', [])
+    options = copy.copy(options)
+    options.semantic_full_source = plan['lines']
+    options = library.lexical_options(options, song_dir.name, plan['lines'], languages)
+    support = pipeline.bhakti_lexical_support.project_support(
+        getattr(options, 'semantic_lexical_support', None), plan['new_target_ids'])
+    def candidate_errors(value):
+        errors = fresh_target_errors(plan, metadata, value)
+        if not errors:
+            errors.extend(pipeline.bhakti_lexical_support.support_decision_errors(support,
+                value['glosses']['packet']['glosses'], value['translations']['packet']['translations']))
+        return errors
     reused = plan.get('reuse_by_id', {})
     planned = {line['id']: line for line in plan['lines']}
     if set(reused) != set(planned) - set(plan['new_target_ids']):
@@ -149,7 +552,7 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
             [line['id'] for line in targets[offset:offset + 10]],
             performance_order=plan['performance_order'], full_evidence=context_evidence)
     evidence = {'targets': targets, 'source': plan['lines'], 'order': plan['performance_order'],
-                'languages': languages, 'reading_context': context_evidence, 'policy': pipeline.translation_policy_payload()}
+                'languages': languages, 'reading_context': context_evidence, 'policy': pipeline.semantic_stage_policy(options)}
     identity = digest(evidence)
     unit_id = song_dir.name + ':new-source-semantics'
     decisions = getattr(options, 'editorial_adjudications', None) or {}
@@ -162,7 +565,7 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
             unit_id=unit_id, input_fingerprint=identity,
             dependency_fingerprint=digest(evidence['policy']),
             source_evidence=evidence, policy_payload=evidence['policy'],
-            validate_candidate=lambda value: fresh_target_errors(plan, metadata, value),
+            validate_candidate=candidate_errors,
             output_dir=Path(route_dir) / 'editorial-adjudications' / digest(unit_id)[:16] / file_hash(decision_path)[:16])
         return {**recovered['candidate'], 'editorial_receipt': recovered['receipt']}
     def execute(context):
@@ -183,11 +586,16 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
             {'slug': song_dir.name, 'languages': languages}, local, candidate_only=True)
         return {'glosses': glosses, 'translations': translations}
     def validate(value):
-        return [{'kind': 'source_semantic_contract', 'detail': error} for error in fresh_target_errors(plan, metadata, value)]
-    return routes.run_unit(route_dir, song_dir.name + ':new-source-semantics', identity,
+        return [{'kind': 'source_semantic_contract', 'detail': error} for error in candidate_errors(value)]
+    result = routes.run_unit(route_dir, song_dir.name + ':new-source-semantics', identity,
         execute, validate, deadline_at=deadline_at, dependency_fingerprint=digest(evidence['policy']),
         base_model=options.model, pro_model=options.pro_model)
 
+
+    errors = candidate_errors(result)
+    if errors:
+        raise ValueError('fresh source cached semantic evidence invalid: ' + '; '.join(errors))
+    return result
 
 def fresh_target_errors(plan, metadata, value):
     import bhakti_pipeline as pipeline
@@ -204,6 +612,152 @@ def fresh_target_errors(plan, metadata, value):
                 + pipeline.validate_line_contract(targets, glosses, translations))
     except (KeyError, TypeError) as exc:
         return ['incomplete fresh target artifact: ' + str(exc)]
+
+
+def _source_confirmation_units(reader, delta, observation):
+    """Ask only changed local hearings again, with complete source/order."""
+    import bhakti_lexical_retrieval as lexical
+    units=[]; expected={}
+    for item in observation['unit_results']:
+        original=item['unit']; packet=item['result']['segment_audits'][0]['audit']['packet']
+        by_id={row['id']:row for row in packet['lines']}
+        heard=[by_id[event['line_id']] for event in packet['performance_order']]
+        old_by={row['id']:row for row in original['expanded_draft']['lines']}
+        old=[old_by[event['line_id']] for event in original['expanded_draft']['performance_order']]
+        if [_source_lexical_key(row) for row in heard]==[_source_lexical_key(row) for row in old]:
+            continue
+        unit=copy.deepcopy(original)
+        unit['id']='confirmation-'+original['id']+'-'+digest(delta)[:16]
+        lines=copy.deepcopy(packet['lines']); rows={row['id']:row for row in lines}
+        canonical={_source_lexical_key(row):row for row in delta['rebuilt']['verified_lines']}
+        for row in lines:
+            code=lexical.language(row.get('language'))
+            if not code:
+                approved=canonical.get(_source_lexical_key(row),{})
+                code=lexical.language(approved.get('sourceLanguage'))
+            if not code:raise ValueError('confirmation source lacks a resolved language')
+            row['language']=code
+        order=[]; targets=[]
+        for index,event in enumerate(packet['performance_order']):
+            locator=f'occ-{index:03d}'
+            row=rows[event['line_id']]
+            order.append({**copy.deepcopy(event),'display_occurrence_id':locator,
+                          'repeat_index':0,'kind':row['kind']})
+            if row['partial']=='none':targets.append(locator)
+        if not targets:raise ValueError('confirmation has no complete target source')
+        unit['expanded_draft']={'lines':lines,'performance_order':order}
+        unit['target_occurrence_ids']=targets
+        unit['hypotheses']=[{'id':'prior-source-'+original['id'],
+            'reason':'The prior reader differs from this proposed hearing; decide from the attached recording.',
+            'alternatives':copy.deepcopy(original['expanded_draft']['lines'])}]
+        unit['prior_evidence']=[]
+        units.append(unit)
+        expected[unit['id']]=[list(_source_key(rows[event['line_id']])) for event in order]
+    if delta['requires_confirmation'] and not units:
+        raise ValueError('changed source has no confirmable local observation')
+    return units,expected
+
+
+def _checked_adoption_receipt(declaration, reader):
+    path=Path(declaration['path'])
+    if file_hash(path)!=declaration.get('sha256'):
+        raise ValueError('accepted source receipt changed')
+    receipt=json.loads(path.read_text())
+    delta=receipt.get('delta')
+    if (receipt.get('version')!=1 or receipt.get('status')!='accepted-source'
+            or receipt.get('original_reader_digest')!=digest(reader)
+            or receipt.get('delta_digest')!=digest(delta)
+            or not isinstance(delta,dict) or delta.get('status')!='proposed'
+            or receipt.get('approved_source_order_digest')!=digest(delta.get('rebuilt'))):
+        raise ValueError('invalid accepted source receipt')
+    # Re-entered observations and confirmation validated these paths before
+    # constructing the declaration. Recheck their bytes at the builder boundary.
+    import bhakti_model_routes as routes
+    for filename,expected in receipt.get('evidence_files',{}).items():
+        if file_hash(filename)!=expected:raise ValueError('accepted source evidence changed')
+        if Path(filename).name == 'route-state.json':
+            try:
+                cached = routes.read_unit_cache(Path(filename))
+            except routes.RunFatal as exc:
+                raise ValueError('accepted source route evidence invalid: ' + str(exc)) from exc
+            if cached['state']['status'] != 'accepted':
+                raise ValueError('accepted source route is no longer accepted')
+    return receipt
+
+
+def verify_source_result_evidence(result, reader):
+    """Revalidate saved source authorization without provider dispatch."""
+    if (result.get('status')!='accepted' or result.get('publicationEligible') is not True
+            or result.get('issues')):
+        raise ValueError('source checkpoint is not accepted evidence')
+    evidence=result['evidence']
+    import bhakti_pipeline as pipeline
+    errors = pipeline.timing_uncertainty_errors(evidence['timing'])
+    if errors:raise ValueError('source checkpoint timing evidence invalid: ' + '; '.join(errors))
+    assert_source_candidate(reader,result['reader'],evidence['plan'],evidence['timing'])
+    declaration=evidence.get('source_adoption_receipt')
+    if declaration is not None:
+        receipt=_checked_adoption_receipt(declaration,reader)
+        if evidence['plan'].get('adopted_delta')!=receipt['delta']:
+            raise ValueError('source checkpoint differs from accepted source receipt')
+
+
+def run_observed_source_candidate(*, root, slug, reader, workspace, route_dir, options, deadline_at):
+    """Existing observer -> source confirmation -> existing private builder."""
+    import bhakti_pipeline as pipeline
+    song=Path(root)/'songs'/slug; target=Path(workspace)/'songs'/slug
+    audio=target/pipeline.preferred_listener_audio(song).name
+    initial=observe_source_candidate(reader=reader,song_dir=target,original_song=song,audio=audio,
+        route_dir=route_dir,options=options,deadline_at=deadline_at)
+    observation=initial['evidence']['audio_review']
+    if observation['status']!='observed':return initial
+    flags=copy.deepcopy(getattr(options,'source_review_flags',{}))
+    requested=set(getattr(options,'source_requested_stages',[]) or [])
+    if requested.intersection({'audio-review','focused-audio-review'}):flags['audio']=True
+    evidence=collect_source_evidence(song,reader,flags=flags,
+        coverage_requested=getattr(options,'source_coverage_requested',False))
+    evidence['disagreements']=copy.deepcopy(flags.get('disagreements',[]))
+    source_plan=plan_audio_review(reader,source_evidence=evidence,flags=flags,
+                                  duration_seconds=evidence['duration_seconds'])
+    pure_input={**copy.deepcopy(observation),'source_identity':evidence['identity']}
+    for item in pure_input['unit_results']:item['result_digest']=digest(item['result'])
+    delta=reconcile_source_observations(reader,source_plan,pure_input)
+    def hold(kind,detail,extra=None):
+        return {'status':'unresolved','reader':reader,'source_changed':False,'publicationEligible':False,
+                'issues':[{'kind':kind,'detail':detail}],
+                'evidence':{'audio_review':observation,'source_delta':delta,**(extra or {})}}
+    if delta['status']!='proposed':return hold('source_reconciliation',delta['issues'])
+    confirmations={'status':'observed','unit_results':[],'issues':[]}
+    if delta['requires_confirmation']:
+        units,expected=_source_confirmation_units(reader,delta,observation)
+        confirmations=review_audio_units(song_dir=target,units=units,audio=audio,
+            source_identity=evidence['identity'],options=options,route_dir=route_dir,
+            deadline_at=deadline_at,expected_orders=expected)
+        if confirmations['status']!='observed':
+            return hold('source_confirmation',confirmations['issues'],{'confirmation':confirmations})
+    files={observation['receipt_path']:file_hash(observation['receipt_path'])}
+    for item in observation['unit_results']+confirmations['unit_results']:
+        state=Path(item['route_state_path']);files[str(state)]=file_hash(state)
+        accepted=state.parent/'accepted-result.json'
+        files[str(accepted)]=file_hash(accepted)
+    receipt={'version':1,'status':'accepted-source','original_reader_digest':digest(reader),
+        'before_identity':evidence['identity'],'delta':delta,'delta_digest':digest(delta),
+        'approved_source_order_digest':digest(delta['rebuilt']),
+        'coverage_scope':delta['coverage_scope'],'confirmation':confirmations,
+        'observation_fingerprint':observation['input_fingerprint'],'evidence_files':files,
+        'remaining_obligations':['timing','semantics','candidate-validation']}
+    identity=digest({'before':evidence['identity'],'reader':digest(reader),
+                     'observation':observation['input_fingerprint'],'delta':delta})
+    path=Path(route_dir)/'source-adoptions'/identity/'accepted-source-delta.json'
+    if path.is_file():
+        if json.loads(path.read_text())!=receipt:raise ValueError('accepted source receipt changed or no longer matches routed evidence')
+    else:atomic_json(path,receipt)
+    local=copy.copy(options)
+    local.source_requested_stages=[stage for stage in requested if stage not in {'audio-review','focused-audio-review'}]
+    local.source_coverage_requested=False
+    local._source_adoption_receipt={'path':str(path),'sha256':file_hash(path)}
+    return run_source_candidate(root=root,slug=slug,reader=reader,workspace=workspace,
+        route_dir=route_dir,options=local,deadline_at=deadline_at)
 
 
 def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, deadline_at):
@@ -246,19 +800,20 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         if type(coverage_requested) is not bool:
             raise ValueError('source coverage selection must be boolean')
         if requested.intersection({'audio-review', 'focused-audio-review'}) or coverage_requested:
-            if contract.load_data(target / 'data.js') != reader:
-                raise ValueError('workspace reader differs before source observation')
-            return observe_source_candidate(reader=reader, song_dir=target, original_song=song,
-                audio=audio, route_dir=route_dir, options=options, deadline_at=deadline_at)
+            return run_observed_source_candidate(root=root,slug=slug,reader=reader,workspace=workspace,
+                route_dir=route_dir,options=options,deadline_at=deadline_at)
         old_lines, old_glosses, old_translations = library.reader_evidence(reader)
-        audit = json.loads(original_audit.read_text())
-        timing_before = json.loads(original_timing.read_text())
+        declaration=getattr(options,'_source_adoption_receipt',None)
+        adoption=_checked_adoption_receipt(declaration,reader) if declaration is not None else None
+        audit = ({'packet':copy.deepcopy(adoption['delta']['rebuilt'])} if adoption
+                 else json.loads(original_audit.read_text()))
+        timing_before = (pipeline.read_packet(original_timing) or {}) if adoption else json.loads(original_timing.read_text())
         mapping_path = (getattr(options, 'source_reuse_maps', {}) or {}).get(slug)
         mapping = json.loads(Path(mapping_path).read_text()) if mapping_path else None
         source = pipeline.read_packet(song / '.transcription/source.json') or {}
         dependencies = {str(path.relative_to(root)): file_hash(path)
                         for path in [song / 'data.js', original_audit, original_timing, original_audio,
-                                     *sorted((root / 'data').glob('*.json'))]}
+                                     *sorted((root / 'data').glob('*.json'))] if path.is_file()}
         for path in [song / '.transcription/source.json', song / '.transcription/trim-applied.json',
                      song / '.transcription/pipeline/01-transcript.json', song / '.transcription/pipeline/song-packet.json']:
             if path.is_file(): dependencies[str(path.relative_to(root))] = file_hash(path)
@@ -269,6 +824,7 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         editorial_identity = ({editorial_unit: file_hash(editorial_paths[editorial_unit])}
                               if editorial_unit in editorial_paths else {})
         identity = digest({'version': VERSION, 'dependencies': dependencies, 'map': mapping,
+                           'source_adoption':declaration,
                            'editorial_adjudications': editorial_identity,
                            'requested_stages': getattr(options, 'source_requested_stages', []),
                            'confirmed_issues': getattr(options, 'source_confirmed_issues', []),
@@ -288,7 +844,7 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
                 raise ValueError('accepted source checkpoint workspace HTML drifted')
             if contract.audit_song(target)['status'] != 'ready':
                 raise ValueError('accepted source checkpoint workspace contract no longer ready')
-            assert_source_candidate(reader, saved['reader'], saved['evidence']['plan'], saved['evidence']['timing'])
+            verify_source_result_evidence(saved, reader)
             editorial_baselines.assert_english_preserved(slug, saved['reader']['SONG_LINES'], root=root)
             return saved
         # On a changed input do not reuse a previously mutated workspace.
@@ -301,16 +857,18 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
                     or mapping.get('original_audit_sha256') != file_hash(original_audit)
                     or mapping.get('rebuilt_audit_sha256') != hashlib.sha256((json.dumps(rebuilt, ensure_ascii=False, indent=2) + '\n').encode()).hexdigest()):
                 raise ValueError('reviewed source map input hashes changed')
-        plan = plan_source(reader, rebuilt, reviewed_map=mapping)
-        if slug in baselines and plan['new_target_ids']:
-            raise ValueError('locked_baseline_conflict: owner English population cannot be extended automatically')
+        plan = plan_source(reader, rebuilt, reviewed_map=mapping,
+                           accepted_delta=adoption['delta'] if adoption else None)
+        population_changed = {line['id'] for line in plan['lines']} != set(reader['SONG_LINES'])
+        if slug in baselines and population_changed:
+            raise ValueError('locked_baseline_conflict: owner English population cannot change automatically')
         # Stored human declarations also cannot be silently extended or rewritten.
         summary = pipeline.read_packet(song / '.transcription/pipeline/song-packet.json') or {}
         declarations = [obj[field] for obj in [reader.get('SONG_META', {}), source, summary, summary.get('job', {})]
                         if isinstance(obj, dict) for field in ['humanTranslation','human_translation','providedTranslation','provided_translation']
                         if obj.get(field) not in (None, '', False, '(none supplied)')]
-        if declarations and plan['new_target_ids']:
-            raise ValueError('locked_baseline_conflict: supplied human translation requires a reviewed extended mapping')
+        if declarations and population_changed:
+            raise ValueError('locked_baseline_conflict: supplied human translation requires a reviewed population mapping')
         metadata = copy.deepcopy(rebuilt.get('metadata', {}))
         metadata['languages'] = reader['SONG_META'].get('languages') or metadata.get('languages', [])
         normalized = copy.deepcopy(audit)
@@ -327,6 +885,10 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         evidence.update({'plan': plan, 'original_dependencies': dependencies,
                          'new_target_ids': plan['new_target_ids'], 'audio_sha256': file_hash(original_audio)})
         local = copy.copy(options)
+        if adoption:
+            # The selective timing consumer must validate this receipt and its
+            # old/new occurrence lineage; caller tests replace align only.
+            local.timing_source_adoption=copy.deepcopy(declaration)
         # Hash guards and whole original-line validation above authorize this map.
         local.timing_reviewed_source_map = copy.deepcopy(mapping) if mapping else None
         for name, value in {'force': False, 'refresh_timing': False, 'source_witness_audit': False,
@@ -341,6 +903,20 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         for name in ['01-transcript.json', '02-transcript-audit.json', '03-timing.json']:
             original = song / '.transcription/pipeline' / name
             if original.exists() and not (archive / name).exists(): shutil.copy2(original, archive / name)
+        if adoption:
+            archived_reader = archive / 'data.js'
+            archived_timing = archive / '03-timing.json'
+            if file_hash(archived_reader) != dependencies[str((song/'data.js').relative_to(root))]:
+                raise ValueError('source timing original reader archive changed')
+            prior_timing = None
+            if original_timing.is_file():
+                expected_timing = dependencies[str(original_timing.relative_to(root))]
+                if file_hash(archived_timing) != expected_timing:
+                    raise ValueError('source timing original measurement archive changed')
+                prior_timing = {'path':str(archived_timing),'sha256':expected_timing}
+            local.timing_source_adoption = {**copy.deepcopy(declaration),
+                'original_reader':{'path':str(archived_reader),'sha256':file_hash(archived_reader)},
+                'prior_timing':prior_timing}
         new = process_new_targets(target, plan, metadata, local, route_dir, deadline_at) if plan['new_target_ids'] else {'glosses': {'packet': {'glosses': []}}, 'translations': {'packet': {'translations': []}}}
         if plan['new_target_ids']:
             errors = fresh_target_errors(plan, metadata, new)
@@ -367,7 +943,7 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         pipeline.generate(target, job, source, normalized, timing, glosses, translations, write_catalogue_after=False)
         candidate = contract.load_data(target / 'data.js')
         candidate['SONG_META'] = copy.deepcopy(reader['SONG_META'])
-        candidate['SONG_LINES'].update(copy.deepcopy(reader['SONG_LINES']))
+        candidate['SONG_LINES'].update(copy.deepcopy(plan['reuse_by_id'] if adoption else reader['SONG_LINES']))
         assert_source_candidate(reader, candidate, plan, timing)
         # Native/English links of every new row are checked after actual rendering.
         library.reader_evidence(candidate)
@@ -382,6 +958,7 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         inspection = contract.audit_song(target)
         if inspection['status'] != 'ready': return hold('source_reader_contract', inspection)
         evidence.update({'timing': timing, 'contract': inspection,
+                         'source_adoption_receipt':declaration,
                          'candidate_html_sha256': file_hash(target / 'index.html'),
                          'new_semantic_artifacts': new if plan['new_target_ids'] else None})
         atomic_json(target / '.transcription/source-pass-derived.json',
@@ -824,7 +1401,8 @@ def _prepare_audio_observations(*, song_dir, units, audio, source_identity, dead
     return contracts, duration, {'record':witness_record,'snapshot':witness_snapshot}
 
 
-def review_audio_units(*, song_dir, units, audio, source_identity, options, route_dir, deadline_at):
+def review_audio_units(*, song_dir, units, audio, source_identity, options, route_dir, deadline_at,
+                       expected_orders=None):
     import bhakti_pipeline as pipeline
     import bhakti_library_pass as library
     import bhakti_model_routes as routes
@@ -833,12 +1411,17 @@ def review_audio_units(*, song_dir, units, audio, source_identity, options, rout
         audio=audio, source_identity=source_identity, deadline_at=deadline_at)
     witness_snapshot = witness['snapshot']
     import bhakti_source_cache_compat as compatibility
-    legacy_history = compatibility.index_history(route_dir, song_dir.name,
-        ledger_paths=getattr(options,'source_legacy_ledgers',()))
+    legacy_history = (compatibility.index_history(route_dir, song_dir.name,
+        ledger_paths=getattr(options,'source_legacy_ledgers',())) if expected_orders is None else None)
     observed=[];issues=[]
     for unit,draft,source_context,request in prepared:
         # The exact stage-owned request, not unrelated module bytes, owns reuse.
-        dependency=digest({'version':SOURCE_OBSERVATION_VERSION,'request':request,'witness':witness})
+        dependency_input={'version':SOURCE_OBSERVATION_VERSION,'request':request,'witness':witness}
+        if expected_orders is not None:
+            if unit['id'] not in expected_orders:
+                raise ValueError('confirmation lacks exact expected local source/order')
+            dependency_input['confirmation_expected_order']=expected_orders[unit['id']]
+        dependency=digest(dependency_input)
         fingerprint=digest({'unit':unit,'draft':draft,'source_identity':source_identity,'duration':duration,'dependency':dependency})
         def execute(context):
             local=library.route_options(options,context);local.source_witness_audit=False
@@ -847,8 +1430,18 @@ def review_audio_units(*, song_dir, units, audio, source_identity, options, rout
             raw={'packet':{'segmented':True,'source_first_witness':False,'segments':[{'segment':segment,'transcript':draft}]}}
             return pipeline.audit_long_transcript(attempt_song,raw,audio,local,
                 observation_context={'witness':witness_snapshot,'source_context':source_context})
+        def validate(result):
+            errors = _observation_errors(unit,result)
+            if not errors and expected_orders is not None:
+                packet = result['segment_audits'][0]['audit']['packet']
+                by_id = {row['id']:row for row in packet['lines']}
+                actual = [list(_source_key(by_id[event['line_id']])) for event in packet['performance_order']]
+                if actual != expected_orders[unit['id']]:
+                    errors.append({'kind':'source_confirmation_disagreement',
+                                   'detail':'Independent audio confirmation differs from the complete proposed local source/order'})
+            return errors
         try:
-            reused = compatibility.lookup(history=legacy_history,
+            reused = None if expected_orders is not None else compatibility.lookup(history=legacy_history,
                 unit_id=song_dir.name+':source-observation:'+unit['id'],unit=unit,draft=draft,
                 source_context=source_context,source_identity=source_identity,duration=duration,
                 request=request,witness=witness,audio=audio,route_dir=route_dir,
@@ -861,9 +1454,9 @@ def review_audio_units(*, song_dir, units, audio, source_identity, options, rout
                 observed.append({'unit':unit,**reused})
                 continue
             result=routes.run_unit(route_dir,song_dir.name+':source-observation:'+unit['id'],fingerprint,execute,
-                                  lambda result:_observation_errors(unit,result),deadline_at=deadline_at,
+                                  validate,deadline_at=deadline_at,
                                   dependency_fingerprint=dependency,base_model=options.model,pro_model=options.pro_model)
-            errors=_observation_errors(unit,result)
+            errors=validate(result)
             if errors:raise routes.RunFatal('cached source observation no longer validates')
             state_path = routes.unit_state_path(route_dir, song_dir.name+':source-observation:'+unit['id'],
                 fingerprint, dependency_fingerprint=dependency, base_model=options.model, pro_model=options.pro_model)

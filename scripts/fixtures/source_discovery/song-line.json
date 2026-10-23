@@ -1,0 +1,251 @@
+{
+  "id": "refrain-jai-bajarang",
+  "source_text": "जय जय जय बजरंग बली",
+  "roman": "jaya jaya jaya bajaraṅga balī",
+  "kind": "refrain",
+  "performed_context": [
+    {
+      "before": [
+        {
+          "id": "intro-doha-chorus-3",
+          "source_text": "पवनतनय संतन हितकारी",
+          "roman": "pavanatanaya santana hitakārī"
+        },
+        {
+          "id": "intro-doha-chorus-4",
+          "source_text": "हृदय विराजत अवध बिहारी",
+          "roman": "hṛdaya virājata avadha bihārī"
+        }
+      ],
+      "after": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ],
+      "after": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ],
+      "after": [
+        {
+          "id": "verse1-line-1",
+          "source_text": "साधु संत के हनुमत प्यारे",
+          "roman": "sādhu santa ke hanumata pyāre"
+        },
+        {
+          "id": "verse1-line-2",
+          "source_text": "भक्त हृदय श्री राम दुलारे",
+          "roman": "bhakta hṛdaya śrī rāma dulāre"
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "id": "verse1-line-5",
+          "source_text": "तुम्हरी कृपा से हनुमत बीरा",
+          "roman": "tumharī kṛpā se hanumata bīrā"
+        },
+        {
+          "id": "verse1-line-6",
+          "source_text": "सगरी बिपत टली",
+          "roman": "sagarī bipata ṭalī"
+        }
+      ],
+      "after": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ],
+      "after": [
+        {
+          "id": "chant-jai-jai-shree",
+          "source_text": "जय जय श्री हनुमान",
+          "roman": "jaya jaya śrī hanumāna"
+        },
+        {
+          "id": "refrain-jai-bajarang",
+          "source_text": "जय जय जय बजरंग बली",
+          "roman": "jaya jaya jaya bajaraṅga balī"
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "id": "refrain-jai-bajarang",
+          "source_text": "जय जय जय बजरंग बली",
+          "roman": "jaya jaya jaya bajaraṅga balī"
+        },
+        {
+          "id": "chant-jai-jai-shree",
+          "source_text": "जय जय श्री हनुमान",
+          "roman": "jaya jaya śrī hanumāna"
+        }
+      ],
+      "after": [
+        {
+          "id": "verse2-line-1",
+          "source_text": "तुम्हरी शरण महा सुखदाई",
+          "roman": "tumharī śaraṇa mahā sukhadāī"
+        },
+        {
+          "id": "verse2-line-2",
+          "source_text": "जय जय जय हनुमान गुसाईं",
+          "roman": "jaya jaya jaya hanumāna gusāī̃"
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "id": "verse2-line-5",
+          "source_text": "शिव शक्ती की तुम्हरे हिरदय",
+          "roman": "śiva śaktī kī tumhare hiradaya"
+        },
+        {
+          "id": "verse2-line-6",
+          "source_text": "ज्योत महान जली",
+          "roman": "jyota mahāna jalī"
+        }
+      ],
+      "after": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "id": "refrain-mahavir-1",
+          "source_text": "महावीर हनुमान गुसाईं",
+          "roman": "mahāvīra hanumāna gusāī̃"
+        },
+        {
+          "id": "refrain-tumhari-yaad",
+          "source_text": "तुम्हरी याद भली",
+          "roman": "tumharī yāda bhalī"
+        }
+      ],
+      "after": [
+        {
+          "id": "chant-jai-jai-shree",
+          "source_text": "जय जय श्री हनुमान",
+          "roman": "jaya jaya śrī hanumāna"
+        }
+      ]
+    }
+  ],
+  "sourceWords": [
+    {
+      "text": "जय",
+      "wordIndices": [
+        0
+      ]
+    },
+    {
+      "text": "जय",
+      "wordIndices": [
+        1
+      ]
+    },
+    {
+      "text": "जय",
+      "wordIndices": [
+        2
+      ]
+    },
+    {
+      "text": "बजरंग",
+      "wordIndices": [
+        3
+      ]
+    },
+    {
+      "text": "बली",
+      "wordIndices": [
+        4
+      ]
+    }
+  ],
+  "lexical_tokens": [
+    "jaya",
+    "jaya",
+    "jaya",
+    "bajaraṅga",
+    "balī"
+  ],
+  "sourceLanguage": "hi"
+}

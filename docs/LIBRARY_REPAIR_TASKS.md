@@ -16,9 +16,16 @@ resume and dictionary updates, separately from current repair objections; 108
 combined tests pass on the working pipeline. This retrieves definitions for
 proposed English words and already-bound source entries. It does not yet discover
 English words through embeddings or missing source dictionary forms; those
-callers remain required before qualification. The private short-scope source/timing caller now passes
-actual joined storage/router/FFmpeg tests, including prior-measurement reuse;
-long scopes, missing-source bootstrap and historical crop adoption remain open.
+callers remain required before qualification. Short-scope source correction and
+selective timing are now integrated: 146 combined source, timing, dictionary
+discovery and compatibility tests pass with actual storage/router/FFmpeg calls
+and synthetic provider responses. Changed source requires an independent hearing;
+only unresolved/new timing occurrences are measured, and accepted old measurements
+can be reused on subsequent repairs. Automatic support on the fresh-source
+semantic caller, long scopes, missing-source bootstrap and historical crop
+adoption remain open. The source-discovery parser/acquisition primitive is present
+with real Platts witnesses and shared request bounds; its model-facing caller is
+still being integrated.
 Next: close these caller defects, connect the accepted slices, then inspect bounded
 representative song outputs and their cost before scaling. The existing benchmark
 exposed translation weaknesses and does not qualify a broad translation pass.

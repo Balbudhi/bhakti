@@ -572,7 +572,7 @@ def execute_song(root: Path, row: dict, state_dir: Path, options, deadline_at: f
     if not isinstance(source_flags, dict) or type(source_flags.get('coverage_requested', False)) is not bool:
         raise ValueError('source selection flags and coverage request are invalid')
     if source_stages.intersection(row['plannedStages']) or source_flags.get('coverage_requested', False):
-        from bhakti_library_source_pass import run_source_candidate
+        from bhakti_library_source_pass import run_source_candidate, verify_source_result_evidence
         checkpoint_path = state_dir / 'songs' / slug / 'source-checkpoint.json'
         checkpoint = read_json(checkpoint_path)
         if checkpoint:
@@ -580,6 +580,27 @@ def execute_song(root: Path, row: dict, state_dir: Path, options, deadline_at: f
                     or checkpoint.get('sha256') != prepare.json_digest(checkpoint.get('result'))):
                 raise routes.RunFatal('source checkpoint input or content identity changed')
             source_result = checkpoint['result']
+            try:
+                verify_source_result_evidence(source_result,before)
+                data_path=workspace/'songs'/slug/'data.js'
+                page_path=workspace/'songs'/slug/'index.html'
+                current=prepare.load_javascript(data_path.read_bytes())
+                if current==source_result['reader']:
+                    if file_hash(page_path)!=source_result['evidence'].get('candidate_html_sha256'):
+                        raise ValueError('source checkpoint workspace HTML changed')
+                else:
+                    # A later accepted semantic repair may legitimately replace
+                    # this source-only reader. Bind that exact final receipt;
+                    # arbitrary workspace edits cannot masquerade as its output.
+                    final=read_json(state_dir/'songs'/slug/'result.json')
+                    if (not isinstance(final,dict) or final.get('status')!='accepted'
+                            or final.get('source')!=source_result
+                            or final.get('candidateReaderSha256')!=file_hash(data_path)
+                            or final.get('candidatePageSha256')!=file_hash(page_path)):
+                        raise ValueError('source checkpoint workspace reader changed without an accepted final receipt')
+            except (ValueError,KeyError,OSError) as exc:
+                return {'status':'unresolved','publicationEligible':False,'source':source_result,
+                        'issues':[{'kind':'source_checkpoint_drift','detail':str(exc)}]}
         else:
             source_options = copy.copy(options); source_options.timing_deadline_at = deadline_at
             source_options.source_requested_stages = row['plannedStages']

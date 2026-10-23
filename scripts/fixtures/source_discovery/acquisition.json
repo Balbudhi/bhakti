@@ -1,0 +1,23 @@
+[
+  {
+    "query": "बजरंग",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AC%E0%A4%9C%E0%A4%B0%E0%A4%82%E0%A4%97&searchhws=yes&matchtype=exact",
+    "path": "witnesses/c8550556717435fd9cf1d3737eb3ad7aba59a92b71e56b140062b8c1e98b90bc.html",
+    "sha256": "c8550556717435fd9cf1d3737eb3ad7aba59a92b71e56b140062b8c1e98b90bc",
+    "status": "fetched"
+  },
+  {
+    "query": "वज्र",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%B5%E0%A4%9C%E0%A5%8D%E0%A4%B0&searchhws=yes&matchtype=exact",
+    "path": "witnesses/a7a547149b8ec4a55da03a1e5a14bd5c2c6363c1e93306e56360492fd8679148.html",
+    "sha256": "a7a547149b8ec4a55da03a1e5a14bd5c2c6363c1e93306e56360492fd8679148",
+    "status": "fetched"
+  },
+  {
+    "query": "bajra",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=bajra&searchhws=yes&matchtype=exact",
+    "path": "witnesses/b07130e325aafe7ff70cbd7020499155871cc29ecdab7a94db500e59cdc5387a.html",
+    "sha256": "b07130e325aafe7ff70cbd7020499155871cc29ecdab7a94db500e59cdc5387a",
+    "status": "fetched"
+  }
+]
