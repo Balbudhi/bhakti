@@ -224,6 +224,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
         raise
     started=time.monotonic();worker=None
     class AttemptDeadline(RuntimeError):pass
+    class RecordedFailure(RuntimeError):pass
     def remaining():
         try:return _remaining_timeout(timeout,deadline_at)
         except RuntimeError as exc:raise AttemptDeadline(str(exc)) from exc
@@ -247,8 +248,8 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
             raise model_routes.UnitTransportFailure(category,request_id=request_id,worker_terminated=terminated,detail=detail)
         _bounded_update(path,budget,request_id,block=True,status=status,error=detail,
                         worker_terminated=terminated,elapsed_seconds=round(time.monotonic()-started,3))
-        if status=='unknown-outcome':raise RuntimeError('bounded API hard wall deadline exceeded; reservation retained, run blocked')
-        raise RuntimeError('bounded API response invalid; evidence retained and run blocked')
+        retained = 'reservation retained' if status=='unknown-outcome' else 'evidence retained'
+        raise RecordedFailure(f'bounded API {detail}; {retained}, run blocked')
     try:
         _private_json(artifacts/(request_id+'.request.json'),evidence)
         with _locked_run_ledger(path,budget) as ledger:
@@ -279,7 +280,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
         if unit_context and result.get('model') and result['model']!=payload['model']:
             raise model_routes.RunFatal('resolved model differs from routed model')
         return result,(path,budget,request_id)
-    except model_routes.UnitTransportFailure:raise
+    except (model_routes.UnitTransportFailure,RecordedFailure):raise
     except AttemptDeadline:
         if worker is None:
             scoped_failure('attempt-deadline','expired-before-dispatch','attempt deadline expired before launch')

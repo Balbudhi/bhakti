@@ -1,0 +1,10 @@
+[
+  {
+    "offset": 19769,
+    "raw": "00019769 00 s 02 handy 0 ready_to_hand(p) 0 002 & 00019169 a 0000 + 04726275 n 0101 | easy to reach; \"found a handy spot for the can opener\"  \n"
+  },
+  {
+    "offset": 280484,
+    "raw": "00280484 00 s 0a aglitter(p) 0 coruscant 0 fulgid 0 glinting 0 glistering 0 glittering 0 glittery 0 scintillant 0 scintillating 0 sparkly 0 007 & 00279417 a 0000 + 07427268 n 0a02 + 02772348 v 0802 + 02770723 v 0803 + 07427268 n 0701 + 04960121 n 0701 + 02772348 v 0203 | having brief brilliant points or flashes of light; \"bugle beads all aglitter\"; \"glinting eyes\"; \"glinting water\"; \"his glittering eyes were cold and malevolent\"; \"shop window full of glittering Christmas trees\"; \"glittery costume jewelry\"; \"scintillant mica\"; \"the scintillating stars\"; \"a dress with sparkly sequins\"; \"`glistering' is an archaic term\"  \n"
+  }
+]

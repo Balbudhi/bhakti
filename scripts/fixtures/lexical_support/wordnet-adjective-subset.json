@@ -1,0 +1,62 @@
+{
+  "edition": "3.1",
+  "mirror_package": "wordnet-db@3.1.14",
+  "data_source": "https://unpkg.com/wordnet-db@3.1.14/dict/data.adj",
+  "index_source": "https://unpkg.com/wordnet-db@3.1.14/dict/index.adj",
+  "captured_prefix_bytes": 3000000,
+  "captured_prefix_sha256": "6ddaed7c56b37a633ca123ea1be5e7da0547e47d1b4153b471c7bd6b1e48c6c2",
+  "index_sha256": "7d2b4d4037f0571ca309ce2ebadbe860a1607d494a70cd40f9bd61bc25a57016",
+  "license_header": "  1 This software and database is being provided to you, the LICENSEE, by  \n  2 Princeton University under the following license.  By obtaining, using  \n  3 and/or copying this software and database, you agree that you have  \n  4 read, understood, and will comply with these terms and conditions.:  \n  5   \n  6 Permission to use, copy, modify and distribute this software and  \n  7 database and its documentation for any purpose and without fee or  \n  8 royalty is hereby granted, provided that you agree to comply with  \n  9 the following copyright notice and statements, including the disclaimer,  \n  10 and that the same appear on ALL copies of the software, database and  \n  11 documentation, including modifications that you make for internal  \n  12 use or for distribution.  \n  13   \n  14 WordNet 3.1 Copyright 2011 by Princeton University.  All rights reserved.  \n  15   \n  16 THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON  \n  17 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR  \n  18 IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON  \n  19 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-  \n  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  \n  21 OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT  \n  22 INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR  \n  23 OTHER RIGHTS.  \n  24   \n  25 The name of Princeton University or Princeton may not be used in  \n  26 advertising or publicity pertaining to distribution of the software  \n  27 and/or database.  Title to copyright in this software, database and  \n  28 any associated documentation shall at all times remain with  \n  29 Princeton University and LICENSEE agrees to preserve same.  \n",
+  "index_rows": [
+    "adamantine a 3 2 & \\ 3 0 02613736 01154749 01028427  \n",
+    "affectionate a 1 2 & + 1 1 01467633  \n",
+    "biddable a 1 2 & + 1 0 01617155  \n",
+    "fond a 4 2 & + 4 3 01467633 01467366 01295806 02582341  \n",
+    "governable a 1 1 & 1 0 01478085  \n"
+  ],
+  "data_rows": [
+    {
+      "offset": 1028427,
+      "raw": "01028427 00 s 04 adamant 0 adamantine 0 inexorable 0 intransigent 0 005 & 01028212 a 0000 + 04870728 n 0401 + 04870728 n 0402 + 04838668 n 0303 + 04871024 n 0101 | impervious to pleas, persuasion, requests, reason; \"he is adamant in his refusal to change his mind\"; \"Cynthia was inexorable; she would have none of him\"- W.Churchill; \"an intransigent conservative opposed to every liberal tendency\"  \n"
+    },
+    {
+      "offset": 1154749,
+      "raw": "01154749 00 s 01 adamantine 0 001 & 01154418 a 0000 | having the hardness of a diamond  \n"
+    },
+    {
+      "offset": 1295806,
+      "raw": "01295806 00 s 02 fond(p) 0 partial(p) 0 002 & 01295251 a 0000 + 07512937 n 0101 | (followed by `of' or `to') having a strong preference or liking for; \"fond of chocolate\"; \"partial to horror movies\"  \n"
+    },
+    {
+      "offset": 1467366,
+      "raw": "01467366 00 s 03 adoring 0 doting 0 fond 1 002 & 01466898 a 0000 + 04634357 n 0302 | extravagantly or foolishly loving and indulgent; \"adoring grandparents\"; \"deceiving her preoccupied and doting husband with a young captain\"; \"hopelessly spoiled by a fond mother\"  \n"
+    },
+    {
+      "offset": 1467633,
+      "raw": "01467633 00 s 04 affectionate 0 fond 2 lovesome 0 tender 0 007 & 01466898 a 0000 + 07560035 n 0404 + 04634598 n 0401 + 07560035 n 0203 + 07560035 n 0101 + 07560035 n 0102 + 04634357 n 0101 | having or displaying warmth or affection; \"affectionate children\"; \"a fond embrace\"; \"fond of his nephew\"; \"a tender glance\"  \n"
+    },
+    {
+      "offset": 1478085,
+      "raw": "01478085 00 s 02 controllable 0 governable 0 001 & 01477656 a 0000 | capable of being controlled  \n"
+    },
+    {
+      "offset": 1617155,
+      "raw": "01617155 00 s 02 acquiescent 0 biddable 0 005 & 01616581 a 0000 + 00761702 v 0201 + 00795242 v 0202 + 07190226 n 0102 + 00805801 v 0103 | willing to carry out the orders or wishes of another without protest; \"too acquiescent to challenge authority\"; \"a gentle, biddable soul\"  \n"
+    },
+    {
+      "offset": 2582341,
+      "raw": "02582341 00 s 01 fond 0 001 & 02580838 a 0000 | absurd or silly because unlikely; \"fond hopes of becoming President\"; \"fond fancies\"  \n"
+    },
+    {
+      "offset": 2613736,
+      "raw": "02613736 01 a 01 adamantine 0 001 \\ 14858733 n 0102 | consisting of or having the hardness of adamant  \n"
+    }
+  ],
+  "complete_for_lemmas": [
+    "biddable",
+    "governable",
+    "adamantine",
+    "affectionate",
+    "fond"
+  ]
+}

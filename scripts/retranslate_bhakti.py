@@ -33,6 +33,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("songs", nargs="+", help="Song slug(s), or 'all'")
     parser.add_argument("--workers", type=int, default=3)
+    parser.add_argument("--lexical-support", type=Path, help="Private witnessed lexical support packet")
     parser.add_argument("--model", default=gemini.MODEL)
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--reuse-glosses", action="store_true",

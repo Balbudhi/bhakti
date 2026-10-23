@@ -596,6 +596,7 @@ def plan_audio_review(reader, *, source_evidence, flags, duration_seconds):
 # Observations retain audio evidence; only the later source-delta consumer may
 # accept a mutation or establish whole-recording coverage.
 SOURCE_OBSERVATION_VERSION = 1
+SOURCE_ROUTING_VERSION = 1
 
 
 def collect_source_evidence(song_dir, reader, *, flags, coverage_requested):
@@ -754,11 +755,9 @@ def _source_observation_context(unit):
     return {'hypotheses':projected,'prior_source_observations':prior}
 
 
-def review_audio_units(*, song_dir, units, audio, source_identity, options, route_dir, deadline_at):
+def _prepare_audio_observations(*, song_dir, units, audio, source_identity, deadline_at):
     import re
     import bhakti_pipeline as pipeline
-    import bhakti_library_pass as library
-    import bhakti_model_routes as routes
     song_dir, audio = Path(song_dir), Path(audio)
     if not math.isfinite(deadline_at) or deadline_at <= time.time():
         raise ValueError('source observation deadline exhausted')
@@ -815,11 +814,31 @@ def review_audio_units(*, song_dir, units, audio, source_identity, options, rout
                     or not isinstance(row.get('text'),str) or not row['text'].strip() or 'page' not in row
                     for row in witness_snapshot['lines'])):
             raise ValueError('registered source witness snapshot is empty, malformed, or mismatched')
-    witness_identity={'record':witness_record,'snapshot':witness_snapshot}
-    dependency=digest({'version':SOURCE_OBSERVATION_VERSION,'pipeline_sha256':file_hash(pipeline.__file__),
-                       'adapter_sha256':file_hash(__file__),'witness':witness_identity})
+    contracts = []
+    for unit, draft, source_context in prepared:
+        segment = {'index':unit['segment_index'], **{k:unit[k] for k in
+            ('clip_start','clip_end','core_start','core_end')}}
+        request = pipeline.audio_audit_request_contract(draft, segment,
+            witness=witness_snapshot, source_context=source_context)
+        contracts.append((unit, draft, source_context, request))
+    return contracts, duration, {'record':witness_record,'snapshot':witness_snapshot}
+
+
+def review_audio_units(*, song_dir, units, audio, source_identity, options, route_dir, deadline_at):
+    import bhakti_pipeline as pipeline
+    import bhakti_library_pass as library
+    import bhakti_model_routes as routes
+    song_dir, audio = Path(song_dir), Path(audio)
+    prepared, duration, witness = _prepare_audio_observations(song_dir=song_dir, units=units,
+        audio=audio, source_identity=source_identity, deadline_at=deadline_at)
+    witness_snapshot = witness['snapshot']
+    import bhakti_source_cache_compat as compatibility
+    legacy_history = compatibility.index_history(route_dir, song_dir.name,
+        ledger_paths=getattr(options,'source_legacy_ledgers',()))
     observed=[];issues=[]
-    for unit,draft,source_context in prepared:
+    for unit,draft,source_context,request in prepared:
+        # The exact stage-owned request, not unrelated module bytes, owns reuse.
+        dependency=digest({'version':SOURCE_OBSERVATION_VERSION,'request':request,'witness':witness})
         fingerprint=digest({'unit':unit,'draft':draft,'source_identity':source_identity,'duration':duration,'dependency':dependency})
         def execute(context):
             local=library.route_options(options,context);local.source_witness_audit=False
@@ -829,6 +848,18 @@ def review_audio_units(*, song_dir, units, audio, source_identity, options, rout
             return pipeline.audit_long_transcript(attempt_song,raw,audio,local,
                 observation_context={'witness':witness_snapshot,'source_context':source_context})
         try:
+            reused = compatibility.lookup(history=legacy_history,
+                unit_id=song_dir.name+':source-observation:'+unit['id'],unit=unit,draft=draft,
+                source_context=source_context,source_identity=source_identity,duration=duration,
+                request=request,witness=witness,audio=audio,route_dir=route_dir,
+                base_model=options.model,pro_model=options.pro_model,
+                current_fingerprint=fingerprint,current_dependency=dependency,
+                ledger_paths=getattr(options,'source_legacy_ledgers',()))
+            if reused is not None:
+                if _observation_errors(unit,reused['result']):
+                    raise compatibility.LegacyHold('legacy observation no longer validates')
+                observed.append({'unit':unit,**reused})
+                continue
             result=routes.run_unit(route_dir,song_dir.name+':source-observation:'+unit['id'],fingerprint,execute,
                                   lambda result:_observation_errors(unit,result),deadline_at=deadline_at,
                                   dependency_fingerprint=dependency,base_model=options.model,pro_model=options.pro_model)
@@ -942,24 +973,15 @@ def observe_source_candidate(*, reader, song_dir, original_song, audio, route_di
     evidence['disagreements'] = copy.deepcopy(flags.get('disagreements', []))
     plan = plan_audio_review(reader, source_evidence=evidence, flags=flags,
                              duration_seconds=evidence['duration_seconds'])
-    witness_record = pipeline.source_witness.record_for_slug(song_dir.name)
-    witness_path = pipeline.source_witness.cache_path(song_dir)
-    witness = {'record':witness_record,'sha256':file_hash(witness_path) if witness_path.is_file() else None}
-    identity = digest({'version':1,'source':evidence['identity'], 'duration':evidence['duration_seconds'],
-        'intervals':evidence['routing_intervals'],'flags':flags,'coverage_requested':coverage,
-        'artifacts':{name:value['sha256'] if value else None for name,value in evidence['artifacts'].items()},
-        'witness':witness,'models':{'base':options.model,'pro':options.pro_model},
-        'adapter':file_hash(__file__),'pipeline':file_hash(pipeline.__file__)})
-    directory = route_dir/'source-observations'/identity
-    receipt_path = directory/(song_dir.name+'-source-observed.json')
-    saved = json.loads(receipt_path.read_text()) if receipt_path.is_file() else None
-    if saved is not None and (not isinstance(saved,dict) or saved.get('version') != 1
-            or saved.get('input_fingerprint') != identity or saved.get('result_digest') != digest(saved.get('result'))):
-        raise ValueError('source observation receipt identity/digest changed')
+    routing_identity = digest({'version':SOURCE_ROUTING_VERSION,'source':evidence['identity'],
+        'duration':evidence['duration_seconds'],'intervals':evidence['routing_intervals'],
+        'flags':flags,'coverage_requested':coverage,
+        'artifacts':{name:value['sha256'] if value else None for name,value in evidence['artifacts'].items()}})
+    directory = route_dir/'source-observations'/routing_identity
     plan_path = directory/'routing-plan.json'
     stored_plan = json.loads(plan_path.read_text()) if plan_path.is_file() else None
     if stored_plan is not None:
-        if (not isinstance(stored_plan,dict) or stored_plan.get('input_fingerprint') != identity
+        if (not isinstance(stored_plan,dict) or stored_plan.get('input_fingerprint') != routing_identity
                 or stored_plan.get('digest') != digest(stored_plan.get('units'))):
             raise ValueError('source routing plan identity/digest changed')
         units = stored_plan['units']
@@ -977,11 +999,21 @@ def observe_source_candidate(*, reader, song_dir, original_song, audio, route_di
             units = partition_source_plan(reader,plan,evidence,segments=segments)
         else:
             units = materialize_source_units(plan,evidence,duration_seconds=evidence['duration_seconds'])
-        record = {'input_fingerprint':identity,'units':units,'digest':digest(units)}
+        record = {'input_fingerprint':routing_identity,'units':units,'digest':digest(units)}
         if segments is not None:record['segments']=segments
         atomic_json(plan_path,record)
     if not units:
         raise ValueError('explicit source observation request has no audio units')
+    prepared, duration, witness = _prepare_audio_observations(song_dir=song_dir, units=units,
+        audio=audio, source_identity=evidence['identity'], deadline_at=deadline_at)
+    identity = digest({'routing_identity':routing_identity,'version':SOURCE_OBSERVATION_VERSION,
+        'requests':[{'unit':unit,'request':request} for unit,_,_,request in prepared],
+        'witness':witness,'models':{'base':options.model,'pro':options.pro_model}})
+    receipt_path = directory/identity/(song_dir.name+'-source-observed.json')
+    saved = json.loads(receipt_path.read_text()) if receipt_path.is_file() else None
+    if saved is not None and (not isinstance(saved,dict) or saved.get('version') != 1
+            or saved.get('input_fingerprint') != identity or saved.get('result_digest') != digest(saved.get('result'))):
+        raise ValueError('source observation receipt identity/digest changed')
     # Always enter the existing router to verify all candidate digests. Successful
     # units return before FFmpeg/provider; a receipt is never a substitute for them.
     if saved is not None:
@@ -998,7 +1030,9 @@ def observe_source_candidate(*, reader, song_dir, original_song, audio, route_di
               'remaining_obligations':['source-adjudication','coverage','timing']}
     if saved is not None and saved['result'] != result:
         raise ValueError('source observation receipt no longer matches routed evidence')
-    atomic_json(receipt_path,{'version':1,'input_fingerprint':identity,'result':result,'result_digest':digest(result)})
+    if saved is None:
+        atomic_json(receipt_path,{'version':1,'input_fingerprint':identity,'result':result,'result_digest':digest(result),
+            'code_provenance':{'adapter_sha256':file_hash(__file__),'pipeline_sha256':file_hash(pipeline.__file__)}})
     return {'status':'unresolved','reader':reader,'source_changed':False,'publicationEligible':False,
         'evidence':{'audio_review':{**result,'receipt_path':str(receipt_path)}},
         'issues':[{'kind':'source_observation_only',

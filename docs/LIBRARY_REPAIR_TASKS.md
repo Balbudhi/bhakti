@@ -8,14 +8,28 @@ it to repair the published library and add the identified backlog. The owner's
 latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
-Current step: implement and review the independently specified boundary,
-benchmark and lexical-evidence changes; finish the existing-source adoption
-design. Boundary application is being checked privately, and independent review
-found benchmark resume/cache defects that must be fixed before paid execution.
-Next: integrate the reviewed changes, run a bounded representative benchmark,
-independently read its outputs, then scale only the qualified operations. Broad
-paid processing has not restarted. Earlier uncommitted content changes remain
+Current step: qualify the integrated lexical-evidence and historical
+audio-cache compatibility changes; complete automatic lexical lookup production,
+bounded intake callers and selective timing recovery. The protected-reference
+benchmark has run and exposed translation weaknesses; its outputs do not yet
+qualify a broad translation pass. The source-adoption caller is implemented
+privately, but its timing boundary still uses a substitute in caller tests.
+Next: connect those actual callers, verify recovery without duplicate charges,
+and rerun only the affected representative cases before scaling qualified
+operations. Broad paid processing has not restarted. Uncommitted changes remain
 separate from completion or deployment claims.
+
+The owner reconfirmed this full goal and requested an exhaustive task list on
+23 October. The existing goal remains active; this document is the maintained
+list, rather than a second competing plan. The immediate deliverable is the
+integrated runnable workflow, followed by actual library and backlog outcomes.
+
+Latest sequencing correction: finish and qualify the connected workflow before
+further song-content releases. Keep representative candidates private, inspect
+their actual quality and cost, repair the demonstrated failures, and only then
+scale the qualified process to the library and backlog. Separately reviewed
+manual song corrections do not satisfy pipeline qualification. Existing owner
+English remains protected throughout. This changes execution order, not scope.
 
 ### Verified progress — 23 October 2026
 
@@ -55,6 +69,30 @@ guard against cropping audio while retaining old transcript/timing caches.
 Source-cache migration must reuse proven compatible historical requests or hold
 unprovable history without silently paying again. Lexical evidence delivery is
 implemented privately, but the automatic lookup-query producer remains required.
+Independent review has now accepted both the lexical-support patch and the
+historical audio-cache migration patch. The latter closes three reproduced
+duplicate-payment/compatibility defects; neither acceptance establishes acoustic
+or translation quality. Source adoption has passed actual library-caller tests,
+but selective timing execution is still required before full-path qualification.
+
+Integration checkpoint: lexical support and historical audio-cache compatibility
+are now in the working production callers. Their 29 lexical and 19 migration
+tests pass, including sentence-initial English capitalization. A real child-process
+regression also verifies that an unreturned response retains unknown-outcome,
+its reservation and replay block instead of being relabeled invalid JSON.
+The broader caller run found four pre-existing semantic-cache adoption failures
+and one stale context assertion, reproduced on the prior committed baseline.
+The cache bug needlessly reconstructs already accepted English because adoption
+uses an older fingerprint recipe; its repair must include current lexical evidence
+identity. Broad paid processing remains stopped until the affected reuse path is
+fixed. No new provider spending was incurred in this integration checkpoint.
+
+Published `a3366b3f`: two source-word mapping corrections in Aruṇācala line 007.
+Exact comparison proves every other reader field, including owner English and
+timings, unchanged. Desktop and 390px popup checks show the corrected Tamil spans
+link to “why did You cause me to remember?” and “now · who.” Deployment verification
+is pending. The separate UI owner has committed its changes in `dbb69c32`;
+UI completion claims continue to use that lane's own verification record.
 
 ### Required task list
 
@@ -126,6 +164,14 @@ implemented privately, but the automatic lookup-query producer remains required.
   and English-only defects leave audio intact. Review changes, not just JSON
   validity. Preserve existing good and supplied translations. Record actual
   reviewed coverage and unresolved items instead of claiming automatic perfection.
+- [ ] Prioritize the reported failures explicitly: recent Gurbāṇī/Guru additions
+  and inconsistent Hari usage; Kabīr lyrics and omissions; Pattā Bolā Vṛkṣa Se,
+  Rehnā Nahī̃ Isa Desa and the other implicated Shujaat Khan recordings; awkward
+  recent translations; missing words, clipped lines and broken source-script or
+  transliteration symbols. Distinguish audible clipping from a reader-layout
+  problem and repair the responsible stage. Keep the known good garment/Koī,
+  Vaishno Devi and Ramana reference translations protected, resolving titles to
+  actual catalogue entries instead of creating duplicate baselines.
 - [ ] Finish minimal content-derived tags and consistent names, especially Hari,
   Gurbāṇī, Rāma/Kṛṣṇa/Viṣṇu, Guru and Nirguṇa; remove album-inherited Sāī tags when
   unsupported. Do not add redundant deity-name tags. Maintain verified Gurū Granth
@@ -135,6 +181,11 @@ implemented privately, but the automatic lookup-query producer remains required.
   authorized singers. Resolve ambiguous titles/recordings from saved intake
   evidence; avoid duplicate intake and unreviewed uploads. Apply the same quality
   process and publish accepted results without routine approval requests.
+  Reconcile the saved manifests and collection ledger with the owner's spoken
+  title clues (including “Thambam,” “Thadiyal,” Vishnu and “ALV”) before assigning
+  identities. Account for prepared Brahmam Okkate, Harivarasanam, Jagadoddhārana,
+  Uyarvara Uyar Nalam and the other recorded additions individually; a local song
+  directory is not evidence of complete publication or playable deployed audio.
 - [ ] Finish the requested reader/search/player checks: compact tag rows, poets
   above singers, correct mobile selection, singer filtering, play next/add to end,
   clear upcoming, and preserved/replayable history. Verify rendering, word links
@@ -146,16 +197,26 @@ implemented privately, but the automatic lookup-query producer remains required.
   unresolved cases and backlog. Use bounded calls/time/money, shared API limits,
   useful parallelism and dependency-specific caches. Never reset a failed run's
   spending or invalidate audio because an unrelated English prompt changed.
+- [ ] Keep provider/model documentation synchronized with actual qualification.
+  OpenRouter's established Gemini Flash is the current audio/text baseline;
+  Together is an explicit text-only option. Compare available alternatives on
+  actual source coverage, translation quality and total cost before switching.
+  Use Pro for unresolved units within the run allowance, with recorded reasons;
+  never describe a spending cap as the observed price of one song.
 
 ### Parallel ownership and integration
 
-Parallel assignments cover boundary classification and its actual caller tests
-(`trim_design`); traditional/English lexical evidence and embedding research
-(`lexical_research`); protected-reference benchmark repair (`benchmark_design`);
-and existing-source adoption plus independent benchmark review
-(`source_adoption_design`). They prepare isolated changes and preserve the
-existing working tree. The lead owns the shared pipeline interfaces, design/test
-review, integration, experiment budgets, independent output reading and
+Parallel assignments cover boundary classification and bounded intake callers
+(`trim_design`); traditional/English lexical evidence, automatic retrieval and
+embedding research (`lexical_research`); source adoption and selective timing
+(`source_adoption_design`); independent engineering review (`benchmark_design`);
+cache migration and content release evidence (`content_release_review`); and
+independent reading of actual generated translations (`live_translation_review`).
+These are work lanes, not a claim that every agent is currently executing. They
+prepare isolated changes and preserve the existing working tree. The separate
+UI lane is tracked in `docs/UI_REPAIR_TASKS.md`; coordinate with its existing
+owner rather than duplicating or overwriting those edits. The lead owns shared
+interfaces, integration, budget decisions, remaining metadata/backlog work and
 publication.
 
 After those interfaces are reviewed, boundary work and lexical/benchmark work can

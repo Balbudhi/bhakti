@@ -195,6 +195,31 @@ def _check_candidate_digests(state_path, state):
             raise RunFatal('attempt candidate digest mismatch', state_path=state_path)
 
 
+def read_unit_cache(state_path: Path) -> dict:
+    """Validate durable router evidence without executing or changing its state."""
+    state_path = Path(state_path)
+    state = _read(state_path)
+    try:
+        identity = _unit_identity(state['unit_id'], state['input_fingerprint'],
+            state['dependency_fingerprint'], state['base_model'], state['pro_model'],
+            EscalationPolicy(**state['policy']))
+        if any(state.get(k) != v for k, v in identity.items()) or state_path.parent.name != _digest(identity):
+            raise ValueError('identity/path mismatch')
+        if state.get('status') not in {'ready', 'running', 'escalating', 'accepted', 'unresolved', 'run-fatal'}:
+            raise ValueError('unknown route status')
+        _check_candidate_digests(state_path, state)
+        result = None
+        if state['status'] == 'accepted':
+            result = _read(state_path.parent / 'accepted-result.json')
+            if _digest(result) != state.get('accepted_sha256'):
+                raise ValueError('accepted result digest mismatch')
+        return {'state': state, 'result': result}
+    except RunFatal:
+        raise
+    except (KeyError, TypeError, ValueError) as exc:
+        raise RunFatal('invalid saved route evidence: ' + str(exc), state_path=state_path) from exc
+
+
 def run_unit(state_dir: Path, unit_id: str, input_fingerprint: str,
              execute: Callable[[AttemptContext],dict], validate: Callable[[dict],list[dict]], *,
              deadline_at: float, dependency_fingerprint: str | None = None,

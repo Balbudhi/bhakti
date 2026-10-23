@@ -273,6 +273,15 @@ def _reconcile_review_history(state_path, journal_path, context, *, active_attem
     return snapshot
 
 
+def lexical_options(options, slug, lines, languages):
+    local = copy.copy(options)
+    packets = getattr(options, 'lexical_support_packets', {})
+    if slug in packets:
+        local.semantic_lexical_support = copy.deepcopy(packets[slug])
+    pipeline.bhakti_lexical_support.prepare_options(local, lines, languages)
+    return local
+
+
 def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir: Path,
                          options, dependency_fingerprint: str, deadline_at: float,
                          protected_english: dict | None = None) -> dict:
@@ -283,8 +292,9 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
     """
     import bhakti_model_routes as routes
     lines, glosses, translations = reader_evidence(reader)
+    options = lexical_options(options, slug, lines, reader.get('SONG_META', {}).get('languages', []))
     reader_digest = prepare.json_digest(reader)
-    policy = pipeline.translation_policy_payload()
+    policy = pipeline.semantic_stage_policy(options)
     request_identity = prepare.json_digest({'version': VERSION, 'reader': reader,
         'policy': policy, 'baseline': protected_english, 'purpose': 'identify-current-defects'})
     context = dict(lines=lines, glosses=glosses, reader_digest=reader_digest,
@@ -381,6 +391,7 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
     import bhakti_model_routes as routes
     import bhakti_candidate_guard as guard
     lines, original_glosses, original_translations = reader_evidence(reader)
+    options = lexical_options(options, slug, lines, reader.get("SONG_META", {}).get("languages", []))
     errors = current_review_errors(pre_review, lines, original_glosses,
                                    prepare.json_digest(reader), dependency_fingerprint)
     if errors: raise ValueError('unbound or invalid pre-review: ' + str(errors))
@@ -421,7 +432,7 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
             if ref['line_id'] in issue['target_line_ids']:
                 lexical_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
     request_identity = prepare.json_digest({'version': VERSION, 'reader': reader, 'pre_review': pre_review,
-        'policy': pipeline.translation_policy_payload(), 'baseline': protected_english})
+        'policy': pipeline.semantic_stage_policy(options), 'baseline': protected_english})
     languages = reader.get('SONG_META', {}).get('languages', [])
 
     def execute(context):
@@ -823,6 +834,12 @@ def _execute_inventory(root: Path, inventory: dict, state_dir: Path, options) ->
         'max_calls': options.max_calls, 'model': options.model, 'pro_model': options.pro_model,
         'source_reuse_maps': reuse_identity,
         'inputs': {row['slug']: row['fingerprints']['all'] for row in rows}}
+    support_packets = getattr(options, 'lexical_support_packets', {})
+    if not isinstance(support_packets, dict) or set(support_packets) - {row['slug'] for row in rows}:
+        raise ValueError('lexical support packets must name selected songs')
+    if support_packets:
+        identity['lexical_support'] = prepare.json_digest({slug: pipeline.bhakti_lexical_support.content_digest(packet)
+            for slug, packet in support_packets.items()})
     run_path = state_dir / 'run.json'; run = read_json(run_path)
     if run:
         if run.get('identity') != identity: raise ValueError('frozen run inputs or limits changed; existing evidence retained')
@@ -997,12 +1014,18 @@ def main(argv=None) -> int:
     parser.add_argument('--deadline-seconds', type=float, default=3600)
     parser.add_argument('--timeout', type=float, default=600)
     parser.add_argument('--workers', type=int, default=7)
+    parser.add_argument('--lexical-supports', type=Path, help='Private JSON mapping song slugs to support packet paths')
     parser.add_argument('--model', default='google/gemini-3.7-flash')
     parser.add_argument('--pro-model', default='google/gemini-3.1-pro-preview')
     options = parser.parse_args(argv)
     options.source_reuse_maps = read_json(options.source_reuse_maps_file) if options.source_reuse_maps_file else {}
     options.editorial_adjudications = (read_json(options.editorial_adjudications_file)
                                       if options.editorial_adjudications_file else {})
+    if options.lexical_supports:
+        support_paths = read_json(options.lexical_supports)
+        if not isinstance(support_paths, dict):
+            raise ValueError('lexical support mapping must be an object')
+        options.lexical_support_packets = {slug: read_json(options.lexical_supports.parent / path) for slug, path in support_paths.items()}
     root = options.root.resolve(); output = options.state_dir.resolve()
     if output == root or (output.is_relative_to(root) and not output.is_relative_to(root / '.transcription')):
         raise ValueError('state directory must be private and outside public source paths')

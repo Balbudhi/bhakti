@@ -35,6 +35,7 @@ from typing import Any
 
 import process_song_gemini as gemini
 import gloss_policy
+import bhakti_lexical_support
 import bhakti_translation_policy
 import bhakti_semantic_repair
 import editorial_baselines
@@ -101,6 +102,9 @@ def complete_semantics(song_dir, audited, job, options):
 
 def semantic_stage_policy(options):
     policy = translation_policy_payload()
+    support = getattr(options, 'semantic_lexical_support', None)
+    if support is not None:
+        policy = {**policy, 'lexical_support': bhakti_lexical_support.content_digest(support)}
     if hasattr(options, 'semantic_deadline_at'):
         policy = {**policy, 'semantic_repair_version': bhakti_semantic_repair.VERSION,
                   'repair_feedback': getattr(options, 'semantic_repair_feedback', []),
@@ -133,7 +137,21 @@ def semantic_repair_prompt(options):
     if order:
         result += '\nAUDITED PERFORMANCE ORDER:\n' + json.dumps(order, ensure_ascii=False)
     if full_source:
-        result += '\nFULL AUDITED SOURCE CONTEXT (not additional output targets):\n' + json.dumps(full_source, ensure_ascii=False)
+        # Neighbor relations matter even when only an excerpt's order is supplied.
+        # Reference exact source definitions by ID instead of repeating their text.
+        # Preserve unknown/variant neighbor evidence rather than silently equating it.
+        definitions = {row['id']: row for row in full_source}
+        projected = copy.deepcopy(full_source)
+        for row in projected:
+            for window in row.get('performed_context', []):
+                for side in ('before', 'after'):
+                    for neighbor in window.get(side, []):
+                        definition = definitions.get(neighbor.get('id'))
+                        if definition is not None:
+                            for field in ('source_text', 'roman'):
+                                if field in neighbor and neighbor[field] == definition.get(field):
+                                    del neighbor[field]
+        result += '\nFULL AUDITED SOURCE CONTEXT (not additional output targets):\n' + json.dumps(projected, ensure_ascii=False)
     return result
 
 
@@ -155,6 +173,7 @@ def parse_args() -> argparse.Namespace:
                         help="JSON: {songs:[{slug, source, title?, writer?, singer?, composer?, languages?, subjectTags?, searchAliases?}]}")
     parser.add_argument("--workers", type=int, default=7,
                         help="Independent songs to process concurrently (default: 7; outbound API calls are separately rate-gated).")
+    parser.add_argument("--lexical-support", type=Path, help="Private witnessed lexical support packet for this song")
     parser.add_argument("--model", default=MODEL)
     parser.add_argument("--economy", action="store_true",
                         help="Use synchronous Gemini for audio stages and half-price OpenRouter Batch for text-only stages.")
@@ -1147,6 +1166,54 @@ def reconcile_segment_seam_uncertainties(
     return retained
 
 
+def audio_audit_clip_contract() -> dict[str, Any]:
+    """Only settings consumed by the source-audit audio clip encoder."""
+    return {"version": 1, "codec": "aac", "bitrate": "192k", "seek_precision": 3}
+
+
+def audio_audit_request_contract(
+    first: dict[str, Any], segment: dict[str, Any], *, witness=None,
+    source_first: bool = False, source_context=None,
+) -> dict[str, Any]:
+    """Exact source-audio request, shared by cache identity and dispatch."""
+    witness_context = source_witness.prompt_context(witness, first.get("lines", []))
+    observation_prompt = ""
+    if source_context is not None:
+        observation_prompt = ("\nSOURCE OBSERVATION CONTEXT (competing source evidence, not accepted lyrics):\n"
+            + json.dumps(source_context, ensure_ascii=False)
+            + "\nCheck these alternatives and prior hearings against the complete attached audio. "
+              "An omission hypothesis is not permission to insert unperformed text. "
+              "Preserve uncertainty when readings cannot be distinguished.\n")
+    source_first_context = ""
+    if source_first:
+        exact_lines = [{"source_text": line.get("source_text", "")}
+                       for line in first.get("lines", [])]
+        source_first_context = f"""
+SOURCE-CONTROLLED AUDIT:
+The first pass selected its text from an identified original witness. Do not rewrite, normalize, or replace its source text. Every returned `source_text` must exactly copy one item from the first-pass source list below. Use the audio only to confirm presence, order, overlap status, and an audible variant that must be reported as uncertainty.
+
+First-pass source lines:
+{json.dumps(exact_lines, ensure_ascii=False)}
+"""
+    prompt = f"""This is the required second transcription pass for one segment of a long devotional recording. Audit the entire first-pass transcript below against the complete attached segment. Use the first transcript as your working draft; do not start over.
+
+Be extremely careful not to miss, hallucinate, reorder, or silently correct any sung, spoken, lead, response, invocation, refrain, pickup, repeated, or closing line. Preserve overlap text because local code reconciles it. For Indic source text, retain the natural script and give a consistent scholarly ISO 15919/IAST-style romanization with accurate vowel length, retroflexion, aspiration, and language-appropriate pronunciation. For Punjabi and other north-Indic readings use consistent IAST e/o, not mixed ē/ō; preserve nasalization and final orthographic vowels, and use only Latin-script letters in the roman field. Do not apply this e/o convention to Dravidian-language distinctions. Do not translate or estimate timestamps. Mark genuine uncertainty rather than guessing.
+
+Segment audio: absolute source seconds {segment['clip_start']:.3f}–{segment['clip_end']:.3f}; core {segment['core_start']:.3f}–{segment['core_end']:.3f}.
+
+FIRST TRANSCRIPT:
+{json.dumps(first, ensure_ascii=False)}
+{witness_context}
+{source_first_context}{observation_prompt}
+
+Return strict JSON:
+{{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
+    return {"version": 1, "prompt": prompt,
+            "response_schema": segment_transcript_schema(), "schema_name": "bhakti_segment_audit",
+            "reasoning_effort": "high", "max_completion_tokens": 32768,
+            "clip": audio_audit_clip_contract()}
+
+
 def audit_long_transcript(
     song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace,
     *, observation_context: dict[str, Any] | None = None,
@@ -1171,14 +1238,19 @@ def audit_long_transcript(
         jobs = []
         for item in segments:
             segment = item["segment"]
+            request = audio_audit_request_contract(item["transcript"], segment,
+                witness=witness, source_first=source_first,
+                source_context=observation_context["source_context"] if observation_context is not None else None)
+            codec = request["clip"]
+            precision = codec["seek_precision"]
             clip = destination / f"segment-{segment['index']:03d}.m4a"
-            subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{segment['clip_start']:.3f}",
-                            "-i", str(audio), "-t", f"{segment['clip_end'] - segment['clip_start']:.3f}", "-vn",
-                            "-c:a", "aac", "-b:a", "192k", str(clip)], check=True)
-            jobs.append((item, clip))
+            subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{segment['clip_start']:.{precision}f}",
+                            "-i", str(audio), "-t", f"{segment['clip_end'] - segment['clip_start']:.{precision}f}", "-vn",
+                            "-c:a", codec["codec"], "-b:a", codec["bitrate"], str(clip)], check=True)
+            jobs.append((item, clip, request))
 
-        def run(job: tuple[dict[str, Any], Path]) -> dict[str, Any]:
-            item, clip = job
+        def run(job: tuple[dict[str, Any], Path, dict[str, Any]]) -> dict[str, Any]:
+            item, clip, request = job
             segment, first = item["segment"], item["transcript"]
             cached_path = cache_dir / f"segment-{segment['index']:03d}.json"
             cached = read_packet(cached_path)
@@ -1187,44 +1259,13 @@ def audit_long_transcript(
             # falsely report that verification happened.
             if cached and not options.source_witness_audit:
                 return cached
-            witness_context = source_witness.prompt_context(witness, first.get("lines", []))
-            observation_prompt = ""
-            if observation_context is not None:
-                observation_prompt = ("\nSOURCE OBSERVATION CONTEXT (competing source evidence, not accepted lyrics):\n"
-                    + json.dumps(observation_context["source_context"], ensure_ascii=False)
-                    + "\nCheck these alternatives and prior hearings against the complete attached audio. "
-                      "An omission hypothesis is not permission to insert unperformed text. "
-                      "Preserve uncertainty when readings cannot be distinguished.\n")
-            source_first_context = ""
-            if source_first:
-                exact_lines = [{"source_text": line.get("source_text", "")}
-                               for line in first.get("lines", [])]
-                source_first_context = f"""
-SOURCE-CONTROLLED AUDIT:
-The first pass selected its text from an identified original witness. Do not rewrite, normalize, or replace its source text. Every returned `source_text` must exactly copy one item from the first-pass source list below. Use the audio only to confirm presence, order, overlap status, and an audible variant that must be reported as uncertainty.
-
-First-pass source lines:
-{json.dumps(exact_lines, ensure_ascii=False)}
-"""
-            prompt = f"""This is the required second transcription pass for one segment of a long devotional recording. Audit the entire first-pass transcript below against the complete attached segment. Use the first transcript as your working draft; do not start over.
-
-Be extremely careful not to miss, hallucinate, reorder, or silently correct any sung, spoken, lead, response, invocation, refrain, pickup, repeated, or closing line. Preserve overlap text because local code reconciles it. For Indic source text, retain the natural script and give a consistent scholarly ISO 15919/IAST-style romanization with accurate vowel length, retroflexion, aspiration, and language-appropriate pronunciation. For Punjabi and other north-Indic readings use consistent IAST e/o, not mixed ē/ō; preserve nasalization and final orthographic vowels, and use only Latin-script letters in the roman field. Do not apply this e/o convention to Dravidian-language distinctions. Do not translate or estimate timestamps. Mark genuine uncertainty rather than guessing.
-
-Segment audio: absolute source seconds {segment['clip_start']:.3f}–{segment['clip_end']:.3f}; core {segment['core_start']:.3f}–{segment['core_end']:.3f}.
-
-FIRST TRANSCRIPT:
-{json.dumps(first, ensure_ascii=False)}
-{witness_context}
-{source_first_context}{observation_prompt}
-
-Return strict JSON:
-{{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
+            prompt = request["prompt"]
             last_error: RuntimeError | None = None
             for attempt in range(3):
                 try:
                     response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=stage_call_timeout(options),
-                                           response_schema=segment_transcript_schema(), schema_name="bhakti_segment_audit",
-                                           reasoning_effort="high", max_completion_tokens=32768, **stage_transport_context(options))
+                                           response_schema=request["response_schema"], schema_name=request["schema_name"],
+                                           reasoning_effort=request["reasoning_effort"], max_completion_tokens=request["max_completion_tokens"], **stage_transport_context(options))
                     if source_first:
                         allowed_text = {str(line.get("source_text") or "") for line in first.get("lines", [])}
                         invented = [str(line.get("source_text") or "") for line in response["packet"].get("lines", [])
@@ -1249,8 +1290,8 @@ Return strict JSON:
                         )
                         response = gemini.call(
                             options.model, gemini.key(), prompt, audio=fallback, timeout=stage_call_timeout(options),
-                            response_schema=segment_transcript_schema(), schema_name="bhakti_segment_audit",
-                            reasoning_effort="high", max_completion_tokens=32768, **stage_transport_context(options))
+                            response_schema=request["response_schema"], schema_name=request["schema_name"],
+                            reasoning_effort=request["reasoning_effort"], max_completion_tokens=request["max_completion_tokens"], **stage_transport_context(options))
                         result = {"segment": segment, "first": first, "audit": response}
                         write_json(cached_path, result)
                         return result
@@ -2979,14 +3020,16 @@ def normalize_gloss_rows(lines: list[dict[str, Any]], rows: list[dict[str, Any]]
 def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
-    policy = semantic_stage_policy(options)
     languages = audited["packet"].get("metadata", {}).get("languages")
+    support = bhakti_lexical_support.prepare_options(options, lines, languages)
+    policy = semantic_stage_policy(options)
     fingerprint = text_stage_fingerprint("gloss", options.model,
                                          {"lines": lines, "languages": languages}, policy)
     existing = read_packet(target)
     if (existing and existing.get("fingerprint") == fingerprint and not options.force
             and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-            and not fresh_gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []), languages)):
+            and not fresh_gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []), languages)
+            and not bhakti_lexical_support.support_decision_errors(support, existing.get("packet", {}).get("glosses", []))):
         return existing
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
         term_registry = preserved_term_registry()
@@ -3006,7 +3049,7 @@ Do not collapse South Asian social terminology into the single English word “c
 
 Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even when a concept is listed in the registry. A matching `concept_key` may identify a concept for bookkeeping; it does not require IAST in English. Set `preserve_in_english=false` for newly reconstructed glosses. `preserve_in_english=true` is reserved for explicitly supplied, locked English that retains that concept; no locked English is supplied at this gloss stage. Proper names are separate from concept preservation: retain genuine names in English and explain their evidenced identity or relationship in the hover. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a divine epithet, explain its operative meaning rather than merely spelling the same title again. Build a local glossary while processing this song: when the same displayed token recurs in the same grammatical and devotional role, reuse its most specific established explanation verbatim. A changed explanation is allowed only when the local syntax or imagery materially changes; say why in that line's grammar note. In particular, bare “illusion” is not an adequate contextual explanation for `māyā`. For ordinary words and proper names, set `concept_key` to the empty string and `preserve_in_english=false`. Do not invent new registry entries. Genuine unresolved source or semantic conflict belongs in uncertainty.
 
-{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}
+{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'gloss')}
 
 For every lexical word, return exactly one sense_decisions item in word-index order.
 Copy word_index and roman from tokens in COMPACT LEXICAL EVIDENCE.
@@ -3053,7 +3096,7 @@ Return strict JSON:
     # needlessly large and can stall before producing a recoverable cache.
     if len(lines) <= 40:
         result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=stage_call_timeout(options),
-                                       response_schema=schema, schema_name="bhakti_word_glosses",
+                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "gloss"), schema_name="bhakti_word_glosses",
                              reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
         semantic_write_json(target.parent / 'gloss-candidate.json', result)
         result["packet"]["glosses"] = normalize_gloss_rows(lines, stage_model_rows(result, 'glosses', options))
@@ -3091,7 +3134,7 @@ Return strict JSON:
                 context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=stage_call_timeout(options),
-                                       response_schema=schema,
+                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "gloss"),
                                        schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
                                        max_completion_tokens=65536,
                                        max_attempts=getattr(options, "max_attempts", 6), **stage_transport_context(options))
@@ -3154,6 +3197,7 @@ Return strict JSON:
                   "batch_responses": packets, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
                   "resolved_model": options.model}
     errors = fresh_gloss_contract_errors(lines, result.get("packet", {}).get("glosses", []), languages)
+    errors.extend(bhakti_lexical_support.support_decision_errors(support, result.get("packet", {}).get("glosses", [])))
     if errors:
         stage_quality_failure(options, f"gloss output violates source contract: {errors[:3]}")
     result["gloss_contract_version"] = GLOSS_CONTRACT_VERSION
@@ -3378,6 +3422,7 @@ def independently_review_translations(
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
+    support = bhakti_lexical_support.prepare_options(options, lines, languages)
     policy = semantic_stage_policy(options)
     policy = {**policy, 'review_payload_contract': 1, 'pending_findings': getattr(options, 'semantic_pending_findings', []),
               'repair_findings': getattr(options, 'semantic_repair_findings', [])}
@@ -3489,7 +3534,7 @@ Check that each English segment uses the same contextual sense as the gloss at i
 
 {bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", []))}
 
-{bhakti_semantic_repair.REVIEW_GUIDANCE}
+{bhakti_lexical_support.prompt(support, [item['source']['id'] for item in target_evidence], 'review')}{bhakti_semantic_repair.REVIEW_GUIDANCE}
 
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
@@ -3596,6 +3641,10 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     sense_errors = bhakti_translation_policy.sense_decision_errors(lines, gloss_rows, languages)
     if sense_errors:
         raise RuntimeError(f"translation input violates sense evidence contract: {sense_errors[:3]}")
+    support = bhakti_lexical_support.prepare_options(options, lines, languages)
+    support_errors = bhakti_lexical_support.support_decision_errors(support, gloss_rows)
+    if support_errors:
+        raise RuntimeError("translation lexical support: " + str(support_errors[:3]))
     policy = semantic_stage_policy(options)
     fingerprint = text_stage_fingerprint("translation", options.model,
         {"lines": lines, "glosses": gloss_rows, "provided_translation": provided_translation,
@@ -3608,6 +3657,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
             and existing.get("input_contract_version") == TRANSLATION_INPUT_VERSION):
         errors = fresh_translation_contract_errors(
             lines, gloss_rows, existing.get("packet", {}).get("translations", []))
+        errors.extend(bhakti_lexical_support.support_decision_errors(support, gloss_rows, existing.get("packet", {}).get("translations", [])))
         if errors:
             raise RuntimeError(f"cached translation violates fresh contract: {errors[:3]}")
         return existing
@@ -3630,7 +3680,7 @@ For each line, reason in this order before choosing the final English:
 5. Make only the smallest grammatical adjustments needed for intelligible English. Prefer the source's transparent spatial vocabulary (“from the inside”) over a smoother intensifying substitute (“deep within”) unless depth is lexically present. Literal and poetic force outrank smoothness.
 6. Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even for registry-listed concepts. A `concept_key` is bookkeeping, not an instruction to leave the term untranslated. Retain a concept in IAST only when explicitly supplied locked English does so; a legacy `preserve_in_english=true` flag alone cannot override this rule. Retain genuine proper names, whose clickable gloss must explain their evidenced identity or relationship. The sense used in every English segment must match the chosen primary meaning at its linked word indices, including compounds and inflections; supported alternatives remain separately explained in grammar notes.
 
-{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}
+{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list. Every source word index must appear in at least one segment. Map particles, postpositions, tense/aspect, negation, modality, and honorifics to the English phrase they help create rather than leaving their source index uncovered.
 
@@ -3703,7 +3753,7 @@ Return strict JSON:
         result = copy.deepcopy(options.semantic_seed_translation)
     elif len(candidate_lines) <= 40:
         result = gemini.call(options.model, gemini.key(), prompt_for(candidate_lines, []), audio=None, timeout=stage_call_timeout(options),
-                                       response_schema=schema, schema_name="bhakti_literal_translation",
+                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"), schema_name="bhakti_literal_translation",
                              reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
     else:
         # Preserve the historical 40-line parent cache shape so already
@@ -3738,7 +3788,7 @@ Return strict JSON:
                 context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=stage_call_timeout(options),
-                                       response_schema=schema,
+                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"),
                                        schema_name="bhakti_translation_batch", reasoning_effort="high",
                                        max_completion_tokens=65536, **stage_transport_context(options))
                 returned = [row.get("id") for row in response["packet"].get("translations", [])]
@@ -3802,6 +3852,9 @@ Return strict JSON:
         if set(old) != {line['id'] for line in lines}:
             raise RuntimeError('semantic repair previous translation population changed')
         result['packet']['translations'] = [copy.deepcopy(replacements.get(line['id'], old[line['id']])) for line in lines]
+    support_errors = bhakti_lexical_support.support_decision_errors(support, gloss_rows, result['packet']['translations'])
+    if support_errors:
+        raise RuntimeError('translation lexical support: ' + str(support_errors[:3]))
     for row in result['packet']['translations']:
         row.pop('independent_review', None)
     result["input_contract_version"] = TRANSLATION_INPUT_VERSION
