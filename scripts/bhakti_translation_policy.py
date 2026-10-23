@@ -6,11 +6,13 @@ unrelated compounds and diacritically distinct words out of the candidate set.
 from __future__ import annotations
 
 import json
+import os
+import bhakti_lexical_retrieval as lexical_retrieval
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 2
+POLICY_VERSION = 3
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
@@ -70,8 +72,30 @@ itself remains unresolved, not merely that the small dictionary lacks an entry.
 
 
 def policy_payload() -> dict:
-    return {"version": POLICY_VERSION, "rules": RULES,
-            "lexicon": json.loads((ROOT / "data/bhakti_lexicon.json").read_text(encoding="utf-8"))}
+    result = {"version": POLICY_VERSION, "rules": RULES}
+    path = os.environ.get("BHAKTI_LEXICAL_INDEX")
+    if path:
+        with lexical_retrieval.LexicalIndex(path) as index:
+            if os.environ.get("BHAKTI_LEXICON_PATH"):
+                index.verify_corpus(os.environ["BHAKTI_LEXICON_PATH"])
+            result["retrieval"] = index.fingerprint()
+            result["retrieval"]["mode"] = "bounded-encoder" if os.environ.get("BHAKTI_EMBEDDING_LEDGER") else "cached-only"
+            if result["retrieval"]["mode"] == "cached-only":
+                result["retrieval"]["cached_vectors"] = lexical_retrieval.digest(
+                    [row[0] for row in index.db.execute("SELECT key FROM vectors ORDER BY key")])
+    else:
+        result["lexicon"] = json.loads(Path(os.environ.get("BHAKTI_LEXICON_PATH", ROOT / "data/bhakti_lexicon.json")).read_text(encoding="utf-8"))
+    return result
+
+
+def _lexicon_for(lines, languages):
+    path = os.environ.get("BHAKTI_LEXICAL_INDEX")
+    if path:
+        with lexical_retrieval.LexicalIndex(path) as index:
+            if os.environ.get("BHAKTI_LEXICON_PATH"):
+                index.verify_corpus(os.environ["BHAKTI_LEXICON_PATH"])
+            return index.lexicon_for(lines, languages)
+    return policy_payload()["lexicon"]
 
 
 def _token(value: str) -> str:
@@ -80,33 +104,43 @@ def _token(value: str) -> str:
 
 
 def dictionary_candidates(lines: list[dict], languages: list[str] | None = None) -> list[dict]:
-    # A label on a multilingual recording is not evidence that each line is Hindi.
-    labels = {str(language).strip().casefold() for language in (languages or [])}
-    if not labels or not labels.issubset({"hi", "hindi", "hindustani", "classical hindi"}):
-        return []
-    tokens = {_token(token) for line in lines for field in ("roman", "source_text", "source")
-              for token in str(line.get(field, "")).split()}
-    return [entry for entry in policy_payload()["lexicon"]["entries"]
-            if entry["language"] == "hi" and tokens.intersection(
-                _token(alias) for alias in entry["source_spellings"] + entry["roman_search_aliases"])]
+    lexicon = _lexicon_for(lines, languages)
+    found = {}
+    native, roman, _ = lexical_retrieval.lookup_tables(lexicon)
+    for line in lines:
+        code = lexical_retrieval.line_language(line, languages)
+        register = line.get("lexicalRegister")
+        for field in ("source_text", "source", "roman"):
+            table = roman if field == "roman" else native
+            for surface in str(line.get(field, "")).split():
+                for entry in table.get((code, lexical_retrieval.token(surface)), []):
+                    if not register or entry["register"] == register:
+                        found[entry["entry_id"]] = entry
+    for rows in lexical_retrieval.token_candidates(
+            [{**line, "id": line.get("id", str(index))} for index, line in enumerate(lines)],
+            languages, lexicon).values():
+        for row in rows:
+            for entry in row["candidates"]: found[entry["entry_id"]] = entry
+    return list(found.values())
 
 
-def guidance(lines: list[dict], languages: list[str] | None = None) -> str:
-    return RULES + "\nSUPPLIED DICTIONARY CANDIDATES (unselected):\n" + json.dumps(
+def guidance(lines: list[dict], languages: list[str] | None = None, *,
+             context_lines: list[dict] | None = None, performance_order: list[dict] | None = None) -> str:
+    text = RULES + "\nSUPPLIED DICTIONARY CANDIDATES (unselected):\n" + json.dumps(
         dictionary_candidates(lines, languages), ensure_ascii=False)
+    ranking = lexical_retrieval.guidance_rankings(lines, languages, _lexicon_for(lines, languages),
+        context_lines=context_lines, performance_order=performance_order)
+    if ranking:
+        text += "\nCONTEXTUAL SENSE RANKING (retrieval order only; retain and adjudicate every alternative; unranked statuses are explicit evidence gaps):\n" + json.dumps(ranking, ensure_ascii=False)
+    return text
+
+
+def word_tokens(line: dict) -> list[str]:
+    return lexical_retrieval.word_tokens(line)
 
 
 def token_candidates(lines: list[dict], languages: list[str] | None = None) -> dict[str, list[dict]]:
-    """Bind candidates only to complete roman tokens, never guessed segmentation."""
-    entries = dictionary_candidates(lines, languages)
-    result = {}
-    for line in lines:
-        tokens = [token for token in str(line.get('roman', '')).split() if any(c.isalnum() for c in token)]
-        result[line['id']] = [{'word_index': index, 'roman': token,
-                              'candidates': [entry for entry in entries if _token(token) in
-                                             {_token(alias) for alias in entry['roman_search_aliases']} ]}
-                             for index, token in enumerate(tokens)]
-    return result
+    return lexical_retrieval.token_candidates(lines, languages, _lexicon_for(lines, languages))
 
 
 def sense_decision_schema() -> dict:

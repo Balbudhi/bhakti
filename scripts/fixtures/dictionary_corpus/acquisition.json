@@ -1,0 +1,32 @@
+[
+  {
+    "query": "ढलना",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%A2%E0%A4%B2%E0%A4%A8%E0%A4%BE&searchhws=yes&matchtype=exact",
+    "path": "witnesses/18466c8a34f4ebd7.html",
+    "sha256": "4a72f18cb3050c3cedf4a98daaa1815e608bb941d3d3475feb365b1c00eaeef0"
+  },
+  {
+    "query": "मन",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AE%E0%A4%A8&searchhws=yes&matchtype=exact",
+    "path": "witnesses/76e129d921dee023.html",
+    "sha256": "27d072a1bafe765b94474b29e50c3bd58b7566905ef5a2ddda2bd8b3c6b8a2db"
+  },
+  {
+    "query": "असंगतअशब्दकखग",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%85%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A4%A4%E0%A4%85%E0%A4%B6%E0%A4%AC%E0%A5%8D%E0%A4%A6%E0%A4%95%E0%A4%96%E0%A4%97&searchhws=yes&matchtype=exact",
+    "path": "witnesses/69563d9d917a2da8.html",
+    "sha256": "531f0f4b3efffae33f4aa70d7d4e2570fecc5f3bdfb5a939e71cf70d765d2c33"
+  },
+  {
+    "query": "पुड़िया",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%AA%E0%A5%81%E0%A5%9C%E0%A4%BF%E0%A4%AF%E0%A4%BE&searchhws=yes&matchtype=exact",
+    "path": "witnesses/95eaf54cc5a9184d.html",
+    "sha256": "39521e08b6436dc39cea14ea89610f66bc926ed6c127b5839fcfbe8126c00103"
+  },
+  {
+    "query": "wīrāna",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=w%C4%ABr%C4%81na&searchhws=yes&matchtype=exact",
+    "path": "witnesses/fdcb20b044c03a9b.html",
+    "sha256": "ba142cae05ce47c5880478715adae7bad758d7c4c4cddb09d5d6f35747ad29fd"
+  }
+]

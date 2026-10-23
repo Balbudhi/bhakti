@@ -8,6 +8,38 @@ correct interactive mappings, and minimal useful devotional tags. Prioritize
 Kabīr omissions and the outstanding Gurbāṇī review; complete the four prepared
 additions. Do not claim that pipeline execution alone establishes correctness.
 
+## Current delivery requirement — automated whole-library pass
+
+The owner explicitly requires one runnable, resumable pass over the complete
+catalogue, not further disconnected manual pilots. Implement and use dictionary
+retrieval and embedding-based contextual sense ranking now. Flash is the normal
+model; automatically escalate a failed transcription, timing or semantic unit to
+an available Gemini Pro model within a recorded budget. Preserve successful
+stages and paid evidence; repair only affected dependencies. Independent source
+review must demonstrate a concrete defect before replacing existing English.
+
+Priority cohort: Pattā Bolā Vṛkṣa Se and Rehnā Nahī̃ Isa Desa by Shujaat Khan,
+including suspected omissions, followed by the outstanding library/backlog.
+The owner's “hem of Your garment” translation is Koī Hor Nahī Hai Merā
+(`koi-hor-nahi`). Its exact English and Aruṇācala Akṣaramaṇamālai already match
+the saved immutable baseline; a model cannot replace them. Source/gloss conflicts
+are reported separately. An unchanged good translation is a successful outcome.
+
+Required executable result: catalogue inventory → evidence/cache validation →
+needed audio/text audit → exact/dense dictionary retrieval → targeted repair →
+Pro escalation when necessary → independent verification → guarded candidate
+publication. Every catalogue entry gets a durable status, evidence identity,
+changed-line diff, model route and cost. Missing evidence is distinct from a
+verified no-change result. Stop at the configured money limit without resetting
+or losing resume state; do not regenerate entire songs for a failed line.
+
+Current parallel ownership: model routing/cost accounting; timing provenance and
+joint alignment; lexical corpus import; embedding retrieval; pass coordinator;
+priority-cohort source review. Shared route interface is reviewed before callers
+are implemented. The lead owns integration, protected-English checks, live
+qualification on real failures, and publication. The complete library remains
+the goal; a passing pilot alone does not complete it.
+
 ## Owner requirements
 
 - Compare the actual audio for missing words, clipped material, repetitions and
@@ -277,16 +309,122 @@ remaining backlog. No complete-library accuracy or goal-completion claim.
 The semantic/language integration is published in `5a2b27ff`; all seven changed
 public catalogue/reader files match the deployment. Staged-source checks passed
 33 semantic tests, the transport test collection, and 19 language persistence
-cases. The whole-tree contract scan still identifies five existing repeat-unit
-migrations and seven unbuilt legacy directories; these are open content work.
-The next five-reader representation pass must preserve every expanded token and
-interval, including already-reviewed public spelling corrections.
+cases. The five repeat-unit migrations are now published in `242760ee`: expanded source,
+Roman tokens, indexed English/glosses and every numeric interval are preserved.
+All 25 affected seek controls were exercised at 390px; the repeat badges and
+text have no horizontal overflow. This verifies UI seek behavior, not a new
+independent listening judgment. Seven unbuilt legacy directories remain open.
 
 The correct 307-second Harivarāsanam recording is downloaded privately with native
 Opus/AAC and verified official metadata. The old 173-second folder is archived;
 no audio or semantic evidence from it can be transferred to the replacement. A
-fresh production run has not been authorized/dispatched yet.
+fresh production run is authorized within the integrated backlog pass but has
+not been dispatched; the disconnected one-song runner was stopped.
 
 Completed paid evidence and original four-Gurbāṇī caches are preserved under the
 ignored project folder `.transcription/library-review/20261022-releases/` with an
 archive manifest. The live reader never exposes these research artifacts.
+
+
+### Current integration checkpoint
+
+- `bbcffba9` is deployed: compact filter spacing and a Poets row above Singers.
+  Joint explicit credits contribute each named poet; no writer is inferred from
+  an album or singer. All four changed public assets match deployed bytes.
+  Mobile, tablet, desktop and large-screen layouts were inspected; 390px poet
+  selection preserves the correct pressed button and horizontal row position.
+- The no-network whole-library pass inventoried 264 committed songs, 6,719 unique
+  lines and 406 local audio assets (3,979,923,728 bytes). Missing old metadata is
+  an evidence gap, not permission to regenerate all translations. Ten current
+  working-reader divergences were held, and the two owner baselines protected.
+- The actual Patta omission is a merge bug: a short internal pickup plus seven
+  occurrences of four speech-verse lines and two sorrow-remembrance repetitions
+  were deleted. The corrected saved-source sequence has 59 rather than 49
+  occurrences. All 29 existing lexical units have a source-bound reuse mapping;
+  five new source units need semantics. No new public wording is published yet.
+- Rehna has two saved independent onsets at 518.300/518.350 seconds that the old
+  code rejected against an uncertain 538.4 routing estimate. The new parser
+  retains that evidence. This is a saved-evidence repair, not fresh listening.
+- Private integration contains reviewed merge/timing fixes, persisted Flash→Pro
+  routing, atomic call/budget caps, and a paired-review publication guard. It
+  preserves failed/unknown paid outcomes and exact owner English. The integrated
+  execution caller and source adapter remain under active implementation/review.
+- Real dictionary import is implemented: 173 private Platts entry candidates,
+  23 reviewed lemma links, and a private full MW corpus. Indexed retrieval ranks
+  language-matched attested alternatives and never chooses a meaning itself.
+  Real embedding capability/semantic qualification is still pending. The large
+  Sanskrit corpus must be queried by its index, not reread into every prompt.
+
+Current step: integrate and exercise the actual bounded priority pass (Patta,
+Rehna, held semantic cases), then run the remaining eligible published queue and
+backlog. Passing existing translations stay byte/object-exact unless a concrete
+source-supported defect is confirmed and the proposed change passes paired review.
+The goal remains active; no whole-library accuracy claim.
+
+
+## Integrated execution checkpoint — 22 October 2026
+
+The previous continuation verified the deployed homepage filter change; it did
+not advance the outstanding translation pass. This continuation starts the
+reviewed integrated caller against catalogue `9fa148b4`, covering all 264
+published songs and 6,719 unique stored lines in its inventory. The first paid
+selection is Pattā Bolā Vṛkṣa Se and Rehnā Nahī̃ Isa Desa. Bounds: $4, 32 chat
+requests, 40 minutes, plus a separate $0.03/32-request embedding cap. This is
+an execution limit, not evidence that the full library is complete.
+
+The private runtime combines the reviewed source-merge, timing, route, candidate
+guard, lexical retrieval and caller changes. Its 20 caller/resume tests pass,
+including positive supplied-English declarations outside the registry. A run
+cannot rewrite those translations, overwrite changed original inputs, accept a
+tampered candidate, or silently restart an uncertain paid request. Flash is
+attempted first; failed quality units have one bounded Gemini Pro escalation.
+The dictionary index has 173 sourced full Platts entries plus five previously
+reviewed entries with concise senses, 178 entries/192 senses total. Exact
+language/form retrieval precedes contextual embedding ranking; ranking never
+establishes the selected meaning by itself.
+
+Rehna's reviewed cached timing repair is published in `9fa148b4`. The shared
+boundary before “kahata kabīra…” changes from 538.29 to 518.325 seconds, based
+on two retained clear measurements (518.300 and 518.350). All metadata, lyric
+objects, performance order and other starts remain exact. The mobile seek
+control reaches the new onset and the 390px layout has no horizontal overflow.
+Public data and HTML match the committed hashes. This is adoption of retained
+acoustic evidence, not a new complete listening audit.
+
+Private execution/evidence locations:
+- `/tmp/bhakti-priority-integrated-20261022/`: frozen plan, code hashes, dictionary,
+  durable request ledgers, per-stage artifacts and candidate readers.
+- `/tmp/bhakti-rehna-release/`: exact diff/release/deployment evidence.
+- `/tmp/bhakti-remaining-backlog/`: recording-level backlog manifest, excluding
+  published duplicates and retaining ambiguous collection matches.
+
+Remaining work includes the live priority run, publication of accepted semantic
+candidates, integration of the reviewed engine into the maintained source, the
+full eligible library pass, unresolved audio/source coverage, and backlog
+production. An inventory or a held candidate is not a completed song repair.
+
+
+The first integrated execution ended with two explicit unresolved results after
+seven chat calls ($1.3874905 reported); it did not publish semantic changes.
+Patta's Flash result passed fidelity for all five new units but requested a
+choice between an impersonal precept and direct imperative in “Aisī bānī boliye.”
+Automatic Pro escalation ran, then its glossary record omitted accounting for
+one supplied overlapping dictionary entry. Both attempts and charges are intact.
+Independent editorial review accepts the complete Flash wording and mappings;
+a narrow hash-bound adjudication/resume path is being added to adopt that decision
+without rerunning paid semantics or silently clearing original review evidence.
+Rehna's source-first review returned actual findings; its Pro review returned an
+extra context-only ID in a bounded target batch. That mismatch remains held and
+is being diagnosed before any repair is applied. The corrected onset remains live.
+
+The maintained engine integration passes 174 focused tests plus five instrumental
+and Roman-contract checks. The instrumental audit now exempts only refs used
+exclusively as instrumental cues; a ref also sung as a verse still requires all
+lyric fields. Gloss/English requests above40 lines use the existing bounded cache
+batches. Full release audits report no audio-quality errors and111 clean trim
+checks; the seven pre-existing unpublished directories still lack data.js.
+
+The owner's latest question requires a single consistent treatment of divine
+names such as Hari, Kṛṣṇa and Viṣṇu. Their current uses are being inventoried;
+meaning-in-English versus name-in-English presentation is awaiting clarification.
+No global replacement or change to supplied English is authorized by that audit.

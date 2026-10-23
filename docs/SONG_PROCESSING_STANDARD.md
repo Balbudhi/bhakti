@@ -49,14 +49,21 @@ line. Never invent an etymology or reduce every divine relationship to â€œLord.â
 Preserve owner-supplied English exactly; the two explicit reference readers are
 registered in `data/editorial_baselines.json`.
 
-`bhakti_translation_policy.py` owns the shared instructions and supplies a small
-set of cited dictionary entries from `data/bhakti_lexicon.json`. The initial
-five entries have 19 unselected senses. Retrieval requires an explicit Hindi
-language label and exact source/roman token; it does not infer cognates,
-inflections, compounds or another language. A model must choose or reject a sense
-using syntax, speaker, agency and adjacent imagery. It records the reason and
-material alternatives privately, never invented dictionary citations. Missing
-lookup coverage is not proof that a word does not exist.
+`bhakti_translation_policy.py` owns the shared instructions. It supports the
+small built-in lexicon and a private SQLite index of source-bound Platts and
+Cologne-derived dictionary entries. Exact language/form matching and reviewed
+lemma links determine eligible candidates; context embeddings rank them without
+selecting a meaning. Existing validated compound subdivisions retain their word
+indices. Each chosen/rejected sense needs source grammar, actual performed
+neighbors and a contextual reason. Keep whole-entry context, stable IDs and
+citations; do not transfer Hindi evidence to Punjabi or Sanskrit. Missing lookup
+coverage is not proof that a word does not exist.
+
+[The translation workflow](TRANSLATION_WORKFLOW.md) gives the actual importer,
+index, bounded library-run and resume commands, separate chat/embedding budgets,
+Flash-to-Pro attempt policy and qualification limits. The initial live embedding
+check established transport/vector compatibility and a limited contextual
+contrast; it did not establish semantic correctness or complete a library pass.
 
 The primary popup meaning must agree with the linked English. Preserve concrete
 images, repetition, wordplay, bodily states and purposeful literal strangeness;

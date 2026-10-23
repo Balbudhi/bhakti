@@ -1,0 +1,209 @@
+# Translation and library review workflow
+
+This guide describes the bounded review engine and its actual command interfaces.
+The dictionary/embedding components have passed offline integration checks and a
+small live capability test. The first combined priority run exercised real Flash-to-Pro escalation but
+ended with unresolved candidates; full-library repair and generic audio coverage
+remain unfinished. A successful
+inventory or embedding request is not evidence that the library has been corrected.
+Current execution evidence belongs in [the repair task](LIBRARY_REPAIR_TASKS.md).
+
+## How a meaning becomes English
+
+The recording determines the performed source and order. A dictionary cannot add
+an unheard line, resolve an uncertain onset, or establish which recording was
+used. Existing text-only reviews retain their existing audio evidence and make no
+new listening claim. Missing historical provenance is recorded separately from a
+concrete source defect; it does not automatically trigger retranscription.
+
+For each passage, read every actual occurrence with its neighbors. Establish the
+speaker, addressee, agent, action, object, negation, tense, relationship and image.
+Then:
+
+1. Retrieve attested dictionary candidates for the explicit source language and
+   exact native/roman form, or an individually reviewed inflection/lemma link.
+   Preserve the reader's existing compound subdivisions and source-word indices.
+2. Use context embeddings to rank those candidates. Keep all alternatives,
+   citations, restrictions and whole-entry context available for adjudication.
+3. Choose the contextual meaning from grammar and the passage, and record the
+   choice, rejected alternatives and reasons in private `sense_decisions`.
+   Missing dictionary coverage is not proof of a missing word or sense.
+4. Write the primary word gloss and semantic frame first. Derive English from
+   those glosses; link each meaningful English phrase to the correct source
+   indices. Do not write fluent English and back-fit the glosses to it.
+5. Run independent source-first review. A concrete defect produces a typed,
+   referenced repair: reconstruct affected glosses/frames before revising their
+   English, then review the proposed changes independently again. A merely
+   different stylistic preference does not authorize a rewrite.
+
+Preserve connotation through the passage's concrete image, register and
+relationships. Keep repetition, personification, bodily states, purposeful
+ambiguity and literal strangeness. Improve English syntax without replacing these
+with generic devotional language. Transparent compounds are useful when the
+source supports every member; opaque literary coinages and invented etymologies
+are not. Genuine names retain their evidenced identity or relationship in the
+popup; ordinary words and philosophical concepts receive precise contextual
+English, including short phrases when necessary.
+
+Owner-supplied English is immutable. `data/editorial_baselines.json` protects the
+two designated reference readers, Koī Hor Nahī and Aruṇācala Akṣaramaṇamālai;
+supplied human translations remain a
+baseline throughout production. A source/gloss conflict is reported separately;
+the engine must not distort grammar to justify rewriting the owner's wording.
+An unflagged song is not automatically correct.
+
+## Dictionary and embedding evidence
+
+`dictionary_corpus.py` imports original Platts HTML captures and Cologne-derived
+Sanskrit JSON. Records retain the source language, headword spelling, edition,
+page/locus, entry/sense IDs, full context and exact witness hash. A printed entry
+without enumerated senses remains an `entry_context` candidate; punctuation is
+not used to invent dictionary-authored sense numbers. Fetch failures, exact-query
+misses and empty source fragments remain distinguishable. Native Unicode
+canonical equivalence is allowed; diacritics are not removed to invent a match.
+Hindi evidence is never silently assigned to Punjabi or Sanskrit.
+
+Example preparation, using private paths and an explicit JSON array of native
+queries:
+
+```sh
+python3 scripts/dictionary_corpus.py acquire \
+  --queries /private/path/native-queries.json --cache /private/path/platts-cache
+python3 scripts/dictionary_corpus.py platts-cache /private/path/platts-cache \
+  --output /private/path/platts-candidates.json
+python3 scripts/dictionary_corpus.py csl /private/path/mw.json \
+  --code mw --edition 1899 --output /private/path/mw-candidates.json
+python3 scripts/bhakti_lexical_retrieval.py build \
+  --lexicon /private/path/reviewed-corpus.json --index /private/path/lexical.sqlite
+```
+
+Acquisition makes dictionary HTTP requests, not model calls. Inspect its error/gap
+report and review lemma links before using the resulting corpus. A broader
+`--matchtype containing` query is acquisition evidence only; it does not relax
+exact matching in the translation engine. Keep raw captures, normalized corpora
+and indexes private, honoring their source licenses. Do not put them in static
+song pages or copy a dictionary translation over the song's gloss-derived English.
+
+SQLite indexes exact aliases and lemma links; runtime lookup reads only the
+needed entries. The index binds the full corpus content hash and file identity.
+A changed configured corpus is rejected until an explicit rebuild. A rebuild
+retains reusable content-addressed vectors; it does not make an old vector valid
+for changed source text, context or embedding configuration.
+
+The encoder is `google/gemini-embedding-001` through OpenRouter's Google Vertex
+route, with 768 dimensions and one shared default task space for documents and
+queries. The exact observed response alias `gemini-embedding-001` is accepted for
+that canonical request; other models are rejected. There is no claim that a
+provider-specific retrieval task parameter was forwarded. Cache keys bind model,
+provider, dimension, task, formatting version, exact text and source-entry hash.
+Only currently retrieved candidates are embedded, never the whole corpus by
+default. The conservative input cap is 2,048 UTF-8 bytes per string; oversized
+entries or contexts retain their full evidence with an explicit unranked status,
+not a truncated meaning. Without a configured encoder, cache misses are reported
+as missing ranking evidence.
+
+The live qualification returned real 768-dimensional vectors. In the actual
+“मन रे तू चल अपने निकेतन में” context, the saved candidates ranked **will, mind,
+heart, weight**. Mind outranked weight, but will ranked above mind. This is direct
+evidence that similarity is a retrieval aid, not the semantic selector. The two
+qualification requests reported $0.00006525; that small test does not establish
+whole-song translation quality. The original failed alias-validation reservation
+remains in the accounting history. See the [OpenRouter embedding API](https://openrouter.ai/docs/api/api-reference/embeddings/submit-an-embedding-request)
+and [Google embedding documentation](https://ai.google.dev/gemini-api/docs/embeddings).
+
+## Models, finite attempts and cost
+
+The library stage router starts with `google/gemini-3.7-flash` through OpenRouter.
+An eligible failed unit may receive at most one
+`google/gemini-3.1-pro-preview` attempt. These are the router's supported defaults,
+not a claim that Pro is always necessary or a newer model is better. Stage
+validators and independent review determine acceptance. Missing source evidence
+and locked-baseline conflicts do not become reasons to spend more on Pro.
+Transport failures escalate only under the route's explicit classification;
+unknown outcomes require worker termination and retain their reservation.
+Authentication, budget, persistence and unreconciled active-request failures stop
+the run. Restarting does not create another Flash or Pro allowance.
+
+Chat and embeddings have separate ledgers and call caps. Their combined limits
+must fit the approved total. Each reserves a conservative amount before dispatch,
+retains raw responses and reported usage, and preserves unknown cost until it can
+be reconciled. Embedding requests are serialized, stop after failure, and never
+retry automatically. A validated embedding response does not clear a previously
+blocked ledger. Provider costs and reservations are different quantities; report
+both rather than calling an unknown outcome free.
+
+Keep credentials in the existing secure configuration: `OPENROUTER_API_KEY_FILE`
+points to an owner-only file, or the existing environment/hosted secret supplies
+the key. Never put the key value in an argument, example, report or repository.
+Together's text route does not replace audio-capable Gemini; its failed sung-audio
+qualification remains documented separately.
+
+## Inventory, run and resume
+
+The inventory uses a fixed committed catalogue revision. Unpublished intake
+folders cannot enter the population, and working readers that diverge from that
+revision are held rather than overwritten. Every catalogue member receives a
+state and evidence record; Patta and Rehna are first in the current priority
+order. Dry preparation makes no model calls:
+
+```sh
+python3 scripts/bhakti_library_pass.py --root /path/to/bhakti \
+  --catalogue-ref COMMIT_SHA --state-dir /private/path/library-run
+```
+
+To activate the reviewed index and bounded lazy embeddings, set these variables
+before building the run inventory. Replace the numeric placeholders with the
+approved allowances; the deadline is an absolute Unix timestamp.
+
+```sh
+export BHAKTI_LEXICON_PATH=/private/path/reviewed-corpus.json
+export BHAKTI_LEXICAL_INDEX=/private/path/lexical.sqlite
+export BHAKTI_EMBEDDING_LEDGER=/private/path/embedding-ledger.json
+export BHAKTI_EMBEDDING_BUDGET_USD=APPROVED_EMBEDDING_USD
+export BHAKTI_EMBEDDING_MAX_CALLS=APPROVED_EMBEDDING_CALLS
+export BHAKTI_EMBEDDING_DEADLINE_AT=ABSOLUTE_UNIX_DEADLINE
+```
+
+After the integrated execution path has been qualified, the same command accepts
+bounded execution flags:
+
+```sh
+python3 scripts/bhakti_library_pass.py --root /path/to/bhakti \
+  --catalogue-ref COMMIT_SHA --state-dir /private/path/library-run \
+  --execute --all --budget-usd APPROVED_CHAT_USD --max-calls APPROVED_CHAT_CALLS \
+  --deadline-seconds 1800 --timeout 600
+```
+
+Use `--slugs patta-bola-vrksha-se rehna-nahi-isa-desa` instead of `--all` for that
+subset. Model flags are `--model` and `--pro-model`; use only a route the bounded
+client supports. `--flags` accepts a JSON object keyed by published slug; an
+explicit `audio` flag requests the supported source route, not a promise that
+missing source evidence can be repaired. `--source-reuse-maps /private/path/maps.json`
+accepts a JSON object mapping a published slug to its reviewed source-reuse map
+path; those exact file hashes are frozen into the run identity. The source adapter and reviewed
+source-equivalence map integration must be ready for the selected case; unsupported
+or ambiguous repairs remain held. No command here publishes a candidate.
+
+Resume by repeating the execution command with the **same state directory,
+revision, selected population, models and limits**. `run.json` freezes input
+fingerprints and the original absolute deadline. Accepted stage artifacts and
+source checkpoints are reused only when their identities and validators still
+match. Completed per-song outcomes, including unresolved ones, are not silently
+retried. Changed inputs or limits require explicit reconciliation and a new plan;
+deleting caches or creating a fresh state directory to reset paid attempts is
+not recovery. An exhausted deadline is not extended by restarting.
+
+Inspect `inventory.json`, `queue.json`, `frozen-inventory.json`, `run.json`,
+`api-ledger.json`, route attempt records and per-song private candidates. Distinguish
+`protected`, `review-needed`, `repair-needed`, `unresolved`, `accepted` and
+`untouched-valid`: acceptance concerns the evidenced candidate, not deployment or
+fresh audio clearance. A whole pass ending with unresolved songs is unfinished
+content work. The runner preserves remaining work when a bound stops execution.
+
+Only confirmed target fields may change; metadata, other lines, timing and owner
+English retain their guards. Source/order changes invalidate dependent timing and
+semantic work; gloss changes invalidate affected English/review, and timing-only
+changes need not rerun translation. Publication still requires the content,
+audio, trim and in-app-browser checks in [the processing standard](SONG_PROCESSING_STANDARD.md)
+and [design standard](DESIGN_STANDARD.md), followed by review of the exact scoped
+diff. The library runner produces private candidates and has no `--publish` flag.

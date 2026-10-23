@@ -116,10 +116,11 @@ class SingleStartUncertaintyTests(unittest.TestCase):
         occurrence={'occurrence_id':'occ-064'}
         for final_errors in [[],['unresolved first syllable']]:
             with self.subTest(errors=final_errors), tempfile.TemporaryDirectory() as td:
+                audio=Path(td)/'audio.m4a';audio.write_bytes(b'local timing fixture')
                 opts=argparse.Namespace(force=False,model='google/gemini-3.7-flash',timeout=600)
                 sequence=[{'occurrence_id':'occ-064','start':0.5}]
                 with patch.object(p,'read_packet',return_value=None),patch.object(p,'display_occurrences',return_value=[occurrence]),patch.object(p.gemini,'duration_seconds',return_value=10),patch.object(p,'canonical_timing_audio',return_value=Path('audio.m4a')),patch.object(p.gemini,'key',return_value='dummy'),patch.object(p.gemini,'call',return_value={'packet':{}}),patch.object(p,'timing_sequence_from_response',return_value=(sequence,[],['occ-064'])),patch.object(p,'refine_all_starts',return_value=(sequence,[],final_errors)):
-                    result=p.align(Path(td),{'packet':{'verified_lines':[{'id':'line'}]}},Path('audio.m4a'),opts)
+                    result=p.align(Path(td),{'packet':{'verified_lines':[{'id':'line'}]}},audio,opts)
                 self.assertEqual(result['uncertain_occurrence_ids'],['occ-064'] if final_errors else [])
                 self.assertEqual(result['publication_status'],'blocked' if final_errors else 'review-required')
 

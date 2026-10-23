@@ -678,7 +678,8 @@ class PipelineTests(unittest.TestCase):
 
     def test_long_merge_drops_internal_overlap_fragments(self) -> None:
         def segment(index: int, lines: list[dict[str, str]]) -> dict:
-            return {"segment": {"index": index}, "audit": {"packet": {
+            return {"segment": {"index": index, "clip_start": index * 20.0,
+                                "clip_end": index * 20.0 + 40.0}, "audit": {"packet": {
                 "lines": lines,
                 "performance_order": [{"line_id": line["id"]} for line in lines],
                 "uncertainties": [],
@@ -781,7 +782,8 @@ class PipelineTests(unittest.TestCase):
     def test_reconcile_segment_seams_removes_only_a_false_script_warning(self) -> None:
         def segment(index: int, source_text: str, roman: str) -> dict:
             line = {"id": f"line-{index}", "source_text": source_text, "roman": roman}
-            return {"segment": {"index": index}, "audit": {"packet": {
+            return {"segment": {"index": index, "clip_start": index * 20.0,
+                                "clip_end": index * 20.0 + 40.0}, "audit": {"packet": {
                 "lines": [line], "performance_order": [{"line_id": line["id"]}],
             }}}
 

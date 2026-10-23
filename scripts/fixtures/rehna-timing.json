@@ -1,0 +1,2365 @@
+{
+  "timing": {
+    "duration_seconds": 649.801,
+    "ordered_occurrences": [
+      {
+        "occurrence_id": "occ-000",
+        "ref": "intro-instrumental",
+        "repeats": 1,
+        "source_text": "[वाद्य संगीत: सितार आलाप]",
+        "roman": "[Instrumental: Sitāra ālāpa]",
+        "section": "instrumental"
+      },
+      {
+        "occurrence_id": "occ-001",
+        "ref": "refrain-1",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-002",
+        "ref": "refrain-2",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+        "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-003",
+        "ref": "refrain-1",
+        "repeats": 2,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-004",
+        "ref": "refrain-des-veerana",
+        "repeats": 2,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-005",
+        "ref": "refrain-1",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-006",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-007",
+        "ref": "verse-1-line-1",
+        "repeats": 2,
+        "source_text": "ये संसार कागज़ की पुड़िया",
+        "roman": "ye sansāra kāgaza kī puṛiyā",
+        "section": "verse"
+      },
+      {
+        "occurrence_id": "occ-008",
+        "ref": "verse-1-line-2",
+        "repeats": 2,
+        "source_text": "बूंद पड़े ढल जाना है",
+        "roman": "būnda paṛē ḍhala jānā hai",
+        "section": "verse"
+      },
+      {
+        "occurrence_id": "occ-009",
+        "ref": "refrain-1",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-010",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-011",
+        "ref": "verse-2-line-1",
+        "repeats": 2,
+        "source_text": "ये संसार झाड़ो-झींखर",
+        "roman": "ye sansāra jhāṛō-jhīṅkhara",
+        "section": "verse"
+      },
+      {
+        "occurrence_id": "occ-012",
+        "ref": "verse-2-line-2",
+        "repeats": 2,
+        "source_text": "आग लगे जल जाना है",
+        "roman": "āga lagē jala jānā hai",
+        "section": "verse"
+      },
+      {
+        "occurrence_id": "occ-013",
+        "ref": "refrain-1",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-014",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-015",
+        "ref": "refrain-1",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-016",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-017",
+        "ref": "verse-3-line-1",
+        "repeats": 2,
+        "source_text": "कहत कबीर सुनो भाई साधो",
+        "roman": "kahata kabīra sunō bhāī sādhō",
+        "section": "verse"
+      },
+      {
+        "occurrence_id": "occ-018",
+        "ref": "verse-3-line-2",
+        "repeats": 2,
+        "source_text": "सतगुरु नाम ठिकाना है",
+        "roman": "sataguru nāma ṭhikānā hai",
+        "section": "verse"
+      },
+      {
+        "occurrence_id": "occ-019",
+        "ref": "refrain-1",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-020",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-021",
+        "ref": "refrain-1",
+        "repeats": 1,
+        "source_text": "रहना नहीं इस देस में",
+        "roman": "rahanā nahīṁ isa desa meṁ",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-022",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      {
+        "occurrence_id": "occ-023",
+        "ref": "outro-instrumental",
+        "repeats": 1,
+        "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+        "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]",
+        "section": "instrumental"
+      }
+    ],
+    "response": {
+      "packet": {
+        "starts": [
+          {
+            "occurrence_id": "occ-000",
+            "start": 0.0
+          },
+          {
+            "occurrence_id": "occ-001",
+            "start": 121.3
+          },
+          {
+            "occurrence_id": "occ-002",
+            "start": 133.7
+          },
+          {
+            "occurrence_id": "occ-003",
+            "start": 181.8
+          },
+          {
+            "occurrence_id": "occ-004",
+            "start": 191.7
+          },
+          {
+            "occurrence_id": "occ-005",
+            "start": 201.5
+          },
+          {
+            "occurrence_id": "occ-006",
+            "start": 206.3
+          },
+          {
+            "occurrence_id": "occ-007",
+            "start": 263.9
+          },
+          {
+            "occurrence_id": "occ-008",
+            "start": 273.7
+          },
+          {
+            "occurrence_id": "occ-009",
+            "start": 283.6
+          },
+          {
+            "occurrence_id": "occ-010",
+            "start": 288.4
+          },
+          {
+            "occurrence_id": "occ-011",
+            "start": 386.9
+          },
+          {
+            "occurrence_id": "occ-012",
+            "start": 396.7
+          },
+          {
+            "occurrence_id": "occ-013",
+            "start": 406.6
+          },
+          {
+            "occurrence_id": "occ-014",
+            "start": 411.4
+          },
+          {
+            "occurrence_id": "occ-015",
+            "start": 416.3
+          },
+          {
+            "occurrence_id": "occ-016",
+            "start": 421.2
+          },
+          {
+            "occurrence_id": "occ-017",
+            "start": 538.4
+          },
+          {
+            "occurrence_id": "occ-018",
+            "start": 548.2
+          },
+          {
+            "occurrence_id": "occ-019",
+            "start": 558.0
+          },
+          {
+            "occurrence_id": "occ-020",
+            "start": 562.8
+          },
+          {
+            "occurrence_id": "occ-021",
+            "start": 567.7
+          },
+          {
+            "occurrence_id": "occ-022",
+            "start": 572.6
+          },
+          {
+            "occurrence_id": "occ-023",
+            "start": 578.0
+          }
+        ],
+        "uncertain_occurrence_ids": [
+          "occ-017"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 18019,
+        "completion_tokens": 9445,
+        "total_tokens": 27464,
+        "cost": 0.048933,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 16245,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.048933,
+          "upstream_inference_prompt_cost": 0.01351425,
+          "upstream_inference_completions_cost": 0.03541875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8739,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "resolved_model": "google/gemini-3.7-flash"
+    },
+    "coarse_sequence": [
+      {
+        "occurrence_id": "occ-000",
+        "ref": "intro-instrumental",
+        "section": "instrumental",
+        "repeats": 1,
+        "start": 0.0,
+        "end": 121.3
+      },
+      {
+        "occurrence_id": "occ-001",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 121.3,
+        "end": 133.7
+      },
+      {
+        "occurrence_id": "occ-002",
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 133.7,
+        "end": 181.8
+      },
+      {
+        "occurrence_id": "occ-003",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 2,
+        "start": 181.8,
+        "end": 191.7
+      },
+      {
+        "occurrence_id": "occ-004",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 2,
+        "start": 191.7,
+        "end": 201.5
+      },
+      {
+        "occurrence_id": "occ-005",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 201.5,
+        "end": 206.3
+      },
+      {
+        "occurrence_id": "occ-006",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 206.3,
+        "end": 263.9
+      },
+      {
+        "occurrence_id": "occ-007",
+        "ref": "verse-1-line-1",
+        "section": "verse",
+        "repeats": 2,
+        "start": 263.9,
+        "end": 273.7
+      },
+      {
+        "occurrence_id": "occ-008",
+        "ref": "verse-1-line-2",
+        "section": "verse",
+        "repeats": 2,
+        "start": 273.7,
+        "end": 283.6
+      },
+      {
+        "occurrence_id": "occ-009",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 283.6,
+        "end": 288.4
+      },
+      {
+        "occurrence_id": "occ-010",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 288.4,
+        "end": 386.9
+      },
+      {
+        "occurrence_id": "occ-011",
+        "ref": "verse-2-line-1",
+        "section": "verse",
+        "repeats": 2,
+        "start": 386.9,
+        "end": 396.7
+      },
+      {
+        "occurrence_id": "occ-012",
+        "ref": "verse-2-line-2",
+        "section": "verse",
+        "repeats": 2,
+        "start": 396.7,
+        "end": 406.6
+      },
+      {
+        "occurrence_id": "occ-013",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 406.6,
+        "end": 411.4
+      },
+      {
+        "occurrence_id": "occ-014",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 411.4,
+        "end": 416.3
+      },
+      {
+        "occurrence_id": "occ-015",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 416.3,
+        "end": 421.2
+      },
+      {
+        "occurrence_id": "occ-016",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 421.2,
+        "end": 538.4
+      },
+      {
+        "occurrence_id": "occ-017",
+        "ref": "verse-3-line-1",
+        "section": "verse",
+        "repeats": 2,
+        "start": 538.4,
+        "end": 548.2
+      },
+      {
+        "occurrence_id": "occ-018",
+        "ref": "verse-3-line-2",
+        "section": "verse",
+        "repeats": 2,
+        "start": 548.2,
+        "end": 558.0
+      },
+      {
+        "occurrence_id": "occ-019",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 558.0,
+        "end": 562.8
+      },
+      {
+        "occurrence_id": "occ-020",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 562.8,
+        "end": 567.7
+      },
+      {
+        "occurrence_id": "occ-021",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 567.7,
+        "end": 572.6
+      },
+      {
+        "occurrence_id": "occ-022",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 572.6,
+        "end": 578.0
+      },
+      {
+        "occurrence_id": "occ-023",
+        "ref": "outro-instrumental",
+        "section": "instrumental",
+        "repeats": 1,
+        "start": 578.0,
+        "end": 649.801
+      }
+    ],
+    "refinements": [
+      {
+        "index": 0,
+        "grid": "verification",
+        "core_start": 0.0,
+        "core_end": 120.0,
+        "clip_start": 0.0,
+        "clip_end": 135.0,
+        "target_indices": [
+          0
+        ],
+        "cache_key": {
+          "model": "google/gemini-3.7-flash",
+          "reasoning_effort": "high",
+          "max_coarse_delta": 20.0,
+          "clip_start": 0.0,
+          "clip_end": 135.0,
+          "targets": [
+            {
+              "occurrence_id": "occ-000",
+              "ref": "intro-instrumental",
+              "repeats": 1,
+              "source_text": "[वाद्य संगीत: सितार आलाप]",
+              "roman": "[Instrumental: Sitāra ālāpa]",
+              "section": "instrumental",
+              "coarse_source_start": 0.0
+            }
+          ],
+          "preceding_context": null,
+          "following_context": {
+            "occurrence_id": "occ-001",
+            "ref": "refrain-1",
+            "repeats": 1,
+            "source_text": "रहना नहीं इस देस में",
+            "roman": "rahanā nahīṁ isa desa meṁ",
+            "section": "refrain"
+          }
+        },
+        "targets": [
+          "occ-000"
+        ],
+        "starts": [
+          {
+            "occurrence_id": "occ-000",
+            "start": 0.0
+          }
+        ],
+        "uncertain_ids": [],
+        "response": {
+          "packet": {
+            "starts": [
+              {
+                "occurrence_id": "occ-000",
+                "start": 0.0
+              }
+            ],
+            "uncertain_occurrence_ids": []
+          },
+          "usage": {
+            "prompt_tokens": 3727,
+            "completion_tokens": 407,
+            "total_tokens": 4134,
+            "cost": 0.0043215,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 3376,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0043215,
+              "upstream_inference_prompt_cost": 0.00279525,
+              "upstream_inference_completions_cost": 0.00152625
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 380,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "resolved_model": "google/gemini-3.7-flash"
+        },
+        "validation_errors": []
+      },
+      {
+        "index": 1,
+        "grid": "verification",
+        "core_start": 120.0,
+        "core_end": 240.0,
+        "clip_start": 105.0,
+        "clip_end": 255.0,
+        "target_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cache_key": {
+          "model": "google/gemini-3.7-flash",
+          "reasoning_effort": "high",
+          "max_coarse_delta": 20.0,
+          "clip_start": 105.0,
+          "clip_end": 255.0,
+          "targets": [
+            {
+              "occurrence_id": "occ-001",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 121.3
+            },
+            {
+              "occurrence_id": "occ-002",
+              "ref": "refrain-2",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 133.7
+            },
+            {
+              "occurrence_id": "occ-003",
+              "ref": "refrain-1",
+              "repeats": 2,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 181.8
+            },
+            {
+              "occurrence_id": "occ-004",
+              "ref": "refrain-des-veerana",
+              "repeats": 2,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 191.7
+            },
+            {
+              "occurrence_id": "occ-005",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 201.5
+            },
+            {
+              "occurrence_id": "occ-006",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 206.3
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-000",
+            "ref": "intro-instrumental",
+            "repeats": 1,
+            "source_text": "[वाद्य संगीत: सितार आलाप]",
+            "roman": "[Instrumental: Sitāra ālāpa]",
+            "section": "instrumental"
+          },
+          "following_context": {
+            "occurrence_id": "occ-007",
+            "ref": "verse-1-line-1",
+            "repeats": 2,
+            "source_text": "ये संसार कागज़ की पुड़िया",
+            "roman": "ye sansāra kāgaza kī puṛiyā",
+            "section": "verse"
+          }
+        },
+        "targets": [
+          "occ-001",
+          "occ-002",
+          "occ-003",
+          "occ-004",
+          "occ-005",
+          "occ-006"
+        ],
+        "starts": [
+          {
+            "occurrence_id": "occ-001",
+            "start": 121.0
+          },
+          {
+            "occurrence_id": "occ-002",
+            "start": 133.9
+          },
+          {
+            "occurrence_id": "occ-003",
+            "start": 181.4
+          },
+          {
+            "occurrence_id": "occ-004",
+            "start": 191.3
+          },
+          {
+            "occurrence_id": "occ-005",
+            "start": 201.3
+          },
+          {
+            "occurrence_id": "occ-006",
+            "start": 206.2
+          }
+        ],
+        "uncertain_ids": [],
+        "response": {
+          "packet": {
+            "starts": [
+              {
+                "occurrence_id": "occ-001",
+                "start": 16.0
+              },
+              {
+                "occurrence_id": "occ-002",
+                "start": 28.9
+              },
+              {
+                "occurrence_id": "occ-003",
+                "start": 76.4
+              },
+              {
+                "occurrence_id": "occ-004",
+                "start": 86.3
+              },
+              {
+                "occurrence_id": "occ-005",
+                "start": 96.3
+              },
+              {
+                "occurrence_id": "occ-006",
+                "start": 101.2
+              }
+            ],
+            "uncertain_occurrence_ids": []
+          },
+          "usage": {
+            "prompt_tokens": 4579,
+            "completion_tokens": 1797,
+            "total_tokens": 6376,
+            "cost": 0.010173,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 3751,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.010173,
+              "upstream_inference_prompt_cost": 0.00343425,
+              "upstream_inference_completions_cost": 0.00673875
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1658,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "resolved_model": "google/gemini-3.7-flash"
+        },
+        "validation_errors": []
+      },
+      {
+        "index": 2,
+        "grid": "verification",
+        "core_start": 240.0,
+        "core_end": 360.0,
+        "clip_start": 225.0,
+        "clip_end": 375.0,
+        "target_indices": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "cache_key": {
+          "model": "google/gemini-3.7-flash",
+          "reasoning_effort": "high",
+          "max_coarse_delta": 20.0,
+          "clip_start": 225.0,
+          "clip_end": 375.0,
+          "targets": [
+            {
+              "occurrence_id": "occ-007",
+              "ref": "verse-1-line-1",
+              "repeats": 2,
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā",
+              "section": "verse",
+              "coarse_source_start": 263.9
+            },
+            {
+              "occurrence_id": "occ-008",
+              "ref": "verse-1-line-2",
+              "repeats": 2,
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai",
+              "section": "verse",
+              "coarse_source_start": 273.7
+            },
+            {
+              "occurrence_id": "occ-009",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 283.6
+            },
+            {
+              "occurrence_id": "occ-010",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 288.4
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-006",
+            "ref": "refrain-des-veerana",
+            "repeats": 1,
+            "source_text": "देस ये वीराना है",
+            "roman": "desa ye vīrānā hai",
+            "section": "refrain"
+          },
+          "following_context": {
+            "occurrence_id": "occ-011",
+            "ref": "verse-2-line-1",
+            "repeats": 2,
+            "source_text": "ये संसार झाड़ो-झींखर",
+            "roman": "ye sansāra jhāṛō-jhīṅkhara",
+            "section": "verse"
+          }
+        },
+        "targets": [
+          "occ-007",
+          "occ-008",
+          "occ-009",
+          "occ-010"
+        ],
+        "starts": [
+          {
+            "occurrence_id": "occ-007",
+            "start": 263.98
+          },
+          {
+            "occurrence_id": "occ-008",
+            "start": 273.84
+          },
+          {
+            "occurrence_id": "occ-009",
+            "start": 283.5
+          },
+          {
+            "occurrence_id": "occ-010",
+            "start": 288.48
+          }
+        ],
+        "uncertain_ids": [],
+        "response": {
+          "packet": {
+            "starts": [
+              {
+                "occurrence_id": "occ-007",
+                "start": 38.98
+              },
+              {
+                "occurrence_id": "occ-008",
+                "start": 48.84
+              },
+              {
+                "occurrence_id": "occ-009",
+                "start": 58.5
+              },
+              {
+                "occurrence_id": "occ-010",
+                "start": 63.48
+              }
+            ],
+            "uncertain_occurrence_ids": []
+          },
+          "usage": {
+            "prompt_tokens": 4418,
+            "completion_tokens": 1552,
+            "total_tokens": 5970,
+            "cost": 0.0091335,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 3751,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0091335,
+              "upstream_inference_prompt_cost": 0.0033135,
+              "upstream_inference_completions_cost": 0.00582
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1491,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "resolved_model": "google/gemini-3.7-flash"
+        },
+        "validation_errors": []
+      },
+      {
+        "index": 3,
+        "grid": "verification",
+        "core_start": 360.0,
+        "core_end": 480.0,
+        "clip_start": 345.0,
+        "clip_end": 495.0,
+        "target_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "cache_key": {
+          "model": "google/gemini-3.7-flash",
+          "reasoning_effort": "high",
+          "max_coarse_delta": 20.0,
+          "clip_start": 345.0,
+          "clip_end": 495.0,
+          "targets": [
+            {
+              "occurrence_id": "occ-011",
+              "ref": "verse-2-line-1",
+              "repeats": 2,
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara",
+              "section": "verse",
+              "coarse_source_start": 386.9
+            },
+            {
+              "occurrence_id": "occ-012",
+              "ref": "verse-2-line-2",
+              "repeats": 2,
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai",
+              "section": "verse",
+              "coarse_source_start": 396.7
+            },
+            {
+              "occurrence_id": "occ-013",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 406.6
+            },
+            {
+              "occurrence_id": "occ-014",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 411.4
+            },
+            {
+              "occurrence_id": "occ-015",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 416.3
+            },
+            {
+              "occurrence_id": "occ-016",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 421.2
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-010",
+            "ref": "refrain-des-veerana",
+            "repeats": 1,
+            "source_text": "देस ये वीराना है",
+            "roman": "desa ye vīrānā hai",
+            "section": "refrain"
+          },
+          "following_context": {
+            "occurrence_id": "occ-017",
+            "ref": "verse-3-line-1",
+            "repeats": 2,
+            "source_text": "कहत कबीर सुनो भाई साधो",
+            "roman": "kahata kabīra sunō bhāī sādhō",
+            "section": "verse"
+          }
+        },
+        "targets": [
+          "occ-011",
+          "occ-012",
+          "occ-013",
+          "occ-014",
+          "occ-015",
+          "occ-016"
+        ],
+        "starts": [
+          {
+            "occurrence_id": "occ-011",
+            "start": 387.1
+          },
+          {
+            "occurrence_id": "occ-012",
+            "start": 396.8
+          },
+          {
+            "occurrence_id": "occ-013",
+            "start": 406.68
+          },
+          {
+            "occurrence_id": "occ-014",
+            "start": 411.7
+          },
+          {
+            "occurrence_id": "occ-015",
+            "start": 416.65
+          },
+          {
+            "occurrence_id": "occ-016",
+            "start": 421.65
+          }
+        ],
+        "uncertain_ids": [],
+        "response": {
+          "packet": {
+            "starts": [
+              {
+                "occurrence_id": "occ-011",
+                "start": 42.1
+              },
+              {
+                "occurrence_id": "occ-012",
+                "start": 51.8
+              },
+              {
+                "occurrence_id": "occ-013",
+                "start": 61.68
+              },
+              {
+                "occurrence_id": "occ-014",
+                "start": 66.7
+              },
+              {
+                "occurrence_id": "occ-015",
+                "start": 71.65
+              },
+              {
+                "occurrence_id": "occ-016",
+                "start": 76.65
+              }
+            ],
+            "uncertain_occurrence_ids": []
+          },
+          "usage": {
+            "prompt_tokens": 4574,
+            "completion_tokens": 1736,
+            "total_tokens": 6310,
+            "cost": 0.0099405,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 3751,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0099405,
+              "upstream_inference_prompt_cost": 0.0034305,
+              "upstream_inference_completions_cost": 0.00651
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1595,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "resolved_model": "google/gemini-3.7-flash"
+        },
+        "validation_errors": []
+      },
+      {
+        "index": 4,
+        "grid": "verification",
+        "core_start": 480.0,
+        "core_end": 600.0,
+        "clip_start": 465.0,
+        "clip_end": 615.0,
+        "target_indices": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "cache_key": {
+          "model": "google/gemini-3.7-flash",
+          "reasoning_effort": "high",
+          "max_coarse_delta": 20.0,
+          "clip_start": 465.0,
+          "clip_end": 615.0,
+          "targets": [
+            {
+              "occurrence_id": "occ-017",
+              "ref": "verse-3-line-1",
+              "repeats": 2,
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō",
+              "section": "verse",
+              "coarse_source_start": 538.4
+            },
+            {
+              "occurrence_id": "occ-018",
+              "ref": "verse-3-line-2",
+              "repeats": 2,
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai",
+              "section": "verse",
+              "coarse_source_start": 548.2
+            },
+            {
+              "occurrence_id": "occ-019",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 558.0
+            },
+            {
+              "occurrence_id": "occ-020",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 562.8
+            },
+            {
+              "occurrence_id": "occ-021",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 567.7
+            },
+            {
+              "occurrence_id": "occ-022",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 572.6
+            },
+            {
+              "occurrence_id": "occ-023",
+              "ref": "outro-instrumental",
+              "repeats": 1,
+              "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+              "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]",
+              "section": "instrumental",
+              "coarse_source_start": 578.0
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-016",
+            "ref": "refrain-des-veerana",
+            "repeats": 1,
+            "source_text": "देस ये वीराना है",
+            "roman": "desa ye vīrānā hai",
+            "section": "refrain"
+          },
+          "following_context": null
+        },
+        "targets": [
+          "occ-017",
+          "occ-018",
+          "occ-019",
+          "occ-020",
+          "occ-021",
+          "occ-022",
+          "occ-023"
+        ],
+        "starts": [
+          {
+            "occurrence_id": "occ-018",
+            "start": 543.2
+          },
+          {
+            "occurrence_id": "occ-019",
+            "start": 552.8
+          },
+          {
+            "occurrence_id": "occ-020",
+            "start": 557.7
+          },
+          {
+            "occurrence_id": "occ-021",
+            "start": 562.7
+          },
+          {
+            "occurrence_id": "occ-022",
+            "start": 567.6
+          },
+          {
+            "occurrence_id": "occ-023",
+            "start": 572.8
+          }
+        ],
+        "uncertain_ids": [],
+        "response": {
+          "packet": {
+            "starts": [
+              {
+                "occurrence_id": "occ-017",
+                "start": 53.3
+              },
+              {
+                "occurrence_id": "occ-018",
+                "start": 78.2
+              },
+              {
+                "occurrence_id": "occ-019",
+                "start": 87.8
+              },
+              {
+                "occurrence_id": "occ-020",
+                "start": 92.7
+              },
+              {
+                "occurrence_id": "occ-021",
+                "start": 97.7
+              },
+              {
+                "occurrence_id": "occ-022",
+                "start": 102.6
+              },
+              {
+                "occurrence_id": "occ-023",
+                "start": 107.8
+              }
+            ],
+            "uncertain_occurrence_ids": []
+          },
+          "usage": {
+            "prompt_tokens": 4595,
+            "completion_tokens": 3533,
+            "total_tokens": 8128,
+            "cost": 0.016695,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 3751,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.016695,
+              "upstream_inference_prompt_cost": 0.00344625,
+              "upstream_inference_completions_cost": 0.01324875
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3359,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "resolved_model": "google/gemini-3.7-flash"
+        },
+        "validation_errors": [
+          "chunk start[0] is invalid, out of clip, or non-increasing"
+        ]
+      },
+      {
+        "index": 4,
+        "grid": "dispute-verification",
+        "core_start": 480.0,
+        "core_end": 600.0,
+        "clip_start": 465.0,
+        "clip_end": 615.0,
+        "target_indices": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "cache_key": {
+          "model": "google/gemini-3.7-flash",
+          "reasoning_effort": "high",
+          "max_coarse_delta": 20.0,
+          "clip_start": 465.0,
+          "clip_end": 615.0,
+          "targets": [
+            {
+              "occurrence_id": "occ-017",
+              "ref": "verse-3-line-1",
+              "repeats": 2,
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō",
+              "section": "verse",
+              "coarse_source_start": 538.4
+            },
+            {
+              "occurrence_id": "occ-018",
+              "ref": "verse-3-line-2",
+              "repeats": 2,
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai",
+              "section": "verse",
+              "coarse_source_start": 545.7
+            },
+            {
+              "occurrence_id": "occ-019",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 555.4
+            },
+            {
+              "occurrence_id": "occ-020",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 560.25
+            },
+            {
+              "occurrence_id": "occ-021",
+              "ref": "refrain-1",
+              "repeats": 1,
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ",
+              "section": "refrain",
+              "coarse_source_start": 565.2
+            },
+            {
+              "occurrence_id": "occ-022",
+              "ref": "refrain-des-veerana",
+              "repeats": 1,
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai",
+              "section": "refrain",
+              "coarse_source_start": 570.1
+            },
+            {
+              "occurrence_id": "occ-023",
+              "ref": "outro-instrumental",
+              "repeats": 1,
+              "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+              "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]",
+              "section": "instrumental",
+              "coarse_source_start": 575.4
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-016",
+            "ref": "refrain-des-veerana",
+            "repeats": 1,
+            "source_text": "देस ये वीराना है",
+            "roman": "desa ye vīrānā hai",
+            "section": "refrain"
+          },
+          "following_context": null
+        },
+        "targets": [
+          "occ-017",
+          "occ-018",
+          "occ-019",
+          "occ-020",
+          "occ-021",
+          "occ-022",
+          "occ-023"
+        ],
+        "starts": [
+          {
+            "occurrence_id": "occ-018",
+            "start": 543.25
+          },
+          {
+            "occurrence_id": "occ-019",
+            "start": 552.95
+          },
+          {
+            "occurrence_id": "occ-020",
+            "start": 557.85
+          },
+          {
+            "occurrence_id": "occ-021",
+            "start": 562.75
+          },
+          {
+            "occurrence_id": "occ-022",
+            "start": 567.65
+          },
+          {
+            "occurrence_id": "occ-023",
+            "start": 572.4
+          }
+        ],
+        "uncertain_ids": [],
+        "response": {
+          "packet": {
+            "starts": [
+              {
+                "occurrence_id": "occ-017",
+                "start": 53.35
+              },
+              {
+                "occurrence_id": "occ-018",
+                "start": 78.25
+              },
+              {
+                "occurrence_id": "occ-019",
+                "start": 87.95
+              },
+              {
+                "occurrence_id": "occ-020",
+                "start": 92.85
+              },
+              {
+                "occurrence_id": "occ-021",
+                "start": 97.75
+              },
+              {
+                "occurrence_id": "occ-022",
+                "start": 102.65
+              },
+              {
+                "occurrence_id": "occ-023",
+                "start": 107.4
+              }
+            ],
+            "uncertain_occurrence_ids": []
+          },
+          "usage": {
+            "prompt_tokens": 4596,
+            "completion_tokens": 2921,
+            "total_tokens": 7517,
+            "cost": 0.01440075,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 3751,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01440075,
+              "upstream_inference_prompt_cost": 0.003447,
+              "upstream_inference_completions_cost": 0.01095375
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2747,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "resolved_model": "google/gemini-3.7-flash"
+        },
+        "validation_errors": [
+          "chunk start[0] is invalid, out of clip, or non-increasing"
+        ]
+      },
+      {
+        "kind": "single",
+        "occurrence_id": "occ-017",
+        "candidate": 538.4,
+        "candidate_measurements": [
+          538.4,
+          538.18
+        ],
+        "start": 538.18,
+        "attempts": [
+          {
+            "attempt": 1,
+            "start": 538.18,
+            "uncertainty_note": "",
+            "response": {
+              "packet": {
+                "occurrence_id": "occ-017",
+                "start": 19.78,
+                "uncertainty": ""
+              },
+              "usage": {
+                "prompt_tokens": 1357,
+                "completion_tokens": 3933,
+                "total_tokens": 5290,
+                "cost": 0.0157665,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "audio_tokens": 1000,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": 0.0157665,
+                  "upstream_inference_prompt_cost": 0.00101775,
+                  "upstream_inference_completions_cost": 0.01474875
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 3909,
+                  "image_tokens": 0,
+                  "audio_tokens": 0
+                }
+              },
+              "resolved_model": "google/gemini-3.7-flash"
+            },
+            "validation_errors": []
+          }
+        ],
+        "validation_errors": []
+      },
+      {
+        "kind": "consensus",
+        "starts": [
+          {
+            "occurrence_id": "occ-000",
+            "measurements": [
+              0.0,
+              0.0
+            ],
+            "start": 0.0
+          },
+          {
+            "occurrence_id": "occ-001",
+            "measurements": [
+              121.3,
+              121.0
+            ],
+            "start": 121.15
+          },
+          {
+            "occurrence_id": "occ-002",
+            "measurements": [
+              133.7,
+              133.9
+            ],
+            "start": 133.8
+          },
+          {
+            "occurrence_id": "occ-003",
+            "measurements": [
+              181.8,
+              181.4
+            ],
+            "start": 181.6
+          },
+          {
+            "occurrence_id": "occ-004",
+            "measurements": [
+              191.7,
+              191.3
+            ],
+            "start": 191.5
+          },
+          {
+            "occurrence_id": "occ-005",
+            "measurements": [
+              201.5,
+              201.3
+            ],
+            "start": 201.4
+          },
+          {
+            "occurrence_id": "occ-006",
+            "measurements": [
+              206.3,
+              206.2
+            ],
+            "start": 206.25
+          },
+          {
+            "occurrence_id": "occ-007",
+            "measurements": [
+              263.9,
+              263.98
+            ],
+            "start": 263.94
+          },
+          {
+            "occurrence_id": "occ-008",
+            "measurements": [
+              273.7,
+              273.84
+            ],
+            "start": 273.77
+          },
+          {
+            "occurrence_id": "occ-009",
+            "measurements": [
+              283.6,
+              283.5
+            ],
+            "start": 283.55
+          },
+          {
+            "occurrence_id": "occ-010",
+            "measurements": [
+              288.4,
+              288.48
+            ],
+            "start": 288.44
+          },
+          {
+            "occurrence_id": "occ-011",
+            "measurements": [
+              386.9,
+              387.1
+            ],
+            "start": 387.0
+          },
+          {
+            "occurrence_id": "occ-012",
+            "measurements": [
+              396.7,
+              396.8
+            ],
+            "start": 396.75
+          },
+          {
+            "occurrence_id": "occ-013",
+            "measurements": [
+              406.6,
+              406.68
+            ],
+            "start": 406.64
+          },
+          {
+            "occurrence_id": "occ-014",
+            "measurements": [
+              411.4,
+              411.7
+            ],
+            "start": 411.55
+          },
+          {
+            "occurrence_id": "occ-015",
+            "measurements": [
+              416.3,
+              416.65
+            ],
+            "start": 416.475
+          },
+          {
+            "occurrence_id": "occ-016",
+            "measurements": [
+              421.2,
+              421.65
+            ],
+            "start": 421.425
+          },
+          {
+            "occurrence_id": "occ-017",
+            "measurements": [
+              538.4,
+              538.18
+            ],
+            "start": 538.29
+          },
+          {
+            "occurrence_id": "occ-018",
+            "measurements": [
+              548.2,
+              543.2,
+              543.25
+            ],
+            "start": 543.225
+          },
+          {
+            "occurrence_id": "occ-019",
+            "measurements": [
+              558.0,
+              552.8,
+              552.95
+            ],
+            "start": 552.875
+          },
+          {
+            "occurrence_id": "occ-020",
+            "measurements": [
+              562.8,
+              557.7,
+              557.85
+            ],
+            "start": 557.775
+          },
+          {
+            "occurrence_id": "occ-021",
+            "measurements": [
+              567.7,
+              562.7,
+              562.75
+            ],
+            "start": 562.725
+          },
+          {
+            "occurrence_id": "occ-022",
+            "measurements": [
+              572.6,
+              567.6,
+              567.65
+            ],
+            "start": 567.625
+          },
+          {
+            "occurrence_id": "occ-023",
+            "measurements": [
+              578.0,
+              572.8,
+              572.4
+            ],
+            "start": 572.6
+          }
+        ],
+        "validation_errors": []
+      }
+    ],
+    "sequence": [
+      {
+        "occurrence_id": "occ-000",
+        "ref": "intro-instrumental",
+        "section": "instrumental",
+        "repeats": 1,
+        "start": 0.0,
+        "end": 121.15
+      },
+      {
+        "occurrence_id": "occ-001",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 121.15,
+        "end": 133.8
+      },
+      {
+        "occurrence_id": "occ-002",
+        "ref": "refrain-2",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 133.8,
+        "end": 181.6
+      },
+      {
+        "occurrence_id": "occ-003",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 2,
+        "start": 181.6,
+        "end": 191.5
+      },
+      {
+        "occurrence_id": "occ-004",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 2,
+        "start": 191.5,
+        "end": 201.4
+      },
+      {
+        "occurrence_id": "occ-005",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 201.4,
+        "end": 206.25
+      },
+      {
+        "occurrence_id": "occ-006",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 206.25,
+        "end": 263.94
+      },
+      {
+        "occurrence_id": "occ-007",
+        "ref": "verse-1-line-1",
+        "section": "verse",
+        "repeats": 2,
+        "start": 263.94,
+        "end": 273.77
+      },
+      {
+        "occurrence_id": "occ-008",
+        "ref": "verse-1-line-2",
+        "section": "verse",
+        "repeats": 2,
+        "start": 273.77,
+        "end": 283.55
+      },
+      {
+        "occurrence_id": "occ-009",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 283.55,
+        "end": 288.44
+      },
+      {
+        "occurrence_id": "occ-010",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 288.44,
+        "end": 387.0
+      },
+      {
+        "occurrence_id": "occ-011",
+        "ref": "verse-2-line-1",
+        "section": "verse",
+        "repeats": 2,
+        "start": 387.0,
+        "end": 396.75
+      },
+      {
+        "occurrence_id": "occ-012",
+        "ref": "verse-2-line-2",
+        "section": "verse",
+        "repeats": 2,
+        "start": 396.75,
+        "end": 406.64
+      },
+      {
+        "occurrence_id": "occ-013",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 406.64,
+        "end": 411.55
+      },
+      {
+        "occurrence_id": "occ-014",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 411.55,
+        "end": 416.475
+      },
+      {
+        "occurrence_id": "occ-015",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 416.475,
+        "end": 421.425
+      },
+      {
+        "occurrence_id": "occ-016",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 421.425,
+        "end": 538.29
+      },
+      {
+        "occurrence_id": "occ-017",
+        "ref": "verse-3-line-1",
+        "section": "verse",
+        "repeats": 2,
+        "start": 538.29,
+        "end": 543.225
+      },
+      {
+        "occurrence_id": "occ-018",
+        "ref": "verse-3-line-2",
+        "section": "verse",
+        "repeats": 2,
+        "start": 543.225,
+        "end": 552.875
+      },
+      {
+        "occurrence_id": "occ-019",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 552.875,
+        "end": 557.775
+      },
+      {
+        "occurrence_id": "occ-020",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 557.775,
+        "end": 562.725
+      },
+      {
+        "occurrence_id": "occ-021",
+        "ref": "refrain-1",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 562.725,
+        "end": 567.625
+      },
+      {
+        "occurrence_id": "occ-022",
+        "ref": "refrain-des-veerana",
+        "section": "refrain",
+        "repeats": 1,
+        "start": 567.625,
+        "end": 572.6
+      },
+      {
+        "occurrence_id": "occ-023",
+        "ref": "outro-instrumental",
+        "section": "instrumental",
+        "repeats": 1,
+        "start": 572.6,
+        "end": 649.801
+      }
+    ],
+    "uncertain_occurrence_ids": [
+      "occ-017"
+    ],
+    "validation_errors": [],
+    "publication_status": "review-required"
+  },
+  "verification": {
+    "index": 4,
+    "grid": "verification",
+    "core_start": 480.0,
+    "core_end": 600.0,
+    "clip_start": 465.0,
+    "clip_end": 615.0,
+    "target_indices": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "cache_key": {
+      "model": "google/gemini-3.7-flash",
+      "reasoning_effort": "high",
+      "max_coarse_delta": 20.0,
+      "clip_start": 465.0,
+      "clip_end": 615.0,
+      "targets": [
+        {
+          "occurrence_id": "occ-017",
+          "ref": "verse-3-line-1",
+          "repeats": 2,
+          "source_text": "कहत कबीर सुनो भाई साधो",
+          "roman": "kahata kabīra sunō bhāī sādhō",
+          "section": "verse",
+          "coarse_source_start": 538.4
+        },
+        {
+          "occurrence_id": "occ-018",
+          "ref": "verse-3-line-2",
+          "repeats": 2,
+          "source_text": "सतगुरु नाम ठिकाना है",
+          "roman": "sataguru nāma ṭhikānā hai",
+          "section": "verse",
+          "coarse_source_start": 548.2
+        },
+        {
+          "occurrence_id": "occ-019",
+          "ref": "refrain-1",
+          "repeats": 1,
+          "source_text": "रहना नहीं इस देस में",
+          "roman": "rahanā nahīṁ isa desa meṁ",
+          "section": "refrain",
+          "coarse_source_start": 558.0
+        },
+        {
+          "occurrence_id": "occ-020",
+          "ref": "refrain-des-veerana",
+          "repeats": 1,
+          "source_text": "देस ये वीराना है",
+          "roman": "desa ye vīrānā hai",
+          "section": "refrain",
+          "coarse_source_start": 562.8
+        },
+        {
+          "occurrence_id": "occ-021",
+          "ref": "refrain-1",
+          "repeats": 1,
+          "source_text": "रहना नहीं इस देस में",
+          "roman": "rahanā nahīṁ isa desa meṁ",
+          "section": "refrain",
+          "coarse_source_start": 567.7
+        },
+        {
+          "occurrence_id": "occ-022",
+          "ref": "refrain-des-veerana",
+          "repeats": 1,
+          "source_text": "देस ये वीराना है",
+          "roman": "desa ye vīrānā hai",
+          "section": "refrain",
+          "coarse_source_start": 572.6
+        },
+        {
+          "occurrence_id": "occ-023",
+          "ref": "outro-instrumental",
+          "repeats": 1,
+          "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+          "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]",
+          "section": "instrumental",
+          "coarse_source_start": 578.0
+        }
+      ],
+      "preceding_context": {
+        "occurrence_id": "occ-016",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      "following_context": null
+    },
+    "targets": [
+      "occ-017",
+      "occ-018",
+      "occ-019",
+      "occ-020",
+      "occ-021",
+      "occ-022",
+      "occ-023"
+    ],
+    "starts": [
+      {
+        "occurrence_id": "occ-018",
+        "start": 543.2
+      },
+      {
+        "occurrence_id": "occ-019",
+        "start": 552.8
+      },
+      {
+        "occurrence_id": "occ-020",
+        "start": 557.7
+      },
+      {
+        "occurrence_id": "occ-021",
+        "start": 562.7
+      },
+      {
+        "occurrence_id": "occ-022",
+        "start": 567.6
+      },
+      {
+        "occurrence_id": "occ-023",
+        "start": 572.8
+      }
+    ],
+    "uncertain_ids": [],
+    "response": {
+      "packet": {
+        "starts": [
+          {
+            "occurrence_id": "occ-017",
+            "start": 53.3
+          },
+          {
+            "occurrence_id": "occ-018",
+            "start": 78.2
+          },
+          {
+            "occurrence_id": "occ-019",
+            "start": 87.8
+          },
+          {
+            "occurrence_id": "occ-020",
+            "start": 92.7
+          },
+          {
+            "occurrence_id": "occ-021",
+            "start": 97.7
+          },
+          {
+            "occurrence_id": "occ-022",
+            "start": 102.6
+          },
+          {
+            "occurrence_id": "occ-023",
+            "start": 107.8
+          }
+        ],
+        "uncertain_occurrence_ids": []
+      },
+      "usage": {
+        "prompt_tokens": 4595,
+        "completion_tokens": 3533,
+        "total_tokens": 8128,
+        "cost": 0.016695,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 3751,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016695,
+          "upstream_inference_prompt_cost": 0.00344625,
+          "upstream_inference_completions_cost": 0.01324875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3359,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "resolved_model": "google/gemini-3.7-flash"
+    },
+    "validation_errors": [
+      "chunk start[0] is invalid, out of clip, or non-increasing"
+    ]
+  },
+  "dispute": {
+    "index": 4,
+    "grid": "dispute-verification",
+    "core_start": 480.0,
+    "core_end": 600.0,
+    "clip_start": 465.0,
+    "clip_end": 615.0,
+    "target_indices": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "cache_key": {
+      "model": "google/gemini-3.7-flash",
+      "reasoning_effort": "high",
+      "max_coarse_delta": 20.0,
+      "clip_start": 465.0,
+      "clip_end": 615.0,
+      "targets": [
+        {
+          "occurrence_id": "occ-017",
+          "ref": "verse-3-line-1",
+          "repeats": 2,
+          "source_text": "कहत कबीर सुनो भाई साधो",
+          "roman": "kahata kabīra sunō bhāī sādhō",
+          "section": "verse",
+          "coarse_source_start": 538.4
+        },
+        {
+          "occurrence_id": "occ-018",
+          "ref": "verse-3-line-2",
+          "repeats": 2,
+          "source_text": "सतगुरु नाम ठिकाना है",
+          "roman": "sataguru nāma ṭhikānā hai",
+          "section": "verse",
+          "coarse_source_start": 545.7
+        },
+        {
+          "occurrence_id": "occ-019",
+          "ref": "refrain-1",
+          "repeats": 1,
+          "source_text": "रहना नहीं इस देस में",
+          "roman": "rahanā nahīṁ isa desa meṁ",
+          "section": "refrain",
+          "coarse_source_start": 555.4
+        },
+        {
+          "occurrence_id": "occ-020",
+          "ref": "refrain-des-veerana",
+          "repeats": 1,
+          "source_text": "देस ये वीराना है",
+          "roman": "desa ye vīrānā hai",
+          "section": "refrain",
+          "coarse_source_start": 560.25
+        },
+        {
+          "occurrence_id": "occ-021",
+          "ref": "refrain-1",
+          "repeats": 1,
+          "source_text": "रहना नहीं इस देस में",
+          "roman": "rahanā nahīṁ isa desa meṁ",
+          "section": "refrain",
+          "coarse_source_start": 565.2
+        },
+        {
+          "occurrence_id": "occ-022",
+          "ref": "refrain-des-veerana",
+          "repeats": 1,
+          "source_text": "देस ये वीराना है",
+          "roman": "desa ye vīrānā hai",
+          "section": "refrain",
+          "coarse_source_start": 570.1
+        },
+        {
+          "occurrence_id": "occ-023",
+          "ref": "outro-instrumental",
+          "repeats": 1,
+          "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+          "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]",
+          "section": "instrumental",
+          "coarse_source_start": 575.4
+        }
+      ],
+      "preceding_context": {
+        "occurrence_id": "occ-016",
+        "ref": "refrain-des-veerana",
+        "repeats": 1,
+        "source_text": "देस ये वीराना है",
+        "roman": "desa ye vīrānā hai",
+        "section": "refrain"
+      },
+      "following_context": null
+    },
+    "targets": [
+      "occ-017",
+      "occ-018",
+      "occ-019",
+      "occ-020",
+      "occ-021",
+      "occ-022",
+      "occ-023"
+    ],
+    "starts": [
+      {
+        "occurrence_id": "occ-018",
+        "start": 543.25
+      },
+      {
+        "occurrence_id": "occ-019",
+        "start": 552.95
+      },
+      {
+        "occurrence_id": "occ-020",
+        "start": 557.85
+      },
+      {
+        "occurrence_id": "occ-021",
+        "start": 562.75
+      },
+      {
+        "occurrence_id": "occ-022",
+        "start": 567.65
+      },
+      {
+        "occurrence_id": "occ-023",
+        "start": 572.4
+      }
+    ],
+    "uncertain_ids": [],
+    "response": {
+      "packet": {
+        "starts": [
+          {
+            "occurrence_id": "occ-017",
+            "start": 53.35
+          },
+          {
+            "occurrence_id": "occ-018",
+            "start": 78.25
+          },
+          {
+            "occurrence_id": "occ-019",
+            "start": 87.95
+          },
+          {
+            "occurrence_id": "occ-020",
+            "start": 92.85
+          },
+          {
+            "occurrence_id": "occ-021",
+            "start": 97.75
+          },
+          {
+            "occurrence_id": "occ-022",
+            "start": 102.65
+          },
+          {
+            "occurrence_id": "occ-023",
+            "start": 107.4
+          }
+        ],
+        "uncertain_occurrence_ids": []
+      },
+      "usage": {
+        "prompt_tokens": 4596,
+        "completion_tokens": 2921,
+        "total_tokens": 7517,
+        "cost": 0.01440075,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 3751,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01440075,
+          "upstream_inference_prompt_cost": 0.003447,
+          "upstream_inference_completions_cost": 0.01095375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2747,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "resolved_model": "google/gemini-3.7-flash"
+    },
+    "validation_errors": [
+      "chunk start[0] is invalid, out of clip, or non-increasing"
+    ]
+  }
+}

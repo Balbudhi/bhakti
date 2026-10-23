@@ -1,0 +1,573 @@
+{
+  "metadata": {
+    "languages": [
+      "Hindi"
+    ],
+    "script": "Hindi",
+    "singer_candidates": [],
+    "credit_evidence": []
+  },
+  "verified_lines": [
+    {
+      "id": "line-000",
+      "source_text": "पत्ता बोला वृक्ष से",
+      "roman": "Pattā bolā vr̥kṣa se",
+      "kind": "refrain",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-001",
+      "source_text": "सुनो वृक्ष वनराय",
+      "roman": "Suno vr̥kṣa vanarāya",
+      "kind": "refrain",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-002",
+      "source_text": "अब के पतझड़ ना मिले",
+      "roman": "Aba ke patajhaṛa nā mile",
+      "kind": "refrain",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-003",
+      "source_text": "दूर पड़ेंगे जाय",
+      "roman": "Dūra paṛeṅge jāya",
+      "kind": "refrain",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-004",
+      "source_text": "वृक्ष बोला पत्ते से",
+      "roman": "Vr̥kṣa bolā patte se",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-005",
+      "source_text": "सुनो पत्ते मेरे भाई",
+      "roman": "Suno patte mere bhāī",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-006",
+      "source_text": "यही जगत की रीत है",
+      "roman": "Yahī jagata kī rīta hai",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-007",
+      "source_text": "इक आए इक जाय",
+      "roman": "Ika āye ika jāya",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-008",
+      "source_text": "पत्ता बोला",
+      "roman": "Pattā bolā",
+      "kind": "refrain",
+      "translation_notes": "Line trailing into instrumental interlude"
+    },
+    {
+      "id": "line-009",
+      "source_text": "साँस साँस में नाम ले",
+      "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-010",
+      "source_text": "बचे साँस ना कोई",
+      "roman": "Bace sām̐sa nā koī",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-011",
+      "source_text": "सांस सांस में नाम ले",
+      "roman": "sā̃s sā̃s mẽ nām le",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-012",
+      "source_text": "बचे सांस ना कोई",
+      "roman": "bace sā̃s nā koī",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-013",
+      "source_text": "क्या जाने फिर सांस का",
+      "roman": "kyā jāne phir sā̃s kā",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-014",
+      "source_text": "आवन होए ना होए",
+      "roman": "āvan hoe nā hoe",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-015",
+      "source_text": "बुरा जो देखन मैं चला",
+      "roman": "burā jo dekhan maĩ calā",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-016",
+      "source_text": "बुरा ना मिलिया कोई",
+      "roman": "burā nā miliyā koī",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-017",
+      "source_text": "जो मन खोजा आपना",
+      "roman": "jo man khojā āpanā",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-018",
+      "source_text": "मुझसे बुरा ना कोई",
+      "roman": "mujhse burā nā koī",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-019",
+      "source_text": "मांगन मरण समान है",
+      "roman": "mā̃gan maraṇ samān hai",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-020",
+      "source_text": "मत कोई मांगे भीख",
+      "roman": "mat koī mā̃ge bhīkh",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-021",
+      "source_text": "मांगन से मरना भला",
+      "roman": "mā̃gan se maranā bhalā",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-022",
+      "source_text": "ये सतगुर की सीख",
+      "roman": "ye satagur kī sīkh",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-023",
+      "source_text": "ऐसी बानी बोलिए",
+      "roman": "Aisī bānī boliye",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-024",
+      "source_text": "मन का आपा खोए",
+      "roman": "Man kā āpā khoye",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-025",
+      "source_text": "अपना तन शीतल करे",
+      "roman": "Apnā tan śītal kare",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-026",
+      "source_text": "औरों को सुख देय",
+      "roman": "Auroṁ ko sukh deye",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-027",
+      "source_text": "दुख में सुमिरन सब करे",
+      "roman": "Dukh meṁ sumiran sab kare",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-028",
+      "source_text": "सुख में करे न कोय",
+      "roman": "Sukh meṁ kare na koye",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-029",
+      "source_text": "जो सुख में सुमिरन करे",
+      "roman": "Jo sukh meṁ sumiran kare",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-030",
+      "source_text": "दुख काहे को होय",
+      "roman": "Dukh kāhe ko hoye",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-031",
+      "source_text": "कागा किसका धन हरे",
+      "roman": "Kāgā kiskā dhan hare",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-032",
+      "source_text": "कोयल किसको देय",
+      "roman": "Koyal kisko deye",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-033",
+      "source_text": "बस मीठा शब्द सुनाय के",
+      "roman": "Bas mīṭhā śabd sunāy ke",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-034",
+      "source_text": "मीठा शब्द सुनाय के",
+      "roman": "Mīṭhā śabd sunāy ke",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-035",
+      "source_text": "जग अपना कर लेय",
+      "roman": "Jag apnā kar leye",
+      "kind": "verse",
+      "translation_notes": ""
+    },
+    {
+      "id": "line-036",
+      "source_text": "पत्ता बोला वृक्ष से",
+      "roman": "Pattā bolā vṛkṣ se",
+      "kind": "refrain",
+      "translation_notes": ""
+    }
+  ],
+  "performance_order": [
+    {
+      "line_id": "line-000",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-001",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-002",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-003",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-000",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-001",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-002",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-003",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-004",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-005",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-006",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-006",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-007",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-008",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-009",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-010",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-011",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-012",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-013",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-013",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-014",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-015",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-015",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-016",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-015",
+      "occurrence": 3,
+      "notes": ""
+    },
+    {
+      "line_id": "line-016",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-017",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-017",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-018",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-019",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-020",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-019",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-020",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-021",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-021",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-022",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-023",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-024",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-023",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-024",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-025",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-025",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-026",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-027",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-027",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-028",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-027",
+      "occurrence": 3,
+      "notes": ""
+    },
+    {
+      "line_id": "line-028",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-029",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-029",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-030",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-031",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-032",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-031",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-032",
+      "occurrence": 2,
+      "notes": ""
+    },
+    {
+      "line_id": "line-033",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-034",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-035",
+      "occurrence": 1,
+      "notes": ""
+    },
+    {
+      "line_id": "line-036",
+      "occurrence": 1,
+      "notes": ""
+    }
+  ],
+  "changes": [
+    "deterministically merged 3 audited segments",
+    "[{\"left_segment\":0,\"right_segment\":1,\"left_overlap_occurrences\":2,\"right_overlap_occurrences\":2,\"score\":1.0,\"overlap_seconds\":30.0,\"replaced_edge_fragment\":false,\"candidate_left_count\":2,\"candidate_right_count\":2},{\"left_segment\":1,\"right_segment\":2,\"left_overlap_occurrences\":1,\"right_overlap_occurrences\":0,\"score\":1.0,\"overlap_seconds\":30.0,\"replaced_edge_fragment\":true,\"candidate_left_count\":1,\"candidate_right_count\":1}]"
+  ],
+  "uncertainties": []
+}

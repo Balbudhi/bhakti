@@ -31,7 +31,14 @@ Gemini's audio review. A text-only model has not listened to a recording.
 The completeness, first-syllable timing, contextual translation and independent
 review gates remain in force. `--generate-only` uses already-reviewed artifacts
 without a new API call. The whole-library repair task is recorded in
-`docs/LIBRARY_REPAIR_TASKS.md`.
+`docs/LIBRARY_REPAIR_TASKS.md`. The maintained operational guide is
+`docs/TRANSLATION_WORKFLOW.md`: source-language dictionary retrieval, context
+embeddings, gloss-first sense decisions, independent review, bounded stage-level
+Flash-to-Pro escalation, and private library inventory/run/resume. Embedding
+similarity never selects a meaning automatically. Keep all cited alternatives
+available and preserve owner English. The library runner has no publish flag;
+its source-adapter and end-to-end qualification status must be checked before
+claiming a full repair pass succeeded.
 
 For one or more local audio files or source URLs, use:
 
@@ -70,8 +77,7 @@ Song concurrency and API concurrency are separate. The default seven song
 workers keep local intake, FFmpeg, validation, and generation busy, while the
 shared provider scheduler permits at most three simultaneous outbound calls
 and staggers starts by 350 ms. It honors `Retry-After` and uses bounded exponential backoff.
-OpenRouter-specific routing applies only when that legacy provider is explicitly
-selected; Together does not inherit those fields. Tune only with `BHAKTI_API_MAX_CONCURRENCY`,
+OpenRouter-specific routing applies when OpenRouter is selected; Together does not inherit those fields. Tune only with `BHAKTI_API_MAX_CONCURRENCY`,
 `BHAKTI_API_MIN_START_INTERVAL`, or `OPENROUTER_PROVIDER_SORT`; never solve a
 429 by globally serializing the whole batch.
 

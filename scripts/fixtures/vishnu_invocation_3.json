@@ -1,0 +1,142 @@
+{
+  "source": "व्यासं वसिष्ठनप्तारं शक्तेः पौत्रमकल्मषम् ।\nपराशरात्मजं वन्दे शुकतातं तपोनिधिम् ॥",
+  "sourceLanguage": "sa",
+  "sourceWords": [
+    {
+      "text": "व्यासं",
+      "wordIndices": [
+        0
+      ]
+    },
+    {
+      "text": "वसिष्ठनप्तारं",
+      "wordIndices": [
+        1
+      ]
+    },
+    {
+      "text": "शक्तेः",
+      "wordIndices": [
+        2
+      ]
+    },
+    {
+      "text": "पौत्रमकल्मषम्",
+      "wordIndices": [
+        3,
+        4
+      ]
+    },
+    {
+      "text": "पराशरात्मजं",
+      "wordIndices": [
+        5
+      ]
+    },
+    {
+      "text": "वन्दे",
+      "wordIndices": [
+        6
+      ]
+    },
+    {
+      "text": "शुकतातं",
+      "wordIndices": [
+        7
+      ]
+    },
+    {
+      "text": "तपोनिधिम्",
+      "wordIndices": [
+        8
+      ]
+    }
+  ],
+  "roman": "vyāsaṃ vasiṣṭhanaptāraṃ śakteḥ pautramakalmaṣam |\nparāśarātmajaṃ vande śukatātaṃ taponidhim ||",
+  "english": "{6:I salute} {0:Vyāsa}, {1:the great-grandson of Vasiṣṭha}, {3:the grandson} {2:of Śakti}, {4:stainless}, {5:the son of Parāśara}, {7:the father of Śuka}, {8:the treasury of austerity}.",
+  "words": [
+    {
+      "roman": "vyāsaṃ",
+      "citationRoman": "vyāsam",
+      "deva": "व्यासम्",
+      "gloss": "poet of the Mahābhārata",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "vasiṣṭhanaptāraṃ",
+      "citationRoman": "vasiṣṭha-naptāram",
+      "deva": "वसिष्ठनप्तारम्",
+      "gloss": "the great-grandson of Vasiṣṭha",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "śakteḥ",
+      "citationRoman": "śakteḥ",
+      "deva": "शक्तेः",
+      "gloss": "of Śakti",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "pautram",
+      "citationRoman": "pautram",
+      "deva": "पौत्रम्",
+      "gloss": "the grandson",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "akalmaṣam",
+      "citationRoman": "akalmaṣam",
+      "deva": "अकल्मषम्",
+      "gloss": "stainless",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "parāśarātmajaṃ",
+      "citationRoman": "parāśara-ātmajam",
+      "deva": "पराशरआत्मजम्",
+      "gloss": "the son of Parāśara",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "vande",
+      "citationRoman": "vande",
+      "deva": "वन्दे",
+      "gloss": "I salute",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "śukatātaṃ",
+      "citationRoman": "śuka-tātam",
+      "deva": "शुकतातम्",
+      "gloss": "the father of Śuka",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    },
+    {
+      "roman": "taponidhim",
+      "citationRoman": "tapas-nidhim",
+      "deva": "तपस्निधिम्",
+      "gloss": "the treasury of austerity",
+      "analysis": "",
+      "concept_key": "",
+      "preserve_in_english": false
+    }
+  ],
+  "nameTable": false,
+  "grammarNote": ""
+}

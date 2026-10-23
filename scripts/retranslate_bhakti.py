@@ -23,6 +23,7 @@ from typing import Any
 import process_song_gemini as gemini
 import bhakti_pipeline as pipeline
 import editorial_baselines
+import bhakti_translation_policy as translation_policy
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -75,14 +76,15 @@ def source_lines(reader: dict[str, Any]) -> list[dict[str, Any]]:
         if not isinstance(line, dict) or not line.get("source") or not line.get("roman"):
             raise RuntimeError(f"{line_id}: missing source or roman")
         words = line.get("words", [])
-        tokens = [token for token in line["roman"].split() if any(c.isalnum() for c in token)]
         if not isinstance(words, list) or any(not isinstance(word, dict) for word in words):
             raise RuntimeError(f"{line_id}: invalid word map")
-        if [word.get("roman") for word in words] != tokens:
-            raise RuntimeError(f"{line_id}: existing word map requires token reconstruction")
+        try:
+            translation_policy.word_tokens(line)
+        except ValueError as exc:
+            raise RuntimeError(f"{line_id}: existing word map requires token reconstruction: {exc}") from exc
         errors = pipeline.source_word_map.validate_source_words(line["source"], words, line.get("sourceWords"))
         if errors:
-            raise RuntimeError(f"{line_id}: " + "; ".join(errors))
+            raise RuntimeError(f"{line_id}: existing word map invalid: " + "; ".join(errors))
     performed = [{"id": event["ref"], "source_text": lines[event["ref"]]["source"],
                   "roman": lines[event["ref"]]["roman"]} for event in sequence]
     contexts: dict[str, list[dict[str, Any]]] = {line_id: [] for line_id in ordered}
@@ -92,7 +94,10 @@ def source_lines(reader: dict[str, Any]) -> list[dict[str, Any]]:
             contexts[event["ref"]].append(context)
     return [{"id": line_id, "source_text": lines[line_id]["source"], "roman": lines[line_id]["roman"],
              "kind": next(event.get("section", "verse") for event in sequence if event["ref"] == line_id),
-             "performed_context": contexts[line_id]} for line_id in ordered]
+             "performed_context": contexts[line_id], "sourceWords": lines[line_id]["sourceWords"],
+             "lexical_tokens": translation_policy.word_tokens(lines[line_id]),
+             **({"sourceLanguage": lines[line_id]["sourceLanguage"]} if "sourceLanguage" in lines[line_id] else {})}
+            for line_id in ordered]
 
 
 def supplied_baseline(slug: str, reader: dict[str, Any]) -> Any:

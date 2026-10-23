@@ -1,0 +1,1413 @@
+{
+  "provenance": [
+    {
+      "path": "songs/patta-bola-vrksha-se/.transcription/pipeline/audit-segments/segment-000.json",
+      "sha256": "82834e0d31464575055bace8cadca9d6ea1afa89d83c3fadb79bc6abda54e04a"
+    },
+    {
+      "path": "songs/patta-bola-vrksha-se/.transcription/pipeline/audit-segments/segment-001.json",
+      "sha256": "ea7b8982f513761f5c3a072b15ed29dcfa7dc89aaaaf6df02b4d701b6a77797a"
+    },
+    {
+      "path": "songs/patta-bola-vrksha-se/.transcription/pipeline/audit-segments/segment-002.json",
+      "sha256": "3c682c45c34ddb1021752f114369868f29f10ae55c57abc6dbf83e59246f0132"
+    }
+  ],
+  "source_url": "https://www.youtube.com/watch?v=z_EZE54hFUs",
+  "evidence_limit": "Two cached audio-model passes, not a fresh human listening claim. The regression proves loss between accepted segment evidence and merged artifact.",
+  "segments": [
+    {
+      "segment": {
+        "index": 0,
+        "core_start": 0.0,
+        "core_end": 271.75,
+        "clip_start": 0.0,
+        "clip_end": 286.75
+      },
+      "first": {
+        "lines": [
+          {
+            "id": "segment-0-line-001",
+            "source_text": "पत्ता बोला वृक्ष से",
+            "roman": "Patta bola vriksh se",
+            "language": "Hindi",
+            "kind": "refrain",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-002",
+            "source_text": "सुनो वृक्ष वनराय",
+            "roman": "Suno vriksh vanraay",
+            "language": "Hindi",
+            "kind": "refrain",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-003",
+            "source_text": "अब के पतझड़ ना मिले",
+            "roman": "Ab ke patjhar na mile",
+            "language": "Hindi",
+            "kind": "refrain",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-004",
+            "source_text": "दूर पड़ेंगे जाय",
+            "roman": "Door padenge jaay",
+            "language": "Hindi",
+            "kind": "refrain",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-005",
+            "source_text": "वृक्ष बोला पत्ते से",
+            "roman": "Vriksh bola patte se",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-006",
+            "source_text": "सुनो पत्ते मेरे भाई",
+            "roman": "Suno patte mere bhaai",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-007",
+            "source_text": "यही जगत की रीत है",
+            "roman": "Yahi jagat ki reet hai",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-008",
+            "source_text": "इक आए इक जाय",
+            "roman": "Ik aaye ik jaay",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-009",
+            "source_text": "पत्ता बोला",
+            "roman": "Patta bola",
+            "language": "Hindi",
+            "kind": "refrain",
+            "partial": "trailing",
+            "notes": "Line trailing into sitar interlude"
+          },
+          {
+            "id": "segment-0-line-010",
+            "source_text": "साँस साँस में नाम ले",
+            "roman": "Saans saans mein naam le",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-0-line-011",
+            "source_text": "बचे साँस ना कोई",
+            "roman": "Bache saans na koi",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          }
+        ],
+        "performance_order": [
+          {
+            "line_id": "segment-0-line-001",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-002",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-003",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-004",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-001",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-0-line-002",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-0-line-003",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-0-line-004",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-0-line-005",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-006",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-007",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-007",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-0-line-008",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-009",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-010",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-0-line-011",
+            "occurrence": 1
+          }
+        ],
+        "uncertainties": []
+      },
+      "audit": {
+        "packet": {
+          "lines": [
+            {
+              "id": "segment-0-line-001",
+              "source_text": "पत्ता बोला वृक्ष से",
+              "roman": "Pattā bolā vr̥kṣa se",
+              "language": "Hindi",
+              "kind": "refrain",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-002",
+              "source_text": "सुनो वृक्ष वनराय",
+              "roman": "Suno vr̥kṣa vanarāya",
+              "language": "Hindi",
+              "kind": "refrain",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-003",
+              "source_text": "अब के पतझड़ ना मिले",
+              "roman": "Aba ke patajhaṛa nā mile",
+              "language": "Hindi",
+              "kind": "refrain",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-004",
+              "source_text": "दूर पड़ेंगे जाय",
+              "roman": "Dūra paṛeṅge jāya",
+              "language": "Hindi",
+              "kind": "refrain",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-005",
+              "source_text": "वृक्ष बोला पत्ते से",
+              "roman": "Vr̥kṣa bolā patte se",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-006",
+              "source_text": "सुनो पत्ते मेरे भाई",
+              "roman": "Suno patte mere bhāī",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-007",
+              "source_text": "यही जगत की रीत है",
+              "roman": "Yahī jagata kī rīta hai",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-008",
+              "source_text": "इक आए इक जाय",
+              "roman": "Ika āye ika jāya",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-009",
+              "source_text": "पत्ता बोला",
+              "roman": "Pattā bolā",
+              "language": "Hindi",
+              "kind": "refrain",
+              "partial": "trailing",
+              "notes": "Line trailing into instrumental interlude"
+            },
+            {
+              "id": "segment-0-line-010",
+              "source_text": "साँस साँस में नाम ले",
+              "roman": "Sām̐sa sām̐sa mem̐ nāma le",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-0-line-011",
+              "source_text": "बचे साँस ना कोई",
+              "roman": "Bace sām̐sa nā koī",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            }
+          ],
+          "performance_order": [
+            {
+              "line_id": "segment-0-line-001",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-002",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-003",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-004",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-001",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-0-line-002",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-0-line-003",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-0-line-004",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-0-line-005",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-006",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-007",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-007",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-0-line-008",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-009",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-010",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-0-line-011",
+              "occurrence": 1
+            }
+          ],
+          "uncertainties": []
+        }
+      }
+    },
+    {
+      "segment": {
+        "index": 1,
+        "core_start": 271.75,
+        "core_end": 554.25,
+        "clip_start": 256.75,
+        "clip_end": 569.25
+      },
+      "first": {
+        "lines": [
+          {
+            "id": "segment-1-line-001",
+            "source_text": "सांस सांस में नाम ले",
+            "roman": "sā̃s sā̃s mẽ nām le",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-002",
+            "source_text": "बचे सांस ना कोई",
+            "roman": "bace sā̃s nā koī",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-003",
+            "source_text": "क्या जाने फिर सांस का",
+            "roman": "kyā jāne phir sā̃s kā",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-004",
+            "source_text": "आवन होए ना होए",
+            "roman": "āvan hoe nā hoe",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-005",
+            "source_text": "बुरा जो देखन मैं चला",
+            "roman": "burā jo dekhan maĩ calā",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-006",
+            "source_text": "बुरा ना मिलिया कोई",
+            "roman": "burā nā miliyā koī",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-007",
+            "source_text": "जो मन खोजा आपना",
+            "roman": "jo man khojā āpanā",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-008",
+            "source_text": "मुझसे बुरा ना कोई",
+            "roman": "mujhse burā nā koī",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-009",
+            "source_text": "मांगन मरण समान है",
+            "roman": "mā̃gan maraṇ samān hai",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-010",
+            "source_text": "मत कोई मांगे भीख",
+            "roman": "mat koī mā̃ge bhīkh",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-011",
+            "source_text": "मांगन से मरना भला",
+            "roman": "mā̃gan se maranā bhalā",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-012",
+            "source_text": "ये सतगुर की सीख",
+            "roman": "ye satagur kī sīkh",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-1-line-013",
+            "source_text": "ऐसी बानी बोलिए",
+            "roman": "aisī bānī bolie",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "trailing",
+            "notes": ""
+          }
+        ],
+        "performance_order": [
+          {
+            "line_id": "segment-1-line-001",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-002",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-001",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-002",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-003",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-003",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-004",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-005",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-005",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-006",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-005",
+            "occurrence": 3
+          },
+          {
+            "line_id": "segment-1-line-006",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-007",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-007",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-008",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-009",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-010",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-009",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-010",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-011",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-011",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-1-line-012",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-1-line-013",
+            "occurrence": 1
+          }
+        ],
+        "uncertainties": []
+      },
+      "audit": {
+        "packet": {
+          "lines": [
+            {
+              "id": "segment-1-line-001",
+              "source_text": "सांस सांस में नाम ले",
+              "roman": "sā̃s sā̃s mẽ nām le",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-002",
+              "source_text": "बचे सांस ना कोई",
+              "roman": "bace sā̃s nā koī",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-003",
+              "source_text": "क्या जाने फिर सांस का",
+              "roman": "kyā jāne phir sā̃s kā",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-004",
+              "source_text": "आवन होए ना होए",
+              "roman": "āvan hoe nā hoe",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-005",
+              "source_text": "बुरा जो देखन मैं चला",
+              "roman": "burā jo dekhan maĩ calā",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-006",
+              "source_text": "बुरा ना मिलिया कोई",
+              "roman": "burā nā miliyā koī",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-007",
+              "source_text": "जो मन खोजा आपना",
+              "roman": "jo man khojā āpanā",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-008",
+              "source_text": "मुझसे बुरा ना कोई",
+              "roman": "mujhse burā nā koī",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-009",
+              "source_text": "मांगन मरण समान है",
+              "roman": "mā̃gan maraṇ samān hai",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-010",
+              "source_text": "मत कोई मांगे भीख",
+              "roman": "mat koī mā̃ge bhīkh",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-011",
+              "source_text": "मांगन से मरना भला",
+              "roman": "mā̃gan se maranā bhalā",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-012",
+              "source_text": "ये सतगुर की सीख",
+              "roman": "ye satagur kī sīkh",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-1-line-013",
+              "source_text": "ऐसी बानी बोलिए",
+              "roman": "aisī bānī bolie",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "trailing",
+              "notes": ""
+            }
+          ],
+          "performance_order": [
+            {
+              "line_id": "segment-1-line-001",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-002",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-001",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-002",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-003",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-003",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-004",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-005",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-005",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-006",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-005",
+              "occurrence": 3
+            },
+            {
+              "line_id": "segment-1-line-006",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-007",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-007",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-008",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-009",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-010",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-009",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-010",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-011",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-011",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-1-line-012",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-1-line-013",
+              "occurrence": 1
+            }
+          ],
+          "uncertainties": []
+        }
+      }
+    },
+    {
+      "segment": {
+        "index": 2,
+        "core_start": 554.25,
+        "core_end": 922.721,
+        "clip_start": 539.25,
+        "clip_end": 922.721
+      },
+      "first": {
+        "lines": [
+          {
+            "id": "segment-2-line-001",
+            "source_text": "ऐसी बानी बोलिए",
+            "roman": "Aisi baani boliye",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-002",
+            "source_text": "मन का आपा खोए",
+            "roman": "Man ka aapa khoye",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-003",
+            "source_text": "अपना तन शीतल करे",
+            "roman": "Apna tan sheetal kare",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-004",
+            "source_text": "औरों को सुख देय",
+            "roman": "Auron ko sukh deye",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-005",
+            "source_text": "दुख में सुमिरन सब करे",
+            "roman": "Dukh mein sumiran sab kare",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-006",
+            "source_text": "सुख में करे न कोय",
+            "roman": "Sukh mein kare na koye",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-007",
+            "source_text": "जो सुख में सुमिरन करे",
+            "roman": "Jo sukh mein sumiran kare",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-008",
+            "source_text": "दुख काहे को होय",
+            "roman": "Dukh kaahe ko hoye",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-009",
+            "source_text": "कागा किसका धन हरे",
+            "roman": "Kaaga kiska dhan hare",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-010",
+            "source_text": "कोयल किसको देय",
+            "roman": "Koyal kisko deye",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-011",
+            "source_text": "बस मीठा शब्द सुनाय के",
+            "roman": "Bas meetha shabd sunaay ke",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-012",
+            "source_text": "मीठा शब्द सुनाय के",
+            "roman": "Meetha shabd sunaay ke",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-013",
+            "source_text": "जग अपना कर लेय",
+            "roman": "Jag apna kar leye",
+            "language": "Hindi",
+            "kind": "verse",
+            "partial": "none",
+            "notes": ""
+          },
+          {
+            "id": "segment-2-line-014",
+            "source_text": "पत्ता बोला वृक्ष से",
+            "roman": "Patta bola vriksh se",
+            "language": "Hindi",
+            "kind": "refrain",
+            "partial": "none",
+            "notes": ""
+          }
+        ],
+        "performance_order": [
+          {
+            "line_id": "segment-2-line-001",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-002",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-001",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-002",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-003",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-003",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-004",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-005",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-005",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-006",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-005",
+            "occurrence": 3
+          },
+          {
+            "line_id": "segment-2-line-006",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-007",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-007",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-008",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-009",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-010",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-009",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-010",
+            "occurrence": 2
+          },
+          {
+            "line_id": "segment-2-line-011",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-012",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-013",
+            "occurrence": 1
+          },
+          {
+            "line_id": "segment-2-line-014",
+            "occurrence": 1
+          }
+        ],
+        "uncertainties": []
+      },
+      "audit": {
+        "packet": {
+          "lines": [
+            {
+              "id": "segment-2-line-001",
+              "source_text": "ऐसी बानी बोलिए",
+              "roman": "Aisī bānī boliye",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-002",
+              "source_text": "मन का आपा खोए",
+              "roman": "Man kā āpā khoye",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-003",
+              "source_text": "अपना तन शीतल करे",
+              "roman": "Apnā tan śītal kare",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-004",
+              "source_text": "औरों को सुख देय",
+              "roman": "Auroṁ ko sukh deye",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-005",
+              "source_text": "दुख में सुमिरन सब करे",
+              "roman": "Dukh meṁ sumiran sab kare",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-006",
+              "source_text": "सुख में करे न कोय",
+              "roman": "Sukh meṁ kare na koye",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-007",
+              "source_text": "जो सुख में सुमिरन करे",
+              "roman": "Jo sukh meṁ sumiran kare",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-008",
+              "source_text": "दुख काहे को होय",
+              "roman": "Dukh kāhe ko hoye",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-009",
+              "source_text": "कागा किसका धन हरे",
+              "roman": "Kāgā kiskā dhan hare",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-010",
+              "source_text": "कोयल किसको देय",
+              "roman": "Koyal kisko deye",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-011",
+              "source_text": "बस मीठा शब्द सुनाय के",
+              "roman": "Bas mīṭhā śabd sunāy ke",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-012",
+              "source_text": "मीठा शब्द सुनाय के",
+              "roman": "Mīṭhā śabd sunāy ke",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-013",
+              "source_text": "जग अपना कर लेय",
+              "roman": "Jag apnā kar leye",
+              "language": "Hindi",
+              "kind": "verse",
+              "partial": "none",
+              "notes": ""
+            },
+            {
+              "id": "segment-2-line-014",
+              "source_text": "पत्ता बोला वृक्ष से",
+              "roman": "Pattā bolā vṛkṣ se",
+              "language": "Hindi",
+              "kind": "refrain",
+              "partial": "none",
+              "notes": ""
+            }
+          ],
+          "performance_order": [
+            {
+              "line_id": "segment-2-line-001",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-002",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-001",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-002",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-003",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-003",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-004",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-005",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-005",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-006",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-005",
+              "occurrence": 3
+            },
+            {
+              "line_id": "segment-2-line-006",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-007",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-007",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-008",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-009",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-010",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-009",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-010",
+              "occurrence": 2
+            },
+            {
+              "line_id": "segment-2-line-011",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-012",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-013",
+              "occurrence": 1
+            },
+            {
+              "line_id": "segment-2-line-014",
+              "occurrence": 1
+            }
+          ],
+          "uncertainties": []
+        }
+      }
+    }
+  ],
+  "expected_source_order": [
+    "पत्ता बोला वृक्ष से",
+    "सुनो वृक्ष वनराय",
+    "अब के पतझड़ ना मिले",
+    "दूर पड़ेंगे जाय",
+    "पत्ता बोला वृक्ष से",
+    "सुनो वृक्ष वनराय",
+    "अब के पतझड़ ना मिले",
+    "दूर पड़ेंगे जाय",
+    "वृक्ष बोला पत्ते से",
+    "सुनो पत्ते मेरे भाई",
+    "यही जगत की रीत है",
+    "यही जगत की रीत है",
+    "इक आए इक जाय",
+    "पत्ता बोला",
+    "साँस साँस में नाम ले",
+    "बचे साँस ना कोई",
+    "सांस सांस में नाम ले",
+    "बचे सांस ना कोई",
+    "क्या जाने फिर सांस का",
+    "क्या जाने फिर सांस का",
+    "आवन होए ना होए",
+    "बुरा जो देखन मैं चला",
+    "बुरा जो देखन मैं चला",
+    "बुरा ना मिलिया कोई",
+    "बुरा जो देखन मैं चला",
+    "बुरा ना मिलिया कोई",
+    "जो मन खोजा आपना",
+    "जो मन खोजा आपना",
+    "मुझसे बुरा ना कोई",
+    "मांगन मरण समान है",
+    "मत कोई मांगे भीख",
+    "मांगन मरण समान है",
+    "मत कोई मांगे भीख",
+    "मांगन से मरना भला",
+    "मांगन से मरना भला",
+    "ये सतगुर की सीख",
+    "ऐसी बानी बोलिए",
+    "मन का आपा खोए",
+    "ऐसी बानी बोलिए",
+    "मन का आपा खोए",
+    "अपना तन शीतल करे",
+    "अपना तन शीतल करे",
+    "औरों को सुख देय",
+    "दुख में सुमिरन सब करे",
+    "दुख में सुमिरन सब करे",
+    "सुख में करे न कोय",
+    "दुख में सुमिरन सब करे",
+    "सुख में करे न कोय",
+    "जो सुख में सुमिरन करे",
+    "जो सुख में सुमिरन करे",
+    "दुख काहे को होय",
+    "कागा किसका धन हरे",
+    "कोयल किसको देय",
+    "कागा किसका धन हरे",
+    "कोयल किसको देय",
+    "बस मीठा शब्द सुनाय के",
+    "मीठा शब्द सुनाय के",
+    "जग अपना कर लेय",
+    "पत्ता बोला वृक्ष से"
+  ],
+  "expected_raw_ids": [
+    "segment-0-line-001",
+    "segment-0-line-002",
+    "segment-0-line-003",
+    "segment-0-line-004",
+    "segment-0-line-001",
+    "segment-0-line-002",
+    "segment-0-line-003",
+    "segment-0-line-004",
+    "segment-0-line-005",
+    "segment-0-line-006",
+    "segment-0-line-007",
+    "segment-0-line-007",
+    "segment-0-line-008",
+    "segment-0-line-009",
+    "segment-0-line-010",
+    "segment-0-line-011",
+    "segment-1-line-001",
+    "segment-1-line-002",
+    "segment-1-line-003",
+    "segment-1-line-003",
+    "segment-1-line-004",
+    "segment-1-line-005",
+    "segment-1-line-005",
+    "segment-1-line-006",
+    "segment-1-line-005",
+    "segment-1-line-006",
+    "segment-1-line-007",
+    "segment-1-line-007",
+    "segment-1-line-008",
+    "segment-1-line-009",
+    "segment-1-line-010",
+    "segment-1-line-009",
+    "segment-1-line-010",
+    "segment-1-line-011",
+    "segment-1-line-011",
+    "segment-1-line-012",
+    "segment-2-line-001",
+    "segment-2-line-002",
+    "segment-2-line-001",
+    "segment-2-line-002",
+    "segment-2-line-003",
+    "segment-2-line-003",
+    "segment-2-line-004",
+    "segment-2-line-005",
+    "segment-2-line-005",
+    "segment-2-line-006",
+    "segment-2-line-005",
+    "segment-2-line-006",
+    "segment-2-line-007",
+    "segment-2-line-007",
+    "segment-2-line-008",
+    "segment-2-line-009",
+    "segment-2-line-010",
+    "segment-2-line-009",
+    "segment-2-line-010",
+    "segment-2-line-011",
+    "segment-2-line-012",
+    "segment-2-line-013",
+    "segment-2-line-014"
+  ],
+  "seam_decisions": [
+    {
+      "left": 0,
+      "right": 1,
+      "overlap_seconds": 30,
+      "shared_occurrences": 2,
+      "evidence": "tail/head full breath couplet; internal Patta pickup occurs before both and must remain"
+    },
+    {
+      "left": 1,
+      "right": 2,
+      "overlap_seconds": 30,
+      "shared_occurrences": 1,
+      "evidence": "only last Aisi baani line on left; right completes same line, then new Man ka aapa line, repeated couplet, two Apna tan lines and Auron ko line"
+    }
+  ]
+}

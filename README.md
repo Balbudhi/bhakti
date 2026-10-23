@@ -47,7 +47,7 @@ songs/<slug>/data.js       SONG_META, SONG_LINES, SONG_SEQUENCE, SONG_TIMINGS
 assets/                    Stylesheets, client JavaScript, icons
 data/songs.js              Generated catalogue used by search and the queue
 data/media.json            Audio release manifest (URL + SHA-256 per song)
-data/preserved_terms.json  Allowlist of terms that stay in IAST in English
+data/preserved_terms.json  Legacy preserved-term metadata for existing readers
 scripts/                   Content pipeline, audits, and tests (Python + Node)
 docs/                      Design and content standards
 ```
@@ -65,7 +65,9 @@ the library's "About these songs" panel.
 
 OpenRouter/Gemini is the configured audio and text route. Translation uses
 contextual word meanings before composing English, with language-scoped
-candidate dictionary evidence and independent review. See
+candidate dictionary evidence, context embeddings and independent review.
+The [translation workflow](docs/TRANSLATION_WORKFLOW.md) records sense selection,
+Flash-to-Pro escalation, bounded whole-library commands and resume behavior. See
 [the processing standard](docs/SONG_PROCESSING_STANDARD.md) and the
 [whole-library repair task](docs/LIBRARY_REPAIR_TASKS.md).
 

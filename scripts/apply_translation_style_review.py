@@ -36,9 +36,10 @@ process.stdout.write(JSON.stringify(ctx.window));"""
     ).stdout)
 
 
-def write_reader(slug: str, data: dict[str, Any]) -> None:
-    editorial_baselines.assert_english_preserved(slug, data["SONG_LINES"], root=ROOT)
-    path = ROOT / "songs" / slug / "data.js"
+def write_reader(slug: str, data: dict[str, Any], *, root: Path | None = None) -> None:
+    root = ROOT if root is None else Path(root)
+    editorial_baselines.assert_english_preserved(slug, data["SONG_LINES"], root=root)
+    path = root / "songs" / slug / "data.js"
     content = ("window.SONG_META = " + json.dumps(data["SONG_META"], ensure_ascii=False, indent=2) + ";\n\n" +
                "window.SONG_LINES = " + json.dumps(data["SONG_LINES"], ensure_ascii=False, indent=2) + ";\n\n" +
                "window.SONG_SEQUENCE = " + json.dumps(data["SONG_SEQUENCE"], ensure_ascii=False, indent=2) + ";\n\n" +

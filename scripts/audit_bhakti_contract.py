@@ -113,12 +113,19 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
                 problems.append("catalogue subjectTags differ from SONG_META subjectTags")
     sequence, timing = data.get("SONG_SEQUENCE", []), data.get("SONG_TIMINGS", [])
     instrumental_refs = {entry.get("ref") for entry in sequence if isinstance(entry, dict) and entry.get("section") == "instrumental"}
+    # A shared ref still needs the complete lyric contract whenever it is sung.
+    instrumental_refs -= {
+        entry.get("ref") for entry in sequence
+        if isinstance(entry, dict) and entry.get("section") != "instrumental"
+    }
     for line_id, line in lines.items():
         if not isinstance(line, dict):
             problems.append(f"{line_id} is not a line object")
             continue
         if line_id not in instrumental_refs and not str(line.get("source", "")).strip():
             problems.append(f"{line_id} lacks source script")
+        if line_id in instrumental_refs:
+            continue
         if not str(line.get("roman", "")).strip():
             problems.append(f"{line_id} lacks IAST")
         mixed_script = non_latin_roman_characters(str(line.get("roman", "")))
