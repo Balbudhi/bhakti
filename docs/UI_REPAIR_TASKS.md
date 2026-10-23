@@ -140,8 +140,9 @@ compilation and whitespace checks pass.
 ## Touch feedback and state consistency
 
 Outcome: retain the approved appearance while removing sticky post-tap feedback
-from player, playlist, reader and library controls. Current step: implement the
-reviewed state rules and regression cases (done); publish the verified scoped assets.
+from player, playlist, reader and library controls. Completed in `95b78dce`; GitHub Pages run `40018122847` succeeded.
+Live checks confirmed all five new asset versions, guarded hover rules, Skip/Pause,
+disabled queue boundaries and playlist open/close.
 
 1. Guard all public hover decoration in site/song/app CSS by input capability;
    keep selected/open/singing states outside that guard and keyboard focus distinct.
