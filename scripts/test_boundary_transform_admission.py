@@ -25,7 +25,7 @@ class BoundaryTransformAdmission(unittest.TestCase):
     def provider(self,model,key,prompt,**kwargs):
         if kwargs['schema_name']=='bhakti_segment_audit':
             self.audio_requests.append({'original_edge':self.original_edge_mode,
-                'duration':p.gemini.duration_seconds(Path(kwargs['audio'])),'prompt':prompt})
+                'model':model,'duration':p.gemini.duration_seconds(Path(kwargs['audio'])),'prompt':prompt})
         remove=self.remove_source
         if self.original_edge_mode:self.remove_source=False
         try:return source_tests.SourceAdoptionCallerTests.provider(self,model,key,prompt,**kwargs)
@@ -154,6 +154,120 @@ class BoundaryTransformAdmission(unittest.TestCase):
             result=self.invoke()
         self.assertEqual(result['status'],'unresolved',result)
         self.assertFalse(result['publicationEligible'])
+
+    def review_removed_edges(self,removed):
+        import bhakti_boundary_adoption as boundary
+        order=source.source_draft(self.reader)['performance_order']
+        next_index=0;lineage=[]
+        for i in range(len(order)):
+            lineage.append({'old_index':i,'new_index':None if i in removed else next_index})
+            if i not in removed:next_index+=1
+        return boundary.review_boundary_memberships(self.declaration,self.song,self.target,
+            self.reader,{'status':'proposed','occurrence_lineage':lineage},options=self.options,
+            route_dir=self.routes/'automatic-memberships',deadline_at=self.deadline)
+
+    def test_automatic_archived_edge_proof_drives_existing_caller_and_resumes_free(self):
+        self.prefix_reader();archive=self.preserve_original_archive()
+        self.original_edge_mode=True
+        try:proof=self.review_removed_edges({0})
+        finally:self.original_edge_mode=False
+        self.assertEqual(proof['status'],'observed',proof)
+        self.assertEqual(len(proof['memberships']),1)
+        self.assertEqual(proof['memberships'][0]['old_expanded_indices'],[0])
+        self.assertEqual(len(self.audio_requests),2,'one hearing and one independent confirmation')
+        self.assertTrue(all(row['duration']<=self.boundary['trim_start']+.1 for row in self.audio_requests))
+        with mock.patch.object(p.gemini,'call',side_effect=AssertionError('edge resume cannot repay')):
+            self.assertEqual(self.review_removed_edges({0}),proof)
+        value=json.loads(self.transform.read_text());value['original_edge_membership']=proof['memberships']
+        self.rewrite_transform(value)
+        result=self.invoke();self.assertEqual(result['status'],'accepted',result)
+        self.assertEqual(list(result['reader']['SONG_LINES']),['line-0','line-2'])
+        self.assertTrue((archive/'audio.webm').is_file())
+
+    def test_automatic_edge_proof_handles_both_ends_without_interior_audio(self):
+        self.prefix_reader()
+        self.original_edge_mode=True
+        try:proof=self.review_removed_edges({0,2})
+        finally:self.original_edge_mode=False
+        self.assertEqual(proof['status'],'observed',proof)
+        self.assertEqual([(r['edge'],r['old_expanded_indices']) for r in proof['memberships']],
+            [('start',[0]),('end',[2])])
+        self.assertEqual(len(self.audio_requests),4)
+        self.assertTrue(all(r['duration']<3 for r in self.audio_requests))
+
+    def test_automatic_edge_proof_rejects_nonedge_and_full_deletion_without_payment(self):
+        self.prefix_reader()
+        for removed in ({1},{0,1,2}):
+            with self.subTest(removed=removed),mock.patch.object(p.gemini,'call',
+                    side_effect=AssertionError('invalid removal cannot dispatch')):
+                with self.assertRaisesRegex(ValueError,'(?i)(edge|interior|entire|retained)'):
+                    self.review_removed_edges(removed)
+        with mock.patch.object(p.gemini,'call',side_effect=AssertionError('no deletion needs no hearing')):
+            self.assertEqual(self.review_removed_edges(set()),
+                {'status':'observed','memberships':[],'issues':[]})
+
+    def test_automatic_edge_proof_does_not_accept_different_original_hearing(self):
+        self.reader['SONG_SEQUENCE'][1]['repeats']=1
+        js(self.song/'data.js',self.reader);js(self.target/'data.js',self.reader)
+        value=json.loads(self.transform.read_text());value['before']['reader_sha256']=source.file_hash(self.song/'data.js')
+        self.rewrite_transform(value);self.replace_source=True
+        proof=self.review_removed_edges({0})
+        self.assertEqual(proof['status'],'unresolved',proof)
+        self.assertEqual(proof['memberships'],[])
+        self.assertTrue(proof['issues'])
+        self.assertEqual(len(self.audio_requests),1,'a mismatched original hearing is not a deletion proof')
+        issue=proof['issues'][0]
+        self.assertNotEqual(issue['expected_order'],issue['observed_order'])
+        self.assertTrue(Path(issue['route_state_path']).is_file())
+
+    def test_automatic_edge_confirmation_escalates_only_failed_question_and_retains_hold(self):
+        self.prefix_reader();self.fail_confirmation=True;self.original_edge_mode=True
+        try:proof=self.review_removed_edges({0})
+        finally:self.original_edge_mode=False
+        self.assertEqual(proof['status'],'unresolved',proof)
+        self.assertEqual(proof['memberships'],[])
+        self.assertEqual([r['model'] for r in self.audio_requests],
+            [self.options.model,self.options.model,self.options.pro_model])
+        self.assertTrue(proof['issues'])
+
+    def test_automatic_edge_proof_rejects_incomplete_or_duplicate_lineage_before_dispatch(self):
+        import bhakti_boundary_adoption as boundary
+        self.prefix_reader()
+        for lineage in (
+            [{'old_index':0,'new_index':None},{'old_index':1,'new_index':0}],
+            [{'old_index':0,'new_index':None},{'old_index':0,'new_index':0},{'old_index':2,'new_index':1}],
+            [{'old_index':True,'new_index':None}],
+        ):
+            with self.subTest(lineage=lineage),mock.patch.object(p.gemini,'call',
+                    side_effect=AssertionError('malformed scope cannot dispatch')):
+                with self.assertRaisesRegex(ValueError,'(?i)(lineage|occurrence)'):
+                    boundary.review_boundary_memberships(self.declaration,self.song,self.target,
+                        self.reader,{'status':'proposed','occurrence_lineage':lineage},options=self.options,
+                        route_dir=self.routes/'automatic-memberships',deadline_at=self.deadline)
+
+    def test_source_caller_automatically_builds_missing_edge_proof_without_rebuying_crop_review(self):
+        self.prefix_reader();self.preserve_original_archive()
+        original_declaration=self.transform.read_bytes()
+        def hearing(model,key,prompt,**kwargs):
+            previous=self.original_edge_mode
+            self.original_edge_mode=(kwargs['schema_name']=='bhakti_segment_audit'
+                and p.gemini.duration_seconds(Path(kwargs['audio']))<3)
+            try:return self.provider(model,key,prompt,**kwargs)
+            finally:self.original_edge_mode=previous
+        with mock.patch.object(p.gemini,'call',side_effect=hearing):
+            result=self.invoke()
+        self.assertEqual(result['status'],'accepted',result)
+        self.assertEqual(list(result['reader']['SONG_LINES']),['line-0','line-2'])
+        self.assertEqual(len([r for r in self.audio_requests if r['original_edge']]),2)
+        self.assertEqual(len([r for r in self.audio_requests if not r['original_edge']]),2,
+            'one cropped hearing plus independent confirmation; rebinding must reuse the first hearing')
+        self.assertEqual(self.transform.read_bytes(),original_declaration)
+        receipt=json.loads(Path(result['evidence']['source_adoption_receipt']['path']).read_text())
+        self.assertNotEqual(receipt['audio_transform'],self.declaration)
+        completed=json.loads(Path(receipt['audio_transform']['path']).read_text())
+        self.assertEqual(completed['original_edge_membership'][0]['old_expanded_indices'],[0])
+        with mock.patch.object(p.gemini,'call',side_effect=AssertionError('connected resume cannot repay')):
+            self.assertEqual(self.invoke(),result)
 
     def test_measured_private_crop_passes_both_source_admission_guards_and_binds_receipt(self):
         result=self.invoke()

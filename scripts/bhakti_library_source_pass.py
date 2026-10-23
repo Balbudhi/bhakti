@@ -912,7 +912,30 @@ def run_observed_source_candidate(*, root, slug, reader, workspace, route_dir, o
                 'evidence':{'audio_review':observation,'source_delta':delta,**(extra or {})}}
     if delta['status']!='proposed':return hold('source_reconciliation',delta['issues'])
     if transform is not None:
-        from bhakti_boundary_adoption import require_removed_membership
+        from bhakti_boundary_adoption import require_removed_membership, review_boundary_memberships
+        removed = any(row['old_index'] is not None and row['new_index'] is None
+            for row in delta['occurrence_lineage'])
+        if removed and not transform.get('original_edge_membership'):
+            proof = review_boundary_memberships(transform_declaration, song, target, reader, delta,
+                options=options, route_dir=Path(route_dir)/'original-boundary-memberships',
+                deadline_at=deadline_at)
+            if proof['status'] != 'observed':
+                return hold('original_boundary_membership', proof['issues'],
+                    {'boundary_memberships': proof})
+            completed = {**transform, 'original_edge_membership': proof['memberships']}
+            path = Path(route_dir)/'boundary-transforms'/(digest(completed)+'.json')
+            if path.is_file():
+                if json.loads(path.read_text()) != completed:
+                    raise ValueError('completed boundary transform changed')
+            else:
+                atomic_json(path, completed)
+            local = copy.copy(options)
+            local.source_audio_transform = {'path': str(path), 'sha256': file_hash(path)}
+            # Re-enter with the complete immutable declaration. Exact audio
+            # question identities reuse the first staged hearing, while the
+            # receipt and subsequent timing now bind the new original proof.
+            return run_observed_source_candidate(root=root, slug=slug, reader=reader,
+                workspace=workspace, route_dir=route_dir, options=local, deadline_at=deadline_at)
         require_removed_membership(transform,reader,delta,song)
     confirmations={'status':'observed','unit_results':[],'issues':[]}
     if delta['requires_confirmation']:

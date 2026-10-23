@@ -42,7 +42,21 @@ inputs. One test assertion initially compared unresolved macOS path aliases;
 canonicalizing both sides fixed that assertion, and its complete replay/tamper
 case passed. Actual hearing judgments and timing measurements in these caller
 tests are synthetic. Automatic historical preparation/installation and qualified
-clock origins remain open; the consumer has no production transform producer yet.
+clock origins remain open; initial historical crop transforms still lack an
+automatic preparation caller.
+
+Original-edge membership is now produced automatically through the existing
+source caller when a private crop transform lacks it. The producer hears only
+the removed original prefix/suffix and independently confirms it, with bounded
+Flash-to-Pro escalation for a failed question. A new immutable transform binds
+the proof; re-entry reuses the first cropped hearing. The 28 boundary-admission/
+timing checks pass with real media/storage and synthetic hearing judgments,
+including both ends, contradictory hearing, exact lineage, unchanged declaration
+bytes and zero-call resume. Initial historical crop preparation/installation is
+still missing. Before that integration, sequence-indexed section credits and
+adaptation markers must be remapped through accepted occurrence lineage: the
+current source caller copies their indices unchanged, which can attach a valid
+credit to the wrong surviving lyric after removal.
 
 Model-facing source dictionary discovery and materialized-evidence renewal are
 integrated. The joined source acquisition, translation/review, cache renewal and

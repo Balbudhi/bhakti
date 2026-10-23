@@ -218,6 +218,118 @@ def require_removed_membership(transform, reader, delta, original_song):
         raise ValueError('original-edge membership and removed occurrence lineage differ')
 
 
+def review_boundary_memberships(declaration, original_song, staged_song, reader, delta,
+                                *, options, route_dir, deadline_at):
+    """Produce cached original-edge proofs for a proposed cropped-source delta.
+
+    The delta scopes questions; it does not authorize deletion. Both original
+    hearings must agree with its exact old prefix/suffix. The caller retains the
+    returned proofs in a new transform before the cropped-source consumer can
+    accept removal. This function never changes the transform or public files.
+    """
+    import bhakti_pipeline as pipeline
+    import bhakti_library_source_pass as source
+
+    transform = checked_audio_transform(declaration, original_song, staged_song, reader)
+    archive = original_evidence_song(transform)
+    full = source.source_draft(reader)
+    order = full['performance_order']
+    lineage = delta.get('occurrence_lineage')
+    if delta.get('status') != 'proposed' or not isinstance(lineage, list):
+        raise ValueError('boundary membership needs proposed complete occurrence lineage')
+    old_indices = []
+    removed = set()
+    for row in lineage:
+        if not isinstance(row, dict) or set(row) != {'old_index', 'new_index'}:
+            raise ValueError('boundary membership has malformed occurrence lineage')
+        old, new = row['old_index'], row['new_index']
+        if new is not None and (type(new) is not int or new < 0):
+            raise ValueError('boundary membership has invalid retained occurrence')
+        if old is None:
+            if new is None:
+                raise ValueError('boundary membership lineage contains no occurrence')
+            continue
+        if type(old) is not int or not 0 <= old < len(order):
+            raise ValueError('boundary membership has invalid original occurrence')
+        old_indices.append(old)
+        if new is None:
+            removed.add(old)
+    if sorted(old_indices) != list(range(len(order))):
+        raise ValueError('boundary membership lacks complete unique original lineage')
+    if not removed:
+        return {'status': 'observed', 'memberships': [], 'issues': []}
+    if len(removed) == len(order):
+        raise ValueError('boundary removal cannot discard the entire performance')
+    start = 0
+    while start in removed:
+        start += 1
+    end = len(order)
+    while end - 1 in removed:
+        end -= 1
+    edges = {'start': list(range(start)), 'end': list(range(end, len(order)))}
+    if set(edges['start'] + edges['end']) != removed:
+        raise ValueError('boundary removal contains interior occurrences, not exact edges')
+
+    identity = source.collect_source_evidence(archive, reader, flags={'audio': True},
+        coverage_requested=False)['identity']
+    audio = pipeline.preferred_listener_audio(archive)
+    plans = []
+    for edge, indices in edges.items():
+        if not indices:
+            continue
+        interval = ({'start': 0., 'end': transform['boundary']['trim_start']} if edge == 'start'
+            else {'start': transform['boundary']['trim_end'], 'end': transform['boundary']['duration']})
+        if not 0 < interval['end'] - interval['start'] <= 900:
+            raise ValueError('boundary edge requires a nonempty bounded audio interval')
+        selected = [order[i] for i in indices]
+        ids = {row['line_id'] for row in selected}
+        draft = {'lines': [row for row in full['lines'] if row['id'] in ids],
+            'performance_order': selected}
+        targets = sorted({row['display_occurrence_id'] for row in selected})
+        displays = [int(value.split('-')[1]) for value in targets]
+        unit = {'id': 'boundary-original-' + edge, 'kind': 'focused', 'segment_index': 0,
+            'clip_start': interval['start'], 'clip_end': interval['end'],
+            'core_start': interval['start'], 'core_end': interval['end'],
+            'core_occurrence_indices': displays, 'context_occurrence_indices': displays,
+            'target_occurrence_ids': targets, 'expanded_draft': draft}
+        by_id = {row['id']: row for row in draft['lines']}
+        expected = [list(source._source_key(by_id[row['line_id']])) for row in selected]
+        plans.append((edge, indices, interval, unit, expected))
+
+    memberships = []
+    def held(issues):
+        return {'status': 'unresolved', 'memberships': memberships, 'issues': issues}
+    for edge, indices, interval, unit, expected in plans:
+        arguments = dict(song_dir=archive, units=[unit], audio=audio, source_identity=identity,
+            options=options, route_dir=route_dir, deadline_at=deadline_at)
+        observation = source.review_audio_units(**arguments)
+        if observation['status'] != 'observed':
+            return held(observation['issues'])
+        packet = observation['unit_results'][0]['result']['segment_audits'][0]['audit']['packet']
+        by_id = {row['id']: row for row in packet['lines']}
+        actual = [list(source._source_key(by_id[row['line_id']])) for row in packet['performance_order']]
+        if actual != expected:
+            return held([{'kind': 'original_edge_source_conflict', 'edge': edge,
+                'detail': 'Original edge hearing differs from the proposed removed occurrences; reconcile source first.',
+                'expected_order': expected, 'observed_order': actual,
+                'route_state_path': observation['unit_results'][0]['route_state_path']}])
+        confirmation = source.review_audio_units(**arguments, expected_orders={unit['id']: expected})
+        if confirmation['status'] != 'observed':
+            return held(confirmation['issues'])
+        files = {}
+        for item in observation['unit_results'] + confirmation['unit_results']:
+            state = Path(item['route_state_path'])
+            for path in (state, state.parent / 'accepted-result.json'):
+                files[str(path)] = source.file_hash(path)
+        memberships.append({'edge': edge, 'source_identity': identity,
+            'boundary_digest': source.digest(transform['boundary'][edge]),
+            'excluded_interval': interval, 'old_expanded_indices': indices,
+            'observation': observation, 'confirmation': confirmation, 'evidence_files': files})
+    checked = {**transform, 'original_edge_membership': memberships}
+    require_removed_membership(checked, reader, delta, original_song)
+    return {'status': 'observed', 'memberships': memberships, 'issues': []}
+
+
 def staged_source_evidence(transform, original_song, staged_song, reader, flags, coverage_requested):
     """Project routing hints only; the staged native identity owns every request."""
     import bhakti_library_source_pass as source
