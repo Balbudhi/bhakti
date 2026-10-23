@@ -32,6 +32,26 @@ retain structural/source/citation guards, and admit only private drafts to revie
 Do not invent a textual defect or buy another writer solely to clear a confidence
 flag. Final acceptance still requires explicit resolution and no remaining
 material defect. This admission/disposition change is designed, not implemented.
+The next integration must also replace the existing-library repair wrapper:
+`repair_current_reader` still retries glossary, writer and review together,
+while fresh-source intake uses the shared coordinator. Its confirmed word-index
+mutation limits, historical findings and owner locks must survive that migration.
+Review-specific naming/three-component instructions are prepared privately and
+passed 23 caller/naming checks; they are not activated under the old review task.
+
+Independent no-cost acoustic preparation now has ten matching real waveform
+landmarks across Rehna native Opus/AAC and canonical AAC, plus Aao native/canonical
+AAC. All pass the predeclared correlation/ambiguity criteria with decoded offsets
+near zero; source files remain unchanged. Actual IAB capture then recorded two
+separated waveforms per file: all ten captures contain exactly 96,000 contiguous
+frames, pass the frozen matching criteria, and have clock brackets below 30 ms.
+Rehna native Opus/AAC and both canonical files have zero-compatible clock
+intervals. Aao native AAC is 43.904–53.754 ms ahead of its canonical decoded axis;
+zero is excluded. Evidence is retained in
+`/tmp/bhakti-audio-origin-review/BROWSER_RESULTS.md` and the hash-bound raw capture
+and `browser-analysis.json`. This is file-specific playback evidence, not model
+timestamp or sung-onset certification. Do not shift existing times without their
+original axis; the remaining nonzero-AAC files have not been empirically played.
 The source-only context fix passed 34 joined context/cache checks. It preserves
 local before/after order without inventing global occurrences or translations,
 rejects missing/conflicting source definitions before dispatch, and refreshes

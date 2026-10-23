@@ -79,8 +79,14 @@ a prerequisite for all fresh production timing. A read-only inventory found 426
 listener files across 275 song directories: 316 had stream start zero and 110 AAC
 files had start 0.047891 seconds. These metadata do not justify timestamp shifts
 or establish first-syllable accuracy. Canonical-to-browser correspondence still
-needs file-specific evidence for offered listener formats; historical reuse holds
-remain scoped to the missing evidence. Do not extend a synthetic multi-second
+needs file-specific evidence for offered listener formats. The actual two-song
+IAB check now supplies ten waveform captures across five exact files: Rehna's
+native Opus/AAC and both canonical files are compatible with decoded zero, while
+Aao's native AAC clock is 43.904–53.754 ms ahead of its canonical decoded axis.
+That result applies only to those file hashes and the observed browser. It does
+not justify changing old timings whose original axis is unknown, or assigning
+the same correction to unmeasured AAC files. Historical reuse holds remain scoped
+to missing evidence. Do not extend a synthetic multi-second
 offset failure to the whole corpus or resume that terminal probe.
 
 Source repairs map section notices and adaptation markers through the accepted
