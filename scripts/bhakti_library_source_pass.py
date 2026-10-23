@@ -290,6 +290,8 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         evidence.update({'plan': plan, 'original_dependencies': dependencies,
                          'new_target_ids': plan['new_target_ids'], 'audio_sha256': file_hash(original_audio)})
         local = copy.copy(options)
+        # Hash guards and whole original-line validation above authorize this map.
+        local.timing_reviewed_source_map = copy.deepcopy(mapping) if mapping else None
         for name, value in {'force': False, 'refresh_timing': False, 'source_witness_audit': False,
                             'timeout': 300, 'model': pipeline.MODEL, 'pro_model': 'google/gemini-3.1-pro-preview'}.items():
             if not hasattr(local, name): setattr(local, name, value)

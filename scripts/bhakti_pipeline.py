@@ -1381,9 +1381,98 @@ def compress_adjacent_reader_entries(
     return merged_sequence, merged_timings, merged_boundaries
 
 
-def long_coarse_sequence(
-    audited: dict[str, Any], occurrences: list[dict[str, Any]], duration: float
+def reviewed_long_coarse_sequence(
+    audited: dict[str, Any], occurrences: list[dict[str, Any]], duration: float,
+    reviewed_source_map: dict[str, Any],
 ) -> list[dict[str, Any]]:
+    """Route exact reviewed source aliases; ordinal hints are never audio onsets."""
+    segments = audited.get("segment_audits", [])
+    rebuilt = merge_audited_segments(segments)
+    rebuilt_hash = hashlib.sha256(
+        (json.dumps(rebuilt, ensure_ascii=False, indent=2) + "\n").encode()
+    ).hexdigest()
+    if reviewed_source_map.get("rebuilt_audit_sha256") != rebuilt_hash:
+        raise ValueError("reviewed coarse map rebuilt source hash changed")
+    raw_by = {row["id"]: row for row in rebuilt["verified_lines"]}
+    if len(raw_by) != len(rebuilt["verified_lines"]):
+        raise ValueError("duplicate rebuilt source ID")
+    mapped_ids = set()
+    raw_to_final = {}
+    targets = {}
+    for row in reviewed_source_map.get("mapping", []):
+        raw_id = row.get("new_line_id")
+        if raw_id not in raw_by or raw_id in mapped_ids:
+            raise ValueError("duplicate or unknown reviewed coarse source ID")
+        raw = raw_by[raw_id]
+        raw_key = (raw["source_text"], raw["roman"])
+        if (row.get("audited_source"), row.get("audited_roman")) != raw_key:
+            raise ValueError("reviewed coarse source or roman changed")
+        old_id = row.get("old_line_id")
+        if old_id is None:
+            target_id, target_key = "source-new-" + raw_id, raw_key
+        else:
+            baseline = row.get("baseline_line", {})
+            target_id = old_id
+            target_key = (baseline.get("source"), baseline.get("roman"))
+        if not isinstance(target_id, str) or not target_id or any(
+            not isinstance(value, str) or not value for value in target_key
+        ):
+            raise ValueError("invalid reviewed coarse target")
+        if raw_key in raw_to_final and raw_to_final[raw_key] != target_id:
+            raise ValueError("ambiguous reviewed coarse source pair")
+        if target_id in targets and targets[target_id] != target_key:
+            raise ValueError("conflicting reviewed coarse target baseline")
+        raw_to_final[raw_key] = target_id
+        targets[target_id] = target_key
+        mapped_ids.add(raw_id)
+    if mapped_ids != set(raw_by):
+        raise ValueError("reviewed coarse map does not cover complete source")
+    assembly = assemble_audited_segment_occurrences(segments)
+    raw_occurrences = assembly["occurrences"]
+    expected = []
+    for raw in raw_occurrences:
+        key = (raw["line"]["source_text"], raw["line"]["roman"])
+        if key not in raw_to_final:
+            raise ValueError("undeclared raw source pair in reviewed coarse order")
+        expected.append(raw_to_final[key])
+    actual = []
+    for occurrence in occurrences:
+        target_id = occurrence.get("ref")
+        if target_id not in targets or (
+            occurrence.get("source_text"), occurrence.get("roman")
+        ) != targets[target_id]:
+            raise ValueError("display source differs from reviewed coarse target")
+        repeats = occurrence.get("repeats")
+        if type(repeats) is not int or repeats < 1:
+            raise ValueError("invalid reviewed coarse repeat count")
+        actual.extend([target_id] * repeats)
+    if actual != expected:
+        raise ValueError("reviewed coarse complete performance order differs")
+    result = []
+    raw_index = 0
+    for occurrence in occurrences:
+        raw = raw_occurrences[raw_index]
+        segment = segments[raw["segment_position"]]["segment"]
+        span = float(segment["clip_end"]) - float(segment["clip_start"])
+        point = (float(segment["clip_start"]) + span * raw["raw_occurrence_index"]
+                 / max(1, raw["raw_occurrence_count"]))
+        start = round(min(duration, max(point, result[-1]["start"] + 0.1 if result else 0.0)), 3)
+        result.append({"occurrence_id": occurrence["occurrence_id"], "ref": occurrence["ref"],
+                       "section": occurrence["section"], "repeats": occurrence["repeats"],
+                       "start": start, "segment_index": int(segment["index"]),
+                       "routing_only": True})
+        raw_index += occurrence["repeats"]
+    for index, row in enumerate(result):
+        row["end"] = result[index + 1]["start"] if index + 1 < len(result) else duration
+    return result
+
+
+def long_coarse_sequence(
+    audited: dict[str, Any], occurrences: list[dict[str, Any]], duration: float,
+    *, reviewed_source_map: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
+    if reviewed_source_map is not None:
+        return reviewed_long_coarse_sequence(audited, occurrences, duration, reviewed_source_map)
     merged: list[tuple[dict[str, Any], float, int]] = []
     segment_audits = audited.get("segment_audits", [])
     assembly = assemble_audited_segment_occurrences(segment_audits)
@@ -2514,7 +2603,10 @@ def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argpars
     with tempfile.TemporaryDirectory(prefix="bhakti-timing-audio-") as temporary:
         model_audio = canonical_timing_audio(audio, Path(temporary) / "timing.m4a")
         if audited.get("segment_audits"):
-            coarse_sequence = long_coarse_sequence(audited, occurrences, duration)
+            coarse_sequence = long_coarse_sequence(
+                audited, occurrences, duration,
+                reviewed_source_map=getattr(options, "timing_reviewed_source_map", None),
+            )
             response = {"packet": {"source": "deterministic-segment-hints"}, "usage": {},
                         "resolved_model": "deterministic-segment-hints"}
             errors: list[str] = []
