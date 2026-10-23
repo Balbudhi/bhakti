@@ -85,6 +85,11 @@ retention is allowed without an invented English dictionary entry or a forced
 misleading substitute. The glossary remains meaning-first and owner English
 stays locked. Four new retention controls plus existing lexical/cache controls
 pass 59 tests; these establish transport and validation, not linguistic quality.
+The private comparison driver now preserves typed semantic holds and continues
+independent cases only after checking both spending ledgers. Nine local checks
+cover continuation, no replay, exact held evidence, missing responses, unknown
+text/embedding outcomes and remaining budget. The current-code manifest and
+first-request capture still need renewal before any live dispatch; none occurred.
 
 The owner reconfirmed this full goal and requested an exhaustive task list on
 23 October. The existing goal remains active; this document is the maintained
