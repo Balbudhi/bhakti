@@ -791,7 +791,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "the wondrous Divine Preceptor; Praise to the Guru",
+        "gloss": "wondrous enlightener; Vāhigurū, a Sikh name for God",
         "concept_key": "",
         "preserve_in_english": false
       }

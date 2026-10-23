@@ -876,17 +876,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāhigurū",
-    "english": "{0:Vāhigurū!}",
+    "english": "{0:Wondrous Enlightener!}",
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "Wondrous Guru; a Sikh invocation of the Divine",
+        "gloss": "wondrous enlightener; Vāhigurū, a Sikh name for God",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Vāhigurū is retained as the Sikh divine invocation, with its Wondrous Guru sense explained in the popup. It is performed after the hymn and is not assigned to the canonical paurī."
+    "grammarNote": "Vāhigurū is the Sikh divine invocation, rendered here as Wondrous Enlightener. It is performed after the hymn and is not assigned to the canonical paurī."
   }
 };
 

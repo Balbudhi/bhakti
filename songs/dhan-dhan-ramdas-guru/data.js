@@ -1811,11 +1811,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vāhigurū",
-    "english": "{0:Vāhigurū!}",
+    "english": "{0:Wondrous Enlightener!}",
     "words": [
       {
         "roman": "Vāhigurū",
-        "gloss": "the wondrous enlightener; the Divine",
+        "gloss": "wondrous enlightener; Vāhigurū, a Sikh name for God",
         "concept_key": "",
         "preserve_in_english": false
       }

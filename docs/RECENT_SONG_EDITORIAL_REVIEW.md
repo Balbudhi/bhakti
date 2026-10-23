@@ -99,5 +99,15 @@ Gurbāṇī/Guru/Viṣṇu tags, scripture notices, source text, IAST, occurrenc
 all timestamps and owner-approved English remain unchanged. The deterministic
 production page generator changed only each data-asset cache hash in the HTML.
 All nine scoped contracts pass. This is a naming correction, not a fresh audio
-certification or completion of all translation work. Separate Vāhigurū invocation
-wording and broader Guru terminology remain outside this batch.
+certification or completion of all translation work. A follow-up corrected the remaining Vāhigurū invocations, as recorded below;
+broader Guru terminology remains separately classified.
+
+
+The invocation follow-up changes eight fields across four readers: three English
+invocations now read “Wondrous Enlightener!”, four popups retain the original
+Vāhigurū identity, and one stale English-retention note is corrected. Tu Thakur's
+already meaningful English is preserved. All five performed occurrences in the
+twelve-reader cohort are accounted for. The [Sri Granth dictionary](https://www.srigurugranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B5%E0%A8%BE%E0%A8%B9%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82)
+supports the wondrous preceptor/enlightener sense. All four readers passed their
+contracts and desktop/390px layout checks; source, IAST, metadata and timings are
+unchanged. No new model calls were needed for either naming batch.
