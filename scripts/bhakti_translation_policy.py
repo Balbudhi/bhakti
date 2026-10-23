@@ -12,7 +12,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 5
+POLICY_VERSION = 6
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
@@ -30,6 +30,19 @@ genuine proper names, with their evidenced identity, relationship or literal
 meaning in the clickable gloss. Distinguish a person's name from a descriptive
 epithet; explain the epithet's operative meaning rather than flattening every
 divine title to Lord. Do not manufacture etymologies from a modern artist name.
+When a name has an evidenced literal or traditional meaning, include that meaning
+in its clickable gloss as well as its referent; identity alone is not a substitute
+for explaining a known meaning. Mark traditional explanations as such. Do not
+invent a name meaning when its formation is unknown or disputed.
+
+Bhakti's default is English, including difficult philosophical words. First seek
+an accurate ordinary word; then a short precise phrase; then, if it preserves
+meaning or poetry better, a transparent source-supported compound. A missing
+one-word equivalent or dictionary entry is not a reason to leave an ordinary
+term untranslated. Rare retention of a non-name needs an explicit contextual
+reason, an understandable English gloss, and independent review. If the meaning
+itself is unresolved, report that uncertainty rather than presenting retained
+foreign text as a completed translation. Owner-approved English remains locked.
 
 For pati or a verified -pati compound, choose the relation supported by the
 source language, grammar and passage. Lord or master is permitted when evidenced;
@@ -51,6 +64,18 @@ wordplay and unusual agency. Supply English function words and natural syntax
 without adding theology or replacing the image. Transparent English compounds
 are welcome when the source supports their members; obscure invented words are
 not a substitute for an intelligible translation. Read across line breaks.
+Compare a proposed compound with its ordinary English paraphrase. Each component
+must express supported source meaning, and the joined expression must preserve
+their grammatical relation. Reject a coinage that merely sounds poetic but adds
+an image, attitude or relationship absent from the source.
+
+Choose a sense before inflecting its English realization. Preserve person, number,
+tense, aspect, voice, negation, modality and who does what to whom. For adjectives,
+identify what they modify and check whether the proposed English suggests praise,
+blame, physical quality or emotional attitude in this passage. English may need
+a phrase or a different part of speech to express the same relationship naturally;
+do not copy source endings or enforce word-by-word English order. Check the entire
+resulting line and its neighbors for grammar, connotation and poetic force.
 
 For repeated words, reuse a chosen rendering only when language, grammatical role,
 sense and image agree. Identical spelling alone does not establish identity.

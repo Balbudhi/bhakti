@@ -112,6 +112,30 @@ a completed library repair.
 
 ## Dictionary and embedding evidence
 
+The owner's clarified Bhakti policy is to translate ordinary words and concepts,
+including difficult ones. Prefer an accurate English word, then a precise short
+phrase, then an intentional transparent compound when it improves fidelity or
+poetry. Retaining a non-name is exceptional and needs a contextual reason and
+independent review; missing dictionary coverage alone is insufficient. Genuine
+names may remain, with their evidenced literal/traditional meaning and referent
+explained on click. Unknown etymology is not invented. Existing owner English is
+still protected. Shared prompt policy version 6 states these rules and explicitly
+checks inflection, adjectival relationships and connotations, and compound meaning.
+
+The discovery algorithm under construction compares contextual meaning with
+dictionary **sense definitions**, using embeddings to propose further words.
+Then it examines complete dictionary alternatives for the original words and a
+small discovered shortlist, and independently reviews the chosen wording in the
+whole line. The research basis includes contextual-definition comparison and
+whole-sentence fitness in [LexSubCon](https://aclanthology.org/2022.acl-long.87/),
+and explicit lexical/semantic relationships in
+[WordNet](https://wordnet.princeton.edu/documentation/wninput5wn). This is an
+adaptation requiring Bhakti-specific qualification, not a claim to reproduce the
+paper's model or benchmark results. A local workload check rejected unrestricted
+synonym expansion: one seed group produced 343 sense records and 22 embedding
+batches. Rank the bounded explored sense pool before expanding a small set of
+new lemmas, retain original candidates, and make exploration limits explicit.
+
 `dictionary_corpus.py` imports original Platts HTML captures and Cologne-derived
 Sanskrit JSON. Records retain the source language, headword spelling, edition,
 page/locus, entry/sense IDs, full context and exact witness hash. A printed entry
