@@ -1,0 +1,690 @@
+{
+  "source_discovery": {
+    "version": 1,
+    "relation_policy_version": 2,
+    "targets": [
+      {
+        "id": "discovery:verse-3-line-2:2",
+        "line_id": "verse-3-line-2",
+        "word_indices": [
+          2
+        ],
+        "surfaces": [
+          "ṭhikānā"
+        ],
+        "source_language": "hi",
+        "dictionary_id": "platts1884",
+        "queries": [
+          {
+            "text": "ठिकाना",
+            "origin": "native_surface"
+          },
+          {
+            "text": "ṭhikānā",
+            "origin": "model_hypothesis"
+          }
+        ],
+        "selection_status": "lookup_hypothesis",
+        "candidate_entry_ids": [
+          "platts1884.p363.hw17de11e5b9034850.h1"
+        ],
+        "observations": [
+          {
+            "text": "ठिकाना",
+            "origin": "native_surface",
+            "status": "candidate_entries",
+            "witness_sha256": "f0e8f167ba281bd40ab2f9ca729bcc069e44ce363dca364fa16a518bb801dd31"
+          },
+          {
+            "text": "ṭhikānā",
+            "origin": "model_hypothesis",
+            "status": "candidate_entries",
+            "witness_sha256": "26ebf813ac6de924f13c9288002edb204a4fb0f62e9540b21ca3d120cfd87d29"
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "entry_id": "platts1884.p363.hw17de11e5b9034850.h1",
+        "language": "hi",
+        "register": "classical Hindi / Hindustani, as covered by Platts1884",
+        "lemma": "ṭhikānā",
+        "source_spellings": [
+          "ठिकाना"
+        ],
+        "roman_search_aliases": [
+          "ṭhikānā"
+        ],
+        "dictionary": {
+          "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)",
+          "institution": "Digital Dictionaries of South Asia, University of Chicago",
+          "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=363",
+          "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%A0%E0%A4%BF%E0%A4%95%E0%A4%BE%E0%A4%A8%E0%A4%BE&searchhws=yes&matchtype=exact",
+          "print_page": 363,
+          "entry_locator": "ٿهکانا ठिकाना ṭhikānā; homograph 1 on printed page 363",
+          "whole_entry_text": "H ٿهکانا ठिकाना ṭhikānā [S. स्थिर+कृत+स्थान+कः; or ṭika, rt. of ṭiknā+S. स्थान+कः], s.m. Fixed or permanent place or abode; proper place; precise or exact spot, whereabouts; place, spot, site; dwelling.place, abode, residence, home, quarters; special field or scene of a labour, &c.), beat (as of a barber, or sweeper, &c.); fixing, fixity, certainty; certain knowledge; consistency, harmony, appositeness (of speech, conduct, &c.); origin, source; ground, basis, foundation (of a thing); goal, destination, end, limit, boundary: — ṭhikāne ćukānā, To distribute money among servants (on the decease of a member of a family): — ṭhikānā ḍhūṅḍhnā (-ke wāst̤e, &c.), To seek a residence or employment (for): — ṭhikāne rahnā, v.n. To remain stationary, fixed, or stable; to abide in one course, &c.: — ṭhikāne-kā, adj. (f. -ī), Congruous, consistent, harmonious, apposite, to the point; sensible: — ṭhikānā karnā (-kā), To put in (its) proper place; to find a place (for), to make room (for); to arrange; to take note (of), to learn (about), to account (for), to search or trace (an affair) to its source or commencement; to find a husband or wife (for): — ṭhikānā lagānā (-kā), To find out, discover, trace (one's residence, &c.); to trace to the source, to establish, settle, prove: — ṭhikāne lagānā (-ko), To dispose of; to establish, settle, arrange; to make away with, to spend, consume, run through; to send to (his or her) long home, to despatch, put to death, kill, assassinate: — ṭhikāne lagnā, v.n. To be still, be at rest, have a home, &c.; to be disposed of, be despatched, be put to death; to be put an end to, be terminated: — be-ṭhikāne, adj. & adv. Out of place, misplaced; irregular; incoherent, disconnected; inconsistent; indeterminate, unsettled, indefinite; immoderate, disproportioned; uncertain; groundless, unreasonable; — irregularly, incoherently, &c.; indiscriminately, at random.",
+          "headword_text": "ٿهکانا ठिकाना ṭhikānā",
+          "witness_sha256": "f0e8f167ba281bd40ab2f9ca729bcc069e44ce363dca364fa16a518bb801dd31",
+          "entry_html_sha256": "69190218be882f4561f0e5984a342c7643ca2d8212e7c88863048f52d645c439",
+          "source_revision": "DSAL digitization, site reports June 2024; exact downloaded HTML bound by hash",
+          "license": "CC BY-NC-ND 2.0; private candidate index only",
+          "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+          "evidence_status": "direct dictionary HTML; no semantic sense selection",
+          "query": "ठिकाना"
+        },
+        "additional_witnesses": [
+          {
+            "query": "ṭhikānā",
+            "query_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E1%B9%ADhik%C4%81n%C4%81&searchhws=yes&matchtype=exact",
+            "witness_sha256": "26ebf813ac6de924f13c9288002edb204a4fb0f62e9540b21ca3d120cfd87d29",
+            "entry_html_sha256": "69190218be882f4561f0e5984a342c7643ca2d8212e7c88863048f52d645c439"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": "source:platts1884.p363.hw17de11e5b9034850.h1",
+        "kind": "current_language_usage",
+        "language": "hi",
+        "lemma": "ṭhikānā",
+        "work": "John T. Platts, A Dictionary of Urdu, Classical Hindi, and English (1884)",
+        "locus": "ٿهکانا ठिकाना ṭhikānā; homograph 1 on printed page 363",
+        "source_url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?page=363",
+        "quotation_sha256": "69190218be882f4561f0e5984a342c7643ca2d8212e7c88863048f52d645c439",
+        "witness_sha256": "f0e8f167ba281bd40ab2f9ca729bcc069e44ce363dca364fa16a518bb801dd31",
+        "witness_span": null,
+        "limitations": [
+          "Historical dictionary usage; full entry contains alternatives, not selected meanings."
+        ]
+      }
+    ],
+    "entry_evidence_ids": {
+      "platts1884.p363.hw17de11e5b9034850.h1": [
+        "source:platts1884.p363.hw17de11e5b9034850.h1"
+      ]
+    },
+    "gaps": []
+  },
+  "lines": [
+    {
+      "id": "verse-3-line-1",
+      "source_text": "कहत कबीर सुनो भाई साधो",
+      "roman": "kahata kabīra sunō bhāī sādhō",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "कहत",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "कबीर",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "सुनो",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "भाई",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "साधो",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "kahata",
+        "kabīra",
+        "sunō",
+        "bhāī",
+        "sādhō"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-3-line-2",
+      "source_text": "सतगुरु नाम ठिकाना है",
+      "roman": "sataguru nāma ṭhikānā hai",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "सतगुरु",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "नाम",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ठिकाना",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            3
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "sataguru",
+        "nāma",
+        "ṭhikānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    }
+  ],
+  "glosses": [
+    {
+      "id": "verse-3-line-1",
+      "word_glosses": [
+        {
+          "roman": "kahata",
+          "gloss": "says",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kabīra",
+          "gloss": "fifteenth-century weaver-saint and mystic poet",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "sunō",
+          "gloss": "listen",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "bhāī",
+          "gloss": "O brothers",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "sādhō",
+          "gloss": "O seekers of truth",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "semantic_frame": {
+        "agent": "Kabīra (the poet-preceptor)",
+        "action_or_state": "declaring and calling to attend",
+        "patient_or_complement": "bhāī sādhō (the listening gathering of seekers and spiritual companions)",
+        "modifiers": "directly addressed in the traditional signature formula",
+        "negation_or_modality": "exhortative imperative ('sunō')",
+        "literal_image_and_agency": "The poet names himself and directly commands the gathered company of seekers and companions to listen closely before uttering the core spiritual teaching.",
+        "idiom_or_phrase": "'bhāī sādhō' (customary Sant vocative greeting to spiritual companions)",
+        "cross_line_relation": "Introduces and grammatically frames the spiritual proclamation in verse-3-line-2."
+      },
+      "grammar_note": "The bhaṇitā signature line uses the imperfective participle 'kahata' with subject 'kabīra' functioning as a present indicative statement ('says Kabir'), governing the plural imperative 'sunō' directed to the paired vocatives 'bhāī' and 'sādhō'.",
+      "uncertainty": "",
+      "sense_decisions": [
+        {
+          "word_index": 0,
+          "roman": "kahata",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Present imperfective participle of kahnā used as a finite present declarative verb ('says').",
+          "grammatical_role": "finite verb"
+        },
+        {
+          "word_index": 1,
+          "roman": "kabīra",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Proper noun identifying the historic 15th-century Sant poet-weaver of Varanasi.",
+          "grammatical_role": "subject"
+        },
+        {
+          "word_index": 2,
+          "roman": "sunō",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Second-person plural imperative of sunnā ('listen', 'hear').",
+          "grammatical_role": "imperative verb"
+        },
+        {
+          "word_index": 3,
+          "roman": "bhāī",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Vocative masculine noun meaning 'brother' or 'companions', modifying the addressed congregation.",
+          "grammatical_role": "vocative noun"
+        },
+        {
+          "word_index": 4,
+          "roman": "sādhō",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Vocative plural of sādhu ('seeker', 'spiritual practitioner', 'holy companion').",
+          "grammatical_role": "vocative noun"
+        }
+      ],
+      "lexical_queries": [],
+      "lexical_query_gaps": []
+    },
+    {
+      "id": "verse-3-line-2",
+      "word_glosses": [
+        {
+          "roman": "sataguru",
+          "gloss": "true spiritual teacher",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nāma",
+          "gloss": "divine name",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ṭhikānā",
+          "gloss": "true resting place",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "hai",
+          "gloss": "is",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "semantic_frame": {
+        "agent": "sataguru nāma (the divine name of the true spiritual teacher)",
+        "action_or_state": "existing as the true abode or refuge (copula 'hai')",
+        "patient_or_complement": "ṭhikānā (dwelling place, authentic home, refuge)",
+        "modifiers": "sataguru functioning as an attributive genitive modifier to nāma",
+        "negation_or_modality": "affirmative declarative",
+        "literal_image_and_agency": "The Name of the True Guru is identified as the only genuine, permanent refuge or dwelling place, standing in stark contrast to the desolate foreign country of worldly existence ('vīrānā desa').",
+        "idiom_or_phrase": "'ṭhikānā honā' (to be one's true abode, secure footing, or permanent dwelling place)",
+        "cross_line_relation": "Provides the philosophical and soteriological resolution to the problem posed in the refrain ('rahanā nahīṁ isa desa meṁ')."
+      },
+      "grammar_note": "The compound or genitival phrase 'sataguru nāma' acts as the subject, followed by the predicate noun 'ṭhikānā' ('refuge / true abode') and the 3rd person singular present copula 'hai'.",
+      "uncertainty": "",
+      "sense_decisions": [
+        {
+          "word_index": 0,
+          "roman": "sataguru",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Compound noun (sat + guru) designating the true, authentic spiritual master.",
+          "grammatical_role": "noun modifier"
+        },
+        {
+          "word_index": 1,
+          "roman": "nāma",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Contextual sense 'divine name', the focal object of remembrance in Sant devotional tradition.",
+          "grammatical_role": "subject head"
+        },
+        {
+          "word_index": 2,
+          "roman": "ṭhikānā",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Noun meaning 'resting place', 'true abode', or 'refuge', contrasting with the desolate country (desa) of worldly existence.",
+          "grammatical_role": "predicate noun"
+        },
+        {
+          "word_index": 3,
+          "roman": "hai",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Third-person singular present copular verb ('is').",
+          "grammatical_role": "copula"
+        }
+      ],
+      "lexical_queries": [
+        {
+          "word_indices": [
+            2
+          ],
+          "surfaces": [
+            "ṭhikānā"
+          ],
+          "reason": "Check the contextual noun sense and the attachment of modifiers in this clause against witnessed source-language definitions.",
+          "source_entry_ids": [],
+          "source_queries": [
+            "ठिकाना",
+            "ṭhikānā"
+          ],
+          "english_candidates": [
+            {
+              "expression": "true resting place",
+              "kind": "compositional_phrase",
+              "english_lemmas": [
+                "true",
+                "resting",
+                "place"
+              ]
+            },
+            {
+              "expression": "dwelling place",
+              "kind": "compositional_phrase",
+              "english_lemmas": [
+                "dwelling",
+                "place"
+              ]
+            },
+            {
+              "expression": "refuge",
+              "kind": "word",
+              "english_lemmas": [
+                "refuge"
+              ]
+            },
+            {
+              "expression": "abode",
+              "kind": "word",
+              "english_lemmas": [
+                "abode"
+              ]
+            }
+          ]
+        }
+      ],
+      "lexical_query_gaps": [],
+      "support_decisions": [
+        {
+          "target_id": "lexical:verse-3-line-2:2",
+          "used_evidence_ids": [],
+          "role": "operative_meaning",
+          "reason": "Existing gloss sense decision: Noun meaning 'resting place', 'true abode', or 'refuge', contrasting with the desolate country (desa) of worldly existence."
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "translations": [
+      {
+        "id": "verse-3-line-1",
+        "literal_english": "Says Kabir, listen, O brother seekers:",
+        "segments": [
+          {
+            "text": "Says ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "Kabir, ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "listen, ",
+            "word_indices": [
+              2
+            ]
+          },
+          {
+            "text": "O brother ",
+            "word_indices": [
+              3
+            ]
+          },
+          {
+            "text": "seekers:",
+            "word_indices": [
+              4
+            ]
+          }
+        ],
+        "fidelity": {
+          "agency_and_image_preserved": true,
+          "all_meaning_accounted_for": true,
+          "unsupported_additions": [],
+          "notes": "Preserves the speaker agency of Kabir and the vocative address to the congregation of seekers."
+        },
+        "material_alternatives": [
+          "Kabir says, listen, O brother seekers:",
+          "Says Kabir: listen, O brothers, O seekers of truth:",
+          "Says Kabir, hear me, brother seekers:"
+        ],
+        "human_review_recommended": false,
+        "choice_note": "The traditional bhaṇitā signature formula 'kahata kabīra' is translated literally in the present tense ('Says Kabir'), maintaining source word order and present declarative force. The plural imperative 'sunō' ('listen') is followed by the paired vocatives 'bhāī sādhō', rendered as 'O brother seekers' to honor the traditional Sant address to spiritual companions.",
+        "uncertainty": "",
+        "source_discovery_decisions": []
+      },
+      {
+        "id": "verse-3-line-2",
+        "literal_english": "The True Guru's Name is the true resting place.",
+        "segments": [
+          {
+            "text": "The True Guru's ",
+            "word_indices": [
+              0
+            ]
+          },
+          {
+            "text": "Name ",
+            "word_indices": [
+              1
+            ]
+          },
+          {
+            "text": "is ",
+            "word_indices": [
+              3
+            ]
+          },
+          {
+            "text": "the true resting place.",
+            "word_indices": [
+              2
+            ]
+          }
+        ],
+        "fidelity": {
+          "agency_and_image_preserved": true,
+          "all_meaning_accounted_for": true,
+          "unsupported_additions": [],
+          "notes": "Preserves the copular statement identifying the True Guru's Name as the soul's true resting place, contrasting with the desolate country of worldly transmigration."
+        },
+        "material_alternatives": [
+          "The true teacher's Name is the true resting place.",
+          "The True Guru's Name is our dwelling place.",
+          "The True Guru's Name is the true refuge.",
+          "The True Guru's Name is our permanent abode."
+        ],
+        "human_review_recommended": true,
+        "choice_note": "'sataguru nāma' is translated as 'The True Guru's Name', preserving the genitival modifier relation. 'ṭhikānā' is translated as 'true resting place' (candidate:0ce1258d78a22b1f6379), supported by Platts ('Fixed or permanent place or abode... dwelling.place, abode'). In this bhajan, ṭhikānā stands in structural and spiritual antithesis to the desolate land ('vīrānā desa') where one cannot dwell ('rahanā nahīṁ'). Alternatives such as 'dwelling place' and 'refuge' are recorded in material alternatives.",
+        "uncertainty": "",
+        "source_discovery_decisions": [
+          {
+            "target_id": "discovery:verse-3-line-2:2",
+            "entry_id": "platts1884.p363.hw17de11e5b9034850.h1",
+            "attested_form": "ठिकाना",
+            "quotation": "Fixed or permanent place or abode; proper place; precise or exact spot, whereabouts; place, spot, site; dwelling.place, abode, residence, home, quarters",
+            "meaning_applied": "fixed or permanent place or abode; true resting place",
+            "reason": "The performed token ṭhikānā matches the Platts headword exactly as a masculine noun meaning a permanent abode or resting place.",
+            "form_explanation": "",
+            "status": "matched",
+            "relation_kind": "exact_form",
+            "changes_gloss": false
+          }
+        ],
+        "wording_decisions": [
+          {
+            "target_id": "lexical:verse-3-line-2:2",
+            "reason": "The noun ṭhikānā denotes a fixed or permanent place, dwelling place, or refuge. Here it serves as the predicate complement to sataguru nāma, identifying the divine Name as the soul's genuine resting place in contrast to the desolate foreign land (vīrānā desa).",
+            "chosen_candidate_id": "candidate:0ce1258d78a22b1f6379",
+            "expression": "true resting place",
+            "kind": "compositional_phrase",
+            "english_evidence_ids": [
+              "wordnet:3.1:a:00023157",
+              "wordnet:3.1:a:00914318",
+              "wordnet:3.1:a:00962719",
+              "wordnet:3.1:a:01167303",
+              "wordnet:3.1:a:01228271",
+              "wordnet:3.1:a:01410239",
+              "wordnet:3.1:a:01473564",
+              "wordnet:3.1:a:01945125",
+              "wordnet:3.1:a:02187907",
+              "wordnet:3.1:a:02469730",
+              "wordnet:3.1:a:02474747",
+              "wordnet:3.1:a:02478996",
+              "wordnet:3.1:n:00587299",
+              "wordnet:3.1:n:00722683",
+              "wordnet:3.1:n:05084517",
+              "wordnet:3.1:n:05619605",
+              "wordnet:3.1:n:06401196",
+              "wordnet:3.1:n:06412750",
+              "wordnet:3.1:n:06495143",
+              "wordnet:3.1:n:08530790",
+              "wordnet:3.1:n:08577045",
+              "wordnet:3.1:n:08637370",
+              "wordnet:3.1:n:08639173",
+              "wordnet:3.1:n:08659612",
+              "wordnet:3.1:n:08665191",
+              "wordnet:3.1:n:08682181",
+              "wordnet:3.1:n:13949819",
+              "wordnet:3.1:n:13970825",
+              "wordnet:3.1:n:13971047",
+              "wordnet:3.1:r:00185770",
+              "wordnet:3.1:v:00466204",
+              "wordnet:3.1:v:00620568",
+              "wordnet:3.1:v:00659723",
+              "wordnet:3.1:v:00661447",
+              "wordnet:3.1:v:00675367",
+              "wordnet:3.1:v:00747956",
+              "wordnet:3.1:v:01051148",
+              "wordnet:3.1:v:01089102",
+              "wordnet:3.1:v:01091334",
+              "wordnet:3.1:v:01153025",
+              "wordnet:3.1:v:01496967",
+              "wordnet:3.1:v:01715608",
+              "wordnet:3.1:v:02275982",
+              "wordnet:3.1:v:02338685",
+              "wordnet:3.1:v:02397904",
+              "wordnet:3.1:v:02543626",
+              "wordnet:3.1:v:02701737"
+            ],
+            "word_indices": [
+              2
+            ],
+            "ordinary_paraphrase": "dwelling place",
+            "component_word_indices": [
+              [
+                2
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "comparison": [
+      {
+        "id": "verse-3-line-1",
+        "supplied": "",
+        "chosen": "Says Kabir, listen, O brother seekers:",
+        "material_change": true,
+        "reason": "No previous translation supplied; provided a faithful translation of the signature bhaṇitā line preserving word order and vocative direct address."
+      },
+      {
+        "id": "verse-3-line-2",
+        "supplied": "",
+        "chosen": "The True Guru's Name is the true resting place.",
+        "material_change": true,
+        "reason": "No previous translation supplied; provided a faithful translation grounded in the semantic frame and Platts lexicographical evidence."
+      }
+    ]
+  },
+  "provenance": {
+    "request_sha256": "bfe8ce1ba2043040f6fee82a1af4bad4414c18ed3f3f6348107f035ae218e9b5",
+    "response_sha256": "f6ab984e14f40981420b456ada3f097733ec8135cf1acf8562d03f26401abaf3",
+    "request_id": "3444a86d95ae4002b3300d9815e3ad9c"
+  }
+}

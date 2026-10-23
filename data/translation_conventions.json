@@ -1,0 +1,594 @@
+{
+  "version": 1,
+  "occurrences": [
+    {
+      "source_slug": "gagan-mein-thaal",
+      "source_language": "pa",
+      "line_id": "har-charan-kamal",
+      "source_text": "ਹਰਿ ਚਰਣ ਕਮਲ ਮਕਰੰਦ ਲੋਭਿਤ ਮਨੋ ਅਨਦਿਨੋੁ ਮੋਹਿ ਆਹੀ ਪਿਆਸਾ ॥",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "source_language": "pa",
+      "line_id": "refrain-2",
+      "source_text": "ਸੁ ਭਲਕੇ ਉਠਿ ਹਰਿ ਨਾਮੁ ਧਿਆਵੈ",
+      "word_indices": [
+        3
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "source_language": "pa",
+      "line_id": "verse-1c",
+      "source_text": "ਉਪਦੇਸਿ ਗੁਰੂ ਹਰਿ ਹਰਿ ਜਪੁ ਜਾਪੈ",
+      "word_indices": [
+        2
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "source_language": "pa",
+      "line_id": "verse-1c",
+      "source_text": "ਉਪਦੇਸਿ ਗੁਰੂ ਹਰਿ ਹਰਿ ਜਪੁ ਜਾਪੈ",
+      "word_indices": [
+        3
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "source_language": "pa",
+      "line_id": "verse-2b",
+      "source_text": "ਬਹਦਿਆ ਉਠਦਿਆ ਹਰਿ ਨਾਮੁ ਧਿਆਵੈ",
+      "word_indices": [
+        2
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "source_language": "pa",
+      "line_id": "verse-2c",
+      "source_text": "ਜੋ ਸਾਸਿ ਗਿਰਾਸਿ ਧਿਆਏ ਮੇਰਾ ਹਰਿ ਹਰਿ",
+      "word_indices": [
+        5
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "source_language": "pa",
+      "line_id": "verse-2c",
+      "source_text": "ਜੋ ਸਾਸਿ ਗਿਰਾਸਿ ਧਿਆਏ ਮੇਰਾ ਹਰਿ ਹਰਿ",
+      "word_indices": [
+        6
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "har-jiyo-kirpa-karo",
+      "source_language": "pa",
+      "line_id": "rahao-2",
+      "source_text": "ਹਰਿ ਨਾਮੁ ਦੇਵਹੁ ਆਧਾਰੇ",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "har-jiyo-kirpa-karo",
+      "source_language": "pa",
+      "line_id": "refrain-1",
+      "source_text": "ਹਰਿ ਜੀਉ ਕ੍ਰਿਪਾ ਕਰਹੁ",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "har-jiyo-kirpa-karo",
+      "source_language": "pa",
+      "line_id": "v2-2",
+      "source_text": "ਹਰਿ ਰਸੁ ਚਾਖਿ ਮਨੁ ਨਿਰਮਲੁ ਹੋਆ ਕਿਲਬਿਖ ਕਾਟਣਹਾਰਾ",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "jo-nar-dukh-mein-dukh-nahin-jaane",
+      "source_language": "pa",
+      "line_id": "line-018",
+      "source_text": "ਨਾਨਕ ਲੀਨ ਭਇਓ ਗੋਬਿੰਦ ਸਿਉ",
+      "word_indices": [
+        3
+      ],
+      "roman_surfaces": [
+        "gobind"
+      ],
+      "native_surfaces": [
+        "ਗੋਬਿੰਦ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "koee-aan-milavai-mera-pritam-pyara",
+      "source_language": "pa",
+      "line_id": "darsan-har-dekhan",
+      "source_text": "ਦਰਸਨੁ ਹਰਿ ਦੇਖਣ ਕੈ ਤਾਈ",
+      "word_indices": [
+        1
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "koee-aan-milavai-mera-pritam-pyara",
+      "source_language": "pa",
+      "line_id": "kripa-kare-ta-satgur",
+      "source_text": "ਕ੍ਰਿਪਾ ਕਰੇ ਤਾ ਸਤਿਗੁਰੁ ਮੇਲੇ ਹਰਿ ਹਰਿ ਨਾਮੁ ਧਿਆਈ",
+      "word_indices": [
+        5
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "koee-aan-milavai-mera-pritam-pyara",
+      "source_language": "pa",
+      "line_id": "kripa-kare-ta-satgur",
+      "source_text": "ਕ੍ਰਿਪਾ ਕਰੇ ਤਾ ਸਤਿਗੁਰੁ ਮੇਲੇ ਹਰਿ ਹਰਿ ਨਾਮੁ ਧਿਆਈ",
+      "word_indices": [
+        6
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "koee-aan-milavai-mera-pritam-pyara",
+      "source_language": "pa",
+      "line_id": "nanak-garib-dheh",
+      "source_text": "ਨਾਨਕੁ ਗਰੀਬੁ ਢਹਿ ਪਇਆ ਦੁਆਰੈ ਹਰਿ ਮੇਲਿ ਲੇਹੁ ਵਡਿਆਈ",
+      "word_indices": [
+        5
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "mera-man-lochai",
+      "source_language": "pa",
+      "line_id": "line-009",
+      "source_text": "ਮੇਰੇ ਸਜਣ ਮੀਤ ਮੁਰਾਰੇ ਜੀਉ ॥",
+      "word_indices": [
+        3
+      ],
+      "roman_surfaces": [
+        "murāre"
+      ],
+      "native_surfaces": [
+        "ਮੁਰਾਰੇ"
+      ],
+      "english_head": "Foe of Mura",
+      "gloss_identity": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "mera-man-lochai",
+      "source_language": "pa",
+      "line_id": "line-011",
+      "source_text": "ਗੁਰ ਸਜਣ ਮੀਤ ਮੁਰਾਰੇ ਜੀਉ ॥",
+      "word_indices": [
+        3
+      ],
+      "roman_surfaces": [
+        "murāre"
+      ],
+      "native_surfaces": [
+        "ਮੁਰਾਰੇ"
+      ],
+      "english_head": "Foe of Mura",
+      "gloss_identity": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "mera-man-lochai",
+      "source_language": "pa",
+      "line_id": "line-042",
+      "source_text": "ਹਰਿ ਦਰਸਨ ਕੀ ਆਸਾ ॥",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "mera-man-lochai",
+      "source_language": "pa",
+      "line_id": "line-046",
+      "source_text": "ਨਾਨਕ ਹਰਿ ਸੰਗਿ ਮੀਤ ॥",
+      "word_indices": [
+        1
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "sabh-gobind-hai",
+      "source_language": "pa",
+      "line_id": "gobind-bin-nahi-koi",
+      "source_text": "ਗੋਬਿੰਦ ਬਿਨੁ ਨਹੀ ਕੋਈ",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "gobind"
+      ],
+      "native_surfaces": [
+        "ਗੋਬਿੰਦ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "sabh-gobind-hai",
+      "source_language": "pa",
+      "line_id": "kahat-namdeu-har-ki-rachna",
+      "source_text": "ਕਹਤ ਨਾਮਦੇਉ ਹਰਿ ਕੀ ਰਚਨਾ",
+      "word_indices": [
+        2
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "sabh-gobind-hai",
+      "source_language": "pa",
+      "line_id": "keval-ek-murari",
+      "source_text": "ਕੇਵਲ ਏਕ ਮੁਰਾਰੀ",
+      "word_indices": [
+        2
+      ],
+      "roman_surfaces": [
+        "murārī"
+      ],
+      "native_surfaces": [
+        "ਮੁਰਾਰੀ"
+      ],
+      "english_head": "Foe of Mura",
+      "gloss_identity": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "sabh-gobind-hai",
+      "source_language": "pa",
+      "line_id": "sabh-gobind-hai",
+      "source_text": "ਸਭੁ ਗੋਬਿੰਦੁ ਹੈ",
+      "word_indices": [
+        1
+      ],
+      "roman_surfaces": [
+        "gobindu"
+      ],
+      "native_surfaces": [
+        "ਗੋਬਿੰਦੁ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "so-satgur-pyara-mere-naal-hai",
+      "source_language": "pa",
+      "line_id": "jin-har-seva-banat-banai",
+      "source_text": "ਜਿਨਿ ਹਰਿ ਸੇਵਾ ਬਣਤ ਬਣਾਈ",
+      "word_indices": [
+        1
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "so-satgur-pyara-mere-naal-hai",
+      "source_language": "pa",
+      "line_id": "nanak-gur-vitahu-varia",
+      "source_text": "ਨਾਨਕੁ ਗੁਰ ਵਿਟਹੁ ਵਾਰਿਆ ਜਿਨਿ ਹਰਿ ਨਾਮੁ ਦੀਆ ਮੇਰੇ ਮਨ ਕੀ ਆਸ ਪੁਰਾਈ",
+      "word_indices": [
+        5
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "so-satgur-pyara-mere-naal-hai",
+      "source_language": "pa",
+      "line_id": "tis-gur-kau-hau-varia",
+      "source_text": "ਤਿਸੁ ਗੁਰ ਕਉ ਹਉ ਵਾਰਿਆ ਜਿਨਿ ਹਰਿ ਕੀ ਹਰਿ ਕਥਾ ਸੁਣਾਈ",
+      "word_indices": [
+        6
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "so-satgur-pyara-mere-naal-hai",
+      "source_language": "pa",
+      "line_id": "tis-gur-kau-hau-varia",
+      "source_text": "ਤਿਸੁ ਗੁਰ ਕਉ ਹਉ ਵਾਰਿਆ ਜਿਨਿ ਹਰਿ ਕੀ ਹਰਿ ਕਥਾ ਸੁਣਾਈ",
+      "word_indices": [
+        8
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "so-satgur-pyara-mere-naal-hai",
+      "source_language": "pa",
+      "line_id": "tis-gur-kau-sabas-hai",
+      "source_text": "ਤਿਸੁ ਗੁਰ ਕਉ ਸਾਬਾਸਿ ਹੈ ਜਿਨਿ ਹਰਿ ਸੋਝੀ ਪਾਈ",
+      "word_indices": [
+        6
+      ],
+      "roman_surfaces": [
+        "hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "tera-kiya-meetha-laage",
+      "source_language": "pa",
+      "line_id": "har-ka-naam-ridhai-nit-dhiaai",
+      "source_text": "ਹਰਿ ਕਾ ਨਾਮੁ ਰਿਦੈ ਨਿਤ ਧਿਆਈ ॥",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "Hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "tera-kiya-meetha-laage",
+      "source_language": "pa",
+      "line_id": "har-naam-padarath-nanak-mange",
+      "source_text": "ਹਰਿ ਨਾਮੁ ਪਦਾਰਥੁ ਨਾਨਕੁ ਮਾਂਗੈ ॥",
+      "word_indices": [
+        0
+      ],
+      "roman_surfaces": [
+        "Hari"
+      ],
+      "native_surfaces": [
+        "ਹਰਿ"
+      ],
+      "english_head": "Lord",
+      "gloss_identity": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+      "reason": "Retain reviewed contextual divine naming while regenerating clause grammar independently.",
+      "authority": "docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026"
+    },
+    {
+      "source_slug": "rehna-nahi-isa-desa",
+      "source_language": "hi",
+      "line_id": "verse-3-line-1",
+      "source_text": "कहत कबीर सुनो भाई साधो",
+      "word_indices": [
+        1
+      ],
+      "roman_surfaces": [
+        "kabīra"
+      ],
+      "native_surfaces": [
+        "कबीर"
+      ],
+      "english_head": "Kabīr",
+      "gloss_identity": "Kabīr, the poet named in this source line",
+      "authority": "data/source_credits.json: verified recording LA_lHx9qroQ",
+      "reason": "Verified historical personal-name spelling; do not remove final source a from other names by analogy."
+    }
+  ]
+}

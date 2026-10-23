@@ -107,7 +107,7 @@ def comparison_record(case, reader, glosses, translations):
             'owner_reference':bool(case.get('owner_reference')),'calibration_limitation': 'Production prompts contain some owner-reference examples; this is not an unseen generalization test. Aruṇācala wordplay/cave clauses and the contextual guṇa and mapping controls are not quoted prompt examples.','lines':rows}
 
 def options_for(case, reader, options):
-    local=copy.copy(options); local.force=False
+    local=copy.copy(options); local.force=False; local.source_slug=case['slug']
     source,_,_=library.reader_evidence(reader)
     local.semantic_full_source=source
     local.semantic_performance_order=copy.deepcopy(reader['SONG_SEQUENCE'])

@@ -197,10 +197,12 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
             baseline_path.write_text(json.dumps(baseline, ensure_ascii=False), encoding="utf-8")
             job["providedTranslation"] = str(baseline_path)
         gloss_options = argparse.Namespace(**vars(options), force=not options.reuse_glosses)
+        gloss_options.source_slug = slug
         glosses = pipeline.gloss(workspace, audited, gloss_options)
         # The documented option reuses glosses only; English and its independent
         # review run again, using the shared policy/evidence fingerprints.
         translation_options = argparse.Namespace(**vars(options), force=True)
+        translation_options.source_slug = slug
         translations = pipeline.translate(workspace, audited, glosses, job, translation_options)
         gloss_by_id = {row["id"]: row for row in glosses["packet"]["glosses"]}
         english_by_id = {row["id"]: row for row in translations["packet"]["translations"]}

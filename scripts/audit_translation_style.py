@@ -94,6 +94,8 @@ def record(line_id: str, line: dict[str, Any]) -> dict[str, Any]:
         "id": line_id,
         "source_text": line.get("source", ""),
         "roman": line.get("roman", ""),
+        "lexical_tokens": [word.get("roman", "") for word in line.get("words", [])],
+        **({"sourceLanguage": line["sourceLanguage"]} if "sourceLanguage" in line else {}),
         "current_english": plain_english(str(line.get("english", ""))),
         "word_glosses": [{"index": index, "roman": word.get("roman", ""), "gloss": word.get("gloss", "")}
                          for index, word in enumerate(line.get("words", []))],
@@ -101,7 +103,9 @@ def record(line_id: str, line: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def prompt(slug: str, targets: list[dict[str, Any]], context: list[dict[str, Any]], languages: list[str] | None = None) -> str:
+def prompt(slug: str, targets: list[dict[str, Any]], context: list[dict[str, Any]], languages: list[str] | None = None, *, naming_options=None) -> str:
+    naming_options = translation_policy.prepare_naming_options(
+        naming_options or argparse.Namespace(), targets + context, languages, source_slug=slug)
     return f"""You are the final English editor for a devotional-song reader. Audit every TARGET line against its source, Romanization, reviewed word glosses, and grammar note. The gloss record is the semantic constraint and must be considered before writing the sentence.
 
 The current English may be a deliberate human translation. Literal strangeness, repetition, personification, unusual agency, and concrete ritual or bodily imagery can be essential poetry; conventional English is not automatically better. Preserve supported expressions such as “my breath will abandon me,” “from the inside,” or a deity resting in the speaker's palm even when a smoother idiom exists. Preserve suffered or resultant states as states: if the current line says the speaker is broken, undone, struck, or seized, do not rewrite it as though the speaker actively broke, undid, struck, or seized themself unless the source unambiguously forces that active reading. If the current English preserves the right agency, imagery, and emotional logic, do not replace it merely because another grammatical parse is possible. Correct a line only for a demonstrable meaning error, grammatical failure, unsupported addition, or wording that truly obstructs understanding. “Cast a glance of mercy” may become “look upon me with mercy,” but do not generalize that decision into permission to replace other literal images. Preserve an alms bag, garment hem, lotus, dust, ocean, threshold, cage, and other concrete source images. Do not introduce or change theology, sentiment, agency, tense, pronouns, causal links, or metaphor.
@@ -110,7 +114,7 @@ If the current line is faithful and intelligible, retain it exactly and set chan
 
 For every line, return a complete revised sentence plus ordered display segments. Segment text must concatenate, with ordinary spacing and punctuation, to revised_english. Each semantic segment must reference the exact supporting word indices. Punctuation or necessary English function words may use an empty index list. Mark real source ambiguity rather than guessing.
 
-{translation_policy.guidance(targets + context, languages)}
+{translation_policy.naming_prompt(naming_options, targets + context)}{translation_policy.guidance(targets + context, languages)}
 
 Song: {slug}
 
@@ -168,9 +172,15 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
         targets = batches[index]
         start = index * options.batch_size
         context = records[max(0, start - 2):start] + records[start + len(targets):start + len(targets) + 2]
+        naming_options = translation_policy.prepare_naming_options(
+            options, targets + context, languages, source_slug=slug)
+        policy = translation_policy.policy_payload()
+        naming = naming_options.semantic_naming_conventions
+        if naming['matches']:
+            policy = {**policy, 'naming_conventions': naming}
         fingerprint = hashlib.sha256(json.dumps(
             {"version": PROMPT_VERSION, "model": options.model, "provider": gemini.provider_name(),
-             "policy": translation_policy.policy_payload(), "languages": languages,
+             "policy": policy, "languages": languages,
              "targets": targets, "context": context},
             ensure_ascii=False, sort_keys=True,
         ).encode()).hexdigest()
@@ -183,7 +193,7 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
             if not cached_errors:
                 return cached
         response = gemini.call(
-            options.model, gemini.key(), prompt(slug, targets, context, languages), audio=None, timeout=options.timeout,
+            options.model, gemini.key(), prompt(slug, targets, context, languages, naming_options=naming_options), audio=None, timeout=options.timeout,
             response_schema=response_schema(), schema_name="bhakti_translation_style_audit",
             reasoning_effort="high", max_completion_tokens=review_max_completion_tokens(targets, model=options.model),
         )

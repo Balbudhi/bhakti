@@ -19,7 +19,7 @@ import dictionary_corpus as corpus
 import source_word_map
 
 VERSION = 1
-RELATION_POLICY_VERSION = 2
+RELATION_POLICY_VERSION = 3
 MAX_SUGGESTIONS = 2
 
 
@@ -228,7 +228,7 @@ def discovery_decision_errors(discovery, decisions):
             quotation, form = decision.get('quotation'), decision.get('attested_form')
             support.require(isinstance(quotation, str) and quotation and
                             quotation in entry['dictionary']['whole_entry_text'], 'source quotation not witnessed')
-            support.require(isinstance(form, str) and form and form in quotation, 'attested form absent from quotation')
+            support.require(isinstance(form, str) and form.strip(), 'attested form missing')
             relation = decision.get('relation_kind')
             support.require(relation in {'exact_form', 'vernacular_variant', 'compound_subentry', 'inflected_form'},
                             'matched source relation kind missing')
@@ -237,8 +237,12 @@ def discovery_decision_errors(discovery, decisions):
             if relation == 'exact_form':
                 native = [query['text'] for query in target['queries'] if query['origin'] == 'native_surface']
                 heads = entry['source_spellings'] + entry['roman_search_aliases']
-                support.require(any(lexical.token(value) == lexical.token(head) for value in native + target['surfaces']
-                                    for head in heads), 'exact source-form claim has no matching witnessed headword')
+                normalized = lexical.token(form)
+                support.require(any(normalized == lexical.token(head) for head in heads)
+                                and any(normalized == lexical.token(value) for value in native + target['surfaces']),
+                                'exact source-form claim must itself match the witnessed headword and performed form')
+            if relation in {'vernacular_variant', 'compound_subentry'}:
+                support.require(form in quotation, 'attested form absent from quotation')
             if relation == 'inflected_form':
                 heads = entry['source_spellings'] + entry['roman_search_aliases']
                 support.require(any(lexical.token(form) == lexical.token(head) for head in heads),
@@ -329,6 +333,12 @@ def prompt(options, line_ids):
         'Source query suggestions and similar spellings are not proof of a word relationship. '
         'For every target/entry pair return source_discovery_decisions with matched/rejected/unresolved, '
         'attested_form, exact quotation, relation_kind, meaning_applied, changes_gloss, and reason. '
+        'For exact_form, attested_form itself must be a witnessed headword or roman alias that exactly matches '
+        'the performed native or roman form. A dictionary query hypothesis, substring, or cognate is not an exact match. '
+        'For exact_form and inflected_form, the headword/alias establishes the form witness; quotation may separately '
+        'cite the exact relevant definition from that same entry without repeating its headword. '
+        'A valid form and quotation do not establish contextual meaning or authorize extra qualifiers. '
+        'For vernacular_variant and compound_subentry the quoted passage must contain attested_form. '
         'A matched compound must quote the whole compound subentry, not just its root. '
         'Use inflected_form for a performed form linked to an attested dictionary lemma; '
         'provide form_explanation accounting for the ending or particle and its grammatical contribution in this whole line. '
@@ -348,6 +358,11 @@ def extend_schema(schema, options):
     schema = copy.deepcopy(schema)
     props = {field: {'type': 'string'} for field in
              ('target_id', 'entry_id', 'attested_form', 'quotation', 'meaning_applied', 'reason', 'form_explanation')}
+    props['attested_form']['description'] = ('Exact witnessed headword/roman alias for exact_form or inflected_form; '
+        'the claimed variant/compound must appear in quotation for those other relations.')
+    props['quotation']['description'] = ('Verbatim definition or relevant passage from the selected entry. '
+        'For exact_form/inflected_form its witnessed headword may be cited separately in attested_form. '
+        'Citation validity does not certify meaning_applied.')
     props.update(status={'type': 'string', 'enum': ['matched', 'rejected', 'unresolved']},
                  relation_kind={'type': 'string', 'enum': ['exact_form', 'vernacular_variant', 'compound_subentry', 'inflected_form', 'unresolved']},
                  changes_gloss={'type': 'boolean'})

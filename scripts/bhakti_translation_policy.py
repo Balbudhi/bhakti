@@ -6,6 +6,7 @@ unrelated compounds and diacritically distinct words out of the candidate set.
 from __future__ import annotations
 
 import json
+import copy
 import os
 import bhakti_lexical_retrieval as lexical_retrieval
 import unicodedata
@@ -116,6 +117,114 @@ sense; it is allowed even when this language has no dictionary candidates, but
 still needs independent semantic review. missing_evidence means the meaning
 itself remains unresolved, not merely that the small dictionary lacks an entry.
 """
+
+
+def resolve_naming_conventions(source_slug, lines, languages, *, full_source):
+    """Resolve reviewed occurrences, never names by spelling or a tradition tag."""
+    empty = {'matches': [], 'conflicts': []}
+    if not source_slug:
+        return empty
+    if not isinstance(source_slug, str):
+        raise ValueError('naming source_slug must be a string')
+    path = ROOT / 'data/translation_conventions.json'
+    if not path.exists():
+        return empty
+    registry = json.loads(path.read_text(encoding='utf-8'))
+    if registry.get('version') != 1 or not isinstance(registry.get('occurrences'), list):
+        raise ValueError('invalid naming convention registry')
+    records, seen = [], set()
+    for record in registry['occurrences']:
+        if not isinstance(record, dict):
+            raise ValueError('invalid naming convention record')
+        for field in ('source_slug', 'source_language', 'line_id', 'source_text',
+                      'english_head', 'gloss_identity', 'reason', 'authority'):
+            if not isinstance(record.get(field), str) or not record[field].strip():
+                raise ValueError('naming convention lacks ' + field)
+        indices = record.get('word_indices')
+        surfaces = record.get('roman_surfaces')
+        native = record.get('native_surfaces')
+        if (not isinstance(indices, list) or not indices
+                or any(type(i) is not int or i < 0 for i in indices) or indices != sorted(set(indices))
+                or not isinstance(surfaces, list) or len(surfaces) != len(indices)
+                or any(not isinstance(x, str) or not x for x in surfaces)
+                or not isinstance(native, list) or not native or any(not isinstance(x, str) or not x for x in native)):
+            raise ValueError('invalid naming convention token scope')
+        key = (record['source_slug'], record['line_id'], tuple(indices))
+        if key in seen:
+            raise ValueError('duplicate naming convention occurrence')
+        seen.add(key)
+        if record['source_slug'] == source_slug:
+            records.append(record)
+    if not records:
+        return empty
+    full = {row['id']: row for row in full_source}
+    if len(full) != len(full_source):
+        raise ValueError('naming full source has duplicate IDs')
+    targets = {row['id']: row for row in lines}
+    if len(targets) != len(lines):
+        raise ValueError('naming targets have duplicate IDs')
+    for lid, line in targets.items():
+        if lid not in full or any(line.get(k) != full[lid].get(k) for k in ('source_text', 'roman')):
+            raise ValueError('naming target differs from full source')
+    result = copy.deepcopy(empty)
+    nfc = lambda value: unicodedata.normalize('NFC', value)
+    for record in records:
+        lid = record['line_id']
+        # An excerpt is not required to contain unrelated registered lines.
+        if lid not in targets:
+            continue
+        row = full[lid]
+        tokens = lexical_retrieval.word_tokens(row)
+        indices = record['word_indices']
+        actual = [tokens[i] for i in indices] if all(i < len(tokens) for i in indices) else []
+        expected = record['roman_surfaces']
+        surfaces_match = len(actual) == len(expected) and all(
+            nfc(a) == nfc(b) or (nfc(b).casefold() == 'hari' and nfc(a).casefold() == 'hari')
+            for a, b in zip(actual, expected))
+        if (nfc(row.get('source_text', '')) != nfc(record['source_text'])
+                or lexical_retrieval.line_language(row, languages) != record['source_language']
+                or not surfaces_match):
+            result['conflicts'].append({'line_id': lid, 'word_indices': list(indices),
+                'reason': 'registered naming occurrence differs from current source/language/token scope',
+                'convention': copy.deepcopy(record)})
+        else:
+            result['matches'].append(copy.deepcopy(record))
+    result['matches'].sort(key=lambda r: (r['line_id'], r['word_indices']))
+    result['conflicts'].sort(key=lambda r: (r['line_id'], r['word_indices']))
+    return result
+
+
+def prepare_naming_options(options, lines, languages, *, source_slug=None):
+    """Return copied options, re-resolving current records before cache lookup."""
+    local = copy.copy(options)
+    inherited = getattr(options, 'source_slug', None)
+    if source_slug is not None and inherited is not None and source_slug != inherited:
+        raise ValueError('naming original source_slug conflicts with caller')
+    local.source_slug = source_slug if source_slug is not None else inherited
+    packet = resolve_naming_conventions(local.source_slug, lines, languages,
+        full_source=getattr(options, 'semantic_full_source', lines))
+    if packet['conflicts']:
+        raise RuntimeError('naming scope conflict: ' + ', '.join(r['line_id'] for r in packet['conflicts']))
+    local.semantic_naming_conventions = packet
+    return local
+
+
+def naming_prompt(options, lines):
+    packet = getattr(options, 'semantic_naming_conventions', None)
+    if not packet or not packet.get('matches'):
+        return ''
+    ids = {line['id'] for line in lines}
+    projected = {'matches': [r for r in packet['matches'] if r['line_id'] in ids], 'conflicts': []}
+    if not projected['matches']:
+        return ''
+    return ('\nSCOPED NAMING CONVENTIONS:\n' + json.dumps(projected, ensure_ascii=False)
+        + '\nThese are reviewed renderings of the identified occurrence, not prior translated lines or dictionary entries. '
+          'Preserve its English name/epithet and clicked identity while deriving grammar and all other wording from source. '
+          'Allow natural grammatical inflection/possessives; keep repeated tokens separately linked. '
+          'The gloss identity states required facts, not an exact entire popup: add an evidenced literal or traditional meaning '
+          'when known, label traditional explanations, and never invent a derivation or dictionary citation. '
+          'If source evidence conflicts, report it instead of distorting the source. Owner-locked English remains exact; '
+          'a naming conflict is a separate finding, not permission to rewrite it. Review the primary popup as well as linked English.\n')
 
 
 def policy_payload() -> dict:

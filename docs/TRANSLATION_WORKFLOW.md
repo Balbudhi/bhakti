@@ -1,36 +1,27 @@
 # Translation and library review workflow
 
 This guide describes the bounded review engine and its actual command interfaces.
-The dictionary/embedding components have passed offline integration checks and a
-small live capability test. The first combined priority run exercised real Flash-to-Pro escalation but
-ended with unresolved candidates; full-library repair and generic audio coverage
-remain unfinished. A successful
-inventory or embedding request is not evidence that the library has been corrected.
-The latest connected text comparison cost $0.41264775 for six calls and did not
-qualify: its first-pass glossaries requested no dictionary lookups, the reviewer
-missed an unsupported popup modifier, and the Gurbāṇī writer was held. Explicit
-lookup obligations and separate popup review are the next demonstrated fixes;
-enabled configuration alone is not evidence that retrieval ran.
-Known lookup targets now use explicit, validated source spans. Independent review
-now checks each primary popup gloss and semantic frame separately from the final
-English; a good sentence cannot excuse an unsupported popup qualifier. Named
-dictionary citations require supplied matching evidence. A synonym preference
-alone is not a defect. The changed review task invalidates old review acceptance,
-while verified unchanged glossary/writer artifacts can be reused for review only.
-Unfinished or uncertain old calls retain their original accounting and hold.
-The next two-row comparison delivered the explicit lookup request but stopped
-before retrieval: four candidate expressions contained six English lookup words,
-exceeding the aggregate four-word validator limit. It cost $0.0214965 and did not
-qualify. The candidate/lemma budget mismatch is the next demonstrated defect;
-it has now been corrected without discarding alternatives. The producer permits
-four candidates with at most four lookup strings each; discovery accepts their
-at most sixteen normalized queries. Full definitions survive partial embedding
-ranking, whose input/call limits remain unchanged. The new bounded run consumed
-dictionary/embedding evidence but still produced an unsupported `true` modifier.
-It stopped at the form-in-quotation check before independent review, costing
-$0.1307826 total. Connected retrieval is now observed; satisfactory translation
-quality is not. Both original held attempts remain immutable.
-Current execution evidence belongs in [the repair task](LIBRARY_REPAIR_TASKS.md).
+The connected workflow is not yet qualified for a whole-library repair. A real
+two-row comparison consumed source-dictionary and English-definition evidence
+plus four embedding requests, but still added an unsupported `true` to the gloss
+and English. Its total cost was $0.1307826; no result was published. Earlier
+attempts and task accounting remain in [the repair task](LIBRARY_REPAIR_TASKS.md).
+
+Known lookup targets now use explicit source spans. Candidate expressions and
+lookup lemmas have separate bounds, preserving complete definitions when only
+some receive embedding scores. Independent review checks primary popup glosses,
+semantic frames and final English separately. Validated unchanged writing can
+receive a new review without regenerating it. Unknown or unfinished paid attempts
+retain their original accounting and replay restrictions.
+
+The latest local fixes separate the attested headword from its quoted definition,
+remove duplicate model-facing dictionary metadata, and supply source-bound naming
+conventions through intake, repair, benchmark and standalone audit callers. They
+have passed focused integration checks with saved real artifacts and synthetic
+provider responses; they do not establish improved translation quality. A known
+review-input defect loses source-only neighboring lines from a short excerpt.
+Its correction precedes a bounded review of the unchanged failed draft. No new
+glossary or writer call is needed to test whether the reviewer detects that defect.
 
 ## Bounded intake and boundary recovery
 
@@ -75,6 +66,16 @@ remain blocked at generation/publication entrypoints. Historical installation
 and production activation remain unfinished.
 Timing reuse still requires a qualified clock origin, and cannot substitute a
 requested trim length or decoded offset for the browser's playback clock.
+
+Fresh production onset requests already use an ephemeral canonical AAC copy.
+The failed synthetic native nonzero-PTS model probe bypassed that path and is not
+a prerequisite for all fresh production timing. A read-only inventory found 426
+listener files across 275 song directories: 316 had stream start zero and 110 AAC
+files had start 0.047891 seconds. These metadata do not justify timestamp shifts
+or establish first-syllable accuracy. Canonical-to-browser correspondence still
+needs file-specific evidence for offered listener formats; historical reuse holds
+remain scoped to the missing evidence. Do not extend a synthetic multi-second
+offset failure to the whole corpus or resume that terminal probe.
 
 Source repairs map section notices and adaptation markers through the accepted
 expanded performance lineage before generation. Credit wording and unrelated

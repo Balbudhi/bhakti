@@ -422,9 +422,12 @@ def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisiti
         support.validate_support(packet, lines, languages)
     else:
         packet = None
-    identity = support.digest({'version': VERSION, 'lines': lines, 'languages': languages,
+    identity_data = {'version': VERSION, 'lines': lines, 'languages': languages,
         'context': context_lines, 'order': performance_order, 'gloss_queries': gloss_rows,
-        'support': support.content_digest(packet) if packet else None, 'diagnostics': diagnostics})
+        'support': support.content_digest(packet) if packet else None, 'diagnostics': diagnostics}
+    if packet:
+        identity_data['lexical_model_projection_version'] = support.MODEL_PROJECTION_VERSION
+    identity = support.digest(identity_data)
     result = {'packet': packet, 'gloss_rows': amended, 'diagnostics': diagnostics, 'identity': identity}
     if discovery_config is not None:
         result['discovery_queries'] = discovery_queries

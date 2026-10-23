@@ -377,6 +377,58 @@ def prepare_options(options, lines, languages):
         validate_support(packet,full,languages);options.semantic_lexical_support=packet
     return project_support(packet,[line['id'] for line in lines])
 
+MODEL_PROJECTION_VERSION = 1
+
+
+def projection_policy(options):
+    packet = getattr(options, 'semantic_lexical_support', None)
+    active = bool(packet and packet.get('targets'))
+    return {'lexical_model_projection_version': MODEL_PROJECTION_VERSION} if active else {}
+
+
+def model_projection(projected):
+    """Share repeated evidence metadata; never summarize or rank away a sense."""
+    projected = copy.deepcopy(projected)
+    dictionaries, frames = {}, {}
+    metadata_fields = ('edition', 'work', 'source_url', 'limitations')
+    for row in projected['evidence']:
+        if row.get('kind') != 'english_definition':
+            continue
+        metadata = {key: row.pop(key) for key in metadata_fields if key in row}
+        dictionary_id = 'dictionary:' + digest(metadata)[:16]
+        dictionaries[dictionary_id] = metadata
+        row['dictionary_id'] = dictionary_id
+        identifier = row.get('id', '').split(':')
+        if (len(identifier) == 4 and identifier[0] == 'wordnet' and identifier[3].isdigit()
+                and row.get('synset_offset') == int(identifier[3])):
+            row.pop('synset_offset')
+        grammar = row.get('grammar', {})
+        for frame in grammar.get('verb_frames', []):
+            key = str(frame['number'])
+            template = frame.pop('template')
+            require(key not in frames or frames[key] == template, 'conflicting witnessed verb frame template')
+            frames[key] = template
+        row['grammar'] = {key: value for key, value in grammar.items() if value}
+        if not row['grammar']:
+            row.pop('grammar')
+    for target in projected['targets']:
+        discovery = target.get('english_discovery')
+        if discovery is None:
+            continue
+        discovery.pop('identity', None)
+        discovery.get('pool', {}).pop('seed_evidence_ids', None)
+        for candidate in discovery.get('candidates', []):
+            scores = candidate.get('scores', [])
+            ids = candidate.get('evidence_ids', [])
+            # Only an exactly duplicated mapping is removed. Unexpected sparse
+            # score metadata must never conceal candidate evidence membership.
+            if len(ids) == len(scores) and set(ids) == {score['evidence_id'] for score in scores}:
+                candidate.pop('evidence_ids', None)
+            candidate.pop('discovered_by', None)
+    projected['dictionaries'] = dictionaries
+    projected['verb_frame_templates'] = frames
+    return projected
+
 def prompt(packet, target_ids, stage):
     projected=project_support(packet,target_ids)
     if projected is None:return ''
@@ -399,9 +451,16 @@ def prompt(packet, target_ids, stage):
                 for score in candidate.get('scores', []):
                     score.pop('part_scores', None)
                     score.pop('group_scores', None)
+    if stage in {'translation', 'review'}:
+        projected = model_projection(projected)
     instruction=('Return support_decisions only for targeted lines: target_id, used_evidence_ids, role (operative_meaning, activated_image, background_only), reason. Background evidence cannot establish an inherited-language sense.' if stage=='gloss' else
         'Return wording_decisions only for targeted lines: target_id, chosen_candidate_id (null for a new composition or retained term), expression, kind (word, compositional_phrase, transparent_compound, retained_term), english_evidence_ids, reason, word_indices, ordinary_paraphrase, component_word_indices. Prefer precise intelligible English. Compare word, phrase and transparent compound by meaning, image, connotation and tone, not a mandatory phrase-failure rule. If retention avoids consequential distortion, use retained_term with the exact source Roman spelling, null candidate, empty English evidence and component arrays, an English ordinary_paraphrase, and a reason explaining what the best English rendering loses. The linked gloss must explain the meaning. A dictionary sense is not proof of its fit here.' if stage=='translation' else
         'Independently check source and wording decisions against these exact witnesses, passage grammar and English. Reject unsupported inherited meanings, unwanted connotations, opaque compounds and gloss/English disagreement. Writer decisions are claims, not authority. Preserve owner English; report alternatives privately.')
+    if stage in {'translation', 'review'}:
+        instruction += (' Shared dictionaries supply each referenced row’s edition, work, source URL and limitations. '
+            'Verb-frame numbers reference verb_frame_templates; word_indices retain their exact lemma scope. '
+            'Omitted grammar arrays are empty; canonical WordNet IDs preserve the synset offset. '
+            'Every original definition remains available; exploration rank is not a meaning selection.')
     return '\nTARGETED LEXICAL SUPPORT:\n'+json.dumps(projected,ensure_ascii=False,separators=(',',':'))+'\n'+instruction+'\n'
 
 def extend_schema(schema,packet,stage):

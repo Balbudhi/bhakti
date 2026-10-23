@@ -150,7 +150,12 @@ def review_task_identity(version=None):
 
 def semantic_stage_policy(options, *, stage=None):
     policy = translation_policy_payload()
+    naming_conventions = getattr(options, 'semantic_naming_conventions', None)
+    if naming_conventions and naming_conventions.get('matches'):
+        policy = {**policy, 'naming_conventions': naming_conventions}
     automatic = bhakti_lexical_producer.configuration_identity(options)
+    if stage != 'gloss':
+        policy = {**policy, **bhakti_lexical_support.projection_policy(options)}
     if automatic is not None:
         if stage == 'gloss':
             automatic = {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery', 'requested_spans') if key in automatic}
@@ -3690,6 +3695,7 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
     languages = audited["packet"].get("metadata", {}).get("languages")
+    options = bhakti_translation_policy.prepare_naming_options(options, lines, languages)
     bhakti_lexical_producer.requested_spans(options, lines)
     if getattr(options, 'lexical_requested_spans', []) and not hasattr(options, 'semantic_full_source'):
         options = copy.copy(options)
@@ -3725,7 +3731,7 @@ Do not collapse South Asian social terminology into the single English word “c
 
 Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even when a concept is listed in the registry. A matching `concept_key` may identify a concept for bookkeeping; it does not require IAST in English. Set `preserve_in_english=false` for newly reconstructed glosses. `preserve_in_english=true` is reserved for explicitly supplied, locked English that retains that concept; no locked English is supplied at this gloss stage. This legacy flag does not prohibit a later, independently reviewed contextual retention decision by the writer; the glossary must explain meaning first. Proper names are separate from concept preservation: retain genuine names in English and explain their evidenced identity or relationship in the hover. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a divine epithet, explain its operative meaning rather than merely spelling the same title again. Build a local glossary while processing this song: when the same displayed token recurs in the same grammatical and devotional role, reuse its most specific established explanation verbatim. A changed explanation is allowed only when the local syntax or imagery materially changes; say why in that line's grammar note. In particular, bare “illusion” is not an adequate contextual explanation for `māyā`. For ordinary words and proper names, set `concept_key` to the empty string and `preserve_in_english=false`. Do not invent new registry entries. Genuine unresolved source or semantic conflict belongs in uncertainty.
 
-{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'gloss')}{bhakti_lexical_producer.gloss_prompt(options, batch)}
+{bhakti_translation_policy.naming_prompt(options, batch)}{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'gloss')}{bhakti_lexical_producer.gloss_prompt(options, batch)}
 
 For every lexical word, return exactly one sense_decisions item in word-index order.
 Copy word_index and roman from tokens in COMPACT LEXICAL EVIDENCE.
@@ -4097,6 +4103,7 @@ def independently_review_translations(
     translation_rows: list[dict[str, Any]], provided_translation: str, options: argparse.Namespace,
     languages: list[str] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    options = bhakti_translation_policy.prepare_naming_options(options, lines, languages)
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
     discovery_errors = bhakti_source_discovery.translation_decision_errors(
@@ -4217,7 +4224,7 @@ Preserve supplied locked human English exactly; a preferred alternative is not p
 
 Check that each English segment uses the same contextual sense as the gloss at its linked indices. Supported alternatives belong separately in the grammar note; a list of possibilities does not excuse a mismatch between English and its clickable gloss. Check that compounds and inflections contribute all their meaning and proper names have meaningful identity or relationship glosses. Dictionary candidates are evidence of possible senses only, never permission to override this line's language or grammar. A defensible alternative word is not itself a defect: identify a concrete source/context contradiction or material loss before rejecting the existing choice. Do not promote a synonym preference into a required repair. Cite a named dictionary, quotation or etymological authority as verified only when the supplied evidence contains the matching entry or passage. Otherwise describe the basis as linguistic/contextual inference, not a checked citation. Missing dictionary evidence alone does not make a meaning wrong; use unresolved_evidence only when the actual disputed meaning cannot be resolved without it.
 
-{bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", []))}
+{bhakti_translation_policy.naming_prompt(options, [item["source"] for item in target_evidence])}{bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", []))}
 
 {bhakti_lexical_support.prompt(support, [item['source']['id'] for item in target_evidence], 'review')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_source_discovery.prompt(options, [item['source']['id'] for item in target_evidence])}{bhakti_semantic_repair.REVIEW_GUIDANCE}
 
@@ -4308,6 +4315,8 @@ LOCKED HUMAN TRANSLATION (or none):
 
 
 def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace, *, candidate_only: bool = False, defer_review: bool = False) -> dict[str, Any]:
+    options = bhakti_translation_policy.prepare_naming_options(options, audited['packet'].get('verified_lines', []),
+        job.get('languages', audited['packet'].get('metadata', {}).get('languages')), source_slug=job.get('slug'))
     options, glosses = bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
     target = song_dir / ".transcription" / "pipeline" / "05-translation.json"
     lines = audited['packet'].get('verified_lines', [])
@@ -4382,7 +4391,7 @@ For each line, reason in this order before choosing the final English:
 5. Make only the smallest grammatical adjustments needed for intelligible English. Prefer the source's transparent spatial vocabulary (“from the inside”) over a smoother intensifying substitute (“deep within”) unless depth is lexically present. Literal and poetic force outrank smoothness.
 6. Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even for registry-listed concepts. A `concept_key` is bookkeeping, not an instruction to leave the term untranslated. When every considered English word, phrase or transparent compound would consequentially distort the passage, retaining the source term is permitted with an understandable clickable gloss. Record the best English paraphrase and its specific loss in `choice_note`, and in a `retained_term` wording decision when lexical support targets it. A legacy `preserve_in_english=true` flag alone does not justify retention. Existing locked English remains exact. Retain genuine proper names, whose clickable gloss must explain their evidenced identity or relationship. The sense used in every English segment must match the chosen primary meaning at its linked word indices, including compounds and inflections; supported alternatives remain separately explained in grammar notes.
 
-{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_source_discovery.prompt(options, [line['id'] for line in batch])}
+{bhakti_translation_policy.naming_prompt(options, batch)}{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_source_discovery.prompt(options, [line['id'] for line in batch])}
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list. Every source word index must appear in at least one segment. Map particles, postpositions, tense/aspect, negation, modality, and honorifics to the English phrase they help create rather than leaving their source index uncovered.
 
@@ -4458,6 +4467,18 @@ Return strict JSON:
         result = gemini.call(options.model, gemini.key(), prompt_for(candidate_lines, []), audio=None, timeout=stage_call_timeout(options),
                                        response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"), schema_name="bhakti_literal_translation",
                              reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
+        # This response was just returned by this attempt. Cached candidates and
+        # adopted seeds reach only the ordinary local validation below.
+        returned_rows = stage_model_rows(result, 'translations', options)
+        target_ids = [line['id'] for line in candidate_lines]
+        returned_errors = bhakti_lexical_support.support_decision_errors(
+            bhakti_lexical_support.project_support(support, target_ids),
+            [gloss_by_id[line_id] for line_id in target_ids], returned_rows)
+        returned_errors.extend(bhakti_source_discovery.translation_decision_errors(
+            bhakti_source_discovery.projected(getattr(options, 'automatic_source_discovery', None), target_ids),
+            returned_rows))
+        if returned_errors:
+            stage_quality_failure(options, 'translation lexical support/source discovery: ' + str(returned_errors[:3]))
     else:
         # Preserve the historical 40-line parent cache shape so already
         # completed work remains reusable, but issue fresh requests in bounded

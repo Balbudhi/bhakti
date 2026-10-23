@@ -14,6 +14,17 @@ import bhakti_lexical_support as support
 FIXTURE=Path(__file__).parent/'fixtures/wordnet-english-discovery.json'
 
 
+def expanded_model_evidence(projection):
+    rows=copy.deepcopy(projection['evidence'])
+    for row in rows:
+        if 'dictionary_id' in row:row.update(projection['dictionaries'][row.pop('dictionary_id')])
+        grammar=row.setdefault('grammar',{})
+        grammar.setdefault('adjective_positions',[]);grammar.setdefault('verb_frames',[])
+        for frame in grammar['verb_frames']:
+            if 'template' not in frame:frame['template']=projection['verb_frame_templates'][str(frame['number'])]
+    return rows
+
+
 def install_wordnet(path):
     x=json.loads(FIXTURE.read_text());path.mkdir(parents=True)
     manifest={'edition':x['edition'],'source':x['source'],'available_pos':list(support.POS),
@@ -285,7 +296,7 @@ class CompactEnglishEvidenceRequirements(unittest.TestCase):
                 prompt=support.prompt(packet,['v'],stage)
                 actual=json.JSONDecoder().raw_decode(prompt.split('TARGETED LEXICAL SUPPORT:\n',1)[1])[0]
                 self.assertEqual(len(actual['evidence']),25)
-                self.assertEqual({e['id']:{key:e[key] for key in semantic_keys} for e in actual['evidence']},expected)
+                self.assertEqual({e['id']:{key:e[key] for key in semantic_keys} for e in expanded_model_evidence(actual)},expected)
                 self.assertEqual(actual['targets'][0]['english_candidates'],candidates)
                 self.assertNotIn('english_lookup',actual)
                 for e in actual['evidence']:
@@ -358,7 +369,7 @@ class WordNetGrammarProjectionRequirements(unittest.TestCase):
         for stage in ('translation','review'):
             prompt=support.prompt(packet,['v'],stage)
             projected=json.JSONDecoder().raw_decode(prompt.split('TARGETED LEXICAL SUPPORT:\n',1)[1])[0]
-            self.assertEqual({e['id']:e.get('grammar') for e in projected['evidence']},expected)
+            self.assertEqual({e['id']:e.get('grammar') for e in expanded_model_evidence(projected)},expected)
             self.assertTrue(all('raw' not in e for e in projected['evidence']))
         self.assertEqual(packet,original)
 

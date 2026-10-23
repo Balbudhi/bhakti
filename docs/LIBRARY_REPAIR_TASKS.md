@@ -9,6 +9,31 @@ latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
 Current step: finish the connected pipeline before further content releases.
+The next deliverable is a reviewer request that retains the failed excerpt's
+original neighboring lines, followed by one bounded review of the existing paid
+draft. This diagnostic buys no replacement glossary, writer or embeddings and
+does not accept or publish the draft. The original unsupported `true` must be
+identified; merely clearing the citation validator is insufficient.
+
+Local integration now includes: witnessed headword/definition validation as
+separate fields; lossless dictionary metadata deduplication (21,305 fewer
+characters in the actual writer request, 22.8%); and 31 occurrence-scoped naming
+records carried through actual intake, library repair, benchmark, retranslation
+and style-audit callers. All 61 dictionary definitions remain available. Empty
+automatic support does not trigger paid reprocessing; changed nonempty projection
+invalidates only dependent writing/review. The joined 64 focused checks pass with
+saved real artifacts and synthetic provider responses. No new paid calls or
+public changes accompany these fixes. Real naming adherence and translation
+quality still require qualification.
+
+Audio investigation corrected the scope of an earlier diagnostic: fresh production
+timing canonicalizes to AAC, while the failed native nonzero-PTS click experiment
+did not use that path. Across 426 actual listener files, no start metadata exceeded
+0.047891 seconds. This does not certify playback correspondence or syllable onsets;
+it does mean the synthetic multi-second offset failure should not block unrelated
+fresh timing. The next acoustic checks must use the actual production attachment
+and separately verify its correspondence with the offered listener audio.
+
 The bounded connected text comparison finished privately in
 `/tmp/bhakti-connected-qualification/real-run-preparation/`, under the unchanged
 $1 text/eight-call and $0.05 embedding/twelve-call ceilings. Provider access was

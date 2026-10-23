@@ -310,7 +310,8 @@ def _reconcile_review_history(state_path, journal_path, context, *, active_attem
 
 
 def lexical_options(options, slug, lines, languages):
-    local = copy.copy(options)
+    local = pipeline.bhakti_translation_policy.prepare_naming_options(
+        options, lines, languages, source_slug=slug)
     packets = getattr(options, 'lexical_support_packets', {})
     if slug in packets:
         local.semantic_lexical_support = copy.deepcopy(packets[slug])

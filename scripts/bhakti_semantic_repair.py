@@ -602,9 +602,14 @@ def complete(pipeline, song_dir, audited, job, options):
     try:
         pipeline.bhakti_lexical_producer.requested_spans(options, lines)
         baseline = resolved_baseline(pipeline, song_dir, lines, job)
+        options = pipeline.bhakti_translation_policy.prepare_naming_options(
+            options, lines, languages, source_slug=job.get('slug'))
         support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
         evidence = source_evidence(pipeline, song_dir, audited)
         policy = pipeline.translation_policy_payload()
+        naming_conventions = getattr(options, 'semantic_naming_conventions', None)
+        if naming_conventions and naming_conventions.get('matches'):
+            policy = {**policy, 'naming_conventions': naming_conventions}
         full_support = getattr(options, 'semantic_lexical_support', None)
         if full_support is not None:
             policy = {**policy, 'lexical_support': pipeline.bhakti_lexical_support.content_digest(full_support)}
@@ -630,6 +635,8 @@ def complete(pipeline, song_dir, audited, job, options):
             glossary_inputs['policy']['lexical_support'] = pipeline.bhakti_lexical_support.content_digest(
                 full_support, english_grammar=False)
         glossary_identity = digest(glossary_inputs)
+        identity_inputs['policy'] = {**identity_inputs['policy'],
+            **pipeline.bhakti_lexical_support.projection_policy(options)}
         if stage_routes_enabled(options):
             import bhakti_model_routes as routes
             escalation = getattr(options, 'semantic_stage_escalation', True)
