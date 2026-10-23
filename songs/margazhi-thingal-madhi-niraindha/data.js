@@ -77,7 +77,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mārkaḻit tiṅkaḷ mati niṟainta nannāḷāl",
-    "english": "{4:On this auspicious day} {2,3:filled with the full moon} {1:in the month} {0:of Mārgaḻi,}",
+    "english": "{4:On this auspicious day} {2,3:when the moon is full,} {1:in the month} {0:of Mārgaḻi,}",
     "words": [
       {
         "roman": "mārkaḻit",
@@ -93,13 +93,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mati",
-        "gloss": "full moon",
+        "gloss": "moon",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "niṟainta",
-        "gloss": "filled / full of light",
+        "gloss": "full; here, describing the moon",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -111,7 +111,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "mārkaḻit tiṅkaḷ shows genitive sandhi doubling (-t); nannāḷāl is a compound of nan (good/auspicious) + nāḷ (day) with the third/locative-functioning instrumental case suffix -āl denoting the time when the event occurs."
+    "grammarNote": "Mārkaḻit tiṅkaḷ names the month; the final -t is sandhi before tiṅkaḷ, not an independent genitive suffix. Mati niṟainta describes the moon as full. Nannāḷ combines nan (good or auspicious) with nāḷ (day); the whole phrase sets the auspicious occasion."
   },
   "neerada-poduveer": {
     "source": "நீராடப் போதுவீர் போதுமினோ நேரிழையீர்",
@@ -389,17 +389,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ērārnta kaṇṇi yaśōtai iḷam siṅkam",
-    "english": "{3:the young} {4:lion} {2:of Yaśodā,} {0:she of grace-filled} {1:eyes,}",
+    "english": "{3:the young} {4:lion} {2:of Yaśodā,} {1:whose eyes} {0:are full of beauty,}",
     "words": [
       {
         "roman": "ērārnta",
-        "gloss": "filled with grace and beauty",
+        "gloss": "filled with beauty",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṇṇi",
-        "gloss": "she who has lovely eyes",
+        "gloss": "she who has eyes; here, the beautiful-eyed mother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -443,17 +443,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ērārnta kaṇṇi",
-    "english": "{0:she of grace-filled} {1:eyes,}",
+    "english": "{1:she whose eyes} {0:are full of beauty,}",
     "words": [
       {
         "roman": "ērārnta",
-        "gloss": "filled with grace and beauty",
+        "gloss": "filled with beauty",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṇṇi",
-        "gloss": "she who has lovely eyes",
+        "gloss": "she who has eyes; here, the beautiful-eyed mother",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -497,7 +497,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kārmēṉic ceṅkaṇ katirmatiyam pōl mukattāṉ",
-    "english": "{0:he of dark-cloud body,} {1:red eyes,} {4:and a face} {3:like} {2:the sun and the moon,}",
+    "english": "{0:he whose body is dark as a raincloud,} {1:whose eyes are red,} {4:and whose face is} {3:like} {2:the sun and the moon,}",
     "words": [
       {
         "roman": "kārmēṉic",
@@ -507,7 +507,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ceṅkaṇ",
-        "gloss": "having reddish lotus-like eyes",
+        "gloss": "having red eyes",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -563,7 +563,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nārāyaṇaṉē namakkē ā... ā...",
-    "english": "{0:Nārāyaṇa alone,} {1:unto us alone,} {2,3:ah... ah...}",
+    "english": "{0:Nārāyaṇa alone,} {1:to us alone,} {2,3:ah... ah...}",
     "words": [
       {
         "roman": "nārāyaṇaṉē",
@@ -623,7 +623,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nārāyaṇaṉē namakkē paṟai taruvāṉ",
-    "english": "{0:Nārāyaṇa alone} {3:will grant} {2:the drum} {1:unto us alone,}",
+    "english": "{0:Nārāyaṇa alone} {3:will give} {2:the drum} {1:to us alone,}",
     "words": [
       {
         "roman": "nārāyaṇaṉē",
@@ -639,13 +639,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "paṟai",
-        "gloss": "the ritual drum (emblem of eternal devotional service and grace)",
+        "gloss": "the drum used in the vow observance",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "taruvāṉ",
-        "gloss": "he will grant / bestow",
+        "gloss": "he will give",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -683,7 +683,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pārōr pukaḻap paṭintēlōr empāvāy",
-    "english": "{0:so that the people of the world} {1:may praise,} {2:immerse and consider,} {3:O our maiden.}",
+    "english": "{2:Let us bathe,} {0:so that the people of the world} {1:may praise us—}{2:heed this,} {3:O our maiden.}",
     "words": [
       {
         "roman": "pārōr",
@@ -699,19 +699,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "paṭintēlōr",
-        "gloss": "immersing in the sacred bath and considering",
+        "gloss": "let us bathe; ēlōr is the refrain exhortation, rendered “heed this”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "empāvāy",
-        "gloss": "O my young maiden / O our vow",
+        "gloss": "O our maiden",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "pārōr is an epicene plural noun (pār 'earth/world' + -ōr); pukaḻap is an infinitive of purpose with sandhi stop doubling (-p); paṭintēlōr fuses the verbal participle paṭintu ('having immersed/bathed') with the choral particle cluster ēl-ōr; empāvāy is a vocative compound (em 'our' + pāvāy 'maiden/doll/vow personified')."
+    "grammarNote": "Paṭintu is the bathing/immersion participle, understood with the opening invitation. Pārōr pukaḻa gives its purpose or attendant approval. Ēlōr empāvāy is the recurring choral exhortation; here rendered “heed this, O our maiden,” rather than treating each refrain syllable as an additional event."
   },
   "margazhi-thingal-closing": {
     "source": "மார்கழித் திங்கள்",

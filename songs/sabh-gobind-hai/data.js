@@ -140,7 +140,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gobind binu nahī koī",
-    "english": "{1:without }{0:Govinda, }there is {2,3:none.}",
+    "english": "{2,3:Nothing }exists {1:without }{0:Govinda.}",
     "words": [
       {
         "roman": "gobind",
@@ -212,7 +212,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sūtu eku maṇi sat sahans jaise",
-    "english": "{5:Like }{1:a single }{0:thread }through {3:hundreds }{4:of thousands }{2:of beads,}",
+    "english": "{5:Like }{1:a single }{0:thread }through {3:hundreds }and {4:thousands }of {2:beads,}",
     "words": [
       {
         "roman": "sūtu",
@@ -518,7 +518,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "birlā būjhai koī",
-    "english": "{2:only some }{0:rare one }{1:understands.}",
+    "english": "{0,2:Only a rare person }{1:understands.}",
     "words": [
       {
         "roman": "birlā",
@@ -854,7 +854,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mithiā bharamu aru supan manorath",
-    "english": "{0:False }{1:delusion }{2:and }{4:things desired }{3:in dreams—}",
+    "english": "{0:False }{1:beliefs }{2:and }{4:things longed for }{3:in dreams—}",
     "words": [
       {
         "roman": "mithiā",
@@ -864,7 +864,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bharamu",
-        "gloss": "wandering delusion; doubt",
+        "gloss": "delusion; mistaken belief",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -914,7 +914,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sati padārathu jāniā",
-    "english": "{2:were taken for }{0:enduring }{1:things.}",
+    "english": "{2:were taken to be }{0:lasting }{1:things.}",
     "words": [
       {
         "roman": "sati",
@@ -1214,7 +1214,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ghaṭ ghaṭ antari sarab nirantari",
-    "english": "{2:within }{0:each }{1:and every vessel, }{3:everywhere }{4:without interval,}",
+    "english": "{2:within }{0:each }{1:and every vessel, }{4:pervading }{3:all,}",
     "words": [
       {
         "roman": "ghaṭ",
@@ -1242,7 +1242,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nirantari",
-        "gloss": "continuously; without interval",
+        "gloss": "pervading; uniformly present in all",
         "concept_key": "",
         "preserve_in_english": false
       }

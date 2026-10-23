@@ -180,7 +180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jithai kithai mainūṃ lae chaḍāī",
-    "english": "{0:Wherever }{1:at all, }{3,4:he delivers }{2:me.}",
+    "english": "{0,1:Wherever I am, }{3,4:he sets }{2:me }{3,4:free.}",
     "words": [
       {
         "roman": "jithai",
@@ -288,7 +288,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tisu gur kau hau vāriā jini hari kī hari kathā suṇāī",
-    "english": "{2:To }{0:that }{1:spiritual teacher }{3,4:I am a sacrifice, }{5:who }{10:recited }{9:the discourse }{7,6:of Hari}{8:—Hari.}",
+    "english": "{3:I }{4:offer myself in sacrifice }{2:to }{0:that }{1:spiritual teacher, }{5:who }{10:told me }{9:the story }{7,6:of Hari}{8:—of Hari.}",
     "words": [
       {
         "roman": "tisu",
@@ -396,7 +396,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tisu gur kau sad balihāraṇai",
-    "english": "{2:Unto }{0:that }{1:spiritual teacher }I am {3:forever }{4:a sacrificial offering,}",
+    "english": "I {3:forever }{4:offer myself in sacrifice }{2:to }{0:that }{1:spiritual teacher,}",
     "words": [
       {
         "roman": "tisu",
@@ -708,7 +708,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaku gur viṭahu vāriā jini hari nāmu dīā mere man kī ās purāī",
-    "english": "{0:Nānak }{3:is a sacrifice }{2:to }{1:the spiritual teacher, }{4:who }{7:gave }{5:Hari’s }{6:name }{12:and fulfilled }{11:the yearning }{10:of }{8:my }{9:mind.}",
+    "english": "{0:I, Nānak, }{3:offer myself in sacrifice }{2:to }{1:the spiritual teacher, }{4:who }{7:gave }{5:Hari’s }{6:name }{12:and fulfilled }{11:the yearning }{10:of }{8:my }{9:mind.}",
     "words": [
       {
         "roman": "nānaku",

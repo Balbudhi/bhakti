@@ -203,7 +203,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrī hoī karāmāti",
-    "english": "{0:A complete }{2:miracle }{1:has materialized.}",
+    "english": "{2:The miracle }{1:is }{0:complete.}",
     "words": [
       {
         "roman": "Pūrī",
@@ -269,7 +269,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrī hoī karāmāti āpi sirjaṇhārai dhāriā",
-    "english": "{0:A complete }{2:miracle }{1:has materialized; }{4:the Creator }{3:Himself }{5:has established you.}",
+    "english": "{2:The miracle }{1:is }{0:complete; }{4:the Creator }{5:has placed }{3:Himself }{5:within you.}",
     "words": [
       {
         "roman": "Pūrī",
@@ -303,13 +303,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhāriā",
-        "gloss": "established; sustained; supported",
+        "gloss": "placed; established",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Bipartite verse: first clause has feminine agreement (`pūrī hoī karāmāti`); second clause has agentive/ergative oblique singular ending `-ai` on `sirjaṇhārai`, reinforced by reflexive `āpi`, governing masculine singular participle `dhāriā`."
+    "grammarNote": "pūrī hoī predicates completeness of karāmāti, the miracle. The Creator is the agent marked by sirjaṇhārai; āpi emphasizes Himself. The English follows the contextual reading in the Punjabi commentary: the Creator places Himself within the Guru. The reflexive patient and the locus within you are understood from that context, not separately written source words."
   },
   "aap-sirjanharai-dhari-a": {
     "source": "ਆਪਿ ਸਿਰਜਣਹਾਰੈ ਧਾਰਿਆ",
@@ -335,7 +335,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āpi sirjaṇhārai dhāriā",
-    "english": "{1:The Creator }{0:Himself }{2:has established you.}",
+    "english": "{1:The Creator }{2:has placed }{0:Himself }{2:within you.}",
     "words": [
       {
         "roman": "Āpi",
@@ -351,13 +351,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhāriā",
-        "gloss": "established; sustained; supported",
+        "gloss": "placed; established",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Transitive ergative construction: agent `sirjaṇhārai` inflected in the ergative singular with `-ai`, accompanied by emphatic reflexive pronoun `āpi`; `dhāriā` is the transitive perfective verb."
+    "grammarNote": "The Creator is the agent marked by sirjaṇhārai; āpi emphasizes Himself. The English follows the contextual reading in the Punjabi commentary: the Creator places Himself within the Guru. The reflexive patient and the locus within you are understood from that context, not separately written source words."
   },
   "sikhi-atai-sangti": {
     "source": "ਸਿਖੀ ਅਤੈ ਸੰਗਤੀ",
@@ -653,7 +653,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aṭalu athāhu atolu tū terā antu na pārāvāriā",
-    "english": "{3:You are }{0:steadfast, }{1:unfathomable, }{2:and unweighable; }{6:there is no }{5:end }{4:to You, }{7:nor any near or far shore.}",
+    "english": "{3:You are }{0:steadfast, }{1:unfathomable, }{2:and unweighable; }{6:there is no }{5:end }{4:to You, }{6:nor }{7:any near or far shore.}",
     "words": [
       {
         "roman": "Aṭalu",
@@ -737,7 +737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terā antu na pārāvāriā",
-    "english": "{2:There is no }{1:end }{0:to You, }{3:nor any near or far shore.}",
+    "english": "{2:There is no }{1:end }{0:to You, }{2:nor }{3:any near or far shore.}",
     "words": [
       {
         "roman": "Terā",
@@ -1151,7 +1151,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Labu lobhu kāmu krodhu mohu māri kaḍhe tudhu saparvāriā",
-    "english": "{0:Craving, }{1:avarice, }{2:lust, }{3:wrath, }{4:and attachment—}{7:You }{5:have beaten }{6:and driven out }{8:along with all their family.}",
+    "english": "{7:You }{5:have struck down }{6:and driven out }{0:craving, }{1:avarice, }{2:lust, }{3:wrath, }{4:and attachment, }{8:together with their whole family.}",
     "words": [
       {
         "roman": "Labu",
@@ -1241,7 +1241,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Māri kaḍhe tudhu saparvāriā",
-    "english": "{2:You }{0:have beaten }{1:and driven them out }{3:along with all their family.}",
+    "english": "{2:You }{0:have struck them down }{1:and driven them out, }{3:together with their whole family.}",
     "words": [
       {
         "roman": "Māri",
@@ -1307,7 +1307,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dhannu su terā thānu hai",
-    "english": "{0:Blessed }{4:is }{1:that }{3:sacred place }{2:of Yours.}",
+    "english": "{0:Blessed }{4:is }{1:that }{3:place }{2:of Yours.}",
     "words": [
       {
         "roman": "Dhannu",
@@ -1397,7 +1397,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dhannu su terā thānu hai sacu terā paiskāriā",
-    "english": "{0:Blessed }{4:is }{1:that }{3:place }{2:of Yours; }{5:true }{6:is Your }{7:gathered assembly.}",
+    "english": "{0:Blessed }{4:is }{1:that }{3:place }{2:of Yours; }{6:Your }{7:congregation }{5:is steadfast.}",
     "words": [
       {
         "roman": "Dhannu",
@@ -1431,7 +1431,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sacu",
-        "gloss": "true; eternal; genuine",
+        "gloss": "steadfast; enduring",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1475,11 +1475,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sacu terā paiskāriā",
-    "english": "{0:True }{1:is Your }{2:gathered assembly.}",
+    "english": "{1:Your }{2:congregation }{0:is steadfast.}",
     "words": [
       {
         "roman": "Sacu",
-        "gloss": "true; eternal; genuine",
+        "gloss": "steadfast; enduring",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1763,7 +1763,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru diṭhā tā̃ manu sādhāriā",
-    "english": "{0:When the Guru }{1:is beheld, }{2:then }{3:the mind }{4:is sustained.}",
+    "english": "{1:When }{0:the Guru }{1:is beheld, }{2:then }{3:the mind }{4:grows steady.}",
     "words": [
       {
         "roman": "Guru",

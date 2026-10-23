@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Toṭuṭaiya Seviyan",
+  "title": "Tōṭuṭaiya Seviyan",
   "subtitle": "Śiva",
   "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
   "pageCredit": "Dharmapuram P. Swaminathan",
@@ -85,7 +85,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tōṭuṭaiya ceviyaṉ viṭaiyēṟi ōr tūveṇ maticūṭi",
-    "english": "{0,1:With an earring in his ear, }{2:mounted on the bull, }{5:crowned with }{3:a }{4:pure white }{5:crescent moon,}",
+    "english": "{0,1:He whose ear bears an earring, }{2:mounted on the bull, }{5:wearing }{3:a }{4:pure white }{5:crescent moon,}",
     "words": [
       {
         "roman": "tōṭuṭaiya",
@@ -125,7 +125,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "A string of adjectival and participial epithets modifying the subject: tōṭu + possessive suffix uṭaiya; viṭai + verbal participle ēṟi; mati + agentive nominalizer cūṭi."
+    "grammarNote": "A sequence of epithets and verbal participles describing Śiva: tōṭu + uṭaiya means possessing an ear-ornament; viṭai + ēṟi means having mounted the bull; mati + cūṭi means wearing or having put the moon on the head. Cūṭi here is a verbal participle, not an agentive nominalizer."
   },
   "kaadudaiya-sudalai-lead": {
     "source": "காடுடைய சுடலை",
@@ -205,7 +205,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāṭuṭaiya cuṭalaip poṭipūci eṉ uḷḷam kavarkaḷvaṉ",
-    "english": "{2:smeared with ash }{0:of the wild }{1:cremation ground, }{5:the thief who steals }{3:my }{4:heart,}",
+    "english": "{2:smearing himself with ash }{0:from the wild }{1:cremation ground, }{5:the thief who steals }{3:my }{4:heart,}",
     "words": [
       {
         "roman": "kāṭuṭaiya",
@@ -221,7 +221,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "poṭipūci",
-        "gloss": "having smeared the ash",
+        "gloss": "having smeared himself with ash",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -283,7 +283,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ēṭuṭaiya malarāṉ muṉaināṭ paṇintētta aruḷceyta",
-    "english": "{4:who bestowed grace }{2:in ancient days }{1:as he of the }{0:petaled }{1:lotus }{3:bowed and praised,}",
+    "english": "{4:who granted grace }{1:to the one of the }{0:petaled }{1:lotus, }{3:when he bowed in praise }{2:long ago,}",
     "words": [
       {
         "roman": "ēṭuṭaiya",
@@ -305,7 +305,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "paṇintētta",
-        "gloss": "as he bowed and praised",
+        "gloss": "when he bowed and praised; the lotus-associated one is the worshipper",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -451,7 +451,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tōṭuṭaiya ceviyaṉ viṭaiyēṟi",
-    "english": "{0,1:With an earring in his ear, }{2:mounted on the bull}",
+    "english": "{0,1:He whose ear bears an earring, }{2:mounted on the bull}",
     "words": [
       {
         "roman": "tōṭuṭaiya",

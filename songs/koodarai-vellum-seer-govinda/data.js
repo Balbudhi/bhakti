@@ -75,7 +75,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kūḍārai vellum sīr gōvindā",
-    "english": "{3:O }{2:glorious }{3:Govinda, }{1:who conquer }{0:those who do not submit!}",
+    "english": "{3:O }{2:glorious }{3:Govinda, }{1:you who conquer }{0:those who do not submit!}",
     "words": [
       {
         "roman": "Kūḍārai",
@@ -141,7 +141,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kūḍārai vellum sīr gōvindā undaṉṉai",
-    "english": "{3:O }{2:glorious }{3:Govinda, }{1:who conquer }{0:those who do not submit, }{4:you yourself}",
+    "english": "{3:O }{2:glorious }{3:Govinda, }{1:you who conquer }{0:those who do not submit—}{4:of you yourself}",
     "words": [
       {
         "roman": "Kūḍārai",
@@ -169,7 +169,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "undaṉṉai",
-        "gloss": "you yourself",
+        "gloss": "you yourself, the object of the following singing",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -201,29 +201,29 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāḍip paṟai koṇḍu",
-    "english": "{0:having sung }{2:and received }{1:the drum,}",
+    "english": "{0:we sing} {2:and receive} {1:the drum,}",
     "words": [
       {
         "roman": "Pāḍip",
-        "gloss": "having sung",
+        "gloss": "singing; the women sing of Govinda",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paṟai",
-        "gloss": "drum [the ritual drum / desired boon]",
+        "gloss": "the drum used in the vow observance",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koṇḍu",
-        "gloss": "having received [taking]",
+        "gloss": "receiving; taking",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "'Pāḍip' is the past verbal participle (vinaiyeccam) of pāḍu (to sing), with sandhi doubling 'p' before 'paṟai'. 'Koṇḍu' is the past verbal participle of koḷ (to take/receive)."
+    "grammarNote": "Pāṭi and koṇṭu are linked participles; their subject is the women, explicit as yām in the full line. English coordinates the verbs with an understood we, while the previous row supplies the object of singing."
   },
   "paadi-parai-kondu-yaam-perum-sammaanam": {
     "source": "பாடிப் பறை கொண்டு யாம் பெறும் சம்மானம்",
@@ -267,23 +267,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāḍip paṟai koṇḍu yām peṟum sammāṉam",
-    "english": "{0:having sung }{2:and received }{1:the drum, }{5:the honors }{3:that we }{4:receive:}",
+    "english": "{0:we sing} {2:and receive} {1:the drum;} {5:the honors} {3:we} {4:receive are:}",
     "words": [
       {
         "roman": "Pāḍip",
-        "gloss": "having sung",
+        "gloss": "singing; the women sing of Govinda",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paṟai",
-        "gloss": "drum [the ritual drum / desired boon]",
+        "gloss": "the drum used in the vow observance",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "koṇḍu",
-        "gloss": "having received [taking]",
+        "gloss": "receiving; taking",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -307,7 +307,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "'Yām' is the 1st person plural pronoun. 'Peṟum' is a non-past relative participle qualifying the noun 'sammāṉam' (Sanskrit loanword sammāna, honor/gift)."
+    "grammarNote": "Pāṭip paṟai koṇṭu describes the women singing and receiving the drum. Yām peṟum modifies sammāṉam: the honors we receive. The English finite coordination clarifies the understood common subject; are introduces the following list."
   },
   "naadu-pugazhum-aalaap": {
     "source": "நாடு புகழும்",
@@ -375,7 +375,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nāḍu pugaḻum parisiṉāl naṉṟāga",
-    "english": "{2:with the gift }{1:praised }{0:by the whole land, }{3:splendidly,}",
+    "english": "{2:in a manner} {1:praised} {0:by the whole land,} {3:splendidly,}",
     "words": [
       {
         "roman": "Nāḍu",
@@ -391,7 +391,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "parisiṉāl",
-        "gloss": "with the prize [by the gift / boon]",
+        "gloss": "in a manner or way; here, one praised by the land",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -403,7 +403,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "'Parisiṉāl' is noun 'parisu' (gift/prize) + instrumental case suffix '-iṉāl'. 'Naṉṟāga' is an adverb derived from 'naṉṟu' (good/fine thing) + adverbial suffix '-āga'."
+    "grammarNote": "Pariciṉāl is paricu (manner, way) with instrumental -iṉāl, used adverbially. Nāṭu pukaḻum qualifies that manner; naṉṟāka leads into the splendid adornment described next."
   },
   "soodagame-thol-valaiye": {
     "source": "சூடகமே தோள் வளையே தோடே செவிப் பூவே",
@@ -519,7 +519,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāḍagamē eṉṟanaiya palkalaṉum yām aṇivōm",
-    "english": "{0:anklets, }{1:and all such }{2:diverse ornaments }{3:we }{4:will wear;}",
+    "english": "{0:anklets—}{1:all such }{2:varied ornaments }{3:we }{4:will wear;}",
     "words": [
       {
         "roman": "Pāḍagamē",
@@ -597,7 +597,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āḍai uḍuppōm adhaṉ piṉṉē pāṟcōṟu",
-    "english": "{1:we will wear }{0:garments, }{3:and after }{2:that, }{4:milk-rice,}",
+    "english": "{1:We will wear }{0:garments;} {2,3:after that,} {4:over rice cooked in milk,}",
     "words": [
       {
         "roman": "Āḍai",
@@ -625,7 +625,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pāṟcōṟu",
-        "gloss": "milk-rice pudding [rice cooked in milk]",
+        "gloss": "rice cooked in milk",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -675,7 +675,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mūḍa ney peydhu muḻaṅgai vaḻi vāra",
-    "english": "{2:pouring }{1:ghee }{0:to cover it, }{5:so that it streams }{4:down along }{3:the elbow,}",
+    "english": "{2:pouring }{1:ghee }{0:to cover it, }{5:so that it flows }{4:down along }{3:our elbows,}",
     "words": [
       {
         "roman": "Mūḍa",
@@ -697,7 +697,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "muḻaṅgai",
-        "gloss": "elbow [forearm]",
+        "gloss": "elbow; here, the eaters’ elbows",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -747,7 +747,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kūḍi irundhu kuḷirndhēlōr embāvāy",
-    "english": "{1:sitting }{0:united together, }{2:refreshed in cooling joy}{2:—listen, }{3:O our maiden.}",
+    "english": "{0:together} {1:we will sit} {2:cooled and refreshed—heed this,} {3:O our maiden.}",
     "words": [
       {
         "roman": "Kūḍi",
@@ -763,7 +763,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kuḷirndhēlōr",
-        "gloss": "being refreshed and gladdened, listen",
+        "gloss": "being cooled and refreshed; ēlōr is the refrain exhortation, rendered “heed this”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -775,7 +775,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "'Kūḍi' and 'irundhu' are past verbal participles. 'Kuḷirndhēlōr' is a compound of 'kuḷirndhu' (verbal participle: becoming cooled/delighted) + 'ēl' (imperative: receive/listen) + 'ōr' (attention particle). 'Embāvāy' (em + pāvāy) is the vocative singular refrain."
+    "grammarNote": "Kūṭi iruntu kuḷirntu links coming together, sitting or remaining, and becoming cooled/refreshed. English supplies the first-person-plural future from the preceding promises to wear ornaments and garments. Ēlōr empāvāy is the recurring refrain exhortation."
   }
 };
 
@@ -853,10 +853,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 40.8,
-    "end": 46.0
+    "end": 46
   },
   {
-    "start": 46.0,
+    "start": 46,
     "end": 56.2
   },
   {

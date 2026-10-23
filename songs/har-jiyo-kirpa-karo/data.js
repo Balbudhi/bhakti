@@ -353,7 +353,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "binu satiguru seve bahutā dukhu lāgā juga cāre bharamāī",
-    "english": "{0:Without }{2:serving }{1:the True Guru, }{3:immense }{4:suffering }{5:afflicts, }{8:and one wanders deluded }{7:through all four }{6:ages.}",
+    "english": "{0:Without }{2:serving }{1:the True Guru, }{3:immense }{4:suffering }{5:clings to one, }{8:and one wanders deluded }{7:through all four }{6:ages.}",
     "words": [
       {
         "roman": "binu",
@@ -587,7 +587,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mansā māri dubidhā sahaji samāṇī pāiā nāmu apārā",
-    "english": "{1:Subduing }{0:desire, }{2:duality }{4:dissolves }{3:in natural equipoise, }{7:and the boundless }{6:Name }{5:is attained.}",
+    "english": "{0:With desire }{1:subdued, }{2:double-mindedness }{4:dissolves }{3:in natural stillness, }{7:and the boundless }{6:Name }{5:is attained.}",
     "words": [
       {
         "roman": "mansā",
@@ -1061,7 +1061,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dātai dāti rakhī hathi apaṇai jisu bhāvai tisu deī",
-    "english": "{0:The Giver }{2:has kept }{1:the gift }{3:in }{4:His own }{3:hand; }{5:to whomever }{6:it pleases Him, }{7:to that one }{8:He gives it.}",
+    "english": "{0:The Giver }{2:has kept }{1:the gift }{3:in }{4:His own }{3:hand; }{8:He gives it }{5,7:to whomever }{6:He chooses.}",
     "words": [
       {
         "roman": "dātai",
@@ -1573,10 +1573,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 577.75,
-    "end": 628.0
+    "end": 628
   },
   {
-    "start": 628.0,
+    "start": 628,
     "end": 633.7
   },
   {

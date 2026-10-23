@@ -59,11 +59,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "palukē baṅgāramāyenā",
-    "english": "{0:Has speech indeed }{1:become gold?}",
+    "english": "{0:Have your very words }{1:become gold?}",
     "words": [
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -101,7 +101,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kōdaṇḍapāṇi palukē baṅgāramāyenā",
-    "english": "{0:O wielder of the bow Kodaṇḍa, }{1:has speech indeed }{2:become gold?}",
+    "english": "{0:O wielder of the bow Kodaṇḍa, }{1:have your very words }{2:become gold?}",
     "words": [
       {
         "roman": "kōdaṇḍapāṇi",
@@ -111,7 +111,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -161,11 +161,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "palukē baṅgāramāyenā kōdaṇḍapāṇi palukē baṅgāramāyenā",
-    "english": "{0:Has speech indeed }{1:become gold? }{2:O wielder of the bow Kodaṇḍa, }{3:has speech indeed }{4:become gold?}",
+    "english": "{0:Have your very words }{1:become gold? }{2:O wielder of the bow Kodaṇḍa, }{3:have your very words }{4:become gold?}",
     "words": [
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -183,7 +183,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -227,11 +227,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "palukē baṅgāramāye pilicinā palukavēmi",
-    "english": "{0:Speech indeed }{1:has become gold; }{2:even though called, }{3:why do you not speak?}",
+    "english": "{0:Your very words }{1:have become gold; }{2:even when I call you, }{3:why do you not speak?}",
     "words": [
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -243,7 +243,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pilicinā",
-        "gloss": "even though called",
+        "gloss": "even when I call you (concessive participle; speaker and addressee from context)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -311,7 +311,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kalalō nī nāmasmaraṇa maruva cakkani taṇḍri palukē baṅgāramāyenā",
-    "english": "{0:In a dream, }{3:I do not forget }{1,2:the remembrance of your name, }{4:O handsome }{5:father; }{6:has speech indeed }{7:become gold?}",
+    "english": "{0:Even in dreams, }{3:I do not forget }{2:to remember }{1:your }{2:name, }{4:lovely }{5:Father; }{6:have your very words }{7:become gold?}",
     "words": [
       {
         "roman": "kalalō",
@@ -327,7 +327,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāmasmaraṇa",
-        "gloss": "remembrance of the divine name",
+        "gloss": "remembering the name; remembrance of the name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -339,7 +339,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cakkani",
-        "gloss": "lovely; handsome",
+        "gloss": "lovely; beautiful",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -351,7 +351,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -479,7 +479,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karuṇiñci brōcitivani neranammitini taṇḍri palukē baṅgāramāyenā",
-    "english": "{2:I fully believed }{0:that showing compassion }{1:you protected it, }{3:O father, }{4:has speech indeed }{5:become gold?}",
+    "english": "{0:you showed compassion }{1:and protected it—}{2:I fully believed }{1:this, }{3:Father; }{4:have your very words }{5:become gold?}",
     "words": [
       {
         "roman": "karuṇiñci",
@@ -507,7 +507,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -629,41 +629,41 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pantamu sēya nēnentaṭi vāḍanu taṇḍri palukē baṅgāramāyenā",
-    "english": "{1:To wage }{0:a stubborn contest, }{2:how small a }{3:person am I, }{4:O father? }{5:Has speech indeed }{6:become gold?}",
+    "english": "{2,3:Who am I, }{4:Father, }{1:for you to }{0:be so obstinate with me? }{5:Have your very words }{6:become gold?}",
     "words": [
       {
         "roman": "pantamu",
-        "gloss": "stubborn obstinacy",
+        "gloss": "obstinate persistence; contention",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sēya",
-        "gloss": "to maintain; to wage",
+        "gloss": "to do; here, to persist in such contention",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nēnentaṭi",
-        "gloss": "how small an",
+        "gloss": "I—of what stature or kind?",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vāḍanu",
-        "gloss": "individual am I",
+        "gloss": "a person am I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "taṇḍri",
-        "gloss": "father",
+        "gloss": "father (affectionate address)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -707,7 +707,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaraṇāgata trāṇa birudāṅkituḍavu kāvā",
-    "english": "{3:Are you not }{2:the bearer of the title }{1:of protecting }{0:those who seek refuge?}",
+    "english": "{3:Do you not }{2:bear the title }{1:“Protector of }{0:those who seek refuge”}?",
     "words": [
       {
         "roman": "śaraṇāgata",
@@ -723,7 +723,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "birudāṅkituḍavu",
-        "gloss": "bearer of the title",
+        "gloss": "you bear the title; you are marked by the title",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -785,7 +785,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karuṇiñcu bhadrācala vara rāmadāsa pōṣa palukē baṅgāramāyenā",
-    "english": "{0:Show compassion, }{2:O supreme one }{1:of Bhadrācala, }{4:nurturer }{3:of Rāmadāsa! }{5:Has speech indeed }{6:become gold?}",
+    "english": "{0:Show compassion, }{2:O supreme one }{1:of Bhadrācala, }{4:nurturer }{3:of Rāmadāsa! }{5:Have your very words }{6:become gold?}",
     "words": [
       {
         "roman": "karuṇiñcu",
@@ -819,7 +819,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "palukē",
-        "gloss": "speech indeed",
+        "gloss": "speech itself; words, with emphatic -ē",
         "concept_key": "",
         "preserve_in_english": false
       },

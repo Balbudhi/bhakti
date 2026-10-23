@@ -83,29 +83,29 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jō acyutānanda jō jō mukundā",
-    "english": "{0:Lullaby, }{1:O bliss of Acyuta, }{2:lullaby, }{3:lullaby, }{4:O Mukunda!}",
+    "english": "{0:Hush, }{1:O imperishable bliss, }{2:hush, }{3:hush, }{4:O Mukunda!}",
     "words": [
       {
         "roman": "jō",
-        "gloss": "lullaby syllable; sleep",
+        "gloss": "hush! (soothing a child to sleep)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "acyutānanda",
-        "gloss": "O bliss of Acyuta (the unswerving one)",
+        "gloss": "imperishable bliss; Kṛṣṇa addressed as bliss itself",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jō",
-        "gloss": "lullaby syllable; sleep",
+        "gloss": "hush! (soothing a child to sleep)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jō",
-        "gloss": "lullaby syllable; sleep",
+        "gloss": "hush! (soothing a child to sleep)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -197,17 +197,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jō jō",
-    "english": "{0:Lullaby, }{1:lullaby.}",
+    "english": "{0:Hush, }{1:hush.}",
     "words": [
       {
         "roman": "jō",
-        "gloss": "lullaby syllable; sleep",
+        "gloss": "hush! (soothing a child to sleep)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jō",
-        "gloss": "lullaby syllable; sleep",
+        "gloss": "hush! (soothing a child to sleep)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -317,7 +317,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "baṅgāru ginnelō pālu pōsērā",
-    "english": "{0:In a golden }{1:cup, }{3:I will pour }{2:milk, }{3:dear one!}",
+    "english": "{1:In }{0:a golden }{1:cup, }{3:I will pour }{2:milk, }{3:dear one!}",
     "words": [
       {
         "roman": "baṅgāru",
@@ -345,7 +345,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "ginnelō is ginne + locative postposition -lō. pōsērā is the habitual/future verb form pōsēnu merged with the vocative address clitic -rā."
+    "grammarNote": "ginnelō is ginne + locative postposition -lō."
   },
   "v1-3": {
     "source": "దొంగ నీవని సతులు పొంగుచున్నారా",
@@ -653,7 +653,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ṭhīvitō nēlina dēvakī paṭṭi",
-    "english": "{1:who ruled }{0:with majestic dignity, }{3:O son }{2:of Devakī!}",
+    "english": "{1:ruled }{0:with majestic dignity, }{3:O son }{2:of Devakī!}",
     "words": [
       {
         "roman": "ṭhīvitō",
@@ -707,11 +707,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṅgugā dāḷḷapākannayya cāla",
-    "english": "{0:Fittingly }{2:and richly, }{1:Tāḷḷapāka Annamayya}",
+    "english": "{2:Very }{0:beautifully, }{1:Tāḷḷapāka Annamayya}",
     "words": [
       {
         "roman": "aṅgugā",
-        "gloss": "skillfully; fittingly; beautifully",
+        "gloss": "beautifully; agreeably",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -723,7 +723,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cāla",
-        "gloss": "greatly; abundantly; richly",
+        "gloss": "very; greatly, intensifying the description of the composition",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -767,11 +767,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śṛṅgāra racanagā jeppe nī jōla",
-    "english": "{2:sang }{3:your }{4:lullaby }{1:as a composition }{0:of sweet devotion;}",
+    "english": "{2:sang }{3:your }{4:lullaby }{1:as a }{0:lovely }{1:composition;}",
     "words": [
       {
         "roman": "śṛṅgāra",
-        "gloss": "erotic-devotional sentiment; aesthetic sweetness",
+        "gloss": "beautiful; lovely, describing the poetic composition",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -783,7 +783,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jeppe",
-        "gloss": "sang; recited; recited (ceppe)",
+        "gloss": "said; recited; here, sang",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -833,7 +833,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṅgatiga sakala sampadala nīvēḷa",
-    "english": "{0:fittingly, }{1:with all }{2:prosperities }{3:at this hour,}",
+    "english": "{0:fittingly, }{2:with }{1:all }{2:riches }{3:at this hour,}",
     "words": [
       {
         "roman": "saṅgatiga",
@@ -849,7 +849,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sampadala",
-        "gloss": "of all treasures; with all prosperities",
+        "gloss": "riches; wealth (oblique plural)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1161,10 +1161,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 352.125,
-    "end": 360.0
+    "end": 360
   },
   {
-    "start": 360.0,
+    "start": 360,
     "end": 372.175
   },
   {

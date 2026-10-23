@@ -8159,7 +8159,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "thodudaiya-seviyan",
     "queueId": "67621b38",
-    "title": "Toṭuṭaiya Seviyan",
+    "title": "Tōṭuṭaiya Seviyan",
     "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
     "languageTags": [
       "Tamil"
@@ -8387,7 +8387,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "kolaru-pathigam",
     "queueId": "bda159b5",
-    "title": "Kōḷaṟu Pātikam",
+    "title": "Kōḷaṟu Patikam",
     "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
     "languageTags": [
       "Tamil"

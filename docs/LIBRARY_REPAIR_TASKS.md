@@ -428,3 +428,10 @@ The owner's latest question requires a single consistent treatment of divine
 names such as Hari, Kṛṣṇa and Viṣṇu. Their current uses are being inventoried;
 meaning-in-English versus name-in-English presentation is awaiting clarification.
 No global replacement or change to supplied English is authorized by that audit.
+
+
+## Current priority: recent-song editorial correction
+
+The owner rejected the quality of the recent additions. All ten additions and two related Gurbāṇī readers have now received source/gloss/whole-verse editorial review: 195 definitions read, 97 corrected (93 English fields), with independent challenge of semantic choices. Exact source/order/timing and owner baselines are preserved. See `RECENT_SONG_EDITORIAL_REVIEW.md` for scope, witnesses, checks and remaining source uncertainties. This correction does not complete the whole-library goal or certify fresh listening.
+
+The priority paid run ended unresolved with its original charges intact; its original deadline has expired and was not extended. Recovery work retains saved responses and findings rather than restarting spending. A pending-resume ledger rollback defect was found in the private continuation route and is being fixed/reviewed before use. The reviewed compact dictionary guidance and empty-language fallback are ready in maintained source; neither changes the frozen earlier runtime. Next: finish publication verification, integrate the reviewed recovery fixes, reconcile the saved priority candidates without losing findings, then resume selective eligible repairs and backlog production under a fresh explicit bounded plan.

@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Kōḷaṟu Pātikam",
+  "title": "Kōḷaṟu Patikam",
   "subtitle": "Śiva",
   "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
   "pageCredit": "Dharmapuram P. Swaminathan",
@@ -123,7 +123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vēyuṟu tōḷi paṅkaṉ viṭamuṇṭa kaṇṭaṉ mikanalla vīṇai taṭavi",
-    "english": "{2:The Sharer of Her}{1: whose shoulders}{0: resemble bamboo,}{4: whose throat}{3: swallowed poison,}{7: strumming}{5: the exceedingly sweet}{6: lute,}",
+    "english": "{2:He who has as His half}{1: the woman whose shoulders}{0: resemble bamboo,}{3,4: the One whose throat swallowed poison,}{7: strumming}{5: the exceedingly sweet}{6: lute,}",
     "words": [
       {
         "roman": "vēyuṟu",
@@ -465,7 +465,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ācaṟu nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:are faultlessly}{1: good}{2: and auspicious;}{3: they}{4: are good}{5: and auspicious,}{8: exceedingly so}{6,7: for His devotees.}",
+    "english": "{0:are free of harm,}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
     "words": [
       {
         "roman": "ācaṟu",
@@ -475,13 +475,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -493,13 +493,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -657,11 +657,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "poṉpoti mattamālai puṉalcūṭi vanteṉ uḷamē pukunta ataṉāl",
-    "english": "{2:wearing}{1: a garland of}{0: pollen-golden}{1: datura}{2: and the waters,}{6: because}{3: He came}{5: and entered}{3: into my}{4: heart,}",
+    "english": "{2:wearing}{1: a garland of datura flowers}{0: with gold within}{2: and the waters,}{6: because}{3: He came}{5: and entered}{3: into my}{4: heart,}",
     "words": [
       {
         "roman": "poṉpoti",
-        "gloss": "golden-pollen-filled",
+        "gloss": "containing gold; said of the flowers’ golden interiors",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -703,7 +703,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "poṉpoti (poṉ + poti), puṉalcūṭi (puṉal + cūṭi), vanteṉ (vantu + eṉ). Causal clause modifying stanza 2."
+    "grammarNote": "poṉpoti combines poṉ (gold) and poti (contain, enclose), describing the datura flowers. The image is gold within the flowers; pollen is not named. puṉalcūṭi = puṉal + cūṭi; vanteṉ = vantu + eṉ. The final causal phrase links to the following stanza predicate."
   },
   "v2-l3": {
     "source": "ஒன்பதொ டொன்றொடேழு பதினெட்டொடாறும் உடனாய நாள்க ளவைதாம்",
@@ -747,47 +747,47 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṉpato ṭoṉṟoṭēḻu patiṉeṭṭoṭāṟum uṭaṉāya nāḷka ḷavaitām",
-    "english": "{0:nine,}{1: with one and seven,}{2: with eighteen and six,}{3: all}{4: the asterisms}{3,5: themselves combined,}",
+    "english": "{4,5:those asterisms themselves—}{0:the ninth,}{1: the tenth and sixteenth,}{2: the eighteenth and sixth,}{3: and those associated with them—}",
     "words": [
       {
         "roman": "oṉpato",
-        "gloss": "with nine",
+        "gloss": "the ninth asterism, with the following numbered ones",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṭoṉṟoṭēḻu",
-        "gloss": "and one and seven",
+        "gloss": "nine plus one and nine plus seven: the tenth and sixteenth asterisms",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "patiṉeṭṭoṭāṟum",
-        "gloss": "with eighteen and six",
+        "gloss": "the eighteenth and sixth asterisms also",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "uṭaṉāya",
-        "gloss": "together comprising all",
+        "gloss": "those accompanying or associated with them",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nāḷka",
-        "gloss": "lunar asterisms / stellar days",
+        "gloss": "asterisms; stellar days",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ḷavaitām",
-        "gloss": "those themselves",
+        "gloss": "those themselves; initial ḷ completes the preceding plural noun",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Complex numeric sandhi: oṉpatoṭu + oṉṟu + oṭu + ēḻu; patiṉeṭṭu + oṭu + āṟu + um; nāḷkaḷ split across tokens as nāḷka + ḷavaitām (ḷ + avai + tām)."
+    "grammarNote": "The numeral construction names stellar positions, rather than a total: nine, nine plus one, nine plus seven, eighteen and six. The base nine is understood again with one and seven. uṭaṉāya describes the associated ones. nāḷkaḷ is split across nāḷka + ḷavaitām, the latter continuing with avai + tām (those themselves). The following row supplies the predicate."
   },
   "v2-l4": {
     "source": "அன்பொடு நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
@@ -849,7 +849,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṉpoṭu nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:are lovingly}{1: good}{2: and auspicious;}{3: they}{4: are good}{5: and auspicious,}{8: exceedingly so}{6,7: for His devotees.}",
+    "english": "{0:are lovingly}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
     "words": [
       {
         "roman": "aṉpoṭu",
@@ -859,13 +859,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -877,13 +877,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -939,11 +939,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nalla aṭiyā ravarkku mikavē",
-    "english": "{3:Exceedingly}{0: auspicious}{1,2: for His devotees.}",
+    "english": "{0:Good}{1,2: for His devotees—}{3:exceedingly so.}",
     "words": [
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1209,7 +1209,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tirumakaḷ kalaiyatūrti ceyamātu pūmi ticai teyvamāṉa palavum",
-    "english": "{0:the Goddess of Fortune,}{1: She whose mount is the deer,}{2: the Goddess of Victory,}{3: the Earth,}{6: and the many}{4,5: directional deities,}",
+    "english": "{0:the Goddess of Fortune,}{1: the stag-mounted}{2: goddess of victory,}{3: the Earth,}{6: and the many}{4,5: directional deities,}",
     "words": [
       {
         "roman": "tirumakaḷ",
@@ -1219,13 +1219,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kalaiyatūrti",
-        "gloss": "She whose vehicle is the deer [Sarasvatī / Durgā]",
+        "gloss": "she whose mount is the stag (Durgā)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ceyamātu",
-        "gloss": "Goddess of Victory [Jayalakṣmī / Durgā]",
+        "gloss": "goddess of victory",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1255,7 +1255,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "kalaiyatūrti = kalai (stag/deer) + atu (its) + ūrti (vehicle); teyvamāṉa = teyvam + āṉa (adjectival participle); palavum (indefinite pronoun with inclusive -um)."
+    "grammarNote": "kalaiyatūrti (stag as vehicle) and ceyamātu (goddess of victory) are read together as two descriptions of Durgā, not two separately introduced goddesses. teyvamāṉa = teyvam + āṉa; palavum is inclusive plural."
   },
   "v3-l4": {
     "source": "அருநெதி நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
@@ -1317,23 +1317,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aruneti nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:are rare treasures,}{1: good}{2: and auspicious;}{3: they}{4: are good}{5: and auspicious,}{8: exceedingly so}{6,7: for His devotees.}",
+    "english": "{0:like precious wealth, are}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
     "words": [
       {
         "roman": "aruneti",
-        "gloss": "rare treasure / precious boon",
+        "gloss": "rare, precious wealth; here an image of their benefit",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1345,13 +1345,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1375,7 +1375,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "aruneti = aru (rare/precious) + neti / niti (treasure/wealth); aṭiyā + ravarkku split across sandhi."
+    "grammarNote": "aruneti combines aru (rare, precious) with neti/niti (wealth, treasure), placing the preceding deities in the image of precious wealth. English makes the implied comparison explicit with ‘like’; it does not add a separate boon or another deity to the list. The repeated nalla predicates their goodness; aṭiyā + ravarkku represents aṭiyār + avarkku (for the devotees)."
   },
   "v4-l1": {
     "source": "மதிநுதன் மங்கையோடு வடாலிருந்து மறையோதும் எங்கள் பரமன்",
@@ -1725,7 +1725,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "atikuṇam nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:are supremely good,}{1: benign}{2: and auspicious;}{3: they}{4: are good}{5: and auspicious,}{8: exceedingly so}{6,7: for His devotees.}",
+    "english": "{0:are supremely beneficial,}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
     "words": [
       {
         "roman": "atikuṇam",
@@ -1735,13 +1735,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1753,13 +1753,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1947,17 +1947,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuñjiruḷ vaṉṉi koṉṟai muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{4:having adorned}{3: His crown with}{0: dark dense}{1: vanni}{2: and golden shower blossoms,}{7: because}{6: He entered}{4: into my}{5: heart,}",
+    "english": "{4:having adorned}{3: His crown with}{1: Indian mesquite}{2: and golden shower blossoms,}{7: because}{6: He entered}{4: my}{5: heart}{0: in the darkness of sleep,}",
     "words": [
       {
         "roman": "tuñjiruḷ",
-        "gloss": "dense dark-hued",
+        "gloss": "the darkness of sleep; here the time of His entry",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vaṉṉi",
-        "gloss": "Prosopis cineraria",
+        "gloss": "Indian mesquite",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1999,7 +1999,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "tuñjiruḷ = tuñju (dense/sleeping) + iruḷ (dark); muṭimēl split across sandhi as muṭimē + laṇinteṉ (l + aṇintu + eṉ)."
+    "grammarNote": "tuñjiruḷ combines tuñcu (sleep) and iruḷ (darkness), read here as the time of His entry into the heart. Another possible construction relates abiding darkness to the adjacent tree; tuñcu can mean both sleep and abide. muṭimē laṇinteṉ represents muṭimēl + aṇintu + eṉ."
   },
   "v5-l3": {
     "source": "வெஞ்சின அவுணரோடும் உருமிடியும் மின்னும் மிகையான பூதமவையும்",
@@ -2043,7 +2043,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "veñciṉa avuṇarōṭum urumiṭiyum miṉṉum mikaiyāṉa pūtamavaiyum",
-    "english": "{1:Along with }{0:fierce-angered }{1:demons, }{2:roaring thunder, }{3:lightning, }and {5:those }{4:formidable }{5:elemental spirits,}",
+    "english": "{1:Along with }{0:fiercely wrathful }{1:demons, }{2:roaring thunder, }{3:lightning, }and {5:those }{4:formidable }{5:elemental spirits,}",
     "words": [
       {
         "roman": "veñciṉa",
@@ -2145,7 +2145,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "añciṭum nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:they shrink in dread }and are {1:very, }{2:very }good—{3:they }are {4:very, }{5:very }good, {8:exceedingly }so for {6,7:His devotees.}",
+    "english": "{0:they shrink in dread }and are {1:good, }{2:good}—{3:they }are {4:good, }{5:good}, {8:exceedingly }so for {6,7:His devotees.}",
     "words": [
       {
         "roman": "añciṭum",
@@ -2155,13 +2155,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2173,13 +2173,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2252,8 +2252,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "vāḷvari yataḷatāṭai vari kōvaṇattar maṭavāḷ taṉōṭum uṭanāy",
-    "english": "{0:Clad in radiant-striped }{1:skin as His garment, }{3:the wearer of a }{2:strapped }{3:loincloth, }{6:united together }{5:with }{4:the tender woman,}",
+    "roman": "vāḷvari yataḷatāṭai vari kōvaṇattar maṭavāḷ taṉōṭum uṭaṉāy",
+    "english": "{0:Clad in radiant-striped }{1:skin as His garment, }{3:the wearer of a }{2:bound }{3:loincloth, }{6:united together }{5:with }{4:the tender woman,}",
     "words": [
       {
         "roman": "vāḷvari",
@@ -2292,7 +2292,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "uṭanāy",
+        "roman": "uṭaṉāy",
         "gloss": "being united / together",
         "concept_key": "",
         "preserve_in_english": false
@@ -2355,7 +2355,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāṇmalar vaṉṉi koṉṟai naticūṭi vanteṉ uḷamē pukunta ataṉāl",
-    "english": "{3:wearing }{0:fresh blossoms, }{1:vanni, }{2:golden shower, }{3:and the river, }{7:because }{4:He came }{6:and entered }{4:my }{5:very heart,}",
+    "english": "{3:wearing }{0:fresh blossoms, }{1:Indian mesquite, }{2:golden shower, }{3:and the river, }{7:because }{4:He came }{6:and entered }{4:my }{5:very heart,}",
     "words": [
       {
         "roman": "nāṇmalar",
@@ -2565,23 +2565,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āḷari nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:and the man-lion }are {1:very, }{2:very }good—{3:they }are {4:very, }{5:very }good, {8:exceedingly }so for {6,7:His devotees.}",
+    "english": "{0:and the male lion }are {1:good, }{2:good}—{3:they }are {4:good, }{5:good}, {8:exceedingly }so for {6,7:His devotees.}",
     "words": [
       {
         "roman": "āḷari",
-        "gloss": "man-lion / man-killing beast",
+        "gloss": "male lion",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2593,13 +2593,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2667,7 +2667,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ceppiḷa mulaiṉaṉmaṅkai orupāka māka viṭaiyēṟu celvaṉaṭaivār",
-    "english": "With the {1:noble maiden }of {0:youthful cup-like }{1:breasts }{3:as }{2:one half, }{5:the prosperous Lord }{4:who mounts the bull}{5:—whom devotees reach—}",
+    "english": "With the {1:noble maiden }of {0:youthful cup-like }{1:breasts }{3:as }{2:one half, }{5:the prosperous Lord }{4:who mounts the bull}{5:—reached by}",
     "words": [
       {
         "roman": "ceppiḷa",
@@ -2701,13 +2701,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "celvaṉaṭaivār",
-        "gloss": "the prosperous Lord, who reaches (or whom devotees reach)",
+        "gloss": "the prosperous Lord; reaching or settling upon Him (continuing with the waters in the next line)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "mulaiṉaṉmaṅkai represents mulai + nal + maṅkai; celvaṉaṭaivār combines celvaṉ (the prosperous one / Lord) + aṭaivār (honorific 3rd person plural / pronominal noun)."
+    "grammarNote": "The surface celvaṉaṭaivār spans celvaṉ and aṭaivu ār. The latter continues into the following line and describes the waters reaching or settling upon the Lord; it does not introduce devotees as an agent. The cup-like youthful breasts belong to the noble maiden, who is His half."
   },
   "v7-l2": {
     "source": "ஒப்பிள மதியும் அப்பும் முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
@@ -2763,7 +2763,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oppiḷa matiyum appum muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{4:having adorned }{3:His crown }with the {0:peerless young }{1:moon }{2:and water, }{7:because }{6:He entered }{4:my }{5:very heart,}",
+    "english": "{2:the waters—}{4:wearing them, }with the {0:peerless young }{1:moon, }{3:upon His crown, }{7:because }{6:He entered }{4:my }{5:very heart,}",
     "words": [
       {
         "roman": "oppiḷa",
@@ -2985,7 +2985,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "appaṭi nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:in that manner, }{1:very, }{2:very }good—{3:they }are {4:very, }{5:very }good, {8:exceedingly }so for {6,7:His devotees.}",
+    "english": "{0:Thus they are}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
     "words": [
       {
         "roman": "appaṭi",
@@ -2995,13 +2995,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / beneficial",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very beneficial",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3013,13 +3013,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3098,7 +3098,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "vēḷpaṭa viḻicey taṉṟu viṭaimē liruntu maṭavāḷ taṉōṭum uṭanāy",
+    "roman": "vēḷpaṭa viḻicey taṉṟu viṭaimē liruntu maṭavāḷ taṉōṭum uṭaṉāy",
     "english": "{1:Having opened His eye }{2:on that day }{0:so that Kāma would perish, }{4:seated }{3:upon the bull }{7:together }{6:with }{5:the tender woman,}",
     "words": [
       {
@@ -3144,7 +3144,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "uṭanāy",
+        "roman": "uṭaṉāy",
         "gloss": "being united / together",
         "concept_key": "",
         "preserve_in_english": false
@@ -3207,7 +3207,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāṇmati vaṉṉi koṉṟai malarcūṭi vanteṉ uḷamē pukunta ataṉāl",
-    "english": "{3:wearing }{0:the radiant moon, }{1:vanni, }{2:and golden shower }{3:blossoms, }{7:because }{4:He came }{6:and entered }{4:my }{5:very heart,}",
+    "english": "{3:wearing }{0:the radiant moon, }{1:Indian mesquite, }{2:and golden shower }{3:blossoms, }{7:because }{4:He came }{6:and entered }{4:my }{5:very heart,}",
     "words": [
       {
         "roman": "vāṇmati",
@@ -3308,7 +3308,7 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "ēḻkaṭal cūḻilaṅkai araiyanta ṉōṭum iṭarāṉa vantu naliyā",
+    "roman": "ēḻkaṭal cūḻilaṅkai araiyaṉta ṉōṭum iṭarāṉa vantu naliyā",
     "english": "{2:the king }{1:of Laṅkā }{1:surrounded by }{0:seven oceans }{3:along with }{4:all distresses }{6:will not }{5:come }{6:and afflict;}",
     "words": [
       {
@@ -3324,7 +3324,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "araiyanta",
+        "roman": "araiyaṉta",
         "gloss": "the king (Rāvaṇa)",
         "concept_key": "",
         "preserve_in_english": false
@@ -3417,7 +3417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āḻkaṭal nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:the deep oceans }are {1:very, }{2:very }good—{3:they }are {4:very, }{5:very }good, {8:exceedingly }so for {6,7:His devotees.}",
+    "english": "{0:the deep oceans }are {1:good, }{2:good}—{3:they }are {4:good, }{5:good}, {8:exceedingly }so for {6,7:His devotees.}",
     "words": [
       {
         "roman": "āḻkaṭal",
@@ -3427,13 +3427,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3445,13 +3445,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3531,7 +3531,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "palapala vēṭa mākum paraṉāri pākaṉ pacuvēṟum eṅkaḷ paramaṉ",
-    "english": "{2:Assuming }{0:manifold }{1:guises, }{3:having the supreme Lady }{4:as His half, }{6:our }{7:Supreme Lord }{5:who rides the bull,}",
+    "english": "{3:The Supreme One,}{2: assuming}{0: manifold}{1: guises,}{4: having}{3: the woman}{4: as His half,}{6: our}{7: Supreme Lord}{5: who rides the bull,}",
     "words": [
       {
         "roman": "palapala",
@@ -3553,7 +3553,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "paraṉāri",
-        "gloss": "supreme Goddess (Pārvatī)",
+        "gloss": "the Supreme One; the woman (in nāri-pākaṉ, woman-as-half)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3861,7 +3861,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "alaikaṭal mēru nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:the surging sea }and {1:Mount Meru }are {2:good; }{3:they }are {4:very, }{5:very }good, {8:exceedingly }so for {6,7:His devotees.}",
+    "english": "{0:the surging sea }and {1:Mount Meru }are {2:good; }{3:they }are {4:good, }{5:good}, {8:exceedingly }so for {6,7:His devotees.}",
     "words": [
       {
         "roman": "alaikaṭal",
@@ -3877,7 +3877,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3889,13 +3889,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very benevolent",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4005,7 +4005,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṭiyā ravarkku mikavē nalla nalla aṭiyā ravarkku mikavē nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0,1:For His devotees, }{2:exceedingly, }they are {3:very, }{4:very }good; {5,6:for His devotees, }{7:exceedingly, }they are {8:very, }{9:very }good; {10,11:for His devotees, }{12:exceedingly!}",
+    "english": "{0,1:For His devotees, }they are {3:good, }{4:good—}{2:exceedingly so; }{5,6:for His devotees, }they are {8:good, }{9:good—}{7:exceedingly so; }{10,11:for His devotees—}{12:exceedingly so!}",
     "words": [
       {
         "roman": "aṭiyā",
@@ -4027,13 +4027,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4057,13 +4057,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "good / auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "exceedingly good / very auspicious",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4251,7 +4251,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mattamum matiyum nākam muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{7:Because He, }{4:having adorned }{0:datura, }{1:the crescent moon, }{2:and the serpent }{3:upon His crest, }{6:entered }{4:my }{5:very heart,}",
+    "english": "{7:Because He,}{4: wearing}{0: datura,}{1: the crescent moon,}{2: and the serpent}{3: upon His crest,}{6: entered}{4: my}{5: very heart,}",
     "words": [
       {
         "roman": "mattamum",
@@ -4395,7 +4395,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "puttaro ṭamaṇai vātil aḻivikkum aṇṇal tirunīṟu cemmai tiṭamē tirunīṟu cemmai tiṭamē tirunīṟu cemmai tiṭamē",
-    "english": "{6:The excellence of }{5:the sacred ash of }{4:the exalted Lord }{3:who vanquishes }{0:Buddhists }{1:and Jains }{2:in debate }{7:is absolute certainty; }{9:the excellence of }{8:the sacred ash }{10:is absolute certainty; }{12:the excellence of }{11:the sacred ash }{13:is absolute certainty.}",
+    "english": "{4:The exalted Lord’s }{5:sacred ash }{3:defeats }{0:Buddhists }{1:and Jains }{2:in debate—}{6:its goodness }{7:is assured; }{8:the sacred ash’s }{9:goodness }{10:is assured; }{11:the sacred ash’s }{12:goodness }{13:is assured.}",
     "words": [
       {
         "roman": "puttaro",
@@ -4417,7 +4417,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "aḻivikkum",
-        "gloss": "vanquishing",
+        "gloss": "causes defeat; here, the sacred ash defeats opponents in debate",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4435,13 +4435,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "cemmai",
-        "gloss": "excellence",
+        "gloss": "goodness; here, its beneficial power",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tiṭamē",
-        "gloss": "certainty indeed",
+        "gloss": "is indeed assured",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4453,13 +4453,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "cemmai",
-        "gloss": "excellence",
+        "gloss": "goodness; here, its beneficial power",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tiṭamē",
-        "gloss": "certainty indeed",
+        "gloss": "is indeed assured",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4471,19 +4471,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "cemmai",
-        "gloss": "excellence",
+        "gloss": "goodness; here, its beneficial power",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tiṭamē",
-        "gloss": "certainty indeed",
+        "gloss": "is indeed assured",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Sandhi splitting across tokens: `puttaroṭu` + `amaṇai` becomes `puttaro` and `ṭamaṇai`. `aḻivikkum` is a causative future/habitual relative participle qualifying `aṇṇal`. The cadence `tirunīṟu cemmai tiṭamē` is chanted three times."
+    "grammarNote": "Aḻivikkum is a causative relative form attached to the full noun phrase aṇṇal tirunīṟu: the Lord’s sacred ash is the effective subject. Cemmai is its goodness or excellence; tiṭamē affirms that this is assured. The three performed occurrences are retained individually."
   },
   "v10-l4": {
     "source": "அத்தகு நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
@@ -4545,7 +4545,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "attaku nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{3:they are }{1:benign, }{2:benign }{0:of such nature; }{3:they are }{4:benign, }{5:benign, }{8:exceedingly so }{7:unto }{6:His devotees.}",
+    "english": "{0:Such things are}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
     "words": [
       {
         "roman": "attaku",
@@ -4555,13 +4555,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "benign",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "benign",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4573,13 +4573,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "benign",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "benign",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4677,7 +4677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṭiyā ravarkku mikavē nalla nalla aṭiyā ravarkku mikavē aṭiyā ravarkku mikavē",
-    "english": "{2:Exceedingly so }{1:unto }{0:His devotees, }{3:benign, }{4:benign, }{7:exceedingly so }{6:unto }{5:His devotees, }{10:exceedingly so }{9:unto }{8:His devotees!}",
+    "english": "{0,1:For His devotees, }they are {3:good, }{4:good—}{2:exceedingly so; }{5,6:for His devotees—}{7:exceedingly so; }{8,9:for His devotees—}{10:exceedingly so!}",
     "words": [
       {
         "roman": "aṭiyā",
@@ -4699,13 +4699,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nalla",
-        "gloss": "benign",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nalla",
-        "gloss": "benign",
+        "gloss": "good; beneficial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4803,7 +4803,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tēṉamar poḻilkoḷ ālai viḷaicennel tuṉṉi vaḷarcempoṉ eṅkum nikaḻa",
-    "english": "With {0:honey-rich }{1:groves, }{2:sugarcane mills, }and {3:ripening red paddy }{4:clustered together, }as {5:fine gold flourishes }{6:everywhere }{7:in view,}",
+    "english": "Amid {0:honey-rich }{1:groves, }{2:sugarcane mills, }and {3:ripening red rice }{4:clustered together, }{5:fine gold abounding }{6:everywhere }{7:in sight,}",
     "words": [
       {
         "roman": "tēṉamar",
@@ -4825,7 +4825,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viḷaicennel",
-        "gloss": "ripening red paddy",
+        "gloss": "ripening red rice",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4837,7 +4837,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaḷarcempoṉ",
-        "gloss": "flourishing fine gold",
+        "gloss": "fine gold increasing or abounding",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4911,7 +4911,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāṉmukaṉ āti yāya piramā purattu maṟaiñāṉa ñāṉa muṉivaṉ",
-    "english": "{7:the sage }{3,4:of Brahmapuram }{1,2:belonging to primeval }{0:Brahmā the Four-faced One, }{5:endowed with Vedic wisdom }{6:and divine knowledge,}",
+    "english": "{6:the wise }{7:sage, }{5:versed in Vedic knowledge, }{3,4:of Brahmapuram, }{1,2:which takes its name from }{0:the Four-faced One,}",
     "words": [
       {
         "roman": "nāṉmukaṉ",
@@ -4921,13 +4921,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "āti",
-        "gloss": "primeval",
+        "gloss": "origin or beginning; here, the origin of the city’s name",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yāya",
-        "gloss": "who is",
+        "gloss": "being or becoming; linking the origin to Brahmapuram",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4951,7 +4951,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ñāṉa",
-        "gloss": "divine wisdom",
+        "gloss": "wise; possessing knowledge",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4963,7 +4963,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "`nāṉmukaṉ āti āya` -> sandhi `yāya`. `piramā purattu` is the inflected genitive/locative form of Brahmapuram (`puram` -> `purattu`). `muṉivaṉ` is the subject of `uraicey` in v11-l3."
+    "grammarNote": "Nāṉmukaṉ is the Four-faced One. Āti yāya relates the origin of Brahmapuram to him; it does not say that he owns the city. Maṟaiñāṉa gives Vedic knowledge, and ñāṉa qualifies the sage as wise. The English subject is this sage, continued by spoke in the next row."
   },
   "v11-l3": {
     "source": "தானுறு கோளும் நாளும் அடியாரை வந்து நலியாத வண்ணம் உரைசெய்",
@@ -5019,7 +5019,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tāṉuṟu kōḷum nāḷum aṭiyārai vantu naliyāta vaṇṇam uraicey",
-    "english": "{7:uttered }{6:so that }{1:planets }{2:and asterisms }{0:occurring in their course, }{4:coming near, }{5:shall not afflict }{3:devotees—}",
+    "english": "{7:spoke }{6:so that }{1:planets }{2:and asterisms, }{0:as they take their course, }{5:may not }{4:come }{5:and afflict }{3:devotees.}",
     "words": [
       {
         "roman": "tāṉuṟu",
@@ -5065,13 +5065,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "uraicey",
-        "gloss": "uttered",
+        "gloss": "spoke or composed; here, the sage’s utterance that forms the following word-garland",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "`naliyāta` is a negative relative participle qualifying `vaṇṇam` ('manner/way'). `uraicey` is a past relative participle qualifying `mālai` in the following line."
+    "grammarNote": "Naliyāta is negative and qualifies vaṇṇam: so that they do not afflict. Uraicey is the utterance/composition expression linked to the following garland of words; do not assert an overt past-tense suffix absent from the supplied form. English uses spoke as a finite clause, then resumes the resulting garland with this in the next sentence."
   },
   "v11-l4": {
     "source": "ஆனசொல் மாலை யோதும் அடியார்கள் வானில் அரசாள்வர் ஆணை நமதே",
@@ -5127,7 +5127,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āṉacol mālai yōtum aṭiyārkaḷ vāṉil aracāḷvar āṇai namatē",
-    "english": "{3:devotees }{2:who recite }{1:this garland }{0:of potent words }{5:shall reign }{4:in heaven; }{7:this is our }{6:solemn decree!}",
+    "english": "{3:Devotees }{2:who recite }{1:this garland }{0:of potent words }{5:shall reign }{4:in heaven; }{7:this is our }{6:solemn decree!}",
     "words": [
       {
         "roman": "āṉacol",
@@ -5582,10 +5582,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 386.51,
-    "end": 394.0
+    "end": 394
   },
   {
-    "start": 394.0,
+    "start": 394,
     "end": 403.325
   },
   {

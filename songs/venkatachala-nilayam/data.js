@@ -214,7 +214,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pavitraṁ",
-        "gloss": "supremely pure one",
+        "gloss": "pure; holy",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -456,11 +456,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "makara kuṇḍaladhara madana gōpālaṁ",
-    "english": "{1:Wearer of }{0:crocodile}{1: earrings}, {2:enchanting }{3:Gopāla},",
+    "english": "{1:Wearer of }{0:sea-monster-shaped}{1: earrings}, {2:enchanting }{3:Gopāla},",
     "words": [
       {
         "roman": "makara",
-        "gloss": "sea-monster; crocodile (ornament design)",
+        "gloss": "mythical sea creature; here, its shape in an earring design",
         "concept_key": "",
         "preserve_in_english": false
       },

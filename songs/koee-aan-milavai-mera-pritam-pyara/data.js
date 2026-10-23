@@ -246,7 +246,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "darsanu hari dekhaṇ kai tāī",
-    "english": "{3,4:for the sake of }{2:beholding }{0:the vision }{1:of the Lord.}",
+    "english": "{3,4:for the sake of }{0,2:beholding }{1:the Lord.}",
     "words": [
       {
         "roman": "darsanu",
@@ -982,7 +982,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nānaku",
-        "gloss": "Nānak the devotee-poet",
+        "gloss": "poetic signature of the Sikh Gurus; here Guru Rām Dās",
         "concept_key": "",
         "preserve_in_english": false
       },
