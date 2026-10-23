@@ -12,7 +12,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 6
+POLICY_VERSION = 7
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
@@ -39,10 +39,17 @@ Bhakti's default is English, including difficult philosophical words. First seek
 an accurate ordinary word; then a short precise phrase; then, if it preserves
 meaning or poetry better, a transparent source-supported compound. A missing
 one-word equivalent or dictionary entry is not a reason to leave an ordinary
-term untranslated. Rare retention of a non-name needs an explicit contextual
-reason, an understandable English gloss, and independent review. If the meaning
-itself is unresolved, report that uncertainty rather than presenting retained
-foreign text as a completed translation. Owner-approved English remains locked.
+term untranslated. Translate when the English preserves the meaning needed in
+this passage; do not force an English substitute or a coined compound that
+distorts it. A well-understood term may still lack an adequate compact English
+rendering. Compare the best word, phrase or compound with retaining the term,
+and explain any consequential loss or misleading implication. Retention of a
+non-name needs that explicit contextual reason, an understandable clickable
+English explanation, and independent review. The explanation can acknowledge
+that it is approximate; it must not pretend a partial gloss exhausts the concept.
+This is different from not knowing what the source means: unresolved source
+meaning must be reported rather than disguised by retained foreign text.
+Owner-approved English remains locked.
 
 For pati or a verified -pati compound, choose the relation supported by the
 source language, grammar and passage. Lord or master is permitted when evidenced;

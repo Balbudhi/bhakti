@@ -125,11 +125,16 @@ a completed library repair.
 The owner's clarified Bhakti policy is to translate ordinary words and concepts,
 including difficult ones. Prefer an accurate English word, then a precise short
 phrase, then an intentional transparent compound when it improves fidelity or
-poetry. Retaining a non-name is exceptional and needs a contextual reason and
-independent review; missing dictionary coverage alone is insufficient. Genuine
+poetry. Do not force an English substitution or coinage that distorts the passage.
+A well-understood term may lack an adequate compact English rendering: compare
+the best word, phrase or compound with retention and record the consequential
+loss or misleading implication. A retained non-name needs that contextual reason,
+an understandable clickable explanation (acknowledging approximation when needed),
+and independent review. This is distinct from unresolved source meaning, and
+missing dictionary coverage alone is insufficient. Genuine
 names may remain, with their evidenced literal/traditional meaning and referent
 explained on click. Unknown etymology is not invented. Existing owner English is
-still protected. Shared prompt policy version 6 states these rules and explicitly
+still protected. Shared prompt policy version 7 states these rules and explicitly
 checks inflection, adjectival relationships and connotations, and compound meaning.
 
 The integrated discovery algorithm compares contextual meaning with
