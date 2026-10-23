@@ -49,14 +49,25 @@ updated because the new immutable-writer guard rejects the same missing lexical
 decisions earlier. Compile and whitespace checks pass. The public contract audit
 remains 268 ready, one catalogue/tag mismatch and six unbuilt legacy readers.
 
-Next: run the prepared authentic historical Rehnā reader through actual audit,
-shared repair and paired authorization, then independently read the resulting
-glosses, frames and English. The unchanged historical source has 11 definitions
-and 24 performance events. The private trial is bounded to $0.70 text/10 calls,
-$0.01 embeddings/8 calls and 600 seconds, with no new source HTTP requests. It
-has not run yet. A correct orchestrator or a machine pass is not translation
-qualification. Existing-reader grammar notes currently remain fixed: an actual
-confirmed note defect needs explicit field-level repair before that line can be
+The shared changes are committed as `ef7a2bd4`. The authentic historical Rehnā
+trial has now run in `/tmp/bhakti-library-real-qualification/actual-run/` and
+stopped before its first audit response. The unchanged source has 11 definitions
+and 24 performance events. Under the $0.70 text/10-call, $0.01 embedding/8-call
+and 600-second run bounds, the first request reached its 180-second hard timeout
+and its worker was terminated. No response, audit result, repaired candidate,
+embedding call or dictionary HTTP request was produced. Its charge is unknown;
+the ledger retains a separate $0.1625655 reservation, in addition to the earlier
+$0.139404 unknown reservation. Confirmed task spending remains $3.258394325.
+The seeded lexical cache is not evidence of retrieval in this run. No retry,
+new allowance or public write occurred. The saved first request contains a
+51,329-character user prompt, high reasoning effort and a 32,768-token output
+allowance; these describe the workload but do not establish the timeout's cause.
+
+Next: inspect the actual audit workload and transport deadline before another
+paid qualification; preserve this unknown outcome. Then qualify the shared
+repair's actual glosses, frames and English. A correct orchestrator or a machine
+pass is not translation qualification. Existing-reader grammar notes currently
+remain fixed: a confirmed note defect needs explicit field-level repair before that line can be
 called fully corrected. No new public lyrics or song pages accompany this code.
 
 Independent no-cost acoustic preparation now has ten matching real waveform

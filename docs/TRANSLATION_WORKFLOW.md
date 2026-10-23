@@ -37,6 +37,11 @@ obligations; absent metadata cannot turn a current review into a legacy one.
 Existing-reader repair now uses the shared selective coordinator, retaining
 successful stages and exact owner English. The integrated checks establish these
 mechanics; the bounded real-song qualification and whole-library pass remain open.
+The first actual historical-reader trial of this integrated version stopped at
+its initial audit's 180-second timeout without a saved response. Its $0.1625655
+reservation is unresolved, not a confirmed charge. No repair or lexical stages
+ran; preseeded caches do not establish evidence consumption. The terminal private
+run is preserved without retry; see the repair task for accounting and next steps.
 
 ## Bounded intake and boundary recovery
 
