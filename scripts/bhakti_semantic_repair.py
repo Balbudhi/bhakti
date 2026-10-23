@@ -390,7 +390,12 @@ def stage_context(options):
             'semantic_source_identity', 'semantic_baseline', 'semantic_repair_feedback',
             'semantic_prior_gloss', 'semantic_translation_targets', 'semantic_previous_translations',
             'semantic_seed_translation', 'automatic_lexical_feedback')
-    return {key: copy.deepcopy(getattr(options, key)) for key in keys if hasattr(options, key)}
+    context = {key: copy.deepcopy(getattr(options, key)) for key in keys if hasattr(options, key)}
+    import bhakti_lexical_producer as producer
+    requests = producer.requested_identity(options)
+    if requests:
+        context['lexical_requested_spans'] = requests
+    return context
 
 
 def semantic_stage_route(pipeline, song_dir, stage, inputs, options, execute, validate, *, base_model=None):
@@ -556,6 +561,7 @@ def complete(pipeline, song_dir, audited, job, options):
     lines = audited.get('packet', {}).get('verified_lines', [])
     languages = audited.get('packet', {}).get('metadata', {}).get('languages')
     try:
+        pipeline.bhakti_lexical_producer.requested_spans(options, lines)
         baseline = resolved_baseline(pipeline, song_dir, lines, job)
         support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
         evidence = source_evidence(pipeline, song_dir, audited)
@@ -580,7 +586,7 @@ def complete(pipeline, song_dir, audited, job, options):
         if automatic is not None:
             identity_inputs['policy'] = {**policy, 'automatic_lexical': automatic}
             glossary_inputs['policy'] = {**policy, 'automatic_lexical':
-                {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery')}}
+                {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery', 'requested_spans') if key in automatic}}
         if full_support is not None:
             glossary_inputs['policy']['lexical_support'] = pipeline.bhakti_lexical_support.content_digest(
                 full_support, english_grammar=False)

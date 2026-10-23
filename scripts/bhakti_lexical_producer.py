@@ -81,6 +81,50 @@ def _dictionary_identity(directory, edition):
     return receipt
 
 
+def requested_identity(options):
+    requests = getattr(options, 'lexical_requested_spans', [])
+    support.require(isinstance(requests, list), 'requested lexical spans must be an array')
+    canonical, seen = [], set()
+    for request in requests:
+        support.require(isinstance(request, dict) and set(request) == {'line_id', 'word_indices', 'surfaces', 'reason'},
+                        'requested lexical span fields differ')
+        line_id, indices, surfaces, reason = (request[key] for key in ('line_id','word_indices','surfaces','reason'))
+        support.require(isinstance(line_id, str) and line_id and isinstance(indices, list) and indices and
+            all(type(index) is int and index >= 0 for index in indices) and indices == sorted(set(indices)),
+            'requested lexical span indices invalid')
+        support.require(isinstance(surfaces, list) and len(surfaces) == len(indices) and
+            all(isinstance(surface, str) and surface for surface in surfaces), 'requested lexical surfaces invalid')
+        support.require(isinstance(reason, str) and reason.strip(), 'requested lexical reason missing')
+        key = (line_id, tuple(indices))
+        support.require(key not in seen, 'duplicate requested lexical span')
+        seen.add(key)
+        canonical.append(copy.deepcopy(request))
+    return sorted(canonical, key=lambda row: (row['line_id'], row['word_indices']))
+
+
+def requested_spans(options, lines, *, full_lines=None):
+    """Validate all explicit source obligations before projecting a stage/batch."""
+    requests = requested_identity(options)
+    if not requests:
+        return []
+    support.require(settings(options) is not None,
+                    'requested lexical spans require enabled automatic lexical configuration')
+    full_lines = full_lines if full_lines is not None else getattr(options, 'semantic_full_source', lines)
+    full = {line['id']: line for line in full_lines}
+    support.require(len(full) == len(full_lines), 'requested lexical full source has duplicate lines')
+    for line in lines:
+        support.require(line['id'] in full and lexical.word_tokens(line) == lexical.word_tokens(full[line['id']]),
+                        'requested lexical current and full source tokens differ')
+    for request in requests:
+        support.require(request['line_id'] in full, 'requested lexical line absent from current source')
+        tokens = lexical.word_tokens(full[request['line_id']])
+        support.require(all(index < len(tokens) for index in request['word_indices']),
+                        'requested lexical index outside current source')
+        support.require(request['surfaces'] == [tokens[index] for index in request['word_indices']],
+                        'requested lexical surfaces differ from current source')
+    ids = {line['id'] for line in lines}
+    return [request for request in requests if request['line_id'] in ids]
+
 def configuration_identity(options=None):
     config = settings(options)
     if config is None:
@@ -92,6 +136,9 @@ def configuration_identity(options=None):
             'english': _dictionary_identity(config['directory'], config['edition']),
             'source_witnesses': sorted(witnesses, key=lambda row: (row['sha256'], row['query'])),
             'source_discovery': {'version': 1, 'max_suggestions': 2}}
+    requests = requested_identity(options)
+    if requests:
+        identity['requested_spans'] = requests
     discovery = english_discovery.configuration()
     if discovery is not None:
         identity['english_discovery'] = discovery
@@ -381,7 +428,7 @@ def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisiti
 
 def required_spans(options, lines):
     ids = {line['id'] for line in lines}
-    found = {}
+    found = {(item['line_id'], tuple(item['word_indices'])): item for item in requested_spans(options, lines)}
     feedback = list(getattr(options, 'automatic_lexical_feedback', []) or [])
     feedback.extend(getattr(options, 'semantic_repair_feedback', []) or [])
     for issue in feedback:
@@ -390,7 +437,7 @@ def required_spans(options, lines):
         for ref in issue.get('references', []):
             if ref.get('line_id') in ids:
                 indices = ref.get('word_indices', [])
-                found[(ref['line_id'], tuple(indices))] = {'line_id': ref['line_id'], 'word_indices': indices}
+                found.setdefault((ref['line_id'], tuple(indices)), {'line_id': ref['line_id'], 'word_indices': indices})
     return list(found.values())
 
 

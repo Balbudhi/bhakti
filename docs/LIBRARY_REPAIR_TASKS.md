@@ -9,13 +9,15 @@ latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
 Current step: finish the connected pipeline before further content releases.
-The bounded connected text comparison is now running privately in
+The bounded connected text comparison finished privately in
 `/tmp/bhakti-connected-qualification/real-run-preparation/`, under the unchanged
 $1 text/eight-call and $0.05 embedding/twelve-call ceilings. Provider access was
 rechecked successfully; the account reported $21.92318094 remaining before this
 run. That account-wide balance is not a task spending attribution. The previous
-uncertain diagnostic reservation remains untouched. Actual outputs must be read
-before any quality or library-completion claim.
+uncertain diagnostic reservation remains untouched. Six parsed calls cost
+$0.41264775; no dictionary HTTP or embedding calls ran. All original reader,
+source, timing and owner references remain unchanged. Task-accounted confirmed
+spending is now $3.032189975, separate from the prior $0.139404 unknown reservation.
 
 Private historical boundary preparation now connects crop, preserved originals,
 source review, timing and changed-context English review into a separate final
@@ -37,8 +39,19 @@ writer request has no targeted dictionary support, and no dictionary HTTP or
 embedding calls occurred before writing. Configuration alone did not exercise
 the intended hypothesis. The benchmark supplies scoring line IDs but no required
 lookup spans, and ordinary fresh intake allows the same silent opt-out. These
-are demonstrated activation defects to repair before scaling; the ongoing
-bounded outputs remain private and under independent reading.
+are demonstrated activation defects to repair before scaling. Independent
+reading rejected the run: Rehnā's reviewer passed the faulty popup gloss, and
+Hari's writer regressed grammatical agency and scoped naming before stopping at
+a quality hold. Hari's independent review and the Aruṇācala case did not run.
+The original run is terminal; preserve its ledger and outputs without replay.
+The existing new-intake review-to-repair path does carry detected issue spans
+into required lookups; six actual caller controls confirm that behavior with
+synthetic responses. The first-pass interface now accepts an explicit source-bound
+lookup request for already-known targets, independent of fabricated repair
+defects. The joined 26 actual-caller tests pass, including required initial
+queries, stale/disabled requests, batched context, honest gaps and unchanged
+resume. These use synthetic responses and do not establish better wording.
+Easy unrequested words remain eligible for contextual interpretation.
 
 Explicit lexical support, historical audio-cache compatibility, semantic cache
 reuse, bounded intake and automatic WordNet lookup delivery are integrated.

@@ -6,6 +6,13 @@ small live capability test. The first combined priority run exercised real Flash
 ended with unresolved candidates; full-library repair and generic audio coverage
 remain unfinished. A successful
 inventory or embedding request is not evidence that the library has been corrected.
+The latest connected text comparison cost $0.41264775 for six calls and did not
+qualify: its first-pass glossaries requested no dictionary lookups, the reviewer
+missed an unsupported popup modifier, and the Gurbāṇī writer was held. Explicit
+lookup obligations and separate popup review are the next demonstrated fixes;
+enabled configuration alone is not evidence that retrieval ran.
+Known lookup targets now use explicit, validated source spans; separate popup
+review and a new actual quality comparison remain pending.
 Current execution evidence belongs in [the repair task](LIBRARY_REPAIR_TASKS.md).
 
 ## Bounded intake and boundary recovery
@@ -42,7 +49,13 @@ prefix/suffix; absence from the cropped attachment is insufficient. Durable
 receipts bind preserved original files and their source-support snapshot. Fresh
 admission also compares that archive with the authoritative live input, while
 post-install replay uses the archive without another provider call. This consumer
-is integrated; automatic historical preparation/installation remains inactive.
+is integrated. The private historical preparation caller now preserves the
+original, cropped source candidate and final candidate separately, invokes the
+source/timing consumer and rechecks English after source changes. Its original
+deadline persists across interruptions; replay validates underlying review
+routes and complete finding history without new model calls. Prepared candidates
+remain blocked at generation/publication entrypoints. Historical installation
+and production activation remain unfinished.
 Timing reuse still requires a qualified clock origin, and cannot substitute a
 requested trim length or decoded offset for the browser's playback clock.
 
@@ -210,6 +223,17 @@ requirements survive selective repairs and resumed acceptance; an English
 dictionary update reuses compatible source glosses and reruns English/review.
 This producer performs no additional model call for lookup. Its existing-call
 prompt/output additions still have token cost.
+
+Callers with known problem words supply `options.lexical_requested_spans`, each
+with `line_id`, ordered `word_indices`, exact Roman `surfaces`, and `reason`.
+These request evidence without prescribing an English answer or inventing a
+review defect. The initial glossary must provide lookup hypotheses or an explicit
+gap for each requested span. Stale spans and disabled lookup configuration hold
+before provider calls. Requests survive source-context batching and resume;
+absent/empty requests preserve existing cache identities. An explained gap is
+not dictionary/embedding qualification. The existing automatic review-to-repair
+path still requires lookups for newly detected issues; easy unrequested words
+may use contextual interpretation.
 
 Automatic source-form discovery is connected: the glossary can propose up to two
 lookup forms for an uncertain span. Existing reader mappings supply the native

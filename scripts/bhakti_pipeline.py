@@ -143,7 +143,7 @@ def semantic_stage_policy(options, *, stage=None):
     automatic = bhakti_lexical_producer.configuration_identity(options)
     if automatic is not None:
         if stage == 'gloss':
-            automatic = {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery')}
+            automatic = {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery', 'requested_spans') if key in automatic}
         policy = {**policy, 'automatic_lexical': automatic}
     if getattr(options, 'automatic_lexical_identity', None):
         policy = {**policy, 'automatic_lexical_materialized': options.automatic_lexical_identity}
@@ -3680,6 +3680,10 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
     languages = audited["packet"].get("metadata", {}).get("languages")
+    bhakti_lexical_producer.requested_spans(options, lines)
+    if getattr(options, 'lexical_requested_spans', []) and not hasattr(options, 'semantic_full_source'):
+        options = copy.copy(options)
+        options.semantic_full_source = lines
     support = bhakti_lexical_support.prepare_options(options, lines, languages)
     policy = semantic_stage_policy(options, stage='gloss')
     def glossary_errors(target_lines, rows, langs):
