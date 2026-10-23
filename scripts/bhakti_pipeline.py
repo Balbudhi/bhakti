@@ -38,6 +38,7 @@ import process_song_gemini as gemini
 import gloss_policy
 import bhakti_lexical_support
 import bhakti_lexical_producer
+import bhakti_source_discovery
 import bhakti_translation_policy
 import bhakti_semantic_repair
 import editorial_baselines
@@ -111,15 +112,42 @@ def complete_semantics(song_dir, audited, job, options):
     return bhakti_semantic_repair.complete(sys.modules[__name__], song_dir, audited, job, options)
 
 
+def validate_automatic_evidence_receipt(value):
+    if (not isinstance(value, dict) or set(value) - {'lexical_support', 'source_discovery'}
+            or any(not isinstance(digest, str) or len(digest) != 64
+                   or any(char not in '0123456789abcdef' for char in digest)
+                   for digest in value.values())):
+        raise RuntimeError('invalid automatic evidence receipt')
+    return value
+
+
+def automatic_evidence_receipt(options):
+    receipt = {}
+    for key, attribute in (('lexical_support', 'automatic_lexical_identity'),
+                           ('source_discovery', 'automatic_source_discovery_identity')):
+        value = getattr(options, attribute, None)
+        if value is not None:
+            receipt[key] = value
+    return validate_automatic_evidence_receipt(receipt)
+
+
+def automatic_evidence_errors(options, translations):
+    actual = validate_automatic_evidence_receipt(translations.get('automatic_evidence_receipt', {}))
+    return ([] if actual == automatic_evidence_receipt(options) else
+            ['automatic model-input evidence receipt changed or missing'])
+
+
 def semantic_stage_policy(options, *, stage=None):
     policy = translation_policy_payload()
     automatic = bhakti_lexical_producer.configuration_identity(options)
     if automatic is not None:
         if stage == 'gloss':
-            automatic = {key: automatic[key] for key in ('version', 'max_queries')}
+            automatic = {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery')}
         policy = {**policy, 'automatic_lexical': automatic}
     if getattr(options, 'automatic_lexical_identity', None):
         policy = {**policy, 'automatic_lexical_materialized': options.automatic_lexical_identity}
+    if getattr(options, 'automatic_source_discovery_identity', None):
+        policy = {**policy, 'automatic_source_discovery_materialized': options.automatic_source_discovery_identity}
     support = getattr(options, 'semantic_lexical_support', None)
     if support is not None:
         policy = {**policy, 'lexical_support': bhakti_lexical_support.content_digest(support)}
@@ -206,6 +234,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--deadline-seconds", type=float, help="New-run lifetime, default 1800 seconds; resume never extends its deadline.")
     parser.add_argument("--semantic-repair-rounds", type=int, choices=(0, 1, 2), default=2,
                         help="Maximum source-grounded semantic repair rounds; bounded API ledger required for repair calls.")
+    parser.add_argument('--source-discovery-max-requests', type=int, default=16, help='Shared free source dictionary request cap for this run')
     parser.add_argument("--semantic-repair-seconds", type=float, default=600,
                         help="Absolute semantic run lifetime in seconds, persisted across resume (default: 600).")
     parser.add_argument("--force", action="store_true", help="Rerun cached API stages for an existing intake.")
@@ -3933,6 +3962,10 @@ def independently_review_translations(
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
+    discovery_errors = bhakti_source_discovery.translation_decision_errors(
+        getattr(options, 'automatic_source_discovery', None), translation_rows)
+    if discovery_errors:
+        raise RuntimeError('translation review source discovery: ' + str(discovery_errors[:3]))
     support = bhakti_lexical_support.prepare_options(options, lines, languages)
     policy = semantic_stage_policy(options)
     policy = {**policy, 'review_payload_contract': 1, 'pending_findings': getattr(options, 'semantic_pending_findings', []),
@@ -4045,7 +4078,7 @@ Check that each English segment uses the same contextual sense as the gloss at i
 
 {bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", []))}
 
-{bhakti_lexical_support.prompt(support, [item['source']['id'] for item in target_evidence], 'review')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_semantic_repair.REVIEW_GUIDANCE}
+{bhakti_lexical_support.prompt(support, [item['source']['id'] for item in target_evidence], 'review')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_source_discovery.prompt(options, [item['source']['id'] for item in target_evidence])}{bhakti_semantic_repair.REVIEW_GUIDANCE}
 
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
@@ -4167,6 +4200,9 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
         errors = fresh_translation_contract_errors(
             lines, gloss_rows, existing.get("packet", {}).get("translations", []))
         errors.extend(bhakti_lexical_support.support_decision_errors(support, gloss_rows, existing.get("packet", {}).get("translations", [])))
+        errors.extend(automatic_evidence_errors(options, existing))
+        errors.extend(bhakti_source_discovery.translation_decision_errors(
+            getattr(options, 'automatic_source_discovery', None), existing.get('packet', {}).get('translations', [])))
         if errors:
             raise RuntimeError(f"cached translation violates fresh contract: {errors[:3]}")
         return existing
@@ -4189,7 +4225,7 @@ For each line, reason in this order before choosing the final English:
 5. Make only the smallest grammatical adjustments needed for intelligible English. Prefer the source's transparent spatial vocabulary (“from the inside”) over a smoother intensifying substitute (“deep within”) unless depth is lexically present. Literal and poetic force outrank smoothness.
 6. Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even for registry-listed concepts. A `concept_key` is bookkeeping, not an instruction to leave the term untranslated. Retain a concept in IAST only when explicitly supplied locked English does so; a legacy `preserve_in_english=true` flag alone cannot override this rule. Retain genuine proper names, whose clickable gloss must explain their evidenced identity or relationship. The sense used in every English segment must match the chosen primary meaning at its linked word indices, including compounds and inflections; supported alternatives remain separately explained in grammar notes.
 
-{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}{bhakti_lexical_producer.diagnostics_prompt(options)}
+{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_source_discovery.prompt(options, [line['id'] for line in batch])}
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list. Every source word index must appear in at least one segment. Map particles, postpositions, tense/aspect, negation, modality, and honorifics to the English phrase they help create rather than leaving their source index uncovered.
 
@@ -4246,6 +4282,7 @@ Return strict JSON:
             "material_change": {"type": "boolean"}, "reason": {"type": "string"}},
             "required": ["id", "supplied", "chosen", "material_change", "reason"], "additionalProperties": False}},
     }, "required": ["translations", "comparison"], "additionalProperties": False}
+    schema = bhakti_source_discovery.extend_schema(schema, options)
     # Literal translations carry indexed English segments, alternatives, and
     # fidelity evidence.  Keep medium recordings in the same bounded batch
     # path as long recordings rather than waiting on one oversized response.
@@ -4362,12 +4399,15 @@ Return strict JSON:
             raise RuntimeError('semantic repair previous translation population changed')
         result['packet']['translations'] = [copy.deepcopy(replacements.get(line['id'], old[line['id']])) for line in lines]
     support_errors = bhakti_lexical_support.support_decision_errors(support, gloss_rows, result['packet']['translations'])
+    support_errors.extend(bhakti_source_discovery.translation_decision_errors(
+        getattr(options, 'automatic_source_discovery', None), result['packet']['translations']))
     if support_errors:
-        raise RuntimeError('translation lexical support: ' + str(support_errors[:3]))
+        raise RuntimeError('translation lexical support/source discovery: ' + str(support_errors[:3]))
     for row in result['packet']['translations']:
         row.pop('independent_review', None)
     result["input_contract_version"] = TRANSLATION_INPUT_VERSION
     result["fingerprint"] = fingerprint
+    result["automatic_evidence_receipt"] = automatic_evidence_receipt(options)
     candidate_path = target.parent / 'translation-candidate.json'
     semantic_write_json(candidate_path, result)
     bhakti_semantic_repair.assert_baseline(getattr(options, 'semantic_baseline', None), result['packet']['translations'])
@@ -4397,6 +4437,10 @@ Return strict JSON:
     errors = fresh_translation_contract_errors(lines, gloss_rows, result["packet"]["translations"])
     if candidate_only:
         return result
+    source_issues = bhakti_source_discovery.repair_issues(
+        getattr(options, 'automatic_source_discovery', None), lines, result['packet']['translations'])
+    if source_issues:
+        stage_quality_failure(options, 'new source evidence requires glossary repair: ' + str(source_issues[:1]))
     if errors:
         stage_quality_failure(options, f"translation output violates fresh contract: {errors[:3]}")
     write_json(target, result)

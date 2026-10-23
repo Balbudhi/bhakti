@@ -21,8 +21,12 @@ not charged again on resume. These tests do not certify sung-audio recognition.
 Historical decoded-timebase inspection is present but crop adoption remains
 unactivated until source/timing migration and publication recovery are connected.
 
-The model-facing source dictionary discovery and materialized-evidence renewal
-patches are in independent review. English embedding discovery is implemented
+Model-facing source dictionary discovery and materialized-evidence renewal are
+integrated. The joined source acquisition, translation/review, cache renewal and
+fresh-source support checks pass 109 tests. Relevant changed evidence reruns
+English and review while preserving a validated source glossary; unrelated cache
+growth does not repay work. Missing source-request counters cannot reset the
+run's allowance, including loss between two acquisitions. English embedding discovery is implemented
 privately; review found that compact dictionary evidence omitted adjective
 placement restrictions and verb sentence frames. That grammar-loss defect must
 be fixed before its integration. Missing-source bootstrap, shared stage-level

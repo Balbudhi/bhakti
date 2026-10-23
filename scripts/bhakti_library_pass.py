@@ -852,6 +852,7 @@ def _execute_inventory(root: Path, inventory: dict, state_dir: Path, options) ->
     reuse_identity = {slug: {'path': str(Path(path).resolve()), 'sha256': file_hash(Path(path))}
                       for slug, path in reuse_maps.items()}
     identity = {'catalogueRevision': inventory['catalogueRevision'], 'budget_usd': options.budget_usd,
+        'source_discovery_max_requests': pipeline.bhakti_source_discovery.run_limit(options),
         'max_calls': options.max_calls, 'model': options.model, 'pro_model': options.pro_model,
         'source_reuse_maps': reuse_identity,
         'inputs': {row['slug']: row['fingerprints']['all'] for row in rows}}
@@ -865,6 +866,7 @@ def _execute_inventory(root: Path, inventory: dict, state_dir: Path, options) ->
         identity['lexical_support'] = prepare.json_digest({slug: pipeline.bhakti_lexical_support.content_digest(packet)
             for slug, packet in support_packets.items()})
     run_path = state_dir / 'run.json'; run = read_json(run_path)
+    resumed_run = bool(run)
     if run:
         if run.get('identity') != identity: raise ValueError('frozen run inputs or limits changed; existing evidence retained')
     else:
@@ -874,6 +876,9 @@ def _execute_inventory(root: Path, inventory: dict, state_dir: Path, options) ->
                'songs': {}, 'remaining': [row['slug'] for row in rows], 'status': 'running'}
         pipeline.semantic_write_json(state_dir / 'frozen-inventory.json', inventory)
         pipeline.semantic_write_json(run_path, run)
+    options = copy.copy(options)
+    options.source_discovery_budget = pipeline.bhakti_source_discovery.configure_run_budget(
+        state_dir, run['deadline_at'], options, resume=resumed_run)
     continuations = reconcile_editorial_continuations(state_dir, run, rows, options, run_path)
     ledger = state_dir / 'api-ledger.json'
     env = {'BHAKTI_API_RUN_LEDGER': str(ledger), 'BHAKTI_API_RUN_BUDGET_USD': str(options.budget_usd),
@@ -1035,6 +1040,7 @@ def main(argv=None) -> int:
     selection.add_argument('--slugs', nargs='+')
     parser.add_argument('--budget-usd', type=float)
     parser.add_argument('--max-calls', type=int)
+    parser.add_argument('--source-discovery-max-requests', type=int, default=16)
     parser.add_argument('--deadline-seconds', type=float, default=3600)
     parser.add_argument('--timeout', type=float, default=600)
     parser.add_argument('--workers', type=int, default=7)

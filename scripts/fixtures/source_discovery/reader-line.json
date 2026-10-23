@@ -1,0 +1,87 @@
+{
+  "SONG_META": {
+    "languages": [
+      "Hindi"
+    ]
+  },
+  "SONG_LINES": {
+    "refrain-jai-bajarang": {
+      "source": "जय जय जय बजरंग बली",
+      "sourceLanguage": "hi",
+      "sourceWords": [
+        {
+          "text": "जय",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "जय",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "जय",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "बजरंग",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "बली",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "roman": "jaya jaya jaya bajaraṅga balī",
+      "english": "{0:Hail, }{1:hail, }{2:hail }{4:the mighty one }{3:with adamantine limbs!}",
+      "words": [
+        {
+          "roman": "jaya",
+          "gloss": "victory; hail",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "jaya",
+          "gloss": "victory; hail",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "jaya",
+          "gloss": "victory; hail",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "bajaraṅga",
+          "gloss": "one with adamantine limbs",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "balī",
+          "gloss": "mighty one; strong one",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "grammarNote": "Tripled jaya is an emphatic cheering vocative; bajaraṅga balī is a standard vocative noun phrase."
+    }
+  },
+  "SONG_SEQUENCE": [
+    {
+      "ref": "refrain-jai-bajarang",
+      "section": "refrain",
+      "repeats": 1
+    }
+  ]
+}

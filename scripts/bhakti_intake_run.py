@@ -18,6 +18,7 @@ import uuid
 from typing import Any
 
 import bhakti_model_routes as routes
+import bhakti_source_discovery as discovery
 import process_song_gemini as gemini
 import resolve_youtube_music_audio as ytmusic
 
@@ -146,6 +147,7 @@ def bounded_intake_run(root: Path, jobs: list[dict[str, Any]], options: Any):
         raise ValueError('another intake owns this process environment')
     previous = {key: os.environ.get(key) for key in _ENV_KEYS}
     old_options = {key: getattr(options, key, None) for key in ('unit_deadline_at', 'boundary_deadline_at', 'timing_deadline_at')}
+    old_discovery = getattr(options, 'source_discovery_budget', None)
     try:
         if getattr(options, 'economy', False) or str(options.model).endswith(':batch'):
             raise ValueError('bounded intake does not yet support text Batch accounting; --economy was not dispatched')
@@ -201,7 +203,8 @@ def bounded_intake_run(root: Path, jobs: list[dict[str, Any]], options: Any):
                             'source_witness_audit': bool(getattr(options, 'source_witness_audit', False)),
                             'refresh_timing': bool(getattr(options, 'refresh_timing', False)),
                             'force': bool(getattr(options, 'force', False)),
-                            'semantic_repair_rounds': getattr(options, 'semantic_repair_rounds', 2), **limits}
+                            'semantic_repair_rounds': getattr(options, 'semantic_repair_rounds', 2),
+                            'source_discovery_max_requests': discovery.run_limit(options), **limits}
                 if prior and (prior.get('version') != 1 or old_identity != identity):
                     raise ValueError('frozen intake inputs or limits changed; existing evidence retained')
                 deadlines = [time.time() + seconds]
@@ -243,6 +246,7 @@ def bounded_intake_run(root: Path, jobs: list[dict[str, Any]], options: Any):
                     routes.atomic_json(run_path, run)
                 for key in old_options:
                     setattr(options, key, min(deadline, old_options[key]) if old_options[key] is not None else deadline)
+                options.source_discovery_budget = discovery.configure_run_budget(state_dir, deadline, options, resume=bool(prior))
                 try:
                     yield {'state_dir': str(state_dir), 'ledger': str(ledger), 'deadline_at': deadline, **limits}
                 finally:
@@ -269,4 +273,8 @@ def bounded_intake_run(root: Path, jobs: list[dict[str, Any]], options: Any):
                 options.__dict__.pop(key, None)
             else:
                 setattr(options, key, value)
+        if old_discovery is None:
+            options.__dict__.pop('source_discovery_budget', None)
+        else:
+            options.source_discovery_budget = old_discovery
         _OWNER.release()

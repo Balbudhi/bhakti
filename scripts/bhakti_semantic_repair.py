@@ -327,7 +327,7 @@ def _bounded_ready():
 
 
 
-def derived_support_errors(pipeline, song_dir, audited, glosses, translations, options):
+def derived_support_view(pipeline, song_dir, audited, glosses, translations, options):
     lines = audited['packet']['verified_lines']
     languages = audited['packet'].get('metadata', {}).get('languages')
     if 'automatic_lexical_feedback' in translations:
@@ -337,10 +337,22 @@ def derived_support_errors(pipeline, song_dir, audited, glosses, translations, o
         if errors:
             raise RuntimeError('accepted lexical lookup feedback invalid: ' + str(errors[:3]))
         options.semantic_repair_feedback = copy.deepcopy(feedback)
-    view_options, view = pipeline.bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
+    return pipeline.bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
+
+
+def derived_support_errors(pipeline, song_dir, audited, glosses, translations, options):
+    lines = audited['packet']['verified_lines']
+    languages = audited['packet'].get('metadata', {}).get('languages')
+    view_options, view = derived_support_view(pipeline, song_dir, audited, glosses, translations, options)
     support = pipeline.bhakti_lexical_support.prepare_options(view_options, lines, languages)
-    return pipeline.bhakti_lexical_support.support_decision_errors(
+    errors = pipeline.automatic_evidence_errors(view_options, translations)
+    errors += pipeline.bhakti_lexical_support.support_decision_errors(
         support, view['packet']['glosses'], translations['packet']['translations'])
+    discovery = getattr(view_options, 'automatic_source_discovery', None)
+    if discovery is not None:
+        import bhakti_source_discovery
+        errors += bhakti_source_discovery.translation_decision_errors(discovery, translations['packet']['translations'])
+    return errors
 
 
 def validated_gloss_seed(pipeline, glossary, receipt, source_identity, glossary_identity, lines, languages):
@@ -393,9 +405,40 @@ def complete(pipeline, song_dir, audited, job, options):
         if automatic is not None:
             identity_inputs['policy'] = {**policy, 'automatic_lexical': automatic}
             glossary_inputs['policy'] = {**policy, 'automatic_lexical':
-                {key: automatic[key] for key in ('version', 'max_queries')}}
+                {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery')}}
         glossary_identity = digest(glossary_inputs)
         identity = digest(identity_inputs)
+        configuration_run_id = identity
+        revision_receipt = None
+        prior_configuration = prior_state.get('configuration_run_id', prior_state.get('run_id'))
+        if prior_configuration == configuration_run_id:
+            if prior_state.get('status') == 'accepted':
+                prior_gloss = pipeline.read_packet(packet_dir / '04-glosses.json')
+                prior_translation = pipeline.read_packet(packet_dir / '05-translation.json')
+                require_acceptance(pipeline, packet_dir, prior_gloss, prior_translation,
+                                   audited=audited, accepted_state=prior_state)
+                errors = pipeline.fresh_gloss_contract_errors(lines, prior_gloss['packet']['glosses'], languages)
+                if errors:
+                    raise RuntimeError('accepted source glossary violates contract: ' + str(errors[:3]))
+                saved_receipt = pipeline.validate_automatic_evidence_receipt(
+                    prior_translation.get('automatic_evidence_receipt', {}))
+                view_options, _ = derived_support_view(pipeline, song_dir, audited, prior_gloss, prior_translation, options)
+                current_receipt = pipeline.automatic_evidence_receipt(view_options)
+                if current_receipt and not saved_receipt:
+                    raise RuntimeError('accepted automatic evidence receipt missing')
+                if current_receipt != saved_receipt:
+                    revision_receipt = current_receipt
+                    identity = digest({'configuration_run_id': configuration_run_id,
+                                       'automatic_evidence_receipt': revision_receipt})
+                else:
+                    identity = prior_state['run_id']
+                    revision_receipt = prior_state.get('automatic_evidence_receipt')
+            elif 'automatic_evidence_receipt' in prior_state:
+                revision_receipt = pipeline.validate_automatic_evidence_receipt(prior_state['automatic_evidence_receipt'])
+                identity = digest({'configuration_run_id': configuration_run_id,
+                                   'automatic_evidence_receipt': revision_receipt})
+                if identity != prior_state.get('run_id'):
+                    raise RuntimeError('automatic evidence revision identity mismatch')
         accepted_gloss = None
         accepted_gloss_receipt = None
         durable_seed = packet_dir / 'semantic-repair' / identity / 'adopted-seeds.json'
@@ -423,7 +466,10 @@ def complete(pipeline, song_dir, audited, job, options):
             if not math.isfinite(seconds) or seconds <= 0:
                 raise RuntimeError('invalid semantic repair deadline')
             state = {'version': VERSION, 'run_id': identity, 'status': 'in-progress',
+                     'configuration_run_id': configuration_run_id,
                      'rounds_used': 0, 'deadline_at_epoch': time.time() + seconds}
+            if revision_receipt is not None:
+                state['automatic_evidence_receipt'] = copy.deepcopy(revision_receipt)
         local = copy.copy(options)
         local.force = False  # A force rerun cannot reset this run's paid history.
         local.semantic_deadline_at = state['deadline_at_epoch']
@@ -496,6 +542,13 @@ def complete(pipeline, song_dir, audited, job, options):
             pipeline.semantic_write_json(seed_path, {'payload': payload, 'sha256': digest(payload)})
         # Retained lookup obligations are not renewed translation objections.
         local.automatic_lexical_feedback = copy.deepcopy(payload.get('accepted_gloss_receipt', {}).get('automatic_lexical_feedback', []))
+        if revision_receipt is not None:
+            if seed_gloss is None:
+                raise RuntimeError('automatic evidence revision lacks validated glossary seed')
+            view_options, _ = derived_support_view(pipeline, song_dir, audited, seed_gloss,
+                {'automatic_lexical_feedback': local.automatic_lexical_feedback}, local)
+            if pipeline.automatic_evidence_receipt(view_options) != revision_receipt:
+                raise RuntimeError('automatic evidence changed during interrupted revision')
         maximum = min(2, max(0, int(getattr(options, 'semantic_repair_rounds', 2))))
         while True:
             call_timeout(local)
@@ -594,6 +647,11 @@ def complete(pipeline, song_dir, audited, job, options):
                 if review.get('passes') is True and review.get('human_review_recommended') is False and recorded:
                     raise RuntimeError('invalid_repair_feedback: passing review has issues')
                 issues.extend(recorded)
+            if automatic is not None:
+                discovery_options, _ = pipeline.bhakti_lexical_producer.prepare_translation(
+                    round_dir, audited, glosses, local)
+                issues.extend(pipeline.bhakti_source_discovery.repair_issues(
+                    getattr(discovery_options, 'automatic_source_discovery', None), lines, rows))
             invalid = issue_errors(lines, glosses['packet']['glosses'], issues)
             if invalid: raise RuntimeError('invalid_repair_feedback: ' + str(invalid[:3]))
             if not errors and not issues:

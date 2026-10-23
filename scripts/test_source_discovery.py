@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 import tempfile
 import time
+from types import SimpleNamespace
 from unittest.mock import patch
 import unittest
 from urllib.parse import parse_qs,urlparse
@@ -38,7 +39,14 @@ class SourceDiscoveryRequirements(unittest.TestCase):
         return io.BytesIO(corpus.load_cached_witness(FIX,self.records[query]))
     def plan(self):
         return self.discovery.source_lookup_plan([self.line],[self.proposal],['Hindi'])
+    def start_budget(self):
+        if not getattr(self, 'budget_initialized', False):
+            self.budget=self.discovery.configure_run_budget(self.root,self.budget['deadline_at'],
+                SimpleNamespace(source_discovery_max_requests=self.budget['max_requests']))
+            self.budget_initialized=True
+
     def acquire(self):
+        self.start_budget()
         return self.discovery.acquire_source_candidates(self.plan(),self.root,opener=self.opener,max_new_requests=3,timeout=1,run_budget=self.budget)
 
     def test_native_first_comes_from_actual_audited_word_map(self):
@@ -111,6 +119,7 @@ class SourceDiscoveryRequirements(unittest.TestCase):
 
     def test_transport_failure_is_not_a_lexical_miss(self):
         def unavailable(url,timeout):raise OSError('fixture transport failure')
+        self.start_budget()
         result=self.discovery.acquire_source_candidates(self.plan(),self.root,opener=unavailable,max_new_requests=3,timeout=1,run_budget=self.budget)
         self.assertEqual(result['entries'],[])
         self.assertTrue(result['gaps'])
@@ -118,6 +127,7 @@ class SourceDiscoveryRequirements(unittest.TestCase):
         self.assertFalse(any(obs['status']=='witnessed_miss' for target in result['targets'] for obs in target['observations']))
 
     def test_exhausted_free_request_budget_is_explicit_not_silent_truncation(self):
+        self.start_budget()
         result=self.discovery.acquire_source_candidates(self.plan(),self.root,opener=self.opener,max_new_requests=1,timeout=1,run_budget=self.budget)
         self.assertEqual(self.calls,['बजरंग'])
         self.assertEqual(result['entries'],[])
@@ -141,6 +151,7 @@ class SourceDiscoveryRequirements(unittest.TestCase):
             number,plan=item
             return self.discovery.acquire_source_candidates(plan,self.root/str(number),opener=self.opener,
                 max_new_requests=3,timeout=1,run_budget=self.budget)
+        self.start_budget()
         with ThreadPoolExecutor(max_workers=2) as pool:
             results=list(pool.map(run,enumerate([first,second])))
         self.assertEqual(len(self.calls),1)
@@ -150,6 +161,7 @@ class SourceDiscoveryRequirements(unittest.TestCase):
         clock=[99.0];self.budget['deadline_at']=100.0;timeouts=[]
         def advance(url,timeout):
             timeouts.append(timeout);result=self.opener(url,timeout);clock[0]=101.0;return result
+        self.start_budget()
         with patch.object(self.discovery.time,'time',side_effect=lambda:clock[0]):
             result=self.discovery.acquire_source_candidates(self.plan(),self.root,opener=advance,
                 max_new_requests=3,timeout=15,run_budget=self.budget)

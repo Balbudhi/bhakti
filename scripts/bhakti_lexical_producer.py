@@ -89,7 +89,8 @@ def configuration_identity(options=None):
                  for _, row in records]
     return {'version': VERSION, 'max_queries': MAX_QUERIES,
             'english': _dictionary_identity(config['directory'], config['edition']),
-            'source_witnesses': sorted(witnesses, key=lambda row: (row['sha256'], row['query']))}
+            'source_witnesses': sorted(witnesses, key=lambda row: (row['sha256'], row['query'])),
+            'source_discovery': {'version': 1, 'max_suggestions': 2}}
 
 
 def proposal_errors(lines, gloss_rows, languages, required_spans=()):
@@ -132,6 +133,8 @@ def proposal_errors(lines, gloss_rows, languages, required_spans=()):
                     if candidate['kind'] == 'word':
                         support.require(words, 'word candidate needs dictionary lookup query')
                 support.require(len(queries) <= MAX_QUERIES, 'lexical query limit exceeded')
+                import bhakti_source_discovery as discovery
+                discovery._queries(proposal.get('source_queries', []))
                 ids = proposal.get('source_entry_ids')
                 support.require(isinstance(ids, list) and all(isinstance(i, str) for i in ids),
                                 'source entry IDs missing')
@@ -323,6 +326,9 @@ def gloss_prompt(options, lines):
         'and english_lemmas (at most four distinct lookup words per source span). These are lookup queries, '
         'not accepted translations or invented dictionary definitions. source_entry_ids may name only the '
         'existing source entries bound to these exact tokens above; retain all alternatives. '
+        'For missing or uncertain source entries, propose source_queries: up to two dictionary lookup spellings '
+        '(prefer native forms/compound headwords when known). These are hypotheses, never invented citations '
+        'or authoritative etymologies. Use [] when no extra source lookup is needed. '
         'Use [] for ordinary lines needing no extra lookup. Explicit requested spans must have a proposal '
         'or a lexical_query_gaps item {word_indices,reason}; do not silently omit them. '
         'Compare phrases and compounds intentionally without forcing a coinage. Context embedding scores '
@@ -341,6 +347,7 @@ def gloss_schema(schema, options):
         'kind': {'type': 'string', 'enum': ['word', 'compositional_phrase', 'transparent_compound']},
         'english_lemmas': strings}, 'required': ['expression', 'kind', 'english_lemmas'], 'additionalProperties': False}
     props = {'word_indices': indices, 'surfaces': strings, 'reason': string, 'source_entry_ids': strings,
+             'source_queries': {'type': 'array', 'items': string, 'maxItems': 2},
              'english_candidates': {'type': 'array', 'items': candidate, 'minItems': 1, 'maxItems': MAX_QUERIES}}
     row = schema['properties']['glosses']['items']
     row['properties']['lexical_queries'] = {'type': 'array', 'items': {'type': 'object',
@@ -420,6 +427,11 @@ def prepare_translation(song_dir, audited, glosses, options):
     augmented['packet']['glosses'] = produced['gloss_rows']
     if produced['packet'] is not None:
         local.semantic_lexical_support = produced['packet']
+    import bhakti_source_discovery as discovery
+    source_evidence = discovery.prepare(lines, rows, languages, bindings, config, options)
+    if source_evidence is not None:
+        local.automatic_source_discovery = source_evidence
+        local.automatic_source_discovery_identity = support.content_digest(source_evidence)
     local.automatic_lexical_identity = produced['identity']
     local.automatic_lexical_diagnostics = produced['diagnostics']
     _write(Path(song_dir)/'.transcription/pipeline/automatic-lexical-support.json', produced)

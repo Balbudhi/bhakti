@@ -80,7 +80,7 @@ def source_lookup_plan(lines, proposals, languages):
     return {'version': VERSION, 'targets': targets, 'gaps': gaps}
 
 
-def _budget_state(run_budget, reserve=False):
+def _budget_state(run_budget, reserve=False, *, initialize=False):
     support.require(isinstance(run_budget, dict), 'source discovery requires an explicit shared run budget')
     maximum, deadline = run_budget.get('max_requests'), run_budget.get('deadline_at')
     support.require(type(maximum) is int and maximum >= 0 and
@@ -90,6 +90,8 @@ def _budget_state(run_budget, reserve=False):
     path.parent.mkdir(parents=True, exist_ok=True)
     identity = {'version': VERSION, 'max_requests': maximum, 'deadline_at': deadline}
     with file_lock(path.with_suffix(path.suffix + '.lock')):
+        if not path.exists() and not initialize:
+            raise ValueError('source discovery budget missing; only a new run owner may initialize its quota')
         state = support.read_json(path) if path.exists() else {'identity': identity, 'requests_started': 0}
         support.require(state.get('identity') == identity, 'shared source discovery budget identity changed')
         used = state.get('requests_started')
@@ -236,3 +238,140 @@ def discovery_decision_errors(discovery, decisions):
     if seen != expected:
         errors.append('source discovery decisions omit candidate alternatives')
     return errors
+
+
+def run_limit(options):
+    maximum = getattr(options, 'source_discovery_max_requests', 16)
+    support.require(type(maximum) is int and maximum >= 0,
+                    'source discovery run request limit must be nonnegative')
+    return maximum
+
+
+def configure_run_budget(state_dir, deadline_at, options, *, resume=False):
+    budget = {'path': str(Path(state_dir)/'source-discovery-budget.json'),
+              'max_requests': run_limit(options), 'deadline_at': deadline_at}
+    if resume and not Path(budget['path']).is_file():
+        raise ValueError('source discovery budget missing; resumed run cannot reset its quota')
+    _budget_state(budget, initialize=not resume)
+    return budget
+
+
+def prepare(lines, gloss_rows, languages, bindings, config, options):
+    """Discover only proposed unbound meanings; never change source aliases/glosses."""
+    proposals = []
+    for row in gloss_rows:
+        for proposal in row.get('lexical_queries', []):
+            tokens = {token['word_index']: token for token in bindings[row['id']]}
+            bound = any(tokens[index]['candidates'] for index in proposal['word_indices'])
+            if proposal.get('source_queries') or not bound:
+                proposals.append({**proposal, 'line_id': row['id']})
+    if not proposals:
+        return None
+    plan = source_lookup_plan(lines, proposals, languages)
+    budget = getattr(options, 'source_discovery_budget', None)
+    if plan['targets'] and budget is not None:
+        return acquire_source_candidates(plan, config['cache']/'source-discovery', run_budget=budget,
+            opener=getattr(options, 'source_discovery_opener', None))
+    targets = [{**target, 'candidate_entry_ids': [], 'observations': [],
+                'selection_status': 'lookup_hypothesis'} for target in plan['targets']]
+    gaps = copy.deepcopy(plan['gaps'])
+    if targets:
+        gaps.append({'kind': 'source_discovery_budget_missing',
+                     'detail': 'No shared run acquisition budget configured; no request dispatched.'})
+    return {'version': VERSION, 'targets': targets, 'entries': [], 'evidence': [],
+            'entry_evidence_ids': {}, 'gaps': gaps}
+
+
+def projected(discovery, line_ids):
+    if not discovery:
+        return None
+    selected = copy.deepcopy(discovery)
+    selected['targets'] = [target for target in selected['targets'] if target['line_id'] in line_ids]
+    ids = {entry_id for target in selected['targets'] for entry_id in target['candidate_entry_ids']}
+    selected['entries'] = [entry for entry in selected['entries'] if entry['entry_id'] in ids]
+    selected['entry_evidence_ids'] = {entry_id: refs for entry_id, refs in selected['entry_evidence_ids'].items() if entry_id in ids}
+    evidence_ids = {eid for refs in selected['entry_evidence_ids'].values() for eid in refs}
+    selected['evidence'] = [row for row in selected['evidence'] if row['id'] in evidence_ids]
+    for row in selected['evidence']:
+        row.pop('witness_path', None)
+    selected['gaps'] = [gap for gap in selected['gaps'] if gap.get('line_id') is None or gap['line_id'] in line_ids]
+    return selected
+
+
+def prompt(options, line_ids):
+    discovery = projected(getattr(options, 'automatic_source_discovery', None), line_ids)
+    if not discovery:
+        return ''
+    # The parser's entry-context sense repeats the entire definition. Deliver
+    # that complete text once; raw HTML remains bound privately by its hashes.
+    for entry in discovery['entries']:
+        if all(sense.get('granularity') == 'entry_context' and
+               sense.get('dictionary_anchor') == entry['dictionary']['whole_entry_text']
+               for sense in entry.get('senses', [])):
+            entry.pop('senses', None)
+    for evidence in discovery['evidence']:
+        evidence.pop('quotation', None)
+    return ('\nSOURCE DISCOVERY EVIDENCE:\n' + json.dumps(discovery, ensure_ascii=False) +
+        '\nThese complete historical dictionary entries are lookup hypotheses, not selected meanings. '
+        'Source query suggestions and similar spellings are not proof of a word relationship. '
+        'For every target/entry pair return source_discovery_decisions with matched/rejected/unresolved, '
+        'attested_form, exact quotation, relation_kind, meaning_applied, changes_gloss, and reason. '
+        'A matched compound must quote the whole compound subentry, not just its root. '
+        'Check source language, whole-word meaning, current passage grammar, and source/gloss/frame agreement. '
+        'If new evidence requires a changed gloss, set changes_gloss=true; do not silently replace the glossary. '
+        'The independent reviewer must evaluate each relation and contextual meaning separately. '
+        'An unavailable adapter/native map or transport error is not a dictionary miss. '
+        'If the translation depends on evidence still missing, report the targeted unresolved dependency.\n')
+
+
+def extend_schema(schema, options):
+    discovery = getattr(options, 'automatic_source_discovery', None)
+    if not discovery or not discovery['entries']:
+        return schema
+    schema = copy.deepcopy(schema)
+    props = {field: {'type': 'string'} for field in
+             ('target_id', 'entry_id', 'attested_form', 'quotation', 'meaning_applied', 'reason')}
+    props.update(status={'type': 'string', 'enum': ['matched', 'rejected', 'unresolved']},
+                 relation_kind={'type': 'string', 'enum': ['exact_form', 'vernacular_variant', 'compound_subentry', 'unresolved']},
+                 changes_gloss={'type': 'boolean'})
+    row = schema['properties']['translations']['items']
+    row['properties']['source_discovery_decisions'] = {'type': 'array', 'items': {
+        'type': 'object', 'properties': props, 'required': list(props), 'additionalProperties': False}}
+    row['required'].append('source_discovery_decisions')
+    return schema
+
+
+def translation_decision_errors(discovery, translation_rows):
+    if discovery is None:
+        return []
+    by_id = {row['id']: row for row in translation_rows}
+    errors = []
+    for line_id in {target['line_id'] for target in discovery['targets']} | set(by_id):
+        row = by_id.get(line_id, {})
+        errors.extend(discovery_decision_errors(projected(discovery, [line_id]),
+                                                row.get('source_discovery_decisions', [])))
+    return errors
+
+
+def repair_issues(discovery, lines, translation_rows):
+    """Validated new evidence cannot silently contradict the authoritative gloss."""
+    if discovery is None:
+        return []
+    targets = {target['id']: target for target in discovery['targets']}
+    entries = {entry['entry_id']: entry for entry in discovery['entries']}
+    sources = {line['id']: line for line in lines}
+    issues = []
+    for row in translation_rows:
+        for decision in row.get('source_discovery_decisions', []):
+            if not decision.get('changes_gloss'):
+                continue
+            target = targets[decision['target_id']]
+            entry = entries[decision['entry_id']]
+            source = sources[target['line_id']]
+            issues.append({'kind': 'gloss_sense', 'target_line_ids': [target['line_id']],
+                'references': [{'line_id': target['line_id'], 'domain': 'word_glosses',
+                    'word_indices': target['word_indices'], 'source_quote': source['source_text']}],
+                'explanation': 'New source evidence requires glossary reconsideration: ' + decision['reason'],
+                'evidence': json.dumps({'entry': entry, 'decision': decision}, ensure_ascii=False),
+                'hold_reason': '', 'needed_evidence': ''})
+    return issues
