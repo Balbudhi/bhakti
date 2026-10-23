@@ -25,6 +25,20 @@ def original_evidence_song(transform):
     return directories.pop()
 
 
+def original_archive_snapshot(song):
+    """Required original reader, native formats and source-support files."""
+    import bhakti_pipeline as pipeline
+    import bhakti_library_source_pass as source
+    song = Path(song)
+    names = {'data.js', '.transcription/trim-applied.json',
+        '.transcription/pipeline/01-transcript.json',
+        '.transcription/pipeline/02-transcript-audit.json',
+        '.transcription/pipeline/03-timing.json',
+        str(pipeline.source_witness.cache_path(song).relative_to(song)),
+        *(row['src'] for row in pipeline.listener_audio_sources(song))}
+    return {name: source.file_hash(song / name) if (song / name).is_file() else None for name in names}
+
+
 def _check_original_archive(transform, live_song):
     """Bind durable original evidence, and check live input on fresh admission.
 
@@ -43,19 +57,13 @@ def _check_original_archive(transform, live_song):
         if archive != live_song:
             raise ValueError('boundary original archive requires a bound snapshot')
         return archive  # Legacy declarations only support pre-install replay.
-    names = {'data.js', '.transcription/trim-applied.json',
-        '.transcription/pipeline/01-transcript.json',
-        '.transcription/pipeline/02-transcript-audit.json',
-        '.transcription/pipeline/03-timing.json',
-        str(pipeline.source_witness.cache_path(archive).relative_to(archive)),
-        *transform['native']}
-    if not isinstance(snapshot, dict) or set(snapshot) != names:
+    expected = original_archive_snapshot(archive)
+    if not isinstance(snapshot, dict) or set(snapshot) != set(expected):
         raise ValueError('boundary original archive snapshot is incomplete')
     for directory in {archive, live_song}:
         if {row['src'] for row in pipeline.listener_audio_sources(directory)} != set(transform['native']):
             raise ValueError('boundary original archive/live native population changed')
-        actual = {name: source.file_hash(directory / name)
-            if (directory / name).is_file() else None for name in names}
+        actual = expected if directory == archive else original_archive_snapshot(directory)
         if actual != snapshot:
             raise ValueError('boundary original archive/live snapshot changed')
     return archive
@@ -344,6 +352,7 @@ def staged_source_evidence(transform, original_song, staged_song, reader, flags,
     offset=matches[0]['measurement']['decoded_source_offset_seconds'];duration=evidence['duration_seconds']
     evidence['routing_intervals']=[{'start':max(0.,min(duration,row['start']-offset)),
         'end':max(0.,min(duration,row['end']-offset))} for row in old['routing_intervals']]
+    evidence['routing_intervals_kind'] = 'boundary-projected'
     return evidence
 
 

@@ -269,6 +269,31 @@ class BoundaryTransformAdmission(unittest.TestCase):
         with mock.patch.object(p.gemini,'call',side_effect=AssertionError('connected resume cannot repay')):
             self.assertEqual(self.invoke(),result)
 
+    def test_focused_removed_edge_routes_from_projected_intervals_including_collapsed_hint(self):
+        self.prefix_reader()
+        self.reader['SONG_TIMINGS'][0]['end']=1.
+        self.reader['SONG_TIMINGS'][1]['start']=1.
+        js(self.song/'data.js',self.reader);js(self.target/'data.js',self.reader)
+        value=json.loads(self.transform.read_text());value['before']['reader_sha256']=source.file_hash(self.song/'data.js')
+        self.rewrite_transform(value)
+        self.options.source_requested_stages=['focused-audio-review']
+        self.options.source_review_flags={'audio':True,'occurrence_ids':['occ-000']}
+        before=snapshot(self.song)
+        def hearing(model,key,prompt,**kwargs):
+            previous=self.original_edge_mode
+            self.original_edge_mode=(kwargs['schema_name']=='bhakti_segment_audit'
+                and p.gemini.duration_seconds(Path(kwargs['audio']))<3)
+            try:return self.provider(model,key,prompt,**kwargs)
+            finally:self.original_edge_mode=previous
+        with mock.patch.object(p.gemini,'call',side_effect=hearing):
+            result=self.invoke()
+        self.assertEqual(result['status'],'accepted',result)
+        self.assertEqual(list(result['reader']['SONG_LINES']),['line-0','line-2'])
+        self.assertEqual(snapshot(self.song),before)
+        staged=[row for row in self.audio_requests if not row['original_edge']]
+        self.assertTrue(staged)
+        self.assertTrue(all(row['duration']<20 for row in staged),'edge review must stay within its adjacent context')
+
     def test_measured_private_crop_passes_both_source_admission_guards_and_binds_receipt(self):
         result=self.invoke()
         self.assertEqual(result['status'],'accepted',result)

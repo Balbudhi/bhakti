@@ -1600,7 +1600,7 @@ def plan_audio_review(reader, *, source_evidence, flags, duration_seconds):
                       'prior_evidence': [copy.deepcopy(item) for row in pending for item in row.get('evidence', [])],
                       'expanded_draft': draft})
     elif mode == 'focused':
-        timings = reader.get('SONG_TIMINGS')
+        timings = source_evidence.get('routing_intervals', reader.get('SONG_TIMINGS'))
         if not isinstance(timings, list) or len(timings) != len(sequence):
             raise ValueError('focused audio routing lacks displayed intervals')
         groups = []
@@ -1616,7 +1616,10 @@ def plan_audio_review(reader, *, source_evidence, flags, duration_seconds):
                 if (not isinstance(interval, dict)
                         or any(not isinstance(interval.get(key), (int, float)) or isinstance(interval[key], bool)
                                or not math.isfinite(interval[key]) for key in ('start', 'end'))
-                        or interval['start'] < 0 or interval['end'] <= interval['start']
+                        or interval['start'] < 0 or interval['end'] < interval['start']
+                        or (interval['end'] == interval['start'] and not (
+                            source_evidence.get('routing_intervals_kind') == 'boundary-projected'
+                            and interval['start'] in (0., duration_seconds)))
                         or interval['end'] > duration_seconds + .0005):
                     raise ValueError('invalid existing interval cannot route a focused audio clip')
             if any(timings[left]['end'] > timings[right]['start'] + .0005
@@ -1692,6 +1695,12 @@ def materialize_source_units(plan, evidence, *, duration_seconds):
                 raise ValueError('focused unit lacks exact core routing intervals')
             unit['core_start'] = intervals[min(indices)]['start']
             unit['core_end'] = min(intervals[max(indices)]['end'], duration_seconds)
+            if (unit['core_start'] == unit['core_end']
+                    and evidence.get('routing_intervals_kind') == 'boundary-projected'):
+                # A wholly excluded edge has no remaining routing duration.
+                # Ask within its bounded adjacent context; this creates neither
+                # a retained onset nor authority to delete that occurrence.
+                unit['core_start'], unit['core_end'] = unit['clip_start'], unit['clip_end']
     return units
 
 

@@ -9,6 +9,37 @@ latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
 Current step: finish the connected pipeline before further content releases.
+The bounded connected text comparison is now running privately in
+`/tmp/bhakti-connected-qualification/real-run-preparation/`, under the unchanged
+$1 text/eight-call and $0.05 embedding/twelve-call ceilings. Provider access was
+rechecked successfully; the account reported $21.92318094 remaining before this
+run. That account-wide balance is not a task spending attribution. The previous
+uncertain diagnostic reservation remains untouched. Actual outputs must be read
+before any quality or library-completion claim.
+
+Private historical boundary preparation now connects crop, preserved originals,
+source review, timing and changed-context English review into a separate final
+candidate. It does not install or publish. Independent review reproduced two
+resume defects: a later caller deadline could authorize a not-yet-started stage,
+and altered underlying semantic-route artifacts could escape summary validation.
+Both fixes now pass the 14 preparation tests, including actual interrupted
+storage, Flash-to-Pro review history, targeted English repair, evidence corruption
+and free completed replay. Hearing and language judgments in these tests are
+synthetic; they do not establish real-song acoustic or translation quality.
+This work is independent
+of the text-only comparison, which never invokes historical preparation.
+
+The live diagnostic correctly identifies the extra `true` in Rehnā's gloss and
+English ($0.061293), but its additional objection to `refuge` is not established.
+The source-only reconstruction's glossary ($0.06923475) reproduces that extra
+modifier. More fundamentally, it returned no lexical proposals: the actual
+writer request has no targeted dictionary support, and no dictionary HTTP or
+embedding calls occurred before writing. Configuration alone did not exercise
+the intended hypothesis. The benchmark supplies scoring line IDs but no required
+lookup spans, and ordinary fresh intake allows the same silent opt-out. These
+are demonstrated activation defects to repair before scaling; the ongoing
+bounded outputs remain private and under independent reading.
+
 Explicit lexical support, historical audio-cache compatibility, semantic cache
 reuse, bounded intake and automatic WordNet lookup delivery are integrated.
 Fresh-source semantic processing now shares automatic evidence validation and
@@ -41,9 +72,8 @@ rejects altered archived evidence. Fresh processing still rejects changed live
 inputs. One test assertion initially compared unresolved macOS path aliases;
 canonicalizing both sides fixed that assertion, and its complete replay/tamper
 case passed. Actual hearing judgments and timing measurements in these caller
-tests are synthetic. Automatic historical preparation/installation and qualified
-clock origins remain open; initial historical crop transforms still lack an
-automatic preparation caller.
+tests are synthetic. Automatic historical installation and qualified clock
+origins remain open; the private preparation caller is under review above.
 
 Original-edge membership is now produced automatically through the existing
 source caller when a private crop transform lacks it. The producer hears only
@@ -52,8 +82,8 @@ Flash-to-Pro escalation for a failed question. A new immutable transform binds
 the proof; re-entry reuses the first cropped hearing. The 28 boundary-admission/
 timing checks pass with real media/storage and synthetic hearing judgments,
 including both ends, contradictory hearing, exact lineage, unchanged declaration
-bytes and zero-call resume. Initial historical crop preparation/installation is
-still missing. Sequence-indexed section credits and adaptation markers are now
+bytes and zero-call resume. Historical installation remains missing.
+Sequence-indexed section credits and adaptation markers are now
 remapped through accepted occurrence lineage before generation. The actual
 source-caller regression previously accepted a heading on the wrong surviving
 lyric; it now preserves the heading's source span and exact credit prose.
@@ -105,12 +135,11 @@ assemble the same public allowlist from a stable snapshot. Actual interprocess
 tests verify that FFmpeg preparation occurs outside the install lock. No new
 media upload or deployed-runtime claim follows from these offline checks.
 
-Next: connect the reviewed slices, then inspect bounded representative song
-outputs and their cost before scaling. A private comparison is prepared with
-$1 text and $0.05 embedding caps, but has not run. The earlier benchmark exposed
+Next: inspect the bounded representative song outputs and their cost before
+scaling, and finish historical recovery. The earlier benchmark exposed
 translation weaknesses and does not qualify a broad translation pass. No further
-provider calls or song-content releases have occurred during these integration
-checks. Owner English remains locked. Uncommitted changes are not deployment
+song-content releases have occurred during these integration checks. Owner
+English remains locked. Uncommitted changes are not deployment
 evidence.
 
 Application network permission was revoked while the six parallel workers were
