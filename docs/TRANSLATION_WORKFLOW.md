@@ -134,8 +134,19 @@ and independent review. This is distinct from unresolved source meaning, and
 missing dictionary coverage alone is insufficient. Genuine
 names may remain, with their evidenced literal/traditional meaning and referent
 explained on click. Unknown etymology is not invented. Existing owner English is
-still protected. Shared prompt policy version 7 states these rules and explicitly
+still protected. Shared prompt policy version 8 states these rules and explicitly
 checks inflection, adjectival relationships and connotations, and compound meaning.
+
+Retention is a wording decision after source meaning has been established.
+The glossary still explains the source in English; its legacy
+`preserve_in_english` flag does not choose the new rendering. For a targeted
+lexical decision, `retained_term` must identify the source spelling and exact
+indices, supply an ordinary English paraphrase and explain its consequential
+loss. It cannot claim an English dictionary candidate or invented definition.
+The linked gloss must explain rather than repeat the term. Without targeted
+lexical support, the writer records the same comparison in `choice_note`.
+Independent review checks the comparison, clarity of the explanation and actual
+passage; structural validation alone does not establish that retention is best.
 
 The integrated discovery algorithm compares contextual meaning with
 dictionary **sense definitions**, using embeddings to propose further words.

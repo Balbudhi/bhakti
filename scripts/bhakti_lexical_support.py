@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse, copy, hashlib, json, re
 from pathlib import Path
 import bhakti_lexical_retrieval as lexical
+import gloss_policy
 
 VERSION = 1
 KINDS = {'current_language_usage','traditional_definition','traditional_formation',
@@ -343,6 +344,21 @@ def support_decision_errors(packet,gloss_rows,translation_rows=None):
                         elif kind in {'compositional_phrase','transparent_compound'}:
                             require(isinstance(d.get('ordinary_paraphrase'),str) and d['ordinary_paraphrase'].strip(),'composition needs plain paraphrase')
                             parts=d.get('component_word_indices');require(isinstance(parts,list) and parts and all(isinstance(p,list) and p and all(type(i)is int and i in t['word_indices'] for i in p) for p in parts),'composition members lack source support')
+                        elif kind == 'retained_term':
+                            require(cid is None and refs == [], 'retention cannot claim an English dictionary candidate')
+                            original = ' '.join(t['surfaces'])
+                            require(d['expression'].casefold() == original.casefold(), 'retained expression differs from source spelling')
+                            paraphrase = d.get('ordinary_paraphrase')
+                            require(isinstance(paraphrase, str) and paraphrase.strip()
+                                and not gloss_policy.is_self_referential(original, paraphrase)
+                                and not gloss_policy.is_placeholder_gloss(paraphrase), 'retention needs an explanatory English paraphrase')
+                            words = next((g.get('word_glosses', []) for g in gloss_rows if g['id'] == row['id']), [])
+                            for index in t['word_indices']:
+                                require(index < len(words), 'retained term lacks a linked source gloss')
+                                word = words[index]; meaning = word.get('gloss', '')
+                                require(isinstance(meaning, str) and meaning.strip()
+                                    and not gloss_policy.is_self_referential(word.get('roman', ''), meaning)
+                                    and not gloss_policy.is_placeholder_gloss(meaning), 'retained term needs an explanatory clickable gloss')
                         else:raise ValueError('invalid wording kind')
                 except (ValueError,KeyError,TypeError) as exc:errors.append(key+': '+str(exc))
         missing=set(targets)-seen
@@ -384,7 +400,7 @@ def prompt(packet, target_ids, stage):
                     score.pop('part_scores', None)
                     score.pop('group_scores', None)
     instruction=('Return support_decisions only for targeted lines: target_id, used_evidence_ids, role (operative_meaning, activated_image, background_only), reason. Background evidence cannot establish an inherited-language sense.' if stage=='gloss' else
-        'Return wording_decisions only for targeted lines: target_id, chosen_candidate_id (null for a new composition), expression, kind (word, compositional_phrase, transparent_compound), english_evidence_ids, reason, word_indices, ordinary_paraphrase, component_word_indices. Prefer precise intelligible English. Compare word, phrase and transparent compound by meaning, image, connotation and tone, not a mandatory phrase-failure rule. A dictionary sense is not proof of its fit here.' if stage=='translation' else
+        'Return wording_decisions only for targeted lines: target_id, chosen_candidate_id (null for a new composition or retained term), expression, kind (word, compositional_phrase, transparent_compound, retained_term), english_evidence_ids, reason, word_indices, ordinary_paraphrase, component_word_indices. Prefer precise intelligible English. Compare word, phrase and transparent compound by meaning, image, connotation and tone, not a mandatory phrase-failure rule. If retention avoids consequential distortion, use retained_term with the exact source Roman spelling, null candidate, empty English evidence and component arrays, an English ordinary_paraphrase, and a reason explaining what the best English rendering loses. The linked gloss must explain the meaning. A dictionary sense is not proof of its fit here.' if stage=='translation' else
         'Independently check source and wording decisions against these exact witnesses, passage grammar and English. Reject unsupported inherited meanings, unwanted connotations, opaque compounds and gloss/English disagreement. Writer decisions are claims, not authority. Preserve owner English; report alternatives privately.')
     return '\nTARGETED LEXICAL SUPPORT:\n'+json.dumps(projected,ensure_ascii=False,separators=(',',':'))+'\n'+instruction+'\n'
 
@@ -394,7 +410,7 @@ def extend_schema(schema,packet,stage):
     string={'type':'string'};ints={'type':'array','items':{'type':'integer'}};strings={'type':'array','items':string}
     fields={'target_id':string,'reason':string}
     if stage=='gloss':fields.update(used_evidence_ids=strings,role={'type':'string','enum':['operative_meaning','activated_image','background_only']})
-    else:fields.update(chosen_candidate_id={'type':['string','null']},expression=string,kind={'type':'string','enum':['word','compositional_phrase','transparent_compound']},english_evidence_ids=strings,word_indices=ints,ordinary_paraphrase=string,component_word_indices={'type':'array','items':ints})
+    else:fields.update(chosen_candidate_id={'type':['string','null']},expression=string,kind={'type':'string','enum':['word','compositional_phrase','transparent_compound','retained_term']},english_evidence_ids=strings,word_indices=ints,ordinary_paraphrase=string,component_word_indices={'type':'array','items':ints})
     schema['properties'][rows]['items']['properties'][field]={'type':'array','items':{'type':'object','properties':fields,'required':list(fields),'additionalProperties':False}}
     return schema
 

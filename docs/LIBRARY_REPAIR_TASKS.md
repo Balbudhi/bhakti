@@ -71,9 +71,12 @@ evidence.
 Application network permission was revoked while the six parallel workers were
 running. Their private files remain available for local recovery; no worker
 completion or live qualification is inferred from the interruption. Local
-integration can continue. The shared difficult-term policy now permits explained
-retention when English would distort meaning; the older writer restriction and
-structured retention decisions still need the matching caller change.
+integration can continue. Difficult-term policy version 8 is now connected to
+the writer, lexical decision validation and reviewer: explained contextual
+retention is allowed without an invented English dictionary entry or a forced
+misleading substitute. The glossary remains meaning-first and owner English
+stays locked. Four new retention controls plus existing lexical/cache controls
+pass 59 tests; these establish transport and validation, not linguistic quality.
 
 The owner reconfirmed this full goal and requested an exhaustive task list on
 23 October. The existing goal remains active; this document is the maintained

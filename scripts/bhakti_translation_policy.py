@@ -12,7 +12,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 7
+POLICY_VERSION = 8
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
