@@ -232,7 +232,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kōī jāḷō ghara āpaṇō rē jōgiyā jiyō, calō hamārē sātha",
-    "english": "{0:Whoever }{1:burns }{3:their own }{2:house, }{4,5,6:O noble ascetic, }{7:walk }{8,9:with us.}",
+    "english": "{0:Whoever you are, }{1:burn }{3:your own }{2:house, }{4,5,6:O noble ascetic; }{7:walk }{8,9:with us.}",
     "words": [
       {
         "roman": "kōī",
@@ -242,7 +242,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāḷō",
-        "gloss": "burns; let one burn",
+        "gloss": "burn; an invitation or command",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -295,7 +295,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conditional subjunctive clause kōī jāḷō ghara āpaṇō coupled with the main imperative clause calō hamārē sātha."
+    "grammarNote": "An open invitation addressed to an unspecified listener: burn your own house and walk with us. The two verbs jāḷō and calō address that listener."
   },
   "refrain-1": {
     "source": "कै राम रस",
@@ -678,7 +678,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ēka acambhō maiṁ dēkhiyō rē jōgiyā jiyō, maḍhō kāla nē khāya",
-    "english": "{0,1:A wonder }{2,3:I saw, }{4,5,6:O noble ascetic: }{7:the hut }{10:devours }{8,9:Death.}",
+    "english": "{2,3:I saw }{0,1:a wonder, }{4,5,6:O noble ascetic: }{7:a dead body }{10:devours }{8,9:Death.}",
     "words": [
       {
         "roman": "ēka",
@@ -724,7 +724,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maḍhō",
-        "gloss": "hut; mortal earthen shrine",
+        "gloss": "dead body; corpse",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -838,7 +838,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āgē āgē dhāva jaḷē rē jōgiyā jiyō, pīchē hariyā hōya",
-    "english": "{0,1:Ahead and ahead }{2:the wildfire }{3:burns, }{4,5,6:O noble ascetic, }{7:and behind, }{9:it turns }{8:green.}",
+    "english": "{0:Ahead, }{1:ever ahead, }{2:the wildfire }{3:burns, }{4,5,6:O noble ascetic; }{7:behind, }{9:it turns }{8:green.}",
     "words": [
       {
         "roman": "āgē",
@@ -969,11 +969,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "balihārī una rūkhaṛī rē jōgiyā jiyō, jaṛa kāṭō phala hōya",
-    "english": "{0:Praise be }{1:to that }{2:tree, }{3,4,5:O noble ascetic: }{6,7:cut the root, }{9:and it bears }{8:fruit.}",
+    "english": "{0:I offer myself }{1:to that }{2:little tree, }{3,4,5:O noble ascetic: }{6,7:cut its root, }{9:and it bears }{8:fruit.}",
     "words": [
       {
         "roman": "balihārī",
-        "gloss": "devoted offering; praised be",
+        "gloss": "I offer myself in devotion; an expression of self-surrender",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -985,7 +985,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rūkhaṛī",
-        "gloss": "wondrous tree; little tree",
+        "gloss": "little tree",
         "concept_key": "",
         "preserve_in_english": false
       },

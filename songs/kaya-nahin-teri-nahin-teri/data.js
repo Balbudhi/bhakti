@@ -290,7 +290,7 @@ window.SONG_LINES = {
     "source": "ये तो होवेगी कुरबानी",
     "sourceLanguage": "hi",
     "roman": "Ye to hovegī kurabānī",
-    "english": "{0:This life }{1,2:will surely be }{3:surrendered.}",
+    "english": "{0:This life }{1,2:will surely be }{3:sacrificed.}",
     "words": [
       {
         "roman": "Ye",
@@ -306,7 +306,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kurabānī",
-        "gloss": "sacrifice / destruction / surrendered [fem.]"
+        "gloss": "sacrifice; sacrificed"
       }
     ],
     "grammarNote": "Dialectal future verb form 'hovegī' (standard Hindi 'hogī') agreeing with feminine singular noun 'kurabānī'.",

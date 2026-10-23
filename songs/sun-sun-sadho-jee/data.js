@@ -515,7 +515,7 @@ window.SONG_LINES = {
     "source": "जोग जुगत नहिं पावे",
     "sourceLanguage": "hi",
     "roman": "joga jugata nahiṁ pāve",
-    "english": "{0:Yoga }{1:and clever technique }{2:cannot }{3:attain Him.}",
+    "english": "{0:Yoga }{1:and technique }{2:cannot }{3:attain Him.}",
     "words": [
       {
         "roman": "joga",
@@ -1064,7 +1064,7 @@ window.SONG_LINES = {
     "source": "जंतर मंतर लटपट होवे",
     "sourceLanguage": "hi",
     "roman": "jantara mantara laṭapaṭa hove",
-    "english": "{0:Mystic charms }{1:and incantations }{3:become }{2:hopelessly tangled.}",
+    "english": "{0:Mystic charms }{1:and incantations }{3:become }{2:tangled.}",
     "words": [
       {
         "roman": "jantara",

@@ -223,7 +223,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Gagan",
-        "gloss": "sky; firmament; inner space",
+        "gloss": "sky; firmament",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -473,13 +473,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "pānī",
-        "gloss": "water; primal fluid",
+        "gloss": "water",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pānī",
-        "gloss": "water; primal fluid",
+        "gloss": "water",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -838,7 +838,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahē Kabīr sunō bhāī sādhō jāyē agam kī bānī rē",
-    "english": "{0:Says }{1:Kabīr, }{2:listen, }{3:O brother }{4:seekers: }{8:the word }{7:of the }{6:unfathomable }{5:goes forth, }{9:O!}",
+    "english": "{0:Says }{1:Kabīr: }{2:listen, }{3:O brothers, }{4:O seekers—}{8:the word }{7:of the }{6:unfathomable }{5:goes forth, }{9:O!}",
     "words": [
       {
         "roman": "Kahē",
@@ -872,7 +872,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāyē",
-        "gloss": "goes; reaches; resounds",
+        "gloss": "goes; goes forth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -943,7 +943,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Jāyē",
-        "gloss": "goes; reaches; resounds",
+        "gloss": "goes; goes forth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1396,7 +1396,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Gagan",
-        "gloss": "sky; firmament; inner space",
+        "gloss": "sky; firmament",
         "concept_key": "",
         "preserve_in_english": false
       },

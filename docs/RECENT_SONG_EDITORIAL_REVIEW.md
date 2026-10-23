@@ -54,3 +54,29 @@ Per-reader original/final snapshots and exact field changes are retained private
 A further read found that the earlier correction still left the opening Lord-subject descriptions without a complete predicate in several stanzas. All ten causal openings now complete the entry clause and connect its consequence with “therefore.” This preserves the causal relation of `pukunta ataṉāl` without pretending the Tamil participle itself is finite. The fifth stanza now gives its fear predicate an explicit grammatical subject; two objectless “afflict” clauses use “cause harm.”
 
 The follow-up changes 18 English fields, three matching glosses and three grammar notes. Two reviewers read all 49 definitions and all 11 complete resulting verses. Source script, Romanization, source-word mapping, metadata, performance order and timings remain exact. The 390px and 1440px reader checks show no overflow; the causal popup matches the displayed connective. All 49 seek controls reach their retained timestamps. This verifies interaction, not a fresh listening certification. Original and final evidence is retained under `.transcription/editorial-causal-repair-20261022/`.
+
+
+## Parallel Kabīr and related-reader correction — 22 October 2026
+
+Read 221 unique lyric definitions across 15 readers; retained the three readers without a demonstrated correction. Applied 123 reviewed field corrections across 72 definitions in the remaining 12 readers, including 44 English fields. A second reviewer checked each proposal against the source and context; the lead adjudicated syntax and sense disagreements before applying it.
+
+| Reader | Definitions corrected | English fields |
+| --- | ---: | ---: |
+| sangat-santan-ki-karle | 3 | 3 |
+| kaya-nahin-teri-nahin-teri | 1 | 1 |
+| auga-na-jauga | 2 | 2 |
+| rehna-nahi-isa-desa | 5 | 4 |
+| mat-kar-moh-too-hari-bhajan-ko-maan-re | 7 | 7 |
+| sun-sun-sadho-jee | 2 | 2 |
+| ye-tanu-mundna-be-mundna | 3 | 2 |
+| kya-tan-majhata | 7 | 7 |
+| rama-rasa | 4 | 4 |
+| mana-masta-hua | 9 | 7 |
+| nirguna-galiya | 24 | 4 |
+| sunta-hai | 5 | 1 |
+
+Concrete corrections include the sacrifice image in Kāyā, the beneficiary in Saṅgat, complete rhetorical/finite clauses in Āū̃gā, transience and refuge in Rehnā, the corpse devouring Death and self-offering in Rāma Rasa, and funeral-litter agency in Kyā Tan Mā̃jhatā. Popup senses were reconciled with the English, including spiritual teacher, bonfire, and the removal of asserted anatomical or cosmological interpretations from literal word glosses. The official Sounds of Isha description of Rāma Rasa corroborates the dead subject eating time; the English is our source-derived wording, not copied translation.
+
+All 12 reader contracts pass. Exact comparisons preserve metadata, source script, Romanization, source-word maps, performance order, repeats, and every timestamp. Protected owner English remains exact. In-app browser checks at 390px and 1440px show no horizontal overflow or exposed mapping markup; the corrected corpse popup opens its matching gloss. No audio was retranscribed or retimed for this text batch, and this is not a new listening certificate. Full contract inspection retains six legacy/unbuilt directories; YouTube trim audit checks 111 with no failures.
+
+Remaining source-sensitive issues include Sunta’s relative-clause/pickup readings, Kyā’s āsā/pāsā, Ye Tanu’s muṇḍanā and unstated object, Rāma Rasa’s dīyā/liyo, and the Pattā repeated-couplet timing ambiguity. They were not guessed away. Hari/name consistency remains separate. Private before/after evidence is retained per reader under `.transcription/editorial-fast-pass-20261022/`.

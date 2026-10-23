@@ -214,7 +214,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pavan chale uṛ jānā re pagle o",
-    "english": "{0:When the vital breath }{1:departs, }{2,3:it will fly away, }{4:O }{5:foolish one, }{6:O.}",
+    "english": "{1:When }{0:the vital breath }{1:departs, }{2,3:it will fly away, }{4:O }{5:foolish one, }{6:O.}",
     "words": [
       {
         "roman": "Pavan",
@@ -339,7 +339,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pavan chale uṛ jānā re pagle samay chūk pachtānā, samay chūk pachtānā",
-    "english": "{0:When the vital breath }{1:departs, }{2,3:it will fly away, }{4:O }{5:foolish one; }{7:having missed }{6:the moment, }{8:you will regret it, }{10:having missed }{9:the moment, }{11:you will regret it.}",
+    "english": "{1:When }{0:the vital breath }{1:departs, }{2,3:it will fly away, }{4:O }{5:foolish one; }{7:having missed }{6:the moment, }{8:you will regret it, }{10:having missed }{9:the moment, }{11:you will regret it.}",
     "words": [
       {
         "roman": "Pavan",
@@ -476,7 +476,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chār janā mil gaṛhī banāī chaṛhā kāṭh kī ḍolī",
-    "english": "{0:Four }{1:people }{2:joined together }{4:and made }{3:a bier, }{5:mounting it onto }{8:the palanquin }{7:of }{6:wood.}",
+    "english": "{0:Four }{1:people }{2:joined together }{4:and made }{3:a bier; }{5:you mounted }{8:the palanquin }{7:of }{6:wood.}",
     "words": [
       {
         "roman": "Chār",
@@ -510,7 +510,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "chaṛhā",
-        "gloss": "mounted / placed upon",
+        "gloss": "mounted / got onto (the funeral litter)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -533,7 +533,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "mil is a conjunctive participle ('having gathered'); banāī is feminine singular perfective agreeing with gaṛhī; chaṛhā is an Ergative-less past transitive or passive-style construction with kāṭh kī ḍolī."
+    "grammarNote": "mil is a conjunctive participle ('having gathered'); banāī is feminine singular perfective agreeing with gaṛhī. The following chaṛhā is masculine singular perfective of chaṛhnā ('mount / get onto'), with the addressed mortal understood as its subject and kāṭh kī ḍolī as the conveyance. English makes the change of subject explicit."
   },
   "v2-charo-taraf-1": {
     "source": "चारों तरफ से आग लगा दी ओ",
@@ -583,7 +583,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chāroñ taraf se āg lagā dī o",
-    "english": "{2:From }{0:all four }{1:sides }{4,5:they set }{3:fire, }{6:O.}",
+    "english": "{2:From }{0:all four }{1:sides }{4,5:they lit }{3:a fire, }{6:O.}",
     "words": [
       {
         "roman": "Chāroñ",
@@ -732,7 +732,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chāroñ taraf se āg lagā dī phūñk diye re jas holī, phūñk diye re jas holī",
-    "english": "{2:From }{0:all four }{1:sides }{4,5:they set }{3:fire }{6,7:and burned it to ash, }{8:O, }{9:just like }{10:Holi, }{11,12:burned it to ash, }{13:O, }{14:just like }{15:Holi.}",
+    "english": "{2:From }{0:all four }{1:sides }{4,5:they lit }{3:a fire }{6,7:and burned it to ash, }{8:O, }{9:just like }{10:a Holi bonfire, }{11,12:burned it to ash, }{13:O, }{14:just like }{15:a Holi bonfire.}",
     "words": [
       {
         "roman": "Chāroñ",
@@ -796,7 +796,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "holī,",
-        "gloss": "spring festival of colour, bonfires, and renewal",
+        "gloss": "the bonfire kindled at the spring festival of Holi",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -826,7 +826,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "holī",
-        "gloss": "spring festival of colour, bonfires, and renewal",
+        "gloss": "the bonfire kindled at the spring festival of Holi",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -899,7 +899,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hāṛ jale jaise ban kī lakaṛiyāñ kes jale jaise ghāsā",
-    "english": "{0:Bones }{1:burn }{2:like }{5:firewood }{4:from the }{3:forest; }{6:hair }{7:burns }{8:like }{9:dry grass.}",
+    "english": "{0:Bones }{1:burn }{2:like }{5:firewood }{4:from the }{3:forest; }{6:hair }{7:burns }{8:like }{9:grass.}",
     "words": [
       {
         "roman": "Hāṛ",
@@ -957,7 +957,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ghāsā",
-        "gloss": "dry grass / straw",
+        "gloss": "grass (poetic form of ghās)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1482,7 +1482,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Janam-janam terī mātā roye koī na āye āsā, koī na āye ā...",
-    "english": "{0:Lifetime after lifetime }{1:your }{2:mother }{3:weeps; }{5:no }{4:one }{6:comes }{7:to your aid, }{9:no }{8:one }{10:comes }{11:to your aid...}",
+    "english": "{0:Lifetime after lifetime }{1:your }{2:mother }{3:weeps; }{5:no }{4:one }{6:comes }{7:to your aid, }{9:no }{8:one }{10:comes }{11:ah...}",
     "words": [
       {
         "roman": "Janam-janam",
@@ -1552,12 +1552,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "ā...",
-        "gloss": "to aid... / of help...",
+        "gloss": "sustained open vowel; no completed lexical word",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "āsā is dialectal for āśā / sahārā ('hope / succor / reliance'); ā... is the trailing vocalic repetition of āsā in performance cadence; koī na āye is an indefinite negative construction."
+    "grammarNote": "koī na āye is an indefinite negative construction ('no one comes'). The final ā... is a sustained open vowel, not a completed lexical word."
   }
 };
 

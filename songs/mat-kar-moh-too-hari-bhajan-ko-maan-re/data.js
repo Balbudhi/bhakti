@@ -88,7 +88,7 @@ window.SONG_LINES = {
     "source": "हरि भजन को मान ले",
     "sourceLanguage": "hi",
     "roman": "hari bhajana ko māna le",
-    "english": "{3,4:Take }{1:the worship }{0,2:of Hari }{3,4:to heart.}",
+    "english": "{3,4:Take }{1,2:the worship }{0:of Hari }{3,4:to heart.}",
     "words": [
       {
         "roman": "hari",
@@ -149,7 +149,7 @@ window.SONG_LINES = {
     "source": "हरि भजन को मान रे",
     "sourceLanguage": "hi",
     "roman": "hari bhajana ko māna re",
-    "english": "{3:Heed }{1:the worship }{0,2:of Hari, }{4:O mind.}",
+    "english": "{3:Heed }{1,2:the worship }{0:of Hari}{4:!}",
     "words": [
       {
         "roman": "hari",
@@ -169,7 +169,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "re",
-        "gloss": "O [vocative particle addressing the mind/soul]"
+        "gloss": "vocative/emphatic particle calling the listener’s attention"
       }
     ],
     "grammarNote": "Simple imperative 'māna' with direct object marked by 'ko' and closing vocative enclitic 're'.",
@@ -271,7 +271,7 @@ window.SONG_LINES = {
     "source": "श्रवण दिये सुन ज्ञान रे",
     "sourceLanguage": "hi",
     "roman": "śravaṇa diye suna jñāna re",
-    "english": "{0:Ears }{1:were given }{2:to listen to }{3:spiritual wisdom, }{4:O mind}",
+    "english": "{0:Ears }{1:were given }{2:to listen to }{3:spiritual wisdom}{4:!}",
     "words": [
       {
         "roman": "śravaṇa",
@@ -403,7 +403,7 @@ window.SONG_LINES = {
     "source": "हाथ दिये कर दान रे",
     "sourceLanguage": "hi",
     "roman": "hātha diye kara dāna re",
-    "english": "{0:Hands }{1:were given }{2:to practice }{3:charity, }{4:O mind.}",
+    "english": "{0:Hands }{1:were given }{2:to practice }{3:charity}{4:!}",
     "words": [
       {
         "roman": "hātha",
@@ -464,7 +464,7 @@ window.SONG_LINES = {
     "source": "कहत कबीर सुनो भाई साधो",
     "sourceLanguage": "hi",
     "roman": "kahata kabīra suno bhāī sādho",
-    "english": "{1:Kabīr }{0:says: }{2:listen, }{3:O brother }{4:seekers.}",
+    "english": "{1:Kabīr }{0:says: }{2:listen, }{3:O brothers, }{4:O seekers!}",
     "words": [
       {
         "roman": "kahata",
@@ -546,7 +546,7 @@ window.SONG_LINES = {
     "source": "सुनो भाई साधो साधो",
     "sourceLanguage": "hi",
     "roman": "suno bhāī sādho sādho",
-    "english": "{0:Listen, }{1:O brother }{2:seekers—}{3:O seekers.}",
+    "english": "{0:Listen, }{1:O brothers, }{2:O seekers—}{3:O seekers!}",
     "words": [
       {
         "roman": "suno",
@@ -628,7 +628,7 @@ window.SONG_LINES = {
     "source": "कंचन निपजत खान रे",
     "sourceLanguage": "hi",
     "roman": "kañcana nipajata khāna re",
-    "english": "{0:Gold }{1:arises }{2:from the mine, }{3:O mind.}",
+    "english": "{0:Gold }{1:arises }{2:from the mine}{3:!}",
     "words": [
       {
         "roman": "kañcana",

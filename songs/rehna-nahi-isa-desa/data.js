@@ -124,7 +124,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rahanā nahīṁ isa desa meṁ",
-    "english": "{0,1:One must not dwell }{4:in }{2:this }{3:land}",
+    "english": "{0,1:There is no staying }{4:in }{2:this }{3:land}",
     "words": [
       {
         "roman": "rahanā",
@@ -157,7 +157,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Infinitive 'rahanā' with negative particle 'nahīṁ' functions as an impersonal deontic modal construction ('one must not dwell')."
+    "grammarNote": "The infinitive 'rahanā' with 'nahīṁ' is read here as the impossibility of remaining: 'there is no staying'. The following images of fragile paper and burning brush support this statement of impermanence; no first-person subject is supplied."
   },
   "refrain-2": {
     "source": "रहना नहीं इस देस में, देस ये वीराना है",
@@ -219,7 +219,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai",
-    "english": "{0,1:One must not dwell }{4:in }{2:this }{3,4:land, }{6:this }{5:land }{8:is }{7:a desolate wilderness}",
+    "english": "{0,1:There is no staying }{4:in }{2:this }{3:land, }{6:this }{5:land }{8:is }{7:a desolate wilderness}",
     "words": [
       {
         "roman": "rahanā",
@@ -276,7 +276,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Two coordinate clauses: first clause is an impersonal modal prohibition ('rahanā nahīṁ isa desa meṁ'), second is a copular clause ('desa ye vīrānā hai') with postnominal demonstrative 'ye' for poetic emphasis."
+    "grammarNote": "Two coordinate clauses: the infinitive with negation states that there is no staying in this land, followed by the copular clause 'desa ye vīrānā hai'. The postposed demonstrative 'ye' modifies 'desa'; 'vīrānā' is rendered as the predicate noun phrase 'a desolate wilderness'."
   },
   "refrain-des-veerana": {
     "source": "देस ये वीराना है",
@@ -444,7 +444,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "būnda paṛē ḍhala jānā hai",
-    "english": "{0:Upon a drop }{1:falling, }{4:it is bound }{2,3:to dissolve}",
+    "english": "{0:Upon a drop }{1:falling, }{4:it is bound }{2,3:to flow away}",
     "words": [
       {
         "roman": "būnda",
@@ -460,7 +460,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍhala",
-        "gloss": "dissolving; slipping away; melting down",
+        "gloss": "flow down; run down; decline",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -477,7 +477,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'būnda paṛē' is an oblique/absolutive participial construction serving as a conditional time clause ('upon a drop falling'). 'ḍhala jānā' is an intransitive telic compound verb (ḍhalnā + jānā); combined with 'hai', it expresses inevitable certainty."
+    "grammarNote": "'būnda paṛē' is a conditional clause ('when a drop falls'). 'ḍhala jānā' combines ḍhalnā with the completive auxiliary jānā; the infinitive with hai expresses the ensuing outcome. Here ḍhalnā retains its sense of flowing or running down."
   },
   "verse-2-line-1": {
     "source": "ये संसार झाड़ो-झींखर",
@@ -595,7 +595,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'āga lagē' is an absolutive/oblique construction functioning as a conditional clause ('upon fire catching'). 'jala jānā' is a completive compound verb (jalnā + jānā) with auxiliary 'hai' conveying destined outcome."
+    "grammarNote": "'āga lagē' is a conditional clause ('when fire catches'). 'jala jānā' combines jalnā ('burn') with the completive auxiliary jānā; the infinitive with hai presents the outcome as inevitable."
   },
   "verse-3-line-1": {
     "source": "कहत कबीर सुनो भाई साधो",
@@ -698,7 +698,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sataguru nāma ṭhikānā hai",
-    "english": "{0:The true Guru's }{1:Name }{3:is }{2:the true refuge}",
+    "english": "{0:The true Guru's }{1:Name }{3:is }{2:the refuge}",
     "words": [
       {
         "roman": "sataguru",
@@ -714,7 +714,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ṭhikānā",
-        "gloss": "true resting place; refuge; destination",
+        "gloss": "resting place; refuge; destination",
         "concept_key": "",
         "preserve_in_english": false
       },

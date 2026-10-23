@@ -786,7 +786,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Fanā kaisī baqā kaisī jab us ke āšnā ṭhahre",
-    "english": "{1:What}{0: annihilation?}{3: What}{2: subsistence?}{4: When}{8: we have become}{5,6: His}{7: intimates!}",
+    "english": "{1:What}{0: annihilation,}{3: what}{2: subsistence,}{4: when}{8: we have become}{5,6: His}{7: intimates?}",
     "words": [
       {
         "roman": "Fanā",
@@ -923,7 +923,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kabhī us ghar meṅ ā baiṭhe kabhī is ghar meṅ ā baiṭhe",
-    "english": "{0:At times}{4,5: coming to settle}{3: in}{1,2: that house,}{6: at times}{10,11: coming to settle}{9: in}{7,8: this house,}",
+    "english": "{0:At times}{4,5: we came and settled}{3: in}{1,2: that house,}{6: at times}{10,11: we came and settled}{9: in}{7,8: this house.}",
     "words": [
       {
         "roman": "Kabhī",

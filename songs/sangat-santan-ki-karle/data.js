@@ -272,7 +272,7 @@ window.SONG_LINES = {
     "source": "प्राणी इसका हित कछु कर ले",
     "sourceLanguage": "hi",
     "roman": "Prāṇī iskā hit kachu kar le",
-    "english": "{0:O living being, }{4,5:do }{3:some }{2:good }{1:with it.}",
+    "english": "{0:O living being, }{4,5:do }{3:something }{1,2:for its good.}",
     "words": [
       {
         "roman": "Prāṇī",
@@ -722,7 +722,7 @@ window.SONG_LINES = {
     "source": "कौन किसी के जोरू लड़के",
     "sourceLanguage": "hi",
     "roman": "Kaun kisī ke jorū laṛke",
-    "english": "{1,2:To whom do }{3:wife }{4:and children }{0:belong?}",
+    "english": "{0,1,2:To whom do }{3:wife }{4:and children }{0,1,2:belong?}",
     "words": [
       {
         "roman": "Kaun",
@@ -793,7 +793,7 @@ window.SONG_LINES = {
     "source": "कौन किसी के साले",
     "sourceLanguage": "hi",
     "roman": "Kaun kisī ke sāle",
-    "english": "{1,2:To whom do }{3:brothers-in-law }{0:belong?}",
+    "english": "{0,1,2:To whom do }{3:brothers-in-law }{0,1,2:belong?}",
     "words": [
       {
         "roman": "Kaun",

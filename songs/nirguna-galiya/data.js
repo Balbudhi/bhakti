@@ -121,7 +121,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -448,7 +448,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "re,",
-        "gloss": "vocative particle,",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -466,7 +466,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -591,7 +591,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "re,",
-        "gloss": "vocative particle,",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -609,7 +609,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -710,7 +710,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -793,7 +793,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -805,7 +805,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -876,7 +876,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -888,7 +888,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -977,7 +977,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1007,7 +1007,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "re,",
-        "gloss": "vocative particle,",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1025,7 +1025,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1120,7 +1120,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1150,7 +1150,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "re,",
-        "gloss": "vocative particle,",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1168,7 +1168,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1293,7 +1293,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1388,7 +1388,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1400,7 +1400,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1471,7 +1471,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1483,7 +1483,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1584,7 +1584,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1626,7 +1626,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "o,",
-        "gloss": "vocative particle, (O,)",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1644,7 +1644,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1781,7 +1781,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "o,",
-        "gloss": "vocative particle, (O,)",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1799,7 +1799,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1906,7 +1906,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2049,7 +2049,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2134,7 +2134,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ sugurā mānav to saudo karai mhārī helī",
-    "english": "{0:Yes, }{1:the guided }{2:person }{3:indeed }{4,5:makes the trade, }{6:my }{7:companion.}",
+    "english": "{0:Yes, }{2:a person }{1:with a spiritual teacher }{3:indeed }{4,5:makes the trade, }{6:my }{7:companion.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2144,7 +2144,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sugurā",
-        "gloss": "one with a true Guru; guided disciple",
+        "gloss": "one who has a spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2301,11 +2301,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sugurā mānav to saudo karai mhārī helī, ī to nugurā mūl gam̐vāy mhārī helī o, cālo mhārā deś",
-    "english": "{0:The guided }{1:person }{2:indeed }{3,4:makes the trade, }{5:my }{6:companion, }{7,8:while }{9:the unguided }{11:loses }{10:their capital, }{14:O }{12:my }{13:companion, }{15:let us go }{16:to my }{17:country.}",
+    "english": "{1:A person }{0:with a spiritual teacher }{2:indeed }{3,4:makes the trade, }{5:my }{6:companion; }{8:but }{7:the one }{9:without a spiritual teacher }{11:loses }{10:their capital. }{14:O }{12:my }{13:companion, }{15:let us go }{16:to my }{17:country.}",
     "words": [
       {
         "roman": "Sugurā",
-        "gloss": "one with a true Guru; guided disciple",
+        "gloss": "one who has a spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2341,7 +2341,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2359,7 +2359,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nugurā",
-        "gloss": "one without a Guru; unguided person",
+        "gloss": "one without a spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2389,7 +2389,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "o,",
-        "gloss": "vocative particle, (O,)",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2407,7 +2407,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2498,7 +2498,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O ho anhad kā maidān mẽ mhārī helī, mhārā sāhib jī kī sej",
-    "english": "{0,1:O, }{5:in }{4:the vast expanse }{2,3:of the unstruck sound, }{6:my }{7:companion, }{12:is the couch }{8,11:of my }{9,10:Lord.}",
+    "english": "{0,1:O, }{5:in }{4:the vast expanse }{2,3:of the unstruck sound, }{6:my }{7:companion, }{12:is the bed }{8,11:of my }{9,10:Lord.}",
     "words": [
       {
         "roman": "O",
@@ -2544,7 +2544,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2574,7 +2574,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sej",
-        "gloss": "couch; bridal bed / resting seat",
+        "gloss": "bed; resting place",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2659,7 +2659,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ anhad kā maidān mẽ mhārī helī, mhārā sāhib jī kī sej",
-    "english": "{0:Yes, }{4:in }{3:the vast expanse }{1,2:of the unstruck sound, }{5:my }{6:companion, }{11:is the couch }{7,10:of my }{8,9:Lord.}",
+    "english": "{0:Yes, }{4:in }{3:the vast expanse }{1,2:of the unstruck sound, }{5:my }{6:companion, }{11:is the bed }{7,10:of my }{8,9:Lord.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2699,7 +2699,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2729,7 +2729,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sej",
-        "gloss": "couch; bridal bed / resting seat",
+        "gloss": "bed; resting place",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2991,7 +2991,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend,",
+        "gloss": "female companion; friend",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3045,7 +3045,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "o,",
-        "gloss": "vocative particle, (O,)",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3063,12 +3063,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Correlative negative construction 'na to mare na būṛhā hoy' defining the deathless, unaging nature of the satyavatan / amaraloka."
+    "grammarNote": "na ... na coordinates the two negations: neither dying nor growing old. hoy supplies becoming/growing with būṛhā. The subject is implicit; the English supplies one without naming a realm absent from this line."
   },
   "line-24": {
     "source": "ल्यो तो यहीं उजाला होय म्हारी हेली ओ, चालो म्हारा देश",
@@ -3158,7 +3158,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yahī̃",
-        "gloss": "right here; within this very body",
+        "gloss": "right here; in this very place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3188,7 +3188,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "o,",
-        "gloss": "vocative particle, (O,)",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3206,7 +3206,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3349,7 +3349,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "o,",
-        "gloss": "vocative particle, (O,)",
+        "gloss": "O; a particle of direct address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3373,7 +3373,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3432,7 +3432,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3503,7 +3503,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; true spiritual realm",
+        "gloss": "country; land",
         "concept_key": "",
         "preserve_in_english": false
       }

@@ -259,7 +259,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "khode",
-        "gloss": "dig / knead / trample",
+        "gloss": "dig / dig up",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -367,7 +367,7 @@ window.SONG_LINES = {
     "source": "कोई बखत ऐसा आवेगा कि",
     "sourceLanguage": "hi",
     "roman": "Koī bakhat aisā āvegā ki",
-    "english": "{2:Such }{0,1:a time }{3:will come }{4:that}",
+    "english": "{0,1:A time }{3:will come }{2,4:when}",
     "words": [
       {
         "roman": "Koī",
@@ -615,7 +615,7 @@ window.SONG_LINES = {
     "source": "कोई बखत ऐसा आवेगा कि",
     "sourceLanguage": "hi",
     "roman": "Koī bakhat aisā āvegā ki",
-    "english": "{2:Such }{0,1:a time }{3:will come }{4:that}",
+    "english": "{0,1:A time }{3:will come }{2,4:when}",
     "words": [
       {
         "roman": "Koī",

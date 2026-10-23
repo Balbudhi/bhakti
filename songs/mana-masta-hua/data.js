@@ -398,7 +398,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mana masta huā phira kyā bōlē",
-    "english": "{0:The mind }{1,2:became ecstatic; }{3:then }{4:what }{5:can it speak?}",
+    "english": "{0:The mind }{1,2:became ecstatic; }{3:then }{4:what }{5:can it say?}",
     "words": [
       {
         "roman": "Mana",
@@ -475,7 +475,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kyā bōlē phira kyā bōlē",
-    "english": "{0:What }{1:can it speak, }{2:then }{3:what }{4:can it speak?}",
+    "english": "{0:What }{1:can it say? }{2:Then }{3:what }{4:can it say?}",
     "words": [
       {
         "roman": "Kyā",
@@ -546,7 +546,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Masta huā phira kyā bōlē",
-    "english": "{0,1:Having become ecstatic, }{2:then }{3:what }{4:can it speak?}",
+    "english": "{0,1:Having become ecstatic, }{2:then }{3:what }{4:can it say?}",
     "words": [
       {
         "roman": "Masta",
@@ -617,7 +617,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Halakī thī jaba caṛhī tarāzū",
-    "english": "{1:It was }{0:light }{2:when }{3:it mounted }{4:the balance scales}",
+    "english": "{2:When }{1:it was }{0:light, }{3:it went onto }{4:the scales.}",
     "words": [
       {
         "roman": "Halakī",
@@ -694,7 +694,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ halakī thī jaba caṛhī tarāzū",
-    "english": "{0:Yes, }{2:it was }{1:light }{3:when }{4:it mounted }{5:the balance scales}",
+    "english": "{0:Yes, }{3:when }{2:it was }{1:light, }{4:it went onto }{5:the scales.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -836,7 +836,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hīrā pāyā bā̃ndha gaṭhariyā",
-    "english": "{1:Found }{0:the diamond, }{2:tied it }{3:in the bundle}",
+    "english": "{0:The diamond }{1:found }{2:and tied }{3:in a bundle—}",
     "words": [
       {
         "roman": "Hīrā",
@@ -964,7 +964,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Haṁsā",
-        "gloss": "swan; discriminating soul",
+        "gloss": "swan; the bird in the lake image",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -976,7 +976,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mānasarōvara",
-        "gloss": "Lake Manasarovar (the sacred transcendent lake of consciousness)",
+        "gloss": "Lake Manasarovar; the lake in which the swan bathes",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1090,7 +1090,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahata Kabīra sunō bhāī sādhō",
-    "english": "{1:Kabīr }{0:says, }{2:listen, }{3:O brother }{4:seekers:}",
+    "english": "{1:Kabīr }{0:says, }{2:listen, }{3:O brothers, }{4:O seekers:}",
     "words": [
       {
         "roman": "Kahata",
@@ -1189,7 +1189,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ōlē",
-        "gloss": "behind the veil of; inside the shelter of",
+        "gloss": "behind; under the cover of",
         "concept_key": "",
         "preserve_in_english": false
       }

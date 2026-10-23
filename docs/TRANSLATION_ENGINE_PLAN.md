@@ -1,13 +1,37 @@
 # Contextual translation engine
 
-Status: first contextual-sense slice implemented and structurally checked; embedding
-retrieval remains a researched proposal. Five cited Hindi entries now have stable
-IDs. Fresh glosses record an exact per-token contextual decision and disposition
-of supplied senses; translation and independent review consume that evidence.
-Missing dictionaries permit explicit contextual inference; unresolved meaning
-blocks publication. These checks do not establish semantic accuracy across
-languages. No embedding calls were run. Gemini 3.7 Flash remains the normal
-generator, with escalation for failed units inside a frozen run budget.
+Status checkpoint — 22 October 2026: the contextual-sense, indexed-retrieval,
+bounded Flash→Pro routing, retained-review-finding and targeted-repair components
+are implemented. The live priority run used a private corpus of **178 entries /
+192 senses** and OpenRouter `google/gemini-embedding-001` at 768 dimensions:
+**5 validated embedding calls, $0.0023958**. The embedding ledger and SQLite cache
+were carried forward without resetting spent allowance. This was selective
+retrieval for the priority songs, not embedding or qualifying the whole library.
+The repository's default JSON lexicon remains the smaller 5-entry / 19-sense set;
+the expanded corpus/index must be configured explicitly.
+
+**The whole automatic library pass has not succeeded or been qualified.** The
+priority run exposed real source, timing and translation holds; later model
+agreement does not erase an earlier concrete finding. Current boundaries are:
+
+- `bhakti_library_pass.py` executes its song loop serially. Production intake in
+  `bhakti_pipeline.py` has parallel song workers; those are different callers.
+- A general source-investigation caller is still missing. Registered source
+  witnesses and dictionary acquisition exist, and the library source adapter
+  handles reviewed cached reconstruction, but its current `run_source_candidate`
+  path explicitly holds broader `audio-review` / `focused-audio-review` requests.
+- Review receives target English, neighboring source and explicitly referenced
+  distant source/gloss/English. Complete assembled English context for every
+  review batch is still pending; a whole-candidate hash is not visible context.
+- Connotation and compound handling are prompt/editorial rules, not a dedicated
+  semantically validated module. Sense-ID/alternative checks establish structural
+  accountability, not linguistic correctness or cross-language qualification.
+
+Evidence for this checkpoint is the actual maintained caller/policy/retrieval
+code and the retained priority-run embedding ledger (five validated requests).
+No additional paid calls were made for this status update. Gemini 3.7 Flash is
+the normal first route, with bounded Gemini 3.1 Pro escalation for failed units;
+owner English, original failed evidence and unresolved holds remain protected.
 
 ## Recovered design and available assets
 
@@ -23,13 +47,15 @@ poetry should disappear.
 The current [grammar tooling boundary](../../vedanta-timeline/docs/GRAMMAR_ENGINE_INTEGRATION_PLAN.md)
 explicitly supersedes the older parser-confidence design. Dictionary lookup,
 parser agreement and embedding similarity are retrieval aids, not grammatical
-or publication authority. No implemented embedding dictionary engine was found
-in the current Vedanta docs/scripts searched. This plan proposes that component;
-it does not claim to recover existing executable code.
+or publication authority. The original research found no implemented embedding
+dictionary engine in the Vedanta docs/scripts searched. Bhakti subsequently implemented its own indexed
+retrieval and bounded embedding client; that implementation does not establish
+semantic qualification of the wider design.
 
 | Existing asset | Reuse | Limit |
 | --- | --- | --- |
-| `scripts/bhakti_translation_policy.py` and `data/bhakti_lexicon.json` | Shared editorial rules, exact-token language filters, 5 Platts entries / 19 candidate senses with print-page and homograph evidence | Hindi/Hindustani evidence only; explicit contextual decisions implemented, no inflection analysis; not a comprehensive dictionary |
+| `scripts/bhakti_translation_policy.py` and `data/bhakti_lexicon.json` | Shared editorial rules, language filters and per-token sense decisions; default 5 Platts entries / 19 senses; configured priority corpus 178 entries / 192 senses | Dictionary evidence is language-specific; no general inflection analysis or comprehensive cross-language qualification |
+| `scripts/dictionary_corpus.py`, `scripts/bhakti_lexical_retrieval.py`, `scripts/bhakti_embedding_client.py` | Source-backed acquisition, derived SQLite lookup, cached exact/dense ranking and bounded embedding requests; exercised in the priority run | Selective live retrieval is not a whole-corpus embedding or a successful automatic library pass |
 | `scripts/bhakti_pipeline.py` | Audited performed text; gloss → frame → English → independent review; actual neighboring source context; exact caches, scheduler, deterministic generation | Faithfulness flags are model claims; the demonstrated Har Jīu agency error passed them |
 | `scripts/editorial_baselines.py` | Saved owner English enforcement before writing | Never rewrite the owner's English to fit a new analysis; report conflicts separately |
 | `scripts/audit_translation_style.py` / `scripts/retranslate_bhakti.py` | Existing-text audit and explicit gloss reconstruction | Choose reconstruction when glosses are wrong; polishing English cannot repair them |
@@ -42,7 +68,12 @@ dictionary meanings onto Punjabi, or Sanskrit derivation rules onto a modern
 vernacular. The Bhakti user authorizes automatic agent review and repair; this
 does not make similarity scores or unexamined model agreement sufficient evidence.
 
-## Smallest useful implementation
+## Original implementation sequence
+
+The following sequence records the design intent. JSON sense decisions, SQLite
+retrieval and the embedding client now exist; the checkpoint above states what
+has actually run and what remains unfinished. These steps are not completion
+claims.
 
 1. **Use the existing JSON evidence first.** Extend the existing lexicon schema with
    stable entry/sense IDs, language/register, exact headword/homograph, native and
@@ -100,8 +131,9 @@ JSON records, threads explicit sense decisions through the production text
 stages, and routes `scripts/retranslate_bhakti.py` through those same stages.
 That closes the existing-song bypass immediately, without a disconnected
 retrieval adapter. Keep decisions in private artifacts rather than changing the
-public reader schema. A separate index builder and embedding client are later
-additions only after the qualification below shows their need.
+public reader schema. The separate index builder and embedding client have since
+been implemented and used on the priority run. The broader semantic qualification below is still
+required; those live calls do not establish its success.
 
 Cache keys include exact source and neighboring-context bytes, language/lemma
 analysis, witness/entry revisions, retrieval algorithm, embedding model revision
@@ -131,10 +163,11 @@ model. [Google embedding guide](https://ai.google.dev/gemini-api/docs/embeddings
 The local alternative's usage and limitations come from its authors'
 [model card](https://huggingface.co/intfloat/multilingual-e5-small).
 
-**Recommended adapter when needed:** OpenRouter Embedding 001, 768 dimensions, only
-after a bounded capability check confirms the selected provider's task/dimension
-behavior. Keep the local encoder as an alternative to qualify if API access is
-unavailable or measured costs justify it. Both remain optional ranking aids; exact
+**Adapter exercised in the priority run:** OpenRouter Embedding 001, 768
+dimensions, through the bounded client. Actual validated responses establish
+that exercised transport/dimension path, not general Indic retrieval quality.
+Keep the local encoder as an alternative to qualify if API access is unavailable
+or measured costs justify it. Both remain optional ranking aids; exact
 lookup and evidence-based review work without them. Do not run two encoders over
 the entire library merely to choose one.
 
@@ -164,8 +197,9 @@ Accept a semantic route only when every case in its declared population is
 accounted for and every material error is resolved or explicitly held. Numeric
 coverage, confidence and a few attractive examples cannot certify fidelity.
 
-Then run the automatic workflow on the targeted song population using the
-existing bounded concurrency. Preserve transcript/audio/timing artifacts for
+Then qualify the automatic workflow on the targeted song population. The current
+library executor is serial; parallel production intake does not yet supply
+parallel library-pass execution. Preserve transcript/audio/timing artifacts for
 text-only repairs. Publish only after source/evidence review, alignment and owner
 baseline gates pass; retain a per-unit evidence/review ledger and re-open only
 dependencies of later corrections. Report actual coverage and unresolved items,
@@ -238,9 +272,11 @@ actual audio hashes, trim evidence and exact semantic pair. Generation and
 generate-only hydration both require that accepted pair for repair-managed songs.
 Owner-supplied English remains exact at every acceptance and publication boundary.
 
-Independent review and 33 semantic plus 15 local transport tests cover these
-orchestration guarantees. They do not qualify linguistic accuracy: a bounded run
-on real held cases, followed by source-first editorial review, is still required.
-Production runs use the committed source; unrelated unreviewed local pipeline
-edits are excluded. Exact-response replay wrappers must forward optional
+The initial repair slice was independently reviewed with 33 semantic and 15
+local transport tests; later routing, retrieval and finding-preservation changes
+have their own focused checks. These are historical slice results, not a current
+whole-harness test total. The later priority runs exercised real held cases but
+left unresolved defects; source-first qualification of the intended population
+is still required. Each production run must freeze its exact reviewed code and
+exclude unrelated unreviewed local pipeline edits. Exact-response replay wrappers must forward optional
 `deadline_at` to the bounded transport.
