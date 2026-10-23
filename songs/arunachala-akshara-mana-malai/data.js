@@ -689,12 +689,13 @@ window.SONG_LINES = {
       {
         "text": "பித்தாய்",
         "wordIndices": [
-          3
+          2
         ]
       },
       {
         "text": "இனியார்",
         "wordIndices": [
+          3,
           4
         ]
       },
