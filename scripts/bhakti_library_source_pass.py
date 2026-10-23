@@ -285,7 +285,8 @@ def canonical_iast(value):
 def plan_source(reader,rebuilt,*,reviewed_map=None,accepted_delta=None):
     if rebuilt.get('uncertainties'):raise ValueError('rebuilt source has unresolved uncertainty')
     old=reader.get('SONG_LINES',{});raw=copy.deepcopy(rebuilt.get('verified_lines',[]));order=rebuilt.get('performance_order',[])
-    if not isinstance(old,dict) or not old or not isinstance(raw,list) or not raw or not isinstance(order,list) or not order:raise ValueError('incomplete source population')
+    bootstrap = bool(accepted_delta and accepted_delta.get('bootstrap_source') is True and source_reader_is_empty(reader))
+    if not isinstance(old,dict) or (not old and not bootstrap) or not isinstance(raw,list) or not raw or not isinstance(order,list) or not order:raise ValueError('incomplete source population')
     raw_by={}
     for line in raw:
         lid=line.get('id')
@@ -420,7 +421,10 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
         raise ValueError('source timing delta no longer matches recording/source')
     if type(duration_seconds) not in (int, float) or not math.isfinite(duration_seconds) or duration_seconds <= 0:
         raise ValueError('source timing duration invalid')
-    old_draft = source_draft(reader)
+    bootstrap = delta.get('bootstrap_source') is True and source_reader_is_empty(reader)
+    if bootstrap and prior_timing:
+        raise ValueError('empty source cannot reuse historical timing without performed source lineage')
+    old_draft = {'lines': [], 'performance_order': []} if bootstrap else source_draft(reader)
     old = pipeline.display_occurrences({'verified_lines': old_draft['lines'],
                                        'performance_order': old_draft['performance_order']})
     new = pipeline.display_occurrences(delta['rebuilt'])
@@ -870,6 +874,135 @@ def run_observed_source_candidate(*, root, slug, reader, workspace, route_dir, o
         route_dir=route_dir,options=local,deadline_at=deadline_at)
 
 
+def bootstrap_source_units(audited, duration):
+    """Map accepted merged performances to the actual bounded audit clips.
+
+    The assembly's source occurrence provenance supplies ownership. Neither
+    core fractions nor old reader timestamps are syllable measurements.
+    """
+    import bhakti_pipeline as pipeline
+    segments = audited.get('segment_audits')
+    if not segments:
+        return [], [digest(audited)]
+    merged = pipeline.merge_audited_segments(segments)
+    if any(merged.get(key) != audited['packet'].get(key) for key in ('verified_lines', 'performance_order')):
+        raise ValueError('bootstrap merged source/order differs from accepted segment evidence')
+    assembly = pipeline.assemble_audited_segment_occurrences(segments)
+    if assembly['uncertainties']:
+        raise ValueError('bootstrap segment correspondence unresolved: ' + '; '.join(assembly['uncertainties']))
+    if len(assembly['occurrences']) != len(merged['performance_order']):
+        raise ValueError('bootstrap source ownership population differs from complete order')
+    units = []; digests = []; previous_end = 0.; seen = set()
+    for position, item in enumerate(segments):
+        segment = item['segment']; index = segment.get('index')
+        if type(index) is not int or index in seen:
+            raise ValueError('bootstrap source segments need unique integer identities')
+        seen.add(index)
+        fields = ('clip_start', 'clip_end', 'core_start', 'core_end')
+        if (any(type(segment.get(key)) not in (int, float) or not math.isfinite(segment[key]) for key in fields)
+                or not 0 <= segment['clip_start'] <= segment['core_start'] < segment['core_end'] <= segment['clip_end'] <= duration
+                or segment['clip_end'] - segment['clip_start'] > 900
+                or abs(segment['core_start'] - previous_end) > .0005):
+            raise ValueError('bootstrap source clips/core do not form complete bounded recording coverage')
+        previous_end = segment['core_end']
+        owned = [i for i, row in enumerate(assembly['occurrences']) if row['segment_position'] == position]
+        evidence_digest = digest(item['audit']); digests.append(evidence_digest)
+        units.append({'id': f'bootstrap-segment-{index}', 'segment_index': index,
+            **{key: segment[key] for key in fields}, 'expanded_indices': owned,
+            'expanded_context_indices': list(owned), 'observation_digest': evidence_digest})
+    if abs(previous_end - duration) > .0005:
+        raise ValueError('bootstrap source cores do not cover recording end')
+    if sorted(i for unit in units for i in unit['expanded_indices']) != list(range(len(merged['performance_order']))):
+        raise ValueError('bootstrap source ownership is missing or duplicates a performance')
+    return units, digests
+
+
+def run_empty_source_candidate(*, root, slug, reader, workspace, route_dir, options, deadline_at):
+    """Acquire missing source with the same two stages as ordinary intake."""
+    import bhakti_pipeline as pipeline
+    import bhakti_source_stages as stages
+    import bhakti_lexical_retrieval as lexical
+    if not source_reader_is_empty(reader):
+        raise ValueError('source bootstrap requires exactly empty definitions, order and timing')
+    song = Path(root) / 'songs' / slug
+    target = Path(workspace) / 'songs' / slug
+    audio = target / pipeline.preferred_listener_audio(song).name
+    local = copy.copy(options)
+    local.unit_deadline_at = min(deadline_at, getattr(options, 'unit_deadline_at', None) or deadline_at)
+    original_trim = song / '.transcription/trim-applied.json'
+    staged_trim = target / '.transcription/trim-applied.json'
+    if ((file_hash(original_trim) if original_trim.is_file() else None)
+            != (file_hash(staged_trim) if staged_trim.is_file() else None)):
+        raise ValueError('workspace trim evidence differs from original recording')
+    source = pipeline.read_packet(song / '.transcription/source.json') or {}
+    raw = pipeline.transcript(target, source, audio, local)
+    audited = pipeline.audit_transcript(target, raw, audio, local)
+    errors = stages.source_errors(audited, audited=True)
+    if errors:
+        raise ValueError('missing-source audit unresolved: ' + str(errors))
+    units, observation_digests = bootstrap_source_units(audited, pipeline.gemini.duration_seconds(audio))
+    rebuilt = copy.deepcopy(audited['packet'])
+    mapping = {}
+    languages = rebuilt.get('metadata', {}).get('languages', [])
+    for row in rebuilt['verified_lines']:
+        original = row['id']
+        language = lexical.line_language(row, languages)
+        if not language and row.get('kind') != 'instrumental':
+            raise ValueError('new source lacks an identified line language')
+        if language:
+            row['sourceLanguage'] = language
+        row['id'] = 'source-new-' + digest({'id': original, 'source': _source_key(row)})[:16]
+        mapping[original] = row['id']
+    for event in rebuilt['performance_order']:
+        event['line_id'] = mapping[event['line_id']]
+    trim = song / '.transcription/trim-applied.json'
+    before = {'audio_sha256': file_hash(audio), 'trim_sha256': file_hash(trim) if trim.is_file() else None,
+              'reader_source_sha256': reader_source_identity(reader)}
+    delta = {'status': 'proposed', 'issues': [], 'bootstrap_source': True, 'before_identity': before,
+        'rebuilt': rebuilt, 'reused_line_ids': [], 'fresh_line_ids': [row['id'] for row in rebuilt['verified_lines']],
+        'removed_line_ids': [], 'requires_confirmation': False, 'coverage_scope': 'whole_recording',
+        'occurrence_lineage': [{'old_index': None, 'new_index': i} for i in range(len(rebuilt['performance_order']))],
+        'timing_unresolved_old_indices': [], 'source_unit_coverage': units,
+        'observation_digests': observation_digests}
+    files = {}
+    for name, artifact in [('01-transcript.json', raw), ('02-transcript-audit.json', audited)]:
+        path = target / '.transcription/pipeline' / name
+        files[str(path)] = file_hash(path)
+        projections = [artifact]
+        if name == '01-transcript.json' and artifact.get('segment_responses'):
+            projections = [item['response'] for item in artifact['segment_responses']]
+        elif name == '02-transcript-audit.json' and artifact.get('segment_audits'):
+            projections = [item['audit'] for item in artifact['segment_audits']]
+        for projection in projections:
+            declaration = projection.get('_source_route')
+            if declaration is None:
+                if name == '02-transcript-audit.json':
+                    raise ValueError('missing-source audit lacks durable routed evidence')
+                continue  # A legacy draft is explicitly untrusted by the independent audit.
+            stages._checked_projection(projection, declaration['input_fingerprint'])
+            state = Path(declaration['state_path'])
+            for evidence in [state, state.parent / 'accepted-result.json']:
+                files[str(evidence)] = file_hash(evidence)
+    receipt = {'version': 1, 'status': 'accepted-source', 'original_reader_digest': digest(reader),
+        'before_identity': before, 'delta': delta, 'delta_digest': digest(delta),
+        'approved_source_order_digest': digest(rebuilt), 'coverage_scope': 'whole_recording',
+        'confirmation': {'kind': 'independent-source-audit', 'audit_digest': digest(audited)},
+        'observation_fingerprint': digest([raw, audited]), 'evidence_files': files,
+        'remaining_obligations': ['timing', 'semantics', 'candidate-validation']}
+    path = Path(route_dir) / 'source-adoptions' / digest(receipt) / 'accepted-source-delta.json'
+    if path.is_file():
+        if json.loads(path.read_text()) != receipt:
+            raise ValueError('accepted bootstrap source receipt changed')
+    else:
+        atomic_json(path, receipt)
+    local.source_requested_stages = [stage for stage in getattr(options, 'source_requested_stages', [])
+                                     if stage not in {'audio-review', 'focused-audio-review'}]
+    local.source_coverage_requested = False
+    local._source_adoption_receipt = {'path': str(path), 'sha256': file_hash(path)}
+    return run_source_candidate(root=root, slug=slug, reader=reader, workspace=workspace,
+        route_dir=route_dir, options=local, deadline_at=deadline_at)
+
+
 def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, deadline_at):
     """Derive a private reader, preserving every existing editorial field exactly."""
     import re
@@ -909,10 +1042,13 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         coverage_requested = getattr(options, 'source_coverage_requested', False)
         if type(coverage_requested) is not bool:
             raise ValueError('source coverage selection must be boolean')
+        if source_reader_is_empty(reader) and getattr(options, '_source_adoption_receipt', None) is None:
+            return run_empty_source_candidate(root=root, slug=slug, reader=reader, workspace=workspace,
+                route_dir=route_dir, options=options, deadline_at=deadline_at)
         if requested.intersection({'audio-review', 'focused-audio-review'}) or coverage_requested:
             return run_observed_source_candidate(root=root,slug=slug,reader=reader,workspace=workspace,
                 route_dir=route_dir,options=options,deadline_at=deadline_at)
-        old_lines, old_glosses, old_translations = library.reader_evidence(reader)
+        old_lines, old_glosses, old_translations = ([], [], []) if source_reader_is_empty(reader) else library.reader_evidence(reader)
         declaration=getattr(options,'_source_adoption_receipt',None)
         adoption=_checked_adoption_receipt(declaration,reader) if declaration is not None else None
         audit = ({'packet':copy.deepcopy(adoption['delta']['rebuilt'])} if adoption
@@ -1019,7 +1155,7 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
             if file_hash(archived_reader) != dependencies[str((song/'data.js').relative_to(root))]:
                 raise ValueError('source timing original reader archive changed')
             prior_timing = None
-            if original_timing.is_file():
+            if original_timing.is_file() and not adoption['delta'].get('bootstrap_source'):
                 expected_timing = dependencies[str(original_timing.relative_to(root))]
                 if file_hash(archived_timing) != expected_timing:
                     raise ValueError('source timing original measurement archive changed')
@@ -1128,7 +1264,15 @@ def source_draft(reader, occurrence_indices=None):
     return {'lines': list(definitions.values()), 'performance_order': order}
 
 
+def source_reader_is_empty(reader):
+    return (type(reader.get('SONG_LINES')) is dict and reader['SONG_LINES'] == {}
+            and type(reader.get('SONG_SEQUENCE')) is list and reader['SONG_SEQUENCE'] == []
+            and type(reader.get('SONG_TIMINGS')) is list and reader['SONG_TIMINGS'] == [])
+
+
 def reader_source_identity(reader):
+    if source_reader_is_empty(reader):
+        return digest({'kind': 'empty-source', 'reader_digest': digest(reader)})
     draft = source_draft(reader)
     lines = {lid: {key: line.get(key) for key in ('source', 'roman', 'sourceWords')}
              for lid, line in reader['SONG_LINES'].items()}

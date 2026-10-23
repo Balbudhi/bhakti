@@ -103,6 +103,10 @@ def inspect(root: Path, revision: str, song: dict, locks: dict, state_dir: Path,
         gaps.append('legacy gloss evidence lacks modern frames; review source/current gloss before any repair')
     coverage = segment_coverage(stages)
     planned = ['semantic-review']
+    import bhakti_library_source_pass as source_pass
+    if source_pass.source_reader_is_empty(reader):
+        defects.append('performed lyrics are empty')
+        planned.insert(0, 'audio-review')
     if coverage['status'] == 'mismatch':
         defects.append('saved segment occurrences are missing or changed in merged transcript')
         planned.insert(0, 'source-merge')

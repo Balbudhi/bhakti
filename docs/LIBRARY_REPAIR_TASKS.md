@@ -33,7 +33,12 @@ and lemma-specific verb frames, closing the grammar-loss defect. Real translatio
 quality remains unqualified. Newly acquired source definitions must also inform
 the initial English ranking query, and the fresh-source outer route still needs
 downstream renewal when materialized evidence changes under unchanged settings.
-Missing-source bootstrap, shared stage-level
+Missing-source bootstrap now shares the new-intake transcription and independent
+audit stages. Long-recording timing ownership comes from audited segment
+occurrences rather than interpolated timestamps. The joined source/bootstrap
+checks pass 74 tests using real routing, storage, FFmpeg and timing callers with
+synthetic model responses; this does not establish acoustic recognition quality.
+Shared semantic stage-level
 escalation, historical crop adoption and source-language dictionary coverage
 remain open. Hindi Platts acquisition exists; Punjabi and Tamil coverage must
 not be represented as equivalent verified dictionary support.

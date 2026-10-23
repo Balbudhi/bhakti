@@ -1043,6 +1043,18 @@ def segment_transcript_schema() -> dict[str, Any]:
     }, "required": ["lines", "performance_order", "uncertainties"], "additionalProperties": False}
 
 
+def source_first_selection(packet,candidates):
+    cursor=0;indices=[]
+    for line in packet.get('lines',[]):
+        text=str(line.get('source_text') or '')
+        match=next((item['source_index'] for item in candidates[cursor:] if str(item['source_text'])==text),None)
+        if match is None:raise ValueError('source-first segment returned text outside its witness window')
+        indices.append(match)
+        cursor=next(index for index,item in enumerate(candidates) if item['source_index']==match)+1
+    if not indices:raise ValueError('source-first segment selected no witness lines')
+    return indices
+
+
 def transcribe_long_audio(
     song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace, *,
     target_seconds: float = 300.0, minimum_core: float = 180.0,
@@ -1071,7 +1083,8 @@ def transcribe_long_audio(
             cache_path = cache_dir / f"segment-{segment['index']:03d}.json"
             cached = read_packet(cache_path)
             if (cached and cached.get("contract_version") == LONG_TRANSCRIPT_CONTRACT_VERSION
-                    and cached.get("segment") == segment and isinstance(cached.get("response"), dict)):
+                    and cached.get("segment") == segment and isinstance(cached.get("response"), dict)
+                    and getattr(options,"unit_context",None)):
                 return cached
             source_first_context = ""
             if source_first:
@@ -1101,46 +1114,19 @@ Source metadata is only a lead, never proof:
 
 Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
-            response = None
-            for attempt in range(2):
-                try:
-                    response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=stage_call_timeout(options),
-                                           response_schema=segment_transcript_schema(), schema_name="bhakti_segment_transcript",
-                                           reasoning_effort="high", max_completion_tokens=32768, **stage_transport_context(options))
-                    break
-                except RuntimeError as exc:
-                    if getattr(options, "unit_context", None):
-                        raise
-                    if "required JSON packet" in str(exc):
-                        # Retain the exact audio interval and schema, but
-                        # normalize the container when a provider returns an
-                        # empty structured response for the source AAC clip.
-                        fallback = normalized_transcript_audio(
-                            clip, destination / f"segment-{segment['index']:03d}-transcript-retry.mp3"
-                        )
-                        response = gemini.call(
-                            options.model, gemini.key(), prompt, audio=fallback, timeout=stage_call_timeout(options),
-                            response_schema=segment_transcript_schema(), schema_name="bhakti_segment_transcript",
-                            reasoning_effort="high", max_completion_tokens=32768, **stage_transport_context(options))
-                        break
-                    if attempt:
-                        raise
-            if response is None:
-                raise RuntimeError(f"segment {segment['index']} produced no transcription response")
+            request={'prompt':prompt,'response_schema':segment_transcript_schema(),
+                     'schema_name':'bhakti_segment_transcript','reasoning_effort':'high','max_completion_tokens':32768}
+            if not getattr(options,'unit_context',None):
+                import bhakti_source_stages as source_stages
+                response=source_stages.segment_request(sys.modules[__name__],song_dir,audio,clip,
+                    'transcript-segment',segment,request,options,
+                    cached=cached.get('response') if isinstance(cached,dict) and cached.get('segment')==segment else None,
+                    extra_validator=(lambda value:source_first_selection(value['packet'],candidates)) if source_first else None,
+                    allow_legacy_draft=not source_first)
+            else:
+                response = source_request_call(request, clip, options)
             if source_first:
-                returned = [str(line.get("source_text") or "") for line in response["packet"].get("lines", [])]
-                cursor = 0
-                indices: list[int] = []
-                for text in returned:
-                    match = next((item["source_index"] for item in candidates[cursor:]
-                                  if str(item["source_text"]) == text), None)
-                    if match is None:
-                        raise RuntimeError(f"segment {segment['index']} returned text outside its witness window")
-                    indices.append(match)
-                    cursor = next(index for index, item in enumerate(candidates)
-                                  if item["source_index"] == match) + 1
-                if not indices:
-                    raise RuntimeError(f"segment {segment['index']} selected no witness lines")
+                indices=source_first_selection(response['packet'],candidates)
             item = {"contract_version": LONG_TRANSCRIPT_CONTRACT_VERSION,
                     "segment": segment, "response": response}
             if source_first:
@@ -1166,7 +1152,34 @@ Return strict JSON:
 
 
 def transcript(song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
-    target = song_dir / ".transcription" / "pipeline" / "01-transcript.json"
+    import bhakti_source_stages as source_stages
+    return source_stages.transcript(sys.modules[__name__],song_dir,source,audio,options)
+
+
+def source_request_call(request, audio, options):
+    """Dispatch the exact request used to identify the source route."""
+    return gemini.call(options.model, gemini.key(), request['prompt'], audio=audio,
+        timeout=stage_call_timeout(options),
+        **{key:value for key,value in request.items()
+           if key in {'response_schema','schema_name','reasoning_effort','max_completion_tokens'}},
+        **stage_transport_context(options))
+
+
+def transcript_request_contract(source):
+    prompt = f"""Transcribe this complete devotional recording exactly. Listen from beginning to end.
+
+Do not translate. Do not omit any sung, spoken, call-and-response, invocation, refrain, pickup, return, or closing line. Do not infer repetition counts: list every performance occurrence in order. Use the appropriate source script whenever known and careful romanization. Unknown words or credits must be marked uncertain rather than invented. Identify the language per line in `language`, including code-switching; never infer it solely from the script.
+
+Source metadata is only a lead, not proof of public credits:
+{json.dumps(source, ensure_ascii=False)}
+
+Return strict JSON:
+{{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"uncertainties":[]}}"""
+    return {'prompt':prompt,'reasoning_effort':'high','max_completion_tokens':65536}
+
+
+def _transcript_once(song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
+    target = Path(getattr(options,"source_stage_target",song_dir / ".transcription" / "pipeline" / "01-transcript.json"))
     existing = read_packet(target)
     if existing and not options.force:
         return existing
@@ -1174,17 +1187,9 @@ def transcript(song_dir: Path, source: dict[str, Any], audio: Path, options: arg
         result = transcribe_long_audio(song_dir, source, audio, options)
         write_json(target, result)
         return result
-    prompt = f"""Transcribe this complete devotional recording exactly. Listen from beginning to end.
-
-Do not translate. Do not omit any sung, spoken, call-and-response, invocation, refrain, pickup, return, or closing line. Do not infer repetition counts: list every performance occurrence in order. Use the appropriate source script whenever known and careful romanization. Unknown words or credits must be marked uncertain rather than invented.
-
-Source metadata is only a lead, not proof of public credits:
-{json.dumps(source, ensure_ascii=False)}
-
-Return strict JSON:
-{{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"uncertainties":[]}}"""
+    request = getattr(options,'source_stage_request',None) or transcript_request_contract(source)
     try:
-        result = ask(prompt, audio, options)
+        result = source_request_call(request, audio, options)
     except RuntimeError as exc:
         # A few provider responses are empty for otherwise valid M4A/MP3
         # input. Retry once with a clean audio-only MP3; this does not change
@@ -1196,7 +1201,7 @@ Return strict JSON:
         with tempfile.TemporaryDirectory(prefix="bhakti-transcript-retry-") as temporary:
             fallback = normalized_transcript_audio(audio, Path(temporary) / "transcript.mp3")
             try:
-                result = ask(prompt, fallback, options)
+                result = source_request_call(request, fallback, options)
             except RuntimeError as fallback_exc:
                 if getattr(options, "unit_context", None):
                     raise
@@ -1219,7 +1224,7 @@ def audited_transcript_schema() -> dict[str, Any]:
             "required": ["languages", "script", "singer_candidates", "credit_evidence"], "additionalProperties": False},
         "verified_lines": {"type": "array", "items": {"type": "object", "properties": {
             "id": {"type": "string"}, "source_text": {"type": "string"}, "roman": {"type": "string"},
-            "kind": {"type": "string"}, "translation_notes": {"type": "string"}},
+            "kind": {"type": "string"}, "language": {"type": "string"}, "translation_notes": {"type": "string"}},
             "required": ["id", "source_text", "roman", "kind", "translation_notes"], "additionalProperties": False}},
         "performance_order": {"type": "array", "items": {"type": "object", "properties": {
             "line_id": {"type": "string"}, "occurrence": {"type": "integer"}, "notes": {"type": "string"}},
@@ -1249,7 +1254,7 @@ def ordered_segment_lines(packet: dict[str, Any]) -> list[dict[str, Any]]:
         if line["id"] in lines:
             raise ValueError(f"segment has duplicate line ID {line['id']!r}")
         for field in ("source_text", "roman"):
-            if not isinstance(line.get(field), str) or not line[field].strip():
+            if line.get("kind") != "instrumental" and (not isinstance(line.get(field), str) or not line[field].strip()):
                 raise ValueError(f"segment line {line['id']!r} has empty {field}")
         lines[line["id"]] = line
     ordered = []
@@ -1332,6 +1337,49 @@ def normalized_language(value: str) -> str:
             "ur": "Urdu", "urd": "Urdu", "urdu": "Urdu"}.get(key, value.strip())
 
 
+def overlap_language_issue(left: list[dict[str, Any]], right: list[dict[str, Any]]) -> str | None:
+    """Check language ownership on the actual shared characters, not language sets.
+
+    Line boundaries may differ across audits. Exact native or Roman spans permit
+    that split/merge while retaining each assertion's scope. Fuzzy heterogeneous
+    matches have no reliable character ownership and must remain unresolved.
+    """
+    def language(line: dict[str, Any]) -> str:
+        return normalized_language(str(line.get("sourceLanguage") or line.get("language") or ""))
+
+    def spans(lines: list[dict[str, Any]], signature: Any) -> tuple[str, list[tuple[int, int, str]]]:
+        text = ""
+        result = []
+        for line in lines:
+            unit = signature(line)
+            result.append((len(text), len(text) + len(unit), language(line)))
+            text += unit
+        return text, result
+
+    for signature in (source_lyric_signature, lyric_signature):
+        left_text, left_spans = spans(left, signature)
+        right_text, right_spans = spans(right, signature)
+        if not left_text or not right_text:
+            continue
+        if left_text.endswith(right_text):
+            right_offset = len(left_text) - len(right_text)
+        elif (len(left) == len(right) == 1 and left[0].get("partial") == "trailing"
+              and right[0].get("partial") != "trailing" and right_text.startswith(left_text)):
+            right_offset = 0
+        else:
+            continue
+        for left_start, left_end, left_language in left_spans:
+            for right_start, right_end, right_language in right_spans:
+                if (max(left_start, right_start + right_offset) < min(left_end, right_end + right_offset)
+                        and left_language and right_language and left_language != right_language):
+                    return "conflicting explicit source languages on matched text spans"
+        return None
+    languages = {language(line) for line in left + right} - {""}
+    if len(languages) > 1:
+        return "unresolved explicit source language ownership in fuzzy overlap"
+    return None
+
+
 def assemble_audited_segment_occurrences(
     audited_segments: list[dict[str, Any]],
 ) -> dict[str, Any]:
@@ -1375,6 +1423,13 @@ def assemble_audited_segment_occurrences(
             left_count, right_count, score = balanced_overlap(previous_raw, raw)
         candidate_left_count, candidate_right_count = left_count, right_count
         accepted = score >= 0.8
+        language_conflict = False
+        if accepted:
+            language_issue = overlap_language_issue(previous_raw[-left_count:], raw[:right_count])
+            if language_issue:
+                language_conflict = True
+                accepted = False
+                uncertainties.append(f"segment seam {position - 1}/{position} has {language_issue}")
         replace_fragment = False
         if accepted:
             # This is the only case in which the older surface is incomplete.
@@ -1388,7 +1443,7 @@ def assemble_audited_segment_occurrences(
             if replace_fragment:
                 merged.pop()
                 right_count = 0
-        elif overlap_seconds is not None and overlap_seconds > 0:
+        elif overlap_seconds is not None and overlap_seconds > 0 and not language_conflict:
             uncertainties.append(f"segment seam {position - 1}/{position} overlap score is only {score:.3f}; all unmatched occurrences retained")
         seams.append({"left_segment": position - 1, "right_segment": position,
                       "left_overlap_occurrences": left_count if accepted else 0,
@@ -1401,6 +1456,7 @@ def assemble_audited_segment_occurrences(
 
 
 def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, Any]:
+    import bhakti_lexical_retrieval as lexical
     assembly = assemble_audited_segment_occurrences(audited_segments)
     languages: list[str] = []
     for item in audited_segments:
@@ -1413,7 +1469,8 @@ def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, 
     occurrence_counts: dict[str, int] = {}
     for occurrence in assembly["occurrences"]:
         line = occurrence["line"]
-        signature = lyric_signature(line)
+        line_language=normalized_language(str(line.get('sourceLanguage') or line.get('language') or ''))
+        signature = lyric_signature(line)+'|language:'+line_language.casefold()
         if signature in canonical:
             previous = canonical[signature]
             def scripts(value: str) -> set[str]:
@@ -1431,7 +1488,8 @@ def merge_audited_segments(audited_segments: list[dict[str, Any]]) -> dict[str, 
             line_id = f"line-{len(canonical):03d}"
             canonical[signature] = {"id": line_id, "source_text": line.get("source_text", ""),
                                     "roman": line.get("roman", ""), "kind": line.get("kind", "verse"),
-                                    "translation_notes": line.get("notes", "")}
+                                    "translation_notes": line.get("notes", ""),
+                                    "sourceLanguage": lexical.language(line_language) if line_language else ""}
         line_id = canonical[signature]["id"]
         occurrence_counts[line_id] = occurrence_counts.get(line_id, 0) + 1
         order.append({"line_id": line_id, "occurrence": occurrence_counts[line_id], "notes": ""})
@@ -1577,8 +1635,30 @@ def audit_long_transcript(
             # A source-witness audit is specifically a new audio pass with
             # witness excerpts. Reusing a prior non-witness segment would
             # falsely report that verification happened.
-            if cached and not options.source_witness_audit:
+            if cached and not options.source_witness_audit and (observation_context is not None or getattr(options,"unit_context",None)):
                 return cached
+            if observation_context is None and not getattr(options,'unit_context',None):
+                import bhakti_source_stages as source_stages
+                source_rows={entry.get('segment',{}).get('index'):entry for entry in raw.get('segment_responses',[])}
+                first_response=source_rows.get(segment['index'],{}).get('response',{})
+                if not isinstance(first_response.get('_source_route'),dict):
+                    request=copy.deepcopy(request)
+                    request['prompt']='UNTRUSTED historical segment draft: verify the entire current clip independently, including omitted material.\n'+request['prompt']
+                def validate_witness(value):
+                    if source_first:
+                        allowed={str(line.get('source_text') or '') for line in first.get('lines',[])}
+                        if any(str(line.get('source_text') or '') not in allowed for line in value['packet'].get('lines',[])):
+                            raise ValueError('source-first audit rewrote witness text')
+                response=source_stages.segment_request(sys.modules[__name__],song_dir,audio,clip,
+                    'audit-segment',segment,request,options,
+                    cached=cached.get('audit') if isinstance(cached,dict) and cached.get('segment')==segment else None,
+                    extra_validator=validate_witness)
+                result={'segment':segment,'first':first,'audit':response}
+                if cached and not isinstance(cached.get('audit',{}).get('_source_route'),dict):
+                    original=cached_path.read_bytes();archive=cache_dir/'legacy'/hashlib.sha256(original).hexdigest()/cached_path.name
+                    if not archive.exists():archive.parent.mkdir(parents=True,exist_ok=True);archive.write_bytes(original)
+                write_json(cached_path,result)
+                return result
             prompt = request["prompt"]
             last_error: RuntimeError | None = None
             for attempt in range(3):
@@ -1655,7 +1735,33 @@ def audit_long_transcript(
 
 
 def audit_transcript(song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
-    target = song_dir / ".transcription" / "pipeline" / "02-transcript-audit.json"
+    import bhakti_source_stages as source_stages
+    return source_stages.audit(sys.modules[__name__],song_dir,raw,audio,options)
+
+
+def audited_source_request_contract(raw, witness, *, untrusted_draft=False):
+    witness_context = source_witness.prompt_context(witness, raw.get("packet", {}).get("lines", []))
+    draft_status = ("This is an UNTRUSTED historical working draft without bound audio evidence. "
+                    "Listen through the entire current recording independently; verify every word and occurrence, "
+                    "including material absent from the draft. Do not treat the draft as a complete source witness."
+                    if untrusted_draft else "")
+    prompt = f"""{draft_status}
+This is the required second transcription pass. Audit the entire first-pass transcript below against the complete attached devotional recording from beginning to end. Use the first transcript as your explicit working draft; do not start from an empty guess. This is transcription verification, not timing or translation. Identify each line’s language in `language`, including code-switching; preserve explicit distinctions between same-spelled words in different languages.
+
+Be extremely careful: correct every missed, hallucinated, duplicated, reordered, or misheard lyric. Preserve every audible performance occurrence in exact order, including lead pickups before answers and later returns. When the draft came from overlapping segments, reconcile duplicate overlap evidence without deleting genuine repeated performances. For Indic source text, retain the natural script and give a consistent scholarly ISO 15919/IAST-style romanization with accurate vowel length, retroflexion, aspiration, and language-appropriate pronunciation; do not mix plain and scholarly spellings. For Punjabi and other north-Indic readings use consistent IAST e/o, not mixed ē/ō; preserve nasalization and final orthographic vowels, and use only Latin-script letters in the roman field. Do not apply this e/o convention to Dravidian-language distinctions. Do not translate or estimate timestamps. If any content remains unclear, put it in uncertainties; do not silently guess.
+
+Candidate transcript:
+{json.dumps(raw['packet'], ensure_ascii=False)}
+{witness_context}
+
+Return strict JSON:
+{{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"verified_lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"changes":[],"uncertainties":[]}}"""
+    return {'prompt':prompt,'response_schema':audited_transcript_schema(),
+            'schema_name':'bhakti_audited_transcript','reasoning_effort':'high','max_completion_tokens':65536}
+
+
+def _audit_transcript_once(song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
+    target = Path(getattr(options,"source_stage_target",song_dir / ".transcription" / "pipeline" / "02-transcript-audit.json"))
     existing = read_packet(target)
     if existing and not options.force and not options.source_witness_audit:
         if existing.get("segment_audits") and existing.get("merge_contract_version") != LONG_MERGE_VERSION:
@@ -1678,22 +1784,12 @@ def audit_transcript(song_dir: Path, raw: dict[str, Any], audio: Path, options: 
         write_json(target, result)
         source_witness.write_comparison_report(song_dir, song_dir.name, result)
         return result
-    witness = source_witness.acquire(song_dir, song_dir.name)
-    witness_context = source_witness.prompt_context(witness, raw.get("packet", {}).get("lines", []))
-    prompt = f"""This is the required second transcription pass. Audit the entire first-pass transcript below against the complete attached devotional recording from beginning to end. Use the first transcript as your explicit working draft; do not start from an empty guess. This is transcription verification, not timing or translation.
-
-Be extremely careful: correct every missed, hallucinated, duplicated, reordered, or misheard lyric. Preserve every audible performance occurrence in exact order, including lead pickups before answers and later returns. When the draft came from overlapping segments, reconcile duplicate overlap evidence without deleting genuine repeated performances. For Indic source text, retain the natural script and give a consistent scholarly ISO 15919/IAST-style romanization with accurate vowel length, retroflexion, aspiration, and language-appropriate pronunciation; do not mix plain and scholarly spellings. For Punjabi and other north-Indic readings use consistent IAST e/o, not mixed ē/ō; preserve nasalization and final orthographic vowels, and use only Latin-script letters in the roman field. Do not apply this e/o convention to Dravidian-language distinctions. Do not translate or estimate timestamps. If any content remains unclear, put it in uncertainties; do not silently guess.
-
-Candidate transcript:
-{json.dumps(raw['packet'], ensure_ascii=False)}
-{witness_context}
-
-Return strict JSON:
-{{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"verified_lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"changes":[],"uncertainties":[]}}"""
+    witness = (options.source_witness_snapshot if hasattr(options,"source_witness_snapshot")
+               else source_witness.acquire(song_dir, song_dir.name))
+    request = getattr(options,'source_stage_request',None) or audited_source_request_contract(raw,witness,
+        untrusted_draft=getattr(options,'source_draft_untrusted',False))
     try:
-        result = gemini.call(options.model, gemini.key(), prompt, audio=audio, timeout=stage_call_timeout(options),
-                             response_schema=audited_transcript_schema(), schema_name="bhakti_audited_transcript",
-                             reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
+        result = source_request_call(request, audio, options)
     except RuntimeError as exc:
         if getattr(options, "unit_context", None):
             raise
@@ -1702,9 +1798,7 @@ Return strict JSON:
         with tempfile.TemporaryDirectory(prefix="bhakti-audit-retry-") as temporary:
             fallback = normalized_transcript_audio(audio, Path(temporary) / "audit.mp3")
             try:
-                result = gemini.call(options.model, gemini.key(), prompt, audio=fallback, timeout=stage_call_timeout(options),
-                                     response_schema=audited_transcript_schema(), schema_name="bhakti_audited_transcript",
-                                     reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
+                result = source_request_call(request, fallback, options)
             except RuntimeError as fallback_exc:
                 if getattr(options, "unit_context", None):
                     raise
