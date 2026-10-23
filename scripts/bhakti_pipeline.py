@@ -150,7 +150,7 @@ def semantic_stage_policy(options, *, stage=None):
         policy = {**policy, 'automatic_source_discovery_materialized': options.automatic_source_discovery_identity}
     support = getattr(options, 'semantic_lexical_support', None)
     if support is not None:
-        policy = {**policy, 'lexical_support': bhakti_lexical_support.content_digest(support)}
+        policy = {**policy, 'lexical_support': bhakti_lexical_support.content_digest(support, english_grammar=stage != 'gloss')}
     if hasattr(options, 'semantic_deadline_at'):
         policy = {**policy, 'semantic_repair_version': bhakti_semantic_repair.VERSION,
                   'repair_feedback': getattr(options, 'semantic_repair_feedback', []),

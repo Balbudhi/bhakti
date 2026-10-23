@@ -122,7 +122,7 @@ explained on click. Unknown etymology is not invented. Existing owner English is
 still protected. Shared prompt policy version 6 states these rules and explicitly
 checks inflection, adjectival relationships and connotations, and compound meaning.
 
-The discovery algorithm under construction compares contextual meaning with
+The integrated discovery algorithm compares contextual meaning with
 dictionary **sense definitions**, using embeddings to propose further words.
 Then it examines complete dictionary alternatives for the original words and a
 small discovered shortlist, and independently reviews the chosen wording in the
@@ -135,6 +135,14 @@ paper's model or benchmark results. A local workload check rejected unrestricted
 synonym expansion: one seed group produced 343 sense records and 22 embedding
 batches. Rank the bounded explored sense pool before expanding a small set of
 new lemmas, retain original candidates, and make exploration limits explicit.
+Enable bounded English discovery with `BHAKTI_ENGLISH_DISCOVERY=1` alongside
+automatic lexical support and the existing bounded embedding configuration.
+The current defaults explore eight related synsets and shortlist at most four
+additional lemmas. All original seed definitions and all dictionary senses of
+retained words remain available. Compact model evidence includes adjective
+position restrictions and lemma-specific verb frames; it does not discard
+grammar along with private raw records. These paths have passed joined offline
+tests, but their translation-quality benefit is not yet qualified.
 
 `dictionary_corpus.py` imports original Platts HTML captures and Cologne-derived
 Sanskrit JSON. Records retain the source language, headword spelling, edition,
@@ -158,13 +166,30 @@ dictionary update reuses compatible source glosses and reruns English/review.
 This producer performs no additional model call for lookup. Its existing-call
 prompt/output additions still have token cost.
 
-This is not yet the complete discovery engine: source retrieval currently needs
-an existing lemma binding, and English lookup needs proposed lemmas. Automatic
-source-form discovery and embedding-based English candidate discovery are under
-integration. The default five-entry Hindi corpus has no token matches in the
-five representative qualification songs; configuring an encoder alone cannot
-correct that coverage gap. No full-library translation-quality claim follows
-from these structural tests.
+Automatic source-form discovery is connected: the glossary can propose up to two
+lookup forms for an uncertain span. Existing reader mappings supply the native
+form first; fresh transcripts without such mappings retain explicitly proposed
+forms as hypotheses. The Hindi Platts adapter passes full witnessed definitions
+to both translation and review. Each selected relationship needs an evidenced
+decision; a discovery that changes the source gloss returns to targeted gloss
+repair. Neither acquisition nor a root resemblance silently changes the word map.
+Intake and library runs share a persisted source-request allowance and deadline
+(`--source-discovery-max-requests`, default 16). Missing counters stop acquisition
+instead of creating a fresh allowance.
+
+Accepted semantic runs bind the actual dictionary evidence they used. A relevant
+evidence change renews English and independent review with a validated glossary;
+unrelated cache growth does not renew the run. The fresh-source outer route still
+needs this renewal behavior for materialized evidence changes under unchanged
+configuration. Newly acquired source definitions currently reach wording and
+review after the first English ranking query is formed. Connecting those new
+hypotheses to that query, without selecting a source sense automatically or
+silently truncating definitions, remains required before claiming that the
+initial ranking uses the newly retrieved source dictionary evidence.
+Punjabi and Tamil dictionary adapters remain missing. The default five-entry
+Hindi corpus has no token matches in the five representative qualification songs;
+configuring an encoder alone cannot correct that coverage gap. No full-library
+translation-quality claim follows from these structural tests.
 
 Example preparation, using private paths and an explicit JSON array of native
 queries:

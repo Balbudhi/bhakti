@@ -1,4 +1,4 @@
-"""Automatic, targeted dictionary evidence; no model calls or network acquisition.
+"""Automatic dictionary evidence with optional bounded English embedding discovery.
 
 Existing gloss batches propose lookup queries. Dictionaries supply definitions,
 never meaning selections. All stored evidence remains private.
@@ -12,6 +12,7 @@ from pathlib import Path
 import tempfile
 
 import bhakti_lexical_retrieval as lexical
+import bhakti_english_discovery as english_discovery
 import bhakti_lexical_support as support
 from bhakti_embedding_client import file_lock
 import dictionary_corpus as corpus
@@ -87,10 +88,14 @@ def configuration_identity(options=None):
     records = _source_records(config['roots'])
     witnesses = [{'query': row['query'], 'url': row['url'], 'sha256': row['sha256']}
                  for _, row in records]
-    return {'version': VERSION, 'max_queries': MAX_QUERIES,
+    identity = {'version': VERSION, 'max_queries': MAX_QUERIES,
             'english': _dictionary_identity(config['directory'], config['edition']),
             'source_witnesses': sorted(witnesses, key=lambda row: (row['sha256'], row['query'])),
             'source_discovery': {'version': 1, 'max_suggestions': 2}}
+    discovery = english_discovery.configuration()
+    if discovery is not None:
+        identity['english_discovery'] = discovery
+    return identity
 
 
 def proposal_errors(lines, gloss_rows, languages, required_spans=()):
@@ -227,9 +232,32 @@ def lookup_english_cached(directory, lemmas, *, edition, cache_dir):
                 combined[row['id']] = row
             elif lemma not in combined[row['id']]['requested_lemmas']:
                 combined[row['id']]['requested_lemmas'].append(lemma)
+    for row in combined.values():
+        row['requested_lemmas'].sort()
+        row['grammar'] = support.wordnet_grammar(row)
     return {'evidence': sorted(combined.values(), key=lambda row: row['id']),
             'receipt': support.wordnet_receipt(directory, edition, requested),
             'misses': [lemma for lemma in requested if not rows[lemma]]}
+
+
+def _english_discovery_query(line, proposal, gloss, bound, languages, context_lines, performance_order):
+    context = json.loads(lexical.query_context(line, ' '.join(proposal['surfaces']), languages,
+        context_lines=context_lines, performance_order=performance_order))
+    decisions = [item for item in gloss['sense_decisions'] if item['word_index'] in proposal['word_indices']]
+    chosen = {(choice['entry_id'], choice['sense_id']) for item in decisions for choice in item.get('chosen', [])}
+    definitions = [sense['short_english'] for entry in bound.values() for sense in entry['senses']
+                   if (entry['entry_id'], sense['sense_id']) in chosen]
+    if not definitions:
+        definitions = [gloss['word_glosses'][index]['gloss'] for index in proposal['word_indices']]
+    # Native source windows and actual source/gloss meanings only. Owner English,
+    # previous draft English and catalog descriptions never enter this query.
+    return {'source_language': context['language'],
+        'source_span': {'roman': proposal['surfaces'], 'word_indices': proposal['word_indices']},
+        'source_context': {'target': context['target']['source_text'], 'windows': [
+            {side: [item['source_text'] for item in window[side]] for side in ('before', 'after')}
+            for window in context['performed_context']]},
+        'sense_evidence': definitions,
+        'grammatical_role': [item['grammatical_role'] for item in decisions]}
 
 
 def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisition_roots,
@@ -256,11 +284,36 @@ def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisiti
     english = lookup_english_cached(wordnet_directory, queries, edition=edition, cache_dir=cache_dir)
     diagnostics.extend({'kind': 'english_word_unattested', 'lemma': word} for word in english['misses'])
     targets = []
+    discovery_config = english_discovery.configuration()
+    encoder = lexical.configured_encoder() if discovery_config is not None else None
+    discovery_queries = {}
     amended = copy.deepcopy(gloss_rows)
     amended_by = {row['id']: row for row in amended}
     for row, proposal, bound in selected:
+        discovered = None
+        proposed_candidates = copy.deepcopy(proposal['english_candidates'])
+        seeds = list(dict.fromkeys(word for candidate in proposed_candidates
+                    for word in support.english_queries(candidate['english_lemmas'])))
+        if discovery_config is not None and seeds:
+            query = _english_discovery_query(by_line[row['id']], proposal, row, bound, languages,
+                                              context_lines, performance_order)
+            discovered = english_discovery.discover_english(wordnet_directory, seeds,
+                edition=edition, query=query, cache_dir=cache_dir, encoder=encoder,
+                space=discovery_config['space'], max_neighbor_synsets=discovery_config['max_neighbor_synsets'],
+                max_discovered_lemmas=discovery_config['max_discovered_lemmas'])
+            tid = 'lexical:' + row['id'] + ':' + ','.join(map(str, proposal['word_indices']))
+            discovery_queries[tid] = query
+            diagnostics.extend({'line_id': row['id'], **item} for item in discovered['diagnostics'])
+            existing = {support.normalize_english_lemma(item['expression']) for item in proposed_candidates if item['kind'] == 'word'}
+            for candidate in discovered['candidates']:
+                if candidate['evidence_ids'] and candidate['lemma'] not in existing:
+                    proposed_candidates.append({'expression': candidate['lemma'], 'kind': 'word',
+                                                'english_lemmas': [candidate['lemma']]})
+                    existing.add(candidate['lemma'])
+            queries = list(dict.fromkeys(queries + [candidate['lemma'] for candidate in discovered['candidates']]))
+            english = lookup_english_cached(wordnet_directory, queries, edition=edition, cache_dir=cache_dir)
         candidates = []
-        for proposed in proposal['english_candidates']:
+        for proposed in proposed_candidates:
             item = copy.deepcopy(proposed)
             item['english_lemmas'] = support.english_queries(item['english_lemmas'])
             refs = [entry['id'] for entry in english['evidence'] if set(item['english_lemmas']) & set(entry['requested_lemmas'])]
@@ -282,6 +335,8 @@ def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisiti
             'surfaces': proposal['surfaces'], 'source_language': lexical.line_language(by_line[row['id']], languages),
             'source_evidence_ids': source_ids, 'background_evidence_ids': [], 'language_link_evidence_ids': [],
             'english_candidates': candidates})
+        if discovered is not None:
+            targets[-1]['english_discovery'] = {key: copy.deepcopy(value) for key, value in discovered.items() if key != 'evidence'}
         chosen = {choice['entry_id'] for decision in row['sense_decisions'] if decision['word_index'] in indices
                   for choice in decision.get('chosen', [])}
         used = [eid for entry_id in chosen for eid in witnessed['entry_evidence_ids'].get(entry_id, [])]
@@ -298,7 +353,10 @@ def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisiti
     identity = support.digest({'version': VERSION, 'lines': lines, 'languages': languages,
         'context': context_lines, 'order': performance_order, 'gloss_queries': gloss_rows,
         'support': support.content_digest(packet) if packet else None, 'diagnostics': diagnostics})
-    return {'packet': packet, 'gloss_rows': amended, 'diagnostics': diagnostics, 'identity': identity}
+    result = {'packet': packet, 'gloss_rows': amended, 'diagnostics': diagnostics, 'identity': identity}
+    if discovery_config is not None:
+        result['discovery_queries'] = discovery_queries
+    return result
 
 
 def required_spans(options, lines):

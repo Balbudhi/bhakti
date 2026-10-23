@@ -1,0 +1,248 @@
+{
+  "edition": "3.1",
+  "source": "https://wordnet.princeton.edu/",
+  "license_header": "  1 This software and database is being provided to you, the LICENSEE, by  \n  2 Princeton University under the following license.  By obtaining, using  \n  3 and/or copying this software and database, you agree that you have  \n  4 read, understood, and will comply with these terms and conditions.:  \n  5   \n  6 Permission to use, copy, modify and distribute this software and  \n  7 database and its documentation for any purpose and without fee or  \n  8 royalty is hereby granted, provided that you agree to comply with  \n  9 the following copyright notice and statements, including the disclaimer,  \n  10 and that the same appear on ALL copies of the software, database and  \n  11 documentation, including modifications that you make for internal  \n  12 use or for distribution.  \n  13   \n  14 WordNet 3.1 Copyright 2011 by Princeton University.  All rights reserved.  \n  15   \n  16 THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON  \n  17 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR  \n  18 IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON  \n  19 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-  \n  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  \n  21 OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT  \n  22 INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR  \n  23 OTHER RIGHTS.  \n  24   \n  25 The name of Princeton University or Princeton may not be used in  \n  26 advertising or publicity pertaining to distribution of the software  \n  27 and/or database.  Title to copyright in this software, database and  \n  28 any associated documentation shall at all times remain with  \n  29 Princeton University and LICENSEE agrees to preserve same.  \n",
+  "complete_for_lemmas": [
+    "adamant",
+    "adamantine",
+    "hard",
+    "inexorable",
+    "inflexible",
+    "intransigent"
+  ],
+  "index_rows": {
+    "noun": [
+      "adamant n 1 2 @ ~ 1 0 14858733  \n"
+    ],
+    "verb": [],
+    "adj": [
+      "adamant a 1 2 & + 1 1 01028427  \n",
+      "adamantine a 3 2 & \\ 3 0 02613736 01154749 01028427  \n",
+      "hard a 12 5 ! & ^ = + 12 5 00748528 01158857 01154418 02330284 00840083 02294026 01161269 01160012 01302121 01162481 01131133 01073471  \n",
+      "inexorable a 2 2 & + 2 2 01789850 01028427  \n",
+      "inflexible a 4 4 ! & ^ + 4 1 01028212 01029528 01026905 01032766  \n",
+      "intransigent a 1 2 & + 1 0 01028427  \n"
+    ],
+    "adv": [
+      "hard r 10 1 \\ 10 5 00091820 00092514 00092597 00092328 00092166 00178004 00093000 00092809 00092706 00092022  \n"
+    ]
+  },
+  "data_rows": [
+    {
+      "pos": "a",
+      "synset_offset": 748528,
+      "raw": "00748528 00 a 02 difficult 0 hard 6 025 ^ 00713705 a 0000 ^ 00839816 a 0000 ^ 01158857 a 0000 = 04716529 n 0000 + 04717864 n 0201 + 04716529 n 0102 ! 00752852 a 0101 & 00749254 a 0000 & 00749470 a 0000 & 00749659 a 0000 & 00750063 a 0000 & 00750431 a 0000 & 00750606 a 0000 & 00750839 a 0000 & 00751084 a 0000 & 00751189 a 0000 & 00751340 a 0000 & 00751523 a 0000 & 00751671 a 0000 & 00751972 a 0000 & 00752176 a 0000 & 00752287 a 0000 & 00752408 a 0000 & 00752569 a 0000 & 00752662 a 0000 | not easy; requiring great physical or mental effort to accomplish or comprehend or endure; \"a difficult task\"; \"nesting places on the cliffs are difficult of access\"; \"difficult times\"; \"why is it so hard for you to keep a secret?\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 840083,
+      "raw": "00840083 00 s 0a arduous 0 backbreaking 0 grueling 0 gruelling 0 hard 1 heavy 0 laborious 0 operose 0 punishing 0 toilsome 0 008 & 00839816 a 0000 + 04717220 n 0a03 + 04717220 n 0802 + 00621992 n 0701 + 04717220 n 0701 + 04718307 n 0602 + 04717864 n 0501 + 04717035 n 0101 | characterized by effort to the point of exhaustion; especially physical effort; \"worked their arduous way up the mining valley\"; \"a grueling campaign\"; \"hard labor\"; \"heavy work\"; \"heavy going\"; \"spent many laborious hours on the project\"; \"set a punishing pace\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1026905,
+      "raw": "01026905 00 a 01 inflexible 1 007 ^ 00849067 a 0000 + 05031259 n 0102 + 05031259 n 0101 ! 01025680 a 0101 & 01027148 a 0000 & 01027321 a 0000 & 01027617 a 0000 | resistant to being bent; \"an inflexible iron bar\"; \"an inflexible knife blade\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1028212,
+      "raw": "01028212 00 a 01 inflexible 2 007 + 04667618 n 0101 ! 01027688 a 0101 & 01028427 a 0000 & 01028827 a 0000 & 01029012 a 0000 & 01029225 a 0000 & 01029347 a 0000 | incapable of change; \"a man of inflexible purpose\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1028427,
+      "raw": "01028427 00 s 04 adamant 0 adamantine 0 inexorable 0 intransigent 0 005 & 01028212 a 0000 + 04870728 n 0401 + 04870728 n 0402 + 04838668 n 0303 + 04871024 n 0101 | impervious to pleas, persuasion, requests, reason; \"he is adamant in his refusal to change his mind\"; \"Cynthia was inexorable; she would have none of him\"- W.Churchill; \"an intransigent conservative opposed to every liberal tendency\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1029528,
+      "raw": "01029528 00 a 03 uncompromising 0 sturdy 0 inflexible 4 004 + 04667618 n 0301 + 04869823 n 0201 ! 01029877 a 0101 & 01029765 a 0000 | not making concessions; \"took an uncompromising stance in the peace talks\"; \"uncompromising honesty\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1032766,
+      "raw": "01032766 00 s 03 inflexible 0 rigid 0 unbending 0 003 & 01032659 a 0000 + 04667618 n 0203 + 04667618 n 0101 | incapable of adapting or changing to meet circumstances; \"a rigid disciplinarian\"; \"an inflexible law\"; \"an unbending will to dominate\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1073471,
+      "raw": "01073471 00 s 01 hard 0 001 & 01072500 a 0000 | dried out; \"hard dry rolls left over from the day before\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1131133,
+      "raw": "01131133 00 s 02 hard 0 tough 0 002 & 01129296 a 0000 + 04647089 n 0109 | unfortunate or hard to bear; \"had hard luck\"; \"a tough break\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1154418,
+      "raw": "01154418 00 a 01 hard 1 015 = 04945025 n 0000 ! 01156249 a 0101 & 01154749 a 0000 & 01154838 a 0000 & 01154955 a 0000 & 01155095 a 0000 & 01155243 a 0000 & 01155454 a 0000 & 01155594 a 0000 & 01155692 a 0000 & 01155823 a 0000 & 01155956 a 0000 & 01156024 a 0000 & 01156123 a 0000 + 04945025 n 0101 | resisting weight or pressure  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1154749,
+      "raw": "01154749 00 s 01 adamantine 0 001 & 01154418 a 0000 | having the hardness of a diamond  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1158857,
+      "raw": "01158857 00 a 01 hard 2 009 ^ 00748528 a 0000 ^ 02114041 a 0000 ^ 01511081 a 0000 ^ 02457510 a 0000 + 04851856 n 0104 ! 01159626 a 0101 & 01159105 a 0000 & 01159329 a 0000 & 01159482 a 0000 | dispassionate; \"took a hard look\"; \"a hard bargainer\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1160012,
+      "raw": "01160012 00 a 01 hard 3 002 ! 01160432 a 0101 & 01160257 a 0000 | (of speech sounds); produced with the back of the tongue raised toward or touching the velum; \"Russian distinguished between hard consonants and palatalized or soft consonants\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1161269,
+      "raw": "01161269 00 a 02 hard 5 concentrated 1 001 ! 01161394 a 0101 | (of light) transmitted directly from a pointed light source  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1162481,
+      "raw": "01162481 00 s 02 hard 0 strong 0 001 & 01162103 a 0000 | being distilled rather than fermented; having a high alcoholic content; \"hard liquor\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1302121,
+      "raw": "01302121 00 s 03 intemperate 0 hard 0 heavy 0 003 & 01300436 a 0000 + 00749309 n 0102 + 00748969 n 0102 | given to excessive indulgence of bodily appetites especially for intoxicating liquors; \"a hard drinker\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1789850,
+      "raw": "01789850 00 s 07 grim 0 inexorable 0 relentless 0 stern 0 unappeasable 0 unforgiving 0 unrelenting 0 006 & 01789689 a 0000 + 04646728 n 0401 + 04838668 n 0301 + 04838668 n 0203 + 04838668 n 0202 + 04717403 n 0102 | not to be placated or appeased or moved by entreaty; \"grim determination\"; \"grim necessity\"; \"Russia's final hour, it seemed, approached with inexorable certainty\"; \"relentless persecution\"; \"the stern demands of parenthood\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2294026,
+      "raw": "02294026 00 a 04 unvoiced 0 voiceless 4 surd 0 hard 0 003 + 07145049 n 0204 ! 02293817 a 0101 & 02294239 a 0000 | produced without vibration of the vocal cords; \"unvoiced consonants such as `p' and `k' and `s'\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2330284,
+      "raw": "02330284 00 s 03 hard 0 knockout 0 severe 0 002 & 02328781 a 0000 + 05043870 n 0303 | very strong or vigorous; \"strong winds\"; \"a hard left to the chin\"; \"a knockout punch\"; \"a severe blow\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2613736,
+      "raw": "02613736 01 a 01 adamantine 0 001 \\ 14858733 n 0102 | consisting of or having the hardness of adamant  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 14858733,
+      "raw": "14858733 27 n 02 diamond 0 adamant 0 003 @ 14657384 n 0000 @ 15102617 n 0000 ~ 14817563 n 0000 | very hard native crystalline carbon valued as a gem  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 91820,
+      "raw": "00091820 02 r 01 hard 0 001 \\ 00840083 a 0105 | with effort or force or vigor; \"the team played hard\"; \"worked hard all day\"; \"pressed hard on the lever\"; \"hit the ball hard\"; \"slammed the door hard\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 92022,
+      "raw": "00092022 02 r 01 hard 1 000 | to the full extent possible; all the way; \"hard alee\"; \"the ship went hard astern\"; \"swung the wheel hard left\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 92166,
+      "raw": "00092166 02 r 02 hard 3 hardly 1 001 \\ 00748528 a 0102 | slowly and with difficulty; \"prejudices die hard\"; \"he was so dizzy he could hardly stand up straight\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 92328,
+      "raw": "00092328 02 r 02 hard 4 severely 3 001 \\ 01132864 a 0201 | causing great damage or hardship; \"industries hit hard by the depression\"; \"she was severely affected by the bank's failure\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 92514,
+      "raw": "00092514 02 r 02 hard 5 firmly 1 000 | with firmness; \"held hard to the railing\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 92597,
+      "raw": "00092597 02 r 01 hard 7 000 | earnestly or intently; \"thought hard about it\"; \"stared hard at the accused\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 92706,
+      "raw": "00092706 02 r 01 hard 8 000 | with pain or distress or bitterness; \"he took the rejection very hard\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 92809,
+      "raw": "00092809 02 r 01 hard 9 000 | very near or close in space or time; \"it stands hard by the railroad tracks\"; \"they were hard on his heels\"; \"a strike followed hard upon the plant's opening\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 93000,
+      "raw": "00093000 02 r 01 hard a 001 \\ 01155594 a 0101 | into a solid condition; \"concrete that sets hard within a few hours\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 178004,
+      "raw": "00178004 02 r 03 heavily 1 intemperately 0 hard 6 002 \\ 02410992 a 0201 ! 00178236 r 0101 | indulging excessively; \"he drank heavily\"  \n"
+    }
+  ],
+  "grammar_rows": [
+    {
+      "pos": "a",
+      "offset": 19769,
+      "raw": "00019769 00 s 02 handy 0 ready_to_hand(p) 0 002 & 00019169 a 0000 + 04726275 n 0101 | easy to reach; \"found a handy spot for the can opener\"  \n"
+    },
+    {
+      "pos": "a",
+      "offset": 524413,
+      "raw": "00524413 00 s 01 dead(a) 0 001 & 00522139 a 0000 | the complete stoppage of an action; \"came to a dead stop\"  \n"
+    },
+    {
+      "pos": "a",
+      "offset": 14377,
+      "raw": "00014377 00 s 02 abounding 0 galore(ip) 0 001 & 00013906 a 0000 | existing in abundance; \"abounding confidence\"; \"whiskey galore\"  \n"
+    },
+    {
+      "pos": "v",
+      "offset": 27261,
+      "raw": "00027261 29 v 02 stretch 1 extend 0 007 @ 00025196 v 0000 + 00370340 n 0201 + 05302105 n 0202 + 00629932 n 0101 + 00629932 n 0102 ~ 00027563 v 0000 ~ 00028160 v 0000 02 + 08 00 + 02 01 | extend one's limbs or muscles, or the entire body; \"Stretch your legs!\"; \"Extend your right arm above your head\"  \n"
+    }
+  ],
+  "grammar_source": "https://wordnet.princeton.edu/documentation/wndb5wn",
+  "verb_frame_templates": {
+    "1": "Something ----s",
+    "2": "Somebody ----s",
+    "3": "It is ----ing",
+    "4": "Something is ----ing PP",
+    "5": "Something ----s something Adjective/Noun",
+    "6": "Something ----s Adjective/Noun",
+    "7": "Somebody ----s Adjective",
+    "8": "Somebody ----s something",
+    "9": "Somebody ----s somebody",
+    "10": "Something ----s somebody",
+    "11": "Something ----s something",
+    "12": "Something ----s to somebody",
+    "13": "Somebody ----s on something",
+    "14": "Somebody ----s somebody something",
+    "15": "Somebody ----s something to somebody",
+    "16": "Somebody ----s something from somebody",
+    "17": "Somebody ----s somebody with something",
+    "18": "Somebody ----s somebody of something",
+    "19": "Somebody ----s something on somebody",
+    "20": "Somebody ----s somebody PP",
+    "21": "Somebody ----s something PP",
+    "22": "Somebody ----s PP",
+    "23": "Somebody's (body part) ----s",
+    "24": "Somebody ----s somebody to INFINITIVE",
+    "25": "Somebody ----s somebody INFINITIVE",
+    "26": "Somebody ----s that CLAUSE",
+    "27": "Somebody ----s to somebody",
+    "28": "Somebody ----s to INFINITIVE",
+    "29": "Somebody ----s whether INFINITIVE",
+    "30": "Somebody ----s somebody into V-ing something",
+    "31": "Somebody ----s something with something",
+    "32": "Somebody ----s INFINITIVE",
+    "33": "Somebody ----s VERB-ing",
+    "34": "It ----s that CLAUSE",
+    "35": "Something ----s INFINITIVE"
+  },
+  "verb_frame_source": "https://wordnet.princeton.edu/documentation/wninput5wn"
+}

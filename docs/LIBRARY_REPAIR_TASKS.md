@@ -26,10 +26,14 @@ integrated. The joined source acquisition, translation/review, cache renewal and
 fresh-source support checks pass 109 tests. Relevant changed evidence reruns
 English and review while preserving a validated source glossary; unrelated cache
 growth does not repay work. Missing source-request counters cannot reset the
-run's allowance, including loss between two acquisitions. English embedding discovery is implemented
-privately; review found that compact dictionary evidence omitted adjective
-placement restrictions and verb sentence frames. That grammar-loss defect must
-be fixed before its integration. Missing-source bootstrap, shared stage-level
+run's allowance, including loss between two acquisitions. English embedding
+discovery is now integrated; the joined discovery, source, support and cache
+checks pass 139 tests. Compact evidence preserves adjective placement restrictions
+and lemma-specific verb frames, closing the grammar-loss defect. Real translation
+quality remains unqualified. Newly acquired source definitions must also inform
+the initial English ranking query, and the fresh-source outer route still needs
+downstream renewal when materialized evidence changes under unchanged settings.
+Missing-source bootstrap, shared stage-level
 escalation, historical crop adoption and source-language dictionary coverage
 remain open. Hindi Platts acquisition exists; Punjabi and Tamil coverage must
 not be represented as equivalent verified dictionary support.

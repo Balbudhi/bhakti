@@ -406,6 +406,9 @@ def complete(pipeline, song_dir, audited, job, options):
             identity_inputs['policy'] = {**policy, 'automatic_lexical': automatic}
             glossary_inputs['policy'] = {**policy, 'automatic_lexical':
                 {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery')}}
+        if full_support is not None:
+            glossary_inputs['policy']['lexical_support'] = pipeline.bhakti_lexical_support.content_digest(
+                full_support, english_grammar=False)
         glossary_identity = digest(glossary_inputs)
         identity = digest(identity_inputs)
         configuration_run_id = identity

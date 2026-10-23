@@ -15,11 +15,17 @@ POS = {'noun':'n','verb':'v','adj':'a','adv':'r'}
 def digest(value):
     return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
-def content_digest(packet):
+def content_digest(packet, *, english_grammar=True):
     """Hash evidence and coverage, excluding relocatable local transport paths."""
     content=copy.deepcopy(packet)
     for evidence in content.get('evidence',[]):
         evidence.pop('witness_path',None)
+        if evidence.get('kind') == 'english_definition':
+            grammar = wordnet_grammar(evidence)
+            if english_grammar:
+                evidence['grammar'] = grammar
+            else:
+                evidence.pop('grammar', None)
     if content.get('english_lookup'):
         content['english_lookup'].pop('directory',None)
     return digest(content)
@@ -68,6 +74,78 @@ def parse_wordnet_row(raw, offset, pos):
     except (IndexError, TypeError, UnicodeError, ValueError) as exc:
         raise ValueError('Malformed WordNet record: ' + str(exc)) from exc
 
+# Princeton WordNet's generic sentence frames:
+# https://wordnet.princeton.edu/documentation/wninput5wn
+VERB_FRAMES = {1: 'Something ----s',
+ 2: 'Somebody ----s',
+ 3: 'It is ----ing',
+ 4: 'Something is ----ing PP',
+ 5: 'Something ----s something Adjective/Noun',
+ 6: 'Something ----s Adjective/Noun',
+ 7: 'Somebody ----s Adjective',
+ 8: 'Somebody ----s something',
+ 9: 'Somebody ----s somebody',
+ 10: 'Something ----s somebody',
+ 11: 'Something ----s something',
+ 12: 'Something ----s to somebody',
+ 13: 'Somebody ----s on something',
+ 14: 'Somebody ----s somebody something',
+ 15: 'Somebody ----s something to somebody',
+ 16: 'Somebody ----s something from somebody',
+ 17: 'Somebody ----s somebody with something',
+ 18: 'Somebody ----s somebody of something',
+ 19: 'Somebody ----s something on somebody',
+ 20: 'Somebody ----s somebody PP',
+ 21: 'Somebody ----s something PP',
+ 22: 'Somebody ----s PP',
+ 23: "Somebody's (body part) ----s",
+ 24: 'Somebody ----s somebody to INFINITIVE',
+ 25: 'Somebody ----s somebody INFINITIVE',
+ 26: 'Somebody ----s that CLAUSE',
+ 27: 'Somebody ----s to somebody',
+ 28: 'Somebody ----s to INFINITIVE',
+ 29: 'Somebody ----s whether INFINITIVE',
+ 30: 'Somebody ----s somebody into V-ing something',
+ 31: 'Somebody ----s something with something',
+ 32: 'Somebody ----s INFINITIVE',
+ 33: 'Somebody ----s VERB-ing',
+ 34: 'It ----s that CLAUSE',
+ 35: 'Something ----s INFINITIVE'}
+
+
+def wordnet_grammar(evidence):
+    """Derive lexical position/frame restrictions from the verified raw record.
+
+    Frame source word00 covers every lemma; other word numbers are one-based.
+    Expose zero-based lemma indices, never spread a lemma-only frame to synonyms.
+    """
+    words, _ = parse_wordnet_row(evidence['raw'], evidence['synset_offset'], evidence['pos'])
+    fields = evidence['raw'].partition('|')[0].split()
+    count = int(fields[3], 16)
+    positions = []
+    labels = {'a': 'attributive', 'p': 'predicative', 'ip': 'immediately_postnominal'}
+    for index in range(count):
+        marker = re.search(r'\((a|p|ip)\)$', fields[4 + 2 * index])
+        if marker:
+            require(evidence['pos'] == 'a', 'WordNet grammar marker on non-adjective')
+            positions.append({'word_index': index, 'lemma': words[index], 'position': labels[marker.group(1)]})
+    cursor = 4 + 2 * count
+    cursor += 1 + 4 * int(fields[cursor])
+    frames = []
+    if evidence['pos'] == 'v':
+        total = int(fields[cursor]); cursor += 1
+        for _ in range(total):
+            _, number, word = fields[cursor:cursor + 3]; cursor += 3
+            number, word = int(number), int(word, 16)
+            require(number in VERB_FRAMES and 0 <= word <= count, 'WordNet grammar frame/index invalid')
+            frames.append({'number': number, 'template': VERB_FRAMES[number],
+                           'word_indices': list(range(count)) if word == 0 else [word - 1]})
+    grammar = {'adjective_positions': positions, 'verb_frames': frames}
+    require('grammar' not in evidence or evidence['grammar'] == grammar,
+            'English grammar differs from raw witness')
+    return grammar
+
+
 def lookup_wordnet(directory, lemmas, *, edition):
     directory=Path(directory)
     if (directory/'manifest.json').is_file():
@@ -104,6 +182,9 @@ def lookup_wordnet(directory, lemmas, *, edition):
                     if eid not in rows:
                         rows[eid]={'id':eid,'kind':'english_definition','language':'en','edition':edition,'pos':pos,'synset_offset':offset,'lemmas':words,'requested_lemmas':[],'gloss':gloss,'raw':raw,'work':'Princeton WordNet '+edition,'locus':f'data.{name}:{offset:08d}','source_url':manifest.get('source','https://wordnet.princeton.edu/'),'witness_path':str(data.resolve()),'witness_sha256':manifest['data_sha256'][name],'limitations':['Definition/example evidence; not a complete connotation dictionary.']}
                     if lemma not in rows[eid]['requested_lemmas']:rows[eid]['requested_lemmas'].append(lemma)
+    for row in rows.values():
+        row['requested_lemmas'].sort()
+        row['grammar'] = wordnet_grammar(row)
     return sorted(rows.values(),key=lambda row:row['id'])
 
 def wordnet_receipt(directory, edition, lemmas):
@@ -163,7 +244,7 @@ def validate_support(packet, lines, languages):
             text=raw.decode();span=e.get('witness_span')
             require(text[span[0]:span[1]]==quotation if span else text.count(quotation)==1,'source quotation differs from witness')
         by[e['id']]=e
-    english={eid:e for eid,e in by.items() if e['kind']=='english_definition'}
+    english={eid:{**e, 'grammar':wordnet_grammar(e)} for eid,e in by.items() if e['kind']=='english_definition'}
     receipt=packet.get('english_lookup');expected={}
     if english or receipt is not None:
         require(isinstance(receipt,dict),'English lookup identity missing')
@@ -285,7 +366,15 @@ def prompt(packet, target_ids, stage):
     if projected is None:return ''
     # Private file paths are transport metadata, not model reasoning evidence.
     projected.pop('english_lookup',None)
-    for e in projected['evidence']:e.pop('witness_path',None)
+    for e in projected['evidence']:
+        if e.get('kind') == 'english_definition':
+            e['grammar'] = wordnet_grammar(e)
+        for field in ('raw', 'witness_path', 'witness_sha256', 'witness_span', 'quotation_sha256'):
+            e.pop(field, None)
+    for target in projected['targets']:
+        discovery = target.get('english_discovery')
+        if discovery is not None:
+            discovery.get('pool', {}).pop('records', None)
     instruction=('Return support_decisions only for targeted lines: target_id, used_evidence_ids, role (operative_meaning, activated_image, background_only), reason. Background evidence cannot establish an inherited-language sense.' if stage=='gloss' else
         'Return wording_decisions only for targeted lines: target_id, chosen_candidate_id (null for a new composition), expression, kind (word, compositional_phrase, transparent_compound), english_evidence_ids, reason, word_indices, ordinary_paraphrase, component_word_indices. Prefer precise intelligible English. Compare word, phrase and transparent compound by meaning, image, connotation and tone, not a mandatory phrase-failure rule. A dictionary sense is not proof of its fit here.' if stage=='translation' else
         'Independently check source and wording decisions against these exact witnesses, passage grammar and English. Reject unsupported inherited meanings, unwanted connotations, opaque compounds and gloss/English disagreement. Writer decisions are claims, not authority. Preserve owner English; report alternatives privately.')
