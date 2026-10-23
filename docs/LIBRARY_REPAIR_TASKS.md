@@ -35,6 +35,15 @@ verification for published content. Five preflight input holds involve archived
 trimmed spoken definitions or a wordless ālāp and need explicit review eligibility,
 not guessed new source text.
 
+The cheaper-review qualification then spent $0.125549175 on three calls and
+failed: known Rehnā qualifier missed, Har Jīu output truncated, owner control not
+dispatched after the ledger block. Today's task-accounted total is $2.148176225.
+Broad paid processing remains stopped; the tested medium setting is not deployed.
+Next: narrow the review's source-link accountability and avoid reconstructing
+all dictionary alternatives during a first-pass existing-English audit. Preserve
+the real failed examples and require the new check to distinguish bad and corrected
+English before scaling. The broader goal remains unfinished.
+
 ## Goal
 
 Repair and publish the entire Bhakti song library with complete performed lyrics,

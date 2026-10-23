@@ -57,6 +57,27 @@ No additional paid calls were made for this status update. Gemini 3.7 Flash is
 the normal first route, with bounded Gemini 3.1 Pro escalation for failed units;
 owner English, original failed evidence and unresolved holds remain protected.
 
+## Cheaper-review qualification — 22 October 2026
+
+A bounded medium-reasoning / 8,192-token review check stopped after three API
+calls costing $0.125549175. It used the actual compacted reviewer prompts and
+existing bounded transport, with ten real target lines per request. The reviewer
+missed the known unsupported second “true” attached to ṭhikānā in Rehnā; the
+minimally corrected control passed, but its reasoning still inferred a “true
+permanent” refuge from general context. The Har Jīu agency check exhausted output
+(7,032 reasoning tokens out of 8,174 completion tokens), leaving truncated JSON.
+Its partial mention of the attachment problem is not an accepted review. The
+ledger blocked the fourth, protected-English control; no retry or Pro call ran.
+
+This setting is **not qualified** and production defaults remain unchanged. The
+reviewer-configuration patch stays private. The next quality prerequisite is a
+focused linked-source/gloss-to-English check that rejects transferred or repeated
+qualifiers, with dictionary reconstruction reserved for actual lexical disputes;
+repeating a broad high-reasoning review is not a cost solution. The historical
+high and medium requests have different payload/cache conditions and cannot
+support a reliable whole-library price forecast. No broad paid run is authorized
+by this failed qualification alone.
+
 ## Recovered design and available assets
 
 The maintained Vedanta design is source-first: exact witness and context → word
