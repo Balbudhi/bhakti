@@ -25,8 +25,11 @@ qualify. The candidate/lemma budget mismatch is the next demonstrated defect;
 it has now been corrected without discarding alternatives. The producer permits
 four candidates with at most four lookup strings each; discovery accepts their
 at most sixteen normalized queries. Full definitions survive partial embedding
-ranking, whose input/call limits remain unchanged. A new bounded quality run is
-pending; the original held attempt remains immutable.
+ranking, whose input/call limits remain unchanged. The new bounded run consumed
+dictionary/embedding evidence but still produced an unsupported `true` modifier.
+It stopped at the form-in-quotation check before independent review, costing
+$0.1307826 total. Connected retrieval is now observed; satisfactory translation
+quality is not. Both original held attempts remain immutable.
 Current execution evidence belongs in [the repair task](LIBRARY_REPAIR_TASKS.md).
 
 ## Bounded intake and boundary recovery

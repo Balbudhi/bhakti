@@ -81,11 +81,21 @@ embedding ranking reaches its unchanged 64-input allowance. Seven new tests use
 the actual failed glossary and an authentic all-POS WordNet subset; the joined
 62 focused checks pass. A separate unpaid source-adapter diagnostic fetched one
 Platts entry for ṭhikānā from two queries with no gaps. That is adapter evidence,
-not evidence consumed by the earlier stopped run. A new two-row comparison under
-the corrected policy is running privately at
-`/tmp/bhakti-rehna-clause-qualification/query-budget-comparison/`, retaining the
-same $0.50/three text and $0.03/twelve embedding ceilings. Do not overwrite or
-resume the earlier held run.
+not evidence consumed by the earlier stopped run. The new two-row comparison
+under the corrected policy is terminal at
+`/tmp/bhakti-rehna-clause-qualification/query-budget-comparison/`. It consumed
+source-dictionary and English evidence plus four embedding requests, but did not
+qualify. Two parsed text calls cost $0.12955725 and embeddings $0.00122535.
+The writer still rendered `true resting place` and requested human review.
+Its exact English dictionary quotation omitted the headword, so the current
+form-in-quotation validator stopped execution before independent review. Both
+the citation representation and unsupported qualifier require examination;
+correcting the former does not certify the latter. The writer used 32,250 input
+tokens and 21,868 output tokens, including 19,935 reasoning tokens. Prompt size
+and effort now have concrete cost/latency evidence to investigate. Do not replay
+or relabel either held run as accepted. Confirmed task spending after both text
+comparisons and the clock diagnostic is $3.186182075; the earlier $0.139404
+unknown reservation is unchanged. Original content and owner English stay exact.
 
 Explicit lexical support, historical audio-cache compatibility, semantic cache
 reuse, bounded intake and automatic WordNet lookup delivery are integrated.
@@ -121,7 +131,7 @@ response was independently reconciled without replay or editing paid history.
 The other three planned calls did not run. This fixture did not qualify the
 model clock, and no song timestamps may be shifted on its authority. Evidence is
 in `/tmp/bhakti-model-clock-qualification/OBSERVED_RESULT.json`. Confirmed task
-spending including this diagnostic is $3.055399475; the earlier unknown
+spending before the subsequent query-budget comparison was $3.055399475; the earlier unknown
 reservation is unchanged.
 The optional historical transform consumer is integrated with 65 relevant local
 checks. Original media/support snapshots now survive replacement of the live
