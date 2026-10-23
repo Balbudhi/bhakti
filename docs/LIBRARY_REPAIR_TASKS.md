@@ -22,7 +22,7 @@ The synonymous-word hold has no stated material basis. The reviewer does not
 separately report the saved frame's `only genuine` claim. This is
 improved detection on one case, not full reviewer or repair qualification; no
 draft is accepted or published. The original evidence and owner English remain
-unchanged. Confirmed task spending is now $3.256235075, separate from the prior
+unchanged. Confirmed task spending is now $3.258394325, separate from the prior
 $0.139404 unknown reservation.
 Next: correct those demonstrated review/disposition failures and the routed
 writer admission gate. Actual caller tests show that it currently applies final
@@ -31,11 +31,27 @@ can examine the original doubt. The proposed fix must preserve that doubt,
 retain structural/source/citation guards, and admit only private drafts to review.
 Do not invent a textual defect or buy another writer solely to clear a confidence
 flag. Final acceptance still requires explicit resolution and no remaining
-material defect. This admission/disposition change is designed, not implemented.
+material defect. The admission/disposition change is implemented privately but
+has not passed independent integration review: actual resume probes found that
+deleting prior-concern evidence or the current review-version header can bypass
+required review. A separate direct-writer probe found a fixed artifact filename
+collision after a legitimate new candidate. Fixes must bind required concerns
+and review version to the coordinator's saved state and preserve each writer
+candidate separately. The four regression cases reproduce these failures and
+pass on the corrected private implementation. Independent probes confirm those
+resume and direct-writer fixes, but final publication/source validators still
+accept an incomplete list of prior writer concerns. Their reconstruction must
+use the actual complete prior route/repair evidence before this core is integrated.
 The next integration must also replace the existing-library repair wrapper:
 `repair_current_reader` still retries glossary, writer and review together,
 while fresh-source intake uses the shared coordinator. Its confirmed word-index
 mutation limits, historical findings and owner locks must survive that migration.
+Its private replacement now exercises the shared coordinator in 16 actual-caller
+tests with synthetic provider responses: reviewer-only retry, English-only repair,
+source/gloss repair, zero-call resume, owner protection, historical uncertain
+attempts and exact permitted popup changes. Those checks establish orchestration,
+not real translation quality. The replacement awaits the corrected shared review
+core before integration and a bounded real-song qualification.
 Review-specific naming/three-component instructions are prepared privately and
 passed 23 caller/naming checks; they are not activated under the old review task.
 
@@ -75,6 +91,15 @@ did not use that path. Across 426 actual listener files, no start metadata excee
 it does mean the synthetic multi-second offset failure should not block unrelated
 fresh timing. The next acoustic checks must use the actual production attachment
 and separately verify its correspondence with the offered listener audio.
+A separate one-call canonical-attachment diagnostic has now ended without a
+usable timing answer. The exact production canonical AAC was attached under a
+$0.01/one-call cap; the provider returned HTTP 200 but exhausted its 512-token
+completion limit (498 reported completion tokens, including 487 reasoning tokens),
+leaving truncated JSON. The ledger records `invalid-response` and $0.00215925;
+no retry ran and no timestamp is accepted from the partial response. The terminal
+evidence is `/tmp/bhakti-canonical-model-clock/run/`. This demonstrates an
+insufficient completion allowance for that response, not acoustic success or
+failure. The original native experiment and all listener/timing files are unchanged.
 
 The bounded connected text comparison finished privately in
 `/tmp/bhakti-connected-qualification/real-run-preparation/`, under the unchanged
