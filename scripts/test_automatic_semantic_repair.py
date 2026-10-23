@@ -91,11 +91,20 @@ class AutomaticRepairTests(unittest.TestCase):
         for item in evidence:
             fail = self.reject_always or self.unresolved or item['gloss']['semantic_frame']['agent'] != 'my breath'
             rows.append({'id': item['source']['id'], 'passes': not fail,
-                'human_review_recommended': fail, 'agency_preserved': not fail,
+                'human_review_recommended': self.unresolved, 'agency_preserved': not fail,
                 'imagery_preserved': True, 'all_meaning_accounted_for': True,
                 'unsupported_additions': [], 'material_choice': '',
                 'reason': 'Subject mismatch.' if fail else 'Source agency preserved.',
                 'issues': [self.issue(item['source']['id'])] if fail else []})
+            row=rows[-1]
+            row['component_judgments']={key:{'status':'supported','reason':'Canned source-grounded fixture conclusion.'} for key in ('gloss','frame','english')}
+            if fail:
+                row['component_judgments']['frame']={'status':'unresolved' if self.unresolved else 'defect','reason':'The frame changes the breath agency.'}
+                if item['draft']['literal_english']=='I abandon my breath.':
+                    row['component_judgments']['english']={'status':'unresolved' if self.unresolved else 'defect','reason':'The English changes the breath agency.'}
+                    if not self.unresolved:
+                        issue=self.issue(item['source']['id']);issue['kind']='english_realization';row['issues'].append(issue)
+
         return rows
 
     @staticmethod
@@ -434,7 +443,8 @@ class AutomaticRepairTests(unittest.TestCase):
                 evidence = self.payload(args[2], 'EVIDENCE:\n')
                 for review, item in zip(result['packet']['reviews'], evidence):
                     if item['draft']['literal_english'] == 'I abandon my breath.':
-                        review.update(passes=False, human_review_recommended=True, agency_preserved=False)
+                        review.update(passes=False, human_review_recommended=False, agency_preserved=False)
+                        review['component_judgments']['english']={'status':'defect','reason':'The English reverses source agency.'}
                         issue = self.issue(item['source']['id']); issue['kind'] = 'english_realization'
                         review['issues'] = [issue]
             elif 'REPAIR FEEDBACK:\n' not in args[2]:

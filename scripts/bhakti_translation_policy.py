@@ -209,7 +209,7 @@ def prepare_naming_options(options, lines, languages, *, source_slug=None):
     return local
 
 
-def naming_prompt(options, lines):
+def naming_prompt(options, lines, *, review=False):
     packet = getattr(options, 'semantic_naming_conventions', None)
     if not packet or not packet.get('matches'):
         return ''
@@ -217,6 +217,18 @@ def naming_prompt(options, lines):
     projected = {'matches': [r for r in packet['matches'] if r['line_id'] in ids], 'conflicts': []}
     if not projected['matches']:
         return ''
+    if review:
+        return ('\nSCOPED NAMING CONVENTIONS:\n' + json.dumps(projected, ensure_ascii=False)
+            + '\nThese are reviewed renderings of the identified occurrence, not prior translated lines or dictionary entries. '
+              'Check the visible English name/epithet against english_head, allowing grammatical inflection and possessives. '
+              'Evaluate each linked popup together with the name it explains. '
+              'A popup need not repeat the visible name or reproduce gloss_identity verbatim. '
+              'Check whether it identifies the same referent or relationship and explains any evidenced literal or traditional meaning; '
+              'reject a wrong referent, missing evidenced meaning, or an empty name-only explanation. '
+              'Treat the identity text as facts to check in that linked context, not mandatory standalone wording. '
+              'Keep repeated tokens separately linked. Label traditional explanations; never invent a derivation or dictionary citation. '
+              'Source evidence takes precedence over a conflicting convention: report the conflict rather than distort the source. '
+              'Owner-locked English remains exact; any naming conflict is a separate finding, not permission to rewrite it.\n')
     return ('\nSCOPED NAMING CONVENTIONS:\n' + json.dumps(projected, ensure_ascii=False)
         + '\nThese are reviewed renderings of the identified occurrence, not prior translated lines or dictionary entries. '
           'Preserve its English name/epithet and clicked identity while deriving grammar and all other wording from source. '

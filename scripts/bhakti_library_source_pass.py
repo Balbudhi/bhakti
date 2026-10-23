@@ -773,6 +773,7 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
             [line['id'] for line in targets[offset:offset + 10]],
             performance_order=plan['performance_order'], full_evidence=context_evidence)
     options.semantic_context_evidence = copy.deepcopy(context_evidence)
+    options.semantic_full_source = copy.deepcopy(plan["lines"])
     options.semantic_performance_order = plan['performance_order']
     options.semantic_source_identity = digest({'lines': plan['lines'], 'order': plan['performance_order']})
     audited = {'packet': {'metadata': metadata, 'verified_lines': targets,
@@ -782,8 +783,8 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
                 'languages': languages, 'reading_context': context_evidence, 'policy': pipeline.semantic_stage_policy(options)}
     identity = digest(evidence)
     validation_song = Path(route_dir) / 'fresh-source-support' / identity / 'songs' / song_dir.name
-    def candidate_errors(value):
-        errors = fresh_target_errors(plan, metadata, value)
+    def candidate_errors(value, *, expected_review_task_version=None):
+        errors = fresh_target_errors(plan, metadata, value, expected_review_task_version=expected_review_task_version)
         if not errors:
             errors.extend(pipeline.bhakti_semantic_repair.derived_support_errors(
                 pipeline, validation_song, audited, value['glosses'], value['translations'], options))
@@ -829,7 +830,7 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
                 raise routes.UnitUnresolved(unit_id, previous['state'].get('reason', 'historical attempt unresolved'),
                     previous['state'].get('issues', []), legacy_state)
             old = previous['result']
-            errors = candidate_errors(old)
+            errors = candidate_errors(old, expected_review_task_version=old['translations'].get('review_task_version', 0))
             if not errors:
                 if old['translations'].get('review_task_version', 0) == pipeline.REVIEW_TASK_VERSION:
                     return old
@@ -879,7 +880,7 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
         raise RuntimeError('fresh source semantic evidence invalid: ' + '; '.join(errors))
     return result
 
-def fresh_target_errors(plan, metadata, value):
+def fresh_target_errors(plan, metadata, value, *, expected_review_task_version=None):
     import bhakti_pipeline as pipeline
     targets = [line for line in plan['lines'] if line['id'] in plan['new_target_ids']]
     try:
@@ -889,11 +890,55 @@ def fresh_target_errors(plan, metadata, value):
             return ['fresh target rows are not lists']
         if any(not isinstance(row, dict) for row in glosses + translations):
             return ['fresh target rows are not objects']
+        import argparse
+        import bhakti_library_pass as library
+        reused = plan.get('reuse_by_id', {})
+        context = []
+        if reused:
+            planned = {line['id']: line for line in plan['lines']}
+            reader = {'SONG_META': metadata, 'SONG_LINES': copy.deepcopy(reused),
+                      'SONG_SEQUENCE': [{'ref': event['line_id'], 'section': planned[event['line_id']].get('kind', 'verse'), 'repeats': 1}
+                                        for event in plan.get('performance_order', []) if event['line_id'] in reused]}
+            sources, old_glosses, drafts = library.reader_evidence(reader)
+            context = [{'source': copy.deepcopy(planned[row['id']]), 'gloss': gloss, 'draft': draft}
+                       for row, gloss, draft in zip(sources, old_glosses, drafts)]
+        options = argparse.Namespace(semantic_full_source=plan['lines'],
+            semantic_performance_order=plan.get('performance_order', []), semantic_context_evidence=context)
+        kwargs = pipeline.translation_packet_contract_kwargs(targets, value['translations'], options, expected_review_task_version=expected_review_task_version, final_consumer=True)
         return (pipeline.fresh_gloss_contract_errors(targets, glosses, metadata.get('languages', []))
-                + pipeline.fresh_translation_contract_errors(targets, glosses, translations)
-                + pipeline.validate_line_contract(targets, glosses, translations))
-    except (KeyError, TypeError) as exc:
-        return ['incomplete fresh target artifact: ' + str(exc)]
+                + pipeline.fresh_translation_contract_errors(targets, glosses, translations, **kwargs)
+                + pipeline.validate_line_contract(targets, glosses, translations, **kwargs))
+    except (KeyError, TypeError, ValueError) as exc:
+        return ['incomplete or invalid fresh target artifact: ' + str(exc)]
+
+
+def source_semantic_merge_errors(audited, glosses, translations, evidence):
+    """Validate fresh proof and exact retained reader evidence before mixed rendering."""
+    import bhakti_library_pass as library
+    try:
+        plan = evidence['plan']; metadata = evidence['metadata']; new = evidence['new']
+        if (audited['packet']['verified_lines'] != plan['lines']
+                or audited['packet'].get('performance_order') != plan['performance_order']):
+            return ['mixed source publication differs from authoritative source plan']
+        errors = fresh_target_errors(plan, metadata, new) if plan['new_target_ids'] else []
+        if errors:
+            return errors
+        reused = plan['reuse_by_id']
+        old_reader = {'SONG_META': metadata, 'SONG_LINES': copy.deepcopy(reused),
+                      'SONG_SEQUENCE': [{'ref': event['line_id'], 'section': next(row for row in plan['lines'] if row['id'] == event['line_id']).get('kind', 'verse'), 'repeats': 1}
+                                        for event in plan['performance_order'] if event['line_id'] in reused]}
+        _, old_glosses, old_translations = library.reader_evidence(old_reader)
+        for field, actual, old, fresh in (
+                ('gloss', glosses['packet']['glosses'], old_glosses, new['glosses']['packet']['glosses']),
+                ('translation', translations['packet']['translations'], old_translations, new['translations']['packet']['translations'])):
+            expected = {row['id']: row for row in old + fresh}
+            if set(expected) != {row['id'] for row in plan['lines']}:
+                errors.append('mixed ' + field + ' evidence population mismatch')
+            elif actual != [expected[row['id']] for row in plan['lines']]:
+                errors.append('mixed ' + field + ' changed independently verified fresh or retained evidence')
+        return errors
+    except (KeyError, TypeError, ValueError) as exc:
+        return ['invalid mixed source semantic handoff: ' + str(exc)]
 
 
 def _source_confirmation_units(reader, delta, observation):
@@ -1404,12 +1449,13 @@ def run_source_candidate(*, root, slug, reader, workspace, route_dir, options, d
         english_by = {row['id']: row for row in old_translations + new['translations']['packet']['translations']}
         glosses = {'packet': {'glosses': [gloss_by[line['id']] for line in plan['lines']]}}
         translations = {'packet': {'translations': [english_by[line['id']] for line in plan['lines']]}}
-        errors = pipeline.publication_errors(normalized, timing, glosses, translations)
+        semantic_evidence = {'plan': plan, 'metadata': metadata, 'new': new}
+        errors = pipeline.publication_errors(normalized, timing, glosses, translations, source_semantic_evidence=semantic_evidence)
         if errors: return hold('source_publication_contract', '; '.join(errors))
         job = {**copy.deepcopy(mapped_metadata), 'slug': slug,
                'displayTitle': reader['SONG_META']['title'], 'languages': metadata['languages']}
         pipeline.generate(target, job, source, normalized, timing, glosses, translations,
-            write_catalogue_after=False, source_reader_metadata=mapped_metadata)
+            write_catalogue_after=False, source_reader_metadata=mapped_metadata, source_semantic_evidence=semantic_evidence)
         candidate = contract.load_data(target / 'data.js')
         candidate['SONG_META'] = copy.deepcopy(mapped_metadata)
         candidate['SONG_LINES'].update(copy.deepcopy(plan['reuse_by_id'] if adoption else reader['SONG_LINES']))

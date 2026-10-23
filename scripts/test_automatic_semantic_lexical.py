@@ -55,7 +55,8 @@ class AutomaticSemanticLexicalTests(unittest.TestCase):
         if kind=='bhakti_translation_review':
             return {'packet':{'reviews':[{'id':'v','passes':True,'human_review_recommended':False,
                 'agency_preserved':True,'imagery_preserved':True,'all_meaning_accounted_for':True,
-                'unsupported_additions':[],'material_choice':'','reason':'Transport control, not quality proof.','issues':[]}]}}
+                'unsupported_additions':[],'material_choice':'','reason':'Transport control, not quality proof.','issues':[],
+                'component_judgments':{k:{'status':'supported','reason':'This canned transport fixture supports the component.'} for k in ('gloss','frame','english')}}]}}
         row={'id':'v','literal_english':'Adamantine','segments':[{'text':'Adamantine','word_indices':[0]}],
              'human_review_recommended':False,'material_alternatives':[],'choice_note':'','uncertainty':'',
              'fidelity':{'agency_and_image_preserved':True,'all_meaning_accounted_for':True,'unsupported_additions':[],'notes':''}}
@@ -169,7 +170,9 @@ class AutomaticSemanticLexicalTests(unittest.TestCase):
         value['packet']['translations'][0]['wording_decisions']=[];path.write_text(json.dumps(value))
         manifest=self.packets/'semantic-acceptance.json';saved=json.loads(manifest.read_text())
         saved['translation_sha256']=pipeline.bhakti_semantic_repair.digest(value);manifest.write_text(json.dumps(saved))
-        with self.assertRaisesRegex((ValueError,RuntimeError),'decision|support|target'):
+        # The immutable writer check may reject the removed decisions before
+        # the lexical-support validator; either boundary must prevent reuse.
+        with self.assertRaisesRegex((ValueError,RuntimeError),'decision|support|target|immutable writer evidence'):
             self.complete()
         self.assertEqual(len(self.calls),count)
 

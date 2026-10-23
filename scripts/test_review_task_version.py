@@ -48,7 +48,7 @@ class CompleteReviewVersion(unittest.TestCase):
         self.assertEqual(writer_rows(new),writer_rows(old))
         self.assertEqual(new['review_task_version'],1)
         prompt=self.f.calls[-1]['prompt']
-        self.assertIn('A correct English sentence cannot cure an unsupported popup claim.',prompt)
+        self.assertIn('A correct English sentence cannot cure an unsupported popup or frame claim.',prompt)
         self.assertIn('Do not promote a synonym preference into a required repair.',prompt)
         self.assertIn('supplied evidence contains the matching entry or passage',prompt)
         self.assertIn('English lock does not certify popup glosses or frame claims.',prompt)

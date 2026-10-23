@@ -46,13 +46,17 @@ class SemanticStageRoutesTests(unittest.TestCase):
                     and self.fail_type in {'english_review', 'source_review', 'unresolved_review'} and
                     sum(c['kind']=='bhakti_translation_review' for c in self.calls)==1):
                 row = value['packet']['reviews'][0]
-                row.update(passes=False, human_review_recommended=True,
+                row.update(passes=False, human_review_recommended=self.fail_type=='unresolved_review',
                     issues=[{'kind':({'source_review':'gloss_sense','unresolved_review':'unresolved_evidence'}.get(self.fail_type,'english_realization')),'target_line_ids':['v'],
                         'references':[{'line_id':'v','domain':'word_glosses','word_indices':[0], 'source_quote':'वज्र'}],
                         'explanation':'The English changes the physical modifier to a moral property.',
                         'evidence':'The source contextual gloss is physical hardness.',
                         'needed_evidence':'Verified source agency' if self.fail_type=='unresolved_review' else '',
                         'hold_reason':'external_evidence_missing' if self.fail_type=='unresolved_review' else ''}])
+                component = 'gloss' if self.fail_type=='source_review' else 'english'
+                row['component_judgments'][component] = {
+                    'status':'unresolved' if self.fail_type=='unresolved_review' else 'defect',
+                    'reason':row['issues'][0]['explanation']}
             return value
         p = patch.object(pipeline.gemini, 'call', side_effect=call)
         p.start(); self.addCleanup(p.stop)

@@ -24,36 +24,40 @@ improved detection on one case, not full reviewer or repair qualification; no
 draft is accepted or published. The original evidence and owner English remain
 unchanged. Confirmed task spending is now $3.258394325, separate from the prior
 $0.139404 unknown reservation.
-Next: correct those demonstrated review/disposition failures and the routed
-writer admission gate. Actual caller tests show that it currently applies final
-certainty checks before review, buying a replacement writer before the reviewer
-can examine the original doubt. The proposed fix must preserve that doubt,
-retain structural/source/citation guards, and admit only private drafts to review.
-Do not invent a textual defect or buy another writer solely to clear a confidence
-flag. Final acceptance still requires explicit resolution and no remaining
-material defect. The admission/disposition change is implemented privately but
-has not passed independent integration review: actual resume probes found that
-deleting prior-concern evidence or the current review-version header can bypass
-required review. A separate direct-writer probe found a fixed artifact filename
-collision after a legitimate new candidate. Fixes must bind required concerns
-and review version to the coordinator's saved state and preserve each writer
-candidate separately. The four regression cases reproduce these failures and
-pass on the corrected private implementation. Independent probes confirm those
-resume and direct-writer fixes, but final publication/source validators still
-accept an incomplete list of prior writer concerns. Their reconstruction must
-use the actual complete prior route/repair evidence before this core is integrated.
-The next integration must also replace the existing-library repair wrapper:
-`repair_current_reader` still retries glossary, writer and review together,
-while fresh-source intake uses the shared coordinator. Its confirmed word-index
-mutation limits, historical findings and owner locks must survive that migration.
-Its private replacement now exercises the shared coordinator in 16 actual-caller
-tests with synthetic provider responses: reviewer-only retry, English-only repair,
-source/gloss repair, zero-call resume, owner protection, historical uncertain
-attempts and exact permitted popup changes. Those checks establish orchestration,
-not real translation quality. The replacement awaits the corrected shared review
-core before integration and a bounded real-song qualification.
-Review-specific naming/three-component instructions are prepared privately and
-passed 23 caller/naming checks; they are not activated under the old review task.
+Review task 3 and the shared existing-reader adapter are now integrated. Private
+writer drafts can reach independent review with their original doubts intact;
+structural, source, citation and owner guards still apply. The reviewer judges
+popup glosses, grammatical frames and English separately and must explicitly
+resolve each writer concern. It cannot invent a defect merely to clear a flag.
+Complete writer-route history and earlier repair-round concerns remain bound
+through resume, fresh-source validation and publication. Direct generation uses
+the stored reviewed artifact's version; deleting a passed header cannot downgrade
+the required review. Mixed source generation validates the exact original rows,
+new review evidence and actual performed order separately. Independent probes
+confirm these fixes and genuine legacy generation/review-only renewal.
+
+`repair_current_reader`, fresh intake, benchmark generation and standalone
+retranslation now use the same semantic coordinator. Existing-song repair
+preserves confirmed word-index limits, findings and owner English; malformed
+reviews retry only review, English defects keep the glossary, and source/gloss
+defects regenerate their dependents. Retranslation now uses one bounded run and
+resumes matching accepted work, including English, without another request.
+The deprecated `--reuse-glosses` flag no longer forces paid rewriting. The
+benchmark keeps owner reference English out of its private source-only generation.
+Focused integrated tests cover these paths; one old error-message assertion was
+updated because the new immutable-writer guard rejects the same missing lexical
+decisions earlier. Compile and whitespace checks pass. The public contract audit
+remains 268 ready, one catalogue/tag mismatch and six unbuilt legacy readers.
+
+Next: run the prepared authentic historical Rehnā reader through actual audit,
+shared repair and paired authorization, then independently read the resulting
+glosses, frames and English. The unchanged historical source has 11 definitions
+and 24 performance events. The private trial is bounded to $0.70 text/10 calls,
+$0.01 embeddings/8 calls and 600 seconds, with no new source HTTP requests. It
+has not run yet. A correct orchestrator or a machine pass is not translation
+qualification. Existing-reader grammar notes currently remain fixed: an actual
+confirmed note defect needs explicit field-level repair before that line can be
+called fully corrected. No new public lyrics or song pages accompany this code.
 
 Independent no-cost acoustic preparation now has ten matching real waveform
 landmarks across Rehna native Opus/AAC and canonical AAC, plus Aao native/canonical

@@ -2,6 +2,7 @@
 import argparse
 import copy
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -10,6 +11,7 @@ from unittest.mock import patch
 import bhakti_pipeline as pipeline
 import retranslate_bhakti as repair
 from test_sense_decisions import decisions_for
+from bhakti_intake_run import bounded_intake_run
 
 
 class ExistingReaderRepairTests(unittest.TestCase):
@@ -37,10 +39,10 @@ class ExistingReaderRepairTests(unittest.TestCase):
             'SONG_TIMINGS': [{'start': 0, 'end': 2}, {'start': 2, 'end': 4}, {'start': 4, 'end': 6}],
         }
         self.write_reader()
-        self.options = argparse.Namespace(model=pipeline.MODEL, timeout=10, reuse_glosses=False)
+        self.options = argparse.Namespace(model=pipeline.MODEL, timeout=10, reuse_glosses=False,
+            semantic_repair_rounds=0, semantic_stage_escalation=False)
         self.calls = []
         self.english = {'a': 'Mind', 'b': 'Rāma'}
-        self.review_passes = True
         for target, name, kwargs in [
             (repair, 'ROOT', {'new': self.root}),
             (pipeline.gemini, 'key', {'return_value': 'not-a-key'}),
@@ -48,6 +50,11 @@ class ExistingReaderRepairTests(unittest.TestCase):
         ]:
             p = patch.object(target, name, **kwargs)
             p.start(); self.addCleanup(p.stop)
+        env = patch.dict(os.environ, {**{k:v for k,v in os.environ.items() if not k.startswith('BHAKTI_API_RUN_')},
+            'BHAKTI_AUTO_LEXICAL':'0','BHAKTI_GEMINI_PROVIDER':'openrouter'}, clear=True)
+        env.start(); self.addCleanup(env.stop)
+        bounded = bounded_intake_run(self.root,[{'slug':'sample','source':str(self.path)}],self.options)
+        bounded.__enter__(); self.addCleanup(bounded.__exit__,None,None,None)
 
     def write_baselines(self):
         (self.root / 'data' / 'editorial_baselines.json').write_text(json.dumps(self.baselines))
@@ -62,12 +69,21 @@ class ExistingReaderRepairTests(unittest.TestCase):
         self.calls.append((schema, prompt))
         if schema == 'bhakti_translation_review':
             rows = json.JSONDecoder().raw_decode(prompt.split('EVIDENCE:\n', 1)[1].lstrip())[0]
-            return {'packet': {'reviews': [{
-                'id': row['source']['id'], 'passes': self.review_passes,
-                'human_review_recommended': False, 'agency_preserved': self.review_passes,
-                'imagery_preserved': True, 'all_meaning_accounted_for': True,
-                'unsupported_additions': [], 'material_choice': '', 'reason': 'Source checked',
-            } for row in rows]}}
+            reviews=[]
+            for row in rows:
+                bad=row['draft']['literal_english']=='Body'
+                issue={'kind':'english_realization','target_line_ids':[row['source']['id']],
+                    'references':[{'line_id':row['source']['id'],'domain':'word_glosses',
+                        'word_indices':[0],'source_quote':row['source']['source_text']}],
+                    'explanation':'The source cognitive noun is mind, not body.',
+                    'evidence':'The selected noun sense does not support Body.', 'hold_reason':'','needed_evidence':''}
+                reviews.append({'id':row['source']['id'],'passes':not bad,'human_review_recommended':False,
+                    'agency_preserved':True,'imagery_preserved':True,'all_meaning_accounted_for':not bad,
+                    'unsupported_additions':[],'material_choice':'','reason':'Source checked',
+                    'issues':[issue] if bad else [],
+                    'component_judgments':{c:{'status':'defect' if c=='english' and bad else 'supported',
+                        'reason':'The source cognitive noun is mind.'} for c in ('gloss','frame','english')}})
+            return {'packet': {'reviews': reviews}}
         is_gloss = 'word_gloss' in schema
         marker = ('TARGET LYRICS (return these IDs only):\n' if is_gloss else
                   'TARGET audited source lines (return these IDs only):\n')
@@ -89,6 +105,11 @@ class ExistingReaderRepairTests(unittest.TestCase):
             'human_review_recommended': False, 'material_alternatives': [],
             'choice_note': '', 'uncertainty': '',
         } for line in lines], 'comparison': []}}
+
+    def change_source(self):
+        self.reader['SONG_LINES']['a']['source']='मन्'
+        self.reader['SONG_LINES']['a']['sourceWords'][0]['text']='मन्'
+        self.write_reader()
 
     def report(self):
         path = self.song / '.transcription' / 'translation-review-gloss-first' / 'review.json'
@@ -129,13 +150,14 @@ class ExistingReaderRepairTests(unittest.TestCase):
         repair.run_slug('sample', self.options)
         self.assertTrue(any('word_gloss' in name and 'मन्' in prompt for name, prompt in self.calls))
 
-    def test_legacy_review_is_never_reused_as_gloss_evidence(self):
+    def test_legacy_incomplete_review_is_retained_without_claiming_gloss_evidence(self):
         path = self.song / '.transcription' / 'translation-review-gloss-first' / 'review.json'
         path.parent.mkdir(parents=True)
         path.write_text(json.dumps({'glosses': {'packet': {'glosses': []}}}))
-        self.options.reuse_glosses = True
-        repair.run_slug('sample', self.options)
-        self.assertTrue(any('word_gloss' in name for name, _ in self.calls))
+        original=path.read_bytes(); self.options.reuse_glosses=True
+        with self.assertRaisesRegex(RuntimeError,'legacy unfinished'):
+            repair.run_slug('sample', self.options)
+        self.assertEqual(path.read_bytes(),original);self.assertEqual(self.calls,[])
 
     def test_policy_revision_invalidates_reused_glosses(self):
         repair.run_slug('sample', self.options)
@@ -157,14 +179,15 @@ class ExistingReaderRepairTests(unittest.TestCase):
         self.assertIn('Mind', baseline)
         self.assertNotIn('Old mind', baseline)
         self.english['a'] = 'Changed owner wording'
+        self.change_source()
         self.options.reuse_glosses = True
-        with self.assertRaisesRegex(RuntimeError, 'owner-designated English changed'):
+        with self.assertRaisesRegex(RuntimeError, 'locked_baseline_conflict|owner-designated English changed|quality failure'):
             repair.run_slug('sample', self.options)
 
     def test_failed_independent_review_never_emits_candidate(self):
-        self.review_passes = False
+        self.english['a'] = 'Body'
         public = self.path.read_bytes()
-        with self.assertRaisesRegex(RuntimeError, 'independent'):
+        with self.assertRaisesRegex(RuntimeError, 'repair_limit_exhausted'):
             repair.run_slug('sample', self.options)
         self.assertEqual(self.report()['status'], 'blocked')
         self.assertNotIn('candidate_reader', self.report())
@@ -172,8 +195,9 @@ class ExistingReaderRepairTests(unittest.TestCase):
 
     def test_failed_rerun_replaces_old_success_with_blocked_status(self):
         repair.run_slug('sample', self.options)
-        self.review_passes = False
-        with self.assertRaisesRegex(RuntimeError, 'independent'):
+        self.english['a'] = 'Body'
+        self.change_source()
+        with self.assertRaisesRegex(RuntimeError, 'repair_limit_exhausted'):
             repair.run_slug('sample', self.options)
         self.assertEqual(self.report()['status'], 'blocked')
         self.assertNotIn('candidate_reader', self.report())
@@ -211,7 +235,8 @@ class ExistingReaderRepairTests(unittest.TestCase):
         repair.run_slug('sample', self.options)
         self.assertIn('A human translation is supplied and LOCKED', self.calls[1][1])
         self.english['a'] = 'Changed wording'
-        with self.assertRaisesRegex(RuntimeError, 'owner-designated English changed'):
+        self.change_source()
+        with self.assertRaisesRegex(RuntimeError, 'locked_baseline_conflict|owner-designated English changed|quality failure'):
             repair.run_slug('sample', self.options)
 
     def test_supplied_poem_assigns_complete_lines_and_cannot_swap_them(self):
@@ -219,7 +244,8 @@ class ExistingReaderRepairTests(unittest.TestCase):
         self.write_reader()
         repair.run_slug('sample', self.options)
         self.english = {'a': 'Rāma', 'b': 'Mind'}
-        with self.assertRaisesRegex(RuntimeError, 'owner-designated English changed'):
+        self.change_source()
+        with self.assertRaisesRegex(RuntimeError, 'locked_baseline_conflict|owner-designated English changed|quality failure'):
             repair.run_slug('sample', self.options)
 
     def test_unaligned_supplied_poem_is_held_before_calls(self):

@@ -21,6 +21,246 @@ def digest(value: Any) -> str:
                                     separators=(',', ':')).encode()).hexdigest()
 
 
+
+# Private review evidence helpers; no model calls and no publication side effects.
+def writer_rows(rows):
+    return [{key: copy.deepcopy(value) for key, value in row.items()
+             if key != 'independent_review'} for row in rows]
+
+
+def review_context_basis(target_lines, *, full_source=None, performance_order=(), context_evidence=()):
+    targets = {row['id'] for row in target_lines}
+    return {'target_ids': [row['id'] for row in target_lines],
+            'full_source': copy.deepcopy(target_lines if full_source is None else full_source),
+            'performance_order': copy.deepcopy(list(performance_order)),
+            'context_evidence': [{key: copy.deepcopy(row[key]) for key in ('source', 'gloss', 'draft')}
+                                 for row in context_evidence if row['source']['id'] not in targets]}
+
+
+def review_context_identity(lines, options=None, *, performance_order=()):
+    return digest(review_context_basis(lines,
+        full_source=getattr(options, 'semantic_full_source', lines),
+        performance_order=getattr(options, 'semantic_performance_order', performance_order),
+        context_evidence=getattr(options, 'semantic_context_evidence', [])))
+
+
+def reservation_fields(row):
+    uncertain = str(row.get('uncertainty') or '').strip().casefold() not in {'', 'none', 'no', 'null', 'n/a'}
+    fidelity = row.get('fidelity', {})
+    negative = (isinstance(fidelity, dict) and
+                (fidelity.get('agency_and_image_preserved') is False
+                 or fidelity.get('all_meaning_accounted_for') is False
+                 or bool(fidelity.get('unsupported_additions'))))
+    if row.get('human_review_recommended') is not True and not uncertain and not negative:
+        return None
+    if type(row.get('human_review_recommended')) is not bool or not isinstance(row.get('uncertainty'), str):
+        raise ValueError('writer reservation has malformed confidence fields')
+    return {key: copy.deepcopy(row.get(key)) for key in
+            ('human_review_recommended', 'uncertainty', 'material_alternatives', 'choice_note', 'fidelity')}
+
+
+def validated_writer_history(route_state_path):
+    import bhakti_model_routes as routes
+    state_path = Path(route_state_path)
+    state = routes.read_unit_cache(state_path)['state']
+    if state['status'] != 'accepted':
+        raise ValueError('writer history has no accepted outcome')
+    history = []
+    for index, attempt in enumerate(state['attempts']):
+        if attempt['status'] not in {'accepted', 'quality-failed'} or not attempt.get('candidate_sha256'):
+            raise ValueError('writer history has unproven prior outcome')
+        path = state_path.parent / ('flash' if index == 0 else 'pro') / 'candidate.json'
+        candidate = json.loads(path.read_text())
+        if digest(candidate) != attempt['candidate_sha256']:
+            raise ValueError('writer history candidate changed')
+        if 'writer_diagnostics' in candidate:
+            observed = [row for response in candidate['writer_diagnostics'] if isinstance(response, dict)
+                        for row in (response.get('packet', {}).get('translations') or []) if isinstance(row, dict)]
+            rows = list({digest(row): row for row in observed}.values())
+        else:
+            rows = candidate.get('packet', {}).get('translations', [])
+        history.append({'rows': writer_rows(rows), 'coordinator_acceptance': candidate.get('writer_coordinator_acceptance'),
+                        'proof': {'route_state_path': str(state_path), 'attempt_id': attempt['attempt_id'],
+                                  'candidate_sha256': attempt['candidate_sha256']}})
+    return history
+
+
+def verify_writer_proof(proof, row):
+    if 'route_state_path' in proof:
+        history = validated_writer_history(proof['route_state_path'])
+        records = [entry for entry in history if entry['proof'] == proof]
+        if len(records) != 1 or row not in records[0]['rows']:
+            raise ValueError('writer reservation lost its original route evidence')
+    else:
+        path = Path(proof['path'])
+        candidate = json.loads(path.read_text())
+        if digest(candidate) != proof['candidate_sha256'] or row not in writer_rows(candidate['packet']['translations']):
+            raise ValueError('writer reservation original draft changed')
+
+
+def writer_review_context(lines, gloss_rows, translation_rows, *, context_identity, prior_candidates=(), previous_context=None):
+    current = writer_rows(translation_rows)
+    by_id = {row['id']: row for row in current}
+    targets = {row['id'] for row in lines}
+    reservations = {}; origins = {}
+    if previous_context:
+        for ref in previous_context['reservations']:
+            prior = next(item for item in previous_context['origins'] if item['reservation_id'] == ref['reservation_id'])
+            verify_writer_proof(prior['proof'], prior['row'])
+            reservations[ref['reservation_id']] = copy.deepcopy(ref)
+            origins[ref['reservation_id']] = copy.deepcopy(prior)
+    for candidate in prior_candidates:
+        for row in candidate['rows']:
+            if row.get('id') not in targets:
+                continue
+            fields = reservation_fields(row)
+            if fields is None:
+                continue
+            rid = digest({'line_id': row['id'], 'row': row, 'context_identity': context_identity})
+            reservations[rid] = {'reservation_id': rid, 'line_id': row['id'], 'candidate_sha256': digest(row)}
+            origins[rid] = {'reservation_id': rid, 'row': copy.deepcopy(row), 'context_identity': context_identity, 'proof': copy.deepcopy(candidate['proof'])}
+    # Every current concern needs durable source-bound writer evidence too.
+    for row in current:
+        if reservation_fields(row) is not None and not any(item['row'] == row for item in origins.values()):
+            raise ValueError('writer reservation lacks immutable draft evidence')
+    if not reservations:
+        return None
+    prior_concerns = [{'reservation_id': rid, 'fields': reservation_fields(item['row'])}
+                      for rid, item in origins.items() if item['row'] != by_id.get(item['row']['id'])]
+    return {'version': 1, 'source_sha256': digest(lines), 'gloss_sha256': digest(gloss_rows),
+            'candidate_sha256': digest(current), 'context_identity': context_identity,
+            'reservations': list(reservations.values()), 'prior_concerns': prior_concerns,
+            'origins': list(origins.values())}
+
+
+def writer_review_context_errors(lines, gloss_rows, translation_rows, context, expected_context_identity):
+    try:
+        if not isinstance(context, dict) or context.get('version') != 1:
+            return ['writer reservation context missing or invalid']
+        for field, expected in (('source_sha256', digest(lines)), ('gloss_sha256', digest(gloss_rows)),
+                                ('candidate_sha256', digest(writer_rows(translation_rows))),
+                                ('context_identity', expected_context_identity)):
+            if expected is None or context.get(field) != expected:
+                return ['writer reservation ' + field + ' changed or unbound']
+        references = context['reservations']; origins = context['origins']
+        if not references or len({r['reservation_id'] for r in references}) != len(references):
+            return ['writer reservation population invalid']
+        if {r['reservation_id'] for r in references} != {r['reservation_id'] for r in origins} or len(origins) != len(references):
+            return ['writer reservation origin population invalid']
+        target_ids = {line['id'] for line in lines}
+        for reference in references:
+            origin = next(item for item in origins if item['reservation_id'] == reference['reservation_id'])
+            row = origin['row']
+            if (reference['line_id'] not in target_ids or row['id'] != reference['line_id']
+                    or digest(row) != reference['candidate_sha256'] or reservation_fields(row) is None):
+                return ['writer reservation source/row binding changed']
+            if digest({'line_id': row['id'], 'row': row, 'context_identity': origin['context_identity']}) != reference['reservation_id']:
+                return ['writer reservation identity changed']
+            verify_writer_proof(origin['proof'], row)
+        # The immutable origin set must contain every current reservation.
+        if any(reservation_fields(row) is not None and not any(item['row'] == row for item in origins)
+               for row in writer_rows(translation_rows)):
+            return ['current writer concern is missing from reservation context']
+        expected_prior = [{'reservation_id': item['reservation_id'], 'fields': reservation_fields(item['row'])}
+                          for item in origins if item['row'] not in writer_rows(translation_rows)]
+        if context['prior_concerns'] != expected_prior:
+            return ['writer prior concerns changed']
+        return []
+    except (KeyError, TypeError, ValueError, OSError) as exc:
+        return ['invalid writer reservation evidence: ' + str(exc)]
+
+
+def reservation_prompt_context(context, target_ids):
+    if not context:
+        return None
+    refs = [row for row in context['reservations'] if row['line_id'] in target_ids]
+    if not refs:
+        return None
+    ids = {row['reservation_id'] for row in refs}
+    return {key: copy.deepcopy(context[key]) for key in
+            ('version', 'source_sha256', 'gloss_sha256', 'candidate_sha256', 'context_identity')} | {
+                'reservations': copy.deepcopy(refs),
+                'prior_concerns': [copy.deepcopy(row) for row in context['prior_concerns'] if row['reservation_id'] in ids]}
+
+def writer_proof_rows(proof):
+    if 'route_state_path' in proof:
+        records = [record for record in validated_writer_history(proof['route_state_path']) if record['proof'] == proof]
+        if len(records) != 1:
+            raise ValueError('writer evidence attempt missing')
+        return records[0]['rows']
+    candidate = json.loads(Path(proof['path']).read_text())
+    if digest(candidate) != proof['candidate_sha256']:
+        raise ValueError('immutable writer evidence changed')
+    return writer_rows(candidate['packet']['translations'])
+
+
+def writer_evidence_receipt(history, context_identity, previous_context=None):
+    items = [{'proof': copy.deepcopy(item['proof']), 'context_identity': context_identity} for item in history]
+    if previous_context:
+        items.extend({'proof': copy.deepcopy(origin['proof']), 'context_identity': origin['context_identity']}
+                     for origin in previous_context['origins'])
+    return {'version': 1, 'current': copy.deepcopy(history[-1]['proof']),
+            'history': list({digest(item): item for item in items}.values())}
+
+
+def check_writer_evidence(translations, lines, *, final_consumer=False):
+    receipt = translations.get('writer_evidence')
+    if not isinstance(receipt, dict) or receipt.get('version') != 1 or not isinstance(receipt.get('history'), list):
+        raise ValueError('current translation lacks mandatory writer evidence')
+    current = writer_rows(translations['packet']['translations'])
+    if writer_proof_rows(receipt['current']) != current:
+        raise ValueError('current translation differs from immutable writer evidence')
+    targets = {row['id'] for row in lines}
+    required = set()
+    history = list(receipt['history'])
+    if 'route_state_path' in receipt['current']:
+        current_items = [item for item in history if item['proof'] == receipt['current']]
+        if len(current_items) != 1:
+            raise ValueError('current writer context missing')
+        origin_context = current_items[0]['context_identity']
+        history.extend({'proof': record['proof'], 'context_identity': origin_context}
+                       for record in validated_writer_history(receipt['current']['route_state_path']))
+    for item in history:
+        for row in writer_proof_rows(item['proof']):
+            if row.get('id') in targets and reservation_fields(row) is not None:
+                required.add(digest({'line_id': row['id'], 'row': row, 'context_identity': item['context_identity']}))
+    if receipt['current'] not in [item['proof'] for item in receipt['history']]:
+        raise ValueError('writer evidence current attempt absent from history')
+    context = translations.get('writer_review_context')
+    actual = {row['reservation_id'] for row in context['reservations']} if context else set()
+    if required != actual:
+        raise ValueError('required original writer reservations removed or changed')
+    proof = receipt['current']
+    if 'route_state_path' in proof:
+        authoritative = next(record for record in validated_writer_history(proof['route_state_path'])
+                             if record['proof'] == proof)
+        path = authoritative.get('coordinator_acceptance')
+    else:
+        # writer_proof_rows above already verified these immutable bytes.
+        path = json.loads(Path(proof['path']).read_text()).get('writer_coordinator_acceptance')
+    if path:
+        directory = Path(path).parent
+        state = json.loads((directory / 'semantic-repair-state.json').read_text())
+        if state.get('status') != 'accepted':
+            if final_consumer:
+                raise ValueError('coordinator writer evidence is not finally accepted')
+            return
+        manifest = json.loads(Path(path).read_text())
+        if (manifest.get('status') != 'accepted'
+                or manifest.get('run_id') != state['run_id']
+                or state.get('review_task_version') != translations.get('review_task_version')
+                or state.get('writer_closure_sha256') != writer_closure(translations)):
+            raise ValueError('coordinator writer obligation closure changed')
+    elif translations.get('semantic_repair_version'):
+        raise ValueError('current translation lost immutable coordinator evidence')
+
+
+def writer_closure(translations):
+    return digest({'writer_evidence': translations.get('writer_evidence'),
+                   'writer_review_context': translations.get('writer_review_context'),
+                   'review_task_version': translations.get('review_task_version')})
+
+
 def atomic_write(path: Path, value: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent,
@@ -249,7 +489,7 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
         identities.update(prior_fingerprints(pipeline, 'gloss', gloss_inputs, options))
     if (not glosses or glosses.get('fingerprint') not in identities
             or glosses.get('gloss_contract_version') != pipeline.GLOSS_CONTRACT_VERSION
-            or pipeline.fresh_gloss_contract_errors(lines, glosses.get('packet', {}).get('glosses', []), languages)
+            or scoped_gloss_contract_errors(pipeline, lines, glosses.get('packet', {}).get('glosses', []), languages, options)
             or pipeline.bhakti_lexical_support.support_decision_errors(support, glosses.get('packet', {}).get('glosses', []))):
         return None, None
     view_options, view_glosses = pipeline.bhakti_lexical_producer.prepare_translation(
@@ -339,6 +579,12 @@ def require_acceptance(pipeline, packet_dir, glosses=None, translations=None, su
             or manifest.get('gloss_sha256') != digest(glosses)
             or manifest.get('translation_sha256') != digest(translations)):
         raise RuntimeError('semantic repair acceptance manifest missing or pair hash mismatch')
+    if state.get('review_task_version', 0) >= 3:
+        if translations.get('review_task_version') != state['review_task_version']:
+            raise RuntimeError('current accepted review task missing or downgraded')
+        if state.get('writer_closure_sha256') != writer_closure(translations):
+            raise RuntimeError('accepted original writer obligation closure changed')
+        check_writer_evidence(translations, audited['packet']['verified_lines'])
 
 
 def _bounded_ready():
@@ -376,7 +622,7 @@ def derived_support_errors(pipeline, song_dir, audited, glosses, translations, o
     return errors
 
 
-def validated_gloss_seed(pipeline, glossary, receipt, source_identity, glossary_identity, lines, languages):
+def validated_gloss_seed(pipeline, glossary, receipt, source_identity, glossary_identity, lines, languages, options=None):
     """Revalidate the immutable glossary snapshot authorized by prior acceptance."""
     manifest = receipt.get('manifest', {})
     if (receipt.get('source_gloss_identity') != glossary_identity
@@ -385,7 +631,7 @@ def validated_gloss_seed(pipeline, glossary, receipt, source_identity, glossary_
             or manifest.get('gloss_sha256') != digest(glossary)
             or receipt.get('prior_run_id') != manifest.get('run_id')):
         raise RuntimeError('accepted glossary seed receipt mismatch')
-    errors = pipeline.fresh_gloss_contract_errors(lines, glossary['packet']['glosses'], languages)
+    errors = scoped_gloss_contract_errors(pipeline, lines, glossary['packet']['glosses'], languages, options)
     errors += issue_errors(lines, glossary['packet']['glosses'], receipt.get('automatic_lexical_feedback', []))
     if errors:
         raise RuntimeError('accepted glossary seed violates contract: ' + str(errors[:3]))
@@ -401,7 +647,7 @@ def validated_review_seed(pipeline, song_dir, audited, glossary, candidate, rece
         raise RuntimeError('review-only writer seed receipt mismatch')
     lines = audited['packet']['verified_lines']
     rows = candidate.get('packet', {}).get('translations', [])
-    errors = pipeline.fresh_translation_contract_errors(lines, glossary['packet']['glosses'], rows, require_review=False)
+    errors = pipeline.fresh_translation_contract_errors(lines, glossary['packet']['glosses'], rows, require_review=False, **pipeline.translation_packet_contract_kwargs(lines, candidate, options, performance_order=audited['packet'].get('performance_order', []), expected_review_task_version=receipt.get('manifest', {}).get('review_task_version', 0)))
     errors += derived_support_errors(pipeline, song_dir, audited, glossary, candidate, options)
     view_options, _ = derived_support_view(pipeline, song_dir, audited, glossary, candidate, options)
     if pipeline.automatic_evidence_receipt(view_options) != proof.get('automatic_evidence_receipt'):
@@ -428,7 +674,7 @@ def stage_context(options):
     keys = ('semantic_context_evidence', 'semantic_full_source', 'semantic_performance_order',
             'semantic_source_identity', 'semantic_baseline', 'semantic_repair_feedback',
             'semantic_prior_gloss', 'semantic_translation_targets', 'semantic_previous_translations',
-            'semantic_seed_translation', 'automatic_lexical_feedback')
+            'semantic_seed_translation', 'automatic_lexical_feedback', 'semantic_initial_repair')
     context = {key: copy.deepcopy(getattr(options, key)) for key in keys if hasattr(options, key)}
     import bhakti_lexical_producer as producer
     requests = producer.requested_identity(options)
@@ -456,6 +702,8 @@ def semantic_stage_route(pipeline, song_dir, stage, inputs, options, execute, va
     original_failure = []
     def run(context):
         local = copy.copy(options)
+        if stage == 'writer':
+            local.semantic_writer_diagnostics = []
         local.model = context.model
         local.force = False
         local.unit_context = context.transport_context
@@ -465,12 +713,20 @@ def semantic_stage_route(pipeline, song_dir, stage, inputs, options, execute, va
         target = context.attempt_dir / 'songs' / song_dir.name
         try:
             result = execute(target, local)
-        except (routes.QualityFailure, routes.UnitTransportFailure, routes.RunFatal):
+        except routes.QualityFailure as exc:
+            if stage == 'writer' and local.semantic_writer_diagnostics:
+                return {'writer_diagnostics': copy.deepcopy(local.semantic_writer_diagnostics),
+                        'quality_issues': copy.deepcopy(exc.issues), 'resolved_model': context.model}
+            raise
+        except (routes.UnitTransportFailure, routes.RunFatal):
             raise
         except Exception as exc:
             original_failure.append(exc)
             raise
         result.setdefault('resolved_model', context.model)
+        if getattr(options, 'semantic_initial_repair', None) is not None:
+            result['semantic_stage_receipt'] = {'stage': stage, 'state_path': str(context.attempt_dir.parent / 'route-state.json'),
+                'attempt_id': context.attempt_id, 'model': context.model}
         return result
     try:
         result = routes.run_unit(song_dir / '.transcription/pipeline/stage-routes',
@@ -485,6 +741,10 @@ def semantic_stage_route(pipeline, song_dir, stage, inputs, options, execute, va
     errors = validate(copy.deepcopy(result))
     if errors:
         raise RuntimeError('accepted semantic stage violates current contract: ' + str(errors[:3]))
+    if stage == 'writer':
+        result = copy.deepcopy(result)
+        result['writer_route_state'] = str(routes.unit_state_path(song_dir / '.transcription/pipeline/stage-routes',
+            song_dir.name + ':semantic-' + stage, identity, base_model=base_model, pro_model=pro_model))
     return result
 
 
@@ -500,7 +760,9 @@ def routed_gloss(pipeline, song_dir, audited, options):
     feedback = getattr(options, 'semantic_repair_feedback', [])
     repairing = any(issue['kind'] in {'gloss_sense', 'frame_relation'} for issue in feedback)
     base_model = (getattr(options, 'pro_model', routes.PRO_MODEL)
-                  if repairing and getattr(options, 'semantic_stage_escalation', True) else options.model)
+                  if repairing and getattr(options, 'semantic_stage_escalation', True)
+                  and not (getattr(options, 'semantic_initial_repair', None) is not None
+                           and getattr(options, 'semantic_review_generation', 0) == 0) else options.model)
     def validate(result):
         errors = pipeline.fresh_gloss_contract_errors(lines, result.get('packet', {}).get('glosses', []), languages)
         return [{'kind': 'source_gloss_contract', 'detail': error} for error in errors]
@@ -522,30 +784,26 @@ def routed_translation(pipeline, song_dir, audited, glosses, job, options):
     english_repair = any(issue['kind'] in {'english_realization', 'english_mapping'} for issue in feedback)
     source_repair = any(issue['kind'] in {'gloss_sense', 'frame_relation'} for issue in feedback)
     base_model = (getattr(options, 'pro_model', routes.PRO_MODEL) if english_repair and not source_repair
-                  and getattr(options, 'semantic_stage_escalation', True) else options.model)
+                  and getattr(options, 'semantic_stage_escalation', True)
+                  and not (getattr(options, 'semantic_initial_repair', None) is not None
+                           and getattr(options, 'semantic_review_generation', 0) == 0) else options.model)
     def validate_writer(result):
-        errors = pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'],
-            result.get('packet', {}).get('translations', []), require_review=False)
+        if 'writer_diagnostics' in result:
+            return result['quality_issues']
+        errors = pipeline.translation_draft_contract_errors(lines, glosses['packet']['glosses'],
+            result.get('packet', {}).get('translations', []))
         errors += derived_support_errors(pipeline, song_dir, audited, glosses, result, options)
         return [{'kind': 'english_contract', 'detail': error} for error in errors]
-    writer = semantic_stage_route(pipeline, song_dir, 'writer', inputs, options,
+    writer = semantic_stage_route(pipeline, song_dir, 'writer', {**inputs, 'draft_contract_version': 1}, options,
         lambda directory, local: pipeline.translate(directory, audited, glosses, job, local,
                                                      candidate_only=True, defer_review=True),
         validate_writer, base_model=base_model)
     def validate_review(result):
-        errors = []
-        for row in result.get('packet', {}).get('translations', []):
-            review = row.get('independent_review', {})
-            if any(type(review.get(key)) is not bool for key in
-                   ('passes', 'human_review_recommended', 'agency_preserved', 'imagery_preserved', 'all_meaning_accounted_for')):
-                errors.append('review requires explicit boolean judgments')
-            recorded = review.get('issues')
-            errors += issue_errors(lines, glosses['packet']['glosses'], recorded)
-            if review.get('passes') is True and recorded:
-                errors.append('passing review cannot contain repair issues')
-        if [row.get('literal_english') for row in result['packet']['translations']] != [
-                row.get('literal_english') for row in writer['packet']['translations']]:
-            errors.append('review changed writer English')
+        errors = pipeline.translation_review_contract_errors(lines, glosses['packet']['glosses'],
+            result.get('packet', {}).get('translations', []), **pipeline.translation_packet_contract_kwargs(
+                lines, result, options, performance_order=audited['packet'].get('performance_order', [])))
+        if writer_rows(result['packet']['translations']) != writer_rows(writer['packet']['translations']):
+            errors.append('review changed writer evidence')
         return [{'kind': 'review_contract', 'detail': error} for error in errors]
     return semantic_stage_route(pipeline, song_dir, 'review', {**inputs, 'writer': writer, **pipeline.review_task_identity()}, options,
         lambda directory, local: pipeline.review_translation(directory, audited, glosses, job, local, writer),
@@ -590,6 +848,129 @@ def restore_quality_hold(pipeline, value):
     return SemanticQualityHold(value['reason'], value['issues'], evidence)
 
 
+def initial_repair_context(pipeline, options, lines, languages):
+    """Authenticate a current-reader repair scope, never a generated-stage seed."""
+    value = getattr(options, 'semantic_initial_repair', None)
+    if value is None:
+        return None
+    import bhakti_library_pass as library
+    import bhakti_candidate_guard as guard
+    if (not isinstance(value, dict) or value.get('version') != 1
+            or set(value) != {'version', 'reader_digest', 'dependency_fingerprint',
+                              'original_reader', 'pre_review', 'target_line_ids', 'gloss_word_indices'}):
+        raise RuntimeError('invalid initial reader repair context')
+    reader, pre = value['original_reader'], value['pre_review']
+    original_lines, original_glosses, _ = library.reader_evidence(reader)
+    if digest(reader) != value['reader_digest']:
+        raise RuntimeError('initial reader repair digest changed')
+    errors = library.current_review_errors(pre, original_lines, original_glosses,
+        value['reader_digest'], value['dependency_fingerprint'])
+    if errors:
+        raise RuntimeError('initial reader review is invalid: ' + str(errors[:3]))
+    snapshot = pre.get('finding_snapshot')
+    if snapshot is not None:
+        context = dict(lines=original_lines, glosses=original_glosses,
+            reader_digest=value['reader_digest'], dependency_fingerprint=value['dependency_fingerprint'])
+        snapshot = library.finding_store.validate_snapshot(snapshot, **context)
+        if pre.get('finding_journal_path'):
+            current = library.finding_store.load_snapshot(Path(pre['finding_journal_path']), **context)
+            if current != snapshot:
+                raise RuntimeError('initial reader finding journal changed')
+        guard.authorize_semantic_candidate(reader, reader, source_lines=original_lines,
+            gloss_rows=original_glosses, pre_review=pre, post_review=None,
+            dependency_fingerprint=value['dependency_fingerprint'], finding_snapshot=snapshot,
+            protected_english=getattr(options, 'semantic_baseline', None), allow_partial=True)
+        findings = [f for f in snapshot['findings'] if f['kind'] == 'defect'
+                    and f['issue']['kind'] != 'unresolved_evidence']
+        issues = [f['issue'] for f in findings]
+    else:
+        findings = []
+        issues = pre['issues']
+    if not issues or any(issue['kind'] == 'unresolved_evidence' for issue in issues):
+        raise RuntimeError('initial reader repair requires confirmed repairable issues')
+    targets = {target for issue in issues for target in issue['target_line_ids']}
+    expected_lines = [line for line in original_lines if line['id'] in targets]
+    expected_indices = {}
+    for issue in issues:
+        if issue['kind'] in {'gloss_sense', 'frame_relation'}:
+            for ref in issue['references']:
+                if ref['line_id'] in issue['target_line_ids']:
+                    expected_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
+    expected_indices = {key: sorted(indices) for key, indices in expected_indices.items()}
+    if (lines != expected_lines or value['target_line_ids'] != [line['id'] for line in expected_lines]
+            or value['gloss_word_indices'] != expected_indices
+            or getattr(options, 'semantic_full_source', original_lines) != original_lines):
+        raise RuntimeError('initial reader repair source or authorized scope changed')
+    if getattr(options, 'semantic_confirmed_issues', issues) != issues:
+        raise RuntimeError('initial reader repair feedback differs from authenticated review')
+    if getattr(options, 'semantic_repair_findings', findings) != findings:
+        raise RuntimeError('initial reader repair obligations changed')
+    return {'context': copy.deepcopy(value), 'issues': copy.deepcopy(issues), 'findings': copy.deepcopy(findings)}
+
+
+def project_initial_gloss(glosses, options):
+    """Limit visible gloss edits before any writer/reviewer sees the result."""
+    initial = getattr(options, 'semantic_initial_repair', None)
+    if initial is None:
+        return glosses
+    result = copy.deepcopy(glosses)
+    old = initial['original_reader']['SONG_LINES']
+    for row in result['packet']['glosses']:
+        words = old[row['id']]['words']
+        if len(words) != len(row['word_glosses']):
+            raise RuntimeError('initial reader repair changed word population')
+        allowed = initial['gloss_word_indices'].get(row['id'], [])
+        projected = []
+        for index, word in enumerate(row['word_glosses']):
+            if word['roman'] != words[index]['roman']:
+                raise RuntimeError('initial reader repair changed source token')
+            item = copy.deepcopy(words[index])
+            if index in allowed:
+                item['gloss'] = word['gloss']
+            projected.append(item)
+        row['word_glosses'] = projected
+        row['grammar_note'] = old[row['id']].get('grammarNote', '')
+    return result
+
+
+def scoped_gloss_contract_errors(pipeline, lines, rows, languages, options):
+    initial = getattr(options, 'semantic_initial_repair', None)
+    if initial is None:
+        return pipeline.fresh_gloss_contract_errors(lines, rows, languages)
+    try:
+        expected = project_initial_gloss({'packet': {'glosses': rows}}, options)['packet']['glosses']
+    except (KeyError, TypeError, RuntimeError) as exc:
+        return ['invalid original-reader gloss projection: ' + str(exc)]
+    if expected != rows:
+        return ['original-reader gloss exceeds authorized word/grammar scope']
+    validated = copy.deepcopy(rows)
+    original = initial['original_reader']['SONG_LINES']
+    for row in validated:
+        for index, word in enumerate(row['word_glosses']):
+            old = original[row['id']]['words'][index]
+            for key, default in (('concept_key', ''), ('preserve_in_english', False)):
+                if key not in old and key not in word:
+                    word[key] = default
+    return pipeline.fresh_gloss_contract_errors(lines, validated, languages)
+
+
+def outside_initial_scope(issues, options):
+    initial = getattr(options, 'semantic_initial_repair', None)
+    if initial is None:
+        return []
+    outside = []
+    for issue in issues:
+        if set(issue['target_line_ids']) - set(initial['target_line_ids']):
+            outside.append(issue)
+        elif issue['kind'] in {'gloss_sense', 'frame_relation'}:
+            for ref in issue['references']:
+                if (ref['line_id'] in issue['target_line_ids']
+                        and set(ref['word_indices']) - set(initial['gloss_word_indices'].get(ref['line_id'], []))):
+                    outside.append(issue)
+                    break
+    return outside
+
+
 def complete(pipeline, song_dir, audited, job, options):
     packet_dir = song_dir / '.transcription/pipeline'
     state_path = packet_dir / 'semantic-repair-state.json'
@@ -600,6 +981,7 @@ def complete(pipeline, song_dir, audited, job, options):
     lines = audited.get('packet', {}).get('verified_lines', [])
     languages = audited.get('packet', {}).get('metadata', {}).get('languages')
     try:
+        initial = initial_repair_context(pipeline, options, lines, languages)
         pipeline.bhakti_lexical_producer.requested_spans(options, lines)
         baseline = resolved_baseline(pipeline, song_dir, lines, job)
         options = pipeline.bhakti_translation_policy.prepare_naming_options(
@@ -624,6 +1006,8 @@ def complete(pipeline, song_dir, audited, job, options):
         order = getattr(options, 'semantic_performance_order', evidence['performance_order'])
         if order != evidence['performance_order']:
             identity_inputs['reading_performance_order'] = order
+        if initial is not None:
+            identity_inputs['initial_reader_repair'] = initial['context']
         preautomatic_identity = digest(identity_inputs)
         automatic = pipeline.bhakti_lexical_producer.configuration_identity(options)
         glossary_inputs = copy.deepcopy(identity_inputs)
@@ -645,6 +1029,8 @@ def complete(pipeline, song_dir, audited, job, options):
             identity_inputs['stage_routing'] = {'version': 1, 'escalation': escalation,
                 'pro_model': getattr(options, 'pro_model', routes.PRO_MODEL)}
         content_configuration_run_id = digest(identity_inputs)
+        if pipeline.REVIEW_TASK_VERSION >= 3:
+            identity_inputs['review_context_identity'] = review_context_identity(lines, options, performance_order=evidence['performance_order'])
         identity_inputs.update(pipeline.review_task_identity())
         identity = digest(identity_inputs)
         configuration_run_id = identity
@@ -656,7 +1042,7 @@ def complete(pipeline, song_dir, audited, job, options):
                 prior_translation = pipeline.read_packet(packet_dir / '05-translation.json')
                 require_acceptance(pipeline, packet_dir, prior_gloss, prior_translation,
                                    audited=audited, accepted_state=prior_state)
-                errors = pipeline.fresh_gloss_contract_errors(lines, prior_gloss['packet']['glosses'], languages)
+                errors = scoped_gloss_contract_errors(pipeline, lines, prior_gloss['packet']['glosses'], languages, options)
                 if errors:
                     raise RuntimeError('accepted source glossary violates contract: ' + str(errors[:3]))
                 saved_receipt = pipeline.validate_automatic_evidence_receipt(
@@ -697,7 +1083,7 @@ def complete(pipeline, song_dir, audited, job, options):
                     'prior_run_id': prior_state['run_id'], 'manifest': previous_manifest,
                     'automatic_lexical_feedback': copy.deepcopy(previous_translation.get('automatic_lexical_feedback', []))}
                 accepted_gloss = validated_gloss_seed(pipeline, previous_gloss, accepted_gloss_receipt,
-                    digest(evidence), glossary_identity, lines, languages)
+                    digest(evidence), glossary_identity, lines, languages, options)
                 prior_content = prior_state.get('content_configuration_run_id', prior_configuration)
                 if prior_content == content_configuration_run_id:
                     view_options, _ = derived_support_view(pipeline, song_dir, audited, previous_gloss,
@@ -732,9 +1118,12 @@ def complete(pipeline, song_dir, audited, job, options):
                      'rounds_used': 0, 'deadline_at_epoch': min([time.time() + seconds] +
                          [float(getattr(options, key)) for key in ('unit_deadline_at', 'semantic_deadline_at')
                           if getattr(options, key, None) is not None])}
+            if initial is not None:
+                state['feedback'] = copy.deepcopy(initial['issues'])
             if revision_receipt is not None:
                 state['automatic_evidence_receipt'] = copy.deepcopy(revision_receipt)
         local = copy.copy(options)
+        local.semantic_coordinator_acceptance = str(packet_dir / 'semantic-acceptance.json')
         local.force = False  # A force rerun cannot reset this run's paid history.
         local.semantic_deadline_at = state['deadline_at_epoch']
         local.semantic_full_source = copy.deepcopy(getattr(options, 'semantic_full_source', lines))
@@ -755,8 +1144,8 @@ def complete(pipeline, song_dir, audited, job, options):
             glosses = pipeline.read_packet(packet_dir / '04-glosses.json')
             translations = pipeline.read_packet(packet_dir / '05-translation.json')
             require_acceptance(pipeline, packet_dir, glosses, translations, audited=audited, accepted_state=state)
-            errors = pipeline.fresh_gloss_contract_errors(lines, glosses['packet']['glosses'], languages)
-            errors += pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], translations['packet']['translations'])
+            errors = scoped_gloss_contract_errors(pipeline, lines, glosses['packet']['glosses'], languages, options)
+            errors += pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], translations['packet']['translations'], **pipeline.translation_packet_contract_kwargs(lines, translations, local, performance_order=order))
             errors += derived_support_errors(pipeline, song_dir, audited, glosses, translations, options)
             if errors: raise RuntimeError('accepted semantic cache violates contract: ' + str(errors[:3]))
             pipeline.semantic_write_json(state_path, state)
@@ -784,7 +1173,7 @@ def complete(pipeline, song_dir, audited, job, options):
             receipt = payload.get('accepted_gloss_receipt')
             if receipt is not None:
                 seed_gloss = validated_gloss_seed(pipeline, snapshots.get('04-glosses.json'), receipt,
-                    digest(evidence), glossary_identity, lines, languages)
+                    digest(evidence), glossary_identity, lines, languages, options)
                 seed_translation = (validated_review_seed(pipeline, song_dir, audited, seed_gloss,
                     snapshots.get('05-translation.json'), receipt, content_configuration_run_id, options, baseline)
                     if receipt.get('review_only') else None)
@@ -847,7 +1236,7 @@ def complete(pipeline, song_dir, audited, job, options):
             if glosses and glosses.get('semantic_request_identity') != expected_gloss_identity:
                 raise RuntimeError('repaired gloss cache identity mismatch')
             if glosses:
-                errors = pipeline.fresh_gloss_contract_errors(lines, glosses['packet']['glosses'], languages)
+                errors = scoped_gloss_contract_errors(pipeline, lines, glosses['packet']['glosses'], languages, options)
                 if errors: raise RuntimeError('repaired gloss cache violates contract: ' + str(errors[:3]))
             else:
                 lexical_targets = set(item for issue in feedback if issue['kind'] in {'gloss_sense', 'frame_relation'}
@@ -872,9 +1261,14 @@ def complete(pipeline, song_dir, audited, job, options):
                         'repair': repaired.get('fingerprint')})
                 else:
                     glosses = seed_gloss or routed_gloss(pipeline, round_dir, audited, local)
+                unprojected = copy.deepcopy(glosses)
+                glosses = project_initial_gloss(glosses, local)
+                if glosses != unprojected:
+                    glosses['producer_fingerprint'] = digest({'source_producer': unprojected.get('producer_fingerprint', unprojected.get('fingerprint')),
+                        'projected_packet': glosses['packet'], 'scope': local.semantic_initial_repair})
                 glosses.setdefault('producer_fingerprint', glosses.get('fingerprint'))
                 glosses['semantic_request_identity'] = expected_gloss_identity
-                errors = pipeline.fresh_gloss_contract_errors(lines, glosses['packet']['glosses'], languages)
+                errors = scoped_gloss_contract_errors(pipeline, lines, glosses['packet']['glosses'], languages, options)
                 if errors: raise RuntimeError('gloss_contract_hold: ' + str(errors[:3]))
                 pipeline.semantic_write_json(ready_path, glosses)
             lookup_feedback = []
@@ -906,6 +1300,7 @@ def complete(pipeline, song_dir, audited, job, options):
                 local.semantic_seed_translation = seed_translation if number == 0 else None
                 local.semantic_translation_targets = sorted(set(item for issue in feedback for item in issue['target_line_ids'])) if number else None
                 local.semantic_previous_translations = previous_translation['packet']['translations'] if number else None
+                local.semantic_previous_writer_context = previous_translation.get('writer_review_context') if number else None
                 translations = routed_translation(pipeline, round_dir, audited, glosses, job, local)
                 translations['semantic_request_identity'] = expected_translation_identity
                 if automatic is not None:
@@ -913,7 +1308,7 @@ def complete(pipeline, song_dir, audited, job, options):
                 pipeline.semantic_write_json(translation_path, translations)
             rows = translations['packet']['translations']
             assert_baseline(baseline, rows)
-            errors = pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], rows)
+            errors = pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], rows, **pipeline.translation_packet_contract_kwargs(lines, translations, local, performance_order=order))
             errors += derived_support_errors(pipeline, round_dir, audited, glosses, translations, local)
             issues = []
             for row in rows:
@@ -932,6 +1327,14 @@ def complete(pipeline, song_dir, audited, job, options):
                     getattr(discovery_options, 'automatic_source_discovery', None), lines, rows))
             invalid = issue_errors(lines, glosses['packet']['glosses'], issues)
             if invalid: raise RuntimeError('invalid_repair_feedback: ' + str(invalid[:3]))
+            outside = outside_initial_scope(issues, local)
+            if outside:
+                pipeline.semantic_write_json(packet_dir / 'additional-repair-findings.json', {
+                    'version': 1, 'status': 'needs-expanded-confirmed-scope', 'run_id': identity,
+                    'source_identity': digest(evidence), 'issues': outside,
+                    'initial_repair_identity': digest(local.semantic_initial_repair),
+                    'deadline_at_epoch': state['deadline_at_epoch']})
+                raise quality_hold(pipeline, 'additional_confirmed_scope_required', issues, audited, glosses, translations, round_dir)
             if not errors and not issues:
                 # New metadata is outside the candidate packet; linguistic
                 # evidence and supplied English remain unchanged.
@@ -939,6 +1342,8 @@ def complete(pipeline, song_dir, audited, job, options):
                 glosses['fingerprint'] = digest({'unconditioned': glosses.get('fingerprint'), 'request': glosses['semantic_request_identity'], 'run': identity})
                 translations['semantic_repair_version'] = VERSION; translations['semantic_run_id'] = identity
                 translations['source_context_sha256'] = digest(evidence)
+                if pipeline.REVIEW_TASK_VERSION >= 3:
+                    translations['coordinator_acceptance'] = str(packet_dir / 'semantic-acceptance.json')
                 pipeline.semantic_write_json(packet_dir / '04-glosses.json', glosses)
                 pipeline.semantic_write_json(packet_dir / '05-translation.json', translations)
                 pipeline.semantic_write_json(packet_dir / 'semantic-acceptance.json', {
@@ -947,6 +1352,8 @@ def complete(pipeline, song_dir, audited, job, options):
                     'source_sha256': digest(evidence), 'source_gloss_identity': glossary_identity,
                     'content_configuration_run_id': content_configuration_run_id, **pipeline.review_task_identity()})
                 state['status'] = 'accepted'; state.pop('reason', None)
+                if pipeline.REVIEW_TASK_VERSION >= 3:
+                    state['writer_closure_sha256'] = writer_closure(translations)
                 pipeline.semantic_write_json(state_path, state)
                 return glosses, translations
             for issue in issues:

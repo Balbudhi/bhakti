@@ -21,13 +21,22 @@ have passed focused integration checks with saved real artifacts and synthetic
 provider responses; they do not establish improved translation quality. The
 reviewer now retains source-only neighboring lines from a short excerpt, with
 explicit local order and no invented neighbor translation. Conflicting or missing
-source definitions stop before dispatch. Review-task version 2 refreshes review
-only, preserves prior findings, and reuses validated unchanged writing. The joined
+source definitions stop before dispatch. Review-task version 2 introduced review-only
+renewal, preserving prior findings and validated unchanged writing. The joined
 34 context/cache checks pass. A one-call review of the unchanged failed draft
 cost $0.070053 and detected the extra `true` in both popup and English. It also
 raised questionable naming-popup and synonym-choice objections, so its findings
 still need independent adjudication before repair. No new glossary, writer,
 source HTTP or embeddings ran, and no result was accepted or published.
+
+Current review task 3 admits structurally valid private writer drafts with doubts
+to independent review, then requires separate gloss/frame/English judgments and
+source-bound resolution of each concern. Original writer fields remain intact.
+Final consumers reconstruct the full writer history and retained coordinator
+obligations; absent metadata cannot turn a current review into a legacy one.
+Existing-reader repair now uses the shared selective coordinator, retaining
+successful stages and exact owner English. The integrated checks establish these
+mechanics; the bounded real-song qualification and whole-library pass remain open.
 
 ## Bounded intake and boundary recovery
 
@@ -151,10 +160,31 @@ baseline throughout production. A source/gloss conflict is reported separately;
 the engine must not distort grammar to justify rewriting the owner's wording.
 An unflagged song is not automatically correct.
 
+## Existing-reader reconstruction
+
+`retranslate_bhakti.py` creates private comparison packets through the same
+semantic coordinator. All song workers share one bounded run; use
+`--budget-usd`, `--max-calls`, `--deadline-seconds` and `--run-dir` to set its
+limits and location. Matching accepted stages resume without paid regeneration.
+`--reuse-glosses` is deprecated: it now resumes matching accepted English too,
+and does not force a new writer/reviewer request. Owner English remains locked;
+this command does not publish or change the public reader.
+
+The bounded run freezes the actual `data.js` bytes. Changed public source bytes
+hold that existing CLI run and require an explicit separate run for the new
+input; they do not renew its old allowance. Evidence/policy changes within an
+authorized population use the semantic coordinator's validation and renewal.
+Legacy unfinished reports or missing paid-stage state require reconciliation;
+they are retained rather than replayed. Never create a new run to evade an
+unknown request. A corrected input that failed validation before semantic work
+can retry within its original remaining allowance.
+
 ## Private reference comparisons
 
-`benchmark_translation_prompt.py` exercises the production gloss, English and
-independent-review stages against frozen reader snapshots. Preparation is free:
+`benchmark_translation_prompt.py` uses the production semantic coordinator,
+including selective repair, against frozen reader snapshots. Its private case
+identity stays separate from the protected song: source-only generation never
+receives the owner reference English as an answer. Preparation is free:
 
 ```sh
 python3 scripts/benchmark_translation_prompt.py --output-dir /private/path/benchmark

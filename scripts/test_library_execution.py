@@ -2,6 +2,7 @@
 import argparse
 import copy
 import json
+import os
 from pathlib import Path
 import tempfile
 import time
@@ -15,10 +16,18 @@ from test_sense_decisions import decisions_for
 
 def review(line_id='one', issues=None):
     issues = issues or []
-    return {'id': line_id, 'passes': not issues, 'agency_preserved': not issues,
+    result = {'id': line_id, 'passes': not issues, 'agency_preserved': not issues,
             'imagery_preserved': True, 'all_meaning_accounted_for': True,
             'unsupported_additions': [], 'human_review_recommended': False,
             'material_choice': '', 'reason': 'Source and indexed meaning checked.', 'issues': issues}
+    if library.pipeline.REVIEW_TASK_VERSION >= 3:
+        kinds = {issue['kind'] for issue in issues}
+        result['component_judgments'] = {key: {
+            'status': 'defect' if kinds & triggers else 'supported',
+            'reason': 'The supplied source and this component were checked independently.'}
+            for key, triggers in {'gloss': {'gloss_sense'}, 'frame': {'frame_relation'},
+                                  'english': {'english_realization', 'line_scope'}}.items()}
+    return result
 
 
 class CurrentContentExecutionTests(unittest.TestCase):
@@ -124,6 +133,10 @@ class TargetedRepairExecutionTests(CurrentContentExecutionTests):
         self.reject_all_posts = False
         self.review_evidence = []
         self.bad_flash_gloss = False
+        self.options.semantic_repair_rounds = 1
+        bounded = patch.dict(os.environ, {'BHAKTI_API_RUN_LEDGER': str(self.directory / 'ledger.json'),
+            'BHAKTI_API_RUN_BUDGET_USD': '2', 'BHAKTI_AUTO_LEXICAL': '0'})
+        bounded.start(); self.addCleanup(bounded.stop)
 
     def provider(self, model, key, prompt, **kwargs):
         schema = kwargs['schema_name']; self.schemas.append((model, schema))
@@ -133,9 +146,6 @@ class TargetedRepairExecutionTests(CurrentContentExecutionTests):
             rows = []
             for item in evidence:
                 bad = item['draft']['literal_english'] == 'body'
-                if (self.reject_all_posts or (self.reject_flash_post and model.endswith('3.7-flash'))) and 'ORIGINAL READER ROWS' in prompt:
-                    original = json.JSONDecoder().raw_decode(prompt.split('ORIGINAL READER ROWS FOR REPAIR COMPARISON:\n', 1)[1].lstrip())[0]
-                    bad = bad or bool(original)
                 rows.append(review(item['source']['id'], [self.issue] if bad else []))
             return {'packet': {'reviews': rows}}
         is_gloss = 'word_gloss' in schema
@@ -149,8 +159,9 @@ class TargetedRepairExecutionTests(CurrentContentExecutionTests):
                 'semantic_frame': {field: '' for field in library.pipeline.SEMANTIC_FRAME_FIELDS},
                 'grammar_note': 'Noun.', 'uncertainty': '', 'sense_decisions': decisions[line['id']]}
                 for line in targets]}}
-        return {'packet': {'translations': [{'id': line['id'], 'literal_english': 'mind',
-            'segments': [{'text': 'mind', 'word_indices': [0]}],
+        english = 'body' if self.reject_all_posts or (self.reject_flash_post and model == self.options.model) else 'mind'
+        return {'packet': {'translations': [{'id': line['id'], 'literal_english': english,
+            'segments': [{'text': english, 'word_indices': [0]}],
             'fidelity': {'agency_and_image_preserved': True, 'all_meaning_accounted_for': True, 'unsupported_additions': []},
             'human_review_recommended': False, 'material_alternatives': [], 'choice_note': '', 'uncertainty': ''}
             for line in targets], 'comparison': []}}
@@ -183,7 +194,7 @@ class TargetedRepairExecutionTests(CurrentContentExecutionTests):
         self.assertEqual(transport.call_count, 5)
         self.assertEqual(self.schemas, [(self.options.model, 'bhakti_translation_review'),
             (self.options.model, 'bhakti_word_glosses'), (self.options.pro_model, 'bhakti_word_glosses'),
-            (self.options.pro_model, 'bhakti_literal_translation'), (self.options.pro_model, 'bhakti_translation_review')])
+            (self.options.model, 'bhakti_literal_translation'), (self.options.model, 'bhakti_translation_review')])
         self.assertEqual(result['authorization']['confirmed_changes'], {'one': ['english']})
 
     def test_null_gloss_containers_are_typed_at_actual_stage_boundary(self):
@@ -202,29 +213,35 @@ class TargetedRepairExecutionTests(CurrentContentExecutionTests):
                 self.assertEqual(result['authorization']['confirmed_changes'], {'one': ['english']})
 
     def test_both_models_rejected_keeps_evidence_without_candidate_and_cannot_retry(self):
-        import bhakti_model_routes as routes
+        import bhakti_semantic_repair as semantic
         self.reject_all_posts = True
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', side_effect=self.provider) as transport:
             pre = self.execute(self.data)
-            with self.assertRaises(routes.UnitUnresolved): self.repair(pre)
+            with self.assertRaises(semantic.SemanticQualityHold) as held: self.repair(pre)
+            self.assertEqual(held.exception.reason, 'repair_limit_exhausted')
+            self.assertEqual(held.exception.issues, [self.issue])
             count = transport.call_count
-            with self.assertRaises(routes.UnitUnresolved): self.repair(pre)
-        self.assertEqual(count, 7); self.assertEqual(transport.call_count, count)
-        states = [json.loads(path.read_text()) for path in (self.directory / 'routes').rglob('route-state.json')]
-        failed = [state for state in states if state['unit_id'].endswith(':targeted-semantics')]
-        self.assertEqual(len(failed), 1); self.assertEqual(failed[0]['status'], 'unresolved')
-        self.assertEqual(len(failed[0]['attempts']), 2)
+            with self.assertRaises(semantic.SemanticQualityHold): self.repair(pre)
+        self.assertEqual(count, 6); self.assertEqual(transport.call_count, count)
+        states = [json.loads(path.read_text()) for path in (self.directory / 'routes').rglob('semantic-repair-state.json')]
+        self.assertEqual(len(states), 1); self.assertEqual(states[0]['status'], 'blocked')
+        self.assertEqual(states[0]['quality_hold']['issues'], [self.issue])
+        candidates = [json.loads(Path(record['path']).read_text()) for key, record in
+            states[0]['quality_hold']['evidence'].items() if key == 'candidate']
+        self.assertEqual(candidates[0]['packet']['translations'][0]['literal_english'], 'body')
+        self.assertEqual(self.target_populations, [['one'], ['one'], ['one']])
         self.assertFalse((self.directory / 'song/data.js').exists())
 
-    def test_failed_independent_postreview_escalates_one_semantic_unit_not_source_or_good_lines(self):
+    def test_failed_independent_postreview_repairs_only_english_then_reviews_changed_candidate(self):
         self.reject_flash_post = True
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', side_effect=self.provider) as transport:
             pre = self.execute(self.data); result = self.repair(pre); count = transport.call_count
             resumed = self.repair(pre)
         self.assertEqual(result, resumed); self.assertEqual(transport.call_count, count)
-        self.assertEqual(count, 7)  # one current review + two three-call repair attempts
+        self.assertEqual(count, 6)  # initial audit, one glossary, two writers and two post-reviews
         self.assertEqual(set(model for model, _ in self.schemas), {self.options.model, self.options.pro_model})
-        self.assertEqual(self.target_populations, [['one'], ['one'], ['one'], ['one']])
+        self.assertEqual(self.target_populations, [['one'], ['one'], ['one']])
+        self.assertEqual([rows[0]['draft']['literal_english'] for rows in self.review_evidence[-2:]], ['body', 'mind'])
         self.assertEqual(result['authorization']['confirmed_changes'], {'one': ['english']})
 
 

@@ -17,7 +17,7 @@ class TranslationBenchmarkDesignTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.out = Path(self.temp.name)
-        self.case = {'id':'owner-example','slug':'owner-example','mode':'generation',
+        self.case = {'id':'owner-shadow','slug':'owner-example','mode':'generation',
                      'target_ids':['a'],'owner_reference':True,'excerpt_start':0,'excerpt_end':2}
         self.reader = {'SONG_META':{'languages':['Punjabi']},
             'SONG_LINES':{'a':{'source':'ਮੇਰਾ ਮਨ','roman':'merā mana',
@@ -38,44 +38,43 @@ class TranslationBenchmarkDesignTests(unittest.TestCase):
             'independent_review':{'passes':True}}, {'id':'b','literal_english':'Lord', 'segments':[{'text':'Lord','word_indices':[0]}], 'independent_review':{'passes':True}}]}}
 
     def generation(self, failure=False):
-        with patch.object(benchmark.pipeline,'gloss',return_value=self.gloss_packet) as gloss, \
-             patch.object(benchmark.pipeline,'translate',side_effect=RuntimeError('truncated') if failure else None,
-                          return_value=self.translation_packet) as translate:
+        with patch.object(benchmark.pipeline,'complete_semantics',
+                side_effect=RuntimeError('held coordinator') if failure else None,
+                return_value=(self.gloss_packet,self.translation_packet)) as complete:
             result=benchmark.run_generation_case(self.case,self.reader,self.out,self.options)
-        return result,gloss.call_args,translate.call_args
+        return result,complete.call_args
 
-    def test_generation_uses_real_separate_stages_language_and_source_context(self):
-        _,gloss,translation=self.generation()
-        audited=gloss.args[1]; opts=gloss.args[2]
+    def test_generation_uses_shared_coordinator_language_and_source_context(self):
+        _,call=self.generation()
+        audited=call.args[1]; opts=call.args[3]
         self.assertEqual(audited['packet']['metadata']['languages'],['Punjabi'])
         self.assertEqual([r['id'] for r in audited['packet']['verified_lines']],['a','b'])
         self.assertEqual({r['id'] for r in opts.semantic_full_source},{'a','b'})
         self.assertEqual(opts.semantic_performance_order,self.reader['SONG_SEQUENCE'])
-        self.assertEqual(translation.args[3]['languages'],['Punjabi'])
-        self.assertEqual(translation.args[2],self.gloss_packet)
+        self.assertEqual(audited['packet']['performance_order'],self.reader['SONG_SEQUENCE'])
+        self.assertEqual(call.args[2]['languages'],['Punjabi'])
 
     def test_owner_comparison_is_independent_and_original_not_mutated(self):
         before=copy.deepcopy(self.reader)
-        _,gloss,translation=self.generation()
-        self.assertNotIn('providedTranslation',translation.args[3])
-        for call in (gloss,translation):
-            payload=json.dumps([call.args[1],vars(call.args[-1])],default=str)
-            self.assertNotIn('OWNER_SECRET',payload)
-            self.assertNotIn('NEIGHBOR_SECRET',payload)
+        _,call=self.generation()
+        self.assertNotIn('providedTranslation',call.args[2])
+        payload=json.dumps([call.args[1],vars(call.args[-1])],default=str)
+        self.assertNotIn('OWNER_SECRET',payload)
+        self.assertNotIn('NEIGHBOR_SECRET',payload)
         self.assertEqual(self.reader,before)
 
     def test_private_case_directory_is_stable_and_force_is_false(self):
-        _,first,_=self.generation();_,second,_=self.generation()
+        _,first=self.generation();_,second=self.generation()
         self.assertEqual(first.args[0],second.args[0])
         self.assertTrue(first.args[0].is_relative_to(self.out))
-        self.assertFalse(first.args[2].force)
+        self.assertFalse(first.args[3].force)
         self.assertTrue(first.args[0].exists())
 
-    def test_completed_gloss_artifact_survives_translation_failure(self):
-        try:self.generation(failure=True)
-        except RuntimeError:pass
-        files=list(self.out.rglob('*.json'))
-        self.assertTrue(any(json.loads(p.read_text())==self.gloss_packet for p in files))
+    def test_held_coordinator_never_emits_successful_comparison(self):
+        with self.assertRaisesRegex(RuntimeError,'held coordinator'):self.generation(failure=True)
+        folder=self.out/'cases'/self.case['id']
+        self.assertTrue((folder/'source-input.json').exists())
+        self.assertFalse((folder/'comparison.json').exists())
 
     def test_model_approval_is_not_editorial_success(self):
         result=benchmark.comparison_record(self.case,self.reader,self.gloss_packet,self.translation_packet)
@@ -146,7 +145,8 @@ class TranslationBenchmarkDesignTests(unittest.TestCase):
                     'fidelity':{'agency_and_image_preserved':True,'all_meaning_accounted_for':True,'unsupported_additions':[],'notes':''}} for line in lines], 'comparison':[]}}
             if name=='bhakti_translation_review':
                 ids=section(prompt,'OUTPUT TARGET IDS (return exactly these, once each):')
-                return {'packet':{'reviews':[{'id':i,'passes':True,'agency_preserved':True,'imagery_preserved':True,'all_meaning_accounted_for':True,'unsupported_additions':[],'human_review_recommended':False,'material_choice':'','reason':'fixture only','issues':[]} for i in ids]}}
+                return {'packet':{'reviews':[{'id':i,'passes':True,'agency_preserved':True,'imagery_preserved':True,'all_meaning_accounted_for':True,'unsupported_additions':[],'human_review_recommended':False,'material_choice':'','reason':'fixture only','issues':[],
+                    'component_judgments':{c:{'status':'supported','reason':'Fixture source checked.'} for c in ('gloss','frame','english')}} for i in ids]}}
             raise AssertionError(name)
         with patch.object(benchmark.pipeline.gemini,'key',return_value='fake-no-key'),patch.object(benchmark.pipeline.gemini,'call',side_effect=provider):
             benchmark.run_generation_case(self.case,self.reader,self.out,self.options)

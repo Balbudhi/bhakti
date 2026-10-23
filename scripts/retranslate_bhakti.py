@@ -2,9 +2,9 @@
 """Create gloss-first translation review packets for existing Bhakti readers.
 
 This is intentionally text-only: it does not redownload, retranscribe, or
-retime audio. It first rebuilds word glosses, then asks Gemini to derive a
-literal English line solely from that gloss record through the production
-translation and independent-review stages, then compares the published wording.
+retime audio. It uses the bounded production semantic coordinator to derive English from
+validated word glosses and independently review it, then compares published
+wording. Matching accepted work resumes without another paid request.
 Public data is not overwritten by this command.
 """
 
@@ -15,6 +15,10 @@ import concurrent.futures
 import copy
 import hashlib
 import json
+import math
+import os
+import sys
+import time
 import subprocess
 import tempfile
 from pathlib import Path
@@ -24,6 +28,7 @@ import process_song_gemini as gemini
 import bhakti_pipeline as pipeline
 import editorial_baselines
 import bhakti_translation_policy as translation_policy
+from bhakti_intake_run import bounded_intake_run
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,7 +42,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", default=gemini.MODEL)
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--reuse-glosses", action="store_true",
-                        help="Reuse a matching validated shared gloss cache; rerun English and independent review.")
+                        help="Deprecated: resume matching validated stages, including accepted English; no forced paid rerun.")
+    parser.add_argument("--budget-usd", type=float)
+    parser.add_argument("--max-calls", type=int)
+    parser.add_argument("--deadline-seconds", type=float)
+    parser.add_argument("--run-dir", type=Path)
     return parser.parse_args()
 
 
@@ -176,10 +185,33 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
         raise RuntimeError("invalid song slug")
     review_dir = ROOT / "songs" / slug / ".transcription" / "translation-review-gloss-first"
     report_path = review_dir / "review.json"
-    # Invalidate any previous successful report before validation or paid work.
-    # Stage caches remain independently reusable only through shared contracts.
+    previous_report = pipeline.read_packet(report_path)
+    workspace = review_dir / "shared-text-stages"
+    coordinator_state = workspace / '.transcription/pipeline/semantic-repair-state.json'
     identity = None
-    atomic_report(report_path, {"slug": slug, "status": "in-progress", "reader_sha256": identity})
+    report_claimed = False
+    # A direct API caller must use the same bounded context as CLI workers.
+    deadline = getattr(options, 'unit_deadline_at', None)
+    if (not pipeline.bhakti_semantic_repair._bounded_ready()
+            or type(deadline) not in (int, float) or not math.isfinite(deadline)
+            or deadline <= time.time()
+            or not Path(os.environ.get('BHAKTI_API_RUN_LEDGER', '')).is_file()):
+        raise RuntimeError('retranslation requires an active bounded run and original deadline')
+    legacy_report = bool(previous_report and previous_report.get('version') != 2)
+    if previous_report and not coordinator_state.exists():
+        if legacy_report:
+            hold = previous_report.get('status') != 'review-required'
+            reason = 'legacy unfinished review requires reconciliation; original report retained'
+        else:
+            # Only a known failure before complete() may retry without stage
+            # state. Missing state after a claim is not a new paid allowance.
+            hold = (previous_report.get('semantic_started') is not False
+                    or previous_report.get('status') != 'blocked'
+                    or (workspace / '.transcription/pipeline').exists())
+            reason = 'claimed semantic state is missing; original report retained'
+        if hold:
+            atomic_report(review_dir / 'migration-hold.json', {'slug': slug, 'status': 'held', 'reason': reason})
+            raise RuntimeError(reason)
     try:
         public_bytes = (ROOT / "songs" / slug / "data.js").read_bytes()
         identity = hashlib.sha256(public_bytes).hexdigest()
@@ -187,23 +219,35 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
         canonical = source_lines(reader)
         baseline = supplied_baseline(slug, reader)
         languages = reader.get("SONG_META", {}).get("languages", [])
-        audited = {"packet": {"verified_lines": canonical, "metadata": {"languages": languages}}}
+        audited = {"packet": {"verified_lines": canonical, "metadata": {"languages": languages},
+                               "performance_order": copy.deepcopy(reader['SONG_SEQUENCE'])}}
         job = {"slug": slug, "languages": languages}
-        workspace = review_dir / "shared-text-stages"
         if baseline is not None:
             # Pass a real file so the shared resolver never treats a long poem
             # or JSON line map as an operating-system filename.
             baseline_path = review_dir / "supplied-english.txt"
-            baseline_path.write_text(json.dumps(baseline, ensure_ascii=False), encoding="utf-8")
+            atomic_report(baseline_path, baseline)
             job["providedTranslation"] = str(baseline_path)
-        gloss_options = argparse.Namespace(**vars(options), force=not options.reuse_glosses)
-        gloss_options.source_slug = slug
-        glosses = pipeline.gloss(workspace, audited, gloss_options)
-        # The documented option reuses glosses only; English and its independent
-        # review run again, using the shared policy/evidence fingerprints.
-        translation_options = argparse.Namespace(**vars(options), force=True)
-        translation_options.source_slug = slug
-        translations = pipeline.translate(workspace, audited, glosses, job, translation_options)
+        local = copy.copy(options)
+        local.force = False
+        local.source_slug = slug
+        local.semantic_full_source = canonical
+        local.semantic_performance_order = copy.deepcopy(reader['SONG_SEQUENCE'])
+        local.semantic_deadline_at = min(deadline, getattr(options, 'semantic_deadline_at', deadline))
+        if legacy_report and not coordinator_state.exists():
+            # A legacy success is not an accepted coordinator receipt. Permit
+            # adoption only through the existing exact stage validators.
+            evidence = pipeline.bhakti_semantic_repair.source_evidence(pipeline, workspace, audited)
+            reusable, _ = pipeline.bhakti_semantic_repair.reusable_prior_stages(
+                pipeline, workspace / '.transcription/pipeline', canonical, languages, job, local, evidence)
+            if reusable is None:
+                atomic_report(review_dir / 'migration-hold.json', {'slug': slug, 'status': 'held',
+                    'reason': 'legacy successful review lacks exact reusable stage evidence; original retained'})
+                raise RuntimeError('legacy successful review lacks exact reusable stage evidence; original retained')
+        atomic_report(report_path, {'version': 2, 'slug': slug, 'status': 'in-progress', 'semantic_started': True,
+            'reader_sha256': identity, 'cache_behavior': 'resume-matching-accepted-stages'})
+        report_claimed = True
+        glosses, translations = pipeline.complete_semantics(workspace, audited, job, local)
         gloss_by_id = {row["id"]: row for row in glosses["packet"]["glosses"]}
         english_by_id = {row["id"]: row for row in translations["packet"]["translations"]}
         candidate = copy.deepcopy(reader)
@@ -225,7 +269,9 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
         editorial_baselines.assert_english_preserved(slug, candidate["SONG_LINES"], root=ROOT)
         if (ROOT / "songs" / slug / "data.js").read_bytes() != public_bytes:
             raise RuntimeError("reader changed during review; rerun against current content")
-        report = {"slug": slug, "status": "review-required", "reader_sha256": identity,
+        report = {"version": 2, "slug": slug, "status": "review-required", "reader_sha256": identity,
+                  "semantic_started": True,
+                  "cache_behavior": "resume-matching-accepted-stages",
                   "model_requested": options.model, "source_lines": canonical,
                   "glosses": glosses, "translations": translations, "comparison": comparison,
                   "candidate_reader": candidate,
@@ -235,8 +281,11 @@ def run_slug(slug: str, options: argparse.Namespace) -> dict[str, Any]:
         return {"slug": slug, "status": report["status"],
                 "artifact_reported_openrouter_cost": report["artifact_reported_openrouter_cost"]}
     except Exception as exc:
-        atomic_report(report_path, {"slug": slug, "status": "blocked", "reader_sha256": identity,
-                                    "error": str(exc)})
+        # Preserve legacy evidence until an exact coordinator claim exists.
+        if report_claimed or previous_report is None or coordinator_state.exists():
+            atomic_report(report_path, {"version": 2, "slug": slug, "status": "blocked", "reader_sha256": identity,
+                                       "cache_behavior": "resume-matching-accepted-stages",
+                                       "semantic_started": report_claimed or coordinator_state.exists(), "error": str(exc)})
         raise
 
 
@@ -251,8 +300,12 @@ def main() -> int:
             # One legacy reader must not prevent independent readers from
             # receiving their requested text-only review packet.
             return {"slug": slug, "status": "blocked", "error": str(exc)}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, options.workers)) as pool:
-        results = list(pool.map(guarded, slugs))
+    if options.reuse_glosses:
+        print('--reuse-glosses is deprecated: matching accepted stages resume without a forced paid rerun.', file=sys.stderr)
+    jobs = [{'slug': slug, 'source': str((ROOT / 'songs' / slug / 'data.js').resolve())} for slug in slugs]
+    with bounded_intake_run(ROOT, jobs, options):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, options.workers)) as pool:
+            results = list(pool.map(guarded, slugs))
     print(json.dumps(results, ensure_ascii=False, indent=2))
     return 1 if any(result["status"] == "blocked" for result in results) else 0
 

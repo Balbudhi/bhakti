@@ -29,14 +29,24 @@ def json_block(prompt, marker):
 
 
 def clean_review(line_id):
-    return {'id': line_id, 'passes': True, 'agency_preserved': True,
+    result = {'id': line_id, 'passes': True, 'agency_preserved': True,
             'imagery_preserved': True, 'all_meaning_accounted_for': True,
             'unsupported_additions': [], 'human_review_recommended': False,
             'material_choice': '', 'reason': 'Source and changed candidate checked.', 'issues': []}
+    if library.pipeline.REVIEW_TASK_VERSION >= 3:
+        result['component_judgments'] = {key: {'status': 'supported',
+            'reason': 'The corrected component agrees with the source and retained findings.'}
+            for key in ('gloss', 'frame', 'english')}
+    return result
 
 
 class FindingIntegrationTests(unittest.TestCase):
     def setUp(self):
+        # This retained paid diagnostic predates component judgments. Preserve
+        # its actual response, and exercise its original historical contract.
+        self.current_review_version = library.pipeline.REVIEW_TASK_VERSION
+        historical = patch.object(library.pipeline, 'REVIEW_TASK_VERSION', 2)
+        historical.start(); self.addCleanup(historical.stop)
         self.fixture = json.loads((FIXTURES / 'rehna-reviews.json').read_text())
         self.reader = json.loads((FIXTURES / 'rehna-reader.json').read_text())
         self.assertEqual(digest(self.reader), self.fixture['reader_digest'])
@@ -91,7 +101,7 @@ class FindingIntegrationTests(unittest.TestCase):
              patch.object(library.pipeline.gemini, 'call', side_effect=self.provider):
             result = self.audit()
             cached = self.audit()
-        self.assertEqual(len(self.calls), 4)
+        self.assertEqual(len(self.calls), 3)  # malformed Flash child stops before the second child
         self.assertEqual(result, cached)
         pending = findings.pending_findings(result['finding_snapshot'])
         self.assertEqual(len(pending), 4)
@@ -118,11 +128,11 @@ class FindingIntegrationTests(unittest.TestCase):
              patch.object(library.pipeline.gemini, 'call', side_effect=self.provider):
             with patch.object(routes, 'atomic_json', side_effect=interrupt_after_flash):
                 with self.assertRaises(KeyboardInterrupt): self.audit()
-            self.assertEqual(len(self.calls), 2)
+            self.assertEqual(len(self.calls), 1)
             result = self.audit()
             self.audit()
         self.assertEqual([c['model'] for c in self.calls],
-                         [self.options.model]*2 + [self.options.pro_model]*2)
+                         [self.options.model] + [self.options.pro_model]*2)
         states = list((self.directory/'routes').rglob('route-state.json'))
         self.assertEqual(len(states), 1)
         saved = json.loads(states[0].read_text())
@@ -283,7 +293,7 @@ class FindingIntegrationTests(unittest.TestCase):
             saved['findings'] = [f for f in saved['findings'] if f['attempt_id'] != omitted_attempt]
             journal.write_text(json.dumps(saved, ensure_ascii=False))
             resumed = self.audit()
-        self.assertEqual(len(self.calls), 4)
+        self.assertEqual(len(self.calls), 3)  # malformed Flash child stops before the second child
         self.assertEqual({f['finding_id'] for f in resumed['finding_snapshot']['findings']},
                          {f['finding_id'] for f in result['finding_snapshot']['findings']})
         self.assertEqual(len(resumed['finding_snapshot']['findings']), 4)
@@ -499,10 +509,13 @@ class FindingIntegrationTests(unittest.TestCase):
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), \
              patch.object(library.pipeline.gemini, 'call', side_effect=provider):
             pre = self.audit()
+            self.assertEqual(pre['review_task_version'], 2)
+            library.pipeline.REVIEW_TASK_VERSION = self.current_review_version
             result = library.repair_current_reader(self.reader, slug='rehna-nahi-isa-desa',
                 pre_review=pre, workspace=self.directory/'workspace', route_dir=self.directory/'routes',
                 options=self.options, dependency_fingerprint=self.context['dependency_fingerprint'],
                 deadline_at=self.deadline)
+            self.assertEqual(result['post_review']['review_task_version'], self.current_review_version)
             count = len(self.calls)
             resumed = library.repair_current_reader(self.reader, slug='rehna-nahi-isa-desa',
                 pre_review=pre, workspace=self.directory/'workspace', route_dir=self.directory/'routes',

@@ -61,9 +61,9 @@ LONG_MERGE_VERSION = 8
 LONG_TRANSCRIPT_CONTRACT_VERSION = 4
 GLOSS_CONTRACT_VERSION = 6
 TRANSLATION_INPUT_VERSION = 9
-REVIEW_TASK_VERSION = 2
+REVIEW_TASK_VERSION = 3
 # Exact older task shapes supported for evidence reuse; absence means task0.
-PRIOR_REVIEW_TASK_VERSIONS = (0, 1)
+PRIOR_REVIEW_TASK_VERSIONS = (0, 1, 2)
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
@@ -926,6 +926,12 @@ def stage_quality_failure(options: argparse.Namespace, detail: str, *, kind: str
         import bhakti_model_routes
         raise bhakti_model_routes.QualityFailure([{"kind": kind, "detail": detail}])
     raise RuntimeError(detail)
+
+
+def capture_writer_response(options, response):
+    sink = getattr(options, 'semantic_writer_diagnostics', None)
+    if sink is not None:
+        sink.append(copy.deepcopy(response))
 
 
 def stage_model_rows(response: Any, field: str, options: argparse.Namespace) -> list[dict[str, Any]]:
@@ -3899,7 +3905,7 @@ def supplied_translation(job: dict[str, Any]) -> str:
 
 
 def translation_review_schema() -> dict[str, Any]:
-    return {"type": "object", "properties": {"reviews": {"type": "array", "items": {
+    schema = {"type": "object", "properties": {"reviews": {"type": "array", "items": {
         "type": "object", "properties": {
             "id": {"type": "string"}, "passes": {"type": "boolean"},
             "human_review_recommended": {"type": "boolean"},
@@ -3910,6 +3916,17 @@ def translation_review_schema() -> dict[str, Any]:
         "required": ["issues", "id", "passes", "human_review_recommended", "agency_preserved", "imagery_preserved",
                      "all_meaning_accounted_for", "unsupported_additions", "material_choice", "reason"],
         "additionalProperties": False}}}, "required": ["reviews"], "additionalProperties": False}
+
+    if REVIEW_TASK_VERSION >= 3:
+        row = schema['properties']['reviews']['items']
+        conclusion = {'type': 'object', 'properties': {
+            'status': {'type': 'string', 'enum': ['supported', 'defect', 'unresolved']},
+            'reason': {'type': 'string'}}, 'required': ['status', 'reason'], 'additionalProperties': False}
+        row['properties']['component_judgments'] = {'type': 'object',
+            'properties': {key: copy.deepcopy(conclusion) for key in ('gloss', 'frame', 'english')},
+            'required': ['gloss', 'frame', 'english'], 'additionalProperties': False}
+        row['required'].append('component_judgments')
+    return schema
 
 
 def select_translation_review_rows(
@@ -4186,6 +4203,17 @@ def independently_review_translations(
     policy = {**policy, **review_task_identity(), 'review_payload_contract': 1, 'pending_findings': getattr(options, 'semantic_pending_findings', []),
               'repair_findings': getattr(options, 'semantic_repair_findings', [])}
     review_schema = translation_review_schema()
+    reservation_context = getattr(options, 'semantic_writer_review_context', None)
+    if reservation_context:
+        row_schema = review_schema['properties']['reviews']['items']
+        row_schema['properties']['writer_reservation_dispositions'] = {'type': 'array', 'items': {
+            'type': 'object', 'properties': {
+                'reservation_id': {'type': 'string'},
+                'status': {'type': 'string', 'enum': ['resolved', 'repair_required', 'unresolved']},
+                'source_quote': {'type': 'string'}, 'explanation': {'type': 'string'}},
+            'required': ['reservation_id', 'status', 'source_quote', 'explanation'], 'additionalProperties': False}}
+        row_schema['required'].append('writer_reservation_dispositions')
+    policy['writer_review_context'] = reservation_context
     if getattr(options, 'semantic_repair_findings', []):
         row_schema = review_schema['properties']['reviews']['items']
         row_schema['properties']['finding_dispositions'] = {
@@ -4249,6 +4277,17 @@ def independently_review_translations(
                 stage_quality_failure(options,
                     f"translation review has unresolved or malformed context dependencies: {unresolved}",
                     kind="unresolved_context")
+        judged = copy.deepcopy(translation_rows)
+        selected_by_id = {row['id']: row for row in selected}
+        for row in judged:
+            if row['id'] in selected_by_id:
+                row['independent_review'] = selected_by_id[row['id']]
+        contract_errors = translation_review_contract_errors(lines, gloss_rows, judged,
+            review_context=reservation_context, review_task_version=REVIEW_TASK_VERSION,
+            expected_context_identity=bhakti_semantic_repair.review_context_identity(lines, options),
+            target_ids=target_ids)
+        if contract_errors:
+            stage_quality_failure(options, 'translation review judgment: ' + str(contract_errors[:3]))
         # Keep the provider response and its flags intact in candidate-*.json.
         result = copy.deepcopy(response)
         result["packet"]["reviews"] = copy.deepcopy(selected)
@@ -4281,7 +4320,7 @@ def independently_review_translations(
             reading = payload["reading_context"]
             return f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
 
-Review two outputs independently for every target: the indexed primary popup glosses and semantic frame, then the complete English and its links. Popup glosses are displayed content to verify, not trusted evidence. First compare each gloss and frame claim with the source and performed context, including its qualifiers, relationships, agency and imagery; then judge the English. A correct English sentence cannot cure an unsupported popup claim. Report a popup defect as gloss_sense at its exact source indices (and a distinct frame defect as frame_relation), even when the English avoids it. Set passes=false for that defect; describe the separate gloss and English conclusions briefly in reason. Do not invent an English defect merely to justify repairing a gloss.
+Review three components independently for every target: (1) indexed primary popup glosses, (2) semantic frame and grammar claims, (3) complete English and its links. Derive each judgment from the original source and performed context, not from agreement between generated components. Popup glosses and frames are claims to verify, not trusted evidence. Check each component's qualifiers, relationships, agency and imagery. A correct English sentence cannot cure an unsupported popup or frame claim. Report a popup defect as gloss_sense at its exact source indices. Report a distinct frame defect as frame_relation, identifying the specific frame field and claim; reporting it only as an English or gloss defect does not account for the frame. Give a separate concise conclusion for each component. Set passes=false for a real defect, including one absent from the English. Do not invent an English defect to justify repairing a gloss, or fail a supported frame merely because another component failed. Distinguish supported contextual inference from what the source states explicitly.
 
 When reading context includes source_only_context, its definitions and bound before/after windows preserve original neighboring source only. They supply no neighbor English, gloss, or certified interpretation, and are not additional output targets. These local windows do not invent global occurrence numbers; use them to check contextual claims against the original words.
 
@@ -4291,15 +4330,23 @@ When original reader rows and confirmed issues are supplied below, check each pr
 
 Conventional English is not automatically better. Preserve personification, repetition, transparent spatial language, and concrete ritual images. A breath that abandons a speaker is materially different from a speaker releasing breath; a speaker who is broken from the inside is materially different from a speaker actively breaking; “takes hold” is materially different from “kindles”; palm is materially different from an abstract inner state. If the draft and an alternative make such a material choice and no locked human baseline resolves it, set human_review_recommended=true. Do not flag trivial synonyms or punctuation.
 
+For a material choice, state both supported readings, their consequential difference in agency, imagery, grammatical attachment, ambiguity or poetic force, and why source/context does not resolve that difference. Listing alternatives alone, repeating a writer's confidence flag, or preferring familiar diction is insufficient. A genuine unresolved distinction remains a hold; a supported synonymous expression needs no repair merely because another is also possible.
+
 For a retained non-name, independently compare the writer's best English paraphrase and stated loss with the source/context. Reject unnecessary opaque retention, a misleading explanation, or retention that conceals unresolved source meaning. Do not require a forced English substitute or coinage when it distorts a well-understood concept. The linked English gloss must explain the retained term and acknowledge approximation where needed.
 
 Preserve supplied locked human English exactly; a preferred alternative is not permission to reject or rewrite it. A source-versus-locked-English conflict remains a human-review hold: set human_review_recommended=true and report the exact conflict without changing the English or distorting the gloss to agree with it. The English lock does not certify popup glosses or frame claims. Independently established popup/frame defects can set passes=false and require their own targeted repair while the English remains unchanged.
 
 Check that each English segment uses the same contextual sense as the gloss at its linked indices. Supported alternatives belong separately in the grammar note; a list of possibilities does not excuse a mismatch between English and its clickable gloss. Check that compounds and inflections contribute all their meaning and proper names have meaningful identity or relationship glosses. Dictionary candidates are evidence of possible senses only, never permission to override this line's language or grammar. A defensible alternative word is not itself a defect: identify a concrete source/context contradiction or material loss before rejecting the existing choice. Do not promote a synonym preference into a required repair. Cite a named dictionary, quotation or etymological authority as verified only when the supplied evidence contains the matching entry or passage. Otherwise describe the basis as linguistic/contextual inference, not a checked citation. Missing dictionary evidence alone does not make a meaning wrong; use unresolved_evidence only when the actual disputed meaning cannot be resolved without it.
 
-{bhakti_translation_policy.naming_prompt(options, [item["source"] for item in target_evidence])}{bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", []))}
+{bhakti_translation_policy.naming_prompt(options, [item["source"] for item in target_evidence], review=True)}{bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", []))}
 
 {bhakti_lexical_support.prompt(support, [item['source']['id'] for item in target_evidence], 'review')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_source_discovery.prompt(options, [item['source']['id'] for item in target_evidence])}{bhakti_semantic_repair.REVIEW_GUIDANCE}
+
+Return component_judgments for gloss, frame and english separately: status supported, defect, or unresolved and a concise source-grounded reason. A defect needs its matching typed issue; unresolved needs consequential unresolved_evidence. Set human_review_recommended=true only for that unresolved evidence, not an ordinary repairable defect or synonym preference. An English lexical gap is not by itself uncertainty about the source meaning.
+
+When WRITER RESERVATIONS are supplied, adjudicate each exact reservation ID on its target row. Current concerns are already in that row's unchanged draft; prior concerns preserve earlier writer doubts. Use resolved when the current candidate needs no further change for that concern, with source grounds; do not invent an English defect merely to clear a confidence flag. Use repair_required only with a real matching typed issue, and unresolved only with consequential unresolved_evidence. Return writer_reservation_dispositions with reservation_id, status, exact source_quote, and explanation. Do not change the writer's words or flags. Resolving one concern does not excuse a separate popup or frame defect.
+
+{('WRITER RESERVATIONS:\n' + json.dumps(bhakti_semantic_repair.reservation_prompt_context(reservation_context, [item['source']['id'] for item in target_evidence]), ensure_ascii=False)) if bhakti_semantic_repair.reservation_prompt_context(reservation_context, [item['source']['id'] for item in target_evidence]) else ''}
 
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
@@ -4421,7 +4468,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     if (existing and existing.get("fingerprint") == fingerprint and not options.force
             and existing.get("input_contract_version") == TRANSLATION_INPUT_VERSION):
         errors = fresh_translation_contract_errors(
-            lines, gloss_rows, existing.get("packet", {}).get("translations", []))
+            lines, gloss_rows, existing.get("packet", {}).get("translations", []), **translation_packet_contract_kwargs(lines, existing, options, performance_order=audited["packet"].get("performance_order", []), expected_review_task_version=existing.get("review_task_version", 0)))
         errors.extend(bhakti_lexical_support.support_decision_errors(support, gloss_rows, existing.get("packet", {}).get("translations", [])))
         errors.extend(automatic_evidence_errors(options, existing))
         errors.extend(bhakti_source_discovery.translation_decision_errors(
@@ -4438,7 +4485,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
         if defer_review:
             return candidate
         refreshed = review_translation(song_dir, audited, glosses, job, options, candidate, prepared=True)
-        errors = fresh_translation_contract_errors(lines, gloss_rows, refreshed['packet']['translations'])
+        errors = fresh_translation_contract_errors(lines, gloss_rows, refreshed['packet']['translations'], **translation_packet_contract_kwargs(lines, refreshed, options, performance_order=audited['packet'].get('performance_order', [])))
         if candidate_only:
             return refreshed
         if errors:
@@ -4540,6 +4587,7 @@ Return strict JSON:
         result = gemini.call(options.model, gemini.key(), prompt_for(candidate_lines, []), audio=None, timeout=stage_call_timeout(options),
                                        response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"), schema_name="bhakti_literal_translation",
                              reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
+        capture_writer_response(options, result)
         # This response was just returned by this attempt. Cached candidates and
         # adopted seeds reach only the ordinary local validation below.
         returned_rows = stage_model_rows(result, 'translations', options)
@@ -4588,7 +4636,8 @@ Return strict JSON:
                                        response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"),
                                        schema_name="bhakti_translation_batch", reasoning_effort="high",
                                        max_completion_tokens=65536, **stage_transport_context(options))
-                returned = [row.get("id") for row in response["packet"].get("translations", [])]
+                capture_writer_response(options, response)
+                returned = [row.get("id") for row in stage_model_rows(response, "translations", options)]
                 compared = [row.get("id") for row in response["packet"].get("comparison", [])]
                 if returned != target_ids or compared != target_ids:
                     stage_quality_failure(options, f"translation batch {label} returned IDs out of order or incomplete")
@@ -4660,6 +4709,8 @@ Return strict JSON:
     result["input_contract_version"] = TRANSLATION_INPUT_VERSION
     result["fingerprint"] = fingerprint
     result["automatic_evidence_receipt"] = automatic_evidence_receipt(options)
+    if getattr(options, "semantic_coordinator_acceptance", None):
+        result["writer_coordinator_acceptance"] = options.semantic_coordinator_acceptance
     candidate_path = target.parent / 'translation-candidate.json'
     semantic_write_json(candidate_path, result)
     bhakti_semantic_repair.assert_baseline(getattr(options, 'semantic_baseline', None), result['packet']['translations'])
@@ -4667,7 +4718,7 @@ Return strict JSON:
         return result  # A private writer candidate, never an affirmative 05 acceptance.
     result = review_translation(song_dir, audited, glosses, job, options, result,
                                 prepared=True)
-    errors = fresh_translation_contract_errors(lines, gloss_rows, result["packet"]["translations"])
+    errors = fresh_translation_contract_errors(lines, gloss_rows, result["packet"]["translations"], **translation_packet_contract_kwargs(lines, result, options, performance_order=audited["packet"].get("performance_order", [])))
     if candidate_only:
         return result
     source_issues = bhakti_source_discovery.repair_issues(
@@ -4685,6 +4736,8 @@ def review_translation(song_dir, audited, glosses, job, options, candidate, *, p
     if not prepared:
         options, glosses = bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
     result = copy.deepcopy(candidate)
+    for field in ('semantic_repair_version', 'semantic_run_id', 'coordinator_acceptance'):
+        result.pop(field, None)
     lines = audited['packet']['verified_lines']
     gloss_rows = glosses['packet']['glosses']
     gloss_by_id = {row['id']: row for row in gloss_rows}
@@ -4692,6 +4745,35 @@ def review_translation(song_dir, audited, glosses, job, options, candidate, *, p
     provided_translation = supplied_translation(job)
     candidate_path = song_dir / '.transcription/pipeline/translation-candidate.json'
     review_options = copy.copy(options)
+    if candidate.get('writer_route_state'):
+        history = bhakti_semantic_repair.validated_writer_history(candidate['writer_route_state'])
+    elif candidate.get('writer_evidence'):
+        receipt = candidate['writer_evidence']
+        history = [{'rows': bhakti_semantic_repair.writer_proof_rows(receipt['current']), 'proof': receipt['current']}]
+    else:
+        original = copy.deepcopy(candidate)
+        original.pop('writer_review_context', None)
+        original['packet']['translations'] = bhakti_semantic_repair.writer_rows(original['packet']['translations'])
+        proof_path = song_dir / '.transcription/pipeline/writer-drafts' / (bhakti_semantic_repair.digest(original) + '.json')
+        if proof_path.exists():
+            if bhakti_semantic_repair.digest(read_packet(proof_path)) != bhakti_semantic_repair.digest(original):
+                raise RuntimeError('immutable writer draft changed')
+        else:
+            semantic_write_json(proof_path, original)
+        history = [{'rows': bhakti_semantic_repair.writer_rows(original['packet']['translations']),
+                    'proof': {'path': str(proof_path), 'candidate_sha256': bhakti_semantic_repair.digest(original)}}]
+    context = bhakti_semantic_repair.writer_review_context(lines, gloss_rows, result['packet']['translations'],
+        context_identity=bhakti_semantic_repair.review_context_identity(lines, options,
+            performance_order=audited['packet'].get('performance_order', [])),
+        prior_candidates=history, previous_context=getattr(options, 'semantic_previous_writer_context', None))
+    result['writer_evidence'] = bhakti_semantic_repair.writer_evidence_receipt(history,
+        bhakti_semantic_repair.review_context_identity(lines, options, performance_order=audited['packet'].get('performance_order', [])),
+        getattr(options, 'semantic_previous_writer_context', None))
+    if context is not None:
+        result['writer_review_context'] = context
+        review_options.semantic_writer_review_context = context
+    else:
+        result.pop('writer_review_context', None)
     review_options.semantic_performance_order = copy.deepcopy(
         getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))
     if hasattr(options, 'semantic_deadline_at'):
@@ -4728,9 +4810,117 @@ def validate_ids(lines: list[dict[str, Any]], *collections: list[dict[str, Any]]
     return errors
 
 
-def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]], translation_rows: list[dict[str, Any]]) -> list[str]:
+def translation_review_contract_errors(lines, gloss_rows, translation_rows, *, review_context=None,
+                                       review_task_version=None, expected_context_identity=None, target_ids=None):
+    """Validate judgments, including valid objections; never certify their truth."""
+    errors = []
+    require_components = review_task_version is not None and review_task_version >= 3
+    concerns = any(bhakti_semantic_repair.reservation_fields(row) is not None for row in translation_rows)
+    if review_context is not None:
+        errors += bhakti_semantic_repair.writer_review_context_errors(
+            lines, gloss_rows, translation_rows, review_context, expected_context_identity)
+    elif concerns:
+        errors.append('writer reservations lack bound review context')
+    refs = review_context.get('reservations', []) if isinstance(review_context, dict) else []
+    sources = {line['id']: line for line in lines}
+    for row in translation_rows:
+        if target_ids is not None and row['id'] not in target_ids:
+            continue
+        review = row.get('independent_review', {})
+        if not isinstance(review, dict):
+            errors.append('review must be an object'); continue
+        flags = ('passes', 'human_review_recommended', 'agency_preserved', 'imagery_preserved', 'all_meaning_accounted_for')
+        if any(type(review.get(key)) is not bool for key in flags):
+            errors.append('review requires explicit boolean judgments')
+        issues = review.get('issues')
+        errors += bhakti_semantic_repair.issue_errors(lines, gloss_rows, issues)
+        if not isinstance(issues, list):
+            continue
+        if review.get('passes') is True and issues:
+            errors.append('passing review cannot contain repair issues')
+        local = [issue for issue in issues if isinstance(issue, dict) and row['id'] in issue.get('target_line_ids', [])]
+        if require_components:
+            components = review.get('component_judgments')
+            if not isinstance(components, dict) or set(components) != {'gloss', 'frame', 'english'}:
+                errors.append('review requires separate gloss/frame/english conclusions')
+            else:
+                mapping = {'gloss': {'gloss_sense'}, 'frame': {'frame_relation'},
+                           'english': {'english_realization', 'english_mapping'}}
+                statuses = []
+                for component, kinds in mapping.items():
+                    judgment = components[component]
+                    if (not isinstance(judgment, dict) or judgment.get('status') not in {'supported', 'defect', 'unresolved'}
+                            or not isinstance(judgment.get('reason'), str) or not judgment['reason'].strip()):
+                        errors.append('invalid component judgment'); continue
+                    status = judgment['status']; statuses.append(status)
+                    matches = [i for i in local if i.get('kind') in kinds]
+                    if (status == 'defect' and not matches) or (status == 'supported' and matches):
+                        errors.append(component + ' judgment disagrees with typed defect')
+                    if status == 'unresolved' and not any(i.get('kind') == 'unresolved_evidence' for i in local):
+                        errors.append(component + ' unresolved judgment lacks source evidence issue')
+                if review.get('passes') is True and any(status != 'supported' for status in statuses):
+                    errors.append('passing review has unsupported component')
+                if review.get('passes') is False and statuses and all(status == 'supported' for status in statuses):
+                    errors.append('failed review has no component objection')
+            unresolved = any(i.get('kind') == 'unresolved_evidence' for i in local)
+            if review.get('human_review_recommended') is not unresolved:
+                errors.append('human hold must correspond to consequential unresolved_evidence')
+        wanted = {r['reservation_id'] for r in refs if r['line_id'] == row['id']}
+        dispositions = review.get('writer_reservation_dispositions', [])
+        if (not isinstance(dispositions, list) or any(not isinstance(d, dict) for d in dispositions)
+                or {d.get('reservation_id') for d in dispositions} != wanted or len(dispositions) != len(wanted)):
+            errors.append('writer reservation disposition population mismatch'); continue
+        for disposition in dispositions:
+            status = disposition.get('status')
+            if (status not in {'resolved', 'repair_required', 'unresolved'}
+                    or not isinstance(disposition.get('source_quote'), str) or not disposition['source_quote'].strip()
+                    or disposition['source_quote'] not in sources.get(row['id'], {}).get('source_text', '')
+                    or not isinstance(disposition.get('explanation'), str) or not disposition['explanation'].strip()):
+                errors.append('invalid source-bound writer reservation disposition')
+            if status == 'repair_required' and not any(i.get('kind') != 'unresolved_evidence' for i in local):
+                errors.append('writer reservation repair lacks actual typed defect')
+            if status == 'unresolved' and not any(i.get('kind') == 'unresolved_evidence' for i in local):
+                errors.append('writer reservation hold lacks unresolved source evidence')
+    return errors
+
+
+def resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity):
+    if not review_context or review_task_version is None or review_task_version < 3:
+        return set()
+    if translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context,
+            review_task_version=review_task_version, expected_context_identity=expected_context_identity):
+        return set()
+    return {row['id'] for row in translation_rows
+            if row.get('independent_review', {}).get('passes') is True
+            and row['independent_review'].get('human_review_recommended') is False
+            and all(item['status'] == 'resolved' for item in row['independent_review'].get('writer_reservation_dispositions', []))}
+
+
+def translation_draft_contract_errors(lines, gloss_rows, translation_rows):
+    if not isinstance(translation_rows, list) or any(not isinstance(row, dict) for row in translation_rows):
+        return ['writer translations must be an array of objects']
+    return fresh_translation_contract_errors(lines, gloss_rows, translation_rows, require_review=False, _draft=True)
+
+
+def translation_packet_contract_kwargs(lines, translations, options=None, *, performance_order=(), expected_review_task_version=None, final_consumer=False):
+    expected_version = REVIEW_TASK_VERSION if expected_review_task_version is None else expected_review_task_version
+    version = translations.get('review_task_version', 0)
+    if version != expected_version:
+        raise ValueError('translation review task differs from independently expected version')
+    if version == 0 and (translations.get('writer_evidence') or translations.get('writer_review_context')) and expected_version >= 3:
+        raise ValueError('current writer proof lost its review task version')
+    if version is not None and version >= 3:
+        bhakti_semantic_repair.check_writer_evidence(translations, lines, final_consumer=final_consumer)
+    return {'review_context': translations.get('writer_review_context'),
+            'review_task_version': translations.get('review_task_version'),
+            'expected_context_identity': bhakti_semantic_repair.review_context_identity(
+                lines, options, performance_order=performance_order)}
+
+
+def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]], translation_rows: list[dict[str, Any]], *, review_context=None, review_task_version=None, expected_context_identity=None, _draft=False) -> list[str]:
     """Validate the fields the browser needs without guessing missing text."""
     errors: list[str] = gloss_surface_errors(lines, gloss_rows)
+    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity)
     gloss_by_id = {row.get("id"): row for row in gloss_rows}
     translation_by_id = {row.get("id"): row for row in translation_rows}
     registry = preserved_term_registry().get("terms", {})
@@ -4749,14 +4939,14 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
         if not str(translation.get("literal_english", "")).strip():
             errors.append(f"{line_id} lacks a literal English line")
         fidelity = translation.get("fidelity", {})
-        if fidelity:
+        if fidelity and not _draft and line_id not in resolved:
             if not fidelity.get("agency_and_image_preserved"):
                 errors.append(f"{line_id} translation does not preserve agency or imagery")
             if not fidelity.get("all_meaning_accounted_for"):
                 errors.append(f"{line_id} translation does not account for every source meaning")
             if fidelity.get("unsupported_additions"):
                 errors.append(f"{line_id} translation contains unsupported additions")
-        if translation.get("human_review_recommended"):
+        if translation.get("human_review_recommended") and not _draft and line_id not in resolved:
             errors.append(f"{line_id} translation has a material poetic choice requiring review")
         fictional = gloss_policy.fictional_coinages(translation.get("literal_english", ""))
         if fictional:
@@ -4766,7 +4956,7 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
             if fictional:
                 errors.append(f"{line_id} word gloss uses fictional coinage {fictional}")
         independent = translation.get("independent_review", {})
-        if independent:
+        if independent and not _draft:
             if not independent.get("passes"):
                 errors.append(f"{line_id} independent translation review failed")
             if not independent.get("agency_preserved") or not independent.get("imagery_preserved"):
@@ -4800,6 +4990,7 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
 def fresh_translation_contract_errors(
     lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
     translation_rows: list[dict[str, Any]], *, require_review: bool = True,
+    review_context=None, review_task_version=None, expected_context_identity=None, _draft=False,
 ) -> list[str]:
     """Require affirmative semantic review before accepting a new 05 packet.
 
@@ -4807,6 +4998,9 @@ def fresh_translation_contract_errors(
     Model assertions are necessary evidence here, not proof of linguistic truth.
     """
     errors = validate_ids(lines, gloss_rows, translation_rows)
+    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity)
+    if require_review and review_task_version is not None and review_task_version >= 3:
+        errors += translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity)
     expected_ids = [line.get("id") for line in lines]
     if [row.get("id") for row in translation_rows] != expected_ids:
         errors.append("fresh translation IDs must occur exactly once in source order")
@@ -4824,15 +5018,20 @@ def fresh_translation_contract_errors(
                 errors.append(f"{line_id} lacks a nonempty {field} record")
                 continue
             for key in required:
-                if evidence.get(key) is not True:
-                    errors.append(f"{line_id} {field}.{key} must be true")
-            if evidence.get("unsupported_additions") != []:
-                errors.append(f"{line_id} {field}.unsupported_additions must be an empty list")
-        if row.get("human_review_recommended") is not False:
+                if type(evidence.get(key)) is not bool or (not _draft and line_id not in resolved and evidence.get(key) is not True):
+                    errors.append(f"{line_id} {field}.{key} must be an affirmative judgment")
+            if (not isinstance(evidence.get("unsupported_additions"), list) or any(not isinstance(item, str) for item in evidence["unsupported_additions"]) or (not _draft and line_id not in resolved and evidence["unsupported_additions"] != [])):
+                errors.append(f"{line_id} {field}.unsupported_additions must be a valid resolved list")
+        if type(row.get("human_review_recommended")) is not bool or (not _draft and line_id not in resolved and row["human_review_recommended"]):
             errors.append(f"{line_id} translation lacks an explicit resolved review status")
         independent = row.get("independent_review")
-        if isinstance(independent, dict) and independent.get("human_review_recommended") is not False:
+        if not _draft and isinstance(independent, dict) and independent.get("human_review_recommended") is not False:
             errors.append(f"{line_id} independent_review lacks an explicit resolved review status")
+        for field in ("choice_note", "uncertainty"):
+            if not isinstance(row.get(field), str): errors.append(f"{line_id} lacks string {field}")
+        alternatives = row.get("material_alternatives")
+        if not isinstance(alternatives, list) or any(not isinstance(value, str) for value in alternatives):
+            errors.append(f"{line_id} lacks valid material alternatives")
         parts = row.get("segments")
         if (not isinstance(parts, list) or not parts
                 or any(not isinstance(part, dict) or not isinstance(part.get("text"), str)
@@ -4844,14 +5043,14 @@ def fresh_translation_contract_errors(
             displayed = segment_english([{**part, "word_indices": []} for part in parts], "")
             if displayed != row.get("literal_english"):
                 errors.append(f"{line_id} English segments do not reconstruct literal_english")
-    for row in gloss_rows + translation_rows:
+    for row in gloss_rows + [r for r in translation_rows if not _draft and r.get("id") not in resolved]:
         if str(row.get("uncertainty") or "").strip().casefold() not in {"", "none", "no", "null", "n/a"}:
             errors.append(f"{row.get('id')} has unresolved gloss or translation uncertainty")
     # The legacy validator assumes structurally valid rows; malformed fresh
     # evidence must fail as a useful contract error rather than an exception.
     if errors:
         return errors
-    return validate_line_contract(lines, gloss_rows, translation_rows)
+    return validate_line_contract(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, _draft=_draft)
 
 
 def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:
@@ -5271,19 +5470,42 @@ def load_catalogue() -> list[dict[str, Any]]:
     return value if isinstance(value, list) else []
 
 
-def publication_errors(audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any]) -> list[str]:
+def publication_errors(audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, review_context_input=None, expected_review_task_version=None, source_semantic_evidence=None) -> list[str]:
     lines = audited["packet"].get("verified_lines", [])
     gloss_rows = glosses["packet"].get("glosses", [])
     translation_rows = translations["packet"].get("translations", [])
     errors = validate_ids(lines, gloss_rows, translation_rows)
-    errors.extend(validate_line_contract(lines, gloss_rows, translation_rows))
+    if source_semantic_evidence is not None:
+        import bhakti_library_source_pass
+        errors.extend(bhakti_library_source_pass.source_semantic_merge_errors(audited, glosses, translations, source_semantic_evidence))
+        if errors:
+            return errors
+        new_ids = set(source_semantic_evidence['plan']['new_target_ids'])
+        lines = [row for row in lines if row['id'] not in new_ids]
+        gloss_rows = [row for row in gloss_rows if row['id'] not in new_ids]
+        translation_rows = [row for row in translation_rows if row['id'] not in new_ids]
+        # These exact retained rows were reconstructed from the original reader;
+        # fresh rows already passed their complete independent proof above.
+        kwargs = {'review_context': None, 'review_task_version': None, 'expected_context_identity': None}
+    else:
+        try:
+            kwargs = translation_packet_contract_kwargs(lines, translations,
+                performance_order=audited['packet'].get('performance_order', []), expected_review_task_version=expected_review_task_version, final_consumer=True)
+        except (KeyError, TypeError, ValueError) as exc:
+            return ['invalid translation review proof: ' + str(exc)]
+    if review_context_input is not None:
+        kwargs['expected_context_identity'] = bhakti_semantic_repair.digest(review_context_input)
+    errors.extend(validate_line_contract(lines, gloss_rows, translation_rows, **kwargs))
+    if source_semantic_evidence is None and translations.get('review_task_version', 0) >= 3:
+        errors.extend(fresh_translation_contract_errors(lines, gloss_rows, translation_rows, **kwargs))
+    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, **kwargs)
     if timing.get("validation_errors"):
         errors.extend(timing["validation_errors"])
     errors.extend(timing_uncertainty_errors(timing))
     if audited["packet"].get("uncertainties"):
         errors.append("audited transcription has unresolved uncertainties")
     if any(str(row.get("uncertainty") or "").strip().casefold() not in {"", "none", "no", "null", "n/a"}
-           for row in gloss_rows + translation_rows):
+           for row in gloss_rows + [row for row in translation_rows if row.get("id") not in resolved]):
         errors.append("gloss or translation has unresolved uncertainty")
     return errors
 
@@ -5337,7 +5559,7 @@ def reviewed_line_labels(job: dict[str, Any], lines: list[dict[str, Any]]) -> di
     return cleaned
 
 
-def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None) -> None:
+def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None) -> None:
     # The source-repair caller validates this metadata against exact occurrence
     # lineage before and after private generation. Reapplying registry indices
     # from the old performance would undo that mapping. Ordinary intake retains
@@ -5347,13 +5569,21 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     with boundary_transaction(song_dir):
         _generate(song_dir, job, source, audited, timing, glosses, translations,
                   write_catalogue_after=write_catalogue_after,
-                  source_reader_metadata=source_reader_metadata)
+                  source_reader_metadata=source_reader_metadata, source_semantic_evidence=source_semantic_evidence)
 
 
-def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None) -> None:
+def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None) -> None:
     require_completed_boundary_transaction(song_dir)
     bhakti_semantic_repair.require_acceptance(sys.modules[__name__], song_dir / '.transcription/pipeline', glosses, translations, audited=audited)
-    errors = publication_errors(audited, timing, glosses, translations)
+    accepted_state = read_packet(song_dir / '.transcription/pipeline/semantic-repair-state.json') or {}
+    saved_translation = read_packet(song_dir / '.transcription/pipeline/05-translation.json')
+    expected_version = accepted_state.get('review_task_version',
+        saved_translation.get('review_task_version', 0) if isinstance(saved_translation, dict) else REVIEW_TASK_VERSION)
+    if (source_semantic_evidence is None and not accepted_state
+            and expected_version < REVIEW_TASK_VERSION and saved_translation != translations):
+        raise RuntimeError('legacy publication differs from stored reviewed translation')
+    errors = publication_errors(audited, timing, glosses, translations,
+        expected_review_task_version=expected_version, source_semantic_evidence=source_semantic_evidence)
     if errors:
         raise RuntimeError("publication blocked: " + "; ".join(errors))
     lines = audited["packet"].get("verified_lines", [])

@@ -114,6 +114,9 @@ def options_for(case, reader, options):
     return source,local
 
 def run_generation_case(case, snapshot, output_dir, options):
+    # The case is a private shadow, not a protected production song identity.
+    if case['id'] == case['slug'] or case['id'] in editorial_baselines.load_baselines(pipeline.ROOT):
+        raise ValueError('benchmark shadow case must have a distinct, unregistered identity')
     source,local=options_for(case,snapshot,options)
     start,end=case['excerpt_start'],case['excerpt_end']
     if type(start) is not int or type(end) is not int or not 0<=start<end<=len(snapshot['SONG_SEQUENCE']):
@@ -123,16 +126,21 @@ def run_generation_case(case, snapshot, output_dir, options):
     by_id={r['id']:r for r in source}; lines=[by_id[i] for i in ids]
     local.semantic_performance_order=order
     # Source-only whole-song context; owner gloss/English is never a generator input.
-    for attr in ('semantic_context_evidence','semantic_baseline','semantic_original_reader',
-                 'semantic_seed_translation','semantic_previous_translations','semantic_confirmed_issues'):
-        if hasattr(local,attr): delattr(local,attr)
+    controls = {'semantic_deadline_at', 'semantic_repair_seconds', 'semantic_repair_rounds',
+                'semantic_stage_escalation', 'semantic_lexical_support'}
+    for attr in list(vars(local)):
+        if (attr.startswith('semantic_') and attr not in controls) or attr == 'automatic_lexical_feedback':
+            delattr(local, attr)
+    local.semantic_full_source = source
+    local.semantic_performance_order = order
     languages=snapshot['SONG_META']['languages']
     audited={'packet':{'verified_lines':lines,'metadata':{'languages':languages},'performance_order':order}}
     folder=Path(output_dir)/'cases'/case['id']; folder.mkdir(parents=True,exist_ok=True)
     write(folder/'source-input.json',audited)
-    glosses=pipeline.gloss(folder,audited,local)
+    # Omit job.slug: source_slug is the real naming scope; folder.name is the
+    # separate registry identity. Never supply owner reference English here.
+    glosses,translations=pipeline.complete_semantics(folder,audited,{'languages':languages},local)
     write(folder/'gloss-result.json',glosses)
-    translations=pipeline.translate(folder,audited,glosses,{'languages':languages},local)
     write(folder/'translation-result.json',translations)
     returned=index_rows(translations,'translations',ids)
     if set(returned)!=set(ids): raise ValueError('unexpected generation output IDs')

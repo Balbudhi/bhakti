@@ -474,80 +474,95 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
         for ref in issue['references']:
             if ref['line_id'] in issue['target_line_ids']:
                 lexical_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
-    request_identity = prepare.json_digest({'version': VERSION, 'reader': reader, 'pre_review': pre_review,
-        'policy': pipeline.semantic_stage_policy(options), 'baseline': protected_english, **pipeline.review_task_identity()})
     languages = reader.get('SONG_META', {}).get('languages', [])
-
-    def execute(context):
-        local = route_options(options, context)
-        local.semantic_full_source = lines
-        local.semantic_context_evidence = [
-            {'source': copy.deepcopy(source), 'gloss': copy.deepcopy(gloss), 'draft': copy.deepcopy(draft)}
-            for source, gloss, draft in zip(lines, original_glosses, original_translations)]
-        local.semantic_performance_order = copy.deepcopy(reader['SONG_SEQUENCE'])
-        local.semantic_source_identity = dependency_fingerprint
-        local.semantic_repair_findings = repair_findings
-        local.semantic_confirmed_issues = issues
-        local.semantic_repair_feedback = issues
-        local.semantic_original_reader = {key: copy.deepcopy(reader['SONG_LINES'][key]) for key in targets}
-        local.semantic_baseline = ({key: protected_english[key] for key in targets}
-                                   if protected_english is not None else None)
-        audited = {'packet': {'verified_lines': target_lines, 'metadata': {'languages': languages},
-                              'performance_order': copy.deepcopy(reader['SONG_SEQUENCE'])}}
-        attempt_song = context.attempt_dir / slug
-        glosses = pipeline.gloss(attempt_song, audited, local)
-        # Reconstruction supplies missing modern frames only for confirmed
-        # failed targets. It cannot authorize changing other displayed glosses.
-        for row in glosses['packet']['glosses']:
-            original_line = reader['SONG_LINES'][row['id']]
-            old_words = original_line['words']
-            for index, word in enumerate(row['word_glosses']):
-                actual_word = copy.deepcopy(old_words[index])
-                if index in lexical_indices.get(row['id'], set()): actual_word['gloss'] = word['gloss']
-                row['word_glosses'][index] = actual_word
-            row['grammar_note'] = original_line.get('grammarNote', '')
-        job = {'slug': slug, 'languages': languages}
-        if protected_english is not None:
-            baseline_path = context.attempt_dir / 'locked-target-english.json'
-            pipeline.semantic_write_json(baseline_path, local.semantic_baseline)
-            job['providedTranslation'] = str(baseline_path)
-        translations = pipeline.translate(attempt_song, audited, glosses, job, local, candidate_only=True)
-        candidate = copy.deepcopy(reader)
-        for row in glosses['packet']['glosses']:
-            for index in lexical_indices.get(row['id'], set()):
-                candidate['SONG_LINES'][row['id']]['words'][index]['gloss'] = row['word_glosses'][index]['gloss']
-        for row in translations['packet']['translations']:
-            candidate['SONG_LINES'][row['id']]['english'] = pipeline.segment_english(row['segments'], row['literal_english'])
-        post = {'reader_digest': prepare.json_digest(candidate), 'dependency_fingerprint': dependency_fingerprint,
-                'attempt_id': context.attempt_id, **pipeline.review_task_identity(),
-                'reviews': [row['independent_review'] for row in translations['packet']['translations']]}
-        return {'reader': candidate, 'post_review': post, 'glosses': glosses,
-                'translations': translations, 'source_lines': target_lines}
+    local = copy.copy(options)
+    local.force = False
+    local.semantic_full_source = lines
+    local.semantic_context_evidence = [
+        {'source': copy.deepcopy(source), 'gloss': copy.deepcopy(gloss), 'draft': copy.deepcopy(draft)}
+        for source, gloss, draft in zip(lines, original_glosses, original_translations)]
+    local.semantic_performance_order = copy.deepcopy(reader['SONG_SEQUENCE'])
+    local.semantic_source_identity = dependency_fingerprint
+    local.semantic_repair_findings = repair_findings
+    local.semantic_confirmed_issues = issues
+    local.semantic_original_reader = {key: copy.deepcopy(reader['SONG_LINES'][key]) for key in targets}
+    local.semantic_baseline = ({key: protected_english[key] for key in targets}
+                               if protected_english is not None else None)
+    local.semantic_initial_repair = {'version': 1, 'reader_digest': prepare.json_digest(reader),
+        'dependency_fingerprint': dependency_fingerprint, 'original_reader': copy.deepcopy(reader),
+        'pre_review': copy.deepcopy(pre_review), 'target_line_ids': [line['id'] for line in target_lines],
+        'gloss_word_indices': {key: sorted(indices) for key, indices in lexical_indices.items()}}
+    local.unit_deadline_at = min(float(deadline_at), float(getattr(options, 'unit_deadline_at', deadline_at)))
+    local.semantic_deadline_at = min(local.unit_deadline_at,
+        float(getattr(options, 'semantic_deadline_at', deadline_at)))
 
     def validate(artifact):
+        kwargs = pipeline.translation_packet_contract_kwargs(target_lines, artifact['translations'], local,
+            performance_order=local.semantic_performance_order, final_consumer=True)
         errors = pipeline.fresh_translation_contract_errors(target_lines,
-            artifact['glosses']['packet']['glosses'], artifact['translations']['packet']['translations'])
-        try:
-            guard.authorize_semantic_candidate(reader, artifact['reader'],
-                source_lines=lines, gloss_rows=original_glosses, pre_review=pre_review,
-                post_review=artifact['post_review'], dependency_fingerprint=dependency_fingerprint,
-                protected_english=protected_english,
-                finding_snapshot=snapshot, allow_partial=snapshot is not None)
-        except ValueError as exc:
-            # The pure gate reports exact rejected mutations; no blanket flag
-            # clearing or selection of a less-bad candidate is permitted.
-            kind = 'locked_baseline_conflict' if protected_english is not None else 'semantic_candidate_rejected'
-            return [{'kind': kind, 'detail': str(exc)}]
-        return [{'kind': 'semantic_contract', 'detail': error} for error in errors]
+            artifact['glosses']['packet']['glosses'], artifact['translations']['packet']['translations'], **kwargs)
+        if errors:
+            raise ValueError('existing reader semantic contract: ' + str(errors[:3]))
+        receipt = guard.authorize_semantic_candidate(reader, artifact['reader'],
+            source_lines=lines, gloss_rows=original_glosses, pre_review=pre_review,
+            post_review=artifact['post_review'], dependency_fingerprint=dependency_fingerprint,
+            protected_english=protected_english, finding_snapshot=snapshot, allow_partial=snapshot is not None)
+        return {**artifact, 'authorization': receipt}
 
-    accepted = routes.run_unit(route_dir, slug + ':targeted-semantics', request_identity, execute, validate,
-        deadline_at=deadline_at, dependency_fingerprint=dependency_fingerprint,
-        base_model=options.model, pro_model=options.pro_model)
-    receipt = guard.authorize_semantic_candidate(reader, accepted['reader'], source_lines=lines,
-        gloss_rows=original_glosses, pre_review=pre_review, post_review=accepted['post_review'],
-        dependency_fingerprint=dependency_fingerprint, protected_english=protected_english,
-        finding_snapshot=snapshot, allow_partial=snapshot is not None)
-    return {**accepted, 'authorization': receipt}
+    # Exact finite historical route identities only. A new task may not conceal
+    # old uncertain spending or relabel an old review as the current contract.
+    versions = [v for v in pipeline.PRIOR_REVIEW_TASK_VERSIONS if v < pipeline.REVIEW_TASK_VERSION]
+    versions.append(pipeline.REVIEW_TASK_VERSION)
+    for version in versions:
+        historical_identity = prepare.json_digest({'version': VERSION, 'reader': reader, 'pre_review': pre_review,
+            'policy': pipeline.semantic_stage_policy(options), 'baseline': protected_english,
+            **pipeline.review_task_identity(version)})
+        historical_path = routes.unit_state_path(route_dir, slug + ':targeted-semantics', historical_identity,
+            dependency_fingerprint=dependency_fingerprint, base_model=options.model, pro_model=options.pro_model)
+        if not historical_path.exists():
+            continue
+        historical = routes.read_unit_cache(historical_path)
+        if historical['state']['status'] != 'accepted':
+            raise routes.UnitUnresolved(slug + ':targeted-semantics', 'historical semantic attempt requires reconciliation',
+                historical['state'].get('issues', []), historical_path)
+        if version != pipeline.REVIEW_TASK_VERSION:
+            raise RuntimeError('historical reader acceptance requires current review migration; prior evidence retained')
+        return validate(historical['result'])
+
+    scope_identity = prepare.json_digest({'version': 1, 'initial_repair': local.semantic_initial_repair})
+    semantic_song = Path(route_dir) / 'reader-semantics' / scope_identity / 'songs' / slug
+    audited = {'packet': {'verified_lines': target_lines, 'metadata': {'languages': languages},
+        'performance_order': [event for event in reader['SONG_SEQUENCE'] if event.get('ref', event.get('line_id')) in targets]}}
+    job = {'slug': slug, 'languages': languages}
+    if protected_english is not None:
+        baseline_path = semantic_song / 'locked-target-english.json'
+        pipeline.semantic_write_json(baseline_path, local.semantic_baseline)
+        job['providedTranslation'] = str(baseline_path)
+    glosses, translations = pipeline.complete_semantics(semantic_song, audited, job, local)
+    producer = translations.get('semantic_stage_receipt', {})
+    if producer.get('stage') != 'review':
+        raise RuntimeError('reader repair lacks its actual final review route receipt')
+    route_path = Path(producer.get('state_path', ''))
+    if not route_path.resolve().is_relative_to(semantic_song.resolve()):
+        raise RuntimeError('reader review route is outside the exact coordinator run')
+    reviewed = routes.read_unit_cache(route_path)
+    attempts = reviewed['state'].get('attempts', [])
+    if (reviewed['state']['status'] != 'accepted'
+            or not any(attempt.get('attempt_id') == producer.get('attempt_id') and attempt.get('model') == producer.get('model')
+                       and attempt.get('status') == 'accepted' for attempt in attempts)
+            or reviewed['result'].get('packet') != translations.get('packet')):
+        raise RuntimeError('reader review route receipt differs from accepted candidate')
+    candidate = copy.deepcopy(reader)
+    for row in glosses['packet']['glosses']:
+        for index in lexical_indices.get(row['id'], set()):
+            candidate['SONG_LINES'][row['id']]['words'][index]['gloss'] = row['word_glosses'][index]['gloss']
+    for row in translations['packet']['translations']:
+        candidate['SONG_LINES'][row['id']]['english'] = pipeline.segment_english(row['segments'], row['literal_english'])
+    post = {'reader_digest': prepare.json_digest(candidate), 'dependency_fingerprint': dependency_fingerprint,
+        'attempt_id': producer['attempt_id'], **pipeline.review_task_identity(),
+        'reviews': [row['independent_review'] for row in translations['packet']['translations']]}
+    return validate({'reader': candidate, 'post_review': post, 'glosses': glosses,
+                     'translations': translations, 'source_lines': target_lines})
 
 
 def guard_original_inputs(root: Path, row: dict) -> None:
