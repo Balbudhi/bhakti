@@ -114,8 +114,9 @@ changes were staged; unrelated song and pipeline work was preserved.
 
 ## Compact controls refinement
 
-Current step: publish verified compact controls and versioned callers, then
-check the live site. The design
+Completed: compact controls released in `df3a5e35`; GitHub Pages run
+`40005315826` succeeded. Live 390px checks confirmed versioned assets, tag-only
+filters, the anchored popup, both queue commands and no horizontal overflow. The design
 standard now distinguishes search filters, contextual actions and the playlist;
 it preserves the established palette, typography, dedication and player.
 
