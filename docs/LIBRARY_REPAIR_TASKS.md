@@ -74,6 +74,19 @@ The run is terminal at `/tmp/bhakti-rehna-clause-qualification/live-comparison/`
 Confirmed task spending after it is $3.053686475, with the earlier unknown
 reservation still separate. Actual dictionary/embedding quality remains unproven.
 
+The query-budget correction is integrated: at most four candidate expressions,
+four raw lookup strings per candidate and sixteen distinct normalized queries
+per source span. All expressions and dictionary senses remain available when
+embedding ranking reaches its unchanged 64-input allowance. Seven new tests use
+the actual failed glossary and an authentic all-POS WordNet subset; the joined
+62 focused checks pass. A separate unpaid source-adapter diagnostic fetched one
+Platts entry for ṭhikānā from two queries with no gaps. That is adapter evidence,
+not evidence consumed by the earlier stopped run. A new two-row comparison under
+the corrected policy is running privately at
+`/tmp/bhakti-rehna-clause-qualification/query-budget-comparison/`, retaining the
+same $0.50/three text and $0.03/twelve embedding ceilings. Do not overwrite or
+resume the earlier held run.
+
 Explicit lexical support, historical audio-cache compatibility, semantic cache
 reuse, bounded intake and automatic WordNet lookup delivery are integrated.
 Fresh-source semantic processing now shares automatic evidence validation and
@@ -99,6 +112,17 @@ clamps a requested late seek and misses the second landmark; it is unresolved.
 This is local browser evidence, not a model-timestamp certificate or a song
 listening audit. Raw traces and analysis are retained privately under
 `/tmp/bhakti-browser-clock-qualification/`. Historical timing reuse remains held.
+The subsequent model-origin diagnostic stopped after its first AAC response,
+costing $0.001713. Returned clicks at 3.98/8.88 seconds fit neither the measured
+decoded landmarks (2.021396/9.021396) nor native presentation landmarks
+(4.999396/11.999396) within the declared 0.25-second allowance. A runner assertion
+also confused the provider display name with its request routing slug; the raw
+response was independently reconciled without replay or editing paid history.
+The other three planned calls did not run. This fixture did not qualify the
+model clock, and no song timestamps may be shifted on its authority. Evidence is
+in `/tmp/bhakti-model-clock-qualification/OBSERVED_RESULT.json`. Confirmed task
+spending including this diagnostic is $3.055399475; the earlier unknown
+reservation is unchanged.
 The optional historical transform consumer is integrated with 65 relevant local
 checks. Original media/support snapshots now survive replacement of the live
 song; source receipt replay reads the archive without provider dispatch and

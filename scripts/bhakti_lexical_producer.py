@@ -17,8 +17,10 @@ import bhakti_lexical_support as support
 from bhakti_embedding_client import file_lock
 import dictionary_corpus as corpus
 
-VERSION = 1
+VERSION = 2
 MAX_QUERIES = 4
+MAX_TERMS_PER_CANDIDATE = 4
+MAX_SOURCE_SPAN_TERMS = MAX_QUERIES * MAX_TERMS_PER_CANDIDATE
 
 
 def _write(path, value):
@@ -180,11 +182,14 @@ def proposal_errors(lines, gloss_rows, languages, required_spans=()):
                     support.require(candidate.get('kind') in {'word', 'compositional_phrase', 'transparent_compound'}
                                     and isinstance(candidate.get('expression'), str) and candidate['expression'].strip(),
                                     'invalid lexical query candidate')
-                    words = support.english_queries(candidate.get('english_lemmas', []))
+                    raw_words = candidate.get('english_lemmas', [])
+                    words = support.english_queries(raw_words)
+                    support.require(len(raw_words) <= MAX_TERMS_PER_CANDIDATE,
+                                    'lexical candidate dictionary term limit exceeded')
                     queries.update(words)
                     if candidate['kind'] == 'word':
                         support.require(words, 'word candidate needs dictionary lookup query')
-                support.require(len(queries) <= MAX_QUERIES, 'lexical query limit exceeded')
+                support.require(len(queries) <= MAX_SOURCE_SPAN_TERMS, 'lexical query limit exceeded')
                 import bhakti_source_discovery as discovery
                 discovery._queries(proposal.get('source_queries', []))
                 ids = proposal.get('source_entry_ids')
@@ -448,7 +453,8 @@ def gloss_prompt(options, lines):
         'For difficult contextual sense or English wording choices, propose lexical_queries in this same response. '
         'Use exact word_indices and surfaces; briefly explain the difficulty in reason. '
         'Supply 1–4 english_candidates with expression, kind (word, compositional_phrase, transparent_compound), '
-        'and english_lemmas (at most four distinct lookup words per source span). These are lookup queries, '
+        'and english_lemmas (at most four lookup strings per candidate, sixteen distinct terms across the source span). '
+        'An exact multiword dictionary headword is one query; do not split it merely to count words. These are lookup queries, '
         'not accepted translations or invented dictionary definitions. source_entry_ids may name only the '
         'existing source entries bound to these exact tokens above; retain all alternatives. '
         'For missing or uncertain source entries, propose source_queries: up to two dictionary lookup spellings '
@@ -470,7 +476,7 @@ def gloss_schema(schema, options):
     indices = {'type': 'array', 'items': {'type': 'integer'}}
     candidate = {'type': 'object', 'properties': {'expression': string,
         'kind': {'type': 'string', 'enum': ['word', 'compositional_phrase', 'transparent_compound']},
-        'english_lemmas': strings}, 'required': ['expression', 'kind', 'english_lemmas'], 'additionalProperties': False}
+        'english_lemmas': {**strings, 'maxItems': MAX_TERMS_PER_CANDIDATE}}, 'required': ['expression', 'kind', 'english_lemmas'], 'additionalProperties': False}
     props = {'word_indices': indices, 'surfaces': strings, 'reason': string, 'source_entry_ids': strings,
              'source_queries': {'type': 'array', 'items': string, 'maxItems': 2},
              'english_candidates': {'type': 'array', 'items': candidate, 'minItems': 1, 'maxItems': MAX_QUERIES}}

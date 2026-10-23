@@ -1,0 +1,165 @@
+{
+  "packet": {
+    "metadata": {
+      "languages": [
+        "Hindi"
+      ]
+    },
+    "verified_lines": [
+      {
+        "id": "verse-3-line-1",
+        "source_text": "कहत कबीर सुनो भाई साधो",
+        "roman": "kahata kabīra sunō bhāī sādhō",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ],
+            "after": [
+              {
+                "id": "verse-3-line-2",
+                "source_text": "सतगुरु नाम ठिकाना है",
+                "roman": "sataguru nāma ṭhikānā hai"
+              },
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "कहत",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "कबीर",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "सुनो",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "भाई",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "साधो",
+            "wordIndices": [
+              4
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "kahata",
+          "kabīra",
+          "sunō",
+          "bhāī",
+          "sādhō"
+        ],
+        "sourceLanguage": "hi"
+      },
+      {
+        "id": "verse-3-line-2",
+        "source_text": "सतगुरु नाम ठिकाना है",
+        "roman": "sataguru nāma ṭhikānā hai",
+        "kind": "verse",
+        "performed_context": [
+          {
+            "before": [
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              },
+              {
+                "id": "verse-3-line-1",
+                "source_text": "कहत कबीर सुनो भाई साधो",
+                "roman": "kahata kabīra sunō bhāī sādhō"
+              }
+            ],
+            "after": [
+              {
+                "id": "refrain-1",
+                "source_text": "रहना नहीं इस देस में",
+                "roman": "rahanā nahīṁ isa desa meṁ"
+              },
+              {
+                "id": "refrain-des-veerana",
+                "source_text": "देस ये वीराना है",
+                "roman": "desa ye vīrānā hai"
+              }
+            ]
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "सतगुरु",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "नाम",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "ठिकाना",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "है",
+            "wordIndices": [
+              3
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "sataguru",
+          "nāma",
+          "ṭhikānā",
+          "hai"
+        ],
+        "sourceLanguage": "hi"
+      }
+    ],
+    "performance_order": [
+      {
+        "ref": "verse-3-line-1",
+        "section": "verse",
+        "repeats": 2
+      },
+      {
+        "ref": "verse-3-line-2",
+        "section": "verse",
+        "repeats": 2
+      }
+    ],
+    "uncertainties": []
+  }
+}

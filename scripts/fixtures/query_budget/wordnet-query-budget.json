@@ -1,0 +1,667 @@
+{
+  "edition": "3.1",
+  "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+  "license_header": "  1 This software and database is being provided to you, the LICENSEE, by  \n  2 Princeton University under the following license.  By obtaining, using  \n  3 and/or copying this software and database, you agree that you have  \n  4 read, understood, and will comply with these terms and conditions.:  \n  5   \n  6 Permission to use, copy, modify and distribute this software and  \n  7 database and its documentation for any purpose and without fee or  \n  8 royalty is hereby granted, provided that you agree to comply with  \n  9 the following copyright notice and statements, including the disclaimer,  \n  10 and that the same appear on ALL copies of the software, database and  \n  11 documentation, including modifications that you make for internal  \n  12 use or for distribution.  \n  13   \n  14 WordNet 3.1 Copyright 2011 by Princeton University.  All rights reserved.  \n  15   \n  16 THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON  \n  17 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR  \n  18 IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON  \n  19 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-  \n  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  \n  21 OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT  \n  22 INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR  \n  23 OTHER RIGHTS.  \n  24   \n  25 The name of Princeton University or Princeton may not be used in  \n  26 advertising or publicity pertaining to distribution of the software  \n  27 and/or database.  Title to copyright in this software, database and  \n  28 any associated documentation shall at all times remain with  \n  29 Princeton University and LICENSEE agrees to preserve same.  \n",
+  "complete_for_lemmas": [
+    "resting",
+    "place",
+    "abode",
+    "true",
+    "dwelling",
+    "refuge",
+    "home",
+    "shelter",
+    "seat",
+    "station",
+    "site",
+    "goal",
+    "destination",
+    "house",
+    "residence",
+    "haven"
+  ],
+  "data_rows": [
+    {
+      "pos": "a",
+      "synset_offset": 23157,
+      "raw": "00023157 00 s 02 true 0 dead_on_target 0 002 & 00021803 a 0000 + 04811418 n 0101 | accurately placed or thrown; \"his aim was true\"; \"he was dead on target\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 914318,
+      "raw": "00914318 00 s 02 true 0 straight 2 001 & 00912628 a 0000 | accurately fitted; level; \"the window frame isn't quite true\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 962719,
+      "raw": "00962719 00 s 01 true 2 002 & 00962069 a 0000 + 04884725 n 0102 | devoted (sometimes fanatically) to a cause or concept or truth; \"true believers bonded together against all who disagreed with them\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1042014,
+      "raw": "01042014 00 s 04 home(a) 0 interior(a) 0 internal 0 national 0 001 & 01041784 a 0000 | inside the country; \"the British Home Office has broader responsibilities than the United States Department of the Interior\"; \"the nation's internal politics\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1167303,
+      "raw": "01167303 00 s 02 on-key 0 true 0 001 & 01166627 a 0000 | in tune; accurate in pitch; \"a true note\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1222498,
+      "raw": "01222498 00 a 01 home(a) 0 002 ;c 00524569 n 0000 ! 01222609 a 0101 | used of your own ground; \"a home game\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1228271,
+      "raw": "01228271 00 a 02 truthful 0 true 4 005 ^ 01225031 a 0000 + 04879431 n 0101 ! 01228771 a 0101 & 01228516 a 0000 & 01228645 a 0000 | expressing or given to expressing the truth; \"a true statement\"; \"gave truthful testimony\"; \"a truthful person\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1410239,
+      "raw": "01410239 00 s 03 true(a) 0 lawful 0 rightful(a) 0 003 & 01409612 a 0000 + 04857572 n 0302 + 04817036 n 0201 | having a legally established claim; \"the legitimate heir\"; \"the true and lawful king\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1473564,
+      "raw": "01473564 00 s 01 true(a) 0 001 & 01473411 a 0000 | determined with reference to the earth's axis rather than the magnetic poles; \"true north is geographic north\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 1945125,
+      "raw": "01945125 00 s 01 true(a) 0 001 & 01944611 a 0000 | rightly so called; \"true courage\"; \"a spirit which true men have always admired\"; \"a true friend\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2187907,
+      "raw": "02187907 00 s 03 genuine 0 true(a) 0 unfeigned 0 002 & 02186899 a 0000 + 04790511 n 0102 | not pretended; sincerely felt or expressed; \"genuine emotion\"; \"her interest in people was unfeigned\"; \"true grief\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2469730,
+      "raw": "02469730 00 a 01 true 0 012 ^ 00634232 a 0000 ^ 00962069 a 0000 ^ 01119091 a 0000 ^ 01225031 a 0000 ^ 02186899 a 0000 = 13979774 n 0000 + 13979774 n 0104 ! 02470951 a 0101 & 02470192 a 0000 & 02470523 a 0000 & 02470666 a 0000 & 02470814 a 0000 | consistent with fact or reality; not false; \"the story is true\"; \"it is undesirable to believe a proposition when there is no ground whatever for supposing it true\"- B. Russell; \"the true meaning of the statement\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2474747,
+      "raw": "02474747 00 s 04 dependable 0 honest 0 reliable 2 true(p) 0 007 & 02473921 a 0000 + 04884725 n 0402 + 04677379 n 0304 + 04677379 n 0303 + 04878569 n 0202 + 04677379 n 0102 + 04677379 n 0101 | worthy of being depended on; \"a dependable worker\"; \"an honest working stiff\"; \"a reliable source of information\"; \"he was true to his word\"; \"I would be true for there are those who trust me\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2478996,
+      "raw": "02478996 00 s 01 true 0 001 & 02477858 a 0000 | conforming to definitive criteria; \"the horseshoe crab is not a true crab\"; \"Pythagoras was the first true mathematician\"  \n"
+    },
+    {
+      "pos": "a",
+      "synset_offset": 2753598,
+      "raw": "02753598 01 a 01 home 0 001 \\ 08507209 n 0101 | relating to or being where one lives or where one's roots are; \"my home town\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 188186,
+      "raw": "00188186 04 n 01 goal 0 002 @ 00187483 n 0000 ~ 00188348 n 0000 | a successful attempt at scoring; \"the winning goal came with less than a minute left to play\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 433104,
+      "raw": "00433104 04 n 01 house 0 001 @ 00432833 n 0000 | play in which children take the roles of father or mother or children and pretend to interact like adults; \"the children were playing house\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 587299,
+      "raw": "00587299 04 n 08 position 1 post 0 berth 0 office 2 spot 1 billet 0 place 0 situation 0 114 @ 00583425 n 0000 + 01091334 v 0704 + 02543626 v 0701 + 02338685 v 0702 + 01098908 v 0401 + 02390776 v 0201 ~ 00589510 n 0000 ~ 00589635 n 0000 ~ 00589740 n 0000 ~ 00589817 n 0000 ~ 00589918 n 0000 ~ 00590035 n 0000 ~ 00590140 n 0000 ~ 00590254 n 0000 ~ 00590355 n 0000 ~ 00590452 n 0000 ~ 00590531 n 0000 ~ 00590633 n 0000 ~ 00590728 n 0000 ~ 00590806 n 0000 ~ 00590985 n 0000 ~ 00591162 n 0000 ~ 00591263 n 0000 ~ 00591384 n 0000 ~ 00591498 n 0000 ~ 00591633 n 0000 ~ 00591741 n 0000 ~ 00591921 n 0000 ~ 00592028 n 0000 ~ 00592121 n 0000 ~ 00592226 n 0000 ~ 00592351 n 0000 ~ 00592561 n 0000 ~ 00592638 n 0000 ~ 00592737 n 0000 ~ 00592840 n 0000 ~ 00592973 n 0000 ~ 00593116 n 0000 ~ 00593217 n 0000 ~ 00593314 n 0000 ~ 00593407 n 0000 ~ 00593482 n 0000 ~ 00593561 n 0000 ~ 00593650 n 0000 ~ 00593767 n 0000 ~ 00593910 n 0000 ~ 00594223 n 0000 ~ 00594334 n 0000 ~ 00594504 n 0000 ~ 00594627 n 0000 ~ 00594728 n 0000 ~ 00594847 n 0000 ~ 00594952 n 0000 ~ 00595059 n 0000 ~ 00595185 n 0000 ~ 00595261 n 0000 ~ 00595375 n 0000 ~ 00595489 n 0000 ~ 00595592 n 0000 ~ 00595695 n 0000 ~ 00595853 n 0000 ~ 00595951 n 0000 ~ 00596068 n 0000 ~ 00596147 n 0000 ~ 00596261 n 0000 ~ 00596448 n 0000 ~ 00596525 n 0000 ~ 00596660 n 0000 ~ 00596799 n 0000 ~ 00596900 n 0000 ~ 00597009 n 0000 ~ 00597196 n 0000 ~ 00597308 n 0000 ~ 00597405 n 0000 ~ 00597508 n 0000 ~ 00597611 n 0000 ~ 00597707 n 0000 ~ 00597807 n 0000 ~ 00597922 n 0000 ~ 00598647 n 0000 ~ 00598744 n 0000 ~ 00598843 n 0000 ~ 00598936 n 0000 ~ 00599072 n 0000 ~ 00599171 n 0000 ~ 00599330 n 0000 ~ 00599433 n 0000 ~ 00599793 n 0000 ~ 00599882 n 0000 ~ 00599983 n 0000 ~ 00600085 n 0000 ~ 00600179 n 0000 ~ 00600349 n 0000 ~ 00600444 n 0000 ~ 00600587 n 0000 ~ 00604981 n 0000 ~ 00605246 n 0000 ~ 00605343 n 0000 ~ 00605436 n 0000 ~ 00605539 n 0000 ~ 00605638 n 0000 ~ 00605809 n 0000 ~ 00605926 n 0000 ~ 00606025 n 0000 ~ 00606138 n 0000 ~ 00606361 n 0000 ~ 00606464 n 0000 ~ 00606545 n 0000 ~ 00606626 n 0000 ~ 00606731 n 0000 ~ 00606830 n 0000 ~ 00606927 n 0000 ~ 00607024 n 0000 ~ 00607121 n 0000 | a job in an organization; \"he occupied a post in the treasury\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 722683,
+      "raw": "00722683 04 n 04 stead 0 position 3 place 1 lieu 0 002 @ 00721817 n 0000 ~ 00722912 n 0000 | the post or function properly or customarily occupied or served by another; \"can you go in my stead?\"; \"took his place\"; \"in lieu of\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 1055844,
+      "raw": "01055844 04 n 03 residency 0 residence 0 abidance 1 012 @ 00030657 n 0000 + 02643286 v 0302 + 03121445 a 0201 + 02132790 a 0201 + 02654741 v 0202 + 02656647 v 0201 + 02136516 a 0102 + 02132790 a 0101 + 02654741 v 0102 + 02656647 v 0101 ~ 01056151 n 0000 ~ 01056259 n 0000 | the act of dwelling in a place  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 1211087,
+      "raw": "01211087 04 n 03 recourse 0 resort 0 refuge 0 002 @ 01210099 n 0000 + 02596228 v 0202 | act of turning to for assistance; \"have recourse to the courts\"; \"an appeal to his uncle was his last resort\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3264208,
+      "raw": "03264208 06 n 06 dwelling 0 home 0 domicile 0 abode 0 habitation 0 dwelling_house 0 026 @ 03551520 n 0000 + 03073685 a 0301 + 02465056 v 0201 + 02655932 v 0102 %p 02810916 n 0000 %p 02824762 n 0000 ~ 03046475 n 0000 ~ 03093036 n 0000 %p 03179747 n 0000 %p 03204459 n 0000 %p 03205385 n 0000 %p 03242834 n 0000 %p 03324690 n 0000 ~ 03359053 n 0000 ~ 03512385 n 0000 ~ 03521097 n 0000 ~ 03534809 n 0000 ~ 03549540 n 0000 %p 03625099 n 0000 ~ 03639325 n 0000 %p 03685038 n 0000 ~ 03690633 n 0000 ~ 03757081 n 0000 ~ 04179168 n 0000 ~ 04524703 n 0000 ~ 04621053 n 0000 | housing that someone is living in; \"he built a modest dwelling near the pond\"; \"they raise money to provide homes for the homeless\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3447680,
+      "raw": "03447680 06 n 01 goal 0 005 @ 03419072 n 0000 %p 02792294 n 0000 ~ 02805381 n 0000 %p 03448073 n 0000 ~ 03825858 n 0000 | game equipment consisting of the place toward which players of a game try to advance a ball or puck in order to score points  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3504940,
+      "raw": "03504940 06 n 02 haven 0 oasis 0 001 @ 04198638 n 0000 | a shelter serving as a place of safety or sanctuary  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3533280,
+      "raw": "03533280 06 n 03 home 1 nursing_home 0 rest_home 0 002 @ 03579706 n 0000 + 02465056 v 0101 | an institution where people are cared for; \"a home for the elderly\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3534081,
+      "raw": "03534081 06 n 04 home_plate 0 home_base 1 home 2 plate 4 002 @ 02801040 n 0000 ;c 00472688 n 0000 | (baseball) base consisting of a rubber slab where the batter stands; it must be touched by a base runner in order to score; \"he ruled that the runner failed to touch home\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3549540,
+      "raw": "03549540 06 n 01 house 0 034 @ 03264208 n 0000 @ 02916498 n 0000 + 02464596 v 0101 ~ 02817473 n 0000 ~ 02860757 n 0000 ~ 02923176 n 0000 ~ 02935784 n 0000 ~ 03006420 n 0000 ~ 03010901 n 0000 ~ 03123620 n 0000 ~ 03185531 n 0000 ~ 03224186 n 0000 ~ 03261913 n 0000 ~ 03327781 n 0000 ~ 03433000 n 0000 ~ 03470537 n 0000 ~ 03479475 n 0000 %p 03666235 n 0000 ~ 03690812 n 0000 ~ 03691146 n 0000 %p 03691456 n 0000 ~ 03718690 n 0000 ~ 03724592 n 0000 %p 03990739 n 0000 ~ 04059770 n 0000 ~ 04086356 n 0000 ~ 04122350 n 0000 ~ 04132642 n 0000 ~ 04138451 n 0000 ~ 04263009 n 0000 ~ 04265548 n 0000 %p 04352106 n 0000 ~ 04472285 n 0000 ~ 04542819 n 0000 | a dwelling that serves as living quarters for one or more families; \"he has a house on Cape Cod\"; \"she felt she had to get out of the house\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3550330,
+      "raw": "03550330 06 n 01 house 1 011 @ 02916498 n 0000 + 02464596 v 0101 ~ 02810060 n 0000 ~ 03125949 n 0000 ~ 03338555 n 0000 ~ 03562692 n 0000 ~ 03741760 n 0000 ~ 03843218 n 0000 ~ 04029102 n 0000 ~ 04253859 n 0000 ~ 04311950 n 0000 | a building in which something is sheltered or located; \"they had a large carriage house\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 3724592,
+      "raw": "03724592 06 n 05 mansion 0 mansion_house 0 manse 1 hall 7 residence 1 005 @ 03549540 n 0000 ~ 03723997 n 0000 %p 03724120 n 0000 ~ 03883763 n 0000 ~ 04312461 n 0000 | a large and imposing house  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4078214,
+      "raw": "04078214 06 n 03 refuge 0 sanctuary 1 asylum 1 004 @ 04198638 n 0000 ~ 03497351 n 0000 ~ 04132567 n 0000 ~ 04132642 n 0000 | a shelter from danger or hardship  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4086356,
+      "raw": "04086356 06 n 01 residence 0 010 @ 03549540 n 0000 ~ 03125691 n 0000 ~ 03171180 n 0000 ~ 03724474 n 0000 ~ 03883542 n 0000 ~ 03898254 n 0000 ~ 04081060 n 0000 ~i 04530675 n 0000 ~i 04588063 n 0000 ~i 09175524 n 0000 | the official house or establishment of an important person (as a sovereign or president); \"he refused to live in the governor's residence\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4168419,
+      "raw": "04168419 06 n 01 seat 0 025 @ 04366676 n 0000 #p 04169042 n 0000 + 02338975 v 0101 + 01546780 v 0101 ~ 02770961 n 0000 ~ 02773835 n 0000 ~ 02829867 n 0000 ~ 02839120 n 0000 ~ 02862897 n 0000 ~ 02913470 n 0000 ~ 02974144 n 0000 ~ 03005700 n 0000 ~ 03065677 n 0000 ~ 03140702 n 0000 ~ 03272379 n 0000 ~ 03403962 n 0000 ~ 03552577 n 0000 ~ 03610630 n 0000 ~ 03944207 n 0000 ~ 03961765 n 0000 ~ 04126185 n 0000 ~ 04126324 n 0000 ~ 04130834 n 0000 ~ 04131674 n 0000 ~ 04246324 n 0000 | any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4169042,
+      "raw": "04169042 06 n 01 seat 1 018 @ 03410635 n 0000 #m 04170059 n 0000 + 02338975 v 0101 + 02339298 v 0101 + 02707822 v 0101 + 01546780 v 0101 ~ 02832068 n 0000 ~ 02832300 n 0000 ~ 02887691 n 0000 ~ 02889424 n 0000 ~ 03005231 n 0000 ~ 03863938 n 0000 %p 04168419 n 0000 ~i 04223369 n 0000 ~ 04263630 n 0000 ~ 04334034 n 0000 ~ 04455132 n 0000 %p 04521122 n 0000 | furniture that is designed for sitting on; \"there were not enough seats for all the guests\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4169494,
+      "raw": "04169494 06 n 01 seat 2 003 @ 03054011 n 0000 #p 04496264 n 0000 #p 04238334 n 0000 | the cloth covering for the buttocks; \"the seat of his pants was worn through\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4169660,
+      "raw": "04169660 06 n 01 seat 3 001 @ 03898588 n 0000 | a part of a machine that supports or guides another part  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4198638,
+      "raw": "04198638 06 n 01 shelter 0 014 @ 04348764 n 0000 + 02662486 v 0101 ~ 03106026 n 0000 ~ 03258892 n 0000 ~ 03324112 n 0000 ~ 03504940 n 0000 ~ 03552234 n 0000 ~ 03555333 n 0000 ~ 03691689 n 0000 ~ 03725141 n 0000 ~ 04078214 n 0000 ~ 04156001 n 0000 ~ 04336819 n 0000 ~ 04418399 n 0000 | a structure that provides privacy and protection from danger  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4198986,
+      "raw": "04198986 06 n 01 shelter 1 011 @ 04020673 n 0000 + 02662486 v 0101 ~ 02828820 n 0000 ~ 02846922 n 0000 ~ 02955279 n 0000 ~ 03119285 n 0000 ~ 03615737 n 0000 ~ 03658055 n 0000 ~ 04115078 n 0000 ~ 04156001 n 0000 ~ 04179837 n 0000 | protective covering that provides protection from the weather  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4199281,
+      "raw": "04199281 06 n 01 shelter 2 002 @ 03551520 n 0000 ~ 02949268 n 0000 | temporary housing for homeless or displaced persons  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4313218,
+      "raw": "04313218 06 n 01 station 0 010 @ 03319968 n 0000 ~ 02906730 n 0000 ~ 03352184 n 0000 ~ 03354445 n 0000 ~ 03845054 n 0000 ~ 03984036 n 0000 ~ 04003013 n 0000 ~ 04182920 n 0000 ~ 04355780 n 0000 ~ 04420036 n 0000 | a facility equipped with special equipment and personnel for a particular purpose; \"he started looking for a gas station\"; \"the train pulled into the station\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 4424944,
+      "raw": "04424944 06 n 03 theater 0 theatre 0 house 2 021 @ 02916498 n 0000 ;c 07019235 n 0000 ~ 02739650 n 0000 %p 02889123 n 0000 ~ 03036237 n 0000 %p 03037004 n 0000 ~ 03207165 n 0000 %p 03242834 n 0000 %p 03463060 n 0000 ~ 03535040 n 0000 ~ 03684055 n 0000 ~ 03807073 n 0000 ~ 03855334 n 0000 %p 03858698 n 0000 %p 03858811 n 0000 %p 03897732 n 0000 %p 03897970 n 0000 %p 04303700 n 0000 %p 04309472 n 0000 %p 04425953 n 0000 %p 04441419 n 0000 | a building where theatrical performances or motion-picture shows can be presented; \"the house was full\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5064212,
+      "raw": "05064212 07 n 01 station 0 001 @ 05063641 n 0000 | the frequency assigned to a broadcasting station  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5084517,
+      "raw": "05084517 07 n 01 true 0 002 @ 05084315 n 0000 + 00466204 v 0101 | proper alignment; the property possessed by something that is in correct or proper alignment; \"out of true\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5162506,
+      "raw": "05162506 07 n 03 recourse 0 refuge 0 resort 0 003 @ 05161923 n 0000 + 02596228 v 0302 ~ 05162732 n 0000 | something or someone turned to for assistance or security; \"his only recourse was the police\"; \"took refuge in lying\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5197214,
+      "raw": "05197214 07 n 01 seat 0 001 @ 05184812 n 0000 | the legal right to sit as a member in a legislative or similar body; \"he was elected to a seat in the Senate\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5566889,
+      "raw": "05566889 08 n 1c buttocks 0 nates 0 arse 1 butt 0 backside 0 bum 0 buns 0 can 0 fundament 0 hindquarters 0 hind_end 0 keister 0 posterior 0 prat 0 rear 0 rear_end 0 rump 0 stern 0 seat 0 tail 1 tail_end 0 tooshie 0 tush 0 bottom 0 behind 0 derriere 0 fanny 0 ass 0 003 @ 05227735 n 0000 #p 05557463 n 0000 + 00132498 a 0d01 | the fleshy part of the human body that you sit on; \"he deserves a good kick in the butt\"; \"are you going to sit on your fanny and do nothing?\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5619605,
+      "raw": "05619605 09 n 01 place 0 003 @ 00023451 n 0000 + 02397904 v 0101 ~ 06257026 n 0000 | an abstract mental location; \"he has a special place in my thoughts\"; \"a place in my heart\"; \"a political system with no place for the less prominent groups\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5989760,
+      "raw": "05989760 09 n 02 goal 0 end 2 009 @ 05817200 n 0000 #p 05911139 n 0000 ~ 05990115 n 0000 ~ 05990431 n 0000 ~ 05990533 n 0000 ~ 05990653 n 0000 ~ 05990909 n 0000 ~ 05991037 n 0000 ~ 05991605 n 0000 | the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it; \"the ends justify the means\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 5990653,
+      "raw": "05990653 09 n 02 destination 0 terminus 0 004 @ 05989760 n 0000 + 02741293 v 0202 + 00748465 v 0101 + 00711208 v 0102 | the ultimate goal for which something is done  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 6370600,
+      "raw": "06370600 10 n 04 web_site 0 website 0 internet_site 0 site 0 003 @ 03086983 n 0000 ~ 06370874 n 0000 ~ 06371064 n 0000 | a computer connected to the internet that maintains a series of web pages on the World Wide Web; \"the Israeli web site was damaged by hostile hackers\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 6401196,
+      "raw": "06401196 10 n 03 space 1 blank_space 0 place 1 005 @ 05135784 n 0000 #p 06485234 n 0000 + 01496967 v 0303 ~ 06401041 n 0000 ~ 06401396 n 0000 | a blank area; \"write your name in the space provided\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 6412750,
+      "raw": "06412750 10 n 01 place 0 001 @ 06411914 n 0000 | the passage that is being read; \"he lost his place on the page\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 6495143,
+      "raw": "06495143 10 n 02 place 2 position 1 006 @ 06494090 n 0000 + 01089102 v 0101 + 00661447 v 0101 + 00659723 v 0106 ~ 06495391 n 0000 ~ 06495681 n 0000 | an item on a list or in a sequence; \"in the second place\"; \"moved from third to fifth position\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 6800007,
+      "raw": "06800007 10 n 03 address 2 destination 0 name_and_address 0 005 @ 06799486 n 0000 #p 06636668 n 0000 + 00992844 v 0101 %p 06367112 n 0000 ~ 06800286 n 0000 | written directions for finding some location; written on letters or packages that are to be delivered to that location  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 7987896,
+      "raw": "07987896 14 n 01 house 0 003 @ 07987168 n 0000 ~ 08170336 n 0000 ~ 08502291 n 0000 | aristocratic family line; \"the House of York\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8076706,
+      "raw": "08076706 14 n 03 firm 0 house 1 business_firm 0 008 @ 08077878 n 0000 ~ 08076248 n 0000 ~ 08079162 n 0000 ~ 08079300 n 0000 ~ 08079459 n 0000 ~ 08080282 n 0000 ~ 08080875 n 0000 ~ 08093782 n 0000 | the members of a business organization that owns or operates one or more establishments; \"he worked for a brokerage house\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8094856,
+      "raw": "08094856 14 n 05 family 2 household 0 house 5 home 0 menage 0 009 @ 08206589 n 0000 + 02465056 v 0401 + 10202130 n 0202 ~ 07989820 n 0000 ~ 07989934 n 0000 ~ 07990100 n 0000 ~ 07990229 n 0000 ~ 07990315 n 0000 ~ 08095330 n 0000 | a social unit living together; \"he moved his family to Virginia\"; \"It was a good Christian household\"; \"I waited until the whole house was asleep\"; \"the teacher asked how many people made up his home\"; \"the family refused to accept his will\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8179924,
+      "raw": "08179924 14 n 01 house 2 007 @ 08180172 n 0000 ~ 08178870 n 0000 ~ 08179474 n 0000 ~ 08179590 n 0000 ~ 08179759 n 0000 ~ 08336469 n 0000 ~ 08336838 n 0000 | an official assembly having legislative powers; \"a bicameral legislature has two houses\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8239887,
+      "raw": "08239887 14 n 01 house 3 002 @ 08238818 n 0000 %p 08240058 n 0000 | the audience gathered together in a theatre or cinema; \"the house applauded\"; \"he counted the house\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8241501,
+      "raw": "08241501 14 n 01 house 4 001 @ 08240723 n 0000 | the members of a religious community living together  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8398027,
+      "raw": "08398027 14 n 01 house 6 001 @ 08397896 n 0000 | the management of a gambling house or casino; \"the house gets a percentage of every bet\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8507049,
+      "raw": "08507049 15 n 01 seat 2 001 @ 00027365 n 0000 | the location (metaphorically speaking) where something is based; \"the brain is said to be the seat of reason\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8507209,
+      "raw": "08507209 15 n 01 home 2 001 @ 00027365 n 0000 | the country or state or city where you live; \"Canadian tariffs enabled United States lumber companies to raise prices at home\"; \"his home is New Jersey\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8507412,
+      "raw": "08507412 15 n 02 base 1 home 5 001 @ 00027365 n 0000 | the place where you are stationed and from which missions start and end  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8530790,
+      "raw": "08530790 15 n 02 place 4 property 0 007 @ 08591861 n 0000 + 02338685 v 0102 ~ 02863295 n 0000 ~ 04140731 n 0000 ~ 08531106 n 0000 ~ 08531343 n 0000 ~ 08598827 n 0000 | any area set aside for a particular purpose; \"who owns this place?\"; \"the president was concerned about the property across from the White House\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8576500,
+      "raw": "08576500 15 n 02 residence 0 abode 0 003 @ 08508037 n 0000 ~ 08576692 n 0000 ~ 08577045 n 0000 | any address at which you dwell more than temporarily; \"a person can have several residences\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8577045,
+      "raw": "08577045 15 n 02 home 4 place 6 005 @ 08576500 n 0000 + 02543626 v 0201 + 00479651 a 0102 + 02009361 v 0101 ~ 08577303 n 0000 | where you live at a particular time; \"deliver the package to my home\"; \"he doesn't have a home to go to\"; \"your place or mine?\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8585406,
+      "raw": "08585406 15 n 03 finish 0 destination 0 goal 0 003 @ 08583557 n 0000 + 00748465 v 0201 ~ 08589006 n 0000 | the place designated as the end (as of a race or journey); \"a crowd assembled at the finish\"; \"he was nearly exhausted as their destination came into view\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8602685,
+      "raw": "08602685 15 n 01 home 3 001 @ 08524579 n 0000 | place where something began and flourished; \"the United States is the home of basketball\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8637370,
+      "raw": "08637370 15 n 03 plaza 0 place 2 piazza 0 001 @ 08637195 n 0000 | a public square with room for pedestrians; \"they met at Elm Plaza\"; \"Grosvenor Place\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8639173,
+      "raw": "08639173 15 n 02 position 0 place 5 026 @ 08637636 n 0000 + 01496967 v 0203 + 01991174 v 0101 = 02039393 a 0000 = 02040360 a 0000 ~ 08510835 n 0000 ~ 08598472 n 0000 ~ 08609721 n 0000 ~ 08638858 n 0000 ~ 08638968 n 0000 ~ 08639047 n 0000 ~ 08640338 n 0000 ~ 08640525 n 0000 ~ 08641502 n 0000 ~ 08641670 n 0000 ~ 08641771 n 0000 ~ 08641960 n 0000 ~ 08642231 n 0000 ~ 08642466 n 0000 ~ 08642648 n 0000 ~ 08643037 n 0000 ~ 08643421 n 0000 ~ 08643655 n 0000 ~ 08671281 n 0000 ~ 08674221 n 0000 ~ 08694813 n 0000 | the particular portion of space occupied by something; \"he put the lamp back in its place\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8640525,
+      "raw": "08640525 15 n 02 site 2 situation 0 008 @ 08639173 n 0000 + 02700775 v 0201 ~ 08640835 n 0000 ~ 08640999 n 0000 ~ 08641143 n 0000 ~ 08641251 n 0000 ~ 08641375 n 0000 ~ 15062231 n 0000 | physical position in relation to the surroundings; \"the sites are determined by highly specific sequences of nucleotides\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8641960,
+      "raw": "08641960 15 n 02 post 0 station 0 005 @ 08639173 n 0000 + 01091334 v 0201 ~ 08534288 n 0000 ~ 08614732 n 0000 ~ 08631560 n 0000 | the position where someone (as a guard or sentry) stands or is assigned to stand; \"a soldier manned the entrance post\"; \"a sentry station\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8656633,
+      "raw": "08656633 15 n 04 seaport 0 haven 0 harbor 0 harbour 0 010 @ 08651532 n 0000 #p 08651426 n 0000 %p 03221531 n 0000 %p 03643635 n 0000 ~ 08656942 n 0000 ~ 08657054 n 0000 %p 08657351 n 0000 ~i 08813344 n 0000 ~i 09103307 n 0000 ~i 09118681 n 0000 | a sheltered port where ships can take on or discharge cargo  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8659612,
+      "raw": "08659612 15 n 01 place 1 001 @ 08658688 n 0000 | a general vicinity; \"He comes from a place near Chicago\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8661508,
+      "raw": "08661508 15 n 02 safety 0 refuge 0 002 @ 08514304 n 0000 ~ 08661620 n 0000 | a safe place; \"He ran to safety\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8665191,
+      "raw": "08665191 15 n 02 seat 1 place 3 008 @ 08670545 n 0000 ;c 07019235 n 0000 ;c 02694015 n 0000 + 02338975 v 0101 + 02339298 v 0101 + 02707822 v 0101 + 01546780 v 0101 ~ 08644333 n 0000 | a space reserved for sitting (as in a theater or on a train or airplane); \"he booked their seats in advance\"; \"he sat in someone else's place\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8665520,
+      "raw": "08665520 15 n 01 seat 0 006 @ 08540894 n 0000 + 02389417 v 0103 ~ 08535783 n 0000 ~ 08564718 n 0000 ~ 08564875 n 0000 ~ 08604380 n 0000 | a center of authority (as a city from which authority is exercised)  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8668822,
+      "raw": "08668822 15 n 02 site 0 land_site 0 019 @ 08691133 n 0000 + 02338685 v 0103 ~ 02949049 n 0000 ~ 08513344 n 0000 ~ 08533579 n 0000 ~ 08535449 n 0000 ~ 08538806 n 0000 ~ 08567651 n 0000 ~ 08577564 n 0000 ~ 08586848 n 0000 ~ 08597308 n 0000 ~i 08597975 n 0000 ~ 08609042 n 0000 ~ 08617999 n 0000 ~ 08644736 n 0000 ~ 08658537 n 0000 ~ 08679015 n 0000 ~ 08679205 n 0000 ~i 08825406 n 0000 | the piece of land on which something is located (or is to be located); \"a good site for the school\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8674221,
+      "raw": "08674221 15 n 01 station 1 003 @ 08639173 n 0000 ;c 08208631 n 0000 + 01091334 v 0101 | (nautical) the location to which a ship or fleet is assigned for duty  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8682181,
+      "raw": "08682181 15 n 03 topographic_point 0 place 0 spot 1 026 @ 08637636 n 0000 + 01715608 v 0204 + 01153025 v 0203 + 01496967 v 0203 ~ 03459977 n 0000 ~ 03610935 n 0000 ~ 08527371 n 0000 ~ 08556480 n 0000 ~ 08584413 n 0000 ~ 08601976 n 0000 ~ 08602145 n 0000 ~ 08602441 n 0000 ~ 08602583 n 0000 ~ 08616124 n 0000 ~ 08628532 n 0000 ~ 08631679 n 0000 ~ 08635538 n 0000 ~ 08660445 n 0000 ~ 08665032 n 0000 ~ 08666356 n 0000 ~ 08666492 n 0000 ~ 08670055 n 0000 ~ 08674524 n 0000 ~ 08678672 n 0000 ~ 08682839 n 0000 ~ 08705985 n 0000 | a point located with respect to surface features of some region; \"this is a nice place for a picnic\"; \"a bright spot on a planet\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 8703415,
+      "raw": "08703415 15 n 06 sign_of_the_zodiac 0 star_sign 0 sign 0 mansion 0 house 0 planetary_house 0 015 @ 08647614 n 0000 #p 08702926 n 0000 ;c 05786128 n 0000 ~i 08703867 n 0000 ~i 08704070 n 0000 ~i 08704233 n 0000 ~i 08704396 n 0000 ~i 08704559 n 0000 ~i 08704717 n 0000 ~i 08704888 n 0000 ~i 08705083 n 0000 ~i 08705263 n 0000 ~i 08705447 n 0000 ~i 08705622 n 0000 ~i 08705814 n 0000 | (astrology) one of 12 equal areas into which the zodiac is divided  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 13334755,
+      "raw": "13334755 21 n 02 tax_shelter 0 shelter 0 002 @ 00352464 n 0000 + 02662486 v 0201 | a way of organizing business to reduce the taxes it must pay on current earnings  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 13949819,
+      "raw": "13949819 26 n 02 place 1 shoes 0 002 @ 13948785 n 0000 + 02397904 v 0101 | a particular situation; \"If you were in my place what would you do?\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 13970825,
+      "raw": "13970825 26 n 02 place 0 station 0 002 @ 13970595 n 0000 ~ 13949201 n 0000 | proper or designated social situation; \"he overstepped his place\"; \"the responsibilities of a man in his station\"; \"married above her station\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 13971047,
+      "raw": "13971047 26 n 01 place 2 002 @ 13943868 n 0000 + 02397904 v 0101 | proper or appropriate position or location; \"a woman's place is no longer in the kitchen\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 14537296,
+      "raw": "14537296 26 n 01 home 0 004 @ 13957629 n 0000 + 00479651 a 0104 + 00479651 a 0103 + 02465056 v 0101 | an environment offering affection and security; \"home is where the heart is\"; \"he grew up in a good Christian home\"; \"there's no place like home\"  \n"
+    },
+    {
+      "pos": "n",
+      "synset_offset": 14563562,
+      "raw": "14563562 26 n 02 protection 0 shelter 0 004 @ 14562870 n 0000 + 02662486 v 0201 ~ 14563428 n 0000 ~ 14564057 n 0000 | the condition of being protected; \"they were huddled together for protection\"; \"he enjoyed a sense of peace and protection in his new home\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 98390,
+      "raw": "00098390 02 r 01 home 1 000 | at or to or in the direction of one's home or family; \"He stays home on weekends\"; \"after the game the children brought friends home for supper\"; \"I'll be home tomorrow\"; \"came riding home in style\"; \"I hope you will come home for Christmas\"; \"I'll take her home\"; \"don't forget to write home\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 98930,
+      "raw": "00098930 02 r 01 home 3 000 | to the fullest extent; to the heart; \"drove the nail home\"; \"drove his point home\"; \"his comments hit home\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 99070,
+      "raw": "00099070 02 r 01 home 4 000 | on or to the point aimed at; \"the arrow struck home\"  \n"
+    },
+    {
+      "pos": "r",
+      "synset_offset": 185770,
+      "raw": "00185770 02 r 04 true 0 admittedly 0 avowedly 1 confessedly 0 000 | as acknowledged; \"true, she is the smartest in her class\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 466204,
+      "raw": "00466204 30 v 02 true 0 true_up 0 002 @ 00465234 v 0000 + 05084517 n 0101 01 + 08 00 | make level, square, balanced, or concentric; \"true up the cylinder of an engine\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 620568,
+      "raw": "00620568 31 v 02 identify 0 place 0 007 @ 00701581 v 0000 + 01275507 a 0101 + 14600591 n 0101 + 05770995 n 0102 + 05771409 n 0101 + 04625427 n 0101 ~ 00652006 v 0000 02 + 08 00 + 09 00 | recognize as being; establish the identity of someone or something; \"She identified the man on the `wanted' poster\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 659723,
+      "raw": "00659723 31 v 06 rate 0 rank 0 range 0 order 0 grade 3 place 1 020 @ 00672179 v 0000 + 06495143 n 0601 + 05745098 n 0502 + 14451564 n 0501 + 14453034 n 0501 + 01005671 n 0501 + 10160303 n 0501 + 01012276 n 0502 + 05098520 n 0401 + 01011813 n 0402 + 14453411 n 0201 ~ 00660290 v 0000 ~ 00660469 v 0000 ~ 00660584 v 0000 ~ 00660783 v 0000 ~ 00661206 v 0000 ~ 00662052 v 0000 ~ 00662242 v 0000 ~ 00662401 v 0000 ~ 00662522 v 0000 02 + 08 00 + 09 00 | assign a rank or rating to; \"how would you rank these students?\"; \"The restaurant is rated highly in the food guide\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 661447,
+      "raw": "00661447 31 v 03 place 3 come_in 0 come_out 0 002 @ 00661773 v 0000 + 06495143 n 0101 02 + 06 00 + 07 00 | take a place in a competition; often followed by an ordinal; \"Jerry came in third in the Marathon\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 675367,
+      "raw": "00675367 31 v 03 place d put d set d 001 @ 00674352 v 0000 01 + 08 00 | estimate; \"We put the time of arrival at 8 P.M.\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 747956,
+      "raw": "00747956 32 v 01 place 1 001 @ 00747485 v 0000 01 + 08 00 | to arrange for; \"place a phone call\"; \"place a bet\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1051148,
+      "raw": "01051148 32 v 01 place 0 001 @ 01733312 v 0000 01 + 08 00 | sing a note with the correct pitch  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1089102,
+      "raw": "01089102 33 v 01 place 2 002 @ 01088514 v 0000 + 06495143 n 0101 01 + 01 00 | finish second or better in a horse or dog race; \"he bet $2 on number six to place\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1091334,
+      "raw": "01091334 33 v 04 station 0 post 0 send 0 place 0 007 @ 01854282 v 0000 + 00587299 n 0407 + 08641960 n 0102 + 08674221 n 0101 ~ 01091548 v 0000 ~ 01157887 v 0000 ~ 02338685 v 0000 01 + 20 00 | assign to a station  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1153025,
+      "raw": "01153025 33 v 05 target 0 aim a place 3 direct 1 point a 007 @ 01153576 v 0000 + 08682181 n 0302 + 00817305 n 0201 + 05990115 n 0104 + 10490045 n 0103 ~ 01153447 v 0000 ~ 01155473 v 0000 04 + 08 00 + 09 00 + 22 05 + 22 02 | intend (something) to move towards a certain goal; \"He aimed his fists towards his opponent's face\"; \"criticism directed at her superior\"; \"direct your anger towards others, not towards yourself\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1496967,
+      "raw": "01496967 35 v 06 put 0 set 0 place 0 pose 2 position 0 lay 1 106 @ 01854282 v 0000 ^ 01476839 v 0603 + 01053255 n 0504 + 04117533 n 0502 + 06401196 n 0303 + 08639173 n 0302 + 08682181 n 0302 + 05082771 n 0301 + 01054777 n 0201 + 08641502 n 0201 ^ 01492094 v 0203 ^ 02708534 v 0201 ^ 02579184 v 0202 ^ 02584093 v 0204 ^ 01983255 v 0203 ^ 01660471 v 0204 ^ 01665137 v 0204 ^ 01466592 v 0202 ^ 01476839 v 0204 ^ 02648898 v 0104 ^ 01311041 v 0102 ^ 02708534 v 0103 ^ 02648898 v 010a ^ 01985050 v 0102 ^ 02500005 v 0109 ^ 01660471 v 0103 ^ 01366351 v 0101 ^ 01573231 v 0102 ^ 01547474 v 0102 ^ 00744289 v 0105 ~ 00187671 v 0000 ~ 01010746 v 0000 ~ 01249990 v 0000 ~ 01250769 v 0000 ~ 01250969 v 0000 ~ 01259051 v 0000 ~ 01311041 v 0000 ~ 01311341 v 0000 ~ 01373866 v 0000 ~ 01379285 v 0000 ~ 01427999 v 0000 ~ 01437455 v 0000 ~ 01466592 v 0000 ~ 01471892 v 0000 ~ 01472074 v 0000 ~ 01496037 v 0000 ~ 01496276 v 0000 ~ 01499136 v 0000 ~ 01499269 v 0000 ~ 01499482 v 0000 ~ 01499617 v 0000 ~ 01499931 v 0000 ~ 01500097 v 0000 ~ 01500273 v 0000 ~ 01500389 v 0000 ~ 01500503 v 0000 ~ 01500805 v 0000 ~ 01500958 v 0000 ~ 01501137 v 0000 ~ 01501254 v 0000 ~ 01501352 v 0000 ~ 01501511 v 0000 ~ 01501645 v 0000 ~ 01501904 v 0000 ~ 01502331 v 0000 ~ 01502488 v 0000 ~ 01502587 v 0000 ~ 01502721 v 0000 ~ 01502853 v 0000 ~ 01503011 v 0000 ~ 01503512 v 0000 ~ 01504432 v 0000 ~ 01504599 v 0000 ~ 01504761 v 0000 ~ 01504918 v 0000 ~ 01505080 v 0000 ~ 01505179 v 0000 ~ 01505293 v 0000 ~ 01505585 v 0000 ~ 01520147 v 0000 ~ 01546780 v 0000 ~ 01547067 v 0000 ~ 01547474 v 0000 ~ 01549550 v 0000 ~ 01550423 v 0000 ~ 01570056 v 0000 ~ 01572394 v 0000 ~ 01578506 v 0000 ~ 01581842 v 0000 ~ 01605586 v 0000 ~ 01609495 v 0000 ~ 01610494 v 0000 ~ 01613005 v 0000 ~ 01614144 v 0000 ~ 01614988 v 0000 ~ 01615199 v 0000 ~ 01616143 v 0000 ~ 01616295 v 0000 ~ 01619805 v 0000 ~ 01991174 v 0000 ~ 01991795 v 0000 ~ 01992094 v 0000 ~ 01992339 v 0000 ~ 01992472 v 0000 ~ 02101619 v 0000 ~ 02694988 v 0000 01 + 21 00 | put into a certain place or abstract location; \"Put your things here\"; \"Set the tray down\"; \"Set the dogs on the scent of the missing children\"; \"Place emphasis on a certain point\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1546780,
+      "raw": "01546780 35 v 03 seat 0 sit 1 sit_down 0 008 > 01545905 v 0000 @ 01496967 v 0000 + 04168419 n 0101 + 04169042 n 0101 + 08665191 n 0101 + 01213189 n 0101 $ 01545905 v 0000 ~ 01547340 v 0000 02 + 09 00 + 20 00 | show to a seat; assign a seat for; \"The host seated me next to Mrs. Smith\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1547067,
+      "raw": "01547067 35 v 01 seat 2 002 > 01545905 v 0000 @ 01496967 v 0000 02 + 09 00 + 20 00 | place in or on a seat; \"the mother seated the toddler on the high chair\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1619805,
+      "raw": "01619805 35 v 01 seat 1 001 @ 01496967 v 0000 01 + 21 00 | place or attach firmly in or on a base; \"seat the camera on the tripod\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 1715608,
+      "raw": "01715608 36 v 04 set 1 localize 0 localise 0 place 0 006 @ 01715304 v 0000 + 08682181 n 0402 + 05082771 n 0401 + 00156307 n 0201 + 08695366 n 0202 + 01054777 n 0101 01 + 21 00 | locate; \"The film is set in Africa\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2009361,
+      "raw": "02009361 38 v 01 home 0 002 @ 02008888 v 0000 + 08577045 n 0101 02 + 01 00 + 02 00 | return home accurately from a long distance; \"homing pigeons\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2275982,
+      "raw": "02275982 40 v 04 invest 0 put 0 commit 5 place 3 013 @ 02271905 v 0000 + 01242433 n 0301 + 13354252 n 0101 + 01101341 n 0102 + 10235776 n 0101 + 01101341 n 0101 ! 02318886 v 0101 ~ 02220748 v 0000 ~ 02276335 v 0000 ~ 02276662 v 0000 ~ 02276768 v 0000 ~ 02276935 v 0000 ~ 02289389 v 0000 02 + 08 00 + 21 00 | make an investment; \"Put money into bonds\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2276662,
+      "raw": "02276662 40 v 01 shelter 0 001 @ 02275982 v 0000 01 + 08 00 | invest (money) so that it is not taxable   \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2338685,
+      "raw": "02338685 40 v 03 locate 1 place 0 site 0 007 @ 01091334 v 0000 + 08668822 n 0301 + 00587299 n 0207 + 08530790 n 0201 + 05082771 n 0201 + 01053255 n 0102 + 00027365 n 0101 04 + 08 00 + 09 00 + 10 00 + 11 00 | assign a location to; \"The company located some of their agents in Los Angeles\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2338975,
+      "raw": "02338975 40 v 01 seat 0 006 @ 02332196 v 0000 ;c 00612006 n 0000 + 04168419 n 0101 + 08665191 n 0101 + 04169042 n 0101 ~ 02339169 v 0000 01 + 08 00 | provide with seats; \"seat a concert hall\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2339298,
+      "raw": "02339298 40 v 01 seat 1 005 @ 02332196 v 0000 ;c 00608657 n 0000 + 08665191 n 0101 + 04169042 n 0101 ~ 02339454 v 0000 01 + 08 00 | put a seat on a chair  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2389417,
+      "raw": "02389417 41 v 03 induct 0 invest 1 seat 0 005 @ 02389183 v 0000 + 08665520 n 0301 + 10048490 n 0103 + 07467805 n 0102 + 10223568 n 0101 02 + 09 00 + 20 00 | place ceremoniously or formally in an office or position; \"there was a ceremony to induct the president of the Academy\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2397904,
+      "raw": "02397904 41 v 01 place 1 004 @ 02396945 v 0000 + 13971047 n 0101 + 13949819 n 0101 + 05619605 n 0101 01 + 20 00 | place somebody in a particular situation or location; \"he was placed on probation\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2464596,
+      "raw": "02464596 41 v 03 house 0 put_up 0 domiciliate 0 010 @ 02662486 v 0000 + 03200169 n 0303 + 03550330 n 0101 + 03549540 n 0101 + 03551520 n 0101 ~ 02464955 v 0000 ~ 02465056 v 0000 ~ 02657519 v 0000 ~ 02662158 v 0000 ~ 02663091 v 0000 04 + 08 00 + 09 00 + 20 00 + 21 00 | provide housing for; \"The immigrants were housed in a new development outside the town\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2465056,
+      "raw": "02465056 41 v 01 home 0 005 @ 02464596 v 0000 + 14537296 n 0101 + 08094856 n 0104 + 03533280 n 0101 + 03264208 n 0102 01 + 09 00 | provide with, or send to, a home  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2543626,
+      "raw": "02543626 41 v 01 place 0 003 @ 02396945 v 0000 + 00587299 n 0107 + 08577045 n 0102 01 + 20 00 | assign to (a job or a home)  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2662486,
+      "raw": "02662486 42 v 01 shelter 0 010 @ 02332196 v 0000 + 13334755 n 0102 + 14563562 n 0102 + 04198986 n 0101 + 04198638 n 0101 ~ 02464596 v 0000 ~ 02465222 v 0000 ~ 02465338 v 0000 ~ 02465493 v 0000 ~ 02662285 v 0000 04 + 08 00 + 09 00 + 10 00 + 11 00 | provide shelter for; \"After the earthquake, the government could not provide shelter for the thousands of homeless people\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2701737,
+      "raw": "02701737 42 v 03 place 0 localize 1 localise 1 005 @ 02700775 v 0000 + 00156307 n 0302 + 00156307 n 0201 + 08695366 n 0202 + 05082771 n 0101 01 + 08 00 | identify the location or place of; \"We localized the source of the infection\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2707688,
+      "raw": "02707688 42 v 01 house 2 002 @ 02738673 v 0000 + 03551946 n 0101 02 + 10 00 + 11 00 | contain or cover; \"This box houses the gears\"  \n"
+    },
+    {
+      "pos": "v",
+      "synset_offset": 2707822,
+      "raw": "02707822 42 v 01 seat 0 004 @ 02738673 v 0000 + 04169042 n 0101 + 08665191 n 0101 + 04170059 n 0101 01 + 11 00 | be able to seat; \"The theater seats 2,000\"  \n"
+    }
+  ],
+  "index_rows": {
+    "noun": [
+      "abode n 2 3 @ ~ %p 2 2 08576500 03264208  \n",
+      "destination n 3 5 @ ~ #p %p + 3 2 08585406 05990653 06800007  \n",
+      "dwelling n 1 4 @ ~ %p + 1 1 03264208  \n",
+      "goal n 4 4 @ ~ #p %p 4 2 05989760 08585406 03447680 00188186  \n",
+      "haven n 2 4 @ ~ #p %p 2 1 03504940 08656633  \n",
+      "home n 9 5 @ ~ %p + ; 9 6 08577045 03264208 08507209 03534081 08507412 08602685 14537296 08094856 03533280  \n",
+      "house n 12 6 @ ~ #p %p + ; 12 7 03549540 08076706 08241501 08239887 08179924 07987896 00433104 08703415 08398027 08094856 04424944 03550330  \n",
+      "place n 16 6 @ ~ #p = + ; 16 16 08682181 08530790 05619605 08659612 00722683 13949819 08577045 00587299 08639173 13970825 08665191 06412750 13971047 08637370 06495143 06401196  \n",
+      "refuge n 4 2 @ ~ 4 0 08661508 05162506 04078214 01211087  \n",
+      "residence n 4 4 @ ~ %p + 4 4 08576500 04086356 01055844 03724592  \n",
+      "seat n 9 7 @ ~ #m #p %p + ; 9 5 08665191 05566889 04169042 04168419 08665520 08507049 05197214 04169660 04169494  \n",
+      "shelter n 5 3 @ ~ + 5 2 04198638 04198986 14563562 13334755 04199281  \n",
+      "site n 3 3 @ ~ + 3 2 08668822 08640525 06370600  \n",
+      "station n 5 4 @ ~ + ; 5 1 04313218 13970825 08674221 08641960 05064212  \n",
+      "true n 1 2 @ + 1 0 05084517  \n"
+    ],
+    "verb": [
+      "home v 2 2 @ + 2 0 02465056 02009361  \n",
+      "house v 2 3 @ ~ + 2 2 02707688 02464596  \n",
+      "place v 16 3 @ ~ + 16 11 01496967 02397904 00659723 02338685 00747956 00661447 01153025 00620568 02543626 01715608 00675367 02701737 02275982 01091334 01089102 01051148  \n",
+      "seat v 7 6 @ ~ > $ + ; 7 3 01546780 02707822 02389417 02339298 02338975 01619805 01547067  \n",
+      "shelter v 2 3 @ ~ + 2 1 02662486 02276662  \n",
+      "site v 1 2 @ + 1 0 02338685  \n",
+      "station v 1 3 @ ~ + 1 1 01091334  \n",
+      "true v 1 2 @ + 1 0 00466204  \n"
+    ],
+    "adj": [
+      "home a 3 4 ! & \\ ; 3 2 01222498 02753598 01042014  \n",
+      "true a 12 5 ! & ^ = + 12 3 02469730 00023157 00962719 01228271 02478996 02474747 02187907 01945125 01473564 01410239 01167303 00914318  \n"
+    ],
+    "adv": [
+      "home r 3 0 3 2 00098390 00099070 00098930  \n",
+      "true r 1 0 1 1 00185770  \n"
+    ]
+  }
+}

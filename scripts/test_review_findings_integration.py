@@ -1,4 +1,6 @@
-"""Actual audit/router, request cache, and candidate gate; only provider is mocked.
+"""Actual audit/router, request cache, source checkpoint and candidate gate.
+
+Provider responses and retained timing are fixture evidence.
 
 Saved Rehna is the real failing reader. The later all-pass packet is an
 adversarial control, not a newly obtained semantic judgment.
@@ -562,25 +564,43 @@ class FindingIntegrationTests(unittest.TestCase):
         original_path = fixture.root/'songs/rehna-nahi-isa-desa/data.js'
         write_js(original_path, self.reader)
         (original_path.parent/'index.html').write_text('<script src="data.js"></script>')
+        # Retained source/timing are fixture evidence; use the actual source
+        # planner, private generation and checkpoint consumer to bind them.
+        order=[];counts={}
+        for event in self.reader['SONG_SEQUENCE']:
+            for _ in range(event['repeats']):
+                lid=event['ref'];counts[lid]=counts.get(lid,0)+1
+                order.append({'line_id':lid,'occurrence':counts[lid]})
+        audit={'packet':{'metadata':{'languages':['Hindi']},
+            'verified_lines':copy.deepcopy(self.lines),'performance_order':order,'uncertainties':[]}}
+        timing={'sequence':[{**copy.deepcopy(event),**point}
+            for event,point in zip(self.reader['SONG_SEQUENCE'],self.reader['SONG_TIMINGS'])],
+            'validation_errors':[]}
+        packets=original_path.parent/'.transcription/pipeline';packets.mkdir(parents=True)
+        (packets/'02-transcript-audit.json').write_text(json.dumps(audit))
+        (packets/'03-timing.json').write_text(json.dumps(timing))
         fixture.commit(); row = fixture.inventory()['songs'][0]
         row['plannedStages'] = ['source-merge','semantic-review']
         before = original_path.read_bytes()
         # Keep the three real open choices; this test isolates the no-target gate.
         self.fixture['reviews'][-2] = clean_review('verse-3-line-2')
-        source_candidate = {'status':'accepted','reader':copy.deepcopy(self.reader),
-                            'source_changed':False,'evidence':{}}
-        with patch.object(source_pass,'run_source_candidate',return_value=source_candidate) as source, \
+        with patch.object(source_pass,'run_source_candidate',wraps=source_pass.run_source_candidate) as source, \
+             patch.object(library.pipeline,'align',return_value=timing) as align, \
              patch.object(library.pipeline.gemini,'key',return_value='unused'), \
              patch.object(library.pipeline.gemini,'call',side_effect=self.provider):
             first = library.execute_song(fixture.root,row,fixture.state,self.options,self.deadline)
             second = library.execute_song(fixture.root,row,fixture.state,self.options,self.deadline)
         self.assertEqual(source.call_count,1)
+        self.assertEqual(align.call_count,1,'checkpoint replay must not repeat timing work')
         self.assertEqual(len(self.calls),2)
         for result in (first,second):
             self.assertEqual(result['status'],'unresolved')
             self.assertFalse(result['publicationEligible'])
             self.assertEqual(len(result['authorization']['pending_findings']),3)
             self.assertEqual(result['source']['status'],'accepted')
+            self.assertEqual(result['source']['reader'],self.reader)
+            self.assertFalse(result['source']['source_changed'])
+            self.assertEqual(result['source']['evidence']['plan']['new_target_ids'],[])
         self.assertEqual(original_path.read_bytes(),before)
         self.assertTrue((fixture.state/'songs/rehna-nahi-isa-desa/source-checkpoint.json').is_file())
 

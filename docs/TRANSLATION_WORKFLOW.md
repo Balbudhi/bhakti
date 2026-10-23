@@ -22,7 +22,11 @@ The next two-row comparison delivered the explicit lookup request but stopped
 before retrieval: four candidate expressions contained six English lookup words,
 exceeding the aggregate four-word validator limit. It cost $0.0214965 and did not
 qualify. The candidate/lemma budget mismatch is the next demonstrated defect;
-it must be resolved without silently discarding alternatives or blind paid retry.
+it has now been corrected without discarding alternatives. The producer permits
+four candidates with at most four lookup strings each; discovery accepts their
+at most sixteen normalized queries. Full definitions survive partial embedding
+ranking, whose input/call limits remain unchanged. A new bounded quality run is
+pending; the original held attempt remains immutable.
 Current execution evidence belongs in [the repair task](LIBRARY_REPAIR_TASKS.md).
 
 ## Bounded intake and boundary recovery

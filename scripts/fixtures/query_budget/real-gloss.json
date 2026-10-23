@@ -1,0 +1,229 @@
+{
+  "glosses": [
+    {
+      "id": "verse-3-line-1",
+      "word_glosses": [
+        {
+          "roman": "kahata",
+          "gloss": "says",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kabīra",
+          "gloss": "Kabir, the 15th-century poet-weaver and devotee",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "sunō",
+          "gloss": "listen",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "bhāī",
+          "gloss": "brother",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "sādhō",
+          "gloss": "spiritual seekers",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "semantic_frame": {
+        "agent": "Kabir (in framing statement); addressed brother seekers (for the imperative call to listen)",
+        "action_or_state": "says; listen",
+        "patient_or_complement": "the spiritual truth articulated in the following line",
+        "modifiers": "vocative direct address ('bhāī sādhō')",
+        "negation_or_modality": "declarative reportative frame paired with direct 2nd-person plural imperative",
+        "literal_image_and_agency": "The poet-weaver Kabir addresses his audience as kin and spiritual companions, commanding their auditory and mental attention for the conclusive insight of the song.",
+        "idiom_or_phrase": "kahata kabīra sunō bhāī sādhō (conventional signature bcell of Kabir summoning spiritual companions)",
+        "cross_line_relation": "Forms the introductory signature formula governing the aphoristic truth declared in verse-3-line-2."
+      },
+      "grammar_note": "kahata: Braj/Bhakti imperfective participle functioning as present 3rd-person singular finite verb agreeing with the subject kabīra. sunō: 2nd-person plural imperative. bhāī and sādhō: vocatives functioning together as an affectionate, communal address to fellow seekers.",
+      "uncertainty": "",
+      "sense_decisions": [
+        {
+          "word_index": 0,
+          "roman": "kahata",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Functions as the finite speech verb 'says/speaks' introducing Kabir's signature declaration.",
+          "grammatical_role": "verb, 3rd person singular present/imperfective participle"
+        },
+        {
+          "word_index": 1,
+          "roman": "kabīra",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Proper name of the poet-saint functioning as the grammatical subject of kahata.",
+          "grammatical_role": "proper noun, subject"
+        },
+        {
+          "word_index": 2,
+          "roman": "sunō",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Imperative verb calling on the listeners/seekers to attend.",
+          "grammatical_role": "verb, 2nd person plural imperative"
+        },
+        {
+          "word_index": 3,
+          "roman": "bhāī",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Vocative kinship noun used in devotional fellowship ('brother/brothers').",
+          "grammatical_role": "noun, vocative singular/plural"
+        },
+        {
+          "word_index": 4,
+          "roman": "sādhō",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Vocative plural of sādhu ('virtuous seekers, practitioners').",
+          "grammatical_role": "noun, vocative plural"
+        }
+      ],
+      "lexical_queries": [],
+      "lexical_query_gaps": []
+    },
+    {
+      "id": "verse-3-line-2",
+      "word_glosses": [
+        {
+          "roman": "sataguru",
+          "gloss": "true spiritual guide",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nāma",
+          "gloss": "divine name",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ṭhikānā",
+          "gloss": "resting place",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "hai",
+          "gloss": "is",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "semantic_frame": {
+        "agent": "the divine name of the true spiritual guide (sataguru nāma)",
+        "action_or_state": "is (state of being / identification)",
+        "patient_or_complement": "the only genuine resting place and refuge (ṭhikānā)",
+        "modifiers": "none",
+        "negation_or_modality": "affirmative assertoric statement of metaphysical refuge",
+        "literal_image_and_agency": "Directly answers the desolate transience of the worldly realm ('desa ye vīrānā hai') by identifying the Name of the True Guru as the sole true home, dwelling place, and secure anchor.",
+        "idiom_or_phrase": "ṭhikānā honā (to be a settled dwelling, true home, or reliable refuge)",
+        "cross_line_relation": "Completes the reported speech initiated by Kabir in verse-3-line-1, providing the spiritual resolution to the refrain's lament that the world is a wilderness."
+      },
+      "grammar_note": "sataguru nāma: compound or unmarked genitive relation ('the Name of the True Spiritual Guide') functioning as the subject. ṭhikānā: predicate noun complement ('resting place/abode'). hai: 3rd-person singular present copula.",
+      "uncertainty": "",
+      "sense_decisions": [
+        {
+          "word_index": 0,
+          "roman": "sataguru",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Compound sat + guru referring specifically to the genuine spiritual teacher/guide who reveals ultimate truth.",
+          "grammatical_role": "noun, genitive modifier in unmarked compound with nāma"
+        },
+        {
+          "word_index": 1,
+          "roman": "nāma",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Contextually signifies the sacred divine name/remembrance conveyed by the guide, fulfilling the policy requirement for nām.",
+          "grammatical_role": "noun, masculine singular subject"
+        },
+        {
+          "word_index": 2,
+          "roman": "ṭhikānā",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Denotes a permanent dwelling place, secure home, or refuge, explicitly counterposed to the alien desolate land (vīrānā desa).",
+          "grammatical_role": "noun, masculine singular predicate complement"
+        },
+        {
+          "word_index": 3,
+          "roman": "hai",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Present 3rd-person singular copula equating the subject with the predicate.",
+          "grammatical_role": "verb, 3rd person singular present copula"
+        }
+      ],
+      "lexical_queries": [
+        {
+          "word_indices": [
+            2
+          ],
+          "surfaces": [
+            "ṭhikānā"
+          ],
+          "reason": "Check the contextual noun sense and the attachment of modifiers in this clause against witnessed source-language definitions.",
+          "source_entry_ids": [],
+          "source_queries": [
+            "ठिकाना",
+            "thikana"
+          ],
+          "english_candidates": [
+            {
+              "expression": "resting place",
+              "kind": "compositional_phrase",
+              "english_lemmas": [
+                "resting",
+                "place"
+              ]
+            },
+            {
+              "expression": "abode",
+              "kind": "word",
+              "english_lemmas": [
+                "abode"
+              ]
+            },
+            {
+              "expression": "true dwelling place",
+              "kind": "compositional_phrase",
+              "english_lemmas": [
+                "true",
+                "dwelling",
+                "place"
+              ]
+            },
+            {
+              "expression": "refuge",
+              "kind": "word",
+              "english_lemmas": [
+                "refuge"
+              ]
+            }
+          ]
+        }
+      ],
+      "lexical_query_gaps": []
+    }
+  ]
+}

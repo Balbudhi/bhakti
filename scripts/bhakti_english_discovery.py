@@ -21,6 +21,7 @@ VERSION = 1
 DEFAULT_SPACE = lexical.DEFAULT_SPACE
 MAX_NEIGHBOR_SYNSETS = 8
 MAX_DISCOVERED_LEMMAS = 4
+MAX_SEED_LEMMAS = 16
 POINTERS = {'&', '@', '~'}
 
 
@@ -128,7 +129,7 @@ def _group_scores(parts, values):
 def configuration():
     if os.environ.get('BHAKTI_ENGLISH_DISCOVERY') != '1':
         return None
-    return {'version': VERSION, 'projection_version': PROJECTION_VERSION, 'max_query_parts': MAX_QUERY_PARTS,
+    return {'version': VERSION, 'max_seed_lemmas': MAX_SEED_LEMMAS, 'projection_version': PROJECTION_VERSION, 'max_query_parts': MAX_QUERY_PARTS,
             'max_embedding_inputs': MAX_EMBEDDING_INPUTS, 'max_neighbor_synsets': MAX_NEIGHBOR_SYNSETS,
             'max_discovered_lemmas': MAX_DISCOVERED_LEMMAS, 'space': copy.deepcopy(DEFAULT_SPACE)}
 
@@ -222,7 +223,7 @@ def discover_english(directory, seeds, *, edition, query, cache_dir, encoder=Non
                      max_embedding_inputs=MAX_EMBEDDING_INPUTS):
     directory = Path(directory).resolve()
     seeds = support.english_queries(seeds)
-    support.require(1 <= len(seeds) <= 4, 'English discovery needs one to four seed lemmas')
+    support.require(1 <= len(seeds) <= MAX_SEED_LEMMAS, 'English discovery needs one to sixteen seed lemmas')
     support.require(type(max_neighbor_synsets) is int and 0 <= max_neighbor_synsets <= 128,
                     'English neighbor allowance must be between zero and128')
     support.require(type(max_discovered_lemmas) is int and 0 <= max_discovered_lemmas <= 32,
