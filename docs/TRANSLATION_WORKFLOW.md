@@ -121,6 +121,27 @@ misses and empty source fragments remain distinguishable. Native Unicode
 canonical equivalence is allowed; diacritics are not removed to invent a match.
 Hindi evidence is never silently assigned to Punjabi or Sanskrit.
 
+The integrated automatic support producer can now ask the existing glossary call
+for up to four English lookup candidates per targeted span, retrieve their full
+WordNet alternatives, and supply witnessed source entries and English definitions
+to translation and independent review. Enable it for private qualification with
+`BHAKTI_AUTO_LEXICAL=1`, `BHAKTI_WORDNET_DIR`, optionally
+`BHAKTI_WORDNET_EDITION` (default `3.1`), and a JSON directory array in
+`BHAKTI_SOURCE_WITNESS_ROOTS`. `BHAKTI_LEXICAL_SUPPORT_CACHE` sets the private
+lookup cache. Missing evidence remains an explicit gap. Cumulative lookup
+requirements survive selective repairs and resumed acceptance; an English
+dictionary update reuses compatible source glosses and reruns English/review.
+This producer performs no additional model call for lookup. Its existing-call
+prompt/output additions still have token cost.
+
+This is not yet the complete discovery engine: source retrieval currently needs
+an existing lemma binding, and English lookup needs proposed lemmas. Automatic
+source-form discovery and embedding-based English candidate discovery are under
+integration. The default five-entry Hindi corpus has no token matches in the
+five representative qualification songs; configuring an encoder alone cannot
+correct that coverage gap. No full-library translation-quality claim follows
+from these structural tests.
+
 Example preparation, using private paths and an explicit JSON array of native
 queries:
 

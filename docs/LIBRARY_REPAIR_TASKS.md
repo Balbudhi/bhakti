@@ -8,16 +8,22 @@ it to repair the published library and add the identified backlog. The owner's
 latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
-Current step: qualify the integrated lexical-evidence and historical
-audio-cache compatibility changes; complete automatic lexical lookup production,
-bounded intake callers and selective timing recovery. The protected-reference
-benchmark has run and exposed translation weaknesses; its outputs do not yet
-qualify a broad translation pass. The source-adoption caller is implemented
-privately, but its timing boundary still uses a substitute in caller tests.
-Next: connect those actual callers, verify recovery without duplicate charges,
-and rerun only the affected representative cases before scaling qualified
-operations. Broad paid processing has not restarted. Uncommitted changes remain
-separate from completion or deployment claims.
+Current step: finish the connected pipeline before further content releases.
+Explicit lexical support, historical audio-cache compatibility, semantic cache
+reuse, bounded intake and automatic WordNet lookup delivery are integrated.
+Automatic lookup requirements now persist across both repair rounds, interrupted
+resume and dictionary updates, separately from current repair objections; 108
+combined tests pass on the working pipeline. This retrieves definitions for
+proposed English words and already-bound source entries. It does not yet discover
+English words through embeddings or missing source dictionary forms; those
+callers remain required before qualification. The private short-scope source/timing caller now passes
+actual joined storage/router/FFmpeg tests, including prior-measurement reuse;
+long scopes, missing-source bootstrap and historical crop adoption remain open.
+Next: close these caller defects, connect the accepted slices, then inspect bounded
+representative song outputs and their cost before scaling. The existing benchmark
+exposed translation weaknesses and does not qualify a broad translation pass.
+No further provider calls or song-content releases have occurred during this
+integration check. Uncommitted changes are not completion or deployment evidence.
 
 The owner reconfirmed this full goal and requested an exhaustive task list on
 23 October. The existing goal remains active; this document is the maintained

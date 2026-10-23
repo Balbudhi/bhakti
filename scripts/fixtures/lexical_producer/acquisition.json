@@ -1,0 +1,9 @@
+[
+  {
+    "query": "वज्र",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%B5%E0%A4%9C%E0%A5%8D%E0%A4%B0&searchhws=yes&matchtype=exact",
+    "path": "witnesses/a7a547149b8ec4a55da03a1e5a14bd5c2c6363c1e93306e56360492fd8679148.html",
+    "sha256": "a7a547149b8ec4a55da03a1e5a14bd5c2c6363c1e93306e56360492fd8679148",
+    "status": "fetched"
+  }
+]

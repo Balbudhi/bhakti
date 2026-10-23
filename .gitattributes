@@ -1,2 +1,3 @@
 # Preserve acquired HTML witness bytes and their recorded SHA-256 identities.
 scripts/fixtures/dictionary_corpus/witnesses/*.html -whitespace
+scripts/fixtures/lexical_producer/witnesses/*.html -whitespace

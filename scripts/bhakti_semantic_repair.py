@@ -229,7 +229,7 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
     def read(name):
         return snapshots.get(name) if snapshots is not None else pipeline.read_packet(packet_dir / name)
     support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
-    policy = pipeline.semantic_stage_policy(options)
+    policy = pipeline.semantic_stage_policy(options, stage='gloss')
     glosses = read('04-glosses.json')
     gloss_inputs = {'lines': lines, 'languages': languages}
     identities = {pipeline.text_stage_fingerprint('gloss', options.model, gloss_inputs, policy)}
@@ -243,13 +243,18 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
             or pipeline.fresh_gloss_contract_errors(lines, glosses.get('packet', {}).get('glosses', []), languages)
             or pipeline.bhakti_lexical_support.support_decision_errors(support, glosses.get('packet', {}).get('glosses', []))):
         return None, None
-    rows = glosses['packet']['glosses']
+    view_options, view_glosses = pipeline.bhakti_lexical_producer.prepare_translation(
+        packet_dir.parent.parent, {'packet': {'verified_lines': lines, 'metadata': {'languages': languages},
+            'performance_order': source_context.get('performance_order', [])}}, glosses, options)
+    rows = view_glosses['packet']['glosses']
+    support = pipeline.bhakti_lexical_support.prepare_options(view_options, lines, languages)
+    policy = pipeline.semantic_stage_policy(view_options)
     provided = pipeline.supplied_translation(job)
     translation_languages = job.get('languages', languages)
-    current_inputs = pipeline.translation_stage_inputs(lines, rows, provided, translation_languages, options,
+    current_inputs = pipeline.translation_stage_inputs(lines, rows, provided, translation_languages, view_options,
         performance_order=source_context.get('performance_order', []))
     identities = {pipeline.text_stage_fingerprint('translation', options.model, current_inputs, policy)}
-    if no_support and not current_inputs['reading_context_evidence']:
+    if no_support and pipeline.bhakti_lexical_producer.settings(options) is None and not current_inputs['reading_context_evidence']:
         historical_inputs = {'lines': lines, 'glosses': rows, 'provided_translation': provided,
                              'languages': translation_languages}
         identities.update(prior_fingerprints(pipeline, 'translation', historical_inputs, options))
@@ -321,13 +326,46 @@ def _bounded_ready():
     return bool(os.environ.get('BHAKTI_API_RUN_LEDGER')) and math.isfinite(amount) and amount > 0
 
 
+
+def derived_support_errors(pipeline, song_dir, audited, glosses, translations, options):
+    lines = audited['packet']['verified_lines']
+    languages = audited['packet'].get('metadata', {}).get('languages')
+    if 'automatic_lexical_feedback' in translations:
+        options = copy.copy(options)
+        feedback = translations['automatic_lexical_feedback']
+        errors = issue_errors(lines, glosses['packet']['glosses'], feedback)
+        if errors:
+            raise RuntimeError('accepted lexical lookup feedback invalid: ' + str(errors[:3]))
+        options.semantic_repair_feedback = copy.deepcopy(feedback)
+    view_options, view = pipeline.bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
+    support = pipeline.bhakti_lexical_support.prepare_options(view_options, lines, languages)
+    return pipeline.bhakti_lexical_support.support_decision_errors(
+        support, view['packet']['glosses'], translations['packet']['translations'])
+
+
+def validated_gloss_seed(pipeline, glossary, receipt, source_identity, glossary_identity, lines, languages):
+    """Revalidate the immutable glossary snapshot authorized by prior acceptance."""
+    manifest = receipt.get('manifest', {})
+    if (receipt.get('source_gloss_identity') != glossary_identity
+            or manifest.get('status') != 'accepted' or manifest.get('version') != VERSION
+            or manifest.get('source_sha256') != source_identity
+            or manifest.get('gloss_sha256') != digest(glossary)
+            or receipt.get('prior_run_id') != manifest.get('run_id')):
+        raise RuntimeError('accepted glossary seed receipt mismatch')
+    errors = pipeline.fresh_gloss_contract_errors(lines, glossary['packet']['glosses'], languages)
+    errors += issue_errors(lines, glossary['packet']['glosses'], receipt.get('automatic_lexical_feedback', []))
+    if errors:
+        raise RuntimeError('accepted glossary seed violates contract: ' + str(errors[:3]))
+    return copy.deepcopy(glossary)
+
+
 def complete(pipeline, song_dir, audited, job, options):
     packet_dir = song_dir / '.transcription/pipeline'
     state_path = packet_dir / 'semantic-repair-state.json'
     prior_state = pipeline.read_packet(state_path) or {}
     state = dict(prior_state)
     state['status'] = 'in-progress'
-    pipeline.semantic_write_json(state_path, state)
+    new_run_claimed = False
     lines = audited.get('packet', {}).get('verified_lines', [])
     languages = audited.get('packet', {}).get('metadata', {}).get('languages')
     try:
@@ -349,7 +387,33 @@ def complete(pipeline, song_dir, audited, job, options):
         order = getattr(options, 'semantic_performance_order', evidence['performance_order'])
         if order != evidence['performance_order']:
             identity_inputs['reading_performance_order'] = order
+        preautomatic_identity = digest(identity_inputs)
+        automatic = pipeline.bhakti_lexical_producer.configuration_identity(options)
+        glossary_inputs = copy.deepcopy(identity_inputs)
+        if automatic is not None:
+            identity_inputs['policy'] = {**policy, 'automatic_lexical': automatic}
+            glossary_inputs['policy'] = {**policy, 'automatic_lexical':
+                {key: automatic[key] for key in ('version', 'max_queries')}}
+        glossary_identity = digest(glossary_inputs)
         identity = digest(identity_inputs)
+        accepted_gloss = None
+        accepted_gloss_receipt = None
+        durable_seed = packet_dir / 'semantic-repair' / identity / 'adopted-seeds.json'
+        if (prior_state.get('status') == 'accepted' and prior_state.get('run_id') != identity
+                and not durable_seed.exists()):
+            previous_manifest = pipeline.read_packet(packet_dir / 'semantic-acceptance.json') or {}
+            if (previous_manifest.get('source_gloss_identity') == glossary_identity
+                    or (automatic is not None and prior_state.get('run_id') == preautomatic_identity)):
+                previous_gloss = pipeline.read_packet(packet_dir / '04-glosses.json')
+                previous_translation = pipeline.read_packet(packet_dir / '05-translation.json')
+                # Verify the old pair before moving the required marker to the new run.
+                require_acceptance(pipeline, packet_dir, previous_gloss, previous_translation,
+                                   audited=audited, accepted_state=prior_state)
+                accepted_gloss_receipt = {'source_gloss_identity': glossary_identity,
+                    'prior_run_id': prior_state['run_id'], 'manifest': previous_manifest,
+                    'automatic_lexical_feedback': copy.deepcopy(previous_translation.get('automatic_lexical_feedback', []))}
+                accepted_gloss = validated_gloss_seed(pipeline, previous_gloss, accepted_gloss_receipt,
+                    digest(evidence), glossary_identity, lines, languages)
         if prior_state.get('run_id') == identity:
             state = dict(prior_state)
             if state.get('status') == 'blocked':
@@ -367,6 +431,12 @@ def complete(pipeline, song_dir, audited, job, options):
         local.semantic_performance_order = order
         local.semantic_source_identity = digest(evidence)
         local.semantic_baseline = baseline
+        if accepted_gloss is not None:
+            # Persist the validated prior glossary before either mutable marker
+            # can stop identifying the old accepted pair. Resume rechecks receipt.
+            payload = {'run_id': identity, 'artifacts': {'04-glosses.json': accepted_gloss},
+                       'accepted_gloss_receipt': accepted_gloss_receipt}
+            pipeline.semantic_write_json(durable_seed, {'payload': payload, 'sha256': digest(payload)})
         marker = {'version': VERSION, 'run_id': identity}
         pipeline.semantic_write_json(packet_dir / 'semantic-repair-required.json', marker)
         if state.get('status') == 'accepted':
@@ -375,12 +445,13 @@ def complete(pipeline, song_dir, audited, job, options):
             require_acceptance(pipeline, packet_dir, glosses, translations, audited=audited, accepted_state=state)
             errors = pipeline.fresh_gloss_contract_errors(lines, glosses['packet']['glosses'], languages)
             errors += pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], translations['packet']['translations'])
-            errors += pipeline.bhakti_lexical_support.support_decision_errors(support, glosses['packet']['glosses'], translations['packet']['translations'])
+            errors += derived_support_errors(pipeline, song_dir, audited, glosses, translations, options)
             if errors: raise RuntimeError('accepted semantic cache violates contract: ' + str(errors[:3]))
             pipeline.semantic_write_json(state_path, state)
             return glosses, translations
         state['status'] = 'in-progress'
         pipeline.semantic_write_json(state_path, state)
+        new_run_claimed = True
         run_dir = packet_dir / 'semantic-repair' / identity
         job = dict(job)
         if baseline is not None:
@@ -398,20 +469,33 @@ def complete(pipeline, song_dir, audited, job, options):
                 raise RuntimeError('adopted semantic seed identity mismatch')
             snapshots = payload.get('artifacts')
             if not isinstance(snapshots, dict): raise RuntimeError('invalid adopted semantic seed snapshot')
-            seed_gloss, seed_translation = reusable_prior_stages(
-                pipeline, packet_dir, lines, languages, job, options, evidence, snapshots=snapshots)
+            receipt = payload.get('accepted_gloss_receipt')
+            if receipt is not None:
+                seed_gloss = validated_gloss_seed(pipeline, snapshots.get('04-glosses.json'), receipt,
+                    digest(evidence), glossary_identity, lines, languages)
+                seed_translation = None
+            else:
+                seed_gloss, seed_translation = reusable_prior_stages(
+                    pipeline, packet_dir, lines, languages, job, options, evidence, snapshots=snapshots)
             if snapshots.get('04-glosses.json') is not None and seed_gloss is None:
                 raise RuntimeError('adopted gloss no longer satisfies exact input contract')
             if any(snapshots.get(name) for name in ('05-translation.json', 'translation-candidate.json')) and seed_translation is None:
                 raise RuntimeError('adopted translation no longer satisfies exact input contract')
         else:
-            seed_gloss, seed_translation = reusable_prior_stages(
-                pipeline, packet_dir, lines, languages, job, options, evidence)
+            if accepted_gloss is not None:
+                seed_gloss, seed_translation = accepted_gloss, None
+            else:
+                seed_gloss, seed_translation = reusable_prior_stages(
+                    pipeline, packet_dir, lines, languages, job, options, evidence)
             snapshots = {'04-glosses.json': seed_gloss}
             if seed_translation:
                 snapshots[seed_translation['semantic_adoption']['path']] = seed_translation
             payload = {'run_id': identity, 'artifacts': snapshots}
+            if accepted_gloss_receipt is not None:
+                payload['accepted_gloss_receipt'] = accepted_gloss_receipt
             pipeline.semantic_write_json(seed_path, {'payload': payload, 'sha256': digest(payload)})
+        # Retained lookup obligations are not renewed translation objections.
+        local.automatic_lexical_feedback = copy.deepcopy(payload.get('accepted_gloss_receipt', {}).get('automatic_lexical_feedback', []))
         maximum = min(2, max(0, int(getattr(options, 'semantic_repair_rounds', 2))))
         while True:
             call_timeout(local)
@@ -426,6 +510,12 @@ def complete(pipeline, song_dir, audited, job, options):
                 previous_translation = pipeline.read_packet(previous / 'translation-ready.json')
                 if not previous_gloss or not previous_translation:
                     raise RuntimeError('repair predecessor evidence missing')
+                if automatic is not None:
+                    inherited = previous_translation.get('automatic_lexical_feedback')
+                    invalid = issue_errors(lines, previous_gloss['packet']['glosses'], inherited)
+                    if invalid:
+                        raise RuntimeError('repair predecessor lookup requirements invalid: ' + str(invalid[:3]))
+                    local.automatic_lexical_feedback = copy.deepcopy(inherited)
             referenced = {ref['line_id'] for issue in feedback for ref in issue.get('references', [])}
             referenced.update(item for issue in feedback for item in issue['target_line_ids'])
             local.semantic_prior_gloss = [row for row in previous_gloss['packet']['glosses'] if row['id'] in referenced] if previous_gloss else []
@@ -456,15 +546,30 @@ def complete(pipeline, song_dir, audited, job, options):
                 errors = pipeline.fresh_gloss_contract_errors(lines, glosses['packet']['glosses'], languages)
                 if errors: raise RuntimeError('gloss_contract_hold: ' + str(errors[:3]))
                 pipeline.semantic_write_json(ready_path, glosses)
+            lookup_feedback = []
+            translation_inputs = {'run': identity, 'round': number, 'gloss': glosses,
+                                  'feedback': feedback, 'previous_translation': previous_translation}
+            if automatic is not None:
+                # Requirements survive resolved objections and are checkpointed
+                # with the candidate, before the next round can be claimed.
+                lookup_feedback = copy.deepcopy(list({digest(item): item for item in
+                    local.automatic_lexical_feedback + feedback}.values()))
+                invalid = issue_errors(lines, glosses['packet']['glosses'], lookup_feedback)
+                if invalid:
+                    raise RuntimeError('lexical lookup requirements invalid: ' + str(invalid[:3]))
+                translation_inputs['automatic_lexical_feedback'] = lookup_feedback
             translation_path = round_dir / 'translation-ready.json'
             translations = pipeline.read_packet(translation_path)
-            expected_translation_identity = digest({'run': identity, 'round': number, 'gloss': glosses,
-                                                   'feedback': feedback, 'previous_translation': previous_translation})
+            expected_translation_identity = digest(translation_inputs)
             if translations and translations.get('semantic_request_identity') != expected_translation_identity:
                 raise RuntimeError('translation cache identity mismatch')
+            if translations and automatic is not None and translations.get('automatic_lexical_feedback') != lookup_feedback:
+                raise RuntimeError('translation cache lookup requirements mismatch')
             if not translations and number == 0 and seed_translation and seed_translation.get('semantic_adoption', {}).get('accepted'):
                 translations = seed_translation
                 translations['semantic_request_identity'] = expected_translation_identity
+                if automatic is not None:
+                    translations['automatic_lexical_feedback'] = copy.deepcopy(lookup_feedback)
                 pipeline.semantic_write_json(translation_path, translations)
             if not translations:
                 local.semantic_seed_translation = seed_translation if number == 0 else None
@@ -472,10 +577,13 @@ def complete(pipeline, song_dir, audited, job, options):
                 local.semantic_previous_translations = previous_translation['packet']['translations'] if number else None
                 translations = pipeline.translate(round_dir, audited, glosses, job, local, candidate_only=True)
                 translations['semantic_request_identity'] = expected_translation_identity
+                if automatic is not None:
+                    translations['automatic_lexical_feedback'] = copy.deepcopy(lookup_feedback)
                 pipeline.semantic_write_json(translation_path, translations)
             rows = translations['packet']['translations']
             assert_baseline(baseline, rows)
             errors = pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], rows)
+            errors += derived_support_errors(pipeline, round_dir, audited, glosses, translations, local)
             issues = []
             for row in rows:
                 review = row.get('independent_review', {})
@@ -500,7 +608,7 @@ def complete(pipeline, song_dir, audited, job, options):
                 pipeline.semantic_write_json(packet_dir / 'semantic-acceptance.json', {
                     'version': VERSION, 'status': 'accepted', 'run_id': identity,
                     'gloss_sha256': digest(glosses), 'translation_sha256': digest(translations),
-                    'source_sha256': digest(evidence)})
+                    'source_sha256': digest(evidence), 'source_gloss_identity': glossary_identity})
                 state['status'] = 'accepted'; state.pop('reason', None)
                 pipeline.semantic_write_json(state_path, state)
                 return glosses, translations
@@ -518,6 +626,10 @@ def complete(pipeline, song_dir, audited, job, options):
             state['rounds_used'] = number + 1
             pipeline.semantic_write_json(state_path, state)
     except Exception as exc:
+        # A failed read-only preflight must not destroy valid prior acceptance.
+        # Its files are revalidated on every retry; restored evidence can resume.
+        if prior_state.get('status') == 'accepted' and not new_run_claimed:
+            raise
         state['status'] = 'blocked'; state['reason'] = str(exc)
         pipeline.semantic_write_json(state_path, state)
         raise

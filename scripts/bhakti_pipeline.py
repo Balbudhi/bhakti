@@ -37,6 +37,7 @@ from typing import Any
 import process_song_gemini as gemini
 import gloss_policy
 import bhakti_lexical_support
+import bhakti_lexical_producer
 import bhakti_translation_policy
 import bhakti_semantic_repair
 import editorial_baselines
@@ -108,8 +109,15 @@ def complete_semantics(song_dir, audited, job, options):
     return bhakti_semantic_repair.complete(sys.modules[__name__], song_dir, audited, job, options)
 
 
-def semantic_stage_policy(options):
+def semantic_stage_policy(options, *, stage=None):
     policy = translation_policy_payload()
+    automatic = bhakti_lexical_producer.configuration_identity(options)
+    if automatic is not None:
+        if stage == 'gloss':
+            automatic = {key: automatic[key] for key in ('version', 'max_queries')}
+        policy = {**policy, 'automatic_lexical': automatic}
+    if getattr(options, 'automatic_lexical_identity', None):
+        policy = {**policy, 'automatic_lexical_materialized': options.automatic_lexical_identity}
     support = getattr(options, 'semantic_lexical_support', None)
     if support is not None:
         policy = {**policy, 'lexical_support': bhakti_lexical_support.content_digest(support)}
@@ -3282,13 +3290,18 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
     lines = audited["packet"].get("verified_lines", [])
     languages = audited["packet"].get("metadata", {}).get("languages")
     support = bhakti_lexical_support.prepare_options(options, lines, languages)
-    policy = semantic_stage_policy(options)
+    policy = semantic_stage_policy(options, stage='gloss')
+    def glossary_errors(target_lines, rows, langs):
+        return (fresh_gloss_contract_errors(target_lines, rows, langs)
+                + bhakti_lexical_producer.fresh_proposal_errors(target_lines, rows, langs, options)
+                + bhakti_lexical_support.support_decision_errors(
+                    bhakti_lexical_support.project_support(support, [line['id'] for line in target_lines]), rows))
     fingerprint = text_stage_fingerprint("gloss", options.model,
                                          {"lines": lines, "languages": languages}, policy)
     existing = read_packet(target)
     if (existing and existing.get("fingerprint") == fingerprint and not options.force
             and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-            and not fresh_gloss_contract_errors(lines, existing.get("packet", {}).get("glosses", []), languages)
+            and not glossary_errors(lines, existing.get("packet", {}).get("glosses", []), languages)
             and not bhakti_lexical_support.support_decision_errors(support, existing.get("packet", {}).get("glosses", []))):
         return existing
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
@@ -3307,7 +3320,7 @@ Do not collapse South Asian social terminology into the single English word “c
 
 Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even when a concept is listed in the registry. A matching `concept_key` may identify a concept for bookkeeping; it does not require IAST in English. Set `preserve_in_english=false` for newly reconstructed glosses. `preserve_in_english=true` is reserved for explicitly supplied, locked English that retains that concept; no locked English is supplied at this gloss stage. Proper names are separate from concept preservation: retain genuine names in English and explain their evidenced identity or relationship in the hover. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a divine epithet, explain its operative meaning rather than merely spelling the same title again. Build a local glossary while processing this song: when the same displayed token recurs in the same grammatical and devotional role, reuse its most specific established explanation verbatim. A changed explanation is allowed only when the local syntax or imagery materially changes; say why in that line's grammar note. In particular, bare “illusion” is not an adequate contextual explanation for `māyā`. For ordinary words and proper names, set `concept_key` to the empty string and `preserve_in_english=false`. Do not invent new registry entries. Genuine unresolved source or semantic conflict belongs in uncertainty.
 
-{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'gloss')}
+{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'gloss')}{bhakti_lexical_producer.gloss_prompt(options, batch)}
 
 For every lexical word, return exactly one sense_decisions item in word-index order.
 Copy word_index and roman from tokens in COMPACT LEXICAL EVIDENCE.
@@ -3349,6 +3362,7 @@ Return strict JSON:
             "sense_decisions": bhakti_translation_policy.sense_decision_schema()},
         "required": ["id", "word_glosses", "semantic_frame", "grammar_note", "uncertainty", "sense_decisions"], "additionalProperties": False}}},
         "required": ["glosses"], "additionalProperties": False}
+    schema = bhakti_lexical_producer.gloss_schema(schema, options)
     # Gloss packets contain a word map and eight-field semantic frame per
     # source line.  Above forty lines the single structured response becomes
     # needlessly large and can stall before producing a recoverable cache.
@@ -3384,7 +3398,7 @@ Return strict JSON:
                     and cached.get("fingerprint") == batch_identity and not options.force):
                 cached_rows = cached.get("response", {}).get("packet", {}).get("glosses", [])
                 if (cached.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-                        and not fresh_gloss_contract_errors(batch, cached_rows, languages)):
+                        and not glossary_errors(batch, cached_rows, languages)):
                     return cached
 
             def request(target_lines: list[dict[str, Any]], absolute_start: int, label: str) -> dict[str, Any]:
@@ -3408,7 +3422,7 @@ Return strict JSON:
                 returned = [row.get("id") for row in response["packet"].get("glosses", [])]
                 if returned != target_ids:
                     stage_quality_failure(options, f"gloss batch {label} returned IDs out of order or incomplete")
-                mapping_errors = fresh_gloss_contract_errors(target_lines, response["packet"]["glosses"], languages)
+                mapping_errors = glossary_errors(target_lines, response["packet"]["glosses"], languages)
                 if mapping_errors:
                     stage_quality_failure(options, f"gloss batch {label} violates surface-token mapping: {mapping_errors[:3]}")
                 return response
@@ -3424,7 +3438,7 @@ Return strict JSON:
                     if not (child_packet and child_packet.get("target_ids") == child_ids
                             and child_packet.get("fingerprint") == child_identity
                             and child_packet.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
-                            and not fresh_gloss_contract_errors(child, child_packet.get("response", {}).get("packet", {}).get("glosses", []), languages)
+                            and not glossary_errors(child, child_packet.get("response", {}).get("packet", {}).get("glosses", []), languages)
                             and not options.force):
                         child_packet = {
                             "target_ids": child_ids,
@@ -3454,7 +3468,7 @@ Return strict JSON:
                                            for row in packet["response"]["packet"]["glosses"]]},
                   "batch_responses": packets, "gloss_contract_version": GLOSS_CONTRACT_VERSION,
                   "resolved_model": options.model}
-    errors = fresh_gloss_contract_errors(lines, result.get("packet", {}).get("glosses", []), languages)
+    errors = glossary_errors(lines, result.get("packet", {}).get("glosses", []), languages)
     errors.extend(bhakti_lexical_support.support_decision_errors(support, result.get("packet", {}).get("glosses", [])))
     if errors:
         stage_quality_failure(options, f"gloss output violates source contract: {errors[:3]}")
@@ -3792,7 +3806,7 @@ Check that each English segment uses the same contextual sense as the gloss at i
 
 {bhakti_translation_policy.guidance([item["source"] for item in target_evidence], languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", []))}
 
-{bhakti_lexical_support.prompt(support, [item['source']['id'] for item in target_evidence], 'review')}{bhakti_semantic_repair.REVIEW_GUIDANCE}
+{bhakti_lexical_support.prompt(support, [item['source']['id'] for item in target_evidence], 'review')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_semantic_repair.REVIEW_GUIDANCE}
 
 Set passes=false for lost meaning, changed agency/image, or unsupported additions. Return these IDs once in order. Strict JSON only.
 
@@ -3881,6 +3895,7 @@ LOCKED HUMAN TRANSLATION (or none):
 
 
 def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace, *, candidate_only: bool = False) -> dict[str, Any]:
+    options, glosses = bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
     target = song_dir / ".transcription" / "pipeline" / "05-translation.json"
     lines = audited['packet'].get('verified_lines', [])
     gloss_rows = glosses['packet'].get('glosses', [])
@@ -3935,7 +3950,7 @@ For each line, reason in this order before choosing the final English:
 5. Make only the smallest grammatical adjustments needed for intelligible English. Prefer the source's transparent spatial vocabulary (“from the inside”) over a smoother intensifying substitute (“deep within”) unless depth is lexically present. Literal and poetic force outrank smoothness.
 6. Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even for registry-listed concepts. A `concept_key` is bookkeeping, not an instruction to leave the term untranslated. Retain a concept in IAST only when explicitly supplied locked English does so; a legacy `preserve_in_english=true` flag alone cannot override this rule. Retain genuine proper names, whose clickable gloss must explain their evidenced identity or relationship. The sense used in every English segment must match the chosen primary meaning at its linked word indices, including compounds and inflections; supported alternatives remain separately explained in grammar notes.
 
-{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}
+{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}{bhakti_lexical_producer.diagnostics_prompt(options)}
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list. Every source word index must appear in at least one segment. Map particles, postpositions, tense/aspect, negation, modality, and honorifics to the English phrase they help create rather than leaving their source index uncovered.
 

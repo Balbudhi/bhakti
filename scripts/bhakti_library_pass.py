@@ -834,6 +834,9 @@ def _execute_inventory(root: Path, inventory: dict, state_dir: Path, options) ->
         'max_calls': options.max_calls, 'model': options.model, 'pro_model': options.pro_model,
         'source_reuse_maps': reuse_identity,
         'inputs': {row['slug']: row['fingerprints']['all'] for row in rows}}
+    automatic = pipeline.bhakti_lexical_producer.configuration_identity(options)
+    if automatic is not None:
+        identity['automatic_lexical'] = automatic
     support_packets = getattr(options, 'lexical_support_packets', {})
     if not isinstance(support_packets, dict) or set(support_packets) - {row['slug'] for row in rows}:
         raise ValueError('lexical support packets must name selected songs')
