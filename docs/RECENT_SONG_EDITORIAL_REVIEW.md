@@ -48,3 +48,9 @@ All 12 final readers pass the song contract, exact source/order/timing compariso
 For subsequent automated work, review the entire English verse after applying line-level edits, including pickups and repeated variants. Verify who performs each action, modifier scope, purpose clauses, compound relations and every concrete image. Reconcile popup sense and displayed meaning together. Reject improvements that merely replace literal imagery with conventional devotional phrasing. Existing public wording is the input to selective repair; do not regenerate from an older transcription cache and overwrite these reviewed edits.
 
 Per-reader original/final snapshots and exact field changes are retained privately under `.transcription/editorial-review-20261022/`. The active whole-library repair task remains open.
+
+## Follow-up: complete Kōḷaṟu sentences
+
+A further read found that the earlier correction still left the opening Lord-subject descriptions without a complete predicate in several stanzas. All ten causal openings now complete the entry clause and connect its consequence with “therefore.” This preserves the causal relation of `pukunta ataṉāl` without pretending the Tamil participle itself is finite. The fifth stanza now gives its fear predicate an explicit grammatical subject; two objectless “afflict” clauses use “cause harm.”
+
+The follow-up changes 18 English fields, three matching glosses and three grammar notes. Two reviewers read all 49 definitions and all 11 complete resulting verses. Source script, Romanization, source-word mapping, metadata, performance order and timings remain exact. The 390px and 1440px reader checks show no overflow; the causal popup matches the displayed connective. All 49 seek controls reach their retained timestamps. This verifies interaction, not a fresh listening certification. Original and final evidence is retained under `.transcription/editorial-causal-repair-20261022/`.

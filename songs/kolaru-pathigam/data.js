@@ -231,7 +231,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mācaṟu tiṅkaḷ kaṅkai muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{4:having adorned}{3: His crown with}{0: the spotless}{1: moon}{2: and Gaṅgā,}{7: because}{6: He entered}{4: into my}{5: heart,}",
+    "english": "{4:having adorned}{3: His crown with}{0: the spotless}{1: moon}{2: and Gaṅgā,}{6: entered}{4: into my}{5: heart;}{7: therefore,}",
     "words": [
       {
         "roman": "mācaṟu",
@@ -283,7 +283,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Sandhi splitting across whitespace tokens: muṭimēl split as muṭimē + laṇinteṉ (l + aṇintu + eṉ). Causal postposition ataṉāl governs the subsequent strophes."
+    "grammarNote": "Sandhi splitting across whitespace tokens: muṭimēl split as muṭimē + laṇinteṉ (l + aṇintu + eṉ). Causal postposition ataṉāl links this entry to the following consequences within the stanza. The English presents the entry as a complete clause followed by therefore; this expresses the same causal relation without treating pukunta as a finite Tamil verb."
   },
   "v1-l3": {
     "source": "ஞாயிறு திங்கள் செவ்வாய் புதன் வியாழன் வெள்ளி சனி பாம்பிரண்டும் உடனே",
@@ -345,7 +345,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ñāyiṟu tiṅkaḷ cevvāy putaṉ viyāḻaṉ veḷḷi caṉi pāmpiraṇṭum uṭaṉē",
-    "english": "{0:Sun,}{1: Moon,}{2: Mars,}{3: Mercury,}{4: Jupiter,}{5: Venus,}{6: Saturn,}{7: and both serpents}{8: together,}",
+    "english": "{0:Sun,}{1: Moon,}{2: Mars,}{3: Mercury,}{4: Jupiter,}{5: Venus,}{6: Saturn,}{7: and both serpents}{8: together}",
     "words": [
       {
         "roman": "ñāyiṟu",
@@ -657,7 +657,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "poṉpoti mattamālai puṉalcūṭi vanteṉ uḷamē pukunta ataṉāl",
-    "english": "{2:wearing}{1: a garland of datura flowers}{0: with gold within}{2: and the waters,}{6: because}{3: He came}{5: and entered}{3: into my}{4: heart,}",
+    "english": "{2:wearing}{1: a garland of datura flowers}{0: with gold within}{2: and the waters,}{3: He came}{5: and entered}{3: into my}{4: heart;}{6: therefore,}",
     "words": [
       {
         "roman": "poṉpoti",
@@ -703,7 +703,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "poṉpoti combines poṉ (gold) and poti (contain, enclose), describing the datura flowers. The image is gold within the flowers; pollen is not named. puṉalcūṭi = puṉal + cūṭi; vanteṉ = vantu + eṉ. The final causal phrase links to the following stanza predicate."
+    "grammarNote": "poṉpoti combines poṉ (gold) and poti (contain, enclose), describing the datura flowers. The image is gold within the flowers; pollen is not named. puṉalcūṭi = puṉal + cūṭi; vanteṉ = vantu + eṉ. The final causal phrase links to the following stanza predicate. The English presents the entry as a complete clause followed by therefore; this expresses the same causal relation without treating pukunta as a finite Tamil verb."
   },
   "v2-l3": {
     "source": "ஒன்பதொ டொன்றொடேழு பதினெட்டொடாறும் உடனாய நாள்க ளவைதாம்",
@@ -1107,7 +1107,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "murukalar koṉṟai tiṅkaḷ muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{4:having adorned}{3: His crown with}{0: fragrant blooming}{1: golden shower blossoms}{2: and the crescent moon,}{7: because}{6: He entered}{4: into my}{5: heart,}",
+    "english": "{4:having adorned}{3: His crown with}{0: fragrant blooming}{1: golden shower blossoms}{2: and the crescent moon,}{6: He entered}{4: into my}{5: heart;}{7: therefore,}",
     "words": [
       {
         "roman": "murukalar",
@@ -1509,7 +1509,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "natiyoṭu koṉṟaimālai muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{3:having adorned}{2: His crown with}{0: the river}{1: and a garland of golden shower blossoms,}{6: because}{5: He entered}{3: into my}{4: heart,}",
+    "english": "{3:having adorned}{2: His crown with}{0: the river}{1: and a garland of golden shower blossoms,}{5: entered}{3: into my}{4: heart;}{6: therefore,}",
     "words": [
       {
         "roman": "natiyoṭu",
@@ -1611,7 +1611,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kotiyuṟu kālaṉ aṅki namaṉōṭu tūtar koṭunōyka ḷāṉa palavum",
-    "english": "{0:wrathful}{1: Death,}{2: fire,}{3: Yama along with his}{4: messengers,}{6,7: and all the many}{5: severe afflictions,}",
+    "english": "{0:wrathful}{1: Death,}{2: fire,}{3: Yama along with his}{4: messengers,}{6,7: and all the many}{5: severe afflictions}",
     "words": [
       {
         "roman": "kotiyuṟu",
@@ -1947,7 +1947,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuñjiruḷ vaṉṉi koṉṟai muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{4:having adorned}{3: His crown with}{1: Indian mesquite}{2: and golden shower blossoms,}{7: because}{6: He entered}{4: my}{5: heart}{0: in the darkness of sleep,}",
+    "english": "{4:having adorned}{3: His crown with}{1: Indian mesquite}{2: and golden shower blossoms,}{6: entered}{4: my}{5: heart}{0: in the darkness of sleep;}{7: therefore,}",
     "words": [
       {
         "roman": "tuñjiruḷ",
@@ -2043,7 +2043,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "veñciṉa avuṇarōṭum urumiṭiyum miṉṉum mikaiyāṉa pūtamavaiyum",
-    "english": "{1:Along with }{0:fiercely wrathful }{1:demons, }{2:roaring thunder, }{3:lightning, }and {5:those }{4:formidable }{5:elemental spirits,}",
+    "english": "{2:roaring thunder, }{3:lightning, }and {5:those }{4:formidable }{5:elemental spirits, }{1:along with }{0:fiercely wrathful }{1:demons,}",
     "words": [
       {
         "roman": "veñciṉa",
@@ -2145,7 +2145,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "añciṭum nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:they shrink in dread }and are {1:good, }{2:good}—{3:they }are {4:good, }{5:good}, {8:exceedingly }so for {6,7:His devotees.}",
+    "english": "{0:shrink in dread }and are {1:good, }{2:good}—{3:they }are {4:good, }{5:good}, {8:exceedingly }so for {6,7:His devotees.}",
     "words": [
       {
         "roman": "añciṭum",
@@ -2355,7 +2355,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāṇmalar vaṉṉi koṉṟai naticūṭi vanteṉ uḷamē pukunta ataṉāl",
-    "english": "{3:wearing }{0:fresh blossoms, }{1:Indian mesquite, }{2:golden shower, }{3:and the river, }{7:because }{4:He came }{6:and entered }{4:my }{5:very heart,}",
+    "english": "{3:wearing }{0:fresh blossoms, }{1:Indian mesquite, }{2:golden shower, }{3:and the river, }{4:came }{6:and entered }{4:my }{5:very heart; }{7:therefore,}",
     "words": [
       {
         "roman": "nāṇmalar",
@@ -2763,7 +2763,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oppiḷa matiyum appum muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{2:the waters—}{4:wearing them, }with the {0:peerless young }{1:moon, }{3:upon His crown, }{7:because }{6:He entered }{4:my }{5:very heart,}",
+    "english": "{2:the waters—}{4:wearing them, }with the {0:peerless young }{1:moon, }{3:upon His crown, }{6:entered }{4:my }{5:very heart; }{7:therefore,}",
     "words": [
       {
         "roman": "oppiḷa",
@@ -2871,7 +2871,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "veppoṭu kuḷirum vātam mikaiyāṉa pittum viṉaiyāṉa vantu naliyā",
-    "english": "{0:fever along with }{1:chills, }{2:wind-humor afflictions, }{3:excessive }{4:bile-humor afflictions, }{5:and distresses born of deeds }{7:will not }{6:come }{7:and afflict;}",
+    "english": "{0:fever along with }{1:chills, }{2:wind-humor afflictions, }{3:excessive }{4:bile-humor afflictions, }{5:and distresses born of deeds }{7:will not }{6:come }{7:and cause harm;}",
     "words": [
       {
         "roman": "veppoṭu",
@@ -2917,7 +2917,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "naliyā",
-        "gloss": "will not afflict / will not torment",
+        "gloss": "will not afflict; will not cause harm",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2985,7 +2985,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "appaṭi nalla nalla avai nalla nalla aṭiyā ravarkku mikavē",
-    "english": "{0:Thus they are}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
+    "english": "{0:thus they are}{1: good,}{2: good;}{3: they are}{4: good,}{5: good—}{8:exceedingly so}{6,7: for His devotees.}",
     "words": [
       {
         "roman": "appaṭi",
@@ -3207,7 +3207,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāṇmati vaṉṉi koṉṟai malarcūṭi vanteṉ uḷamē pukunta ataṉāl",
-    "english": "{3:wearing }{0:the radiant moon, }{1:Indian mesquite, }{2:and golden shower }{3:blossoms, }{7:because }{4:He came }{6:and entered }{4:my }{5:very heart,}",
+    "english": "{3:wearing }{0:the radiant moon, }{1:Indian mesquite, }{2:and golden shower }{3:blossoms, }{4:He came }{6:and entered }{4:my }{5:very heart; }{7:therefore,}",
     "words": [
       {
         "roman": "vāṇmati",
@@ -3309,7 +3309,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ēḻkaṭal cūḻilaṅkai araiyaṉta ṉōṭum iṭarāṉa vantu naliyā",
-    "english": "{2:the king }{1:of Laṅkā }{1:surrounded by }{0:seven oceans }{3:along with }{4:all distresses }{6:will not }{5:come }{6:and afflict;}",
+    "english": "{2:the king }{1:of Laṅkā }{1:surrounded by }{0:seven oceans }{3:along with }{4:all distresses }{6:will not }{5:come }{6:and cause harm;}",
     "words": [
       {
         "roman": "ēḻkaṭal",
@@ -3349,7 +3349,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "naliyā",
-        "gloss": "will not afflict / will not torment",
+        "gloss": "will not afflict; will not cause harm",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3639,7 +3639,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "calamaka ḷōṭu erukku muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{4:wearing }{3:upon His crown }{0:the daughter of the waters }{1:along with }{2:crown flowers, }{7:because }{6:He entered }{4:my }{5:very heart,}",
+    "english": "{4:wearing }{3:upon His crown }{0:the daughter of the waters }{1:along with }{2:crown flowers, }{6:entered }{4:my }{5:very heart; }{7:therefore,}",
     "words": [
       {
         "roman": "calamaka",
@@ -4251,7 +4251,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mattamum matiyum nākam muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{7:Because He,}{4: wearing}{0: datura,}{1: the crescent moon,}{2: and the serpent}{3: upon His crest,}{6: entered}{4: my}{5: very heart,}",
+    "english": "{4:wearing}{0: datura,}{1: the crescent moon,}{2: and the serpent}{3: upon His crest,}{6: entered}{4: my}{5: very heart;}{7: therefore,}",
     "words": [
       {
         "roman": "mattamum",
@@ -4297,13 +4297,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "ataṉāl",
-        "gloss": "because of that",
+        "gloss": "because of that; therefore",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Sandhi breaks across tokens: `muṭi mēl` + `aṇintu` + `eṉ` yields surface tokens `muṭimē` and `laṇinteṉ`. Relative participle `pukunta` modifies causal instrumental pronoun `ataṉāl`."
+    "grammarNote": "Sandhi breaks across tokens: `muṭi mēl` + `aṇintu` + `eṉ` yields surface tokens `muṭimē` and `laṇinteṉ`. Relative participle `pukunta` modifies causal instrumental pronoun `ataṉāl`. The English presents the entry as a complete clause followed by therefore; this expresses the same causal relation without treating pukunta as a finite Tamil verb."
   },
   "v10-l3": {
     "source": "புத்தரொ டமணை வாதில் அழிவிக்கும் அண்ணல் திருநீறு செம்மை திடமே திருநீறு செம்மை திடமே திருநீறு செம்மை திடமே",
@@ -4395,7 +4395,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "puttaro ṭamaṇai vātil aḻivikkum aṇṇal tirunīṟu cemmai tiṭamē tirunīṟu cemmai tiṭamē tirunīṟu cemmai tiṭamē",
-    "english": "{4:The exalted Lord’s }{5:sacred ash }{3:defeats }{0:Buddhists }{1:and Jains }{2:in debate—}{6:its goodness }{7:is assured; }{8:the sacred ash’s }{9:goodness }{10:is assured; }{11:the sacred ash’s }{12:goodness }{13:is assured.}",
+    "english": "{4:the exalted Lord’s }{5:sacred ash }{3:defeats }{0:Buddhists }{1:and Jains }{2:in debate—}{6:its goodness }{7:is assured; }{8:the sacred ash’s }{9:goodness }{10:is assured; }{11:the sacred ash’s }{12:goodness }{13:is assured.}",
     "words": [
       {
         "roman": "puttaro",
