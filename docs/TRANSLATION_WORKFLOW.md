@@ -52,6 +52,37 @@ baseline throughout production. A source/gloss conflict is reported separately;
 the engine must not distort grammar to justify rewriting the owner's wording.
 An unflagged song is not automatically correct.
 
+## Private reference comparisons
+
+`benchmark_translation_prompt.py` exercises the production gloss, English and
+independent-review stages against frozen reader snapshots. Preparation is free:
+
+```sh
+python3 scripts/benchmark_translation_prompt.py --output-dir /private/path/benchmark
+```
+
+Paid execution requires an explicit dollar limit, call limit and original run
+lifetime, for example adding `--execute --budget-usd 2.10 --max-calls 8
+--deadline-seconds 900`. These are ceilings, not a quoted song price. The default
+cases are private Koī/Aruṇācala reference generation and historical/corrected
+Rehnā diagnostics. `--cases` selects the recorded cases. Capture actual requests
+and check their reservations before execution; output size and context affect
+cost. This command does not activate paid embeddings.
+
+Outputs remain `not-reviewed` until a separate editorial reading. A model pass
+is not a quality score; an owner/source disagreement is distinct from a bad
+generation. Existing prompt examples overlap some reference images, so these
+are calibration comparisons, not wholly unseen tests. Owner English is never
+published or overwritten by this command.
+
+The run locks concurrent launches, retains raw payment evidence and completed
+stage artifacts, and verifies their hashes before reuse. Changed inputs or
+implementation hold the existing experiment. Unresolved/interrupted execution
+returns nonzero without automatically redispatching; reconcile retained evidence
+before any recovery. Do not delete a ledger or create a new run to retry an
+unknown request. A private candidate or successful wire test is not evidence of
+a completed library repair.
+
 ## Dictionary and embedding evidence
 
 `dictionary_corpus.py` imports original Platts HTML captures and Cologne-derived

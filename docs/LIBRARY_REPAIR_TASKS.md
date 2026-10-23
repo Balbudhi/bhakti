@@ -1,17 +1,182 @@
 # Whole-library repair task
 
-## Current step — 22 October 2026 cost and naming correction
+## Active goal and delivery order — 23 October 2026
+
+Deliver one economical, resumable workflow for both new-song intake and selective
+whole-library repair, qualify its actual translation and audio results, then use
+it to repair the published library and add the identified backlog. The owner's
+latest instructions authorize continuing this work after the explanatory pause.
+An improved component or a successful pilot does not complete this goal.
+
+Current step: implement and review the independently specified boundary,
+benchmark and lexical-evidence changes; finish the existing-source adoption
+design. Boundary application is being checked privately, and independent review
+found benchmark resume/cache defects that must be fixed before paid execution.
+Next: integrate the reviewed changes, run a bounded representative benchmark,
+independently read its outputs, then scale only the qualified operations. Broad
+paid processing has not restarted. Earlier uncommitted content changes remain
+separate from completion or deployment claims.
+
+### Verified progress — 23 October 2026
+
+Published `1f30122b`: 106 contextual English, gloss, grammar and word-link fields
+across 24 existing readers, with independent passage review. Source lyrics,
+romanization, source-word maps, performance order and numeric timings were
+preserved; no owner baseline was changed. Desktop (1280px) and mobile (390px)
+rendering passed, and all 775 displayed line controls reached their stored starts.
+These are wording and UI-control checks, not fresh acoustic timing certification.
+The deployment completed successfully; all 48 live data/HTML files match the
+released commit exactly. Concurrent unrelated UI edits in the worktree were not
+included in this release.
+The 24 readers pass the contract against the committed catalogue. The complete
+working-tree audit still reports six legacy pages and the separate
+`kaise-lagaun-tumse-main-preet` catalogue/tag mismatch; these remain repair work.
+
+The private benchmark now retains frozen readers, actual outputs, reviewable
+comparisons, original deadlines and payment history. Independent code review and
+24 focused tests covered interrupted/resumed execution and missing/tampered
+artifacts. Actual reference generation made six Flash calls for $0.471366:
+Koī preserves the garment image but does not improve owner wording, and its
+stored source/reference agency conflict needs separate audio/source review.
+Aruṇācala is held on material translation choices; independent reading found
+weaker wordplay and syntax. Neither result authorizes an owner rewrite or a
+whole-library quality claim.
+
+The remaining Rehnā diagnostic was isolated with a $0.30/two-call allowance,
+keeping the original experiment's eight-call limit. Its first HTTP worker exited
+without a saved response; the $0.139404 reservation remains unresolved and was
+not replayed. Account usage increased only by the six confirmed calls at the
+latest check: $22.353067036 remaining; task-accounted confirmed spending is
+$2.619542225. Treat the unknown reservation separately from confirmed spending.
+
+Boundary, source-adoption and lexical-support changes are still private review
+work. New boundary activation needs the ordinary CLI's bounded-run setup and a
+guard against cropping audio while retaining old transcript/timing caches.
+Source-cache migration must reuse proven compatible historical requests or hold
+unprovable history without silently paying again. Lexical evidence delivery is
+implemented privately, but the automatic lookup-query producer remains required.
+
+### Required task list
+
+- [x] Record the full objective in the active goal and this maintained task list.
+- [ ] Make initial assessment common to intake and repair. Identify required
+  source, boundary, transcription, order, timing, gloss, English, mapping and
+  metadata work automatically; accept explicit user findings too. Every song
+  receives an outcome. Reuse compatible accepted work; absent historical evidence
+  is not itself a linguistic defect or permission to rewrite a good translation.
+- [ ] Repair automatic start **and end** classification for URL and local intake.
+  Distinguish attached promotion, unrelated speech, film dialogue and another
+  musical recording from the actual performance. Speech, Indian instrumentation,
+  silence or a musical transition alone cannot establish inclusion or exclusion.
+  Preserve devotional invocations, spoken parts belonging to the work,
+  instrumental openings/codas, final syllables and fades. Retain original audio;
+  keep uncertain edges intact with an unresolved status. Test end-only and
+  two-sided trims, offsets, cache identity, interruption and release checks.
+- [ ] Complete the existing-source observation → discrepancy adjudication →
+  guarded source-correction path. Check the whole performance for missing words,
+  repetitions and merges. Use overlapping contextual clips and narrow questions;
+  written witnesses cannot insert unperformed text. Retain uncertainty explicitly.
+- [ ] Complete focused timing recovery. Measure each performed occurrence's
+  first syllable, including responses, pickups and returning refrains. Check
+  repeated-passage identity and neighboring anchors. Preserve resolved regions;
+  a failed region cannot restart whole-song audio processing.
+- [ ] Keep model tasks small: separate hearing, order, timing, sense choice,
+  English and review; request concise answers in manageable contextual units.
+  Start with qualified Flash; escalate the failed unit once through the bounded
+  Pro route. Persist a rare unresolved case for optional human intervention and
+  continue independent songs without repeatedly asking or charging for it.
+- [ ] Read and reuse the Vedanta translation standard and Prakriya's traditional
+  source texts. Cite the actual definition/formation/root passage where relevant;
+  do not depend on the unfinished interpreter. Preserve source form separately
+  from proposed analysis. For inherited Hindi/Punjabi words, distinguish Sanskrit
+  ancestry from attested meaning in the present language and passage.
+- [ ] Research and qualify embeddings against actual Indic/English cases. Compare
+  the configured Google API route with a practical local multilingual option for
+  quality, price, latency, task compatibility and caching. Similarity may inspire
+  candidates and rank evidence; it never selects meaning or proves derivation.
+- [ ] Extend lexical evidence through English selection: source definitions and
+  grammar → plausible English words/phrases → their definitions, register and
+  connotations → passage-specific choice. Retrieve cited alternatives as needed;
+  do not run a large dictionary investigation for every obvious token. Preserve
+  meaningful alternatives without treating them as interchangeable popup senses.
+- [ ] Support deliberate, source-supported English compounds when established
+  words or a short phrase lose necessary meaning. Compare alternatives, read the
+  result for intelligibility and poetic force, and independently review the
+  choice. A Joycean-style coinage is optional, never a forced decoration.
+- [ ] Derive English from the accepted glosses and grammar. Preserve agency,
+  images, relationships, negation, modality, repetition, ambiguity and poetry;
+  repair missing subjects/objects and confusing syntax. Translate ordinary words
+  and concepts contextually, retain genuine proper names with meaningful linked
+  glosses, and keep recurring same-sense choices consistent without global
+  replacements. English phrases, primary glosses and clicked source indices agree.
+- [ ] Repair the existing benchmark before using it as evidence. Use complete
+  contextual passages from locked Koī Hor Nahī and Aruṇācala Akṣaramaṇamālai,
+  known bad translations, and unchanged good controls. Generate private candidates
+  separately from owner originals; never publish an owner rewrite. Offer only
+  independently justified improvements to the owner. Compare faithfulness,
+  grammar, poetry, sense choice and links, with explicit review findings; regex
+  matches or a model flag cannot turn a bad translation into a passing result.
+- [ ] Iterate with measured experiments: freeze inputs and expected distinctions,
+  inspect actual outputs, correct the demonstrated failure, and rerun affected
+  cases. Retain paid responses/caches and compare cost, latency, false changes,
+  misses and unresolved rates before increasing batch size. Use cheap models
+  where quality supports them; do not presume either newer or Pro is better.
+- [ ] Finish independent review and selective repair across the library. Source
+  defects go to audio/source review, sense defects rebuild glosses before English,
+  and English-only defects leave audio intact. Review changes, not just JSON
+  validity. Preserve existing good and supplied translations. Record actual
+  reviewed coverage and unresolved items instead of claiming automatic perfection.
+- [ ] Finish minimal content-derived tags and consistent names, especially Hari,
+  Gurbāṇī, Rāma/Kṛṣṇa/Viṣṇu, Guru and Nirguṇa; remove album-inherited Sāī tags when
+  unsupported. Do not add redundant deity-name tags. Maintain verified Gurū Granth
+  Sāhib passage locations and accurate multi-author credits/notices using the
+  established Śirḍī Sāī āratī presentation and UI style.
+- [ ] Process the recorded backlog and additional recordings from the already
+  authorized singers. Resolve ambiguous titles/recordings from saved intake
+  evidence; avoid duplicate intake and unreviewed uploads. Apply the same quality
+  process and publish accepted results without routine approval requests.
+- [ ] Finish the requested reader/search/player checks: compact tag rows, poets
+  above singers, correct mobile selection, singer filtering, play next/add to end,
+  clear upcoming, and preserved/replayable history. Verify rendering, word links
+  and stored seek behavior in the in-app browser at desktop and 390px mobile.
+- [ ] Generate and publish reviewed changes with exact scoped staging, required
+  structural/audio/trim checks and deployed-byte verification. Keep source/audio
+  truth, translation quality, browser behavior and deployment evidence distinct.
+- [ ] Report actual per-stage spending and remaining balance, successes,
+  unresolved cases and backlog. Use bounded calls/time/money, shared API limits,
+  useful parallelism and dependency-specific caches. Never reset a failed run's
+  spending or invalidate audio because an unrelated English prompt changed.
+
+### Parallel ownership and integration
+
+Parallel assignments cover boundary classification and its actual caller tests
+(`trim_design`); traditional/English lexical evidence and embedding research
+(`lexical_research`); protected-reference benchmark repair (`benchmark_design`);
+and existing-source adoption plus independent benchmark review
+(`source_adoption_design`). They prepare isolated changes and preserve the
+existing working tree. The lead owns the shared pipeline interfaces, design/test
+review, integration, experiment budgets, independent output reading and
+publication.
+
+After those interfaces are reviewed, boundary work and lexical/benchmark work can
+be implemented independently. Semantic benchmark dispatch waits for the evidence
+and caller changes it is testing. Broad translation batches wait for demonstrated
+benchmark quality/cost. Source-dependent corrections wait for their audio evidence;
+independent text/metadata corrections need not wait for one difficult recording.
+Song concurrency remains separate from the shared outbound-request limit.
+
+## Historical checkpoint — 22 October 2026 cost and naming correction
 
 The whole-library goal remains active. The committed catalogue now contains
 265 songs / 6,741 stored definitions; the older counts below are release history.
 The latest published editorial batch changed 72 definitions across 12 readers
 (`c043b7f6`); it did not freshly validate their audio.
 
-Paid processing is stopped while the measured review-payload defect is corrected.
-Account check: $22.95 remaining; $2.02262705 spent today. Priority processing used
-$2.006987 across 23 model calls, embeddings $0.0023958, and the separate Kuṟai
-opening check $0.01324425. The earlier $4 figure was a cap, not the price of a song.
-Do not resume the prepared Pattā timing continuation as a side effect of text work.
+Broad paid processing remains stopped while the semantic reviewer is qualified.
+Account rechecked 23 October 2026 at 03:27 UTC: $22.824433036 remaining;
+recorded task spending $2.148176225. No new paid calls in this continuation.
+The earlier $4 figure was a run cap, not the price of a song. Do not resume
+Pattā's prepared timing continuation as a side effect of text work.
 
 The reviewed naming batch is live in `8b36c963`: 54 English/popup fields across
 nine Gurbāṇī readers, with all nine deployed data files matching reviewed bytes.
