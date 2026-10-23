@@ -17,7 +17,8 @@ run. That account-wide balance is not a task spending attribution. The previous
 uncertain diagnostic reservation remains untouched. Six parsed calls cost
 $0.41264775; no dictionary HTTP or embedding calls ran. All original reader,
 source, timing and owner references remain unchanged. Task-accounted confirmed
-spending is now $3.032189975, separate from the prior $0.139404 unknown reservation.
+spending before the two-row successor was $3.032189975, separate from the prior
+$0.139404 unknown reservation.
 
 Private historical boundary preparation now connects crop, preserved originals,
 source review, timing and changed-context English review into a separate final
@@ -52,6 +53,26 @@ defects. The joined 26 actual-caller tests pass, including required initial
 queries, stale/disabled requests, batched context, honest gaps and unchanged
 resume. These use synthetic responses and do not establish better wording.
 Easy unrequested words remain eligible for contextual interpretation.
+
+The separate popup/frame review correction is now integrated. Review-task
+identity is distinct from writing identity: unchanged, validated paid writing
+can receive a new review without regenerating it. Existing findings survive that
+transition; unknown or unfinished routes cannot be silently replayed. Locked
+English stays exact while independently established popup defects remain
+repairable. The integrated 62 focused caller tests pass; their provider answers
+are synthetic. The independent historical preparation/replay suite also passes
+14 tests. A new source-only, two-row Rehnā comparison stopped after one parsed
+call costing $0.0214965, within $0.50/three text calls plus $0.03/twelve embedding
+calls. No retries, Pro escalation, repair, dictionary HTTP or embeddings ran.
+Explicit evidence request delivery worked: the model returned the ṭhikānā lookup.
+Its four English alternatives contained six distinct lookup words, exceeding the
+validator's aggregate four-word limit. This contract mismatch now needs a bounded
+local solution; replaying the same model call is not that solution. The provisional
+popup says `resting place`, but the frame still adds `only genuine` and `sole true`.
+No writer or independent model review ran, and no public content changed.
+The run is terminal at `/tmp/bhakti-rehna-clause-qualification/live-comparison/`.
+Confirmed task spending after it is $3.053686475, with the earlier unknown
+reservation still separate. Actual dictionary/embedding quality remains unproven.
 
 Explicit lexical support, historical audio-cache compatibility, semantic cache
 reuse, bounded intake and automatic WordNet lookup delivery are integrated.

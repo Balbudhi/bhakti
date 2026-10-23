@@ -85,7 +85,8 @@ def validate_semantic_routes(before, evidence, protected, lines, glosses):
     context = evidence['route_context']
     dependency = evidence['dependency']
 
-    def accepted(purpose, request):
+    def accepted(purpose, request, task_version):
+        request = {**request, **library.pipeline.review_task_identity(task_version)}
         path = routes.unit_state_path(Path(context['route_dir']), context['slug']+':'+purpose,
             source.digest(request), dependency_fingerprint=dependency,
             base_model=context['model'], pro_model=context['pro_model'])
@@ -96,33 +97,23 @@ def validate_semantic_routes(before, evidence, protected, lines, glosses):
 
     audit_path, audit = accepted('current-source-review', {'version': library.VERSION,
         'reader': before, 'policy': context['policy'], 'baseline': protected,
-        'purpose': 'identify-current-defects'})
+        'purpose': 'identify-current-defects'}, pre.get('review_task_version', 0))
     raw_pre = {key: value for key, value in pre.items()
         if key not in {'finding_snapshot', 'finding_journal_path', 'finding_route_state_path'}}
     if str(audit_path) != pre['finding_route_state_path'] or audit['result'] != raw_pre:
         raise ValueError('historical pre-review differs from accepted route evidence')
     finding_context = dict(lines=lines, glosses=glosses, reader_digest=source.digest(before),
         dependency_fingerprint=dependency)
-    journal = library.finding_store.load_snapshot(Path(pre['finding_journal_path']), **finding_context)
+    paths = library.audit_route_paths(Path(context['route_dir']), context['slug'], before,
+        context['policy'], protected, dependency, context['model'], context['pro_model'],
+        task_version=pre.get('review_task_version', 0))
+    journal = library.validate_review_history(paths, Path(pre['finding_journal_path']), finding_context)
     if journal != pre['finding_snapshot']:
         raise ValueError('historical review journal differs from retained findings')
-    # read_unit_cache checks each anchored candidate. Also establish that the
-    # journal contains exactly those observations, including failed attempts.
-    observations = []
-    for index, attempt in enumerate(audit['state']['attempts']):
-        candidate = audit_path.parent/('flash' if index == 0 else 'pro')/'candidate.json'
-        if attempt.get('candidate_sha256') is not None:
-            artifact = json.loads(candidate.read_text())
-            if artifact.get('attempt_id') != attempt['attempt_id']:
-                raise ValueError('historical review attempt identity changed')
-            observations.append(artifact)
-        elif candidate.exists():
-            raise ValueError('historical review has unbound candidate evidence')
-    if [entry['artifact'] for entry in journal['reviews']] != observations:
-        raise ValueError('historical review journal differs from original route history')
     if repaired['post_review'] is not None:
         _, repair = accepted('targeted-semantics', {'version': library.VERSION,
-            'reader': before, 'pre_review': pre, 'policy': context['policy'], 'baseline': protected})
+            'reader': before, 'pre_review': pre, 'policy': context['policy'], 'baseline': protected},
+            repaired['post_review'].get('review_task_version', 0))
         if repair['result'] != {key: value for key, value in repaired.items() if key != 'authorization'}:
             raise ValueError('historical repair differs from accepted route evidence')
 

@@ -818,6 +818,7 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
         float(getattr(options, 'unit_deadline_at', deadline_at)))
     packet_dir = semantic_song / '.transcription/pipeline'
     if not (packet_dir / 'semantic-repair-state.json').exists():
+        legacy_writer = None
         # Exact historical pending effects retain their original attempt identity.
         legacy_state = routes.unit_state_path(route_dir, unit_id, identity,
             dependency_fingerprint=digest(evidence['policy']),
@@ -830,8 +831,11 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
             old = previous['result']
             errors = candidate_errors(old)
             if not errors:
-                return old
-            if errors != ['automatic model-input evidence receipt changed or missing']:
+                if old['translations'].get('review_task_version', 0) == pipeline.REVIEW_TASK_VERSION:
+                    return old
+                legacy_writer = copy.deepcopy(old['translations'])
+                legacy_writer['historical_translation_route'] = str(legacy_state)
+            if errors and errors != ['automatic model-input evidence receipt changed or missing']:
                 raise RuntimeError('historical semantic acceptance invalid: ' + str(errors[:3]))
         # Match the source-stage fingerprint, not the changed English policy.
         # Route hashes authenticate prior acceptance; source policy/context bind
@@ -859,6 +863,8 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
             glossary = copy.deepcopy(glossary)
             glossary['historical_gloss_route'] = str(path)
             pipeline.semantic_write_json(packet_dir / '04-glosses.json', glossary)
+            if legacy_writer is not None:
+                pipeline.semantic_write_json(packet_dir / 'translation-candidate.json', legacy_writer)
     glosses, translations = pipeline.complete_semantics(semantic_song, audited,
         {'slug': song_dir.name, 'languages': languages}, local)
     # The adapter returns source-producing evidence, not mutable coordinator

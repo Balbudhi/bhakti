@@ -11,8 +11,18 @@ qualify: its first-pass glossaries requested no dictionary lookups, the reviewer
 missed an unsupported popup modifier, and the Gurbāṇī writer was held. Explicit
 lookup obligations and separate popup review are the next demonstrated fixes;
 enabled configuration alone is not evidence that retrieval ran.
-Known lookup targets now use explicit, validated source spans; separate popup
-review and a new actual quality comparison remain pending.
+Known lookup targets now use explicit, validated source spans. Independent review
+now checks each primary popup gloss and semantic frame separately from the final
+English; a good sentence cannot excuse an unsupported popup qualifier. Named
+dictionary citations require supplied matching evidence. A synonym preference
+alone is not a defect. The changed review task invalidates old review acceptance,
+while verified unchanged glossary/writer artifacts can be reused for review only.
+Unfinished or uncertain old calls retain their original accounting and hold.
+The next two-row comparison delivered the explicit lookup request but stopped
+before retrieval: four candidate expressions contained six English lookup words,
+exceeding the aggregate four-word validator limit. It cost $0.0214965 and did not
+qualify. The candidate/lemma budget mismatch is the next demonstrated defect;
+it must be resolved without silently discarding alternatives or blind paid retry.
 Current execution evidence belongs in [the repair task](LIBRARY_REPAIR_TASKS.md).
 
 ## Bounded intake and boundary recovery

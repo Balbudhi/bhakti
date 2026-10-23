@@ -246,34 +246,66 @@ def current_review_errors(artifact: dict, lines: list[dict], glosses: list[dict]
     return [{'kind': 'invalid_review', 'detail': error} for error in errors]
 
 
-def _reconcile_review_history(state_path, journal_path, context, *, active_attempt=None):
-    """Rebuild missing observations from the original attempts, never latest-only."""
+def audit_route_paths(route_dir, slug, reader, policy, baseline, dependency, base_model, pro_model,
+                      *, task_version=None):
+    """Finite exact task compatibility; never scan or rename paid route state."""
+    import bhakti_model_routes as routes
+    version = pipeline.REVIEW_TASK_VERSION if task_version is None else task_version
+    versions = [v for v in pipeline.PRIOR_REVIEW_TASK_VERSIONS if v < version] + [version]
+    return [routes.unit_state_path(route_dir, slug + ':current-source-review',
+        prepare.json_digest({'version': VERSION, 'reader': reader, 'policy': policy,
+            'baseline': baseline, 'purpose': 'identify-current-defects',
+            **pipeline.review_task_identity(v)}), dependency_fingerprint=dependency,
+        base_model=base_model, pro_model=pro_model) for v in versions]
+
+
+def _review_history_observations(state_paths, *, active_attempt=None):
+    import bhakti_model_routes as routes
+    artifacts = []
+    for state_path in state_paths:
+        if not state_path.exists():
+            continue
+        state = routes.read_unit_cache(state_path)['state']
+        # A task change cannot abandon an unfinished paid route. The current
+        # route retains its normal router-owned recovery/escalation behavior.
+        if state_path != state_paths[-1] and state.get('status') != 'accepted':
+            raise routes.RunFatal('prior review task is unfinished; explicit reconciliation required')
+        for index, attempt in enumerate(state.get('attempts', [])):
+            attempt_id = attempt.get('attempt_id')
+            if attempt_id == active_attempt and attempt.get('status') == 'running':
+                continue
+            candidate_path = state_path.parent / ('flash' if index == 0 else 'pro') / 'candidate.json'
+            candidate = read_json(candidate_path)
+            expected = attempt.get('candidate_sha256')
+            if attempt.get('status') == 'transport-failed' and not expected and candidate is None:
+                continue
+            if not expected or not isinstance(candidate, dict):
+                raise routes.RunFatal('prior audit evidence missing or historical candidate is unbound')
+            if prepare.json_digest(candidate) != expected or candidate.get('attempt_id') != attempt_id:
+                raise routes.RunFatal('prior audit candidate identity mismatch')
+            artifacts.append(candidate)
+    return artifacts
+
+
+def validate_review_history(state_paths, journal_path, context):
+    """Read-only closure shared with accepted historical preparation replay."""
     import bhakti_model_routes as routes
     snapshot = finding_store.load_snapshot(journal_path, **context)
-    state = read_json(state_path)
-    if not state:
-        if snapshot['reviews']:
-            raise routes.RunFatal('review journal has no original route history')
-        return snapshot
-    original_attempts = set()
-    for index, attempt in enumerate(state.get('attempts', [])):
-        attempt_id = attempt.get('attempt_id'); original_attempts.add(attempt_id)
-        if attempt_id == active_attempt and attempt.get('status') == 'running':
-            continue
-        candidate_path = state_path.parent / ('flash' if index == 0 else 'pro') / 'candidate.json'
-        candidate = read_json(candidate_path)
-        expected = attempt.get('candidate_sha256')
-        if (attempt.get('status') == 'transport-failed' and not expected and candidate is None
-                and not any(entry['artifact']['attempt_id'] == attempt_id for entry in snapshot['reviews'])):
-            # No review was returned; the router alone owns transport escalation.
-            continue
-        if not expected or not isinstance(candidate, dict):
-            raise routes.RunFatal('prior audit evidence missing or historical candidate is unbound')
-        if (prepare.json_digest(candidate) != expected or candidate.get('attempt_id') != attempt_id):
-            raise routes.RunFatal('prior audit candidate identity mismatch')
-        snapshot = finding_store.record_review(journal_path, candidate, **context)
+    artifacts = _review_history_observations(state_paths)
+    if [entry['artifact'] for entry in snapshot['reviews']] != artifacts:
+        raise routes.RunFatal('finding journal differs from original review route history')
+    return snapshot
+
+
+def _reconcile_review_history(state_path, journal_path, context, *, active_attempt=None, prior_state_paths=()):
+    import bhakti_model_routes as routes
+    snapshot = finding_store.load_snapshot(journal_path, **context)
+    artifacts = _review_history_observations([*prior_state_paths, state_path], active_attempt=active_attempt)
+    original_attempts = {artifact['attempt_id'] for artifact in artifacts}
     if any(entry['artifact']['attempt_id'] not in original_attempts for entry in snapshot['reviews']):
         raise routes.RunFatal('finding journal attempt absent from original route history')
+    for artifact in artifacts:
+        snapshot = finding_store.record_review(journal_path, artifact, **context)
     return snapshot
 
 
@@ -300,14 +332,17 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
     reader_digest = prepare.json_digest(reader)
     policy = pipeline.semantic_stage_policy(options)
     request_identity = prepare.json_digest({'version': VERSION, 'reader': reader,
-        'policy': policy, 'baseline': protected_english, 'purpose': 'identify-current-defects'})
+        'policy': policy, 'baseline': protected_english, 'purpose': 'identify-current-defects',
+        **pipeline.review_task_identity()})
     context = dict(lines=lines, glosses=glosses, reader_digest=reader_digest,
                    dependency_fingerprint=dependency_fingerprint)
     journal_path = Path(workspace) / '.transcription' / 'review-findings' / (
         prepare.json_digest({'reader': reader_digest, 'dependency': dependency_fingerprint}) + '.json')
     state_path = routes.unit_state_path(route_dir, slug + ':current-source-review', request_identity,
         dependency_fingerprint=dependency_fingerprint, base_model=options.model, pro_model=options.pro_model)
-    _reconcile_review_history(state_path, journal_path, context)
+    prior_paths = audit_route_paths(route_dir, slug, reader, policy, protected_english,
+        dependency_fingerprint, options.model, options.pro_model)[:-1]
+    _reconcile_review_history(state_path, journal_path, context, prior_state_paths=prior_paths)
 
     def execute(context_attempt):
         local = route_options(options, context_attempt)
@@ -315,7 +350,7 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
         local.semantic_performance_order = copy.deepcopy(reader['SONG_SEQUENCE'])
         local.semantic_source_identity = dependency_fingerprint
         snapshot = _reconcile_review_history(state_path, journal_path, context,
-                                             active_attempt=context_attempt.attempt_id)
+                                             active_attempt=context_attempt.attempt_id, prior_state_paths=prior_paths)
         local.semantic_pending_findings = finding_store.pending_findings(snapshot)
         observed = {}
         def observe(response, target_ids, label, context_ids):
@@ -356,7 +391,7 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
         artifact = {'reviewPurpose': 'identify-current-defects', 'reader_digest': reader_digest,
                 'dependency_fingerprint': dependency_fingerprint, 'attempt_id': context_attempt.attempt_id,
                 'reviews': reviews, 'issues': issues, 'reviewPackets': packets,
-                'source_lines': lines, 'gloss_rows': glosses}
+                'source_lines': lines, 'gloss_rows': glosses, **pipeline.review_task_identity()}
         # Preserve only packets with extra rows: ordinary target-only responses
         # are already in reviews/reviewPackets. These are evidence, not edit scope.
         context_packets = []
@@ -383,7 +418,7 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
         deadline_at=deadline_at, dependency_fingerprint=dependency_fingerprint,
         base_model=options.model, pro_model=options.pro_model)
 
-    snapshot = _reconcile_review_history(state_path, journal_path, context)
+    snapshot = _reconcile_review_history(state_path, journal_path, context, prior_state_paths=prior_paths)
     return {**accepted, 'finding_snapshot': snapshot, 'finding_journal_path': str(journal_path),
             'finding_route_state_path': str(state_path)}
 
@@ -405,8 +440,11 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
             reader_digest=prepare.json_digest(reader), dependency_fingerprint=dependency_fingerprint)
         snapshot = finding_store.validate_snapshot(snapshot, **context)
         if pre_review.get('finding_journal_path'):
+            paths = audit_route_paths(route_dir, slug, reader, pipeline.semantic_stage_policy(options),
+                protected_english, dependency_fingerprint, options.model, options.pro_model,
+                task_version=pre_review.get('review_task_version', 0))
             current = _reconcile_review_history(Path(pre_review['finding_route_state_path']),
-                Path(pre_review['finding_journal_path']), context)
+                Path(pre_review['finding_journal_path']), context, prior_state_paths=paths[:-1])
             if current != snapshot:
                 raise ValueError('retained findings changed before repair')
         guard.authorize_semantic_candidate(reader, reader, source_lines=lines,
@@ -436,7 +474,7 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
             if ref['line_id'] in issue['target_line_ids']:
                 lexical_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
     request_identity = prepare.json_digest({'version': VERSION, 'reader': reader, 'pre_review': pre_review,
-        'policy': pipeline.semantic_stage_policy(options), 'baseline': protected_english})
+        'policy': pipeline.semantic_stage_policy(options), 'baseline': protected_english, **pipeline.review_task_identity()})
     languages = reader.get('SONG_META', {}).get('languages', [])
 
     def execute(context):
@@ -480,7 +518,7 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
         for row in translations['packet']['translations']:
             candidate['SONG_LINES'][row['id']]['english'] = pipeline.segment_english(row['segments'], row['literal_english'])
         post = {'reader_digest': prepare.json_digest(candidate), 'dependency_fingerprint': dependency_fingerprint,
-                'attempt_id': context.attempt_id,
+                'attempt_id': context.attempt_id, **pipeline.review_task_identity(),
                 'reviews': [row['independent_review'] for row in translations['packet']['translations']]}
         return {'reader': candidate, 'post_review': post, 'glosses': glosses,
                 'translations': translations, 'source_lines': target_lines}
@@ -859,7 +897,8 @@ def _execute_inventory(root: Path, inventory: dict, state_dir: Path, options) ->
         'source_discovery_max_requests': pipeline.bhakti_source_discovery.run_limit(options),
         'max_calls': options.max_calls, 'model': options.model, 'pro_model': options.pro_model,
         'source_reuse_maps': reuse_identity,
-        'inputs': {row['slug']: row['fingerprints']['all'] for row in rows}}
+        'inputs': {row['slug']: row['fingerprints']['all'] for row in rows},
+        **pipeline.review_task_identity()}
     automatic = pipeline.bhakti_lexical_producer.configuration_identity(options)
     if automatic is not None:
         identity['automatic_lexical'] = automatic

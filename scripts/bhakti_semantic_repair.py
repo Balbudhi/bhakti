@@ -269,7 +269,18 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
         identities.update(prior_fingerprints(pipeline, 'translation', historical_inputs, options))
     for filename in ('05-translation.json', 'translation-candidate.json'):
         candidate = read(filename)
-        if (not candidate or candidate.get('fingerprint') not in identities
+        candidate_identities = identities
+        if candidate and candidate.get('historical_translation_route'):
+            import bhakti_model_routes as routes
+            prior = routes.read_unit_cache(Path(candidate['historical_translation_route']))
+            original = {key: value for key, value in candidate.items() if key != 'historical_translation_route'}
+            if (prior['state'].get('status') != 'accepted' or prior['state'].get('base_model') != options.model
+                    or prior['state'].get('unit_id') != packet_dir.parent.parent.name + ':new-source-semantics'
+                    or prior['result'].get('translations') != original):
+                raise RuntimeError('historical writer receipt mismatch')
+            producing_model = original.get('resolved_model', prior['state'].get('accepted_model'))
+            candidate_identities = {pipeline.text_stage_fingerprint('translation', producing_model, current_inputs, policy)}
+        if (not candidate or candidate.get('fingerprint') not in candidate_identities
                 or candidate.get('input_contract_version') not in (8, pipeline.TRANSLATION_INPUT_VERSION)):
             continue
         translations = candidate.get('packet', {}).get('translations', [])
@@ -284,6 +295,7 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
         context_certified = context_empty or candidate.get('source_context_sha256') == digest(source_context)
         candidate['semantic_adoption'] = {'path': filename, 'fingerprint': candidate['fingerprint'],
             'accepted': filename == '05-translation.json' and context_certified
+                        and candidate.get('review_task_version', 0) == pipeline.REVIEW_TASK_VERSION
                         and not pipeline.fresh_translation_contract_errors(lines, rows, translations)}
         return copy.deepcopy(glosses), candidate
     return copy.deepcopy(glosses), None
@@ -378,6 +390,33 @@ def validated_gloss_seed(pipeline, glossary, receipt, source_identity, glossary_
     if errors:
         raise RuntimeError('accepted glossary seed violates contract: ' + str(errors[:3]))
     return copy.deepcopy(glossary)
+
+
+def validated_review_seed(pipeline, song_dir, audited, glossary, candidate, receipt,
+                          content_identity, options, baseline):
+    """Reuse exact prior paid writing only when the review task alone changed."""
+    proof = receipt.get('review_only', {})
+    if (proof.get('content_configuration_run_id') != content_identity
+            or receipt.get('manifest', {}).get('translation_sha256') != digest(candidate)):
+        raise RuntimeError('review-only writer seed receipt mismatch')
+    lines = audited['packet']['verified_lines']
+    rows = candidate.get('packet', {}).get('translations', [])
+    errors = pipeline.fresh_translation_contract_errors(lines, glossary['packet']['glosses'], rows, require_review=False)
+    errors += derived_support_errors(pipeline, song_dir, audited, glossary, candidate, options)
+    view_options, _ = derived_support_view(pipeline, song_dir, audited, glossary, candidate, options)
+    if pipeline.automatic_evidence_receipt(view_options) != proof.get('automatic_evidence_receipt'):
+        errors.append('review-only writer evidence changed')
+    if errors:
+        raise RuntimeError('review-only writer seed violates current evidence: ' + str(errors[:3]))
+    assert_baseline(baseline, rows)
+    value = copy.deepcopy(candidate)
+    value.pop('review_responses', None)
+    value.pop('review_task_version', None)
+    for row in value['packet']['translations']:
+        row.pop('independent_review', None)
+    value['semantic_adoption'] = {'accepted': False, 'path': '05-translation.json',
+                                  'fingerprint': candidate.get('fingerprint')}
+    return value
 
 
 def stage_routes_enabled(options):
@@ -508,7 +547,7 @@ def routed_translation(pipeline, song_dir, audited, glosses, job, options):
                 row.get('literal_english') for row in writer['packet']['translations']]:
             errors.append('review changed writer English')
         return [{'kind': 'review_contract', 'detail': error} for error in errors]
-    return semantic_stage_route(pipeline, song_dir, 'review', {**inputs, 'writer': writer}, options,
+    return semantic_stage_route(pipeline, song_dir, 'review', {**inputs, 'writer': writer, **pipeline.review_task_identity()}, options,
         lambda directory, local: pipeline.review_translation(directory, audited, glosses, job, local, writer),
         validate_review)
 
@@ -598,6 +637,8 @@ def complete(pipeline, song_dir, audited, job, options):
                 raise RuntimeError('semantic_stage_escalation must be boolean')
             identity_inputs['stage_routing'] = {'version': 1, 'escalation': escalation,
                 'pro_model': getattr(options, 'pro_model', routes.PRO_MODEL)}
+        content_configuration_run_id = digest(identity_inputs)
+        identity_inputs.update(pipeline.review_task_identity())
         identity = digest(identity_inputs)
         configuration_run_id = identity
         revision_receipt = None
@@ -632,12 +673,14 @@ def complete(pipeline, song_dir, audited, job, options):
                     raise RuntimeError('automatic evidence revision identity mismatch')
         accepted_gloss = None
         accepted_gloss_receipt = None
+        accepted_writer = None
         durable_seed = packet_dir / 'semantic-repair' / identity / 'adopted-seeds.json'
         if (prior_state.get('status') == 'accepted' and prior_state.get('run_id') != identity
                 and not durable_seed.exists()):
             previous_manifest = pipeline.read_packet(packet_dir / 'semantic-acceptance.json') or {}
             if (previous_manifest.get('source_gloss_identity') == glossary_identity
-                    or (automatic is not None and prior_state.get('run_id') == preautomatic_identity)):
+                    or (automatic is not None and prior_state.get('content_configuration_run_id',
+                        prior_state.get('run_id')) == preautomatic_identity)):
                 previous_gloss = pipeline.read_packet(packet_dir / '04-glosses.json')
                 previous_translation = pipeline.read_packet(packet_dir / '05-translation.json')
                 # Verify the old pair before moving the required marker to the new run.
@@ -648,6 +691,20 @@ def complete(pipeline, song_dir, audited, job, options):
                     'automatic_lexical_feedback': copy.deepcopy(previous_translation.get('automatic_lexical_feedback', []))}
                 accepted_gloss = validated_gloss_seed(pipeline, previous_gloss, accepted_gloss_receipt,
                     digest(evidence), glossary_identity, lines, languages)
+                prior_content = prior_state.get('content_configuration_run_id', prior_configuration)
+                if prior_content == content_configuration_run_id:
+                    view_options, _ = derived_support_view(pipeline, song_dir, audited, previous_gloss,
+                                                           previous_translation, options)
+                    current_receipt = pipeline.automatic_evidence_receipt(view_options)
+                    saved_receipt = pipeline.validate_automatic_evidence_receipt(
+                        previous_translation.get('automatic_evidence_receipt', {}))
+                    if current_receipt == saved_receipt:
+                        accepted_gloss_receipt['review_only'] = {
+                            'content_configuration_run_id': content_configuration_run_id,
+                            'automatic_evidence_receipt': current_receipt}
+                        validated_review_seed(pipeline, song_dir, audited, previous_gloss, previous_translation,
+                            accepted_gloss_receipt, content_configuration_run_id, options, baseline)
+                        accepted_writer = copy.deepcopy(previous_translation)
         if prior_state.get('run_id') == identity:
             state = dict(prior_state)
             if state.get('status') == 'blocked':
@@ -655,11 +712,16 @@ def complete(pipeline, song_dir, audited, job, options):
                     raise restore_quality_hold(pipeline, state['quality_hold'])
                 raise RuntimeError(state.get('reason', 'semantic repair blocked'))
         else:
+            if (prior_state.get('status') in {'blocked', 'in-progress'}
+                    and prior_state.get('content_configuration_run_id', prior_configuration) == content_configuration_run_id
+                    and prior_state.get('review_task_version', 0) != pipeline.REVIEW_TASK_VERSION):
+                raise RuntimeError('prior unfinished semantic task requires explicit reconciliation')
             seconds = float(getattr(options, 'semantic_repair_seconds', 600))
             if not math.isfinite(seconds) or seconds <= 0:
                 raise RuntimeError('invalid semantic repair deadline')
             state = {'version': VERSION, 'run_id': identity, 'status': 'in-progress',
                      'configuration_run_id': configuration_run_id,
+                     'content_configuration_run_id': content_configuration_run_id, **pipeline.review_task_identity(),
                      'rounds_used': 0, 'deadline_at_epoch': min([time.time() + seconds] +
                          [float(getattr(options, key)) for key in ('unit_deadline_at', 'semantic_deadline_at')
                           if getattr(options, key, None) is not None])}
@@ -677,6 +739,8 @@ def complete(pipeline, song_dir, audited, job, options):
             # can stop identifying the old accepted pair. Resume rechecks receipt.
             payload = {'run_id': identity, 'artifacts': {'04-glosses.json': accepted_gloss},
                        'accepted_gloss_receipt': accepted_gloss_receipt}
+            if accepted_writer is not None:
+                payload['artifacts']['05-translation.json'] = accepted_writer
             pipeline.semantic_write_json(durable_seed, {'payload': payload, 'sha256': digest(payload)})
         marker = {'version': VERSION, 'run_id': identity}
         pipeline.semantic_write_json(packet_dir / 'semantic-repair-required.json', marker)
@@ -714,7 +778,9 @@ def complete(pipeline, song_dir, audited, job, options):
             if receipt is not None:
                 seed_gloss = validated_gloss_seed(pipeline, snapshots.get('04-glosses.json'), receipt,
                     digest(evidence), glossary_identity, lines, languages)
-                seed_translation = None
+                seed_translation = (validated_review_seed(pipeline, song_dir, audited, seed_gloss,
+                    snapshots.get('05-translation.json'), receipt, content_configuration_run_id, options, baseline)
+                    if receipt.get('review_only') else None)
             else:
                 seed_gloss, seed_translation = reusable_prior_stages(
                     pipeline, packet_dir, lines, languages, job, options, evidence, snapshots=snapshots)
@@ -871,7 +937,8 @@ def complete(pipeline, song_dir, audited, job, options):
                 pipeline.semantic_write_json(packet_dir / 'semantic-acceptance.json', {
                     'version': VERSION, 'status': 'accepted', 'run_id': identity,
                     'gloss_sha256': digest(glosses), 'translation_sha256': digest(translations),
-                    'source_sha256': digest(evidence), 'source_gloss_identity': glossary_identity})
+                    'source_sha256': digest(evidence), 'source_gloss_identity': glossary_identity,
+                    'content_configuration_run_id': content_configuration_run_id, **pipeline.review_task_identity()})
                 state['status'] = 'accepted'; state.pop('reason', None)
                 pipeline.semantic_write_json(state_path, state)
                 return glosses, translations
