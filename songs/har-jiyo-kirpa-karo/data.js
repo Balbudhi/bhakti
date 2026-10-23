@@ -83,11 +83,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari jīu kripā karahu",
-    "english": "{1:O revered }{0:Divine, }{3:bestow }{2:grace,}",
+    "english": "{1:O revered }{0:Lord, }{3:bestow }{2:grace,}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "all-pervading Divine",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -263,11 +263,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari nāmu devahu ādhāre",
-    "english": "{2:and grant }{1:the Name }{0:of the Divine }{3:as my support.}",
+    "english": "{2:and grant }{1:the Name }{0:of the Lord }{3:as my support.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "of the Divine; Hari's",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -695,11 +695,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari rasu cākhi manu nirmalu hoā kilbikha kāṭaṇhārā",
-    "english": "{2:Having tasted }{0:Hari’s }{1:rasa, }{7:which cuts away }{6:sins, }{3:the mind }{5:has become }{4:pure.}",
+    "english": "{2:Having tasted }{0:the Lord’s }{1:rasa, }{7:which cuts away }{6:sins, }{3:the mind }{5:has become }{4:pure.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "the Divine",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },

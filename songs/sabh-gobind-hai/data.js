@@ -86,7 +86,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sabhu gobindu hai",
-    "english": "{0:All}{2: is }{1:Govinda;}",
+    "english": "{0:All}{2: is }{1:the Lord;}",
     "words": [
       {
         "roman": "sabhu",
@@ -96,7 +96,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobindu",
-        "gloss": "Lord and sustainer of creation",
+        "gloss": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -140,11 +140,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gobind binu nahī koī",
-    "english": "{2,3:Nothing }exists {1:without }{0:Govinda.}",
+    "english": "{2,3:Nothing }exists {1:without }{0:the Lord.}",
     "words": [
       {
         "roman": "gobind",
-        "gloss": "Lord and sustainer of creation",
+        "gloss": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1094,7 +1094,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahat nāmdeu hari kī racnā",
-    "english": "{0:Says }{1:Nāmdev, }{4:the creation }{3:of }{2:Hari—}",
+    "english": "{0:Says }{1:Nāmdev, }{4:the creation }{3:of }{2:the Lord—}",
     "words": [
       {
         "roman": "kahat",
@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Remover of delusion and suffering",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1274,7 +1274,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "keval ek murārī",
-    "english": "is {0:solely }{1:the One }{2:Murārī.}",
+    "english": "is {0:solely }{1:the One, }{2:the Foe of Mura.}",
     "words": [
       {
         "roman": "keval",
@@ -1290,7 +1290,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murārī",
-        "gloss": "slayer of Mura; a name of Kṛṣṇa/Viṣṇu, here the indwelling Divine",
+        "gloss": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }

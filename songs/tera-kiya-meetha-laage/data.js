@@ -149,11 +149,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hari nāmu padārathu nānaku māṅgai ॥",
-    "english": "{3:Nānak }{4:begs for }{2:the treasure }{0:of the Divine }{1:Name.}",
+    "english": "{3:Nānak }{4:begs for }{2:the treasure }{0:of the Lord’s }{1:Name.}",
     "words": [
       {
         "roman": "Hari",
-        "gloss": "the Divine",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -263,11 +263,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hari kā nāmu ridai nit dhiāī ॥",
-    "english": "{5:I meditate }{4:continually }{2:upon the Name }{0,1:of the Divine }{3:in the heart.}",
+    "english": "{5:I meditate }{4:continually }{2:upon the Name }{0,1:of the Lord }{3:in the heart.}",
     "words": [
       {
         "roman": "Hari",
-        "gloss": "the Divine",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -788,10 +788,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 172.8,
-    "end": 180.0
+    "end": 180
   },
   {
-    "start": 180.0,
+    "start": 180,
     "end": 218.3
   },
   {
@@ -848,10 +848,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 445.905,
-    "end": 457.0
+    "end": 457
   },
   {
-    "start": 457.0,
+    "start": 457,
     "end": 466.25
   },
   {

@@ -179,7 +179,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "su bhalake uṭhi hari nāmu dhiāvai",
-    "english": "{0:that one, }{2:rising }{1:early in the morning, }{5:meditates on }{4:the Name }{3:of Hari.}",
+    "english": "{0:that one, }{2:rising }{1:early in the morning, }{5:meditates on }{4:the Name }{3:of the Lord.}",
     "words": [
       {
         "roman": "su",
@@ -201,7 +201,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Divine; Hari",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -395,7 +395,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upadesi gurū hari hari japu jāpai",
-    "english": "{0:Through the instruction }{1:of the Guru, }{5:chants }{4:the recitation }{2:of Hari, }{3:Hari,}",
+    "english": "{0:Through the instruction }{1:of the Guru, }{5:chants }{4:the recitation: }{2:“Lord, }{3:Lord,”}",
     "words": [
       {
         "roman": "upadesi",
@@ -411,13 +411,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Divine; Hari",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "the Divine; Hari",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -629,7 +629,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bahadiā uṭhadiā hari nāmu dhiāvai",
-    "english": "{0:sitting }{1:and standing, }{4:meditates on }{3:the Name }{2:of Hari.}",
+    "english": "{0:sitting }{1:and standing, }{4:meditates on }{3:the Name }{2:of the Lord.}",
     "words": [
       {
         "roman": "bahadiā",
@@ -645,7 +645,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Divine; Hari",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -713,7 +713,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo sāsi girāsi dhiāe merā hari hari",
-    "english": "{0:One who, }{1:with each breath }{2:and morsel, }{3:meditates on }{4:my }{5:Lord Hari, }{6:Hari,}",
+    "english": "{0:One who, }{1:with each breath }{2:and morsel, }{3:meditates on }{4:my }{5:Lord, }{6:Lord,}",
     "words": [
       {
         "roman": "jo",
@@ -747,13 +747,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Divine",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "the Divine",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       }

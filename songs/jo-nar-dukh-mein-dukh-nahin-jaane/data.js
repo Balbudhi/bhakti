@@ -1362,7 +1362,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak līn bhaio gobind sio",
-    "english": "{0:O Nānak, }{2:that person has become }{1:merged }{4:with }{3:Govinda,}",
+    "english": "{0:O Nānak, }{2:that person has become }{1:merged }{4:with }{3:the Lord,}",
     "words": [
       {
         "roman": "nānak",
@@ -1384,7 +1384,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobind",
-        "gloss": "Govinda, the Divine",
+        "gloss": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },

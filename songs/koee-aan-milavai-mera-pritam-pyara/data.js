@@ -256,7 +256,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "of the divine Lord",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -342,7 +342,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kripā kare tā satiguru mele hari hari nāmu dhiāī",
-    "english": "{1:If He bestows }{0:grace, }{2:then }{4:He unites me with }{3:the True Guru; }{8:I meditate }{7:upon the Name }{5,6:of the Lord, Hari.}",
+    "english": "{1:If He bestows }{0:grace, }{2:then }{4:He unites me with }{3:the True Guru; }{8:I meditate }{7:upon the Name }{5:of the Lord, }{6:the Lord.}",
     "words": [
       {
         "roman": "kripā",
@@ -376,13 +376,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "of the divine Lord",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "the divine Lord",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1012,7 +1012,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "O divine Lord",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },

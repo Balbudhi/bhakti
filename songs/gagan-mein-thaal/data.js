@@ -529,11 +529,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari caraṇa kamala makaranda lobhita mano anadino mohi āhī piāsā ॥",
-    "english": "{5:The mind }{4:longs for }{3:the nectar of }{0:Hari's }{2:lotus }{1:feet; }{6:day and night, }{9:thirst }{8:persists }{7:in me.}",
+    "english": "{5:The mind }{4:longs for }{3:the nectar of }{0:the Lord's }{2:lotus }{1:feet; }{6:day and night, }{9:thirst }{8:persists }{7:in me.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "the Divine (Remover of suffering)",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },

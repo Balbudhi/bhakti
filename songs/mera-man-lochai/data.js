@@ -864,7 +864,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mere sajaṇa mīta murāre jīu ॥",
-    "english": "{0:O my }{1:companion, }{2:friend, }{4:and revered }{3:Lord Murāri.}",
+    "english": "{0:O my }{1:companion, }{2:friend, }{4:and revered }{3:Foe of Mura.}",
     "words": [
       {
         "roman": "mere",
@@ -886,7 +886,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murāre",
-        "gloss": "O Lord Murāri; Divine Beloved",
+        "gloss": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1008,7 +1008,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gur sajaṇa mīta murāre jīu ॥",
-    "english": "{0:Unto the Guru, }{1:my companion, }{2:friend, }{4:and revered }{3:Lord Murāri.}",
+    "english": "{0:Unto the Guru, }{1:my companion, }{2:friend, }{4:and revered }{3:Foe of Mura.}",
     "words": [
       {
         "roman": "gur",
@@ -1030,7 +1030,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murāre",
-        "gloss": "Lord Murāri; Divine Beloved",
+        "gloss": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3390,11 +3390,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari darasana kī āsā",
-    "english": "{3:In the hope }{1,2:of beholding }{0:Hari.}",
+    "english": "{3:In the hope }{1,2:of beholding }{0:the Lord.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "of Hari; the Lord",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3618,7 +3618,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaka hari saṅgi mīta",
-    "english": "{0:O Nānak, }{1,2:with Hari, }{3:the Beloved Friend.}",
+    "english": "{0:O Nānak, }{1,2:with the Lord, }{3:the Beloved Friend.}",
     "words": [
       {
         "roman": "nānaka",
@@ -3628,7 +3628,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "with Hari; the Lord",
+        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
         "concept_key": "",
         "preserve_in_english": false
       },

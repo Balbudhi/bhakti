@@ -39,7 +39,7 @@ The new English is derived from the stored lyric and word mapping. These sources
 
 This is a text repair, not a new listening certification. Koī’s stored kare/mele forms versus the canonical karahi/melehi, Kōḷaṟu’s stanza-four source variant, and Jō’s pōsērā tense/person and sampadala nīvēḷa attachment remain specific source-review tasks. The unverified contraction explanation for pōsērā was removed. No source was silently changed to match a printed rendition.
 
-The broader Hari/Kṛṣṇa/Viṣṇu display-policy question remains open. This batch does not globally translate or substitute standalone divine names. Acyutānanda is treated as the contextual adjective-plus-bliss epithet; this is an editorial choice, not a claim that no other compound analysis exists. The allowlisted philosophical term rasa remains in English with its contextual popup; the proposed savor substitution was rejected under the current preservation policy.
+At this earlier checkpoint, the Hari/Kṛṣṇa/Viṣṇu display policy had not been resolved. The scoped Gurbāṇī naming correction below now resolves the reviewed Hari, Govinda and Murāri occurrences; it does not globally substitute every divine name. Acyutānanda is treated as the contextual adjective-plus-bliss epithet; this is an editorial choice, not a claim that no other compound analysis exists. The allowlisted philosophical term rasa remains in English with its contextual popup; the proposed savor substitution was rejected under the current preservation policy.
 
 ## Checks and follow-through
 
@@ -79,4 +79,25 @@ Concrete corrections include the sacrifice image in Kāyā, the beneficiary in S
 
 All 12 reader contracts pass. Exact comparisons preserve metadata, source script, Romanization, source-word maps, performance order, repeats, and every timestamp. Protected owner English remains exact. In-app browser checks at 390px and 1440px show no horizontal overflow or exposed mapping markup; the corrected corpse popup opens its matching gloss. No audio was retranscribed or retimed for this text batch, and this is not a new listening certificate. Full contract inspection retains six legacy/unbuilt directories; YouTube trim audit checks 111 with no failures.
 
-Remaining source-sensitive issues include Sunta’s relative-clause/pickup readings, Kyā’s āsā/pāsā, Ye Tanu’s muṇḍanā and unstated object, Rāma Rasa’s dīyā/liyo, and the Pattā repeated-couplet timing ambiguity. They were not guessed away. Hari/name consistency remains separate. Private before/after evidence is retained per reader under `.transcription/editorial-fast-pass-20261022/`.
+Remaining source-sensitive issues include Sunta’s relative-clause/pickup readings, Kyā’s āsā/pāsā, Ye Tanu’s muṇḍanā and unstated object, Rāma Rasa’s dīyā/liyo, and the Pattā repeated-couplet timing ambiguity. They were not guessed away. The separate Hari/name correction is recorded below. Private before/after evidence is retained per reader under `.transcription/editorial-fast-pass-20261022/`.
+
+
+## Gurbāṇī name consistency — 22 October 2026
+
+Read all twelve recent Gurbāṇī readers and independently reviewed 54 guarded
+field changes across nine songs: 24 English lines and 30 word popups. The 24 Hari
+source occurrences across eight readers now use contextual Lord in English;
+source and IAST retain Hari, and the popup identifies Hari as a name of
+Viṣṇu/Kṛṣṇa used here for God. Three Govinda occurrences also use contextual Lord.
+Three transparent Murāri epithets use Foe of Mura, with identity explained on click;
+the closing clause reads “the One, the Foe of Mura” to preserve the apposition.
+
+The primary checks used each passage's Sahib Singh commentary and the relevant
+Monier-Williams entries; the repeated divine invocations remain separately linked.
+Historical Rām Dās remains a person's name. No Hari tag was added. Existing
+Gurbāṇī/Guru/Viṣṇu tags, scripture notices, source text, IAST, occurrence order,
+all timestamps and owner-approved English remain unchanged. The deterministic
+production page generator changed only each data-asset cache hash in the HTML.
+All nine scoped contracts pass. This is a naming correction, not a fresh audio
+certification or completion of all translation work. Separate Vāhigurū invocation
+wording and broader Guru terminology remain outside this batch.
