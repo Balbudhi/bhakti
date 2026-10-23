@@ -26,6 +26,19 @@ the observed Opus files. Four actual AAC/Opus checks cover nonzero origins,
 preserved landmarks, rejected truncation and ambiguous multiple audio tracks.
 This validates conversion length, not browser/model clock correspondence.
 
+The in-app browser clock experiment has now run on 16 synthetic native/cropped/
+canonical AAC and Opus fixtures. Two rendered landmarks give compatible empirical
+clock offsets for 15 fixtures. Nonzero native timestamps demonstrably differ
+from the canonical copies' playback origins. The remaining native AAC fixture
+clamps a requested late seek and misses the second landmark; it is unresolved.
+This is local browser evidence, not a model-timestamp certificate or a song
+listening audit. Raw traces and analysis are retained privately under
+`/tmp/bhakti-browser-clock-qualification/`. Historical timing reuse remains held.
+The optional historical transform consumer passes 62 joined local checks, but
+its original-media receipt currently depends on the live pre-install path. It
+must use and validate an immutable original archive before installation/replay
+can be enabled. Those consumer edits remain uncommitted and unactivated.
+
 Model-facing source dictionary discovery and materialized-evidence renewal are
 integrated. The joined source acquisition, translation/review, cache renewal and
 fresh-source support checks pass 109 tests. Relevant changed evidence reruns
