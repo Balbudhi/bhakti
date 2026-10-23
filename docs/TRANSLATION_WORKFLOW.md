@@ -23,8 +23,11 @@ reviewer now retains source-only neighboring lines from a short excerpt, with
 explicit local order and no invented neighbor translation. Conflicting or missing
 source definitions stop before dispatch. Review-task version 2 refreshes review
 only, preserves prior findings, and reuses validated unchanged writing. The joined
-34 context/cache checks pass. Next is a bounded review of the unchanged failed
-draft; no new glossary or writer call is needed to test defect detection.
+34 context/cache checks pass. A one-call review of the unchanged failed draft
+cost $0.070053 and detected the extra `true` in both popup and English. It also
+raised questionable naming-popup and synonym-choice objections, so its findings
+still need independent adjudication before repair. No new glossary, writer,
+source HTTP or embeddings ran, and no result was accepted or published.
 
 ## Bounded intake and boundary recovery
 

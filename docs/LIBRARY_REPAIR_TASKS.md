@@ -9,11 +9,29 @@ latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
 Current step: finish the connected pipeline before further content releases.
-The reviewer now retains the failed excerpt's original neighboring lines. The
-next deliverable is one bounded review of the existing paid draft. This
-diagnostic buys no replacement glossary, writer or embeddings and
-does not accept or publish the draft. The original unsupported `true` must be
-identified; merely clearing the citation validator is insufficient.
+The reviewer now retains the failed excerpt's original neighboring lines. One
+bounded review of the unchanged paid draft has finished at
+`/tmp/bhakti-saved-writer-review/actual-run/`: one parsed call, $0.070053,
+no glossary/writer/embedding/source-HTTP calls. It identifies the unsupported
+`true` separately in the popup and English. It also demands repetition of Kabīr's
+name in an already explanatory popup and treats a list of alternative English
+words as needing human review without identifying their consequential difference.
+Independent reading confirms the popup objection is false; the separate
+Kabir → Kabīr spelling finding is supported by the supplied scoped convention.
+The synonymous-word hold has no stated material basis. The reviewer does not
+separately report the saved frame's `only genuine` claim. This is
+improved detection on one case, not full reviewer or repair qualification; no
+draft is accepted or published. The original evidence and owner English remain
+unchanged. Confirmed task spending is now $3.256235075, separate from the prior
+$0.139404 unknown reservation.
+Next: correct those demonstrated review/disposition failures and the routed
+writer admission gate. Actual caller tests show that it currently applies final
+certainty checks before review, buying a replacement writer before the reviewer
+can examine the original doubt. The proposed fix must preserve that doubt,
+retain structural/source/citation guards, and admit only private drafts to review.
+Do not invent a textual defect or buy another writer solely to clear a confidence
+flag. Final acceptance still requires explicit resolution and no remaining
+material defect. This admission/disposition change is designed, not implemented.
 The source-only context fix passed 34 joined context/cache checks. It preserves
 local before/after order without inventing global occurrences or translations,
 rejects missing/conflicting source definitions before dispatch, and refreshes
