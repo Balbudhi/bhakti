@@ -48,6 +48,8 @@ import tag_taxonomy
 import source_word_map
 import source_witness
 import scripture_metadata
+from bhakti_boundary_timebase import (classify_historical_boundary_evidence,
+                                      inspect_historical_boundary, measure_boundary_timebase)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -2247,12 +2249,40 @@ def expanded_timing_targets(occurrences: list[dict[str, Any]]) -> list[dict[str,
     return expanded
 
 
+def region_timing_targets(region):
+    """Select exact owned performances without renumbering a repeated block."""
+    expanded = expanded_timing_targets(region['target_occurrences'])
+    selected = region.get('target_timing_ids')
+    if selected is None:
+        return expanded
+    if (not isinstance(selected, list) or not selected
+            or any(not isinstance(value, str) for value in selected)
+            or len(selected) != len(set(selected))):
+        raise ValueError('joint timing ownership requires distinct exact timing IDs')
+    wanted = set(selected)
+    targets = [row for row in expanded if row['timing_id'] in wanted]
+    if [row['timing_id'] for row in targets] != selected:
+        raise ValueError('joint timing ownership differs from canonical expanded order')
+    return targets
+
+
+def independent_joint_region(region, pass_index):
+    """Keep source-owned clips inside their independently audited bounds."""
+    if pass_index not in (0, 1):
+        raise ValueError('joint timing requires exactly two independent passes')
+    if 'source_unit_id' in region:
+        # The full accepted source excerpt is already contextual. Re-listen
+        # independently without inventing coverage outside its audited clip.
+        return copy.deepcopy(region)
+    return {**region, 'clip_start': max(0., region['clip_start'] - 10. * pass_index)}
+
+
 def validate_joint_timing_pass(region: dict[str, Any], packet: dict[str, Any], duration: float) -> dict[str, Any]:
     errors = []
     left, right = region['clip_start'], region['clip_end']
     if not (0 <= left < right <= duration and math.isfinite(duration)):
         errors.append('joint timing clip is outside the source duration')
-    expected = [row['timing_id'] for row in expanded_timing_targets(region['target_occurrences'])]
+    expected = [row['timing_id'] for row in region_timing_targets(region)]
     rows = packet.get('starts', [])
     if not isinstance(rows, list):
         return {'starts': [], 'validation_errors': errors + ['joint starts must be an array']}
@@ -2290,7 +2320,7 @@ def joint_consensus_from_measurements(region: dict[str, Any], passes: list[dict[
             if abs(left['start']-right['start']) > .5:
                 errors.append(f"{left['timing_id']}: independent first-syllable measurements disagree")
             starts.append({'timing_id': left['timing_id'], 'start': round((left['start']+right['start'])/2, 3)})
-    expanded = expanded_timing_targets(region['target_occurrences'])
+    expanded = region_timing_targets(region)
     display = [{'occurrence_id': target['occurrence_id'], 'start': row['start']}
                for target, row in zip(expanded, starts) if target['repeat_index'] == 1]
     return {'starts': display if not errors else [], 'expanded_starts': starts if not errors else [],
@@ -2310,7 +2340,7 @@ def joint_pair_evidence(
         raise ValueError("joint evidence requires two independent saved passes")
     checked = []
     for index, saved in enumerate(passes):
-        region = {**expected_region, "clip_start": max(0., expected_region["clip_start"] - 10. * index)}
+        region = independent_joint_region(expected_region, index)
         if saved.get("region") != region:
             raise ValueError("joint evidence independent clip/context differs")
         validated = validate_joint_timing_pass(region, saved.get("response", {}).get("packet", {}), duration)
@@ -2318,7 +2348,7 @@ def joint_pair_evidence(
             raise ValueError("joint evidence has invalid full packet: " + "; ".join(validated["validation_errors"]))
         checked.append(validated["starts"])
     agreed, held = [], []
-    targets = expanded_timing_targets(expected_region["target_occurrences"])
+    targets = region_timing_targets(expected_region)
     for target, first, second in zip(targets, *checked):
         if abs(first["start"] - second["start"]) > .5:
             held.append(target["timing_id"])
@@ -2507,13 +2537,13 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
     unit_id = f"timing:{region['target_occurrences'][0]['occurrence_id']}:{region['target_occurrences'][-1]['occurrence_id']}"
     def execute(ctx):
         ctx.attempt_dir.mkdir(parents=True,exist_ok=True)
-        expanded = expanded_timing_targets(region['target_occurrences'])
+        expanded = region_timing_targets(region)
         rows = []
         passes = []
         for pass_index in range(2):
             # Independent calls use different cuts, identical audited order,
-            # and no first-pass numbers. A wider second clip provides context.
-            selected = {**region, 'clip_start': max(0.,region['clip_start']-10.*pass_index)}
+            # and no first-pass numbers. Source-owned excerpts stay bounded.
+            selected = independent_joint_region(region, pass_index)
             clip = ctx.attempt_dir / f'pass-{pass_index+1}.m4a'
             subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-ss',f"{selected['clip_start']:.3f}",
                             '-i',str(audio),'-t',f"{selected['clip_end']-selected['clip_start']:.3f}",
@@ -3090,7 +3120,50 @@ def source_timing_anchor_errors(region, expanded_starts):
         for row in expanded_starts:
             if (row['start'] <= anchor if is_lower else row['start'] >= anchor):
                 errors.append(f"{row['timing_id']}: onset contradicts retained {field} performance anchor")
+    for field, lower in (('preceding_timing_id', True), ('following_timing_id', False)):
+        timing_id = region.get(field)
+        anchor = region.get('expanded_anchor_starts', {}).get(timing_id)
+        if anchor is not None:
+            for row in expanded_starts:
+                if (row['start'] <= anchor if lower else row['start'] >= anchor):
+                    errors.append(f"{row['timing_id']}: onset contradicts accepted expanded {field} anchor")
     return errors
+
+
+def source_timing_effective_region(region, measured):
+    """Bind prior independently supported repeat onsets into the next route."""
+    effective = copy.deepcopy(region)
+    if 'preceding_timing_id' in region or 'following_timing_id' in region:
+        effective['expanded_anchor_starts'] = {
+            timing_id: measured[timing_id]
+            for timing_id in (region.get('preceding_timing_id'), region.get('following_timing_id'))
+            if timing_id is not None and timing_id in measured}
+    return effective
+
+
+def source_timing_measurement_state(plan):
+    # The planner retains only actual independently reconstructed onsets.
+    return dict(plan['retained_expanded_starts'])
+
+
+def add_source_timing_measurements(measured, paired):
+    for row in paired['agreed']:
+        if row['timing_id'] in measured:
+            raise ValueError('source timing selected a performed instance more than once')
+        measured[row['timing_id']] = row['start']
+
+
+def source_timing_display_starts(plan, measured):
+    expanded = expanded_timing_targets(plan['ordered_occurrences'])
+    required = set(plan['retained_expanded_starts']) | {row['timing_id'] for row in expanded
+                if row['occurrence_id'] not in plan['retained_starts']}
+    if set(measured) != required:
+        raise ValueError('source timing missing or added expanded performance measurements')
+    points = [measured[row['timing_id']] for row in expanded if row['timing_id'] in measured]
+    if any(right <= left for left, right in zip(points, points[1:])):
+        raise ValueError('source timing expanded performances contradict canonical order')
+    return [{'occurrence_id': row['occurrence_id'], 'start': measured[f"{row['occurrence_id']}-r01"]}
+            for row in plan['ordered_occurrences']]
 
 
 def _read_source_timing_declaration(declaration):
@@ -3107,57 +3180,62 @@ def _read_source_timing_declaration(declaration):
     return reader, receipt, prior
 
 
-def source_adoption_timing_errors(timing):
+def source_adoption_timing_measurements(timing):
     """Rebuild every retained/fresh selection from immutable source evidence."""
     import bhakti_library_source_pass as source_pass
     import bhakti_model_routes as routes
+    reports = [row for row in timing.get('refinements', []) if row.get('kind') == 'source-adoption']
+    if len(reports) != 1:
+        raise ValueError('source adoption timing needs one evidence selection')
+    report = reports[0]
+    reader, receipt, prior = _read_source_timing_declaration(report['declaration'])
+    identity = timing['source_identity']; duration = timing['duration_seconds']
+    plan = source_pass.plan_source_timing(reader, receipt['delta'], prior,
+        audio_sha256=identity['audio_sha256'], trim=identity['source_identity']['trim'], duration_seconds=duration,
+        model_audio_sha256=report['model_audio_sha256'])
+    if report['plan'] != plan:
+        raise ValueError('source adoption timing lineage changed')
+    occurrences = timing['ordered_occurrences']
+    if len(occurrences) != len(plan['ordered_occurrences']) or any(
+            any(actual.get(key) != value for key, value in expected.items())
+            for actual, expected in zip(occurrences, plan['ordered_occurrences'])):
+        raise ValueError('source adoption timing selected order changed')
+    if identity['ordered_occurrences'] != occurrences:
+        raise ValueError('source adoption timing identity order changed')
+    expected_fingerprint = hashlib.sha256(json.dumps(identity,ensure_ascii=False,sort_keys=True,allow_nan=False).encode()).hexdigest()
+    if timing.get('input_fingerprint') != expected_fingerprint:
+        raise ValueError('source adoption timing input fingerprint changed')
+    measured = source_timing_measurement_state(plan)
+    units = report['units']
+    if len(units) != len(plan['regions']):
+        raise ValueError('source adoption timing region population changed')
+    for item, base_region in zip(units, plan['regions']):
+        region = source_timing_effective_region(base_region, measured)
+        cached = routes.read_unit_cache(Path(item['route_state_path']))
+        raw = cached['result']
+        fingerprint = joint_region_fingerprint(report['model_audio_sha256'], region, duration, identity)
+        if (cached['state']['status'] != 'accepted' or cached['state']['input_fingerprint'] != fingerprint
+                or source_pass.digest(raw) != item['result_digest']):
+            raise ValueError('source adoption timing route differs from accepted selection')
+        paired = joint_pair_evidence(raw, expected_region=region,
+            expected_fingerprint=fingerprint, duration=duration)
+        if paired['held_timing_ids']:
+            raise ValueError('source adoption timing has unresolved independent measurements')
+        errors = source_timing_anchor_errors(region, paired['agreed'])
+        if errors:raise ValueError('; '.join(errors))
+        add_source_timing_measurements(measured, paired)
+    starts = source_timing_display_starts(plan, measured)
+    sequence, errors, uncertain = timing_sequence_from_response(occurrences,
+        {'starts':starts, 'uncertain_occurrence_ids':[]}, duration)
+    if errors or uncertain or sequence != timing['sequence']:
+        raise ValueError('source adoption selected starts/ends differ from independently supported measurements')
+    return measured
+
+
+def source_adoption_timing_errors(timing):
+    import bhakti_model_routes as routes
     try:
-        reports = [row for row in timing.get('refinements', []) if row.get('kind') == 'source-adoption']
-        if len(reports) != 1:
-            raise ValueError('source adoption timing needs one evidence selection')
-        report = reports[0]
-        reader, receipt, prior = _read_source_timing_declaration(report['declaration'])
-        identity = timing['source_identity']; duration = timing['duration_seconds']
-        plan = source_pass.plan_source_timing(reader, receipt['delta'], prior,
-            audio_sha256=identity['audio_sha256'], trim=identity['source_identity']['trim'], duration_seconds=duration,
-            model_audio_sha256=report['model_audio_sha256'])
-        if report['plan'] != plan:
-            raise ValueError('source adoption timing lineage changed')
-        occurrences = timing['ordered_occurrences']
-        if len(occurrences) != len(plan['ordered_occurrences']) or any(
-                any(actual.get(key) != value for key, value in expected.items())
-                for actual, expected in zip(occurrences, plan['ordered_occurrences'])):
-            raise ValueError('source adoption timing selected order changed')
-        if identity['ordered_occurrences'] != occurrences:
-            raise ValueError('source adoption timing identity order changed')
-        expected_fingerprint = hashlib.sha256(json.dumps(identity,ensure_ascii=False,sort_keys=True,allow_nan=False).encode()).hexdigest()
-        if timing.get('input_fingerprint') != expected_fingerprint:
-            raise ValueError('source adoption timing input fingerprint changed')
-        values = dict(plan['retained_starts'])
-        units = report['units']
-        if len(units) != len(plan['regions']):
-            raise ValueError('source adoption timing region population changed')
-        for item, region in zip(units, plan['regions']):
-            cached = routes.read_unit_cache(Path(item['route_state_path']))
-            raw = cached['result']
-            fingerprint = joint_region_fingerprint(report['model_audio_sha256'], region, duration, identity)
-            if (cached['state']['status'] != 'accepted' or cached['state']['input_fingerprint'] != fingerprint
-                    or source_pass.digest(raw) != item['result_digest']):
-                raise ValueError('source adoption timing route differs from accepted selection')
-            paired = joint_pair_evidence(raw, expected_region=region,
-                expected_fingerprint=fingerprint, duration=duration)
-            if paired['held_timing_ids']:
-                raise ValueError('source adoption timing has unresolved independent measurements')
-            errors = source_timing_anchor_errors(region, paired['agreed'])
-            if errors:raise ValueError('; '.join(errors))
-            for row in paired['agreed']:
-                if row['repeat_index'] == 1:
-                    values[row['occurrence_id']] = row['start']
-        starts = [{'occurrence_id':row['occurrence_id'], 'start':values[row['occurrence_id']]} for row in occurrences]
-        sequence, errors, uncertain = timing_sequence_from_response(occurrences,
-            {'starts':starts, 'uncertain_occurrence_ids':[]}, duration)
-        if errors or uncertain or sequence != timing['sequence']:
-            raise ValueError('source adoption selected starts/ends differ from independently supported measurements')
+        source_adoption_timing_measurements(timing)
         return []
     except (ValueError, KeyError, TypeError, OSError, routes.RunFatal) as exc:
         return ['source adoption timing evidence: ' + str(exc)]
@@ -3197,11 +3275,12 @@ def align_source_adoption(song_dir, audited, audio, options, existing, identity,
                 errors = timing_uncertainty_errors(existing)
                 if errors:raise ValueError('; '.join(errors))
                 return existing
-        values = dict(plan['retained_starts'])
+        measured = source_timing_measurement_state(plan)
         if plan['regions'] and not needs_joint_binding:
             model_audio = canonical_timing_audio(audio, Path(temporary)/'timing.m4a')
             model_hash = source_pass.file_hash(model_audio)
-        for region in plan['regions']:
+        for base_region in plan['regions']:
+            region = source_timing_effective_region(base_region, measured)
             raw = run_joint_timing_unit(song_dir, model_audio, region, duration, options, identity)
             expected_fingerprint = joint_region_fingerprint(model_hash, region, duration, identity)
             paired = joint_pair_evidence(raw, expected_region=region,
@@ -3210,15 +3289,14 @@ def align_source_adoption(song_dir, audited, audio, options, existing, identity,
                 raise ValueError('source timing selected unit lacks independent consensus')
             errors = source_timing_anchor_errors(region, paired['agreed'])
             if errors:raise ValueError('; '.join(errors))
-            for row in paired['agreed']:
-                if row['repeat_index'] == 1:values[row['occurrence_id']] = row['start']
+            add_source_timing_measurements(measured, paired)
             unit_id = f"timing:{region['target_occurrences'][0]['occurrence_id']}:{region['target_occurrences'][-1]['occurrence_id']}"
             state = routes.unit_state_path(song_dir/'.transcription/pipeline/joint-timing',unit_id,expected_fingerprint,
                 base_model=gemini.batch_base_model(options.model),pro_model=getattr(options,'pro_model',routes.PRO_MODEL))
             units.append({'route_state_path':str(state),'result_digest':source_pass.digest(raw)})
     occurrences = identity['ordered_occurrences']
     sequence, errors, uncertain = timing_sequence_from_response(occurrences,
-        {'starts':[{'occurrence_id':row['occurrence_id'],'start':values[row['occurrence_id']]} for row in occurrences],
+        {'starts':source_timing_display_starts(plan, measured),
          'uncertain_occurrence_ids':[]},duration)
     result = {'input_fingerprint':fingerprint,'source_identity':identity,'duration_seconds':duration,
         'ordered_occurrences':occurrences,'sequence':sequence,'validation_errors':errors,'uncertain_occurrence_ids':uncertain,

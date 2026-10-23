@@ -1,0 +1,804 @@
+[
+  {
+    "slug": "akashi-zep-ghe-re-pakhara",
+    "artifacts": {
+      "trim-review.json": {
+        "duration": 388.621,
+        "start": {
+          "edge": "start",
+          "clip_start": 0.0,
+          "response": {
+            "packet": {
+              "edge": "start",
+              "decision": "trim",
+              "boundary": 7.85,
+              "outside_type": "advertisement",
+              "confidence": "high",
+              "reason": "The first several seconds contain a spoken product advertisement for the Saregama Carvaan player, after which the song's musical prelude begins."
+            },
+            "usage": {
+              "prompt_tokens": 2047,
+              "completion_tokens": 628,
+              "total_tokens": 2675,
+              "cost": 0.00389025,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.00389025,
+                "upstream_inference_prompt_cost": 0.00153525,
+                "upstream_inference_completions_cost": 0.002355
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 544,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "end": {
+          "edge": "end",
+          "clip_start": 313.621,
+          "response": {
+            "packet": {
+              "edge": "end",
+              "decision": "keep",
+              "boundary": 75.0,
+              "outside_type": "none",
+              "confidence": "high",
+              "reason": "The music and singing continue past the end of the clip with no extraneous outro material."
+            },
+            "usage": {
+              "prompt_tokens": 2050,
+              "completion_tokens": 340,
+              "total_tokens": 2390,
+              "cost": 0.0028125,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.0028125,
+                "upstream_inference_prompt_cost": 0.0015375,
+                "upstream_inference_completions_cost": 0.001275
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 269,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "trim_start": 7.85,
+        "trim_end": 388.621,
+        "validation_errors": [],
+        "status": "reviewed"
+      },
+      "trim-applied.json": {
+        "applied": true,
+        "trim_start": 7.85,
+        "trim_end": 379.588,
+        "removed_seconds": 16.883,
+        "canonical_listener_duration": 371.747,
+        "reason": "Removed the 7.85-second Saregama promotion and a 9.033-second incomplete pickup from Part 2 appended after the clean Part 1 ending."
+      },
+      "trim-originals.json": null
+    },
+    "media": {
+      "audio.webm": {
+        "sha256": "b950107f28de989af470eadb60b3ad861243301e05daa42749a3780c6f1948f4",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "opus",
+              "sample_rate": "48000",
+              "start_time": "0.000000"
+            }
+          ],
+          "format": {
+            "duration": "371.760000"
+          }
+        }
+      },
+      "audio.m4a": {
+        "sha256": "fb83f0dc44e733634944d41fbd9ba534333a4c09b6b246ab94a426a95c4f7ee0",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "aac",
+              "sample_rate": "44100",
+              "start_time": "0.000000",
+              "duration": "371.751474"
+            }
+          ],
+          "format": {
+            "duration": "371.751474"
+          }
+        }
+      }
+    },
+    "reader_sha256": "80f9db9f7e481acf5477fda9188531ad091faf9e1c11013668e82e7d8972124a"
+  },
+  {
+    "slug": "anuraniya-thokada",
+    "artifacts": {
+      "trim-review.json": {
+        "duration": 400.741,
+        "start": {
+          "edge": "start",
+          "clip_start": 0.0,
+          "response": {
+            "packet": {
+              "edge": "start",
+              "decision": "trim",
+              "boundary": 8.06,
+              "outside_type": "advertisement",
+              "confidence": "high",
+              "reason": "The first 8 seconds contain a spoken Marathi promotional advertisement for Saregama Carvaan, followed by the song's musical drone and vocal introduction starting at 8.060s."
+            },
+            "usage": {
+              "prompt_tokens": 2053,
+              "completion_tokens": 393,
+              "total_tokens": 2446,
+              "cost": 0.0030135,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.0030135,
+                "upstream_inference_prompt_cost": 0.00153975,
+                "upstream_inference_completions_cost": 0.00147375
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 297,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "end": {
+          "edge": "end",
+          "clip_start": 325.741,
+          "response": {
+            "packet": {
+              "edge": "end",
+              "decision": "trim",
+              "boundary": 53.0,
+              "outside_type": "film_dialogue",
+              "confidence": "high",
+              "reason": "The musical performance concludes and fades out by second 53.0, followed by silence and post-song film dialogue/groaning from the movie scene."
+            },
+            "usage": {
+              "prompt_tokens": 2055,
+              "completion_tokens": 1141,
+              "total_tokens": 3196,
+              "cost": 0.00582,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1875,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.00582,
+                "upstream_inference_prompt_cost": 0.00154125,
+                "upstream_inference_completions_cost": 0.00427875
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 1050,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "trim_start": 8.06,
+        "trim_end": 400.741,
+        "validation_errors": [],
+        "status": "reviewed"
+      },
+      "trim-applied.json": {
+        "applied": true,
+        "trim_start": 8.06,
+        "trim_end": 400.741,
+        "removed_seconds": 8.06
+      },
+      "trim-originals.json": null
+    },
+    "media": {
+      "audio.webm": {
+        "sha256": "0556f3a4d961cf9e99d304eed0890f984868df251095af9a821c4b77657bc1da",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "opus",
+              "sample_rate": "48000",
+              "start_time": "0.000000"
+            }
+          ],
+          "format": {
+            "duration": "392.660000"
+          }
+        }
+      },
+      "audio.m4a": {
+        "sha256": "d1b891bbc7194fb28eaa0c56121b4dbc4ceab34b2015c11bc5a2a12549f505a5",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "aac",
+              "sample_rate": "44100",
+              "start_time": "0.000000",
+              "duration": "392.672653"
+            }
+          ],
+          "format": {
+            "duration": "392.672653"
+          }
+        }
+      }
+    },
+    "reader_sha256": "64c917e08384016d68f9d1fe41df42ed089b8b43d3dc45f44085a475ae1e367a"
+  },
+  {
+    "slug": "arunachala-akshara-mana-malai",
+    "artifacts": {
+      "trim-review.json": {
+        "duration": 1334.361,
+        "start": {
+          "edge": "start",
+          "clip_start": 0.0,
+          "response": {
+            "packet": {
+              "edge": "start",
+              "decision": "trim",
+              "boundary": 24.8,
+              "outside_type": "logo",
+              "confidence": "high",
+              "reason": "The initial segment consists of a silent title card presenting the recording company before the flute and tanpura musical introduction begins at 24.80 seconds."
+            },
+            "usage": {
+              "prompt_tokens": 2047,
+              "completion_tokens": 711,
+              "total_tokens": 2758,
+              "cost": 0.0042015,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.0042015,
+                "upstream_inference_prompt_cost": 0.00153525,
+                "upstream_inference_completions_cost": 0.00266625
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 626,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "end": {
+          "edge": "end",
+          "clip_start": 1259.361,
+          "response": {
+            "packet": {
+              "edge": "end",
+              "decision": "keep",
+              "boundary": 75.0,
+              "outside_type": "none",
+              "confidence": "high",
+              "reason": "The song concludes naturally with the final sung devotional lines and natural decay, followed by silence with no promotional or non-song platform material present."
+            },
+            "usage": {
+              "prompt_tokens": 2051,
+              "completion_tokens": 751,
+              "total_tokens": 2802,
+              "cost": 0.0043545,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1875,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.0043545,
+                "upstream_inference_prompt_cost": 0.00153825,
+                "upstream_inference_completions_cost": 0.00281625
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 667,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "trim_start": 24.8,
+        "trim_end": 1334.361,
+        "validation_errors": [],
+        "status": "reviewed",
+        "editorial_review": {
+          "reason": "User requested removal of leading silence. FFmpeg silence detector measured silence through 24.828062 seconds; cached audio review independently found music beginning at 24.8. Preserve the entire musical introduction.",
+          "boundary_seconds": 24.8
+        }
+      },
+      "trim-applied.json": {
+        "applied": true,
+        "trim_start": 24.8,
+        "trim_end": 1334.361,
+        "removed_seconds": 24.8
+      },
+      "trim-originals.json": null
+    },
+    "media": {
+      "audio.webm": {
+        "sha256": "a1be9c38b2c4307da5b2f973f571057392e59be4ce3a8c4260f44d3e0340259f",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "opus",
+              "sample_rate": "48000",
+              "start_time": "0.000000"
+            }
+          ],
+          "format": {
+            "duration": "1309.540000"
+          }
+        }
+      },
+      "audio.m4a": {
+        "sha256": "c9d82daa30eb7e27802c7299a89808d04a7e4a3093afdb7f455ef96c0be604b4",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "aac",
+              "sample_rate": "44100",
+              "start_time": "0.000000",
+              "duration": "1309.559002"
+            }
+          ],
+          "format": {
+            "duration": "1309.559002"
+          }
+        }
+      }
+    },
+    "reader_sha256": "ed4e709626d06384bae1a3c994fde214143257205cda81d54233b31cfb6eb844"
+  },
+  {
+    "slug": "benti-chaupai",
+    "artifacts": {
+      "trim-review.json": {
+        "duration": 383.341,
+        "start": {
+          "edge": "start",
+          "clip_start": 0.0,
+          "response": {
+            "packet": {
+              "edge": "start",
+              "decision": "trim",
+              "boundary": 33.66,
+              "outside_type": "noise",
+              "confidence": "high",
+              "reason": "The initial segment contains a continuous test tone and silence before the musical prelude begins."
+            },
+            "usage": {
+              "prompt_tokens": 2053,
+              "completion_tokens": 634,
+              "total_tokens": 2687,
+              "cost": 0.00391725,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.00391725,
+                "upstream_inference_prompt_cost": 0.00153975,
+                "upstream_inference_completions_cost": 0.0023775
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 563,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "end": {
+          "edge": "end",
+          "clip_start": 308.341,
+          "response": {
+            "packet": {
+              "edge": "end",
+              "decision": "keep",
+              "boundary": 75.0,
+              "outside_type": "none",
+              "confidence": "high",
+              "reason": "The track reaches its natural conclusion with the final sung phrase and instrumental resonance fading out, with no non-song material present."
+            },
+            "usage": {
+              "prompt_tokens": 2055,
+              "completion_tokens": 553,
+              "total_tokens": 2608,
+              "cost": 0.003615,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1875,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.003615,
+                "upstream_inference_prompt_cost": 0.00154125,
+                "upstream_inference_completions_cost": 0.00207375
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 472,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "trim_start": 0.0,
+        "trim_end": 383.341,
+        "validation_errors": [],
+        "status": "reviewed"
+      },
+      "trim-applied.json": {
+        "applied": false,
+        "reason": "no verified non-song edge material"
+      },
+      "trim-originals.json": null
+    },
+    "media": {
+      "audio.webm": {
+        "sha256": "ef25cd737d742aa151e0efd86b5d1391e615bcd561b9a2876a03972eb373ae7f",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "opus",
+              "sample_rate": "48000",
+              "start_time": "0.000000"
+            }
+          ],
+          "format": {
+            "duration": "383.341000"
+          }
+        }
+      },
+      "audio.m4a": {
+        "sha256": "9259e3d765e06845909cf79cb18cfcc551132d05290da6f33835b39fca1362eb",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "aac",
+              "sample_rate": "44100",
+              "start_time": "0.000000",
+              "duration": "383.384671"
+            }
+          ],
+          "format": {
+            "duration": "383.384671"
+          }
+        }
+      }
+    },
+    "reader_sha256": "0b214fb5e0d0dee2cd520f1eff3cb9229f59fb5a85eb93432c1549ff8ab516d0"
+  },
+  {
+    "slug": "he-sadaguru-tume-mor-haatku-dhara",
+    "artifacts": {
+      "trim-review.json": {
+        "duration": 456.161,
+        "start": {
+          "edge": "start",
+          "clip_start": 0.0,
+          "response": {
+            "packet": {
+              "edge": "start",
+              "decision": "trim",
+              "boundary": 68.7,
+              "outside_type": "narration",
+              "confidence": "high",
+              "reason": "The clip begins with an introductory spoken discourse explaining the devotional theme before the actual musical prelude starts at 68.7 seconds."
+            },
+            "usage": {
+              "prompt_tokens": 2047,
+              "completion_tokens": 650,
+              "total_tokens": 2697,
+              "cost": 0.00397275,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.00397275,
+                "upstream_inference_prompt_cost": 0.00153525,
+                "upstream_inference_completions_cost": 0.0024375
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 569,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "end": {
+          "edge": "end",
+          "clip_start": 381.161,
+          "response": {
+            "packet": {
+              "edge": "end",
+              "decision": "keep",
+              "boundary": 75.0,
+              "outside_type": "none",
+              "confidence": "high",
+              "reason": "The song naturally finishes and fades out into silence with no post-song platform or promotional material."
+            },
+            "usage": {
+              "prompt_tokens": 2050,
+              "completion_tokens": 553,
+              "total_tokens": 2603,
+              "cost": 0.00361125,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.00361125,
+                "upstream_inference_prompt_cost": 0.0015375,
+                "upstream_inference_completions_cost": 0.00207375
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 480,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "trim_start": 0.0,
+        "trim_end": 456.161,
+        "validation_errors": [],
+        "status": "reviewed"
+      },
+      "trim-applied.json": {
+        "applied": true,
+        "trim_start": 89.81,
+        "trim_end": 456.161,
+        "listener_duration": 366.349,
+        "removed_occurrence_ref": "spoken-intro",
+        "reason": "Removed spoken framing before the first sung invocation; preserved the complete musical invocation and song."
+      },
+      "trim-originals.json": null
+    },
+    "media": {
+      "audio.webm": {
+        "sha256": "cb220d74477d642be0d5a5f11a960f35b8f17d29f37f72b5a47a035790419f43",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "opus",
+              "sample_rate": "48000",
+              "start_time": "0.000000"
+            }
+          ],
+          "format": {
+            "duration": "366.349000"
+          }
+        }
+      },
+      "audio.m4a": {
+        "sha256": "c12b70722792aabf3f81350082433c449a119dcef8a03c4860e376d553a060d7",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "aac",
+              "sample_rate": "44100",
+              "start_time": "0.000000",
+              "duration": "366.340998"
+            }
+          ],
+          "format": {
+            "duration": "366.340998"
+          }
+        }
+      }
+    },
+    "reader_sha256": "a25362cc6b6c22a37e6843609281cf2646216e0e31c5e29f43eecda5c01c90cd"
+  },
+  {
+    "slug": "shri-guru-prarthana",
+    "artifacts": {
+      "trim-review.json": {
+        "duration": 353.501,
+        "start": {
+          "edge": "start",
+          "clip_start": 0.0,
+          "response": {
+            "packet": {
+              "edge": "start",
+              "decision": "trim",
+              "boundary": 34.8,
+              "outside_type": "narration",
+              "confidence": "high",
+              "reason": "The initial 34.8 seconds consist of a spoken introductory narration explaining the theme of the song before the musical recording and singing begin."
+            },
+            "usage": {
+              "prompt_tokens": 2047,
+              "completion_tokens": 585,
+              "total_tokens": 2632,
+              "cost": 0.003729,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.003729,
+                "upstream_inference_prompt_cost": 0.00153525,
+                "upstream_inference_completions_cost": 0.00219375
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 502,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "end": {
+          "edge": "end",
+          "clip_start": 278.501,
+          "response": {
+            "packet": {
+              "edge": "end",
+              "decision": "keep",
+              "boundary": 75.0,
+              "outside_type": "none",
+              "confidence": "high",
+              "reason": "The song and its ambient reverberation fade naturally into silence with no extraneous non-song platform content present."
+            },
+            "usage": {
+              "prompt_tokens": 2050,
+              "completion_tokens": 538,
+              "total_tokens": 2588,
+              "cost": 0.003555,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 1876,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.003555,
+                "upstream_inference_prompt_cost": 0.0015375,
+                "upstream_inference_completions_cost": 0.0020175
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 463,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            },
+            "resolved_model": "google/gemini-3.7-flash"
+          }
+        },
+        "trim_start": 0.0,
+        "trim_end": 353.501,
+        "validation_errors": [],
+        "status": "reviewed"
+      },
+      "trim-applied.json": {
+        "applied": false,
+        "reason": "no verified non-song edge material"
+      },
+      "trim-originals.json": null
+    },
+    "media": {
+      "audio.webm": {
+        "sha256": "e3546dc34b89882320c67b0c815e8ddd7c18a3eaa6bacc336b92dabd3d633251",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "opus",
+              "sample_rate": "48000",
+              "start_time": "0.000000"
+            }
+          ],
+          "format": {
+            "duration": "353.501000"
+          }
+        }
+      },
+      "audio.m4a": {
+        "sha256": "8b0ca470a4af994b9d28bf302e308f5f61af55eb333195f2977f16d7ff27b0ff",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "aac",
+              "sample_rate": "44100",
+              "start_time": "0.000000",
+              "duration": "353.490000"
+            }
+          ],
+          "format": {
+            "duration": "353.490000"
+          }
+        }
+      }
+    },
+    "reader_sha256": "7f7a7cc4f6c9e61c8dfd3a0990856929c7d2dc00016d9762ceea328f9d07651e"
+  }
+]

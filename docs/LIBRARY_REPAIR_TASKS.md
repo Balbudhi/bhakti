@@ -11,26 +11,32 @@ An improved component or a successful pilot does not complete this goal.
 Current step: finish the connected pipeline before further content releases.
 Explicit lexical support, historical audio-cache compatibility, semantic cache
 reuse, bounded intake and automatic WordNet lookup delivery are integrated.
-Automatic lookup requirements now persist across both repair rounds, interrupted
-resume and dictionary updates, separately from current repair objections; 108
-combined tests pass on the working pipeline. This retrieves definitions for
-proposed English words and already-bound source entries. It does not yet discover
-English words through embeddings or missing source dictionary forms; those
-callers remain required before qualification. Short-scope source correction and
-selective timing are now integrated: 146 combined source, timing, dictionary
-discovery and compatibility tests pass with actual storage/router/FFmpeg calls
-and synthetic provider responses. Changed source requires an independent hearing;
-only unresolved/new timing occurrences are measured, and accepted old measurements
-can be reused on subsequent repairs. Automatic support on the fresh-source
-semantic caller, long scopes, missing-source bootstrap and historical crop
-adoption remain open. The source-discovery parser/acquisition primitive is present
-with real Platts witnesses and shared request bounds; its model-facing caller is
-still being integrated.
-Next: close these caller defects, connect the accepted slices, then inspect bounded
-representative song outputs and their cost before scaling. The existing benchmark
-exposed translation weaknesses and does not qualify a broad translation pass.
-No further provider calls or song-content releases have occurred during this
-integration check. Uncommitted changes are not completion or deployment evidence.
+Fresh-source semantic processing now shares automatic evidence validation and
+reuses its accepted gloss when only dictionary support changes. Source correction
+and selective timing cover both short recordings and accepted long source units.
+The integrated caller checks pass 59 tests, including actual FFmpeg/storage/router
+execution with synthetic provider responses: retained repeated refrains constrain
+inserted onsets, only a failed long unit escalates, and completed measurements are
+not charged again on resume. These tests do not certify sung-audio recognition.
+Historical decoded-timebase inspection is present but crop adoption remains
+unactivated until source/timing migration and publication recovery are connected.
+
+The model-facing source dictionary discovery and materialized-evidence renewal
+patches are in independent review. English embedding discovery is implemented
+privately; review found that compact dictionary evidence omitted adjective
+placement restrictions and verb sentence frames. That grammar-loss defect must
+be fixed before its integration. Missing-source bootstrap, shared stage-level
+escalation, historical crop adoption and source-language dictionary coverage
+remain open. Hindi Platts acquisition exists; Punjabi and Tamil coverage must
+not be represented as equivalent verified dictionary support.
+
+Next: connect the reviewed slices, then inspect bounded representative song
+outputs and their cost before scaling. A private comparison is prepared with
+$1 text and $0.05 embedding caps, but has not run. The earlier benchmark exposed
+translation weaknesses and does not qualify a broad translation pass. No further
+provider calls or song-content releases have occurred during these integration
+checks. Owner English remains locked. Uncommitted changes are not deployment
+evidence.
 
 The owner reconfirmed this full goal and requested an exhaustive task list on
 23 October. The existing goal remains active; this document is the maintained

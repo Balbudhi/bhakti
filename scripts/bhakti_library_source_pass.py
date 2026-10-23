@@ -131,6 +131,12 @@ def reconcile_source_observations(reader, plan, observed):
         return hold('Observed units lost or duplicated requested source cores')
     prepared.sort(key=lambda value: (value[0]['core_start'], value[0]['core_end']))
     whole = plan.get('mode') == 'whole_recording'
+    source_unit_coverage = []
+    observation_by_unit = {item['unit']['id']:item['result_digest'] for item in results}
+    def unit_coverage(unit, context_indices, owned_indices):
+        return {**{key:copy.deepcopy(unit[key]) for key in ('id','core_start','core_end','clip_start','clip_end')},
+                'observation_digest':observation_by_unit[unit['id']],
+                'expanded_context_indices':list(context_indices),'expanded_indices':list(owned_indices)}
     if whole:
         requested = plan.get('units', [])
         if len(requested) != 1:
@@ -143,13 +149,18 @@ def reconcile_source_observations(reader, plan, observed):
             return hold('Whole-recording cores have a gap, overlap, or missing edge')
         rows = []
         for index, (unit, current) in enumerate(prepared):
+            original_count = len(current); overlap = 0
             if index and prepared[index - 1][0]['clip_end'] > unit['clip_start']:
                 left = prepared[index - 1][1]
                 seams = [length for length in range(1, min(len(left), len(current)) + 1)
                          if [_source_key(r) for r in left[-length:]] == [_source_key(r) for r in current[:length]]]
                 if len(seams) != 1:
                     return hold('Overlapping source observations conflict or have ambiguous repeated context')
-                current = current[seams[0]:]
+                overlap = seams[0]
+                current = current[overlap:]
+            source_unit_coverage.append(unit_coverage(unit,
+                range(len(rows)-overlap,len(rows)-overlap+original_count),
+                range(len(rows),len(rows)+len(current))))
             rows.extend(current)
         if any(row.get('partial') != 'none' for row in rows):
             return hold('Whole source retains an unresolved clipped fragment')
@@ -186,12 +197,15 @@ def reconcile_source_observations(reader, plan, observed):
                     current[by_old[local]] = {**copy.deepcopy(old_rows[absolute]), 'partial': 'none'}
             if any(row.get('partial') != 'none' for row in current):
                 return hold('Focused observation retains unresolved partial core source')
-            replacements.append((indices[0], indices[-1] + 1, current))
+            replacements.append((indices[0], indices[-1] + 1, current, unit))
         if any(left[1] > right[0] for left, right in zip(replacements, replacements[1:])):
             return hold('Focused replacement contexts overlap; combine and review their source together')
         rows = []; cursor = 0
-        for start, end, replacement in replacements:
-            rows.extend(copy.deepcopy(old_rows[cursor:start])); rows.extend(replacement); cursor = end
+        for start, end, replacement, unit in replacements:
+            rows.extend(copy.deepcopy(old_rows[cursor:start]))
+            span = range(len(rows),len(rows)+len(replacement))
+            source_unit_coverage.append(unit_coverage(unit,span,span))
+            rows.extend(replacement); cursor = end
         rows.extend(copy.deepcopy(old_rows[cursor:]))
     if not rows:
         return hold('Audio observation would remove the entire performance')
@@ -254,6 +268,7 @@ def reconcile_source_observations(reader, plan, observed):
             'requires_confirmation': old_keys != new_keys,
             'coverage_scope': 'whole_recording' if whole else 'focused',
             'occurrence_lineage': lineage, 'timing_unresolved_old_indices': ambiguous_old,
+            'source_unit_coverage': source_unit_coverage,
             'observation_digests': [item['result_digest'] for item in results]}
 
 def digest(value):
@@ -409,7 +424,7 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
     old = pipeline.display_occurrences({'verified_lines': old_draft['lines'],
                                        'performance_order': old_draft['performance_order']})
     new = pipeline.display_occurrences(delta['rebuilt'])
-    measurements = {}
+    measurements = {}; expanded_measurements = {}
     if prior_timing:
         identity = prior_timing.get('source_identity', {})
         fingerprint = hashlib.sha256(json.dumps(identity, ensure_ascii=False, sort_keys=True, allow_nan=False).encode()).hexdigest()
@@ -426,6 +441,7 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
                 raise ValueError('prior timing source differs from original performance')
         measurements = pipeline.retained_timing_measurements(bound,
             prior_timing.get('refinements', []), duration_seconds, require_consensus=True)
+        expanded_measurements.update({f'{oid}-r01':point for oid,point in measurements.items()})
         for report in prior_timing.get('refinements', []):
             if report.get('kind') not in {'joint', 'joint-selection'}:
                 continue
@@ -437,6 +453,7 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
                 errors = pipeline.joint_selection_errors(report, prior_timing)
                 if errors:raise ValueError('; '.join(errors))
                 measurements.update({row['occurrence_id']:row['start'] for row in prior_timing['sequence']})
+                expanded_measurements.update({row['timing_id']:row['start'] for row in report['expanded_starts']})
                 continue
             region = report['region']
             pipeline.validate_joint_region_source(region, bound, duration_seconds)
@@ -444,13 +461,17 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
             pairs = pipeline.joint_pair_evidence(report, expected_region=region,
                 expected_fingerprint=fingerprint, duration=duration_seconds)
             agreed = {row['timing_id']:row for row in pairs['agreed']}
+            expanded_measurements.update({tid:row['start'] for tid,row in agreed.items()})
             for occurrence in region['target_occurrences']:
                 required = pipeline.expanded_timing_targets([occurrence])
                 if all(row['timing_id'] in agreed for row in required):
                     measurements[occurrence['occurrence_id']] = agreed[required[0]['timing_id']]['start']
         if any(row.get('kind') == 'source-adoption' for row in prior_timing.get('refinements', [])):
-            errors = pipeline.source_adoption_timing_errors(prior_timing)
-            if errors:raise ValueError('; '.join(errors))
+            import bhakti_model_routes as routes
+            try:
+                expanded_measurements = pipeline.source_adoption_timing_measurements(prior_timing)
+            except (KeyError, TypeError, OSError, routes.RunFatal) as exc:
+                raise ValueError('prior source adoption timing evidence: ' + str(exc)) from exc
             measurements = {row['occurrence_id']:row['start'] for row in prior_timing['sequence']}
 
     # Reconciliation lineage describes expanded performances. A displayed
@@ -482,6 +503,29 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
             if point <= previous:
                 raise ValueError('retained performance measurements contradict source order')
             previous = point
+    retained_expanded = {}
+    for occurrence in new:
+        oid = occurrence['occurrence_id']
+        if oid not in retained:
+            continue
+        old_oid = provenance[oid]['old_occurrence_id']
+        retained_expanded[f'{oid}-r01'] = retained[oid]
+        for repeat in range(1, occurrence['repeats'] + 1):
+            old_tid = f'{old_oid}-r{repeat:02d}'
+            if old_tid in expanded_measurements:
+                retained_expanded[f'{oid}-r{repeat:02d}'] = expanded_measurements[old_tid]
+    # A display-only proof does not locate the last repeated performance.
+    # Include just that adjacent block when a new following onset needs it.
+    # Reverse order also handles adjacent repeated blocks needing one another.
+    for index in range(len(new) - 1, 0, -1):
+        if new[index]['occurrence_id'] in retained:
+            continue
+        neighbor = new[index - 1]; oid = neighbor['occurrence_id']
+        last_tid = f"{oid}-r{neighbor['repeats']:02d}"
+        if oid in retained and neighbor['repeats'] > 1 and last_tid not in retained_expanded:
+            del retained[oid]; del provenance[oid]
+            for target in pipeline.expanded_timing_targets([neighbor]):
+                retained_expanded.pop(target['timing_id'], None)
     pending = [i for i,row in enumerate(new) if row['occurrence_id'] not in retained]
     groups = []
     for index in pending:
@@ -499,9 +543,67 @@ def plan_source_timing(reader, delta, prior_timing, *, audio_sha256, trim, durat
             'clip_end': min(duration_seconds, right+20.) if right is not None else duration_seconds,
             'target_indices': group, 'target_occurrences': copy.deepcopy(new[first:last+1]),
             'preceding_context': preceding, 'following_context': following,
+            'preceding_timing_id': pipeline.expanded_timing_targets([preceding])[-1]['timing_id'] if preceding else None,
+            'following_timing_id': pipeline.expanded_timing_targets([following])[0]['timing_id'] if following else None,
             'retained_anchor_starts': {row['occurrence_id']: retained[row['occurrence_id']]
                                        for row in (preceding,following) if row}})
-    return {'retained_starts': retained, 'regions': regions, 'ordered_occurrences': new,
+    if duration_seconds > 900 and regions:
+        coverage = delta.get('source_unit_coverage')
+        if not isinstance(coverage, list) or not coverage:
+            raise ValueError('long source timing needs accepted bounded source unit ownership')
+        expanded = pipeline.expanded_timing_targets(new)
+        owners = {}; unit_ids = set(); previous_core_end = None
+        for unit in coverage:
+            if unit.get('id') in unit_ids:
+                raise ValueError('duplicate source unit ownership identity')
+            unit_ids.add(unit.get('id'))
+            if (unit.get('observation_digest') not in delta['observation_digests']
+                    or any(type(unit.get(key)) not in (int,float) or not math.isfinite(unit[key])
+                           for key in ('clip_start','clip_end','core_start','core_end'))
+                    or not 0 <= unit['clip_start'] <= unit['core_start'] < unit['core_end'] <= unit['clip_end'] <= duration_seconds
+                    or unit['clip_end']-unit['clip_start'] > 900):
+                raise ValueError('invalid bounded source unit ownership evidence')
+            if previous_core_end is not None and (unit['core_start'] < previous_core_end
+                    or delta['coverage_scope'] == 'whole_recording' and abs(unit['core_start']-previous_core_end) > .0005):
+                raise ValueError('source unit ownership core gap or overlap')
+            previous_core_end = unit['core_end']
+            context = unit.get('expanded_context_indices'); owned = unit.get('expanded_indices')
+            if any(not isinstance(indices,list) or any(type(i) is not int or not 0 <= i < len(expanded) for i in indices)
+                   or indices != sorted(set(indices)) for indices in (context,owned)):
+                raise ValueError('invalid source unit expanded ownership indices')
+            if not set(owned).issubset(context):
+                raise ValueError('source unit ownership outside observed context')
+            for index in owned:
+                if index in owners:raise ValueError('duplicate source unit expanded ownership')
+                owners[index] = unit['id']
+        if delta['coverage_scope'] == 'whole_recording' and (
+                set(owners) != set(range(len(expanded))) or coverage[0]['core_start'] != 0
+                or abs(coverage[-1]['core_end']-duration_seconds) > .0005):
+            raise ValueError('incomplete whole source unit ownership')
+        needed = [i for i,row in enumerate(expanded) if row['occurrence_id'] not in retained]
+        if not set(needed).issubset(owners):
+            raise ValueError('missing source unit ownership for pending timing')
+        positions = {row['occurrence_id']:i for i,row in enumerate(new)}
+        regions = []
+        for unit in coverage:
+            indices = [i for i in needed if owners[i] == unit['id']]
+            if not indices:continue
+            display_indices = sorted({positions[expanded[i]['occurrence_id']] for i in indices})
+            first,last = display_indices[0],display_indices[-1]
+            preceding = copy.deepcopy(new[first-1]) if first else None
+            following = copy.deepcopy(new[last+1]) if last+1<len(new) else None
+            regions.append({'index':len(regions),'grid':'joint-context',
+                'clip_start':unit['clip_start'],'clip_end':unit['clip_end'],
+                'source_unit_id':unit['id'],'target_indices':display_indices,
+                'target_occurrences':[copy.deepcopy(new[i]) for i in display_indices],
+                'target_timing_ids':[expanded[i]['timing_id'] for i in indices],
+                'preceding_context':preceding,'following_context':following,
+                'preceding_timing_id':expanded[indices[0]-1]['timing_id'] if indices[0] else None,
+                'following_timing_id':expanded[indices[-1]+1]['timing_id'] if indices[-1]+1<len(expanded) else None,
+                'retained_anchor_starts':{row['occurrence_id']:retained[row['occurrence_id']]
+                    for row in (preceding,following) if row and row['occurrence_id'] in retained}})
+    return {'retained_starts': retained, 'retained_expanded_starts': retained_expanded,
+            'regions': regions, 'ordered_occurrences': new,
             'retained_lineage': provenance, 'prior_timing_digest': digest(prior_timing),
             'source_delta_digest': digest(delta)}
 
@@ -516,14 +618,6 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
     options = copy.copy(options)
     options.semantic_full_source = plan['lines']
     options = library.lexical_options(options, song_dir.name, plan['lines'], languages)
-    support = pipeline.bhakti_lexical_support.project_support(
-        getattr(options, 'semantic_lexical_support', None), plan['new_target_ids'])
-    def candidate_errors(value):
-        errors = fresh_target_errors(plan, metadata, value)
-        if not errors:
-            errors.extend(pipeline.bhakti_lexical_support.support_decision_errors(support,
-                value['glosses']['packet']['glosses'], value['translations']['packet']['translations']))
-        return errors
     reused = plan.get('reuse_by_id', {})
     planned = {line['id']: line for line in plan['lines']}
     if set(reused) != set(planned) - set(plan['new_target_ids']):
@@ -551,9 +645,22 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
         pipeline.translation_reading_context(targets, pending_glosses, pending_drafts,
             [line['id'] for line in targets[offset:offset + 10]],
             performance_order=plan['performance_order'], full_evidence=context_evidence)
+    options.semantic_context_evidence = copy.deepcopy(context_evidence)
+    options.semantic_performance_order = plan['performance_order']
+    options.semantic_source_identity = digest({'lines': plan['lines'], 'order': plan['performance_order']})
+    audited = {'packet': {'metadata': metadata, 'verified_lines': targets,
+                         'performance_order': [event for event in plan['performance_order'] if event['line_id'] in plan['new_target_ids']],
+                         'uncertainties': []}}
     evidence = {'targets': targets, 'source': plan['lines'], 'order': plan['performance_order'],
                 'languages': languages, 'reading_context': context_evidence, 'policy': pipeline.semantic_stage_policy(options)}
     identity = digest(evidence)
+    validation_song = Path(route_dir) / 'fresh-source-support' / identity / 'songs' / song_dir.name
+    def candidate_errors(value):
+        errors = fresh_target_errors(plan, metadata, value)
+        if not errors:
+            errors.extend(pipeline.bhakti_semantic_repair.derived_support_errors(
+                pipeline, validation_song, audited, value['glosses'], value['translations'], options))
+        return errors
     unit_id = song_dir.name + ':new-source-semantics'
     decisions = getattr(options, 'editorial_adjudications', None) or {}
     if not isinstance(decisions, dict):
@@ -570,16 +677,19 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
         return {**recovered['candidate'], 'editorial_receipt': recovered['receipt']}
     def execute(context):
         local = library.route_options(options, context)
-        local.semantic_full_source = plan['lines']
-        local.semantic_context_evidence = copy.deepcopy(context_evidence)
-        local.semantic_performance_order = plan['performance_order']
-        local.semantic_source_identity = digest({'lines': plan['lines'], 'order': plan['performance_order']})
         attempt_song = context.attempt_dir / 'songs' / song_dir.name
         (attempt_song / '.transcription/pipeline').mkdir(parents=True, exist_ok=True)
-        audited = {'packet': {'metadata': metadata, 'verified_lines': targets,
-                             'performance_order': [event for event in plan['performance_order'] if event['line_id'] in plan['new_target_ids']],
-                             'uncertainties': []}}
-        glosses = pipeline.gloss(attempt_song, audited, local)
+        if pipeline.bhakti_lexical_producer.settings(local) is not None:
+            from bhakti_embedding_client import file_lock
+            # English corpus changes do not repay the unchanged source glossary.
+            # Keep the original producing model and complete reading context bound.
+            gloss_identity = digest({**evidence, 'model': context.model,
+                'policy': pipeline.semantic_stage_policy(local, stage='gloss')})
+            gloss_root = Path(route_dir) / 'fresh-source-glosses' / gloss_identity
+            with file_lock(gloss_root / 'gloss.lock'):
+                glosses = pipeline.gloss(gloss_root / 'songs' / song_dir.name, audited, local)
+        else:
+            glosses = pipeline.gloss(attempt_song, audited, local)
         errors = pipeline.fresh_gloss_contract_errors(targets, glosses['packet']['glosses'], languages)
         if errors: raise routes.QualityFailure([{'kind': 'source_gloss_contract', 'detail': error} for error in errors])
         translations = pipeline.translate(attempt_song, audited, glosses,
