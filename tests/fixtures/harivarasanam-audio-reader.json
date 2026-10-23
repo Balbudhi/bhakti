@@ -1,0 +1,243 @@
+{
+  "SONG_META": {
+    "title": "Harivarāsanam",
+    "subtitle": "Ayyappan",
+    "credit": "K. J. Yesudas",
+    "pageCredit": "K. J. Yesudas",
+    "writer": "",
+    "writerAttribution": "",
+    "translator": "",
+    "translatorAttribution": "",
+    "singer": "K. J. Yesudas",
+    "vocalist": "",
+    "composer": "",
+    "ensemble": "",
+    "languages": [
+      "Malayalam"
+    ],
+    "subjectTags": [
+      "Ayyappan"
+    ],
+    "searchAliases": [
+      "Harivarasanam K J Yesudas"
+    ],
+    "audioSources": [
+      {
+        "src": "audio.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "audio.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "timingStatus": "start-only-reviewed",
+    "translationStatus": "gloss-derived literal",
+    "sourceStatus": "reviewed"
+  },
+  "SONG_LINES": {
+    "inst-intro": {
+      "source": "",
+      "sourceLanguage": "",
+      "sourceWords": [],
+      "roman": "",
+      "english": "[Instrumental]",
+      "words": [],
+      "nameTable": false,
+      "grammarNote": "Instrumental prelude; no verbal text."
+    },
+    "vocalise-1": {
+      "source": "മ്... ആ...",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "മ്...",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "ആ...",
+          "wordIndices": [
+            1
+          ]
+        }
+      ],
+      "roman": "Mm... Ā...",
+      "english": "{0:Mm...} {1:Ā...}",
+      "words": [
+        {
+          "roman": "Mm...",
+          "gloss": "humming sound",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "Ā...",
+          "gloss": "sustained open vowel sound",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Non-lexical vocables (melodic syllables); uninflected."
+    },
+    "inst-flute-strings-1": {
+      "source": "",
+      "sourceLanguage": "",
+      "sourceWords": [],
+      "roman": "",
+      "english": "[Instrumental]",
+      "words": [],
+      "nameTable": false,
+      "grammarNote": "Instrumental interlude featuring flute and string ensemble; no verbal text."
+    },
+    "vocalise-2": {
+      "source": "ആ... മ്...",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ആ...",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "മ്...",
+          "wordIndices": [
+            1
+          ]
+        }
+      ],
+      "roman": "Ā... Mm...",
+      "english": "{0:Ā...} {1:Mm...}",
+      "words": [
+        {
+          "roman": "Ā...",
+          "gloss": "sustained open vowel sound",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "Mm...",
+          "gloss": "humming sound",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Non-lexical vocables; uninflected."
+    },
+    "inst-flute-2": {
+      "source": "",
+      "sourceLanguage": "",
+      "sourceWords": [],
+      "roman": "",
+      "english": "[Instrumental]",
+      "words": [],
+      "nameTable": false,
+      "grammarNote": "Instrumental interlude featuring solo flute; no verbal text."
+    },
+    "vocalise-3": {
+      "source": "ആ...",
+      "sourceLanguage": "",
+      "sourceWords": [
+        {
+          "text": "ആ...",
+          "wordIndices": [
+            0
+          ]
+        }
+      ],
+      "roman": "Ā...",
+      "english": "{0:Ā...}",
+      "words": [
+        {
+          "roman": "Ā...",
+          "gloss": "sustained open vowel sound",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "nameTable": false,
+      "grammarNote": "Non-lexical vocable; uninflected."
+    },
+    "inst-outro": {
+      "source": "",
+      "sourceLanguage": "",
+      "sourceWords": [],
+      "roman": "",
+      "english": "[Instrumental]",
+      "words": [],
+      "nameTable": false,
+      "grammarNote": "Instrumental outro with bells, flute, strings, and conch; no verbal text."
+    }
+  },
+  "SONG_SEQUENCE": [
+    {
+      "ref": "inst-intro",
+      "section": "instrumental",
+      "repeats": 1
+    },
+    {
+      "ref": "vocalise-1",
+      "section": "verse",
+      "repeats": 1
+    },
+    {
+      "ref": "inst-flute-strings-1",
+      "section": "instrumental",
+      "repeats": 1
+    },
+    {
+      "ref": "vocalise-2",
+      "section": "verse",
+      "repeats": 1
+    },
+    {
+      "ref": "inst-flute-2",
+      "section": "instrumental",
+      "repeats": 1
+    },
+    {
+      "ref": "vocalise-3",
+      "section": "verse",
+      "repeats": 1
+    },
+    {
+      "ref": "inst-outro",
+      "section": "instrumental",
+      "repeats": 1
+    }
+  ],
+  "SONG_TIMINGS": [
+    {
+      "start": 12.38,
+      "end": 37.15
+    },
+    {
+      "start": 37.15,
+      "end": 61.9
+    },
+    {
+      "start": 61.9,
+      "end": 86.65
+    },
+    {
+      "start": 86.65,
+      "end": 111.42
+    },
+    {
+      "start": 111.42,
+      "end": 136.18
+    },
+    {
+      "start": 136.18,
+      "end": 160.94
+    },
+    {
+      "start": 160.94,
+      "end": 173.321
+    }
+  ]
+}

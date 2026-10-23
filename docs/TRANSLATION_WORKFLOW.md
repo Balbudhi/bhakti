@@ -200,6 +200,25 @@ Inspect `inventory.json`, `queue.json`, `frozen-inventory.json`, `run.json`,
 fresh audio clearance. A whole pass ending with unresolved songs is unfinished
 content work. The runner preserves remaining work when a bound stops execution.
 
+Current-reader audits retain valid findings independently of malformed sibling
+rows or later model approval. The runner reconciles the finding journal with
+the original attempt artifacts on both fresh and cached execution. Returned
+partial reviews survive transport failure; unknown outcomes keep their original
+retry restrictions. Descriptive notes with an explicit false review flag are
+observations, while actual open choices remain holds. A targeted repair must
+match the original source-word quotation and receive an explicit independent
+disposition for that finding. Private partial repairs cannot be published while
+other findings remain unresolved. Older failed artifacts without an integrity
+anchor require explicit reviewed recovery; their provenance is not invented.
+
+The source adapter also contains bounded observation operations for short or
+focused audio units. These preserve raw observations, exact source hypotheses
+and frozen textual witnesses, with independent unit retries. They do not yet
+replace the library caller's source-repair path: long-recording partitioning,
+discrepancy adjudication and guarded source-delta adoption still need integration.
+An observed segment is neither a complete-source certificate nor permission to
+publish a changed reader.
+
 Only confirmed target fields may change; metadata, other lines, timing and owner
 English retain their guards. Source/order changes invalidate dependent timing and
 semantic work; gloss changes invalidate affected English/review, and timing-only

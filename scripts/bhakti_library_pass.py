@@ -24,6 +24,7 @@ import editorial_baselines
 import prepare_library_review as prepare
 import retranslate_bhakti
 import apply_translation_style_review as reader_writer
+import bhakti_review_findings as finding_store
 
 VERSION = 1
 ROOT = Path(__file__).resolve().parents[1]
@@ -226,34 +227,46 @@ def route_options(options, context):
 
 def current_review_errors(artifact: dict, lines: list[dict], glosses: list[dict],
                           expected_reader_digest: str, dependency_fingerprint: str) -> list[dict]:
-    errors = []
-    if (artifact.get('reader_digest') != expected_reader_digest
-            or artifact.get('dependency_fingerprint') != dependency_fingerprint
-            or not artifact.get('attempt_id')):
-        errors.append('current review input identity mismatch')
-    reviews = artifact.get('reviews')
-    if not isinstance(reviews, list): reviews = []; errors.append('review list missing')
-    if [row.get('id') for row in reviews] != [line['id'] for line in lines]:
-        errors.append('current review IDs incomplete or reordered')
-    issues = []
-    for row in reviews:
-        if not isinstance(row.get('unsupported_additions'), list):
-            errors.append('unsupported additions must be an explicit array')
-        if not isinstance(row.get('material_choice'), str):
-            errors.append('material choice must be an explicit string')
-        elif row['material_choice']:
-            errors.append('material poetic choice remains unresolved')
-        recorded = row.get('issues')
-        if not isinstance(recorded, list): errors.append('typed review issues missing'); continue
-        issues.extend(recorded)
-        failed = (any(row.get(key) is not True for key in
-                      ('passes', 'agency_preserved', 'imagery_preserved', 'all_meaning_accounted_for'))
-                  or row.get('human_review_recommended') is not False or bool(row.get('unsupported_additions')))
-        if failed and not recorded: errors.append('failed source-first review has no typed evidenced issue')
-        if not failed and recorded: errors.append('passing review contradicts its recorded defects')
-    errors += pipeline.semantic_repair_issue_errors(lines, glosses, issues)
-    if issues != artifact.get('issues'): errors.append('review issues differ from preserved issue list')
+    raw = {key: value for key, value in artifact.items()
+           if key not in {'finding_snapshot', 'finding_journal_path', 'finding_route_state_path'}}
+    try:
+        result = finding_store.classify_review(raw, lines=lines, glosses=glosses,
+            reader_digest=expected_reader_digest, dependency_fingerprint=dependency_fingerprint)
+        errors = result['contract_errors']
+    except ValueError as exc:
+        errors = [str(exc)]
     return [{'kind': 'invalid_review', 'detail': error} for error in errors]
+
+
+def _reconcile_review_history(state_path, journal_path, context, *, active_attempt=None):
+    """Rebuild missing observations from the original attempts, never latest-only."""
+    import bhakti_model_routes as routes
+    snapshot = finding_store.load_snapshot(journal_path, **context)
+    state = read_json(state_path)
+    if not state:
+        if snapshot['reviews']:
+            raise routes.RunFatal('review journal has no original route history')
+        return snapshot
+    original_attempts = set()
+    for index, attempt in enumerate(state.get('attempts', [])):
+        attempt_id = attempt.get('attempt_id'); original_attempts.add(attempt_id)
+        if attempt_id == active_attempt and attempt.get('status') == 'running':
+            continue
+        candidate_path = state_path.parent / ('flash' if index == 0 else 'pro') / 'candidate.json'
+        candidate = read_json(candidate_path)
+        expected = attempt.get('candidate_sha256')
+        if (attempt.get('status') == 'transport-failed' and not expected and candidate is None
+                and not any(entry['artifact']['attempt_id'] == attempt_id for entry in snapshot['reviews'])):
+            # No review was returned; the router alone owns transport escalation.
+            continue
+        if not expected or not isinstance(candidate, dict):
+            raise routes.RunFatal('prior audit evidence missing or historical candidate is unbound')
+        if (prepare.json_digest(candidate) != expected or candidate.get('attempt_id') != attempt_id):
+            raise routes.RunFatal('prior audit candidate identity mismatch')
+        snapshot = finding_store.record_review(journal_path, candidate, **context)
+    if any(entry['artifact']['attempt_id'] not in original_attempts for entry in snapshot['reviews']):
+        raise routes.RunFatal('finding journal attempt absent from original route history')
+    return snapshot
 
 
 def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir: Path,
@@ -270,26 +283,77 @@ def audit_current_reader(reader: dict, *, slug: str, workspace: Path, route_dir:
     policy = pipeline.translation_policy_payload()
     request_identity = prepare.json_digest({'version': VERSION, 'reader': reader,
         'policy': policy, 'baseline': protected_english, 'purpose': 'identify-current-defects'})
+    context = dict(lines=lines, glosses=glosses, reader_digest=reader_digest,
+                   dependency_fingerprint=dependency_fingerprint)
+    journal_path = Path(workspace) / '.transcription' / 'review-findings' / (
+        prepare.json_digest({'reader': reader_digest, 'dependency': dependency_fingerprint}) + '.json')
+    state_path = routes.unit_state_path(route_dir, slug + ':current-source-review', request_identity,
+        dependency_fingerprint=dependency_fingerprint, base_model=options.model, pro_model=options.pro_model)
+    _reconcile_review_history(state_path, journal_path, context)
 
-    def execute(context):
-        local = route_options(options, context)
+    def execute(context_attempt):
+        local = route_options(options, context_attempt)
         local.semantic_full_source = lines
         local.semantic_performance_order = copy.deepcopy(reader['SONG_SEQUENCE'])
         local.semantic_source_identity = dependency_fingerprint
+        snapshot = _reconcile_review_history(state_path, journal_path, context,
+                                             active_attempt=context_attempt.attempt_id)
+        local.semantic_pending_findings = finding_store.pending_findings(snapshot)
+        observed = {}
+        def observe(response, target_ids, label):
+            evidence = {'response': response, 'target_ids': target_ids}
+            # A child is selected again when assembled into its parent cache.
+            # Retain the first raw packet, not the later annotated projection.
+            if label not in observed:
+                observed[label] = evidence
+        local.semantic_review_observer = observe
         provided = json.dumps(protected_english, ensure_ascii=False) if protected_english else '(none supplied)'
-        reviews, packets = pipeline.independently_review_translations(
-            context.attempt_dir / slug, lines, glosses, translations, provided, local,
-            languages=reader.get('SONG_META', {}).get('languages'))
+        response_errors = []; transport_failure = None
+        try:
+            reviews, packets = pipeline.independently_review_translations(
+                context_attempt.attempt_dir / slug, lines, glosses, translations, provided, local,
+                languages=reader.get('SONG_META', {}).get('languages'))
+        except (routes.QualityFailure, routes.UnitTransportFailure) as exc:
+            if not observed:
+                raise
+            if isinstance(exc, routes.UnitTransportFailure):
+                transport_failure = exc
+            # Preserve actual requested rows, including duplicates for quarantine.
+            # Never zip by position, adopt context-only rows, or fabricate passes.
+            reviews = []; packets = []
+            for evidence in observed.values():
+                response = evidence['response']; packets.append(copy.deepcopy(response))
+                packet = response.get('packet') if isinstance(response, dict) else None
+                rows = packet.get('reviews') if isinstance(packet, dict) else None
+                if isinstance(rows, list):
+                    reviews.extend(copy.deepcopy(row) for row in rows
+                        if isinstance(row, dict) and row.get('id') in evidence['target_ids'])
+            if transport_failure is not None:
+                response_errors = ['review incomplete after transport failure: ' + exc.category]
+            else:
+                response_errors = ['review response contract: ' + str(issue.get('detail', issue))
+                                   for issue in exc.issues]
         issues = [issue for row in reviews if isinstance(row.get('issues'), list) for issue in row['issues']]
-        return {'reviewPurpose': 'identify-current-defects', 'reader_digest': reader_digest,
-                'dependency_fingerprint': dependency_fingerprint, 'attempt_id': context.attempt_id,
+        artifact = {'reviewPurpose': 'identify-current-defects', 'reader_digest': reader_digest,
+                'dependency_fingerprint': dependency_fingerprint, 'attempt_id': context_attempt.attempt_id,
                 'reviews': reviews, 'issues': issues, 'reviewPackets': packets,
                 'source_lines': lines, 'gloss_rows': glosses}
+        if response_errors:
+            artifact['response_contract_errors'] = response_errors
+        finding_store.record_review(journal_path, artifact, **context)
+        if transport_failure is not None:
+            transport_failure.diagnostic_artifact = artifact
+            raise transport_failure
+        return artifact
 
-    return routes.run_unit(route_dir, slug + ':current-source-review', request_identity,
+    accepted = routes.run_unit(route_dir, slug + ':current-source-review', request_identity,
         execute, lambda value: current_review_errors(value, lines, glosses, reader_digest, dependency_fingerprint),
         deadline_at=deadline_at, dependency_fingerprint=dependency_fingerprint,
         base_model=options.model, pro_model=options.pro_model)
+
+    snapshot = _reconcile_review_history(state_path, journal_path, context)
+    return {**accepted, 'finding_snapshot': snapshot, 'finding_journal_path': str(journal_path),
+            'finding_route_state_path': str(state_path)}
 
 
 def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspace: Path,
@@ -302,14 +366,34 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
     errors = current_review_errors(pre_review, lines, original_glosses,
                                    prepare.json_digest(reader), dependency_fingerprint)
     if errors: raise ValueError('unbound or invalid pre-review: ' + str(errors))
-    issues = pre_review['issues']
+    snapshot = pre_review.get('finding_snapshot')
+    if snapshot is not None:
+        context = dict(lines=lines, glosses=original_glosses,
+            reader_digest=prepare.json_digest(reader), dependency_fingerprint=dependency_fingerprint)
+        snapshot = finding_store.validate_snapshot(snapshot, **context)
+        if pre_review.get('finding_journal_path'):
+            current = _reconcile_review_history(Path(pre_review['finding_route_state_path']),
+                Path(pre_review['finding_journal_path']), context)
+            if current != snapshot:
+                raise ValueError('retained findings changed before repair')
+        guard.authorize_semantic_candidate(reader, reader, source_lines=lines,
+            gloss_rows=original_glosses, pre_review=pre_review, post_review=None,
+            dependency_fingerprint=dependency_fingerprint, protected_english=protected_english,
+            finding_snapshot=snapshot, allow_partial=True)
+        repair_findings = [f for f in snapshot['findings'] if f['kind'] == 'defect'
+                           and f['issue']['kind'] != 'unresolved_evidence']
+        issues = [f['issue'] for f in repair_findings]
+    else:
+        repair_findings = []
+        issues = pre_review['issues']
     if any(issue['kind'] == 'unresolved_evidence' for issue in issues):
         raise ValueError('unresolved source evidence cannot authorize semantic repair')
     targets = {target for issue in issues for target in issue['target_line_ids']}
     if not targets:
         receipt = guard.authorize_semantic_candidate(reader, reader, source_lines=lines,
             gloss_rows=original_glosses, pre_review=pre_review, post_review=None,
-            dependency_fingerprint=dependency_fingerprint, protected_english=protected_english)
+            dependency_fingerprint=dependency_fingerprint, protected_english=protected_english,
+            finding_snapshot=snapshot, allow_partial=snapshot is not None)
         return {'reader': copy.deepcopy(reader), 'authorization': receipt, 'post_review': None}
     target_lines = [line for line in lines if line['id'] in targets]
     lexical_indices: dict[str, set[int]] = {}
@@ -327,6 +411,7 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
         local.semantic_full_source = lines
         local.semantic_performance_order = copy.deepcopy(reader['SONG_SEQUENCE'])
         local.semantic_source_identity = dependency_fingerprint
+        local.semantic_repair_findings = repair_findings
         local.semantic_confirmed_issues = issues
         local.semantic_repair_feedback = issues
         local.semantic_original_reader = {key: copy.deepcopy(reader['SONG_LINES'][key]) for key in targets}
@@ -371,7 +456,8 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
             guard.authorize_semantic_candidate(reader, artifact['reader'],
                 source_lines=lines, gloss_rows=original_glosses, pre_review=pre_review,
                 post_review=artifact['post_review'], dependency_fingerprint=dependency_fingerprint,
-                protected_english=protected_english)
+                protected_english=protected_english,
+                finding_snapshot=snapshot, allow_partial=snapshot is not None)
         except ValueError as exc:
             # The pure gate reports exact rejected mutations; no blanket flag
             # clearing or selection of a less-bad candidate is permitted.
@@ -384,7 +470,8 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
         base_model=options.model, pro_model=options.pro_model)
     receipt = guard.authorize_semantic_candidate(reader, accepted['reader'], source_lines=lines,
         gloss_rows=original_glosses, pre_review=pre_review, post_review=accepted['post_review'],
-        dependency_fingerprint=dependency_fingerprint, protected_english=protected_english)
+        dependency_fingerprint=dependency_fingerprint, protected_english=protected_english,
+        finding_snapshot=snapshot, allow_partial=snapshot is not None)
     return {**accepted, 'authorization': receipt}
 
 
@@ -482,6 +569,16 @@ def execute_song(root: Path, row: dict, state_dir: Path, options, deadline_at: f
         route_dir=route_dir, options=options, dependency_fingerprint=dependency, deadline_at=deadline_at)
     guard_original_inputs(root, row)
     candidate = repaired['reader']; changed = bool(repaired['authorization']['confirmed_changes'])
+    journal_path = Path(pre['finding_journal_path'])
+    finding_journal = {'path': str(journal_path), 'sha256': file_hash(journal_path),
+                       'route_state_path': pre['finding_route_state_path']}
+    if repaired['authorization'].get('publicationEligible') is False:
+        result = {'status': 'unresolved', 'publicationEligible': False,
+            'reader': repaired['reader'], 'authorization': repaired['authorization'],
+            'source': source_result, 'finding_journal': finding_journal,
+            'issues': ['retained audit findings require explicit resolution']}
+        pipeline.semantic_write_json(state_dir / 'songs' / slug / 'semantic-held-candidate.json', result)
+        return result
     if changed:
         reader_writer.write_reader(slug, candidate, root=workspace)
         page = workspace / 'songs' / slug / 'index.html'
@@ -500,6 +597,7 @@ def execute_song(root: Path, row: dict, state_dir: Path, options, deadline_at: f
         'candidateRoot': str(workspace), 'candidateReaderSha256': file_hash(workspace / 'songs' / slug / 'data.js'),
         'candidatePageSha256': file_hash(workspace / 'songs' / slug / 'index.html'),
         'authorization': repaired['authorization'], 'source': source_result,
+        'finding_journal': finding_journal,
         'evidenceGaps': row['evidenceGaps'], 'audioClaim': 'No new audio clearance except recorded source-stage evidence.'}
     pipeline.semantic_write_json(state_dir / 'songs' / slug / 'result.json', result)
     return result
@@ -699,6 +797,30 @@ def execute_inventory(root: Path, inventory: dict, state_dir: Path, options) -> 
             if slug in run['songs'] and slug not in continuations:
                 accepted = run['songs'][slug]
                 if accepted.get('status') == 'accepted':
+                    journal = accepted.get('finding_journal')
+                    authorization = accepted.get('authorization', {})
+                    if not isinstance(journal, dict) or not journal.get('path'):
+                        raise ValueError('accepted result lacks retained finding evidence')
+                    journal_path = Path(journal['path']).resolve()
+                    if (not journal_path.is_relative_to(state_dir.resolve())
+                            or not journal_path.is_file() or file_hash(journal_path) != journal.get('sha256')):
+                        raise ValueError('accepted result finding journal changed or missing')
+                    snapshot = read_json(journal_path)
+                    if (prepare.json_digest(snapshot) != authorization.get('finding_snapshot_digest')
+                            or authorization.get('publicationEligible') is not True
+                            or authorization.get('pending_findings') != []):
+                        raise ValueError('accepted result has unresolved or unbound findings')
+                    route_path = journal.get('route_state_path')
+                    if route_path:
+                        original = prepare.load_javascript((root / 'songs' / slug / 'data.js').read_bytes())
+                        if accepted.get('source'):
+                            original = accepted['source']['reader']
+                        sources, glosses, _ = reader_evidence(original)
+                        current = _reconcile_review_history(Path(route_path), journal_path,
+                            dict(lines=sources, glosses=glosses, reader_digest=prepare.json_digest(original),
+                                 dependency_fingerprint=authorization['dependency_fingerprint']))
+                        if prepare.json_digest(current) != authorization['finding_snapshot_digest']:
+                            raise ValueError('accepted result omits prior route findings')
                     candidate_root = Path(accepted['candidateRoot']).resolve()
                     if not candidate_root.is_relative_to(state_dir.resolve()):
                         raise ValueError('accepted candidate path escaped private run')

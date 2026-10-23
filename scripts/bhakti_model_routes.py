@@ -38,9 +38,10 @@ class QualityFailure(RuntimeError):
 
 class UnitTransportFailure(RuntimeError):
     def __init__(self, category: str, *, request_id: str | None = None,
-                 worker_terminated: bool = False, detail: str = ''):
+                 worker_terminated: bool = False, detail: str = '', diagnostic_artifact: dict | None = None):
         self.category=category;self.request_id=request_id
         self.worker_terminated=worker_terminated;self.detail=detail
+        self.diagnostic_artifact=diagnostic_artifact
         super().__init__(category + (': '+detail if detail else ''))
 
 
@@ -162,24 +163,55 @@ def validate_transport_context(context: dict[str, Any], model: str) -> dict[str,
         raise RunFatal('invalid or missing unit attempt context') from exc
 
 
+def _unit_identity(unit_id, input_fingerprint, dependency_fingerprint, base_model, pro_model, policy):
+    model_pricing(base_model, 0); model_pricing(pro_model, 0)
+    if not isinstance(policy, EscalationPolicy): raise RunFatal('typed escalation policy required')
+    dependency_fingerprint = dependency_fingerprint or input_fingerprint
+    if any(not isinstance(value, str) or not value for value in
+           (unit_id, input_fingerprint, dependency_fingerprint)):
+        raise RunFatal('unit and input/dependency fingerprints required')
+    return {'version': ROUTE_VERSION, 'unit_id': unit_id, 'input_fingerprint': input_fingerprint,
+            'dependency_fingerprint': dependency_fingerprint, 'base_model': base_model,
+            'pro_model': pro_model, 'policy': asdict(policy)}
+
+
+def unit_state_path(state_dir, unit_id, input_fingerprint, *, dependency_fingerprint=None,
+                    base_model=FLASH_MODEL, pro_model=PRO_MODEL, policy=EscalationPolicy()):
+    """Locate one immutable-identity unit without reading, creating or resetting it."""
+    identity = _unit_identity(unit_id, input_fingerprint, dependency_fingerprint,
+                              base_model, pro_model, policy)
+    return Path(state_dir) / _digest(identity) / 'route-state.json'
+
+
+def _check_candidate_digests(state_path, state):
+    for index, attempt in enumerate(state.get('attempts', [])):
+        expected = attempt.get('candidate_sha256')
+        if expected is None:
+            # Historical failed attempts lack this anchor. Consumers must not
+            # treat their candidate evidence as newly integrity-bound.
+            continue
+        candidate = _read(state_path.parent / ('flash' if index == 0 else 'pro') / 'candidate.json')
+        if _digest(candidate) != expected:
+            raise RunFatal('attempt candidate digest mismatch', state_path=state_path)
+
+
 def run_unit(state_dir: Path, unit_id: str, input_fingerprint: str,
              execute: Callable[[AttemptContext],dict], validate: Callable[[dict],list[dict]], *,
              deadline_at: float, dependency_fingerprint: str | None = None,
              base_model: str = FLASH_MODEL, pro_model: str = PRO_MODEL,
              policy: EscalationPolicy = EscalationPolicy()) -> dict:
-    model_pricing(base_model,0);model_pricing(pro_model,0)
-    if not isinstance(policy,EscalationPolicy):raise RunFatal('typed escalation policy required')
-    dependency_fingerprint=dependency_fingerprint or input_fingerprint
-    if any(not isinstance(value,str) or not value for value in (unit_id,input_fingerprint,dependency_fingerprint)):
-        raise RunFatal('unit and input/dependency fingerprints required')
+    identity = _unit_identity(unit_id, input_fingerprint, dependency_fingerprint,
+                              base_model, pro_model, policy)
+    dependency_fingerprint = identity['dependency_fingerprint']
     if not math.isfinite(deadline_at):raise RunFatal('invalid unit deadline')
-    identity={'version':ROUTE_VERSION,'unit_id':unit_id,'input_fingerprint':input_fingerprint,
-              'dependency_fingerprint':dependency_fingerprint,'base_model':base_model,'pro_model':pro_model,
-              'policy':asdict(policy)}
-    directory=Path(state_dir)/_digest(identity);state_path=directory/'route-state.json'
+    state_path = unit_state_path(state_dir, unit_id, input_fingerprint,
+        dependency_fingerprint=dependency_fingerprint, base_model=base_model,
+        pro_model=pro_model, policy=policy)
+    directory = state_path.parent
     if state_path.exists():
         state=_read(state_path)
         if any(state.get(key)!=value for key,value in identity.items()):raise RunFatal('route identity mismatch',state_path=state_path)
+        _check_candidate_digests(state_path, state)
         if state.get('status')=='accepted':
             result=_read(directory/'accepted-result.json')
             if _digest(result)!=state.get('accepted_sha256'):raise RunFatal('accepted result digest mismatch',state_path=state_path)
@@ -227,6 +259,8 @@ def run_unit(state_dir: Path, unit_id: str, input_fingerprint: str,
             candidate=execute(ctx)
             if not isinstance(candidate,dict):raise RunFatal('stage executor must return artifact object')
             atomic_json(attempt_dir/'candidate.json',candidate)
+            record['candidate_sha256'] = _digest(candidate)
+            atomic_json(state_path, state)
             issues=_issues(validate(copy.deepcopy(candidate)))
             if issues:raise QualityFailure(issues)
             atomic_json(directory/'accepted-result.json',candidate)
@@ -241,6 +275,14 @@ def run_unit(state_dir: Path, unit_id: str, input_fingerprint: str,
             eligible=policy.quality_failure and not any(row['kind'] in {'locked_baseline_conflict','missing_source_evidence'} for row in issues)
             reason='quality failure'
         except UnitTransportFailure as exc:
+            # A prior child request may have returned real diagnostic evidence.
+            # Bind it without changing this attempt's transport status or policy.
+            if exc.diagnostic_artifact is not None:
+                if not isinstance(exc.diagnostic_artifact, dict):
+                    raise RunFatal('transport diagnostic artifact must be an object', state_path=state_path)
+                atomic_json(attempt_dir/'candidate.json', exc.diagnostic_artifact)
+                record['candidate_sha256'] = _digest(exc.diagnostic_artifact)
+                atomic_json(state_path, state)
             record.update(status='transport-failed',category=exc.category,request_id=exc.request_id,
                           worker_terminated=exc.worker_terminated,detail=exc.detail,finished_at=time.time())
             if exc.category=='unknown-outcome':eligible=policy.unknown_outcome and exc.worker_terminated

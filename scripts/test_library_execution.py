@@ -89,8 +89,7 @@ class CurrentContentExecutionTests(unittest.TestCase):
         self.assertEqual(transport.call_count, 2); self.assertEqual(result['issues'], [])
 
     def test_malformed_fidelity_fields_cannot_be_cached_as_valid_pre_review(self):
-        for bad_fields in ({'material_choice': None}, {'unsupported_additions': None},
-                           {'material_choice': 'two unresolved agency choices'}):
+        for bad_fields in ({'material_choice': None}, {'unsupported_additions': None}):
             with self.subTest(fields=bad_fields), tempfile.TemporaryDirectory() as temporary:
                 self.directory = Path(temporary)
                 malformed = {**review(), **bad_fields}
@@ -98,6 +97,16 @@ class CurrentContentExecutionTests(unittest.TestCase):
                 with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', side_effect=responses) as transport:
                     result = self.execute(reader())
                 self.assertEqual(transport.call_count, 2); self.assertEqual(result['reviews'][0], review())
+
+
+    def test_descriptive_choice_note_is_preserved_as_diagnostic_observation(self):
+        descriptive = {**review(), 'material_choice': 'The noun is rendered in its supported cognitive sense.'}
+        with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', return_value={'packet': {'reviews': [descriptive]}}) as transport:
+            result = self.execute(reader())
+        self.assertEqual(transport.call_count, 1)
+        self.assertEqual(result['reviews'], [descriptive])
+        self.assertEqual(result['finding_snapshot']['findings'], [])
+
 
 
 class TargetedRepairExecutionTests(CurrentContentExecutionTests):

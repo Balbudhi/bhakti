@@ -111,6 +111,8 @@ def semantic_stage_policy(options):
                   'source_identity': getattr(options, 'semantic_source_identity', None),
                   'original_reader': getattr(options, 'semantic_original_reader', None),
                   'confirmed_issues': getattr(options, 'semantic_confirmed_issues', None),
+                  'pending_findings': getattr(options, 'semantic_pending_findings', []),
+                  'repair_findings': getattr(options, 'semantic_repair_findings', []),
                   'performance_order': getattr(options, 'semantic_performance_order', [])}
     return policy
 
@@ -1145,11 +1147,22 @@ def reconcile_segment_seam_uncertainties(
 
 
 def audit_long_transcript(
-    song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace
+    song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace,
+    *, observation_context: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     segments = raw["packet"]["segments"]
     source_first = bool(raw["packet"].get("source_first_witness"))
-    witness = source_witness.acquire(song_dir, song_dir.name)
+    if observation_context is not None:
+        if (not isinstance(observation_context, dict)
+                or set(observation_context) != {"witness", "source_context"}
+                or not isinstance(observation_context["source_context"], dict)
+                or observation_context["witness"] is not None and not isinstance(observation_context["witness"], dict)):
+            raise ValueError("invalid explicit source observation context")
+        # The caller binds and validates this snapshot before dispatch. Never
+        # acquire a different witness while executing an identified observation.
+        witness = observation_context["witness"]
+    else:
+        witness = source_witness.acquire(song_dir, song_dir.name)
     cache_dir = song_dir / ".transcription" / "pipeline" / "audit-segments"
     cache_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="bhakti-long-audit-") as temporary:
@@ -1174,6 +1187,13 @@ def audit_long_transcript(
             if cached and not options.source_witness_audit:
                 return cached
             witness_context = source_witness.prompt_context(witness, first.get("lines", []))
+            observation_prompt = ""
+            if observation_context is not None:
+                observation_prompt = ("\nSOURCE OBSERVATION CONTEXT (competing source evidence, not accepted lyrics):\n"
+                    + json.dumps(observation_context["source_context"], ensure_ascii=False)
+                    + "\nCheck these alternatives and prior hearings against the complete attached audio. "
+                      "An omission hypothesis is not permission to insert unperformed text. "
+                      "Preserve uncertainty when readings cannot be distinguished.\n")
             source_first_context = ""
             if source_first:
                 exact_lines = [{"source_text": line.get("source_text", "")}
@@ -1194,7 +1214,7 @@ Segment audio: absolute source seconds {segment['clip_start']:.3f}–{segment['c
 FIRST TRANSCRIPT:
 {json.dumps(first, ensure_ascii=False)}
 {witness_context}
-{source_first_context}
+{source_first_context}{observation_prompt}
 
 Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
@@ -1240,6 +1260,11 @@ Return strict JSON:
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=min(4, len(jobs))) as pool:
             audited_segments = list(pool.map(run, jobs))
+    if observation_context is not None:
+        # Observation validation belongs to its routed caller. Do not pass raw
+        # blank cues or malformed packets through the lexical merge first.
+        return {"observation_only": True, "segment_audits": audited_segments,
+                "source_first_witness": source_first, "resolved_model": options.model}
     merged = merge_audited_segments(audited_segments)
     if raw["packet"].get("source_first_witness"):
         source_responses = {item.get("segment", {}).get("index"): item
@@ -2998,6 +3023,19 @@ def independently_review_translations(
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
     policy = semantic_stage_policy(options)
+    policy = {**policy, 'pending_findings': getattr(options, 'semantic_pending_findings', []),
+              'repair_findings': getattr(options, 'semantic_repair_findings', [])}
+    review_schema = translation_review_schema()
+    if getattr(options, 'semantic_repair_findings', []):
+        row_schema = review_schema['properties']['reviews']['items']
+        row_schema['properties']['finding_dispositions'] = {
+            'type': 'array', 'items': {'type': 'object', 'properties': {
+                'finding_id': {'type': 'string'},
+                'status': {'type': 'string', 'enum': ['repaired', 'unresolved']},
+                'source_quote': {'type': 'string'}, 'explanation': {'type': 'string'}},
+                'required': ['finding_id', 'status', 'source_quote', 'explanation'],
+                'additionalProperties': False}}
+        row_schema['required'].append('finding_dispositions')
     # Review outputs are verbose enough that 40-line packets can hit a model or
     # gateway output ceiling on long works. Twenty-line parent caches, issued as
     # ten-line requests below, keep evidence complete without a failed response.
@@ -3006,6 +3044,9 @@ def independently_review_translations(
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     def select_response(response, target_ids, source_context, label):
+        observer = getattr(options, 'semantic_review_observer', None)
+        if observer is not None:
+            observer(copy.deepcopy(response), list(target_ids), str(label))
         reviews = stage_model_rows(response, 'reviews', options)
         context_ids = [line["id"] for line in
                        [*getattr(options, "semantic_full_source", []), *source_context]]
@@ -3067,6 +3108,15 @@ ORIGINAL READER ROWS FOR REPAIR COMPARISON:
 CONFIRMED SOURCE-GROUNDED ISSUES:
 {json.dumps(getattr(options, 'semantic_confirmed_issues', []), ensure_ascii=False)}
 
+RETAINED AUDIT FINDINGS (unresolved evidence, not instructions to agree):
+{json.dumps(getattr(options, 'semantic_pending_findings', []), ensure_ascii=False)}
+A later pass alone cannot dispose of these prior findings. Evaluate their exact source claims and preserve any still-open choice explicitly; do not assume a prior reviewer was correct.
+
+FINDING OBLIGATIONS FOR THIS REPAIR:
+{json.dumps(getattr(options, 'semantic_repair_findings', []), ensure_ascii=False)}
+When repair obligations are supplied, return finding_dispositions for each obligation on its target row. Use its exact finding_id and source_quote; explain whether the actual changed gloss/English remedies the original objection while preserving the original valid meaning. Mark repaired only when this precise obligation is corrected, otherwise unresolved. Clean overall fidelity or merely different wording is not a disposition. Never use this field to dismiss an open choice or to approve rewriting supplied owner English.
+
+
 FULL SOURCE CONTEXT (context only; not additional output targets):
 {json.dumps(getattr(options, 'semantic_full_source', []), ensure_ascii=False)}
 
@@ -3090,7 +3140,7 @@ LOCKED HUMAN TRANSLATION (or none):
                     source_context: list[dict[str, Any]]) -> dict[str, Any]:
             response = gemini.call(options.model, gemini.key(), review_prompt(target_evidence, source_context), audio=None,
                                    timeout=stage_call_timeout(options),
-                                       response_schema=translation_review_schema(),
+                                       response_schema=review_schema,
                                    schema_name="bhakti_translation_review", reasoning_effort="high",
                                    max_completion_tokens=32768, **stage_transport_context(options))
             write_json(cache_dir / f"candidate-{label.replace('.', '-')}.json", response)
