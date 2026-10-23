@@ -35,6 +35,16 @@ Caller/FFmpeg tests establish these mechanics, not acoustic correctness. The
 stricter audit currently exposes six historical evidence failures recorded in
 the task list. Do not bypass those failures to publish content.
 
+Boundary installation, reader generation, media publication and site assembly
+share per-song transaction locks. Audio preparation occurs before the brief
+installation lock; consumers reject pending or changed source snapshots. Changed
+listener files use immutable hash-named release assets, preserving URLs used by
+older live readers. A completed upload can be reused after interruption, and the
+public media manifest is replaced atomically. Both Pages workflows invoke the
+same public allowlist assembler, which excludes private pipeline/review state and
+rejects a mixed reader snapshot before replacing its artifact. These are release
+consistency checks, not acoustic qualification or historical crop approval.
+
 ## How a meaning becomes English
 
 The recording determines the performed source and order. A dictionary cannot add

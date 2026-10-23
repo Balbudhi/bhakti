@@ -6,7 +6,11 @@ source/timing consumer also accepts exact performance lineage.
 """
 from __future__ import annotations
 
+from contextlib import contextmanager
 from fractions import Fraction
+import fcntl
+import os
+import threading
 import hashlib
 import json
 import math
@@ -14,6 +18,76 @@ from pathlib import Path
 import subprocess
 import tempfile
 from typing import Any
+
+
+_LOCKS: dict[str, threading.RLock] = {}
+_LOCKS_GUARD = threading.Lock()
+_HELD = threading.local()
+
+
+@contextmanager
+def boundary_transaction(song_dir: Path):
+    """Serialize a song's brief install or publication operation across processes.
+
+    Runtime locks are outside immutable song archives, remain on disk, and are
+    reentrant within one thread so generation under a caller lock cannot deadlock.
+    Model work and FFmpeg preparation never belong in this critical section.
+    """
+    key = str(Path(song_dir).resolve())
+    with _LOCKS_GUARD:
+        lock = _LOCKS.setdefault(key, threading.RLock())
+    with lock:
+        held = getattr(_HELD, 'paths', set())
+        if key in held:
+            yield
+            return
+        directory = Path(tempfile.gettempdir()) / f'bhakti-boundary-locks-{os.getuid()}'
+        directory.mkdir(mode=0o700, exist_ok=True)
+        path = directory / (hashlib.sha256(key.encode()).hexdigest() + '.lock')
+        with path.open('a+b') as handle:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+            _HELD.paths = held | {key}
+            try:
+                yield
+            finally:
+                _HELD.paths = held
+                fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+
+
+def boundary_snapshot(song_dir: Path, paths) -> dict[str, str | None]:
+    """Bind a consumer's input files and transaction generation under its lock."""
+    require_completed_boundary_transaction(song_dir)
+    paths = set(Path(path).resolve() for path in paths)
+    paths.add((song_dir / '.transcription/trim-applied.json').resolve())
+    return {str(path): _digest(path) if path.is_file() else None for path in sorted(paths)}
+
+
+def require_boundary_snapshot(song_dir: Path, snapshot: dict[str, str | None]) -> None:
+    require_completed_boundary_transaction(song_dir)
+    if boundary_snapshot(song_dir, [Path(path) for path in snapshot]) != snapshot:
+        raise RuntimeError(f'{song_dir.name}: boundary publication snapshot changed')
+
+
+def require_completed_boundary_transaction(song_dir: Path) -> None:
+    """Hold consumers while local audio/source/timing replacements are incomplete.
+
+    This is an interruption gate, not a certificate of acoustic or editorial
+    correctness. Legacy completed markers remain eligible for their usual audits.
+    """
+    path = song_dir / '.transcription/trim-applied.json'
+    if not path.exists():
+        return
+    try:
+        marker = json.loads(path.read_text(encoding='utf-8'))
+        if not isinstance(marker, dict):
+            raise ValueError('marker is not an object')
+        adoption = marker.get('adoption') or {}
+        if not isinstance(adoption, dict):
+            raise ValueError('adoption marker is not an object')
+    except (OSError, ValueError) as exc:
+        raise RuntimeError(f'{song_dir.name}: boundary recovery required; invalid transaction marker') from exc
+    if marker.get('status') == 'pending' or adoption.get('status') == 'pending':
+        raise RuntimeError(f'{song_dir.name}: pending boundary adoption requires recovery before consumption')
 
 
 def _digest(path: Path) -> str:

@@ -39,6 +39,7 @@ def replace_global(path: Path, name: str, value: Any) -> None:
 
 def repair(slug: str) -> dict[str, Any]:
     song_dir = ROOT / "songs" / slug
+    pipeline.require_completed_boundary_transaction(song_dir)
     page = song_dir / "data.js"
     page_data = load_song_page(page)
     timings = page_data.get("SONG_TIMINGS", [])
@@ -46,6 +47,7 @@ def repair(slug: str) -> dict[str, Any]:
     source = pipeline.read_packet(song_dir / ".transcription" / "source.json") or {}
     options = argparse.Namespace(model=pipeline.MODEL, timeout=300, force=False)
     trim = pipeline.detect_youtube_trim(song_dir, source, options)
+    pipeline.require_trim_adoption(song_dir, trim)
     if trim.get("validation_errors"):
         raise RuntimeError(f"trim validation failed: {trim['validation_errors']}")
     start = float(trim["trim_start"])

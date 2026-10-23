@@ -24,6 +24,12 @@ def data_javascript(data: dict) -> str:
 
 
 def rebuild(directory: Path) -> tuple[bool, bool]:
+    with pipeline.boundary_transaction(directory):
+        return _rebuild(directory)
+
+
+def _rebuild(directory: Path) -> tuple[bool, bool]:
+    pipeline.require_completed_boundary_transaction(directory)
     data_path = directory / "data.js"
     if not data_path.is_file():
         return False, False

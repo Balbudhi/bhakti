@@ -38,6 +38,13 @@ escalation, historical crop adoption and source-language dictionary coverage
 remain open. Hindi Platts acquisition exists; Punjabi and Tamil coverage must
 not be represented as equivalent verified dictionary support.
 
+Release consistency prerequisites are integrated and pass 32 focused checks:
+pending installs block consumers, immutable media preserves old live URLs,
+interrupted manifest writes preserve the prior file, and both Pages workflows
+assemble the same public allowlist from a stable snapshot. Actual interprocess
+tests verify that FFmpeg preparation occurs outside the install lock. No new
+media upload or deployed-runtime claim follows from these offline checks.
+
 Next: connect the reviewed slices, then inspect bounded representative song
 outputs and their cost before scaling. A private comparison is prepared with
 $1 text and $0.05 embedding caps, but has not run. The earlier benchmark exposed

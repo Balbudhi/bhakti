@@ -49,7 +49,7 @@ import tag_taxonomy
 import source_word_map
 import source_witness
 import scripture_metadata
-from bhakti_boundary_timebase import (classify_historical_boundary_evidence,
+from bhakti_boundary_timebase import (boundary_transaction, require_completed_boundary_transaction, classify_historical_boundary_evidence,
                                       inspect_historical_boundary, measure_boundary_timebase)
 
 
@@ -835,10 +835,18 @@ def apply_lossless_trim(song_dir: Path, artifact: dict[str, Any]) -> None:
             and existing.get("trim_end") == end and existing.get("source_sha256") == normalized["source_sha256"]):
         return
     no_trim = start <= 0.001 and end >= duration - 0.001
+    def require_unchanged_inputs():
+        if (read_packet(marker_path) or {}) != existing:
+            raise RuntimeError("boundary transaction changed during preparation")
+        if {row["src"]: digest(song_dir / row["src"]) for row in sources} != current:
+            raise RuntimeError("listener audio changed during boundary preparation")
+
     if no_trim and not manifest:
-        routes.atomic_json(marker_path, {"application_version": 2, "applied": False, "status": "no-trim",
-            "trim_start": start, "trim_end": end, "source_sha256": normalized["source_sha256"],
-            "outputs": {name: {"sha256": value} for name, value in current.items()}})
+        with boundary_transaction(song_dir):
+            require_unchanged_inputs()
+            routes.atomic_json(marker_path, {"application_version": 2, "applied": False, "status": "no-trim",
+                "trim_start": start, "trim_end": end, "source_sha256": normalized["source_sha256"],
+                "outputs": {name: {"sha256": value} for name, value in current.items()}})
         return
     if not manifest:
         archive_dir.mkdir(parents=True, exist_ok=True)
@@ -848,41 +856,52 @@ def apply_lossless_trim(song_dir: Path, artifact: dict[str, Any]) -> None:
                 if digest(original) != row["sha256"]:
                     raise RuntimeError("preserved original conflicts with current source")
             else:
-                temporary = original.with_name(original.name + ".saving")
-                shutil.copy2(song_dir / row["src"], temporary)
-                if digest(temporary) != row["sha256"]:
-                    raise RuntimeError("original audio archive copy failed verification")
-                temporary.replace(original)
+                temporary = original.with_name(original.name + ".saving-" + os.urandom(8).hex())
+                try:
+                    shutil.copy2(song_dir / row["src"], temporary)
+                    if digest(temporary) != row["sha256"]:
+                        raise RuntimeError("original audio archive copy failed verification")
+                    try:
+                        # Atomic create-if-absent: another preparer may archive
+                        # concurrently, but nobody may replace an original.
+                        os.link(temporary, original)
+                    except FileExistsError:
+                        if digest(original) != row["sha256"]:
+                            raise RuntimeError("preserved original conflicts with concurrent archive")
+                finally:
+                    temporary.unlink(missing_ok=True)
             with original.open("rb") as handle:
                 os.fsync(handle.fileno())
         routes.atomic_json(manifest_path, {"version": 2, "sources": sources})
-    work_dir = song_dir / ".transcription" / "trim-work"
-    work_dir.mkdir(parents=True, exist_ok=True)
-    outputs = {}
-    for row in sources:
-        original, output = archive_dir / row["src"], work_dir / row["src"]
-        if no_trim:
-            shutil.copy2(original, output)
-        else:
-            subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(original),
-                            "-ss", f"{start:.3f}", "-to", f"{end:.3f}", "-map", "0:a:0", "-c", "copy",
-                            "-avoid_negative_ts", "make_zero", str(output)], check=True)
-        evidence = trim_packet_evidence(original, output, start)
-        if evidence["duration"] <= 0 or abs(evidence["duration"] - (end - start)) > 0.25:
-            raise RuntimeError("trim output duration does not match the retained interval")
-        with output.open("rb") as handle:
-            os.fsync(handle.fileno())
-        outputs[row["src"]] = {**evidence, "sha256": digest(output)}
-    pending = {"application_version": 2, "status": "pending", "applied": False,
-               "trim_start": start, "trim_end": end, "source_sha256": normalized["source_sha256"],
-               "removed_seconds": round(duration - (end - start), 3), "initial_assets": current, "outputs": outputs}
-    routes.atomic_json(marker_path, pending)
-    for row in sources:
-        (work_dir / row["src"]).replace(song_dir / row["src"])
-    for name, expected in outputs.items():
-        if digest(song_dir / name) != expected["sha256"]:
-            raise RuntimeError("trim output digest changed during application")
-    routes.atomic_json(marker_path, {**pending, "status": "no-trim" if no_trim else "applied", "applied": not no_trim})
+    with tempfile.TemporaryDirectory(prefix="trim-work-", dir=song_dir / ".transcription") as temporary_work:
+        work_dir = Path(temporary_work)
+        outputs = {}
+        for row in sources:
+            original, output = archive_dir / row["src"], work_dir / row["src"]
+            if no_trim:
+                shutil.copy2(original, output)
+            else:
+                subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(original),
+                                "-ss", f"{start:.3f}", "-to", f"{end:.3f}", "-map", "0:a:0", "-c", "copy",
+                                "-avoid_negative_ts", "make_zero", str(output)], check=True)
+            evidence = trim_packet_evidence(original, output, start)
+            if evidence["duration"] <= 0 or abs(evidence["duration"] - (end - start)) > 0.25:
+                raise RuntimeError("trim output duration does not match the retained interval")
+            with output.open("rb") as handle:
+                os.fsync(handle.fileno())
+            outputs[row["src"]] = {**evidence, "sha256": digest(output)}
+        pending = {"application_version": 2, "status": "pending", "applied": False,
+                   "trim_start": start, "trim_end": end, "source_sha256": normalized["source_sha256"],
+                   "removed_seconds": round(duration - (end - start), 3), "initial_assets": current, "outputs": outputs}
+        with boundary_transaction(song_dir):
+            require_unchanged_inputs()
+            routes.atomic_json(marker_path, pending)
+            for row in sources:
+                (work_dir / row["src"]).replace(song_dir / row["src"])
+            for name, expected in outputs.items():
+                if digest(song_dir / name) != expected["sha256"]:
+                    raise RuntimeError("trim output digest changed during application")
+            routes.atomic_json(marker_path, {**pending, "status": "no-trim" if no_trim else "applied", "applied": not no_trim})
 
 
 def stage_quality_failure(options: argparse.Namespace, detail: str, *, kind: str = "model_contract") -> None:
@@ -5067,6 +5086,13 @@ def reviewed_line_labels(job: dict[str, Any], lines: list[dict[str, Any]]) -> di
 
 
 def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
+    with boundary_transaction(song_dir):
+        _generate(song_dir, job, source, audited, timing, glosses, translations,
+                  write_catalogue_after=write_catalogue_after)
+
+
+def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True) -> None:
+    require_completed_boundary_transaction(song_dir)
     bhakti_semantic_repair.require_acceptance(sys.modules[__name__], song_dir / '.transcription/pipeline', glosses, translations, audited=audited)
     errors = publication_errors(audited, timing, glosses, translations)
     if errors:
@@ -5291,6 +5317,7 @@ def language_hold_packet(song_dir: Path, source: dict[str, Any], raw: dict[str, 
 
 
 def hydrate_pipeline_artifacts(packet_dir: Path) -> None:
+    require_completed_boundary_transaction(packet_dir.parent.parent)
     summary = read_packet(packet_dir / "song-packet.json") or {}
     glosses = read_packet(packet_dir / '04-glosses.json') or summary.get('glosses')
     translations = read_packet(packet_dir / '05-translation.json') or summary.get('translation')
@@ -5344,7 +5371,9 @@ def require_trim_adoption(song_dir: Path, artifact: dict[str, Any]) -> None:
 
 
 def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
+    require_completed_boundary_transaction(ROOT / "songs" / job["slug"])
     song_dir, source = intake(job, force=options.force)
+    require_completed_boundary_transaction(song_dir)
     started = time.time()
     trim = detect_youtube_trim(song_dir, source, options)
     require_trim_adoption(song_dir, trim)
@@ -5446,19 +5475,21 @@ def _execute_intake_jobs(options: argparse.Namespace, jobs: list[dict[str, Any]]
             song_dir = ROOT / "songs" / job["slug"]
             packet_dir = song_dir / ".transcription" / "pipeline"
             try:
-                hydrate_pipeline_artifacts(packet_dir)
-                source = read_packet(song_dir / ".transcription" / "source.json") or {}
-                audited = read_packet(packet_dir / "02-transcript-audit.json")
-                timing = read_packet(packet_dir / "03-timing.json")
-                glosses = read_packet(packet_dir / "04-glosses.json")
-                translations = read_packet(packet_dir / "05-translation.json")
-                if not all((audited, timing, glosses, translations)):
-                    raise RuntimeError(f"missing pipeline artifact for {job['slug']}")
-                generate(song_dir, job, source, audited, timing, glosses, translations, write_catalogue_after=False)
-                summary = read_packet(packet_dir / "song-packet.json") or {}
-                summary["publication_status"] = "generated"
-                write_json(packet_dir / "song-packet.json", summary)
-                result["status"] = "generated"
+                with boundary_transaction(song_dir):
+                    require_completed_boundary_transaction(song_dir)
+                    hydrate_pipeline_artifacts(packet_dir)
+                    source = read_packet(song_dir / ".transcription" / "source.json") or {}
+                    audited = read_packet(packet_dir / "02-transcript-audit.json")
+                    timing = read_packet(packet_dir / "03-timing.json")
+                    glosses = read_packet(packet_dir / "04-glosses.json")
+                    translations = read_packet(packet_dir / "05-translation.json")
+                    if not all((audited, timing, glosses, translations)):
+                        raise RuntimeError(f"missing pipeline artifact for {job['slug']}")
+                    generate(song_dir, job, source, audited, timing, glosses, translations, write_catalogue_after=False)
+                    summary = read_packet(packet_dir / "song-packet.json") or {}
+                    summary["publication_status"] = "generated"
+                    write_json(packet_dir / "song-packet.json", summary)
+                    result["status"] = "generated"
             except Exception as exc:
                 result["status"] = "blocked"
                 result["error"] = str(exc)

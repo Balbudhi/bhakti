@@ -2,22 +2,27 @@
 """Upload listener audio to one GitHub Release and write its public URL map.
 
 GitHub Pages has a 1 GiB published-site limit, so high-quality audio belongs in
-release assets rather than the Pages artifact or Git history. Asset names are
-stable (`<song-slug>.<extension>`), allowing a reader URL to survive later
-metadata and UI changes.
+release assets rather than the Pages artifact or Git history. New or changed audio uses content-addressed immutable asset names. Unchanged
+legacy assets retain their existing URLs, so older live readers never start
+playing a different recording while new pages are being deployed.
 """
 
 from __future__ import annotations
 
+from contextlib import ExitStack
 import argparse
 import hashlib
 import json
-import os
 from pathlib import Path
 import shutil
 import subprocess
 import tempfile
-from urllib.parse import quote
+from urllib.parse import quote, unquote
+
+from bhakti_model_routes import atomic_json
+
+from bhakti_boundary_timebase import (boundary_transaction, boundary_snapshot,
+    require_boundary_snapshot, require_completed_boundary_transaction)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -72,13 +77,6 @@ def local_audio(selected_slugs: set[str] | None = None) -> dict[str, list[tuple[
     return songs
 
 
-def link_for_upload(source: Path, destination: Path) -> None:
-    try:
-        os.link(source, destination)
-    except OSError:
-        shutil.copy2(source, destination)
-
-
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as stream:
@@ -101,57 +99,94 @@ def main() -> int:
                         help="Publish only this song's listener audio; repeat for a small release batch.")
     args = parser.parse_args()
 
-    repository = args.repository or repository_name()
-    base = f"https://github.com/{repository}/releases/download/{quote(args.tag, safe='')}"
-    previous = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.is_file() else {}
-    manifest_songs = dict(previous.get("songs", {})) if isinstance(previous, dict) else {}
-    previous_hashes = {
-        source.get("src", "").rsplit("/", 1)[-1]: source.get("sha256")
-        for sources in manifest_songs.values() if isinstance(sources, list)
-        for source in sources if isinstance(source, dict)
-    }
     selected = set(args.song) if args.song else None
+    directories = sorted((directory.resolve() for directory in (ROOT / 'songs').iterdir()
+        if directory.is_dir() and (selected is None or directory.name in selected)))
+    for directory in directories:
+        require_completed_boundary_transaction(directory)
+    with ExitStack() as locks:
+        # The shared manifest has one writer at a time, then song locks always
+        # follow resolved-path order. Boundary installers only take a song lock.
+        locks.enter_context(boundary_transaction(MANIFEST))
+        for directory in directories:
+            locks.enter_context(boundary_transaction(directory))
+        return publish_locked(args, selected, directories)
+
+
+def publish_locked(args, selected, directories) -> int:
     local = local_audio(selected)
     if selected:
         missing = sorted(selected - set(local))
         if missing:
             raise SystemExit(f"selected songs lack listener audio: {', '.join(missing)}")
-    assets = {} if args.manifest_only else release_assets(repository, args.tag)
-
-    pending: list[tuple[Path, str]] = []
-    for slug, sources in local.items():
-        published = []
-        for path, asset_name, mime_type in sources:
-            fingerprint = sha256(path)
-            published.append({"src": f"{base}/{quote(asset_name, safe='')}",
-                              "type": mime_type, "sha256": fingerprint})
-            previous_hash = previous_hashes.get(quote(asset_name, safe=""))
-            if not args.manifest_only and needs_upload(
-                assets.get(asset_name), path.stat().st_size, previous_hash, fingerprint
-            ):
-                pending.append((path, asset_name))
-        manifest_songs[slug] = published
-
-    if pending:
-        upload_root = ROOT / ".transcription"
-        upload_root.mkdir(exist_ok=True)
-        with tempfile.TemporaryDirectory(prefix="media-release-", dir=upload_root) as temporary:
-            staged = []
-            for source, asset_name in pending:
-                target = Path(temporary) / asset_name
-                link_for_upload(source, target)
-                staged.append(str(target))
-            command("gh", "release", "upload", args.tag, "--repo", repository, "--clobber", *staged)
-
-    output = {
-        "schemaVersion": 2,
-        "repository": repository,
-        "releaseTag": args.tag,
-        "songs": {slug: manifest_songs[slug] for slug in sorted(manifest_songs)},
-    }
-    MANIFEST.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"repository": repository, "tag": args.tag, "localSongs": len(local),
-                      "uploadedAssets": len(pending), "manifestSongs": len(manifest_songs)}, indent=2))
+    snapshots = {directory: boundary_snapshot(directory,
+        [directory / name for name in ('data.js', 'index.html')]
+        + [path for path, _, _ in local.get(directory.name, [])]) for directory in directories}
+    def check_inputs():
+        current = sorted(directory.resolve() for directory in (ROOT / 'songs').iterdir()
+            if directory.is_dir() and (selected is None or directory.name in selected))
+        if current != directories:
+            raise RuntimeError('media publication song population changed')
+        for directory, snapshot in snapshots.items():
+            require_boundary_snapshot(directory, snapshot)
+    check_inputs()
+    repository = args.repository or repository_name()
+    base = f"https://github.com/{repository}/releases/download/{quote(args.tag, safe='')}"
+    previous_bytes = MANIFEST.read_bytes() if MANIFEST.is_file() else None
+    previous = json.loads(previous_bytes) if previous_bytes is not None else {}
+    manifest_songs = dict(previous.get('songs', {})) if isinstance(previous, dict) else {}
+    upload_root = ROOT / '.transcription'
+    upload_root.mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='media-release-', dir=upload_root) as temporary:
+        frozen = []
+        for slug, sources in local.items():
+            for path, _, mime_type in sources:
+                staged = Path(temporary) / f'{slug}{path.suffix}'
+                # A hardlink would share an inode with an in-place edit. Copy
+                # first, then compute the name from the exact isolated bytes.
+                shutil.copy2(path, staged)
+                fingerprint = sha256(staged)
+                name = f'{slug}-{fingerprint}{path.suffix}'
+                for row in manifest_songs.get(slug, []):
+                    src = row.get('src', '')
+                    if (row.get('sha256') == fingerprint and row.get('type') == mime_type
+                            and src.startswith(base + '/')):
+                        candidate = unquote(src[len(base) + 1:])
+                        if candidate and Path(candidate).name == candidate:
+                            name = candidate
+                            break
+                named = staged.with_name(name)
+                staged.replace(named)
+                frozen.append((slug, named, mime_type, fingerprint))
+        check_inputs()
+        assets = {} if args.manifest_only else release_assets(repository, args.tag)
+        check_inputs()
+        pending = []
+        published = {slug: [] for slug in local}
+        for slug, staged, mime_type, fingerprint in frozen:
+            if sha256(staged) != fingerprint:
+                raise RuntimeError('immutable upload snapshot changed before publication')
+            published[slug].append({'src': f"{base}/{quote(staged.name, safe='')}",
+                'type': mime_type, 'sha256': fingerprint})
+            if not args.manifest_only:
+                remote_size = assets.get(staged.name)
+                if remote_size is None:
+                    pending.append(str(staged))
+                elif remote_size != staged.stat().st_size:
+                    raise RuntimeError(f'immutable media asset conflicts with local content: {staged.name}')
+        check_inputs()
+        if pending:
+            command('gh', 'release', 'upload', args.tag, '--repo', repository, *pending)
+        check_inputs()
+        if (MANIFEST.read_bytes() if MANIFEST.is_file() else None) != previous_bytes:
+            raise RuntimeError('media manifest changed during publication')
+        for slug, rows in published.items():
+            manifest_songs[slug] = rows
+        output = {'schemaVersion': 2, 'repository': repository, 'releaseTag': args.tag,
+            'songs': {slug: manifest_songs[slug] for slug in sorted(manifest_songs)}}
+        atomic_json(MANIFEST, output)
+    print(json.dumps({'repository': repository, 'tag': args.tag, 'localSongs': len(local),
+        'uploadedAssets': len(pending), 'manifestSongs': len(manifest_songs)}, indent=2))
     return 0
 
 
