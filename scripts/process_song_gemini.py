@@ -187,6 +187,12 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
     artifacts = path.parent / (path.stem + '-responses');artifacts.mkdir(mode=0o700,exist_ok=True)
     response_path = artifacts / (request_id + '.response.json')
     def checked_ledger(ledger):
+        nonlocal deadline_at
+        persisted_deadline = ledger.get('deadline_at')
+        if persisted_deadline is not None:
+            if type(persisted_deadline) not in (int, float) or not math.isfinite(persisted_deadline):
+                raise model_routes.RunFatal('invalid persisted API deadline')
+            deadline_at = min(deadline_at, persisted_deadline) if deadline_at is not None else persisted_deadline
         if ledger.get('blocked') or str(path) in _ABORTED_RUNS:
             if unit_context:raise model_routes.RunFatal('global ledger is blocked')
             raise RuntimeError('bounded API run is blocked; review saved evidence before another dispatch')
@@ -198,7 +204,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
                     worker_terminated=failure.get('worker_terminated',False),detail='attempt already blocked')
     try:
         with _locked_run_ledger(path,budget) as ledger:
-            _remaining_timeout(timeout,deadline_at);checked_ledger(ledger)
+            checked_ledger(ledger);_remaining_timeout(timeout,deadline_at)
             # Every reservation consumes one slot, even if its response or final
             # outcome remains unknown. The same lock serializes all processes.
             if ledger.get('max_calls') is not None and len(ledger['requests']) >= ledger['max_calls']:

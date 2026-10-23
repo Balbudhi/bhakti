@@ -509,9 +509,9 @@ class PipelineTests(unittest.TestCase):
         audio = song / "audio.m4a"
         subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i",
                         "sine=frequency=440:duration=10", "-c:a", "aac", str(audio)], check=True)
-        pipeline.apply_lossless_trim(song, {"duration": 10.0, "trim_start": 2.0, "trim_end": 8.0,
-                                             "validation_errors": []})
-        self.assertLess(pipeline.gemini.duration_seconds(audio), 6.2)
+        from test_boundary_application import accepted_crop
+        pipeline.apply_lossless_trim(song, accepted_crop(song, start=1., end=9.))
+        self.assertLess(pipeline.gemini.duration_seconds(audio), 8.2)
         codec = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0",
                                 "-show_entries", "stream=codec_name", "-of", "default=nw=1:nk=1", str(audio)],
                                check=True, capture_output=True, text=True).stdout.strip()

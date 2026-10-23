@@ -8,6 +8,33 @@ remain unfinished. A successful
 inventory or embedding request is not evidence that the library has been corrected.
 Current execution evidence belongs in [the repair task](LIBRARY_REPAIR_TASKS.md).
 
+## Bounded intake and boundary recovery
+
+The ordinary `bhakti_pipeline.py` intake command now initializes one shared run
+ledger before its workers. A new run defaults to a $1 total ceiling, 128 outbound
+requests and 1,800 seconds. These are run limits, not a song-price estimate.
+Override them explicitly with `--budget-usd`, `--max-calls` and
+`--deadline-seconds`; `--run-dir` selects a private stable state directory.
+Existing configured limits and charges remain authoritative on resume. URL
+aliases for the same YouTube recording share the canonical run identity.
+
+Resume does not renew the original deadline, replace a missing ledger or reset
+an unresolved charge. The existing provider ledger owns spending; the intake
+receipt binds its identity and observed request prefix. A hard-killed process
+cannot attest later rows that never reached its final prefix checkpoint.
+`--generate-only` remains free and bypasses run initialization. Bounded synchronous
+intake rejects unsupported text Batch accounting rather than silently changing
+its billing mode.
+
+Boundary review covers both ends and distinguishes material belonging to the
+performance from unrelated content. Audio application preserves original bytes,
+prepares all outputs before replacing them and records actual media offsets.
+An existing reader or transcript whose retained interval would change currently
+holds before audio mutation; automatic historical adoption is still being built.
+Caller/FFmpeg tests establish these mechanics, not acoustic correctness. The
+stricter audit currently exposes six historical evidence failures recorded in
+the task list. Do not bypass those failures to publish content.
+
 ## How a meaning becomes English
 
 The recording determines the performed source and order. A dictionary cannot add

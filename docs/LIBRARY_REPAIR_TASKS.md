@@ -97,6 +97,25 @@ cache-adoption run passes 150 tests. Automatic retrieval, boundary caller recove
 and selective timing remain unfinished, so broad paid processing is still stopped.
 No new provider spending was incurred in this integration checkpoint.
 
+Bounded intake and both-edge application are integrated into the actual main
+caller. Independent caller review closed missing/replaced-ledger reset, lock-time
+limit widening, YouTube alias duplication and owned-audio trim/resume defects.
+The current-main integration passed 117 tests; the lead separately ran 53 boundary
+and caller cases. Historical changed crops still hold pending adoption and live
+acoustic qualification has not run. The updated trim audit checks 111 records
+and now flags six historical evidence problems: akashi-zep-ghe-re-pakhara
+(retained interval mismatch), anuraniya-thokada, arunachala-akshara-mana-malai,
+benti-chaupai, he-sadaguru-tume-mor-haatku-dhara and shri-guru-prarthana
+(invalid retained evidence). No new audio was changed. These remain required
+repairs before a subsequent content release.
+
+The complete official WordNet 3.1 dictionary is available privately for engine
+qualification, with retained archive and per-file hashes. Actual lookup across
+all four parts of speech returned 33 senses for seven representative English
+lemmas in 0.058 seconds; the producer's independent run took 0.080 seconds first
+lookup and 0.023 seconds cached. These are local lookup measurements, not
+translation-quality or whole-library cost claims.
+
 Published `a3366b3f`: two source-word mapping corrections in Aruṇācala line 007.
 Exact comparison proves every other reader field, including owner English and
 timings, unchanged. Desktop and 390px popup checks show the corrected Tamil spans

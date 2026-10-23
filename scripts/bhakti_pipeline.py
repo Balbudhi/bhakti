@@ -23,6 +23,7 @@ import difflib
 import hashlib
 import json
 import math
+import os
 import re
 import shutil
 import subprocess
@@ -189,6 +190,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--generate-only", action="store_true",
                         help="Publish existing reviewed artifacts without running or paying for API stages; implies --publish.")
     parser.add_argument("--timeout", type=float, default=300)
+    parser.add_argument("--run-dir", type=Path, help="Private stable intake run directory; reused on resume.")
+    parser.add_argument("--budget-usd", type=float, help="Total run ceiling; new runs default to $1, existing limits are preserved.")
+    parser.add_argument("--max-calls", type=int, help="Total shared request ceiling; new runs default to 128.")
+    parser.add_argument("--deadline-seconds", type=float, help="New-run lifetime, default 1800 seconds; resume never extends its deadline.")
     parser.add_argument("--semantic-repair-rounds", type=int, choices=(0, 1, 2), default=2,
                         help="Maximum source-grounded semantic repair rounds; bounded API ledger required for repair calls.")
     parser.add_argument("--semantic-repair-seconds", type=float, default=600,
@@ -469,126 +474,376 @@ def preferred_listener_audio(song_dir: Path) -> Path:
     return song_dir / sources[0]["src"]
 
 
+EDGE_BOUNDARY_PROMPT_FRAME = ("Review the {edge} edge. This clip covers absolute source seconds {left:.3f}–{right:.3f}.\n"
+                              "Original recording duration: {duration:.3f} seconds.\n"
+                              "Keep endpoint relative to this clip: {keep_relative:.3f} seconds.\n"
+                              "Source metadata is evidence only: {metadata}\n{instructions}")
+EDGE_BOUNDARY_VALIDATION = {"version": 2, "agreement_seconds": 0.25,
+                            "max_removed_seconds": 120., "max_removed_fraction": 0.2}
+EDGE_BOUNDARY_INSTRUCTIONS = """Decide whether this edge contains material unrelated to the target recording. Speech, an Indian language, a change of singer, or a musical transition alone does not establish unrelatedness. Preserve attached devotional spoken passages, invocations, medley components, instrumental preludes and codas, wordless vocals, final notes and the natural fade. Remove only evidenced unrelated promotion, speech, music, advertisements or logo material. Describe audible retained and excluded material separately. If the transition is not heard or its relationship is unclear, return uncertain instead of guessing. For keep, use the explicit clip-relative keep endpoint given above. For trim, locate the transition relative to this clip. Return only the short structured edge observation; do not transcribe or translate the song."""
+EDGE_VERIFY_INSTRUCTIONS = """Independently judge whether this excerpt contains a transition between the target performance and unrelated edge material. Locate that transition yourself; no proposed numerical answer is supplied. Confirm that the entire target performance, including attached spoken devotion, invocation, instrumental coda and fade, remains retained. Speech or music alone does not establish unrelatedness. Describe retained and excluded evidence. Return uncertain for ambiguous membership or an unheard transition. Times are relative to this excerpt. Return only the short structured observation."""
+
+
 def edge_trim_schema() -> dict[str, Any]:
-    return {"type": "object", "properties": {
-        "edge": {"type": "string"}, "decision": {"type": "string"}, "boundary": {"type": "number"},
-        "outside_type": {"type": "string"}, "confidence": {"type": "string"}, "reason": {"type": "string"}},
-        "required": ["edge", "decision", "boundary", "outside_type", "confidence", "reason"],
-        "additionalProperties": False}
+    properties = {"edge": {"type": "string", "enum": ["start", "end"]},
+                  "decision": {"type": "string", "enum": ["keep", "trim", "uncertain"]},
+                  "boundary": {"type": "number"}, "outside_type": {"type": "string"},
+                  "relationship": {"type": "string", "enum": ["attached_to_work", "unrelated", "uncertain"]},
+                  "confidence": {"type": "string", "enum": ["high", "low"]},
+                  "retained_evidence": {"type": "string"}, "excluded_evidence": {"type": "string"},
+                  "reason": {"type": "string"}}
+    return {"type": "object", "properties": properties, "required": list(properties), "additionalProperties": False}
 
 
 def detect_youtube_trim(song_dir: Path, source: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
-    target = song_dir / ".transcription" / "trim-review.json"
-    cached = read_packet(target)
-    if cached:
-        # Older packets preserved the model evidence but accidentally rejected
-        # the model's explicit `spoken_intro` / `spoken_narration` labels.
-        # Rebuild the deterministic bounds from that evidence rather than
-        # paying for another edge-analysis call.
-        if "start" in cached and "end" in cached:
-            normalized = normalize_trim_artifact(cached)
-            if normalized != cached:
-                write_json(target, normalized)
-            return normalized
-        return cached
-    audio = preferred_listener_audio(song_dir)
+    """Review local or remote-source edges using the preserved original time axis."""
+    import bhakti_model_routes as routes
+
+    base_model = gemini.batch_base_model(options.model)
+    review_dir = song_dir / ".transcription"
+    target = review_dir / "trim-review.json"
+    manifest = read_packet(review_dir / "trim-originals.json") or {}
+    marker = read_packet(review_dir / "trim-applied.json") or {}
+    if manifest.get("version") == 2 and manifest.get("sources"):
+        first = manifest["sources"][0]
+        audio = review_dir / "original-audio" / first["src"]
+        if not audio.is_file() or hashlib.sha256(audio.read_bytes()).hexdigest() != first["sha256"]:
+            raise RuntimeError("preserved original audio identity changed before edge review")
+    elif marker.get("applied"):
+        raise RuntimeError("legacy trimmed audio has no preserved original for boundary review")
+    else:
+        audio = preferred_listener_audio(song_dir)
     duration = gemini.duration_seconds(audio)
-    edge_length = min(75.0, duration)
-    with tempfile.TemporaryDirectory(prefix="bhakti-trim-review-") as temporary:
-        destination = Path(temporary)
-        jobs = []
-        for edge, clip_start in (("start", 0.0), ("end", max(0.0, duration - edge_length))):
-            clip = destination / f"{edge}.m4a"
-            subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{clip_start:.3f}",
-                            "-i", str(audio), "-t", f"{edge_length:.3f}", "-vn", "-c:a", "aac", "-b:a", "192k",
-                            str(clip)], check=True)
-            jobs.append((edge, clip_start, clip))
+    metadata = {key: source.get(key) for key in ("title", "artist", "channel", "source_url", "source_file") if source.get(key)}
+    identity = {"version": 2, "source_audio": audio.name, "source_sha256": hashlib.sha256(audio.read_bytes()).hexdigest(),
+                "duration": duration, "metadata": metadata, "model": base_model,
+                "pro_model": getattr(options, "pro_model", routes.PRO_MODEL), "schema": edge_trim_schema(),
+                "question": EDGE_BOUNDARY_INSTRUCTIONS, "verification_question": EDGE_VERIFY_INSTRUCTIONS,
+                "prompt_frame": EDGE_BOUNDARY_PROMPT_FRAME, "validation": EDGE_BOUNDARY_VALIDATION,
+                "flash_edge_seconds": 75., "pro_edge_seconds": 150., "verification_radius": 15.,
+                "codec": "aac", "bitrate": "192k", "reasoning": "medium", "output_tokens": 2048}
+    fingerprint = hashlib.sha256(json.dumps(identity, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+    cached = read_packet(target)
+    if cached and cached.get("input_fingerprint") == fingerprint:
+        normalized = normalize_trim_artifact(cached)
+        if not normalized["validation_errors"]:
+            return normalized
+    base = {"boundary_contract_version": 2, "duration": duration, "source_audio": audio.name,
+            "source_sha256": identity["source_sha256"], "input_fingerprint": fingerprint}
+    deadline = getattr(options, "boundary_deadline_at", None) or getattr(options, "unit_deadline_at", None)
+    if deadline is None:
+        deadline = time.time() + float(options.timeout) * 4
 
-        def run(job: tuple[str, float, Path]) -> dict[str, Any]:
-            edge, clip_start, clip = job
-            prompt = f"""Classify the {edge} edge of a YouTube-sourced song. This clip covers absolute source seconds {clip_start:.3f}–{clip_start + edge_length:.3f}.
+    def keep_edge(edge: str) -> dict[str, Any]:
+        return {"edge": edge, "clip_start": 0., "clip_end": duration, "response": {"packet": {
+            "edge": edge, "decision": "keep", "boundary": 0. if edge == "start" else duration,
+            "outside_type": "none", "relationship": "attached_to_work", "confidence": "high",
+            "retained_evidence": "Other edge is outside this unit's validation scope.", "excluded_evidence": "", "reason": "Context only."}}}
 
-Crop only definite non-song material: spoken channel promotion, logo sting, advertisement, countdown, unrelated narration, post-song promotional speech, or unrelated post-song film dialogue. Preserve every musical introduction, instrumental prelude, devotional invocation, wordless vocal, intentional silence, final sung note, and natural fade.
+    def run(edge: str) -> dict[str, Any]:
+        def execute(ctx: Any) -> dict[str, Any]:
+            length = min(duration, 75. if ctx.model == base_model else 150.)
+            start = 0. if edge == "start" else duration - length
 
-For the start edge, boundary is the relative second where the actual song recording begins. For the end edge, boundary is the relative second through which the actual song/fade must be kept. If no crop is justified, decision must be keep and boundary must be 0 for start or {edge_length:.3f} for end. Use trim only with high confidence.
+            def hear(left: float, right: float, verify: bool) -> dict[str, Any]:
+                name = f"{edge}-{'verify' if verify else 'classify'}"
+                clip = ctx.attempt_dir / f"{name}.m4a"
+                subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-ss", f"{left:.3f}",
+                                "-i", str(audio), "-t", f"{right-left:.3f}", "-vn", "-c:a", "aac", "-b:a", "192k", str(clip)], check=True)
+                instructions = EDGE_VERIFY_INSTRUCTIONS if verify else EDGE_BOUNDARY_INSTRUCTIONS
+                prompt = EDGE_BOUNDARY_PROMPT_FRAME.format(edge=edge, left=left, right=right, duration=duration,
+                    metadata=json.dumps(metadata, ensure_ascii=False), instructions=instructions,
+                    keep_relative=0. if edge == "start" else duration-left)
+                response = gemini.call(ctx.model, gemini.key(), prompt, audio=clip, timeout=ctx.call_timeout_seconds,
+                    response_schema=edge_trim_schema(), schema_name=f"bhakti_{name.replace('-', '_')}",
+                    reasoning_effort="medium", max_completion_tokens=2048,
+                    unit_context=ctx.transport_context, deadline_at=ctx.deadline_at)
+                return {"edge": edge, "clip_start": left, "clip_end": right, "response": response}
 
-Return strict JSON only."""
-            response = gemini.call(options.model, gemini.key(), prompt, audio=clip, timeout=options.timeout,
-                                   response_schema=edge_trim_schema(), schema_name=f"bhakti_{edge}_trim",
-                                   reasoning_effort="high", max_completion_tokens=4096)
-            return {"edge": edge, "clip_start": clip_start, "response": response}
+            observed = hear(start, start + length, False)
+            packet = observed.get("response", {}).get("packet", {})
+            boundary = packet.get("boundary")
+            if (packet.get("decision") == "trim" and packet.get("relationship") == "unrelated"
+                    and packet.get("confidence") == "high" and isinstance(boundary, (int, float))
+                    and not isinstance(boundary, bool) and math.isfinite(boundary) and 0 <= boundary <= length):
+                absolute = start + boundary
+                observed["verification"] = hear(max(0., absolute - 15.), min(duration, absolute + 15.), True)
+            return observed
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-            results = list(pool.map(run, jobs))
-    by_edge = {item["edge"]: item for item in results}
-    allowed = {"platform_spoken", "channel_promotion", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
-               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration",
-               "post_song_film_dialogue"}
-    start_packet = by_edge["start"]["response"]["packet"]
-    end_packet = by_edge["end"]["response"]["packet"]
-    trim_start = (float(start_packet["boundary"]) if start_packet.get("decision") == "trim"
-                  and str(start_packet.get("confidence", "")).casefold() == "high"
-                  and str(start_packet.get("outside_type", "")).casefold() in allowed else 0.0)
-    relative_end = (float(end_packet["boundary"]) if end_packet.get("decision") == "trim"
-                    and str(end_packet.get("confidence", "")).casefold() == "high"
-                    and str(end_packet.get("outside_type", "")).casefold() in allowed else edge_length)
-    trim_end = by_edge["end"]["clip_start"] + relative_end
-    errors = []
-    if not 0 <= trim_start < trim_end <= duration or duration - (trim_end - trim_start) > min(120.0, duration * 0.2):
-        errors.append("proposed edge trim is outside safety bounds")
-    artifact = {"duration": duration, "start": by_edge["start"], "end": by_edge["end"],
-                "trim_start": round(trim_start, 3), "trim_end": round(trim_end, 3),
-                "validation_errors": errors, "status": "blocked" if errors else "reviewed"}
+        def validate(observed: dict[str, Any]) -> list[dict[str, str]]:
+            packet = {**base, "start": keep_edge("start"), "end": keep_edge("end"), edge: observed}
+            errors = normalize_trim_artifact(packet)["validation_errors"]
+            return [{"kind": "boundary_disagreement", "detail": detail} for detail in errors]
+
+        return routes.run_unit(review_dir / "boundary-routes", f"edge:{edge}", fingerprint, execute, validate,
+            deadline_at=deadline, base_model=base_model, pro_model=identity["pro_model"],
+            policy=routes.EscalationPolicy(call_timeout_seconds=min(600., float(options.timeout))))
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        rows = list(pool.map(run, ("start", "end")))
+    artifact = normalize_trim_artifact({**base, **{row["edge"]: row for row in rows}})
     write_json(target, artifact)
     return artifact
 
-
 def normalize_trim_artifact(artifact: dict[str, Any]) -> dict[str, Any]:
-    """Recalculate trim bounds from retained edge decisions without an API call."""
-    allowed = {"platform_spoken", "channel_promotion", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
-               "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration",
-               "post_song_film_dialogue"}
-    duration = float(artifact["duration"])
-    start = artifact["start"]["response"]["packet"]
-    end = artifact["end"]["response"]["packet"]
-    edge_length = min(75.0, duration)
-    trim_start = (float(start["boundary"]) if start.get("decision") == "trim"
-                  and str(start.get("confidence", "")).casefold() == "high"
-                  and str(start.get("outside_type", "")).casefold() in allowed else 0.0)
-    relative_end = (float(end["boundary"]) if end.get("decision") == "trim"
-                    and str(end.get("confidence", "")).casefold() == "high"
-                    and str(end.get("outside_type", "")).casefold() in allowed else edge_length)
-    trim_end = float(artifact["end"]["clip_start"]) + relative_end
-    errors = []
-    if not 0 <= trim_start < trim_end <= duration or duration - (trim_end - trim_start) > min(120.0, duration * 0.2):
-        errors.append("proposed edge trim is outside safety bounds")
-    normalized = {**artifact, "trim_start": round(trim_start, 3), "trim_end": round(trim_end, 3),
-                  "validation_errors": errors, "status": "blocked" if errors else "reviewed"}
-    return normalized
+    """Validate edge evidence in the immutable original recording's time axis.
+
+    V2 accepts a removal only with independent relationship/transition evidence.
+    The 250 ms bound is agreement tolerance, not a claim of acoustic accuracy;
+    accepted differences retain more audio. Legacy evidence is never upgraded.
+    """
+    legacy_categories = {"platform_spoken", "channel_promotion", "spoken_intro", "spoken_narration", "spoken_framing", "spoken_promotion",
+                         "promotion", "advertisement", "logo_sting", "countdown", "unrelated_narration",
+                         "post_song_film_dialogue"}
+    errors: list[str] = []
+    version = artifact.get("boundary_contract_version", 1)
+    if version not in (1, 2):
+        errors.append("unsupported boundary evidence contract")
+    if version == 2:
+        digest = artifact.get("source_sha256")
+        name = artifact.get("source_audio")
+        if not isinstance(digest, str) or re.fullmatch(r"[a-f0-9]{64}", digest) is None:
+            errors.append("original audio SHA256 is missing or invalid")
+        if not isinstance(name, str) or Path(name).name != name or not name.startswith("audio."):
+            errors.append("original audio name is missing or invalid")
+
+    def number(value: Any, label: str) -> float | None:
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+            errors.append(f"{label} must be finite numeric seconds")
+            return None
+        return float(value)
+
+    duration = number(artifact.get("duration"), "duration")
+    bounds = {"start": 0.0, "end": duration or 0.0}
+    if duration is None or duration <= 0:
+        errors.append("original duration must be positive")
+    else:
+        edge_length = min(75.0, duration)
+
+        def observation(row: Any, edge: str, label: str) -> tuple[dict[str, Any], float] | None:
+            response = row.get("response") if isinstance(row, dict) else None
+            packet = response.get("packet") if isinstance(response, dict) else None
+            if not isinstance(packet, dict):
+                errors.append(f"{label} observation is missing")
+                return None
+            if packet.get("edge", edge if version == 1 else None) != edge or row.get("edge", edge) != edge:
+                errors.append(f"{label} observation has a mismatched edge")
+            default_start = 0.0 if edge == "start" else duration - edge_length
+            clip_start = number(row.get("clip_start", default_start if version == 1 else None), f"{label} clip start")
+            default_end = clip_start + edge_length if clip_start is not None else None
+            clip_end = number(row.get("clip_end", default_end if version == 1 else None), f"{label} clip end")
+            boundary = number(packet.get("boundary"), f"{label} boundary")
+            if clip_start is None or clip_end is None or boundary is None:
+                return None
+            if not 0 <= clip_start < clip_end <= duration:
+                errors.append(f"{label} observed clip is outside the original recording")
+            if not 0 <= boundary <= clip_end - clip_start:
+                errors.append(f"{label} boundary is outside the observed clip")
+            if str(packet.get("confidence", "")).casefold() != "high":
+                errors.append(f"{label} observation is uncertain")
+            decision = packet.get("decision")
+            if decision not in {"keep", "trim"}:
+                errors.append(f"{label} decision is unresolved")
+            if version == 2:
+                expected_relation = "unrelated" if decision == "trim" else "attached_to_work"
+                if packet.get("relationship") != expected_relation:
+                    errors.append(f"{label} relationship is unresolved or contradicts the decision")
+                if not isinstance(packet.get("retained_evidence"), str) or not packet["retained_evidence"].strip():
+                    errors.append(f"{label} lacks retained-performance evidence")
+                if decision == "trim" and (not isinstance(packet.get("excluded_evidence"), str) or not packet["excluded_evidence"].strip()):
+                    errors.append(f"{label} lacks unrelated-material evidence")
+            return packet, clip_start + boundary
+
+        for edge in ("start", "end"):
+            row = artifact.get(edge)
+            observed = observation(row, edge, edge)
+            if observed is None:
+                continue
+            packet, absolute = observed
+            if packet.get("decision") == "trim":
+                bounds[edge] = absolute
+                if version == 1:
+                    if str(packet.get("outside_type", "")).casefold() not in legacy_categories:
+                        errors.append(f"{edge} removal category requires relationship review")
+                else:
+                    checked = observation(row.get("verification"), edge, f"{edge} verification")
+                    if checked is not None:
+                        check_packet, check_absolute = checked
+                        if check_packet.get("decision") != "trim":
+                            errors.append(f"{edge} independent review disagrees about removal")
+                        if abs(absolute - check_absolute) > EDGE_BOUNDARY_VALIDATION["agreement_seconds"]:
+                            errors.append(f"{edge} independent boundaries disagree")
+                        bounds[edge] = min(absolute, check_absolute) if edge == "start" else max(absolute, check_absolute)
+            elif packet.get("decision") == "keep":
+                expected = 0.0 if edge == "start" else duration
+                if abs(absolute - expected) > 0.001:
+                    errors.append(f"{edge} keep decision does not retain the original endpoint")
+        if (not 0 <= bounds["start"] < bounds["end"] <= duration
+                or duration - (bounds["end"] - bounds["start"]) > min(EDGE_BOUNDARY_VALIDATION["max_removed_seconds"], duration * EDGE_BOUNDARY_VALIDATION["max_removed_fraction"])):
+            errors.append("proposed edge trim is outside safety bounds")
+    return {**artifact, "trim_start": round(bounds["start"], 3), "trim_end": round(bounds["end"], 3),
+            "validation_errors": errors, "status": "blocked" if errors else ("reviewed" if version == 2 else "legacy-reviewed")}
+
+
+def trim_packet_evidence(original: Path, output: Path, requested_start: float) -> dict[str, Any]:
+    """Measure copied packet provenance; this does not measure audible syllables."""
+    def probe(path: Path) -> dict[str, Any]:
+        result = subprocess.run([
+            "ffprobe", "-v", "error", "-select_streams", "a:0", "-show_packets", "-show_streams",
+            "-show_data_hash", "sha256", "-show_entries",
+            "packet=pts_time,duration_time,data_hash,side_data_list:stream=codec_name,sample_rate,start_time",
+            "-of", "json", str(path)], check=True, capture_output=True, text=True)
+        return json.loads(result.stdout)
+
+    source, copied = probe(original), probe(output)
+    source_packets, copied_packets = source.get("packets", []), copied.get("packets", [])
+    if not source_packets or not copied_packets:
+        raise RuntimeError("trim has no measurable audio packets")
+    if source["streams"][0]["codec_name"] != copied["streams"][0]["codec_name"]:
+        raise RuntimeError("trim changed the native codec")
+    copied_hashes = [row.get("data_hash") for row in copied_packets]
+    if not all(copied_hashes):
+        raise RuntimeError("trim packet data hashes are missing")
+    candidates = []
+    for index, row in enumerate(source_packets):
+        if row.get("data_hash") != copied_hashes[0] or abs(float(row["pts_time"]) - requested_start) > 0.25:
+            continue
+        section = source_packets[index:index + len(copied_packets)]
+        if [item.get("data_hash") for item in section] == copied_hashes:
+            candidates.append(section)
+    if len(candidates) != 1:
+        raise RuntimeError("trim packet provenance is ambiguous or does not match the source")
+    matched = candidates[0]
+    offsets = [float(left["pts_time"]) - float(right["pts_time"])
+               for left, right in zip(matched, copied_packets)]
+    if max(offsets) - min(offsets) > 0.003:
+        raise RuntimeError("trim packet timestamps do not share a consistent source offset")
+    return {"packet_source_offset": offsets[0], "packet_offset_spread": max(offsets) - min(offsets),
+            "first_source_packet_pts": float(matched[0]["pts_time"]),
+            "first_output_packet_pts": float(copied_packets[0]["pts_time"]),
+            "source_first_packet_side_data": matched[0].get("side_data_list", []),
+            "output_first_packet_side_data": copied_packets[0].get("side_data_list", []),
+            "source_stream": source["streams"][0], "output_stream": copied["streams"][0],
+            "matched_packets": len(copied_packets), "duration": gemini.duration_seconds(output)}
 
 
 def apply_lossless_trim(song_dir: Path, artifact: dict[str, Any]) -> None:
-    marker = song_dir / ".transcription" / "trim-applied.json"
-    existing_marker = read_packet(marker)
-    if existing_marker and existing_marker.get("applied"):
+    """Apply accepted v2 evidence from immutable originals, recoverably.
+
+    The pending marker is a publication hold, not an applied claim. On resume,
+    current files must match the initial or planned bytes; arbitrary external
+    changes are preserved. Every output is prepared before public replacement.
+    """
+    import bhakti_model_routes as routes
+
+    marker_path = song_dir / ".transcription" / "trim-applied.json"
+    manifest_path = song_dir / ".transcription" / "trim-originals.json"
+    archive_dir = song_dir / ".transcription" / "original-audio"
+    existing = read_packet(marker_path) or {}
+    if artifact.get("status") != "reviewed" or artifact.get("boundary_contract_version") != 2 or artifact.get("validation_errors"):
+        raise RuntimeError("trim requires explicitly accepted current boundary evidence; legacy evidence needs review")
+    normalized = normalize_trim_artifact(artifact)
+    if normalized["validation_errors"] or normalized["status"] != "reviewed":
+        raise RuntimeError("cannot apply blocked or uncertain trim review")
+    start, end, duration = normalized["trim_start"], normalized["trim_end"], normalized["duration"]
+    if artifact.get("trim_start") != start or artifact.get("trim_end") != end:
+        raise RuntimeError("accepted trim bounds differ from retained observations")
+    if existing.get("applied") and existing.get("application_version") != 2:
+        raise RuntimeError("legacy applied trim has no verified original identity")
+
+    def digest(path: Path) -> str:
+        return hashlib.sha256(path.read_bytes()).hexdigest()
+
+    manifest = read_packet(manifest_path)
+    if manifest:
+        sources = manifest.get("sources", [])
+        if not sources or manifest.get("version") != 2:
+            raise RuntimeError("invalid original audio identity manifest")
+        if {row.get("src") for row in sources} != {row["src"] for row in listener_audio_sources(song_dir)}:
+            raise RuntimeError("listener audio formats changed outside the trim transaction")
+        for row in sources:
+            name = row.get("src", "")
+            if Path(name).name != name or not name.startswith("audio."):
+                raise RuntimeError("invalid original audio identity path")
+            original = archive_dir / name
+            if not original.is_file() or digest(original) != row["sha256"]:
+                raise RuntimeError("preserved original audio digest changed")
+    else:
+        sources = [{"src": row["src"], "sha256": digest(song_dir / row["src"])}
+                   for row in listener_audio_sources(song_dir)]
+        if not sources:
+            raise RuntimeError("no original audio to trim")
+    source_row = next((row for row in sources if row["src"] == normalized["source_audio"]), None)
+    if source_row is None or source_row["sha256"] != normalized["source_sha256"]:
+        raise RuntimeError("boundary review source identity changed")
+    reviewed_source = archive_dir / source_row["src"] if manifest else song_dir / source_row["src"]
+    if abs(gemini.duration_seconds(reviewed_source) - duration) > 0.01:
+        raise RuntimeError("boundary review original duration changed")
+
+    current = {row["src"]: digest(song_dir / row["src"]) for row in sources}
+    for row in sources:
+        name = row["src"]
+        allowed = {row["sha256"]} if not existing or (not existing.get("applied") and existing.get("application_version") != 2) else set()
+        if existing.get("application_version") == 2:
+            expected = existing.get("outputs", {}).get(name, {}).get("sha256")
+            if expected:
+                allowed.add(expected)
+            if existing.get("status") == "pending":
+                allowed.add(existing.get("initial_assets", {}).get(name))
+        if current[name] not in allowed:
+            raise RuntimeError(f"listener audio changed outside the trim transaction: {name}")
+    if (existing.get("status") in {"applied", "no-trim"} and existing.get("trim_start") == start
+            and existing.get("trim_end") == end and existing.get("source_sha256") == normalized["source_sha256"]):
         return
-    if artifact.get("validation_errors"):
-        raise RuntimeError("cannot apply blocked trim review")
-    start, end, duration = float(artifact["trim_start"]), float(artifact["trim_end"]), float(artifact["duration"])
-    if start <= 0.001 and end >= duration - 0.001:
-        write_json(marker, {"applied": False, "reason": "no verified non-song edge material"})
+    no_trim = start <= 0.001 and end >= duration - 0.001
+    if no_trim and not manifest:
+        routes.atomic_json(marker_path, {"application_version": 2, "applied": False, "status": "no-trim",
+            "trim_start": start, "trim_end": end, "source_sha256": normalized["source_sha256"],
+            "outputs": {name: {"sha256": value} for name, value in current.items()}})
         return
-    for source in listener_audio_sources(song_dir):
-        path = song_dir / source["src"]
-        temporary = path.with_name(f"{path.stem}.trimmed{path.suffix}")
-        subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(path), "-ss", f"{start:.3f}",
-                        "-to", f"{end:.3f}", "-map", "0:a:0", "-c", "copy", "-avoid_negative_ts", "make_zero",
-                        str(temporary)], check=True)
-        if gemini.duration_seconds(temporary) <= 0:
-            raise RuntimeError(f"trim produced empty audio: {path}")
-        temporary.replace(path)
-    write_json(marker, {"applied": True, "trim_start": start, "trim_end": end,
-                        "removed_seconds": round(duration - (end - start), 3)})
+    if not manifest:
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        for row in sources:
+            original = archive_dir / row["src"]
+            if original.exists():
+                if digest(original) != row["sha256"]:
+                    raise RuntimeError("preserved original conflicts with current source")
+            else:
+                temporary = original.with_name(original.name + ".saving")
+                shutil.copy2(song_dir / row["src"], temporary)
+                if digest(temporary) != row["sha256"]:
+                    raise RuntimeError("original audio archive copy failed verification")
+                temporary.replace(original)
+            with original.open("rb") as handle:
+                os.fsync(handle.fileno())
+        routes.atomic_json(manifest_path, {"version": 2, "sources": sources})
+    work_dir = song_dir / ".transcription" / "trim-work"
+    work_dir.mkdir(parents=True, exist_ok=True)
+    outputs = {}
+    for row in sources:
+        original, output = archive_dir / row["src"], work_dir / row["src"]
+        if no_trim:
+            shutil.copy2(original, output)
+        else:
+            subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(original),
+                            "-ss", f"{start:.3f}", "-to", f"{end:.3f}", "-map", "0:a:0", "-c", "copy",
+                            "-avoid_negative_ts", "make_zero", str(output)], check=True)
+        evidence = trim_packet_evidence(original, output, start)
+        if evidence["duration"] <= 0 or abs(evidence["duration"] - (end - start)) > 0.25:
+            raise RuntimeError("trim output duration does not match the retained interval")
+        with output.open("rb") as handle:
+            os.fsync(handle.fileno())
+        outputs[row["src"]] = {**evidence, "sha256": digest(output)}
+    pending = {"application_version": 2, "status": "pending", "applied": False,
+               "trim_start": start, "trim_end": end, "source_sha256": normalized["source_sha256"],
+               "removed_seconds": round(duration - (end - start), 3), "initial_assets": current, "outputs": outputs}
+    routes.atomic_json(marker_path, pending)
+    for row in sources:
+        (work_dir / row["src"]).replace(song_dir / row["src"])
+    for name, expected in outputs.items():
+        if digest(song_dir / name) != expected["sha256"]:
+            raise RuntimeError("trim output digest changed during application")
+    routes.atomic_json(marker_path, {**pending, "status": "no-trim" if no_trim else "applied", "applied": not no_trim})
 
 
 def stage_quality_failure(options: argparse.Namespace, detail: str, *, kind: str = "model_contract") -> None:
@@ -4714,7 +4969,8 @@ def is_sanskrit_first_pass(raw: dict[str, Any]) -> bool:
     return any(normalized_language(str(language)) == "Sanskrit" for language in languages)
 
 
-def language_hold_packet(song_dir: Path, source: dict[str, Any], raw: dict[str, Any], started: float) -> dict[str, Any]:
+def language_hold_packet(song_dir: Path, source: dict[str, Any], raw: dict[str, Any], started: float,
+                         trim: dict[str, Any] | None = None) -> dict[str, Any]:
     """Persist the first-pass evidence but deliberately stop an uncertain song.
 
     This is used only for an explicitly opt-in intake queue. It lets a first
@@ -4728,7 +4984,9 @@ def language_hold_packet(song_dir: Path, source: dict[str, Any], raw: dict[str, 
         "publication_status": "held-language",
         "language_hold_reason": "First transcription identified Sanskrit; audit, timing, glossing, translation, and reader generation were intentionally skipped.",
         "elapsed_seconds": round(time.time() - started, 2),
-        "reported_openrouter_cost": reported_cost(raw),
+        "trim": trim,
+        "reported_cost_scope": "accepted-artifacts-only; bounded ledger is authoritative for charges",
+        "reported_openrouter_cost": reported_cost(raw, trim),
     }
     write_json(song_dir / ".transcription" / "pipeline" / "song-packet.json", packet)
     return packet
@@ -4753,19 +5011,54 @@ def hydrate_pipeline_artifacts(packet_dir: Path) -> None:
         write_json(path, value)
 
 
+def require_trim_adoption(song_dir: Path, artifact: dict[str, Any]) -> None:
+    """Hold changed historical audio before it can acquire stale cached text/times.
+
+    This is a temporary caller guard, not the historical adoption operation.
+    Fresh intake and unchanged original/applied intervals remain permitted.
+    """
+    packet_dir = song_dir / ".transcription" / "pipeline"
+    dependencies = [song_dir / "data.js", *(packet_dir / name for name in (
+        "01-transcript.json", "02-transcript-audit.json", "03-timing.json", "song-packet.json"))]
+    if not any(path.exists() for path in dependencies):
+        return
+    normalized = normalize_trim_artifact(artifact)
+    if normalized["validation_errors"] or normalized["status"] != "reviewed":
+        raise RuntimeError("historical trim adoption cannot use unresolved boundary evidence")
+    marker = read_packet(song_dir / ".transcription" / "trim-applied.json") or {}
+    same = (marker.get("application_version") == 2 and marker.get("status") in {"applied", "no-trim"}
+            and marker.get("source_sha256") == normalized["source_sha256"]
+            and marker.get("trim_start") == normalized["trim_start"]
+            and marker.get("trim_end") == normalized["trim_end"])
+    if same:
+        return  # Application still verifies every current output digest.
+    whole = normalized["trim_start"] <= 0.001 and normalized["trim_end"] >= normalized["duration"] - 0.001
+    current = song_dir / normalized["source_audio"]
+    still_original = (current.is_file() and hashlib.sha256(current.read_bytes()).hexdigest() == normalized["source_sha256"])
+    manifest = read_packet(song_dir / ".transcription" / "trim-originals.json") or {}
+    if manifest:
+        still_original = still_original and all(
+            (song_dir / row["src"]).is_file() and hashlib.sha256((song_dir / row["src"]).read_bytes()).hexdigest() == row["sha256"]
+            for row in manifest.get("sources", []))
+    if whole and still_original and marker.get("status") != "pending":
+        return
+    raise RuntimeError("historical trim adoption required before changing audio used by cached source/timing or a public reader")
+
+
 def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     song_dir, source = intake(job, force=options.force)
-    if "youtube.com" in str(source.get("source_url", "")) or "youtu.be" in str(source.get("source_url", "")):
-        trim = detect_youtube_trim(song_dir, source, options)
-        apply_lossless_trim(song_dir, trim)
-    audio = preferred_listener_audio(song_dir)
     started = time.time()
+    trim = detect_youtube_trim(song_dir, source, options)
+    require_trim_adoption(song_dir, trim)
+    apply_lossless_trim(song_dir, trim)
+    audio = preferred_listener_audio(song_dir)
     raw = transcript(song_dir, source, audio, options)
     if job.get("holdIfSanskrit") and is_sanskrit_first_pass(raw):
-        packet = language_hold_packet(song_dir, source, raw, started)
+        packet = language_hold_packet(song_dir, source, raw, started, trim)
         return {"slug": job["slug"], "status": packet["publication_status"],
                 "elapsed_seconds": packet["elapsed_seconds"],
-                "reported_openrouter_cost": packet["reported_openrouter_cost"]}
+                "reported_openrouter_cost": packet["reported_openrouter_cost"],
+                "reported_cost_scope": packet["reported_cost_scope"]}
     if options.source_witness_audit:
         # Preserve the first audio transcription. A witness is deliberately a
         # second-pass aid, so only dependent artifacts are invalidated.
@@ -4807,17 +5100,25 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
               "audit": audited, "timing": timing, "glosses": glosses, "translation": translations,
               "publication_status": status, "validation_errors": errors,
               "elapsed_seconds": round(time.time() - started, 2),
-              "reported_openrouter_cost": reported_cost(raw, audited, timing, glosses, translations)}
+              "trim": trim, "reported_openrouter_cost": reported_cost(trim, raw, audited, timing, glosses, translations),
+              "reported_cost_scope": "accepted-artifacts-only; bounded ledger is authoritative for charges"}
     write_json(song_dir / ".transcription" / "pipeline" / "song-packet.json", packet)
     return {"slug": job["slug"], "status": packet["publication_status"], "elapsed_seconds": packet["elapsed_seconds"],
-            "reported_openrouter_cost": packet["reported_openrouter_cost"]}
+            "reported_openrouter_cost": packet["reported_openrouter_cost"],
+                "reported_cost_scope": packet["reported_cost_scope"]}
 
 
 def main() -> int:
+    from bhakti_intake_run import bounded_intake_run
     options = parse_args()
     if options.economy:
         options.model = economy_model(options.model)
     jobs = normalise_jobs(options)
+    with bounded_intake_run(ROOT, jobs, options):
+        return _execute_intake_jobs(options, jobs)
+
+
+def _execute_intake_jobs(options: argparse.Namespace, jobs: list[dict[str, Any]]) -> int:
     results: list[dict[str, Any]] = []
     blocked_reason = preflight_blocked_reason(options)
     if blocked_reason:
