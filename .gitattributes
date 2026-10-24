@@ -3,4 +3,5 @@ scripts/fixtures/dictionary_corpus/witnesses/*.html -whitespace
 scripts/fixtures/lexical_producer/witnesses/*.html -whitespace
 scripts/fixtures/source_discovery/witnesses/*.html -whitespace
 scripts/fixtures/source_before_gloss/platts-hi/witnesses/*.html -whitespace
+scripts/fixtures/dynamic_entry_binding/source-discovery/*/witnesses/*.html -text -whitespace
 scripts/fixtures/indic-dictionaries/*.html -whitespace

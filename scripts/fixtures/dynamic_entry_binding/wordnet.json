@@ -1,0 +1,399 @@
+{
+  "edition": "3.1",
+  "complete_for_lemmas": [
+    "abode",
+    "cloth",
+    "dwelling",
+    "edge",
+    "garment",
+    "hem",
+    "permanent",
+    "place",
+    "refuge",
+    "skirt",
+    "true"
+  ],
+  "data_source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+  "files": {
+    "noun": {
+      "header": "  1 This software and database is being provided to you, the LICENSEE, by  \n  2 Princeton University under the following license.  By obtaining, using  \n  3 and/or copying this software and database, you agree that you have  \n  4 read, understood, and will comply with these terms and conditions.:  \n  5   \n  6 Permission to use, copy, modify and distribute this software and  \n  7 database and its documentation for any purpose and without fee or  \n  8 royalty is hereby granted, provided that you agree to comply with  \n  9 the following copyright notice and statements, including the disclaimer,  \n  10 and that the same appear on ALL copies of the software, database and  \n  11 documentation, including modifications that you make for internal  \n  12 use or for distribution.  \n  13   \n  14 WordNet 3.1 Copyright 2011 by Princeton University.  All rights reserved.  \n  15   \n  16 THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON  \n  17 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR  \n  18 IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON  \n  19 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-  \n  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  \n  21 OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT  \n  22 INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR  \n  23 OTHER RIGHTS.  \n  24   \n  25 The name of Princeton University or Princeton may not be used in  \n  26 advertising or publicity pertaining to distribution of the software  \n  27 and/or database.  Title to copyright in this software, database and  \n  28 any associated documentation shall at all times remain with  \n  29 Princeton University and LICENSEE agrees to preserve same.  \n",
+      "index_rows": [
+        "abode n 2 3 @ ~ %p 2 2 08576500 03264208  \n",
+        "cloth n 1 4 @ ~ %s %p 1 1 03314753  \n",
+        "dwelling n 1 4 @ ~ %p + 1 1 03264208  \n",
+        "edge n 6 3 @ ~ + 6 6 08583230 13926085 03269047 05179505 05166240 03269453  \n",
+        "garment n 1 4 @ ~ %p + 1 1 03423924  \n",
+        "hem n 2 3 @ #p + 2 1 03518771 07141229  \n",
+        "permanent n 1 2 @ + 1 0 05268016  \n",
+        "place n 16 6 @ ~ #p = + ; 16 16 08682181 08530790 05619605 08659612 00722683 13949819 08577045 00587299 08639173 13970825 08665191 06412750 13971047 08637370 06495143 06401196  \n",
+        "refuge n 4 2 @ ~ 4 0 08661508 05162506 04078214 01211087  \n",
+        "skirt n 4 5 @ ~ #p %p ; 4 2 04238334 04237870 13116107 10008583  \n",
+        "true n 1 2 @ + 1 0 05084517  \n"
+      ],
+      "data_rows": [
+        {
+          "offset": 587299,
+          "raw": "00587299 04 n 08 position 1 post 0 berth 0 office 2 spot 1 billet 0 place 0 situation 0 114 @ 00583425 n 0000 + 01091334 v 0704 + 02543626 v 0701 + 02338685 v 0702 + 01098908 v 0401 + 02390776 v 0201 ~ 00589510 n 0000 ~ 00589635 n 0000 ~ 00589740 n 0000 ~ 00589817 n 0000 ~ 00589918 n 0000 ~ 00590035 n 0000 ~ 00590140 n 0000 ~ 00590254 n 0000 ~ 00590355 n 0000 ~ 00590452 n 0000 ~ 00590531 n 0000 ~ 00590633 n 0000 ~ 00590728 n 0000 ~ 00590806 n 0000 ~ 00590985 n 0000 ~ 00591162 n 0000 ~ 00591263 n 0000 ~ 00591384 n 0000 ~ 00591498 n 0000 ~ 00591633 n 0000 ~ 00591741 n 0000 ~ 00591921 n 0000 ~ 00592028 n 0000 ~ 00592121 n 0000 ~ 00592226 n 0000 ~ 00592351 n 0000 ~ 00592561 n 0000 ~ 00592638 n 0000 ~ 00592737 n 0000 ~ 00592840 n 0000 ~ 00592973 n 0000 ~ 00593116 n 0000 ~ 00593217 n 0000 ~ 00593314 n 0000 ~ 00593407 n 0000 ~ 00593482 n 0000 ~ 00593561 n 0000 ~ 00593650 n 0000 ~ 00593767 n 0000 ~ 00593910 n 0000 ~ 00594223 n 0000 ~ 00594334 n 0000 ~ 00594504 n 0000 ~ 00594627 n 0000 ~ 00594728 n 0000 ~ 00594847 n 0000 ~ 00594952 n 0000 ~ 00595059 n 0000 ~ 00595185 n 0000 ~ 00595261 n 0000 ~ 00595375 n 0000 ~ 00595489 n 0000 ~ 00595592 n 0000 ~ 00595695 n 0000 ~ 00595853 n 0000 ~ 00595951 n 0000 ~ 00596068 n 0000 ~ 00596147 n 0000 ~ 00596261 n 0000 ~ 00596448 n 0000 ~ 00596525 n 0000 ~ 00596660 n 0000 ~ 00596799 n 0000 ~ 00596900 n 0000 ~ 00597009 n 0000 ~ 00597196 n 0000 ~ 00597308 n 0000 ~ 00597405 n 0000 ~ 00597508 n 0000 ~ 00597611 n 0000 ~ 00597707 n 0000 ~ 00597807 n 0000 ~ 00597922 n 0000 ~ 00598647 n 0000 ~ 00598744 n 0000 ~ 00598843 n 0000 ~ 00598936 n 0000 ~ 00599072 n 0000 ~ 00599171 n 0000 ~ 00599330 n 0000 ~ 00599433 n 0000 ~ 00599793 n 0000 ~ 00599882 n 0000 ~ 00599983 n 0000 ~ 00600085 n 0000 ~ 00600179 n 0000 ~ 00600349 n 0000 ~ 00600444 n 0000 ~ 00600587 n 0000 ~ 00604981 n 0000 ~ 00605246 n 0000 ~ 00605343 n 0000 ~ 00605436 n 0000 ~ 00605539 n 0000 ~ 00605638 n 0000 ~ 00605809 n 0000 ~ 00605926 n 0000 ~ 00606025 n 0000 ~ 00606138 n 0000 ~ 00606361 n 0000 ~ 00606464 n 0000 ~ 00606545 n 0000 ~ 00606626 n 0000 ~ 00606731 n 0000 ~ 00606830 n 0000 ~ 00606927 n 0000 ~ 00607024 n 0000 ~ 00607121 n 0000 | a job in an organization; \"he occupied a post in the treasury\"  \n"
+        },
+        {
+          "offset": 722683,
+          "raw": "00722683 04 n 04 stead 0 position 3 place 1 lieu 0 002 @ 00721817 n 0000 ~ 00722912 n 0000 | the post or function properly or customarily occupied or served by another; \"can you go in my stead?\"; \"took his place\"; \"in lieu of\"  \n"
+        },
+        {
+          "offset": 1211087,
+          "raw": "01211087 04 n 03 recourse 0 resort 0 refuge 0 002 @ 01210099 n 0000 + 02596228 v 0202 | act of turning to for assistance; \"have recourse to the courts\"; \"an appeal to his uncle was his last resort\"  \n"
+        },
+        {
+          "offset": 3264208,
+          "raw": "03264208 06 n 06 dwelling 0 home 0 domicile 0 abode 0 habitation 0 dwelling_house 0 026 @ 03551520 n 0000 + 03073685 a 0301 + 02465056 v 0201 + 02655932 v 0102 %p 02810916 n 0000 %p 02824762 n 0000 ~ 03046475 n 0000 ~ 03093036 n 0000 %p 03179747 n 0000 %p 03204459 n 0000 %p 03205385 n 0000 %p 03242834 n 0000 %p 03324690 n 0000 ~ 03359053 n 0000 ~ 03512385 n 0000 ~ 03521097 n 0000 ~ 03534809 n 0000 ~ 03549540 n 0000 %p 03625099 n 0000 ~ 03639325 n 0000 %p 03685038 n 0000 ~ 03690633 n 0000 ~ 03757081 n 0000 ~ 04179168 n 0000 ~ 04524703 n 0000 ~ 04621053 n 0000 | housing that someone is living in; \"he built a modest dwelling near the pond\"; \"they raise money to provide homes for the homeless\"  \n"
+        },
+        {
+          "offset": 3269047,
+          "raw": "03269047 06 n 01 edge 0 015 @ 04220693 n 0000 + 01249407 v 0101 + 02366599 v 0102 ~ 02836781 n 0000 ~ 02837148 n 0000 ~ 02905554 n 0000 ~ 03153586 n 0000 ~ 03173440 n 0000 ~ 03330636 n 0000 ~ 03466715 n 0000 ~ 03629706 n 0000 ~ 03657065 n 0000 ~ 03772135 n 0000 ~ 04064435 n 0000 ~ 04475134 n 0000 | a sharp side formed by the intersection of two surfaces of an object; \"he rounded the edges of the box\"  \n"
+        },
+        {
+          "offset": 3269453,
+          "raw": "03269453 06 n 01 edge 1 008 @ 08610212 n 0000 ~ 02878255 n 0000 ~ 03518771 n 0000 ~ 03700778 n 0000 ~ 03785780 n 0000 ~ 04177994 n 0000 ~ 04214015 n 0000 ~ 04572519 n 0000 | the outside limit of an object or area or surface; a place farthest away from the center of something; \"the edge of the leaf is wavy\"; \"she sat on the edge of the bed\"; \"the water's edge\"  \n"
+        },
+        {
+          "offset": 3314753,
+          "raw": "03314753 06 n 04 fabric 0 cloth 0 material 0 textile 0 178 @ 00022119 n 0000 ~ 02668615 n 0000 ~ 02679882 n 0000 ~ 02686037 n 0000 ~ 02701332 n 0000 ~ 02779510 n 0000 ~ 02806156 n 0000 ~ 02812240 n 0000 ~ 02812376 n 0000 ~ 02831611 n 0000 ~ 02870741 n 0000 ~ 02881667 n 0000 ~ 02907052 n 0000 ~ 02907177 n 0000 ~ 02908128 n 0000 ~ 02913867 n 0000 ~ 02924579 n 0000 ~ 02943180 n 0000 ~ 02945602 n 0000 ~ 02945915 n 0000 ~ 02947711 n 0000 ~ 02948034 n 0000 ~ 02955545 n 0000 ~ 02957109 n 0000 ~ 02980789 n 0000 ~ 03001714 n 0000 ~ 03007237 n 0000 ~ 03008013 n 0000 ~ 03017504 n 0000 ~ 03020522 n 0000 ~ 03022958 n 0000 ~ 03023621 n 0000 ~ 03062624 n 0000 ~ 03063937 n 0000 ~ 03111373 n 0000 ~ 03119831 n 0000 ~ 03120051 n 0000 ~ 03135214 n 0000 ~ 03135844 n 0000 ~ 03137317 n 0000 ~ 03165406 n 0000 ~ 03179855 n 0000 ~ 03192974 n 0000 ~ 03193409 n 0000 ~ 03204042 n 0000 ~ 03222356 n 0000 ~ 03237826 n 0000 ~ 03257774 n 0000 ~ 03258499 n 0000 %p 03270390 n 0000 ~ 03272607 n 0000 ~ 03303805 n 0000 ~ 03322834 n 0000 ~ 03331740 n 0000 ~ 03336189 n 0000 ~ 03361828 n 0000 ~ 03362113 n 0000 ~ 03367485 n 0000 ~ 03391572 n 0000 ~ 03401833 n 0000 ~ 03413250 n 0000 ~ 03414207 n 0000 ~ 03440653 n 0000 ~ 03442651 n 0000 ~ 03466583 n 0000 ~ 03467042 n 0000 ~ 03480797 n 0000 %p 03518771 n 0000 ~ 03521429 n 0000 ~ 03534624 n 0000 ~ 03540827 n 0000 ~ 03543997 n 0000 ~ 03596500 n 0000 ~ 03596985 n 0000 ~ 03620509 n 0000 ~ 03620615 n 0000 ~ 03630646 n 0000 ~ 03636468 n 0000 ~ 03640621 n 0000 ~ 03658436 n 0000 ~ 03677847 n 0000 ~ 03680771 n 0000 ~ 03681106 n 0000 ~ 03683008 n 0000 ~ 03708614 n 0000 ~ 03709129 n 0000 ~ 03709401 n 0000 ~ 03729025 n 0000 ~ 03757562 n 0000 ~ 03784661 n 0000 ~ 03784779 n 0000 ~ 03786332 n 0000 ~ 03788462 n 0000 ~ 03790770 n 0000 ~ 03790894 n 0000 ~ 03795136 n 0000 ~ 03799813 n 0000 ~ 03807933 n 0000 ~ 03812444 n 0000 ~ 03825135 n 0000 ~ 03831213 n 0000 ~ 03842426 n 0000 ~ 03848958 n 0000 ~ 03851620 n 0000 ~ 03860734 n 0000 ~ 03883029 n 0000 ~ 03890891 n 0000 ~ 03920350 n 0000 ~ 03920950 n 0000 ~ 03923936 n 0000 ~ 03938946 n 0000 ~ 03945716 n 0000 ~ 03950109 n 0000 ~ 03954074 n 0000 ~ 03976904 n 0000 ~ 03985735 n 0000 ~ 03987344 n 0000 ~ 03989970 n 0000 ~ 04010232 n 0000 ~ 04040843 n 0000 ~ 04064044 n 0000 ~ 04082925 n 0000 ~ 04130322 n 0000 ~ 04130661 n 0000 ~ 04135793 n 0000 ~ 04139912 n 0000 ~ 04144438 n 0000 ~ 04145344 n 0000 ~ 04145481 n 0000 ~ 04160391 n 0000 ~ 04162686 n 0000 ~ 04174722 n 0000 ~ 04181087 n 0000 ~ 04190119 n 0000 ~ 04191359 n 0000 ~ 04191923 n 0000 ~ 04196325 n 0000 ~ 04205276 n 0000 ~ 04205496 n 0000 ~ 04226134 n 0000 ~ 04226491 n 0000 ~ 04274275 n 0000 ~ 04290922 n 0000 ~ 04306966 n 0000 ~ 04357536 n 0000 ~ 04358777 n 0000 ~ 04375927 n 0000 ~ 04390926 n 0000 ~ 04394618 n 0000 ~ 04398532 n 0000 ~ 04400642 n 0000 ~ 04402241 n 0000 ~ 04421611 n 0000 ~ 04439796 n 0000 ~ 04466845 n 0000 ~ 04509797 n 0000 ~ 04510450 n 0000 ~ 04521293 n 0000 ~ 04531889 n 0000 ~ 04532236 n 0000 ~ 04532333 n 0000 ~ 04532486 n 0000 ~ 04540889 n 0000 ~ 04546702 n 0000 ~ 04547080 n 0000 %s 04559236 n 0000 ~ 04560847 n 0000 ~ 04569020 n 0000 ~ 04575999 n 0000 ~ 04576127 n 0000 ~ 04585398 n 0000 ~ 04592742 n 0000 ~ 04602069 n 0000 %s 04606292 n 0000 ~ 04606562 n 0000 ~ 04612521 n 0000 ~ 04620372 n 0000 ~ 14616489 n 0000 | artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers; \"the fabric in the curtains was light and semitransparent\"; \"woven cloth originated in Mesopotamia around 5000 BC\"; \"she measured off enough material for a dress\"  \n"
+        },
+        {
+          "offset": 3423924,
+          "raw": "03423924 06 n 01 garment 0 068 @ 03055525 n 0000 + 00047662 v 0107 %p 02741983 n 0000 %p 02787755 n 0000 %p 02879326 n 0000 ~ 02899556 n 0000 ~ 02925962 n 0000 %p 02932314 n 0000 ~ 02947830 n 0000 %p 03167380 n 0000 ~ 03193215 n 0000 %p 03313798 n 0000 %p 03377906 n 0000 ~ 03409064 n 0000 ~ 03455678 n 0000 %p 03476313 n 0000 ~ 03480544 n 0000 ~ 03492725 n 0000 ~ 03507475 n 0000 ~ 03545270 n 0000 ~ 03591044 n 0000 %p 03597088 n 0000 %p 03597242 n 0000 ~ 03610811 n 0000 ~ 03613717 n 0000 ~ 03653533 n 0000 ~ 03660398 n 0000 ~ 03662837 n 0000 %p 03678596 n 0000 ~ 03750978 n 0000 ~ 03795327 n 0000 %p 03819652 n 0000 ~ 03821545 n 0000 ~ 03869443 n 0000 ~ 03920049 n 0000 %p 03978882 n 0000 ~ 04053370 n 0000 ~ 04092686 n 0000 ~ 04104960 n 0000 ~ 04111864 n 0000 ~ 04130411 n 0000 ~ 04150557 n 0000 ~ 04150962 n 0000 ~ 04167322 n 0000 ~ 04179965 n 0000 ~ 04204434 n 0000 %p 04214218 n 0000 ~ 04226647 n 0000 ~ 04237870 n 0000 %p 04238334 n 0000 %p 04243483 n 0000 ~ 04332942 n 0000 ~ 04339718 n 0000 ~ 04357983 n 0000 ~ 04364618 n 0000 ~ 04375037 n 0000 ~ 04377135 n 0000 ~ 04377861 n 0000 ~ 04378650 n 0000 ~ 04495786 n 0000 ~ 04496264 n 0000 ~ 04515458 n 0000 ~ 04539168 n 0000 ~ 04577818 n 0000 ~ 04581353 n 0000 ~ 04612930 n 0000 %p 04620372 n 0000 %p 08601081 n 0000 | an article of clothing; \"garments of the finest silk\"  \n"
+        },
+        {
+          "offset": 3518771,
+          "raw": "03518771 06 n 01 hem 0 003 @ 03269453 n 0000 #p 03314753 n 0000 + 01332414 v 0101 | the edge of a piece of cloth; especially the finished edge that has been doubled under and stitched down; \"the hem of her dress was stained\"; \"let down the hem\"; \"he stitched weights into the curtain's hem\"; \"it seeped along the hem of his jacket\"  \n"
+        },
+        {
+          "offset": 4078214,
+          "raw": "04078214 06 n 03 refuge 0 sanctuary 1 asylum 1 004 @ 04198638 n 0000 ~ 03497351 n 0000 ~ 04132567 n 0000 ~ 04132642 n 0000 | a shelter from danger or hardship  \n"
+        },
+        {
+          "offset": 4237870,
+          "raw": "04237870 06 n 01 skirt 0 020 @ 03423924 n 0000 ~ 02783838 n 0000 %p 02889276 n 0000 ~ 03151443 n 0000 ~ 03407426 n 0000 ~ 03433913 n 0000 ~ 03459386 n 0000 ~ 03528669 n 0000 ~ 03539760 n 0000 %p 03621300 n 0000 ~ 03622521 n 0000 ~ 03654317 n 0000 ~ 03737949 n 0000 ~ 03775972 n 0000 ~ 03871760 n 0000 %p 03960177 n 0000 ~ 04143416 n 0000 %p 04245427 n 0000 %p 04362044 n 0000 %p 08600819 n 0000 | a garment hanging from the waist; worn mainly by girls and women  \n"
+        },
+        {
+          "offset": 4238334,
+          "raw": "04238334 06 n 01 skirt 1 004 @ 03054011 n 0000 #p 03423924 n 0000 %p 03647261 n 0000 %p 04169494 n 0000 | cloth covering that forms the part of a garment below the waist  \n"
+        },
+        {
+          "offset": 5084517,
+          "raw": "05084517 07 n 01 true 0 002 @ 05084315 n 0000 + 00466204 v 0101 | proper alignment; the property possessed by something that is in correct or proper alignment; \"out of true\"  \n"
+        },
+        {
+          "offset": 5162506,
+          "raw": "05162506 07 n 03 recourse 0 refuge 0 resort 0 003 @ 05161923 n 0000 + 02596228 v 0302 ~ 05162732 n 0000 | something or someone turned to for assistance or security; \"his only recourse was the police\"; \"took refuge in lying\"  \n"
+        },
+        {
+          "offset": 5166240,
+          "raw": "05166240 07 n 01 edge 0 001 @ 05166002 n 0000 | a slight competitive advantage; \"he had an edge on the competition\"  \n"
+        },
+        {
+          "offset": 5179505,
+          "raw": "05179505 07 n 02 edge 1 sharpness 4 002 @ 05179327 n 0000 + 02415166 a 0101 | the attribute of urgency in tone of voice; \"his voice had an edge to it\"  \n"
+        },
+        {
+          "offset": 5268016,
+          "raw": "05268016 08 n 03 permanent_wave 0 permanent 0 perm 0 003 @ 05266723 n 0000 + 00039537 v 0301 + 01758923 a 0201 | a series of waves in the hair made by applying heat and chemicals  \n"
+        },
+        {
+          "offset": 5619605,
+          "raw": "05619605 09 n 01 place 0 003 @ 00023451 n 0000 + 02397904 v 0101 ~ 06257026 n 0000 | an abstract mental location; \"he has a special place in my thoughts\"; \"a place in my heart\"; \"a political system with no place for the less prominent groups\"  \n"
+        },
+        {
+          "offset": 6401196,
+          "raw": "06401196 10 n 03 space 1 blank_space 0 place 1 005 @ 05135784 n 0000 #p 06485234 n 0000 + 01496967 v 0303 ~ 06401041 n 0000 ~ 06401396 n 0000 | a blank area; \"write your name in the space provided\"  \n"
+        },
+        {
+          "offset": 6412750,
+          "raw": "06412750 10 n 01 place 0 001 @ 06411914 n 0000 | the passage that is being read; \"he lost his place on the page\"  \n"
+        },
+        {
+          "offset": 6495143,
+          "raw": "06495143 10 n 02 place 2 position 1 006 @ 06494090 n 0000 + 01089102 v 0101 + 00661447 v 0101 + 00659723 v 0106 ~ 06495391 n 0000 ~ 06495681 n 0000 | an item on a list or in a sequence; \"in the second place\"; \"moved from third to fifth position\"  \n"
+        },
+        {
+          "offset": 7141229,
+          "raw": "07141229 10 n 02 hem 0 ahem 0 001 @ 07124555 n 0000 | the utterance of a sound similar to clearing the throat; intended to get attention, express hesitancy, fill a pause, hide embarrassment, warn a friend, etc.  \n"
+        },
+        {
+          "offset": 8530790,
+          "raw": "08530790 15 n 02 place 4 property 0 007 @ 08591861 n 0000 + 02338685 v 0102 ~ 02863295 n 0000 ~ 04140731 n 0000 ~ 08531106 n 0000 ~ 08531343 n 0000 ~ 08598827 n 0000 | any area set aside for a particular purpose; \"who owns this place?\"; \"the president was concerned about the property across from the White House\"  \n"
+        },
+        {
+          "offset": 8576500,
+          "raw": "08576500 15 n 02 residence 0 abode 0 003 @ 08508037 n 0000 ~ 08576692 n 0000 ~ 08577045 n 0000 | any address at which you dwell more than temporarily; \"a person can have several residences\"  \n"
+        },
+        {
+          "offset": 8577045,
+          "raw": "08577045 15 n 02 home 4 place 6 005 @ 08576500 n 0000 + 02543626 v 0201 + 00479651 a 0102 + 02009361 v 0101 ~ 08577303 n 0000 | where you live at a particular time; \"deliver the package to my home\"; \"he doesn't have a home to go to\"; \"your place or mine?\"  \n"
+        },
+        {
+          "offset": 8583230,
+          "raw": "08583230 15 n 02 edge 0 border 1 007 @ 08529331 n 0000 + 02716547 v 0202 + 01469999 v 0205 + 01469607 v 0201 + 02366599 v 0102 ~ 08534405 n 0000 ~ 08610050 n 0000 | the boundary of a surface  \n"
+        },
+        {
+          "offset": 8637370,
+          "raw": "08637370 15 n 03 plaza 0 place 2 piazza 0 001 @ 08637195 n 0000 | a public square with room for pedestrians; \"they met at Elm Plaza\"; \"Grosvenor Place\"  \n"
+        },
+        {
+          "offset": 8639173,
+          "raw": "08639173 15 n 02 position 0 place 5 026 @ 08637636 n 0000 + 01496967 v 0203 + 01991174 v 0101 = 02039393 a 0000 = 02040360 a 0000 ~ 08510835 n 0000 ~ 08598472 n 0000 ~ 08609721 n 0000 ~ 08638858 n 0000 ~ 08638968 n 0000 ~ 08639047 n 0000 ~ 08640338 n 0000 ~ 08640525 n 0000 ~ 08641502 n 0000 ~ 08641670 n 0000 ~ 08641771 n 0000 ~ 08641960 n 0000 ~ 08642231 n 0000 ~ 08642466 n 0000 ~ 08642648 n 0000 ~ 08643037 n 0000 ~ 08643421 n 0000 ~ 08643655 n 0000 ~ 08671281 n 0000 ~ 08674221 n 0000 ~ 08694813 n 0000 | the particular portion of space occupied by something; \"he put the lamp back in its place\"  \n"
+        },
+        {
+          "offset": 8659612,
+          "raw": "08659612 15 n 01 place 1 001 @ 08658688 n 0000 | a general vicinity; \"He comes from a place near Chicago\"  \n"
+        },
+        {
+          "offset": 8661508,
+          "raw": "08661508 15 n 02 safety 0 refuge 0 002 @ 08514304 n 0000 ~ 08661620 n 0000 | a safe place; \"He ran to safety\"  \n"
+        },
+        {
+          "offset": 8665191,
+          "raw": "08665191 15 n 02 seat 1 place 3 008 @ 08670545 n 0000 ;c 07019235 n 0000 ;c 02694015 n 0000 + 02338975 v 0101 + 02339298 v 0101 + 02707822 v 0101 + 01546780 v 0101 ~ 08644333 n 0000 | a space reserved for sitting (as in a theater or on a train or airplane); \"he booked their seats in advance\"; \"he sat in someone else's place\"  \n"
+        },
+        {
+          "offset": 8682181,
+          "raw": "08682181 15 n 03 topographic_point 0 place 0 spot 1 026 @ 08637636 n 0000 + 01715608 v 0204 + 01153025 v 0203 + 01496967 v 0203 ~ 03459977 n 0000 ~ 03610935 n 0000 ~ 08527371 n 0000 ~ 08556480 n 0000 ~ 08584413 n 0000 ~ 08601976 n 0000 ~ 08602145 n 0000 ~ 08602441 n 0000 ~ 08602583 n 0000 ~ 08616124 n 0000 ~ 08628532 n 0000 ~ 08631679 n 0000 ~ 08635538 n 0000 ~ 08660445 n 0000 ~ 08665032 n 0000 ~ 08666356 n 0000 ~ 08666492 n 0000 ~ 08670055 n 0000 ~ 08674524 n 0000 ~ 08678672 n 0000 ~ 08682839 n 0000 ~ 08705985 n 0000 | a point located with respect to surface features of some region; \"this is a nice place for a picnic\"; \"a bright spot on a planet\"  \n"
+        },
+        {
+          "offset": 10008583,
+          "raw": "10008583 18 n 06 dame 0 doll 0 wench 0 skirt 0 chick 0 bird 0 001 @ 10149362 n 0000 | informal terms for a (young) woman  \n"
+        },
+        {
+          "offset": 13116107,
+          "raw": "13116107 20 n 02 annulus 0 skirt 0 003 @ 13107668 n 0000 #p 13115772 n 0000 ;c 13013224 n 0000 | (Fungi) a remnant of the partial veil that in mature mushrooms surrounds the stem like a collar  \n"
+        },
+        {
+          "offset": 13926085,
+          "raw": "13926085 25 n 03 boundary 0 edge 0 bound 0 012 @ 13886392 n 0000 + 02716547 v 0301 + 00234091 v 0304 + 01469607 v 0203 + 02716547 v 0101 ~ 13925029 n 0000 ~ 13926393 n 0000 ~ 13926582 n 0000 ~ 13926744 n 0000 ~ 13926861 n 0000 ~ 13927017 n 0000 ~ 13935701 n 0000 | a line determining the limits of an area  \n"
+        },
+        {
+          "offset": 13949819,
+          "raw": "13949819 26 n 02 place 1 shoes 0 002 @ 13948785 n 0000 + 02397904 v 0101 | a particular situation; \"If you were in my place what would you do?\"  \n"
+        },
+        {
+          "offset": 13970825,
+          "raw": "13970825 26 n 02 place 0 station 0 002 @ 13970595 n 0000 ~ 13949201 n 0000 | proper or designated social situation; \"he overstepped his place\"; \"the responsibilities of a man in his station\"; \"married above her station\"  \n"
+        },
+        {
+          "offset": 13971047,
+          "raw": "13971047 26 n 01 place 2 002 @ 13943868 n 0000 + 02397904 v 0101 | proper or appropriate position or location; \"a woman's place is no longer in the kitchen\"  \n"
+        }
+      ],
+      "original_index_sha256": "799fad7c8084eb0f6f2a32ec737a251c85f51adb8b2603eb02bfebc4ce5ffa3d",
+      "original_data_sha256": "2cad22fe43461ee7ae61a564ae6a518c57445c8597e53542caddb5c26a6a5d94"
+    },
+    "verb": {
+      "header": "  1 This software and database is being provided to you, the LICENSEE, by  \n  2 Princeton University under the following license.  By obtaining, using  \n  3 and/or copying this software and database, you agree that you have  \n  4 read, understood, and will comply with these terms and conditions.:  \n  5   \n  6 Permission to use, copy, modify and distribute this software and  \n  7 database and its documentation for any purpose and without fee or  \n  8 royalty is hereby granted, provided that you agree to comply with  \n  9 the following copyright notice and statements, including the disclaimer,  \n  10 and that the same appear on ALL copies of the software, database and  \n  11 documentation, including modifications that you make for internal  \n  12 use or for distribution.  \n  13   \n  14 WordNet 3.1 Copyright 2011 by Princeton University.  All rights reserved.  \n  15   \n  16 THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON  \n  17 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR  \n  18 IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON  \n  19 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-  \n  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  \n  21 OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT  \n  22 INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR  \n  23 OTHER RIGHTS.  \n  24   \n  25 The name of Princeton University or Princeton may not be used in  \n  26 advertising or publicity pertaining to distribution of the software  \n  27 and/or database.  Title to copyright in this software, database and  \n  28 any associated documentation shall at all times remain with  \n  29 Princeton University and LICENSEE agrees to preserve same.  \n",
+      "index_rows": [
+        "edge v 4 4 @ ~ ^ + 4 1 02076429 02366599 01469607 01249407  \n",
+        "garment v 1 4 @ ~ $ + 1 0 00047662  \n",
+        "hem v 2 2 @ + 2 0 01332414 01063821  \n",
+        "place v 16 3 @ ~ + 16 11 01496967 02397904 00659723 02338685 00747956 00661447 01153025 00620568 02543626 01715608 00675367 02701737 02275982 01091334 01089102 01051148  \n",
+        "skirt v 4 2 @ ~ 4 2 00811316 02056014 02709571 01469999  \n",
+        "true v 1 2 @ + 1 0 00466204  \n"
+      ],
+      "data_rows": [
+        {
+          "offset": 47662,
+          "raw": "00047662 29 v 0a dress 1 clothe 0 enclothe 0 garb 0 raiment 0 tog 0 garment 0 habilitate 0 fit_out 0 apparel 0 026 @ 00145958 v 0000 + 02731365 n 0a01 + 03423924 n 0701 + 02745327 n 0502 + 02759103 n 0402 + 03055525 n 0201 + 02731365 n 0103 + 10052807 n 0101 + 00829898 n 0101 ~ 00044876 v 0000 $ 00046251 v 0000 ~ 00048350 v 0000 ~ 00048507 v 0000 ~ 00048629 v 0000 ~ 00048724 v 0000 ~ 00048819 v 0000 ~ 00048914 v 0000 ~ 00049026 v 0000 ~ 00049200 v 0000 ~ 00049386 v 0000 ~ 00049487 v 0000 ! 00049617 v 0101 ~ 00051228 v 0000 ~ 00051478 v 0000 ~ 00051760 v 0000 ~ 00106346 v 0000 02 + 08 00 + 09 00 | provide with clothes or put clothes on; \"Parents must feed and dress their child\"  \n"
+        },
+        {
+          "offset": 466204,
+          "raw": "00466204 30 v 02 true 0 true_up 0 002 @ 00465234 v 0000 + 05084517 n 0101 01 + 08 00 | make level, square, balanced, or concentric; \"true up the cylinder of an engine\"  \n"
+        },
+        {
+          "offset": 620568,
+          "raw": "00620568 31 v 02 identify 0 place 0 007 @ 00701581 v 0000 + 01275507 a 0101 + 14600591 n 0101 + 05770995 n 0102 + 05771409 n 0101 + 04625427 n 0101 ~ 00652006 v 0000 02 + 08 00 + 09 00 | recognize as being; establish the identity of someone or something; \"She identified the man on the `wanted' poster\"  \n"
+        },
+        {
+          "offset": 659723,
+          "raw": "00659723 31 v 06 rate 0 rank 0 range 0 order 0 grade 3 place 1 020 @ 00672179 v 0000 + 06495143 n 0601 + 05745098 n 0502 + 14451564 n 0501 + 14453034 n 0501 + 01005671 n 0501 + 10160303 n 0501 + 01012276 n 0502 + 05098520 n 0401 + 01011813 n 0402 + 14453411 n 0201 ~ 00660290 v 0000 ~ 00660469 v 0000 ~ 00660584 v 0000 ~ 00660783 v 0000 ~ 00661206 v 0000 ~ 00662052 v 0000 ~ 00662242 v 0000 ~ 00662401 v 0000 ~ 00662522 v 0000 02 + 08 00 + 09 00 | assign a rank or rating to; \"how would you rank these students?\"; \"The restaurant is rated highly in the food guide\"  \n"
+        },
+        {
+          "offset": 661447,
+          "raw": "00661447 31 v 03 place 3 come_in 0 come_out 0 002 @ 00661773 v 0000 + 06495143 n 0101 02 + 06 00 + 07 00 | take a place in a competition; often followed by an ordinal; \"Jerry came in third in the Marathon\"  \n"
+        },
+        {
+          "offset": 675367,
+          "raw": "00675367 31 v 03 place d put d set d 001 @ 00674352 v 0000 01 + 08 00 | estimate; \"We put the time of arrival at 8 P.M.\"  \n"
+        },
+        {
+          "offset": 747956,
+          "raw": "00747956 32 v 01 place 1 001 @ 00747485 v 0000 01 + 08 00 | to arrange for; \"place a phone call\"; \"place a bet\"  \n"
+        },
+        {
+          "offset": 811316,
+          "raw": "00811316 32 v 0b hedge 0 fudge 0 evade 0 put_off 3 circumvent 0 parry 0 elude 0 skirt 0 dodge 0 duck 0 sidestep 0 012 @ 00813037 v 0000 + 06769391 n 0901 + 10042484 n 0901 + 00204602 n 0904 + 00742010 n 0903 + 00742983 n 0501 + 00742010 n 0301 + 06774314 n 0101 + 10187605 n 0101 + 06774314 n 0102 ~ 00811888 v 0000 ~ 00812047 v 0000 01 + 08 00 | avoid or try to avoid fulfilling, answering, or performing (duties, questions, or issues); \"He dodged the issue\"; \"she skirted the problem\"; \"They tend to evade their responsibilities\"; \"he evaded the questions skillfully\"  \n"
+        },
+        {
+          "offset": 1051148,
+          "raw": "01051148 32 v 01 place 0 001 @ 01733312 v 0000 01 + 08 00 | sing a note with the correct pitch  \n"
+        },
+        {
+          "offset": 1063821,
+          "raw": "01063821 32 v 01 hem 0 001 @ 00985856 v 0000 01 + 02 00 | utter `hem' or `ahem'  \n"
+        },
+        {
+          "offset": 1089102,
+          "raw": "01089102 33 v 01 place 2 002 @ 01088514 v 0000 + 06495143 n 0101 01 + 01 00 | finish second or better in a horse or dog race; \"he bet $2 on number six to place\"  \n"
+        },
+        {
+          "offset": 1091334,
+          "raw": "01091334 33 v 04 station 0 post 0 send 0 place 0 007 @ 01854282 v 0000 + 00587299 n 0407 + 08641960 n 0102 + 08674221 n 0101 ~ 01091548 v 0000 ~ 01157887 v 0000 ~ 02338685 v 0000 01 + 20 00 | assign to a station  \n"
+        },
+        {
+          "offset": 1153025,
+          "raw": "01153025 33 v 05 target 0 aim a place 3 direct 1 point a 007 @ 01153576 v 0000 + 08682181 n 0302 + 00817305 n 0201 + 05990115 n 0104 + 10490045 n 0103 ~ 01153447 v 0000 ~ 01155473 v 0000 04 + 08 00 + 09 00 + 22 05 + 22 02 | intend (something) to move towards a certain goal; \"He aimed his fists towards his opponent's face\"; \"criticism directed at her superior\"; \"direct your anger towards others, not towards yourself\"  \n"
+        },
+        {
+          "offset": 1249407,
+          "raw": "01249407 35 v 01 edge 1 002 @ 01249165 v 0000 + 03269047 n 0101 01 + 08 00 | provide with an edge; \"edge a blade\"  \n"
+        },
+        {
+          "offset": 1332414,
+          "raw": "01332414 35 v 01 hem 0 002 @ 01331921 v 0000 + 03518771 n 0101 01 + 08 00 | fold over and sew together to provide with a hem; \"hem my skirt\"  \n"
+        },
+        {
+          "offset": 1469607,
+          "raw": "01469607 35 v 08 border 0 adjoin 2 edge 0 abut 0 march 0 butt 2 butt_against 0 butt_on 0 010 @ 01208316 v 0000 + 02931797 n 0602 + 08530235 n 0503 + 08638338 n 0401 + 09778112 n 0401 + 13926085 n 0302 + 03270390 n 0301 + 08583230 n 0102 + 08529808 n 0102 ~ 02614039 v 0000 01 + 11 00 | lie adjacent to another or share a boundary; \"Canada adjoins the U.S.\"; \"England marches with Scotland\"  \n"
+        },
+        {
+          "offset": 1469999,
+          "raw": "01469999 35 v 05 surround 0 environ 0 ring 3 skirt 0 border 1 012 @ 01208316 v 0000 + 08583230 n 0502 + 08529808 n 0502 + 02878255 n 0501 + 08584764 n 0104 + 08584764 n 0103 ~ 01470380 v 0000 ~ 01470546 v 0000 ~ 01474064 v 0000 ~ 01589983 v 0000 ~ 01610620 v 0000 ~ 02730001 v 0000 01 + 11 00 | extend on all sides of simultaneously; encircle; \"The forest surrounds my property\"  \n"
+        },
+        {
+          "offset": 1496967,
+          "raw": "01496967 35 v 06 put 0 set 0 place 0 pose 2 position 0 lay 1 106 @ 01854282 v 0000 ^ 01476839 v 0603 + 01053255 n 0504 + 04117533 n 0502 + 06401196 n 0303 + 08639173 n 0302 + 08682181 n 0302 + 05082771 n 0301 + 01054777 n 0201 + 08641502 n 0201 ^ 01492094 v 0203 ^ 02708534 v 0201 ^ 02579184 v 0202 ^ 02584093 v 0204 ^ 01983255 v 0203 ^ 01660471 v 0204 ^ 01665137 v 0204 ^ 01466592 v 0202 ^ 01476839 v 0204 ^ 02648898 v 0104 ^ 01311041 v 0102 ^ 02708534 v 0103 ^ 02648898 v 010a ^ 01985050 v 0102 ^ 02500005 v 0109 ^ 01660471 v 0103 ^ 01366351 v 0101 ^ 01573231 v 0102 ^ 01547474 v 0102 ^ 00744289 v 0105 ~ 00187671 v 0000 ~ 01010746 v 0000 ~ 01249990 v 0000 ~ 01250769 v 0000 ~ 01250969 v 0000 ~ 01259051 v 0000 ~ 01311041 v 0000 ~ 01311341 v 0000 ~ 01373866 v 0000 ~ 01379285 v 0000 ~ 01427999 v 0000 ~ 01437455 v 0000 ~ 01466592 v 0000 ~ 01471892 v 0000 ~ 01472074 v 0000 ~ 01496037 v 0000 ~ 01496276 v 0000 ~ 01499136 v 0000 ~ 01499269 v 0000 ~ 01499482 v 0000 ~ 01499617 v 0000 ~ 01499931 v 0000 ~ 01500097 v 0000 ~ 01500273 v 0000 ~ 01500389 v 0000 ~ 01500503 v 0000 ~ 01500805 v 0000 ~ 01500958 v 0000 ~ 01501137 v 0000 ~ 01501254 v 0000 ~ 01501352 v 0000 ~ 01501511 v 0000 ~ 01501645 v 0000 ~ 01501904 v 0000 ~ 01502331 v 0000 ~ 01502488 v 0000 ~ 01502587 v 0000 ~ 01502721 v 0000 ~ 01502853 v 0000 ~ 01503011 v 0000 ~ 01503512 v 0000 ~ 01504432 v 0000 ~ 01504599 v 0000 ~ 01504761 v 0000 ~ 01504918 v 0000 ~ 01505080 v 0000 ~ 01505179 v 0000 ~ 01505293 v 0000 ~ 01505585 v 0000 ~ 01520147 v 0000 ~ 01546780 v 0000 ~ 01547067 v 0000 ~ 01547474 v 0000 ~ 01549550 v 0000 ~ 01550423 v 0000 ~ 01570056 v 0000 ~ 01572394 v 0000 ~ 01578506 v 0000 ~ 01581842 v 0000 ~ 01605586 v 0000 ~ 01609495 v 0000 ~ 01610494 v 0000 ~ 01613005 v 0000 ~ 01614144 v 0000 ~ 01614988 v 0000 ~ 01615199 v 0000 ~ 01616143 v 0000 ~ 01616295 v 0000 ~ 01619805 v 0000 ~ 01991174 v 0000 ~ 01991795 v 0000 ~ 01992094 v 0000 ~ 01992339 v 0000 ~ 01992472 v 0000 ~ 02101619 v 0000 ~ 02694988 v 0000 01 + 21 00 | put into a certain place or abstract location; \"Put your things here\"; \"Set the tray down\"; \"Set the dogs on the scent of the missing children\"; \"Place emphasis on a certain point\"  \n"
+        },
+        {
+          "offset": 1715608,
+          "raw": "01715608 36 v 04 set 1 localize 0 localise 0 place 0 006 @ 01715304 v 0000 + 08682181 n 0402 + 05082771 n 0401 + 00156307 n 0201 + 08695366 n 0202 + 01054777 n 0101 01 + 21 00 | locate; \"The film is set in Africa\"  \n"
+        },
+        {
+          "offset": 2056014,
+          "raw": "02056014 38 v 01 skirt 0 001 @ 02055618 v 0000 01 + 11 00 | pass around or about; move along the border; \"The boat skirted the coast\"  \n"
+        },
+        {
+          "offset": 2076429,
+          "raw": "02076429 38 v 02 edge 0 inch 0 003 @ 01996535 v 0000 + 13671409 n 0201 ^ 02021789 v 0101 02 + 04 00 + 22 00 | advance slowly, as if by inches; \"He edged towards the car\"  \n"
+        },
+        {
+          "offset": 2275982,
+          "raw": "02275982 40 v 04 invest 0 put 0 commit 5 place 3 013 @ 02271905 v 0000 + 01242433 n 0301 + 13354252 n 0101 + 01101341 n 0102 + 10235776 n 0101 + 01101341 n 0101 ! 02318886 v 0101 ~ 02220748 v 0000 ~ 02276335 v 0000 ~ 02276662 v 0000 ~ 02276768 v 0000 ~ 02276935 v 0000 ~ 02289389 v 0000 02 + 08 00 + 21 00 | make an investment; \"Put money into bonds\"  \n"
+        },
+        {
+          "offset": 2338685,
+          "raw": "02338685 40 v 03 locate 1 place 0 site 0 007 @ 01091334 v 0000 + 08668822 n 0301 + 00587299 n 0207 + 08530790 n 0201 + 05082771 n 0201 + 01053255 n 0102 + 00027365 n 0101 04 + 08 00 + 09 00 + 10 00 + 11 00 | assign a location to; \"The company located some of their agents in Los Angeles\"  \n"
+        },
+        {
+          "offset": 2366599,
+          "raw": "02366599 40 v 02 border 0 edge 0 005 @ 02332196 v 0000 + 03269047 n 0201 + 08583230 n 0201 + 10064571 n 0201 + 03269817 n 0201 01 + 08 00 | provide with a border or edge; \"edge the tablecloth with embroidery\"  \n"
+        },
+        {
+          "offset": 2397904,
+          "raw": "02397904 41 v 01 place 1 004 @ 02396945 v 0000 + 13971047 n 0101 + 13949819 n 0101 + 05619605 n 0101 01 + 20 00 | place somebody in a particular situation or location; \"he was placed on probation\"  \n"
+        },
+        {
+          "offset": 2543626,
+          "raw": "02543626 41 v 01 place 0 003 @ 02396945 v 0000 + 00587299 n 0107 + 08577045 n 0102 01 + 20 00 | assign to (a job or a home)  \n"
+        },
+        {
+          "offset": 2701737,
+          "raw": "02701737 42 v 03 place 0 localize 1 localise 1 005 @ 02700775 v 0000 + 00156307 n 0302 + 00156307 n 0201 + 08695366 n 0202 + 05082771 n 0101 01 + 08 00 | identify the location or place of; \"We localized the source of the infection\"  \n"
+        },
+        {
+          "offset": 2709571,
+          "raw": "02709571 42 v 01 skirt 0 001 @ 02716547 v 0000 01 + 11 00 | form the edge of  \n"
+        }
+      ],
+      "original_index_sha256": "e65b2d67274c8a5f9ba6f696fdc73f4546db2a138b362a3be582e3787c879c7a",
+      "original_data_sha256": "eb1cf196dab6e1b815a1c86fa20c909fb7413b2f34250d7fe60a0fb35ef59e03"
+    },
+    "adj": {
+      "header": "  1 This software and database is being provided to you, the LICENSEE, by  \n  2 Princeton University under the following license.  By obtaining, using  \n  3 and/or copying this software and database, you agree that you have  \n  4 read, understood, and will comply with these terms and conditions.:  \n  5   \n  6 Permission to use, copy, modify and distribute this software and  \n  7 database and its documentation for any purpose and without fee or  \n  8 royalty is hereby granted, provided that you agree to comply with  \n  9 the following copyright notice and statements, including the disclaimer,  \n  10 and that the same appear on ALL copies of the software, database and  \n  11 documentation, including modifications that you make for internal  \n  12 use or for distribution.  \n  13   \n  14 WordNet 3.1 Copyright 2011 by Princeton University.  All rights reserved.  \n  15   \n  16 THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON  \n  17 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR  \n  18 IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON  \n  19 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-  \n  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  \n  21 OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT  \n  22 INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR  \n  23 OTHER RIGHTS.  \n  24   \n  25 The name of Princeton University or Princeton may not be used in  \n  26 advertising or publicity pertaining to distribution of the software  \n  27 and/or database.  Title to copyright in this software, database and  \n  28 any associated documentation shall at all times remain with  \n  29 Princeton University and LICENSEE agrees to preserve same.  \n",
+      "index_rows": [
+        "permanent a 2 5 ! & ^ = + 2 1 01758923 01764039  \n",
+        "true a 12 5 ! & ^ = + 12 3 02469730 00023157 00962719 01228271 02478996 02474747 02187907 01945125 01473564 01410239 01167303 00914318  \n"
+      ],
+      "data_rows": [
+        {
+          "offset": 23157,
+          "raw": "00023157 00 s 02 true 0 dead_on_target 0 002 & 00021803 a 0000 + 04811418 n 0101 | accurately placed or thrown; \"his aim was true\"; \"he was dead on target\"  \n"
+        },
+        {
+          "offset": 914318,
+          "raw": "00914318 00 s 02 true 0 straight 2 001 & 00912628 a 0000 | accurately fitted; level; \"the window frame isn't quite true\"  \n"
+        },
+        {
+          "offset": 962719,
+          "raw": "00962719 00 s 01 true 2 002 & 00962069 a 0000 + 04884725 n 0102 | devoted (sometimes fanatically) to a cause or concept or truth; \"true believers bonded together against all who disagreed with them\"  \n"
+        },
+        {
+          "offset": 1167303,
+          "raw": "01167303 00 s 02 on-key 0 true 0 001 & 01166627 a 0000 | in tune; accurate in pitch; \"a true note\"  \n"
+        },
+        {
+          "offset": 1228271,
+          "raw": "01228271 00 a 02 truthful 0 true 4 005 ^ 01225031 a 0000 + 04879431 n 0101 ! 01228771 a 0101 & 01228516 a 0000 & 01228645 a 0000 | expressing or given to expressing the truth; \"a true statement\"; \"gave truthful testimony\"; \"a truthful person\"  \n"
+        },
+        {
+          "offset": 1410239,
+          "raw": "01410239 00 s 03 true(a) 0 lawful 0 rightful(a) 0 003 & 01409612 a 0000 + 04857572 n 0302 + 04817036 n 0201 | having a legally established claim; \"the legitimate heir\"; \"the true and lawful king\"  \n"
+        },
+        {
+          "offset": 1473564,
+          "raw": "01473564 00 s 01 true(a) 0 001 & 01473411 a 0000 | determined with reference to the earth's axis rather than the magnetic poles; \"true north is geographic north\"  \n"
+        },
+        {
+          "offset": 1758923,
+          "raw": "01758923 00 a 02 permanent 0 lasting 4 013 ^ 00901582 a 0000 ^ 02298730 a 0000 ^ 00348093 a 0000 = 05060366 n 0000 + 05060839 n 0201 + 05268016 n 0102 + 05060366 n 0102 + 05060366 n 0101 ! 01760139 a 0101 & 01759375 a 0000 & 01759536 a 0000 & 01759930 a 0000 & 01760020 a 0000 | continuing or enduring without marked change in status or condition or place; \"permanent secretary to the president\"; \"permanent address\"; \"literature of permanent value\"  \n"
+        },
+        {
+          "offset": 1764039,
+          "raw": "01764039 00 s 01 permanent 0 001 & 01763874 a 0000 | not capable of being reversed or returned to the original condition; \"permanent brain damage\"  \n"
+        },
+        {
+          "offset": 1945125,
+          "raw": "01945125 00 s 01 true(a) 0 001 & 01944611 a 0000 | rightly so called; \"true courage\"; \"a spirit which true men have always admired\"; \"a true friend\"  \n"
+        },
+        {
+          "offset": 2187907,
+          "raw": "02187907 00 s 03 genuine 0 true(a) 0 unfeigned 0 002 & 02186899 a 0000 + 04790511 n 0102 | not pretended; sincerely felt or expressed; \"genuine emotion\"; \"her interest in people was unfeigned\"; \"true grief\"  \n"
+        },
+        {
+          "offset": 2469730,
+          "raw": "02469730 00 a 01 true 0 012 ^ 00634232 a 0000 ^ 00962069 a 0000 ^ 01119091 a 0000 ^ 01225031 a 0000 ^ 02186899 a 0000 = 13979774 n 0000 + 13979774 n 0104 ! 02470951 a 0101 & 02470192 a 0000 & 02470523 a 0000 & 02470666 a 0000 & 02470814 a 0000 | consistent with fact or reality; not false; \"the story is true\"; \"it is undesirable to believe a proposition when there is no ground whatever for supposing it true\"- B. Russell; \"the true meaning of the statement\"  \n"
+        },
+        {
+          "offset": 2474747,
+          "raw": "02474747 00 s 04 dependable 0 honest 0 reliable 2 true(p) 0 007 & 02473921 a 0000 + 04884725 n 0402 + 04677379 n 0304 + 04677379 n 0303 + 04878569 n 0202 + 04677379 n 0102 + 04677379 n 0101 | worthy of being depended on; \"a dependable worker\"; \"an honest working stiff\"; \"a reliable source of information\"; \"he was true to his word\"; \"I would be true for there are those who trust me\"  \n"
+        },
+        {
+          "offset": 2478996,
+          "raw": "02478996 00 s 01 true 0 001 & 02477858 a 0000 | conforming to definitive criteria; \"the horseshoe crab is not a true crab\"; \"Pythagoras was the first true mathematician\"  \n"
+        }
+      ],
+      "original_index_sha256": "7d2b4d4037f0571ca309ce2ebadbe860a1607d494a70cd40f9bd61bc25a57016",
+      "original_data_sha256": "ca1033bf627eb95f6cbb2864f8990be8e6a01a3c182e7d7c7094ccf8ead242cc"
+    },
+    "adv": {
+      "header": "  1 This software and database is being provided to you, the LICENSEE, by  \n  2 Princeton University under the following license.  By obtaining, using  \n  3 and/or copying this software and database, you agree that you have  \n  4 read, understood, and will comply with these terms and conditions.:  \n  5   \n  6 Permission to use, copy, modify and distribute this software and  \n  7 database and its documentation for any purpose and without fee or  \n  8 royalty is hereby granted, provided that you agree to comply with  \n  9 the following copyright notice and statements, including the disclaimer,  \n  10 and that the same appear on ALL copies of the software, database and  \n  11 documentation, including modifications that you make for internal  \n  12 use or for distribution.  \n  13   \n  14 WordNet 3.1 Copyright 2011 by Princeton University.  All rights reserved.  \n  15   \n  16 THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON  \n  17 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR  \n  18 IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON  \n  19 UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-  \n  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  \n  21 OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT  \n  22 INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR  \n  23 OTHER RIGHTS.  \n  24   \n  25 The name of Princeton University or Princeton may not be used in  \n  26 advertising or publicity pertaining to distribution of the software  \n  27 and/or database.  Title to copyright in this software, database and  \n  28 any associated documentation shall at all times remain with  \n  29 Princeton University and LICENSEE agrees to preserve same.  \n",
+      "index_rows": [
+        "true r 1 0 1 1 00185770  \n"
+      ],
+      "data_rows": [
+        {
+          "offset": 185770,
+          "raw": "00185770 02 r 04 true 0 admittedly 0 avowedly 1 confessedly 0 000 | as acknowledged; \"true, she is the smartest in her class\"  \n"
+        }
+      ],
+      "original_index_sha256": "0ea0811bb06eeeb973805ab0b066cb724ebc9dc01f07583582b59579a5b4a36c",
+      "original_data_sha256": "aea301f39ac1b24be9a880dbc6cc6331bc5391f58c7525a1b298a13c922f2ed3"
+    }
+  }
+}

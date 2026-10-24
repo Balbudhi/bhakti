@@ -1,0 +1,1255 @@
+{
+  "rehna-final-sourcefirst": {
+    "audited": {
+      "packet": {
+        "verified_lines": [
+          {
+            "id": "verse-3-line-1",
+            "source_text": "कहत कबीर सुनो भाई साधो",
+            "roman": "kahata kabīra sunō bhāī sādhō",
+            "kind": "verse",
+            "performed_context": [
+              {
+                "before": [
+                  {
+                    "id": "refrain-1",
+                    "source_text": "रहना नहीं इस देस में",
+                    "roman": "rahanā nahīṁ isa desa meṁ"
+                  },
+                  {
+                    "id": "refrain-des-veerana",
+                    "source_text": "देस ये वीराना है",
+                    "roman": "desa ye vīrānā hai"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "verse-3-line-2",
+                    "source_text": "सतगुरु नाम ठिकाना है",
+                    "roman": "sataguru nāma ṭhikānā hai"
+                  },
+                  {
+                    "id": "refrain-1",
+                    "source_text": "रहना नहीं इस देस में",
+                    "roman": "rahanā nahīṁ isa desa meṁ"
+                  }
+                ]
+              }
+            ],
+            "sourceWords": [
+              {
+                "text": "कहत",
+                "wordIndices": [
+                  0
+                ]
+              },
+              {
+                "text": "कबीर",
+                "wordIndices": [
+                  1
+                ]
+              },
+              {
+                "text": "सुनो",
+                "wordIndices": [
+                  2
+                ]
+              },
+              {
+                "text": "भाई",
+                "wordIndices": [
+                  3
+                ]
+              },
+              {
+                "text": "साधो",
+                "wordIndices": [
+                  4
+                ]
+              }
+            ],
+            "lexical_tokens": [
+              "kahata",
+              "kabīra",
+              "sunō",
+              "bhāī",
+              "sādhō"
+            ],
+            "sourceLanguage": "hi"
+          },
+          {
+            "id": "verse-3-line-2",
+            "source_text": "सतगुरु नाम ठिकाना है",
+            "roman": "sataguru nāma ṭhikānā hai",
+            "kind": "verse",
+            "performed_context": [
+              {
+                "before": [
+                  {
+                    "id": "refrain-des-veerana",
+                    "source_text": "देस ये वीराना है",
+                    "roman": "desa ye vīrānā hai"
+                  },
+                  {
+                    "id": "verse-3-line-1",
+                    "source_text": "कहत कबीर सुनो भाई साधो",
+                    "roman": "kahata kabīra sunō bhāī sādhō"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "refrain-1",
+                    "source_text": "रहना नहीं इस देस में",
+                    "roman": "rahanā nahīṁ isa desa meṁ"
+                  },
+                  {
+                    "id": "refrain-des-veerana",
+                    "source_text": "देस ये वीराना है",
+                    "roman": "desa ye vīrānā hai"
+                  }
+                ]
+              }
+            ],
+            "sourceWords": [
+              {
+                "text": "सतगुरु",
+                "wordIndices": [
+                  0
+                ]
+              },
+              {
+                "text": "नाम",
+                "wordIndices": [
+                  1
+                ]
+              },
+              {
+                "text": "ठिकाना",
+                "wordIndices": [
+                  2
+                ]
+              },
+              {
+                "text": "है",
+                "wordIndices": [
+                  3
+                ]
+              }
+            ],
+            "lexical_tokens": [
+              "sataguru",
+              "nāma",
+              "ṭhikānā",
+              "hai"
+            ],
+            "sourceLanguage": "hi"
+          }
+        ],
+        "metadata": {
+          "languages": [
+            "Hindi"
+          ]
+        },
+        "performance_order": [
+          {
+            "ref": "verse-3-line-1",
+            "section": "verse",
+            "repeats": 2
+          },
+          {
+            "ref": "verse-3-line-2",
+            "section": "verse",
+            "repeats": 2
+          }
+        ]
+      }
+    },
+    "glosses": {
+      "packet": {
+        "glosses": [
+          {
+            "id": "verse-3-line-1",
+            "word_glosses": [
+              {
+                "roman": "kahata",
+                "gloss": "says",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "kabīra",
+                "gloss": "the poet named in this source line",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "sunō",
+                "gloss": "listen",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "bhāī",
+                "gloss": "brother",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "sādhō",
+                "gloss": "seekers; spiritual practitioners",
+                "concept_key": "",
+                "preserve_in_english": false
+              }
+            ],
+            "semantic_frame": {
+              "agent": "Kabīr (in the signature assertion); addressed seekers (in the imperative frame)",
+              "action_or_state": "speaking (by Kabīr); listening (enjoined upon seekers)",
+              "patient_or_complement": "the spiritual declaration that the Satguru's name is the true dwelling",
+              "modifiers": "",
+              "negation_or_modality": "imperative modality (sunō)",
+              "literal_image_and_agency": "The poet-saint Kabīr directly addresses his community of fellow practitioners, bidding them to hear the concluding truth.",
+              "idiom_or_phrase": "bhāī sādhō (vocative phrase: O brother seekers / fellow practitioners)",
+              "cross_line_relation": "Forms the metrical signature and introductory frame that governs the proclamation in verse-3-line-2."
+            },
+            "grammar_note": "kahata is the Braj/Old Hindi imperfective participle functioning as a third-person present finite verb ('says'), with kabīra as its subject. sunō is a second-person plural/honorific imperative ('listen'). bhāī sādhō functions as an affectionate vocative address to fellow spiritual seekers.",
+            "uncertainty": "",
+            "sense_decisions": [
+              {
+                "word_index": 0,
+                "roman": "kahata",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Imperfective verbal participle functioning as present finite verb 'says' in the traditional poet-signature formula.",
+                "grammatical_role": "finite verb"
+              },
+              {
+                "word_index": 1,
+                "roman": "kabīra",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Proper name of the poet Kabīr, functioning as subject of kahata.",
+                "grammatical_role": "subject noun"
+              },
+              {
+                "word_index": 2,
+                "roman": "sunō",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Second-person plural imperative of sunnā ('to hear', 'to listen'), calling for attention.",
+                "grammatical_role": "imperative verb"
+              },
+              {
+                "word_index": 3,
+                "roman": "bhāī",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Used in vocative address to fellow seekers in a fraternal devotional sense.",
+                "grammatical_role": "vocative noun"
+              },
+              {
+                "word_index": 4,
+                "roman": "sādhō",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Vocative plural of sādhu, denoting spiritual practitioners, seekers, or virtuous listeners.",
+                "grammatical_role": "vocative noun"
+              }
+            ],
+            "lexical_queries": [],
+            "lexical_query_gaps": [],
+            "source_discovery_decisions": []
+          },
+          {
+            "id": "verse-3-line-2",
+            "word_glosses": [
+              {
+                "roman": "sataguru",
+                "gloss": "true spiritual teacher",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "nāma",
+                "gloss": "divine name",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "ṭhikānā",
+                "gloss": "permanent abode; true resting place",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "hai",
+                "gloss": "is",
+                "concept_key": "",
+                "preserve_in_english": false
+              }
+            ],
+            "semantic_frame": {
+              "agent": "",
+              "action_or_state": "being; existing as a true and permanent resting place",
+              "patient_or_complement": "permanent abode; true resting place (ṭhikānā)",
+              "modifiers": "",
+              "negation_or_modality": "indicative copula (hai)",
+              "literal_image_and_agency": "The divine name of the true teacher is identified as the singular enduring dwelling-place, contrasting directly with the desolate world (desa vīrānā) and perishable existence described in preceding verses.",
+              "idiom_or_phrase": "sataguru nāma (the divine name of the true spiritual teacher)",
+              "cross_line_relation": "Provides the direct content of what Kabīr bids the seekers hear in verse-3-line-1, and resolves the entire bhajan's opening premise that one must not remain in this transient wasteland."
+            },
+            "grammar_note": "Equational copular clause where sataguru nāma functions as the grammatical subject (compounded/genitival: 'the Name of the True Guru') and ṭhikānā as predicate complement, linked by the singular present copula hai.",
+            "uncertainty": "",
+            "sense_decisions": [
+              {
+                "word_index": 0,
+                "roman": "sataguru",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Refers to the true spiritual guide or inner divine teacher in nirguṇa Sant tradition.",
+                "grammatical_role": "noun modifying nāma"
+              },
+              {
+                "word_index": 1,
+                "roman": "nāma",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Contextually signifies the divine name or sacred utterance of the Guru as spiritual refuge.",
+                "grammatical_role": "head subject noun"
+              },
+              {
+                "word_index": 2,
+                "roman": "ṭhikānā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Signifies permanent abode, authentic dwelling place, or lasting refuge in contrast to the perishable wilderness of worldly existence.",
+                "grammatical_role": "predicate noun"
+              },
+              {
+                "word_index": 3,
+                "roman": "hai",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Third-person singular present indicative copula of honā.",
+                "grammatical_role": "copular verb"
+              }
+            ],
+            "lexical_queries": [
+              {
+                "word_indices": [
+                  2
+                ],
+                "surfaces": [
+                  "ṭhikānā"
+                ],
+                "reason": "Identify the contextual noun sense and modifier attachment in the complete clause.",
+                "source_entry_ids": [
+                  "platts1884.p363.hw17de11e5b9034850.h1"
+                ],
+                "source_queries": [
+                  "ठिकाना",
+                  "ṭhikānā"
+                ],
+                "english_candidates": [
+                  {
+                    "expression": "permanent abode",
+                    "kind": "compositional_phrase",
+                    "english_lemmas": [
+                      "permanent",
+                      "abode"
+                    ]
+                  },
+                  {
+                    "expression": "true dwelling place",
+                    "kind": "compositional_phrase",
+                    "english_lemmas": [
+                      "true",
+                      "dwelling",
+                      "place"
+                    ]
+                  },
+                  {
+                    "expression": "refuge",
+                    "kind": "word",
+                    "english_lemmas": [
+                      "refuge"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "lexical_query_gaps": [],
+            "source_discovery_decisions": [
+              {
+                "target_id": "discovery:verse-3-line-2:2",
+                "entry_id": "platts1884.p363.hw17de11e5b9034850.h1",
+                "attested_form": "ṭhikānā",
+                "quotation": "Fixed or permanent place or abode; proper place; precise or exact spot, whereabouts; place, spot, site; dwelling.place, abode, residence, home, quarters",
+                "meaning_applied": "permanent abode; true dwelling place",
+                "reason": "In the context of contrasting the transient, desolate world (desa vīrānā) with the Guru's Name, ṭhikānā specifically denotes an enduring home or permanent abode.",
+                "form_explanation": "",
+                "status": "matched",
+                "relation_kind": "exact_form",
+                "changes_gloss": false
+              }
+            ]
+          }
+        ]
+      },
+      "source_gloss_receipt": {
+        "version": 1,
+        "targets": {
+          "discovery:verse-3-line-2:2": {
+            "line_id": "verse-3-line-2",
+            "word_indices": [
+              2
+            ],
+            "surfaces": [
+              "ṭhikānā"
+            ],
+            "source_language": "hi",
+            "dictionary_id": "platts1884",
+            "content_sha256": "910adb18c831e6aa6268f80b7cc41c035ee1fb4928f733ae82420c9f54d51423"
+          }
+        }
+      }
+    }
+  },
+  "koi-garment-sourcefirst": {
+    "audited": {
+      "packet": {
+        "verified_lines": [
+          {
+            "id": "invocation",
+            "source_text": "ਮਾਂ ਮੇਰੀ ਸਚੀਆਂ ਜੋਤਾਂ ਵਾਲੀ ਮਾਤਾ, ਤੇਰੀ ਸਦਾ ਹੀ ਜੈ",
+            "roman": "Mā merī sachīyā jotā wālī mātā, terī sadā hī jai",
+            "kind": "invocation",
+            "performed_context": [
+              {
+                "before": [],
+                "after": [
+                  {
+                    "id": "refrain",
+                    "source_text": "ਮੈਂ ਲੜ ਫੜਿਆ ਏ ਤੇਰਾ, ਕੋਈ ਹੋਰ ਨਹੀਂ ਏ ਮੇਰਾ",
+                    "roman": "Main laṛ phaṛyā ae terā, koī hor nahī ae merā"
+                  },
+                  {
+                    "id": "v1a",
+                    "source_text": "ਅਸੀਂ ਸਾਹ ਛੱਡ ਜਾਵਾਂਗੇ",
+                    "roman": "Asī sāh chhaḍ jāvānge"
+                  }
+                ]
+              }
+            ],
+            "sourceWords": [
+              {
+                "text": "ਮਾਂ",
+                "wordIndices": [
+                  0
+                ]
+              },
+              {
+                "text": "ਮੇਰੀ",
+                "wordIndices": [
+                  1
+                ]
+              },
+              {
+                "text": "ਸਚੀਆਂ",
+                "wordIndices": [
+                  2
+                ]
+              },
+              {
+                "text": "ਜੋਤਾਂ",
+                "wordIndices": [
+                  3
+                ]
+              },
+              {
+                "text": "ਵਾਲੀ",
+                "wordIndices": [
+                  4
+                ]
+              },
+              {
+                "text": "ਮਾਤਾ,",
+                "wordIndices": [
+                  5
+                ]
+              },
+              {
+                "text": "ਤੇਰੀ",
+                "wordIndices": [
+                  6
+                ]
+              },
+              {
+                "text": "ਸਦਾ",
+                "wordIndices": [
+                  7
+                ]
+              },
+              {
+                "text": "ਹੀ",
+                "wordIndices": [
+                  7
+                ]
+              },
+              {
+                "text": "ਜੈ",
+                "wordIndices": [
+                  8
+                ]
+              }
+            ],
+            "lexical_tokens": [
+              "Mā",
+              "merī",
+              "sachīyā",
+              "jotā",
+              "wālī",
+              "mātā",
+              "terī",
+              "sadā hī",
+              "jai"
+            ],
+            "sourceLanguage": "pa"
+          },
+          {
+            "id": "refrain",
+            "source_text": "ਮੈਂ ਲੜ ਫੜਿਆ ਏ ਤੇਰਾ, ਕੋਈ ਹੋਰ ਨਹੀਂ ਏ ਮੇਰਾ",
+            "roman": "Main laṛ phaṛyā ae terā, koī hor nahī ae merā",
+            "kind": "refrain",
+            "performed_context": [
+              {
+                "before": [
+                  {
+                    "id": "invocation",
+                    "source_text": "ਮਾਂ ਮੇਰੀ ਸਚੀਆਂ ਜੋਤਾਂ ਵਾਲੀ ਮਾਤਾ, ਤੇਰੀ ਸਦਾ ਹੀ ਜੈ",
+                    "roman": "Mā merī sachīyā jotā wālī mātā, terī sadā hī jai"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v1a",
+                    "source_text": "ਅਸੀਂ ਸਾਹ ਛੱਡ ਜਾਵਾਂਗੇ",
+                    "roman": "Asī sāh chhaḍ jāvānge"
+                  },
+                  {
+                    "id": "v1b",
+                    "source_text": "ਫੇਰ ਬਾਜਾ ਮਾਰੋਗੇ, ਅਸੀਂ ਮੁੜ ਨਹੀਂਓ ਆਵਾਂਗੇ",
+                    "roman": "Pher bājā māroge, asī muṛ nahīyo āvānge"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "v1a",
+                    "source_text": "ਅਸੀਂ ਸਾਹ ਛੱਡ ਜਾਵਾਂਗੇ",
+                    "roman": "Asī sāh chhaḍ jāvānge"
+                  },
+                  {
+                    "id": "v1b",
+                    "source_text": "ਫੇਰ ਬਾਜਾ ਮਾਰੋਗੇ, ਅਸੀਂ ਮੁੜ ਨਹੀਂਓ ਆਵਾਂਗੇ",
+                    "roman": "Pher bājā māroge, asī muṛ nahīyo āvānge"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v2a",
+                    "source_text": "ਇਸ ਜ਼ਿੰਦਗੀ ਤੋਂ ਕੀ ਲੈਣਾ, ਮਾਂ",
+                    "roman": "Is zindagī ton kī lainā, mā"
+                  },
+                  {
+                    "id": "v2b",
+                    "source_text": "ਦਰਸ਼ਨ ਨਾ ਹੋਇਆ, ਫੇਰ ਜੀ ਕੇ ਕੀ ਲੈਣਾ",
+                    "roman": "Darshan nā hoyā, pher jī ke kī lainā"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "v2a",
+                    "source_text": "ਇਸ ਜ਼ਿੰਦਗੀ ਤੋਂ ਕੀ ਲੈਣਾ, ਮਾਂ",
+                    "roman": "Is zindagī ton kī lainā, mā"
+                  },
+                  {
+                    "id": "v2b",
+                    "source_text": "ਦਰਸ਼ਨ ਨਾ ਹੋਇਆ, ਫੇਰ ਜੀ ਕੇ ਕੀ ਲੈਣਾ",
+                    "roman": "Darshan nā hoyā, pher jī ke kī lainā"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v3a",
+                    "source_text": "ਅਸੀਂ ਦਰ ਤੇਰੇ ਆਵਾਂਗੇ",
+                    "roman": "Asī dar tere āvānge"
+                  },
+                  {
+                    "id": "v3b",
+                    "source_text": "ਸੌਂ ਆਪਣੀ ਪਾਵੇਂਗੀ, ਤੈਨੂੰ ਛੱਡ ਕੇ ਨਾ ਜਾਵਾਂਗੇ",
+                    "roman": "Saun apnī pāvengī, tainū chhaḍ ke nā jāvānge"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "v3a",
+                    "source_text": "ਅਸੀਂ ਦਰ ਤੇਰੇ ਆਵਾਂਗੇ",
+                    "roman": "Asī dar tere āvānge"
+                  },
+                  {
+                    "id": "v3b",
+                    "source_text": "ਸੌਂ ਆਪਣੀ ਪਾਵੇਂਗੀ, ਤੈਨੂੰ ਛੱਡ ਕੇ ਨਾ ਜਾਵਾਂਗੇ",
+                    "roman": "Saun apnī pāvengī, tainū chhaḍ ke nā jāvānge"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v4a",
+                    "source_text": "ਇਹ ਜ਼ਿੰਦਗੀ ਤੇਰੀ ਏ, ਮਾਂ",
+                    "roman": "Eh zindagī terī ae, mā"
+                  },
+                  {
+                    "id": "v4b",
+                    "source_text": "ਕਦੋ ਫੇਰਾ ਆ ਜਾਵੇ, ਇਸ ਮਿੱਟੀ ਦੀ ਢੇਰੀ ਏ",
+                    "roman": "Kado pherā ā jāve, is miṭṭī dī ḍherī ae"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "v4a",
+                    "source_text": "ਇਹ ਜ਼ਿੰਦਗੀ ਤੇਰੀ ਏ, ਮਾਂ",
+                    "roman": "Eh zindagī terī ae, mā"
+                  },
+                  {
+                    "id": "v4b",
+                    "source_text": "ਕਦੋ ਫੇਰਾ ਆ ਜਾਵੇ, ਇਸ ਮਿੱਟੀ ਦੀ ਢੇਰੀ ਏ",
+                    "roman": "Kado pherā ā jāve, is miṭṭī dī ḍherī ae"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v5a",
+                    "source_text": "ਤੇਰੇ ਚਰਨਾਂ ’ਚ ਰਹਿ ਲਾਂਗੇ",
+                    "roman": "Tere charnā ’ch reh lānge"
+                  },
+                  {
+                    "id": "v5b",
+                    "source_text": "ਤੂੰ ਸਾਨੂੰ ਮਾਫ਼ ਕਰ ਦੇਈ, ਅਸੀਂ ਹੱਸ ਕੇ ਸਹਿ ਲਾਂਗੇ",
+                    "roman": "Tū sānū māf kar deyī, asī hass ke seh lānge"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "v5a",
+                    "source_text": "ਤੇਰੇ ਚਰਨਾਂ ’ਚ ਰਹਿ ਲਾਂਗੇ",
+                    "roman": "Tere charnā ’ch reh lānge"
+                  },
+                  {
+                    "id": "v5b",
+                    "source_text": "ਤੂੰ ਸਾਨੂੰ ਮਾਫ਼ ਕਰ ਦੇਈ, ਅਸੀਂ ਹੱਸ ਕੇ ਸਹਿ ਲਾਂਗੇ",
+                    "roman": "Tū sānū māf kar deyī, asī hass ke seh lānge"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v6a",
+                    "source_text": "ਤੇਰਾ ਹੋ ਕੇ ਮੈਂ ਆਵਾਂਗਾ, ਮਾਂ",
+                    "roman": "Terā ho ke main āvāngā, mā"
+                  },
+                  {
+                    "id": "v6b",
+                    "source_text": "ਤੂੰ ਵੀ ਫੇਰ ਰੋਵੇਂਗੀ, ਜੇ ਛੱਡ ਤੈਨੂੰ ਜਾਵਾਂਗਾ",
+                    "roman": "Tū vī pher rovengī, je chhaḍ tainū jāvāngā"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "v6a",
+                    "source_text": "ਤੇਰਾ ਹੋ ਕੇ ਮੈਂ ਆਵਾਂਗਾ, ਮਾਂ",
+                    "roman": "Terā ho ke main āvāngā, mā"
+                  },
+                  {
+                    "id": "v6b",
+                    "source_text": "ਤੂੰ ਵੀ ਫੇਰ ਰੋਵੇਂਗੀ, ਜੇ ਛੱਡ ਤੈਨੂੰ ਜਾਵਾਂਗਾ",
+                    "roman": "Tū vī pher rovengī, je chhaḍ tainū jāvāngā"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v7a",
+                    "source_text": "ਤੇਰੇ ਰਹਿਮ ਬਥੇਰੇ ਨੇ, ਮਾਂ",
+                    "roman": "Tere reham bathere ne, mā"
+                  },
+                  {
+                    "id": "v7b",
+                    "source_text": "ਖੁਸ਼ੀਆਂ ਦਿਖਾ ਦੇ ਵੀ ਮਾਂ, ਨਹੀਂ ਤੇ ਹੰਜੂ ਬਥੇਰੇ ਨੇ",
+                    "roman": "Khushīyā dikhā de vī mā, nahī te hanjū bathere ne"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "v7a",
+                    "source_text": "ਤੇਰੇ ਰਹਿਮ ਬਥੇਰੇ ਨੇ, ਮਾਂ",
+                    "roman": "Tere reham bathere ne, mā"
+                  },
+                  {
+                    "id": "v7b",
+                    "source_text": "ਖੁਸ਼ੀਆਂ ਦਿਖਾ ਦੇ ਵੀ ਮਾਂ, ਨਹੀਂ ਤੇ ਹੰਜੂ ਬਥੇਰੇ ਨੇ",
+                    "roman": "Khushīyā dikhā de vī mā, nahī te hanjū bathere ne"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "v8a",
+                    "source_text": "ਅਸੀਂ ਫੇਰ ਵੀ ਨਹੀਂ ਬੋਲਾਂਗੇ, ਮਾਂ",
+                    "roman": "Asī pher vī nahī bolānge, mā"
+                  },
+                  {
+                    "id": "v8b",
+                    "source_text": "ਇੱਕ ਵਾਰੀ ਦੱਸ ਤੇ ਜਾ, ਦੁੱਖ ਕਿਹਦੇ ਅੱਗੇ ਫੋਲਾਂਗੇ",
+                    "roman": "Ikk vārī dass te jā, dukh kihde agge pholānge"
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "id": "outro1",
+                    "source_text": "ਇਹ ਲਿਖ ਕੇ ਮੈਂ ਜਾਵਾਂਗਾ, ਮਾਂ",
+                    "roman": "Eh likh ke main jāvāngā, mā"
+                  },
+                  {
+                    "id": "outro2",
+                    "source_text": "ਅਗਲੇ ਜਨਮ ਵੀ ਮਾਂ, ਤੇਰਾ ਪੁੱਤ ਕਹਾਵਾਂਗਾ",
+                    "roman": "Agle janam vī mā, terā putt kahāvāngā"
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "closing",
+                    "source_text": "ਕੋਈ ਹੋਰ ਨਹੀਂ ਏ ਮੇਰਾ",
+                    "roman": "Koī hor nahī ae merā"
+                  }
+                ]
+              }
+            ],
+            "sourceWords": [
+              {
+                "text": "ਮੈਂ",
+                "wordIndices": [
+                  0
+                ]
+              },
+              {
+                "text": "ਲੜ",
+                "wordIndices": [
+                  1
+                ]
+              },
+              {
+                "text": "ਫੜਿਆ",
+                "wordIndices": [
+                  2
+                ]
+              },
+              {
+                "text": "ਏ",
+                "wordIndices": [
+                  3
+                ]
+              },
+              {
+                "text": "ਤੇਰਾ,",
+                "wordIndices": [
+                  4
+                ]
+              },
+              {
+                "text": "ਕੋਈ",
+                "wordIndices": [
+                  5
+                ]
+              },
+              {
+                "text": "ਹੋਰ",
+                "wordIndices": [
+                  5
+                ]
+              },
+              {
+                "text": "ਨਹੀਂ",
+                "wordIndices": [
+                  6
+                ]
+              },
+              {
+                "text": "ਏ",
+                "wordIndices": [
+                  6
+                ]
+              },
+              {
+                "text": "ਮੇਰਾ",
+                "wordIndices": [
+                  7
+                ]
+              }
+            ],
+            "lexical_tokens": [
+              "Main",
+              "laṛ",
+              "phaṛyā",
+              "ae",
+              "terā",
+              "koī hor",
+              "nahī ae",
+              "merā"
+            ],
+            "sourceLanguage": "pa"
+          }
+        ],
+        "metadata": {
+          "languages": [
+            "Punjabi"
+          ]
+        },
+        "performance_order": [
+          {
+            "ref": "invocation",
+            "section": "invocation",
+            "repeats": 1
+          },
+          {
+            "ref": "refrain",
+            "section": "refrain",
+            "repeats": 4
+          }
+        ]
+      }
+    },
+    "glosses": {
+      "packet": {
+        "glosses": [
+          {
+            "id": "invocation",
+            "word_glosses": [
+              {
+                "roman": "Mā",
+                "gloss": "Mother",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "merī",
+                "gloss": "my",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "sachīyā",
+                "gloss": "true; sacred",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "jotā",
+                "gloss": "divine flames; holy lights",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "wālī",
+                "gloss": "possessor of; endowed with",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "mātā",
+                "gloss": "Mother",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "terī",
+                "gloss": "your",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "sadā hī",
+                "gloss": "eternally; always indeed",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "jai",
+                "gloss": "victory; triumph",
+                "concept_key": "",
+                "preserve_in_english": false
+              }
+            ],
+            "semantic_frame": {
+              "agent": "devotee acclaimer",
+              "action_or_state": "acclamation of victory",
+              "patient_or_complement": "the Divine Mother characterized by sacred flames",
+              "modifiers": "sadā hī (eternally, ever indeed)",
+              "negation_or_modality": "optative acclamation",
+              "literal_image_and_agency": "Devotee hails the Mother who manifests as sacred eternal flames (associated with the flame-shrine of Jwalaji), declaring everlasting victory to her.",
+              "idiom_or_phrase": "terī sadā hī jai (may you be ever victorious; eternal victory unto you); sachīyā jotā wālī mātā (Mother possessing the sacred flames)",
+              "cross_line_relation": "Functions as the opening liturgical salutation and invocation before the personal plea of the refrain."
+            },
+            "grammar_note": "Compound vocative direct address 'Mā merī sachīyā jotā wālī mātā' featuring plural feminine noun 'jotā' modified by oblique/plural adjective 'sachīyā' with feminine adjectival postposition 'wālī', governing the genitive acclamatory phrase 'terī sadā hī jai'.",
+            "uncertainty": "",
+            "sense_decisions": [
+              {
+                "word_index": 0,
+                "roman": "Mā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Vocative singular addressing the Goddess as divine mother.",
+                "grammatical_role": "vocative noun"
+              },
+              {
+                "word_index": 1,
+                "roman": "merī",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "First-person feminine singular possessive pronoun modifying Mā.",
+                "grammatical_role": "possessive pronoun"
+              },
+              {
+                "word_index": 2,
+                "roman": "sachīyā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Feminine plural/oblique form of sachī ('true', 'sacred', 'authentic') modifying jotā.",
+                "grammatical_role": "attributive adjective"
+              },
+              {
+                "word_index": 3,
+                "roman": "jotā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Direct/oblique plural of feminine noun jot ('light', 'divine flame').",
+                "grammatical_role": "head noun in postpositional phrase"
+              },
+              {
+                "word_index": 4,
+                "roman": "wālī",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Feminine adjectival formant indicating possession or association.",
+                "grammatical_role": "possessive adjectival marker"
+              },
+              {
+                "word_index": 5,
+                "roman": "mātā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Vocative noun reinforcing the address to the Mother Goddess.",
+                "grammatical_role": "vocative noun"
+              },
+              {
+                "word_index": 6,
+                "roman": "terī",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Second-person feminine singular possessive pronoun modifying jai.",
+                "grammatical_role": "possessive pronoun"
+              },
+              {
+                "word_index": 7,
+                "roman": "sadā hī",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Temporal adverb sadā combined with emphatic clitic hī ('ever indeed', 'eternally').",
+                "grammatical_role": "adverbial phrase"
+              },
+              {
+                "word_index": 8,
+                "roman": "jai",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Acclamatory feminine noun meaning victory or triumph in devotional salutations.",
+                "grammatical_role": "predicate noun"
+              }
+            ],
+            "lexical_queries": [],
+            "lexical_query_gaps": []
+          },
+          {
+            "id": "refrain",
+            "word_glosses": [
+              {
+                "roman": "Main",
+                "gloss": "I",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "laṛ",
+                "gloss": "hem of garment; cloth-edge",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "phaṛyā",
+                "gloss": "grasped; held",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "ae",
+                "gloss": "have; has",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "terā",
+                "gloss": "your",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "koī hor",
+                "gloss": "anyone else; another",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "nahī ae",
+                "gloss": "is not",
+                "concept_key": "",
+                "preserve_in_english": false
+              },
+              {
+                "roman": "merā",
+                "gloss": "mine; my own",
+                "concept_key": "",
+                "preserve_in_english": false
+              }
+            ],
+            "semantic_frame": {
+              "agent": "devotee / speaker (Main)",
+              "action_or_state": "grasping the hem (phaṛyā ae) and possessing no other refuge (nahī ae)",
+              "patient_or_complement": "the Goddess's garment-hem (laṛ ... terā) in clause 1; 'merā' (my own protector/belonging) in clause 2",
+              "modifiers": "koī hor (anyone else)",
+              "negation_or_modality": "negation in second clause (nahī ae)",
+              "literal_image_and_agency": "The devotee physically grasps the hem of the Mother's garment in complete surrender and dependence, declaring that no other being exists as their protector or refuge.",
+              "idiom_or_phrase": "laṛ phaṛnā (to grasp the hem of someone's garment, meaning to seek unconditional refuge or surrender to their protection)",
+              "cross_line_relation": "Serves as the thematic refrain of the hymn, re-grounding each following verse's pleas and lamentations in this declaration of exclusive refuge."
+            },
+            "grammar_note": "Two coordinate clauses: first clause is a split-ergative perfective transitive construction 'Main laṛ phaṛyā ae terā' where the participle 'phaṛyā' agrees with masculine singular 'laṛ', accompanied by auxiliary 'ae' and postposed possessive 'terā'; second clause is an equational existential sentence with indefinite subject 'koī hor', negated copula 'nahī ae', and predicate genitive 'merā'.",
+            "uncertainty": "",
+            "sense_decisions": [
+              {
+                "word_index": 0,
+                "roman": "Main",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "First-person pronoun functioning as the agent of the perfective verb in split ergative syntax.",
+                "grammatical_role": "subject pronoun"
+              },
+              {
+                "word_index": 1,
+                "roman": "laṛ",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Direct object meaning the hem or edge of a garment; witnessed in Singh 1895 as 'the skirt or end of a rope or chádar, the end of a strip of cloth', acting as the core physical element of the devotional refuge idiom laṛ phaṛnā.",
+                "grammatical_role": "direct object noun"
+              },
+              {
+                "word_index": 2,
+                "roman": "phaṛyā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Masculine singular perfective participle of phaṛnā ('to grasp', 'to seize'), agreeing grammatically with laṛ.",
+                "grammatical_role": "main verb participle"
+              },
+              {
+                "word_index": 3,
+                "roman": "ae",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Third-person singular present auxiliary, completing the present perfect verb phaṛyā ae.",
+                "grammatical_role": "auxiliary verb"
+              },
+              {
+                "word_index": 4,
+                "roman": "terā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Second-person singular possessive adjective ('your'), agreeing with masculine singular laṛ.",
+                "grammatical_role": "possessive modifier"
+              },
+              {
+                "word_index": 5,
+                "roman": "koī hor",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Indefinite compound pronoun ('anyone else', 'any other') acting as subject of the second clause.",
+                "grammatical_role": "subject pronoun phrase"
+              },
+              {
+                "word_index": 6,
+                "roman": "nahī ae",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "Negative particle combined with third-person singular copula ('is not').",
+                "grammatical_role": "negated copula"
+              },
+              {
+                "word_index": 7,
+                "roman": "merā",
+                "evidence_status": "contextual_inference",
+                "chosen": [],
+                "rejected": [],
+                "contextual_reason": "First-person singular possessive pronoun used predicatively ('mine', 'my protector/refuge').",
+                "grammatical_role": "predicate genitive"
+              }
+            ],
+            "lexical_queries": [
+              {
+                "word_indices": [
+                  1
+                ],
+                "surfaces": [
+                  "laṛ"
+                ],
+                "reason": "Identify the contextual concrete noun and its possessive relationship in this performed phrase.",
+                "source_entry_ids": [
+                  "singh1895.p666.hw6458ad6b13f12b59.h1",
+                  "singh1895.p666.hwdae5d892114e7c97.h1",
+                  "singh1895.p666.hw5fb5883374fc41b0.h1"
+                ],
+                "source_queries": [
+                  "ਲੜ",
+                  "lar"
+                ],
+                "english_candidates": [
+                  {
+                    "expression": "hem of garment",
+                    "kind": "compositional_phrase",
+                    "english_lemmas": [
+                      "hem",
+                      "garment"
+                    ]
+                  },
+                  {
+                    "expression": "cloth edge",
+                    "kind": "compositional_phrase",
+                    "english_lemmas": [
+                      "cloth",
+                      "edge"
+                    ]
+                  },
+                  {
+                    "expression": "skirt",
+                    "kind": "word",
+                    "english_lemmas": [
+                      "skirt"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "lexical_query_gaps": [],
+            "source_discovery_decisions": [
+              {
+                "target_id": "discovery:refrain:1",
+                "entry_id": "singh1895.p666.hw6458ad6b13f12b59.h1",
+                "attested_form": "LAṚ",
+                "quotation": "The skirt or end of a rope or chádar, the end of a strip of cloth; a strand of a cord; a row, series:—laṛ laggṉá, v. n. To be married (a woman to a man); to be under one's protection or shelter; to depend solely on some one.",
+                "meaning_applied": "hem of a garment; end of a cloth",
+                "reason": "Attested Punjabi masculine noun for the skirt or edge of a garment or chadar, forming the concrete anchor of the devotional refuge idiom laṛ phaṛnā.",
+                "form_explanation": "Direct singular masculine nominal form exactly matching the dictionary headword LAṚ.",
+                "status": "matched",
+                "relation_kind": "exact_form",
+                "changes_gloss": false
+              },
+              {
+                "target_id": "discovery:refrain:1",
+                "entry_id": "singh1895.p666.hwdae5d892114e7c97.h1",
+                "attested_form": "LÁR",
+                "quotation": "Succession, series; a row, a line.",
+                "meaning_applied": "",
+                "reason": "Feminine noun with dental 'r' meaning a succession, series, or row; does not fit the concrete physical image of grasping a garment edge.",
+                "form_explanation": "",
+                "status": "rejected",
+                "relation_kind": "unresolved",
+                "changes_gloss": false
+              },
+              {
+                "target_id": "discovery:refrain:1",
+                "entry_id": "singh1895.p666.hw5fb5883374fc41b0.h1",
+                "attested_form": "LÁṚ",
+                "quotation": "A tribe of Jáṭs who originally came from Sindh. They are addressed by the title of Jám, which marks them Sindhi origin.",
+                "meaning_applied": "",
+                "reason": "Ethnographic/tribal noun with long vowel á; entirely unrelated to holding a garment hem.",
+                "form_explanation": "",
+                "status": "rejected",
+                "relation_kind": "unresolved",
+                "changes_gloss": false
+              }
+            ]
+          }
+        ]
+      },
+      "source_gloss_receipt": {
+        "version": 1,
+        "targets": {
+          "discovery:refrain:1": {
+            "line_id": "refrain",
+            "word_indices": [
+              1
+            ],
+            "surfaces": [
+              "laṛ"
+            ],
+            "source_language": "pa",
+            "dictionary_id": "singh1895",
+            "content_sha256": "35ab4156c87bd10af6d8db41d220b126bb61608fb08d639bdfccfe8fd4affb1e"
+          }
+        }
+      }
+    }
+  }
+}

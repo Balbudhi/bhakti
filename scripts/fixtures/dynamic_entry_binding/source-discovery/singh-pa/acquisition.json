@@ -1,0 +1,18 @@
+[
+  {
+    "query": "ਲੜ",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=%E0%A8%B2%E0%A9%9C&searchhws=yes&matchtype=exact",
+    "path": "witnesses/59621452124dbcaeea0f27a587c9b8c629721c6a2d1938589c2852f2fca7e948.html",
+    "sha256": "59621452124dbcaeea0f27a587c9b8c629721c6a2d1938589c2852f2fca7e948",
+    "status": "fetched",
+    "dictionary_id": "singh1895"
+  },
+  {
+    "query": "lar",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/singh_query.py?qs=lar&searchhws=yes&matchtype=exact",
+    "path": "witnesses/050d25be4b450211d9edfe570a22683cd85df22ebbecec7a3d9e976f02f76c67.html",
+    "sha256": "050d25be4b450211d9edfe570a22683cd85df22ebbecec7a3d9e976f02f76c67",
+    "status": "fetched",
+    "dictionary_id": "singh1895"
+  }
+]

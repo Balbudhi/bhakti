@@ -1,0 +1,16 @@
+[
+  {
+    "query": "ठिकाना",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E0%A4%A0%E0%A4%BF%E0%A4%95%E0%A4%BE%E0%A4%A8%E0%A4%BE&searchhws=yes&matchtype=exact",
+    "path": "witnesses/f0e8f167ba281bd40ab2f9ca729bcc069e44ce363dca364fa16a518bb801dd31.html",
+    "sha256": "f0e8f167ba281bd40ab2f9ca729bcc069e44ce363dca364fa16a518bb801dd31",
+    "status": "fetched"
+  },
+  {
+    "query": "ṭhikānā",
+    "url": "https://dsal.uchicago.edu/cgi-bin/app/platts_query.py?qs=%E1%B9%ADhik%C4%81n%C4%81&searchhws=yes&matchtype=exact",
+    "path": "witnesses/26ebf813ac6de924f13c9288002edb204a4fb0f62e9540b21ca3d120cfd87d29.html",
+    "sha256": "26ebf813ac6de924f13c9288002edb204a4fb0f62e9540b21ca3d120cfd87d29",
+    "status": "fetched"
+  }
+]

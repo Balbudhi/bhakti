@@ -331,6 +331,33 @@ def _english_discovery_query(line, proposal, gloss, bound, languages, context_li
     return query
 
 
+def discovered_entry_ids(line, proposal, languages, discovery):
+    """Lookup references may cite witnessed alternatives, not only curated senses.
+
+    The prepared discovery packet keeps its own witness/relationship validation;
+    admitting its IDs does not select their meanings or convert representations.
+    """
+    if not discovery:
+        return set()
+    tokens = lexical.word_tokens(line)
+    language = lexical.line_language(line, languages)
+    entries = {entry['entry_id']: entry for entry in discovery['entries']}
+    bound = set()
+    for target in discovery['targets']:
+        if target['line_id'] != line['id'] or not set(target['word_indices']) <= set(proposal['word_indices']):
+            continue
+        indices = target['word_indices']
+        support.require(indices and all(type(i) is int and 0 <= i < len(tokens) for i in indices)
+            and target['source_language'] == language
+            and target['surfaces'] == [tokens[index] for index in indices],
+            'source discovery binding differs from exact language/token')
+        for entry_id in target['candidate_entry_ids']:
+            support.require(entry_id in entries and entries[entry_id]['language'] == language,
+                            'source discovery entry missing or language differs')
+            bound.add(entry_id)
+    return bound
+
+
 def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisition_roots,
                     wordnet_directory, edition, cache_dir, context_lines, performance_order, source_discovery=None):
     errors = proposal_errors(lines, gloss_rows, languages)
@@ -345,7 +372,9 @@ def produce_support(lines, gloss_rows, languages, *, token_candidates, acquisiti
         for proposal in row.get('lexical_queries', []):
             bound = {entry['entry_id']: entry for token in token_candidates[row['id']]
                      if token['word_index'] in proposal['word_indices'] for entry in token['candidates']}
-            support.require(set(proposal['source_entry_ids']) <= set(bound), 'source entry not bound to exact language/token')
+            discovered = discovered_entry_ids(by_line[row['id']], proposal, languages, source_discovery)
+            support.require(set(proposal['source_entry_ids']) <= set(bound) | discovered,
+                            'source entry not bound to exact language/token')
             all_entries.update(bound)
             selected.append((row, proposal, bound))
     witnessed = resolve_source_witnesses(list(all_entries.values()), acquisition_roots)
