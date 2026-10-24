@@ -37,9 +37,17 @@ are bounded to ten lines. The integrated 144 tests pass; independent review also
 verified that the new policy cannot hide an older unfinished paid request.
 Compilation and whitespace checks pass. The public contract audit still reports
 existing migration/legacy failures; no song data changed in this implementation.
-The next step is the private Hindi/Punjabi/Tamil excerpt comparison, capped at
-$1.25 text plus $0.05 embeddings, with no publication. These engineering results
-do not establish translation quality or complete the library repair.
+The private Hindi/Punjabi/Tamil excerpt comparison has now run under its
+$1.25 text / $0.05 embedding caps. Five text responses cost $0.24234375; all
+charges settled, with no embeddings or public edits. Hindi and Punjabi stopped
+before writing at `source entry not bound to exact language/token` after citing
+real discovered dictionary IDs. Tamil stopped at invalid source-discovery
+decision IDs in its first glossary. The Hindi glossary still adds an unsupported
+qualifier; the new writer/reviewer checks were not reached. Preserve the terminal
+run at `/tmp/bhakti-source-first-qualification/actual-task4-run` and diagnose from
+its saved responses before any continuation. Confirmed tracked spending is
+$3.812688375, with the two earlier unknown reservations unchanged. These results
+do not qualify translation quality or complete the library repair.
 
 The reviewer now retains the failed excerpt's original neighboring lines. One
 bounded review of the unchanged paid draft has finished at
