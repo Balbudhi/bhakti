@@ -57,18 +57,54 @@ and 600-second run bounds, the first request reached its 180-second hard timeout
 and its worker was terminated. No response, audit result, repaired candidate,
 embedding call or dictionary HTTP request was produced. Its charge is unknown;
 the ledger retains a separate $0.1625655 reservation, in addition to the earlier
-$0.139404 unknown reservation. Confirmed task spending remains $3.258394325.
+$0.139404 unknown reservation. Confirmed task spending after this trial remained
+$3.258394325 (the subsequent audio check below adds $0.002598).
 The seeded lexical cache is not evidence of retrieval in this run. No retry,
 new allowance or public write occurred. The saved first request contains a
-51,329-character user prompt, high reasoning effort and a 32,768-token output
+44,478-character decoded prompt, high reasoning effort and a 32,768-token output
 allowance; these describe the workload but do not establish the timeout's cause.
 
-Next: inspect the actual audit workload and transport deadline before another
-paid qualification; preserve this unknown outcome. Then qualify the shared
-repair's actual glosses, frames and English. A correct orchestrator or a machine
-pass is not translation qualification. Existing-reader grammar notes currently
-remain fixed: a confirmed note defect needs explicit field-level repair before that line can be
-called fully corrected. No new public lyrics or song pages accompany this code.
+Read-only comparison now shows that a larger 76,315-character review completed
+in 91.851 seconds and an eight-target 50,830-character review in 108.612 seconds,
+under the same model, reasoning setting and provider route. The timeout's cause
+remains unknown; neither size nor high reasoning alone explains those observations.
+The failed prompt's repeated literal/token fields total only 1,369 characters.
+No production batching or reasoning change follows from this one timeout.
+Evidence: `/tmp/bhakti-audit-timeout-diagnosis/REPORT.md`.
+
+The fresh two-row trial through the actual source-only benchmark caller has now
+finished in `/tmp/bhakti-audit-timeout-diagnosis/next-experiment/actual-run/`.
+All source-only neighbors and scoped Kabīr naming reached the models; the old
+English and glosses did not. Three text calls cost $0.203946 and one embedding
+call $0.00015705, all settled, under the $0.50/$0.01 caps. The writer and reviewer
+received the exact cached native Platts entry and 61 English definitions with
+ranking evidence. An uncached Roman query remained an explicit zero-HTTP-budget
+gap; the exact native entry was available.
+
+The trial is rejected on content: the first glossary again adds `true dwelling`
+and frame-level `only`; the writer repeats the qualifier; the reviewer passes
+them by equating fixed/permanent abode with true/authentic abode. Independent
+reading rejects that unsupported qualifier. It also finds unexplained retention
+of `Guru` despite the primary gloss `spiritual teacher`. Kabīr naming and the
+listener imperative are correct, and the previous false naming-popup and
+synonym-only objections did not recur. Separately, the program stopped at
+`writer reservation gloss_sha256 changed or unbound`; no corrective round ran.
+This is a failed qualification, not an accepted translation or historical repair.
+
+Two demonstrated engineering issues now take priority: reconcile the exact
+original/derived glossary representation used by writer reservation validation,
+and deliver automatic source-dictionary evidence before meaning construction.
+Currently automatic acquisition runs after the first glossary and reaches writer
+and review; known exact native lookup spans need no model discovery before that
+first call. Better output from changing the order remains to be measured. Preserve
+all terminal runs and old unknown reservations; do not repay their calls merely
+to reconstruct evidence. Confirmed tracked task spending is $3.465095375.
+
+Existing-reader grammar notes remain fixed: a confirmed note defect needs
+explicit field-level repair before that line can be called fully corrected.
+The reviewed private design and test draft address note-only permissions,
+unchanged owner English and original-note evidence; they are not implemented.
+No new public lyrics or song pages accompany this work.
 
 Independent no-cost acoustic preparation now has ten matching real waveform
 landmarks across Rehna native Opus/AAC and canonical AAC, plus Aao native/canonical
@@ -115,6 +151,18 @@ no retry ran and no timestamp is accepted from the partial response. The termina
 evidence is `/tmp/bhakti-canonical-model-clock/run/`. This demonstrates an
 insufficient completion allowance for that response, not acoustic success or
 failure. The original native experiment and all listener/timing files are unchanged.
+
+The single follow-up in `/tmp/bhakti-canonical-model-clock-2048/run/` preserves
+that exact attachment, prompt and schema and raises only the payload's completion
+allowance to 2,048 tokens, under a $0.02/one-call/180-second cap. It returned a
+complete answer after 7.295 seconds at $0.002598: markers at 4.92 and 8.16 seconds,
+versus independently decoded peaks at 2.0213958333 and 9.0213958333 seconds. Both
+miss the frozen quarter-second criterion and their errors have opposite signs;
+this answer supports no constant clock correction. The result remains unresolved,
+not accepted timing. No further marker call or public timing change followed.
+Tracked task spending after that audio check was $3.260992325, excluding both unknown
+reservations above. Actual sung-onset qualification remains open; this synthetic
+marker result neither certifies nor disproves lyric-specific onset performance.
 
 The bounded connected text comparison finished privately in
 `/tmp/bhakti-connected-qualification/real-run-preparation/`, under the unchanged

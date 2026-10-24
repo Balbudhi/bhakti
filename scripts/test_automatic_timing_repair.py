@@ -171,6 +171,7 @@ class RoutedTimingTests(unittest.TestCase):
         self.assertEqual(call.call_count,2)
         for item in call.call_args_list:
             self.assertEqual(item.args[0],self.routes.FLASH_MODEL)
+            self.assertEqual(item.kwargs['max_completion_tokens'],65536)
             self.assertIn('deadline_at',item.kwargs)
             self.assertIn('unit_context',item.kwargs)
             self.assertLessEqual(item.kwargs['timeout'],600)
@@ -181,6 +182,27 @@ class RoutedTimingTests(unittest.TestCase):
         self.assertNotRegex(call.call_args_list[1].args[2],r'"start"\s*:\s*(5|15|25)(?:\.0)?[,}]')
         self.assertNotEqual(call.call_args_list[0].kwargs['audio'],call.call_args_list[1].kwargs['audio'])
         self.assertNotEqual(call.call_args_list[0].args[2],call.call_args_list[1].args[2])
+
+    def test_explicit_completion_cap_binds_both_hearings_and_cache(self):
+        self.region['max_completion_tokens']=4096
+        with patch.object(p.subprocess,'run'),patch.object(p.gemini,'key',return_value='dummy'),patch.object(p.gemini,'call',side_effect=lambda *a,**kw:self.packet()) as call:
+            first=self.invoke()
+            self.assertEqual(self.invoke(),first)
+            self.assertEqual(call.call_count,2)
+            self.region['max_completion_tokens']=2048
+            second=self.invoke()
+        self.assertEqual([item.kwargs['max_completion_tokens'] for item in call.call_args_list],[4096,4096,2048,2048])
+        self.assertNotEqual(first['input_fingerprint'],second['input_fingerprint'])
+        import hashlib
+        self.assertEqual(second['input_fingerprint'],p.joint_region_fingerprint(
+            hashlib.sha256(self.audio.read_bytes()).hexdigest(),self.region,50.0,self.identity))
+
+    def test_invalid_completion_cap_fails_before_audio_or_route_work(self):
+        for cap in (True,None,0,-1,1.5,65537,'4096'):
+            self.region['max_completion_tokens']=cap
+            with self.subTest(cap=cap),patch.object(p,'timing_input_identity',side_effect=AssertionError('invalid cap reached audio identity')):
+                with self.assertRaises(ValueError):self.invoke()
+        self.assertFalse(list(self.root.rglob('route-state.json')))
 
     def test_real_route_quality_failure_gets_one_new_pro_pair_then_stops(self):
         def reply(model,*args,**kwargs):return self.packet(uncertain=model==self.routes.FLASH_MODEL)

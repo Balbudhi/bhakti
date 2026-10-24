@@ -43,6 +43,15 @@ reservation is unresolved, not a confirmed charge. No repair or lexical stages
 ran; preseeded caches do not establish evidence consumption. The terminal private
 run is preserved without retry; see the repair task for accounting and next steps.
 
+The subsequent source-only two-row trial delivered the exact native dictionary
+entry, 61 English definitions and actual embedding rankings to writer/reviewer,
+but still produced and approved an unsupported predicate qualifier. It also
+exposed an original/derived glossary mismatch in writer-reservation validation,
+which stopped the run before repair. Automatic source acquisition currently runs
+after the initial glossary; pre-gloss source evidence is the next ordering fix.
+These are demonstrated gaps, not qualified translation quality. The complete
+trial cost $0.20410305; all responses remain available without a paid replay.
+
 ## Bounded intake and boundary recovery
 
 The ordinary `bhakti_pipeline.py` intake command now initializes one shared run
@@ -86,6 +95,14 @@ remain blocked at generation/publication entrypoints. Historical installation
 and production activation remain unfinished.
 Timing reuse still requires a qualified clock origin, and cannot substitute a
 requested trim length or decoded offset for the browser's playback clock.
+
+Private joint-timing regions may set `max_completion_tokens` to an integer from
+1 through 65,536. The same limit applies to both independent hearings and is
+part of the existing region/cache identity; omission keeps the prior 65,536
+default. Invalid limits fail before audio processing. This permits an explicit
+small-response budget for short excerpts without changing uncertainty or
+consensus checks. A truncated answer still fails; a lower limit is not evidence
+that the model can complete the task within it.
 
 Fresh production onset requests already use an ephemeral canonical AAC copy.
 The failed synthetic native nonzero-PTS model probe bypassed that path and is not

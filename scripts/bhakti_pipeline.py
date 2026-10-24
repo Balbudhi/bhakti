@@ -2696,6 +2696,11 @@ def timing_input_identity(audio: Path, occurrences: list[dict[str, Any]], source
 
 def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], duration: float,
                           options: argparse.Namespace, source_identity: dict[str, Any]) -> dict[str, Any]:
+    # The complete region already binds this explicit limit into route and
+    # consumer fingerprints. Omission preserves existing cached requests.
+    completion_cap = region.get('max_completion_tokens', 65536)
+    if type(completion_cap) is not int or not 1 <= completion_cap <= 65536:
+        raise ValueError('joint timing max_completion_tokens must be an integer from 1 to 65536')
     import bhakti_model_routes as routes
     identity = timing_input_identity(audio, region['target_occurrences'], source_identity)
     identity.update(region=region, duration=duration)
@@ -2729,7 +2734,7 @@ Return every timing_id exactly once in order, with start, uncertainty, and onset
                     'required':['timing_id','start','uncertainty','onset_at_clip_start'],'additionalProperties':False}}},
                 'required':['starts'],'additionalProperties':False}
             kwargs = {'audio':clip,'timeout':ctx.call_timeout_seconds,'response_schema':schema,
-                      'schema_name':'bhakti_joint_starts','reasoning_effort':'high','max_completion_tokens':65536}
+                      'schema_name':'bhakti_joint_starts','reasoning_effort':'high','max_completion_tokens':completion_cap}
             if ctx.transport_context is not None:
                 kwargs.update(unit_context=ctx.transport_context,deadline_at=ctx.deadline_at)
             response = gemini.call(ctx.model,gemini.key(),prompt,**kwargs)
