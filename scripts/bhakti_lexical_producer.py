@@ -536,6 +536,70 @@ def _legacy_queries(lines, rows, bindings, requested):
                 'english_candidates': [{'expression': gloss, 'kind': 'word', 'english_lemmas': [gloss]}]})
 
 
+
+def prepare_gloss_source(lines, languages, options):
+    """Acquire native evidence for known spans under the caller's existing quota."""
+    import bhakti_source_discovery as discovery
+    import bhakti_lexical_retrieval as lexical
+    requested_spans(options, lines)  # Validate full-source identities before projection.
+    config = settings(options)
+    if config is None:
+        return options
+    full = getattr(options, 'semantic_full_source', lines)
+    sources = {line['id']: line for line in full}
+    wanted = required_spans(options, full)
+    # Lookup scope can include context; this never changes the caller's output IDs.
+    proposals = []
+    for span in wanted:
+        line = sources[span['line_id']]
+        tokens = lexical.word_tokens(line)
+        indices = span['word_indices']
+        support.require(indices and all(type(i) is int and 0 <= i < len(tokens) for i in indices),
+                        'source glossary lookup indices invalid')
+        proposals.append({'line_id': line['id'], 'word_indices': indices,
+            'surfaces': [tokens[i] for i in indices], 'source_queries': []})
+    if not proposals:
+        return options
+    plan = discovery.source_lookup_plan(full, proposals, languages)
+    budget = getattr(options, 'source_discovery_budget', None)
+    if plan['targets'] and budget is not None:
+        packet = discovery.acquire_source_candidates(plan, config['cache']/'source-discovery',
+            run_budget=budget, opener=getattr(options, 'source_discovery_opener', None),
+            request_deadline_at=discovery.request_deadline(options))
+    else:
+        packet = {'version':discovery.VERSION, 'relation_policy_version':discovery.RELATION_POLICY_VERSION,
+            'targets':[{**row, 'candidate_entry_ids':[], 'observations':[],
+                        'selection_status':'lookup_hypothesis'} for row in plan['targets']],
+            'entries':[], 'evidence':[], 'entry_evidence_ids':{}, 'gaps':copy.deepcopy(plan['gaps'])}
+        if plan['targets']:
+            packet['gaps'].append({'kind':'source_discovery_budget_missing',
+                                  'detail':'No shared run acquisition budget configured; no request dispatched.'})
+    local = copy.copy(options)
+    packet = discovery.merge_evidence(getattr(options, 'automatic_source_discovery', None), packet)
+    local.automatic_source_discovery = packet
+    local.automatic_source_discovery_identity = discovery.evidence_identity(packet)
+    return local
+
+
+def prepare_source_from_gloss(audited, glosses, options):
+    """Source-only discovery, before English definitions/embeddings or writer work."""
+    import bhakti_source_discovery as discovery
+    import bhakti_translation_policy as policy
+    lines = audited['packet']['verified_lines']
+    languages = audited['packet'].get('metadata', {}).get('languages', [])
+    local = prepare_gloss_source(lines, languages, options)
+    config = settings(local)
+    if config is None:
+        return local
+    bindings = policy.token_candidates(lines, languages)
+    packet = discovery.prepare(lines, glosses['packet']['glosses'], languages, bindings, config, local)
+    packet = discovery.merge_evidence(getattr(local, 'automatic_source_discovery', None), packet)
+    if packet is not None:
+        local = copy.copy(local)
+        local.automatic_source_discovery = packet
+        local.automatic_source_discovery_identity = discovery.evidence_identity(packet)
+    return local
+
 def writer_gloss_binding(authored_rows, review_rows):
     """Name exact glossary representations; this alone grants no review authority."""
     return {'version': 1, 'authored_sha256': support.digest(authored_rows),
@@ -550,10 +614,11 @@ def prepare_translation(song_dir, audited, glosses, options):
     configuration_identity(options)  # Validate configured corpus before cache acceptance.
     if getattr(options, 'semantic_lexical_support', None) is not None or getattr(options, 'lexical_support', None):
         raise ValueError('automatic and explicit lexical support cannot both own a translation')
-    local = copy.copy(options)
     augmented = copy.deepcopy(glosses)
     lines = audited['packet']['verified_lines']
     languages = audited['packet'].get('metadata', {}).get('languages', [])
+    options = prepare_gloss_source(lines, languages, options)
+    local = copy.copy(options)
     rows = augmented['packet']['glosses']
     bindings = policy.token_candidates(lines, languages)
     requested = required_spans(options, lines)
@@ -561,7 +626,13 @@ def prepare_translation(song_dir, audited, glosses, options):
     errors = proposal_errors(lines, rows, languages, requested)
     support.require(not errors, '; '.join(errors))
     import bhakti_source_discovery as discovery
-    source_evidence = discovery.prepare(lines, rows, languages, bindings, config, options)
+    source_evidence = discovery.merge_evidence(getattr(options, 'automatic_source_discovery', None),
+        discovery.prepare(lines, rows, languages, bindings, config, options))
+    pending = discovery.pending_gloss_lines(source_evidence, glosses)
+    if pending:
+        local.automatic_source_discovery = source_evidence
+        local.automatic_source_discovery_identity = discovery.evidence_identity(source_evidence)
+        raise discovery.SourceGlossRequired(pending, local)
     produced = produce_support(lines, rows, languages, token_candidates=bindings,
         acquisition_roots=config['roots'], wordnet_directory=config['directory'], edition=config['edition'],
         cache_dir=config['cache'], context_lines=getattr(options, 'semantic_full_source', lines),
@@ -574,7 +645,7 @@ def prepare_translation(song_dir, audited, glosses, options):
         local.semantic_lexical_support = produced['packet']
     if source_evidence is not None:
         local.automatic_source_discovery = source_evidence
-        local.automatic_source_discovery_identity = support.content_digest(source_evidence)
+        local.automatic_source_discovery_identity = discovery.evidence_identity(source_evidence)
     local.automatic_lexical_identity = produced['identity']
     local.automatic_lexical_diagnostics = produced['diagnostics']
     _write(Path(song_dir)/'.transcription/pipeline/automatic-lexical-support.json', produced)

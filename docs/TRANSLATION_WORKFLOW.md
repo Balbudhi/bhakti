@@ -54,9 +54,10 @@ renewal checks the original writer input fingerprint before adding a new binding
 wrapper; it preserves the old proof and does not purchase another writer call.
 Changed source/gloss/grammar or missing original evidence still holds. The saved
 trial remains rejected on content and has not been replayed.
-Automatic source acquisition currently runs
-after the initial glossary; pre-gloss source evidence is the next ordering fix.
-These are demonstrated gaps, not qualified translation quality. The complete
+Automatic source acquisition now precedes initial meaning selection for known
+native targets. New entries proposed by a draft trigger one targeted source-gloss
+refinement before English retrieval or writing. These ordering changes pass
+integrated caller tests; their linguistic benefit still needs a live trial. The complete
 trial cost $0.20410305; all responses remain available without a paid replay.
 
 ## Bounded intake and boundary recovery
@@ -327,17 +328,25 @@ may use contextual interpretation.
 Automatic source-form discovery is connected: the glossary can propose up to two
 lookup forms for an uncertain span. Existing reader mappings supply the native
 form first; fresh transcripts without such mappings retain explicitly proposed
-forms as hypotheses. The Hindi Platts adapter passes full witnessed definitions
-to both translation and review. Each selected relationship needs an evidenced
-decision; a discovery that changes the source gloss returns to targeted gloss
-repair. Neither acquisition nor a root resemblance silently changes the word map.
+forms as hypotheses. Known exact native targets receive full witnessed definitions
+before the first glossary request. Model-proposed entries make the initial gloss
+provisional: one targeted refinement per semantic round receives the exact prior
+draft and an explicit evidence-change task before English lookup, embeddings or
+writing. It must adjudicate all supplied source relationships. Further newly
+discovered, unadjudicated evidence holds within the same allowance; it does not
+start an unbounded loop. The source entry and relation decisions then reach
+translation and independent review. Neither acquisition nor a root resemblance
+silently changes the word map.
 Intake and library runs share a persisted source-request allowance and deadline
 (`--source-discovery-max-requests`, default 16). Missing counters stop acquisition
 instead of creating a fresh allowance.
 
 Accepted semantic runs bind the actual dictionary evidence they used. A relevant
-evidence change renews English and independent review with a validated glossary;
-unrelated cache growth does not renew the run. Fresh-source processing now uses
+English-definition change renews English and independent review with a validated
+glossary. Changed or withdrawn source witnesses first require targeted glossary
+adjudication; malformed receipts hold. Unrelated cache growth or an unavailable
+query changing from budget-limited to deadline-limited does not renew the run.
+Fresh-source processing now uses
 the same selective semantic coordinator, including materialized-evidence renewal
 under unchanged configuration. Source acquisition precedes the first English ranking query.
 New definitions enter that query as explicitly unselected hypotheses bound to

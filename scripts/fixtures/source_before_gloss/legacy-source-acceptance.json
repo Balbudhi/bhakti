@@ -1,0 +1,836 @@
+{
+  "description": "Offline transport fixture emitted by real frozen legacy caller and pre-source-gloss main. Not semantic truth; no fabricated accepted receipt.",
+  "original_root": "/var/folders/hx/q_2_flr15lxc1g1ndjf159sr0000gn/T/tmpzf_22jr5/historical-routes",
+  "plan": {
+    "lines": [
+      {
+        "id": "refrain-jai-bajarang",
+        "source_text": "जय जय जय बजरंग बली",
+        "roman": "jaya jaya jaya bajaraṅga balī",
+        "kind": "refrain",
+        "performed_context": [
+          {
+            "before": [],
+            "after": []
+          }
+        ],
+        "sourceWords": [
+          {
+            "text": "जय",
+            "wordIndices": [
+              0
+            ]
+          },
+          {
+            "text": "जय",
+            "wordIndices": [
+              1
+            ]
+          },
+          {
+            "text": "जय",
+            "wordIndices": [
+              2
+            ]
+          },
+          {
+            "text": "बजरंग",
+            "wordIndices": [
+              3
+            ]
+          },
+          {
+            "text": "बली",
+            "wordIndices": [
+              4
+            ]
+          }
+        ],
+        "lexical_tokens": [
+          "jaya",
+          "jaya",
+          "jaya",
+          "bajaraṅga",
+          "balī"
+        ],
+        "sourceLanguage": "hi"
+      }
+    ],
+    "new_target_ids": [
+      "refrain-jai-bajarang"
+    ],
+    "performance_order": [
+      {
+        "line_id": "refrain-jai-bajarang",
+        "occurrence": 1
+      }
+    ],
+    "reuse_by_id": {}
+  },
+  "files": {
+    "407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/accepted-result.json": {
+      "glosses": {
+        "packet": {
+          "glosses": [
+            {
+              "id": "refrain-jai-bajarang",
+              "word_glosses": [
+                {
+                  "roman": "jaya",
+                  "gloss": "victory",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "jaya",
+                  "gloss": "victory",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "jaya",
+                  "gloss": "victory",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "bajaraṅga",
+                  "gloss": "with adamantine limbs",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "balī",
+                  "gloss": "strong",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "semantic_frame": {
+                "agent": "",
+                "action_or_state": "",
+                "patient_or_complement": "",
+                "modifiers": "",
+                "negation_or_modality": "",
+                "literal_image_and_agency": "",
+                "idiom_or_phrase": "",
+                "cross_line_relation": ""
+              },
+              "grammar_note": "",
+              "uncertainty": "",
+              "sense_decisions": [
+                {
+                  "word_index": 0,
+                  "roman": "jaya",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 1,
+                  "roman": "jaya",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 2,
+                  "roman": "jaya",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 3,
+                  "roman": "bajaraṅga",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 4,
+                  "roman": "balī",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                }
+              ],
+              "lexical_queries": [
+                {
+                  "word_indices": [
+                    3
+                  ],
+                  "surfaces": [
+                    "bajaraṅga"
+                  ],
+                  "reason": "Check the precise compound sense.",
+                  "source_entry_ids": [],
+                  "source_queries": [
+                    "वज्र"
+                  ],
+                  "english_candidates": [
+                    {
+                      "expression": "with adamantine limbs",
+                      "kind": "compositional_phrase",
+                      "english_lemmas": [
+                        "adamantine"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "lexical_query_gaps": []
+            }
+          ]
+        },
+        "gloss_contract_version": 6,
+        "sense_languages": [
+          "Hindi"
+        ],
+        "fingerprint": "40a22ae7647862c5e12cc056cae6b68fc80e1cb366c64b2b94788d4f16d76a5a"
+      },
+      "translations": {
+        "packet": {
+          "translations": [
+            {
+              "id": "refrain-jai-bajarang",
+              "literal_english": "Victory! Victory! Victory! with adamantine limbs, strong!",
+              "segments": [
+                {
+                  "text": "Victory! ",
+                  "word_indices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "Victory! ",
+                  "word_indices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "Victory! ",
+                  "word_indices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "with adamantine limbs",
+                  "word_indices": [
+                    3
+                  ]
+                },
+                {
+                  "text": ", strong!",
+                  "word_indices": [
+                    4
+                  ]
+                }
+              ],
+              "wording_decisions": [
+                {
+                  "target_id": "lexical:refrain-jai-bajarang:3",
+                  "chosen_candidate_id": "candidate:3fdc4813de649cfd2409",
+                  "expression": "with adamantine limbs",
+                  "kind": "compositional_phrase",
+                  "english_evidence_ids": [
+                    "wordnet:3.1:a:01028427",
+                    "wordnet:3.1:a:01154749",
+                    "wordnet:3.1:a:02613736"
+                  ],
+                  "word_indices": [
+                    3
+                  ],
+                  "ordinary_paraphrase": "having limbs hard as diamond",
+                  "component_word_indices": [
+                    [
+                      3
+                    ]
+                  ],
+                  "reason": "Literal compound control."
+                }
+              ],
+              "source_discovery_decisions": [
+                {
+                  "target_id": "discovery:refrain-jai-bajarang:3",
+                  "entry_id": "platts1884.p1181.hw1ea57675c2756eb7.h1",
+                  "status": "matched",
+                  "attested_form": "bajr-ang",
+                  "quotation": "vajrāng (˚ra+an˚), vulg. vajr-ang, bajr-ang, adj. & s.m. Having a hardy frame, hardy; — an epithet of Hauumān; — a robust or hardy man",
+                  "relation_kind": "compound_subentry",
+                  "meaning_applied": "having a hardy frame",
+                  "changes_gloss": false,
+                  "reason": "The witnessed whole compound adds limbs/frame, not a bare root-strength meaning."
+                }
+              ],
+              "human_review_recommended": false,
+              "material_alternatives": [],
+              "choice_note": "",
+              "uncertainty": "",
+              "fidelity": {
+                "agency_and_image_preserved": true,
+                "all_meaning_accounted_for": true,
+                "unsupported_additions": [],
+                "notes": ""
+              },
+              "independent_review": {
+                "id": "refrain-jai-bajarang",
+                "passes": true,
+                "human_review_recommended": false,
+                "agency_preserved": true,
+                "imagery_preserved": true,
+                "all_meaning_accounted_for": true,
+                "unsupported_additions": [],
+                "material_choice": "",
+                "reason": "Transport control only.",
+                "issues": [],
+                "component_judgments": {
+                  "gloss": {
+                    "status": "supported",
+                    "reason": "Canned transport control, not linguistic approval."
+                  },
+                  "frame": {
+                    "status": "supported",
+                    "reason": "Canned transport control, not linguistic approval."
+                  },
+                  "english": {
+                    "status": "supported",
+                    "reason": "Canned transport control, not linguistic approval."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "input_contract_version": 9,
+        "fingerprint": "6982b7cf30716c1d4332ffe10749bff7bd43f21e340b0b02811cc1f21fa7e613",
+        "automatic_evidence_receipt": {
+          "lexical_support": "b978e0fb31d673f073cd5d0d5ca8efec44832c524e95db8beb7819c614054d35",
+          "source_discovery": "54e8e9787f6cf2bcc8b78a0a6b02531c727f5adb489a0846aaf32f3561346575"
+        },
+        "writer_evidence": {
+          "version": 1,
+          "current": {
+            "path": "/var/folders/hx/q_2_flr15lxc1g1ndjf159sr0000gn/T/tmpzf_22jr5/historical-routes/407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/flash/songs/fixture/.transcription/pipeline/writer-drafts/331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9.json",
+            "candidate_sha256": "331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9"
+          },
+          "history": [
+            {
+              "proof": {
+                "path": "/var/folders/hx/q_2_flr15lxc1g1ndjf159sr0000gn/T/tmpzf_22jr5/historical-routes/407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/flash/songs/fixture/.transcription/pipeline/writer-drafts/331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9.json",
+                "candidate_sha256": "331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9"
+              },
+              "context_identity": "c2a07ae95ab7e70e93aa8e5b9e5dcc54203dab3f46ed12ffbc238fb701f722d8"
+            }
+          ]
+        },
+        "review_responses": [
+          {
+            "fingerprint": "a86348b2f17ba0d8ce414a12bf56afa8992389d6ee18091359e5088c4cc393e7",
+            "target_ids": [
+              "refrain-jai-bajarang"
+            ],
+            "response": {
+              "packet": {
+                "reviews": [
+                  {
+                    "id": "refrain-jai-bajarang",
+                    "passes": true,
+                    "human_review_recommended": false,
+                    "agency_preserved": true,
+                    "imagery_preserved": true,
+                    "all_meaning_accounted_for": true,
+                    "unsupported_additions": [],
+                    "material_choice": "",
+                    "reason": "Transport control only.",
+                    "issues": [],
+                    "component_judgments": {
+                      "gloss": {
+                        "status": "supported",
+                        "reason": "Canned transport control, not linguistic approval."
+                      },
+                      "frame": {
+                        "status": "supported",
+                        "reason": "Canned transport control, not linguistic approval."
+                      },
+                      "english": {
+                        "status": "supported",
+                        "reason": "Canned transport control, not linguistic approval."
+                      }
+                    }
+                  }
+                ]
+              },
+              "review_selection": {
+                "version": 1,
+                "observed_ids": [
+                  "refrain-jai-bajarang"
+                ],
+                "target_ids": [
+                  "refrain-jai-bajarang"
+                ],
+                "excluded_context_ids": []
+              }
+            }
+          }
+        ],
+        "review_task_version": 3
+      }
+    },
+    "407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/route-state.json": {
+      "version": 1,
+      "unit_id": "fixture:new-source-semantics",
+      "input_fingerprint": "d9fc8f6356024c84174ca2ad721466c146775b3cd8fd9909bdf5fc053e85a39c",
+      "dependency_fingerprint": "c96ea889aa24aec45b8e647c52e1bdc137d21fcdb7ef2f7b86d51644268a2d79",
+      "base_model": "google/gemini-3.7-flash",
+      "pro_model": "google/gemini-3.7-flash",
+      "policy": {
+        "quality_failure": true,
+        "transient_transport": true,
+        "unknown_outcome": true,
+        "flash_time_share": 0.5,
+        "call_timeout_seconds": 600.0
+      },
+      "status": "accepted",
+      "deadline_at": 1792800891.9612951,
+      "flash_deadline_at": 1792800831.962054,
+      "attempts": [
+        {
+          "attempt_id": "fc003071c37c4438b8b4b3aa255bee43",
+          "model": "google/gemini-3.7-flash",
+          "status": "accepted",
+          "deadline_at": 1792800891.9612951,
+          "started_at": 1792800771.9631732,
+          "candidate_sha256": "fba7b3aaee28c1eaaacddeda08c50623418344db7a3af869b078939da31f501e",
+          "finished_at": 1792800772.0138948
+        }
+      ],
+      "accepted_sha256": "fba7b3aaee28c1eaaacddeda08c50623418344db7a3af869b078939da31f501e",
+      "accepted_model": "google/gemini-3.7-flash"
+    },
+    "407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/flash/candidate.json": {
+      "glosses": {
+        "packet": {
+          "glosses": [
+            {
+              "id": "refrain-jai-bajarang",
+              "word_glosses": [
+                {
+                  "roman": "jaya",
+                  "gloss": "victory",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "jaya",
+                  "gloss": "victory",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "jaya",
+                  "gloss": "victory",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "bajaraṅga",
+                  "gloss": "with adamantine limbs",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "balī",
+                  "gloss": "strong",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "semantic_frame": {
+                "agent": "",
+                "action_or_state": "",
+                "patient_or_complement": "",
+                "modifiers": "",
+                "negation_or_modality": "",
+                "literal_image_and_agency": "",
+                "idiom_or_phrase": "",
+                "cross_line_relation": ""
+              },
+              "grammar_note": "",
+              "uncertainty": "",
+              "sense_decisions": [
+                {
+                  "word_index": 0,
+                  "roman": "jaya",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 1,
+                  "roman": "jaya",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 2,
+                  "roman": "jaya",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 3,
+                  "roman": "bajaraṅga",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                },
+                {
+                  "word_index": 4,
+                  "roman": "balī",
+                  "evidence_status": "contextual_inference",
+                  "chosen": [],
+                  "rejected": [],
+                  "contextual_reason": "The surrounding clause addresses this noun as its subject.",
+                  "grammatical_role": "addressed subject"
+                }
+              ],
+              "lexical_queries": [
+                {
+                  "word_indices": [
+                    3
+                  ],
+                  "surfaces": [
+                    "bajaraṅga"
+                  ],
+                  "reason": "Check the precise compound sense.",
+                  "source_entry_ids": [],
+                  "source_queries": [
+                    "वज्र"
+                  ],
+                  "english_candidates": [
+                    {
+                      "expression": "with adamantine limbs",
+                      "kind": "compositional_phrase",
+                      "english_lemmas": [
+                        "adamantine"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "lexical_query_gaps": []
+            }
+          ]
+        },
+        "gloss_contract_version": 6,
+        "sense_languages": [
+          "Hindi"
+        ],
+        "fingerprint": "40a22ae7647862c5e12cc056cae6b68fc80e1cb366c64b2b94788d4f16d76a5a"
+      },
+      "translations": {
+        "packet": {
+          "translations": [
+            {
+              "id": "refrain-jai-bajarang",
+              "literal_english": "Victory! Victory! Victory! with adamantine limbs, strong!",
+              "segments": [
+                {
+                  "text": "Victory! ",
+                  "word_indices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "Victory! ",
+                  "word_indices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "Victory! ",
+                  "word_indices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "with adamantine limbs",
+                  "word_indices": [
+                    3
+                  ]
+                },
+                {
+                  "text": ", strong!",
+                  "word_indices": [
+                    4
+                  ]
+                }
+              ],
+              "wording_decisions": [
+                {
+                  "target_id": "lexical:refrain-jai-bajarang:3",
+                  "chosen_candidate_id": "candidate:3fdc4813de649cfd2409",
+                  "expression": "with adamantine limbs",
+                  "kind": "compositional_phrase",
+                  "english_evidence_ids": [
+                    "wordnet:3.1:a:01028427",
+                    "wordnet:3.1:a:01154749",
+                    "wordnet:3.1:a:02613736"
+                  ],
+                  "word_indices": [
+                    3
+                  ],
+                  "ordinary_paraphrase": "having limbs hard as diamond",
+                  "component_word_indices": [
+                    [
+                      3
+                    ]
+                  ],
+                  "reason": "Literal compound control."
+                }
+              ],
+              "source_discovery_decisions": [
+                {
+                  "target_id": "discovery:refrain-jai-bajarang:3",
+                  "entry_id": "platts1884.p1181.hw1ea57675c2756eb7.h1",
+                  "status": "matched",
+                  "attested_form": "bajr-ang",
+                  "quotation": "vajrāng (˚ra+an˚), vulg. vajr-ang, bajr-ang, adj. & s.m. Having a hardy frame, hardy; — an epithet of Hauumān; — a robust or hardy man",
+                  "relation_kind": "compound_subentry",
+                  "meaning_applied": "having a hardy frame",
+                  "changes_gloss": false,
+                  "reason": "The witnessed whole compound adds limbs/frame, not a bare root-strength meaning."
+                }
+              ],
+              "human_review_recommended": false,
+              "material_alternatives": [],
+              "choice_note": "",
+              "uncertainty": "",
+              "fidelity": {
+                "agency_and_image_preserved": true,
+                "all_meaning_accounted_for": true,
+                "unsupported_additions": [],
+                "notes": ""
+              },
+              "independent_review": {
+                "id": "refrain-jai-bajarang",
+                "passes": true,
+                "human_review_recommended": false,
+                "agency_preserved": true,
+                "imagery_preserved": true,
+                "all_meaning_accounted_for": true,
+                "unsupported_additions": [],
+                "material_choice": "",
+                "reason": "Transport control only.",
+                "issues": [],
+                "component_judgments": {
+                  "gloss": {
+                    "status": "supported",
+                    "reason": "Canned transport control, not linguistic approval."
+                  },
+                  "frame": {
+                    "status": "supported",
+                    "reason": "Canned transport control, not linguistic approval."
+                  },
+                  "english": {
+                    "status": "supported",
+                    "reason": "Canned transport control, not linguistic approval."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "input_contract_version": 9,
+        "fingerprint": "6982b7cf30716c1d4332ffe10749bff7bd43f21e340b0b02811cc1f21fa7e613",
+        "automatic_evidence_receipt": {
+          "lexical_support": "b978e0fb31d673f073cd5d0d5ca8efec44832c524e95db8beb7819c614054d35",
+          "source_discovery": "54e8e9787f6cf2bcc8b78a0a6b02531c727f5adb489a0846aaf32f3561346575"
+        },
+        "writer_evidence": {
+          "version": 1,
+          "current": {
+            "path": "/var/folders/hx/q_2_flr15lxc1g1ndjf159sr0000gn/T/tmpzf_22jr5/historical-routes/407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/flash/songs/fixture/.transcription/pipeline/writer-drafts/331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9.json",
+            "candidate_sha256": "331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9"
+          },
+          "history": [
+            {
+              "proof": {
+                "path": "/var/folders/hx/q_2_flr15lxc1g1ndjf159sr0000gn/T/tmpzf_22jr5/historical-routes/407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/flash/songs/fixture/.transcription/pipeline/writer-drafts/331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9.json",
+                "candidate_sha256": "331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9"
+              },
+              "context_identity": "c2a07ae95ab7e70e93aa8e5b9e5dcc54203dab3f46ed12ffbc238fb701f722d8"
+            }
+          ]
+        },
+        "review_responses": [
+          {
+            "fingerprint": "a86348b2f17ba0d8ce414a12bf56afa8992389d6ee18091359e5088c4cc393e7",
+            "target_ids": [
+              "refrain-jai-bajarang"
+            ],
+            "response": {
+              "packet": {
+                "reviews": [
+                  {
+                    "id": "refrain-jai-bajarang",
+                    "passes": true,
+                    "human_review_recommended": false,
+                    "agency_preserved": true,
+                    "imagery_preserved": true,
+                    "all_meaning_accounted_for": true,
+                    "unsupported_additions": [],
+                    "material_choice": "",
+                    "reason": "Transport control only.",
+                    "issues": [],
+                    "component_judgments": {
+                      "gloss": {
+                        "status": "supported",
+                        "reason": "Canned transport control, not linguistic approval."
+                      },
+                      "frame": {
+                        "status": "supported",
+                        "reason": "Canned transport control, not linguistic approval."
+                      },
+                      "english": {
+                        "status": "supported",
+                        "reason": "Canned transport control, not linguistic approval."
+                      }
+                    }
+                  }
+                ]
+              },
+              "review_selection": {
+                "version": 1,
+                "observed_ids": [
+                  "refrain-jai-bajarang"
+                ],
+                "target_ids": [
+                  "refrain-jai-bajarang"
+                ],
+                "excluded_context_ids": []
+              }
+            }
+          }
+        ],
+        "review_task_version": 3
+      }
+    },
+    "407a1a6acd2b4cb3d82292916eae9c663d40c421681bf240bea5750760f6de05/flash/songs/fixture/.transcription/pipeline/writer-drafts/331e94c14f78a5a8f9fd810380713b33e6825146936d77bdf818663f2ec53eb9.json": {
+      "packet": {
+        "translations": [
+          {
+            "id": "refrain-jai-bajarang",
+            "literal_english": "Victory! Victory! Victory! with adamantine limbs, strong!",
+            "segments": [
+              {
+                "text": "Victory! ",
+                "word_indices": [
+                  0
+                ]
+              },
+              {
+                "text": "Victory! ",
+                "word_indices": [
+                  1
+                ]
+              },
+              {
+                "text": "Victory! ",
+                "word_indices": [
+                  2
+                ]
+              },
+              {
+                "text": "with adamantine limbs",
+                "word_indices": [
+                  3
+                ]
+              },
+              {
+                "text": ", strong!",
+                "word_indices": [
+                  4
+                ]
+              }
+            ],
+            "wording_decisions": [
+              {
+                "target_id": "lexical:refrain-jai-bajarang:3",
+                "chosen_candidate_id": "candidate:3fdc4813de649cfd2409",
+                "expression": "with adamantine limbs",
+                "kind": "compositional_phrase",
+                "english_evidence_ids": [
+                  "wordnet:3.1:a:01028427",
+                  "wordnet:3.1:a:01154749",
+                  "wordnet:3.1:a:02613736"
+                ],
+                "word_indices": [
+                  3
+                ],
+                "ordinary_paraphrase": "having limbs hard as diamond",
+                "component_word_indices": [
+                  [
+                    3
+                  ]
+                ],
+                "reason": "Literal compound control."
+              }
+            ],
+            "source_discovery_decisions": [
+              {
+                "target_id": "discovery:refrain-jai-bajarang:3",
+                "entry_id": "platts1884.p1181.hw1ea57675c2756eb7.h1",
+                "status": "matched",
+                "attested_form": "bajr-ang",
+                "quotation": "vajrāng (˚ra+an˚), vulg. vajr-ang, bajr-ang, adj. & s.m. Having a hardy frame, hardy; — an epithet of Hauumān; — a robust or hardy man",
+                "relation_kind": "compound_subentry",
+                "meaning_applied": "having a hardy frame",
+                "changes_gloss": false,
+                "reason": "The witnessed whole compound adds limbs/frame, not a bare root-strength meaning."
+              }
+            ],
+            "human_review_recommended": false,
+            "material_alternatives": [],
+            "choice_note": "",
+            "uncertainty": "",
+            "fidelity": {
+              "agency_and_image_preserved": true,
+              "all_meaning_accounted_for": true,
+              "unsupported_additions": [],
+              "notes": ""
+            }
+          }
+        ]
+      },
+      "input_contract_version": 9,
+      "fingerprint": "6982b7cf30716c1d4332ffe10749bff7bd43f21e340b0b02811cc1f21fa7e613",
+      "automatic_evidence_receipt": {
+        "lexical_support": "b978e0fb31d673f073cd5d0d5ca8efec44832c524e95db8beb7819c614054d35",
+        "source_discovery": "54e8e9787f6cf2bcc8b78a0a6b02531c727f5adb489a0846aaf32f3561346575"
+      }
+    }
+  },
+  "source_pipeline_sha256": "bc9e1b0d652b67856a9cd7ca3e902e3b9e10074fd16a2512e319d9d5285d3a1d"
+}

@@ -779,6 +779,8 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
     audited = {'packet': {'metadata': metadata, 'verified_lines': targets,
                          'performance_order': [event for event in plan['performance_order'] if event['line_id'] in plan['new_target_ids']],
                          'uncertainties': []}}
+    pre_source_policy = pipeline.semantic_stage_policy(options)
+    options = pipeline.bhakti_lexical_producer.prepare_gloss_source(targets, languages, options)
     evidence = {'targets': targets, 'source': plan['lines'], 'order': plan['performance_order'],
                 'languages': languages, 'reading_context': context_evidence, 'policy': pipeline.semantic_stage_policy(options)}
     identity = digest(evidence)
@@ -821,9 +823,19 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
     if not (packet_dir / 'semantic-repair-state.json').exists():
         legacy_writer = None
         # Exact historical pending effects retain their original attempt identity.
-        legacy_state = routes.unit_state_path(route_dir, unit_id, identity,
-            dependency_fingerprint=digest(evidence['policy']),
-            base_model=options.model, pro_model=options.pro_model)
+        legacy_states = []
+        for old_policy in (evidence['policy'], pre_source_policy):
+            old_evidence = {**evidence, 'policy':old_policy}
+            path = routes.unit_state_path(route_dir, unit_id, digest(old_evidence),
+                dependency_fingerprint=digest(old_policy), base_model=options.model, pro_model=options.pro_model)
+            if path not in legacy_states:
+                legacy_states.append(path)
+            if path.exists():
+                prior = routes.read_unit_cache(path)
+                if prior['state']['status'] != 'accepted':
+                    raise routes.UnitUnresolved(unit_id, prior['state'].get('reason', 'historical attempt unresolved'),
+                        prior['state'].get('issues', []), path)
+        legacy_state = next((path for path in legacy_states if path.exists()), legacy_states[0])
         if legacy_state.exists():
             previous = routes.read_unit_cache(legacy_state)
             if previous['state']['status'] != 'accepted':
@@ -836,7 +848,8 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
                     return old
                 legacy_writer = copy.deepcopy(old['translations'])
                 legacy_writer['historical_translation_route'] = str(legacy_state)
-            if errors and errors != ['automatic model-input evidence receipt changed or missing']:
+            if errors and errors not in (['automatic model-input evidence receipt changed or missing'],
+                                         ['source glossary evidence changed or missing']):
                 raise RuntimeError('historical semantic acceptance invalid: ' + str(errors[:3]))
         # Match the source-stage fingerprint, not the changed English policy.
         # Route hashes authenticate prior acceptance; source policy/context bind

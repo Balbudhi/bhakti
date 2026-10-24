@@ -540,9 +540,12 @@ def reusable_prior_stages(pipeline, packet_dir, lines, languages, job, options, 
             or scoped_gloss_contract_errors(pipeline, lines, glosses.get('packet', {}).get('glosses', []), languages, options)
             or pipeline.bhakti_lexical_support.support_decision_errors(support, glosses.get('packet', {}).get('glosses', []))):
         return None, None
-    view_options, view_glosses = pipeline.bhakti_lexical_producer.prepare_translation(
-        packet_dir.parent.parent, {'packet': {'verified_lines': lines, 'metadata': {'languages': languages},
-            'performance_order': source_context.get('performance_order', [])}}, glosses, options)
+    try:
+        view_options, view_glosses = pipeline.bhakti_lexical_producer.prepare_translation(
+            packet_dir.parent.parent, {'packet': {'verified_lines': lines, 'metadata': {'languages': languages},
+                'performance_order': source_context.get('performance_order', [])}}, glosses, options)
+    except pipeline.bhakti_source_discovery.SourceGlossRequired:
+        return copy.deepcopy(glosses), None
     rows = view_glosses['packet']['glosses']
     support = pipeline.bhakti_lexical_support.prepare_options(view_options, lines, languages)
     policy = pipeline.semantic_stage_policy(view_options)
@@ -658,7 +661,10 @@ def derived_support_view(pipeline, song_dir, audited, glosses, translations, opt
 def derived_support_errors(pipeline, song_dir, audited, glosses, translations, options):
     lines = audited['packet']['verified_lines']
     languages = audited['packet'].get('metadata', {}).get('languages')
-    view_options, view = derived_support_view(pipeline, song_dir, audited, glosses, translations, options)
+    try:
+        view_options, view = derived_support_view(pipeline, song_dir, audited, glosses, translations, options)
+    except pipeline.bhakti_source_discovery.SourceGlossRequired:
+        return ['source glossary evidence changed or missing']
     support = pipeline.bhakti_lexical_support.prepare_options(view_options, lines, languages)
     errors = pipeline.automatic_evidence_errors(view_options, translations)
     errors += pipeline.bhakti_lexical_support.support_decision_errors(
@@ -802,6 +808,7 @@ def routed_gloss(pipeline, song_dir, audited, options):
     import bhakti_model_routes as routes
     lines = audited['packet']['verified_lines']
     languages = audited['packet'].get('metadata', {}).get('languages')
+    options = pipeline.bhakti_lexical_producer.prepare_gloss_source(lines, languages, options)
     # Validation of corpus bytes remains before the first paid stage.
     pipeline.bhakti_lexical_producer.configuration_identity(options)
     policy = pipeline.semantic_stage_policy(options, stage='gloss')
@@ -813,6 +820,9 @@ def routed_gloss(pipeline, song_dir, audited, options):
                            and getattr(options, 'semantic_review_generation', 0) == 0) else options.model)
     def validate(result):
         errors = pipeline.fresh_gloss_contract_errors(lines, result.get('packet', {}).get('glosses', []), languages)
+        errors += pipeline.bhakti_source_discovery.gloss_decision_errors(
+            pipeline.bhakti_source_discovery.projected(getattr(options, 'automatic_source_discovery', None), [line['id'] for line in lines]),
+            result.get('packet', {}).get('glosses', []))
         return [{'kind': 'source_gloss_contract', 'detail': error} for error in errors]
     return semantic_stage_route(pipeline, song_dir, 'gloss',
         {'lines': lines, 'languages': languages, 'policy': policy}, options,
@@ -1019,6 +1029,65 @@ def outside_initial_scope(issues, options):
     return outside
 
 
+
+def reconcile_source_gloss(pipeline, round_dir, audited, glosses, options):
+    """One source-informed subset refinement before English work in this round."""
+    discovery = pipeline.bhakti_source_discovery
+    producer = pipeline.bhakti_lexical_producer
+    local = producer.prepare_source_from_gloss(audited, glosses, options)
+    packet = getattr(local, 'automatic_source_discovery', None)
+    pending = discovery.pending_gloss_lines(packet, glosses)
+    if not pending:
+        return local, glosses
+    lines = audited['packet']['verified_lines']
+    languages = audited['packet'].get('metadata', {}).get('languages')
+    allowed = {line['id'] for line in lines}
+    if set(pending) - allowed:
+        raise RuntimeError('source glossary refinement exceeds authorized target rows')
+    initial = getattr(options, 'semantic_initial_repair', None)
+    if initial is not None and set(pending) - set(initial['target_line_ids']):
+        raise RuntimeError('source glossary refinement exceeds original-reader scope')
+    identity = digest({'previous_gloss':glosses, 'source':discovery.source_gloss_receipt(packet), 'targets':pending})
+    marker = Path(round_dir)/'source-gloss-refinement.json'
+    saved = pipeline.read_packet(marker)
+    if saved is not None and saved != {'identity':identity, 'targets':pending}:
+        raise RuntimeError('source glossary refinement evidence changed after bounded attempt')
+    pipeline.semantic_write_json(marker, {'identity':identity, 'targets':pending})
+    subset = copy.deepcopy(audited)
+    subset['packet']['verified_lines'] = [line for line in lines if line['id'] in pending]
+    refinement_options = copy.copy(local)
+    refinement_options.semantic_prior_gloss = [copy.deepcopy(row) for row in glosses['packet']['glosses'] if row['id'] in pending]
+    # Keep the provisional draft/task local to glossary adjudication, not the writer.
+    refinement_options.source_gloss_adjudication = {'target_line_ids':pending,
+        'reason':'New witnessed source entries must inform the source meanings before English.'}
+    directory = Path(round_dir)/'source-gloss-refinement'/identity
+    refined = routed_gloss(pipeline, directory, subset, refinement_options)
+    by_id = {row['id']: row for row in refined['packet']['glosses']}
+    if set(by_id) != set(pending):
+        raise RuntimeError('source glossary refinement changed target population')
+    result = copy.deepcopy(glosses)
+    result['packet']['glosses'] = [copy.deepcopy(by_id.get(row['id'], row)) for row in glosses['packet']['glosses']]
+    result = project_initial_gloss(result, local)
+    errors = scoped_gloss_contract_errors(pipeline, lines, result['packet']['glosses'], languages, local)
+    if errors:
+        raise RuntimeError('source glossary refinement violates mutable scope: '+str(errors[:3]))
+    producing = dict(result.get('producing_models_by_line',
+        {row['id']:glosses.get('resolved_model', local.model) for row in glosses['packet']['glosses']}))
+    producing.update({line_id:refined.get('resolved_model', local.model) for line_id in pending})
+    result['producing_models_by_line'] = producing
+    result['resolved_model'] = next(iter(set(producing.values()))) if len(set(producing.values())) == 1 else 'mixed'
+    result['source_gloss_receipt'] = discovery.source_gloss_receipt(
+        discovery.projected(packet, [line['id'] for line in lines]))
+    result['producer_fingerprint'] = digest({'prior':glosses.get('producer_fingerprint', glosses.get('fingerprint')),
+        'refinement':refined.get('fingerprint'), 'packet':result['packet'], 'source':result['source_gloss_receipt']})
+    # A refinement may propose another entry; bounded exhaustion is not success.
+    local = producer.prepare_source_from_gloss(audited, result, local)
+    pending = discovery.pending_gloss_lines(getattr(local, 'automatic_source_discovery', None), result)
+    if pending:
+        raise RuntimeError('source glossary refinement requires further evidence adjudication: '+str(pending))
+    pipeline.semantic_write_json(Path(round_dir)/'source-gloss-ready.json', result)
+    return local, result
+
 def complete(pipeline, song_dir, audited, job, options):
     packet_dir = song_dir / '.transcription/pipeline'
     state_path = packet_dir / 'semantic-repair-state.json'
@@ -1032,6 +1101,7 @@ def complete(pipeline, song_dir, audited, job, options):
         initial = initial_repair_context(pipeline, options, lines, languages)
         pipeline.bhakti_lexical_producer.requested_spans(options, lines)
         baseline = resolved_baseline(pipeline, song_dir, lines, job)
+        options = pipeline.bhakti_lexical_producer.prepare_gloss_source(lines, languages, options)
         options = pipeline.bhakti_translation_policy.prepare_naming_options(
             options, lines, languages, source_slug=job.get('slug'))
         support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
@@ -1066,6 +1136,12 @@ def complete(pipeline, song_dir, audited, job, options):
         if full_support is not None:
             glossary_inputs['policy']['lexical_support'] = pipeline.bhakti_lexical_support.content_digest(
                 full_support, english_grammar=False)
+        bootstrap_source = getattr(options, 'automatic_source_discovery', None)
+        if bootstrap_source is not None:
+            source_identity = pipeline.bhakti_source_discovery.evidence_identity(
+                pipeline.bhakti_source_discovery.projected(bootstrap_source, [line['id'] for line in lines]))
+            glossary_inputs['policy'] = {**glossary_inputs['policy'], 'source_gloss_evidence':source_identity}
+            identity_inputs['policy'] = {**identity_inputs['policy'], 'source_gloss_evidence':source_identity}
         glossary_identity = digest(glossary_inputs)
         identity_inputs['policy'] = {**identity_inputs['policy'],
             **pipeline.bhakti_lexical_support.projection_policy(options)}
@@ -1082,6 +1158,15 @@ def complete(pipeline, song_dir, audited, job, options):
         identity_inputs.update(pipeline.review_task_identity())
         identity = digest(identity_inputs)
         configuration_run_id = identity
+        if (bootstrap_source is not None and prior_state.get('run_id')
+                and prior_state.get('run_id') != identity and prior_state.get('status') != 'accepted'):
+            import bhakti_model_routes as routes
+            prior_directory = packet_dir/'semantic-repair'/prior_state['run_id']
+            for path in prior_directory.rglob('route-state.json'):
+                prior_route = routes.read_unit_cache(path)
+                if prior_route['state']['status'] != 'accepted':
+                    raise routes.UnitUnresolved(prior_route['state']['unit_id'],
+                        'source evidence cannot reset an unfinished semantic attempt', [], path)
         revision_receipt = None
         prior_configuration = prior_state.get('configuration_run_id', prior_state.get('run_id'))
         if prior_configuration == configuration_run_id:
@@ -1095,8 +1180,11 @@ def complete(pipeline, song_dir, audited, job, options):
                     raise RuntimeError('accepted source glossary violates contract: ' + str(errors[:3]))
                 saved_receipt = pipeline.validate_automatic_evidence_receipt(
                     prior_translation.get('automatic_evidence_receipt', {}))
-                view_options, _ = derived_support_view(pipeline, song_dir, audited, prior_gloss, prior_translation, options)
-                current_receipt = pipeline.automatic_evidence_receipt(view_options)
+                try:
+                    view_options, _ = derived_support_view(pipeline, song_dir, audited, prior_gloss, prior_translation, options)
+                    current_receipt = pipeline.automatic_evidence_receipt(view_options)
+                except pipeline.bhakti_source_discovery.SourceGlossRequired as needed:
+                    current_receipt = needed.revision_receipt()
                 if current_receipt and not saved_receipt:
                     raise RuntimeError('accepted automatic evidence receipt missing')
                 if current_receipt != saved_receipt:
@@ -1119,7 +1207,11 @@ def complete(pipeline, song_dir, audited, job, options):
         if (prior_state.get('status') == 'accepted' and prior_state.get('run_id') != identity
                 and not durable_seed.exists()):
             previous_manifest = pipeline.read_packet(packet_dir / 'semantic-acceptance.json') or {}
-            if (previous_manifest.get('source_gloss_identity') == glossary_identity
+            previous_gloss = pipeline.read_packet(packet_dir / '04-glosses.json')
+            source_refinement = (bootstrap_source is not None and previous_gloss is not None
+                and previous_manifest.get('source_sha256') == digest(evidence)
+                and bool(pipeline.bhakti_source_discovery.pending_gloss_lines(bootstrap_source, previous_gloss)))
+            if (previous_manifest.get('source_gloss_identity') == glossary_identity or source_refinement
                     or (automatic is not None and prior_state.get('content_configuration_run_id',
                         prior_state.get('run_id')) == preautomatic_identity)):
                 previous_gloss = pipeline.read_packet(packet_dir / '04-glosses.json')
@@ -1134,9 +1226,12 @@ def complete(pipeline, song_dir, audited, job, options):
                     digest(evidence), glossary_identity, lines, languages, options)
                 prior_content = prior_state.get('content_configuration_run_id', prior_configuration)
                 if prior_content == content_configuration_run_id:
-                    view_options, _ = derived_support_view(pipeline, song_dir, audited, previous_gloss,
-                                                           previous_translation, options)
-                    current_receipt = pipeline.automatic_evidence_receipt(view_options)
+                    try:
+                        view_options, _ = derived_support_view(pipeline, song_dir, audited, previous_gloss,
+                                                               previous_translation, options)
+                        current_receipt = pipeline.automatic_evidence_receipt(view_options)
+                    except pipeline.bhakti_source_discovery.SourceGlossRequired as needed:
+                        current_receipt = needed.revision_receipt()
                     saved_receipt = pipeline.validate_automatic_evidence_receipt(
                         previous_translation.get('automatic_evidence_receipt', {}))
                     if current_receipt == saved_receipt:
@@ -1250,9 +1345,13 @@ def complete(pipeline, song_dir, audited, job, options):
         if revision_receipt is not None:
             if seed_gloss is None:
                 raise RuntimeError('automatic evidence revision lacks validated glossary seed')
-            view_options, _ = derived_support_view(pipeline, song_dir, audited, seed_gloss,
-                {'automatic_lexical_feedback': local.automatic_lexical_feedback}, local)
-            if pipeline.automatic_evidence_receipt(view_options) != revision_receipt:
+            try:
+                view_options, _ = derived_support_view(pipeline, song_dir, audited, seed_gloss,
+                    {'automatic_lexical_feedback': local.automatic_lexical_feedback}, local)
+                current_receipt = pipeline.automatic_evidence_receipt(view_options)
+            except pipeline.bhakti_source_discovery.SourceGlossRequired as needed:
+                current_receipt = needed.revision_receipt()
+            if current_receipt != revision_receipt:
                 raise RuntimeError('automatic evidence changed during interrupted revision')
         maximum = min(2, max(0, int(getattr(options, 'semantic_repair_rounds', 2))))
         while True:
@@ -1264,7 +1363,8 @@ def complete(pipeline, song_dir, audited, job, options):
             previous_gloss = None; previous_translation = None
             if number:
                 previous = run_dir / f'round-{number-1}'
-                previous_gloss = pipeline.read_packet(previous / 'gloss-ready.json')
+                previous_gloss = (pipeline.read_packet(previous / 'source-gloss-ready.json') or
+                                  pipeline.read_packet(previous / 'gloss-ready.json'))
                 previous_translation = pipeline.read_packet(previous / 'translation-ready.json')
                 if not previous_gloss or not previous_translation:
                     raise RuntimeError('repair predecessor evidence missing')
@@ -1319,6 +1419,7 @@ def complete(pipeline, song_dir, audited, job, options):
                 errors = scoped_gloss_contract_errors(pipeline, lines, glosses['packet']['glosses'], languages, options)
                 if errors: raise RuntimeError('gloss_contract_hold: ' + str(errors[:3]))
                 pipeline.semantic_write_json(ready_path, glosses)
+            local, glosses = reconcile_source_gloss(pipeline, round_dir, audited, glosses, local)
             lookup_feedback = []
             translation_inputs = {'run': identity, 'round': number, 'gloss': glosses,
                                   'feedback': feedback, 'previous_translation': previous_translation}

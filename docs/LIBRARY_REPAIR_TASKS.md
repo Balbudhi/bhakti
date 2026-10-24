@@ -18,6 +18,15 @@ private records are `/tmp/bhakti-library-inventory-c39757e9/{inventory,queue}.js
 Unpublished folders and the nine existing working changes remain preserved.
 
 Current step: finish the connected pipeline before further content releases.
+The owner's latest instruction makes word-level accountability an explicit
+acceptance requirement: every English word needs source-meaning or necessary
+English-grammar justification, with independent checks for unsupported modifiers,
+attachment, emphasis, negation and agency. Writer explanations cannot substitute
+for the reviewer's source judgment. Integrate this into the existing stages and
+selective repair loop rather than adding another orchestration framework. Keep
+proper names, grammatical realization, compounds and protected English supported;
+do not implement a blanket ban on words such as `true` or `only`. Qualify the
+changed process on the known failure and short protected-reference excerpts.
 The reviewer now retains the failed excerpt's original neighboring lines. One
 bounded review of the unchanged paid draft has finished at
 `/tmp/bhakti-saved-writer-review/actual-run/`: one parsed call, $0.070053,
@@ -107,11 +116,14 @@ creating a new wrapper, preserves the original proof, and performs only review;
 changed glossary/grammar and missing predecessor evidence fail before acceptance.
 Thirteen portable saved-artifact regressions and 132 private compatibility checks
 passed; 80 integrated caller/binding/owner tests also pass. No old failed trial
-has been replayed or accepted. The remaining ordering issue is to deliver
-automatic source-dictionary evidence before meaning construction.
-Currently automatic acquisition runs after the first glossary and reaches writer
-and review; known exact native lookup spans need no model discovery before that
-first call. Better output from changing the order remains to be measured. Preserve
+has been replayed or accepted. Source-first ordering is now integrated: known
+native spans receive dictionary entries before the first glossary; entries proposed
+by a draft require one source-informed refinement before English retrieval or
+writing. That refinement receives the actual prior draft and an explicit task.
+Changed/withdrawn source evidence, original historical pending routes, owner English,
+context-only neighbors, deadline bounds and free resume are covered by the real
+callers. All 129 integrated source/binding/owner/repair checks pass. Better linguistic
+output from changing the order remains to be measured. Preserve
 all terminal runs and old unknown reservations; do not repay their calls merely
 to reconstruct evidence. Confirmed tracked task spending is $3.465095375.
 
@@ -120,6 +132,20 @@ explicit field-level repair before that line can be called fully corrected.
 The reviewed private design and test draft address note-only permissions,
 unchanged owner English and original-note evidence; they are not implemented.
 No new public lyrics or song pages accompany this work.
+
+The isolated Pro review comparison then ran once on the unchanged saved two-row
+candidate and full evidence, after the binding fix was integrated (`4035ca73`).
+It cost $0.091900 and took 26.989 seconds; the actual request matched the frozen
+payload including provider routing. Pro correctly accepted the first-line control,
+but still endorsed `true dwelling`, marked all second-line components supported,
+and did not account for frame-level `only`. It also requested human review while
+returning no unresolved-evidence issue and marking the writer reservation resolved.
+The review contract rejected that contradiction. The private terminal run is
+`/tmp/bhakti-pro-review-qualification/actual-run/`; its raw response is retained,
+with no accepted translation, retry, new glossary/writer or embedding calls.
+This does not qualify Pro as a remedy for the semantic false pass. Confirmed
+tracked qualification spending is now $3.570344625; the two earlier unknown
+reservations remain separate and unchanged.
 
 A separate existing-reader owner-baseline defect is now fixed: full-reader
 authorization receives the complete protected English map, while the generation

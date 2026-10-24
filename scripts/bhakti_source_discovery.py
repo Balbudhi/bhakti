@@ -114,13 +114,16 @@ def _budget_state(run_budget, reserve=False, *, initialize=False):
 
 
 def acquire_source_candidates(plan, cache_dir, *, opener=None, max_new_requests=16,
-                              timeout=15, retry_errors=False, run_budget=None):
+                              timeout=15, retry_errors=False, run_budget=None, request_deadline_at=None):
     support.require(type(max_new_requests) is int and max_new_requests >= 0,
                     'source discovery request limit must be nonnegative')
     support.require(isinstance(timeout, (int, float)) and math.isfinite(timeout) and timeout > 0,
                     'source discovery timeout must be positive and bounded')
     support.require(plan.get('version') == VERSION, 'source discovery plan version differs')
     _budget_state(run_budget)
+    if request_deadline_at is not None:
+        support.require(isinstance(request_deadline_at, (int, float)) and math.isfinite(request_deadline_at),
+                        'invalid source request deadline')
     acquired, query_order, budgeted = {}, [], 0
     roots = {}
     for target in plan['targets']:
@@ -153,11 +156,18 @@ def acquire_source_candidates(plan, cache_dir, *, opener=None, max_new_requests=
                 continue
             request_timeout = timeout
             if new_request:
+                if request_deadline_at is not None and request_deadline_at <= time.time():
+                    acquired[key] = {'status':'deadline_gap'}
+                    continue
                 reservation = _budget_state(run_budget, reserve=True)
                 if 'status' in reservation:
                     acquired[key] = reservation
                     continue
-                request_timeout = min(timeout, reservation['remaining_seconds'])
+                request_timeout = min(timeout, reservation['remaining_seconds'],
+                    request_deadline_at-time.time() if request_deadline_at is not None else timeout)
+                if request_timeout <= 0:
+                    acquired[key] = {'status':'deadline_gap'}
+                    continue
                 budgeted += 1
                 if prior is not None:
                     # Explicit bounded retry; a transport error was never a miss.
@@ -273,6 +283,13 @@ def configure_run_budget(state_dir, deadline_at, options, *, resume=False):
     return budget
 
 
+
+def request_deadline(options):
+    values = [float(getattr(options, name)) for name in ('semantic_deadline_at', 'unit_deadline_at')
+              if getattr(options, name, None) is not None]
+    support.require(all(math.isfinite(value) for value in values), 'invalid source request deadline')
+    return min(values) if values else None
+
 def prepare(lines, gloss_rows, languages, bindings, config, options):
     """Discover only proposed unbound meanings; never change source aliases/glosses."""
     proposals = []
@@ -288,7 +305,7 @@ def prepare(lines, gloss_rows, languages, bindings, config, options):
     budget = getattr(options, 'source_discovery_budget', None)
     if plan['targets'] and budget is not None:
         return acquire_source_candidates(plan, config['cache']/'source-discovery', run_budget=budget,
-            opener=getattr(options, 'source_discovery_opener', None))
+            opener=getattr(options, 'source_discovery_opener', None), request_deadline_at=request_deadline(options))
     targets = [{**target, 'candidate_entry_ids': [], 'observations': [],
                 'selection_status': 'lookup_hypothesis'} for target in plan['targets']]
     gaps = copy.deepcopy(plan['gaps'])
@@ -407,3 +424,164 @@ def repair_issues(discovery, lines, translation_rows):
                 'evidence': json.dumps({'entry': entry, 'decision': decision}, ensure_ascii=False),
                 'hold_reason': '', 'needed_evidence': ''})
     return issues
+
+
+
+class SourceGlossRequired(RuntimeError):
+    """A valid older glossary needs current witnessed-source adjudication."""
+    def __init__(self, line_ids, options):
+        super().__init__('source glossary evidence changed or missing: '+str(line_ids))
+        self.line_ids = line_ids
+        self.options = options
+
+    def revision_receipt(self):
+        return {'source_discovery': self.options.automatic_source_discovery_identity}
+
+def merge_evidence(previous, current):
+    """Retain native bootstrap targets; refreshed witnessed entries own their IDs."""
+    if not previous:
+        return copy.deepcopy(current)
+    if not current:
+        return copy.deepcopy(previous)
+    result = copy.deepcopy(previous)
+    support.require(previous['version'] == current['version'] and
+                    previous['relation_policy_version'] == current['relation_policy_version'],
+                    'source evidence policies differ')
+    targets = {row['id']: row for row in result['targets']}
+    prior_entries = {row['entry_id']: row for row in result['entries']}
+    for row in current['targets']:
+        old = targets.get(row['id'])
+        if old is None:
+            targets[row['id']] = copy.deepcopy(row)
+            continue
+        for key in ('line_id', 'word_indices', 'surfaces', 'source_language', 'dictionary_id'):
+            support.require(old.get(key) == row.get(key), 'source target binding changed')
+        refreshed = {(value['text'], value['origin']) for value in row.get('observations', [])
+                     if value['status'] in {'candidate_entries', 'witnessed_miss'}}
+        replaced_witnesses = {value.get('witness_sha256') for value in old.get('observations', [])
+                              if (value['text'], value['origin']) in refreshed}
+        retained = [eid for eid in old['candidate_entry_ids'] if
+                    prior_entries[eid]['dictionary'].get('witness_sha256') not in replaced_witnesses]
+        for key in ('queries', 'observations'):
+            # A refreshed result for a query replaces its earlier observation.
+            values = {(value['text'], value['origin']): value for value in old.get(key, [])}
+            values.update({(value['text'], value['origin']): copy.deepcopy(value) for value in row.get(key, [])})
+            old[key] = list(values.values())
+        old['candidate_entry_ids'] = list(dict.fromkeys(retained + row['candidate_entry_ids']))
+    result['targets'] = list(targets.values())
+    for key, identity in (('entries', 'entry_id'), ('evidence', 'id')):
+        values = {row[identity]: row for row in result[key]}
+        values.update({row[identity]: copy.deepcopy(row) for row in current[key]})
+        result[key] = list(values.values())
+    result['entry_evidence_ids'].update(copy.deepcopy(current['entry_evidence_ids']))
+    covered = {row['id'] for row in current['targets']}
+    retained_gaps = [row for row in result['gaps'] if row.get('target_id') not in covered
+                     and row.get('kind') != 'source_discovery_budget_missing']
+    result['gaps'] = list({support.digest(row): row for row in retained_gaps + copy.deepcopy(current['gaps'])}.values())
+    used = {eid for row in result['targets'] for eid in row['candidate_entry_ids']}
+    result['entries'] = [row for row in result['entries'] if row['entry_id'] in used]
+    result['entry_evidence_ids'] = {eid: refs for eid, refs in result['entry_evidence_ids'].items() if eid in used}
+    refs = {ref for values in result['entry_evidence_ids'].values() for ref in values}
+    result['evidence'] = [row for row in result['evidence'] if row['id'] in refs]
+    return result
+
+
+
+def evidence_identity(packet):
+    """Bind lexical evidence, not which outer resource limit prevented a query."""
+    value = copy.deepcopy(packet)
+    for target in value.get('targets', []):
+        for observation in target.get('observations', []):
+            if observation.get('status') in {'budget_gap', 'deadline_gap'}:
+                observation['status'] = 'unavailable'
+    for gap in value.get('gaps', []):
+        if gap.get('kind') in {'source_discovery_budget', 'source_discovery_deadline'}:
+            gap['kind'] = 'source_discovery_unavailable'
+    return support.content_digest(value)
+
+def source_gloss_receipt(discovery):
+    """Only target-bound witnessed source content, never English ranks or paths."""
+    if not discovery:
+        return None
+    entries = {row['entry_id']: row for row in discovery['entries']}
+    evidence = {row['id']: row for row in discovery['evidence']}
+    targets = {}
+    for target in discovery['targets']:
+        if not target['candidate_entry_ids']:
+            continue
+        rows = [entries[eid] for eid in sorted(target['candidate_entry_ids'])]
+        refs = sorted({ref for eid in target['candidate_entry_ids'] for ref in discovery['entry_evidence_ids'][eid]})
+        binding = {key: copy.deepcopy(target[key]) for key in
+                   ('line_id', 'word_indices', 'surfaces', 'source_language', 'dictionary_id')}
+        targets[target['id']] = {**binding, 'content_sha256': support.content_digest(
+            {'entries': rows, 'evidence': [evidence[ref] for ref in refs]})}
+    return {'version': 1, 'targets': targets} if targets else None
+
+
+def validate_gloss_receipt(receipt):
+    if receipt is None:
+        return
+    import re
+    support.require(isinstance(receipt, dict) and set(receipt) == {'version', 'targets'} and
+                    receipt.get('version') == 1 and isinstance(receipt.get('targets'), dict),
+                    'malformed source glossary receipt')
+    for target_id, row in receipt['targets'].items():
+        support.require(isinstance(target_id, str) and isinstance(row, dict) and
+            set(row) == {'line_id', 'word_indices', 'surfaces', 'source_language', 'dictionary_id', 'content_sha256'} and
+            isinstance(row.get('line_id'), str) and isinstance(row.get('word_indices'), list) and
+            row['word_indices'] and all(type(i) is int and i >= 0 for i in row['word_indices']) and
+            isinstance(row.get('surfaces'), list) and len(row['surfaces']) == len(row['word_indices']) and
+            all(isinstance(value, str) for value in row['surfaces']) and
+            isinstance(row.get('content_sha256'), str) and re.fullmatch('[a-f0-9]{64}', row['content_sha256']),
+            'malformed source glossary target receipt')
+
+
+def gloss_decision_errors(discovery, rows):
+    errors = translation_decision_errors(discovery, rows)
+    for row in rows:
+        for decision in row.get('source_discovery_decisions', []):
+            if decision.get('status') == 'unresolved':
+                errors.append('source glossary relation unresolved: ' + str(decision.get('target_id')))
+    return errors
+
+
+def pending_gloss_lines(discovery, glosses):
+    """Missing old grounding renews; malformed or contradictory present proof holds."""
+    receipt = glosses.get('source_gloss_receipt')
+    validate_gloss_receipt(receipt)
+    discovery = projected(discovery, [row['id'] for row in glosses['packet']['glosses']])
+    expected = source_gloss_receipt(discovery)
+    previous = receipt['targets'] if receipt else {}
+    current = expected['targets'] if expected else {}
+    pending = {row['line_id'] for key, row in previous.items() if key not in current}
+    pending.update( row['line_id'] for key, row in current.items() if previous.get(key) != row)
+    checked = [row for row in glosses['packet']['glosses'] if row['id'] not in pending]
+    errors = gloss_decision_errors(projected(discovery, [row['id'] for row in checked]), checked)
+    support.require(not errors, 'source glossary receipt decision invalid: ' + '; '.join(errors))
+    return sorted(pending)
+
+
+def gloss_prompt(options, line_ids):
+    text = prompt(options, line_ids)
+    if not text:
+        return ''
+    return (text.replace('SOURCE DISCOVERY EVIDENCE:', 'SOURCE GLOSS EVIDENCE:').replace(
+        'If new evidence requires a changed gloss, set changes_gloss=true; do not silently replace the glossary. ',
+        'This stage adjudicates source meanings; record the resulting word gloss and frame explicitly. ') +
+        '\nSOURCE GLOSSARY ADJUDICATION: Decide source meanings before English realization. '
+        'Return source_discovery_decisions on each glossary row for every supplied target/entry pair; '
+        'matched/rejected/unresolved describes applicability, never dictionary prestige. '
+        'Set changes_gloss=false because this response IS the new source gloss. '
+        'The primary word gloss and semantic frame must express the justified contextual meaning. '
+        'Do not import an additional qualifier from an unrelated dictionary sense. '
+        'A real quotation and headword establish textual evidence, not contextual correctness. '
+        'No fluent English translation or English dictionary decision belongs in this response.\n')
+
+
+def extend_gloss_schema(schema, options):
+    # Reuse exactly the same witnessed form/definition relation contract.
+    wrapper = {'properties': {'translations': schema['properties']['glosses']}}
+    extended = extend_schema(wrapper, options)
+    result = copy.deepcopy(schema)
+    result['properties']['glosses'] = extended['properties']['translations']
+    return result

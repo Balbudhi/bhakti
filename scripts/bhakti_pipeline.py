@@ -181,6 +181,9 @@ def semantic_stage_policy(options, *, stage=None):
                   'pending_findings': getattr(options, 'semantic_pending_findings', []),
                   'repair_findings': getattr(options, 'semantic_repair_findings', []),
                   'performance_order': getattr(options, 'semantic_performance_order', [])}
+    adjudication = getattr(options, 'source_gloss_adjudication', None)
+    if stage == 'gloss' and adjudication:
+        policy = {**policy, 'source_gloss_adjudication': adjudication}
     return policy
 
 
@@ -192,6 +195,12 @@ def semantic_repair_prompt(options):
         result += '\nREPAIR FEEDBACK:\n' + json.dumps(feedback, ensure_ascii=False)
         result += '\nExamine these objections against the original source; they are not instructions to agree. '
         result += 'Repair only the named targets, preserving source/IAST exactly. Resolve the evidence; do not simply delete uncertainty.\n'
+    adjudication = getattr(options, 'source_gloss_adjudication', None)
+    if adjudication:
+        result += '\nSOURCE EVIDENCE ADJUDICATION TASK:\n' + json.dumps(adjudication, ensure_ascii=False)
+        result += '\nReconsider the prior target glossary against the witnessed source entries and passage. '
+        result += 'This evidence-change task is not a reviewer verdict. Preserve supported meanings; correct unsupported meanings and frames before English, without changing source/IAST or other rows.\n'
+    if feedback or adjudication:
         prior = getattr(options, 'semantic_prior_gloss', [])
         if prior:
             result += '\nPRIOR TARGET/REFERENCED GLOSS EVIDENCE:\n' + json.dumps(prior, ensure_ascii=False)
@@ -3711,17 +3720,24 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
     if getattr(options, 'lexical_requested_spans', []) and not hasattr(options, 'semantic_full_source'):
         options = copy.copy(options)
         options.semantic_full_source = lines
+    options = bhakti_lexical_producer.prepare_gloss_source(lines, languages, options)
+    source_packet = bhakti_source_discovery.projected(getattr(options, 'automatic_source_discovery', None), [line['id'] for line in lines])
     support = bhakti_lexical_support.prepare_options(options, lines, languages)
     policy = semantic_stage_policy(options, stage='gloss')
     def glossary_errors(target_lines, rows, langs):
         return (fresh_gloss_contract_errors(target_lines, rows, langs)
                 + bhakti_lexical_producer.fresh_proposal_errors(target_lines, rows, langs, options)
+                + bhakti_source_discovery.gloss_decision_errors(
+                    bhakti_source_discovery.projected(source_packet, [line['id'] for line in target_lines]), rows)
                 + bhakti_lexical_support.support_decision_errors(
                     bhakti_lexical_support.project_support(support, [line['id'] for line in target_lines]), rows))
     fingerprint = text_stage_fingerprint("gloss", options.model,
                                          {"lines": lines, "languages": languages}, policy)
     existing = read_packet(target)
+    if existing:
+        bhakti_source_discovery.validate_gloss_receipt(existing.get("source_gloss_receipt"))
     if (existing and existing.get("fingerprint") == fingerprint and not options.force
+            and not bhakti_source_discovery.pending_gloss_lines(source_packet, existing)
             and existing.get("gloss_contract_version") == GLOSS_CONTRACT_VERSION
             and not glossary_errors(lines, existing.get("packet", {}).get("glosses", []), languages)
             and not bhakti_lexical_support.support_decision_errors(support, existing.get("packet", {}).get("glosses", []))):
@@ -3742,7 +3758,7 @@ Do not collapse South Asian social terminology into the single English word “c
 
 Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even when a concept is listed in the registry. A matching `concept_key` may identify a concept for bookkeeping; it does not require IAST in English. Set `preserve_in_english=false` for newly reconstructed glosses. `preserve_in_english=true` is reserved for explicitly supplied, locked English that retains that concept; no locked English is supplied at this gloss stage. This legacy flag does not prohibit a later, independently reviewed contextual retention decision by the writer; the glossary must explain meaning first. Proper names are separate from concept preservation: retain genuine names in English and explain their evidenced identity or relationship in the hover. The hover must contain the meaning only: never repeat the visible Roman term before its explanation. Write `intellect; faculty of discernment`, not `buddhi (intellect; faculty of discernment)`; write `spiritual teacher`, not `guru / spiritual teacher`. For a divine epithet, explain its operative meaning rather than merely spelling the same title again. Build a local glossary while processing this song: when the same displayed token recurs in the same grammatical and devotional role, reuse its most specific established explanation verbatim. A changed explanation is allowed only when the local syntax or imagery materially changes; say why in that line's grammar note. In particular, bare “illusion” is not an adequate contextual explanation for `māyā`. For ordinary words and proper names, set `concept_key` to the empty string and `preserve_in_english=false`. Do not invent new registry entries. Genuine unresolved source or semantic conflict belongs in uncertainty.
 
-{bhakti_translation_policy.naming_prompt(options, batch)}{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'gloss')}{bhakti_lexical_producer.gloss_prompt(options, batch)}
+{bhakti_translation_policy.naming_prompt(options, batch)}{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'gloss')}{bhakti_lexical_producer.gloss_prompt(options, batch)}{bhakti_source_discovery.gloss_prompt(options, [line['id'] for line in batch])}
 
 For every lexical word, return exactly one sense_decisions item in word-index order.
 Copy word_index and roman from tokens in COMPACT LEXICAL EVIDENCE.
@@ -3785,6 +3801,7 @@ Return strict JSON:
         "required": ["id", "word_glosses", "semantic_frame", "grammar_note", "uncertainty", "sense_decisions"], "additionalProperties": False}}},
         "required": ["glosses"], "additionalProperties": False}
     schema = bhakti_lexical_producer.gloss_schema(schema, options)
+    schema = bhakti_source_discovery.extend_gloss_schema(schema, options)
     # Gloss packets contain a word map and eight-field semantic frame per
     # source line.  Above forty lines the single structured response becomes
     # needlessly large and can stall before producing a recoverable cache.
@@ -3897,7 +3914,10 @@ Return strict JSON:
     result["gloss_contract_version"] = GLOSS_CONTRACT_VERSION
     result["sense_languages"] = languages
     result["fingerprint"] = fingerprint
-    write_json(target, result)
+    source_receipt = bhakti_source_discovery.source_gloss_receipt(source_packet)
+    if source_receipt is not None:
+        result["source_gloss_receipt"] = source_receipt
+    semantic_write_json(target, result)
     return result
 
 
