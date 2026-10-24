@@ -218,3 +218,47 @@ checks again measured zero player-bottom gap with uninterrupted playback.
 Mobile screenshot: `/tmp/bhakti-ui-evidence/player-dock-live.png` (local evidence).
 Remaining acceptance: confirm the intermittent symptom on the affected iPhone
 after rotation; this desktop browser cannot reproduce that OS-level condition.
+
+### Recurrence, October 24
+
+The new phone screenshot shows both playlist and player displaced, with the
+playlist tools behind the status bar. The CSS-only fix did not settle device
+acceptance. Next repair: update the shared viewport bounds from the unzoomed
+VisualViewport on resize/scroll and page restore/foreground events, falling back
+to layout height when unavailable or pinch-zoomed. Keep document scroll, audio
+and reader state untouched. Bound playlist height by the available space above
+the player and below the top safe area; all overlay anchors share those bounds.
+
+Check event-driven refresh with stale layout height, portrait/landscape return,
+visual offsets, page restoration, fallback, zoom and transient invalid values.
+Then verify actual layout/queue interaction in the in-app browser at phone,
+tablet, desktop and large widths. Desktop checks cannot certify the affected
+iPhone's compositor. No polling, guessed keyboard height or forced scrolling.
+
+Implemented measured bounds and player ResizeObserver; the service-worker shell
+advances to v39. Seven viewport-input regressions passed (previous bootstrap
+failed all seven), plus existing queue/state/keyboard checks. The browser fixture
+uses the production bootstrap/CSS with height 300, offset 120 and safe-top 44:
+both phone and desktop layouts place the player bottom at 420, the capped sheet
+at 164–320 and its toolbar fully inside. This is a deterministic input fixture,
+not an iOS emulation. Independent design/test and implementation review found no
+blocking defect.
+
+Real-app in-app-browser checks: 390×844 → 844×390 → 390×844, tablet 820×1000,
+desktop 1440×900, TV 1920×1080 and short 390×300. Settled player bottoms matched
+viewport bottoms; playlist/player joins differed by at most 0.008px. Breakpoint
+changes retain the existing reveal animation; measurements were repeated after
+it settled. Playback continued, playlist scrolling reached 2532px without moving
+the player/tools, Escape and the playlist trigger worked, and Home/search/song
+navigation preserved the dock. All 23 Rāma Rasa line seeks landed within one
+second of their rendered first-syllable start, with the player fixed at 844px.
+Local screenshot: `/tmp/bhakti-ui-evidence/viewport-repair-local.png`.
+
+The exact release snapshot (HEAD plus these UI files) passes the contract audit:
+265 songs, zero problems; public-site assembly succeeds. The shared checkout has
+unrelated ongoing song edits/intake and seven content-audit issues, excluded from
+this release. Audio-quality audit has zero errors; Python compilation and diff
+checks pass. Trim audit still reports the same six previously recorded evidence
+failures (111 checked); this patch changes no media or timing data. Physical
+iPhone confirmation remains open; normal browser checks cannot settle the
+reported intermittent compositor failure.

@@ -6,6 +6,38 @@
     || matchMedia("(display-mode: fullscreen)").matches;
   document.documentElement.classList.toggle("bhakti-standalone", standaloneDisplay);
 
+  // CSS viewport units can lag the visible viewport after iOS rotation or
+  // keyboard dismissal. All fixed overlays share measured layout coordinates.
+  const visualViewport = window.visualViewport;
+  let viewportFrame = 0;
+  const setViewportBounds = () => {
+    viewportFrame = 0;
+    const usableHeight = value => Number.isFinite(value) && value > 0;
+    const useVisual = visualViewport && Math.abs(visualViewport.scale - 1) < 0.01
+      && usableHeight(visualViewport.height);
+    const height = useVisual ? visualViewport.height
+      : usableHeight(window.innerHeight) ? window.innerHeight
+        : document.documentElement.clientHeight;
+    // Background/restore transitions can briefly report no usable dimensions.
+    // Retain the previous bounds (or the CSS fallback) until a valid event.
+    if (!usableHeight(height)) return;
+    const top = useVisual && Number.isFinite(visualViewport.offsetTop)
+      ? Math.max(0, visualViewport.offsetTop) : 0;
+    document.documentElement.style.setProperty("--app-viewport-height", `${height}px`);
+    document.documentElement.style.setProperty("--app-viewport-top", `${top}px`);
+  };
+  const scheduleViewportBounds = () => {
+    if (!viewportFrame) viewportFrame = requestAnimationFrame(setViewportBounds);
+  };
+  visualViewport?.addEventListener("resize", scheduleViewportBounds, { passive: true });
+  visualViewport?.addEventListener("scroll", scheduleViewportBounds, { passive: true });
+  window.addEventListener("resize", scheduleViewportBounds, { passive: true });
+  window.addEventListener("pageshow", scheduleViewportBounds);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") scheduleViewportBounds();
+  });
+  setViewportBounds();
+
   const Queue = window.BHAKTI_QUEUE;
   const catalogue = window.BHAKTI_SONGS || [];
   if (!Queue || !catalogue.length) return;
@@ -113,6 +145,7 @@
     const height = player.hidden ? 0 : Math.ceil(player.getBoundingClientRect().height);
     document.documentElement.style.setProperty("--app-player-height", `${height}px`);
   };
+  if ("ResizeObserver" in window) new ResizeObserver(setPlayerHeight).observe(player);
 
   const queueIsVisible = state => Boolean(state && state.mode !== "standalone");
 

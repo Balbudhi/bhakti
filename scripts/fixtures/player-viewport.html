@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Player viewport geometry regression</title>
+<link rel="stylesheet" href="../../assets/song.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<style>
+  :root { --app-player-height: 100px; --app-safe-top: 44px; }
+  #audioPlayer { height: 100px; box-sizing: border-box; }
+  .queue-sheet { animation: none; }
+  #results { position: relative; z-index: 200; white-space: pre-wrap; }
+</style>
+<pre id="results">Checking measured coordinates against real CSS…</pre>
+<section class="queue-sheet">
+  <div class="queue-sheet-tools"><button>Playlist toolbar</button></div>
+  <div class="queue-list">Scrollable playlist</div>
+</section>
+<div id="audioPlayer" class="audio-player"><button>Player control</button></div>
+<script>
+  // Deterministic geometry fixture, not an emulation of iOS/WebKit. The real
+  // app bootstrap and stylesheet must consume a visible viewport smaller than
+  // the layout viewport, including a nonzero visual offset and top safe area.
+  const measuredViewport = Object.assign(new EventTarget(), {
+    height: 300, offsetTop: 120, scale: 1,
+  });
+  Object.defineProperty(window, 'visualViewport', { value: measuredViewport });
+</script>
+<script src="../../assets/app.js"></script>
+<script>
+  requestAnimationFrame(() => {
+    const player = document.getElementById('audioPlayer').getBoundingClientRect();
+    const sheet = document.querySelector('.queue-sheet').getBoundingClientRect();
+    const toolbar = document.querySelector('.queue-sheet-tools').getBoundingClientRect();
+    const checks = {
+      'player bottom is visible bottom (420)': Math.abs(player.bottom - 420) < 1,
+      'playlist bottom meets player top': Math.abs(sheet.bottom - player.top) < 1,
+      'playlist starts below visible top + safe area (164)': sheet.top >= 163.99,
+      'constrained playlist uses 156 available pixels': Math.abs(sheet.height - 156) < 1,
+      'toolbar fits inside playlist': toolbar.top >= sheet.top && toolbar.bottom <= sheet.bottom,
+    };
+    document.getElementById('results').textContent = Object.entries(checks)
+      .map(([name, passed]) => `${passed ? 'PASS' : 'FAIL'}: ${name}`).join('\n');
+  });
+</script>
+</html>

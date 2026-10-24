@@ -1,7 +1,12 @@
 :root {
   --app-viewport-height: 100vh;
+  --app-viewport-top: 0px;
+  --app-viewport-bottom: calc(var(--app-viewport-top) + var(--app-viewport-height));
+  --app-safe-top: env(safe-area-inset-top, 0px);
   --app-player-height: 0px;
-  --queue-panel-height: min(60dvh, 720px);
+  --queue-panel-limit: 720px;
+  --queue-available-height: max(0px, calc(var(--app-viewport-height) - var(--app-player-height) - var(--app-safe-top)));
+  --queue-panel-height: min(calc(var(--app-viewport-height) * 0.6), var(--queue-panel-limit), var(--queue-available-height));
   --queue-panel-width: clamp(340px, 29vw, 460px);
   --queue-panel-shift: clamp(124px, 10vw, 196px);
 }
@@ -61,7 +66,7 @@
   padding-bottom: calc(164px + var(--app-player-height) + 24px);
 }
 
-/* Avoid the fixed-bottom attachment that can drift after rotation in iOS.
+/* Use the measured visible bottom, refreshed on viewport and lifecycle events.
    Own-height translation keeps the safe-area padding inside the viewport and
    stays independent of the page/playlist transform animations. */
 .audio-player {
@@ -71,7 +76,7 @@
 }
 @supports (translate: 0 -100%) {
   .audio-player {
-    top: var(--app-viewport-height);
+    top: var(--app-viewport-bottom);
     bottom: auto;
     translate: 0 -100%;
   }
@@ -211,7 +216,7 @@ body.queue-open .app-stage { transform: none; }
   z-index: 78;
   left: 0;
   right: 0;
-  top: calc(var(--app-viewport-height) - var(--app-player-height) - var(--queue-panel-height));
+  top: calc(var(--app-viewport-bottom) - var(--app-player-height) - var(--queue-panel-height));
   bottom: auto;
   width: 100%;
   height: var(--queue-panel-height);
@@ -384,14 +389,14 @@ body.queue-open .app-stage { transform: none; }
 
 @supports (translate: 0 -100%) {
   .app-status {
-    top: calc(var(--app-viewport-height) - var(--app-player-height) - 44px);
+    top: calc(var(--app-viewport-bottom) - var(--app-player-height) - 44px);
     bottom: auto;
     translate: 0 -100%;
   }
 }
 
 @media (max-width: 600px) {
-  :root { --queue-panel-height: min(60dvh, 560px); }
+  :root { --queue-panel-limit: 560px; }
   .queue-sheet {
     width: 100%;
     height: var(--queue-panel-height);
@@ -440,12 +445,12 @@ body.queue-open .app-stage { transform: none; }
   body.queue-open .line-roman { transform: translateX(-13px); }
   body.queue-open .line-english { transform: translateX(-4px); }
   .queue-sheet {
-    top: 0;
+    top: calc(var(--app-viewport-top) + var(--app-safe-top));
     right: 0;
     bottom: auto;
     left: auto;
     width: var(--queue-panel-width);
-    height: calc(var(--app-viewport-height) - var(--app-player-height));
+    height: var(--queue-available-height);
     border-left: 1px solid rgba(244, 234, 208, 0.16);
     animation: queue-sheet-in-right 200ms cubic-bezier(.2,.8,.2,1);
   }
@@ -464,7 +469,7 @@ body.queue-open .app-stage { transform: none; }
 }
 
 @media (min-width: 1800px) {
-  :root { --queue-panel-height: min(60dvh, 1000px); }
+  :root { --queue-panel-limit: 1000px; }
   .queue-pill { width: 52px; height: 52px; flex-basis: 52px; }
   .queue-list { width: min(980px, 100%); }
   .queue-sheet-tools { padding: 22px 26px; }

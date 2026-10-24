@@ -64,9 +64,11 @@ The current measures and breakpoints live in `assets/site.css:26-39,365-408` and
 - Keep controls in stable positions. Change their meaning/icon when the view changes rather than moving the control to another edge.
 
 The persistent player stays outside the animated page stage. Anchor it from the
-viewport height and its own rendered height; do not animate its vertical position
+measured visible viewport bounds and its own rendered height; do not animate its vertical position
 or let playlist transforms replace that anchor. Playlist and status placement use
-the same viewport edge. Preserve safe-area padding, the existing audio node and
+the same viewport edge. Refresh bounds on viewport resize/pan and page restoration;
+retain normal page magnification during pinch zoom. Cap the playlist below the top
+safe area and above the player. Preserve safe-area padding, the existing audio node and
 reading position through rotation; do not correct viewport bugs with guessed
 keyboard offsets or forced scrolling. Verify portrait → landscape → portrait
 both during playback and with the playlist open.
