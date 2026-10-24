@@ -174,3 +174,39 @@ These evidence repairs remain separate from the UI release. Physical-phone touch
 and OS reduced-motion behavior were not available to this browser; input guards,
 pointer sequences and reduced-motion rules were checked without claiming device
 emulation.
+
+## Player floating after phone rotation
+
+User evidence: installed-iPhone screenshot shows the player across the middle
+of scrolling lyrics; rotation is the suspected trigger. The existing player is
+a body-level sibling of the animated stage, with no transformed ancestor.
+The defect cannot be reproduced in the available desktop in-app browser.
+WebKit reports 301172 and 218983 describe related fixed-bottom drift and
+rotation/keyboard viewport failures, but do not establish this device's cause.
+
+Current step: replace bottom-edge attachment with a top anchor at the dynamic
+viewport height, translated by the player's own height. Keep the same DOM/audio
+node and safe-area padding; no scroll resets, guessed keyboard offsets, polling
+or VisualViewport compensation. The playlist and status use the same viewport
+height, preserving existing reveal transforms. Remove unused positional easing
+from the player so rotation updates immediately.
+
+Verify player bottom == viewport bottom and playlist bottom == player top after
+portrait/landscape cycles, scrolling in both directions, queue open/close, search
+focus/blur and page navigation, at phone/tablet/desktop/large-screen sizes. Check
+ongoing audio and hit targets. These checks establish normal-layout compatibility;
+the affected iPhone must confirm the intermittent WebKit symptom is resolved.
+
+Verified candidate: independent CSS review passed, including a feature-query
+fallback for browsers without individual `translate`. The in-app browser measured
+a zero-pixel player-bottom gap through repeated 390×844 ↔ 844×390 changes, then
+820×1000, 1440×900 and 1920×1080. Open-playlist alignment stayed within 0.008px;
+audio continued. Search focus/blur, library/song navigation, action status (44px
+above player), scroll in both directions, open/close and all 39 lyric seeks on
+Aisā Pyār Bahā De Maiyā passed. This is normal-layout verification, not reproduction
+of the intermittent iOS bug.
+
+Contract: 265 ready/no problems. Audio quality: no errors. Python compilation,
+whitespace and player/queue JS checks pass. The trim audit retains the same six
+legacy-evidence failures previously recorded (104 checked); no audio/content
+changes are part of this patch.

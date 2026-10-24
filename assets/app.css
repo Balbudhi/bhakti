@@ -1,8 +1,13 @@
 :root {
+  --app-viewport-height: 100vh;
   --app-player-height: 0px;
   --queue-panel-height: min(60dvh, 720px);
   --queue-panel-width: clamp(340px, 29vw, 460px);
   --queue-panel-shift: clamp(124px, 10vw, 196px);
+}
+
+@supports (height: 100dvh) {
+  :root { --app-viewport-height: 100dvh; }
 }
 
 [hidden] { display: none !important; }
@@ -56,12 +61,24 @@
   padding-bottom: calc(164px + var(--app-player-height) + 24px);
 }
 
-.audio-player { z-index: 80; bottom: 0; }
-.app-stage,
-.audio-player { transition: transform 200ms cubic-bezier(.2,.8,.2,1), bottom 200ms cubic-bezier(.2,.8,.2,1); }
+/* Avoid the fixed-bottom attachment that can drift after rotation in iOS.
+   Own-height translation keeps the safe-area padding inside the viewport and
+   stays independent of the page/playlist transform animations. */
+.audio-player {
+  z-index: 80;
+  bottom: 0;
+  transition: none;
+}
+@supports (translate: 0 -100%) {
+  .audio-player {
+    top: var(--app-viewport-height);
+    bottom: auto;
+    translate: 0 -100%;
+  }
+}
+.app-stage { transition: transform 200ms cubic-bezier(.2,.8,.2,1); }
 body.queue-open { overflow: hidden; }
 body.queue-open .app-stage { transform: none; }
-body.queue-open .audio-player { bottom: 0; }
 
 .app-stage {
   position: relative;
@@ -194,7 +211,8 @@ body.queue-open .audio-player { bottom: 0; }
   z-index: 78;
   left: 0;
   right: 0;
-  bottom: var(--app-player-height);
+  top: calc(var(--app-viewport-height) - var(--app-player-height) - var(--queue-panel-height));
+  bottom: auto;
   width: 100%;
   height: var(--queue-panel-height);
   display: grid;
@@ -364,6 +382,14 @@ body.queue-open .audio-player { bottom: 0; }
   pointer-events: none;
 }
 
+@supports (translate: 0 -100%) {
+  .app-status {
+    top: calc(var(--app-viewport-height) - var(--app-player-height) - 44px);
+    bottom: auto;
+    translate: 0 -100%;
+  }
+}
+
 @media (max-width: 600px) {
   :root { --queue-panel-height: min(60dvh, 560px); }
   .queue-sheet {
@@ -416,10 +442,10 @@ body.queue-open .audio-player { bottom: 0; }
   .queue-sheet {
     top: 0;
     right: 0;
-    bottom: var(--app-player-height);
+    bottom: auto;
     left: auto;
     width: var(--queue-panel-width);
-    height: auto;
+    height: calc(var(--app-viewport-height) - var(--app-player-height));
     border-left: 1px solid rgba(244, 234, 208, 0.16);
     animation: queue-sheet-in-right 200ms cubic-bezier(.2,.8,.2,1);
   }
