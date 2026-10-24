@@ -468,12 +468,7 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
             finding_snapshot=snapshot, allow_partial=snapshot is not None)
         return {'reader': copy.deepcopy(reader), 'authorization': receipt, 'post_review': None}
     target_lines = [line for line in lines if line['id'] in targets]
-    lexical_indices: dict[str, set[int]] = {}
-    for issue in issues:
-        if issue['kind'] not in ('gloss_sense', 'frame_relation'): continue
-        for ref in issue['references']:
-            if ref['line_id'] in issue['target_line_ids']:
-                lexical_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
+    note_ids, english_ids, lexical_indices = pipeline.bhakti_semantic_repair.issue_permissions(issues)
     languages = reader.get('SONG_META', {}).get('languages', [])
     local = copy.copy(options)
     local.force = False
@@ -493,6 +488,8 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
         'dependency_fingerprint': dependency_fingerprint, 'original_reader': copy.deepcopy(reader),
         'pre_review': copy.deepcopy(pre_review), 'target_line_ids': [line['id'] for line in target_lines],
         'gloss_word_indices': {key: sorted(indices) for key, indices in lexical_indices.items()}}
+    if note_ids:
+        local.semantic_initial_repair.update(version=2, grammar_note_line_ids=note_ids, english_line_ids=english_ids)
     local.unit_deadline_at = min(float(deadline_at), float(getattr(options, 'unit_deadline_at', deadline_at)))
     local.semantic_deadline_at = min(local.unit_deadline_at,
         float(getattr(options, 'semantic_deadline_at', deadline_at)))
@@ -555,10 +552,13 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
         raise RuntimeError('reader review route receipt differs from accepted candidate')
     candidate = copy.deepcopy(reader)
     for row in glosses['packet']['glosses']:
+        if row['id'] in note_ids:
+            candidate['SONG_LINES'][row['id']]['grammarNote'] = row['grammar_note']
         for index in lexical_indices.get(row['id'], set()):
             candidate['SONG_LINES'][row['id']]['words'][index]['gloss'] = row['word_glosses'][index]['gloss']
     for row in translations['packet']['translations']:
-        candidate['SONG_LINES'][row['id']]['english'] = pipeline.segment_english(row['segments'], row['literal_english'])
+        if row['id'] in english_ids:
+            candidate['SONG_LINES'][row['id']]['english'] = pipeline.segment_english(row['segments'], row['literal_english'])
     post = {'reader_digest': prepare.json_digest(candidate), 'dependency_fingerprint': dependency_fingerprint,
         'attempt_id': producer['attempt_id'], **pipeline.review_task_identity(),
         'reviews': [row['independent_review'] for row in translations['packet']['translations']]}

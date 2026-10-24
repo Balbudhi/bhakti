@@ -363,13 +363,26 @@ def issue_errors(lines, glosses, issues) -> list[str]:
             if not isinstance(ref, dict):
                 errors.append('invalid reference'); continue
             line_id = ref.get('line_id'); indices = ref.get('word_indices'); quote = ref.get('source_quote')
-            if (not isinstance(line_id, str) or line_id not in sources or ref.get('domain') != 'word_glosses'
+            if (not isinstance(line_id, str) or line_id not in sources or ref.get('domain') not in {'word_glosses', 'grammar_note'}
                     or not isinstance(indices, list) or not indices
                     or any(type(index) is not int or index < 0 or index >= len(words.get(line_id, [])) for index in indices)
                     or len(set(indices)) != len(indices)
                     or not isinstance(quote, str) or not quote.strip()
                     or quote not in str(sources.get(line_id, {}).get('source_text', ''))):
                 errors.append('invalid per-line word_glosses reference or source quotation')
+        note_refs = [ref for ref in refs if isinstance(ref, dict) and ref.get('domain') == 'grammar_note']
+        if note_refs:
+            note_targets = {ref.get('line_id') for ref in note_refs if isinstance(ref.get('line_id'), str)}
+            valid_targets = targets if isinstance(targets, list) and all(isinstance(t, str) for t in targets) else []
+            if issue.get('kind') != 'frame_relation' or note_targets != set(valid_targets):
+                errors.append('grammar note issue requires exactly its target note references')
+            if any(not isinstance(ref.get('note_quote'), str) or not ref['note_quote'].strip() for ref in note_refs):
+                errors.append('grammar note reference requires the complete reviewed note')
+            if any(isinstance(ref, dict) and ref.get('domain') == 'word_glosses'
+                   and ref.get('line_id') in valid_targets for ref in refs):
+                errors.append('note and word repairs require separate issues')
+        if any(isinstance(ref, dict) and ref.get('domain') != 'grammar_note' and ref.get('note_quote') for ref in refs):
+            errors.append('word reference cannot carry note authorization')
         if issue.get('kind') == 'unresolved_evidence':
             if issue.get('hold_reason') not in HOLD_REASONS or not str(issue.get('needed_evidence', '')).strip():
                 errors.append('unresolved evidence requires a typed reason and needed evidence')
@@ -378,11 +391,70 @@ def issue_errors(lines, glosses, issues) -> list[str]:
     return errors
 
 
+
+def is_note_issue(issue):
+    return any(ref.get('domain') == 'grammar_note' for ref in issue.get('references', []) if isinstance(ref, dict))
+
+
+def note_reference_errors(issues, reviewed_gloss_rows):
+    """Bind new observations to the note their reviewer actually received.
+
+    Retained obligations use their originating review, never a revised glossary.
+    Structural/source checks belong to issue_errors and run alongside this check.
+    """
+    notes = {row['id']: row.get('grammar_note', '') for row in reviewed_gloss_rows}
+    errors = []
+    for issue in issues if isinstance(issues, list) else []:
+        if not isinstance(issue, dict):
+            continue
+        for ref in issue.get('references', []) if isinstance(issue.get('references'), list) else []:
+            if isinstance(ref, dict) and ref.get('domain') == 'grammar_note':
+                if ref.get('note_quote') != notes.get(ref.get('line_id')):
+                    errors.append('grammar note quotation differs from reviewed note')
+    return errors
+
+
+def issue_permissions(issues):
+    """Derive field rights only after source-bound issues have been authenticated."""
+    notes, english, indices = set(), set(), {}
+    for issue in issues:
+        if is_note_issue(issue):
+            notes.update(issue['target_line_ids'])
+            continue
+        if issue['kind'] in {'english_realization', 'english_mapping', 'gloss_sense', 'frame_relation'}:
+            english.update(issue['target_line_ids'])
+        if issue['kind'] in {'gloss_sense', 'frame_relation'}:
+            for ref in issue['references']:
+                if ref['line_id'] in issue['target_line_ids']:
+                    indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
+    return sorted(notes), sorted(english), {key: sorted(value) for key, value in indices.items()}
+
+
+def initial_translation_constraints(options):
+    initial = getattr(options, 'semantic_initial_repair', None)
+    if initial is None or initial.get('version') == 1:
+        return []
+    import bhakti_library_pass as library
+    _, _, rows = library.reader_evidence(initial['original_reader'])
+    return [{key: copy.deepcopy(row[key]) for key in ('id', 'literal_english', 'segments')}
+            for row in rows if row['id'] in initial['target_line_ids']
+            and row['id'] not in initial['english_line_ids']]
+
+
+def initial_translation_scope_errors(rows, options):
+    expected = {row['id']: row for row in initial_translation_constraints(options)}
+    actual = {row.get('id'): row for row in rows if isinstance(row, dict)}
+    return [line_id + ': original-reader English/segments exceed authenticated repair scope'
+            for line_id, old in expected.items()
+            if line_id not in actual or any(actual[line_id].get(key) != old[key]
+                                           for key in ('literal_english', 'segments'))]
+
+
 def issue_schema() -> dict:
     string = {'type': 'string'}
     reference = {'type': 'object', 'properties': {
-        'line_id': string, 'domain': {'type': 'string', 'enum': ['word_glosses']},
-        'word_indices': {'type': 'array', 'items': {'type': 'integer'}}, 'source_quote': string},
+        'line_id': string, 'domain': {'type': 'string', 'enum': ['word_glosses', 'grammar_note']},
+        'word_indices': {'type': 'array', 'items': {'type': 'integer'}}, 'source_quote': string, 'note_quote': string},
         'required': ['line_id', 'domain', 'word_indices', 'source_quote'], 'additionalProperties': False}
     fields = {'kind': {'type': 'string', 'enum': sorted(KINDS)},
               'target_line_ids': {'type': 'array', 'items': string},
@@ -396,6 +468,11 @@ REVIEW_GUIDANCE = '''Return issues=[] only when no repair or evidence hold remai
 return a typed issue: gloss_sense, frame_relation, english_realization, english_mapping,
 or unresolved_evidence. Name replacement target_line_ids and references as
 {line_id,domain:"word_glosses",word_indices:[...],source_quote:"exact source substring"}.
+For a concrete displayed grammar-note defect, use kind frame_relation and references
+{line_id,domain:"grammar_note",word_indices:[...],source_quote:"exact source substring",note_quote:"complete exact grammar note under review"}.
+Include a note reference for every target and no note references to non-target rows.
+Do not mix note and word_glosses references on a target; emit separate issues for
+separate English/word defects. A note finding authorizes only its note correction.
 Indices refer ONLY to that named line's word_glosses array, not source whitespace.
 Explain the source grammar/context contradiction in explanation and evidence; do
 not prescribe a preferred English rewrite. Dictionary candidates are possible
@@ -852,6 +929,7 @@ def routed_translation(pipeline, song_dir, audited, glosses, job, options):
             result.get('packet', {}).get('translations', []),
             accountability_sources=getattr(options, 'semantic_full_source', []) +
                 [row['source'] for row in getattr(options, 'semantic_context_evidence', [])])
+        errors += initial_translation_scope_errors(result.get('packet', {}).get('translations', []), options)
         errors += derived_support_errors(pipeline, song_dir, audited, glosses, result, options)
         return [{'kind': 'english_contract', 'detail': error} for error in errors]
     seed = getattr(options, 'semantic_seed_translation', None)
@@ -863,6 +941,7 @@ def routed_translation(pipeline, song_dir, audited, glosses, job, options):
         if not candidate_structure_valid(pipeline, lines, glosses['packet']['glosses'], rows):
             raise RuntimeError('review-only writer structure changed')
         errors = derived_support_errors(pipeline, song_dir, audited, glosses, seed, options)
+        errors += initial_translation_scope_errors(rows, options)
         if errors:
             raise RuntimeError('review-only writer evidence changed: ' + str(errors[:3]))
         assert_baseline(getattr(options, 'semantic_baseline', None), rows)
@@ -929,9 +1008,11 @@ def initial_repair_context(pipeline, options, lines, languages):
         return None
     import bhakti_library_pass as library
     import bhakti_candidate_guard as guard
-    if (not isinstance(value, dict) or value.get('version') != 1
-            or set(value) != {'version', 'reader_digest', 'dependency_fingerprint',
-                              'original_reader', 'pre_review', 'target_line_ids', 'gloss_word_indices'}):
+    fields = {'version', 'reader_digest', 'dependency_fingerprint', 'original_reader',
+              'pre_review', 'target_line_ids', 'gloss_word_indices'}
+    if isinstance(value, dict) and value.get('version') == 2:
+        fields |= {'grammar_note_line_ids', 'english_line_ids'}
+    if (not isinstance(value, dict) or value.get('version') not in (1, 2) or set(value) != fields):
         raise RuntimeError('invalid initial reader repair context')
     reader, pre = value['original_reader'], value['pre_review']
     original_lines, original_glosses, _ = library.reader_evidence(reader)
@@ -964,13 +1045,12 @@ def initial_repair_context(pipeline, options, lines, languages):
         raise RuntimeError('initial reader repair requires confirmed repairable issues')
     targets = {target for issue in issues for target in issue['target_line_ids']}
     expected_lines = [line for line in original_lines if line['id'] in targets]
-    expected_indices = {}
-    for issue in issues:
-        if issue['kind'] in {'gloss_sense', 'frame_relation'}:
-            for ref in issue['references']:
-                if ref['line_id'] in issue['target_line_ids']:
-                    expected_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
-    expected_indices = {key: sorted(indices) for key, indices in expected_indices.items()}
+    note_ids, english_ids, expected_indices = issue_permissions(issues)
+    if value['version'] == 1 and note_ids:
+        raise RuntimeError('legacy repair context cannot authorize grammar notes')
+    if value['version'] == 2 and (value['grammar_note_line_ids'] != note_ids
+                                or value['english_line_ids'] != english_ids):
+        raise RuntimeError('initial reader field permissions differ from authenticated findings')
     if (lines != expected_lines or value['target_line_ids'] != [line['id'] for line in expected_lines]
             or value['gloss_word_indices'] != expected_indices
             or getattr(options, 'semantic_full_source', original_lines) != original_lines):
@@ -1003,7 +1083,8 @@ def project_initial_gloss(glosses, options):
                 item['gloss'] = word['gloss']
             projected.append(item)
         row['word_glosses'] = projected
-        row['grammar_note'] = old[row['id']].get('grammarNote', '')
+        if row['id'] not in initial.get('grammar_note_line_ids', []):
+            row['grammar_note'] = old[row['id']].get('grammarNote', '')
     return result
 
 
@@ -1035,6 +1116,11 @@ def outside_initial_scope(issues, options):
     outside = []
     for issue in issues:
         if set(issue['target_line_ids']) - set(initial['target_line_ids']):
+            outside.append(issue)
+        elif is_note_issue(issue):
+            if set(issue['target_line_ids']) - set(initial.get('grammar_note_line_ids', [])):
+                outside.append(issue)
+        elif initial.get('version') == 2 and set(issue['target_line_ids']) - set(initial['english_line_ids']):
             outside.append(issue)
         elif issue['kind'] in {'gloss_sense', 'frame_relation'}:
             for ref in issue['references']:
@@ -1316,6 +1402,7 @@ def complete(pipeline, song_dir, audited, job, options):
             require_acceptance(pipeline, packet_dir, glosses, translations, audited=audited, accepted_state=state)
             errors = scoped_gloss_contract_errors(pipeline, lines, glosses['packet']['glosses'], languages, options)
             errors += pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], translations['packet']['translations'], **pipeline.translation_packet_contract_kwargs(lines, translations, local, performance_order=order))
+            errors += initial_translation_scope_errors(translations['packet']['translations'], options)
             errors += derived_support_errors(pipeline, song_dir, audited, glosses, translations, options)
             if errors: raise RuntimeError('accepted semantic cache violates contract: ' + str(errors[:3]))
             pipeline.semantic_write_json(state_path, state)

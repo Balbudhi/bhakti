@@ -12,7 +12,7 @@ from collections import Counter
 import json
 from pathlib import Path
 
-from bhakti_semantic_repair import atomic_write, digest, issue_errors
+from bhakti_semantic_repair import atomic_write, digest, issue_errors, note_reference_errors
 
 VERSION = 1
 _FIDELITY = ('passes', 'agency_preserved', 'imagery_preserved', 'all_meaning_accounted_for')
@@ -100,6 +100,7 @@ def _classify_rows(artifact, *, lines, glosses, reader_digest, dependency_finger
             continue
         try:
             row_errors.extend(issue_errors(lines, glosses, issues))
+            row_errors.extend(note_reference_errors(issues, glosses))
         except (TypeError, KeyError):
             # The shared validator assumes provider-schema scalar/container types.
             # A damaged sibling row is a contract error, not loss of other evidence.

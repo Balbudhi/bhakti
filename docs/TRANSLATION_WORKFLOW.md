@@ -80,6 +80,16 @@ old writer explanations. Owner English remains exact. The new contract has passe
 caller tests and independent code review; its real translation quality remains
 subject to the bounded three-passage comparison.
 
+Review task 5 separates a displayed grammar-note defect from an English or
+word-gloss defect. A note finding must quote the actual note and identify the
+native words supporting the correction. It permits changing that note only;
+the existing English and clickable segments remain exact unless a separate
+source-supported finding authorizes their repair. Correcting English cannot
+silently clear an unchanged erroneous note. Existing task-4 writing can receive
+the new review without another glossary or writing request. This behavior has
+passed actual caller, saved-state and owner-protection tests; it does not certify
+the quality of an unreviewed model translation.
+
 ## Bounded intake and boundary recovery
 
 The ordinary `bhakti_pipeline.py` intake command now initializes one shared run

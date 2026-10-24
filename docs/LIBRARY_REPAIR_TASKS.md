@@ -49,6 +49,25 @@ its saved responses before any continuation. Confirmed tracked spending is
 $3.812688375, with the two earlier unknown reservations unchanged. These results
 do not qualify translation quality or complete the library repair.
 
+The discovered-entry binding defect is fixed: dynamically retrieved entries now
+pass the same exact language/line/native-span admission as curated entries,
+without treating a rejected alternative as a selected sense. Real retained Hindi
+and Punjabi packets and negative binding controls pass. A subsequent continuation
+made no requests because the coordinator retained the original local-error block;
+the run and its deadline remain terminal, with no renewed allowance. The original
+Tamil failure also remains intact. Its proposed request correction distinguishes
+an actual entry applicability decision from a witnessed dictionary miss.
+
+Review task 5 is integrated: authenticated grammar-note findings authorize only
+note changes, with separate rights for English and word-gloss repairs. Exact
+existing English, clickable segments and original source evidence remain locked
+outside those rights. Task-4 writing can receive review-only renewal. The joined
+166 focused tests pass, including the real discovered-entry packets and actual
+repair/resume callers; compilation and whitespace checks pass. Next: finish the
+dictionary-miss request correction and qualify the resulting complete writer and
+reviewer on actual output. No full-library repair or further public content
+change is claimed.
+
 The reviewer now retains the failed excerpt's original neighboring lines. One
 bounded review of the unchanged paid draft has finished at
 `/tmp/bhakti-saved-writer-review/actual-run/`: one parsed call, $0.070053,

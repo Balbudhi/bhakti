@@ -62,9 +62,9 @@ LONG_MERGE_VERSION = 8
 LONG_TRANSCRIPT_CONTRACT_VERSION = 4
 GLOSS_CONTRACT_VERSION = 6
 TRANSLATION_INPUT_VERSION = 9
-REVIEW_TASK_VERSION = 4
+REVIEW_TASK_VERSION = 5
 # Exact older task shapes supported for evidence reuse; absence means task0.
-PRIOR_REVIEW_TASK_VERSIONS = (0, 1, 2, 3)
+PRIOR_REVIEW_TASK_VERSIONS = (0, 1, 2, 3, 4)
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
@@ -4471,6 +4471,15 @@ LOCKED HUMAN TRANSLATION (or none):
 
 
 def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace, *, candidate_only: bool = False, defer_review: bool = False) -> dict[str, Any]:
+    # The coordinator narrows the writer baseline to target rows. Authenticate
+    # findings against the full original reader without sending that partial map
+    # to its full-population guard; the original writer baseline remains enforced
+    # below, and the library/coordinator retain the full owner-baseline gates.
+    scope_options = copy.copy(options)
+    scope_options.semantic_baseline = None
+    bhakti_semantic_repair.initial_repair_context(
+        sys.modules[__name__], scope_options, audited['packet'].get('verified_lines', []),
+        job.get('languages', audited['packet'].get('metadata', {}).get('languages')))
     options = bhakti_translation_policy.prepare_naming_options(options, audited['packet'].get('verified_lines', []),
         job.get('languages', audited['packet'].get('metadata', {}).get('languages')), source_slug=job.get('slug'))
     options, glosses = bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
@@ -4511,6 +4520,9 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
             getattr(options, 'automatic_source_discovery', None), existing.get('packet', {}).get('translations', [])))
         if errors:
             raise RuntimeError(f"cached translation violates fresh contract: {errors[:3]}")
+        scope_errors = bhakti_semantic_repair.initial_translation_scope_errors(existing['packet']['translations'], options)
+        if scope_errors:
+            raise RuntimeError(str(scope_errors))
         if existing.get('review_task_version', 0) == REVIEW_TASK_VERSION:
             return existing
         candidate = copy.deepcopy(existing)
@@ -4550,6 +4562,9 @@ For each line, reason in this order before choosing the final English:
 6. Translate ordinary words and philosophical concepts into precise English, using a short contextual phrase even for registry-listed concepts. A `concept_key` is bookkeeping, not an instruction to leave the term untranslated. When every considered English word, phrase or transparent compound would consequentially distort the passage, retaining the source term is permitted with an understandable clickable gloss. Record the best English paraphrase and its specific loss in `choice_note`, and in a `retained_term` wording decision when lexical support targets it. A legacy `preserve_in_english=true` flag alone does not justify retention. Existing locked English remains exact. Retain genuine proper names, whose clickable gloss must explain their evidenced identity or relationship. The sense used in every English segment must match the chosen primary meaning at its linked word indices, including compounds and inflections; supported alternatives remain separately explained in grammar notes.
 
 {bhakti_translation_policy.naming_prompt(options, batch)}{bhakti_translation_policy.guidance(batch, languages=languages, context_lines=getattr(options, "semantic_full_source", lines), performance_order=getattr(options, "semantic_performance_order", audited["packet"].get("performance_order", [])))}{bhakti_lexical_support.prompt(support, [line['id'] for line in batch], 'translation')}{bhakti_lexical_producer.diagnostics_prompt(options)}{bhakti_source_discovery.prompt(options, [line['id'] for line in batch])}
+
+Exact original-reader field locks (copy literal_english AND segments without any change for these rows):
+{json.dumps([row for row in bhakti_semantic_repair.initial_translation_constraints(options) if row['id'] in {line['id'] for line in batch}], ensure_ascii=False)}
 
 For each line, return plain literal English plus ordered display segments. Read adjacent lines as a continuous utterance before deciding syntax, punctuation, ellipsis, pronouns, or repeated words; a line may be a deliberate grammatical continuation. Each segment may reference the exact word indices which support it; punctuation or necessary English function-word segments can use an empty index list. Every source word index must appear in at least one segment. Map particles, postpositions, tense/aspect, negation, modality, and honorifics to the English phrase they help create rather than leaving their source index uncovered.
 
@@ -4760,6 +4775,9 @@ Return strict JSON:
     candidate_path = target.parent / 'translation-candidate.json'
     semantic_write_json(candidate_path, result)
     bhakti_semantic_repair.assert_baseline(getattr(options, 'semantic_baseline', None), result['packet']['translations'])
+    scope_errors = bhakti_semantic_repair.initial_translation_scope_errors(result['packet']['translations'], options)
+    if scope_errors:
+        stage_quality_failure(options, str(scope_errors))
     accounting_errors = bhakti_word_accountability.writer_errors(lines, result['packet']['translations'],
         segment_english, getattr(options, 'semantic_full_source', []) +
         [row['source'] for row in getattr(options, 'semantic_context_evidence', [])])
@@ -4930,6 +4948,7 @@ def translation_review_contract_errors(lines, gloss_rows, translation_rows, *, r
             errors.append('review requires explicit boolean judgments')
         issues = review.get('issues')
         errors += bhakti_semantic_repair.issue_errors(lines, gloss_rows, issues)
+        errors += bhakti_semantic_repair.note_reference_errors(issues, gloss_rows)
         if not isinstance(issues, list):
             continue
         if review.get('passes') is True and issues:

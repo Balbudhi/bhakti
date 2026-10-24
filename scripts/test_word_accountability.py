@@ -304,6 +304,24 @@ class WordAccountabilityTests(unittest.TestCase):
         count=len(self.calls);self.assertEqual(self.complete(),result);self.assertEqual(len(self.calls),count)
         self.assertEqual(previous,frozen)
 
+    def test_accepted_task4_refreshes_only_review_for_grammar_note_contract(self):
+        with patch.object(pipeline, 'REVIEW_TASK_VERSION', 4):
+            previous = self.complete()
+        self.assertEqual(self.sequence(), ['bhakti_word_glosses', 'bhakti_literal_translation', 'bhakti_translation_review'])
+        frozen = copy.deepcopy(previous)
+        old_writer = semantic.writer_rows(previous[1]['packet']['translations'])
+        self.assertTrue(all(row['word_support'] for row in old_writer))
+        self.calls = []
+        result = self.complete()
+        self.assertEqual(self.sequence(), ['bhakti_translation_review'])
+        self.assertEqual(result[0]['packet'], previous[0]['packet'])
+        self.assertEqual(semantic.writer_rows(result[1]['packet']['translations']), old_writer)
+        self.assertEqual(result[1]['review_task_version'], 5)
+        self.assertEqual(previous, frozen)
+        count = len(self.calls)
+        self.assertEqual(self.complete(), result)
+        self.assertEqual(len(self.calls), count)
+
     def test_medium_writer_uses_existing_bounded_children_without_extra_stages(self):
         source=self.lines[0];gloss=self.glosses()[0];draft=self.writer()[0]
         lines=[];glosses=[];rows=[]

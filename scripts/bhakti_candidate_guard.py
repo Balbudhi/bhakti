@@ -1,7 +1,7 @@
 """Authorize narrowly evidenced semantic changes; never certify linguistic truth by hashes."""
 from __future__ import annotations
 
-from bhakti_semantic_repair import digest, issue_errors
+from bhakti_semantic_repair import digest, issue_errors, is_note_issue, note_reference_errors
 from editorial_baselines import plain_english
 import bhakti_review_findings as finding_store
 import source_word_map
@@ -106,6 +106,9 @@ def _finding_receipt(before_reader, after_reader, changes, snapshot, pre, post, 
         issue = finding.get('issue', {}); disposition = dispositions.get(finding['finding_id'])
         targets = issue.get('target_line_ids', [])
         altered = bool(targets) and all(target in changes for target in targets)
+        if is_note_issue(issue):
+            altered = altered and all(before_reader['SONG_LINES'][target].get('grammarNote', '') !=
+                                      after_reader['SONG_LINES'][target].get('grammarNote', '') for target in targets)
         if issue.get('kind') == 'gloss_sense':
             altered = altered and any(
                 before_reader['SONG_LINES'][ref['line_id']]['words'][index]['gloss'] !=
@@ -161,6 +164,8 @@ def authorize_semantic_candidate(before_reader, after_reader, *, source_lines, g
                 or sources[line_id].get('roman') != line.get('roman')
                 or any(sources[line_id].get(k) != line.get(k) for k in ('sourceWords', 'sourceLanguage'))):
             raise ValueError(f'{line_id}: source evidence differs from original')
+        if glosses[line_id].get('grammar_note', '') != line.get('grammarNote', ''):
+            raise ValueError(f'{line_id}: grammar note evidence differs from original')
         words = line.get('words'); evidence = glosses[line_id].get('word_glosses')
         if not isinstance(words, list) or not isinstance(evidence, list) or len(words) != len(evidence):
             raise ValueError(f'{line_id}: gloss population differs')
@@ -190,9 +195,9 @@ def authorize_semantic_candidate(before_reader, after_reader, *, source_lines, g
             _validate_quoted_indices(source_lines, gloss_rows, issue)
             issues.append(issue)
             for target in issue['target_line_ids']:
-                allowed.setdefault(target, set()).update(_FIELDS[issue['kind']])
+                allowed.setdefault(target, set()).update({'grammarNote'} if is_note_issue(issue) else _FIELDS[issue['kind']])
                 failed.add(target)
-            if issue['kind'] in ('gloss_sense', 'frame_relation'):
+            if issue['kind'] in ('gloss_sense', 'frame_relation') and not is_note_issue(issue):
                 for ref in issue['references']:
                     if ref['line_id'] in issue['target_line_ids']:
                         allowed_gloss_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
@@ -208,17 +213,19 @@ def authorize_semantic_candidate(before_reader, after_reader, *, source_lines, g
             reported = row.get('issues')
             if not isinstance(reported, list) or not reported:
                 raise ValueError(f'{line_id}: unconfirmed pre-review failure')
-            if issue_errors(source_lines, gloss_rows, reported):
+            if issue_errors(source_lines, gloss_rows, reported) or note_reference_errors(reported, gloss_rows):
                 raise ValueError(f'{line_id}: invalid source-linked issues')
             for issue in reported:
                 if issue['kind'] not in _FIELDS:
                     raise ValueError(f'{line_id}: unresolved evidence')
                 if line_id not in issue['target_line_ids']:
                     raise ValueError(f'{line_id}: issue does not explain failed row')
+                if is_note_issue(issue):
+                    _validate_quoted_indices(source_lines, gloss_rows, issue)
                 for target in issue['target_line_ids']:
-                    allowed.setdefault(target, set()).update(_FIELDS[issue['kind']])
+                    allowed.setdefault(target, set()).update({'grammarNote'} if is_note_issue(issue) else _FIELDS[issue['kind']])
                     failed.add(target)
-                if issue['kind'] in ('gloss_sense', 'frame_relation'):
+                if issue['kind'] in ('gloss_sense', 'frame_relation') and not is_note_issue(issue):
                     for ref in issue['references']:
                         if ref['line_id'] in issue['target_line_ids']:
                             allowed_gloss_indices.setdefault(ref['line_id'], set()).update(ref['word_indices'])
@@ -247,6 +254,10 @@ def authorize_semantic_candidate(before_reader, after_reader, *, source_lines, g
     if snapshot is not None:
         return _finding_receipt(before_reader, after_reader, changes, snapshot,
             pre_review, post_review, dependency_fingerprint, allow_partial)
+    for issue in issues:
+        if is_note_issue(issue) and any(before[target].get('grammarNote', '') == after[target].get('grammarNote', '')
+                                       for target in issue['target_line_ids']):
+            raise ValueError('grammar note finding remains unchanged')
     if failed or changes:
         _envelope(post_review, after_reader, dependency_fingerprint, 'post-review')
         if pre_review['attempt_id'] == post_review['attempt_id']:
