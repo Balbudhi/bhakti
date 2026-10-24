@@ -90,6 +90,14 @@ the new review without another glossary or writing request. This behavior has
 passed actual caller, saved-state and owner-protection tests; it does not certify
 the quality of an unreviewed model translation.
 
+Source-relation policy 4 lists the exact supplied target/entry pairs in the
+prompt and restricts the response schema to those pairs. A dictionary miss
+requires no applicability decision; it remains visible as lookup evidence.
+Unresolved meaning still requires an explicit hold. Gloss and writer schemas
+are projected to each actual child batch, so a long song does not send all its
+dictionary choices in every response schema. Existing failed responses remain
+unchanged and are not made acceptable by deleting uncertainty.
+
 ## Bounded intake and boundary recovery
 
 The ordinary `bhakti_pipeline.py` intake command now initializes one shared run

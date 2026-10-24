@@ -1,0 +1,1238 @@
+{
+  "provenance": {
+    "request_sha256": "f3830d6e56fb2ce29be0787a98f5e341dcfb1d27023f25e17362e41abc48dbe2",
+    "response_sha256": "b2968326252d5e6b042946eb6b3b3f2484c5526e8286b856495d3a9efc9b8b83",
+    "description": "Exact extracted source-discovery input, audited lines and failed glossary packet; original raw response reasoning and private paths omitted. No accepted annotation."
+  },
+  "source_discovery": {
+    "version": 1,
+    "relation_policy_version": 3,
+    "targets": [
+      {
+        "id": "discovery:line-004:0",
+        "line_id": "line-004",
+        "word_indices": [
+          0
+        ],
+        "surfaces": [
+          "aḻaku"
+        ],
+        "source_language": "ta",
+        "dictionary_id": "madras-tamil-lexicon",
+        "queries": [
+          {
+            "text": "அழகு",
+            "origin": "native_surface"
+          }
+        ],
+        "selection_status": "lookup_hypothesis",
+        "candidate_entry_ids": [
+          "madras-tamil-lexicon.p160.hw447fc7ebc8c6acfa.h1",
+          "madras-tamil-lexicon.pS077.hw447fc7ebc8c6acfa.h1"
+        ],
+        "observations": [
+          {
+            "text": "அழகு",
+            "origin": "native_surface",
+            "status": "candidate_entries",
+            "witness_sha256": "255748ce66989ba3052ebcd92edc1089565a2e7ac7d7ea996bfef9d7f4b3f8c3"
+          }
+        ]
+      },
+      {
+        "id": "discovery:line-004:1,2",
+        "line_id": "line-004",
+        "word_indices": [
+          1,
+          2
+        ],
+        "surfaces": [
+          "cuntaram",
+          "pōl"
+        ],
+        "source_language": "ta",
+        "dictionary_id": "madras-tamil-lexicon",
+        "queries": [
+          {
+            "text": "சுந்தரம்போல்",
+            "origin": "native_surface"
+          }
+        ],
+        "selection_status": "lookup_hypothesis",
+        "candidate_entry_ids": [],
+        "observations": [
+          {
+            "text": "சுந்தரம்போல்",
+            "origin": "native_surface",
+            "status": "witnessed_miss",
+            "witness_sha256": "1c3092e1f7a4fd13f79c18193ee999ac32206c1cd7f5f6b9cda0ff6beded5d87"
+          }
+        ]
+      },
+      {
+        "id": "discovery:line-004:3",
+        "line_id": "line-004",
+        "word_indices": [
+          3
+        ],
+        "surfaces": [
+          "akamum"
+        ],
+        "source_language": "ta",
+        "dictionary_id": "madras-tamil-lexicon",
+        "queries": [
+          {
+            "text": "அகமும்",
+            "origin": "native_surface"
+          }
+        ],
+        "selection_status": "lookup_hypothesis",
+        "candidate_entry_ids": [],
+        "observations": [
+          {
+            "text": "அகமும்",
+            "origin": "native_surface",
+            "status": "witnessed_miss",
+            "witness_sha256": "522b21ea325ec7c1031dfd2de977b1dd1f7b4e410b8f07f09885650d98a79cd2"
+          }
+        ]
+      },
+      {
+        "id": "discovery:line-005:3",
+        "line_id": "line-005",
+        "word_indices": [
+          3
+        ],
+        "surfaces": [
+          "akakukai"
+        ],
+        "source_language": "ta",
+        "dictionary_id": "madras-tamil-lexicon",
+        "queries": [
+          {
+            "text": "அககுகை",
+            "origin": "native_surface"
+          }
+        ],
+        "selection_status": "lookup_hypothesis",
+        "candidate_entry_ids": [],
+        "observations": [
+          {
+            "text": "அககுகை",
+            "origin": "native_surface",
+            "status": "witnessed_miss",
+            "witness_sha256": "3cb9d3274c90842f5351768999013ad7c61392c90efc06345c86bc19dff8f2de"
+          }
+        ]
+      },
+      {
+        "id": "discovery:line-005:4",
+        "line_id": "line-005",
+        "word_indices": [
+          4
+        ],
+        "surfaces": [
+          "ciṟaiyāy"
+        ],
+        "source_language": "ta",
+        "dictionary_id": "madras-tamil-lexicon",
+        "queries": [
+          {
+            "text": "சிறையாய்",
+            "origin": "native_surface"
+          }
+        ],
+        "selection_status": "lookup_hypothesis",
+        "candidate_entry_ids": [],
+        "observations": [
+          {
+            "text": "சிறையாய்",
+            "origin": "native_surface",
+            "status": "witnessed_miss",
+            "witness_sha256": "bd72a436fecb5e4b276cdcfbef515911ccbd356ac30a3480bb4e724765df4f4d"
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "entry_id": "madras-tamil-lexicon.p160.hw447fc7ebc8c6acfa.h1",
+        "language": "ta",
+        "register": "historical dictionary usage",
+        "lemma": "aḻaku",
+        "source_spellings": [
+          "அழகு"
+        ],
+        "roman_search_aliases": [
+          "aḻaku"
+        ],
+        "dictionary": {
+          "dictionary_id": "madras-tamil-lexicon",
+          "work": "University of Madras, Tamil Lexicon (1924–1936), with supplement",
+          "institution": "Digital Dictionaries of South Asia, University of Chicago",
+          "url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?page=160",
+          "query_url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=%E0%AE%85%E0%AE%B4%E0%AE%95%E0%AF%81&searchhws=yes&matchtype=exact",
+          "print_page": 160,
+          "transport_page": 160,
+          "entry_locator": "அழகு aḻaku; homograph 1 on printed page 160",
+          "whole_entry_text": "அழகு aḻaku , n. [M. aḻaku.] 1. Beauty, comeliness: சௌந்தரியம். (திவ். இயற். நான்மு. 21.) 2. Happiness; சுகம். (பிங்.) 3. Excellence; சிறப்பு. (திருநூற். 9.) 4. (Pros.) Choice of plain words and proper rhythm; நூல்வனப்பு ளொன்று. (தொல். பொ. 548.) 5. Rock candy; கண்டசருக் கரை. (W.)",
+          "headword_text": "அழகு aḻaku",
+          "witness_sha256": "255748ce66989ba3052ebcd92edc1089565a2e7ac7d7ea996bfef9d7f4b3f8c3",
+          "entry_html_sha256": "ed29c57cb5413e6f0150477ec25281cf36ab6f86bb193cc3c82833c0fef3875a",
+          "source_revision": "DDSA digitization; exact downloaded HTML bound by hash",
+          "license": "CC BY-NC-ND 2.0; private candidate index only",
+          "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+          "evidence_status": "direct dictionary HTML; no semantic sense selection",
+          "query": "அழகு"
+        }
+      },
+      {
+        "entry_id": "madras-tamil-lexicon.pS077.hw447fc7ebc8c6acfa.h1",
+        "language": "ta",
+        "register": "historical dictionary usage",
+        "lemma": "aḻaku",
+        "source_spellings": [
+          "அழகு"
+        ],
+        "roman_search_aliases": [
+          "aḻaku"
+        ],
+        "dictionary": {
+          "dictionary_id": "madras-tamil-lexicon",
+          "work": "University of Madras, Tamil Lexicon (1924–1936), with supplement",
+          "institution": "Digital Dictionaries of South Asia, University of Chicago",
+          "url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?page=4005",
+          "query_url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=%E0%AE%85%E0%AE%B4%E0%AE%95%E0%AF%81&searchhws=yes&matchtype=exact",
+          "print_page": "S077",
+          "transport_page": 4005,
+          "entry_locator": "அழகு aḻaku; homograph 1 on printed page S077",
+          "whole_entry_text": "அழகு aḻaku , n. [M. alaku.] Good nature; சற்குணம். (அரு. நி.)",
+          "headword_text": "அழகு aḻaku",
+          "witness_sha256": "255748ce66989ba3052ebcd92edc1089565a2e7ac7d7ea996bfef9d7f4b3f8c3",
+          "entry_html_sha256": "77ec3934fedf2c5e46867395ec0806d1aafa8fc051394dbe328b01eacfff5fb4",
+          "source_revision": "DDSA digitization; exact downloaded HTML bound by hash",
+          "license": "CC BY-NC-ND 2.0; private candidate index only",
+          "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+          "evidence_status": "direct dictionary HTML; no semantic sense selection",
+          "query": "அழகு"
+        }
+      }
+    ],
+    "evidence": [
+      {
+        "id": "source:madras-tamil-lexicon.p160.hw447fc7ebc8c6acfa.h1",
+        "kind": "current_language_usage",
+        "language": "ta",
+        "lemma": "aḻaku",
+        "work": "University of Madras, Tamil Lexicon (1924–1936), with supplement",
+        "locus": "அழகு aḻaku; homograph 1 on printed page 160",
+        "source_url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?page=160",
+        "quotation_sha256": "ed29c57cb5413e6f0150477ec25281cf36ab6f86bb193cc3c82833c0fef3875a",
+        "witness_sha256": "255748ce66989ba3052ebcd92edc1089565a2e7ac7d7ea996bfef9d7f4b3f8c3",
+        "witness_span": null,
+        "limitations": [
+          "Historical dictionary usage; full entry contains alternatives, not selected meanings."
+        ]
+      },
+      {
+        "id": "source:madras-tamil-lexicon.pS077.hw447fc7ebc8c6acfa.h1",
+        "kind": "current_language_usage",
+        "language": "ta",
+        "lemma": "aḻaku",
+        "work": "University of Madras, Tamil Lexicon (1924–1936), with supplement",
+        "locus": "அழகு aḻaku; homograph 1 on printed page S077",
+        "source_url": "https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?page=4005",
+        "quotation_sha256": "77ec3934fedf2c5e46867395ec0806d1aafa8fc051394dbe328b01eacfff5fb4",
+        "witness_sha256": "255748ce66989ba3052ebcd92edc1089565a2e7ac7d7ea996bfef9d7f4b3f8c3",
+        "witness_span": null,
+        "limitations": [
+          "Historical dictionary usage; full entry contains alternatives, not selected meanings."
+        ]
+      }
+    ],
+    "entry_evidence_ids": {
+      "madras-tamil-lexicon.p160.hw447fc7ebc8c6acfa.h1": [
+        "source:madras-tamil-lexicon.p160.hw447fc7ebc8c6acfa.h1"
+      ],
+      "madras-tamil-lexicon.pS077.hw447fc7ebc8c6acfa.h1": [
+        "source:madras-tamil-lexicon.pS077.hw447fc7ebc8c6acfa.h1"
+      ]
+    },
+    "gaps": []
+  },
+  "lines": [
+    {
+      "id": "line-003",
+      "source_text": "அருணாசலமென அகமே நினைப்பவர் அகத்தை வேரறுப்பாய் அருணாசலா",
+      "roman": "aruṇācalamena akamē ninaippavar akattai vēraṟuppāy aruṇācalā",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "line-001",
+              "source_text": "கருணாகர கணபதியே கரமருளிக் காப்பாயே",
+              "roman": "karuṇākara kaṇapatiyē karamaruḷik kāppāyē"
+            },
+            {
+              "id": "line-002",
+              "source_text": "அருணாசல சிவ அருணாசல சிவ அருணாசல சிவ அருணாசலா",
+              "roman": "aruṇācala civa aruṇācala civa aruṇācala civa aruṇācalā"
+            }
+          ],
+          "after": [
+            {
+              "id": "line-004",
+              "source_text": "அழகு சுந்தரம்போல் அகமும் நீயும் உற்று அபின்னமாய் இருப்போம் அருணாசலா",
+              "roman": "aḻaku cuntaram pōl akamum nīyum uṟṟu apinnamāy iruppōm aruṇācalā"
+            },
+            {
+              "id": "line-005",
+              "source_text": "அகம் புகுந்து ஈர்த்துன் அககுகை சிறையாய் அமர்வித்தது என்கொல் அருணாசலா",
+              "roman": "akam pukuntu īrttun akakukai ciṟaiyāy amarvittatu enkol aruṇācalā"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "அருணாசலமென",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "அகமே",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "நினைப்பவர்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அகத்தை",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "வேரறுப்பாய்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "அருணாசலா",
+          "wordIndices": [
+            5
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "aruṇācalamena",
+        "akamē",
+        "ninaippavar",
+        "akattai",
+        "vēraṟuppāy",
+        "aruṇācalā"
+      ],
+      "sourceLanguage": "",
+      "surface_tokens": [
+        "aruṇācalamena",
+        "akamē",
+        "ninaippavar",
+        "akattai",
+        "vēraṟuppāy",
+        "aruṇācalā"
+      ]
+    },
+    {
+      "id": "line-004",
+      "source_text": "அழகு சுந்தரம்போல் அகமும் நீயும் உற்று அபின்னமாய் இருப்போம் அருணாசலா",
+      "roman": "aḻaku cuntaram pōl akamum nīyum uṟṟu apinnamāy iruppōm aruṇācalā",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "line-002",
+              "source_text": "அருணாசல சிவ அருணாசல சிவ அருணாசல சிவ அருணாசலா",
+              "roman": "aruṇācala civa aruṇācala civa aruṇācala civa aruṇācalā"
+            },
+            {
+              "id": "line-003",
+              "source_text": "அருணாசலமென அகமே நினைப்பவர் அகத்தை வேரறுப்பாய் அருணாசலா",
+              "roman": "aruṇācalamena akamē ninaippavar akattai vēraṟuppāy aruṇācalā"
+            }
+          ],
+          "after": [
+            {
+              "id": "line-005",
+              "source_text": "அகம் புகுந்து ஈர்த்துன் அககுகை சிறையாய் அமர்வித்தது என்கொல் அருணாசலா",
+              "roman": "akam pukuntu īrttun akakukai ciṟaiyāy amarvittatu enkol aruṇācalā"
+            },
+            {
+              "id": "line-006",
+              "source_text": "ஆருக்கா வெனை ஆண்டனை அகற்றிடில் அகிலம் பழித்திடும் அருணாசலா",
+              "roman": "ārukkā veṉai āṇṭanai akaṟṟiṭil akilam paḻittiṭum aruṇācalā"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "அழகு",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "சுந்தரம்போல்",
+          "wordIndices": [
+            1,
+            2
+          ]
+        },
+        {
+          "text": "அகமும்",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "நீயும்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "உற்று",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "அபின்னமாய்",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "இருப்போம்",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "அருணாசலா",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "aḻaku",
+        "cuntaram",
+        "pōl",
+        "akamum",
+        "nīyum",
+        "uṟṟu",
+        "apinnamāy",
+        "iruppōm",
+        "aruṇācalā"
+      ],
+      "sourceLanguage": "",
+      "surface_tokens": [
+        "aḻaku",
+        "cuntaram",
+        "pōl",
+        "akamum",
+        "nīyum",
+        "uṟṟu",
+        "apinnamāy",
+        "iruppōm",
+        "aruṇācalā"
+      ]
+    },
+    {
+      "id": "line-005",
+      "source_text": "அகம் புகுந்து ஈர்த்துன் அககுகை சிறையாய் அமர்வித்தது என்கொல் அருணாசலா",
+      "roman": "akam pukuntu īrttun akakukai ciṟaiyāy amarvittatu enkol aruṇācalā",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "line-003",
+              "source_text": "அருணாசலமென அகமே நினைப்பவர் அகத்தை வேரறுப்பாய் அருணாசலா",
+              "roman": "aruṇācalamena akamē ninaippavar akattai vēraṟuppāy aruṇācalā"
+            },
+            {
+              "id": "line-004",
+              "source_text": "அழகு சுந்தரம்போல் அகமும் நீயும் உற்று அபின்னமாய் இருப்போம் அருணாசலா",
+              "roman": "aḻaku cuntaram pōl akamum nīyum uṟṟu apinnamāy iruppōm aruṇācalā"
+            }
+          ],
+          "after": [
+            {
+              "id": "line-006",
+              "source_text": "ஆருக்கா வெனை ஆண்டனை அகற்றிடில் அகிலம் பழித்திடும் அருணாசலா",
+              "roman": "ārukkā veṉai āṇṭanai akaṟṟiṭil akilam paḻittiṭum aruṇācalā"
+            },
+            {
+              "id": "line-007",
+              "source_text": "இப்பழி தப்புனை ஏனினைப் பித்தாய் இனியார் விடுவார் அருணாசலா",
+              "roman": "ippaḻi tappunai ēṉinaippittāy ini yār viṭuvār aruṇācalā"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "அகம்",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "புகுந்து",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ஈர்த்துன்",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "அககுகை",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "சிறையாய்",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "அமர்வித்தது",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "என்கொல்",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "அருணாசலா",
+          "wordIndices": [
+            7
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "akam",
+        "pukuntu",
+        "īrttun",
+        "akakukai",
+        "ciṟaiyāy",
+        "amarvittatu",
+        "enkol",
+        "aruṇācalā"
+      ],
+      "sourceLanguage": "",
+      "surface_tokens": [
+        "akam",
+        "pukuntu",
+        "īrttun",
+        "akakukai",
+        "ciṟaiyāy",
+        "amarvittatu",
+        "enkol",
+        "aruṇācalā"
+      ]
+    }
+  ],
+  "failed_packet": {
+    "glosses": [
+      {
+        "id": "line-003",
+        "word_glosses": [
+          {
+            "roman": "aruṇācalamena",
+            "gloss": "as Aruṇācala",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "akamē",
+            "gloss": "within the heart itself",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "ninaippavar",
+            "gloss": "those who contemplate",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "akattai",
+            "gloss": "the ego",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "vēraṟuppāy",
+            "gloss": "you uproot",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "aruṇācalā",
+            "gloss": "O Aruṇācala",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "semantic_frame": {
+          "agent": "You (Aruṇācala)",
+          "action_or_state": "uprooting / severing at the root",
+          "patient_or_complement": "the ego (akattai) of those who contemplate [you]",
+          "modifiers": "as 'Aruṇācala' (aruṇācalamena) within the heart itself (akamē)",
+          "negation_or_modality": "affirmative; 2nd-person future/habitual with imperative/declarative force",
+          "literal_image_and_agency": "Aruṇācala acts directly to tear out the ego by its very root when a seeker contemplates His name within the heart.",
+          "idiom_or_phrase": "vēraṟu (to sever at the root / eradicate completely); double entendre on akam (interior/heart vs. egoic self-sense)",
+          "cross_line_relation": "Opens the alphabetical garland (on initial 'a'), establishing the core teaching that remembering Aruṇācala within destroys the root of individual egoity."
+        },
+        "grammar_note": "Features intentional paronomasia on akam: locative/emphatic akamē ('within the heart itself') contrasted with accusative akattai ('the ego / inner sense of I'). vēraṟuppāy combines vēr ('root') and aṟu ('to sever/cut') inflected as second-person singular future/imperative.",
+        "uncertainty": "",
+        "sense_decisions": [
+          {
+            "word_index": 0,
+            "roman": "aruṇācalamena",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Compound of proper name Aruṇācalam with quotative/adverbial particle ena ('saying / as / thinking that').",
+            "grammatical_role": "adverbialized proper noun phrase"
+          },
+          {
+            "word_index": 1,
+            "roman": "akamē",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Noun akam ('interior, heart, mind') with emphatic particle -ē functioning adverbially as 'within the very heart'.",
+            "grammatical_role": "locative/emphatic adverbial noun"
+          },
+          {
+            "word_index": 2,
+            "roman": "ninaippavar",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Participial noun from root ninai ('to think, contemplate, remember'), third-person plural/epicene human, functioning as genitive head.",
+            "grammatical_role": "subject/genitive head of the relative clause"
+          },
+          {
+            "word_index": 3,
+            "roman": "akattai",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Noun akam in the psychological/spiritual sense of inner egoity (ahaṅkāra / ego-sense) bearing the accusative suffix -ai.",
+            "grammatical_role": "direct object"
+          },
+          {
+            "word_index": 4,
+            "roman": "vēraṟuppāy",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Compound verb vēr + aṟu ('to sever the root, uproot') in 2nd-person singular future/indicative addressing the Lord.",
+            "grammatical_role": "predicate verb"
+          },
+          {
+            "word_index": 5,
+            "roman": "aruṇācalā",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Elongated vocative form of Aruṇācala, directly addressing the sacred red mountain of Shiva.",
+            "grammatical_role": "vocative"
+          }
+        ],
+        "lexical_queries": [],
+        "lexical_query_gaps": [],
+        "source_discovery_decisions": []
+      },
+      {
+        "id": "line-004",
+        "word_glosses": [
+          {
+            "roman": "aḻaku",
+            "gloss": "beauty",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "cuntaram",
+            "gloss": "loveliness",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "pōl",
+            "gloss": "just as",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "akamum",
+            "gloss": "the inner self and",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "nīyum",
+            "gloss": "you and",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "uṟṟu",
+            "gloss": "uniting",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "apinnamāy",
+            "gloss": "as non-different",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "iruppōm",
+            "gloss": "may we abide",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "aruṇācalā",
+            "gloss": "O Aruṇācala",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "semantic_frame": {
+          "agent": "we (the inner self and you)",
+          "action_or_state": "abiding / remaining undivided",
+          "patient_or_complement": "non-different / non-dual (apinnamāy)",
+          "modifiers": "like beauty and loveliness [aḻaku and cuntaram] (aḻaku cuntaram pōl), having united (uṟṟu)",
+          "negation_or_modality": "affirmative; 1st-person plural cohortative/optative ('let us remain / may we abide')",
+          "literal_image_and_agency": "Devotee and mountain Lord unite so completely that they are distinct in name only, just as the Tamil word aḻaku and Sanskrit cuntaram denote the identical reality of beauty.",
+          "idiom_or_phrase": "aḻaku cuntaram pōl (like two synonymous terms for one essence); apinnamāy (as undivided / non-distinct)",
+          "cross_line_relation": "Develops the consequence of line 3: once the root of the ego is severed, the remaining state is non-dual abidance of the self with Aruṇācala."
+        },
+        "grammar_note": "The phrase aḻaku cuntaram pōl juxtaposes indigenous Tamil aḻaku with Sanskrit-derived cuntaram (sundara), which mean the same quality ('beauty'). akamum nīyum forms a coordinate subject ('the inner self/I and you') taking the 1st-person plural future/cohortative verb iruppōm. apinnamāy combines Sanskrit abhinna with Tamil adverbial suffix -āy.",
+        "uncertainty": "",
+        "sense_decisions": [
+          {
+            "word_index": 0,
+            "roman": "aḻaku",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Primary nominal sense 'beauty/comeliness', paired symmetrically with cuntaram.",
+            "grammatical_role": "comparative noun constituent"
+          },
+          {
+            "word_index": 1,
+            "roman": "cuntaram",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Sanskrit loan sundara/sundaram ('beauty, loveliness'), functioning as the synonymous counterpart to aḻaku.",
+            "grammatical_role": "comparative noun constituent"
+          },
+          {
+            "word_index": 2,
+            "roman": "pōl",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Particle of comparison ('like, as, just as') governing the pair aḻaku cuntaram.",
+            "grammatical_role": "comparative postposition"
+          },
+          {
+            "word_index": 3,
+            "roman": "akamum",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Noun akam ('interior, self, I') with conjunctive suffix -um, functioning as the first member of the coordinate subject.",
+            "grammatical_role": "coordinate subject"
+          },
+          {
+            "word_index": 4,
+            "roman": "nīyum",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Second-person singular pronoun nī with conjunctive suffix -um, functioning as the second member of the coordinate subject.",
+            "grammatical_role": "coordinate subject"
+          },
+          {
+            "word_index": 5,
+            "roman": "uṟṟu",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Verbal participle of root uṟu ('to experience, join, unite, become intimate').",
+            "grammatical_role": "adverbial verbal participle"
+          },
+          {
+            "word_index": 6,
+            "roman": "apinnamāy",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Sanskrit loan abhinna ('undivided, non-different') with Tamil adverbial marker -āy ('undividedly / as one').",
+            "grammatical_role": "adverbial predicate complement"
+          },
+          {
+            "word_index": 7,
+            "roman": "iruppōm",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "1st-person plural future of iru ('to be, abide, remain'), functioning with cohortative/optative force.",
+            "grammatical_role": "finite verb"
+          },
+          {
+            "word_index": 8,
+            "roman": "aruṇācalā",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Vocative form of Aruṇācala addressing the Lord.",
+            "grammatical_role": "vocative"
+          }
+        ],
+        "lexical_queries": [
+          {
+            "word_indices": [
+              0
+            ],
+            "surfaces": [
+              "aḻaku"
+            ],
+            "reason": "Explain the relation between these expressions in the comparison, distinguishing common meanings and evidenced name allusions.",
+            "source_entry_ids": [],
+            "source_queries": [
+              "அழகு"
+            ],
+            "english_candidates": [
+              {
+                "expression": "beauty",
+                "kind": "word",
+                "english_lemmas": [
+                  "beauty"
+                ]
+              },
+              {
+                "expression": "comeliness",
+                "kind": "word",
+                "english_lemmas": [
+                  "comeliness"
+                ]
+              }
+            ]
+          },
+          {
+            "word_indices": [
+              1,
+              2
+            ],
+            "surfaces": [
+              "cuntaram",
+              "pōl"
+            ],
+            "reason": "Explain the relation between these expressions in the comparison, distinguishing common meanings and evidenced name allusions.",
+            "source_entry_ids": [],
+            "source_queries": [
+              "சுந்தரம்",
+              "சுந்தரம்போல்"
+            ],
+            "english_candidates": [
+              {
+                "expression": "like beauty",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "like",
+                  "beauty"
+                ]
+              },
+              {
+                "expression": "as loveliness",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "as",
+                  "loveliness"
+                ]
+              }
+            ]
+          },
+          {
+            "word_indices": [
+              3
+            ],
+            "surfaces": [
+              "akamum"
+            ],
+            "reason": "Resolve grammatical person and contextual meaning in the paired subject.",
+            "source_entry_ids": [],
+            "source_queries": [
+              "அகம்",
+              "அகமும்"
+            ],
+            "english_candidates": [
+              {
+                "expression": "the inner self and",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "the",
+                  "inner",
+                  "self",
+                  "and"
+                ]
+              },
+              {
+                "expression": "the heart and",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "the",
+                  "heart",
+                  "and"
+                ]
+              },
+              {
+                "expression": "I and",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "I",
+                  "and"
+                ]
+              }
+            ]
+          }
+        ],
+        "lexical_query_gaps": [],
+        "source_discovery_decisions": [
+          {
+            "target_id": "discovery:line-004:0",
+            "entry_id": "madras-tamil-lexicon.p160.hw447fc7ebc8c6acfa.h1",
+            "attested_form": "aḻaku",
+            "quotation": "1. Beauty, comeliness: சௌந்தரியம். (திவ். இயற். நான்மு. 21.)",
+            "meaning_applied": "beauty",
+            "reason": "Matches the contextual sense of visual/intrinsic beauty paired with cuntaram.",
+            "form_explanation": "",
+            "status": "matched",
+            "relation_kind": "exact_form",
+            "changes_gloss": false
+          },
+          {
+            "target_id": "discovery:line-004:0",
+            "entry_id": "madras-tamil-lexicon.pS077.hw447fc7ebc8c6acfa.h1",
+            "attested_form": "aḻaku",
+            "quotation": "Good nature; சற்குணம். (அரு. நி.)",
+            "meaning_applied": "",
+            "reason": "Secondary lexical meaning 'good nature' does not fit the paired synonym comparison with cuntaram.",
+            "form_explanation": "",
+            "status": "rejected",
+            "relation_kind": "exact_form",
+            "changes_gloss": false
+          },
+          {
+            "target_id": "discovery:line-004:1,2",
+            "entry_id": "",
+            "attested_form": "",
+            "quotation": "",
+            "meaning_applied": "",
+            "reason": "Witnessed miss in Madras Tamil Lexicon lookup for multi-word sequence சுந்தரம்போல்.",
+            "form_explanation": "",
+            "status": "unresolved",
+            "relation_kind": "unresolved",
+            "changes_gloss": false
+          },
+          {
+            "target_id": "discovery:line-004:3",
+            "entry_id": "",
+            "attested_form": "",
+            "quotation": "",
+            "meaning_applied": "",
+            "reason": "Witnessed miss in Madras Tamil Lexicon lookup for inflected conjunctive form அகமும்.",
+            "form_explanation": "",
+            "status": "unresolved",
+            "relation_kind": "unresolved",
+            "changes_gloss": false
+          }
+        ]
+      },
+      {
+        "id": "line-005",
+        "word_glosses": [
+          {
+            "roman": "akam",
+            "gloss": "interior",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "pukuntu",
+            "gloss": "having entered",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "īrttun",
+            "gloss": "having drawn [me] into your",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "akakukai",
+            "gloss": "heart-cave",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "ciṟaiyāy",
+            "gloss": "as a captive",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "amarvittatu",
+            "gloss": "causing [me] to dwell",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "enkol",
+            "gloss": "what is this?",
+            "concept_key": "",
+            "preserve_in_english": false
+          },
+          {
+            "roman": "aruṇācalā",
+            "gloss": "O Aruṇācala",
+            "concept_key": "",
+            "preserve_in_english": false
+          }
+        ],
+        "semantic_frame": {
+          "agent": "You (Aruṇācala)",
+          "action_or_state": "entering, dragging in, and confining / seating",
+          "patient_or_complement": "me (the devotee; implied patient of īrttu and amarvittatu)",
+          "modifiers": "into the interior (akam pukuntu), into your heart-cave (un akakukai), as a prisoner (ciṟaiyāy)",
+          "negation_or_modality": "interrogative particle of wonder/bewilderment (enkol)",
+          "literal_image_and_agency": "Aruṇācala enters the devotee's interior without permission, draws him into His own inner cave, and keeps him imprisoned there.",
+          "idiom_or_phrase": "akakukai (cave of the heart); ciṟaiyāy amarvittatu (caused to stay as a captive); enkol (what is this? / why indeed?)",
+          "cross_line_relation": "Follows the vision of non-dual union in line 4 by dramatizing how that union was initiated: an irresistible, sovereign abduction where Aruṇācala captured the soul and imprisoned it in the Self."
+        },
+        "grammar_note": "īrttun represents sandhi of verbal participle īrttu ('having pulled/dragged') + 2nd-person genitive un ('your'). akakukai is a determinative compound (tatpuruṣa) of aka ('inner/heart') + kukai ('cave'). amarvittatu is a causative participial noun from amar ('to settle, dwell') -> amarvi ('to cause to settle/seat') + past tt + neuter singular atu, interrogatively framed by the exclamatory/question clitic enkol.",
+        "uncertainty": "",
+        "sense_decisions": [
+          {
+            "word_index": 0,
+            "roman": "akam",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Noun akam ('inside, interior, home, heart'), functioning adverbially with pukuntu as the destination of entry.",
+            "grammatical_role": "locative/adverbial noun"
+          },
+          {
+            "word_index": 1,
+            "roman": "pukuntu",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Verbal participle of puku ('to enter, penetrate').",
+            "grammatical_role": "adverbial verbal participle"
+          },
+          {
+            "word_index": 2,
+            "roman": "īrttun",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Sandhi coalescence of verbal participle īrttu ('having drawn/dragged') and 2nd-person genitive pronoun un ('your').",
+            "grammatical_role": "verbal participle + genitive modifier"
+          },
+          {
+            "word_index": 3,
+            "roman": "akakukai",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Compound aka ('interior, heart') + kukai ('cave'), denoting the inner heart-cave of Aruṇācala.",
+            "grammatical_role": "locative/destination noun"
+          },
+          {
+            "word_index": 4,
+            "roman": "ciṟaiyāy",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Noun ciṟai ('prison, confinement, captive') with adverbial marker -āy, denoting the state of captivity.",
+            "grammatical_role": "manner adverbial"
+          },
+          {
+            "word_index": 5,
+            "roman": "amarvittatu",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Causative verbal noun/participial noun from amar ('to seat, cause to settle, make dwell').",
+            "grammatical_role": "predicate verbal noun"
+          },
+          {
+            "word_index": 6,
+            "roman": "enkol",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Interrogative en ('what') combined with particle of wonder/doubt kol ('what is this marvel? / why?').",
+            "grammatical_role": "interrogative particle"
+          },
+          {
+            "word_index": 7,
+            "roman": "aruṇācalā",
+            "evidence_status": "contextual_inference",
+            "chosen": [],
+            "rejected": [],
+            "contextual_reason": "Vocative form of Aruṇācala directly addressing the deity.",
+            "grammatical_role": "vocative"
+          }
+        ],
+        "lexical_queries": [
+          {
+            "word_indices": [
+              3
+            ],
+            "surfaces": [
+              "akakukai"
+            ],
+            "reason": "Resolve compound constituents, possession, and the concrete spatial image without adding attitude or consent.",
+            "source_entry_ids": [],
+            "source_queries": [
+              "அகக்குகை",
+              "குகை"
+            ],
+            "english_candidates": [
+              {
+                "expression": "heart-cave",
+                "kind": "transparent_compound",
+                "english_lemmas": [
+                  "heart",
+                  "cave"
+                ]
+              },
+              {
+                "expression": "inner cave",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "inner",
+                  "cave"
+                ]
+              }
+            ]
+          },
+          {
+            "word_indices": [
+              4
+            ],
+            "surfaces": [
+              "ciṟaiyāy"
+            ],
+            "reason": "Resolve compound constituents, possession, and the concrete spatial image without adding attitude or consent.",
+            "source_entry_ids": [],
+            "source_queries": [
+              "சிறை",
+              "சிறையாய்"
+            ],
+            "english_candidates": [
+              {
+                "expression": "as a captive",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "as",
+                  "a",
+                  "captive"
+                ]
+              },
+              {
+                "expression": "in captivity",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "in",
+                  "captivity"
+                ]
+              },
+              {
+                "expression": "as a prisoner",
+                "kind": "compositional_phrase",
+                "english_lemmas": [
+                  "as",
+                  "a",
+                  "prisoner"
+                ]
+              }
+            ]
+          }
+        ],
+        "lexical_query_gaps": [],
+        "source_discovery_decisions": [
+          {
+            "target_id": "discovery:line-005:3",
+            "entry_id": "",
+            "attested_form": "",
+            "quotation": "",
+            "meaning_applied": "",
+            "reason": "Witnessed miss in Madras Tamil Lexicon lookup for compound headword அககுகை.",
+            "form_explanation": "",
+            "status": "unresolved",
+            "relation_kind": "unresolved",
+            "changes_gloss": false
+          },
+          {
+            "target_id": "discovery:line-005:4",
+            "entry_id": "",
+            "attested_form": "",
+            "quotation": "",
+            "meaning_applied": "",
+            "reason": "Witnessed miss in Madras Tamil Lexicon lookup for inflected adverbial form சிறையாய்.",
+            "form_explanation": "",
+            "status": "unresolved",
+            "relation_kind": "unresolved",
+            "changes_gloss": false
+          }
+        ]
+      }
+    ]
+  }
+}

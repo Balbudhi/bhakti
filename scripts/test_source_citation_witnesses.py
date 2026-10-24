@@ -17,6 +17,7 @@ import bhakti_pipeline as pipeline
 import bhakti_source_discovery as source
 import test_source_discovery_callers as caller_fixture
 import bhakti_model_routes as routes
+from test_word_accountability_fixtures import accounted_provider, records
 
 FIXTURE=json.loads((Path(__file__).parent/'fixtures/source-citations/rehna-paid-writer.json').read_text())
 PACKET=FIXTURE['source_discovery']
@@ -90,6 +91,7 @@ class ActualWriterReviewGate(unittest.TestCase):
             patch.object(pipeline.gemini,'call',side_effect=self.provider)):
             manager.start();self.addCleanup(manager.stop)
 
+    @accounted_provider
     def provider(self,model,key,prompt,**kw):
         kind=kw['schema_name'];self.calls.append(kind)
         if kind=='bhakti_literal_translation':
@@ -99,6 +101,9 @@ class ActualWriterReviewGate(unittest.TestCase):
         self.review_payload=evidence
         self.assertIn(DECISION['quotation'],prompt)
         self.assertIn('attested_form',prompt)
+        reservations=[]
+        if 'WRITER RESERVATIONS:\n' in prompt:
+            reservations=json.JSONDecoder().raw_decode(prompt.split('WRITER RESERVATIONS:\n',1)[1])[0]['reservations']
         rows=[]
         for item in evidence:
             lid=item['source']['id'];bad=lid=='verse-3-line-2'
@@ -107,9 +112,24 @@ class ActualWriterReviewGate(unittest.TestCase):
                 'explanation':'Synthetic semantic objection: the added qualifier true is not established by citation formatting.',
                 'evidence':'The quoted definition says fixed/permanent abode; valid headword evidence is not itself evidence for an extra adjective.',
                 'hold_reason':'','needed_evidence':''}] if bad else []
-            rows.append({'id':lid,'passes':not bad,'agency_preserved':True,'imagery_preserved':True,
+            if bad:
+                issues.append({**copy.deepcopy(issues[0]),'kind':'english_realization',
+                    'explanation':'The second true in English is an unsupported added adjective.'})
+            row={'id':lid,'passes':not bad,'agency_preserved':True,'imagery_preserved':True,
                 'all_meaning_accounted_for':True,'unsupported_additions':[],
-                'human_review_recommended':False,'material_choice':'','reason':'Canned semantic objection; not a model-quality judgment.','issues':issues})
+                'human_review_recommended':False,'material_choice':'','reason':'Canned semantic objection; not a model-quality judgment.','issues':issues,
+                'component_judgments':{component:{'status':'defect' if bad and component in {'gloss','english'} else 'supported',
+                    'reason':'The added qualifier is a concrete defect.' if bad and component in {'gloss','english'} else 'Synthetic citation-delivery control.'}
+                    for component in ('gloss','frame','english')},
+                'writer_reservation_dispositions':[{'reservation_id':r['reservation_id'],
+                    'status':'repair_required' if bad else 'resolved','source_quote':item['source']['source_text'],
+                    'explanation':'Remove the unsupported added qualifier; the retained writer concern is not silently cleared.' if bad else 'The signature and address remain supported.'}
+                    for r in reservations if r['line_id']==lid]}
+            row['word_judgments']=records(item['source'],item['draft'])
+            for record in row['word_judgments']:
+                record['status']='defect' if bad and record['unit']==6 else 'supported'
+                record['reason']='The additional true has no separate source contribution.' if record['status']=='defect' else 'Synthetic contribution bookkeeping for this unchanged phrase.'
+            rows.append(row)
         return {'packet':{'reviews':rows}}
 
     def assert_semantic_hold(self,result):
@@ -163,27 +183,33 @@ class ActualWriterReviewGate(unittest.TestCase):
                 pipeline,self.song,self.audit,self.glosses,{},self.options),result)
         self.assertEqual(len(dispatches),count)
 
-    def test_paid_writer_unresolved_flag_still_holds_after_citation_retry(self):
+    def test_paid_writer_doubt_survives_citation_retry_and_receives_concrete_review(self):
         self.options.model=routes.FLASH_MODEL;self.options.pro_model=routes.PRO_MODEL
         self.options.semantic_deadline_at=time.time()+60;dispatches=[]
         def provider(model,key,prompt,**kwargs):
             dispatches.append((model,kwargs['schema_name']))
             value=self.provider(model,key,prompt,**kwargs)
-            if model==routes.FLASH_MODEL:
+            if model==routes.FLASH_MODEL and kwargs['schema_name']=='bhakti_literal_translation':
                 value['packet']['translations'][1]['source_discovery_decisions'][0]['quotation']='invented quotation'
             return value
         with patch.object(pipeline.gemini,'call',side_effect=provider):
-            with self.assertRaises(routes.UnitUnresolved):
-                pipeline.bhakti_semantic_repair.routed_translation(
-                    pipeline,self.song,self.audit,self.glosses,{},self.options)
+            result=pipeline.bhakti_semantic_repair.routed_translation(
+                pipeline,self.song,self.audit,self.glosses,{},self.options)
         self.assertEqual(dispatches,[(routes.FLASH_MODEL,'bhakti_literal_translation'),
-            (routes.PRO_MODEL,'bhakti_literal_translation')])
+            (routes.PRO_MODEL,'bhakti_literal_translation'),(routes.FLASH_MODEL,'bhakti_translation_review')])
+        self.assert_semantic_hold(result)
+        row=result['packet']['translations'][1]
+        self.assertTrue(row['human_review_recommended'],'Writer uncertainty must remain in its original evidence.')
+        self.assertTrue(row['independent_review']['writer_reservation_dispositions'])
+        self.assertTrue(all(d['status']=='repair_required' for d in row['independent_review']['writer_reservation_dispositions']))
         saved=next(path for path in self.song.rglob('candidate.json') if path.parent.name=='pro')
         candidate=json.loads(saved.read_text())
-        self.assertEqual(candidate['packet'],FIXTURE['translations'])
-        states=list(self.song.rglob('route-state.json'));self.assertEqual(len(states),1)
-        issues=json.loads(states[0].read_text())['attempts'][-1]['issues']
-        self.assertIn('resolved review status',str(issues))
+        original_fields=copy.deepcopy(candidate['packet'])
+        for line in original_fields['translations']:line.pop('word_support',None)
+        self.assertEqual(original_fields,FIXTURE['translations'])
+        with patch.object(pipeline.gemini,'call',side_effect=AssertionError('resume dispatch')):
+            self.assertEqual(pipeline.bhakti_semantic_repair.routed_translation(
+                pipeline,self.song,self.audit,self.glosses,{},self.options),result)
 
     def test_invalid_local_writer_seed_holds_without_pro_attempt_or_provider(self):
         self.options.model=routes.FLASH_MODEL;self.options.pro_model=routes.PRO_MODEL
@@ -214,7 +240,7 @@ class RelationCacheVersion(unittest.TestCase):
             self.assertEqual(len(case.http_calls),http)
             count=len(case.case.calls);self.assertEqual(case.case.complete(),current)
             self.assertEqual(len(case.case.calls),count)
-        self.assertEqual(old,3,'The corrected witness contract needs a materialized policy version.')
+        self.assertEqual(old,4,'The corrected witness contract needs a materialized policy version.')
 
 
 if __name__=='__main__':unittest.main()

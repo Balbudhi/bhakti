@@ -3803,13 +3803,18 @@ Return strict JSON:
         "required": ["id", "word_glosses", "semantic_frame", "grammar_note", "uncertainty", "sense_decisions"], "additionalProperties": False}}},
         "required": ["glosses"], "additionalProperties": False}
     schema = bhakti_lexical_producer.gloss_schema(schema, options)
-    schema = bhakti_source_discovery.extend_gloss_schema(schema, options)
+    def schema_for(target_lines):
+        local = copy.copy(options)
+        local.automatic_source_discovery = bhakti_source_discovery.projected(
+            getattr(options, 'automatic_source_discovery', None), [line['id'] for line in target_lines])
+        source_schema = bhakti_source_discovery.extend_gloss_schema(schema, local)
+        return bhakti_lexical_support.extend_schema(source_schema, support, "gloss")
     # Gloss packets contain a word map and eight-field semantic frame per
     # source line.  Above forty lines the single structured response becomes
     # needlessly large and can stall before producing a recoverable cache.
     if len(lines) <= 40:
         result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=stage_call_timeout(options),
-                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "gloss"), schema_name="bhakti_word_glosses",
+                                       response_schema=schema_for(lines), schema_name="bhakti_word_glosses",
                              reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
         semantic_write_json(target.parent / 'gloss-candidate.json', result)
         result["packet"]["glosses"] = normalize_gloss_rows(lines, stage_model_rows(result, 'glosses', options))
@@ -3847,7 +3852,7 @@ Return strict JSON:
                 context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=stage_call_timeout(options),
-                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "gloss"),
+                                       response_schema=schema_for(target_lines),
                                        schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
                                        max_completion_tokens=65536,
                                        max_attempts=getattr(options, "max_attempts", 6), **stage_transport_context(options))
@@ -4624,7 +4629,12 @@ Return strict JSON:
     writer_schema = schema['properties']['translations']['items']
     writer_schema['properties']['word_support'] = bhakti_word_accountability.schema()
     writer_schema['required'].append('word_support')
-    schema = bhakti_source_discovery.extend_schema(schema, options)
+    def schema_for(target_lines):
+        local = copy.copy(options)
+        local.automatic_source_discovery = bhakti_source_discovery.projected(
+            getattr(options, 'automatic_source_discovery', None), [line['id'] for line in target_lines])
+        source_schema = bhakti_source_discovery.extend_schema(schema, local)
+        return bhakti_lexical_support.extend_schema(source_schema, support, "translation")
     # Literal translations carry indexed English segments, alternatives, and
     # fidelity evidence.  Keep medium recordings in the same bounded batch
     # path as long recordings rather than waiting on one oversized response.
@@ -4641,7 +4651,7 @@ Return strict JSON:
         result = copy.deepcopy(options.semantic_seed_translation)
     elif len(candidate_lines) <= 10:
         result = gemini.call(options.model, gemini.key(), prompt_for(candidate_lines, []), audio=None, timeout=stage_call_timeout(options),
-                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"), schema_name="bhakti_literal_translation",
+                                       response_schema=schema_for(candidate_lines), schema_name="bhakti_literal_translation",
                              reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
         capture_writer_response(options, result)
         # This response was just returned by this attempt. Cached candidates and
@@ -4689,7 +4699,7 @@ Return strict JSON:
                 context = nearby_text_context(lines, absolute_start, len(target_lines))
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=stage_call_timeout(options),
-                                       response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"),
+                                       response_schema=schema_for(target_lines),
                                        schema_name="bhakti_translation_batch", reasoning_effort="high",
                                        max_completion_tokens=65536, **stage_transport_context(options))
                 capture_writer_response(options, response)

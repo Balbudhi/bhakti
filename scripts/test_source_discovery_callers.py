@@ -16,6 +16,7 @@ import bhakti_library_pass as library
 import dictionary_corpus as corpus
 import test_automatic_semantic_lexical as fixture
 from test_sense_decisions import decisions_for
+from test_word_accountability_fixtures import accounted_provider
 
 FIX=Path(__file__).parent/'fixtures/source_discovery'
 
@@ -40,6 +41,7 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
         query=parse_qs(urlparse(url).query)['qs'][0];self.http_calls.append(query)
         return io.BytesIO(corpus.load_cached_witness(FIX,self.records[query]))
 
+    @accounted_provider
     def transport(self,model,key,prompt,**kw):
         case=self.case;kind=kw['schema_name'];case.calls.append({'kind':kind,'prompt':prompt})
         line=case.lines[0];line_id=line['id']
@@ -61,6 +63,10 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
                     'source_entry_ids':[],'source_queries':['वज्र'],
                     'english_candidates':[{'expression':expression,'kind':'compositional_phrase',
                         'english_lemmas':[] if initial_wrong else ['adamantine']}]}], 'lexical_query_gaps':[]}
+            if 'SOURCE GLOSS EVIDENCE:\n' in prompt:
+                supplied=json.JSONDecoder().raw_decode(prompt.split('SOURCE GLOSS EVIDENCE:\n',1)[1])[0]
+                row['source_discovery_decisions']=self.compound_decisions(supplied)
+                row['lexical_queries'][0]['source_entry_ids']=[entry['entry_id'] for entry in supplied['entries']]
             return {'packet':{'glosses':[row]}}
         self.assertIn('SOURCE DISCOVERY EVIDENCE:\n',prompt)
         discovery=json.JSONDecoder().raw_decode(prompt.split('SOURCE DISCOVERY EVIDENCE:\n',1)[1])[0]
@@ -70,11 +76,12 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
             self.assertIn('source_discovery_decisions',prompt)
             return {'packet':{'reviews':[{'id':line_id,'passes':True,'human_review_recommended':False,
                 'agency_preserved':True,'imagery_preserved':True,'all_meaning_accounted_for':True,
-                'unsupported_additions':[],'material_choice':'','reason':'Transport control only.','issues':[]}]}}
+                'unsupported_additions':[],'material_choice':'','reason':'Transport control only.','issues':[],
+                'component_judgments':{key:{'status':'supported','reason':'Synthetic compound delivery control.'} for key in ('gloss','frame','english')}}]}}
         self.translation_count+=1
         support=json.JSONDecoder().raw_decode(prompt.split('TARGETED LEXICAL SUPPORT:\n',1)[1])[0]
         target=support['targets'][0];candidate=target['english_candidates'][0];expression=candidate['expression']
-        initial_wrong=self.needs_gloss_change and self.translation_count==1
+        initial_wrong=False  # Source-first refinement resolves the fixture defect before writer.
         english='Victory! Victory! Victory! '+expression+', strong!'
         quoted='vajrāng (˚ra+an˚), vulg. vajr-ang, bajr-ang, adj. & s.m. Having a hardy frame, hardy; — an epithet of Hauumān; — a robust or hardy man'
         row={'id':line_id,'literal_english':english,'segments':[{'text':'Victory! ','word_indices':[0]},
@@ -91,10 +98,19 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
             'fidelity':{'agency_and_image_preserved':True,'all_meaning_accounted_for':True,'unsupported_additions':[],'notes':''}}
         return {'packet':{'translations':[row]}}
 
+    @staticmethod
+    def compound_decisions(packet):
+        quoted='vajrāng (˚ra+an˚), vulg. vajr-ang, bajr-ang, adj. & s.m. Having a hardy frame, hardy; — an epithet of Hauumān; — a robust or hardy man'
+        return [{'target_id':target['id'],'entry_id':entry_id,'status':'matched',
+            'attested_form':'bajr-ang','quotation':quoted,'relation_kind':'compound_subentry',
+            'meaning_applied':'having a hardy frame','changes_gloss':False,'form_explanation':'',
+            'reason':'Witnessed whole compound adds limbs/frame, not a bare root-strength meaning.'}
+            for target in packet['targets'] for entry_id in target['candidate_entry_ids']]
+
     def assert_happy_path(self):
         original=copy.deepcopy(self.case.audit)
         result=self.case.complete()
-        self.assertEqual(self.case.kinds(),['bhakti_word_glosses','bhakti_literal_translation','bhakti_translation_review'])
+        self.assertEqual(self.case.kinds(),['bhakti_word_glosses','bhakti_word_glosses','bhakti_literal_translation','bhakti_translation_review'])
         self.assertEqual(self.case.state()['status'],'accepted')
         self.assertEqual(self.case.audit,original)
         self.assertNotIn('support_decisions',result[0]['packet']['glosses'][0])
@@ -117,11 +133,11 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
         self.needs_gloss_change=True
         result=self.case.complete()
         self.assertEqual(self.case.state()['status'],'accepted')
-        self.assertEqual(self.case.kinds(),['bhakti_word_glosses','bhakti_literal_translation','bhakti_translation_review',
-                                           'bhakti_word_glosses','bhakti_literal_translation','bhakti_translation_review'])
+        self.assertEqual(self.case.kinds(),['bhakti_word_glosses','bhakti_word_glosses','bhakti_literal_translation','bhakti_translation_review'])
         self.assertEqual(self.http_calls,['बजरंग','वज्र'])
         self.assertEqual(result[0]['packet']['glosses'][0]['word_glosses'][3]['gloss'],'with adamantine limbs')
-        self.assertIn('Having a hardy frame',self.case.calls[3]['prompt'])
+        self.assertEqual(self.translation_count,1,'Incorrect bootstrap gloss must be repaired before any writer purchase.')
+        self.assertIn('Having a hardy frame',self.case.calls[1]['prompt'])
 
     def test_fresh_missing_source_decisions_rejected_before_independent_review(self):
         def omit(*args,**kwargs):
@@ -132,7 +148,7 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
         with patch.object(fixture.pipeline.gemini,'call',side_effect=omit):
             with self.assertRaisesRegex((ValueError,RuntimeError),'discovery|decision|candidate'):
                 self.case.complete()
-        self.assertEqual(self.case.kinds(),['bhakti_word_glosses','bhakti_literal_translation'])
+        self.assertEqual(self.case.kinds(),['bhakti_word_glosses','bhakti_word_glosses','bhakti_literal_translation'])
         self.assertFalse((self.case.packets/'semantic-acceptance.json').exists())
 
     def test_malformed_source_witness_hash_holds_accepted_resume_without_call(self):
@@ -152,8 +168,8 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
         self.assertEqual(self.case.complete(),accepted)
         self.assertEqual(len(self.case.calls),count);self.assertEqual(len(self.http_calls),http)
 
-    def test_changed_source_witness_renews_translation_and_review_with_unchanged_gloss(self):
-        self.assert_happy_path();count=len(self.case.calls)
+    def test_changed_source_witness_renews_source_adjudication_before_translation_and_review(self):
+        original=self.assert_happy_path();count=len(self.case.calls)
         root=Path(os.environ['BHAKTI_LEXICAL_SUPPORT_CACHE'])/'source-discovery'/'platts-hi'
         manifest=root/'acquisition.json';records=json.loads(manifest.read_text())
         row=next(record for record in records if record['query']=='वज्र')
@@ -164,9 +180,11 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
         changed=raw.replace(b'thunderbolt',b'thunderbolt [changed fixture evidence]',1)
         path.write_bytes(changed);row['sha256']=corpus.sha(changed);manifest.write_text(json.dumps(records))
         renewed=self.case.complete()
-        self.assertEqual(self.case.kinds()[count:],['bhakti_literal_translation','bhakti_translation_review'])
+        self.assertEqual(self.case.kinds()[count:],['bhakti_word_glosses','bhakti_literal_translation','bhakti_translation_review'])
+        self.assertIn('[changed fixture evidence]',self.case.calls[count]['prompt'])
+        self.assertEqual(renewed[0]['packet']['glosses'][0]['word_glosses'],original[0]['packet']['glosses'][0]['word_glosses'])
         self.assertIn('[changed fixture evidence]',self.case.calls[-1]['prompt'])
-        self.assertEqual(self.gloss_count,1)
+        self.assertEqual(self.gloss_count,3)
         calls=len(self.case.calls);self.assertEqual(self.case.complete(),renewed)
         self.assertEqual(len(self.case.calls),calls)
 
@@ -176,7 +194,7 @@ class SourceDiscoveryCallerTests(unittest.TestCase):
         value['packet']['translations'][0].pop('source_discovery_decisions');path.write_text(json.dumps(value))
         manifest=self.case.packets/'semantic-acceptance.json';saved=json.loads(manifest.read_text())
         saved['translation_sha256']=fixture.pipeline.bhakti_semantic_repair.digest(value);manifest.write_text(json.dumps(saved))
-        with self.assertRaisesRegex((ValueError,RuntimeError),'discovery|decision|candidate|relation'):
+        with self.assertRaisesRegex((ValueError,RuntimeError),'discovery|decision|candidate|relation|immutable writer evidence'):
             self.case.complete()
         self.assertEqual(len(self.case.calls),count)
 

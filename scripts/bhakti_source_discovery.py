@@ -19,7 +19,7 @@ import dictionary_corpus as corpus
 import source_word_map
 
 VERSION = 1
-RELATION_POLICY_VERSION = 3
+RELATION_POLICY_VERSION = 4
 MAX_SUGGESTIONS = 2
 
 
@@ -332,6 +332,12 @@ def projected(discovery, line_ids):
     return selected
 
 
+def decision_pairs(discovery):
+    """Only candidate entries actually supplied for each source target need judgments."""
+    return [{'target_id': target['id'], 'entry_id': entry_id}
+            for target in discovery['targets'] for entry_id in target['candidate_entry_ids']]
+
+
 def prompt(options, line_ids):
     discovery = projected(getattr(options, 'automatic_source_discovery', None), line_ids)
     if not discovery:
@@ -346,9 +352,18 @@ def prompt(options, line_ids):
     for evidence in discovery['evidence']:
         evidence.pop('quotation', None)
     return ('\nSOURCE DISCOVERY EVIDENCE:\n' + json.dumps(discovery, ensure_ascii=False) +
+        '\nSOURCE DECISION PAIRS:\n' + json.dumps(decision_pairs(discovery), ensure_ascii=False) +
         '\nThese complete historical dictionary entries are lookup hypotheses, not selected meanings. '
         'Source query suggestions and similar spellings are not proof of a word relationship. '
-        'For every target/entry pair return source_discovery_decisions with matched/rejected/unresolved, '
+        'Return exactly one source_discovery_decisions row for each listed SOURCE DECISION PAIRS pair, '
+        'on that target’s own output line, and no other decision rows. '
+        'Targets with no candidate entries require zero decisions; a line with no listed pairs must return []. '
+        'Never use an empty entry_id or invent a decision for a lookup miss, gap, or unavailable source. '
+        'Those lookup observations remain in SOURCE DISCOVERY EVIDENCE. '
+        'Proposed alternative source forms belong separately in lexical_queries[].source_queries, not decisions. '
+        'A missing dictionary entry alone is not an unresolved meaning; genuine source/meaning uncertainty '
+        'must still be recorded in the response uncertainty/hold fields. '
+        'For a supplied pair use matched/rejected/unresolved, '
         'attested_form, exact quotation, relation_kind, meaning_applied, changes_gloss, and reason. '
         'For exact_form, attested_form itself must be a witnessed headword or roman alias that exactly matches '
         'the performed native or roman form. A dictionary query hypothesis, substring, or cognate is not an exact match. '
@@ -370,7 +385,7 @@ def prompt(options, line_ids):
 
 def extend_schema(schema, options):
     discovery = getattr(options, 'automatic_source_discovery', None)
-    if not discovery or not discovery['entries']:
+    if not discovery:
         return schema
     schema = copy.deepcopy(schema)
     props = {field: {'type': 'string'} for field in
@@ -383,9 +398,22 @@ def extend_schema(schema, options):
     props.update(status={'type': 'string', 'enum': ['matched', 'rejected', 'unresolved']},
                  relation_kind={'type': 'string', 'enum': ['exact_form', 'vernacular_variant', 'compound_subentry', 'inflected_form', 'unresolved']},
                  changes_gloss={'type': 'boolean'})
+    item = {'type': 'object', 'properties': props, 'required': list(props), 'additionalProperties': False}
+    branches = []
+    for target in discovery['targets']:
+        if not target['candidate_entry_ids']:
+            continue
+        branch = copy.deepcopy(item)
+        branch['properties']['target_id']['enum'] = [target['id']]
+        branch['properties']['entry_id']['enum'] = list(target['candidate_entry_ids'])
+        branches.append(branch)
+    # One branch per nonempty target, rather than a target/entry cross product.
+    # Callers project to the actual request lines. Many targets within one
+    # request can still reach provider schema limits; retain the normal hold.
     row = schema['properties']['translations']['items']
-    row['properties']['source_discovery_decisions'] = {'type': 'array', 'items': {
-        'type': 'object', 'properties': props, 'required': list(props), 'additionalProperties': False}}
+    row['properties']['source_discovery_decisions'] = {
+        'type': 'array', 'maxItems': len(decision_pairs(discovery)),
+        'items': {'anyOf': branches} if branches else item}
     row['required'].append('source_discovery_decisions')
     return schema
 

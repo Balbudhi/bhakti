@@ -12,9 +12,10 @@ from unittest.mock import patch
 import bhakti_library_pass as library
 from test_bhakti_library_pass import reader
 from test_sense_decisions import decisions_for
+from test_word_accountability_fixtures import accounted_provider
 
 
-def review(line_id='one', issues=None):
+def review(line_id='one', issues=None, *, single_word=False):
     issues = issues or []
     result = {'id': line_id, 'passes': not issues, 'agency_preserved': not issues,
             'imagery_preserved': True, 'all_meaning_accounted_for': True,
@@ -27,6 +28,13 @@ def review(line_id='one', issues=None):
             'reason': 'The supplied source and this component were checked independently.'}
             for key, triggers in {'gloss': {'gloss_sense'}, 'frame': {'frame_relation'},
                                   'english': {'english_realization', 'line_scope'}}.items()}
+    if single_word:
+        # This fixture contains one English unit (mind, or deliberately wrong body).
+        result['word_judgments'] = [{'unit': 0, 'bases': ['lexical'],
+            'references': [{'line_id': line_id, 'domain': 'word_glosses',
+                            'word_indices': [0], 'source_quote': 'मन'}],
+            'status': 'defect' if any(i['kind'] in {'english_realization','english_mapping'} for i in issues) else 'supported',
+            'reason': issues[0]['explanation'] if issues else 'The source noun मन denotes mind.'}]
     return result
 
 
@@ -45,7 +53,7 @@ class CurrentContentExecutionTests(unittest.TestCase):
 
     def test_real_source_first_review_preserves_legacy_reader_and_resumes_without_call(self):
         data = reader(); original = copy.deepcopy(data)
-        response = {'packet': {'reviews': [review()]}}
+        response = {'packet': {'reviews': [review(single_word=True)]}}
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', return_value=response) as transport:
             first = self.execute(data)
             second = self.execute(data)
@@ -66,7 +74,7 @@ class CurrentContentExecutionTests(unittest.TestCase):
                  'references': [{'line_id': 'one', 'domain': 'word_glosses', 'word_indices': [0], 'source_quote': 'मन'}],
                  'explanation': 'The English says body but the source denotes mind.',
                  'evidence': 'मन has the supported current gloss mind.', 'hold_reason': '', 'needed_evidence': ''}
-        response = {'packet': {'reviews': [review(issues=[issue])]}}
+        response = {'packet': {'reviews': [review(issues=[issue], single_word=True)]}}
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', return_value=response) as transport:
             result = self.execute(data)
         self.assertEqual(transport.call_count, 1)
@@ -75,7 +83,7 @@ class CurrentContentExecutionTests(unittest.TestCase):
         self.assertEqual(result['reviewPurpose'], 'identify-current-defects')
 
     def test_changed_current_gloss_cannot_reuse_previous_review(self):
-        data = reader(); response = {'packet': {'reviews': [review()]}}
+        data = reader(); response = {'packet': {'reviews': [review(single_word=True)]}}
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', return_value=response) as transport:
             before = self.execute(data)
             data['SONG_LINES']['one']['words'][0]['gloss'] = 'the mind'
@@ -84,7 +92,7 @@ class CurrentContentExecutionTests(unittest.TestCase):
         self.assertNotEqual(before['reader_digest'], after['reader_digest'])
 
     def test_real_reviewer_missing_ids_is_typed_quality_failure_then_one_pro(self):
-        responses = [{'packet': {'reviews': []}}, {'packet': {'reviews': [review()]}}]
+        responses = [{'packet': {'reviews': []}}, {'packet': {'reviews': [review(single_word=True)]}}]
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', side_effect=responses) as transport:
             result = self.execute(reader())
         self.assertEqual(transport.call_count, 2)
@@ -92,7 +100,7 @@ class CurrentContentExecutionTests(unittest.TestCase):
         self.assertEqual(result['issues'], [])
 
     def test_null_issues_container_is_typed_quality_failure_not_iteration_error(self):
-        responses = [{'packet': {'reviews': [{**review(), 'issues': None}]}}, {'packet': {'reviews': [review()]}}]
+        responses = [{'packet': {'reviews': [{**review(single_word=True), 'issues': None}]}}, {'packet': {'reviews': [review(single_word=True)]}}]
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', side_effect=responses) as transport:
             result = self.execute(reader())
         self.assertEqual(transport.call_count, 2); self.assertEqual(result['issues'], [])
@@ -101,15 +109,15 @@ class CurrentContentExecutionTests(unittest.TestCase):
         for bad_fields in ({'material_choice': None}, {'unsupported_additions': None}):
             with self.subTest(fields=bad_fields), tempfile.TemporaryDirectory() as temporary:
                 self.directory = Path(temporary)
-                malformed = {**review(), **bad_fields}
-                responses = [{'packet': {'reviews': [malformed]}}, {'packet': {'reviews': [review()]}}]
+                malformed = {**review(single_word=True), **bad_fields}
+                responses = [{'packet': {'reviews': [malformed]}}, {'packet': {'reviews': [review(single_word=True)]}}]
                 with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', side_effect=responses) as transport:
                     result = self.execute(reader())
-                self.assertEqual(transport.call_count, 2); self.assertEqual(result['reviews'][0], review())
+                self.assertEqual(transport.call_count, 2); self.assertEqual(result['reviews'][0], review(single_word=True))
 
 
     def test_descriptive_choice_note_is_preserved_as_diagnostic_observation(self):
-        descriptive = {**review(), 'material_choice': 'The noun is rendered in its supported cognitive sense.'}
+        descriptive = {**review(single_word=True), 'material_choice': 'The noun is rendered in its supported cognitive sense.'}
         with patch.object(library.pipeline.gemini, 'key', return_value='unused'), patch.object(library.pipeline.gemini, 'call', return_value={'packet': {'reviews': [descriptive]}}) as transport:
             result = self.execute(reader())
         self.assertEqual(transport.call_count, 1)
@@ -138,6 +146,7 @@ class TargetedRepairExecutionTests(CurrentContentExecutionTests):
             'BHAKTI_API_RUN_BUDGET_USD': '2', 'BHAKTI_AUTO_LEXICAL': '0'})
         bounded.start(); self.addCleanup(bounded.stop)
 
+    @accounted_provider
     def provider(self, model, key, prompt, **kwargs):
         schema = kwargs['schema_name']; self.schemas.append((model, schema))
         if schema == 'bhakti_translation_review':

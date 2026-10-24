@@ -62,11 +62,15 @@ Review task 5 is integrated: authenticated grammar-note findings authorize only
 note changes, with separate rights for English and word-gloss repairs. Exact
 existing English, clickable segments and original source evidence remain locked
 outside those rights. Task-4 writing can receive review-only renewal. The joined
-166 focused tests pass, including the real discovered-entry packets and actual
-repair/resume callers; compilation and whitespace checks pass. Next: finish the
-dictionary-miss request correction and qualify the resulting complete writer and
-reviewer on actual output. No full-library repair or further public content
-change is claimed.
+166 focused tests passed, including the real discovered-entry packets and actual
+repair/resume callers. The dictionary-miss request correction is now integrated
+as source-relation policy 4: exact supplied pairs, empty decisions for witnessed
+misses, and per-child schema projection. The joined 216 tests pass, including
+actual 20/20/1 glossary and 10/1 writer dispatches and upgraded historical test
+providers using the current source-first and word-review contracts. The public
+contract audit reports 268 ready, one existing working tag mismatch and six
+unbuilt readers. Next: qualify the complete writer and reviewer on actual
+output. No full-library repair or further public content change is claimed.
 
 The reviewer now retains the failed excerpt's original neighboring lines. One
 bounded review of the unchanged paid draft has finished at
