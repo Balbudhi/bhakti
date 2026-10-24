@@ -8,6 +8,15 @@ it to repair the published library and add the identified backlog. The owner's
 latest instructions authorize continuing this work after the explanatory pause.
 An improved component or a successful pilot does not complete this goal.
 
+The latest no-cost inventory freezes catalogue commit `c39757e9` and covers all
+265 committed songs / 6,741 unique lines: 2 protected, 11 with detected repair
+needs, 243 needing review, and 9 held because their working readers differ from
+the committed versions. These are routing states, not judgments that 243 songs
+have bad translations. All 11 detected repair states concern missing/changed
+saved segment occurrences; their source merge precedes semantic review. The
+private records are `/tmp/bhakti-library-inventory-c39757e9/{inventory,queue}.json`.
+Unpublished folders and the nine existing working changes remain preserved.
+
 Current step: finish the connected pipeline before further content releases.
 The reviewer now retains the failed excerpt's original neighboring lines. One
 bounded review of the unchanged paid draft has finished at
@@ -185,6 +194,12 @@ Both charges settled, totaling $0.01334925, with no unknown reservation. This is
 model agreement on two occurrences, not independently established exact audible
 onsets or whole-song coverage. No public timings changed. Confirmed tracked task
 spending is now $3.478444625, with the two earlier unknown reservations unchanged.
+Independent inspection confirms both actual payloads, routes, source identities
+and charges. The subsequent zero-cost native seek check could not start: this
+session's Codex computer-use state has no browsers and creating `iab` returns
+`Browser is not available: iab`. Evidence is saved in the trial directory's
+`SEEK_CHECK_BLOCKED.json`; no playback or first-syllable observation is claimed.
+This blocks that visual/playback check, not ongoing translation implementation.
 
 The bounded connected text comparison finished privately in
 `/tmp/bhakti-connected-qualification/real-run-preparation/`, under the unchanged
