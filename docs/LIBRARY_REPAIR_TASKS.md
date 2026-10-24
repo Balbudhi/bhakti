@@ -106,6 +106,15 @@ The reviewed private design and test draft address note-only permissions,
 unchanged owner English and original-note evidence; they are not implemented.
 No new public lyrics or song pages accompany this work.
 
+A separate existing-reader owner-baseline defect is now fixed: full-reader
+authorization receives the complete protected English map, while the generation
+input file contains only the repair targets. Previously a legitimate popup-only
+repair with unchanged owner English stopped at `protected population changed`.
+The actual caller regression now repairs that popup, preserves every original
+English segment and resumes without calls; the negative control reaches the
+attempted writer change and rejects it. All 17 shared-library tests pass, with
+independent review. This does not approve any linguistic candidate or public edit.
+
 Independent no-cost acoustic preparation now has ten matching real waveform
 landmarks across Rehna native Opus/AAC and canonical AAC, plus Aao native/canonical
 AAC. All pass the predeclared correlation/ambiguity criteria with decoded offsets
@@ -163,6 +172,19 @@ not accepted timing. No further marker call or public timing change followed.
 Tracked task spending after that audio check was $3.260992325, excluding both unknown
 reservations above. Actual sung-onset qualification remains open; this synthetic
 marker result neither certifies nor disproves lyric-specific onset performance.
+
+The subsequent real Rehnā two-occurrence timing trial finished in
+`/tmp/bhakti-rehna-timing-qualification/capped/run/`. The actual production timing
+unit received independent 110–155 and 100–155 second canonical clips, exact
+ordered source targets and neighboring source context, without previous timing
+answers. Both Flash responses parsed within the two-call, $0.05, 180-second bounds
+with 4,096 completion tokens per call. Their absolute starts were 121.02/134.02
+and 120.82/133.70 seconds: differences of 0.20 and 0.32 seconds, passing the
+existing half-second model-consensus gate. The selected means are 120.92/133.86.
+Both charges settled, totaling $0.01334925, with no unknown reservation. This is
+model agreement on two occurrences, not independently established exact audible
+onsets or whole-song coverage. No public timings changed. Confirmed tracked task
+spending is now $3.478444625, with the two earlier unknown reservations unchanged.
 
 The bounded connected text comparison finished privately in
 `/tmp/bhakti-connected-qualification/real-run-preparation/`, under the unchanged

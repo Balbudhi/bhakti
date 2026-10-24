@@ -486,8 +486,9 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
     local.semantic_repair_findings = repair_findings
     local.semantic_confirmed_issues = issues
     local.semantic_original_reader = {key: copy.deepcopy(reader['SONG_LINES'][key]) for key in targets}
-    local.semantic_baseline = ({key: protected_english[key] for key in targets}
-                               if protected_english is not None else None)
+    # Initial authorization checks the full reader. Generation receives only its
+    # target subset through providedTranslation below; complete resolves that map.
+    local.semantic_baseline = copy.deepcopy(protected_english)
     local.semantic_initial_repair = {'version': 1, 'reader_digest': prepare.json_digest(reader),
         'dependency_fingerprint': dependency_fingerprint, 'original_reader': copy.deepcopy(reader),
         'pre_review': copy.deepcopy(pre_review), 'target_line_ids': [line['id'] for line in target_lines],
@@ -536,7 +537,7 @@ def repair_current_reader(reader: dict, *, slug: str, pre_review: dict, workspac
     job = {'slug': slug, 'languages': languages}
     if protected_english is not None:
         baseline_path = semantic_song / 'locked-target-english.json'
-        pipeline.semantic_write_json(baseline_path, local.semantic_baseline)
+        pipeline.semantic_write_json(baseline_path, {key: protected_english[key] for key in targets})
         job['providedTranslation'] = str(baseline_path)
     glosses, translations = pipeline.complete_semantics(semantic_song, audited, job, local)
     producer = translations.get('semantic_stage_receipt', {})

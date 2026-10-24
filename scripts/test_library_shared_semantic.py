@@ -160,8 +160,31 @@ class SharedExistingReaderTests(unittest.TestCase):
                 workspace=self.root/'song',route_dir=self.root/'routes',options=self.options,
                 dependency_fingerprint='frozen-recording-and-source',deadline_at=self.fixture.deadline,
                 protected_english=protected)
+        self.assertIn('writer',self.stages(), 'Reach the attempted rewrite, not an unrelated population error.')
         self.assertEqual(self.data,self.before)
         self.assertFalse((self.root/'song/data.js').exists())
+
+    def test_owner_english_allows_scoped_popup_repair_and_free_resume(self):
+        # Correct owner English can coexist with a wrong popup. The target-only
+        # generation baseline must not replace full-reader authorization evidence.
+        self.data['SONG_LINES']['one']['english']='{0:mind }{1:mine}'
+        self.before=copy.deepcopy(self.data)
+        self.pre=self.fixture.execute(self.data);self.calls=[]
+        protected={key:library.editorial_baselines.plain_english(row['english'])
+                   for key,row in self.data['SONG_LINES'].items()}
+        def run():
+            return library.repair_current_reader(self.data,slug='fixture',pre_review=self.pre,
+                workspace=self.root/'song',route_dir=self.root/'routes',options=self.options,
+                dependency_fingerprint='frozen-recording-and-source',deadline_at=self.fixture.deadline,
+                protected_english=protected)
+        result=run()
+        self.assert_public_scope(result)
+        self.assertEqual(self.stages(),['gloss','writer','review'])
+        for key,row in self.data['SONG_LINES'].items():
+            self.assertEqual(result['reader']['SONG_LINES'][key]['english'],row['english'])
+        count=len(self.calls)
+        self.assertEqual(run(),result)
+        self.assertEqual(len(self.calls),count)
 
     def test_authorized_gloss_projection_precedes_both_writer_and_reviewer(self):
         result=self.repair();self.assert_public_scope(result)
