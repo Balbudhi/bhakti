@@ -824,7 +824,13 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
         legacy_writer = None
         # Exact historical pending effects retain their original attempt identity.
         legacy_states = []
-        for old_policy in (evidence['policy'], pre_source_policy):
+        legacy_policies = [evidence['policy'], pre_source_policy]
+        # The English accountability contract cannot hide an earlier unknown
+        # attempt on the exact same source/context/provider inputs.
+        legacy_policies += [{key: value for key, value in policy.items()
+                            if key != 'english_word_accountability'}
+                           for policy in legacy_policies]
+        for old_policy in legacy_policies:
             old_evidence = {**evidence, 'policy':old_policy}
             path = routes.unit_state_path(route_dir, unit_id, digest(old_evidence),
                 dependency_fingerprint=digest(old_policy), base_model=options.model, pro_model=options.pro_model)

@@ -41,6 +41,7 @@ import bhakti_lexical_producer
 import bhakti_source_discovery
 import bhakti_translation_policy
 import bhakti_semantic_repair
+import bhakti_word_accountability
 import editorial_baselines
 from display_word_map import clean_display_word_map
 import naming
@@ -61,9 +62,9 @@ LONG_MERGE_VERSION = 8
 LONG_TRANSCRIPT_CONTRACT_VERSION = 4
 GLOSS_CONTRACT_VERSION = 6
 TRANSLATION_INPUT_VERSION = 9
-REVIEW_TASK_VERSION = 3
+REVIEW_TASK_VERSION = 4
 # Exact older task shapes supported for evidence reuse; absence means task0.
-PRIOR_REVIEW_TASK_VERSIONS = (0, 1, 2)
+PRIOR_REVIEW_TASK_VERSIONS = (0, 1, 2, 3)
 SEMANTIC_FRAME_FIELDS = (
     "agent", "action_or_state", "patient_or_complement", "modifiers",
     "negation_or_modality", "literal_image_and_agency", "idiom_or_phrase",
@@ -155,7 +156,8 @@ def semantic_stage_policy(options, *, stage=None):
         policy = {**policy, 'naming_conventions': naming_conventions}
     automatic = bhakti_lexical_producer.configuration_identity(options)
     if stage != 'gloss':
-        policy = {**policy, **bhakti_lexical_support.projection_policy(options)}
+        policy = {**policy, **bhakti_lexical_support.projection_policy(options),
+                  **bhakti_word_accountability.identity()}
     if automatic is not None:
         if stage == 'gloss':
             automatic = {key: automatic[key] for key in ('version', 'max_queries', 'source_discovery', 'requested_spans') if key in automatic}
@@ -3771,7 +3773,7 @@ contextual_inference uses no selected supplied sense and explains the grammar/co
 when no entry fits or no dictionary is supplied for this language. Do not invent IDs.
 missing_evidence means you cannot resolve the meaning, not a mere dictionary gap.
 The primary word gloss must express the choice, and the semantic frame must agree.
-These are your proposed interpretations, awaiting independent review.
+These are your proposed interpretations, awaiting independent review. Frame fields must be concise source-supported semantic claims, not poetic narration or theological amplification. Use an empty field when the source warrants no claim. A signature need not narrate the poet stepping forward; a copula does not establish metaphysical certainty. Check every qualifier against native grammar and witnessed meanings.
 
 CURATED PRESERVED-TERM REGISTRY:
 {json.dumps(term_registry, ensure_ascii=False)}
@@ -3951,6 +3953,9 @@ def translation_review_schema() -> dict[str, Any]:
             'properties': {key: copy.deepcopy(conclusion) for key in ('gloss', 'frame', 'english')},
             'required': ['gloss', 'frame', 'english'], 'additionalProperties': False}
         row['required'].append('component_judgments')
+    row = schema['properties']['reviews']['items']
+    row['properties']['word_judgments'] = bhakti_word_accountability.schema(review=True)
+    row['required'].append('word_judgments')
     return schema
 
 
@@ -4206,6 +4211,8 @@ def translation_review_payload(target_evidence: list[dict[str, Any]], reading_co
     source_context = source_only_review_context(targets, reading, supplied_sources)
     if source_context is not None:
         reading['source_only_context'] = source_context
+    targets = [bhakti_word_accountability.review_projection(row) for row in targets]
+    reading['context_rows'] = [bhakti_word_accountability.review_projection(row) for row in reading['context_rows']]
     for row in targets + reading['context_rows']:
         row['source'].pop('performed_context', None)
     return {"target_evidence": targets, "reading_context": reading}
@@ -4310,7 +4317,9 @@ def independently_review_translations(
         contract_errors = translation_review_contract_errors(lines, gloss_rows, judged,
             review_context=reservation_context, review_task_version=REVIEW_TASK_VERSION,
             expected_context_identity=bhakti_semantic_repair.review_context_identity(lines, options),
-            target_ids=target_ids, gloss_representation='review')
+            target_ids=target_ids, gloss_representation='review',
+            accountability_sources=getattr(options, 'semantic_full_source', []) +
+                [row['source'] for row in full_evidence])
         if contract_errors:
             stage_quality_failure(options, 'translation review judgment: ' + str(contract_errors[:3]))
         # Keep the provider response and its flags intact in candidate-*.json.
@@ -4344,6 +4353,8 @@ def independently_review_translations(
             payload = review_payloads[tuple(item["source"]["id"] for item in target_evidence)]
             reading = payload["reading_context"]
             return f"""Act as an independent adversarial reviewer of devotional translations. You did not write the drafts. Do not rewrite them and do not optimize style.
+
+{bhakti_word_accountability.REVIEW_GUIDANCE}
 
 Review three components independently for every target: (1) indexed primary popup glosses, (2) semantic frame and grammar claims, (3) complete English and its links. Derive each judgment from the original source and performed context, not from agreement between generated components. Popup glosses and frames are claims to verify, not trusted evidence. Check each component's qualifiers, relationships, agency and imagery. A correct English sentence cannot cure an unsupported popup or frame claim. Report a popup defect as gloss_sense at its exact source indices. Report a distinct frame defect as frame_relation, identifying the specific frame field and claim; reporting it only as an English or gloss defect does not account for the frame. Give a separate concise conclusion for each component. Set passes=false for a real defect, including one absent from the English. Do not invent an English defect to justify repairing a gloss, or fail a supported frame merely because another component failed. Distinguish supported contextual inference from what the source states explicitly.
 
@@ -4526,7 +4537,9 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     def prompt_for(batch: list[dict[str, Any]], context: list[dict[str, Any]]) -> str:
         batch_glosses = [gloss_by_id[line['id']] for line in batch]
         term_registry = preserved_term_registry()
-        return f"""Write faithful, complete English translations from the supplied word glosses, semantic frames, and grammar notes ONLY. The semantic frame is authoritative for agency, action/state, patient/complement, negation/modality, literal image, idiom, and cross-line syntax. Do not introduce a looser synonym, devotional interpretation, or omission that it does not support.
+        return f"""Write faithful, complete English constrained by the primary word glosses and grammar, checked against native source and witnessed evidence. Working glosses and frames are claims, not authority. If they add meaning or contradict the native source, expose the conflict for targeted glossary repair; do not silently make the English disagree with its primary popup.
+
+{bhakti_word_accountability.WRITER_GUIDANCE}
 
 For each line, reason in this order before choosing the final English:
 1. Compose the indexed token glosses into the closest grammatical English scaffold.
@@ -4569,7 +4582,7 @@ Supplied translation:
 {provided_translation}
 
 Return strict JSON:
-{{"translations":[{{"id":"canonical-id","literal_english":"","segments":[{{"text":"","word_indices":[]}}],"material_alternatives":[],"human_review_recommended":false,"choice_note":"","fidelity":{{"agency_and_image_preserved":true,"all_meaning_accounted_for":true,"unsupported_additions":[],"notes":""}},"uncertainty":""}}],"comparison":[{{"id":"canonical-id","supplied":"","chosen":"","material_change":false,"reason":""}}]}}"""
+{{"translations":[{{"id":"canonical-id","literal_english":"","segments":[{{"text":"","word_indices":[]}}],"word_support":[{{"unit":0,"bases":["lexical"],"references":[{{"line_id":"canonical-id","domain":"word_glosses","word_indices":[0],"source_quote":"exact native span"}}],"reason":"specific source contribution"}}],"material_alternatives":[],"human_review_recommended":false,"choice_note":"","fidelity":{{"agency_and_image_preserved":true,"all_meaning_accounted_for":true,"unsupported_additions":[],"notes":""}},"uncertainty":""}}],"comparison":[{{"id":"canonical-id","supplied":"","chosen":"","material_change":false,"reason":""}}]}}"""
     schema = {"type": "object", "properties": {
         "translations": {"type": "array", "items": {"type": "object", "properties": {
             "id": {"type": "string"}, "literal_english": {"type": "string"},
@@ -4593,6 +4606,9 @@ Return strict JSON:
             "material_change": {"type": "boolean"}, "reason": {"type": "string"}},
             "required": ["id", "supplied", "chosen", "material_change", "reason"], "additionalProperties": False}},
     }, "required": ["translations", "comparison"], "additionalProperties": False}
+    writer_schema = schema['properties']['translations']['items']
+    writer_schema['properties']['word_support'] = bhakti_word_accountability.schema()
+    writer_schema['required'].append('word_support')
     schema = bhakti_source_discovery.extend_schema(schema, options)
     # Literal translations carry indexed English segments, alternatives, and
     # fidelity evidence.  Keep medium recordings in the same bounded batch
@@ -4608,7 +4624,7 @@ Return strict JSON:
         result = copy.deepcopy(cached_candidate)
     elif candidate_only and getattr(options, 'semantic_seed_translation', None):
         result = copy.deepcopy(options.semantic_seed_translation)
-    elif len(candidate_lines) <= 40:
+    elif len(candidate_lines) <= 10:
         result = gemini.call(options.model, gemini.key(), prompt_for(candidate_lines, []), audio=None, timeout=stage_call_timeout(options),
                                        response_schema=bhakti_lexical_support.extend_schema(schema, support, "translation"), schema_name="bhakti_literal_translation",
                              reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
@@ -4628,8 +4644,8 @@ Return strict JSON:
     else:
         # Preserve the historical 40-line parent cache shape so already
         # completed work remains reusable, but issue fresh requests in bounded
-        # 20-line children. Long translation JSON contains indexed segments and
-        # fidelity evidence; a 40-line response can be truncated even with the
+        # 10-line children. Per-word source warrants accompany indexed segments
+        # and fidelity evidence; a medium response can truncate even with the
         # provider ceiling set to 65,536 tokens.
         batches = [candidate_lines[index:index + 40] for index in range(0, len(candidate_lines), 40)]
         cache_dir = song_dir / ".transcription" / "pipeline" / "translation-batches"
@@ -4668,10 +4684,10 @@ Return strict JSON:
                     stage_quality_failure(options, f"translation batch {label} returned IDs out of order or incomplete")
                 return response
 
-            if len(batch) > 20:
+            if len(batch) > 10:
                 children = []
-                for child_index, offset in enumerate(range(0, len(batch), 20)):
-                    child = batch[offset:offset + 20]
+                for child_index, offset in enumerate(range(0, len(batch), 10)):
+                    child = batch[offset:offset + 10]
                     child_ids = [line["id"] for line in child]
                     child_path = cache_dir / f"batch-{index:03d}-{child_index:02d}.json"
                     child_packet = read_packet(child_path)
@@ -4744,6 +4760,11 @@ Return strict JSON:
     candidate_path = target.parent / 'translation-candidate.json'
     semantic_write_json(candidate_path, result)
     bhakti_semantic_repair.assert_baseline(getattr(options, 'semantic_baseline', None), result['packet']['translations'])
+    accounting_errors = bhakti_word_accountability.writer_errors(lines, result['packet']['translations'],
+        segment_english, getattr(options, 'semantic_full_source', []) +
+        [row['source'] for row in getattr(options, 'semantic_context_evidence', [])])
+    if accounting_errors:
+        stage_quality_failure(options, 'translation word support: ' + str(accounting_errors[:3]))
     if defer_review:
         return result  # A private writer candidate, never an affirmative 05 acceptance.
     result = review_translation(song_dir, audited, glosses, job, options, result,
@@ -4805,9 +4826,12 @@ def review_translation(song_dir, audited, glosses, job, options, candidate, *, p
                 or candidate.get('automatic_evidence_receipt', {}) != original['automatic_evidence_receipt']):
             raise ValueError('legacy writer cannot adopt changed glossary evidence')
         previous_context = candidate.get('writer_review_context')
+        original_policy = semantic_stage_policy(options)
+        if all('word_support' not in row for row in original['rows']):
+            original_policy.pop('english_word_accountability', None)
         expected_fingerprint = text_stage_fingerprint('translation', original.get('writer_model') or options.model,
             translation_stage_inputs(lines, gloss_rows, provided_translation, languages, options,
-                performance_order=audited['packet'].get('performance_order', [])), semantic_stage_policy(options))
+                performance_order=audited['packet'].get('performance_order', [])), original_policy)
         if (original.get('writer_fingerprint') != expected_fingerprint
                 or (previous_context is not None and
                     (previous_context.get('version') != 1
@@ -4880,7 +4904,7 @@ def validate_ids(lines: list[dict[str, Any]], *collections: list[dict[str, Any]]
 
 
 def translation_review_contract_errors(lines, gloss_rows, translation_rows, *, review_context=None,
-                                       review_task_version=None, expected_context_identity=None, target_ids=None, gloss_representation='authored'):
+                                       review_task_version=None, expected_context_identity=None, target_ids=None, gloss_representation='authored', accountability_sources=()):
     """Validate judgments, including valid objections; never certify their truth."""
     errors = []
     require_components = review_task_version is not None and review_task_version >= 3
@@ -4892,9 +4916,12 @@ def translation_review_contract_errors(lines, gloss_rows, translation_rows, *, r
         errors.append('writer reservations lack bound review context')
     refs = review_context.get('reservations', []) if isinstance(review_context, dict) else []
     sources = {line['id']: line for line in lines}
+    accounting_sources = bhakti_word_accountability.source_rows(lines, accountability_sources)
     for row in translation_rows:
         if target_ids is not None and row['id'] not in target_ids:
             continue
+        if review_task_version is not None and review_task_version >= 4:
+            errors += bhakti_word_accountability.record_errors(row, accounting_sources, review=True)
         review = row.get('independent_review', {})
         if not isinstance(review, dict):
             errors.append('review must be an object'); continue
@@ -4953,11 +4980,11 @@ def translation_review_contract_errors(lines, gloss_rows, translation_rows, *, r
     return errors
 
 
-def resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation='authored'):
+def resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation='authored', accountability_sources=()):
     if not review_context or review_task_version is None or review_task_version < 3:
         return set()
     if translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context,
-            review_task_version=review_task_version, expected_context_identity=expected_context_identity, gloss_representation=gloss_representation):
+            review_task_version=review_task_version, expected_context_identity=expected_context_identity, gloss_representation=gloss_representation, accountability_sources=accountability_sources):
         return set()
     return {row['id'] for row in translation_rows
             if row.get('independent_review', {}).get('passes') is True
@@ -4965,10 +4992,11 @@ def resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, rev
             and all(item['status'] == 'resolved' for item in row['independent_review'].get('writer_reservation_dispositions', []))}
 
 
-def translation_draft_contract_errors(lines, gloss_rows, translation_rows):
+def translation_draft_contract_errors(lines, gloss_rows, translation_rows, *, accountability_sources=()):
     if not isinstance(translation_rows, list) or any(not isinstance(row, dict) for row in translation_rows):
         return ['writer translations must be an array of objects']
-    return fresh_translation_contract_errors(lines, gloss_rows, translation_rows, require_review=False, _draft=True)
+    return (fresh_translation_contract_errors(lines, gloss_rows, translation_rows, require_review=False, _draft=True)
+        + bhakti_word_accountability.writer_errors(lines, translation_rows, segment_english, accountability_sources))
 
 
 def translation_packet_contract_kwargs(lines, translations, options=None, *, performance_order=(), expected_review_task_version=None, final_consumer=False):
@@ -4980,17 +5008,19 @@ def translation_packet_contract_kwargs(lines, translations, options=None, *, per
         raise ValueError('current writer proof lost its review task version')
     if version is not None and version >= 3:
         bhakti_semantic_repair.check_writer_evidence(translations, lines, final_consumer=final_consumer)
-    return {'gloss_representation': 'review' if getattr(options, 'semantic_writer_gloss_binding', None) is not None else 'authored',
+    return {'accountability_sources': (list(getattr(options, 'semantic_full_source', [])) +
+                [row['source'] for row in getattr(options, 'semantic_context_evidence', [])]),
+            'gloss_representation': 'review' if getattr(options, 'semantic_writer_gloss_binding', None) is not None else 'authored',
             'review_context': translations.get('writer_review_context'),
             'review_task_version': translations.get('review_task_version'),
             'expected_context_identity': bhakti_semantic_repair.review_context_identity(
                 lines, options, performance_order=performance_order)}
 
 
-def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]], translation_rows: list[dict[str, Any]], *, review_context=None, review_task_version=None, expected_context_identity=None, _draft=False, gloss_representation='authored') -> list[str]:
+def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]], translation_rows: list[dict[str, Any]], *, review_context=None, review_task_version=None, expected_context_identity=None, _draft=False, gloss_representation='authored', accountability_sources=()) -> list[str]:
     """Validate the fields the browser needs without guessing missing text."""
     errors: list[str] = gloss_surface_errors(lines, gloss_rows)
-    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation)
+    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation, accountability_sources)
     gloss_by_id = {row.get("id"): row for row in gloss_rows}
     translation_by_id = {row.get("id"): row for row in translation_rows}
     registry = preserved_term_registry().get("terms", {})
@@ -5060,7 +5090,7 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
 def fresh_translation_contract_errors(
     lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
     translation_rows: list[dict[str, Any]], *, require_review: bool = True,
-    review_context=None, review_task_version=None, expected_context_identity=None, _draft=False, gloss_representation='authored',
+    review_context=None, review_task_version=None, expected_context_identity=None, _draft=False, gloss_representation='authored', accountability_sources=(),
 ) -> list[str]:
     """Require affirmative semantic review before accepting a new 05 packet.
 
@@ -5068,9 +5098,9 @@ def fresh_translation_contract_errors(
     Model assertions are necessary evidence here, not proof of linguistic truth.
     """
     errors = validate_ids(lines, gloss_rows, translation_rows)
-    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation)
+    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation, accountability_sources)
     if require_review and review_task_version is not None and review_task_version >= 3:
-        errors += translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, gloss_representation=gloss_representation)
+        errors += translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, gloss_representation=gloss_representation, accountability_sources=accountability_sources)
     expected_ids = [line.get("id") for line in lines]
     if [row.get("id") for row in translation_rows] != expected_ids:
         errors.append("fresh translation IDs must occur exactly once in source order")
@@ -5120,7 +5150,7 @@ def fresh_translation_contract_errors(
     # evidence must fail as a useful contract error rather than an exception.
     if errors:
         return errors
-    return validate_line_contract(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, _draft=_draft, gloss_representation=gloss_representation)
+    return validate_line_contract(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, _draft=_draft, gloss_representation=gloss_representation, accountability_sources=accountability_sources)
 
 
 def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:

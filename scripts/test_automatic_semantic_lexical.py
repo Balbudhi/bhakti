@@ -5,6 +5,7 @@ orchestration, not translation quality. Corpus mutations are test controls.
 """
 import argparse
 import copy
+from test_word_accountability_fixtures import accounted_provider
 import json
 import os
 from pathlib import Path
@@ -43,6 +44,7 @@ class AutomaticSemanticLexicalTests(unittest.TestCase):
                      patch.object(pipeline.gemini,'call',side_effect=self.transport)):
             item.start(); self.addCleanup(item.stop)
 
+    @accounted_provider
     def transport(self,model,key,prompt,**kw):
         kind=kw['schema_name'];self.calls.append({'kind':kind,'prompt':prompt})
         if 'word_gloss' in kind:

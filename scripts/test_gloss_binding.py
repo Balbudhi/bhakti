@@ -8,11 +8,16 @@ from unittest.mock import patch
 import bhakti_pipeline as pipeline
 import bhakti_semantic_repair as semantic
 import bhakti_lexical_producer as producer
+from test_word_accountability_fixtures import previous_word_contract
 
 FIXTURE=Path(__file__).parent/'fixtures/gloss_binding/rehna.json'
 
 class RealGlossBinding(unittest.TestCase):
     def setUp(self):
+        # This fixture preserves actual historical task3 paid rows. Current task4
+        # word accounting is exercised separately without rewriting this evidence.
+        legacy = previous_word_contract(); legacy.__enter__()
+        self.addCleanup(legacy.__exit__, None, None, None)
         self.data=json.loads(FIXTURE.read_text())
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
         self.song=Path(self.tmp.name)/'private-replay'

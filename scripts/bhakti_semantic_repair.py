@@ -714,7 +714,7 @@ def validated_review_seed(pipeline, song_dir, audited, glossary, candidate, rece
     value.pop('review_task_version', None)
     for row in value['packet']['translations']:
         row.pop('independent_review', None)
-    value['semantic_adoption'] = {'accepted': False, 'path': '05-translation.json',
+    value['semantic_adoption'] = {'accepted': False, 'review_only': True, 'path': '05-translation.json',
                                   'fingerprint': candidate.get('fingerprint')}
     return value
 
@@ -849,13 +849,29 @@ def routed_translation(pipeline, song_dir, audited, glosses, job, options):
         if 'writer_diagnostics' in result:
             return result['quality_issues']
         errors = pipeline.translation_draft_contract_errors(lines, glosses['packet']['glosses'],
-            result.get('packet', {}).get('translations', []))
+            result.get('packet', {}).get('translations', []),
+            accountability_sources=getattr(options, 'semantic_full_source', []) +
+                [row['source'] for row in getattr(options, 'semantic_context_evidence', [])])
         errors += derived_support_errors(pipeline, song_dir, audited, glosses, result, options)
         return [{'kind': 'english_contract', 'detail': error} for error in errors]
-    writer = semantic_stage_route(pipeline, song_dir, 'writer', {**inputs, 'draft_contract_version': 1}, options,
-        lambda directory, local: pipeline.translate(directory, audited, glosses, job, local,
-                                                     candidate_only=True, defer_review=True),
-        validate_writer, base_model=base_model)
+    seed = getattr(options, 'semantic_seed_translation', None)
+    if seed and seed.get('semantic_adoption', {}).get('review_only') is True:
+        # This seed was authenticated against prior acceptance before adoption.
+        # Historical writers have no invented new-accountability explanations.
+        pipeline.bhakti_semantic_repair.check_writer_evidence(seed, lines)
+        rows = seed.get('packet', {}).get('translations', [])
+        if not candidate_structure_valid(pipeline, lines, glosses['packet']['glosses'], rows):
+            raise RuntimeError('review-only writer structure changed')
+        errors = derived_support_errors(pipeline, song_dir, audited, glosses, seed, options)
+        if errors:
+            raise RuntimeError('review-only writer evidence changed: ' + str(errors[:3]))
+        assert_baseline(getattr(options, 'semantic_baseline', None), rows)
+        writer = copy.deepcopy(seed)
+    else:
+        writer = semantic_stage_route(pipeline, song_dir, 'writer', {**inputs, 'draft_contract_version': 1}, options,
+            lambda directory, local: pipeline.translate(directory, audited, glosses, job, local,
+                                                         candidate_only=True, defer_review=True),
+            validate_writer, base_model=base_model)
     def validate_review(result):
         errors = pipeline.translation_review_contract_errors(lines, glosses['packet']['glosses'],
             result.get('packet', {}).get('translations', []), **pipeline.translation_packet_contract_kwargs(
@@ -1127,6 +1143,8 @@ def complete(pipeline, song_dir, audited, job, options):
         if initial is not None:
             identity_inputs['initial_reader_repair'] = initial['context']
         preautomatic_identity = digest(identity_inputs)
+        preautomatic_accountability_identity = digest({**identity_inputs,
+            'policy': {**identity_inputs['policy'], **pipeline.bhakti_word_accountability.identity()}})
         automatic = pipeline.bhakti_lexical_producer.configuration_identity(options)
         glossary_inputs = copy.deepcopy(identity_inputs)
         if automatic is not None:
@@ -1144,7 +1162,8 @@ def complete(pipeline, song_dir, audited, job, options):
             identity_inputs['policy'] = {**identity_inputs['policy'], 'source_gloss_evidence':source_identity}
         glossary_identity = digest(glossary_inputs)
         identity_inputs['policy'] = {**identity_inputs['policy'],
-            **pipeline.bhakti_lexical_support.projection_policy(options)}
+            **pipeline.bhakti_lexical_support.projection_policy(options),
+            **pipeline.bhakti_word_accountability.identity()}
         if stage_routes_enabled(options):
             import bhakti_model_routes as routes
             escalation = getattr(options, 'semantic_stage_escalation', True)
@@ -1153,6 +1172,11 @@ def complete(pipeline, song_dir, audited, job, options):
             identity_inputs['stage_routing'] = {'version': 1, 'escalation': escalation,
                 'pro_model': getattr(options, 'pro_model', routes.PRO_MODEL)}
         content_configuration_run_id = digest(identity_inputs)
+        # Exact pre-accountability content may retain immutable writing while
+        # receiving new independent per-word judgments. No old review is relabeled.
+        previous_content_inputs = copy.deepcopy(identity_inputs)
+        previous_content_inputs['policy'].pop('english_word_accountability', None)
+        previous_accountability_content = digest(previous_content_inputs)
         if pipeline.REVIEW_TASK_VERSION >= 3:
             identity_inputs['review_context_identity'] = review_context_identity(lines, options, performance_order=evidence['performance_order'])
         identity_inputs.update(pipeline.review_task_identity())
@@ -1213,7 +1237,7 @@ def complete(pipeline, song_dir, audited, job, options):
                 and bool(pipeline.bhakti_source_discovery.pending_gloss_lines(bootstrap_source, previous_gloss)))
             if (previous_manifest.get('source_gloss_identity') == glossary_identity or source_refinement
                     or (automatic is not None and prior_state.get('content_configuration_run_id',
-                        prior_state.get('run_id')) == preautomatic_identity)):
+                        prior_state.get('run_id')) in {preautomatic_identity, preautomatic_accountability_identity})):
                 previous_gloss = pipeline.read_packet(packet_dir / '04-glosses.json')
                 previous_translation = pipeline.read_packet(packet_dir / '05-translation.json')
                 # Verify the old pair before moving the required marker to the new run.
@@ -1225,7 +1249,9 @@ def complete(pipeline, song_dir, audited, job, options):
                 accepted_gloss = validated_gloss_seed(pipeline, previous_gloss, accepted_gloss_receipt,
                     digest(evidence), glossary_identity, lines, languages, options)
                 prior_content = prior_state.get('content_configuration_run_id', prior_configuration)
-                if prior_content == content_configuration_run_id:
+                review_contract_only = (prior_state.get('review_task_version') == 3
+                    and prior_content == previous_accountability_content)
+                if prior_content == content_configuration_run_id or review_contract_only:
                     try:
                         view_options, _ = derived_support_view(pipeline, song_dir, audited, previous_gloss,
                                                                previous_translation, options)
@@ -1249,7 +1275,8 @@ def complete(pipeline, song_dir, audited, job, options):
                 raise RuntimeError(state.get('reason', 'semantic repair blocked'))
         else:
             if (prior_state.get('status') in {'blocked', 'in-progress'}
-                    and prior_state.get('content_configuration_run_id', prior_configuration) == content_configuration_run_id
+                    and prior_state.get('content_configuration_run_id', prior_configuration) in
+                        {content_configuration_run_id, previous_accountability_content}
                     and prior_state.get('review_task_version', 0) != pipeline.REVIEW_TASK_VERSION):
                 raise RuntimeError('prior unfinished semantic task requires explicit reconciliation')
             seconds = float(getattr(options, 'semantic_repair_seconds', 600))

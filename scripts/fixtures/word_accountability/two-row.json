@@ -1,0 +1,429 @@
+{
+  "audited": {
+    "packet": {
+      "metadata": {
+        "languages": [
+          "Hindi"
+        ]
+      },
+      "verified_lines": [
+        {
+          "id": "verse-3-line-1",
+          "source_text": "कहत कबीर सुनो भाई साधो",
+          "roman": "kahata kabīra sunō bhāī sādhō",
+          "kind": "verse",
+          "performed_context": [
+            {
+              "before": [
+                {
+                  "id": "refrain-1",
+                  "source_text": "रहना नहीं इस देस में",
+                  "roman": "rahanā nahīṁ isa desa meṁ"
+                },
+                {
+                  "id": "refrain-des-veerana",
+                  "source_text": "देस ये वीराना है",
+                  "roman": "desa ye vīrānā hai"
+                }
+              ],
+              "after": [
+                {
+                  "id": "verse-3-line-2",
+                  "source_text": "सतगुरु नाम ठिकाना है",
+                  "roman": "sataguru nāma ṭhikānā hai"
+                },
+                {
+                  "id": "refrain-1",
+                  "source_text": "रहना नहीं इस देस में",
+                  "roman": "rahanā nahīṁ isa desa meṁ"
+                }
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "कहत",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "कबीर",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "सुनो",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "भाई",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "साधो",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "lexical_tokens": [
+            "kahata",
+            "kabīra",
+            "sunō",
+            "bhāī",
+            "sādhō"
+          ],
+          "sourceLanguage": "hi"
+        },
+        {
+          "id": "verse-3-line-2",
+          "source_text": "सतगुरु नाम ठिकाना है",
+          "roman": "sataguru nāma ṭhikānā hai",
+          "kind": "verse",
+          "performed_context": [
+            {
+              "before": [
+                {
+                  "id": "refrain-des-veerana",
+                  "source_text": "देस ये वीराना है",
+                  "roman": "desa ye vīrānā hai"
+                },
+                {
+                  "id": "verse-3-line-1",
+                  "source_text": "कहत कबीर सुनो भाई साधो",
+                  "roman": "kahata kabīra sunō bhāī sādhō"
+                }
+              ],
+              "after": [
+                {
+                  "id": "refrain-1",
+                  "source_text": "रहना नहीं इस देस में",
+                  "roman": "rahanā nahīṁ isa desa meṁ"
+                },
+                {
+                  "id": "refrain-des-veerana",
+                  "source_text": "देस ये वीराना है",
+                  "roman": "desa ye vīrānā hai"
+                }
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "सतगुरु",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "नाम",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ठिकाना",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "है",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "lexical_tokens": [
+            "sataguru",
+            "nāma",
+            "ṭhikānā",
+            "hai"
+          ],
+          "sourceLanguage": "hi"
+        }
+      ],
+      "performance_order": [
+        {
+          "ref": "verse-3-line-1",
+          "section": "verse",
+          "repeats": 2
+        },
+        {
+          "ref": "verse-3-line-2",
+          "section": "verse",
+          "repeats": 2
+        }
+      ]
+    }
+  },
+  "glosses": [
+    {
+      "id": "verse-3-line-1",
+      "word_glosses": [
+        {
+          "roman": "kahata",
+          "gloss": "says",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "kabīra",
+          "gloss": "the poet named in this source line",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "sunō",
+          "gloss": "listen",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "bhāī",
+          "gloss": "brother",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "sādhō",
+          "gloss": "seekers; spiritual practitioners",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "semantic_frame": {
+        "agent": "Kabīr (speaker of the bhaṇitā signature line); addressees are brother seekers / practitioners",
+        "action_or_state": "speaking (kahanā) and exhorting to listen (sunnā)",
+        "patient_or_complement": "the spiritual truth declared in the subsequent line (verse-3-line-2)",
+        "modifiers": "vocative address 'bhāī sādhō' (brother seekers) modifying the imperative 'sunō'",
+        "negation_or_modality": "affirmative present indicative with 2nd-person plural/familiar imperative",
+        "literal_image_and_agency": "The poet steps forward in the closing signature distich to summon the attention of fellow practitioners directly",
+        "idiom_or_phrase": "'kahata kabīra' (Kabir says), 'sunō bhāī sādhō' (listen, O brother seekers) — conventional nirguṇa Sant signature formula",
+        "cross_line_relation": "Functions as the vocative and illocutionary frame introducing the core salvific instruction in verse-3-line-2"
+      },
+      "grammar_note": "Standard signature distich (bhaṇitā). 'kahata' is an archaic imperfective verbal form functioning as present indicative ('says'). 'kabīra' is the grammatical subject. 'sunō' is a 2nd-person plural/familiar imperative. 'bhāī' and 'sādhō' form an appositional vocative plural phrase.",
+      "uncertainty": "",
+      "sense_decisions": [
+        {
+          "word_index": 0,
+          "roman": "kahata",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Archaic Braj/Avadhi imperfective participle used as present indicative in traditional Sant signature formulas.",
+          "grammatical_role": "predicate verb"
+        },
+        {
+          "word_index": 1,
+          "roman": "kabīra",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Proper noun identifying the historical 15th-century Sant poet Kabīr as the speaking voice.",
+          "grammatical_role": "subject noun"
+        },
+        {
+          "word_index": 2,
+          "roman": "sunō",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Imperative 2nd-person plural form summoning the listener's ear.",
+          "grammatical_role": "imperative verb"
+        },
+        {
+          "word_index": 3,
+          "roman": "bhāī",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Noun 'brother' used as a fraternal vocative address marker.",
+          "grammatical_role": "vocative modifier"
+        },
+        {
+          "word_index": 4,
+          "roman": "sādhō",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Vocative plural of sādhu, addressing fellow spiritual seekers and disciplined practitioners.",
+          "grammatical_role": "vocative noun"
+        }
+      ]
+    },
+    {
+      "id": "verse-3-line-2",
+      "word_glosses": [
+        {
+          "roman": "sataguru",
+          "gloss": "true spiritual teacher",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "nāma",
+          "gloss": "divine name",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "ṭhikānā",
+          "gloss": "refuge; true dwelling",
+          "concept_key": "",
+          "preserve_in_english": false
+        },
+        {
+          "roman": "hai",
+          "gloss": "is",
+          "concept_key": "",
+          "preserve_in_english": false
+        }
+      ],
+      "semantic_frame": {
+        "agent": "the divine name of the true teacher (sataguru nāma)",
+        "action_or_state": "being / existing as the enduring destination and refuge",
+        "patient_or_complement": "the permanent shelter, true home, and reliable abode (ṭhikānā)",
+        "modifiers": "'sataguru' modifying 'nāma' in an elided genitive relationship",
+        "negation_or_modality": "indicative assertion; affirmative declaration of ontological certainty",
+        "literal_image_and_agency": "Direct contrast to the desolate impermanent country ('desa ye vīrānā hai'): the name of the true guru provides the only fixed, stable dwelling and sanctuary",
+        "idiom_or_phrase": "'ṭhikānā honā' (to be the true shelter / proper resting place)",
+        "cross_line_relation": "Completes the statement opened by the signature line (verse-3-line-1) and resolves the despairing refrain ('rahanā nahīṁ isa desa meṁ') by establishing where genuine residence lies"
+      },
+      "grammar_note": "Nominal copular clause. 'sataguru nāma' functions as a compound or genitive phrase with an elided relational postposition ('sataguru [kā] nāma'). 'ṭhikānā' is the singular predicate noun complement, and 'hai' is the present singular copula.",
+      "uncertainty": "",
+      "sense_decisions": [
+        {
+          "word_index": 0,
+          "roman": "sataguru",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Compound noun (sat-guru) denoting the true spiritual teacher/guide, standing in genitive dependency to 'nāma'.",
+          "grammatical_role": "genitive modifier"
+        },
+        {
+          "word_index": 1,
+          "roman": "nāma",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Core nirguṇa devotional concept of the divine name/sound, acting as subject of the clause.",
+          "grammatical_role": "subject noun"
+        },
+        {
+          "word_index": 2,
+          "roman": "ṭhikānā",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Noun meaning fixed abode, authentic dwelling, resting place, or shelter, answering the wanderer's homelessness.",
+          "grammatical_role": "predicate complement"
+        },
+        {
+          "word_index": 3,
+          "roman": "hai",
+          "evidence_status": "contextual_inference",
+          "chosen": [],
+          "rejected": [],
+          "contextual_reason": "Present indicative 3rd-person singular copula equating the subject with its complement.",
+          "grammatical_role": "copula"
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "verse-3-line-1",
+      "literal_english": "Kabīr says, listen, brother seekers:",
+      "segments": [
+        {
+          "text": "Kabīr",
+          "word_indices": [
+            1
+          ]
+        },
+        {
+          "text": " says, ",
+          "word_indices": [
+            0
+          ]
+        },
+        {
+          "text": "listen, ",
+          "word_indices": [
+            2
+          ]
+        },
+        {
+          "text": "brother ",
+          "word_indices": [
+            3
+          ]
+        },
+        {
+          "text": "seekers:",
+          "word_indices": [
+            4
+          ]
+        }
+      ],
+      "fidelity": {
+        "agency_and_image_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "notes": "Preserved the signature voice of Kabīr and the fraternal vocative address without adding an unevidenced interjection such as 'O'."
+      },
+      "material_alternatives": [],
+      "human_review_recommended": false,
+      "choice_note": "",
+      "uncertainty": ""
+    },
+    {
+      "id": "verse-3-line-2",
+      "literal_english": "The True Guru's Name is the true dwelling.",
+      "segments": [
+        {
+          "text": "The True Guru's ",
+          "word_indices": [
+            0
+          ]
+        },
+        {
+          "text": "Name ",
+          "word_indices": [
+            1
+          ]
+        },
+        {
+          "text": "is ",
+          "word_indices": [
+            3
+          ]
+        },
+        {
+          "text": "the true dwelling.",
+          "word_indices": [
+            2
+          ]
+        }
+      ],
+      "fidelity": {
+        "agency_and_image_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "notes": "Preserved the copular assertion equating the True Guru's Name with the permanent dwelling, directly answering the refrain's homeless wandering."
+      },
+      "material_alternatives": [],
+      "human_review_recommended": false,
+      "choice_note": "",
+      "uncertainty": ""
+    }
+  ]
+}

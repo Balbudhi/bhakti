@@ -29,7 +29,7 @@ raised questionable naming-popup and synonym-choice objections, so its findings
 still need independent adjudication before repair. No new glossary, writer,
 source HTTP or embeddings ran, and no result was accepted or published.
 
-Current review task 3 admits structurally valid private writer drafts with doubts
+Review task 3 introduced admission of structurally valid private writer drafts with doubts
 to independent review, then requires separate gloss/frame/English judgments and
 source-bound resolution of each concern. Original writer fields remain intact.
 Final consumers reconstruct the full writer history and retained coordinator
@@ -59,6 +59,26 @@ native targets. New entries proposed by a draft trigger one targeted source-glos
 refinement before English retrieval or writing. These ordering changes pass
 integrated caller tests; their linguistic benefit still needs a live trial. The complete
 trial cost $0.20410305; all responses remain available without a paid replay.
+
+Review task 4 adds independent accounting for every English word occurrence.
+The writer supplies a concise native-source or necessary-grammar warrant; the
+reviewer receives the actual English units without those writer warrants and
+must supply its own source-bound judgments. Missing or duplicated units,
+incorrect native-index links, and contradictions between word judgments, typed
+issues and review conclusions reject the result. Names, possessives, contractions,
+articles and transparent compounds remain valid when their contributions are
+supported. A complete explanation table is not proof that its reasoning is true.
+
+Generated glosses and semantic frames are working interpretations, not authority.
+Both prompts require checking modifier attachment, agency, negation, degree and
+added implications against the native passage. Gloss/frame disagreements request
+their existing targeted repair; a fluent English sentence cannot hide a wrong
+popup. Writer requests use at most ten lines per child batch within the existing
+cache structure. No extra model stage is added. Authenticated unchanged task-3
+writing can receive a task-4 review without regenerating its glossary or inventing
+old writer explanations. Owner English remains exact. The new contract has passed
+caller tests and independent code review; its real translation quality remains
+subject to the bounded three-passage comparison.
 
 ## Bounded intake and boundary recovery
 

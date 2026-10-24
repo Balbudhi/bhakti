@@ -27,6 +27,20 @@ selective repair loop rather than adding another orchestration framework. Keep
 proper names, grammatical realization, compounds and protected English supported;
 do not implement a blanket ban on words such as `true` or `only`. Qualify the
 changed process on the known failure and short protected-reference excerpts.
+
+The word-accountability contract is now implemented as review task 4. Each new
+English word occurrence carries a native-source or grammatical warrant, and the
+reviewer supplies independent judgments without seeing those warrants. Canonical
+token boundaries, exact native spans, mixed repair/uncertainty outcomes, owner
+locks and review-only migration are checked through real callers. Writer batches
+are bounded to ten lines. The integrated 144 tests pass; independent review also
+verified that the new policy cannot hide an older unfinished paid request.
+Compilation and whitespace checks pass. The public contract audit still reports
+existing migration/legacy failures; no song data changed in this implementation.
+The next step is the private Hindi/Punjabi/Tamil excerpt comparison, capped at
+$1.25 text plus $0.05 embeddings, with no publication. These engineering results
+do not establish translation quality or complete the library repair.
+
 The reviewer now retains the failed excerpt's original neighboring lines. One
 bounded review of the unchanged paid draft has finished at
 `/tmp/bhakti-saved-writer-review/actual-run/`: one parsed call, $0.070053,

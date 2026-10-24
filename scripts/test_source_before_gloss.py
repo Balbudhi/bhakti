@@ -18,6 +18,7 @@ import bhakti_source_discovery as discovery
 import dictionary_corpus as corpus
 import test_automatic_semantic_lexical as automatic
 import test_source_discovery_callers as existing
+from test_word_accountability_fixtures import account_response
 from test_source_citation_witnesses import FIXTURE as REHNA
 
 HERE = Path(__file__).parent
@@ -42,6 +43,16 @@ def compound_decisions(packet):
              'changes_gloss': False, 'form_explanation': '',
              'reason': 'Transport fixture: witnessed complete compound, not root-only derivation.'}
             for target in packet['targets'] for eid in target['candidate_entry_ids']]
+
+
+def account_final_response(value, prompt, schema):
+    # These providers fabricate or clone rows after inherited transport output.
+    # Rebuild bookkeeping from their final text/IDs; never alter saved evidence.
+    for row in value.get('packet', {}).get('translations', []):
+        row.pop('word_support', None)
+    for row in value.get('packet', {}).get('reviews', []):
+        row.pop('word_judgments', None)
+    return account_response(value, prompt, schema)
 
 
 class CaptureRequest(Exception):
@@ -151,7 +162,7 @@ class DiscoveredBeforeWriter(unittest.TestCase):
                     row['source_discovery_decisions'] = compound_decisions(packet)
                     if self.new_query_after_refinement:
                         row['lexical_queries'][0]['source_queries'] = ['bajra']
-        return result
+        return account_final_response(result, prompt, kwargs['schema_name'])
 
     def assert_reconciled(self):
         result = self.case.complete()
@@ -391,7 +402,7 @@ class EvidenceContinuity(unittest.TestCase):
                 value['packet']['translations'].append(q)
             elif kind == REVIEW:
                 q = copy.deepcopy(value['packet']['reviews'][0]); q['id']='q'; value['packet']['reviews'].append(q)
-            return value
+            return account_final_response(value, prompt, kind)
         with patch.object(pipeline.gemini,'call',side_effect=transport):
             first = c.complete()
             old_neighbor = copy.deepcopy(first[0]['packet']['glosses'][1])

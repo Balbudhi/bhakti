@@ -1,5 +1,6 @@
 """Existing-reader adapter contract. Actual coordinator/storage; provider-only fixture."""
 import copy
+from test_word_accountability_fixtures import accounted_provider
 import json
 import os
 from pathlib import Path
@@ -51,6 +52,7 @@ class SharedExistingReaderTests(unittest.TestCase):
         result=copy.deepcopy(self.fixture.issue);result['kind']=kind
         return result
 
+    @accounted_provider
     def provider(self,model,key,prompt,**kwargs):
         schema=kwargs['schema_name'];self.calls.append({'schema':schema,'model':model,'prompt':prompt,'kwargs':kwargs})
         if schema=='bhakti_translation_review':

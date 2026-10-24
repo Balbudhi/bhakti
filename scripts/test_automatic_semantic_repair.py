@@ -5,6 +5,7 @@ stage review/cache paths must run. Fictional provider output tests orchestration
 not linguistic correctness. Run with this directory before repository scripts.
 """
 import argparse
+from test_word_accountability_fixtures import accounted_provider
 import copy
 import hashlib
 import json
@@ -111,6 +112,7 @@ class AutomaticRepairTests(unittest.TestCase):
     def payload(prompt, marker):
         return json.JSONDecoder().raw_decode(prompt.split(marker, 1)[1].lstrip())[0]
 
+    @accounted_provider
     def provider(self, model, key, prompt, **kw):
         self.calls.append({'name': kw['schema_name'], 'prompt': prompt, 'timeout': kw['timeout']})
         if self.transport_failure:
