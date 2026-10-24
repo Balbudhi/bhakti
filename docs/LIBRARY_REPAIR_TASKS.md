@@ -72,6 +72,23 @@ contract audit reports 268 ready, one existing working tag mismatch and six
 unbuilt readers. Next: qualify the complete writer and reviewer on actual
 output. No full-library repair or further public content change is claimed.
 
+The new task-5 saved-draft reviewer diagnostic completed one call at
+`/tmp/bhakti-task5-review-qualification/actual-run`: $0.1121805, settled, no
+generation/audio/embedding/source requests or publication. Confirmed tracked
+spending is $3.924868875; the earlier $0.139404 and $0.1625655 unknown reservations
+remain separate. It correctly distinguishes the supported first “True” from the
+unsupported second “true,” separately identifies the popup and frame additions,
+and reports the scoped Kabīr spelling correction. It resolves the writer concern
+as repairable rather than inventing a human-only synonym choice. Independent
+reading also identifies a weak new objection to “seekers of truth”: absence of a
+separate “truth” morpheme does not prove a lexical paraphrase invalid. The same
+“true abode” addition in the grammar note lacks its required separate note
+finding. This qualifies detection of the known modifier failure, not the complete
+translation/repair workflow. The call used 22,068 reasoning tokens for two lines;
+high-effort review remains an unqualified routine cost/latency setting. Next:
+correct those two review-method gaps, measure a bounded cheaper reasoning setting,
+then demonstrate the full generation/review/repair path before the library pass.
+
 The reviewer now retains the failed excerpt's original neighboring lines. One
 bounded review of the unchanged paid draft has finished at
 `/tmp/bhakti-saved-writer-review/actual-run/`: one parsed call, $0.070053,
