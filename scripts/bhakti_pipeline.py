@@ -4209,7 +4209,7 @@ def independently_review_translations(
               'repair_findings': getattr(options, 'semantic_repair_findings', [])}
     review_schema = translation_review_schema()
     reservation_context = getattr(options, 'semantic_writer_review_context', None)
-    if reservation_context:
+    if reservation_context and reservation_context.get('reservations'):
         row_schema = review_schema['properties']['reviews']['items']
         row_schema['properties']['writer_reservation_dispositions'] = {'type': 'array', 'items': {
             'type': 'object', 'properties': {
@@ -4290,7 +4290,7 @@ def independently_review_translations(
         contract_errors = translation_review_contract_errors(lines, gloss_rows, judged,
             review_context=reservation_context, review_task_version=REVIEW_TASK_VERSION,
             expected_context_identity=bhakti_semantic_repair.review_context_identity(lines, options),
-            target_ids=target_ids)
+            target_ids=target_ids, gloss_representation='review')
         if contract_errors:
             stage_quality_failure(options, 'translation review judgment: ' + str(contract_errors[:3]))
         # Keep the provider response and its flags intact in candidate-*.json.
@@ -4714,6 +4714,11 @@ Return strict JSON:
     result["input_contract_version"] = TRANSLATION_INPUT_VERSION
     result["fingerprint"] = fingerprint
     result["automatic_evidence_receipt"] = automatic_evidence_receipt(options)
+    binding = getattr(options, 'semantic_writer_gloss_binding', None)
+    if binding is not None:
+        result['writer_gloss_binding'] = copy.deepcopy(binding)
+    else:
+        result.pop('writer_gloss_binding', None)
     if getattr(options, "semantic_coordinator_acceptance", None):
         result["writer_coordinator_acceptance"] = options.semantic_coordinator_acceptance
     candidate_path = target.parent / 'translation-candidate.json'
@@ -4767,10 +4772,49 @@ def review_translation(song_dir, audited, glosses, job, options, candidate, *, p
             semantic_write_json(proof_path, original)
         history = [{'rows': bhakti_semantic_repair.writer_rows(original['packet']['translations']),
                     'proof': {'path': str(proof_path), 'candidate_sha256': bhakti_semantic_repair.digest(original)}}]
+    binding = getattr(options, 'semantic_writer_gloss_binding', None)
+    if candidate.get('writer_gloss_binding') is None and binding is not None:
+        # A validated legacy writer can gain a new binding wrapper, never a
+        # retroactively edited original artifact or a replacement writer call.
+        predecessor = history[-1]['proof']
+        original = next(record for record in bhakti_semantic_repair.writer_proof_history(predecessor)
+                        if record['proof'] == predecessor)
+        if (original.get('gloss_binding') is not None
+                or original['rows'] != bhakti_semantic_repair.writer_rows(candidate['packet']['translations'])
+                or original['automatic_evidence_receipt'] != automatic_evidence_receipt(options)
+                or candidate.get('automatic_evidence_receipt', {}) != original['automatic_evidence_receipt']):
+            raise ValueError('legacy writer cannot adopt changed glossary evidence')
+        previous_context = candidate.get('writer_review_context')
+        expected_fingerprint = text_stage_fingerprint('translation', original.get('writer_model') or options.model,
+            translation_stage_inputs(lines, gloss_rows, provided_translation, languages, options,
+                performance_order=audited['packet'].get('performance_order', [])), semantic_stage_policy(options))
+        if (original.get('writer_fingerprint') != expected_fingerprint
+                or (previous_context is not None and
+                    (previous_context.get('version') != 1
+                     or previous_context.get('gloss_sha256') != bhakti_semantic_repair.digest(gloss_rows)))):
+            raise ValueError('legacy writer prepared glossary view changed or unproven')
+        wrapper = copy.deepcopy(candidate)
+        for field in ('writer_route_state', 'writer_evidence', 'writer_review_context', 'review_responses'):
+            wrapper.pop(field, None)
+        wrapper['packet']['translations'] = bhakti_semantic_repair.writer_rows(wrapper['packet']['translations'])
+        wrapper['writer_gloss_binding'] = copy.deepcopy(binding)
+        wrapper['writer_binding_predecessor'] = copy.deepcopy(predecessor)
+        path = song_dir / '.transcription/pipeline/writer-drafts' / (bhakti_semantic_repair.digest(wrapper) + '.json')
+        if path.exists() and read_packet(path) != wrapper:
+            raise RuntimeError('immutable adopted writer evidence changed')
+        if not path.exists():
+            semantic_write_json(path, wrapper)
+        history.append({'rows': wrapper['packet']['translations'],
+                        'proof': {'path': str(path), 'candidate_sha256': bhakti_semantic_repair.digest(wrapper)}})
+        result['writer_gloss_binding'] = copy.deepcopy(binding)
+        result.pop('writer_route_state', None)
+    elif candidate.get('writer_gloss_binding') != binding:
+        raise ValueError('review prepared glossary differs from immutable writer binding')
     context = bhakti_semantic_repair.writer_review_context(lines, gloss_rows, result['packet']['translations'],
         context_identity=bhakti_semantic_repair.review_context_identity(lines, options,
             performance_order=audited['packet'].get('performance_order', [])),
-        prior_candidates=history, previous_context=getattr(options, 'semantic_previous_writer_context', None))
+        prior_candidates=history, previous_context=getattr(options, 'semantic_previous_writer_context', None),
+        glossary_binding=binding)
     result['writer_evidence'] = bhakti_semantic_repair.writer_evidence_receipt(history,
         bhakti_semantic_repair.review_context_identity(lines, options, performance_order=audited['packet'].get('performance_order', [])),
         getattr(options, 'semantic_previous_writer_context', None))
@@ -4816,14 +4860,14 @@ def validate_ids(lines: list[dict[str, Any]], *collections: list[dict[str, Any]]
 
 
 def translation_review_contract_errors(lines, gloss_rows, translation_rows, *, review_context=None,
-                                       review_task_version=None, expected_context_identity=None, target_ids=None):
+                                       review_task_version=None, expected_context_identity=None, target_ids=None, gloss_representation='authored'):
     """Validate judgments, including valid objections; never certify their truth."""
     errors = []
     require_components = review_task_version is not None and review_task_version >= 3
     concerns = any(bhakti_semantic_repair.reservation_fields(row) is not None for row in translation_rows)
     if review_context is not None:
         errors += bhakti_semantic_repair.writer_review_context_errors(
-            lines, gloss_rows, translation_rows, review_context, expected_context_identity)
+            lines, gloss_rows, translation_rows, review_context, expected_context_identity, gloss_representation=gloss_representation)
     elif concerns:
         errors.append('writer reservations lack bound review context')
     refs = review_context.get('reservations', []) if isinstance(review_context, dict) else []
@@ -4889,11 +4933,11 @@ def translation_review_contract_errors(lines, gloss_rows, translation_rows, *, r
     return errors
 
 
-def resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity):
+def resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation='authored'):
     if not review_context or review_task_version is None or review_task_version < 3:
         return set()
     if translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context,
-            review_task_version=review_task_version, expected_context_identity=expected_context_identity):
+            review_task_version=review_task_version, expected_context_identity=expected_context_identity, gloss_representation=gloss_representation):
         return set()
     return {row['id'] for row in translation_rows
             if row.get('independent_review', {}).get('passes') is True
@@ -4916,16 +4960,17 @@ def translation_packet_contract_kwargs(lines, translations, options=None, *, per
         raise ValueError('current writer proof lost its review task version')
     if version is not None and version >= 3:
         bhakti_semantic_repair.check_writer_evidence(translations, lines, final_consumer=final_consumer)
-    return {'review_context': translations.get('writer_review_context'),
+    return {'gloss_representation': 'review' if getattr(options, 'semantic_writer_gloss_binding', None) is not None else 'authored',
+            'review_context': translations.get('writer_review_context'),
             'review_task_version': translations.get('review_task_version'),
             'expected_context_identity': bhakti_semantic_repair.review_context_identity(
                 lines, options, performance_order=performance_order)}
 
 
-def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]], translation_rows: list[dict[str, Any]], *, review_context=None, review_task_version=None, expected_context_identity=None, _draft=False) -> list[str]:
+def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]], translation_rows: list[dict[str, Any]], *, review_context=None, review_task_version=None, expected_context_identity=None, _draft=False, gloss_representation='authored') -> list[str]:
     """Validate the fields the browser needs without guessing missing text."""
     errors: list[str] = gloss_surface_errors(lines, gloss_rows)
-    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity)
+    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation)
     gloss_by_id = {row.get("id"): row for row in gloss_rows}
     translation_by_id = {row.get("id"): row for row in translation_rows}
     registry = preserved_term_registry().get("terms", {})
@@ -4995,7 +5040,7 @@ def validate_line_contract(lines: list[dict[str, Any]], gloss_rows: list[dict[st
 def fresh_translation_contract_errors(
     lines: list[dict[str, Any]], gloss_rows: list[dict[str, Any]],
     translation_rows: list[dict[str, Any]], *, require_review: bool = True,
-    review_context=None, review_task_version=None, expected_context_identity=None, _draft=False,
+    review_context=None, review_task_version=None, expected_context_identity=None, _draft=False, gloss_representation='authored',
 ) -> list[str]:
     """Require affirmative semantic review before accepting a new 05 packet.
 
@@ -5003,9 +5048,9 @@ def fresh_translation_contract_errors(
     Model assertions are necessary evidence here, not proof of linguistic truth.
     """
     errors = validate_ids(lines, gloss_rows, translation_rows)
-    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity)
+    resolved = resolved_writer_ids(lines, gloss_rows, translation_rows, review_context, review_task_version, expected_context_identity, gloss_representation)
     if require_review and review_task_version is not None and review_task_version >= 3:
-        errors += translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity)
+        errors += translation_review_contract_errors(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, gloss_representation=gloss_representation)
     expected_ids = [line.get("id") for line in lines]
     if [row.get("id") for row in translation_rows] != expected_ids:
         errors.append("fresh translation IDs must occur exactly once in source order")
@@ -5055,7 +5100,7 @@ def fresh_translation_contract_errors(
     # evidence must fail as a useful contract error rather than an exception.
     if errors:
         return errors
-    return validate_line_contract(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, _draft=_draft)
+    return validate_line_contract(lines, gloss_rows, translation_rows, review_context=review_context, review_task_version=review_task_version, expected_context_identity=expected_context_identity, _draft=_draft, gloss_representation=gloss_representation)
 
 
 def segment_english(parts: list[dict[str, Any]], fallback: str) -> str:

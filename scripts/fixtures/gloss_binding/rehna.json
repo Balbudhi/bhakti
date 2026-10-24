@@ -1,0 +1,2278 @@
+{
+  "audited": {
+    "packet": {
+      "metadata": {
+        "languages": [
+          "Hindi"
+        ]
+      },
+      "verified_lines": [
+        {
+          "id": "verse-3-line-1",
+          "source_text": "कहत कबीर सुनो भाई साधो",
+          "roman": "kahata kabīra sunō bhāī sādhō",
+          "kind": "verse",
+          "performed_context": [
+            {
+              "before": [
+                {
+                  "id": "refrain-1",
+                  "source_text": "रहना नहीं इस देस में",
+                  "roman": "rahanā nahīṁ isa desa meṁ"
+                },
+                {
+                  "id": "refrain-des-veerana",
+                  "source_text": "देस ये वीराना है",
+                  "roman": "desa ye vīrānā hai"
+                }
+              ],
+              "after": [
+                {
+                  "id": "verse-3-line-2",
+                  "source_text": "सतगुरु नाम ठिकाना है",
+                  "roman": "sataguru nāma ṭhikānā hai"
+                },
+                {
+                  "id": "refrain-1",
+                  "source_text": "रहना नहीं इस देस में",
+                  "roman": "rahanā nahīṁ isa desa meṁ"
+                }
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "कहत",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "कबीर",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "सुनो",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "भाई",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "साधो",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "lexical_tokens": [
+            "kahata",
+            "kabīra",
+            "sunō",
+            "bhāī",
+            "sādhō"
+          ],
+          "sourceLanguage": "hi"
+        },
+        {
+          "id": "verse-3-line-2",
+          "source_text": "सतगुरु नाम ठिकाना है",
+          "roman": "sataguru nāma ṭhikānā hai",
+          "kind": "verse",
+          "performed_context": [
+            {
+              "before": [
+                {
+                  "id": "refrain-des-veerana",
+                  "source_text": "देस ये वीराना है",
+                  "roman": "desa ye vīrānā hai"
+                },
+                {
+                  "id": "verse-3-line-1",
+                  "source_text": "कहत कबीर सुनो भाई साधो",
+                  "roman": "kahata kabīra sunō bhāī sādhō"
+                }
+              ],
+              "after": [
+                {
+                  "id": "refrain-1",
+                  "source_text": "रहना नहीं इस देस में",
+                  "roman": "rahanā nahīṁ isa desa meṁ"
+                },
+                {
+                  "id": "refrain-des-veerana",
+                  "source_text": "देस ये वीराना है",
+                  "roman": "desa ye vīrānā hai"
+                }
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "सतगुरु",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "नाम",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ठिकाना",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "है",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "lexical_tokens": [
+            "sataguru",
+            "nāma",
+            "ṭhikānā",
+            "hai"
+          ],
+          "sourceLanguage": "hi"
+        }
+      ],
+      "performance_order": [
+        {
+          "ref": "verse-3-line-1",
+          "section": "verse",
+          "repeats": 2
+        },
+        {
+          "ref": "verse-3-line-2",
+          "section": "verse",
+          "repeats": 2
+        }
+      ]
+    }
+  },
+  "full_source": [
+    {
+      "id": "intro-instrumental",
+      "source_text": "[वाद्य संगीत: सितार आलाप]",
+      "roman": "[Instrumental: Sitāra ālāpa]",
+      "kind": "instrumental",
+      "performed_context": [
+        {
+          "before": [],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "[वाद्य",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संगीत:",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "सितार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "आलाप]",
+          "wordIndices": [
+            2
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "[Instrumental:",
+        "Sitāra",
+        "ālāpa]"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "refrain-1",
+      "source_text": "रहना नहीं इस देस में",
+      "roman": "rahanā nahīṁ isa desa meṁ",
+      "kind": "refrain",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "intro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार आलाप]",
+              "roman": "[Instrumental: Sitāra ālāpa]"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            },
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            },
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            },
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "outro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+              "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "रहना",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "नहीं",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "इस",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "देस",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "में",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "rahanā",
+        "nahīṁ",
+        "isa",
+        "desa",
+        "meṁ"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "refrain-2",
+      "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+      "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai",
+      "kind": "refrain",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "intro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार आलाप]",
+              "roman": "[Instrumental: Sitāra ālāpa]"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "रहना",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "नहीं",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "इस",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "देस",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "में,",
+          "wordIndices": [
+            4
+          ]
+        },
+        {
+          "text": "देस",
+          "wordIndices": [
+            5
+          ]
+        },
+        {
+          "text": "ये",
+          "wordIndices": [
+            6
+          ]
+        },
+        {
+          "text": "वीराना",
+          "wordIndices": [
+            7
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            8
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "rahanā",
+        "nahīṁ",
+        "isa",
+        "desa",
+        "meṁ,",
+        "desa",
+        "ye",
+        "vīrānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "refrain-des-veerana",
+      "source_text": "देस ये वीराना है",
+      "roman": "desa ye vīrānā hai",
+      "kind": "refrain",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-2",
+              "source_text": "रहना नहीं इस देस में, देस ये वीराना है",
+              "roman": "rahanā nahīṁ isa desa meṁ, desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            },
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            },
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            },
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        },
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ],
+          "after": [
+            {
+              "id": "outro-instrumental",
+              "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+              "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "देस",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "ये",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "वीराना",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            3
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "desa",
+        "ye",
+        "vīrānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-1-line-1",
+      "source_text": "ये संसार कागज़ की पुड़िया",
+      "roman": "ye sansāra kāgaza kī puṛiyā",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-1-line-2",
+              "source_text": "बूंद पड़े ढल जाना है",
+              "roman": "būnda paṛē ḍhala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "ये",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संसार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "कागज़",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "की",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "पुड़िया",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "ye",
+        "sansāra",
+        "kāgaza",
+        "kī",
+        "puṛiyā"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-1-line-2",
+      "source_text": "बूंद पड़े ढल जाना है",
+      "roman": "būnda paṛē ḍhala jānā hai",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-1-line-1",
+              "source_text": "ये संसार कागज़ की पुड़िया",
+              "roman": "ye sansāra kāgaza kī puṛiyā"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "बूंद",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "पड़े",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ढल",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "जाना",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "būnda",
+        "paṛē",
+        "ḍhala",
+        "jānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-2-line-1",
+      "source_text": "ये संसार झाड़ो-झींखर",
+      "roman": "ye sansāra jhāṛō-jhīṅkhara",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-2-line-2",
+              "source_text": "आग लगे जल जाना है",
+              "roman": "āga lagē jala jānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "ये",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संसार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "झाड़ो-झींखर",
+          "wordIndices": [
+            2
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "ye",
+        "sansāra",
+        "jhāṛō-jhīṅkhara"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-2-line-2",
+      "source_text": "आग लगे जल जाना है",
+      "roman": "āga lagē jala jānā hai",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-2-line-1",
+              "source_text": "ये संसार झाड़ो-झींखर",
+              "roman": "ye sansāra jhāṛō-jhīṅkhara"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "आग",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "लगे",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "जल",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "जाना",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "āga",
+        "lagē",
+        "jala",
+        "jānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-3-line-1",
+      "source_text": "कहत कबीर सुनो भाई साधो",
+      "roman": "kahata kabīra sunō bhāī sādhō",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": [
+            {
+              "id": "verse-3-line-2",
+              "source_text": "सतगुरु नाम ठिकाना है",
+              "roman": "sataguru nāma ṭhikānā hai"
+            },
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "कहत",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "कबीर",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "सुनो",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "भाई",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "साधो",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "kahata",
+        "kabīra",
+        "sunō",
+        "bhāī",
+        "sādhō"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "verse-3-line-2",
+      "source_text": "सतगुरु नाम ठिकाना है",
+      "roman": "sataguru nāma ṭhikānā hai",
+      "kind": "verse",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            },
+            {
+              "id": "verse-3-line-1",
+              "source_text": "कहत कबीर सुनो भाई साधो",
+              "roman": "kahata kabīra sunō bhāī sādhō"
+            }
+          ],
+          "after": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "सतगुरु",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "नाम",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "ठिकाना",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "है",
+          "wordIndices": [
+            3
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "sataguru",
+        "nāma",
+        "ṭhikānā",
+        "hai"
+      ],
+      "sourceLanguage": "hi"
+    },
+    {
+      "id": "outro-instrumental",
+      "source_text": "[वाद्य संगीत: सितार एवं तबला समापन]",
+      "roman": "[Instrumental: Sitāra evaṁ tabalā samāpana]",
+      "kind": "instrumental",
+      "performed_context": [
+        {
+          "before": [
+            {
+              "id": "refrain-1",
+              "source_text": "रहना नहीं इस देस में",
+              "roman": "rahanā nahīṁ isa desa meṁ"
+            },
+            {
+              "id": "refrain-des-veerana",
+              "source_text": "देस ये वीराना है",
+              "roman": "desa ye vīrānā hai"
+            }
+          ],
+          "after": []
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "[वाद्य",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "संगीत:",
+          "wordIndices": [
+            0
+          ]
+        },
+        {
+          "text": "सितार",
+          "wordIndices": [
+            1
+          ]
+        },
+        {
+          "text": "एवं",
+          "wordIndices": [
+            2
+          ]
+        },
+        {
+          "text": "तबला",
+          "wordIndices": [
+            3
+          ]
+        },
+        {
+          "text": "समापन]",
+          "wordIndices": [
+            4
+          ]
+        }
+      ],
+      "lexical_tokens": [
+        "[Instrumental:",
+        "Sitāra",
+        "evaṁ",
+        "tabalā",
+        "samāpana]"
+      ],
+      "sourceLanguage": "hi"
+    }
+  ],
+  "authored": {
+    "packet": {
+      "glosses": [
+        {
+          "id": "verse-3-line-1",
+          "word_glosses": [
+            {
+              "roman": "kahata",
+              "gloss": "says",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kabīra",
+              "gloss": "the poet named in this source line",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sunō",
+              "gloss": "listen",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bhāī",
+              "gloss": "brother",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sādhō",
+              "gloss": "seekers; spiritual practitioners",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "semantic_frame": {
+            "agent": "Kabīr (speaker of the bhaṇitā signature line); addressees are brother seekers / practitioners",
+            "action_or_state": "speaking (kahanā) and exhorting to listen (sunnā)",
+            "patient_or_complement": "the spiritual truth declared in the subsequent line (verse-3-line-2)",
+            "modifiers": "vocative address 'bhāī sādhō' (brother seekers) modifying the imperative 'sunō'",
+            "negation_or_modality": "affirmative present indicative with 2nd-person plural/familiar imperative",
+            "literal_image_and_agency": "The poet steps forward in the closing signature distich to summon the attention of fellow practitioners directly",
+            "idiom_or_phrase": "'kahata kabīra' (Kabir says), 'sunō bhāī sādhō' (listen, O brother seekers) — conventional nirguṇa Sant signature formula",
+            "cross_line_relation": "Functions as the vocative and illocutionary frame introducing the core salvific instruction in verse-3-line-2"
+          },
+          "grammar_note": "Standard signature distich (bhaṇitā). 'kahata' is an archaic imperfective verbal form functioning as present indicative ('says'). 'kabīra' is the grammatical subject. 'sunō' is a 2nd-person plural/familiar imperative. 'bhāī' and 'sādhō' form an appositional vocative plural phrase.",
+          "uncertainty": "",
+          "sense_decisions": [
+            {
+              "word_index": 0,
+              "roman": "kahata",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Archaic Braj/Avadhi imperfective participle used as present indicative in traditional Sant signature formulas.",
+              "grammatical_role": "predicate verb"
+            },
+            {
+              "word_index": 1,
+              "roman": "kabīra",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Proper noun identifying the historical 15th-century Sant poet Kabīr as the speaking voice.",
+              "grammatical_role": "subject noun"
+            },
+            {
+              "word_index": 2,
+              "roman": "sunō",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Imperative 2nd-person plural form summoning the listener's ear.",
+              "grammatical_role": "imperative verb"
+            },
+            {
+              "word_index": 3,
+              "roman": "bhāī",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Noun 'brother' used as a fraternal vocative address marker.",
+              "grammatical_role": "vocative modifier"
+            },
+            {
+              "word_index": 4,
+              "roman": "sādhō",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Vocative plural of sādhu, addressing fellow spiritual seekers and disciplined practitioners.",
+              "grammatical_role": "vocative noun"
+            }
+          ],
+          "lexical_queries": [],
+          "lexical_query_gaps": []
+        },
+        {
+          "id": "verse-3-line-2",
+          "word_glosses": [
+            {
+              "roman": "sataguru",
+              "gloss": "true spiritual teacher",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nāma",
+              "gloss": "divine name",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ṭhikānā",
+              "gloss": "refuge; true dwelling",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hai",
+              "gloss": "is",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "semantic_frame": {
+            "agent": "the divine name of the true teacher (sataguru nāma)",
+            "action_or_state": "being / existing as the enduring destination and refuge",
+            "patient_or_complement": "the permanent shelter, true home, and reliable abode (ṭhikānā)",
+            "modifiers": "'sataguru' modifying 'nāma' in an elided genitive relationship",
+            "negation_or_modality": "indicative assertion; affirmative declaration of ontological certainty",
+            "literal_image_and_agency": "Direct contrast to the desolate impermanent country ('desa ye vīrānā hai'): the name of the true guru provides the only fixed, stable dwelling and sanctuary",
+            "idiom_or_phrase": "'ṭhikānā honā' (to be the true shelter / proper resting place)",
+            "cross_line_relation": "Completes the statement opened by the signature line (verse-3-line-1) and resolves the despairing refrain ('rahanā nahīṁ isa desa meṁ') by establishing where genuine residence lies"
+          },
+          "grammar_note": "Nominal copular clause. 'sataguru nāma' functions as a compound or genitive phrase with an elided relational postposition ('sataguru [kā] nāma'). 'ṭhikānā' is the singular predicate noun complement, and 'hai' is the present singular copula.",
+          "uncertainty": "",
+          "sense_decisions": [
+            {
+              "word_index": 0,
+              "roman": "sataguru",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Compound noun (sat-guru) denoting the true spiritual teacher/guide, standing in genitive dependency to 'nāma'.",
+              "grammatical_role": "genitive modifier"
+            },
+            {
+              "word_index": 1,
+              "roman": "nāma",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Core nirguṇa devotional concept of the divine name/sound, acting as subject of the clause.",
+              "grammatical_role": "subject noun"
+            },
+            {
+              "word_index": 2,
+              "roman": "ṭhikānā",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Noun meaning fixed abode, authentic dwelling, resting place, or shelter, answering the wanderer's homelessness.",
+              "grammatical_role": "predicate complement"
+            },
+            {
+              "word_index": 3,
+              "roman": "hai",
+              "evidence_status": "contextual_inference",
+              "chosen": [],
+              "rejected": [],
+              "contextual_reason": "Present indicative 3rd-person singular copula equating the subject with its complement.",
+              "grammatical_role": "copula"
+            }
+          ],
+          "lexical_queries": [
+            {
+              "word_indices": [
+                2
+              ],
+              "surfaces": [
+                "ṭhikānā"
+              ],
+              "reason": "Check the contextual noun sense and the attachment of modifiers in this clause against witnessed source-language definitions.",
+              "source_entry_ids": [],
+              "source_queries": [
+                "ठिकाना",
+                "thikana"
+              ],
+              "english_candidates": [
+                {
+                  "expression": "refuge",
+                  "kind": "word",
+                  "english_lemmas": [
+                    "refuge"
+                  ]
+                },
+                {
+                  "expression": "resting place",
+                  "kind": "compositional_phrase",
+                  "english_lemmas": [
+                    "resting",
+                    "place"
+                  ]
+                },
+                {
+                  "expression": "true dwelling",
+                  "kind": "compositional_phrase",
+                  "english_lemmas": [
+                    "true",
+                    "dwelling"
+                  ]
+                },
+                {
+                  "expression": "abode",
+                  "kind": "word",
+                  "english_lemmas": [
+                    "abode"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lexical_query_gaps": []
+        }
+      ]
+    },
+    "sense_languages": [
+      "Hindi"
+    ]
+  },
+  "prepared": {
+    "gloss_rows": [
+      {
+        "grammar_note": "Standard signature distich (bhaṇitā). 'kahata' is an archaic imperfective verbal form functioning as present indicative ('says'). 'kabīra' is the grammatical subject. 'sunō' is a 2nd-person plural/familiar imperative. 'bhāī' and 'sādhō' form an appositional vocative plural phrase.",
+        "id": "verse-3-line-1",
+        "lexical_queries": [],
+        "lexical_query_gaps": [],
+        "semantic_frame": {
+          "action_or_state": "speaking (kahanā) and exhorting to listen (sunnā)",
+          "agent": "Kabīr (speaker of the bhaṇitā signature line); addressees are brother seekers / practitioners",
+          "cross_line_relation": "Functions as the vocative and illocutionary frame introducing the core salvific instruction in verse-3-line-2",
+          "idiom_or_phrase": "'kahata kabīra' (Kabir says), 'sunō bhāī sādhō' (listen, O brother seekers) — conventional nirguṇa Sant signature formula",
+          "literal_image_and_agency": "The poet steps forward in the closing signature distich to summon the attention of fellow practitioners directly",
+          "modifiers": "vocative address 'bhāī sādhō' (brother seekers) modifying the imperative 'sunō'",
+          "negation_or_modality": "affirmative present indicative with 2nd-person plural/familiar imperative",
+          "patient_or_complement": "the spiritual truth declared in the subsequent line (verse-3-line-2)"
+        },
+        "sense_decisions": [
+          {
+            "chosen": [],
+            "contextual_reason": "Archaic Braj/Avadhi imperfective participle used as present indicative in traditional Sant signature formulas.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "predicate verb",
+            "rejected": [],
+            "roman": "kahata",
+            "word_index": 0
+          },
+          {
+            "chosen": [],
+            "contextual_reason": "Proper noun identifying the historical 15th-century Sant poet Kabīr as the speaking voice.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "subject noun",
+            "rejected": [],
+            "roman": "kabīra",
+            "word_index": 1
+          },
+          {
+            "chosen": [],
+            "contextual_reason": "Imperative 2nd-person plural form summoning the listener's ear.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "imperative verb",
+            "rejected": [],
+            "roman": "sunō",
+            "word_index": 2
+          },
+          {
+            "chosen": [],
+            "contextual_reason": "Noun 'brother' used as a fraternal vocative address marker.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "vocative modifier",
+            "rejected": [],
+            "roman": "bhāī",
+            "word_index": 3
+          },
+          {
+            "chosen": [],
+            "contextual_reason": "Vocative plural of sādhu, addressing fellow spiritual seekers and disciplined practitioners.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "vocative noun",
+            "rejected": [],
+            "roman": "sādhō",
+            "word_index": 4
+          }
+        ],
+        "uncertainty": "",
+        "word_glosses": [
+          {
+            "concept_key": "",
+            "gloss": "says",
+            "preserve_in_english": false,
+            "roman": "kahata"
+          },
+          {
+            "concept_key": "",
+            "gloss": "the poet named in this source line",
+            "preserve_in_english": false,
+            "roman": "kabīra"
+          },
+          {
+            "concept_key": "",
+            "gloss": "listen",
+            "preserve_in_english": false,
+            "roman": "sunō"
+          },
+          {
+            "concept_key": "",
+            "gloss": "brother",
+            "preserve_in_english": false,
+            "roman": "bhāī"
+          },
+          {
+            "concept_key": "",
+            "gloss": "seekers; spiritual practitioners",
+            "preserve_in_english": false,
+            "roman": "sādhō"
+          }
+        ]
+      },
+      {
+        "grammar_note": "Nominal copular clause. 'sataguru nāma' functions as a compound or genitive phrase with an elided relational postposition ('sataguru [kā] nāma'). 'ṭhikānā' is the singular predicate noun complement, and 'hai' is the present singular copula.",
+        "id": "verse-3-line-2",
+        "lexical_queries": [
+          {
+            "english_candidates": [
+              {
+                "english_lemmas": [
+                  "refuge"
+                ],
+                "expression": "refuge",
+                "kind": "word"
+              },
+              {
+                "english_lemmas": [
+                  "resting",
+                  "place"
+                ],
+                "expression": "resting place",
+                "kind": "compositional_phrase"
+              },
+              {
+                "english_lemmas": [
+                  "true",
+                  "dwelling"
+                ],
+                "expression": "true dwelling",
+                "kind": "compositional_phrase"
+              },
+              {
+                "english_lemmas": [
+                  "abode"
+                ],
+                "expression": "abode",
+                "kind": "word"
+              }
+            ],
+            "reason": "Check the contextual noun sense and the attachment of modifiers in this clause against witnessed source-language definitions.",
+            "source_entry_ids": [],
+            "source_queries": [
+              "ठिकाना",
+              "thikana"
+            ],
+            "surfaces": [
+              "ṭhikānā"
+            ],
+            "word_indices": [
+              2
+            ]
+          }
+        ],
+        "lexical_query_gaps": [],
+        "semantic_frame": {
+          "action_or_state": "being / existing as the enduring destination and refuge",
+          "agent": "the divine name of the true teacher (sataguru nāma)",
+          "cross_line_relation": "Completes the statement opened by the signature line (verse-3-line-1) and resolves the despairing refrain ('rahanā nahīṁ isa desa meṁ') by establishing where genuine residence lies",
+          "idiom_or_phrase": "'ṭhikānā honā' (to be the true shelter / proper resting place)",
+          "literal_image_and_agency": "Direct contrast to the desolate impermanent country ('desa ye vīrānā hai'): the name of the true guru provides the only fixed, stable dwelling and sanctuary",
+          "modifiers": "'sataguru' modifying 'nāma' in an elided genitive relationship",
+          "negation_or_modality": "indicative assertion; affirmative declaration of ontological certainty",
+          "patient_or_complement": "the permanent shelter, true home, and reliable abode (ṭhikānā)"
+        },
+        "sense_decisions": [
+          {
+            "chosen": [],
+            "contextual_reason": "Compound noun (sat-guru) denoting the true spiritual teacher/guide, standing in genitive dependency to 'nāma'.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "genitive modifier",
+            "rejected": [],
+            "roman": "sataguru",
+            "word_index": 0
+          },
+          {
+            "chosen": [],
+            "contextual_reason": "Core nirguṇa devotional concept of the divine name/sound, acting as subject of the clause.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "subject noun",
+            "rejected": [],
+            "roman": "nāma",
+            "word_index": 1
+          },
+          {
+            "chosen": [],
+            "contextual_reason": "Noun meaning fixed abode, authentic dwelling, resting place, or shelter, answering the wanderer's homelessness.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "predicate complement",
+            "rejected": [],
+            "roman": "ṭhikānā",
+            "word_index": 2
+          },
+          {
+            "chosen": [],
+            "contextual_reason": "Present indicative 3rd-person singular copula equating the subject with its complement.",
+            "evidence_status": "contextual_inference",
+            "grammatical_role": "copula",
+            "rejected": [],
+            "roman": "hai",
+            "word_index": 3
+          }
+        ],
+        "support_decisions": [
+          {
+            "reason": "Existing gloss sense decision: Noun meaning fixed abode, authentic dwelling, resting place, or shelter, answering the wanderer's homelessness.",
+            "role": "operative_meaning",
+            "target_id": "lexical:verse-3-line-2:2",
+            "used_evidence_ids": []
+          }
+        ],
+        "uncertainty": "",
+        "word_glosses": [
+          {
+            "concept_key": "",
+            "gloss": "true spiritual teacher",
+            "preserve_in_english": false,
+            "roman": "sataguru"
+          },
+          {
+            "concept_key": "",
+            "gloss": "divine name",
+            "preserve_in_english": false,
+            "roman": "nāma"
+          },
+          {
+            "concept_key": "",
+            "gloss": "refuge; true dwelling",
+            "preserve_in_english": false,
+            "roman": "ṭhikānā"
+          },
+          {
+            "concept_key": "",
+            "gloss": "is",
+            "preserve_in_english": false,
+            "roman": "hai"
+          }
+        ]
+      }
+    ],
+    "packet": null,
+    "identity": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "diagnostics": []
+  },
+  "writer": {
+    "packet": {
+      "translations": [
+        {
+          "id": "verse-3-line-1",
+          "literal_english": "Kabīr says, listen, brother seekers:",
+          "segments": [
+            {
+              "text": "Kabīr",
+              "word_indices": [
+                1
+              ]
+            },
+            {
+              "text": " says, ",
+              "word_indices": [
+                0
+              ]
+            },
+            {
+              "text": "listen, ",
+              "word_indices": [
+                2
+              ]
+            },
+            {
+              "text": "brother ",
+              "word_indices": [
+                3
+              ]
+            },
+            {
+              "text": "seekers:",
+              "word_indices": [
+                4
+              ]
+            }
+          ],
+          "fidelity": {
+            "agency_and_image_preserved": true,
+            "all_meaning_accounted_for": true,
+            "unsupported_additions": [],
+            "notes": "Preserved the signature voice of Kabīr and the fraternal vocative address without adding an unevidenced interjection such as 'O'."
+          },
+          "material_alternatives": [
+            "Says Kabīr: listen, brother seekers:"
+          ],
+          "human_review_recommended": false,
+          "choice_note": "Followed the standard Sant bhaṇitā signature formula. Applied the scoped naming convention spelling 'Kabīr'. Preserved the appositional vocative 'bhāī sādhō' as 'brother seekers' directly dependent on the imperative 'listen'.",
+          "uncertainty": "",
+          "source_discovery_decisions": []
+        },
+        {
+          "id": "verse-3-line-2",
+          "literal_english": "The True Guru's Name is the true dwelling.",
+          "segments": [
+            {
+              "text": "The True Guru's ",
+              "word_indices": [
+                0
+              ]
+            },
+            {
+              "text": "Name ",
+              "word_indices": [
+                1
+              ]
+            },
+            {
+              "text": "is ",
+              "word_indices": [
+                3
+              ]
+            },
+            {
+              "text": "the true dwelling.",
+              "word_indices": [
+                2
+              ]
+            }
+          ],
+          "fidelity": {
+            "agency_and_image_preserved": true,
+            "all_meaning_accounted_for": true,
+            "unsupported_additions": [],
+            "notes": "Preserved the copular assertion equating the True Guru's Name with the permanent dwelling, directly answering the refrain's homeless wandering."
+          },
+          "material_alternatives": [
+            "The True Guru's Name is the resting place.",
+            "The True Guru's Name is the refuge."
+          ],
+          "human_review_recommended": true,
+          "choice_note": "Rendered ṭhikānā as 'true dwelling', supported by Platts 1884 ('Fixed or permanent place or abode; dwelling.place') and WordNet evidence for dependability/truth and dwelling. This provides the direct ontological counterpoint to the refrain's assertion that this worldly country is an uninhabitable wasteland.",
+          "uncertainty": "",
+          "source_discovery_decisions": [
+            {
+              "target_id": "discovery:verse-3-line-2:2",
+              "entry_id": "platts1884.p363.hw17de11e5b9034850.h1",
+              "attested_form": "ṭhikānā",
+              "quotation": "Fixed or permanent place or abode; proper place; precise or exact spot, whereabouts; place, spot, site; dwelling.place, abode, residence, home, quarters",
+              "meaning_applied": "fixed or permanent abode; true dwelling; resting place",
+              "reason": "Platts 1884 confirms ṭhikānā as a masculine noun denoting a permanent place or abode, dwelling-place, residence, or home, which contextually resolves the impermanence and homelessness of the worldly country (des).",
+              "form_explanation": "",
+              "status": "matched",
+              "relation_kind": "exact_form",
+              "changes_gloss": false
+            }
+          ],
+          "wording_decisions": [
+            {
+              "target_id": "lexical:verse-3-line-2:2",
+              "reason": "'true dwelling' renders ṭhikānā as the authentic and permanent abode (Platts: 'Fixed or permanent place or abode; dwelling.place'), contrasting the fleeting, uninhabitable worldly realm described in the preceding verses.",
+              "chosen_candidate_id": "candidate:28c433e5cda7a266571c",
+              "expression": "true dwelling",
+              "kind": "compositional_phrase",
+              "english_evidence_ids": [
+                "wordnet:3.1:a:02474747",
+                "wordnet:3.1:n:03264208"
+              ],
+              "word_indices": [
+                2
+              ],
+              "ordinary_paraphrase": "the authentic and permanent place to live",
+              "component_word_indices": [
+                [
+                  2
+                ],
+                [
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "comparison": [
+        {
+          "id": "verse-3-line-1",
+          "supplied": "",
+          "chosen": "Kabīr says, listen, brother seekers:",
+          "material_change": true,
+          "reason": "No prior human translation was supplied; rendered faithfully following the signature formula and scoped naming convention for Kabīr."
+        },
+        {
+          "id": "verse-3-line-2",
+          "supplied": "",
+          "chosen": "The True Guru's Name is the true dwelling.",
+          "material_change": true,
+          "reason": "No prior human translation was supplied; translated ṭhikānā contextually as 'true dwelling' to resolve the homelessness of the desolate worldly country."
+        }
+      ]
+    },
+    "resolved_model": "google/gemini-3.7-flash",
+    "automatic_evidence_receipt": {
+      "lexical_support": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "source_discovery": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  },
+  "review_response": {
+    "reviews": [
+      {
+        "id": "verse-3-line-1",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "",
+        "reason": "The signature distich is faithfully translated. Speaker agency, imperative action, and fraternal vocative address are fully preserved in accordance with the scoped naming convention for Kabīr.",
+        "issues": [],
+        "component_judgments": {
+          "gloss": {
+            "status": "supported",
+            "reason": "Accurate lexical glosses for each token, matching grammatical roles and the scoped naming convention for Kabīr."
+          },
+          "frame": {
+            "status": "supported",
+            "reason": "The semantic frame accurately specifies speaker agency, direct address, and illocutionary force."
+          },
+          "english": {
+            "status": "supported",
+            "reason": "The English sentence preserves the signature bhaṇitā formula, direct address, and exact word-level segment alignments."
+          }
+        },
+        "writer_reservation_dispositions": []
+      },
+      {
+        "id": "verse-3-line-2",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "",
+        "reason": "The nominal copular assertion equating the True Guru's Name with the authentic dwelling place (ṭhikānā) is fully supported by Platts 1884 and contextually answers the impermanent des of the refrain.",
+        "issues": [],
+        "component_judgments": {
+          "gloss": {
+            "status": "supported",
+            "reason": "Glosses correctly identify sataguru, nāma, the nominal predicate complement ṭhikānā, and the copula hai."
+          },
+          "frame": {
+            "status": "supported",
+            "reason": "The semantic frame captures the elided genitive modifier and the ontological equation of the Name with the permanent dwelling."
+          },
+          "english": {
+            "status": "supported",
+            "reason": "The English draft accurately conveys the copular assertion without distorting agency, imagery, or segment alignments."
+          }
+        },
+        "writer_reservation_dispositions": [
+          {
+            "reservation_id": "b1983abd8ffb0468dbcb72b0fe6d6a79f90c9f4e19ba2729e37a296e43577bc3",
+            "status": "resolved",
+            "source_quote": "ठिकाना",
+            "explanation": "Rendering ṭhikānā as 'true dwelling' is grounded in Platts 1884 ('Fixed or permanent place or abode; dwelling.place') and directly answers the impermanent wandering in the desolate country ('desa ye vīrānā hai'). The alternatives ('resting place', 'refuge') are synonymous realizations of this spatial metaphor rather than competing readings differing in agency or grammar, resolving the reservation."
+          }
+        ]
+      }
+    ]
+  },
+  "legacy_context": {
+    "version": 1,
+    "source_sha256": "b0a31feb73116aa584b1245d56a32ed5684249827d4731bfa2c92a2270470b4e",
+    "gloss_sha256": "4145eebc1785070f4075c2f00e22d4a3b247bd3677c6562c8cabfcf76cb28bb4",
+    "candidate_sha256": "91bf770b7d207fb486d6617947b91dd9d0ed52d2043f2f85c0980bdc9aee965b",
+    "context_identity": "e1da5271ae1901e6cecdf59c11a25f68eb285eb952dcd7b242429bc76f134e61",
+    "reservations": [
+      {
+        "reservation_id": "b1983abd8ffb0468dbcb72b0fe6d6a79f90c9f4e19ba2729e37a296e43577bc3",
+        "line_id": "verse-3-line-2",
+        "candidate_sha256": "f8076946e23324718850eea5e5244058d97dac8babc92bd97cb1676c439112b6"
+      }
+    ],
+    "prior_concerns": [],
+    "origins": [
+      {
+        "reservation_id": "b1983abd8ffb0468dbcb72b0fe6d6a79f90c9f4e19ba2729e37a296e43577bc3",
+        "row": {
+          "id": "verse-3-line-2",
+          "literal_english": "The True Guru's Name is the true dwelling.",
+          "segments": [
+            {
+              "text": "The True Guru's ",
+              "word_indices": [
+                0
+              ]
+            },
+            {
+              "text": "Name ",
+              "word_indices": [
+                1
+              ]
+            },
+            {
+              "text": "is ",
+              "word_indices": [
+                3
+              ]
+            },
+            {
+              "text": "the true dwelling.",
+              "word_indices": [
+                2
+              ]
+            }
+          ],
+          "fidelity": {
+            "agency_and_image_preserved": true,
+            "all_meaning_accounted_for": true,
+            "unsupported_additions": [],
+            "notes": "Preserved the copular assertion equating the True Guru's Name with the permanent dwelling, directly answering the refrain's homeless wandering."
+          },
+          "material_alternatives": [
+            "The True Guru's Name is the resting place.",
+            "The True Guru's Name is the refuge."
+          ],
+          "human_review_recommended": true,
+          "choice_note": "Rendered ṭhikānā as 'true dwelling', supported by Platts 1884 ('Fixed or permanent place or abode; dwelling.place') and WordNet evidence for dependability/truth and dwelling. This provides the direct ontological counterpoint to the refrain's assertion that this worldly country is an uninhabitable wasteland.",
+          "uncertainty": "",
+          "source_discovery_decisions": [
+            {
+              "target_id": "discovery:verse-3-line-2:2",
+              "entry_id": "platts1884.p363.hw17de11e5b9034850.h1",
+              "attested_form": "ṭhikānā",
+              "quotation": "Fixed or permanent place or abode; proper place; precise or exact spot, whereabouts; place, spot, site; dwelling.place, abode, residence, home, quarters",
+              "meaning_applied": "fixed or permanent abode; true dwelling; resting place",
+              "reason": "Platts 1884 confirms ṭhikānā as a masculine noun denoting a permanent place or abode, dwelling-place, residence, or home, which contextually resolves the impermanence and homelessness of the worldly country (des).",
+              "form_explanation": "",
+              "status": "matched",
+              "relation_kind": "exact_form",
+              "changes_gloss": false
+            }
+          ],
+          "wording_decisions": [
+            {
+              "target_id": "lexical:verse-3-line-2:2",
+              "reason": "'true dwelling' renders ṭhikānā as the authentic and permanent abode (Platts: 'Fixed or permanent place or abode; dwelling.place'), contrasting the fleeting, uninhabitable worldly realm described in the preceding verses.",
+              "chosen_candidate_id": "candidate:28c433e5cda7a266571c",
+              "expression": "true dwelling",
+              "kind": "compositional_phrase",
+              "english_evidence_ids": [
+                "wordnet:3.1:a:02474747",
+                "wordnet:3.1:n:03264208"
+              ],
+              "word_indices": [
+                2
+              ],
+              "ordinary_paraphrase": "the authentic and permanent place to live",
+              "component_word_indices": [
+                [
+                  2
+                ],
+                [
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "context_identity": "e1da5271ae1901e6cecdf59c11a25f68eb285eb952dcd7b242429bc76f134e61"
+      }
+    ]
+  },
+  "reviewed_rows": [
+    {
+      "id": "verse-3-line-1",
+      "literal_english": "Kabīr says, listen, brother seekers:",
+      "segments": [
+        {
+          "text": "Kabīr",
+          "word_indices": [
+            1
+          ]
+        },
+        {
+          "text": " says, ",
+          "word_indices": [
+            0
+          ]
+        },
+        {
+          "text": "listen, ",
+          "word_indices": [
+            2
+          ]
+        },
+        {
+          "text": "brother ",
+          "word_indices": [
+            3
+          ]
+        },
+        {
+          "text": "seekers:",
+          "word_indices": [
+            4
+          ]
+        }
+      ],
+      "fidelity": {
+        "agency_and_image_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "notes": "Preserved the signature voice of Kabīr and the fraternal vocative address without adding an unevidenced interjection such as 'O'."
+      },
+      "material_alternatives": [
+        "Says Kabīr: listen, brother seekers:"
+      ],
+      "human_review_recommended": false,
+      "choice_note": "Followed the standard Sant bhaṇitā signature formula. Applied the scoped naming convention spelling 'Kabīr'. Preserved the appositional vocative 'bhāī sādhō' as 'brother seekers' directly dependent on the imperative 'listen'.",
+      "uncertainty": "",
+      "source_discovery_decisions": [],
+      "independent_review": {
+        "id": "verse-3-line-1",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "",
+        "reason": "The signature distich is faithfully translated. Speaker agency, imperative action, and fraternal vocative address are fully preserved in accordance with the scoped naming convention for Kabīr.",
+        "issues": [],
+        "component_judgments": {
+          "gloss": {
+            "status": "supported",
+            "reason": "Accurate lexical glosses for each token, matching grammatical roles and the scoped naming convention for Kabīr."
+          },
+          "frame": {
+            "status": "supported",
+            "reason": "The semantic frame accurately specifies speaker agency, direct address, and illocutionary force."
+          },
+          "english": {
+            "status": "supported",
+            "reason": "The English sentence preserves the signature bhaṇitā formula, direct address, and exact word-level segment alignments."
+          }
+        },
+        "writer_reservation_dispositions": []
+      }
+    },
+    {
+      "id": "verse-3-line-2",
+      "literal_english": "The True Guru's Name is the true dwelling.",
+      "segments": [
+        {
+          "text": "The True Guru's ",
+          "word_indices": [
+            0
+          ]
+        },
+        {
+          "text": "Name ",
+          "word_indices": [
+            1
+          ]
+        },
+        {
+          "text": "is ",
+          "word_indices": [
+            3
+          ]
+        },
+        {
+          "text": "the true dwelling.",
+          "word_indices": [
+            2
+          ]
+        }
+      ],
+      "fidelity": {
+        "agency_and_image_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "notes": "Preserved the copular assertion equating the True Guru's Name with the permanent dwelling, directly answering the refrain's homeless wandering."
+      },
+      "material_alternatives": [
+        "The True Guru's Name is the resting place.",
+        "The True Guru's Name is the refuge."
+      ],
+      "human_review_recommended": true,
+      "choice_note": "Rendered ṭhikānā as 'true dwelling', supported by Platts 1884 ('Fixed or permanent place or abode; dwelling.place') and WordNet evidence for dependability/truth and dwelling. This provides the direct ontological counterpoint to the refrain's assertion that this worldly country is an uninhabitable wasteland.",
+      "uncertainty": "",
+      "source_discovery_decisions": [
+        {
+          "target_id": "discovery:verse-3-line-2:2",
+          "entry_id": "platts1884.p363.hw17de11e5b9034850.h1",
+          "attested_form": "ṭhikānā",
+          "quotation": "Fixed or permanent place or abode; proper place; precise or exact spot, whereabouts; place, spot, site; dwelling.place, abode, residence, home, quarters",
+          "meaning_applied": "fixed or permanent abode; true dwelling; resting place",
+          "reason": "Platts 1884 confirms ṭhikānā as a masculine noun denoting a permanent place or abode, dwelling-place, residence, or home, which contextually resolves the impermanence and homelessness of the worldly country (des).",
+          "form_explanation": "",
+          "status": "matched",
+          "relation_kind": "exact_form",
+          "changes_gloss": false
+        }
+      ],
+      "wording_decisions": [
+        {
+          "target_id": "lexical:verse-3-line-2:2",
+          "reason": "'true dwelling' renders ṭhikānā as the authentic and permanent abode (Platts: 'Fixed or permanent place or abode; dwelling.place'), contrasting the fleeting, uninhabitable worldly realm described in the preceding verses.",
+          "chosen_candidate_id": "candidate:28c433e5cda7a266571c",
+          "expression": "true dwelling",
+          "kind": "compositional_phrase",
+          "english_evidence_ids": [
+            "wordnet:3.1:a:02474747",
+            "wordnet:3.1:n:03264208"
+          ],
+          "word_indices": [
+            2
+          ],
+          "ordinary_paraphrase": "the authentic and permanent place to live",
+          "component_word_indices": [
+            [
+              2
+            ],
+            [
+              2
+            ]
+          ]
+        }
+      ],
+      "independent_review": {
+        "id": "verse-3-line-2",
+        "passes": true,
+        "human_review_recommended": false,
+        "agency_preserved": true,
+        "imagery_preserved": true,
+        "all_meaning_accounted_for": true,
+        "unsupported_additions": [],
+        "material_choice": "",
+        "reason": "The nominal copular assertion equating the True Guru's Name with the authentic dwelling place (ṭhikānā) is fully supported by Platts 1884 and contextually answers the impermanent des of the refrain.",
+        "issues": [],
+        "component_judgments": {
+          "gloss": {
+            "status": "supported",
+            "reason": "Glosses correctly identify sataguru, nāma, the nominal predicate complement ṭhikānā, and the copula hai."
+          },
+          "frame": {
+            "status": "supported",
+            "reason": "The semantic frame captures the elided genitive modifier and the ontological equation of the Name with the permanent dwelling."
+          },
+          "english": {
+            "status": "supported",
+            "reason": "The English draft accurately conveys the copular assertion without distorting agency, imagery, or segment alignments."
+          }
+        },
+        "writer_reservation_dispositions": [
+          {
+            "reservation_id": "b1983abd8ffb0468dbcb72b0fe6d6a79f90c9f4e19ba2729e37a296e43577bc3",
+            "status": "resolved",
+            "source_quote": "ठिकाना",
+            "explanation": "Rendering ṭhikānā as 'true dwelling' is grounded in Platts 1884 ('Fixed or permanent place or abode; dwelling.place') and directly answers the impermanent wandering in the desolate country ('desa ye vīrānā hai'). The alternatives ('resting place', 'refuge') are synonymous realizations of this spatial metaphor rather than competing readings differing in agency or grammar, resolving the reservation."
+          }
+        ]
+      }
+    }
+  ]
+}

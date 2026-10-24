@@ -1,0 +1,11 @@
+{
+  "source_commit": "347a936e",
+  "scope": "Actual Rehna source/gloss/writer/review rows; dictionary acquisition and support corpus are outside this binding regression. Their presence is not certified by this fixture.",
+  "sanitization": "Removed path-bearing route/proof/lookup wrappers and paid usage. Replaced automatic receipt hashes with fixed test hashes. Linguistic source/gloss/writer/review rows unchanged. Test builds local content-addressed proof for preserved legacy context.",
+  "authored_gloss_sha256": "38594cd1d23dd0fa0d76e190b3c47ef0df1525cfcb09346a54b698ee021a1abc",
+  "prepared_gloss_sha256": "4145eebc1785070f4075c2f00e22d4a3b247bd3677c6562c8cabfcf76cb28bb4",
+  "legacy_function_sha256": {
+    "translate": "2a263dbdfdb3d9f961ab4659b5f59a0566fb5842a422141c04910dc086b997b5",
+    "review_translation": "77878522a616da0f91d56d641ed11c6bdbaefe09b5452dda68deb421017ab308"
+  }
+}

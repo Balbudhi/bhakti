@@ -47,7 +47,14 @@ The subsequent source-only two-row trial delivered the exact native dictionary
 entry, 61 English definitions and actual embedding rankings to writer/reviewer,
 but still produced and approved an unsupported predicate qualifier. It also
 exposed an original/derived glossary mismatch in writer-reservation validation,
-which stopped the run before repair. Automatic source acquisition currently runs
+which stopped the run before repair. That binding defect is now corrected:
+immutable writer evidence names both exact glossary representations, and each
+consumer validates the representation it actually receives. Legacy review-only
+renewal checks the original writer input fingerprint before adding a new binding
+wrapper; it preserves the old proof and does not purchase another writer call.
+Changed source/gloss/grammar or missing original evidence still holds. The saved
+trial remains rejected on content and has not been replayed.
+Automatic source acquisition currently runs
 after the initial glossary; pre-gloss source evidence is the next ordering fix.
 These are demonstrated gaps, not qualified translation quality. The complete
 trial cost $0.20410305; all responses remain available without a paid replay.

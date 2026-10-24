@@ -80,6 +80,9 @@ def validated_writer_history(route_state_path):
         else:
             rows = candidate.get('packet', {}).get('translations', [])
         history.append({'rows': writer_rows(rows), 'coordinator_acceptance': candidate.get('writer_coordinator_acceptance'),
+                        'gloss_binding': candidate.get('writer_gloss_binding'),
+                        'writer_fingerprint': candidate.get('fingerprint'), 'writer_model': attempt['model'],
+                        'automatic_evidence_receipt': candidate.get('automatic_evidence_receipt', {}),
                         'proof': {'route_state_path': str(state_path), 'attempt_id': attempt['attempt_id'],
                                   'candidate_sha256': attempt['candidate_sha256']}})
     return history
@@ -92,13 +95,11 @@ def verify_writer_proof(proof, row):
         if len(records) != 1 or row not in records[0]['rows']:
             raise ValueError('writer reservation lost its original route evidence')
     else:
-        path = Path(proof['path'])
-        candidate = json.loads(path.read_text())
-        if digest(candidate) != proof['candidate_sha256'] or row not in writer_rows(candidate['packet']['translations']):
+        if row not in writer_proof_rows(proof):
             raise ValueError('writer reservation original draft changed')
 
 
-def writer_review_context(lines, gloss_rows, translation_rows, *, context_identity, prior_candidates=(), previous_context=None):
+def writer_review_context(lines, gloss_rows, translation_rows, *, context_identity, prior_candidates=(), previous_context=None, glossary_binding=None):
     current = writer_rows(translation_rows)
     by_id = {row['id']: row for row in current}
     targets = {row['id'] for row in lines}
@@ -123,27 +124,37 @@ def writer_review_context(lines, gloss_rows, translation_rows, *, context_identi
     for row in current:
         if reservation_fields(row) is not None and not any(item['row'] == row for item in origins.values()):
             raise ValueError('writer reservation lacks immutable draft evidence')
-    if not reservations:
+    derived = glossary_binding is not None
+    if derived and glossary_binding['review_sha256'] != digest(gloss_rows):
+        raise ValueError('prepared glossary differs from writer binding')
+    if not reservations and not derived:
         return None
     prior_concerns = [{'reservation_id': rid, 'fields': reservation_fields(item['row'])}
                       for rid, item in origins.items() if item['row'] != by_id.get(item['row']['id'])]
-    return {'version': 1, 'source_sha256': digest(lines), 'gloss_sha256': digest(gloss_rows),
+    result = {'version': 2 if derived else 1, 'source_sha256': digest(lines),
+            'gloss_sha256': glossary_binding['authored_sha256'] if derived else digest(gloss_rows),
             'candidate_sha256': digest(current), 'context_identity': context_identity,
             'reservations': list(reservations.values()), 'prior_concerns': prior_concerns,
             'origins': list(origins.values())}
+    if derived:
+        result['review_gloss_sha256'] = glossary_binding['review_sha256']
+    return result
 
 
-def writer_review_context_errors(lines, gloss_rows, translation_rows, context, expected_context_identity):
+def writer_review_context_errors(lines, gloss_rows, translation_rows, context, expected_context_identity, *, gloss_representation='authored'):
     try:
-        if not isinstance(context, dict) or context.get('version') != 1:
+        if not isinstance(context, dict) or context.get('version') not in (1, 2):
             return ['writer reservation context missing or invalid']
-        for field, expected in (('source_sha256', digest(lines)), ('gloss_sha256', digest(gloss_rows)),
+        if gloss_representation not in ('authored', 'review'):
+            return ['unknown glossary representation']
+        gloss_key = 'review_gloss_sha256' if context['version'] == 2 and gloss_representation == 'review' else 'gloss_sha256'
+        for field, expected in (('source_sha256', digest(lines)), (gloss_key, digest(gloss_rows)),
                                 ('candidate_sha256', digest(writer_rows(translation_rows))),
                                 ('context_identity', expected_context_identity)):
             if expected is None or context.get(field) != expected:
                 return ['writer reservation ' + field + ' changed or unbound']
         references = context['reservations']; origins = context['origins']
-        if not references or len({r['reservation_id'] for r in references}) != len(references):
+        if (not references and context['version'] == 1) or len({r['reservation_id'] for r in references}) != len(references):
             return ['writer reservation population invalid']
         if {r['reservation_id'] for r in references} != {r['reservation_id'] for r in origins} or len(origins) != len(references):
             return ['writer reservation origin population invalid']
@@ -178,20 +189,38 @@ def reservation_prompt_context(context, target_ids):
         return None
     ids = {row['reservation_id'] for row in refs}
     return {key: copy.deepcopy(context[key]) for key in
-            ('version', 'source_sha256', 'gloss_sha256', 'candidate_sha256', 'context_identity')} | {
+            ('version', 'source_sha256', 'gloss_sha256', 'review_gloss_sha256', 'candidate_sha256', 'context_identity') if key in context} | {
                 'reservations': copy.deepcopy(refs),
                 'prior_concerns': [copy.deepcopy(row) for row in context['prior_concerns'] if row['reservation_id'] in ids]}
 
-def writer_proof_rows(proof):
+def writer_proof_history(proof):
+    """Read existing writer evidence, including an explicit legacy binding adoption."""
     if 'route_state_path' in proof:
-        records = [record for record in validated_writer_history(proof['route_state_path']) if record['proof'] == proof]
-        if len(records) != 1:
+        records = validated_writer_history(proof['route_state_path'])
+        if sum(record['proof'] == proof for record in records) != 1:
             raise ValueError('writer evidence attempt missing')
-        return records[0]['rows']
+        return records
     candidate = json.loads(Path(proof['path']).read_text())
     if digest(candidate) != proof['candidate_sha256']:
         raise ValueError('immutable writer evidence changed')
-    return writer_rows(candidate['packet']['translations'])
+    record = {'rows': writer_rows(candidate['packet']['translations']), 'proof': proof,
+              'coordinator_acceptance': candidate.get('writer_coordinator_acceptance'),
+              'gloss_binding': candidate.get('writer_gloss_binding'),
+              'writer_fingerprint': candidate.get('fingerprint'), 'writer_model': candidate.get('resolved_model'),
+              'automatic_evidence_receipt': candidate.get('automatic_evidence_receipt', {})}
+    previous = candidate.get('writer_binding_predecessor')
+    history = []
+    if previous is not None:
+        history = writer_proof_history(previous)
+        origin = next(item for item in history if item['proof'] == previous)
+        if (origin['rows'] != record['rows'] or origin.get('gloss_binding') is not None
+                or origin['automatic_evidence_receipt'] != record['automatic_evidence_receipt']):
+            raise ValueError('legacy writer binding adoption changed original evidence')
+    return history + [record]
+
+
+def writer_proof_rows(proof):
+    return next(record['rows'] for record in writer_proof_history(proof) if record['proof'] == proof)
 
 
 def writer_evidence_receipt(history, context_identity, previous_context=None):
@@ -210,16 +239,35 @@ def check_writer_evidence(translations, lines, *, final_consumer=False):
     current = writer_rows(translations['packet']['translations'])
     if writer_proof_rows(receipt['current']) != current:
         raise ValueError('current translation differs from immutable writer evidence')
+    proof = receipt['current']
+    current_history = writer_proof_history(proof)
+    record = next(item for item in current_history if item['proof'] == proof)
+    binding = record.get('gloss_binding')
+    automatic = record.get('automatic_evidence_receipt', {})
+    if translations.get('writer_gloss_binding') != binding:
+        raise ValueError('writer glossary binding differs from immutable writer evidence')
+    context = translations.get('writer_review_context')
+    if binding is not None:
+        if (binding.get('version') != 1 or set(binding) != {'version', 'authored_sha256', 'review_sha256'}
+                or any(not isinstance(binding[key], str) or len(binding[key]) != 64
+                       for key in ('authored_sha256', 'review_sha256'))
+                or translations.get('automatic_evidence_receipt', {}) != automatic):
+            raise ValueError('invalid immutable writer glossary binding')
+        if (not context or context.get('version') != 2
+                or context.get('gloss_sha256') != binding['authored_sha256']
+                or context.get('review_gloss_sha256') != binding['review_sha256']):
+            raise ValueError('authored or prepared glossary binding changed')
+    elif context and context.get('version') == 2:
+        raise ValueError('derived glossary context lacks immutable writer binding')
     targets = {row['id'] for row in lines}
     required = set()
     history = list(receipt['history'])
-    if 'route_state_path' in receipt['current']:
-        current_items = [item for item in history if item['proof'] == receipt['current']]
-        if len(current_items) != 1:
-            raise ValueError('current writer context missing')
-        origin_context = current_items[0]['context_identity']
-        history.extend({'proof': record['proof'], 'context_identity': origin_context}
-                       for record in validated_writer_history(receipt['current']['route_state_path']))
+    current_items = [item for item in history if item['proof'] == receipt['current']]
+    if len(current_items) != 1:
+        raise ValueError('current writer context missing')
+    origin_context = current_items[0]['context_identity']
+    history.extend({'proof': record['proof'], 'context_identity': origin_context}
+                   for record in current_history)
     for item in history:
         for row in writer_proof_rows(item['proof']):
             if row.get('id') in targets and reservation_fields(row) is not None:

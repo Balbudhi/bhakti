@@ -100,9 +100,15 @@ synonym-only objections did not recur. Separately, the program stopped at
 `writer reservation gloss_sha256 changed or unbound`; no corrective round ran.
 This is a failed qualification, not an accepted translation or historical repair.
 
-Two demonstrated engineering issues now take priority: reconcile the exact
-original/derived glossary representation used by writer reservation validation,
-and deliver automatic source-dictionary evidence before meaning construction.
+The demonstrated original/derived glossary mismatch is now fixed. Each exact
+view is bound to immutable writer evidence, including confident writers with no
+reservations. Legacy renewal authenticates the original writer request before
+creating a new wrapper, preserves the original proof, and performs only review;
+changed glossary/grammar and missing predecessor evidence fail before acceptance.
+Thirteen portable saved-artifact regressions and 132 private compatibility checks
+passed; 80 integrated caller/binding/owner tests also pass. No old failed trial
+has been replayed or accepted. The remaining ordering issue is to deliver
+automatic source-dictionary evidence before meaning construction.
 Currently automatic acquisition runs after the first glossary and reaches writer
 and review; known exact native lookup spans need no model discovery before that
 first call. Better output from changing the order remains to be measured. Preserve

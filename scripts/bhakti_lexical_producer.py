@@ -536,6 +536,12 @@ def _legacy_queries(lines, rows, bindings, requested):
                 'english_candidates': [{'expression': gloss, 'kind': 'word', 'english_lemmas': [gloss]}]})
 
 
+def writer_gloss_binding(authored_rows, review_rows):
+    """Name exact glossary representations; this alone grants no review authority."""
+    return {'version': 1, 'authored_sha256': support.digest(authored_rows),
+            'review_sha256': support.digest(review_rows)}
+
+
 def prepare_translation(song_dir, audited, glosses, options):
     import bhakti_translation_policy as policy
     config = settings(options)
@@ -562,6 +568,8 @@ def prepare_translation(song_dir, audited, glosses, options):
         performance_order=getattr(options, 'semantic_performance_order', audited['packet'].get('performance_order', [])),
         source_discovery=source_evidence)
     augmented['packet']['glosses'] = produced['gloss_rows']
+    local.semantic_writer_gloss_binding = writer_gloss_binding(
+        glosses['packet']['glosses'], produced['gloss_rows'])
     if produced['packet'] is not None:
         local.semantic_lexical_support = produced['packet']
     if source_evidence is not None:
