@@ -181,10 +181,11 @@ User evidence: installed-iPhone screenshot shows the player across the middle
 of scrolling lyrics; rotation is the suspected trigger. The existing player is
 a body-level sibling of the animated stage, with no transformed ancestor.
 The defect cannot be reproduced in the available desktop in-app browser.
-WebKit reports 301172 and 218983 describe related fixed-bottom drift and
+WebKit reports [301172](https://bugs.webkit.org/show_bug.cgi?id=301172) and
+[218983](https://bugs.webkit.org/show_bug.cgi?id=218983) describe related fixed-bottom drift and
 rotation/keyboard viewport failures, but do not establish this device's cause.
 
-Current step: replace bottom-edge attachment with a top anchor at the dynamic
+Implemented: replace bottom-edge attachment with a top anchor at the dynamic
 viewport height, translated by the player's own height. Keep the same DOM/audio
 node and safe-area padding; no scroll resets, guessed keyboard offsets, polling
 or VisualViewport compensation. The playlist and status use the same viewport
@@ -210,3 +211,10 @@ Contract: 265 ready/no problems. Audio quality: no errors. Python compilation,
 whitespace and player/queue JS checks pass. The trim audit retains the same six
 legacy-evidence failures previously recorded (104 checked); no audio/content
 changes are part of this patch.
+
+Published as `2aae8777`; Pages deployment `40064228676` succeeded. The live
+page loads `app.css?v=dock-20261023`. Live portrait → landscape → portrait
+checks again measured zero player-bottom gap with uninterrupted playback.
+Mobile screenshot: `/tmp/bhakti-ui-evidence/player-dock-live.png` (local evidence).
+Remaining acceptance: confirm the intermittent symptom on the affected iPhone
+after rotation; this desktop browser cannot reproduce that OS-level condition.
