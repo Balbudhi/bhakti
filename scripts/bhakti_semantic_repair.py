@@ -558,6 +558,7 @@ def assert_baseline(baseline, translations):
 
 
 def source_evidence(pipeline, song_dir, audited):
+    pipeline.bhakti_reviewed_source.require_current(song_dir, audited)
     source = pipeline.read_packet(song_dir / '.transcription/source.json') or {}
     stable_fields = ('source_url', 'id', 'youtube_id', 'audio_sha256', 'source_sha256',
                      'recording_sha256', 'applied_trim', 'trim_start', 'trim_end')
@@ -689,6 +690,13 @@ def candidate_structure_valid(pipeline, lines, glosses, translations):
 
 def require_acceptance(pipeline, packet_dir, glosses=None, translations=None, summary=None, audited=None, accepted_state=None):
     summary = summary or {}
+    song_dir = packet_dir.parent.parent
+    if pipeline.bhakti_reviewed_source.active(song_dir):
+        if audited is None:
+            audited = pipeline.bhakti_reviewed_source.load(song_dir)
+        pipeline.bhakti_reviewed_source.require_current(song_dir, audited)
+    elif isinstance(audited, dict) and 'reviewed_source' in audited:
+        pipeline.bhakti_reviewed_source.require_current(song_dir, audited)
     if glosses is None: glosses = pipeline.read_packet(packet_dir / '04-glosses.json')
     if translations is None: translations = pipeline.read_packet(packet_dir / '05-translation.json')
     marker = pipeline.read_packet(packet_dir / 'semantic-repair-required.json')
@@ -1191,6 +1199,10 @@ def reconcile_source_gloss(pipeline, round_dir, audited, glosses, options):
     return local, result
 
 def complete(pipeline, song_dir, audited, job, options):
+    pipeline.bhakti_reviewed_source.require_current(song_dir, audited)
+    reviewed_languages = pipeline.bhakti_reviewed_source.corrected_languages(audited)
+    if reviewed_languages is not None:
+        job = {**job, 'languages': reviewed_languages}
     packet_dir = song_dir / '.transcription/pipeline'
     state_path = packet_dir / 'semantic-repair-state.json'
     prior_state = pipeline.read_packet(state_path) or {}

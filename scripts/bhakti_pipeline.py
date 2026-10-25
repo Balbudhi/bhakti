@@ -42,6 +42,7 @@ import bhakti_source_discovery
 import bhakti_translation_policy
 import bhakti_semantic_repair
 import bhakti_word_accountability
+import bhakti_reviewed_source
 import editorial_baselines
 from display_word_map import clean_display_word_map
 import naming
@@ -114,6 +115,7 @@ def semantic_repair_issue_errors(lines, glosses, issues):
 
 
 def complete_semantics(song_dir, audited, job, options):
+    bhakti_reviewed_source.require_current(song_dir, audited)
     return bhakti_semantic_repair.complete(sys.modules[__name__], song_dir, audited, job, options)
 
 
@@ -2712,6 +2714,12 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
     completion_cap = region.get('max_completion_tokens', 65536)
     if type(completion_cap) is not int or not 1 <= completion_cap <= 65536:
         raise ValueError('joint timing max_completion_tokens must be an integer from 1 to 65536')
+    reasoning_effort = region.get('reasoning_effort', 'high')
+    if not isinstance(reasoning_effort, str) or reasoning_effort not in {'low', 'medium', 'high'}:
+        raise ValueError('joint timing reasoning_effort must be low, medium, or high')
+    prompt_version = region.get('prompt_version', 1)
+    if type(prompt_version) is not int or prompt_version not in (1, 2):
+        raise ValueError('joint timing prompt_version must be 1 or 2')
     import bhakti_model_routes as routes
     identity = timing_input_identity(audio, region['target_occurrences'], source_identity)
     identity.update(region=region, duration=duration)
@@ -2732,20 +2740,32 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
                             '-i',str(audio),'-t',f"{selected['clip_end']-selected['clip_start']:.3f}",
                             '-vn','-c:a','aac','-b:a','192k',str(clip)],check=True)
             task_role = ("PRIMARY ONSET MEASUREMENT" if pass_index == 0 else "INDEPENDENT FIRST-SYLLABLE AUDIT: re-listen and derive every start anew")
+            preceding, following = region['preceding_context'], region['following_context']
+            clock = f"SOURCE CLIP: {selected['clip_start']:.3f}–{selected['clip_end']:.3f} seconds."
+            start_schema = {'type': 'number'}
+            if prompt_version == 2:
+                # The model receives an excerpt, so expose only that clock.
+                # Global offsets remain in the retained region and validator.
+                clip_duration = selected['clip_end'] - selected['clip_start']
+                clock = f"EXCERPT CLOCK: 0.000–{clip_duration:.3f} seconds."
+                clean_context = lambda row: ({key: value for key, value in row.items()
+                    if key not in {'coarse_source_start', 'routing_only'}} if row is not None else None)
+                preceding, following = clean_context(preceding), clean_context(following)
+                start_schema = {'type': 'number', 'minimum': 0, 'maximum': clip_duration}
             prompt = f"""TASK: {task_role}.
 Listen independently to this complete contextual excerpt. The transcript and order are fixed. Do not correct, normalize, regroup, drop or add lyrics. Only locate each exact first audible syllable, including every explicit consecutive repetition listed separately below. Embedded repetitions in a target's source text remain one target. Lead, response and pickup starts count. Return times relative to this clip, never a later repetition. If the requested initial syllable is cut off, masked, absent or ambiguous, declare uncertainty; do not guess.
-SOURCE CLIP: {selected['clip_start']:.3f}–{selected['clip_end']:.3f} seconds.
-PRECEDING CONTEXT ONLY: {json.dumps(region['preceding_context'],ensure_ascii=False)}
+{clock}
+PRECEDING CONTEXT ONLY: {json.dumps(preceding,ensure_ascii=False)}
 EXACT ORDERED TIMING TARGETS: {json.dumps(expanded,ensure_ascii=False)}
-FOLLOWING CONTEXT ONLY: {json.dumps(region['following_context'],ensure_ascii=False)}
+FOLLOWING CONTEXT ONLY: {json.dumps(following,ensure_ascii=False)}
 Return every timing_id exactly once in order, with start, uncertainty, and onset_at_clip_start. The last boolean may be true only when a COMPLETE initial syllable begins at the clip boundary. Already ongoing syllables are uncertain, not clear zero starts. Return JSON {{"starts":[{{"timing_id":"{expanded[0]['timing_id']}","start":0.0,"uncertainty":"","onset_at_clip_start":false}}]}}."""
             schema = {'type':'object','properties':{'starts':{'type':'array','minItems':len(expanded),'maxItems':len(expanded),
-                'items':{'type':'object','properties':{'timing_id':{'type':'string'},'start':{'type':'number'},
+                'items':{'type':'object','properties':{'timing_id':{'type':'string'},'start':start_schema,
                     'uncertainty':{'type':'string'},'onset_at_clip_start':{'type':'boolean'}},
                     'required':['timing_id','start','uncertainty','onset_at_clip_start'],'additionalProperties':False}}},
                 'required':['starts'],'additionalProperties':False}
             kwargs = {'audio':clip,'timeout':ctx.call_timeout_seconds,'response_schema':schema,
-                      'schema_name':'bhakti_joint_starts','reasoning_effort':'high','max_completion_tokens':completion_cap}
+                      'schema_name':'bhakti_joint_starts','reasoning_effort':reasoning_effort,'max_completion_tokens':completion_cap}
             if ctx.transport_context is not None:
                 kwargs.update(unit_context=ctx.transport_context,deadline_at=ctx.deadline_at)
             response = gemini.call(ctx.model,gemini.key(),prompt,**kwargs)
@@ -3498,6 +3518,7 @@ def align_source_adoption(song_dir, audited, audio, options, existing, identity,
 
 
 def align(song_dir: Path, audited: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
+    bhakti_reviewed_source.require_current(song_dir, audited)
     target = song_dir / ".transcription" / "pipeline" / "03-timing.json"
     existing = read_packet(target)
     cached_errors = timing_uncertainty_errors(existing) if existing else []
@@ -5703,6 +5724,10 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
 
 def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None) -> None:
     require_completed_boundary_transaction(song_dir)
+    bhakti_reviewed_source.require_current(song_dir, audited)
+    reviewed_languages = bhakti_reviewed_source.corrected_languages(audited)
+    if reviewed_languages is not None:
+        job = {**job, 'languages': reviewed_languages}
     bhakti_semantic_repair.require_acceptance(sys.modules[__name__], song_dir / '.transcription/pipeline', glosses, translations, audited=audited)
     accepted_state = read_packet(song_dir / '.transcription/pipeline/semantic-repair-state.json') or {}
     saved_translation = read_packet(song_dir / '.transcription/pipeline/05-translation.json')
@@ -5940,6 +5965,9 @@ def language_hold_packet(song_dir: Path, source: dict[str, Any], raw: dict[str, 
 
 def hydrate_pipeline_artifacts(packet_dir: Path) -> None:
     require_completed_boundary_transaction(packet_dir.parent.parent)
+    if bhakti_reviewed_source.active(packet_dir.parent.parent):
+        # Never hydrate the immutable raw audit from a corrected summary view.
+        bhakti_reviewed_source.load(packet_dir.parent.parent)
     summary = read_packet(packet_dir / "song-packet.json") or {}
     glosses = read_packet(packet_dir / '04-glosses.json') or summary.get('glosses')
     translations = read_packet(packet_dir / '05-translation.json') or summary.get('translation')
@@ -5993,7 +6021,15 @@ def require_trim_adoption(song_dir: Path, artifact: dict[str, Any]) -> None:
 
 
 def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
-    require_completed_boundary_transaction(ROOT / "songs" / job["slug"])
+    original_song = ROOT / 'songs' / job['slug']
+    require_completed_boundary_transaction(original_song)
+    if bhakti_reviewed_source.active(original_song):
+        if options.force or options.source_witness_audit:
+            raise ValueError('reviewed source: source refresh requires separate reviewed adoption')
+        # Reject unsupported/changed originals before any legacy source-cache
+        # rebuilding can overwrite the evidence named by a review declaration.
+        bhakti_reviewed_source.prepare(original_song,
+            read_packet(original_song / '.transcription/pipeline/02-transcript-audit.json'))
     song_dir, source = intake(job, force=options.force)
     require_completed_boundary_transaction(song_dir)
     started = time.time()
@@ -6023,6 +6059,10 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
         # it was asked to repair.
         shutil.rmtree(packet_dir / "long-timing-segments", ignore_errors=True)
     audited = audit_transcript(song_dir, raw, audio, options)
+    if bhakti_reviewed_source.active(song_dir):
+        if audited.get('merge_contract_rebuilt'):
+            raise ValueError('reviewed source: source merge changed; separate adoption required')
+        audited = bhakti_reviewed_source.prepare(song_dir, audited)
     if audited.pop("merge_contract_rebuilt", False):
         # A new deterministic reconciliation can alter canonical lines and
         # occurrence order. Reuse audio evidence but never keep glosses or
@@ -6035,7 +6075,11 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
         for directory in ("long-timing-segments", "gloss-batches", "translation-batches", "translation-review-batches"):
             shutil.rmtree(packet_dir / directory, ignore_errors=True)
         write_json(packet_dir / "02-transcript-audit.json", audited)
-    if apply_verified_text_corrections(song_dir, audited):
+    if ('_source_route' in audited
+            and apply_verified_text_corrections(song_dir, copy.deepcopy(audited))):
+        raise ValueError('reviewed source: migrate legacy text corrections to an explicit reviewed source declaration')
+    if ('reviewed_source' not in audited and '_source_route' not in audited
+            and apply_verified_text_corrections(song_dir, audited)):
         packet_dir = song_dir / ".transcription" / "pipeline"
         write_json(packet_dir / "02-transcript-audit.json", audited)
         # Gloss and translation results depend on the old source surface.
@@ -6101,7 +6145,7 @@ def _execute_intake_jobs(options: argparse.Namespace, jobs: list[dict[str, Any]]
                     require_completed_boundary_transaction(song_dir)
                     hydrate_pipeline_artifacts(packet_dir)
                     source = read_packet(song_dir / ".transcription" / "source.json") or {}
-                    audited = read_packet(packet_dir / "02-transcript-audit.json")
+                    audited = bhakti_reviewed_source.load(song_dir)
                     timing = read_packet(packet_dir / "03-timing.json")
                     glosses = read_packet(packet_dir / "04-glosses.json")
                     translations = read_packet(packet_dir / "05-translation.json")

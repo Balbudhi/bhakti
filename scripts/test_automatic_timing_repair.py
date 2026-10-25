@@ -172,6 +172,7 @@ class RoutedTimingTests(unittest.TestCase):
         for item in call.call_args_list:
             self.assertEqual(item.args[0],self.routes.FLASH_MODEL)
             self.assertEqual(item.kwargs['max_completion_tokens'],65536)
+            self.assertEqual(item.kwargs['reasoning_effort'],'high')
             self.assertIn('deadline_at',item.kwargs)
             self.assertIn('unit_context',item.kwargs)
             self.assertLessEqual(item.kwargs['timeout'],600)
@@ -201,6 +202,23 @@ class RoutedTimingTests(unittest.TestCase):
         for cap in (True,None,0,-1,1.5,65537,'4096'):
             self.region['max_completion_tokens']=cap
             with self.subTest(cap=cap),patch.object(p,'timing_input_identity',side_effect=AssertionError('invalid cap reached audio identity')):
+                with self.assertRaises(ValueError):self.invoke()
+        self.assertFalse(list(self.root.rglob('route-state.json')))
+
+    def test_explicit_reasoning_binds_both_hearings_and_cache(self):
+        with patch.object(p.subprocess,'run'),patch.object(p.gemini,'key',return_value='dummy'),patch.object(p.gemini,'call',side_effect=lambda *a,**kw:self.packet()) as call:
+            original=self.invoke()
+            self.region['reasoning_effort']='medium'
+            revised=self.invoke()
+            self.assertEqual(self.invoke(),revised)
+        self.assertEqual([item.kwargs['reasoning_effort'] for item in call.call_args_list],['high','high','medium','medium'])
+        self.assertNotEqual(original['input_fingerprint'],revised['input_fingerprint'])
+        self.assertEqual(len(list(self.root.rglob('accepted-result.json'))),2)
+
+    def test_invalid_reasoning_fails_before_audio_or_route_work(self):
+        for effort in (True,None,'','minimal','medium ',[],{}):
+            self.region['reasoning_effort']=effort
+            with self.subTest(effort=effort),patch.object(p,'timing_input_identity',side_effect=AssertionError('invalid reasoning reached audio identity')):
                 with self.assertRaises(ValueError):self.invoke()
         self.assertFalse(list(self.root.rglob('route-state.json')))
 
