@@ -54,7 +54,11 @@ token. This is not a fresh audio/transcription/timing qualification or a claim
 that every interpretive question is settled. Owner-approved reference readers
 are unchanged. Private per-line decisions and validation records are stored at
 `.transcription/library-review/gurbani-20261025/` and excluded from the website.
-Publication is the remaining step for this editorial slice.
+Published in `08f86b5b`; Pages run `40205429047` succeeded. All 32 released
+reader/catalogue/homepage files match the committed bytes. The live in-app
+Gurbāṇī filter shows all 15 songs, including the Guru Gobind Singh works, and
+the live Gobind popup displays its name identity. The broader library repair
+and previously recorded acoustic/backlog holds remain unfinished.
 
 ## Outcome and current step
 
