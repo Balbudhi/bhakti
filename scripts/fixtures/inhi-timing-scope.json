@@ -1,0 +1,1239 @@
+{
+  "region": {
+    "index": 0,
+    "grid": "joint-context",
+    "clip_start": 0.0,
+    "clip_end": 425.761,
+    "target_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62
+    ],
+    "target_occurrences": [
+      {
+        "occurrence_id": "occ-000",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-001",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-002",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-003",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-004",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-005",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-006",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-007",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-008",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-009",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-010",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-011",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-012",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-013",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-014",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-015",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-016",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-017",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-018",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-019",
+        "ref": "l7",
+        "repeats": 1,
+        "source_text": "ਜੁਧ ਜਿਤੇ",
+        "roman": "Judh jite",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-020",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-021",
+        "ref": "l7",
+        "repeats": 1,
+        "source_text": "ਜੁਧ ਜਿਤੇ",
+        "roman": "Judh jite",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-022",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-023",
+        "ref": "l9",
+        "repeats": 4,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ ਸੁ ਦਾਨ ਕਰੇ",
+        "roman": "Inhī ke prasādi su dān kare",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-024",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-025",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-026",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-027",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-028",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-029",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-030",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-031",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-032",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-033",
+        "ref": "l10",
+        "repeats": 1,
+        "source_text": "ਅਘ ਅਉਘ ਟਰੈ",
+        "roman": "Agh augh ṭarai",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-034",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-035",
+        "ref": "l10",
+        "repeats": 1,
+        "source_text": "ਅਘ ਅਉਘ ਟਰੈ",
+        "roman": "Agh augh ṭarai",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-036",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-037",
+        "ref": "l11",
+        "repeats": 4,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਫੁਨ ਧਾਮ ਭਰੇ",
+        "roman": "Inhī kī kripā phun dhām bhare",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-038",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-039",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-040",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-041",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-042",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-043",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-044",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-045",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-046",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-047",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-048",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-049",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-050",
+        "ref": "l12",
+        "repeats": 2,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ ਸੁ ਬਿਦਿਆ ਲਈ",
+        "roman": "Inhī ke prasādi su bidiā laī",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-051",
+        "ref": "l13",
+        "repeats": 4,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਸਭ ਸਤ੍ਰੁ ਮਰੇ",
+        "roman": "Inhī kī kripā sabh satru mare",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-052",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-053",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-054",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-055",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-056",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-057",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-058",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-059",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-060",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-061",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-062",
+        "ref": "l3",
+        "repeats": 3,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      }
+    ],
+    "preceding_context": null,
+    "following_context": null,
+    "max_completion_tokens": 8192,
+    "reasoning_effort": "low",
+    "prompt_version": 2
+  },
+  "duration": 425.761,
+  "source_identity": {
+    "version": 2,
+    "audio_sha256": "dedd3e987672b36f433a8d97f944cdc666e4afdb4635755d50db54216124ccc1",
+    "source_identity": {
+      "trim": {
+        "application_version": 2,
+        "applied": false,
+        "status": "no-trim",
+        "trim_start": 0.0,
+        "trim_end": 425.761,
+        "source_sha256": "dedd3e987672b36f433a8d97f944cdc666e4afdb4635755d50db54216124ccc1",
+        "outputs": {
+          "audio.webm": {
+            "sha256": "dedd3e987672b36f433a8d97f944cdc666e4afdb4635755d50db54216124ccc1"
+          },
+          "audio.m4a": {
+            "sha256": "e533136f057ab8b1d4f20663183509db84ec4d56bb916fc74da0edc1972e55a0"
+          }
+        }
+      }
+    },
+    "ordered_occurrences": [
+      {
+        "occurrence_id": "occ-000",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-001",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-002",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-003",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-004",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-005",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-006",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-007",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-008",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-009",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-010",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-011",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-012",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-013",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-014",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-015",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-016",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-017",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-018",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-019",
+        "ref": "l7",
+        "repeats": 1,
+        "source_text": "ਜੁਧ ਜਿਤੇ",
+        "roman": "Judh jite",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-020",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-021",
+        "ref": "l7",
+        "repeats": 1,
+        "source_text": "ਜੁਧ ਜਿਤੇ",
+        "roman": "Judh jite",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-022",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-023",
+        "ref": "l9",
+        "repeats": 4,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ ਸੁ ਦਾਨ ਕਰੇ",
+        "roman": "Inhī ke prasādi su dān kare",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-024",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-025",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-026",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-027",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-028",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-029",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-030",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-031",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-032",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-033",
+        "ref": "l10",
+        "repeats": 1,
+        "source_text": "ਅਘ ਅਉਘ ਟਰੈ",
+        "roman": "Agh augh ṭarai",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-034",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-035",
+        "ref": "l10",
+        "repeats": 1,
+        "source_text": "ਅਘ ਅਉਘ ਟਰੈ",
+        "roman": "Agh augh ṭarai",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-036",
+        "ref": "l8",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ",
+        "roman": "Inhī ke prasādi",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-037",
+        "ref": "l11",
+        "repeats": 4,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਫੁਨ ਧਾਮ ਭਰੇ",
+        "roman": "Inhī kī kripā phun dhām bhare",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-038",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-039",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-040",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-041",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-042",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-043",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-044",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-045",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-046",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-047",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-048",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-049",
+        "ref": "inst",
+        "repeats": 1,
+        "source_text": "",
+        "roman": "",
+        "section": "instrumental",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-050",
+        "ref": "l12",
+        "repeats": 2,
+        "source_text": "ਇਨਹੀ ਕੇ ਪ੍ਰਸਾਦਿ ਸੁ ਬਿਦਿਆ ਲਈ",
+        "roman": "Inhī ke prasādi su bidiā laī",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-051",
+        "ref": "l13",
+        "repeats": 4,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਸਭ ਸਤ੍ਰੁ ਮਰੇ",
+        "roman": "Inhī kī kripā sabh satru mare",
+        "section": "verse",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-052",
+        "ref": "l6",
+        "repeats": 1,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Nahī mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-053",
+        "ref": "l4",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-054",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-055",
+        "ref": "l4",
+        "repeats": 2,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ",
+        "roman": "Mo so garīb",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-056",
+        "ref": "l5",
+        "repeats": 1,
+        "source_text": "ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-057",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-058",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-059",
+        "ref": "l3",
+        "repeats": 2,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-060",
+        "ref": "l1",
+        "repeats": 1,
+        "source_text": "ਇਨਹੀ ਕੀ ਕ੍ਰਿਪਾ ਕੇ",
+        "roman": "Inhī kī kripā ke",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-061",
+        "ref": "l2",
+        "repeats": 2,
+        "source_text": "ਸਜੇ ਹਮ ਹੈਂ",
+        "roman": "Saje ham haiṅ",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      },
+      {
+        "occurrence_id": "occ-062",
+        "ref": "l3",
+        "repeats": 3,
+        "source_text": "ਨਹੀ ਮੋ ਸੋ ਗਰੀਬ ਕਰੋਰ ਪਰੇ",
+        "roman": "Nahī mo so garīb karor pare",
+        "section": "refrain",
+        "performer_context": "Bhai Harjinder Singh Ji Srinagarwale"
+      }
+    ]
+  }
+}

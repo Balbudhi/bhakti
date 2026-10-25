@@ -640,3 +640,21 @@ selection and still requires every expanded performance exactly once in strictly
 increasing order. Partial recovery does not accept the failed whole region or
 permit publication of an incomplete timing selection. Old callers stay strict
 unless this flag is explicitly present.
+
+### Bounded timing request compatibility
+
+Explicit timing prompt version3 keeps the excerpt-relative clock and typed
+output schema, but omits provider-side array-count and numeric-range constraints.
+Google documents that large constraint graphs can reject requests. Local
+validation still requires every exact timing ID once, ordered, finite, inside
+the excerpt, certain and independently corroborated. Versions1/2 and their
+accepted cache identities remain unchanged. Version3 is an explicit production
+choice, never an automatic paid fallback.
+
+`clip_audio_bitrate_kbps: 128` is available for model-only AAC timing excerpts;
+omission retains the prior192kb/s route. The choice participates in the region
+fingerprint. Listener media is never replaced. Before a bounded Google AI Studio
+request reserves funds, the transport checks its exact serialized JSON body,
+including provider fields and ASCII escaping, against20,000,000bytes. Oversized
+requests fail locally as `request-too-large` without escalating to Pro or
+blocking unrelated jobs. A smaller payload does not establish audio accuracy.

@@ -2755,8 +2755,11 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
     if not isinstance(reasoning_effort, str) or reasoning_effort not in {'low', 'medium', 'high'}:
         raise ValueError('joint timing reasoning_effort must be low, medium, or high')
     prompt_version = region.get('prompt_version', 1)
-    if type(prompt_version) is not int or prompt_version not in (1, 2):
-        raise ValueError('joint timing prompt_version must be 1 or 2')
+    if type(prompt_version) is not int or prompt_version not in (1, 2, 3):
+        raise ValueError('joint timing prompt_version must be 1, 2, or 3')
+    clip_bitrate = region.get('clip_audio_bitrate_kbps', 192)
+    if type(clip_bitrate) is not int or clip_bitrate not in (128, 192):
+        raise ValueError('joint timing clip_audio_bitrate_kbps must be 128 or 192')
     import bhakti_model_routes as routes
     identity = timing_input_identity(audio, region['target_occurrences'], source_identity)
     identity.update(region=region, duration=duration)
@@ -2775,12 +2778,12 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
             clip = ctx.attempt_dir / f'pass-{pass_index+1}.m4a'
             subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-ss',f"{selected['clip_start']:.3f}",
                             '-i',str(audio),'-t',f"{selected['clip_end']-selected['clip_start']:.3f}",
-                            '-vn','-c:a','aac','-b:a','192k',str(clip)],check=True)
+                            '-vn','-c:a','aac','-b:a',f'{clip_bitrate}k',str(clip)],check=True)
             task_role = ("PRIMARY ONSET MEASUREMENT" if pass_index == 0 else "INDEPENDENT FIRST-SYLLABLE AUDIT: re-listen and derive every start anew")
             preceding, following = region['preceding_context'], region['following_context']
             clock = f"SOURCE CLIP: {selected['clip_start']:.3f}–{selected['clip_end']:.3f} seconds."
             start_schema = {'type': 'number'}
-            if prompt_version == 2:
+            if prompt_version >= 2:
                 # The model receives an excerpt, so expose only that clock.
                 # Global offsets remain in the retained region and validator.
                 clip_duration = selected['clip_end'] - selected['clip_start']
@@ -2801,6 +2804,12 @@ Return every timing_id exactly once in order, with start, uncertainty, and onset
                     'uncertainty':{'type':'string'},'onset_at_clip_start':{'type':'boolean'}},
                     'required':['timing_id','start','uncertainty','onset_at_clip_start'],'additionalProperties':False}}},
                 'required':['starts'],'additionalProperties':False}
+            if prompt_version == 3:
+                # Avoid a large provider constraint graph; exact count, IDs and
+                # numeric bounds remain mandatory in the local validator.
+                schema['properties']['starts'].pop('minItems')
+                schema['properties']['starts'].pop('maxItems')
+                schema['properties']['starts']['items']['properties']['start'] = {'type': 'number'}
             kwargs = {'audio':clip,'timeout':ctx.call_timeout_seconds,'response_schema':schema,
                       'schema_name':'bhakti_joint_starts','reasoning_effort':reasoning_effort,'max_completion_tokens':completion_cap}
             if ctx.transport_context is not None:

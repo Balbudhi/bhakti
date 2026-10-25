@@ -58,6 +58,7 @@ _API_START_LOCK = threading.Lock()
 _LAST_API_START = 0.0
 _LEDGER_LOCK = threading.Lock()
 _ABORTED_RUNS: set[str] = set()
+_GOOGLE_AI_STUDIO_MAX_REQUEST_BYTES = 20_000_000
 
 # The child receives headers through an anonymous pipe, never an argument,
 # environment addition, cache file or log. Only provider response bytes persist.
@@ -179,10 +180,18 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
     input_bound = len(json.dumps(evidence, ensure_ascii=False).encode()) + 1024 + audio_tokens
     pricing = model_routes.model_pricing(payload['model'], input_bound)
     reservation = math.ceil((input_bound * pricing['prompt'] + cap * pricing['completion']) / 1_000_000 * 1e8) / 1e8
-    payload['provider'] = {'only':['google-ai-studio'], 'order':['google-ai-studio'],
+    payload = {**payload, 'provider': {'only':['google-ai-studio'], 'order':['google-ai-studio'],
         'ignore':['google-ai-studio/flex','google-ai-studio/priority'], 'allow_fallbacks':False,
-        'require_parameters':True, 'max_price':{key:pricing[key] for key in ('prompt','completion')}}
+        'require_parameters':True, 'max_price':{key:pricing[key] for key in ('prompt','completion')}}}
     evidence['provider'] = payload['provider']
+    # Match the child worker's exact default-ASCII JSON body, including routing
+    # fields. A deterministic size failure must precede reservation or artifacts
+    # and must not abort other songs sharing this run's allowance.
+    request_bytes = len(json.dumps(payload).encode('utf-8'))
+    if request_bytes > _GOOGLE_AI_STUDIO_MAX_REQUEST_BYTES:
+        raise model_routes.UnitTransportFailure('request-too-large', worker_terminated=True,
+            detail=f'Google AI Studio serialized payload is {request_bytes} bytes; '
+                   f'limit {_GOOGLE_AI_STUDIO_MAX_REQUEST_BYTES} bytes; no request sent or charge reserved')
     request_id = uuid.uuid4().hex
     artifacts = path.parent / (path.stem + '-responses');artifacts.mkdir(mode=0o700,exist_ok=True)
     response_path = artifacts / (request_id + '.response.json')

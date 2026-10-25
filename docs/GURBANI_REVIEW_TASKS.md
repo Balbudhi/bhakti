@@ -4,7 +4,7 @@
 
 The owner now authorizes selecting a handful of authentic Gurbani/Guru-authored recordings, including performances close to Rajinder Singh’s Benti Chaupai, processing them through the established pipeline, and publishing reviewed readers. This supersedes the paid-production hold for this selected intake only. Preserve the separate whole-library audit and all owner English.
 
-Current step: Sanskrit-derived popups are deployed; the five-song intake is held at timing/source review. Next: correct the demonstrated source-view and acoustic timing defects before further paid processing. Root owns the production batch, source registry, integration and release; discovery and Sanskrit evidence run in parallel. Intake runs in an isolated checkout so unrelated held readers cannot enter the catalogue. Use the established Flash baseline with a $3 total shared ceiling (the $1 default cannot reserve five concurrent worst-case outputs) and retained traces; inspect any failure before retrying. No model-comparison experiments.
+Current step: Sanskrit-derived popups are deployed; Tav Prasad timing is complete, while the selected additions remain held before semantic acceptance/publication. Next: finish the reviewed partial-gloss continuation and short, payload-bounded timing checks after the concrete failures below. Root owns the production batch, source registry, integration and release; discovery and Sanskrit evidence run in parallel. Intake runs in an isolated checkout so unrelated held readers cannot enter the catalogue. Use the established Flash baseline with a $3 total shared ceiling (the $1 default cannot reserve five concurrent worst-case outputs) and retained traces; inspect any failure before retrying. No model-comparison experiments.
 
 - [x] Select five recordings with source/author and official audio evidence; include the Benti-style preference.
 - [ ] Run the selected batch through transcription, independent audit, timing, gloss-first translation and independent review.
@@ -47,6 +47,51 @@ complete selection and final timing validators pass. Aggregate65 requests are
 settled at$2.965751. No other reader timing or new semantics is claimed. Eight
 new saved-response regressions and independent review verify partial recovery
 while retaining strict final completeness.
+
+The first-pass$3 estimate was insufficient. The owner-facing update explicitly
+set an additional$4 production ceiling (at most$7 overall), split into$3.95
+shared timing/text and$0.05 embeddings. No existing allowance or deadline was
+reset. The four source-ready jobs received27 exact source-backed name records
+in the isolated registry and13 validated difficult-word lookup requests. Actual
+request-builder captures verified delivery before dispatch. Re Man remains held.
+
+The joined attempt stopped on Inhi’s95-item timing schema: Google returned400
+INVALID_ARGUMENT. Optional prompt version3 removes wire-schema array/numeric
+bounds while preserving exact local count/order/time validation. This is a
+schema-complexity hypothesis, not a claimed diagnosis of Google’s generic error.
+The revised request returned95 timing values but failed local validation because
+later timestamps exceeded the425.761-second recording; no pair is accepted.
+
+Main then returned413 with exact payload21,147,588bytes above Google’s20,000,000
+limit. The model timing clip was being re-encoded at192kb/s after canonical128kb/s
+conversion. An explicit, fingerprinted128kb/s model-only setting reduces the
+actual serialized Main request to14,191,957bytes. Original listener/canonical
+hashes remain unchanged. A transport preflight now checks the exact wire body
+before reservation and dispatch, holding only an oversized unit.
+
+Tav’s two paid glossary responses cost$0.19902525. The saved last-two-line batch
+passes;19 of the first20 rows pass structural/source/lookup checks, while line11
+fails on the self-repeating gloss “dhol drums.” Lines21–40 were never requested.
+No English translation or independent semantic acceptance exists yet. A reviewed
+continuation must retain original failures and costs, reuse only revalidated
+rows, and process the21 unresolved/missing rows through the existing glossary
+and subsequent translation/review operations. Structurally reusable does not
+mean editorially approved.
+
+Across the latest completed attempts, provider-reported aggregate spending is
+$3.26859825. Retaining both unreported400/413 reservations yields conservative
+committed spending$3.65171825. All provider processes are finished; no job is
+running in the background. The old blocked ledgers, requests and raw responses
+remain unchanged. No new reader has been published.
+
+The private glossary continuation adapter passed11 independently reviewed
+offline checks, including exact source/timing identity and the real normal
+partial-stage adoption consumer. It has not made a provider call. Its inherited
+original semantic deadline has expired; a later attempt requires an explicit
+reviewed continuation decision with retained costs and limits, not a silent
+reset of the old failed state. Payload-size/clock changes passed14 new focused
+checks and24 existing transport checks. Compilation and whitespace checks pass;
+the seven unrelated contract findings and six historical trim holds remain.
 
 Do not certify recordings as auditioned from catalogue metadata alone. Competing traditional name derivations must remain distinguishable; no invented single root gloss or global spelling replacement. Reuse the current reader UI.
 
