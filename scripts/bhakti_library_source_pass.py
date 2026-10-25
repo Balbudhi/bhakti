@@ -830,11 +830,17 @@ def process_new_targets(song_dir, plan, metadata, options, route_dir, deadline_a
         legacy_policies += [{key: value for key, value in policy.items()
                             if key != 'english_word_accountability'}
                            for policy in legacy_policies]
+        adoption_policies = list(legacy_policies)
+        # Changed text controls cannot hide an earlier unknown default request.
+        # These extra variants are checks only, never new-policy acceptance seeds.
+        legacy_policies += [{key: value for key, value in policy.items()
+                             if key not in {'text_reasoning_effort', 'text_completion_caps'}}
+                            for policy in adoption_policies]
         for old_policy in legacy_policies:
             old_evidence = {**evidence, 'policy':old_policy}
             path = routes.unit_state_path(route_dir, unit_id, digest(old_evidence),
                 dependency_fingerprint=digest(old_policy), base_model=options.model, pro_model=options.pro_model)
-            if path not in legacy_states:
+            if old_policy in adoption_policies and path not in legacy_states:
                 legacy_states.append(path)
             if path.exists():
                 prior = routes.read_unit_cache(path)

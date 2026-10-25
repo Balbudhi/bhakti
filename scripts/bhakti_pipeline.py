@@ -151,8 +151,45 @@ def review_task_identity(version=None):
     return {'review_task_version': version} if version else {}
 
 
+def text_generation_policy(options, *, stage=None):
+    """Bind explicit nondefault text controls; default request identities stay exact."""
+    stage = 'writer' if stage == 'translation' else stage
+    defaults = {'gloss': 65536, 'writer': 65536, 'review': 32768}
+    policy = {}
+    for name in ('text_reasoning_effort', 'text_completion_caps'):
+        values = getattr(options, name, None)
+        values = {} if values is None else values
+        if not isinstance(values, dict) or any(key not in defaults for key in values):
+            raise ValueError(name + ' must be a gloss/writer/review mapping')
+        if name == 'text_reasoning_effort':
+            if any(value not in ('low', 'medium', 'high') for value in values.values()):
+                raise ValueError(name + ' values must be low/medium/high')
+            selected = {key: value for key, value in values.items() if value != 'high'}
+        else:
+            if any(type(value) is not int or not 1 <= value <= 65536 for value in values.values()):
+                raise ValueError(name + ' values must be integers from 1 to 65536')
+            selected = {key: value for key, value in values.items() if value != defaults[key]}
+        selected = {key: value for key, value in selected.items() if stage is None or key == stage}
+        if selected:
+            policy[name] = selected
+    return policy
+
+
+def text_reasoning_effort(options, stage):
+    return text_generation_policy(options, stage=stage).get('text_reasoning_effort', {}).get(stage, 'high')
+
+
+def text_completion_cap(options, stage):
+    default = 32768 if stage == 'review' else 65536
+    return text_generation_policy(options, stage=stage).get('text_completion_caps', {}).get(stage, default)
+
+
+def review_controls_match(candidate, options):
+    return candidate.get('review_text_controls', {}) == text_generation_policy(options, stage='review')
+
+
 def semantic_stage_policy(options, *, stage=None):
-    policy = translation_policy_payload()
+    policy = {**translation_policy_payload(), **text_generation_policy(options, stage=stage)}
     naming_conventions = getattr(options, 'semantic_naming_conventions', None)
     if naming_conventions and naming_conventions.get('matches'):
         policy = {**policy, 'naming_conventions': naming_conventions}
@@ -3812,6 +3849,7 @@ def normalize_gloss_rows(lines: list[dict[str, Any]], rows: list[dict[str, Any]]
 
 
 def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
+    text_generation_policy(options)
     target = song_dir / ".transcription" / "pipeline" / "04-glosses.json"
     lines = audited["packet"].get("verified_lines", [])
     languages = audited["packet"].get("metadata", {}).get("languages")
@@ -3913,7 +3951,7 @@ Return strict JSON:
     if len(lines) <= 40:
         result = gemini.call(options.model, gemini.key(), prompt_for(lines, []), audio=None, timeout=stage_call_timeout(options),
                                        response_schema=schema_for(lines), schema_name="bhakti_word_glosses",
-                             reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
+                             reasoning_effort=text_reasoning_effort(options, 'gloss'), max_completion_tokens=text_completion_cap(options, 'gloss'), **stage_transport_context(options))
         semantic_write_json(target.parent / 'gloss-candidate.json', result)
         result["packet"]["glosses"] = normalize_gloss_rows(lines, stage_model_rows(result, 'glosses', options))
     else:
@@ -3951,8 +3989,8 @@ Return strict JSON:
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=stage_call_timeout(options),
                                        response_schema=schema_for(target_lines),
-                                       schema_name="bhakti_word_gloss_batch", reasoning_effort="high",
-                                       max_completion_tokens=65536,
+                                       schema_name="bhakti_word_gloss_batch", reasoning_effort=text_reasoning_effort(options, 'gloss'),
+                                       max_completion_tokens=text_completion_cap(options, 'gloss'),
                                        max_attempts=getattr(options, "max_attempts", 6), **stage_transport_context(options))
                 # Preserve a private candidate before normalization so a
                 # deterministic mapping rejection can be repaired without
@@ -4326,6 +4364,7 @@ def independently_review_translations(
     translation_rows: list[dict[str, Any]], provided_translation: str, options: argparse.Namespace,
     languages: list[str] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    text_generation_policy(options)
     options = bhakti_translation_policy.prepare_naming_options(options, lines, languages)
     gloss_by_id = {row["id"]: row for row in gloss_rows}
     translation_by_id = {row["id"]: row for row in translation_rows}
@@ -4334,7 +4373,7 @@ def independently_review_translations(
     if discovery_errors:
         raise RuntimeError('translation review source discovery: ' + str(discovery_errors[:3]))
     support = bhakti_lexical_support.prepare_options(options, lines, languages)
-    policy = semantic_stage_policy(options)
+    policy = semantic_stage_policy(options, stage='review')
     policy = {**policy, **review_task_identity(), 'review_payload_contract': 1, 'pending_findings': getattr(options, 'semantic_pending_findings', []),
               'repair_findings': getattr(options, 'semantic_repair_findings', [])}
     review_schema = translation_review_schema()
@@ -4526,8 +4565,8 @@ LOCKED HUMAN TRANSLATION (or none):
             response = gemini.call(options.model, gemini.key(), review_prompt(target_evidence, source_context), audio=None,
                                    timeout=stage_call_timeout(options),
                                        response_schema=review_schema,
-                                   schema_name="bhakti_translation_review", reasoning_effort="high",
-                                   max_completion_tokens=32768, **stage_transport_context(options))
+                                   schema_name="bhakti_translation_review", reasoning_effort=text_reasoning_effort(options, 'review'),
+                                   max_completion_tokens=text_completion_cap(options, 'review'), **stage_transport_context(options))
             write_json(cache_dir / f"candidate-{label.replace('.', '-')}.json", response)
             return select_response(response, target_ids, source_context, label)
 
@@ -4574,6 +4613,7 @@ LOCKED HUMAN TRANSLATION (or none):
 
 
 def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], job: dict[str, Any], options: argparse.Namespace, *, candidate_only: bool = False, defer_review: bool = False) -> dict[str, Any]:
+    text_generation_policy(options)
     # The coordinator narrows the writer baseline to target rows. Authenticate
     # findings against the full original reader without sending that partial map
     # to its full-population guard; the original writer baseline remains enforced
@@ -4608,7 +4648,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     support_errors = bhakti_lexical_support.support_decision_errors(support, gloss_rows)
     if support_errors:
         raise RuntimeError("translation lexical support: " + str(support_errors[:3]))
-    policy = semantic_stage_policy(options)
+    policy = semantic_stage_policy(options, stage='writer')
     fingerprint = text_stage_fingerprint("translation", options.model,
         translation_stage_inputs(lines, gloss_rows, provided_translation, languages, options,
             performance_order=audited["packet"].get("performance_order", [])), policy)
@@ -4626,7 +4666,7 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
         scope_errors = bhakti_semantic_repair.initial_translation_scope_errors(existing['packet']['translations'], options)
         if scope_errors:
             raise RuntimeError(str(scope_errors))
-        if existing.get('review_task_version', 0) == REVIEW_TASK_VERSION:
+        if existing.get('review_task_version', 0) == REVIEW_TASK_VERSION and review_controls_match(existing, options):
             return existing
         candidate = copy.deepcopy(existing)
         candidate.pop('review_responses', None)
@@ -4750,7 +4790,7 @@ Return strict JSON:
     elif len(candidate_lines) <= 10:
         result = gemini.call(options.model, gemini.key(), prompt_for(candidate_lines, []), audio=None, timeout=stage_call_timeout(options),
                                        response_schema=schema_for(candidate_lines), schema_name="bhakti_literal_translation",
-                             reasoning_effort="high", max_completion_tokens=65536, **stage_transport_context(options))
+                             reasoning_effort=text_reasoning_effort(options, 'writer'), max_completion_tokens=text_completion_cap(options, 'writer'), **stage_transport_context(options))
         capture_writer_response(options, result)
         # This response was just returned by this attempt. Cached candidates and
         # adopted seeds reach only the ordinary local validation below.
@@ -4798,8 +4838,8 @@ Return strict JSON:
                 response = gemini.call(options.model, gemini.key(), prompt_for(target_lines, context), audio=None,
                                        timeout=stage_call_timeout(options),
                                        response_schema=schema_for(target_lines),
-                                       schema_name="bhakti_translation_batch", reasoning_effort="high",
-                                       max_completion_tokens=65536, **stage_transport_context(options))
+                                       schema_name="bhakti_translation_batch", reasoning_effort=text_reasoning_effort(options, 'writer'),
+                                       max_completion_tokens=text_completion_cap(options, 'writer'), **stage_transport_context(options))
                 capture_writer_response(options, response)
                 returned = [row.get("id") for row in stage_model_rows(response, "translations", options)]
                 compared = [row.get("id") for row in response["packet"].get("comparison", [])]
@@ -4910,6 +4950,7 @@ Return strict JSON:
 
 def review_translation(song_dir, audited, glosses, job, options, candidate, *, prepared=False):
     """Review exact private writer bytes without reconstructing their English."""
+    text_generation_policy(options)
     if not prepared:
         options, glosses = bhakti_lexical_producer.prepare_translation(song_dir, audited, glosses, options)
     result = copy.deepcopy(candidate)
@@ -4952,7 +4993,7 @@ def review_translation(song_dir, audited, glosses, job, options, candidate, *, p
                 or candidate.get('automatic_evidence_receipt', {}) != original['automatic_evidence_receipt']):
             raise ValueError('legacy writer cannot adopt changed glossary evidence')
         previous_context = candidate.get('writer_review_context')
-        original_policy = semantic_stage_policy(options)
+        original_policy = semantic_stage_policy(options, stage='writer')
         if all('word_support' not in row for row in original['rows']):
             original_policy.pop('english_word_accountability', None)
         expected_fingerprint = text_stage_fingerprint('translation', original.get('writer_model') or options.model,
@@ -5014,6 +5055,10 @@ def review_translation(song_dir, audited, glosses, job, options, candidate, *, p
     for row in result["packet"]["translations"]:
         row["independent_review"] = review_by_id.get(row["id"], {})
     result["review_responses"] = review_packets
+    result.pop('review_text_controls', None)
+    review_controls = text_generation_policy(options, stage='review')
+    if review_controls:
+        result['review_text_controls'] = review_controls
     result.update(review_task_identity())
     semantic_write_json(candidate_path, result)
     return result

@@ -666,3 +666,22 @@ request reserves funds, the transport checks its exact serialized JSON body,
 including provider fields and ASCII escaping, against20,000,000bytes. Oversized
 requests fail locally as `request-too-large` without escalating to Pro or
 blocking unrelated jobs. A smaller payload does not establish audio accuracy.
+
+### Explicit text request controls
+
+The Python coordinator accepts optional `text_reasoning_effort` and
+`text_completion_caps` mappings keyed by `gloss`, `writer`, and `review`.
+These are explicit orchestration options, not new CLI flags. Omission retains
+high reasoning and the existing completion ceilings (65,536 for gloss/writer,
+32,768 for review). Nondefault settings participate in the affected stage's
+request and cache identity; they do not alter prompts, dictionary evidence,
+word warrants, fidelity checks or independent review.
+
+A bounded continuation can request low reasoning with ceilings of32,768 for
+glosses and16,384 for writer/reviewer output. This is a qualification setting,
+not a claim that lower reasoning always gives equal translation quality.
+Truncated or invalid output still fails the ordinary checks. Changing only
+review controls preserves authenticated wording and obtains a new review;
+changing writer controls preserves an authenticated glossary. New settings
+cannot reset an earlier unresolved or unknown-outcome route. Such retained
+partial work requires explicit source-bound continuation and preserved costs.

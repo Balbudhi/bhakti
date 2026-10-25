@@ -130,6 +130,16 @@ tokens. This directly motivates a separately fingerprinted opt-in text reasoning
 setting before any further paid continuation; it does not justify weakening
 word warrants, dictionary evidence, fidelity checks or independent review.
 
+The explicit text controls are now implemented and independently reviewed.
+Fifteen integrated tests cover real stage callers, unchanged default identities,
+selective accepted-stage reuse and zero replay of unknown historical requests.
+No lower-effort request has been dispatched yet. A final bounded continuation
+is being prepared to import Main's20 and Tav's42 reviewed glossary rows, apply
+source-reviewed identity/context corrections, and request only Sohila's18
+missing rows. Its proposed settings are low reasoning with32,768 glossary and
+16,384 writer/review completion ceilings. All prior costs remain reserved under
+the same$7 total. The two unused older recordings remain explicitly held.
+
 Do not certify recordings as auditioned from catalogue metadata alone. Competing traditional name derivations must remain distinguishable; no invented single root gloss or global spelling replacement. Reuse the current reader UI.
 
 ## Contextual names and meanings — 25 October 2026
