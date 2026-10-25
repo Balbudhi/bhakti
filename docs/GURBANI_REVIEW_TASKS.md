@@ -4,7 +4,7 @@
 
 The owner now authorizes selecting a handful of authentic Gurbani/Guru-authored recordings, including performances close to Rajinder Singh’s Benti Chaupai, processing them through the established pipeline, and publishing reviewed readers. This supersedes the paid-production hold for this selected intake only. Preserve the separate whole-library audit and all owner English.
 
-Current step: Sanskrit-derived popups are deployed. Tav Prasad (43 expanded starts), Main Banjaran (71) and Sohila (60) have accepted timing, but the text continuation stopped and none of the five selected new readers is published. Main's Punjabi language-alias bug is fixed; a zero-replay continuation is being prepared. Sohila's saved glossary has editorial and token-coverage defects; Tav's writer output truncated and its whole-stage escalation repeated two completed rows. All paid processes are stopped. Inhī retains a separate timing hold and Re Man retains a source-overlap hold. Conservative spending, including uncertain older reservations, is $6.51563565 under the $7 ceiling; this is not the provider-reported bill. Root owns spending and scoped release.
+Current step: Sanskrit-derived popups are deployed. Tav Prasad (43 expanded starts), Main Banjaran (71) and Sohila (60) have accepted timing, but none of the five selected new readers is published. Sohila's corrected58-row glossary is privately adopted with exact editorial provenance. Main has all20 English rows; local lexical checks are fixed and four word-accountability metadata corrections remain under review before independent review. Tav's first ten English rows truncated and its whole-stage escalation unnecessarily repeated two completed rows. All paid processes are stopped. Inhī retains a separate timing hold and Re Man retains a source-overlap hold. Conservative spending, including$1.130972 in uncertain older reservations, is$6.6750474 under the$7 ceiling; provider-reported spending is$5.5440754. Root owns spending and scoped release.
 
 - [x] Select five recordings with source/author and official audio evidence; include the Benti-style preference.
 - [ ] Run the selected batch through transcription, independent audit, timing, gloss-first translation and independent review.
@@ -159,6 +159,24 @@ inefficiency, not evidence that Pro repaired the incomplete writer. No fresh
 independent full-reader review or publication succeeded. Further paid work must
 retain the same budget and original failures; all completed evidence remains
 available privately.
+
+A Main-only continuation reused its accepted source glossary and dictionary
+refinement without new glossary calls. Two Flash writer calls returned all20
+English rows for$0.15941175. Editorial review found no material loss in those
+English lines; Nānak spelling and four accounting records require exact fixes.
+The lexical validator incorrectly raw-concatenated segments while the public
+renderer supplies ordinary spacing, and rejected the regular third-person
+`cherishes` realization of the selected WordNet verb `cherish`. The narrow fix
+uses the actual renderer/spans and admits only same-sense attested verb bases
+ending-sh/-ss/-x with-es. Unsupported tense/synonym/POS/source mappings remain
+held. Eight saved-response regressions pass; WordNet fixture licensing is
+retained. This does not certify a complete general English morphology engine.
+
+Sohila's source-bound composite now contains all58 glossary rows:24 reviewed
+field edits across11 rows,47 unchanged. It corrects the musical-mode identities,
+Mahallā4/5 signature authorship, unsupported āratī adjectives and exact marker/
+sense-index coverage. Independent source review and the actual historical
+consumer passed with zero new glossary calls. English remains pending.
 
 Do not certify recordings as auditioned from catalogue metadata alone. Competing traditional name derivations must remain distinguishable; no invented single root gloss or global spelling replacement. Reuse the current reader UI.
 

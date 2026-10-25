@@ -299,14 +299,34 @@ def project_support(packet,target_ids):
     return projected
 
 def expression_matches_segments(row, expression, indices):
-    segments=row.get('segments',[]);text='';spans=[]
-    for segment in segments:
-        start=len(text);text+=segment['text'];spans.append((start,len(text),segment['word_indices']))
-    if text!=row.get('literal_english'):return False
-    for match in re.finditer(r'(?<!\w)'+re.escape(expression)+r'(?!\w)',text,re.IGNORECASE):
-        mapped={i for start,end,word_indices in spans if start<match.end() and end>match.start() for i in word_indices}
-        if mapped==set(indices):return True
+    # Reuse public spacing and the same span mapping as per-word accountability.
+    # Import locally: pipeline imports lexical support during initialization.
+    from bhakti_pipeline import segment_english
+    from bhakti_word_accountability import _segment_links
+    parts = row.get('segments', [])
+    text = segment_english([{**part, 'word_indices': []} for part in parts], '')
+    if text != row.get('literal_english'):
+        return False
+    for match in re.finditer(r'(?<!\w)' + re.escape(expression) + r'(?!\w)', text, re.IGNORECASE):
+        unit = {'unit': 0, 'start': match.start(), 'end': match.end()}
+        if _segment_links(row, [unit], segment_english).get(0) == set(indices):
+            return True
     return False
+
+
+def word_realization_attested(expression, lemma, entry):
+    """Same cited lemma, with only a bounded regular third-person realization."""
+    base = normalize_english_lemma(lemma)
+    if base not in [normalize_english_lemma(word) for word in entry['lemmas']]:
+        return False
+    surface = normalize_english_lemma(expression)
+    if surface == base:
+        return True
+    # Written -ch is intentionally excluded: stomach takes -s, not -es.
+    # Other forms need their own evidence; this is not unrestricted stemming.
+    return (entry.get('pos') == 'v' and re.fullmatch(r'[a-z]+(?:sh|ss|x)', base) is not None
+            and surface == base + 'es')
+
 
 def support_decision_errors(packet,gloss_rows,translation_rows=None):
     if not packet:return []
@@ -334,12 +354,14 @@ def support_decision_errors(packet,gloss_rows,translation_rows=None):
                         require(isinstance(d.get('expression'),str) and d['expression'],'missing English expression')
                         require(expression_matches_segments(row,d['expression'],t['word_indices']),'chosen expression/source indices differ from English segments')
                         if cid is not None:
-                            require(cid in cs and d['expression']==cs[cid]['expression'] and kind==cs[cid]['kind'],'chosen candidate differs from evidence')
+                            require(cid in cs and kind==cs[cid]['kind'],'chosen candidate differs from evidence')
                             require(set(refs)<=set(cs[cid]['english_evidence_ids']),'English sense belongs to different candidate')
+                            require(d['expression']==cs[cid]['expression'] or (kind=='word' and any(
+                                word_realization_attested(d['expression'],cs[cid]['expression'],evidence[ref])
+                                for ref in refs)), 'chosen candidate differs from evidence')
                         if kind=='word':
                             require(cid is not None and refs,'word decision needs supplied dictionary sense')
-                            require(any(normalize_english_lemma(d['expression']) in
-                                        [normalize_english_lemma(lemma) for lemma in evidence[ref]['lemmas']]
+                            require(any(word_realization_attested(d['expression'],cs[cid]['expression'],evidence[ref])
                                         for ref in refs),'selected English definition does not attest chosen word')
                         elif kind in {'compositional_phrase','transparent_compound'}:
                             require(isinstance(d.get('ordinary_paraphrase'),str) and d['ordinary_paraphrase'].strip(),'composition needs plain paraphrase')

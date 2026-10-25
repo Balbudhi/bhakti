@@ -685,3 +685,10 @@ review controls preserves authenticated wording and obtains a new review;
 changing writer controls preserves an authenticated glossary. New settings
 cannot reset an earlier unresolved or unknown-outcome route. Such retained
 partial work requires explicit source-bound continuation and preserved costs.
+
+English candidate admission uses the public renderer’s spacing and source-span
+mapping. A selected dictionary verb may appear in the narrowly supported regular
+third-person form (-sh/-ss/-x + -es) while retaining the same cited lemma and sense.
+This is not general stemming or permission to substitute a synonym; unimplemented
+inflections still require explicit evidence. Independent review judges contextual
+meaning and grammar after these mechanical checks.
