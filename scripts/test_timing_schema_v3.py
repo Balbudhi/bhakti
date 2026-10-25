@@ -62,7 +62,7 @@ class TimingSchemaV3Tests(unittest.TestCase):
    with self.assertRaises(routes.UnitUnresolved):self.invoke()
    self.assertEqual(old_path.read_bytes(),old_bytes);self.assertEqual(call.call_count,3)
  def test_invalid_version_still_precedes_audio_identity(self):
-  self.region['prompt_version']=4
+  self.region['prompt_version']=5
   with patch.object(p,'timing_input_identity',side_effect=AssertionError('read audio')):
    with self.assertRaises(ValueError):self.invoke()
 

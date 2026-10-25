@@ -651,6 +651,14 @@ the excerpt, certain and independently corroborated. Versions1/2 and their
 accepted cache identities remain unchanged. Version3 is an explicit production
 choice, never an automatic paid fallback.
 
+Explicit prompt version4 requests `start: {minutes, seconds}` on the excerpt
+clock. Local validation accepts only an integer nonnegative minute count and
+finite seconds below60, then computes elapsed seconds and applies all existing
+clip, onset, order and paired-measurement gates. The raw response is retained.
+Fresh and retained evidence use the same version-bound parser; versions1–3 never
+reinterpret numeric answers as minute/second notation. This addresses observed
+clock-format confusion; it does not turn an old failed response into evidence.
+
 `clip_audio_bitrate_kbps: 128` is available for model-only AAC timing excerpts;
 omission retains the prior192kb/s route. The choice participates in the region
 fingerprint. Listener media is never replaced. Before a bounded Google AI Studio

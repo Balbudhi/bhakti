@@ -115,7 +115,7 @@ Return every timing_id exactly once in order, with start, uncertainty, and onset
         self.assertEqual(len(list(self.root.rglob('accepted-result.json'))), 2)
 
     def test_invalid_version_rejected_before_identity_audio_or_route(self):
-        for version in (True, False, None, 0, 4, 1.0, '2', [], {}):
+        for version in (True, False, None, 0, 5, 1.0, '2', [], {}):
             self.region['prompt_version'] = version
             with self.subTest(version=version), patch.object(p, 'timing_input_identity',
                     side_effect=AssertionError('invalid version reached audio identity')):

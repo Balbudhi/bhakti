@@ -2457,8 +2457,27 @@ def independent_joint_region(region, pass_index):
     return {**region, 'clip_start': max(0., region['clip_start'] - 10. * pass_index)}
 
 
+def joint_relative_start(value: Any, prompt_version: int) -> float:
+    """Decode only the explicitly requested clock; never reinterpret legacy numbers."""
+    if prompt_version == 4:
+        if not isinstance(value, dict) or set(value) != {'minutes', 'seconds'}:
+            raise ValueError('start requires exact minutes and seconds components')
+        minutes, seconds = value['minutes'], value['seconds']
+        if (type(minutes) is not int or minutes < 0
+                or type(seconds) not in (int, float) or not math.isfinite(seconds)
+                or not 0 <= seconds < 60):
+            raise ValueError('invalid minute/second clock components')
+        return float(60 * minutes + seconds)
+    if type(value) not in (int, float):
+        raise ValueError('non-numeric start')
+    return float(value)
+
+
 def validate_joint_timing_pass(region: dict[str, Any], packet: dict[str, Any], duration: float) -> dict[str, Any]:
     errors = []
+    prompt_version = region.get('prompt_version', 1)
+    if type(prompt_version) is not int or prompt_version not in (1, 2, 3, 4):
+        return {'starts': [], 'validation_errors': ['unsupported joint timing prompt version']}
     left, right = region['clip_start'], region['clip_end']
     if not (0 <= left < right <= duration and math.isfinite(duration)):
         errors.append('joint timing clip is outside the source duration')
@@ -2472,17 +2491,17 @@ def validate_joint_timing_pass(region: dict[str, Any], packet: dict[str, Any], d
     previous = -1.0
     for index, row in enumerate(rows):
         try:
-            if not isinstance(row, dict) or type(row.get('start')) not in (int, float):
-                raise ValueError('non-numeric start')
-            relative = float(row['start'])
+            if not isinstance(row, dict):
+                raise ValueError('start row must be an object')
+            relative = joint_relative_start(row.get('start'), prompt_version)
             point = left + relative
             if not math.isfinite(relative) or not 0 <= relative < right-left or not 0 <= point < duration or point <= previous:
                 raise ValueError('out of clip/duration or non-increasing start')
-            if single_start_uncertainty_errors(row):
+            if single_start_uncertainty_errors({**row, 'start': relative}):
                 raise ValueError('uncertain or incomplete first syllable')
             previous = point
             starts.append({'timing_id': row['timing_id'], 'start': round(point, 3)})
-        except (KeyError, TypeError, ValueError) as exc:
+        except (KeyError, TypeError, ValueError, OverflowError) as exc:
             errors.append(f'joint start[{index}]: {exc}')
     return {'starts': starts if not errors else [], 'validation_errors': errors}
 
@@ -2755,8 +2774,8 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
     if not isinstance(reasoning_effort, str) or reasoning_effort not in {'low', 'medium', 'high'}:
         raise ValueError('joint timing reasoning_effort must be low, medium, or high')
     prompt_version = region.get('prompt_version', 1)
-    if type(prompt_version) is not int or prompt_version not in (1, 2, 3):
-        raise ValueError('joint timing prompt_version must be 1, 2, or 3')
+    if type(prompt_version) is not int or prompt_version not in (1, 2, 3, 4):
+        raise ValueError('joint timing prompt_version must be 1, 2, 3, or 4')
     clip_bitrate = region.get('clip_audio_bitrate_kbps', 192)
     if type(clip_bitrate) is not int or clip_bitrate not in (128, 192):
         raise ValueError('joint timing clip_audio_bitrate_kbps must be 128 or 192')
@@ -2783,6 +2802,7 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
             preceding, following = region['preceding_context'], region['following_context']
             clock = f"SOURCE CLIP: {selected['clip_start']:.3f}–{selected['clip_end']:.3f} seconds."
             start_schema = {'type': 'number'}
+            start_example = '0.0'
             if prompt_version >= 2:
                 # The model receives an excerpt, so expose only that clock.
                 # Global offsets remain in the retained region and validator.
@@ -2792,24 +2812,33 @@ def run_joint_timing_unit(song_dir: Path, audio: Path, region: dict[str, Any], d
                     if key not in {'coarse_source_start', 'routing_only'}} if row is not None else None)
                 preceding, following = clean_context(preceding), clean_context(following)
                 start_schema = {'type': 'number', 'minimum': 0, 'maximum': clip_duration}
+            if prompt_version == 4:
+                minutes, seconds = divmod(clip_duration, 60)
+                clock = f"EXCERPT CLOCK: 0:00.000–{int(minutes)}:{seconds:06.3f} (minutes:seconds)."
+                clock += '\nReturn each start as separate integer minutes and fractional seconds on this excerpt clock. Seconds must stay below 60. Do not calculate total seconds or concatenate minutes and seconds into a decimal number.'
+                start_example = '{"minutes":0,"seconds":0.0}'
             prompt = f"""TASK: {task_role}.
 Listen independently to this complete contextual excerpt. The transcript and order are fixed. Do not correct, normalize, regroup, drop or add lyrics. Only locate each exact first audible syllable, including every explicit consecutive repetition listed separately below. Embedded repetitions in a target's source text remain one target. Lead, response and pickup starts count. Return times relative to this clip, never a later repetition. If the requested initial syllable is cut off, masked, absent or ambiguous, declare uncertainty; do not guess.
 {clock}
 PRECEDING CONTEXT ONLY: {json.dumps(preceding,ensure_ascii=False)}
 EXACT ORDERED TIMING TARGETS: {json.dumps(expanded,ensure_ascii=False)}
 FOLLOWING CONTEXT ONLY: {json.dumps(following,ensure_ascii=False)}
-Return every timing_id exactly once in order, with start, uncertainty, and onset_at_clip_start. The last boolean may be true only when a COMPLETE initial syllable begins at the clip boundary. Already ongoing syllables are uncertain, not clear zero starts. Return JSON {{"starts":[{{"timing_id":"{expanded[0]['timing_id']}","start":0.0,"uncertainty":"","onset_at_clip_start":false}}]}}."""
+Return every timing_id exactly once in order, with start, uncertainty, and onset_at_clip_start. The last boolean may be true only when a COMPLETE initial syllable begins at the clip boundary. Already ongoing syllables are uncertain, not clear zero starts. Return JSON {{"starts":[{{"timing_id":"{expanded[0]['timing_id']}","start":{start_example},"uncertainty":"","onset_at_clip_start":false}}]}}."""
             schema = {'type':'object','properties':{'starts':{'type':'array','minItems':len(expanded),'maxItems':len(expanded),
                 'items':{'type':'object','properties':{'timing_id':{'type':'string'},'start':start_schema,
                     'uncertainty':{'type':'string'},'onset_at_clip_start':{'type':'boolean'}},
                     'required':['timing_id','start','uncertainty','onset_at_clip_start'],'additionalProperties':False}}},
                 'required':['starts'],'additionalProperties':False}
-            if prompt_version == 3:
+            if prompt_version >= 3:
                 # Avoid a large provider constraint graph; exact count, IDs and
                 # numeric bounds remain mandatory in the local validator.
                 schema['properties']['starts'].pop('minItems')
                 schema['properties']['starts'].pop('maxItems')
                 schema['properties']['starts']['items']['properties']['start'] = {'type': 'number'}
+            if prompt_version == 4:
+                schema['properties']['starts']['items']['properties']['start'] = {
+                    'type': 'object', 'properties': {'minutes': {'type': 'integer'}, 'seconds': {'type': 'number'}},
+                    'required': ['minutes', 'seconds'], 'additionalProperties': False}
             kwargs = {'audio':clip,'timeout':ctx.call_timeout_seconds,'response_schema':schema,
                       'schema_name':'bhakti_joint_starts','reasoning_effort':reasoning_effort,'max_completion_tokens':completion_cap}
             if ctx.transport_context is not None:

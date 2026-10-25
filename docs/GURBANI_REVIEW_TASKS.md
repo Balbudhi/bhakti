@@ -4,7 +4,7 @@
 
 The owner now authorizes selecting a handful of authentic Gurbani/Guru-authored recordings, including performances close to Rajinder Singh’s Benti Chaupai, processing them through the established pipeline, and publishing reviewed readers. This supersedes the paid-production hold for this selected intake only. Preserve the separate whole-library audit and all owner English.
 
-Current step: Sanskrit-derived popups are deployed; Tav Prasad timing is complete, while the selected additions remain held before semantic acceptance/publication. Next: finish the reviewed partial-gloss continuation and short, payload-bounded timing checks after the concrete failures below. Root owns the production batch, source registry, integration and release; discovery and Sanskrit evidence run in parallel. Intake runs in an isolated checkout so unrelated held readers cannot enter the catalogue. Use the established Flash baseline with a $3 total shared ceiling (the $1 default cannot reserve five concurrent worst-case outputs) and retained traces; inspect any failure before retrying. No model-comparison experiments.
+Current step: Sanskrit-derived popups are deployed. Tav Prasad (43 expanded starts), Main Banjaran (71) and Sohila (60) now have accepted timing; their text stages remain held with saved partial results. None of the five selected new readers is published. Inhī retains a separate timing hold and Re Man retains a source-overlap hold. Root owns production, spending and scoped release; agents independently review the clock fix and actual content. The total authorized production ceiling is at most $7, including previous charges and uncertain reservations. New explicit minute/second responses are validated; old decimal responses were never reinterpreted.
 
 - [x] Select five recordings with source/author and official audio evidence; include the Benti-style preference.
 - [ ] Run the selected batch through transcription, independent audit, timing, gloss-first translation and independent review.
@@ -92,6 +92,43 @@ reviewed continuation decision with retained costs and limits, not a silent
 reset of the old failed state. Payload-size/clock changes passed14 new focused
 checks and24 existing transport checks. Compilation and whitespace checks pass;
 the seven unrelated contract findings and six historical trim holds remain.
+
+The component-clock continuation uses explicit `start: {minutes, seconds}` only
+for opt-in timing prompt version4. Raw values remain unchanged and the same
+parser is used for fresh, retained and final evidence. Legacy versions1–3 keep
+numeric-second semantics. Sohila accepted all60 starts; Main retained69 agreeing
+new-clock pairs and resolved its two0.6-second disagreements using four short
+contextual calls. The actual final aligner accepted all71 expanded Main starts.
+Eighteen focused integrated checks and independent review passed.
+
+Tav's21-row continuation returned20 structurally valid rows. The remaining
+mridaṅga gloss did explain “barrel drums,” but led with the source transliteration,
+violating the primary-gloss rule. Independent editorial review also identified
+unsupported frame wording and a practitioner referent. A source-bound five-row
+repair preserved37 exact rows and corrected lines1,3,11,14,42 through Flash;
+the complete42-line glossary is now accepted. The ordinary semantic coordinator
+is consuming that glossary and actual dictionary/embedding requests. These are
+not yet accepted English translations or publication evidence.
+
+Latest text continuation settled without publication. Main returned20 glossary
+rows but its bare Nānak signature gloss failed the explanation rule; the automatic
+Pro attempt was refused before dispatch because its worst-case reservation did
+not fit. Sohila returned40 rows, of which36 pass existing structural checks;
+four rāga-heading rows need proper-name identities. Its final18-row request has
+no recoverable response. Tav has accepted42-line glosses and a returned two-line
+English child batch, but its first ten-line writer request also has no response.
+Both unknown outcomes retain their full reservations. No English acceptance or
+new-reader publication is claimed.
+
+Across92 unique text/audio requests, provider-reported spending is$5.011824;
+retaining400/413 and both unknown-outcome reservations gives$6.142796.
+All27 actual embedding requests validated at$0.0060285. Total conservative
+commitment is therefore$6.1488245 of the$7 ceiling. No paid process remains
+active. The original route states, clocks, raw responses and charges are intact.
+The two-line writer used23,853 completion tokens, including20,868 reasoning
+tokens. This directly motivates a separately fingerprinted opt-in text reasoning
+setting before any further paid continuation; it does not justify weakening
+word warrants, dictionary evidence, fidelity checks or independent review.
 
 Do not certify recordings as auditioned from catalogue metadata alone. Competing traditional name derivations must remain distinguishable; no invented single root gloss or global spelling replacement. Reuse the current reader UI.
 
