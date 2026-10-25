@@ -4,7 +4,7 @@
 
 The owner now authorizes selecting a handful of authentic Gurbani/Guru-authored recordings, including performances close to Rajinder Singh’s Benti Chaupai, processing them through the established pipeline, and publishing reviewed readers. This supersedes the paid-production hold for this selected intake only. Preserve the separate whole-library audit and all owner English.
 
-Current step: Sanskrit-derived popups are deployed. Tav Prasad (43 expanded starts), Main Banjaran (71) and Sohila (60) now have accepted timing; their text stages remain held with saved partial results. None of the five selected new readers is published. Inhī retains a separate timing hold and Re Man retains a source-overlap hold. Root owns production, spending and scoped release; agents independently review the clock fix and actual content. The total authorized production ceiling is at most $7, including previous charges and uncertain reservations. New explicit minute/second responses are validated; old decimal responses were never reinterpreted.
+Current step: Sanskrit-derived popups are deployed. Tav Prasad (43 expanded starts), Main Banjaran (71) and Sohila (60) have accepted timing, but the text continuation stopped and none of the five selected new readers is published. Main's Punjabi language-alias bug is fixed; a zero-replay continuation is being prepared. Sohila's saved glossary has editorial and token-coverage defects; Tav's writer output truncated and its whole-stage escalation repeated two completed rows. All paid processes are stopped. Inhī retains a separate timing hold and Re Man retains a source-overlap hold. Conservative spending, including uncertain older reservations, is $6.51563565 under the $7 ceiling; this is not the provider-reported bill. Root owns spending and scoped release.
 
 - [x] Select five recordings with source/author and official audio evidence; include the Benti-style preference.
 - [ ] Run the selected batch through transcription, independent audit, timing, gloss-first translation and independent review.
@@ -139,6 +139,26 @@ source-reviewed identity/context corrections, and request only Sohila's18
 missing rows. Its proposed settings are low reasoning with32,768 glossary and
 16,384 writer/review completion ceilings. All prior costs remain reserved under
 the same$7 total. The two unused older recordings remain explicitly held.
+
+The low-reasoning continuation made five settled requests for$0.36406225 and
+$0.0027489 in additional embeddings. Low reasoning returned zero reasoning
+tokens in these calls, but that alone did not establish quality. Main reused
+its20-row glossary, then reconciled two rows against actual Singh1895 entries
+for$0.021543. Its writer was blocked locally because the language guard treated
+`pa` and `Punjabi` as different; the canonical-alias fix passes eight focused
+checks without relaxing genuine language mismatches. No Main English was sent.
+
+Sohila returned all18 requested rows, but its heading included self-repeating
+and unsupported musical descriptions, two Nānak signatures were misattributed
+to the first Guru despite Mahallā4/5 authorship, and nine rows have structural
+word/sense coverage findings. These are retained for exact editorial correction,
+not silently accepted. Tav's two final lines returned; its first ten-line batch
+hit the16,384-token ceiling. Whole-stage Pro escalation repeated the final two
+lines for$0.100306 before the remaining reservation failed. This is an identified
+inefficiency, not evidence that Pro repaired the incomplete writer. No fresh
+independent full-reader review or publication succeeded. Further paid work must
+retain the same budget and original failures; all completed evidence remains
+available privately.
 
 Do not certify recordings as auditioned from catalogue metadata alone. Competing traditional name derivations must remain distinguishable; no invented single root gloss or global spelling replacement. Reuse the current reader UI.
 

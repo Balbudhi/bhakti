@@ -4634,9 +4634,9 @@ def translate(song_dir: Path, audited: dict[str, Any], glosses: dict[str, Any], 
     audited_languages = audited.get("packet", {}).get("metadata", {}).get("languages")
     languages = job.get("languages", audited_languages)
     def language_identity(value: Any) -> set[str]:
-        aliases = {"hi": "hindi", "hindustani": "hindi", "classical hindi": "hindi"}
-        return {aliases.get(str(item).strip().casefold(), str(item).strip().casefold())
-                for item in (value or [])}
+        aliases = {"hindustani": "hindi", "classical hindi": "hindi"}
+        return {aliases.get(name, name) for name in
+                (normalized_language(str(item)).casefold() for item in (value or []))}
     for label, evidence_languages in (("audited source", audited_languages),
                                       ("gloss evidence", glosses.get("sense_languages"))):
         if evidence_languages is not None and language_identity(evidence_languages) != language_identity(languages):
