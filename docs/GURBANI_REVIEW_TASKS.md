@@ -39,6 +39,15 @@ Focused timing now has an explicit reasoning setting and a version2 prompt expos
 
 The original production ledger is expired and unchanged. Two subsequent phases used only its unspent allowance, binding the settled parent-ledger hashes and retaining their own call/time limits. Across all three ledgers,57 requests settled at **$2.903697**, with no pending calls and a total ceiling of$3. No new reader has completed semantics or publication. The unrelated working-tree contract migration findings and six historical trim-evidence holds remain unchanged; the audio-quality audit reports no errors.
 
+The subsequent pair-recovery review retained37 of43 Tav Prasad starts from the
+unchanged independent responses, with six explicit holds. Four narrow two-pass
+Pro checks resolved those six for$0.062054. The actual `align` caller adopted
+all43 expanded starts into `03-timing.json` without provider dispatch; both the
+complete selection and final timing validators pass. Aggregate65 requests are
+settled at$2.965751. No other reader timing or new semantics is claimed. Eight
+new saved-response regressions and independent review verify partial recovery
+while retaining strict final completeness.
+
 Do not certify recordings as auditioned from catalogue metadata alone. Competing traditional name derivations must remain distinguishable; no invented single root gloss or global spelling replacement. Reuse the current reader UI.
 
 ## Contextual names and meanings — 25 October 2026

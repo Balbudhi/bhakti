@@ -624,3 +624,19 @@ failure set for future pipeline qualification. Passing schema, token indices or 
 model's fidelity flags is not proof that the resulting English is grammatical or
 faithful. Read the joined verse and its returning variants; reconcile the chosen
 sense, source agency, imagery, English phrase and clickable word map together.
+
+### Recovering isolated timing pairs from a held region
+
+A continuation may explicitly opt into `allow_partial_rows: true` for a saved
+joint report. Both independent packets must still match the complete requested
+IDs, order, source identity and excerpt bounds. Each row must independently pass
+the normal onset checks, and the two measurements must agree within0.5seconds.
+Any pair that conflicts in order with another agreeing pair in either hearing is
+held on both sides. Raw values are never repaired or reinterpreted.
+
+The hash-bound continuation retains only those checked pairs and requests only
+the unresolved starts. The normal final consumer independently reconstructs the
+selection and still requires every expanded performance exactly once in strictly
+increasing order. Partial recovery does not accept the failed whole region or
+permit publication of an incomplete timing selection. Old callers stay strict
+unless this flag is explicitly present.

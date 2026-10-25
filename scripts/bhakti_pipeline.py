@@ -2509,9 +2509,11 @@ def joint_consensus_from_measurements(region: dict[str, Any], passes: list[dict[
 
 def joint_pair_evidence(
     report: dict[str, Any], *, expected_region: dict[str, Any],
-    expected_fingerprint: str, duration: float,
+    expected_fingerprint: str, duration: float, allow_partial_rows: bool = False,
 ) -> dict[str, Any]:
     """Recover agreeing pairs without accepting an otherwise failed region."""
+    if type(allow_partial_rows) is not bool:
+        raise ValueError("partial timing recovery flag must be boolean")
     if (report.get("input_fingerprint") != expected_fingerprint
             or report.get("region") != expected_region):
         raise ValueError("joint evidence source/region fingerprint differs")
@@ -2523,18 +2525,53 @@ def joint_pair_evidence(
         region = independent_joint_region(expected_region, index)
         if saved.get("region") != region:
             raise ValueError("joint evidence independent clip/context differs")
-        validated = validate_joint_timing_pass(region, saved.get("response", {}).get("packet", {}), duration)
-        if validated["validation_errors"]:
-            raise ValueError("joint evidence has invalid full packet: " + "; ".join(validated["validation_errors"]))
-        checked.append(validated["starts"])
+        packet = saved.get("response", {}).get("packet", {})
+        if not allow_partial_rows:
+            validated = validate_joint_timing_pass(region, packet, duration)
+            if validated["validation_errors"]:
+                raise ValueError("joint evidence has invalid full packet: " + "; ".join(validated["validation_errors"]))
+            checked.append(validated["starts"])
+            continue
+        targets = region_timing_targets(region)
+        rows = packet.get("starts") if isinstance(packet, dict) else None
+        if (not isinstance(rows, list)
+                or [row.get("timing_id") if isinstance(row, dict) else None for row in rows]
+                != [target["timing_id"] for target in targets]):
+            raise ValueError("partial timing recovery requires exact full packet IDs/order/count")
+        if not (math.isfinite(duration) and 0 <= region["clip_start"] < region["clip_end"] <= duration):
+            raise ValueError("partial timing recovery has invalid clip bounds")
+        checked.append(rows)
+    if allow_partial_rows:
+        # Both complete populations are bound before any isolated-row recovery.
+        individually_checked = []
+        for index, rows in enumerate(checked):
+            region = independent_joint_region(expected_region, index)
+            valid_rows = []
+            for row in rows:
+                singleton = {**region, "target_timing_ids": [row["timing_id"]]}
+                validated = validate_joint_timing_pass(singleton, {"starts": [row]}, duration)
+                valid_rows.append(validated["starts"][0] if not validated["validation_errors"] else None)
+            individually_checked.append(valid_rows)
+        checked = individually_checked
     agreed, held = [], []
     targets = region_timing_targets(expected_region)
     for target, first, second in zip(targets, *checked):
-        if abs(first["start"] - second["start"]) > .5:
+        if first is None or second is None or abs(first["start"] - second["start"]) > .5:
             held.append(target["timing_id"])
         else:
             agreed.append({**target, "start": round((first["start"] + second["start"]) / 2, 3),
                            "measurements": [first["start"], second["start"]]})
+    if allow_partial_rows:
+        # An agreeing value can still conflict with another agreeing value's
+        # order. Hold both endpoints in either hearing; never choose greedily.
+        ambiguous = set()
+        for index, first in enumerate(agreed):
+            for second in agreed[index + 1:]:
+                if any(a >= b for a, b in zip(first["measurements"], second["measurements"])):
+                    ambiguous.update((first["timing_id"], second["timing_id"]))
+        held = set(held) | ambiguous
+        agreed = [row for row in agreed if row["timing_id"] not in held]
+        held = [target["timing_id"] for target in targets if target["timing_id"] in held]
     return {"agreed": agreed, "held_timing_ids": held}
 
 
@@ -2836,7 +2873,8 @@ def selected_joint_pairs(evidence, occurrences, duration, audio_sha256, source_i
         if item.get("input_fingerprint") != fingerprint:
             raise ValueError("joint selection audio/source fingerprint differs")
         checked = joint_pair_evidence(item["report"], expected_region=region,
-                                     expected_fingerprint=fingerprint, duration=duration)
+                                     expected_fingerprint=fingerprint, duration=duration,
+                                     allow_partial_rows=item.get("allow_partial_rows", False))
         by_id = {row["timing_id"]: row for row in checked["agreed"]}
         selected = item.get("select_timing_ids")
         if (not isinstance(selected, list) or not selected or len(set(selected)) != len(selected)
@@ -2868,7 +2906,8 @@ def align_joint_continuation(song_dir, audio, occurrences, duration, options):
             raise ValueError("retained joint report hash changed")
         evidence.append({"region": saved["region"], "input_fingerprint": saved["input_fingerprint"],
                          "select_timing_ids": saved["select_timing_ids"], "report": json.loads(raw),
-                         "original_report_sha256": saved["sha256"]})
+                         "original_report_sha256": saved["sha256"],
+                         **({"allow_partial_rows": saved["allow_partial_rows"]} if "allow_partial_rows" in saved else {})})
     retained = selected_joint_pairs(evidence, occurrences, duration, audio_hash, source_identity)
     required = [row["timing_id"] for row in expanded_timing_targets(occurrences)]
     declared = [row["timing_id"] for row in retained]

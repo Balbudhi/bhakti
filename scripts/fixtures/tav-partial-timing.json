@@ -1,0 +1,2947 @@
+{
+  "audio_sha256": "118ca7d10b882248f4c76cf96ce433f7bc3c2e4c9e7b5097f0308f01509d93aa",
+  "source_identity": {
+    "version": 2,
+    "audio_sha256": "3ca8c0621a7c52dace15788f78e6f31f9c00549157ca8537cdc255dab332954f",
+    "source_identity": {
+      "trim": {
+        "application_version": 2,
+        "applied": false,
+        "status": "no-trim",
+        "trim_start": 0.0,
+        "trim_end": 311.201,
+        "source_sha256": "3ca8c0621a7c52dace15788f78e6f31f9c00549157ca8537cdc255dab332954f",
+        "outputs": {
+          "audio.webm": {
+            "sha256": "3ca8c0621a7c52dace15788f78e6f31f9c00549157ca8537cdc255dab332954f"
+          },
+          "audio.m4a": {
+            "sha256": "2eb7bc33e1fb331bf9667b0efe465fe3b4ea5527b9b8e3523c7d30ab8902c98a"
+          }
+        }
+      }
+    },
+    "ordered_occurrences": [
+      {
+        "occurrence_id": "occ-000",
+        "ref": "line-1",
+        "repeats": 1,
+        "source_text": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+        "roman": "ikk oṅkār satigur prasādi.",
+        "section": "invocation",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-001",
+        "ref": "line-2",
+        "repeats": 1,
+        "source_text": "ਤ੍ਵਪ੍ਰਸਾਦਿ ਸ੍ਵਯੇ ॥ ਪਾਤਿਸਾਹੀ ੧੦ ॥",
+        "roman": "tvaprasādi savaiye pātisāhī dasvī̃.",
+        "section": "invocation",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-002",
+        "ref": "line-3",
+        "repeats": 1,
+        "source_text": "ਸ੍ਰਾਵਗ ਸੁਧ ਸਮੂਹ ਸਿਧਾਨ ਕੇ ਦੇਖਿ ਫਿਰਿਓ ਘਰ ਜੋਗ ਜਤੀ ਕੇ ॥",
+        "roman": "srāvaga sudha samūha sidhāna ke dekhi phirio ghara joga jatī ke.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-003",
+        "ref": "line-4",
+        "repeats": 1,
+        "source_text": "ਸੂਰ ਸੁਰਾਰਦਨ ਸੁਧ ਸੁਧਾਦਿਕ ਸੰਤ ਸਮੂਹ ਅਨੇਕ ਮਤੀ ਕੇ ॥",
+        "roman": "sūra surāradana sudha sudhādika saṁta samūha aneka matī ke.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-004",
+        "ref": "line-5",
+        "repeats": 1,
+        "source_text": "ਸਾਰੇ ਹੀ ਦੇਸ ਕੋ ਦੇਖਿ ਰਹਿਓ ਮਤ ਕੋਊ ਨ ਦੇਖੀਅਤ ਪ੍ਰਾਨਪਤੀ ਕੇ ॥",
+        "roman": "sāre hī desa ko dekhi rahio mata koū na dekhīata prānapatī ke.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-005",
+        "ref": "line-6",
+        "repeats": 1,
+        "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਕੀ ਭਾਇ ਕ੍ਰਿਪਾ ਹੂ ਤੇ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਰਤੀ ਕੇ ॥",
+        "roman": "srī bhagavāna kī bhāi kripā hū te eka ratī binu eka ratī ke.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-006",
+        "ref": "line-7",
+        "repeats": 1,
+        "source_text": "ਮਾਤੇ ਮਤੰਗ ਜਰੇ ਜਰ ਸੰਗ ਅਨੂਪ ਉਤੰਗ ਸੁਰੰਗ ਸਵਾਰੇ ॥",
+        "roman": "māte mataṅga jare jara saṅga anūpa utaṅga suraṅga savāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-007",
+        "ref": "line-8",
+        "repeats": 1,
+        "source_text": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕਉ ਜਾਤ ਨਿਵਾਰੇ ॥",
+        "roman": "koṭa turaṅga kuraṅga se kūdata pauna ke gauna kau jāta nivāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-008",
+        "ref": "line-9",
+        "repeats": 1,
+        "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+        "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-009",
+        "ref": "line-10",
+        "repeats": 1,
+        "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+        "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-010",
+        "ref": "line-11",
+        "repeats": 1,
+        "source_text": "ਜੀਤ ਫਿਰੈ ਸਭ ਦੇਸ ਦਿਸਾਨ ਕੋ ਬਾਜਤ ਢੋਲ ਮ੍ਰਿਦੰਗ ਨਗਾਰੇ ॥",
+        "roman": "jīta phirai sabha desa disāna ko bājata ḍhola mridaṅga nagāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-011",
+        "ref": "line-12",
+        "repeats": 1,
+        "source_text": "ਗੁੰਜਤ ਗੂੜ ਗਜਾਨ ਕੇ ਸੁੰਦਰ ਹਿੰਸਤ ਹੈਂ ਹਯਰਾਜ ਹਜਾਰੇ ॥",
+        "roman": "guṁjata gūṛha gajāna ke suṁdara hiṁsata haiṁ hayarāja hajāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-012",
+        "ref": "line-13",
+        "repeats": 1,
+        "source_text": "ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਕੇ ਭੂਪਤ ਕਉਨੁ ਗਨੈ ਨਹੀ ਜਾਤ ਬਿਚਾਰੇ ॥",
+        "roman": "bhūta bhavikkha bhavāna ke bhūpata kaunu ganai nahī jāta bicāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-013",
+        "ref": "line-14",
+        "repeats": 1,
+        "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਅੰਤ ਕਉ ਅੰਤ ਕੇ ਧਾਮ ਸਿਧਾਰੇ ॥",
+        "roman": "srīpati srī bhagavāna bhaje binu aṁta kau aṁta ke dhāma sidhāre.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-014",
+        "ref": "line-15",
+        "repeats": 1,
+        "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+        "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-015",
+        "ref": "line-16",
+        "repeats": 1,
+        "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+        "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-016",
+        "ref": "line-17",
+        "repeats": 1,
+        "source_text": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰਕ ਦੇਖੈ ॥",
+        "roman": "pauna ahāra jatī jata dhāra sabai su bicāra hajāraka dekhai.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-017",
+        "ref": "line-18",
+        "repeats": 1,
+        "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਭੂਪਤਿ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਨ ਲੇਖੈ ॥",
+        "roman": "srī bhagavāna bhaje binu bhūpati eka ratī binu eka na lekhai.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-018",
+        "ref": "line-19",
+        "repeats": 1,
+        "source_text": "ਸੁਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥",
+        "roman": "sudha sipāha duraṁta dubāha su sāja sanāha durajāna dalaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-019",
+        "ref": "line-20",
+        "repeats": 1,
+        "source_text": "ਭਾਰੀ ਗੁਮਾਨ ਭਰੇ ਮਨ ਮੈਂ ਕਰ ਪਰਬਤ ਪੰਖ ਹਲੈ ਨ ਹਲੈਂਗੇ ॥",
+        "roman": "bhārī gumāna bhare mana maiṁ kara parabata paṁkha halai na halaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-020",
+        "ref": "line-21",
+        "repeats": 1,
+        "source_text": "ਤੋਰਿ ਅਰੀਨ ਮਰੋਰਿ ਮਵਾਸਨ ਮਾਤੇ ਮਤੰਗਨ ਮਾਨ ਮਲੈਂਗੇ ॥",
+        "roman": "tori arīna marori mavāsana māte mataṅgana māna malaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-021",
+        "ref": "line-22",
+        "repeats": 1,
+        "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਕ੍ਰਿਪਾ ਬਿਨੁ ਤਿਆਗਿ ਜਹਾਨ ਨਿਦਾਨ ਚਲੈਂਗੇ ॥",
+        "roman": "srīpati srī bhagavāna kripā binu tiāgi jahāna nidāna calaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-022",
+        "ref": "line-23",
+        "repeats": 1,
+        "source_text": "ਬੀਰ ਅਪਾਰ ਬਡੇ ਬਰਿਆਰ ਅਬਿਚਾਰਹਿ ਸਾਰ ਕੀ ਧਾਰ ਭਛੱਯਾ ॥",
+        "roman": "bīra apāra baḍe bariāra abicārehi sāra kī dhāra bhachayyā.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-023",
+        "ref": "line-24",
+        "repeats": 1,
+        "source_text": "ਤੋਰਤ ਦੇਸ ਮਲਿੰਦ ਮਵਾਸਨ ਮਾਤੇ ਗਜਾਨ ਕੇ ਮਾਨ ਮਲੱਯਾ ॥",
+        "roman": "torata desa maliṁda mavāsana māte gajāna ke māna malayyā.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-024",
+        "ref": "line-25",
+        "repeats": 1,
+        "source_text": "ਗਾੜ੍ਹੇ ਗੜ੍ਹਾਨ ਕੋ ਤੋੜਨਹਾਰ ਸੁ ਬਾਤਨ ਹੀਂ ਚਕ ਚਾਰ ਲਵੱਯਾ ॥",
+        "roman": "gāṛhe gaṛhāna ko toṛanahāra su bātana hīṁ caka cāra lavayyā.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-025",
+        "ref": "line-26",
+        "repeats": 1,
+        "source_text": "ਸਾਹਿਬੁ ਸ੍ਰੀ ਸਭ ਕੋ ਸਿਰਨਾਇਕ ਜਾਚਕ ਅਨੇਕ ਸੁ ਏਕ ਦਿਵੱਯਾ ॥",
+        "roman": "sāhibu srī sabha ko siranāika jācaka aneka su eka divayyā.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-026",
+        "ref": "line-27",
+        "repeats": 1,
+        "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+        "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-027",
+        "ref": "line-28",
+        "repeats": 1,
+        "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+        "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-028",
+        "ref": "line-29",
+        "repeats": 1,
+        "source_text": "ਪੁੰਨ ਪ੍ਰਤਾਪਨ ਬਾਢ ਜੈਤ ਧੁਨ ਪਾਪਨ ਕੇ ਬਹੁ ਪੁੰਜ ਖਪੈਂਗੇ ॥",
+        "roman": "puṁna pratāpana bāḍha jaita dhuna pāpana ke bahu puṁja khapaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-029",
+        "ref": "line-30",
+        "repeats": 1,
+        "source_text": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਲੋਕ ਚਪੈਂਗੇ ॥",
+        "roman": "sādha samūha prasaṁna phirai jaga satra sabhai avaloka capaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-030",
+        "ref": "line-31",
+        "repeats": 1,
+        "source_text": "ਮਾਨਵ ਇੰਦ੍ਰ ਗਜਿੰਦ੍ਰ ਨਰਾਧਿਪ ਜੌਨ ਤ੍ਰਿਲੋਕ ਕੋ ਰਾਜ ਕਰੈਂਗੇ ॥",
+        "roman": "mānava iṁdra gajiṁdra narādhipa jauna triloka ko rāja karaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-031",
+        "ref": "line-32",
+        "repeats": 1,
+        "source_text": "ਕੋਟਿ ਇਸਨਾਨ ਗਜਾਦਿਕ ਦਾਨ ਅਨੇਕ ਸੁਅੰਬਰ ਸਾਜ ਬਰੈਂਗੇ ॥",
+        "roman": "koṭi isnāna gajādika dāna aneka suaṁbara sāja baraiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-032",
+        "ref": "line-33",
+        "repeats": 1,
+        "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+        "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-033",
+        "ref": "line-34",
+        "repeats": 1,
+        "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+        "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-034",
+        "ref": "line-35",
+        "repeats": 1,
+        "source_text": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਊ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+        "roman": "kahā bhayo jo doū locana mūṁda kai baiṭhi rahio baka dhiāna lagāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-035",
+        "ref": "line-36",
+        "repeats": 1,
+        "source_text": "ਨ੍ਹਾਤ ਫਿਰਿਓ ਲੀਏ ਸਾਤ ਸਮੁਦ੍ਰਨ ਲੋਕ ਗਯੋ ਪਰਲੋਕ ਗਵਾਇਓ ॥",
+        "roman": "nhāta phirio līe sāta samudrana loka gayo paraloka gavāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-036",
+        "ref": "line-37",
+        "repeats": 1,
+        "source_text": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+        "roman": "bāsa kīo bikhiāna so baiṭha kai aise hī aise su baisa bitāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-037",
+        "ref": "line-38",
+        "repeats": 1,
+        "source_text": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥",
+        "roman": "sācu kahoṁ suna lehu sabhai jina prema kīo tina hī prabha pāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-038",
+        "ref": "line-39",
+        "repeats": 1,
+        "source_text": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰ੍ਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+        "roman": "kāhū lai pāhana pūja dharyo sira kāhū lai liṅga gare laṭakāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-039",
+        "ref": "line-40",
+        "repeats": 1,
+        "source_text": "ਕਾਹੂ ਲਖਿਓ ਹਰਿ ਅਵਾਚੀ ਦਿਸਾ ਮਹਿ ਕਾਹੂ ਪਛਾਹ ਕੋ ਸੀਸੁ ਨਿਵਾਇਓ ॥",
+        "roman": "kāhū lakhio hari avācī disā mahi kāhū pachāha ko sīsu nivāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-040",
+        "ref": "line-41",
+        "repeats": 1,
+        "source_text": "ਕੋਊ ਬੁਤਾਨ ਕੋ ਪੂਜਤ ਹੈ ਪਸੁ ਕੋਊ ਮ੍ਰਿਤਾਨ ਕੋ ਪੂਜਨ ਧਾਇਓ ॥",
+        "roman": "koū butāna ko pūjata hai pasu koū mritāna ko pūjana dhāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      },
+      {
+        "occurrence_id": "occ-041",
+        "ref": "line-42",
+        "repeats": 2,
+        "source_text": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਝਿਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥",
+        "roman": "kūra kriyā urjhio sabha hī jaga srī bhagavāna ko bhedu na pāio.",
+        "section": "verse",
+        "performer_context": "Sarab Sanjhi Gurbani"
+      }
+    ]
+  },
+  "ordered_occurrences": [
+    {
+      "occurrence_id": "occ-000",
+      "ref": "line-1",
+      "repeats": 1,
+      "source_text": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "roman": "ikk oṅkār satigur prasādi.",
+      "section": "invocation",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-001",
+      "ref": "line-2",
+      "repeats": 1,
+      "source_text": "ਤ੍ਵਪ੍ਰਸਾਦਿ ਸ੍ਵਯੇ ॥ ਪਾਤਿਸਾਹੀ ੧੦ ॥",
+      "roman": "tvaprasādi savaiye pātisāhī dasvī̃.",
+      "section": "invocation",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-002",
+      "ref": "line-3",
+      "repeats": 1,
+      "source_text": "ਸ੍ਰਾਵਗ ਸੁਧ ਸਮੂਹ ਸਿਧਾਨ ਕੇ ਦੇਖਿ ਫਿਰਿਓ ਘਰ ਜੋਗ ਜਤੀ ਕੇ ॥",
+      "roman": "srāvaga sudha samūha sidhāna ke dekhi phirio ghara joga jatī ke.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-003",
+      "ref": "line-4",
+      "repeats": 1,
+      "source_text": "ਸੂਰ ਸੁਰਾਰਦਨ ਸੁਧ ਸੁਧਾਦਿਕ ਸੰਤ ਸਮੂਹ ਅਨੇਕ ਮਤੀ ਕੇ ॥",
+      "roman": "sūra surāradana sudha sudhādika saṁta samūha aneka matī ke.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-004",
+      "ref": "line-5",
+      "repeats": 1,
+      "source_text": "ਸਾਰੇ ਹੀ ਦੇਸ ਕੋ ਦੇਖਿ ਰਹਿਓ ਮਤ ਕੋਊ ਨ ਦੇਖੀਅਤ ਪ੍ਰਾਨਪਤੀ ਕੇ ॥",
+      "roman": "sāre hī desa ko dekhi rahio mata koū na dekhīata prānapatī ke.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-005",
+      "ref": "line-6",
+      "repeats": 1,
+      "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਕੀ ਭਾਇ ਕ੍ਰਿਪਾ ਹੂ ਤੇ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਰਤੀ ਕੇ ॥",
+      "roman": "srī bhagavāna kī bhāi kripā hū te eka ratī binu eka ratī ke.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-006",
+      "ref": "line-7",
+      "repeats": 1,
+      "source_text": "ਮਾਤੇ ਮਤੰਗ ਜਰੇ ਜਰ ਸੰਗ ਅਨੂਪ ਉਤੰਗ ਸੁਰੰਗ ਸਵਾਰੇ ॥",
+      "roman": "māte mataṅga jare jara saṅga anūpa utaṅga suraṅga savāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-007",
+      "ref": "line-8",
+      "repeats": 1,
+      "source_text": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕਉ ਜਾਤ ਨਿਵਾਰੇ ॥",
+      "roman": "koṭa turaṅga kuraṅga se kūdata pauna ke gauna kau jāta nivāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-008",
+      "ref": "line-9",
+      "repeats": 1,
+      "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+      "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-009",
+      "ref": "line-10",
+      "repeats": 1,
+      "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+      "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-010",
+      "ref": "line-11",
+      "repeats": 1,
+      "source_text": "ਜੀਤ ਫਿਰੈ ਸਭ ਦੇਸ ਦਿਸਾਨ ਕੋ ਬਾਜਤ ਢੋਲ ਮ੍ਰਿਦੰਗ ਨਗਾਰੇ ॥",
+      "roman": "jīta phirai sabha desa disāna ko bājata ḍhola mridaṅga nagāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-011",
+      "ref": "line-12",
+      "repeats": 1,
+      "source_text": "ਗੁੰਜਤ ਗੂੜ ਗਜਾਨ ਕੇ ਸੁੰਦਰ ਹਿੰਸਤ ਹੈਂ ਹਯਰਾਜ ਹਜਾਰੇ ॥",
+      "roman": "guṁjata gūṛha gajāna ke suṁdara hiṁsata haiṁ hayarāja hajāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-012",
+      "ref": "line-13",
+      "repeats": 1,
+      "source_text": "ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਕੇ ਭੂਪਤ ਕਉਨੁ ਗਨੈ ਨਹੀ ਜਾਤ ਬਿਚਾਰੇ ॥",
+      "roman": "bhūta bhavikkha bhavāna ke bhūpata kaunu ganai nahī jāta bicāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-013",
+      "ref": "line-14",
+      "repeats": 1,
+      "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਅੰਤ ਕਉ ਅੰਤ ਕੇ ਧਾਮ ਸਿਧਾਰੇ ॥",
+      "roman": "srīpati srī bhagavāna bhaje binu aṁta kau aṁta ke dhāma sidhāre.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-014",
+      "ref": "line-15",
+      "repeats": 1,
+      "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+      "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-015",
+      "ref": "line-16",
+      "repeats": 1,
+      "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+      "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-016",
+      "ref": "line-17",
+      "repeats": 1,
+      "source_text": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰਕ ਦੇਖੈ ॥",
+      "roman": "pauna ahāra jatī jata dhāra sabai su bicāra hajāraka dekhai.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-017",
+      "ref": "line-18",
+      "repeats": 1,
+      "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਭੂਪਤਿ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਨ ਲੇਖੈ ॥",
+      "roman": "srī bhagavāna bhaje binu bhūpati eka ratī binu eka na lekhai.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-018",
+      "ref": "line-19",
+      "repeats": 1,
+      "source_text": "ਸੁਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥",
+      "roman": "sudha sipāha duraṁta dubāha su sāja sanāha durajāna dalaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-019",
+      "ref": "line-20",
+      "repeats": 1,
+      "source_text": "ਭਾਰੀ ਗੁਮਾਨ ਭਰੇ ਮਨ ਮੈਂ ਕਰ ਪਰਬਤ ਪੰਖ ਹਲੈ ਨ ਹਲੈਂਗੇ ॥",
+      "roman": "bhārī gumāna bhare mana maiṁ kara parabata paṁkha halai na halaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-020",
+      "ref": "line-21",
+      "repeats": 1,
+      "source_text": "ਤੋਰਿ ਅਰੀਨ ਮਰੋਰਿ ਮਵਾਸਨ ਮਾਤੇ ਮਤੰਗਨ ਮਾਨ ਮਲੈਂਗੇ ॥",
+      "roman": "tori arīna marori mavāsana māte mataṅgana māna malaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-021",
+      "ref": "line-22",
+      "repeats": 1,
+      "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਕ੍ਰਿਪਾ ਬਿਨੁ ਤਿਆਗਿ ਜਹਾਨ ਨਿਦਾਨ ਚਲੈਂਗੇ ॥",
+      "roman": "srīpati srī bhagavāna kripā binu tiāgi jahāna nidāna calaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-022",
+      "ref": "line-23",
+      "repeats": 1,
+      "source_text": "ਬੀਰ ਅਪਾਰ ਬਡੇ ਬਰਿਆਰ ਅਬਿਚਾਰਹਿ ਸਾਰ ਕੀ ਧਾਰ ਭਛੱਯਾ ॥",
+      "roman": "bīra apāra baḍe bariāra abicārehi sāra kī dhāra bhachayyā.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-023",
+      "ref": "line-24",
+      "repeats": 1,
+      "source_text": "ਤੋਰਤ ਦੇਸ ਮਲਿੰਦ ਮਵਾਸਨ ਮਾਤੇ ਗਜਾਨ ਕੇ ਮਾਨ ਮਲੱਯਾ ॥",
+      "roman": "torata desa maliṁda mavāsana māte gajāna ke māna malayyā.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-024",
+      "ref": "line-25",
+      "repeats": 1,
+      "source_text": "ਗਾੜ੍ਹੇ ਗੜ੍ਹਾਨ ਕੋ ਤੋੜਨਹਾਰ ਸੁ ਬਾਤਨ ਹੀਂ ਚਕ ਚਾਰ ਲਵੱਯਾ ॥",
+      "roman": "gāṛhe gaṛhāna ko toṛanahāra su bātana hīṁ caka cāra lavayyā.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-025",
+      "ref": "line-26",
+      "repeats": 1,
+      "source_text": "ਸਾਹਿਬੁ ਸ੍ਰੀ ਸਭ ਕੋ ਸਿਰਨਾਇਕ ਜਾਚਕ ਅਨੇਕ ਸੁ ਏਕ ਦਿਵੱਯਾ ॥",
+      "roman": "sāhibu srī sabha ko siranāika jācaka aneka su eka divayyā.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-026",
+      "ref": "line-27",
+      "repeats": 1,
+      "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+      "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-027",
+      "ref": "line-28",
+      "repeats": 1,
+      "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+      "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-028",
+      "ref": "line-29",
+      "repeats": 1,
+      "source_text": "ਪੁੰਨ ਪ੍ਰਤਾਪਨ ਬਾਢ ਜੈਤ ਧੁਨ ਪਾਪਨ ਕੇ ਬਹੁ ਪੁੰਜ ਖਪੈਂਗੇ ॥",
+      "roman": "puṁna pratāpana bāḍha jaita dhuna pāpana ke bahu puṁja khapaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-029",
+      "ref": "line-30",
+      "repeats": 1,
+      "source_text": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਲੋਕ ਚਪੈਂਗੇ ॥",
+      "roman": "sādha samūha prasaṁna phirai jaga satra sabhai avaloka capaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-030",
+      "ref": "line-31",
+      "repeats": 1,
+      "source_text": "ਮਾਨਵ ਇੰਦ੍ਰ ਗਜਿੰਦ੍ਰ ਨਰਾਧਿਪ ਜੌਨ ਤ੍ਰਿਲੋਕ ਕੋ ਰਾਜ ਕਰੈਂਗੇ ॥",
+      "roman": "mānava iṁdra gajiṁdra narādhipa jauna triloka ko rāja karaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-031",
+      "ref": "line-32",
+      "repeats": 1,
+      "source_text": "ਕੋਟਿ ਇਸਨਾਨ ਗਜਾਦਿਕ ਦਾਨ ਅਨੇਕ ਸੁਅੰਬਰ ਸਾਜ ਬਰੈਂਗੇ ॥",
+      "roman": "koṭi isnāna gajādika dāna aneka suaṁbara sāja baraiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-032",
+      "ref": "line-33",
+      "repeats": 1,
+      "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+      "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-033",
+      "ref": "line-34",
+      "repeats": 1,
+      "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+      "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-034",
+      "ref": "line-35",
+      "repeats": 1,
+      "source_text": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਊ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+      "roman": "kahā bhayo jo doū locana mūṁda kai baiṭhi rahio baka dhiāna lagāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-035",
+      "ref": "line-36",
+      "repeats": 1,
+      "source_text": "ਨ੍ਹਾਤ ਫਿਰਿਓ ਲੀਏ ਸਾਤ ਸਮੁਦ੍ਰਨ ਲੋਕ ਗਯੋ ਪਰਲੋਕ ਗਵਾਇਓ ॥",
+      "roman": "nhāta phirio līe sāta samudrana loka gayo paraloka gavāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-036",
+      "ref": "line-37",
+      "repeats": 1,
+      "source_text": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+      "roman": "bāsa kīo bikhiāna so baiṭha kai aise hī aise su baisa bitāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-037",
+      "ref": "line-38",
+      "repeats": 1,
+      "source_text": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥",
+      "roman": "sācu kahoṁ suna lehu sabhai jina prema kīo tina hī prabha pāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-038",
+      "ref": "line-39",
+      "repeats": 1,
+      "source_text": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰ੍ਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+      "roman": "kāhū lai pāhana pūja dharyo sira kāhū lai liṅga gare laṭakāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-039",
+      "ref": "line-40",
+      "repeats": 1,
+      "source_text": "ਕਾਹੂ ਲਖਿਓ ਹਰਿ ਅਵਾਚੀ ਦਿਸਾ ਮਹਿ ਕਾਹੂ ਪਛਾਹ ਕੋ ਸੀਸੁ ਨਿਵਾਇਓ ॥",
+      "roman": "kāhū lakhio hari avācī disā mahi kāhū pachāha ko sīsu nivāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-040",
+      "ref": "line-41",
+      "repeats": 1,
+      "source_text": "ਕੋਊ ਬੁਤਾਨ ਕੋ ਪੂਜਤ ਹੈ ਪਸੁ ਕੋਊ ਮ੍ਰਿਤਾਨ ਕੋ ਪੂਜਨ ਧਾਇਓ ॥",
+      "roman": "koū butāna ko pūjata hai pasu koū mritāna ko pūjana dhāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    },
+    {
+      "occurrence_id": "occ-041",
+      "ref": "line-42",
+      "repeats": 2,
+      "source_text": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਝਿਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥",
+      "roman": "kūra kriyā urjhio sabha hī jaga srī bhagavāna ko bhedu na pāio.",
+      "section": "verse",
+      "performer_context": "Sarab Sanjhi Gurbani"
+    }
+  ],
+  "duration_seconds": 311.201,
+  "reports": [
+    {
+      "original_sha256": "6f9c9f2f40bb68b79d42360562a6a599d6ad4448ce67eacf035e9bd9ed3c3902",
+      "report": {
+        "region": {
+          "index": 0,
+          "grid": "joint-context",
+          "clip_start": 10.0,
+          "clip_end": 80.0,
+          "target_indices": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "target_occurrences": [
+            {
+              "occurrence_id": "occ-003",
+              "ref": "line-4",
+              "repeats": 1,
+              "source_text": "ਸੂਰ ਸੁਰਾਰਦਨ ਸੁਧ ਸੁਧਾਦਿਕ ਸੰਤ ਸਮੂਹ ਅਨੇਕ ਮਤੀ ਕੇ ॥",
+              "roman": "sūra surāradana sudha sudhādika saṁta samūha aneka matī ke.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-004",
+              "ref": "line-5",
+              "repeats": 1,
+              "source_text": "ਸਾਰੇ ਹੀ ਦੇਸ ਕੋ ਦੇਖਿ ਰਹਿਓ ਮਤ ਕੋਊ ਨ ਦੇਖੀਅਤ ਪ੍ਰਾਨਪਤੀ ਕੇ ॥",
+              "roman": "sāre hī desa ko dekhi rahio mata koū na dekhīata prānapatī ke.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-005",
+              "ref": "line-6",
+              "repeats": 1,
+              "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਕੀ ਭਾਇ ਕ੍ਰਿਪਾ ਹੂ ਤੇ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਰਤੀ ਕੇ ॥",
+              "roman": "srī bhagavāna kī bhāi kripā hū te eka ratī binu eka ratī ke.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-006",
+              "ref": "line-7",
+              "repeats": 1,
+              "source_text": "ਮਾਤੇ ਮਤੰਗ ਜਰੇ ਜਰ ਸੰਗ ਅਨੂਪ ਉਤੰਗ ਸੁਰੰਗ ਸਵਾਰੇ ॥",
+              "roman": "māte mataṅga jare jara saṅga anūpa utaṅga suraṅga savāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-007",
+              "ref": "line-8",
+              "repeats": 1,
+              "source_text": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕਉ ਜਾਤ ਨਿਵਾਰੇ ॥",
+              "roman": "koṭa turaṅga kuraṅga se kūdata pauna ke gauna kau jāta nivāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-008",
+              "ref": "line-9",
+              "repeats": 1,
+              "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+              "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-002",
+            "ref": "line-3",
+            "repeats": 1,
+            "source_text": "ਸ੍ਰਾਵਗ ਸੁਧ ਸਮੂਹ ਸਿਧਾਨ ਕੇ ਦੇਖਿ ਫਿਰਿਓ ਘਰ ਜੋਗ ਜਤੀ ਕੇ ॥",
+            "roman": "srāvaga sudha samūha sidhāna ke dekhi phirio ghara joga jatī ke.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "following_context": {
+            "occurrence_id": "occ-009",
+            "ref": "line-10",
+            "repeats": 1,
+            "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+            "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "max_completion_tokens": 4096,
+          "reasoning_effort": "medium",
+          "prompt_version": 2
+        },
+        "input_fingerprint": "a4c26585a6f51bcfb858d05b91859331dd23a87a3157d2cec11e7e42aad9a5e1",
+        "validation_errors": [],
+        "expanded_starts": [
+          {
+            "timing_id": "occ-003-r01",
+            "start": 22.3
+          },
+          {
+            "timing_id": "occ-004-r01",
+            "start": 30.0
+          },
+          {
+            "timing_id": "occ-005-r01",
+            "start": 37.35
+          },
+          {
+            "timing_id": "occ-006-r01",
+            "start": 44.4
+          },
+          {
+            "timing_id": "occ-007-r01",
+            "start": 51.5
+          },
+          {
+            "timing_id": "occ-008-r01",
+            "start": 58.9
+          }
+        ],
+        "passes": [
+          {
+            "region": {
+              "index": 0,
+              "grid": "joint-context",
+              "clip_start": 10.0,
+              "clip_end": 80.0,
+              "target_indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-003",
+                  "ref": "line-4",
+                  "repeats": 1,
+                  "source_text": "ਸੂਰ ਸੁਰਾਰਦਨ ਸੁਧ ਸੁਧਾਦਿਕ ਸੰਤ ਸਮੂਹ ਅਨੇਕ ਮਤੀ ਕੇ ॥",
+                  "roman": "sūra surāradana sudha sudhādika saṁta samūha aneka matī ke.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-004",
+                  "ref": "line-5",
+                  "repeats": 1,
+                  "source_text": "ਸਾਰੇ ਹੀ ਦੇਸ ਕੋ ਦੇਖਿ ਰਹਿਓ ਮਤ ਕੋਊ ਨ ਦੇਖੀਅਤ ਪ੍ਰਾਨਪਤੀ ਕੇ ॥",
+                  "roman": "sāre hī desa ko dekhi rahio mata koū na dekhīata prānapatī ke.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-005",
+                  "ref": "line-6",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਕੀ ਭਾਇ ਕ੍ਰਿਪਾ ਹੂ ਤੇ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਰਤੀ ਕੇ ॥",
+                  "roman": "srī bhagavāna kī bhāi kripā hū te eka ratī binu eka ratī ke.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-006",
+                  "ref": "line-7",
+                  "repeats": 1,
+                  "source_text": "ਮਾਤੇ ਮਤੰਗ ਜਰੇ ਜਰ ਸੰਗ ਅਨੂਪ ਉਤੰਗ ਸੁਰੰਗ ਸਵਾਰੇ ॥",
+                  "roman": "māte mataṅga jare jara saṅga anūpa utaṅga suraṅga savāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-007",
+                  "ref": "line-8",
+                  "repeats": 1,
+                  "source_text": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕਉ ਜਾਤ ਨਿਵਾਰੇ ॥",
+                  "roman": "koṭa turaṅga kuraṅga se kūdata pauna ke gauna kau jāta nivāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-008",
+                  "ref": "line-9",
+                  "repeats": 1,
+                  "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+                  "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-002",
+                "ref": "line-3",
+                "repeats": 1,
+                "source_text": "ਸ੍ਰਾਵਗ ਸੁਧ ਸਮੂਹ ਸਿਧਾਨ ਕੇ ਦੇਖਿ ਫਿਰਿਓ ਘਰ ਜੋਗ ਜਤੀ ਕੇ ॥",
+                "roman": "srāvaga sudha samūha sidhāna ke dekhi phirio ghara joga jatī ke.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-009",
+                "ref": "line-10",
+                "repeats": 1,
+                "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+                "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-003-r01",
+                    "start": 12.1,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-004-r01",
+                    "start": 20.0,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-005-r01",
+                    "start": 27.2,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-006-r01",
+                    "start": 34.3,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-007-r01",
+                    "start": 41.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-008-r01",
+                    "start": 48.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": {
+              "index": 0,
+              "grid": "joint-context",
+              "clip_start": 0.0,
+              "clip_end": 80.0,
+              "target_indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-003",
+                  "ref": "line-4",
+                  "repeats": 1,
+                  "source_text": "ਸੂਰ ਸੁਰਾਰਦਨ ਸੁਧ ਸੁਧਾਦਿਕ ਸੰਤ ਸਮੂਹ ਅਨੇਕ ਮਤੀ ਕੇ ॥",
+                  "roman": "sūra surāradana sudha sudhādika saṁta samūha aneka matī ke.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-004",
+                  "ref": "line-5",
+                  "repeats": 1,
+                  "source_text": "ਸਾਰੇ ਹੀ ਦੇਸ ਕੋ ਦੇਖਿ ਰਹਿਓ ਮਤ ਕੋਊ ਨ ਦੇਖੀਅਤ ਪ੍ਰਾਨਪਤੀ ਕੇ ॥",
+                  "roman": "sāre hī desa ko dekhi rahio mata koū na dekhīata prānapatī ke.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-005",
+                  "ref": "line-6",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਕੀ ਭਾਇ ਕ੍ਰਿਪਾ ਹੂ ਤੇ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਰਤੀ ਕੇ ॥",
+                  "roman": "srī bhagavāna kī bhāi kripā hū te eka ratī binu eka ratī ke.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-006",
+                  "ref": "line-7",
+                  "repeats": 1,
+                  "source_text": "ਮਾਤੇ ਮਤੰਗ ਜਰੇ ਜਰ ਸੰਗ ਅਨੂਪ ਉਤੰਗ ਸੁਰੰਗ ਸਵਾਰੇ ॥",
+                  "roman": "māte mataṅga jare jara saṅga anūpa utaṅga suraṅga savāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-007",
+                  "ref": "line-8",
+                  "repeats": 1,
+                  "source_text": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕਉ ਜਾਤ ਨਿਵਾਰੇ ॥",
+                  "roman": "koṭa turaṅga kuraṅga se kūdata pauna ke gauna kau jāta nivāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-008",
+                  "ref": "line-9",
+                  "repeats": 1,
+                  "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+                  "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-002",
+                "ref": "line-3",
+                "repeats": 1,
+                "source_text": "ਸ੍ਰਾਵਗ ਸੁਧ ਸਮੂਹ ਸਿਧਾਨ ਕੇ ਦੇਖਿ ਫਿਰਿਓ ਘਰ ਜੋਗ ਜਤੀ ਕੇ ॥",
+                "roman": "srāvaga sudha samūha sidhāna ke dekhi phirio ghara joga jatī ke.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-009",
+                "ref": "line-10",
+                "repeats": 1,
+                "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+                "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-003-r01",
+                    "start": 22.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-004-r01",
+                    "start": 30.0,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-005-r01",
+                    "start": 37.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-006-r01",
+                    "start": 44.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-007-r01",
+                    "start": 51.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-008-r01",
+                    "start": 59.0,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "original_sha256": "6f30c16b06f81742011aa78d70a8bf74a3ec657e84404d96c0b0a1a8707d89ac",
+      "report": {
+        "region": {
+          "index": 1,
+          "grid": "joint-context",
+          "clip_start": 50.0,
+          "clip_end": 125.0,
+          "target_indices": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "target_occurrences": [
+            {
+              "occurrence_id": "occ-009",
+              "ref": "line-10",
+              "repeats": 1,
+              "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+              "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-010",
+              "ref": "line-11",
+              "repeats": 1,
+              "source_text": "ਜੀਤ ਫਿਰੈ ਸਭ ਦੇਸ ਦਿਸਾਨ ਕੋ ਬਾਜਤ ਢੋਲ ਮ੍ਰਿਦੰਗ ਨਗਾਰੇ ॥",
+              "roman": "jīta phirai sabha desa disāna ko bājata ḍhola mridaṅga nagāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-011",
+              "ref": "line-12",
+              "repeats": 1,
+              "source_text": "ਗੁੰਜਤ ਗੂੜ ਗਜਾਨ ਕੇ ਸੁੰਦਰ ਹਿੰਸਤ ਹੈਂ ਹਯਰਾਜ ਹਜਾਰੇ ॥",
+              "roman": "guṁjata gūṛha gajāna ke suṁdara hiṁsata haiṁ hayarāja hajāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-012",
+              "ref": "line-13",
+              "repeats": 1,
+              "source_text": "ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਕੇ ਭੂਪਤ ਕਉਨੁ ਗਨੈ ਨਹੀ ਜਾਤ ਬਿਚਾਰੇ ॥",
+              "roman": "bhūta bhavikkha bhavāna ke bhūpata kaunu ganai nahī jāta bicāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-013",
+              "ref": "line-14",
+              "repeats": 1,
+              "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਅੰਤ ਕਉ ਅੰਤ ਕੇ ਧਾਮ ਸਿਧਾਰੇ ॥",
+              "roman": "srīpati srī bhagavāna bhaje binu aṁta kau aṁta ke dhāma sidhāre.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-014",
+              "ref": "line-15",
+              "repeats": 1,
+              "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+              "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-008",
+            "ref": "line-9",
+            "repeats": 1,
+            "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+            "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "following_context": {
+            "occurrence_id": "occ-015",
+            "ref": "line-16",
+            "repeats": 1,
+            "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+            "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "max_completion_tokens": 4096,
+          "reasoning_effort": "medium",
+          "prompt_version": 2
+        },
+        "input_fingerprint": "0c0ec29791d2d9f5e8bcdd14ce9f5ae51f0b9e8efb342ed0ac68a25b0f4d06e2",
+        "validation_errors": [
+          "pass 2: joint start[5]: out of clip/duration or non-increasing start"
+        ],
+        "expanded_starts": [],
+        "passes": [
+          {
+            "region": {
+              "index": 1,
+              "grid": "joint-context",
+              "clip_start": 50.0,
+              "clip_end": 125.0,
+              "target_indices": [
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-009",
+                  "ref": "line-10",
+                  "repeats": 1,
+                  "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+                  "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-010",
+                  "ref": "line-11",
+                  "repeats": 1,
+                  "source_text": "ਜੀਤ ਫਿਰੈ ਸਭ ਦੇਸ ਦਿਸਾਨ ਕੋ ਬਾਜਤ ਢੋਲ ਮ੍ਰਿਦੰਗ ਨਗਾਰੇ ॥",
+                  "roman": "jīta phirai sabha desa disāna ko bājata ḍhola mridaṅga nagāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-011",
+                  "ref": "line-12",
+                  "repeats": 1,
+                  "source_text": "ਗੁੰਜਤ ਗੂੜ ਗਜਾਨ ਕੇ ਸੁੰਦਰ ਹਿੰਸਤ ਹੈਂ ਹਯਰਾਜ ਹਜਾਰੇ ॥",
+                  "roman": "guṁjata gūṛha gajāna ke suṁdara hiṁsata haiṁ hayarāja hajāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-012",
+                  "ref": "line-13",
+                  "repeats": 1,
+                  "source_text": "ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਕੇ ਭੂਪਤ ਕਉਨੁ ਗਨੈ ਨਹੀ ਜਾਤ ਬਿਚਾਰੇ ॥",
+                  "roman": "bhūta bhavikkha bhavāna ke bhūpata kaunu ganai nahī jāta bicāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-013",
+                  "ref": "line-14",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਅੰਤ ਕਉ ਅੰਤ ਕੇ ਧਾਮ ਸਿਧਾਰੇ ॥",
+                  "roman": "srīpati srī bhagavāna bhaje binu aṁta kau aṁta ke dhāma sidhāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-014",
+                  "ref": "line-15",
+                  "repeats": 1,
+                  "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+                  "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-008",
+                "ref": "line-9",
+                "repeats": 1,
+                "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+                "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-015",
+                "ref": "line-16",
+                "repeats": 1,
+                "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+                "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-009-r01",
+                    "start": 15.45,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-010-r01",
+                    "start": 23.0,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-011-r01",
+                    "start": 30.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-012-r01",
+                    "start": 37.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-013-r01",
+                    "start": 44.9,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-014-r01",
+                    "start": 52.2,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": {
+              "index": 1,
+              "grid": "joint-context",
+              "clip_start": 40.0,
+              "clip_end": 125.0,
+              "target_indices": [
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-009",
+                  "ref": "line-10",
+                  "repeats": 1,
+                  "source_text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕਉ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥",
+                  "roman": "ete bhae tu kahā bhae bhūpati aṁta kau nāṅge hī pāṅi padhāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-010",
+                  "ref": "line-11",
+                  "repeats": 1,
+                  "source_text": "ਜੀਤ ਫਿਰੈ ਸਭ ਦੇਸ ਦਿਸਾਨ ਕੋ ਬਾਜਤ ਢੋਲ ਮ੍ਰਿਦੰਗ ਨਗਾਰੇ ॥",
+                  "roman": "jīta phirai sabha desa disāna ko bājata ḍhola mridaṅga nagāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-011",
+                  "ref": "line-12",
+                  "repeats": 1,
+                  "source_text": "ਗੁੰਜਤ ਗੂੜ ਗਜਾਨ ਕੇ ਸੁੰਦਰ ਹਿੰਸਤ ਹੈਂ ਹਯਰਾਜ ਹਜਾਰੇ ॥",
+                  "roman": "guṁjata gūṛha gajāna ke suṁdara hiṁsata haiṁ hayarāja hajāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-012",
+                  "ref": "line-13",
+                  "repeats": 1,
+                  "source_text": "ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਕੇ ਭੂਪਤ ਕਉਨੁ ਗਨੈ ਨਹੀ ਜਾਤ ਬਿਚਾਰੇ ॥",
+                  "roman": "bhūta bhavikkha bhavāna ke bhūpata kaunu ganai nahī jāta bicāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-013",
+                  "ref": "line-14",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਅੰਤ ਕਉ ਅੰਤ ਕੇ ਧਾਮ ਸਿਧਾਰੇ ॥",
+                  "roman": "srīpati srī bhagavāna bhaje binu aṁta kau aṁta ke dhāma sidhāre.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-014",
+                  "ref": "line-15",
+                  "repeats": 1,
+                  "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+                  "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-008",
+                "ref": "line-9",
+                "repeats": 1,
+                "source_text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+                "roman": "bhārī bhujāna ke bhūpa bhalī bidhi niāvata sīsa na jāta bicāre.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-015",
+                "ref": "line-16",
+                "repeats": 1,
+                "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+                "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-009-r01",
+                    "start": 26.0,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-010-r01",
+                    "start": 33.2,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-011-r01",
+                    "start": 40.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-012-r01",
+                    "start": 47.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-013-r01",
+                    "start": 54.9,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-014-r01",
+                    "start": 10.21,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "original_sha256": "55e8d70ae1c898de3687e3a98b426cf602b67ad493b63a1a6953fd12a735895a",
+      "report": {
+        "region": {
+          "index": 2,
+          "grid": "joint-context",
+          "clip_start": 90.0,
+          "clip_end": 145.0,
+          "target_indices": [
+            15,
+            16,
+            17
+          ],
+          "target_occurrences": [
+            {
+              "occurrence_id": "occ-015",
+              "ref": "line-16",
+              "repeats": 1,
+              "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+              "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-016",
+              "ref": "line-17",
+              "repeats": 1,
+              "source_text": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰਕ ਦੇਖੈ ॥",
+              "roman": "pauna ahāra jatī jata dhāra sabai su bicāra hajāraka dekhai.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-017",
+              "ref": "line-18",
+              "repeats": 1,
+              "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਭੂਪਤਿ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਨ ਲੇਖੈ ॥",
+              "roman": "srī bhagavāna bhaje binu bhūpati eka ratī binu eka na lekhai.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-014",
+            "ref": "line-15",
+            "repeats": 1,
+            "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+            "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "following_context": {
+            "occurrence_id": "occ-018",
+            "ref": "line-19",
+            "repeats": 1,
+            "source_text": "ਸੁਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥",
+            "roman": "sudha sipāha duraṁta dubāha su sāja sanāha durajāna dalaiṅge.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "max_completion_tokens": 4096,
+          "reasoning_effort": "medium",
+          "prompt_version": 2
+        },
+        "input_fingerprint": "c2e3314734a3ad815af128f2f67ff1f47b4039f9fe1fe38638a4d2e5427aec38",
+        "validation_errors": [
+          "occ-015-r01: independent first-syllable measurements disagree"
+        ],
+        "expanded_starts": [],
+        "passes": [
+          {
+            "region": {
+              "index": 2,
+              "grid": "joint-context",
+              "clip_start": 90.0,
+              "clip_end": 145.0,
+              "target_indices": [
+                15,
+                16,
+                17
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-015",
+                  "ref": "line-16",
+                  "repeats": 1,
+                  "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+                  "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-016",
+                  "ref": "line-17",
+                  "repeats": 1,
+                  "source_text": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰਕ ਦੇਖੈ ॥",
+                  "roman": "pauna ahāra jatī jata dhāra sabai su bicāra hajāraka dekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-017",
+                  "ref": "line-18",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਭੂਪਤਿ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਨ ਲੇਖੈ ॥",
+                  "roman": "srī bhagavāna bhaje binu bhūpati eka ratī binu eka na lekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-014",
+                "ref": "line-15",
+                "repeats": 1,
+                "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+                "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-018",
+                "ref": "line-19",
+                "repeats": 1,
+                "source_text": "ਸੁਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥",
+                "roman": "sudha sipāha duraṁta dubāha su sāja sanāha durajāna dalaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-015-r01",
+                    "start": 18.7,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-016-r01",
+                    "start": 26.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-017-r01",
+                    "start": 33.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": {
+              "index": 2,
+              "grid": "joint-context",
+              "clip_start": 80.0,
+              "clip_end": 145.0,
+              "target_indices": [
+                15,
+                16,
+                17
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-015",
+                  "ref": "line-16",
+                  "repeats": 1,
+                  "source_text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+                  "roman": "beda purāna kateba kurāna jamīna jamāna sabāna ke pekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-016",
+                  "ref": "line-17",
+                  "repeats": 1,
+                  "source_text": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰਕ ਦੇਖੈ ॥",
+                  "roman": "pauna ahāra jatī jata dhāra sabai su bicāra hajāraka dekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-017",
+                  "ref": "line-18",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਭੂਪਤਿ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਨ ਲੇਖੈ ॥",
+                  "roman": "srī bhagavāna bhaje binu bhūpati eka ratī binu eka na lekhai.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-014",
+                "ref": "line-15",
+                "repeats": 1,
+                "source_text": "ਤੀਰਥ ਨ੍ਹਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+                "roman": "tīratha nhāna daiā dama dāna su saṁjama nema aneka bisekhai.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-018",
+                "ref": "line-19",
+                "repeats": 1,
+                "source_text": "ਸੁਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥",
+                "roman": "sudha sipāha duraṁta dubāha su sāja sanāha durajāna dalaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-015-r01",
+                    "start": 29.4,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-016-r01",
+                    "start": 36.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-017-r01",
+                    "start": 43.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "original_sha256": "9f8ab165626c3e1fdb3949ebad8f5174f8d3e190f7792d0ba160ecf605f8a20f",
+      "report": {
+        "region": {
+          "index": 3,
+          "grid": "joint-context",
+          "clip_start": 135.0,
+          "clip_end": 210.0,
+          "target_indices": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "target_occurrences": [
+            {
+              "occurrence_id": "occ-021",
+              "ref": "line-22",
+              "repeats": 1,
+              "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਕ੍ਰਿਪਾ ਬਿਨੁ ਤਿਆਗਿ ਜਹਾਨ ਨਿਦਾਨ ਚਲੈਂਗੇ ॥",
+              "roman": "srīpati srī bhagavāna kripā binu tiāgi jahāna nidāna calaiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-022",
+              "ref": "line-23",
+              "repeats": 1,
+              "source_text": "ਬੀਰ ਅਪਾਰ ਬਡੇ ਬਰਿਆਰ ਅਬਿਚਾਰਹਿ ਸਾਰ ਕੀ ਧਾਰ ਭਛੱਯਾ ॥",
+              "roman": "bīra apāra baḍe bariāra abicārehi sāra kī dhāra bhachayyā.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-023",
+              "ref": "line-24",
+              "repeats": 1,
+              "source_text": "ਤੋਰਤ ਦੇਸ ਮਲਿੰਦ ਮਵਾਸਨ ਮਾਤੇ ਗਜਾਨ ਕੇ ਮਾਨ ਮਲੱਯਾ ॥",
+              "roman": "torata desa maliṁda mavāsana māte gajāna ke māna malayyā.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-024",
+              "ref": "line-25",
+              "repeats": 1,
+              "source_text": "ਗਾੜ੍ਹੇ ਗੜ੍ਹਾਨ ਕੋ ਤੋੜਨਹਾਰ ਸੁ ਬਾਤਨ ਹੀਂ ਚਕ ਚਾਰ ਲਵੱਯਾ ॥",
+              "roman": "gāṛhe gaṛhāna ko toṛanahāra su bātana hīṁ caka cāra lavayyā.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-025",
+              "ref": "line-26",
+              "repeats": 1,
+              "source_text": "ਸਾਹਿਬੁ ਸ੍ਰੀ ਸਭ ਕੋ ਸਿਰਨਾਇਕ ਜਾਚਕ ਅਨੇਕ ਸੁ ਏਕ ਦਿਵੱਯਾ ॥",
+              "roman": "sāhibu srī sabha ko siranāika jācaka aneka su eka divayyā.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-026",
+              "ref": "line-27",
+              "repeats": 1,
+              "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+              "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-020",
+            "ref": "line-21",
+            "repeats": 1,
+            "source_text": "ਤੋਰਿ ਅਰੀਨ ਮਰੋਰਿ ਮਵਾਸਨ ਮਾਤੇ ਮਤੰਗਨ ਮਾਨ ਮਲੈਂਗੇ ॥",
+            "roman": "tori arīna marori mavāsana māte mataṅgana māna malaiṅge.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "following_context": {
+            "occurrence_id": "occ-027",
+            "ref": "line-28",
+            "repeats": 1,
+            "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+            "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "max_completion_tokens": 4096,
+          "reasoning_effort": "medium",
+          "prompt_version": 2
+        },
+        "input_fingerprint": "fb27f6bb7bb7e62b00e7dfe970e39b4af41743c85fa005722b8ee7c7469a5d04",
+        "validation_errors": [],
+        "expanded_starts": [
+          {
+            "timing_id": "occ-021-r01",
+            "start": 152.175
+          },
+          {
+            "timing_id": "occ-022-r01",
+            "start": 159.525
+          },
+          {
+            "timing_id": "occ-023-r01",
+            "start": 166.825
+          },
+          {
+            "timing_id": "occ-024-r01",
+            "start": 174.025
+          },
+          {
+            "timing_id": "occ-025-r01",
+            "start": 181.425
+          },
+          {
+            "timing_id": "occ-026-r01",
+            "start": 188.675
+          }
+        ],
+        "passes": [
+          {
+            "region": {
+              "index": 3,
+              "grid": "joint-context",
+              "clip_start": 135.0,
+              "clip_end": 210.0,
+              "target_indices": [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-021",
+                  "ref": "line-22",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਕ੍ਰਿਪਾ ਬਿਨੁ ਤਿਆਗਿ ਜਹਾਨ ਨਿਦਾਨ ਚਲੈਂਗੇ ॥",
+                  "roman": "srīpati srī bhagavāna kripā binu tiāgi jahāna nidāna calaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-022",
+                  "ref": "line-23",
+                  "repeats": 1,
+                  "source_text": "ਬੀਰ ਅਪਾਰ ਬਡੇ ਬਰਿਆਰ ਅਬਿਚਾਰਹਿ ਸਾਰ ਕੀ ਧਾਰ ਭਛੱਯਾ ॥",
+                  "roman": "bīra apāra baḍe bariāra abicārehi sāra kī dhāra bhachayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-023",
+                  "ref": "line-24",
+                  "repeats": 1,
+                  "source_text": "ਤੋਰਤ ਦੇਸ ਮਲਿੰਦ ਮਵਾਸਨ ਮਾਤੇ ਗਜਾਨ ਕੇ ਮਾਨ ਮਲੱਯਾ ॥",
+                  "roman": "torata desa maliṁda mavāsana māte gajāna ke māna malayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-024",
+                  "ref": "line-25",
+                  "repeats": 1,
+                  "source_text": "ਗਾੜ੍ਹੇ ਗੜ੍ਹਾਨ ਕੋ ਤੋੜਨਹਾਰ ਸੁ ਬਾਤਨ ਹੀਂ ਚਕ ਚਾਰ ਲਵੱਯਾ ॥",
+                  "roman": "gāṛhe gaṛhāna ko toṛanahāra su bātana hīṁ caka cāra lavayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-025",
+                  "ref": "line-26",
+                  "repeats": 1,
+                  "source_text": "ਸਾਹਿਬੁ ਸ੍ਰੀ ਸਭ ਕੋ ਸਿਰਨਾਇਕ ਜਾਚਕ ਅਨੇਕ ਸੁ ਏਕ ਦਿਵੱਯਾ ॥",
+                  "roman": "sāhibu srī sabha ko siranāika jācaka aneka su eka divayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-026",
+                  "ref": "line-27",
+                  "repeats": 1,
+                  "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+                  "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-020",
+                "ref": "line-21",
+                "repeats": 1,
+                "source_text": "ਤੋਰਿ ਅਰੀਨ ਮਰੋਰਿ ਮਵਾਸਨ ਮਾਤੇ ਮਤੰਗਨ ਮਾਨ ਮਲੈਂਗੇ ॥",
+                "roman": "tori arīna marori mavāsana māte mataṅgana māna malaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-027",
+                "ref": "line-28",
+                "repeats": 1,
+                "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+                "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-021-r01",
+                    "start": 17.0,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-022-r01",
+                    "start": 24.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-023-r01",
+                    "start": 31.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-024-r01",
+                    "start": 39.0,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-025-r01",
+                    "start": 46.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-026-r01",
+                    "start": 53.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": {
+              "index": 3,
+              "grid": "joint-context",
+              "clip_start": 125.0,
+              "clip_end": 210.0,
+              "target_indices": [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-021",
+                  "ref": "line-22",
+                  "repeats": 1,
+                  "source_text": "ਸ੍ਰੀਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਕ੍ਰਿਪਾ ਬਿਨੁ ਤਿਆਗਿ ਜਹਾਨ ਨਿਦਾਨ ਚਲੈਂਗੇ ॥",
+                  "roman": "srīpati srī bhagavāna kripā binu tiāgi jahāna nidāna calaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-022",
+                  "ref": "line-23",
+                  "repeats": 1,
+                  "source_text": "ਬੀਰ ਅਪਾਰ ਬਡੇ ਬਰਿਆਰ ਅਬਿਚਾਰਹਿ ਸਾਰ ਕੀ ਧਾਰ ਭਛੱਯਾ ॥",
+                  "roman": "bīra apāra baḍe bariāra abicārehi sāra kī dhāra bhachayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-023",
+                  "ref": "line-24",
+                  "repeats": 1,
+                  "source_text": "ਤੋਰਤ ਦੇਸ ਮਲਿੰਦ ਮਵਾਸਨ ਮਾਤੇ ਗਜਾਨ ਕੇ ਮਾਨ ਮਲੱਯਾ ॥",
+                  "roman": "torata desa maliṁda mavāsana māte gajāna ke māna malayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-024",
+                  "ref": "line-25",
+                  "repeats": 1,
+                  "source_text": "ਗਾੜ੍ਹੇ ਗੜ੍ਹਾਨ ਕੋ ਤੋੜਨਹਾਰ ਸੁ ਬਾਤਨ ਹੀਂ ਚਕ ਚਾਰ ਲਵੱਯਾ ॥",
+                  "roman": "gāṛhe gaṛhāna ko toṛanahāra su bātana hīṁ caka cāra lavayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-025",
+                  "ref": "line-26",
+                  "repeats": 1,
+                  "source_text": "ਸਾਹਿਬੁ ਸ੍ਰੀ ਸਭ ਕੋ ਸਿਰਨਾਇਕ ਜਾਚਕ ਅਨੇਕ ਸੁ ਏਕ ਦਿਵੱਯਾ ॥",
+                  "roman": "sāhibu srī sabha ko siranāika jācaka aneka su eka divayyā.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-026",
+                  "ref": "line-27",
+                  "repeats": 1,
+                  "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+                  "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-020",
+                "ref": "line-21",
+                "repeats": 1,
+                "source_text": "ਤੋਰਿ ਅਰੀਨ ਮਰੋਰਿ ਮਵਾਸਨ ਮਾਤੇ ਮਤੰਗਨ ਮਾਨ ਮਲੈਂਗੇ ॥",
+                "roman": "tori arīna marori mavāsana māte mataṅgana māna malaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-027",
+                "ref": "line-28",
+                "repeats": 1,
+                "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+                "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-021-r01",
+                    "start": 27.35,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-022-r01",
+                    "start": 34.55,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-023-r01",
+                    "start": 41.85,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-024-r01",
+                    "start": 49.05,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-025-r01",
+                    "start": 56.35,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-026-r01",
+                    "start": 63.55,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "original_sha256": "8da78edc0af708de871aee344d5715f8ee83d7778b0b60a2d81532fefb21a521",
+      "report": {
+        "region": {
+          "index": 4,
+          "grid": "joint-context",
+          "clip_start": 175.0,
+          "clip_end": 255.0,
+          "target_indices": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "target_occurrences": [
+            {
+              "occurrence_id": "occ-027",
+              "ref": "line-28",
+              "repeats": 1,
+              "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+              "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-028",
+              "ref": "line-29",
+              "repeats": 1,
+              "source_text": "ਪੁੰਨ ਪ੍ਰਤਾਪਨ ਬਾਢ ਜੈਤ ਧੁਨ ਪਾਪਨ ਕੇ ਬਹੁ ਪੁੰਜ ਖਪੈਂਗੇ ॥",
+              "roman": "puṁna pratāpana bāḍha jaita dhuna pāpana ke bahu puṁja khapaiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-029",
+              "ref": "line-30",
+              "repeats": 1,
+              "source_text": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਲੋਕ ਚਪੈਂਗੇ ॥",
+              "roman": "sādha samūha prasaṁna phirai jaga satra sabhai avaloka capaiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-030",
+              "ref": "line-31",
+              "repeats": 1,
+              "source_text": "ਮਾਨਵ ਇੰਦ੍ਰ ਗਜਿੰਦ੍ਰ ਨਰਾਧਿਪ ਜੌਨ ਤ੍ਰਿਲੋਕ ਕੋ ਰਾਜ ਕਰੈਂਗੇ ॥",
+              "roman": "mānava iṁdra gajiṁdra narādhipa jauna triloka ko rāja karaiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-031",
+              "ref": "line-32",
+              "repeats": 1,
+              "source_text": "ਕੋਟਿ ਇਸਨਾਨ ਗਜਾਦਿਕ ਦਾਨ ਅਨੇਕ ਸੁਅੰਬਰ ਸਾਜ ਬਰੈਂਗੇ ॥",
+              "roman": "koṭi isnāna gajādika dāna aneka suaṁbara sāja baraiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-032",
+              "ref": "line-33",
+              "repeats": 1,
+              "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+              "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-026",
+            "ref": "line-27",
+            "repeats": 1,
+            "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+            "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "following_context": {
+            "occurrence_id": "occ-033",
+            "ref": "line-34",
+            "repeats": 1,
+            "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+            "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "max_completion_tokens": 4096,
+          "reasoning_effort": "medium",
+          "prompt_version": 2
+        },
+        "input_fingerprint": "bc366bc44394c328897288825fcdb0e57673f270b4e4d92a5d7fecbe14862746",
+        "validation_errors": [
+          "pass 2: joint start[4]: out of clip/duration or non-increasing start"
+        ],
+        "expanded_starts": [],
+        "passes": [
+          {
+            "region": {
+              "index": 4,
+              "grid": "joint-context",
+              "clip_start": 175.0,
+              "clip_end": 255.0,
+              "target_indices": [
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-027",
+                  "ref": "line-28",
+                  "repeats": 1,
+                  "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+                  "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-028",
+                  "ref": "line-29",
+                  "repeats": 1,
+                  "source_text": "ਪੁੰਨ ਪ੍ਰਤਾਪਨ ਬਾਢ ਜੈਤ ਧੁਨ ਪਾਪਨ ਕੇ ਬਹੁ ਪੁੰਜ ਖਪੈਂਗੇ ॥",
+                  "roman": "puṁna pratāpana bāḍha jaita dhuna pāpana ke bahu puṁja khapaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-029",
+                  "ref": "line-30",
+                  "repeats": 1,
+                  "source_text": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਲੋਕ ਚਪੈਂਗੇ ॥",
+                  "roman": "sādha samūha prasaṁna phirai jaga satra sabhai avaloka capaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-030",
+                  "ref": "line-31",
+                  "repeats": 1,
+                  "source_text": "ਮਾਨਵ ਇੰਦ੍ਰ ਗਜਿੰਦ੍ਰ ਨਰਾਧਿਪ ਜੌਨ ਤ੍ਰਿਲੋਕ ਕੋ ਰਾਜ ਕਰੈਂਗੇ ॥",
+                  "roman": "mānava iṁdra gajiṁdra narādhipa jauna triloka ko rāja karaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-031",
+                  "ref": "line-32",
+                  "repeats": 1,
+                  "source_text": "ਕੋਟਿ ਇਸਨਾਨ ਗਜਾਦਿਕ ਦਾਨ ਅਨੇਕ ਸੁਅੰਬਰ ਸਾਜ ਬਰੈਂਗੇ ॥",
+                  "roman": "koṭi isnāna gajādika dāna aneka suaṁbara sāja baraiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-032",
+                  "ref": "line-33",
+                  "repeats": 1,
+                  "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+                  "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-026",
+                "ref": "line-27",
+                "repeats": 1,
+                "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+                "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-033",
+                "ref": "line-34",
+                "repeats": 1,
+                "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+                "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-027-r01",
+                    "start": 20.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-028-r01",
+                    "start": 27.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-029-r01",
+                    "start": 35.1,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-030-r01",
+                    "start": 42.4,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-031-r01",
+                    "start": 49.7,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-032-r01",
+                    "start": 56.9,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": {
+              "index": 4,
+              "grid": "joint-context",
+              "clip_start": 165.0,
+              "clip_end": 255.0,
+              "target_indices": [
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-027",
+                  "ref": "line-28",
+                  "repeats": 1,
+                  "source_text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+                  "roman": "jīva jite jala mai thala mai pala hī pala mai sabha thāpa thapaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-028",
+                  "ref": "line-29",
+                  "repeats": 1,
+                  "source_text": "ਪੁੰਨ ਪ੍ਰਤਾਪਨ ਬਾਢ ਜੈਤ ਧੁਨ ਪਾਪਨ ਕੇ ਬਹੁ ਪੁੰਜ ਖਪੈਂਗੇ ॥",
+                  "roman": "puṁna pratāpana bāḍha jaita dhuna pāpana ke bahu puṁja khapaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-029",
+                  "ref": "line-30",
+                  "repeats": 1,
+                  "source_text": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਲੋਕ ਚਪੈਂਗੇ ॥",
+                  "roman": "sādha samūha prasaṁna phirai jaga satra sabhai avaloka capaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-030",
+                  "ref": "line-31",
+                  "repeats": 1,
+                  "source_text": "ਮਾਨਵ ਇੰਦ੍ਰ ਗਜਿੰਦ੍ਰ ਨਰਾਧਿਪ ਜੌਨ ਤ੍ਰਿਲੋਕ ਕੋ ਰਾਜ ਕਰੈਂਗੇ ॥",
+                  "roman": "mānava iṁdra gajiṁdra narādhipa jauna triloka ko rāja karaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-031",
+                  "ref": "line-32",
+                  "repeats": 1,
+                  "source_text": "ਕੋਟਿ ਇਸਨਾਨ ਗਜਾਦਿਕ ਦਾਨ ਅਨੇਕ ਸੁਅੰਬਰ ਸਾਜ ਬਰੈਂਗੇ ॥",
+                  "roman": "koṭi isnāna gajādika dāna aneka suaṁbara sāja baraiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-032",
+                  "ref": "line-33",
+                  "repeats": 1,
+                  "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+                  "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-026",
+                "ref": "line-27",
+                "repeats": 1,
+                "source_text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+                "roman": "dānava deva phaniṁda nisācara bhūta bhavikkha bhavāna japaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-033",
+                "ref": "line-34",
+                "repeats": 1,
+                "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+                "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-027-r01",
+                    "start": 30.6,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-028-r01",
+                    "start": 38.1,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-029-r01",
+                    "start": 45.3,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-030-r01",
+                    "start": 52.6,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-031-r01",
+                    "start": 10.1,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-032-r01",
+                    "start": 66.6,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "original_sha256": "6eb90a5eb9e7fc2053af6b9c032ebcfd407d41f71130e2a65565a0312b5bee29",
+      "report": {
+        "region": {
+          "index": 5,
+          "grid": "joint-context",
+          "clip_start": 220.0,
+          "clip_end": 295.0,
+          "target_indices": [
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "target_occurrences": [
+            {
+              "occurrence_id": "occ-033",
+              "ref": "line-34",
+              "repeats": 1,
+              "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+              "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-034",
+              "ref": "line-35",
+              "repeats": 1,
+              "source_text": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਊ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+              "roman": "kahā bhayo jo doū locana mūṁda kai baiṭhi rahio baka dhiāna lagāio.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-035",
+              "ref": "line-36",
+              "repeats": 1,
+              "source_text": "ਨ੍ਹਾਤ ਫਿਰਿਓ ਲੀਏ ਸਾਤ ਸਮੁਦ੍ਰਨ ਲੋਕ ਗਯੋ ਪਰਲੋਕ ਗਵਾਇਓ ॥",
+              "roman": "nhāta phirio līe sāta samudrana loka gayo paraloka gavāio.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-036",
+              "ref": "line-37",
+              "repeats": 1,
+              "source_text": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+              "roman": "bāsa kīo bikhiāna so baiṭha kai aise hī aise su baisa bitāio.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-037",
+              "ref": "line-38",
+              "repeats": 1,
+              "source_text": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥",
+              "roman": "sācu kahoṁ suna lehu sabhai jina prema kīo tina hī prabha pāio.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            },
+            {
+              "occurrence_id": "occ-038",
+              "ref": "line-39",
+              "repeats": 1,
+              "source_text": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰ੍ਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+              "roman": "kāhū lai pāhana pūja dharyo sira kāhū lai liṅga gare laṭakāio.",
+              "section": "verse",
+              "performer_context": "Sarab Sanjhi Gurbani"
+            }
+          ],
+          "preceding_context": {
+            "occurrence_id": "occ-032",
+            "ref": "line-33",
+            "repeats": 1,
+            "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+            "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "following_context": {
+            "occurrence_id": "occ-039",
+            "ref": "line-40",
+            "repeats": 1,
+            "source_text": "ਕਾਹੂ ਲਖਿਓ ਹਰਿ ਅਵਾਚੀ ਦਿਸਾ ਮਹਿ ਕਾਹੂ ਪਛਾਹ ਕੋ ਸੀਸੁ ਨਿਵਾਇਓ ॥",
+            "roman": "kāhū lakhio hari avācī disā mahi kāhū pachāha ko sīsu nivāio.",
+            "section": "verse",
+            "performer_context": "Sarab Sanjhi Gurbani"
+          },
+          "max_completion_tokens": 4096,
+          "reasoning_effort": "medium",
+          "prompt_version": 2
+        },
+        "input_fingerprint": "7a46ba2abbb07b32d2a0bd2b34782bb8988970c30f97cf5c0b699f6e3d924621",
+        "validation_errors": [
+          "occ-037-r01: independent first-syllable measurements disagree",
+          "occ-038-r01: independent first-syllable measurements disagree"
+        ],
+        "expanded_starts": [],
+        "passes": [
+          {
+            "region": {
+              "index": 5,
+              "grid": "joint-context",
+              "clip_start": 220.0,
+              "clip_end": 295.0,
+              "target_indices": [
+                33,
+                34,
+                35,
+                36,
+                37,
+                38
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-033",
+                  "ref": "line-34",
+                  "repeats": 1,
+                  "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+                  "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-034",
+                  "ref": "line-35",
+                  "repeats": 1,
+                  "source_text": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਊ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+                  "roman": "kahā bhayo jo doū locana mūṁda kai baiṭhi rahio baka dhiāna lagāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-035",
+                  "ref": "line-36",
+                  "repeats": 1,
+                  "source_text": "ਨ੍ਹਾਤ ਫਿਰਿਓ ਲੀਏ ਸਾਤ ਸਮੁਦ੍ਰਨ ਲੋਕ ਗਯੋ ਪਰਲੋਕ ਗਵਾਇਓ ॥",
+                  "roman": "nhāta phirio līe sāta samudrana loka gayo paraloka gavāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-036",
+                  "ref": "line-37",
+                  "repeats": 1,
+                  "source_text": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+                  "roman": "bāsa kīo bikhiāna so baiṭha kai aise hī aise su baisa bitāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-037",
+                  "ref": "line-38",
+                  "repeats": 1,
+                  "source_text": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥",
+                  "roman": "sācu kahoṁ suna lehu sabhai jina prema kīo tina hī prabha pāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-038",
+                  "ref": "line-39",
+                  "repeats": 1,
+                  "source_text": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰ੍ਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+                  "roman": "kāhū lai pāhana pūja dharyo sira kāhū lai liṅga gare laṭakāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-032",
+                "ref": "line-33",
+                "repeats": 1,
+                "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+                "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-039",
+                "ref": "line-40",
+                "repeats": 1,
+                "source_text": "ਕਾਹੂ ਲਖਿਓ ਹਰਿ ਅਵਾਚੀ ਦਿਸਾ ਮਹਿ ਕਾਹੂ ਪਛਾਹ ਕੋ ਸੀਸੁ ਨਿਵਾਇਓ ॥",
+                "roman": "kāhū lakhio hari avācī disā mahi kāhū pachāha ko sīsu nivāio.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-033-r01",
+                    "start": 18.15,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-034-r01",
+                    "start": 26.15,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-035-r01",
+                    "start": 33.15,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-036-r01",
+                    "start": 40.15,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-037-r01",
+                    "start": 47.15,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-038-r01",
+                    "start": 54.15,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": {
+              "index": 5,
+              "grid": "joint-context",
+              "clip_start": 210.0,
+              "clip_end": 295.0,
+              "target_indices": [
+                33,
+                34,
+                35,
+                36,
+                37,
+                38
+              ],
+              "target_occurrences": [
+                {
+                  "occurrence_id": "occ-033",
+                  "ref": "line-34",
+                  "repeats": 1,
+                  "source_text": "ਜੇ ਨਰ ਸ੍ਰੀਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥",
+                  "roman": "je nara srīpati ke prasa haiṁ paga te nara phera na deha dharaiṅge.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-034",
+                  "ref": "line-35",
+                  "repeats": 1,
+                  "source_text": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਊ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+                  "roman": "kahā bhayo jo doū locana mūṁda kai baiṭhi rahio baka dhiāna lagāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-035",
+                  "ref": "line-36",
+                  "repeats": 1,
+                  "source_text": "ਨ੍ਹਾਤ ਫਿਰਿਓ ਲੀਏ ਸਾਤ ਸਮੁਦ੍ਰਨ ਲੋਕ ਗਯੋ ਪਰਲੋਕ ਗਵਾਇਓ ॥",
+                  "roman": "nhāta phirio līe sāta samudrana loka gayo paraloka gavāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-036",
+                  "ref": "line-37",
+                  "repeats": 1,
+                  "source_text": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+                  "roman": "bāsa kīo bikhiāna so baiṭha kai aise hī aise su baisa bitāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-037",
+                  "ref": "line-38",
+                  "repeats": 1,
+                  "source_text": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥",
+                  "roman": "sācu kahoṁ suna lehu sabhai jina prema kīo tina hī prabha pāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                },
+                {
+                  "occurrence_id": "occ-038",
+                  "ref": "line-39",
+                  "repeats": 1,
+                  "source_text": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰ੍ਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+                  "roman": "kāhū lai pāhana pūja dharyo sira kāhū lai liṅga gare laṭakāio.",
+                  "section": "verse",
+                  "performer_context": "Sarab Sanjhi Gurbani"
+                }
+              ],
+              "preceding_context": {
+                "occurrence_id": "occ-032",
+                "ref": "line-33",
+                "repeats": 1,
+                "source_text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥",
+                "roman": "brahama mahesara bisana sacīpati aṁta phase jama phāsa paraiṅge.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "following_context": {
+                "occurrence_id": "occ-039",
+                "ref": "line-40",
+                "repeats": 1,
+                "source_text": "ਕਾਹੂ ਲਖਿਓ ਹਰਿ ਅਵਾਚੀ ਦਿਸਾ ਮਹਿ ਕਾਹੂ ਪਛਾਹ ਕੋ ਸੀਸੁ ਨਿਵਾਇਓ ॥",
+                "roman": "kāhū lakhio hari avācī disā mahi kāhū pachāha ko sīsu nivāio.",
+                "section": "verse",
+                "performer_context": "Sarab Sanjhi Gurbani"
+              },
+              "max_completion_tokens": 4096,
+              "reasoning_effort": "medium",
+              "prompt_version": 2
+            },
+            "response": {
+              "packet": {
+                "starts": [
+                  {
+                    "timing_id": "occ-033-r01",
+                    "start": 28.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-034-r01",
+                    "start": 36.3,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-035-r01",
+                    "start": 43.5,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-036-r01",
+                    "start": 50.6,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-037-r01",
+                    "start": 57.8,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  },
+                  {
+                    "timing_id": "occ-038-r01",
+                    "start": 64.9,
+                    "uncertainty": "",
+                    "onset_at_clip_start": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
