@@ -449,7 +449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sikhī atai saṅgatī pārbrahmu kari namaskāriā",
-    "english": "{0:The disciples }{1:and }{2:the congregations, }{4:regarding You as }{3:the Transcendent Divine Reality, }{5:have bowed down.}",
+    "english": "{0:The disciples }{1:and }{2:the congregations }{5:have bowed to You, }{4:recognizing You as }{3:Pārbrahm.}",
     "words": [
       {
         "roman": "Sikhī",
@@ -471,7 +471,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārbrahmu",
-        "gloss": "Supreme Divine Reality; transcendent Lord",
+        "gloss": "Supreme Brahman; the supreme divine reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -515,11 +515,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pārbrahmu kari namaskāriā",
-    "english": "{1:Regarding You as }{0:the Transcendent Divine Reality, }{2:they have bowed down.}",
+    "english": "{1:Recognizing You as }{0:Pārbrahm, }{2:they have bowed to You.}",
     "words": [
       {
         "roman": "Pārbrahmu",
-        "gloss": "Supreme Divine Reality; transcendent Lord",
+        "gloss": "Supreme Brahman; the supreme divine reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -989,7 +989,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Se tudhu pāri utāriā",
-    "english": "{0:Them }{1:You }{3:have carried across }{2:to the other shore.}",
+    "english": "{1:You }{3:have carried }{0:them }{2:to the other shore.}",
     "words": [
       {
         "roman": "Se",
@@ -1811,17 +1811,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vāhigurū",
-    "english": "{0:Wondrous Enlightener!}",
+    "english": "{0:Vāhigurū!}",
     "words": [
       {
         "roman": "Vāhigurū",
-        "gloss": "wondrous enlightener; Vāhigurū, a Sikh name for God",
+        "gloss": "a Sikh name for God; an invocation of wonder and praise",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Compound vocative/nominal exclamation combining `vāhi` (interjection of ecstatic wonder and praise) and `gurū` (dispeller of darkness / spiritual guide)."
+    "grammarNote": "Vāhigurū is retained as the performed divine invocation. Its expression of wonder and praise is explained in the popup; the invocation is not assigned to the canonical hymn."
   }
 };
 

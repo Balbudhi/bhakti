@@ -101,7 +101,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ṭhākuru",
-        "gloss": "master; sovereign protector",
+        "gloss": "master; lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -457,7 +457,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ūce te ūcā bhagvantu ॥",
-    "english": "{2:Higher }{1:than }{0:the highest, }{3:O Blessed Lord.}",
+    "english": "{2:Higher }{1:than }{0:the highest, }{3:O Bhagvant.}",
     "words": [
       {
         "roman": "ūce",
@@ -479,13 +479,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagvantu",
-        "gloss": "blessed Lord; possessor of supreme glory",
+        "gloss": "a reverent divine title: the blessed one",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "ūce te ūcā is a comparative construction, higher than the high, idiomatically supreme. bhagvant names the blessed Lord; the English treats it as direct address within the prayer. The printed Gurmukhi form ਭਗਵੰਤ has no final auṅkaṛ vowel sign."
+    "grammarNote": "Ūce te ūcā means higher than the high. Bhagvant is a divine title, retained as the form of address in this prayer."
   },
   "sagal-samagri-tumrai-sutri-dhari": {
     "source": "ਸਗਲ ਸਮਗ੍ਰੀ ਤੁਮਰੈ ਸੂਤ੍ਰਿ ਧਾਰੀ ॥",
@@ -545,7 +545,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sūtri",
-        "gloss": "on the thread; by the cord of cosmic order",
+        "gloss": "on the thread; on the cord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -673,7 +673,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tumrī gati miti tum hī jānī ॥",
-    "english": "{0:Your }{1:state }{2:and measure, }{3:You }{4:alone }{5:know.}",
+    "english": "{0:Your }{1:nature }{2:and extent, }{3:You }{4:alone }{5:know.}",
     "words": [
       {
         "roman": "tumrī",
@@ -683,7 +683,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gati",
-        "gloss": "state; spiritual condition; exalted nature",
+        "gloss": "state; condition; here, divine nature",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -787,17 +787,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāhigurū",
-    "english": "{0:Wondrous Enlightener.}",
+    "english": "{0:Vāhigurū.}",
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "wondrous enlightener; Vāhigurū, a Sikh name for God",
+        "gloss": "a Sikh name for God, invoked in praise and remembrance",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Compound sacred title/exclamation formed from `vāh` (wondrous / praise) and `gurū` (spiritual dispeller of darkness)."
+    "grammarNote": "A repeated invocation of the divine name Vāhigurū."
   }
 };
 

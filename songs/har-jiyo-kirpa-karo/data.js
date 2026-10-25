@@ -83,11 +83,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari jīu kripā karahu",
-    "english": "{1:O revered }{0:Lord, }{3:bestow }{2:grace,}",
+    "english": "{1:O revered }{0:Hari, }{3:bestow }{2:grace,}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -143,7 +143,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kripā karahu tum piāre",
-    "english": "{1:bestow }{0:grace, }{2:You, }{3:O Beloved.}",
+    "english": "{1:bestow }{0:grace, }{2,3:O Beloved.}",
     "words": [
       {
         "roman": "kripā",
@@ -171,7 +171,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Direct second-person plural/respectful pronoun 'tum' in apposition with the vocative masculine plural/respectful adjective 'piāre'."
+    "grammarNote": "Tum addresses You respectfully; piāre addresses the same beloved one. Together they continue the direct appeal to Hari."
   },
   "rahao-1": {
     "source": "ਸਤਿਗੁਰੁ ਦਾਤਾ ਮੇਲਿ ਮਿਲਾਵਹੁ",
@@ -219,7 +219,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "meli",
-        "gloss": "in union; in meeting",
+        "gloss": "bringing together; in union",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -263,11 +263,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari nāmu devahu ādhāre",
-    "english": "{2:and grant }{1:the Name }{0:of the Lord }{3:as my support.}",
+    "english": "{2:and grant }{0:Hari’s }{1:Name }{3:as my support.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -291,7 +291,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "'hari nāmu' is the direct object with an uninflected masculine nominative/accusative marker in '-u'; 'ādhāre' is locative used predicatively ('as a support')."
+    "grammarNote": "Hari nāmu is what is requested from the addressed Hari. Ādhāre identifies the Name as the devotee’s support; devahu is the respectful imperative, grant."
   },
   "v1-1": {
     "source": "ਬਿਨੁ ਸਤਿਗੁਰ ਸੇਵੇ ਬਹੁਤਾ ਦੁਖੁ ਲਾਗਾ ਜੁਗ ਚਾਰੇ ਭਰਮਾਈ",
@@ -695,19 +695,19 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari rasu cākhi manu nirmalu hoā kilbikha kāṭaṇhārā",
-    "english": "{2:Having tasted }{0:the Lord’s }{1:rasa, }{7:which cuts away }{6:sins, }{3:the mind }{5:has become }{4:pure.}",
+    "english": "{2:Having tasted }{0:Hari’s }{1:sweetness, }{7:which cuts away }{6:sins, }{3:the mind }{5:has become }{4:pure.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rasu",
-        "gloss": "the savor of the divine Name",
+        "gloss": "savor; sweetness tasted in devotion",
         "concept_key": "rasa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "cākhi",
@@ -747,7 +747,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Cākhi is an absolutive: having tasted. Manu is the subject of nirmalu hoā. Kilbikha kāṭaṇhārā is an agentive expression, the cutter-away of sins, describing the divine Name experienced as Hari’s rasa in this verse. The relative clause in English attaches that power to the rasa; it does not make the purified mind the agent of cutting sins."
+    "grammarNote": "Cākhi means having tasted. Manu is the subject of nirmalu hoā: the mind has become pure. Kilbikha kāṭaṇhārā, cutting away sins, describes the divine Name whose savor is tasted here; it does not make the purified mind the agent of cutting sins."
   },
   "v3-1": {
     "source": "ਸਬਦਿ ਮਰਹੁ ਫਿਰਿ ਜੀਵਹੁ ਸਦ ਹੀ ਤਾ ਫਿਰਿ ਮਰਣੁ ਨ ਹੋਈ",
@@ -821,7 +821,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sabadi marahu phiri jīvahu sada hī tā phiri maraṇu na hoī",
-    "english": "{1:Die }{0:through the Word }{2:and then }{3:live }{4:forever }{5:indeed; }{6:then }{8:death }{9:shall not }{10:happen }{7:again.}",
+    "english": "{1:Die }{0:through the Word, }{2:then }{3:live }{4,5:forever; }{6:then }{8:death }{9:will not }{10:come }{7:again.}",
     "words": [
       {
         "roman": "sabadi",
@@ -855,7 +855,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hī",
-        "gloss": "indeed; truly",
+        "gloss": "emphatic particle: indeed; here, reinforcing forever",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1175,7 +1175,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaka nāmi rate sukhu pāiā daragaha jāpahi seī",
-    "english": "{0:O Nānak, }{2:those imbued }{1:with the Name }{4:attain }{3:peace, }{7:and they alone }{6:are recognized }{5:in the Divine Court.}",
+    "english": "{0:O Nānak, }{2:those imbued }{1:with the Name }{4:attain }{3:peace, }{7:and those very ones }{6:are honored }{5:in the Divine Court.}",
     "words": [
       {
         "roman": "nānaka",
@@ -1215,13 +1215,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāpahi",
-        "gloss": "are recognized; shine forth; become known",
+        "gloss": "are honored; are recognized",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "seī",
-        "gloss": "those very ones; they alone",
+        "gloss": "those very ones",
         "concept_key": "",
         "preserve_in_english": false
       }

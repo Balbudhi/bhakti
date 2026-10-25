@@ -102,7 +102,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo naru dukh mai dukhu nahī mānai",
-    "english": "{0,1:That person who }{3:in }{2:suffering }{5:does not }{6:take }{4:suffering }{6:to heart,}",
+    "english": "{0,1:One who, }{3:amid }{2:suffering, }{5:does not }{6:take }{4:suffering }{6:to heart,}",
     "words": [
       {
         "roman": "jo",
@@ -342,7 +342,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kañcan māṭī mānai",
-    "english": "{2:Deems }{0:gold }{1:as clay,}",
+    "english": "{2:Regards }{0:gold }{1:as clay,}",
     "words": [
       {
         "roman": "kañcan",
@@ -720,7 +720,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āsā mansā sagal tiāgai",
-    "english": "{3:Renounces }{2:all }{0:hope }{1:and mental desire,}",
+    "english": "{3:Renounces }{2:all }{0:hopes }{1:and desires,}",
     "words": [
       {
         "roman": "āsā",
@@ -780,7 +780,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jag te rahai nirāsā",
-    "english": "And {2:remains }{3:desireless }{1:toward }{0:the world,}",
+    "english": "And {2:remains }{3:free of expectation }{1:from }{0:the world,}",
     "words": [
       {
         "roman": "jag",
@@ -790,7 +790,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "te",
-        "gloss": "from; toward",
+        "gloss": "from",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -846,13 +846,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kām krodh jih parsai nāhan",
-    "english": "{2:Whom }{0:kāma }{1:and anger }{4:do not }{3:touch,}",
+    "english": "{2:Whom }{0:sensual desire }{1:and anger }{4:do not }{3:touch,}",
     "words": [
       {
         "roman": "kām",
         "gloss": "sensual desire; longing",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "krodh",
@@ -912,7 +912,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tih ghaṭ braham nivāsā",
-    "english": "{1:Within }{0:that }{1:vessel }{2:the Divine }{3:abides.}",
+    "english": "{1:Within }{0:that }{1:vessel, }{2:Brahman }{3:dwells.}",
     "words": [
       {
         "roman": "tih",
@@ -922,13 +922,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "ghaṭ",
-        "gloss": "in the vessel; in the heart",
+        "gloss": "in the vessel; here, in that person’s heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "braham",
-        "gloss": "the Divine",
+        "gloss": "the supreme divine reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -940,7 +940,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Locative phrase 'tih ghaṭ' ([in] that vessel) with nominal predicate 'nivāsā' and unexpressed copula."
+    "grammarNote": "Tih ghaṭ is a locative phrase: in that person’s heart. Ghaṭ, literally a vessel, refers here to the inner being. Brahman is the one whose dwelling, nivāsā, is described."
   },
   "line-013": {
     "source": "ਜੋ ਨਰੁ ਦੁਖ ਮੈ ਦੁਖੁ ਨਹੀ ਮਾਨੈ",
@@ -990,7 +990,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo nar dukh mai dukh nahī mānai",
-    "english": "{0,1:That person who }{3:in }{2:suffering }{5:does not }{6:take }{4:suffering }{6:to heart,}",
+    "english": "{0,1:One who, }{3:amid }{2:suffering, }{5:does not }{6:take }{4:suffering }{6:to heart,}",
     "words": [
       {
         "roman": "jo",
@@ -1158,7 +1158,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kañcan māṭī mānai",
-    "english": "{2:Deems }{0:gold }{1:as clay,}",
+    "english": "{2:Regards }{0:gold }{1:as clay,}",
     "words": [
       {
         "roman": "kañcan",
@@ -1312,7 +1312,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jugat",
-        "gloss": "spiritual way; method of liberation; wisdom",
+        "gloss": "way; manner of living",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1362,7 +1362,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānak līn bhaio gobind sio",
-    "english": "{0:O Nānak, }{2:that person has become }{1:merged }{4:with }{3:the Lord,}",
+    "english": "{0:O Nānak, }{2:that person has become }{1:merged }{4:with }{3:Gobind,}",
     "words": [
       {
         "roman": "nānak",
@@ -1384,7 +1384,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobind",
-        "gloss": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "Punjabi form of Govinda; a name of Kṛṣṇa and Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1396,7 +1396,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Nānak is the poetic signature expressed as an address. The understood subject of līn bhaio continues the person granted the Gurū’s grace in jih nar kau and referred to as tih in the preceding line. Gobind sio is the phrase with Govinda. That person is supplied in English to make this carried subject explicit, rather than treating the signature as the subject."
+    "grammarNote": "Nānak is the poetic signature expressed as an address. The understood subject of līn bhaio continues the person granted the Gurū’s grace in jih nar kau and referred to as tih in the preceding line. Gobind sio means with Gobind. The carried subject is made explicit in English."
   },
   "line-019": {
     "source": "ਨਾਨਕ ਲੀਨ",
@@ -1536,7 +1536,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jio pānī saṅgi pānī",
-    "english": "{0:Just as }{1:water }{2:with }{3:water.}",
+    "english": "{0:Just as }{1:water }merges {2:with }{3:water.}",
     "words": [
       {
         "roman": "jio",
@@ -1564,7 +1564,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Comparative clause introduced by 'jio'; 'saṅgi' (from Sanskrit saṅga) functions as an associative postposition connecting the two instances of 'pānī'."
+    "grammarNote": "Jio introduces the comparison; saṅgi means with. The verb merges is carried over from līn bhaio in the preceding full clause, comparing union with Gobind to water joining water."
   },
   "line-023": {
     "source": "ਜੋ ਨਰੁ ਦੁਖ ਮੈ ਦੁਖੁ ਨਹੀ ਮਾਨੈ",
@@ -1614,7 +1614,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo naru dukha mai dukhu nahī mānai",
-    "english": "{0,1:That person who }{3:in }{2:suffering }{5:does not }{6:take }{4:suffering }{6:to heart,}",
+    "english": "{0,1:One who, }{3:amid }{2:suffering, }{5:does not }{6:take }{4:suffering }{6:to heart,}",
     "words": [
       {
         "roman": "jo",
@@ -1854,7 +1854,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kañcana māṭī mānai",
-    "english": "{2:Deems }{0:gold }{1:as clay,}",
+    "english": "{2:Regards }{0:gold }{1:as clay,}",
     "words": [
       {
         "roman": "kañcana",

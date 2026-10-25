@@ -72,7 +72,7 @@ window.SONG_META = {
       "sequenceIndex": 75,
       "title": "Panthu Nihārai Kāmanī",
       "poet": "Kabīr",
-      "note": "Gurū Granth Sāhib · Aṅg 337 · Rāga Gauṛī · Kabīr · Stanza 1."
+      "note": "Gurū Granth Sāhib · Aṅg 337–338 · Rāga Gauṛī · Kabīr · Stanza 1."
     },
     {
       "sequenceIndex": 79,
@@ -372,7 +372,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "trikhā na utarai sānti na āvai binu darasana santa piāre jīu ॥",
-    "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved, }{10:revered }{8:Saint.}",
+    "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
     "words": [
       {
         "roman": "trikhā",
@@ -480,7 +480,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hau gholī jīu gholi ghumāī ॥",
-    "english": "{0,1:I am a sacrifice; }{2:my life }{4:is surrendered }{3:in sacrifice.}",
+    "english": "{0,1:I offer myself in sacrifice; }{3,4:I offer }{2:my very life.}",
     "words": [
       {
         "roman": "hau",
@@ -490,31 +490,31 @@ window.SONG_LINES = {
       },
       {
         "roman": "gholī",
-        "gloss": "am devoted; offered as sacrifice",
+        "gloss": "offer myself in sacrifice; am wholly devoted",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jīu",
-        "gloss": "my life; soul; revered one",
+        "gloss": "my life; soul",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gholi",
-        "gloss": "having sacrificed",
+        "gloss": "offering in sacrifice",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ghumāī",
-        "gloss": "circuited around as an offering; surrendered wholly",
+        "gloss": "give myself wholly in devotion",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "hau is the first-person subject. gholī and gholi ghumāī express the repeated devotional idiom of offering oneself; jīu is read here as life or soul."
+    "grammarNote": "The repeated gholī and gholi ghumāī express complete self-offering. jīu is read as life here. The following phrase names the object of this devotion; no separate physical ritual is asserted."
   },
   "line-005": {
     "source": "ਗੁਰ ਦਰਸਨ ਸੰਤ ਪਿਆਰੇ ਜੀਉ ॥",
@@ -552,7 +552,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gur darasana santa piāre jīu ॥",
-    "english": "{1:Unto the sight }{0:of the Guru, }{3:the beloved, }{4:revered }{2:Saint.}",
+    "english": "{1:For the sight }{0:of the Guru, }{3:the beloved }{4:and revered }{2:Saint.}",
     "words": [
       {
         "roman": "gur",
@@ -636,7 +636,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terā mukhu suhāvā jīu sahaja dhuni bāṇī ॥",
-    "english": "{0:Your }{1:face }{2:is beauteous, }{3:O revered one; }{6:your speech is }{5:a melody }{4:of natural poise.}",
+    "english": "{0:Your }{1:face }{2:is beautiful, }{3:O revered one; }{6:your speech is }{5:a melody }{4:of natural poise.}",
     "words": [
       {
         "roman": "terā",
@@ -652,7 +652,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "suhāvā",
-        "gloss": "beauteous; delightful",
+        "gloss": "beautiful; delightful",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -714,7 +714,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ciru hoā dekhe sāriṅgapāṇī ॥",
-    "english": "{0:A long time }{1:has passed }{2:since I saw you, }{3:O bow-wielding Lord.}",
+    "english": "{0:A long time }{1:has passed }{2:since I saw you, }{3:O Śārṅgapāṇi.}",
     "words": [
       {
         "roman": "ciru",
@@ -736,13 +736,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāriṅgapāṇī",
-        "gloss": "O bow-wielding Lord; a divine epithet",
+        "gloss": "Bearer of the Śārṅga bow; Śārṅgapāṇi, a name of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "ciru hoā is an impersonal temporal expression. dekhe marks the elapsed time since seeing. sāriṅgapāṇī, literally the one holding the bow, is read as a direct address continuing terā in the preceding line."
+    "grammarNote": "ciru hoā expresses elapsed time; dekhe means since seeing. sāriṅgapāṇī addresses the divine beloved by the name Śārṅgapāṇi, bearer of the Śārṅga bow."
   },
   "line-008": {
     "source": "ਧੰਨੁ ਸੁ ਦੇਸੁ ਜਹਾ ਤੂੰ ਵਸਿਆ ॥",
@@ -864,7 +864,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mere sajaṇa mīta murāre jīu ॥",
-    "english": "{0:O my }{1:companion, }{2:friend, }{4:and revered }{3:Foe of Mura.}",
+    "english": "{0:O my }{1:companion }{2:and friend, }{4:revered }{3:Murāri.}",
     "words": [
       {
         "roman": "mere",
@@ -886,7 +886,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murāre",
-        "gloss": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "Foe of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -898,7 +898,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Vocative series in the oblique/vocative case (mere sajaṇa mīta murāre); murāre is the vocative of Murāri ('foe of the demon Mura', epithet for Krishna/God)."
+    "grammarNote": "mere sajaṇa mīta murāre is a series of affectionate addresses. murāre is the vocative form of Murāri; jīu adds reverence, not another person to the list."
   },
   "line-010": {
     "source": "ਹਉ ਘੋਲੀ ਹਉ ਘੋਲਿ ਘੁਮਾਈ",
@@ -936,7 +936,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hau gholī hau gholi ghumāī",
-    "english": "{0,1:I am a sacrifice, }{2:I }{3:sacrifice }{4:and surrender myself wholly,}",
+    "english": "{0,1:I offer myself in sacrifice; }{2:I }{3,4:give myself wholly,}",
     "words": [
       {
         "roman": "hau",
@@ -946,7 +946,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gholī",
-        "gloss": "am devoted; offered in sacrifice",
+        "gloss": "offer myself in sacrifice; am wholly devoted",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -958,19 +958,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "gholi",
-        "gloss": "having sacrificed",
+        "gloss": "offering in sacrifice",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ghumāī",
-        "gloss": "circuited around as an offering; surrendered wholly",
+        "gloss": "give myself wholly in devotion",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Variant spelling/repetition of line-004 with doubling of the pronoun hau."
+    "grammarNote": "The repeated first-person hau intensifies the devotional idiom of self-offering. The following line identifies its recipient."
   },
   "line-011": {
     "source": "ਗੁਰ ਸਜਣ ਮੀਤ ਮੁਰਾਰੇ ਜੀਉ ॥",
@@ -1008,7 +1008,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gur sajaṇa mīta murāre jīu ॥",
-    "english": "{0:Unto the Guru, }{1:my companion, }{2:friend, }{4:and revered }{3:Foe of Mura.}",
+    "english": "{0:To the Guru, }{1:my companion }{2:and friend, }{4:revered }{3:Murāri.}",
     "words": [
       {
         "roman": "gur",
@@ -1030,7 +1030,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murāre",
-        "gloss": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "Foe of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1042,7 +1042,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Nominal/vocative sequence in the oblique case serving as the complement to the sacrifice in line-010."
+    "grammarNote": "This phrase completes the self-offering in the preceding line. murāre addresses Murāri; jīu adds reverence."
   },
   "line-012": {
     "source": "ਮੇਰਾ ਮਨੁ ਲੋਚੈ ਗੁਰ ਦਰਸਨ ਤਾਈ ॥",
@@ -1248,7 +1248,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ik ghaṛī na milte tā kalijugu hotā ॥",
-    "english": "If {0:for a single }{1:moment }{2,3:we do not meet, }{4:then }{6:it becomes }{5:the dark age.}",
+    "english": "{0,1:If for a single moment }{2,3:we do not meet, }{4:then }{6:that moment becomes }{5:the dark age.}",
     "words": [
       {
         "roman": "ik",
@@ -1338,7 +1338,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "huṇi kadi milīai pria tudhu bhagavantā ॥",
-    "english": "{0:Now, }{1:when }{2:shall I meet }{4:with you, }{3:O beloved, }{5:blessed Lord?}",
+    "english": "{0:Now, }{1:when }{2:shall I meet }{4:with you, }{3:O beloved }{5:Bhagavān?}",
     "words": [
       {
         "roman": "huṇi",
@@ -1372,13 +1372,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagavantā",
-        "gloss": "O blessed Lord; opulent one",
+        "gloss": "The blessed Lord; Bhagavān, addressed in the vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "milīai is a 1st person plural / impersonal passive optative-subjunctive verb; tudhu is the oblique 2nd person singular pronoun governed by the associative sense of meeting; bhagavantā is vocative masculine."
+    "grammarNote": "milīai asks when union may be attained; tudhu is the second-person pronoun, with you. pria bhagavantā addresses the beloved Bhagavān, the blessed Lord."
   },
   "line-016": {
     "source": "ਮੋਹਿ ਰੈਣਿ ਨ ਵਿਹਾਵੈ ਨੀਦ ਨ ਆਵੈ",
@@ -1584,7 +1584,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tisu sace gur darabāre jīu ॥",
-    "english": "{0:That }{1:true }{3:court }{4:of the revered }{2:Guru.}",
+    "english": "{0:To that }{1:true }{3:court }{4:of the revered }{2:Guru.}",
     "words": [
       {
         "roman": "tisu",
@@ -2124,7 +2124,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "binu darasana santa piāre jīu ॥",
-    "english": "{0:Without }{1:the sight }{3:of the beloved, }{4:revered }{2:Saint.}",
+    "english": "{0:Without }{1:the sight }{3:of the beloved }{4:and revered }{2:Saint.}",
     "words": [
       {
         "roman": "binu",
@@ -2352,7 +2352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "trikhā na utarai sānti na āvai binu darasana santa piāre jīu",
-    "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved, }{10:revered }{8:Saint.}",
+    "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
     "words": [
       {
         "roman": "trikhā",
@@ -2460,7 +2460,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hau gholī jīu gholi ghumāī",
-    "english": "{0,1:I am a sacrifice; }{2:my life }{4:is surrendered }{3:in sacrifice}",
+    "english": "{0,1:I offer myself in sacrifice; }{3,4:I offer }{2:my very life.}",
     "words": [
       {
         "roman": "hau",
@@ -2470,31 +2470,31 @@ window.SONG_LINES = {
       },
       {
         "roman": "gholī",
-        "gloss": "am devoted; offered in sacrifice",
+        "gloss": "offer myself in sacrifice; am wholly devoted",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jīu",
-        "gloss": "my life; revered one",
+        "gloss": "my life; soul",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gholi",
-        "gloss": "having sacrificed",
+        "gloss": "offering in sacrifice",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ghumāī",
-        "gloss": "circuited in total surrender; offered wholly",
+        "gloss": "give myself wholly in devotion",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Spelling variant of line-004 (jīu, ghumāī)."
+    "grammarNote": "The repeated gholī and gholi ghumāī express complete self-offering. jīu is read as life here. The following phrase names the object of this devotion; no separate physical ritual is asserted."
   },
   "line-030": {
     "source": "ਗੁਰ ਦਰਸਨ ਸੰਤ ਪਿਆਰੇ ਜੀਉ ॥",
@@ -2532,7 +2532,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gur darasana santa piāre jīu",
-    "english": "{1:Unto the sight }{0:of the Guru, }{3:the beloved, }{4:revered }{2:Saint.}",
+    "english": "{1:For the sight }{0:of the Guru, }{3:the beloved }{4:and revered }{2:Saint.}",
     "words": [
       {
         "roman": "gur",
@@ -2604,7 +2604,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "antari piāsa uṭhī prabha kerī",
-    "english": "{0:Within }{2:has arisen }{1:a thirst }{3,4:for the Lord;}",
+    "english": "{0:Within, }{1:a thirst }{3,4:for the Lord }{2:has arisen;}",
     "words": [
       {
         "roman": "antari",
@@ -2928,7 +2928,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kaise kahau mohi jīa bedanāī",
-    "english": "{0:How }{1,2:can I tell }{4:the pain }{3:in my heart?}",
+    "english": "{0:How }{1,2:can I tell of }{4:the pain }{3:in my heart?}",
     "words": [
       {
         "roman": "kaise",
@@ -3000,7 +3000,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "darasana piāsa prema prīti manohara",
-    "english": "{1:Thirst }{0:for the blessed sight, }{2:loving }{3:devotion }{4:for the Heart-Ravisher—}",
+    "english": "{1:Thirst }{0:for the sight, }{2:love }{3:and affection }{4:for the heart-captivating Beloved—}",
     "words": [
       {
         "roman": "darasana",
@@ -3016,25 +3016,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "prema",
-        "gloss": "divine love; affection",
+        "gloss": "love; affection",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prīti",
-        "gloss": "loving attachment; devotion",
+        "gloss": "affection; loving attachment",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "manohara",
-        "gloss": "of the heart-captivating Lord",
+        "gloss": "heart-captivating; here, the beloved who captivates the heart",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Series of nominative/accusative abstract nouns functioning as thematic causal elements for line-038; manohara ('captivating the mind') qualifies the divine object of love."
+    "grammarNote": "This cluster of longing, love and affection leads into the restless mind in the next line. The stored performed form prema is retained; the corresponding written passage has pria, beloved. That source difference remains an audio-review question, not a reason to silently change this lyric."
   },
   "line-037": {
     "source": "ਮਨੁ ਨ ਰਹੈ",
@@ -3126,7 +3126,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "manu na rahai bahu bidhi umakāī",
-    "english": "{0:The mind }{1,2:does not stay still; }{3:in manifold }{4:ways }{5:it surges with longing.}",
+    "english": "{0:The mind }{1,2:does not stay still; }{3:in so many }{4:ways }{5:it surges with longing.}",
     "words": [
       {
         "roman": "manu",
@@ -3318,7 +3318,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ura na bhījai paga nā khisai",
-    "english": "{0:Her heart }{1:is not }{2:drenched; }{3:her foot }{4:does not }{5:slip,}",
+    "english": "{0:Her heart }{1,2:remains unquenched; }{3:her foot }{4:does not }{5:stir,}",
     "words": [
       {
         "roman": "ura",
@@ -3334,7 +3334,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhījai",
-        "gloss": "is wetted; figuratively, finds satisfaction",
+        "gloss": "is moistened; here, is satisfied or soothed",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3352,13 +3352,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "khisai",
-        "gloss": "slips; shifts away",
+        "gloss": "moves away; shifts from its place",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "The two clauses keep the heart and foot as their respective subjects. bhījai retains the image of wetting, with satisfaction or relief as its contextual sense; khisai is the foot slipping or shifting. The following line gives the hope for the sight of Hari."
+    "grammarNote": "bhījai literally evokes wetting and here the satisfaction of longing: her heart remains unquenched. khisai describes the foot moving from its place; she keeps watching the path in hope of seeing Hari."
   },
   "line-042": {
     "source": "ਹਰਿ ਦਰਸਨ ਕੀ ਆਸਾ ॥",
@@ -3390,11 +3390,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari darasana kī āsā",
-    "english": "{3:In the hope }{1,2:of beholding }{0:the Lord.}",
+    "english": "{3:In the hope }{1,2:of beholding }{0:Hari.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3504,11 +3504,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "citavau anadinu nīta",
-    "english": "{0:I contemplate }{2:perpetually, }{1:day after day.}",
+    "english": "{0:I think of that sight }{1:day after day, }{2:without cease.}",
     "words": [
       {
         "roman": "citavau",
-        "gloss": "I contemplate; remember constantly",
+        "gloss": "I think of; I remember",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3526,7 +3526,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "citavau is a 1st person singular present indicative verb; anadinu (Skt. anudinam) and nīta (Skt. nityam) are reinforcing adverbs of time."
+    "grammarNote": "citavau is first-person: I think of or remember. The object, the longed-for sight, is carried over from the preceding line. anadinu and nīta reinforce the continuity of this longing."
   },
   "line-045": {
     "source": "ਖੋਲਿ ਕਪਟੁ ਗੁਰਿ ਮੇਲੀਆ",
@@ -3618,7 +3618,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaka hari saṅgi mīta",
-    "english": "{0:O Nānak, }{1,2:with the Lord, }{3:the Beloved Friend.}",
+    "english": "{0:O Nānak, }{2:with }{1:Hari, }{3:the beloved Friend.}",
     "words": [
       {
         "roman": "nānaka",
@@ -3628,7 +3628,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
         "concept_key": "",
         "preserve_in_english": false
       },

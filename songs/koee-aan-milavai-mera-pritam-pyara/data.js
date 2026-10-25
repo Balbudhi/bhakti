@@ -174,7 +174,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hau tisu pahi āpu vecāī",
-    "english": "{0,4:I sell }{3:myself }{1,2:unto them,}",
+    "english": "{0,4:I would sell }{3:myself }{1,2:to that person,}",
     "words": [
       {
         "roman": "hau",
@@ -190,7 +190,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pahi",
-        "gloss": "unto",
+        "gloss": "to; before",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -202,13 +202,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vecāī",
-        "gloss": "sell",
+        "gloss": "I would sell; I would give myself over",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "First-person singular verb vecāī governing reflexive direct object āpu and postpositional indirect recipient tisu pahi."
+    "grammarNote": "vecāī expresses willingness in response to the preceding conditional: if someone brings the beloved, I would sell myself to that person. āpu is the reflexive object; tisu pahi names the recipient."
   },
   "darsan-har-dekhan": {
     "source": "ਦਰਸਨੁ ਹਰਿ ਦੇਖਣ ਕੈ ਤਾਈ",
@@ -246,7 +246,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "darsanu hari dekhaṇ kai tāī",
-    "english": "{3,4:for the sake of }{0,2:beholding }{1:the Lord.}",
+    "english": "{3,4:For the sake of }{0,2:beholding }{1:Hari.}",
     "words": [
       {
         "roman": "darsanu",
@@ -256,7 +256,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -342,7 +342,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kripā kare tā satiguru mele hari hari nāmu dhiāī",
-    "english": "{1:If He bestows }{0:grace, }{2:then }{4:He unites me with }{3:the True Guru; }{8:I meditate }{7:upon the Name }{5:of the Lord, }{6:the Lord.}",
+    "english": "{1:If He bestows }{0:grace, }{2:then }{4:He unites me with }{3:the True Guru; }{8:I meditate }{7:on the name }{5:of Hari, }{6:Hari.}",
     "words": [
       {
         "roman": "kripā",
@@ -376,13 +376,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -400,7 +400,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Conditional construction with elided 'je' correlated by 'tā'. Subject shifts from third-person divine agency (kare, mele) to first-person singular devotee (dhiāī)."
+    "grammarNote": "The stored kare and mele are rendered with third-person divine agency, followed by first-person dhiāī. The written scripture has second-person karahi and melahi. This performed-form question remains for audio review; the source is not silently conformed to the printed text."
   },
   "je-sukh-dehe-ta": {
     "source": "ਜੇ ਸੁਖੁ ਦੇਹਿ ਤ ਤੁਝਹਿ ਅਰਾਧੀ ਦੁਖਿ ਭੀ ਤੁਝੈ ਧਿਆਈ",
@@ -606,7 +606,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "je bhukha dehi ta ita hī rājā dukha vici sūkha manāī",
-    "english": "{0:If }{2:You give }{1:hunger, }{3:then }{4:in this }{5:very state }{6:I remain sated; }{8:within }{7:pain, }{10:I celebrate }{9:joy.}",
+    "english": "{0:If }{2:You give }{1:hunger, }{3:then }{4,5:in that very hunger }{6:I remain sated; }{8:amid }{7:pain, }{10:I find }{9:joy.}",
     "words": [
       {
         "roman": "je",
@@ -634,19 +634,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "ita",
-        "gloss": "in this",
+        "gloss": "in this; in this hunger",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hī",
-        "gloss": "very",
+        "gloss": "very; even",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rājā",
-        "gloss": "I remain sated",
+        "gloss": "I remain sated; figuratively, content even in hunger",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -670,13 +670,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "manāī",
-        "gloss": "I celebrate",
+        "gloss": "I experience; enjoy",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "rājā is first-person present/subjunctive from rājjṇā (to be filled/sated); manāī is first-person singular from manāuṇā (to observe/celebrate)."
+    "grammarNote": "rājā is from rājjṇā, to be sated or satisfied, not the noun king. ita hī points back to hunger. The parallel clauses express contentment even in hunger and the experience of joy amid pain."
   },
   "tan-man-kaat-kaat": {
     "source": "ਤਨੁ ਮਨੁ ਕਾਟਿ ਕਾਟਿ ਸਭੁ ਅਰਪੀ ਵਿਚਿ ਅਗਨੀ ਆਪੁ ਜਲਾਈ",
@@ -978,7 +978,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaku garību ḍhahi paiā duārai hari meli lehu vaḍiāī",
-    "english": "{1:Humble }{0:Nānak }{2,3:has fallen }{4:at the threshold; }{5:O Lord, }{6,7:unite me with You—}{8:grant this gracious favor.}",
+    "english": "{1:Humble }{0:Nānak }{2,3:has fallen }{4:at the threshold; }{5:O Hari, }{6,7:unite me with You—}{8:grant this gracious favor.}",
     "words": [
       {
         "roman": "nānaku",
@@ -1012,7 +1012,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1030,7 +1030,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaḍiāī",
-        "gloss": "greatness shown as gracious favor",
+        "gloss": "gracious favor; beneficence here, rather than praise or greatness",
         "concept_key": "",
         "preserve_in_english": false
       }

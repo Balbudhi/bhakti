@@ -1,5 +1,61 @@
 # Gurbāṇī reader repair and expansion
 
+## Contextual names and meanings — 25 October 2026
+
+The owner reopened the published Gurbāṇī wording and authorized a focused
+editorial correction and website update. This supersedes the prior audit-only
+hold for this content slice; it does not authorize new paid model experiments.
+Review the twelve tagged readers plus the three published Guru Gobind Singh
+works omitted from that filter. Check every stored line against the source,
+its linked word meanings and adjacent clauses. Preserve source, IAST,
+performance order, timings and original listener media in this text-only pass.
+
+Hari, Gobind/Govinda and Pārbrahm/Parabrahman must not be flattened into the
+same generic title or replaced with speculative etymological paraphrases.
+Retain an evidenced name in English and give its identity and meaning in the
+linked popup. Translate ordinary words by their actual grammatical context;
+selected popup meanings and English must agree. No global spelling replacement
+or blanket retention of philosophical vocabulary is authorized. Earlier
+occurrence-specific Lord rules in `data/translation_conventions.json` are
+superseded by this correction. Owner-approved reference English stays exact.
+
+Use the existing Gurbāṇī filter for the owner's Sikh sacred-song grouping,
+including the reviewed Guru Gobind Singh works outside the Gurū Granth Sāhib.
+Their source notices must name the actual work, never invent an Aṅg reference.
+The similarly named Odia He Guru Gobinda Gosain is not classified as a Sikh
+Guru hymn solely from its title. Preserve all previously published additions
+and unrelated in-progress readers/catalogue edits during scoped release.
+
+Editorial work is complete for 355 stored definitions across 15 readers:
+152 definitions changed, including 139 English fields. The twelve prior Gurbāṇī
+readers and Jin Prem Kīo, Mittar Piāre Nū̃ and Bentī Caupaī were read in full.
+Names and contextual senses are corrected; the Kabīr insertion in Merā Manu
+Locai now cites Aṅg 337–338. Current-source spelling variants remain distinct
+where appropriate (Murāri/Murārī, Bhagavān/Bhagvant). The heart “unquenched”
+rendering intentionally expresses bhījai’s contextual lack of satisfaction
+within the surrounding thirst imagery; its popup retains the literal wetting
+sense. Hunger/sated, heart-vessel and musical-consort images remain visible.
+
+All 15 actual reader contract checks pass. Parsed comparisons confirm exact
+source, IAST, native mappings, Roman word divisions, sequence, timings and audio
+source preservation. Compilation and whitespace checks pass. The no-cost audio
+quality audit reports 275 song directories and no errors; the trim audit retains
+six historical evidence failures, including Benti, and no audio was changed.
+The full working-tree contract audit still has unrelated legacy/tag holds.
+In-app checks at 390px and 1280px render all 15 readers without horizontal
+overflow; Gobind and Pārbrahm popups resolve correctly, and the Gurbāṇī filter
+shows all 15, including the three previously omitted Guru Gobind Singh works.
+The release catalogue retains all 265 committed readers and all eleven prior
+additions; four unrelated held local readers are not silently published.
+
+Remaining limits: Jin’s bikhiān has competing interpretations (the existing
+sensual-desire reading was retained); Benti line-74 has an existing fused Roman
+token. This is not a fresh audio/transcription/timing qualification or a claim
+that every interpretive question is settled. Owner-approved reference readers
+are unchanged. Private per-line decisions and validation records are stored at
+`.transcription/library-review/gurbani-20261025/` and excluded from the website.
+Publication is the remaining step for this editorial slice.
+
 ## Outcome and current step
 
 Review all nine published songs in `data/scripture_metadata.json` against their

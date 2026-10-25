@@ -288,7 +288,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tisu gur kau hau vāriā jini hari kī hari kathā suṇāī",
-    "english": "{3:I }{4:offer myself in sacrifice }{2:to }{0:that }{1:spiritual teacher, }{5:who }{10:told me }{9:the story }{7,6:of the Lord}{8:—of the Lord.}",
+    "english": "{3:I }{4:offer myself in sacrifice }{2:to }{0:that }{1:spiritual teacher, }{5:who }{10:told me }{9:the story }{7,6:of Hari}{8:—of Hari.}",
     "words": [
       {
         "roman": "tisu",
@@ -328,7 +328,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a name of Viṣṇu/Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -340,7 +340,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a name of Viṣṇu/Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -468,7 +468,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jini hari sevā baṇat baṇāī",
-    "english": "{0:who }{4:established }{3:the practice }{2:of service }{1:to the Lord.}",
+    "english": "{0:who }{4:established }{3:the practice }{2:of service }{1:to Hari.}",
     "words": [
       {
         "roman": "jini",
@@ -478,7 +478,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a name of Viṣṇu/Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -564,7 +564,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tisu gur kau sābāsi hai jini hari sojhī pāī",
-    "english": "{3,4:Praise }{2:to }{0:that }{1:spiritual teacher, }{5:who }{8:imparted }{7:understanding }{6:of the Lord.}",
+    "english": "{3,4:Praise }{2:to }{0:that }{1:spiritual teacher, }{5:who }{8:gave me }{7:understanding }{6:of Hari.}",
     "words": [
       {
         "roman": "tisu",
@@ -604,7 +604,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a name of Viṣṇu/Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -708,7 +708,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānaku gur viṭahu vāriā jini hari nāmu dīā mere man kī ās purāī",
-    "english": "{0:I, Nānak, }{3:offer myself in sacrifice }{2:to }{1:the spiritual teacher, }{4:who }{7:gave }{5:the Lord’s }{6:name }{12:and fulfilled }{11:the yearning }{10:of }{8:my }{9:mind.}",
+    "english": "{0:I, Nānak, }{3:offer myself in sacrifice }{2:to }{1:the spiritual teacher, }{4:who }{7:gave }{5:Hari’s }{6:name }{12:and fulfilled }{11:the yearning }{10:of }{8:my }{9:mind.}",
     "words": [
       {
         "roman": "nānaku",
@@ -742,7 +742,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a name of Viṣṇu/Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -876,17 +876,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāhigurū",
-    "english": "{0:Wondrous Enlightener!}",
+    "english": "{0:Vāhigurū!}",
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "wondrous enlightener; Vāhigurū, a Sikh name for God",
+        "gloss": "a Sikh name for God; an invocation of wonder and praise",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Vāhigurū is the Sikh divine invocation, rendered here as Wondrous Enlightener. It is performed after the hymn and is not assigned to the canonical paurī."
+    "grammarNote": "Vāhigurū is retained as the performed divine invocation. Its expression of wonder and praise is explained in the popup; the invocation is not assigned to the canonical hymn."
   }
 };
 

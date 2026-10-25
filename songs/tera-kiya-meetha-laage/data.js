@@ -83,7 +83,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terā kīā mīṭhā lāgai ॥",
-    "english": "{0:Your }{1:doing }{3:feels }{2:sweet.}",
+    "english": "{0,1:What You do }{3:is }{2:sweet }{3:to me.}",
     "words": [
       {
         "roman": "Terā",
@@ -93,7 +93,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kīā",
-        "gloss": "doing; deed; act",
+        "gloss": "what is done; deed; act",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -105,7 +105,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lāgai",
-        "gloss": "feels; is experienced as",
+        "gloss": "seems; feels; is experienced as",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -149,11 +149,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hari nāmu padārathu nānaku māṅgai ॥",
-    "english": "{3:Nānak }{4:begs for }{2:the treasure }{0:of the Lord’s }{1:Name.}",
+    "english": "{3:Nānak }{4:begs for }{2:the treasure }{0:of Hari’s }{1:Name.}",
     "words": [
       {
         "roman": "Hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -171,7 +171,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānaku",
-        "gloss": "Nānak, the devotee-poet",
+        "gloss": "the poetic signature used here by Gurū Arjan",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -207,7 +207,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Nānaku",
-        "gloss": "Nānak, the devotee-poet",
+        "gloss": "the poetic signature used here by Gurū Arjan",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -263,11 +263,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hari kā nāmu ridai nit dhiāī ॥",
-    "english": "{5:I meditate }{4:continually }{2:upon the Name }{0,1:of the Lord }{3:in the heart.}",
+    "english": "{5:I meditate }{4:continually }{2:upon the Name }{1:of }{0:Hari }{3:in my heart.}",
     "words": [
       {
         "roman": "Hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -407,7 +407,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru merai saṅgi sadā hai nāle ॥",
-    "english": "{1:My }{0:Guru }{4:is }{3:always }{1,2:with me, }{5:by my side.}",
+    "english": "{0:The Guru }{4:is }{3:always }{1,2:with me, }{5:by my side.}",
     "words": [
       {
         "roman": "Guru",
@@ -417,7 +417,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "merai",
-        "gloss": "my",
+        "gloss": "my; in merai saṅgi, with me",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -447,7 +447,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Guru is nominative singular with grammatical -u. merai is oblique 1st person possessive agreeing with the locative postposition saṅgi. nāle reinforces proximity adverbially."
+    "grammarNote": "Merai saṅgi means with me; merai belongs to that phrase rather than separately modifying Guru. Nāle reinforces the closeness: alongside, by my side."
   },
   "simar-simar-tis-sada-samhale": {
     "source": "ਸਿਮਰਿ ਸਿਮਰਿ ਤਿਸੁ ਸਦਾ ਸਮ੍ਹ੍ਹਾਲੇ ॥",
@@ -543,7 +543,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Nānaku",
-        "gloss": "Nānak, the devotee-poet",
+        "gloss": "the poetic signature used here by Gurū Arjan",
         "concept_key": "",
         "preserve_in_english": false
       },

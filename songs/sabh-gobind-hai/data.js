@@ -86,7 +86,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sabhu gobindu hai",
-    "english": "{0:All}{2: is }{1:the Lord;}",
+    "english": "{0:All}{2: is }{1:Gobind;}",
     "words": [
       {
         "roman": "sabhu",
@@ -96,7 +96,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobindu",
-        "gloss": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "a name of Kṛṣṇa/Viṣṇu; Punjabi form of Govinda",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -140,11 +140,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gobind binu nahī koī",
-    "english": "{2,3:Nothing }exists {1:without }{0:the Lord.}",
+    "english": "{2,3:Nothing }exists {1:apart from }{0:Gobind.}",
     "words": [
       {
         "roman": "gobind",
-        "gloss": "the Lord; Govinda, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "a name of Kṛṣṇa/Viṣṇu; Punjabi form of Govinda",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -284,7 +284,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oti poti prabhu soī",
-    "english": "{3:that very }{2:Sovereign Lord }is interwoven, {0:warp }and {1:weft.}",
+    "english": "{3:that very }{2:Lord }is interwoven, {0:warp }and {1:weft.}",
     "words": [
       {
         "roman": "oti",
@@ -300,7 +300,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prabhu",
-        "gloss": "Sovereign Master; Lord",
+        "gloss": "Lord; master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -344,7 +344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ek anek biāpak pūrak",
-    "english": "{0:One }{1:and manifold, }{2:all-pervading }{3:and all-filling,}",
+    "english": "{0:One }{1:and many, }{2:pervading all }{3:and filling all,}",
     "words": [
       {
         "roman": "ek",
@@ -354,7 +354,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "anek",
-        "gloss": "the manifold; many",
+        "gloss": "many; manifold",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -366,7 +366,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pūrak",
-        "gloss": "all-filling; permeating",
+        "gloss": "filling all; fully present",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -722,7 +722,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ihu parpañcu pārbrahm kī līlā",
-    "english": "{0:This }{1:phenomenal expanse }is {4:the play }{3:of }{2:the Supreme Reality;}",
+    "english": "{0:This }{1:manifest world }is {4:the play }{3:of }{2:Pārbrahm;}",
     "words": [
       {
         "roman": "ihu",
@@ -732,13 +732,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "parpañcu",
-        "gloss": "phenomenal manifestation; visible expanse",
+        "gloss": "manifest world; visible creation",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pārbrahm",
-        "gloss": "Transcendent Supreme Reality",
+        "gloss": "Supreme Brahman; the supreme divine reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -788,7 +788,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bicrat ān na hoī",
-    "english": "{0:upon reflecting, }{3:there is }{2:no }{1:other.}",
+    "english": "{0:on reflection, }{3:it is }{2:not }{1:separate.}",
     "words": [
       {
         "roman": "bicrat",
@@ -798,7 +798,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ān",
-        "gloss": "other; another",
+        "gloss": "other; separate",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -816,7 +816,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Present participle 'bicrat' used conditionally/adverbially ('on reflecting'); 'ān' is the subject of the negated finite verb 'na hoī'."
+    "grammarNote": "bicrat means on reflection. The preceding manifest world is understood as the subject: it is not separate from Pārbrahm, continuing the water-and-waves comparison."
   },
   "mithia-bharam-ar-supan-manorath": {
     "source": "ਮਿਥਿਆ ਭਰਮੁ ਅਰੁ ਸੁਪਨ ਮਨੋਰਥ",
@@ -1094,7 +1094,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahat nāmdeu hari kī racnā",
-    "english": "{0:Says }{1:Nāmdev, }{4:the creation }{3:of }{2:the Lord—}",
+    "english": "{0:Says }{1:Nāmdev, }{4:the creation }{3:of }{2:Hari—}",
     "words": [
       {
         "roman": "kahat",
@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a name of Viṣṇu/Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1274,7 +1274,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "keval ek murārī",
-    "english": "is {0:solely }{1:the One, }{2:the Foe of Mura.}",
+    "english": "is {0:only }{1:the One, }{2:Murārī.}",
     "words": [
       {
         "roman": "keval",
@@ -1290,7 +1290,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murārī",
-        "gloss": "enemy of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "foe of Mura; a name of Kṛṣṇa/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1310,17 +1310,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāhigurū",
-    "english": "{0:Wondrous Enlightener!}",
+    "english": "{0:Vāhigurū!}",
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "wondrous enlightener; Vāhigurū, a Sikh name for God",
+        "gloss": "a Sikh name for God; an invocation of wonder and praise",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Compound vocative/mantric exclamation composed of 'vāhi' (wondrous / hail) and 'gurū' (dispeller of darkness / teacher)."
+    "grammarNote": "Vāhigurū is retained as the performed divine invocation. Its expression of wonder and praise is explained in the popup; the invocation is not assigned to the canonical hymn."
   }
 };
 

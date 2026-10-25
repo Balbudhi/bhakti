@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Mittar Pyare Nu",
+  "title": "Mittar Piāre Nū̃",
   "subtitle": "",
   "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
@@ -14,11 +14,19 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
     "Mitar Pyare Nu",
     "Haal Mureedan Da",
-    "Mittar Pyare Nu Haal Mureedan Da Kehna"
+    "Mittar Pyare Nu Haal Mureedan Da Kehna",
+    "Mittar Pyare Nu",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Dasam Granth"
   ],
   "audioSources": [
     {
@@ -32,7 +40,16 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 1,
+      "title": "Mittar Piāre Nū̃",
+      "poet": "Guru Gobind Singh",
+      "note": "Dasam Granth · Khayāl Pātisāhī 10 · Śabad 6."
+    }
+  ],
+  "dataAssetVersion": "gurbani-editorial-20261025"
 };
 
 window.SONG_LINES = {
@@ -282,7 +299,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tudhu binu rōgu rajā'ī'āṁ dā ōḍhaṇ nāga nivāsāṁ dē rahiṇā ॥",
-    "english": "{1:Without }{0:You, }{3,4,5:wrapping in quilts }{2:is a disease, }{9:and living }{7:is dwelling }{6,8:among serpents.}",
+    "english": "{1:Without }{0:You, }{3,4,5:wrapping oneself in quilts }{2:is sickness; }{7,8,9:living at home }{6:is living among snakes.}",
     "words": [
       {
         "roman": "Tudhu",
@@ -322,13 +339,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāga",
-        "gloss": "serpents; venomous snakes",
+        "gloss": "snakes; serpents",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nivāsāṁ",
-        "gloss": "in dwellings; in abodes",
+        "gloss": "dwellings; homes",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -346,7 +363,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Contains parallel equative predications with omitted copulas: `[rajā'ī'āṁ dā ōḍhaṇ] [rōgu hai]` and `[rahiṇā] [nāga nivāsāṁ dē nivās vāṅg hai]`. `Tudhu` is the oblique second-person singular pronoun."
+    "grammarNote": "Tudh bin (‘without You’) governs both images. Rajāīāṁ dā ōḍhaṇ is ‘wrapping oneself in quilts’. In the second image, ordinary dwellings become a place of snakes. These are images of comfort made painful by separation, not a literal report of illness or snakes in the house."
   },
   "verse-2": {
     "source": "ਸੂਲ ਸੁਰਾਹੀ ਖੰਜਰੁ ਪਿਆਲਾ ਬਿੰਗੁ ਕਸਾਈਆਂ ਦਾ ਸਹਿਣਾ ॥",
@@ -402,17 +419,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sūla surāhī khañjaru pi'ālā biṅgu kasā'ī'āṁ dā sahiṇā ॥",
-    "english": "{1:The flagon }{0:is an impaling spike, }{3:the cup }{2:a dagger, }{7:and enduring }{5,6:is the butchers' }{4:curved knife.}",
+    "english": "{1:The flask }{0:is a spike, }{3:the cup }{2:a dagger; }{7:one endures }{5,6:the butchers’ }{4:curved knife.}",
     "words": [
       {
         "roman": "Sūla",
-        "gloss": "spike; impaling stake; thorn",
+        "gloss": "spike; thorn",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "surāhī",
-        "gloss": "flagon; wine-flask",
+        "gloss": "long-necked flask; pitcher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -430,7 +447,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "biṅgu",
-        "gloss": "curved butcher knife; cleaver",
+        "gloss": "curved knife; bent blade",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -448,13 +465,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "sahiṇā",
-        "gloss": "enduring; suffering; bearing",
+        "gloss": "to endure; to suffer",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Asyndetic equative clauses: `surāhī sūla [hai]`, `pi'ālā khañjaru [hai]`, and `[jīvaṇ] kasā'ī'āṁ dā biṅgu sahiṇā [hai]`. The endings in `-u` on `khañjaru` and `biṅgu` represent Gurmukhi masculine singular nominatives."
+    "grammarNote": "The omitted condition ‘without You’ continues from the preceding line. The flask and cup become instruments of pain; biṅg kasāīāṁ dā is the butchers’ curved knife, the object of sahiṇā (‘to endure’). The original leaves the sufferer implicit."
   },
   "verse-3": {
     "source": "ਯਾਰੜੇ ਦਾ ਸਾਨੂੰ ਸਥਰੁ ਚੰਗਾ ਭਠ ਖੇੜਿਆਂ ਦਾ ਰਹਿਣਾ ॥",
@@ -516,11 +533,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yāraṛē dā sānū satharu caṅgā bhaṭha khēṛi'āṁ dā rahiṇā ॥",
-    "english": "{2:For us, }{3:the straw pallet }{0,1:of the beloved Friend }{4:is good; }{8:living }{6,7:among the Kheras }{5:is in the furnace.}",
+    "english": "{0,1:The dear Friend’s }{3:straw bed }{4:is good }{2:to us; }{5:to the furnace with }{8:life }{6,7:among the Kheras!}",
     "words": [
       {
         "roman": "Yāraṛē",
-        "gloss": "of the sweet friend; of the beloved companion",
+        "gloss": "dear friend; beloved (affectionate form of yār)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -538,7 +555,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "satharu",
-        "gloss": "straw pallet; rough grass mat",
+        "gloss": "straw bed; pallet laid on the ground",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -550,13 +567,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhaṭha",
-        "gloss": "furnace; burning kiln; cursed",
+        "gloss": "furnace; here an exclamation rejecting something: to the furnace with it",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "khēṛi'āṁ",
-        "gloss": "of the Kheras; of worldly opulent mansions",
+        "gloss": "the Kheras; the clan in the Hīr–Rāñjhā love story",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -574,7 +591,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "`Yāraṛē` is an affectionate diminutive oblique of `yār`. `bhaṭha` ('furnace') is used idiomatically as an exclamatory rejection ('into the kiln with...'). `Khēṛi'āṁ` references the prosperous Khera clan of the Heer-Ranjha narrative, symbolizing worldly comfort devoid of love."
+    "grammarNote": "Yāraṛē is an affectionate form of yār (‘friend, beloved’). Sānū̃ ... caṅgā means ‘is good to us’. The final half rejects life among the Kheras in the idiom bhaṭh ... (‘to the furnace with ...’), preserving the poem’s Hīr–Rāñjhā allusion rather than replacing the named Kheras with generic worldly pleasures."
   }
 };
 
@@ -717,10 +734,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 171.3,
-    "end": 215.0
+    "end": 215
   },
   {
-    "start": 215.0,
+    "start": 215,
     "end": 232.575
   },
   {

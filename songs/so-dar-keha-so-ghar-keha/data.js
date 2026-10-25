@@ -277,11 +277,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jitu bahi sarab samāle ॥",
-    "english": "{0:wherein }{1:seated, }{3:You sustain }{2:all?}",
+    "english": "{0:where, }{1:seated, }{3:You care for }{2:all?}",
     "words": [
       {
         "roman": "jitu",
-        "gloss": "wherein; in which",
+        "gloss": "where; in which",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -299,13 +299,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "samāle",
-        "gloss": "sustains; cherishes; takes care of",
+        "gloss": "care for; sustain",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "jitu is a locative singular relative pronoun. bahi is a conjunctive participle (absolutive). samāle is a 3rd person singular present indicative verb taking sarab as direct object."
+    "grammarNote": "The relative clause describes the place where the divine addressee, seated, cares for all. The English follows the direct address carried into the subsequent tuhno, “to You”."
   },
   "jit-behai-2": {
     "source": "ਜਿਤੁ ਬਹਿ ਸਰਬ ਸਮਾਲੇ ॥",
@@ -337,11 +337,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jitu bahi sarab samāle ॥",
-    "english": "{0:wherein }{1:seated, }{3:You sustain }{2:all?}",
+    "english": "{0:where, }{1:seated, }{3:You care for }{2:all?}",
     "words": [
       {
         "roman": "jitu",
-        "gloss": "wherein; in which",
+        "gloss": "where; in which",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -359,13 +359,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "samāle",
-        "gloss": "sustains; cherishes; takes care of",
+        "gloss": "care for; sustain",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Identical structure to line 4; chorus reiteration."
+    "grammarNote": "The relative clause describes the place where the divine addressee, seated, cares for all. The English follows the direct address carried into the subsequent tuhno, “to You”."
   },
   "vaje-naad-1": {
     "source": "ਵਾਜੇ ਨਾਦ ਅਨੇਕ ਅਸੰਖਾ",
@@ -559,7 +559,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kete rāg parī siu kahīani",
-    "english": "{0:So many }{1:rāgas }{4:are sung }{3:along with }{2:their musical consorts,}",
+    "english": "{0:So many }{1:melodic modes }{4:are named, }{3:along with }{2:their musical consorts,}",
     "words": [
       {
         "roman": "kete",
@@ -569,13 +569,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāg",
-        "gloss": "melodic mode",
+        "gloss": "melodic modes; rāgas",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "parī",
-        "gloss": "musical consorts of rāgas; rāgiṇīs",
+        "gloss": "musical consorts of the rāgas; rāgiṇīs",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -587,13 +587,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kahīani",
-        "gloss": "are sung; are articulated",
+        "gloss": "are named; are spoken of",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "parī (literally 'fairies', here traditional term for rāgiṇīs/consorts of rāgas) is governed by postposition siu. kahīani is a 3rd person plural passive present indicative verb."
+    "grammarNote": "Rāg and parī refer to rāgas and their paired rāgiṇīs, personified as musical consorts. Kahīani means are spoken of or named; the following line names their singers."
   },
   "kete-raag-2": {
     "source": "ਕੇਤੇ ਰਾਗ ਪਰੀ ਸਿਉ ਕਹੀਅਨਿ",
@@ -631,7 +631,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kete rāg parī siu kahīani",
-    "english": "{0:So many }{1:rāgas }{4:are sung }{3:along with }{2:their musical consorts,}",
+    "english": "{0:So many }{1:melodic modes }{4:are named, }{3:along with }{2:their musical consorts,}",
     "words": [
       {
         "roman": "kete",
@@ -641,13 +641,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāg",
-        "gloss": "melodic mode",
+        "gloss": "melodic modes; rāgas",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "parī",
-        "gloss": "musical consorts of rāgas; rāgiṇīs",
+        "gloss": "musical consorts of the rāgas; rāgiṇīs",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -659,13 +659,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kahīani",
-        "gloss": "are sung; are articulated",
+        "gloss": "are named; are spoken of",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Identical structure to line 9."
+    "grammarNote": "Rāg and parī refer to rāgas and their paired rāgiṇīs, personified as musical consorts. Kahīani means are spoken of or named; the following line names their singers."
   },
   "kete-gavan-1": {
     "source": "ਕੇਤੇ ਗਾਵਣਹਾਰੇ ॥",
@@ -1205,7 +1205,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ind",
-        "gloss": "divine kings",
+        "gloss": "the divine kings called Indra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1339,7 +1339,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāvahi sidh samādhī andari gāvani sādh bīcāre ॥",
-    "english": "{1:The adepts }{0:sing }{3:in }{2:samādhi; }{5:holy seekers }{4:sing }{6:in contemplation.}",
+    "english": "{1:The adepts }{0:sing }{3:in }{2:meditative absorption; }{5:holy seekers }{4:sing }{6:in contemplation.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -1357,7 +1357,7 @@ window.SONG_LINES = {
         "roman": "samādhī",
         "gloss": "meditative absorption",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "andari",
@@ -1435,7 +1435,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāvani jatī satī santokhī gāvahi vīr karāre ॥",
-    "english": "{1:The celibates, }{2:the truthful, }{3:and the contented }{0:sing; }{6:resolute }{5:heroes }{4:sing.}",
+    "english": "{1:The celibate, }{2:the charitable }{3:and the contented }{0:sing; }{6:mighty }{5:heroes }{4:sing.}",
     "words": [
       {
         "roman": "gāvani",
@@ -1451,7 +1451,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "satī",
-        "gloss": "the truthful; practitioners of integrity",
+        "gloss": "the charitable; those who give",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1469,19 +1469,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "vīr",
-        "gloss": "valiant warriors; spiritual heroes",
+        "gloss": "heroes; warriors",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karāre",
-        "gloss": "formidable; resolute; mighty",
+        "gloss": "mighty; formidable",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "jatī, satī, santokhī are nominalized adjectives functioning as plural subjects. vīr karāre forms a masculine plural subject phrase."
+    "grammarNote": "Jatī, satī and santokhī name three groups. In this passage satī is glossed as those who give, rather than merely those who speak truth. Vīr karāre names mighty heroes."
   },
   "gaveh-vir-karare-1": {
     "source": "ਗਾਵਹਿ ਵੀਰ ਕਰਾਰੇ ॥",
@@ -1507,7 +1507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāvahi vīr karāre ॥",
-    "english": "{2:Resolute }{1:heroes }{0:sing.}",
+    "english": "{2:Mighty }{1:heroes }{0:sing.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -1517,13 +1517,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vīr",
-        "gloss": "valiant warriors; spiritual heroes",
+        "gloss": "heroes; warriors",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karāre",
-        "gloss": "formidable; resolute; mighty",
+        "gloss": "mighty; formidable",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1555,7 +1555,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāvahi vīr karāre ॥",
-    "english": "{2:Resolute }{1:heroes }{0:sing.}",
+    "english": "{2:Mighty }{1:heroes }{0:sing.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -1565,13 +1565,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vīr",
-        "gloss": "valiant warriors; spiritual heroes",
+        "gloss": "heroes; warriors",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karāre",
-        "gloss": "formidable; resolute; mighty",
+        "gloss": "mighty; formidable",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1633,7 +1633,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāvani paṇḍit paṛani rakhīsar jugu jugu vedā nāle ॥",
-    "english": "{1:The scholars }{3:and great sages }{2:who recite }{0:sing, }{4:age }{5:after age }{7:along with }{6:the Vedas.}",
+    "english": "{1:The scholars }{3:and great sages }{2:who recite }{0:sing, }{7:with }{6:the Vedas, }{4:age }{5:after age.}",
     "words": [
       {
         "roman": "gāvani",
@@ -1685,7 +1685,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "paṛani is a 3rd person plural present participle/verb functioning relative to paṇḍit and rakhīsar. jugu jugu is reduplicated noun used adverbially. vedā is oblique plural with postposition nāle."
+    "grammarNote": "Scholars and great sages are the singers and reciters. Vedā nāle means along with the Vedas; jugu jugu means age after age. The Vedas remain part of the poem’s personified chorus."
   },
   "gaveh-mohnian-man-mohan": {
     "source": "ਗਾਵਹਿ ਮੋਹਣੀਆ ਮਨੁ ਮੋਹਨਿ ਸੁਰਗੁ ਮਛੁ ਪਇਆਲੇ ॥",
@@ -1745,7 +1745,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mohaṇīā",
-        "gloss": "enchanting celestial maidens; enchantresses",
+        "gloss": "enchanting women; beautiful women",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1781,7 +1781,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "mohaṇīā is a feminine plural subject. mohani is a 3rd person plural present verb governing direct object manu. suragu macchu paiāle lists the three cosmic realms in an asyndetic locative series."
+    "grammarNote": "Mohaṇīā names women who captivate the mind. Heaven, earth and the netherworld extend the image across the realms; the source does not restrict these women to a celestial class."
   },
   "gavan-ratan-upaye": {
     "source": "ਗਾਵਨਿ ਰਤਨ ਉਪਾਏ ਤੇਰੇ ਅਠਸਠਿ ਤੀਰਥ ਨਾਲੇ ॥",
@@ -1927,7 +1927,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāvahi jodh mahābal sūrā gāvahi khāṇī cāre ॥",
-    "english": "{2:The mighty }{1:warriors }{3:and brave heroes }{0:sing; }{6:all four }{5:sources of life }{4:sing.}",
+    "english": "{2:The mighty }{1:warriors }{3:and brave heroes }{0:sing; }{6:all four }{5:kinds of living beings }{4:sing.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -1961,7 +1961,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "khāṇī",
-        "gloss": "sources of life; modes of origin",
+        "gloss": "kinds of living beings, traditionally classified by four modes of birth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1973,7 +1973,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "jodh mahābal sūrā forms the first plural subject; khāṇī cāre forms the second plural subject, each taking 3rd person plural verb gāvahi."
+    "grammarNote": "The four khāṇī stand for living beings of the traditional four origins: egg, womb, moisture and sprouting. The beings, rather than abstract sources, join the singing."
   },
   "gaveh-khani-chare": {
     "source": "ਗਾਵਹਿ ਖਾਣੀ ਚਾਰੇ ॥",
@@ -1999,7 +1999,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāvahi khāṇī cāre ॥",
-    "english": "{2:All four }{1:sources of life }{0:sing.}",
+    "english": "{2:All four }{1:kinds of living beings }{0:sing.}",
     "words": [
       {
         "roman": "gāvahi",
@@ -2009,7 +2009,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "khāṇī",
-        "gloss": "sources of life; modes of origin",
+        "gloss": "kinds of living beings, traditionally classified by four modes of birth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2021,7 +2021,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "gāvahi is 3rd person plural present agreeing with khāṇī cāre."
+    "grammarNote": "The four khāṇī stand for living beings of the traditional four origins: egg, womb, moisture and sprouting. The beings, rather than abstract sources, join the singing."
   },
   "gaveh-khand-mandal": {
     "source": "ਗਾਵਹਿ ਖੰਡ ਮੰਡਲ ਵਰਭੰਡਾ ਕਰਿ ਕਰਿ ਰਖੇ ਧਾਰੇ ॥",
@@ -2093,13 +2093,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṇḍal",
-        "gloss": "solar systems; planetary spheres",
+        "gloss": "cosmic spheres; world-systems",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "varabhaṇḍā",
-        "gloss": "universes; galaxies",
+        "gloss": "universes; the created cosmos",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2743,7 +2743,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "raṅgī raṅgī bhātī kari kari jinasī māiā jini upāī ॥",
-    "english": "{0,1:In manifold colors }{2:and varieties, }{3,4:having made }{5:diverse species, }{7:He }{8:brought forth }{6:māyā.}",
+    "english": "{7:He }{8:brought forth }{6:the world of appearances, }{3,4:making it }{0,1:in many colors, }{2:forms }{5:and kinds.}",
     "words": [
       {
         "roman": "raṅgī",
@@ -2777,15 +2777,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "jinasī",
-        "gloss": "of species; of types",
+        "gloss": "of various kinds; of diverse species",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "māiā",
-        "gloss": "power of worldly appearance",
+        "gloss": "the world of appearances; māyā in this account of creation",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jini",
@@ -2801,7 +2801,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "raṅgī raṅgī and bhātī are instrumental/locative plurals used adverbially. jinasī is an oblique plural from Persian/Arabic jins (species). māiā is preserved in English (concept_key: maya). jini upāī is a relative clause."
+    "grammarNote": "The colors, forms and kinds describe the created māyā. Here the English renders that contextual sense as the world of appearances; it does not declare creation nonexistent or make this a universal definition of māyā."
   },
   "kar-kar-vekhai-keeta": {
     "source": "ਕਰਿ ਕਰਿ ਵੇਖੈ ਕੀਤਾ ਆਪਣਾ ਜਿਵ ਤਿਸ ਦੀ ਵਡਿਆਈ ॥",
@@ -2863,7 +2863,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kari kari vekhai kītā āpaṇā jiv tis dī vaḍiāī ॥",
-    "english": "{0,1:Having made }{4:His own }{3:creation }{2:He beholds it, }{5:as is }{6,7:His }{8:greatness.}",
+    "english": "{0,1:Having created, }{2:He watches over }{4:His own }{3:creation, }{5:in keeping with }{6,7:His }{8:greatness.}",
     "words": [
       {
         "roman": "kari",
@@ -2879,7 +2879,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vekhai",
-        "gloss": "beholds; watches over",
+        "gloss": "watches over; cares for",
         "concept_key": "",
         "preserve_in_english": false
       },

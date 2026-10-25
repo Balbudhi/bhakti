@@ -970,15 +970,23 @@ window.BHAKTI_SONGS = [
   {
     "slug": "jin-prem-kiyo",
     "queueId": "96561dc4",
-    "title": "Jin Prem Kiyo",
+    "title": "Jin Prem Kīo",
     "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
     "searchAliases": [
       "Jin Prem Kiyo Tin Hi Prabh Payo",
-      "Sach Kahu Sun Leho Sabhe"
+      "Sach Kahu Sun Leho Sabhe",
+      "Jin Prem Kiyo",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Dasam Granth"
     ],
     "writer": "Guru Gobind Singh",
     "singer": "Bhai Harjinder Singh",
@@ -1037,16 +1045,24 @@ window.BHAKTI_SONGS = [
   {
     "slug": "mittar-pyare-nu",
     "queueId": "01cbef0a",
-    "title": "Mittar Pyare Nu",
+    "title": "Mittar Piāre Nū̃",
     "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
     ],
-    "subjectTags": [],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
     "searchAliases": [
       "Mitar Pyare Nu",
       "Haal Mureedan Da",
-      "Mittar Pyare Nu Haal Mureedan Da Kehna"
+      "Mittar Pyare Nu Haal Mureedan Da Kehna",
+      "Mittar Pyare Nu",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Dasam Granth"
     ],
     "writer": "Guru Gobind Singh",
     "singer": "Bhai Harjinder Singh",
@@ -5019,20 +5035,27 @@ window.BHAKTI_SONGS = [
   {
     "slug": "benti-chaupai",
     "queueId": "ab86db97",
-    "title": "Benti Chaupai",
+    "title": "Bentī Caupaī",
     "credit": "Guru Gobind Singh · Rajinder Singh",
     "languageTags": [
       "Punjabi"
     ],
     "subjectTags": [
       "Guru",
-      "Nirguṇa"
+      "Nirguṇa",
+      "Gurbāṇī"
     ],
     "searchAliases": [
       "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
       "Bentee Chaupai",
       "Chaupai Sahib",
-      "Benti Chaupai Sahib"
+      "Benti Chaupai Sahib",
+      "Benti Chaupai",
+      "Gurbani",
+      "Sikh",
+      "Sikhi",
+      "Sikhī",
+      "Dasam Granth"
     ],
     "writer": "Guru Gobind Singh",
     "singer": "Rajinder Singh",

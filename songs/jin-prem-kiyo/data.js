@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Jin Prem Kiyo",
+  "title": "Jin Prem Kīo",
   "subtitle": "",
   "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
@@ -14,10 +14,18 @@ window.SONG_META = {
   "languages": [
     "Punjabi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
   "searchAliases": [
     "Jin Prem Kiyo Tin Hi Prabh Payo",
-    "Sach Kahu Sun Leho Sabhe"
+    "Sach Kahu Sun Leho Sabhe",
+    "Jin Prem Kiyo",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Dasam Granth"
   ],
   "audioSources": [
     {
@@ -31,7 +39,16 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Jin Prem Kīo",
+      "poet": "Guru Gobind Singh",
+      "note": "Dasam Granth · Akāl Ustat · Tav-Prasād Savaiye · Stanza 9 (29)."
+    }
+  ],
+  "dataAssetVersion": "gurbani-editorial-20261025"
 };
 
 window.SONG_LINES = {
@@ -227,7 +244,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jin prēm kīō tin hī prabh pāiō ॥",
-    "english": "{0:Those who }{2:practiced }{1:love, }{3:they }{4:alone }{6:attained }{5:the Sovereign Master.}",
+    "english": "{0:Those who }{1,2:loved—}{3:they }{4:alone }{6:attained }{5:the Lord.}",
     "words": [
       {
         "roman": "jin",
@@ -237,13 +254,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "prēm",
-        "gloss": "divine love; heartfelt devotion",
+        "gloss": "love",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kīō",
-        "gloss": "practiced; performed",
+        "gloss": "did; made (with prēm: loved)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -261,7 +278,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prabh",
-        "gloss": "the Sovereign Master; the Divine Sovereign",
+        "gloss": "Lord; master",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -389,7 +406,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahā bhayō jō dōū lōcan mūnd kai baiṭh rahiō bak dhiān lagāiō ॥",
-    "english": "{0,1:What was gained }{2:if, }{5,6:closing }{3:both }{4:eyes, }{7,8:one remained seated }{11:and assumed }{9,10:crane-meditation?}",
+    "english": "{0,1:What was gained }{2:if, }{5,6:closing }{3:both }{4:eyes, }{7,8:one sat }{10,11:in meditation }{9:like a heron?}",
     "words": [
       {
         "roman": "kahā",
@@ -447,7 +464,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bak",
-        "gloss": "crane; heron",
+        "gloss": "heron; the motionless bird used here as an image of outward meditation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -503,7 +520,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "baiṭh rahiō bak dhiān lagāiō ॥",
-    "english": "{0,1:One remained seated }{4:and assumed }{2,3:crane-meditation.}",
+    "english": "{0,1:One sat }{3,4:in meditation }{2:like a heron.}",
     "words": [
       {
         "roman": "baiṭh",
@@ -519,7 +536,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bak",
-        "gloss": "crane; heron",
+        "gloss": "heron; the motionless bird used here as an image of outward meditation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -797,7 +814,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bāsu kīō bikhiān sō baiṭh kai aisē hī aisē su bais bitāiō ॥",
-    "english": "{1:One made }{0:an abode }{4,5:sitting }{2,3:with sensual poisons, }{6,7,8:and just like this, }{11:squandered }{9,10:life's span.}",
+    "english": "{0,1:One made a home }{4,5:and sat }{2,3:amid sensual indulgences, }{6,7,8:and just like this }{11:spent }{9,10:one’s life.}",
     "words": [
       {
         "roman": "bāsu",
@@ -813,7 +830,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bikhiān",
-        "gloss": "poisons of sensual desire; worldly vices",
+        "gloss": "sensual indulgences; objects of worldly desire",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -867,13 +884,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bitāiō",
-        "gloss": "spent; squandered; passed",
+        "gloss": "spent; passed (one’s life)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "bāsu kīō is a conjunct verb phrase governing postpositional phrase bikhiān sō (bikhiān < Skt. viṣaya). baiṭh kai is a conjunctive participle. aisē hī aisē shows emphatic reduplication with particle hī. su is an emphatic/demonstrative particle. bais (< Skt. vayas) is the direct object governed by transitive perfective bitāiō."
+    "grammarNote": "Bās kīō means “made a dwelling”; baiṭh kai, “having sat”. Aise hī aise repeats “just like this”; bais bitāiō means “spent one’s life”. The following line contrasts these pursuits with love."
   },
   "aaise-hee": {
     "source": "ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
@@ -917,7 +934,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisē hī aisē su bais bitāiō ॥",
-    "english": "{0,1:Just like this, }{2:just like this, }{5:one squandered }{3,4:life's span.}",
+    "english": "{0,1:Just like this, }{2:just like this, }{5:one spent }{3,4:one’s life.}",
     "words": [
       {
         "roman": "aisē",
@@ -951,7 +968,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bitāiō",
-        "gloss": "spent; squandered; passed",
+        "gloss": "spent; passed (one’s life)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1245,10 +1262,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 368.95,
-    "end": 411.0
+    "end": 411
   },
   {
-    "start": 411.0,
+    "start": 411,
     "end": 441.45
   },
   {

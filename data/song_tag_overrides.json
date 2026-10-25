@@ -690,7 +690,8 @@
     "benti-chaupai": {
       "addTags": [
         "Guru",
-        "Nirguṇa"
+        "Nirguṇa",
+        "Gurbāṇī"
       ],
       "evidence": [
         {
@@ -705,7 +706,13 @@
           "tag": "Nirguṇa",
           "lineId": "line-57",
           "source": "ਨਿਰੰਕਾਰ ਨ੍ਰਿਬਿਕਾਰ ਨਿਰਲੰਭ ॥",
-          "reason": "Explicit formless, changeless, unsupported-by-another Divine, reinforced by the following nirankār contrast. Do not label this Dasam composition as SGGS/Gurbāṇī merely by singer or script."
+          "reason": "Explicit formless, changeless, unsupported-by-another Divine, reinforced by the following nirankār contrast. The separate Gurbāṇī facet groups this verified Dasam composition with Sikh sacred songs; it does not assert Guru Granth Sahib provenance."
+        },
+        {
+          "tag": "Gurbāṇī",
+          "lineId": "patshahi-10-intro",
+          "source": "ਪਾਤਿਸਾਹੀ ੧੦ ॥ ਕਬ੍ਯੋ ਬਾਚ ਬੇਨਤੀ ॥ ਚੌਪਈ ॥",
+          "reason": "Owner-requested Sikh sacred-song grouping, including Guru Gobind Singh compositions outside the Guru Granth Sahib. Verified source: Dasam Granth · Caritropākhyān 404 · Bentī Caupaī, stanzas 377–401."
         }
       ]
     },
@@ -1373,6 +1380,32 @@
           "lineId": "kahat-namdeu-har-ki-rachna",
           "source": "ਕਹਤ ਨਾਮਦੇਉ ਹਰਿ ਕੀ ਰਚਨਾ",
           "reason": "Explicit Hari name in Hari’s creation; existing owner policy indexes devotional Hari under Viṣṇu. This is a sung divine reference, not author or album metadata."
+        }
+      ]
+    },
+    "jin-prem-kiyo": {
+      "addTags": [
+        "Gurbāṇī"
+      ],
+      "evidence": [
+        {
+          "tag": "Gurbāṇī",
+          "lineId": "saach-kaho-intro",
+          "source": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ",
+          "reason": "Owner-requested Sikh sacred-song grouping, including Guru Gobind Singh compositions outside the Guru Granth Sahib. Verified source: Dasam Granth · Akāl Ustat · Tav-Prasād Savaiye · Stanza 9 (29)."
+        }
+      ]
+    },
+    "mittar-pyare-nu": {
+      "addTags": [
+        "Gurbāṇī"
+      ],
+      "evidence": [
+        {
+          "tag": "Gurbāṇī",
+          "lineId": "refrain-main",
+          "source": "ਮਿਤ੍ਰ ਪਿਆਰੇ ਨੂੰ ਹਾਲੁ ਮੁਰੀਦਾਂ ਦਾ ਕਹਿਣਾ ॥",
+          "reason": "Owner-requested Sikh sacred-song grouping, including Guru Gobind Singh compositions outside the Guru Granth Sahib. Verified source: Dasam Granth · Khayāl Pātisāhī 10 · Śabad 6."
         }
       ]
     }

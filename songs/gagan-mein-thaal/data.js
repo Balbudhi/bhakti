@@ -391,7 +391,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gura sākhī joti paragaṭu hoi ॥ jo tisu bhāvai su āratī hoi ॥",
-    "english": "{0:Through the spiritual teacher's }{1:instruction }{2:the divine light }{4:becomes }{3:manifest; }{5:whatever }{7:is pleasing }{6:to Him, }{8:that }{10:is }{9:the worship.}",
+    "english": "{0:Through the spiritual teacher’s }{1:instruction, }{2:the divine light }{4:becomes }{3:manifest; }{5:whatever }{7:pleases }{6:Him, }{8:that }{10:is }{9:worship.}",
     "words": [
       {
         "roman": "gura",
@@ -461,7 +461,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Gura sākhī functions as an instrumental/causal phrase ('by means of the Guru's testimony'). Jo ... su forms a classic relative-correlative construction matching the condition of divine pleasure with true worship."
+    "grammarNote": "Gura sākhī means through the Guru’s instruction. Jo … su links what pleases Him with worship; āratī refers to the offering of lights evoked by the sky, lamps and incense in the opening."
   },
   "har-charan-kamal": {
     "source": "ਹਰਿ ਚਰਣ ਕਮਲ ਮਕਰੰਦ ਲੋਭਿਤ ਮਨੋ ਅਨਦਿਨੋੁ ਮੋਹਿ ਆਹੀ ਪਿਆਸਾ ॥",
@@ -529,11 +529,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hari caraṇa kamala makaranda lobhita mano anadino mohi āhī piāsā ॥",
-    "english": "{5:The mind }{4:longs for }{3:the nectar of }{0:the Lord's }{2:lotus }{1:feet; }{6:day and night, }{9:thirst }{8:persists }{7:in me.}",
+    "english": "{5:My mind }{4:longs for }{3:the nectar of }{0:Hari’s }{2:lotus }{1:feet; }{6:every day, }{7:I }{8,9:thirst for it.}",
     "words": [
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -563,25 +563,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "mano",
-        "gloss": "mind",
+        "gloss": "my mind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "anadino",
-        "gloss": "day and night",
+        "gloss": "every day; continually",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mohi",
-        "gloss": "in me",
+        "gloss": "to me; I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "āhī",
-        "gloss": "persists",
+        "gloss": "is; remains",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -593,7 +593,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Hari-caraṇa-kamala-makaranda is an extended tatpuruṣa compound ('nectar of the lotus feet of Hari'). Lobhita is a past participle used adjectivally with mano. Anadinō is an adverbial temporal compound (Sanskrit anudinam)."
+    "grammarNote": "The mind longs for the nectar of Hari’s lotus feet. Mohi āhī piāsā expresses the speaker’s thirst; anadino means every day or continually. The thirst refers back to that nectar."
   },
   "andino-mohe": {
     "source": "ਅਨਦਿਨੋੁ ਮੋਹਿ ਆਹੀ ਪਿਆਸਾ ॥",
@@ -625,23 +625,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anadino mohi āhī piāsā ॥",
-    "english": "{0:Day and night, }{3:thirst }{2:persists }{1:in me.}",
+    "english": "{0:Every day, }{1:I }{2,3:thirst for it.}",
     "words": [
       {
         "roman": "anadino",
-        "gloss": "day and night",
+        "gloss": "every day; continually",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mohi",
-        "gloss": "in me",
+        "gloss": "to me; I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "āhī",
-        "gloss": "persists",
+        "gloss": "is; remains",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -653,7 +653,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Mohi is the oblique first-person singular pronoun with locative/dative force ('to me' / 'in me'). Āhī is the feminine third-person singular present auxiliary agreeing with pi'āsā."
+    "grammarNote": "This repeats the preceding thirst for the nectar of Hari’s lotus feet. Mohi marks the person who feels the thirst; āhī supplies the continuing state."
   },
   "kirpa-jal-dehi": {
     "source": "ਕ੍ਰਿਪਾ ਜਲੁ ਦੇਹਿ ਨਾਨਕ ਸਾਰਿੰਗ ਕਉ",
@@ -781,11 +781,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hoi jā te terai nāmi vāsā ॥",
-    "english": "{1,2:whereby }{5:dwelling }{4:in }{3:Your }{4:Name }{0:comes to be.}",
+    "english": "{1,2:so that }{0,5:I may dwell }{4:in }{3:Your }{4:Name.}",
     "words": [
       {
         "roman": "hoi",
-        "gloss": "comes to be",
+        "gloss": "may be; may come to be",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -821,7 +821,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Jā te is an ablative/instrumental relative phrase ('from which / whereby'). Nāmi has a locative i-ending ('in the divine name') governed by the possessive pronominal adjective terai. Vāsā hoi functions as a light-verb predicate meaning 'dwelling occurs'."
+    "grammarNote": "The request continues from “Give the water of grace to Nānak”: jā te introduces its intended result, dwelling in Your Name. The English supplies the speaker as the subject of that dwelling."
   },
   "terai-naam-vaasa": {
     "source": "ਤੇਰੈ ਨਾਮਿ ਵਾਸਾ",

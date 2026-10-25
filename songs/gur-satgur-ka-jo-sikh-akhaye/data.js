@@ -179,17 +179,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "su bhalake uṭhi hari nāmu dhiāvai",
-    "english": "{0:that one, }{2:rising }{1:early in the morning, }{5:meditates on }{4:the Name }{3:of the Lord.}",
+    "english": "{0:that person }{2:rises }{1:each morning }{5:and meditates on }{3:Hari’s }{4:Name.}",
     "words": [
       {
         "roman": "su",
-        "gloss": "that one; he",
+        "gloss": "that person",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhalake",
-        "gloss": "early in the morning; at daybreak",
+        "gloss": "each morning",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -201,7 +201,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -251,11 +251,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udamu kare bhalake parabhātī",
-    "english": "{1:Makes }{0:effort }{2:early in the morning, }{3:at daybreak,}",
+    "english": "{1:They make }{0:the effort }{2:each morning }{3:at daybreak:}",
     "words": [
       {
         "roman": "udamu",
-        "gloss": "effort; exertion; sacred endeavor",
+        "gloss": "effort; exertion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -267,7 +267,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhalake",
-        "gloss": "early in the morning; at dawn",
+        "gloss": "each morning",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -279,7 +279,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "bhalakē parabhātī uses paired temporal adverbial locatives for emphasis on early dawn; udamu is the direct object of karē."
+    "grammarNote": "The disciple remains the subject. Udamu kare means makes an effort; bhalake parabhātī places it each morning at daybreak."
   },
   "verse-1b": {
     "source": "ਇਸਨਾਨੁ ਕਰੇ ਅੰਮ੍ਰਿਤ ਸਰਿ ਨਾਵੈ",
@@ -317,11 +317,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "isnānu kare amrit sari nāvai",
-    "english": "{1:takes }{0:a cleansing bath }{4:and bathes }{3:in the pool }{2:of nectar.}",
+    "english": "{1:they take }{0:a bath }{4:and bathe }{3:in the pool }{2:of nectar.}",
     "words": [
       {
         "roman": "isnānu",
-        "gloss": "cleansing bath; ablution",
+        "gloss": "a bath; ablution",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -339,7 +339,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sari",
-        "gloss": "in the pool; in the sacred tank",
+        "gloss": "in the pool",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -351,7 +351,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "amrit sari is a genitive/appositional locative phrase (sari = in the tank/pool); isnānu karē and nāvai are paratactically coordinated predicates."
+    "grammarNote": "The two bathing expressions are retained. Amrit sari literally names the pool of nectar; Sahib Singh reads the second bathing as immersion in the nectar of the divine Name, not a geographical identification."
   },
   "verse-1c": {
     "source": "ਉਪਦੇਸਿ ਗੁਰੂ ਹਰਿ ਹਰਿ ਜਪੁ ਜਾਪੈ",
@@ -395,7 +395,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upadesi gurū hari hari japu jāpai",
-    "english": "{0:Through the instruction }{1:of the Guru, }{5:chants }{4:the recitation: }{2:“Lord, }{3:Lord,”}",
+    "english": "{0:Following the instruction }{1:of the Guru, }{5:they chant }{4:the recitation }{2:“Hari, }{3:Hari”;}",
     "words": [
       {
         "roman": "upadesi",
@@ -411,13 +411,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -479,7 +479,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sabhi kilavikh pāp dokh lahi jāvai",
-    "english": "{0:all }{1:sins, }{2:misdeeds, }{3:and faults }{4,5:are washed away.}",
+    "english": "{0:all }{1:sins, }{2:misdeeds }{3:and faults }{4,5:fall away.}",
     "words": [
       {
         "roman": "sabhi",
@@ -519,7 +519,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "kilavikh pāp dōkh is a syndetic plural subject; lahi jāvai is a compound verb (stem lahi + auxiliary jāvai) indicating complete departure/removal."
+    "grammarNote": "The three nouns name what falls away. Lahi jāvai expresses removal or departure; it does not itself add a further act of washing."
   },
   "verse-2a": {
     "source": "ਫਿਰਿ ਚੜੈ ਦਿਵਸੁ ਗੁਰਬਾਣੀ ਗਾਵੈ",
@@ -557,7 +557,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "phiri caṛai divasu gurbāṇī gāvai",
-    "english": "{0:Then, }{2:as the day }{1:rises, }{4:sings }{3:the Guru's word,}",
+    "english": "{0:Then, }{2:as the day }{1:dawns, }{4:they sing }{3:the Guru’s word;}",
     "words": [
       {
         "roman": "phiri",
@@ -567,7 +567,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "caṛai",
-        "gloss": "rises; ascends",
+        "gloss": "dawns; rises",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -629,7 +629,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bahadiā uṭhadiā hari nāmu dhiāvai",
-    "english": "{0:sitting }{1:and standing, }{4:meditates on }{3:the Name }{2:of the Lord.}",
+    "english": "{0:sitting }{1:and rising, }{4:they meditate on }{2:Hari’s }{3:Name.}",
     "words": [
       {
         "roman": "bahadiā",
@@ -639,13 +639,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "uṭhadiā",
-        "gloss": "while standing; while rising",
+        "gloss": "while rising",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -713,7 +713,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo sāsi girāsi dhiāe merā hari hari",
-    "english": "{0:One who, }{1:with each breath }{2:and morsel, }{3:meditates on }{4:my }{5:Lord, }{6:Lord,}",
+    "english": "{0:One who, }{1:with each breath }{2:and morsel, }{3:meditates on }{4:my }{5:Hari, }{6:Hari,}",
     "words": [
       {
         "roman": "jo",
@@ -747,13 +747,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "the Lord; Hari, a name of Viṣṇu/Kṛṣṇa, used here for God",
+        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -875,7 +875,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jis no daiālu hovai merā suāmī",
-    "english": "{1:Unto }{0:whom }{4:my }{5:Master }{3:becomes }{2:merciful,}",
+    "english": "{1:To }{0:whomever }{4:my }{5:Master }{3:is }{2:merciful,}",
     "words": [
       {
         "roman": "jis",
@@ -915,7 +915,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "jis nō is a dative-accusative relative pronoun phrase; daiālu is a predicate adjective agreeing with masculine singular subject mērā suāmī."
+    "grammarNote": "Jis no introduces the person toward whom the Master is merciful; tisu in the following line resumes that person. The English carries that relation across the two lines."
   },
   "verse-3b": {
     "source": "ਤਿਸੁ ਗੁਰਸਿਖ ਗੁਰੂ ਉਪਦੇਸੁ ਸੁਣਾਵੈ",
@@ -953,7 +953,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tisu gurasikh gurū upadesu suṇāvai",
-    "english": "{0:to that }{1:disciple of the Guru, }{2:the Guru }{4:imparts }{3:the instruction.}",
+    "english": "{2:the Guru }{4:imparts }{3:instruction }{0:to that }{1:disciple.}",
     "words": [
       {
         "roman": "tisu",
@@ -1127,7 +1127,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo āpi japai avaraha nāmu japāvai",
-    "english": "{0:who }{1:personally }{2:chants }{5:and inspires }{3:others }{5:to chant }{4:the Name.}",
+    "english": "{0:who }{1:themselves }{2:chant }{4:the Name }{5:and lead }{3:others }{5:to chant it.}",
     "words": [
       {
         "roman": "jo",
@@ -1137,7 +1137,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āpi",
-        "gloss": "oneself; personally",
+        "gloss": "themselves; personally",
         "concept_key": "",
         "preserve_in_english": false
       },

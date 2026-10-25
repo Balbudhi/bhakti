@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Benti Chaupai",
+  "title": "Bentī Caupaī",
   "subtitle": "",
   "credit": "Guru Gobind Singh · Rajinder Singh",
   "pageCredit": "Rajinder Singh",
@@ -13,13 +13,20 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Guru",
-    "Nirguṇa"
+    "Nirguṇa",
+    "Gurbāṇī"
   ],
   "searchAliases": [
     "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
     "Bentee Chaupai",
     "Chaupai Sahib",
-    "Benti Chaupai Sahib"
+    "Benti Chaupai Sahib",
+    "Benti Chaupai",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Sikhī",
+    "Dasam Granth"
   ],
   "audioSources": [
     {
@@ -33,7 +40,16 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Bentī Caupaī",
+      "poet": "Guru Gobind Singh",
+      "note": "Dasam Granth · Caritropākhyān 404 · Bentī Caupaī, stanzas 377–401."
+    }
+  ],
+  "dataAssetVersion": "gurbani-editorial-20261025"
 };
 
 window.SONG_LINES = {
@@ -79,17 +95,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pātisāhī 10 || Kabyō Bāc Bēnatī || Caupaī ||",
-    "english": "{0:Tenth Sovereign, }{1:10. }{3:Utterance }{2:of the Poet: }{4:Supplication. }{5:Chaupai.}",
+    "english": "{0,1:The Tenth Guru. }{2,3:The poet’s words: }{4:a supplication. }{5:Quatrains.}",
     "words": [
       {
         "roman": "Pātisāhī",
-        "gloss": "Tenth Sovereign",
+        "gloss": "sovereignty; here the rubric identifying the Guru",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "10",
-        "gloss": "10",
+        "gloss": "tenth; identifies Guru Gobind Singh",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -113,7 +129,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Caupaī",
-        "gloss": "chaupai meter",
+        "gloss": "quatrain meter; the caupaī verse form",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -156,7 +172,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hamrī karō hāth dai racchā.",
-    "english": "{3:Giving }Your {2:hand, }{1:grant }{0:my }{4:protection,}",
+    "english": "{2,3:Extend Your hand }{0,1,4:and protect me,}",
     "words": [
       {
         "roman": "Hamrī",
@@ -178,7 +194,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dai",
-        "gloss": "giving",
+        "gloss": "giving; extending",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -363,7 +379,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Apnā jān karō pratipārā.",
-    "english": "{1:knowing me as }{0:Your own, }{3:cherish }{2:me.}",
+    "english": "{1:Knowing me as }{0:Your own, }{2,3:care for me.}",
     "words": [
       {
         "roman": "Apnā",
@@ -385,7 +401,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pratipārā.",
-        "gloss": "fostering",
+        "gloss": "care; nurture; protection",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -499,7 +515,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āp hāth dai mōhi bacāvahu.",
-    "english": "{2:giving }{0:Your own }{1:hand, }{4:rescue }{3:me.}",
+    "english": "{2:extend }{0:Your own }{1:hand }{4:and rescue }{3:me.}",
     "words": [
       {
         "roman": "Āp",
@@ -515,7 +531,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dai",
-        "gloss": "giving",
+        "gloss": "giving; extending",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -694,7 +710,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mō racchā nij kar dai kariyai.",
-    "english": "{4:Giving }{2:Your own }{3:hand, }{5:please grant }{0:my }{1:protection,}",
+    "english": "{4:Extend }{2:Your own }{3:hand }{0,1,5:and protect me;}",
     "words": [
       {
         "roman": "Mō",
@@ -722,7 +738,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dai",
-        "gloss": "giving",
+        "gloss": "giving; extending",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -901,7 +917,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tōri bhajan kī rahai piyāsā.",
-    "english": "{3:may }{4:thirst }{0:for Your }{1,2:worship }{3:remain.}",
+    "english": "{3:may }{4:my thirst }{1,2:to worship }{0:You }{3:remain.}",
     "words": [
       {
         "roman": "Tōri",
@@ -978,7 +994,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tumahi chāḍ kōī avar na dhyāū̃.",
-    "english": "{1:Leaving }{0:You, }{5:may I meditate }{4:on no }{2,3:other;}",
+    "english": "{0,1:Apart from You, }{5:may I contemplate }{4:no }{2,3:other;}",
     "words": [
       {
         "roman": "Tumahi",
@@ -1280,7 +1296,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āp hāth dai mujhai ubariyai.",
-    "english": "{2:Giving }{0:Your own }{1:hand, }{4:please deliver }{3:me,}",
+    "english": "{2:Extend }{0:Your own }{1:hand }{4:and deliver }{3:me;}",
     "words": [
       {
         "roman": "Āp",
@@ -1296,7 +1312,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dai",
-        "gloss": "giving",
+        "gloss": "giving; extending",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1889,7 +1905,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāl pāi sivjū avatarā.",
-    "english": "{0,1:Under the sway of Time, }{2:revered Shiva }{3:incarnated.}",
+    "english": "{0,1:Under the sway of Time, }{2:revered Śiva }{3:incarnated.}",
     "words": [
       {
         "roman": "Kāl",
@@ -1905,7 +1921,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sivjū",
-        "gloss": "revered Shiva",
+        "gloss": "revered Śiva; the deity also called Mahādeva; jū is an honorific",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1976,13 +1992,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bisan",
-        "gloss": "Viṣṇu",
+        "gloss": "Viṣṇu; the preserver deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prakāsā.",
-        "gloss": "manifestation; illumination; revelation",
+        "gloss": "shone forth; was manifested",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2096,7 +2112,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Javan kāl jōgī siv kīyō.",
-    "english": "{0,1:The Time that }{4:made }{3:Shiva }{2:a yogi,}",
+    "english": "{0,1:That Time which }{4:made }{3:Śiva }{2:an ascetic,}",
     "words": [
       {
         "roman": "Javan",
@@ -2112,13 +2128,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "jōgī",
-        "gloss": "a yogi; an ascetic",
+        "gloss": "ascetic; practitioner of yoga",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "siv",
-        "gloss": "the auspicious one; deity of transformation",
+        "gloss": "the ascetic deity also called Mahādeva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2238,7 +2254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Javan kāl sabh lōk savārā.",
-    "english": "{0,1:the Time that }{4:fashioned }{2:all }{3:the worlds—}",
+    "english": "{0,1:that Time which }{4:fashioned }{2:all }{3:the worlds—}",
     "words": [
       {
         "roman": "Javan",
@@ -2303,7 +2319,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Namaskār hai tāhi hamārā.",
-    "english": "{2:unto That One }{1:is }{3:my }{0:obeisance.}",
+    "english": "{3:my }{0,1:salutation is }{2:to That One.}",
     "words": [
       {
         "roman": "Namaskār",
@@ -2368,7 +2384,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Javan kāl sabh jagat banāyō.",
-    "english": "{0,1:The Time that }{4:created }{2:the entire }{3:universe,}",
+    "english": "{0,1:That Time which }{4:created }{2:the entire }{3:universe,}",
     "words": [
       {
         "roman": "Javan",
@@ -2433,7 +2449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dēv dait jicchan upjāyō.",
-    "english": "{3:and brought forth }{0:gods, }{1:demons, }{2:and yakṣas,}",
+    "english": "{3:and brought forth }{0:gods, }{1:demons, }{2:and nature spirits,}",
     "words": [
       {
         "roman": "Dēv",
@@ -2449,7 +2465,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jicchan",
-        "gloss": "yakṣas; nature spirits; demigods",
+        "gloss": "nature spirits (yakṣas)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2551,7 +2567,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sōī gurū samjhiyahu hamārā.",
-    "english": "{2:know }{0:That very One }{3:to be our }{1:Guru.}",
+    "english": "{2:know }{0:That very One }{3:as my }{1:spiritual teacher.}",
     "words": [
       {
         "roman": "Sōī",
@@ -2573,7 +2589,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hamārā.",
-        "gloss": "our; my",
+        "gloss": "my; our",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2774,7 +2790,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sivgun",
-        "gloss": "auspicious virtues; divine blessings; Shiva-like qualities",
+        "gloss": "auspicious virtues; beneficent qualities",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3800,7 +3816,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jētē badan srishṭ sabh dhārai.",
-    "english": "{0:As many }{1:bodies }{3:as all }{2:the creation }{4:bears,}",
+    "english": "{0:All the }{1:forms }{2,3:creation }{4:bears—}",
     "words": [
       {
         "roman": "Jētē",
@@ -4113,7 +4129,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ād anīl anād asambh.",
-    "english": "{0:primal, }{1:spotless, }{2:beginningless, }{3:self-existent—}",
+    "english": "{0:primal, }{1:spotless, }{2:beginningless, }{3:unborn—}",
     "words": [
       {
         "roman": "Ād",
@@ -4135,12 +4151,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "asambh.",
-        "gloss": "self-existent; unproduced",
+        "gloss": "unborn; not brought into existence",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Verbless series of four classical epithets: Ād (ādi), anīl (an-nīla, without stain/color), anād (anādi), asambh (asambhava / svayambhū)."
+    "grammarNote": "A series of divine epithets: ād (primal), anīl (unstained), anād (without beginning), asambh (unborn, not produced)."
   },
   "line-59": {
     "source": "ਤਾ ਕਾ ਮੂੜ੍ਹ ਉਚਾਰਤ ਭੇਦਾ ॥",
@@ -4255,7 +4271,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jā kō bhēv na pāvat bēdā.",
-    "english": "{0,1:Whose }{2:secret mystery }{5:the Vedas }{3:do not }{4:find.}",
+    "english": "{0,1:Whose }{2:mystery }{5:the Vedas }{3:do not }{4:comprehend.}",
     "words": [
       {
         "roman": "Jā",
@@ -4332,7 +4348,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tā kau kar pāhan anumānat.",
-    "english": "{0,1:Him }{4:they reckon, }{2:deeming Him }{3:stone,}",
+    "english": "{4:They imagine }{0,1:Him }{2:to be }{3:stone,}",
     "words": [
       {
         "roman": "Tā",
@@ -4409,7 +4425,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mahā mūṛh kach bhēd na jānat.",
-    "english": "{0,1:The consummate fool }{5:knows }{4:no }{3:distinction }{2:at all.}",
+    "english": "{0,1:utter fools }{4,5:who do not understand }{2:any of }{3:His mystery.}",
     "words": [
       {
         "roman": "Mahā",
@@ -4431,7 +4447,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhēd",
-        "gloss": "secret; distinction; difference",
+        "gloss": "mystery; inner nature (continuing bhēdā/bhēv in the preceding lines)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4486,11 +4502,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mahādēv kau kahat sadā siv.",
-    "english": "{2:They call }{0,1:Mahadeva }{3:the eternal }{4:Shiva,}",
+    "english": "{2:They call }{0,1:Mahādeva }{3,4:Sadāśiva,}",
     "words": [
       {
         "roman": "Mahādēv",
-        "gloss": "mahā, “great” + deva, “god”; epithet of Śiva",
+        "gloss": "Great God; a name of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4508,13 +4524,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "sadā",
-        "gloss": "eternally; always",
+        "gloss": "ever; eternally (with siv: Sadāśiva)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "siv.",
-        "gloss": "the Eternal Auspicious Lord / Sada-Shiva",
+        "gloss": "auspicious; Śiva (with sadā: Sadāśiva, the ever-auspicious Śiva)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -4557,7 +4573,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nirankār kā cīnat nahi bhiv.",
-    "english": "{3:And do not }{2:recognize }{4:the mystery }{0,1:of the Formless One.}",
+    "english": "{3:and do not }{2:recognize }{4:the mystery }{0,1:of the Formless One.}",
     "words": [
       {
         "roman": "Nirankār",
@@ -4628,7 +4644,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āp āpunī budh hai jētī.",
-    "english": "{4:To whatever extent }{0:each one's }{1:own }{2:buddhi }{3:exists,}",
+    "english": "{4:As far as }{0:each person’s }{1:own }{2:understanding }{3:reaches,}",
     "words": [
       {
         "roman": "Āp",
@@ -4644,9 +4660,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "budh",
-        "gloss": "intellect; faculty of discernment",
+        "gloss": "understanding; intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "hai",
@@ -4699,7 +4715,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Barnat bhinn bhinn tuhi tētī.",
-    "english": "{4:In that measure, }{0:they describe }{3:You }{1:in diverse }{2:ways.}",
+    "english": "{4:to that extent }{0:they describe }{3:You }{1,2:in differing ways.}",
     "words": [
       {
         "roman": "Barnat",
@@ -4841,7 +4857,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kih bidh sajā pratham sansārā.",
-    "english": "{0:In what }{1:manner }{4:saṃsāra }{3:was first }{2:fashioned.}",
+    "english": "{0,1:how }{4:the world }{3:was first }{2:fashioned.}",
     "words": [
       {
         "roman": "Kih",
@@ -4869,12 +4885,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "sansārā.",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "world; created existence",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Kih bidh' is interrogative adverbial phrase; 'sajā' is 3rd person singular past/perfective verb; 'sansārā' is direct object."
+    "grammarNote": "Kih bidh means ‘in what way, how’. The creation context (sajā pratham, ‘first fashioned’) gives sansārā the sense ‘world’, not the narrower cycle of rebirth. This clause continues the preceding statement that the divine expanse cannot be comprehended."
   },
   "line-69": {
     "source": "ਏਕੈ ਰੂਪ ਅਨੂਪ ਸਰੂਪਾ ॥",
@@ -4906,7 +4922,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ēkai rūp anūp sarūpā.",
-    "english": "{0:A single }{1:form }{2:of incomparable }{3:essential nature,}",
+    "english": "{0:One }{1:form, }{2:a matchless }{3:form—}",
     "words": [
       {
         "roman": "Ēkai",
@@ -4928,7 +4944,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarūpā.",
-        "gloss": "essential nature; supreme form",
+        "gloss": "form; own form; nature",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5243,7 +5259,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahū̃ simaṭ bhayō sankariṭhā.",
-    "english": "{0:Somewhere }{1:contracting inward, }{2:He became }{3:Shankar gathered together.}",
+    "english": "{0:Elsewhere, }{1:gathered inward, }{2:He became }{3:Śaṅkara, drawn into Himself.}",
     "words": [
       {
         "roman": "Kahū̃",
@@ -5265,12 +5281,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "sankariṭhā.",
-        "gloss": "Shiva gathered in meditation; contracted together",
+        "gloss": "Śaṅkara, gathered together; Śaṅkara means beneficent and is a name of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Simaṭ' is conjunctive participle from simaṭnā (to contract/gather); 'sankariṭhā' is a compound/portmanteau of Saṅkara (Shiva) and ikaṭhā (gathered together in one posture)."
+    "grammarNote": "The source writes Śaṅkara and ikaṭhā (‘gathered together’) separately. Together with simaṭ (‘drawing inward’), they contrast the withdrawn figure of Śiva with the exultant king in the preceding line."
   },
   "line-75": {
     "source": "ਸਗਰੀ ਸ੍ਰਿਸਟਿ ਦਿਖਾਇ ਅਚੰਭਵ ॥",
@@ -5426,7 +5442,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ab racchā mērī tum karō.",
-    "english": "{0:Now }{3:You }{4:grant }{2:my }{1:protection,}",
+    "english": "{0:Now, }{3:You }{1,2,4:protect me;}",
     "words": [
       {
         "roman": "Ab",
@@ -5615,7 +5631,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sakal malēch karō ran ghātā.",
-    "english": "{2:Execute}{4: the slaughter of }{0:all} {1:wicked oppressors} {3:in battle.}",
+    "english": "{2,4:slay }{0:all }{1:the barbarians }{3:in battle.}",
     "words": [
       {
         "roman": "Sakal",
@@ -5625,13 +5641,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "malēch",
-        "gloss": "wicked oppressors; barbarians",
+        "gloss": "barbarians; a hostile term for the enemies described in the preceding line",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karō",
-        "gloss": "make; execute",
+        "gloss": "do; carry out (with ghātā: slay)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5686,7 +5702,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jē asidhuj tav sarnī parē.",
-    "english": "{0:Those who}{4: have fallen into }{2:Your} {3:refuge,} {1:O Sword-Bannered Lord,}",
+    "english": "{0:Those who }{4:have sought }{2:Your }{3:refuge, }{1:O Sword-Bannered Lord,}",
     "words": [
       {
         "roman": "Jē",
@@ -6000,7 +6016,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jō kal kau ik bār dhiai-hai.",
-    "english": "{0:Whoever} {2,5:meditates upon} {1:the Timeless Lord} {3,4:even once,}",
+    "english": "{0:Whoever }{2,5:meditates upon }{1:Time }{3,4:even once,}",
     "words": [
       {
         "roman": "Jō",
@@ -6010,7 +6026,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kal",
-        "gloss": "Supreme Lord; the Timeless Sovereign",
+        "gloss": "Time, addressed as the divine power Kāla; distinguished from death in the next line",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6039,7 +6055,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kal' refers to the Supreme Time/Destroyer aspect of the Divine. 'dhiai-hai' is 3rd person singular future/subjunctive with Braj/Old Punjabi future suffix '-hai'."
+    "grammarNote": "The divine Time addressed throughout this prayer is contrasted with kāl (‘death’) in the next line. Dhiai-hai is a third-person future/subjunctive, ‘will meditate’. The source spelling here is kali."
   },
   "line-86": {
     "source": "ਤਾ ਕੇ ਕਾਲ ਨਿਕਟਿ ਨਹਿ ਐਹੈ ॥",
@@ -6122,7 +6138,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Wordplay between 'kal' (the Supreme Timeless Divine) in line 85 and 'kāl' (temporal death/mortality) here. 'ai-hai' is 3rd person singular future."
+    "grammarNote": "Kāl here means death, contrasted with the divine Time contemplated in the preceding line. Ai-hai is the third-person future, ‘will come’."
   },
   "line-87": {
     "source": "ਰੱਛਾ ਹੋਇ ਤਾਹਿ ਸਭ ਕਾਲਾ ॥",
@@ -6768,7 +6784,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation",
+        "gloss": "the divine Name uttered here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6894,7 +6910,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Khaṛag kēt mai saran tihārī.",
-    "english": "{0,1:O Sword-Bannered Sovereign,} {2:I} am in {4:Your} {3:sanctuary;}",
+    "english": "{0,1:O Sword-Bannered One, }{2:I} am in {4:Your }{3:refuge;}",
     "words": [
       {
         "roman": "Khaṛag",
@@ -6904,7 +6920,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kēt",
-        "gloss": "Banner; Sovereign",
+        "gloss": "banner; emblem (with khaṛag: the One whose banner bears a sword)",
         "concept_key": "",
         "preserve_in_english": false
       },
