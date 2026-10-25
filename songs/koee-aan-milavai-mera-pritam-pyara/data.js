@@ -256,7 +256,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -376,13 +376,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1012,7 +1012,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },

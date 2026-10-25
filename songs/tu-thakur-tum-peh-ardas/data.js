@@ -479,7 +479,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagvantu",
-        "gloss": "a reverent divine title: the blessed one",
+        "gloss": "Possessor of divine excellences or glory; a reverent title for God.",
         "concept_key": "",
         "preserve_in_english": false
       }

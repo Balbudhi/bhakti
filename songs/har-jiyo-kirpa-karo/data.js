@@ -87,7 +87,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -267,7 +267,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -699,7 +699,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "a divine name also used for Viṣṇu and Kṛṣṇa",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },

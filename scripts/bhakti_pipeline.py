@@ -1151,7 +1151,7 @@ Source metadata is only a lead, never proof:
 Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
             request={'prompt':prompt,'response_schema':segment_transcript_schema(),
-                     'schema_name':'bhakti_segment_transcript','reasoning_effort':'high','max_completion_tokens':32768}
+                     'schema_name':'bhakti_segment_transcript','reasoning_effort':'medium','max_completion_tokens':32768}
             if not getattr(options,'unit_context',None):
                 import bhakti_source_stages as source_stages
                 response=source_stages.segment_request(sys.modules[__name__],song_dir,audio,clip,
@@ -1211,7 +1211,7 @@ Source metadata is only a lead, not proof of public credits:
 
 Return strict JSON:
 {{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"uncertainties":[]}}"""
-    return {'prompt':prompt,'reasoning_effort':'high','max_completion_tokens':65536}
+    return {'prompt':prompt,'reasoning_effort':'medium','max_completion_tokens':65536}
 
 
 def _transcript_once(song_dir: Path, source: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:
@@ -1624,7 +1624,7 @@ Return strict JSON:
 {{"lines":[{{"id":"segment-{segment['index']}-line-000","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","partial":"none|leading|trailing","notes":""}}],"performance_order":[{{"line_id":"","occurrence":1}}],"uncertainties":[]}}"""
     return {"version": 1, "prompt": prompt,
             "response_schema": segment_transcript_schema(), "schema_name": "bhakti_segment_audit",
-            "reasoning_effort": "high", "max_completion_tokens": 32768,
+            "reasoning_effort": "medium", "max_completion_tokens": 32768,
             "clip": audio_audit_clip_contract()}
 
 
@@ -1793,7 +1793,7 @@ Candidate transcript:
 Return strict JSON:
 {{"metadata":{{"languages":[],"script":"","singer_candidates":[],"credit_evidence":[]}},"verified_lines":[{{"id":"stable-kebab-id","source_text":"","roman":"","language":"","kind":"invocation|refrain|verse|bridge|closing|spoken|instrumental|uncertain","notes":""}}],"performance_order":[{{"line_id":"stable-kebab-id","occurrence":1,"notes":""}}],"changes":[],"uncertainties":[]}}"""
     return {'prompt':prompt,'response_schema':audited_transcript_schema(),
-            'schema_name':'bhakti_audited_transcript','reasoning_effort':'high','max_completion_tokens':65536}
+            'schema_name':'bhakti_audited_transcript','reasoning_effort':'medium','max_completion_tokens':65536}
 
 
 def _audit_transcript_once(song_dir: Path, raw: dict[str, Any], audio: Path, options: argparse.Namespace) -> dict[str, Any]:

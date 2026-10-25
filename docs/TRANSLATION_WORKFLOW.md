@@ -98,6 +98,12 @@ are projected to each actual child batch, so a long song does not send all its
 dictionary choices in every response schema. Existing failed responses remain
 unchanged and are not made acceptable by deleting uncertainty.
 
+## Source-stage response capacity
+
+Whole and segmented transcription/audit requests use medium reasoning. A production trace showed high reasoning consuming 62,914 of a 65,536-token Pro response allowance before its JSON completed; a Flash segment similarly used 31,457 reasoning tokens within a 32,768 cap. Output capacity, audio coverage, uncertainty checks and independent audit remain unchanged. Timing and translation settings are unaffected.
+
+Accepted historical high-reasoning source artifacts may be reused only when recomputing the exact prior request identity changes that one setting alone: the audio, trim, source inputs, models, prompt, schema and output capacity must still match. The accepted router state, original fingerprint, result digest and full artifact are checked without rewriting them. Failed, tampered or otherwise changed evidence cannot use this compatibility path. The focused whole/segment Flash-to-Pro and cache checks pass without API calls; production acceptance still depends on actual output.
+
 ## Bounded intake and boundary recovery
 
 The ordinary `bhakti_pipeline.py` intake command now initializes one shared run

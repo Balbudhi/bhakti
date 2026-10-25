@@ -96,7 +96,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobindu",
-        "gloss": "a name of Kṛṣṇa/Viṣṇu; Punjabi form of Govinda",
+        "gloss": "A name of Kṛṣṇa/Viṣṇu with traditional meanings including finder of the earth, keeper of cattle, and one known through Vedic speech.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -144,7 +144,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "gobind",
-        "gloss": "a name of Kṛṣṇa/Viṣṇu; Punjabi form of Govinda",
+        "gloss": "A name of Kṛṣṇa/Viṣṇu with traditional meanings including finder of the earth, keeper of cattle, and one known through Vedic speech.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -738,7 +738,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārbrahm",
-        "gloss": "Supreme Brahman; the supreme divine reality",
+        "gloss": "Supreme Brahman: the highest divine reality; para means supreme, and brahman is traditionally linked with growth or greatness.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "a name of Viṣṇu/Kṛṣṇa",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1290,7 +1290,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murārī",
-        "gloss": "foe of Mura; a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "Enemy of Mura; a name of Kṛṣṇa/Viṣṇu.",
         "concept_key": "",
         "preserve_in_english": false
       }

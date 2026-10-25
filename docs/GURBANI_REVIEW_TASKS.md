@@ -1,5 +1,24 @@
 # Gurbāṇī reader repair and expansion
 
+## Authorized expansion and Sanskrit name meanings — 25 October 2026
+
+The owner now authorizes selecting a handful of authentic Gurbani/Guru-authored recordings, including performances close to Rajinder Singh’s Benti Chaupai, processing them through the established pipeline, and publishing reviewed readers. This supersedes the paid-production hold for this selected intake only. Preserve the separate whole-library audit and all owner English.
+
+Current step: resolve official recordings and exact scriptural sources; independently read the local Sanskrit witnesses for divine-name popup meanings. Root owns the production batch, source registry, integration and release; discovery and Sanskrit evidence run in parallel. Intake runs in an isolated checkout so unrelated held readers cannot enter the catalogue. Use the established Flash baseline with the a $3 total shared ceiling (the $1 default cannot reserve five concurrent worst-case outputs) and retained traces; inspect any failure before retrying. No model-comparison experiments.
+
+- [ ] Select approximately five recordings with source/author and official audio evidence; include the Benti-style preference.
+- [ ] Run the selected batch through transcription, independent audit, timing, gloss-first translation and independent review.
+- [ ] Trace Sanskrit-derived names to directly read source passages; independently review proposed literal meanings and Punjabi contextual use.
+- [ ] Apply concise popup meanings to the existing Gurbani readers and selected additions, preserving proper names and owner English.
+- [ ] Verify all performed sections, attribution, minimal tags, complete word links, audio/timing and existing reader style.
+- [ ] Publish only accepted scoped readers/media/metadata and verify the live website.
+
+The independent Sanskrit review has now accepted eight name families and 37 exact token occurrences in eleven existing readers. These popups are applied locally; English, source text, IAST, word boundaries, timings and metadata remain exact. All eleven content contract checks pass. Direct witnesses include the Dhātupāṭha, Uṇādi texts, Amarakośa with Sarvānanda’s commentary, Mahābhārata12.330, and Śaṅkara’s Gītā/Brahmasūtra commentaries. Govinda’s earth, cattle and Vedic-speech explanations remain distinguishable traditional readings; no single one is inserted into the Punjabi sentence. Para+Brahman is supreme Brahman; Kṛṣṇa’s directly attested literal sense is dark/black. Private source hashes, literal translations, per-occurrence maps and independent findings are retained under `.transcription/library-review/gurbani-20261025-expansion/`. Publication remains pending.
+
+Five selected recordings (Main Banjaran Ram Ki, Deh Shiva, Re Man Aiso Kar Sanyasa, Tav-Prasād Savaiye and Sohila) have native Opus/AAC media and accepted edge reviews. The first production attempt exposed excessive source reasoning: one Pro request cost $0.802678 and truncated its JSON after 62,914 reasoning tokens. New dispatch was held; all in-flight outcomes settled at $1.6197625. The source-only medium-reasoning fix and exact accepted-cache compatibility passed 23 focused offline checks and independent code review. The batch resumed with the original ledger, ceiling and deadline intact; no publication or successful new-song completion is yet claimed.
+
+Do not certify recordings as auditioned from catalogue metadata alone. Competing traditional name derivations must remain distinguishable; no invented single root gloss or global spelling replacement. Reuse the current reader UI.
+
 ## Contextual names and meanings — 25 October 2026
 
 The owner reopened the published Gurbāṇī wording and authorized a focused

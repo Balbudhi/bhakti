@@ -471,7 +471,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārbrahmu",
-        "gloss": "Supreme Brahman; the supreme divine reality",
+        "gloss": "Supreme Brahman: the highest divine reality; para means supreme, and brahman is traditionally linked with growth or greatness.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -519,7 +519,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Pārbrahmu",
-        "gloss": "Supreme Brahman; the supreme divine reality",
+        "gloss": "Supreme Brahman: the highest divine reality; para means supreme, and brahman is traditionally linked with growth or greatness.",
         "concept_key": "",
         "preserve_in_english": false
       },

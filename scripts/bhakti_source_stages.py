@@ -84,17 +84,27 @@ def _state_identity(pipeline, song_dir, audio, stage, inputs, options):
                   'pro':getattr(options,'pro_model',routes.PRO_MODEL)}})
 
 
-def _checked_projection(artifact, fingerprint):
+def _prior_high_identity(pipeline, song_dir, audio, stage, inputs, options):
+    """Only accepted evidence for the otherwise identical old request may survive."""
+    if options.source_stage_request.get('reasoning_effort') != 'medium':
+        return None
+    prior = copy.copy(options)
+    prior.source_stage_request = {**options.source_stage_request, 'reasoning_effort': 'high'}
+    return _state_identity(pipeline, song_dir, audio, stage, inputs, prior)
+
+
+def _checked_projection(artifact, fingerprint, *, prior_fingerprint=None):
     declaration = artifact.get('_source_route')
     if not isinstance(declaration,dict):
         return None
-    if declaration.get('input_fingerprint') != fingerprint:
+    saved_fingerprint = declaration.get('input_fingerprint')
+    if saved_fingerprint != fingerprint and not (prior_fingerprint and saved_fingerprint == prior_fingerprint):
         raise ValueError('saved source stage inputs changed; preserve original evidence for scoped repair')
     state = Path(declaration['state_path'])
     cached = routes.read_unit_cache(state)
     value = cached['result']
     if (cached['state']['status'] != 'accepted'
-            or cached['state']['input_fingerprint'] != fingerprint
+            or cached['state']['input_fingerprint'] != saved_fingerprint
             or digest(value) != declaration.get('result_digest')
             or {k:v for k,v in artifact.items() if k != '_source_route'} != value):
         raise ValueError('saved source stage no longer matches its routed evidence')
@@ -107,7 +117,8 @@ def _run(pipeline, song_dir, audio, stage, inputs, options, execute):
     fingerprint = _state_identity(pipeline,song_dir,audio,stage,inputs,options)
     existing = pipeline.read_packet(target)
     if existing:
-        projected = _checked_projection(existing,fingerprint)
+        projected = _checked_projection(existing, fingerprint,
+            prior_fingerprint=_prior_high_identity(pipeline, song_dir, audio, stage, inputs, options))
         if projected is not None:
             errors=source_errors(projected,audited=stage=='audit')
             if errors:raise ValueError('saved source stage fails current source contract')
@@ -188,7 +199,8 @@ def segment_request(pipeline,song_dir,audio,clip,stage,segment,request,options,*
             except (ValueError,RuntimeError) as exc:errors.append({'kind':'source_structure','detail':str(exc)})
         return errors
     if cached:
-        projected=_checked_projection(cached,fingerprint)
+        projected=_checked_projection(cached, fingerprint,
+            prior_fingerprint=_prior_high_identity(pipeline, song_dir, audio, stage, {'segment':segment}, local))
         if projected is not None:
             if validate(projected):raise ValueError('saved source segment fails current source contract')
             return projected

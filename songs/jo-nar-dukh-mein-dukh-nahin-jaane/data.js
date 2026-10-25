@@ -928,7 +928,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "braham",
-        "gloss": "the supreme divine reality",
+        "gloss": "Brahman: the vast or great; the supreme divine reality.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1384,7 +1384,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobind",
-        "gloss": "Punjabi form of Govinda; a name of Kṛṣṇa and Viṣṇu",
+        "gloss": "A name of Kṛṣṇa/Viṣṇu with traditional meanings including finder of the earth, keeper of cattle, and one known through Vedic speech.",
         "concept_key": "",
         "preserve_in_english": false
       },

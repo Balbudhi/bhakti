@@ -736,7 +736,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāriṅgapāṇī",
-        "gloss": "Bearer of the Śārṅga bow; Śārṅgapāṇi, a name of Viṣṇu",
+        "gloss": "He who holds the Śārṅga bow in his hand; a name of Viṣṇu.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -886,7 +886,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murāre",
-        "gloss": "Foe of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "Enemy of Mura; a name of Kṛṣṇa/Viṣṇu.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1030,7 +1030,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murāre",
-        "gloss": "Foe of the demon Mura; Murāri, a name of Kṛṣṇa/Viṣṇu",
+        "gloss": "Enemy of Mura; a name of Kṛṣṇa/Viṣṇu.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1372,7 +1372,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagavantā",
-        "gloss": "The blessed Lord; Bhagavān, addressed in the vocative",
+        "gloss": "Possessor of divine excellences or glory; a reverent title for God.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3394,7 +3394,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3628,7 +3628,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "A name of Viṣṇu/Kṛṣṇa, addressing the divine beloved here",
+        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
