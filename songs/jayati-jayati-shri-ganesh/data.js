@@ -24,7 +24,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jayati-jayati-shri-ganesh-56492ee6b8139eb0b232a68799d17e9589a5ea21d9b5acdd97f95cbfba85741d.m4a",
       "type": "audio/mp4"
     }
   ],

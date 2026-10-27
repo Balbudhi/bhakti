@@ -24,7 +24,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-ramachandra-kripalu-bhajman-b0f1387ff8b29d7aca0f9b5e321582d2dc21eb1c53f6c28ea3067f8b7b4daa87.m4a",
       "type": "audio/mp4"
     }
   ],

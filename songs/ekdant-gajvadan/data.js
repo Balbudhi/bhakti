@@ -24,7 +24,7 @@ window.SONG_META = {
   ],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ekdant-gajvadan-6111b0934db59bf980e93717d82f9828718f32b2d16c87b80c4e078914b92529.m4a",
       "type": "audio/mp4"
     }
   ],

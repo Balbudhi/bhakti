@@ -3821,7 +3821,7 @@ window.BHAKTI_SONGS = [
     "composer": "",
     "audioSources": [
       {
-        "src": "audio.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/neelkanth-mahadev-dayalu-13a017d27a2e4556b25388f0d02cf2d3faadfdd756629c3ee9d40b65593a3825.m4a",
         "type": "audio/mp4"
       }
     ],
@@ -4974,7 +4974,7 @@ window.BHAKTI_SONGS = [
     "composer": "",
     "audioSources": [
       {
-        "src": "audio.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mahadeva-vishambar-e9b858cf727b1a432dd18092ba64fe5f616a85ebc184c17fcc18f089c0eacae3.m4a",
         "type": "audio/mp4"
       }
     ],
@@ -4998,7 +4998,7 @@ window.BHAKTI_SONGS = [
     "composer": "",
     "audioSources": [
       {
-        "src": "audio.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaagiye-raghunath-kunwar-7c53dc344ad5d7c7fed9264d8cac2e92109258a659cc4918755531413b49f38c.m4a",
         "type": "audio/mp4"
       }
     ],
@@ -5025,7 +5025,7 @@ window.BHAKTI_SONGS = [
     "composer": "",
     "audioSources": [
       {
-        "src": "audio.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-ramachandra-kripalu-bhajman-b0f1387ff8b29d7aca0f9b5e321582d2dc21eb1c53f6c28ea3067f8b7b4daa87.m4a",
         "type": "audio/mp4"
       }
     ],
@@ -7880,7 +7880,7 @@ window.BHAKTI_SONGS = [
     "composer": "",
     "audioSources": [
       {
-        "src": "audio.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ekdant-gajvadan-6111b0934db59bf980e93717d82f9828718f32b2d16c87b80c4e078914b92529.m4a",
         "type": "audio/mp4"
       }
     ],
@@ -7908,7 +7908,7 @@ window.BHAKTI_SONGS = [
     "composer": "",
     "audioSources": [
       {
-        "src": "audio.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jayati-jayati-shri-ganesh-56492ee6b8139eb0b232a68799d17e9589a5ea21d9b5acdd97f95cbfba85741d.m4a",
         "type": "audio/mp4"
       }
     ],

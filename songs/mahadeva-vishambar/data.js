@@ -20,7 +20,7 @@ window.SONG_META = {
   "searchAliases": [],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mahadeva-vishambar-e9b858cf727b1a432dd18092ba64fe5f616a85ebc184c17fcc18f089c0eacae3.m4a",
       "type": "audio/mp4"
     }
   ],

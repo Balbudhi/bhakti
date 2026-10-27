@@ -21,7 +21,7 @@ window.SONG_META = {
   "searchAliases": [],
   "audioSources": [
     {
-      "src": "audio.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaagiye-raghunath-kunwar-7c53dc344ad5d7c7fed9264d8cac2e92109258a659cc4918755531413b49f38c.m4a",
       "type": "audio/mp4"
     }
   ],
