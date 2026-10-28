@@ -46,22 +46,13 @@ main {
   margin: 0;
 }
 
-.owner-entry {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  margin-top: 12px;
-  color: var(--ink);
-  font: 13px/1.5 Inter, sans-serif;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+/* Ordinary repeated taps on this heading must not select text or zoom. */
+#aboutHeading {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
 }
-.owner-entry:focus-visible {
-  outline: 2px solid var(--ink);
-  outline-offset: 4px;
-  border-radius: 2px;
-}
-.owner-entry:active { opacity: 0.76; }
 
 /* Enlarge the About target without changing its quiet visual size. */
 .about-toggle::before {

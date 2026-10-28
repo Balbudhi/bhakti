@@ -8,17 +8,17 @@ and notes or load a UTF-8 text file, submit once, and see the durable private qu
 The public library stays on GitHub Pages. TimeCrystals authentication, credentials,
 content and installed-app identity are unchanged.
 
-The owner entrance uses a native link inside About, replacing the iPhone-incompatible
-long press. The service is deployed; owner enrollment and a real private submission
-are verified.
-No passkey private key is generated or copied by a terminal script.
+The owner entrance is completely hidden: five ordinary taps/clicks on the About
+heading, or the desktop keyboard shortcut. No public login control is rendered.
+Owner enrollment and a real private submission were verified before this UI fix.
 
 ## User flow and design
 
-- Tap the library's existing `?` button, then “Owner sign in” inside About.
-  Use native link navigation so ordinary touch, keyboard and browser actions work
-  without timers or custom gesture recognition. `Alt+Shift+O` remains an optional
-  desktop shortcut outside editable fields. The direct owner URL is bookmarkable.
+- Tap the library's existing `?` button, then tap the About heading five times.
+  Taps need not be fast. The fifth completed tap opens owner sign-in directly.
+  No label, link, counter, hint or button advertises login. Other clicks, Escape,
+  backgrounding and page restoration clear partial taps. No hold timer exists.
+  `Alt/Option+Shift+O` remains the hidden desktop alternative outside editable fields.
 - This entrance is discreet, not an authorization boundary. Knowing the URL or
   reading public source must never allow queue access or enrollment.
 - Owner pages reuse Bhakti's burgundy ground, cream ink, serif headings, compact
@@ -161,29 +161,28 @@ existing trim audit reports six content-evidence failures (one interval mismatch
 and five invalid review artifacts), retained for the separate translation/content
 repair task. This release changes no recordings, lyrics, timing or trim evidence.
 
-## Mobile entrance correction
+## Hidden entrance correction
 
-The owner reported that holding selected the control and opened an iPhone callout.
-Replace that mechanism instead of suppressing phone defaults globally. Apple's
-[gesture guidance](https://developer.apple.com/design/human-interface-guidelines/gestures)
-recommends familiar gestures for standard actions; W3C's
-[pointer cancellation guidance](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation/)
-supports activation on completed clicks. The replacement uses two ordinary taps
-with no timing requirement. The passkey boundary remains unchanged.
+The owner rejected both long press (iPhone text-selection/callout interference)
+and a visible login link inside About. Preserve the explicit requirement for a
+completely hidden entrance on both mobile and desktop. Five ordinary completed
+clicks on the existing heading open login without a timer. The heading keeps its
+text and appearance; scoped user-select and touch-action rules prevent selection
+and double-tap zoom on this target while retaining page pinch zoom. The private
+service remains the authorization boundary, never the gesture.
 
-Implementation order: first establish the native link/hidden-panel regression and
-reject navigation while holding; then remove pointer timers, add the link and its
-44px target, retain the desktop shortcut, bump the service-worker shell version,
-and verify the complete About-to-login path before publishing. No song text,
-audio, timing, backend state or credentials change.
+Tests first reject any public login link and require the fifth untimed click,
+no earlier navigation, cancellation/reset, hidden-panel rejection, no held-pointer
+navigation and the keyboard fallback. Implementation removes the link/styles,
+adds the hidden interaction, then advances the service-worker shell for release.
+Verify initial and dynamically loaded library entry, narrow/desktop layouts,
+then publish. Physical iPhone behavior is not established by desktop simulation.
 
-Correction verification: the regression first failed for the missing link, then
-for the old timer navigating while held; both pass with the replacement. In-app
-Browser checks passed at 390, 768, 1440 and 2560px, including hidden-by-default
-placement, a measured 44px link target, keyboard focus, Back navigation, and the
-complete path from both the initial library and a library loaded from a song page
-to live owner sign-in. These are browser checks, not physical-iPhone verification.
-The focused homepage/disclosure, PWA-update and design-authority tests pass;
-the 265-song contract audit and Python compilation pass. The broad legacy UI
-suite still reports unrelated song-shell/generator failures; the six existing
-trim-evidence failures remain in the content-repair task.
+Hidden-entry verification: regression tests pass for five untimed completed clicks,
+no visible owner control, no held-pointer navigation, partial-sequence reset,
+keyboard modifiers and Back/Forward restoration. In-app Browser verified no login
+link in About, no navigation after four clicks, navigation on the fifth, close
+and reopen reset, and entry from a dynamically loaded library. 390px and desktop
+checks passed; physical iPhone input remains unverified. The focused homepage,
+PWA-update and design-authority tests, Python compilation and 265-song contract
+audit pass. Audio and trim evidence are unchanged from the preceding release.

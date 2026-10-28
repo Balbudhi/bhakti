@@ -156,15 +156,14 @@ The current implementation is in `assets/app.css` under `.app-stage`, `.queue-sh
 
 ## Interaction and accessibility
 
-- Owner sign-in is disclosed inside About: tap the library's existing `?`, then
-  tap the quiet “Owner sign in” link. Both use ordinary completed clicks/taps;
-  no holding, repeated-tap timing, pointer capture or callout suppression. Keep
-  the link out of the closed library composition. Its target is at least 44px
-  high with visible keyboard focus. Alt+Shift+O outside editable fields is an
-  optional desktop shortcut. Passkey verification protects every private request.
-  Owner forms reuse the burgundy/cream palette, existing typography and hairlines.
-  Keep intake text, save feedback and request history in one reading column.
-  Clearly distinguish saved requests from completed processing.
+- Owner access is completely hidden on mobile and desktop: open About with `?`,
+  then tap/click its unchanged heading five times, with no timing requirement.
+  Do not render an owner label, link, button, counter, hint or confirmation surface.
+  Other clicks, Escape, backgrounding and page restoration reset partial taps.
+  Use completed clicks, never holding or pointer-down activation. Suppress text
+  selection and double-tap zoom only on that heading; preserve page pinch zoom.
+  Alt/Option+Shift+O outside editable fields is the hidden keyboard alternative.
+  The direct owner URL remains usable. Passkey verification protects private data.
 - Tap/click is authoritative. Swipe, pull, and drag may be accelerators but never the only path.
 - Drag reorder must have a keyboard equivalent on the same handle.
 - Focus must be visible, return predictably after disclosure closes, and never be lost during a rerender.

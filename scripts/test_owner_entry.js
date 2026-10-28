@@ -18,7 +18,9 @@ function fixture() {
     setTimeout(fn, delay) { const id = ++sequence; timers.set(id, { at: now + delay, fn }); return id; },
     clearTimeout(id) { timers.delete(id); },
   });
-  const about = { closest: selector => selector === "#aboutToggle" ? about : null };
+  const panel = { hidden: false };
+  const heading = { closest: selector => selector === "#aboutHeading" ? heading : selector === "#aboutPanel" ? panel : null };
+  const about = { closest: () => null };
   const emit = (type, extra = {}) => {
     const event = { target: about, button: 0, isPrimary: true, pointerId: 1, clientX: 10, clientY: 10,
       prevented: false, stopped: false, preventDefault() { this.prevented = true; },
@@ -27,15 +29,37 @@ function fixture() {
     return event;
   };
   const tick = ms => { now += ms; for (const [id, timer] of [...timers]) if (timer.at <= now) { timers.delete(id); timer.fn(); } };
-  return { document, emit, tick, opened };
+  return { document, emit, tick, opened, heading, panel };
 }
 
-// Native links provide ordinary tap, keyboard and browser navigation semantics.
-// The owner link belongs inside the hidden About panel, not permanent navigation.
+// The entrance has no public label or control, even with About open.
 const html = fs.readFileSync(path.join(__dirname, "../index.html"), "utf8");
-const panel = html.match(/<aside\b[^>]*id="aboutPanel"[^>]*>[\s\S]*?<\/aside>/)?.[0];
-assert.ok(panel && /<aside[^>]*\bhidden\b/.test(panel));
-assert.match(panel, /<a\b[^>]*class="owner-entry"[^>]*href="https:\/\/owner\.bhakti\.eeshan\.xyz\/"[^>]*>Owner sign in<\/a>/);
+assert.doesNotMatch(html, /Owner sign in|class="owner-entry"|href="https:\/\/owner\.bhakti/);
+assert.match(html, /<h2 id="aboutHeading">About these songs<\/h2>/);
+// Five completed clicks on the open heading, at any pace, navigate once.
+{
+  const f = fixture();
+  for (let i = 0; i < 4; i++) { f.emit("click", { target: f.heading }); f.tick(30000); }
+  assert.equal(f.opened.length, 0);
+  f.emit("click", { target: f.heading });
+  assert.deepEqual(f.opened, ["https://owner.bhakti.eeshan.xyz/"]);
+  f.emit("click", { target: f.heading }); assert.equal(f.opened.length, 1);
+}
+// Other actions, closing, page restoration and backgrounding reset partial taps.
+for (const reset of ["click", "blur", "pageshow", "visibilitychange", "escape"]) {
+  const f = fixture();
+  for (let i = 0; i < 4; i++) f.emit("click", { target: f.heading });
+  if (reset === "visibilitychange") f.document.hidden = true;
+  if (reset === "escape") f.emit("keydown", { key: "Escape" });
+  else f.emit(reset);
+  f.document.hidden = false;
+  f.emit("click", { target: f.heading }); assert.equal(f.opened.length, 0, reset);
+}
+{
+  const f = fixture(); f.panel.hidden = true;
+  for (let i = 0; i < 5; i++) f.emit("click", { target: f.heading });
+  assert.equal(f.opened.length, 0, "Hidden heading cannot activate");
+}
 // Holding must never navigate, consume clicks, or suppress native browser behavior.
 {
   const f = fixture(); f.emit("pointerdown"); f.tick(10000);
@@ -60,4 +84,4 @@ for (const extra of [{ repeat: true }, { ctrlKey: true }, { metaKey: true }, { t
   f.emit("pageshow"); f.emit("keydown", key);
   assert.equal(f.opened.length, 2, "Back/Forward restores shortcut");
 }
-console.log("PASS: native disclosed owner link, no long-press navigation, keyboard and restored-page behavior");
+console.log("PASS: hidden five-tap entrance, cancellation, no long press, keyboard and restored-page behavior");
