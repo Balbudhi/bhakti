@@ -30,10 +30,12 @@ self.addEventListener("fetch", event => {
     );
     return;
   }
-  // Playlist state lives in the query string, but every route serves the same
-  // static shell. Cache navigations by pathname so arbitrary playlist URLs do
-  // not create duplicate cache entries and can reuse the canonical page offline.
-  const cacheKey = event.request;
+  // Shell URLs carry release queries in HTML, while installation precaches
+  // their bare paths. Share those keys so the first offline launch works even
+  // before a controlled online visit. Fetch still uses the original release URL;
+  // query parameters outside this explicit same-origin shell stay significant.
+  const cacheKey = url.origin === self.location.origin && SHELL.includes(pathname)
+    ? pathname : event.request;
   event.respondWith(
     fetch(event.request, { cache: "no-store" })
       .then(response => {
