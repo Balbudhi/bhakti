@@ -9,38 +9,101 @@
   :root { --app-player-height: 100px; --app-safe-top: 44px; }
   #audioPlayer { height: 100px; box-sizing: border-box; }
   .queue-sheet { animation: none; }
-  #results { position: relative; z-index: 200; white-space: pre-wrap; }
+  #results { position: relative; z-index: 200; white-space: pre-wrap; max-height: 260px; overflow: auto; }
+  #liveControls { position: relative; z-index: 200; }
+  #scrollSpace { height: 250vh; }
 </style>
 <pre id="results">Checking measured coordinates against real CSS…</pre>
+<div id="liveControls" hidden>
+  <p>Local geometry only. No input values, history, storage, or uploads. Rotate,
+    focus and dismiss the keyboard, scroll both ways, and pinch/return to 1×.
+    Capture while a gap is visible. This fixture cannot emulate an installed iPhone PWA.</p>
+  <input type="search" aria-label="Keyboard reproduction input" placeholder="Open the keyboard">
+  <button id="capture" type="button">Capture geometry</button>
+  <button id="toggleQueue" type="button">Toggle playlist</button>
+</div>
+<div id="scrollSpace" hidden>Scroll to exercise viewport movement.</div>
 <section class="queue-sheet">
   <div class="queue-sheet-tools"><button>Playlist toolbar</button></div>
   <div class="queue-list">Scrollable playlist</div>
 </section>
 <div id="audioPlayer" class="audio-player"><button>Player control</button></div>
 <script>
-  // Deterministic geometry fixture, not an emulation of iOS/WebKit. The real
-  // app bootstrap and stylesheet must consume a visible viewport smaller than
-  // the layout viewport, including a nonzero visual offset and top safe area.
-  const measuredViewport = Object.assign(new EventTarget(), {
+  // ?live keeps real browser geometry. Default mode supplies deterministic
+  // inputs to the production bootstrap; it does not emulate WebKit or zoom.
+  const liveGeometry = new URLSearchParams(location.search).has('live');
+  const measuredViewport = liveGeometry ? window.visualViewport : Object.assign(new EventTarget(), {
     height: 300, offsetTop: 120, scale: 1,
   });
-  Object.defineProperty(window, 'visualViewport', { value: measuredViewport });
+  if (!liveGeometry) Object.defineProperty(window, 'visualViewport', { value: measuredViewport });
 </script>
 <script src="../../assets/app.js"></script>
 <script>
-  requestAnimationFrame(() => {
-    const player = document.getElementById('audioPlayer').getBoundingClientRect();
-    const sheet = document.querySelector('.queue-sheet').getBoundingClientRect();
-    const toolbar = document.querySelector('.queue-sheet-tools').getBoundingClientRect();
-    const checks = {
-      'player bottom is visible bottom (420)': Math.abs(player.bottom - 420) < 1,
-      'playlist bottom meets player top': Math.abs(sheet.bottom - player.top) < 1,
-      'playlist starts below visible top + safe area (164)': sheet.top >= 163.99,
-      'constrained playlist uses 156 available pixels': Math.abs(sheet.height - 156) < 1,
-      'toolbar fits inside playlist': toolbar.top >= sheet.top && toolbar.bottom <= sheet.bottom,
+  const results = document.getElementById('results');
+  const playerElement = document.getElementById('audioPlayer');
+  const sheetElement = document.querySelector('.queue-sheet');
+  const settledFrame = () => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  if (liveGeometry) {
+    document.documentElement.style.setProperty('--app-safe-top', 'env(safe-area-inset-top, 0px)');
+    document.getElementById('liveControls').hidden = false;
+    document.getElementById('scrollSpace').hidden = false;
+    sheetElement.hidden = true;
+    const samples = [];
+    const capture = event => {
+      const viewport = window.visualViewport;
+      const player = playerElement.getBoundingClientRect();
+      const sheet = sheetElement.getBoundingClientRect();
+      const styles = document.documentElement.style;
+      samples.push({
+        event, time: Math.round(performance.now()), standalone: navigator.standalone === true,
+        orientation: screen.orientation?.type || window.orientation,
+        layout: { innerHeight, clientHeight: document.documentElement.clientHeight, scrollY },
+        visual: viewport ? { height: viewport.height, top: viewport.offsetTop, scale: viewport.scale,
+          pageTop: viewport.pageTop, width: viewport.width } : null,
+        anchor: { height: styles.getPropertyValue('--app-viewport-height'), top: styles.getPropertyValue('--app-viewport-top') },
+        player: { top: player.top, bottom: player.bottom, height: player.height },
+        sheet: sheetElement.hidden ? null : { top: sheet.top, bottom: sheet.bottom },
+        focusedTag: document.activeElement?.tagName,
+      });
+      if (samples.length > 32) samples.shift();
+      results.textContent = JSON.stringify(samples, null, 2);
     };
-    document.getElementById('results').textContent = Object.entries(checks)
-      .map(([name, passed]) => `${passed ? 'PASS' : 'FAIL'}: ${name}`).join('\n');
-  });
+    const captureAfterLayout = event => requestAnimationFrame(() => capture(event.type));
+    for (const event of ['resize', 'scroll', 'scrollend']) window.visualViewport?.addEventListener(event, captureAfterLayout, { passive: true });
+    for (const event of ['resize', 'orientationchange', 'pageshow']) window.addEventListener(event, captureAfterLayout, { passive: true });
+    for (const event of ['focusin', 'focusout', 'visibilitychange']) document.addEventListener(event, captureAfterLayout);
+    document.getElementById('capture').addEventListener('click', () => capture('manual'));
+    document.getElementById('toggleQueue').addEventListener('click', () => { sheetElement.hidden = !sheetElement.hidden; capture('playlist'); });
+    capture('initial');
+  } else {
+    (async () => {
+      const checks = [];
+      // Expected boundaries derive from visible top + visible height, not the
+      // stale layout height. Cover scale 1, zoom+pan, and return from zoom.
+      for (const [label, scale, height, top] of [
+        ['keyboard/pan', 1, 300, 120], ['zoom', 2, 300, 120],
+        ['zoom pan', 2, 300, 200], ['zoom return', 1, 300, 120],
+      ]) {
+        Object.assign(measuredViewport, { scale, height, offsetTop: top });
+        measuredViewport.dispatchEvent(new Event('resize'));
+        measuredViewport.dispatchEvent(new Event('scroll'));
+        await settledFrame();
+        const player = playerElement.getBoundingClientRect();
+        const sheet = sheetElement.getBoundingClientRect();
+        const toolbar = document.querySelector('.queue-sheet-tools').getBoundingClientRect();
+        const expectedBottom = top + height;
+        const expectedAvailable = height - 100 - 44;
+        checks.push(
+          [`${label}: player bottom is visible bottom (${expectedBottom})`, Math.abs(player.bottom - expectedBottom) < 1],
+          [`${label}: playlist bottom meets player top`, Math.abs(sheet.bottom - player.top) < 1],
+          [`${label}: playlist starts below visible top + safe area`, sheet.top >= top + 44 - 0.01],
+          [`${label}: constrained playlist uses ${expectedAvailable} available pixels`, Math.abs(sheet.height - expectedAvailable) < 1],
+          [`${label}: toolbar fits inside playlist`, toolbar.top >= sheet.top && toolbar.bottom <= sheet.bottom],
+          [`${label}: player retains its CSS size`, Math.abs(player.height - 100) < 1],
+        );
+      }
+      results.textContent = checks.map(([name, passed]) => `${passed ? 'PASS' : 'FAIL'}: ${name}`).join('\n');
+    })();
+  }
 </script>
 </html>

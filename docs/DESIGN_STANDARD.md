@@ -125,7 +125,9 @@ The default state shows only what is necessary for reading or the current playba
 - Small secondary actions belong in a small anchored popover. They must not expand the catalogue row or displace adjacent songs. This is an explicit exception to the preference for in-page disclosure: two contextual commands need a transient menu, not another page section.
 - Catalogue rows get one quiet ellipsis, opening a two-action “Play next” / “Add to end” popover. Use the existing ground, cream hairline, small Inter labels and matched SVG icons; no title, backdrop, extra close button or shadow. Keep the menu inside the viewport and above the player; dismiss on outside click, Escape, focus leaving, scroll, navigation or action. Support arrow keys and restore focus appropriately. Tap/click remains sufficient; holding a song is not required.
 - The compact, labeled Filter control shares the search row. Opening it reveals only four closely stacked, horizontally scrolling tag rows. Use “All subjects”, “All languages”, “All poets” and “All singers” reset tags to explain each row; no separate headings, accordion arrow, full-width disclosure bar or section spacing. Preserve selection, horizontal scroll and focus. Indicate active filtering on the control even when collapsed.
-- Song tags remain quiet inline metadata. Previous, current and upcoming playlist occurrences stay together in order, with a restrained current-position label. Do not add a Played-count dropdown. Clearing upcoming songs preserves current audio and prior entries.
+- Song tags remain quiet inline metadata. Previous, current and upcoming playlist occurrences stay together in order. Highlight the current row and expose `aria-current` without a visible “Current” label. Earlier and upcoming rows both offer Play and Remove in the same positions. Removing an earlier occurrence preserves the current occurrence and audio position. Clearing upcoming songs preserves current audio and prior entries.
+- One circular repeat control stays in the player, beside the playlist toggle, including for a single song. Successive clicks cycle off → song → playlist → off. Use matched repeat arrows with a small central `1` for song repeat, a quiet selected fill for either enabled mode, and brief existing status feedback naming the mode. Accessible labels give the state and next action. Do not add a menu or another permanent label.
+- Repeat belongs to the listening session and survives navigation and reload, but is not imposed on recipients of a shared playlist. Song repeat restarts the same occurrence at zero on natural completion; playlist repeat wraps the retained order to its first occurrence without growing or reshuffling it. Explicit Next bypasses song repeat and wraps only in playlist repeat. Failed media always advances forward without wrapping, so an unavailable playlist cannot loop indefinitely. A new shuffle session starts with repeat off.
 
 ### Choosing the right surface
 
@@ -159,6 +161,17 @@ The current implementation is in `assets/app.css` under `.app-stage`, `.queue-sh
 - Focus must be visible, return predictably after disclosure closes, and never be lost during a rerender.
 - Labels describe the action and state (`Show playlist, 8 songs`, `Unlink lyrics from playback`), even when the visible control is icon-only.
 - Media controls reflect actual media events and fulfilled/rejected `play()` promises.
+- Expose the same transport through system media controls: evidenced song/credit,
+  playback state, position, Play/Pause, available Previous/Next and seeking. The
+  operating system chooses the displayed controls and may supply a seek interval;
+  use ten seconds when it supplies none. Seeking preserves the paused state.
+- The progress track is a keyboard-accessible slider with an elapsed/total label.
+  Arrow keys seek ten seconds, Page Up/Down one minute, and Home/End the boundaries.
+  Unknown duration disables seeking. A buffering request can be cancelled; an
+  explicit Play can retry unavailable audio without creating an automatic retry loop.
+- Service-worker updates must not reload a document that has started listening,
+  including while paused or backgrounded. Adopt the new document on a later normal
+  load; an idle page may still update automatically.
 - No destructive action is gesture-only.
 - In a three-column Sanskrit name table, the visible English cell is already
   the meaning and must not be repeated in a tooltip. Devanāgarī and IAST may

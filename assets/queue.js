@@ -44,8 +44,9 @@
     });
   };
 
-  const create = ({ mode, items, currentIndex, sessionId, shuffleSeed = null, shuffleAll = false }) => {
+  const create = ({ mode, items, currentIndex, sessionId, shuffleSeed = null, shuffleAll = false, repeat = "off" }) => {
     if (!MODES.has(mode)) throw new TypeError("queue mode is unsupported");
+    if (!["off", "one", "all"].includes(repeat)) throw new TypeError("queue repeat is unsupported");
     if (!Array.isArray(items) || !items.length) throw new TypeError("queue items must be non-empty");
     const frozenItems = items.map(freezeItem);
     const entryIds = new Set(frozenItems.map(item => item.entryId));
@@ -70,6 +71,7 @@
       items: Object.freeze(frozenItems),
       currentIndex,
       sessionId: String(sessionId),
+      repeat,
       shuffleSeed: hasCompactShuffle ? shuffleSeed >>> 0 : null,
       shuffleAll: hasCompactShuffle,
     });
@@ -87,6 +89,7 @@
     items,
     currentIndex,
     sessionId: state.sessionId,
+    repeat: state.repeat,
     shuffleSeed: preserveShuffle ? state.shuffleSeed : null,
     shuffleAll: preserveShuffle ? state.shuffleAll : false,
   });
@@ -162,10 +165,10 @@
 
   const remove = (state, index) => {
     assertIndex(state, index);
-    if (index <= state.currentIndex) throw new RangeError("current or played songs cannot be removed");
+    if (index === state.currentIndex) throw new RangeError("current song cannot be removed");
     const items = [...state.items];
     items.splice(index, 1);
-    return rebuild(state, items);
+    return rebuild(state, items, state.currentIndex - (index < state.currentIndex ? 1 : 0));
   };
 
   const reorderUpcoming = (state, orderedEntryIds) => {
@@ -186,9 +189,23 @@
     ], state.currentIndex, state.mode, state.shuffleAll);
   };
 
-  const advance = state => state.currentIndex + 1 < state.items.length
-    ? { state: rebuild(state, state.items, state.currentIndex + 1, state.mode, true), advanced: true }
-    : { state, advanced: false };
+  // Repeat is a session preference, independent of playlist construction mode.
+  // Completion reuses occurrence IDs; failures never wrap back to failed audio.
+  const cycleRepeat = state => create({
+    ...state,
+    repeat: { off: "one", one: "all", all: "off" }[state.repeat],
+  });
+
+  const advance = (state, { reason = "next" } = {}) => {
+    if (reason === "ended" && state.repeat === "one") return { state, advanced: true };
+    if (state.currentIndex + 1 < state.items.length) {
+      return { state: rebuild(state, state.items, state.currentIndex + 1, state.mode, true), advanced: true };
+    }
+    if (reason !== "failed" && state.repeat === "all") {
+      return { state: rebuild(state, state.items, 0, state.mode, true), advanced: true };
+    }
+    return { state, advanced: false };
+  };
 
   const fisherYates = (items, random) => {
     const shuffled = [...items];
@@ -670,6 +687,7 @@
         sessionId: value.sessionId,
         shuffleSeed: value.shuffleSeed,
         shuffleAll: value.shuffleAll,
+        repeat: value.repeat,
       });
     } catch (_) {
       return null;
@@ -691,6 +709,7 @@
     remove,
     reorderUpcoming,
     advance,
+    cycleRepeat,
     shuffle,
     shuffleRemaining,
     encode,

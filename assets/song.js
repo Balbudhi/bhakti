@@ -969,7 +969,7 @@ function setupKaraoke() {
     const article = seekButton.closest(".line");
     const start = Number(article?.dataset.start);
     if (!Number.isFinite(start)) return;
-    getPlaybackController(audio).play(start);
+    getPlaybackController(audio).play(start, { retry: true });
   });
 }
 
@@ -1125,7 +1125,15 @@ function getPlaybackController(audio) {
     audio.currentTime = pendingSeek;
     pendingSeek = null;
   };
-  const play = (start = null) => {
+  const play = (start = null, { retry = false } = {}) => {
+    // Only a fresh user action retries a terminal failure. Automatic queue
+    // progression remains bounded, even when every source is unavailable.
+    if (retry && (failed || audio.error) && (audio.querySelectorAll("source").length || audio.src)) {
+      const resumeAt = Number.isFinite(start) ? start : audio.currentTime;
+      reset();
+      audio.load();
+      start = Number.isFinite(resumeAt) ? resumeAt : 0;
+    }
     const token = ++request;
     intent = true;
     pendingSeek = Number.isFinite(start) ? start : null;
@@ -1177,6 +1185,13 @@ function getPlaybackController(audio) {
     playing = true;
     notify();
   });
+  audio.addEventListener("waiting", () => {
+    // A download can stall while buffered audio continues. Only a real
+    // underrun changes playback state; ignore stale events after recovery.
+    if (!intent || audio.paused || audio.readyState >= 3) return;
+    playing = false;
+    notify();
+  });
   audio.addEventListener("pause", () => {
     if (!audio.paused) return; // A queued pause may belong to the replaced recording.
     request++;
@@ -1226,14 +1241,28 @@ function setupAudioPlayer() {
   audio.dataset.bhaktiPlayerBound = "true";
   const playback = getPlaybackController(audio);
 
+  progEl.setAttribute("role", "slider");
+  progEl.setAttribute("tabindex", "0");
+  progEl.setAttribute("aria-label", "Seek");
+  progEl.setAttribute("aria-orientation", "horizontal");
+  progEl.setAttribute("aria-valuemin", "0");
+  const seekableDuration = () => Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : 0;
+
   const updateTime = () => {
-    if (elapsed) elapsed.textContent = fmtTime(audio.currentTime || 0);
+    const length = seekableDuration();
+    const position = Number.isFinite(audio.currentTime) ? Math.max(0, Math.min(audio.currentTime, length)) : 0;
+    if (elapsed) elapsed.textContent = fmtTime(position);
     if (duration) duration.textContent = fmtTime(audio.duration);
+    barEl.style.width = `${length ? position / length * 100 : 0}%`;
+    progEl.setAttribute("aria-disabled", String(!length));
+    progEl.setAttribute("aria-valuemax", String(length));
+    progEl.setAttribute("aria-valuenow", String(position));
+    progEl.setAttribute("aria-valuetext", length ? `${fmtTime(position)} of ${fmtTime(length)}` : "Duration unavailable");
   };
 
   const togglePlayback = () => {
     if (playback.isPlaying() || playback.isPending()) playback.pause();
-    else playback.play();
+    else playback.play(null, { retry: true });
   };
   const updatePlayback = () => {
     const playing = playback.isPlaying();
@@ -1247,26 +1276,44 @@ function setupAudioPlayer() {
   updatePlayback();
   audio.addEventListener("loadedmetadata", updateTime);
   audio.addEventListener("durationchange", updateTime);
+  audio.addEventListener("emptied", updateTime);
 
   audio.addEventListener("timeupdate", () => {
     if (isDragging) return;                       // don't fight the user
-    const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
-    barEl.style.width = pct + "%";
     updateTime();
+  });
+
+  const seekTo = position => {
+    const length = seekableDuration();
+    if (!length || !Number.isFinite(position)) return;
+    audio.currentTime = Math.max(0, Math.min(length, position));
+    updateTime();
+  };
+  progEl.addEventListener("keydown", e => {
+    const length = seekableDuration();
+    const position = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+    const destinations = {
+      ArrowRight: position + 10, ArrowUp: position + 10,
+      ArrowLeft: position - 10, ArrowDown: position - 10,
+      PageUp: position + 60, PageDown: position - 60,
+      Home: 0, End: length,
+    };
+    if (!(e.key in destinations) || e.altKey || e.ctrlKey || e.metaKey) return;
+    e.preventDefault();
+    seekTo(destinations[e.key]);
   });
 
   // Drag-to-seek on the progress bar. Pointer events unify mouse + touch.
   let isDragging = false;
   const seekFromPointer = e => {
-    if (!audio.duration) return;
     const r = progEl.getBoundingClientRect();
+    if (r.width <= 0) return;
     const x = e.clientX - r.left;
     const pct = Math.max(0, Math.min(1, x / r.width));
-    audio.currentTime = pct * audio.duration;
-    barEl.style.width = (pct * 100) + "%";
-    updateTime();
+    seekTo(pct * seekableDuration());
   };
   progEl.addEventListener("pointerdown", e => {
+    if (!seekableDuration() || e.button > 0) return;
     isDragging = true;
     progEl.setPointerCapture(e.pointerId);
     seekFromPointer(e);

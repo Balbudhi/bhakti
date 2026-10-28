@@ -13,8 +13,9 @@
   const setViewportBounds = () => {
     viewportFrame = 0;
     const usableHeight = value => Number.isFinite(value) && value > 0;
-    const useVisual = visualViewport && Math.abs(visualViewport.scale - 1) < 0.01
-      && usableHeight(visualViewport.height);
+    // VisualViewport dimensions and offsets use CSS pixels at every zoom level.
+    // Keep native magnification; only track the visible edge.
+    const useVisual = visualViewport && usableHeight(visualViewport.height);
     const height = useVisual ? visualViewport.height
       : usableHeight(window.innerHeight) ? window.innerHeight
         : document.documentElement.clientHeight;
@@ -76,6 +77,7 @@
   let visibleSongSlug = view === "song" ? pathSlug() : "";
   let queueState = null;
   let currentSong = null;
+  let systemMedia = null;
   let statusTimer = 0;
   let queueCloseTimer = 0;
   let viewRequest = 0;
@@ -110,6 +112,11 @@
     initialData.meta = {...initialData.meta, slug: initialPageSlug};
     songDataCache.set(initialPageSlug, initialData);
   }
+
+  const repeatButton = document.createElement("button");
+  repeatButton.className = "queue-pill repeat-toggle";
+  repeatButton.type = "button";
+  player.append(repeatButton);
 
   const queuePill = document.createElement("button");
   queuePill.className = "queue-pill";
@@ -167,6 +174,17 @@
   };
 
   const renderQueuePill = () => {
+    const repeat = queueState?.repeat || "off";
+    const repeatLabel = {
+      off: "Repeat off. Repeat this song",
+      one: "Repeating this song. Repeat playlist",
+      all: "Repeating playlist. Turn repeat off",
+    }[repeat];
+    repeatButton.disabled = !queueState;
+    repeatButton.setAttribute("aria-pressed", String(repeat !== "off"));
+    repeatButton.setAttribute("aria-label", repeatLabel);
+    repeatButton.title = repeatLabel;
+    repeatButton.innerHTML = `<svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><use href="/assets/player-icons.svg#icon-repeat${repeat === "one" ? "-one" : ""}"/></svg>`;
     const visible = queueIsVisible(queueState);
     queuePill.hidden = !visible;
     if (!visible) return;
@@ -220,6 +238,7 @@
     updateViewToggle();
     replaceHistoryMarker();
     if (!queueSheet.hidden) renderQueueSheet();
+    systemMedia?.refresh();
   };
 
   const resolvedSources = item => (item.audioSources || []).map(source => ({
@@ -227,7 +246,7 @@
     type: source.type || "",
   }));
 
-  const attemptPlay = () => playback.play();
+  const attemptPlay = () => playback.play(null, { retry: true });
 
   const selectAudioSong = (item, { autoplay = false, force = false } = {}) => {
     if (!item) return;
@@ -249,7 +268,8 @@
     player.hidden = false;
     document.body.classList.add("session-player-visible");
     requestAnimationFrame(setPlayerHeight);
-    if (autoplay) attemptPlay();
+    systemMedia?.refresh();
+    if (autoplay) playback.play();
   };
 
   const hidePlayer = () => {
@@ -480,8 +500,8 @@
           : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag or use arrow keys" title="Drag or use arrow keys to reorder"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M8 7h.01M16 7h.01M8 12h.01M16 12h.01M8 17h.01M16 17h.01"/></svg></button>`}
         <div class="queue-copy"><div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}</div>
         ${current
-          ? '<span class="queue-current-label">Current</span>'
-          : `<div class="queue-row-actions"><button class="queue-row-action" type="button" data-queue-action="${played ? "history" : "play"}" aria-label="Play ${escapeHtml(item.title)} ${played ? "again" : "now"}" title="${played ? "Play again" : "Play now"}">${playIcon}</button>${played ? "" : `<button class="queue-row-action queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>`}</div>`}
+          ? ''
+          : `<div class="queue-row-actions"><button class="queue-row-action" type="button" data-queue-action="${played ? "history" : "play"}" aria-label="Play ${escapeHtml(item.title)} ${played ? "again" : "now"}" title="${played ? "Play again" : "Play now"}">${playIcon}</button><button class="queue-row-action queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button></div>`}
       </div>`;
     };
     queueSheet.innerHTML = `
@@ -490,7 +510,7 @@
         <div class="queue-tools" role="group" aria-label="Playlist actions">
           <button class="queue-action" type="button" data-queue-action="previous" aria-label="Play previous song" title="Play previous song"${queueState.currentIndex === 0 ? " disabled" : ""}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M19 5 8 12l11 7V5z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
           <button class="queue-action" type="button" data-queue-action="queue-play" aria-label="Play current song" title="Play current song">${playIcon}</button>
-          <button class="queue-action" type="button" data-queue-action="next" aria-label="Play next song" title="Play next song"${futureCount ? "" : " disabled"}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5l11 7-11 7V5z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
+          <button class="queue-action" type="button" data-queue-action="next" aria-label="Play next song" title="Play next song"${futureCount || queueState.repeat === "all" ? "" : " disabled"}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5l11 7-11 7V5z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
           <button class="queue-action" type="button" data-queue-action="shuffle" aria-label="Shuffle upcoming songs" title="Shuffle upcoming songs"${futureCount < 2 ? " disabled" : ""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></button>
           <button class="queue-action" type="button" data-queue-action="clear" aria-label="Clear upcoming songs" title="Clear upcoming songs"${futureCount ? "" : " disabled"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></button>
         </div>
@@ -552,20 +572,37 @@
     showStatus("Upcoming songs cleared");
   };
 
-  const advanceQueue = ({ failed = false } = {}) => {
-    if (advancing || !queueState || queueState.mode === "standalone") return;
+  const previousQueue = () => {
+    const previous = Queue.previous(queueState);
+    if (!previous.moved) return;
+    setQueueState(previous.state);
+    revealCurrentQueueRow();
+    selectAudioSong(currentSong, { autoplay: true, force: true });
+    if (view === "song") void showSong(currentSong.slug, { historyMode: "replace" });
+  };
+
+  const advanceQueue = ({ reason = "next" } = {}) => {
+    if (advancing || !queueState) return;
     advancing = true;
-    const next = Queue.advance(queueState);
+    const previousEntryId = currentSong.entryId;
+    const next = Queue.advance(queueState, { reason });
     if (!next.advanced) {
       advancing = false;
-      showStatus(failed ? "No playable songs remain" : "Playlist finished");
+      if (reason === "failed") showStatus("No playable songs remain");
+      else if (queueIsVisible(queueState)) showStatus("Playlist finished");
       return;
     }
     setQueueState(next.state);
+    // play() can synchronously report unavailable media; allow that failure to
+    // advance too. Same-occurrence repeats retain sources and reading position.
+    advancing = false;
+    if (currentSong.entryId === previousEntryId) {
+      playback.play(0);
+      return;
+    }
     revealCurrentQueueRow();
     selectAudioSong(currentSong, { autoplay: true, force: true });
     if (view === "song") showSong(currentSong.slug, { historyMode: "replace" });
-    advancing = false;
   };
 
   const initializeState = () => {
@@ -650,6 +687,11 @@
     }
     openQueue();
   });
+  repeatButton.addEventListener("click", () => {
+    if (!queueState) return;
+    setQueueState(Queue.cycleRepeat(queueState));
+    showStatus({ off: "Repeat off", one: "Repeating this song", all: "Repeating playlist" }[queueState.repeat]);
+  });
   document.addEventListener("click", event => {
     if (queueSheet.hidden || queueSheet.contains(event.target) || player.contains(event.target)) return;
     if (matchMedia("(min-width: 1101px)").matches) return;
@@ -679,14 +721,7 @@
       selectAudioSong(currentSong, { autoplay: true, force: true });
       if (currentSong && view === "song") void showSong(currentSong.slug, { historyMode: "replace" });
     }
-    else if (action === "previous") {
-      const previous = Queue.previous(queueState);
-      if (!previous.moved) return;
-      setQueueState(previous.state);
-      revealCurrentQueueRow();
-      selectAudioSong(currentSong, { autoplay: true, force: true });
-      if (currentSong && view === "song") void showSong(currentSong.slug, { historyMode: "replace" });
-    }
+    else if (action === "previous") previousQueue();
     else if (action === "remove") setQueueState(Queue.remove(queueState, index));
     else if (action === "play") {
       setQueueState(Queue.playNow(queueState, queueState.items[index]));
@@ -924,11 +959,11 @@
     }
   });
   audio.addEventListener("bhakti:playback-state", updateQueuePlayback);
-  audio.addEventListener("ended", () => advanceQueue());
+  audio.addEventListener("ended", () => advanceQueue({ reason: "ended" }));
   audio.addEventListener("bhakti:playback-problem", event => {
     event.preventDefault();
     showStatus(event.detail.message);
-    if (event.detail.advance && audio.dataset.songSlug) advanceQueue({ failed: true });
+    if (event.detail.advance && audio.dataset.songSlug) advanceQueue({ reason: "failed" });
   });
   audio.addEventListener("playing", () => {
     if (!queueState && audio.dataset.songSlug && bySlug.has(audio.dataset.songSlug)) {
@@ -946,6 +981,20 @@
   window.addEventListener("resize", setPlayerHeight, { passive: true });
 
   initializeState();
+  if ("mediaSession" in navigator) {
+    import("/assets/media-session.js").then(({ attach }) => {
+      systemMedia = attach({
+        audio,
+        playback,
+        getSong: () => currentSong,
+        canPrevious: () => Boolean(queueState && queueState.currentIndex > 0),
+        canNext: () => Boolean(queueState && (queueState.repeat === "all"
+          || queueState.currentIndex + 1 < queueState.items.length)),
+        previous: previousQueue,
+        next: () => advanceQueue(),
+      });
+    }).catch(error => console.warn("System media controls could not be initialized", error));
+  }
   window.BHAKTI_APP = Object.freeze({
     showLibrary,
     showSong,

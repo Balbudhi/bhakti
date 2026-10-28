@@ -5,14 +5,26 @@
   let updateReady = false;
   let reloading = false;
   let lastCheck = 0;
+  let listeningStarted = false;
+  const audio = document.querySelector("audio");
+  const playback = audio && window.BHAKTI_READER?.playback?.(audio);
 
-  const audioIsPlaying = () => {
-    const audio = document.querySelector("audio");
-    return Boolean(audio && !audio.paused && !audio.ended);
+  const rememberListening = () => {
+    if (audio && (!audio.paused || audio.currentTime > 0 || playback?.isPending())) {
+      listeningStarted = true;
+    }
   };
+  rememberListening();
+  audio?.addEventListener("play", () => { listeningStarted = true; });
+  audio?.addEventListener("seeking", () => { listeningStarted = true; });
+  audio?.addEventListener("bhakti:playback-state", rememberListening);
 
   const applyUpdateWhenSafe = () => {
-    if (!updateReady || reloading || document.visibilityState === "hidden" || audioIsPlaying()) return;
+    rememberListening();
+    // Pause, track changes and returning from the lock screen are still part
+    // of a listening session. The new worker can serve requests immediately;
+    // adopt the new document on the next normal load without losing playback.
+    if (!updateReady || reloading || document.visibilityState === "hidden" || listeningStarted) return;
     reloading = true;
     window.location.reload();
   };
@@ -44,7 +56,6 @@
       window.addEventListener("pageshow", event => {
         if (event.persisted) checkForUpdate();
       });
-      document.querySelector("audio")?.addEventListener("pause", applyUpdateWhenSafe);
     } catch (_) {
       // The site remains fully usable when service workers are unavailable.
     }

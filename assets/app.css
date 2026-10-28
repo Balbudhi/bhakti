@@ -221,6 +221,7 @@ body.queue-open .app-stage { transform: none; }
   width: 100%;
   height: var(--queue-panel-height);
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr);
   background: var(--kh-bg, #6b0e16);
   color: #f4ead0;
@@ -318,7 +319,7 @@ body.queue-open .app-stage { transform: none; }
 .queue-row.is-current { background: rgba(244, 234, 208, 0.055); }
 .queue-position { color: rgba(244, 234, 208, 0.54); text-align: center; font: 400 12px/1 Inter, sans-serif; }
 .queue-progress { color: rgba(244, 234, 208, .62); font: 400 12px/1.3 Inter, sans-serif; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.queue-current-label { color: rgba(244, 234, 208, .68); font: 400 11px/1.3 Inter, sans-serif; }
+.queue-row.is-current .queue-copy { grid-column: 2 / -1; }
 .queue-row.is-played .queue-copy { opacity: .64; }
 .queue-row-action > svg { width: 16px; height: 16px; }
 .queue-copy { min-width: 0; }
@@ -524,6 +525,23 @@ body.queue-open .app-stage { transform: none; }
 /* Focus is a keyboard location, independent of a selected/open state. */
 .shuffle-visible:focus-visible,
 .queue-pill:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+.repeat-toggle[aria-pressed="true"] {
+  color: #f4ead0;
+  border-color: rgba(244, 234, 208, .62);
+  background: rgba(244, 234, 208, .10);
+}
+.repeat-toggle:disabled { opacity: .24; cursor: default; }
+.ap-progress:focus-visible { outline: 1px solid var(--ink); outline-offset: 4px; }
+/* Keep a useful seek track alongside four controls on small phones. */
+@media (max-width: 600px) {
+  .audio-player { gap: 10px; }
+}
+@media (max-width: 380px) {
+  .audio-player .ap-time { min-width: 0; }
+  .audio-player .ap-time-sep,
+  .audio-player .ap-time-total { display: none; }
+}
 
 /* Expand hit areas without enlarging the established visible circles. */
 .ap-btn, .song-home, .shuffle-visible, .queue-drag-handle { position: relative; }

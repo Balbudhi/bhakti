@@ -63,6 +63,26 @@ const flush = () => new Promise(resolve => setImmediate(resolve));
   assert.equal(app.playback.isPlaying(), true);
   assert.equal(app.audio.paused, false);
 
+  // Waiting reflects an actual buffer underrun; a stalled download or stale
+  // waiting event does not claim that buffered audio has stopped playing.
+  app.audio.emit("stalled");
+  assert.equal(app.playback.isPlaying(), true);
+  app.audio.emit("waiting");
+  assert.equal(app.playback.isPlaying(), true);
+  app.audio.readyState = 2;
+  app.audio.emit("waiting");
+  assert.equal(app.playback.isPlaying(), false);
+  assert.equal(app.playback.isPending(), true);
+  app.audio.readyState = 3;
+  app.audio.emit("playing");
+  assert.equal(app.playback.isPlaying(), true);
+  assert.equal(app.playback.isPending(), false);
+  app.audio.readyState = 2;
+  app.audio.emit("waiting");
+  app.playback.pause();
+  app.audio.emit("waiting");
+  assert.equal(app.playback.isPending(), false, "Pause cancels buffering intent");
+
   // Full exhaustion with intent pauses and may advance, exactly once.
   app = setup();
   app.playback.play(17);
@@ -172,6 +192,42 @@ const flush = () => new Promise(resolve => setImmediate(resolve));
   assert.equal(app.problems[0].advance, false);
   app.playback.play();
   assert.equal(app.problems[1].advance, true);
+  assert.equal(app.requests.length, 0);
+
+  // Automatic attempts remain terminal, but a fresh user request can retry a
+  // recording after connectivity returns without first selecting another song.
+  app.audio.currentTime = 42;
+  app.playback.play(null, { retry: true });
+  assert.equal(app.audio.loads, 2, "One initial preload and one explicit reload");
+  assert.equal(app.requests.length, 1);
+  app.audio.currentTime = 0;
+  app.audio.readyState = 1;
+  app.audio.emit("loadedmetadata");
+  assert.equal(app.audio.currentTime, 42, "Explicit retry preserves position");
+  assert.equal(app.playback.isPlaying(), false);
+  app.audio.readyState = 3;
+  app.audio.emit("playing");
+  app.requests[0].resolve();
+  await flush();
+  assert.equal(app.playback.isPlaying(), true);
+  app.audio.error = { code: 2 };
+  app.audio.emit("error");
+  app.playback.play();
+  assert.equal(app.audio.loads, 2, "Automatic failure handling cannot reload endlessly");
+  app.audio.readyState = 0;
+  app.playback.play(12, { retry: true });
+  assert.equal(app.audio.loads, 3, "A second user request permits exactly one more retry");
+  app.audio.readyState = 1;
+  app.audio.emit("loadedmetadata");
+  assert.equal(app.audio.currentTime, 12, "A requested lyric seek overrides the saved position");
+  app.playback.pause();
+  app.requests[1].resolve();
+  await flush();
+  assert.equal(app.playback.isPlaying(), false, "Pause cancels an in-flight retry");
+
+  app = setup(0);
+  app.playback.play(null, { retry: true });
+  assert.equal(app.audio.loads, 0, "Absent sources cannot be reloaded into existence");
   assert.equal(app.requests.length, 0);
   console.log("Playback controller failure, fallback, intent and cancellation cases passed");
 })().catch(error => { console.error(error); process.exitCode = 1; });

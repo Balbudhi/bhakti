@@ -76,7 +76,7 @@ assert.throws(() => Queue.move(state, 9, 2), /index/);
 
 state = Queue.remove(make([a, b, c], 0), 1);
 assert.deepEqual(slugs(state), ["alpha-song", "gamma-song"]);
-assert.throws(() => Queue.remove(state, 0), /current or played/);
+assert.throws(() => Queue.remove(state, 0), /current song/);
 assert.throws(() => Queue.remove(state, 8), /index/);
 
 state = make([a, b, c, d], 1);

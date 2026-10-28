@@ -78,20 +78,39 @@ test('restored pages and foreground return refresh bounds without a resize event
   assert.equal(app.styles.get('--app-viewport-height'), '844px');
 });
 
-test('fallback uses current layout height; pinch zoom retains ordinary page magnification', () => {
+test('fallback without VisualViewport uses current layout height', () => {
   const app = boot({ visual: false });
   app.window.innerHeight = 390;
   app.fire(app.window, 'resize');
   app.flush();
   assert.equal(app.styles.get('--app-viewport-height'), '390px');
+});
+
+test('pinch zoom keeps the player on the visible bottom without counter-scaling', () => {
   const zoom = boot();
   zoom.viewport.scale = 2;
   zoom.viewport.height = 422;
   zoom.viewport.offsetTop = 180;
   zoom.fire(zoom.viewport, 'resize');
   zoom.flush();
-  assert.equal(zoom.styles.get('--app-viewport-height'), '844px');
-  assert.equal(zoom.styles.get('--app-viewport-top'), '0px');
+  assert.equal(zoom.styles.get('--app-viewport-height'), '422px');
+  assert.equal(zoom.styles.get('--app-viewport-top'), '180px');
+  // The visible lower edge is 180 + 422 = 602 CSS pixels. Docking at the
+  // 844px layout edge leaves the controls below the magnified visible region.
+  assert.equal(parseFloat(zoom.styles.get('--app-viewport-top'))
+    + parseFloat(zoom.styles.get('--app-viewport-height')), 602);
+});
+
+test('zoom pan and zoom return retain measured bounds across the old scale cutoff', () => {
+  const app = boot();
+  for (const [scale, height, top] of [[2, 422, 180], [2, 422, 260], [1.02, 827, 10], [1, 844, 0]]) {
+    Object.assign(app.viewport, { scale, height, offsetTop: top });
+    app.fire(app.viewport, 'resize');
+    app.fire(app.viewport, 'scroll');
+    app.flush();
+    assert.equal(app.styles.get('--app-viewport-height'), `${height}px`, `height at scale ${scale}`);
+    assert.equal(app.styles.get('--app-viewport-top'), `${top}px`, `pan at scale ${scale}`);
+  }
 });
 
 test('transient invalid viewport dimensions cannot collapse the player anchor', () => {

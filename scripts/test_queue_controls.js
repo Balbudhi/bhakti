@@ -102,4 +102,58 @@ const historyCleared = Queue.clearUpcoming(historyState);
 const historyReloaded = Queue.restore(JSON.stringify(historyCleared), catalogue);
 assert.deepEqual(historyReloaded.items.slice(0, historyReloaded.currentIndex).map(item => item.title), ["a", "b"]);
 assert.deepEqual(Queue.selectHistory(historyReloaded, 1).items, historyReloaded.items);
-console.log("Queue controls and persisted history passed");
+// Remove by occurrence, including repeated titles before the cursor. The
+// playing entry, future order and old immutable state must remain intact.
+const removedHistory = Queue.remove(historyState, 0);
+assert.deepEqual(ids(removedHistory), ["b", "a", "c"]);
+assert.equal(removedHistory.currentIndex, 1);
+assert.equal(removedHistory.items[1].entryId, historyState.items[2].entryId);
+assert.deepEqual(ids(historyState), ["a", "b", "a", "c"]);
+assert.throws(() => Queue.remove(historyState, 2), /current/);
+assert.equal(Queue.restore(JSON.stringify(removedHistory), catalogue).currentIndex, 1);
+
+// Repeat is session-local; completion, explicit Next and failures have
+// different outcomes. Repeating never manufactures queue occurrences.
+assert.equal(before.repeat, "off");
+const one = Queue.cycleRepeat(before);
+assert.equal(one.repeat, "one");
+assert.equal(Queue.advance(one, { reason: "ended" }).state, one);
+assert.equal(Queue.advance(one, { reason: "ended" }).advanced, true);
+assert.equal(Queue.advance(one).state.currentIndex, 2, "Next bypasses repeat-one");
+assert.equal(Queue.advance(Queue.create({ ...one, currentIndex: 3 })).advanced, false);
+assert.equal(Queue.advance(one, { reason: "failed" }).state.currentIndex, 2);
+const all = Queue.cycleRepeat(one);
+assert.equal(all.repeat, "all");
+assert.equal(Queue.cycleRepeat(all).repeat, "off");
+assert.equal(Queue.advance(all, { reason: "ended" }).state.currentIndex, 2);
+const allLast = Queue.create({ ...all, currentIndex: 3 });
+for (const reason of ["ended", "next"]) {
+  const wrapped = Queue.advance(allLast, { reason });
+  assert.equal(wrapped.advanced, true);
+  assert.equal(wrapped.state.currentIndex, 0);
+  assert.deepEqual(wrapped.state.items, allLast.items);
+  assert.equal(wrapped.state.sessionId, allLast.sessionId);
+  assert.equal(wrapped.state.repeat, "all");
+}
+for (const repeat of ["off", "one", "all"]) {
+  const final = Queue.create({ ...allLast, repeat });
+  assert.equal(Queue.advance(final, { reason: "failed" }).advanced, false);
+  assert.equal(Queue.advance(final, { reason: "ended" }).advanced, repeat !== "off");
+  const single = Queue.create({ ...solo, repeat });
+  assert.equal(Queue.advance(single, { reason: "ended" }).advanced, repeat !== "off");
+  assert.equal(Queue.advance(single, { reason: "failed" }).advanced, false);
+  assert.equal(Queue.advance(single).advanced, repeat === "all");
+}
+for (const changed of [Queue.remove(all, 0), Queue.append(all, e),
+  Queue.playNext(all, e), Queue.clearUpcoming(all), Queue.previous(all).state,
+  Queue.move(all, 2, 3), Queue.shuffleRemaining(all, () => 0.5), Queue.playNow(all, e)]) {
+  assert.equal(changed.repeat, "all", "Queue edits preserve repeat");
+}
+assert.equal(Queue.restore(JSON.stringify(one), catalogue).repeat, "one");
+const legacySession = { ...before };
+delete legacySession.repeat;
+assert.equal(Queue.restore(JSON.stringify(legacySession), catalogue).repeat, "off");
+assert.equal(Queue.decode(Queue.encode(one), catalogue, "recipient").repeat, "off");
+assert.equal(Queue.shuffle([a, b, c], () => 0.5, "new-session").repeat, "off");
+assert.throws(() => Queue.create({ ...before, repeat: "invalid" }), /repeat/);
+console.log("Queue controls, repeat and persisted history passed");

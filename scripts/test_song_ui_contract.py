@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import unittest
+from xml.etree import ElementTree
 from pathlib import Path
 
 
@@ -190,7 +191,8 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('updateViaCache: "none"', client)
         self.assertIn('navigator.serviceWorker.addEventListener("controllerchange"', client)
         self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
-        self.assertIn('audioIsPlaying()', client)
+        # Listening-session reload protection is exercised behaviorally in
+        # test_pwa_lifecycle.js, including paused and pending playback.
         self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
         self.assertIn('event.request.mode === "navigate"', worker)
         self.assertIn('cache.put(cacheKey, copy)', worker)
@@ -202,6 +204,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('keys.filter(key => key !== CACHE)', worker)
         self.assertIn('/assets/queue.js', worker)
         self.assertIn('/assets/app.js', worker)
+        self.assertIn('/assets/media-session.js', worker)
 
     def test_iast_uses_the_extended_garamond_face(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
@@ -221,9 +224,11 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('sync-icon-unlock', song_css)
         self.assertIn('player-icons.svg#icon-lock', pipeline)
         self.assertIn('player-icons.svg#icon-unlock', pipeline)
-        for symbol in ('icon-lock', 'icon-unlock', 'icon-home', 'icon-music'):
+        for symbol in ('icon-lock', 'icon-unlock', 'icon-home', 'icon-music', 'icon-repeat', 'icon-repeat-one'):
             self.assertEqual(icons.count(f'id="{symbol}"'), 1)
-        self.assertEqual(icons.count('stroke-width="1.6"'), 4)
+        for symbol in ElementTree.fromstring(icons).findall('{http://www.w3.org/2000/svg}symbol'):
+            self.assertEqual(symbol.get('viewBox'), '0 0 24 24')
+            self.assertEqual(symbol.get('stroke-width'), '1.6')
 
     def test_song_share_preserves_only_the_encoded_queue_suffix(self) -> None:
         reader = (ROOT / "assets" / "song.js").read_text(encoding="utf-8")
