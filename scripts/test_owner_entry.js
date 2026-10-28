@@ -30,32 +30,19 @@ function fixture() {
   return { document, emit, tick, opened };
 }
 
-// A short ordinary click retains the existing About interaction.
+// Native links provide ordinary tap, keyboard and browser navigation semantics.
+// The owner link belongs inside the hidden About panel, not permanent navigation.
+const html = fs.readFileSync(path.join(__dirname, "../index.html"), "utf8");
+const panel = html.match(/<aside\b[^>]*id="aboutPanel"[^>]*>[\s\S]*?<\/aside>/)?.[0];
+assert.ok(panel && /<aside[^>]*\bhidden\b/.test(panel));
+assert.match(panel, /<a\b[^>]*class="owner-entry"[^>]*href="https:\/\/owner\.bhakti\.eeshan\.xyz\/"[^>]*>Owner sign in<\/a>/);
+// Holding must never navigate, consume clicks, or suppress native browser behavior.
 {
-  const f = fixture(); f.emit("pointerdown"); f.tick(1999); f.emit("pointerup"); f.tick(5000);
-  assert.deepEqual(f.opened, []); assert.equal(f.emit("click").prevented, false);
-}
-{
-  const f = fixture(); f.emit("pointerdown"); f.tick(2000);
-  assert.deepEqual(f.opened, ["https://owner.bhakti.eeshan.xyz/"]);
-  f.tick(5000); assert.equal(f.opened.length, 1);
-  const trailing = f.emit("click"); assert.equal(trailing.prevented, true); assert.equal(trailing.stopped, true);
-  f.emit("pageshow"); f.emit("pointerdown"); f.tick(2000); assert.equal(f.opened.length, 2);
-}
-for (const cancel of ["pointerup", "pointercancel", "blur", "resize"]) {
-  const f = fixture(); f.emit("pointerdown"); f.tick(1000); f.emit(cancel); f.tick(2000);
-  assert.equal(f.opened.length, 0, cancel);
-}
-{
-  const f = fixture(); f.emit("pointerdown"); f.document.hidden = true; f.emit("visibilitychange"); f.tick(2000);
-  assert.equal(f.opened.length, 0);
-}
-{
-  const f = fixture(); f.emit("pointerdown"); f.emit("pointermove", { clientX: 23 }); f.tick(2000);
-  assert.equal(f.opened.length, 0, "Scrolling/movement cancels the hold");
-}
-for (const extra of [{ button: 2 }, { isPrimary: false }, { target: { closest: () => null } }]) {
-  const f = fixture(); f.emit("pointerdown", extra); f.tick(2000); assert.equal(f.opened.length, 0);
+  const f = fixture(); f.emit("pointerdown"); f.tick(10000);
+  assert.deepEqual(f.opened, [], "No time-based pointer navigation");
+  f.emit("pointerup");
+  assert.equal(f.emit("click").prevented, false);
+  assert.equal(f.emit("contextmenu").prevented, false);
 }
 {
   const f = fixture(); const e = f.emit("keydown", { altKey: true, shiftKey: true, code: "KeyO" });
@@ -65,4 +52,12 @@ for (const extra of [{ repeat: true }, { ctrlKey: true }, { metaKey: true }, { t
   const f = fixture(); f.emit("keydown", { altKey: true, shiftKey: true, code: "KeyO", ...extra });
   assert.equal(f.opened.length, 0, "Shortcut cannot steal editing or repeated key input");
 }
-console.log("PASS: discreet owner entry, cancellation, ordinary clicks, keyboard and restored-page behavior");
+{
+  const f = fixture();
+  const key = { altKey: true, shiftKey: true, code: "KeyO" };
+  f.emit("keydown", key); f.emit("keydown", key);
+  assert.equal(f.opened.length, 1);
+  f.emit("pageshow"); f.emit("keydown", key);
+  assert.equal(f.opened.length, 2, "Back/Forward restores shortcut");
+}
+console.log("PASS: native disclosed owner link, no long-press navigation, keyboard and restored-page behavior");

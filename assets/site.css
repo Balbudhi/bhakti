@@ -46,6 +46,30 @@ main {
   margin: 0;
 }
 
+.owner-entry {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 12px;
+  color: var(--ink);
+  font: 13px/1.5 Inter, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.owner-entry:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.owner-entry:active { opacity: 0.76; }
+
+/* Enlarge the About target without changing its quiet visual size. */
+.about-toggle::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+}
+
 .library-invocation {
   color: var(--ink);
   font: 500 clamp(22px, 3vw, 29px) / 1.28 "Cormorant Garamond", Georgia, serif;

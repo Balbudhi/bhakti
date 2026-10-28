@@ -8,18 +8,17 @@ and notes or load a UTF-8 text file, submit once, and see the durable private qu
 The public library stays on GitHub Pages. TimeCrystals authentication, credentials,
 content and installed-app identity are unchanged.
 
-Current step: the service and public entrance are deployed; independent security
-review and live HTTPS/CGI checks are complete. Owner enrollment remains a normal
-Bitwarden credential-provider ceremony. No passkey private key
-is generated or copied by a terminal script. The TimeCrystals installation
-metadata repair is separate and preserves its existing authentication and app ID.
+The owner entrance uses a native link inside About, replacing the iPhone-incompatible
+long press. The service is deployed; owner enrollment and a real private submission
+are verified.
+No passkey private key is generated or copied by a terminal script.
 
 ## User flow and design
 
-- Hold the library's existing `?` button for two seconds to open owner sign-in.
-  A short click keeps its current About behavior. Moving, cancelling, changing
-  visibility or releasing early cancels the hold. `Alt+Shift+O` is the keyboard
-  alternative outside editable fields. The direct owner URL is bookmarkable.
+- Tap the library's existing `?` button, then “Owner sign in” inside About.
+  Use native link navigation so ordinary touch, keyboard and browser actions work
+  without timers or custom gesture recognition. `Alt+Shift+O` remains an optional
+  desktop shortcut outside editable fields. The direct owner URL is bookmarkable.
 - This entrance is discreet, not an authorization boundary. Knowing the URL or
   reading public source must never allow queue access or enrollment.
 - Owner pages reuse Bhakti's burgundy ground, cream ink, serif headings, compact
@@ -150,7 +149,9 @@ Go tests exercise real WebAuthn signatures and filesystem transactions; the race
 suite and independent security review passed. Browser event tests cover the
 entrance and inbox retry/import behavior. Codex in-app Browser checks covered
 390px, tablet, desktop and large-screen layouts, literal request rendering, and
-the real long-hold entrance. Authenticated layout used a localhost fixture; it
+the former long-hold entrance. The owner subsequently reported that iPhone
+selection/callouts intercepted it; desktop held-click evidence did not establish
+phone usability. Authenticated layout used a localhost fixture; it
 is not evidence of owner enrollment. Bitwarden enrollment and physical iPhone
 Now Playing behavior require the owner's device.
 
@@ -159,3 +160,30 @@ The local recording-quality audit reported 275 recordings and no errors. The
 existing trim audit reports six content-evidence failures (one interval mismatch
 and five invalid review artifacts), retained for the separate translation/content
 repair task. This release changes no recordings, lyrics, timing or trim evidence.
+
+## Mobile entrance correction
+
+The owner reported that holding selected the control and opened an iPhone callout.
+Replace that mechanism instead of suppressing phone defaults globally. Apple's
+[gesture guidance](https://developer.apple.com/design/human-interface-guidelines/gestures)
+recommends familiar gestures for standard actions; W3C's
+[pointer cancellation guidance](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation/)
+supports activation on completed clicks. The replacement uses two ordinary taps
+with no timing requirement. The passkey boundary remains unchanged.
+
+Implementation order: first establish the native link/hidden-panel regression and
+reject navigation while holding; then remove pointer timers, add the link and its
+44px target, retain the desktop shortcut, bump the service-worker shell version,
+and verify the complete About-to-login path before publishing. No song text,
+audio, timing, backend state or credentials change.
+
+Correction verification: the regression first failed for the missing link, then
+for the old timer navigating while held; both pass with the replacement. In-app
+Browser checks passed at 390, 768, 1440 and 2560px, including hidden-by-default
+placement, a measured 44px link target, keyboard focus, Back navigation, and the
+complete path from both the initial library and a library loaded from a song page
+to live owner sign-in. These are browser checks, not physical-iPhone verification.
+The focused homepage/disclosure, PWA-update and design-authority tests pass;
+the 265-song contract audit and Python compilation pass. The broad legacy UI
+suite still reports unrelated song-shell/generator failures; the six existing
+trim-evidence failures remain in the content-repair task.
