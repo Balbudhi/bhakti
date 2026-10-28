@@ -8,9 +8,9 @@ and notes or load a UTF-8 text file, submit once, and see the durable private qu
 The public library stays on GitHub Pages. TimeCrystals authentication, credentials,
 content and installed-app identity are unchanged.
 
-Current step: implementation, independent security review and live HTTPS/CGI
-checks are complete. Publish the public entrance and finish enrollment through
-the owner's Bitwarden credential-provider prompt. No passkey private key
+Current step: the service and public entrance are deployed; independent security
+review and live HTTPS/CGI checks are complete. Owner enrollment remains a normal
+Bitwarden credential-provider ceremony. No passkey private key
 is generated or copied by a terminal script. The TimeCrystals installation
 metadata repair is separate and preserves its existing authentication and app ID.
 
