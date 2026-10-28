@@ -538,14 +538,22 @@ body.queue-open .app-stage { transform: none; }
 }
 .repeat-toggle:disabled { opacity: .24; cursor: default; }
 .ap-progress:focus-visible { outline: 1px solid var(--ink); outline-offset: 4px; }
-/* Keep a useful seek track alongside four controls on small phones. */
-@media (max-width: 600px) {
-  .audio-player { gap: 10px; }
-}
-@media (max-width: 380px) {
-  .audio-player .ap-time { min-width: 0; }
-  .audio-player .ap-time-sep,
-  .audio-player .ap-time-total { display: none; }
+/* A separate progress row keeps seeking useful beside six touch controls. */
+@media (max-width: 720px) {
+  .audio-player {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+  .audio-player > .app-view-toggle { grid-area: 2 / 1; }
+  .audio-player > .ap-seek-backward { grid-area: 2 / 2; }
+  .audio-player > #apPlayPause { grid-area: 2 / 3; }
+  .audio-player > .ap-seek-forward { grid-area: 2 / 4; }
+  .audio-player > .repeat-toggle { grid-area: 2 / 5; }
+  .audio-player > .queue-pill:not(.repeat-toggle) { grid-area: 2 / 6; }
+  .audio-player > .ap-progress { grid-area: 1 / 1 / 2 / 4; justify-self: stretch; }
+  .audio-player > .ap-time { grid-area: 1 / 4 / 2 / 7; min-width: 0; justify-self: end; }
 }
 
 /* Expand hit areas without enlarging the established visible circles. */

@@ -22,6 +22,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check player and PWA contracts
+        run: |
+          node scripts/test_player_progress.js
+          node scripts/test_player_keyboard.js
+          node scripts/test_player_viewport.js
+          node scripts/test_media_session.js
+          node scripts/test_mobile_zoom.js
+          node scripts/test_pwa_lifecycle.js
+          node scripts/test_queue_controls.js
       - uses: actions/configure-pages@v5
       - name: Assemble the published site
         run: python3 scripts/assemble_public_site.py

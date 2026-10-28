@@ -177,6 +177,11 @@ The current implementation is in `assets/app.css` under `.app-stage`, `.queue-sh
 - Focus must be visible, return predictably after disclosure closes, and never be lost during a rerender.
 - Labels describe the action and state (`Show playlist, 8 songs`, `Unlink lyrics from playback`), even when the visible control is icon-only.
 - Media controls reflect actual media events and fulfilled/rejected `play()` promises.
+- Keep visible Back 10 seconds and Forward 10 seconds controls beside Play/Pause.
+  They preserve playback/paused state, clamp to the recording boundaries, and
+  disable when duration is unknown. On mobile, place progress and elapsed/total
+  time on one row above the stable transport controls so the scrubber and touch
+  targets remain usable. Playlist Previous/Next retain their distinct track actions.
 - Expose the same transport through system media controls: evidenced song/credit,
   playback state, position, Play/Pause, available Previous/Next and seeking. The
   operating system chooses the displayed controls and may supply a seek interval;
