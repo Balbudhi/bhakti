@@ -156,6 +156,14 @@ The current implementation is in `assets/app.css` under `.app-stage`, `.queue-sh
 
 ## Interaction and accessibility
 
+- Owner access adds no public navigation: hold the existing library About (`?`)
+  control for two seconds, or use Alt+Shift+O outside editable fields. A short
+  press retains About. Movement, release, cancellation, blur or page hiding
+  cancels the hold. The separate owner URL is also directly accessible; the
+  gesture is only an entrance, and passkey verification protects every request.
+  Owner forms reuse the burgundy/cream palette, existing typography, hairlines
+  and visible focus. Keep intake text, save feedback and request history in one
+  reading column. Clearly distinguish saved requests from completed processing.
 - Tap/click is authoritative. Swipe, pull, and drag may be accelerators but never the only path.
 - Drag reorder must have a keyboard equivalent on the same handle.
 - Focus must be visible, return predictably after disclosure closes, and never be lost during a rerender.

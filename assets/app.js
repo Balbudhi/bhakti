@@ -981,6 +981,7 @@
   window.addEventListener("resize", setPlayerHeight, { passive: true });
 
   initializeState();
+  import("/assets/owner-entry.js").catch(error => console.warn("Owner entry could not be initialized", error));
   if ("mediaSession" in navigator) {
     import("/assets/media-session.js").then(({ attach }) => {
       systemMedia = attach({

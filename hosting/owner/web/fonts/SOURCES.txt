@@ -1,0 +1,11 @@
+Unmodified Google Fonts subsets, regular weight 400.
+Licenses are included alongside these files.
+
+cormorant-garamond-latin.woff2
+Source: https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_v86KnTOitk9IfqxUQ.woff2
+
+inter-latin-ext.woff2
+Source: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2
+
+inter-latin.woff2
+Source: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2
