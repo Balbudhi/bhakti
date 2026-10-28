@@ -67,7 +67,8 @@ The persistent player stays outside the animated page stage. Anchor it from the
 measured visible viewport bounds and its own rendered height; do not animate its vertical position
 or let playlist transforms replace that anchor. Playlist and status placement use
 the same viewport edge. Refresh bounds on viewport resize/pan and page restoration;
-retain normal page magnification during pinch zoom. Cap the playlist below the top
+retain browser-tab magnification during pinch zoom (installed mobile PWAs use
+the fixed-scale policy below). Cap the playlist below the top
 safe area and above the player. Preserve safe-area padding, the existing audio node and
 reading position through rotation; do not correct viewport bugs with guessed
 keyboard offsets or forced scrolling. Verify portrait → landscape → portrait
@@ -156,12 +157,19 @@ The current implementation is in `assets/app.css` under `.app-stage`, `.queue-sh
 
 ## Interaction and accessibility
 
+- Repeated mobile taps must not zoom the public library or reader. Apply
+  `touch-action: manipulation` at the shared document root, preserving normal
+  scrolling and browser pinch zoom. Installed mobile PWAs use a fixed scale
+  viewport, including on iOS versions that ignore the double-tap CSS policy.
+  Retain viewport width and safe-area settings. Do not cancel touch events or
+  synthesize clicks: transport, lyric taps and the hidden five-tap entry must
+  keep receiving their ordinary input. Desktop zoom remains unchanged.
 - Owner access is completely hidden on mobile and desktop: open About with `?`,
   then tap/click its unchanged heading five times, with no timing requirement.
   Do not render an owner label, link, button, counter, hint or confirmation surface.
   Other clicks, Escape, backgrounding and page restoration reset partial taps.
   Use completed clicks, never holding or pointer-down activation. Suppress text
-  selection and double-tap zoom only on that heading; preserve page pinch zoom.
+  selection on that heading; apply the shared zoom policy above.
   Alt/Option+Shift+O outside editable fields is the hidden keyboard alternative.
   The direct owner URL remains usable. Passkey verification protects private data.
 - Tap/click is authoritative. Swipe, pull, and drag may be accelerators but never the only path.

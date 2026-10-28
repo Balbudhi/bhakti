@@ -1,4 +1,19 @@
 (() => {
+  // Installed mobile apps keep a fixed page scale. Some iOS versions ignore
+  // touch-action: manipulation for double-tap zoom, so CSS alone is not enough.
+  // Ordinary browser tabs and desktop apps retain their scalable viewport.
+  const mobileStandalone = navigator.standalone === true
+    || window.matchMedia?.("(display-mode: standalone) and (any-pointer: coarse)").matches;
+  if (mobileStandalone) {
+    const viewport = document.querySelector('meta[name="viewport"]');
+    if (viewport) {
+      const retained = (viewport.getAttribute("content") || "width=device-width")
+        .split(",").map(part => part.trim())
+        .filter(part => part && !/^(?:initial-scale|minimum-scale|maximum-scale|user-scalable)\s*=/i.test(part));
+      viewport.setAttribute("content", [...retained, "initial-scale=1", "minimum-scale=1", "maximum-scale=1", "user-scalable=no"].join(", "));
+    }
+  }
+
   if (!("serviceWorker" in navigator)) return;
 
   let hadController = Boolean(navigator.serviceWorker.controller);

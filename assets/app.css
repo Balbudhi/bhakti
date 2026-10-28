@@ -1,3 +1,8 @@
+/* Repeated taps are actions, not zoom, throughout the library and reader.
+   Keep ordinary scrolling and browser pinch zoom; specialized drag/seek
+   controls retain their narrower touch-action rules. */
+html { touch-action: manipulation; }
+
 :root {
   --app-viewport-height: 100vh;
   --app-viewport-top: 0px;
