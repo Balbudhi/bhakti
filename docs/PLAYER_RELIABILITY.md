@@ -103,6 +103,18 @@ media controls, or Safari's occasional stale viewport measurements.
   stale native parent-app attribution in [WebKit PR 61189](https://github.com/WebKit/WebKit/pull/61189);
   its shipping iOS version was not established here. Prefer the Bhakti Home
   Screen icon over the affected Now Playing title-tap route.
+- Deeper attribution review (2026-10-28): WebKit derives Now Playing ownership
+  from the document's native presenting app, not the recording URL or metadata.
+  Its [audio-session manager](https://github.com/WebKit/WebKit/blob/46ef5f9666c0aac242e89f4f325c6db15369ad42/Source/WebKit/GPUProcess/media/RemoteAudioSessionProxyManager.cpp#L216)
+  shares a session per web process and uses the first page's native audit token.
+  That is a plausible process-attribution failure point, not a reproduction of
+  this device's cause. Bug 321673 reproduces with `audioSession.type = "playback"`;
+  bug 318944 survives reinstallation and top-level audio. Do not ship those as fixes.
+  A bounded owner test is pending: install a second copy named “Bhakti Test”,
+  preserving the original apps, and test the title tap before and after opening
+  TimeCrystals. [WebKit documents distinct installation names](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/);
+  whether fresh identity changes media routing remains unverified. An iOS update
+  is another troubleshooting step, with no confirmed shipping fix for this defect.
 - WebKit has reported stale visual viewport dimensions after keyboard/rotation changes.
   The zoom fallback in this app has a reproducible arithmetic error; fixing it does
   not establish that every reported unzoomed upward drift has the same cause. Capture
