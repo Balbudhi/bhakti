@@ -41,16 +41,17 @@ export function attach({ audio, playback, getSong, canPrevious, canNext, previou
     else audio.currentTime = position;
     syncPosition();
   };
-  const offset = details => Number.isFinite(details?.seekOffset) && details.seekOffset > 0
-    ? details.seekOffset : 10;
   const handlers = {
     play: () => { if (getSong()) playback.play(null, { retry: true }); },
     pause: () => playback.pause(),
     stop: () => { playback.pause(); seek(0); },
     previoustrack: () => { if (getSong() && canPrevious()) previous(); },
     nexttrack: () => { if (getSong() && canNext()) next(); },
-    seekbackward: details => seek(audio.currentTime - offset(details)),
-    seekforward: details => seek(audio.currentTime + offset(details)),
+    // iOS gives interval-seek controls the slots used by Previous/Next.
+    // Explicitly clear them, including when adopting an existing media session.
+    // Keep seekto and position state for native progress-bar scrubbing.
+    seekbackward: null,
+    seekforward: null,
     seekto: details => seek(details?.seekTime, details?.fastSeek === true),
   };
 

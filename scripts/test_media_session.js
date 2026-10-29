@@ -61,8 +61,8 @@ const path = require("node:path");
     app.handlers.play();
     assert.equal(app.calls.play, 1);
     assert.deepEqual(app.calls.playArgs[0], [null, { retry: true }], "A user media-key play can retry a failed recording");
-    app.handlers.seekforward({});
-    assert.equal(app.audio.currentTime, 35);
+    assert.equal(app.handlers.seekforward, null);
+    assert.equal(app.handlers.seekbackward, null);
     app.controller.destroy();
 
     // Metadata uses evidenced credit; source/queue updates replace prior title.
@@ -95,15 +95,18 @@ const path = require("node:path");
     app.handlers.previoustrack();
     assert.equal(app.calls.previous, 1);
 
-    // Seek while paused never plays; browser-supplied offset wins, fallback is 10s.
-    app.handlers.seekbackward({});
-    assert.equal(app.audio.currentTime, 15);
-    app.handlers.seekforward({ seekOffset: 15 });
-    assert.equal(app.audio.currentTime, 30);
-    app.handlers.seekbackward({ seekOffset: 200 });
-    assert.equal(app.audio.currentTime, 0);
-    app.handlers.seekforward({ seekOffset: -10 });
-    assert.equal(app.audio.currentTime, 10);
+    // Track actions must not compete with interval-seek commands on iOS.
+    // This policy applies at first/last boundaries, single songs and queue changes.
+    for (const [previous, next] of [[false, true], [true, true], [true, false], [false, false]]) {
+      app.setQueue(previous, next);
+      assert.equal(typeof app.handlers.previoustrack === "function", previous);
+      assert.equal(typeof app.handlers.nexttrack === "function", next);
+      assert.equal(app.handlers.seekbackward, null);
+      assert.equal(app.handlers.seekforward, null);
+      assert.equal(typeof app.handlers.seekto, "function", "Scrubbing remains available");
+    }
+
+    // Scrubbing while paused never starts playback and clamps recording bounds.
     app.handlers.seekto({ seekTime: 200 });
     assert.equal(app.audio.currentTime, 90);
     app.handlers.seekto({ seekTime: -20 });
@@ -125,7 +128,7 @@ const path = require("node:path");
     app.audio.readyState = 0;
     app.emit("emptied");
     assert.equal(app.positions.at(-1), undefined);
-    app.handlers.seekforward({});
+    app.handlers.seekto({ seekTime: 55 });
     assert.equal(app.audio.currentTime, 41, "Unknown source bounds must not receive a stale seek");
     app.audio.duration = 90;
     app.audio.readyState = 1;

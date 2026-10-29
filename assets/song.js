@@ -1240,20 +1240,6 @@ function setupAudioPlayer() {
   if (!audio || !btn || audio.dataset.bhaktiPlayerBound) return;
   audio.dataset.bhaktiPlayerBound = "true";
   const playback = getPlaybackController(audio);
-  // Build once on the persistent player, including older generated song shells.
-  const seekButtons = [-10, 10].map(offset => {
-    const button = document.createElement("button");
-    const direction = offset < 0 ? "backward" : "forward";
-    button.type = "button";
-    button.className = `ap-btn ap-seek-${direction}`;
-    button.setAttribute("aria-label", offset < 0 ? "Back 10 seconds" : "Forward 10 seconds");
-    button.title = offset < 0 ? "Back 10 seconds" : "Forward 10 seconds";
-    button.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="/assets/player-icons.svg#icon-seek-${direction}"/></svg>`;
-    button.addEventListener("click", () => seekTo(audio.currentTime + offset));
-    if (offset < 0) btn.before(button);
-    else btn.after(button);
-    return button;
-  });
 
   progEl.setAttribute("role", "slider");
   progEl.setAttribute("tabindex", "0");
@@ -1272,7 +1258,6 @@ function setupAudioPlayer() {
     progEl.setAttribute("aria-valuemax", String(length));
     progEl.setAttribute("aria-valuenow", String(position));
     progEl.setAttribute("aria-valuetext", length ? `${fmtTime(position)} of ${fmtTime(length)}` : "Duration unavailable");
-    for (const button of seekButtons) button.disabled = !length;
   };
 
   const togglePlayback = () => {

@@ -43,18 +43,7 @@ function setup(length = 125) {
 }
 
 let app = setup();
-assert.equal(app.controls.length, 2, "Reinitializing a persistent player must not duplicate seek buttons");
-const [backward, forward] = app.controls;
-assert.equal(backward.type, "button");
-assert.equal(forward.type, "button");
-assert.equal(backward.attrs["aria-label"], "Back 10 seconds");
-assert.equal(forward.attrs["aria-label"], "Forward 10 seconds");
-backward.emit("click");
-assert.equal(app.audio.currentTime, 20);
-forward.emit("click");
-assert.equal(app.audio.currentTime, 30);
-assert.equal(app.audio.paused, true);
-assert.equal(app.transportCalls(), 0, "Visible seek buttons must not toggle playback");
+assert.equal(app.controls.length, 0, "Player initialization must preserve the existing controls without adding seek buttons");
 assert.equal(app.apProgress.attrs.role, "slider");
 assert.equal(app.apProgress.attrs["aria-label"], "Seek");
 assert.equal(app.apProgress.attrs["aria-orientation"], "horizontal");
@@ -74,9 +63,6 @@ assert.equal(app.transportCalls(), 0);
 app.audio.paused = false;
 app.press("ArrowRight");
 assert.equal(app.audio.paused, false);
-forward.emit("click");
-assert.equal(app.audio.currentTime, 20);
-assert.equal(app.audio.paused, false);
 assert.equal(app.transportCalls(), 0);
 app.audio.currentTime = 62.5;
 app.audio.emit("timeupdate");
@@ -88,20 +74,11 @@ app.apProgress.emit("pointerup", { pointerId: 1 });
 app.apProgress.emit("pointerdown", { clientX: -50, pointerId: 2, button: 0 });
 assert.equal(app.audio.currentTime, 0);
 app.apProgress.emit("pointerup", { pointerId: 2 });
-backward.emit("click");
-assert.equal(app.audio.currentTime, 0, "Back clamps at the start");
-app.audio.currentTime = 120;
-forward.emit("click");
-assert.equal(app.audio.currentTime, 125, "Forward clamps at the end");
 assert.equal(app.transportCalls(), 0);
 
 for (const duration of [NaN, Infinity, 0, -1]) {
   app = setup(duration);
   assert.equal(app.apProgress.attrs["aria-disabled"], "true");
-  for (const button of app.controls) {
-    assert.equal(button.disabled, true, "No duration means no visible seeking");
-    button.emit("click");
-  }
   app.press("End");
   app.apProgress.emit("pointerdown", { clientX: 50, pointerId: 1, button: 0 });
   assert.equal(app.audio.currentTime, 30, `Unseekable duration ${duration}`);
@@ -109,10 +86,9 @@ for (const duration of [NaN, Infinity, 0, -1]) {
   assert.equal(app.transportCalls(), 0);
   app.audio.duration = 120;
   app.audio.emit("loadedmetadata");
-  assert.ok(app.controls.every(button => button.disabled === false));
   assert.equal(app.apProgress.attrs["aria-disabled"], "false");
   assert.equal(app.apProgress.attrs["aria-valuemax"], "120");
   app.press("End");
   assert.equal(app.audio.currentTime, 120);
 }
-console.log("Progress slider and visible 10-second controls preserve transport state and finite bounds");
+console.log("Progress slider preserves transport state, finite bounds and existing player controls");

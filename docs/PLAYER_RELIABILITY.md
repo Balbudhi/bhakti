@@ -8,14 +8,17 @@ seeking and update adoption must preserve the current listening session. Investi
 the reported iPhone Home Screen app cross-launch and floating player without
 claiming that a plausible cause is a reproduced device failure.
 
-Current step: automated integration checks pass; six missing recordings have been
-uploaded and verified against their original SHA256/size and HTTP byte-range reads.
-Their URL-only page patch is deployed in `d43aadc2`; the live catalogue and all twelve
-affected song files match the release. The account-control lifecycle, discovery
-and queued-admission repairs restored the in-app Browser through its actual caller.
-Browser layout and native playback checks pass. The release contains only the
-scoped player, tests and design documentation changes; unrelated content work is
-excluded. Physical iPhone reproduction remains unavailable.
+Current step (2026-10-28): remove the rejected visible ±10-second controls and
+restore the compact player geometry from `b3df7865`. Clear timed-seek Media Session
+handlers so they do not compete with Previous/Next, retaining native scrubbing,
+position state and queue-boundary checks. Preserve the separately shipped offline
+cache normalization and deployment regression checks. Production handler tests and all four responsive layout checks pass. Browser
+playback advances to a second song and returns to the first; paused scrubbing
+remains paused. The 265-song contract audit and 20,540 ready/deferred lyric seeks
+pass. The local audio audit passes 275 recordings; six historical trim-evidence
+conflicts remain unchanged. Independent review found no blocking findings. The owner (iOS 26.3.1)
+confirmed that manifest changes did not fix wrong-PWA title taps; that defect is
+unresolved and must not be reported as fixed by this release.
 
 ## Interfaces and invariants
 
@@ -34,9 +37,10 @@ excluded. Physical iPhone reproduction remains unavailable.
   pointer, keyboard and assistive technology without changing pause state.
 - The Media Session adapter receives the audio/controller and queue action callbacks.
   It exposes evidenced metadata, actual playback state, valid duration/position and
-  Play/Pause/Previous/Next/seek commands. The operating system chooses which controls
-  to display and may provide its own seek interval; absent or partial APIs must not
-  break in-app listening.
+  Play/Pause/Previous/Next and seek-to-position commands. Interval seeking is
+  explicitly disabled to keep native track navigation available. The operating
+  system chooses the displayed controls; absent or partial APIs must not break
+  in-app listening.
 - PWA updates may reload an idle page but cannot reload a document that has started
   a listening session, even when subsequently paused or backgrounded.
 - The visible viewport's height and offset remain in CSS pixels during zoom. Keep
@@ -76,6 +80,12 @@ media controls, or Safari's occasional stale viewport measurements.
 
 ## Unresolved observations
 
+- The owner reconfirmed on 2026-10-28 that Now Playing title taps still open
+  TimeCrystals. WebKit reports 267810, 318944 and 321673 remain open; the last
+  reproduces across unrelated domains, so moving to another domain is not an
+  evidenced cure. The [Media Session specification](https://www.w3.org/TR/mediasession/#user-interface-guidelines)
+  exposes no action or target for title taps. The browser owns that routing.
+  No additional JavaScript, manifest or service-worker fix is established.
 - Both apps already have distinct origin-qualified manifest identities. TimeCrystals'
   inspected local installation code does not register a service worker. Its live site
   returned HTTP 406 during inspection. There is no evidence of a shared web storage or

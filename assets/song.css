@@ -371,7 +371,6 @@ html, body {
   .ap-btn:not(:disabled):hover { background: rgba(244, 234, 208, 0.10); }
 }
 .ap-btn:active:not(:disabled) { transform: scale(0.94); }
-.ap-btn:disabled { opacity: .3; cursor: default; }
 .ap-btn .ap-icon-play  { margin-left: 2px; }
 .ap-btn .ap-icon-pause { display: none; }
 .ap-btn.is-playing .ap-icon-play  { display: none; }
