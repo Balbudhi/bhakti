@@ -110,11 +110,16 @@ media controls, or Safari's occasional stale viewport measurements.
   That is a plausible process-attribution failure point, not a reproduction of
   this device's cause. Bug 321673 reproduces with `audioSession.type = "playback"`;
   bug 318944 survives reinstallation and top-level audio. Do not ship those as fixes.
-  A bounded owner test is pending: install a second copy named “Bhakti Test”,
-  preserving the original apps, and test the title tap before and after opening
-  TimeCrystals. [WebKit documents distinct installation names](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/);
-  whether fresh identity changes media routing remains unverified. An iOS update
-  is another troubleshooting step, with no confirmed shipping fix for this defect.
+  The owner completed the second-install test on iOS 26.3.1: a fresh copy named
+  “Bhakti Test” still opens the wrong app from the lock-screen title. Fresh
+  installation identity is therefore a failed workaround on this device, not a
+  pending test or recommended fix. Do not repeat installation/name/manifest
+  changes without new evidence. The report does not isolate which launch-order
+  phase failed. No reliable website-only routing fix is established. Safari
+  playback would bypass the installed-PWA host but is untested on this device;
+  a separately signed native player with native audio ownership is a different
+  implementation path, not an existing delivered fix. An iOS update likewise
+  has no confirmed resolution for this specific defect.
 - WebKit has reported stale visual viewport dimensions after keyboard/rotation changes.
   The zoom fallback in this app has a reproducible arithmetic error; fixing it does
   not establish that every reported unzoomed upward drift has the same cause. Capture
