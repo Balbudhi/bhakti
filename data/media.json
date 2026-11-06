@@ -2603,6 +2603,18 @@
         "type": "audio/mp4",
         "sha256": "24faac740f60df31394510c696e2903532f423f0dfe39223f379f25dd3744c01"
       }
+    ],
+    "balam-aao-hamare-geh-re": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-0c8751aae7f330a0ee582e02512e6b2ce72830a1d1129a223a4fd6c82d42ea42.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "0c8751aae7f330a0ee582e02512e6b2ce72830a1d1129a223a4fd6c82d42ea42"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-09b0008d31ca15be2507104675bf464397c9993fa4ab074fd780f688bb5ee5ee.m4a",
+        "type": "audio/mp4",
+        "sha256": "09b0008d31ca15be2507104675bf464397c9993fa4ab074fd780f688bb5ee5ee"
+      }
     ]
   }
 }

@@ -91,6 +91,38 @@ window.BHAKTI_SONGS = [
     "queueNumber": 95
   },
   {
+    "slug": "balam-aao-hamare-geh-re",
+    "queueId": "20b91240",
+    "title": "Bālam Āo Geh Re",
+    "credit": "Kabīr · Anupama Srivastava",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Balam Ao Geh Re",
+      "Kabir · Anupama Srivastava",
+      "Kabir",
+      "Baalam Aao"
+    ],
+    "writer": "Kabīr",
+    "singer": "Anupama Srivastava",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-0c8751aae7f330a0ee582e02512e6b2ce72830a1d1129a223a4fd6c82d42ea42.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "0c8751aae7f330a0ee582e02512e6b2ce72830a1d1129a223a4fd6c82d42ea42"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-09b0008d31ca15be2507104675bf464397c9993fa4ab074fd780f688bb5ee5ee.m4a",
+        "type": "audio/mp4",
+        "sha256": "09b0008d31ca15be2507104675bf464397c9993fa4ab074fd780f688bb5ee5ee"
+      }
+    ],
+    "queueNumber": 270
+  },
+  {
     "slug": "khel-mandiyela",
     "queueId": "00ce4003",
     "title": "Khel Māṇḍiyelā",
