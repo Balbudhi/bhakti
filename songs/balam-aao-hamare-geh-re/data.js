@@ -135,7 +135,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tum bin dukhiyā deh re",
-    "english": "{1:Without }{0,4:you, }the {3:body }{2:is suffering}",
+    "english": "{1:Without }{0:you, }the {3:body }{2:is suffering}, {4:beloved}",
     "words": [
       {
         "roman": "Tum",
@@ -273,7 +273,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Moko lāgat lāj re",
-    "english": "{2:Shame }{1:takes hold of }{0,3:me}",
+    "english": "{2:Shame }{1:takes hold of }{0:me}, {3:beloved}",
     "words": [
       {
         "roman": "Moko",
@@ -429,7 +429,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gṛha ban dharai na dhīr re",
-    "english": "{0:Neither at home }{1:nor in the forest }{2,3,4,5:can I keep calm}",
+    "english": "{0,3:Neither at home }{1,3:nor in the forest }{2,4:can I keep calm}, {5:beloved}",
     "words": [
       {
         "roman": "Gṛha",
@@ -439,7 +439,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ban",
-        "gloss": "in the forest; outside",
+        "gloss": "forest",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -523,7 +523,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "to",
-        "gloss": "indeed; at last",
+        "gloss": "indeed (emphasis)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -591,7 +591,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bin dekhe jīv jāy re",
-    "english": "{0:Without }{1,4:seeing you, }{2:life }{3:departs}",
+    "english": "{0:Without }{1:seeing you, }{2:life }{3:departs}, {4:beloved}",
     "words": [
       {
         "roman": "Bin",
@@ -607,7 +607,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīv",
-        "gloss": "life; individual living being",
+        "gloss": "life",
         "concept_key": "jiva",
         "preserve_in_english": false
       },
