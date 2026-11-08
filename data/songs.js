@@ -93,31 +93,30 @@ window.BHAKTI_SONGS = [
   {
     "slug": "balam-aao-hamare-geh-re",
     "queueId": "20b91240",
-    "title": "Bālam Āo Geh Re",
-    "credit": "Kabīr · Anupama Srivastava",
+    "title": "Bālam Āvo Hamāre Geh Re",
+    "credit": "Kabīr · Manoj Mishra · Kashyap Vora",
     "languageTags": [
+      "Braj",
       "Hindi"
     ],
     "subjectTags": [],
     "searchAliases": [
-      "Balam Ao Geh Re",
-      "Kabir · Anupama Srivastava",
+      "Balam Avo Hamare Geh Re",
+      "Kabir · Manoj Mishra · Kashyap Vora",
       "Kabir",
       "Baalam Aao"
     ],
     "writer": "Kabīr",
-    "singer": "Anupama Srivastava",
-    "composer": "",
+    "singer": "Manoj Mishra",
+    "composer": "Kashyap Vora",
     "audioSources": [
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-0c8751aae7f330a0ee582e02512e6b2ce72830a1d1129a223a4fd6c82d42ea42.webm",
-        "type": "audio/webm; codecs=opus",
-        "sha256": "0c8751aae7f330a0ee582e02512e6b2ce72830a1d1129a223a4fd6c82d42ea42"
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-9bb1ea3ce12d7265bcfc9980ec00c1bba5465e8177f367eabdbd6cb752fa1559.webm",
+        "type": "audio/webm; codecs=opus"
       },
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-09b0008d31ca15be2507104675bf464397c9993fa4ab074fd780f688bb5ee5ee.m4a",
-        "type": "audio/mp4",
-        "sha256": "09b0008d31ca15be2507104675bf464397c9993fa4ab074fd780f688bb5ee5ee"
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-d081bf7a2675957f3dde2db19ac06dd7804777814dd0f3a088ffd930b2d7a8e0.m4a",
+        "type": "audio/mp4"
       }
     ],
     "queueNumber": 270
