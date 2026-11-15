@@ -2159,6 +2159,18 @@
         "sha256": "5b003fd8cd552e415d82241ca88a1a2262e89d56105adf14dc1cb5155ecb4323"
       }
     ],
+    "rudrashtakam-sharma-bandhu": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-sharma-bandhu-ae22dcbadbbb108f9b85e374c7a5da1268ee318d381d57ecd6486295b2524dbc.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "ae22dcbadbbb108f9b85e374c7a5da1268ee318d381d57ecd6486295b2524dbc"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-sharma-bandhu-e59500c94ee6dc727e628af2a05fec66702955dfa07750f9861c52028e26e02e.m4a",
+        "type": "audio/mp4",
+        "sha256": "e59500c94ee6dc727e628af2a05fec66702955dfa07750f9861c52028e26e02e"
+      }
+    ],
     "saasa-haale": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saasa-haale-fd4d6c0c73b0d63e94f973953161317829eddc593b81504e1ab4b864eab30e45.webm",

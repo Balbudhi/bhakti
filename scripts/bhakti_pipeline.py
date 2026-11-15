@@ -414,12 +414,15 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
                   or fields.get("poet") or fields.get("author") or fields.get("written by") or "")
         singer = (override.get("singer") or fields.get("artist") or fields.get("singer")
                   or fields.get("sung by") or fields.get("vocalist") or title_artist)
-        composer = (override.get("composer") or fields.get("music director") or fields.get("composer")
+        composer = (override.get("composer") or fields.get("composer")
                     or fields.get("composed") or fields.get("music") or "")
+        music_director = (override.get("musicDirector") or fields.get("music director")
+                          or fields.get("music directors") or "")
         jobs.append({"slug": naming.slugify(title), "source": metadata.get("webpage_url") or source_value,
                      "title": title, "displayTitle": str(override.get("displayTitle") or ""), "subtitle": fields.get("album", ""),
                      "writer": writer, "singer": singer, "vocalist": str(override.get("vocalist") or ""),
                      "ensemble": str(override.get("ensemble") or ""), "composer": composer,
+                     **({"musicDirector": music_director} if music_director else {}),
                      "languages": list(override.get("languages") or []),
                      "subjectTags": list(override.get("subjectTags") or []),
                      "searchAliases": [raw_title, *(override.get("searchAliases") or [])], "_source_metadata": metadata,
@@ -5532,14 +5535,15 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     for field, label in (("writer", str(meta.get("writerAttribution") or "Poet")),
                          ("translator", str(meta.get("translatorAttribution") or "Translation")),
                          ("singer", "Singer"), ("vocalist", "Vocalist"),
-                         ("composer", "Composer"), ("ensemble", "Recital")):
+                         ("composer", "Composer"), ("musicDirector", "Music direction"),
+                         ("ensemble", "Recital")):
         person = str(meta.get(field) or "").strip()
         if person:
             people.setdefault(person, []).append(label)
     def display_roles(person: str, roles: list[str]) -> str:
         person_count = len([part for part in re.split(r"\s+(?:&|and)\s+", person, flags=re.I) if part])
         return " · ".join(
-            role if role == "Recital" or person_count == 1 else f"{role}s" for role in roles
+            role if role in ("Recital", "Music direction") or person_count == 1 else f"{role}s" for role in roles
         )
     def single_person_credit(person: str) -> bool:
         return len(people) == 1 and not re.search(r"\s+(?:&|and)\s+", person, flags=re.I)
@@ -5561,7 +5565,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     subtitle = str(meta.get("subtitle") or "").strip()
     heading = f"{title} — {subtitle}" if subtitle else title
     performer = str(meta.get("singer") or meta.get("vocalist") or "").strip()
-    song_asset_version = str(meta.get("songAssetVersion") or "tooltip-20261022-5")
+    song_asset_version = str(meta.get("songAssetVersion") or "touch-20261023")
     data_asset_version = str(meta.get("dataAssetVersion") or "contract-20260827-8")
     description = (f"{heading}: synchronised devotional lyrics with IAST transliteration, "
                    f"a literal English translation, and word-by-word meanings."
@@ -5619,7 +5623,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   <script src="/data/songs.js?v=contract-20260823-1"></script>
   <script src="/assets/queue.js?v=ui-20261023"></script>
   <script src="/assets/library.js?v=touch-20261023"></script>
-  <script src="/assets/song.js?v=touch-20261023"></script>
+  <script src="/assets/song.js?v={escape(song_asset_version)}"></script>
   <script src="/assets/app.js?v=ui-20261023-3"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>
@@ -5660,6 +5664,9 @@ def catalogue_entry(song_dir: Path, meta: dict[str, Any]) -> dict[str, Any]:
         "composer": str(meta.get("composer") or ""),
         "audioSources": list(meta.get("audioSources") or [{"src": "audio.m4a", "type": "audio/mp4"}]),
     }
+    music_director = str(meta.get("musicDirector") or "").strip()
+    if music_director:
+        entry["musicDirector"] = music_director
     subtitle = str(meta.get("subtitle") or "").strip()
     if subtitle:
         entry["subtitle"] = subtitle
@@ -5881,8 +5888,9 @@ def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audit
     singer = naming.canonical_person(job.get("singer") or source.get("artist") or "")
     vocalist = naming.canonical_person(job.get("vocalist", ""))
     composer = naming.canonical_person(job.get("composer") or source.get("composer") or "")
+    music_director = naming.canonical_person(job.get("musicDirector", ""))
     ensemble = str(job.get("ensemble") or "").strip()
-    distinct_people = list(dict.fromkeys(person for person in (writer, translator, singer, composer) if person))
+    distinct_people = list(dict.fromkeys(person for person in (writer, translator, singer, composer, music_director) if person))
     credit = str(job.get("credit", "")).strip() or " · ".join(distinct_people)
     page_credit = str(job.get("pageCredit", "")).strip() or singer or credit
     subjects = tag_taxonomy.merge_subject_tags(job.get("subjectTags", []), lines)
@@ -5894,8 +5902,8 @@ def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audit
     languages = language_resolution["song_languages"]
     aliases = naming.search_aliases(
         [job["slug"].replace("-", " "), title, subtitle, credit, page_credit,
-         writer, translator, singer, vocalist, composer, ensemble, *subjects, *languages],
-        [*naming.person_search_aliases((job.get("writer"), job.get("translator"), job.get("singer"), job.get("vocalist"), job.get("composer"), writer, translator, singer, vocalist, composer)),
+         writer, translator, singer, vocalist, composer, music_director, ensemble, *subjects, *languages],
+        [*naming.person_search_aliases((job.get("writer"), job.get("translator"), job.get("singer"), job.get("vocalist"), job.get("composer"), job.get("musicDirector"), writer, translator, singer, vocalist, composer, music_director)),
          *(job.get("searchAliases") or [])],
     )
     meta = {"title": title, "subtitle": subtitle, "credit": credit, "pageCredit": page_credit,
@@ -5908,6 +5916,8 @@ def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audit
             "timingStatus": "start-only-reviewed",
             "translationStatus": "gloss-derived literal",
             "sourceStatus": "reviewed"}
+    if music_director:
+        meta["musicDirector"] = music_director
     for version_field in ("songAssetVersion", "dataAssetVersion"):
         if job.get(version_field):
             meta[version_field] = str(job[version_field])

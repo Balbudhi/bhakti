@@ -9010,4 +9010,37 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 286
 }
+,
+{
+  "slug": "rudrashtakam-sharma-bandhu",
+  "queueId": "9c2c973a",
+  "title": "Rudrāṣṭakam",
+  "credit": "Tulasīdāsa · Sharma Bandhu · Govind & Dinesh",
+  "languageTags": [
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Śiva"
+  ],
+  "searchAliases": [
+    "Rudrashtakam",
+    "Namami Shamishan",
+    "Tulsidas"
+  ],
+  "writer": "Tulasīdāsa",
+  "singer": "Sharma Bandhu",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-sharma-bandhu-ae22dcbadbbb108f9b85e374c7a5da1268ee318d381d57ecd6486295b2524dbc.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-sharma-bandhu-e59500c94ee6dc727e628af2a05fec66702955dfa07750f9861c52028e26e02e.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "musicDirector": "Govind & Dinesh",
+  "queueNumber": 287
+}
 ];
