@@ -337,6 +337,18 @@
         "sha256": "1bc7dc9d3e287933358c210622c587a9cefc4a4acd722ef4f2bf2d4d336c71d7"
       }
     ],
+    "brahmam-okkate": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/brahmam-okkate-5bf7ade46c5306ac1fbd1ebcdd33ffaf1e9b6ace89c38237b9aa58e440835248.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "5bf7ade46c5306ac1fbd1ebcdd33ffaf1e9b6ace89c38237b9aa58e440835248"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/brahmam-okkate-32d73b57d2d5e502fa93214866c4faaa7c83279a7da4447550a6fee542c6d14f.m4a",
+        "type": "audio/mp4",
+        "sha256": "32d73b57d2d5e502fa93214866c4faaa7c83279a7da4447550a6fee542c6d14f"
+      }
+    ],
     "chakar-rakho-ji": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.webm",

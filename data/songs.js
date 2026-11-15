@@ -9373,4 +9373,37 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 297
 }
+,
+{
+  "slug": "brahmam-okkate",
+  "queueId": "c3b16728",
+  "title": "Brahmam Okkaṭē",
+  "credit": "Annamācārya · Sudha Ragunathan",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Nirguṇa",
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Brahmam Okkate",
+    "Brahmamokkate",
+    "Sudha Raghunathan"
+  ],
+  "writer": "Annamācārya",
+  "singer": "Sudha Ragunathan",
+  "composer": "Annamācārya",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/brahmam-okkate-5bf7ade46c5306ac1fbd1ebcdd33ffaf1e9b6ace89c38237b9aa58e440835248.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/brahmam-okkate-32d73b57d2d5e502fa93214866c4faaa7c83279a7da4447550a6fee542c6d14f.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 298
+}
 ];
