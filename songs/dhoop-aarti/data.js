@@ -91,7 +91,7 @@ window.SONG_META = {
     {
       "sequenceIndex": 193,
       "title": "Śivāparādha-kṣamāpaṇa · Prārthanā",
-      "poet": "Traditionally attributed to Ādi Śaṅkarācārya",
+      "poet": "Ādi Śaṅkarācārya",
       "note": "The closing forgiveness verse is a Shaiva prayer. This Sai recension replaces its standard final address, Śrī Mahādeva Śambho, with Śrīprabho Sāīnātha; that substitution is marked."
     }
   ],

@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Pārvatī",
   "credit": "Sadhu Tiwari",
   "writer": "Sadhu Tiwari",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Sadhu Tiwari",
   "composer": "Sadhu Tiwari",
   "languages": [

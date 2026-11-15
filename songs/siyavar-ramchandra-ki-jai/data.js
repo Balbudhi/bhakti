@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Siyāvar Rāmcandra Kī Jai",
   "credit": "Shantanu Sudame · Shantanu Sudame & Dhirendra Mulkalwar",
   "writer": "Shantanu Sudame",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Shantanu Sudame & Dhirendra Mulkalwar",
   "composer": "Dhirendra Mulkalwar",
   "languages": [

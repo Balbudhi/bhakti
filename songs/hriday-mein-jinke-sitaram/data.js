@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Hṛday Meṃ Jinke Sītārām",
   "credit": "Vishal Chaturvedi",
   "writer": "Vishal Chaturvedi",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Vishal Chaturvedi",
   "composer": "Vishal Chaturvedi",
   "languages": [

@@ -5598,7 +5598,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "pradnya-vivardhan-stotra",
     "queueId": "a35f026d",
-    "title": "Prājñā Vivardhana Stotra",
+    "title": "Prajñā Vivardhana Stotra",
     "credit": "Traditional · Shankar Mahadevan · Kedar Pandit",
     "languageTags": [
       "Sanskrit"
@@ -5625,7 +5625,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Sarasvatī",
+    "subtitle": "Kārtikeya",
     "queueNumber": 233
   },
   {

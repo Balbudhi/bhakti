@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "He Kharārī",
   "credit": "Sadhu Tiwari",
   "writer": "Sadhu Tiwari",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Sadhu Tiwari",
   "composer": "Sadhu Tiwari",
   "languages": [

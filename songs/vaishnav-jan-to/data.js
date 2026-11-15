@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Vaiṣṇav Jan To",
   "credit": "Narsiṃh Mehtā · Rishi Pathak",
   "writer": "Narsiṃh Mehtā",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Rishi Pathak",
   "composer": "Rishi Pathak",
   "languages": [

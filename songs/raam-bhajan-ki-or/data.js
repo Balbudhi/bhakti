@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Rām Bhajan Kī Or",
   "credit": "Rishi Pathak · Nivedita Padmanabhan",
   "writer": "Rishi Pathak",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Nivedita Padmanabhan",
   "composer": "Rishi Pathak",
   "languages": [

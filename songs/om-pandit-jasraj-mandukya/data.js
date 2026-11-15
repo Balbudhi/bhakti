@@ -59,7 +59,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ya evaṃ veda",
-    "english": "{0:Whoever }{2:knows }{1:thus,}",
+    "english": "{0:who }{2:knows }{1:thus.}",
     "words": [
       {
         "roman": "ya",
@@ -141,16 +141,16 @@ window.SONG_LINES = {
       }
     ],
     "roman": "evamoṅkāraḥ",
-    "english": "{0:thus is Omkāra:}",
+    "english": "{0:Thus Om is}",
     "words": [
       {
         "roman": "evamoṅkāraḥ",
-        "gloss": "thus is the syllable Om; in this manner is Omkāra",
+        "gloss": "thus, the syllable Om; its equation with the Self continues in the next line",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi compound: evam (adv.) + oṅkāraḥ (nom. sg. masc.)."
+    "grammarNote": "External sandhi joins evam (thus) and oṅkāraḥ (nominative singular). The next line’s ātmaiva completes the equation: thus Om is the Self alone."
   },
   "line-003": {
     "source": "आत्मैव संविशत्यात्मनाऽऽत्मानम्",
@@ -170,7 +170,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ātmaiva saṃviśatyātmanā''tmānam",
-    "english": "{0:the Self alone }{1:enters into the Self by the self.}",
+    "english": "{0:the Self alone. }{1:One enters the Self through oneself,}",
     "words": [
       {
         "roman": "ātmaiva",
@@ -180,12 +180,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṃviśatyātmanā''tmānam",
-        "gloss": "enters into the Self by the self",
+        "gloss": "one enters the Self through oneself; the following who knows thus identifies the subject",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi sequence: ātmaiva (ātmā + eva); saṃviśati (pres. 3rd sg. from sam-√viś) + ātmanā (instr. sg.) + ātmānam (acc. sg.). The double apostrophe indicates the prolonged vowel merger (ātmanā + ātmānam)."
+    "grammarNote": "Ātmā eva (the Self alone) completes the preceding equation with Om. Saṃviśati is third-person singular, present: enters; ātmanā is instrumental, through oneself; ātmānam is accusative, the Self. The subject is the knower identified by the following ya evaṃ veda, not ātmā eva. The retained double avagraha notation marks the meeting of ātmanā and ātmānam; it is not a separate spoken word."
   },
   "line-004": {
     "source": "ओङ्कारः",

@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Sāṃsā Hāle",
   "credit": "Guru Gorakṣanāth · Sadhu Tiwari",
   "writer": "Guru Gorakṣanāth",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Sadhu Tiwari",
   "composer": "Sadhu Tiwari",
   "languages": [

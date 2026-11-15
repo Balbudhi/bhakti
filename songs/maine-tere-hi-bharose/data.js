@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Maiṃne Tere Hī Bharose",
   "credit": "Suneel Lodhi",
   "writer": "",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Suneel Lodhi",
   "composer": "Suneel Lodhi",
   "languages": [

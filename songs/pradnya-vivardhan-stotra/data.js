@@ -1,6 +1,6 @@
 window.SONG_META = {
-  "title": "Prājñā Vivardhana Stotra",
-  "subtitle": "Sarasvatī",
+  "title": "Prajñā Vivardhana Stotra",
+  "subtitle": "Kārtikeya",
   "credit": "Traditional · Shankar Mahadevan · Kedar Pandit",
   "pageCredit": "Shankar Mahadevan",
   "writer": "Traditional",

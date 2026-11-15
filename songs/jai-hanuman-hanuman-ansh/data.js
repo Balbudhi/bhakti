@@ -2,7 +2,7 @@ window.SONG_META = {
   "title": "Jai Hanumān",
   "credit": "Shreyas Dharmadhikari & Rishi Pathak & Samarth Rāmdās · Shreyas Dharmadhikari",
   "writer": "Shreyas Dharmadhikari & Rishi Pathak & Samarth Rāmdās",
-  "writerAttribution": "Writer",
+  "writerAttribution": "Poet",
   "singer": "Shreyas Dharmadhikari",
   "composer": "Shreyas Dharmadhikari & Rishi Pathak",
   "languages": [
