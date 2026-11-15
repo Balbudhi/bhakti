@@ -1509,6 +1509,18 @@
         "sha256": "ad1f4c44b25587299cc18e7a8235461e63676a99123869c5afa44d50967192e7"
       }
     ],
+    "main-banjaran-ram-ki": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-banjaran-ram-ki-5ae8de7331f2ebbe7fd1ca9ba8d6ea58dd6665097f365c3b7f882249444c0f96.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "5ae8de7331f2ebbe7fd1ca9ba8d6ea58dd6665097f365c3b7f882249444c0f96"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-banjaran-ram-ki-18dfa5af55dce35f044083c4c34e74ca3d6581f6fc1759ef3f469072ad795d13.m4a",
+        "type": "audio/mp4",
+        "sha256": "18dfa5af55dce35f044083c4c34e74ca3d6581f6fc1759ef3f469072ad795d13"
+      }
+    ],
     "main-dharu-tiharo-dhyan": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-dharu-tiharo-dhyan.m4a",

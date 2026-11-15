@@ -8975,4 +8975,39 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 283
 }
+,
+{
+  "slug": "main-banjaran-ram-ki",
+  "queueId": "1230598b",
+  "title": "Mai Banjāran Rām Kī",
+  "credit": "Gurū Nānak · Bhai Nirmal Singh Ji Khalsa",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī",
+    "Nirguṇa",
+    "Rāma"
+  ],
+  "searchAliases": [
+    "Main Banjaran Ram Ki",
+    "Gurbani",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Nānak",
+  "singer": "Bhai Nirmal Singh Ji Khalsa",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-banjaran-ram-ki-5ae8de7331f2ebbe7fd1ca9ba8d6ea58dd6665097f365c3b7f882249444c0f96.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/main-banjaran-ram-ki-18dfa5af55dce35f044083c4c34e74ca3d6581f6fc1759ef3f469072ad795d13.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 286
+}
 ];
