@@ -67,7 +67,7 @@ window.SONG_LINES = {
   "l02": {
     "source": "नाम से तुम्हरे मानुस क्या जी पत्थर भी तर जाए।",
     "roman": "nām se tumhare mānus kyā jī patthar bhī tar jāe",
-    "english": "{0,1,2:Through your name}, {3,4,5:let alone human beings}— {6:Stones} {7:even} {8,9:cross over}.",
+    "english": "{0,1,2:Through your name}, {3,4,5:let alone human beings}— {7:even} {6:stones} {8,9:cross over}.",
     "words": [
       {
         "roman": "nām",
@@ -327,7 +327,7 @@ window.SONG_LINES = {
   "l05": {
     "source": "धनुष को साजे बन-बन भटके मेरे सियावर राम।",
     "roman": "dhanuṣ ko sāje ban-ban bhaṭke mere siyāvar rām",
-    "english": "{2:Bearing} {0,1:a bow}— {4:Wandered} {3:from forest to forest}— {5:My} {7:Rāma}, {6:Sītā’s husband}.",
+    "english": "{5:My} {7:Rāma}, {6:Sītā’s husband}, {4:wandered} {3:from forest to forest}, {2:bearing} {0,1:a bow}.",
     "words": [
       {
         "roman": "dhanuṣ",
@@ -507,7 +507,7 @@ window.SONG_LINES = {
   "l07": {
     "source": "हनुमान सो वीर, चरण रज माथे पर है लगाए",
     "roman": "hanumān so vīr caraṇ raj māthe par hai lagāe",
-    "english": "{2:A hero} {1:such as} {0:Hanumān}— {7,8:Has applied} {3,4:the dust of your feet} {5,6:on his forehead}.",
+    "english": "{2:A hero} {1:such as} {0:Hanumān} {7,8:has applied} {3,4:the dust of your feet} {5,6:on his forehead}.",
     "words": [
       {
         "roman": "hanumān",
@@ -607,7 +607,7 @@ window.SONG_LINES = {
   "l08": {
     "source": "बस यही राजा राम सियावर मोरे मन है भाए।",
     "roman": "bas yahī rājā rām siyāvar more man hai bhāe",
-    "english": "{0:Only} {1:this very} {2:King} {3:Rāma}— {4:Sītā’s husband} {7,8:pleases} {5,6:my heart}.",
+    "english": "{0:Only} {1:this very} {2:King} {3:Rāma}, {4:Sītā’s husband}, {7,8:pleases} {5,6:my heart}.",
     "words": [
       {
         "roman": "bas",

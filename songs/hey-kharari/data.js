@@ -892,7 +892,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "karẽ",
-        "gloss": "perform, honorific or optative"
+        "gloss": "perform, honorific"
       },
       {
         "roman": "survar",

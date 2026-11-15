@@ -4,7 +4,7 @@ window.SONG_META = {
   "writer": "Shreyas Dharmadhikari & Rishi Pathak & Samarth Rāmdās",
   "writerAttribution": "Writer",
   "singer": "Shreyas Dharmadhikari",
-  "composer": "Shreyas Dharmadhikari",
+  "composer": "Shreyas Dharmadhikari & Rishi Pathak",
   "languages": [
     "Hindi",
     "Marathi"
@@ -638,7 +638,7 @@ window.SONG_LINES = {
   "l12": {
     "source": "कष्टों को तुम हर लो भगवान",
     "roman": "Kaṣṭoṃ ko tum har lo Bhagavān",
-    "english": "{5:Lord, }{2:you, }{3,4:take away }{0,1:hardships.}",
+    "english": "{5:Lord, }{2:you }{3,4:take away }{0,1:hardships.}",
     "words": [
       {
         "roman": "Kaṣṭoṃ",
@@ -850,7 +850,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nidān",
-        "gloss": "remedy; resolution, a contextually extended use"
+        "gloss": "relief; remedy"
       }
     ],
     "sourceWords": [
@@ -996,7 +996,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yojan",
-        "gloss": "a traditional unit of distance; no fixed modern conversion is supplied"
+        "gloss": "a traditional unit of distance"
       },
       {
         "roman": "ke",

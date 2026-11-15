@@ -549,7 +549,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "cale",
-        "gloss": "goes or let it go"
+        "gloss": "go; an exhortation to the mind"
       },
       {
         "roman": "re",
@@ -557,7 +557,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cale",
-        "gloss": "goes or let it go"
+        "gloss": "go; an exhortation to the mind"
       },
       {
         "roman": "re",
@@ -565,7 +565,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cale",
-        "gloss": "goes or let it go"
+        "gloss": "go; an exhortation to the mind"
       },
       {
         "roman": "re",
@@ -573,7 +573,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cale",
-        "gloss": "goes or let it go"
+        "gloss": "go; an exhortation to the mind"
       },
       {
         "roman": "re",

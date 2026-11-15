@@ -2087,6 +2087,18 @@
         "sha256": "5b003fd8cd552e415d82241ca88a1a2262e89d56105adf14dc1cb5155ecb4323"
       }
     ],
+    "saasa-haale": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saasa-haale-fd4d6c0c73b0d63e94f973953161317829eddc593b81504e1ab4b864eab30e45.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "fd4d6c0c73b0d63e94f973953161317829eddc593b81504e1ab4b864eab30e45"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saasa-haale-0bee667a8bab65d514c32953eeae9a2b70d09c3fb1d6fd907f1847e97c3450f1.m4a",
+        "type": "audio/mp4",
+        "sha256": "0bee667a8bab65d514c32953eeae9a2b70d09c3fb1d6fd907f1847e97c3450f1"
+      }
+    ],
     "sab-paise-ke-bhai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sab-paise-ke-bhai.m4a",

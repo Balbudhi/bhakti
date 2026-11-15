@@ -8714,7 +8714,7 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Shreyas Dharmadhikari & Rishi Pathak & Samarth Rāmdās",
     "singer": "Shreyas Dharmadhikari",
-    "composer": "Shreyas Dharmadhikari",
+    "composer": "Shreyas Dharmadhikari & Rishi Pathak",
     "audioSources": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-hanuman-hanuman-ansh-f081da0130c9c8f00228b9a808c59b66d7ce2da1e6ac2361c80b75f9be3b289e.webm",
@@ -8787,5 +8787,33 @@ window.BHAKTI_SONGS = [
       }
     ],
     "queueNumber": 272
+  },
+  {
+    "slug": "saasa-haale",
+    "queueId": "a4dfcde3",
+    "title": "Sāṃsā Hāle",
+    "credit": "Guru Gorakṣanāth · Sadhu Tiwari",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Saasa Haale",
+      "Hanuman Ansh"
+    ],
+    "writer": "Guru Gorakṣanāth",
+    "singer": "Sadhu Tiwari",
+    "composer": "Sadhu Tiwari",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saasa-haale-fd4d6c0c73b0d63e94f973953161317829eddc593b81504e1ab4b864eab30e45.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saasa-haale-0bee667a8bab65d514c32953eeae9a2b70d09c3fb1d6fd907f1847e97c3450f1.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 280
   }
 ];
