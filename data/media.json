@@ -62,6 +62,18 @@
         "sha256": "fc6f31e992ddcfe9a19e79aede3bd25ce82c0c4c5ab15ea42a842a3bc5403dec"
       }
     ],
+    "aavagaman": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aavagaman-9d8cd1d829f0f8833c7a4afe75ab1f4a6520237e31f1af1d1b3596dd1c9d570d.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "9d8cd1d829f0f8833c7a4afe75ab1f4a6520237e31f1af1d1b3596dd1c9d570d"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aavagaman-829e8bf1487724b0d3b2846e9b2b9872fa1c15c215397b885b47f612caa67215.m4a",
+        "type": "audio/mp4",
+        "sha256": "829e8bf1487724b0d3b2846e9b2b9872fa1c15c215397b885b47f612caa67215"
+      }
+    ],
     "ab-to-mujhko-bata-mere-sai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ab-to-mujhko-bata-mere-sai.m4a",
@@ -177,6 +189,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balada-beka-re-lagila-ghanti.m4a",
         "type": "audio/mp4",
         "sha256": "2771b6ca6aa52bec444da97ae80109b8450b806839c99a843f4441b0fef8f9cb"
+      }
+    ],
+    "balam-aao-hamare-geh-re": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-9bb1ea3ce12d7265bcfc9980ec00c1bba5465e8177f367eabdbd6cb752fa1559.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "9bb1ea3ce12d7265bcfc9980ec00c1bba5465e8177f367eabdbd6cb752fa1559"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-d081bf7a2675957f3dde2db19ac06dd7804777814dd0f3a088ffd930b2d7a8e0.m4a",
+        "type": "audio/mp4",
+        "sha256": "d081bf7a2675957f3dde2db19ac06dd7804777814dd0f3a088ffd930b2d7a8e0"
       }
     ],
     "baso-mere-nainan-me-nandalal": [
@@ -753,11 +777,35 @@
         "sha256": "ea1655420fc4bd3d59ea3d28c8bd2463197e27bb279a080043b0fdd7377cbe61"
       }
     ],
+    "hey-kharari": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-kharari-f2f706798af28f2bd761227eb662369b4905c626bb9d59013a8cd25a41d4fd70.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "f2f706798af28f2bd761227eb662369b4905c626bb9d59013a8cd25a41d4fd70"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-kharari-2182dae124eda43dfe8f02266a7352885e78826b22dae191320eb5e0b3cda4ce.m4a",
+        "type": "audio/mp4",
+        "sha256": "2182dae124eda43dfe8f02266a7352885e78826b22dae191320eb5e0b3cda4ce"
+      }
+    ],
     "hey-nath-ab-to-aisi-daya-h": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-nath-ab-to-aisi-daya-h.m4a",
         "type": "audio/mp4",
         "sha256": "eb70511a194c5754dc12ef66c2efc72c2a2393c5433924ed4968174aa312d7b6"
+      }
+    ],
+    "hriday-mein-jinke-sitaram": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hriday-mein-jinke-sitaram-bf465d1021de562447a5807b620c7fcc5dbc5324d29390f7fa84242f264e9dbd.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "bf465d1021de562447a5807b620c7fcc5dbc5324d29390f7fa84242f264e9dbd"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hriday-mein-jinke-sitaram-ecacbce4cff1dfcfba8bc99ea1cf6ad970468c6f955c375fcfd8355c26a6c8e9.m4a",
+        "type": "audio/mp4",
+        "sha256": "ecacbce4cff1dfcfba8bc99ea1cf6ad970468c6f955c375fcfd8355c26a6c8e9"
       }
     ],
     "ishwar-se-kuch-mangna-ho-to": [
@@ -859,6 +907,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-ganesh-jai-ganesh-pyare.m4a",
         "type": "audio/mp4",
         "sha256": "02e244628ee37306fa43b664d57672e4cf1a98af942ada9e3b6aa6e5117b9d5d"
+      }
+    ],
+    "jai-hanuman-hanuman-ansh": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-hanuman-hanuman-ansh-f081da0130c9c8f00228b9a808c59b66d7ce2da1e6ac2361c80b75f9be3b289e.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "f081da0130c9c8f00228b9a808c59b66d7ce2da1e6ac2361c80b75f9be3b289e"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-hanuman-hanuman-ansh-30173c35b833b2ab6629b0b81554eba2c57872f70f40cf2d4a0d084259f71511.m4a",
+        "type": "audio/mp4",
+        "sha256": "30173c35b833b2ab6629b0b81554eba2c57872f70f40cf2d4a0d084259f71511"
       }
     ],
     "jai-jagdishwari-mata-saraswati": [
@@ -1427,6 +1487,18 @@
         "sha256": "6c772a059370c2b13934bcec8eae0aafa66c4567be2e289d1a080c87f3e659cc"
       }
     ],
+    "maine-tere-hi-bharose": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maine-tere-hi-bharose-3e0477dd74d8d7b40a63956ed587897dab75540df664f9e9fd107e49b1fb7fc9.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "3e0477dd74d8d7b40a63956ed587897dab75540df664f9e9fd107e49b1fb7fc9"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maine-tere-hi-bharose-de17b6b6ea26aa95cfd4052c9d3b3a10e9576439cbfa47c93a7bbe28c0251500.m4a",
+        "type": "audio/mp4",
+        "sha256": "de17b6b6ea26aa95cfd4052c9d3b3a10e9576439cbfa47c93a7bbe28c0251500"
+      }
+    ],
     "man-ke-manjeere-se": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-ke-manjeere-se.m4a",
@@ -1815,6 +1887,18 @@
         "sha256": "3e91049f50d19366e82a57c6814b61993b1ca9ddcd80305de7572ed67e616fb9"
       }
     ],
+    "parvati-hanuman-ansh": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/parvati-hanuman-ansh-f1d470c29d3912c025164494ac89f60428c86988fbc2ccd92b7ad34ceb6ede4e.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "f1d470c29d3912c025164494ac89f60428c86988fbc2ccd92b7ad34ceb6ede4e"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/parvati-hanuman-ansh-55f541388881c6a65721e811501d9c41c2c832d0e95f5299498125f5fb40d30c.m4a",
+        "type": "audio/mp4",
+        "sha256": "55f541388881c6a65721e811501d9c41c2c832d0e95f5299498125f5fb40d30c"
+      }
+    ],
     "patita-pavan-jai-raam": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patita-pavan-jai-raam.mp3",
@@ -1894,6 +1978,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prem-sahit-sab-bolo-kirtan.m4a",
         "type": "audio/mp4",
         "sha256": "073871734ad6d4d831fba382a5ba34d354ef93b2bc14a7341b7e852e1fc6e133"
+      }
+    ],
+    "raam-bhajan-ki-or": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raam-bhajan-ki-or-3dc744637d4b9f88faf37545ee0c26ba68f0e91c0991e1f5f9c2153dc8fd232d.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "3dc744637d4b9f88faf37545ee0c26ba68f0e91c0991e1f5f9c2153dc8fd232d"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raam-bhajan-ki-or-627069ba8679b2de9b31272fa9231c938303829bb2a3bbe9b2a6e266d130bcb5.m4a",
+        "type": "audio/mp4",
+        "sha256": "627069ba8679b2de9b31272fa9231c938303829bb2a3bbe9b2a6e266d130bcb5"
       }
     ],
     "raat-dhal-gayee": [
@@ -2330,6 +2426,18 @@
         "sha256": "e214245aa41d48c97c0b7c5294b94c0e93b6b65d758c6c94c33267d1134f0d2f"
       }
     ],
+    "siyavar-ramchandra-ki-jai": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siyavar-ramchandra-ki-jai-bc38237868f55ba78024058bd7c49443f8d9dc1bd205fa0be0d884babc12b68f.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "bc38237868f55ba78024058bd7c49443f8d9dc1bd205fa0be0d884babc12b68f"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siyavar-ramchandra-ki-jai-a1c394c0d2419d7c1100f738061b9a01f5256140b58d995dcc45646c13affac3.m4a",
+        "type": "audio/mp4",
+        "sha256": "a1c394c0d2419d7c1100f738061b9a01f5256140b58d995dcc45646c13affac3"
+      }
+    ],
     "so-dar-keha-so-ghar-keha": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-dar-keha-so-ghar-keha.webm",
@@ -2528,6 +2636,18 @@
         "sha256": "b1f088cedf93870bfbd4b1927077acfce96ea6b063cd2b7d4993adddbf869afd"
       }
     ],
+    "vaishnav-jan-to": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnav-jan-to-5127fbcf7f4d7eafed19cdc4de215f0aa67b35e55e17b82b44ff43c365a5eafa.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "5127fbcf7f4d7eafed19cdc4de215f0aa67b35e55e17b82b44ff43c365a5eafa"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnav-jan-to-265693036b6474680d6d149007925e93801d68d4fcde2b182a42aef6d3054b4e.m4a",
+        "type": "audio/mp4",
+        "sha256": "265693036b6474680d6d149007925e93801d68d4fcde2b182a42aef6d3054b4e"
+      }
+    ],
     "venkatachala-nilayam": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/venkatachala-nilayam.webm",
@@ -2602,18 +2722,6 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/zara-to-itana-bata-do-sai.m4a",
         "type": "audio/mp4",
         "sha256": "24faac740f60df31394510c696e2903532f423f0dfe39223f379f25dd3744c01"
-      }
-    ],
-    "balam-aao-hamare-geh-re": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-9bb1ea3ce12d7265bcfc9980ec00c1bba5465e8177f367eabdbd6cb752fa1559.webm",
-        "type": "audio/webm; codecs=opus",
-        "sha256": "9bb1ea3ce12d7265bcfc9980ec00c1bba5465e8177f367eabdbd6cb752fa1559"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balam-aao-hamare-geh-re-d081bf7a2675957f3dde2db19ac06dd7804777814dd0f3a088ffd930b2d7a8e0.m4a",
-        "type": "audio/mp4",
-        "sha256": "d081bf7a2675957f3dde2db19ac06dd7804777814dd0f3a088ffd930b2d7a8e0"
       }
     ]
   }

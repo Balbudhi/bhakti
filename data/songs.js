@@ -8507,5 +8507,285 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śiva",
     "queueNumber": 266
+  },
+  {
+    "slug": "siyavar-ramchandra-ki-jai",
+    "queueId": "33f327e1",
+    "title": "Siyāvar Rāmcandra Kī Jai",
+    "credit": "Shantanu Sudame · Shantanu Sudame & Dhirendra Mulkalwar",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Śiva",
+      "Hanumān"
+    ],
+    "searchAliases": [
+      "Siyavar Ramchandra Ki Jai",
+      "Hanuman Ansh"
+    ],
+    "writer": "Shantanu Sudame",
+    "singer": "Shantanu Sudame & Dhirendra Mulkalwar",
+    "composer": "Dhirendra Mulkalwar",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siyavar-ramchandra-ki-jai-bc38237868f55ba78024058bd7c49443f8d9dc1bd205fa0be0d884babc12b68f.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siyavar-ramchandra-ki-jai-a1c394c0d2419d7c1100f738061b9a01f5256140b58d995dcc45646c13affac3.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 279
+  },
+  {
+    "slug": "parvati-hanuman-ansh",
+    "queueId": "ba899f0a",
+    "title": "Pārvatī",
+    "credit": "Sadhu Tiwari",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Śiva",
+      "Pārvatī"
+    ],
+    "searchAliases": [
+      "Parvati",
+      "Hanuman Ansh"
+    ],
+    "writer": "Sadhu Tiwari",
+    "singer": "Sadhu Tiwari",
+    "composer": "Sadhu Tiwari",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/parvati-hanuman-ansh-f1d470c29d3912c025164494ac89f60428c86988fbc2ccd92b7ad34ceb6ede4e.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/parvati-hanuman-ansh-55f541388881c6a65721e811501d9c41c2c832d0e95f5299498125f5fb40d30c.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 278
+  },
+  {
+    "slug": "aavagaman",
+    "queueId": "a335f68e",
+    "title": "Āvāgaman",
+    "credit": "Sadhu Tiwari",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Aavagaman",
+      "Hanuman Ansh"
+    ],
+    "writer": "Sadhu Tiwari",
+    "singer": "Sadhu Tiwari",
+    "composer": "Sadhu Tiwari",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aavagaman-9d8cd1d829f0f8833c7a4afe75ab1f4a6520237e31f1af1d1b3596dd1c9d570d.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aavagaman-829e8bf1487724b0d3b2846e9b2b9872fa1c15c215397b885b47f612caa67215.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 276
+  },
+  {
+    "slug": "maine-tere-hi-bharose",
+    "queueId": "74816a8b",
+    "title": "Maiṃne Tere Hī Bharose",
+    "credit": "Suneel Lodhi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Hanumān"
+    ],
+    "searchAliases": [
+      "Maine Tere Hi Bharose",
+      "Hanuman Ansh"
+    ],
+    "writer": "",
+    "singer": "Suneel Lodhi",
+    "composer": "Suneel Lodhi",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maine-tere-hi-bharose-3e0477dd74d8d7b40a63956ed587897dab75540df664f9e9fd107e49b1fb7fc9.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maine-tere-hi-bharose-de17b6b6ea26aa95cfd4052c9d3b3a10e9576439cbfa47c93a7bbe28c0251500.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 277
+  },
+  {
+    "slug": "hey-kharari",
+    "queueId": "5d82a376",
+    "title": "He Kharārī",
+    "credit": "Sadhu Tiwari",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Hey Kharari",
+      "Hanuman Ansh"
+    ],
+    "writer": "Sadhu Tiwari",
+    "singer": "Sadhu Tiwari",
+    "composer": "Sadhu Tiwari",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-kharari-f2f706798af28f2bd761227eb662369b4905c626bb9d59013a8cd25a41d4fd70.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-kharari-2182dae124eda43dfe8f02266a7352885e78826b22dae191320eb5e0b3cda4ce.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 271
+  },
+  {
+    "slug": "raam-bhajan-ki-or",
+    "queueId": "0e905832",
+    "title": "Rām Bhajan Kī Or",
+    "credit": "Rishi Pathak · Nivedita Padmanabhan",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Raam Bhajan Ki Or",
+      "Hanuman Ansh"
+    ],
+    "writer": "Rishi Pathak",
+    "singer": "Nivedita Padmanabhan",
+    "composer": "Rishi Pathak",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raam-bhajan-ki-or-3dc744637d4b9f88faf37545ee0c26ba68f0e91c0991e1f5f9c2153dc8fd232d.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raam-bhajan-ki-or-627069ba8679b2de9b31272fa9231c938303829bb2a3bbe9b2a6e266d130bcb5.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 274
+  },
+  {
+    "slug": "jai-hanuman-hanuman-ansh",
+    "queueId": "5b911c1a",
+    "title": "Jai Hanumān",
+    "credit": "Shreyas Dharmadhikari & Rishi Pathak & Samarth Rāmdās · Shreyas Dharmadhikari",
+    "languageTags": [
+      "Hindi",
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Śiva",
+      "Hanumān"
+    ],
+    "searchAliases": [
+      "Jai Hanuman",
+      "Hanuman Ansh"
+    ],
+    "writer": "Shreyas Dharmadhikari & Rishi Pathak & Samarth Rāmdās",
+    "singer": "Shreyas Dharmadhikari",
+    "composer": "Shreyas Dharmadhikari",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-hanuman-hanuman-ansh-f081da0130c9c8f00228b9a808c59b66d7ce2da1e6ac2361c80b75f9be3b289e.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-hanuman-hanuman-ansh-30173c35b833b2ab6629b0b81554eba2c57872f70f40cf2d4a0d084259f71511.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 273
+  },
+  {
+    "slug": "vaishnav-jan-to",
+    "queueId": "07431dae",
+    "title": "Vaiṣṇav Jan To",
+    "credit": "Narsiṃh Mehtā · Rishi Pathak",
+    "languageTags": [
+      "Gujarati"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Vaishnav Jan To",
+      "Hanuman Ansh"
+    ],
+    "writer": "Narsiṃh Mehtā",
+    "singer": "Rishi Pathak",
+    "composer": "Rishi Pathak",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnav-jan-to-5127fbcf7f4d7eafed19cdc4de215f0aa67b35e55e17b82b44ff43c365a5eafa.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnav-jan-to-265693036b6474680d6d149007925e93801d68d4fcde2b182a42aef6d3054b4e.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 275
+  },
+  {
+    "slug": "hriday-mein-jinke-sitaram",
+    "queueId": "5079a2ee",
+    "title": "Hṛday Meṃ Jinke Sītārām",
+    "credit": "Vishal Chaturvedi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Sītā",
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Hriday Mein Jinke Sitaram",
+      "Hanuman Ansh"
+    ],
+    "writer": "Vishal Chaturvedi",
+    "singer": "Vishal Chaturvedi",
+    "composer": "Vishal Chaturvedi",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hriday-mein-jinke-sitaram-bf465d1021de562447a5807b620c7fcc5dbc5324d29390f7fa84242f264e9dbd.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hriday-mein-jinke-sitaram-ecacbce4cff1dfcfba8bc99ea1cf6ad970468c6f955c375fcfd8355c26a6c8e9.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 272
   }
 ];

@@ -534,7 +534,7 @@ function renderSongMeta() {
   };
   const credits = [...people].map(([person, roles]) => `
     <div class="song-credit-entry">
-      <dt>${escapeHtml(displayRoles(person, roles))}</dt>
+      <dt${people.size === 1 && !/\s+(?:&|and)\s+/i.test(person) ? " hidden" : ""}>${escapeHtml(displayRoles(person, roles))}</dt>
       <dd>${escapeHtml(person)}</dd>
     </div>`).join("");
   const tags = [

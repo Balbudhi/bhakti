@@ -5541,8 +5541,10 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
         return " · ".join(
             role if role == "Recital" or person_count == 1 else f"{role}s" for role in roles
         )
+    def single_person_credit(person: str) -> bool:
+        return len(people) == 1 and not re.search(r"\s+(?:&|and)\s+", person, flags=re.I)
     credits = "".join(
-        f'<div class="song-credit-entry"><dt>{escape(display_roles(person, roles))}</dt><dd>{escape(person)}</dd></div>'
+        f'<div class="song-credit-entry"><dt{" hidden" if single_person_credit(person) else ""}>{escape(display_roles(person, roles))}</dt><dd>{escape(person)}</dd></div>'
         for person, roles in people.items()
     )
     tags = "".join(
