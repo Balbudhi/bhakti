@@ -9406,4 +9406,37 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 298
 }
+,
+{
+  "slug": "harivarasanam",
+  "queueId": "de3e32b1",
+  "title": "Harivarāsanam",
+  "credit": "Konnakath Janaki Amma · K. J. Yesudas · G. Devarajan",
+  "languageTags": [
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Ayyappa"
+  ],
+  "searchAliases": [
+    "Harivarasanam",
+    "Hariharātmaja",
+    "Hariharatmaja",
+    "Ayyappan"
+  ],
+  "writer": "Konnakath Janaki Amma",
+  "singer": "K. J. Yesudas",
+  "composer": "G. Devarajan",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/harivarasanam-e53e5ac805ab7d73a6d9cc17f351011e912989d72cd8492dec5d543e0c936a5a.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/harivarasanam-236d31274b8e893ce5a5945a0414372ff61c446eb946524554304360854207a8.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 299
+}
 ];

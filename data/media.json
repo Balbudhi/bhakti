@@ -787,6 +787,18 @@
         "sha256": "708611a8871f9b892d573690a2e81103e458dad699a187fa949f6824b78bbe45"
       }
     ],
+    "harivarasanam": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/harivarasanam-e53e5ac805ab7d73a6d9cc17f351011e912989d72cd8492dec5d543e0c936a5a.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "e53e5ac805ab7d73a6d9cc17f351011e912989d72cd8492dec5d543e0c936a5a"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/harivarasanam-236d31274b8e893ce5a5945a0414372ff61c446eb946524554304360854207a8.m4a",
+        "type": "audio/mp4",
+        "sha256": "236d31274b8e893ce5a5945a0414372ff61c446eb946524554304360854207a8"
+      }
+    ],
     "he-aanadamaya-prabhu": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-aanadamaya-prabhu.webm",
