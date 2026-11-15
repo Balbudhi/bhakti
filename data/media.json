@@ -485,6 +485,18 @@
         "sha256": "9781f758ee8f47d780ae79c8bfaf55becae56cef8ed5e7df062bc68baa2786bb"
       }
     ],
+    "deh-shiva-bar-mohe-hai": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-shiva-bar-mohe-hai-7ea337bf7959a4bb160b56d70ac1f30c31c42a2dd855fee66b50be4633bf0020.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "7ea337bf7959a4bb160b56d70ac1f30c31c42a2dd855fee66b50be4633bf0020"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-shiva-bar-mohe-hai-1f96af786274c07b8ff789939d6740a116c776fef39a05e27f5177561b995315.m4a",
+        "type": "audio/mp4",
+        "sha256": "1f96af786274c07b8ff789939d6740a116c776fef39a05e27f5177561b995315"
+      }
+    ],
     "deha-re-mo-lagilani": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deha-re-mo-lagilani.webm",
@@ -1271,6 +1283,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kakad-aarti.m4a",
         "type": "audio/mp4",
         "sha256": "90a0ff59632a836b125f607bd1e466b50b71ee25c5740939ca9e21bb096bfe95"
+      }
+    ],
+    "kanakadhara-stotram": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kanakadhara-stotram-aaa5b5799d09583b9bb47282578d396a014f8604ccecac79c312e76da5f59268.m4a",
+        "type": "audio/mp4",
+        "sha256": "aaa5b5799d09583b9bb47282578d396a014f8604ccecac79c312e76da5f59268"
       }
     ],
     "kaya-nahin-teri-nahin-teri": [
@@ -2169,6 +2188,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rann-jeeti-rama-rao-aye.m4a",
         "type": "audio/mp4",
         "sha256": "29d740e947f38dffb0572185df4204a0044148cbd34535fe0dabe521b770ed5c"
+      }
+    ],
+    "re-man-aiso-kar-sanyasa": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/re-man-aiso-kar-sanyasa-61e1737f1932d856f579e59aeadec55760fcfcaf1bff30fb095c87926295421d.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "61e1737f1932d856f579e59aeadec55760fcfcaf1bff30fb095c87926295421d"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/re-man-aiso-kar-sanyasa-a253229d15355c69b913c96207cbf9e9c022eccfb3628066f20988e29827dc58.m4a",
+        "type": "audio/mp4",
+        "sha256": "a253229d15355c69b913c96207cbf9e9c022eccfb3628066f20988e29827dc58"
       }
     ],
     "rehna-nahi-isa-desa": [

@@ -1408,6 +1408,21 @@
           "reason": "Owner-requested Sikh sacred-song grouping, including Guru Gobind Singh compositions outside the Guru Granth Sahib. Verified source: Dasam Granth · Khayāl Pātisāhī 10 · Śabad 6."
         }
       ]
+    },
+    "deh-shiva-bar-mohe-hai": {
+      "addTags": [],
+      "removeTags": [
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "operation": "remove",
+          "tag": "Śiva",
+          "source": "ਦੇਹ ਸਿਵਾ ਬਰ ਮੋਹਿ ਇਹੈ ਸੁਭ ਕਰਮਨ ਤੇ ਕਬਹੂੰ ਨ ਟਰੋ",
+          "reason": "Śivā is the feminine auspicious Goddess invoked in this Caṇḍī-caritra prayer. Folding its long final ā creates a male Śiva match; retain the reviewed Śakti and Gurbāṇī classification."
+        }
+      ],
+      "performedSourcesSha256": "7d7c6af14cd103deea5ecc93791277db86091f55407715d207d3f466f143d268"
     }
   }
 }

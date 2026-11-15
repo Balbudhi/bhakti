@@ -9273,4 +9273,104 @@ window.BHAKTI_SONGS = [
   "musicDirector": "Sadhu Tiwari",
   "queueNumber": 294
 }
+,
+{
+  "slug": "re-man-aiso-kar-sanyasa",
+  "queueId": "6cb868a8",
+  "title": "Re Man Aiso Kari Sannyāsā",
+  "credit": "Gurū Arjan & Gurū Gobind Siṅgh · Bhai Balbir Singh Ji",
+  "languageTags": [
+    "Braj",
+    "Punjabi",
+    "Sahaskritī"
+  ],
+  "subjectTags": [
+    "Gurbāṇī",
+    "Nirguṇa",
+    "Rāma"
+  ],
+  "searchAliases": [
+    "Reman Aiso Kar Sanyasa",
+    "Gurbani",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Arjan & Gurū Gobind Siṅgh",
+  "singer": "Bhai Balbir Singh Ji",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/re-man-aiso-kar-sanyasa-61e1737f1932d856f579e59aeadec55760fcfcaf1bff30fb095c87926295421d.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/re-man-aiso-kar-sanyasa-a253229d15355c69b913c96207cbf9e9c022eccfb3628066f20988e29827dc58.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 296
+},
+{
+  "slug": "kanakadhara-stotram",
+  "queueId": "b9b86354",
+  "title": "Kanakadhārā Stotram",
+  "credit": "Ādi Śaṅkarācārya · M. S. Subbulakshmi",
+  "languageTags": [
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Lakṣmī"
+  ],
+  "searchAliases": [
+    "Kanakadhara Stotram",
+    "Kanakadhara Stotra",
+    "Adi Shankaracharya"
+  ],
+  "writer": "Ādi Śaṅkarācārya",
+  "singer": "M. S. Subbulakshmi",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kanakadhara-stotram-aaa5b5799d09583b9bb47282578d396a014f8604ccecac79c312e76da5f59268.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 295
+}
+,
+{
+  "slug": "deh-shiva-bar-mohe-hai",
+  "queueId": "cf944294",
+  "title": "Deh Śivā Bar Mohi Ihai",
+  "credit": "Gurū Gobind Siṅgh · Bhai Harjinder Singh Ji (Srinagar Wale)",
+  "languageTags": [
+    "Braj",
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī",
+    "Śakti"
+  ],
+  "searchAliases": [
+    "Deh Shiva Bar Mohe Hai",
+    "Gurbani",
+    "Sikh",
+    "Sikhi",
+    "Nishchay Kar Apni Jeet Karhun"
+  ],
+  "writer": "Gurū Gobind Siṅgh",
+  "singer": "Bhai Harjinder Singh Ji (Srinagar Wale)",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-shiva-bar-mohe-hai-7ea337bf7959a4bb160b56d70ac1f30c31c42a2dd855fee66b50be4633bf0020.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-shiva-bar-mohe-hai-1f96af786274c07b8ff789939d6740a116c776fef39a05e27f5177561b995315.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 297
+}
 ];
