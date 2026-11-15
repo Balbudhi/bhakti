@@ -9139,4 +9139,138 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 290
 }
+,
+{
+  "slug": "rudrashtakam-rameshbhai-oza",
+  "queueId": "ef07b1c2",
+  "title": "Rudrāṣṭakam",
+  "credit": "Tulasīdāsa · Rameshbhai Oza",
+  "languageTags": [
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Śiva"
+  ],
+  "searchAliases": [
+    "Rudrashtakam",
+    "Namami Shamishan",
+    "Tulsidas"
+  ],
+  "writer": "Tulasīdāsa",
+  "singer": "Rameshbhai Oza",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-rameshbhai-oza-def3f70abcebd4f01a6cb081b5c8cb55df7834d5b602a5057a706bc614f4d416.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-rameshbhai-oza-9e85060f72434ca6d108a67d07f8fed5cdcbc41a7aea16e07c73b8aa78ea57c2.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 291
+}
+,
+{
+  "slug": "shyamala-dandakam",
+  "queueId": "9260062a",
+  "title": "Śyāmalā Daṇḍakam",
+  "credit": "Kālidāsa · D. K. Pattammal",
+  "languageTags": [
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Śyāmalā",
+    "Śakti"
+  ],
+  "searchAliases": [
+    "Shyamala Dandakam",
+    "Syamala Dandakam",
+    "Matangi",
+    "Mātaṅgī"
+  ],
+  "writer": "Kālidāsa",
+  "singer": "D. K. Pattammal",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shyamala-dandakam-ee5ab0be93fdd178fafa6f7dd8a862ad1cca629eca89ee56c5b89df6b72e2b74.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shyamala-dandakam-3e33247d9a03dc6a83b173f1285038d1006b9067f5609332f445bdcee7efbb88.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 292
+},
+{
+  "slug": "sivapuranam",
+  "queueId": "1f79ece2",
+  "title": "Civapurāṇam",
+  "credit": "Māṇikkavācakar · Soolamangalam Sisters",
+  "languageTags": [
+    "Tamil"
+  ],
+  "subjectTags": [
+    "Śiva"
+  ],
+  "searchAliases": [
+    "Sivapuranam",
+    "Shivapuranam",
+    "Śivapurāṇam",
+    "Thiruvasagam",
+    "Manikkavasagar"
+  ],
+  "writer": "Māṇikkavācakar",
+  "singer": "Soolamangalam Sisters",
+  "composer": "Soolamangalam Sisters",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sivapuranam-8a759f6e5e253b653a7a87d4387745b7a07a404148110a866686be9bdd9cd924.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sivapuranam-2e7c1fcf29cc1723f625140646a29ac1484238d9d4fa9c1ef8e9d2613e6fb7de.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 293
+}
+,
+{
+  "slug": "bajrang-baanka",
+  "queueId": "6ea7a9d9",
+  "title": "Bajraṅg Bāṅkā",
+  "credit": "Budhakauśika · Sadhu Tiwari",
+  "languageTags": [
+    "Sanskrit",
+    "Hindi"
+  ],
+  "subjectTags": [
+    "Hanumān",
+    "Rāma"
+  ],
+  "searchAliases": [
+    "Bajrang Baanka",
+    "Bajrang Banka",
+    "Hanuman Ansh"
+  ],
+  "writer": "Budhakauśika & Sadhu Tiwari",
+  "singer": "Sadhu Tiwari",
+  "composer": "Sadhu Tiwari",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bajrang-baanka-0f8dbf05223f848f879df34c3f1a6445749ef54b96e10c05962bb7f67e1712f2.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bajrang-baanka-5a9173990cd4a452318962ecc2082fa431b749d040d81840a4f17e021df4032d.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "musicDirector": "Sadhu Tiwari",
+  "queueNumber": 294
+}
 ];

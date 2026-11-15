@@ -203,6 +203,18 @@
         "sha256": "a4d8a8ea067cf309e173ddce4bab903c6daafe66c58bd6a65918a3654806c615"
       }
     ],
+    "bajrang-baanka": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bajrang-baanka-0f8dbf05223f848f879df34c3f1a6445749ef54b96e10c05962bb7f67e1712f2.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "0f8dbf05223f848f879df34c3f1a6445749ef54b96e10c05962bb7f67e1712f2"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bajrang-baanka-5a9173990cd4a452318962ecc2082fa431b749d040d81840a4f17e021df4032d.m4a",
+        "type": "audio/mp4",
+        "sha256": "5a9173990cd4a452318962ecc2082fa431b749d040d81840a4f17e021df4032d"
+      }
+    ],
     "balada-beka-re-lagila-ghanti": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/balada-beka-re-lagila-ghanti.webm",
@@ -2183,6 +2195,18 @@
         "sha256": "5b003fd8cd552e415d82241ca88a1a2262e89d56105adf14dc1cb5155ecb4323"
       }
     ],
+    "rudrashtakam-rameshbhai-oza": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-rameshbhai-oza-def3f70abcebd4f01a6cb081b5c8cb55df7834d5b602a5057a706bc614f4d416.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "def3f70abcebd4f01a6cb081b5c8cb55df7834d5b602a5057a706bc614f4d416"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-rameshbhai-oza-9e85060f72434ca6d108a67d07f8fed5cdcbc41a7aea16e07c73b8aa78ea57c2.m4a",
+        "type": "audio/mp4",
+        "sha256": "9e85060f72434ca6d108a67d07f8fed5cdcbc41a7aea16e07c73b8aa78ea57c2"
+      }
+    ],
     "rudrashtakam-sharma-bandhu": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rudrashtakam-sharma-bandhu-ae22dcbadbbb108f9b85e374c7a5da1268ee318d381d57ecd6486295b2524dbc.webm",
@@ -2532,6 +2556,18 @@
         "sha256": "b0f1387ff8b29d7aca0f9b5e321582d2dc21eb1c53f6c28ea3067f8b7b4daa87"
       }
     ],
+    "shyamala-dandakam": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shyamala-dandakam-ee5ab0be93fdd178fafa6f7dd8a862ad1cca629eca89ee56c5b89df6b72e2b74.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "ee5ab0be93fdd178fafa6f7dd8a862ad1cca629eca89ee56c5b89df6b72e2b74"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shyamala-dandakam-3e33247d9a03dc6a83b173f1285038d1006b9067f5609332f445bdcee7efbb88.m4a",
+        "type": "audio/mp4",
+        "sha256": "3e33247d9a03dc6a83b173f1285038d1006b9067f5609332f445bdcee7efbb88"
+      }
+    ],
     "siddh-bhajo-omkar-avadho": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siddh-bhajo-omkar-avadho.m4a",
@@ -2544,6 +2580,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siri-ram-kahe-samjhayi.m4a",
         "type": "audio/mp4",
         "sha256": "e214245aa41d48c97c0b7c5294b94c0e93b6b65d758c6c94c33267d1134f0d2f"
+      }
+    ],
+    "sivapuranam": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sivapuranam-8a759f6e5e253b653a7a87d4387745b7a07a404148110a866686be9bdd9cd924.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "8a759f6e5e253b653a7a87d4387745b7a07a404148110a866686be9bdd9cd924"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sivapuranam-2e7c1fcf29cc1723f625140646a29ac1484238d9d4fa9c1ef8e9d2613e6fb7de.m4a",
+        "type": "audio/mp4",
+        "sha256": "2e7c1fcf29cc1723f625140646a29ac1484238d9d4fa9c1ef8e9d2613e6fb7de"
       }
     ],
     "siyavar-ramchandra-ki-jai": [
