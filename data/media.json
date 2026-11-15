@@ -81,6 +81,18 @@
         "sha256": "a1f41d915ac15885cd22b3fa02dea8588897042bd49b1458ad7386d57b0e9d8a"
       }
     ],
+    "ahe-nila-saila": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ahe-nila-saila-2738dd3e5f05782513345ef2bf0e84f08f55e2f42a611ce82656fb25754be7ec.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2738dd3e5f05782513345ef2bf0e84f08f55e2f42a611ce82656fb25754be7ec"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ahe-nila-saila-cb9ce671201c0fb46e7bb173c2bc1ea7b9658375ec08f0333cdefffb1c87708b.m4a",
+        "type": "audio/mp4",
+        "sha256": "cb9ce671201c0fb46e7bb173c2bc1ea7b9658375ec08f0333cdefffb1c87708b"
+      }
+    ],
     "aisa-pyar-baha-de-maiya": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aisa-pyar-baha-de-maiya.webm",

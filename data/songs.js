@@ -8816,4 +8816,37 @@ window.BHAKTI_SONGS = [
     ],
     "queueNumber": 280
   }
+,
+{
+  "slug": "ahe-nila-saila",
+  "queueId": "80dfee50",
+  "title": "Āhe Nīḷa Śaiḷa",
+  "credit": "Sālabega · Bhikari Bal",
+  "languageTags": [
+    "Odia"
+  ],
+  "subjectTags": [
+    "Jagannātha"
+  ],
+  "searchAliases": [
+    "Ahe Nila Saila",
+    "Aahe Neelasaila",
+    "Salabega",
+    "Jagannath"
+  ],
+  "writer": "Sālabega",
+  "singer": "Bhikari Bal",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ahe-nila-saila-2738dd3e5f05782513345ef2bf0e84f08f55e2f42a611ce82656fb25754be7ec.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ahe-nila-saila-cb9ce671201c0fb46e7bb173c2bc1ea7b9658375ec08f0333cdefffb1c87708b.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 281
+}
 ];
