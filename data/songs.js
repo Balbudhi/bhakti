@@ -8881,4 +8881,98 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 282
 }
+,
+{
+  "slug": "nanati-baduku",
+  "queueId": "3081c90c",
+  "title": "Nānāṭi Baduku",
+  "credit": "Annamācārya · M. S. Subbulakshmi & Radha Viswanathan",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Nanati Baduku",
+    "Nanati Batuku",
+    "Annamacharya",
+    "Radha Vishwanathan"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. S. Subbulakshmi & Radha Viswanathan",
+  "composer": "Annamācārya",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nanati-baduku-bacad72fa4f2d69e62decb6dce94333b42dce36a1301b318711c61a7259d2be7.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nanati-baduku-a713efa4db5d967ced10a37f53b02d9f9cf2881fb0ef97a39042cd3287030ea0.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 285
+},
+{
+  "slug": "jagadoddharana",
+  "queueId": "555d9ea6",
+  "title": "Jagadōddhārana",
+  "credit": "Purandaradāsa · M. S. Subbulakshmi & Radha Viswanathan",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Jagadoddharana",
+    "Jagadodharana",
+    "Radha Vishwanathan"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "M. S. Subbulakshmi & Radha Viswanathan",
+  "composer": "Purandaradāsa",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagadoddharana-451b65542be9e388ef9d0f3a788d1c201187e7b83cf3cc6b84d07e09d0d2b2f6.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagadoddharana-9daf4ab4a8128b458e971f3b4c81414c9a42c0f8fdbbafb8d7f84030355e2087.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 284
+},
+{
+  "slug": "endaro-mahanubhavulu",
+  "queueId": "6da0f6e3",
+  "title": "Endarō Mahānubhāvulu",
+  "credit": "Tyāgarāja · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Rāma"
+  ],
+  "searchAliases": [
+    "Endaro Mahanubhavulu",
+    "Thyagaraja"
+  ],
+  "writer": "Tyāgarāja",
+  "singer": "M. Balamuralikrishna",
+  "composer": "Tyāgarāja",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/endaro-mahanubhavulu-79e4c07d7358adc26560944433be313a9ca8e49f09cededd4d56bbf8800ca7fd.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/endaro-mahanubhavulu-19552ec52c6e7503f02d250ae95ab7552f37b0a6f0a8cc0ccbc03ddd4cd62ac0.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 283
+}
 ];
