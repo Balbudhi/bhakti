@@ -8849,4 +8849,36 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 281
 }
+,
+{
+  "slug": "dasana-madiko-enna",
+  "queueId": "53243293",
+  "title": "Dāsana Māḍiko Enna",
+  "credit": "Purandaradāsa · M. S. Subbulakshmi & Gowri Ramanarayanan",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Dasana Madiko Enna",
+    "Venkataramana",
+    "Purandara Dasa"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "M. S. Subbulakshmi & Gowri Ramanarayanan",
+  "composer": "Purandaradāsa",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dasana-madiko-enna-020fde1243402d3165cd6d9297f5d6ce1909fb1785ed70ca8858b3a31b11b3f8.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dasana-madiko-enna-7e10a30423d56af409844c7b09ddf2bca8f9024a8ee9515af38fec9bed6317c0.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 282
+}
 ];
