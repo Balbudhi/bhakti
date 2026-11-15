@@ -9043,4 +9043,100 @@ window.BHAKTI_SONGS = [
   "musicDirector": "Govind & Dinesh",
   "queueNumber": 287
 }
+,
+{
+  "slug": "piththa-pirai-soodi",
+  "queueId": "7816b268",
+  "title": "Pittā Piṟai Cūṭī",
+  "credit": "Cuntarar & Cēkkiḻār · Dharmapuram P. Swaminathan",
+  "languageTags": [
+    "Tamil"
+  ],
+  "subjectTags": [
+    "Śiva"
+  ],
+  "searchAliases": [
+    "Piththa Pirai Soodi",
+    "Pitha Pirai Soodi",
+    "Sundarar",
+    "Sekkizhar"
+  ],
+  "writer": "Cuntarar & Cēkkiḻār",
+  "singer": "Dharmapuram P. Swaminathan",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/piththa-pirai-soodi-d15ef49db7d3871d9fa4c302b4206cf4116a4b5667a238081c70632cd6ec9c78.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/piththa-pirai-soodi-a2dd88816208474d2fa04c5e5191c26385ef0d05483ed536c1edaa54a8670baf.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 288
+},
+{
+  "slug": "uyarvara-uyar-nalam",
+  "queueId": "d9a30547",
+  "title": "Uyarvaṟa Uyar Nalam",
+  "credit": "Nammāḻvār & Maṇavāḷa Māmuṉikaḷ · STD Pathasala · Sri Sriramabharati",
+  "languageTags": [
+    "Tamil"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Uyarvara Uyarnalam",
+    "Nammalvar",
+    "Nammazhwar",
+    "Manavala Mamunigal"
+  ],
+  "writer": "Nammāḻvār & Maṇavāḷa Māmuṉikaḷ",
+  "singer": "STD Pathasala",
+  "composer": "Sri Sriramabharati",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/uyarvara-uyar-nalam-f78bb120b31b2a8d22110e86d5233a607b0a19b866fdb8901b4f12e670c2165a.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/uyarvara-uyar-nalam-b69e007491f63df29640568ccd599c7eb7aa4d5bf1c5f013133823b123d28b18.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 289
+}
+,
+{
+  "slug": "ayarpadi-maligaiyil",
+  "queueId": "d8504154",
+  "title": "Āyarpāṭi Māḷikaiyil",
+  "credit": "Kannadasan · S. P. Balasubrahmanyam · M. S. Viswanathan",
+  "languageTags": [
+    "Tamil"
+  ],
+  "subjectTags": [
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Ayarpadi Maligaiyil",
+    "Aayarpadi Maligayil"
+  ],
+  "writer": "Kannadasan",
+  "singer": "S. P. Balasubrahmanyam",
+  "composer": "M. S. Viswanathan",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ayarpadi-maligaiyil-cedb65188b2b6fc89a71a804496d20f1710c50e858fb407c34433748a313fe89.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ayarpadi-maligaiyil-684633eb9e25b0036023e00c7f325ed58ff7845438b42679f0724e06adc15a8c.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 290
+}
 ];
