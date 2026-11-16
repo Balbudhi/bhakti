@@ -9764,4 +9764,74 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 309
 }
+,
+{
+  "slug": "candracuda-sivasankara",
+  "queueId": "b40837a8",
+  "title": "Candracūḍa Śivaśaṅkara",
+  "credit": "Purandaradāsa · Sudha Ragunathan",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Śiva"
+  ],
+  "searchAliases": [
+    "Candracuda Shivashangkara",
+    "Shiva",
+    "Siva",
+    "Purandaradasa · Sudha Ragunathan",
+    "Purandaradasa",
+    "Chandra Chooda Shiva Shankara",
+    "Chandrachuda Shivashankara",
+    "Sudha Raghunathan"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "Sudha Ragunathan",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/candracuda-sivasankara-386c3e0520e1233904a1085afbca9cf79038baad727d956b6ac64ceeac9a79d2.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/candracuda-sivasankara-727eab553200af47893a63375d53cea87777e99157251d7d253c31d9525ebe9f.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Śiva",
+  "queueNumber": 310
+}
+,
+{
+  "slug": "aao-bhakton-maa-ki-aaj-murat-saja-lo",
+  "queueId": "860365f7",
+  "title": "Āo Bhakto Mā̃ Kī Āj Mūrat Sajā Lo",
+  "credit": "Maninder Ji",
+  "languageTags": [
+    "Hindi"
+  ],
+  "subjectTags": [
+    "Devī"
+  ],
+  "searchAliases": [
+    "Aao Bhakton Maa Ki Aaj Murat Saja Lo",
+    "Bigdi Bana Lo",
+    "Aao Bhakto"
+  ],
+  "writer": "",
+  "singer": "Maninder Ji",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aao-bhakton-maa-ki-aaj-murat-saja-lo-7a5ead96a436ddfbff07bc53dc6323c2a34b0d4c979fd37db9c66196ce3e5408.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aao-bhakton-maa-ki-aaj-murat-saja-lo-482063a1539d271c128777c5e8a4d4d906ce072edb345a22672aecdebf8c6638.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 311
+}
 ];

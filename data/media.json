@@ -22,6 +22,18 @@
         "sha256": "f727bb9cc5f9e62f87deb5baeb40a7d3b2673ec9e9feef47b144c5c94675b3d1"
       }
     ],
+    "aao-bhakton-maa-ki-aaj-murat-saja-lo": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aao-bhakton-maa-ki-aaj-murat-saja-lo-7a5ead96a436ddfbff07bc53dc6323c2a34b0d4c979fd37db9c66196ce3e5408.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "7a5ead96a436ddfbff07bc53dc6323c2a34b0d4c979fd37db9c66196ce3e5408"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aao-bhakton-maa-ki-aaj-murat-saja-lo-482063a1539d271c128777c5e8a4d4d906ce072edb345a22672aecdebf8c6638.m4a",
+        "type": "audio/mp4",
+        "sha256": "482063a1539d271c128777c5e8a4d4d906ce072edb345a22672aecdebf8c6638"
+      }
+    ],
     "aarti-gajvadan-vinayak-ki": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aarti-gajvadan-vinayak-ki.m4a",
@@ -371,6 +383,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/brahmam-okkate-32d73b57d2d5e502fa93214866c4faaa7c83279a7da4447550a6fee542c6d14f.m4a",
         "type": "audio/mp4",
         "sha256": "32d73b57d2d5e502fa93214866c4faaa7c83279a7da4447550a6fee542c6d14f"
+      }
+    ],
+    "candracuda-sivasankara": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/candracuda-sivasankara-386c3e0520e1233904a1085afbca9cf79038baad727d956b6ac64ceeac9a79d2.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "386c3e0520e1233904a1085afbca9cf79038baad727d956b6ac64ceeac9a79d2"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/candracuda-sivasankara-727eab553200af47893a63375d53cea87777e99157251d7d253c31d9525ebe9f.m4a",
+        "type": "audio/mp4",
+        "sha256": "727eab553200af47893a63375d53cea87777e99157251d7d253c31d9525ebe9f"
       }
     ],
     "chakar-rakho-ji": [
