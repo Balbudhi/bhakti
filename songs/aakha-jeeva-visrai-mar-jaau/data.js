@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Ākhā Jīvā Visarai Mari Jāu",
   "subtitle": "Gurbāṇī",
-  "credit": "Gurū Nānak & Gurū Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
-  "pageCredit": "Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
-  "writer": "Gurū Nānak & Gurū Arjan",
+  "credit": "Gurū Nānak · Bhai Harjinder Singh Ji (Srinagar Wale)",
+  "pageCredit": "Bhai Harjinder Singh Ji (Srinagar Wale)",
+  "writer": "Gurū Nānak",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+  "singer": "Bhai Harjinder Singh Ji (Srinagar Wale)",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -20,28 +20,28 @@ window.SONG_META = {
   "searchAliases": [
     "Akha Jiva Visarai Mari Jau",
     "Gurbani",
-    "Guru Nanak & Guru Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
-    "Guru Nanak & Guru Arjan",
-    "Sikh",
-    "Sikhi",
+    "Guru Nanak · Bhai Harjinder Singh Ji (Srinagar Wale)",
     "Guru Nanak",
     "Nanak",
     "Nānak",
     "Guru Nanak Dev",
     "Nanak Dev",
-    "Guru Arjan",
-    "Guru Arjan Dev",
-    "Guru Arjun Dev",
-    "Arjan Dev",
-    "Arjun Dev"
+    "Aakhan Jeeva",
+    "Aakha Jeeva",
+    "Aakha Jeeva Visrai Mar Jau",
+    "Aakhan Jeeva Visre Mar Jao",
+    "Bhai Harjinder Singh",
+    "Harjinder Singh Srinagar Wale",
+    "Sikh",
+    "Sikhi"
   ],
   "audioSources": [
     {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae.webm",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-75e915035dd69be3ca6f2a4a9fa168af5aa96306271166041b1af9e10d6bf268.webm",
       "type": "audio/webm; codecs=opus"
     },
     {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-b7991427422936498a31fa504390882a87a172995a130599050e29ede2d09f9f.m4a",
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-f209ddf3251e2f2c4aa7660336ea4bf2458f599480fe6389cafee8286a7ab446.m4a",
       "type": "audio/mp4"
     }
   ],
@@ -51,50 +51,8 @@ window.SONG_META = {
 };
 
 window.SONG_LINES = {
-  "g001": {
-    "source": "ਸਤਿਨਾਮੁ ਸ੍ਰੀ ਵਾਹਿਗੁਰੂ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਸਤਿਨਾਮੁ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਸ੍ਰੀ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਾਹਿਗੁਰੂ",
-        "wordIndices": [
-          2
-        ]
-      }
-    ],
-    "roman": "Satinām srī Vāhigurū",
-    "english": "{0:The True Name—}{1:revered }{2:Vāhigurū.}",
-    "words": [
-      {
-        "roman": "Satinām",
-        "gloss": "the True Name; invocation of the true divine reality"
-      },
-      {
-        "roman": "srī",
-        "gloss": "revered; auspicious honorific"
-      },
-      {
-        "roman": "Vāhigurū",
-        "gloss": "the wondrous spiritual Lord"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Shared devotional invocation, not attributed as an extra verse to either poet. Sat+nām retains the True Name; Vāhigurū remains a genuine divine invocation."
-  },
-  "g002": {
-    "source": "ਆਖਾ ਜੀਵਾ ਵਿਸਰੈ ਮਰਿ ਜਾਉ",
+  "refrain-1": {
+    "source": "ਆਖਾ ਜੀਵਾ ਵਿਸਰੈ ਮਰਿ ਜਾਉ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -155,8 +113,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "The Name supplied as the verb’s object is explicit in the next line. First-person speaker is subject of living and dying; do not make the Name die."
   },
-  "g003": {
-    "source": "ਆਖਣਿ ਅਉਖਾ ਸਾਚਾ ਨਾਉ",
+  "refrain-2": {
+    "source": "ਆਖਣਿ ਅਉਖਾ ਸਾਚਾ ਨਾਉ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -207,8 +165,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Ākhaṇ is the verbal noun; the difficulty is in utterance/remembering, not in God being difficult to name physically."
   },
-  "g004": {
-    "source": "ਸਾਚੇ ਨਾਮ ਕੀ ਲਾਗੈ ਭੂਖ",
+  "verse-1-1": {
+    "source": "ਸਾਚੇ ਨਾਮ ਕੀ ਲਾਗੈ ਭੂਖ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -269,12 +227,12 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Hunger is the explicit metaphorical subject, preparing eating in the next line."
   },
-  "g005": {
-    "source": "ਊਤੁ ਭੂਖੈ ਖਾਇ ਚਲੀਅਹਿ ਦੂਖ",
+  "verse-1-2": {
+    "source": "ਉਤੁ ਭੂਖੈ ਖਾਇ ਚਲੀਅਹਿ ਦੂਖ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
-        "text": "ਊਤੁ",
+        "text": "ਉਤੁ",
         "wordIndices": [
           0
         ]
@@ -304,11 +262,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Ūt bhūkhai khāi calīahi dūkh",
+    "roman": "Ut bhūkhai khāi calīahi dūkh",
     "english": "{0:through that }{1:hunger, }{2:one feeds on it, }and {4:sorrows }{3:depart.}",
     "words": [
       {
-        "roman": "Ūt",
+        "roman": "Ut",
         "gloss": "through that"
       },
       {
@@ -329,10 +287,10 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Ut bhūkhai is instrumental; khāi is having eaten, with Name as the supplied food from the previous line. Do not change the image into hunger itself eating the sorrows. Actual independently audited vowel/nasal surface retained; the contextual meaning is unchanged."
+    "grammarNote": "Ut bhūkhai is instrumental; khāi is having eaten, with Name as the supplied food from the previous line. Do not change the image into hunger itself eating the sorrows."
   },
-  "g006": {
-    "source": "ਸੋ ਕਿਉ ਵਿਸਰੈ ਮੇਰੀ ਮਾਇ",
+  "verse-2-1": {
+    "source": "ਸੋ ਕਿਉ ਵਿਸਰੈ ਮੇਰੀ ਮਾਇ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -391,10 +349,10 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Kiu visarai is rhetorical/optative: may the Lord not be forgotten. Māi is the direct mother address, not a substitute for the divine feminine."
+    "grammarNote": "Kiu visarai is rhetorical/optative: may the Lord not be forgotten. Māi is the direct mother address, not a substitute for the divine feminine. These two lines form the canonical rahāu; their performance section ID does not change that textual role."
   },
-  "g007": {
-    "source": "ਸਾਚਾ ਸਾਹਿਬੁ ਸਾਚੈ ਨਾਇ",
+  "verse-2-2": {
+    "source": "ਸਾਚਾ ਸਾਹਿਬੁ ਸਾਚੈ ਨਾਇ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -443,830 +401,10 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Nāi is read instrumentally with sācai; the elliptical predication is expanded as is known. Native Sahib Singh explains the Master’s presence through remembrance, rather than merely repeating two unrelated true predicates."
+    "grammarNote": "Nāi is read instrumentally with sācai; the elliptical predication is expanded as is known. Native Sahib Singh explains the Master’s presence through remembrance, rather than merely repeating two unrelated true predicates. These two lines form the canonical rahāu; their performance section ID does not change that textual role."
   },
-  "g008": {
-    "source": "ਕਿਉ ਵਿਸਰੈ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          1
-        ]
-      }
-    ],
-    "roman": "Kiu visarai",
-    "english": "{0:How }could that One {1:be forgotten?}",
-    "words": [
-      {
-        "roman": "Kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "The repeated question keeps the Lord as the One liable to be forgotten; each actually sung fragment is retained, not padded to the full refrain."
-  },
-  "g009": {
-    "source": "ਕਿਉ ਕਿਉ ਵਿਸਰੈ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          2
-        ]
-      }
-    ],
-    "roman": "Kiu kiu visarai",
-    "english": "{0:How, }{1:how }could that One {2:be forgotten?}",
-    "words": [
-      {
-        "roman": "Kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "The repeated question keeps the Lord as the One liable to be forgotten; each actually sung fragment is retained, not padded to the full refrain."
-  },
-  "g010": {
-    "source": "ਸੋ ਕਿਉ ਵਿਸਰੈ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਸੋ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          2
-        ]
-      }
-    ],
-    "roman": "So kiu visarai",
-    "english": "{1:How }could {0:that One }{2:be forgotten?}",
-    "words": [
-      {
-        "roman": "So",
-        "gloss": "that One; the Lord"
-      },
-      {
-        "roman": "kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "The repeated question keeps the Lord as the One liable to be forgotten; each actually sung fragment is retained, not padded to the full refrain."
-  },
-  "g011": {
-    "source": "ਸੋ ਕਿਉ ਵਿਸਰੈ ਕਿਉ ਵਿਸਰੈ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਸੋ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          4
-        ]
-      }
-    ],
-    "roman": "So kiu visarai kiu visarai",
-    "english": "{1:How }could {0:that One }{2:be forgotten? }{3:How }could that One {4:be forgotten?}",
-    "words": [
-      {
-        "roman": "So",
-        "gloss": "that One; the Lord"
-      },
-      {
-        "roman": "kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      },
-      {
-        "roman": "kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "The repeated question keeps the Lord as the One liable to be forgotten; each actually sung fragment is retained, not padded to the full refrain."
-  },
-  "g012": {
-    "source": "ਸੋ ਕਿਉ ਵਿਸਰੈ ਜਿਨਿ ਸਭੁ ਕਿਛੁ ਦੀਆ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਸੋ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਜਿਨਿ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਸਭੁ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ਕਿਛੁ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ਦੀਆ",
-        "wordIndices": [
-          6
-        ]
-      }
-    ],
-    "roman": "So kiu visarai jin sabh kichh dīā",
-    "english": "{1:How }could {0:the One }{2:be forgotten }{3:who }{6:has given }{4,5:everything?}",
-    "words": [
-      {
-        "roman": "So",
-        "gloss": "that One; the Lord"
-      },
-      {
-        "roman": "kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      },
-      {
-        "roman": "jin",
-        "gloss": "who; agent of giving"
-      },
-      {
-        "roman": "sabh",
-        "gloss": "all"
-      },
-      {
-        "roman": "kichh",
-        "gloss": "anything; together with all, everything"
-      },
-      {
-        "roman": "dīā",
-        "gloss": "has given"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Gurū Arjan Sukhmanī Ang290, not part of Nānak’s Āsā hymn. Jin links the Lord to giving everything; no recipient invented."
-  },
-  "g013": {
-    "source": "ਸੋ ਕਿਉ ਵਿਸਰੈ ਜੀਵਨ ਜੀਆ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਸੋ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਜੀਵਨ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਜੀਆ",
-        "wordIndices": [
-          4
-        ]
-      }
-    ],
-    "roman": "So kiu visarai jīvan jīā",
-    "english": "{1:How }could {0:that One }{2:be forgotten—}{3:the life }{4:of living beings?}",
-    "words": [
-      {
-        "roman": "So",
-        "gloss": "that One; the Lord"
-      },
-      {
-        "roman": "kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      },
-      {
-        "roman": "jīvan",
-        "gloss": "life; life-support"
-      },
-      {
-        "roman": "jīā",
-        "gloss": "of living beings"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Gurū Arjan Ang290 jīvan jīā means living beings’ life-support (native Sahib Singh). Audit explicitly hears no je/ji relative particle in either return; apposition preserves the sung nominal phrase."
-  },
-  "g014": {
-    "source": "ਕਿਉ ਵਿਸਰੈ ਕਿਉ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਕਿਉ",
-        "wordIndices": [
-          2
-        ]
-      }
-    ],
-    "roman": "Kiu visarai kiu",
-    "english": "{0:How }could that One {1:be forgotten—}{2:how?}",
-    "words": [
-      {
-        "roman": "Kiu",
-        "gloss": "how; why"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "should be forgotten"
-      },
-      {
-        "roman": "kiu",
-        "gloss": "how; why"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "The repeated question keeps the Lord as the One liable to be forgotten; each actually sung fragment is retained, not padded to the full refrain."
-  },
-  "g015": {
-    "source": "ਧੀਰਉ ਦੇਖਿ ਤੁਮਾਰੇ ਰੰਗਾ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਧੀਰਉ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਦੇਖਿ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਤੁਮਾਰੇ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਰੰਗਾ",
-        "wordIndices": [
-          3
-        ]
-      }
-    ],
-    "roman": "Dhīrau dekh tumāre raṅgā",
-    "english": "{1:Seeing }{2:your }{3:marvelous play, }{0:I grow steady.}",
-    "words": [
-      {
-        "roman": "Dhīrau",
-        "gloss": "I gain steadiness; I take courage"
-      },
-      {
-        "roman": "dekh",
-        "gloss": "seeing; having seen"
-      },
-      {
-        "roman": "tumāre",
-        "gloss": "your"
-      },
-      {
-        "roman": "raṅgā",
-        "gloss": "marvelous acts; play"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Bilāval Mahallā5 Ang824: dhīrau is first-person gaining steadiness/courage, native commentary dhīrauṃ, maiṃ dhīraj phaṛdā hāṃ. Bounded actual hearing identifies voiced/aspirated dental dh plus longī, open diphthong and no th coda. Root selectively accepts that explicit adjudication while preserving the original packet’s invalid nonempty-uncertainty status. Prior nīro/tīrathu remain in immutable raw evidence; no invented modern translation."
-  },
-  "g016": {
-    "source": "ਤੂਹੀ ਸੁਆਮੀ ਅੰਤਰਜਾਮੀ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਤੂਹੀ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਸੁਆਮੀ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਅੰਤਰਜਾਮੀ",
-        "wordIndices": [
-          2
-        ]
-      }
-    ],
-    "roman": "Tūhī suāmī antarjāmī",
-    "english": "{0:You alone }are {1:the Master, }{2:the knower of the heart.}",
-    "words": [
-      {
-        "roman": "Tūhī",
-        "gloss": "you alone"
-      },
-      {
-        "roman": "suāmī",
-        "gloss": "master; Lord"
-      },
-      {
-        "roman": "antarjāmī",
-        "gloss": "knower of the heart; inner knower"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "BilāvalM5 Ang824: tū+hī emphatic second person; two predicates share the same subject."
-  },
-  "g017": {
-    "source": "ਤੂਹੀ ਬਸਹਿ ਸਾਧ ਕੈ ਸੰਗਾ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਤੂਹੀ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਬਸਹਿ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਸਾਧ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਕੈ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਸੰਗਾ",
-        "wordIndices": [
-          4
-        ]
-      }
-    ],
-    "roman": "Tūhī basahi sādh kai saṅgā",
-    "english": "{0:You alone }{1:dwell }{3,4:in the company of }{2:the holy ones.}",
-    "words": [
-      {
-        "roman": "Tūhī",
-        "gloss": "you alone"
-      },
-      {
-        "roman": "basahi",
-        "gloss": "dwell; second person"
-      },
-      {
-        "roman": "sādh",
-        "gloss": "the holy ones"
-      },
-      {
-        "roman": "kai",
-        "gloss": "of; with"
-      },
-      {
-        "roman": "saṅgā",
-        "gloss": "company; presence"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "BilāvalM5 Ang824: native commentary vasahi=vassadā haiṃ, explicit second-person address. Audited b/v surface retained."
-  },
-  "g018": {
-    "source": "ਖਿਨ ਮਹਿ ਥਾਪਿ ਨਿਵਾਜੇ ਠਾਕੁਰ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਖਿਨ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਮਹਿ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਥਾਪਿ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਨਿਵਾਜੇ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਠਾਕੁਰ",
-        "wordIndices": [
-          4
-        ]
-      }
-    ],
-    "roman": "Khin mahi thāp nivāje Ṭhākur",
-    "english": "{4:O Master, }{1:in }{0:a moment }you {2:have established }and {3:exalted.}",
-    "words": [
-      {
-        "roman": "Khin",
-        "gloss": "a moment"
-      },
-      {
-        "roman": "mahi",
-        "gloss": "in"
-      },
-      {
-        "roman": "thāp",
-        "gloss": "having established; given standing"
-      },
-      {
-        "roman": "nivāje",
-        "gloss": "have honored; exalted"
-      },
-      {
-        "roman": "Ṭhākur",
-        "gloss": "O Master"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "BilāvalM5 Ang824 native commentary explicitly vocative ṭhākur and second-person addressee; nivāje past participial honored. The lowly recipient follows in the next line, not an invented named person."
-  },
-  "g019": {
-    "source": "ਨੀਚ ਕੀਟ ਤੇ ਕਰੈ ਰਾਜੰਗਾ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਨੀਚ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਕੀਟ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਤੇ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਕਰੈ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਰਾਜੰਗਾ",
-        "wordIndices": [
-          4
-        ]
-      }
-    ],
-    "roman": "Nīc kīṭ te karai rājaṅgā",
-    "english": "{2:From }{0:a lowly }{1:worm, }{3:you make }{4:a king.}",
-    "words": [
-      {
-        "roman": "Nīc",
-        "gloss": "lowly"
-      },
-      {
-        "roman": "kīṭ",
-        "gloss": "a worm"
-      },
-      {
-        "roman": "te",
-        "gloss": "from"
-      },
-      {
-        "roman": "karai",
-        "gloss": "you make; in the continuing address"
-      },
-      {
-        "roman": "rājaṅgā",
-        "gloss": "a king"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Exact BilāvalM5 line printed karahi, native commentary tūṃ kar deṃdā haiṃ. Both passes hear karai, retained as performed surface in the same second-person address. Preserve literal worm→king image; do not replace worm with person or erase agency."
-  },
-  "g020": {
-    "source": "ਕਬਹੂ ਨ ਵਿਸਰੈ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਕਬਹੂ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਨ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          2
-        ]
-      }
-    ],
-    "roman": "Kabahū na visarai",
-    "english": "May you {0,1:never }{2:be forgotten—}",
-    "words": [
-      {
-        "roman": "Kabahū",
-        "gloss": "ever; at any time"
-      },
-      {
-        "roman": "na",
-        "gloss": "not"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "may be forgotten"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "BilāvalM5 negative prayer continued by next actual heart phrase; divine Name/One is contextual subject, not an extra explicit source noun."
-  },
-  "g021": {
-    "source": "ਹੋ ਨ ਵਿਸਰੈ ਹੀਐ ਮੋਰੇ ਤੇ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਹੋ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਨ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਰੈ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਹੀਐ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਮੋਰੇ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ਤੇ",
-        "wordIndices": [
-          5
-        ]
-      }
-    ],
-    "roman": "Ho na visarai hīai more te",
-    "english": "{0:O, }may you {1:not }{2:be forgotten }{5:from }{4:my }{3:heart.}",
-    "words": [
-      {
-        "roman": "Ho",
-        "gloss": "O; sung interjection"
-      },
-      {
-        "roman": "na",
-        "gloss": "not"
-      },
-      {
-        "roman": "visarai",
-        "gloss": "may be forgotten"
-      },
-      {
-        "roman": "hīai",
-        "gloss": "heart"
-      },
-      {
-        "roman": "more",
-        "gloss": "my"
-      },
-      {
-        "roman": "te",
-        "gloss": "from"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "BilāvalM5 performed ho is a brief interjection. Native hīe...te=from the heart. Do not misread te as a third-person subject."
-  },
-  "g022": {
-    "source": "ਨਾਨਕ ਦਾਸੁ ਏਹੀ ਦਾਨੁ ਮੰਗਾ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਨਾਨਕ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਦਾਸੁ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਏਹੀ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਦਾਨੁ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਮੰਗਾ",
-        "wordIndices": [
-          4
-        ]
-      }
-    ],
-    "roman": "Nānak dās ehī dān maṅgā",
-    "english": "{1:Servant }{0:Nānak: }{4:I ask }{2:only this }{3:gift.}",
-    "words": [
-      {
-        "roman": "Nānak",
-        "gloss": "the shared signature used here by Gurū Arjan"
-      },
-      {
-        "roman": "dās",
-        "gloss": "servant"
-      },
-      {
-        "roman": "ehī",
-        "gloss": "this very; this alone"
-      },
-      {
-        "roman": "dān",
-        "gloss": "gift; alms"
-      },
-      {
-        "roman": "maṅgā",
-        "gloss": "I ask; petition"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "BilāvalM5 Ang824 native maṅgā=maṅgāṃ/I ask; signature and servant frame first-person prayer, not a statement about another petitioner."
-  },
-  "g023": {
-    "source": "ਸਾਚੇ ਨਾਮ ਕੀ ਤਿਲੁ ਵਡਿਆਈ",
+  "verse-3-1": {
+    "source": "ਸਾਚੇ ਨਾਮ ਕੀ ਤਿਲੁ ਵਡਿਆਈ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1327,8 +465,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Suspended object completed by the following speaking clause; til is a small measure, not a new agricultural image requiring literal sesame-seed consumption."
   },
-  "g024": {
-    "source": "ਆਖਿ ਥਕੇ ਕੀਮਤਿ ਨਹੀ ਪਾਈ",
+  "verse-3-2": {
+    "source": "ਆਖਿ ਥਕੇ ਕੀਮਤਿ ਨਹੀ ਪਾਈ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1389,8 +527,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Plural thake licenses the generic people; no new named speaker introduced. Kīmat retains the valuation image."
   },
-  "g025": {
-    "source": "ਜੇ ਸਭਿ ਮਿਲਿ ਕੈ ਆਖਣ ਪਾਹਿ",
+  "verse-3-3": {
+    "source": "ਜੇ ਸਭਿ ਮਿਲਿ ਕੈ ਆਖਣ ਪਾਹਿ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1461,8 +599,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Mil kai is a conjunctive phrase, not a separate doing action. The object is the divine greatness from the preceding two lines."
   },
-  "g026": {
-    "source": "ਵਡਾ ਨ ਹੋਵੈ ਘਾਟਿ ਨ ਜਾਇ",
+  "verse-3-4": {
+    "source": "ਵਡਾ ਨ ਹੋਵੈ ਘਾਟਿ ਨ ਜਾਇ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1533,40 +671,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Human collective praise neither enlarges nor diminishes the Lord, the masculine subject of vaḍā/hovai. Keep both negations and both comparative directions."
   },
-  "g027": {
-    "source": "ਵਾਹਿਗੁਰੂ ਵਾਹਿਗੁਰੂ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਵਾਹਿਗੁਰੂ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਵਾਹਿਗੁਰੂ",
-        "wordIndices": [
-          1
-        ]
-      }
-    ],
-    "roman": "Vāhigurū Vāhigurū",
-    "english": "{0:Vāhigurū! }{1:Vāhigurū!}",
-    "words": [
-      {
-        "roman": "Vāhigurū",
-        "gloss": "the wondrous spiritual Lord"
-      },
-      {
-        "roman": "Vāhigurū",
-        "gloss": "the wondrous spiritual Lord"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Actual repeated shared devotional invocation."
-  },
-  "g028": {
-    "source": "ਨਾ ਓਹੁ ਮਰੈ ਨ ਹੋਵੈ ਸੋਗੁ",
+  "verse-4-1": {
+    "source": "ਨਾ ਓਹੁ ਮਰੈ ਨ ਹੋਵੈ ਸੋਗੁ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1637,8 +743,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "The undying Lord grounds the absence of mourning for divine death; do not turn this into a blanket denial that devotees suffer grief."
   },
-  "g029": {
-    "source": "ਦੇਂਦਾ ਰਹੈ ਨ ਚੂਕੈ ਭੋਗੁ",
+  "verse-4-2": {
+    "source": "ਦੇਂਦਾ ਰਹੈ ਨ ਚੂਕੈ ਭੋਗੁ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1697,10 +803,10 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Bhog refers to enjoyment/the provided bounty in the giving clause. Avoid importing sacrifice or sensory vice as the selected sense here. Actual independently audited vowel/nasal surface retained; the contextual meaning is unchanged."
+    "grammarNote": "Bhog refers to enjoyment/the provided bounty in the giving clause. Avoid importing sacrifice or sensory vice as the selected sense here."
   },
-  "g030": {
-    "source": "ਗੁਣੁ ਏਹੋ ਹੋਰੁ ਨਾਹੀ ਕੋਇ",
+  "verse-4-3": {
+    "source": "ਗੁਣੁ ਏਹੋ ਹੋਰੁ ਨਾਹੀ ਕੋਇ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1761,8 +867,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Eho points to the distinctive inexhaustible generosity just described; there is no equivalent other giver. His alone is contextual ellipsis, not a new separate modifier."
   },
-  "g031": {
-    "source": "ਨਾ ਕੋ ਹੋਆ ਨਾ ਕੋ ਹੋਇ",
+  "verse-4-4": {
+    "source": "ਨਾ ਕੋ ਹੋਆ ਨਾ ਕੋ ਹੋਇ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1833,8 +939,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "The comparison is to the unique divine giver; do not claim that no humans ever existed."
   },
-  "g032": {
-    "source": "ਜੇਵਡੁ ਆਪਿ ਤੇਵਡ ਤੇਰੀ ਦਾਤਿ",
+  "verse-5-1": {
+    "source": "ਜੇਵਡੁ ਆਪਿ ਤੇਵਡ ਤੇਰੀ ਦਾਤਿ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1895,8 +1001,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Correlative jevaḍ/tevaḍ links the extent of giver and gift; it is not a conditional possibility."
   },
-  "g033": {
-    "source": "ਜਿਨਿ ਦਿਨੁ ਕਰਿ ਕੈ ਕੀਤੀ ਰਾਤਿ",
+  "verse-5-2": {
+    "source": "ਜਿਨਿ ਦਿਨੁ ਕਰਿ ਕੈ ਕੀਤੀ ਰਾਤਿ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -1967,8 +1073,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Relative jin continues the divine addressee, not a separate human maker. Both day and night retained."
   },
-  "g034": {
-    "source": "ਖਸਮੁ ਵਿਸਾਰਹਿ ਤੇ ਕਮਜਾਤਿ",
+  "verse-5-3": {
+    "source": "ਖਸਮੁ ਵਿਸਾਰਹਿ ਤੇ ਕਮਜਾਤਿ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -2019,134 +1125,8 @@ window.SONG_LINES = {
     "nameTable": false,
     "grammarNote": "Kamjāt is the hymn’s severe spiritual censure, literally of low/base birth, applied by conduct here; it is not a factual ranking of a named hereditary community. Retain its force without replacing it with merely distracted."
   },
-  "g035": {
-    "source": "ਤੇ ਕਮਜਾਤਿ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਤੇ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਕਮਜਾਤਿ",
-        "wordIndices": [
-          1
-        ]
-      }
-    ],
-    "roman": "Te kamjāt",
-    "english": "{0:Those }are {1:base-born.}",
-    "words": [
-      {
-        "roman": "Te",
-        "gloss": "those; such people"
-      },
-      {
-        "roman": "kamjāt",
-        "gloss": "base-born; spiritually debased"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Actual consequent fragment of the previously sung forgetting-the-Master clause; spiritual censure retained, not a new social group identification."
-  },
-  "g036": {
-    "source": "ਹਾ ਖਸਮੁ ਵਿਸਾਰਹਿ ਤੇ ਕਮਜਾਤਿ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਹਾ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਖਸਮੁ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਿਸਾਰਹਿ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਤੇ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਕਮਜਾਤਿ",
-        "wordIndices": [
-          4
-        ]
-      }
-    ],
-    "roman": "Hā Khasam visārahi te kamjāt",
-    "english": "{0:Ah! }{3:Those }who {2:forget }{1:the Master }are {4:base-born.}",
-    "words": [
-      {
-        "roman": "Hā",
-        "gloss": "ah; vocal interjection"
-      },
-      {
-        "roman": "Khasam",
-        "gloss": "the master; divine spouse"
-      },
-      {
-        "roman": "visārahi",
-        "gloss": "forget"
-      },
-      {
-        "roman": "te",
-        "gloss": "those"
-      },
-      {
-        "roman": "kamjāt",
-        "gloss": "base-born; spiritually debased"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Kamjāt is the hymn’s severe spiritual censure, literally of low/base birth, applied by conduct here; it is not a factual ranking of a named hereditary community. Retain its force without replacing it with merely distracted. Audit identifies an actual hā pickup before this return; retain it as interjection."
-  },
-  "g037": {
-    "source": "ਖਸਮੁ ਵਿਸਾਰਹਿ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਖਸਮੁ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਵਿਸਾਰਹਿ",
-        "wordIndices": [
-          1
-        ]
-      }
-    ],
-    "roman": "Khasam visārahi",
-    "english": "Those who {1:forget }{0:the Master—}",
-    "words": [
-      {
-        "roman": "Khasam",
-        "gloss": "the master; divine spouse"
-      },
-      {
-        "roman": "visārahi",
-        "gloss": "forget"
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Actual relative fragment, subsequent base-born consequence not silently reinserted."
-  },
-  "g038": {
-    "source": "ਨਾਨਕ ਨਾਵੈ ਬਾਝੁ ਸਨਾਤਿ",
+  "verse-5-4": {
+    "source": "ਨਾਨਕ ਨਾਵੈ ਬਾਝੁ ਸਨਾਤਿ ॥",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -2196,569 +1176,528 @@ window.SONG_LINES = {
     ],
     "nameTable": false,
     "grammarNote": "Sanāt is an outcast/abased condition in this concluding spiritual contrast. The line asserts dependence on the Name; do not invent a specific caste designation."
+  },
+  "closing-waheguru": {
+    "source": "ਵਾਹਿਗੁਰੂ",
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਵਾਹਿਗੁਰੂ",
+        "wordIndices": [
+          0
+        ]
+      }
+    ],
+    "roman": "Vāhigurū",
+    "english": "{0:Vāhigurū!}",
+    "words": [
+      {
+        "roman": "Vāhigurū",
+        "gloss": "the wondrous spiritual Lord"
+      }
+    ],
+    "nameTable": false,
+    "grammarNote": "Single closing divine invocation. The genuine name is retained; its existing reviewed gloss explains the wondrous spiritual Lord. One audible invocation, not the old recording’s doubled unit."
   }
 };
 
 window.SONG_SEQUENCE = [
   {
-    "ref": "g001",
-    "section": "invocation",
-    "repeats": 12
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
   },
   {
-    "ref": "g002",
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "verse-1-1",
     "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-1-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-1-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-1-2",
+    "section": "verse",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "verse-2-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-2-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-2-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-2-2",
+    "section": "verse",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "verse-3-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-3-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-3-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-3-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-3-3",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-3-4",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-3-3",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-3-4",
+    "section": "verse",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "verse-4-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-4-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-4-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-4-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-4-3",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-4-4",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-4-3",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-4-4",
+    "section": "verse",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "verse-5-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-5-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-5-1",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-5-2",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-5-3",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-5-4",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-5-3",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "verse-5-4",
+    "section": "verse",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-2",
+    "section": "refrain",
+    "repeats": 2
+  },
+  {
+    "ref": "refrain-1",
+    "section": "refrain",
     "repeats": 3
   },
   {
-    "ref": "g003",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g001",
-    "section": "invocation",
-    "repeats": 4
-  },
-  {
-    "ref": "g004",
-    "section": "verse",
+    "ref": "closing-waheguru",
+    "section": "closing",
     "repeats": 1
-  },
-  {
-    "ref": "g005",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g006",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g007",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g006",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g008",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g009",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g010",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g009",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g011",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g012",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g013",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g009",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g014",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g008",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g015",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g016",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g017",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g018",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g019",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g020",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g021",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g022",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g006",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g007",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g003",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g001",
-    "section": "invocation",
-    "repeats": 4
-  },
-  {
-    "ref": "g023",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g024",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g025",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g026",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g027",
-    "section": "invocation",
-    "repeats": 8
-  },
-  {
-    "ref": "g001",
-    "section": "invocation",
-    "repeats": 4
-  },
-  {
-    "ref": "g028",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g029",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g030",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g031",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g003",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g001",
-    "section": "invocation",
-    "repeats": 4
-  },
-  {
-    "ref": "g032",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g033",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g034",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g035",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g036",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g037",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g034",
-    "section": "verse",
-    "repeats": 1
-  },
-  {
-    "ref": "g038",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g003",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g002",
-    "section": "verse",
-    "repeats": 2
-  },
-  {
-    "ref": "g027",
-    "section": "invocation",
-    "repeats": 8
-  },
-  {
-    "ref": "g001",
-    "section": "invocation",
-    "repeats": 8
   }
 ];
 
 window.SONG_TIMINGS = [
   {
-    "start": 0.6,
-    "end": 63.9
+    "start": 0.766,
+    "end": 12.661
   },
   {
-    "start": 63.9,
-    "end": 84.7
+    "start": 12.661,
+    "end": 24.481
   },
   {
-    "start": 84.7,
-    "end": 97.3
+    "start": 24.481,
+    "end": 35.846
   },
   {
-    "start": 97.3,
-    "end": 110.5
+    "start": 35.846,
+    "end": 47.456
   },
   {
-    "start": 110.5,
-    "end": 144.7
+    "start": 47.456,
+    "end": 75.451
   },
   {
-    "start": 144.7,
-    "end": 151.3
+    "start": 75.451,
+    "end": 81.051
   },
   {
-    "start": 151.3,
-    "end": 164.8
+    "start": 81.051,
+    "end": 92.446
   },
   {
-    "start": 164.8,
-    "end": 171.5
+    "start": 92.446,
+    "end": 98.281
   },
   {
-    "start": 171.5,
-    "end": 184.9
+    "start": 98.281,
+    "end": 110.021
   },
   {
-    "start": 184.9,
-    "end": 194.3
+    "start": 110.021,
+    "end": 121.446
   },
   {
-    "start": 194.3,
-    "end": 205.5
+    "start": 121.446,
+    "end": 133.216
   },
   {
-    "start": 205.5,
-    "end": 214.6
+    "start": 133.216,
+    "end": 160.751
   },
   {
-    "start": 214.6,
-    "end": 220.7
+    "start": 160.751,
+    "end": 166.516
   },
   {
-    "start": 220.7,
-    "end": 227.8
+    "start": 166.516,
+    "end": 177.896
   },
   {
-    "start": 227.8,
-    "end": 237.4
+    "start": 177.896,
+    "end": 183.641
   },
   {
-    "start": 237.4,
-    "end": 250.6
+    "start": 183.641,
+    "end": 195.411
   },
   {
-    "start": 250.6,
-    "end": 265.2
+    "start": 195.411,
+    "end": 207.601
   },
   {
-    "start": 265.2,
-    "end": 278.2
+    "start": 207.601,
+    "end": 218.926
   },
   {
-    "start": 278.2,
-    "end": 287.3
+    "start": 218.926,
+    "end": 247.781
   },
   {
-    "start": 287.3,
-    "end": 300.6
+    "start": 247.781,
+    "end": 253.891
   },
   {
-    "start": 300.6,
-    "end": 307.4
+    "start": 253.891,
+    "end": 265.351
   },
   {
-    "start": 307.4,
-    "end": 314.0
+    "start": 265.351,
+    "end": 271.116
   },
   {
-    "start": 314.0,
-    "end": 319.7
+    "start": 271.116,
+    "end": 282.626
   },
   {
-    "start": 319.7,
-    "end": 337.3
+    "start": 282.626,
+    "end": 288.441
   },
   {
-    "start": 337.3,
-    "end": 345.3
+    "start": 288.441,
+    "end": 299.801
   },
   {
-    "start": 345.3,
-    "end": 353.6
+    "start": 299.801,
+    "end": 305.851
   },
   {
-    "start": 353.6,
-    "end": 367.3
+    "start": 305.851,
+    "end": 317.126
   },
   {
-    "start": 367.3,
-    "end": 381.7
+    "start": 317.126,
+    "end": 328.401
   },
   {
-    "start": 381.7,
-    "end": 388.3
+    "start": 328.401,
+    "end": 339.826
   },
   {
-    "start": 388.3,
-    "end": 400.3
+    "start": 339.826,
+    "end": 374.156
   },
   {
-    "start": 400.3,
-    "end": 414.8
+    "start": 374.156,
+    "end": 380.041
   },
   {
-    "start": 414.8,
-    "end": 427.3
+    "start": 380.041,
+    "end": 391.411
   },
   {
-    "start": 427.3,
-    "end": 440.7
+    "start": 391.411,
+    "end": 397.236
   },
   {
-    "start": 440.7,
-    "end": 474.8
+    "start": 397.236,
+    "end": 411.491
   },
   {
-    "start": 474.8,
-    "end": 481.6
+    "start": 411.491,
+    "end": 417.271
   },
   {
-    "start": 481.6,
-    "end": 495.0
+    "start": 417.271,
+    "end": 428.516
   },
   {
-    "start": 495.0,
-    "end": 501.8
+    "start": 428.516,
+    "end": 433.881
   },
   {
-    "start": 501.8,
-    "end": 513.6
+    "start": 433.881,
+    "end": 445.401
   },
   {
-    "start": 513.6,
-    "end": 527.3
+    "start": 445.401,
+    "end": 457.186
   },
   {
-    "start": 527.3,
-    "end": 554.0
+    "start": 457.186,
+    "end": 468.471
   },
   {
-    "start": 554.0,
-    "end": 588.3
+    "start": 468.471,
+    "end": 500.541
   },
   {
-    "start": 588.3,
-    "end": 595.0
+    "start": 500.541,
+    "end": 506.396
   },
   {
-    "start": 595.0,
-    "end": 608.1
+    "start": 506.396,
+    "end": 517.521
   },
   {
-    "start": 608.1,
-    "end": 615.0
+    "start": 517.521,
+    "end": 523.596
   },
   {
-    "start": 615.0,
-    "end": 627.2
+    "start": 523.596,
+    "end": 534.636
   },
   {
-    "start": 627.2,
-    "end": 641.8
+    "start": 534.636,
+    "end": 540.511
   },
   {
-    "start": 641.8,
-    "end": 653.9
+    "start": 540.511,
+    "end": 551.801
   },
   {
-    "start": 653.9,
-    "end": 667.1
+    "start": 551.801,
+    "end": 557.641
   },
   {
-    "start": 667.1,
-    "end": 701.7
+    "start": 557.641,
+    "end": 569.386
   },
   {
-    "start": 701.7,
-    "end": 708.2
+    "start": 569.386,
+    "end": 580.081
   },
   {
-    "start": 708.2,
-    "end": 721.5
+    "start": 580.081,
+    "end": 591.301
   },
   {
-    "start": 721.5,
-    "end": 728.0
+    "start": 591.301,
+    "end": 602.666
   },
   {
-    "start": 728.0,
-    "end": 739.4
+    "start": 602.666,
+    "end": 613.896
   },
   {
-    "start": 739.4,
-    "end": 755.0
+    "start": 613.896,
+    "end": 630.626
   },
   {
-    "start": 755.0,
-    "end": 758.2
-  },
-  {
-    "start": 758.2,
-    "end": 765.1
-  },
-  {
-    "start": 765.1,
-    "end": 777.0
-  },
-  {
-    "start": 777.0,
-    "end": 791.7
-  },
-  {
-    "start": 791.7,
-    "end": 803.8
-  },
-  {
-    "start": 803.8,
-    "end": 817.4
-  },
-  {
-    "start": 817.4,
-    "end": 843.9
-  },
-  {
-    "start": 843.9,
-    "end": 871.341
+    "start": 630.626,
+    "end": 636.981
   }
 ];

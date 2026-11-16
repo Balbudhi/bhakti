@@ -1,5 +1,23 @@
 # Translation and library review workflow
 
+## Recording selection and listener preference
+
+Evaluate the actual rendition before intake: a familiar singer, traditional text,
+or official release does not by itself establish a suitable arrangement. Sample
+the beginning, middle and end for vocal prominence, accompaniment and audio quality.
+Prefer a restrained, singer-led traditional arrangement when choosing on the
+owner's behalf; this is a selection preference, not a blanket ban on modern music
+or an assertion that every recording by a particular artist is approved.
+
+The owner explicitly rejected the Satwinder Singh / Harwinder Singh recording of
+Ākhā Jīvā Visarai Mari Jāu from Rang Ratta Mera Sahib (YouTube PM0L5BU6QPY),
+and authorized its replacement with Bhai Harjinder Singh's Mere Satgura recording
+(YouTube 0W7JMXZkZc8). Do not reselect the rejected rendition in a later batch.
+Judge future candidates against this feedback and the owner's chosen recordings;
+keep uncertain taste judgments distinct from verified audio quality. A replacement
+must receive its own performed-text, authorship, first-syllable and media review;
+never swap audio beneath another rendition's lyric sequence or timestamps.
+
 This guide describes the bounded review engine and its actual command interfaces.
 The connected workflow is not yet qualified for a whole-library repair. A real
 two-row comparison consumed source-dictionary and English-definition evidence
