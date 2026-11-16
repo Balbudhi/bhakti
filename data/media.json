@@ -1385,6 +1385,18 @@
         "sha256": "b3338c71ee95e39b5cfa9e34148973966866ccc823955e123e32a5eb803fa9ac"
       }
     ],
+    "jethe-jato-tethe-tu-majha-sangati": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jethe-jato-tethe-tu-majha-sangati-4f18a26ad6df91ac393bf72f228e2f939c54ca49118f0c4265b184841aa6fdd5.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "4f18a26ad6df91ac393bf72f228e2f939c54ca49118f0c4265b184841aa6fdd5"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jethe-jato-tethe-tu-majha-sangati-7a5566caea27a77ee5c4b926445939a810bff819fd5fab1861b68d92a7e39671.m4a",
+        "type": "audio/mp4",
+        "sha256": "7a5566caea27a77ee5c4b926445939a810bff819fd5fab1861b68d92a7e39671"
+      }
+    ],
     "jhare-tumo-krupa-ghana": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jhare-tumo-krupa-ghana.webm",
@@ -2026,6 +2038,18 @@
         "sha256": "aa5781d8126b91a5321773c063f2c0a12e053a92bd96f1f2cf880274e6841d5f"
       }
     ],
+    "mere-man-prem-lago-har-teer": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-man-prem-lago-har-teer-ac9f9b0dffe5f34efd48fe932f4f05b12825ffe921a813049e204412bf2b43c4.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "ac9f9b0dffe5f34efd48fe932f4f05b12825ffe921a813049e204412bf2b43c4"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-man-prem-lago-har-teer-70cd197538c1adc5ec32800b22dfbd064ee348466c33dc657668a10658e26857.m4a",
+        "type": "audio/mp4",
+        "sha256": "70cd197538c1adc5ec32800b22dfbd064ee348466c33dc657668a10658e26857"
+      }
+    ],
     "mere-ram-tum": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-ram-tum.m4a",
@@ -2369,6 +2393,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/paluke-bangaramayena.m4a",
         "type": "audio/mp4",
         "sha256": "333e390121f0067c3dbec55b4c3940f93b148f3ef7ebadec79e68f416dce963d"
+      }
+    ],
+    "pandharicha-vas-chandrabhage-snan": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-d98bb8a2f8047b4d939634c09dd1439cf50e46389da018bb29a2882c357a5a20.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "d98bb8a2f8047b4d939634c09dd1439cf50e46389da018bb29a2882c357a5a20"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-532efd71534bc78dbfafc63f6a295e4c9409bdf3acc41f9fb23b1391e6addf99.m4a",
+        "type": "audio/mp4",
+        "sha256": "532efd71534bc78dbfafc63f6a295e4c9409bdf3acc41f9fb23b1391e6addf99"
       }
     ],
     "pandharinivasa-sakhya-panduranga": [
@@ -2887,6 +2923,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/satgur-kai-bhane-chal-e53927fa08572bdce43f4321e86c5cec5c96f45fed7620b19527cc9dd96a6b9a.m4a",
         "type": "audio/mp4",
         "sha256": "e53927fa08572bdce43f4321e86c5cec5c96f45fed7620b19527cc9dd96a6b9a"
+      }
+    ],
+    "savale-sundar-rup-manohar": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-7a27a12714da3b561764a24b66d1d3e7a86aa8547439c8b2085a2fc649ddcdf9.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "7a27a12714da3b561764a24b66d1d3e7a86aa8547439c8b2085a2fc649ddcdf9"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-bd14d8abe8f948303ae68e835e3233b50843d35ff649bf73621ea7e504d90fa2.m4a",
+        "type": "audio/mp4",
+        "sha256": "bd14d8abe8f948303ae68e835e3233b50843d35ff649bf73621ea7e504d90fa2"
       }
     ],
     "sawan-gagane-ghor-ghanaghata": [

@@ -11348,4 +11348,153 @@ window.BHAKTI_SONGS = [
   "subtitle": "Viṣṇu",
   "queueNumber": 351
 }
+,
+{
+  "slug": "jethe-jato-tethe-tu-majha-sangati",
+  "queueId": "7f976b60",
+  "title": "Jethe Jāto Tethe Tū Mājhā Sāṅgātī",
+  "credit": "Tukārām · Lata Mangeshkar · Arvind Hasabnis & Shrinivas Khale",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [],
+  "searchAliases": [
+    "Tukaram · Lata Mangeshkar · Arvind Hasabnis & Shrinivas Khale",
+    "Tukaram",
+    "जेथे जातो तेथे तू माझा सांगाती",
+    "Jethe Jato Tethe Tu Maza Sangati",
+    "Sant Tukaram"
+  ],
+  "writer": "Tukārām",
+  "singer": "Lata Mangeshkar",
+  "composer": "Arvind Hasabnis & Shrinivas Khale",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jethe-jato-tethe-tu-majha-sangati-4f18a26ad6df91ac393bf72f228e2f939c54ca49118f0c4265b184841aa6fdd5.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jethe-jato-tethe-tu-majha-sangati-7a5566caea27a77ee5c4b926445939a810bff819fd5fab1861b68d92a7e39671.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 354
+},
+{
+  "slug": "savale-sundar-rup-manohar",
+  "queueId": "a4a15809",
+  "title": "Sāvaḷe Sundar Rūp Manohar",
+  "credit": "Tukārām · Bhimsen Joshi",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Tukaram · Bhimsen Joshi",
+    "Tukaram",
+    "सावळे सुंदर रूप मनोहर",
+    "Sant Tukaram",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Tukārām",
+  "singer": "Bhimsen Joshi",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-7a27a12714da3b561764a24b66d1d3e7a86aa8547439c8b2085a2fc649ddcdf9.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-bd14d8abe8f948303ae68e835e3233b50843d35ff649bf73621ea7e504d90fa2.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 357
+},
+{
+  "slug": "pandharicha-vas-chandrabhage-snan",
+  "queueId": "17e6ebbe",
+  "title": "Paṇḍharīcā Vās Candrabhāge Snān",
+  "credit": "Nāmadev · Bhimsen Joshi",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Pandharica Vas Candrabhage Snan",
+    "Vishnu",
+    "Visnu",
+    "Namadev · Bhimsen Joshi",
+    "Namadev",
+    "पंढरीचा वास चंद्रभागे स्नान",
+    "Pandharicha Vaas Chandrabhage Snan",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Bhimsen Joshi",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-d98bb8a2f8047b4d939634c09dd1439cf50e46389da018bb29a2882c357a5a20.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-532efd71534bc78dbfafc63f6a295e4c9409bdf3acc41f9fb23b1391e6addf99.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 356
+},
+{
+  "slug": "mere-man-prem-lago-har-teer",
+  "queueId": "94d89632",
+  "title": "Merai Mani Premu Lago Hari Tīru",
+  "credit": "Gurū Rām Dās · Jagjit Singh",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
+  "searchAliases": [
+    "Merai Mani Premu Lago Hari Tiru",
+    "Gurbani",
+    "Guru Ram Das · Jagjit Singh",
+    "Guru Ram Das",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Rām Dās",
+  "singer": "Jagjit Singh",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-man-prem-lago-har-teer-ac9f9b0dffe5f34efd48fe932f4f05b12825ffe921a813049e204412bf2b43c4.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-man-prem-lago-har-teer-70cd197538c1adc5ec32800b22dfbd064ee348466c33dc657668a10658e26857.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gurbāṇī",
+  "queueNumber": 355
+}
 ];
