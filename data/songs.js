@@ -9913,4 +9913,148 @@ window.BHAKTI_SONGS = [
   "subtitle": "Viṣṇu",
   "queueNumber": 313
 }
+,
+{
+  "slug": "bhaktikoladi-vade",
+  "queueId": "bab2b9df",
+  "title": "Bhaktikoladi Vāḍē",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Bhaktikoladi Vadē",
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Bhakti Koladi Vade",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhaktikoladi-vade-53d8a87a22d2f5d4640e027a96a1e6498ec65f6fe67ca3c41e7a3a36e485ee4d.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 314
+},
+{
+  "slug": "kadupenta-ta-guduchu",
+  "queueId": "457de674",
+  "title": "Kaḍupenta Tā Guḍucu",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Kadupenta Ta Guducu",
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kadupenta-ta-guduchu-2924a4b6e53402130deaaa8926e894cc0dd4e0f3d027515c5d3d6692e90709e0.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 317
+},
+{
+  "slug": "chi-chi-naruladeti-jivanamu",
+  "queueId": "ca2b2c14",
+  "title": "Chī Chī Naruladēṭi Jīvanamu",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Chi Chi Naruladēti Jivanamu",
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chi-chi-naruladeti-jivanamu-ad2112e34c49182a1ba29298805a9d2af086a0b2ce9ee0ed36581c81d12576c8.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 315
+},
+{
+  "slug": "chittaja-guruda-neeku",
+  "queueId": "240d1b3e",
+  "title": "Cittaja Guruḍā Nīku Śrīmaṅgaḷam",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Cittaja Guruda Niku Shrimangalam",
+    "Cittaja Guruda Niku Srimangalam",
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Chittaja Guruda Neeku Sri Mangalam",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chittaja-guruda-neeku-1baf05eb07522ea236f8b20e8a6db193d71af11081c081b1d63cf4c28bda0b49.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 316
+}
 ];

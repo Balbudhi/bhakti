@@ -318,6 +318,13 @@
         "sha256": "d4d5a44a901bc4f3a4873c0d95d3639cf09167db8f70e1fe537e5a4a33695d7f"
       }
     ],
+    "bhaktikoladi-vade": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhaktikoladi-vade-53d8a87a22d2f5d4640e027a96a1e6498ec65f6fe67ca3c41e7a3a36e485ee4d.mp3",
+        "type": "audio/mpeg",
+        "sha256": "53d8a87a22d2f5d4640e027a96a1e6498ec65f6fe67ca3c41e7a3a36e485ee4d"
+      }
+    ],
     "bhanga-kudia-mu-sajai-rakhichi": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhanga-kudia-mu-sajai-rakhichi.webm",
@@ -469,11 +476,25 @@
         "sha256": "3b550a23195980344497b405318b8bc0e0cc273dfa14e880b5df8229a3a7dd06"
       }
     ],
+    "chi-chi-naruladeti-jivanamu": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chi-chi-naruladeti-jivanamu-ad2112e34c49182a1ba29298805a9d2af086a0b2ce9ee0ed36581c81d12576c8.mp3",
+        "type": "audio/mpeg",
+        "sha256": "ad2112e34c49182a1ba29298805a9d2af086a0b2ce9ee0ed36581c81d12576c8"
+      }
+    ],
     "chitrakoot-ati-vichitra": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chitrakoot-ati-vichitra.m4a",
         "type": "audio/mp4",
         "sha256": "d13fedd4cc4e572b9f75f460f14df9602adbbe2ee4f24f1e2a45bfd47b279cb6"
+      }
+    ],
+    "chittaja-guruda-neeku": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chittaja-guruda-neeku-1baf05eb07522ea236f8b20e8a6db193d71af11081c081b1d63cf4c28bda0b49.mp3",
+        "type": "audio/mpeg",
+        "sha256": "1baf05eb07522ea236f8b20e8a6db193d71af11081c081b1d63cf4c28bda0b49"
       }
     ],
     "choti-choti-gaiya-chote-chote-gwal": [
@@ -1341,6 +1362,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jogii-re-kian-jau-dura-deshe.m4a",
         "type": "audio/mp4",
         "sha256": "f0faa7ffe3dd5c28194bb6d6055d9f7fbf1261ecb35a38073c72bf9a21611f2e"
+      }
+    ],
+    "kadupenta-ta-guduchu": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kadupenta-ta-guduchu-2924a4b6e53402130deaaa8926e894cc0dd4e0f3d027515c5d3d6692e90709e0.mp3",
+        "type": "audio/mpeg",
+        "sha256": "2924a4b6e53402130deaaa8926e894cc0dd4e0f3d027515c5d3d6692e90709e0"
       }
     ],
     "kaha-dhundhu-sai": [
