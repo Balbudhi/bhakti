@@ -37980,6 +37980,511 @@
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       }
+    },
+    "ba70e013": {
+      "slug": "vaishnavaghari-sarvakal",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "1bca6bf92dd04ac48c35b86a0e9b71b00e7eea2687bc7045a1c8763df2d32551",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "eea6712699578d9fc3f75e9e19fc2c5a73232abee43543e5abba7522844f192f",
+          "extractionRequestIds": [
+            "ee8138a565de4ea7b5f2c1e73002e3ff"
+          ],
+          "reviewRequestIds": [
+            "f3239b4e8b604e5393d09180acb41f12"
+          ],
+          "coveredLineCount": 29
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.name_power",
+              "weight": 0.4
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.meditation",
+              "weight": 0.7142857142857143
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.28571428571428575
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.vitthala",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "fe87dce8beb1c05600484417176361a6752bce4271278b06adde74873c965788",
+        "mediaSha256": "eba09facec4400479f443c506c0bad3feb3ad2c04f051a87f2914130d6a39a6c",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 745.381
+        },
+        "receiptHash": "a68c5eda187ec9b8f6041e0bfdbf2682d00f1a3e0260bfadbfe8f7473c982461",
+        "physical": {
+          "whole": {
+            "integratedLufs": -11.4,
+            "truePeakDbfs": 0.6,
+            "rmsDbfs": -12.129628918675238,
+            "centroidHz": 1787.841863765229
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -15.53792468496525,
+              "centroidHz": 2285.369665959194
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 745.3733125,
+              "rmsDbfs": -12.129628918675238,
+              "centroidHz": 1787.841863765229
+            },
+            "end": {
+              "startSeconds": 715.3733125,
+              "endSeconds": 745.3733125,
+              "rmsDbfs": -19.996913955682558,
+              "centroidHz": 1868.8219285699527
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "5806673a": {
+      "slug": "yajasathi-kela-hota-attahas",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "30eef19514bbc140575daadff98a8720a04a57624cf188282cbd03e28e28fd54",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "17e20c7d3b63b9a188134a7e1c7bd06f29a3726ce13a4078288d66144b0fbda5",
+          "extractionRequestIds": [
+            "60d9f39021ba40888f14d24e7bf4bb2c"
+          ],
+          "reviewRequestIds": [
+            "aee7f2b3b6dc4077bf0be49099442188"
+          ],
+          "coveredLineCount": 14
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.detachment",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.joy",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.liberation",
+              "weight": 0.5555555555555556
+            }
+          ],
+          "actions": [],
+          "subjects": []
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "84d00b042160534bafb6a00feaf6c958a51ca996e8fabb916948f39a9380ef77",
+        "mediaSha256": "5255f2823253eb2c83d71dfd0829f5655f8039be74439476816cbb4d66a8b986",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 395.121
+        },
+        "receiptHash": "969a927d6154a67e8f5c37e331bdcac7020586de99618b0103b00cb16a469b6f",
+        "physical": {
+          "whole": {
+            "integratedLufs": -12.4,
+            "truePeakDbfs": 1.5,
+            "rmsDbfs": -12.928431957589279,
+            "centroidHz": 1667.5896966242708
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -13.440220291410911,
+              "centroidHz": 1700.1747467548032
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 395.1066875,
+              "rmsDbfs": -12.928431957589279,
+              "centroidHz": 1667.5896966242708
+            },
+            "end": {
+              "startSeconds": 365.1066875,
+              "endSeconds": 395.1066875,
+              "rmsDbfs": -13.436217577707179,
+              "centroidHz": 1626.2252834980566
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "b7623616": {
+      "slug": "je-sau-chanda-ugveh",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "c543c9be28ad8cd12b883b265ac25af71e09c957b9f292aab42af817a7ba94d3",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "f3c676ff76fcbbc4e0f9eb37f09d56e3ffff3f8261b5b95dad2f117469d8ca02",
+          "extractionRequestIds": [
+            "21dd8adec9d8467eace4144359b48048"
+          ],
+          "reviewRequestIds": [
+            "3dee689b68414824ba08722b13fbac91"
+          ],
+          "coveredLineCount": 3
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.guidance",
+              "weight": 1.0
+            }
+          ],
+          "actions": [],
+          "subjects": [
+            {
+              "id": "subject.guru",
+              "weight": 1.0,
+              "role": "narrative_subject"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "0d04a84f26eeed75a5ff3d25e3acde80afb79b3dea1f7bbc9f94fb52590bf0e7",
+        "mediaSha256": "5fd645b3e415343260ffab4f0d5e1c4f77f1739fb49e12a7ac1889ed2bd2dbc4",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 128.281
+        },
+        "receiptHash": "80003c17c9da06f3a36e689e3a9a4bdcbe270345076a18b6343580dc3b0494ac",
+        "physical": {
+          "whole": {
+            "integratedLufs": -17.9,
+            "truePeakDbfs": -0.2,
+            "rmsDbfs": -19.196781116759396,
+            "centroidHz": 2025.6213851356329
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -20.49510295704632,
+              "centroidHz": 1971.1755636317273
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 128.2645,
+              "rmsDbfs": -19.196781116759396,
+              "centroidHz": 2025.6213851356329
+            },
+            "end": {
+              "startSeconds": 98.2645,
+              "endSeconds": 128.2645,
+              "rmsDbfs": -20.30849095715308,
+              "centroidHz": 1987.675201556578
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "a397cf54": {
+      "slug": "prabh-ju-to-kah-laj-hamari",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "7c9dd7564e5ae533de980a391a0b94080876156838529d55b40bbabac328b870",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "c634c2133ef2ed310b91d12fbeec1358091afa8f0090ffa7a456fc3fb8a0b66c",
+          "extractionRequestIds": [
+            "8c17bb5670b84e05ab4de34e7d821a35"
+          ],
+          "reviewRequestIds": [
+            "48c92fb0cbd34fad98cbb03aa9cd5995"
+          ],
+          "coveredLineCount": 17
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.compassion",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.humility",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.5555555555555556
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.5
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.5
+            }
+          ],
+          "subjects": []
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "74e957bb5480891dec7943b00884b018ae507372731a9d9634ed4708f2804f93",
+        "mediaSha256": "9c0b7e3449ee515cc36882c704b49be695a4a7eed69bbc4148b1faefb567f45c",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 617.161
+        },
+        "receiptHash": "cf4e842a7d5e99f6a5efdaa57270a73873bf1a2b82e2dc0840ce8eb845ea7f97",
+        "physical": {
+          "whole": {
+            "integratedLufs": -21.0,
+            "truePeakDbfs": -2.3,
+            "rmsDbfs": -21.798917471679257,
+            "centroidHz": 1987.1927929275716
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -23.164564777058267,
+              "centroidHz": 1752.6187291471308
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 617.142875,
+              "rmsDbfs": -21.798917471679257,
+              "centroidHz": 1987.1927929275716
+            },
+            "end": {
+              "startSeconds": 587.142875,
+              "endSeconds": 617.142875,
+              "rmsDbfs": -24.936580666964524,
+              "centroidHz": 1861.3158111332323
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "edb16ca4": {
+      "slug": "amrutahuni-god-nam-tujhe-deva",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "f7d0171a7887399d67255b5c8209c0b25d5528148d592a03ac6e00beb36fb92a",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "ee6704c25dab66b332d67986b9c75dcbf106d0df9e68aaf9e3abab77a73ea96c",
+          "extractionRequestIds": [
+            "7512138fcfbc4b6e8e25406eef2e6b6c"
+          ],
+          "reviewRequestIds": [
+            "de67e66d1e0d4842a53e3c429c26db17"
+          ],
+          "coveredLineCount": 12
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.humility",
+              "weight": 0.5
+            },
+            {
+              "id": "theme.name_power",
+              "weight": 0.5
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.4
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.4
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.vitthala",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "d96c8ac77162b55d4dd31b7a39e6134344d798bcd62a9b2af109be5a96494180",
+        "mediaSha256": "7ff8313dd0509788741f0e89190311109b0cf4cd0188031b863d297985abeb62",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 192.727
+        },
+        "receiptHash": "496766c3dd613cde411bd82592f82c302824adcdd3b7a89b35a1259da3080c11",
+        "physical": {
+          "whole": {
+            "integratedLufs": -15.7,
+            "truePeakDbfs": -1.9,
+            "rmsDbfs": -15.831618920390664,
+            "centroidHz": 781.6621032673733
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -15.729645655185191,
+              "centroidHz": 817.5080803421341
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 192.7133125,
+              "rmsDbfs": -15.831618920390664,
+              "centroidHz": 781.6621032673733
+            },
+            "end": {
+              "startSeconds": 162.7133125,
+              "endSeconds": 192.7133125,
+              "rmsDbfs": -17.189616903468206,
+              "centroidHz": 729.5414331712082
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }

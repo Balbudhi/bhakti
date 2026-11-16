@@ -153,6 +153,18 @@
         "sha256": "fb83f0dc44e733634944d41fbd9ba534333a4c09b6b246ab94a426a95c4f7ee0"
       }
     ],
+    "amrutahuni-god-nam-tujhe-deva": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amrutahuni-god-nam-tujhe-deva-7ff8313dd0509788741f0e89190311109b0cf4cd0188031b863d297985abeb62.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "7ff8313dd0509788741f0e89190311109b0cf4cd0188031b863d297985abeb62"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amrutahuni-god-nam-tujhe-deva-4483fad6e996e72851c835cfa3da74467b1c7525522956a81aca1f3142596853.m4a",
+        "type": "audio/mp4",
+        "sha256": "4483fad6e996e72851c835cfa3da74467b1c7525522956a81aca1f3142596853"
+      }
+    ],
     "anandache-dohi": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/anandache-dohi.webm",
@@ -1366,6 +1378,18 @@
         "sha256": "f5f6781af580b6cd95648c6edde8ce9cb2b1c91a75e8035034f45d2319884354"
       }
     ],
+    "je-sau-chanda-ugveh": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-sau-chanda-ugveh-5fd645b3e415343260ffab4f0d5e1c4f77f1739fb49e12a7ac1889ed2bd2dbc4.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "5fd645b3e415343260ffab4f0d5e1c4f77f1739fb49e12a7ac1889ed2bd2dbc4"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-sau-chanda-ugveh-eda06d04941d69e2a43351ad4348d6a6d364f746b5547969a14e34e9dbff7464.m4a",
+        "type": "audio/mp4",
+        "sha256": "eda06d04941d69e2a43351ad4348d6a6d364f746b5547969a14e34e9dbff7464"
+      }
+    ],
     "jeevan-ke-har-mode": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jeevan-ke-har-mode.mp3",
@@ -2481,6 +2505,18 @@
         "sha256": "a2dd88816208474d2fa04c5e5191c26385ef0d05483ed536c1edaa54a8670baf"
       }
     ],
+    "prabh-ju-to-kah-laj-hamari": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-9c0b7e3449ee515cc36882c704b49be695a4a7eed69bbc4148b1faefb567f45c.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "9c0b7e3449ee515cc36882c704b49be695a4a7eed69bbc4148b1faefb567f45c"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-715f7384c7fac8e017d8a4b4d4bfae4c5523264a5872e46a8f8cdbd588e523b1.m4a",
+        "type": "audio/mp4",
+        "sha256": "715f7384c7fac8e017d8a4b4d4bfae4c5523264a5872e46a8f8cdbd588e523b1"
+      }
+    ],
     "prabhu-ham-pe-kripa-karna": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabhu-ham-pe-kripa-karna.m4a",
@@ -3401,6 +3437,18 @@
         "sha256": "265693036b6474680d6d149007925e93801d68d4fcde2b182a42aef6d3054b4e"
       }
     ],
+    "vaishnavaghari-sarvakal": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-eba09facec4400479f443c506c0bad3feb3ad2c04f051a87f2914130d6a39a6c.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "eba09facec4400479f443c506c0bad3feb3ad2c04f051a87f2914130d6a39a6c"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-ea16223b7a589bf53109f8f6c65e2f280bc84c9edebaf4509bf4b1fd44d79ad7.m4a",
+        "type": "audio/mp4",
+        "sha256": "ea16223b7a589bf53109f8f6c65e2f280bc84c9edebaf4509bf4b1fd44d79ad7"
+      }
+    ],
     "venkatachala-nilayam": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/venkatachala-nilayam.webm",
@@ -3456,6 +3504,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vyartha-gavaya-is.m4a",
         "type": "audio/mp4",
         "sha256": "9ecc21ec9e672ffbab2b56d02edfe28b44458a5714ea248c7419dd1a83f7257c"
+      }
+    ],
+    "yajasathi-kela-hota-attahas": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yajasathi-kela-hota-attahas-5255f2823253eb2c83d71dfd0829f5655f8039be74439476816cbb4d66a8b986.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "5255f2823253eb2c83d71dfd0829f5655f8039be74439476816cbb4d66a8b986"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yajasathi-kela-hota-attahas-dfb91d287fcf46e7081a57ac5098c815aad00d9ee7c2b4c2d919c8d9aacbf395.m4a",
+        "type": "audio/mp4",
+        "sha256": "dfb91d287fcf46e7081a57ac5098c815aad00d9ee7c2b4c2d919c8d9aacbf395"
       }
     ],
     "ye-tanu-mundna-be-mundna": [

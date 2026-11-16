@@ -11463,6 +11463,207 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Gurbāṇī",
     "queueNumber": 355
+  },
+  {
+    "slug": "vaishnavaghari-sarvakal",
+    "queueId": "ba70e013",
+    "title": "Vaiṣṇavā Gharīṃ Sarvakāḷ",
+    "credit": "Nāmadev · Bhimsen Joshi",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Vaishnava Gharim Sarvakal",
+      "Vaisnava Gharim Sarvakal",
+      "Vishnu",
+      "Visnu",
+      "Namadev · Bhimsen Joshi",
+      "Namadev",
+      "Vaisnavaghari Sarvakal",
+      "Vaiṣṇavāgharī Sarvakāḷ",
+      "वैष्णवाघरी सर्वकाळ",
+      "Vaishnawa Ghari Sarvkaal",
+      "Nāmdev",
+      "Namdev",
+      "Sant Namdev",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang"
+    ],
+    "writer": "Nāmadev",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-eba09facec4400479f443c506c0bad3feb3ad2c04f051a87f2914130d6a39a6c.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-ea16223b7a589bf53109f8f6c65e2f280bc84c9edebaf4509bf4b1fd44d79ad7.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 361
+  },
+  {
+    "slug": "yajasathi-kela-hota-attahas",
+    "queueId": "5806673a",
+    "title": "Yācasāṭhī Kelā Hotā Aṭṭāhās",
+    "credit": "Tukārām · Bhimsen Joshi",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Yacasathi Kela Hota Attahas",
+      "Tukaram · Bhimsen Joshi",
+      "Tukaram",
+      "Yajasati Kela Hota Atahasye",
+      "Yājasāṭhī Kelā Hotā Aṭṭāhās",
+      "याजसाठी केला होता अट्टाहास",
+      "Yaajsathi Kela Hota Attahaas",
+      "Sant Tukaram",
+      "Yājasāṭī Kelā Hotā Āṭāhāsye",
+      "याचसाठी केला होता अट्टाहास"
+    ],
+    "writer": "Tukārām",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yajasathi-kela-hota-attahas-5255f2823253eb2c83d71dfd0829f5655f8039be74439476816cbb4d66a8b986.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yajasathi-kela-hota-attahas-dfb91d287fcf46e7081a57ac5098c815aad00d9ee7c2b4c2d919c8d9aacbf395.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 362
+  },
+  {
+    "slug": "je-sau-chanda-ugveh",
+    "queueId": "b7623616",
+    "title": "Je Sau Candā Ugavahi",
+    "credit": "Gurū Aṅgad · Bhai Jaswant Singh",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
+    "searchAliases": [
+      "Je Sau Canda Ugavahi",
+      "Gurbani",
+      "Guru Angad · Bhai Jaswant Singh",
+      "Guru Angad",
+      "Je Sau Chandaa Ugvahe",
+      "Sikh",
+      "Sikhi"
+    ],
+    "writer": "Gurū Aṅgad",
+    "singer": "Bhai Jaswant Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-sau-chanda-ugveh-5fd645b3e415343260ffab4f0d5e1c4f77f1739fb49e12a7ac1889ed2bd2dbc4.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-sau-chanda-ugveh-eda06d04941d69e2a43351ad4348d6a6d364f746b5547969a14e34e9dbff7464.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 359
+  },
+  {
+    "slug": "prabh-ju-to-kah-laj-hamari",
+    "queueId": "a397cf54",
+    "title": "Prabh Jū To Kah Lāj Hamārī",
+    "credit": "Gurū Gobind Siṅgh · Bhai Harjinder Singh",
+    "languageTags": [
+      "Braj",
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
+    "searchAliases": [
+      "Gurbani",
+      "Guru Gobind Singh · Bhai Harjinder Singh",
+      "Guru Gobind Singh",
+      "Prabh Joo Ti Keh Laaj Hamari",
+      "Sikh",
+      "Sikhi"
+    ],
+    "writer": "Gurū Gobind Siṅgh",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-9c0b7e3449ee515cc36882c704b49be695a4a7eed69bbc4148b1faefb567f45c.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-715f7384c7fac8e017d8a4b4d4bfae4c5523264a5872e46a8f8cdbd588e523b1.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 360
+  },
+  {
+    "slug": "amrutahuni-god-nam-tujhe-deva",
+    "queueId": "edb16ca4",
+    "title": "Amṛtāhunī Goḍ Nām Tujhe Devā",
+    "credit": "Nāmadev · Manik Varma & Party · Bal Mate",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Amrtahuni God Nam Tujhe Deva",
+      "Vishnu",
+      "Visnu",
+      "Namadev · Manik Varma & Party · Bal Mate",
+      "Namadev",
+      "Krshna",
+      "Krsna",
+      "Amṛtāhūni Goḍ Nām Tujhe Devā",
+      "अमृताहूनि गोड नाम तुझे देवा",
+      "Amrutahuni God Naam Tuze Deva",
+      "Nāmdev",
+      "Namdev",
+      "Sant Namdev",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang"
+    ],
+    "writer": "Nāmadev",
+    "singer": "Manik Varma & Party",
+    "composer": "Bal Mate",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amrutahuni-god-nam-tujhe-deva-7ff8313dd0509788741f0e89190311109b0cf4cd0188031b863d297985abeb62.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amrutahuni-god-nam-tujhe-deva-4483fad6e996e72851c835cfa3da74467b1c7525522956a81aca1f3142596853.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 358
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "ca868db3411ebf807633812f9528d69b5ad05274e1ec66f6bee0103d3ca842c2";
+window.BHAKTI_SHUFFLE_REVISION = "baa03e14146f4217a03899823fc84c79dc69336d697f706d4fe91bff313e935c";
