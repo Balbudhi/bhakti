@@ -543,6 +543,69 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(value["subjectTags"], ["Hanumān"])
         self.assertTrue(value["keepOriginal"])
 
+    def test_song_url_inherits_exact_source_credits_without_network(self) -> None:
+        source = "https://youtu.be/c6J13QO-1fE?t=42"
+        options = type("Options", (), {"song": [f"chosen-slug={source}"], "batch": None})()
+        with mock.patch.object(pipeline, "media_metadata", side_effect=AssertionError("network")), \
+             mock.patch.object(pipeline.ytmusic, "resolve_reference", side_effect=AssertionError("network")):
+            job, = pipeline.normalise_jobs(options)
+        self.assertEqual(job["slug"], "chosen-slug")
+        self.assertEqual(job["source"], source)
+        self.assertEqual(job["writer"], "Tufail Hoshiarpuri")
+        self.assertEqual(job["singer"], "Nusrat Fateh Ali Khan")
+        self.assertEqual(job["subjectTags"], ["Kṛṣṇa"])
+        self.assertEqual(job["writerAttribution"], "Poem")
+        self.assertNotIn("composer", job)
+        self.assertNotIn("creditEvidence", job)
+
+    def test_batch_source_defaults_preserve_explicit_values_and_aliases(self) -> None:
+        entries = [
+            {"slug": "explicit", "source": "https://www.youtube.com/watch?v=aLWFJaF9HsU",
+             "title": "Chosen title", "writer": "", "singer": "Chosen singer", "languages": [],
+             "subjectTags": [], "searchAliases": ["Chosen alias"], "_keep_original": False},
+            {"slug": "defaults", "source": "https://music.youtube.com/watch?v=aLWFJaF9HsU"},
+        ]
+        manifest = self.root / "batch.json"
+        manifest.write_text(json.dumps({"songs": entries}), encoding="utf-8")
+        options = type("Options", (), {"song": [], "batch": manifest})()
+        with mock.patch.object(pipeline, "media_metadata", side_effect=AssertionError("network")), \
+             mock.patch.object(pipeline.ytmusic, "resolve_reference", side_effect=AssertionError("network")):
+            explicit, defaults = pipeline.normalise_jobs(options)
+        for key, value in entries[0].items():
+            self.assertEqual(explicit[key], value, key)
+        self.assertEqual(explicit["composer"], "Dinesh Dubey")
+        self.assertEqual(defaults["writer"], "Tulsīdās")
+        self.assertEqual(defaults["searchAliases"], ["Hanuman Bahuk", "Hanuman Bahuk Sarita Joshi"])
+        self.assertTrue(defaults["_keep_original"])
+
+    def test_source_defaults_leave_unknown_and_local_jobs_unchanged(self) -> None:
+        sources = ["https://youtu.be/abcdefghijk", "/tmp/c6J13QO-1fE.m4a",
+                   "https://example.com/watch?v=c6J13QO-1fE",
+                   "https://example.com/https://youtu.be/c6J13QO-1fE",
+                   "https://youtu.be/c6J13QO-1fE-extra"]
+        options = type("Options", (), {"song": [f"sample-{i}={s}" for i, s in enumerate(sources)],
+                                       "batch": None})()
+        jobs = pipeline.normalise_jobs(options)
+        self.assertEqual(jobs, [{"slug": f"sample-{i}", "source": s} for i, s in enumerate(sources)])
+
+    def test_url_registry_writer_attribution_reaches_job(self) -> None:
+        registry = self.root / "data" / "source_credits.json"
+        value = json.loads(registry.read_text(encoding="utf-8"))
+        value["sources"]["c6J13QO-1fE"]["writerAttribution"] = "Underlying poem"
+        registry.write_text(json.dumps(value), encoding="utf-8")
+        options = type("Options", (), {"song": [], "url": ["https://youtu.be/c6J13QO-1fE"],
+                                       "batch": None})()
+        resolved_url = "https://www.youtube.com/watch?v=c6J13QO-1fE"
+        with mock.patch.object(pipeline.ytmusic, "resolve_reference", return_value={
+                 "resolved_url": resolved_url, "id": "c6J13QO-1fE"}) as resolve, \
+             mock.patch.object(pipeline, "media_metadata", return_value={
+                 "id": "c6J13QO-1fE", "title": "Raw title"}) as metadata:
+            job, = pipeline.normalise_jobs(options)
+        resolve.assert_called_once_with(options.url[0])
+        metadata.assert_called_once_with(resolved_url)
+        self.assertEqual(job["source"], resolved_url)
+        self.assertEqual(job["writerAttribution"], "Underlying poem")
+
     def test_pinned_source_skips_secondary_official_audio_resolution(self) -> None:
         job = {"slug": "pinned", "source": "https://youtu.be/aLWFJaF9HsU", "_keep_original": True,
                "_source_metadata": {"id": "aLWFJaF9HsU", "title": "Hanuman Bahuk", "duration": 10}}

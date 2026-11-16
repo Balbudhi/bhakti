@@ -179,7 +179,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man har jī terai nāl hai",
-    "english": "{0:O mind, }{1,2:the dear Lord }{5:is }{3,4:with you.}",
+    "english": "{0:O mind, }{1,2:dear Har }{5:is }{3,4:with you.}",
     "words": [
       {
         "roman": "Man",
@@ -187,7 +187,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "the divine Lord"
+        "gloss": "Har, the divine name for the Lord"
       },
       {
         "roman": "jī",
@@ -269,7 +269,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man har jī terai nāl hai gurmatī raṅg māṇ",
-    "english": "{0:O mind, }{1,2:the dear Lord }{5:is }{3,4:with you; }{8:enjoy }{7:delight }{6:through the teacher’s instruction.}",
+    "english": "{0:O mind, }{1,2:dear Har }{5:is }{3,4:with you; }{8:enjoy }{7:delight }{6:through the teacher’s instruction.}",
     "words": [
       {
         "roman": "Man",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "the divine Lord"
+        "gloss": "Har, the divine name for the Lord"
       },
       {
         "roman": "jī",

@@ -10167,7 +10167,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Samsom Ki Mala",
@@ -10176,7 +10177,7 @@ window.BHAKTI_SONGS = [
       "Sanso Ki Mala",
       "Saso Ki Mala"
     ],
-    "writer": "",
+    "writer": "Tufail Hoshiarpuri",
     "singer": "Nusrat Fateh Ali Khan",
     "composer": "",
     "audioSources": [
@@ -10189,7 +10190,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
-    "subtitle": "Rāma",
+    "subtitle": "Rāma · Kṛṣṇa",
     "queueNumber": 312
   },
   {
@@ -12359,4 +12360,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 366
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "461d5a61a33dc6826a916eae61a5f90ac06d04cb60741833346e6311274370ed";
+window.BHAKTI_SHUFFLE_REVISION = "b311a1fe9d11658b309575a7f6d990e8fe5d712e7be36a0996e224243b44ae7c";

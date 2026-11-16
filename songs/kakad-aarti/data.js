@@ -1058,7 +1058,7 @@ window.SONG_LINES = {
     "source": "गुरु की उपमा बड़ी है विधि हरी हर से भी",
     "sourceLanguage": "hi",
     "roman": "Guru kī upamā baṛī hai vidhi harī har se bhī",
-    "english": "{0,1:The Guru's}{2: glory}{3,4: is greater}{8,9: even than}{5,6,7: Brahma, Vishnu, and Shiva.}",
+    "english": "{0,1:The Guru's}{2: glory}{3,4: is greater}{8,9: even than}{5,6,7: Vidhi, Harī, and Har.}",
     "words": [
       {
         "roman": "Guru",
@@ -1082,15 +1082,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "vidhi",
-        "gloss": "Brahma"
+        "gloss": "Vidhi, a name for Brahmā, the Creator, in this comparison"
       },
       {
         "roman": "harī",
-        "gloss": "Vishnu"
+        "gloss": "Harī (Hari), a name of Viṣṇu in this comparison"
       },
       {
         "roman": "har",
-        "gloss": "Shiva"
+        "gloss": "Har (Hara), a name of Śiva in this comparison"
       },
       {
         "roman": "se",

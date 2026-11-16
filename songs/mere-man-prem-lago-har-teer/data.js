@@ -106,7 +106,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prem lago har tīr",
-    "english": "{2:the Lord’s }{0:love-}{3:arrow }{1:has lodged.}",
+    "english": "{2:Har’s }{0:love-}{3:arrow }{1:has lodged.}",
     "words": [
       {
         "roman": "Prem",
@@ -118,7 +118,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "the divine Lord"
+        "gloss": "Har, the divine name for the Lord"
       },
       {
         "roman": "tīr",
@@ -176,11 +176,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Har darasan kau merā man bahu tapatai",
-    "english": "{3:My }{4:heart }{6:burns }{5:fiercely }{2:for }{0:the Lord’s }{1:sight,}",
+    "english": "{3:My }{4:heart }{6:burns }{5:fiercely }{2:for }{0:Har’s }{1:sight,}",
     "words": [
       {
         "roman": "Har",
-        "gloss": "the divine Lord"
+        "gloss": "Har, the divine name for the Lord"
       },
       {
         "roman": "darasan",
@@ -298,7 +298,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hamrī bedan har prabh jānai",
-    "english": "{2,3:The Lord }{4:knows }{0:my }{1:pain—}",
+    "english": "{2,3:Har, the Lord, }{4:knows }{0:my }{1:pain—}",
     "words": [
       {
         "roman": "Hamrī",
@@ -310,7 +310,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "the divine Lord"
+        "gloss": "Har, the divine name for the Lord"
       },
       {
         "roman": "prabh",
@@ -434,7 +434,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mere har prītam kī koī bāt sunāvai",
-    "english": "{4:Whoever }{6:tells }{5:news }{3:of }{0:my }{1:Lord, }{2:my Beloved—}",
+    "english": "{4:Whoever }{6:tells }{5:news }{3:of }{0:my }{1:Har, }{2:my Beloved—}",
     "words": [
       {
         "roman": "Mere",
@@ -442,7 +442,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "the divine Lord"
+        "gloss": "Har, the divine name for the Lord"
       },
       {
         "roman": "prītam",
@@ -726,7 +726,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jan Nānak kī har ās pujāvahu",
-    "english": "{3:O Lord, }{5:fulfil }{0:servant }{1,2:Nānak’s }{4:hope;}",
+    "english": "{3:O Har, }{5:fulfil }{0:servant }{1,2:Nānak’s }{4:hope;}",
     "words": [
       {
         "roman": "Jan",
@@ -742,7 +742,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "O divine Lord"
+        "gloss": "O Har; the divine Lord directly addressed"
       },
       {
         "roman": "ās",
@@ -792,7 +792,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nānak kī har ās pujāvahu",
-    "english": "{2:O Lord, }{4:fulfil }{0,1:Nānak’s }{3:hope;}",
+    "english": "{2:O Har, }{4:fulfil }{0,1:Nānak’s }{3:hope;}",
     "words": [
       {
         "roman": "Nānak",
@@ -804,7 +804,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "O divine Lord"
+        "gloss": "O Har; the divine Lord directly addressed"
       },
       {
         "roman": "ās",
@@ -848,11 +848,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "har darasan sāṃt sarīr",
-    "english": "{0,1:at the sight of you, }{3:the body }finds {2:peace.}",
+    "english": "{0,1:at the sight of you, Har, }{3:the body }finds {2:peace.}",
     "words": [
       {
         "roman": "har",
-        "gloss": "the divine Lord; you being addressed"
+        "gloss": "Har, the divine Lord being addressed as you"
       },
       {
         "roman": "darasan",

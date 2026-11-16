@@ -2380,7 +2380,7 @@ window.SONG_LINES = {
     "source": "कौतुक बिलोकि लोकपाल हरि हर बिधि लोचननि चकाचौंधी चित्तनि खभार सो",
     "sourceLanguage": "bra",
     "roman": "kautuka biloki lokapāla hari hara bidhi locanani cakācaundhī cittani khabhāra so",
-    "english": "{1:Beholding }{0:the spectacle, }{2:the world-guardians, }{3:Vishnu, }{4:Shiva, }{5:and Brahma }{7:felt a dazzling glare }{6:in their eyes }{9,10:and a sort of commotion }{8:in their minds,}",
+    "english": "{1:Beholding }{0:the spectacle, }{2:the world-guardians, }{3:Hari, }{4:Hara, }{5:and Bidhi }{7:felt a dazzling glare }{6:in their eyes }{9,10:and a sort of commotion }{8:in their minds,}",
     "words": [
       {
         "roman": "kautuka",
@@ -2402,19 +2402,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Vishnu",
+        "gloss": "Hari, a name of Viṣṇu in this list of deities",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hara",
-        "gloss": "Shiva",
+        "gloss": "Hara, a name of Śiva in this list of deities",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bidhi",
-        "gloss": "Brahma (the Creator)",
+        "gloss": "Bidhi, a name for Brahmā, the Creator, in this list of deities",
         "concept_key": "",
         "preserve_in_english": false
       },

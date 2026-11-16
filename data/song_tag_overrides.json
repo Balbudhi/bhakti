@@ -1423,6 +1423,20 @@
         }
       ],
       "performedSourcesSha256": "7d7c6af14cd103deea5ecc93791277db86091f55407715d207d3f466f143d268"
+    },
+    "saso-ki-mala-par-simaru-nisdina-pi-ka-nama": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "reviewedSubtitle": "Rāma · Kṛṣṇa",
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "line-049",
+          "source": "प्रेम की माला जपते जपते आप बनी मैं श्याम",
+          "reason": "The performed speaker identifies with Śyāma, the dark-hued Kṛṣṇa. Verified in retained audits and four fresh blind audio occurrences; no unperformed verses imported."
+        }
+      ]
     }
   }
 }

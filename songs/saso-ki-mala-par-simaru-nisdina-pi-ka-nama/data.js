@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Sāṃsoṃ Kī Mālā",
-  "subtitle": "Rāma",
+  "subtitle": "Rāma · Kṛṣṇa",
   "credit": "Nusrat Fateh Ali Khan",
   "pageCredit": "Nusrat Fateh Ali Khan",
-  "writer": "",
-  "writerAttribution": "",
+  "writer": "Tufail Hoshiarpuri",
+  "writerAttribution": "Poem",
   "translator": "",
   "translatorAttribution": "",
   "singer": "Nusrat Fateh Ali Khan",
@@ -18,7 +18,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Samsom Ki Mala",
@@ -238,7 +239,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Apnē man kī maĩ jānū̃ aur pī kē man kī rām",
-    "english": "{3:I }{4:know }{2:the state of }{0:my own }{1:heart, }{5:and }{10:Ram }{9:knows that of }{6,7:the Beloved's }{8:heart}",
+    "english": "{3:I }{4:know }{2:the state of }{0:my own }{1:heart, }{5:and }{10:Rāma }{9:knows that of }{6,7:the Beloved's }{8:heart}",
     "words": [
       {
         "roman": "Apnē",
@@ -3220,7 +3221,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Har-har meṅ hai Har base",
-    "english": "{1:In }{0:each and every being }{3:the Lord }{2,4:dwells,}",
+    "english": "{1:In }{0:each and every being }{3:Har }{2,4:dwells,}",
     "words": [
       {
         "roman": "Har-har",
@@ -3242,7 +3243,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Har",
-        "gloss": "the Lord; Hari; God",
+        "gloss": "Har (Hari), the divine Beloved in this stanza",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3292,7 +3293,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Har-har ko Har kī ās",
-    "english": "{0,1:each and every one }{4:has hope }{2,3:in the Lord,}",
+    "english": "{0,1:each and every one }{4:has hope }{2,3:in Har,}",
     "words": [
       {
         "roman": "Har-har",
@@ -3308,7 +3309,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Har",
-        "gloss": "the Lord; Hari",
+        "gloss": "Har (Hari), the divine Beloved in this stanza",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3364,11 +3365,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Har ko har-har ḍhūṅḍh phirī",
-    "english": "{3:Searching }{0,1:for the Lord }{2:everywhere }{4:I wandered,}",
+    "english": "{3:Searching }{0,1:for Har }{2:everywhere }{4:I wandered,}",
     "words": [
       {
         "roman": "Har",
-        "gloss": "the Lord; Hari",
+        "gloss": "Har (Hari), the divine Beloved in this stanza",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3436,7 +3437,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aur Har hai more pās",
-    "english": "{0:and }{1:the Lord }{2:is }{3,4:near me.}",
+    "english": "{0:and }{1:Har }{2:is }{3,4:near me.}",
     "words": [
       {
         "roman": "Aur",
@@ -3446,7 +3447,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Har",
-        "gloss": "the Lord; Hari",
+        "gloss": "Har (Hari), the divine Beloved in this stanza",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4096,7 +4097,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apne man kī maiñ jānūñ aur pī ke man kī rām",
-    "english": "{2:What is in }{0:my own }{1:heart }{3:I }{4:know, }{5:and }{9:what is in }{6,7:the Beloved's }{8:heart, }{10:Rām knows}",
+    "english": "{2:What is in }{0:my own }{1:heart }{3:I }{4:know, }{5:and }{9:what is in }{6,7:the Beloved's }{8:heart, }{10:Rāma knows}",
     "words": [
       {
         "roman": "apne",
@@ -4160,7 +4161,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Lord Ram; the Supreme Beloved",
+        "gloss": "the divine name Rāma, invoked as the one who knows the Beloved’s heart",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -4456,7 +4457,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem kī mālā japte japte āp banī maiñ shyām",
-    "english": "{3,4:Chanting and chanting }{2:the rosary }{0,1:of love, }{7:I }{5:myself }{6:became }{8:Shyām}",
+    "english": "{3,4:Chanting and chanting }{2:the rosary }{0,1:of love, }{7:I }{5:myself }{6:became }{8:Śyāma}",
     "words": [
       {
         "roman": "prem",
@@ -4582,7 +4583,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hē prem kī mālā japte japte āp banī maiñ shyām",
-    "english": "{0:O, }{4,5:Chanting and chanting }{3:the rosary }{1,2:of love, }{8:I }{6:myself }{7:became }{9:Shyām}",
+    "english": "{0:O, }{4,5:Chanting and chanting }{3:the rosary }{1,2:of love, }{8:I }{6:myself }{7:became }{9:Śyāma}",
     "words": [
       {
         "roman": "hē",
@@ -6209,7 +6210,7 @@ window.SONG_LINES = {
     "grammarNote": "Repetition of feminine singular participle 'dūbī' for emotional and musical emphasis."
   },
   "line-063": {
-    "source": "हरदम देखूँ मूरत अपनी हरवा सदा रहत मोरे घर माहीं",
+    "source": "हरदम देखूँ मोरा पियहरवा सदा रहत मोरे घर माहीं",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -6225,123 +6226,111 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मूरत",
+        "text": "मोरा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "अपनी",
+        "text": "पियहरवा",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "हरवा",
+        "text": "सदा",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सदा",
+        "text": "रहत",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "रहत",
+        "text": "मोरे",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "मोरे",
+        "text": "घर",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "घर",
+        "text": "माहीं",
         "wordIndices": [
           8
         ]
-      },
-      {
-        "text": "माहीं",
-        "wordIndices": [
-          9
-        ]
       }
     ],
-    "roman": "haradama dēkhūm̐ mūrata apanī haravā sadā rahata mōrē ghara māhīṁ",
-    "english": "{0:At every moment} {1:I behold} {3:my own} {2:form;} {4:Hari} {6:abides} {5:always} {9:within} {7:my} {8:home.}",
+    "roman": "haradam dekhūṃ morā piyaharvā sadā rahat more ghar māhīṃ",
+    "english": "{0:At every moment }{1:I see }{2:my }{3:beloved; }{4,5:he always dwells }{8:within }{6:my }{7:home.}",
     "words": [
       {
-        "roman": "haradama",
-        "gloss": "every moment / at all times",
+        "roman": "haradam",
+        "gloss": "at every moment",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dēkhūm̐",
-        "gloss": "I see / gaze upon",
+        "roman": "dekhūṃ",
+        "gloss": "I see; I behold",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mūrata",
-        "gloss": "form / image / countenance",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "apanī",
-        "gloss": "one's own; my own (reflexive)",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "haravā",
-        "gloss": "the Lord (Hari) / Beloved",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sadā",
-        "gloss": "always / constantly",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "rahata",
-        "gloss": "dwells / abides",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "mōrē",
+        "roman": "morā",
         "gloss": "my",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ghara",
-        "gloss": "house / inner abode",
+        "roman": "piyaharvā",
+        "gloss": "beloved",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "māhīṁ",
-        "gloss": "within / inside",
+        "roman": "sadā",
+        "gloss": "always",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rahat",
+        "gloss": "dwells; abides",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "more",
+        "gloss": "my",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ghar",
+        "gloss": "home",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "māhīṃ",
+        "gloss": "within",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "'haravā' is a fond diminutive/dialectal form of 'Hari'. 'rahata' is an habitual/imperfective Braj verb form agreeing with 'haravā'."
+    "grammarNote": "'morā piyaharvā' means 'my beloved'. The following clause says that the beloved always dwells within the speaker's home; 'māhīṃ' supplies 'within'. There is no separate word 'Hari' or phrase 'my own form' in this reading."
   },
   "line-064": {
-    "source": "अंदर वोही बाहर वोही है नैनन माहीं माहीं",
+    "source": "अंदर बाहर आप वोही है मैं नाहीं मैं नाहीं",
     "sourceLanguage": "",
     "sourceWords": [
       {
@@ -6351,13 +6340,13 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "वोही",
+        "text": "बाहर",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "बाहर",
+        "text": "आप",
         "wordIndices": [
           2
         ]
@@ -6375,78 +6364,90 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नैनन",
+        "text": "मैं",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "माहीं",
+        "text": "नाहीं",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "माहीं",
+        "text": "मैं",
         "wordIndices": [
           7
         ]
+      },
+      {
+        "text": "नाहीं",
+        "wordIndices": [
+          8
+        ]
       }
     ],
-    "roman": "aṁdara vōhī bāhara vōhī hai nainana māhīṁ māhīṁ",
-    "english": "{0:Inside} {1:is that very One,} {2:outside} {3:is that very One;} {4:He is} {6,7:within, deep within} {5:the eyes.}",
+    "roman": "andar bāhar āp vohī hai maiṃ nāhīṃ maiṃ nāhīṃ",
+    "english": "{0:Within }{1:and without }{4:is }{3:that very One }{2:himself—}{6:not }{5:I, }{8:not }{7:I.}",
     "words": [
       {
-        "roman": "aṁdara",
-        "gloss": "inside",
+        "roman": "andar",
+        "gloss": "within; inside",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vōhī",
-        "gloss": "that very One / He Himself",
+        "roman": "bāhar",
+        "gloss": "without; outside",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bāhara",
-        "gloss": "outside",
+        "roman": "āp",
+        "gloss": "himself (emphatic/reflexive here)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vōhī",
-        "gloss": "that very One / He Himself",
+        "roman": "vohī",
+        "gloss": "that very One",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hai",
-        "gloss": "is / exists",
+        "gloss": "is",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "nainana",
-        "gloss": "eyes",
+        "roman": "maiṃ",
+        "gloss": "I",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "māhīṁ",
-        "gloss": "in / within",
+        "roman": "nāhīṃ",
+        "gloss": "not; am not (with preceding I)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "māhīṁ",
-        "gloss": "in / deeply within",
+        "roman": "maiṃ",
+        "gloss": "I",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nāhīṃ",
+        "gloss": "not; am not (with preceding I)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "'vōhī' = demonstrative pronoun 'vō' + emphatic clitic 'hī'. 'nainana' is Braj oblique plural of 'naina' (eyes). Reduplicated 'māhīṁ māhīṁ' emphasizes inwardness."
+    "grammarNote": "'āp' emphasizes 'vohī' ('that very One himself'). The repeated 'maiṃ nāhīṃ' is first-person negation, 'I am not'; it is not a phrase about the eyes."
   },
   "line-065": {
     "source": "हो जोगनिया का भेस बना के पी को ढूँढन जाऊँ री",

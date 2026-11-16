@@ -13,7 +13,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 8
+POLICY_VERSION = 9
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
@@ -30,7 +30,13 @@ legacy preserved-term registry is not a command to leave it untranslated. Keep
 genuine proper names, with their evidenced identity, relationship or literal
 meaning in the clickable gloss. Distinguish a person's name from a descriptive
 epithet; explain the epithet's operative meaning rather than flattening every
-divine title to Lord. Do not manufacture etymologies from a modern artist name.
+divine title to Lord. Retain divine names and named forms such as Hari, Har, Rāma and Śyāma in the
+English; explain their contextual referent and evidenced meaning in the popup.
+Do not replace a name by generic God/Lord or by a different name of the same
+deity. Distinguish divine Har/Hari from ordinary homophones meaning every,
+green, defeated or taken away; never apply a spelling-only substitution. A name
+used in Gurbāṇī or Sufi poetry does not by itself establish a specific incarnation
+narrative. Do not manufacture etymologies from a modern artist name.
 When a name has an evidenced literal or traditional meaning, include that meaning
 in its clickable gloss as well as its referent; identity alone is not a substitute
 for explaining a known meaning. Mark traditional explanations as such. Do not

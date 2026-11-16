@@ -297,9 +297,12 @@ relationships. Keep repetition, personification, bodily states, purposeful
 ambiguity and literal strangeness. Improve English syntax without replacing these
 with generic devotional language. Transparent compounds are useful when the
 source supports every member; opaque literary coinages and invented etymologies
-are not. Genuine names retain their evidenced identity or relationship in the
-popup; ordinary words and philosophical concepts receive precise contextual
-English, including short phrases when necessary.
+are not. Genuine divine names and named forms remain in English (Hari, Har, Rāma,
+Śyāma); their popups explain the contextual identity and evidenced meaning.
+Do not replace them with generic God/Lord or a different divine name. Distinguish
+ordinary homophones before retaining anything, and do not impose a specific
+incarnation narrative on Gurbāṇī or Sufi usage. Ordinary words and philosophical
+concepts receive precise contextual English, including short phrases when needed.
 
 Gloss cleanup must not choose a meaning from a folded spelling. A bare name
 requires contextual explanation before publication; it must not acquire a poet,
@@ -381,7 +384,7 @@ and independent review. This is distinct from unresolved source meaning, and
 missing dictionary coverage alone is insufficient. Genuine
 names may remain, with their evidenced literal/traditional meaning and referent
 explained on click. Unknown etymology is not invented. Existing owner English is
-still protected. Shared prompt policy version 8 states these rules and explicitly
+still protected. Shared prompt policy version 9 states these rules and explicitly
 checks inflection, adjectival relationships and connotations, and compound meaning.
 
 Retention is a wording decision after source meaning has been established.

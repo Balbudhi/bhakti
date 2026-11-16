@@ -361,7 +361,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Taise hī har base nirantar",
-    "english": "{0,1:so indeed }{2:the Lord }{3:dwells, }{4:pervading all;}",
+    "english": "{0,1:so indeed }{2:Har }{3:dwells, }{4:pervading all;}",
     "words": [
       {
         "roman": "Taise",
@@ -373,7 +373,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "the divine Lord"
+        "gloss": "Har, the divine name for the Lord"
       },
       {
         "roman": "base",

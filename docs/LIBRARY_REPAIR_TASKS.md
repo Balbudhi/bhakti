@@ -1305,3 +1305,24 @@ name labels, and cannot overwrite a meaningful occurrence-specific explanation.
 BPM remains disabled: the classical/neural comparison did not establish reliable
 beat interpretation or ordering benefit for this catalogue. See
 `research/shuffle-qualification-2026-11-15/rhythm-followup.md` for the evidence.
+
+### Focused divine-name and Sāṃsoṃ transcription repair (2026-11-16)
+
+Six readers retain contextual Har/Hari/Hara/Bidhi names in sixteen affected
+rows; ordinary homophones remain translated. Sāṃsoṃ retains Rāma and Śyāma,
+and its performed Śyāma line supports the Kṛṣṇa tag. Tufail Hoshiarpuri is
+credited for the underlying poem, Nusrat Fateh Ali Khan as singer; the musical
+composer remains unverified. Exact-source registry defaults now reach --song
+and --batch intake while preserving explicit user values. Translation policy v9
+requires contextual divine-name preservation; this is guidance, not a guarantee.
+
+Focused recording checks also established two source errors at 15:45–15:59:
+my beloved had been split into my own form / Hari, and repeated first-person
+negation had become an eyes phrase. Both source lines, Roman text, English and
+word links were independently reviewed and repaired. Ten bounded audio calls
+cost $0.095386, including one rejected truncated response and its recovery.
+This verifies disputed/name passages, not a new full-recording completeness or
+first-syllable timing audit. Sequence, timing bytes and listener audio are unchanged.
+Six corresponding semantic profiles were refreshed in twelve calls for $0.29256225;
+all 365 audio profiles and 359 unrelated records remain identical. The profile
+audit and public assembly pass. All 365 readers pass structural contract checks.

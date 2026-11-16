@@ -34,6 +34,7 @@ import time
 import unicodedata
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qs, urlsplit
 
 import process_song_gemini as gemini
 import gloss_policy
@@ -422,6 +423,7 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
         jobs.append({"slug": naming.slugify(title), "source": metadata.get("webpage_url") or source_value,
                      "title": title, "displayTitle": str(override.get("displayTitle") or ""), "subtitle": fields.get("album", ""),
                      "writer": writer, "singer": singer, "vocalist": str(override.get("vocalist") or ""),
+                     **({"writerAttribution": override["writerAttribution"]} if "writerAttribution" in override else {}),
                      "ensemble": str(override.get("ensemble") or ""), "composer": composer,
                      **({"musicDirector": music_director} if music_director else {}),
                      "languages": list(override.get("languages") or []),
@@ -441,6 +443,23 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
     for job in jobs:
         if not isinstance(job, dict) or not isinstance(job.get("slug"), str) or not isinstance(job.get("source"), str):
             raise SystemExit("each job needs string slug and source")
+        # Explicit jobs bypass online metadata discovery, but still inherit
+        # evidenced defaults for the exact supplied recording. Presence, not
+        # truthiness, protects intentional blank credits and empty tag lists.
+        source_url = urlsplit(job["source"]) if is_url(job["source"]) else None
+        video_id = ""
+        if source_url and source_url.hostname == "youtu.be":
+            video_id = source_url.path.removeprefix("/")
+        elif (source_url and source_url.hostname in {"youtube.com", "www.youtube.com", "m.youtube.com", "music.youtube.com"}
+              and source_url.path == "/watch"):
+            video_id = parse_qs(source_url.query).get("v", [""])[0]
+        override = source_credit_override({"id": video_id}) if re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id) else {}
+        for field in ("title", "displayTitle", "writer", "writerAttribution", "singer", "vocalist", "ensemble",
+                      "composer", "musicDirector", "languages", "subjectTags", "searchAliases", "sourceFirstWitness"):
+            if field in override:
+                job.setdefault(field, copy.deepcopy(override[field]))
+        if "keepOriginal" in override:
+            job.setdefault("_keep_original", bool(override["keepOriginal"]))
         aliases = job.get("searchAliases", [])
         if not isinstance(aliases, list) or any(not isinstance(alias, str) for alias in aliases):
             raise SystemExit(f"searchAliases for {job['slug']!r} must be a list of strings")

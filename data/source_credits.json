@@ -141,8 +141,17 @@
       "title": "Sā̃sõ Kī Mālā Par Simarū̃ Nisdina Pī Kā Nāma",
       "writer": "Tufail Hoshiarpuri",
       "singer": "Nusrat Fateh Ali Khan",
-      "subjectTags": ["Kṛṣṇa"],
-      "searchAliases": ["Sanson Ki Mala", "Saanson Ki Mala Pe", "Sanson Ki Mala Pe Simrun Main"]
+      "subjectTags": [
+        "Kṛṣṇa"
+      ],
+      "searchAliases": [
+        "Sanson Ki Mala",
+        "Saanson Ki Mala Pe",
+        "Sanson Ki Mala Pe Simrun Main"
+      ],
+      "writerAttribution": "Poem",
+      "creditEvidence": "Underlying poem credited to Tufail Hoshiarpuri by Sufinama, citing Soch Mala; the performance includes interpolated verses. Musical composer is not independently established.",
+      "evidenceUrl": "https://sufinama.org/kalaam/saanson-kii-maalaa-par-simron-nisdin-pii-kaa-naam-tufail-hoshiarpuri-kalaam-1"
     },
     "XJ4Ka9E_T7Q": {
       "title": "Baso Mere Nainan Mẽ Nandalāl",
