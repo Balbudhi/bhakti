@@ -3400,7 +3400,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā vipata jāla ghere",
-    "english": "{0:O Mother, }{3:ensnared in }{2:a net of }{1:calamities.}",
+    "english": "{0:O Mother, }{3:we are ensnared in }{2:a net of }{1:calamities.}",
     "words": [
       {
         "roman": "Maiyā",

@@ -201,7 +201,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Duḥkhīra duḥkhare prāṇa āndoḷita kara",
-    "english": "{1:By the sorrow}{0: of the suffering one,}{4: make}{2: the life-breath}{3: stirred,}",
+    "english": "{3,4:Stir}{2: the life-breath}{1: with the sorrow}{0: of the suffering one,}",
     "words": [
       {
         "roman": "Duḥkhīra",

@@ -748,7 +748,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mama pada manahi bā~dha bari ḍōrī.",
-    "english": "{4,5:and twisting them into a rope, }{3:binds }{2:the mind }{0:to my }{1:feet,}",
+    "english": "{4,5:and twisting them into a rope, }{3:one who binds }{2:the mind }{0:to my }{1:feet,}",
     "words": [
       {
         "roman": "mama",
@@ -1903,7 +1903,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pada ambuja gahi bārahi~ bārā.",
-    "english": "{2:Grasping}{1: the lotus}{0: feet}{3,4: again and again,}",
+    "english": "{2:As he grasped}{1: the lotus}{0: feet}{3,4: again and again,}",
     "words": [
       {
         "roman": "pada",
@@ -3069,7 +3069,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo saṁpati siva rāvanahi dīnha diēṁ dasa mātha",
-    "english": "{1:The sovereignty }{0:which }{2:Shiva }{4:gave }{3:to Ravana }{5:upon offering }{6:ten }{7:heads,}",
+    "english": "{1:The sovereignty }{0:which }{2:Śiva }{4:gave }{3:to Rāvaṇa }{5:when Rāvaṇa offered }{6:ten }{7:heads,}",
     "words": [
       {
         "roman": "jo",
@@ -4294,7 +4294,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "binaya karia sāgara sana jāī",
-    "english": "{4:having approached, }{0:humble supplication }{1:should be made }{3:to }{2:the ocean.}",
+    "english": "{4:One should approach }{2:the ocean }{1:and make }{0:humble supplication }{3:to it.}",
     "words": [
       {
         "roman": "binaya",
@@ -11995,7 +11995,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "suni khala bacana dūta risa bāṛhī",
-    "english": "{0:Hearing }{1:the villain’s }{2:words, }{3:the envoy’s }{4:wrath }{5:flared up;}",
+    "english": "{0,3:When the envoy heard }{1:the villain’s }{2:words, }{4:his wrath }{5:flared up;}",
     "words": [
       {
         "roman": "suni",

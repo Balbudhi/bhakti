@@ -956,7 +956,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sudhā sīñci kapi kṛpānagara nara",
-    "english": "{1:Sprinkling }{0:nectar, }{3:the abode of compassion, }{2:upon the monkeys }{4:and men,}",
+    "english": "{1:Sprinkling }{0:nectar }{2:on the monkeys }{3:and showing grace to the city's }{4:men}",
     "words": [
       {
         "roman": "sudhā",
@@ -978,7 +978,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛpānagara",
-        "gloss": "abode of compassion; city of grace (Rama)",
+        "gloss": "through grace; of the city (kṛpā + nagara, continuing with 'men and women')",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -989,7 +989,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'kṛpānagara' is an epithet of Rama functioning as subject. 'sīñci' is a conjunctive participle dependent on 'jiāe' in the next line."
+    "grammarNote": "The written token kṛpānagara spans kṛpā ('grace') and nagara ('city'); nagara qualifies nara and nāri across the line break. Sīñci ('having sprinkled') and nihāri ('having gazed upon') lead to causative jiāe ('revived'), applied to the monkeys by nectar and the city's men and women by the gracious gaze."
   },
   "nari-nihari": {
     "source": "नारि निहारि जिआए",
@@ -1015,7 +1015,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāri nihāri jiāe",
-    "english": "{2:and revived }{0:the women }{1:with his gaze.}",
+    "english": "{0:and women }{1:with his gaze, }{2:he revived them.}",
     "words": [
       {
         "roman": "nāri",

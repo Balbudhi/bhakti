@@ -663,7 +663,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "brahmānanda",
-        "gloss": "poet's signature]; or the bliss of Brahman",
+        "gloss": "the poet’s signature-name here",
         "concept_key": "",
         "preserve_in_english": false
       },

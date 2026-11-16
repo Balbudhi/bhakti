@@ -1059,7 +1059,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gale mẽ sohe sarp kī mālā",
-    "english": "{1:Around }{0:your neck }{2:graces }{5:a garland }{3,4:of serpents,}",
+    "english": "{1:Around }{0:your neck, }{5:a garland }{3,4:of serpents }{2:shines,}",
     "words": [
       {
         "roman": "gale",

@@ -374,7 +374,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jā kichu pāẏa hārāẏe jāẏa, nā māne sāntvanā.",
-    "english": "{0,1:Whatever }{2:they gain }{3,4:is lost again, }{5,6:accepting no }{7:consolation.}",
+    "english": "{0,1:Whatever }{2:they gain }{3,4:is lost again; }{5,6:they accept no }{7:consolation.}",
     "words": [
       {
         "roman": "Jā",

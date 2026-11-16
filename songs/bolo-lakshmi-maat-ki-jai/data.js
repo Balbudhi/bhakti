@@ -2111,7 +2111,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ye āratī Lakṣmī jī kī, jo koī gātā",
-    "english": "{5,6:Whoever }{7:sings }{0:this }{1:aarti }{4:of }{3:revered }{2:Lakshmi,}",
+    "english": "{5,6:For whoever }{7:sings }{0:this }{1:āratī }{4:of }{3:revered }{2:Lakṣmī,}",
     "words": [
       {
         "roman": "Ye",
@@ -2194,7 +2194,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā jo koī gātā",
-    "english": "{0:Mother, }{1,2:whoever }{3:sings,}",
+    "english": "{0:Mother, }{1,2:for whoever }{3:sings,}",
     "words": [
       {
         "roman": "Maiyā",
@@ -2253,7 +2253,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ur ānand ati umaṛe,",
-    "english": "{2:Immense }{1:bliss }{3:surges }{0:in the heart, }",
+    "english": "{2:Immense }{1:bliss }{3:surges }{0:in the heart; }",
     "words": [
       {
         "roman": "Ur",
@@ -2306,7 +2306,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pār utar jātā",
-    "english": "{1,2:crosses over }{0:to the other shore.}",
+    "english": "{1,2:they cross over }{0:to the other shore.}",
     "words": [
       {
         "roman": "Pār",

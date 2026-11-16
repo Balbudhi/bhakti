@@ -234,7 +234,7 @@ window.SONG_LINES = {
     "source": "देख तुम्हारी करुणामय मूरत",
     "sourceLanguage": "hi",
     "roman": "dekha tumhārī karuṇāmaya mūrata",
-    "english": "{0:Beholding }{1:your }{2:compassionate }{3:form,}",
+    "english": "{0:When I behold }{1:your }{2:compassionate }{3:form,}",
     "words": [
       {
         "roman": "dekha",

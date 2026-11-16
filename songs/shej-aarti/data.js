@@ -1817,7 +1817,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sēvitī sādhu santa",
-    "english": "{1:holy seekers }{2:and saints }{0:attend upon.}",
+    "english": "{1:holy seekers }{2:and saints }{0:offer service.}",
     "words": [
       {
         "roman": "Sēvitī",
@@ -3342,7 +3342,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sōḍuni jāyā duḥkha vāṭatē Bābāñcyā caraṇāñśī hō",
-    "english": "{0:Leaving }{1:to depart }{4:from Baba's }{5:feet, }{2,3:sorrow is felt, }{6:O!}",
+    "english": "{0:Leaving }{4:Bābā's }{5:feet }{1:to depart }{2,3:feels sorrowful, }{6:O!}",
     "words": [
       {
         "roman": "Sōḍuni",
@@ -3437,7 +3437,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sōḍuni jāyā duḥkha vāṭatē Sāīñcyā caraṇāñśī hō",
-    "english": "{0:Leaving }{1:to depart }{4:from Sai's }{5:feet, }{2,3:sorrow is felt, }{6:O!}",
+    "english": "{0:Leaving }{4:Sāī's }{5:feet }{1:to depart }{2,3:feels sorrowful, }{6:O!}",
     "words": [
       {
         "roman": "Sōḍuni",
@@ -4215,7 +4215,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vairāgyācā kuṁcā gheuni cauka jhāḍīlā bābā cauka jhāḍīlā",
-    "english": "{2:Taking up }{1:the broom }{0:of dispassion, }{3:the courtyard }{4:was swept clean, }{5:O Baba, }{6:the courtyard }{7:was swept clean.}",
+    "english": "{1:The broom }{0:of dispassion }{2:was taken up; }{3:the courtyard }{4:was swept clean, }{5:O Bābā, }{6:the courtyard }{7:was swept clean.}",
     "words": [
       {
         "roman": "vairāgyācā",
@@ -4470,7 +4470,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jñānācyā samayā lāvunī ujaḷalyā jyotī",
-    "english": "{2:Setting up }{1:the pedestal-lamps }{0:of knowledge, }{4:the flames }{3:were lit.}",
+    "english": "{1:The pedestal-lamps }{0:of knowledge }{2:were set up; }{4:the flames }{3:were lit.}",
     "words": [
       {
         "roman": "jñānācyā",
@@ -4713,7 +4713,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dvaitāce kapāṭa lāvuna ekatra kele bābā ekatra kele",
-    "english": "{2:Shutting }{1:the doors }{0:of duality, }{3,4:they were brought together, }{5:O Baba, }{6,7:brought together.}",
+    "english": "{1:The doors }{0:of duality }{2:were shut }{3,4:and brought together, }{5:O Bābā, }{6,7:brought together.}",
     "words": [
       {
         "roman": "dvaitāce",
@@ -4802,7 +4802,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "durbuddhīcyā gāṭhī soḍunī paḍade soḍīle",
-    "english": "{2:Untying }{1:the knots }{0:of flawed intellect, }{3:the curtains }{4:were let down.}",
+    "english": "{1:The knots }{0:of flawed intellect }{2:were untied; }{3:the curtains }{4:were let down.}",
     "words": [
       {
         "roman": "durbuddhīcyā",

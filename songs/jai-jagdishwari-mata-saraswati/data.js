@@ -194,7 +194,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Candra bimba sama vadana virāje",
-    "english": "{2:Like }{1:the disc }{0:of the moon, }{3:Your face }{4:shines resplendent,}",
+    "english": "{2:Like }{1:the disc }{0:of the moon, }{3:Your face }{4:shines resplendent;}",
     "words": [
       {
         "roman": "Candra",
@@ -265,7 +265,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śīśa mukuṭa mālā gala dhārī",
-    "english": "{4:wearing }{1:a crown }{0:on Your head }{2:and a garland }{3:around Your neck.}",
+    "english": "{4:You wear }{1:a crown }{0:on Your head }{2:and a garland }{3:around Your neck.}",
     "words": [
       {
         "roman": "Śīśa",

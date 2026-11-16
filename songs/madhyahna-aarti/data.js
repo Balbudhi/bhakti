@@ -9760,7 +9760,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadā sasvarūpaṃ cidānandakandaṃ",
-    "english": "{0:Forever }{1:established in His true nature, }{2:the root-source of consciousness and bliss,}",
+    "english": "{0,1:He is forever established in His true nature, }{2:the root-source of consciousness and bliss,}",
     "words": [
       {
         "roman": "sadā",
@@ -9830,7 +9830,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svabhaktecchayā mānuṣaṃ darśayantaṃ",
-    "english": "{2:manifesting }{1:a human form }{0:by the desire of His own devotees,}",
+    "english": "{2:manifesting }{1:a human form }{0:by the desire of His own devotees.}",
     "words": [
       {
         "roman": "svabhaktecchayā",

@@ -502,7 +502,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "triśūla kara dhara bhasma bhūṣaṇa",
-    "english": "{2:Holding }{0:the trident }{1:in hand, }{3:with sacred ash }{4:as ornament,}",
+    "english": "{2:He holds }{0:the trident }{1:in hand, }{3:with sacred ash }{4:as ornament;}",
     "words": [
       {
         "roman": "triśūla",

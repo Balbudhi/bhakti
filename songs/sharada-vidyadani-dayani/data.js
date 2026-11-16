@@ -300,7 +300,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Eightfold vocative singular noun repetition."
+    "grammarNote": "Twofold vocative singular noun repetition."
   },
   "verse1-line1": {
     "source": "जगत जननी दुखहरनी",

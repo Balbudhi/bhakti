@@ -1624,7 +1624,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bindrābana ke bāsī prabhu mhāne cākara rākho jī",
-    "english": "{3:O Lord }{0,1,2:who dwells in Vrindavan, }{6,7:keep }{4:me }{5:as Your servant.}",
+    "english": "{3:O Lord }{0,1,2:who dwells in Vṛndāvana, }{6,7:keep }{4:me }{5:as Your servant.}",
     "words": [
       {
         "roman": "bindrābana",

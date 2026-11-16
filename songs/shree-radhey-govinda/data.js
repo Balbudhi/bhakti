@@ -506,7 +506,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rādhē",
-        "gloss": "Radha (O Radhe)",
+        "gloss": "O Rādhā, Kṛṣṇa’s beloved",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -945,7 +945,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Vṛndāvana",
-        "gloss": "Vrindavan",
+        "gloss": "Vṛndāvana, the woodland by the Yamunā associated with Kṛṣṇa’s youth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1101,7 +1101,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yamunā kinārē dhēnu carāvē Mādhava Madana Murārī",
-    "english": "{1:On the bank }{0:of the Yamuna, }{4:Madhava, }{5:Madana, }{6:Murari }{3:grazes }{2:the cows,}",
+    "english": "{1:On the bank }{0:of the Yamunā, }{4:Mādhava—}{5:Madana, }{6:Murārī—}{3:grazes }{2:the cows.}",
     "words": [
       {
         "roman": "Yamunā",
@@ -1129,7 +1129,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mādhava",
-        "gloss": "Kṛṣṇa, here named as the cowherd beside the Yamunā",
+        "gloss": "Kṛṣṇa; the name also means “descendant of Madhu”, referring to his lineage.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1176,7 +1176,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Mādhava",
-        "gloss": "Kṛṣṇa, here named as the cowherd beside the Yamunā",
+        "gloss": "Kṛṣṇa; the name also means “descendant of Madhu”, referring to his lineage.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1427,7 +1427,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Giradhara Nāgara kahatī Mīrā Sūra kō Śyāmala bhāyā",
-    "english": "{3:Mira }{2:calls him }{0,1:Girdhar Nagar; }{4,5:to Sur, }{6:the dark one }{7:was pleasing,}",
+    "english": "{3:Mīrā }{2:calls him }{0,1:Giradhara Nāgara; }{6:the dark one }{7:delighted }{4,5:Sūr.}",
     "words": [
       {
         "roman": "Giradhara",
@@ -1510,11 +1510,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sūra kō Śyāmala bhāyā",
-    "english": "{0,1:To Sur, }{2:the dark one }{3:was pleasing!}",
+    "english": "{2:The dark one }{3:delighted }{0,1:Sūr!}",
     "words": [
       {
         "roman": "Sūra",
-        "gloss": "Sur (Surdas)",
+        "gloss": "Sūradāsa, the poet devoted to Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1609,7 +1609,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Viṭṭhala-Viṭṭhala",
-        "gloss": "Vitthal-Vitthal (name of Krishna at Pandharpur, repeated)",
+        "gloss": "Viṭṭhala, Kṛṣṇa worshipped at Pandharpur; the name is repeated",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1656,7 +1656,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Viṭṭhala-Viṭṭhala",
-        "gloss": "Vitthal-Vitthal",
+        "gloss": "Viṭṭhala, Kṛṣṇa worshipped at Pandharpur; the name is repeated",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1865,7 +1865,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ārādhana kara Rādhē-Rādhē Kānhā bhāgē āvēṁ",
-    "english": "{1:Perform }{0:worship }{2:to Radhe-Radhe, }{3:and Kanha }{5:comes }{4:running!}",
+    "english": "{1:Offer }{0:worship }{2:with “Rādhe, Rādhe”; }{3:Kānhā }{5:comes }{4:running!}",
     "words": [
       {
         "roman": "Ārādhana",

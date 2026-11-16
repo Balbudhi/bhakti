@@ -1797,7 +1797,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kali",
-        "gloss": "the age of strife",
+        "gloss": "I did; I made",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -266,7 +266,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pokakhiā kāṭha bhaḷi śeṣa hebā āgũ",
-    "english": "{5:Before }{3,4:coming to an end }{2:like }{0:insect-eaten }{1:wood,}",
+    "english": "{5:Before }{3,4:I come to an end }{2:like }{0:insect-eaten }{1:wood,}",
     "words": [
       {
         "roman": "pokakhiā",

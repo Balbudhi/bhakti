@@ -67,7 +67,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śāona gagane ghora ghanaghaṭā",
-    "english": "{0:In the monsoon}{1: sky,}{2: a dark}{3:mass of dense clouds,}",
+    "english": "{0:In the monsoon}{1: sky,}{2: a dark}{3: mass of dense clouds,}",
     "words": [
       {
         "roman": "śāona",

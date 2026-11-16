@@ -1847,7 +1847,7 @@ window.SONG_LINES = {
     "source": "हो बहुत सयाना पर न हो गुरु की कृपा",
     "sourceLanguage": "hi",
     "roman": "Ho bahut sayānā par na ho guru kī kṛpā",
-    "english": "{0:Though one may be}{1,2: very clever,}{3,4,5: but if there is no}{6,7,8: grace of the Guru,}",
+    "english": "{0:One may be}{1,2: very clever,}{3,4,5: but if there is no}{6,7,8: grace of the Guru,}",
     "words": [
       {
         "roman": "Ho",
@@ -3880,7 +3880,7 @@ window.SONG_LINES = {
     "source": "अपने मशिद का झाड़ू गणू है",
     "sourceLanguage": "hi",
     "roman": "Apane maśida kā jhāṛū Gaṇū hai",
-    "english": "{4:Ganu}{5: is}{3: the broom}{0,1,2: of your own mosque.}",
+    "english": "{4:Gaṇū}{5: is}{3: the broom}{0,1,2: of your own mosque.}",
     "words": [
       {
         "roman": "Apane",
@@ -16043,7 +16043,7 @@ window.SONG_LINES = {
     "source": "चिन्तयाम्यहमहर्निशं मुदा",
     "sourceLanguage": "hi",
     "roman": "cintayāmy aham aharniśaṃ mudā",
-    "english": "{0:I contemplate,}{1: I,}{2: day and night}{3: with joy.}",
+    "english": "{1:I myself}{0: contemplate,}{2: day and night}{3: with joy.}",
     "words": [
       {
         "roman": "cintayāmy",

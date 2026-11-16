@@ -4941,7 +4941,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "giri para caṛhi laṅkā tehi~ dekhī. kahi na jāi ati durga biseṣī.",
-    "english": "{2:Having climbed}{1: upon}{0: the mountain,}{3: Lanka}{5: was seen}{4: by him;}{9: an exceedingly}{11: extraordinary}{10: fortress,}{7,8: it cannot}{6: be described.}",
+    "english": "{2:Having climbed}{1: upon}{0: the mountain,}{4: he}{5: saw}{3: Laṅkā;}{9: an exceedingly}{11: extraordinary}{10: fortress,}{7,8: it cannot}{6: be described.}",
     "words": [
       {
         "roman": "giri",
@@ -11636,7 +11636,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kīnhī kṛpā sumiri guna bhare bilocana nīra.",
-    "english": "{2:Remembering }{1:the grace }{0:shown }and his {3:guṇa} s, {5:his eyes }{4:filled }{6:with tears.}",
+    "english": "{0:bestowed }{1:grace. }{2:As Hanumān recalled }{3:His virtues, }{5:his eyes }{4:filled }{6:with tears.}",
     "words": [
       {
         "roman": "kīnhī",
@@ -11660,7 +11660,7 @@ window.SONG_LINES = {
         "roman": "guna",
         "gloss": "virtue, quality, or constituent excellence",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bhare",
@@ -11874,7 +11874,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ehi bidhi kahata rāma guna grāmā. pāvā anirbācya biśrāmā.",
-    "english": "{0:In this }{1:manner, }{2:recounting }{5:the host }{3:of Rāma’s }{4:guṇa} s, {6:they attained }{7:ineffable }{8:repose.}",
+    "english": "{0:In this }{1:manner, }{2:recounting }{5:the host }{3:of Rāma’s }{4:virtues}, {6:they attained }{7:ineffable }{8:repose.}",
     "words": [
       {
         "roman": "ehi",
@@ -11904,7 +11904,7 @@ window.SONG_LINES = {
         "roman": "guna",
         "gloss": "virtue, quality, or constituent excellence",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "grāmā.",
@@ -12636,7 +12636,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṛsa tana sīsa jaṭā eka benī. japati hṛdayam̐ raghupati guna śrenī.",
-    "english": "{0:With an emaciated }{1:body }{4:and a single }{3:matted }{5:braid }{2:on her head, }{6:she repeats }{7:in her heart }{10:the multitude }of {9:guṇa}{8: s of the guardian of Raghu’s line.}",
+    "english": "{0:With an emaciated }{1:body }{4:and a single }{3:matted }{5:braid }{2:on her head, }{6:she repeats }{7:in her heart }{10:the multitude }of {9:virtues}{8: of the guardian of Raghu’s line.}",
     "words": [
       {
         "roman": "kṛsa",
@@ -12696,7 +12696,7 @@ window.SONG_LINES = {
         "roman": "guna",
         "gloss": "virtue, quality, or constituent excellence",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "śrenī.",
@@ -28105,7 +28105,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "muṭhikā māri caṛhā taru jāī. tāhi eka chana muruchā āī.",
-    "english": "{0,1:Striking with his fist, }{4:he went }{2:and climbed }{3:a tree; }{6:for one }{7:moment, }{8:a swoon }{9:came }{5:upon him.}",
+    "english": "{0,1:Striking with his fist, }{4:he went }{2:and climbed }{3:a tree; }{6:for one }{7:moment, }{8:a swoon }{9:came }{5:upon Meghanāda.}",
     "words": [
       {
         "roman": "muṭhikā",
@@ -42373,7 +42373,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunata kṛpānidhi mana ati bhāe. puni hanumāna haraṣi hiyaṃ lāe ॥",
-    "english": "{0:Upon hearing them, }{3:they greatly }{4:pleased }{2:the mind of }{1:the treasure-house of compassion; }{5:then, }{7:rejoicing, }{9:he clasped }{6:Hanuman }{8:to his chest.}",
+    "english": "{0:As }{1:the treasure-house of compassion }{0:heard them, }{3:they greatly }{4:pleased }{2:his mind; }{5:then, }{7:rejoicing, }{9:he clasped }{6:Hanumān }{8:to his chest.}",
     "words": [
       {
         "roman": "sunata",
@@ -63370,7 +63370,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "asa kahi karata daṁḍavata dēkhā. turata uṭhē prabhu haraṣa bisēṣā.",
-    "english": "{1:Having spoken }{0:thus, }{4:as he saw him }{2:performing }{3:full prostration like a staff, }{7:the sovereign guardian }{5:instantly }{6:rose }{9:with immense }{8:joy.}",
+    "english": "{1:Having spoken }{0:thus, }{2:Vibhīṣaṇa was performing }{3:full prostration like a staff; }{4:seeing him, }{7:the sovereign guardian }{5:instantly }{6:rose }{9:with immense }{8:joy.}",
     "words": [
       {
         "roman": "asa",
@@ -69347,10 +69347,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 2402.53,
-    "end": 2416.0
+    "end": 2416
   },
   {
-    "start": 2416.0,
+    "start": 2416,
     "end": 2429.5
   },
   {
@@ -70039,10 +70039,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 4652.1,
-    "end": 4662.0
+    "end": 4662
   },
   {
-    "start": 4662.0,
+    "start": 4662,
     "end": 4671.92
   },
   {
@@ -70071,14 +70071,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 4753.05,
-    "end": 4763.0
+    "end": 4763
   },
   {
-    "start": 4763.0,
-    "end": 4773.0
+    "start": 4763,
+    "end": 4773
   },
   {
-    "start": 4773.0,
+    "start": 4773,
     "end": 4782.95
   },
   {

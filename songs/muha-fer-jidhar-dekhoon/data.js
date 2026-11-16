@@ -86,7 +86,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mũh pher jidhar dekhū̃ mujhe Sāī̃ nazar āẽ",
-    "english": "{0,1:Turning my face, }{2:wherever }{3:I look, }{5:Sai }{7:appears }{4:to my }{6:sight,}",
+    "english": "{2:Wherever }{0,1:I turn my face }{3:and look, }{5:Sāī̃ }{7:appears }{4:to my }{6:sight,}",
     "words": [
       {
         "roman": "Mũh",

@@ -461,7 +461,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṣṭa bhujā kara khaḍga virāje",
-    "english": "{0:With eight }{1:arms, }{3:a sword }{4:gleams }{2:in hand,}",
+    "english": "{0:O eight-}{1:armed one, }{2:in your hand }{3:a sword }{4:gleams;}",
     "words": [
       {
         "roman": "aṣṭa",
@@ -526,7 +526,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "siṁha savāra sakala varadānī",
-    "english": "{1:mounted on }{0:a lion, }{3:bestower }{2:of all boons.}",
+    "english": "{1:You are mounted on }{0:a lion, }{3:bestower }{2:of all boons.}",
     "words": [
       {
         "roman": "siṁha",

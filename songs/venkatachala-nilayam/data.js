@@ -348,7 +348,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ambujōdbhava vinutaṁ agaṇita guṇanāmaṁ",
-    "english": "{1:Praised by }{0:the lotus-born one}, {3:whose virtues and names}{3: are }{2:innumerable},",
+    "english": "{1:Praised by }{0:the lotus-born one}{3: and possessing }{2:innumerable }{3:virtues and names},",
     "words": [
       {
         "roman": "ambujōdbhava",

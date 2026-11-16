@@ -1838,7 +1838,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apanē hātha baṛhāō",
-    "english": "{2:extend }{0:Your own }{1:hand,}",
+    "english": "{2:extend }{0:Your own }{1:hand;}",
     "words": [
       {
         "roman": "apanē",
@@ -1885,7 +1885,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dvāra paṛā tērē",
-    "english": "{1:lying fallen }{2:at Your }{0:door.}",
+    "english": "{1:I lie fallen }{2:at Your }{0:door.}",
     "words": [
       {
         "roman": "dvāra",

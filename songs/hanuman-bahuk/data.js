@@ -7467,7 +7467,7 @@ window.SONG_LINES = {
     "source": "बापुरे बराक कहा और राजा रांक को ॥",
     "sourceLanguage": "bra",
     "roman": "bāpure barāka kahā aura rājā rāṅka ko ॥",
-    "english": "{2,6:What account }{3:are other }{0:wretched, }{1:pitiable }{4:kings }{5:and paupers?}",
+    "english": "{2,6:Of what account }{3:are other }{0:wretched, }{1:pitiable }{4:kings }{5:and paupers?}",
     "words": [
       {
         "roman": "bāpure",
@@ -10053,7 +10053,7 @@ window.SONG_LINES = {
     "source": "ढारो बिगारो मैं काको कहा केहि कारन खीझत हौ तो तिहारो ॥",
     "sourceLanguage": "bra",
     "roman": "ḍhāro bigāro maĩ kāko kahā kehi kārana khījhata hau to tihāro ॥",
-    "english": "{4:What }{3:of whose }{2:have I }{0:torn down }{1:or ruined, }{5:and for what }{6:reason }{7,8:are you angry }{9:at one who is indeed }{10:your own?}",
+    "english": "{4:What }{3:belonging to whom }{2:have I }{0:torn down }{1:or ruined, }{5:and for what }{6:reason }{7,8:are you angry }{9:at one who is indeed }{10:your own?}",
     "words": [
       {
         "roman": "ḍhāro",
@@ -12674,7 +12674,7 @@ window.SONG_LINES = {
     "source": "बालक बिलोकि बलि बारे ते आपनो कियो दीनबंधु दया कीन्हीं निरुपाधि न्यारिये",
     "sourceLanguage": "bra",
     "roman": "bālaka biloki bali bāre te āpano kiyo dīnabandhu dayā kīnhīṁ nirupādhi nyāriye",
-    "english": "{1:Beholding me }{0:as a child, }{2:I offer myself to you, }{5,6:you made me your own }{3,4:from tender childhood, }{7:O friend of the destitute, }{9:and showed }{11:matchless, }{10:unconditional }{8:grace.}",
+    "english": "{2:I offer myself to you! }{1:Beholding me }{0:as a child, }{5,6:you made me your own }{3,4:from tender childhood, }{7:O friend of the destitute, }{9:and showed }{11:matchless, }{10:unconditional }{8:grace.}",
     "words": [
       {
         "roman": "bālaka",
@@ -21334,7 +21334,7 @@ window.SONG_LINES = {
     "source": "पानो तेरो टूक को परेहू चूक मूकिये न कूर कौड़ी टूको हौं अपनी ओर हेरिये।",
     "sourceLanguage": "bra",
     "roman": "pāno tero ṭūk ko parehū cūk mūkiye na kūr kauṛī ṭūko hauṁ apnī or heriye.",
-    "english": "{0:Nurtured }{1:on your }{2,3:crumbs, }{4,5:even if a mistake occurs }{6,7:do not abandon me; }{11:I am }{8:vile }{10:and a broken piece }{9:of a cowrie, }{14:yet look }{12:to your own }{13:noble nature.}",
+    "english": "{0:I was nurtured }{1:on your }{2,3:crumbs; }{4,5:even if a mistake occurs, }{6,7:do not abandon me; }{11:I am }{8:vile }{10:and a broken piece }{9:of a cowrie, }{14:yet look }{12:to your own }{13:noble nature.}",
     "words": [
       {
         "roman": "pāno",

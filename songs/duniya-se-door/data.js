@@ -229,7 +229,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "guṇ gān karūm̐ nit dhyān dharūm̐",
-    "english": "{1,2:May I sing }{0:praises }{3:and constantly }{5:hold }{4:contemplation,}",
+    "english": "{1,2:May I sing }{0:praises }{3:and constantly }{4,5:contemplate,}",
     "words": [
       {
         "roman": "guṇ",

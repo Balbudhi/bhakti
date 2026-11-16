@@ -1042,7 +1042,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "brahmānanda",
-        "gloss": "poet-seer); bliss of the Supreme",
+        "gloss": "the poet's signature; a name meaning 'bliss of Brahman'",
         "concept_key": "",
         "preserve_in_english": false
       },

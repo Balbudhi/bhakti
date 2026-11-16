@@ -999,7 +999,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kibā rūpa tumara je mūḍha mũ na jāṇe",
-    "english": "{0:What }{2:your }{1:form is, }{3:indeed, }{4:foolish }{5:I }{6:do not }{7:know;}",
+    "english": "{0:What }{2:your }{1:form is, }{3:indeed, }{5:I, }{4:foolish as I am, }{6:do not }{7:know;}",
     "words": [
       {
         "roman": "Kibā",

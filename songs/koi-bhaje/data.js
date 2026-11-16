@@ -1099,7 +1099,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kanhaiyā,",
-        "gloss": "beloved Krishna),",
+        "gloss": "beloved Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

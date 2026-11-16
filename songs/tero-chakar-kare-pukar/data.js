@@ -1070,7 +1070,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhavasāgar meṃ bahu ḍūbat hāth pasāro nā",
-    "english": "{3:Sinking }{2:deep }{0,1:in the ocean of worldly existence, }{6:please }{5:extend }{4:Your hand.}",
+    "english": "{3:I am sinking }{2:deep }{0,1:in the ocean of worldly existence; }{6:please }{5:extend }{4:Your hand.}",
     "words": [
       {
         "roman": "Bhavasāgar",

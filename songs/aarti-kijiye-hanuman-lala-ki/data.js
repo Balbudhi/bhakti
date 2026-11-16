@@ -523,7 +523,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "de bīrā raghunātha paṭhāe ।",
-    "english": "{0:Handing him }{1:the ceremonial betel-leaf pledge, }{2:Raghunath }{3:sent him forth,}",
+    "english": "{0:Handing him }{1:the ceremonial betel-leaf pledge, }{2:Raghunātha }{3:sent him forth.}",
     "words": [
       {
         "roman": "de",
@@ -588,7 +588,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "laṅkā jāri sīya sudhi lāe ॥",
-    "english": "{1:having burned }{0:Lanka, }{4:he brought back }{3:tidings }{2:of Sita.}",
+    "english": "{1:Having burned }{0:Laṅkā, }{4:Hanumān brought back }{3:tidings }{2:of Sītā.}",
     "words": [
       {
         "roman": "laṅkā",

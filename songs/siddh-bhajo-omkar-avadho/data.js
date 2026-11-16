@@ -625,7 +625,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāda suna suna lāgī ḍorī re",
-    "english": "{0,1,2:Hearing the sound again and again,}{4: the cord}{3,5: takes hold.}",
+    "english": "{0,1,2:As one hears the sound again and again,}{4: the cord}{3,5: takes hold.}",
     "words": [
       {
         "roman": "nāda",
@@ -664,7 +664,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative nāde with reduplicated destination sūna sūna governing subject ḍorī and verb lāge."
+    "grammarNote": "Nāda is the object of repeated suna suna (hearing again and again). The feminine verb lāgī agrees with ḍorī, the cord. The hearing practitioner is implicit from the preceding context; the cord remains a metaphor without a further identification."
   },
   "aatma-din-rain-bhori": {
     "source": "आत्मा दिन रैन बौरी बौरी बौरी",

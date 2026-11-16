@@ -414,7 +414,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jībana nāba ta bahuta durbaḷa",
-    "english": "{1:The boat}{0: of life}{2: is indeed}{3: exceedingly}{4: frail,}",
+    "english": "{1:The boat}{0: of life}{2: is indeed}{3: exceedingly}{4: frail.}",
     "words": [
       {
         "roman": "Jībana",
@@ -485,7 +485,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mahākāḷa sindhu hebā pāĩ pāra",
-    "english": "{2,3,4:to cross over}{1: the ocean}{0: of Great Time;}",
+    "english": "{2,3,4:For crossing over}{1: the ocean}{0: of Great Time,}",
     "words": [
       {
         "roman": "Mahākāḷa",

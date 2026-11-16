@@ -151,7 +151,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Giḷunī sāṇḍileṁ kalevara",
-    "english": "{0:Having swallowed}{1: and cast off}{2: the bodily frame,}",
+    "english": "{0:He swallowed}{1: and cast off}{2: the bodily frame,}",
     "words": [
       {
         "roman": "Giḷunī",

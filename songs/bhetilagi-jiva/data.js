@@ -830,7 +830,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhāvunī śrīmukha",
-    "english": "{0:Run to me with }{1:Your sacred face—}",
+    "english": "{0:Come running—}{1:Your sacred face,}",
     "words": [
       {
         "roman": "dhāvunī",
@@ -865,7 +865,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dāvī devā",
-    "english": "{1:O God, }{0:show it to me!}",
+    "english": "{0:show it to me, }{1:O God!}",
     "words": [
       {
         "roman": "dāvī",

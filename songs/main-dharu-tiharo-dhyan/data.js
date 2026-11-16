@@ -992,7 +992,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śyām",
-        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
+        "gloss": "dark; dark-hued (describing the complexion)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1039,7 +1039,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śyām",
-        "gloss": "the dark-hued one; epithet of Kṛṣṇa",
+        "gloss": "dark; dark-hued (describing the complexion)",
         "concept_key": "",
         "preserve_in_english": false
       },

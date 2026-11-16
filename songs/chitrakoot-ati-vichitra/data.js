@@ -1124,7 +1124,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "acchā akalaṅka śarada canda candinī",
-    "english": "{0:A pure, }{1:stainless }{2:autumn }{3:moon }and its {4:moonlight.}",
+    "english": "{0:at a pure, }{1:stainless }{2:autumn }{3:moon }and its {4:moonlight.}",
     "words": [
       {
         "roman": "acchā",
@@ -1189,7 +1189,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udita sadā bana akāsa",
-    "english": "{1:Eternally }{0:risen }{2:in the forest }{3:sky, }",
+    "english": "{1:They are eternally }{0:risen }{2:in the forest }{3:sky; }",
     "words": [
       {
         "roman": "udita",

@@ -936,7 +936,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Muktānanda",
-        "gloss": "the poet-saint) / unto Muktananda",
+        "gloss": "to Muktānanda, the supplicant named here",
         "concept_key": "",
         "preserve_in_english": false
       },

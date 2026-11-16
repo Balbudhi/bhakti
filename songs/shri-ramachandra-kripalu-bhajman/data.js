@@ -58,7 +58,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nīlāmbuja śyāmala komalāṅgaṁ",
-    "english": "{1:Dark like }{0:a blue lotus, }{2:with delicate limbs,}",
+    "english": "{1:He is dark like }{0:a blue lotus, }{2:with delicate limbs;}",
     "words": [
       {
         "roman": "Nīlāmbuja",
@@ -94,7 +94,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sītāsamāropitavāmabhāgam",
-    "english": "{0:whose left side is graced by Sītā,}",
+    "english": "{0:his left side is graced by Sītā;}",
     "words": [
       {
         "roman": "Sītāsamāropitavāmabhāgam",
@@ -124,7 +124,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāṇau mahāsāyakacārucāpam",
-    "english": "{1:holding a great arrow and a lovely bow }{0:in hand,}",
+    "english": "{1:he holds a great arrow and a lovely bow }{0:in hand.}",
     "words": [
       {
         "roman": "Pāṇau",
@@ -1594,10 +1594,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 457.95,
-    "end": 486.0
+    "end": 486
   },
   {
-    "start": 486.0,
+    "start": 486,
     "end": 508.772
   }
 ];

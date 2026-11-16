@@ -2321,7 +2321,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yeh itne riśte tum saṅg joṛe, riśtā nibhānā zarūr hogā",
-    "english": "{0:These }{1:so many }{2:bonds }{5:I have tied }{4:with }{3:You; }{6:the bond }{8,9:must surely }{7:be honored.}",
+    "english": "{5:I have tied }{0:these }{1:many }{2:bonds }{4:with }{3:You; }{6:the bond }{8,9:must surely }{7:be honored.}",
     "words": [
       {
         "roman": "Yeh",
@@ -4392,7 +4392,7 @@ window.SONG_SEQUENCE = [
 
 window.SONG_TIMINGS = [
   {
-    "start": 0.0,
+    "start": 0,
     "end": 8.85
   },
   {
@@ -4433,10 +4433,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 159.35,
-    "end": 170.0
+    "end": 170
   },
   {
-    "start": 170.0,
+    "start": 170,
     "end": 181.45
   },
   {
