@@ -216,7 +216,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bali jāu harahu nija māyā",
-    "english": "{0,1:I surrender to You;}{2: take away}{3: Your own}{4: māyā.}",
+    "english": "{0,1:I surrender to You;}{2: take away}{3: Your own}{4: deluding power.}",
     "words": [
       {
         "roman": "bali",
@@ -244,9 +244,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "deluding power; here, Śiva’s own",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Coordinate clause structure: 1st person present idiom 'bali jāu' (I surrender myself) followed by 2nd person honorific imperative 'harahu' taking direct object 'nija māyā'."
@@ -287,7 +287,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jalaja nayana guna ayana mayana-ripu",
-    "english": "{0,1:Lotus-eyed,}{2,3: abode of guṇas,}{4: foe of Madana,}",
+    "english": "{0,1:Lotus-eyed,}{2,3: abode of virtues,}{4: foe of Madana,}",
     "words": [
       {
         "roman": "jalaja",
@@ -303,9 +303,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature; virtue or noble attribute",
+        "gloss": "virtues; noble qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ayana",
@@ -320,7 +320,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "A string of bahuvrihi and tatpurusha compound epithets: 'jalaja-nayana' (upapada compound), 'guna-ayana' (abode of gunas), and 'mayana-ripu' (tatpurusha, enemy of Madana)."
+    "grammarNote": "The epithets are jalaja-nayana, lotus-eyed; guna-ayana, abode of virtues; and mayana-ripu, enemy of Madana."
   },
   "verse1-2": {
     "source": "महिमा जान न कोई",

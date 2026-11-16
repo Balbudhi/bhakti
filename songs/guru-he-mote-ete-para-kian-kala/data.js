@@ -659,7 +659,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tuma caraṇara dhūḷi bi nuhẽ mũ goṭie bi nāhĩ puṇya karma mora",
-    "english": "{5:I }{4:am not }{3:even }{2:the dust }{0:of your }{1:feet; }{8:not }{7:even }{6:a single }{9:virtuous }{10:karma }{11:is mine,}",
+    "english": "{5:I }{4:am not }{3:even }{2:the dust }{0:of your }{1:feet; }{8:not }{7:even }{6:a single }{9:virtuous }{10:deed }{11:is mine,}",
     "words": [
       {
         "roman": "Tuma",
@@ -723,9 +723,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karma",
-        "gloss": "action and its consequences",
+        "gloss": "deed; action",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mora",

@@ -1324,7 +1324,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation",
+        "gloss": "name; here, the Goddess’s name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4245,7 +4245,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hō maiṁ tōṛ nahīṁ pāyā mōh māyā kē bandhan",
-    "english": "{0:Oh, }{1:I }{4:could }{3:not }{2:break }{8:the bonds }{7:of }{5:infatuation and }{6:māyā}",
+    "english": "{0:Oh, }{1:I }{4:could }{3:not }{2:break }{8:the bonds }{7:of }{5:infatuation and }{6:worldly delusion}",
     "words": [
       {
         "roman": "hō",
@@ -4285,9 +4285,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "worldly delusion that binds one in attachment",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kē",
@@ -4302,7 +4302,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Potential compound verb 'tōṛ pānā' negated by 'nahīṁ'. 'Māyā' is a curated preserved term. Dvandva-like compound 'mōh māyā' qualifies 'bandhan'."
+    "grammarNote": "The compound verb tōṛ pānā means to be able to break; nahīṁ negates it. Moh and māyā name the infatuation and worldly delusion whose bonds the speaker could not break."
   },
   "verse2-vyarth-4": {
     "source": "हाँ मैं तोड़ नहीं पाया मोह माया के बंधन",
@@ -4364,7 +4364,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hā̃ maiṁ tōṛ nahīṁ pāyā mōh māyā kē bandhan",
-    "english": "{0:Yes, }{1:I }{4:could }{3:not }{2:break }{8:the bonds }{7:of }{5:infatuation and }{6:māyā}",
+    "english": "{0:Yes, }{1:I }{4:could }{3:not }{2:break }{8:the bonds }{7:of }{5:infatuation and }{6:worldly delusion}",
     "words": [
       {
         "roman": "hā̃",
@@ -4404,9 +4404,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "worldly delusion that binds one in attachment",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kē",
@@ -4421,7 +4421,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Repeated potential negative clause with preserved term 'māyā'."
+    "grammarNote": "The compound verb tōṛ pānā means to be able to break; nahīṁ negates it. Moh and māyā name the infatuation and worldly delusion whose bonds the speaker could not break."
   },
   "verse2-vyarth-5": {
     "source": "हाँ पहले भी व्यर्थ हुआ कई बार मेरा जीवन",

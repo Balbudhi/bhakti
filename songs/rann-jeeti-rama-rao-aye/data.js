@@ -1498,7 +1498,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sahitā rāma guna gāe",
-    "english": "{0:with devotion, }{3:he has sung }{2:the guṇas }{1:of Rama.}",
+    "english": "{0:with devotion, }{3:he has sung }{2:the virtues }{1:of Rāma.}",
     "words": [
       {
         "roman": "sahitā",
@@ -1516,7 +1516,7 @@ window.SONG_LINES = {
         "roman": "guna",
         "gloss": "virtuous quality; noble attribute",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gāe",

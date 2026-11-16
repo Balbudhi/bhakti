@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dayārdra",
-        "gloss": "moistened with compassion; first member of the compound continuing with glance in the next line"
+        "gloss": "moistened with compassion; first member of the compound continuing with glance in the following word"
       },
       {
         "roman": "dṛṣṭyā",
@@ -2576,7 +2576,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kanakakumbhamukhāvasṛṣṭa",
-        "gloss": "poured from the mouths of golden pitchers; compound continues with water in the next line"
+        "gloss": "poured from the mouths of golden pitchers; compound continues with water in the following word"
       },
       {
         "roman": "svarvāhinīvimalacārujalaplutāṅgīm",
@@ -2620,7 +2620,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jananīmaśeṣa",
-        "gloss": "the mother; of all—compound continues with worlds in the next line"
+        "gloss": "the mother; of all—compound continues with worlds in the following word"
       },
       {
         "roman": "lokādhināthagṛhiṇīmamṛtābdhiputrīm",
@@ -3438,18 +3438,18 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 158.9,
-    "end": 167.0
+    "end": 167
   },
   {
-    "start": 167.0,
-    "end": 174.0
+    "start": 167,
+    "end": 174
   },
   {
-    "start": 174.0,
-    "end": 181.0
+    "start": 174,
+    "end": 181
   },
   {
-    "start": 181.0,
+    "start": 181,
     "end": 191.6
   },
   {
@@ -3514,18 +3514,18 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 327.6,
-    "end": 335.0
+    "end": 335
   },
   {
-    "start": 335.0,
+    "start": 335,
     "end": 342.3
   },
   {
     "start": 342.3,
-    "end": 349.0
+    "end": 349
   },
   {
-    "start": 349.0,
+    "start": 349,
     "end": 353.9
   },
   {
@@ -3562,14 +3562,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 402.3,
-    "end": 408.0
+    "end": 408
   },
   {
-    "start": 408.0,
-    "end": 414.0
+    "start": 408,
+    "end": 414
   },
   {
-    "start": 414.0,
+    "start": 414,
     "end": 422.1
   },
   {
@@ -3670,10 +3670,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 573.1,
-    "end": 581.0
+    "end": 581
   },
   {
-    "start": 581.0,
+    "start": 581,
     "end": 588.4
   },
   {

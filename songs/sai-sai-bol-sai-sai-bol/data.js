@@ -91,7 +91,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -325,7 +325,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -385,7 +385,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -493,7 +493,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -571,7 +571,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nānak",
-        "gloss": "the Sikh teacher invoked here together with Sai",
+        "gloss": "Guru Nānak, founder of the Sikh tradition",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -661,7 +661,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -739,7 +739,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiv",
-        "gloss": "the deity invoked here together with Sai",
+        "gloss": "Śiva, the great ascetic god",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -805,7 +805,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "datta",
-        "gloss": "invoked here together with Sai",
+        "gloss": "Dattātreya, the divine teacher venerated in the Datta tradition",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -829,7 +829,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -931,7 +931,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1051,7 +1051,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1147,7 +1147,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "datta",
-        "gloss": "invoked here together with Sai",
+        "gloss": "Dattātreya, the divine teacher venerated in the Datta tradition",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1171,7 +1171,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1291,7 +1291,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1411,7 +1411,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine king invoked together with Sai",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1808,10 +1808,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 142.95,
-    "end": 177.0
+    "end": 177
   },
   {
-    "start": 177.0,
+    "start": 177,
     "end": 188.445
   },
   {
@@ -1876,10 +1876,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 493.6,
-    "end": 533.0
+    "end": 533
   },
   {
-    "start": 533.0,
+    "start": 533,
     "end": 544.15
   },
   {
@@ -1900,10 +1900,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 645.968,
-    "end": 685.0
+    "end": 685
   },
   {
-    "start": 685.0,
+    "start": 685,
     "end": 696.4
   },
   {

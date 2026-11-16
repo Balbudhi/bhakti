@@ -3592,7 +3592,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dīn dharam sab choṛ ke maiṅ to",
-    "english": "{3,4:Having abandoned }{2:all }{0:religion }and {1:dharma}, {5,6:I indeed}",
+    "english": "{3,4:Having abandoned }{2:all }{0:religion }and {1:religious observance}, {5,6:I indeed}",
     "words": [
       {
         "roman": "Dīn",
@@ -3602,9 +3602,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharam",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "religious observance; religious duty",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sab",
@@ -3766,7 +3766,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jit jāūṅ, gun pī ke gāūṅ",
-    "english": "{0:Wherever }{1:I go, }{5:I sing }{2:the guṇas }{3,4:of the Beloved}",
+    "english": "{0:Wherever }{1:I go, }{5:I sing }{2:the virtues }{3,4:of the Beloved}",
     "words": [
       {
         "roman": "Jit",
@@ -3782,9 +3782,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "gun",
-        "gloss": "constituent quality of nature",
+        "gloss": "virtues; praiseworthy qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "pī",
@@ -3952,7 +3952,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jit jāūñ gun pī ke gāūñ aur nahīñ koī dūjā kām",
-    "english": "{0:Wherever }{1:I go, }{5:I sing }{2:the guṇas }{3,4:of the Beloved, }{6:and }{7:there is no }{8,9:other }{10:task}",
+    "english": "{0:Wherever }{1:I go, }{5:I sing }{2:the virtues }{3,4:of the Beloved, }{6:and }{7:there is no }{8,9:other }{10:task}",
     "words": [
       {
         "roman": "jit",
@@ -3968,9 +3968,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "gun",
-        "gloss": "constituent quality of nature",
+        "gloss": "virtues; praiseworthy qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "pī",
@@ -4096,7 +4096,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apne man kī maiñ jānūñ aur pī ke man kī rām",
-    "english": "{2:What is in }{0:my own }{1:manas }{3:I }{4:know, }{5:and }{9:what is in }{6,7:the Beloved's }{8:manas, }{10:Rām knows}",
+    "english": "{2:What is in }{0:my own }{1:heart }{3:I }{4:know, }{5:and }{9:what is in }{6,7:the Beloved's }{8:heart, }{10:Rām knows}",
     "words": [
       {
         "roman": "apne",
@@ -4106,9 +4106,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "man",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "heart; inner thoughts and feelings",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kī",
@@ -4148,9 +4148,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "man",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "heart; inner thoughts and feelings",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kī",
@@ -5800,7 +5800,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prītam kā bas dhyān rahe yahī hai apnā jog",
-    "english": "{2:Only }{3:remembrance }{0,1:of the Beloved }{4:remains; }{5:this alone }{6:is }{7:my }{8:yoga}",
+    "english": "{2:Only }{3:remembrance }{0,1:of the Beloved }{4:remains; }{5:this alone }{6:is }{7:my }{8:spiritual discipline}",
     "words": [
       {
         "roman": "prītam",
@@ -5852,9 +5852,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jog",
-        "gloss": "discipline or union",
+        "gloss": "spiritual discipline",
         "concept_key": "yoga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "nameTable": false,
@@ -6520,7 +6520,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hō jōganiyā kā bhēsa banā kē pī kō ḍhūm̐ḍhana jā'ūm̐ rī",
-    "english": "{0:O,} {4,5:assuming} {3:the guise} {1,2:of a yogini,} {9:I shall go} {8:to search for} {6,7:the Beloved,} {10:O companion!}",
+    "english": "{0:O,} {4,5:assuming} {3:the guise} {1,2:of a woman ascetic,} {9:I shall go} {8:to search for} {6,7:the Beloved,} {10:O companion!}",
     "words": [
       {
         "roman": "hō",
@@ -6778,7 +6778,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "daraśa bhikhārī jaga mēṁ hō kē darśana bhikkhiyā pā'ūm̐ rī",
-    "english": "{4,5:Having become} {0,1:a beggar for His sight} {2,3:in the world,} {8:I shall receive} {6,7:the alms of darshan,} {9:O companion!}",
+    "english": "{4,5:Having become} {0,1:a beggar for His sight} {2,3:in the world,} {8:I shall receive} {6,7:the alms of His sight,} {9:O companion!}",
     "words": [
       {
         "roman": "daraśa",
@@ -6910,7 +6910,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tana mana una para vārūm̐ pī kī jōganiyā kahalā'ūm̐ rī",
-    "english": "{4:I surrender} {0:body} {1:and mind} {2,3:unto Him,} {8:and be called} {5,6:the Beloved's} {7:yogini,} {9:O companion!}",
+    "english": "{4:I shall surrender} {0:body} {1:and mind} {2,3:unto Him,} {8:and be called} {5,6:the Beloved's} {7:woman ascetic,} {9:O companion!}",
     "words": [
       {
         "roman": "tana",
@@ -9334,7 +9334,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prītam kī nazroṅ se gir kar jīnā hai kis kām",
-    "english": "{4,5:Having fallen }{3:from }{0,1:the beloved's }{2:sight, }{8:of what }{9:use }{7:is }{6:living?}",
+    "english": "{4,5:Having fallen }{3:in }{0,1:the beloved's }{2:eyes, }{8:of what }{9:use }{7:is }{6:living?}",
     "words": [
       {
         "roman": "prītam",
@@ -9350,7 +9350,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nazroṅ",
-        "gloss": "eyes / regard / favor",
+        "gloss": "eyes; here, the beloved’s regard or favor",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11001,10 +11001,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 110.1,
-    "end": 118.0
+    "end": 118
   },
   {
-    "start": 118.0,
+    "start": 118,
     "end": 126.5
   },
   {
@@ -11033,10 +11033,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 169.7,
-    "end": 195.0
+    "end": 195
   },
   {
-    "start": 195.0,
+    "start": 195,
     "end": 199.7
   },
   {
@@ -11073,10 +11073,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 302.8,
-    "end": 309.0
+    "end": 309
   },
   {
-    "start": 309.0,
+    "start": 309,
     "end": 314.3
   },
   {
@@ -11117,10 +11117,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 366.9,
-    "end": 392.0
+    "end": 392
   },
   {
-    "start": 392.0,
+    "start": 392,
     "end": 396.9
   },
   {
@@ -11141,26 +11141,26 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 435.7,
-    "end": 441.0
+    "end": 441
   },
   {
-    "start": 441.0,
+    "start": 441,
     "end": 444.4
   },
   {
     "start": 444.4,
-    "end": 448.0
+    "end": 448
   },
   {
-    "start": 448.0,
+    "start": 448,
     "end": 476.4
   },
   {
     "start": 476.4,
-    "end": 481.0
+    "end": 481
   },
   {
-    "start": 481.0,
+    "start": 481,
     "end": 484.4
   },
   {
@@ -11181,10 +11181,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 502.1,
-    "end": 505.0
+    "end": 505
   },
   {
-    "start": 505.0,
+    "start": 505,
     "end": 507.3
   },
   {
@@ -11333,10 +11333,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 853.3,
-    "end": 870.0
+    "end": 870
   },
   {
-    "start": 870.0,
+    "start": 870,
     "end": 874.9
   },
   {
@@ -11385,10 +11385,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 979.6,
-    "end": 987.0
+    "end": 987
   },
   {
-    "start": 987.0,
+    "start": 987,
     "end": 994.7
   },
   {
@@ -11397,10 +11397,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1002.2,
-    "end": 1008.0
+    "end": 1008
   },
   {
-    "start": 1008.0,
+    "start": 1008,
     "end": 1037.9
   },
   {
@@ -11457,10 +11457,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1123.3,
-    "end": 1128.0
+    "end": 1128
   },
   {
-    "start": 1128.0,
+    "start": 1128,
     "end": 1132.6
   },
   {
@@ -11481,10 +11481,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1155.6,
-    "end": 1162.0
+    "end": 1162
   },
   {
-    "start": 1162.0,
+    "start": 1162,
     "end": 1169.2
   },
   {
@@ -11521,10 +11521,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1293.1,
-    "end": 1307.0
+    "end": 1307
   },
   {
-    "start": 1307.0,
+    "start": 1307,
     "end": 1311.1
   },
   {
@@ -11581,10 +11581,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1442.9,
-    "end": 1446.0
+    "end": 1446
   },
   {
-    "start": 1446.0,
+    "start": 1446,
     "end": 1451.8
   },
   {
@@ -11601,10 +11601,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1482.1,
-    "end": 1489.0
+    "end": 1489
   },
   {
-    "start": 1489.0,
+    "start": 1489,
     "end": 1493.2
   },
   {
@@ -11653,14 +11653,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1590.1,
-    "end": 1596.0
+    "end": 1596
   },
   {
-    "start": 1596.0,
-    "end": 1612.0
+    "start": 1596,
+    "end": 1612
   },
   {
-    "start": 1612.0,
+    "start": 1612,
     "end": 1615.8
   },
   {

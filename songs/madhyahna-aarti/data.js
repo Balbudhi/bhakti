@@ -3897,7 +3897,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śirḍī mājhe paṇḍharapūra sāībābā ramāvara",
-    "english": "{0:Shirdi }{1:is my }{2:Pandharpur, }{3:Sai Baba }{4:is the consort of Rama.}",
+    "english": "{0:Śirḍī }{1:is my }{2:Paṇḍharapūra, }{3:Sāī Bābā }{4:is the consort of Ramā.}",
     "words": [
       {
         "roman": "śirḍī",
@@ -3925,7 +3925,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ramāvara",
-        "gloss": "consort of Rama (Lakshmi), i.e., Lord Vithoba / Vishnu",
+        "gloss": "consort of Ramā (Lakṣmī); here Viṭṭhala/Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3962,7 +3962,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bābā ramāvara sāībābā ramāvara",
-    "english": "{0:Baba }{1:is the consort of Rama, }{2:Sai Baba }{3:is the consort of Rama.}",
+    "english": "{0:Bābā }{1:is the consort of Ramā, }{2:Sāī Bābā }{3:is the consort of Ramā.}",
     "words": [
       {
         "roman": "bābā",
@@ -3972,7 +3972,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ramāvara",
-        "gloss": "consort of Rama (Lakshmi)",
+        "gloss": "consort of Ramā (Lakṣmī)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3984,7 +3984,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ramāvara",
-        "gloss": "consort of Rama (Lakshmi)",
+        "gloss": "consort of Ramā (Lakṣmī)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -8698,7 +8698,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tuṅgā",
-        "gloss": "lofty; high",
+        "gloss": "the river Tuṅgā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -11628,7 +11628,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karacaraṇakṛtaṃ vākkāyajaṃ karmajaṃ vā",
-    "english": "{0:Committed by hands and feet, }{1:arising from speech and body, }{3:or }{2:born of karma,}",
+    "english": "{0:Whether committed by hands and feet, }{1:arising from speech and body, }{3:or }{2:arising from deeds,}",
     "words": [
       {
         "roman": "karacaraṇakṛtaṃ",
@@ -11644,9 +11644,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karmajaṃ",
-        "gloss": "born of karma",
+        "gloss": "arising from deeds",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "vā",
@@ -11687,7 +11687,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śravaṇanayanajaṃ vā mānasaṃ vāparādham",
-    "english": "{0:arising from ears and eyes, }{1:or }{2:mental, }{3:or offense,}",
+    "english": "{0:arising from ears and eyes }{1:or }{2:from the mind—}{3:whatever the offense,}",
     "words": [
       {
         "roman": "śravaṇanayanajaṃ",
@@ -11709,7 +11709,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāparādham",
-        "gloss": "or offense",
+        "gloss": "vā + aparādham: or + offense; offense is the noun qualified by the preceding descriptions",
         "concept_key": "",
         "preserve_in_english": false
       }

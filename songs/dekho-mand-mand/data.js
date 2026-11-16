@@ -542,7 +542,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "dvārakāmāī",
-        "gloss": "Dwarakamayi",
+        "gloss": "the mosque in Śirḍī where Sāī Bābā lived",
         "concept_key": "",
         "preserve_in_english": false
       },

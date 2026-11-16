@@ -725,7 +725,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Melā calā-calī kā, śubh karm bīj bo jā",
-    "english": "{0:A fair }{2:of }{1:departure, }{6,7:sow }{5:the seeds }{3:of auspicious }{4:karma}",
+    "english": "{0:A fair }{2:of }{1:departure, }{6,7:sow }{5:the seeds }{3:of auspicious }{4:deeds}",
     "words": [
       {
         "roman": "Melā",
@@ -753,9 +753,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karm",
-        "gloss": "action and its consequences",
+        "gloss": "deeds; actions",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bīj",
@@ -974,7 +974,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jīvan kī avadhi thoṛī, prīti na Sāīṁ joṛī",
-    "english": "{2:The span }{0,1:of life }{3:is short, }{5:you did not }{7:join }{4:love }{6:with Sai}",
+    "english": "{2:The span }{0,1:of life }{3:is short; }{5:you have not }{7:formed a bond }{4:of love }{6:with Sāī.}",
     "words": [
       {
         "roman": "Jīvan",

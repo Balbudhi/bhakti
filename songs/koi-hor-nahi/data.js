@@ -1352,7 +1352,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pholānge",
-        "gloss": "(we) will blossom, will spread open"
+        "gloss": "(we) will lay open; here, pour out our sorrows"
       }
     ],
     "source": "ਇੱਕ ਵਾਰੀ ਦੱਸ ਤੇ ਜਾ, ਦੁੱਖ ਕਿਹਦੇ ਅੱਗੇ ਫੋਲਾਂਗੇ",

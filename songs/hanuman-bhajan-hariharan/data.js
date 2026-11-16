@@ -1493,7 +1493,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunu laṅkēsa sakala guna tōrē~.",
-    "english": "{0:Listen, }{1:O Lord of Lanka, }{2:all }{3:guṇas }{4:are in you;}",
+    "english": "{0:Listen, }{1:O Lord of Laṅkā, }{2:all }{3:virtues }{4:are in you;}",
     "words": [
       {
         "roman": "sunu",
@@ -1515,9 +1515,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature; virtue, quality",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "tōrē~.",
@@ -1526,7 +1526,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sunu' is 2sg imperative; 'laṅkēsa' is a vocative compound (laṅkā + īśa); 'guna' is preserved per the curated registry; 'tōrē~' is 2sg oblique pronoun with locative/genitive meaning ('in you')."
+    "grammarNote": "'sunu' is 2sg imperative; 'laṅkēsa' is a vocative compound (laṅkā + īśa); 'guna' denotes the virtues just described; 'tōrē~' is 2sg oblique pronoun with locative/genitive meaning ('in you')."
   },
   "line-019": {
     "source": "तातें तुम्ह अतिसय प्रिय मोरें॥",
@@ -5814,7 +5814,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prabhu guna hṛdaya sarāhahĩ saranāgata para neha",
-    "english": "{2:in their hearts }{3:they praised }{0:the Lord’s }{1:guṇas }{6:and his love }{5:toward }{4:the surrendered.}",
+    "english": "{2:in their hearts }{3:they praised }{0:the Lord’s }{1:virtues }{6:and his love }{5:toward }{4:the surrendered.}",
     "words": [
       {
         "roman": "prabhu",
@@ -5824,9 +5824,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "hṛdaya",
@@ -7282,7 +7282,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cale dūta baranata guna gāthā",
-    "english": "{1:the messengers }{0:departed, }{2:recounting }{4:the songs of his }{3:guṇas.}",
+    "english": "{1:the messengers }{0:departed, }{2:recounting }{4:the songs of his }{3:virtues.}",
     "words": [
       {
         "roman": "cale",
@@ -7304,9 +7304,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature; divine qualities; virtues",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gāthā",
@@ -7315,7 +7315,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'cale' is masculine plural past verb with subject 'dūta'. 'baranata' is imperfect participle indicating ongoing action accompanying departure. 'guna' matches the preserved registry term."
+    "grammarNote": "'cale' is masculine plural past verb with subject 'dūta'. 'baranata' is imperfect participle indicating ongoing action accompanying departure. 'guna' denotes the praised virtues."
   },
   "line-098": {
     "source": "कहत राम जसु लंकाँ आए",
@@ -18631,7 +18631,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukha bhavana saṁsaya samana davana bisāda raghupati guna ganā",
-    "english": "{8:The multitude}{6: of Rāma’s}{7: guṇas}{1: is an abode}{0: of joy,}{3: the queller}{2: of doubt,}{4: and the subduer}{5: of grief;}",
+    "english": "{8:The multitude}{6: of Rāma’s}{7: virtues}{1: is an abode}{0: of joy,}{3: the queller}{2: of doubt,}{4: and the subduer}{5: of grief;}",
     "words": [
       {
         "roman": "sukha",
@@ -18677,9 +18677,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature; divine virtue or attribute",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ganā",
@@ -18851,7 +18851,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sakala sumaṅgala dāyaka raghunāyaka guna gāna",
-    "english": "{5:Singing}{4: the guṇas}{3: of the leader of the Raghus}{2: is the bestower}{0: of all}{1: auspicious blessings;}",
+    "english": "{5:Singing}{4: the virtues}{3: of the leader of the Raghus}{2: is the bestower}{0: of all}{1: auspicious blessings;}",
     "words": [
       {
         "roman": "sakala",
@@ -18879,9 +18879,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature; divine virtue or attribute",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gāna",

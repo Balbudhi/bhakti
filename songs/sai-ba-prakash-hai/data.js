@@ -880,7 +880,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rahīm",
-        "gloss": "Hindi poet and devotee ʿAbd al-Raḥīm Khān-i-Khānān",
+        "gloss": "the Merciful; a name of God in Islam",
         "concept_key": "",
         "preserve_in_english": false
       },

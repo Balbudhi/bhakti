@@ -346,7 +346,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhiṭāmāṭi chāṛi saṃsāra ujāṛi",
-    "english": "{1:leaving behind }{0:your ancestral homestead, }{3:dismantling }{2:saṃsāra,}",
+    "english": "{1:leaving behind }{0:your ancestral homestead, }{3:dismantling }{2:your household,}",
     "words": [
       {
         "roman": "bhiṭāmāṭi",
@@ -362,9 +362,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṃsāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "household; family life",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ujāṛi",
@@ -535,13 +535,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṃsāre bolā'ilu alekha yogā'i",
-    "english": "{0:in saṃsāra }{1:you became known as }{2,3:an ascetic of the Formless Divine,}",
+    "english": "{0:in the world }{1:you became known as }{2,3:an ascetic of the Formless Divine,}",
     "words": [
       {
         "roman": "saṃsāre",
-        "gloss": "in the cycle of conditioned birth and death",
+        "gloss": "in the world; among people",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bolā'ilu",
@@ -1195,10 +1195,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 83.225,
-    "end": 129.0
+    "end": 129
   },
   {
-    "start": 129.0,
+    "start": 129,
     "end": 142.775
   },
   {

@@ -426,7 +426,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "creator deity of the cosmic triad",
+        "gloss": "Brahman, the supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -485,7 +485,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "creator deity of the cosmic triad",
+        "gloss": "Brahman, the supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       },

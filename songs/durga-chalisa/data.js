@@ -2202,7 +2202,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lāṅgura",
-        "gloss": "Hanuman (the monkey-tailed guardian",
+        "gloss": "Hanumān, the monkey-tailed guardian",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3693,7 +3693,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkara",
-        "gloss": "Śiva as the auspicious maker of good",
+        "gloss": "Śaṅkara, the teacher Śaṅkarācārya in this passage",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -2453,7 +2453,7 @@ window.SONG_LINES = {
         "roman": "brahma",
         "citationRoman": "brahma",
         "deva": "ब्रह्म",
-        "gloss": "the creator deity Brahmā",
+        "gloss": "Brahman; the supreme reality",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -9158,7 +9158,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maheṣvāso mahībhartā śrīnivāsaḥ satāṃ gatiḥ aniruddhaḥ surānando govindo govidāṃ patiḥ",
-    "english": "{0:The wielder of the great bow Śārṅga} · {1:The husband of Mother Farth} · {2:The permanent abode of Śrī} · {3:For the truly virtuous and for all spiritual seekers (Sat — People) He who is the final Goal} · {4:One who cannot be obstructed or resisted by anyone} · {5:The One who doles out happiness (ānanda) even for the Denizens-of-the Heavens (Suras)} · {6:The supporter of all and protector of the cows} · {7:One, who is the Lord of all 'seers' and \"Men of Wisdom\"}",
+    "english": "{0:The wielder of the great bow Śārṅga} · {1:The husband of Mother Earth} · {2:The permanent abode of Śrī} · {3:For the truly virtuous and for all spiritual seekers (Sat — People) He who is the final Goal} · {4:One who cannot be obstructed or resisted by anyone} · {5:The One who doles out happiness (ānanda) even for the Denizens-of-the Heavens (Suras)} · {6:The supporter of all and protector of the cows} · {7:One, who is the Lord of all 'seers' and \"Men of Wisdom\"}",
     "words": [
       {
         "roman": "maheṣvāso",
@@ -9173,7 +9173,7 @@ window.SONG_LINES = {
         "roman": "mahībhartā",
         "citationRoman": "mahībhartā",
         "deva": "महीभर्ता",
-        "gloss": "The husband of Mother Farth",
+        "gloss": "The husband of Mother Earth",
         "analysis": "mahī — earth · bhartṛ — bearer; supporter · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -10484,7 +10484,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "subhujo durdharo vāgmī mahendro vasudo vasuḥ naikarūpo bṛhadrūpaḥ śipiviṣṭaḥ prakāśanaḥ",
-    "english": "{0:He who has graceful arms} · {1:One who cannot be comprehended even by Great yogīs, who spend long periods of time in meditation} · {2:One who is cloquent of His Glory} · {3:One who is Lord of even Indra, the Lord of gods} · {4:The giver of wealth} · {5:The one manifest as wealth, the veil, and the nourishing sun} · {6:The one of infinite forms} · {7:Vast, of Infinite dimensions;Pervading all} · {8:Sipi is the name given to the \"Sacrificial cow\"}· {9:The One who illuminates; expressing Itself as the All-pervading Consciousness in every equipment}",
+    "english": "{0:He who has graceful arms} · {1:One who cannot be comprehended even by Great yogīs, who spend long periods of time in meditation} · {2:One who is eloquent of His Glory} · {3:One who is Lord of even Indra, the Lord of gods} · {4:The giver of wealth} · {5:The one manifest as wealth, the veil, and the nourishing sun} · {6:The one of infinite forms} · {7:Vast, of Infinite dimensions;Pervading all} · {8:Sipi is the name given to the \"Sacrificial cow\"}· {9:The One who illuminates; expressing Itself as the All-pervading Consciousness in every equipment}",
     "words": [
       {
         "roman": "subhujo",
@@ -10508,7 +10508,7 @@ window.SONG_LINES = {
         "roman": "vāgmī",
         "citationRoman": "vāgmī",
         "deva": "वाग्मी",
-        "gloss": "One who is cloquent of His Glory",
+        "gloss": "One who is eloquent of His Glory",
         "analysis": "vāg — speech · min — possessing · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -13305,7 +13305,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yajña ijyo mahejyaś kratuḥ satraṃ satāṃ gatiḥ sarvadarśī vimuktātmā sarvajño jñānamuttamam",
-    "english": "{0:One who is of the nature of yajña} · {1:One who is fit to be invoked through vainas} · {2:One who is to be most worshipped} · {3:It is a kind of yāga wherein there is a pillar to which the sacrificial animal is tied} · {4:The Lord who protects the good (Sat)} · {5:One who is the refuge (for the good people)} · {6:All-knower} · {7:“The ever-liberated Self.\"}· {8:Omniscient} · {9:The Supreme Knowledge of all other knowledges}",
+    "english": "{0:One who is of the nature of yajña} · {1:One who is fit to be invoked through yajñas} · {2:One who is to be most worshipped} · {3:It is a kind of yāga wherein there is a pillar to which the sacrificial animal is tied} · {4:The Lord who protects the good (Sat)} · {5:One who is the refuge (for the good people)} · {6:All-knower} · {7:“The ever-liberated Self.\"}· {8:Omniscient} · {9:The Supreme Knowledge of all other knowledges}",
     "words": [
       {
         "roman": "yajña",
@@ -13320,7 +13320,7 @@ window.SONG_LINES = {
         "roman": "ijyo",
         "citationRoman": "ijyaḥ",
         "deva": "इज्यः",
-        "gloss": "One who is fit to be invoked through vainas",
+        "gloss": "One who is fit to be invoked through yajñas",
         "analysis": "ijya — worshipped; fit for sacrifice · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -21216,7 +21216,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pramāṇaṃ prāṇanilayaḥ prāṇabhṛt prāṇajīvanaḥ tattvaṃ tattvavid ekātmā janmamṛtyujarātigaḥ",
-    "english": "{0:“He Whose very form is the Vedas\"—which are the only 'proof' for the Eternal Reality} · {1:He in Whom all ‘prāṇas’ stand established} · {2:\"He Who rules over all 'Pragnas' \"-Śrī Hari is the One Who causes everyone to eat} · {3:He Who maintains the life-breath in all living creatures} · {4:\"The Reality\"—That which is Eternal, the Essence} · {5:The knower of reality as it truly is} · {6:The one Self} · {7:“One Who knows no change or modifications in Himself.\"}",
+    "english": "{0:“He Whose very form is the Vedas\"—which are the only 'proof' for the Eternal Reality} · {1:He in Whom all ‘prāṇas’ stand established} · {2:\"He Who rules over all 'prāṇas' \"-Śrī Hari is the One Who causes everyone to eat} · {3:He Who maintains the life-breath in all living creatures} · {4:\"The Reality\"—That which is Eternal, the Essence} · {5:The knower of reality as it truly is} · {6:The one Self} · {7:“One Who knows no change or modifications in Himself.\"}",
     "words": [
       {
         "roman": "pramāṇaṃ",
@@ -21240,7 +21240,7 @@ window.SONG_LINES = {
         "roman": "prāṇabhṛt",
         "citationRoman": "prāṇabhṛt",
         "deva": "प्राणभृत्",
-        "gloss": "\"He Who rules over all 'Pragnas' \"-Śrī Hari is the One Who causes everyone to eat",
+        "gloss": "\"He Who rules over all 'prāṇas' \"-Śrī Hari is the One Who causes everyone to eat",
         "analysis": "prāṇa — breath; vital life · bhṛt — bearer; supporter · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -21344,7 +21344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhūrbhuvaḥsvastarus tāraḥ savitā prapitāmahaḥ yajño yajñapatir yajvā yajñāṅgo yajñavāhanaḥ",
-    "english": "{0:One Who is the Sap in the Tree-of — Life existing in all this Universe of the higher-world, our-world and the lower-world} · {1:\"One Who helps all to crossover\"—the Eternal Boat-man, to Whom, if the devotees can surrender in unswerving faith and true devotion} · {2:\"He Who is the Father of All\"- Who is the Eternal Father of the entire Universe} · {3:“He Who is the Father of even the ‘Father of all Beings,’ the Creator, Brahmājī, of the Trinity.\"}· {4:One Whose very nature is yajña} · {5:The Lord of all yajñas} · {6:The One Who performs yajña according to the strict prescriptions laid down in the Vedas} · {7:One Whose limbs are the ‘things’ employed in yajña} · {8:“One Who fulfils yajñas in complete and exact accord with the Vedic instructions.\"}",
+    "english": "{0:One Who is the Sap in the Tree-of — Life existing in all this Universe of the higher-world, our-world and the lower-world} · {1:\"One Who helps all to crossover\"—the Eternal Boat-man, to Whom, if the devotees can surrender in unswerving faith and true devotion, He will surely row them across the \"Ocean of saṃsāra.\" That One is tāraḥ.} · {2:\"He Who is the Father of All\"- Who is the Eternal Father of the entire Universe} · {3:“He Who is the Father of even the ‘Father of all Beings,’ the Creator, Brahmājī, of the Trinity.\"}· {4:One Whose very nature is yajña} · {5:The Lord of all yajñas} · {6:The One Who performs yajña according to the strict prescriptions laid down in the Vedas} · {7:One Whose limbs are the ‘things’ employed in yajña} · {8:“One Who fulfils yajñas in complete and exact accord with the Vedic instructions.\"}",
     "words": [
       {
         "roman": "bhūrbhuvaḥsvastarus",
@@ -21359,7 +21359,7 @@ window.SONG_LINES = {
         "roman": "tāraḥ",
         "citationRoman": "tāraḥ",
         "deva": "तारः",
-        "gloss": "\"One Who helps all to crossover\"—the Eternal Boat-man, to Whom, if the devotees can surrender in unswerving faith and true devotion",
+        "gloss": "\"One Who helps all to crossover\"—the Eternal Boat-man, to Whom, if the devotees can surrender in unswerving faith and true devotion, He will surely row them across the \"Ocean of saṃsāra.\" That One is tāraḥ.",
         "analysis": "tāra — crossing aid; ferryman · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -21491,7 +21491,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yajñabhṛd yajñakṛd yajñī yajñabhug yajñasādhanaḥ yajñāntakṛd yajñaguhyam annam annāda",
-    "english": "{0:The ruler of yajñas} · {1:“One Who performs yajña.\"}· {2:One Who is the constant 'Enjoyer' of the perpetual yajñas} · {3:One receiver of all that is offered} · {4:“One Who fulfils all yajñas.\"}· {5:“One Who performs the last, concluding act in all yajñas.\"}· {6:Śrī Nārāyaṇa is the most profound truth to be realised in all yajñas} · {7:“One Who has Himself become the 'food' \"-sense-objects which are the 'food' consumed by the sense-organs} · {8:One Who eats the 'food}",
+    "english": "{0:The ruler of yajñas} · {1:“One Who performs yajña.\"}· {2:One Who is the constant 'Enjoyer' of the perpetual yajñas} · {3:One receiver of all that is offered} · {4:“One Who fulfils all yajñas.\"}· {5:“One Who performs the last, concluding act in all yajñas.\"}· {6:Śrī Nārāyaṇa is the most profound truth to be realised in all yajñas} · {7:“One Who has Himself become the 'food' \"-sense-objects which are the 'food' consumed by the sense-organs} · {8:One Who eats the 'food'.}",
     "words": [
       {
         "roman": "yajñabhṛd",
@@ -21569,7 +21569,7 @@ window.SONG_LINES = {
         "roman": "annāda",
         "citationRoman": "annādaḥ",
         "deva": "अन्नादः",
-        "gloss": "One Who eats the 'food",
+        "gloss": "One Who eats the 'food'.",
         "analysis": "anna — food · āda — eater · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -23008,10 +23008,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 319.039,
-    "end": 327.0
+    "end": 327
   },
   {
-    "start": 327.0,
+    "start": 327,
     "end": 361.8
   },
   {
@@ -23020,10 +23020,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 388.479,
-    "end": 397.0
+    "end": 397
   },
   {
-    "start": 397.0,
+    "start": 397,
     "end": 421.72
   },
   {
@@ -23368,10 +23368,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 1322.731,
-    "end": 1337.0
+    "end": 1337
   },
   {
-    "start": 1337.0,
+    "start": 1337,
     "end": 1346.131
   },
   {

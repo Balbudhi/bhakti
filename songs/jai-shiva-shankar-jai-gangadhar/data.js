@@ -146,11 +146,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Karuṇākara karatāra hare",
-    "english": "{0:Maker of compassion, }{1:Creator, }{2:O Lord!}",
+    "english": "{0:O compassionate one, }{1:Creator, }{2:O Lord!}",
     "words": [
       {
         "roman": "Karuṇākara",
-        "gloss": "creator of compassion; compassionate one",
+        "gloss": "abounding in compassion; merciful",
         "concept_key": "",
         "preserve_in_english": false
       },

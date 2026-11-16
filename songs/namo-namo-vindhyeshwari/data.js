@@ -1995,7 +1995,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "causaṭṭhī devī kalyāṇī | gaurī maṅgalā saba guṇa khānī ||",
-    "english": "{0:The sixty-four }{1:yogini goddesses, }{2:Kalyani, }{3,4:Gauri, Mangala, }{7:a mine }{5:of all }{6:guṇas.}",
+    "english": "{0:The sixty-four }{1:yogini goddesses, }{2:Kalyāṇī, }{3,4:Gaurī, Maṅgalā, }{7:a mine }{5:of all }{6:virtues.}",
     "words": [
       {
         "roman": "causaṭṭhī",
@@ -2035,9 +2035,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇa",
-        "gloss": "constituent quality of nature; virtue, excellence",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "khānī",
@@ -4299,7 +4299,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "niścaya hoya prasanna bhavānī | putra dehĩ tākaham̐ guṇa khānī ||",
-    "english": "{3:Bhavani }{0:will certainly }{1,2:be pleased }{5:and bestow }{6:unto him }{4:a son }{8:who is a mine }{7:of guṇas.}",
+    "english": "{3:Bhavānī }{0:will certainly }{1,2:be pleased }{5:and bestow }{6:unto him }{4:a son }{8:who is a mine }{7:of virtues.}",
     "words": [
       {
         "roman": "niścaya",
@@ -4345,9 +4345,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇa",
-        "gloss": "constituent quality of nature; virtue, excellence",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "khānī",

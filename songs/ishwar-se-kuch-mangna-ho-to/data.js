@@ -138,7 +138,7 @@ window.SONG_LINES = {
   "refrain_b": {
     "source": "ईश्वर से कुछ पूछना हो तो सद्गुरु का पता पूछिये।",
     "roman": "Īśvar se kuch pūchnā ho to, sadguru kā patā pūchiye",
-    "english": "{2,3:If you wish to inquire}{0,1: about God,}{4: then}{8: ask for}{7: the whereabouts}{5,6: of the True Guru.}",
+    "english": "{2,3:If you wish to ask something}{0,1: of God,}{4: then}{8: ask for}{7: the whereabouts}{5,6: of the True Guru.}",
     "words": [
       {
         "roman": "Īśvar",
@@ -146,7 +146,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "se",
-        "gloss": "about, concerning"
+        "gloss": "from; of (the person asked)"
       },
       {
         "roman": "kuch",

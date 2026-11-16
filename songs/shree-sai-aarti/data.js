@@ -1102,7 +1102,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kaliyugīna avatāra, saguṇa parabrahma sācāra",
-    "english": "{1:An incarnation }{0:of the Kali age, }{3:the Supreme Absolute Reality }{2:endowed with guṇa, }{4:truly embodied,}",
+    "english": "{1:An incarnation }{0:of the Kali age, }{4:truly }{3:the Supreme Absolute Reality }{2:endowed with attributes,}",
     "words": [
       {
         "roman": "kaliyugīna",
@@ -1118,9 +1118,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saguṇa",
-        "gloss": "endowed with manifest constituent qualities of nature",
+        "gloss": "with attributes; manifest",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "parabrahma",
@@ -1130,12 +1130,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "sācāra",
-        "gloss": "veritable; authentic; truly embodied",
+        "gloss": "true; veritable",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal compound phrase equating the avatar with both saguṇa and nirguṇa aspects of Para-Brahman."
+    "grammarNote": "Nominal phrase describing the incarnation as the Supreme Absolute Reality with attributes."
   },
   "line-verse-4b": {
     "source": "अवतीर्ण हुवे हैं, स्वामी दत्ता दिगंबर, दत्ता दिगंबर",

@@ -4954,7 +4954,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Sandhi: tūy + maṉam + moḻiyār -> Tūymana moḻiyar; tōyum + uṉṉai + akam -> tōyumuṉ ṉaiyagan; tōyavē + aruḷ + eṉ -> tōyavē yaruḷen."
+    "grammarNote": "Tūy-mana moḻiyar describes those pure in mind and speech. Tōyum un mey-akam means Your true self where they merge; tōyavē gives the purpose, so that I may merge. Aruḷ is the request to grant grace; eṉ is my."
   },
   "line-051": {
     "source": "தெய்வமென்றுன்னைச் சாரவேயென்னைச் சேரவொழித்தாய் அருணாசலா",

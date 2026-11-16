@@ -137,7 +137,7 @@ window.SONG_LINES = {
     "source": "तुजभवती वैभव, माया",
     "sourceLanguage": "mr",
     "roman": "tujabhavatī vaibhava, māyā",
-    "english": "{0:Around you are }{1:opulence }and {2:māyā,}",
+    "english": "{0:Around you are }{1:opulence }and {2:wealth,}",
     "words": [
       {
         "roman": "tujabhavatī",
@@ -149,9 +149,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "wealth; material riches",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Verbless nominal clause. The official printed poem separates 'vaibhava' and 'māyā' with a comma, so they are coordinate nouns—not a phrase meaning 'opulent māyā'.",

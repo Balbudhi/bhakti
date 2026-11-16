@@ -1480,7 +1480,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandara",
-        "gloss": "Kannada composer-poet and devotee of Viṭṭhala",
+        "gloss": "part of the divine name Purandara Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },

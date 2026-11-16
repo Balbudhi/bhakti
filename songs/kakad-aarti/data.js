@@ -5299,7 +5299,7 @@ window.SONG_LINES = {
     "source": "तू ही भवार्णव का तारू गुरुवरा",
     "sourceLanguage": "hi",
     "roman": "Tū hī bhavārṇava kā tārū guruvarā",
-    "english": "{0,1:You alone}{4: are the ferryman}{2,3: of the ocean of worldly existence,}{5: O supreme Guru!}",
+    "english": "{0,1:You alone}{4: are the boat}{2,3: on the ocean of worldly existence,}{5: O supreme Guru!}",
     "words": [
       {
         "roman": "Tū",
@@ -5319,14 +5319,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "tārū",
-        "gloss": "ferryman / savior / swimmer"
+        "gloss": "boat; ship"
       },
       {
         "roman": "guruvarā",
         "gloss": "O supreme Guru"
       }
     ],
-    "grammarNote": "Bhavārṇava is a Sanskrit tatpuruṣa compound (bhava + arṇava). Tārū is the agentive noun/ferryman.",
+    "grammarNote": "Bhavārṇava is a Sanskrit compound (bhava + arṇava), the ocean of worldly existence. Tārū is the Marathi noun for a boat or ship, retained here in the Hindi rendering; the Guru is compared to the vessel for crossing that ocean.",
     "sourceWords": [
       {
         "text": "तू",
@@ -6643,7 +6643,7 @@ window.SONG_LINES = {
     "source": "जिसके मन में जैसा भाव उसे वैसा अनुभव",
     "sourceLanguage": "hi",
     "roman": "Jisakē mana mē̃ jaisā bhāva usē vaisā anubhava",
-    "english": "{3:Whatever}{4: devotional feeling}{0: is in one's}{1,2: mind,}{5: to them}{6: comes such}{7: experience.}",
+    "english": "{3:Whatever}{4: devotional feeling}{0: is in one's}{1,2: mind,}{6: the corresponding}{7: experience}{5: for them}",
     "words": [
       {
         "roman": "Jisakē",
@@ -6734,7 +6734,7 @@ window.SONG_LINES = {
     "source": "दिखलाते दयाघन ऐसी महिमा है देव",
     "sourceLanguage": "hi",
     "roman": "Dikhalātē dayāghana aisī mahimā hai dēva",
-    "english": "{1:The cloud of mercy }{0:reveals }{2:such }{3,4:glory, }{5:O Lord!}",
+    "english": "{0:is revealed by }{1:the cloud of mercy—}{2:such }{4:is }{3:the glory, }{5:O Lord!}",
     "words": [
       {
         "roman": "Dikhalātē",
@@ -6761,7 +6761,7 @@ window.SONG_LINES = {
         "gloss": "O Lord / God"
       }
     ],
-    "grammarNote": "Habitual/present participle 'dikhalātē' governing 'dayāghana' as an epithet subject; 'dēva' functions as a vocative.",
+    "grammarNote": "Dikhalāte takes anubhava in the preceding line as its object; dayāghana is the epithet subject. The English renders this continuously in the passive. Aisī mahimā hai is a separate copular clause; deva is vocative.",
     "sourceWords": [
       {
         "text": "दिखलाते",
@@ -10657,7 +10657,7 @@ window.SONG_LINES = {
     "source": "अच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम्",
     "sourceLanguage": "hi",
     "roman": "acyutaṁ keśavaṁ rāmanārāyaṇaṁ kṛṣṇadāmodaraṁ vāsudevaṁ harim",
-    "english": "{0:To Achyuta,}{1: Keshava,}{2: Rama-Narayana,}{3: Krishna-Damodara,}{4: Vasudeva,}{5: Hari,}",
+    "english": "{0:To Acyuta,}{1: Keśava,}{2: Rāma-Nārāyaṇa,}{3: Kṛṣṇa-Dāmodara,}{4: Vāsudeva,}{5: Hari,}",
     "words": [
       {
         "roman": "acyutaṁ",
@@ -10665,7 +10665,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "keśavaṁ",
-        "gloss": "accusative singular"
+        "gloss": "Keśava, the beautiful-haired one; a name of Viṣṇu/Kṛṣṇa"
       },
       {
         "roman": "rāmanārāyaṇaṁ",
@@ -10673,15 +10673,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇadāmodaraṁ",
-        "gloss": "Krishna-Damodara (accusative singular)"
+        "gloss": "Kṛṣṇa as Dāmodara, the one with a rope around his waist"
       },
       {
         "roman": "vāsudevaṁ",
-        "gloss": "accusative singular"
+        "gloss": "Kṛṣṇa, the son of Vasudeva"
       },
       {
         "roman": "harim",
-        "gloss": "Hari (accusative singular)"
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa"
       }
     ],
     "grammarNote": "Achyutashtakam opening; series of accusative divine epithets governed by 'bhaje' in the subsequent line.",
@@ -11103,7 +11103,7 @@ window.SONG_LINES = {
     "source": "ते ह नाकं महिमानः सचन्त यत्र पूर्वे साध्याः सन्ति देवाः",
     "sourceLanguage": "sa",
     "roman": "te ha nākaṁ mahimānaḥ sacanta yatra pūrve sādhyāḥ santi devāḥ",
-    "english": "{0,1:They indeed,}{3: in their greatness,}{2,4: reached the heavenly realm}{5: where}{6: the ancient}{7: Sādhyas}{8,9: and gods dwell.}",
+    "english": "{0,1:They indeed,}{3: in their greatness,}{2,4: reached the heavenly realm}{5: where}{6: the ancient}{7: Sādhya}{9: gods}{8: dwell.}",
     "words": [
       {
         "roman": "te",
@@ -13309,11 +13309,11 @@ window.SONG_LINES = {
     "source": "रास मेरे संग करो कृष्णनाथा",
     "sourceLanguage": "hi",
     "roman": "rāsa mere saṅga karo kṛṣṇanāthā",
-    "english": "{0,3:Dance the rasa dance}{1,2: with me,}{4: O Lord Krishna!}",
+    "english": "{0,3:Dance the rāsa dance}{1,2: with me,}{4: O Lord Kṛṣṇa!}",
     "words": [
       {
         "roman": "rāsa",
-        "gloss": "essence, aesthetic savor, or devotional mood"
+        "gloss": "the rāsa dance with Kṛṣṇa and the cowherd maidens"
       },
       {
         "roman": "mere",
@@ -13837,7 +13837,7 @@ window.SONG_LINES = {
     "source": "कोल्हापुर भिक्षार्थ निर्मल नदी तुंगा",
     "sourceLanguage": "hi",
     "roman": "kolhāpura bhikṣārtha nirmala nadī tuṅgā",
-    "english": "{0:In Kolhapur}{1: for alms,}{2: at the pure}{3,4: river Tunga}",
+    "english": "{0:In Kolhāpur}{1: for alms,}{2: at the pure}{3,4: river Tuṅgā}",
     "words": [
       {
         "roman": "kolhāpura",
@@ -13857,7 +13857,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tuṅgā",
-        "gloss": "lofty; high"
+        "gloss": "Tuṅgā, the river named here as a place of sacred water"
       }
     ],
     "grammarNote": "Purposive compound 'bhikṣārtha' (for begging alms) and locational references in the Dattatreya tradition.",

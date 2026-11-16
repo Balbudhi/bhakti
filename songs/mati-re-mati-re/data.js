@@ -1106,7 +1106,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation",
+        "gloss": "name; reputation; renown",
         "concept_key": "",
         "preserve_in_english": false
       },

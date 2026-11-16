@@ -1253,3 +1253,40 @@ Kuṟai Oṉṟum Illai is prepared for release with all 22 definitions read in 
 Kuṟai is deployed in `4f4191de`; its page, data, catalogue and sitemap match the commit, and the hosted audio matches the original file. The findings-preservation caller/gate and bounded source-observation prerequisites are integrated with 141 caller/recovery tests and 48 observation/planner tests passing together. The generic source observation API still needs long partitioning and actual inventory/caller integration; it is not counted as a repaired library.
 
 Patta phase 2 ended unresolved after eight new timing calls ($0.4283045), including Flash-to-Pro escalation. Cumulative priority spending is 15 calls / $1.815795 under the original $4 / 32-call cap. The second timing region reports a quality failure; no candidate was published, and the phase is terminal rather than automatically restarted. Saved measurements and any accepted region remain available for diagnosis. Next: resolve that specific timing failure, adopt the retained Rehna findings with explicit historical evidence binding, complete bounded English reading context, and wire generic source review through guarded changes before the wider eligible pass.
+
+## Direct editorial review — 15 November 2026
+
+The current 365-song catalogue is accounted for: 303 readers received direct
+source/English/popup reading in this pass; 62 match retained independent language
+reviews (18 through semantic equality and 44 through exact reviewed projections).
+Screening flags, recent modification dates and shuffle tags were not counted as
+editorial review. Owner-written English remains unchanged.
+
+The first 45 corrected readers are live in `57f55255`. The final independently
+reviewed batch contains 421 exact field changes across 64 readers, bringing the
+combined correction scope to 95 distinct songs. Exact independent object
+comparisons verify all accepted edits. The 61 eligible semantic profiles were
+refreshed for $2.050037175; three pre-existing unavailable profiles retain that
+status with their current input hashes. All 365 audio profiles and 301 unaffected
+records remain identical. Contract, profile, compile, whitespace, listener-audio,
+public assembly and desktop/mobile popup checks pass. The historical trim audit
+has no local receipts to check in this isolated checkout.
+Source scripts, romanization, performance order, timings and listener audio are
+unchanged by this editorial release. Existing source/transcription discrepancies
+are therefore not certified as repaired.
+
+Unresolved passages remain explicit: selected Hanuman Bahuk smoke/cloud imagery;
+Shej's implicit bed-preparation object; Kakad's Hindi-adaptation time wording and
+names; Namo Vindhyeshwari's antecedent; isolated Baishi, Tero Chakar, Dhoop and Jab
+Dil constructions; and Gandha's identity. Two native-script migrations, a Thara
+source/roman discrepancy and a stray Sundarakanda romanization character remain
+separate source tasks. These are limitations of the available evidence, not
+permission to replace the text by guesses or to claim every passage is certain.
+The remaining step is to resolve these specific source cases with independent
+evidence; no further whole-library screening or retranslation is needed.
+
+The gloss producer no longer chooses identities or meanings from global folded
+name labels, and cannot overwrite a meaningful occurrence-specific explanation.
+BPM remains disabled: the classical/neural comparison did not establish reliable
+beat interpretation or ordering benefit for this catalogue. See
+`research/shuffle-qualification-2026-11-15/rhythm-followup.md` for the evidence.

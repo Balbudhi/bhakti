@@ -1180,7 +1180,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "samādhi",
-        "gloss": "meditative absorption",
+        "gloss": "tomb; here Sāī Bābā’s burial shrine",
         "concept_key": "samadhi",
         "preserve_in_english": true
       },

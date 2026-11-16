@@ -90,7 +90,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sāīṅ",
-        "gloss": "Sai"
+        "gloss": "Sāī, the revered master whose name is invoked here"
       },
       {
         "roman": "kā",
@@ -98,7 +98,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation"
+        "gloss": "name; here, Sāī’s name"
       },
       {
         "roman": "lenā",

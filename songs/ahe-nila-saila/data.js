@@ -397,7 +397,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "କେଡ଼େ ବଡ଼ ବିପତ୍ତିରୁ କରିଅଛ ତାରଣ",
     "roman": "keṛe baṛa bipattiru kariacha tāraṇa",
-    "english": "{3,4:You have rescued her} {2:from} {0:how} {1:great} a {2:danger}!",
+    "english": "{3,4:You have rescued her }{0,1,2:from such great danger!}",
     "words": [
       {
         "roman": "keṛe",
@@ -889,14 +889,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 46.65,
-    "end": 56.0
+    "end": 56
   },
   {
-    "start": 56.0,
-    "end": 78.0
+    "start": 56,
+    "end": 78
   },
   {
-    "start": 78.0,
+    "start": 78,
     "end": 96.6
   },
   {

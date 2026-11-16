@@ -364,7 +364,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "animādika",
-        "gloss": "supernatural powers beginning with Anima",
+        "gloss": "powers beginning with aṇimā, the ability to become minute",
         "concept_key": "",
         "preserve_in_english": false
       },

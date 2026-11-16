@@ -132,7 +132,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakhana",
-        "gloss": "Lakshmana",
+        "gloss": "Lakṣmaṇa, Rāma's younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -311,7 +311,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kapaṭa kuraṅga kanaka mani māyā lakhī",
-    "english": "{5:Seeing }{0:the deceitful, }{3:jewel-studded }{2:golden }{1:deer }{4:fashioned by māyā,}",
+    "english": "{5:Seeing }{0:the deceitful, }{3:jewel-studded }{2:golden }{1:deer }{4:fashioned by deceptive magic,}",
     "words": [
       {
         "roman": "kapaṭa",
@@ -339,9 +339,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "deceptive magic; illusory appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "lakhī",

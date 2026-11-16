@@ -1409,7 +1409,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jehiṃ giri carana dei hanumaṃtā। caleu so gā pātāla turaṃtā ॥",
-    "english": "{1:The mountain }{0:upon which }{4:Hanumān }{3:pressed his }{2:feet, }{6:that mountain }{5,7:went plunging }{9:immediately }{8:into the netherworld.}",
+    "english": "{1:The mountain }{0:upon which }{4:Hanumān }{3:pressed his }{2:feet }{5:as he set forth }{6,7:plunged }{9:immediately }{8:into the netherworld.}",
     "words": [
       {
         "roman": "jehiṃ",
@@ -1443,7 +1443,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "caleu",
-        "gloss": "sank down / went",
+        "gloss": "set forth; departed (Hanumān)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1472,7 +1472,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Relative-correlative construction: jehiṃ giri ... so [giri]; caleu gā is a compound past verb phrase showing completed motion into pātāla."
+    "grammarNote": "Relative-correlative construction: jehiṃ giri ... so [giri]. Dei is an absolutive describing Hanumān placing his feet; caleu describes his departure. So begins the mountain clause, with gā describing its plunge into pātāla."
   },
   "line-018": {
     "source": "जिमि अमोघ रघुपति कर बाना। एही भाँति चलेउ हनुमाना ॥",
@@ -1950,7 +1950,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāta pavanasuta devanha dekhā। jānaiṃ kahu~ bala buddhi biseṣā ॥",
-    "english": "{2:The gods }{3:saw }{1:the son of the wind }{0:going, }{4,5:in order to test }{8:his extraordinary }{6:strength }and {7:buddhi.}",
+    "english": "{2:The gods }{3:saw }{1:the son of the wind }{0:going, }{4,5:in order to test }{8:his extraordinary }{6:strength }and {7:intelligence.}",
     "words": [
       {
         "roman": "jāta",
@@ -1998,7 +1998,7 @@ window.SONG_LINES = {
         "roman": "buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "biseṣā",
@@ -2007,7 +2007,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Ergative plural 'devanha' governs transitive past verb 'dekhā'. 'jānaiṃ kahu~' functions as a purposive infinitive phrase ('in order to ascertain'). 'buddhi' is preserved from the registry."
+    "grammarNote": "Ergative plural 'devanha' governs transitive past verb 'dekhā'. 'jānaiṃ kahu~' functions as a purposive infinitive phrase ('in order to ascertain')."
   },
   "line-023": {
     "source": "सुरसा नाम अहिन्ह कै माता। पठइन्हि आइ कही तेहिं बाता ॥",
@@ -3391,7 +3391,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mohi suranha jehi lāgi paṭhāvā। budhi bala maramu tora mai pāvā ॥",
-    "english": "{2,3:“The purpose for which }{1:the gods }{4:sent }{0:me—}{9:I }{10:have discovered }{7:the secret depth }{8:of your }{5:buddhi }{6:and strength.}",
+    "english": "{2,3:“The purpose for which }{1:the gods }{4:sent }{0:me—}{9:I }{10:have discovered }{7:the secret depth }{8:of your }{5:intelligence }{6:and strength.}",
     "words": [
       {
         "roman": "mohi",
@@ -3427,7 +3427,7 @@ window.SONG_LINES = {
         "roman": "budhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bala",
@@ -3516,7 +3516,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāma kāju sabu karihahu tumha bala buddhi nidhāna।",
-    "english": "{4:“You }{3:will accomplish }{2:all of }{0:Rāma’s }{1:work, }{7:O abode }{5:of strength }{6:and buddhi.”}",
+    "english": "{4:“You }{3:will accomplish }{2:all of }{0:Rāma’s }{1:work, }{7:O abode }{5:of strength }{6:and intelligence.”}",
     "words": [
       {
         "roman": "rāma",
@@ -3558,7 +3558,7 @@ window.SONG_LINES = {
         "roman": "buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "nidhāna।",
@@ -3567,7 +3567,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'do.' is an abbreviated section label. 'karihahu' is second-person future/precative agreeing with 'tumha'. 'bala-buddhi-nidhāna' is a bahuvrīhi/tatpuruṣa vocative compound addressing Hanumān. 'buddhi' matches the curated preserved term registry."
+    "grammarNote": "'do.' is an abbreviated section label. 'karihahu' is second-person future/precative agreeing with 'tumha'. 'bala-buddhi-nidhāna' is a bahuvrīhi/tatpuruṣa vocative compound addressing Hanumān."
   },
   "line-035": {
     "source": "आसिष देह गई सो हरषि चलेउ हनुमान",
@@ -3736,7 +3736,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nisicari eka sindhu mahu~ rahaī. kari māyā nabhu ke khaga gahaī.",
-    "english": "{1:A }{0:demoness }{4:dwelt }{2,3:in the ocean; }{5:employing }{6:māyā, }{10:she seized }{9:the birds }{7,8:of the sky.}",
+    "english": "{1:A }{0:demoness }{4:dwelt }{2,3:in the ocean; }{5:employing }{6:magic, }{10:she seized }{9:the birds }{7,8:of the sky.}",
     "words": [
       {
         "roman": "nisicari",
@@ -3776,9 +3776,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "power of deceptive appearance",
+        "gloss": "magic; supernatural deceptive power",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "nabhu",
@@ -3805,7 +3805,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'nisicari eka' is the subject of both habitual verbs 'rahaī' and 'gahaī'. 'nabhu ke khaga' is a genitive-noun phrase acting as the object of 'gahaī'. 'māyā' is preserved per registry (concept_key: 'maya')."
+    "grammarNote": "'nisicari eka' is the subject of both habitual verbs 'rahaī' and 'gahaī'. 'nabhu ke khaga' is a genitive-noun phrase acting as the object of 'gahaī'."
   },
   "line-037": {
     "source": "जीव जंतु जे गगन उड़ाहीं। जल बिलोकि तिन्ह कै परिछाहीं ॥",
@@ -3873,13 +3873,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīva jantu je gagana uṛāhī~. jala biloki tinha kai parichāhī~.",
-    "english": "{2:Whatever }{0:jīva }{1:creatures }{4:flew }{3:in the sky, }{6:sighting }{7,8:their }{9:shadow }{5:in the water,}",
+    "english": "{2:Whatever }{0,1:living creatures }{4:flew }{3:in the sky, }{6:sighting }{7,8:their }{9:shadow }{5:in the water,}",
     "words": [
       {
         "roman": "jīva",
         "gloss": "individual living being; embodied creature",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jantu",
@@ -3936,7 +3936,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'jīva jantu je' serves as plural subject to 'uṛāhī~'. 'jīva' matches the curated preserved term registry (concept_key: 'jiva'). 'tinha kai parichāhī~' is the feminine genitive object of the conjunctive participle 'biloki'."
+    "grammarNote": "'jīva jantu je' serves as plural subject to 'uṛāhī~'. 'tinha kai parichāhī~' is the feminine genitive object of the conjunctive participle 'biloki'."
   },
   "line-038": {
     "source": "गहइ छाहँ सक सो न उड़ाई। एहि बिधि सदा गगनचर खाई ॥",
@@ -4800,7 +4800,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "umā",
-        "gloss": "O Uma",
+        "gloss": "Umā (Pārvatī), Śiva’s consort and listener in this narration",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6847,7 +6847,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "naraharī",
-        "gloss": "Vishnu/Rama as the divine Man-Lion",
+        "gloss": "Narahari, a name of Viṣṇu as Narasiṃha, the man-lion",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7317,7 +7317,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "laṅkā.",
-        "gloss": "island kingdom of Rāvaṇa",
+        "gloss": "Laṅkinī, the guardian demoness of Laṅkā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8277,11 +8277,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "garuḍa sumeru renū sama tāhī. rāma kṛpā kari citavā jāhī ||",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Even Garuḍa and Mount Sumeru are as mere dust to one upon whom Rāma looks with mercy.}",
+    "english": "{0:O Garuḍa, }{1:Mount Sumeru }{3:is as }{2:mere dust }{4:to one }{9:upon whom }{5:Rāma }{8:looks }{7:with }{6:mercy.}",
     "words": [
       {
         "roman": "garuḍa",
-        "gloss": "the celestial eagle",
+        "gloss": "O Garuḍa, the celestial eagle and listener to Kākabhuśuṇḍi’s narration",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8340,7 +8340,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Correlative pair 'jāhī' (relative pronoun dative/accusative) and 'tāhī' (correlative pronoun dative). 'kṛpā kari' is an absolutive verbal phrase qualifying the finite past verb 'citavā'."
+    "grammarNote": "Correlative pair 'jāhī' (relative pronoun dative/accusative) and 'tāhī' (correlative pronoun dative). 'kṛpā kari' is an absolutive verbal phrase qualifying the finite past verb 'citavā'. Garuḍa is a vocative address; Sumeru alone is compared with dust."
   },
   "line-074": {
     "source": "अति लघु रूप धरेउ हनुमाना। पैठा नगर सुमिरि भगवाना ॥",
@@ -10378,7 +10378,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunata jugala tana pulaka mana magana sumiri guna grāma",
-    "english": "{0:Upon hearing, }{2:the bodies }{1:of both }{3:thrilled with bristling hair }{4:and their minds }{5:became immersed, }{6:remembering }{8:the multitude }{7:of guṇas.}",
+    "english": "{0:Upon hearing, }{2:the bodies }{1:of both }{3:thrilled with bristling hair }{4:and their minds }{5:became immersed, }{6:remembering }{8:the multitude }{7:of virtues.}",
     "words": [
       {
         "roman": "sunata",
@@ -10424,9 +10424,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent qualities of nature; divine attributes and virtues",
+        "gloss": "virtues; divine qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "grāma",
@@ -12503,7 +12503,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dekhi manahi mahum̐ kīnha pranāmā. baiṭhehiṁ bīti jāta nisi jāmā.",
-    "english": "{0:Seeing her, }{3,4:he bowed }{2:within }{1:his mind; }{5:merely sitting, }{9:the watches }{8:of the night }{6:were passing }{7:away for her.}",
+    "english": "{0:Seeing her, }{3,4:he bowed }{2:within }{1:his mind; }{5:as she sat, }{9:the watches }{8:of the night }{6:were passing }{7:away.}",
     "words": [
       {
         "roman": "dekhi",
@@ -14015,7 +14015,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṭha sūne hari ānehi mohi. adhama nilajja lāja nahiṁ tohī.",
-    "english": "{0:O rogue, }{2:you abducted }{3:and brought }{4:me }{1:in the solitude! }{5:O vile, }{6:shameless one, }{9:have you }{8:no }{7:shame?”}",
+    "english": "{0:O rogue, }{2:you abducted }{4:me }{1:when I was alone }{3:and brought me here! }{5:O vile, }{6:shameless one, }{9:have you }{8:no }{7:shame?”}",
     "words": [
       {
         "roman": "saṭha",
@@ -14128,7 +14128,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āpuhi suni khadyota sama rāmahi bhānu samāna.",
-    "english": "{1:Hearing }{0:himself }{2,3:like a firefly }{4:and Rāma }{5,6:equal to the sun,}",
+    "english": "{1:Hearing }{0:himself }{2,3:compared to a firefly }{4:and Rāma }{5,6:to the sun,}",
     "words": [
       {
         "roman": "āpuhi",
@@ -16217,7 +16217,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ehi bidhi so dacchina disi jāī | laṁkā manahuṁ bibhīṣana pāī ||",
-    "english": "{0:In this }{1:manner }{2:he }{5:was going toward }{3:the southern }{4:direction, }{7:as though }{8:Vibhīṣaṇa }{9:had obtained }{6:Laṅkā.}",
+    "english": "{0:In this }{1:manner }{2:he }{5:was going toward }{3:the southern }{4:direction; }{7:it was as though }{8:Vibhīṣaṇa }{9:had obtained }{6:Laṅkā.}",
     "words": [
       {
         "roman": "ehi",
@@ -18192,7 +18192,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "asokā.",
-        "gloss": "the Aśoka tree; in the name of Sītā’s grove",
+        "gloss": "Aśoka tree; its name means “sorrowless”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18420,7 +18420,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dekhi parama birahākula sītā. so chana kapihi kalapa sama bītā ..",
-    "english": "{0:Seeing }{3:Sītā }{1:utterly }{2:distressed by separation, }{4:that }{5:moment }{9:passed }{8:like }{7:an aeon }{6:for the monkey.}",
+    "english": "{0:When he saw }{3:Sītā }{1:utterly }{2:distressed by separation, }{4:that }{5:moment }{9:passed }{8:like }{7:an aeon }{6:for the monkey.}",
     "words": [
       {
         "roman": "dekhi",
@@ -18997,7 +18997,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīti ko sakai ajaya raghurāī. māyā tẽ asi raci nahĩ jāī ..",
-    "english": "{1:“Who }{2:can }{0:vanquish }{3:the unconquerable }{4:Lord of the Raghus? }{7:Such a thing }{9,10:cannot }{8:be fashioned }{6:through }{5:māyā.”}",
+    "english": "{1:“Who }{2:can }{0:vanquish }{3:the unconquerable }{4:Lord of the Raghus? }{7:Such a thing }{9,10:cannot }{8:be fashioned }{6:through }{5:magic.”}",
     "words": [
       {
         "roman": "jīti",
@@ -19031,9 +19031,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "delusive power",
+        "gloss": "magic; deceptive supernatural power",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "tẽ",
@@ -19066,7 +19066,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "jīti sakai is a modal potential construction. raghurāī is a compound of raghu + rāī (ruler). raci nahĩ jāī is a passive potential construction with negative nahĩ. māyā is preserved per the curated registry."
+    "grammarNote": "jīti sakai is a modal potential construction. raghurāī is a compound of raghu + rāī (ruler). raci nahĩ jāī is a passive potential construction with negative nahĩ."
   },
   "line-160": {
     "source": "सीता मन बिचार कर नाना। मधुर बचन बोलेउ हनुमाना ॥",
@@ -19247,7 +19247,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāmacandra guna baranaĩ lāgā. sunatahĩ sītā kara dukha bhāgā ..",
-    "english": "{3:He began }{2:to recount }{0:Ramachandra’s }{1:guṇas; }{4:the instant upon hearing, }{5,6:Sita’s }{7:grief }{8:fled.}",
+    "english": "{3:He began }{2:to recount }{0:Rāmacandra’s }{1:virtues; }{4:the instant she heard them, }{5,6:Sītā’s }{7:grief }{8:fled.}",
     "words": [
       {
         "roman": "rāmacandra",
@@ -19257,9 +19257,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent qualities or virtues",
+        "gloss": "virtues; noble qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "baranaĩ",
@@ -20134,7 +20134,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kapi kē bacana saprēma suni upajā mana bisvāsa.",
-    "english": "{4:Hearing }{0,1:the monkey’s }{3:loving }{2:words, }{7:trust }{5:arose }{6:in her mind.}",
+    "english": "{4:When she heard }{0,1:the monkey’s }{3:loving }{2:words, }{7:trust }{5:arose }{6:in her mind.}",
     "words": [
       {
         "roman": "kapi",
@@ -20241,7 +20241,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jānā mana krama bacana yaha kṛpāsindhu kara dāsa.",
-    "english": "{0:She recognized }{1:in thought, }{2:deed, }{3:and word }{4:that this one }{7:is a servant }{5,6:of the Ocean of Grace.}",
+    "english": "{0:She recognized }{4:that this one }{7:is a servant }{5,6:of the Ocean of Grace }{1:in thought, }{2:deed, }{3:and word.}",
     "words": [
       {
         "roman": "jānā",
@@ -22545,7 +22545,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tattva prēma kara mama aru tōrā. jānata priyā ēku manu mōrā.",
-    "english": "{0:The essential reality }{2:of }{1:love }{3:between me }{4:and }{5:you, }{7:O beloved, }{10:my }{9:manas }{8:alone }{6:knows.}",
+    "english": "{0:The essential reality }{2:of }{1:love }{3:between me }{4:and }{5:you, }{7:O beloved, }{10:my }{9:mind }{8:alone }{6:knows.}",
     "words": [
       {
         "roman": "tattva",
@@ -22603,9 +22603,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "manu",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mōrā.",
@@ -22688,7 +22688,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sō manu sadā rahata tōhi pāhīṁ. jānu prīti rasu ētēnahi māhīṁ.",
-    "english": "{0:That }{1:manas }{2:always }{3:abides }{4,5:with you; }{6:know }{8:the rasa }{7:of love }{10:to be in }{9:this alone.”}",
+    "english": "{0:That }{1:mind }{2:always }{3:abides }{4,5:with you; }{6:know }{8:the sweetness }{7:of love }{10:to be in }{9:this alone.”}",
     "words": [
       {
         "roman": "sō",
@@ -22698,9 +22698,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "manu",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sadā",
@@ -22740,9 +22740,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasu",
-        "gloss": "essence, aesthetic savor, or devotional mood",
+        "gloss": "sweetness; savor of love",
         "concept_key": "rasa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ētēnahi",
@@ -24485,7 +24485,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunu mātā sākhāmṛga nahiṁ bala buddhi bisāla.",
-    "english": "{0:“Listen, }{1:O Mother: }{2:monkeys }{3:have no }{6:vast }{4:strength }or {5:buddhi.}",
+    "english": "{0:“Listen, }{1:O Mother: }{2:monkeys }{3:have no }{6:vast }{4:strength }or {5:intelligence.}",
     "words": [
       {
         "roman": "sunu",
@@ -24521,7 +24521,7 @@ window.SONG_LINES = {
         "roman": "buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bisāla.",
@@ -24608,7 +24608,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "garuṛahi",
-        "gloss": "Garuḍa",
+        "gloss": "Garuḍa, Viṣṇu’s eagle mount and the enemy of serpents",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -25848,7 +25848,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dekhi buddhi bala nipuna kapi kaheu jānakīṁ jāhu.",
-    "english": "{0:Seeing }{4:the monkey }{3:skilled in }{1:buddhi }{2:and strength, }{6:Jānakī }{5:said, }{7:“Go,}",
+    "english": "{0:Seeing }{4:the monkey }{3:skilled in }{1:intelligence }{2:and strength, }{6:Jānakī }{5:said, }{7:“Go,}",
     "words": [
       {
         "roman": "dekhi",
@@ -25860,7 +25860,7 @@ window.SONG_LINES = {
         "roman": "buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bala",
@@ -28240,7 +28240,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "uṭhi bahori kīnhisi bahu māyā. jīti na jāi prabhañjana jāyā.",
-    "english": "{0:Rising }{1:again, }{2:he wrought }{3:much }{4:māyā, }{9:but the son }{8:of the wind-god }{6:could not }{5,7:be conquered.}",
+    "english": "{0:Rising }{1:again, }{2:he wrought }{3:many }{4:magical deceptions, }{9:but the son }{8:of the wind-god }{6:could not }{5,7:be conquered.}",
     "words": [
       {
         "roman": "uṭhi",
@@ -28270,7 +28270,7 @@ window.SONG_LINES = {
         "roman": "māyā.",
         "gloss": "delusive display; power of magical appearance and deception",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jīti",
@@ -28567,7 +28567,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "brahmabāna kapi kahu~ tehi mārā. paratihu~ bāra kaṭaku saṃghārā.",
-    "english": "{3:He }{4:struck }{1,2:the monkey }{0:with Brahmā’s arrow; }{5,6:even while falling, }{8:he slaughtered }{7:the host.}",
+    "english": "{3:He }{4:struck }{1,2:the monkey }{0:with Brahmā’s arrow; }{5,6:even while falling, }{8:the monkey slaughtered }{7:the host.}",
     "words": [
       {
         "roman": "brahmabāna",
@@ -29542,7 +29542,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "garuṛa",
-        "gloss": "Garuda",
+        "gloss": "Garuḍa, Viṣṇu’s eagle mount and the enemy of serpents",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -30234,7 +30234,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "suna rāvana brahmāṃḍa nikāyā. pāi jāsu bala biracita māyā.",
-    "english": "{0:Listen, }{1:O Rāvaṇa: }{4:having obtained }{5:whose }{6:power, }{8:māyā }{7:creates }{3:multitudes of }{2:universes;}",
+    "english": "{0:Listen, }{1:O Rāvaṇa: }{4:having obtained }{5:whose }{6:power, }{8:the creative power of manifestation }{7:creates }{3:multitudes of }{2:universes;}",
     "words": [
       {
         "roman": "suna",
@@ -30286,9 +30286,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā.",
-        "gloss": "creative power of worldly appearance.",
+        "gloss": "the creative power of manifestation",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "suna is 2sg imperative; rāvana is vocative. pāi is a conjunctive participle dependent on biracita. jāsu is an Old Awadhi genitive relative pronoun referring back to Rāma."
@@ -32851,7 +32851,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pulista",
-        "gloss": "Pulastya",
+        "gloss": "Pulastya, the sage who is Rāvaṇa’s grandfather",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -34637,7 +34637,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bibhīṣanu",
-        "gloss": "Vibhishana",
+        "gloss": "Vibhīṣaṇa, Rāvaṇa’s brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -36227,7 +36227,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumantā.",
-        "gloss": "Hanuman",
+        "gloss": "Hanumān, Rāma’s monkey messenger",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -37501,7 +37501,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sō",
-        "gloss": "he (Hanuman / Vibhishana's dwelling)",
+        "gloss": "he, Hanumān",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -41484,7 +41484,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pūm̐chī kusala nātha aba kusala dekhi pada kaṃja",
-    "english": "{0:He asked after }{1:their welfare: }{2:“O master, }{3:now }{4:all is well }{5:upon seeing }{7:your lotus }{6:feet.”}",
+    "english": "{0:He asked after }{1:their welfare; they replied: }{2:“O master, }{3:now }{4:all is well }{5:upon seeing }{7:your lotus }{6:feet.”}",
     "words": [
       {
         "roman": "pūm̐chī",
@@ -41871,7 +41871,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "soi bijaī binaī guna sāgara. tāsu sujasu treloka ujāgara ॥",
-    "english": "{0:He alone is }{1:victorious, }{2:humble, and }{4:an ocean of }{3:guṇas; }{5:his }{6:fair renown }{8:is radiant across }{7:the three worlds.}",
+    "english": "{0:He alone is }{1:victorious, }{2:humble, and }{4:an ocean of }{3:virtues; }{5:his }{6:fair renown }{8:is radiant across }{7:the three worlds.}",
     "words": [
       {
         "roman": "soi",
@@ -41893,9 +41893,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature; positive quality or virtue",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sāgara.",
@@ -42835,7 +42835,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "calata mohi cūṛāmani dīnhī. raghupati hṛdayaṃ lāi soi līnhī ॥",
-    "english": "{0:Upon departing, }{3:she gave }{1:me }{2:the crest-jewel; }{4:the guardian of Raghu's line }{6:pressed it to }{5:his chest }{8:and received }{7:that very jewel.}",
+    "english": "{0:As I was departing, }{3:she gave }{1:me }{2:the crest-jewel; }{4:the guardian of Raghu's line }{6:pressed it to }{5:his chest }{8:and received }{7:that very jewel.}",
     "words": [
       {
         "roman": "calata",
@@ -45770,7 +45770,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāvadhāna mana kari puni saṁkara. lāge kahana kathā ati suṁdara ॥",
-    "english": "{0,2:Composing}{1: his manas}{3: again,}{4: Śaṅkara}{5: began}{6: to narrate}{8: the exceedingly}{9: beautiful}{7: story:}",
+    "english": "{0,2:Composing}{1: his mind}{3: again,}{4: Śaṅkara}{5: began}{6: to narrate}{8: the exceedingly}{9: beautiful}{7: story:}",
     "words": [
       {
         "roman": "sāvadhāna",
@@ -45780,9 +45780,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kari",
@@ -45833,7 +45833,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "The curated term mana is preserved as manas. The conjunctive phrase sāvadhāna mana kari functions adverbially. lāge kahana forms an inceptive auxiliary construction taking the accusative phrase kathā ati suṁdara."
+    "grammarNote": "Mana means mind here. The conjunctive phrase sāvadhāna mana kari functions adverbially. lāge kahana forms an inceptive auxiliary construction taking the accusative phrase kathā ati suṁdara."
   },
   "line-376": {
     "source": "कपि उठाइ प्रभु हृदयँ लगावा। कर गहि परम निकट बैठावा ॥",
@@ -49495,7 +49495,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaya rāma prabala pratāpa kosalanātha guna gana gāvahīṃ",
-    "english": "{0:‘Victory}{1: to Rāma}{2:, of mighty}{3: majesty}{4:, the guardian of Kosala!’—}{7:they sing}{6: the hosts of}{5: his guṇas.}",
+    "english": "{0:‘Victory}{1: to Rāma}{2:, of mighty}{3: majesty}{4:, the guardian of Kosala!’—}{7:they sing}{6: the hosts of}{5: his virtues.}",
     "words": [
       {
         "roman": "jaya",
@@ -49529,9 +49529,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "virtuous quality; noble attribute",
+        "gloss": "virtues; noble qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gana",
@@ -49546,7 +49546,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "jaya rāma is a quoted exclamatory formula functioning vocatively. kosalanātha is a compound (kosala + nātha, 'guardian of Kosala'). guna gana is an accusative object compound ('host of virtues'); guna is preserved under curated registry. '1' is the numeric stanza delimiter."
+    "grammarNote": "jaya rāma is a quoted exclamatory formula functioning vocatively. kosalanātha is a compound (kosala + nātha, 'guardian of Kosala'). guna gana is an accusative object compound ('host of virtues'). '1' is the numeric stanza delimiter."
   },
   "line-408": {
     "source": "सहि सक न भार उदार अहिपति बार बारहिं मोहई।",
@@ -50810,7 +50810,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rahasi jōri kara pati paga lāgī. bōlī bacana nīti rasa pāgī.",
-    "english": "{0:In private, }{1:folding}{2: her hands, }{5:she clasped}{3: her husband’s}{4: feet}{6: and spoke}{7: words}{10: steeped in the }{9:rasa}{8: of statesmanship:}",
+    "english": "{0:In private, }{1:folding}{2: her hands, }{5:she clasped}{3: her husband’s}{4: feet}{6: and spoke}{7: words}{10: steeped in the }{9:essence}{8: of statesmanship:}",
     "words": [
       {
         "roman": "rahasi",
@@ -50868,9 +50868,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasa",
-        "gloss": "essence, aesthetic savor, or devotional mood",
+        "gloss": "essence; savor",
         "concept_key": "rasa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "pāgī.",
@@ -50879,7 +50879,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'pati' explicitly marks Rāvaṇa in his marital relationship to Mandodarī (husband/consort). 'nīti rasa pāgī' is a compound adjectival phrase qualifying 'bacana'. Concept key 'rasa' is preserved from registry."
+    "grammarNote": "'pati' explicitly marks Rāvaṇa in his marital relationship to Mandodarī (husband/consort). 'nīti rasa pāgī' is a compound adjectival phrase qualifying 'bacana'. Rasa supplies the essence/savor image here, modifying statesmanship."
   },
   "line-419": {
     "source": "कंत करष हरि सन परिहरहू। मोर कहा अति हित हियँ धरहु ॥",
@@ -53114,7 +53114,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāja dharma tana tīni kara hoi begihīṁ nāsa",
-    "english": "{3,4:for these three—}{0:realm,}{1: dharma,}{2: and the body—}{7:destruction}{6: swiftly}{5: occurs.}",
+    "english": "{3,4:for these three—}{0:realm,}{1: righteous conduct,}{2: and the body—}{7:destruction}{6: swiftly}{5: occurs.}",
     "words": [
       {
         "roman": "rāja",
@@ -53124,9 +53124,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharma",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "righteous conduct; religious duty",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "tana",
@@ -54120,13 +54120,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "guna sāgara nāgara nara joū. alapa lobha bhala kahai na koū ॥",
-    "english": "{4:Whosoever be }{2:a cultured }{3:man }{1:and an ocean of }{0:guṇas, }{5:for slight }{6:greed }{9:no }{10:one }{7,8:speaks well of him.}",
+    "english": "{4:Whosoever be }{2:a cultured }{3:man }{1:and an ocean of }{0:virtues, }{5:for slight }{6:greed }{9:no }{10:one }{7,8:speaks well of him.}",
     "words": [
       {
         "roman": "guna",
-        "gloss": "constituent quality; virtue",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sāgara",
@@ -54251,13 +54251,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāma krodha mada lobha saba nātha naraka ke paṁtha.",
-    "english": "{0:Kāma, }{1:anger, }{2:pride, }{3:and greed—}{4:all, }{5:O lord, }{7,8:are paths }{6:to hell.}",
+    "english": "{0:Sensual desire, }{1:anger, }{2:pride, }{3:and greed—}{4:all, }{5:O lord, }{7,8:are paths }{6:to hell.}",
     "words": [
       {
         "roman": "kāma",
-        "gloss": "desire; sensual longing,",
+        "gloss": "sensual desire",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "krodha",
@@ -54685,11 +54685,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "go dvija dhenu deva hitakārī. kṛpāsiṁdhu mānuṣa tanudhārī ॥",
-    "english": "{4:Benefactor }{0:to cows, }{1:the twice-born, }{2:milch-cows, }{3:and gods, }{5:an ocean of compassion, }{6:bearer of a human }{7:body.}",
+    "english": "{4:Benefactor }{0:to Earth, }{1:the twice-born, }{2:milch-cows, }{3:and gods, }{5:an ocean of compassion, }{6:bearer of a human }{7:body.}",
     "words": [
       {
         "roman": "go",
-        "gloss": "to cows,",
+        "gloss": "Earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -54804,7 +54804,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jana raṁjana bhaṁjana khala brātā. beda dharma racchaka sunu bhrātā ॥",
-    "english": "{1:Gladdener }{0:of devotees, }{2:shatterer }{3:of wicked }{4:hordes, }{7:protector }{5:of Vedic }{6:dharma—}{8:listen, }{9:O brother.}",
+    "english": "{1:Gladdener }{0:of devotees, }{2:shatterer }{3:of wicked }{4:hordes, }{7:protector }{5:of the Vedas }{6:and righteous conduct—}{8:listen, }{9:O brother.}",
     "words": [
       {
         "roman": "jana",
@@ -54844,9 +54844,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharma",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "righteous conduct; religious duty",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "racchaka",
@@ -58208,7 +58208,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "patha",
-        "gloss": "recitation; devotional reading aloud",
+        "gloss": "path; way",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -60262,7 +60262,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāni na jāi nisācara māyā. kāmarūpa kēhi kārana āyā ॥",
-    "english": "{3:“The night-wanderers’}{4: māyā}{1,2: cannot}{0: be known;}{5: shape-shifting at will,}{6: for what}{7: reason}{8: has he come?}",
+    "english": "{3:“The night-wanderers’}{4: deceptive powers}{1,2: cannot}{0: be known;}{5: shape-shifting at will,}{6: for what}{7: reason}{8: has he come?}",
     "words": [
       {
         "roman": "jāni",
@@ -60290,9 +60290,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā.",
-        "gloss": "power of deceptive appearance; shape-shifting deceit",
+        "gloss": "deceptive powers; shape-shifting deceit",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kāmarūpa",
@@ -61065,7 +61065,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sanamukha hōi jīva mōhi jabahīṁ. janma kōṭi agha nāsahiṁ tabahīṁ ..",
-    "english": "{4:The very moment }{2:a jīva }{1:turns }{0:face-to-face }{3:toward me, }{9:at that very moment }{7:sins }{6:of tens of millions of }{5:births }{8:perish.}",
+    "english": "{4:The very moment }{2:a living being }{1:turns }{0:face-to-face }{3:toward me, }{9:at that very moment }{7:sins }{6:of tens of millions of }{5:births }{8:perish.}",
     "words": [
       {
         "roman": "sanamukha",
@@ -61081,9 +61081,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "individual living being; embodied self",
+        "gloss": "individual living being",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mōhi",
@@ -62535,7 +62535,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhuja pralaṁba kaṁjāruna lōcana. syāmala gāta pranata bhaya mōcana ..",
-    "english": "{0:His arms }{1:were long, }{3:his eyes }{2:lotus-red, }{5:his body }{4:dark-hued, }{8:the dispeller }{7:of fear }{6:for the surrendered.}",
+    "english": "{0:His arms }{1:were long, }{3:his eyes }{2:lotus-red, }{5:his body }{4:dark-hued; }{8:he is the dispeller }{7:of fear }{6:for the surrendered.}",
     "words": [
       {
         "roman": "bhuja",
@@ -63874,7 +63874,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "khala maṁḍalīṁ basahu dinu rātī. sakhā dharama nibahai kēhi bhām̐tī.",
-    "english": "{2:You dwell }{3:day }{4:and night }{1:amidst a company }{0:of the wicked; }{5:O friend, }{8:in what }{9:manner }is {6:dharma }{7:maintained?}",
+    "english": "{2:You dwell }{3:day }{4:and night }{1:amidst a company }{0:of the wicked; }{5:O friend, }{8:in what }{9:manner }is {6:righteous conduct }{7:maintained?}",
     "words": [
       {
         "roman": "khala",
@@ -63914,9 +63914,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharama",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "righteous conduct; religious duty",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "nibahai",
@@ -64428,7 +64428,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "taba lagi kusala na jīva kahum̐ sapanēhum̐ mana biśrāma.",
-    "english": "{0,1:Until then, }{3:there is no }{2:well-being }{5:for a }{4:jīva, }{8:nor rest }{7:for the mind }{6:even in a dream,}",
+    "english": "{0,1:Until then, }{3:there is no }{2:well-being }{5:for a }{4:living being, }{8:nor rest }{7:for the mind }{6:even in a dream,}",
     "words": [
       {
         "roman": "taba",
@@ -64456,9 +64456,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "individual living being; embodied self",
+        "gloss": "individual living being",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kahum̐",
@@ -64553,7 +64553,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaba lagi bhajata na rāma kahum̐ sōka dhāma taji kāma.",
-    "english": "{0,1:so long as }{3:one does not }{2:worship }{4,5:Rāma, }{8:having renounced }{9:kāma, }{7:the abode }{6:of sorrow.}",
+    "english": "{0,1:so long as }{3:one does not }{2:worship }{4,5:Rāma, }{8:having renounced }{9:sensual desire, }{7:the abode }{6:of sorrow.}",
     "words": [
       {
         "roman": "jaba",
@@ -64611,9 +64611,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāma.",
-        "gloss": "desire; sensual longing",
+        "gloss": "sensual desire",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "taji is an absolutive conjunctive participle. sōka dhāma is a genitive tatpuruṣa compound qualifying kāma. 46. is the numerical verse end-marker."
@@ -64958,7 +64958,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mamatā taruna tamī am̐dhiārī. rāga dvēṣa ulūka sukhakārī.",
-    "english": "{0:Possessiveness }{1:is a dense, }{3:dark }{2:night, }{7:delighting }{6:the owls }of {4:rāga }and {5:dveṣa;}",
+    "english": "{0:Possessiveness }{1:is a dense, }{3:dark }{2:night, }{7:delighting }{6:the owls }of {4:attachment }and {5:aversion;}",
     "words": [
       {
         "roman": "mamatā",
@@ -64986,15 +64986,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāga",
-        "gloss": "attachment; passion",
+        "gloss": "attachment",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "dvēṣa",
-        "gloss": "aversion; repulsion",
+        "gloss": "aversion",
         "concept_key": "dvesa",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ulūka",
@@ -65089,7 +65089,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "taba lagi basati jīva mana māhīṁ. jaba lagi prabhu pratāpa rabi nāhīṁ.",
-    "english": "{2:it dwells }{5:within }{4:the mind }of a {3:jīva }{0,1:only so long }{6,7:as }{10:the sun }{8:of the Lord’s }{9:majesty }{11:is not present.}",
+    "english": "{2:it dwells }{5:within }{4:the mind }of a {3:living being }{0,1:only so long }{6,7:as }{10:the sun }{8:of the Lord’s }{9:majesty }{11:is not present.}",
     "words": [
       {
         "roman": "taba",
@@ -65111,9 +65111,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "individual living being; embodied self",
+        "gloss": "individual living being",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mana",

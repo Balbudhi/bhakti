@@ -95,7 +95,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇā,",
-        "gloss": "Krishna,",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -243,7 +243,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇā",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -332,7 +332,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -445,7 +445,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -629,7 +629,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -956,7 +956,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1093,7 +1093,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
         "concept_key": "",
         "preserve_in_english": false
       },

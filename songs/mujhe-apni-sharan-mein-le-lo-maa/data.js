@@ -5584,7 +5584,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Doubled imperative clause, both ending in vocative maiyā."
+    "grammarNote": "Imperative clause ending in the vocative maiyā."
   },
   "verse4-line2-lead": {
     "source": "हो तेरे नाम की चढ़े खुमारी माँ",
@@ -7225,10 +7225,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 243.4,
-    "end": 249.0
+    "end": 249
   },
   {
-    "start": 249.0,
+    "start": 249,
     "end": 255.685
   },
   {
@@ -7341,10 +7341,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 388.87,
-    "end": 392.0
+    "end": 392
   },
   {
-    "start": 392.0,
+    "start": 392,
     "end": 395.44
   },
   {

@@ -737,13 +737,13 @@ window.SONG_LINES = {
     "source": "गुन गनत नमत सुमिरत जपत समन सकल संकट बिकट",
     "sourceLanguage": "bra",
     "roman": "guna ganata namata sumirata japata samana sakala saṅkaṭa bikaṭa",
-    "english": "{5:Dispeller of }{6:all }{8:dire }{7:calamities }{1:as one recounts his }{0:guṇa, }{2:bows, }{3:remembers, }{4:and chants.}",
+    "english": "{5:Dispeller of }{6:all }{8:dire }{7:calamities }{1:as one recounts his }{0:virtues, }{2:bows, }{3:remembers, }{4:and chants.}",
     "words": [
       {
         "roman": "guna",
-        "gloss": "virtues; constituent qualities of nature",
+        "gloss": "virtues; praiseworthy qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ganata",
@@ -5028,11 +5028,11 @@ window.SONG_LINES = {
     "source": "दसमुख दुसह दरिद्र दरिबे को भयो प्रगट तिलोक ओक तुलसी निधान सो",
     "sourceLanguage": "bra",
     "roman": "dasamukha dusaha daridra daribe ko bhayo pragaṭa tiloka oka tulasī nidhāna so",
-    "english": "{5,6:Manifested }{3,4:to tear apart }{1:the unbearable }{2:poverty of }{0:the ten-headed demon, }{8:abode }{7:of the three worlds, }{10,11:like a treasure-store }{9:for Tulsi,}",
+    "english": "{5,6:Manifested }{3,4:to tear apart }{1:unbearable }{2:poverty—}{0:the ten-headed demon—}{8:an abode }{7:for the three worlds, }{10,11:like a treasure-store }{9:for Tulsī,}",
     "words": [
       {
         "roman": "dasamukha",
-        "gloss": "ten-headed Ravana / ten-faced",
+        "gloss": "ten-headed Rāvaṇa; here, poverty pictured as the demon",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6113,7 +6113,7 @@ window.SONG_LINES = {
     "source": "कुलिस कठोर तनु जोर परै रोर रन करुना कलित मन धारमिक धीर को",
     "sourceLanguage": "bra",
     "roman": "kulisa kaṭhora tanu jora parai rora rana karunā kalita mana dhāramika dhīra ko",
-    "english": "{0:With a thunderbolt-}{1:hard }{2:body }{3:of might }{5:when clamor }{4:breaks out }{6:in battle, }{9:a manas }{8:filled with }{7:compassion }{11:belongs to the steadfast }{10,12:righteous one.}",
+    "english": "{11:The steadfast }{10,12:righteous one }{0:has a thunderbolt-}{1:hard, }{3:mighty }{2:body }{5:when clamor }{4:breaks out }{6:in battle, }and {9:a mind }{8:filled with }{7:compassion.}",
     "words": [
       {
         "roman": "kulisa",
@@ -6171,9 +6171,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind; heart",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "dhāramika",
@@ -8598,7 +8598,7 @@ window.SONG_LINES = {
     "source": "करुनानिधान बल बुद्धि के निधान मोद-",
     "sourceLanguage": "bra",
     "roman": "karunānidhāna bala buddhi ke nidhāna moda-",
-    "english": "{0:Treasure of compassion, }{4:repository }{1:of strength }{2,3:and buddhi, }{5:joy-}",
+    "english": "{0:Treasure of compassion, }{4:repository }{1:of strength }{2,3:and intelligence, }{5:joy-}",
     "words": [
       {
         "roman": "karunānidhāna",
@@ -8616,7 +8616,7 @@ window.SONG_LINES = {
         "roman": "buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ke",
@@ -9060,13 +9060,13 @@ window.SONG_LINES = {
     "source": "मन की बचन की करम की तिहूँ प्रकार",
     "sourceLanguage": "bra",
     "roman": "mana kī bacana kī karama kī tihū̃ prakāra",
-    "english": "{0,1:In manas, }{2,3:in speech, }{4,5:in karma, }{6:in all three }{7:ways,}",
+    "english": "{0,1:In mind, }{2,3:in speech, }{4,5:in deed, }{6:in all three }{7:ways,}",
     "words": [
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind; thought",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kī",
@@ -9088,9 +9088,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deed; action",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kī",
@@ -9250,13 +9250,13 @@ window.SONG_LINES = {
     "source": "मन को अगम तन सुगम किये कपीस",
     "sourceLanguage": "bra",
     "roman": "mana ko agama tana sugama kiye kapīsa",
-    "english": "{2:Inaccessible }{0,1:to the manas, }{5:you made }{4:easy }{3:with your body, }{6:O Lord of Monkeys,}",
+    "english": "{2:Inaccessible }{0,1:to the mind, }{5:you made }{4:easy }{3:with your body, }{6:O Lord of Monkeys,}",
     "words": [
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind; thought",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ko",
@@ -15146,11 +15146,11 @@ window.SONG_LINES = {
     "source": "करम कराल कंस भूमिपाल के भरोसे बकी बकभगिनी काहू ते कहा डरैगी",
     "sourceLanguage": "bra",
     "roman": "karama karāla kansa bhūmipāla ke bharose bakī bakabhaginī kāhū te kahā ḍaraigī",
-    "english": "{4,5:Relying on}{1: the dread }{0:karma}{3: of King }{2:Kamsa, }{10:why will }{6:Baki, }{7:the sister of Baka, }{11:fear }{8,9:anyone?}",
+    "english": "{4,5:Relying on }{1:dreadful }{0:karma—}{3:King }{2:Kaṃsa—}{10:why would }{6:Bakī, }{7:the sister of Baka, }{11:fear }{8,9:anyone?}",
     "words": [
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences, pictured here as King Kaṃsa",
         "concept_key": "karma",
         "preserve_in_english": true
       },
@@ -25392,7 +25392,7 @@ window.SONG_LINES = {
     "source": "खोटे खोटे आचरन आचरत अपनायो अंजनीकुमार सोध्यो रामपानिपाक हौं।",
     "sourceLanguage": "bra",
     "roman": "khoṭe khoṭe ācaran ācarat apanāyo añjanīkumār sodhyo rāmapānipāk hauṁ.",
-    "english": "{0,1,2,3:While practicing vile, vile conduct, }{4,5:the son of Anjanī claimed }{8:me as his own, }{6,7:and purified me through the touch of Rama's hand.}",
+    "english": "{0,1,2,3:While I was practicing vile, vile conduct, }{4,5:the son of Añjanī claimed }{8:me as his own, }{6,7:and purified me through the touch of Rāma's hand.}",
     "words": [
       {
         "roman": "khoṭe",
@@ -27408,7 +27408,7 @@ window.SONG_LINES = {
     "source": "ब्याधि भूतजनित उपाधि काहू खल की समाधि कीजै तुलसी को जानि जन फुर कै",
     "sourceLanguage": "bra",
     "roman": "byādhi bhūtajanita upādhi kāhū khala kī samādhi kījai tulasī ko jāni jana phura kai",
-    "english": "{0,1:Whether disease caused by spirits }{2,3,4,5:or harassment of some villain, }{6,7:bring it to samādhi, }{8,9,10:knowing Tulsi }{11,12,13:as a true servant.}",
+    "english": "{0,1:Whether disease caused by spirits }{2,3,4,5:or harassment of some villain, }{6,7:bring it to an end, }{8,9,10:knowing Tulasī }{11,12,13:as a true servant.}",
     "words": [
       {
         "roman": "byādhi",
@@ -27448,9 +27448,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "samādhi",
-        "gloss": "meditative absorption",
+        "gloss": "settlement; resolution; bringing to an end",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kījai",
@@ -27861,7 +27861,7 @@ window.SONG_LINES = {
     "source": "हरष बिषाद राग रोष गुन दोषमई बिरची बिरंचि सब देखियत दुनिए",
     "sourceLanguage": "bra",
     "roman": "haraṣa biṣāda rāga roṣa guna doṣamaī biracī birañci saba dekhiyata dunie",
-    "english": "{0,1:Composed of joy, sorrow, }{2:rāga, }{3:anger, }{4:guṇa, }{5:and faults, }{8,9,10:all the world is seen }{6,7:fashioned by the Creator Brahmā.}",
+    "english": "{0,1:Composed of joy, sorrow, }{2:attachment, }{3:anger, }{4:virtues, }{5:and faults, }{8,9,10:all the world is seen }{6,7:fashioned by the Creator Brahmā.}",
     "words": [
       {
         "roman": "haraṣa",
@@ -27877,9 +27877,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāga",
-        "gloss": "attachment or passion, according to context",
+        "gloss": "attachment; affection",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "roṣa",
@@ -27889,9 +27889,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality of nature",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "doṣamaī",

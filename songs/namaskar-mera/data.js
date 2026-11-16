@@ -731,7 +731,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dattā digambara śrīpāda vallabha",
-    "english": "{0:Dattatreya }{1:the sky-clad, }{2:Shripada }{3:the beloved master,}",
+    "english": "{0:Dattātreya }{1:the sky-clad, }{2:Śrīpāda }{3:Vallabha,}",
     "words": [
       {
         "roman": "dattā",
@@ -747,13 +747,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīpāda",
-        "gloss": "sacred feet / avatar Shripada",
+        "gloss": "Śrīpāda Vallabha, revered as an incarnation of Dattātreya",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vallabha",
-        "gloss": "beloved master",
+        "gloss": "beloved; here part of the name Śrīpāda Vallabha",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1557,7 +1557,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gajānana",
-        "gloss": "of Shegaon",
+        "gloss": "the saint of Shegaon",
         "concept_key": "",
         "preserve_in_english": false
       }

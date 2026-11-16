@@ -261,7 +261,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saukhyadātāra jīvā",
-    "english": "{0:giver of peace }{1:to the jīva,}",
+    "english": "{0:giver of peace }{1:to the living being,}",
     "words": [
       {
         "roman": "Saukhyadātāra",
@@ -273,7 +273,7 @@ window.SONG_LINES = {
         "roman": "jīvā",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Saukhyadātāra is a tatpuruṣa compound (saukhya + dātā); jīvā is in the Marathi dative/objective case marker -ā."
@@ -1696,7 +1696,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śiraḍī mājhe Paṇḍharapūra Sāībābā Ramāvara",
-    "english": "{0:Shirdi }{1:is my }{2:Pandharpur; }{3:Sai Baba }{4:is the consort of Rama.}",
+    "english": "{0:Śiraḍī }{1:is my }{2:Paṇḍharapūra; }{3:Sāī Bābā }{4:is the consort of Ramā.}",
     "words": [
       {
         "roman": "Śiraḍī",
@@ -1724,7 +1724,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramāvara",
-        "gloss": "consort of Rama (Lord Vitthala / Vishnu)",
+        "gloss": "consort of Ramā (Lakṣmī); an epithet of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1761,7 +1761,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bābā Ramāvara Sāībābā Ramāvara",
-    "english": "{0:Baba }{1:is the consort of Rama, }{2:Sai Baba }{3:is the consort of Rama.}",
+    "english": "{0:Bābā }{1:is the consort of Ramā, }{2:Sāī Bābā }{3:is the consort of Ramā.}",
     "words": [
       {
         "roman": "Bābā",
@@ -1771,7 +1771,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramāvara",
-        "gloss": "consort of Rama",
+        "gloss": "consort of Ramā (Lakṣmī); an epithet of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1783,7 +1783,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramāvara",
-        "gloss": "consort of Rama",
+        "gloss": "consort of Ramā (Lakṣmī); an epithet of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5391,7 +5391,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tuṅgā",
-        "gloss": "lofty; high",
+        "gloss": "Tuṅgā, the river named here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5937,7 +5937,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tatpara tujhyā yā dhyānī",
-    "english": "{0:Wholly intent }{2:upon this }{3:meditation }{1:on you,}",
+    "english": "{0:For those wholly intent }{2:upon this }{3:meditation }{1:on you,}",
     "words": [
       {
         "roman": "tatpara",
@@ -7213,11 +7213,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ajanmādyamekaṃ parabrahma sākṣāt svayaṃ sambhavaṃ rāmamevāvatīrṇam | bhavaddarśanātsaṃpunītaḥ prabho'haṃ",
-    "english": "{0:Unborn, beginningless, and one, }{1:the Supreme Brahman }{2:directly, }{3:self-}{4:manifest, }{5:Rama himself descended—}{6:by your vision, }{7:O Lord, I am }{6:thoroughly purified.}",
+    "english": "{0:Unborn, primal, and one, }{1:the Supreme Brahman }{2:directly, }{3:self-}{4:manifest, }{5:Rāma himself descended—}{6:by your vision, }{7:O Lord, I am }{6:thoroughly purified.}",
     "words": [
       {
         "roman": "ajanmādyamekaṃ",
-        "gloss": "unborn, beginningless, and non-dual",
+        "gloss": "unborn, primal, and one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10468,7 +10468,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ruso mana sarasvatī capala citta tehī ruso",
-    "english": "{0:Let the }{1:manas }{2:and Sarasvati }{0:be displeased; }{5,6:let even that }{3:fickle }{4:consciousness }{6:be displeased.}",
+    "english": "{0:Let the }{1:mind }{2:and Sarasvatī }{0:be displeased; }{5,6:let even that }{3:fickle }{4:consciousness }{6:be displeased.}",
     "words": [
       {
         "roman": "ruso",
@@ -10480,7 +10480,7 @@ window.SONG_LINES = {
         "roman": "mana",
         "gloss": "sensory and deliberative mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sarasvatī",
@@ -11020,7 +11020,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prapañcī mana he ruso dṛḍha virakti cittī ṭhaso",
-    "english": "{2:Let this }{1:manas }{3:turn away }{0:from worldly life; }{4:let firm }{5:dispassion }{7:be imprinted }{6:in consciousness.}",
+    "english": "{2:Let this }{1:mind }{3:turn away }{0:from worldly life; }{4:let firm }{5:dispassion }{7:be imprinted }{6:in consciousness.}",
     "words": [
       {
         "roman": "prapañcī",
@@ -11032,7 +11032,7 @@ window.SONG_LINES = {
         "roman": "mana",
         "gloss": "sensory and deliberative mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "he",
@@ -11228,7 +11228,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadaiva hṛdayī vaso manasi dhyāni sāī vaso",
-    "english": "{5:May Sai }{2:dwell }{0:always }{1:in the heart; }{6:may he dwell }{3:in the manas }{4:and in meditation.}",
+    "english": "{5:May Sāī }{2:dwell }{0:always }{1:in the heart; }{6:may he dwell }{3:in the mind }{4:and in meditation.}",
     "words": [
       {
         "roman": "sadaiva",
@@ -11252,7 +11252,7 @@ window.SONG_LINES = {
         "roman": "manasi",
         "gloss": "sensory and deliberative mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "dhyāni",
@@ -11864,7 +11864,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sa me kāmān kāmakāmāya mahyam | kāmeśvaro vaiśravaṇo dadhātu |",
-    "english": "{0:May he—}{6:Vaiśravaṇa, Kubera, }{5:the Lord of desires—}{7:grant }{1:my }{2:kāmas }{4:to me, }{3:one who desires kāmas.}",
+    "english": "{0:May he—}{6:Vaiśravaṇa, Kubera, }{5:the Lord of desires—}{7:grant }{4:me, }{3:who long for them, }{1,2:the things I desire.}",
     "words": [
       {
         "roman": "sa",
@@ -11880,13 +11880,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāmān",
-        "gloss": "desire; sensual longing",
+        "gloss": "desired things; objects of desire",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kāmakāmāya",
-        "gloss": "to one desiring desires; to the seeker of aspirations",
+        "gloss": "to one who longs for desired things",
         "concept_key": "",
         "preserve_in_english": false
       },

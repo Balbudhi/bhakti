@@ -288,7 +288,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nāhīṁ guṇa dōṣa aṅgā yēta",
-    "english": "{1:guṇa }{2:and faults }{0:do not }{4:come }{3:upon the body.}",
+    "english": "{1:Virtues }{2:and faults }{0:do not }{4:come }{3:upon the body.}",
     "words": [
       {
         "roman": "Nāhīṁ",
@@ -298,9 +298,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇa",
-        "gloss": "constituent quality of nature",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "dōṣa",
@@ -418,7 +418,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ramē tēthēṁ mana krīḍā karī",
-    "english": "{1:there }{2:the manas }{0:delights }{3,4:and plays,}",
+    "english": "{1:there }{2:the mind }{0:delights }{3,4:and plays,}",
     "words": [
       {
         "roman": "Ramē",
@@ -434,9 +434,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "krīḍā",
@@ -724,7 +724,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tukā mhaṇē hōya manāsī saṁvāda",
-    "english": "{0:Tuka }{1:says, }{4:a dialogue }{2:takes place }{3:with the manas:}",
+    "english": "{0:Tukā }{1:says, }{4:a dialogue }{2:takes place }{3:with the mind:}",
     "words": [
       {
         "roman": "Tukā",
@@ -746,9 +746,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "manāsī",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "with the mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "saṁvāda",

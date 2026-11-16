@@ -826,7 +826,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaya hanumāna jñāna guna sāgara । jaya kapīsa tihuṁ loka ujāgara ॥",
-    "english": "{0:Hail}{1: Hanuman,}{4: ocean}{2: of wisdom}{3: and guṇas!}{5: Hail}{6: the Lord of Monkeys,}{9: who illuminates}{7: the three}{8: worlds!}",
+    "english": "{0:Hail}{1: Hanumān,}{4: ocean}{2: of wisdom}{3: and virtues!}{5: Hail}{6: the Lord of Monkeys,}{9: who illuminates}{7: the three}{8: worlds!}",
     "words": [
       {
         "roman": "jaya",
@@ -848,9 +848,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guna",
-        "gloss": "constituent quality; virtue",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sāgara",

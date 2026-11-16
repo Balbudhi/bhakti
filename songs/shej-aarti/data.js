@@ -1686,7 +1686,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma Janārdanī, the poet signing this hymn",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2207,7 +2207,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Brahma",
-        "gloss": "creator deity of the cosmic triad",
+        "gloss": "the supreme reality (Brahman)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4891,7 +4891,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āśā tṛṣṇā kalpanecā soḍuni galabalā bābā sāṁḍuni galabalā",
-    "english": "{3:Leaving behind }{4:the clamor }{0:of desire, }{1:tṛṣṇā, }{2:and mental fancy, }{5:O Baba, }{6:casting away }{7:the clamor.}",
+    "english": "{3:Leaving behind }{4:the clamor }{0:of desire, }{1:craving, }{2:and mental fancy, }{5:O Bābā, }{6:casting away }{7:the clamor.}",
     "words": [
       {
         "roman": "āśā",
@@ -4903,7 +4903,7 @@ window.SONG_LINES = {
         "roman": "tṛṣṇā",
         "gloss": "thirst; craving",
         "concept_key": "trsna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kalpanecā",

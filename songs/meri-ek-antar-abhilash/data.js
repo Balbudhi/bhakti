@@ -1251,7 +1251,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Fourfold repetition of the vocative singular noun."
+    "grammarNote": "Twofold repetition of the vocative singular noun."
   },
   "maiya-meri-kyun-nahi-aavat": {
     "source": "मैया मेरी क्यों नहीं आवत",

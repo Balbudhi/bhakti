@@ -127,7 +127,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound sandhi of nominative masculine singular predicates: amātraḥ + ca + turthaḥ + avyavahāryaḥ -> amātraś-caturtho-'vyavahāryaḥ; prapañcopaśamaḥ (tatpuruṣa/bahuvrīhi compound); śivaḥ + advaitaḥ -> śivo'dvaitaḥ with avagraha."
+    "grammarNote": "Compound sandhi of nominative masculine singular predicates: amātraḥ + caturthaḥ + avyavahāryaḥ -> amātraś-caturtho-'vyavahāryaḥ; prapañcopaśamaḥ (tatpuruṣa/bahuvrīhi compound); śivaḥ + advaitaḥ -> śivo'dvaitaḥ with avagraha."
   },
   "line-002": {
     "source": "एवमोङ्कारः",

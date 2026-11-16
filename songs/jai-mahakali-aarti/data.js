@@ -1314,7 +1314,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Maheśā",
-        "gloss": "Shiva (the great lord",
+        "gloss": "Śiva, the great Lord",
         "concept_key": "",
         "preserve_in_english": false
       }

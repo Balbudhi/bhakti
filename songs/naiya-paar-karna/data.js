@@ -1024,7 +1024,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "path",
-        "gloss": "masc. sg.",
+        "gloss": "path; road (masculine singular)",
         "concept_key": "",
         "preserve_in_english": false
       },

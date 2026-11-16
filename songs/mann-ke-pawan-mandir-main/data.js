@@ -931,7 +931,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sab dharmõ ke sār ho tum, viśva ke ādhār ho tum",
-    "english": "{0,2,3,4,5:You are the essence of all }{1:dharmas}{6,7,8,9,10:, you are the foundation of the universe,}",
+    "english": "{0,2,3,4,5:You are the essence of all }{1:religious traditions}{6,7,8,9,10:, you are the foundation of the universe,}",
     "words": [
       {
         "roman": "sab",
@@ -941,9 +941,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmõ",
-        "gloss": "sustaining paths; righteous ways; religious traditions",
+        "gloss": "religious traditions; faiths",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ke",

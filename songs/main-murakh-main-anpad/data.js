@@ -397,7 +397,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation"
+        "gloss": "name; here, the sacred name of Sāī"
       },
       {
         "roman": "agar",
@@ -467,7 +467,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīṅ",
-        "gloss": "Sai"
+        "gloss": "Sāī, the revered master addressed in the song"
       },
       {
         "roman": "hai",
@@ -1141,7 +1141,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīṅ",
-        "gloss": "Sai"
+        "gloss": "Sāī, the revered master addressed in the song"
       }
     ],
     "source": "सांसों में घुल जाओ साईं",

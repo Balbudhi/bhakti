@@ -163,11 +163,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ki patjhaṛ meṁ bhī phūl khilte gae",
-    "english": "{0:that}{3: even}{2: in}{1: autumn,}{4: flowers}{5,6: went on blooming}",
+    "english": "{0:and}{3: even}{2: in}{1: autumn,}{4: flowers}{5,6: went on blooming}",
     "words": [
       {
         "roman": "ki",
-        "gloss": "that / so that",
+        "gloss": "and (continuing the account)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -341,7 +341,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ki us vaqt hameṁ sāīṁ milke gae",
-    "english": "{0:that}{1: at that}{2: moment,}{4: Sai}{5: met}{3: us}{6: before departing}",
+    "english": "{0:when}{1: at that}{2: moment,}{4: Sāīṁ}{5: met}{3: us}{6: before departing}",
     "words": [
       {
         "roman": "ki",

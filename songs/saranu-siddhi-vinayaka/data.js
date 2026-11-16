@@ -236,7 +236,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "geddidante",
-        "gloss": "as you surpassed; the collected commentary specifies surpassing in beauty"
+        "gloss": "as you surpassed (here, Kāma in beauty)"
       }
     ],
     "sourceWords": [
@@ -618,10 +618,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 32.4,
-    "end": 37.0
+    "end": 37
   },
   {
-    "start": 37.0,
+    "start": 37,
     "end": 41.8
   },
   {
@@ -634,10 +634,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 51.3,
-    "end": 56.0
+    "end": 56
   },
   {
-    "start": 56.0,
+    "start": 56,
     "end": 61.3
   },
   {
@@ -694,10 +694,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 159.9,
-    "end": 170.0
+    "end": 170
   },
   {
-    "start": 170.0,
+    "start": 170,
     "end": 179.3
   },
   {
@@ -738,10 +738,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 251.7,
-    "end": 282.0
+    "end": 282
   },
   {
-    "start": 282.0,
+    "start": 282,
     "end": 301.813
   }
 ];

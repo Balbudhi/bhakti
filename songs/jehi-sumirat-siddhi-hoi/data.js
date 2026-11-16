@@ -246,13 +246,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Buddhi rāsi subha guṇa sadanā",
-    "english": "{1:the repository }{0:of buddhi, }{4:the abode }{2:of auspicious }{3:guṇas.}",
+    "english": "{1:the repository }{0:of intellect, }{4:the abode }{2:of auspicious }{3:virtues.}",
     "words": [
       {
         "roman": "Buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "rāsi",
@@ -268,9 +268,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "guṇa",
-        "gloss": "constituent quality of nature",
+        "gloss": "virtues; good qualities",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sadanā",

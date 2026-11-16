@@ -690,7 +690,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rakṣa",
-        "gloss": "guardian spirits",
+        "gloss": "rākṣasas; fierce supernatural beings",
         "concept_key": "",
         "preserve_in_english": false
       },

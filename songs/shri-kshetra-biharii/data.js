@@ -1729,7 +1729,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ārttibhañjana he Ramāramaṇa",
-    "english": "{0:Shatterer of distress, }{1:O }{2:beloved of Rama,}",
+    "english": "{0:Shatterer of distress, }{1:O }{2:beloved of Ramā,}",
     "words": [
       {
         "roman": "Ārttibhañjana",
@@ -1745,7 +1745,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramāramaṇa",
-        "gloss": "delighter / beloved consort of Rama (Lakshmi)",
+        "gloss": "beloved consort of Ramā (Lakṣmī)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3051,7 +3051,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jagamohana",
-        "gloss": "enchanter of the universe / assembly hall of the temple",
+        "gloss": "enchanter of the universe",
         "concept_key": "",
         "preserve_in_english": false
       }

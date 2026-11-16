@@ -211,7 +211,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, invoked here as the mountain-lifter and flute-bearer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -300,7 +300,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, invoked here as the mountain-lifter and flute-bearer",
         "concept_key": "",
         "preserve_in_english": false
       },

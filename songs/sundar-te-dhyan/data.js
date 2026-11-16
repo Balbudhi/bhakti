@@ -459,7 +459,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaustubhamaṇī",
-        "gloss": "the Kaustubha gem",
+        "gloss": "Viṣṇu’s jewel, worn here at the throat",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -514,11 +514,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tukā mhaṇe mājhe heci sarva sukha",
-    "english": "{0:Tuka} {1:says,} {3:this alone} is {4:all} {2:my} {5:joy:}",
+    "english": "{0:Tukā} {1:says,} {3:this alone} is {4:all} {2:my} {5:joy:}",
     "words": [
       {
         "roman": "Tukā",
-        "gloss": "the poet-saint",
+        "gloss": "Tukārām, using his poetic signature Tukā",
         "concept_key": "",
         "preserve_in_english": false
       },

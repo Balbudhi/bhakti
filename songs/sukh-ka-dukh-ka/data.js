@@ -1448,7 +1448,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śraddhā saburī ko apanā lo, dharma paṁtha ko tuma nā tolo",
-    "english": "{3,4:Embrace }{0:faith }{1,2:and patience, }{9:do not }{10:weigh }{5:dharma }{6,7,8:and sect}",
+    "english": "{3,4:Embrace }{0:faith }{1,2:and patience, }{9:do not }{10:weigh }{5:religion }{6,7,8:and sect}",
     "words": [
       {
         "roman": "śraddhā",
@@ -1482,9 +1482,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharma",
-        "gloss": "right order, duty, or sustaining principle; religious tradition",
+        "gloss": "religion; religious tradition",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "paṁtha",

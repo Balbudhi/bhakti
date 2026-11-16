@@ -105,7 +105,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīdharā",
-        "gloss": "bearer of Śrī / Vishnu-Krishna",
+        "gloss": "bearer of Śrī (Lakṣmī); an epithet of Viṣṇu/Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       }

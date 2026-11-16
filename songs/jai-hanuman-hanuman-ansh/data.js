@@ -638,7 +638,7 @@ window.SONG_LINES = {
   "l12": {
     "source": "कष्टों को तुम हर लो भगवान",
     "roman": "Kaṣṭoṃ ko tum har lo Bhagavān",
-    "english": "{5:Lord, }{2:you }{3,4:take away }{0,1:hardships.}",
+    "english": "{5:Lord, }{2,3,4:take away }{0,1:hardships.}",
     "words": [
       {
         "roman": "Kaṣṭoṃ",
@@ -1657,10 +1657,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 30.3,
-    "end": 33.0
+    "end": 33
   },
   {
-    "start": 33.0,
+    "start": 33,
     "end": 35.7
   },
   {
@@ -1677,14 +1677,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 43.6,
-    "end": 46.0
+    "end": 46
   },
   {
-    "start": 46.0,
-    "end": 53.0
+    "start": 46,
+    "end": 53
   },
   {
-    "start": 53.0,
+    "start": 53,
     "end": 58.2
   },
   {
@@ -1733,10 +1733,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 136.8,
-    "end": 142.0
+    "end": 142
   },
   {
-    "start": 142.0,
+    "start": 142,
     "end": 147.2
   },
   {
@@ -1793,10 +1793,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 217.3,
-    "end": 228.0
+    "end": 228
   },
   {
-    "start": 228.0,
+    "start": 228,
     "end": 233.2
   },
   {

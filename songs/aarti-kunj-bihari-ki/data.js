@@ -521,7 +521,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nanda,",
-        "gloss": "Kṛṣṇa's foster-father",
+        "gloss": "son; here Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -741,13 +741,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kālī,",
-        "gloss": "the dark one; fierce form of the Goddess",
+        "gloss": "dark; black",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kālī",
-        "gloss": "the dark one; fierce form of the Goddess",
+        "gloss": "dark; black",
         "concept_key": "",
         "preserve_in_english": false
       }

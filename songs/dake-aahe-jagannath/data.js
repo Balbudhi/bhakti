@@ -499,7 +499,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tritāpahara",
-        "gloss": "Dispeller of the threefold afflictions (physical, mental/natural, spiritual)",
+        "gloss": "dispeller of the threefold afflictions",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -760,7 +760,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "creator deity of the cosmic triad",
+        "gloss": "the supreme reality (Brahman)",
         "concept_key": "",
         "preserve_in_english": false
       }

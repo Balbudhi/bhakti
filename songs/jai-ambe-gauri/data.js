@@ -1374,7 +1374,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koṭik candra divākar, koṭik candra divākar rājat sam jyotī",
-    "english": "{0:Millions of} {1:moons} {2:and suns,} {3:millions of} {4:moons} {5:and suns} {6:shine with} {7:equal} {8:radiance.}",
+    "english": "{8:Your radiance }{6:shines }{7:like }{0:millions of }{1:moons }{2:and suns—}{3:millions of }{4:moons }{5:and suns.}",
     "words": [
       {
         "roman": "Koṭik",

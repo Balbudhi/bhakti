@@ -670,7 +670,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "paya",
-        "gloss": "the holy stream) / waters",
+        "gloss": "waters; here, with sarita, the Payasvinī (Mandākinī) River",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -694,7 +694,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "paya",
-        "gloss": "waters",
+        "gloss": "waters; here, with sarita, the Payasvinī (Mandākinī) River",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1452,7 +1452,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "paya",
-        "gloss": "waters",
+        "gloss": "waters; here, with sarita, the Payasvinī (Mandākinī) River",
         "concept_key": "",
         "preserve_in_english": false
       },

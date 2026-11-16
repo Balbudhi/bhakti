@@ -1574,11 +1574,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sahaja kinārā mila jāyegā re",
-    "english": "{0:The effortless }{1:shore }{2,3:will be found, }{4:O}",
+    "english": "{1:The shore }{2,3:will be found }{0:with ease, }{4:O}",
     "words": [
       {
         "roman": "sahaja",
-        "gloss": "natural; effortless; spontaneous",
+        "gloss": "easily; with ease",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1770,11 +1770,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sahaja kinārā mila jāyegā, parama sahārā mila jāyegā",
-    "english": "{0:The effortless }{1:shore }{2,3:will be found, }{4:supreme }{5:support }{6,7:will be found}",
+    "english": "{1:The shore }{2,3:will be found }{0:with ease, }{4:supreme }{5:support }{6,7:will be found}",
     "words": [
       {
         "roman": "sahaja",
-        "gloss": "natural; effortless; spontaneous",
+        "gloss": "easily; with ease",
         "concept_key": "",
         "preserve_in_english": false
       },

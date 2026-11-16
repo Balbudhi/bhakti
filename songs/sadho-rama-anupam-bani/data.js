@@ -762,7 +762,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jana Dariyāva prema guna gāyā",
-    "english": "{0:Servant }{1:Dariyav }{4:sang }{3:the guṇas }{2:of love,}",
+    "english": "{0:Servant }{1:Dariyāv }{4:sang }{3:the qualities }{2:of love,}",
     "words": [
       {
         "roman": "Jana",
@@ -786,7 +786,7 @@ window.SONG_LINES = {
         "roman": "guna",
         "gloss": "virtues; qualities; praises",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gāyā",
