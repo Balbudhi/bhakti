@@ -32,6 +32,21 @@ class SourceWordMapTests(unittest.TestCase):
         self.assertEqual(mapped[1], {"text": "ಕರಗದವರಲ್ಲಿ", "wordIndices": [1, 2]})
         self.assertEqual(mapped[2], {"text": "ಮಜ್ಜನವನೊಲ್ಲೆಯಯ್ಯಾ", "wordIndices": [3, 4]})
 
+    def test_telugu_reviewed_phrase_maps_two_source_words_to_one_gloss(self) -> None:
+        # The performed comparison is one reviewed phrase despite source spacing.
+        words = [{"roman": "ī"}, {"roman": "pādamē"}, {"roman": "kadā"},
+                 {"roman": "inniṭikinīyekkuḍainadi"}]
+        source = "ఈ పాదమే కదా ఇన్నిటికి నీయెక్కుడైనది"
+        mapped = source_word_map.build_source_words(source, words)
+        self.assertEqual(mapped, [
+            {"text": "ఈ", "wordIndices": [0]},
+            {"text": "పాదమే", "wordIndices": [1]},
+            {"text": "కదా", "wordIndices": [2]},
+            {"text": "ఇన్నిటికి", "wordIndices": [3]},
+            {"text": "నీయెక్కుడైనది", "wordIndices": [3]},
+        ])
+        self.assertEqual(source_word_map.validate_source_words(source, words, mapped), [])
+
     def test_tamil_compound_maps_to_reviewed_roman_units(self) -> None:
         words = [{"roman": "muṭiyaṭi"}, {"roman": "kāṇā"}, {"roman": "muṭi"}, {"roman": "viṭuttu"}]
         mapped = source_word_map.build_source_words("முடியடி காணா முடி விடுத்து", words)

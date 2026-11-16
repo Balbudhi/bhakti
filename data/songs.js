@@ -9872,4 +9872,45 @@ window.BHAKTI_SONGS = [
   "subtitle": "Rāma",
   "queueNumber": 312
 }
+,
+{
+  "slug": "ee-padame-kada",
+  "queueId": "4dde0b06",
+  "title": "Ī Pādamē Kadā",
+  "credit": "Annamācārya · G. Balakrishna Prasad",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "I Padamē Kada",
+    "I Padame Kada",
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · G. Balakrishna Prasad",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Ee Paadame Kadaa",
+    "Annamacharya"
+  ],
+  "writer": "Annamācārya",
+  "singer": "G. Balakrishna Prasad",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ee-padame-kada-a5526c6356c0646e36522247a8f41968bf3358988a7f18d6a5b2c2b8a84e64c2.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ee-padame-kada-8a0db2b67d2edc75f174dcc7264481a12f54c964f1bd39767519a286717fb4e7.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 313
+}
 ];
