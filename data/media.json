@@ -105,6 +105,18 @@
         "sha256": "a1f41d915ac15885cd22b3fa02dea8588897042bd49b1458ad7386d57b0e9d8a"
       }
     ],
+    "aga-karunakara": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aga-karunakara-0e09378e4022b0b7b0aa06fba58fd63df03cdc74f235645ca6f5bd05b9c157a3.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "0e09378e4022b0b7b0aa06fba58fd63df03cdc74f235645ca6f5bd05b9c157a3"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aga-karunakara-c9f2a53617550111a5f68b77e2763472c732f4cd3409be1bf16819a33c38fbf2.m4a",
+        "type": "audio/mp4",
+        "sha256": "c9f2a53617550111a5f68b77e2763472c732f4cd3409be1bf16819a33c38fbf2"
+      }
+    ],
     "ahe-nila-saila": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ahe-nila-saila-2738dd3e5f05782513345ef2bf0e84f08f55e2f42a611ce82656fb25754be7ec.webm",
@@ -1485,6 +1497,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kanakadhara-stotram-aaa5b5799d09583b9bb47282578d396a014f8604ccecac79c312e76da5f59268.m4a",
         "type": "audio/mp4",
         "sha256": "aaa5b5799d09583b9bb47282578d396a014f8604ccecac79c312e76da5f59268"
+      }
+    ],
+    "kanya-sasuryasi-jaye": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kanya-sasuryasi-jaye-89d901b395bbfc360c052f993cba7748395ace18bd7be4a07afc2854400eb2f8.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "89d901b395bbfc360c052f993cba7748395ace18bd7be4a07afc2854400eb2f8"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kanya-sasuryasi-jaye-ae6c09aee6190308e748a0d79d44bddaaa3a1c19cbabd9f5641bedaafa99b868.m4a",
+        "type": "audio/mp4",
+        "sha256": "ae6c09aee6190308e748a0d79d44bddaaa3a1c19cbabd9f5641bedaafa99b868"
       }
     ],
     "kaya-nahin-teri-nahin-teri": [
@@ -3138,6 +3162,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thodudaiya-seviyan.m4a",
         "type": "audio/mp4",
         "sha256": "a28d7116b79d173091e5664a058f7270169f7ed15c3767ab0700399d9110c340"
+      }
+    ],
+    "tirtha-vitthal-kshetra-vitthal": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tirtha-vitthal-kshetra-vitthal-06d8fd101b5248b76f71343cd1ece04076b6cb29a15e88fc05667d7ea55baae7.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "06d8fd101b5248b76f71343cd1ece04076b6cb29a15e88fc05667d7ea55baae7"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tirtha-vitthal-kshetra-vitthal-f7b18aa41b2a3873c6068d9d2233e18c66ac89356943698dc3687d831565086b.m4a",
+        "type": "audio/mp4",
+        "sha256": "f7b18aa41b2a3873c6068d9d2233e18c66ac89356943698dc3687d831565086b"
       }
     ],
     "tolu-tolu-tolu-ranga": [

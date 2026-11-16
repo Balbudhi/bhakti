@@ -10854,4 +10854,129 @@ window.BHAKTI_SONGS = [
   "subtitle": "Dattātreya",
   "queueNumber": 340
 }
+,
+{
+  "slug": "tirtha-vitthal-kshetra-vitthal",
+  "queueId": "960d9522",
+  "title": "Tīrtha Viṭṭhal Kṣetra Viṭṭhal",
+  "credit": "Nāmadev · Bhimsen Joshi · Ram Pathak",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Tirtha Vitthal Ksetra Vitthal",
+    "Vishnu",
+    "Visnu",
+    "Namadev · Bhimsen Joshi · Ram Pathak",
+    "Namadev",
+    "तीर्थ विठ्ठल क्षेत्र विठ्ठल",
+    "Tirtha Vithal Kshetra Vithal",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Bhimsen Joshi",
+  "composer": "Ram Pathak",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tirtha-vitthal-kshetra-vitthal-06d8fd101b5248b76f71343cd1ece04076b6cb29a15e88fc05667d7ea55baae7.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tirtha-vitthal-kshetra-vitthal-f7b18aa41b2a3873c6068d9d2233e18c66ac89356943698dc3687d831565086b.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 344
+},
+{
+  "slug": "kanya-sasuryasi-jaye",
+  "queueId": "9ed229f5",
+  "title": "Kanyā Sāsuryāsī Jāye",
+  "credit": "Tukārām · Lata Mangeshkar",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Tukaram · Lata Mangeshkar",
+    "Tukaram",
+    "Krshna",
+    "Krsna",
+    "कन्या सासुऱ्यासी जाये",
+    "Sant Tukaram",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Tukārām",
+  "singer": "Lata Mangeshkar",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kanya-sasuryasi-jaye-89d901b395bbfc360c052f993cba7748395ace18bd7be4a07afc2854400eb2f8.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kanya-sasuryasi-jaye-ae6c09aee6190308e748a0d79d44bddaaa3a1c19cbabd9f5641bedaafa99b868.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 343
+},
+{
+  "slug": "aga-karunakara",
+  "queueId": "5a33050e",
+  "title": "Agā Karuṇākarā",
+  "credit": "Tukārām · Lata Mangeshkar",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Tukaram · Lata Mangeshkar",
+    "Tukaram",
+    "अगा करुणाकरा",
+    "Sant Tukaram",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Tukārām",
+  "singer": "Lata Mangeshkar",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aga-karunakara-0e09378e4022b0b7b0aa06fba58fd63df03cdc74f235645ca6f5bd05b9c157a3.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aga-karunakara-c9f2a53617550111a5f68b77e2763472c732f4cd3409be1bf16819a33c38fbf2.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 342
+}
 ];
