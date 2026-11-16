@@ -38916,7 +38916,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "e76085aa6e2be2d9c0a7dc3be62ea7e325e42935de427140e1b86aa46bc2996f",
+        "inputHash": "c5deef96ada035c790cc502c596d1d3ed68f890af43d27cf5fc919dab02c7131",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -38927,14 +38927,14 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "8a4298122f30b9b3e25d6e1b59d7a08df376d401196b2cd9644d46ef9a84a060",
+          "recordHash": "8dfaa4707386da681e1d3ce1dd3d2827dbeb1a9fd8114bc061a9923eb12b2ef2",
           "extractionRequestIds": [
-            "305d2ccaf9634974934675a56876b318"
+            "ee6c8fa12c974c43aa982afabbe6a48e"
           ],
           "reviewRequestIds": [
-            "2223f2261db94758a7ce91b63f5309d3"
+            "0754b5d2cf104dab941b82ec24b2fde3"
           ],
-          "coveredLineCount": 38
+          "coveredLineCount": 19
         },
         "features": {
           "themes": [
@@ -38949,16 +38949,12 @@
           ],
           "actions": [
             {
-              "id": "action.petition",
-              "weight": 0.22222222222222224
-            },
-            {
               "id": "action.praise",
-              "weight": 0.22222222222222224
+              "weight": 0.28571428571428575
             },
             {
               "id": "action.remembrance",
-              "weight": 0.5555555555555556
+              "weight": 0.7142857142857143
             }
           ],
           "subjects": []
@@ -38967,8 +38963,8 @@
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       },
       "audio": {
-        "inputHash": "d7df1922f652230162aee76ffc054c4dec7c3d64f63c8baee4929a1dfa585de0",
-        "mediaSha256": "e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae",
+        "inputHash": "f80ed0c195adb552253052f3b6ab2e453a72ec7f9099c0c70dc74ea543d3730b",
+        "mediaSha256": "75e915035dd69be3ca6f2a4a9fa168af5aa96306271166041b1af9e10d6bf268",
         "assessment": "measured",
         "outcome": "known",
         "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
@@ -38981,34 +38977,34 @@
           "codec": "opus",
           "sampleRate": 48000,
           "channels": 2,
-          "durationSeconds": 871.341
+          "durationSeconds": 636.981
         },
-        "receiptHash": "61b3108dc52df18a13cff58cef62bce3a31a74c408a27a7d21d96a2c0e76aa78",
+        "receiptHash": "b9d8a363d366ec24203a4d0835b5f137059fb736ec1bc824959a7fb3f5cda6b3",
         "physical": {
           "whole": {
-            "integratedLufs": -8.4,
-            "truePeakDbfs": 2.1,
-            "rmsDbfs": -9.476070930765644,
-            "centroidHz": 2117.8655523783978
+            "integratedLufs": -12.0,
+            "truePeakDbfs": 0.3,
+            "rmsDbfs": -11.78684709590877,
+            "centroidHz": 1406.1420797084068
           },
           "profiles": {
             "beginning": {
               "startSeconds": 0,
               "endSeconds": 30.0,
-              "rmsDbfs": -11.51264939375028,
-              "centroidHz": 2173.090151139611
+              "rmsDbfs": -14.163917530876056,
+              "centroidHz": 1296.540470139703
             },
             "body": {
               "startSeconds": 0,
-              "endSeconds": 871.329625,
-              "rmsDbfs": -9.476070930765644,
-              "centroidHz": 2117.8655523783978
+              "endSeconds": 636.96,
+              "rmsDbfs": -11.78684709590877,
+              "centroidHz": 1406.1420797084068
             },
             "end": {
-              "startSeconds": 841.329625,
-              "endSeconds": 871.329625,
-              "rmsDbfs": -9.960918882875163,
-              "centroidHz": 2018.6193971055645
+              "startSeconds": 606.96,
+              "endSeconds": 636.96,
+              "rmsDbfs": -13.659919735188797,
+              "centroidHz": 1317.1307702707957
             }
           }
         },

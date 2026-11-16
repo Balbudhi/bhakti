@@ -12193,7 +12193,7 @@ window.BHAKTI_SONGS = [
     "slug": "aakha-jeeva-visrai-mar-jaau",
     "queueId": "558e0693",
     "title": "Ākhā Jīvā Visarai Mari Jāu",
-    "credit": "Gurū Nānak & Gurū Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+    "credit": "Gurū Nānak · Bhai Harjinder Singh Ji (Srinagar Wale)",
     "languageTags": [
       "Punjabi"
     ],
@@ -12203,31 +12203,31 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Akha Jiva Visarai Mari Jau",
       "Gurbani",
-      "Guru Nanak & Guru Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
-      "Guru Nanak & Guru Arjan",
-      "Sikh",
-      "Sikhi",
+      "Guru Nanak · Bhai Harjinder Singh Ji (Srinagar Wale)",
       "Guru Nanak",
       "Nanak",
       "Nānak",
       "Guru Nanak Dev",
       "Nanak Dev",
-      "Guru Arjan",
-      "Guru Arjan Dev",
-      "Guru Arjun Dev",
-      "Arjan Dev",
-      "Arjun Dev"
+      "Aakhan Jeeva",
+      "Aakha Jeeva",
+      "Aakha Jeeva Visrai Mar Jau",
+      "Aakhan Jeeva Visre Mar Jao",
+      "Bhai Harjinder Singh",
+      "Harjinder Singh Srinagar Wale",
+      "Sikh",
+      "Sikhi"
     ],
-    "writer": "Gurū Nānak & Gurū Arjan",
-    "singer": "Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+    "writer": "Gurū Nānak",
+    "singer": "Bhai Harjinder Singh Ji (Srinagar Wale)",
     "composer": "",
     "audioSources": [
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae.webm",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-75e915035dd69be3ca6f2a4a9fa168af5aa96306271166041b1af9e10d6bf268.webm",
         "type": "audio/webm; codecs=opus"
       },
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-b7991427422936498a31fa504390882a87a172995a130599050e29ede2d09f9f.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-f209ddf3251e2f2c4aa7660336ea4bf2458f599480fe6389cafee8286a7ab446.m4a",
         "type": "audio/mp4"
       }
     ],
@@ -12360,4 +12360,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 366
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "b311a1fe9d11658b309575a7f6d990e8fe5d712e7be36a0996e224243b44ae7c";
+window.BHAKTI_SHUFFLE_REVISION = "8e756bcea6a2701337872a66c406fe5d9bf9d73670391cae6724a6c23ef26fdc";
