@@ -10539,4 +10539,252 @@ window.BHAKTI_SONGS = [
   "subtitle": "Lakṣmī",
   "queueNumber": 326
 }
+,
+{
+  "slug": "mangala-slokagalu",
+  "queueId": "6216941f",
+  "title": "Maṅgala Ślōkagaḷu",
+  "credit": "",
+  "languageTags": [
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Viṭṭhala",
+    "Lakṣmī",
+    "Hanumān",
+    "Narasimha",
+    "Hayagrīva",
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Mangala Shlōkagalu",
+    "Vishnu",
+    "Visnu",
+    "Vitthala",
+    "Lakshmi",
+    "Laksmi",
+    "Hanuman",
+    "Hayagriva",
+    "Krshna",
+    "Krsna",
+    "Mangala Shlokagalu"
+  ],
+  "writer": "",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mangala-slokagalu-17f00c6fd3688261d1490166874b40e79b2814f1fde4903734a1c93d74a7a88f.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 336
+},
+{
+  "slug": "rajabidiyolaginda-kasturi-ranga",
+  "queueId": "76eef43e",
+  "title": "Rājabīdiyoḷaginda Kastūri Raṅga",
+  "credit": "Vādirāja",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Kṛṣṇa",
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Krshna",
+    "Krsna",
+    "Vadiraja",
+    "Vishnu",
+    "Visnu",
+    "Rajabidiyinda"
+  ],
+  "writer": "Vādirāja",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rajabidiyolaginda-kasturi-ranga-05be1bc6a02a204465b7f570ba61bb1193972f4a2a9c82bd41168b42b671a010.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Kṛṣṇa",
+  "queueNumber": 338
+},
+{
+  "slug": "tolu-tolu-tolu-ranga",
+  "queueId": "fc41e927",
+  "title": "Tōḷu Tōḷu Tōḷu Raṅga",
+  "credit": "Purandaradāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Tōlu Tōlu Tōlu Ranga",
+    "Krshna",
+    "Krsna",
+    "Purandaradasa"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tolu-tolu-tolu-ranga-383659b6929a661de42f3c8b15dff501d03637414adb5d00a38c1e8da8c39906.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Kṛṣṇa",
+  "queueNumber": 339
+},
+{
+  "slug": "durge-palise-mate",
+  "queueId": "5da2bb53",
+  "title": "Durge Pālise Māte",
+  "credit": "Guru Gopāladāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Durgā",
+    "Lakṣmī",
+    "Narasimha"
+  ],
+  "searchAliases": [
+    "Durga",
+    "Guru Gopaladasa",
+    "Lakshmi",
+    "Laksmi"
+  ],
+  "writer": "Guru Gopāladāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/durge-palise-mate-112c2e60b0bd1485d422d815ee69ff1b553bd0ed89735e21157258a60b1cdc46.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Durgā",
+  "queueNumber": 333
+},
+{
+  "slug": "ksirabdhisayana-sribhasya-mangala",
+  "queueId": "5d5a2abb",
+  "title": "Kṣīrābdhiśayana — Śrībhāṣya Maṅgala",
+  "credit": "Pedda Tirumalācārya & Rāmānuja",
+  "languageTags": [
+    "Telugu",
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Kshirabdhishayana — Shribhashya Mangala",
+    "Vishnu",
+    "Visnu",
+    "Pedda Tirumalacarya & Ramanuja",
+    "Vengkatesha",
+    "Venkatesa",
+    "Kshirabdhi Shayana",
+    "Sri Bhashya Mangala",
+    "Pedda Tirumalacharya",
+    "Ramanuja"
+  ],
+  "writer": "Pedda Tirumalācārya & Rāmānuja",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ksirabdhisayana-sribhasya-mangala-7d4472d93e308d536dc9b9678880b749a57be9bff06f1721c0e26731c3867254.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 335
+},
+{
+  "slug": "hi-shivaa",
+  "queueId": "6f25bcaa",
+  "title": "Hī Śivā",
+  "credit": "Mārtaṇḍa Māṇik Prabhu · Anandraj Manik Prabhu",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Śakti",
+    "Madhumatī Śyāmalā",
+    "Śiva",
+    "Kālī"
+  ],
+  "searchAliases": [
+    "Hi Shiva",
+    "Hi Siva",
+    "Shakti",
+    "Sakti",
+    "Martanda Manik Prabhu · Anandraj Manik Prabhu",
+    "Martanda Manik Prabhu",
+    "Madhumati Shyamala",
+    "Madhumati Syamala",
+    "Shiva",
+    "Siva",
+    "Kali"
+  ],
+  "writer": "Mārtaṇḍa Māṇik Prabhu",
+  "singer": "Anandraj Manik Prabhu",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hi-shivaa-9f86669a6239b9a2ccaa22cf681c83a134e88118ac27015d6c98025fe75cc76f.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hi-shivaa-02af762693f3e443665cf836864e1025e9636b65aed0d0746a1e918d6e19f026.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Śakti",
+  "queueNumber": 334
+},
+{
+  "slug": "mhalasapati-short",
+  "queueId": "cdfd257d",
+  "title": "Mhāḷasāpatī Re Mhāḷasāpatī",
+  "credit": "Māṇik Prabhu · Anandraj Manik Prabhu",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Khaṇḍobā"
+  ],
+  "searchAliases": [
+    "Mhalasapati Re Mhalasapati",
+    "Khandoba",
+    "Manik Prabhu · Anandraj Manik Prabhu",
+    "Manik Prabhu"
+  ],
+  "writer": "Māṇik Prabhu",
+  "singer": "Anandraj Manik Prabhu",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-short-b66fac5f2799d652777e3a6e16506201942db67b9383bba3be87cf40be412e9d.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-short-2c047bdbf55587559075e690a748ca2cbfaa00a097530b1d763595853be4548b.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Khaṇḍobā",
+  "queueNumber": 337
+}
 ];

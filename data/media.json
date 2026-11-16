@@ -697,6 +697,13 @@
         "sha256": "f55de3d4a79acf4cf21fa28f875ef6830a65fda0c9b033cd4ff1b72983551290"
       }
     ],
+    "durge-palise-mate": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/durge-palise-mate-112c2e60b0bd1485d422d815ee69ff1b553bd0ed89735e21157258a60b1cdc46.mp3",
+        "type": "audio/mpeg",
+        "sha256": "112c2e60b0bd1485d422d815ee69ff1b553bd0ed89735e21157258a60b1cdc46"
+      }
+    ],
     "e-barashe-aasi-achi": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/e-barashe-aasi-achi.webm",
@@ -997,6 +1004,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-nath-ab-to-aisi-daya-h.m4a",
         "type": "audio/mp4",
         "sha256": "eb70511a194c5754dc12ef66c2efc72c2a2393c5433924ed4968174aa312d7b6"
+      }
+    ],
+    "hi-shivaa": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hi-shivaa-9f86669a6239b9a2ccaa22cf681c83a134e88118ac27015d6c98025fe75cc76f.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "9f86669a6239b9a2ccaa22cf681c83a134e88118ac27015d6c98025fe75cc76f"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hi-shivaa-02af762693f3e443665cf836864e1025e9636b65aed0d0746a1e918d6e19f026.m4a",
+        "type": "audio/mp4",
+        "sha256": "02af762693f3e443665cf836864e1025e9636b65aed0d0746a1e918d6e19f026"
       }
     ],
     "hriday-mein-jinke-sitaram": [
@@ -1554,6 +1573,13 @@
         "sha256": "be3730eaee5136251569308d62d176e91c07c7ef4f5c3e5c101c83abae34fd1c"
       }
     ],
+    "ksirabdhisayana-sribhasya-mangala": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ksirabdhisayana-sribhasya-mangala-7d4472d93e308d536dc9b9678880b749a57be9bff06f1721c0e26731c3867254.mp3",
+        "type": "audio/mpeg",
+        "sha256": "7d4472d93e308d536dc9b9678880b749a57be9bff06f1721c0e26731c3867254"
+      }
+    ],
     "kurai-ondrum-illai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kurai-ondrum-illai.m4a",
@@ -1804,6 +1830,13 @@
         "sha256": "f4f9c716ccea5f9e67e81cbc6c664e9c70973d606cda5eb68e3c3c4b550af2fd"
       }
     ],
+    "mangala-slokagalu": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mangala-slokagalu-17f00c6fd3688261d1490166874b40e79b2814f1fde4903734a1c93d74a7a88f.mp3",
+        "type": "audio/mpeg",
+        "sha256": "17f00c6fd3688261d1490166874b40e79b2814f1fde4903734a1c93d74a7a88f"
+      }
+    ],
     "mann-ke-pawan-mandir-main": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mann-ke-pawan-mandir-main.m4a",
@@ -1966,6 +1999,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meruguvantidi-alamelumanga-e6e956df1e982f6f66893d702cd6b996592f0d23cc0668faba04465d2f7453a3.mp3",
         "type": "audio/mpeg",
         "sha256": "e6e956df1e982f6f66893d702cd6b996592f0d23cc0668faba04465d2f7453a3"
+      }
+    ],
+    "mhalasapati-short": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-short-b66fac5f2799d652777e3a6e16506201942db67b9383bba3be87cf40be412e9d.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "b66fac5f2799d652777e3a6e16506201942db67b9383bba3be87cf40be412e9d"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-short-2c047bdbf55587559075e690a748ca2cbfaa00a097530b1d763595853be4548b.m4a",
+        "type": "audio/mp4",
+        "sha256": "2c047bdbf55587559075e690a748ca2cbfaa00a097530b1d763595853be4548b"
       }
     ],
     "mhare-ghar-ao-pritam-pyara": [
@@ -2354,6 +2399,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/raghuvar-doori-jayi-mriga-maryo.m4a",
         "type": "audio/mp4",
         "sha256": "3e50907fa7fe73c5f2ae5d5de3dafcf1813549fb5036927b598c596628b49c7c"
+      }
+    ],
+    "rajabidiyolaginda-kasturi-ranga": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rajabidiyolaginda-kasturi-ranga-05be1bc6a02a204465b7f570ba61bb1193972f4a2a9c82bd41168b42b671a010.mp3",
+        "type": "audio/mpeg",
+        "sha256": "05be1bc6a02a204465b7f570ba61bb1193972f4a2a9c82bd41168b42b671a010"
       }
     ],
     "ram-sumir-ke-raham-kare-na": [
@@ -3062,6 +3114,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/thodudaiya-seviyan.m4a",
         "type": "audio/mp4",
         "sha256": "a28d7116b79d173091e5664a058f7270169f7ed15c3767ab0700399d9110c340"
+      }
+    ],
+    "tolu-tolu-tolu-ranga": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tolu-tolu-tolu-ranga-383659b6929a661de42f3c8b15dff501d03637414adb5d00a38c1e8da8c39906.mp3",
+        "type": "audio/mpeg",
+        "sha256": "383659b6929a661de42f3c8b15dff501d03637414adb5d00a38c1e8da8c39906"
       }
     ],
     "tu-thakur-tum-peh-ardas": [
