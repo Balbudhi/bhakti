@@ -16,7 +16,9 @@ window.SONG_META = {
     "Tukaram · Anuradha Paudwal",
     "Tukaram",
     "Anaandche Dohi",
-    "Anandache Dohi Anand Tarang"
+    "Anandache Dohi Anand Tarang",
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

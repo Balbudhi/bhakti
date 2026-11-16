@@ -15,7 +15,13 @@ window.SONG_META = {
   "searchAliases": [
     "Jagadoddharana",
     "Jagadodharana",
-    "Radha Vishwanathan"
+    "Radha Vishwanathan",
+    "Purandaradasa",
+    "Purandara Dasa",
+    "MS Subbulakshmi",
+    "M S Subbulakshmi",
+    "M S Subbulaxmi",
+    "MS Subbulaxmi"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

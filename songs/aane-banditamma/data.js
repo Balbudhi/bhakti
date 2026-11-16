@@ -15,7 +15,9 @@ window.SONG_META = {
   "searchAliases": [
     "Aane Banditamma",
     "Ane Banditamma",
-    "Vidyabhushana Thirtha Swamiji"
+    "Vidyabhushana Thirtha Swamiji",
+    "Purandaradasa",
+    "Purandara Dasa"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

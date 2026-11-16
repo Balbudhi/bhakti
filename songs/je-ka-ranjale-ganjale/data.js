@@ -20,7 +20,8 @@ window.SONG_META = {
     "Tukaram · Bhimsen Joshi · Shrinivas Khale",
     "Tukaram",
     "जे का रंजले गांजले",
-    "Sant Tukaram"
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

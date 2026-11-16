@@ -24,7 +24,9 @@ window.SONG_META = {
     "Guru Gobind Singh",
     "Prabh Joo Ti Keh Laaj Hamari",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Gobind",
+    "Guru Govind Singh"
   ],
   "audioSources": [
     {

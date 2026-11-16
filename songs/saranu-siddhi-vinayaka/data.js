@@ -10,7 +10,9 @@ window.SONG_META = {
   "searchAliases": [
     "Sharanu Siddhi Vinayaka",
     "Saranu Siddhi Vinayaka",
-    "MLV"
+    "MLV",
+    "Purandaradasa",
+    "Purandara Dasa"
   ],
   "languages": [
     "Kannada"

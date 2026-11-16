@@ -21,7 +21,10 @@ window.SONG_META = {
     "Krsna",
     "Baso Mere Nainan Krishna Bhajan Full with Hindi English Lyrics Anuradha Paudwal I SWARANJALI",
     "Baso Mere Nainan Mein Nandlal",
-    "Baso Mere Nainan Mein"
+    "Baso Mere Nainan Mein",
+    "Meera",
+    "Meera Bai",
+    "Mira Bai"
   ],
   "audioSources": [
     {

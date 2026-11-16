@@ -15,7 +15,13 @@ window.SONG_META = {
   "searchAliases": [
     "Kanakadhara Stotram",
     "Kanakadhara Stotra",
-    "Adi Shankaracharya"
+    "Adi Shankaracharya",
+    "Adi Sankaracharya",
+    "Adi Shankara",
+    "MS Subbulakshmi",
+    "M S Subbulakshmi",
+    "M S Subbulaxmi",
+    "MS Subbulaxmi"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

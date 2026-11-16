@@ -15,7 +15,11 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Kabir",
-    "Nirgun Galiyan"
+    "Nirgun Galiyan",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

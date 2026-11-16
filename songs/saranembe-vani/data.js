@@ -20,7 +20,8 @@ window.SONG_META = {
   "searchAliases": [
     "Sharanembe Vani",
     "Sarasvati",
-    "Purandaradasa"
+    "Purandaradasa",
+    "Purandara Dasa"
   ],
   "audioSources": [
     {

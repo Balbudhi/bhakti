@@ -16,7 +16,9 @@ window.SONG_META = {
     "Tukaram · Bhimsen Joshi · Ram Pathak",
     "Tukaram",
     "Anuraniya Thokada with lyrics | Pt. Bhimsen Joshi | अणुरेणिया थोकडा | Marathi Bhajan |",
-    "Anuraniya Thokda"
+    "Anuraniya Thokda",
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

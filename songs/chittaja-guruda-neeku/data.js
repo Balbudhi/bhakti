@@ -29,7 +29,9 @@ window.SONG_META = {
     "Venkatesa",
     "Chittaja Guruda Neeku Sri Mangalam",
     "Annamacharya",
-    "Mangalampalli Balamuralikrishna"
+    "Mangalampalli Balamuralikrishna",
+    "Annamayya",
+    "Tallapaka Annamacharya"
   ],
   "audioSources": [
     {

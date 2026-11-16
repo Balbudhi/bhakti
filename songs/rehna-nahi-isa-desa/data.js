@@ -17,7 +17,11 @@ window.SONG_META = {
     "Kabir · Shujaat Khan",
     "Kabir",
     "Rehna Nahi Is Des",
-    "Rehna Nahi Is Des Mein"
+    "Rehna Nahi Is Des Mein",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

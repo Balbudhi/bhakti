@@ -27,7 +27,11 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Amar Dās",
-    "Har Jiyo Kirpa Karo"
+    "Har Jiyo Kirpa Karo",
+    "Guru Amar Das",
+    "Guru Amardas",
+    "Amar Das",
+    "Amardas"
   ],
   "audioSources": [
     {

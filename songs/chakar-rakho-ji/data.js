@@ -22,7 +22,10 @@ window.SONG_META = {
     "Mirabai",
     "Chaakar Rakho Jee",
     "Chaakar Rakho Ji",
-    "Shyam Mane Chakar Rakho Ji"
+    "Shyam Mane Chakar Rakho Ji",
+    "Meera",
+    "Meera Bai",
+    "Mira Bai"
   ],
   "audioSources": [
     {

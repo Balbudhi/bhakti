@@ -1,7 +1,7 @@
 window.SONG_META = {
   "title": "Rudrāṣṭakam",
-  "credit": "Tulasīdāsa · Sharma Bandhu · Govind & Dinesh",
-  "writer": "Tulasīdāsa",
+  "credit": "Tulsīdās · Sharma Bandhu · Govind & Dinesh",
+  "writer": "Tulsīdās",
   "writerAttribution": "Poet",
   "singer": "Sharma Bandhu",
   "composer": "",
@@ -15,7 +15,11 @@ window.SONG_META = {
   "searchAliases": [
     "Rudrashtakam",
     "Namami Shamishan",
-    "Tulsidas"
+    "Tulsidas",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "musicDirector": "Govind & Dinesh",
   "songAssetVersion": "music-direction-20261115",

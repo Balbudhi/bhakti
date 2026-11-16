@@ -34,7 +34,9 @@ window.SONG_META = {
     "Vitthal",
     "Vithal",
     "Vithoba",
-    "Pandurang"
+    "Pandurang",
+    "Namadeva",
+    "Bhagat Namdev"
   ],
   "audioSources": [
     {

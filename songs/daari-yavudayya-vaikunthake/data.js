@@ -9,7 +9,9 @@ window.SONG_META = {
   "sourceUrl": "https://www.youtube.com/watch?v=uUQEXieL6iM",
   "searchAliases": [
     "Daari Yavudayya Vaikunthake",
-    "Dari Yavadayya"
+    "Dari Yavadayya",
+    "Purandaradasa",
+    "Purandara Dasa"
   ],
   "languages": [
     "Kannada"

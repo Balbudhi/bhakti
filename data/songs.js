@@ -104,7 +104,11 @@ window.BHAKTI_SONGS = [
       "Balam Avo Hamare Geh Re",
       "Kabir · Manoj Mishra · Kashyap Vora",
       "Kabir",
-      "Baalam Aao"
+      "Baalam Aao",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Manoj Mishra",
@@ -135,7 +139,9 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Tukaram · Anuradha Paudwal",
       "Tukaram",
-      "Khel Mandiyela Vithoba"
+      "Khel Mandiyela Vithoba",
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
@@ -166,7 +172,9 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Tukaram · Anuradha Paudwal",
       "Tukaram",
-      "Sunder Te Dhyan"
+      "Sunder Te Dhyan",
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
@@ -200,7 +208,9 @@ window.BHAKTI_SONGS = [
       "Tukaram",
       "Vrikshavalli Aamha",
       "Vrikshavalli Amha",
-      "Vrukshavalli Amha Soyare Vanachare"
+      "Vrukshavalli Amha Soyare Vanachare",
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
@@ -230,7 +240,9 @@ window.BHAKTI_SONGS = [
       "Tukaram · Anuradha Paudwal",
       "Tukaram",
       "Anaandche Dohi",
-      "Anandache Dohi Anand Tarang"
+      "Anandache Dohi Anand Tarang",
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
@@ -299,7 +311,10 @@ window.BHAKTI_SONGS = [
       "Krsna",
       "Baso Mere Nainan Krishna Bhajan Full with Hindi English Lyrics Anuradha Paudwal I SWARANJALI",
       "Baso Mere Nainan Mein Nandlal",
-      "Baso Mere Nainan Mein"
+      "Baso Mere Nainan Mein",
+      "Meera",
+      "Meera Bai",
+      "Mira Bai"
     ],
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
@@ -335,7 +350,10 @@ window.BHAKTI_SONGS = [
       "Mirabai · Anuradha Paudwal",
       "Mirabai",
       "Anuradha Paudwal - Mere To Giridhar Gopal (Pseudo Video)",
-      "Mere Toh Giridhar Gopal"
+      "Mere Toh Giridhar Gopal",
+      "Meera",
+      "Meera Bai",
+      "Mira Bai"
     ],
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
@@ -372,7 +390,10 @@ window.BHAKTI_SONGS = [
       "Mirabai",
       "Chaakar Rakho Jee",
       "Chaakar Rakho Ji",
-      "Shyam Mane Chakar Rakho Ji"
+      "Shyam Mane Chakar Rakho Ji",
+      "Meera",
+      "Meera Bai",
+      "Mira Bai"
     ],
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
@@ -409,7 +430,10 @@ window.BHAKTI_SONGS = [
       "Mirabai · Anuradha Paudwal",
       "Mirabai",
       "Mhare Ghar Aao Pritam Pyara",
-      "Mhare Ghar Aao Pritam Pyaara"
+      "Mhare Ghar Aao Pritam Pyaara",
+      "Meera",
+      "Meera Bai",
+      "Mira Bai"
     ],
     "writer": "Mīrābāī",
     "singer": "Anuradha Paudwal",
@@ -478,7 +502,9 @@ window.BHAKTI_SONGS = [
       "Tukaram · Anuradha Paudwal",
       "Tukaram",
       "Bhaitilagi Jeewa",
-      "Bhetilagi Jiva Lagalise Aas"
+      "Bhetilagi Jiva Lagalise Aas",
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Anuradha Paudwal",
@@ -665,7 +691,11 @@ window.BHAKTI_SONGS = [
       "Ganesha",
       "Ganesa",
       "Tulsidas · Ashwini Bhide",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Ashwini Bhide",
@@ -807,7 +837,11 @@ window.BHAKTI_SONGS = [
       "Shakti",
       "Sakti",
       "Tulsidas · Ashwini Bhide",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Ashwini Bhide",
@@ -942,7 +976,11 @@ window.BHAKTI_SONGS = [
       "Namdev",
       "Sikh",
       "Sikhi",
-      "Guru Granth Sahib"
+      "Guru Granth Sahib",
+      "Nāmdev",
+      "Sant Namdev",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Bhai Harjinder Singh",
@@ -981,7 +1019,11 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Rām Dās",
-      "Gur Satgur Ka Jo Sikh Akhaye"
+      "Gur Satgur Ka Jo Sikh Akhaye",
+      "Guru Ram Das",
+      "Guru Ramdas",
+      "Ram Das",
+      "Ramdas"
     ],
     "writer": "Gurū Rām Dās",
     "singer": "Bhai Harjinder Singh",
@@ -1002,7 +1044,7 @@ window.BHAKTI_SONGS = [
     "slug": "jin-prem-kiyo",
     "queueId": "96561dc4",
     "title": "Jin Prem Kīo",
-    "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
+    "credit": "Gurū Gobind Siṅgh · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
     ],
@@ -1017,9 +1059,12 @@ window.BHAKTI_SONGS = [
       "Sikh",
       "Sikhi",
       "Sikhī",
-      "Dasam Granth"
+      "Dasam Granth",
+      "Guru Gobind Singh",
+      "Guru Gobind",
+      "Guru Govind Singh"
     ],
-    "writer": "Guru Gobind Singh",
+    "writer": "Gurū Gobind Siṅgh",
     "singer": "Bhai Harjinder Singh",
     "composer": "",
     "audioSources": [
@@ -1056,7 +1101,11 @@ window.BHAKTI_SONGS = [
       "Sikhi",
       "Sikhī",
       "Guru Granth Sahib",
-      "Gurū Rām Dās"
+      "Gurū Rām Dās",
+      "Guru Ram Das",
+      "Guru Ramdas",
+      "Ram Das",
+      "Ramdas"
     ],
     "writer": "Gurū Rām Dās",
     "singer": "Bhai Harjinder Singh",
@@ -1077,7 +1126,7 @@ window.BHAKTI_SONGS = [
     "slug": "mittar-pyare-nu",
     "queueId": "01cbef0a",
     "title": "Mittar Piāre Nū̃",
-    "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
+    "credit": "Gurū Gobind Siṅgh · Bhai Harjinder Singh",
     "languageTags": [
       "Punjabi"
     ],
@@ -1093,9 +1142,12 @@ window.BHAKTI_SONGS = [
       "Sikh",
       "Sikhi",
       "Sikhī",
-      "Dasam Granth"
+      "Dasam Granth",
+      "Guru Gobind Singh",
+      "Guru Gobind",
+      "Guru Govind Singh"
     ],
-    "writer": "Guru Gobind Singh",
+    "writer": "Gurū Gobind Siṅgh",
     "singer": "Bhai Harjinder Singh",
     "composer": "",
     "audioSources": [
@@ -1133,7 +1185,12 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Arjan",
-      "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥"
+      "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
+      "Guru Arjan",
+      "Guru Arjan Dev",
+      "Guru Arjun Dev",
+      "Arjan Dev",
+      "Arjun Dev"
     ],
     "writer": "Gurū Arjan",
     "singer": "Bhai Harjinder Singh",
@@ -1171,7 +1228,10 @@ window.BHAKTI_SONGS = [
       "So Satguru Pyara Mere Nal Hai",
       "Sikh",
       "Sikhi",
-      "Guru Granth Sahib"
+      "Guru Granth Sahib",
+      "Guru Ramdas",
+      "Ram Das",
+      "Ramdas"
     ],
     "writer": "Gurū Rām Dās",
     "singer": "Bhai Lakhwinder Singh",
@@ -1210,7 +1270,12 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Arjan",
-      "Tera Kiya Meetha Laage"
+      "Tera Kiya Meetha Laage",
+      "Guru Arjan",
+      "Guru Arjan Dev",
+      "Guru Arjun Dev",
+      "Arjan Dev",
+      "Arjun Dev"
     ],
     "writer": "Gurū Arjan",
     "singer": "Bhai Lakhwinder Singh",
@@ -1250,7 +1315,12 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Nānak",
-      "Gagan Mein Thaal"
+      "Gagan Mein Thaal",
+      "Guru Nanak",
+      "Nanak",
+      "Nānak",
+      "Guru Nanak Dev",
+      "Nanak Dev"
     ],
     "writer": "Gurū Nānak",
     "singer": "Bhai Nirmal Singh",
@@ -1289,7 +1359,12 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Teg Bahādar",
-      "Jo Nar Dukh Mein Dukh Nahin Jaane"
+      "Jo Nar Dukh Mein Dukh Nahin Jaane",
+      "Guru Teg Bahadar",
+      "Guru Tegh Bahadur",
+      "Guru Teg Bahadur",
+      "Tegh Bahadur",
+      "Teg Bahadur"
     ],
     "writer": "Gurū Teg Bahādar",
     "singer": "Bhai Nirmal Singh Khalsa",
@@ -1328,7 +1403,21 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Arjan · Gurū Rām Dās · Kabīr",
-      "Mera Man Lochai"
+      "Mera Man Lochai",
+      "Guru Arjan",
+      "Guru Arjan Dev",
+      "Guru Arjun Dev",
+      "Arjan Dev",
+      "Arjun Dev",
+      "Guru Ram Das",
+      "Guru Ramdas",
+      "Ram Das",
+      "Ramdas",
+      "Kabir",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Gurū Arjan · Gurū Rām Dās · Kabīr",
     "singer": "Bhai Nirmal Singh Khalsa",
@@ -1368,7 +1457,12 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Nānak",
-      "So Dar Keha So Ghar Keha"
+      "So Dar Keha So Ghar Keha",
+      "Guru Nanak",
+      "Nanak",
+      "Nānak",
+      "Guru Nanak Dev",
+      "Nanak Dev"
     ],
     "writer": "Gurū Nānak",
     "singer": "Bhai Nirmal Singh Khalsa",
@@ -1406,7 +1500,11 @@ window.BHAKTI_SONGS = [
       "Sikhī",
       "Guru Granth Sahib",
       "Gurū Amar Dās",
-      "Har Jiyo Kirpa Karo"
+      "Har Jiyo Kirpa Karo",
+      "Guru Amar Das",
+      "Guru Amardas",
+      "Amar Das",
+      "Amardas"
     ],
     "writer": "Gurū Amar Dās",
     "singer": "Bhai Satwinder Singh & Bhai Harwinder Singh",
@@ -1436,7 +1534,9 @@ window.BHAKTI_SONGS = [
       "Tukaram · Bhimsen Joshi · Ram Pathak",
       "Tukaram",
       "Anuraniya Thokada with lyrics | Pt. Bhimsen Joshi | अणुरेणिया थोकडा | Marathi Bhajan |",
-      "Anuraniya Thokda"
+      "Anuraniya Thokda",
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Bhimsen Joshi",
@@ -1498,7 +1598,11 @@ window.BHAKTI_SONGS = [
       "Kabir",
       "Kabir · Bhimsen Joshi · Shrinivas Khale",
       "Nirguna",
-      "Sun Bhai Sadho"
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
@@ -1528,7 +1632,11 @@ window.BHAKTI_SONGS = [
       "Kabir",
       "Kabir · Bhimsen Joshi · Shrinivas Khale",
       "Nirguna",
-      "Sun Bhai Sadho"
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
@@ -1586,7 +1694,11 @@ window.BHAKTI_SONGS = [
       "Kabir · Bhimsen Joshi · Shrinivas Khale",
       "Nirguna",
       "Sab Paise KeBhai",
-      "Sun Bhai Sadho"
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
@@ -1617,7 +1729,11 @@ window.BHAKTI_SONGS = [
       "Kabir",
       "Kabir · Bhimsen Joshi · Shrinivas Khale",
       "Nirguna",
-      "Sun Bhai Sadho"
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
@@ -1648,7 +1764,11 @@ window.BHAKTI_SONGS = [
       "Kabir",
       "Kabir · Bhimsen Joshi · Shrinivas Khale",
       "Nirguna",
-      "Sun Bhai Sadho"
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
@@ -1679,7 +1799,11 @@ window.BHAKTI_SONGS = [
       "Kabir",
       "Kabir · Bhimsen Joshi · Shrinivas Khale",
       "Nirguna",
-      "Sun Bhai Sadho"
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
@@ -1711,7 +1835,11 @@ window.BHAKTI_SONGS = [
       "Kabir · Bhimsen Joshi · Shrinivas Khale",
       "Nirguna",
       "Mat Kar Moh Tu Hari Bhajan Ko Maan Re",
-      "Sun Bhai Sadho"
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Bhimsen Joshi",
@@ -1835,7 +1963,7 @@ window.BHAKTI_SONGS = [
     "slug": "maharaj-bhavani-brahmabhuvan-ki-rani",
     "queueId": "8e0f504d",
     "title": "Mahārāja Bhavānī Brahmabhuvana Kī Rānī",
-    "credit": "Surdas · Bhimsen Joshi",
+    "credit": "Sūrdās · Bhimsen Joshi",
     "languageTags": [
       "Braj"
     ],
@@ -1846,9 +1974,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Maharaja Bhavani Brahmabhuvana Ki Rani",
       "Shakti",
-      "Sakti"
+      "Sakti",
+      "Surdas",
+      "Sur Das"
     ],
-    "writer": "Surdas",
+    "writer": "Sūrdās",
     "singer": "Bhimsen Joshi",
     "composer": "",
     "audioSources": [
@@ -2413,7 +2543,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Hanuman",
       "Tulsidas · Hari Om Sharan",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
@@ -2442,7 +2576,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Hanuman",
       "Tulsidas · Hari Om Sharan",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
@@ -2472,7 +2610,11 @@ window.BHAKTI_SONGS = [
       "Hanuman",
       "Tulsidas · Hari Om Sharan",
       "Tulsidas",
-      "Rama"
+      "Rama",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
@@ -2589,7 +2731,11 @@ window.BHAKTI_SONGS = [
       "Tulsidas",
       "Rama",
       "Vishnu",
-      "Visnu"
+      "Visnu",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
@@ -2633,7 +2779,11 @@ window.BHAKTI_SONGS = [
       "Vishnu",
       "Visnu",
       "Shakti",
-      "Sakti"
+      "Sakti",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
@@ -2672,7 +2822,11 @@ window.BHAKTI_SONGS = [
       "Sarasvati",
       "Sampoorna Sunder Kand",
       "Sampoorna Sundarkand Hari Om Sharan",
-      "Ramcharitmanas Sundarkand"
+      "Ramcharitmanas Sundarkand",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Hari Om Sharan",
@@ -3294,7 +3448,11 @@ window.BHAKTI_SONGS = [
       "Kabir",
       "Kya Tan Manjhta (Live)",
       "Kya Tan Manjhta",
-      "Kya Tan Manjta"
+      "Kya Tan Manjta",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "",
@@ -3326,7 +3484,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Kabir",
       "Sunta Hai - Kabir song | Sounds of Isha",
-      "Sunta Hai Guru Gyani"
+      "Sunta Hai Guru Gyani",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "",
@@ -3359,7 +3521,11 @@ window.BHAKTI_SONGS = [
       "Kabir",
       "Mann Mast Hua | Kabir | मन मस्त हुआ | Devotional Poem | Alaap - Songs from Sadhguru Darshan",
       "Mann Mast Hua",
-      "Mann Mast Hua Phir Kya Bole"
+      "Mann Mast Hua Phir Kya Bole",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "",
@@ -3391,7 +3557,11 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Kabir",
-      "Nirgun Galiyan"
+      "Nirgun Galiyan",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "",
@@ -3424,7 +3594,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Kabir",
-      "Ram Ras"
+      "Ram Ras",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "",
@@ -3492,7 +3666,8 @@ window.BHAKTI_SONGS = [
       "Surdas",
       "PRABHU MORE AWGOON CHIT NA DHARO (Hindi Version)) www.tricolourproductions.net",
       "Prabhu More Avgun Chit Na Dharo",
-      "Prabhu Ji Mere Avagun"
+      "Prabhu Ji Mere Avagun",
+      "Sur Das"
     ],
     "writer": "Sūrdās",
     "singer": "Kavita Krishnamurthy",
@@ -3733,7 +3908,12 @@ window.BHAKTI_SONGS = [
       "Kabir and other poets · Maulvi Haider Hassan Vehranwale Qawwal and Party",
       "Kabir and other poets",
       "Aaoon Ga Na Jaoon Ga - Bhagat Kabir",
-      "Aaoon Ga Na Jaoon Ga"
+      "Aaoon Ga Na Jaoon Ga",
+      "Kabir",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr and other poets",
     "singer": "Maulvi Haider Hassan Vehranwale Qawwal and Party",
@@ -4173,7 +4353,7 @@ window.BHAKTI_SONGS = [
     "slug": "doi-kar-teka-hei-matha",
     "queueId": "68f11e59",
     "title": "Kakad Aarti Suryoday Purav",
-    "credit": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev · Pramod Medhi",
+    "credit": "Tukārām; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Nāmadev · Pramod Medhi",
     "languageTags": [
       "Hindi"
     ],
@@ -4188,9 +4368,18 @@ window.BHAKTI_SONGS = [
       "Sant Tukaram; Sant Janabai; Krshna Jogishvara Bhishma; Sant Namdev · Pramod Medhi",
       "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev · Pramod Medhi",
       "Sant Tukaram; Sant Janabai; Krshna Jogishvara Bhishma; Sant Namdev",
-      "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev"
+      "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev",
+      "Tukaram",
+      "Sant Tukaram",
+      "Tukaram Maharaj",
+      "Namadev",
+      "Namdev",
+      "Nāmdev",
+      "Sant Namdev",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
-    "writer": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev",
+    "writer": "Tukārām; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Nāmadev",
     "singer": "Pramod Medhi",
     "composer": "",
     "audioSources": [
@@ -4730,7 +4919,8 @@ window.BHAKTI_SONGS = [
       "Laksmi",
       "Purandaradasa",
       "BHAGYADA LAKSHMI BARAMMA Kannada Bhajans [Full Song] SHRI VARAMAHALAKSHMI DARSHANA",
-      "Bhagyada Lakshmi Baaramma"
+      "Bhagyada Lakshmi Baaramma",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "",
@@ -4799,7 +4989,11 @@ window.BHAKTI_SONGS = [
       "Tulsidas",
       "Rama",
       "Shakti",
-      "Sakti"
+      "Sakti",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Rajan Mishra & Sajan Mishra",
@@ -4857,7 +5051,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Rajan Mishra & Sajan Mishra",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Rajan Mishra & Sajan Mishra",
@@ -5067,7 +5265,7 @@ window.BHAKTI_SONGS = [
     "slug": "benti-chaupai",
     "queueId": "ab86db97",
     "title": "Bentī Caupaī",
-    "credit": "Guru Gobind Singh · Rajinder Singh",
+    "credit": "Gurū Gobind Siṅgh · Rajinder Singh",
     "languageTags": [
       "Punjabi"
     ],
@@ -5086,9 +5284,12 @@ window.BHAKTI_SONGS = [
       "Sikh",
       "Sikhi",
       "Sikhī",
-      "Dasam Granth"
+      "Dasam Granth",
+      "Guru Gobind Singh",
+      "Guru Gobind",
+      "Guru Govind Singh"
     ],
-    "writer": "Guru Gobind Singh",
+    "writer": "Gurū Gobind Siṅgh",
     "singer": "Rajinder Singh",
     "composer": "",
     "audioSources": [
@@ -5155,7 +5356,8 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Shirdi Sai",
-      "Sirdi Sai"
+      "Sirdi Sai",
+      "Sadhna Sargam"
     ],
     "writer": "",
     "singer": "Sadhana Sargam",
@@ -5177,7 +5379,7 @@ window.BHAKTI_SONGS = [
     "slug": "mann-ke-pawan-mandir-main",
     "queueId": "fae1247c",
     "title": "Mann Ke Pawan Mandir Main",
-    "credit": "Sadhna Sargam",
+    "credit": "Sadhana Sargam",
     "languageTags": [
       "Hindi"
     ],
@@ -5186,10 +5388,11 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Shirdi Sai",
-      "Sirdi Sai"
+      "Sirdi Sai",
+      "Sadhna Sargam"
     ],
     "writer": "",
-    "singer": "Sadhna Sargam",
+    "singer": "Sadhana Sargam",
     "composer": "",
     "audioSources": [
       {
@@ -5512,7 +5715,11 @@ window.BHAKTI_SONGS = [
       "Visnu",
       "Shakti",
       "Sakti",
-      "Hanuman Bahuk- Sarita Joshi"
+      "Hanuman Bahuk- Sarita Joshi",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Sarita Joshi",
@@ -7299,7 +7506,11 @@ window.BHAKTI_SONGS = [
       "Patta Bola Vrksa Se",
       "Kabir · Shujaat Khan",
       "Kabir",
-      "Patta Bola Vriksh Se"
+      "Patta Bola Vriksh Se",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Shujaat Khan",
@@ -7332,7 +7543,11 @@ window.BHAKTI_SONGS = [
       "Kabir · Shujaat Khan",
       "Kabir",
       "Rehna Nahi Is Des",
-      "Rehna Nahi Is Des Mein"
+      "Rehna Nahi Is Des Mein",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
     ],
     "writer": "Kabīr",
     "singer": "Shujaat Khan",
@@ -7653,7 +7868,7 @@ window.BHAKTI_SONGS = [
     "slug": "duhkh-me-sumiran-sab-kare",
     "queueId": "12e5d2d2",
     "title": "Dukh Mẽ Sumiran Sab Kare",
-    "credit": "Kabīr, Nānak & others · Suresh Wadkar",
+    "credit": "Kabīr, Gurū Nānak & others · Suresh Wadkar",
     "languageTags": [
       "Hindi"
     ],
@@ -7667,9 +7882,19 @@ window.BHAKTI_SONGS = [
       "Kabir, Nanak & others · Suresh Wadkar",
       "Kabir, Nanak & others",
       "DUKH MAI SUMIRAN SAB KARE (Hindi Version) www.tricolourproductions.net",
-      "Dukh Mai Sumiran Sab Kare"
+      "Dukh Mai Sumiran Sab Kare",
+      "Kabir",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir",
+      "Guru Nanak",
+      "Nanak",
+      "Nānak",
+      "Guru Nanak Dev",
+      "Nanak Dev"
     ],
-    "writer": "Kabīr, Nānak & others",
+    "writer": "Kabīr, Gurū Nānak & others",
     "singer": "Suresh Wadkar",
     "composer": "",
     "audioSources": [
@@ -7726,7 +7951,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
@@ -7754,7 +7983,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
@@ -7782,7 +8015,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
@@ -7813,7 +8050,11 @@ window.BHAKTI_SONGS = [
       "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
       "Tulsidas",
       "Vishnu",
-      "Visnu"
+      "Visnu",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
@@ -7844,7 +8085,11 @@ window.BHAKTI_SONGS = [
       "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
       "Tulsidas",
       "Vishnu",
-      "Visnu"
+      "Visnu",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Umakant Gundecha & Ramakant Gundecha",
@@ -7987,7 +8232,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Veena Sahasrabuddhe",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
@@ -8015,7 +8264,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Veena Sahasrabuddhe",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
@@ -8043,7 +8296,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Veena Sahasrabuddhe",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
@@ -8071,7 +8328,11 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rama",
       "Tulsidas · Veena Sahasrabuddhe",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
@@ -8100,7 +8361,11 @@ window.BHAKTI_SONGS = [
       "Shiva",
       "Siva",
       "Tulsidas · Veena Sahasrabuddhe",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
@@ -8130,7 +8395,11 @@ window.BHAKTI_SONGS = [
       "Shiva",
       "Siva",
       "Tulsidas · Veena Sahasrabuddhe",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
@@ -8164,7 +8433,11 @@ window.BHAKTI_SONGS = [
       "Tulsidas",
       "Rama",
       "Vishnu",
-      "Visnu"
+      "Visnu",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
     "writer": "Tulsīdās",
     "singer": "Veena Sahasrabuddhe",
@@ -8196,7 +8469,7 @@ window.BHAKTI_SONGS = [
       "Vaishno Devi",
       "Vaisno Devi"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Vijay Ji",
     "composer": "",
     "audioSources": [
@@ -8299,7 +8572,8 @@ window.BHAKTI_SONGS = [
       "Andal",
       "Vishnu",
       "Visnu",
-      "Thiruppavai 27"
+      "Thiruppavai 27",
+      "Aandal"
     ],
     "writer": "Āṇḍāḷ",
     "singer": "M. L. Vasanthakumari",
@@ -8339,7 +8613,8 @@ window.BHAKTI_SONGS = [
       "Krshna",
       "Krsna",
       "Margazhi Thingal",
-      "Thiruppavai 1"
+      "Thiruppavai 1",
+      "Aandal"
     ],
     "writer": "Āṇḍāḷ",
     "singer": "M. L. Vasanthakumari",
@@ -8415,7 +8690,10 @@ window.BHAKTI_SONGS = [
       "Vishnu",
       "Visnu",
       "Rama",
-      "Jo Achyutananda Priya Sisters"
+      "Jo Achyutananda Priya Sisters",
+      "Annamacharya",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "Priya Sisters",
@@ -8451,7 +8729,8 @@ window.BHAKTI_SONGS = [
       "Visnu",
       "Purandaradasa · Rahul Vellal",
       "Purandaradasa",
-      "Venkatachala Nilayam Rahul Vellal"
+      "Venkatachala Nilayam Rahul Vellal",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "Rahul Vellal",
@@ -8862,7 +9141,12 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Dasana Madiko Enna",
       "Venkataramana",
-      "Purandara Dasa"
+      "Purandara Dasa",
+      "Purandaradasa",
+      "MS Subbulakshmi",
+      "M S Subbulakshmi",
+      "M S Subbulaxmi",
+      "MS Subbulaxmi"
     ],
     "writer": "Purandaradāsa",
     "singer": "M. S. Subbulakshmi & Gowri Ramanarayanan",
@@ -8894,7 +9178,13 @@ window.BHAKTI_SONGS = [
       "Nanati Baduku",
       "Nanati Batuku",
       "Annamacharya",
-      "Radha Vishwanathan"
+      "Radha Vishwanathan",
+      "Annamayya",
+      "Tallapaka Annamacharya",
+      "MS Subbulakshmi",
+      "M S Subbulakshmi",
+      "M S Subbulaxmi",
+      "MS Subbulaxmi"
     ],
     "writer": "Annamācārya",
     "singer": "M. S. Subbulakshmi & Radha Viswanathan",
@@ -8925,7 +9215,13 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Jagadoddharana",
       "Jagadodharana",
-      "Radha Vishwanathan"
+      "Radha Vishwanathan",
+      "Purandaradasa",
+      "Purandara Dasa",
+      "MS Subbulakshmi",
+      "M S Subbulakshmi",
+      "M S Subbulaxmi",
+      "MS Subbulaxmi"
     ],
     "writer": "Purandaradāsa",
     "singer": "M. S. Subbulakshmi & Radha Viswanathan",
@@ -8955,7 +9251,9 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Endaro Mahanubhavulu",
-      "Thyagaraja"
+      "Thyagaraja",
+      "Tyagaraja",
+      "Thyagarajar"
     ],
     "writer": "Tyāgarāja",
     "singer": "M. Balamuralikrishna",
@@ -8989,7 +9287,12 @@ window.BHAKTI_SONGS = [
       "Main Banjaran Ram Ki",
       "Gurbani",
       "Sikh",
-      "Sikhi"
+      "Sikhi",
+      "Guru Nanak",
+      "Nanak",
+      "Nānak",
+      "Guru Nanak Dev",
+      "Nanak Dev"
     ],
     "writer": "Gurū Nānak",
     "singer": "Bhai Nirmal Singh Ji Khalsa",
@@ -9010,7 +9313,7 @@ window.BHAKTI_SONGS = [
     "slug": "rudrashtakam-sharma-bandhu",
     "queueId": "9c2c973a",
     "title": "Rudrāṣṭakam",
-    "credit": "Tulasīdāsa · Sharma Bandhu · Govind & Dinesh",
+    "credit": "Tulsīdās · Sharma Bandhu · Govind & Dinesh",
     "languageTags": [
       "Sanskrit"
     ],
@@ -9020,9 +9323,13 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rudrashtakam",
       "Namami Shamishan",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
-    "writer": "Tulasīdāsa",
+    "writer": "Tulsīdās",
     "singer": "Sharma Bandhu",
     "composer": "",
     "audioSources": [
@@ -9085,7 +9392,8 @@ window.BHAKTI_SONGS = [
       "Uyarvara Uyarnalam",
       "Nammalvar",
       "Nammazhwar",
-      "Manavala Mamunigal"
+      "Manavala Mamunigal",
+      "Nammalwar"
     ],
     "writer": "Nammāḻvār & Maṇavāḷa Māmuṉikaḷ",
     "singer": "STD Pathasala",
@@ -9136,7 +9444,7 @@ window.BHAKTI_SONGS = [
     "slug": "rudrashtakam-rameshbhai-oza",
     "queueId": "ef07b1c2",
     "title": "Rudrāṣṭakam",
-    "credit": "Tulasīdāsa · Rameshbhai Oza",
+    "credit": "Tulsīdās · Rameshbhai Oza",
     "languageTags": [
       "Sanskrit"
     ],
@@ -9146,9 +9454,13 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Rudrashtakam",
       "Namami Shamishan",
-      "Tulsidas"
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
     ],
-    "writer": "Tulasīdāsa",
+    "writer": "Tulsīdās",
     "singer": "Rameshbhai Oza",
     "composer": "",
     "audioSources": [
@@ -9282,7 +9594,15 @@ window.BHAKTI_SONGS = [
       "Reman Aiso Kar Sanyasa",
       "Gurbani",
       "Sikh",
-      "Sikhi"
+      "Sikhi",
+      "Guru Arjan",
+      "Guru Arjan Dev",
+      "Guru Arjun Dev",
+      "Arjan Dev",
+      "Arjun Dev",
+      "Guru Gobind Singh",
+      "Guru Gobind",
+      "Guru Govind Singh"
     ],
     "writer": "Gurū Arjan & Gurū Gobind Siṅgh",
     "singer": "Bhai Balbir Singh Ji",
@@ -9313,7 +9633,13 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Kanakadhara Stotram",
       "Kanakadhara Stotra",
-      "Adi Shankaracharya"
+      "Adi Shankaracharya",
+      "Adi Sankaracharya",
+      "Adi Shankara",
+      "MS Subbulakshmi",
+      "M S Subbulakshmi",
+      "M S Subbulaxmi",
+      "MS Subbulaxmi"
     ],
     "writer": "Ādi Śaṅkarācārya",
     "singer": "M. S. Subbulakshmi",
@@ -9344,7 +9670,10 @@ window.BHAKTI_SONGS = [
       "Gurbani",
       "Sikh",
       "Sikhi",
-      "Nishchay Kar Apni Jeet Karhun"
+      "Nishchay Kar Apni Jeet Karhun",
+      "Guru Gobind Singh",
+      "Guru Gobind",
+      "Guru Govind Singh"
     ],
     "writer": "Gurū Gobind Siṅgh",
     "singer": "Bhai Harjinder Singh Ji (Srinagar Wale)",
@@ -9376,7 +9705,10 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Brahmam Okkate",
       "Brahmamokkate",
-      "Sudha Raghunathan"
+      "Sudha Raghunathan",
+      "Annamacharya",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "Sudha Ragunathan",
@@ -9567,7 +9899,9 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Sharanu Siddhi Vinayaka",
       "Saranu Siddhi Vinayaka",
-      "MLV"
+      "MLV",
+      "Purandaradasa",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "M. L. Vasanthakumari",
@@ -9628,7 +9962,9 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Daari Yavudayya Vaikunthake",
-      "Dari Yavadayya"
+      "Dari Yavadayya",
+      "Purandaradasa",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "Dr. Vidyabhushana & Rathnamala Prakash",
@@ -9658,7 +9994,8 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Biduvenenayya Hanuma",
-      "Biduvenenayya Hanuma"
+      "Purandaradasa",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "Dr. Vidyabhushana",
@@ -9695,7 +10032,10 @@ window.BHAKTI_SONGS = [
       "Nirguna",
       "Satgur Kai Bhanai Chal",
       "Sikh",
-      "Sikhi"
+      "Sikhi",
+      "Guru Amardas",
+      "Amar Das",
+      "Amardas"
     ],
     "writer": "Gurū Amar Dās",
     "singer": "Bhai Harjinder Singh (Srinagar Wale)",
@@ -9727,7 +10067,9 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Aane Banditamma",
       "Ane Banditamma",
-      "Vidyabhushana Thirtha Swamiji"
+      "Vidyabhushana Thirtha Swamiji",
+      "Purandaradasa",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "Sri Vidyabhushana",
@@ -9763,7 +10105,8 @@ window.BHAKTI_SONGS = [
       "Purandaradasa",
       "Chandra Chooda Shiva Shankara",
       "Chandrachuda Shivashankara",
-      "Sudha Raghunathan"
+      "Sudha Raghunathan",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "Sudha Ragunathan",
@@ -9871,7 +10214,9 @@ window.BHAKTI_SONGS = [
       "Vengkatesha",
       "Venkatesa",
       "Ee Paadame Kadaa",
-      "Annamacharya"
+      "Annamacharya",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "G. Balakrishna Prasad",
@@ -9911,7 +10256,9 @@ window.BHAKTI_SONGS = [
       "Venkatesa",
       "Bhakti Koladi Vade",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -9946,7 +10293,9 @@ window.BHAKTI_SONGS = [
       "Vengkatesha",
       "Venkatesa",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -9981,7 +10330,9 @@ window.BHAKTI_SONGS = [
       "Vengkatesha",
       "Venkatesa",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -10018,7 +10369,9 @@ window.BHAKTI_SONGS = [
       "Venkatesa",
       "Chittaja Guruda Neeku Sri Mangalam",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -10110,7 +10463,9 @@ window.BHAKTI_SONGS = [
       "Vengkatesha",
       "Venkatesa",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -10144,7 +10499,9 @@ window.BHAKTI_SONGS = [
       "Vengkatesha",
       "Venkatesa",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -10178,7 +10535,9 @@ window.BHAKTI_SONGS = [
       "Vengkatesha",
       "Venkatesa",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -10212,7 +10571,9 @@ window.BHAKTI_SONGS = [
       "Annamacarya",
       "Nrsimha",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -10273,7 +10634,8 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Sharanembe Vani",
       "Sarasvati",
-      "Purandaradasa"
+      "Purandaradasa",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "",
@@ -10430,7 +10792,8 @@ window.BHAKTI_SONGS = [
       "Ghatikacaladi Ninta Shri Hanumanta",
       "Ghatikacaladi Ninta Sri Hanumanta",
       "Hanuman",
-      "Purandaradasa"
+      "Purandaradasa",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "",
@@ -10498,7 +10861,9 @@ window.BHAKTI_SONGS = [
       "Vengkatesha",
       "Venkatesa",
       "Annamacharya",
-      "Mangalampalli Balamuralikrishna"
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
     ],
     "writer": "Annamācārya",
     "singer": "M. Balamuralikrishna",
@@ -10601,7 +10966,8 @@ window.BHAKTI_SONGS = [
       "Tōlu Tōlu Tōlu Ranga",
       "Krshna",
       "Krsna",
-      "Purandaradasa"
+      "Purandaradasa",
+      "Purandara Dasa"
     ],
     "writer": "Purandaradāsa",
     "singer": "",
@@ -10850,7 +11216,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Bhimsen Joshi",
@@ -10892,7 +11260,8 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Lata Mangeshkar",
@@ -10931,7 +11300,8 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Lata Mangeshkar",
@@ -10973,7 +11343,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Kishori Amonkar",
@@ -11019,7 +11391,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Bhimsen Joshi",
@@ -11064,7 +11438,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Bhimsen Joshi",
@@ -11107,7 +11483,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Bhimsen Joshi",
@@ -11143,7 +11521,10 @@ window.BHAKTI_SONGS = [
       "Guru Amar Das",
       "Man Toon Jyot Saroop Hai",
       "Sikh",
-      "Sikhi"
+      "Sikhi",
+      "Guru Amardas",
+      "Amar Das",
+      "Amardas"
     ],
     "writer": "Gurū Amar Dās",
     "singer": "Bhai Harjinder Singh (Srinagar Wale)",
@@ -11184,7 +11565,8 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Bhimsen Joshi",
@@ -11216,7 +11598,8 @@ window.BHAKTI_SONGS = [
       "Tukaram · Bhimsen Joshi · Shrinivas Khale",
       "Tukaram",
       "जे का रंजले गांजले",
-      "Sant Tukaram"
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Bhimsen Joshi",
@@ -11260,7 +11643,9 @@ window.BHAKTI_SONGS = [
       "Vithal",
       "Vithoba",
       "Pandurang",
-      "देह जाओ अथवा राहो"
+      "देह जाओ अथवा राहो",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Suman Kalyanpur",
@@ -11298,7 +11683,8 @@ window.BHAKTI_SONGS = [
       "Heci Dan Dega Deva",
       "Heci Dān Degā Devā",
       "हेचि दान देगा देवा",
-      "Sant Tukaram"
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Pandit Jitendra Abhisheki",
@@ -11330,7 +11716,8 @@ window.BHAKTI_SONGS = [
       "Tukaram",
       "जेथे जातो तेथे तू माझा सांगाती",
       "Jethe Jato Tethe Tu Maza Sangati",
-      "Sant Tukaram"
+      "Sant Tukaram",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Lata Mangeshkar",
@@ -11368,7 +11755,8 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Bhimsen Joshi",
@@ -11411,7 +11799,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Bhimsen Joshi",
@@ -11446,7 +11836,10 @@ window.BHAKTI_SONGS = [
       "Guru Ram Das · Jagjit Singh",
       "Guru Ram Das",
       "Sikh",
-      "Sikhi"
+      "Sikhi",
+      "Guru Ramdas",
+      "Ram Das",
+      "Ramdas"
     ],
     "writer": "Gurū Rām Dās",
     "singer": "Jagjit Singh",
@@ -11492,7 +11885,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Bhimsen Joshi",
@@ -11529,7 +11924,8 @@ window.BHAKTI_SONGS = [
       "Yaajsathi Kela Hota Attahaas",
       "Sant Tukaram",
       "Yājasāṭī Kelā Hotā Āṭāhāsye",
-      "याचसाठी केला होता अट्टाहास"
+      "याचसाठी केला होता अट्टाहास",
+      "Tukaram Maharaj"
     ],
     "writer": "Tukārām",
     "singer": "Bhimsen Joshi",
@@ -11564,7 +11960,9 @@ window.BHAKTI_SONGS = [
       "Guru Angad",
       "Je Sau Chandaa Ugvahe",
       "Sikh",
-      "Sikhi"
+      "Sikhi",
+      "Guru Angad Dev",
+      "Angad Dev"
     ],
     "writer": "Gurū Aṅgad",
     "singer": "Bhai Jaswant Singh",
@@ -11600,7 +11998,9 @@ window.BHAKTI_SONGS = [
       "Guru Gobind Singh",
       "Prabh Joo Ti Keh Laaj Hamari",
       "Sikh",
-      "Sikhi"
+      "Sikhi",
+      "Guru Gobind",
+      "Guru Govind Singh"
     ],
     "writer": "Gurū Gobind Siṅgh",
     "singer": "Bhai Harjinder Singh",
@@ -11647,7 +12047,9 @@ window.BHAKTI_SONGS = [
       "Vitthal",
       "Vithal",
       "Vithoba",
-      "Pandurang"
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
     ],
     "writer": "Nāmadev",
     "singer": "Manik Varma & Party",
@@ -11664,271 +12066,297 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Viṣṇu",
     "queueNumber": 358
+  },
+  {
+    "slug": "amha-ghari-dhan",
+    "queueId": "bcdb2609",
+    "title": "Āmhāṃ Gharī Dhan Śabdācīṃc Ratne",
+    "credit": "Tukārām · Bhimsen Joshi",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [],
+    "searchAliases": [
+      "Amham Ghari Dhan Shabdacimc Ratne",
+      "Amham Ghari Dhan Sabdacimc Ratne",
+      "Tukaram · Bhimsen Joshi",
+      "Tukaram",
+      "Āmhā Gharī Dhan Śabdāñcīc Ratne",
+      "Amha Ghari Dhan Sabdancic Ratne",
+      "आम्हा घरी धन शब्दांचीच रत्ने",
+      "Aamha Ghari Dhan Shabdancheech Ratne",
+      "Sant Tukaram",
+      "Tukaram Maharaj"
+    ],
+    "writer": "Tukārām",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-cbfab82924c00d36ca2bdbeb90d973da714f5d31115a8d7f6af22e07dbfdde03.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-68d08600f74a4e9920410edbfe285bc245f56617caebcfcc27bfa1d3fcca8031.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 364
+  },
+  {
+    "slug": "yei-ho-vitthale",
+    "queueId": "5427d051",
+    "title": "Yeī Ho Viṭṭhale Bhaktajanavatsale",
+    "credit": "Nāmadev · Aruna Sairam",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Yei Ho Vitthale Bhaktajanavatsale",
+      "Vishnu",
+      "Visnu",
+      "Namadev · Aruna Sairam",
+      "Namadev",
+      "येई हो विठ्ठले भक्तजनवत्सले",
+      "Bhaktha jana vatsale by Padmashri Awardee Sangita Kalanidhi Smt. Aruna Sairam",
+      "Nāmdev",
+      "Namdev",
+      "Sant Namdev",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
+    ],
+    "writer": "Nāmadev",
+    "singer": "Aruna Sairam",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-69d6a7625bb643567e3125f6fd22754b6dbbd6da3f9908d8aff7143cf696e2db.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-c646dd590bbe1109f14ee0de7863568604d58cc05bf3182a84e047a8d387bb35.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 369
+  },
+  {
+    "slug": "tum-karo-daya-mere-sai",
+    "queueId": "de487232",
+    "title": "Tumh Karahu Daiā Mere Sāī",
+    "credit": "Gurū Arjan · Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
+    "searchAliases": [
+      "Tumh Karahu Daia Mere Sai",
+      "Gurbani",
+      "Guru Arjan · Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
+      "Guru Arjan",
+      "Tum Karoh Daya Mere Sai",
+      "Sikh",
+      "Sikhi",
+      "Guru Arjan Dev",
+      "Guru Arjun Dev",
+      "Arjan Dev",
+      "Arjun Dev"
+    ],
+    "writer": "Gurū Arjan",
+    "singer": "Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-77e3872970f23556aefd837fd2f2283de5c0a27bbeb9c4d28ed16fabf6252904.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-9abb462cc305fcafec3f79958b1c6bb02e537d22eeb835fdc8c6af9bd4a6e633.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 367
+  },
+  {
+    "slug": "aakha-jeeva-visrai-mar-jaau",
+    "queueId": "558e0693",
+    "title": "Ākhā Jīvā Visarai Mari Jāu",
+    "credit": "Gurū Nānak & Gurū Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
+    "searchAliases": [
+      "Akha Jiva Visarai Mari Jau",
+      "Gurbani",
+      "Guru Nanak & Guru Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+      "Guru Nanak & Guru Arjan",
+      "Sikh",
+      "Sikhi",
+      "Guru Nanak",
+      "Nanak",
+      "Nānak",
+      "Guru Nanak Dev",
+      "Nanak Dev",
+      "Guru Arjan",
+      "Guru Arjan Dev",
+      "Guru Arjun Dev",
+      "Arjan Dev",
+      "Arjun Dev"
+    ],
+    "writer": "Gurū Nānak & Gurū Arjan",
+    "singer": "Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-b7991427422936498a31fa504390882a87a172995a130599050e29ede2d09f9f.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 363
+  },
+  {
+    "slug": "vitthal-giti-gava",
+    "queueId": "9d8c6f40",
+    "title": "Viṭṭhal Gītīṃ Gāvā",
+    "credit": "Tukārām · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Vitthal Gitim Gava",
+      "Vishnu",
+      "Visnu",
+      "Tukaram · Bhimsen Joshi · Shrinivas Khale",
+      "Tukaram",
+      "विठ्ठल गीतीं गावा",
+      "Vithal Geeti Gava",
+      "Sant Tukaram",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang",
+      "Viṭṭhal Gītī Gāvā",
+      "Tukaram Maharaj"
+    ],
+    "writer": "Tukārām",
+    "singer": "Bhimsen Joshi",
+    "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-a51290fd8f8bb36d0eb9a643792cc40cb1c1a8702a2c9500cdb51b3a51ae699c.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 368
+  },
+  {
+    "slug": "kahe-re-ban-khojan-jai",
+    "queueId": "5f2585ed",
+    "title": "Kāhe Re Ban Khojan Jāī",
+    "credit": "Gurū Teg Bahādar · Bhai Harjinder Singh (Srinagar Wale)",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī"
+    ],
+    "searchAliases": [
+      "Gurbani",
+      "Guru Teg Bahadar · Bhai Harjinder Singh (Srinagar Wale)",
+      "Guru Teg Bahadar",
+      "Kahe Re Ban Khojan Jaayi",
+      "Sikh",
+      "Sikhi",
+      "Guru Tegh Bahadur",
+      "Guru Teg Bahadur",
+      "Tegh Bahadur",
+      "Teg Bahadur"
+    ],
+    "writer": "Gurū Teg Bahādar",
+    "singer": "Bhai Harjinder Singh (Srinagar Wale)",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-72cbb861e55061bd4affe9604d07be97bbfeeb493b23cb73490989c849f7a6de.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-7c94e6129276def8c5725e9169018b229001d20332c6a54c769345b9d9caf9b5.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 365
+  },
+  {
+    "slug": "mo-kau-tar-le-rama",
+    "queueId": "4a19444d",
+    "title": "Mo Kau Tāri Le Rāmā",
+    "credit": "Nāmadev · Shiromani Raagi Bhai Balbir Singh Ji",
+    "languageTags": [
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī",
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Mo Kau Tari Le Rama",
+      "Gurbani",
+      "Namadev · Shiromani Raagi Bhai Balbir Singh Ji",
+      "Namadev",
+      "Rama",
+      "Moko Taar Lei Rama Taar Lei",
+      "Sikh",
+      "Sikhi",
+      "Namdev",
+      "Nāmdev",
+      "Sant Namdev",
+      "Namadeva",
+      "Bhagat Namdev"
+    ],
+    "writer": "Nāmadev",
+    "singer": "Shiromani Raagi Bhai Balbir Singh Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-3459c77666f6dbdaa6136c03f0a426445a30748ccc175cbf81ed457d7cffc1ef.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-f21dd0ce1b104a10bb57e36b9e396588dce48b013190768993d1ba9dadfe5371.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 366
   }
-,
-{
-  "slug": "amha-ghari-dhan",
-  "queueId": "bcdb2609",
-  "title": "Āmhāṃ Gharī Dhan Śabdācīṃc Ratne",
-  "credit": "Tukārām · Bhimsen Joshi",
-  "languageTags": [
-    "Marathi"
-  ],
-  "subjectTags": [],
-  "searchAliases": [
-    "Amham Ghari Dhan Shabdacimc Ratne",
-    "Amham Ghari Dhan Sabdacimc Ratne",
-    "Tukaram · Bhimsen Joshi",
-    "Tukaram",
-    "Āmhā Gharī Dhan Śabdāñcīc Ratne",
-    "Amha Ghari Dhan Sabdancic Ratne",
-    "आम्हा घरी धन शब्दांचीच रत्ने",
-    "Aamha Ghari Dhan Shabdancheech Ratne",
-    "Sant Tukaram"
-  ],
-  "writer": "Tukārām",
-  "singer": "Bhimsen Joshi",
-  "composer": "",
-  "audioSources": [
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-cbfab82924c00d36ca2bdbeb90d973da714f5d31115a8d7f6af22e07dbfdde03.webm",
-      "type": "audio/webm; codecs=opus"
-    },
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-68d08600f74a4e9920410edbfe285bc245f56617caebcfcc27bfa1d3fcca8031.m4a",
-      "type": "audio/mp4"
-    }
-  ],
-  "queueNumber": 364
-},
-{
-  "slug": "yei-ho-vitthale",
-  "queueId": "5427d051",
-  "title": "Yeī Ho Viṭṭhale Bhaktajanavatsale",
-  "credit": "Nāmadev · Aruna Sairam",
-  "languageTags": [
-    "Marathi"
-  ],
-  "subjectTags": [
-    "Viṣṇu"
-  ],
-  "searchAliases": [
-    "Yei Ho Vitthale Bhaktajanavatsale",
-    "Vishnu",
-    "Visnu",
-    "Namadev · Aruna Sairam",
-    "Namadev",
-    "येई हो विठ्ठले भक्तजनवत्सले",
-    "Bhaktha jana vatsale by Padmashri Awardee Sangita Kalanidhi Smt. Aruna Sairam",
-    "Nāmdev",
-    "Namdev",
-    "Sant Namdev",
-    "Vitthal",
-    "Vithal",
-    "Vithoba",
-    "Pandurang"
-  ],
-  "writer": "Nāmadev",
-  "singer": "Aruna Sairam",
-  "composer": "",
-  "audioSources": [
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-69d6a7625bb643567e3125f6fd22754b6dbbd6da3f9908d8aff7143cf696e2db.webm",
-      "type": "audio/webm; codecs=opus"
-    },
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-c646dd590bbe1109f14ee0de7863568604d58cc05bf3182a84e047a8d387bb35.m4a",
-      "type": "audio/mp4"
-    }
-  ],
-  "subtitle": "Viṣṇu",
-  "queueNumber": 369
-},
-{
-  "slug": "tum-karo-daya-mere-sai",
-  "queueId": "de487232",
-  "title": "Tumh Karahu Daiā Mere Sāī",
-  "credit": "Gurū Arjan · Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
-  "languageTags": [
-    "Punjabi"
-  ],
-  "subjectTags": [
-    "Gurbāṇī"
-  ],
-  "searchAliases": [
-    "Tumh Karahu Daia Mere Sai",
-    "Gurbani",
-    "Guru Arjan · Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
-    "Guru Arjan",
-    "Tum Karoh Daya Mere Sai",
-    "Sikh",
-    "Sikhi"
-  ],
-  "writer": "Gurū Arjan",
-  "singer": "Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
-  "composer": "",
-  "audioSources": [
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-77e3872970f23556aefd837fd2f2283de5c0a27bbeb9c4d28ed16fabf6252904.webm",
-      "type": "audio/webm; codecs=opus"
-    },
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-9abb462cc305fcafec3f79958b1c6bb02e537d22eeb835fdc8c6af9bd4a6e633.m4a",
-      "type": "audio/mp4"
-    }
-  ],
-  "subtitle": "Gurbāṇī",
-  "queueNumber": 367
-},
-{
-  "slug": "aakha-jeeva-visrai-mar-jaau",
-  "queueId": "558e0693",
-  "title": "Ākhā Jīvā Visarai Mari Jāu",
-  "credit": "Gurū Nānak & Gurū Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
-  "languageTags": [
-    "Punjabi"
-  ],
-  "subjectTags": [
-    "Gurbāṇī"
-  ],
-  "searchAliases": [
-    "Akha Jiva Visarai Mari Jau",
-    "Gurbani",
-    "Guru Nanak & Guru Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
-    "Guru Nanak & Guru Arjan",
-    "Sikh",
-    "Sikhi"
-  ],
-  "writer": "Gurū Nānak & Gurū Arjan",
-  "singer": "Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
-  "composer": "",
-  "audioSources": [
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae.webm",
-      "type": "audio/webm; codecs=opus"
-    },
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-b7991427422936498a31fa504390882a87a172995a130599050e29ede2d09f9f.m4a",
-      "type": "audio/mp4"
-    }
-  ],
-  "subtitle": "Gurbāṇī",
-  "queueNumber": 363
-},
-{
-  "slug": "vitthal-giti-gava",
-  "queueId": "9d8c6f40",
-  "title": "Viṭṭhal Gītīṃ Gāvā",
-  "credit": "Tukārām · Bhimsen Joshi · Shrinivas Khale",
-  "languageTags": [
-    "Marathi"
-  ],
-  "subjectTags": [
-    "Viṣṇu"
-  ],
-  "searchAliases": [
-    "Vitthal Gitim Gava",
-    "Vishnu",
-    "Visnu",
-    "Tukaram · Bhimsen Joshi · Shrinivas Khale",
-    "Tukaram",
-    "विठ्ठल गीतीं गावा",
-    "Vithal Geeti Gava",
-    "Sant Tukaram",
-    "Vitthal",
-    "Vithal",
-    "Vithoba",
-    "Pandurang",
-    "Viṭṭhal Gītī Gāvā"
-  ],
-  "writer": "Tukārām",
-  "singer": "Bhimsen Joshi",
-  "composer": "Shrinivas Khale",
-  "audioSources": [
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671.webm",
-      "type": "audio/webm; codecs=opus"
-    },
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-a51290fd8f8bb36d0eb9a643792cc40cb1c1a8702a2c9500cdb51b3a51ae699c.m4a",
-      "type": "audio/mp4"
-    }
-  ],
-  "subtitle": "Viṣṇu",
-  "queueNumber": 368
-},
-{
-  "slug": "kahe-re-ban-khojan-jai",
-  "queueId": "5f2585ed",
-  "title": "Kāhe Re Ban Khojan Jāī",
-  "credit": "Gurū Teg Bahādar · Bhai Harjinder Singh (Srinagar Wale)",
-  "languageTags": [
-    "Punjabi"
-  ],
-  "subjectTags": [
-    "Gurbāṇī"
-  ],
-  "searchAliases": [
-    "Gurbani",
-    "Guru Teg Bahadar · Bhai Harjinder Singh (Srinagar Wale)",
-    "Guru Teg Bahadar",
-    "Kahe Re Ban Khojan Jaayi",
-    "Sikh",
-    "Sikhi"
-  ],
-  "writer": "Gurū Teg Bahādar",
-  "singer": "Bhai Harjinder Singh (Srinagar Wale)",
-  "composer": "",
-  "audioSources": [
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-72cbb861e55061bd4affe9604d07be97bbfeeb493b23cb73490989c849f7a6de.webm",
-      "type": "audio/webm; codecs=opus"
-    },
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-7c94e6129276def8c5725e9169018b229001d20332c6a54c769345b9d9caf9b5.m4a",
-      "type": "audio/mp4"
-    }
-  ],
-  "subtitle": "Gurbāṇī",
-  "queueNumber": 365
-},
-{
-  "slug": "mo-kau-tar-le-rama",
-  "queueId": "4a19444d",
-  "title": "Mo Kau Tāri Le Rāmā",
-  "credit": "Nāmadev · Shiromani Raagi Bhai Balbir Singh Ji",
-  "languageTags": [
-    "Punjabi"
-  ],
-  "subjectTags": [
-    "Gurbāṇī",
-    "Rāma"
-  ],
-  "searchAliases": [
-    "Mo Kau Tari Le Rama",
-    "Gurbani",
-    "Namadev · Shiromani Raagi Bhai Balbir Singh Ji",
-    "Namadev",
-    "Rama",
-    "Moko Taar Lei Rama Taar Lei",
-    "Sikh",
-    "Sikhi"
-  ],
-  "writer": "Nāmadev",
-  "singer": "Shiromani Raagi Bhai Balbir Singh Ji",
-  "composer": "",
-  "audioSources": [
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-3459c77666f6dbdaa6136c03f0a426445a30748ccc175cbf81ed457d7cffc1ef.webm",
-      "type": "audio/webm; codecs=opus"
-    },
-    {
-      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-f21dd0ce1b104a10bb57e36b9e396588dce48b013190768993d1ba9dadfe5371.m4a",
-      "type": "audio/mp4"
-    }
-  ],
-  "subtitle": "Gurbāṇī",
-  "queueNumber": 366
-}
 ];
-window.BHAKTI_SHUFFLE_REVISION = "ebf6b6ae09e49c449a2af29d850fd0e479bf70e2e6190bd22eada61f10dc7015";
+window.BHAKTI_SHUFFLE_REVISION = "93681dcc660b08348d6b7613ca7c05800c7b19d9a41bc6a943fb35574e7ca2b0";

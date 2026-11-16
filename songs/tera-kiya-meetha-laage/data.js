@@ -27,7 +27,12 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Arjan",
-    "Tera Kiya Meetha Laage"
+    "Tera Kiya Meetha Laage",
+    "Guru Arjan",
+    "Guru Arjan Dev",
+    "Guru Arjun Dev",
+    "Arjan Dev",
+    "Arjun Dev"
   ],
   "audioSources": [
     {

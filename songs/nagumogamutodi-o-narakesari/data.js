@@ -26,7 +26,9 @@ window.SONG_META = {
     "Annamacarya",
     "Nrsimha",
     "Annamacharya",
-    "Mangalampalli Balamuralikrishna"
+    "Mangalampalli Balamuralikrishna",
+    "Annamayya",
+    "Tallapaka Annamacharya"
   ],
   "audioSources": [
     {

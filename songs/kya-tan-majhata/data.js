@@ -17,7 +17,11 @@ window.SONG_META = {
     "Kabir",
     "Kya Tan Manjhta (Live)",
     "Kya Tan Manjhta",
-    "Kya Tan Manjta"
+    "Kya Tan Manjta",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

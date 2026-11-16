@@ -17,7 +17,11 @@ window.SONG_META = {
     "Kabir · Bhimsen Joshi · Shrinivas Khale",
     "Nirguna",
     "Sab Paise KeBhai",
-    "Sun Bhai Sadho"
+    "Sun Bhai Sadho",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

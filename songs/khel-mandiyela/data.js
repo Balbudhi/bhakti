@@ -17,7 +17,9 @@ window.SONG_META = {
   "searchAliases": [
     "Tukaram · Anuradha Paudwal",
     "Tukaram",
-    "Khel Mandiyela Vithoba"
+    "Khel Mandiyela Vithoba",
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

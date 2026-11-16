@@ -16,7 +16,11 @@ window.SONG_META = {
     "Shakti",
     "Sakti",
     "Tulsidas · Ashwini Bhide",
-    "Tulsidas"
+    "Tulsidas",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

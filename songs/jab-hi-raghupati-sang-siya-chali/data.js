@@ -15,7 +15,11 @@ window.SONG_META = {
   "searchAliases": [
     "Rama",
     "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
-    "Tulsidas"
+    "Tulsidas",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

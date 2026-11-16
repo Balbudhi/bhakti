@@ -24,7 +24,10 @@ window.SONG_META = {
     "Guru Amar Das",
     "Man Toon Jyot Saroop Hai",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Amardas",
+    "Amar Das",
+    "Amardas"
   ],
   "audioSources": [
     {

@@ -22,7 +22,10 @@ window.SONG_META = {
     "Mirabai · Anuradha Paudwal",
     "Mirabai",
     "Mhare Ghar Aao Pritam Pyara",
-    "Mhare Ghar Aao Pritam Pyaara"
+    "Mhare Ghar Aao Pritam Pyaara",
+    "Meera",
+    "Meera Bai",
+    "Mira Bai"
   ],
   "audioSources": [
     {

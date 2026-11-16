@@ -28,7 +28,21 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Arjan · Gurū Rām Dās · Kabīr",
-    "Mera Man Lochai"
+    "Mera Man Lochai",
+    "Guru Arjan",
+    "Guru Arjan Dev",
+    "Guru Arjun Dev",
+    "Arjan Dev",
+    "Arjun Dev",
+    "Guru Ram Das",
+    "Guru Ramdas",
+    "Ram Das",
+    "Ramdas",
+    "Kabir",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

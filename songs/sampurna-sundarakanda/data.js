@@ -28,7 +28,11 @@ window.SONG_META = {
     "Sarasvati",
     "Sampoorna Sunder Kand",
     "Sampoorna Sundarkand Hari Om Sharan",
-    "Ramcharitmanas Sundarkand"
+    "Ramcharitmanas Sundarkand",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

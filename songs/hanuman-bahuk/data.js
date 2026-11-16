@@ -24,7 +24,11 @@ window.SONG_META = {
     "Visnu",
     "Shakti",
     "Sakti",
-    "Hanuman Bahuk- Sarita Joshi"
+    "Hanuman Bahuk- Sarita Joshi",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

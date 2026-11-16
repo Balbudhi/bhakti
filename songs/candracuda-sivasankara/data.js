@@ -25,7 +25,8 @@ window.SONG_META = {
     "Purandaradasa",
     "Chandra Chooda Shiva Shankara",
     "Chandrachuda Shivashankara",
-    "Sudha Raghunathan"
+    "Sudha Raghunathan",
+    "Purandara Dasa"
   ],
   "audioSources": [
     {

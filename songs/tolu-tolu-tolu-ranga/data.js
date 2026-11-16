@@ -21,7 +21,8 @@ window.SONG_META = {
     "Tōlu Tōlu Tōlu Ranga",
     "Krshna",
     "Krsna",
-    "Purandaradasa"
+    "Purandaradasa",
+    "Purandara Dasa"
   ],
   "audioSources": [
     {

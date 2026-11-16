@@ -31,7 +31,11 @@ window.SONG_META = {
     "Vishnu",
     "Visnu",
     "Shakti",
-    "Sakti"
+    "Sakti",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "sectionNotices": [
     {

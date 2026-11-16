@@ -21,7 +21,11 @@ window.SONG_META = {
     "Tulsidas",
     "Rama",
     "Shakti",
-    "Sakti"
+    "Sakti",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

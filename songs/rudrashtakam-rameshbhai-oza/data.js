@@ -1,7 +1,7 @@
 window.SONG_META = {
   "title": "Rudrāṣṭakam",
-  "credit": "Tulasīdāsa · Rameshbhai Oza",
-  "writer": "Tulasīdāsa",
+  "credit": "Tulsīdās · Rameshbhai Oza",
+  "writer": "Tulsīdās",
   "writerAttribution": "Poet",
   "singer": "Rameshbhai Oza",
   "composer": "",
@@ -15,7 +15,11 @@ window.SONG_META = {
   "searchAliases": [
     "Rudrashtakam",
     "Namami Shamishan",
-    "Tulsidas"
+    "Tulsidas",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

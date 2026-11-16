@@ -24,7 +24,8 @@ window.SONG_META = {
     "Visnu",
     "Purandaradasa · Rahul Vellal",
     "Purandaradasa",
-    "Venkatachala Nilayam Rahul Vellal"
+    "Venkatachala Nilayam Rahul Vellal",
+    "Purandara Dasa"
   ],
   "audioSources": [
     {

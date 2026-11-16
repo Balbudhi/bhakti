@@ -30,7 +30,8 @@ window.SONG_META = {
     "Vithal",
     "Vithoba",
     "Pandurang",
-    "Viṭṭhal Gītī Gāvā"
+    "Viṭṭhal Gītī Gāvā",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

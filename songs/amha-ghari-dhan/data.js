@@ -24,7 +24,8 @@ window.SONG_META = {
     "Amha Ghari Dhan Sabdancic Ratne",
     "आम्हा घरी धन शब्दांचीच रत्ने",
     "Aamha Ghari Dhan Shabdancheech Ratne",
-    "Sant Tukaram"
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

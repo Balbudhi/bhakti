@@ -18,7 +18,12 @@ window.SONG_META = {
     "Main Banjaran Ram Ki",
     "Gurbani",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Nanak",
+    "Nanak",
+    "Nānak",
+    "Guru Nanak Dev",
+    "Nanak Dev"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

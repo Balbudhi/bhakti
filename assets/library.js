@@ -52,7 +52,11 @@
     const queryForms = searchForms(query);
     if (!queryForms.length) return true;
     const songForms = searchableValues(song).flatMap(searchForms);
-    return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
+    // A listener can combine a title, poet, singer or tag in any order.
+    // Keep the existing spelling forms and partial-word matching for typing.
+    return queryForms.some(queryForm => queryForm.split(" ").every(term =>
+      songForms.some(songForm => songForm.includes(term))
+    ));
   };
 
   // Split explicit joint credits only; retain each credited spelling as supplied.
@@ -66,14 +70,23 @@
     const selectedSubjects = new Set(subjects);
     const selectedSingers = new Set(singers);
     const selectedPoets = new Set(poets);
-    return songs.filter(song => {
+    const queryForms = searchForms(query);
+    // Prefer a known title/name phrase across the full catalogue before applying
+    // facets. Otherwise unrelated credits can accidentally assemble a person's
+    // name, or changing a facet can turn an exact name into such a false match.
+    const phraseMatches = queryForms.length ? songs.filter(song => {
+      const songForms = searchableValues(song).flatMap(searchForms);
+      return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
+    }) : songs;
+    const searchMatches = phraseMatches.length ? phraseMatches : songs.filter(song => matchesSearch(song, query));
+    return searchMatches.filter(song => {
       const matchesLanguage = !selectedLanguages.size
         || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
       const matchesSubject = !selectedSubjects.size
         || [...selectedSubjects].some(tag => song.subjectTags.includes(tag));
       const matchesSinger = !selectedSingers.size || selectedSingers.has(song.singer);
       const matchesPoet = !selectedPoets.size || poetsFor(song).some(poet => selectedPoets.has(poet));
-      return matchesLanguage && matchesSubject && matchesPoet && matchesSinger && matchesSearch(song, query);
+      return matchesLanguage && matchesSubject && matchesPoet && matchesSinger;
     });
   };
 

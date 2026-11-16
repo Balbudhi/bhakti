@@ -27,7 +27,11 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Rām Dās",
-    "Gur Satgur Ka Jo Sikh Akhaye"
+    "Gur Satgur Ka Jo Sikh Akhaye",
+    "Guru Ram Das",
+    "Guru Ramdas",
+    "Ram Das",
+    "Ramdas"
   ],
   "audioSources": [
     {

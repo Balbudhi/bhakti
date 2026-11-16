@@ -17,7 +17,11 @@ window.SONG_META = {
   "searchAliases": [
     "Rama",
     "Kabir",
-    "Ram Ras"
+    "Ram Ras",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

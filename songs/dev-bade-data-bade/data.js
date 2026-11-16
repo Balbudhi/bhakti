@@ -16,7 +16,11 @@ window.SONG_META = {
     "Shiva",
     "Siva",
     "Tulsidas · Veena Sahasrabuddhe",
-    "Tulsidas"
+    "Tulsidas",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

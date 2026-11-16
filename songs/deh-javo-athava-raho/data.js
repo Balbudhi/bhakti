@@ -33,7 +33,9 @@ window.SONG_META = {
     "Vithal",
     "Vithoba",
     "Pandurang",
-    "देह जाओ अथवा राहो"
+    "देह जाओ अथवा राहो",
+    "Namadeva",
+    "Bhagat Namdev"
   ],
   "audioSources": [
     {

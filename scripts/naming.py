@@ -27,6 +27,41 @@ PERSON_CANONICALS = {
 }
 
 
+# Reviewed identities share a display credit; familiar spellings remain aliases.
+# Match complete names only: never merge people by a surname or phonetic guess.
+PERSON_GROUPS = {
+    "Gurū Gobind Siṅgh": ("Guru Gobind Singh", "Guru Gobind", "Guru Govind Singh"),
+    "Gurū Nānak": ("Guru Nanak", "Nanak", "Nānak", "Guru Nanak Dev", "Nanak Dev"),
+    "Gurū Aṅgad": ("Guru Angad", "Guru Angad Dev", "Angad Dev"),
+    "Gurū Amar Dās": ("Guru Amar Das", "Guru Amardas", "Amar Das", "Amardas"),
+    "Gurū Rām Dās": ("Guru Ram Das", "Guru Ramdas", "Ram Das", "Ramdas"),
+    "Gurū Arjan": ("Guru Arjan", "Guru Arjan Dev", "Guru Arjun Dev", "Arjan Dev", "Arjun Dev"),
+    "Gurū Teg Bahādar": ("Guru Teg Bahadar", "Guru Tegh Bahadur", "Guru Teg Bahadur", "Tegh Bahadur", "Teg Bahadur"),
+    "Nāmadev": ("Namadev", "Namdev", "Nāmdev", "Sant Namdev", "Namadeva", "Bhagat Namdev"),
+    "Tukārām": ("Tukaram", "Sant Tukaram", "Tukaram Maharaj"),
+    "Sūrdās": ("Surdas", "Sur Das"),
+    "Tulsīdās": ("Tulsidas", "Tulasīdāsa", "Tulasidas", "Tulsi Das", "Goswami Tulsidas"),
+    "Kabīr": ("Kabir", "Kabir Das", "Kabirdas", "Sant Kabir", "Bhagat Kabir"),
+    "Annamācārya": ("Annamacharya", "Annamayya", "Tallapaka Annamacharya"),
+    "Tyāgarāja": ("Tyagaraja", "Thyagaraja", "Thyagarajar"),
+    "Purandaradāsa": ("Purandaradasa", "Purandara Dasa"),
+    "Mīrābāī": ("Mirabai", "Meera", "Meera Bai", "Mira Bai"),
+    "Nammāḻvār": ("Nammalvar", "Nammalwar", "Nammazhwar"),
+    "M. S. Subbulakshmi": ("MS Subbulakshmi", "M S Subbulakshmi", "M.S. Subbulakshmi", "M S Subbulaxmi", "MS Subbulaxmi"),
+    "Sadhana Sargam": ("Sadhna Sargam",),
+    "Āṇḍāḷ": ("Andal", "Aandal"),
+    "Ādi Śaṅkarācārya": ("Adi Shankaracharya", "Adi Sankaracharya", "Adi Shankara"),
+}
+# Bare Ramdas can denote other poets; it is a search alias, not an identity rule.
+SEARCH_ONLY_NAMES = {"ram das", "ramdas", "amar das", "amardas"}
+for _display, _aliases in PERSON_GROUPS.items():
+    for _name in (_display, *_aliases):
+        if _name.casefold() not in SEARCH_ONLY_NAMES:
+            PERSON_CANONICALS[_name.casefold()] = (_display, _aliases)
+
+PERSON_SEPARATOR = re.compile(r"(\s*(?:·|;|&|,|\band\b)\s*)", re.IGNORECASE)
+
+
 def compact(value: str) -> str:
     """Collapse punctuation/spacing for comparisons without changing display text."""
     return re.sub(r"\s+", " ", re.sub(r"[^\w]+", " ", value, flags=re.UNICODE)).strip().casefold()
@@ -62,14 +97,17 @@ def canonical_person(value: object) -> str:
     text = str(value or "").strip()
     if not text:
         return ""
-    canonical, _ = PERSON_CANONICALS.get(text.casefold(), (text, ()))
-    return canonical
+    parts = PERSON_SEPARATOR.split(text)
+    return "".join(part if index % 2 else PERSON_CANONICALS.get(
+        part.strip().casefold(), (part, ()))[0]
+        for index, part in enumerate(parts))
 
 
 def person_search_aliases(values: Iterable[object]) -> list[str]:
     aliases: list[str] = []
     seen: set[str] = set()
-    for value in values:
+    for value in (part for value in values
+                  for part in PERSON_SEPARATOR.split(str(value or ""))[::2]):
         text = str(value or "").strip()
         if not text:
             continue

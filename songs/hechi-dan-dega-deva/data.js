@@ -26,7 +26,8 @@ window.SONG_META = {
     "Heci Dan Dega Deva",
     "Heci Dān Degā Devā",
     "हेचि दान देगा देवा",
-    "Sant Tukaram"
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

@@ -19,7 +19,10 @@ window.SONG_META = {
     "Gurbani",
     "Sikh",
     "Sikhi",
-    "Nishchay Kar Apni Jeet Karhun"
+    "Nishchay Kar Apni Jeet Karhun",
+    "Guru Gobind Singh",
+    "Guru Gobind",
+    "Guru Govind Singh"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

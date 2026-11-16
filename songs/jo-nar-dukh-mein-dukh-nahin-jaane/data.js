@@ -28,7 +28,12 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Teg Bahādar",
-    "Jo Nar Dukh Mein Dukh Nahin Jaane"
+    "Jo Nar Dukh Mein Dukh Nahin Jaane",
+    "Guru Teg Bahadar",
+    "Guru Tegh Bahadur",
+    "Guru Teg Bahadur",
+    "Tegh Bahadur",
+    "Teg Bahadur"
   ],
   "audioSources": [
     {

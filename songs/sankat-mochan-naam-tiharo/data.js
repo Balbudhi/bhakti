@@ -16,7 +16,11 @@ window.SONG_META = {
   "searchAliases": [
     "Hanuman",
     "Tulsidas · Hari Om Sharan",
-    "Tulsidas"
+    "Tulsidas",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

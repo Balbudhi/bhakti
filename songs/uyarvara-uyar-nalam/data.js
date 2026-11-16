@@ -16,7 +16,8 @@ window.SONG_META = {
     "Uyarvara Uyarnalam",
     "Nammalvar",
     "Nammazhwar",
-    "Manavala Mamunigal"
+    "Manavala Mamunigal",
+    "Nammalwar"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

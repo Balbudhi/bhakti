@@ -21,7 +21,10 @@ window.SONG_META = {
     "Mirabai · Anuradha Paudwal",
     "Mirabai",
     "Anuradha Paudwal - Mere To Giridhar Gopal (Pseudo Video)",
-    "Mere Toh Giridhar Gopal"
+    "Mere Toh Giridhar Gopal",
+    "Meera",
+    "Meera Bai",
+    "Mira Bai"
   ],
   "audioSources": [
     {

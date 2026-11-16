@@ -9,7 +9,8 @@ window.SONG_META = {
   "sourceUrl": "https://www.youtube.com/watch?v=E1GMoflAz0A",
   "searchAliases": [
     "Biduvenenayya Hanuma",
-    "Biduvenenayya Hanuma"
+    "Purandaradasa",
+    "Purandara Dasa"
   ],
   "languages": [
     "Kannada"
