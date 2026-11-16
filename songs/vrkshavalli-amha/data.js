@@ -20,7 +20,9 @@ window.SONG_META = {
     "Tukaram",
     "Vrikshavalli Aamha",
     "Vrikshavalli Amha",
-    "Vrukshavalli Amha Soyare Vanachare"
+    "Vrukshavalli Amha Soyare Vanachare",
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

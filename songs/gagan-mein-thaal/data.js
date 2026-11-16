@@ -29,7 +29,12 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Nānak",
-    "Gagan Mein Thaal"
+    "Gagan Mein Thaal",
+    "Guru Nanak",
+    "Nanak",
+    "Nānak",
+    "Guru Nanak Dev",
+    "Nanak Dev"
   ],
   "audioSources": [
     {

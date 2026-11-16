@@ -16,7 +16,10 @@ window.SONG_META = {
   "searchAliases": [
     "Brahmam Okkate",
     "Brahmamokkate",
-    "Sudha Raghunathan"
+    "Sudha Raghunathan",
+    "Annamacharya",
+    "Annamayya",
+    "Tallapaka Annamacharya"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

@@ -27,7 +27,10 @@ window.SONG_META = {
     "So Satguru Pyara Mere Nal Hai",
     "Sikh",
     "Sikhi",
-    "Guru Granth Sahib"
+    "Guru Granth Sahib",
+    "Guru Ramdas",
+    "Ram Das",
+    "Ramdas"
   ],
   "audioSources": [
     {

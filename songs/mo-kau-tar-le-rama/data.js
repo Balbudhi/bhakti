@@ -26,7 +26,12 @@ window.SONG_META = {
     "Rama",
     "Moko Taar Lei Rama Taar Lei",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Namdev",
+    "Nāmdev",
+    "Sant Namdev",
+    "Namadeva",
+    "Bhagat Namdev"
   ],
   "audioSources": [
     {

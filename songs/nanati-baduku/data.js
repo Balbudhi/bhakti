@@ -16,7 +16,13 @@ window.SONG_META = {
     "Nanati Baduku",
     "Nanati Batuku",
     "Annamacharya",
-    "Radha Vishwanathan"
+    "Radha Vishwanathan",
+    "Annamayya",
+    "Tallapaka Annamacharya",
+    "MS Subbulakshmi",
+    "M S Subbulakshmi",
+    "M S Subbulaxmi",
+    "MS Subbulaxmi"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

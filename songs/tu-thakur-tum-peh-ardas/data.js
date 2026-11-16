@@ -29,7 +29,12 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Arjan",
-    "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥"
+    "Tū̃ Ṭhākuru Tum Pehi Ardāsi ॥",
+    "Guru Arjan",
+    "Guru Arjan Dev",
+    "Guru Arjun Dev",
+    "Arjan Dev",
+    "Arjun Dev"
   ],
   "audioSources": [
     {

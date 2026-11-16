@@ -28,7 +28,9 @@ window.SONG_META = {
     "Venkatesa",
     "Bhakti Koladi Vade",
     "Annamacharya",
-    "Mangalampalli Balamuralikrishna"
+    "Mangalampalli Balamuralikrishna",
+    "Annamayya",
+    "Tallapaka Annamacharya"
   ],
   "audioSources": [
     {

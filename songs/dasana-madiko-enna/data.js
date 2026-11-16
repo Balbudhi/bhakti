@@ -15,7 +15,12 @@ window.SONG_META = {
   "searchAliases": [
     "Dasana Madiko Enna",
     "Venkataramana",
-    "Purandara Dasa"
+    "Purandara Dasa",
+    "Purandaradasa",
+    "MS Subbulakshmi",
+    "M S Subbulakshmi",
+    "M S Subbulaxmi",
+    "MS Subbulaxmi"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

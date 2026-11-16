@@ -23,7 +23,11 @@ window.SONG_META = {
     "Guru Teg Bahadar",
     "Kahe Re Ban Khojan Jaayi",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Tegh Bahadur",
+    "Guru Teg Bahadur",
+    "Tegh Bahadur",
+    "Teg Bahadur"
   ],
   "audioSources": [
     {

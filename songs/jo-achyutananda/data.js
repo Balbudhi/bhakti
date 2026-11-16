@@ -29,7 +29,10 @@ window.SONG_META = {
     "Vishnu",
     "Visnu",
     "Rama",
-    "Jo Achyutananda Priya Sisters"
+    "Jo Achyutananda Priya Sisters",
+    "Annamacharya",
+    "Annamayya",
+    "Tallapaka Annamacharya"
   ],
   "audioSources": [
     {

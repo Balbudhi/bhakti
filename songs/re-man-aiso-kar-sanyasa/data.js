@@ -19,7 +19,15 @@ window.SONG_META = {
     "Reman Aiso Kar Sanyasa",
     "Gurbani",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Arjan",
+    "Guru Arjan Dev",
+    "Guru Arjun Dev",
+    "Arjan Dev",
+    "Arjun Dev",
+    "Guru Gobind Singh",
+    "Guru Gobind",
+    "Guru Govind Singh"
   ],
   "composer": "",
   "timingStatus": "start-only-reviewed",

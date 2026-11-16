@@ -17,7 +17,11 @@ window.SONG_META = {
     "Patta Bola Vrksa Se",
     "Kabir · Shujaat Khan",
     "Kabir",
-    "Patta Bola Vriksh Se"
+    "Patta Bola Vriksh Se",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

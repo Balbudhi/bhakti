@@ -26,7 +26,10 @@ window.SONG_META = {
     "Nirguna",
     "Satgur Kai Bhanai Chal",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Amardas",
+    "Amar Das",
+    "Amardas"
   ],
   "audioSources": [
     {

@@ -23,7 +23,17 @@ window.SONG_META = {
     "Guru Nanak & Guru Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
     "Guru Nanak & Guru Arjan",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Nanak",
+    "Nanak",
+    "Nānak",
+    "Guru Nanak Dev",
+    "Nanak Dev",
+    "Guru Arjan",
+    "Guru Arjan Dev",
+    "Guru Arjun Dev",
+    "Arjan Dev",
+    "Arjun Dev"
   ],
   "audioSources": [
     {

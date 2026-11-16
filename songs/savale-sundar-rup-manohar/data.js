@@ -27,7 +27,8 @@ window.SONG_META = {
     "Vitthal",
     "Vithal",
     "Vithoba",
-    "Pandurang"
+    "Pandurang",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Bentī Caupaī",
   "subtitle": "",
-  "credit": "Guru Gobind Singh · Rajinder Singh",
+  "credit": "Gurū Gobind Siṅgh · Rajinder Singh",
   "pageCredit": "Rajinder Singh",
-  "writer": "Guru Gobind Singh",
+  "writer": "Gurū Gobind Siṅgh",
   "singer": "Rajinder Singh",
   "vocalist": "",
   "composer": "",
@@ -26,7 +26,10 @@ window.SONG_META = {
     "Sikh",
     "Sikhi",
     "Sikhī",
-    "Dasam Granth"
+    "Dasam Granth",
+    "Guru Gobind Singh",
+    "Guru Gobind",
+    "Guru Govind Singh"
   ],
   "audioSources": [
     {

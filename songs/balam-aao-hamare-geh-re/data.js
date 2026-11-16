@@ -20,7 +20,11 @@ window.SONG_META = {
     "Balam Avo Hamare Geh Re",
     "Kabir · Manoj Mishra · Kashyap Vora",
     "Kabir",
-    "Baalam Aao"
+    "Baalam Aao",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

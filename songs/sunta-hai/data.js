@@ -16,7 +16,11 @@ window.SONG_META = {
   "searchAliases": [
     "Kabir",
     "Sunta Hai - Kabir song | Sounds of Isha",
-    "Sunta Hai Guru Gyani"
+    "Sunta Hai Guru Gyani",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

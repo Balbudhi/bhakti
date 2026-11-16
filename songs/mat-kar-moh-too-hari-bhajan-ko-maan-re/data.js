@@ -19,7 +19,11 @@ window.SONG_META = {
     "Kabir · Bhimsen Joshi · Shrinivas Khale",
     "Nirguna",
     "Mat Kar Moh Tu Hari Bhajan Ko Maan Re",
-    "Sun Bhai Sadho"
+    "Sun Bhai Sadho",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {

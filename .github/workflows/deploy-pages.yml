@@ -27,6 +27,8 @@ jobs:
           node-version: 22
       - name: Check player and PWA contracts
         run: |
+          node scripts/test_library_search.js
+          python3 scripts/test_naming.py
           node scripts/test_player_progress.js
           node scripts/test_player_keyboard.js
           node scripts/test_player_viewport.js

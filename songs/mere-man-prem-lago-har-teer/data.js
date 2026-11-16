@@ -23,7 +23,10 @@ window.SONG_META = {
     "Guru Ram Das · Jagjit Singh",
     "Guru Ram Das",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Ramdas",
+    "Ram Das",
+    "Ramdas"
   ],
   "audioSources": [
     {

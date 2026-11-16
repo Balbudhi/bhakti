@@ -28,7 +28,8 @@ window.SONG_META = {
     "Krshna",
     "Krsna",
     "Margazhi Thingal",
-    "Thiruppavai 1"
+    "Thiruppavai 1",
+    "Aandal"
   ],
   "audioSources": [
     {

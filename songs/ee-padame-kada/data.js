@@ -28,7 +28,9 @@ window.SONG_META = {
     "Vengkatesha",
     "Venkatesa",
     "Ee Paadame Kadaa",
-    "Annamacharya"
+    "Annamacharya",
+    "Annamayya",
+    "Tallapaka Annamacharya"
   ],
   "audioSources": [
     {

@@ -27,7 +27,8 @@ window.SONG_META = {
     "Andal",
     "Vishnu",
     "Visnu",
-    "Thiruppavai 27"
+    "Thiruppavai 27",
+    "Aandal"
   ],
   "audioSources": [
     {

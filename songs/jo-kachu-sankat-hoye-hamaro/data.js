@@ -17,7 +17,11 @@ window.SONG_META = {
     "Hanuman",
     "Tulsidas · Hari Om Sharan",
     "Tulsidas",
-    "Rama"
+    "Rama",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

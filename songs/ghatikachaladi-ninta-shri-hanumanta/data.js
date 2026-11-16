@@ -22,7 +22,8 @@ window.SONG_META = {
     "Ghatikacaladi Ninta Shri Hanumanta",
     "Ghatikacaladi Ninta Sri Hanumanta",
     "Hanuman",
-    "Purandaradasa"
+    "Purandaradasa",
+    "Purandara Dasa"
   ],
   "audioSources": [
     {

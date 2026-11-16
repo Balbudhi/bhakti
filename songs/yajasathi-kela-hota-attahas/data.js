@@ -25,7 +25,8 @@ window.SONG_META = {
     "Yaajsathi Kela Hota Attahaas",
     "Sant Tukaram",
     "Yājasāṭī Kelā Hotā Āṭāhāsye",
-    "याचसाठी केला होता अट्टाहास"
+    "याचसाठी केला होता अट्टाहास",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

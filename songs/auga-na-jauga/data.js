@@ -25,7 +25,12 @@ window.SONG_META = {
     "Kabir and other poets · Maulvi Haider Hassan Vehranwale Qawwal and Party",
     "Kabir and other poets",
     "Aaoon Ga Na Jaoon Ga - Bhagat Kabir",
-    "Aaoon Ga Na Jaoon Ga"
+    "Aaoon Ga Na Jaoon Ga",
+    "Kabir",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "sectionNotices": [
     {

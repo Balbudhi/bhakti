@@ -29,7 +29,12 @@ window.SONG_META = {
     "Sikhī",
     "Guru Granth Sahib",
     "Gurū Nānak",
-    "So Dar Keha So Ghar Keha"
+    "So Dar Keha So Ghar Keha",
+    "Guru Nanak",
+    "Nanak",
+    "Nānak",
+    "Guru Nanak Dev",
+    "Nanak Dev"
   ],
   "audioSources": [
     {

@@ -29,7 +29,11 @@ window.SONG_META = {
     "Namdev",
     "Sikh",
     "Sikhi",
-    "Guru Granth Sahib"
+    "Guru Granth Sahib",
+    "Nāmdev",
+    "Sant Namdev",
+    "Namadeva",
+    "Bhagat Namdev"
   ],
   "audioSources": [
     {

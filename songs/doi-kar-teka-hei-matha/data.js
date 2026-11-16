@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Kakad Aarti Suryoday Purav",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev · Pramod Medhi",
+  "credit": "Tukārām; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Nāmadev · Pramod Medhi",
   "pageCredit": "Pramod Medhi",
-  "writer": "Sant Tukaram; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Sant Namdev",
+  "writer": "Tukārām; Sant Janabai; Kṛṣṇa Jogīśvara Bhīṣma; Nāmadev",
   "singer": "Pramod Medhi",
   "composer": "",
   "languages": [
@@ -20,7 +20,16 @@ window.SONG_META = {
     "Sant Tukaram; Sant Janabai; Krshna Jogishvara Bhishma; Sant Namdev · Pramod Medhi",
     "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev · Pramod Medhi",
     "Sant Tukaram; Sant Janabai; Krshna Jogishvara Bhishma; Sant Namdev",
-    "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev"
+    "Sant Tukaram; Sant Janabai; Krsna Jogisvara Bhisma; Sant Namdev",
+    "Tukaram",
+    "Sant Tukaram",
+    "Tukaram Maharaj",
+    "Namadev",
+    "Namdev",
+    "Nāmdev",
+    "Sant Namdev",
+    "Namadeva",
+    "Bhagat Namdev"
   ],
   "audioSources": [
     {

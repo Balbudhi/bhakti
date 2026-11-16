@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Mahārāja Bhavānī Brahmabhuvana Kī Rānī",
   "subtitle": "Śakti",
-  "credit": "Surdas · Bhimsen Joshi",
+  "credit": "Sūrdās · Bhimsen Joshi",
   "pageCredit": "Bhimsen Joshi",
-  "writer": "Surdas",
+  "writer": "Sūrdās",
   "singer": "Bhimsen Joshi",
   "composer": "",
   "languages": [
@@ -16,7 +16,9 @@ window.SONG_META = {
   "searchAliases": [
     "Maharaja Bhavani Brahmabhuvana Ki Rani",
     "Shakti",
-    "Sakti"
+    "Sakti",
+    "Surdas",
+    "Sur Das"
   ],
   "audioSources": [
     {

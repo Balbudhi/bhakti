@@ -15,7 +15,11 @@ window.SONG_META = {
   "searchAliases": [
     "Rama",
     "Tulsidas · Rajan Mishra & Sajan Mishra",
-    "Tulsidas"
+    "Tulsidas",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

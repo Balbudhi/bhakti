@@ -18,7 +18,8 @@ window.SONG_META = {
     "Laksmi",
     "Purandaradasa",
     "BHAGYADA LAKSHMI BARAMMA Kannada Bhajans [Full Song] SHRI VARAMAHALAKSHMI DARSHANA",
-    "Bhagyada Lakshmi Baaramma"
+    "Bhagyada Lakshmi Baaramma",
+    "Purandara Dasa"
   ],
   "audioSources": [
     {

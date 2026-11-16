@@ -24,7 +24,11 @@ window.SONG_META = {
     "Guru Arjan",
     "Tum Karoh Daya Mere Sai",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Arjan Dev",
+    "Guru Arjun Dev",
+    "Arjan Dev",
+    "Arjun Dev"
   ],
   "audioSources": [
     {

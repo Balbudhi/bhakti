@@ -30,7 +30,9 @@ window.SONG_META = {
     "Vengkatesha",
     "Venkatesa",
     "Annamacharya",
-    "Mangalampalli Balamuralikrishna"
+    "Mangalampalli Balamuralikrishna",
+    "Annamayya",
+    "Tallapaka Annamacharya"
   ],
   "audioSources": [
     {

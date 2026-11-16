@@ -20,7 +20,8 @@ window.SONG_META = {
     "Surdas",
     "PRABHU MORE AWGOON CHIT NA DHARO (Hindi Version)) www.tricolourproductions.net",
     "Prabhu More Avgun Chit Na Dharo",
-    "Prabhu Ji Mere Avagun"
+    "Prabhu Ji Mere Avagun",
+    "Sur Das"
   ],
   "audioSources": [
     {

@@ -24,7 +24,9 @@ window.SONG_META = {
     "Guru Angad",
     "Je Sau Chandaa Ugvahe",
     "Sikh",
-    "Sikhi"
+    "Sikhi",
+    "Guru Angad Dev",
+    "Angad Dev"
   ],
   "audioSources": [
     {

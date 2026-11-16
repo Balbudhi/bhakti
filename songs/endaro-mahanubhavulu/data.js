@@ -14,7 +14,9 @@ window.SONG_META = {
   "sourceUrl": "https://www.youtube.com/watch?v=hIQPVd9HeiM",
   "searchAliases": [
     "Endaro Mahanubhavulu",
-    "Thyagaraja"
+    "Thyagaraja",
+    "Tyagaraja",
+    "Thyagarajar"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

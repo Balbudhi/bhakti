@@ -18,7 +18,11 @@ window.SONG_META = {
     "Tulsidas · Umakant Gundecha & Ramakant Gundecha",
     "Tulsidas",
     "Vishnu",
-    "Visnu"
+    "Visnu",
+    "Tulasīdāsa",
+    "Tulasidas",
+    "Tulsi Das",
+    "Goswami Tulsidas"
   ],
   "audioSources": [
     {

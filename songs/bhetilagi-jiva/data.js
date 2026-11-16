@@ -19,7 +19,9 @@ window.SONG_META = {
     "Tukaram · Anuradha Paudwal",
     "Tukaram",
     "Bhaitilagi Jeewa",
-    "Bhetilagi Jiva Lagalise Aas"
+    "Bhetilagi Jiva Lagalise Aas",
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

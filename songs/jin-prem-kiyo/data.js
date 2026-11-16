@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Jin Prem Kīo",
   "subtitle": "",
-  "credit": "Guru Gobind Singh · Bhai Harjinder Singh",
+  "credit": "Gurū Gobind Siṅgh · Bhai Harjinder Singh",
   "pageCredit": "Bhai Harjinder Singh",
-  "writer": "Guru Gobind Singh",
+  "writer": "Gurū Gobind Siṅgh",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -25,7 +25,10 @@ window.SONG_META = {
     "Sikh",
     "Sikhi",
     "Sikhī",
-    "Dasam Granth"
+    "Dasam Granth",
+    "Guru Gobind Singh",
+    "Guru Gobind",
+    "Guru Govind Singh"
   ],
   "audioSources": [
     {

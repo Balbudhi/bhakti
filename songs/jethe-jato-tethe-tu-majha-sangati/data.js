@@ -20,7 +20,8 @@ window.SONG_META = {
     "Tukaram",
     "जेथे जातो तेथे तू माझा सांगाती",
     "Jethe Jato Tethe Tu Maza Sangati",
-    "Sant Tukaram"
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

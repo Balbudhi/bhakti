@@ -17,7 +17,9 @@ window.SONG_META = {
   "searchAliases": [
     "Tukaram · Anuradha Paudwal",
     "Tukaram",
-    "Sunder Te Dhyan"
+    "Sunder Te Dhyan",
+    "Sant Tukaram",
+    "Tukaram Maharaj"
   ],
   "audioSources": [
     {

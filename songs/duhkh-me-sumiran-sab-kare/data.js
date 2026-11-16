@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Dukh Mẽ Sumiran Sab Kare",
   "subtitle": "Nirguṇa",
-  "credit": "Kabīr, Nānak & others · Suresh Wadkar",
+  "credit": "Kabīr, Gurū Nānak & others · Suresh Wadkar",
   "pageCredit": "Suresh Wadkar",
-  "writer": "Kabīr, Nānak & others",
+  "writer": "Kabīr, Gurū Nānak & others",
   "singer": "Suresh Wadkar",
   "vocalist": "",
   "composer": "",
@@ -21,7 +21,17 @@ window.SONG_META = {
     "Kabir, Nanak & others · Suresh Wadkar",
     "Kabir, Nanak & others",
     "DUKH MAI SUMIRAN SAB KARE (Hindi Version) www.tricolourproductions.net",
-    "Dukh Mai Sumiran Sab Kare"
+    "Dukh Mai Sumiran Sab Kare",
+    "Kabir",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir",
+    "Guru Nanak",
+    "Nanak",
+    "Nānak",
+    "Guru Nanak Dev",
+    "Nanak Dev"
   ],
   "audioSources": [
     {

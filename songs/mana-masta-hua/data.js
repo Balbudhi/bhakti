@@ -17,7 +17,11 @@ window.SONG_META = {
     "Kabir",
     "Mann Mast Hua | Kabir | मन मस्त हुआ | Devotional Poem | Alaap - Songs from Sadhguru Darshan",
     "Mann Mast Hua",
-    "Mann Mast Hua Phir Kya Bole"
+    "Mann Mast Hua Phir Kya Bole",
+    "Kabir Das",
+    "Kabirdas",
+    "Sant Kabir",
+    "Bhagat Kabir"
   ],
   "audioSources": [
     {
