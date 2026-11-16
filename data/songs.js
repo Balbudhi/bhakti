@@ -10979,4 +10979,217 @@ window.BHAKTI_SONGS = [
   "subtitle": "Viṣṇu",
   "queueNumber": 342
 }
+,
+{
+  "slug": "soyara-sukhacha",
+  "queueId": "69878d08",
+  "title": "Soyarā Sukhācā",
+  "credit": "Nāmadev · Kishori Amonkar",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Soyara Sukhaca",
+    "Vishnu",
+    "Visnu",
+    "Namadev · Kishori Amonkar",
+    "Namadev",
+    "सोयरा सुखाचा विसावा भक्तांचा",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Kishori Amonkar",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/soyara-sukhacha-fc2f38f9a148cb63d7d1eb81329998177e777962455655e66c3900fc9987c5f5.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/soyara-sukhacha-b03f5e9e12599bb256700559285d5c77e8007bbad8345baa7b2666571d5ff696.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 349
+},
+{
+  "slug": "namacha-gajar-garje-bhimatir",
+  "queueId": "ccafe315",
+  "title": "Nāmācā Gajar Garje Bhīmātīr",
+  "credit": "Nāmadev · Bhimsen Joshi · Ram Pathak",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Śiva"
+  ],
+  "searchAliases": [
+    "Namaca Gajar Garje Bhimatir",
+    "Vishnu",
+    "Visnu",
+    "Namadev · Bhimsen Joshi · Ram Pathak",
+    "Namadev",
+    "Shiva",
+    "Siva",
+    "नामाचा गजर गर्जे भीमातीर",
+    "Namacha Gajar Gajar Bhimateer",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Bhimsen Joshi",
+  "composer": "Ram Pathak",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namacha-gajar-garje-bhimatir-80fa754495702fe806067911f9482f64cb1d3c64dddc69fd2c628459cdc95ed6.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namacha-gajar-garje-bhimatir-d15799cdf04c6894efb18d5a284f99882760e503c0e4664f3164a2e764d62668.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 347
+},
+{
+  "slug": "pandharinivasa-sakhya-panduranga",
+  "queueId": "68622b39",
+  "title": "Paṇḍharīnivāsā Sakhyā Pāṇḍuraṅgā",
+  "credit": "Nāmadev · Bhimsen Joshi · Ram Pathak",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Namadev · Bhimsen Joshi · Ram Pathak",
+    "Namadev",
+    "Krshna",
+    "Krsna",
+    "पंढरीनिवासा सख्या पांडुरंगा",
+    "Pandhari Nivasa Sakhya Panduranga",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Bhimsen Joshi",
+  "composer": "Ram Pathak",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharinivasa-sakhya-panduranga-e72a89c61ef36fd703b13f084a73927f610764321f48a455a7030376a001cc6a.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharinivasa-sakhya-panduranga-7e8a482f97f7931df2772a575eb383c8e42185efa513970d2c38e8f5d4feb45a.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 348
+},
+{
+  "slug": "majha-bhav-tujhe-charani",
+  "queueId": "bbba7659",
+  "title": "Mājhā Bhāv Tujhe Caraṇī",
+  "credit": "Nāmadev · Bhimsen Joshi",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Majha Bhav Tujhe Carani",
+    "Vishnu",
+    "Visnu",
+    "Namadev · Bhimsen Joshi",
+    "Namadev",
+    "माझा भाव तुझे चरणी",
+    "Maza Bhav Tuze Charani",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Bhimsen Joshi",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/majha-bhav-tujhe-charani-e67ae20e7640504548a77f58b159aa4355ef873ab7dae2c0c714eeab70a52a1b.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/majha-bhav-tujhe-charani-5db2b2dbd1a80353d105ac922d62dc0f07a6224c1c69659ac441030236265992.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 345
+},
+{
+  "slug": "man-tu-jot-saroop-hai",
+  "queueId": "5ecb5420",
+  "title": "Man Tūṃ Joti Sarūpu Hai",
+  "credit": "Gurū Amar Dās · Bhai Harjinder Singh (Srinagar Wale)",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
+  "searchAliases": [
+    "Man Tum Joti Sarupu Hai",
+    "Gurbani",
+    "Guru Amar Das · Bhai Harjinder Singh (Srinagar Wale)",
+    "Guru Amar Das",
+    "Man Toon Jyot Saroop Hai",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Amar Dās",
+  "singer": "Bhai Harjinder Singh (Srinagar Wale)",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-tu-jot-saroop-hai-1b474898fe8325d229fceb7d6f6b6566771807018fd8e66d1e6d947242aee6e9.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-tu-jot-saroop-hai-c2fd4f6e9f807f2f5c44540779cfb8c6e64707641203c71f9f6b6fc36fc6bd56.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gurbāṇī",
+  "queueNumber": 346
+}
 ];

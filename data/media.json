@@ -1828,6 +1828,18 @@
         "sha256": "de17b6b6ea26aa95cfd4052c9d3b3a10e9576439cbfa47c93a7bbe28c0251500"
       }
     ],
+    "majha-bhav-tujhe-charani": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/majha-bhav-tujhe-charani-e67ae20e7640504548a77f58b159aa4355ef873ab7dae2c0c714eeab70a52a1b.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "e67ae20e7640504548a77f58b159aa4355ef873ab7dae2c0c714eeab70a52a1b"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/majha-bhav-tujhe-charani-5db2b2dbd1a80353d105ac922d62dc0f07a6224c1c69659ac441030236265992.m4a",
+        "type": "audio/mp4",
+        "sha256": "5db2b2dbd1a80353d105ac922d62dc0f07a6224c1c69659ac441030236265992"
+      }
+    ],
     "man-ke-manjeere-se": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-ke-manjeere-se.m4a",
@@ -1852,6 +1864,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-re-tu-chal-apne-niketan-me.m4a",
         "type": "audio/mp4",
         "sha256": "0a2585cf8ec2bcb5305dc052a71e35ed549a1700506c2a4239d2c5253c973010"
+      }
+    ],
+    "man-tu-jot-saroop-hai": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-tu-jot-saroop-hai-1b474898fe8325d229fceb7d6f6b6566771807018fd8e66d1e6d947242aee6e9.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "1b474898fe8325d229fceb7d6f6b6566771807018fd8e66d1e6d947242aee6e9"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/man-tu-jot-saroop-hai-c2fd4f6e9f807f2f5c44540779cfb8c6e64707641203c71f9f6b6fc36fc6bd56.m4a",
+        "type": "audio/mp4",
+        "sha256": "c2fd4f6e9f807f2f5c44540779cfb8c6e64707641203c71f9f6b6fc36fc6bd56"
       }
     ],
     "mana-masta-hua": [
@@ -2154,6 +2178,18 @@
         "sha256": "e65f0e2c2af40cff9acf314fd3773da195ff54038f8086cc45b8bd33cd2dfaa5"
       }
     ],
+    "namacha-gajar-garje-bhimatir": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namacha-gajar-garje-bhimatir-80fa754495702fe806067911f9482f64cb1d3c64dddc69fd2c628459cdc95ed6.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "80fa754495702fe806067911f9482f64cb1d3c64dddc69fd2c628459cdc95ed6"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namacha-gajar-garje-bhimatir-d15799cdf04c6894efb18d5a284f99882760e503c0e4664f3164a2e764d62668.m4a",
+        "type": "audio/mp4",
+        "sha256": "d15799cdf04c6894efb18d5a284f99882760e503c0e4664f3164a2e764d62668"
+      }
+    ],
     "namah-parvatipati": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namah-parvatipati-3031089c211b7463de9a73a239dfbd0480167ede57d58dcce18d5e406f5120d2.mp3",
@@ -2297,6 +2333,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/paluke-bangaramayena.m4a",
         "type": "audio/mp4",
         "sha256": "333e390121f0067c3dbec55b4c3940f93b148f3ef7ebadec79e68f416dce963d"
+      }
+    ],
+    "pandharinivasa-sakhya-panduranga": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharinivasa-sakhya-panduranga-e72a89c61ef36fd703b13f084a73927f610764321f48a455a7030376a001cc6a.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "e72a89c61ef36fd703b13f084a73927f610764321f48a455a7030376a001cc6a"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharinivasa-sakhya-panduranga-7e8a482f97f7931df2772a575eb383c8e42185efa513970d2c38e8f5d4feb45a.m4a",
+        "type": "audio/mp4",
+        "sha256": "7e8a482f97f7931df2772a575eb383c8e42185efa513970d2c38e8f5d4feb45a"
       }
     ],
     "parvati-devi-mahamayavini": [
@@ -3012,6 +3060,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-satgur-pyara-mere-naal-hai.m4a",
         "type": "audio/mp4",
         "sha256": "16259b9ca9a3fd2d5bdb8a5f1d59e983ad653ff7792d2a38d423cf6bc8e958bf"
+      }
+    ],
+    "soyara-sukhacha": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/soyara-sukhacha-fc2f38f9a148cb63d7d1eb81329998177e777962455655e66c3900fc9987c5f5.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "fc2f38f9a148cb63d7d1eb81329998177e777962455655e66c3900fc9987c5f5"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/soyara-sukhacha-b03f5e9e12599bb256700559285d5c77e8007bbad8345baa7b2666571d5ff696.m4a",
+        "type": "audio/mp4",
+        "sha256": "b03f5e9e12599bb256700559285d5c77e8007bbad8345baa7b2666571d5ff696"
       }
     ],
     "sri-mahalakumi-deviye": [
