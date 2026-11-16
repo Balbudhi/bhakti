@@ -15549,7 +15549,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "e65fc663b4d9529cc9a7a6724c5b3c058c3f718d352ad14169fb6e4af3cf1805",
+        "inputHash": "45d6c3dfcb5a4d8c2aaf87d3ce8510140cba901fe4f1ba94b414c66094d6334c",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -15560,12 +15560,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "7ea5689b5ac21938944dd7f21a52c590a8452ff1917a5bd619d160d30d826fc0",
+          "recordHash": "e2eb5b8f977276725c25e6848aab011e3665cee3a921df9db47ffc71ce6e9859",
           "extractionRequestIds": [
-            "106dcd9ebbff4cf696365d291db78270"
+            "ab0a89ccb10245c1bc75967a6091e2ef"
           ],
           "reviewRequestIds": [
-            "1fa62681ddc242fe8616adf97c49d251"
+            "6a2da63a68994052be0cd2fb1f4f9452"
           ],
           "coveredLineCount": 249
         },
@@ -15573,45 +15573,41 @@
           "themes": [
             {
               "id": "theme.divine_presence",
-              "weight": 0.08695652173913045
-            },
-            {
-              "id": "theme.equality",
-              "weight": 0.08695652173913045
+              "weight": 0.125
             },
             {
               "id": "theme.grace",
-              "weight": 0.2173913043478261
+              "weight": 0.3125
             },
             {
               "id": "theme.humility",
-              "weight": 0.08695652173913045
+              "weight": 0.125
             },
             {
               "id": "theme.liberation",
-              "weight": 0.2173913043478261
+              "weight": 0.125
             },
             {
               "id": "theme.refuge",
-              "weight": 0.2173913043478261
-            },
-            {
-              "id": "theme.surrender",
-              "weight": 0.08695652173913045
+              "weight": 0.3125
             }
           ],
           "actions": [
             {
               "id": "action.offering",
-              "weight": 0.16666666666666669
+              "weight": 0.14285714285714288
             },
             {
               "id": "action.petition",
-              "weight": 0.4166666666666667
+              "weight": 0.35714285714285715
             },
             {
               "id": "action.praise",
-              "weight": 0.4166666666666667
+              "weight": 0.35714285714285715
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.14285714285714288
             }
           ],
           "subjects": [
@@ -21450,7 +21446,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "3b0f9d7c0f9d1b7d984252f1272ccda1800687b6c1087cc5ac29767a412d2df5",
+        "inputHash": "283778f81e65169e7966ec9f8babebffd6b13d796fb049602f14e7684d06ba68",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -21461,12 +21457,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "266fa478a737cb206c089cb837fce643b5cdbbf90ad67b92e4387240ae2eabfe",
+          "recordHash": "c06f9a49ee0de04e8162ae18682e3bb0360e0f8fe8e8f5ce406531fe97072f7e",
           "extractionRequestIds": [
-            "42f12bfdb2944de0a1f6aecf46f7f7cd"
+            "fd51b298d1e64216a132ff5c221174b9"
           ],
           "reviewRequestIds": [
-            "f277e5433cfa4867994c835afaa2fa60"
+            "dd190acc49184d6c8da20d775664afb3"
           ],
           "coveredLineCount": 30
         },
@@ -21484,26 +21480,40 @@
           "actions": [
             {
               "id": "action.meditation",
-              "weight": 0.25
+              "weight": 0.2631578947368421
+            },
+            {
+              "id": "action.petition",
+              "weight": 0.10526315789473685
             },
             {
               "id": "action.pilgrimage",
-              "weight": 0.25
+              "weight": 0.2631578947368421
             },
             {
               "id": "action.praise",
-              "weight": 0.25
+              "weight": 0.10526315789473685
             },
             {
               "id": "action.remembrance",
-              "weight": 0.25
+              "weight": 0.2631578947368421
             }
           ],
           "subjects": [
             {
               "id": "subject.jagannatha",
-              "weight": 1.0,
+              "weight": 0.5555555555555556,
               "role": "worship_focus"
+            },
+            {
+              "id": "subject.nrisimha",
+              "weight": 0.22222222222222224,
+              "role": "narrative_subject"
+            },
+            {
+              "id": "subject.vishnu",
+              "weight": 0.22222222222222224,
+              "role": "narrative_subject"
             }
           ]
         },
