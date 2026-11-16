@@ -1099,6 +1099,60 @@ function getPlaybackController(audio) {
   let playing = intent && audio.readyState >= 3;
   let failed = false;
   let pendingSeek = null;
+  let retryPosition = null;
+  let needsReload = false;
+  const doc = audio.ownerDocument;
+  const host = doc?.defaultView;
+  let audioSession;
+  try {
+    audioSession = host?.navigator?.audioSession;
+    if (audioSession) audioSession.type = "playback";
+  } catch (_) { /* Audio Session is optional; native media remains usable. */ }
+  // iOS can return unpaused with a frozen clock and no waiting/error event.
+  // One foreground timer observes progress; it never resumes paused media or
+  // competes with an interrupted session. A failed recovery requires a gesture.
+  let progressTimer = null;
+  let observedTime = audio.currentTime;
+  let progressAt = 0;
+  let recoveryAttempted = false;
+  const stopMonitoring = () => {
+    if (progressTimer !== null) host.clearTimeout(progressTimer);
+    progressTimer = null;
+  };
+  const canMonitor = () => host && doc.visibilityState === "visible"
+    && intent && !audio.paused && !audio.ended && !failed
+    && audioSession?.state !== "interrupted";
+  const monitorProgress = () => {
+    progressTimer = null;
+    if (!canMonitor()) return;
+    const now = host.performance.now();
+    if (!audio.seeking && audio.currentTime !== observedTime) {
+      observedTime = audio.currentTime;
+      progressAt = now;
+      recoveryAttempted = false;
+    } else if (now - progressAt >= 16000
+      || (!audio.seeking && audio.readyState >= 3 && now - progressAt >= 4000)) {
+      const position = pendingSeek ?? audio.currentTime;
+      if (!recoveryAttempted && !audio.seeking && audio.readyState >= 3) {
+        pause();
+        play(position);
+        recoveryAttempted = true;
+        return;
+      }
+      pause();
+      needsReload = true;
+      retryPosition = position;
+      report("Playback stopped. Press Play to continue");
+      return;
+    }
+    progressTimer = host.setTimeout(monitorProgress, 4000);
+  };
+  const startMonitoring = () => {
+    stopMonitoring();
+    observedTime = audio.currentTime;
+    progressAt = host?.performance.now() || 0;
+    if (canMonitor()) progressTimer = host.setTimeout(monitorProgress, 4000);
+  };
   const failedSources = new Set();
   const notify = () => audio.dispatchEvent(new CustomEvent("bhakti:playback-state"));
   const report = (message, advance = false) => {
@@ -1110,14 +1164,18 @@ function getPlaybackController(audio) {
     intent = false;
     playing = false;
     pendingSeek = null;
+    retryPosition = null;
+    stopMonitoring();
     audio.pause();
     notify();
   };
   const fail = () => {
     if (failed && !intent) return;
     const advance = intent;
+    const position = pendingSeek;
     failed = true;
     pause();
+    retryPosition = position;
     report("This recording is unavailable", advance);
   };
   const seekWhenReady = () => {
@@ -1128,14 +1186,15 @@ function getPlaybackController(audio) {
   const play = (start = null, { retry = false } = {}) => {
     // Only a fresh user action retries a terminal failure. Automatic queue
     // progression remains bounded, even when every source is unavailable.
-    if (retry && (failed || audio.error) && (audio.querySelectorAll("source").length || audio.src)) {
-      const resumeAt = Number.isFinite(start) ? start : audio.currentTime;
+    if (retry && (failed || audio.error || needsReload) && (audio.querySelectorAll("source").length || audio.src)) {
+      const resumeAt = Number.isFinite(start) ? start : retryPosition ?? audio.currentTime;
       reset();
       audio.load();
       start = Number.isFinite(resumeAt) ? resumeAt : 0;
     }
     const token = ++request;
     intent = true;
+    recoveryAttempted = false;
     pendingSeek = Number.isFinite(start) ? start : null;
     if (failed || audio.error || (!audio.querySelectorAll("source").length && !audio.src)) {
       fail();
@@ -1146,6 +1205,7 @@ function getPlaybackController(audio) {
     let attempt;
     try { attempt = audio.play(); }
     catch (error) { attempt = Promise.reject(error); }
+    startMonitoring();
     notify();
     if (!attempt?.then) return; // Older media APIs rely on the playing event.
     Promise.resolve(attempt).then(() => {
@@ -1166,6 +1226,7 @@ function getPlaybackController(audio) {
   const reset = () => {
     pause();
     failed = false;
+    needsReload = false;
     failedSources.clear();
   };
   audio.addEventListener("error", event => {
@@ -1180,6 +1241,13 @@ function getPlaybackController(audio) {
     if (sources.length && sources.every(item => failedSources.has(item))) fail();
   }, true); // <source> errors do not bubble, and one failure may have a valid fallback.
   audio.addEventListener("loadedmetadata", seekWhenReady);
+  audio.addEventListener("play", () => {
+    // Native interruption recovery may resume without controller.play().
+    if (audio.paused || audio.ended || failed) return;
+    intent = true;
+    startMonitoring();
+    notify();
+  });
   audio.addEventListener("playing", () => {
     if (!intent || audio.paused || failed) return;
     playing = true;
@@ -1198,6 +1266,7 @@ function getPlaybackController(audio) {
     intent = false;
     playing = false;
     pendingSeek = null;
+    stopMonitoring();
     notify();
   });
   audio.addEventListener("ended", () => {
@@ -1205,12 +1274,20 @@ function getPlaybackController(audio) {
     intent = false;
     playing = false;
     pendingSeek = null;
+    stopMonitoring();
     notify();
   });
   audio.addEventListener("emptied", () => {
     playing = false;
     notify(); // load() can queue this after the latest play/seek request.
   });
+  // A seek changes currentTime without proving playback. Start a fresh grace
+  // interval after it finishes, retaining the single-recovery budget.
+  audio.addEventListener("seeked", startMonitoring);
+  doc?.addEventListener("visibilitychange", startMonitoring);
+  host?.addEventListener("pageshow", startMonitoring);
+  host?.addEventListener("pagehide", stopMonitoring);
+  audioSession?.addEventListener?.("statechange", startMonitoring);
   const controller = Object.freeze({ play, pause, reset,
     isPlaying: () => playing && !audio.paused && !audio.ended,
     isPending: () => intent && !playing,

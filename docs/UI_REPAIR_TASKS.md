@@ -1,5 +1,66 @@
 # Library and playlist repair — 23 October 2026
 
+## iPhone PWA silent playback — 15 November 2026
+
+Outcome: the shared player must recover an unpaused but frozen media element,
+preserve the current song/position, and offer a truthful Play action when recovery
+cannot complete. Native resume must update the controller, too. Explicit pause,
+OS pause and replacement cancel deferred work; backgrounding alone never pauses
+healthy audio. No automatic queue skip for an interruption or loading timeout.
+
+The user's exact device failure is not reproduced on desktop. WebKit reports
+[323022](https://bugs.webkit.org/show_bug.cgi?id=323022) and
+[295518](https://bugs.webkit.org/show_bug.cgi?id=295518) describe silent/frozen
+HTML media after iOS backgrounding. Feature-detected Audio Session `playback`
+type matches this music app; it is not proof of a device-specific cure.
+
+Implementation order: establish controlled event/clock regressions, then add
+session setup and progress monitoring to the existing controller in `song.js`.
+Monitor only visible, requested, unpaused playback. Four seconds without progress
+with playable data permits one pause/seek/play recovery; another frozen interval
+or sixteen seconds loading leaves an explicit retry. Pause/reset/hidden pages
+cancel timers. Healthy progress and a new user request reset the recovery budget.
+Keep one timer per audio element and no background polling or retry loop.
+Separately fix the confirmed view-transition ownership race in `app.js`.
+Check controller/native resume/cancellation, existing player/queue/PWA tests,
+all stored lyric seeks, real in-app browser media and responsive navigation,
+independent review and scoped release audits. Physical iPhone interruption and
+audibility confirmation remain distinct from deterministic and desktop evidence.
+
+The owner also reports the player floating mid-screen until the iPhone PWA is
+quit. A deterministic stale-sampling case reproduces in the bootstrap: a
+foreground event reads a temporary positive height, the native viewport silently
+settles, and ordinary document scrolling never refreshes the cached anchor.
+Repair: cancel hidden/pending frame work, coalesce ordinary scroll/scrollend
+refreshes, and resample actual bounds at 100/300/1000ms after pageshow, foreground,
+orientation or focus dismissal. Stop those finite checks on hiding/restart; avoid
+unchanged CSS writes. Preserve viewport coordinate/zoom semantics and audio.
+This covers delayed measurements and abandoned frames, not proof that the
+physical device's compositor or native viewport metrics are always correct.
+
+Verified candidate: independent review found no material blockers. New frozen
+playback/native-resume cases fail against the old controller; all nine new
+viewport cases and the navigation reversal also failed before their fixes.
+Controller, queue, repeat, keyboard, progress, Media Session, PWA update,
+viewport (18 cases) and navigation tests pass. All 337 published songs pass
+the content contract; 26,748 ready/deferred seeks cover their 13,374 occurrences.
+In-app browser: all 74 line buttons across Koī Hor and Bolo Lakṣmī seek correctly;
+native playback, pause retention, paused keyboard seeking, playlist controls,
+navigation and empty search work. Final 390×844 ↔ 844×390, 820×1000, 1440×900,
+1920×1080 checks have no horizontal overflow and zero player-bottom gap with
+audio advancing. The real-CSS geometry fixture passes 26 checks, including
+late restoration without another viewport event and ordinary-scroll recovery.
+Python compilation, whitespace and public assembly pass. Offline shell test
+passes all 12 actual index asset URLs. Audio quality reports no errors.
+The retained trim audit checks 112 songs and reports six pre-existing evidence
+issues, identical with production pipeline code; none reports verified
+untrimmed material. No lyric, audio or timing changes are included.
+
+Release is isolated from the busy checkout on current production `cc1cf903`;
+only owned player/app code, regressions, this note, CI checks and shell v47 ship.
+Physical iPhone interruption/audibility and persistent native viewport/compositor
+misreporting remain unverified; this evidence does not establish flawlessness.
+
 Outcome: a compact library and a continuous, replayable listening session using
 the existing palette, type, player and responsive playlist layout.
 

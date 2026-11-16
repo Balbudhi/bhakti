@@ -102,6 +102,21 @@
           [`${label}: player retains its CSS size`, Math.abs(player.height - 100) < 1],
         );
       }
+      // A native lifecycle event can precede the final positive dimensions.
+      // No visualViewport event follows the correction in this regression.
+      Object.assign(measuredViewport, { height: 390, offsetTop: 0 });
+      window.dispatchEvent(new Event('pageshow'));
+      await settledFrame();
+      measuredViewport.height = 844;
+      await new Promise(resolve => setTimeout(resolve, 350));
+      await settledFrame();
+      checks.push(['late restoration settles player at 844 without another viewport event',
+        Math.abs(playerElement.getBoundingClientRect().bottom - 844) < 1]);
+      measuredViewport.height = 720;
+      window.dispatchEvent(new Event('scroll'));
+      await settledFrame();
+      checks.push(['ordinary scrolling refreshes silently corrected viewport bounds',
+        Math.abs(playerElement.getBoundingClientRect().bottom - 720) < 1]);
       results.textContent = checks.map(([name, passed]) => `${passed ? 'PASS' : 'FAIL'}: ${name}`).join('\n');
     })();
   }

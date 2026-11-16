@@ -8,7 +8,10 @@ const path = require('node:path');
 
 function boot({ visual = true } = {}) {
   const styles = new Map();
-  const frames = [];
+  const frames = new Map();
+  const timers = new Map();
+  const writes = [];
+  let frameId = 0, timerId = 0, now = 0;
   const window = new EventTarget();
   window.innerHeight = 844;
   const document = new EventTarget();
@@ -16,7 +19,7 @@ function boot({ visual = true } = {}) {
   document.documentElement = {
     clientHeight: 844,
     classList: { toggle() {} },
-    style: { setProperty: (name, value) => styles.set(name, value) },
+    style: { setProperty: (name, value) => { styles.set(name, value); writes.push([name, value]); } },
   };
   const viewport = visual ? Object.assign(new EventTarget(), {
     height: 844, offsetTop: 0, scale: 1,
@@ -27,10 +30,21 @@ function boot({ visual = true } = {}) {
   assert.ok(end > 0, 'app bootstrap boundary exists');
   vm.runInNewContext(source.slice(0, end) + '\n})();', {
     window, document, navigator: {}, matchMedia: () => ({ matches: false }),
-    requestAnimationFrame: callback => { frames.push(callback); return frames.length; },
+    requestAnimationFrame: callback => { frames.set(++frameId, callback); return frameId; },
+    cancelAnimationFrame: id => frames.delete(id),
+    setTimeout: (callback, delay) => { timers.set(++timerId, { callback, at: now + delay }); return timerId; },
+    clearTimeout: id => timers.delete(id),
   });
-  return { window, document, viewport, styles, frames,
-    flush() { frames.splice(0).forEach(callback => callback()); },
+  return { window, document, viewport, styles, timers, writes,
+    get frames() { return [...frames.values()]; },
+    flush() { const callbacks = [...frames.values()]; frames.clear(); callbacks.forEach(callback => callback()); },
+    dropFrames() { frames.clear(); },
+    advance(ms) {
+      now += ms;
+      for (const [id, timer] of [...timers]) {
+        if (timer.at <= now) { timers.delete(id); timer.callback(); }
+      }
+    },
     fire(target, name) { target.dispatchEvent(new Event(name)); },
   };
 }
@@ -144,4 +158,97 @@ test('unavailable layout and visual measurements retain the last usable bounds',
   app.flush();
   assert.equal(app.styles.get('--app-viewport-height'), '720px');
   assert.equal(app.styles.get('--app-viewport-top'), '0px');
+});
+
+// Lifecycle events may arrive before a positive but stale native measurement
+// settles. Sample a finite window, cancel stale work when hidden/restarted, and
+// let ordinary scrolling repair silently changed measurements. No geometry is
+// inferred, no scrolling is forced, and there is no continuous polling.
+for (const event of ['pageshow', 'orientationchange', 'visibilitychange', 'focusout']) {
+  test(`${event} samples delayed viewport settlement without another resize event`, () => {
+    const app = boot();
+    app.viewport.height = 390;
+    app.fire(['visibilitychange', 'focusout'].includes(event) ? app.document : app.window, event);
+    app.flush();
+    assert.equal(app.styles.get('--app-viewport-height'), '390px');
+    for (const [delay, height] of [[100, 600], [200, 700], [700, 844]]) {
+      app.viewport.height = height;
+      app.advance(delay);
+      app.flush();
+      assert.equal(app.styles.get('--app-viewport-height'), `${height}px`);
+    }
+    assert.equal(app.timers.size, 0, 'settling work ends after its finite window');
+    app.advance(10000);
+    assert.equal(app.frames.length, 0, 'there is no ongoing poll');
+  });
+}
+
+test('foreground recovery replaces a dropped pre-background animation frame', () => {
+  const app = boot();
+  app.viewport.height = 390;
+  app.fire(app.viewport, 'resize');
+  app.dropFrames(); // The browser suspends/discards an outstanding callback.
+  app.document.visibilityState = 'hidden';
+  app.fire(app.document, 'visibilitychange');
+  app.document.visibilityState = 'visible';
+  app.viewport.height = 700;
+  app.fire(app.document, 'visibilitychange');
+  app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '700px');
+});
+
+test('hiding cancels settling and rejects hidden viewport writes', () => {
+  const app = boot();
+  app.fire(app.window, 'pageshow');
+  assert.equal(app.timers.size, 3);
+  app.document.visibilityState = 'hidden';
+  app.fire(app.document, 'visibilitychange');
+  assert.equal(app.frames.length, 0);
+  assert.equal(app.timers.size, 0);
+  app.viewport.height = 390;
+  app.fire(app.viewport, 'resize');
+  app.fire(app.window, 'pageshow');
+  app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '844px');
+  assert.equal(app.timers.size, 0);
+});
+
+test('new lifecycle events replace pending settling checks', () => {
+  const app = boot();
+  app.fire(app.window, 'pageshow');
+  const oldTimers = [...app.timers.keys()];
+  app.fire(app.window, 'orientationchange');
+  assert.equal(app.timers.size, 3);
+  assert.ok(oldTimers.every(id => !app.timers.has(id)));
+  assert.equal(app.frames.length, 1);
+});
+
+test('ordinary scroll and scroll completion refresh silently changed bounds', () => {
+  const app = boot();
+  app.window.scrollY = 1200;
+  app.viewport.height = 700;
+  app.fire(app.window, 'scroll');
+  app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '700px');
+  app.viewport.height = 844;
+  app.fire(app.window, 'scrollend');
+  app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '844px');
+  assert.equal(app.styles.get('--app-viewport-top'), '0px');
+});
+
+test('unchanged viewport events do not rewrite layout properties', () => {
+  const app = boot();
+  const initialWrites = app.writes.length;
+  for (let index = 0; index < 4; index++) {
+    app.fire(app.viewport, 'scroll');
+    app.fire(app.window, 'scroll');
+    app.flush();
+  }
+  assert.equal(app.writes.length, initialWrites);
+  app.viewport.offsetTop = 120;
+  app.fire(app.viewport, 'scroll');
+  app.flush();
+  assert.equal(app.writes.length, initialWrites + 1);
+  assert.deepEqual(app.writes.at(-1), ['--app-viewport-top', '120px']);
 });

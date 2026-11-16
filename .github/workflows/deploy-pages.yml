@@ -34,6 +34,10 @@ jobs:
           node scripts/test_mobile_zoom.js
           node scripts/test_pwa_lifecycle.js
           node scripts/test_queue_controls.js
+          node scripts/test_playback.js
+          node scripts/test_playback_recovery.js
+          node scripts/test_repeat_playback.js
+          node scripts/test_view_transitions.js
       - uses: actions/configure-pages@v5
       - name: Assemble the published site
         run: python3 scripts/assemble_public_site.py

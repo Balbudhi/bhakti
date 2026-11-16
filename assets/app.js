@@ -10,8 +10,12 @@
   // keyboard dismissal. All fixed overlays share measured layout coordinates.
   const visualViewport = window.visualViewport;
   let viewportFrame = 0;
+  const viewportSettleTimers = new Set();
+  let viewportHeight = null;
+  let viewportTop = null;
   const setViewportBounds = () => {
     viewportFrame = 0;
+    if (document.visibilityState === "hidden") return;
     const usableHeight = value => Number.isFinite(value) && value > 0;
     // VisualViewport dimensions and offsets use CSS pixels at every zoom level.
     // Keep native magnification; only track the visible edge.
@@ -24,18 +28,51 @@
     if (!usableHeight(height)) return;
     const top = useVisual && Number.isFinite(visualViewport.offsetTop)
       ? Math.max(0, visualViewport.offsetTop) : 0;
-    document.documentElement.style.setProperty("--app-viewport-height", `${height}px`);
-    document.documentElement.style.setProperty("--app-viewport-top", `${top}px`);
+    if (height !== viewportHeight) {
+      document.documentElement.style.setProperty("--app-viewport-height", `${height}px`);
+      viewportHeight = height;
+    }
+    if (top !== viewportTop) {
+      document.documentElement.style.setProperty("--app-viewport-top", `${top}px`);
+      viewportTop = top;
+    }
   };
   const scheduleViewportBounds = () => {
+    if (document.visibilityState === "hidden") return;
     if (!viewportFrame) viewportFrame = requestAnimationFrame(setViewportBounds);
+  };
+  const cancelViewportRefresh = () => {
+    if (viewportFrame) cancelAnimationFrame(viewportFrame);
+    viewportFrame = 0;
+    viewportSettleTimers.forEach(clearTimeout);
+    viewportSettleTimers.clear();
+  };
+  const settleViewportBounds = () => {
+    cancelViewportRefresh();
+    if (document.visibilityState === "hidden") return;
+    scheduleViewportBounds();
+    // Restore, rotation and keyboard dismissal can report the old positive
+    // dimensions first, then settle without a further visualViewport event.
+    // Re-read actual bounds for a finite window; never infer keyboard geometry.
+    for (const delay of [100, 300, 1000]) {
+      const timer = setTimeout(() => {
+        viewportSettleTimers.delete(timer);
+        scheduleViewportBounds();
+      }, delay);
+      viewportSettleTimers.add(timer);
+    }
   };
   visualViewport?.addEventListener("resize", scheduleViewportBounds, { passive: true });
   visualViewport?.addEventListener("scroll", scheduleViewportBounds, { passive: true });
   window.addEventListener("resize", scheduleViewportBounds, { passive: true });
-  window.addEventListener("pageshow", scheduleViewportBounds);
+  window.addEventListener("scroll", scheduleViewportBounds, { passive: true });
+  window.addEventListener("scrollend", scheduleViewportBounds, { passive: true });
+  window.addEventListener("pageshow", settleViewportBounds);
+  window.addEventListener("orientationchange", settleViewportBounds);
+  document.addEventListener("focusout", settleViewportBounds);
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") scheduleViewportBounds();
+    if (document.visibilityState === "visible") settleViewportBounds();
+    else cancelViewportRefresh();
   });
   setViewportBounds();
 
@@ -328,7 +365,11 @@
     return songRoot;
   };
 
+  let finishViewTransition = null;
   const transitionTo = async (nextRoot, direction, prepare) => {
+    // A rapid reversal must settle the old DOM ownership before choosing its
+    // outgoing root. Old animation callbacks cannot remove the new view.
+    finishViewTransition?.();
     const currentRoot = appStage.querySelector(":scope > main");
     if (currentRoot === nextRoot) {
       prepare?.();
@@ -367,6 +408,15 @@
         settled = true;
         nextRoot.removeEventListener("animationend", onAnimationEnd);
         clearTimeout(timer);
+        currentRoot?.classList.remove(outgoingClass);
+        currentRoot?.remove();
+        nextRoot.classList.remove(incomingClass);
+        appStage.classList.remove("is-view-transitioning");
+        appStage.style.removeProperty("--app-swipe-scroll");
+        appStage.style.removeProperty("--app-swipe-inset-left");
+        appStage.style.removeProperty("--app-swipe-inset-right");
+        appStage.style.height = "";
+        finishViewTransition = null;
         resolve();
       };
       /* animationend bubbles. The lyric layers inside an arriving song finish
@@ -378,15 +428,8 @@
       };
       nextRoot.addEventListener("animationend", onAnimationEnd);
       const timer = setTimeout(finish, 280);
+      finishViewTransition = finish;
     });
-    currentRoot?.classList.remove(outgoingClass);
-    currentRoot?.remove();
-    nextRoot.classList.remove(incomingClass);
-    appStage.classList.remove("is-view-transitioning");
-    appStage.style.removeProperty("--app-swipe-scroll");
-    appStage.style.removeProperty("--app-swipe-inset-left");
-    appStage.style.removeProperty("--app-swipe-inset-right");
-    appStage.style.height = "";
   };
 
   const route = (nextView, slug, mode) => {
