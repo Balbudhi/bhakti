@@ -95,7 +95,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('assets/app.js', page)
         self.assertIn('AI-based transcription, timing, and translation pipeline', page)
         self.assertIn('<h2 id="aboutHeading">About these songs</h2>', page)
-        self.assertIn('<p>These pages are produced by an AI-based transcription, timing, and translation pipeline.</p>', page)
+        self.assertIn('<p>These pages are produced by an AI-based transcription, timing, and translation pipeline. Any errors belong to the pipeline, not to the poet, singer, or musician.</p>', page)
         self.assertNotIn('please forgive', page.casefold())
         self.assertNotIn('corrections are welcome', page.casefold())
         self.assertIn('song.singer || song.credit', script)
