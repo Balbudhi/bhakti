@@ -1,0 +1,44 @@
+{
+  "catalogueCount": 345,
+  "runs": 1024,
+  "meanRank": {
+    "randomRank": 173.376953125,
+    "productionRank": 173.3466796875
+  },
+  "windows": {
+    "first10": {
+      "random": 21,
+      "production": 19,
+      "gains": 6,
+      "losses": 8,
+      "twoSidedConditionalBinomialP": 0.79052734375
+    },
+    "first20": {
+      "random": 49,
+      "production": 54,
+      "gains": 23,
+      "losses": 18,
+      "twoSidedConditionalBinomialP": 0.5327092552361137
+    },
+    "first50": {
+      "random": 145,
+      "production": 151,
+      "gains": 43,
+      "losses": 37,
+      "twoSidedConditionalBinomialP": 0.5764306261883931
+    },
+    "tail20": {
+      "random": 51,
+      "production": 49,
+      "gains": 13,
+      "losses": 15,
+      "twoSidedConditionalBinomialP": 0.8505540192127228
+    }
+  },
+  "sourceSpotCheckHashes": {
+    "jeevan-ke-har-mode": "e70bd3a6f322303e3d58f397c5d2431075ffe47fe9f160661ea3d30527eb2664",
+    "jagadoddharana": "ec7ab28a2847f1f5aad262c1f58675ecf848d4e90c4a1a6f63b69d2990f126a6",
+    "meruguvantidi-alamelumanga": "07dd7f882fbc4dbefea7ba5e6a8761e40eec56373f3315e820875765e607dc05",
+    "har-jiyo-kirpa-karo": "0b34d5d8011425a6a6d0986fafaf0ec7ad9a9e74f4101666b940e0d071680c99"
+  }
+}

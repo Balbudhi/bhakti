@@ -56,11 +56,14 @@ jobs:
           sudo apt-get install -y ffmpeg
           python -m pip install --upgrade pip
           python -m pip install --upgrade --pre "yt-dlp[default]"
-          python -m pip install "indic-transliteration>=2.3,<3"
+          python -m pip install "indic-transliteration>=2.3,<3" "numpy>=1.26,<3"
           install -d /home/runner/.config/yt-dlp
           printf '%s\n' '--js-runtimes node' '--extractor-args youtube:player_client=web_embedded' > /home/runner/.config/yt-dlp/config
           node --version
           yt-dlp --version
+
+      - name: Verify physical audio measurements on this host
+        run: python3 scripts/test_bhakti_shuffle_audio.py
 
       - name: Run production intake pipeline
         env:
@@ -115,6 +118,7 @@ jobs:
         run: |
           python3 scripts/publish_media_release.py
           python3 scripts/rebuild_public_readers.py
+          python3 scripts/audit_shuffle_profiles.py
 
       - name: Commit generated readers
         id: commit
@@ -125,7 +129,7 @@ jobs:
           import subprocess
 
           changed = subprocess.run(
-              ["git", "status", "--porcelain=v1", "--untracked-files=all", "--", "data/media.json", "data/songs.js", "songs"],
+              ["git", "status", "--porcelain=v1", "--untracked-files=all", "--", "data/media.json", "data/songs.js", "data/shuffle-profiles.js", "data/shuffle-profile-reviews.json", "songs"],
               check=True,
               capture_output=True,
               text=True,
@@ -133,7 +137,7 @@ jobs:
           allowed_names = {"data.js", "index.html"}
           for row in changed:
               path = row[3:]
-              if path in {"data/media.json", "data/songs.js"} or (path.startswith("songs/") and path.rsplit("/", 1)[-1] in allowed_names):
+              if path in {"data/media.json", "data/songs.js", "data/shuffle-profiles.js", "data/shuffle-profile-reviews.json"} or (path.startswith("songs/") and path.rsplit("/", 1)[-1] in allowed_names):
                   subprocess.run(["git", "add", "--", path], check=True)
           PY
           if git diff --cached --quiet; then

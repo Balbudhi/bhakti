@@ -195,6 +195,75 @@ same public allowlist assembler, which excludes private pipeline/review state an
 rejects a mixed reader snapshot before replacing its artifact. These are release
 consistency checks, not acoustic qualification or historical crop approval.
 
+## Mandatory shuffle assessments
+
+Every future intake must complete semantic and audio assessment before public
+generation. Normal `bhakti_pipeline.py --publish` intake invokes both after the
+existing source, timing, gloss and translation gates. It prepares the final reader
+with accepted overrides, then assesses its performed text and the exact retained
+first listener audio. Semantic extraction and its separate critical review use
+the existing provider scheduler, run budget, call ceiling and deadline. Physical
+audio measurements run locally; they do not establish BPM, meter, devotional
+meaning or human listening approval. Playback and each shuffle use the generated
+features locally, with no API calls.
+
+Use the ordinary bounded intake command; no separate manual profile step is
+required for a qualified input:
+
+```sh
+python3 scripts/bhakti_pipeline.py --workers 7 --publish --batch intake.json
+```
+
+`data/shuffle-profile-policy.json` pins qualified methods and supported input
+domains. A new model, language, source-review status or audio format outside that
+policy holds adoption pending qualification. Missing, failed, dispatched/pending
+or stale records cannot be relabelled as accepted unknown. An explicit unknown
+with the required substantive review is a completed assessment; unsupported
+legacy text remains unavailable, without pretending it was reviewed. The pinned
+legacy exception list currently contains only `koi-hor-nahi`,
+`main-murakh-main-anpad`, and `jab-dil-udaas-ho-to`, whose upstream source or
+translation status prevents semantic assessment. These three remain playable
+with neutral missing semantics. The exceptions are song-wide and can also allow
+neutral missing audio; remove each exception after its upstream editorial repair
+and complete qualification. Every other current song and every new song is
+required. No assessment result excludes a track from shuffle.
+
+Private cached requests, responses and audio receipts live under each song's
+`.transcription/pipeline/shuffle/`; library assessment may use a separate private
+cache. Reuse requires matching input and method identities. Text, gloss or
+performed-order changes invalidate semantic evidence; changed retained audio
+bytes invalidate audio evidence. A new URL for the same verified bytes does not.
+Never substitute another recording with the same title or duration. The existing
+trim and boundary checks remain mandatory. Resume only within the existing run
+limits; do not delete ambiguous dispatched/failed records to trigger blind calls.
+
+`data/shuffle-profile-reviews.json` stores sanitized acceptance summaries and
+evidence hashes, not private responses. Public `data/shuffle-profiles.js` contains
+only the accepted compact projection. Generation binds it to the catalogue with
+a shared revision; final assembly checks the exact reader/media snapshot and
+rejects stale or mixed pairs, including changes from other reader writers.
+
+Separate editorial review may reduce or exclude an existing accepted feature;
+it cannot add tags or roles or increase another feature's weight. The sanitized
+`editorialReview` binds an independent assistant's evidence hash to both the
+semantic input hash and `baseFeaturesHash`; `editorialAdjustments` records exact
+feature targets, reduction factors, reasons and performed source line IDs. Model
+evidence and method identities remain unchanged, and editorial metadata is not
+shipped to playback. Adoption preserves corrections for identical input and base
+features. Changed base features require fresh editorial review; changed source
+never inherits old corrections. No weights are renormalized after a reduction.
+
+Regeneration and the release audit are zero-call operations:
+
+```sh
+python3 scripts/bhakti_pipeline.py --generate-only --batch intake.json
+python3 scripts/audit_shuffle_profiles.py
+```
+
+Generate-only reuses accepted current assessments; it does not repair missing or
+stale required profiles by spending money. Resolve its reported assessment or
+qualification hold through bounded intake/review before attempting publication.
+
 ## How a meaning becomes English
 
 The recording determines the performed source and order. A dictionary cannot add

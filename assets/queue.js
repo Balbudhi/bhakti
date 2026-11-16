@@ -227,7 +227,25 @@
     };
   };
 
-  const shuffle = (items, random, sessionId) => {
+  const applyShuffleOrder = (items, fixedPrefix, order) => {
+    const result = order(items, fixedPrefix);
+    const occurrences = new Set(items);
+    if (!Array.isArray(result) || result.length !== items.length
+      || new Set(result).size !== items.length
+      || result.some(item => !occurrences.has(item))) {
+      throw new TypeError("shuffle order must preserve every occurrence unchanged");
+    }
+    if (items.slice(0, fixedPrefix).some((item, index) => result[index] !== item)) {
+      throw new TypeError("shuffle order must preserve the fixed prefix");
+    }
+    return result;
+  };
+
+  const shuffle = (items, random, sessionId, order) => {
+    if (order !== undefined) {
+      const initial = create({ mode: "shuffle", items, currentIndex: 0, sessionId });
+      return rebuild(initial, applyShuffleOrder(initial.items, 0, order));
+    }
     const fullCatalogue = isFullCatalogue(items);
     if (!fullCatalogue) return create({
       mode: "shuffle",
@@ -247,10 +265,15 @@
     });
   };
 
-  const shuffleRemaining = (state, random) => rebuild(state, [
-    ...state.items.slice(0, state.currentIndex + 1),
-    ...fisherYates(state.items.slice(state.currentIndex + 1), random),
-  ], state.currentIndex, state.mode, state.shuffleAll);
+  const shuffleRemaining = (state, random, order) => {
+    if (order !== undefined) {
+      return rebuild(state, applyShuffleOrder(state.items, state.currentIndex + 1, order));
+    }
+    return rebuild(state, [
+      ...state.items.slice(0, state.currentIndex + 1),
+      ...fisherYates(state.items.slice(state.currentIndex + 1), random),
+    ], state.currentIndex, state.mode, state.shuffleAll);
+  };
 
   const catalogueMap = catalogue => catalogue instanceof Map
     ? catalogue

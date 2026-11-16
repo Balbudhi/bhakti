@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "qualificationVersion": 1,
+  "legacySongs": {
+    "1b54ca76": "koi-hor-nahi",
+    "99d84a7b": "main-murakh-main-anpad",
+    "a4147270": "jab-dil-udaas-ho-to"
+  },
+  "fallbackKinds": [
+    "human"
+  ],
+  "methods": {
+    "semantic": {
+      "qualified": true,
+      "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+      "id": "source-grounded-semantic-review",
+      "version": 4,
+      "model": "google/gemini-3.7-flash",
+      "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+      "projectionVersion": 3,
+      "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527",
+      "languages": [
+        "Awadhi",
+        "Bengali",
+        "Braj",
+        "Braj Bhasha",
+        "Gujarati",
+        "Hindi",
+        "Hindustani",
+        "Kannada",
+        "Marathi",
+        "Odia",
+        "Persian",
+        "Punjabi",
+        "Rajasthani",
+        "Sahaskritī",
+        "Sanskrit",
+        "Tamil",
+        "Telugu",
+        "Urdu"
+      ],
+      "maxLines": 539,
+      "maxTextBytes": 787911,
+      "sourceStatus": [
+        "reviewed",
+        "audio-reviewed"
+      ],
+      "translationStatus": [
+        "reviewed",
+        "gloss-derived literal",
+        "word-gloss-reviewed"
+      ]
+    },
+    "audio": {
+      "id": "physical",
+      "version": "physical-2",
+      "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29",
+      "qualified": true,
+      "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a",
+      "codecs": [
+        "aac",
+        "mp3",
+        "opus"
+      ],
+      "sampleRates": [
+        44100,
+        48000
+      ],
+      "channels": [
+        2
+      ],
+      "maxChannels": 2,
+      "minDurationSeconds": 39.732244897959184,
+      "maxDurationSeconds": 7228.381
+    }
+  }
+}

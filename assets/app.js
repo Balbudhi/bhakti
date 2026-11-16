@@ -97,6 +97,26 @@
     .replace(/'/g, "&#39;");
   const newSessionId = () => globalThis.crypto?.randomUUID?.()
     || `queue-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  const runShuffle = (operation, ...args) => {
+    const engine = window.BHAKTI_SHUFFLE;
+    const snapshot = window.BHAKTI_SHUFFLE_PROFILES;
+    const revision = window.BHAKTI_SHUFFLE_REVISION;
+    if (typeof engine?.order !== "function" || snapshot?.schemaVersion !== 1
+      || snapshot.taxonomyVersion !== 1 || typeof revision !== "string" || !revision
+      || snapshot.revision !== revision || !snapshot.profiles) {
+      return operation(...args);
+    }
+    try {
+      return operation(...args, (items, fixedPrefix) => engine.order(items, {
+        seed: Math.floor(args[1]() * 0x100000000) >>> 0,
+        fixedPrefix,
+        profiles: snapshot.profiles,
+      }).items);
+    } catch (error) {
+      console.warn("Shuffle ordering unavailable; using random order", error);
+      return operation(...args);
+    }
+  };
   const pathSlug = () => {
     const match = location.pathname.match(/^\/songs\/([^/]+)\/?$/);
     return match ? decodeURIComponent(match[1]) : "";
@@ -699,7 +719,7 @@
   document.addEventListener("bhakti:shuffle-request", async event => {
     const songs = event.detail?.songs || [];
     if (!songs.length) return;
-    const next = Queue.shuffle(songs, Math.random, newSessionId());
+    const next = runShuffle(Queue.shuffle, songs, Math.random, newSessionId());
     setQueueState(next);
     selectAudioSong(currentSong, { force: true });
     await showSong(currentSong.slug);
@@ -772,7 +792,7 @@
       selectAudioSong(currentSong, { autoplay: true, force: true });
       if (currentSong) void showSong(currentSong.slug, { historyMode: "replace" });
     } else if (action === "shuffle") {
-      setQueueState(Queue.shuffleRemaining(queueState, Math.random));
+      setQueueState(runShuffle(Queue.shuffleRemaining, queueState, Math.random));
       if (view === "library" && currentSong) void showSong(currentSong.slug, { historyMode: "replace" });
     }
     else if (action === "clear") clearQueue();

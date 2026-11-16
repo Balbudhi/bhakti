@@ -1,0 +1,609 @@
+{
+  "schemaVersion": 1,
+  "vocabularyVersion": 1,
+  "policy": "Evidence-grounded concepts; themes and actions are optional; unknown is allowed. Named figures require contextual identity. No doctrinal or identity implication follows from similarity.",
+  "concepts": [
+    {
+      "id": "theme.impermanence",
+      "facet": "theme",
+      "label": "Impermanence",
+      "definition": "The passing, fragility or unreliability of worldly life or possessions.",
+      "exclude": [
+        "Any mention of time without transience."
+      ]
+    },
+    {
+      "id": "theme.longing",
+      "facet": "theme",
+      "label": "Longing and separation",
+      "definition": "Yearning for presence, meeting or reunion; distress at absence of the beloved or sought one.",
+      "exclude": [
+        "Praise or affection alone."
+      ]
+    },
+    {
+      "id": "theme.refuge",
+      "facet": "theme",
+      "label": "Refuge and protection",
+      "definition": "Seeking, granting or relying on shelter, rescue or protection.",
+      "exclude": [
+        "A passing honorific meaning protector without thematic development."
+      ]
+    },
+    {
+      "id": "theme.grace",
+      "facet": "theme",
+      "label": "Grace",
+      "definition": "Favor or compassionate help enabling the seeker or transforming life; whether it is merited is not assumed.",
+      "exclude": [
+        "Generic divine praise without help or favor."
+      ]
+    },
+    {
+      "id": "theme.service",
+      "facet": "theme",
+      "label": "Devoted service",
+      "definition": "Doing the beloved, teacher or divine purpose; attending to another as devoted service.",
+      "exclude": [
+        "Artist or professional service credits."
+      ]
+    },
+    {
+      "id": "theme.divine_presence",
+      "facet": "theme",
+      "label": "Divine presence and pervasion",
+      "definition": "The divine encountered within the person, throughout the world or in all beings.",
+      "exclude": [
+        "Automatically infer a particular nondual doctrine."
+      ]
+    },
+    {
+      "id": "theme.limits_of_knowing",
+      "facet": "theme",
+      "label": "Limits of knowing",
+      "definition": "The inability of thought, speech or senses to encompass the addressed reality.",
+      "exclude": [
+        "Merely asking for knowledge."
+      ]
+    },
+    {
+      "id": "theme.liberation",
+      "facet": "theme",
+      "label": "Liberation",
+      "definition": "Release from bondage, rebirth or constrained existence as the text understands it.",
+      "exclude": [
+        "Ordinary relief from one practical difficulty."
+      ]
+    },
+    {
+      "id": "theme.guidance",
+      "facet": "theme",
+      "label": "Guidance",
+      "definition": "Being taught, led, awakened or guided by a teacher or divine presence.",
+      "exclude": [
+        "Every mention of Guru."
+      ]
+    },
+    {
+      "id": "theme.surrender",
+      "facet": "theme",
+      "label": "Surrender",
+      "definition": "Yielding control, ownership or self-reliance to the beloved, teacher or divine.",
+      "exclude": [
+        "Any request for practical help."
+      ]
+    },
+    {
+      "id": "theme.awakening",
+      "facet": "theme",
+      "label": "Awakening",
+      "definition": "Coming out of sleep, delusion or unawareness as a spiritual transformation.",
+      "exclude": [
+        "A literal morning wakeup with no spiritual implication."
+      ]
+    },
+    {
+      "id": "theme.gratitude",
+      "facet": "theme",
+      "label": "Gratitude",
+      "definition": "Acknowledging received goodness, help or favor with thanks.",
+      "exclude": [
+        "Praise alone without received goodness."
+      ]
+    },
+    {
+      "id": "theme.joy",
+      "facet": "theme",
+      "label": "Devotional joy",
+      "definition": "Joy, delight, celebration or bliss as a substantial lyric theme.",
+      "exclude": [
+        "Energetic audio or a single auspicious epithet."
+      ]
+    },
+    {
+      "id": "theme.compassion",
+      "facet": "theme",
+      "label": "Compassion",
+      "definition": "Concern for suffering and kindness toward another, or appeal to that concern.",
+      "exclude": [
+        "All statements of divine power."
+      ]
+    },
+    {
+      "id": "theme.ethical_conduct",
+      "facet": "theme",
+      "label": "Ethical conduct",
+      "definition": "Instruction, reflection or commitment concerning how one should act toward others or order life.",
+      "exclude": [
+        "Importing a moral from an unrelated narrative."
+      ]
+    },
+    {
+      "id": "theme.detachment",
+      "facet": "theme",
+      "label": "Detachment",
+      "definition": "Letting go of craving, possessiveness or worldly attachment.",
+      "exclude": [
+        "Any occurrence of the word world."
+      ]
+    },
+    {
+      "id": "theme.critique_of_ritual",
+      "facet": "theme",
+      "label": "Critique of outward ritual",
+      "definition": "Questioning external observances when detached from inward understanding or devotion.",
+      "exclude": [
+        "Ritual performance itself or a blanket rejection of ritual."
+      ]
+    },
+    {
+      "id": "theme.beloved_relationship",
+      "facet": "theme",
+      "label": "Loving relationship",
+      "definition": "An intimate loving relation to the addressed or narrated beloved.",
+      "exclude": [
+        "Inferring romantic identity or a specific deity from beloved alone."
+      ]
+    },
+    {
+      "id": "theme.humility",
+      "facet": "theme",
+      "label": "Humility and limitation",
+      "definition": "Recognizing personal inadequacy, dependence, lowliness or fallibility.",
+      "exclude": [
+        "A conventional signature without developed humility."
+      ]
+    },
+    {
+      "id": "theme.name_power",
+      "facet": "theme",
+      "label": "The name and its efficacy",
+      "definition": "The significance or transformative power of divine or teacher names.",
+      "exclude": [
+        "One name mentioned as identification."
+      ]
+    },
+    {
+      "id": "theme.beauty",
+      "facet": "theme",
+      "label": "Beauty and divine form",
+      "definition": "Sustained contemplation or description of beauty, adornment or embodied form.",
+      "exclude": [
+        "One adjective in a list."
+      ]
+    },
+    {
+      "id": "theme.creation",
+      "facet": "theme",
+      "label": "Creation and cosmic order",
+      "definition": "Origin, sustaining or dissolution of the cosmos or order of existence.",
+      "exclude": [
+        "Every mention of earth or sky."
+      ]
+    },
+    {
+      "id": "theme.equality",
+      "facet": "theme",
+      "label": "Shared dignity and inclusion",
+      "definition": "Equal regard, inclusion or rejection of hierarchy between people.",
+      "exclude": [
+        "Assuming an egalitarian message from an author or tradition."
+      ]
+    },
+    {
+      "id": "theme.meeting",
+      "facet": "theme",
+      "label": "Meeting and arrival",
+      "definition": "Arrival, encounter, reunion or welcoming as the lyric focus.",
+      "exclude": [
+        "Merely naming a place."
+      ]
+    },
+    {
+      "id": "action.praise",
+      "facet": "action",
+      "label": "Praise",
+      "definition": "Extolling, hailing or worshipping the addressed or narrated subject.",
+      "exclude": [
+        "Poet or performer credit."
+      ]
+    },
+    {
+      "id": "action.petition",
+      "facet": "action",
+      "label": "Petition",
+      "definition": "Asking the addressed other for a specific gift, action, help or transformation.",
+      "exclude": [
+        "A narrator reporting someone else asked, without retaining narrative role."
+      ]
+    },
+    {
+      "id": "action.meditation",
+      "facet": "action",
+      "label": "Meditation and attention",
+      "definition": "Directing or steadying attention in contemplation.",
+      "exclude": [
+        "Automatically convert attention to audible chanting."
+      ]
+    },
+    {
+      "id": "action.remembrance",
+      "facet": "action",
+      "label": "Remembrance and name repetition",
+      "definition": "Remembering or repeating an addressed name or teaching.",
+      "exclude": [
+        "Name used only for identification."
+      ]
+    },
+    {
+      "id": "action.invitation",
+      "facet": "action",
+      "label": "Invitation",
+      "definition": "Calling or inviting someone to come, enter, stay or appear.",
+      "exclude": [
+        "Any statement that someone exists."
+      ]
+    },
+    {
+      "id": "action.offering",
+      "facet": "action",
+      "label": "Offering",
+      "definition": "Presenting worship, self, objects or acts to another.",
+      "exclude": [
+        "Generic praise with no offering."
+      ]
+    },
+    {
+      "id": "action.pilgrimage",
+      "facet": "action",
+      "label": "Pilgrimage and devotional journey",
+      "definition": "Going toward a sacred place, gathering or sought presence as devotional practice.",
+      "exclude": [
+        "Any place-name."
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "subject.shiva",
+      "facet": "subject",
+      "label": "Śiva",
+      "definition": "The figure or sacred subject explicitly identified in context as Śiva.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.shakti",
+      "facet": "subject",
+      "label": "Śakti",
+      "definition": "The figure or sacred subject explicitly identified in context as Śakti.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.vishnu",
+      "facet": "subject",
+      "label": "Viṣṇu",
+      "definition": "The figure or sacred subject explicitly identified in context as Viṣṇu.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.lakshmi",
+      "facet": "subject",
+      "label": "Lakṣmī",
+      "definition": "The figure or sacred subject explicitly identified in context as Lakṣmī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.sai",
+      "facet": "subject",
+      "label": "Śirḍī Sāī",
+      "definition": "The figure or sacred subject explicitly identified in context as Śirḍī Sāī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject.",
+        "सइयाँ / saiyā̃ meaning beloved does not identify Sāī."
+      ]
+    },
+    {
+      "id": "subject.rama",
+      "facet": "subject",
+      "label": "Rāma",
+      "definition": "The figure or sacred subject explicitly identified in context as Rāma.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.krishna",
+      "facet": "subject",
+      "label": "Kṛṣṇa",
+      "definition": "The figure or sacred subject explicitly identified in context as Kṛṣṇa.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.jagannatha",
+      "facet": "subject",
+      "label": "Jagannātha",
+      "definition": "The figure or sacred subject explicitly identified in context as Jagannātha.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.guru",
+      "facet": "subject",
+      "label": "Guru",
+      "definition": "A spiritual teacher as an unnamed or named relational focus; this does not establish historical identity.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.ganesha",
+      "facet": "subject",
+      "label": "Gaṇeśa",
+      "definition": "The figure or sacred subject explicitly identified in context as Gaṇeśa.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.vaishno_devi",
+      "facet": "subject",
+      "label": "Vaiṣṇo Devī",
+      "definition": "The figure or sacred subject explicitly identified in context as Vaiṣṇo Devī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.hanuman",
+      "facet": "subject",
+      "label": "Hanumān",
+      "definition": "The figure or sacred subject explicitly identified in context as Hanumān.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.sarasvati",
+      "facet": "subject",
+      "label": "Sarasvatī",
+      "definition": "The figure or sacred subject explicitly identified in context as Sarasvatī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.venkatesha",
+      "facet": "subject",
+      "label": "Veṅkaṭeśa",
+      "definition": "The figure or sacred subject explicitly identified in context as Veṅkaṭeśa.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.nrisimha",
+      "facet": "subject",
+      "label": "Nṛsiṃha",
+      "definition": "The figure or sacred subject explicitly identified in context as Nṛsiṃha.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.kali",
+      "facet": "subject",
+      "label": "Kālī",
+      "definition": "The figure or sacred subject explicitly identified in context as Kālī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.shyamala",
+      "facet": "subject",
+      "label": "Śyāmalā",
+      "definition": "The figure or sacred subject explicitly identified in context as Śyāmalā.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.dattatreya",
+      "facet": "subject",
+      "label": "Dattātreya",
+      "definition": "The figure or sacred subject explicitly identified in context as Dattātreya.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.khandoba",
+      "facet": "subject",
+      "label": "Khaṇḍobā",
+      "definition": "The figure or sacred subject explicitly identified in context as Khaṇḍobā.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.madhumati_shyamala",
+      "facet": "subject",
+      "label": "Madhumatī Śyāmalā",
+      "definition": "The figure or sacred subject explicitly identified in context as Madhumatī Śyāmalā.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.parvati",
+      "facet": "subject",
+      "label": "Pārvatī",
+      "definition": "The figure or sacred subject explicitly identified in context as Pārvatī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.devi",
+      "facet": "subject",
+      "label": "Devī",
+      "definition": "The figure or sacred subject explicitly identified in context as Devī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.ayyappa",
+      "facet": "subject",
+      "label": "Ayyappa",
+      "definition": "The figure or sacred subject explicitly identified in context as Ayyappa.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.vayu",
+      "facet": "subject",
+      "label": "Vāyu",
+      "definition": "The figure or sacred subject explicitly identified in context as Vāyu.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.sita",
+      "facet": "subject",
+      "label": "Sītā",
+      "definition": "The figure or sacred subject explicitly identified in context as Sītā.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.ramakrishna",
+      "facet": "subject",
+      "label": "Rāmakṛṣṇa",
+      "definition": "The figure or sacred subject explicitly identified in context as Rāmakṛṣṇa.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.durga",
+      "facet": "subject",
+      "label": "Durgā",
+      "definition": "The figure or sacred subject explicitly identified in context as Durgā.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.vitthala",
+      "facet": "subject",
+      "label": "Viṭṭhala",
+      "definition": "The figure or sacred subject explicitly identified in context as Viṭṭhala.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.hayagriva",
+      "facet": "subject",
+      "label": "Hayagrīva",
+      "definition": "The figure or sacred subject explicitly identified in context as Hayagrīva.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.arunachala",
+      "facet": "subject",
+      "label": "Aruṇācala",
+      "definition": "The figure or sacred subject explicitly identified in context as Aruṇācala.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.kartikeya",
+      "facet": "subject",
+      "label": "Kārtikeya",
+      "definition": "The figure or sacred subject explicitly identified in context as Kārtikeya.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    },
+    {
+      "id": "subject.sharada_devi",
+      "facet": "subject",
+      "label": "Śāradā Devī",
+      "definition": "The figure or sacred subject explicitly identified in context as Śāradā Devī.",
+      "exclude": [
+        "Do not infer identity from singer, composer, album, title alone, or substring resemblance.",
+        "A poet signature or incidental reference is not a central subject."
+      ]
+    }
+  ]
+}

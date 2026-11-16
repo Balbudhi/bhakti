@@ -7,6 +7,7 @@ import hashlib
 from pathlib import Path
 import shutil
 import tempfile
+import bhakti_shuffle_profiles as shuffle_profiles
 
 from bhakti_boundary_timebase import (boundary_transaction, boundary_snapshot,
     require_boundary_snapshot, require_completed_boundary_transaction)
@@ -27,7 +28,13 @@ def assemble_public_site(root: Path) -> None:
 def _assemble_locked(root: Path, songs: list[Path]) -> None:
     for song in songs:
         require_completed_boundary_transaction(song)
+    profile_paths = [root / path for path in (shuffle_profiles.POLICY, shuffle_profiles.REVIEWS,
+        shuffle_profiles.TAXONOMY, 'data/media.json') if (root / path).is_file()]
+    profile_fingerprints = {path: hashlib.sha256(path.read_bytes()).hexdigest() for path in profile_paths}
+    has_profiles = shuffle_profiles.enabled(root)
     files = [root / name for name in PUBLIC_ROOT_FILES]
+    if has_profiles:
+        files.append(root / shuffle_profiles.PUBLIC)
     files.append(root / 'data/songs.js')
     files.extend(path for path in (root / 'assets').rglob('*') if path.is_file())
     files.extend(song / name for song in songs for name in ('index.html', 'data.js') if (song / name).is_file())
@@ -41,6 +48,8 @@ def _assemble_locked(root: Path, songs: list[Path]) -> None:
             raise RuntimeError(f'internal or linked file in public allowlist: {relative}')
     snapshots = {song: boundary_snapshot(song, [song / 'index.html', song / 'data.js']) for song in songs}
     fingerprints = {path: hashlib.sha256(path.read_bytes()).hexdigest() for path in files}
+    # Bind the public bytes BEFORE validation; a direct writer may ignore locks.
+    shuffle_profiles.validate_public_profiles(root, required=False)
     with tempfile.TemporaryDirectory(prefix='.public-site-', dir=root) as temporary:
         staged = Path(temporary) / 'site'
         staged.mkdir()
@@ -55,6 +64,9 @@ def _assemble_locked(root: Path, songs: list[Path]) -> None:
             raise RuntimeError('public assembly song population changed')
         for song, snapshot in snapshots.items():
             require_boundary_snapshot(song, snapshot)
+        for path, fingerprint in profile_fingerprints.items():
+            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != fingerprint:
+                raise RuntimeError('shuffle assessment inputs changed during public assembly')
         for path, fingerprint in fingerprints.items():
             copied = staged / path.relative_to(root)
             if (hashlib.sha256(path.read_bytes()).hexdigest() != fingerprint

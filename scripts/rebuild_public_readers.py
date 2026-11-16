@@ -61,7 +61,7 @@ def _rebuild(directory: Path) -> tuple[bool, bool]:
             changed = True
     if changed:
         data_path.write_text(data_javascript(data), encoding="utf-8")
-    page = pipeline.page_html(data["SONG_META"])
+    page = pipeline.page_html(data["SONG_META"], directory.name)
     index_path = directory / "index.html"
     page_changed = not index_path.is_file() or index_path.read_text(encoding="utf-8") != page
     if page_changed:

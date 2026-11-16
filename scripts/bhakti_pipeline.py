@@ -21,6 +21,7 @@ import concurrent.futures
 import copy
 import difflib
 import hashlib
+import bhakti_shuffle_profiles
 import json
 import math
 import os
@@ -5529,6 +5530,9 @@ def reviewed_display_title(candidate: str, lines: list[dict[str, Any]]) -> str:
 
 def page_html(meta: dict[str, Any], slug: str) -> str:
     title = meta["title"]
+    shuffle_assets = ('  <script src="/data/shuffle-profiles.js?v=shuffle-20261115"></script>\n'
+                      '  <script src="/assets/shuffle.js?v=shuffle-20261115"></script>\n'
+                      if bhakti_shuffle_profiles.enabled(ROOT) else '')
     escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                            .replace('"', "&quot;").replace("'", "&#39;"))
     people: dict[str, list[str]] = {}
@@ -5621,10 +5625,10 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
   </div>
   <script src="data.js?v={escape(data_asset_version)}"></script>
   <script src="/data/songs.js?v=contract-20260823-1"></script>
-  <script src="/assets/queue.js?v=ui-20261023"></script>
+{shuffle_assets}  <script src="/assets/queue.js?v=shuffle-20261115"></script>
   <script src="/assets/library.js?v=touch-20261023"></script>
   <script src="/assets/song.js?v={escape(song_asset_version)}"></script>
-  <script src="/assets/app.js?v=ui-20261023-3"></script>
+  <script src="/assets/app.js?v=shuffle-20261115"></script>
   <script src="/assets/pwa.js?v=contract-20260827-9"></script>
 </body>
 </html>
@@ -5723,10 +5727,7 @@ def write_catalogue() -> None:
     for entry in catalogue:
         entry["queueNumber"] = queue_numbers[entry["slug"]]
     catalogue.sort(key=catalogue_sort_key)
-    (ROOT / "data" / "songs.js").write_text(
-        "window.BHAKTI_SONGS = " + json.dumps(catalogue, ensure_ascii=False, indent=2) + ";\n",
-        encoding="utf-8",
-    )
+    bhakti_shuffle_profiles.publish_catalogue(ROOT, catalogue)
     write_sitemap(entry["slug"] for entry in catalogue)
 
 
@@ -5840,7 +5841,7 @@ def reviewed_line_labels(job: dict[str, Any], lines: list[dict[str, Any]]) -> di
     return cleaned
 
 
-def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None) -> None:
+def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None, prepare_only: bool = False) -> dict[str, Any] | None:
     # The source-repair caller validates this metadata against exact occurrence
     # lineage before and after private generation. Reapplying registry indices
     # from the old performance would undo that mapping. Ordinary intake retains
@@ -5848,12 +5849,13 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
     if source_reader_metadata is not None and (write_catalogue_after or not isinstance(source_reader_metadata, dict)):
         raise ValueError('preserved source metadata is only valid for private candidate generation')
     with boundary_transaction(song_dir):
-        _generate(song_dir, job, source, audited, timing, glosses, translations,
+        return _generate(song_dir, job, source, audited, timing, glosses, translations,
                   write_catalogue_after=write_catalogue_after,
-                  source_reader_metadata=source_reader_metadata, source_semantic_evidence=source_semantic_evidence)
+                  source_reader_metadata=source_reader_metadata, source_semantic_evidence=source_semantic_evidence,
+                  prepare_only=prepare_only)
 
 
-def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None) -> None:
+def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None, prepare_only: bool = False) -> dict[str, Any] | None:
     require_completed_boundary_transaction(song_dir)
     bhakti_reviewed_source.require_current(song_dir, audited)
     reviewed_languages = bhakti_reviewed_source.corrected_languages(audited)
@@ -6018,6 +6020,13 @@ def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audit
             "window.SONG_SEQUENCE = " + json.dumps(sequence, ensure_ascii=False, indent=2) + ";\n\n" +
             "window.SONG_TIMINGS = " + json.dumps(times, ensure_ascii=False, indent=2) + ";\n")
     editorial_baselines.assert_english_preserved(song_dir.name, line_data, root=ROOT)
+    reader = {"SONG_META": meta, "SONG_LINES": line_data, "SONG_SEQUENCE": sequence, "SONG_TIMINGS": times}
+    if prepare_only:
+        return reader
+    # Private source-repair candidates acquire profile acceptance only when
+    # adopted. Final public assembly checks every non-legacy song regardless.
+    if source_reader_metadata is None:
+        bhakti_shuffle_profiles.require_song_profile(ROOT, song_dir.name, reader)
     write_json(song_dir / ".transcription" / "language-review.json", language_resolution)
     (song_dir / "data.js").write_text(data, encoding="utf-8")
     (song_dir / "index.html").write_text(page_html(meta, song_dir.name), encoding="utf-8")
@@ -6222,6 +6231,21 @@ def run_one(job: dict[str, Any], options: argparse.Namespace) -> dict[str, Any]:
     timing = align(song_dir, audited, audio, options)
     glosses, translations = complete_semantics(song_dir, audited, job, options)
     errors = publication_errors(audited, timing, glosses, translations)
+    if not errors and bhakti_shuffle_profiles.enabled(ROOT):
+        from bhakti_boundary_timebase import boundary_snapshot
+        # Freeze the exact inputs used to prepare the final reader. Slow local
+        # extraction and provider calls happen outside the publication lock.
+        with boundary_transaction(song_dir):
+            packet_dir = song_dir / '.transcription/pipeline'
+            paths = [audio, song_dir / '.transcription/source.json',
+                     *packet_dir.glob('*.json'),
+                     *(ROOT / 'data').glob('*.json')]
+            # Other song workers legitimately merge the shared summary registry.
+            paths = [path for path in paths if path != ROOT / bhakti_shuffle_profiles.REVIEWS]
+            snapshot = boundary_snapshot(song_dir, paths)
+            reader = generate(song_dir, job, source, audited, timing, glosses, translations,
+                              write_catalogue_after=False, prepare_only=True)
+        bhakti_shuffle_profiles.assess_song_profiles(ROOT, job['slug'], reader, audio, options, snapshot)
     status = "blocked" if errors else "review-required"
     packet = {"source": source, "model_requested": options.model, "created_at": time.time(), "transcript": raw,
               "audit": audited, "timing": timing, "glosses": glosses, "translation": translations,

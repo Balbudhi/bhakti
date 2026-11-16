@@ -34,6 +34,11 @@ jobs:
           node scripts/test_mobile_zoom.js
           node scripts/test_pwa_lifecycle.js
           node scripts/test_queue_controls.js
+          node scripts/test_smart_shuffle.js
+          node scripts/test_shuffle_queue_integration.js
+          node scripts/test_shuffle_app_integration.js
+          node scripts/test_shuffle_assets.js
+          python3 scripts/audit_shuffle_profiles.py
           node scripts/test_playback.js
           node scripts/test_playback_recovery.js
           node scripts/test_repeat_playback.js

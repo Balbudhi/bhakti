@@ -70,8 +70,22 @@ The pipeline preserves audio-only source input, then performs distinct stages:
 4. literal word glosses and grammar notes;
 5. semantic frames plus English derived from those glosses only, with agency,
    imagery, completeness, alternatives, and unsupported additions checked;
-6. an independent adversarial translation review that cannot rewrite; and
-7. deterministic `data.js`, song-page HTML, and catalogue generation.
+6. an independent adversarial translation review that cannot rewrite;
+7. semantic shuffle assessment with separate extraction/review, and local
+   physical audio assessment of the exact retained first listener source; and
+8. deterministic `data.js`, song-page HTML, and catalogue generation.
+
+Both shuffle assessments are mandatory for future intake. Normal intake invokes
+them automatically after the existing text gates, reusing identity-bound caches
+and the existing bounded provider budget. Qualified, reviewed unknown results
+are valid; missing, failed, pending, stale, or unsupported results are not an
+accepted assessment. Method and input-domain qualification is governed by
+`data/shuffle-profile-policy.json`; do not bypass a hold or invent musical labels.
+`--generate-only` makes no API calls and holds a new song if its required current
+assessments are absent. Keep raw evidence private; commit only sanitized review
+summaries and the generated public projection. Shuffle itself makes no paid
+calls, and missing legacy features never remove a song from playback. See the
+mandatory shuffle assessment section in `docs/TRANSLATION_WORKFLOW.md`.
 
 Song concurrency and API concurrency are separate. The default seven song
 workers keep local intake, FFmpeg, validation, and generation busy, while the
@@ -171,6 +185,9 @@ Do not import Vedanta's full indexing engine, grammar cards or expositions.
   failure. New intake trims before any transcript or timing stage; historical
   repairs remove the spoken occurrence and shift retained timestamps by the
   reviewed offset.
+- Run `python3 scripts/audit_shuffle_profiles.py` before release. It checks the
+  current reader/media identities, qualification, and paired catalogue/profile
+  revision without API calls; direct reader edits must pass the same gate.
 - Use only the Codex in-app Browser for desktop and 390px mobile visual checks.
   Do not use Chrome, Zen, external extensions, Playwright CLI/MCP, or a global
   tool removal. Test the exact first-syllable seek for every song page line.
