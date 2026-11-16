@@ -38485,6 +38485,784 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "bcdb2609": {
+      "slug": "amha-ghari-dhan",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "d2a56d43c6361cb05d07a0203e2e0527f23c9783af4688b2fe681faa5cd7941f",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "61640d7ed68a792ad8f43b269baf0dde800ce64641050a639509f0a703afd1a7",
+          "extractionRequestIds": [
+            "de6abebbb8da485881aeb62327d2007e"
+          ],
+          "reviewRequestIds": [
+            "4efad11f9f7743659ec57d527eebc2e0"
+          ],
+          "coveredLineCount": 14
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.name_power",
+              "weight": 1.0
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.offering",
+              "weight": 0.4
+            }
+          ],
+          "subjects": []
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "editorialReview": {
+          "kind": "independent-assistant",
+          "inputHash": "d2a56d43c6361cb05d07a0203e2e0527f23c9783af4688b2fe681faa5cd7941f",
+          "baseFeaturesHash": "ecc06186cd065976c79d0e4107b8936bba0c119ffb0b0e4ed6ee484e4fece839",
+          "evidenceHash": "01948d033497975757b9d3e4613700810b1d39d57cff4e798407c00043634197"
+        },
+        "editorialAdjustments": [
+          {
+            "facet": "themes",
+            "id": "theme.name_power",
+            "factor": 0,
+            "reason": "The reviewed śabd means words: jewels, weapons, life, shared wealth, and God; śabdeci is with words alone. The poem does not identify those words as divine or teacher names. theme.name_power specifically requires the significance or efficacy of such names, so this classification imports unsupported meaning. Retain offering from the actual honour/worship clause.",
+            "sourceLineIds": [
+              "g001",
+              "g002",
+              "g003",
+              "g004",
+              "g005",
+              "g010"
+            ]
+          }
+        ]
+      },
+      "audio": {
+        "inputHash": "bde6e003850b648e9c18b423f61ae4fe91f302bd29ceb3d6a3aa928b39659b29",
+        "mediaSha256": "cbfab82924c00d36ca2bdbeb90d973da714f5d31115a8d7f6af22e07dbfdde03",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 567.161
+        },
+        "receiptHash": "71318b49d6dc688cee983ea114e759253c515514cb6542e1cafdef00a442b52d",
+        "physical": {
+          "whole": {
+            "integratedLufs": -12.5,
+            "truePeakDbfs": 0.4,
+            "rmsDbfs": -13.23158089228691,
+            "centroidHz": 1802.7248242901046
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -14.39587230871646,
+              "centroidHz": 1753.9760174956982
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 567.1466875,
+              "rmsDbfs": -13.23158089228691,
+              "centroidHz": 1802.7248242901046
+            },
+            "end": {
+              "startSeconds": 537.1466875,
+              "endSeconds": 567.1466875,
+              "rmsDbfs": -14.347939469728244,
+              "centroidHz": 1676.2022496322058
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "5427d051": {
+      "slug": "yei-ho-vitthale",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "2945e2665b7f72bc62482df30a66c465a4395dd02f3a2128026b67dbb987fbfb",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "6c64ee318d41905882573a7a30a2cadebfcc987e4452bf0370ec03d1e5d58e1c",
+          "extractionRequestIds": [
+            "c9aa8b4d70d846b6aef6113df784467a"
+          ],
+          "reviewRequestIds": [
+            "9edee2eafa164e83b7046d411e79c063"
+          ],
+          "coveredLineCount": 14
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.beauty",
+              "weight": 0.4
+            },
+            {
+              "id": "theme.compassion",
+              "weight": 0.4
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.invitation",
+              "weight": 0.7142857142857143
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.28571428571428575
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.vitthala",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "e1bccc7aaae191ec139e2baa7a185c8c7938d599a974d5d5cf27a8ac47e89d94",
+        "mediaSha256": "69d6a7625bb643567e3125f6fd22754b6dbbd6da3f9908d8aff7143cf696e2db",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 732.267
+        },
+        "receiptHash": "c15a94d5432e3736626ee7ecb117bf2def32c14ec8121a216eca6bd62b3ecba2",
+        "physical": {
+          "whole": {
+            "integratedLufs": -15.9,
+            "truePeakDbfs": 0.2,
+            "rmsDbfs": -16.410717229512315,
+            "centroidHz": 1373.393596396779
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -28.131070868604567,
+              "centroidHz": 1280.6187276615183
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 732.2505625,
+              "rmsDbfs": -16.410717229512315,
+              "centroidHz": 1373.393596396779
+            },
+            "end": {
+              "startSeconds": 702.2505625,
+              "endSeconds": 732.2505625,
+              "rmsDbfs": -13.085268487942853,
+              "centroidHz": 1470.2134350913786
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "de487232": {
+      "slug": "tum-karo-daya-mere-sai",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "4dd0e7c5a19d0fc3f00b58fefc42a6a69aec83b82b0f3cc6edc2289d94731acc",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "a0c9c659f7edccb0287b3d625d5a35a39e692d7d213193c12f4b61cba363b5d4",
+          "extractionRequestIds": [
+            "49353930602a42ac810d7ee97b52c3f2"
+          ],
+          "reviewRequestIds": [
+            "5d09386974094c1f8b67db420ea24e4d"
+          ],
+          "coveredLineCount": 27
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.compassion",
+              "weight": 0.125
+            },
+            {
+              "id": "theme.divine_presence",
+              "weight": 0.125
+            },
+            {
+              "id": "theme.grace",
+              "weight": 0.3125
+            },
+            {
+              "id": "theme.name_power",
+              "weight": 0.3125
+            },
+            {
+              "id": "theme.service",
+              "weight": 0.125
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.4166666666666667
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.16666666666666669
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.4166666666666667
+            }
+          ],
+          "subjects": []
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "195928aa7da667edb50d972e18acf25909754e5368bf64966e4e7159031e3f3a",
+        "mediaSha256": "77e3872970f23556aefd837fd2f2283de5c0a27bbeb9c4d28ed16fabf6252904",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 800.641
+        },
+        "receiptHash": "b26bfed5db42aa840841f6bf4b6160f8070167656630fce328b0c6baa65fdf5a",
+        "physical": {
+          "whole": {
+            "integratedLufs": -11.3,
+            "truePeakDbfs": 0.5,
+            "rmsDbfs": -11.512511012011704,
+            "centroidHz": 1831.9842252118524
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -16.387851553173284,
+              "centroidHz": 1643.1925377570217
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 800.6208125,
+              "rmsDbfs": -11.512511012011704,
+              "centroidHz": 1831.9842252118524
+            },
+            "end": {
+              "startSeconds": 770.6208125,
+              "endSeconds": 800.6208125,
+              "rmsDbfs": -11.063997767653893,
+              "centroidHz": 1746.5160403527036
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "558e0693": {
+      "slug": "aakha-jeeva-visrai-mar-jaau",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "e76085aa6e2be2d9c0a7dc3be62ea7e325e42935de427140e1b86aa46bc2996f",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "8a4298122f30b9b3e25d6e1b59d7a08df376d401196b2cd9644d46ef9a84a060",
+          "extractionRequestIds": [
+            "305d2ccaf9634974934675a56876b318"
+          ],
+          "reviewRequestIds": [
+            "2223f2261db94758a7ce91b63f5309d3"
+          ],
+          "coveredLineCount": 38
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.limits_of_knowing",
+              "weight": 0.28571428571428575
+            },
+            {
+              "id": "theme.name_power",
+              "weight": 0.7142857142857143
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.5555555555555556
+            }
+          ],
+          "subjects": []
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "d7df1922f652230162aee76ffc054c4dec7c3d64f63c8baee4929a1dfa585de0",
+        "mediaSha256": "e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 871.341
+        },
+        "receiptHash": "61b3108dc52df18a13cff58cef62bce3a31a74c408a27a7d21d96a2c0e76aa78",
+        "physical": {
+          "whole": {
+            "integratedLufs": -8.4,
+            "truePeakDbfs": 2.1,
+            "rmsDbfs": -9.476070930765644,
+            "centroidHz": 2117.8655523783978
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -11.51264939375028,
+              "centroidHz": 2173.090151139611
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 871.329625,
+              "rmsDbfs": -9.476070930765644,
+              "centroidHz": 2117.8655523783978
+            },
+            "end": {
+              "startSeconds": 841.329625,
+              "endSeconds": 871.329625,
+              "rmsDbfs": -9.960918882875163,
+              "centroidHz": 2018.6193971055645
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "9d8c6f40": {
+      "slug": "vitthal-giti-gava",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "0fe0c543260c5fd91ad086232a0587aec61f5f8d8309270d27d00e0d19898a77",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "01f9ae9a122359afb6c01b2e28117628ae01756b7b0a4a83ce63873666ac0c1d",
+          "extractionRequestIds": [
+            "62df266e0eb04310811b63235c29c4b2"
+          ],
+          "reviewRequestIds": [
+            "efe59a18cc3e4113aeb34d97d4d444f3"
+          ],
+          "coveredLineCount": 15
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.joy",
+              "weight": 0.25
+            },
+            {
+              "id": "theme.liberation",
+              "weight": 0.25
+            },
+            {
+              "id": "theme.name_power",
+              "weight": 0.25
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.25
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.meditation",
+              "weight": 0.4
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.4
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.vitthala",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "2c55db6f5d52beaa87952810e1ab32585f9f25445fca29a258ff8b9399181218",
+        "mediaSha256": "2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 429.761
+        },
+        "receiptHash": "cfdd85f6e5377c9b9c36fff437e1a4fef9e84599ea90cc8692aef5f55942109a",
+        "physical": {
+          "whole": {
+            "integratedLufs": -18.3,
+            "truePeakDbfs": -5.3,
+            "rmsDbfs": -18.85472532336085,
+            "centroidHz": 1652.1806017135254
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -20.135444347740187,
+              "centroidHz": 1646.1510442722147
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 429.7466875,
+              "rmsDbfs": -18.85472532336085,
+              "centroidHz": 1652.1806017135254
+            },
+            "end": {
+              "startSeconds": 399.7466875,
+              "endSeconds": 429.7466875,
+              "rmsDbfs": -20.156977170211732,
+              "centroidHz": 1688.8270423638378
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "5f2585ed": {
+      "slug": "kahe-re-ban-khojan-jai",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "bb6975247bf6da82616cc317862c1e22a12fb90e2b17db2793b454372a5c9fe2",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "3d109267c320088cf51eb304a6e54e84000e58c430de147ddfa773457fd2619b",
+          "extractionRequestIds": [
+            "646d1e3bf91b43d0b849a7837b3ab3c4"
+          ],
+          "reviewRequestIds": [
+            "c2cd71030a234c1bb5b3913ce0fd3857"
+          ],
+          "coveredLineCount": 14
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.divine_presence",
+              "weight": 0.7142857142857143
+            },
+            {
+              "id": "theme.guidance",
+              "weight": 0.28571428571428575
+            }
+          ],
+          "actions": [],
+          "subjects": [
+            {
+              "id": "subject.guru",
+              "weight": 0.4,
+              "role": "narrative_subject"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "6f5332ce004e04cf88e84990644f43ad07df1979be9c5f47bbcd5123ac5012c9",
+        "mediaSha256": "72cbb861e55061bd4affe9604d07be97bbfeeb493b23cb73490989c849f7a6de",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 561.001
+        },
+        "receiptHash": "ebedbd583262d305b01e6dbcfec8fd625e08d7539be43230e0c3fbd453294883",
+        "physical": {
+          "whole": {
+            "integratedLufs": -14.7,
+            "truePeakDbfs": 0.5,
+            "rmsDbfs": -14.440147101446337,
+            "centroidHz": 1470.8908484608835
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -16.40917021108275,
+              "centroidHz": 1447.156199063671
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 560.9866875,
+              "rmsDbfs": -14.440147101446337,
+              "centroidHz": 1470.8908484608835
+            },
+            "end": {
+              "startSeconds": 530.9866875,
+              "endSeconds": 560.9866875,
+              "rmsDbfs": -15.80811793230556,
+              "centroidHz": 1295.990884777189
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "4a19444d": {
+      "slug": "mo-kau-tar-le-rama",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "33ec67cd67741994f6cc42223e9e59b4bce78cebe3ec76b6c8976874b09ee772",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "d8b64eb7b8a84c251812e55a558ddc7ffb4b5d76a1041e688a9c1a5491aeb598",
+          "extractionRequestIds": [
+            "2330217b6db94ddf82e3917d7080220a"
+          ],
+          "reviewRequestIds": [
+            "5e697c9609eb41a2ad97f24ca84ac7b1"
+          ],
+          "coveredLineCount": 37
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.guidance",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.humility",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.name_power",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.45454545454545453
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 1.0
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.guru",
+              "weight": 0.22222222222222224,
+              "role": "narrative_subject"
+            },
+            {
+              "id": "subject.rama",
+              "weight": 0.5555555555555556,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.vitthala",
+              "weight": 0.22222222222222224,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "0704414929a1eaf01bd078e3a47f59dac9f3c99b6dae6c11e0f2452e4bbc2e9a",
+        "mediaSha256": "3459c77666f6dbdaa6136c03f0a426445a30748ccc175cbf81ed457d7cffc1ef",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 875.001
+        },
+        "receiptHash": "a098ebb3b6f041fd846c7cf54ebe976625811ead58d25baf5fcb1a3037b0be55",
+        "physical": {
+          "whole": {
+            "integratedLufs": -17.8,
+            "truePeakDbfs": 0.2,
+            "rmsDbfs": -17.991019498750415,
+            "centroidHz": 1513.5428881430612
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -23.12823469224528,
+              "centroidHz": 1609.1306614056853
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 874.9865625,
+              "rmsDbfs": -17.991019498750415,
+              "centroidHz": 1513.5428881430612
+            },
+            "end": {
+              "startSeconds": 844.9865625,
+              "endSeconds": 874.9865625,
+              "rmsDbfs": -18.852823653344963,
+              "centroidHz": 1339.6504010750928
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }

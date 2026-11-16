@@ -3,6 +3,18 @@
   "repository": "Balbudhi/bhakti",
   "releaseTag": "media-v1",
   "songs": {
+    "aakha-jeeva-visrai-mar-jaau": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-b7991427422936498a31fa504390882a87a172995a130599050e29ede2d09f9f.m4a",
+        "type": "audio/mp4",
+        "sha256": "b7991427422936498a31fa504390882a87a172995a130599050e29ede2d09f9f"
+      }
+    ],
     "aane-banditamma": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aane-banditamma-5c2139716d2455cd16a2b8600bd441b161be7b8e32915442ae5ba7c0220f3bb8.webm",
@@ -151,6 +163,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/akashi-zep-ghe-re-pakhara.m4a",
         "type": "audio/mp4",
         "sha256": "fb83f0dc44e733634944d41fbd9ba534333a4c09b6b246ab94a426a95c4f7ee0"
+      }
+    ],
+    "amha-ghari-dhan": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-cbfab82924c00d36ca2bdbeb90d973da714f5d31115a8d7f6af22e07dbfdde03.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "cbfab82924c00d36ca2bdbeb90d973da714f5d31115a8d7f6af22e07dbfdde03"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-68d08600f74a4e9920410edbfe285bc245f56617caebcfcc27bfa1d3fcca8031.m4a",
+        "type": "audio/mp4",
+        "sha256": "68d08600f74a4e9920410edbfe285bc245f56617caebcfcc27bfa1d3fcca8031"
       }
     ],
     "amrutahuni-god-nam-tujhe-deva": [
@@ -1533,6 +1557,18 @@
         "sha256": "75bc641be06587472dea8b2bc562c6160cdf12284a2c7531d02b1fcc7016e623"
       }
     ],
+    "kahe-re-ban-khojan-jai": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-72cbb861e55061bd4affe9604d07be97bbfeeb493b23cb73490989c849f7a6de.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "72cbb861e55061bd4affe9604d07be97bbfeeb493b23cb73490989c849f7a6de"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-7c94e6129276def8c5725e9169018b229001d20332c6a54c769345b9d9caf9b5.m4a",
+        "type": "audio/mp4",
+        "sha256": "7c94e6129276def8c5725e9169018b229001d20332c6a54c769345b9d9caf9b5"
+      }
+    ],
     "kai-janmon-se-bula-rahi-hoon": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kai-janmon-se-bula-rahi-hoon.webm",
@@ -2191,6 +2227,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mittar-pyare-nu.m4a",
         "type": "audio/mp4",
         "sha256": "ecc839b39702a2e592e6d844502cc8bc10dcd9b0b782ec25843ab08113df4f39"
+      }
+    ],
+    "mo-kau-tar-le-rama": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-3459c77666f6dbdaa6136c03f0a426445a30748ccc175cbf81ed457d7cffc1ef.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "3459c77666f6dbdaa6136c03f0a426445a30748ccc175cbf81ed457d7cffc1ef"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-f21dd0ce1b104a10bb57e36b9e396588dce48b013190768993d1ba9dadfe5371.m4a",
+        "type": "audio/mp4",
+        "sha256": "f21dd0ce1b104a10bb57e36b9e396588dce48b013190768993d1ba9dadfe5371"
       }
     ],
     "modalondipe-ninage-gananatha": [
@@ -3387,6 +3435,18 @@
         "sha256": "658c5658a5c96853f49fa3616519c15f6fd3078e88a83c3d2b9e6871fdf611af"
       }
     ],
+    "tum-karo-daya-mere-sai": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-77e3872970f23556aefd837fd2f2283de5c0a27bbeb9c4d28ed16fabf6252904.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "77e3872970f23556aefd837fd2f2283de5c0a27bbeb9c4d28ed16fabf6252904"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-9abb462cc305fcafec3f79958b1c6bb02e537d22eeb835fdc8c6af9bd4a6e633.m4a",
+        "type": "audio/mp4",
+        "sha256": "9abb462cc305fcafec3f79958b1c6bb02e537d22eeb835fdc8c6af9bd4a6e633"
+      }
+    ],
     "tumhi-mere-lagan-lagai-re": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tumhi-mere-lagan-lagai-re.m4a",
@@ -3482,6 +3542,18 @@
         "sha256": "9e3b185314c009376eb1b6b07936b1077bc665a29f9bbdba52491b92a8c5f342"
       }
     ],
+    "vitthal-giti-gava": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-a51290fd8f8bb36d0eb9a643792cc40cb1c1a8702a2c9500cdb51b3a51ae699c.m4a",
+        "type": "audio/mp4",
+        "sha256": "a51290fd8f8bb36d0eb9a643792cc40cb1c1a8702a2c9500cdb51b3a51ae699c"
+      }
+    ],
     "vrkshavalli-amha": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vrkshavalli-amha.webm",
@@ -3535,6 +3607,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-garv-bhara-mastak.m4a",
         "type": "audio/mp4",
         "sha256": "637ac5f0778332e5f783777782e0b441e5048a86dd50d1e38c5c07eaf02c9aee"
+      }
+    ],
+    "yei-ho-vitthale": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-69d6a7625bb643567e3125f6fd22754b6dbbd6da3f9908d8aff7143cf696e2db.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "69d6a7625bb643567e3125f6fd22754b6dbbd6da3f9908d8aff7143cf696e2db"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-c646dd590bbe1109f14ee0de7863568604d58cc05bf3182a84e047a8d387bb35.m4a",
+        "type": "audio/mp4",
+        "sha256": "c646dd590bbe1109f14ee0de7863568604d58cc05bf3182a84e047a8d387bb35"
       }
     ],
     "zara-to-itana-bata-do-sai": [

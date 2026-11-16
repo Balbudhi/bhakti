@@ -11665,5 +11665,270 @@ window.BHAKTI_SONGS = [
     "subtitle": "Viṣṇu",
     "queueNumber": 358
   }
+,
+{
+  "slug": "amha-ghari-dhan",
+  "queueId": "bcdb2609",
+  "title": "Āmhāṃ Gharī Dhan Śabdācīṃc Ratne",
+  "credit": "Tukārām · Bhimsen Joshi",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [],
+  "searchAliases": [
+    "Amham Ghari Dhan Shabdacimc Ratne",
+    "Amham Ghari Dhan Sabdacimc Ratne",
+    "Tukaram · Bhimsen Joshi",
+    "Tukaram",
+    "Āmhā Gharī Dhan Śabdāñcīc Ratne",
+    "Amha Ghari Dhan Sabdancic Ratne",
+    "आम्हा घरी धन शब्दांचीच रत्ने",
+    "Aamha Ghari Dhan Shabdancheech Ratne",
+    "Sant Tukaram"
+  ],
+  "writer": "Tukārām",
+  "singer": "Bhimsen Joshi",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-cbfab82924c00d36ca2bdbeb90d973da714f5d31115a8d7f6af22e07dbfdde03.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-68d08600f74a4e9920410edbfe285bc245f56617caebcfcc27bfa1d3fcca8031.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 364
+},
+{
+  "slug": "yei-ho-vitthale",
+  "queueId": "5427d051",
+  "title": "Yeī Ho Viṭṭhale Bhaktajanavatsale",
+  "credit": "Nāmadev · Aruna Sairam",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Yei Ho Vitthale Bhaktajanavatsale",
+    "Vishnu",
+    "Visnu",
+    "Namadev · Aruna Sairam",
+    "Namadev",
+    "येई हो विठ्ठले भक्तजनवत्सले",
+    "Bhaktha jana vatsale by Padmashri Awardee Sangita Kalanidhi Smt. Aruna Sairam",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Aruna Sairam",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-69d6a7625bb643567e3125f6fd22754b6dbbd6da3f9908d8aff7143cf696e2db.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yei-ho-vitthale-c646dd590bbe1109f14ee0de7863568604d58cc05bf3182a84e047a8d387bb35.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 369
+},
+{
+  "slug": "tum-karo-daya-mere-sai",
+  "queueId": "de487232",
+  "title": "Tumh Karahu Daiā Mere Sāī",
+  "credit": "Gurū Arjan · Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
+  "searchAliases": [
+    "Tumh Karahu Daia Mere Sai",
+    "Gurbani",
+    "Guru Arjan · Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
+    "Guru Arjan",
+    "Tum Karoh Daya Mere Sai",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Arjan",
+  "singer": "Bhai Satvinder Singh (Delhi Wale) & Bhai Harvinder Singh Ji (Delhi Wale)",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-77e3872970f23556aefd837fd2f2283de5c0a27bbeb9c4d28ed16fabf6252904.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tum-karo-daya-mere-sai-9abb462cc305fcafec3f79958b1c6bb02e537d22eeb835fdc8c6af9bd4a6e633.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gurbāṇī",
+  "queueNumber": 367
+},
+{
+  "slug": "aakha-jeeva-visrai-mar-jaau",
+  "queueId": "558e0693",
+  "title": "Ākhā Jīvā Visarai Mari Jāu",
+  "credit": "Gurū Nānak & Gurū Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
+  "searchAliases": [
+    "Akha Jiva Visarai Mari Jau",
+    "Gurbani",
+    "Guru Nanak & Guru Arjan · Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+    "Guru Nanak & Guru Arjan",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Nānak & Gurū Arjan",
+  "singer": "Bhai Satwinder Singh (Delhi Wale) & Bhai Harwinder Singh (Delhi Wale)",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-e879ad7032a470e268be5efedb0c893450093c0ee0de9797249dca5b266b15ae.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aakha-jeeva-visrai-mar-jaau-b7991427422936498a31fa504390882a87a172995a130599050e29ede2d09f9f.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gurbāṇī",
+  "queueNumber": 363
+},
+{
+  "slug": "vitthal-giti-gava",
+  "queueId": "9d8c6f40",
+  "title": "Viṭṭhal Gītīṃ Gāvā",
+  "credit": "Tukārām · Bhimsen Joshi · Shrinivas Khale",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Vitthal Gitim Gava",
+    "Vishnu",
+    "Visnu",
+    "Tukaram · Bhimsen Joshi · Shrinivas Khale",
+    "Tukaram",
+    "विठ्ठल गीतीं गावा",
+    "Vithal Geeti Gava",
+    "Sant Tukaram",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang",
+    "Viṭṭhal Gītī Gāvā"
+  ],
+  "writer": "Tukārām",
+  "singer": "Bhimsen Joshi",
+  "composer": "Shrinivas Khale",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-a51290fd8f8bb36d0eb9a643792cc40cb1c1a8702a2c9500cdb51b3a51ae699c.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 368
+},
+{
+  "slug": "kahe-re-ban-khojan-jai",
+  "queueId": "5f2585ed",
+  "title": "Kāhe Re Ban Khojan Jāī",
+  "credit": "Gurū Teg Bahādar · Bhai Harjinder Singh (Srinagar Wale)",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī"
+  ],
+  "searchAliases": [
+    "Gurbani",
+    "Guru Teg Bahadar · Bhai Harjinder Singh (Srinagar Wale)",
+    "Guru Teg Bahadar",
+    "Kahe Re Ban Khojan Jaayi",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Teg Bahādar",
+  "singer": "Bhai Harjinder Singh (Srinagar Wale)",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-72cbb861e55061bd4affe9604d07be97bbfeeb493b23cb73490989c849f7a6de.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kahe-re-ban-khojan-jai-7c94e6129276def8c5725e9169018b229001d20332c6a54c769345b9d9caf9b5.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gurbāṇī",
+  "queueNumber": 365
+},
+{
+  "slug": "mo-kau-tar-le-rama",
+  "queueId": "4a19444d",
+  "title": "Mo Kau Tāri Le Rāmā",
+  "credit": "Nāmadev · Shiromani Raagi Bhai Balbir Singh Ji",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī",
+    "Rāma"
+  ],
+  "searchAliases": [
+    "Mo Kau Tari Le Rama",
+    "Gurbani",
+    "Namadev · Shiromani Raagi Bhai Balbir Singh Ji",
+    "Namadev",
+    "Rama",
+    "Moko Taar Lei Rama Taar Lei",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Shiromani Raagi Bhai Balbir Singh Ji",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-3459c77666f6dbdaa6136c03f0a426445a30748ccc175cbf81ed457d7cffc1ef.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mo-kau-tar-le-rama-f21dd0ce1b104a10bb57e36b9e396588dce48b013190768993d1ba9dadfe5371.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gurbāṇī",
+  "queueNumber": 366
+}
 ];
-window.BHAKTI_SHUFFLE_REVISION = "baa03e14146f4217a03899823fc84c79dc69336d697f706d4fe91bff313e935c";
+window.BHAKTI_SHUFFLE_REVISION = "b4cd129fcfff707b52c444c88c25a666a8ab2536205e03afc6786160dea60e71";
