@@ -3,6 +3,18 @@
   "repository": "Balbudhi/bhakti",
   "releaseTag": "media-v1",
   "songs": {
+    "aane-banditamma": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aane-banditamma-5c2139716d2455cd16a2b8600bd441b161be7b8e32915442ae5ba7c0220f3bb8.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "5c2139716d2455cd16a2b8600bd441b161be7b8e32915442ae5ba7c0220f3bb8"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aane-banditamma-6c8b316e8f44ed889ae7fdfc99017a9738dd823f7cf697e1beaf20f182f59177.m4a",
+        "type": "audio/mp4",
+        "sha256": "6c8b316e8f44ed889ae7fdfc99017a9738dd823f7cf697e1beaf20f182f59177"
+      }
+    ],
     "aao-aao-padharo-mere-guruwar": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aao-aao-padharo-mere-guruwar.m4a",
@@ -330,6 +342,18 @@
         "sha256": "dd751f0b267a33942ecc5996f9949d08f4f55222df17db37df561f334d42b6a4"
       }
     ],
+    "biduvenenayya-hanuma": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/biduvenenayya-hanuma-2aa4e4cac2fa98f049761c63af78c896d295cbba84fbbce0629dd2c71c402f2e.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2aa4e4cac2fa98f049761c63af78c896d295cbba84fbbce0629dd2c71c402f2e"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/biduvenenayya-hanuma-8141e9cbaef34fb932e41cc8083cc4e4cc10892e6b0dab673fb9bf6d84d64ab0.m4a",
+        "type": "audio/mp4",
+        "sha256": "8141e9cbaef34fb932e41cc8083cc4e4cc10892e6b0dab673fb9bf6d84d64ab0"
+      }
+    ],
     "bolo-lakshmi-maat-ki-jai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bolo-lakshmi-maat-ki-jai.m4a",
@@ -438,6 +462,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/choti-choti-gaiya-chote-chote-gwal.m4a",
         "type": "audio/mp4",
         "sha256": "7940cd23533ecc9d6157c8d4733ff241ff969f6078eef1ce0b0852ea062bbbdf"
+      }
+    ],
+    "daari-yavudayya-vaikunthake": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/daari-yavudayya-vaikunthake-8e07ae89a7a336058d5feef6eb53f188c8af688edb0632c42b336837410d8615.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "8e07ae89a7a336058d5feef6eb53f188c8af688edb0632c42b336837410d8615"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/daari-yavudayya-vaikunthake-445c3fc4aec994899a1d534a6bca71524e7879f7e530e751bc9ce11aef5bc838.m4a",
+        "type": "audio/mp4",
+        "sha256": "445c3fc4aec994899a1d534a6bca71524e7879f7e530e751bc9ce11aef5bc838"
       }
     ],
     "daata-ek-ram": [
@@ -909,6 +945,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ishwar-se-kuch-mangna-ho-to.m4a",
         "type": "audio/mp4",
         "sha256": "0615ca8d4505a240a583d732e9495df964ece047738eb7b9ccf2c8f7cb28cd9a"
+      }
+    ],
+    "istu-dina-ee-vaikuntha": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/istu-dina-ee-vaikuntha-f64d74f32330df3702b56bc53bcbb7cfd4e6ba167c8a48bc2064dda546ae033a.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "f64d74f32330df3702b56bc53bcbb7cfd4e6ba167c8a48bc2064dda546ae033a"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/istu-dina-ee-vaikuntha-c7569517ed29f53162e53d4e2ce1814adbb2d7e3d9731f6d85b118169712235c.m4a",
+        "type": "audio/mp4",
+        "sha256": "c7569517ed29f53162e53d4e2ce1814adbb2d7e3d9731f6d85b118169712235c"
       }
     ],
     "jaagiye-raghunath-kunwar": [
@@ -2454,6 +2502,18 @@
         "sha256": "a10b43cdc68493ce271e9f9902f5b2a4e94f2ad246c2704bb55fc0879021f953"
       }
     ],
+    "saranu-siddhi-vinayaka": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saranu-siddhi-vinayaka-3749ed0ca276424e4ff1f6827d3abbdce7d8a6af265af5188d3347100f681da0.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "3749ed0ca276424e4ff1f6827d3abbdce7d8a6af265af5188d3347100f681da0"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saranu-siddhi-vinayaka-05215c307a1c1c9ceba7d1cba89034f11b6285876436ec474eee8c3dfeccf331.m4a",
+        "type": "audio/mp4",
+        "sha256": "05215c307a1c1c9ceba7d1cba89034f11b6285876436ec474eee8c3dfeccf331"
+      }
+    ],
     "saso-ki-mala-par-simaru-nisdina-pi-ka-nama": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saso-ki-mala-par-simaru-nisdina-pi-ka-nama.webm",
@@ -2464,6 +2524,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saso-ki-mala-par-simaru-nisdina-pi-ka-nama.m4a",
         "type": "audio/mp4",
         "sha256": "7b2863f85201544ddf8085b5634d3feae9124becfe4b0748a2f0120ca1b05c9a"
+      }
+    ],
+    "satgur-kai-bhane-chal": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/satgur-kai-bhane-chal-49a1c90b87a653f7b424be617bac9b803bcf5cd1b1d9131e5617bf40ddff7670.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "49a1c90b87a653f7b424be617bac9b803bcf5cd1b1d9131e5617bf40ddff7670"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/satgur-kai-bhane-chal-e53927fa08572bdce43f4321e86c5cec5c96f45fed7620b19527cc9dd96a6b9a.m4a",
+        "type": "audio/mp4",
+        "sha256": "e53927fa08572bdce43f4321e86c5cec5c96f45fed7620b19527cc9dd96a6b9a"
       }
     ],
     "sawan-gagane-ghor-ghanaghata": [

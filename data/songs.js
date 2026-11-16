@@ -9570,4 +9570,198 @@ window.BHAKTI_SONGS = [
   "subtitle": "Gaṇeśa",
   "queueNumber": 303
 }
+,
+{
+  "slug": "saranu-siddhi-vinayaka",
+  "queueId": "d1cbc301",
+  "title": "Śaraṇu Siddhivināyaka",
+  "credit": "Purandaradāsa · M. L. Vasanthakumari",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Gaṇeśa"
+  ],
+  "searchAliases": [
+    "Sharanu Siddhi Vinayaka",
+    "Saranu Siddhi Vinayaka",
+    "MLV"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "M. L. Vasanthakumari",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saranu-siddhi-vinayaka-3749ed0ca276424e4ff1f6827d3abbdce7d8a6af265af5188d3347100f681da0.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saranu-siddhi-vinayaka-05215c307a1c1c9ceba7d1cba89034f11b6285876436ec474eee8c3dfeccf331.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 307
+},
+{
+  "slug": "istu-dina-ee-vaikuntha",
+  "queueId": "f9b6d321",
+  "title": "Iṣṭu Dina Ī Vaikuṇṭha",
+  "credit": "Kanakadāsa · Dr. Vidyabhushana",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Ishtu Dina Ee Vaikunta",
+    "Istu Dina Ee Vaikuntha",
+    "Kanakadasa"
+  ],
+  "writer": "Kanakadāsa",
+  "singer": "Dr. Vidyabhushana",
+  "composer": "Dr. Vidyabhushana",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/istu-dina-ee-vaikuntha-f64d74f32330df3702b56bc53bcbb7cfd4e6ba167c8a48bc2064dda546ae033a.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/istu-dina-ee-vaikuntha-c7569517ed29f53162e53d4e2ce1814adbb2d7e3d9731f6d85b118169712235c.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 306
+},
+{
+  "slug": "daari-yavudayya-vaikunthake",
+  "queueId": "0e7cc75c",
+  "title": "Dāri Yāvudayya Vaikuṇṭhake",
+  "credit": "Purandaradāsa · Dr. Vidyabhushana & Rathnamala Prakash · C. Ashwath",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Daari Yavudayya Vaikunthake",
+    "Dari Yavadayya"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "Dr. Vidyabhushana & Rathnamala Prakash",
+  "composer": "C. Ashwath",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/daari-yavudayya-vaikunthake-8e07ae89a7a336058d5feef6eb53f188c8af688edb0632c42b336837410d8615.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/daari-yavudayya-vaikunthake-445c3fc4aec994899a1d534a6bca71524e7879f7e530e751bc9ce11aef5bc838.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 305
+},
+{
+  "slug": "biduvenenayya-hanuma",
+  "queueId": "19825bbe",
+  "title": "Biḍuvenēnayya Hanuma",
+  "credit": "Purandaradāsa · Dr. Vidyabhushana",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Hanumān"
+  ],
+  "searchAliases": [
+    "Biduvenenayya Hanuma",
+    "Biduvenenayya Hanuma"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "Dr. Vidyabhushana",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/biduvenenayya-hanuma-2aa4e4cac2fa98f049761c63af78c896d295cbba84fbbce0629dd2c71c402f2e.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/biduvenenayya-hanuma-8141e9cbaef34fb932e41cc8083cc4e4cc10892e6b0dab673fb9bf6d84d64ab0.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 304
+}
+,
+{
+  "slug": "satgur-kai-bhane-chal",
+  "queueId": "a703d3c8",
+  "title": "Satigur Kai Bhāṇai Calu",
+  "credit": "Gurū Amar Dās · Bhai Harjinder Singh (Srinagar Wale)",
+  "languageTags": [
+    "Punjabi"
+  ],
+  "subjectTags": [
+    "Gurbāṇī",
+    "Nirguṇa"
+  ],
+  "searchAliases": [
+    "Satigur Kai Bhanai Calu",
+    "Gurbani",
+    "Guru Amar Das · Bhai Harjinder Singh (Srinagar Wale)",
+    "Guru Amar Das",
+    "Nirguna",
+    "Satgur Kai Bhanai Chal",
+    "Sikh",
+    "Sikhi"
+  ],
+  "writer": "Gurū Amar Dās",
+  "singer": "Bhai Harjinder Singh (Srinagar Wale)",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/satgur-kai-bhane-chal-49a1c90b87a653f7b424be617bac9b803bcf5cd1b1d9131e5617bf40ddff7670.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/satgur-kai-bhane-chal-e53927fa08572bdce43f4321e86c5cec5c96f45fed7620b19527cc9dd96a6b9a.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gurbāṇī",
+  "queueNumber": 308
+}
+,
+{
+  "slug": "aane-banditamma",
+  "queueId": "5defa9cc",
+  "title": "Āne Banditamma",
+  "credit": "Purandaradāsa · Sri Vidyabhushana",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Aane Banditamma",
+    "Ane Banditamma",
+    "Vidyabhushana Thirtha Swamiji"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "Sri Vidyabhushana",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aane-banditamma-5c2139716d2455cd16a2b8600bd441b161be7b8e32915442ae5ba7c0220f3bb8.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aane-banditamma-6c8b316e8f44ed889ae7fdfc99017a9738dd823f7cf697e1beaf20f182f59177.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 309
+}
 ];
