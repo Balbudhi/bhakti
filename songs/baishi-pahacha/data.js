@@ -1745,7 +1745,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ekādaśa sopānare caṛhili muṁ yebe / ekādaśī māhātmya smaraṇa kali tebe",
-    "english": "{4:When}{3: I}{2: climbed}{0: onto the eleventh}{1: step,}{9: then}{7,8: I called to mind}{6: the sacred glory}{5: of Ekadashi.}",
+    "english": "{4:When}{3: I}{2: climbed}{0: onto the eleventh}{1: step,}{9: then}{7,8: I called to mind}{6: the sacred glory}{5: of Ekādaśī.}",
     "words": [
       {
         "roman": "ekādaśa",
@@ -1876,7 +1876,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ekādaśa sopānare caṛhili muṁ yebe / ekādaśī māhātmya smaraṇa kari tebe",
-    "english": "{4:When}{3: I}{2: climbed}{0: onto the eleventh}{1: step,}{7,8: remembering}{9: then}{6: the sacred glory}{5: of Ekadashi.}",
+    "english": "{4:When}{3: I}{2: climbed}{0: onto the eleventh}{1: step,}{9: then}{7,8: I recalled}{6: the sacred glory}{5: of Ekādaśī.}",
     "words": [
       {
         "roman": "ekādaśa",
@@ -1939,7 +1939,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Differs from 11-f only in replacing the finite verb kali with the non-finite conjunctive participle kari ('having remembered')."
+    "grammarNote": "Unlike the preceding rendition's finite kali ('I did'), kari is a conjunctive participle ('having done'). In this elliptical when–then couplet, the English supplies a finite remembering clause from the same first-person past context; it adds no new event or subject."
   },
   "line-pahacha-12": {
     "source": "ଦ୍ୱାଦଶ ପାହାଚେ ଦାରୁବ୍ରହ୍ମଙ୍କୁ ଚିନ୍ତିଲି / ନବକଳେବର ଦେଖିବାକୁ ଇଚ୍ଛା କଲି",

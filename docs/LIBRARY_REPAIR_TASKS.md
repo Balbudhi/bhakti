@@ -1326,3 +1326,31 @@ first-syllable timing audit. Sequence, timing bytes and listener audio are uncha
 Six corresponding semantic profiles were refreshed in twelve calls for $0.29256225;
 all 365 audio profiles and 359 unrelated records remain identical. The profile
 audit and public assembly pass. All 365 readers pass structural contract checks.
+
+### Contextual follow-up — 16 November 2026
+
+Root reviewed the remaining flagged passages directly, without delegated text
+review. Five lines in two readers have supported editorial repairs: Baishi's
+elliptical eleventh-step couplet now has a complete English predicate, with its
+non-finite Odia construction explained; Ekādaśī spelling is consistent. Kākaḍ
+retains Jagannātha and Śrīkānta in English, explaining the names in their popups.
+Its Gopīcanda line takes manda as an adjective (lacking understanding), rather
+than inventing a second named person. This contextual choice follows the Shirdi
+Sansthan's printed Marathi hymn and Molesworth's Marathi dictionary entry.
+Source text, Roman text, performance order, timing bytes and audio are unchanged.
+
+The attempted short audio follow-up is not an accepted transcription repair.
+Two Flash requests returned provider errors; one Pro response failed substantive
+coverage/native-script requirements, and its audit has an unknown outcome with
+the reservation retained. Individual excerpts yielded four results and two
+failures. Source readings remain inconsistent. The Krishna/Vasko clause is
+reopened: fresh readings suggest tvadyaśa and usako, but differ on the intervening
+verb/vocative, so no guessed source replacement is published. The midday/night
+wording, Mohanīrāj clause, Gandhā/Dhannā reading and Tero's dān/dhām/dehi clause
+still need a reliable recording-based adjudication or the exact edition's text.
+No more audio calls were made after this bounded follow-up. Reported audio cost
+is $0.0433615 plus an unresolved $0.065248 reservation. The broader library has
+received text review; this does not establish that every recording is transcribed
+correctly. These specific source questions remain open.
+The two affected semantic profiles were refreshed in four requests ($0.12961050);
+all audio profiles and the other 363 complete profile records are preserved.

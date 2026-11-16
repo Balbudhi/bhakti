@@ -4356,7 +4356,7 @@ window.SONG_LINES = {
     "source": "तू जगन्नाथ दूँ कैसे टिकड़ तुझको",
     "sourceLanguage": "hi",
     "roman": "Tū Jagannātha dū̃ kaise ṭikkaṛa tujhako",
-    "english": "{0:You are}{1: the Lord of the Universe;}{3: how}{2: should I give}{4: coarse flatbread}{5: to you?}",
+    "english": "{0:You are}{1: Jagannātha;}{3: how}{2: should I give}{4: coarse flatbread}{5: to you?}",
     "words": [
       {
         "roman": "Tū",
@@ -4364,7 +4364,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Jagannātha",
-        "gloss": "Lord of the Universe"
+        "gloss": "Jagannātha, “Lord of the universe”; a name of Viṣṇu/Kṛṣṇa, used to address the guru in this adaptation"
       },
       {
         "roman": "dū̃",
@@ -4427,7 +4427,7 @@ window.SONG_LINES = {
     "source": "अब अंत न देखो मेरा सखा भगवंता श्रीकांता",
     "sourceLanguage": "hi",
     "roman": "Aba anta na dekho merā sakhā bhagavantā Śrīkāntā",
-    "english": "{0:Now}{2,3: do not test}{1,4: my limit,}{5: O friend,}{6: O Lord,}{7: O Beloved of Sri!}",
+    "english": "{0:Now}{2,3: do not test}{1,4: my limit,}{5: O friend,}{6: O Lord,}{7: O Śrīkānta!}",
     "words": [
       {
         "roman": "Aba",
@@ -4459,7 +4459,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīkāntā",
-        "gloss": "O Beloved of Sri (Vishnu)"
+        "gloss": "O Śrīkānta, “beloved of Śrī (Lakṣmī)”; a name of Viṣṇu"
       }
     ],
     "grammarNote": "Idiomatic negative imperative anta na dekho (do not test my patience/limits) followed by multiple vocatives.",
@@ -8733,15 +8733,15 @@ window.SONG_LINES = {
     "source": "गोपीचंदा मंदा का उद्धार किया",
     "sourceLanguage": "hi",
     "roman": "gopīcandā mandā kā uddhāra kiyā",
-    "english": "{3,4:You granted deliverance }{0:to Gopichanda }{1,2:and Manda,}",
+    "english": "{3,4:You granted deliverance }{2:to }{0:Gopīcanda, }{1:who lacked understanding,}",
     "words": [
       {
         "roman": "gopīcandā",
-        "gloss": "Gopichanda"
+        "gloss": "Gopīcanda, the king who became a renunciant in Nāth tradition"
       },
       {
         "roman": "mandā",
-        "gloss": "meaning uncertain in this Hindi line"
+        "gloss": "lacking understanding; describing Gopīcanda here"
       },
       {
         "roman": "kā",
@@ -8756,7 +8756,7 @@ window.SONG_LINES = {
         "gloss": "did / performed"
       }
     ],
-    "grammarNote": "Past transitive compound verb construction 'uddhāra kiyā' governing the proper nouns as genitive direct object.",
+    "grammarNote": "Read mandā as a description of Gopīcanda, following the Marathi hymn’s gopīcandā mandā. The Hindi genitive kā belongs to uddhāra kiyā (granted deliverance to); there is no conjunction introducing a second person. Manda is not treated as an independently established name.",
     "sourceWords": [
       {
         "text": "गोपीचंदा",
