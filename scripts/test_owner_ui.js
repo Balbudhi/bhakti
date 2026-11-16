@@ -8,7 +8,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 class Element {
-  constructor(tag = 'div') { this.tagName = tag; this.children = []; this.listeners = {}; this.hidden = false; this.disabled = false; this._value = ''; this.textContent = ''; this.files = []; this.attributes = {}; }
+  constructor(tag = 'div') { this.tagName = tag; this.children = []; this.listeners = {}; this.hidden = false; this.disabled = false; this._value = ''; this.textContent = ''; this.files = []; this.attributes = {}; this.style = {}; }
   get value() { return this._value; }
   set value(value) { this._value = String(value).replace(/\r\n?/g, '\n'); }
   set innerHTML(_) { throw new Error('Untrusted HTML rendering is forbidden'); }
@@ -22,18 +22,18 @@ class Element {
   focus() { this.focused = true; }
   click() { return this.emit('click'); }
 }
-const ids = ['heading', 'auth', 'sign-in', 'setup', 'setup-form', 'setup-code', 'create-passkey', 'inbox', 'request-form', 'request-text', 'request-file', 'import-file', 'submit-request', 'byte-count', 'requests', 'load-more', 'refresh-requests', 'sign-out', 'status'];
+const ids = ['heading', 'auth', 'sign-in', 'setup', 'setup-form', 'setup-code', 'create-passkey', 'inbox', 'request-form', 'request-text', 'request-file', 'import-file', 'submit-request', 'byte-count', 'requests', 'load-more', 'refresh-requests', 'sign-out', 'status', 'pending-heading', 'completed-heading', 'completed-history', 'completed-requests', 'load-completed', 'analytics', 'analytics-status', 'language-chart', 'subject-chart', 'queue-section'];
 const response = (body, status = 200) => ({ ok: status < 400, status, json: async () => body });
 const bytes = (...values) => Uint8Array.from(values).buffer;
 const assertion = () => ({ id: 'AQI', rawId: bytes(1, 2), type: 'public-key', authenticatorAttachment: 'cross-platform', response: { clientDataJSON: bytes(3, 4), authenticatorData: bytes(5, 6), signature: bytes(7, 8), userHandle: null }, getClientExtensionResults: () => ({}) });
-let mountOwner;
+let mountOwner, catalogueBreakdown;
 async function fixture({ setup = false, authenticated = false, getCredential = async () => assertion(), createCredential, handler } = {}) {
   const elements = Object.fromEntries(ids.map(id => [id, new Element()]));
   const requests = [];
   let nextID = 0;
   const credentials = { get: getCredential, create: createCredential };
   const env = {
-    document: { getElementById: id => elements[id], createElement: tag => new Element(tag) },
+    document: { getElementById: id => elements[id], createElement: tag => new Element(tag), createElementNS: (_, tag) => new Element(tag) },
     location: { pathname: setup ? '/setup' : '/' }, navigator: { credentials }, isSecureContext: true,
     crypto: { randomUUID: () => `00000000-0000-4000-8000-${String(++nextID).padStart(12, '0')}` },
     fetch: async (url, options = {}) => {
@@ -41,6 +41,7 @@ async function fixture({ setup = false, authenticated = false, getCredential = a
       requests.push(call);
       const result = handler ? await handler(call) : undefined;
       if (result) return result;
+      if (url === '/api/catalogue') return response({songs: [], fetchedAt: '2026-11-15T00:00:00Z'});
       if (url === '/api/session') return response(authenticated ? { authenticated: true, csrfToken: 'csrf' } : { authenticated: false });
       if (url === '/api/requests') return call.method === 'POST' ? response({ request: { id: call.body.requestId, text: call.body.text, status: 'queued', createdAt: '2026-01-01T00:00:00Z' } }) : response({ requests: [] });
       if (url.endsWith('/begin')) return response({ publicKey: { challenge: 'AQI', allowCredentials: [{ type: 'public-key', id: 'AwQ' }] }, challengeId: 'challenge' });
@@ -56,7 +57,20 @@ function collect(element) { return [element.textContent, ...element.children.map
 
 (async () => {
   const source = fs.readFileSync(path.join(__dirname, '../hosting/owner/web/owner.js'), 'utf8');
-  ({ mountOwner } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`));
+  ({ mountOwner, catalogueBreakdown } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`));
+  {
+    const rows = catalogueBreakdown([
+      {languageTags:['Hindi','Sanskrit','Hindi']}, {languageTags:['Hindi']},
+      {}, {languageTags:['Sanskrit','Tamil']}, {languageTags:['Kannada']}
+    ], 'languageTags');
+    const expected = {Hindi:[2,40], Sanskrit:[2,40], Tamil:[1,20], Kannada:[1,20], Unspecified:[1,20]};
+    assert.deepEqual(rows.map(row=>row.label).sort(),Object.keys(expected).sort());
+    for (const row of rows) {
+      assert.deepEqual([row.count, row.coverage], expected[row.label]);
+    }
+    assert.equal(rows.reduce((sum, row) => sum + row.coverage, 0), 140);
+    assert.deepEqual(catalogueBreakdown([], 'subjectTags'), []);
+  }
   {
     const f = await fixture({ getCredential: async () => { throw Object.assign(new Error(), { name: 'NotAllowedError' }); } });
     await f.elements['sign-in'].emit('click');
@@ -75,7 +89,9 @@ function collect(element) { return [element.textContent, ...element.children.map
     assert.equal(finish.body.credential.response.signature, 'Bwg');
     assert.equal(finish.body.credential.response.userHandle, null);
     assert.equal(f.elements.inbox.hidden, false);
-    assert.equal(f.elements['request-form'].following, f.elements.status);
+    assert.equal(f.elements['pending-heading'].focused, true);
+    assert.equal(f.elements['request-text'].focused, undefined);
+    assert.equal(f.elements['queue-section'].following, f.elements.status);
   }
   {
     let options;
@@ -177,7 +193,7 @@ function collect(element) { return [element.textContent, ...element.children.map
     assert.equal(f.elements['request-text'].value, 'newer draft');
     assert.match(f.elements.status.textContent, /current draft.*not|draft.*still/i);
   }
-  for (const corrupt of [() => ({}), receipt => ({ request: { ...receipt, id: 'wrong' } }), receipt => ({ request: { ...receipt, text: 'wrong' } }), receipt => ({ request: { ...receipt, status: 'running' } }), receipt => ({ request: { ...receipt, createdAt: 'invalid' } })]) {
+  for (const corrupt of [() => ({}), receipt => ({ request: { ...receipt, id: 'wrong' } }), receipt => ({ request: { ...receipt, text: 'wrong' } }), receipt => ({ request: { ...receipt, status: 'running' } }), receipt => ({ request: { ...receipt, completedAt: '2026-11-15T00:00:00Z' } }), receipt => ({ request: { ...receipt, createdAt: 'invalid' } })]) {
     const f = await fixture({ authenticated: true, handler: call => call.url === '/api/requests' && call.method === 'POST' ? response(corrupt({ id: call.body.requestId, text: call.body.text, status: 'queued', createdAt: '2026-01-01T00:00:00Z' })) : undefined });
     await edit(f, 'unconfirmed');
     await f.elements['request-form'].emit('submit');
@@ -186,6 +202,95 @@ function collect(element) { return [element.textContent, ...element.children.map
     const posts = f.requests.filter(r => r.method === 'POST');
     assert.equal(posts[0].body.requestId, posts[1].body.requestId);
     assert.match(f.elements.status.textContent, /could not confirm/i);
+  }
+  {
+    const f = await fixture();
+    assert.equal(f.requests.some(r => r.url === '/api/catalogue'), false);
+  }
+  {
+    const f = await fixture({authenticated:true, handler:call => call.url === '/api/catalogue' ? response({songs:[{slug:'one',languageTags:['<img onerror=bad()>'],subjectTags:[]}],fetchedAt:'2026-11-15T00:00:00Z'}) : undefined});
+    assert.ok(collect(f.elements['language-chart']).includes('<img onerror=bad()>'));
+    assert.ok(collect(f.elements['subject-chart']).includes('Unspecified'));
+    assert.match(f.elements['analytics-status'].textContent,/1 song/);
+  }
+  {
+    const f = await fixture({authenticated:true,handler:call => call.url === '/api/catalogue' ? response({error:'Catalogue unavailable'},503) : undefined});
+    assert.match(f.elements['analytics-status'].textContent,/unavailable/i);
+    assert.doesNotMatch(f.elements['analytics-status'].textContent,/0 songs/);
+    assert.equal(f.elements.inbox.hidden,false);
+    assert.match(f.elements['pending-heading'].textContent,/0 pending requests/i);
+  }
+  {
+    const songs=Array.from({length:9},(_,i)=>({slug:'s'+i,languageTags:['Label '+i],subjectTags:[]}));
+    const f=await fixture({authenticated:true,handler:call=>call.url==='/api/catalogue'?response({songs,fetchedAt:'2026-11-15T00:00:00Z'}):undefined});
+    assert.doesNotMatch(collect(f.elements['language-chart']),/Other/);
+    assert.equal(f.elements['language-chart'].children[0].children.length,9);
+    for(let i=0;i<9;i++) assert.ok(collect(f.elements['language-chart']).includes('Label '+i));
+  }
+  const queued = {id:'request-id', text:'two songs\nhttps://example.test', status:'queued', createdAt:'2026-01-01T00:00:00Z'};
+  const completed = {...queued, status:'completed', completedAt:'2026-11-15T00:00:00Z'};
+  function completionButton(f) { return f.elements.requests.children[0].children.find(child => child.tagName === 'button'); }
+  {
+    let done = false;
+    const f = await fixture({authenticated:true, handler:call => {
+      if (call.url === '/api/requests/complete') { done = true; return response({request:completed}); }
+      if (call.url === '/api/requests') return done ? response({error:'Unavailable'},503) : response({requests:[queued, {...completed,id:'older'}]});
+    }});
+    assert.match(f.elements['pending-heading'].textContent, /1 pending request/i);
+    assert.match(f.elements['completed-heading'].textContent, /1 completed request/i);
+    await completionButton(f).emit('click');
+    const post = f.requests.find(r => r.url === '/api/requests/complete');
+    assert.deepEqual(post.body, {requestId:queued.id});
+    assert.equal(post.headers['X-CSRF-Token'],'csrf');
+    assert.match(f.elements['pending-heading'].textContent,/0 pending requests/i);
+    assert.equal(f.elements['pending-heading'].focused,true);
+    await f.elements['refresh-requests'].emit('click');
+    assert.match(f.elements['pending-heading'].textContent,/0 pending requests/i);
+    assert.ok(collect(f.elements['completed-requests']).includes(queued.text));
+  }
+  for (const result of [() => {throw new TypeError('offline');}, () => response({request:{...completed,id:'wrong'}}), () => response({request:{...completed,text:'wrong'}}), () => response({request:{...completed,createdAt:'2026-02-01T00:00:00Z'}}), () => response({request:{...completed,completedAt:'invalid'}}), () => response({request:{...completed,status:'queued'}}), () => response({request:{...completed,status:'running'}}), () => response({request:{...completed,completedAt:'2025-12-01T00:00:00Z'}})]) {
+    let tries = 0;
+    const f = await fixture({authenticated:true,handler:call => {
+      if (call.url === '/api/requests') return response({requests:[queued]});
+      if (call.url === '/api/requests/complete') return ++tries === 1 ? result() : response({request:completed});
+    }});
+    await completionButton(f).emit('click');
+    assert.match(f.elements['pending-heading'].textContent,/1 pending request/i);
+    await completionButton(f).emit('click');
+    assert.match(f.elements['pending-heading'].textContent,/0 pending requests/i);
+    assert.deepEqual(f.requests.filter(r=>r.url==='/api/requests/complete').map(r=>r.body.requestId),[queued.id,queued.id]);
+  }
+  {
+    const f = await fixture({authenticated:true,handler:call => call.url === '/api/requests' && call.method === 'POST' ? response({request:{...completed,id:call.body.requestId,text:call.body.text}}) : undefined});
+    await edit(f,'already delivered'); await f.elements['request-form'].emit('submit');
+    assert.equal(f.elements['request-text'].value,'');
+    assert.match(f.elements.status.textContent,/already completed/i);
+  }
+  {
+    let release;
+    const f = await fixture({authenticated:true,handler:call => {
+      if (call.url === '/api/requests') return response({requests:[queued]});
+      if (call.url === '/api/requests/complete') return new Promise(resolve=>{ release=()=>resolve(response({error:'Sign in again'},401)); });
+    }});
+    const button=completionButton(f); const flight=button.emit('click');
+    await button.emit('click');
+    assert.equal(f.requests.filter(r=>r.url==='/api/requests/complete').length,1);
+    assert.equal(button.disabled,true);
+    release(); await flight;
+    assert.equal(f.elements.requests.children.length,0);
+    assert.equal(f.elements['completed-requests'].children.length,0);
+    assert.equal(f.elements.inbox.hidden,true);
+  }
+  {
+    const f = await fixture({authenticated:true,handler:call => {
+      if (call.url === '/api/requests') return response({requests:[queued]});
+      if (call.url === '/api/requests/complete') return {ok:false,status:401,json:async()=>{throw new SyntaxError('invalid JSON');}};
+    }});
+    await completionButton(f).emit('click');
+    assert.equal(f.elements.requests.children.length,0);
+    assert.equal(f.elements['completed-requests'].children.length,0);
+    assert.equal(f.elements.inbox.hidden,true);
+    assert.equal(f.elements.auth.hidden,false);
   }
   console.log('owner UI: authentication flow, exact import, safe rendering, and retry cases passed');
 })().catch(error => { console.error(error); process.exitCode = 1; });

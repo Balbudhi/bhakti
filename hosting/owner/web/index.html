@@ -30,25 +30,42 @@
       <a class="text-action" href="/">Already set up? Sign in</a>
     </section>
     <section id="inbox" aria-label="Song requests" hidden>
-      <p class="intro">Save song links and notes for translation.</p>
-      <form id="request-form">
-        <label for="request-text">Songs and notes</label>
-        <textarea id="request-text" rows="9" spellcheck="false" aria-describedby="draft-hint byte-count" placeholder="Paste song links, titles, or notes…"></textarea>
-        <div class="draft-meta">
-          <button id="import-file" type="button" class="text-action">Choose text file</button>
-          <input id="request-file" type="file" accept=".txt,text/plain" hidden>
-          <span id="byte-count" class="hint">0 / 64 KiB</span>
-        </div>
-        <p id="draft-hint" class="hint">UTF-8 text, up to 64 KiB. Saved requests stay private. Processing is not connected yet.</p>
-        <button id="submit-request" type="submit" class="primary">Add to queue</button>
-      </form>
-      <section class="recent" aria-labelledby="recent-heading">
+      <section id="queue-section" aria-labelledby="pending-heading">
         <div class="section-heading">
-          <h2 id="recent-heading">Recent requests</h2>
+          <h2 id="pending-heading" tabindex="-1">Pending requests</h2>
           <button id="refresh-requests" type="button" class="text-action">Refresh</button>
         </div>
+        <p class="hint queue-note">Requests stay pending until you mark them completed.</p>
         <div id="requests"></div>
-        <button id="load-more" type="button" class="text-action" hidden>Show more</button>
+        <button id="load-more" type="button" class="text-action" hidden>Show more pending requests</button>
+        <details id="completed-history" class="completed-history" hidden>
+          <summary id="completed-heading">Completed requests</summary>
+          <div id="completed-requests"></div>
+          <button id="load-completed" type="button" class="text-action" hidden>Show more completed requests</button>
+        </details>
+      </section>
+      <details class="new-request">
+        <summary>Add song requests</summary>
+        <form id="request-form">
+          <label for="request-text">Songs and notes</label>
+          <textarea id="request-text" rows="6" spellcheck="false" aria-describedby="draft-hint byte-count" placeholder="Paste song links, titles, or notes…"></textarea>
+          <div class="draft-meta">
+            <button id="import-file" type="button" class="text-action">Choose text file</button>
+            <input id="request-file" type="file" accept=".txt,text/plain" hidden>
+            <span id="byte-count" class="hint">0 / 64 KiB</span>
+          </div>
+          <p id="draft-hint" class="hint">UTF-8 text, up to 64 KiB. Saved requests stay private.</p>
+          <button id="submit-request" type="submit" class="primary">Add to queue</button>
+        </form>
+      </details>
+      <section id="analytics" class="analytics" aria-labelledby="analytics-heading">
+        <h2 id="analytics-heading">Library breakdown</h2>
+        <p id="analytics-status" class="hint" role="status" aria-live="polite"></p>
+        <p class="hint">Each bar shows the percentage of songs with that label. Songs may have several languages or subjects, so percentages can add up to more than 100%. Every bar uses the same 0–100% scale.</p>
+        <div class="breakdown-columns">
+          <section aria-labelledby="language-heading"><h3 id="language-heading">Languages</h3><div id="language-chart"></div></section>
+          <section aria-labelledby="subject-heading"><h3 id="subject-heading">Subjects</h3><div id="subject-chart"></div></section>
+        </div>
       </section>
       <footer>
         <a class="text-action" href="/api/export" download>Export requests</a>

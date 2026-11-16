@@ -66,10 +66,11 @@ type session struct {
 	Expires time.Time `json:"expires"`
 }
 type requestRecord struct {
-	ID        string `json:"id"`
-	Text      string `json:"text"`
-	CreatedAt string `json:"createdAt"`
-	Status    string `json:"status"`
+	ID          string `json:"id"`
+	Text        string `json:"text"`
+	CreatedAt   string `json:"createdAt"`
+	Status      string `json:"status"`
+	CompletedAt string `json:"completedAt,omitempty"`
 }
 type state struct {
 	Version          int                  `json:"version"`
@@ -133,11 +134,22 @@ func (s *state) validate() error {
 	seen := map[string]bool{}
 	total := 0
 	for _, r := range s.Requests {
-		if !uuidPattern.MatchString(r.ID) || seen[r.ID] || !validText(r.Text) || r.Status != "queued" {
+		if !uuidPattern.MatchString(r.ID) || seen[r.ID] || !validText(r.Text) || (r.Status != "queued" && r.Status != "completed") {
 			return bad
 		}
-		if _, e := time.Parse(time.RFC3339Nano, r.CreatedAt); e != nil {
+		created, e := time.Parse(time.RFC3339Nano, r.CreatedAt)
+		if e != nil {
 			return bad
+		}
+		if r.Status == "queued" {
+			if r.CompletedAt != "" {
+				return bad
+			}
+		} else {
+			completed, err := time.Parse(time.RFC3339Nano, r.CompletedAt)
+			if err != nil || completed.Before(created) {
+				return bad
+			}
 		}
 		seen[r.ID] = true
 		total += len(r.Text)
@@ -368,7 +380,57 @@ func addRequest(s *state, id, text string, now time.Time) (requestRecord, error)
 	if len(s.Requests) >= maxRequests || total+len(text) > maxAggregate {
 		return requestRecord{}, &apiError{507, "Your inbox is full. Export it before arranging more storage."}
 	}
-	r := requestRecord{id, text, now.UTC().Format(time.RFC3339Nano), "queued"}
+	r := requestRecord{ID: id, Text: text, CreatedAt: now.UTC().Format(time.RFC3339Nano), Status: "queued"}
 	s.Requests = append(s.Requests, r)
 	return r, nil
+}
+
+// completeRequest changes only status and its first completion time. Call inside
+// transact and commit even on replay: an earlier acknowledgement may have failed.
+func completeRequest(s *state, id string, now time.Time) (requestRecord, error) {
+	if !uuidPattern.MatchString(id) {
+		return requestRecord{}, errInvalid
+	}
+	for i, r := range s.Requests {
+		if r.ID != id {
+			continue
+		}
+		if r.Status == "completed" {
+			return r, nil
+		}
+		created, e := time.Parse(time.RFC3339Nano, r.CreatedAt)
+		if e != nil || now.Before(created) {
+			return requestRecord{}, errors.New("completion clock precedes request creation")
+		}
+		r.Status = "completed"
+		r.CompletedAt = now.UTC().Format(time.RFC3339Nano)
+		s.Requests[i] = r
+		return r, nil
+	}
+	return requestRecord{}, &apiError{404, "Request not found."}
+}
+
+// The SSH administration caller must bind the exact reviewed request text.
+func completeStoredRequest(dir, id, expectedTextHash string, now time.Time) ([]byte, error) {
+	if !uuidPattern.MatchString(id) || !validHash(expectedTextHash) {
+		return nil, errInvalid
+	}
+	var result requestRecord
+	e := transact(dir, now, nil, func(s *state, commit func() error) error {
+		for _, r := range s.Requests {
+			if r.ID == id && !equal(digest(r.Text), expectedTextHash) {
+				return &apiError{409, "Request text does not match the reviewed submission."}
+			}
+		}
+		var err error
+		result, err = completeRequest(s, id, now)
+		if err != nil {
+			return err
+		}
+		return commit()
+	})
+	if e != nil {
+		return nil, e
+	}
+	return json.Marshal(result)
 }

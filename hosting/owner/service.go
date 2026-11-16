@@ -135,7 +135,9 @@ func (s *Service) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		} else {
 			e = s.authentication(w, r)
 		}
-	case "/api/session", "/api/logout", "/api/requests", "/api/export":
+	case "/api/catalogue":
+		e = s.catalogue(w, r)
+	case "/api/session", "/api/logout", "/api/requests", "/api/requests/complete", "/api/export":
 		e = s.inbox(w, r)
 	default:
 		jsonResponse(w, 404, map[string]string{"error": "Not found."})
@@ -313,7 +315,7 @@ func (s *Service) inbox(w http.ResponseWriter, r *http.Request) error {
 			return e
 		}
 	}
-	if (r.URL.Path == "/api/logout" && r.Method != "POST") || (r.URL.Path != "/api/requests" && r.URL.Path != "/api/logout" && r.Method != "GET") {
+	if ((r.URL.Path == "/api/logout" || r.URL.Path == "/api/requests/complete") && r.Method != "POST") || (r.URL.Path != "/api/requests" && r.URL.Path != "/api/logout" && r.URL.Path != "/api/requests/complete" && r.Method != "GET") {
 		return errInvalid
 	}
 	var response any
@@ -339,6 +341,16 @@ func (s *Service) inbox(w http.ResponseWriter, r *http.Request) error {
 		case "/api/logout":
 			delete(st.Sessions, digest(token))
 			response = map[string]bool{"authenticated": false}
+			return commit()
+		case "/api/requests/complete":
+			if input.Text != "" {
+				return errInvalid
+			}
+			record, err := completeRequest(st, input.RequestID, s.now())
+			if err != nil {
+				return err
+			}
+			response = map[string]any{"request": record}
 			return commit()
 		case "/api/requests":
 			if r.Method == "POST" {

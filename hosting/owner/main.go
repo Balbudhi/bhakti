@@ -72,9 +72,21 @@ func main() {
 	directory := flag.String("state", privateDirectory, "absolute private state directory")
 	init := flag.Bool("init", false, "provision a one-time first enrollment code")
 	export := flag.Bool("export", false, "export the private request inbox")
+	complete := flag.String("complete", "", "mark one existing request completed")
+	expectedTextHash := flag.String("expected-text-sha256", "", "SHA256 of the exact reviewed request text")
 	flag.Parse()
-	if flag.NArg() != 0 || *init == *export {
-		fmt.Fprintln(os.Stderr, "Choose exactly one of -init or -export.")
+	operations := 0
+	if *init {
+		operations++
+	}
+	if *export {
+		operations++
+	}
+	if *complete != "" {
+		operations++
+	}
+	if flag.NArg() != 0 || operations != 1 || (*complete == "" && *expectedTextHash != "") {
+		fmt.Fprintln(os.Stderr, "Choose exactly one of -init, -export or -complete ID.")
 		os.Exit(2)
 	}
 	if *init {
@@ -88,9 +100,15 @@ func main() {
 		}
 		return
 	}
-	data, e := exportRequests(*directory, time.Now())
+	var data []byte
+	var e error
+	if *complete != "" {
+		data, e = completeStoredRequest(*directory, *complete, *expectedTextHash, time.Now())
+	} else {
+		data, e = exportRequests(*directory, time.Now())
+	}
 	if e != nil {
-		fmt.Fprintln(os.Stderr, "Could not export the owner inbox.")
+		fmt.Fprintln(os.Stderr, "Could not complete the owner operation.")
 		os.Exit(1)
 	}
 	if _, e := os.Stdout.Write(append(data, '\n')); e != nil {

@@ -1,6 +1,27 @@
 const MAX_BYTES = 64 * 1024;
 const encoder = new TextEncoder();
 
+// A row counts songs containing the label, once per song. Coverage deliberately
+// overlaps: it is never normalized into a partition or allocated across tags.
+export function catalogueBreakdown(songs, field) {
+  const counts = new Map();
+  for (const song of songs) {
+    const labels = [...new Set((song[field] || []).filter(label => typeof label === 'string' && label.trim()))];
+    for (const label of labels.length ? labels : ['Unspecified']) counts.set(label, (counts.get(label) || 0) + 1);
+  }
+  return [...counts].map(([label, count]) => ({ label, count, coverage: count / songs.length * 100 }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+}
+function validRequest(request) {
+  return request && typeof request.id === 'string' && typeof request.text === 'string' &&
+    Number.isFinite(Date.parse(request.createdAt)) &&
+    ((request.status === 'queued' && request.completedAt === undefined) || (request.status === 'completed' &&
+      Number.isFinite(Date.parse(request.completedAt)) && Date.parse(request.completedAt) >= Date.parse(request.createdAt)));
+}
+function formattedDate(value) {
+  return new Date(value).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+}
+
 function decodeBase64url(value) {
   const base64 = value.replace(/-/g, '+').replace(/_/g, '/');
   return Uint8Array.from(atob(base64.padEnd(Math.ceil(base64.length / 4) * 4, '=')), character => character.charCodeAt(0)).buffer;
@@ -35,7 +56,7 @@ export async function mountOwner(env) {
   const doc = env.document;
   const element = id => doc.getElementById(id);
   let setupView = /^\/setup\/?$/.test(env.location.pathname);
-  const controls = ['sign-in', 'setup-code', 'create-passkey', 'request-text', 'request-file', 'import-file', 'submit-request', 'refresh-requests', 'sign-out'];
+  const controls = ['sign-in', 'setup-code', 'create-passkey', 'request-text', 'request-file', 'import-file', 'submit-request', 'refresh-requests', 'load-more', 'load-completed', 'sign-out'];
   let csrfToken = '';
   let busy = false;
   // Draft is the exact original file text until an input event edits it. Textarea
@@ -45,11 +66,14 @@ export async function mountOwner(env) {
   let pending = null;
   let requests = [];
   let visibleCount = 25;
+  let completedVisibleCount = 25;
+  let requestButtons = [];
 
   const status = message => { element('status').textContent = message; };
   function setBusy(value) {
     busy = value;
     for (const id of controls) element(id).disabled = value;
+    for (const button of requestButtons) button.disabled = value;
     element('setup-form').setAttribute('aria-busy', String(value));
     element('request-form').setAttribute('aria-busy', String(value));
   }
@@ -57,6 +81,11 @@ export async function mountOwner(env) {
     csrfToken = '';
     requests = [];
     element('requests').replaceChildren();
+    element('completed-requests').replaceChildren();
+    element('language-chart').replaceChildren();
+    element('subject-chart').replaceChildren();
+    element('analytics-status').textContent = '';
+    requestButtons = [];
     element('inbox').hidden = true;
     element('auth').hidden = setupView;
     element('setup').hidden = !setupView;
@@ -70,8 +99,8 @@ export async function mountOwner(env) {
     element('auth').hidden = true;
     element('setup').hidden = true;
     element('inbox').hidden = false;
-    element('heading').textContent = 'Song requests';
-    element('request-form').after(element('status'));
+    element('heading').textContent = 'Your library';
+    element('queue-section').after(element('status'));
     element('setup-code').value = '';
   }
   async function api(url, body, authenticated = false) {
@@ -83,10 +112,10 @@ export async function mountOwner(env) {
       options.body = JSON.stringify(body);
     }
     const response = await env.fetch(url, options);
+    if (authenticated && response.status === 401) signedOut();
     let data;
     try { data = await response.json(); } catch { throw new Error('The service could not complete this request. Please try again.'); }
     if (!response.ok) {
-      if (authenticated && response.status === 401) signedOut();
       throw new Error(typeof data.error === 'string' ? data.error.slice(0, 300) : 'The request failed. Please try again.');
     }
     return data;
@@ -100,30 +129,108 @@ export async function mountOwner(env) {
     const count = encoder.encode(draft).byteLength;
     element('byte-count').textContent = `${(count / 1024).toFixed(count ? 1 : 0)} / 64 KiB`;
   }
+  function requestElement(request) {
+    const details = doc.createElement('details'); details.className = 'request';
+    const summary = doc.createElement('summary');
+    const title = Array.from(request.text.split(/\r?\n/).find(line => line.trim()) || 'Song request').slice(0, 120).join('');
+    summary.textContent = title;
+    const date = doc.createElement('span'); date.className = 'request-date';
+    date.textContent = request.status === 'completed'
+      ? `Completed ${formattedDate(request.completedAt)} · Saved ${formattedDate(request.createdAt)}`
+      : `Saved ${formattedDate(request.createdAt)} · Pending`;
+    summary.append(date);
+    const text = doc.createElement('pre'); text.textContent = request.text;
+    details.append(summary, text);
+    if (request.status === 'queued') {
+      const button = doc.createElement('button'); button.type = 'button'; button.className = 'text-action complete-request';
+      button.textContent = 'Mark completed'; button.disabled = busy;
+      button.setAttribute('aria-label', `Mark request completed: ${title}`);
+      button.addEventListener('click', () => completeRequest(request));
+      requestButtons.push(button); details.append(button);
+    }
+    return details;
+  }
   function renderRequests() {
+    requestButtons = [];
+    const queued = requests.filter(request => request.status === 'queued');
+    const completed = requests.filter(request => request.status === 'completed');
+    element('pending-heading').textContent = `${queued.length} pending request${queued.length === 1 ? '' : 's'}`;
+    element('completed-heading').textContent = `${completed.length} completed request${completed.length === 1 ? '' : 's'}`;
     element('requests').replaceChildren();
-    if (!requests.length) {
-      const empty = doc.createElement('p'); empty.className = 'empty'; empty.textContent = 'No requests yet.'; element('requests').append(empty);
+    element('completed-requests').replaceChildren();
+    if (!queued.length) {
+      const empty = doc.createElement('p'); empty.className = 'empty'; empty.textContent = 'No pending requests.'; element('requests').append(empty);
     }
-    for (const request of requests.slice(0, visibleCount)) {
-      const details = doc.createElement('details'); details.className = 'request';
-      const summary = doc.createElement('summary');
-      const title = request.text.split(/\r?\n/).find(line => line.trim()) || 'Song request';
-      summary.textContent = Array.from(title).slice(0, 120).join('');
-      const date = doc.createElement('span'); date.className = 'request-date';
-      const created = new Date(request.createdAt);
-      date.textContent = `${Number.isFinite(created.getTime()) ? created.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' }) : ''} · Queued`;
-      summary.append(date);
-      const text = doc.createElement('pre'); text.textContent = request.text;
-      details.append(summary, text); element('requests').append(details);
-    }
-    element('load-more').hidden = requests.length <= visibleCount;
+    for (const request of queued.slice(0, visibleCount)) element('requests').append(requestElement(request));
+    for (const request of completed.slice(0, completedVisibleCount)) element('completed-requests').append(requestElement(request));
+    element('completed-history').hidden = !completed.length;
+    element('load-more').hidden = queued.length <= visibleCount;
+    element('load-completed').hidden = completed.length <= completedVisibleCount;
+  }
+  async function completeRequest(request) {
+    if (busy) return;
+    setBusy(true); status('Marking request completed…');
+    try {
+      const result = await api('/api/requests/complete', { requestId: request.id }, true);
+      const receipt = result.request;
+      if (!validRequest(receipt) || receipt.status !== 'completed' || receipt.id !== request.id ||
+          receipt.text !== request.text || receipt.createdAt !== request.createdAt) {
+        throw new Error('Could not confirm completion. The request is still pending here; try again.');
+      }
+      requests = requests.map(item => item.id === receipt.id ? receipt : item);
+      renderRequests();
+      element('pending-heading').focus();
+      status('Request marked completed. The original is saved in completed requests.');
+    } catch (error) { status(error instanceof TypeError ? 'Could not confirm completion. Refresh or try again; the request is still shown here.' : errorMessage(error)); }
+    finally { setBusy(false); }
   }
   async function refresh() {
     const data = await api('/api/requests', undefined, true);
-    if (!Array.isArray(data.requests)) throw new Error('Could not load your requests. Please refresh.');
+    if (!Array.isArray(data.requests) || !data.requests.every(validRequest)) throw new Error('Could not load your requests. Please refresh.');
     requests = data.requests;
     renderRequests();
+  }
+  function renderBreakdown(target, rows) {
+    const list = doc.createElement('ul'); list.className = 'breakdown-list';
+    for (const row of rows) {
+      const item = doc.createElement('li');
+      const line = doc.createElement('div'); line.className = 'breakdown-label';
+      const label = doc.createElement('span'); label.textContent = row.label;
+      const value = doc.createElement('span'); value.className = 'breakdown-value';
+      value.textContent = `${row.count} song${row.count === 1 ? '' : 's'} · ${row.coverage.toFixed(1)}%`;
+      line.append(label, value);
+      // SVG presentation attributes work under the existing strict style CSP.
+      // Text above contains the entire meaning, so the graphic is decorative.
+      const svg = doc.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('viewBox', '0 0 100 2'); svg.setAttribute('preserveAspectRatio', 'none'); svg.setAttribute('aria-hidden', 'true');
+      const bar = doc.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      bar.setAttribute('width', String(row.coverage)); bar.setAttribute('height', '2'); bar.setAttribute('fill', 'currentColor');
+      svg.append(bar); item.append(line, svg); list.append(item);
+    }
+    element(target).replaceChildren(list);
+  }
+  async function refreshCatalogue() {
+    element('analytics-status').textContent = 'Loading the public library…';
+    try {
+      const data = await api('/api/catalogue', undefined, true);
+      if (!Array.isArray(data.songs) || !Number.isFinite(Date.parse(data.fetchedAt)) ||
+          !data.songs.every(song => song && typeof song.slug === 'string' && ['languageTags', 'subjectTags'].every(key =>
+            song[key] === undefined || (Array.isArray(song[key]) && song[key].every(label => typeof label === 'string'))))) {
+        throw new Error('Catalogue unavailable. Refresh to try again.');
+      }
+      if (!csrfToken) return;
+      renderBreakdown('language-chart', catalogueBreakdown(data.songs, 'languageTags'));
+      renderBreakdown('subject-chart', catalogueBreakdown(data.songs, 'subjectTags'));
+      element('analytics-status').textContent = `${data.songs.length} song${data.songs.length === 1 ? '' : 's'} · Checked ${formattedDate(data.fetchedAt)}`;
+    } catch (error) {
+      element('language-chart').replaceChildren(); element('subject-chart').replaceChildren();
+      if (csrfToken) element('analytics-status').textContent = 'Catalogue unavailable. Use Refresh to try again.';
+      else status(errorMessage(error));
+    }
+  }
+  async function refreshDashboard() {
+    try { await refresh(); } catch (error) { status(errorMessage(error)); }
+    if (csrfToken) await refreshCatalogue();
   }
   async function authenticate(setup) {
     if (busy) return;
@@ -144,9 +251,9 @@ export async function mountOwner(env) {
       const result = await api(`${prefix}/finish`, body);
       signedIn(result.csrfToken);
       status('');
-      try { await refresh(); } catch (error) { status(errorMessage(error)); }
+      await refreshDashboard();
     } catch (error) { status(errorMessage(error)); }
-    finally { setBusy(false); if (csrfToken) element('request-text').focus(); }
+    finally { setBusy(false); if (csrfToken) element('pending-heading').focus(); }
   }
 
   element('sign-in').addEventListener('click', () => authenticate(false));
@@ -181,23 +288,26 @@ export async function mountOwner(env) {
     try {
       const result = await api('/api/requests', submission, true);
       const receipt = result.request;
-      if (!receipt || receipt.id !== submission.requestId || receipt.text !== submission.text || receipt.status !== 'queued' || !Number.isFinite(Date.parse(receipt.createdAt))) {
+      if (!validRequest(receipt) || receipt.id !== submission.requestId || receipt.text !== submission.text) {
         throw new Error('Could not confirm that this request was saved. Your draft is still here; try again.');
       }
       const unchanged = draft === submission.text;
       if (unchanged) { draft = ''; element('request-text').value = ''; countDraft(); }
       pending = null;
-      const message = unchanged ? 'Saved to your queue. Processing is not connected yet.' : 'Earlier request saved. Your current draft is not submitted.';
+      const message = receipt.status === 'completed'
+        ? (unchanged ? 'This request was already completed; it remains in completed requests.' : 'Earlier request was already completed. Your current draft is not submitted.')
+        : (unchanged ? 'Saved to your pending requests.' : 'Earlier request saved. Your current draft is not submitted.');
       status(message);
       try { await refresh(); } catch (error) { status(`${message} ${errorMessage(error)}`); }
     } catch (error) { status(errorMessage(error)); }
     finally { setBusy(false); }
   });
   element('load-more').addEventListener('click', () => { visibleCount += 25; renderRequests(); });
+  element('load-completed').addEventListener('click', () => { completedVisibleCount += 25; renderRequests(); });
   element('refresh-requests').addEventListener('click', async () => {
     if (busy) return;
     setBusy(true);
-    try { await refresh(); status(''); } catch (error) { status(errorMessage(error)); }
+    try { status(''); await refreshDashboard(); } catch (error) { status(errorMessage(error)); }
     finally { setBusy(false); }
   });
   element('sign-out').addEventListener('click', async () => {
@@ -210,8 +320,8 @@ export async function mountOwner(env) {
   signedOut(); setBusy(true);
   try {
     const session = await api('/api/session');
-    if (session.authenticated) { signedIn(session.csrfToken); await refresh(); }
     status('');
+    if (session.authenticated) { signedIn(session.csrfToken); await refreshDashboard(); }
   } catch (error) { status(errorMessage(error)); }
   finally { setBusy(false); }
 }

@@ -18,13 +18,20 @@ def validate_export(raw):
     ids = set()
     total = 0
     for entry in data['requests']:
-        if not isinstance(entry, dict) or set(entry) != {'id', 'text', 'createdAt', 'status'} or any(not isinstance(value, str) for value in entry.values()):
+        if not isinstance(entry, dict) or set(entry) not in ({'id', 'text', 'createdAt', 'status'}, {'id', 'text', 'createdAt', 'status', 'completedAt'}) or any(not isinstance(value, str) for value in entry.values()):
             raise ValueError('Unexpected owner request schema')
-        if str(uuid.UUID(entry['id'])) != entry['id'] or entry['id'] in ids or entry['status'] != 'queued' or not entry['text'].strip():
+        if str(uuid.UUID(entry['id'])) != entry['id'] or entry['id'] in ids or entry['status'] not in ('queued', 'completed') or not entry['text'].strip():
             raise ValueError('Invalid owner request')
         created = datetime.fromisoformat(entry['createdAt'].replace('Z', '+00:00'))
         if created.tzinfo is None:
             raise ValueError('Request timestamp requires time zone')
+        if entry['status'] == 'queued':
+            if 'completedAt' in entry:
+                raise ValueError('Queued request has a completion timestamp')
+        else:
+            completed = datetime.fromisoformat(entry.get('completedAt', '').replace('Z', '+00:00'))
+            if completed.tzinfo is None or completed < created:
+                raise ValueError('Invalid completion timestamp')
         size = len(entry['text'].encode('utf-8'))
         if size > 65536:
             raise ValueError('Owner request exceeds limit')

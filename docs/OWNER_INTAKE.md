@@ -4,7 +4,8 @@
 
 Provide a discreet entrance from the public library to a separate passkey-only
 owner service at `https://owner.bhakti.eeshan.xyz`. The owner can paste song links
-and notes or load a UTF-8 text file, submit once, and see the durable private queue.
+and notes or load a UTF-8 text file, submit once, and see the durable private queue, explicitly mark delivered requests completed, and
+view the current public library’s language and subject breakdowns.
 The public library stays on GitHub Pages. TimeCrystals authentication, credentials,
 content and installed-app identity are unchanged.
 
@@ -76,10 +77,23 @@ requests carry `challengeId` and the standard serialized `credential` object.
 - `POST /api/requests`: requires session and CSRF header; accepts
   `{requestId, text}`. ID is a canonical UUID; UTF-8 text is nonblank, at most
   64 KiB. Preserve submitted text exactly. Return `{request}` only after commit.
-- `GET /api/export`: requires session; downloads the owner's requests as JSON.
+- `POST /api/requests/complete`: requires session, exact Origin and CSRF header;
+  accepts `{requestId}`. Marks an existing request completed, returning `{request}`
+  only after durable commit. Missing IDs return 404. Repeating the action preserves
+  the first completion time. It does not fetch links, process songs or publish.
+- `GET /api/catalogue`: requires session before any outbound fetch. Reads only
+  `https://bhakti.eeshan.xyz/data/songs.js` with a 10-second timeout, 2 MiB limit,
+  no redirects and exact wrapper/JSON parsing (no JavaScript evaluation). Returns
+  `{songs:[{slug,title,languageTags,subjectTags}],fetchedAt}`; failures return 503,
+  never a fabricated empty library. The fetch runs outside the private state lock.
+- `GET /api/export`: requires session; downloads all queued and completed requests
+  as JSON. No credential/session fields are exported.
 
-A stored request is `{id, text, createdAt, status:"queued"}`. Same ID/same text
-returns the same record; same ID/different text returns 409. Bound overall body,
+A new stored request remains `{id, text, createdAt, status:"queued"}`. Completion
+changes only status to `completed` and adds `completedAt`, no earlier than creation.
+Existing version-1 queued records remain readable unchanged. Same ID/same text
+returns the same record, including an already-completed state; same ID/different
+text returns 409. Bound overall body,
 challenge/session storage, request count and aggregate text size, with explicit
 capacity errors that never silently discard requests. The first release supports
 up to 1,000 requests and 16 MiB total text. No deletion or automatic processing.
@@ -121,6 +135,26 @@ mode `0600` and is never printed. Open the owner site's `/setup` page, enter tha
 code, and complete the normal Bitwarden passkey prompt. Enrollment consumes the
 code; later visits use ordinary passkey sign-in. Never commit either local file.
 The pull command reads the queue without changing it or starting translation.
+
+After independently verifying every item in a submission, the owner may use the
+browser’s explicit action or the SSH administration bridge:
+
+```sh
+python3 hosting/owner/deploy.py complete --request-id UUID --expected-text-sha256 SHA256
+```
+
+The hash is SHA256 of the exact UTF-8 request text in a fresh private export.
+The bridge invokes the deployed CGI’s `-complete UUID -expected-text-sha256 SHA256`
+operation under the existing deployment/state locks. Wrong hashes and missing IDs
+fail without changing the queue. It prints only ID, status and completion time;
+original request text, ID and creation time are preserved. A transport failure
+may follow a successful commit: export and retry the same ID/hash rather than
+creating another request. Completion is never inferred from catalogue matches.
+
+Deploy and verify the compatible backend before completing records. Once records
+have `completedAt`, the older queued-only binary cannot read that state; do not
+roll back to it or erase completion fields. Use a compatible repaired binary.
+See `hosting/owner/ADMIN_ANALYTICS.md` for the existing owner-page presentation.
 
 Root owns the shared contract, public gesture, integration and release. Backend
 worker owns `hosting/owner/` Go code and service tests. Browser worker owns its

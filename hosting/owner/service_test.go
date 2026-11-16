@@ -528,7 +528,7 @@ func TestCapacityPreservesRequestsAndAllowsExactRetries(t *testing.T) {
 			}
 			e := transact(b.service.Directory, b.service.Now(), nil, func(s *state, commit func() error) error {
 				for i := 0; i < count; i++ {
-					s.Requests = append(s.Requests, requestRecord{fmt.Sprintf("00000000-0000-4000-8000-%012d", i), text, b.service.Now().Format(time.RFC3339), "queued"})
+					s.Requests = append(s.Requests, requestRecord{ID: fmt.Sprintf("00000000-0000-4000-8000-%012d", i), Text: text, CreatedAt: b.service.Now().Format(time.RFC3339), Status: "queued"})
 				}
 				return commit()
 			})

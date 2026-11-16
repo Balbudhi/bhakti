@@ -5,11 +5,13 @@ activate requires its verified HTTPS certificate. bootstrap writes a setup code
 only to an owner-only file outside the repository. No credential goes in argv.
 """
 import argparse
+from datetime import datetime
 import fcntl
 import hashlib
 import http.client
 import json
 import os
+import re
 from pathlib import Path
 import shlex
 import stat
@@ -257,6 +259,15 @@ def remote_main(action, expected=None):
         elif action == 'rollback':
             rollback_release(public, private, expected)
             print('{"rolledBack":true}')
+        elif action == 'complete':
+            data = json.loads(sys.stdin.buffer.read(1025))
+            if not isinstance(data, dict) or set(data) != {'requestId', 'expectedTextSha256'}:
+                raise ValueError('Invalid completion input')
+            validate_completion_identity(data['requestId'], data['expectedTextSha256'])
+            output = quiet_command([str(public / 'owner.cgi'), '-state', str(private), '-complete', data['requestId'], '-expected-text-sha256', data['expectedTextSha256']])
+            if len(output) > MAX_EXPORT:
+                raise ValueError('Unexpected completion output')
+            sys.stdout.buffer.write(output)
         elif action in ('bootstrap', 'export'):
             output = quiet_command([str(public / 'owner.cgi'), '-state', str(private), '-init' if action == 'bootstrap' else '-export'])
             if len(output) > (1024 if action == 'bootstrap' else MAX_EXPORT):
@@ -275,6 +286,30 @@ def ssh(action, payload=None, expected=None):
     if result.returncode:
         raise ValueError('Remote operation failed; no private diagnostics printed. Inspect before retrying.')
     return result.stdout
+
+
+def validate_completion_identity(request_id, expected_text_sha256):
+    if not isinstance(request_id, str) or not re.fullmatch(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}', request_id):
+        raise ValueError('A canonical request ID is required')
+    if not isinstance(expected_text_sha256, str) or not re.fullmatch(r'[0-9a-f]{64}', expected_text_sha256):
+        raise ValueError('SHA256 of the exact reviewed request text is required')
+
+
+def complete_request(request_id, expected_text_sha256):
+    validate_completion_identity(request_id, expected_text_sha256)
+    payload = json.dumps({'requestId': request_id, 'expectedTextSha256': expected_text_sha256}).encode()
+    result = json.loads(ssh('complete', payload=payload))
+    if not isinstance(result, dict) or result.get('id') != request_id or result.get('status') != 'completed' or not isinstance(result.get('text'), str) or hashlib.sha256(result['text'].encode()).hexdigest() != expected_text_sha256:
+        raise ValueError('Completion receipt did not match the reviewed request')
+    try:
+        completed = datetime.fromisoformat(result['completedAt'].replace('Z', '+00:00'))
+        created = datetime.fromisoformat(result['createdAt'].replace('Z', '+00:00'))
+        if completed.tzinfo is None or created.tzinfo is None or completed < created:
+            raise ValueError('Invalid completion time')
+    except (KeyError, TypeError, ValueError, AttributeError):
+        raise ValueError('Completion receipt has invalid timestamps') from None
+    # Keep the submitted private text out of ordinary command output.
+    return {key: result[key] for key in ('id', 'status', 'completedAt')}
 
 
 def request(path, method='GET', host=DOMAIN, secure=True, body=None, origin=None):
@@ -322,9 +357,11 @@ def local_forbidden_roots():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['inspect', 'provision', 'activate', 'verify', 'rollback', 'bootstrap'])
+    parser.add_argument('action', choices=['inspect', 'provision', 'activate', 'verify', 'rollback', 'bootstrap', 'complete'])
     parser.add_argument('--go', default=os.environ.get('GO', 'go'))
     parser.add_argument('--output', type=Path)
+    parser.add_argument('--request-id')
+    parser.add_argument('--expected-text-sha256')
     args = parser.parse_args()
     if args.action == 'inspect':
         result = json.loads(ssh('inspect'))
@@ -356,6 +393,8 @@ def main():
     elif args.action == 'rollback':
         info = json.loads(ssh('inspect'))
         print(ssh('rollback', expected=info['sha256']).decode().strip())
+    elif args.action == 'complete':
+        print(json.dumps(complete_request(args.request_id, args.expected_text_sha256)))
     elif args.action == 'bootstrap':
         if not args.output:
             raise ValueError('bootstrap requires --output outside the repository')
