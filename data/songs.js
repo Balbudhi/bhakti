@@ -9439,4 +9439,135 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 299
 }
+,
+{
+  "slug": "meri-vinti-yahi-hai-maa",
+  "queueId": "f28f9d6e",
+  "title": "Merī Bintī Yahī Hai Mā̃",
+  "credit": "Maninder Ji",
+  "languageTags": [
+    "Hindi"
+  ],
+  "subjectTags": [
+    "Devī"
+  ],
+  "searchAliases": [
+    "Meri Vinti Yahi Hai Maa",
+    "Meri Binti Yahi Hai Maa",
+    "Dil Mein Teri Yaad Basse"
+  ],
+  "writer": "",
+  "singer": "Maninder Ji",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-vinti-yahi-hai-maa-aaff509c0a7515ebcb8a06bdeac9ca1ddb05d1b396ef0fc66da7d9d386649727.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-vinti-yahi-hai-maa-9c7c3f8029db0831476aa14d1a967cf8bfee82eb6fb2815f5f30579db5122d47.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 300
+}
+,
+{
+  "slug": "shrdi-sai-dwarka-maai",
+  "queueId": "abaaa57d",
+  "title": "Śirḍī Sāī Dvārakāmāī",
+  "credit": "",
+  "languageTags": [
+    "Hindi"
+  ],
+  "subjectTags": [
+    "Śirḍī Sāī",
+    "Rāma"
+  ],
+  "searchAliases": [
+    "Shirdi Sai Dvarakamai",
+    "Sirdi Sai Dvarakamai",
+    "Shirdi Sai",
+    "Sirdi Sai",
+    "Rama",
+    "Shirdi Sai Dwarka Maai"
+  ],
+  "writer": "",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shrdi-sai-dwarka-maai.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Śirḍī Sāī",
+  "queueNumber": 302
+},
+{
+  "slug": "sai-sai-bol-sai-sai-bol",
+  "queueId": "1ad68fc1",
+  "title": "Sāī Sāī Bol",
+  "credit": "",
+  "languageTags": [
+    "Hindi"
+  ],
+  "subjectTags": [
+    "Śirḍī Sāī",
+    "Rāma",
+    "Śiva"
+  ],
+  "searchAliases": [
+    "Sai Sai Bol",
+    "Shirdi Sai",
+    "Sirdi Sai",
+    "Rama",
+    "Shiva",
+    "Siva"
+  ],
+  "writer": "",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-sai-bol-sai-sai-bol.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Śirḍī Sāī",
+  "queueNumber": 301
+}
+,
+{
+  "slug": "sumukh-pratham-he-svanam-gayak",
+  "queueId": "82a5cfd2",
+  "title": "Sumukha Prathama He",
+  "credit": "Vāsudevānanda Sarasvatī · Shruti Sadolikar",
+  "languageTags": [
+    "Sanskrit"
+  ],
+  "subjectTags": [
+    "Gaṇeśa"
+  ],
+  "searchAliases": [
+    "Ganesha",
+    "Ganesa",
+    "Vasudevananda Sarasvati · Shruti Sadolikar",
+    "Vasudevananda Sarasvati",
+    "Sumukh Pratham He",
+    "Svanam Gayak",
+    "Ganapati Stotram Gitipurvam"
+  ],
+  "writer": "Vāsudevānanda Sarasvatī",
+  "singer": "Shruti Sadolikar",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sumukh-pratham-he-svanam-gayak-e1ec91d2773d0f32f44f8c7538993564c2be45b5fb30ba55b3e7b12ddee9104d.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Gaṇeśa",
+  "queueNumber": 303
+}
 ];

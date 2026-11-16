@@ -1802,6 +1802,18 @@
         "sha256": "9979b9756bf1ff3a910c3401252a464e1edaa2dcda0f9848fe9f1e7f14971653"
       }
     ],
+    "meri-vinti-yahi-hai-maa": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-vinti-yahi-hai-maa-aaff509c0a7515ebcb8a06bdeac9ca1ddb05d1b396ef0fc66da7d9d386649727.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "aaff509c0a7515ebcb8a06bdeac9ca1ddb05d1b396ef0fc66da7d9d386649727"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-vinti-yahi-hai-maa-9c7c3f8029db0831476aa14d1a967cf8bfee82eb6fb2815f5f30579db5122d47.m4a",
+        "type": "audio/mp4",
+        "sha256": "9c7c3f8029db0831476aa14d1a967cf8bfee82eb6fb2815f5f30579db5122d47"
+      }
+    ],
     "mero-abgun-bisra-karo": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mero-abgun-bisra-karo.m4a",
@@ -2369,11 +2381,6 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-sai-bol-sai-sai-bol.mp3",
         "type": "audio/mpeg",
         "sha256": "1c4b68a04cddb2dbc8a562aee575ed2ca6bc0d5cafbb7f534cf610b6c1f6f30b"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-sai-bol-sai-sai-bol.m4a",
-        "type": "audio/mp4",
-        "sha256": "e9ff853561270aca556fda36bcdc68a2698a8d9c1bd0b214b6e3fbc8903542f5"
       }
     ],
     "sai-tere-charnon-ki": [
@@ -2554,11 +2561,6 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shrdi-sai-dwarka-maai.mp3",
         "type": "audio/mpeg",
         "sha256": "20c1f7c2c6ba8e20d55874ede072359c4110d6431a1eae88144c9f88c872b30a"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shrdi-sai-dwarka-maai.m4a",
-        "type": "audio/mp4",
-        "sha256": "b3399f285cfe0ba0ace0cc36446fbda011aa2a3dcfc0e6820f85b1fad11bed77"
       }
     ],
     "shree-radhey-govinda": [
@@ -2695,6 +2697,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sukh-ka-dukh-ka.m4a",
         "type": "audio/mp4",
         "sha256": "c5834a69d81438d42480ac683f093deeab7e6f7ecb86453a8e305a9ffc07013d"
+      }
+    ],
+    "sumukh-pratham-he-svanam-gayak": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sumukh-pratham-he-svanam-gayak-e1ec91d2773d0f32f44f8c7538993564c2be45b5fb30ba55b3e7b12ddee9104d.m4a",
+        "type": "audio/mp4",
+        "sha256": "e1ec91d2773d0f32f44f8c7538993564c2be45b5fb30ba55b3e7b12ddee9104d"
       }
     ],
     "sun-sun-sadho-jee": [
