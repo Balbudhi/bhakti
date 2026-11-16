@@ -11192,4 +11192,160 @@ window.BHAKTI_SONGS = [
   "subtitle": "Gurbāṇī",
   "queueNumber": 346
 }
+,
+{
+  "slug": "rajas-sukumar",
+  "queueId": "66c96dba",
+  "title": "Rājas Sukumār Madanācā Putaḷā",
+  "credit": "Tukārām · Bhimsen Joshi",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Rajas Sukumar Madanaca Putala",
+    "Vishnu",
+    "Visnu",
+    "Tukaram · Bhimsen Joshi",
+    "Tukaram",
+    "राजस सुकुमार मदनाचा पुतळा",
+    "Rajas Sukumar Madanacha Putala",
+    "Sant Tukaram",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang"
+  ],
+  "writer": "Tukārām",
+  "singer": "Bhimsen Joshi",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rajas-sukumar-813a880f0f6e87a55776c1d165b84b30cb9ae44e9171086dce3496446119c6e0.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rajas-sukumar-118d39f4a10c1e5e6528fe3ffb7e1d2dd36e65c171f1c17e6906a41edb33f318.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 353
+},
+{
+  "slug": "je-ka-ranjale-ganjale",
+  "queueId": "d9cb45ed",
+  "title": "Je Kā Rañjale Gāñjale",
+  "credit": "Tukārām · Bhimsen Joshi · Shrinivas Khale",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [],
+  "searchAliases": [
+    "Je Ka Ranyjale Ganyjale",
+    "Tukaram · Bhimsen Joshi · Shrinivas Khale",
+    "Tukaram",
+    "जे का रंजले गांजले",
+    "Sant Tukaram"
+  ],
+  "writer": "Tukārām",
+  "singer": "Bhimsen Joshi",
+  "composer": "Shrinivas Khale",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-ka-ranjale-ganjale-1630317ede1677085177e3926fd6c80fcb8de18484a20024bf28d07f69be7b73.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-ka-ranjale-ganjale-f5f6781af580b6cd95648c6edde8ce9cb2b1c91a75e8035034f45d2319884354.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "queueNumber": 352
+},
+{
+  "slug": "deh-javo-athava-raho",
+  "queueId": "50ae6822",
+  "title": "Deh Jāo Athavā Rāho",
+  "credit": "Nāmadev · Suman Kalyanpur",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Deh Jao Athava Raho",
+    "Vishnu",
+    "Visnu",
+    "Namadev · Suman Kalyanpur",
+    "Namadev",
+    "Deh Jāvo Athavā Rāho",
+    "देह जावो अथवा राहो",
+    "Deha Javo Athav Raho",
+    "Nāmdev",
+    "Namdev",
+    "Sant Namdev",
+    "Vitthal",
+    "Vithal",
+    "Vithoba",
+    "Pandurang",
+    "देह जाओ अथवा राहो"
+  ],
+  "writer": "Nāmadev",
+  "singer": "Suman Kalyanpur",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-javo-athava-raho-10f765bbcc97797ea6a453f1d9da277febcd247b3e7d7a442ccdb0bb689a11d6.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-javo-athava-raho-9c35de075de058258b9e5790eb51593e715563888fc946e421fab43b52d36ddd.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 350
+},
+{
+  "slug": "hechi-dan-dega-deva",
+  "queueId": "a6a4721c",
+  "title": "Heci Dān De Gā Devā",
+  "credit": "Tukārām · Pandit Jitendra Abhisheki",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Heci Dan De Ga Deva",
+    "Vishnu",
+    "Visnu",
+    "Tukaram · Pandit Jitendra Abhisheki",
+    "Tukaram",
+    "Heci Dan Dega Deva",
+    "Heci Dān Degā Devā",
+    "हेचि दान देगा देवा",
+    "Sant Tukaram"
+  ],
+  "writer": "Tukārām",
+  "singer": "Pandit Jitendra Abhisheki",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hechi-dan-dega-deva-a0fd7ad3ae90902acd4deac907eecbacbdf23f22ab39963995daabebf0e75bd3.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hechi-dan-dega-deva-9f98bcead0e40fd4761cffd65392829c191e59b822771144d085e7739289f2bf.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 351
+}
 ];

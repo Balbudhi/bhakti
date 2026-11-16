@@ -609,6 +609,18 @@
         "sha256": "f894f89e63ac79ecab1fe9b4fabe089f54f8d2416ba7d720a6569b6aba5dc373"
       }
     ],
+    "deh-javo-athava-raho": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-javo-athava-raho-10f765bbcc97797ea6a453f1d9da277febcd247b3e7d7a442ccdb0bb689a11d6.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "10f765bbcc97797ea6a453f1d9da277febcd247b3e7d7a442ccdb0bb689a11d6"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-javo-athava-raho-9c35de075de058258b9e5790eb51593e715563888fc946e421fab43b52d36ddd.m4a",
+        "type": "audio/mp4",
+        "sha256": "9c35de075de058258b9e5790eb51593e715563888fc946e421fab43b52d36ddd"
+      }
+    ],
     "deh-shiva-bar-mohe-hai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-shiva-bar-mohe-hai-7ea337bf7959a4bb160b56d70ac1f30c31c42a2dd855fee66b50be4633bf0020.webm",
@@ -1011,6 +1023,18 @@
         "sha256": "ea1655420fc4bd3d59ea3d28c8bd2463197e27bb279a080043b0fdd7377cbe61"
       }
     ],
+    "hechi-dan-dega-deva": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hechi-dan-dega-deva-a0fd7ad3ae90902acd4deac907eecbacbdf23f22ab39963995daabebf0e75bd3.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "a0fd7ad3ae90902acd4deac907eecbacbdf23f22ab39963995daabebf0e75bd3"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hechi-dan-dega-deva-9f98bcead0e40fd4761cffd65392829c191e59b822771144d085e7739289f2bf.m4a",
+        "type": "audio/mp4",
+        "sha256": "9f98bcead0e40fd4761cffd65392829c191e59b822771144d085e7739289f2bf"
+      }
+    ],
     "hey-kharari": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hey-kharari-f2f706798af28f2bd761227eb662369b4905c626bb9d59013a8cd25a41d4fd70.webm",
@@ -1328,6 +1352,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jayati-jayati-shri-ganesh-56492ee6b8139eb0b232a68799d17e9589a5ea21d9b5acdd97f95cbfba85741d.m4a",
         "type": "audio/mp4",
         "sha256": "56492ee6b8139eb0b232a68799d17e9589a5ea21d9b5acdd97f95cbfba85741d"
+      }
+    ],
+    "je-ka-ranjale-ganjale": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-ka-ranjale-ganjale-1630317ede1677085177e3926fd6c80fcb8de18484a20024bf28d07f69be7b73.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "1630317ede1677085177e3926fd6c80fcb8de18484a20024bf28d07f69be7b73"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/je-ka-ranjale-ganjale-f5f6781af580b6cd95648c6edde8ce9cb2b1c91a75e8035034f45d2319884354.m4a",
+        "type": "audio/mp4",
+        "sha256": "f5f6781af580b6cd95648c6edde8ce9cb2b1c91a75e8035034f45d2319884354"
       }
     ],
     "jeevan-ke-har-mode": [
@@ -2502,6 +2538,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rajabidiyolaginda-kasturi-ranga-05be1bc6a02a204465b7f570ba61bb1193972f4a2a9c82bd41168b42b671a010.mp3",
         "type": "audio/mpeg",
         "sha256": "05be1bc6a02a204465b7f570ba61bb1193972f4a2a9c82bd41168b42b671a010"
+      }
+    ],
+    "rajas-sukumar": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rajas-sukumar-813a880f0f6e87a55776c1d165b84b30cb9ae44e9171086dce3496446119c6e0.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "813a880f0f6e87a55776c1d165b84b30cb9ae44e9171086dce3496446119c6e0"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/rajas-sukumar-118d39f4a10c1e5e6528fe3ffb7e1d2dd36e65c171f1c17e6906a41edb33f318.m4a",
+        "type": "audio/mp4",
+        "sha256": "118d39f4a10c1e5e6528fe3ffb7e1d2dd36e65c171f1c17e6906a41edb33f318"
       }
     ],
     "ram-sumir-ke-raham-kare-na": [
