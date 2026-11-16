@@ -9834,4 +9834,42 @@ window.BHAKTI_SONGS = [
   ],
   "queueNumber": 311
 }
+,
+{
+  "slug": "saso-ki-mala-par-simaru-nisdina-pi-ka-nama",
+  "queueId": "bc79a538",
+  "title": "Sāṃsoṃ Kī Mālā",
+  "credit": "Nusrat Fateh Ali Khan",
+  "languageTags": [
+    "Urdu",
+    "Braj Bhasha",
+    "Hindustani",
+    "Hindi"
+  ],
+  "subjectTags": [
+    "Rāma"
+  ],
+  "searchAliases": [
+    "Samsom Ki Mala",
+    "Rama",
+    "Sanson Ki Mala",
+    "Sanso Ki Mala",
+    "Saso Ki Mala"
+  ],
+  "writer": "",
+  "singer": "Nusrat Fateh Ali Khan",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saso-ki-mala-par-simaru-nisdina-pi-ka-nama.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saso-ki-mala-par-simaru-nisdina-pi-ka-nama.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Rāma",
+  "queueNumber": 312
+}
 ];
