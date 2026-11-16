@@ -10252,4 +10252,291 @@ window.BHAKTI_SONGS = [
   "subtitle": "Viṣṇu",
   "queueNumber": 320
 }
+,
+{
+  "slug": "modalondipe-ninage-gananatha",
+  "queueId": "6285f304",
+  "title": "Modalondipe Ninage Gaṇanātha",
+  "credit": "Śrīpādarāja",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Gaṇeśa",
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Ganesha",
+    "Ganesa",
+    "Shripadaraja",
+    "Sripadaraja",
+    "Vishnu",
+    "Visnu",
+    "Modalu Vandipe"
+  ],
+  "writer": "Śrīpādarāja",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/modalondipe-ninage-gananatha-4b5c29ff873a5cb2a53a714554dd4ab8e6732ef023da8e75ba3bd92dd26217f1.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Gaṇeśa",
+  "queueNumber": 327
+},
+{
+  "slug": "saranembe-vani",
+  "queueId": "01803c4b",
+  "title": "Śaraṇembe Vāṇi",
+  "credit": "Purandaradāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Sarasvatī"
+  ],
+  "searchAliases": [
+    "Sharanembe Vani",
+    "Sarasvati",
+    "Purandaradasa"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saranembe-vani-d328380c5ccc2ec0995977fbb56e8c7cfbfccaef0e3ae90d2328b7e4fd45c127.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Sarasvatī",
+  "queueNumber": 331
+},
+{
+  "slug": "sanjivana-giridhara",
+  "queueId": "8771bee3",
+  "title": "Sañjīvana Giridhara",
+  "credit": "Mōhanadāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Hanumān"
+  ],
+  "searchAliases": [
+    "Sanyjivana Giridhara",
+    "Hanuman",
+    "Mōhanadasa",
+    "Mohanadasa"
+  ],
+  "writer": "Mōhanadāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sanjivana-giridhara-111dd55229f88ee7569de75d577177df72c4d7c87a4964dad10cea3bfc9f0a05.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Hanumān",
+  "queueNumber": 330
+},
+{
+  "slug": "nodire-venkataramanana",
+  "queueId": "1325a537",
+  "title": "Nōḍire Veṅkaṭaramaṇana",
+  "credit": "Śyāmasundara Dāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Nōdire Vengkataramanana",
+    "Vishnu",
+    "Visnu",
+    "Shyamasundara Dasa",
+    "Syamasundara Dasa",
+    "Vengkatesha",
+    "Venkatesa",
+    "Nodide Venkataramanana"
+  ],
+  "writer": "Śyāmasundara Dāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nodire-venkataramanana-2067cc430d0a834276533b95253be9d858c5053db1af05aa0a80bfbeba3a864b.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 329
+},
+{
+  "slug": "barayya-ba-ba-bhakutara-priya",
+  "queueId": "216cc7b0",
+  "title": "Bārayya Bā Bā Bhakutara Priya",
+  "credit": "Gopāladāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Kṛṣṇa"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Gopaladasa",
+    "Krshna",
+    "Krsna"
+  ],
+  "writer": "Gopāladāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/barayya-ba-ba-bhakutara-priya-11567d393b19fb1b079479365e124d3a56ff074b0a268631c8a8c1d8847fb21a.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 324
+},
+{
+  "slug": "namah-parvatipati",
+  "queueId": "5ddbe89b",
+  "title": "Namaḥ Pārvatīpati",
+  "credit": "Vyāsarāja Tīrtha",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Śiva",
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Shiva",
+    "Siva",
+    "Vyasaraja Tirtha",
+    "Vishnu",
+    "Visnu",
+    "Namah Parvati Pati",
+    "Vyasaraja"
+  ],
+  "writer": "Vyāsarāja Tīrtha",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namah-parvatipati-3031089c211b7463de9a73a239dfbd0480167ede57d58dcce18d5e406f5120d2.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Śiva",
+  "queueNumber": 328
+},
+{
+  "slug": "ghatikachaladi-ninta-shri-hanumanta",
+  "queueId": "7df132fd",
+  "title": "Ghaṭikācaladi Ninta Śrī Hanumanta",
+  "credit": "Purandaradāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Hanumān",
+    "Narasimha"
+  ],
+  "searchAliases": [
+    "Ghatikacaladi Ninta Shri Hanumanta",
+    "Ghatikacaladi Ninta Sri Hanumanta",
+    "Hanuman",
+    "Purandaradasa"
+  ],
+  "writer": "Purandaradāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ghatikachaladi-ninta-shri-hanumanta-687ddfe9d0ae9ebc6fbcc583dda41015d033467b346c765759f4e25a151a15b7.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Hanumān",
+  "queueNumber": 325
+},
+{
+  "slug": "sri-mahalakumi-deviye",
+  "queueId": "4e8e6ff4",
+  "title": "Śrī Mahālakumi Dēviyē",
+  "credit": "Vijayadāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Lakṣmī"
+  ],
+  "searchAliases": [
+    "Shri Mahalakumi Dēviyē",
+    "Lakshmi",
+    "Laksmi",
+    "Vijayadasa",
+    "Sri Mahalakshmi"
+  ],
+  "writer": "Vijayadāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sri-mahalakumi-deviye-ef7d4ffb675d14a9964232921e04bea4ae213304cf6a0fa4a1ef8664af07002c.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Lakṣmī",
+  "queueNumber": 332
+},
+{
+  "slug": "meruguvantidi-alamelumanga",
+  "queueId": "22e1a9fc",
+  "title": "Meruguvaṇṭidi Alamēlumaṅga",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Lakṣmī",
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Meruguvantidi Alamēlumanga",
+    "Lakshmi",
+    "Laksmi",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vishnu",
+    "Visnu",
+    "Vengkatesha",
+    "Venkatesa",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meruguvantidi-alamelumanga-e6e956df1e982f6f66893d702cd6b996592f0d23cc0668faba04465d2f7453a3.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Lakṣmī",
+  "queueNumber": 326
+}
 ];

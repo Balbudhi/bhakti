@@ -263,6 +263,13 @@
         "sha256": "d081bf7a2675957f3dde2db19ac06dd7804777814dd0f3a088ffd930b2d7a8e0"
       }
     ],
+    "barayya-ba-ba-bhakutara-priya": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/barayya-ba-ba-bhakutara-priya-11567d393b19fb1b079479365e124d3a56ff074b0a268631c8a8c1d8847fb21a.mp3",
+        "type": "audio/mpeg",
+        "sha256": "11567d393b19fb1b079479365e124d3a56ff074b0a268631c8a8c1d8847fb21a"
+      }
+    ],
     "baso-mere-nainan-me-nandalal": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baso-mere-nainan-me-nandalal.webm",
@@ -785,6 +792,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ghanshyam-sundara.m4a",
         "type": "audio/mp4",
         "sha256": "7e59adfadadd878b8c72b0d77dd885e49ff19b723c851639c8e183f034f506be"
+      }
+    ],
+    "ghatikachaladi-ninta-shri-hanumanta": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ghatikachaladi-ninta-shri-hanumanta-687ddfe9d0ae9ebc6fbcc583dda41015d033467b346c765759f4e25a151a15b7.mp3",
+        "type": "audio/mpeg",
+        "sha256": "687ddfe9d0ae9ebc6fbcc583dda41015d033467b346c765759f4e25a151a15b7"
       }
     ],
     "gur-satgur-ka-jo-sikh-akhaye": [
@@ -1947,6 +1961,13 @@
         "sha256": "4c3d66ea5e4fce55d66c3f1dae33a161286420ffc5c36ec973c88510a6ff6863"
       }
     ],
+    "meruguvantidi-alamelumanga": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meruguvantidi-alamelumanga-e6e956df1e982f6f66893d702cd6b996592f0d23cc0668faba04465d2f7453a3.mp3",
+        "type": "audio/mpeg",
+        "sha256": "e6e956df1e982f6f66893d702cd6b996592f0d23cc0668faba04465d2f7453a3"
+      }
+    ],
     "mhare-ghar-ao-pritam-pyara": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhare-ghar-ao-pritam-pyara.webm",
@@ -1969,6 +1990,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mittar-pyare-nu.m4a",
         "type": "audio/mp4",
         "sha256": "ecc839b39702a2e592e6d844502cc8bc10dcd9b0b782ec25843ab08113df4f39"
+      }
+    ],
+    "modalondipe-ninage-gananatha": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/modalondipe-ninage-gananatha-4b5c29ff873a5cb2a53a714554dd4ab8e6732ef023da8e75ba3bd92dd26217f1.mp3",
+        "type": "audio/mpeg",
+        "sha256": "4b5c29ff873a5cb2a53a714554dd4ab8e6732ef023da8e75ba3bd92dd26217f1"
       }
     ],
     "mohodadhi-kule": [
@@ -2033,6 +2061,13 @@
         "sha256": "e65f0e2c2af40cff9acf314fd3773da195ff54038f8086cc45b8bd33cd2dfaa5"
       }
     ],
+    "namah-parvatipati": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namah-parvatipati-3031089c211b7463de9a73a239dfbd0480167ede57d58dcce18d5e406f5120d2.mp3",
+        "type": "audio/mpeg",
+        "sha256": "3031089c211b7463de9a73a239dfbd0480167ede57d58dcce18d5e406f5120d2"
+      }
+    ],
     "namaskar-mera": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/namaskar-mera.mp3",
@@ -2081,6 +2116,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nirguna-galiya.m4a",
         "type": "audio/mp4",
         "sha256": "e63d2950f863e8fb83668f4e4d5db8e491ced70764ad47c198e545a3b30e45d6"
+      }
+    ],
+    "nodire-venkataramanana": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nodire-venkataramanana-2067cc430d0a834276533b95253be9d858c5053db1af05aa0a80bfbeba3a864b.mp3",
+        "type": "audio/mpeg",
+        "sha256": "2067cc430d0a834276533b95253be9d858c5053db1af05aa0a80bfbeba3a864b"
       }
     ],
     "o-bhagwan": [
@@ -2594,11 +2636,25 @@
         "sha256": "ffdbda195e96771c5f92af4b2cac86fb5538f78e9732968af44d1496e3db3110"
       }
     ],
+    "sanjivana-giridhara": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sanjivana-giridhara-111dd55229f88ee7569de75d577177df72c4d7c87a4964dad10cea3bfc9f0a05.mp3",
+        "type": "audio/mpeg",
+        "sha256": "111dd55229f88ee7569de75d577177df72c4d7c87a4964dad10cea3bfc9f0a05"
+      }
+    ],
     "sankat-mochan-naam-tiharo": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sankat-mochan-naam-tiharo.m4a",
         "type": "audio/mp4",
         "sha256": "a10b43cdc68493ce271e9f9902f5b2a4e94f2ad246c2704bb55fc0879021f953"
+      }
+    ],
+    "saranembe-vani": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saranembe-vani-d328380c5ccc2ec0995977fbb56e8c7cfbfccaef0e3ae90d2328b7e4fd45c127.mp3",
+        "type": "audio/mpeg",
+        "sha256": "d328380c5ccc2ec0995977fbb56e8c7cfbfccaef0e3ae90d2328b7e4fd45c127"
       }
     ],
     "saranu-siddhi-vinayaka": [
@@ -2856,6 +2912,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-satgur-pyara-mere-naal-hai.m4a",
         "type": "audio/mp4",
         "sha256": "16259b9ca9a3fd2d5bdb8a5f1d59e983ad653ff7792d2a38d423cf6bc8e958bf"
+      }
+    ],
+    "sri-mahalakumi-deviye": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sri-mahalakumi-deviye-ef7d4ffb675d14a9964232921e04bea4ae213304cf6a0fa4a1ef8664af07002c.mp3",
+        "type": "audio/mpeg",
+        "sha256": "ef7d4ffb675d14a9964232921e04bea4ae213304cf6a0fa4a1ef8664af07002c"
       }
     ],
     "sukh-ka-dukh-ka": [
