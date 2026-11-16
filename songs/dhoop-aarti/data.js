@@ -1183,11 +1183,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āṭhāṅ divasāṅ guruvārīṅ bhakta karitī vārī",
-    "english": "{0:Every eight }{1:days, }{2:on Thursdays, }{3:devotees }{4:make their }{5:pilgrimage,}",
+    "english": "{0,1:Every week, }{2:on Thursdays, }{3:devotees }{4:make their }{5:pilgrimage,}",
     "words": [
       {
         "roman": "Āṭhāṅ",
-        "gloss": "of eight",
+        "gloss": "eight (in the inclusive expression for a week)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1222,7 +1222,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Āṭhāṅ divasāṅ is an Old Marathi temporal genitive/locative phrase for 'every eight days / weekly'; karitī is 3rd person plural present."
+    "grammarNote": "Āṭhāṅ divasāṅ is the Marathi temporal expression for the weekly recurrence, counting both the starting and returning Thursday. Karitī is third-person plural present."
   },
   "line-017": {
     "source": "प्रभुपद पहावया भवभय निवारी",
@@ -6715,7 +6715,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svapādāśritānāṁ svabhaktipriyāṇām",
-    "english": "{0:who have taken refuge at his feet, }{1:beloved through devotion to him,}",
+    "english": "{0:who have taken refuge at his feet, }{1:and hold devotion to him dear,}",
     "words": [
       {
         "roman": "svapādāśritānāṁ",
@@ -6725,12 +6725,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "svabhaktipriyāṇām",
-        "gloss": "of those who are dear to his devotion / loving his worship",
+        "gloss": "of those to whom devotion to him is dear",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sanskrit. 'svapādāśritānāṁ' and 'svabhaktipriyāṇām' are genitive plural masculine compounds modifying 'janānām'."
+    "grammarNote": "Svapādāśritānāṁ and svabhaktipriyāṇām are genitive plural masculine compounds modifying janānām. The latter describes people for whom devotion to him is dear."
   },
   "line-096": {
     "source": "समुद्धारणार्थं कलौ सम्भवन्तं",

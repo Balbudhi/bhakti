@@ -18,7 +18,7 @@ window.SONG_META = {
     "Śirḍī Sāī"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "source-script-migration-required",
+  "sourceStatus": "reviewed",
   "timingStatus": "start-only-reviewed",
   "audioSources": [
     {
@@ -90,7 +90,7 @@ window.SONG_LINES = {
     ]
   },
   "refrain_b": {
-    "roman": "Terā sumiraṇ kaise karūṅ",
+    "roman": "Terā sumiran kaise karūṅ",
     "english": "{2:How }{3:may I }{1:remember }{0:You }{1:in devotion?}",
     "words": [
       {
@@ -98,7 +98,7 @@ window.SONG_LINES = {
         "gloss": "Your"
       },
       {
-        "roman": "sumiraṇ",
+        "roman": "sumiran",
         "gloss": "devotional remembrance"
       },
       {
@@ -200,7 +200,7 @@ window.SONG_LINES = {
     ]
   },
   "refrain_d": {
-    "roman": "Tumko kaise citt meṅ dharūṅ",
+    "roman": "Tumko kaise cit meṅ dharūṅ",
     "english": "{1:How}{4: shall I hold}{0: You}{3: in}{2: my heart?}",
     "words": [
       {
@@ -212,7 +212,7 @@ window.SONG_LINES = {
         "gloss": "how"
       },
       {
-        "roman": "citt",
+        "roman": "cit",
         "gloss": "mind, heart, consciousness"
       },
       {
@@ -620,7 +620,7 @@ window.SONG_LINES = {
     ]
   },
   "v2a": {
-    "roman": "Sukh duḥkh hai ek rāh agar to",
+    "roman": "Sukh dukh hai ek rāh agar to",
     "english": "{5:If }{0:joy }and {1:sorrow }{2:are }{3:one }{4:path, }{6:then…}",
     "words": [
       {
@@ -628,7 +628,7 @@ window.SONG_LINES = {
         "gloss": "joy, happiness"
       },
       {
-        "roman": "duḥkh",
+        "roman": "dukh",
         "gloss": "sorrow, pain"
       },
       {

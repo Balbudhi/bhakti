@@ -35,7 +35,7 @@ window.SONG_META = {
 
 window.SONG_LINES = {
   "refrain-1": {
-    "source": "ଥରକୁ ଥର ତୁଁ ଅଧିଆ ତଡ଼ୁଛି ଗୁରୁବାରେ କୃପା କର",
+    "source": "ଥରକୁ ଥର ମୁଁ ଅଧିଆ ପଡ଼ୁଛି ଗୁରୁବାରେ କୃପା କର",
     "sourceLanguage": "",
     "roman": "Tharaku thara muṃ adhiā paḍuchi gurubārē kṛpā kara",
     "english": "{0,1:Time and again }{2:I }{3,4:lie prostrate in vigil; }{5:on Thursday, }{6,7:bestow grace.}",
@@ -104,7 +104,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ତୁଁ",
+        "text": "ମୁଁ",
         "wordIndices": [
           2
         ]
@@ -116,7 +116,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ତଡ଼ୁଛି",
+        "text": "ପଡ଼ୁଛି",
         "wordIndices": [
           4
         ]
@@ -142,7 +142,7 @@ window.SONG_LINES = {
     ]
   },
   "refrain-2": {
-    "source": "ଗୋଳାଗି ଲାଗେ ତୁଁ ଚରଣେ ତୁମରି ସାଇ ମୋତେ ରକ୍ଷା କର",
+    "source": "ଗୋଳାଗି ଲାଗେ ମୁଁ ଚରଣେ ତୁମରି ସାଇ ମୋତେ ରକ୍ଷା କର",
     "sourceLanguage": "",
     "roman": "Gōḷāgi lāgē muṃ caraṇē tumari sāi mōtē rakṣā kara",
     "english": "{2:I }{0,1:fall prostrating }{4:at your very }{3:feet; }{5:O Sai, }{7,8:protect }{6:me.}",
@@ -217,7 +217,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ତୁଁ",
+        "text": "ମୁଁ",
         "wordIndices": [
           2
         ]

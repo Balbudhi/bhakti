@@ -22221,7 +22221,7 @@ window.SONG_LINES = {
     "source": "बरसत बारि पीर जारिये जवासी जस रोष बिनु दोष धूम मूल मलिनाई है।",
     "sourceLanguage": "bra",
     "roman": "barsat bāri pīr jāriye jawāsī jas roṣ binu doṣ dhūm mūl malināī hai.",
-    "english": "{0:Raining }{1:the water }{2:of pain, }{3:it scorches me }{5:just as }{4:the jawāsā plant, }{6:with wrath }{7,8:without fault, }{9:producing dark smoke }{10:as the root }{11,12:of foul misery.}",
+    "english": "{0:Raining down }{1:the water }{2:of pain, }{3:they scorch me }{5:like }{4:the jawāsā plant, }{6:angry }{7,8:though I am blameless; }{11,12:such is their dark, }{9,10:smoke-born }{11:nature.}",
     "words": [
       {
         "roman": "barsat",
@@ -22243,13 +22243,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāriye",
-        "gloss": "burns",
+        "gloss": "scorch; burn",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jawāsī",
-        "gloss": "the jawāsā plant",
+        "gloss": "the jawāsā plant, said in this poetic image to wither under rain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -22279,19 +22279,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhūm",
-        "gloss": "smoke",
+        "gloss": "smoke, pictured as the origin of the rainclouds",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mūl",
-        "gloss": "source",
+        "gloss": "root; source; origin",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "malināī",
-        "gloss": "foulness",
+        "gloss": "dark nature; impurity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -22302,7 +22302,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "barsat is a present participle functioning as an adjective/verb; bāri pīr is an appositional metaphor (water of pain).",
+    "grammarNote": "The hostile forces of the preceding line are pictured as rainclouds. The closing image is read here as their dark nature arising from smoke; another traditional interpretation makes the poet’s sins the smoke from which those clouds arise. The jawāsā image deliberately describes rain as scorching the plant.",
     "sourceWords": [
       {
         "text": "बरसत",

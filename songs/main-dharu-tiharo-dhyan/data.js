@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gandhā",
-        "gloss": "O Gandhā",
+        "gloss": "the one addressed here; the exact referent is uncertain",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1181,7 +1181,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Gandhā",
-        "gloss": "O Gandhā",
+        "gloss": "the one addressed here; the exact referent is uncertain",
         "concept_key": "",
         "preserve_in_english": false
       },

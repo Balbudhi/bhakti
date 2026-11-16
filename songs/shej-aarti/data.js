@@ -4624,7 +4624,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "manāce sumane karunī kele śejelā",
-    "english": "{2:Having made }{1:flowers }{0:of the mind, }{3:it was prepared }{4:for the bed.}",
+    "english": "{1:Flowers }{2:were fashioned }{0:from the mind, }{3:and preparations made }{4:for the bed.}",
     "words": [
       {
         "roman": "manāce",

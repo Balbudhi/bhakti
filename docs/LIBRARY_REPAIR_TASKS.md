@@ -1275,15 +1275,30 @@ Source scripts, romanization, performance order, timings and listener audio are
 unchanged by this editorial release. Existing source/transcription discrepancies
 are therefore not certified as repaired.
 
-Unresolved passages remain explicit: selected Hanuman Bahuk smoke/cloud imagery;
-Shej's implicit bed-preparation object; Kakad's Hindi-adaptation time wording and
-names; Namo Vindhyeshwari's antecedent; isolated Baishi, Tero Chakar, Dhoop and Jab
-Dil constructions; and Gandha's identity. Two native-script migrations, a Thara
-source/roman discrepancy and a stray Sundarakanda romanization character remain
-separate source tasks. These are limitations of the available evidence, not
-permission to replace the text by guesses or to claim every passage is certain.
-The remaining step is to resolve these specific source cases with independent
-evidence; no further whole-library screening or retranslation is needed.
+A final focused batch corrects 38 fields in nine readers, bringing the combined
+scope to 96 corrected songs and 269 unchanged songs. Bahuk's smoke/cloud image
+now follows the directly inspected Piyush-varshini commentary (printed p147),
+while retaining the alternative interpretation in its note. Dhoop's weekly
+Thursday idiom and devotion compound, Shej's dangling English construction, and
+Jab Dil's cross-line negation are corrected. Two stale native-script migration
+markers are cleared after checking all 34 existing source lines; Main Murakh's
+three Roman spellings now match those source forms. Sundarakanda loses only a
+stray Latin source character. Thara's script is restored from the retained first
+transcript to agree with the unchanged audited Roman text and English.
+These source-layer repairs do not claim new listening or timing verification.
+Nine semantic profiles were refreshed in 18 calls for $0.60368625. All 365 audio
+profiles and 356 unaffected records remain identical. Jab and Main now have
+accepted semantic assessments and no legacy exception; Koi remains unavailable.
+
+Kakad and Gandha popups no longer assert unsupported identities. Kakad's
+written midday/night conflict is explicitly explained; its midnight translation
+remains a contextual, provisional reading. Kakad's unclear names and the exact
+Gandha referent remain uncertain. Baishi's participial fragment and Tero Chakar's
+ambiguous final clauses have no evidenced replacement; retain their wording.
+Namo Vindhyeshwari's son reading and Shej's prasad construction are valid readings,
+not outstanding demonstrated errors. These are specific limits on interpretation,
+not permission to invent meanings or claim every passage is certain. No further
+whole-library screening or indiscriminate retranslation is needed.
 
 The gloss producer no longer chooses identities or meanings from global folded
 name labels, and cannot overwrite a meaningful occurrence-specific explanation.

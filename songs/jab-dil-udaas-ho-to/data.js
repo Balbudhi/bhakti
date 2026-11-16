@@ -17,7 +17,7 @@ window.SONG_META = {
     "Śirḍī Sāī"
   ],
   "translationStatus": "reviewed",
-  "sourceStatus": "source-script-migration-required",
+  "sourceStatus": "reviewed",
   "timingStatus": "start-only-reviewed",
   "audioSources": [
     {
@@ -348,7 +348,7 @@ window.SONG_LINES = {
   },
   "jeevan_ka_har_din_to": {
     "roman": "Jīvan kā har din to",
-    "english": "{2:Every}{3: day}{0,1: of life,}{4: indeed…}",
+    "english": "{0,1:Life’s }{2,3:days, }{4:indeed…}",
     "words": [
       {
         "roman": "Jīvan",
@@ -408,7 +408,7 @@ window.SONG_LINES = {
   },
   "roshan_nahin_hota": {
     "roman": "Roshan nahīṅ hotā",
-    "english": "…{2:is }{1:not }{0:bright.}",
+    "english": "…{2:are }{1:not }all {0:bright.}",
     "words": [
       {
         "roman": "Roshan",

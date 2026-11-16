@@ -35377,7 +35377,7 @@ window.SONG_LINES = {
     "grammarNote": "Third-person singular future verbs 'jāihi' and 'āihi' express Ravana's anticipated scenario. 'lai āihi' forms a compound verb meaning 'will bring along'. 'nāthahi' bears the accusative/dative postpositional suffix '-hi'."
   },
   "line-292": {
-    "source": "जिन्ह कै कीन्हसि बहुत बड़ाई। देखेउँûमैं तिन्ह कै प्रभुताई ॥",
+    "source": "जिन्ह कै कीन्हसि बहुत बड़ाई। देखेउँमैं तिन्ह कै प्रभुताई ॥",
     "sourceLanguage": "awa",
     "sourceWords": [
       {
@@ -35411,7 +35411,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "देखेउँûमैं",
+        "text": "देखेउँमैं",
         "wordIndices": [
           5,
           6

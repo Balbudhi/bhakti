@@ -4522,7 +4522,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Madhyāhna",
-        "gloss": "middle"
+        "gloss": "midday; the wording is uncertain beside “night” here"
       },
       {
         "roman": "rātra",
@@ -4553,7 +4553,7 @@ window.SONG_LINES = {
         "gloss": "O lord"
       }
     ],
-    "grammarNote": "Madhyāhna rātra poetically denotes midnight. Continuous aspect gujara rahī hai; soco is an imperative.",
+    "grammarNote": "Madhyāhna ordinarily means midday, but rātra and the following dawn rite point to a night-time setting; the intended compound is uncertain. Gujara rahī hai is continuous; soco is imperative.",
     "sourceWords": [
       {
         "text": "मध्याह्न",
@@ -8741,7 +8741,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mandā",
-        "gloss": "a proper name here"
+        "gloss": "meaning uncertain in this Hindi line"
       },
       {
         "roman": "kā",
@@ -9436,7 +9436,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vasko",
-        "gloss": "the poet's name"
+        "gloss": "identity or meaning uncertain here"
       },
       {
         "roman": "haiṁ",
@@ -13534,7 +13534,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mohanīrāja",
-        "gloss": "Mohiniraj (Lord Vishnu / Dattatreya)"
+        "gloss": "Mohanīrāj; the referent in this Hindi verse is uncertain"
       },
       {
         "roman": "hī",

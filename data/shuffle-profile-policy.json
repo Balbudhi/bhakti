@@ -2,9 +2,7 @@
   "schemaVersion": 1,
   "qualificationVersion": 1,
   "legacySongs": {
-    "1b54ca76": "koi-hor-nahi",
-    "99d84a7b": "main-murakh-main-anpad",
-    "a4147270": "jab-dil-udaas-ho-to"
+    "1b54ca76": "koi-hor-nahi"
   },
   "fallbackKinds": [
     "human"
