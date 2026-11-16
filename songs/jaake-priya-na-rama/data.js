@@ -531,7 +531,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Suhṛda susevya jahā̃ laũ",
-    "english": "{0:all true friends }{1:and those worthy of service, }{2:wherever }{3:they may be.}",
+    "english": "{2,3:Only to that extent }{0:are they true friends }{1:and worthy of service.}",
     "words": [
       {
         "roman": "Suhṛda",
@@ -547,7 +547,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jahā̃",
-        "gloss": "wherever / as far as",
+        "gloss": "to what extent; as far as (with laũ)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -558,7 +558,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Substantivized adjectives 'suhṛda susevya' quantified by the correlative limit phrase 'jahā̃ laũ'."
+    "grammarNote": "jahā̃ laũ is a limiting extent phrase: people are regarded as true friends and worthy of service insofar as the preceding connection through Rāma holds. The predicate continues the recognition expressed by maniyata in the previous line."
   },
   "verse-2-line-5": {
     "source": "अंजन कहा आँखि जेहि फूटै",

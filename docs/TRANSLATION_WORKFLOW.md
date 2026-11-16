@@ -301,6 +301,13 @@ are not. Genuine names retain their evidenced identity or relationship in the
 popup; ordinary words and philosophical concepts receive precise contextual
 English, including short phrases when necessary.
 
+Gloss cleanup must not choose a meaning from a folded spelling. A bare name
+requires contextual explanation before publication; it must not acquire a poet,
+deity or place identity from a global fallback table. Preserve supplied meaningful
+explanations, including those that begin with the visible name. This applies to
+fresh gloss normalization, generation from reviewed caches and public-reader
+rebuilds: final formatting cannot silently replace the sense that was reviewed.
+
 Owner-supplied English is immutable. `data/editorial_baselines.json` protects the
 two designated reference readers, Koī Hor Nahī and Aruṇācala Akṣaramaṇamālai;
 supplied human translations remain a

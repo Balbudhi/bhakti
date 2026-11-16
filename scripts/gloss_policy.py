@@ -46,10 +46,9 @@ PRESERVED_HINTS = {
     if str(entry.get("shortGlossHint") or "").strip()
 }
 
-# These are explanations, never definitions that merely repeat the visible
-# Roman token. Context-specific generated glosses that are already meaningful
-# remain untouched; this table is used only when the old gloss begins by
-# repeating the token itself.
+# Historical vocabulary retained for reference. These hints are not evidence for
+# an occurrence and must never replace a supplied gloss during normalization or
+# final reader generation. The cleaner below uses only the supplied explanation.
 MEANING_ONLY = {
     "baba": "father; revered master",
     "angada": "Vānara prince and envoy of Rāma",
@@ -119,20 +118,53 @@ MEANING_ONLY = {
 }
 
 
-def is_self_referential(roman: object, gloss: object) -> bool:
+def _same_label(roman: object, text: object) -> bool:
+    # Accept ordinary English digraphs as spelling variants of an IAST label.
+    # This compares labels only; it does not select a referent or word sense.
     def loose(value: str) -> str:
-        # Model output often substitutes English digraphs for IAST letters:
-        # śivaśaṅkara → Shiva-Shankara. This remains repetition, not meaning.
         return value.replace(" ", "").replace("sh", "s")
 
-    gloss_key = loose(key(gloss))
-    return any(
-        len(roman_key) >= 3 and (
-            gloss_key == loose(roman_key)
-            or gloss_key.startswith(loose(roman_key))
-        )
-        for roman_key in roman_keys(roman)
-    )
+    candidate = loose(key(text))
+    return any(len(label) >= 3 and bool(re.fullmatch(r"(?:" + re.escape(loose(label)) + r")+", candidate))
+               for label in roman_keys(roman))
+
+
+def _supplied_tail(roman: object, text: str) -> str | None:
+    # Only an explicit label separator permits presentation-only removal.
+    # Name-leading prose ("Mādhava is ...", "Rāma's ...") remains exact.
+    for separator in re.finditer(r"\s*[,(:/\[—–]\s*|\s+-\s+", text):
+        if _same_label(roman, text[:separator.start()]):
+            tail = text[separator.end():].strip()
+            opener = separator.group().strip()
+            if opener in ("(", "["):
+                # Strip a wrapper only when its matching close ends the gloss.
+                # Mixed prose such as '(Kṛṣṇa), the cowherd' remains exact.
+                stack = [opener]
+                for index, character in enumerate(tail):
+                    if character in "([":
+                        stack.append(character)
+                    elif character in ")]":
+                        if not stack or stack.pop() != {')': '(', ']': '['}[character]:
+                            return None
+                        if not stack:
+                            return tail[:-1].strip() if index == len(tail) - 1 else None
+                return None
+            return tail
+    return None
+
+
+def is_self_referential(roman: object, gloss: object) -> bool:
+    text = str(gloss or "").strip()
+    while text:
+        if _same_label(roman, text) or is_placeholder_gloss(text):
+            return True
+        tail = _supplied_tail(roman, text)
+        if tail is None:
+            return False
+        if not tail:
+            return True
+        text = tail
+    return False
 
 
 def is_placeholder_gloss(gloss: object) -> bool:
@@ -141,35 +173,19 @@ def is_placeholder_gloss(gloss: object) -> bool:
 
 
 def meaning_only_gloss(roman: object, gloss: object, concept_key: object = "") -> str:
+    """Keep supplied meaning; never infer a sense or identity from the label.
+
+    ``concept_key`` remains an API-compatible bookkeeping argument, not authority
+    to replace this occurrence with a registry hint. Missing context must return
+    to source review, including for historical cached readers.
+    """
     text = str(gloss or "").strip()
-    # Some model outputs use a decomposed or accented spelling in the visible
-    # label and a different normalized spelling in the gloss.  Resolve this
-    # recurring Sundarakāṇḍa proper name before the generic self-reference
-    # detector, which deliberately treats either form as repetition.
-    if any(key in {"mainaka", "mainak"} for key in roman_keys(roman)):
-        return MEANING_ONLY["mainaka"]
-    if not is_self_referential(roman, text):
-        return text
-    concept_hint = str(PRESERVED.get(str(concept_key or ""), {}).get("shortGlossHint") or "").strip()
-    preserved_hint = concept_hint or next((PRESERVED_HINTS[candidate]
-                                           for candidate in roman_keys(roman)
-                                           if candidate in PRESERVED_HINTS), "")
-    if preserved_hint:
-        return preserved_hint
-    # A reviewed explanation belongs to this occurrence. Keep it ahead of a
-    # generic name identity, which may describe a different person or context.
-    tail = re.split(r"\s*[,(/\[]\s*", text, maxsplit=1)
-    if len(tail) == 2:
-        candidate = tail[1].rstrip(")] ").strip()
-        if candidate and not is_self_referential(roman, candidate) and not is_placeholder_gloss(candidate):
-            return candidate
-    hint = next((MEANING_ONLY[candidate] for candidate in roman_keys(roman)
-                 if candidate in MEANING_ONLY), "")
-    if hint:
-        return hint
-    raise ValueError(
-        f"unresolved self-referential gloss for {roman!r}; provide an identity or contextual meaning before publication"
-    )
+    if is_self_referential(roman, text) or is_placeholder_gloss(text):
+        raise ValueError(
+            f"unresolved self-referential gloss for {roman!r}; provide an identity or contextual meaning before publication"
+        )
+    tail = _supplied_tail(roman, text)
+    return tail if tail is not None else text
 
 
 def clean_word(word: dict[str, Any]) -> dict[str, Any]:

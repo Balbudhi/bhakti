@@ -37,7 +37,7 @@ class GenerationProfileGateTests(unittest.TestCase):
             {'id': 'line-one', 'source_text': 'साईं', 'roman': 'Sāīṃ', 'kind': 'refrain'}]}}
         self.timing = {'sequence': [{'ref': 'line-one', 'start': 1.25, 'end': 2.5}], 'validation_errors': []}
         self.glosses = {'packet': {'glosses': [{'id': 'line-one', 'word_glosses': [
-            {'roman': 'Sāīṃ', 'gloss': 'Sai'}], 'grammar_note': '', 'uncertainty': ''}]}}
+            {'roman': 'Sāīṃ', 'gloss': 'holy master'}], 'grammar_note': '', 'uncertainty': ''}]}}
         self.translations = {'packet': {'translations': [{'id': 'line-one', 'literal_english': 'Sai.',
             'segments': [{'text': 'Sai', 'word_indices': [0]}, {'text': '.', 'word_indices': []}], 'uncertainty': ''}]}}
         self.job = {'slug': 'sample-song', 'source': 'unused', 'title': 'Sample Song',

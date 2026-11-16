@@ -1,5 +1,18 @@
 # Whole-library repair task
 
+## 15 November 2026: current wording and popup repair
+
+Owner request: repair unclear or misleading English and word/name popups while preserving owner-written English and already-reviewed current-day work. This is separate from shuffle semantic assessment: accepted theme tags do not certify the translation. The exact published baseline is `6272bcf1`, 353 songs. A source/hash-bound private inventory identifies 259 older eligible readers, 92 protected readers (90 current-day touches plus two owner-English locks), and two source-script migration cases held for separate repair. Eligibility is permission to review, never permission to rewrite indiscriminately.
+
+Current step: all 259 older eligible readers received a whole-song English reading. Direct editorial review now reads source, English and popups together in compact form, preserving sound wording and investigating concrete defects. Recent edits alone are not review evidence; additional current-day readers are checked against actual prior editorial artifacts or read directly. Owner English remains protected. Ordinary corrections receive a brief source check and independent second reading; historical/source research is reserved for genuine uncertainty.
+
+The model screen is stopped: 191 settled requests cost $3.37652625, with no outstanding calls. It covered 4,112 of 6,396 eligible definitions (148 complete songs, two partial, 109 untouched) and produced 43 unapproved findings. Its pilot missed a known English attachment error. Neither a clean screen nor an English-only reading certifies every popup. Completed results remain useful leads; they do not replace direct reading or authorize rewrites.
+
+The first independently adjudicated batch repairs six readers: Chakar Rakho Ji, Guru He Mote Ete Para Kian Kala, Jaake Priya Na Rama, Kakad Aarti, Prabhu Kar Sab Dukh Door Hamare and Shree Radhey Govinda. It corrects misleading identity/sense popups, a plural misreading, limiting syntax and awkward English while preserving source text, performance order, timing and audio. A separate producer fix removes global name-to-identity substitutions from final gloss cleanup, including the false Mādhava poet-signature fallback; meaningful occurrence-specific explanations survive fresh generation and cache rebuilds. Actual consumer regressions accompany the fix.
+
+Next step: finish source-grounded adjudication of the wider screen and English flags, apply exact accepted changes through the checked reader-generation route, refresh affected shuffle semantic receipts, verify rendered popups/English and publish scoped batches after release checks. Owner English remains locked; the imported Viṣṇu Sahasranāma commentary-derived English needs source-reader-aware review. The current reader, not an old generated packet, is the baseline. The rhythm investigation is recorded separately in [the follow-up report](research/shuffle-qualification-2026-11-15/rhythm-followup.md); no BPM feature is enabled by this editorial task.
+
+
 ## Active goal and delivery order — 23 October 2026
 
 Deliver one economical, resumable workflow for both new-song intake and selective

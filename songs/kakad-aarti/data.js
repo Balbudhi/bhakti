@@ -3046,7 +3046,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pasārā",
-        "gloss": "expanse / illusion"
+        "gloss": "spread; expanse"
       },
       {
         "roman": "sab",
@@ -3880,7 +3880,7 @@ window.SONG_LINES = {
     "source": "अपने मशिद का झाड़ू गणू है",
     "sourceLanguage": "hi",
     "roman": "Apane maśida kā jhāṛū Gaṇū hai",
-    "english": "{4:Ganu}{5: is}{3: the sweeper}{0,1,2: of your own mosque.}",
+    "english": "{4:Ganu}{5: is}{3: the broom}{0,1,2: of your own mosque.}",
     "words": [
       {
         "roman": "Apane",
@@ -3896,7 +3896,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jhāṛū",
-        "gloss": "broom / sweeper"
+        "gloss": "broom"
       },
       {
         "roman": "Gaṇū",
@@ -3907,7 +3907,7 @@ window.SONG_LINES = {
         "gloss": "is"
       }
     ],
-    "grammarNote": "Author signature (bhaṇitā). Apane acts as an affectionate possessive modifier; jhāṛū metaphorically means the humble sweeper.",
+    "grammarNote": "Author signature (bhaṇitā). Apane acts as an affectionate possessive modifier; Gaṇū calls himself the mosque’s broom, a concrete metaphor for humble service.",
     "sourceWords": [
       {
         "text": "अपने",
@@ -4279,7 +4279,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Ucchiṣṭa",
-        "gloss": "leftover / defiled food"
+        "gloss": "leftover food; remnants of a meal"
       },
       {
         "roman": "tujhe",

@@ -426,7 +426,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaḷuṣita",
-        "gloss": "tainted; impure; defiled",
+        "gloss": "impure",
         "concept_key": "",
         "preserve_in_english": false
       },

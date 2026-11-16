@@ -1129,7 +1129,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mādhava",
-        "gloss": "the poet's signature-name",
+        "gloss": "Kṛṣṇa, here named as the cowherd beside the Yamunā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1176,7 +1176,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Mādhava",
-        "gloss": "the poet's signature-name",
+        "gloss": "Kṛṣṇa, here named as the cowherd beside the Yamunā",
         "concept_key": "",
         "preserve_in_english": false
       },

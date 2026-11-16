@@ -1624,7 +1624,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bindrābana ke bāsī prabhu mhāne cākara rākho jī",
-    "english": "{0,1,2:The residents of Vrindavan—}{3:Lord, }{4:me }{5:as Your servant }{6,7:keep.}",
+    "english": "{3:O Lord }{0,1,2:who dwells in Vrindavan, }{6,7:keep }{4:me }{5:as Your servant.}",
     "words": [
       {
         "roman": "bindrābana",
@@ -1640,7 +1640,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bāsī",
-        "gloss": "dwellers; inhabitants; residents",
+        "gloss": "dweller; resident (here addressing Kṛṣṇa)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1675,7 +1675,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "bindrābana ke bāsī can be read either as a vocative epithet for Krishna ('O resident of Vrindavan') or in apposition to the gathered devotees, followed by the refrain tag."
+    "grammarNote": "bindrābana ke bāsī prabhu is read as a vocative address to the Lord who dwells in Vrindavan, followed by the request mhāne cākara rākho jī. The form ke is compatible with an oblique/vocative head and does not by itself require plural residents."
   },
   "verse-5-a": {
     "source": "मीरा के प्रभु गहिर गंभीरा सदा रहो जी धीरा",

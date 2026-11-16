@@ -358,7 +358,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sakala vyāpaka antarajāmi",
-    "english": "{1:Pervading} {0:all,} {2:the inner ruler,}",
+    "english": "{0,1:O all-pervading} {2:inner ruler,}",
     "words": [
       {
         "roman": "sakala",
