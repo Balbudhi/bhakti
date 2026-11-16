@@ -585,6 +585,18 @@
         "sha256": "9781f758ee8f47d780ae79c8bfaf55becae56cef8ed5e7df062bc68baa2786bb"
       }
     ],
+    "datta-brahmachari": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/datta-brahmachari-0f66d2c9067f0db7e3861a374462066eddd7b2c7b4c7995476210d5d02fbfe70.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "0f66d2c9067f0db7e3861a374462066eddd7b2c7b4c7995476210d5d02fbfe70"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/datta-brahmachari-f894f89e63ac79ecab1fe9b4fabe089f54f8d2416ba7d720a6569b6aba5dc373.m4a",
+        "type": "audio/mp4",
+        "sha256": "f894f89e63ac79ecab1fe9b4fabe089f54f8d2416ba7d720a6569b6aba5dc373"
+      }
+    ],
     "deh-shiva-bar-mohe-hai": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/deh-shiva-bar-mohe-hai-7ea337bf7959a4bb160b56d70ac1f30c31c42a2dd855fee66b50be4633bf0020.webm",
@@ -1999,6 +2011,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meruguvantidi-alamelumanga-e6e956df1e982f6f66893d702cd6b996592f0d23cc0668faba04465d2f7453a3.mp3",
         "type": "audio/mpeg",
         "sha256": "e6e956df1e982f6f66893d702cd6b996592f0d23cc0668faba04465d2f7453a3"
+      }
+    ],
+    "mhalasapati-re": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-re-2ceddd543e46d2fde6e3362d1548b5bc9387fbd7cde107137c5cd1566bde81a4.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2ceddd543e46d2fde6e3362d1548b5bc9387fbd7cde107137c5cd1566bde81a4"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-re-91b62d2ba6d92cd919d11c10288693e630618606eff82aabcd019b29cd026722.m4a",
+        "type": "audio/mp4",
+        "sha256": "91b62d2ba6d92cd919d11c10288693e630618606eff82aabcd019b29cd026722"
       }
     ],
     "mhalasapati-short": [

@@ -10787,4 +10787,71 @@ window.BHAKTI_SONGS = [
   "subtitle": "Khaṇḍobā",
   "queueNumber": 337
 }
+,
+{
+  "slug": "mhalasapati-re",
+  "queueId": "0de51493",
+  "title": "Mhāḷasāpatī Re Malhārī",
+  "credit": "Māṇik Prabhu · Anandraj Manik Prabhu",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Khaṇḍobā"
+  ],
+  "searchAliases": [
+    "Mhalasapati Re Malhari",
+    "Khandoba",
+    "Manik Prabhu · Anandraj Manik Prabhu",
+    "Manik Prabhu"
+  ],
+  "writer": "Māṇik Prabhu",
+  "singer": "Anandraj Manik Prabhu",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-re-2ceddd543e46d2fde6e3362d1548b5bc9387fbd7cde107137c5cd1566bde81a4.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mhalasapati-re-91b62d2ba6d92cd919d11c10288693e630618606eff82aabcd019b29cd026722.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Khaṇḍobā",
+  "queueNumber": 341
+},
+{
+  "slug": "datta-brahmachari",
+  "queueId": "fd30b520",
+  "title": "Dattā Brahmacārī Re Brahmacārī",
+  "credit": "Māṇik Prabhu · Anandraj Manik Prabhu",
+  "languageTags": [
+    "Marathi"
+  ],
+  "subjectTags": [
+    "Dattātreya"
+  ],
+  "searchAliases": [
+    "Datta Brahmacari Re Brahmacari",
+    "Dattatreya",
+    "Manik Prabhu · Anandraj Manik Prabhu",
+    "Manik Prabhu"
+  ],
+  "writer": "Māṇik Prabhu",
+  "singer": "Anandraj Manik Prabhu",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/datta-brahmachari-0f66d2c9067f0db7e3861a374462066eddd7b2c7b4c7995476210d5d02fbfe70.webm",
+      "type": "audio/webm; codecs=opus"
+    },
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/datta-brahmachari-f894f89e63ac79ecab1fe9b4fabe089f54f8d2416ba7d720a6569b6aba5dc373.m4a",
+      "type": "audio/mp4"
+    }
+  ],
+  "subtitle": "Dattātreya",
+  "queueNumber": 340
+}
 ];
