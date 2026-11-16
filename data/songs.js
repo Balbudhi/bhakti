@@ -10057,4 +10057,199 @@ window.BHAKTI_SONGS = [
   "subtitle": "Viṣṇu",
   "queueNumber": 316
 }
+,
+{
+  "slug": "jayagalu-agali",
+  "queueId": "b787c1d9",
+  "title": "Jayagaḷu Āgali",
+  "credit": "Mōhanadāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Viṣṇu"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Mōhanadasa",
+    "Mohanadasa"
+  ],
+  "writer": "Mōhanadāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jayagalu-agali-c74359439744338e1b583ad92560729356150f249d3c80df37b34296a77cdc3a.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 319
+},
+{
+  "slug": "pavamana-jagada-prana",
+  "queueId": "c10846cf",
+  "title": "Pavamāna Jagada Prāṇa",
+  "credit": "Vijayadāsa",
+  "languageTags": [
+    "Kannada"
+  ],
+  "subjectTags": [
+    "Hanumān",
+    "Vāyu"
+  ],
+  "searchAliases": [
+    "Hanuman",
+    "Vijayadasa",
+    "Vayu"
+  ],
+  "writer": "Vijayadāsa",
+  "singer": "",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pavamana-jagada-prana-85a498981807a74dd414a5497150a6fbef53ec2dd5faa9e78031b0f30e46d1fd.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Hanumān",
+  "queueNumber": 321
+},
+{
+  "slug": "samanyama",
+  "queueId": "aca0b0ba",
+  "title": "Sāmānyamā",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/samanyama-10267364fbdf2743a036518010a09ac128a155636e740a8ed5f8bbaeb3cd3c62.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 322
+},
+{
+  "slug": "javvadi-mettinadi",
+  "queueId": "c1d5dff1",
+  "title": "Javvādi Mettinadi",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/javvadi-mettinadi-18696cfb738b7f9b90fd7cb6b548337e115e25c61a903c16f7eac47db59ace93.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 318
+},
+{
+  "slug": "vinnapalu-vinavale",
+  "queueId": "b5e42241",
+  "title": "Vinnapālu Vinavale",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Veṅkaṭeśa"
+  ],
+  "searchAliases": [
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Vengkatesha",
+    "Venkatesa",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vinnapalu-vinavale-3c315a1d4d958878ae62d65a64d0d64041c1b3e9a57dee06098cd52712bb8bc2.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 323
+},
+{
+  "slug": "nagumogamutodi-o-narakesari",
+  "queueId": "6818db7d",
+  "title": "Nagumogamutōḍi Ō Narakēsarī",
+  "credit": "Annamācārya · M. Balamuralikrishna",
+  "languageTags": [
+    "Telugu"
+  ],
+  "subjectTags": [
+    "Viṣṇu",
+    "Nṛsiṃha"
+  ],
+  "searchAliases": [
+    "Nagumogamutōdi Ō Narakēsari",
+    "Vishnu",
+    "Visnu",
+    "Annamacarya · M. Balamuralikrishna",
+    "Annamacarya",
+    "Nrsimha",
+    "Annamacharya",
+    "Mangalampalli Balamuralikrishna"
+  ],
+  "writer": "Annamācārya",
+  "singer": "M. Balamuralikrishna",
+  "composer": "",
+  "audioSources": [
+    {
+      "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nagumogamutodi-o-narakesari-74f3b2a54127a939b246be7096f619eff0078968b29303a69f67390bd787d064.mp3",
+      "type": "audio/mpeg"
+    }
+  ],
+  "subtitle": "Viṣṇu",
+  "queueNumber": 320
+}
 ];

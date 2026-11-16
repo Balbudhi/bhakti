@@ -1245,11 +1245,25 @@
         "sha256": "2a2f7175f246cc899fa0199da2d4519da0da34ddb6ae368f42815f89bdf95787"
       }
     ],
+    "javvadi-mettinadi": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/javvadi-mettinadi-18696cfb738b7f9b90fd7cb6b548337e115e25c61a903c16f7eac47db59ace93.mp3",
+        "type": "audio/mpeg",
+        "sha256": "18696cfb738b7f9b90fd7cb6b548337e115e25c61a903c16f7eac47db59ace93"
+      }
+    ],
     "jaya-jagdisha-hare": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaya-jagdisha-hare.m4a",
         "type": "audio/mp4",
         "sha256": "4a2bdb02881296e0d306a748feeb2e4cb1847fd235d5a4e880b80eea6d8ca9c6"
+      }
+    ],
+    "jayagalu-agali": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jayagalu-agali-c74359439744338e1b583ad92560729356150f249d3c80df37b34296a77cdc3a.mp3",
+        "type": "audio/mpeg",
+        "sha256": "c74359439744338e1b583ad92560729356150f249d3c80df37b34296a77cdc3a"
       }
     ],
     "jayati-jayati-shri-ganesh": [
@@ -2000,6 +2014,13 @@
         "sha256": "6002785d162f322021408a5c136fe3b4280e0b7ec66e3ae23a161000aa34fa97"
       }
     ],
+    "nagumogamutodi-o-narakesari": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nagumogamutodi-o-narakesari-74f3b2a54127a939b246be7096f619eff0078968b29303a69f67390bd787d064.mp3",
+        "type": "audio/mpeg",
+        "sha256": "74f3b2a54127a939b246be7096f619eff0078968b29303a69f67390bd787d064"
+      }
+    ],
     "naiya-paar-karna": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naiya-paar-karna.mp3",
@@ -2184,6 +2205,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/patta-bola-vrksha-se.m4a",
         "type": "audio/mp4",
         "sha256": "0fe6398d721072fd9fc6ab34dff230a7d4d71ac1aa8605df8e24c8888ab61016"
+      }
+    ],
+    "pavamana-jagada-prana": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pavamana-jagada-prana-85a498981807a74dd414a5497150a6fbef53ec2dd5faa9e78031b0f30e46d1fd.mp3",
+        "type": "audio/mpeg",
+        "sha256": "85a498981807a74dd414a5497150a6fbef53ec2dd5faa9e78031b0f30e46d1fd"
       }
     ],
     "piththa-pirai-soodi": [
@@ -2524,6 +2552,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sakatore-oi-kandiche-sakale.m4a",
         "type": "audio/mp4",
         "sha256": "247b996d49493291cd45ebeae0d3bdc5a032503bba4613c46c25ac5885a2710d"
+      }
+    ],
+    "samanyama": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/samanyama-10267364fbdf2743a036518010a09ac128a155636e740a8ed5f8bbaeb3cd3c62.mp3",
+        "type": "audio/mpeg",
+        "sha256": "10267364fbdf2743a036518010a09ac128a155636e740a8ed5f8bbaeb3cd3c62"
       }
     ],
     "samapti": [
@@ -3045,6 +3080,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vighnaharan-gajvadan.m4a",
         "type": "audio/mp4",
         "sha256": "1b77f86f13d4c5f07872c1c8ca5b7d25e838905c6a6db6a74efa0682acc0f9e7"
+      }
+    ],
+    "vinnapalu-vinavale": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vinnapalu-vinavale-3c315a1d4d958878ae62d65a64d0d64041c1b3e9a57dee06098cd52712bb8bc2.mp3",
+        "type": "audio/mpeg",
+        "sha256": "3c315a1d4d958878ae62d65a64d0d64041c1b3e9a57dee06098cd52712bb8bc2"
       }
     ],
     "vishnu-sahasranama": [
