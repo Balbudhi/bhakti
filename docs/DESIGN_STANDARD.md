@@ -63,10 +63,16 @@ The current measures and breakpoints live in `assets/site.css:26-39,365-408` and
 - State changes should swap matched glyphs without moving or resizing the control.
 - Keep controls in stable positions. Change their meaning/icon when the view changes rather than moving the control to another edge.
 
-The persistent player stays outside the animated page stage. Anchor it from the
-measured visible viewport bounds and its own rendered height; do not animate its vertical position
-or let playlist transforms replace that anchor. Playlist and status placement use
-the same viewport edge. Refresh bounds on viewport resize/pan and page restoration;
+The persistent player stays outside the animated page stage. Installed touch apps
+use a normal-flow viewport-height grid: a separately scrolling content area above
+the original player. Never fix or translate that player, reparent its audio, or
+use a cached VisualViewport measurement for the resting shell height. Keyboard
+accommodation applies only while editing; blur restores CSS-owned height immediately.
+Playlist and status are absolute siblings anchored above that player. Navigation,
+lyric following and popup dismissal must respect the inner scroll container.
+Browser tabs and desktop apps anchor the player from measured visible viewport
+bounds and its own rendered height. Do not animate its vertical position or let
+playlist transforms replace the anchor. Playlist and status share that viewport edge. Refresh bounds on viewport resize/pan and page restoration;
 retain browser-tab magnification during pinch zoom (installed mobile PWAs use
 the fixed-scale policy below). Cap the playlist below the top
 safe area and above the player. Preserve safe-area padding, the existing audio node and

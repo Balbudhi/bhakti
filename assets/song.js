@@ -915,7 +915,7 @@ function wireInteractions(root) {
   dismissReaderMeaning = dismissMeaning;
   window.addEventListener("scroll", event => {
     if (event.target === window || !tip.contains(event.target)) dismissMeaning();
-  }, { passive: true });
+  }, { capture: true, passive: true });
   window.addEventListener("resize", dismissMeaning);
   document.addEventListener("selectionchange", () => {
     if (readerIsVisible()) observeReaderChunks();
@@ -1005,6 +1005,22 @@ function activeTimingIndex(timings, time) {
   return segment && time >= segment.start && time < segment.end ? low : -1;
 }
 
+// scrollIntoView can also pan the outer document on iOS. In the installed
+// shell, lyric following owns only the inner reader scroll position.
+function scrollReaderArticle(article) {
+  if (!article) return;
+  const scroller = article.closest(".app-scroll");
+  if (!scroller) {
+    article.scrollIntoView({ behavior: "auto", block: "center" });
+    return;
+  }
+  const box = article.getBoundingClientRect();
+  const viewport = scroller.getBoundingClientRect();
+  const target = scroller.scrollTop + box.top - viewport.top
+    - (scroller.clientHeight - box.height) / 2;
+  scroller.scrollTo({ top: Math.max(0, Math.min(target, scroller.scrollHeight - scroller.clientHeight)), behavior: "auto" });
+}
+
 function setupKaraoke() {
   const audio = document.getElementById("songAudio");
   if (!audio || WIRED_KARAOKE_AUDIO.has(audio)) return;
@@ -1027,7 +1043,7 @@ function setupKaraoke() {
     highlightedArticle = article;
     if (!article) return;
     article.classList.add("is-singing");
-    if (lyricsFollowPlayback) article.scrollIntoView({ behavior: "auto", block: "center" });
+    if (lyricsFollowPlayback) scrollReaderArticle(article);
   };
   const tickKaraoke = () => {
     karaokeFrame = 0;
@@ -1068,7 +1084,7 @@ function setupKaraoke() {
     readerClock?.refresh();
   });
   window.addEventListener("bhakti:lyrics-follow-change", event => {
-    if (event.detail?.enabled && readerIsVisible()) activeArticle()?.scrollIntoView({ behavior: "auto", block: "center" });
+    if (event.detail?.enabled && readerIsVisible()) scrollReaderArticle(activeArticle());
   });
 
   // Seeking is explicit. Event delegation keeps this binding valid when the

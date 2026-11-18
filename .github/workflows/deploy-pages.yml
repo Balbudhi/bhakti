@@ -42,6 +42,7 @@ jobs:
           node scripts/test_player_progress.js
           node scripts/test_player_keyboard.js
           node scripts/test_player_viewport.js
+          node scripts/test_pwa_player_shell.js
           node scripts/test_media_session.js
           node scripts/test_mobile_zoom.js
           node scripts/test_pwa_lifecycle.js

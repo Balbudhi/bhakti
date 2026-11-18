@@ -20,6 +20,7 @@ function setup(){
     songDataCache:new Map(),pendingSongData:new Map(),dataLoadChain:Promise.resolve(),
     visibleSongSlug:'a',readerScrollY:345,view:'song',viewRequest:0,
     queueState:{items:[{slug:'a'}],currentIndex:0},currentSong:{slug:'a'},songRoot:document.querySelector('main'),libraryRoot:library,
+    contentScrollY:()=>window.scrollY,scrollContentTo:top=>window.scrollTo({top}),
     appStage:document.querySelector('.app-stage'),bySlug:new Map(['a','b','c','d','e','f'].map(slug=>[slug,{slug}])),
     songPath:slug=>`/songs/${slug}/`,assetPath:path=>window.BHAKTI_ASSETS[path]||path,
     fetchMain(url,selector){let resolve;const promise=new Promise(yes=>resolve=yes);fetches.push({url,selector,resolve});return promise;},

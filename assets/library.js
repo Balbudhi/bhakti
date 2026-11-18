@@ -219,7 +219,7 @@
       if (event.key === "Escape") hide();
     });
     document.addEventListener("bhakti:clear-preface", hide);
-    window.addEventListener("scroll", hide, { passive: true });
+    window.addEventListener("scroll", hide, { capture: true, passive: true });
     window.addEventListener("resize", hide);
     window.addEventListener("popstate", hide);
   };

@@ -391,3 +391,40 @@ Verification recorded 17 November:
   times. Sundarakanda late-seek elements 18,548 → 4,272; full semantic text is
   now initially present, so its initial element count rises 1,723 → 4,225 while
   rich word links fall 1,324 → 311. Native find/layout needs browser acceptance.
+
+## 18 November 2026 — installed iPhone player drift recurrence
+
+Outcome: the player remains at the screen edge during scrolling and after page
+restoration without changing audio, queue, lyrics or reading position. The four
+owner screenshots show the player adjacent to the same lyric while its screen
+position changes; this is consistent with a fixed-position compositor attachment
+failure. The exact device trigger is not reproduced. The existing measured
+VisualViewport/top/translate repair has not resolved the owner's symptom.
+WebKit reports 218983, 301172 and 315992 document related standalone viewport and
+fixed-element drift; they support the mechanism, not a claim of device proof.
+
+Design: installed touch apps use a normal-flow, viewport-height shell with two
+rows: a dedicated scrolling content region and the original player in normal
+flow. No fixed/translated player or document scrolling is needed in this mode.
+Mode selection is independent of width/rotation. Browser tabs and desktop apps
+retain their established layout and zoom. CSS dynamic viewport height owns the
+unfocused shell, so stale positive VisualViewport data cannot shorten it. While
+an editable control is focused, measured visual bounds accommodate the keyboard.
+Playlist/status are absolute siblings in this shell and use its measured height
+and the actual player height. App navigation owns scroll reads/writes for its
+scroll container; native lyric following must scroll only that container. Meaning
+and menu dismissal observes descendant scrolling. Audio/source nodes retain identity.
+
+Current step: implementation, independent review and automated release checks
+complete; publish and verify live resources. Ten full-bootstrap DOM regressions
+cover activation (including desktop exclusion), original audio/source parentage,
+resting CSS independence from stale viewport measurements, editable focus/blur,
+scroll restoration, actual karaoke/follow callers, and popup/playlist behavior.
+The previous implementation fails the shell regressions. The exact Pages check
+step passes, including all 365 readers' ready/deferred line seeks and integrity
+checks across 366 entrypoints. Contract audit, Python compilation and whitespace
+checks pass. Song data, media metadata and audio source declarations are unchanged.
+Audio/trim audits were invoked: this isolated source checkout has no ignored local
+recordings or private trim packets, so it cannot reprobe those existing artifacts. In-app Browser remains unavailable in
+this chat. Prior owner authorization permits publication without it; physical
+iPhone confirmation remains necessary to establish the intermittent defect is gone.

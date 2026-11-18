@@ -590,3 +590,56 @@ body.queue-open .app-stage { transform: none; }
   .queue-pill:active, .queue-action:active:not(:disabled),
   .queue-row-action:active { transform: none; }
 }
+
+/* Installed touch apps scroll their content, never the player/document. Body
+   is the shell so the persistent audio subtree is not detached or reparented.
+   Resting shell/player geometry does not depend on cached VisualViewport data. */
+html.bhakti-scroll-shell { height: 100%; overflow: hidden; overscroll-behavior: none; }
+body.app-shell {
+  position: relative;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: none;
+  --app-shell-height: 100dvh;
+  --queue-available-height: max(0px, calc(var(--app-shell-height) - var(--app-player-height) - var(--app-safe-top)));
+  --queue-panel-height: min(calc(var(--app-shell-height) * 0.6), var(--queue-panel-limit), var(--queue-available-height));
+}
+body.app-shell.has-keyboard-focus {
+  height: min(100dvh, var(--app-viewport-height));
+  top: var(--app-viewport-top);
+}
+.app-scroll {
+  grid-row: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.app-scroll:focus-visible { outline: 1px solid var(--ink); outline-offset: -2px; }
+.app-scroll > .app-stage { min-height: 100%; }
+.app-shell .audio-player {
+  grid-row: 2;
+  position: relative;
+  inset: auto;
+  top: auto;
+  bottom: auto;
+  translate: none;
+  transform: none;
+}
+.app-shell .queue-sheet {
+  position: absolute;
+  top: auto;
+  bottom: var(--app-player-height);
+}
+.app-shell .app-status {
+  position: absolute;
+  top: auto;
+  bottom: calc(var(--app-player-height) + 44px);
+  translate: none;
+}
+@media (max-width: 1100px) {
+  .app-shell.queue-open .app-scroll { overflow: hidden; }
+}

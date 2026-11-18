@@ -170,8 +170,47 @@
   appStage.className = "app-stage";
   initialRoot.replaceWith(appStage);
   appStage.append(initialRoot);
+  // A normal-flow player avoids WebKit's drifting fixed-position attachment.
+  // Keep its audio subtree exactly where it is; only the page stage is wrapped.
+  const mobileStandalone = navigator.standalone === true
+    || matchMedia("(display-mode: standalone) and (any-pointer: coarse)").matches;
+  let contentScroller = null;
+  if (mobileStandalone) {
+    contentScroller = document.createElement("div");
+    contentScroller.className = "app-scroll";
+    contentScroller.tabIndex = 0;
+    contentScroller.setAttribute("role", "region");
+    contentScroller.setAttribute("aria-label", "Library and lyrics");
+    appStage.replaceWith(contentScroller);
+    contentScroller.append(appStage);
+    document.documentElement.classList.add("bhakti-scroll-shell");
+    document.body.classList.add("app-shell");
+    const syncKeyboardFocus = () => {
+      const focused = document.activeElement;
+      const formEditing = focused?.matches?.('textarea, select, input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]):not([type="hidden"])')
+        && !focused.readOnly && !focused.disabled;
+      const editable = focused?.closest?.('[contenteditable]');
+      const editing = formEditing || (editable && editable.getAttribute("contenteditable") !== "false");
+      document.body.classList.toggle("has-keyboard-focus", Boolean(editing));
+      settleViewportBounds();
+    };
+    document.addEventListener("focusin", syncKeyboardFocus);
+    document.addEventListener("focusout", syncKeyboardFocus);
+    window.addEventListener("pageshow", syncKeyboardFocus);
+    document.addEventListener("visibilitychange", syncKeyboardFocus);
+    syncKeyboardFocus();
+    const measureShell = () => {
+      const height = document.body.clientHeight;
+      if (height > 0) document.body.style.setProperty("--app-shell-height", `${height}px`);
+    };
+    if ("ResizeObserver" in window) new ResizeObserver(measureShell).observe(document.body);
+    window.addEventListener("resize", measureShell, { passive: true });
+    measureShell();
+  }
+  const contentScrollY = () => contentScroller ? contentScroller.scrollTop : window.scrollY;
+  const scrollContentTo = top => (contentScroller || window).scrollTo({ top, behavior: "auto" });
   let visibleSongSlug = view === "song" ? pathSlug() : "";
-  let readerScrollY = view === "song" ? window.scrollY : 0;
+  let readerScrollY = view === "song" ? contentScrollY() : 0;
   let queueState = null;
   let currentSong = null;
   let systemMedia = null;
@@ -474,6 +513,9 @@
       prepare?.();
       return;
     }
+    // A detached focused search input may not dispatch blur on every browser.
+    // Finish its keyboard state while it still belongs to the outgoing page.
+    if (currentRoot?.contains?.(document.activeElement)) document.activeElement.blur?.();
     closeQueue();
     const motionClasses = ["app-view-in-left", "app-view-out-right", "app-view-in-right", "app-view-out-left"];
     currentRoot?.classList.remove(...motionClasses);
@@ -494,7 +536,7 @@
        so one reading holds for the whole transition. */
     const controlHost = currentRoot?.querySelector("#songSync") ? currentRoot : nextRoot;
     const hostBox = controlHost.getBoundingClientRect();
-    appStage.style.setProperty("--app-swipe-scroll", `${Math.round(window.scrollY)}px`);
+    appStage.style.setProperty("--app-swipe-scroll", `${Math.round(contentScrollY())}px`);
     appStage.style.setProperty("--app-swipe-inset-left", `${Math.round(hostBox.left)}px`);
     appStage.style.setProperty("--app-swipe-inset-right",
       `${Math.round(document.documentElement.clientWidth - hostBox.right)}px`);
@@ -540,7 +582,7 @@
   };
 
   const showLibrary = async ({ historyMode = "push" } = {}) => {
-    if (view === "song") readerScrollY = window.scrollY;
+    if (view === "song") readerScrollY = contentScrollY();
     const request = ++viewRequest;
     try {
       const root = await ensureLibraryRoot();
@@ -558,7 +600,7 @@
       }
       route(view, "", historyMode);
       updateViewToggle();
-      window.scrollTo({ top: 0, behavior: "auto" });
+      scrollContentTo(0);
     } catch (error) {
       console.error("Bhakti library view failed", error);
       showStatus("The song library could not be loaded");
@@ -580,7 +622,7 @@
       const [root, data] = await Promise.all([ensureSongRoot(slug), loadSongData(slug)]);
       if (request !== viewRequest) return;
       const sameSong = visibleSongSlug === slug;
-      const scrollTop = sameSong ? (view === "song" ? window.scrollY : readerScrollY) : 0;
+      const scrollTop = sameSong ? (view === "song" ? contentScrollY() : readerScrollY) : 0;
       await transitionTo(root, "left", () => {
         if (!sameSong) window.BHAKTI_READER.setSong(data);
         visibleSongSlug = slug;
@@ -594,7 +636,7 @@
       readerScrollY = scrollTop;
       route(view, slug, historyMode);
       updateViewToggle();
-      window.scrollTo({ top: scrollTop, behavior: "auto" });
+      scrollContentTo(scrollTop);
       if (!queueState) {
         const state = Queue.standalone(bySlug.get(slug), newSessionId());
         setQueueState(state);

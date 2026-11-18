@@ -43,7 +43,7 @@ function setup({ reducedMotion = false } = {}) {
   const song = node("song"), library = node("library");
   stage.append(song);
   const context = vm.createContext({ appStage: stage, closeQueue() {},
-    matchMedia: () => ({ matches: reducedMotion }), window: { scrollY: 50 },
+    matchMedia: () => ({ matches: reducedMotion }), contentScrollY: () => 50, window: { scrollY: 50 },
     document: { documentElement: { clientWidth: 390 } },
     setTimeout(callback) { timers.set(++timerId, callback); return timerId; },
     clearTimeout(id) { timers.delete(id); },
