@@ -13,6 +13,17 @@
   const viewportSettleTimers = new Set();
   let viewportHeight = null;
   let viewportTop = null;
+  const query = q => typeof matchMedia === "function" && matchMedia(q).matches === true;
+  const installedApp = () => query("(display-mode: standalone)") || window.navigator?.standalone === true;
+  const editingText = () => {
+    const el = document.activeElement;
+    return !!el && /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || "") && el.type !== "range";
+  };
+  const fullScreenHeight = () => {
+    const s = window.screen;
+    if (!s || !(s.width > 0) || !(s.height > 0)) return 0;
+    return query("(orientation: landscape)") ? Math.min(s.width, s.height) : Math.max(s.width, s.height);
+  };
   const setViewportBounds = () => {
     viewportFrame = 0;
     if (document.visibilityState === "hidden") return;
@@ -20,9 +31,17 @@
     // VisualViewport dimensions and offsets use CSS pixels at every zoom level.
     // Keep native magnification; only track the visible edge.
     const useVisual = visualViewport && usableHeight(visualViewport.height);
-    const height = useVisual ? visualViewport.height
+    let height = useVisual ? visualViewport.height
       : usableHeight(window.innerHeight) ? window.innerHeight
         : document.documentElement.clientHeight;
+    // An installed iPhone app can report a stale, short viewport after launch or resume, and
+    // no later event corrects it; the player is then pinned partway up the screen. The app fills
+    // the screen, so when no text field is focused (a real keyboard) and the page is not zoomed,
+    // a height well short of the screen is stale: use the screen's height instead.
+    if (installedApp() && !editingText() && !(useVisual && visualViewport.scale > 1.01)) {
+      const screenHeight = fullScreenHeight();
+      if (screenHeight > 0 && usableHeight(height) && height < screenHeight * 0.92) height = screenHeight;
+    }
     // Background/restore transitions can briefly report no usable dimensions.
     // Retain the previous bounds (or the CSS fallback) until a valid event.
     if (!usableHeight(height)) return;

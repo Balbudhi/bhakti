@@ -6,7 +6,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const path = require('node:path');
 
-function boot({ visual = true } = {}) {
+function boot({ visual = true, installed = false, screen = null, activeElement = null } = {}) {
   const styles = new Map();
   const frames = new Map();
   const timers = new Map();
@@ -14,8 +14,10 @@ function boot({ visual = true } = {}) {
   let frameId = 0, timerId = 0, now = 0;
   const window = new EventTarget();
   window.innerHeight = 844;
+  if (screen) window.screen = screen;
   const document = new EventTarget();
   document.visibilityState = 'visible';
+  document.activeElement = activeElement;
   document.documentElement = {
     clientHeight: 844,
     classList: { toggle() {} },
@@ -29,7 +31,7 @@ function boot({ visual = true } = {}) {
   const end = source.indexOf('  const Queue = window.BHAKTI_QUEUE;');
   assert.ok(end > 0, 'app bootstrap boundary exists');
   vm.runInNewContext(source.slice(0, end) + '\n})();', {
-    window, document, navigator: {}, matchMedia: () => ({ matches: false }),
+    window, document, navigator: {}, matchMedia: q => ({ matches: installed && q.includes('standalone') }),
     requestAnimationFrame: callback => { frames.set(++frameId, callback); return frameId; },
     cancelAnimationFrame: id => frames.delete(id),
     setTimeout: (callback, delay) => { timers.set(++timerId, { callback, at: now + delay }); return timerId; },
@@ -251,4 +253,34 @@ test('unchanged viewport events do not rewrite layout properties', () => {
   app.flush();
   assert.equal(app.writes.length, initialWrites + 1);
   assert.deepEqual(app.writes.at(-1), ['--app-viewport-top', '120px']);
+});
+
+
+test('installed app: a stale short viewport after resume is corrected to the screen height', () => {
+  const app = boot({ installed: true, screen: { width: 390, height: 844 } });
+  app.viewport.height = 512;                       // iOS reports a stale height; nothing corrects it later
+  app.fire(app.window, 'pageshow');
+  app.flush(); app.advance(1000); app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '844px');
+});
+
+test('installed app: a real keyboard (text field focused) is not overridden', () => {
+  const app = boot({ installed: true, screen: { width: 390, height: 844 }, activeElement: { tagName: 'INPUT', type: 'search' } });
+  app.viewport.height = 512;
+  app.fire(app.viewport, 'resize'); app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '512px');
+});
+
+test('installed app: pinch zoom keeps the measured visible bounds', () => {
+  const app = boot({ installed: true, screen: { width: 390, height: 844 } });
+  app.viewport.height = 422; app.viewport.scale = 2;
+  app.fire(app.viewport, 'resize'); app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '422px');
+});
+
+test('browser tab: measured bounds are trusted (toolbars are real)', () => {
+  const app = boot({ installed: false, screen: { width: 390, height: 844 } });
+  app.viewport.height = 700;
+  app.fire(app.viewport, 'resize'); app.flush();
+  assert.equal(app.styles.get('--app-viewport-height'), '700px');
 });
