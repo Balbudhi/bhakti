@@ -1,0 +1,8 @@
+{
+  "name": "bhakti-browser-contracts",
+  "private": true,
+  "description": "DOM regression tests for the static Bhakti app; no runtime dependencies",
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}

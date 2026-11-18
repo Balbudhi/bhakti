@@ -97,31 +97,70 @@
     .replace(/'/g, "&#39;");
   const newSessionId = () => globalThis.crypto?.randomUUID?.()
     || `queue-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  let shuffleRequest = null;
+  const cancelShuffle = () => {
+    shuffleRequest?.abort();
+    shuffleRequest = null;
+  };
   const runShuffle = (operation, ...args) => {
-    const engine = window.BHAKTI_SHUFFLE;
-    const snapshot = window.BHAKTI_SHUFFLE_PROFILES;
-    const revision = window.BHAKTI_SHUFFLE_REVISION;
-    if (typeof engine?.order !== "function" || snapshot?.schemaVersion !== 1
-      || snapshot.taxonomyVersion !== 1 || typeof revision !== "string" || !revision
-      || snapshot.revision !== revision || !snapshot.profiles) {
-      return operation(...args);
-    }
-    try {
-      return operation(...args, (items, fixedPrefix) => engine.order(items, {
-        seed: Math.floor(args[1]() * 0x100000000) >>> 0,
-        fixedPrefix,
-        profiles: snapshot.profiles,
-      }).items);
-    } catch (error) {
-      console.warn("Shuffle ordering unavailable; using random order", error);
-      return operation(...args);
-    }
+    // Match the existing engine's seeded Fisher-Yates baseline exactly. Its
+    // first occurrence is fixed, so playback can start in the original gesture.
+    const seed = Math.floor(args[1]() * 0x100000000) >>> 0;
+    let randomState = seed;
+    const random = () => {
+      randomState = (randomState + 0x6d2b79f5) >>> 0;
+      let mixed = randomState;
+      mixed = Math.imul(mixed ^ (mixed >>> 15), mixed | 1);
+      mixed ^= mixed + Math.imul(mixed ^ (mixed >>> 7), mixed | 61);
+      return ((mixed ^ (mixed >>> 14)) >>> 0) / 0x100000000;
+    };
+    let occurrences, prefix;
+    const baseline = operation(...args, (items, fixedPrefix) => {
+      occurrences = items;
+      prefix = fixedPrefix;
+      const ordered = items.slice();
+      for (let index = ordered.length - 1; index > fixedPrefix; index--) {
+        const other = fixedPrefix + Math.floor(random() * (index - fixedPrefix + 1));
+        [ordered[index], ordered[other]] = [ordered[other], ordered[index]];
+      }
+      return ordered;
+    });
+    // The caller installs the baseline synchronously. A later queue edit (even
+    // repeat changes) invalidates this request and cancels its worker work.
+    Promise.resolve().then(async () => {
+      if (queueState !== baseline || typeof window.BHAKTI_SHUFFLE_CLIENT?.order !== "function"
+        || typeof window.BHAKTI_SHUFFLE_REVISION !== "string" || !window.BHAKTI_SHUFFLE_REVISION) return;
+      const request = new AbortController();
+      shuffleRequest = request;
+      try {
+        const ordered = await window.BHAKTI_SHUFFLE_CLIENT.order(occurrences, {
+          seed, fixedPrefix: prefix, revision: window.BHAKTI_SHUFFLE_REVISION, signal: request.signal,
+        });
+        if (request.signal.aborted || queueState !== baseline) return;
+        const fixedCount = baseline.currentIndex + 1;
+        if (!Array.isArray(ordered) || ordered.length !== baseline.items.length
+          || baseline.items.slice(0, fixedCount).some((item, index) => item.entryId !== ordered[index]?.entryId)) {
+          throw new Error("Shuffle must preserve the playing occurrence and history");
+        }
+        // Queue validates exact unique upcoming membership. Rebuild from its
+        // existing items; never replace audio or adopt worker-cloned metadata.
+        const next = Queue.reorderUpcoming(baseline, ordered.slice(fixedCount).map(item => item.entryId));
+        shuffleRequest = null;
+        setQueueState(next);
+      } catch (error) {
+        if (!request.signal.aborted) console.warn("Shuffle ordering unavailable; retaining random order", error);
+      } finally {
+        if (shuffleRequest === request) shuffleRequest = null;
+      }
+    });
+    return baseline;
   };
   const pathSlug = () => {
     const match = location.pathname.match(/^\/songs\/([^/]+)\/?$/);
     return match ? decodeURIComponent(match[1]) : "";
   };
   const songPath = slug => `/songs/${encodeURIComponent(slug)}/`;
+  const assetPath = path => window.BHAKTI_ASSETS?.[path] || path;
 
   let view = document.querySelector("main.song-page") ? "song" : "library";
   let libraryRoot = document.querySelector("main.library-page, main#libraryView");
@@ -132,6 +171,7 @@
   initialRoot.replaceWith(appStage);
   appStage.append(initialRoot);
   let visibleSongSlug = view === "song" ? pathSlug() : "";
+  let readerScrollY = view === "song" ? window.scrollY : 0;
   let queueState = null;
   let currentSong = null;
   let systemMedia = null;
@@ -154,8 +194,11 @@
   let dragPressTimer = 0;
   let dragActive = false;
   let dragMoved = false;
+  let dragMoveFrame = 0;
+  let pendingDragPoint = null;
   let suppressQueueRowAction = false;
   const songDataCache = new Map();
+  const pendingSongData = new Map();
 
   const pulseDragHaptic = duration => {
     if (!standaloneDisplay || !["touch", "pen"].includes(dragInputType)
@@ -215,19 +258,25 @@
 
   const animateQueueReorder = (list, before) => {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    for (const row of list.querySelectorAll(".queue-row:not(.is-dragging)")) {
-      const previous = before.get(row.dataset.queueEntryId);
-      const next = row.getBoundingClientRect();
-      if (!previous) continue;
-      const delta = previous.top - next.top;
-      if (Math.abs(delta) < 1) continue;
+    // Finish every layout read before changing a transform. Only rows already
+    // visible in the scrollport participate; skipped content stays skipped.
+    const moves = [];
+    for (const [row, previous] of before) {
+      if (row.parentElement !== list || row.classList.contains("is-dragging")) continue;
+      const delta = previous.top - row.getBoundingClientRect().top;
+      if (Math.abs(delta) >= 1) moves.push({ row, delta });
+    }
+    for (const { row, delta } of moves) {
       row.style.transition = "none";
       row.style.transform = `translateY(${delta}px)`;
-      requestAnimationFrame(() => {
+    }
+    if (moves.length) requestAnimationFrame(() => {
+      for (const { row } of moves) {
+        if (!row.isConnected || row.classList.contains("is-dragging")) continue;
         row.style.transition = "transform 180ms cubic-bezier(.2,.8,.2,1)";
         row.style.transform = "";
-      });
-    }
+      }
+    });
   };
 
   const renderQueuePill = () => {
@@ -288,6 +337,7 @@
   };
 
   const setQueueState = state => {
+    if (state !== queueState) cancelShuffle();
     queueState = state;
     currentSong = state?.items[state.currentIndex] || null;
     persistQueue();
@@ -336,18 +386,36 @@
   };
 
   const snapshotCurrentGlobals = () => window.BHAKTI_READER.snapshotGlobals();
+  const cacheSongData = (slug, data) => {
+    songDataCache.delete(slug);
+    songDataCache.set(slug, data);
+    // Retain the mounted reader even while the library is visible, plus three
+    // recent readers. The serialized loader bounds concurrent script globals.
+    while (songDataCache.size > 4) {
+      const oldest = [...songDataCache.keys()].find(key => key !== visibleSongSlug);
+      songDataCache.delete(oldest);
+    }
+    return data;
+  };
   const loadSongData = slug => {
-    if (songDataCache.has(slug)) return Promise.resolve(songDataCache.get(slug));
+    if (songDataCache.has(slug)) return Promise.resolve(cacheSongData(slug, songDataCache.get(slug)));
+    if (pendingSongData.has(slug)) return pendingSongData.get(slug);
     const load = () => new Promise((resolve, reject) => {
       const script = document.createElement("script");
-      script.src = `${songPath(slug)}data.js`;
+      script.src = assetPath(`${songPath(slug)}data.js`);
+      const digest = new URL(script.src, window.location.href).searchParams.get("v");
+      if (/^[a-f0-9]{64}$/i.test(digest || "")) {
+        const bytes = digest.match(/../g).map(byte => parseInt(byte, 16));
+        script.integrity = `sha256-${window.btoa(String.fromCharCode(...bytes))}`;
+        script.crossOrigin = "anonymous";
+      }
       script.async = true;
       script.addEventListener("load", () => {
         try {
           const data = snapshotCurrentGlobals();
           if (!data?.meta?.title) throw new Error(`song data metadata missing for ${slug}`);
           data.meta = {...data.meta, slug};
-          songDataCache.set(slug, data);
+          cacheSongData(slug, data);
           resolve(data);
         } catch (error) {
           reject(error);
@@ -361,13 +429,14 @@
       }, { once: true });
       document.head.append(script);
     });
-    const result = dataLoadChain.then(load);
+    const result = dataLoadChain.then(load).finally(() => pendingSongData.delete(slug));
+    pendingSongData.set(slug, result);
     dataLoadChain = result.catch(() => {});
     return result;
   };
 
   const fetchMain = async (url, selector) => {
-    const response = await fetch(url, { cache: "no-store" });
+    const response = await fetch(url);
     if (!response.ok) throw new Error(`could not load ${url}`);
     const parsed = new DOMParser().parseFromString(await response.text(), "text/html");
     const main = parsed.querySelector(selector);
@@ -375,13 +444,23 @@
     return document.importNode(main, true);
   };
 
+  let libraryRootLoad = null;
+  let songRootLoad = null;
   const ensureLibraryRoot = async () => {
-    if (!libraryRoot) libraryRoot = await fetchMain("/", "main.library-page, main#libraryView");
+    if (!libraryRoot) {
+      libraryRootLoad ||= fetchMain("/", "main.library-page, main#libraryView");
+      try { libraryRoot = await libraryRootLoad; }
+      finally { libraryRootLoad = null; }
+    }
     return libraryRoot;
   };
 
   const ensureSongRoot = async slug => {
-    if (!songRoot) songRoot = await fetchMain(songPath(slug), "main.song-page");
+    if (!songRoot) {
+      songRootLoad ||= fetchMain(songPath(slug), "main.song-page");
+      try { songRoot = await songRootLoad; }
+      finally { songRootLoad = null; }
+    }
     return songRoot;
   };
 
@@ -461,11 +540,15 @@
   };
 
   const showLibrary = async ({ historyMode = "push" } = {}) => {
+    if (view === "song") readerScrollY = window.scrollY;
     const request = ++viewRequest;
     try {
       const root = await ensureLibraryRoot();
       if (request !== viewRequest) return;
-      await transitionTo(root, "right", () => window.BHAKTI_LIBRARY.mount(root));
+      await transitionTo(root, "right", () => {
+        window.BHAKTI_READER.setVisible(false);
+        window.BHAKTI_LIBRARY.mount(root);
+      });
       if (request !== viewRequest) return;
       view = "library";
       document.title = "Bhakti";
@@ -496,13 +579,22 @@
     try {
       const [root, data] = await Promise.all([ensureSongRoot(slug), loadSongData(slug)]);
       if (request !== viewRequest) return;
-      await transitionTo(root, "left", () => window.BHAKTI_READER.setSong(data));
+      const sameSong = visibleSongSlug === slug;
+      const scrollTop = sameSong ? (view === "song" ? window.scrollY : readerScrollY) : 0;
+      await transitionTo(root, "left", () => {
+        if (!sameSong) window.BHAKTI_READER.setSong(data);
+        visibleSongSlug = slug;
+        cacheSongData(slug, data);
+        window.BHAKTI_READER.setVisible(true);
+      });
       if (request !== viewRequest) return;
       view = "song";
       visibleSongSlug = slug;
+      document.title = data.meta.title;
+      readerScrollY = scrollTop;
       route(view, slug, historyMode);
       updateViewToggle();
-      window.scrollTo({ top: 0, behavior: "auto" });
+      window.scrollTo({ top: scrollTop, behavior: "auto" });
       if (!queueState) {
         const state = Queue.standalone(bySlug.get(slug), newSessionId());
         setQueueState(state);
@@ -534,11 +626,19 @@
     const pending = playback.isPending();
     const label = pending ? "Cancel loading" : `${playing ? "Pause" : "Play"} current song`;
     button.setAttribute("aria-busy", String(pending));
-    button.innerHTML = playing ? pauseIcon : playIcon;
+    const icon = playing ? pauseIcon : playIcon;
+    if (button.dataset.playing !== String(playing)) {
+      button.innerHTML = icon;
+      button.dataset.playing = String(playing);
+    }
     button.setAttribute("aria-label", label);
     button.title = label;
   };
 
+  // Occurrence IDs own retained rows; reordering never recreates their controls.
+  const queueRows = new Map();
+  const visibleQueueRows = new Set();
+  let queueRowObserver = null;
   const renderQueueSheet = () => {
     if (draggedRow) resetDragGesture();
     const previousScrollTop = queueSheet.querySelector(".queue-list")?.scrollTop || 0;
@@ -549,6 +649,10 @@
     const focusAction = focused?.dataset.queueAction;
     const focusDrag = focused?.hasAttribute("data-queue-drag");
     if (!queueState) {
+      queueRowObserver?.disconnect();
+      queueRowObserver = null;
+      visibleQueueRows.clear();
+      queueRows.clear();
       queueSheet.innerHTML = `<div class="queue-empty">No songs queued yet.</div>`;
       return;
     }
@@ -567,7 +671,9 @@
           : `<div class="queue-row-actions"><button class="queue-row-action" type="button" data-queue-action="${played ? "history" : "play"}" aria-label="Play ${escapeHtml(item.title)} ${played ? "again" : "now"}" title="${played ? "Play again" : "Play now"}">${playIcon}</button><button class="queue-row-action queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button></div>`}
       </div>`;
     };
-    queueSheet.innerHTML = `
+    let list = queueSheet.querySelector(".queue-list");
+    if (!list) {
+      queueSheet.innerHTML = `
       <div class="queue-sheet-tools">
         <span class="queue-progress" aria-label="Song ${queueState.currentIndex + 1} of ${queueState.items.length}">${queueState.currentIndex + 1} / ${queueState.items.length}</span>
         <div class="queue-tools" role="group" aria-label="Playlist actions">
@@ -578,8 +684,73 @@
           <button class="queue-action" type="button" data-queue-action="clear" aria-label="Clear upcoming songs" title="Clear upcoming songs"${futureCount ? "" : " disabled"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></button>
         </div>
       </div>
-      <div class="queue-list">${queueState.items.map(row).join("")}</div>`;
-    queueSheet.querySelector(".queue-list").scrollTop = previousScrollTop;
+      <div class="queue-list"></div>`;
+      list = queueSheet.querySelector(".queue-list");
+      if (typeof IntersectionObserver === "function") {
+        queueRowObserver = new IntersectionObserver(entries => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) visibleQueueRows.add(entry.target);
+            else visibleQueueRows.delete(entry.target);
+          }
+        }, { root: list });
+      }
+    }
+    const retained = new Set(queueState.items.map(item => item.entryId));
+    for (const [entryId, record] of queueRows) {
+      if (retained.has(entryId)) continue;
+      queueRowObserver?.unobserve(record.node);
+      visibleQueueRows.delete(record.node);
+      record.node.remove();
+      queueRows.delete(entryId);
+    }
+    const entries = queueState.items.map((item, index) => {
+      const role = index === queueState.currentIndex ? "current" : index < queueState.currentIndex ? "played" : "upcoming";
+      return { item, index, role, signature: JSON.stringify([item.title, item.credit, role]) };
+    });
+    const changed = entries.filter(entry => queueRows.get(entry.item.entryId)?.signature !== entry.signature);
+    const prepared = new Map();
+    if (changed.length) {
+      // Parse one fragment even when starting/replacing a whole-library queue.
+      const template = document.createElement("template");
+      template.innerHTML = changed.map(({ item, index }) => row(item, index)).join("");
+      for (const node of template.content.children) prepared.set(node.dataset.queueEntryId, node);
+    }
+    let cursor = list.firstElementChild;
+    entries.forEach(({ item, index, role, signature }) => {
+      let record = queueRows.get(item.entryId);
+      if (!record || record.signature !== signature) {
+        const rendered = prepared.get(item.entryId);
+        if (record) {
+          record.node.className = rendered.className;
+          record.node.replaceChildren(...rendered.childNodes);
+          if (role === "current") record.node.setAttribute("aria-current", "true");
+          else record.node.removeAttribute("aria-current");
+          record.signature = signature;
+        } else {
+          record = { node: rendered, signature };
+          queueRows.set(item.entryId, record);
+          queueRowObserver?.observe(record.node);
+        }
+      }
+      const node = record.node;
+      if (node.dataset.queueIndex !== String(index)) {
+        node.dataset.queueIndex = String(index);
+        const position = node.querySelector(".queue-position");
+        if (position) position.textContent = String(index + 1);
+      }
+      if (node !== cursor) list.insertBefore(node, cursor);
+      cursor = node.nextElementSibling;
+    });
+    const progress = queueSheet.querySelector(".queue-progress");
+    progress.textContent = `${queueState.currentIndex + 1} / ${queueState.items.length}`;
+    progress.setAttribute("aria-label", `Song ${queueState.currentIndex + 1} of ${queueState.items.length}`);
+    for (const [action, disabled] of Object.entries({
+      previous: queueState.currentIndex === 0,
+      next: !futureCount && queueState.repeat !== "all",
+      shuffle: futureCount < 2,
+      clear: !futureCount,
+    })) queueSheet.querySelector(`[data-queue-action="${action}"]`).disabled = disabled;
+    list.scrollTop = previousScrollTop;
     updateQueuePlayback();
     if (focused) {
       const rowSelector = focusEntryId ? `[data-queue-entry-id="${CSS.escape(focusEntryId)}"] ` : "";
@@ -716,14 +887,14 @@
   };
 
   document.addEventListener("bhakti:add-to-queue", event => addSongToPlaylist(event.detail.song, event.detail.position));
-  document.addEventListener("bhakti:shuffle-request", async event => {
+  document.addEventListener("bhakti:shuffle-request", event => {
     const songs = event.detail?.songs || [];
     if (!songs.length) return;
     const next = runShuffle(Queue.shuffle, songs, Math.random, newSessionId());
     setQueueState(next);
     selectAudioSong(currentSong, { force: true });
-    await showSong(currentSong.slug);
     attemptPlay();
+    void showSong(currentSong.slug);
   });
   document.addEventListener("click", event => {
     const link = event.target.closest?.(".song-card-link");
@@ -823,6 +994,9 @@
     dragPressTimer = 0;
   };
   const resetDragGesture = () => {
+    if (dragMoveFrame) cancelAnimationFrame(dragMoveFrame);
+    dragMoveFrame = 0;
+    pendingDragPoint = null;
     const row = draggedRow;
     const pointerId = dragPointerId;
     clearDragHold();
@@ -878,18 +1052,34 @@
     positionDraggedRow(clientY);
     const target = document.elementFromPoint(clientX, clientY)?.closest(".queue-row.is-upcoming");
     if (!target || target === draggedRow || target.parentElement !== draggedRow.parentElement) return;
-    const beforeRects = new Map([...list.querySelectorAll(".queue-row")]
-      .map(row => [row.dataset.queueEntryId, row.getBoundingClientRect()]));
-    const before = clientY < target.getBoundingClientRect().top + target.getBoundingClientRect().height / 2;
+    const targetRect = target.getBoundingClientRect();
+    const before = clientY < targetRect.top + targetRect.height / 2;
     const alreadyPlaced = before
       ? draggedRow.nextElementSibling === target
       : target.nextElementSibling === draggedRow;
     if (alreadyPlaced) return;
+    const beforeRects = new Map();
+    for (const row of visibleQueueRows) {
+      if (row !== draggedRow && row.parentElement === list) beforeRects.set(row, row.getBoundingClientRect());
+    }
+    // The hit-tested row is visible even if the observer has not delivered yet.
+    beforeRects.set(target, targetRect);
     target.parentElement.insertBefore(draggedRow, before ? target : target.nextSibling);
     animateQueueReorder(list, beforeRects);
     positionDraggedRow(clientY);
     pulseDragHaptic(8);
     dragMoved = true;
+  };
+  const flushDragMove = () => {
+    if (dragMoveFrame) cancelAnimationFrame(dragMoveFrame);
+    dragMoveFrame = 0;
+    const point = pendingDragPoint;
+    pendingDragPoint = null;
+    if (point && draggedRow && dragActive) moveDraggedRow(point.x, point.y);
+  };
+  const scheduleDragMove = (x, y) => {
+    pendingDragPoint = { x, y };
+    if (!dragMoveFrame) dragMoveFrame = requestAnimationFrame(flushDragMove);
   };
   const startDragGesture = ({ row, inputType, pointerId = null, touchId = null, clientX, clientY }) => {
     draggedRow = row;
@@ -939,7 +1129,7 @@
       return;
     }
     event.preventDefault();
-    moveDraggedRow(event.clientX, event.clientY);
+    scheduleDragMove(event.clientX, event.clientY);
   });
   const touchById = touches => Array.from(touches)
     .find(touch => touch.identifier === dragTouchId);
@@ -969,9 +1159,11 @@
       return;
     }
     event.preventDefault();
-    moveDraggedRow(touch.clientX, touch.clientY);
+    scheduleDragMove(touch.clientX, touch.clientY);
   }, { passive: false });
   const finishDragGesture = () => {
+    // Pointer-up may arrive before the scheduled frame; commit its final move.
+    flushDragMove();
     const moved = dragMoved;
     const suppressAction = dragActive;
     const orderedEntryIds = [...queueSheet.querySelectorAll(".queue-row.is-upcoming")]
@@ -1044,9 +1236,10 @@
   window.addEventListener("resize", setPlayerHeight, { passive: true });
 
   initializeState();
-  import("/assets/owner-entry.js").catch(error => console.warn("Owner entry could not be initialized", error));
+  window.BHAKTI_READER.setVisible(view === "song");
+  import(assetPath("/assets/owner-entry.js")).catch(error => console.warn("Owner entry could not be initialized", error));
   if ("mediaSession" in navigator) {
-    import("/assets/media-session.js").then(({ attach }) => {
+    import(assetPath("/assets/media-session.js")).then(({ attach }) => {
       systemMedia = attach({
         audio,
         playback,

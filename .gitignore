@@ -12,3 +12,6 @@ songs/*/audio.flac
 .pytest_cache/
 .omx/
 .claude/
+
+node_modules/
+_site/

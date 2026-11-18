@@ -1,5 +1,9 @@
 """Exact hosted artifact population and shared workflow assembly contract."""
 import importlib.util
+import base64
+import hashlib
+import json
+import re
 import os
 from pathlib import Path
 import tempfile
@@ -40,8 +44,11 @@ class HostedPublicAssembly(unittest.TestCase):
             stale=root/'_site/private-from-old-build.json';stale.parent.mkdir();stale.write_text('private')
             module.assemble_public_site(root)
             actual={str(path.relative_to(root/'_site')) for path in (root/'_site').rglob('*') if path.is_file()}
-            self.assertEqual(actual,set(allowed))
-            for name in allowed:self.assertEqual((root/'_site'/name).read_bytes(),(root/name).read_bytes())
+            self.assertEqual(actual,set(allowed) | {"assets/release-map.js"})
+            for name in allowed:
+                if name != 'sw.js':
+                    self.assertEqual((root/'_site'/name).read_bytes(), (root/name).read_bytes())
+            self.assertTrue((root/'_site/sw.js').read_text().endswith((root/'sw.js').read_text()))
             for name in forbidden:self.assertTrue((root/name).is_file(),'assembly must not remove source/private originals')
 
     def test_global_site_assembly_holds_pending_song_before_replacing_previous_artifact(self):
@@ -83,3 +90,51 @@ class HostedPublicAssembly(unittest.TestCase):
                 with self.assertRaisesRegex((RuntimeError,ValueError),'(?i)(changed|snapshot|transaction)'):
                     module.assemble_public_site(root)
             self.assertEqual(previous.read_text(),'previous artifact')
+
+
+class ReleaseAssembly(unittest.TestCase):
+    def test_revisioned_runtime_is_bound_to_copied_bytes_without_mutating_sources(self):
+        import assemble_public_site as assembly
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            assets = {
+                'index.html': '<html><head><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css"></head><body><script src="/data/shuffle-profiles.js?v=old"></script><script src="/assets/shuffle.js?v=old"></script><script src="/assets/app.js?v=old"></script></body></html>',
+                'songs/example/index.html': '<script src="data.js"></script><script src="/assets/app.js?v=old"></script>',
+                'songs/example/data.js': 'window.SONG_LINES = ["preserved lyric"];',
+                'assets/app.js': 'window.app = true;',
+                'assets/shuffle.js': 'engine', 'assets/shuffle-client.js': 'client',
+                'assets/shuffle-worker.js': 'worker', 'data/shuffle-profiles.js': 'profiles',
+                'assets/fonts.css': '@font-face {src: url("fonts/extended.woff2");}',
+                'assets/fonts/extended.woff2': 'font',
+                'data/songs.js': 'catalogue',
+                'sw.js': (ROOT / 'sw.js').read_text(),
+            }
+            for name in assembly.PUBLIC_ROOT_FILES:
+                assets.setdefault(name, name)
+            for name, body in assets.items():
+                path = root / name; path.parent.mkdir(parents=True, exist_ok=True); path.write_text(body)
+            # Exercise the transformation directly: pairing is independently
+            # covered by integration tests; this fixture is not a song catalogue.
+            assembly.prepare_release(root)
+            config = json.loads((root/'sw.js').read_text().split(' = ', 1)[1].split(';\n', 1)[0])
+            for path, url in config['paths'].items():
+                self.assertEqual(url, path + '?v=' + hashlib.sha256((root/path.lstrip('/')).read_bytes()).hexdigest())
+            html = (root/'index.html').read_text()
+            self.assertNotIn('googleapis', html); self.assertNotIn('gstatic', html)
+            for tag in re.findall(r'<(?:script|link)\b[^>]*>', html):
+                if 'src=' in tag or 'rel="stylesheet"' in tag:
+                    resource = re.search(r'(?:src|href)="([^?]+)', tag)[1]
+                    expected = base64.b64encode(hashlib.sha256((root/resource.lstrip('/')).read_bytes()).digest()).decode()
+                    self.assertIn('integrity="sha256-' + expected + '"', tag)
+            self.assertNotRegex(html, r'<script src="/(?:assets/shuffle\.js|data/shuffle-profiles\.js)')
+            self.assertLess(html.index('/assets/release-map.js'), html.index('/assets/shuffle-client.js'))
+            self.assertLess(html.index('/assets/shuffle-client.js'), html.index('/assets/app.js'))
+            self.assertIn(config['paths']['/assets/fonts.css'], html)
+            self.assertIn(config['paths']['/assets/fonts/extended.woff2'], (root/'assets/fonts.css').read_text())
+            self.assertIn(config['paths']['/songs/example/data.js'], (root/'songs/example/index.html').read_text())
+            self.assertEqual((root/'songs/example/data.js').read_text(), assets['songs/example/data.js'])
+            for lazy in ['/assets/shuffle.js', '/assets/shuffle-worker.js', '/data/shuffle-profiles.js', '/songs/example/data.js']:
+                self.assertNotIn(config['paths'][lazy], config['shell'])
+            self.assertIn(config['paths']['/assets/release-map.js'], config['shell'])
+            self.assertNotIn('/sw.js', config['paths'])
+            self.assertEqual(config['documents']['/index.html'], hashlib.sha256((root/'index.html').read_bytes()).hexdigest())

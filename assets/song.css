@@ -417,6 +417,17 @@ html, body {
 .audio-player audio { display: none; }
 
 /* ---------- Line block ---------- */
+.lyric-chunk {
+  /* Retain all searchable/accessibility text while offscreen chunks avoid full
+     layout and paint. The browser remembers measured heights after a visit.
+     Padding protects the established negative lyric margins and focus outlines
+     from the paint containment implicit in content-visibility. */
+  display: flow-root;
+  margin-inline: -28px;
+  padding-inline: 28px;
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto calc(var(--lyric-chunk-lines) * 14rem);
+}
 .line {
   position: relative;
   margin: 0 0 36px;

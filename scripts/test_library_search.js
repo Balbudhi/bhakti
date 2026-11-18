@@ -149,4 +149,17 @@ const filtered = filterSongs([
 ], { languages: ["Kannada"], subjects: ["Śiva"], query: "Akkamahadevi" });
 assert.deepEqual(filtered.map(item => item.slug), ["thanu-karagadavaralli"]);
 
-process.stdout.write("library search aliases: ok\n");
+
+// Catalogue objects are immutable for a loaded release. Repeated input must
+// reuse their normalized search fields; a different object is indexed afresh.
+let titleReads = 0;
+const indexedSong = { ...namdevSong, get title() { titleReads++; return 'Tīrtha Viṭṭhal Kṣetra Viṭṭhal'; } };
+filterSongs([indexedSong], {query: 'tirtha'});
+const readsAfterIndex = titleReads;
+for (const query of ['namdev bhimsen tirtha', 'absent phrase', 'Viṭṭhal', '']) {
+  filterSongs([indexedSong], {query});
+}
+assert.equal(titleReads, readsAfterIndex, 'Repeated input reuses immutable catalogue search fields');
+assert.equal(filterSongs([{...indexedSong, title: 'Changed title'}], {query: 'Changed title'}).length, 1);
+
+process.stdout.write("library search aliases and cached fields: ok\n");

@@ -193,18 +193,14 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('now - lastCheck < 5 * 60 * 1000', client)
         # Listening-session reload protection is exercised behaviorally in
         # test_pwa_lifecycle.js, including paused and pending playback.
-        self.assertIn('fetch(event.request, { cache: "no-store" })', worker)
-        self.assertIn('event.request.mode === "navigate"', worker)
-        self.assertIn('cache.put(cacheKey, copy)', worker)
-        self.assertIn('caches.match(cacheKey)', worker)
-        # The cache name is versioned rather than fixed, and a new version has to
-        # purge the old ones — pinning the literal here only recorded whichever
-        # release was current and had to be edited on every asset change.
-        self.assertRegex(worker, r'const CACHE = "bhakti-shell-v\d+";')
-        self.assertIn('keys.filter(key => key !== CACHE)', worker)
-        self.assertIn('/assets/queue.js', worker)
-        self.assertIn('/assets/app.js', worker)
-        self.assertIn('/assets/media-session.js', worker)
+        # Native CacheStorage integration verifies warm hits, install/update
+        # integrity, offline bootstrap, query/origin isolation and bounded rotation.
+        self.assertIn('BHAKTI_RELEASE', worker)
+        self.assertIn('request.mode === "navigate"', worker)
+        self.assertIn('crypto.subtle.digest("SHA-256"', worker)
+        self.assertIn('await cachedRevision(key)', worker)
+        self.assertIn('name.startsWith(CACHE_PREFIX)', worker)
+        self.assertNotIn('cache: "no-store"', worker)
 
     def test_iast_uses_the_extended_garamond_face(self) -> None:
         song_css = (ROOT / "assets" / "song.css").read_text(encoding="utf-8")
@@ -287,7 +283,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('touchId: touch.identifier', app)
         self.assertIn('queueSheet.addEventListener("touchmove"', app)
         self.assertIn('if (!draggedRow || dragInputType !== "touch") return', app)
-        self.assertIn('event.preventDefault();\n    moveDraggedRow(touch.clientX, touch.clientY)', app)
+        self.assertIn('event.preventDefault();\n    scheduleDragMove(touch.clientX, touch.clientY)', app)
         self.assertIn("{ passive: false }", app)
         self.assertIn('queueSheet.addEventListener("touchend"', app)
         self.assertIn('queueSheet.addEventListener("touchcancel"', app)
@@ -345,7 +341,7 @@ class SongUiContractTests(unittest.TestCase):
         self.assertIn('if (event.pointerType === "mouse") activateDrag()', app)
         self.assertIn('queueSheet.contains(event.target) || player.contains(event.target)', app)
         self.assertIn('event.stopPropagation();', app)
-        self.assertIn('document.addEventListener("bhakti:shuffle-request", async event', app)
+        self.assertIn('document.addEventListener("bhakti:shuffle-request", event', app)
         self.assertIn('await showSong(currentSong.slug);', app)
         self.assertIn('queuePill.addEventListener("click", async ()', app)
         self.assertIn('if (view === "library" && currentSong) void showSong(currentSong.slug);', app)

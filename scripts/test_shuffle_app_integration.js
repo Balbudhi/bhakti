@@ -1,85 +1,81 @@
 #!/usr/bin/env node
 'use strict';
-// Execute production dispatch/handlers with real Queue state. Controlled engine
-// output checks routing and atomic adoption; algorithm quality has separate tests.
+// Production handlers and Queue state, with deliberately delayed worker output.
+// A gesture must play immediately; completion may reorder only its own queue.
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 const Queue=require('../assets/queue.js');
+const engine=require('../assets/shuffle.js');
 const source=fs.readFileSync(require.resolve('../assets/app.js'),'utf8');
 const songs=['a','b','c','d'].map((slug,i)=>({slug,queueId:String(i+1),audioSources:[]}));
 const old=Queue.create({mode:'custom',items:[...songs,songs[1]],currentIndex:1,sessionId:'retained',repeat:'all'});
-function setup({revision='r1',snapshotRevision='r1',schemaVersion=1,taxonomyVersion=1,engineMode='valid',snapshotPresent=true}={}) {
+const flush=async()=>{for(let i=0;i<8;i++)await Promise.resolve();};
+function setup({available=true,revision='r1'}={}) {
   const handlers={}, calls=[], selected=[], warnings=[];
-  const snapshot={schemaVersion,taxonomyVersion,revision:snapshotRevision,profiles:{}};
-  const window={BHAKTI_SHUFFLE_REVISION:revision,BHAKTI_SHUFFLE_PROFILES:snapshotPresent?snapshot:undefined,
-    BHAKTI_SHUFFLE:{order(items,options){
-      calls.push(options);
-      if(engineMode==='throw') throw new Error('controlled failure');
-      if(engineMode==='invalid') return {items:items.slice(1)};
-      return {items:[...items.slice(0,options.fixedPrefix),...items.slice(options.fixedPrefix).reverse()]};
-    }}};
-  const context=vm.createContext({window,Queue,Math:Object.assign(Object.create(Math),{random:()=>0.25}),
+  const window={BHAKTI_SHUFFLE_REVISION:revision,BHAKTI_SHUFFLE_CLIENT:available?{order(items,options){
+    let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no;});
+    calls.push({items,options,resolve,reject});return promise;
+  }}:undefined};
+  const context=vm.createContext({window,Queue,AbortController,Math:Object.assign(Object.create(Math),{random:()=>0.25}),
     console:{warn:(...args)=>warnings.push(args)},queueState:old,currentSong:old.items[1],
-    suppressQueueRowAction:false,view:'song',
-    queueSheet:{hidden:false,addEventListener:(name,fn)=>{handlers['queue:'+name]=fn;}},
+    suppressQueueRowAction:false,view:'song',systemMedia:null,
+    queueSheet:{hidden:true,addEventListener:(name,fn)=>{handlers['queue:'+name]=fn;}},
     document:{addEventListener:(name,fn)=>{handlers[name]=fn;}},
-    newSessionId:()=> 'new',
-    setQueueState(state){context.queueState=state;context.currentSong=state.items[state.currentIndex];},
-    selectAudioSong(song){selected.push(song);},showSong:async()=>{},attemptPlay(){selected.push('play');},
+    newSessionId:()=> 'new',persistQueue(){},renderQueuePill(){},updateViewToggle(){},replaceHistoryMarker(){},
+    selectAudioSong(song){selected.push(song);},showSong:()=>new Promise(()=>{}),attemptPlay(){selected.push('play');},
+    playback:{isPlaying:()=>true,isPending:()=>false,pause(){selected.push('pause');}},
   });
-  const begin=source.indexOf('  const runShuffle =');
-  const end=source.indexOf('  const pathSlug =',begin);
-  assert.ok(begin>=0 && end>begin,'production shuffle dispatch exists');
-  vm.runInContext(source.slice(begin,end),context);
+  const begin=source.indexOf('  let shuffleRequest =');
+  assert.ok(begin>=0,'async shuffle request owner exists');
+  vm.runInContext(source.slice(begin,source.indexOf('  const pathSlug =',begin)),context);
+  vm.runInContext(source.slice(source.indexOf('  const setQueueState ='),source.indexOf('  const resolvedSources =')),context);
   const libraryStart=source.indexOf('  document.addEventListener("bhakti:shuffle-request"');
-  const libraryEnd=source.indexOf('  document.addEventListener("click"',libraryStart);
-  vm.runInContext(source.slice(libraryStart,libraryEnd),context);
+  vm.runInContext(source.slice(libraryStart,source.indexOf('  document.addEventListener("click"',libraryStart)),context);
   const queueStart=source.indexOf('  queueSheet.addEventListener("click"');
-  const queueEnd=source.indexOf('  queueSheet.addEventListener("keydown"',queueStart);
-  vm.runInContext(source.slice(queueStart,queueEnd),context);
+  vm.runInContext(source.slice(queueStart,source.indexOf('  queueSheet.addEventListener("keydown"',queueStart)),context);
   return {context,calls,selected,warnings,
+    set:state=>{context.nextState=state;vm.runInContext('setQueueState(nextState)',context);},
     library:()=>handlers['bhakti:shuffle-request']({detail:{songs}}),
-    suffix:()=>handlers['queue:click']({target:{closest:()=>({disabled:false,dataset:{queueAction:'shuffle'},closest:()=>null})}})};
+    action:action=>handlers['queue:click']({target:{closest:()=>({disabled:false,dataset:{queueAction:action},closest:()=>null})}})};
 }
 (async()=>{
-  const fresh=setup();await fresh.library();
-  assert.equal(fresh.calls.length,1);
-  assert.equal(fresh.calls[0].fixedPrefix,0);
-  assert.deepEqual(Array.from(fresh.context.queueState.items,s=>s.slug),['d','c','b','a']);
-  assert.equal(fresh.context.queueState.repeat,'off');
+  const fresh=setup();fresh.library();
+  assert.equal(fresh.selected.at(-1),'play','play must occur before song data/navigation resolves');
+  const baseline=fresh.context.queueState;
+  await flush();assert.equal(fresh.calls.length,1);
+  const request=fresh.calls[0];
+  assert.equal(request.options.fixedPrefix,0);
+  const exact=engine.order(request.items,{seed:request.options.seed,profiles:{}}).items;
+  assert.equal(baseline.items[0].entryId,exact[0].entryId,'immediate starter matches exact seeded engine');
+  request.resolve(exact);await flush();
+  assert.deepEqual(fresh.context.queueState.items.map(x=>x.entryId),exact.map(x=>x.entryId));
   assert.equal(fresh.context.queueState.sessionId,'new');
-  assert.equal(fresh.selected.at(-1),'play');
-  const suffix=setup();suffix.suffix();
-  assert.equal(suffix.calls[0].fixedPrefix,2);
-  assert.deepEqual(suffix.context.queueState.items.slice(0,2),old.items.slice(0,2));
-  assert.equal(suffix.context.currentSong.entryId,old.items[1].entryId);
-  assert.equal(suffix.context.queueState.repeat,'all');
-  assert.deepEqual(suffix.selected,[],'Suffix shuffle must never reset/select/play media');
-  for(const config of [{revision:'new',snapshotRevision:'old'},{revision:'old',snapshotRevision:'new'},
-    {schemaVersion:2},{taxonomyVersion:2},{revision:undefined,snapshotRevision:undefined},
-    {revision:'',snapshotRevision:''},{snapshotPresent:false}]) {
-    // Explicit missing revisions, not default destructuring values.
-    const test=setup(config);
-    if(config.revision===undefined && Object.hasOwn(config,'revision')) {
-      test.context.window.BHAKTI_SHUFFLE_REVISION=undefined;
-      test.context.window.BHAKTI_SHUFFLE_PROFILES.revision=undefined;
-    }
-    test.suffix();
-    assert.equal(test.calls.length,0,'Missing/mismatched metadata must not reach optimizer');
-    assert.deepEqual(test.context.queueState,Queue.shuffleRemaining(old,()=>0.25));
+  assert.equal(fresh.selected.filter(x=>x==='play').length,1,'worker completion must not replay or replace media');
+  for(const mode of ['pause','repeat','edit','new-shuffle','bad-starter','invalid','failure']) {
+    const test=setup();test.action('shuffle');await flush();
+    const pending=test.calls[0],before=test.context.queueState;
+    assert.equal(pending.options.fixedPrefix,2);
+    assert.equal(before.items[1].entryId,old.items[1].entryId);
+    assert.equal(before.repeat,'all');
+    if(mode==='pause')test.action('queue-play');
+    if(mode==='repeat')test.set(Queue.cycleRepeat(before));
+    if(mode==='edit')test.set(Queue.append(before,{slug:'e',queueId:'e'}));
+    if(mode==='new-shuffle'){test.action('shuffle');await flush();}
+    const stateAfterAction=test.context.queueState;
+    if(['repeat','edit','new-shuffle'].includes(mode))assert.equal(pending.options.signal.aborted,true);
+    let result=[...pending.items.slice(0,2),...pending.items.slice(2).reverse()];
+    if(mode==='bad-starter')[result[0],result[2]]=[result[2],result[0]];
+    if(mode==='invalid')result=result.slice(1);
+    if(mode==='failure')pending.reject(new Error('offline'));else pending.resolve(result);
+    await flush();
+    if(mode!=='pause')assert.equal(test.context.queueState,stateAfterAction,`${mode} cannot overwrite queue`);
+    else assert.deepEqual(test.context.queueState.items.map(x=>x.entryId),result.map(x=>x.entryId));
+    assert.deepEqual(test.selected,mode==='pause'?['pause']:[],'suffix shuffle never touches audio');
   }
-  for(const engineMode of ['throw','invalid']) {
-    const test=setup({engineMode});test.suffix();
-    assert.equal(test.calls.length,1);
-    assert.equal(test.warnings.length,1);
-    assert.deepEqual(test.context.queueState,Queue.shuffleRemaining(old,()=>0.25));
-    assert.deepEqual(test.selected,[]);
+  for(const config of [{available:false},{revision:''}]){
+    const test=setup(config);test.action('shuffle');await flush();
+    assert.equal(test.calls.length,0);assert.equal(test.context.queueState.items.length,old.items.length);
   }
-  for (const engine of [undefined, {}]) {
-    const test=setup();test.context.window.BHAKTI_SHUFFLE=engine;test.suffix();
-    assert.equal(test.calls.length,0);
-    assert.deepEqual(test.context.queueState,Queue.shuffleRemaining(old,()=>0.25));
-  }
-  console.log('shuffle app routing: matched metadata, fallback, exact queue and unchanged audio passed');
+  console.log('async shuffle: immediate play, exact starter, occurrence/prefix retention, failures and queue races passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});

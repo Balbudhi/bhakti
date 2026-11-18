@@ -3,7 +3,6 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const vm = require('node:vm');
 const { test } = require('node:test');
 
 const songs = [
@@ -14,71 +13,62 @@ const songs = [
 ];
 
 function mount(catalogue = songs, geometry = {}) {
-  const filters = { hidden: true, listeners: {}, rows: [], buttons: [],
-    addEventListener(type, handler) { this.listeners[type] = handler; },
-    querySelectorAll(selector) { assert.equal(selector, '.tag-filter'); return this.buttons; },
-    set innerHTML(html) {
-      // Browser replacement discards old row scroll state and button identities.
-      this.rows = [...html.matchAll(/<div\b[^>]*class="tag-row"[^>]*>(.*?)<\/div>/gs)].map(match => ({ html: match[1], scrollLeft: 0 }));
-      this.buttons = [...html.matchAll(/<button\b([^>]*)>(.*?)<\/button>/gs)].map(match => {
-        const attributes = Object.fromEntries([...match[1].matchAll(/([\w-]+)="([^"]*)"/g)].map(m => [m[1], m[2]]));
-        return { dataset: { kind: attributes['data-kind'], tag: attributes['data-tag'] },
-          getAttribute(name) { return attributes[name]; },
-          setAttribute(name, value) { attributes[name] = String(value); },
-          closest(selector) { return selector === '.tag-filter' ? this : null; } };
-      });
-    },
+  const { JSDOM } = require('jsdom');
+  const dom = new JSDOM(`<main><button id="filterToggle" aria-expanded="false"></button>
+    <span id="filterCount"></span><div id="tagFilters" hidden></div>
+    <input id="songSearch"><div id="songList"></div></main>`, {runScripts: 'outside-only'});
+  const { window } = dom;
+  const { document } = window;
+  window.BHAKTI_SONGS = catalogue;
+  window.innerWidth = 390; window.innerHeight = 844;
+  const documentEvents = {}, windowEvents = {};
+  const captureListeners = (target, listeners = {}) => {
+    const add = target.addEventListener.bind(target);
+    target.addEventListener = (type, handler, options) => {
+      listeners[type] = handler; add(type, handler, options);
+    };
+    target.listeners = listeners;
   };
-  const search = { value: '', listeners: {}, addEventListener(type, fn) { this.listeners[type] = fn; } };
-  let focused = null;
-  const filterToggle = {listeners: {}, attrs: {'aria-expanded': 'false'}, title: '',
-    addEventListener(type, handler) {this.listeners[type] = handler;},
-    setAttribute(name, value) {this.attrs[name] = String(value);},
-    getAttribute(name) {return this.attrs[name];}, focus() {focused = this;}};
-  const filterCount = {textContent: '', hidden: true};
-  const documentEvents = {};
-  const windowEvents = {};
-  const list = { listeners: {}, cards: [], html: '', addEventListener(type, fn) { this.listeners[type] = fn; },
-    querySelector() { return this.cards.map(card => card.trigger).find(button => button.getAttribute('aria-expanded') === 'true') || null; },
-    set innerHTML(html) {
-      this.html = html;
-      this.cards = [...html.matchAll(/<article class="song-card" data-song-slug="([^"]+)"/g)].map(match => {
-        const slug = match[1];
-        const panel = {hidden: true, style: {}, getBoundingClientRect: () => ({width: 184, height: 96})};
-        const card = {querySelector: () => panel, panel};
-        const button = (kind, position) => {
-          const attrs = {'aria-expanded': 'false'};
-          return {dataset: kind === 'trigger' ? {queueChoices: slug} : {addToQueue: slug, queuePosition: position},
-            getAttribute: name => attrs[name], setAttribute: (name, value) => { attrs[name] = String(value); },
-            focus() { focused = this; },
-            getBoundingClientRect: () => geometry.anchor || ({top: 500, bottom: 542, right: 374}),
-            closest(selector) {
-              if (selector === '.song-card') return card;
-              if (selector === '[data-queue-choices]' && kind === 'trigger') return this;
-              if (selector === '[data-add-to-queue]' && kind === 'choice') return this;
-              if (selector === '.song-queue-actions' && kind === 'choice') return panel;
-              return null;
-            }};
-        };
-        card.trigger = button('trigger'); card.next = button('choice', 'next'); card.end = button('choice', 'end');
-        panel.querySelectorAll = () => [card.next, card.end];
-        panel.contains = target => target === card.next || target === card.end;
-        return card;
-      });
-    },
+  captureListeners(document, documentEvents); captureListeners(window, windowEvents);
+  const root = document.querySelector('main');
+  const filters = root.querySelector('#tagFilters');
+  const search = root.querySelector('#songSearch');
+  const list = root.querySelector('#songList');
+  const filterToggle = root.querySelector('#filterToggle');
+  const filterCount = root.querySelector('#filterCount');
+  for (const target of [root, filters, search, list, filterToggle]) captureListeners(target);
+  root.events = [];
+  const dispatch = root.dispatchEvent.bind(root);
+  root.dispatchEvent = event => { root.events.push(event); return dispatch(event); };
+  window.HTMLElement.prototype.getBoundingClientRect = function() {
+    if (this.matches('.song-queue-actions')) return {width: 184, height: 96};
+    return geometry.anchor || {top: 500, bottom: 542, right: 374};
   };
-  const root = {listeners: {}, events: [],
-    querySelector: selector => ({ '#tagFilters': filters, '#songSearch': search, '#songList': list, '#filterToggle': filterToggle, '#filterCount': filterCount }[selector] || null),
-    dispatchEvent(event) { this.events.push(event); },
-    addEventListener(type, handler) { this.listeners[type] = handler; }};
-  const context = { window: { BHAKTI_SONGS: catalogue, innerWidth:390, innerHeight:844, addEventListener(type, handler) {windowEvents[type] = handler;} },
-    document: {readyState:'loading', get activeElement() {return focused;}, addEventListener(type, handler) {documentEvents[type] = handler;}, getElementById: id => id === "audioPlayer" ? geometry.player : null},
-    CustomEvent: class { constructor(type, detail) { Object.assign(this, { type }, detail); } } };
-  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/library.js'), 'utf8'), context);
-  const controller = context.window.BHAKTI_LIBRARY.mount(root);
+  if (geometry.player) {
+    const original = document.getElementById.bind(document);
+    document.getElementById = id => id === 'audioPlayer' ? geometry.player : original(id);
+  }
+  window.eval(fs.readFileSync(path.join(__dirname, '../assets/library.js'), 'utf8'));
+  const controller = window.BHAKTI_LIBRARY.mount(root);
+  Object.defineProperty(filters, 'rows', {get: () => [...filters.querySelectorAll('.tag-row')].map(row => {
+    row.html = row.innerHTML;
+    return row;
+  })});
+  Object.defineProperty(filters, 'buttons', {get: () => [...filters.querySelectorAll('.tag-filter')]});
+  Object.defineProperty(list, 'html', {get: () => list.innerHTML});
+  Object.defineProperty(list, 'cards', {get: () => [...list.querySelectorAll('.song-card')].map(card => {
+    card.trigger = card.querySelector('[data-queue-choices]');
+    // Accommodate both the baseline per-row menu and the shared replacement.
+    const panel = card.querySelector('.song-queue-actions') || list.querySelector('.song-queue-actions');
+    card.panel = panel;
+    card.next = panel.querySelector('[data-queue-position="next"]');
+    card.end = panel.querySelector('[data-queue-position="end"]');
+    return card;
+  })});
   const button = (kind, tag) => filters.buttons.find(b => b.dataset.kind === kind && b.dataset.tag === tag);
-  const click = (kind, tag) => { const target = button(kind, tag); assert.ok(target, `${kind}:${tag} exists`); filters.listeners.click({ target }); };
-  return { filters, search, controller, button, click, list, root, filterToggle, filterCount, documentEvents, windowEvents, getFocused: () => focused, api: context.window.BHAKTI_SEARCH };
+  const click = (kind, tag) => { const target = button(kind, tag); assert.ok(target, `${kind}:${tag} exists`); target.click(); };
+  return { filters, search, controller, button, click, list, root, filterToggle, filterCount,
+    documentEvents, windowEvents, getFocused: () => document.activeElement, api: window.BHAKTI_SEARCH };
 }
 
 const visible = app => Array.from(app.controller.getVisibleSongs(), s => s.slug).sort();
@@ -92,7 +82,7 @@ test('compact filter toggle preserves controls and selection while closing and r
   assert.equal(app.filters.hidden, true);
   assert.equal(app.filterCount.textContent,'1');
   app.filterToggle.listeners.click();
-  assert.equal(app.filters.rows,rows);
+  assert.deepEqual(app.filters.rows,rows);
   assert.equal(app.button('language','Hindi').getAttribute('aria-pressed'),'true');
 });
 test('action popover focuses its commands and supports arrow keys, Escape and outside focus', () => {
@@ -253,7 +243,7 @@ test('playlist disclosure keeps one row open and choices restore focus without n
   assert.equal(first.panel.hidden, false);
   assert.equal(first.trigger.getAttribute('aria-expanded'), 'true');
   app.list.listeners.click({target: second.trigger});
-  assert.equal(first.panel.hidden, true);
+  assert.equal(first.trigger.getAttribute('aria-expanded'), 'false');
   assert.equal(second.panel.hidden, false);
   for (const choice of [second.next, second.end]) {
     if (second.panel.hidden) app.list.listeners.click({target: second.trigger});
@@ -280,4 +270,40 @@ test('playlist Escape returns focus and a click outside the open row dismisses i
   app.list.listeners.click({target: first.trigger});
   app.documentEvents.click({target: {closest: () => null}});
   assert.equal(first.panel.hidden, true);
+});
+
+test('search and filter changes preserve catalogue row identity', () => {
+  const app = mount();
+  const original = app.list.cards.slice();
+  app.search.value = 'One'; app.search.listeners.input();
+  app.search.value = ''; app.search.listeners.input();
+  assert.equal(app.list.cards.length, original.length);
+  for (let i = 0; i < original.length; i++) assert.equal(app.list.cards[i], original[i]);
+});
+
+test('one shared menu targets the selected row without multiplying hidden controls', () => {
+  const app = mount();
+  assert.equal(app.list.querySelectorAll('[role="menu"]').length, 1);
+  assert.equal(app.list.querySelectorAll('[role="menuitem"]').length, 2);
+  const [first, second] = app.list.cards;
+  first.trigger.click();
+  second.trigger.click();
+  assert.equal(first.trigger.getAttribute('aria-expanded'), 'false');
+  second.next.click();
+  const event = app.root.events.at(-1);
+  assert.equal(event.type, 'bhakti:add-to-queue');
+  assert.equal(event.detail.song.slug, second.dataset.songSlug);
+  assert.equal(event.detail.position, 'next');
+  assert.equal(app.getFocused(), second.trigger);
+});
+
+test('retained rows expose exactly the filtered order and empty search hides every row', () => {
+  const app = mount();
+  const rendered = () => [...app.list.querySelectorAll('.song-card:not([hidden])')].map(card => card.dataset.songSlug);
+  const expected = () => Array.from(app.controller.getVisibleSongs(), song => song.slug);
+  for (const query of ['One', 'Singer A', 'does not exist', '']) {
+    app.search.value = query; app.search.dispatchEvent(new app.search.ownerDocument.defaultView.Event('input'));
+    assert.deepEqual(rendered(), expected());
+    assert.equal(app.list.querySelector('.library-empty').hidden, expected().length > 0);
+  }
 });

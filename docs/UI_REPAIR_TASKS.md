@@ -323,3 +323,70 @@ checks pass. Trim audit still reports the same six previously recorded evidence
 failures (111 checked); this patch changes no media or timing data. Physical
 iPhone confirmation remains open; normal browser checks cannot settle the
 reported intermittent compositor failure.
+
+## 17 November 2026 — performance repair
+
+Outcome: ship responsive loading, library search, playlist interaction and long
+readers without changing any recording, audio source/quality, lyric, gloss,
+translation, timing, occurrence order or existing playback capability.
+
+Current step: implementation and independent code review complete against live
+release 4e863472. Automated integration and assembled-release checks pass.
+Next: required in-app browser acceptance, then scoped main deployment and live
+readback. Browser discovery currently returns no available browser; native UI
+access also fails. Publication remains pending that acceptance or an explicit
+owner waiver of unavailable browser checks.
+
+Design and ownership:
+- Library: precompute immutable search forms; preserve phrase-first matching;
+  reuse catalogue rows and one on-demand contextual menu. Keep all songs reachable.
+- Reader: complexity-budgeted chunks with offscreen rendering containment;
+  preserve complete text/accessibility and exact occurrence seeks. Avoid rebuilding
+  the same mounted data; stop hidden-reader work, read media time once and use
+  logarithmic lookup. No removal of content to meet performance budgets.
+- Playlist: keyed updates rather than full-list replacement; defer offscreen
+  layout, batch drag reads/writes and preserve keyboard movement/focus. Give
+  titles stable readable measure and word wrapping. Full queue remains available.
+- Loading: release-aware static caching, same-origin fonts with Latin Extended,
+  lazy shuffle resources and worker computation preserving algorithm/order
+  membership. Async shuffle results must not overwrite a newer queue operation.
+- App integration: retain audio node and its native user-activation behavior;
+  bounded recent-song data cache, no stale navigation commits or same-song reset.
+
+Implementation order: review existing behavioral tests and add meaningful red
+regressions for each owned module before its implementation; independent modules
+can proceed together. Integrate async shuffle and reader visibility after module
+interfaces are stable; release assembly follows all runtime integration.
+
+Checks: exact audio/catalogue/song-data identity against the baseline; existing
+queue/repeat/playback/media-session/PWA/navigation/filter suites; targeted tests
+for search equivalence, keyed row identity, rendering/seek boundaries, cache
+online/offline/update isolation and async shuffle races. Benchmark identical
+365-song workloads. Run required Python contract, audio, trim and shuffle audits,
+py_compile and diff checks. In-app browser checks cover 390px/tablet/desktop/TV,
+long readers, line seeks, focus and queue controls when available. Record real
+limitations; source harnesses do not establish phone frame times.
+
+Verification recorded 17 November:
+- Search/filter, playlist identity/focus/drag, player/media/PWA, async worker,
+  reader, loading/navigation and release-integrity regression suites pass.
+- Real DOM parsing covers all 365 songs and 14,324 lyric occurrences: 28,648
+  exact ready/deferred seek checks, including returning refrains and overlaps.
+- 366 assembled entrypoints have 5,122 matching resource hashes/SRI bindings;
+  every original audio source and song-data byte is retained. No media is
+  encoded, uploaded, replaced or reordered by this release.
+- Native CacheStorage checks cover first-install offline, zero-network warm
+  reads, old/new revisions, integrity failure, quota failure and failed install.
+- Contract audit and shuffle-profile audit pass; Python compilation and scoped
+  whitespace checks pass. The legacy UI static suite has the same pre-existing
+  source-version, generator-drift and old hosted-intake assumptions as baseline;
+  new behavioral checks exercise the actual assembled artifact instead.
+- Audio audit was invoked but this isolated source worktree has no ignored local
+  recordings, so it cannot reprobe their codecs. Trim audit has no local private
+  review packets here. The complete source/data comparison establishes that this
+  frontend-only change leaves those existing audio and timing artifacts intact.
+- Identical 365-song Node workload: median pure search 11.805ms → 0.107ms;
+  playlist repeat render in jsdom 63–77ms → 15–16ms. These are not phone frame
+  times. Sundarakanda late-seek elements 18,548 → 4,272; full semantic text is
+  now initially present, so its initial element count rises 1,723 → 4,225 while
+  rich word links fall 1,324 → 311. Native find/layout needs browser acceptance.

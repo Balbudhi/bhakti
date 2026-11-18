@@ -344,16 +344,18 @@ let PAGE_META = {...(window.SONG_META || {}), ...(window.BHAKTI_EDITION_META || 
 let PAGE_LINES = window.SONG_LINES || null;
 let PAGE_SEQUENCE = window.SONG_SEQUENCE || null;
 let PAGE_TIMINGS = window.SONG_TIMINGS || null;
-// A long recitation can contain hundreds of individually interactive words.
-// Rendering every one at once exhausts mobile Safari while navigating between
-// the reader and library, so long readers reveal calm contiguous chunks as the
-// listener approaches them. A direct seek still materializes its target.
-const LAZY_LINE_THRESHOLD = 180;
-const INITIAL_LINE_BATCH = 56;
-const NEXT_LINE_BATCH = 40;
-let lazyLineCount = 0;
-let lazyAppendLines = null;
-let lazyObserver = null;
+// All readable text and occurrence controls exist immediately. Rich word links
+// are added only near the viewport, by estimated element cost rather than line
+// count (a name-table line can contain far more elements than a lyric line).
+const READER_CHUNK_BUDGET = 480;
+let readerChunks = [];
+let lineChunks = [];
+let readerObserver = null;
+let readerRoot = null;
+let readerVisible = true;
+let readerClock = null;
+let mountedSongData = null;
+let dismissReaderMeaning = () => {};
 
 function indicesFrom(value) {
   return String(value || "").split(/\s+/).filter(Boolean).map(Number).filter(Number.isInteger);
@@ -429,19 +431,21 @@ function renderSourceWithSpans(source, sourceWords, words) {
   return html;
 }
 
-function renderNameTable(words) {
+function renderNameTable(words, interactive = true) {
+  const cell = (className, text, index, tooltip) => interactive
+    ? linkedWord(className, text, [index], words, tooltip) : escapeHtml(text);
   const rows = words.map((word, index) => `
     <div class="name-table-row" role="row">
-      <div class="name-table-cell name-table-deva" role="cell" lang="sa-Deva">${linkedWord("ws", word.deva || "", [index], words, analysisFor(words, [index]))}</div>
-      <div class="name-table-cell name-table-iast" role="cell" lang="sa-Latn">${linkedWord("w", word.citationRoman || word.roman || "", [index], words, analysisFor(words, [index]))}</div>
-      <div class="name-table-cell name-table-meaning" role="cell">${linkedWord("we", word.gloss || "", [index], words, false)}</div>
+      <div class="name-table-cell name-table-deva" role="cell" lang="sa-Deva">${cell("ws", word.deva || "", index, analysisFor(words, [index]))}</div>
+      <div class="name-table-cell name-table-iast" role="cell" lang="sa-Latn">${cell("w", word.citationRoman || word.roman || "", index, analysisFor(words, [index]))}</div>
+      <div class="name-table-cell name-table-meaning" role="cell">${interactive ? linkedWord("we", word.gloss || "", [index], words, false) : escapeHtml(word.gloss || "")}</div>
     </div>`).join("");
   return `<div class="name-table" role="table" aria-label="Devanāgarī, IAST, and meanings">
     ${rows}
   </div>`;
 }
 
-function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds, adapted = false, label = "") {
+function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSeconds, adapted = false, label = "", interactive = true) {
   const repBadge = repeats && repeats > 1
     ? `<span class="rep" aria-label="repeated ${repeats} times">×${repeats}</span>`
     : "";
@@ -456,10 +460,10 @@ function renderLine(line, repeats, instanceId, defaultSourceLanguage, startSecon
         <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
       </button>
       ${label ? `<div class="line-label">${escapeHtml(label)}</div>` : ""}
-      ${nameTable ? renderNameTable(line.words) : `
-        ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${renderSourceWithSpans(line.source, line.sourceWords, line.words)}</div>` : ""}
-        <div class="line-roman">${renderRomanWithSpans(line.roman, line.words)}${repBadge}${adaptedBadge}</div>
-        <div class="line-english">${renderEnglishWithSpans(line.english, line.words)}</div>`}
+      ${nameTable ? renderNameTable(line.words, interactive) : `
+        ${line.source ? `<div class="line-source" lang="${escapeHtml(line.sourceLanguage || defaultSourceLanguage || "")}">${interactive ? renderSourceWithSpans(line.source, line.sourceWords, line.words) : escapeHtml(line.source)}</div>` : ""}
+        <div class="line-roman">${interactive ? renderRomanWithSpans(line.roman, line.words) : escapeHtml(line.roman)}${repBadge}${adaptedBadge}</div>
+        <div class="line-english">${interactive ? renderEnglishWithSpans(line.english, line.words) : escapeHtml(line.english.replace(/\{[\d,\s]+:([^}]*)\}/g, "$1"))}</div>`}
     </article>
   `;
 }
@@ -569,7 +573,7 @@ function lineRenderContext() {
   return { seq, lines, timings, notices, adapted, defaultSourceLanguage };
 }
 
-function renderLineRange(context, start, end) {
+function renderLineRange(context, start, end, interactive = true) {
   let html = "";
   for (let idx = start; idx < end; idx++) {
     const entry = context.seq[idx];
@@ -580,53 +584,112 @@ function renderLineRange(context, start, end) {
     if (marker) html += renderStructuralMarker(marker);
     html += renderLine(line, entry.repeats, `ln-${idx}-${entry.ref}`,
       context.defaultSourceLanguage, context.timings[idx]?.start, context.adapted.has(idx),
-      PAGE_META?.lineLabels?.[entry.ref] || "");
+      PAGE_META?.lineLabels?.[entry.ref] || "", interactive);
   }
   return html;
 }
 
+function readerIsVisible() {
+  return readerVisible && readerRoot?.isConnected && document.visibilityState !== "hidden";
+}
+
+function estimatedLineElements(line) {
+  const words = line?.words || [];
+  if (line?.nameTable && words.length && words.every(word => word.deva)) return 8 + words.length * 7;
+  return 8 + words.length + (line?.sourceWords?.length || 0)
+    + (line?.english?.match(/\{[\d,\s]+:/g)?.length || 0);
+}
+
+function enhanceReaderChunk(chunk) {
+  if (!chunk || chunk.complete || !readerIsVisible()) return;
+  const selection = window.getSelection?.();
+  const template = document.createElement("template");
+  let complete = true;
+  for (let index = chunk.start; index < chunk.end; index++) {
+    const article = document.getElementById(`ln-${index}-${chunk.context.seq[index].ref}`);
+    if (!article) continue;
+    template.innerHTML = renderLineRange(chunk.context, index, index + 1);
+    const selector = ".line-source, .line-roman, .line-english, .name-table-cell";
+    const replacements = template.content.querySelectorAll(selector);
+    article.querySelectorAll(selector).forEach((layer, layerIndex) => {
+      if (layer.dataset.enhanced) return;
+      // Keep existing text ranges and focused gloss controls alive. Occurrence
+      // articles, seek buttons and text containers themselves are never replaced.
+      const selected = selection?.rangeCount && !selection.isCollapsed
+        && [...Array(selection.rangeCount)].some((_, i) => selection.getRangeAt(i).intersectsNode(layer));
+      if (selected || layer.contains(document.activeElement)) { complete = false; return; }
+      layer.innerHTML = replacements[layerIndex].innerHTML;
+      layer.dataset.enhanced = "true";
+    });
+  }
+  chunk.complete = complete;
+  if (complete) readerObserver?.unobserve(chunk.element);
+}
+
+// Compatibility name for the seek path: only the target chunk is enhanced;
+// every occurrence and its text already exists, including all preceding lines.
 function ensureRenderedThrough(index) {
-  if (typeof lazyAppendLines === "function" && index >= lazyLineCount) lazyAppendLines(index + 1);
+  enhanceReaderChunk(lineChunks[index]);
+  const seq = PAGE_SEQUENCE || SEQUENCE;
+  return index >= 0 && seq[index] ? document.getElementById(`ln-${index}-${seq[index].ref}`) : null;
+}
+
+function observeReaderChunks() {
+  readerObserver?.disconnect();
+  if (!readerIsVisible()) return;
+  if (!readerObserver && "IntersectionObserver" in window) {
+    readerObserver = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) enhanceReaderChunk(readerChunks.find(chunk => chunk.element === entry.target));
+      }
+    }, { rootMargin: "900px 0px" });
+  }
+  for (const chunk of readerChunks) {
+    if (chunk.complete) continue;
+    if (readerObserver) readerObserver.observe(chunk.element);
+    else enhanceReaderChunk(chunk); // Complete interaction fallback for older browsers.
+  }
 }
 
 function render() {
   renderSongMeta();
   const root = document.getElementById("songRoot");
   if (!root) return;
-  lazyObserver?.disconnect();
-  lazyObserver = null;
-  lazyAppendLines = null;
-  lazyLineCount = 0;
-  root.replaceChildren();
+  dismissReaderMeaning();
+  readerObserver?.disconnect();
+  readerRoot = root;
+  readerChunks = [];
+  lineChunks = [];
   const context = lineRenderContext();
-  const lazy = context.seq.length > LAZY_LINE_THRESHOLD;
-  const sentinel = lazy ? document.createElement("div") : null;
-  if (sentinel) {
-    sentinel.className = "line-load-sentinel";
-    sentinel.setAttribute("aria-hidden", "true");
-    root.append(sentinel);
-  }
-  lazyAppendLines = target => {
-    const end = Math.min(context.seq.length, Math.max(target, lazyLineCount + NEXT_LINE_BATCH));
-    if (end <= lazyLineCount) return;
-    const html = renderLineRange(context, lazyLineCount, end);
-    if (sentinel?.isConnected) sentinel.insertAdjacentHTML("beforebegin", html);
-    else root.insertAdjacentHTML("beforeend", html);
-    lazyLineCount = end;
-    if (lazyLineCount >= context.seq.length) {
-      sentinel?.remove();
-      lazyObserver?.disconnect();
-      lazyObserver = null;
-    }
+  let start = 0, cost = 0;
+  const addChunk = end => {
+    const chunk = { start, end, context, complete: readerChunks.length === 0 };
+    readerChunks.push(chunk);
+    for (let index = start; index < end; index++) lineChunks[index] = chunk;
+    start = end;
+    cost = 0;
   };
-  lazyAppendLines(lazy ? INITIAL_LINE_BATCH : context.seq.length);
-  if (lazy && "IntersectionObserver" in window && sentinel?.isConnected) {
-    lazyObserver = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting)) lazyAppendLines(lazyLineCount + NEXT_LINE_BATCH);
-    }, { rootMargin: "900px 0px" });
-    lazyObserver.observe(sentinel);
+  for (let index = 0; index < context.seq.length; index++) {
+    const line = lineForEdition(context.lines[context.seq[index].ref], context.seq[index].ref, PAGE_META);
+    const nextCost = estimatedLineElements(line);
+    if (index > start && cost + nextCost > READER_CHUNK_BUDGET) addChunk(index);
+    cost += nextCost;
   }
+  if (start < context.seq.length) addChunk(context.seq.length);
+  root.replaceChildren();
+  root.insertAdjacentHTML("beforeend", readerChunks.map(chunk =>
+    `<div class="lyric-chunk" style="--lyric-chunk-lines:${chunk.end - chunk.start}">${renderLineRange(context, chunk.start, chunk.end, chunk.complete)}</div>`
+  ).join(""));
+  root.querySelectorAll(":scope > .lyric-chunk").forEach((element, index) => { readerChunks[index].element = element; });
+  observeReaderChunks();
   wireInteractions(root);
+}
+
+function setVisible(visible) {
+  readerVisible = Boolean(visible);
+  if (!readerVisible) dismissReaderMeaning();
+  observeReaderChunks();
+  readerClock?.refresh();
 }
 
 /* ----- Tooltip (single, reused) ----- */
@@ -831,6 +894,8 @@ function wireInteractions(root) {
   });
 
   root.addEventListener("focusin", e => {
+    const chunkElement = e.target.closest?.(".lyric-chunk");
+    if (chunkElement) enhanceReaderChunk(readerChunks.find(chunk => chunk.element === chunkElement));
     const w = e.target.closest(".word-link");
     if (!w || !keyboardFocus) return;
     activate(w, w === stickyWord);
@@ -842,14 +907,19 @@ function wireInteractions(root) {
   });
 
   const dismissMeaning = () => {
+    if (!stickyWord && !hoverWord && !tooltipAnchor) return;
     deactivateAll(root);
     stickyWord = null;
     hoverWord = null;
   };
+  dismissReaderMeaning = dismissMeaning;
   window.addEventListener("scroll", event => {
-    if (!tip.contains(event.target)) dismissMeaning();
+    if (event.target === window || !tip.contains(event.target)) dismissMeaning();
   }, { passive: true });
   window.addEventListener("resize", dismissMeaning);
+  document.addEventListener("selectionchange", () => {
+    if (readerIsVisible()) observeReaderChunks();
+  });
 
   document.addEventListener("keydown", e => {
     if (e.key === "Tab") keyboardFocus = true;
@@ -911,6 +981,30 @@ function writeLyricsFollowPreference(enabled) {
 let lyricsFollowPlayback = readLyricsFollowPreference();
 
 const WIRED_KARAOKE_AUDIO = new WeakSet();
+let indexedTimings = null;
+let timingEndBounds = [];
+
+function activeTimingIndex(timings, time) {
+  if (timings !== indexedTimings) {
+    indexedTimings = timings;
+    let end = -Infinity;
+    timingEndBounds = timings.map(segment => {
+      if (typeof segment.end === "number" && !Number.isNaN(segment.end)) end = Math.max(end, segment.end);
+      return end;
+    });
+  }
+  // Earliest end greater than time preserves the original first-match behavior
+  // even where audited recordings have overlapping or nested timing segments.
+  let low = 0, high = timingEndBounds.length;
+  while (low < high) {
+    const middle = (low + high) >>> 1;
+    if (timingEndBounds[middle] > time) high = middle;
+    else low = middle + 1;
+  }
+  const segment = timings[low];
+  return segment && time >= segment.start && time < segment.end ? low : -1;
+}
+
 function setupKaraoke() {
   const audio = document.getElementById("songAudio");
   if (!audio || WIRED_KARAOKE_AUDIO.has(audio)) return;
@@ -919,46 +1013,62 @@ function setupKaraoke() {
   let activeIdx = -1;
   let karaokeFrame = 0;
 
-  const activeArticle = () => {
-    const seq = PAGE_SEQUENCE || SEQUENCE;
-    ensureRenderedThrough(activeIdx);
-    return activeIdx >= 0 && seq[activeIdx]
-      ? document.getElementById(`ln-${activeIdx}-${seq[activeIdx].ref}`)
-      : null;
-  };
+  let highlightedArticle = null;
+  const activeArticle = () => ensureRenderedThrough(activeIdx);
   const updateKaraoke = () => {
+    if (!readerIsVisible()) return;
     const timings = PAGE_TIMINGS || [];
-    const nextIndex = timings.findIndex(segment => audio.currentTime >= segment.start && audio.currentTime < segment.end);
+    const time = audio.currentTime;
+    const nextIndex = activeTimingIndex(timings, time);
     if (nextIndex === activeIdx) return;
     activeIdx = nextIndex;
-    document.querySelectorAll(".line.is-singing").forEach(element => element.classList.remove("is-singing"));
+    highlightedArticle?.classList.remove("is-singing");
     const article = activeArticle();
+    highlightedArticle = article;
     if (!article) return;
     article.classList.add("is-singing");
     if (lyricsFollowPlayback) article.scrollIntoView({ behavior: "auto", block: "center" });
   };
   const tickKaraoke = () => {
+    karaokeFrame = 0;
+    if (!readerIsVisible()) return;
     updateKaraoke();
     if (!audio.paused && !audio.ended) karaokeFrame = requestAnimationFrame(tickKaraoke);
     else karaokeFrame = 0;
   };
   const startKaraokeClock = () => {
+    if (!readerIsVisible()) return;
     updateKaraoke();
-    if (!karaokeFrame) karaokeFrame = requestAnimationFrame(tickKaraoke);
+    if (!karaokeFrame && !audio.paused && !audio.ended) karaokeFrame = requestAnimationFrame(tickKaraoke);
+  };
+  const stopKaraokeClock = () => {
+    if (karaokeFrame) cancelAnimationFrame(karaokeFrame);
+    karaokeFrame = 0;
   };
   const resetKaraoke = () => {
     activeIdx = -1;
-    document.querySelectorAll(".line.is-singing").forEach(element => element.classList.remove("is-singing"));
-    if (!audio.paused) startKaraokeClock();
+    highlightedArticle?.classList.remove("is-singing");
+    highlightedArticle = null;
+    startKaraokeClock();
   };
+  readerClock = { refresh() {
+    stopKaraokeClock();
+    if (readerIsVisible()) startKaraokeClock();
+  } };
 
   audio.addEventListener("playing", startKaraokeClock);
+  audio.addEventListener("pause", stopKaraokeClock);
+  audio.addEventListener("ended", stopKaraokeClock);
   audio.addEventListener("seeking", updateKaraoke);
   audio.addEventListener("seeked", updateKaraoke);
   audio.addEventListener("timeupdate", updateKaraoke);
   window.addEventListener("bhakti:song-change", resetKaraoke);
+  document.addEventListener("visibilitychange", () => {
+    observeReaderChunks();
+    readerClock?.refresh();
+  });
   window.addEventListener("bhakti:lyrics-follow-change", event => {
-    if (event.detail?.enabled) activeArticle()?.scrollIntoView({ behavior: "auto", block: "center" });
+    if (event.detail?.enabled && readerIsVisible()) activeArticle()?.scrollIntoView({ behavior: "auto", block: "center" });
   });
 
   // Seeking is explicit. Event delegation keeps this binding valid when the
@@ -1430,12 +1540,14 @@ function setSong(data) {
   if (!data?.meta || !data?.lines || !data?.sequence || !data?.timings) {
     throw new TypeError("complete song data is required");
   }
+  if (data === mountedSongData && readerRoot === document.getElementById("songRoot")) return;
   PAGE_META = {...data.meta};
   PAGE_LINES = data.lines;
   PAGE_SEQUENCE = data.sequence;
   PAGE_TIMINGS = data.timings;
   selectedTextEdition = null;
   render();
+  mountedSongData = data;
   setupTopControls();
   setupAudioPlayer();
   setupKaraoke();
@@ -1449,6 +1561,6 @@ function mount() {
   setupKaraoke();
 }
 
-window.BHAKTI_READER = Object.freeze({ mount, setSong, snapshotGlobals, playback: getPlaybackController });
+window.BHAKTI_READER = Object.freeze({ mount, setSong, setVisible, snapshotGlobals, playback: getPlaybackController });
 
 document.addEventListener("DOMContentLoaded", mount, { once: true });

@@ -298,8 +298,10 @@ body.queue-open .app-stage { transform: none; }
   padding: clamp(12px, 2.5vh, 26px) 16px calc(16px + env(safe-area-inset-bottom));
 }
 .queue-row {
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 90px;
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr) auto;
+  grid-template-columns: 44px minmax(0, 1fr) 90px;
   align-items: center;
   gap: 12px;
   min-height: 76px;
@@ -324,13 +326,15 @@ body.queue-open .app-stage { transform: none; }
 .queue-row.is-current { background: rgba(244, 234, 208, 0.055); }
 .queue-position { color: rgba(244, 234, 208, 0.54); text-align: center; font: 400 12px/1 Inter, sans-serif; }
 .queue-progress { color: rgba(244, 234, 208, .62); font: 400 12px/1.3 Inter, sans-serif; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.queue-row.is-current .queue-copy { grid-column: 2 / -1; }
+/* Reserve the same title measure for current, history and upcoming rows. */
+.queue-row.is-current .queue-copy { grid-column: 2; }
 .queue-row.is-played .queue-copy { opacity: .64; }
 .queue-row-action > svg { width: 16px; height: 16px; }
 .queue-copy { min-width: 0; }
 .queue-song-title {
-  overflow-wrap: anywhere;
-  font: 400 28px/1.14 "EB Garamond", Georgia, serif;
+  overflow-wrap: break-word;
+  word-break: normal;
+  font: 400 28px/1.25 "EB Garamond", Georgia, serif;
 }
 .queue-credit { margin-top: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: rgba(244, 234, 208, 0.58); font: 400 13px/1.25 Inter, sans-serif; }
 .queue-drag-handle {
@@ -409,7 +413,7 @@ body.queue-open .app-stage { transform: none; }
   }
   .queue-list { padding: 10px 8px calc(14px + env(safe-area-inset-bottom)); }
   .queue-pill { width: 36px; height: 36px; flex-basis: 36px; }
-  .queue-row { grid-template-columns: 38px minmax(0, 1fr) auto; gap: 4px; min-height: 72px; padding: 7px 2px; }
+  .queue-row { grid-template-columns: 38px minmax(0, 1fr) 94px; gap: 4px; min-height: 72px; padding: 7px 2px; }
   .queue-song-title { font-size: 25px; }
   .queue-credit { font-size: 13px; }
   .queue-drag-handle { width: 38px; height: 44px; font-size: 18px; }
@@ -420,7 +424,7 @@ body.queue-open .app-stage { transform: none; }
 
 @media (min-width: 601px) and (max-width: 1100px) {
   .queue-pill { width: 42px; height: 42px; flex-basis: 42px; }
-  .queue-row { grid-template-columns: 48px minmax(0, 1fr) auto; min-height: 98px; padding: 13px 16px; }
+  .queue-row { grid-template-columns: 48px minmax(0, 1fr) 98px; min-height: 98px; padding: 13px 16px; }
   .queue-song-title { font-size: 28px; }
   .queue-credit { font-size: 14px; }
   .queue-drag-handle { width: 46px; height: 46px; font-size: 21px; }
@@ -430,7 +434,7 @@ body.queue-open .app-stage { transform: none; }
 
 @media (min-width: 1101px) and (max-width: 1799px) {
   .queue-pill { width: 42px; height: 42px; flex-basis: 42px; }
-  .queue-row { grid-template-columns: 48px minmax(0, 1fr) auto; min-height: 100px; padding: 14px 18px; }
+  .queue-row { grid-template-columns: 48px minmax(0, 1fr) 98px; min-height: 100px; padding: 14px 18px; }
   .queue-song-title { font-size: 26px; }
   .queue-credit { font-size: 14px; }
   .queue-drag-handle { width: 46px; height: 46px; font-size: 21px; }
@@ -480,7 +484,7 @@ body.queue-open .app-stage { transform: none; }
   .queue-list { width: min(980px, 100%); }
   .queue-sheet-tools { padding: 22px 26px; }
   .queue-credit { font-size: 18px; }
-  .queue-row { min-height: 124px; padding: 18px 26px; grid-template-columns: 60px minmax(0, 1fr) auto; }
+  .queue-row { min-height: 124px; padding: 18px 26px; grid-template-columns: 60px minmax(0, 1fr) 114px; }
   .queue-song-title { font-size: 32px; }
   .queue-drag-handle { width: 54px; height: 54px; font-size: 25px; }
   .queue-row-action { width: 54px; height: 54px; }

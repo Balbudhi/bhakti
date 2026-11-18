@@ -111,22 +111,24 @@ assert.equal(cascade.context.queueState.currentIndex, 2);
 assert.equal(cascade.statuses.at(-1), "No playable songs remain");
 assert.equal(cascade.audio.plays, 0);
 
-// Execute the actual queue renderer. These assertions check generated markup,
-// not browser layout, native focus restoration or touch behavior.
+// Execute the actual queue renderer against a DOM parser/tree; retaining rows
+// cannot be represented by the old write-only innerHTML stub.
 function render(state) {
-  const queueSheet = {
-    innerHTML: "", contains: () => false,
-    querySelector: () => ({scrollTop: 0}),
-  };
+  const { JSDOM } = require("jsdom");
+  const dom = new JSDOM("<!doctype html><body><section></section></body>");
+  const document = dom.window.document;
+  const queueSheet = document.querySelector("section");
   const context = vm.createContext({
-    queueState: state, queueSheet, draggedRow: null,
-    document: {activeElement: null}, updateQueuePlayback() {},
-    escapeHtml: value => String(value ?? ""), playIcon: "", pauseIcon: "",
+    queueState: state, queueSheet, draggedRow: null, document,
+    playback: { isPlaying: () => false, isPending: () => false },
+    escapeHtml: value => String(value ?? ""),
   });
-  const start = appSource.indexOf("  const renderQueueSheet =");
+  const start = appSource.indexOf("  const playIcon =");
   vm.runInContext(appSource.slice(start, appSource.indexOf("  const revealCurrentQueueRow", start)), context);
   vm.runInContext("renderQueueSheet()", context);
-  return queueSheet.innerHTML;
+  const html = queueSheet.innerHTML;
+  dom.window.close();
+  return html;
 }
 const rows = Queue.create({mode: "custom", items: [a, b, a], currentIndex: 1, sessionId: "render"});
 const html = render(rows);

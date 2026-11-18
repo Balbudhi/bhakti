@@ -347,6 +347,14 @@ main {
   transition: background-color 160ms ease;
 }
 
+/* Retain complete accessible rows while skipping offscreen layout/paint. The
+   shared fixed menu is outside these containment boundaries. */
+.song-card {
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 120px;
+}
+.song-card[hidden] { display: none; }
+
 .song-card-link {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

@@ -25,9 +25,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Assemble the published site
+        run: python3 scripts/assemble_public_site.py
       - name: Check player and PWA contracts
         run: |
+          node scripts/test_library_filters.js
           node scripts/test_library_search.js
+          node scripts/test_queue_render.js
+          node scripts/test_queue_drag_performance.js
+          node scripts/test_reader_performance.js
+          node scripts/test_shuffle_worker.js
+          node scripts/test_app_loading.js
+          node scripts/test_all_line_seeks.js
           python3 scripts/test_naming.py
           node scripts/test_player_progress.js
           node scripts/test_player_keyboard.js
@@ -40,14 +50,13 @@ jobs:
           node scripts/test_shuffle_queue_integration.js
           node scripts/test_shuffle_app_integration.js
           node scripts/test_shuffle_assets.js
+          node scripts/test_release_integrity.js
           python3 scripts/audit_shuffle_profiles.py
           node scripts/test_playback.js
           node scripts/test_playback_recovery.js
           node scripts/test_repeat_playback.js
           node scripts/test_view_transitions.js
       - uses: actions/configure-pages@v5
-      - name: Assemble the published site
-        run: python3 scripts/assemble_public_site.py
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

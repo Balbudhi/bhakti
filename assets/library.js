@@ -48,15 +48,22 @@
     || sortKey(left.slug).localeCompare(sortKey(right.slug))
   );
 
-  const matchesSearch = (song, query) => {
-    const queryForms = searchForms(query);
-    if (!queryForms.length) return true;
-    const songForms = searchableValues(song).flatMap(searchForms);
-    // A listener can combine a title, poet, singer or tag in any order.
-    // Keep the existing spelling forms and partial-word matching for typing.
-    return queryForms.some(queryForm => queryForm.split(" ").every(term =>
+  // A loaded release owns immutable catalogue objects. Weak keys let a replaced
+  // catalogue be collected without retaining another full set of search data.
+  const songSearchForms = new WeakMap();
+  const formsForSong = song => {
+    if (!songSearchForms.has(song)) songSearchForms.set(song, searchableValues(song).flatMap(searchForms));
+    return songSearchForms.get(song);
+  };
+  const matchesTerms = (song, queryTerms) => {
+    const songForms = formsForSong(song);
+    return queryTerms.some(terms => terms.every(term =>
       songForms.some(songForm => songForm.includes(term))
     ));
+  };
+  const matchesSearch = (song, query) => {
+    const queryForms = searchForms(query);
+    return !queryForms.length || matchesTerms(song, queryForms.map(form => form.split(" ")));
   };
 
   // Split explicit joint credits only; retain each credited spelling as supplied.
@@ -75,10 +82,11 @@
     // facets. Otherwise unrelated credits can accidentally assemble a person's
     // name, or changing a facet can turn an exact name into such a false match.
     const phraseMatches = queryForms.length ? songs.filter(song => {
-      const songForms = searchableValues(song).flatMap(searchForms);
+      const songForms = formsForSong(song);
       return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
     }) : songs;
-    const searchMatches = phraseMatches.length ? phraseMatches : songs.filter(song => matchesSearch(song, query));
+    const queryTerms = queryForms.map(form => form.split(" "));
+    const searchMatches = phraseMatches.length ? phraseMatches : songs.filter(song => matchesTerms(song, queryTerms));
     return searchMatches.filter(song => {
       const matchesLanguage = !selectedLanguages.size
         || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
@@ -254,6 +262,34 @@
     filters.innerHTML = facets.map(facet => `
       <div class="tag-row" role="group" aria-label="${facet.label}">${filterButton("All", facet.all, true, `All ${facet.label.toLowerCase()}`)}${facet.tags.map(tag => filterButton(tag, facet.kind, false)).join("")}</div>`).join("");
 
+    listRoot.innerHTML = orderedSongs.map(song => `
+        <article class="song-card" data-song-slug="${escapeHtml(song.slug)}">
+          <a class="song-card-link" href="/songs/${encodeURIComponent(song.slug)}/" aria-label="Open ${escapeHtml(song.title)}">
+            <span class="song-copy">
+              <span class="library-song-title">${escapeHtml(song.title)}</span>
+              ${song.singer || song.credit ? `<span class="credit">${escapeHtml(song.singer || song.credit)}</span>` : ""}
+            </span>
+            <span class="tags" aria-label="${escapeHtml([...(song.subjectTags || []), ...(song.languageTags || [])].join(", "))}">
+              ${(song.subjectTags || []).map(tag => `<span class="subject-tag">${escapeHtml(tag)}</span>`).join("")}
+              ${(song.languageTags || []).map(tag => `<span class="language-tag">${escapeHtml(tag)}</span>`).join("")}
+            </span>
+          </a>
+          <button class="song-actions-trigger" type="button" data-queue-choices="${escapeHtml(song.slug)}" aria-haspopup="menu" aria-expanded="false" aria-controls="library-queue-choices" aria-label="Playlist options for ${escapeHtml(song.title)}" title="Playlist options">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+          </button>
+        </article>`).join("") + `<p class="library-empty" hidden>No songs match. Try changing your search or filters.</p>
+          <div class="song-queue-actions" role="menu" aria-label="Playlist options" id="library-queue-choices" hidden>
+            <button class="song-queue-choice" role="menuitem" tabindex="-1" type="button" data-add-to-queue="" data-queue-position="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 5 10 7-10 7zM19 5v14"/></svg>Play next</button>
+            <button class="song-queue-choice" role="menuitem" tabindex="-1" type="button" data-add-to-queue="" data-queue-position="end"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 11h12M4 16h7M17 14v7M13.5 17.5h7"/></svg>Add to end</button>
+          </div>`;
+    const cards = [...listRoot.querySelectorAll(".song-card")];
+    const emptyMessage = listRoot.querySelector(".library-empty");
+    const queueMenu = listRoot.querySelector(".song-queue-actions");
+    const queueChoices = [...queueMenu.querySelectorAll("[role=menuitem]")];
+    let menuTrigger = null;
+    // Index once on mount, before input starts; search never refolds the catalogue.
+    orderedSongs.forEach(formsForSong);
+
     const render = () => {
       const query = search.value.trim();
       visibleSongs = filterSongs(orderedSongs, {
@@ -267,7 +303,7 @@
       filters.querySelectorAll(".tag-filter").forEach(button => {
         const facet = facets.find(item => item.kind === button.dataset.kind || item.all === button.dataset.kind);
         const pressed = button.dataset.kind === facet.all ? !facet.selected.size : facet.selected.has(button.dataset.tag);
-        button.setAttribute("aria-pressed", String(pressed));
+        if (button.getAttribute("aria-pressed") !== String(pressed)) button.setAttribute("aria-pressed", String(pressed));
       });
       const selections = facets.flatMap(facet => [...facet.selected]);
       if (filterCount) {
@@ -278,26 +314,12 @@
         ? `Filters: ${selections.join(" · ")}` : "Filter by subject, language, poet or singer";
       closeQueueChoices();
 
-      listRoot.innerHTML = visibleSongs.map(song => `
-        <article class="song-card" data-song-slug="${escapeHtml(song.slug)}">
-          <a class="song-card-link" href="/songs/${encodeURIComponent(song.slug)}/" aria-label="Open ${escapeHtml(song.title)}">
-            <span class="song-copy">
-              <span class="library-song-title">${escapeHtml(song.title)}</span>
-              ${song.singer || song.credit ? `<span class="credit">${escapeHtml(song.singer || song.credit)}</span>` : ""}
-            </span>
-            <span class="tags" aria-label="${escapeHtml([...(song.subjectTags || []), ...(song.languageTags || [])].join(", "))}">
-              ${(song.subjectTags || []).map(tag => `<span class="subject-tag">${escapeHtml(tag)}</span>`).join("")}
-              ${(song.languageTags || []).map(tag => `<span class="language-tag">${escapeHtml(tag)}</span>`).join("")}
-            </span>
-          </a>
-          <button class="song-actions-trigger" type="button" data-queue-choices="${escapeHtml(song.slug)}" aria-haspopup="menu" aria-expanded="false" aria-controls="queue-choices-${escapeHtml(song.slug)}" aria-label="Playlist options for ${escapeHtml(song.title)}" title="Playlist options">
-            <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
-          </button>
-          <div class="song-queue-actions" role="menu" aria-label="Playlist options for ${escapeHtml(song.title)}" id="queue-choices-${escapeHtml(song.slug)}" hidden>
-            <button class="song-queue-choice" role="menuitem" tabindex="-1" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 5 10 7-10 7zM19 5v14"/></svg>Play next</button>
-            <button class="song-queue-choice" role="menuitem" tabindex="-1" type="button" data-add-to-queue="${escapeHtml(song.slug)}" data-queue-position="end"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 11h12M4 16h7M17 14v7M13.5 17.5h7"/></svg>Add to end</button>
-          </div>
-        </article>`).join("") || '<p class="library-empty">No songs match. Try changing your search or filters.</p>';
+      const visibleSlugs = new Set(visibleSongs.map(song => song.slug));
+      for (const card of cards) {
+        const hidden = !visibleSlugs.has(card.dataset.songSlug);
+        if (card.hidden !== hidden) card.hidden = hidden;
+      }
+      emptyMessage.hidden = visibleSongs.length > 0;
 
       if (shuffleButton) {
         shuffleButton.disabled = !visibleSongs.length;
@@ -334,17 +356,21 @@
       detail: { songs: [...visibleSongs] },
     })));
     const closeQueueChoices = ({ returnFocus = false } = {}) => {
-      const trigger = listRoot.querySelector('[data-queue-choices][aria-expanded="true"]');
+      const trigger = menuTrigger;
       if (!trigger) return;
       trigger.setAttribute("aria-expanded", "false");
-      const menu = trigger.closest(".song-card").querySelector(".song-queue-actions");
+      const menu = queueMenu;
       const restoreFocus = returnFocus || menu.contains(document.activeElement);
       menu.hidden = true;
+      menuTrigger = null;
       if (restoreFocus) trigger.focus({preventScroll: true});
     };
     const openQueueChoices = (trigger, last = false) => {
       closeQueueChoices();
-      const menu = trigger.closest(".song-card").querySelector(".song-queue-actions");
+      const menu = queueMenu;
+      menuTrigger = trigger;
+      menu.setAttribute("aria-label", trigger.getAttribute("aria-label"));
+      queueChoices.forEach(choice => { choice.dataset.addToQueue = trigger.dataset.queueChoices; });
       trigger.setAttribute("aria-expanded", "true");
       menu.hidden = false;
       const anchor = trigger.getBoundingClientRect();
@@ -392,7 +418,7 @@
         choices[next].focus();
       }
       if (menu && event.key === "Tab") closeQueueChoices({returnFocus: true});
-      if (event.key === "Escape" && event.target.closest(".song-card")) {
+      if (event.key === "Escape" && (menu || event.target.closest(".song-card"))) {
         event.preventDefault?.();
         closeQueueChoices({ returnFocus: true });
       }
