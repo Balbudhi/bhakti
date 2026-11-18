@@ -382,7 +382,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahālakṣmiya",
-        "gloss": "of Mahālakṣmī",
+        "gloss": "of Mahālakṣmī; Lakṣmī means “fortune” or “prosperity”; mahā means “great”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1468,7 +1468,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅgana",
-        "gloss": "of Lord Ranga",
+        "gloss": "of Raṅga, Viṣṇu/Kṛṣṇa, Lakṣmī’s divine consort",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1480,7 +1480,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandara",
-        "gloss": "part of the divine name Purandara Viṭṭhala",
+        "gloss": "part of the divine name Purandara Viṭṭhala; Purandara means “destroyer of strongholds”",
         "concept_key": "",
         "preserve_in_english": false
       },

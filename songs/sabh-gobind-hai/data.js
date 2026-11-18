@@ -100,7 +100,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobindu",
-        "gloss": "A name of Kṛṣṇa/Viṣṇu with traditional meanings including finder of the earth, keeper of cattle, and one known through Vedic speech.",
+        "gloss": "Gobind, the divine Lord who sustains the earth; Kṛṣṇa’s name as finder and keeper of cattle",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -148,7 +148,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "gobind",
-        "gloss": "A name of Kṛṣṇa/Viṣṇu with traditional meanings including finder of the earth, keeper of cattle, and one known through Vedic speech.",
+        "gloss": "Gobind, the divine Lord who sustains the earth; Kṛṣṇa’s name as finder and keeper of cattle",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1114,7 +1114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
+        "gloss": "Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1318,7 +1318,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "a Sikh name for God; an invocation of wonder and praise",
+        "gloss": "a Sikh name for God; an invocation of wonder and praise; Vāhigurū means “wondrous teacher”, the divine guide",
         "concept_key": "",
         "preserve_in_english": false
       }

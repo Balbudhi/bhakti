@@ -689,7 +689,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandaraviṭhṭhala",
-        "gloss": "the poet’s signature name for the Lord worshipped as Viṭṭhala"
+        "gloss": "the poet’s signature name for the Lord worshipped as Viṭṭhala; Purandara means “destroyer of strongholds”"
       },
       {
         "roman": "ennanu",

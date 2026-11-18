@@ -267,7 +267,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīharī",
-        "gloss": "O revered Lord Viṣṇu"
+        "gloss": "O revered Lord Viṣṇu; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "māgaṇe",
@@ -275,7 +275,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīharī",
-        "gloss": "O revered Lord Viṣṇu"
+        "gloss": "O revered Lord Viṣṇu; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "nāhī",
@@ -505,7 +505,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "janārdan",
-        "gloss": "Viṣṇu/Kṛṣṇa, the deity present among people"
+        "gloss": "Janārdana, the Lord to whom people pray; Viṣṇu/Kṛṣṇa, whose presence is recognized here in all people"
       },
       {
         "roman": "janī",
@@ -513,7 +513,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "janārdan",
-        "gloss": "Viṣṇu/Kṛṣṇa, the deity present among people"
+        "gloss": "Janārdana, the Lord to whom people pray; Viṣṇu/Kṛṣṇa, whose presence is recognized here in all people"
       },
       {
         "roman": "aisā",

@@ -223,7 +223,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -531,7 +531,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -631,7 +631,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -702,7 +702,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },

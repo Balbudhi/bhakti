@@ -3138,7 +3138,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramākāntā",
-        "gloss": "Beloved of Lakshmi; Lord Vishnu",
+        "gloss": "beloved of Ramā, the delightful Lakṣmī, as fortune and splendour; Lord Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3512,7 +3512,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "Lord Krishna",
+        "gloss": "Lord Kṛṣṇa, the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4141,7 +4141,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rakhumābaī",
-        "gloss": "consort of Vithoba",
+        "gloss": "Rakhumābāī, Rukmiṇī the gold-adorned goddess; consort of Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4331,7 +4331,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumanta",
-        "gloss": "Hanuman (divine attendant-devotee)",
+        "gloss": "Hanumān, the one with prominent jaws; Rāma’s divine attendant and devotee",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4764,7 +4764,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramādhava",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Ramādhava, husband of Ramā, the delightful Lakṣmī who embodies fortune and splendour; Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7305,7 +7305,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rakhumābaī",
-        "gloss": "Rukmini, chief consort of Vitthala",
+        "gloss": "Rakhumābāī, Rukmiṇī the gold-adorned goddess; chief consort of Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8303,7 +8303,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rukmiṇīvara",
-        "gloss": "Rukmini's consort (Krishna / Vithoba)",
+        "gloss": "consort of Rukmiṇī, the gold-adorned goddess; Kṛṣṇa/Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8778,7 +8778,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Keśavarāja",
-        "gloss": "Lord Keshav; King Keshav (Vithoba)",
+        "gloss": "King Keśava, the fine-haired lord, here Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9022,7 +9022,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Dattarāja",
-        "gloss": "King Datta; Lord Dattatreya",
+        "gloss": "King Datta, the given one; Lord Dattātreya",
         "concept_key": "",
         "preserve_in_english": false
       },

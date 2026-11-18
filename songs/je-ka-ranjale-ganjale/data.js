@@ -615,7 +615,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagavantācyā",
-        "gloss": "of the Lord; genitive agreeing with plural embodiments"
+        "gloss": "of the Lord; genitive agreeing with plural embodiments; The title means “possessing good fortune or glory”; hence, the blessed Lord."
       },
       {
         "roman": "mūrtī",

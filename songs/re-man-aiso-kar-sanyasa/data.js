@@ -1075,7 +1075,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobindah",
-        "gloss": "Gobind; divine name, sustainer of living beings"
+        "gloss": "Gobind, the divine Lord and sustainer of the earth and its beings, addressed here"
       },
       {
         "roman": "kripā",
@@ -1561,7 +1561,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "divine name"
+        "gloss": "divine name; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "dāmodar",
@@ -1569,7 +1569,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mādhavah",
-        "gloss": "Madhav; divine name associated with Vishnu and Krishna"
+        "gloss": "Madhav; divine name associated with Vishnu and Krishna; Mādhava means “descendant of Madhu”, a lineage-name of Kṛṣṇa."
       }
     ],
     "sourceWords": [

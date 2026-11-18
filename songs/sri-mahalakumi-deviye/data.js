@@ -102,7 +102,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śakra",
-        "gloss": "the lord of the gods, Indra"
+        "gloss": "the lord of the gods, Indra; Śakra means “mighty” or “powerful”"
       },
       {
         "roman": "sura",
@@ -1128,7 +1128,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sirivijayaviṭṭhalarēya",
-        "gloss": "the glorious king Viṭṭhala, the poet’s signature form of Viṣṇu"
+        "gloss": "the glorious king Viṭṭhala, the poet’s signature form of Viṣṇu; Vijaya means “victory”; Viṭṭhala is Kṛṣṇa’s form worshipped at Paṇḍharpur"
       },
       {
         "roman": "endendige",

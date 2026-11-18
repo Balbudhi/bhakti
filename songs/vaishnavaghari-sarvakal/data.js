@@ -212,7 +212,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmanām",
-        "gloss": "Rāma’s name"
+        "gloss": "Rāma’s name; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "nāṇeṃ",
@@ -842,7 +842,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "harī",
-        "gloss": "Viṣṇu, invoked here amid praise of Viṭṭhal"
+        "gloss": "Viṣṇu, invoked here amid praise of Viṭṭhal; Hari is “the remover” of evil and suffering"
       }
     ],
     "nameTable": false,

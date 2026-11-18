@@ -115,7 +115,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -198,7 +198,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -351,7 +351,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -422,7 +422,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -535,7 +535,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -553,7 +553,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -577,7 +577,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1145,7 +1145,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1168,7 +1168,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "gaṇeśa",
-        "gloss": "elephant-headed remover of obstacles",
+        "gloss": "elephant-headed remover of obstacles; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups.",
         "concept_key": "",
         "preserve_in_english": false
       }

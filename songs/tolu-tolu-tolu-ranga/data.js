@@ -182,7 +182,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bālakṛṣṇane",
-        "gloss": "O child Kṛṣṇa"
+        "gloss": "O child Kṛṣṇa, the dark-hued one"
       },
       {
         "roman": "tōḷannāḍe",
@@ -1136,7 +1136,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandaraviṭhala",
-        "gloss": "the deity Viṭṭhala addressed in Purandaradāsa’s signature"
+        "gloss": "Purandara Viṭṭhala, the deity addressed in Purandaradāsa’s signature; Purandara is destroyer of strongholds"
       },
       {
         "roman": "tōḷannāḍe",

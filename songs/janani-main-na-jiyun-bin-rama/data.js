@@ -232,13 +232,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -333,7 +333,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -404,7 +404,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -540,7 +540,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -552,7 +552,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -564,7 +564,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -629,19 +629,19 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "lakhana",
-        "gloss": "Lakshmana",
+        "gloss": "Lakshmana, Rāma’s younger brother; Lakṣmaṇa means “endowed with auspicious marks”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "siyā",
-        "gloss": "Sita",
+        "gloss": "Sita, Rāma’s consort; Sītā means “furrow”, the line made by a plough.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -795,7 +795,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -878,7 +878,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1356,7 +1356,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1368,7 +1368,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1380,7 +1380,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },

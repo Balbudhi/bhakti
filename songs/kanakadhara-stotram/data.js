@@ -46,7 +46,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hareḥ",
-        "gloss": "of Hari (Viṣṇu)"
+        "gloss": "of Hari, Viṣṇu as the remover of evil and sin"
       },
       {
         "roman": "pulakabhūṣaṇamāśrayantī",
@@ -380,7 +380,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mukundam",
-        "gloss": "Mukunda (Viṣṇu)"
+        "gloss": "Mukunda, Viṣṇu as giver of liberation"
       }
     ],
     "sourceWords": [
@@ -890,7 +890,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manmathena",
-        "gloss": "by Manmatha, the god of love"
+        "gloss": "by Manmatha, the mind-churner, the god of love"
       }
     ],
     "sourceWords": [
@@ -1082,7 +1082,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "indīvarodarasahodaramindirāyāḥ",
-        "gloss": "of Indirā (Lakṣmī), akin to the heart of a blue lotus"
+        "gloss": "of Indirā, splendour personified as Lakṣmī, akin to the heart of a blue lotus"
       }
     ],
     "sourceWords": [
@@ -1352,7 +1352,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nārāyaṇapraṇayinīnayanāmbuvāhaḥ",
-        "gloss": "the eye-cloud of Nārāyaṇa’s beloved"
+        "gloss": "the eye-cloud of Nārāyaṇa’s beloved; Nārāyaṇa is Viṣṇu, refuge of living beings, who rests upon the primordial waters"
       }
     ],
     "sourceWords": [
@@ -1746,7 +1746,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇavallabhāyai",
-        "gloss": "to the beloved of Nārāyaṇa"
+        "gloss": "to the beloved of Nārāyaṇa, Viṣṇu, refuge of living beings, who rests upon the primordial waters"
       }
     ],
     "sourceWords": [
@@ -1936,7 +1936,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇorurasi",
-        "gloss": "on Viṣṇu’s chest"
+        "gloss": "on the chest of Viṣṇu, the all-pervading one"
       },
       {
         "roman": "sthitāyai",
@@ -1976,7 +1976,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmyai",
-        "gloss": "to Lakṣmī"
+        "gloss": "to Lakṣmī, fortune and prosperity personified"
       },
       {
         "roman": "kamalālayāyai",
@@ -2016,7 +2016,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dāmodaravallabhāyai",
-        "gloss": "to the beloved of Dāmodara (Kṛṣṇa/Viṣṇu)"
+        "gloss": "to the beloved of Dāmodara, Kṛṣṇa with a rope round his waist, bound by Yaśodā"
       }
     ],
     "sourceWords": [
@@ -2406,7 +2406,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "murārihṛdayeśvarīṃ",
-        "gloss": "the sovereign of Murāri’s heart"
+        "gloss": "the mistress of the heart of Murāri, Kṛṣṇa/Viṣṇu as Mura’s enemy"
       },
       {
         "roman": "bhaje",
@@ -2496,7 +2496,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harivallabhe",
-        "gloss": "O beloved of Hari"
+        "gloss": "O beloved of Hari, the remover of evil and sin"
       },
       {
         "roman": "manojñe",
@@ -2840,7 +2840,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ramām",
-        "gloss": "Ramā (Lakṣmī)"
+        "gloss": "Ramā, the delightful goddess, fortune and splendour personified as Lakṣmī"
       }
     ],
     "sourceWords": [

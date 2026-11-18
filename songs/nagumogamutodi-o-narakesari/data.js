@@ -266,7 +266,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kamalāgravāmāṅka",
-        "gloss": "with the goddess Lakṣmī, called Kamalā, at the front of your left lap"
+        "gloss": "with the goddess Lakṣmī, called Kamalā, at the front of your left lap; Kamalā means “the lotus goddess”, a name of Lakṣmī"
       },
       {
         "roman": "kanaka",
@@ -476,7 +476,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Viṣṇu, addressed as the remover"
+        "gloss": "Viṣṇu, addressed as Hari; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "namō",

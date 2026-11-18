@@ -341,7 +341,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmākhyaṁ",
-        "gloss": "known by the name of Rāma",
+        "gloss": "known by the name of Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -365,7 +365,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hariṁ",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "Lord Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -919,7 +919,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītahi",
-        "gloss": "Sītā",
+        "gloss": "Sītā; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1437,7 +1437,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṃtā।",
-        "gloss": "Hanuman",
+        "gloss": "Hanuman; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1586,7 +1586,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1752,7 +1752,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hanūmāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1847,7 +1847,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2335,7 +2335,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2371,7 +2371,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2669,7 +2669,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3520,7 +3520,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3657,7 +3657,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -4163,7 +4163,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanūmāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7728,7 +7728,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rama",
+        "gloss": "of Rama; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8311,7 +8311,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8430,7 +8430,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8954,7 +8954,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "of Hari [God]",
+        "gloss": "of Hari [God]; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9037,7 +9037,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmāyudha",
-        "gloss": "with Rāma's weapons [bow and arrow]",
+        "gloss": "with Rāma's weapons [bow and arrow]; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9495,13 +9495,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10037,7 +10037,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "Lord Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10168,7 +10168,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmu",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10275,7 +10275,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṁta",
-        "gloss": "Hanuman",
+        "gloss": "Hanuman; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10293,7 +10293,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10912,7 +10912,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṁtā.",
-        "gloss": "O Hanumān",
+        "gloss": "O Hanumān; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10924,7 +10924,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harikṛpā",
-        "gloss": "grace of Hari (Rāma)",
+        "gloss": "grace of Hari (Rāma); Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11900,7 +11900,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12138,7 +12138,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṁta",
-        "gloss": "Hanumān",
+        "gloss": "Hanumān; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12174,7 +12174,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jānakī",
-        "gloss": "Sītā",
+        "gloss": "Sītā; Jānakī means “Janaka’s daughter”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12418,7 +12418,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12805,7 +12805,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13275,7 +13275,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītahi",
-        "gloss": "to Sita",
+        "gloss": "to Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13656,7 +13656,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "baidehī.",
-        "gloss": "Vaidehi [Sita]",
+        "gloss": "Vaidehi [Sita]; Vaidehī means “the princess of Videha”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13906,7 +13906,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jānakī.",
-        "gloss": "Sita",
+        "gloss": "Sita; Jānakī means “Janaka’s daughter”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14156,7 +14156,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmahi",
-        "gloss": "Rāma",
+        "gloss": "Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14352,7 +14352,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15097,7 +15097,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15335,7 +15335,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītahi",
-        "gloss": "Sītā",
+        "gloss": "Sītā; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15644,7 +15644,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītahi",
-        "gloss": "to Sita",
+        "gloss": "to Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15775,7 +15775,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15894,7 +15894,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītahi",
-        "gloss": "Sita",
+        "gloss": "Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16382,7 +16382,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "for Sita",
+        "gloss": "for Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16757,7 +16757,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17793,7 +17793,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18442,7 +18442,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā.",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18787,7 +18787,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rama",
+        "gloss": "of Rama; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19132,7 +19132,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19180,7 +19180,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -19251,7 +19251,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmacandra",
-        "gloss": "of Ramachandra",
+        "gloss": "of Rāmacandra, “moon-like Rāma”, the hero of the Rāmāyaṇa; Rāma means “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19281,7 +19281,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "of Sita",
+        "gloss": "of Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19644,7 +19644,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṃta",
-        "gloss": "Hanuman",
+        "gloss": "Hanuman; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19763,7 +19763,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rama",
+        "gloss": "of Rama; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19924,7 +19924,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20358,7 +20358,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "harijana",
-        "gloss": "servant of Hari; devotee of God",
+        "gloss": "servant of Hari; devotee of God; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20495,7 +20495,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "O Hanuman",
+        "gloss": "O Hanuman; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -21245,7 +21245,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā.",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -21537,7 +21537,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -21858,7 +21858,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -21876,7 +21876,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā.",
-        "gloss": "O Sita",
+        "gloss": "O Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -23002,7 +23002,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -23513,7 +23513,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmabāna",
-        "gloss": "Rama's arrows",
+        "gloss": "Rama's arrows; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -23686,7 +23686,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "by Rama",
+        "gloss": "by Rama; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24376,7 +24376,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24846,7 +24846,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmapriya",
-        "gloss": "dear to Rāma; beloved of Rāma",
+        "gloss": "dear to Rāma; beloved of Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -25132,7 +25132,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -26632,7 +26632,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -28292,7 +28292,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prabhañjana",
-        "gloss": "of the wind-god [Prabhañjana]",
+        "gloss": "of the wind-god [Prabhañjana]; Prabhañjana means “breaking to pieces”, a name for the storm wind",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -28839,7 +28839,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī.",
-        "gloss": "O Bhavānī [Pārvatī].",
+        "gloss": "O Bhavānī [Pārvatī]; Bhavānī means “Bhava’s consort”; Bhava is Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -30375,13 +30375,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "Lord Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "īsā.",
-        "gloss": "Shiva the dissolver).",
+        "gloss": "Śiva, the dissolver; Īśa means “lord”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -30738,7 +30738,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hara",
-        "gloss": "of Hara (Shiva)",
+        "gloss": "of Hara (Shiva); Hara means “the remover” or “destroyer”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -32708,7 +32708,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rāma",
+        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -32988,7 +32988,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rāma",
+        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33250,7 +33250,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "from Rāma",
+        "gloss": "from Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33542,7 +33542,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33655,7 +33655,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "biṣnu",
-        "gloss": "Viṣṇus",
+        "gloss": "Viṣṇus; Viṣṇu is “the all-pervading one”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33691,7 +33691,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma",
+        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33857,7 +33857,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -34363,7 +34363,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -35614,7 +35614,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sārada",
-        "gloss": "Goddess Sarasvati",
+        "gloss": "Śāradā, Sarasvatī, the goddess of speech and learning",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -36227,7 +36227,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumantā.",
-        "gloss": "Hanumān, Rāma’s monkey messenger",
+        "gloss": "Hanumān, Rāma’s monkey messenger; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -36435,7 +36435,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "by Hari (Rama / Supreme Lord)",
+        "gloss": "by Hari (Rama / Supreme Lord); Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -39078,7 +39078,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -39417,7 +39417,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -39554,7 +39554,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmacandra",
-        "gloss": "of Rāmacandra",
+        "gloss": "of Rāmacandra, “moon-like Rāma”, the hero of the Rāmāyaṇa; Rāma means “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -40363,7 +40363,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -40792,7 +40792,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -40905,7 +40905,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -41143,7 +41143,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -42417,7 +42417,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -43863,7 +43863,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -44214,7 +44214,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -44500,7 +44500,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṁta",
-        "gloss": "Hanumān",
+        "gloss": "Hanumān; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -45328,7 +45328,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṁta.",
-        "gloss": "Hanuman",
+        "gloss": "Hanuman; Rāma’s monkey devotee; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -45697,7 +45697,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaurīsā",
-        "gloss": "Shiva",
+        "gloss": "Shiva; Gaurīśa means “Gaurī’s lord”; Gaurī is Śiva’s consort",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -45798,7 +45798,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁkara.",
-        "gloss": "Shankara (Shiva)",
+        "gloss": "Shankara (Shiva); Śaṅkara means “bringing well-being” or “beneficent”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -46185,7 +46185,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -46923,7 +46923,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī.",
-        "gloss": "O Bhavānī",
+        "gloss": "O Bhavānī; Bhavānī means “Bhava’s consort”; Bhava is Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -47006,13 +47006,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "umā",
-        "gloss": "O Umā",
+        "gloss": "O Umā, Pārvatī, Śiva’s consort and listener in this narration",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma",
+        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -48101,7 +48101,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -48220,7 +48220,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -48351,7 +48351,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -49505,7 +49505,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -50969,7 +50969,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "Lord Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -51374,7 +51374,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -51493,7 +51493,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -51529,7 +51529,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sambhu",
-        "gloss": "Śiva",
+        "gloss": "Śiva; Śambhu means “bringing happiness or well-being”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -51606,7 +51606,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "-rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -54475,7 +54475,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -55082,7 +55082,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -56761,7 +56761,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -56939,7 +56939,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sīta",
-        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa",
+        "gloss": "Rāma’s wife and heroine of the Rāmāyaṇa; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -56951,7 +56951,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -58077,7 +58077,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmu",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -58297,7 +58297,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmu",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -58642,7 +58642,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī.",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "the Goddess; Śakti as the source of being; Bhavānī means “Bhava’s consort”; Bhava is Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -59332,7 +59332,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hara",
-        "gloss": "Shiva",
+        "gloss": "Shiva; Hara means “the remover” or “destroyer”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -60653,7 +60653,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānā.",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -61778,7 +61778,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lachimanu",
-        "gloss": "Lakṣmaṇa",
+        "gloss": "Lakṣmaṇa; Rāma’s younger brother; Lakṣmaṇa means “endowed with auspicious marks”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -62105,7 +62105,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanū",
-        "gloss": "the Vānara hero and Rāma’s devoted envoy",
+        "gloss": "the Vānara hero and Rāma’s devoted envoy; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -62426,7 +62426,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -64581,7 +64581,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -65284,7 +65284,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rāma",
+        "gloss": "O Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -65820,7 +65820,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rāma",
+        "gloss": "O Rāma; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -65921,7 +65921,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siba",
-        "gloss": "Śiva",
+        "gloss": "Śiva; Śiva means “auspicious”",
         "concept_key": "",
         "preserve_in_english": false
       },

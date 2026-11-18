@@ -586,7 +586,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "Rāma, the delightful one, the king of Raghu’s lineage praised here"
       }
     ],
     "sourceWords": [

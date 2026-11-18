@@ -41,11 +41,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītārām",
-        "gloss": "paired invocation of Sītā and Rāma"
+        "gloss": "paired invocation of Sītā and Rāma; The paired names mean “furrow” (Sītā) and “delightful” (Rāma)."
       },
       {
         "roman": "sītārām",
-        "gloss": "paired invocation of Sītā and Rāma"
+        "gloss": "paired invocation of Sītā and Rāma; The paired names mean “furrow” (Sītā) and “delightful” (Rāma)."
       }
     ],
     "sourceWords": [
@@ -359,7 +359,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "king of Ayodhyā and husband of Sītā"
+        "gloss": "king of Ayodhyā and husband of Sītā; Rāma means “pleasing” or “delightful”."
       }
     ],
     "sourceWords": [
@@ -511,7 +511,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hanumān",
-        "gloss": "devotee of Rāma and son of the Wind"
+        "gloss": "devotee of Rāma and son of the Wind; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "so",
@@ -623,7 +623,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "king of Ayodhyā and husband of Sītā"
+        "gloss": "king of Ayodhyā and husband of Sītā; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "siyāvar",
@@ -715,7 +715,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmcandra",
-        "gloss": "revered king of Ayodhyā, husband of Sītā"
+        "gloss": "revered king of Ayodhyā, husband of Sītā; Rāmacandra means “Rāma-moon”, comparing Rāma to the moon."
       },
       {
         "roman": "kī",
@@ -765,7 +765,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumān",
-        "gloss": "devotee of Rāma and son of the Wind"
+        "gloss": "devotee of Rāma and son of the Wind; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "kī",
@@ -943,7 +943,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "king of Ayodhyā and husband of Sītā"
+        "gloss": "king of Ayodhyā and husband of Sītā; Rāma means “pleasing” or “delightful”."
       }
     ],
     "sourceWords": [

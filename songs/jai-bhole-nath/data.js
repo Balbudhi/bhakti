@@ -1957,7 +1957,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śivāya",
-        "gloss": "unto Shiva (masculine dative singular)",
+        "gloss": "unto Śiva, the auspicious one; dative singular",
         "concept_key": "",
         "preserve_in_english": false
       }

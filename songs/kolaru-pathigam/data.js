@@ -3763,7 +3763,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mālum",
-        "gloss": "Viṣṇu (Māl) also",
+        "gloss": "Māl, the Great One, Viṣṇu, also",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1071,7 +1071,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīm̐",
-        "gloss": "Sai",
+        "gloss": "Sāī, the revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1309,7 +1309,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīm̐",
-        "gloss": "Sai",
+        "gloss": "Sāī, the revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },

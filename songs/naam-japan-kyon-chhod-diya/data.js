@@ -997,7 +997,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagvān",
-        "gloss": "Lord / God",
+        "gloss": "Lord / God; The title means “possessing good fortune or glory”; hence, the blessed Lord.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1056,13 +1056,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagvān",
-        "gloss": "Lord / God",
+        "gloss": "Lord / God; The title means “possessing good fortune or glory”; hence, the blessed Lord.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhagvān",
-        "gloss": "Lord / God",
+        "gloss": "Lord / God; The title means “possessing good fortune or glory”; hence, the blessed Lord.",
         "concept_key": "",
         "preserve_in_english": false
       },

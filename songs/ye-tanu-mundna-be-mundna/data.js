@@ -1000,7 +1000,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },

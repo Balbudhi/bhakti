@@ -359,7 +359,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "haribola",
-        "gloss": "the chant of 'Hari'",
+        "gloss": "the chant “Haribol”: call out Hari, the remover of evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -567,7 +567,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kamaḷāra",
-        "gloss": "of Kamala (Goddess Lakshmi)",
+        "gloss": "of Kamalā, the lotus-bearing goddess Lakṣmī, who embodies prosperity",
         "concept_key": "",
         "preserve_in_english": false
       },

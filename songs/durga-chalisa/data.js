@@ -1077,7 +1077,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "deity who preserves cosmic order; Viṣṇu is “the all-pervading one”, present throughout creation.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1526,7 +1526,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Nārāyaṇa, Lord Viṣṇu, refuge of living beings, who rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1855,13 +1855,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mātaṅgī",
-        "gloss": "Mahavidya Goddess of wisdom and arts",
+        "gloss": "Mahavidya Goddess of wisdom and arts; Mātaṅgī means “daughter of the sage Mataṅga”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dhūmāvati",
-        "gloss": "Mahavidya Goddess of cosmic dissolution",
+        "gloss": "Mahavidya Goddess of cosmic dissolution; Dhūmāvatī means “smoke-coloured”, the goddess whose complexion resembles smoke.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2747,7 +2747,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kālikā",
-        "gloss": "of Kalika / Kali",
+        "gloss": "of Kalika / Kali; Kālikā, a form of Kālī, evokes blackness or dark colour.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3130,7 +3130,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bāsava",
-        "gloss": "of Indra (Vasava)",
+        "gloss": "of Indra (Vasava); Vāsava means “of the Vasus”; Indra bears the name as their chief.",
         "concept_key": "",
         "preserve_in_english": false
       },

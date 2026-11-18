@@ -74,7 +74,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Lord Viṣṇu; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -133,7 +133,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Lord Viṣṇu; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1394,7 +1394,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "Lord Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1495,7 +1495,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "Lord Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -102,7 +102,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī̃",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -280,7 +280,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī̃",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -464,7 +464,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī̃",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1259,7 +1259,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī̃",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       }

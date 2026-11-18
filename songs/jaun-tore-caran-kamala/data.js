@@ -168,7 +168,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gōvind",
-        "gloss": "go, “cow” + √vid, “find/know”; finder of cows, epithet of Kṛṣṇa",
+        "gloss": "Govind, “finder of cattle”; Kṛṣṇa, the cowherd Lord and protector",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -64,7 +64,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, also the name of the Rāmāyaṇa’s hero, invoked here as the divine presence; the name means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -265,7 +265,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, also the name of the Rāmāyaṇa’s hero, invoked here as the divine presence; the name means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -366,7 +366,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, also the name of the Rāmāyaṇa’s hero, invoked here as the divine presence; the name means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -485,7 +485,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, also the name of the Rāmāyaṇa’s hero, invoked here as the divine presence; the name means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -888,7 +888,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, also the name of the Rāmāyaṇa’s hero, invoked here as the divine presence; the name means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -912,7 +912,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari; the Divine",
+        "gloss": "Lord Hari; the Divine; Hari is the remover of evil and sin.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1031,7 +1031,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, also the name of the Rāmāyaṇa’s hero, invoked here as the divine presence; the name means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1055,7 +1055,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari; the Divine",
+        "gloss": "Lord Hari; the Divine; Hari is the remover of evil and sin.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1120,7 +1120,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Lord Hari; the Divine",
+        "gloss": "Lord Hari; the Divine; Hari is the remover of evil and sin.",
         "concept_key": "",
         "preserve_in_english": false
       },

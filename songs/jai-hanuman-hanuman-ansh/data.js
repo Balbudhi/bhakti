@@ -174,7 +174,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Sītā’s husband"
+        "gloss": "Sītā’s husband; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "kā",
@@ -382,7 +382,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "Sītā’s husband"
+        "gloss": "Sītā’s husband; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "ke",
@@ -442,7 +442,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śiv",
-        "gloss": "the deity whose embodied form Hanumān is called here"
+        "gloss": "the deity whose embodied form Hanumān is called here; Śiva means “auspicious” or “beneficent”."
       },
       {
         "roman": "ke",
@@ -510,7 +510,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bhagavan",
-        "gloss": "O Lord; direct address"
+        "gloss": "O Lord; direct address; The title means “possessing good fortune or glory”; hence, the blessed Lord."
       }
     ],
     "sourceWords": [
@@ -662,7 +662,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bhagavān",
-        "gloss": "Lord; addressed directly"
+        "gloss": "Lord; addressed directly; The title means “possessing good fortune or glory”; hence, the blessed Lord."
       }
     ],
     "sourceWords": [
@@ -772,7 +772,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumān",
-        "gloss": "the devotee of Rāma addressed here"
+        "gloss": "the devotee of Rāma addressed here; Hanumān means “having prominent jaws”."
       }
     ],
     "sourceWords": [
@@ -826,7 +826,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumān",
-        "gloss": "Rāma’s devotee"
+        "gloss": "Rāma’s devotee; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "jai",
@@ -834,7 +834,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumān",
-        "gloss": "Rāma’s devotee"
+        "gloss": "Rāma’s devotee; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "Kaṣṭoṃ",
@@ -916,7 +916,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumān",
-        "gloss": "Rāma’s devotee"
+        "gloss": "Rāma’s devotee; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "jai",
@@ -924,7 +924,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumān",
-        "gloss": "Rāma’s devotee"
+        "gloss": "Rāma’s devotee; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "Svīkāro",
@@ -1320,7 +1320,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bhagavān",
-        "gloss": "Lord; direct address"
+        "gloss": "Lord; direct address; The title means “possessing good fortune or glory”; hence, the blessed Lord."
       }
     ],
     "sourceWords": [
@@ -1356,7 +1356,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mahārudrā",
-        "gloss": "O great Rudra; vocative title linking Hanumān to Śiva"
+        "gloss": "O great Rudra; vocative title linking Hanumān to Śiva; Rudra is “the roaring one”."
       },
       {
         "roman": "vajra",
@@ -1364,7 +1364,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumān",
-        "gloss": "Rāma’s devotee; son of the Wind"
+        "gloss": "Rāma’s devotee; son of the Wind; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "Mārutī",

@@ -629,7 +629,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Bāsudeba",
-        "gloss": "Vasudeva (Lord Krishna / Vishnu)",
+        "gloss": "Vasudeva (Lord Krishna / Vishnu); Vāsudeva means “son or descendant of Vasudeva”; it is Kṛṣṇa’s patronymic.",
         "concept_key": "",
         "preserve_in_english": false
       }

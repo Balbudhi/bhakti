@@ -38,7 +38,7 @@
         "Urdu"
       ],
       "maxLines": 539,
-      "maxTextBytes": 788040,
+      "maxTextBytes": 793857,
       "sourceStatus": [
         "reviewed",
         "audio-reviewed"
@@ -47,6 +47,15 @@
         "reviewed",
         "gloss-derived literal",
         "word-gloss-reviewed"
+      ],
+      "supplementalEvidence": [
+        {
+          "path": "docs/research/shuffle-qualification-2026-11-15/divine-name-size-supplement-2026-11-17.json",
+          "sha256": "83c2cd0ddaee12c87950a9c50822cbfacb65c7c3c508ef8fda7b6cccce6d7256",
+          "maxTextBytes": 793857,
+          "inputHash": "fe677def366505866137d2aca3416e850822bb928e89aa5aabfefa89da47a256",
+          "recordHash": "3cea0cf5fb429eec181e242c4ae71682c82a2ebe0bcbea5e3838db7a122f06b3"
+        }
       ]
     },
     "audio": {

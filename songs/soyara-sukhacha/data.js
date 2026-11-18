@@ -528,7 +528,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "harī",
-        "gloss": "the deity Viṣṇu/Kṛṣṇa, the refuge just named"
+        "gloss": "the deity Viṣṇu/Kṛṣṇa, the refuge just named; Hari is the remover of evil and sin."
       },
       {
         "roman": "nirantar",

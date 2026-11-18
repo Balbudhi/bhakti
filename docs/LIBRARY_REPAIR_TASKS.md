@@ -1405,3 +1405,70 @@ Those results do not certify media quality or intro trims. This text-only releas
 preserves all existing audio profile records and media references exactly.
 The full-library screen and independent review of selected fixes must not again
 be described as proof that every translation or transcription is correct.
+
+### Divine-name meaning repair — 17 November 2026
+
+The owner found Har explained only as a name for God and requested the same
+literal-meaning check for all meaningful divine names. Freeze: 365 readers,
+52,949 word records at `0078868c`; the initial contextual-identity search finds
+4,502 candidate occurrences / 1,848 surface forms. This is a search queue, not
+a divine-name classifier. Review the full word population for missed names,
+then independently verify exact proposed popup changes against source context.
+
+The reader must explain relevant literal, cultural and devotional meanings
+together with the contextual referent, speaking from within the hymn’s tradition.
+The owner explicitly rejects public “traditionally interpreted” labels and
+arbitrary selection among senses; private evidence retains their distinct bases.
+Preserve
+case, relationships, already useful detail, and ordinary homophones. Do not
+invent an etymology for a disputed regional name, identify a poet as a deity,
+or impose an incarnation narrative on Gurbāṇī/Sufi usage. Source, Roman text, order, timings, audio and owner English remain unchanged.
+The later sarūp question separately authorizes a contextual translation review
+of that term; retain form/own-form distinctions rather than globally substituting
+“embodiment” or treating every initial sa as Sanskrit sva. A source-supported
+named form incorrectly rendered as an invented English title also requires its
+minimal paired English correction so the name and popup agree.
+
+Current result: independently reviewed and adopted 1,262 popup explanations
+on 1,004 distinct lyric lines across 201 readers. Four English lines change:
+three occurrences of the mind’s light-nature in `man-tu-jot-saroop-hai`, and
+one restoration of the proper name Śrīraṅga in `shree-sai-aarti`. All other
+English, source text, Roman text, metadata, performance order, timings and
+non-target word fields match the frozen 365-reader population exactly.
+
+The active gloss, writer and independent-review prompts now require evidenced
+meaning together with contextual identity. Policy version 10 invalidates old
+semantic-stage caches; 23 focused tests cover real prompt construction, disk
+cache identity and preservation of rich definitions and ordinary homophones.
+These tests establish software behavior, not linguistic accuracy. The content
+contract passes all 365 readers; all 28,648 ready/deferred line-button seek
+checks pass. Those are DOM/timestamp checks, not fresh acoustic verification.
+
+Refreshed 200 semantic shuffle profiles; the other 165 complete profiles and
+all 365 audio profiles remain exact. One changed reader contains the revised
+name only in an unperformed stored introduction, so its semantic input and
+profile remain unchanged. The profile pairing audit passes all 365 songs.
+An independent source check covered all 101 added features across 73 ordinary
+readers. It preserved the earlier Kurai gratitude reduction and removed an
+unsupported specifically-Śirḍī Sāī attribution from a bare Sāī Rām invocation.
+
+The same-method Sundarakāṇḍa qualification checked all 539 payload rows,
+separate extraction/review and the relevant cited source contexts. The exact
+793,857-byte reader extends the former 788,040-byte envelope; its hash-bound
+supplement retains the original method and baseline evidence identities. This
+is targeted qualification, not a new general accuracy claim. A rejected
+structured response and one explicit provider503 were preserved and reviewed
+before bounded recovery. All 402 requests remain in the same ledger, with
+$4.99444651 charged or conservatively reserved against the $15 ceiling.
+
+Current step: final assembled-release checks and publication; verify the exact
+live song data, entrypoints and shared catalogue/profile assets after deployment.
+
+Private per-occurrence evidence preserves sources, alternatives and unresolved
+readings. The full-library screen and independent review of selected corrections
+do not certify every existing translation or source transcription. Unresolved
+source forms, including the Bhairava/Bhairavī and `sasvarūpaṃ` conflicts, were
+not guessed. The in-app browser is unavailable, so no fresh mobile/desktop
+visual or listening verification is claimed. The isolated checkout lacks local
+audio and trim receipts; audio audit reports missing files, trim audit checks
+zero receipts. Existing media references and audio profiles are preserved.

@@ -1068,7 +1068,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āpannamāmīśaśambho",
-        "gloss": "me in distress, O sovereign Śambhu"
+        "gloss": "me in distress, O sovereign Śambhu; Śambhu means “bringing happiness or well-being”"
       }
     ],
     "sourceWords": [
@@ -1118,7 +1118,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "haratoṣaye",
-        "gloss": "to please Hara, Śiva"
+        "gloss": "to please Hara, Śiva; Hara means “the remover” or “destroyer”"
       }
     ],
     "sourceWords": [

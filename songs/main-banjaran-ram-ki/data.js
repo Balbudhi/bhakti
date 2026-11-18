@@ -56,7 +56,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Rām; God, the divine beloved addressed in this hymn"
+        "gloss": "Rām; God, the divine beloved addressed in this hymn; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "kī",
@@ -998,7 +998,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "Rām; God, the divine beloved addressed in this hymn"
+        "gloss": "Rām; God, the divine beloved addressed in this hymn; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "kī",

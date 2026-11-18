@@ -333,7 +333,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "the Lord Viṣṇu, addressed by this name"
+        "gloss": "O Nārāyaṇa, Lord Viṣṇu, refuge of living beings, who rests upon the primordial waters"
       }
     ],
     "sourceWords": [
@@ -493,7 +493,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "the Lord Viṣṇu, addressed by this name"
+        "gloss": "O Nārāyaṇa, Lord Viṣṇu, refuge of living beings, who rests upon the primordial waters"
       }
     ],
     "sourceWords": [
@@ -619,7 +619,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandara",
-        "gloss": "first member of the poet’s signature deity-name Purandara Viṭṭhala"
+        "gloss": "Purandara, destroyer of strongholds; part of the deity-name Purandara Viṭṭhala used in the poet’s signature"
       },
       {
         "roman": "viṭhṭhala",
@@ -673,7 +673,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "the Lord Viṣṇu, addressed by this name"
+        "gloss": "O Nārāyaṇa, Lord Viṣṇu, refuge of living beings, who rests upon the primordial waters"
       }
     ],
     "sourceWords": [

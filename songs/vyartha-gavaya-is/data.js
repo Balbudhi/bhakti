@@ -316,7 +316,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -441,7 +441,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -714,7 +714,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -910,7 +910,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1451,7 +1451,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai / Sai's",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1884,7 +1884,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2009,7 +2009,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2086,7 +2086,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁ",
-        "gloss": "O Sai",
+        "gloss": "O Sāī, revered master and lord",
         "concept_key": "",
         "preserve_in_english": false
       },

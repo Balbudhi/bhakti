@@ -468,7 +468,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -492,13 +492,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kanhaiyā",
-        "gloss": "beloved Krishna",
+        "gloss": "Kanhaiyā, an affectionate name for Kṛṣṇa, the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       },

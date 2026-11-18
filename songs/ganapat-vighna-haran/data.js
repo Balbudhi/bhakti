@@ -70,7 +70,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇuṁ",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "the all-pervading one; Viṣṇu as a divine epithet in this invocation",
         "concept_key": "",
         "preserve_in_english": false
       },

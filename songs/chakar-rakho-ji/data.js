@@ -665,7 +665,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "govinda",
-        "gloss": "Krishna, protector of cows",
+        "gloss": "Govinda, Kṛṣṇa the cowherd Lord who finds and tends the cattle",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1542,7 +1542,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "harī",
-        "gloss": "Lord Viṣṇu; remover of suffering",
+        "gloss": "Lord Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },

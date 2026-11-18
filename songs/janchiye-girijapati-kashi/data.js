@@ -494,7 +494,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṅkara",
-        "gloss": "of Shankara (Lord Shiva)",
+        "gloss": "of Shankara (Lord Shiva); Śaṅkara means “bringing well-being” or “beneficent”",
         "concept_key": "",
         "preserve_in_english": false
       },

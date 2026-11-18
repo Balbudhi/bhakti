@@ -792,7 +792,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nārāyaṇī",
-        "gloss": "divine feminine power",
+        "gloss": "divine feminine power; Nārāyaṇī means “belonging to Nārāyaṇa”; the goddess is his divine power.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -927,7 +927,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "Shiva",
+        "gloss": "Shiva; Hara means “remover” or “destroyer”.",
         "concept_key": "",
         "preserve_in_english": false
       },

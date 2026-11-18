@@ -52,7 +52,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sītārām",
-        "gloss": "Sītā and Rāma; the paired names of Rāma and his wife Sītā"
+        "gloss": "Sītā and Rāma, the divine couple: the furrow-born goddess and the delightful lord"
       }
     ],
     "sourceWords": [
@@ -90,7 +90,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sītārām",
-        "gloss": "Sītā and Rāma; the paired devotional names"
+        "gloss": "Sītā and Rāma, the divine couple: the furrow-born goddess and the delightful lord"
       },
       {
         "roman": "jai",
@@ -98,7 +98,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sītārām",
-        "gloss": "Sītā and Rāma; the paired devotional names"
+        "gloss": "Sītā and Rāma, the divine couple: the furrow-born goddess and the delightful lord"
       }
     ],
     "sourceWords": [

@@ -3383,7 +3383,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ruṇācalā",
-        "gloss": "O Aruṇācala",
+        "gloss": "O Aruṇācala, the red mountain, revered as Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }

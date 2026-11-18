@@ -568,7 +568,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nārāyaṇaṉē",
-        "gloss": "Nārāyaṇa (the supreme Lord Viṣṇu) alone",
+        "gloss": "Nārāyaṇa (the supreme Lord Viṣṇu) alone; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -628,7 +628,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nārāyaṇaṉē",
-        "gloss": "Nārāyaṇa (the supreme Lord Viṣṇu) alone",
+        "gloss": "Nārāyaṇa (the supreme Lord Viṣṇu) alone; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },

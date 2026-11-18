@@ -118,7 +118,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇaṁ",
-        "gloss": "to Krishna",
+        "gloss": "to Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -225,7 +225,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -616,7 +616,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rādhikā",
-        "gloss": "Kṛṣṇa's beloved and devotee",
+        "gloss": "Kṛṣṇa's beloved and devotee; Rādhā means “success” or “prosperity”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -652,7 +652,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -794,7 +794,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rādhikā",
-        "gloss": "Kṛṣṇa's beloved and devotee",
+        "gloss": "Kṛṣṇa's beloved and devotee; Rādhā means “success” or “prosperity”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1085,7 +1085,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śyāmā",
-        "gloss": "Radha",
+        "gloss": "Radha; Śyāmā means “the dark-hued one”, here a name of Rādhā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1115,7 +1115,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1614,7 +1614,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },

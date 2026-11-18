@@ -1799,7 +1799,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "the god Śiva"
+        "gloss": "the god Śiva; Śiva means “auspicious”"
       },
       {
         "roman": "pretāsanī",
@@ -2163,7 +2163,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṃkar",
-        "gloss": "Śaṅkara, the auspicious form of Śiva"
+        "gloss": "Śaṅkara, the auspicious form of Śiva; Śaṅkara means “bringing well-being” or “beneficent”"
       },
       {
         "roman": "cinmārtāṃḍa",

@@ -145,7 +145,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the divine Lord Viṣṇu"
+        "gloss": "the divine Lord Viṣṇu; Hari is the remover of evil and sin."
       },
       {
         "roman": "nīku",
@@ -353,7 +353,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "the divine Lord Viṣṇu"
+        "gloss": "the divine Lord Viṣṇu; Hari is the remover of evil and sin."
       },
       {
         "roman": "nīku",

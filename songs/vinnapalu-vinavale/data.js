@@ -382,7 +382,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śēṣādulu",
-        "gloss": "the serpent supporting Viṣṇu, Śeṣa, and the others"
+        "gloss": "the serpent supporting Viṣṇu, Śeṣa, and the others; Śeṣa means “that which remains”"
       },
       {
         "roman": "tumburu",
@@ -514,7 +514,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alamēlumaṅganu",
-        "gloss": "the consort of Vēṅkaṭeśa; object of looking"
+        "gloss": "the consort of Vēṅkaṭeśa; object of looking; Alamēlumaṅga means “the lady on the lotus”; she is Padmāvatī"
       },
       {
         "roman": "vēṅkaṭēśuḍa",

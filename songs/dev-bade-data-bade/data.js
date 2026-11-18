@@ -133,7 +133,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṅkar",
-        "gloss": "Shiva / Shankara",
+        "gloss": "Śaṅkara, Śiva as the beneficent one, bringer of welfare",
         "concept_key": "",
         "preserve_in_english": false
       },

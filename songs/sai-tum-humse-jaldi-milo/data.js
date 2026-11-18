@@ -1654,13 +1654,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kanhaiyā",
-        "gloss": "beloved Krishna",
+        "gloss": "Kanhaiyā, an affectionate name for Kṛṣṇa, the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }

@@ -1144,7 +1144,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Nīḷamādhaba",
-        "gloss": "Nilamadhava (primordial blue form of Jagannatha)",
+        "gloss": "Nilamadhava (primordial blue form of Jagannatha); Nīḷa means “blue”; Mādhava is Kṛṣṇa’s lineage-name, “descendant of Madhu”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1156,7 +1156,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrībāsudeba",
-        "gloss": "Lord Vasudeva (Krishna)",
+        "gloss": "Lord Vasudeva (Krishna); Vāsudeva means “son or descendant of Vasudeva”; it is Kṛṣṇa’s patronymic.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1215,7 +1215,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mādhaba",
-        "gloss": "Madhava (Krishna/Vishnu)",
+        "gloss": "Madhava (Krishna/Vishnu); Mādhava means “descendant of Madhu”, a lineage-name of Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2722,7 +2722,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagabāna",
-        "gloss": "Supreme Lord (Bhagavan)",
+        "gloss": "Supreme Lord (Bhagavan); The title means “possessing good fortune or glory”; hence, the blessed Lord.",
         "concept_key": "",
         "preserve_in_english": false
       }

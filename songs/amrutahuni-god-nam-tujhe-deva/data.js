@@ -195,7 +195,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "keśavā",
-        "gloss": "the deity Viṣṇu/Kṛṣṇa addressed here"
+        "gloss": "O Keśava, the fine-haired one; Viṣṇu/Kṛṣṇa"
       }
     ],
     "nameTable": false,
@@ -549,7 +549,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "haridās",
-        "gloss": "devotees who serve and sing Hari"
+        "gloss": "devotees who serve and sing Hari, the remover of evil and sin"
       },
       {
         "roman": "garjatī",
@@ -557,7 +557,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harināmācyā",
-        "gloss": "of Hari’s name"
+        "gloss": "of the name of Hari, the remover of evil and sin"
       },
       {
         "roman": "kīrtī",

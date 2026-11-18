@@ -72,7 +72,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alamēlumaṅga",
-        "gloss": "Lakṣmī as the consort of Vēṅkaṭeśa"
+        "gloss": "Alamēlumaṅga, the goddess on the lotus; Lakṣmī as Vēṅkaṭeśa’s consort"
       }
     ],
     "nameTable": false,
@@ -114,7 +114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alamēlumaṅga",
-        "gloss": "Lakṣmī as the consort of Vēṅkaṭeśa"
+        "gloss": "Alamēlumaṅga, the goddess on the lotus; Lakṣmī as Vēṅkaṭeśa’s consort"
       }
     ],
     "nameTable": false,
@@ -228,7 +228,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alamēlumaṅga",
-        "gloss": "Lakṣmī as the consort of Vēṅkaṭeśa"
+        "gloss": "Alamēlumaṅga, the goddess on the lotus; Lakṣmī as Vēṅkaṭeśa’s consort"
       }
     ],
     "nameTable": false,
@@ -348,7 +348,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alamēlumaṅga",
-        "gloss": "Lakṣmī as the consort of Vēṅkaṭeśa"
+        "gloss": "Alamēlumaṅga, the goddess on the lotus; Lakṣmī as Vēṅkaṭeśa’s consort"
       }
     ],
     "nameTable": false,
@@ -462,7 +462,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alamēlumaṅga",
-        "gloss": "Lakṣmī as the consort of Vēṅkaṭeśa"
+        "gloss": "Alamēlumaṅga, the goddess on the lotus; Lakṣmī as Vēṅkaṭeśa’s consort"
       }
     ],
     "nameTable": false,
@@ -560,7 +560,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alamēlumaṅga",
-        "gloss": "Lakṣmī as the consort of Vēṅkaṭeśa"
+        "gloss": "Alamēlumaṅga, the goddess on the lotus; Lakṣmī as Vēṅkaṭeśa’s consort"
       }
     ],
     "nameTable": false,

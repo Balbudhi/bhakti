@@ -754,7 +754,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhagavanta",
-        "gloss": "the supreme sovereign divine / Bhagavān",
+        "gloss": "the supreme sovereign divine / Bhagavān; The title means “possessing good fortune or glory”; hence, the blessed Lord.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -992,7 +992,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiva",
-        "gloss": "of Śiva",
+        "gloss": "of Śiva; Śiva means “auspicious” or “beneficent”.",
         "concept_key": "",
         "preserve_in_english": false
       },

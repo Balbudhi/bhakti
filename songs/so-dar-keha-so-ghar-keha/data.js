@@ -1066,7 +1066,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "īsaru",
-        "gloss": "Śiva (Īśvara)",
+        "gloss": "Śiva (Īśvara); Īśa or Īśvara means “lord”",
         "concept_key": "",
         "preserve_in_english": false
       },

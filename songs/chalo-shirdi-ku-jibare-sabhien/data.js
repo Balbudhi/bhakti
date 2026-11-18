@@ -141,7 +141,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāiṅka",
-        "gloss": "of Sai",
+        "gloss": "of Sāī, the revered master",
         "concept_key": "",
         "preserve_in_english": false
       },

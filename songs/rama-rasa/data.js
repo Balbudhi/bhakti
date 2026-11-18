@@ -335,7 +335,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "divine Name; Supreme Reality",
+        "gloss": "divine Name; Supreme Reality; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1358,7 +1358,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "divine Name; Supreme Reality",
+        "gloss": "divine Name; Supreme Reality; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },

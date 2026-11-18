@@ -403,7 +403,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "keśavarājā",
-        "gloss": "O king Keśava, a name of Viṣṇu/Kṛṣṇa"
+        "gloss": "O king Keśava, a name of Viṣṇu/Kṛṣṇa; Keśava means “having fine hair”"
       }
     ],
     "nameTable": false,

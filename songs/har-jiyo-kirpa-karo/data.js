@@ -91,7 +91,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
+        "gloss": "Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -271,7 +271,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
+        "gloss": "Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -703,7 +703,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "The one who takes away—the remover; a divine name of Viṣṇu/Kṛṣṇa.",
+        "gloss": "Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },

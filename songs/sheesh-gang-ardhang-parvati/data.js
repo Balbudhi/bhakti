@@ -168,7 +168,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānīsahitaṁ",
-        "gloss": "accompanied by Goddess Bhavānī",
+        "gloss": "accompanied by Goddess Bhavānī; Bhavānī means “Bhava’s consort”; Bhava is Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },

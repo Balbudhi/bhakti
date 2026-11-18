@@ -98,7 +98,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gōvindā",
-        "gloss": "O Govinda [Kṛṣṇa, protector of cattle and beings]",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa, protector of cattle and living beings",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -164,7 +164,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gōvindā",
-        "gloss": "O Govinda [Kṛṣṇa, protector of cattle and beings]",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa, protector of cattle and living beings",
         "concept_key": "",
         "preserve_in_english": false
       },

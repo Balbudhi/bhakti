@@ -108,7 +108,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yamadūtānām",
-        "gloss": "of the messengers of Yama, lord of death"
+        "gloss": "of the messengers of Yama, the restrainer and judge of the dead"
       }
     ],
     "sourceWords": [
@@ -134,11 +134,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       },
       {
         "roman": "rāmeti",
-        "gloss": "the quoted call “Rāma”; rāma + iti, “Rāma, thus”"
+        "gloss": "the quoted call “Rāma,” the delightful lord; rāma + iti, “Rāma, thus”"
       },
       {
         "roman": "garjanam",
@@ -174,7 +174,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       }
     ],
     "sourceWords": [
@@ -194,7 +194,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       },
       {
         "roman": "nām",
@@ -342,7 +342,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       }
     ],
     "sourceWords": [
@@ -374,7 +374,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītārām",
-        "gloss": "the divine couple, Sītā and Rāma"
+        "gloss": "the divine couple Sītā and Rāma: the furrow-born goddess and the delightful lord"
       },
       {
         "roman": "jay",
@@ -386,7 +386,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       },
       {
         "roman": "jay",
@@ -398,11 +398,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       },
       {
         "roman": "sītārām",
-        "gloss": "the divine couple, Sītā and Rāma"
+        "gloss": "the divine couple Sītā and Rāma: the furrow-born goddess and the delightful lord"
       }
     ],
     "sourceWords": [
@@ -896,7 +896,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       }
     ],
     "sourceWords": [
@@ -1004,7 +1004,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the prince of Ayodhyā, the deity Rāma"
+        "gloss": "Rāma, the delightful one; the divine prince of Ayodhyā"
       },
       {
         "roman": "nām",
@@ -1072,7 +1072,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yamdūt",
-        "gloss": "messengers of Yama, lord of death"
+        "gloss": "messengers of Yama, the restrainer and judge of the dead"
       }
     ],
     "sourceWords": [

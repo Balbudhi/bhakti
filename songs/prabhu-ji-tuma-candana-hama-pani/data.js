@@ -54,7 +54,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām...",
-        "gloss": "Lord Rama; the Divine",
+        "gloss": "Rāma, the delightful Lord; a name of the Divine",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -83,7 +83,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām...",
-        "gloss": "Lord Rama; the Divine",
+        "gloss": "Rāma, the delightful Lord; a name of the Divine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -112,7 +112,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām...",
-        "gloss": "Lord Rama; the Divine",
+        "gloss": "Rāma, the delightful Lord; a name of the Divine",
         "concept_key": "",
         "preserve_in_english": false
       }

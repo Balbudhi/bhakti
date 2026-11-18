@@ -506,13 +506,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rādhē",
-        "gloss": "O Rādhā, Kṛṣṇa’s beloved",
+        "gloss": "O Rādhā, Kṛṣṇa’s beloved; Rādhā means “prosperity” or “success”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Gōvindā",
-        "gloss": "lord of cattle / Krishna",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa, the cowherd Lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1727,7 +1727,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rādhā",
-        "gloss": "Kṛṣṇa's beloved and devotee",
+        "gloss": "Kṛṣṇa's beloved and devotee; Rādhā means “prosperity” or “success”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1881,13 +1881,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rādhē-Rādhē",
-        "gloss": "chanting Radha's name",
+        "gloss": "chanting the name of Rādhā, Kṛṣṇa’s beloved; Rādhā means “prosperity” or “success”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kānhā",
-        "gloss": "Krishna",
+        "gloss": "Krishna; An affectionate name of Kṛṣṇa, whose name means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1946,7 +1946,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kānhā",
-        "gloss": "Krishna",
+        "gloss": "Krishna; An affectionate name of Kṛṣṇa, whose name means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },

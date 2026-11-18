@@ -243,7 +243,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariya",
-        "gloss": "the divine Lord Viṣṇu, as the object of showing"
+        "gloss": "Hari, the remover of evil and sin; Viṣṇu, as the object of showing"
       },
       {
         "roman": "tōrisendu",
@@ -337,7 +337,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "purandaraviṭṭhalana",
-        "gloss": "of the Lord Viṭṭhala, invoked in the poet Purandara Dāsa’s signature"
+        "gloss": "of Purandara Viṭṭhala, the Lord invoked in Purandara Dāsa’s signature; Purandara is destroyer of strongholds"
       },
       {
         "roman": "hiriya",

@@ -1924,7 +1924,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sivjū",
-        "gloss": "revered Śiva; the deity also called Mahādeva; jū is an honorific",
+        "gloss": "revered Śiva; the deity also called Mahādeva; jū is an honorific; Śiva means “auspicious” or “beneficent”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1995,7 +1995,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bisan",
-        "gloss": "Viṣṇu; the preserver deity",
+        "gloss": "Viṣṇu; the preserver deity; Viṣṇu is “the all-pervading one”, present throughout creation.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2137,7 +2137,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siv",
-        "gloss": "the ascetic deity also called Mahādeva",
+        "gloss": "the ascetic deity also called Mahādeva; Śiva means “auspicious” or “beneficent”.",
         "concept_key": "",
         "preserve_in_english": false
       },

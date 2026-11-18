@@ -659,7 +659,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siyā",
-        "gloss": "Sita",
+        "gloss": "Sita, Rāma’s consort; Sītā means “furrow”, the line made by a plough.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -783,7 +783,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Siyā",
-        "gloss": "Sita",
+        "gloss": "Sita, Rāma’s consort; Sītā means “furrow”, the line made by a plough.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1037,7 +1037,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jānakī",
-        "gloss": "Sita's",
+        "gloss": "Sita's; Jānakī means “daughter of Janaka”, a name of Sītā.",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -282,7 +282,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁnātha",
-        "gloss": "Sainath (Lord Sai)",
+        "gloss": "Sainath (Lord Sai); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -377,7 +377,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁnātha",
-        "gloss": "Sainath (Lord Sai)",
+        "gloss": "Sainath (Lord Sai); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -763,19 +763,19 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṁnātha,",
-        "gloss": "Sainath (Lord Sai),",
+        "gloss": "Sainath (Lord Sai),; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sāīṁnātha,",
-        "gloss": "Sainath (Lord Sai),",
+        "gloss": "Sainath (Lord Sai),; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sāīṁnātha",
-        "gloss": "Sainath (Lord Sai)",
+        "gloss": "Sainath (Lord Sai); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1518,7 +1518,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīṁnātha",
-        "gloss": "Sainath (Lord Sai)",
+        "gloss": "Sainath (Lord Sai); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },

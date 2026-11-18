@@ -39,7 +39,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       }
     ],
     "sourceWords": [
@@ -59,7 +59,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "ko",
@@ -71,7 +71,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "ko",
@@ -129,7 +129,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "nām",
@@ -179,7 +179,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "se",
@@ -191,7 +191,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "se",
@@ -249,7 +249,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "dharāye",
@@ -289,7 +289,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "nām",
@@ -409,7 +409,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "ke",
@@ -649,7 +649,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "bhajan",
@@ -909,7 +909,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "the king of Raghu’s lineage praised here"
+        "gloss": "the king of Raghu’s lineage praised here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "milan",

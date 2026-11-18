@@ -910,7 +910,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāth",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },

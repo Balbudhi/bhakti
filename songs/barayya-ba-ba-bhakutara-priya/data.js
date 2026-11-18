@@ -437,7 +437,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅga",
-        "gloss": "the divine Lord"
+        "gloss": "Raṅga, Kṛṣṇa, the divine Lord and son of Nanda"
       },
       {
         "roman": "dēvōttuṅga",
@@ -611,7 +611,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "naṃdivāhana",
-        "gloss": "one whose mount is Nandi; Śiva"
+        "gloss": "Śiva, whose mount is Nandi, the gladdening bull"
       },
       {
         "roman": "amarēṃdra",
@@ -751,7 +751,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gōviṃda",
-        "gloss": "the divine cowherd Lord; a name of Viṣṇu/Kṛṣṇa"
+        "gloss": "Govinda, finder of cattle; Kṛṣṇa/Viṣṇu as the divine cowherd Lord"
       },
       {
         "roman": "udaradi",
@@ -1327,7 +1327,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rame",
-        "gloss": "the goddess Lakṣmī, consort of the Lord"
+        "gloss": "Ramā, the delightful goddess, fortune and splendour personified; Lakṣmī, the Lord’s consort"
       },
       {
         "roman": "poḍaviyoḍane",

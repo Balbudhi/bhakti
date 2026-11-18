@@ -151,7 +151,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Durge",
-        "gloss": "O Mother Durga",
+        "gloss": "O Mother Durga; Durgā means “the inaccessible one”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -377,7 +377,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hari",
-        "gloss": "Vishnu (Hari)",
+        "gloss": "Vishnu (Hari); Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1965,7 +1965,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kamalā",
-        "gloss": "Lakshmi",
+        "gloss": "Lakshmi; Kamalā means “the lotus goddess”, a name of Lakṣmī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2024,7 +2024,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kamalā",
-        "gloss": "Lakshmi",
+        "gloss": "Lakshmi; Kamalā means “the lotus goddess”, a name of Lakṣmī",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -179,7 +179,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāi",
-        "gloss": "O Sai (vocative)",
+        "gloss": "O Sai (vocative); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },

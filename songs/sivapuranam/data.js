@@ -46,7 +46,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "namaccivāya",
-        "gloss": "obeisance to Śiva; the five-syllable salutation"
+        "gloss": "obeisance to Śiva, the auspicious one; the five-syllable salutation"
       }
     ],
     "sourceWords": [
@@ -72,7 +72,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "namaccivāya",
-        "gloss": "the five-syllable salutation, meaning obeisance to Śiva"
+        "gloss": "the five-syllable salutation: obeisance to Śiva, the auspicious one"
       },
       {
         "roman": "vāḻka",
@@ -222,7 +222,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "namaccivāya",
-        "gloss": "the five-syllable salutation, meaning obeisance to Śiva"
+        "gloss": "the five-syllable salutation: obeisance to Śiva, the auspicious one"
       },
       {
         "roman": "vāḻka",
@@ -1044,7 +1044,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "civaṉavaṉeṉ",
-        "gloss": "he, Śiva; that very Śiva; my"
+        "gloss": "he, Śiva, the auspicious one; that very Śiva; my"
       },
       {
         "roman": "cintaiyuḷ",
@@ -1142,7 +1142,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "civapurāṇantaṉṉai",
-        "gloss": "the sacred lore of Śiva; Civapurāṇam; itself"
+        "gloss": "this sacred lore of Śiva, the auspicious one; Civapurāṇam itself"
       }
     ],
     "sourceWords": [
@@ -3298,7 +3298,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "civapuraṉē",
-        "gloss": "Lord of Śiva’s divine city or realm, Civapuram"
+        "gloss": "Lord of Civapuram, the divine realm of Śiva, the auspicious one"
       }
     ],
     "sourceWords": [
@@ -4424,7 +4424,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "araṉēyō",
-        "gloss": "O Śiva, here invoked by the Tamil name Aran"
+        "gloss": "O Araṉ, Śiva the destroyer; the Tamil form of Hara"
       },
       {
         "roman": "eṉṟeṉṟu",
@@ -4872,7 +4872,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "civapurattiṉ",
-        "gloss": "in Śiva’s divine city or realm"
+        "gloss": "in Civapuram, the divine realm of Śiva, the auspicious one"
       },
       {
         "roman": "uḷḷār",
@@ -4880,7 +4880,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "civaṉaṭikkīḻ",
-        "gloss": "beneath Śiva's sacred feet"
+        "gloss": "beneath the sacred feet of Śiva, the auspicious one"
       }
     ],
     "sourceWords": [

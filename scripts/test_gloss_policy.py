@@ -39,6 +39,24 @@ class GlossPolicyTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unresolved self-referential gloss"):
             gloss_policy.meaning_only_gloss("UnresolvedName", "UnresolvedName (proper name)")
 
+    def test_normalization_preserves_supplied_name_meaning_without_inferring_by_spelling(self) -> None:
+        import bhakti_pipeline as pipeline
+
+        # Supplied editorial claims are fixtures, not etymologies certified by this test.
+        for roman, meaning in (
+            ("Har", "remover of sorrow; the Divine addressed here"),
+            ("Har", "every; each"),
+            ("Mādhava", "the poet's signature-name; formation uncertain"),
+            ("UnresolvedName", "the singer's companion; name formation disputed"),
+        ):
+            with self.subTest(roman=roman, meaning=meaning):
+                word = {"roman": roman, "gloss": meaning, "concept_key": "",
+                        "preserve_in_english": False}
+                rows = [{"id": "context-reviewed", "word_glosses": [word]}]
+                self.assertEqual(pipeline.normalize_gloss_rows([], rows), rows)
+                self.assertEqual(gloss_policy.clean_word(word), word)
+                self.assertEqual(word["gloss"], meaning)
+
     def test_mainaka_supplied_context_is_not_replaced(self) -> None:
         self.assertEqual(
             gloss_policy.meaning_only_gloss("Maināka", "Mainaka (golden mountain)"),

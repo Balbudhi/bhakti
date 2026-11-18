@@ -92,7 +92,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅga",
-        "gloss": "the divine Lord Raṅga"
+        "gloss": "Raṅga, Viṣṇu as Raṅganātha, celebrated here in procession"
       },
       {
         "roman": "tejanēri",
@@ -154,7 +154,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅga",
-        "gloss": "the divine Lord Raṅga"
+        "gloss": "Raṅga, Viṣṇu as Raṅganātha, celebrated here in procession"
       },
       {
         "roman": "tejanēri",
@@ -816,7 +816,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅganātha",
-        "gloss": "the Lord of Raṅga"
+        "gloss": "Lord of Raṅga, Viṣṇu worshipped as the reclining Raṅganātha; celebrated here in procession"
       }
     ],
     "nameTable": false,
@@ -1270,7 +1270,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅga",
-        "gloss": "the divine Lord Raṅga"
+        "gloss": "Raṅga, Viṣṇu as Raṅganātha, celebrated here in procession"
       },
       {
         "roman": "ellarige",

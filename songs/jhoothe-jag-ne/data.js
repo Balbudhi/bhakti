@@ -1304,7 +1304,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jhanḍewālī",
-        "gloss": "the Goddess of Jhandewalan"
+        "gloss": "the Goddess of Jhandewalan; Jhaṇḍewālī means “she of the flag”; the shrine’s name recalls its raised flag."
       },
       {
         "roman": "janmāṅ",

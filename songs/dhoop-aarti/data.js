@@ -171,7 +171,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -508,7 +508,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīraṅga",
-        "gloss": "Lord Shriranga (Vishnu/God)",
+        "gloss": "Śrīraṅga, Viṣṇu; at Śrīraṅgam he is worshipped as the reclining Raṅganātha",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -543,7 +543,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīraṅga",
-        "gloss": "Lord Shriranga",
+        "gloss": "Śrīraṅga, Viṣṇu; at Śrīraṅgam he is worshipped as the reclining Raṅganātha",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1718,7 +1718,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāībābā",
-        "gloss": "revered saint of Śirḍī",
+        "gloss": "revered saint of Śirḍī; Sāī means “master” or “lord”; Bābā means “father”, used respectfully for a spiritual elder",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1777,7 +1777,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāībābā",
-        "gloss": "revered saint of Śirḍī",
+        "gloss": "revered saint of Śirḍī; Sāī means “master” or “lord”; Bābā means “father”, used respectfully for a spiritual elder",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2026,7 +2026,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāṅsī",
-        "gloss": "to Baba",
+        "gloss": "to Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2079,7 +2079,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sāīṅsī",
-        "gloss": "to Sai",
+        "gloss": "to Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2097,7 +2097,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāṅsī",
-        "gloss": "to Baba",
+        "gloss": "to Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2905,7 +2905,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Nārāyaṇāyeti",
-        "gloss": "unto Narayana, thus saying",
+        "gloss": "unto Narayana, thus saying; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2976,13 +2976,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmanārāyaṇaṁ",
-        "gloss": "Viṣṇu in the form of Rāma",
+        "gloss": "Viṣṇu in the form of Rāma; Rāma means “delightful”; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kṛṣṇadāmodaraṁ",
-        "gloss": "Krishna-Damodara",
+        "gloss": "Krishna-Damodara; Kṛṣṇa means “dark-hued”; Dāmodara means “having a rope around the belly”, recalling Yaśodā binding the child Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2994,7 +2994,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Harim",
-        "gloss": "Hari (remover of sins)",
+        "gloss": "Hari, a name of Viṣṇu; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3071,7 +3071,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmacandraṁ",
-        "gloss": "Ramachandra",
+        "gloss": "Rāmacandra, “moon-like Rāma”, the hero of the Rāmāyaṇa; Rāma means “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3142,49 +3142,49 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3249,49 +3249,49 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna",
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna",
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna",
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna",
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Hare",
-        "gloss": "O Hari / O energy of the Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3569,7 +3569,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śeṣa",
-        "gloss": "the celestial serpent",
+        "gloss": "the celestial serpent; Śeṣa means “that which remains”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3634,7 +3634,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthā",
-        "gloss": "unto Sri Sainatha",
+        "gloss": "unto Sri Sainatha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -4835,7 +4835,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇanāthā",
-        "gloss": "Lord Krishna",
+        "gloss": "Lord Krishna; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -6362,7 +6362,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hariguṇa",
-        "gloss": "virtues and praises of the Lord",
+        "gloss": "virtues and praises of the Lord; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6550,7 +6550,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātham",
-        "gloss": "to Sai Nath",
+        "gloss": "to Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7247,7 +7247,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmamevāvatīrṇam",
-        "gloss": "Rama himself descended incarnate",
+        "gloss": "Rama himself descended incarnate; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7312,7 +7312,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrī-sāīśa",
-        "gloss": "O glorious Lord Sai",
+        "gloss": "O glorious Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7431,7 +7431,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīmat-sāīpareśapādakamalānnānyaccharaṇyaṃ",
-        "gloss": "other than the lotus feet of the glorious Supreme Lord Sai, there is no other refuge",
+        "gloss": "other than the lotus feet of the glorious Supreme Lord Sai, there is no other refuge; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7472,7 +7472,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīrūpadhararāghavottamaṃ",
-        "gloss": "the supreme scion of Raghu assuming the form of Sai",
+        "gloss": "the supreme scion of Raghu assuming the form of Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7602,7 +7602,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Sai Nath",
+        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7696,7 +7696,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Sai Nath",
+        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7909,7 +7909,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīśa",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7962,7 +7962,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrī-sāīnāthacaraṇāmṛtapūtacittāstatpādasevanaratāḥ",
-        "gloss": "those whose minds are purified by the nectar of Sri Sai Nath's feet, and who are immersed in serving his feet",
+        "gloss": "those whose minds are purified by the nectar of Sri Sai Nath's feet, and who are immersed in serving his feet; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8145,7 +8145,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthasya",
-        "gloss": "of Sai Nath",
+        "gloss": "of Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8459,7 +8459,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Dattaguru",
-        "gloss": "Dattatreya the master",
+        "gloss": "Dattatreya the master; Datta means “given”; the name refers to Dattātreya, son of Atri and Anasūyā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11541,7 +11541,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariḥ",
-        "gloss": "Hari; the Lord who removes distress",
+        "gloss": "Hari; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11951,7 +11951,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kuberāya",
-        "gloss": "to Kubera",
+        "gloss": "to Kubera, the god of wealth and treasure",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12403,7 +12403,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Lord Viṣṇu; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12427,7 +12427,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai / Sai Nath",
+        "gloss": "Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12659,7 +12659,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Lord Sai / Sai Nath (vocative)",
+        "gloss": "O Lord Sai / Sai Nath (vocative); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -12736,7 +12736,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai / Sai Nath",
+        "gloss": "Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12819,7 +12819,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai / Sai Nath",
+        "gloss": "Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },

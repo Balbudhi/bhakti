@@ -1303,13 +1303,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "ramā",
-        "gloss": "Lakshmi; goddess of wealth",
+        "gloss": "Lakshmi; goddess of wealth; Ramā means “fortune” or “splendour”; it is a name of Lakṣmī.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rādhikā",
-        "gloss": "Kṛṣṇa's beloved and devotee",
+        "gloss": "Kṛṣṇa's beloved and devotee; Rādhikā is an affectionate form of Rādhā, whose name means “prosperity” or “success”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1785,7 +1785,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāhnavī",
-        "gloss": "the sacred river Ganga",
+        "gloss": "the sacred river Ganga; Jāhnavī means “daughter of Jahnu”, a name of Gaṅgā.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1910,7 +1910,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "deity who preserves cosmic order; Viṣṇu is “the all-pervading one”, present throughout creation.",
         "concept_key": "",
         "preserve_in_english": false
       },

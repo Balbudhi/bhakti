@@ -862,7 +862,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, “the delightful one”; the divine Lord invoked here, also known as Sītā’s husband in the Rāmāyaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },

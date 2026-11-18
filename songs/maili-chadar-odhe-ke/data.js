@@ -1299,7 +1299,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harihar",
-        "gloss": "composite deity uniting Vishnu and Shiva",
+        "gloss": "Harihara, uniting Hari (Viṣṇu, remover of evil and sin) and Hara (Śiva, the destroyer)",
         "concept_key": "",
         "preserve_in_english": false
       },

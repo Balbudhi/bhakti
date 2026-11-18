@@ -116,7 +116,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "Hanumān, the one with prominent jaws; monkey-god, son of the Wind and devoted helper of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -217,7 +217,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "Hanumān, the one with prominent jaws; monkey-god, son of the Wind and devoted helper of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -608,7 +608,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sīya",
-        "gloss": "Sita's",
+        "gloss": "of Sītā, Rāma’s wife; her name means furrow, recalling her emergence from the ploughed earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -863,7 +863,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītārāmajī",
-        "gloss": "Sita and Rama (honored)",
+        "gloss": "honoured Sītā and Rāma: the furrow-born goddess and the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -946,7 +946,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "lakṣmaṇa",
-        "gloss": "Rāma's younger brother",
+        "gloss": "Lakṣmaṇa, one bearing auspicious marks; Rāma’s younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1361,7 +1361,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "Hanumān, the one with prominent jaws; monkey-god, son of the Wind and devoted helper of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1539,7 +1539,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumānajī",
-        "gloss": "Hanuman (honored)",
+        "gloss": "honoured Hanumān, the one with prominent jaws and devoted helper of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },

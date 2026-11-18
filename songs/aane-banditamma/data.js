@@ -788,7 +788,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "purandara",
-        "gloss": "first member of the poet’s signature deity-name"
+        "gloss": "first member of the poet’s signature deity-name; Purandara means “destroyer of strongholds”"
       },
       {
         "roman": "viṭhalanembāne",

@@ -99,7 +99,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man tūṃ jot sarūp hai āpaṇā mūl pachāṇ",
-    "english": "{0:O mind, }{1:you }{4:are }{3:the embodiment }of {2:light; }{7:recognize }{5:your own }{6:source.}",
+    "english": "{0:O mind, }{1:you }{4:are }{3:of the nature of }{2:light; }{7:recognize }{5:your own }{6:source.}",
     "words": [
       {
         "roman": "Man",
@@ -111,11 +111,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "jot",
-        "gloss": "light; spiritual illumination"
+        "gloss": "light; divine radiance here"
       },
       {
         "roman": "sarūp",
-        "gloss": "form; embodiment"
+        "gloss": "one’s own form or essential nature; here, of the nature of divine light"
       },
       {
         "roman": "hai",
@@ -187,7 +187,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord"
+        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
       },
       {
         "roman": "jī",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord"
+        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
       },
       {
         "roman": "jī",
@@ -733,7 +733,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Iu kahai Nānak man tūṃ jot sarūp hai",
-    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4:you }{7:are }{6:the embodiment }of {5:light.}",
+    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4:you }{7:are }{6:of the nature of }{5:light.}",
     "words": [
       {
         "roman": "Iu",
@@ -757,11 +757,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "jot",
-        "gloss": "light; spiritual illumination"
+        "gloss": "light; divine radiance here"
       },
       {
         "roman": "sarūp",
-        "gloss": "form; embodiment"
+        "gloss": "one’s own form or essential nature; here, of the nature of divine light"
       },
       {
         "roman": "hai",
@@ -843,7 +843,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Iu kahai Nānak man tūṃ jot sarūp hai āpaṇā mūl pachāṇ",
-    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4:you }{7:are }{6:the embodiment }of {5:light; }{10:recognize }{8:your own }{9:source.}",
+    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4:you }{7:are }{6:of the nature of }{5:light; }{10:recognize }{8:your own }{9:source.}",
     "words": [
       {
         "roman": "Iu",
@@ -867,11 +867,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "jot",
-        "gloss": "light; spiritual illumination"
+        "gloss": "light; divine radiance here"
       },
       {
         "roman": "sarūp",
-        "gloss": "form; embodiment"
+        "gloss": "one’s own form or essential nature; here, of the nature of divine light"
       },
       {
         "roman": "hai",

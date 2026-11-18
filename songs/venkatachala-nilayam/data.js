@@ -533,7 +533,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandara",
-        "gloss": "part of composer's signature name 'Purandara Viṭhala'",
+        "gloss": "Purandara, destroyer of strongholds; part of the composer’s signature deity-name Purandara Viṭṭhala",
         "concept_key": "",
         "preserve_in_english": false
       },

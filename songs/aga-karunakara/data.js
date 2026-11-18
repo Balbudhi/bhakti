@@ -296,7 +296,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇe",
-        "gloss": "the divine Lord, Nārāyaṇa, as the one who should respond"
+        "gloss": "Nārāyaṇa, the divine Lord who should respond here; refuge of living beings, who rests upon the primordial waters"
       }
     ],
     "nameTable": false,

@@ -174,7 +174,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Nārāyaṇ",
-        "gloss": "a name of Viṣṇu, invoked here for the divine protector"
+        "gloss": "Nārāyaṇa, invoked here as the divine protector; refuge of living beings, who rests upon the primordial waters"
       }
     ],
     "nameTable": false,

@@ -671,7 +671,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīraṅgā",
-        "gloss": "revered Raṅga, a name of Viṣṇu addressed here"
+        "gloss": "Śrīraṅga, Viṣṇu invoked here as Jagannātha; the name also evokes the reclining Lord of Śrīraṅgam"
       },
       {
         "roman": "caraṇa",

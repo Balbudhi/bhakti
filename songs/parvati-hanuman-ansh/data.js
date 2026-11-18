@@ -1451,7 +1451,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "king of Ayodhyā and husband of Sītā"
+        "gloss": "king of Ayodhyā and husband of Sītā; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "nām",

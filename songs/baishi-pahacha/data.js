@@ -475,13 +475,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "jagābaḷiā",
-        "gloss": "Jagā and Baḷiā (Lord Jagannath and Lord Balabhadra)",
+        "gloss": "Jagā and Baḷiā (Lord Jagannath and Lord Balabhadra); Jagā is Jagannātha, “lord of the world”; Baḷiā is Balabhadra, “the strong one”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "subhadrāṅku",
-        "gloss": "to Goddess Subhadra",
+        "gloss": "to Goddess Subhadra; Subhadrā means “very auspicious” or “very fortunate”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -517,7 +517,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "O Hari",
+        "gloss": "O Hari, the divine Lord who removes evil and sin, invoked here as Jagannātha",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -624,7 +624,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrībiṣṇuṅku",
-        "gloss": "Lord Sri Vishnu",
+        "gloss": "Lord Sri Vishnu; Viṣṇu is “the all-pervading one”, present throughout creation.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1636,7 +1636,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ādinṛsiṁhaṅku",
-        "gloss": "Lord Adi Narasimha",
+        "gloss": "Lord Adi Narasimha; Ādi means “first” or “original”; Nṛsiṃha means “man-lion”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1660,7 +1660,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bimaḷāṅku",
-        "gloss": "to Goddess Bimala",
+        "gloss": "to Goddess Bimala; Bimaḷā is the Odia form of Vimalā, “spotless” or “pure”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2523,7 +2523,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nīḷamādhabāṅku",
-        "gloss": "Lord Nilamadhaba (primordial blue form of Vishnu)",
+        "gloss": "Lord Nilamadhaba (primordial blue form of Vishnu); Nīḷa means “blue”; Mādhava is Kṛṣṇa’s lineage-name, “descendant of Madhu”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3237,7 +3237,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāẏaṇa",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Nārāyaṇa, Lord Viṣṇu, refuge of living beings, who rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3356,7 +3356,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāẏaṇa",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Nārāyaṇa, Lord Viṣṇu, refuge of living beings, who rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },

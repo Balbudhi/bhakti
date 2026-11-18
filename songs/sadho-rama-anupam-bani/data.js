@@ -69,7 +69,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, also the name of the Rāmāyaṇa’s hero, invoked here as the divine presence; the name means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -13,7 +13,21 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 9
+POLICY_VERSION = 10
+NAME_MEANING_GUIDANCE = """When a name has an evidenced literal or traditional meaning, include that meaning
+in its clickable gloss as well as its contextual referent; identity alone is not
+a substitute for explaining a known meaning. The public popup gives a coherent,
+direct description from within the tradition: meaning, identity and relevant
+devotional significance, without “traditionally explained/interpreted” labels.
+Keep lexical versus traditional explanations, alternatives and derivation caveats
+in private evidence. Do not invent historical etymologies or select an unrelated
+dictionary sense. When formation is unknown or disputed, give the supported
+identity and significance without inventing a name meaning. Choose the referent
+by the source language and passage: a deity, a poet's signature and an ordinary
+homophone are distinct.
+Preserve useful existing meanings and relevant cultural identity. Include a broader
+devotional sense when the passage needs it, without listing unrelated synonyms.
+"""
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
 speaker, addressee, agent, action/state, object, negation, tense and relationship.
@@ -27,9 +41,9 @@ conflict for reconstruction rather than making the English agree with an error.
 Translate ordinary words and philosophical concepts into precise English, using
 a short contextual phrase when no single word works. A term's membership in the
 legacy preserved-term registry is not a command to leave it untranslated. Keep
-genuine proper names, with their evidenced identity, relationship or literal
-meaning in the clickable gloss. Distinguish a person's name from a descriptive
-epithet; explain the epithet's operative meaning rather than flattening every
+genuine proper names, with their contextual referent and any evidenced literal
+or traditional meaning in the clickable gloss. Distinguish a person's name from
+a descriptive epithet; explain the epithet's operative meaning rather than flattening every
 divine title to Lord. Retain divine names and named forms such as Hari, Har, Rāma and Śyāma in the
 English; explain their contextual referent and evidenced meaning in the popup.
 Do not replace a name by generic God/Lord or by a different name of the same
@@ -37,10 +51,7 @@ deity. Distinguish divine Har/Hari from ordinary homophones meaning every,
 green, defeated or taken away; never apply a spelling-only substitution. A name
 used in Gurbāṇī or Sufi poetry does not by itself establish a specific incarnation
 narrative. Do not manufacture etymologies from a modern artist name.
-When a name has an evidenced literal or traditional meaning, include that meaning
-in its clickable gloss as well as its referent; identity alone is not a substitute
-for explaining a known meaning. Mark traditional explanations as such. Do not
-invent a name meaning when its formation is unknown or disputed.
+""" + NAME_MEANING_GUIDANCE + """
 
 Bhakti's default is English, including difficult philosophical words. First seek
 an accurate ordinary word; then a short precise phrase; then, if it preserves
@@ -66,8 +77,8 @@ member; do not reduce a specific relationship to an unexplained devotional title
 Do not infer a compound or Sanskrit ancestry from a similar spelling.
 
 An identified textual witness may supply a traditional formation or root-based
-explanation. Treat it as that witness's traditional analysis, not by itself as
-historical etymology or proof of a present-language sense. A Sanskrit explanation
+explanation. In private evidence, record it as that witness's traditional analysis,
+not by itself as historical etymology or proof of a present-language sense. A Sanskrit explanation
 does not establish the meaning of a Hindi, Punjabi or other-language occurrence
 without language-specific evidence and context. Preserve a root image when the
 passage activates it; do not insert protection into every pati occurrence merely
@@ -232,7 +243,7 @@ def naming_prompt(options, lines, *, review=False):
               'Check whether it identifies the same referent or relationship and explains any evidenced literal or traditional meaning; '
               'reject a wrong referent, missing evidenced meaning, or an empty name-only explanation. '
               'Treat the identity text as facts to check in that linked context, not mandatory standalone wording. '
-              'Keep repeated tokens separately linked. Label traditional explanations; never invent a derivation or dictionary citation. '
+              'Keep repeated tokens separately linked. Apply the shared name-meaning rule: direct public descriptions, with derivation caveats in private evidence; never invent a derivation or dictionary citation. '
               'Source evidence takes precedence over a conflicting convention: report the conflict rather than distort the source. '
               'Owner-locked English remains exact; any naming conflict is a separate finding, not permission to rewrite it.\n')
     return ('\nSCOPED NAMING CONVENTIONS:\n' + json.dumps(projected, ensure_ascii=False)
@@ -240,7 +251,7 @@ def naming_prompt(options, lines, *, review=False):
           'Preserve its English name/epithet and clicked identity while deriving grammar and all other wording from source. '
           'Allow natural grammatical inflection/possessives; keep repeated tokens separately linked. '
           'The gloss identity states required facts, not an exact entire popup: add an evidenced literal or traditional meaning '
-          'when known, label traditional explanations, and never invent a derivation or dictionary citation. '
+          'when known, following the shared name-meaning rule: direct public descriptions, with derivation caveats in private evidence. Never invent a derivation or dictionary citation. '
           'If source evidence conflicts, report it instead of distorting the source. Owner-locked English remains exact; '
           'a naming conflict is a separate finding, not permission to rewrite it. Review the primary popup as well as linked English.\n')
 

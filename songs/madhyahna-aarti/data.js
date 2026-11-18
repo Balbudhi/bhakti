@@ -175,7 +175,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai; master Sai",
+        "gloss": "Lord Sai; master Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -258,7 +258,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāñcī",
-        "gloss": "Baba's; of Baba",
+        "gloss": "Baba's; of Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -323,7 +323,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīñcī",
-        "gloss": "of Sai; Sai's",
+        "gloss": "of Sai; Sai's; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -341,7 +341,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāñcī",
-        "gloss": "of Baba; Baba's",
+        "gloss": "of Baba; Baba's; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -667,7 +667,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sāīñce",
-        "gloss": "of Sai; Sai's",
+        "gloss": "of Sai; Sai's; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -762,7 +762,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Kṛṣṇanātha",
-        "gloss": "Lord Krishna; Master Krishna",
+        "gloss": "Lord Krishna; Master Krishna; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -863,7 +863,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba",
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -940,7 +940,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "revered saint of Śirḍī",
+        "gloss": "revered saint of Śirḍī; Sāī means “master” or “lord”; Bābā means “father”, used respectfully for a spiritual elder",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1070,7 +1070,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "revered saint of Śirḍī",
+        "gloss": "revered saint of Śirḍī; Sāī means “master” or “lord”; Bābā means “father”, used respectfully for a spiritual elder",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1224,7 +1224,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīraṅga,",
-        "gloss": "Lord Vishnu / Shriranga",
+        "gloss": "Śrīraṅga, Viṣṇu; at Śrīraṅgam he is worshipped as the reclining Raṅganātha",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1236,7 +1236,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīraṅga",
-        "gloss": "Lord Vishnu / Shriranga",
+        "gloss": "Śrīraṅga, Viṣṇu; at Śrīraṅgam he is worshipped as the reclining Raṅganātha",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3611,7 +3611,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthā",
-        "gloss": "O Lord Sai; O Master Sai",
+        "gloss": "O Lord Sai; O Master Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3919,7 +3919,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "revered saint of Śirḍī",
+        "gloss": "revered saint of Śirḍī; Sāī means “master” or “lord”; Bābā means “father”, used respectfully for a spiritual elder",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3978,7 +3978,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāībābā",
-        "gloss": "revered saint of Śirḍī",
+        "gloss": "revered saint of Śirḍī; Sāī means “master” or “lord”; Bābā means “father”, used respectfully for a spiritual elder",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4227,7 +4227,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāṃśī",
-        "gloss": "unto Baba",
+        "gloss": "unto Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4280,7 +4280,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīṃśī",
-        "gloss": "unto Sai",
+        "gloss": "unto Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4298,7 +4298,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāṃśī",
-        "gloss": "unto Baba",
+        "gloss": "unto Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5184,7 +5184,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "nārāyaṇāyeti",
-        "gloss": "saying 'unto Narayana'; as unto Narayana",
+        "gloss": "saying 'unto Narayana'; as unto Narayana; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5237,7 +5237,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmanārāyaṇaṃ",
-        "gloss": "Viṣṇu in the form of Rāma",
+        "gloss": "Viṣṇu in the form of Rāma; Rāma means “delightful”; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5272,7 +5272,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kṛṣṇadāmodaraṃ",
-        "gloss": "Krishna-Damodara (having a rope tied around his waist)",
+        "gloss": "Krishna-Damodara (having a rope tied around his waist); the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5284,7 +5284,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harim",
-        "gloss": "Lord Hari (remover of distress and sins)",
+        "gloss": "Lord Hari; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5443,49 +5443,49 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hare",
-        "gloss": "O Hari; O Lord / O Divine Energy",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hare",
-        "gloss": "O Hari; O Lord",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hare",
-        "gloss": "O Hari",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hare",
-        "gloss": "O Hari",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5550,49 +5550,49 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hare",
-        "gloss": "O Hari; O Divine Energy",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "O Krishna",
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hare",
-        "gloss": "O Hari",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "O Krishna",
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hare",
-        "gloss": "O Hari",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hare",
-        "gloss": "O Hari",
+        "gloss": "O Hari, the divine Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5698,7 +5698,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariḥ",
-        "gloss": "Lord Hari; the Lord who removes distress",
+        "gloss": "Lord Hari; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6106,7 +6106,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kuberāya",
-        "gloss": "unto Kubera",
+        "gloss": "to Kubera, the god of wealth and treasure",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6598,13 +6598,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Lord Narayana",
+        "gloss": "Nārāyaṇa, Viṣṇu, the refuge of living beings, who rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vāsudevāya",
-        "gloss": "unto Vasudeva",
+        "gloss": "unto Vasudeva; Vāsudeva is Kṛṣṇa, the son of Vasudeva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6622,7 +6622,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai / Sai Nath",
+        "gloss": "Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6871,7 +6871,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śeṣa",
-        "gloss": "the thousand-headed serpent",
+        "gloss": "the thousand-headed serpent; Śeṣa means “that which remains”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6936,7 +6936,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthā",
-        "gloss": "O Lord Sai / Sai Nath",
+        "gloss": "O Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7521,7 +7521,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīpremā",
-        "gloss": "unto love for Sai",
+        "gloss": "unto love for Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8142,7 +8142,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇanāthā",
-        "gloss": "Lord Krishna",
+        "gloss": "Lord Krishna; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -8556,7 +8556,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba",
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9699,7 +9699,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harī",
-        "gloss": "of Hari",
+        "gloss": "of Hari; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9893,7 +9893,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātham",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -10612,7 +10612,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmamevāvatīrṇam",
-        "gloss": "Rama himself descended",
+        "gloss": "Rama himself descended; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -10682,7 +10682,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīsāīśa",
-        "gloss": "O Holy Lord Sai",
+        "gloss": "O Holy Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10853,7 +10853,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīmatsaīpareśapādakamalānnānyaccharaṇyaṃ",
-        "gloss": "other than the lotus feet of the venerable Supreme Lord Sai, there is no other refuge",
+        "gloss": "other than the lotus feet of the venerable Supreme Lord Sai, there is no other refuge; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10900,7 +10900,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīrūpadhara",
-        "gloss": "O bearer of Sai's form",
+        "gloss": "O bearer of Sai's form; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11036,7 +11036,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -11124,7 +11124,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11331,7 +11331,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīśa",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11390,7 +11390,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīsāīnāthacaraṇāmṛtapūtacittāḥ",
-        "gloss": "those whose minds are purified by the nectar of Lord Sai Nath's feet",
+        "gloss": "those whose minds are purified by the nectar of Lord Sai Nath's feet; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11579,7 +11579,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthasya",
-        "gloss": "of Lord Sai Nath",
+        "gloss": "of Lord Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11827,7 +11827,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -11904,7 +11904,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11987,7 +11987,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },

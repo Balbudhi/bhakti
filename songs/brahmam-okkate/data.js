@@ -384,7 +384,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīhariyē",
-        "gloss": "the blessed Viṣṇu alone"
+        "gloss": "blessed Hari alone: Viṣṇu, the remover of evil and sin"
       },
       {
         "roman": "antarātma",
@@ -420,7 +420,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariyē",
-        "gloss": "Viṣṇu alone; emphatic ē"
+        "gloss": "Hari alone: Viṣṇu, the remover of evil and sin; ē gives emphasis"
       },
       {
         "roman": "antarātma",
@@ -450,7 +450,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīhariyē",
-        "gloss": "the blessed Viṣṇu alone"
+        "gloss": "blessed Hari alone: Viṣṇu, the remover of evil and sin"
       },
       {
         "roman": "antarātma",

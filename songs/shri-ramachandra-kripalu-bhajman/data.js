@@ -98,7 +98,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sītāsamāropitavāmabhāgam",
-        "gloss": "one whose left side is graced by Sītā [sītā-samāropita-vāma-bhāgam]",
+        "gloss": "one whose left side is graced by Sītā [sītā-samāropita-vāma-bhāgam]; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -176,7 +176,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmaṁ",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -434,7 +434,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1136,7 +1136,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śeṣa",
-        "gloss": "the thousand-headed cosmic serpent",
+        "gloss": "the thousand-headed cosmic serpent; Śeṣa means “that which remains”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1340,7 +1340,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma,",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1352,7 +1352,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma,",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1370,7 +1370,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra",
+        "gloss": "hero of the Rāmāyaṇa and Viṣṇu’s avatāra; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       }

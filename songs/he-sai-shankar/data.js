@@ -352,7 +352,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rudra",
-        "gloss": "fierce form of Śiva",
+        "gloss": "Rudra, Śiva the roarer, in the instrument name Rudra-vīṇā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -411,7 +411,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rudra",
-        "gloss": "fierce form of Śiva",
+        "gloss": "Rudra, Śiva the roarer, in the instrument name Rudra-vīṇā",
         "concept_key": "",
         "preserve_in_english": false
       },

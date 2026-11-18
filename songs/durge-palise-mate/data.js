@@ -127,7 +127,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhargādi",
-        "gloss": "Śiva and the others; bharga is an epithet of Śiva"
+        "gloss": "Śiva and the others; bharga is an epithet of Śiva; Bharga means “radiance” or “splendour”"
       },
       {
         "roman": "sura",

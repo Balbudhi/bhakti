@@ -1855,7 +1855,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kanhaiyā",
-        "gloss": "beloved Krishna",
+        "gloss": "beloved Krishna; An affectionate name of Kṛṣṇa, whose name means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },

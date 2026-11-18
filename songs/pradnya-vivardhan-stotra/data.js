@@ -117,7 +117,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sanatkumāra",
-        "gloss": "the sage",
+        "gloss": "Sanatkumāra, the ever-youthful sage",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -164,7 +164,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kārtikeyo",
-        "gloss": "Kārtikeya",
+        "gloss": "Kārttikeya, child of the Kṛttikās, his starry foster-mothers",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -293,7 +293,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīskanda",
-        "gloss": "glorious Skanda",
+        "gloss": "glorious Skanda, the attacker and divine commander",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -346,7 +346,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kārtikeyo'gninandanaḥ",
-        "gloss": "Kārtikeya, the son of Agni",
+        "gloss": "Kārttikeya, child of the Kṛttikā foster-mothers and son and delight of Agni, the fire-god",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -417,7 +417,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaṅkarasambhavaḥ",
-        "gloss": "born of Śaṅkara (Śiva)",
+        "gloss": "born of Śaṅkara, Śiva the beneficent one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -593,7 +593,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sanatkumāro",
-        "gloss": "Sanatkumāra (the ancient youth)",
+        "gloss": "Sanatkumāra, the ever-youthful one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1000,7 +1000,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīmatkārtikeyastotraṁ",
-        "gloss": "the venerable hymn to Kārtikeya",
+        "gloss": "the venerable hymn to Kārttikeya, child of the Kṛttikā foster-mothers",
         "concept_key": "",
         "preserve_in_english": false
       },

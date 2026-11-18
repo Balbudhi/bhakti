@@ -333,13 +333,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśā",
-        "gloss": "O Ganesha (the remover of obstacles)",
+        "gloss": "O Gaṇeśa, lord of Śiva’s attendant hosts and remover of obstacles",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari",
+        "gloss": "Lord Hari, the remover of evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -534,7 +534,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Lord Hari",
+        "gloss": "Lord Hari, the remover of evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -552,7 +552,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari",
+        "gloss": "Lord Hari, the remover of evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -617,13 +617,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma's consort",
+        "gloss": "Sītā, Rāma’s consort; furrow, recalling her emergence from the ploughed earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -635,7 +635,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇā",
-        "gloss": "Lord Krishna (vocative)",
+        "gloss": "O Kṛṣṇa, the dark-hued lord",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -676,7 +676,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hanumāna",
-        "gloss": "Lord Hanuman",
+        "gloss": "Lord Hanumān, the one with prominent jaws and devoted helper of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },

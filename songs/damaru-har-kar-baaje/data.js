@@ -447,7 +447,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "of Hara (Shiva)",
+        "gloss": "of Hara, Śiva the remover or destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1105,13 +1105,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "Shiva",
+        "gloss": "Hara, Śiva the remover or destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hara",
-        "gloss": "Shiva / repeated praise",
+        "gloss": "Hara, Śiva the remover or destroyer; repeated praise",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1481,7 +1481,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "of Hara (Shiva)",
+        "gloss": "of Hara, Śiva the remover or destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1499,7 +1499,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "of Hara (Shiva)",
+        "gloss": "of Hara, Śiva the remover or destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1517,7 +1517,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "of Hara (Shiva)",
+        "gloss": "of Hara, Śiva the remover or destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },

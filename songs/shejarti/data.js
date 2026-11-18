@@ -139,7 +139,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmīnārāyaṇāya",
-        "gloss": "to Lakṣmīnārāyaṇa (Vishnu together with Lakshmi)",
+        "gloss": "to Lakṣmīnārāyaṇa (Vishnu together with Lakshmi); Lakṣmī means “fortune” or “prosperity”; Nārāyaṇa is “he whose resting place is the waters”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -186,7 +186,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇarāmaśivamārutyādirūpāya",
-        "gloss": "to the one having the forms of Krishna, Rama, Shiva, Maruti, and others",
+        "gloss": "to the one having the forms of Krishna, Rama, Shiva, Maruti, and others; The names evoke the dark one (Kṛṣṇa), delightful one (Rāma), auspicious one (Śiva), and son of the Wind (Māruti).",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3759,7 +3759,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāsudevāya",
-        "gloss": "to Vasudeva / the indwelling luminous Lord",
+        "gloss": "to Vāsudeva, a name of Kṛṣṇa invoked here for Sāī; Vāsudeva means “son or descendant of Vasudeva”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4711,7 +4711,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dakṣiṇāmūrtaye",
-        "gloss": "to Dakshinamurti (Lord Shiva manifest as the primordial silent Guru)",
+        "gloss": "to Dakshinamurti (Lord Shiva manifest as the primordial silent Guru); Dakṣiṇāmūrti is Śiva in his benign form as the teacher.",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -519,7 +519,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇēś",
-        "gloss": "Lord of Beginnings",
+        "gloss": "Gaṇeśa, lord of Śiva’s attendant hosts and remover of obstacles, invoked at beginnings",
         "concept_key": "",
         "preserve_in_english": false
       },

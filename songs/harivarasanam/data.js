@@ -201,7 +201,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariharātmajaṃ",
-        "gloss": "son of Hari and Hara; Viṣṇu and Śiva"
+        "gloss": "son of Hari (Viṣṇu, remover of evil and sin) and Hara (Śiva, the destroyer)"
       },
       {
         "roman": "svāmi",

@@ -402,13 +402,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "sacred name chanted",
+        "gloss": "Rāma, the Rāmāyaṇa’s hero, whose name is chanted here; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāmā",
-        "gloss": "sacred name chanted",
+        "gloss": "Rāma, the Rāmāyaṇa’s hero, whose name is chanted here; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }

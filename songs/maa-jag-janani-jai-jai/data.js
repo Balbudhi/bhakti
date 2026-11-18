@@ -1066,7 +1066,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "Shiva",
+        "gloss": "Hara, Śiva the remover or destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1149,7 +1149,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ramā",
-        "gloss": "Lakshmi, consort of Vishnu",
+        "gloss": "Ramā, the delightful goddess, fortune and splendour personified; Lakṣmī, consort of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1416,13 +1416,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna [the beloved avatar]",
+        "gloss": "Kṛṣṇa, the dark-hued one, the beloved avatāra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1434,7 +1434,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma's consort",
+        "gloss": "Sītā, Rāma’s consort; furrow, recalling her emergence from the ploughed earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1452,7 +1452,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rādhā",
-        "gloss": "Kṛṣṇa's beloved and devotee",
+        "gloss": "Rādhā, prosperity or success; Kṛṣṇa’s beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1511,7 +1511,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rādhā",
-        "gloss": "Kṛṣṇa's beloved and devotee",
+        "gloss": "Rādhā, prosperity or success; Kṛṣṇa’s beloved and devotee",
         "concept_key": "",
         "preserve_in_english": false
       }

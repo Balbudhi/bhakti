@@ -73,7 +73,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "dattā",
-        "gloss": "O Datta, the divine son of Atri"
+        "gloss": "O Datta, the divine son of Atri; Datta means “given” or “granted”."
       },
       {
         "roman": "brahmacārī",
@@ -137,7 +137,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dattā",
-        "gloss": "O Datta, the divine son of Atri"
+        "gloss": "O Datta, the divine son of Atri; Datta means “given” or “granted”."
       }
     ],
     "nameTable": false,
@@ -271,7 +271,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "dattā",
-        "gloss": "O Datta, the divine son of Atri"
+        "gloss": "O Datta, the divine son of Atri; Datta means “given” or “granted”."
       },
       {
         "roman": "tribhuvanāt",

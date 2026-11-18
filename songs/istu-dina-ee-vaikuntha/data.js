@@ -764,7 +764,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kēśavana",
-        "gloss": "a name of Viṣṇu; object of seeing"
+        "gloss": "a name of Viṣṇu; object of seeing; Keśava means “having fine hair”"
       },
       {
         "roman": "nā",

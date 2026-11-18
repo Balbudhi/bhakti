@@ -445,7 +445,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -815,7 +815,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari (Vishnu / Rama)",
+        "gloss": "Lord Hari (Vishnu / Rama); Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },

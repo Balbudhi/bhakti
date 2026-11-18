@@ -627,13 +627,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Siya",
-        "gloss": "Sītā (goddess Sītā)",
+        "gloss": "Sītā (goddess Sītā); Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -105,7 +105,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "girijādhīśā",
-        "gloss": "O Lord of Girijā [Pārvatī]",
+        "gloss": "O Lord of Girijā, Pārvatī as daughter of the mountain Himālaya",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -152,7 +152,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "girijādhīśā",
-        "gloss": "O Lord of Girijā [Pārvatī]",
+        "gloss": "O Lord of Girijā, Pārvatī as daughter of the mountain Himālaya",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -762,7 +762,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "haranikaṭe",
-        "gloss": "beside Hara [Śiva]",
+        "gloss": "beside Hara, Śiva the destroyer",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2432,7 +2432,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śivasāyujyaṃ",
-        "gloss": "liberation of intimate union with Śiva",
+        "gloss": "liberation in intimate union with Śiva, the auspicious one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2609,7 +2609,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānīsahitaṃ",
-        "gloss": "together with Goddess Bhavānī [Pārvatī]",
+        "gloss": "together with Bhavānī, Pārvatī as the consort of Bhava (Śiva)",
         "concept_key": "",
         "preserve_in_english": false
       },

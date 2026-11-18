@@ -79,11 +79,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīhanumaṃta",
-        "gloss": "the revered Hanumān, son of the wind god"
+        "gloss": "the revered Hanumān, son of the wind god; Hanumān means “having prominent jaws”"
       },
       {
         "roman": "śrīhanumaṃta",
-        "gloss": "the revered Hanumān, repeated address"
+        "gloss": "the revered Hanumān, repeated address; Rāma’s monkey devotee; Hanumān means “having prominent jaws”"
       }
     ],
     "nameTable": false,
@@ -135,7 +135,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumaṃtanu",
-        "gloss": "Hanumān, son of the wind god"
+        "gloss": "Hanumān, son of the wind god; Hanumān means “having prominent jaws”"
       }
     ],
     "nameTable": false,
@@ -237,11 +237,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīhanumaṃta",
-        "gloss": "the revered Hanumān"
+        "gloss": "the revered Hanumān; Rāma’s monkey devotee; Hanumān means “having prominent jaws”"
       },
       {
         "roman": "śrīhanumaṃta",
-        "gloss": "the revered Hanumān, repeated"
+        "gloss": "the revered Hanumān, repeated; Rāma’s monkey devotee; Hanumān means “having prominent jaws”"
       },
       {
         "roman": "ā",
@@ -249,7 +249,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīhanumaṃta",
-        "gloss": "the revered Hanumān, repeated"
+        "gloss": "the revered Hanumān, repeated; Rāma’s monkey devotee; Hanumān means “having prominent jaws”"
       }
     ],
     "nameTable": false,
@@ -289,11 +289,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hanumaṃta",
-        "gloss": "Hanumān, son of the wind god"
+        "gloss": "Hanumān, son of the wind god; Hanumān means “having prominent jaws”"
       },
       {
         "roman": "hanumaṃta",
-        "gloss": "Hanumān, repeated address"
+        "gloss": "Hanumān, repeated address; Rāma’s monkey devotee; Hanumān means “having prominent jaws”"
       },
       {
         "roman": "ghaṭikācaladi",
@@ -747,7 +747,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīpuraṃdaraviṭhalana",
-        "gloss": "of Śrī Purandara Viṭṭhala, Viṣṇu worshipped under the poet’s signature"
+        "gloss": "of Śrī Purandara Viṭṭhala, Viṣṇu worshipped under the poet’s signature; Purandara means “destroyer of strongholds”"
       }
     ],
     "nameTable": false,

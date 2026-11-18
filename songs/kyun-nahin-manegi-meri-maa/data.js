@@ -1919,7 +1919,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambe",
-        "gloss": "Amba",
+        "gloss": "Amba; Ambā means “mother”, addressing the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },

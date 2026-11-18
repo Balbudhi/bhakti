@@ -275,7 +275,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "keśavā",
-        "gloss": "the Lord Kṛṣṇa or Viṣṇu, addressed by the name Keśava"
+        "gloss": "the Lord Kṛṣṇa or Viṣṇu, addressed by the name Keśava; Keśava means “having fine or abundant hair”."
       }
     ],
     "nameTable": false,

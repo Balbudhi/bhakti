@@ -588,7 +588,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanūmat",
-        "gloss": "the monkey hero devoted to Rāma; qualifies recollection"
+        "gloss": "Hanūmat, the monkey hero with prominent jaws, devoted to Rāma; qualifies recollection"
       },
       {
         "roman": "smaraṇādbhavet",
@@ -620,7 +620,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hanūmat",
-        "gloss": "the monkey hero devoted to Rāma; qualifies recollection"
+        "gloss": "Hanūmat, the monkey hero with prominent jaws, devoted to Rāma; qualifies recollection"
       },
       {
         "roman": "smaraṇādbhavet",

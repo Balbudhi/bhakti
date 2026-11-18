@@ -571,7 +571,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "haridāsa",
-        "gloss": "servant of Hari, Viṣṇu"
+        "gloss": "servant of Hari, Viṣṇu; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "īśa",
@@ -1019,7 +1019,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇana",
-        "gloss": "of Kṛṣṇa, the divine Lord"
+        "gloss": "of Kṛṣṇa, the divine Lord; Kṛṣṇa means “dark” or “dark-hued”"
       },
       {
         "roman": "pautra",

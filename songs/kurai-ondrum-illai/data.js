@@ -101,7 +101,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -161,7 +161,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -221,7 +221,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōvindā",
-        "gloss": "a name of Kṛṣṇa (vocative address)",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -281,7 +281,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -461,7 +461,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -515,13 +515,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōvindā",
-        "gloss": "a name of Kṛṣṇa (vocative address)",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kōvindā",
-        "gloss": "a name of Kṛṣṇa (vocative address)",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -587,13 +587,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -653,7 +653,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -797,7 +797,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -977,7 +977,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kēśavā",
-        "gloss": "a name of Kṛṣṇa (vocative address)",
+        "gloss": "O Keśava, the fine-haired Kṛṣṇa",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1313,7 +1313,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṇā",
-        "gloss": "O Kṛṣṇa",
+        "gloss": "O Kaṇṇā, Kṛṣṇa the dark-hued one",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1379,13 +1379,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kōvindā",
-        "gloss": "a name of Kṛṣṇa (vocative address)",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kōvindā",
-        "gloss": "a name of Kṛṣṇa (vocative address)",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord",
         "concept_key": "",
         "preserve_in_english": false
       }

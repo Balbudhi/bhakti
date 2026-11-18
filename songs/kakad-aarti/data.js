@@ -443,7 +443,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāth",
-        "gloss": "Lord Sai"
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "pūraṇ",
@@ -1086,11 +1086,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "harī",
-        "gloss": "Harī (Hari), a name of Viṣṇu in this comparison"
+        "gloss": "Harī (Hari), a name of Viṣṇu in this comparison; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "har",
-        "gloss": "Har (Hara), a name of Śiva in this comparison"
+        "gloss": "Har (Hara), a name of Śiva in this comparison; Hara means “the remover” or “destroyer”"
       },
       {
         "roman": "se",
@@ -2637,7 +2637,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāth",
-        "gloss": "Lord Sai"
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "ne",
@@ -2863,7 +2863,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāth",
-        "gloss": "Lord Sai"
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "Mahārāj",
@@ -2932,7 +2932,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Sāīṁ",
-        "gloss": "O Sai"
+        "gloss": "O Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "raham",
@@ -3347,7 +3347,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīṁ",
-        "gloss": "O Sai"
+        "gloss": "O Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       }
     ],
     "grammarNote": "'Karo' is an honorific imperative; 'raham nazar karo' asks the addressee to look upon the speaker with mercy. 'More' is dialectal possessive.",
@@ -4222,7 +4222,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīharī",
-        "gloss": "O Sri Hari"
+        "gloss": "O Sri Hari; Hari is “the remover” of evil and suffering"
       }
     ],
     "grammarNote": "Devotional allusion to Saint Janabai (Nāmācī Jānī); dāsī dubalī are predicate adjectives qualifying maĩ.",
@@ -5122,7 +5122,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī̃nāthā",
-        "gloss": "O Sai-Lord"
+        "gloss": "O Sai-Lord; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "turanta",
@@ -5754,7 +5754,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramādhava",
-        "gloss": "Lord Viṣṇu"
+        "gloss": "Lord Viṣṇu; Ramādhava means “Ramā’s husband”; Ramā is Lakṣmī, the goddess of fortune"
       },
       {
         "roman": "manāō",
@@ -5766,7 +5766,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramādhava",
-        "gloss": "Lord Viṣṇu"
+        "gloss": "Lord Viṣṇu; Ramādhava means “Ramā’s husband”; Ramā is Lakṣmī, the goddess of fortune"
       }
     ],
     "grammarNote": "Epithet apposition identifying Sai with Ramadhava, with transitive imperative manāō.",
@@ -5993,7 +5993,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Kṛṣṇa",
-        "gloss": "Krishna"
+        "gloss": "Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”"
       },
       {
         "roman": "Nāthā",
@@ -6513,7 +6513,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīraṅga",
-        "gloss": "Lord Vishnu"
+        "gloss": "Śrīraṅga, Viṣṇu; at Śrīraṅgam he is worshipped as the reclining Raṅganātha"
       }
     ],
     "grammarNote": "Mōkṣa mārgī kō is the indirect object, rāha the direct object, dṛṣṭi sē the instrumental modifier, and Śrīraṅga the subject.",
@@ -6584,7 +6584,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śrīraṅga",
-        "gloss": "a name of Viṣṇu"
+        "gloss": "Śrīraṅga, Viṣṇu; at Śrīraṅgam he is worshipped as the reclining Raṅganātha"
       },
       {
         "roman": "āratī",
@@ -8024,7 +8024,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Dattāvadhūtā",
-        "gloss": "O Datta Avadhuta"
+        "gloss": "O Datta, “the given one”, Dattātreya; Avadhūta is an ascetic who has cast off worldly ties"
       },
       {
         "roman": "ōm",
@@ -9227,7 +9227,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthā",
-        "gloss": "O Sai Nath"
+        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”"
       },
       {
         "roman": "tvatpada",
@@ -10606,7 +10606,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇāyeti",
-        "gloss": "to Narayana (nārāyaṇāya) thus (iti)"
+        "gloss": "to Narayana (nārāyaṇāya) thus (iti); Nārāyaṇa is the refuge of living beings and rests upon the primordial waters"
       },
       {
         "roman": "samarpayāmi",
@@ -10669,11 +10669,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmanārāyaṇaṁ",
-        "gloss": "Viṣṇu in the form of Rāma"
+        "gloss": "Viṣṇu in the form of Rāma; Rāma means “delightful”; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters"
       },
       {
         "roman": "kṛṣṇadāmodaraṁ",
-        "gloss": "Kṛṣṇa as Dāmodara, the one with a rope around his waist"
+        "gloss": "Kṛṣṇa as Dāmodara, the one with a rope around his waist; Kṛṣṇa means “dark” or “dark-hued”"
       },
       {
         "roman": "vāsudevaṁ",
@@ -10681,7 +10681,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harim",
-        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa"
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa; Hari is “the remover” of evil and suffering"
       }
     ],
     "grammarNote": "Achyutashtakam opening; series of accusative divine epithets governed by 'bhaje' in the subsequent line.",
@@ -10748,7 +10748,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmacandraṁ",
-        "gloss": "Ramachandra (accusative singular)"
+        "gloss": "Rāmacandra, “moon-like Rāma”, the hero of the Rāmāyaṇa (accusative singular); Rāma means “delightful”"
       },
       {
         "roman": "bhaje",
@@ -10803,35 +10803,35 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā (vocative singular)"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering (vocative singular)"
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering"
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering"
       },
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering"
       }
     ],
     "grammarNote": "Maha-mantra verse composed entirely of vocative singular divine names.",
@@ -10894,35 +10894,35 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā (vocative singular)"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering (vocative singular)"
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "O Krishna (vocative singular)"
+        "gloss": "O Krishna (vocative singular); the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”"
       },
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering"
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "O Krishna"
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”"
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "O Krishna"
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”"
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "O Krishna"
+        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”"
       },
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering"
       },
       {
         "roman": "hare",
-        "gloss": "O Hari / O Harā"
+        "gloss": "O Hari, the divine Lord who removes evil and suffering"
       }
     ],
     "grammarNote": "Second half of the Maha-mantra consisting of vocative invocations of Krishna and Hari/Hara.",
@@ -11026,7 +11026,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariḥ",
-        "gloss": "Hari; liturgical invocation"
+        "gloss": "Hari; liturgical invocation; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "oṁ",
@@ -11238,7 +11238,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇāya",
-        "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
+        "gloss": "to Vaiśravaṇa, “son of Viśravas”, Kubera, lord of wealth (dative singular)"
       },
       {
         "roman": "kurmahe",
@@ -11323,7 +11323,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vaiśravaṇo",
-        "gloss": "Vaiśravaṇa, Kubera (vaiśravaṇaḥ, nominative singular)"
+        "gloss": "Vaiśravaṇa, “son of Viśravas”, Kubera, lord of wealth (nominative singular)"
       },
       {
         "roman": "dadhātu",
@@ -11390,11 +11390,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kuberāya",
-        "gloss": "to Kubera (dative singular)"
+        "gloss": "to Kubera, the god of wealth and treasure"
       },
       {
         "roman": "vaiśravaṇāya",
-        "gloss": "to Vaiśravaṇa, Kubera (dative singular)"
+        "gloss": "to Vaiśravaṇa, “son of Viśravas”, Kubera, lord of wealth (dative singular)"
       },
       {
         "roman": "mahārājāya",
@@ -11774,11 +11774,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Lord Viṣṇu"
+        "gloss": "Lord Viṣṇu; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters"
       },
       {
         "roman": "vāsudevāya",
-        "gloss": "to Vasudeva (dative singular)"
+        "gloss": "to Vasudeva (dative singular); Vāsudeva is Kṛṣṇa, the son of Vasudeva"
       },
       {
         "roman": "saccidānanda",
@@ -11831,7 +11831,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai"
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "mahārāja",
@@ -12032,7 +12032,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śeṣa",
-        "gloss": "the serpent"
+        "gloss": "the serpent; Śeṣa means “that which remains”"
       },
       {
         "roman": "gāte",
@@ -12320,7 +12320,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthā",
-        "gloss": "O Sai Nath (vocative)"
+        "gloss": "O Sai Nath (vocative); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”"
       }
     ],
     "grammarNote": "Refrain line offering formal prostration directly to Sri Sai Nath.",
@@ -13329,7 +13329,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇanāthā",
-        "gloss": "O Lord Krishna"
+        "gloss": "O Lord Krishna; Kṛṣṇa means “dark” or “dark-hued”"
       }
     ],
     "grammarNote": "Imperative prayer addressed to Krishna: 'rāsa mere saṅga karo' (dance the rasa with me).",
@@ -13605,7 +13605,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba"
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā"
       },
       {
         "roman": "sāī",
@@ -13735,7 +13735,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba"
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā"
       }
     ],
     "grammarNote": "Vocative compounds leading into the refrain imperative. Anasūyā-Atri-kumārā conventionally invokes Dattātreya, while the grammatical addressee remains Sai from the refrain.",
@@ -13930,7 +13930,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba"
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā"
       }
     ],
     "grammarNote": "Nominal sequence of traditional abodes of Dattatreya (drinking Tunga water, sleeping in Mahur).",
@@ -14153,7 +14153,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba"
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā"
       }
     ],
     "grammarNote": "Present habitual honorific clause: 'dete ho mukti cārī' (you grant the four types of liberation).",
@@ -14362,7 +14362,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba"
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā"
       }
     ],
     "grammarNote": "Verb 'sohata' (adorns) with compound subject 'nāgajaṭā mukuṭa' and accusative/locative 'māthā'.",
@@ -14589,7 +14589,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba"
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā"
       }
     ],
     "grammarNote": "Adverbial pair 'dina rajanī' (day and night) with idiomatic 'saṅkaṭa chaṭanī karate' (clearing away troubles).",
@@ -14782,7 +14782,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "of Lord Hari"
+        "gloss": "of Lord Hari; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "guṇa",
@@ -14806,7 +14806,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba"
+        "gloss": "O Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā"
       }
     ],
     "grammarNote": "Purposive/inceptive construction with oblique infinitive: 'gāne lagāyā' (engaged in singing).",
@@ -14976,7 +14976,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātham",
-        "gloss": "Lord Sai"
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       }
     ],
     "grammarNote": "Finite verb 'namāmi' (1sg pres.) with sandhi to 'īśvaram', followed by accusative epithets.",
@@ -15676,7 +15676,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmam",
-        "gloss": "Lord Rama"
+        "gloss": "Lord Rama; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "ēvāvatīrṇam",
@@ -15760,7 +15760,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīsāyīśa",
-        "gloss": "O Lord Sri Sai"
+        "gloss": "O Lord Sri Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "kṛpānidhē",
@@ -15918,7 +15918,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīmatsāyiparēśapādakamalān",
-        "gloss": "other than the lotus feet of the illustrious supreme Lord Sai"
+        "gloss": "other than the lotus feet of the illustrious supreme Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "nānyac",
@@ -15964,7 +15964,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāyīrūpadhara",
-        "gloss": "O bearer of the form of Sai"
+        "gloss": "O bearer of the form of Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "rāghavōttamam",
@@ -16127,7 +16127,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyinātha",
-        "gloss": "O Lord Sai"
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       }
     ],
     "grammarNote": "Compound kṛpātapatraṃ (kṛpā + ātapatram) functions as subject for the optative/imperative verb in line 226.",
@@ -16221,7 +16221,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyinātha",
-        "gloss": "O Lord Sai"
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       }
     ],
     "grammarNote": "Vocative singular invocations addressed to Sai Baba.",
@@ -16473,7 +16473,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyīśa",
-        "gloss": "O Lord Sai"
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "gurō",
@@ -16520,7 +16520,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīsāyināthacaraṇāmṛtapūtacittās",
-        "gloss": "those whose minds are purified by the nectar of the feet of Lord Sri Sai"
+        "gloss": "those whose minds are purified by the nectar of the feet of Lord Sri Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       }
     ],
     "grammarNote": "Nominative plural masculine bahuvrīhi compound, joined in sandhi with line 236 (cittāḥ -> cittās before t-).",
@@ -16755,7 +16755,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyināthasya",
-        "gloss": "of Sai Nath"
+        "gloss": "of Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”"
       }
     ],
     "grammarNote": "Both nouns are masculine genitive singulars ('sadguru' -> 'sadguroḥ', 'sāyinātha' -> 'sāyināthasya') specifying whose grace is obtained in line 242.",
@@ -17002,7 +17002,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyinātha",
-        "gloss": "O Sai Nath"
+        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”"
       }
     ],
     "grammarNote": "Vocative addresses: 'karuṇābdhē' (voc. sg. of karuṇābdhi), 'śrīprabhō' (voc. sg. of śrīprabhu), 'sāyinātha' (voc. sg. of sāyinātha). 'jaya jaya' is an imperative repetition used as an acclamation.",
@@ -17059,7 +17059,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyināth",
-        "gloss": "Sai Nath"
+        "gloss": "Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”"
       },
       {
         "roman": "mahārāj",
@@ -17140,7 +17140,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyinātha",
-        "gloss": "Sai Nath"
+        "gloss": "Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”"
       },
       {
         "roman": "mahārāja",

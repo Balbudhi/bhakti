@@ -106,7 +106,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārvati",
-        "gloss": "the goddess Pārvatī; beginning of the phrase Pārvatī’s son, interrupted here"
+        "gloss": "the goddess Pārvatī; beginning of the phrase Pārvatī’s son, interrupted here; Pārvatī is “the mountain’s daughter”, referring to her father Himavat."
       }
     ],
     "sourceWords": [
@@ -286,7 +286,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīpurandara",
-        "gloss": "revered Purandara; interrupted beginning of the deity-name Purandara Viṭṭhala"
+        "gloss": "revered Purandara; interrupted beginning of the deity-name Purandara Viṭṭhala; Purandara means “destroyer of strongholds”; here it belongs to the name Purandara Viṭṭhala."
       }
     ],
     "sourceWords": [
@@ -316,11 +316,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīpurandara",
-        "gloss": "revered Purandara; first part of the poet’s signature deity-name"
+        "gloss": "revered Purandara; first part of the poet’s signature deity-name; Purandara means “destroyer of strongholds”; here it belongs to the name Purandara Viṭṭhala."
       },
       {
         "roman": "viṭhalana",
-        "gloss": "of Viṭṭhala; genitive form"
+        "gloss": "of Viṭṭhala, the form of Viṣṇu/Kṛṣṇa worshipped at Paṇḍharpur; the deity in Purandaradāsa’s signature"
       },
       {
         "roman": "nijadāsana",

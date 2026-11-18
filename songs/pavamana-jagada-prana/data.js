@@ -437,7 +437,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmacandrana",
-        "gloss": "of Rāmacandra, Rāma of the Rāmāyaṇa"
+        "gloss": "of Rāmacandra, “moon-like Rāma”, the hero of the Rāmāyaṇa; Rāma means “delightful”"
       },
       {
         "roman": "nija",
@@ -1319,7 +1319,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vijayaviṭhṭhalana",
-        "gloss": "the Lord Viṣṇu/Viṭhṭhala named in Vijayadāsa’s signature, object of show"
+        "gloss": "the Lord Viṣṇu/Viṭhṭhala named in Vijayadāsa’s signature, object of show; Vijaya means “victory”; Viṭṭhala is Kṛṣṇa’s form worshipped at Paṇḍharpur"
       }
     ],
     "nameTable": false,

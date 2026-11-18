@@ -322,7 +322,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Govid",
-        "gloss": "the divine protector, the Lord being praised"
+        "gloss": "Govind, the divine Lord, finder and sustainer of the earth; also Kṛṣṇa, the cowherd Lord"
       },
       {
         "roman": "jas",

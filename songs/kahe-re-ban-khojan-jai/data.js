@@ -373,7 +373,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord"
+        "gloss": "Har, the divine name for the Lord; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "base",

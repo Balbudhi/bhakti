@@ -324,7 +324,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hara",
-        "gloss": "Lord Shiva",
+        "gloss": "Lord Shiva; Hara means “the remover” or “destroyer”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -577,7 +577,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Viṣṇu",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "deity who preserves cosmic order; Viṣṇu is “the all-pervading one”",
         "concept_key": "",
         "preserve_in_english": false
       },

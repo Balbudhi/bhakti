@@ -2026,7 +2026,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāghavē",
-        "gloss": "by Raghava (Lord Rama)",
+        "gloss": "by Rāghava, Rāma as a descendant of Raghu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3465,7 +3465,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīñcyā",
-        "gloss": "of Sai",
+        "gloss": "of Sāī, the revered master",
         "concept_key": "",
         "preserve_in_english": false
       },

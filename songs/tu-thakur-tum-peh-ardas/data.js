@@ -796,7 +796,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "a Sikh name for God, invoked in praise and remembrance",
+        "gloss": "a Sikh name for God, invoked in praise and remembrance; Vāhigurū means “wondrous teacher” or “wondrous enlightener”, the divine guide.",
         "concept_key": "",
         "preserve_in_english": false
       }

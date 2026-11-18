@@ -114,7 +114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -561,7 +561,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mokṣamārgī ko dikhāte rāha, dṛṣṭi se śrī raṅga, dṛṣṭi se śrī raṅga",
-    "english": "{2:He shows }{3:the path }{0,1:to the seeker of liberation }{4,5:through His glance, }{6,7:O Lord of divine splendor, }{8,9:through His glance, }{10,11:O Lord of divine splendor.}",
+    "english": "{2:He shows }{3:the path }{0,1:to the seeker of liberation }{4,5:through His glance, }{6,7:O Śrīraṅga, }{8,9:through His glance, }{10,11:O Śrīraṅga.}",
     "words": [
       {
         "roman": "mokṣamārgī",
@@ -607,7 +607,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅga,",
-        "gloss": "delight; Lord of divine splendor,",
+        "gloss": "Raṅga, Viṣṇu in the name Śrīraṅga; at Śrīraṅgam he is worshipped as the reclining Raṅganātha",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -631,7 +631,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅga",
-        "gloss": "delight; Lord of divine splendor",
+        "gloss": "Raṅga, Viṣṇu in the name Śrīraṅga; at Śrīraṅgam he is worshipped as the reclining Raṅganātha",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1986,7 +1986,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīśa",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2052,7 +2052,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīmatsāyiparīśapādakamalānnānyaccharaṇyaṁ",
-        "gloss": "other than the lotus feet of glorious Supreme Lord Sai, there is no other refuge",
+        "gloss": "other than the lotus feet of glorious Supreme Lord Sai, there is no other refuge; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2117,7 +2117,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sāīrūpadharaṁ",
-        "gloss": "wearing the bodily form of Sai",
+        "gloss": "wearing the bodily form of Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2242,7 +2242,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyinātha",
-        "gloss": "O Sai Nath",
+        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2349,7 +2349,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyinātha",
-        "gloss": "O Sai Nath",
+        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2498,7 +2498,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīśa",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2575,7 +2575,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīsāyināthacaraṇāmṛtapūtacittāstatpādasevanaratāḥ",
-        "gloss": "those whose minds are purified by the nectar of Lord Sai Nath's feet and who are devoted to serving His feet",
+        "gloss": "those whose minds are purified by the nectar of Lord Sai Nath's feet and who are devoted to serving His feet; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2724,7 +2724,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyināthasya",
-        "gloss": "of Lord Sai Nath",
+        "gloss": "of Lord Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2951,7 +2951,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāyinātha",
-        "gloss": "O Sai Nath",
+        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3016,7 +3016,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },

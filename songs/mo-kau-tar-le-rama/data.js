@@ -233,7 +233,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "tār",
@@ -327,7 +327,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "tār",
@@ -397,7 +397,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       }
     ],
     "nameTable": false,
@@ -575,7 +575,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       }
     ],
     "nameTable": false,
@@ -751,7 +751,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "tār",
@@ -1269,7 +1269,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "tār",
@@ -1411,7 +1411,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "tār",
@@ -1795,7 +1795,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "Mo",
@@ -1855,7 +1855,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       }
     ],
     "nameTable": false,
@@ -1907,7 +1907,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the divine Lord invoked as the rescuer"
+        "gloss": "the divine Lord invoked as the rescuer; Rāma means “pleasing” or “delightful”"
       }
     ],
     "nameTable": false,

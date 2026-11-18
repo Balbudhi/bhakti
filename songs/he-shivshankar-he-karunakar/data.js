@@ -671,7 +671,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rudra",
-        "gloss": "fierce form of Śiva",
+        "gloss": "Rudra, a name of Śiva, here in the instrument-name Rudra-vīṇā; “the roaring one”.",
         "concept_key": "",
         "preserve_in_english": false
       },

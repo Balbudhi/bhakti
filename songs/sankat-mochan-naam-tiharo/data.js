@@ -1104,7 +1104,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siya",
-        "gloss": "Sita's",
+        "gloss": "Sita's; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1408,7 +1408,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siyā-sudhi",
-        "gloss": "news of Sita; Sita's tidings",
+        "gloss": "news of Sita; Sita's tidings; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1521,7 +1521,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siya",
-        "gloss": "Sita",
+        "gloss": "Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1640,7 +1640,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1759,7 +1759,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sīya",
-        "gloss": "Sita",
+        "gloss": "Sita; Rāma’s wife; Sītā means “furrow”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1914,7 +1914,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lachimana",
-        "gloss": "Lakshmana",
+        "gloss": "Lakshmana; Rāma’s younger brother; Lakṣmaṇa means “endowed with auspicious marks”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2206,7 +2206,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lachimana",
-        "gloss": "Lakshmana",
+        "gloss": "Lakshmana; Rāma’s younger brother; Lakṣmaṇa means “endowed with auspicious marks”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2581,7 +2581,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3349,7 +3349,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”",
         "concept_key": "",
         "preserve_in_english": false
       },

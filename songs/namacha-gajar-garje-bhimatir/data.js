@@ -116,7 +116,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harī",
-        "gloss": "Viṣṇu/Kṛṣṇa, here identified with Viṭṭhal"
+        "gloss": "Viṣṇu/Kṛṣṇa, here identified with Viṭṭhal; Hari is the remover of evil and sin."
       },
       {
         "roman": "viṭṭhal",
@@ -1000,7 +1000,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiv",
-        "gloss": "the great god who here venerates the dust of Viṭṭhal’s feet"
+        "gloss": "the great god who here venerates the dust of Viṭṭhal’s feet; Śiva means “auspicious” or “beneficent”."
       },
       {
         "roman": "vandī",
@@ -1032,7 +1032,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śiv",
-        "gloss": "the great god who here venerates the dust of Viṭṭhal’s feet"
+        "gloss": "the great god who here venerates the dust of Viṭṭhal’s feet; Śiva means “auspicious” or “beneficent”."
       },
       {
         "roman": "vandī",

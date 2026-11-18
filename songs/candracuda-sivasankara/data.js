@@ -970,7 +970,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīrāmana",
-        "gloss": "of the revered Rāma"
+        "gloss": "of the revered Rāma, the Rāmāyaṇa’s hero; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "nāmava",
@@ -1072,7 +1072,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīrāmana",
-        "gloss": "of the revered Rāma"
+        "gloss": "of the revered Rāma, the Rāmāyaṇa’s hero; Rāma means “pleasing” or “delightful”."
       },
       {
         "roman": "nāmava",
@@ -2096,7 +2096,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "purandaraviṭhalage",
-        "gloss": "to Purandara Viṭṭhala, the poet’s signature deity-name"
+        "gloss": "to Purandara Viṭṭhala, the poet’s signature deity-name; Purandara means “destroyer of strongholds”; here it belongs to the name Purandara Viṭṭhala."
       },
       {
         "roman": "prāṇapriyanu",

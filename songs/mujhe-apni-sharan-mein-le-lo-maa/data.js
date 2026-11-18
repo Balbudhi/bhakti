@@ -4090,7 +4090,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī",
-        "gloss": "the Goddess; Śakti as the source of being",
+        "gloss": "Bhavānī, the Goddess as the consort of Bhava (Śiva)",
         "concept_key": "",
         "preserve_in_english": false
       },

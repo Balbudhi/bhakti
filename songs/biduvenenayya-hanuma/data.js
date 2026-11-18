@@ -60,7 +60,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hanuma",
-        "gloss": "the monkey devotee of Rāma, addressed by his Kannada name"
+        "gloss": "the monkey devotee of Rāma, addressed by his Kannada name; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "biḍuvenēnayya",
@@ -124,7 +124,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanuma",
-        "gloss": "the monkey devotee of Rāma, addressed by his Kannada name"
+        "gloss": "the monkey devotee of Rāma, addressed by his Kannada name; Hanumān means “having prominent jaws”."
       },
       {
         "roman": "ninna",
@@ -710,7 +710,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "purandara",
-        "gloss": "first member of the poet’s signature deity-name"
+        "gloss": "first member of the poet’s signature deity-name; Purandara means “destroyer of strongholds”; here it belongs to the name Purandara Viṭṭhala."
       },
       {
         "roman": "viṭhalana",

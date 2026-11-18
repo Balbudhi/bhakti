@@ -229,7 +229,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇā",
-        "gloss": "the deity addressed here as protector of devotees"
+        "gloss": "O Nārāyaṇa, refuge of living beings, who rests upon the primordial waters; the protector of devotees addressed here"
       }
     ],
     "nameTable": false,
@@ -869,7 +869,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "keśavā",
-        "gloss": "the Viṣṇu/Kṛṣṇa name used for the deity addressed here"
+        "gloss": "O Keśava, the fine-haired one; Viṣṇu/Kṛṣṇa"
       },
       {
         "roman": "mhaṇe",

@@ -121,7 +121,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "jayadēvi",
-        "gloss": "the goddess Jayā, a name of Lakṣmī"
+        "gloss": "Jayādevī, the goddess of victory, a name of Lakṣmī"
       },
       {
         "roman": "ramaṇa",
@@ -173,7 +173,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "jayadēvi",
-        "gloss": "the goddess Jayā, a name of Lakṣmī"
+        "gloss": "Jayādevī, the goddess of victory, a name of Lakṣmī"
       },
       {
         "roman": "ramaṇa",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hariyē",
-        "gloss": "the Lord Viṣṇu alone; emphatic"
+        "gloss": "the Lord Viṣṇu alone; emphatic; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "sarvōttama",
@@ -285,7 +285,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hariyē",
-        "gloss": "the Lord Viṣṇu alone; emphatic"
+        "gloss": "the Lord Viṣṇu alone; emphatic; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "paradēvate",
@@ -323,7 +323,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "haridāsarembō",
-        "gloss": "called servants of Hari; hari-dāsaru plus the quotative emba"
+        "gloss": "called servants of Hari; hari-dāsaru plus the quotative emba; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "birudina",
@@ -365,7 +365,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "haridāsarembō",
-        "gloss": "called servants of Hari; quotative title"
+        "gloss": "called servants of Hari; quotative title; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "birudina",
@@ -667,7 +667,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅga",
-        "gloss": "a name of Viṣṇu"
+        "gloss": "Raṅga, Kṛṣṇa, the divine Lord called upon in this dance refrain"
       },
       {
         "roman": "kōlu",

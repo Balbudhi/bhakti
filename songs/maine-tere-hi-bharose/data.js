@@ -60,7 +60,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Hanumān",
-        "gloss": "Rāma’s devotee, addressed directly"
+        "gloss": "Rāma’s devotee, addressed directly; Hanumān means “having prominent jaws”"
       }
     ],
     "sourceWords": [
@@ -370,7 +370,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "O Rāma; devotional address"
+        "gloss": "O Rāma; devotional address; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "kāhe",
@@ -444,7 +444,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Sītā’s husband, invoked by name"
+        "gloss": "Sītā’s husband, invoked by name; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "nām",
@@ -544,7 +544,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Sītā’s husband, invoked by name"
+        "gloss": "Sītā’s husband, invoked by name; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "nām",
@@ -640,7 +640,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "O Rāma; devotional address"
+        "gloss": "O Rāma; devotional address; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "jñān",
@@ -910,7 +910,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "O Rāma; devotional address"
+        "gloss": "O Rāma; devotional address; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "ko",
@@ -964,7 +964,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sītā",
-        "gloss": "Rāma’s wife, named as the passenger"
+        "gloss": "Rāma’s wife, named as the passenger; Sītā means “furrow”"
       },
       {
         "roman": "sakhī",
@@ -984,7 +984,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the one who brings the boat across here; Sītā’s husband"
+        "gloss": "the one who brings the boat across here; Sītā’s husband; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "pār",
@@ -1064,7 +1064,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sītā",
-        "gloss": "Rāma’s wife, named as the passenger"
+        "gloss": "Rāma’s wife, named as the passenger; Sītā means “furrow”"
       },
       {
         "roman": "sakhī",
@@ -1084,7 +1084,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāmā",
-        "gloss": "the one who brings the boat across here; Sītā’s husband"
+        "gloss": "the one who brings the boat across here; Sītā’s husband; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "pār",
@@ -1160,11 +1160,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāmā",
-        "gloss": "O Rāma; devotional address"
+        "gloss": "O Rāma; devotional address; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "Hanumat",
-        "gloss": "Rāma’s devotee and the boatman here; a form of the name Hanumān"
+        "gloss": "Rāma’s devotee and the boatman here; a form of the name Hanumān; Hanumān means “having prominent jaws”"
       },
       {
         "roman": "khevanhāre",

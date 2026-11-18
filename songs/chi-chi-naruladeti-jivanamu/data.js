@@ -139,7 +139,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīhari",
-        "gloss": "the auspicious Lord Hari, Viṣṇu"
+        "gloss": "the auspicious Lord Hari, Viṣṇu; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "nīvē",
@@ -449,7 +449,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "haridāsuḍu",
-        "gloss": "a servant of Hari; a devotee of Viṣṇu"
+        "gloss": "a servant of Hari; a devotee of Viṣṇu; Hari is “the remover” of evil and suffering"
       },
       {
         "roman": "kāvacchunā",

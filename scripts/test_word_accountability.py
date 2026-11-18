@@ -12,6 +12,7 @@ from unittest.mock import patch
 
 import bhakti_pipeline as pipeline
 import bhakti_semantic_repair as semantic
+import bhakti_translation_policy as translation_policy
 from test_library_shared_semantic import review as review_row
 from test_sense_decisions import decisions_for
 
@@ -126,6 +127,55 @@ class WordAccountabilityTests(unittest.TestCase):
         return pipeline.complete_semantics(self.root/'song',self.audit,job or {'languages':['Hindi']},self.options)
     def sequence(self):
         return [schema for schema,_,_ in self.calls]
+    def test_meaningful_name_rule_reaches_all_actual_semantic_stage_prompts(self):
+        # This verifies prompt construction, not the provider's semantic judgment.
+        self.complete()
+        self.assertEqual(self.sequence(),['bhakti_word_glosses','bhakti_literal_translation',
+                                          'bhakti_translation_review'])
+        for stage,prompt,_ in self.calls:
+            with self.subTest(stage=stage):
+                self.assertNotIn('evidenced identity or relationship',prompt)
+                self.assertNotIn('meaningful identity or relationship glosses',prompt)
+                self.assertNotIn('identity, relationship or literal',prompt)
+                self.assertEqual(prompt.count(translation_policy.NAME_MEANING_GUIDANCE),1)
+                self.assertIn('as well as its contextual referent',prompt)
+                self.assertIn('direct description from within the tradition',prompt)
+                self.assertIn('in private evidence. Do not invent historical etymologies',prompt)
+                self.assertNotIn('Mark traditional explanations as such',prompt)
+                self.assertNotIn('Label traditional explanations',prompt)
+                self.assertIn('unknown or disputed',prompt)
+                self.assertIn('Preserve useful existing meanings and relevant cultural identity',prompt)
+                self.assertIn('devotional sense when the passage needs it',prompt)
+                self.assertIn('without listing unrelated synonyms',prompt)
+                self.assertIn('never apply a spelling-only substitution',prompt)
+        review_prompt=self.calls[-1][1]
+        self.assertIn('missing evidenced name meaning as gloss_sense at its exact source indices',review_prompt)
+
+    def test_scoped_name_prompts_keep_derivation_caveats_private(self):
+        # Exercise both scoped branches; ordinary fixtures have no naming convention.
+        options=argparse.Namespace(semantic_naming_conventions={'matches':[
+            {'line_id':self.lines[0]['id'],'english_head':'Hari','gloss_identity':'the divine Lord'}],
+            'conflicts':[]})
+        for reviewer in (False,True):
+            with self.subTest(reviewer=reviewer):
+                prompt=translation_policy.naming_prompt(options,self.lines,review=reviewer)
+                self.assertIn('direct public descriptions',prompt)
+                self.assertIn('derivation caveats in private evidence',prompt)
+                self.assertNotIn('label traditional explanations',prompt.lower())
+
+    def test_name_policy_version_invalidates_all_three_actual_stage_caches(self):
+        # Keep source/provider fixtures fixed; only the real policy identity changes.
+        self.assertEqual(translation_policy.POLICY_VERSION,10)
+        with patch.object(translation_policy,'POLICY_VERSION',9):
+            self.complete();before=len(self.calls)
+            self.complete();self.assertEqual(len(self.calls),before)
+        current=self.complete()
+        self.assertEqual(self.sequence()[before:],['bhakti_word_glosses',
+            'bhakti_literal_translation','bhakti_translation_review'])
+        before=len(self.calls)
+        self.assertEqual(self.complete(),current)
+        self.assertEqual(len(self.calls),before)
+
     def test_writer_schema_and_review_are_independent_and_accepted_resume_is_free(self):
         original=copy.deepcopy(self.fixture);result=self.complete()
         writer=next(c for c in self.calls if c[0]=='bhakti_literal_translation')

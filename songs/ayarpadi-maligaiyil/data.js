@@ -59,7 +59,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyakkaṇṇaṉ",
-        "gloss": "the wondrous, enchantment-working Kaṇṇaṉ; the Tamil name of Kṛṣṇa"
+        "gloss": "the wondrous, enchantment-working Kaṇṇaṉ; the Tamil name of Kṛṣṇa; Kṛṣṇa means “dark-hued”; Kaṇṇaṉ is his Tamil name"
       },
       {
         "roman": "tūṅkukiṉṟāṉ",
@@ -679,7 +679,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kaṇṇaṉavaṉ",
-        "gloss": "Kaṇṇaṉ, he; the Tamil name of Kṛṣṇa with resumptive pronoun"
+        "gloss": "Kaṇṇaṉ, he; the Tamil name of Kṛṣṇa with resumptive pronoun; Kṛṣṇa means “dark-hued”; Kaṇṇaṉ is his Tamil name"
       },
       {
         "roman": "tūṅkiviṭṭāl",
@@ -869,7 +869,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "māyakkaṇṇaṉ",
-        "gloss": "the wondrous, enchantment-working Kaṇṇaṉ; the Tamil name of Kṛṣṇa"
+        "gloss": "the wondrous, enchantment-working Kaṇṇaṉ; the Tamil name of Kṛṣṇa; Kṛṣṇa means “dark-hued”; Kaṇṇaṉ is his Tamil name"
       },
       {
         "roman": "tūṅkukiṉṟāṉ",

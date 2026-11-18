@@ -90,7 +90,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "madanācā",
-        "gloss": "of the god of love, Madana"
+        "gloss": "of Madana, the enrapturing one, the god of love"
       },
       {
         "roman": "putaḷā",

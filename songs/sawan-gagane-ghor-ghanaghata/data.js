@@ -748,7 +748,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāna",
-        "gloss": "Kanha; Krishna",
+        "gloss": "Kanha; Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -842,7 +842,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rādhānāma",
-        "gloss": "the name of Radha",
+        "gloss": "the name of Radha; Rādhā means “success” or “prosperity”",
         "concept_key": "",
         "preserve_in_english": false
       }

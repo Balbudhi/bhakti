@@ -223,7 +223,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, the divine cowherd addressed here; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -312,7 +312,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna",
+        "gloss": "Kṛṣṇa, the divine cowherd addressed here; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },

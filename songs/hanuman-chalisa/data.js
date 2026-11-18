@@ -836,7 +836,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -949,7 +949,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1389,7 +1389,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "saṅkara",
-        "gloss": "of Shankara (Shiva)",
+        "gloss": "of Shankara (Shiva); Śaṅkara means “causing welfare” or “beneficent”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1526,7 +1526,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1657,19 +1657,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "lakhana",
-        "gloss": "Lakshmana",
+        "gloss": "Lakshmana, Rāma’s younger brother; Lakṣmaṇa means “endowed with auspicious marks”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma's consort",
+        "gloss": "Rāma's consort; Sītā means “furrow”, the line made by a plough.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1776,7 +1776,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siyahiṁ",
-        "gloss": "to Sita",
+        "gloss": "to Sita, Rāma’s consort; Sītā means “furrow”, the line made by a plough.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1913,7 +1913,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmacandra",
-        "gloss": "of Ramachandra",
+        "gloss": "of Ramachandra; Rāmacandra means “Rāma-moon”, comparing Rāma to the moon.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2008,7 +2008,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakhana",
-        "gloss": "Lakshmana",
+        "gloss": "Lakshmana, Rāma’s younger brother; Lakṣmaṇa means “endowed with auspicious marks”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2383,7 +2383,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sārada",
-        "gloss": "Sarasvati",
+        "gloss": "Śāradā, Sarasvatī, the goddess of speech and learning",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2633,7 +2633,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3228,7 +3228,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3639,7 +3639,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahābīra",
-        "gloss": "of Mahavira (Hanuman)",
+        "gloss": "of Mahavira (Hanuman); Mahāvīra means “great hero”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3770,7 +3770,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumata",
-        "gloss": "on Hanumat",
+        "gloss": "on Hanumat, Rāma’s devoted servant; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3865,7 +3865,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4002,7 +4002,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4401,7 +4401,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4544,7 +4544,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jānakī",
-        "gloss": "Sita",
+        "gloss": "Sita; Jānakī means “daughter of Janaka”, a name of Sītā.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4621,7 +4621,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4758,7 +4758,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5026,7 +5026,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumata",
-        "gloss": "Hanuman",
+        "gloss": "Hanuman, Rāma’s devoted servant; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5163,7 +5163,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumata",
-        "gloss": "Hanuman",
+        "gloss": "Hanuman, Rāma’s devoted servant; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5264,7 +5264,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5532,7 +5532,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "monkey-god; son of the Wind; Hanumān means “having prominent jaws”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5645,7 +5645,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "of Hari (Vishnu/Rama)",
+        "gloss": "of Hari (Vishnu/Rama); Hari is the remover of evil and sin.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5900,19 +5900,19 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "lakhana",
-        "gloss": "Lakshmana",
+        "gloss": "Lakshmana, Rāma’s younger brother; Lakṣmaṇa means “endowed with auspicious marks”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sītā",
-        "gloss": "Rāma's consort",
+        "gloss": "Rāma's consort; Sītā means “furrow”, the line made by a plough.",
         "concept_key": "",
         "preserve_in_english": false
       },

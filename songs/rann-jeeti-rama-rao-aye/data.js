@@ -426,7 +426,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmarāu",
-        "gloss": "King Rama; the lord Rama",
+        "gloss": "King Rāma, the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -491,7 +491,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sasiya",
-        "gloss": "with Sita",
+        "gloss": "with Sītā, Rāma’s furrow-born wife",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -579,7 +579,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmarāu",
-        "gloss": "King Rama; the lord Rama",
+        "gloss": "King Rāma, the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1082,7 +1082,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1508,7 +1508,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },

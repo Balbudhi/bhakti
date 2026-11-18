@@ -37,7 +37,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Īśvar",
-        "gloss": "God"
+        "gloss": "God; Īśvara means “master”, “lord”, or “sovereign”."
       },
       {
         "roman": "se",
@@ -142,7 +142,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Īśvar",
-        "gloss": "God"
+        "gloss": "God; Īśvara means “master”, “lord”, or “sovereign”."
       },
       {
         "roman": "se",

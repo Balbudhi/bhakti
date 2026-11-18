@@ -666,7 +666,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rame",
-        "gloss": "O Ramā, the goddess of beauty and prosperity"
+        "gloss": "O Ramā, the delightful goddess, fortune and splendour; Lakṣmī, goddess of beauty and prosperity"
       }
     ],
     "sourceWords": [
@@ -1846,7 +1846,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vighneśadurgāvaṭukṣetrapālaiḥ",
-        "gloss": "with Vighneśa, Durgā, Vaṭu and Kṣetrapāla"
+        "gloss": "with Vighneśa, lord of obstacles; Durgā, the unassailable goddess; Vaṭu, Śiva in youthful form; and Kṣetrapāla, guardian of the field"
       },
       {
         "roman": "yute",
@@ -2002,7 +2002,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lakṣmyādiśaktyaṣṭakaiḥ",
-        "gloss": "with the eight powers beginning with Lakṣmī",
+        "gloss": "with the eight powers beginning with Lakṣmī, fortune and prosperity personified",
         "preserve_in_english": false
       },
       {
@@ -2114,7 +2114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ratyā",
-        "gloss": "by Rati, his consort"
+        "gloss": "by Rati, love’s pleasure personified, consort of the god of love"
       },
       {
         "roman": "ca",
@@ -2329,7 +2329,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇena",
-        "gloss": "by Kṛṣṇa"
+        "gloss": "by Kṛṣṇa, the dark-hued one"
       },
       {
         "roman": "sampūjyase",

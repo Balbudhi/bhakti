@@ -1389,7 +1389,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobind",
-        "gloss": "A name of Kṛṣṇa/Viṣṇu with traditional meanings including finder of the earth, keeper of cattle, and one known through Vedic speech.",
+        "gloss": "Gobind, the divine Lord who found and upheld the earth, keeper of cattle and known through sacred speech",
         "concept_key": "",
         "preserve_in_english": false
       },

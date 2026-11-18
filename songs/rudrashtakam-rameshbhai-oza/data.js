@@ -44,7 +44,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śrīrudrāṣṭakam",
-        "gloss": "the revered eight-verse hymn to Rudra; Rudra is a name of Śiva"
+        "gloss": "the revered eight-verse hymn to Rudra; Rudra is a name of Śiva; Rudra is “the roaring one”."
       }
     ],
     "sourceWords": [
@@ -1136,7 +1136,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "haratoṣaye",
-        "gloss": "to please Hara, Śiva"
+        "gloss": "to please Hara, Śiva; Hara means “remover” or “destroyer”."
       }
     ],
     "sourceWords": [
@@ -1266,7 +1266,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śrīrudrāṣṭakaṃ",
-        "gloss": "the revered eight-verse hymn to Rudra; Rudra is a name of Śiva"
+        "gloss": "the revered eight-verse hymn to Rudra; Rudra is a name of Śiva; Rudra is “the roaring one”."
       },
       {
         "roman": "sampūrṇam",

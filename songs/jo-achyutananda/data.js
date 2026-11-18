@@ -174,7 +174,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gōvindā",
-        "gloss": "O Govinda (protector of cows)",
+        "gloss": "O Govinda, finder of cattle; Kṛṣṇa, the cowherd Lord and protector",
         "concept_key": "",
         "preserve_in_english": false
       }

@@ -91,7 +91,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -301,7 +301,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "govind",
-        "gloss": "Kṛṣṇa as protector of the cows",
+        "gloss": "Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord, invoked here with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -325,7 +325,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -385,7 +385,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -493,7 +493,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -661,7 +661,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -721,7 +721,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Viṣṇu, invoked here together with Sai",
+        "gloss": "Viṣṇu, invoked here together with Sai; Hari is the remover of evil and sin.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -739,7 +739,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śiv",
-        "gloss": "Śiva, the great ascetic god",
+        "gloss": "Śiva, the great ascetic god; Śiva means “auspicious” or “beneficent”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -805,7 +805,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "datta",
-        "gloss": "Dattātreya, the divine teacher venerated in the Datta tradition",
+        "gloss": "Dattātreya, the divine teacher venerated in the Datta tradition; Datta means “given” or “granted”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -829,7 +829,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -931,7 +931,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1051,7 +1051,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1147,7 +1147,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "datta",
-        "gloss": "Dattātreya, the divine teacher venerated in the Datta tradition",
+        "gloss": "Dattātreya, the divine teacher venerated in the Datta tradition; Datta means “given” or “granted”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1171,7 +1171,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1267,7 +1267,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "govind",
-        "gloss": "Kṛṣṇa as protector of the cows",
+        "gloss": "Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord, invoked here with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1291,7 +1291,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1387,7 +1387,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "govind",
-        "gloss": "Kṛṣṇa as protector of the cows",
+        "gloss": "Govinda, finder of cattle; Kṛṣṇa as the cowherd Lord, invoked here with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1411,7 +1411,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa",
+        "gloss": "Rāma, prince of Ayodhyā and hero of the Rāmāyaṇa; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },

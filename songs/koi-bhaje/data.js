@@ -95,7 +95,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇā,",
-        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -113,7 +113,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmā",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -237,25 +237,25 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Hare",
-        "gloss": "O Hari / O Lord",
+        "gloss": "O Hari / O Lord; Hari is the remover of evil and sin.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇā",
-        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hare",
-        "gloss": "O Hari / O Lord",
+        "gloss": "O Hari / O Lord; Hari is the remover of evil and sin.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "rāmā,",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -326,13 +326,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -439,13 +439,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -540,7 +540,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "deity who preserves cosmic order; Viṣṇu is “the all-pervading one”, present throughout creation.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -617,7 +617,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -629,7 +629,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -950,13 +950,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1081,7 +1081,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1093,13 +1093,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter",
+        "gloss": "Kṛṣṇa, named here as an incarnation of Viṣṇu and the mountain-lifter; Kṛṣṇa literally means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kanhaiyā,",
-        "gloss": "beloved Kṛṣṇa",
+        "gloss": "beloved Kṛṣṇa; An affectionate name of Kṛṣṇa, whose name means “dark” or “black”.",
         "concept_key": "",
         "preserve_in_english": false
       },

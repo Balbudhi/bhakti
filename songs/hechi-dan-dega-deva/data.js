@@ -111,7 +111,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rakhumāī",
-        "gloss": "Rukmiṇī, Viṭṭhal’s consort, affectionately addressed as mother"
+        "gloss": "Rakhumāī, “Mother Rukmiṇī”, Viṭṭhal’s consort; Rukmiṇī means “adorned with gold”"
       }
     ],
     "nameTable": false,

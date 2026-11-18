@@ -540,7 +540,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nārāyaṇa",
-        "gloss": "Lord Viṣṇu",
+        "gloss": "Lord Nārāyaṇa, Viṣṇu, refuge of living beings, who rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       }

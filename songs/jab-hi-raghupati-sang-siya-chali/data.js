@@ -330,7 +330,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siya",
-        "gloss": "Sita",
+        "gloss": "Sītā, Rāma’s wife; furrow, recalling her emergence from the ploughed earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -472,7 +472,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "siya",
-        "gloss": "Sita",
+        "gloss": "Sītā, Rāma’s wife; furrow, recalling her emergence from the ploughed earth",
         "concept_key": "",
         "preserve_in_english": false
       },

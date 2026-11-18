@@ -581,7 +581,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Harikathā",
-        "gloss": "discourse on the praises of God",
+        "gloss": "discourse on the praises of God; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -622,7 +622,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Harikathā",
-        "gloss": "discourse on the praises of God",
+        "gloss": "discourse on the praises of God; Hari is “the remover” of evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       }

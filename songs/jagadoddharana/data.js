@@ -234,7 +234,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "paravāsudēvana",
-        "gloss": "the transcendent Vāsudēva; a name of Kṛṣṇa"
+        "gloss": "the transcendent Vāsudēva, Kṛṣṇa as the son of Vasudeva"
       }
     ],
     "sourceWords": [
@@ -266,7 +266,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "purandara",
-        "gloss": "first element of the poet’s signature name for his Lord"
+        "gloss": "Purandara, destroyer of strongholds; part of the poet’s signature name for Viṭṭhala"
       },
       {
         "roman": "viṭhṭhalana",

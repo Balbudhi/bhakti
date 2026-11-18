@@ -529,7 +529,7 @@ window.SONG_LINES = {
         "roman": "viṣṇurūpāya",
         "citationRoman": "viṣṇu-rūpāya",
         "deva": "विष्णुरूपाय",
-        "gloss": "whose form is Viṣṇu",
+        "gloss": "whose form is Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -547,7 +547,7 @@ window.SONG_LINES = {
         "roman": "viṣṇave",
         "citationRoman": "viṣṇave",
         "deva": "विष्णवे",
-        "gloss": "to Viṣṇu",
+        "gloss": "to Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -709,7 +709,7 @@ window.SONG_LINES = {
         "roman": "viṣṇave",
         "citationRoman": "viṣṇave",
         "deva": "विष्णवे",
-        "gloss": "to Viṣṇu",
+        "gloss": "to Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -836,7 +836,7 @@ window.SONG_LINES = {
         "roman": "viṣṇave",
         "citationRoman": "viṣṇave",
         "deva": "विष्णवे",
-        "gloss": "to Viṣṇu",
+        "gloss": "to Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -845,7 +845,7 @@ window.SONG_LINES = {
         "roman": "prabhaviṣṇave",
         "citationRoman": "prabhaviṣṇave",
         "deva": "प्रभविष्णवे",
-        "gloss": "to all-powerful Viṣṇu",
+        "gloss": "to the mighty Lord, Viṣṇu",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -908,7 +908,7 @@ window.SONG_LINES = {
         "roman": "viṣṇave",
         "citationRoman": "viṣṇave",
         "deva": "विष्णवे",
-        "gloss": "to Viṣṇu",
+        "gloss": "to Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -917,7 +917,7 @@ window.SONG_LINES = {
         "roman": "prabhaviṣṇave",
         "citationRoman": "prabhaviṣṇave",
         "deva": "प्रभविष्णवे",
-        "gloss": "to all-powerful Viṣṇu",
+        "gloss": "to the mighty Lord, Viṣṇu",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -2965,7 +2965,7 @@ window.SONG_LINES = {
         "roman": "viṣṇor",
         "citationRoman": "viṣṇoḥ",
         "deva": "विष्णोः",
-        "gloss": "of Viṣṇu",
+        "gloss": "of Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -3560,7 +3560,7 @@ window.SONG_LINES = {
         "roman": "mahāviṣṇuṃ",
         "citationRoman": "mahā-viṣṇum",
         "deva": "महाविष्णुम्",
-        "gloss": "great Viṣṇu",
+        "gloss": "great Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -3569,7 +3569,7 @@ window.SONG_LINES = {
         "roman": "prabhaviṣṇuṃ",
         "citationRoman": "prabhaviṣṇum",
         "deva": "प्रभविष्णुम्",
-        "gloss": "all-powerful Viṣṇu",
+        "gloss": "the mighty Lord, Viṣṇu",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -3672,7 +3672,7 @@ window.SONG_LINES = {
         "roman": "śrīviṣṇor",
         "citationRoman": "śrī-viṣṇoḥ",
         "deva": "श्रीविष्णोः",
-        "gloss": "of blessed Viṣṇu",
+        "gloss": "of blessed Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -3825,7 +3825,7 @@ window.SONG_LINES = {
         "roman": "śrīmahāviṣṇuḥ",
         "citationRoman": "śrī-mahā-viṣṇuḥ",
         "deva": "श्रीमहाविष्णुः",
-        "gloss": "blessed great Viṣṇu",
+        "gloss": "blessed great Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -3843,7 +3843,7 @@ window.SONG_LINES = {
         "roman": "śrīmannārāyaṇo",
         "citationRoman": "śrīmat-nārāyaṇaḥ",
         "deva": "श्रीमत्नारायणः",
-        "gloss": "glorious Nārāyaṇa",
+        "gloss": "glorious Nārāyaṇa, refuge of living beings, who rests upon the primordial waters",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -4631,7 +4631,7 @@ window.SONG_LINES = {
         "roman": "śrīmahāviṣṇuprītyarthe",
         "citationRoman": "śrī-mahā-viṣṇu-prīti-arthe",
         "deva": "श्रीमहाविष्णुप्रीतिअर्थे",
-        "gloss": "for the pleasure of blessed great Viṣṇu",
+        "gloss": "for the pleasure of blessed great Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -4871,7 +4871,7 @@ window.SONG_LINES = {
         "roman": "mukundaḥ",
         "citationRoman": "mukundaḥ",
         "deva": "मुकुन्दः",
-        "gloss": "Mukunda",
+        "gloss": "Mukunda, Viṣṇu as giver of liberation",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -5295,7 +5295,7 @@ window.SONG_LINES = {
         "roman": "viṣṇum",
         "citationRoman": "viṣṇum",
         "deva": "विष्णुम्",
-        "gloss": "Viṣṇu",
+        "gloss": "Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -5385,7 +5385,7 @@ window.SONG_LINES = {
         "roman": "vāsudevāya",
         "citationRoman": "vāsudevāya",
         "deva": "वासुदेवाय",
-        "gloss": "to Vāsudeva",
+        "gloss": "to Vāsudeva, Kṛṣṇa as the son of Vasudeva",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -5583,7 +5583,7 @@ window.SONG_LINES = {
         "roman": "lakṣmīkāntaṃ",
         "citationRoman": "lakṣmī-kāntam",
         "deva": "लक्ष्मीकान्तम्",
-        "gloss": "beloved of Lakṣmī",
+        "gloss": "beloved of Lakṣmī, fortune and prosperity personified",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -5887,7 +5887,7 @@ window.SONG_LINES = {
         "roman": "viṣṇave",
         "citationRoman": "viṣṇave",
         "deva": "विष्णवे",
-        "gloss": "to Viṣṇu",
+        "gloss": "to Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -5896,7 +5896,7 @@ window.SONG_LINES = {
         "roman": "prabhaviṣṇave",
         "citationRoman": "prabhaviṣṇave",
         "deva": "प्रभविष्णवे",
-        "gloss": "to all-powerful Viṣṇu",
+        "gloss": "to the mighty Lord, Viṣṇu",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -6218,7 +6218,7 @@ window.SONG_LINES = {
         "roman": "rukmiṇīsatyabhāmābhyāṃ",
         "citationRoman": "rukmiṇī-satyabhāmābhyām",
         "deva": "रुक्मिणीसत्यभामाभ्याम्",
-        "gloss": "with Rukmiṇī and Satyabhāmā",
+        "gloss": "with Rukmiṇī (the gold-adorned one) and Satyabhāmā (she of true lustre)",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -6236,7 +6236,7 @@ window.SONG_LINES = {
         "roman": "kṛṣṇam",
         "citationRoman": "kṛṣṇam",
         "deva": "कृष्णम्",
-        "gloss": "Kṛṣṇa",
+        "gloss": "Kṛṣṇa, the dark-hued one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -11449,7 +11449,7 @@ window.SONG_LINES = {
         "roman": "skandaḥ",
         "citationRoman": "skandaḥ",
         "deva": "स्कन्दः",
-        "gloss": "The Lord whose glory is expressed through Skanda, commander of the righteous host",
+        "gloss": "Skanda, Viṣṇu who pours forth nectar",
         "analysis": "skanda — Skanda, Subrahmaṇya · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -11494,7 +11494,7 @@ window.SONG_LINES = {
         "roman": "vāsudevo",
         "citationRoman": "vāsudevaḥ",
         "deva": "वासुदेवः",
-        "gloss": "One who is at once both Vāsu and Deva",
+        "gloss": "Vāsudeva, Viṣṇu/Kṛṣṇa, the shining Lord who dwells in all beings and in whom all beings dwell",
         "analysis": "vāsu — the indwelling one · deva — deity; shining one · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -14628,7 +14628,7 @@ window.SONG_LINES = {
         "roman": "maharṣiḥ kapilācāryaḥ",
         "citationRoman": "maharṣiḥ kapilācāryaḥ",
         "deva": "महर्षिः कपिलाचार्यः",
-        "gloss": "- One who has manifested as the teacher Kapila, the great sage",
+        "gloss": "the Lord manifested as the great sage and teacher Kapila, the tawny one",
         "analysis": "mahā-ṛṣi — great sage · kapila-ācārya — the teacher Kapila · two nominative singular masculine expressions in apposition",
         "concept_key": "",
         "preserve_in_english": false
@@ -14933,7 +14933,7 @@ window.SONG_LINES = {
         "roman": "kṛṣṇo",
         "citationRoman": "kṛṣṇaḥ",
         "deva": "कृष्णः",
-        "gloss": "One who incarnated in the Yādava tribe as the son of Vasudeva and Devakī",
+        "gloss": "Kṛṣṇa, the dark-hued one, born in the Yādava tribe as the son of Vasudeva and Devakī",
         "analysis": "kṛṣṇa — Kṛṣṇa; dark one · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -16262,7 +16262,7 @@ window.SONG_LINES = {
         "roman": "aniruddho",
         "citationRoman": "aniruddhaḥ",
         "deva": "अनिरुद्धः",
-        "gloss": "-Of the four manifestations (vyūhas) of Viṣṇu, the Aniruddha manifestation is indicated here",
+        "gloss": "Aniruddha, the unobstructed one; the Aniruddha manifestation of Viṣṇu",
         "analysis": "aniruddha — Of the four manifestations (vyūhas) of Viṣṇu, the Aniruddha manifestation is indicated here · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -20268,7 +20268,7 @@ window.SONG_LINES = {
         "roman": "kapilaḥ",
         "citationRoman": "kapilaḥ",
         "deva": "कपिलः",
-        "gloss": "The Lord Himself, manifested as the great ṛṣi Kapila, propounded the Sāṅkhya philosophy",
+        "gloss": "Kapila, the tawny one; the Lord manifested as the great sage who taught Sāṅkhya",
         "analysis": "kapila — The Lord Himself, manifested as the great ṛṣi Kapila, propounded the Saamkhya philosophy · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -22050,7 +22050,7 @@ window.SONG_LINES = {
         "roman": "nārāyaṇo",
         "citationRoman": "nārāyaṇaḥ",
         "deva": "नारायणः",
-        "gloss": "Nārāyaṇa",
+        "gloss": "Nārāyaṇa, refuge of living beings, who rests upon the primordial waters",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -22059,7 +22059,7 @@ window.SONG_LINES = {
         "roman": "viṣṇur",
         "citationRoman": "viṣṇuḥ",
         "deva": "विष्णुः",
-        "gloss": "Viṣṇu",
+        "gloss": "Viṣṇu, the all-pervading one",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -22068,7 +22068,7 @@ window.SONG_LINES = {
         "roman": "vāsudevo",
         "citationRoman": "vāsudevaḥ",
         "deva": "वासुदेवः",
-        "gloss": "Vāsudeva",
+        "gloss": "Vāsudeva, Kṛṣṇa as the son of Vasudeva",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false

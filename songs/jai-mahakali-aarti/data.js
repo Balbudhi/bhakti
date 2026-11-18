@@ -1302,7 +1302,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Viṣṇu",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "deity who preserves cosmic order; Viṣṇu is “the all-pervading one”, present throughout creation.",
         "concept_key": "",
         "preserve_in_english": false
       },

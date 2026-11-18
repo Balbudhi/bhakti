@@ -641,7 +641,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "the sustaining Lord Viṣṇu"
+        "gloss": "Hari, the sustaining Lord Viṣṇu, remover of evil and sin"
       },
       {
         "roman": "guṇamaṇimaya",
@@ -1641,7 +1641,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śivādi",
-        "gloss": "Śiva worship and the others"
+        "gloss": "worship of Śiva, the auspicious one, and the other systems"
       },
       {
         "roman": "ṣaṇmatamula",
@@ -1901,7 +1901,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāmabhaktuḍaina",
-        "gloss": "who is a devotee of Rāma; describes the poet"
+        "gloss": "who is a devotee of Rāma, the delightful lord; describes the poet"
       },
       {
         "roman": "tyāgarājanutuni",

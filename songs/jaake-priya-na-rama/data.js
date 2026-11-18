@@ -91,13 +91,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Vaidehī",
-        "gloss": "Sita",
+        "gloss": "Sita; Vaidehī means “princess of Videha”, a name of Sītā.",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -486,7 +486,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Viṣṇu's avatāra; husband of Sītā; Rāma means “pleasing” or “delightful”.",
         "concept_key": "",
         "preserve_in_english": false
       },

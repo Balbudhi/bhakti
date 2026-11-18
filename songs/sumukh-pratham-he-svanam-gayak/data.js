@@ -722,7 +722,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇeśasya",
-        "gloss": "of Gaṇeśa; the deity whose superior is denied"
+        "gloss": "of Gaṇeśa; the deity whose superior is denied; Gaṇeśa means “lord of the hosts”, especially Śiva’s attendant groups."
       },
       {
         "roman": "ko’pi",

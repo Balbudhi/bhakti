@@ -71,7 +71,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām,",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -166,7 +166,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       }

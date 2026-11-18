@@ -1639,7 +1639,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rāma",
+        "gloss": "of Rāma, the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2396,7 +2396,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siva",
-        "gloss": "to Śiva's",
+        "gloss": "of Śiva, the auspicious one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2745,7 +2745,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3202,7 +3202,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "raghunātha",
-        "gloss": "Lord Rama",
+        "gloss": "Raghunātha, lord of the Raghu lineage; Rāma",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -4753,7 +4753,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lachimana",
-        "gloss": "Lakshmana's",
+        "gloss": "of Lakṣmaṇa, one bearing auspicious marks; Rāma’s younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4818,7 +4818,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5907,7 +5907,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6747,7 +6747,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lachimana",
-        "gloss": "Lakṣmaṇa",
+        "gloss": "Lakṣmaṇa, one bearing auspicious marks; Rāma’s younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6948,7 +6948,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "lachimana",
-        "gloss": "Lakṣmaṇa's",
+        "gloss": "of Lakṣmaṇa, one bearing auspicious marks; Rāma’s younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7126,7 +7126,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "sītā",
-        "gloss": "Rāma's consort",
+        "gloss": "Sītā, Rāma’s consort; furrow, recalling her emergence from the ploughed earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7227,7 +7227,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lachimana",
-        "gloss": "Lakṣmaṇa's",
+        "gloss": "of Lakṣmaṇa, one bearing auspicious marks; Rāma’s younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7363,7 +7363,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8788,7 +8788,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9021,7 +9021,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rama",
+        "gloss": "of Rāma, the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9182,7 +9182,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9917,7 +9917,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rama",
+        "gloss": "of Rāma, the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10849,7 +10849,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -10991,7 +10991,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11068,7 +11068,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "seṣa",
-        "gloss": "the thousand-headed cosmic serpent",
+        "gloss": "Śeṣa, the remainder; the thousand-headed cosmic serpent on whom Viṣṇu rests",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12524,7 +12524,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12554,7 +12554,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "biṣṇu",
-        "gloss": "Viṣṇu",
+        "gloss": "Viṣṇu, the all-pervading one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12762,7 +12762,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13286,7 +13286,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13774,7 +13774,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "baidēhī.",
-        "gloss": "Vaidehī (Sītā)",
+        "gloss": "Vaidehī, princess of Videha; Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14030,7 +14030,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14155,7 +14155,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavānī.",
-        "gloss": "O Bhavānī (Pārvatī)",
+        "gloss": "O Bhavānī, Pārvatī as the consort of Bhava (Śiva)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14274,7 +14274,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14524,7 +14524,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14631,7 +14631,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "lachimana",
-        "gloss": "Lakṣmaṇa",
+        "gloss": "Lakṣmaṇa, one bearing auspicious marks; Rāma’s younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15042,7 +15042,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari",
+        "gloss": "Lord Hari, the remover of evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15203,7 +15203,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "lachimana",
-        "gloss": "Lakṣmaṇa",
+        "gloss": "Lakṣmaṇa, one bearing auspicious marks; Rāma’s younger brother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18096,7 +18096,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18155,7 +18155,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rama",
+        "gloss": "of Rāma, the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19045,7 +19045,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "Hanumān, the one with prominent jaws; monkey-god, son of the Wind and devoted helper of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19127,7 +19127,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmacandra",
-        "gloss": "Ramachandra",
+        "gloss": "Rāmacandra, Rāma the moon; the delightful lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19575,7 +19575,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viṣṇu",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "Viṣṇu, the all-pervading deity who preserves cosmic order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19616,7 +19616,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā",
+        "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19793,7 +19793,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hanumāna",
-        "gloss": "monkey-god; son of the Wind",
+        "gloss": "Hanumān, the one with prominent jaws; monkey-god, son of the Wind and devoted helper of Rāma",
         "concept_key": "",
         "preserve_in_english": false
       }

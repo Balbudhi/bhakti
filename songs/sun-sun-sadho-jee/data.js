@@ -288,7 +288,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rājārāma",
-        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun)"
+        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun); Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "kaho",
@@ -349,7 +349,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rājārāma",
-        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun)"
+        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun); Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "kaho",
@@ -586,7 +586,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "divāne",
@@ -800,7 +800,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "milata",
@@ -861,7 +861,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "milata",
@@ -1021,7 +1021,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "milata",
@@ -1123,7 +1123,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Viṣṇu's avatāra; husband of Sītā"
+        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
       },
       {
         "roman": "bhajana",

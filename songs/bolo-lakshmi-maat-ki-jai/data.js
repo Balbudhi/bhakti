@@ -146,7 +146,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mahālakṣmī",
-        "gloss": "the Great Goddess Lakshmi",
+        "gloss": "the Great Goddess Lakshmi; Lakṣmī means “fortune” or “prosperity”; mahā means “great”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -335,13 +335,13 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Har",
-        "gloss": "Lord Shiva",
+        "gloss": "Lord Shiva; Hara means “the remover” or “destroyer”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Viṣṇu",
-        "gloss": "deity who preserves cosmic order",
+        "gloss": "deity who preserves cosmic order; Viṣṇu is “the all-pervading one”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -483,7 +483,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ramā",
-        "gloss": "Goddess Lakshmi / Vishnu's consort",
+        "gloss": "Goddess Lakshmi / Vishnu's consort; Ramā means “good fortune” or “splendour”",
         "concept_key": "",
         "preserve_in_english": false
       },
