@@ -330,12 +330,13 @@ Outcome: ship responsive loading, library search, playlist interaction and long
 readers without changing any recording, audio source/quality, lyric, gloss,
 translation, timing, occurrence order or existing playback capability.
 
-Current step: implementation and independent code review complete against live
-release 4e863472. Automated integration and assembled-release checks pass.
-Next: required in-app browser acceptance, then scoped main deployment and live
-readback. Browser discovery currently returns no available browser; native UI
-access also fails. Publication remains pending that acceptance or an explicit
-owner waiver of unavailable browser checks.
+Current step: implementation and independent code review complete; rebased onto
+release 0078868c to retain the separately published translation corrections.
+Recheck the assembled artifact and deployment checks against that content, then
+publish the scoped release to main and verify deployment and live resource bytes.
+The owner explicitly authorized publication without the unavailable browser
+checks ("Publish without"). Visual layout and device behavior remain unverified;
+automated coverage does not replace that acceptance.
 
 Design and ownership:
 - Library: precompute immutable search forms; preserve phrase-first matching;
