@@ -1561,11 +1561,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "divine name; Rāma means “pleasing” or “delightful”."
+        "gloss": "Rām, the delightful Lord, invoked here with Kṛṣṇa’s names Dāmodar and Mādhav; the name is also that of Rāma of Ayodhyā"
       },
       {
         "roman": "dāmodar",
-        "gloss": "divine name associated with Krishna, cord about the waist"
+        "gloss": "Dāmodar, Kṛṣṇa with a cord around his belly, bound by his mother Yaśodā; the divine Lord remembered here"
       },
       {
         "roman": "mādhavah",

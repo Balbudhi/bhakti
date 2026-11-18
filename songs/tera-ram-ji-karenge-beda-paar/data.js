@@ -912,7 +912,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari; the Divine; Hari is the remover of evil and sin.",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa; here the all-pervading Rām who removes evil and sin and carries his devotee across",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1055,7 +1055,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari; the Divine; Hari is the remover of evil and sin.",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa; here the all-pervading Rām who removes evil and sin and carries his devotee across",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1120,7 +1120,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Lord Hari; the Divine; Hari is the remover of evil and sin.",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa; here the all-pervading Rām who removes evil and sin and carries his devotee across",
         "concept_key": "",
         "preserve_in_english": false
       },

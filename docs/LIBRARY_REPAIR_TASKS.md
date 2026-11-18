@@ -1,5 +1,57 @@
 # Whole-library repair task
 
+## Reopened poetic and divine-name repair — 17 November 2026
+
+The owner rejected the published “of the nature of light” rendering and requested
+accurate, poetic translations and meaningful divine names throughout the library.
+The preceding popup repair was published as `71918f68`; its structural checks and
+selected linguistic reviews did not establish that every translation was repaired.
+This continuation freezes all 365 published readers and preserves the two owner
+English baselines, source scripts, Roman text, performance order, timings and audio.
+
+All 365 readers / 8,859 stored lyric definitions received a reading of the English
+with adjacent source-language lines. Independently reviewed corrections are now
+applied to 58 readers: 190 English definitions, 1,173 glosses, 126 word analyses,
+21 grammar notes and seven term-preservation flags. This includes all 107
+Viṣṇu Sahasranāma name stanzas and all 1,000 name records; both independent
+reviewers also read the inherited analyses, repairing 126 contradictions rather
+than leaving bad explanations beneath improved English.
+
+“Man Tūṃ Jot Sarūp” now reads “O mind, your very being is divine light; recognize
+your own source.” Its popup preserves own form, essential being and embodiment.
+The whole stanza and adjacent passage were checked in Sahib Singh's Punjabi
+commentary, with Guru Amar Das authorship established from the Mahallā 3 heading.
+Other repairs restore poet signatures, personal agency, divine spouse imagery,
+concrete name meanings and coherent English across consecutive sung lines.
+
+The maintained 25 October Gurbāṇī name policy supersedes the earlier generic-Lord
+rules. A broader divine referent must not erase a name's cultural identity or an
+activated form, image or relationship. Conversely, a name alone does not establish
+an unexpressed incarnation narrative. All-pervasion does not exclude a named
+divine form. Authorship and the actual passage govern each reading; a religious
+classification cannot decide its meaning automatically.
+
+The final 58 reader/profile pairs have independent source/citation acceptance,
+with one erroneous narrative-role tag removed through the existing reviewed
+reduction mechanism. The 365-reader contract audit passes; all 28,648 automated
+ready/deferred line-seek checks pass. Desktop and 390px in-app checks show the corrected refrain,
+sarūp popup, Govind explanation and thousand-name table. The local audio auditor
+cannot inspect the remotely hosted listener files in this checkout, and the trim
+auditor finds zero private receipts. Those are verification limits, not fresh
+audio passes. Every audio URL/profile and all source, Roman text, performance
+order and timing fields remain unchanged; owner English remains locked.
+
+Unresolved readings are retained as explicit research work: Surdās/prabhu agency
+in Mahārāj Bhavānī, guṇa-khānī attachment in Namo Vindhyeśvarī, Durgā Cālīsā's
+laya/lai variant, and the omitted complement in Janena's opening. Viṣambhara's
+spelling/derivation and several inherited Viṣṇu Roman/citation segmentations also
+need source-level resolution. Where the printed Sanskrit clearly preserves a
+negative (asammita, avidheyātman, ayama), the repaired meaning follows it and the
+popup explains it without silently changing the performed Roman text. The pass
+is not a certification of every one of the library's 52,949 stored word popups,
+a fresh listening audit, or a claim that every ambiguous source reading is solved.
+Private review packets remain outside the public site.
+
 ## 15 November 2026: current wording and popup repair
 
 Owner request: repair unclear or misleading English and word/name popups while preserving owner-written English and already-reviewed current-day work. This is separate from shuffle semantic assessment: accepted theme tags do not certify the translation. The initial published baseline was `6272bcf1`, 353 songs; two concurrent intake commits through `be104443` added 12 reviewed songs, preserved in the 365-song release. A source/hash-bound private inventory identifies 259 older eligible readers, 92 protected readers (90 current-day touches plus two owner-English locks), and two source-script migration cases held for separate repair. Eligibility is permission to review, never permission to rewrite indiscriminately.

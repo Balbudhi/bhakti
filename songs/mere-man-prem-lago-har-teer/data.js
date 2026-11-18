@@ -118,7 +118,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the divine beloved who removes evil and sin"
       },
       {
         "roman": "tīr",
@@ -180,7 +180,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Har",
-        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the divine beloved who removes evil and sin"
       },
       {
         "roman": "darasan",
@@ -310,7 +310,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the divine beloved who removes evil and sin"
       },
       {
         "roman": "prabh",
@@ -442,7 +442,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the divine beloved who removes evil and sin"
       },
       {
         "roman": "prītam",
@@ -742,7 +742,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "O Har; the divine Lord directly addressed; Hari is the remover of evil and sin."
+        "gloss": "O Har (Hari), a name of Viṣṇu/Kṛṣṇa, the beloved Lord who removes evil and sin"
       },
       {
         "roman": "ās",
@@ -804,7 +804,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "O Har; the divine Lord directly addressed; Hari is the remover of evil and sin."
+        "gloss": "O Har (Hari), a name of Viṣṇu/Kṛṣṇa, the beloved Lord who removes evil and sin"
       },
       {
         "roman": "ās",
@@ -852,7 +852,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "har",
-        "gloss": "Har, the divine Lord being addressed as you; Hari is the remover of evil and sin."
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the beloved Lord addressed here; the remover of evil and sin"
       },
       {
         "roman": "darasan",

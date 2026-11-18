@@ -1,5 +1,23 @@
 # Translation and library review workflow
 
+## Contextual names and completed poetic English
+
+Shared translation policy 11 preserves a divine name's evidenced meaning,
+relevant cultural identity and contextual devotional force. Sikh, Sant or Sufi
+classification does not erase an invoked form or image; all-pervasion does not
+exclude a named divine form. The whole passage determines the explanation,
+without inventing an unexpressed incarnation narrative. Public popups speak
+directly from within the tradition; derivation disputes and research labels
+belong in private evidence.
+
+Read the completed English as poetry as well as checking its word map. An
+accurate lexical paraphrase can still weaken a direct identity, lose an image or
+obscure agency. The 25 October contextual-name instructions supersede the earlier
+generic-Lord substitutions. See the current
+[poetic repair task](LIBRARY_REPAIR_TASKS.md) for the reopened sarūp reading,
+library coverage, independently adjudicated changes and remaining work. Passing
+prompt, cache or mapping tests does not establish linguistic accuracy.
+
 ## Recording selection and listener preference
 
 Evaluate the actual rendition before intake: a familiar singer, traditional text,

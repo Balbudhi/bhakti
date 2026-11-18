@@ -400,7 +400,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kemiti kaḷibi tuma śūnya swarūpara",
-    "english": "{0:how }{1:shall I fathom }{2:your }{3:formless }{4:true nature?}",
+    "english": "{0:how }{1:shall I fathom }{2:your }{4:true form—}{3:the Void?}",
     "words": [
       {
         "roman": "Kemiti",
@@ -422,13 +422,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "śūnya",
-        "gloss": "formless; void-natured",
+        "gloss": "the Void; śūnya, the form-transcending divine reality addressed here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "swarūpara",
-        "gloss": "of [your] true nature / essential form",
+        "gloss": "of your true form; your very nature",
         "concept_key": "",
         "preserve_in_english": false
       }

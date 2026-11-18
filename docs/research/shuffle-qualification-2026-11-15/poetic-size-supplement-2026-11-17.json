@@ -1,0 +1,45 @@
+{
+  "scope": "Exact Sundarakāṇḍa input at 539 unique performed lines and 794031 semantic text bytes; narrow maximum-size extension, no change to inference/projection methods or original evidence revision.",
+  "inputHash": "76cb4a52f261b2421f669613fca1ad95c2ada31bdcaf94b61bf9a3341f63aa0a",
+  "recordHash": "5c891247cea579d4255190b3cdedf4aae2a21121e0ae879bec91982a60c10350",
+  "stagedFileSha256": "34a9389f77f9ab7f66b32abdfa442d4baf15a9d247d6cd8d773a76e1fd75f88e",
+  "canonicalTextBytes": 794031,
+  "previousMaximumTextBytes": 793857,
+  "increaseBytes": 174,
+  "uniquePerformedLineCount": 539,
+  "extractionRequestId": "b87ec7182146401497017189e998b307",
+  "reviewRequestId": "14cf6c423df747c1a4bcc63e32338078",
+  "proposalHash": "3796b9d6e8f344fccda108dc4b6bebbe6a9761d867a657c2f3bb40b42a7e2925",
+  "method": {
+    "id": "source-grounded-semantic-review",
+    "version": 4,
+    "model": "google/gemini-3.7-flash",
+    "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+    "projectionVersion": 3,
+    "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+  },
+  "baselineEvidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+  "coverage": {
+    "exactInput": "All 539 source-bearing performed line IDs present once in canonical input, both stages complete at 539; accepted snapshot equals actual parsed staged reader.",
+    "protectedFields": "Source, roman, sourceLanguage and sourceWords for all lines, metadata, sequence and timings equal frozen baseline. Thirteen changed line records; the size increase follows reviewed popups and the bounded line277 thousands-scope English correction.",
+    "independentReading": "All 15 assertions, their cited source and 220 unique cited/adjacent source lines read; preread focused changes and role traps established before seeing output. This is a source-grounded targeted qualification, not exhaustive fresh human annotation of 539 lines."
+  },
+  "featureFindings": [
+    "Rāma is worship focus and narrative subject; Hanumān is narrative subject plus supporting worship focus through the opening namāmi; Sītā is narrative subject.",
+    "Śiva narration/reference and Umā/Bhavānī grammatical addressee are correctly separated from projected worship/narrative roles. At385 Rāma grants Hanumān’s request; Bhavānī is listener.",
+    "Counterfactual thousands of Śaṅkaras, Viṣṇus and Brahmās at277 do not become new worship subjects; Śāradā’s incidental assistance and Hari’s contextual Rāma identity do not create unrelated narrative subjects.",
+    "Refuge, longing, service, grace and name-power have repeated direct source support; praise, remembrance and petition are performed or explicitly enjoined.",
+    "New supported service/petition/remembrance projections need not match the prior subset. No asserted/projected false subject or theme found."
+  ],
+  "mechanicalChecks": [
+    "validate_semantic_record passed with actual staged reader and current taxonomy",
+    "actual staged data.js SHA and parsed accepted reader match",
+    "semantic input hash and canonical byte count match exact fresh record",
+    "record digest matches result; distinct extraction/review dispatches and exact proposal hash binding",
+    "method4/projection3 fingerprints unchanged; model remains google/gemini-3.7-flash"
+  ],
+  "schemaVersion": 1,
+  "status": "qualified-targeted-extension",
+  "independentReviewSha256": "6120d7d45eec273fba4338da5647b7508ff4296f2a0fedcde34fb15fc50c5eb8",
+  "preOutputExpectationsSha256": "a8481e46a135945aa1e7f1e8d06deef21f416fd470c109d7c12de2272a6e6178"
+}

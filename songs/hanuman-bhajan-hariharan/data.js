@@ -1639,7 +1639,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rāma, the delightful lord",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2309,7 +2309,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aba kṛpālu nija bhagati pāvanī.",
-    "english": "{0:Now,}{1: O merciful Lord,}{2: Your own}{4: purifying}{3: devotion,}",
+    "english": "{0:Now,}{1: O merciful Lord,}{4: purifying}{3: devotion}{2: to you—}",
     "words": [
       {
         "roman": "aba",
@@ -2325,7 +2325,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nija",
-        "gloss": "Your own",
+        "gloss": "to you yourself; your own, qualifying devotion addressed to you",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2380,7 +2380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dēhu sadā siva mana bhāvanī.",
-    "english": "{0:grant}{1: forever,}{4: which delights}{3: the mind}{2: of Śiva.”}",
+    "english": "{0:grant me that devotion,}{4: which}{1: forever}{4: delights}{3: the heart}{2: of Śiva.”}",
     "words": [
       {
         "roman": "dēhu",
@@ -9021,7 +9021,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma, the delightful lord",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9917,7 +9917,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma, the delightful lord",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15042,7 +15042,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari, the remover of evil and sin",
+        "gloss": "Hari, Viṣṇu as Rāma, the Lord who removes evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18155,7 +18155,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma, the delightful lord",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },

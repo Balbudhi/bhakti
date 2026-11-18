@@ -2506,7 +2506,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dunīyā de nazāre ik pāse, merī mā̃ dā nazārā ik pāse",
-    "english": "{2:The sights }{0,1:of the world }{3,4:on one side, }{5,6,7:my Mother's }{8:vision }{9,10:on the other side.}",
+    "english": "{2:The sights }{0,1:of the world }{3,4:on one side, }{8:the sight }{5,6,7:of my Mother }{9,10:on the other.}",
     "words": [
       {
         "roman": "Dunīyā",
@@ -2558,7 +2558,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nazārā",
-        "gloss": "vision",
+        "gloss": "sight; the sight of the Mother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2661,7 +2661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O merī mā̃ dā nazārā ik pāse, merī mā̃ dā nazārā ik pāse",
-    "english": "{0:Oh, }{1,2,3:my Mother's }{4:vision }{5,6:on one side, }{7,8,9:my Mother's }{10:vision }{11,12:on the other side.}",
+    "english": "{0:Oh, }{4:the sight }{1,2,3:of my Mother }{5,6:stands apart, }{10:the sight }{7,8,9:of my Mother }{11,12:stands apart.}",
     "words": [
       {
         "roman": "O",
@@ -2689,7 +2689,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nazārā",
-        "gloss": "vision",
+        "gloss": "sight; the sight of the Mother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2725,7 +2725,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nazārā",
-        "gloss": "vision",
+        "gloss": "sight; the sight of the Mother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5771,7 +5771,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho ghuṭ zaharā̃ de pīne painde ne, gal sabarā̃ dī sahanī paindī e",
-    "english": "{0:Oh, }{1:draughts }{2,3:of poison }{4,5,6:have to be drunk, }{7:and the matter }{8,9:of patience }{10,11,12:has to be endured.}",
+    "english": "{0:Oh, }{1:draughts }{2,3:of poison }{4,5,6:have to be drunk, }and {10,11,12:one must bear }{7:it }{8,9:with patience.}",
     "words": [
       {
         "roman": "Ho",
@@ -5817,42 +5817,42 @@ window.SONG_LINES = {
       },
       {
         "roman": "gal",
-        "gloss": "word",
+        "gloss": "the matter; what one has to face here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sabarā̃",
-        "gloss": "patiences",
+        "gloss": "patience; forbearance",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dī",
-        "gloss": "of",
+        "gloss": "of; links the matter to patience",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sahanī",
-        "gloss": "enduring",
+        "gloss": "bear; endure",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paindī",
-        "gloss": "falls",
+        "gloss": "must; has to (with the infinitive sahanī)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "e",
-        "gloss": "is",
+        "gloss": "is; completes the construction has to be endured",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'ghuṭ' (masc. pl.) agrees with 'pīne painde ne'; 'gal' (fem. sg.) agrees with 'sahanī paindī e'. 'zaharā̃' and 'sabarā̃' are Punjabi oblique plurals."
+    "grammarNote": "'ghuṭ' (masc. pl.) agrees with 'pīne painde ne'; 'gal' (fem. sg.) agrees with 'sahanī paindī e'. 'zaharā̃' and 'sabarā̃' are Punjabi oblique plurals. In the whole sacrifice-and-poison stanza, gal is the matter one must bear, with sabarā̃ dī qualifying it as a matter of patient endurance. English realizes this relation idiomatically as bear it with patience; dī remains a genitive linker in the source."
   },
   "v5-l2-rep": {
     "source": "हो गल सबरां दी सहनी पैंदी ए,",
@@ -5902,7 +5902,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho gal sabarā̃ dī sahanī paindī e,",
-    "english": "{0:Oh, }{1:the matter }{2,3:of patience }{4,5,6:has to be endured, }",
+    "english": "{0:Oh, }{4,5,6:one must bear }{1:it }{2,3:with patience,}",
     "words": [
       {
         "roman": "Ho",
@@ -5912,42 +5912,42 @@ window.SONG_LINES = {
       },
       {
         "roman": "gal",
-        "gloss": "word",
+        "gloss": "the matter; what one has to face here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sabarā̃",
-        "gloss": "patiences",
+        "gloss": "patience; forbearance",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dī",
-        "gloss": "of",
+        "gloss": "of; links the matter to patience",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sahanī",
-        "gloss": "enduring",
+        "gloss": "bear; endure",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "paindī",
-        "gloss": "falls",
+        "gloss": "must; has to (with the infinitive sahanī)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "e,",
-        "gloss": "is",
+        "gloss": "is; completes the construction has to be endured",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplicated modal obligation clause."
+    "grammarNote": "Reduplicated modal obligation clause. In the whole sacrifice-and-poison stanza, gal is the matter one must bear, with sabarā̃ dī qualifying it as a matter of patient endurance. English realizes this relation idiomatically as bear it with patience; dī remains a genitive linker in the source."
   },
   "v5-l3": {
     "source": "ओहनां की इस दुनिया तों लैणा, जेहदा मैया ते ऐतबार होवे",

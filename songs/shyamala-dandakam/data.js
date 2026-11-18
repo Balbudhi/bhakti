@@ -2201,23 +2201,23 @@ window.SONG_LINES = {
   "l080": {
     "source": "भक्तिभाजां परं श्रेयसे कल्पसे",
     "roman": "bhaktibhājāṃ paraṃ śreyase kalpase",
-    "english": "{3:You serve} {2:the welfare} {0:of those endowed with devotion} {1:alone},",
+    "english": "{3:You bring }{0:your devotees }{1,2:the highest good,}",
     "words": [
       {
         "roman": "bhaktibhājāṃ",
-        "gloss": "for those endowed with devotion"
+        "gloss": "of those endowed with devotion; your devotees"
       },
       {
         "roman": "paraṃ",
-        "gloss": "alone; only, restricting the beneficiaries"
+        "gloss": "supremely; to the highest degree, intensifying the good bestowed"
       },
       {
         "roman": "śreyase",
-        "gloss": "for welfare"
+        "gloss": "for welfare; for well-being"
       },
       {
         "roman": "kalpase",
-        "gloss": "you serve"
+        "gloss": "you serve; you bring about"
       }
     ],
     "sourceWords": [

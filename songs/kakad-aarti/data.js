@@ -3577,7 +3577,7 @@ window.SONG_LINES = {
     "source": "मैं ना जानूँ मैं ना जानूँ मैं ना जानूँ अल्ला इलाही",
     "sourceLanguage": "hi",
     "roman": "Maĩ nā jānū̃ maĩ nā jānū̃ maĩ nā jānū̃ Allā Ilāhī",
-    "english": "{0,1,2:I do not know,}{3,4,5: I do not know,}{6,7,8: I do not know}{9,10: Allah or the Divine.}",
+    "english": "{0,1,2:I do not know,}{3,4,5: I do not know,}{6,7,8: I do not know}{9: Allāh,}{10: the Divine.}",
     "words": [
       {
         "roman": "Maĩ",
@@ -3621,10 +3621,10 @@ window.SONG_LINES = {
       },
       {
         "roman": "Ilāhī",
-        "gloss": "the Divine / divine secrets"
+        "gloss": "the Divine; an epithet of Allāh here"
       }
     ],
-    "grammarNote": "Triple emphatic repetition of 'maĩ nā jānū̃' with the direct object phrase 'Allā Ilāhī' (referring to esoteric theological knowledge).",
+    "grammarNote": "Triple emphatic repetition of maĩ nā jānū̃. Allā Ilāhī is read as the direct-object phrase, with Ilāhī appositional to Allā; no conjunction meaning or is present.",
     "sourceWords": [
       {
         "text": "मैं",
@@ -11766,7 +11766,7 @@ window.SONG_LINES = {
     "source": "श्री नारायण वासुदेवाय सच्चिदानन्द सद्गुरु",
     "sourceLanguage": "hi",
     "roman": "śrī nārāyaṇa vāsudevāya saccidānanda sadguru",
-    "english": "{0,1:To holy Narayana,}{2: Vasudeva,}{4: the True Guru}{3: of existence-consciousness-bliss.}",
+    "english": "{0,1:To holy Narayana,}{2: Vasudeva,}{4: the True Guru,}{3: existence, consciousness, and bliss embodied.}",
     "words": [
       {
         "roman": "śrī",
@@ -11782,7 +11782,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saccidānanda",
-        "gloss": "existence-consciousness-bliss"
+        "gloss": "existence, consciousness, and bliss, describing the Guru himself"
       },
       {
         "roman": "sadguru",
@@ -13522,7 +13522,7 @@ window.SONG_LINES = {
     "source": "भव से मोहनीराज ही तारे नाथा",
     "sourceLanguage": "hi",
     "roman": "bhava se mohanīrāja hī tāre nāthā",
-    "english": "{2,3:Mohiniraj alone}{4: delivers}{0,1: across worldly existence,}{5: O Lord.}",
+    "english": "{3:Do }{4:ferry }{2:Mohanīrāj }{0,1:across worldly existence,}{5: O Lord.}",
     "words": [
       {
         "roman": "bhava",
@@ -13534,22 +13534,22 @@ window.SONG_LINES = {
       },
       {
         "roman": "mohanīrāja",
-        "gloss": "Mohanīrāj; the referent in this Hindi verse is uncertain"
+        "gloss": "Mohanīrāj, the poet asking Sāīnātha to deliver him"
       },
       {
         "roman": "hī",
-        "gloss": "alone / indeed"
+        "gloss": "indeed; emphatic particle strengthening the plea"
       },
       {
         "roman": "tāre",
-        "gloss": "delivers / ferries across"
+        "gloss": "ferry across; deliver (the plea to the Lord)"
       },
       {
         "roman": "nāthā",
         "gloss": "O Lord"
       }
     ],
-    "grammarNote": "Ablative separation 'bhava se' with 3rd-person verb 'tāre' (delivers); 'Mohanīrāja' is the subject.",
+    "grammarNote": "Read with the preceding first-person request and folded hands. Mohanīrāj is the person to be delivered; nāthā addresses the Lord. The Hindi adaptation continues the petition of Namaskārāṣṭaka8, not a claim that the poet delivers others.",
     "sourceWords": [
       {
         "text": "भव",
@@ -14782,7 +14782,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "of Lord Hari; Hari is “the remover” of evil and suffering"
+        "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and suffering"
       },
       {
         "roman": "guṇa",
@@ -15710,11 +15710,11 @@ window.SONG_LINES = {
     "source": "भवद्दर्शनात् संपुनीतः प्रभोऽहम्",
     "sourceLanguage": "hi",
     "roman": "bhavaddarśanāt saṃpunītāḥ prabhō 'ham",
-    "english": "{0:From the vision of You,}{1: fully purified,}{2: O Lord,}{3: I am.}",
+    "english": "{0:By beholding you,}{2: O Lord,}{3: I am}{1: wholly purified.}",
     "words": [
       {
         "roman": "bhavaddarśanāt",
-        "gloss": "from the sight/vision of You"
+        "gloss": "by beholding you; through seeing you"
       },
       {
         "roman": "saṃpunītāḥ",
@@ -15960,18 +15960,18 @@ window.SONG_LINES = {
     "source": "साईरूपधर राघवोत्तमम्",
     "sourceLanguage": "hi",
     "roman": "sāyīrūpadhara rāghavōttamam",
-    "english": "{0:O bearer of the form of Sai,}{1: the best of the Raghus,}",
+    "english": "{0:The bearer of the form of Sāī,}{1: the best of the Raghus,}",
     "words": [
       {
         "roman": "sāyīrūpadhara",
-        "gloss": "O bearer of the form of Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
+        "gloss": "bearer of the form of Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
         "roman": "rāghavōttamam",
         "gloss": "the best of the Raghus (Rama)"
       }
     ],
-    "grammarNote": "Vocative sāyīrūpadhara; rāghavōttamam is accusative singular direct object of cintayāmi in line 222.",
+    "grammarNote": "The opening epithet is construed with rāghavottamam and prabhum, accusative objects of cintayāmi in the ensuing clause. The official hymn has sāīrūpadharam; the shortened frozen sung form is retained without inventing a different address.",
     "sourceWords": [
       {
         "text": "साईरूपधर",
@@ -16655,7 +16655,7 @@ window.SONG_LINES = {
     "source": "स्तोत्रमेतत् पठेद् भक्त्या",
     "sourceLanguage": "hi",
     "roman": "stōtram ētat paṭhēd bhaktyā",
-    "english": "{2:Should recite }{1:this }{0:hymn of praise }{3:with devotion,}",
+    "english": "{2:One who recites }{1:this }{0:hymn of praise }{3:with devotion,}",
     "words": [
       {
         "roman": "stōtram",
@@ -16667,14 +16667,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "paṭhēd",
-        "gloss": "should recite"
+        "gloss": "should recite; recites in the conditional relative clause"
       },
       {
         "roman": "bhaktyā",
         "gloss": "with devotion"
       }
     ],
-    "grammarNote": "Sandhi: paṭhet + bhaktyā -> paṭhēd bhaktyā. Optative 3rd singular verb paṭhēt expressing the phalaśruti injunctive condition.",
+    "grammarNote": "Paṭhet is optative third singular; the relative subject yaḥ naraḥ continues in240. Together239–242 state the fruit of reciting this hymn devotedly with mind absorbed in Sāīnātha.",
     "sourceWords": [
       {
         "text": "स्तोत्रमेतत्",
@@ -16701,7 +16701,7 @@ window.SONG_LINES = {
     "source": "यो नरस्तन्मनाः सदा",
     "sourceLanguage": "hi",
     "roman": "yō naras tanmanāḥ sadā",
-    "english": "{1:The person}{0: who}{3: is always}{2: absorbed in Him in mind,}",
+    "english": "{0,1:whose }{2:mind is }{3:always }{2:absorbed in Him}",
     "words": [
       {
         "roman": "yō",
@@ -16747,7 +16747,7 @@ window.SONG_LINES = {
     "source": "सद्गुरोः साईनाथस्य",
     "sourceLanguage": "hi",
     "roman": "sadgurōḥ sāyināthasya",
-    "english": "{0:of the true guru}{1: Sai Nath,}",
+    "english": "—{0:the true Guru }{1:Sāīnātha}—",
     "words": [
       {
         "roman": "sadgurōḥ",
@@ -16758,7 +16758,7 @@ window.SONG_LINES = {
         "gloss": "of Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”"
       }
     ],
-    "grammarNote": "Both nouns are masculine genitive singulars ('sadguru' -> 'sadguroḥ', 'sāyinātha' -> 'sāyināthasya') specifying whose grace is obtained in line 242.",
+    "grammarNote": "Sadguroḥ and sāyināthasya are genitive singular, specifying whose grace is received in242. The joint English names Him appositionally here and carries the genitive relation into His grace in242.",
     "sourceWords": [
       {
         "text": "सद्गुरोः",
@@ -16778,7 +16778,7 @@ window.SONG_LINES = {
     "source": "कृपापात्रं भवेद् ध्रुवम्",
     "sourceLanguage": "hi",
     "roman": "kṛpāpātraṃ bhavēd dhruvam",
-    "english": "{1:shall}{2: surely}{1: become}{0: a vessel of grace.}",
+    "english": "{1:shall }{2:surely }{1:become }{0:a vessel of His grace.}",
     "words": [
       {
         "roman": "kṛpāpātraṃ",
@@ -17043,7 +17043,7 @@ window.SONG_LINES = {
     "source": "श्री सच्चिदानन्द सद्गुरु साईनाथ महाराज की जय",
     "sourceLanguage": "hi",
     "roman": "śrī saccidānanda sadguru sāyināth mahārāj kī jai",
-    "english": "{6:Victory}{5: to}{0: the holy}{2: True Guru}{1: of existence-consciousness-bliss,}{4: Great King}{3: Sai Nath!}",
+    "english": "{6:Victory}{5: to}{0: the holy}{2: True Guru,}{1: existence, consciousness, and bliss embodied,}{4: Great King}{3: Sai Nath!}",
     "words": [
       {
         "roman": "śrī",
@@ -17051,7 +17051,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saccidānanda",
-        "gloss": "existence-consciousness-bliss"
+        "gloss": "existence, consciousness, and bliss, describing the Guru himself"
       },
       {
         "roman": "sadguru",

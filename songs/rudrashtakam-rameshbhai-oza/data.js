@@ -60,7 +60,7 @@ window.SONG_LINES = {
   "l002": {
     "source": "नमामीशमीशाननिर्वाणरूपं विभुं व्यापकं ब्रह्मवेदस्वरूपम्",
     "roman": "namāmīśamīśānanirvāṇarūpaṃ vibhuṃ vyāpakaṃ brahmavedasvarūpam",
-    "english": "{0:I bow to the sovereign Lord, whose form is liberation, }{1:all-pervading, }{2:permeating all, }{3:whose very nature is ultimate reality and the Veda.}",
+    "english": "{0:I bow to the sovereign Lord, whose form is liberation, }{1:all-pervading, }{2:permeating all, }{3:the embodiment of ultimate reality and the Veda.}",
     "words": [
       {
         "roman": "namāmīśamīśānanirvāṇarūpaṃ",
@@ -76,7 +76,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmavedasvarūpam",
-        "gloss": "whose very nature is ultimate reality and the Veda"
+        "gloss": "the embodiment of Brahman, ultimate reality, and the Veda"
       }
     ],
     "sourceWords": [
@@ -1080,7 +1080,7 @@ window.SONG_LINES = {
   "l018": {
     "source": "विभुं व्यापकं ब्रह्मवेदस्वरूपम्",
     "roman": "vibhuṃ vyāpakaṃ brahmavedasvarūpam",
-    "english": "{0:All-pervading, }{1:permeating all, }{2:whose very nature is ultimate reality and the Veda.}",
+    "english": "{0:All-pervading, }{1:permeating all, }{2:the embodiment of ultimate reality and the Veda.}",
     "words": [
       {
         "roman": "vibhuṃ",
@@ -1092,7 +1092,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmavedasvarūpam",
-        "gloss": "whose very nature is ultimate reality and the Veda"
+        "gloss": "the embodiment of Brahman, ultimate reality, and the Veda"
       }
     ],
     "sourceWords": [

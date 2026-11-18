@@ -56,7 +56,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rām",
-        "gloss": "Rām; God, the divine beloved addressed in this hymn; Rāma means “pleasing” or “delightful”."
+        "gloss": "Rām, the delightful Lord, invoked here as the divine beloved; the name is also that of Rāma of Ayodhyā"
       },
       {
         "roman": "kī",
@@ -998,7 +998,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "Rām; God, the divine beloved addressed in this hymn; Rāma means “pleasing” or “delightful”."
+        "gloss": "Rām, the delightful Lord, invoked here as the divine beloved; the name is also that of Rāma of Ayodhyā"
       },
       {
         "roman": "kī",

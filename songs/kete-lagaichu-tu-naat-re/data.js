@@ -719,7 +719,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lobha rāga hiṁsā kete tu karibu",
-    "english": "{3:How much }{0:greed, }{1:rāga, }{2:and malice }{4:will you }{5:practice?}",
+    "english": "{3:How much }{0:greed, }{1:anger, }{2:and malice }{4:will you }{5:practice?}",
     "words": [
       {
         "roman": "Lobha",
@@ -729,9 +729,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāga",
-        "gloss": "attachment or passion; anger",
+        "gloss": "anger; wrath",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "hiṁsā",
@@ -758,7 +758,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dvandva-like list of nouns acting as compound direct object to karibu. rāga matches curated registry entry."
+    "grammarNote": "The nouns greed, anger, and malice form the object of karibu; rāga takes its Odia anger sense in this warning about harmful conduct."
   },
   "verse-2-line-3": {
     "source": "ଅନୁତାପରେ ପ୍ରାଣ ହେବ ଶେଷ",

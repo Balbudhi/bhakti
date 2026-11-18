@@ -451,11 +451,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prānanātha ke nāī̃",
-    "english": "{1,2:in the voice of }{0:the Lord of Life.”}",
+    "english": "{1,2:in the voice of }{0:the lord of my life.”}",
     "words": [
       {
         "roman": "prānanātha",
-        "gloss": "lord of life; husband (Rama)",
+        "gloss": "lord of my life; my beloved husband, Rāma (Sītā is speaking)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -472,7 +472,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Postpositional phrase ke nāī̃ governing the compound noun prānanātha ('lord of life'), functioning adverbially."
+    "grammarNote": "Ke nāī̃ means 'like/in the manner of', here referring to a voice. Sītā calls Rāma prānanātha, the lord of her life and her beloved husband; 'my' supplies the speaker’s implicit relation."
   },
   "verse-1-c": {
     "source": "कह्यो लखन हत्या हरिन कपट सीय हठि पठ्यो बरियाईँ",
@@ -534,7 +534,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahyo lakhana hatyā harina kapaṭa sīya haṭhi paṭhyo bariyāī̃",
-    "english": "{1:Lakshmana }{0:said, }{4:“The deceitful }{3:deer }{2:is slain; }{5:Sita }{6:stubbornly }{7:sent me }{8:by force.”}",
+    "english": "{1:Lakshmana }{0:said, }{4:“The deceitful }{3:deer }{2:is slain.” }{5:Sita }{6:stubbornly }{7:sent him }{8:by force.}",
     "words": [
       {
         "roman": "kahyo",
@@ -586,12 +586,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "bariyāī̃",
-        "gloss": "by force; forcibly; against my will",
+        "gloss": "by force; forcibly; against his will",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Paratactic clauses: kahyo lakhana ('Lakshmana said'), hatyā harina kapaṭa ('the deer of deceit is slain / a fraud'), sīya haṭhi paṭhyo bariyāī̃ ('Sita stubbornly sent [me] by force')."
+    "grammarNote": "Paratactic clauses: kahyo lakhana introduces Lakṣmaṇa’s reply about the slain, deceitful deer; sīya then becomes the subject of the narrator’s clause, haṭhi paṭhyo bariyāī̃ ('stubbornly sent [him] by force')."
   },
   "verse-2-a": {
     "source": "बंधु बिलोकि कहत तुलसी प्रभु",

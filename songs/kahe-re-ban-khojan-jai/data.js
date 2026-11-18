@@ -373,7 +373,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord; Hari is “the remover” of evil and suffering"
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the indwelling Lord who removes evil and suffering"
       },
       {
         "roman": "base",

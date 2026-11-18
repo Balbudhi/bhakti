@@ -7728,7 +7728,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rama; Rāma means “pleasing” or “delightful”",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8954,7 +8954,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "of Hari [God]; Hari is “the remover” of evil and suffering",
+        "gloss": "of Hari, Viṣṇu worshipped here as Rāma; the Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18787,7 +18787,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rama; Rāma means “pleasing” or “delightful”",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19763,7 +19763,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rama; Rāma means “pleasing” or “delightful”",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -23686,7 +23686,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "by Rama; Rāma means “pleasing” or “delightful”",
+        "gloss": "by Rāma, the delightful Lord of Ayodhyā, Sītā’s husband; an oath sworn by his name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -32708,7 +32708,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -32988,7 +32988,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33250,7 +33250,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "from Rāma; Rāma means “pleasing” or “delightful”",
+        "gloss": "from Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33639,17 +33639,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṅkara sahasa biṣnu aja tōhī. sakahiṁ na rākhi rāma kara drōhī .",
-    "english": "{0:Shankara, }{1:a thousand }{2:Vishnus, }{3:and the Unborn Brahma }{5,6:cannot }{7:save }{4:you, }{10:an enemy }{9:of }{8:Rama.}",
+    "english": "Even {1:thousands of }{0:Śaṅkaras, }{2:Viṣṇus, }{3:and unborn Brahmās }{5,6:cannot }{7:save }{4:you, }{10:an enemy }{9:of }{8:Rāma.}",
     "words": [
       {
         "roman": "saṅkara",
-        "gloss": "Śiva; the beneficent deity",
+        "gloss": "Śaṅkaras, under the plural force of sahasa; Śiva, the beneficent deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sahasa",
-        "gloss": "a thousand; thousands of",
+        "gloss": "thousands of; applies to all three named deities",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33661,7 +33661,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "aja",
-        "gloss": "the unborn one; Brahmā",
+        "gloss": "unborn Brahmās, under the plural force of sahasa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33691,7 +33691,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -33708,7 +33708,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'saṅkara sahasa biṣnu aja' forms a composite plural subject governing the third-person plural auxiliary 'sakahiṁ'. 'rākhi' is an uninflected infinitive/verbal stem. 'rāma kara drōhī' stands in apposition to the object pronoun 'tōhī'."
+    "grammarNote": "Sahasa modifies the coordinate series Śaṅkara, Viṣṇu and Aja. All three are construed with plural sakahiṃ; the line warns that even countless such deities cannot protect Rāvaṇa in enmity toward Rāma."
   },
   "line-278": {
     "source": "मोहमूल बहु सूल प्रद त्यागहु तम अभिमान।",
@@ -36435,7 +36435,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "by Hari (Rama / Supreme Lord); Hari is “the remover” of evil and suffering",
+        "gloss": "by Hari, Viṣṇu as Rāma, the Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -47012,7 +47012,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "of Rāma; Rāma means “pleasing” or “delightful”",
+        "gloss": "of Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -65284,7 +65284,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rāma; Rāma means “pleasing” or “delightful”",
+        "gloss": "O Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -65820,7 +65820,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "O Rāma; Rāma means “pleasing” or “delightful”",
+        "gloss": "O Rāma, the delightful Lord of Ayodhyā, Sītā’s husband",
         "concept_key": "",
         "preserve_in_english": false
       },

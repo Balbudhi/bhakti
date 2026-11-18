@@ -218,7 +218,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "cd76717306f92baee6f302c35f705637409f71da3afbe2d23453e20cf3cbad6b",
+        "inputHash": "32e08fcc22b9dab7e42d2201d03278037c8271f1dd26542bd9efa638535c4270",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -229,12 +229,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "1a4a9f0611918c6ab0e252e9420b5111651d3e70de606d4b8ace95930ffc5212",
+          "recordHash": "daeacc1992614e5c37e6ea58f29c140e01c88c997a96bb54985a0c073824461b",
           "extractionRequestIds": [
-            "151095f39c974f928a2e11d7a40fd73a"
+            "e394f905918746c0990c3ec9f95a11d9"
           ],
           "reviewRequestIds": [
-            "567475f107b74332ab7cfbfc391cb13b"
+            "b62fa8ac014441c8ba72756c7f85f828"
           ],
           "coveredLineCount": 36
         },
@@ -242,37 +242,33 @@
           "themes": [
             {
               "id": "theme.compassion",
-              "weight": 0.125
-            },
-            {
-              "id": "theme.divine_presence",
-              "weight": 0.125
+              "weight": 0.25
             },
             {
               "id": "theme.humility",
-              "weight": 0.125
+              "weight": 0.25
             },
             {
               "id": "theme.refuge",
-              "weight": 0.3125
+              "weight": 0.25
             },
             {
               "id": "theme.surrender",
-              "weight": 0.3125
+              "weight": 0.25
             }
           ],
           "actions": [
             {
               "id": "action.offering",
-              "weight": 0.16666666666666669
+              "weight": 0.22222222222222224
             },
             {
               "id": "action.petition",
-              "weight": 0.4166666666666667
+              "weight": 0.22222222222222224
             },
             {
               "id": "action.praise",
-              "weight": 0.4166666666666667
+              "weight": 0.5555555555555556
             }
           ],
           "subjects": [
@@ -743,7 +739,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "e8cc73738a69bc43beaaf27677e2e634aa3016cd643b22e02d479c445f750ae3",
+        "inputHash": "96b3e8b9281bd4a01b615a2a898c8ab15a55077b9470a6953e700f5f7fbb571c",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -754,12 +750,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "03a91635012ec064d5823450768deeb3a0e38dc38a7596eb867f98028cc4fff7",
+          "recordHash": "94495c16849f801ec602cd4bc2692e20eab77634dc6f7d84eef3c536e9efa718",
           "extractionRequestIds": [
-            "91f2eb5fe2034e61b108318d5da77544"
+            "12577861a50a439eaab968e1fff248ab"
           ],
           "reviewRequestIds": [
-            "ce9ddc22efe84a0aaa04ac9076f291a0"
+            "90109d640e56491493a0028a93fe1995"
           ],
           "coveredLineCount": 13
         },
@@ -1161,7 +1157,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "9563bb9940f0f56f68539bc28b8c599bd0ae627dfc3295526debea8f481b0849",
+        "inputHash": "f4ffe8008b28d328992ce4c0d6eb44a7d01c85ce3d178e53e4c005105812ae7c",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -1172,12 +1168,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "165a2bf354e4204e5232c6a3c1af54e8d003d12ae4d189dddff1d3e72e350343",
+          "recordHash": "fad3ab4927b841e4b5ec34d5a6e1606738299c482fc925dc6ef13bb061aa84aa",
           "extractionRequestIds": [
-            "6cbcb73aa5f348e499888d5e4fdfddde"
+            "66b5ce48ca364cdb93bdd9e243ec471b"
           ],
           "reviewRequestIds": [
-            "6526c8386ad24fe2b8b0a8bf4dd705a3"
+            "30a6ada5b8c34d4c8d2dbe46b778a975"
           ],
           "coveredLineCount": 23
         },
@@ -1188,7 +1184,7 @@
               "weight": 0.22222222222222224
             },
             {
-              "id": "theme.longing",
+              "id": "theme.meeting",
               "weight": 0.22222222222222224
             },
             {
@@ -1496,7 +1492,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "8776aaeb211b7c2586535472ac092ed8602aedf51d2527b9bc8c31afd8226b9d",
+        "inputHash": "731ee23178182e0f5b87509a2f3dcd9b9b87b88ea36e3d0cf8eb301ca65383c5",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -1507,12 +1503,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "ba20ce21a0dd509c319cccf9eca0b9ca294d4c89e93a6e29728411415dc631de",
+          "recordHash": "21c9d9de990246d8b76b83fa6f98690dad246b1784a978663f9143d9035a3189",
           "extractionRequestIds": [
-            "2d75afd245284bc19a479c95fb0f3d78"
+            "fc1906be82c04700a0b1edc2a9b8c839"
           ],
           "reviewRequestIds": [
-            "2f462dd1d45742bd8e84ae88ca2f3a14"
+            "8d25e575120d43ba948a90a4cfd573fa"
           ],
           "coveredLineCount": 19
         },
@@ -1520,11 +1516,7 @@
           "themes": [
             {
               "id": "theme.longing",
-              "weight": 0.7142857142857143
-            },
-            {
-              "id": "theme.meeting",
-              "weight": 0.28571428571428575
+              "weight": 1.0
             }
           ],
           "actions": [
@@ -3014,7 +3006,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "c033a13704e70103f649487f7520f1747448125bd28936df688ffd537fe955e9",
+        "inputHash": "66194cc69ea7a581247a031743b19b7c205e7f18b801098a2c3418eaf83665d2",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -3025,12 +3017,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "b6a1e5d87f8235db2b5634e1e2813c9f4179f9894c954a639d0e016657c0037a",
+          "recordHash": "7c6f821cc29ff84119c9594c1f785fd8cb96af8f5b40ce40cda0834af3aaf069",
           "extractionRequestIds": [
-            "a28a3557205e41caa8e142335bcdc1fb"
+            "c7e009456271426495488c9e4bd10909"
           ],
           "reviewRequestIds": [
-            "6038cbe74a764f6da840379ea43346c4"
+            "40c9c8c1aa334bfa8dd2870fa1e0d896"
           ],
           "coveredLineCount": 25
         },
@@ -3121,7 +3113,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "87784d2b543ae774a043e86c0f66ad0cf708d09c5241b3c24b04d238a0ec6ea8",
+        "inputHash": "4e8b07d07d9209044282661407431f713a31d8b2b81c3476b4e53acc810dabaa",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -3132,12 +3124,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "ffb09ff6bdfbbf6f422d7bf620c2cc3ad0951ae96b0e696cf56180fead4f55b9",
+          "recordHash": "e3d1c15a5dfa227759318aa89acca0d9d5fc9974a112106eac47af54b02933d1",
           "extractionRequestIds": [
-            "731ffc47a9264b8b8869ea583e58d50b"
+            "e6f9ad8466ff4510a1a5cfae95978040"
           ],
           "reviewRequestIds": [
-            "1d07b10c1d9b4d4083f75773d2931752"
+            "295c2842757942ec9ecf7b5cac39db7e"
           ],
           "coveredLineCount": 21
         },
@@ -3162,7 +3154,13 @@
               "weight": 0.4
             }
           ],
-          "subjects": []
+          "subjects": [
+            {
+              "id": "subject.guru",
+              "weight": 0.4,
+              "role": "narrative_subject"
+            }
+          ]
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
@@ -3758,7 +3756,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "96b6284d99ef873412b0ce91c608f56f83c87df7d93ed1fc83ffe57966191f9f",
+        "inputHash": "c69114401e10487aea49174306eea791d61c8371f43db1c84ddd00fe998cc2f5",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -3769,12 +3767,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "3f760c9f39aa412c0ac31243af19abe936501c50f42f02492aad69d63063a42e",
+          "recordHash": "2d0194d27052bcefa5d23e671399cc702a9aea5dbf16394d028081b82add4dc6",
           "extractionRequestIds": [
-            "409c36405d0a4050b91e4d0b9424e14b"
+            "183c002b1c234c66a02542c0cd9ee7c1"
           ],
           "reviewRequestIds": [
-            "1224cc352e124d63833ac33801a297d9"
+            "4830982fd4a0426a84ab80c74d00f19c"
           ],
           "coveredLineCount": 9
         },
@@ -3799,8 +3797,12 @@
           ],
           "actions": [
             {
+              "id": "action.offering",
+              "weight": 0.5
+            },
+            {
               "id": "action.praise",
-              "weight": 1.0
+              "weight": 0.5
             }
           ],
           "subjects": [
@@ -4085,7 +4087,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "ce20b74afdce0d19683275a3147c66d2aa1f03a25fa4d62e49a6a324f36ff590",
+        "inputHash": "c1379cc831efdd7f0b734cacd99c335909fae77c34900373b5a2111391ecfb44",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -4096,12 +4098,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "8da935f5a9926d558b388fb4c3f14f0a9c8dd835def622bb7c82b00d1e354068",
+          "recordHash": "6680f1022bd668b82864352342ea91ebcb0d967e6a03a9affda5a408b1797d83",
           "extractionRequestIds": [
-            "01a8be4bfc9b4c5b91bc3bad6de1c2f1"
+            "eabbebd6d71a48bfbde7365f401349d2"
           ],
           "reviewRequestIds": [
-            "c0f7fc4763cc467b82b2a7abe670ca49"
+            "50543451f4e144018b031589b53361f2"
           ],
           "coveredLineCount": 30
         },
@@ -4403,7 +4405,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "124abc7e17a32d848b5a2fd49aa5f7254211da380cf2feaed3aee6d540ac86cf",
+        "inputHash": "aff0bd134126ba7e5440eb1ad8d58808e14983e19bb9d7aab320dde99ec35310",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -4414,32 +4416,36 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "85843609a9a34042756be37c356055c70e28fcf228cb486aef2fbd63a8007985",
+          "recordHash": "2f13a11aa456b4c921f4c6163b6e1c28ab3905c5fcefde4cb24a91102627699e",
           "extractionRequestIds": [
-            "5acc73624b74457b8a0f76ba5d983e1b"
+            "08e841f070c4460ab5a7150133af7435"
           ],
           "reviewRequestIds": [
-            "c030fabefd484ecab5235d7a594c4bbd"
+            "54f2142e4cb140c89cd0dce5e1ff574d"
           ],
           "coveredLineCount": 12
         },
         "features": {
           "themes": [
             {
+              "id": "theme.detachment",
+              "weight": 0.125
+            },
+            {
               "id": "theme.grace",
-              "weight": 0.35714285714285715
+              "weight": 0.3125
             },
             {
               "id": "theme.humility",
-              "weight": 0.14285714285714288
+              "weight": 0.125
             },
             {
               "id": "theme.name_power",
-              "weight": 0.35714285714285715
+              "weight": 0.3125
             },
             {
               "id": "theme.service",
-              "weight": 0.14285714285714288
+              "weight": 0.125
             }
           ],
           "actions": [
@@ -4940,7 +4946,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "3e6cbdac64fd2343c1a7a8a995c04e6363c243df55f41441f8f81fca751b4a28",
+        "inputHash": "7dc57c30592b5fb38f40a271ccf2518842e8ae35d84150c9e5fe53b7acc1fabd",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -4951,12 +4957,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "44331af996fef4e667b3667e7c0171cd87aadafb8ecddb87169fa5df4ebf2519",
+          "recordHash": "d694440337b3d0ad943cda8492968ac397fdc5bfba3f9e3c0cfc962e23879287",
           "extractionRequestIds": [
-            "491ae2d0cb2a4356a527c4fc2cd729f6"
+            "a2e50069387545c0903ddd7d143bb5b2"
           ],
           "reviewRequestIds": [
-            "3267154d25db41e5b461366cc8b0d0ac"
+            "5182c62f3006464c8265bc6439c2d0b4"
           ],
           "coveredLineCount": 15
         },
@@ -4964,23 +4970,19 @@
           "themes": [
             {
               "id": "theme.detachment",
-              "weight": 0.15384615384615385
+              "weight": 0.18181818181818182
             },
             {
               "id": "theme.ethical_conduct",
-              "weight": 0.15384615384615385
-            },
-            {
-              "id": "theme.impermanence",
-              "weight": 0.15384615384615385
+              "weight": 0.18181818181818182
             },
             {
               "id": "theme.name_power",
-              "weight": 0.3846153846153846
+              "weight": 0.45454545454545453
             },
             {
               "id": "theme.surrender",
-              "weight": 0.15384615384615385
+              "weight": 0.18181818181818182
             }
           ],
           "actions": [
@@ -5237,7 +5239,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "2111546b8abe4784352f2c0925b43738aeab844984bba704f6f2f088a03ea8eb",
+        "inputHash": "5224d7fd684148eb962fc70cdabc58469ab21544c70db53b6035c140f83ef6ef",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -5248,12 +5250,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "7a891646986d2f0bac541debd391ee7fa3f41210cd3418da8b59133f70b8d962",
+          "recordHash": "05d7a887f3f38b4312b9614bec5eb9ed34234943c25ce7e717d0fd227c02d3c2",
           "extractionRequestIds": [
-            "a9c81b11455749ff87a4d876f1d69728"
+            "ac1f31b34b394dd6b122d2e647f683bd"
           ],
           "reviewRequestIds": [
-            "58b5547f7b7e417aa9d6019e52f631aa"
+            "64883b38b68745989057b0cf5aed7621"
           ],
           "coveredLineCount": 21
         },
@@ -5264,11 +5266,11 @@
               "weight": 0.3333333333333333
             },
             {
-              "id": "theme.liberation",
+              "id": "theme.equality",
               "weight": 0.3333333333333333
             },
             {
-              "id": "theme.name_power",
+              "id": "theme.liberation",
               "weight": 0.3333333333333333
             }
           ],
@@ -5344,7 +5346,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "c389538dfae54402ff13e16d77f9f45563e58c9137cb04c2e1c41b61357f4ef5",
+        "inputHash": "7298b032807fb09b8a287445683e7cfed8735cae7d4f8c11492910dc39585ac7",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -5355,27 +5357,27 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "c3e984aeb75535240c086b146e35c8a7ebb3e2e983848a113596d941ea1976ca",
+          "recordHash": "9b2f14d47813551d47ce10603f1e1832e8af26cba33d0b89ccde8ec96b5a5f76",
           "extractionRequestIds": [
-            "0a6b36272933427495e4e8290a9fd0a3"
+            "61327fc9801242f780e99468742fac5e"
           ],
           "reviewRequestIds": [
-            "5940b337f6ec4cde9d998c4e0451ac43"
+            "859c121eff2547b894bed1dbe4047627"
           ],
           "coveredLineCount": 17
         },
         "features": {
           "themes": [
             {
+              "id": "theme.detachment",
+              "weight": 0.22222222222222224
+            },
+            {
               "id": "theme.impermanence",
               "weight": 0.5555555555555556
             },
             {
               "id": "theme.liberation",
-              "weight": 0.22222222222222224
-            },
-            {
-              "id": "theme.name_power",
               "weight": 0.22222222222222224
             }
           ],
@@ -6080,7 +6082,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "3a5fc04d9549bfca54a3a465cf8dcbd954c330b4b1e0dc1ed5faf8be9cba05f7",
+        "inputHash": "5421183285c9bfd0f3b0238f57d7dca04347dad2f6a6c33f5b5175587f11fdb3",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -6091,12 +6093,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "0dd54fe74728672c8b7530bf0b300204fcee92ef80f23d0705be683e9d19693f",
+          "recordHash": "9b2c030b7550cb2e74876486a19c751d58881b437aa4ff6f4135199be9b3f3b4",
           "extractionRequestIds": [
-            "505fe2e328a9435a9e6e227eba68892b"
+            "2222dcee59ff49559ccb84f76d478051"
           ],
           "reviewRequestIds": [
-            "b7f8f7d53bf4474c92a1aa3fd013d54a"
+            "44b5cc6223fa49459b24c09696e5a92e"
           ],
           "coveredLineCount": 11
         },
@@ -8148,7 +8150,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "bebc6a052370519e0dbce26acecf4d98fa7329080a6ee3a207a2a3f55f027034",
+        "inputHash": "59575126b6d9f4394e87cfa28e719d50f33d09d7c1d5456cf5692b35871ed6fd",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -8159,24 +8161,20 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "b6927329db97fb6c087c4f6c6963b210c70fe4566a6c9e62010b77c24160122f",
+          "recordHash": "f34406b2e7b8042e7928684a5ae0f066f7208feebaa063d2dc58a87c71b97ba9",
           "extractionRequestIds": [
-            "8f8512d2fd894262a25d609425ead293"
+            "7917da47376b40018cad412df1d8a1fd"
           ],
           "reviewRequestIds": [
-            "3d3b7d9f44564abc83d469f79c8442f4"
+            "58df80d668694aaeb7aa0a1a6fda2bde"
           ],
           "coveredLineCount": 26
         },
         "features": {
           "themes": [
             {
-              "id": "theme.humility",
-              "weight": 0.28571428571428575
-            },
-            {
               "id": "theme.refuge",
-              "weight": 0.7142857142857143
+              "weight": 1.0
             }
           ],
           "actions": [
@@ -8945,7 +8943,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "815edd9d5382d144877bca1aac898183faf96e7eb9efb40266588d05f268d1c8",
+        "inputHash": "3f106176c9c7cbcbe1cb9dd230d8a3f749c1dae1f718c6f6b9c5b7833b8ac209",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -8956,58 +8954,63 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "17fbae6d0033b572eb97681b1b6f72865ac3b435d94e0929f945fbb5a3d79983",
+          "recordHash": "1ac5649125a17a01d94433976e9d1411239886fe2bba8e2bdda818f1afdac063",
           "extractionRequestIds": [
-            "15bd11c8279c462ebc2731d1ecb87a98"
+            "20b991d61f524820ab96fe9a102deb28"
           ],
           "reviewRequestIds": [
-            "507e8b6692ce4b9c8b80ba7fddf4c0a9"
+            "922850f86c7640ce874d883040472b9e"
           ],
           "coveredLineCount": 231
         },
         "features": {
           "themes": [
             {
+              "id": "theme.creation",
+              "weight": 0.14285714285714288
+            },
+            {
               "id": "theme.grace",
-              "weight": 0.18181818181818182
+              "weight": 0.35714285714285715
             },
             {
               "id": "theme.liberation",
-              "weight": 0.18181818181818182
+              "weight": 0.14285714285714288
             },
             {
               "id": "theme.refuge",
-              "weight": 0.45454545454545453
-            },
-            {
-              "id": "theme.surrender",
-              "weight": 0.18181818181818182
+              "weight": 0.35714285714285715
             }
           ],
           "actions": [
             {
-              "id": "action.praise",
+              "id": "action.petition",
               "weight": 0.4
             },
             {
-              "id": "action.remembrance",
+              "id": "action.praise",
               "weight": 0.4
             }
           ],
           "subjects": [
             {
               "id": "subject.hanuman",
-              "weight": 0.16666666666666669,
+              "weight": 0.14285714285714288,
               "role": "worship_focus"
             },
             {
               "id": "subject.rama",
-              "weight": 0.4166666666666667,
+              "weight": 0.35714285714285715,
               "role": "worship_focus"
             },
             {
               "id": "subject.rama",
-              "weight": 0.4166666666666667,
+              "weight": 0.35714285714285715,
+              "role": "narrative_subject"
+            },
+            {
+              "id": "subject.sita",
+              "weight": 0.14285714285714288,
               "role": "narrative_subject"
             }
           ]
@@ -9070,7 +9073,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "fe677def366505866137d2aca3416e850822bb928e89aa5aabfefa89da47a256",
+        "inputHash": "76cb4a52f261b2421f669613fca1ad95c2ada31bdcaf94b61bf9a3341f63aa0a",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -9081,12 +9084,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "3cea0cf5fb429eec181e242c4ae71682c82a2ebe0bcbea5e3838db7a122f06b3",
+          "recordHash": "5c891247cea579d4255190b3cdedf4aae2a21121e0ae879bec91982a60c10350",
           "extractionRequestIds": [
-            "f138eb77920f43eea6738fc9cf1075ea"
+            "b87ec7182146401497017189e998b307"
           ],
           "reviewRequestIds": [
-            "f174d31dbef94e48971cfbc3702607a8"
+            "14cf6c423df747c1a4bcc63e32338078"
           ],
           "coveredLineCount": 539
         },
@@ -9094,41 +9097,63 @@
           "themes": [
             {
               "id": "theme.grace",
-              "weight": 0.18181818181818182
+              "weight": 0.22727272727272727
             },
             {
               "id": "theme.longing",
-              "weight": 0.18181818181818182
+              "weight": 0.22727272727272727
             },
             {
               "id": "theme.name_power",
-              "weight": 0.18181818181818182
+              "weight": 0.09090909090909091
             },
             {
               "id": "theme.refuge",
-              "weight": 0.45454545454545453
+              "weight": 0.22727272727272727
+            },
+            {
+              "id": "theme.service",
+              "weight": 0.22727272727272727
             }
           ],
           "actions": [
             {
+              "id": "action.petition",
+              "weight": 0.3333333333333333
+            },
+            {
               "id": "action.praise",
-              "weight": 0.4
+              "weight": 0.3333333333333333
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.3333333333333333
             }
           ],
           "subjects": [
             {
               "id": "subject.hanuman",
-              "weight": 0.4166666666666667,
+              "weight": 0.22727272727272727,
               "role": "narrative_subject"
             },
             {
-              "id": "subject.rama",
-              "weight": 0.4166666666666667,
+              "id": "subject.hanuman",
+              "weight": 0.09090909090909091,
               "role": "worship_focus"
             },
             {
+              "id": "subject.rama",
+              "weight": 0.22727272727272727,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.rama",
+              "weight": 0.22727272727272727,
+              "role": "narrative_subject"
+            },
+            {
               "id": "subject.sita",
-              "weight": 0.16666666666666669,
+              "weight": 0.22727272727272727,
               "role": "narrative_subject"
             }
           ]
@@ -9875,7 +9900,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "89f1097a96f205b13b29ab38ace6634abc5a8b7b79727b2ee492b324860bbee1",
+        "inputHash": "8f57c97f92cd7fd6aef6dc095a377b5bbc180d1593a860cf9233f95b8ae252db",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -9886,12 +9911,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "13028e06a77732ea1bf7134076e2407b3e43bf13c982e9b638f9dad230e498bd",
+          "recordHash": "31b1274c16e1f050e582d866ab1089596086f821453540c8eae3574b210fe60c",
           "extractionRequestIds": [
-            "f42d9822f19748bdb169f617a72e2de2"
+            "15eb3f5ece764bf49f3126ed24a4875b"
           ],
           "reviewRequestIds": [
-            "b0f55fb2a6114b3a864abbc8f7f7b2e9"
+            "318a0abb4446479ca53fa64d0fcf8629"
           ],
           "coveredLineCount": 20
         },
@@ -9899,15 +9924,15 @@
           "themes": [
             {
               "id": "theme.divine_presence",
-              "weight": 0.16666666666666669
+              "weight": 0.22222222222222224
             },
             {
               "id": "theme.refuge",
-              "weight": 0.4166666666666667
+              "weight": 0.5555555555555556
             },
             {
               "id": "theme.surrender",
-              "weight": 0.4166666666666667
+              "weight": 0.22222222222222224
             }
           ],
           "actions": [],
@@ -10454,7 +10479,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "2b23f3cd4f8c934c3eac9e1c022cc5ff06078c411aff323d3801ab0394a8d2c9",
+        "inputHash": "433a82f242fe87391d4f81d000a74ee7120b3a6793490bd12ea39e8b6a8faf2f",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -10465,12 +10490,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "880ae7b23041a0087bb468e7809599aae40441458755fdc4e1b96ea533648d41",
+          "recordHash": "d9405652f2ab48b31465fe28d69fb023011210bca8829d59bd32574754b225dd",
           "extractionRequestIds": [
-            "9a90783acb474752af8db395ce1c804f"
+            "19dbcf955be4433aaacdf8f5685372ce"
           ],
           "reviewRequestIds": [
-            "3a7d1e882a18489697be7091c7f4aa35"
+            "e56949ff1a2b439c8b32e706e8040b01"
           ],
           "coveredLineCount": 43
         },
@@ -10570,7 +10595,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "9450a6f47d5cf4903f0a2a68fe1d8ced10d1a8e0bc91480bd60c526dd042767e",
+        "inputHash": "bea1988e3ab394207aa8310b118f1a917293d307b5041c5dccac330b85011697",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -10581,12 +10606,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "cbefbbe916da321869abdf518b68feaa053be63d098884bae35421bee48bc107",
+          "recordHash": "8aa83785b9a7a25c3d5ef88dd02a5c883842c73d78871bdd193ccb5ff3511832",
           "extractionRequestIds": [
-            "bd13a781ca904faa865618bf5968eef4"
+            "ce2b9afcf1cd472d9492539468539135"
           ],
           "reviewRequestIds": [
-            "270d9274f5ce4ad0ba2b7e337c6e5985"
+            "f7c1e82b19bb44c9aa11d1b9fb3e1df4"
           ],
           "coveredLineCount": 41
         },
@@ -10594,11 +10619,15 @@
           "themes": [
             {
               "id": "theme.grace",
-              "weight": 0.5
+              "weight": 0.3333333333333333
+            },
+            {
+              "id": "theme.limits_of_knowing",
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.refuge",
-              "weight": 0.5
+              "weight": 0.3333333333333333
             }
           ],
           "actions": [
@@ -10633,7 +10662,25 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "editorialAdjustments": [
+          {
+            "facet": "subjects",
+            "id": "subject.shakti",
+            "role": "narrative_subject",
+            "factor": 0,
+            "reason": "Ādiśakti is directly invoked as the goddess being praised, not presented as a narrated participant. The separate central Devī worship identity is retained.",
+            "sourceLineIds": [
+              "refrain-2"
+            ]
+          }
+        ],
+        "editorialReview": {
+          "kind": "independent-assistant",
+          "evidenceHash": "3ee7e8f5d7401f4e35a1f1fc018efca7d5acc92868f781dcfb67c6c326e7e8d2",
+          "inputHash": "bea1988e3ab394207aa8310b118f1a917293d307b5041c5dccac330b85011697",
+          "baseFeaturesHash": "5047423d63ddb80943773d4e1a1b31cc2009ad4bee86ac547fb807560dd5ba3f"
+        }
       }
     },
     "eca781d4": {
@@ -11743,7 +11790,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "43b863fa57d018a02c57f882aac528edf495e7f5e3e724a393efcd64a7e1b764",
+        "inputHash": "8a1886743757f1aa9dc99aae2096d48d5f490bdbd96289bca61e95d6d6694c6b",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -11754,12 +11801,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "74a7043ba1fe107f36b6756f4084e1cde9dc48af52f9c9ca7a058d508ef8c22c",
+          "recordHash": "2266a801b30aa7702ac430f572d89cca3c47baeecc8de882e0ea3a282c23330f",
           "extractionRequestIds": [
-            "1540387065934111a0159c73d9c04237"
+            "4236e09b4ddf4351bb07cce51cf8f88a"
           ],
           "reviewRequestIds": [
-            "be56f4a4ac754dc0a7ddf998f1de170c"
+            "7b796d968c214a8dba67d761fad2c5a1"
           ],
           "coveredLineCount": 12
         },
@@ -11778,7 +11825,12 @@
               "weight": 0.22222222222222224
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "id": "action.invitation",
+              "weight": 0.4
+            }
+          ],
           "subjects": [
             {
               "id": "subject.rama",
@@ -12272,7 +12324,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "533e58189f76cfee632ac09ca95b1d61314aa547330afb6dcfe1bfbdb2aa8fd1",
+        "inputHash": "30ff3b31e24836f7ca6b08c83563d24ee4880f8274d18fe33069d30506967ef2",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -12283,12 +12335,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "283e17a90e85ddb18010fcb95ed477b66e8d18acf4c88260ab9832fa0264e83f",
+          "recordHash": "ce00113716e8e9b01afc5954a8c26358f4f85cfec5a8dc0f584fd7c7564b625b",
           "extractionRequestIds": [
-            "28e5b542193b46e78b2fad7bea0f99ca"
+            "1a66ba52649f4ab4a46ede234d1c61c0"
           ],
           "reviewRequestIds": [
-            "c4f77ef49ebe48faa5c964a57484a962"
+            "f78f7dc0a6334892b817a2c0fa385a50"
           ],
           "coveredLineCount": 23
         },
@@ -12296,32 +12348,37 @@
           "themes": [
             {
               "id": "theme.compassion",
-              "weight": 0.22222222222222224
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.equality",
-              "weight": 0.5555555555555556
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.refuge",
-              "weight": 0.22222222222222224
+              "weight": 0.3333333333333333
             }
           ],
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.28571428571428575
+              "weight": 0.4
             },
             {
               "id": "action.praise",
-              "weight": 0.7142857142857143
+              "weight": 0.4
             }
           ],
           "subjects": [
             {
               "id": "subject.sai",
-              "weight": 1.0,
+              "weight": 0.5,
               "role": "worship_focus"
+            },
+            {
+              "id": "subject.sai",
+              "weight": 0.5,
+              "role": "narrative_subject"
             }
           ]
         },
@@ -12609,7 +12666,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "eb6bd0e4687fbee6ae9f619a9ea05bcc47e6d73db8ec668b83fe5ff13495f7fd",
+        "inputHash": "bdf4b929180fd081d9de1639b1a98b78c7396158d4355259d347575604439bd0",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -12620,12 +12677,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "931c641b95e24be9244f7899f4607b9fdd6ffcadca00892a3ef9d3ca9fcb0321",
+          "recordHash": "b9eeb30e2eb334aae63a0df84a1dff9a7c6231526aa1f979d5137819048fcf8a",
           "extractionRequestIds": [
-            "fffc100d98b64df78cf6cc08902f9f13"
+            "a1441ee1f0b344fa9b30d71098f61bf8"
           ],
           "reviewRequestIds": [
-            "8f40235976364a96b1a9c317cc64765f"
+            "ef36343a0a2d49ee83bb27cc93111fc4"
           ],
           "coveredLineCount": 16
         },
@@ -12708,7 +12765,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "e6410b9c5d6632224f671f8a98eaf7597c4b6ee2c3512260c6b4d6215e9bd457",
+        "inputHash": "36cecf268d7b4c87878d3832acc7a0fd2b9a8ce7422b4d3c62fbb264578193b8",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -12719,12 +12776,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "d6dd7dc24259c4a99862e15382cae9a67f5916a21e2cc217009e2678edb87b9e",
+          "recordHash": "bc9180c5dcb616cb1d2feb5a0ab26f0445bedfc0901c5765ad70524a1b103601",
           "extractionRequestIds": [
-            "82a8d1977d3e4f2194c44a6d6d1ed509"
+            "8bc737865baa41ba8aa09a18ecab1b03"
           ],
           "reviewRequestIds": [
-            "6abd1ce07c8a4312a114bdacd9baf60c"
+            "05f6de252bc24a3a91736a5d81a1a6de"
           ],
           "coveredLineCount": 23
         },
@@ -12744,13 +12801,7 @@
             }
           ],
           "actions": [],
-          "subjects": [
-            {
-              "id": "subject.guru",
-              "weight": 0.4,
-              "role": "narrative_subject"
-            }
-          ]
+          "subjects": []
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
@@ -12925,7 +12976,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "4df646957612bc964d5b70d5882b7e02592e4363e423549015004fba96dce0df",
+        "inputHash": "ec3de3c2eb3b2705314424c3a1ef17fa5c4abdcb0f5354bae1a0d2811484ffc2",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -12936,12 +12987,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "2cc563a717a85e3d627401a7e69f85aaf04b5bd32185ee8c86e459fbfd92bc03",
+          "recordHash": "395eb3b79fc99bb8ac2a9fca7d3470e7bd163e5c773e5aac46614a67288e0a36",
           "extractionRequestIds": [
-            "d288a69340c7490cbffdb51211883c47"
+            "1e1f39db56cb49369c8f000d8c2e9de8"
           ],
           "reviewRequestIds": [
-            "778803f3fa8c4866bf7ac30c3461d859"
+            "0dae1a530b514c989102258cd608eb9a"
           ],
           "coveredLineCount": 33
         },
@@ -14198,7 +14249,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "3c0893635cf31aecbfb4836b5855f227c2fbe84f45b9008368e10fa7b9ce496d",
+        "inputHash": "43388aa26589f2aac9ec96f3e2a31ed0f41d00e9b1b8214b6c3fc0d956b33bf0",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -14209,12 +14260,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "42082539600188746f2e6bb803547221fb379aa783cbd65e0d441d3b90ddf353",
+          "recordHash": "555852816ce9b4c79a42ea20cfd2a057a98268f3895201e762b9085bd7725c2a",
           "extractionRequestIds": [
-            "fb1519c628fb42199f2ba591488f9d24"
+            "6c918ac34af24668a7ca3613db3d4b93"
           ],
           "reviewRequestIds": [
-            "038d9f6a300240dcac4ba03da58accef"
+            "b44540a3c354406d8345c93ff730f832"
           ],
           "coveredLineCount": 94
         },
@@ -14222,23 +14273,19 @@
           "themes": [
             {
               "id": "theme.divine_presence",
-              "weight": 0.2
+              "weight": 0.25
             },
             {
               "id": "theme.grace",
-              "weight": 0.2
-            },
-            {
-              "id": "theme.limits_of_knowing",
-              "weight": 0.2
+              "weight": 0.25
             },
             {
               "id": "theme.refuge",
-              "weight": 0.2
+              "weight": 0.25
             },
             {
-              "id": "theme.service",
-              "weight": 0.2
+              "id": "theme.surrender",
+              "weight": 0.25
             }
           ],
           "actions": [
@@ -14247,8 +14294,8 @@
               "weight": 0.35714285714285715
             },
             {
-              "id": "action.offering",
-              "weight": 0.35714285714285715
+              "id": "action.meditation",
+              "weight": 0.14285714285714288
             },
             {
               "id": "action.petition",
@@ -14256,28 +14303,28 @@
             },
             {
               "id": "action.praise",
-              "weight": 0.14285714285714288
+              "weight": 0.35714285714285715
             }
           ],
           "subjects": [
             {
               "id": "subject.dattatreya",
-              "weight": 0.11764705882352942,
+              "weight": 0.18181818181818182,
               "role": "worship_focus"
             },
             {
               "id": "subject.guru",
-              "weight": 0.29411764705882354,
+              "weight": 0.18181818181818182,
               "role": "worship_focus"
             },
             {
               "id": "subject.sai",
-              "weight": 0.29411764705882354,
+              "weight": 0.45454545454545453,
               "role": "worship_focus"
             },
             {
               "id": "subject.vitthala",
-              "weight": 0.29411764705882354,
+              "weight": 0.18181818181818182,
               "role": "worship_focus"
             }
           ]
@@ -15318,7 +15365,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "8170f5a2915836424b9305e9d666a30c44d736138239165b2131ee2360d7f109",
+        "inputHash": "d19bd184ac3cf6c1b2fe28facf5960a234d5caddbfe8d2399b21a42c3eeb7538",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -15329,12 +15376,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "98bf3e6065aba68720891aa660ed534087a18994dffa0f61b1498b4652d8fe7a",
+          "recordHash": "5f6bf891b4bbfbc7d952ac8b66c198bf49129957b33fd2be5cde898772d1d052",
           "extractionRequestIds": [
-            "3a0cb4b4b5844148ba4ddb40da130bcd"
+            "533f961e2bff465698c888e831dbad97"
           ],
           "reviewRequestIds": [
-            "cb78e501e5f5411f8a9a5f903ec391f8"
+            "b2bb53742b9f4e25b38061240cf98d1a"
           ],
           "coveredLineCount": 26
         },
@@ -15342,15 +15389,15 @@
           "themes": [
             {
               "id": "theme.grace",
-              "weight": 0.5555555555555556
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.guidance",
-              "weight": 0.22222222222222224
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.liberation",
-              "weight": 0.22222222222222224
+              "weight": 0.3333333333333333
             }
           ],
           "actions": [
@@ -15359,7 +15406,7 @@
               "weight": 0.7142857142857143
             },
             {
-              "id": "action.remembrance",
+              "id": "action.praise",
               "weight": 0.28571428571428575
             }
           ],
@@ -15567,7 +15614,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "2201cd4795eef7c21b9f2a0d72c90d6355235d07df610b28930389de39b8dfdc",
+        "inputHash": "e1b4c839ab7cf4fc0a6e1dbbe9076999aa99e26270d186412f45cecb3007841d",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -15578,62 +15625,62 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "7d403987f50970b7b43016016276f481f2034ea6448a77c4db8eb13253559c77",
+          "recordHash": "9d3a610c8d0a569ba74d4f34f700ef63b2807871a99dce3ad0e6dba1c63556bb",
           "extractionRequestIds": [
-            "91358ff47f4d417a9306e4c1c9f3dec1"
+            "d51e388fb90946f1b9d7c7717e321800"
           ],
           "reviewRequestIds": [
-            "55a67629c2a74b008be0c3e61591dcdf"
+            "58b33c3faaa3451ea1d881130cf39e82"
           ],
           "coveredLineCount": 249
         },
         "features": {
           "themes": [
             {
-              "id": "theme.compassion",
-              "weight": 0.09090909090909091
-            },
-            {
               "id": "theme.divine_presence",
-              "weight": 0.09090909090909091
+              "weight": 0.08695652173913045
             },
             {
               "id": "theme.equality",
-              "weight": 0.09090909090909091
+              "weight": 0.08695652173913045
             },
             {
               "id": "theme.grace",
-              "weight": 0.22727272727272727
+              "weight": 0.2173913043478261
             },
             {
               "id": "theme.humility",
-              "weight": 0.09090909090909091
+              "weight": 0.08695652173913045
             },
             {
               "id": "theme.liberation",
-              "weight": 0.09090909090909091
+              "weight": 0.2173913043478261
             },
             {
               "id": "theme.refuge",
-              "weight": 0.22727272727272727
+              "weight": 0.2173913043478261
             },
             {
               "id": "theme.service",
-              "weight": 0.09090909090909091
+              "weight": 0.08695652173913045
             }
           ],
           "actions": [
             {
               "id": "action.offering",
-              "weight": 0.16666666666666669
+              "weight": 0.14285714285714288
             },
             {
               "id": "action.petition",
-              "weight": 0.4166666666666667
+              "weight": 0.35714285714285715
             },
             {
               "id": "action.praise",
-              "weight": 0.4166666666666667
+              "weight": 0.35714285714285715
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.14285714285714288
             }
           ],
           "subjects": [
@@ -15712,7 +15759,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "a5033b55881a85c45864eed1967aa0db582666267fbaa7b6c54a5b1cc3b7213f",
+        "inputHash": "84d51f58ad0520b641fe5c847b27295da9afa53a244c33db6e612676deb9238f",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -15723,12 +15770,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "ad171e44f97527683a57e133949f57b5bcd129e5f868311ef18ae033b3383413",
+          "recordHash": "3b851f3af16d4b76a3a687bc88e304d931cdb4f5da29c74cfddc49bbcd70e299",
           "extractionRequestIds": [
-            "2f9c531075f84acdaf78e8adeb01fe90"
+            "5c70589bf9d244699883d2fa29b49fd3"
           ],
           "reviewRequestIds": [
-            "31e4f7a636f742af9b39d44ce96f5387"
+            "c5991f30166c4efa832c902bd558285d"
           ],
           "coveredLineCount": 177
         },
@@ -15736,76 +15783,73 @@
           "themes": [
             {
               "id": "theme.divine_presence",
-              "weight": 0.13333333333333333
+              "weight": 0.125
+            },
+            {
+              "id": "theme.equality",
+              "weight": 0.125
             },
             {
               "id": "theme.grace",
-              "weight": 0.13333333333333333
+              "weight": 0.125
+            },
+            {
+              "id": "theme.humility",
+              "weight": 0.125
             },
             {
               "id": "theme.liberation",
-              "weight": 0.13333333333333333
+              "weight": 0.125
             },
             {
               "id": "theme.refuge",
-              "weight": 0.3333333333333333
+              "weight": 0.125
             },
             {
               "id": "theme.service",
-              "weight": 0.13333333333333333
+              "weight": 0.125
             },
             {
               "id": "theme.surrender",
-              "weight": 0.13333333333333333
+              "weight": 0.125
             }
           ],
           "actions": [
             {
+              "id": "action.meditation",
+              "weight": 0.15384615384615385
+            },
+            {
               "id": "action.offering",
-              "weight": 0.18181818181818182
+              "weight": 0.15384615384615385
             },
             {
               "id": "action.petition",
-              "weight": 0.18181818181818182
+              "weight": 0.15384615384615385
             },
             {
               "id": "action.praise",
-              "weight": 0.45454545454545453
+              "weight": 0.3846153846153846
             },
             {
               "id": "action.remembrance",
-              "weight": 0.18181818181818182
+              "weight": 0.15384615384615385
             }
           ],
           "subjects": [
             {
               "id": "subject.dattatreya",
-              "weight": 0.11111111111111112,
+              "weight": 0.16666666666666669,
               "role": "worship_focus"
             },
             {
               "id": "subject.guru",
-              "weight": 0.2777777777777778,
-              "role": "worship_focus"
-            },
-            {
-              "id": "subject.krishna",
-              "weight": 0.11111111111111112,
-              "role": "worship_focus"
-            },
-            {
-              "id": "subject.rama",
-              "weight": 0.11111111111111112,
+              "weight": 0.4166666666666667,
               "role": "worship_focus"
             },
             {
               "id": "subject.sai",
-              "weight": 0.2777777777777778,
-              "role": "worship_focus"
-            },
-            {
-              "id": "subject.vishnu",
-              "weight": 0.11111111111111112,
+              "weight": 0.4166666666666667,
               "role": "worship_focus"
             }
           ]
@@ -15868,7 +15912,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "9a0ca7e992012958308f48a8dec8e398b9cdc54d94c2d0138325e2a5d2837221",
+        "inputHash": "56d5d2abfa007e0968389a2ffd9d17ef59410e14bd458a003437616a864b4232",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -15879,58 +15923,46 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "a2605b30a4780297397b74078efadeac06e4a904b13d4fe7d284fc7a6d05dc6a",
+          "recordHash": "a48749aa4deac3e58ba7fdb92d4c156b632312098a61b3346aff21e95bb4bfd4",
           "extractionRequestIds": [
-            "6f24adf59f7144918839ebb88e2b71c2"
+            "9e9f270e2e6d440ba03efaa7928f42c5"
           ],
           "reviewRequestIds": [
-            "e7dfb696072b4ca7b3538b2697f92257"
+            "c27ade37cf644136bd90fd94ff54c071"
           ],
           "coveredLineCount": 164
         },
         "features": {
           "themes": [
             {
-              "id": "theme.compassion",
-              "weight": 0.11764705882352941
-            },
-            {
               "id": "theme.detachment",
-              "weight": 0.11764705882352941
-            },
-            {
-              "id": "theme.divine_presence",
-              "weight": 0.11764705882352941
+              "weight": 0.25
             },
             {
               "id": "theme.liberation",
-              "weight": 0.11764705882352941
+              "weight": 0.25
             },
             {
               "id": "theme.refuge",
-              "weight": 0.2941176470588235
+              "weight": 0.25
             },
             {
               "id": "theme.service",
-              "weight": 0.11764705882352941
-            },
-            {
-              "id": "theme.surrender",
-              "weight": 0.11764705882352941
+              "weight": 0.25
             }
           ],
           "actions": [
             {
-              "id": "action.meditation",
-              "weight": 0.16666666666666669
-            },
-            {
               "id": "action.petition",
-              "weight": 0.4166666666666667
+              "weight": 0.22222222222222224
             },
             {
               "id": "action.praise",
-              "weight": 0.4166666666666667
+              "weight": 0.5555555555555556
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.22222222222222224
             }
           ],
           "subjects": [
@@ -16009,7 +16041,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "cf2416b57066213b138a5b63f5cfdf895790541cb9f537448588105f5ef09419",
+        "inputHash": "f69a7c881acdacb69b3d450d64932d31c487444dc7f2fa0a3076957392298ec5",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -16020,12 +16052,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "8aa23c21fbd569b660d5bc1b20fe29110d373906e1b45b9e3b704f731236eb44",
+          "recordHash": "eb93be83eb91ef73fcde7957ce6dae70fd491e6b9f507cd0767cbc9401842044",
           "extractionRequestIds": [
-            "5d869daa68a54b1e8602b9ada9277fb6"
+            "d9476743529643fd9e9cca2ee8ed5449"
           ],
           "reviewRequestIds": [
-            "dbef4f451e394cbd949e1d4e3919ae67"
+            "9146388cd8604212b73930ac5a4481a7"
           ],
           "coveredLineCount": 16
         },
@@ -16222,7 +16254,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "e9b7adcb90993dd84e9fe3a7e231bafd07c69807f6c60f0de520617ad4a52bb8",
+        "inputHash": "e91929289c1dafbefb3ef7bf02036483ce7e08b9206c3635fa3f50fa78ee63f1",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -16233,12 +16265,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "2654fc15faba95c4ded3129c07bc1829fa98975fa1dc75576535156a803eecb8",
+          "recordHash": "7e7f6b86d6780d17fff669c87991d8d567138272544af8b5c4d3c00782f7ea2b",
           "extractionRequestIds": [
-            "70144d314f434466b67e4156bea14b29"
+            "aa0fe8bad7cf4f1182833eb683daf994"
           ],
           "reviewRequestIds": [
-            "794ef49192d949f4af4aecb93c1e0b7e"
+            "2c29ad79765d4fa19f71d4d86f43137a"
           ],
           "coveredLineCount": 20
         },
@@ -17049,7 +17081,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "b994e627336a6dd2cc968508ab749e9982b512677fc36743faf45bb66a4d584f",
+        "inputHash": "b86da4dbf23705b9937f81052700db064f31d8fed7133e19a893f81d3211d903",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -17060,12 +17092,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "355648d6d4d81f760fdf0656e74ff01c53a1ec81a633031fcd669dc90a01f09c",
+          "recordHash": "9346816c478c2c46d21333a76bdb4c4896b29efb16e454a3fc8a13c9767cd297",
           "extractionRequestIds": [
-            "b9bc893263c64301bbfb8f3e5644069d"
+            "73fb8ccad74f460eb0216e0f669fb112"
           ],
           "reviewRequestIds": [
-            "ee150b8a64ad44a4b4475ed61802fd8d"
+            "a334af1e9698453bb7851414b68cd8f7"
           ],
           "coveredLineCount": 6
         },
@@ -18451,7 +18483,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "e05c999c60b5fdc3b99f3a73eb4908ab56fee6008b9fa055cb98ed5d25afa7f8",
+        "inputHash": "aeb8753e4b786874847ecaa3f9932e5c763b8d096ba0ff7fc9daa8ee6352d9b3",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -18462,12 +18494,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "7a29183ccf5875d42ad0a634283b4803e1ec5c8e8898fc59ff713fecdc7a2764",
+          "recordHash": "abb43b8bae7b7178282b8dd35f49b7c7588f2dd8293f4a0dbc4677ce6f643d2f",
           "extractionRequestIds": [
-            "fa29494dc6544339b662533385545ae0"
+            "487ef15da7f74e0a933b725925f8b2a1"
           ],
           "reviewRequestIds": [
-            "d2ea86e5a9b64cc8be421e11a5d898ce"
+            "638e700d2f0a4329b68a30e5a0c6c467"
           ],
           "coveredLineCount": 154
         },
@@ -18475,40 +18507,32 @@
           "themes": [
             {
               "id": "theme.divine_presence",
-              "weight": 0.25
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.liberation",
-              "weight": 0.25
-            },
-            {
-              "id": "theme.name_power",
-              "weight": 0.25
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.refuge",
-              "weight": 0.25
+              "weight": 0.3333333333333333
             }
           ],
           "actions": [
             {
-              "id": "action.meditation",
-              "weight": 0.22222222222222224
-            },
-            {
               "id": "action.praise",
-              "weight": 0.5555555555555556
+              "weight": 0.5
             },
             {
               "id": "action.remembrance",
-              "weight": 0.22222222222222224
+              "weight": 0.5
             }
           ],
           "subjects": [
             {
               "id": "subject.krishna",
               "weight": 0.28571428571428575,
-              "role": "worship_focus"
+              "role": "narrative_subject"
             },
             {
               "id": "subject.vishnu",
@@ -18807,7 +18831,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "c98d4ddfd0273757de12ff9d4b297016e8bbe4588b44e7d6411d5310e0878673",
+        "inputHash": "fd2ced3c6e21de7f02f1d57388a16cbde6e8195ee253743e6d8c9a03e842e9e2",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -18818,12 +18842,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "4284cc0eed141b8c0b797096f8dfb16435a1cc3e5c277103331f79bfe25949cf",
+          "recordHash": "b324e143edbbe97bef75dc31b0113fe988ca488a3466234e2bad56817f91427d",
           "extractionRequestIds": [
-            "cf41be2d44274e4ca7ead4c43c8a4711"
+            "9a51d9b7114342d8bf157277e4ccfd86"
           ],
           "reviewRequestIds": [
-            "a7a059a1b54542fd8a45034c09ffd2d5"
+            "35550e9bbd8c45eab41e79040d25a175"
           ],
           "coveredLineCount": 202
         },
@@ -18831,29 +18855,37 @@
           "themes": [
             {
               "id": "theme.compassion",
-              "weight": 0.18181818181818182
+              "weight": 0.125
             },
             {
               "id": "theme.humility",
-              "weight": 0.18181818181818182
+              "weight": 0.125
             },
             {
               "id": "theme.name_power",
-              "weight": 0.18181818181818182
+              "weight": 0.125
             },
             {
               "id": "theme.refuge",
-              "weight": 0.45454545454545453
+              "weight": 0.3125
+            },
+            {
+              "id": "theme.service",
+              "weight": 0.3125
             }
           ],
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.5
+              "weight": 0.4166666666666667
             },
             {
               "id": "action.praise",
-              "weight": 0.5
+              "weight": 0.4166666666666667
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.16666666666666669
             }
           ],
           "subjects": [
@@ -19252,7 +19284,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "2a17414ac09884fdbdcbc3686b5d8cb7d76c2a7b6eefa8b1ceb9f184d9036940",
+        "inputHash": "e4ff6a289ec3645eb8d91441530f6e729d8dc1683750251730f2d2470ba07ab0",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -19263,24 +19295,20 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "f00c2611c5cd4dbded64385c06b24a87188b58ca074d89c40cd174fcb9e7e591",
+          "recordHash": "7760808d6a852de22c38aa366293fe904d9f5dd12990c52861131092a9ba27d4",
           "extractionRequestIds": [
-            "a62cda9993cc4505b6dc5b0645b783c9"
+            "d4313ffb0c0046c58a1caf191e65877e"
           ],
           "reviewRequestIds": [
-            "96d6bbb55db943d8b25948a58b0c4618"
+            "403e5d9e2f7a4ec09ee628fbf94588d2"
           ],
           "coveredLineCount": 25
         },
         "features": {
           "themes": [
             {
-              "id": "theme.detachment",
-              "weight": 0.28571428571428575
-            },
-            {
               "id": "theme.impermanence",
-              "weight": 0.7142857142857143
+              "weight": 1.0
             }
           ],
           "actions": [
@@ -19292,13 +19320,8 @@
           "subjects": [
             {
               "id": "subject.guru",
-              "weight": 0.7142857142857143,
+              "weight": 1.0,
               "role": "worship_focus"
-            },
-            {
-              "id": "subject.guru",
-              "weight": 0.28571428571428575,
-              "role": "narrative_subject"
             }
           ]
         },
@@ -19792,7 +19815,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "81ab23c2443fc0cc413064bc8851958f5eed6d28bd321e7d4f77e5f06bf2975e",
+        "inputHash": "4943a645e598b9ebeefd0aed91b94bc84db77f69e62cf2fac6be247cc487abc3",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -19803,12 +19826,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "a52aa011f3708c59cabd1699bc9c9a778be2afb4d0a6bd7c5f3d781bc8dab7ad",
+          "recordHash": "5c6fdc3ca5d0a195cfd8d01000b9d7f186a3e924607117390377431a17e0c1d8",
           "extractionRequestIds": [
-            "9f5dca145afc40e995334da8779c41e2"
+            "a042882bcfee4ee8ac545b726717cd3f"
           ],
           "reviewRequestIds": [
-            "35e15391945d456091731ac68d138a89"
+            "09ad3a9e6d2f4240900a6bbfd4058282"
           ],
           "coveredLineCount": 27
         },
@@ -19816,44 +19839,49 @@
           "themes": [
             {
               "id": "theme.compassion",
-              "weight": 0.18181818181818182
+              "weight": 0.15384615384615385
+            },
+            {
+              "id": "theme.grace",
+              "weight": 0.15384615384615385
             },
             {
               "id": "theme.liberation",
-              "weight": 0.18181818181818182
+              "weight": 0.15384615384615385
             },
             {
               "id": "theme.refuge",
-              "weight": 0.45454545454545453
+              "weight": 0.3846153846153846
             },
             {
               "id": "theme.service",
-              "weight": 0.18181818181818182
+              "weight": 0.15384615384615385
             }
           ],
           "actions": [
             {
-              "id": "action.offering",
-              "weight": 0.4166666666666667
-            },
-            {
               "id": "action.petition",
-              "weight": 0.16666666666666669
+              "weight": 0.28571428571428575
             },
             {
               "id": "action.praise",
-              "weight": 0.4166666666666667
+              "weight": 0.7142857142857143
             }
           ],
           "subjects": [
             {
+              "id": "subject.dattatreya",
+              "weight": 0.16666666666666669,
+              "role": "narrative_subject"
+            },
+            {
               "id": "subject.guru",
-              "weight": 0.28571428571428575,
+              "weight": 0.4166666666666667,
               "role": "worship_focus"
             },
             {
               "id": "subject.sai",
-              "weight": 0.7142857142857143,
+              "weight": 0.4166666666666667,
               "role": "worship_focus"
             }
           ]
@@ -20107,7 +20135,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "672677b47f0cfeefb469d8a1391b933a52f75e788c30e945bc85216f9359e386",
+        "inputHash": "f8324816e267c9785dd5e0c719dbf5d0970234f6b159e7c8670ee16157233a39",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -20118,12 +20146,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "a715b474e93f24778c72ee003bfe9493bfd871c767523697cf9c66b678391f7d",
+          "recordHash": "ed3f2debcb53b47a927a0dfd1b68f5df57a5754463bab87a6073128646d77ff8",
           "extractionRequestIds": [
-            "01734c20ac574b4ca63aef67af6662f5"
+            "d7c95a41d70c456aa53c4d782f15d288"
           ],
           "reviewRequestIds": [
-            "09546f618edc4c1495915646baa98f52"
+            "66a1d5a838da4c70a2436bea802d819e"
           ],
           "coveredLineCount": 7
         },
@@ -20131,11 +20159,11 @@
           "themes": [
             {
               "id": "theme.grace",
-              "weight": 0.28571428571428575
+              "weight": 0.5
             },
             {
               "id": "theme.refuge",
-              "weight": 0.7142857142857143
+              "weight": 0.5
             }
           ],
           "actions": [
@@ -20144,13 +20172,7 @@
               "weight": 1.0
             }
           ],
-          "subjects": [
-            {
-              "id": "subject.guru",
-              "weight": 1.0,
-              "role": "worship_focus"
-            }
-          ]
+          "subjects": []
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
@@ -20419,7 +20441,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "9b4b059e283ed83e0ca0cf67588e196790b1119c17cd6cecbf44cb382c16a4bb",
+        "inputHash": "c074a74bb78519fbce0d84c5719b34368c7ab9d8c216b343736166f009dcd79f",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -20430,12 +20452,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "b68f77c4e66da2cb7c2299068362c08739f61b380f2ab9f1db14c5b46989de6f",
+          "recordHash": "860cd69b3c376bc03a2db7b91f0d330be2edcd6077e2026f3331b2532a3ca03b",
           "extractionRequestIds": [
-            "4446c5386885439090233177cf38e10b"
+            "80840938ba2a4e01b04be863cb84fb3f"
           ],
           "reviewRequestIds": [
-            "2cfe4ae7e58c4938bb2ee1be82afc24f"
+            "d5009ad53ed142ee8b7ddb57c565b64f"
           ],
           "coveredLineCount": 14
         },
@@ -20811,7 +20833,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "2b5ffb79138763d3d1966ce37757031df234935d44300c2625b9d93a6ce93d1f",
+        "inputHash": "a8ea2b51d6c7732dafa0bd9ce2bb7a30b1244a9021fb1ca45b1cda513cabd755",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -20822,12 +20844,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "258f7988937ba5f59c05c6fc8cf9b796b4cee4ae310144d07f3b1489853a0f1e",
+          "recordHash": "a6b431505f2df3d0dba64a45316c5e5b9e20cf303b498c97acfeccd9a71e46c5",
           "extractionRequestIds": [
-            "eadd8352c5e349dca74cda12a92b62a2"
+            "0294be60ada84062bec3e7fa7dd44089"
           ],
           "reviewRequestIds": [
-            "5e9c9c62a5ce412ba2d714b4b576f2af"
+            "62041f712d734ce9a302b648333c0e05"
           ],
           "coveredLineCount": 17
         },
@@ -20835,23 +20857,23 @@
           "themes": [
             {
               "id": "theme.compassion",
-              "weight": 0.125
+              "weight": 0.15384615384615385
             },
             {
               "id": "theme.grace",
-              "weight": 0.3125
+              "weight": 0.3846153846153846
             },
             {
               "id": "theme.humility",
-              "weight": 0.3125
-            },
-            {
-              "id": "theme.liberation",
-              "weight": 0.125
+              "weight": 0.15384615384615385
             },
             {
               "id": "theme.limits_of_knowing",
-              "weight": 0.125
+              "weight": 0.15384615384615385
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.15384615384615385
             }
           ],
           "actions": [
@@ -22994,7 +23016,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "2240af3ab01cd8dabc6b2c7d9c9caf05a2d45987583904a561cedc8ac4ce20d3",
+        "inputHash": "928bb6620f3fe09089e9ac4ddfd130937c5e92c4b0b73de78680581a8baae6b1",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -23005,12 +23027,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "55c0ef13ea657baa868028ae07492e1b8c3ffa6bc6169305ee3d8cea10f9a439",
+          "recordHash": "93e267f653cd9798d3006fb48bd0e4b06141913422b1e9f807ac453aa9d2b796",
           "extractionRequestIds": [
-            "3c5db186b0e24c4abd31c4477393da00"
+            "ed851b2978eb478fa28643cc807dd25e"
           ],
           "reviewRequestIds": [
-            "1be3c179e0f5405786eabd214477e0fe"
+            "b0d697e16adb4e31bf7c2bd06f960453"
           ],
           "coveredLineCount": 17
         },
@@ -23097,7 +23119,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "8dd56fe207033828159565f235752c5185346f9ba97dd56ff99e38b55adb5a4f",
+        "inputHash": "4b5903c97bb0776d9be23a50a38bad79302d1b644f515ceb50d055dd97bdb1d3",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -23108,12 +23130,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "2e5333cd393917f448069fde26e3efe428dd958b7b3664c8ac4fcc240e6ba418",
+          "recordHash": "2716fa895d514cc26dc30f1f33f1a8f5886b775d41f1157f7ff4006644691165",
           "extractionRequestIds": [
-            "88463a5a3c174ca99b8b94e20ee4d4eb"
+            "d23103e5af0849dfaf1f1a51b2a0335b"
           ],
           "reviewRequestIds": [
-            "d93e10e344344eacadba37e29ca250fc"
+            "5c1c80240ff046b7815a4eb4e62c18c3"
           ],
           "coveredLineCount": 32
         },
@@ -23121,27 +23143,23 @@
           "themes": [
             {
               "id": "theme.grace",
-              "weight": 0.11111111111111112
+              "weight": 0.15384615384615385
             },
             {
               "id": "theme.humility",
-              "weight": 0.2777777777777778
+              "weight": 0.3846153846153846
             },
             {
               "id": "theme.liberation",
-              "weight": 0.11111111111111112
-            },
-            {
-              "id": "theme.limits_of_knowing",
-              "weight": 0.11111111111111112
+              "weight": 0.15384615384615385
             },
             {
               "id": "theme.refuge",
-              "weight": 0.2777777777777778
+              "weight": 0.15384615384615385
             },
             {
               "id": "theme.service",
-              "weight": 0.11111111111111112
+              "weight": 0.15384615384615385
             }
           ],
           "actions": [
@@ -23216,7 +23234,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "9210fcea97debd21a598bfafca164c8b8a23ab1db60d5516ae948e0c1b1850f2",
+        "inputHash": "4bb60b016bee07d9652b9dc14bf655538c2cb2476f67ec99e75cdf3ef3741ed9",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -23227,12 +23245,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "c08664c8c56468ea5cf3bfc57b76dbe5b86505ac0e75c6244e6daedc29213cd4",
+          "recordHash": "0f97a4ccbf8b754c908bb670f6d8c27791324970b14af41c543a0429233b6b0f",
           "extractionRequestIds": [
-            "8d6fcbeae5f44a58a9e3ebafbd16eb69"
+            "1ff1a33bf8444ac2a2fe0292365557b8"
           ],
           "reviewRequestIds": [
-            "02d3f0bce7104dd08210ef410bd2c6a7"
+            "b1d28f18b86a4c4fa239ef0005dfe2f4"
           ],
           "coveredLineCount": 12
         },
@@ -23240,23 +23258,27 @@
           "themes": [
             {
               "id": "theme.compassion",
-              "weight": 0.125
+              "weight": 0.11111111111111112
             },
             {
               "id": "theme.critique_of_ritual",
-              "weight": 0.125
+              "weight": 0.11111111111111112
+            },
+            {
+              "id": "theme.detachment",
+              "weight": 0.11111111111111112
             },
             {
               "id": "theme.divine_presence",
-              "weight": 0.125
+              "weight": 0.11111111111111112
             },
             {
               "id": "theme.grace",
-              "weight": 0.3125
+              "weight": 0.2777777777777778
             },
             {
               "id": "theme.longing",
-              "weight": 0.3125
+              "weight": 0.2777777777777778
             }
           ],
           "actions": [
@@ -23447,7 +23469,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "4eab716f3455debb5c5b10f4130dae8ff6de2be28236d6c7e35391202a79f51a",
+        "inputHash": "812aa961b453eaee4b09b71b00bacdfe41e4a272b0e03ef42c2e3100f6511760",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -23458,27 +23480,27 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "6fb4dfa8a2cb221c07d7696afbf3aa5918deb571eec88b9a41287d8e730e2c5b",
+          "recordHash": "ee0f9f33758c6cc6218ae2fb63eb516ce1cf1ec36e68a4d54dae88014fde4160",
           "extractionRequestIds": [
-            "f7c070355abb43d698f51c7c75f61b5a"
+            "c1c537b11d2a4de2a45a1ed6955ebda1"
           ],
           "reviewRequestIds": [
-            "8278c21092d34a2ab4f060bf38fabecb"
+            "37c4087215bf458baca158d58c91f4cd"
           ],
           "coveredLineCount": 12
         },
         "features": {
           "themes": [
             {
+              "id": "theme.beloved_relationship",
+              "weight": 0.15384615384615385
+            },
+            {
               "id": "theme.compassion",
               "weight": 0.15384615384615385
             },
             {
               "id": "theme.divine_presence",
-              "weight": 0.15384615384615385
-            },
-            {
-              "id": "theme.impermanence",
               "weight": 0.15384615384615385
             },
             {
@@ -23490,12 +23512,7 @@
               "weight": 0.15384615384615385
             }
           ],
-          "actions": [
-            {
-              "id": "action.praise",
-              "weight": 0.4
-            }
-          ],
+          "actions": [],
           "subjects": [
             {
               "id": "subject.sai",
@@ -23898,7 +23915,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "bb5d735c418c626aaa589190a636dc33a3f00fbc784a10ad3ab06e66177448fb",
+        "inputHash": "a304476e64f1d3e0727ca489c4c238797604d6a64fc7d666b281f2c2a37b8c98",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -23909,28 +23926,32 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "16a59af757af143ead2434c09ae68eb5dd9d2dc0b58416bafc9297d625222c31",
+          "recordHash": "2136d83b37bbdbdeeef939abce3642c47129b8aa9a51a935a9be8e99bd70c8cf",
           "extractionRequestIds": [
-            "fb4d733dc068445cb1acf1eaff1a03a0"
+            "bc6be4f93d744fc3a07fb12445522d47"
           ],
           "reviewRequestIds": [
-            "00f9f96dc32d4b84848923f262cc52b6"
+            "e89a556928524e84909218bdd0d7b89b"
           ],
           "coveredLineCount": 18
         },
         "features": {
           "themes": [
             {
+              "id": "theme.equality",
+              "weight": 0.18181818181818182
+            },
+            {
               "id": "theme.ethical_conduct",
-              "weight": 0.22222222222222224
+              "weight": 0.18181818181818182
             },
             {
               "id": "theme.impermanence",
-              "weight": 0.5555555555555556
+              "weight": 0.45454545454545453
             },
             {
               "id": "theme.refuge",
-              "weight": 0.22222222222222224
+              "weight": 0.18181818181818182
             }
           ],
           "actions": [],
@@ -25824,7 +25845,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "f0e09a33fa51e9998eca68915a8a084047c224c6304046ad095fa5072d1e176c",
+        "inputHash": "703ed858f76a68f5d4006a277f0ba675d29a34a6da831d76340afe69c0e4af49",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -25835,12 +25856,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "f7c11d139d98038d183419452a99615e501caec2340f489ae1df4516047316c7",
+          "recordHash": "d6290d92673ee965bd638d88fecf9e374b2c8faa8c403b7eb4f8eef03030c22c",
           "extractionRequestIds": [
-            "86a9f82e1edb4291ae45e74e4b27a085"
+            "55de0dd90af14e52a34f47a0414925ee"
           ],
           "reviewRequestIds": [
-            "f3232217b86c4808a1cc3c5f6368361c"
+            "bcda109182254a1fa377b6656ae41e0a"
           ],
           "coveredLineCount": 55
         },
@@ -26023,7 +26044,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "7015c75d0ef777ab06ad6c2336e653017e916e159182d4fa81b5d3c0cc05bfb2",
+        "inputHash": "c00c1fa0c755f3c7b5e113df33451054a08a37cc3672987b8b6bcf3bc63315aa",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -26034,12 +26055,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "78bf7654032ea5b615e9859078f3f59331d597e14de9a5d85c4c18d486423530",
+          "recordHash": "d388215833c6f7f6ab02710beed45e1e7b152b515ee4147b572be9f4c6899a10",
           "extractionRequestIds": [
-            "09c2cfc0b44f4224b84f50b42f169785"
+            "0c2ee727f7064242876696c9479d0ea2"
           ],
           "reviewRequestIds": [
-            "990db78071ec4219988a6bbc8e309626"
+            "3d35d38c1bf249da8ca0698d14c74135"
           ],
           "coveredLineCount": 15
         },
@@ -26068,7 +26089,13 @@
               "weight": 1.0
             }
           ],
-          "subjects": []
+          "subjects": [
+            {
+              "id": "subject.vishnu",
+              "weight": 0.4,
+              "role": "worship_focus"
+            }
+          ]
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
@@ -26640,7 +26667,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "3b693fe5024990dd4f365c0763472d51984ebe00f3bf46930a4be637de4220dd",
+        "inputHash": "2fd75b670574851acb6f4dfbe73be3c5109c01c328fb058f28acd27535cc5e34",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -26651,12 +26678,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "25589607c4e42003ff204915e436be76544952e66709de82e3f76c1dfaf2d0c3",
+          "recordHash": "99fce3c1e08ddd418957bec739a03377b883a71653113f930ab935ef2c1c7efc",
           "extractionRequestIds": [
-            "00d06d2bbd4e473f9dfa30359e7f0ef6"
+            "34535532af8c43039f029468109c0bb3"
           ],
           "reviewRequestIds": [
-            "7ad189bac8ea4b80a66b73e4b662e67b"
+            "afc409ede3254e5bb79797bf9be9261c"
           ],
           "coveredLineCount": 12
         },
@@ -30469,7 +30496,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "cb3e17f1f29c1934b967a680243a0a78985b89b45adbfa783ad39235e4c2821d",
+        "inputHash": "83c29c23e23bcb75e484f23749eca0263d7a7755b24db7d9cfb3581ba5989edb",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -30480,12 +30507,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "8349dcf207d8f2755e866e54d87ae68a1ae25ebf5bb401f19c33d1caa98c771a",
+          "recordHash": "5991525f4c8d0d6fd9cbdc13abe8f68b5d0a04a630b5bf2babbf751a52487b66",
           "extractionRequestIds": [
-            "72e518791c6843368d2d64ed8008e1e3"
+            "0ab0cc85b4574aa3a7ea969c8b46eed2"
           ],
           "reviewRequestIds": [
-            "faf557378ad4437ca9be5c5155106a4e"
+            "531e0f7b97cb4d56aa80c7c7356df901"
           ],
           "coveredLineCount": 20
         },
@@ -30493,19 +30520,23 @@
           "themes": [
             {
               "id": "theme.beloved_relationship",
-              "weight": 0.35714285714285715
+              "weight": 0.3125
+            },
+            {
+              "id": "theme.divine_presence",
+              "weight": 0.125
             },
             {
               "id": "theme.grace",
-              "weight": 0.14285714285714288
+              "weight": 0.125
             },
             {
               "id": "theme.meeting",
-              "weight": 0.35714285714285715
+              "weight": 0.3125
             },
             {
               "id": "theme.name_power",
-              "weight": 0.14285714285714288
+              "weight": 0.125
             }
           ],
           "actions": [
@@ -31022,7 +31053,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "995fc8bdf3c827a88545e10c4182f29b3b931aa1b9d3eb183b2e39a24617e1ca",
+        "inputHash": "e6f8c211e1d1b53053fdc42aa586875e8ed21a608ea68b055841a49a0db18ca6",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -31033,12 +31064,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "03a749e5842d3fca4d0edb47abb1ab1c229197974475b832040f84e96299e0c7",
+          "recordHash": "f47111c84e8e8fab587d6bb99456d20e58b2e6158e2c5d13ee62efea47c6d194",
           "extractionRequestIds": [
-            "bf2ddefb65a54469b6d97650f82b7301"
+            "5401ba5c1607432fbb7283154c3f4966"
           ],
           "reviewRequestIds": [
-            "2129641164e04470aaf6009bdb63a85c"
+            "be8c66c6f2ec49d8908119e127acf0c3"
           ],
           "coveredLineCount": 21
         },
@@ -31046,23 +31077,19 @@
           "themes": [
             {
               "id": "theme.beauty",
-              "weight": 0.2
+              "weight": 0.25
             },
             {
               "id": "theme.divine_presence",
-              "weight": 0.2
-            },
-            {
-              "id": "theme.grace",
-              "weight": 0.2
+              "weight": 0.25
             },
             {
               "id": "theme.humility",
-              "weight": 0.2
+              "weight": 0.25
             },
             {
               "id": "theme.refuge",
-              "weight": 0.2
+              "weight": 0.25
             }
           ],
           "actions": [
@@ -31141,7 +31168,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "9ff708997145579d71c276b62082edb3514ead46fe224a2ac8705357ec9e7c9b",
+        "inputHash": "0b2ea1bf2876e3b713164cdbacff9ffe0ccbaf11cc4a849ab3011343eab9165c",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -31152,12 +31179,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "77457b594f299395f96c5185277ed995417a135728c485337aaba9400da07e55",
+          "recordHash": "f95ceca761d976072d0f81803ec06bc3bb41f054c14f708d59dace1cde0acd15",
           "extractionRequestIds": [
-            "be10b43b63db446fadb7e0111f021365"
+            "eee64c97c5e8439a93f0cf405fbadc8a"
           ],
           "reviewRequestIds": [
-            "db5f20fc4ef147a2aba78b8a4ad8ca46"
+            "ffff0c68b9334160b444314aefed261d"
           ],
           "coveredLineCount": 116
         },
@@ -31165,11 +31192,15 @@
           "themes": [
             {
               "id": "theme.beauty",
-              "weight": 0.7142857142857143
+              "weight": 0.5555555555555556
             },
             {
               "id": "theme.divine_presence",
-              "weight": 0.28571428571428575
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.22222222222222224
             }
           ],
           "actions": [
@@ -31480,7 +31511,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "d850f04527bd49e48fc64d6971719438cf00a173836080e39291c4fc6be684f1",
+        "inputHash": "337c499a2d85f935efd6149f9daa94a5efc4da1e731b14b876ad9692b203af1b",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -31491,41 +31522,41 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "1568131dcb25f8d3732125c39c901950a8ee7dc8fe8473961bccde3a83ba3e00",
+          "recordHash": "96c3537433df068b105b3d4ed065c8b3964e051c501a15d1434f369771372f6c",
           "extractionRequestIds": [
-            "cf96eb89f58d465598c0cd5f8c71d058"
+            "ab51daaa8ee843028ef3664aadef8f3d"
           ],
           "reviewRequestIds": [
-            "b30c9d0be2f34132bab51c2320e97212"
+            "15974078cf0f49ccae83f5c6677962f4"
           ],
           "coveredLineCount": 52
         },
         "features": {
           "themes": [
             {
-              "id": "theme.compassion",
-              "weight": 0.125
+              "id": "theme.critique_of_ritual",
+              "weight": 0.35714285714285715
             },
             {
               "id": "theme.detachment",
-              "weight": 0.3125
+              "weight": 0.35714285714285715
             },
             {
               "id": "theme.ethical_conduct",
-              "weight": 0.3125
-            },
-            {
-              "id": "theme.name_power",
-              "weight": 0.125
+              "weight": 0.14285714285714288
             },
             {
               "id": "theme.refuge",
-              "weight": 0.125
+              "weight": 0.14285714285714288
             }
           ],
           "actions": [
             {
               "id": "action.petition",
+              "weight": 0.4
+            },
+            {
+              "id": "action.remembrance",
               "weight": 0.4
             }
           ],
@@ -32135,7 +32166,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "edb3a575b70923c747af7efa40e865fec97d25c96ea9a0fb1e07a0b6b28cd826",
+        "inputHash": "92e47271f863a0b037df7468767460906424608936bf1e6d128134b24b953fce",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -32146,12 +32177,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "050a36bd9ea0048d2eea96393e01a6c6de34c433bbb43834b1514dfc6f325e65",
+          "recordHash": "67b5ee8624b67b387bcb8fabda0e569dffba566fb9fa36602e917009b6ad2944",
           "extractionRequestIds": [
-            "f145438366dd4488bfeb15ecee0cc881"
+            "1bafd8faa86241698f302c8a85478545"
           ],
           "reviewRequestIds": [
-            "e03e8e6b8c294bba8054ec3639ca793e"
+            "203aae5c65734a8a899ec15aa05e48bc"
           ],
           "coveredLineCount": 23
         },
@@ -32169,17 +32200,27 @@
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.28571428571428575
+              "weight": 0.7142857142857143
             },
             {
-              "id": "action.praise",
-              "weight": 0.7142857142857143
+              "id": "action.remembrance",
+              "weight": 0.28571428571428575
             }
           ],
           "subjects": [
             {
+              "id": "subject.krishna",
+              "weight": 0.22222222222222224,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.rama",
+              "weight": 0.22222222222222224,
+              "role": "worship_focus"
+            },
+            {
               "id": "subject.sai",
-              "weight": 1.0,
+              "weight": 0.5555555555555556,
               "role": "worship_focus"
             }
           ]
@@ -33278,7 +33319,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "7fcde75865f0e359a8d020baa6636fd5e305927fbd809180cbac0a66a9a9bede",
+        "inputHash": "dd32b8f3a9f0b6aba86035a934a49ba05691ef374d752b263c13adac69990f53",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -33289,12 +33330,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "7f7d3801ad2ea1d1a96b4415a68677dde18d0b9ecad98c60f42b3690c73c22f2",
+          "recordHash": "c1b2edf980264eda9e9e5b352e6f1313741f8483b1df9f43864f6b8fca6a6759",
           "extractionRequestIds": [
-            "30d0d33315ac49fe99b2b1f7084c954b"
+            "f5c5ab4596234e1baa0c6f51044c4740"
           ],
           "reviewRequestIds": [
-            "9b0c9a3e60ec41098f87307f561c29d1"
+            "57d11dc366ab4f308d76908049219b6a"
           ],
           "coveredLineCount": 99
         },
@@ -33302,15 +33343,23 @@
           "themes": [
             {
               "id": "theme.beloved_relationship",
-              "weight": 0.5555555555555556
+              "weight": 0.3125
             },
             {
               "id": "theme.critique_of_ritual",
-              "weight": 0.22222222222222224
+              "weight": 0.125
             },
             {
               "id": "theme.divine_presence",
-              "weight": 0.22222222222222224
+              "weight": 0.125
+            },
+            {
+              "id": "theme.longing",
+              "weight": 0.125
+            },
+            {
+              "id": "theme.name_power",
+              "weight": 0.3125
             }
           ],
           "actions": [
@@ -37154,7 +37203,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "d0a5aca205cf9a3f5d5d54a33b9ab0de974bc57db8e49eeda83cbc07c4abbe29",
+        "inputHash": "b842f3b6e88772df4c48f53c46bb206be7aa66c9eac3420d99b70d0b2523fcee",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -37165,36 +37214,50 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "328b58dfbd50fa969d507ffba2d546b6165529431e44fa7fc1e45f6ba567b1e3",
+          "recordHash": "0c35f4af6501962f8a9004f8a18c362d54889a3e22751b6c0ca3e7dc5bbcc6c6",
           "extractionRequestIds": [
-            "fa40ef19abf249ef95a780d878ad9ab0"
+            "19992dacb950421fad9d6ab9c8b36897"
           ],
           "reviewRequestIds": [
-            "aa51651ab2d242b783d094b0ed0431cc"
+            "994f6f9c6aa84a51b915568ceda15ffb"
           ],
           "coveredLineCount": 9
         },
         "features": {
           "themes": [
             {
-              "id": "theme.detachment",
-              "weight": 0.18181818181818182
+              "id": "theme.awakening",
+              "weight": 0.2777777777777778
+            },
+            {
+              "id": "theme.beloved_relationship",
+              "weight": 0.11111111111111112
             },
             {
               "id": "theme.divine_presence",
-              "weight": 0.45454545454545453
+              "weight": 0.2777777777777778
             },
             {
               "id": "theme.grace",
-              "weight": 0.18181818181818182
+              "weight": 0.11111111111111112
             },
             {
               "id": "theme.guidance",
-              "weight": 0.18181818181818182
+              "weight": 0.11111111111111112
+            },
+            {
+              "id": "theme.joy",
+              "weight": 0.11111111111111112
             }
           ],
           "actions": [],
-          "subjects": []
+          "subjects": [
+            {
+              "id": "subject.guru",
+              "weight": 0.4,
+              "role": "narrative_subject"
+            }
+          ]
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
@@ -37974,7 +38037,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "9a4e5882ad1454bd648eca69951ae16d9e91c469ad0bd5bafb13eab809dff242",
+        "inputHash": "3152f639d6a5b4878bf94869cf5ab99ec09bfa5e1a684f479ba43e2590cd7b79",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -37985,12 +38048,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "3a7f48588ac052e5f08a3d168653135a35ad5a330dc797124a0d720bc8ef5e96",
+          "recordHash": "c6e70cfbec901f4c6623f4c7583d471fe3908c8d489730cb52b2d3b4e1fea3dc",
           "extractionRequestIds": [
-            "a6677c18c8834bb0a16d125c0759afca"
+            "0ab4a841c5c847dfb25a1dd908dd63c5"
           ],
           "reviewRequestIds": [
-            "4bca5d991151453aba04a380f2976f67"
+            "a4a8f4df2be44bfe876ed8e40ddec773"
           ],
           "coveredLineCount": 13
         },
@@ -38329,7 +38392,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "28ee7310609abc4b95d422b707ea8b60f5b1e025dc4e563d1c96f15b8435cab8",
+        "inputHash": "72a0dbfec7d35a445bfb8100da807d3aba8809e8361194ac4f4cea4a35080f59",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -38340,38 +38403,34 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "7716c9169fe7e183317c892c0ccf02aafd48764e16772c40ede4a59e34937612",
+          "recordHash": "608aa0cca2ea214b6e31cd2e1598b60e2a48394b3b80b6c37ed705cb42774ebb",
           "extractionRequestIds": [
-            "f3b174659d7143ab912733d4524ee71f"
+            "280f4b03f86641548c781569d897fba8"
           ],
           "reviewRequestIds": [
-            "d5db0fbacc964b228385930dba291a1e"
+            "9d8c742641d743aeab070631822081e2"
           ],
           "coveredLineCount": 17
         },
         "features": {
           "themes": [
             {
-              "id": "theme.compassion",
-              "weight": 0.22222222222222224
-            },
-            {
               "id": "theme.humility",
-              "weight": 0.22222222222222224
+              "weight": 0.28571428571428575
             },
             {
               "id": "theme.refuge",
-              "weight": 0.5555555555555556
+              "weight": 0.7142857142857143
             }
           ],
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.5
+              "weight": 0.28571428571428575
             },
             {
               "id": "action.praise",
-              "weight": 0.5
+              "weight": 0.7142857142857143
             }
           ],
           "subjects": []
@@ -38434,7 +38493,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "8003a3bb852c1f23fae93ee7ed4d013f7b1ac37a30c0bda31d53378f6582f784",
+        "inputHash": "6330d0b0882bf9534212519b98e66bd5fc1c93042156e2dde7149ec3f66e4923",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -38445,12 +38504,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "c6ddffb87c48421b4cd307ed52b05c9b31a77a87c0e438ec54092d39ceadfe4b",
+          "recordHash": "c9c8030428f848a07470683d6e0a8cf3c2c352c2b7e5fcc785488ac34f0405b3",
           "extractionRequestIds": [
-            "26e8b60ecdca4d48a2d9d1b19e423388"
+            "8c0b2b5b857f49308bf5a4b73445bb3b"
           ],
           "reviewRequestIds": [
-            "d5c4da4842a44ecc888e46436c722aba"
+            "b7d33f265dc642a0a3652abf5697d896"
           ],
           "coveredLineCount": 12
         },
@@ -38471,7 +38530,7 @@
               "weight": 0.4
             },
             {
-              "id": "action.remembrance",
+              "id": "action.praise",
               "weight": 0.4
             }
           ],
@@ -39100,7 +39159,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "a34966bd984b543cd0cfc5a54861b37d08b05283cfe56e3da7e6372ddb0fe364",
+        "inputHash": "75007a237eada6f614104d94dc397295fad4763c0c8ea9854a00ebd107dd6e8d",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -39111,12 +39170,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "b58fabf0bae8399847b0d35b628c3db5945f5857b253417eec96fe630bf2a71c",
+          "recordHash": "9bc75b3b95e90cc8d06524a57f676d9fb11d1b9571be522e5ad1ed67c17daf7e",
           "extractionRequestIds": [
-            "1cb6dc285d294666b0d9188e58d7a370"
+            "fa9d1ba97f534334b7f3e8cf27328d69"
           ],
           "reviewRequestIds": [
-            "950df1d85e524dc7aaebb3e0529f4127"
+            "07f8e54877fb451695a345b1a1cac5db"
           ],
           "coveredLineCount": 14
         },
@@ -39131,12 +39190,7 @@
               "weight": 0.28571428571428575
             }
           ],
-          "actions": [
-            {
-              "id": "action.meditation",
-              "weight": 0.4
-            }
-          ],
+          "actions": [],
           "subjects": [
             {
               "id": "subject.guru",

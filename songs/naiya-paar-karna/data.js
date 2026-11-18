@@ -205,7 +205,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jab tak dam mēṁ hai mērē dam sēvā karūm̐ tumhārī",
-    "english": "{0,1:As long as }{4:there is }{2:breath }{3,5,6:in my breath, }{8:I will do }{7,9:your service}",
+    "english": "{0,1:As long as }{2,3,4,5,6:life remains in me, }{7,8,9:I will serve you.}",
     "words": [
       {
         "roman": "jab",
@@ -221,7 +221,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dam",
-        "gloss": "breath; life; vitality (masc. sg.)",
+        "gloss": "life; in dam meṁ dam honā, to remain alive or keep breathing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -245,7 +245,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dam",
-        "gloss": "breath; bodily frame (masc. sg. obl.)",
+        "gloss": "breath; in dam meṁ dam honā, to remain alive or keep breathing",
         "concept_key": "",
         "preserve_in_english": false
       },

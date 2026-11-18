@@ -952,7 +952,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Manḍeyāṅ nasībāṅ utte karn manmāniyāṅ",
-    "english": "{3:They do }{4:their arbitrary will }{2:upon }{0:bad }{1:destinies.}",
+    "english": "{3,4:They have their way }{2:with }{0:unfortunate }{1:fates.}",
     "words": [
       {
         "roman": "Manḍeyāṅ",

@@ -442,7 +442,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cākara rahasū̃ bāga lagāsū̃ nita uṭha darasaṇa pāsū̃",
-    "english": "{0,1:I will remain a servant, }{2,3:I will plant a garden, }{4,5:rising daily, }{6,7:I will receive your vision.}",
+    "english": "{0,1:I will remain a servant, }{2,3:I will plant a garden; }{4,5:rising each day, }{6,7:I will behold you.}",
     "words": [
       {
         "roman": "cākara",
@@ -482,7 +482,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darasaṇa",
-        "gloss": "direct vision; sighting; audience",
+        "gloss": "the sight of the Lord; beholding him; an audience with him",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1224,7 +1224,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sā̃variyā ke darasaṇa pāū̃",
-    "english": "{2,3:I will obtain the vision }{0,1:of the Dark Beloved,}",
+    "english": "{2,3:I will behold }{0,1:the Dark Beloved,}",
     "words": [
       {
         "roman": "sā̃variyā",
@@ -1240,7 +1240,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darasaṇa",
-        "gloss": "direct vision; sighting; audience",
+        "gloss": "the sight of the Lord; beholding him; an audience with him",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1882,7 +1882,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ādhī rāta prabhu darasaṇa dīnhe",
-    "english": "{0,1:At midnight }{2:the Lord }{3,4:granted his vision,}",
+    "english": "{0,1:At midnight }{2:the Lord }{3,4:granted me the sight of himself,}",
     "words": [
       {
         "roman": "ādhī",
@@ -1904,7 +1904,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darasaṇa",
-        "gloss": "direct vision; sighting; divine audience",
+        "gloss": "the sight of the Lord; beholding him; an audience with him",
         "concept_key": "",
         "preserve_in_english": false
       },

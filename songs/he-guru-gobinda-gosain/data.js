@@ -101,7 +101,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobinda",
-        "gloss": "Govinda, finder of cattle; the divine cowherd Lord and protector",
+        "gloss": "Govinda, Kṛṣṇa the divine cowherd, finder and keeper of cattle",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -225,7 +225,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobinda",
-        "gloss": "Govinda, finder of cattle; the divine cowherd Lord and protector",
+        "gloss": "Govinda, Kṛṣṇa the divine cowherd, finder and keeper of cattle",
         "concept_key": "",
         "preserve_in_english": false
       },

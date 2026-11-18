@@ -6602,7 +6602,7 @@ window.SONG_LINES = {
     "source": "रचिबे को बिधि जैसे पालिबे को हरिहर मीच मारिबे को जियाइबे को सुधापान भो",
     "sourceLanguage": "bra",
     "roman": "racibe ko bidhi jaise pālibe ko harihara mīca māribe ko jiyāibe ko sudhāpāna bho",
-    "english": "{0,1:For creating, }{3:like }{2:Brahma, }{4,5:for sustaining, }{6:Hari and Hara, }{7:Death }{8,9:for slaying, }{10,11:and for reviving, }{13:he became }{12:a draught of nectar.}",
+    "english": "{0,1:For creating, }{3:he is like }{2:Brahmā; }{4,5:for sustaining, }{6:Hari; }{8,9:for slaying, }{6:Hara }{7:and Death; }{10,11:for reviving, }{13:he has become }{12:a draught of nectar.}",
     "words": [
       {
         "roman": "racibe",
@@ -6642,7 +6642,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harihara",
-        "gloss": "Vishnu and Shiva (Hari and Hara); Hari is the remover of evil; Hara is the remover or destroyer",
+        "gloss": "Hari (Viṣṇu) for sustaining, and Hara (Śiva) for slaying; Hari removes evil, and Hara is the destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6689,7 +6689,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Inflected Braj gerunds expressing purpose: 'racibe ko', 'pālibe ko', 'māribe ko', 'jiyāibe ko' (from racnā, pālnā, mārnā, jiyānā). 'harihara' is a Dvandva compound.",
+    "grammarNote": "Braj purpose phrases racibe ko, pālibe ko, māribe ko, jiyāibe ko govern successive comparisons. The unsplit source token harihara contains Hari closing the preservation comparison and Hara opening the slaying comparison with mīca (Death); it is not a single dvandva attached to pālibe.",
     "sourceWords": [
       {
         "text": "रचिबे",

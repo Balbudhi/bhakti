@@ -558,7 +558,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Satya sanātana sundara satya sanātana sundara paraśiva sura bhūpā",
-    "english": "{0:True, }{1:eternal, }{2:beautiful, }{3:true, }{4:eternal, }{5:beautiful, }{8:sovereign over }{6:Supreme Shiva }{7:and the gods.}",
+    "english": "{0:True, }{1:eternal, }{2:beautiful, }{3:true, }{4:eternal, }{5:beautiful, }{6:Supreme Śiva, }{7,8:sovereign of the gods.}",
     "words": [
       {
         "roman": "Satya",
@@ -615,7 +615,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Satya, sanātana, sundara act as predicate adjectives; paraśiva-sura-bhūpā is a compound epithet where bhūpā is feminine/masculine-invariable for ruler."
+    "grammarNote": "Satya, sanātana, sundara and paraśiva are read as predicates of the addressed Mother in this hymn’s chain of divine identities; sura-bhūpā means sovereign of the gods."
   },
   "v2-lead": {
     "source": "आदि अनादि अनामय अविचल अविनाशी",
@@ -1127,7 +1127,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū vidhi vadhū ramā tū umā mahāmāyā",
-    "english": "{0:You are }{1,2:the bride of Brahma, }{3:Rama, }{4:you are }{5:Uma }{6:and Mahamaya.}",
+    "english": "{0:You are }{1,2:the bride of Brahmā, }{3:Ramā; }{4:you are }{5:Umā }{6:and Mahāmāyā.}",
     "words": [
       {
         "roman": "Tū",

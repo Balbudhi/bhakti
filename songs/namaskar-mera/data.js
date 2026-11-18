@@ -321,7 +321,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Lord Hari; the dispeller of sins",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -339,7 +339,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari, the remover of evil and sin",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -534,7 +534,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Lord Hari, the remover of evil and sin",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -552,7 +552,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Lord Hari, the remover of evil and sin",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
         "concept_key": "",
         "preserve_in_english": false
       },

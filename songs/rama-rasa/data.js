@@ -335,7 +335,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "divine Name; Supreme Reality; Rāma means “pleasing” or “delightful”",
+        "gloss": "Rāma, the delightful Lord invoked here as the supreme divine reality; the name is also that of Rāma of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1358,7 +1358,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "divine Name; Supreme Reality; Rāma means “pleasing” or “delightful”",
+        "gloss": "Rāma, the delightful Lord invoked here as the supreme divine reality; the name is also that of Rāma of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       },

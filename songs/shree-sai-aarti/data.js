@@ -92,7 +92,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrī saccidānanda sadguru sāīnātha mahārāja kī jaya",
-    "english": "{5,6:Victory to }{0:the holy }{2:True Spiritual Guide, }{3:Lord Sai, }{4:the Supreme Sovereign }{1:of Existence-Consciousness-Bliss!}",
+    "english": "{5,6:Victory to }{0:the holy }{2:True Spiritual Guide, }{3:Lord Sai, }{4:the Supreme Sovereign, }{1:existence, consciousness, and bliss embodied!}",
     "words": [
       {
         "roman": "śrī",
@@ -102,7 +102,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saccidānanda",
-        "gloss": "existence-consciousness-bliss",
+        "gloss": "existence, consciousness, and bliss, describing the Guru himself",
         "concept_key": "",
         "preserve_in_english": false
       },

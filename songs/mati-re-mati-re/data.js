@@ -931,11 +931,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāī̃ re",
-    "english": "{1:O }{0:Master}",
+    "english": "{1:O }{0:Sāī}",
     "words": [
       {
         "roman": "sāī̃",
-        "gloss": "Lord; Master; revered spiritual guide",
+        "gloss": "Sāī, the revered master and spiritual guide addressed here",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1499,7 +1499,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāvana trāsa daī siya ko saba rākṣasi soṃ kahi soka nivāro |",
-    "english": "{0:Ravana }{2:terrorized }{1:}{3,4: Sita} and {8:ordered }{5:all }{6,7:the demonesses }{10:to torment }{9:her.}",
+    "english": "{0:Rāvaṇa }{1,2:terrified }{3,4:Sītā }and {8:told }{5:all }{6,7:the demonesses, }“{10:Dispel }{9:her grief.}”",
     "words": [
       {
         "roman": "rāvana",
@@ -1557,18 +1557,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "soka",
-        "gloss": "grief; torment",
+        "gloss": "grief; sorrow, here Sītā’s grief",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nivāro",
-        "gloss": "cause distress / command to inflict (or remove her defiance)",
+        "gloss": "dispel; remove (imperative in the quoted command)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'trāsa daī' is a transitive past construction with feminine verb agreement; 'kahi' is an absolutive participle."
+    "grammarNote": "Trāsa daī is inflicted terror; Siya ko marks its recipient. Rāvaṇa continues as the understood speaker of kahi to all the demonesses; soka is the object of imperative nivāro. Keep removal of grief distinct from the surrounding intimidation. No invented meaning cause distress is assigned to nivāro."
   },
   "v4-l2": {
     "source": "ताहि समय हनुमान महाप्रभु जाए महा रजनीचर मारो ॥",

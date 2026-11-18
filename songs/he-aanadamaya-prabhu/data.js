@@ -287,7 +287,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ānandabharā līḷāru sṛṣṭira sṛjana",
-    "english": "{1:From }{0:bliss-filled }{1:divine play }{3:is the creation }{2:of creation,}",
+    "english": "{1:From }{0:bliss-filled }{1:divine play, }{2:the universe }{3:is born,}",
     "words": [
       {
         "roman": "ānandabharā",
@@ -303,7 +303,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sṛṣṭira",
-        "gloss": "of creation",
+        "gloss": "of the universe; of creation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -352,7 +352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho ānandabharā līḷāru sṛṣṭira sṛjana",
-    "english": "{0:Oh, }{2:from }{1:bliss-filled }{2:divine play }{4:is the creation }{3:of creation,}",
+    "english": "{0:Oh, }{2:from }{1:bliss-filled }{2:divine play, }{3:the universe }{4:is born,}",
     "words": [
       {
         "roman": "ho",
@@ -374,7 +374,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sṛṣṭira",
-        "gloss": "of creation",
+        "gloss": "of the universe; of creation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -997,7 +997,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma ānanda svarūpe miśu e jībana",
-    "english": "{3:May }{4:this }{5:life }{3:merge }{0:into your }{2:essential nature }{1:of bliss,}",
+    "english": "{3:May }{4:this }{5:life }{3:merge into }{0:your }{2:very form }{1:of bliss,}",
     "words": [
       {
         "roman": "tuma",
@@ -1013,7 +1013,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "svarūpe",
-        "gloss": "in [your] essential nature; in true form",
+        "gloss": "in your essential form or being; here, your form of bliss",
         "concept_key": "",
         "preserve_in_english": false
       },

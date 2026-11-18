@@ -458,7 +458,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "haiṁ rām ramayyā vo, haiṁ kṛṣṇa kanhaiyā vo",
-    "english": "{3:He} {0:is} {1,2:Rama the all-pervading,} {7:he} {4:is} {5,6:Krishna the beloved}",
+    "english": "{3:He} {0:is} {1,2:Rām Ramaiyā;} {7:he} {4:is} {5,6:Kṛṣṇa Kanhaiyā.}",
     "words": [
       {
         "roman": "haiṁ",

@@ -981,11 +981,11 @@ window.SONG_LINES = {
     "source": "खालस इक भगवान भरोसे",
     "sourceLanguage": "hi",
     "roman": "khālas ik bhagvān bharose",
-    "english": "{0,3:Relying solely }{1:upon the One }{2:God,}",
+    "english": "{0:Khalas, }{3:relying }{1:only }{2:on God,}",
     "words": [
       {
         "roman": "khālas",
-        "gloss": "purely / solely / entirely",
+        "gloss": "Khalas, the poet, addressing himself by name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1008,7 +1008,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'khālas' (from Arabic khāliṣ) functions adverbially. 'bharose' is an oblique noun used adverbially/postpositionally ('on the reliance of').",
+    "grammarNote": "Khalas is the poet’s name in self-address. ik restricts reliance to God alone; bharose is an oblique noun used postpositionally, in reliance upon. The next line supplies the question addressed to the poet.",
     "sourceWords": [
       {
         "text": "खालस",
@@ -1040,11 +1040,11 @@ window.SONG_LINES = {
     "source": "खालस इक भगवान भगवान भरोसे",
     "sourceLanguage": "hi",
     "roman": "khālas ik bhagvān bhagvān bharose",
-    "english": "{0,4:Relying solely }{1:upon the One }{2:God, }{3,4:upon God,}",
+    "english": "{0:Khalas, }{4:relying }{1:only }{2:on God, }{3,4:on God,}",
     "words": [
       {
         "roman": "khālas",
-        "gloss": "purely / solely / entirely",
+        "gloss": "Khalas, the poet, addressing himself by name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1073,7 +1073,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Reduplication of the noun 'bhagvān' within the adverbial phrase 'bhagvān bhagvān bharose'.",
+    "grammarNote": "Khalas is the poet’s name in self-address; the noun bhagvān is repeated within the phrase of reliance on God. The next line supplies the question addressed to the poet.",
     "sourceWords": [
       {
         "text": "खालस",

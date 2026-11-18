@@ -586,7 +586,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
+        "gloss": "Rāma, the delightful divine beloved; this hymn also evokes Kṛṣṇa through Kubjā and Sudāmā"
       },
       {
         "roman": "divāne",
@@ -800,7 +800,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
+        "gloss": "Rāma, the delightful divine beloved; this hymn also evokes Kṛṣṇa through Kubjā and Sudāmā"
       },
       {
         "roman": "milata",
@@ -861,7 +861,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāma",
-        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
+        "gloss": "Rāma, the delightful divine beloved; this hymn also evokes Kṛṣṇa through Kubjā and Sudāmā"
       },
       {
         "roman": "milata",
@@ -1021,7 +1021,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
+        "gloss": "Rāma, the delightful divine beloved; this hymn also evokes Kṛṣṇa through Kubjā and Sudāmā"
       },
       {
         "roman": "milata",
@@ -1123,7 +1123,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "rāma",
-        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”"
+        "gloss": "Rāma, the delightful divine beloved; this hymn also evokes Kṛṣṇa through Kubjā and Sudāmā"
       },
       {
         "roman": "bhajana",

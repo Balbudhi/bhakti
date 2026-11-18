@@ -742,7 +742,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārbrahm",
-        "gloss": "Supreme Brahman: the highest divine reality; para means supreme, and brahman is traditionally linked with growth or greatness.",
+        "gloss": "Supreme Brahman, the highest divine reality; para means supreme, and Brahman the great",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1114,7 +1114,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hari",
-        "gloss": "Hari, the divine Lord who removes evil and suffering",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the beloved Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -6417,7 +6417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadā sadrūpaṁ cidānandakandam",
-    "english": "{0:Forever }{1:the embodiment of true existence, }{2:the root bulb of consciousness and bliss,}",
+    "english": "{0:Forever }{1:the embodiment of true existence, }{2:the root of consciousness and bliss,}",
     "words": [
       {
         "roman": "sadā",
@@ -6433,7 +6433,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cidānandakandam",
-        "gloss": "the primal source and bulb of consciousness and bliss",
+        "gloss": "the root of consciousness and bliss",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7213,7 +7213,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ajanmādyamekaṃ parabrahma sākṣāt svayaṃ sambhavaṃ rāmamevāvatīrṇam | bhavaddarśanātsaṃpunītaḥ prabho'haṃ",
-    "english": "{0:Unborn, primal, and one, }{1:the Supreme Brahman }{2:directly, }{3:self-}{4:manifest, }{5:Rāma himself descended—}{6:by your vision, }{7:O Lord, I am }{6:thoroughly purified.}",
+    "english": "{0:Unborn, primal, and one, }{1:the Supreme Brahman }{2:directly, }{3:self-}{4:manifest, }{5:Rāma himself descended—}{6:by beholding you, }{7:O Lord, I am }{6:thoroughly purified.}",
     "words": [
       {
         "roman": "ajanmādyamekaṃ",
@@ -7253,7 +7253,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavaddarśanātsaṃpunītaḥ",
-        "gloss": "thoroughly purified by your sight",
+        "gloss": "thoroughly purified by beholding you",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12393,7 +12393,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrī nārāyaṇa vāsudevāya saccidānanda sadguru sāīnātha mahārāja kī jaya",
-    "english": "{8:Victory}{7: to }{0:Holy }{1:Narayana, }{2:unto Vasudeva, }{4:the True Master }{3:of Existence-Consciousness-Bliss, }{6:Great King }{5:Sai Nath!}",
+    "english": "{8:Victory}{7: to }{0:Holy }{1:Narayana, }{2:unto Vasudeva, }{4:the True Master, }{3:existence, consciousness, and bliss embodied, }{6:Great King }{5:Sai Nath!}",
     "words": [
       {
         "roman": "śrī",
@@ -12415,7 +12415,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saccidānanda",
-        "gloss": "existence-consciousness-bliss",
+        "gloss": "existence, consciousness, and bliss, describing the Guru himself",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12714,7 +12714,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrī saccidānanda sadguru sāīnātha mahārāja kī jaya",
-    "english": "{6:Victory}{5: to }{0:the holy }{2:True Master }{1:of Existence-Consciousness-Bliss, }{4:Great King }{3:Sai Nath!}",
+    "english": "{6:Victory}{5: to }{0:the holy }{2:True Master, }{1:existence, consciousness, and bliss embodied, }{4:Great King }{3:Sai Nath!}",
     "words": [
       {
         "roman": "śrī",
@@ -12724,7 +12724,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "saccidānanda",
-        "gloss": "existence-consciousness-bliss",
+        "gloss": "existence, consciousness, and bliss, describing the Guru himself",
         "concept_key": "",
         "preserve_in_english": false
       },

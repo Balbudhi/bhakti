@@ -1608,7 +1608,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kisa vidhi milūṁ dayāmaya",
-    "english": "{0:by what }{1:way }{2:may I meet You, }{3:O Compassionate One?}",
+    "english": "{0,1:How }{2:may I meet, }{3:O Compassionate One,}",
     "words": [
       {
         "roman": "kisa",
@@ -1661,7 +1661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tumakō maiṁ kumatī",
-    "english": "{0:You, }{1:I }{2:of crooked intellect?}",
+    "english": "{0:you, }{1,2:with my wayward mind?}",
     "words": [
       {
         "roman": "tumakō",

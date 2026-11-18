@@ -75,7 +75,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bheṭī lāgī jīvā lāgalīse āsa",
-    "english": "{0,1:For a meeting, }{4:longing }{3:has taken hold }{2:of the jīva,}",
+    "english": "{4:Longing }{0,1:to meet you }{3:has taken hold }{2:of my soul;}",
     "words": [
       {
         "roman": "bheṭī",
@@ -91,9 +91,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "individual living being; embodied self",
+        "gloss": "my soul; my life, here the self longing to meet Viṭṭhal",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "lāgalīse",
@@ -163,7 +163,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāṭa tujhī",
-    "english": "{1:for your }{0:path.}",
+    "english": "{0:the path }{1:for your coming.}",
     "words": [
       {
         "roman": "vāṭa",
@@ -410,7 +410,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "divāḷīcyā muḷā lekī āsāvalī",
-    "english": "{0:At Diwali, }{2:a married daughter }{3:longs }{1:for an invitation to her mother's home,}",
+    "english": "Like {2:a married daughter }{3:longing }{0:at Diwali }{1:for an invitation to her mother’s home,}",
     "words": [
       {
         "roman": "divāḷīcyā",
@@ -492,11 +492,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāhatase vāṭulī",
-    "english": "{0:she keeps watching }{1:the little path}",
+    "english": "{0:so I keep watching }{1:the little path}",
     "words": [
       {
         "roman": "pāhatase",
-        "gloss": "is watching; keeps watching",
+        "gloss": "I keep watching, in the comparison with the longing daughter",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -521,7 +521,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paṇḍharīcī",
-    "english": "{0:of Pandhari.}",
+    "english": "{0:to Paṇḍharī.}",
     "words": [
       {
         "roman": "paṇḍharīcī",

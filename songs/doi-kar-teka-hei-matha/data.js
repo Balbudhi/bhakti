@@ -6815,7 +6815,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pañca prāṇa jīva bhāva se utārūṁ āratī",
-    "english": "{0:With the five} {1:vital breaths} {3,4:and the feeling} {2:of my jīva,} {5:I wave} {6:the arati lamp.}",
+    "english": "{0:With the five} {1:vital breaths,} {2,3,4:with all my heart and soul,} {5:I wave} {6:the worship lamp.}",
     "words": [
       {
         "roman": "Pañca",
@@ -6831,13 +6831,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "individual living being; embodied self",
+        "gloss": "soul; in jīva-bhāva se, with all one’s heart and soul",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bhāva",
-        "gloss": "inner feeling; devotional disposition; state of being",
+        "gloss": "feeling; with jīva in this phrase, wholehearted devotion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6860,7 +6860,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Utārūṁ is 1st person singular present/subjunctive. Pañca prāṇa jīva bhāva se is an instrumental phrase denoting the inner spiritual medium of worship."
+    "grammarNote": "Utārūṁ is the first-person offering verb. Jīva-bhāva se is the wholehearted instrumental expression familiar from Marathi jiveṃbhāve in āratī language."
   },
   "line-72-arati-utaru-mere": {
     "source": "आरती उतारूँ मेरे पंढरीनाथा",

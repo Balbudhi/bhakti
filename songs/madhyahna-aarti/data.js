@@ -9699,7 +9699,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "harī",
-        "gloss": "of Hari; Hari is “the remover” of evil and suffering",
+        "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10142,11 +10142,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadānimbavṛkṣasya mūlādhivāsāt sudhāsrāviṇaṃ tiktamapyapriyantam",
-    "english": "{1:From dwelling at the root }{0:of the evergreen neem tree, }{3:making the bitter and unpleasing }{2:exude nectar,}",
+    "english": "{0,1:By always dwelling at the root of the neem tree, }{3:making it, though bitter and unpleasing, }{2:exude nectar,}",
     "words": [
       {
         "roman": "sadānimbavṛkṣasya",
-        "gloss": "of the evergreen neem tree",
+        "gloss": "always; of the neem tree (sadā + nimbavṛkṣasya)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10164,12 +10164,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "tiktamapyapriyantam",
-        "gloss": "making the bitter and unpleasing sweet",
+        "gloss": "though bitter and unpleasing (tiktam api apriyaṃ tam), describing that tree",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "mūlādhivāsāt is ablative of cause/origin; tiktamapyapriyantam is sandhi of tiktam + api + apriyantam (acc sg m)."
+    "grammarNote": "Sadā is adverbial, modifying dwelling; nimbavṛkṣasya is genitive, mūlādhivāsāt ablative. Tiktam api apriyaṃ tam describes the tree as bitter and unpleasing; the ensuing sadhayantam governs making it nectar-exuding and surpassing the wish-granting tree."
   },
   "line-146": {
     "source": "तरुं कल्पवृक्षाधिकं साधयन्तम्",
@@ -10360,7 +10360,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anekāśrutātarkyalīlāvilāsaiḥ samāviṣkṛteśāna bhāsvatprabhāvam",
-    "english": "{0:Through countless unheard-of and inconceivable divine sports, }{1:who has made manifest, O Lord, }{2:his luminous power,}",
+    "english": "{1:In whom, }{0:through countless unheard-of and inconceivable divine sports, }{2:the radiant power }{1:of the Lord is revealed,}",
     "words": [
       {
         "roman": "anekāśrutātarkyalīlāvilāsaiḥ",
@@ -10370,7 +10370,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "samāviṣkṛteśāna",
-        "gloss": "O Lord who has made manifest",
+        "gloss": "in whom the Lord’s power is revealed (samāviṣkṛta + īśāna, within the compound)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10381,7 +10381,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "anekāśrutātarkyalīlāvilāsaiḥ is instrumental plural; samāviṣkṛteśāna bhāsvatprabhāvam modifies īśvaram in the accusative singular."
+    "grammarNote": "The phrase samāviṣkṛteśānabhāsvatprabhāvam is an accusative epithet of Sāīnātha: one in whom the Lord’s radiant power is revealed. Īśāna is internal to this compound, not a separate vocative."
   },
   "line-150": {
     "source": "अहम्भावहीनं प्रसन्नात्मभावम्",
@@ -10896,11 +10896,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīrūpadhara rāghavottamaṃ bhaktakāmavibudhadrumaṃ prabhum",
-    "english": "{0:O bearer of Sai's form, }{1:the supreme scion of Raghu, }{2:the wish-fulfilling tree for devotees' desires, }{3:the Lord,}",
+    "english": "{0:The bearer of Sāī’s form, }{1:the supreme scion of Raghu, }{2:the wish-fulfilling tree for devotees' desires, }{3:the Lord,}",
     "words": [
       {
         "roman": "sāīrūpadhara",
-        "gloss": "O bearer of Sai's form; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "bearer of Sai's form; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10923,7 +10923,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "rāghavottamam, bhaktakāmavibudhadrumam, and prabhum are accusative singular masculines serving as direct objects of the verb in line-160; sāīrūpadhara is vocative singular."
+    "grammarNote": "The opening epithet is construed with rāghavottamam and prabhum, accusative objects of cintayāmi in the ensuing clause. The official hymn has sāīrūpadharam; the shortened frozen sung form is retained without inventing a different address."
   },
   "line-160": {
     "source": "माययोपहत्तचित्तशुद्धये चिन्तयाम्यहमहर्निशं मुदा",
@@ -11114,7 +11114,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upāsanādaivata sāīnātha stavairmayopāsaninostutastvam",
-    "english": "{0:O chosen deity of worship, }{1:O Lord Sai, }{2:You have been praised with hymns by me, the worshiper;}",
+    "english": "{0:O chosen deity of worship, }{1:O Lord Sāī, }{2:you have been praised with hymns by me, Upāsani;}",
     "words": [
       {
         "roman": "upāsanādaivata",
@@ -11130,12 +11130,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "stavairmayopāsaninostutastvam",
-        "gloss": "praised by me, the worshiper, with hymns, are You",
+        "gloss": "you have been praised with hymns by me, Upāsani (the hymn’s author)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Sandhi fusion: stavaiḥ (instrumental plural) + mayā (instrumental 1st sg) + upāsaninā (instrumental singular masculine) + stutaḥ (nominative singular masculine past passive participle) + tvam (nominative singular pronoun)."
+    "grammarNote": "Stavaiḥ + mayā + Upāsaninā + stutaḥ + tvam: hymns/instrumental, by me/instrumental, by Upāsani/instrumental, praised/nominative, you/nominative. The fused sung spelling does not erase the author’s name."
   },
   "line-164": {
     "source": "रमेन्मनो मे तव पादयुग्मे भृङ्गो यथाम्भोजे मकरन्दलुब्धः",

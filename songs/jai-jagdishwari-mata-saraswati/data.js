@@ -661,7 +661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dī darśana Parabrahma dulārī",
-    "english": "{0:grant }{1:divine vision, }{3:O beloved daughter }{2:of Supreme Brahman!}",
+    "english": "{0:Grant me }{1:the sight of you, }{3:O beloved }{2:of Parabrahman!}",
     "words": [
       {
         "roman": "Dī",
@@ -671,7 +671,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśana",
-        "gloss": "divine vision / sight / presence",
+        "gloss": "the sight of you; beholding the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -683,7 +683,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dulārī",
-        "gloss": "beloved daughter / darling",
+        "gloss": "beloved; dear one; darling (feminine)",
         "concept_key": "",
         "preserve_in_english": false
       }

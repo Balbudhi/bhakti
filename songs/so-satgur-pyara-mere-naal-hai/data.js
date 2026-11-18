@@ -883,7 +883,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "vāhigurū",
-        "gloss": "a Sikh name for God; an invocation of wonder and praise",
+        "gloss": "Vāhigurū, the wondrous divine teacher and enlightener, invoked in praise",
         "concept_key": "",
         "preserve_in_english": false
       }

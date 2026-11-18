@@ -515,13 +515,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saṁsāra lāgenā bhala tumaku jhure mo mana",
-    "english": "{0:saṃsāra }{1,2:does not feel pleasing; }{5:my }{6:mind }{4:pines }{3:for you,}",
+    "english": "{0:Worldly life }{1,2:does not please me; }{5:my }{6:heart }{4:pines }{3:for you,}",
     "words": [
       {
         "roman": "Saṁsāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "worldly life; the world and its concerns",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "lāgenā",

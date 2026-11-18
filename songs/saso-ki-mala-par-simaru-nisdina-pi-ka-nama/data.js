@@ -303,7 +303,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine name Rāma, invoked as the one who knows the Beloved’s heart; Rāma means “pleasing” or “delightful”",
+        "gloss": "Rām, the delightful Lord who knows the Beloved’s heart; the name is also that of Rāma of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3243,7 +3243,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Har",
-        "gloss": "Har (Hari), the divine Beloved in this stanza; Hari is “the remover” of evil and suffering",
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the indwelling divine Beloved who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3309,7 +3309,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Har",
-        "gloss": "Har (Hari), the divine Beloved in this stanza; Hari is “the remover” of evil and suffering",
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the indwelling divine Beloved who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3369,7 +3369,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Har",
-        "gloss": "Har (Hari), the divine Beloved in this stanza; Hari is “the remover” of evil and suffering",
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the indwelling divine Beloved who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3447,7 +3447,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Har",
-        "gloss": "Har (Hari), the divine Beloved in this stanza; Hari is “the remover” of evil and suffering",
+        "gloss": "Har (Hari), a name of Viṣṇu/Kṛṣṇa, the indwelling divine Beloved who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4161,7 +4161,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "the divine name Rāma, invoked as the one who knows the Beloved’s heart; Rāma means “pleasing” or “delightful”",
+        "gloss": "Rām, the delightful Lord who knows the Beloved’s heart; the name is also that of Rāma of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       }

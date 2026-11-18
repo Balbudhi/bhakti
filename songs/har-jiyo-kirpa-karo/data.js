@@ -91,7 +91,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Hari, the divine Lord who removes evil and suffering",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the beloved Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -271,7 +271,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Hari, the divine Lord who removes evil and suffering",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the beloved Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -703,7 +703,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "hari",
-        "gloss": "Hari, the divine Lord who removes evil and suffering",
+        "gloss": "Hari, a name of Viṣṇu/Kṛṣṇa, the beloved Lord who removes evil and suffering",
         "concept_key": "",
         "preserve_in_english": false
       },

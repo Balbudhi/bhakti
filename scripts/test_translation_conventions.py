@@ -16,6 +16,9 @@ import bhakti_pipeline as pipeline
 import bhakti_translation_policy as policy
 import bhakti_lexical_retrieval as lexical
 from test_sense_decisions import decisions_for
+from test_word_accountability_fixtures import accounted_provider
+from test_library_shared_semantic import review as review_fixture
+from bhakti_intake_run import bounded_intake_run
 
 ROOT=Path(__file__).resolve().parents[1]
 CANDIDATE=ROOT/'data/translation_conventions.json'
@@ -26,8 +29,7 @@ class Captured(BaseException):pass
 class NamingConventionRequirements(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.records=[r for r in json.loads(CANDIDATE.read_text())['occurrences'] if r['source_language']=='pa']
-        for record in cls.records:record['authority']='docs/RECENT_SONG_EDITORIAL_REVIEW.md: Gurbāṇī name consistency — 22 October 2026'
+        cls.records=json.loads(CANDIDATE.read_text())['occurrences']
         cls.readers={slug:contract.load_data(ROOT/'songs'/slug/'data.js')
                      for slug in {r['source_slug'] for r in cls.records}}
 
@@ -54,7 +56,7 @@ class NamingConventionRequirements(unittest.TestCase):
         return policy.resolve_naming_conventions(slug,self.targets if lines is None else lines,
             ['Punjabi'],full_source=self.lines if full is None else full)
 
-    def test_actual_inventory_binds_all30_distinct_source_tokens(self):
+    def test_current_inventory_binds_retained_names_to_exact_source_occurrences(self):
         counts=Counter();seen=set()
         for record in self.records:
             reader=self.readers[record['source_slug']]
@@ -62,10 +64,18 @@ class NamingConventionRequirements(unittest.TestCase):
             self.assertEqual(record['source_text'],row['source_text'])
             tokens=lexical.word_tokens(row)
             self.assertEqual([tokens[i] for i in record['word_indices']],record['roman_surfaces'])
+            languages=reader['SONG_META']['languages']
+            resolved=policy.resolve_naming_conventions(record['source_slug'],[row],languages,full_source=rows)
+            self.assertEqual(resolved['conflicts'],[])
+            self.assertIn(record,resolved['matches'])
+            self.assertNotIn(record['english_head'],{'Lord','God'})
+            self.assertNotIn('22 October 2026',record['authority'])
+            self.assertNotIn('traditionally',record['gloss_identity'])
             key=(record['source_slug'],record['line_id'],tuple(record['word_indices']))
             self.assertNotIn(key,seen);seen.add(key)
             counts[record['roman_surfaces'][0].casefold()]+=1
-        self.assertEqual(len(seen),30)
+        self.assertEqual(len(seen),42)
+        self.assertEqual(Counter(r['source_language'] for r in self.records),{'pa':41,'hi':1})
         self.assertEqual(counts['hari'],24)
         self.assertEqual(sum(v for k,v in counts.items() if k.startswith('gobind')),3)
         self.assertEqual(sum(v for k,v in counts.items() if k.startswith('murār')),3)
@@ -74,7 +84,7 @@ class NamingConventionRequirements(unittest.TestCase):
         result=self.resolve(lines=self.targets[:1],full=self.targets[:1])
         self.assertEqual(result['conflicts'],[])
         self.assertEqual(len(result['matches']),1)
-        self.assertEqual(result['matches'][0]['english_head'],'Lord')
+        self.assertEqual(result['matches'][0]['english_head'],'Hari')
         self.assertEqual(result['matches'][0]['word_indices'],[0])
 
     def test_same_surface_in_unassociated_poem_gets_no_convention(self):
@@ -115,7 +125,10 @@ class NamingConventionRequirements(unittest.TestCase):
     def assert_packet(self,prompt):
         packet=json.JSONDecoder().raw_decode(prompt.split('SCOPED NAMING CONVENTIONS:\n',1)[1])[0]
         self.assertEqual(len(packet['matches']),3)
-        self.assertTrue(all(r['english_head']=='Lord' for r in packet['matches']))
+        expected=sorted((r for r in self.records if r['source_slug']==SLUG and r['line_id'] in self.ids),
+                        key=lambda r:(r['line_id'],r['word_indices']))
+        self.assertEqual(packet['matches'],expected)
+        self.assertTrue(all(r['english_head']=='Hari' for r in packet['matches']))
         self.assertTrue(all('Viṣṇu/Kṛṣṇa' in r['gloss_identity'] for r in packet['matches']))
         self.assertEqual({r['line_id'] for r in packet['matches']},set(self.ids))
         self.assertNotIn('PRIOR ENGLISH SENTINEL',json.dumps(packet))
@@ -146,7 +159,9 @@ class NamingConventionRequirements(unittest.TestCase):
             'gloss_identity':'Kabīr, the poet named in this source line',
             'authority':'data/source_credits.json: LA_lHx9qroQ',
             'reason':'Verified historical personal-name spelling, not general Sanskrit final-a deletion.'}
-        self.registry.write_text(json.dumps({'version':1,'occurrences':self.records+[record]},ensure_ascii=False))
+        others=[r for r in self.records if not (r['source_slug']==record['source_slug']
+            and r['line_id']==record['line_id'] and r['word_indices']==record['word_indices'])]
+        self.registry.write_text(json.dumps({'version':1,'occurrences':others+[record]},ensure_ascii=False))
         result=policy.resolve_naming_conventions('rehna-nahi-isa-desa',[line],['Hindi'],full_source=[line])
         self.assertEqual(len(result['matches']),1)
         self.assertEqual(result['matches'][0]['english_head'],'Kabīr')
@@ -164,6 +179,7 @@ class NamingConventionRequirements(unittest.TestCase):
                 pipeline.complete_semantics(self.root/SLUG,self.audit,{'slug':SLUG},self.opts)
         self.assertEqual(path.read_bytes(),original)
 
+    @accounted_provider
     def valid_provider(self,model,key,prompt,**kwargs):
         kind=kwargs['schema_name'];self.provider_calls.append(kind)
         if kind=='bhakti_word_glosses':
@@ -179,10 +195,8 @@ class NamingConventionRequirements(unittest.TestCase):
             for row in rows:row.update(human_review_recommended=False,material_alternatives=[],choice_note='',uncertainty='',
                 fidelity={'agency_and_image_preserved':True,'all_meaning_accounted_for':True,'unsupported_additions':[],'notes':''})
             return {'packet':{'translations':rows}}
-        return {'packet':{'reviews':[{'id':r['id'],'passes':True,'human_review_recommended':False,
-            'agency_preserved':True,'imagery_preserved':True,'all_meaning_accounted_for':True,
-            'unsupported_additions':[],'material_choice':'','reason':'Offline control, not semantic quality evidence.','issues':[]}
-            for r in self.targets]}}
+        return {'packet':{'reviews':[dict(review_fixture(r['id']),
+            reason='Offline control, not semantic quality evidence.') for r in self.targets]}}
 
     def complete(self):
         return pipeline.complete_semantics(self.root/'private-case',self.audit,{'slug':SLUG,'languages':['Punjabi']},self.opts)
@@ -271,7 +285,10 @@ class NamingCliRequirements(unittest.TestCase):
         options=copy.copy(self.opts);del options.source_slug;del options.force
         options.reuse_glosses=False
         del options.semantic_full_source;del options.semantic_performance_order
-        prompt=self.capture(lambda:retranslate.run_slug(SLUG,options))
+        options.model=pipeline.gemini.model_routes.FLASH_MODEL
+        with patch.dict('os.environ',{'BHAKTI_GEMINI_PROVIDER':'openrouter'}), \
+                bounded_intake_run(self.root,[{'slug':SLUG,'source':str(self.root/'songs'/SLUG/'data.js')}],options):
+            prompt=self.capture(lambda:retranslate.run_slug(SLUG,options))
         self.assert_packet(prompt)
         self.assertFalse(hasattr(options,'source_slug'))
         self.assertEqual((self.root/'songs'/SLUG/'data.js').read_bytes(),self.original_bytes)

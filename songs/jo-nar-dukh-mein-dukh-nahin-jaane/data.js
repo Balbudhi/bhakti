@@ -1389,7 +1389,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gobind",
-        "gloss": "Gobind, the divine Lord who found and upheld the earth, keeper of cattle and known through sacred speech",
+        "gloss": "Gobind (Govinda), a name of Kṛṣṇa/Viṣṇu, used here for the divine Lord: finder and sustainer of the earth, keeper of cattle, known through sacred speech",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -13,7 +13,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICY_VERSION = 10
+POLICY_VERSION = 11
 NAME_MEANING_GUIDANCE = """When a name has an evidenced literal or traditional meaning, include that meaning
 in its clickable gloss as well as its contextual referent; identity alone is not
 a substitute for explaining a known meaning. The public popup gives a coherent,
@@ -27,6 +27,11 @@ by the source language and passage: a deity, a poet's signature and an ordinary
 homophone are distinct.
 Preserve useful existing meanings and relevant cultural identity. Include a broader
 devotional sense when the passage needs it, without listing unrelated synonyms.
+In Sikh, Sant, Sufi and other poetry, a broader divine referent complements rather
+than erases the name's relevant cultural identity. Preserve named forms and the
+relationships, images or stories activated by the passage. Do not infer an unrelated
+incarnation narrative from the name alone, or suppress an activated form because
+of the poem's religious classification. Give one coherent contextual explanation.
 """
 RULES = """BHAKTI CONTEXTUAL TRANSLATION POLICY
 Read every target and its neighboring lines before choosing meanings. Establish
@@ -48,9 +53,8 @@ divine title to Lord. Retain divine names and named forms such as Hari, Har, Rā
 English; explain their contextual referent and evidenced meaning in the popup.
 Do not replace a name by generic God/Lord or by a different name of the same
 deity. Distinguish divine Har/Hari from ordinary homophones meaning every,
-green, defeated or taken away; never apply a spelling-only substitution. A name
-used in Gurbāṇī or Sufi poetry does not by itself establish a specific incarnation
-narrative. Do not manufacture etymologies from a modern artist name.
+green, defeated or taken away; never apply a spelling-only substitution.
+Do not manufacture etymologies from a modern artist name.
 """ + NAME_MEANING_GUIDANCE + """
 
 Bhakti's default is English, including difficult philosophical words. First seek

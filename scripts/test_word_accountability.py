@@ -129,6 +129,7 @@ class WordAccountabilityTests(unittest.TestCase):
         return [schema for schema,_,_ in self.calls]
     def test_meaningful_name_rule_reaches_all_actual_semantic_stage_prompts(self):
         # This verifies prompt construction, not the provider's semantic judgment.
+        self.options.source_slug='unregistered-name-context-fixture'
         self.complete()
         self.assertEqual(self.sequence(),['bhakti_word_glosses','bhakti_literal_translation',
                                           'bhakti_translation_review'])
@@ -148,6 +149,15 @@ class WordAccountabilityTests(unittest.TestCase):
                 self.assertIn('devotional sense when the passage needs it',prompt)
                 self.assertIn('without listing unrelated synonyms',prompt)
                 self.assertIn('never apply a spelling-only substitution',prompt)
+                self.assertIn('a broader divine referent complements rather',prompt)
+                self.assertIn("than erases the name's relevant cultural identity",prompt)
+                self.assertIn('relationships, images or stories activated by the passage',prompt)
+                self.assertIn('Do not infer an unrelated',prompt)
+                self.assertIn('or suppress an activated form because',prompt)
+                self.assertIn("of the poem's religious classification",prompt)
+                # The shared contextual rule applies without fabricating a convention
+                # for an unregistered occurrence in these actual stage inputs.
+                self.assertNotIn('SCOPED NAMING CONVENTIONS:',prompt)
         review_prompt=self.calls[-1][1]
         self.assertIn('missing evidenced name meaning as gloss_sense at its exact source indices',review_prompt)
 
@@ -165,8 +175,8 @@ class WordAccountabilityTests(unittest.TestCase):
 
     def test_name_policy_version_invalidates_all_three_actual_stage_caches(self):
         # Keep source/provider fixtures fixed; only the real policy identity changes.
-        self.assertEqual(translation_policy.POLICY_VERSION,10)
-        with patch.object(translation_policy,'POLICY_VERSION',9):
+        self.assertEqual(translation_policy.POLICY_VERSION,11)
+        with patch.object(translation_policy,'POLICY_VERSION',10):
             self.complete();before=len(self.calls)
             self.complete();self.assertEqual(len(self.calls),before)
         current=self.complete()

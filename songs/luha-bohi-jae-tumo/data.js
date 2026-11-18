@@ -598,7 +598,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "snēha prēma rāga prīti saurāgaṭhu bēśī",
-    "english": "{0:Affection,}{1: love,}{2: rāga,}{3: fondness—}{5:more}{4: than passionate yearning}",
+    "english": "{0:Affection,}{1: love,}{2: passion,}{3: fondness—}{5:more}{4: than passionate yearning}",
     "words": [
       {
         "roman": "snēha",
@@ -614,9 +614,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāga",
-        "gloss": "devotional passion; attachment",
+        "gloss": "passion; loving attachment",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "prīti",

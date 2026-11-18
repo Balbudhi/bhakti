@@ -102,7 +102,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Viṣambhara jaṭājūṭa trinayana",
-    "english": "{0:All-sustaining Sustainer, }{1:crowned with matted hair, }{2:three-eyed One}",
+    "english": "{0:Sustainer of all, }{1:crowned with matted hair, }{2:three-eyed One}",
     "words": [
       {
         "roman": "Viṣambhara",
@@ -138,7 +138,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Viṣambhara",
-    "english": "{0:All-sustaining Sustainer}",
+    "english": "{0:Sustainer of all}",
     "words": [
       {
         "roman": "Viṣambhara",

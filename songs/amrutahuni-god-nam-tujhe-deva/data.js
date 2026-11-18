@@ -339,7 +339,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kā rūp dhyānāsī",
-    "english": "{0:Why}, {2:into meditation}, does {1:the form}—",
+    "english": "{2:In meditation, }{0:why }does {1:that form }",
     "words": [
       {
         "roman": "kā",
@@ -381,7 +381,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na ye tujhe",
-    "english": "{2:yours}—{0:not} {1:come}?",
+    "english": "{2:of yours }{0:not }{1:appear?}",
     "words": [
       {
         "roman": "na",

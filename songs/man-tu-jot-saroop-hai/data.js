@@ -99,7 +99,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man tūṃ jot sarūp hai āpaṇā mūl pachāṇ",
-    "english": "{0:O mind, }{1:you }{4:are }{3:of the nature of }{2:light; }{7:recognize }{5:your own }{6:source.}",
+    "english": "{0:O mind, }{1,3:your very being }{4:is }{2:divine light; }{7:recognize }{5:your own }{6:source.}",
     "words": [
       {
         "roman": "Man",
@@ -111,11 +111,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "jot",
-        "gloss": "light; divine radiance here"
+        "gloss": "divine light; the radiance of God"
       },
       {
         "roman": "sarūp",
-        "gloss": "one’s own form or essential nature; here, of the nature of divine light"
+        "gloss": "one’s own form or essential being; jot sarūp addresses the mind as the embodiment of divine light"
       },
       {
         "roman": "hai",
@@ -127,11 +127,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "mūl",
-        "gloss": "origin; source"
+        "gloss": "source; here, the divine origin of the mind"
       },
       {
         "roman": "pachāṇ",
-        "gloss": "recognize"
+        "gloss": "recognize; come to know your own source"
       }
     ],
     "nameTable": false,
@@ -187,7 +187,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
+        "gloss": "Har (Hari), the remover of evil and sin; a name of Viṣṇu/Kṛṣṇa, used here for the divine Lord who is with the mind"
       },
       {
         "roman": "jī",
@@ -269,7 +269,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man har jī terai nāl hai gurmatī raṅg māṇ",
-    "english": "{0:O mind, }{1,2:dear Har }{5:is }{3,4:with you; }{8:enjoy }{7:delight }{6:through the teacher’s instruction.}",
+    "english": "{0:O mind, }{1,2:dear Har }{5:is }{3,4:with you; }{6:through the Guru’s teaching, }{8:savour }{7:the joy.}",
     "words": [
       {
         "roman": "Man",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "har",
-        "gloss": "Har, the divine name for the Lord; Hari is the remover of evil and sin."
+        "gloss": "Har (Hari), the remover of evil and sin; a name of Viṣṇu/Kṛṣṇa, used here for the divine Lord who is with the mind"
       },
       {
         "roman": "jī",
@@ -297,15 +297,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "gurmatī",
-        "gloss": "through the spiritual teacher’s instruction"
+        "gloss": "through the Guru’s teaching; by the spiritual teacher’s guidance"
       },
       {
         "roman": "raṅg",
-        "gloss": "delight; joyful enjoyment"
+        "gloss": "joy; here, the spiritual joy of communion with the Lord"
       },
       {
         "roman": "māṇ",
-        "gloss": "enjoy"
+        "gloss": "enjoy; savour"
       }
     ],
     "nameTable": false,
@@ -377,15 +377,15 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mūl pachāṇahi tā sahu jāṇahi maraṇ jīvaṇ kī sojhī hoī",
-    "english": "{1:Recognize }{0:the source, }{2:and then }{4:you know }{3:the Husband; }{8:understanding }{7:of }{5:dying }and {6:living }{9:arises.}",
+    "english": "{1:When you recognize }{0:your source, }{2:then }{4:you know }{3:the divine Husband; }{8:understanding }{7:of }{5:dying }and {6:living }{9:arises.}",
     "words": [
       {
         "roman": "Mūl",
-        "gloss": "the source; origin"
+        "gloss": "source; here, the divine origin of the mind"
       },
       {
         "roman": "pachāṇahi",
-        "gloss": "you recognize"
+        "gloss": "when you recognize"
       },
       {
         "roman": "tā",
@@ -393,7 +393,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sahu",
-        "gloss": "the husband; the divine spouse"
+        "gloss": "the Husband; the divine Lord as the soul’s spouse"
       },
       {
         "roman": "jāṇahi",
@@ -401,11 +401,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "maraṇ",
-        "gloss": "dying"
+        "gloss": "dying; here, spiritual death"
       },
       {
         "roman": "jīvaṇ",
-        "gloss": "living"
+        "gloss": "living; here, spiritual life"
       },
       {
         "roman": "kī",
@@ -483,11 +483,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gur parasādī eko jāṇahi tā dūjā bhāu na hoī",
-    "english": "{0,1:Through the teacher’s grace }{3:you know }{2:the One alone; }{4:then }{6:attachment }to {5:another }{7,8:no longer remains.}",
+    "english": "{3:When you know }{2:the One alone }{0,1:through the Guru’s grace, }{4:then }{6:love }for {5:another }{7,8:is no more.}",
     "words": [
       {
         "roman": "Gur",
-        "gloss": "the spiritual teacher"
+        "gloss": "the Guru; the spiritual teacher"
       },
       {
         "roman": "parasādī",
@@ -499,7 +499,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāṇahi",
-        "gloss": "you know"
+        "gloss": "when you know"
       },
       {
         "roman": "tā",
@@ -507,7 +507,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dūjā",
-        "gloss": "another; the other"
+        "gloss": "another; here, anything apart from the Lord"
       },
       {
         "roman": "bhāu",
@@ -561,7 +561,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tā dūjā bhāu na hoī",
-    "english": "{0:Then }{2:attachment }to {1:another }{3,4:no longer remains.}",
+    "english": "{0:Then }{2:love }for {1:another }{3,4:is no more.}",
     "words": [
       {
         "roman": "Tā",
@@ -569,7 +569,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dūjā",
-        "gloss": "another; the other"
+        "gloss": "another; here, anything apart from the Lord"
       },
       {
         "roman": "bhāu",
@@ -673,7 +673,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "parvāṇ",
-        "gloss": "accepted"
+        "gloss": "accepted; here, accepted by the Lord"
       }
     ],
     "nameTable": false,
@@ -733,7 +733,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Iu kahai Nānak man tūṃ jot sarūp hai",
-    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4:you }{7:are }{6:of the nature of }{5:light.}",
+    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4,6:your very being }{7:is }{5:divine light.}",
     "words": [
       {
         "roman": "Iu",
@@ -757,11 +757,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "jot",
-        "gloss": "light; divine radiance here"
+        "gloss": "divine light; the radiance of God"
       },
       {
         "roman": "sarūp",
-        "gloss": "one’s own form or essential nature; here, of the nature of divine light"
+        "gloss": "one’s own form or essential being; jot sarūp addresses the mind as the embodiment of divine light"
       },
       {
         "roman": "hai",
@@ -843,7 +843,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Iu kahai Nānak man tūṃ jot sarūp hai āpaṇā mūl pachāṇ",
-    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4:you }{7:are }{6:of the nature of }{5:light; }{10:recognize }{8:your own }{9:source.}",
+    "english": "{0:Thus }{1:says }{2:Nānak: }{3:O mind, }{4,6:your very being }{7:is }{5:divine light; }{10:recognize }{8:your own }{9:source.}",
     "words": [
       {
         "roman": "Iu",
@@ -867,11 +867,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "jot",
-        "gloss": "light; divine radiance here"
+        "gloss": "divine light; the radiance of God"
       },
       {
         "roman": "sarūp",
-        "gloss": "one’s own form or essential nature; here, of the nature of divine light"
+        "gloss": "one’s own form or essential being; jot sarūp addresses the mind as the embodiment of divine light"
       },
       {
         "roman": "hai",
@@ -883,11 +883,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "mūl",
-        "gloss": "origin; source"
+        "gloss": "source; here, the divine origin of the mind"
       },
       {
         "roman": "pachāṇ",
-        "gloss": "recognize"
+        "gloss": "recognize; come to know your own source"
       }
     ],
     "nameTable": false,

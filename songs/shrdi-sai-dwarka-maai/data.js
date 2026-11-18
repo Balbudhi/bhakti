@@ -366,7 +366,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -438,7 +438,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -558,7 +558,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -702,7 +702,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -768,7 +768,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -786,7 +786,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -858,7 +858,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -894,7 +894,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -978,7 +978,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1170,7 +1170,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1218,7 +1218,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1386,7 +1386,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1446,7 +1446,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1494,7 +1494,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1542,7 +1542,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1614,7 +1614,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1674,7 +1674,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rām",
-        "gloss": "Rāma, the delightful divine king invoked together with Sāī",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā, invoked together with Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }

@@ -1000,7 +1000,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rāma",
-        "gloss": "Rāma, the divine Lord invoked here; Rāma means “pleasing” or “delightful”",
+        "gloss": "Rāma, the delightful Lord, invoked here as the divine beloved; the name is also that of Rāma of Ayodhyā",
         "concept_key": "",
         "preserve_in_english": false
       },

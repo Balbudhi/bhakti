@@ -4745,11 +4745,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yaha jani acaraja mānahu bhāī | kṛpā dṛṣṭi tāpara hoi jāī ||",
-    "english": "{1:Do not }{2,3:hold doubt }{0:in this, }{4:O brother; }{5,6:her gracious glance }{8,9:falls }{7:upon him.}",
+    "english": "{1:Do not }{3:find }{0:this }{2:astonishing, }{4:O brother; }{5,6:her gracious glance }{8,9:falls }{7:upon him.}",
     "words": [
       {
         "roman": "yaha",
-        "gloss": "in this",
+        "gloss": "this",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4761,13 +4761,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "acaraja",
-        "gloss": "wonder; astonishment; doubt",
+        "gloss": "wonder; astonishment",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mānahu",
-        "gloss": "entertain; feel; hold",
+        "gloss": "regard; consider; find",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -204,17 +204,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "alekha nirañjana nāmaku sumari",
-    "english": "{3:Remembering }{2:the name of }{0:the Formless, }{1:Stainless Divine,}",
+    "english": "{3:Remembering }{2:the name of }{0:Alekha }{1:Nirañjana,}",
     "words": [
       {
         "roman": "alekha",
-        "gloss": "the Unwritten / Formless Divine",
+        "gloss": "Alekha, the unwritten, formless Divine",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nirañjana",
-        "gloss": "the Stainless / Pure Divine",
+        "gloss": "Nirañjana, the stainless, pure Divine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -535,7 +535,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṃsāre bolā'ilu alekha yogā'i",
-    "english": "{0:in the world }{1:you became known as }{2,3:an ascetic of the Formless Divine,}",
+    "english": "{0:in the world }{1:you became known as }{3:an ascetic of }{2:Alekha,}",
     "words": [
       {
         "roman": "saṃsāre",
@@ -551,7 +551,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "alekha",
-        "gloss": "the Formless Divine",
+        "gloss": "Alekha, the unwritten, formless Divine",
         "concept_key": "",
         "preserve_in_english": false
       },

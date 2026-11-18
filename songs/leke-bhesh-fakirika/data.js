@@ -1238,13 +1238,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "Rāma",
-        "gloss": "Rāma, invoked in the greeting “Rāma Rāma”; the name means “pleasing” or “delightful”.",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā; his name forms the greeting “Rāma Rāma”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Rāma",
-        "gloss": "Rāma, invoked in the greeting “Rāma Rāma”; the name means “pleasing” or “delightful”.",
+        "gloss": "Rāma, the delightful Lord of Ayodhyā; his name forms the greeting “Rāma Rāma”",
         "concept_key": "",
         "preserve_in_english": false
       }

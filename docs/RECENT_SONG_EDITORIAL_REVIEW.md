@@ -84,6 +84,12 @@ Remaining source-sensitive issues include Sunta’s relative-clause/pickup readi
 
 ## Gurbāṇī name consistency — 22 October 2026
 
+Historical rule, superseded on 25 October by
+[Contextual names and meanings](GURBANI_REVIEW_TASKS.md#contextual-names-and-meanings--25-october-2026).
+The current policy retains evidenced names in English and explains their meaning,
+cultural identity and contextual referent. The Lord substitutions recorded below
+are not instructions for fresh translation or repair.
+
 Read all twelve recent Gurbāṇī readers and independently reviewed 54 guarded
 field changes across nine songs: 24 English lines and 30 word popups. The 24 Hari
 source occurrences across eight readers now use contextual Lord in English;

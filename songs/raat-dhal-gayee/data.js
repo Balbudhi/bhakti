@@ -660,7 +660,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahatē uṭhō rē, kahatē uṭhō rē bhakt kē vatsal",
-    "english": "{0:They say, “}{1:Arise, }{2:O!}{3: ”, they say, “}{4:Arise, }{5:O!} ”, O {8:tender lover }{7:of }{6:devotees}",
+    "english": "{0:They say, “}{2:Oh, }{1:arise!” }{3:They say, “}{4:Arise, }{5:O }{8:tender lover }{7:of }{6:devotees}!”",
     "words": [
       {
         "roman": "Kahatē",
@@ -1004,7 +1004,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahatē uṭhō rē, kahatē uṭhō rē dayā kē sāgar",
-    "english": "{0:They say, “}{1:Arise, }{2:O!}{3: ”, they say, “}{4:Arise, }{5:O!} ”, O {8:ocean }{7:of }{6:compassion}",
+    "english": "{0:They say, “}{2:Oh, }{1:arise!” }{3:They say, “}{4:Arise, }{5:O }{8:ocean }{7:of }{6:compassion}!”",
     "words": [
       {
         "roman": "Kahatē",
@@ -1331,7 +1331,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahatē uṭhō rē, kahatē uṭhō rē Sāīṁ anantā",
-    "english": "{0:They say, “}{1:Arise, }{2:O!}{3: ”, they say, “}{4:Arise, }{5:O!} ”, O {7:infinite }{6:Sai}",
+    "english": "{0:They say, “}{2:Oh, }{1:arise!” }{3:They say, “}{4:Arise, }{5:O }{7:infinite }{6:Sāī}!”",
     "words": [
       {
         "roman": "Kahatē",
@@ -1687,7 +1687,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahatē uṭhō rē, kahatē uṭhō rē patit pāvan",
-    "english": "{0:They say, “}{1:Arise, }{2:O!}{3: ”, they say, “}{4:Arise, }{5:O!} ”, O {7:purifier }{6:of the fallen}",
+    "english": "{0:They say, “}{2:Oh, }{1:arise!” }{3:They say, “}{4:Arise, }{5:O }{7:purifier }{6:of the fallen}!”",
     "words": [
       {
         "roman": "Kahatē",

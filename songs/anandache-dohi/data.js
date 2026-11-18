@@ -296,7 +296,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāya sāṁgū jhāle kāhīciyā bāhī",
-    "english": "{0:What }{1:shall I say? }{2:It has become }{4:beyond }{3:anything.}",
+    "english": "{0:What }{1:can I say? }{3,4:Something beyond all telling }{2:has happened.}",
     "words": [
       {
         "roman": "Kāya",
@@ -318,13 +318,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāhīciyā",
-        "gloss": "of something",
+        "gloss": "with bāhī: something beyond description; something extraordinary",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bāhī",
-        "gloss": "beyond; outside",
+        "gloss": "beyond; with kāhīciyā: beyond description",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -467,7 +467,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Garbhāce āvaḍī mātecā ḍohaḷā",
-    "english": "{1:Through the longing }{0:of the unborn child }{2:is the mother's }{3:pregnancy craving;}",
+    "english": "{2:The mother’s }{3:pregnancy craving }{1:arises from the longing }{0:of her unborn child;}",
     "words": [
       {
         "roman": "Garbhāce",
@@ -526,11 +526,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yethīṁcā jivhāḷā yetheṁ biṁbe",
-    "english": "{1:the deep affection }{0:of this inner reality }{3:is reflected }{2:here.}",
+    "english": "{1:the deep affection }{0:within }{3:is mirrored }{2:here.}",
     "words": [
       {
         "roman": "Yethīṁcā",
-        "gloss": "of this realm; of this inner reality",
+        "gloss": "of this place; from within here, referring back to the child in the womb",
         "concept_key": "",
         "preserve_in_english": false
       },

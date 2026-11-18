@@ -223,7 +223,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gaṛhichi mo saṁsāra",
-    "english": "{0:I have built }{1:my }{2:saṃsāra.}",
+    "english": "{0:I have built }{1:my }{2:world.}",
     "words": [
       {
         "roman": "Gaṛhichi",
@@ -239,9 +239,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsāra",
-        "gloss": "cycle of conditioned birth and death; worldly life",
+        "gloss": "world; the life I have built",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "First-person singular present perfect verb 'gaṛhichi' with 1sg genitive pronoun 'mo' modifying the direct object 'saṁsāra'."
@@ -458,7 +458,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jete rāga abhimāna",
-    "english": "{0:Whatever }{1:rāga }{2:and loving pique,}",
+    "english": "{0:Whatever }{1:anger }{2:and loving pique,}",
     "words": [
       {
         "roman": "Jete",
@@ -468,9 +468,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāga",
-        "gloss": "attachment or passion, according to context",
+        "gloss": "anger; displeasure",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "abhimāna",
