@@ -1619,7 +1619,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāī̃ bōlē vahī hō gayā hai dhanya āyā jō ananya śaraṇ mērī",
-    "english": "{0:Sai}{1: declares:}{2: that very person}{3,4,5: has become}{6: blessed}{8: who}{7: came}{11: into my}{9: undivided}{10: refuge.}",
+    "english": "{0:Sai}{1: declares:}{2: that very person}{3,4,5: has become}{6: blessed}{8: who}{7: came}{10: for refuge}{11: to me}{9: alone.}",
     "words": [
       {
         "roman": "sāī̃",
@@ -1677,7 +1677,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ananya",
-        "gloss": "undivided; exclusive; single-minded",
+        "gloss": "to no other; exclusively; single-mindedly",
         "concept_key": "",
         "preserve_in_english": false
       },

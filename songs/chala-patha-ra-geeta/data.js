@@ -467,7 +467,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jībanara sēhi bāṭa cālu cālu manarē anēka prakārara bhāba saṅgīta guñjarita huē.",
-    "english": "{3,4:While walking }{1:that }{2:path }{0:of life, }{6:diverse }{7:kinds of }{8:devotional }{9:music }{10,11:resound }{5:in the manas.}",
+    "english": "{3,4:While walking }{1:that }{2:path }{0:of life, }{6:diverse }{7:kinds of }{8:devotional }{9:music }{10,11:resound }{5:in the mind.}",
     "words": [
       {
         "roman": "Jībanara",
@@ -501,9 +501,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "manarē",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "in the mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "anēka",

@@ -1993,15 +1993,17 @@ window.SONG_LINES = {
   "l074": {
     "source": "धात्रि लक्ष्म्यादिशक्त्यष्टकैः संयुते",
     "roman": "dhātri lakṣmyādiśaktyaṣṭakaiḥ saṃyute",
-    "english": "{2:United} {0,1:with the eight powers such as Dhātrī and Lakṣmī},",
+    "english": "{0:O Mother,} {2:united} {1:with the eight powers beginning with Lakṣmī},",
     "words": [
       {
         "roman": "dhātri",
-        "gloss": "the creative power identified with Brahmī, named in the following octet"
+        "gloss": "O Mother (vocative)",
+        "preserve_in_english": false
       },
       {
         "roman": "lakṣmyādiśaktyaṣṭakaiḥ",
-        "gloss": "with the eight powers such as Lakṣmī, together with preceding Dhātri"
+        "gloss": "with the eight powers beginning with Lakṣmī",
+        "preserve_in_english": false
       },
       {
         "roman": "saṃyute",
@@ -2033,11 +2035,12 @@ window.SONG_LINES = {
   "l075": {
     "source": "मातृकामण्डलैर्मण्डिते",
     "roman": "mātṛkāmaṇḍalaiḥ maṇḍite",
-    "english": "{1:Adorned} {0:with circles of the sacred letters’ powers},",
+    "english": "{1:Adorned} {0:with circles of the Mother goddesses},",
     "words": [
       {
         "roman": "mātṛkāmaṇḍalaiḥ",
-        "gloss": "with circles of sacred letters personified as mother-powers"
+        "gloss": "with circles of the Mother goddesses (Mātṛkās)",
+        "preserve_in_english": false
       },
       {
         "roman": "maṇḍite",

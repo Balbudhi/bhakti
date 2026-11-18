@@ -44,7 +44,7 @@ window.SONG_LINES = {
   "l001": {
     "source": "ਮੈ ਬਨਜਾਰਨਿ ਰਾਮ ਕੀ",
     "roman": "Maiṃ banajāran Rām kī",
-    "english": "{0:I am }{2,3:Rām’s }{1:woman trader.}",
+    "english": "{0:I am }{2,3:Rām’s }{1:merchant.}",
     "words": [
       {
         "roman": "Maiṃ",
@@ -52,11 +52,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "banajāran",
-        "gloss": "a woman trader"
+        "gloss": "merchant (feminine); the speaker presents herself as a woman trading in the divine name"
       },
       {
         "roman": "Rām",
-        "gloss": "God, addressed as the beloved to whom the woman trader belongs"
+        "gloss": "Rām; God, the divine beloved addressed in this hymn"
       },
       {
         "roman": "kī",
@@ -204,7 +204,7 @@ window.SONG_LINES = {
   "l004": {
     "source": "ਕੰਦ ਮੂਲ ਚੁਣਿ ਖਾਉ",
     "roman": "kand mūl cuṇ khāuṃ",
-    "english": "{2:May I pick }{0:tubers }and {1:roots }and {3:eat.}",
+    "english": "May I {2:gather }and {3:eat }{0:tubers }and {1:roots.}",
     "words": [
       {
         "roman": "kand",
@@ -216,7 +216,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cuṇ",
-        "gloss": "picking"
+        "gloss": "gathering; picking"
       },
       {
         "roman": "khāuṃ",
@@ -524,7 +524,7 @@ window.SONG_LINES = {
   "l010": {
     "source": "ਦਰਸਨਿ ਰੂਪਿ ਅਪਾਰੁ",
     "roman": "darasan rūp apār",
-    "english": "{0:Beautiful to behold }{1:in form, }{2:boundless.}",
+    "english": "{2:Boundless, }{0,1:beautiful in form.}",
     "words": [
       {
         "roman": "darasan",
@@ -532,7 +532,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rūp",
-        "gloss": "in form"
+        "gloss": "having a beautiful form"
       },
       {
         "roman": "apār",
@@ -854,7 +854,7 @@ window.SONG_LINES = {
   "l017": {
     "source": "ਸਬਦੁ ਵਸੈ ਭਉ ਜਾਇ",
     "roman": "sabad vasai bhau jāi",
-    "english": "{0:The Guru’s word }{1:dwells within }and {3:away goes }{2:fear.}",
+    "english": "{0:The Guru’s word }{1:dwells within, }and {2:fear }{3:departs.}",
     "words": [
       {
         "roman": "sabad",
@@ -904,7 +904,7 @@ window.SONG_LINES = {
   "l018": {
     "source": "ਨਾਨਕ ਸਦਾ ਸੋਹਾਗਣੀ",
     "roman": "Nānak sadā sohāgaṇī",
-    "english": "{0:O Nānak, }{2:blessed brides are they }{1:forever}",
+    "english": "{0:O Nānak, }{1:forever }{2:blessed are the brides}",
     "words": [
       {
         "roman": "Nānak",
@@ -998,7 +998,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Rām",
-        "gloss": "God, addressed as the beloved to whom the woman trader belongs"
+        "gloss": "Rām; God, the divine beloved addressed in this hymn"
       },
       {
         "roman": "kī",

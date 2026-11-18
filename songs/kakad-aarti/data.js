@@ -7282,15 +7282,15 @@ window.SONG_LINES = {
     "source": "अष्ट दिन गुरुवार भक्त आते तेरे द्वार",
     "sourceLanguage": "hi",
     "roman": "Aṣṭa dina guruvāra bhakta ātē tērē dvāra",
-    "english": "{0:Every eighth }{1:day }{2:on Thursday, }{3:devotees }{4:come }{5:to your }{6:door,}",
+    "english": "{0,1:Every week, }{2:on Thursdays, }{3:devotees }{4:come }{5:to your }{6:door,}",
     "words": [
       {
         "roman": "Aṣṭa",
-        "gloss": "eight"
+        "gloss": "eight, counting the starting and returning Thursday inclusively"
       },
       {
         "roman": "dina",
-        "gloss": "day"
+        "gloss": "days; with eight, the inclusive expression for a week"
       },
       {
         "roman": "guruvāra",
@@ -7313,7 +7313,7 @@ window.SONG_LINES = {
         "gloss": "door / doorstep"
       }
     ],
-    "grammarNote": "'Aṣṭa dina guruvāra' indicates the recurring weekly Thursday; 'bhakta ātē' is habitual present plural.",
+    "grammarNote": "The eight-day expression counts both the starting and returning Thursday inclusively, hence weekly. The following verb is habitual plural.",
     "sourceWords": [
       {
         "text": "अष्ट",

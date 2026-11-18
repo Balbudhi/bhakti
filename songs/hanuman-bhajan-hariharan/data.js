@@ -3754,7 +3754,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kārana manuja danuja kula ghālaka",
-    "english": "{1:human }{0:by deliberate cause, }{4:the destroyer }{2:of the demon }{3:race:}",
+    "english": "{0,1:having taken human form for a purpose, }{4:the destroyer }{2:of the demon }{3:race:}",
     "words": [
       {
         "roman": "kārana",
@@ -4731,7 +4731,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maṁtra na yaha lachimana mana bhāvā",
-    "english": "{2:This }{0:counsel }{1:did not }{5:please }{3:Lakshmana’s }{4:manas,}",
+    "english": "{2:This }{0:counsel }{1:did not }{5:please }{3:Lakshmana’s }{4:mind,}",
     "words": [
       {
         "roman": "maṁtra",
@@ -4759,9 +4759,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bhāvā",
@@ -4962,7 +4962,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sokhia siṁdhu karia mana rosā",
-    "english": "{0:Let }{1:the ocean }{0:be dried up; }{4:let wrath }{2:be roused }{3:in the manas!}",
+    "english": "{0:Let }{1:the ocean }{0:be dried up; }{4:let wrath }{2:be roused }{3:in the mind!}",
     "words": [
       {
         "roman": "sokhia",
@@ -4984,9 +4984,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "rosā",
@@ -5033,7 +5033,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kādara mana kahuṁ eka adhārā",
-    "english": "{2:For a }{0:cowardly }{1:manas, }{3:it is the sole }{4:support:}",
+    "english": "{2:For a }{0:cowardly }{1:mind, }{3:it is the sole }{4:support:}",
     "words": [
       {
         "roman": "kādara",
@@ -5043,9 +5043,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kahuṁ",
@@ -5222,7 +5222,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisehīṁ karaba dharahu mana dhīrā",
-    "english": "{1:“We shall do }{0:just so; }{2:hold }{4:patience }{3:in your manas.”}",
+    "english": "{1:“We shall do }{0:just so; }{2:hold }{4:patience }{3:in your mind.”}",
     "words": [
       {
         "roman": "aisehīṁ",
@@ -5244,9 +5244,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "dhīrā",
@@ -10987,7 +10987,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāma teja bala budhi bipulāī",
-    "english": "{4:The boundless immensity }{0:of Rama’s }{1:fiery majesty, }{2:strength, }and {3:buddhi—}",
+    "english": "{4:The boundless immensity }{0:of Rama’s }{1:fiery majesty, }{2:strength, }and {3:intelligence—}",
     "words": [
       {
         "roman": "rāma",
@@ -11009,9 +11009,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "budhi",
-        "gloss": "intellect; faculty of discernment",
+        "gloss": "intelligence; understanding",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bipulāī",
@@ -11786,7 +11786,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ripu bala budhi thāha maiṁ pāī",
-    "english": "{4:I }{5:have fathomed }{3:the depth }{0:of the enemy’s }{1:might }and {2:buddhi!}",
+    "english": "{4:I }{5:have fathomed }{3:the depth }{0:of the enemy’s }{1:might }and {2:intelligence!}",
     "words": [
       {
         "roman": "ripu",
@@ -11802,9 +11802,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "budhi",
-        "gloss": "intellect; faculty of discernment",
+        "gloss": "intelligence; understanding",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "thāha",

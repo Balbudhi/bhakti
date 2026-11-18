@@ -1354,3 +1354,54 @@ received text review; this does not establish that every recording is transcribe
 correctly. These specific source questions remain open.
 The two affected semantic profiles were refreshed in four requests ($0.12961050);
 all audio profiles and the other 363 complete profile records are preserved.
+
+### Reopened editorial review — 17 November 2026
+
+The owner reported “I am Rām’s woman trader” in Mai Banjāran Rām Kī.
+The served reader matches the earlier accepted reader exactly: the initial
+independent review explicitly retained the wording, and the November library
+pass reused that decision. This is an editorial judgment failure, not a stale
+release. The earlier assurance that no broader rereading was needed was too
+strong; coverage and prior acceptance do not establish readable, faithful English.
+
+The full reported hymn was reviewed against [Ang 157 and Sahib Singh’s
+Punjabi commentary](https://www.gurugranthdarpan.net/0157.html). “I am Rām’s
+merchant” retains the trading metaphor; its popup explains the feminine speaker.
+A screen of the 365-reader / 8,859-definition snapshot produced independently
+challenged corrections in 32 readers: 73 English fields and matching popup or
+grammar repairs across 74 definitions. Examples include Thursday weekly worship
+misread as every eight days, Anasūyā and Atri misread as “triple son,” worshipper
+misread as priest, first-person grammar made imperative, and obstructive
+untranslated ordinary concepts. Supplied English remains locked.
+
+Viṣṇu Sahasranāma was read across its 154 definitions to select 18 supported
+name/phrase corrections, including a reversed moon-origin relation, lost negation,
+and commentary fragments placed in translation slots. These occupy 15 definitions;
+two adjacent definitions also receive punctuation and finite-predicate repairs to
+complete the sentence across dialogue-10–12. All 17 definitions are within the
+totals above. Sanskrit grammar and the commentary attributed to Śaṅkara were
+independently checked; this is not certification of every thousand-name gloss.
+The source/Roman disagreements at stanza-12 (asammita/sammita) and stanza-66
+(avidheya/vidheya) remain open, as do the earlier recording-dependent questions.
+
+Exact comparison against the frozen snapshot confirms only accepted English,
+popup and grammar-note changes across all 365 readers; source, Roman text,
+metadata, order and timing are preserved. The 32 semantic shuffle records were
+refreshed, preserving all 365 audio records and the 333 unaffected complete
+records. The cumulative task ledger records 68 text-profile requests costing
+$1.41991875, including two superseded Vishnu versions caught in final review.
+All 365 structural contracts and the profile assembly pass; Python compilation
+and whitespace checks pass. HTML changes only refresh data-file cache versions.
+Deployed-byte verification remains the final release step. No new listening
+certificate is implied. The private review records retain rejected alternatives,
+source witnesses and exact accepted field changes.
+
+The in-app Browser is unavailable in this session (browser inventory is empty),
+so desktop/mobile visual and seek interaction checks cannot be claimed. Structural
+contract checks, exact preservation comparisons and deployed-byte checks remain
+required. The isolated checkout has no listener media: the audio-quality audit
+reports missing local files, and the trim audit finds no local receipts to check.
+Those results do not certify media quality or intro trims. This text-only release
+preserves all existing audio profile records and media references exactly.
+The full-library screen and independent review of selected fixes must not again
+be described as proof that every translation or transcription is correct.

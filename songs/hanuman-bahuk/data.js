@@ -27074,11 +27074,11 @@ window.SONG_LINES = {
     "source": "सीतापती साहेब सहाय हनुमान नित हित उपदेस को महेस मानो गुर कै",
     "sourceLanguage": "bra",
     "roman": "sītāpatī sāheba sahāya hanumāna nita hita upadesa ko mahesa māno gura kai",
-    "english": "{0,1:Sītā’s guardian-husband is Master, }{2,3,4:Hanumān is constant helper, }{5,6,7:and for wholesome instruction, }{8,9:regard the great protector }{10,11:as Guru.}",
+    "english": "{0,1:Sītā’s husband is my Master, }{2,3,4:Hanumān is my constant helper, }{5,6,7:and for wholesome instruction, }{8,9:I regard Maheśa }{10,11:as my spiritual teacher.}",
     "words": [
       {
         "roman": "sītāpatī",
-        "gloss": "Sītā’s guardian-husband; Rāma",
+        "gloss": "Sītā’s husband; Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -27126,13 +27126,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mahesa",
-        "gloss": "the Great Lord Shiva [Mahesha]",
+        "gloss": "Maheśa, the Great Lord; a name of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "māno",
-        "gloss": "regard",
+        "gloss": "I regard or acknowledge (the first-person contextual reading here)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -27149,7 +27149,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "māno is a 2nd person/hortative imperative. gura kai is postpositional (as a Guru).",
+    "grammarNote": "Here māno is read as the speaker’s acknowledgment of Maheśa as his teacher, continuing the first-person prayer. Some commentaries instead take it as “as though”; it is not rendered as an instruction to the listener. Gura kai means as a spiritual teacher.",
     "sourceWords": [
       {
         "text": "सीतापती",

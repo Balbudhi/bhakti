@@ -5233,7 +5233,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrutisārā anusayātrikumārā bābā yeī bā",
-    "english": "{0:O essence of scripture, }{1:O triple son of Anasuya, }{2:Baba, }{3:come, }{4:O dear one!}",
+    "english": "{0:O essence of scripture, }{1:O son of Anasūyā and Atri, }{2:Baba, }{3:come, }{4:O dear one!}",
     "words": [
       {
         "roman": "śrutisārā",
@@ -5243,7 +5243,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "anusayātrikumārā",
-        "gloss": "O triad-son of Anasuya",
+        "gloss": "O son of Anasūyā and Atri",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5266,7 +5266,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "śrutisārā and anusayātrikumārā are compound vocative singulars (śruti + sāra, anusayā + trikumāra); yeī is a second-person imperative."
+    "grammarNote": "Vocative compounds: śruti + sāra (essence of revelation), Anasūyā + Atri + kumāra (son of Anasūyā and Atri). The adjacent ā + a contracts to ā; yeī is the imperative come."
   },
   "line-072": {
     "source": "काशी स्नान जप प्रतिदिवशी",

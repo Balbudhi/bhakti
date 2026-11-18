@@ -634,7 +634,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaṅkara kē mana kāma samāē",
-    "english": "{3:kāma }{4:entered }{2:the mind }{0,1:of Shankara,}",
+    "english": "{3:Desire }{4:entered }{2:the mind }{0,1:of Shankara,}",
     "words": [
       {
         "roman": "śaṅkara",
@@ -658,7 +658,7 @@ window.SONG_LINES = {
         "roman": "kāma",
         "gloss": "desire; sensual longing",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "samāē",

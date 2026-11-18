@@ -492,7 +492,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ākar ke saṁsār mẽ maine isko dāg lagāyā",
-    "english": "{0,1:Having come }{3:into }{2:saṃsāra, }{4:I }{6,7:stained }{5:it.}",
+    "english": "{0,1:Having come }{3:into }{2:the world, }{4:I }{6,7:stained }{5:it.}",
     "words": [
       {
         "roman": "Ākar",
@@ -508,9 +508,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsār",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "world; worldly life",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mẽ",

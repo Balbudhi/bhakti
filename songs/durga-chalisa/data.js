@@ -3623,7 +3623,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jōgī sura muni kahata pukārī | yōga na hō bina śakti tumhārī ||\nśaṅkara ācāraja tapa kīnō | kāma aru krōdha jīti saba līnō ||\nniśidina dhyāna dharō śaṅkara kō | kāhū kāla nahiṁ sumirō tumakō ||\nśakti rūpa kō marama na pāyō | śakti gaī taba mana pachatāyō ||",
-    "english": "{0:Yogis, }{1:gods, }{2:and sages }{3,4:proclaim aloud: }{5:yoga }{6,7:cannot happen }{8:without }{10:your }{9:power. }{11,12:Shankaracharya }{14:performed }{13:austerities }{19,20:and completely }{18:conquered }{15:kāma }{16:and }{17:anger. }{21:Day and night }{22,23:he meditated }{24,25:upon Shankara, }{26,28:and at no }{27:time }{29:remembered }{30:you. }{35:He did not }{36:grasp }{34:the mystery }{32,33:of the form }{31:of Shakti; }{37:when power }{38:departed, }{39:then }{41:he repented }{40:in his mind.}",
+    "english": "{0:Yogis, }{1:gods, }{2:and sages }{3,4:proclaim aloud: }{5:yoga }{6,7:cannot happen }{8:without }{10:your }{9:power. }{11,12:Shankaracharya }{14:performed }{13:austerities }{19,20:and completely }{18:conquered }{15:lust }{16:and }{17:anger. }{21:Day and night }{22,23:he meditated }{24,25:upon Shankara, }{26,28:and at no }{27:time }{29:remembered }{30:you. }{35:He did not }{36:grasp }{34:the mystery }{32,33:of the form }{31:of Shakti; }{37:when power }{38:departed, }{39:then }{41:he repented }{40:in his mind.}",
     "words": [
       {
         "roman": "jōgī",
@@ -3717,9 +3717,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāma",
-        "gloss": "desire; sensual longing",
+        "gloss": "lust; sensual desire",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "aru",
@@ -4108,7 +4108,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaraṇāgata huī kīrti bakhānī | jaya jaya jaya jagadamba bhavānī ||\nbhaī prasanna ādi jagadambā | daī śakti nahiṁ kīna vilambā ||\nmōkō mātu kaṣṭa ati ghērō | tuma bina kauna harai duḥkha mērō ||\nāśā tṛṣṇā nipaṭa satāvai | mōha madādika saba vinaśāvai ||",
-    "english": "{0,1:Taking refuge, }{2,3:he praised your glory: }{4:“Victory, }{5:victory, }{6:victory to }{7:Jagadambā }{8:Bhavānī!” }{11:The primordial }{12:Mother of the universe }{9:was }{10:pleased }{13:and granted }{14:power }{15:without }{16:making }{17:delay. }{21:Severe }{20:affliction }{22:has surrounded }{18:me, }{19:O Mother; }{24:without }{23:you, }{25:who }{26:can dispel }{28:my }{27:sorrow? }{29:Expectation }{30:and tṛṣṇā }{32:torment me }{31:utterly; }{36:please destroy }{35:all }{33:delusion, }{34:pride, and the rest!}",
+    "english": "{0,1:Taking refuge, }{2,3:he praised your glory: }{4:“Victory, }{5:victory, }{6:victory to }{7:Jagadambā }{8:Bhavānī!” }{11:The primordial }{12:Mother of the universe }{9:was }{10:pleased }{13:and granted }{14:power }{15:without }{16:making }{17:delay. }{21:Severe }{20:affliction }{22:has surrounded }{18:me, }{19:O Mother; }{24:without }{23:you, }{25:who }{26:can dispel }{28:my }{27:sorrow? }{29:Expectation }{30:and craving }{32:torment me }{31:utterly; }{36:please destroy }{35:all }{33:delusion, }{34:pride, and the rest!}",
     "words": [
       {
         "roman": "śaraṇāgata",
@@ -4292,9 +4292,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "tṛṣṇā",
-        "gloss": "thirst; craving",
+        "gloss": "craving; thirst for more",
         "concept_key": "trsna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "nipaṭa",

@@ -231,7 +231,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kṛṣṇa sumira ke karma kare nā, yūm̐ hī jaga se jāegā",
-    "english": "{0,1,2:Remembering Kṛṣṇa, }{4,5:if you do not perform }{3:karma, }{10:you will depart }{8,9:from the world }{6,7:in vain.}",
+    "english": "{0,1,2:Remembering Kṛṣṇa, }{4,5:if you do not }{3:act, }{10:you will depart }{8,9:from the world }{6,7:in vain.}",
     "words": [
       {
         "roman": "Kṛṣṇa",
@@ -253,9 +253,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karma",
-        "gloss": "action and its consequences",
+        "gloss": "action; doing what is to be done",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kare",
@@ -808,7 +808,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ye saṁsāra karma kī khetī, jo boe vo hī pāe",
-    "english": "{0:This }{1:saṃsāra }{4:is a field }{3:of }{2:karma; }{5:whatever one }{6:sows, }{7,8:that alone }{9:one reaps.}",
+    "english": "{0:This }{1:world }{4:is a field }{3:of }{2:deeds; }{5:whatever one }{6:sows, }{7,8:that alone }{9:one reaps.}",
     "words": [
       {
         "roman": "Ye",
@@ -818,15 +818,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "world; worldly life",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "karma",
-        "gloss": "action and its consequences",
+        "gloss": "deeds; actions whose results one reaps",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kī",
@@ -1610,13 +1610,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mana kī kahī pe calane vāle, phira pīche pachatāegā",
-    "english": "{4,5:O you who walk }{3:according to }{1,2:the bidding of }{0:the manas, }{8:you will regret it }{6,7:afterwards.}",
+    "english": "{4,5:O you who walk }{3:according to }{1,2:the bidding of }{0:the mind, }{8:you will regret it }{6,7:afterwards.}",
     "words": [
       {
         "roman": "Mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kī",

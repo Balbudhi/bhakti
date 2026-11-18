@@ -282,7 +282,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā bēgi āo daras dikhāo",
-    "english": "{0:Fulfill, }{1:Mother, }{3:come }{2:swiftly, }{5:show }{4:vision}",
+    "english": "{0:Fulfill, }{1:Mother, }{3:come }{2:swiftly, }{4,5:let me see you}",
     "words": [
       {
         "roman": "Pūrō",
@@ -310,13 +310,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "daras",
-        "gloss": "vision / sight",
+        "gloss": "sight; here, the sight of the Mother being addressed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dikhāo",
-        "gloss": "show / reveal",
+        "gloss": "show; reveal; in daras dikhāo, let me see you",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -406,7 +406,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā bēgi āo daras dikhāo",
-    "english": "{0:Mother, }{2:come }{1:swiftly, }{4:show }{3:vision}",
+    "english": "{0:Mother, }{2:come }{1:swiftly, }{3,4:let me see you}",
     "words": [
       {
         "roman": "Maiyā",
@@ -428,13 +428,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "daras",
-        "gloss": "vision / sight",
+        "gloss": "sight; here, the sight of the Mother being addressed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dikhāo",
-        "gloss": "show / reveal",
+        "gloss": "show; reveal; in daras dikhāo, let me see you",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1106,7 +1106,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā pūrō maiyā bēgi āo daras dikhāo",
-    "english": "{0:Fulfill, }{1:Mother, }{2:fulfill, }{3:Mother, }{5:come }{4:swiftly, }{7:show }{6:vision}",
+    "english": "{0:Fulfill, }{1:Mother, }{2:fulfill, }{3:Mother, }{5:come }{4:swiftly, }{6,7:let me see you}",
     "words": [
       {
         "roman": "Pūrō",
@@ -1146,13 +1146,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "daras",
-        "gloss": "vision / sight",
+        "gloss": "sight; here, the sight of the Mother being addressed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dikhāo",
-        "gloss": "show / reveal",
+        "gloss": "show; reveal; in daras dikhāo, let me see you",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1360,7 +1360,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā bēgi āo daras",
-    "english": "{0:Fulfill, }{1:Mother, }{3:come }{2:swiftly, }{4:vision}",
+    "english": "{0:Fulfill, }{1:Mother, }{3:come }{2:swiftly, }{4:a sight of you}",
     "words": [
       {
         "roman": "Pūrō",
@@ -1388,7 +1388,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "daras",
-        "gloss": "vision / sight",
+        "gloss": "sight; here, the sight of the Mother being addressed",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1425,7 +1425,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bēgi āo daras dikhāo",
-    "english": "{1:Come }{0:swiftly, }{3:show }{2:vision}",
+    "english": "{1:Come }{0:swiftly, }{2,3:let me see you}",
     "words": [
       {
         "roman": "Bēgi",
@@ -1441,13 +1441,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "daras",
-        "gloss": "vision / sight",
+        "gloss": "sight; here, the sight of the Mother being addressed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dikhāo",
-        "gloss": "show / reveal",
+        "gloss": "show; reveal; in daras dikhāo, let me see you",
         "concept_key": "",
         "preserve_in_english": false
       }

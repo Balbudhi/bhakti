@@ -727,7 +727,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pañcama pāhāce caṛhi mo pañca indriẏa / prabhuṅku smari muṁ mane mane kali jaẏa",
-    "english": "{2:Climbing}{0: onto the fifth}{1: step,}{7: remembering}{6: the Lord,}{8: I}{11,12: conquered}{3: my}{4: five}{5: indriyas}{9,10: inwardly in my mind.}",
+    "english": "{2:Climbing}{0: onto the fifth}{1: step,}{7: remembering}{6: the Lord,}{8: I}{11,12: conquered}{3: my}{4: five}{5: senses}{9,10: inwardly in my mind.}",
     "words": [
       {
         "roman": "pañcama",
@@ -761,9 +761,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "indriẏa",
-        "gloss": "sense faculty",
+        "gloss": "sense faculty; one of the five senses",
         "concept_key": "indriya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "prabhuṅku",
@@ -894,7 +894,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pañcama pāhāce caṛhi mo pañca indriẏa / prabhuṅku smari muṁ mane mane kali jaẏa",
-    "english": "{2:Climbing}{0: onto the fifth}{1: step,}{7: remembering}{6: the Lord,}{8: I}{11,12: conquered}{3: my}{4: five}{5: indriyas}{9,10: inwardly in my mind.}",
+    "english": "{2:Climbing}{0: onto the fifth}{1: step,}{7: remembering}{6: the Lord,}{8: I}{11,12: conquered}{3: my}{4: five}{5: senses}{9,10: inwardly in my mind.}",
     "words": [
       {
         "roman": "pañcama",
@@ -928,9 +928,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "indriẏa",
-        "gloss": "sense faculty",
+        "gloss": "sense faculty; one of the five senses",
         "concept_key": "indriya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "prabhuṅku",

@@ -58,7 +58,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śrīkṣetra bihārī jagatanātha",
-    "english": "{0,1:Sporter in Sriksetra, }{2:Lord of the universe,}",
+    "english": "{0,1:You who delight in Śrīkṣetra, }{2:Lord of the universe,}",
     "words": [
       {
         "roman": "Śrīkṣetra",
@@ -68,7 +68,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bihārī",
-        "gloss": "one who wanders / sports",
+        "gloss": "one who delights; takes pleasure in a place",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -311,7 +311,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhrātā bhaginī sāthe kuñjabihārī",
-    "english": "{3:Sporter in the groves }{2:along with }{0:brother }{1:and sister,}",
+    "english": "{3:You who delight in the groves }{2:along with }{0:brother }{1:and sister,}",
     "words": [
       {
         "roman": "Bhrātā",
@@ -333,7 +333,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kuñjabihārī",
-        "gloss": "one who sports in the groves",
+        "gloss": "one who delights in the groves",
         "concept_key": "",
         "preserve_in_english": false
       }

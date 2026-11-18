@@ -412,17 +412,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāta pāta kā bhēda miṭā'ō",
-    "english": "{4:Erase }{3:the distinction }{2:of }{0:community }{1:and lineage;}",
+    "english": "{4:Erase }{0,1,2:caste }{3:distinctions;}",
     "words": [
       {
         "roman": "Jāta",
-        "gloss": "community; birth or occupational group",
+        "gloss": "caste; hereditary social group",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pāta",
-        "gloss": "lineage; commensal rank",
+        "gloss": "rank or subdivision in the caste order; completes the idiom jat-pat",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -827,13 +827,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kām krodh mad matsar tyāgo, jhūṭhā sab saṁsār",
-    "english": "{4:Renounce }{0:kāma, }{1:anger, }{2:pride, }{3:and envy, }{5:false is }{6:all }{7:saṃsāra}",
+    "english": "{4:Renounce }{0:lust, }{1:anger, }{2:pride, }{3:and envy; }{6:the whole }{7:world }{5:is false.}",
     "words": [
       {
         "roman": "Kām",
-        "gloss": "desire; sensual longing",
+        "gloss": "lust; sensual desire",
         "concept_key": "kama",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "krodh",
@@ -873,9 +873,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsār",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "world; worldly existence",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Direct plural imperative `tyāgo`; enumerates four of the classical `ariṣaḍvarga` (internal vices); the second hemistich is an inverted nominal sentence (`jhūṭhā [hai] sab saṁsār`)."

@@ -1683,11 +1683,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jhuke bhagvān haiṁ",
-    "english": "{1:God} {0,2:is bowed}",
+    "english": "{1:God} {0,2:has bowed down.}",
     "words": [
       {
         "roman": "jhuke",
-        "gloss": "bowed; bent in reverence",
+        "gloss": "has bowed; is bent in reverence",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -510,7 +510,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jō dhyāvē phala pāvē, duḥkha vinasē mana kā",
-    "english": "{0:Whoever }{1:meditates }{3:reaps }{2:the fruit; }{4:the sorrow }{6,7:of the manas }{5:vanishes.}",
+    "english": "{0:Whoever }{1:meditates }{3:reaps }{2:the fruit; }{4:the sorrow }{6,7:of the mind }{5:vanishes.}",
     "words": [
       {
         "roman": "jō",
@@ -550,9 +550,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kā",
@@ -599,7 +599,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svāmī duḥkha vinasē mana kā",
-    "english": "{0:O Master, }{1:the sorrow }{3,4:of the manas }{2:vanishes.}",
+    "english": "{0:O Master, }{1:the sorrow }{3,4:of the mind }{2:vanishes.}",
     "words": [
       {
         "roman": "svāmī",
@@ -621,9 +621,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kā",
@@ -2210,7 +2210,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tana mana dhana jō kucha hai, saba hī hai tērā",
-    "english": "{0:Body, }{1:manas, }{2:wealth, }{3:whatever }{4:there }{5:is, }{6:everything }{7:indeed }{8:is }{9:Yours;}",
+    "english": "{0:Body, }{1:mind, }{2:wealth, }{3:whatever }{4:there }{5:is, }{6:everything }{7:indeed }{8:is }{9:Yours;}",
     "words": [
       {
         "roman": "tana",
@@ -2220,9 +2220,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "dhana",

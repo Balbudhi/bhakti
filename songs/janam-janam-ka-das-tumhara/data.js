@@ -121,7 +121,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "is sansār mēṁ hī nahīṁ, tīnōṁ lōkōṁ mēṁ bhagvān śiv kī pūjā hōtī hai.",
-    "english": "{3,4:Not only }{2:in }{0:this }{1:saṃsāra, }{7:in }{5:all three }{6:worlds }{10,11:worship of }{8:Lord }{9:Shiva }{12,13:takes place.}",
+    "english": "{3,4:Not only }{2:in }{0:this }{1:world, }{7:in }{5:all three }{6:worlds }{10,11:worship of }{8:Lord }{9:Shiva }{12,13:takes place.}",
     "words": [
       {
         "roman": "is",
@@ -131,9 +131,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "sansār",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "world; earthly world",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mēṁ",
@@ -1032,7 +1032,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śiv śiv śiv śiv gūñjat man mōrā",
-    "english": "{0:'Shiva, }{1:Shiva, }{2:Shiva, }{3:Shiva' }{4:resounds in }{6:my }{5:manas.}",
+    "english": "{0:'Shiva, }{1:Shiva, }{2:Shiva, }{3:Shiva' }{4:resounds in }{6:my }{5:mind.}",
     "words": [
       {
         "roman": "śiv",
@@ -1066,9 +1066,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "man",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mōrā",

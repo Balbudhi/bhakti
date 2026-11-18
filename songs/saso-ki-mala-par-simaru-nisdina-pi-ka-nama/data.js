@@ -2633,7 +2633,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pī ke nām kā hūṅ maiṅ pujārī",
-    "english": "{4,5:I am }{6:the priest }{0,1:of the beloved's }{2,3:name,}",
+    "english": "{4,5:I am }{6:a worshipper }{0,1:of the beloved’s }{2,3:name,}",
     "words": [
       {
         "roman": "Pī",
@@ -2673,7 +2673,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pujārī",
-        "gloss": "priest; worshipper; devotee",
+        "gloss": "worshipper; devotee (here); also priest in a temple context",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3683,7 +3683,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pī kī dhun meṅ sudh-budh khoī",
-    "english": "{5:lost }{4:my senses }{2,3:in the tune }{0,1:of the Beloved}",
+    "english": "{5:lost }{4:my senses, }{2,3:absorbed in }{0,1:the Beloved}",
     "words": [
       {
         "roman": "Pī",
@@ -3699,7 +3699,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhun",
-        "gloss": "absorbing melody; inner tune",
+        "gloss": "absorption; engrossment; here, an all-consuming fixation on the Beloved; elsewhere, a musical tune",
         "concept_key": "",
         "preserve_in_english": false
       },

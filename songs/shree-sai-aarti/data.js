@@ -1292,17 +1292,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṣṭa dina guruvāra, bhakta āte tere dvāra",
-    "english": "{0:Every eighth }{1:day }{2:on Thursday, }{3:devotees }{4:come }{5:to your }{6:door,}",
+    "english": "{0,1:Every week, }{2:on Thursdays, }{3:devotees }{4:come }{5:to your }{6:door,}",
     "words": [
       {
         "roman": "aṣṭa",
-        "gloss": "eight; every eighth",
+        "gloss": "eight, counting the starting and returning Thursday inclusively",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dina",
-        "gloss": "day",
+        "gloss": "days; with eight, the inclusive expression for a week",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1337,7 +1337,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "aṣṭa dina refers idiomatically to the weekly octave cycle; āte is habitual present plural agreeing with bhakta."
+    "grammarNote": "The eight-day expression counts both the starting and returning Thursday inclusively, hence weekly. The following verb is habitual plural."
   },
   "line-verse-5b": {
     "source": "प्रभु पद दर्शन को, भव भय निवारणार्थ, भय निवारणार्थ",

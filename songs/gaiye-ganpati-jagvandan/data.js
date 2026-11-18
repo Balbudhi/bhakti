@@ -422,7 +422,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vidyā bāridhi buddhi vidhātā",
-    "english": "{1:Ocean of }{0:knowledge}, {3:dispenser of }{2:buddhi}",
+    "english": "{1:Ocean of }{0:knowledge}, {3:dispenser of }{2:intellect}",
     "words": [
       {
         "roman": "Vidyā",
@@ -440,7 +440,7 @@ window.SONG_LINES = {
         "roman": "buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "vidhātā",

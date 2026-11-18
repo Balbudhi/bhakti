@@ -1385,7 +1385,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṅkara suvana kesarīnandana । teja pratāpa mahā jaga bandana ॥",
-    "english": "{1:Incarnation}{0: of Shankara}{2: and delight of Kesari,}{5: of immense}{3: splendour}{4: and glory,}{7: revered}{6: by the whole world.}",
+    "english": "{1:Son}{0: of Shankara}{2: and delight of Kesari,}{5: of immense}{3: splendour}{4: and glory,}{7: revered}{6: by the whole world.}",
     "words": [
       {
         "roman": "saṅkara",
@@ -1395,7 +1395,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "suvana",
-        "gloss": "son; incarnation",
+        "gloss": "son; offspring",
         "concept_key": "",
         "preserve_in_english": false
       },

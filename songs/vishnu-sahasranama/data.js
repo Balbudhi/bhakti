@@ -1531,7 +1531,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jagatprabhuṃ devadevamanantaṃ puruṣottamam |\nstuvan nāmasahasreṇa puruṣaḥ satatotthitaḥ ||",
-    "english": "{4:Praising} {0:the Lord of the world}, {1:the God of gods}, {2:the endless}, {3:the highest Person}, {5:with a thousand names}, {6:a person} is {7:constantly arisen}.",
+    "english": "{6:A person}, {7:ever diligent}, {4:praising} {0:the Lord of the world}, {1:the God of gods}, {2:the endless}, {3:the highest Person}, {5:with a thousand names},",
     "words": [
       {
         "roman": "jagatprabhuṃ",
@@ -1600,8 +1600,8 @@ window.SONG_LINES = {
         "roman": "satatotthitaḥ",
         "citationRoman": "satata-utthitaḥ",
         "deva": "सततौत्थितः",
-        "gloss": "constantly arisen",
-        "analysis": "",
+        "gloss": "ever diligent; continually engaged",
+        "analysis": "satata — always; utthita — risen, here actively engaged, from ud + sthā (ष्ठा गतिनिवृत्तौ) with -ta · nominative singular masculine, qualifying puruṣaḥ; satata + utthita → satatotthita",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1676,7 +1676,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tameva cārcayannityaṃ  bhaktyā puruṣamavyayam |\ndhyāyan stuvan namasyaṃśca yajamānastameva ca ||",
-    "english": "{2:And} {3:worshipping} {0:him} {1:alone} {4:always} {5:with devotion}, {8:meditating on}, {9:praising}, {10:bowing to}, {11:and} {12:sacrificing to} {6:the} {7:imperishable Person}, {13:him} {14:alone} {15:indeed}.",
+    "english": "{2:and} {3:worshipping} {0:him} {1:alone} {4:always} {5:with devotion}, {8:meditating on}, {9:praising}, {10:bowing to}, {11:and} {12:sacrificing to} {6:the} {7:imperishable Person}, {13:him} {14:alone} {15:indeed},",
     "words": [
       {
         "roman": "tam",
@@ -1875,7 +1875,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anādinidhanaṃ viṣṇuṃ sarvalokamaheśvaram |\nlokādhyakṣaṃ stuvannityaṃ sarvaduḥkhātigo bhavet ||",
-    "english": "{4:Praising} {1:Viṣṇu}, {0:without beginning or end}, {2:the great Lord of all worlds}, {3:the overseer of the worlds}, {5:always}, one {7:would become} {6:gone beyond every sorrow}.",
+    "english": "{4:praising} {1:Viṣṇu}, {0:without beginning or end}, {2:the great Lord of all worlds}, {3:the overseer of the worlds}, {5:always}, {7:would be} {6:beyond every sorrow}.",
     "words": [
       {
         "roman": "anādinidhanaṃ",
@@ -3394,14 +3394,14 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amṛtāṃśūdbhavo bījaṃ śaktirdevakīnandanaḥ |\ntrisāmā hṛdayaṃ tasya śāntyarthe viniyojyate ||",
-    "english": "{0:He whose source is the nectar-rayed moon} is {1:the seed}; {3:the son of Devakī} is {2:the power}; {4:he of the three Sāmans} is {6:its} {5:heart}; it {8:is assigned} {7:for peace}.",
+    "english": "{0:The source of the nectar-rayed moon} is {1:the seed}; {3:the son of Devakī} is {2:the power}; {4:he of the three Sāmans} is {6:its} {5:heart}; it {8:is assigned} {7:for peace}.",
     "words": [
       {
         "roman": "amṛtāṃśūdbhavo",
         "citationRoman": "amṛta-aṃśu-udbhavaḥ",
         "deva": "अमृतअंशुउद्भवः",
-        "gloss": "he whose source is the nectar-rayed moon",
-        "analysis": "",
+        "gloss": "the source from which the nectar-rayed moon arises",
+        "analysis": "amṛtāṃśu — nectar-rayed moon; udbhava — origin; compound: one from whom the moon originates · nominative singular masculine; final -aḥ becomes -o before the following voiced consonant",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3886,14 +3886,14 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amṛtāṃśūdbhavo bhānuriti bījam ||",
-    "english": "‘{0:He whose source is the nectar-rayed moon}, {1:radiance},’ {2:thus}, is {3:the seed}.",
+    "english": "‘{0:The source of the nectar-rayed moon}, {1:radiance},’ {2:thus}, is {3:the seed}.",
     "words": [
       {
         "roman": "amṛtāṃśūdbhavo",
         "citationRoman": "amṛta-aṃśu-udbhavaḥ",
         "deva": "अमृतअंशुउद्भवः",
-        "gloss": "he whose source is the nectar-rayed moon",
-        "analysis": "",
+        "gloss": "the source from which the nectar-rayed moon arises",
+        "analysis": "amṛtāṃśu — nectar-rayed moon; udbhava — origin; compound: one from whom the moon originates · nominative singular masculine; final -aḥ becomes -o before the following voiced consonant",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6737,7 +6737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sarvaḥ śarvaḥ śivaḥ sthāṇur bhūtādir nidhiravyayaḥ sambhavo bhāvano bhartā prabhavaḥ prabhur īśvaraḥ",
-    "english": "{0:He who is the all} · {1:The auspicious one who bestows auspiciousness} · {2:The One who is Eternally Pure} · {3:The firm and immovable one} · {4:The very cause for the five great elements: Space, Air, Fire, Water and Earth} · {5:The Imperishable treasure} · {6:One who freely takes various incarnations for the good of the world} · {7:The giver of everything to His devotees} · {8:The One who 'Governs' the entire living world} · {9:The One who is the very womb of all the Five Great Elements} · {10:The Almighty Lord} · {11:The independent lord whose power needs no aid}",
+    "english": "{0:He who is the all} · {1:The destroyer} · {2:The One who is Eternally Pure} · {3:The firm and immovable one} · {4:The very cause for the five great elements: Space, Air, Fire, Water and Earth} · {5:The Imperishable treasure} · {6:One who freely takes various incarnations for the good of the world} · {7:The giver of everything to His devotees} · {8:The One who 'Governs' the entire living world} · {9:The One who is the very womb of all the Five Great Elements} · {10:The Almighty Lord} · {11:The independent lord whose power needs no aid}",
     "words": [
       {
         "roman": "sarvaḥ",
@@ -6752,8 +6752,8 @@ window.SONG_LINES = {
         "roman": "śarvaḥ",
         "citationRoman": "śarvaḥ",
         "deva": "शर्वः",
-        "gloss": "The auspicious one who bestows auspiciousness",
-        "analysis": "śarva — the auspicious one · nominative singular masculine",
+        "gloss": "destroyer; one who brings beings to dissolution",
+        "analysis": "śarva — destroyer · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7683,7 +7683,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sureśaḥ śaraṇaṃ śarma viśvaretāḥ prajābhavaḥ ahaḥ saṃvatsaro vyālaḥ pratyayaḥ sarvadarśanaḥ",
-    "english": "{0:The lord of the gods} · {1:The Refuge for all who are suffering from the thraldom of imperfection in life} · {2:One who is Himself the Infinite Bliss} · {3:The seed from which the universe arises} · {4:The source from whom all living creatures arise} · {5:Ahan has got two meanings: the 24-hour-day or the 12-hour day-time} · {6:The Lord of Time, from whom the concept of time arises} · {7:One who is unapproachable} · {8:One whose very nature is Knowledge} · {9:The all-seeing one}",
+    "english": "{0:The lord of the gods} · {1:The Refuge for all who are suffering from the thraldom of imperfection in life} · {2:One who is Himself the Infinite Bliss} · {3:The seed from which the universe arises} · {4:The source from whom all living creatures arise} · {5:Daylight} · {6:The Lord of Time, from whom the concept of time arises} · {7:One who is unapproachable} · {8:One whose very nature is Knowledge} · {9:The all-seeing one}",
     "words": [
       {
         "roman": "sureśaḥ",
@@ -7734,8 +7734,8 @@ window.SONG_LINES = {
         "roman": "ahaḥ",
         "citationRoman": "ahaḥ",
         "deva": "अहः",
-        "gloss": "Ahan has got two meanings: the 24-hour-day or the 12-hour day-time",
-        "analysis": "aha — Ahan has got two meanings: the 24-hour-day or the 12-hour day-time · nominative singular masculine",
+        "gloss": "day; daylight, interpreted here as radiance",
+        "analysis": "ahan — day · nominative singular neuter; ahaḥ is its surface form before saṃvatsaraḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9450,7 +9450,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amṛtyuḥ sarvadṛk siṃhaḥ sandhātā sandhimān sthiraḥ ajo durmarṣaṇaḥ śāstā viśrutātmā surārihā",
-    "english": "{0:One who knows no decay} · {1:The seer and knower of everything} · {2:One who destroys} · {3:The Co-relator, the Regulator, the One who co-relates the actions and their fruits} · {4:The structural engineering of individuality is the mightiest of phenomenon available in nature} · {5:Firm, consistent} · {6:Unborn} · {7:One who cannot be attacked and vanquished} · {8:One who rules over the universe} · {9:The self celebrated throughout the Vedas} · {10:The destroyer of the enemies of the gods}",
+    "english": "{0:One who knows no decay} · {1:The seer and knower of everything} · {2:One who destroys} · {3:The Co-relator, the Regulator, the One who co-relates the actions and their fruits} · {4:The one who experiences the fruits of action} · {5:Firm, consistent} · {6:Unborn} · {7:One who cannot be attacked and vanquished} · {8:One who rules over the universe} · {9:The self celebrated throughout the Vedas} · {10:The destroyer of the enemies of the gods}",
     "words": [
       {
         "roman": "amṛtyuḥ",
@@ -9492,8 +9492,8 @@ window.SONG_LINES = {
         "roman": "sandhimān",
         "citationRoman": "sandhimān",
         "deva": "सन्धिमान्",
-        "gloss": "The structural engineering of individuality is the mightiest of phenomenon available in nature",
-        "analysis": "sandhimān — The structural engineering of individuality is the mightiest of phenomenon available in nature · nominative singular masculine",
+        "gloss": "one connected with the fruits of action as their experiencer",
+        "analysis": "sandhi — connection; sandhimat — possessing connection, with possessive -mat · nominative singular masculine sandhimān",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10484,7 +10484,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "subhujo durdharo vāgmī mahendro vasudo vasuḥ naikarūpo bṛhadrūpaḥ śipiviṣṭaḥ prakāśanaḥ",
-    "english": "{0:He who has graceful arms} · {1:One who cannot be comprehended even by Great yogīs, who spend long periods of time in meditation} · {2:One who is eloquent of His Glory} · {3:One who is Lord of even Indra, the Lord of gods} · {4:The giver of wealth} · {5:The one manifest as wealth, the veil, and the nourishing sun} · {6:The one of infinite forms} · {7:Vast, of Infinite dimensions;Pervading all} · {8:Sipi is the name given to the \"Sacrificial cow\"}· {9:The One who illuminates; expressing Itself as the All-pervading Consciousness in every equipment}",
+    "english": "{0:He who has graceful arms} · {1:One who cannot be comprehended even by Great yogīs, who spend long periods of time in meditation} · {2:One who is eloquent of His Glory} · {3:One who is Lord of even Indra, the Lord of gods} · {4:The giver of wealth} · {5:The one manifest as wealth, the veil, and the nourishing sun} · {6:The one of infinite forms} · {7:Vast, of Infinite dimensions;Pervading all} · {8:The one dwelling in sacrificial animals}· {9:The One who illuminates; expressing Itself as the All-pervading Consciousness in every equipment}",
     "words": [
       {
         "roman": "subhujo",
@@ -10562,8 +10562,8 @@ window.SONG_LINES = {
         "roman": "śipiviṣṭaḥ",
         "citationRoman": "śipiviṣṭaḥ",
         "deva": "शिपिविष्टः",
-        "gloss": "Sipi is the name given to the \"Sacrificial cow\"",
-        "analysis": "śipi — ray; bright streak · viṣṭa — entered into; pervading · √viś — enter · nominative singular masculine",
+        "gloss": "one who has entered sacrificial animals; alternatively, one who pervades rays of light",
+        "analysis": "śipi — sacrificial animal; alternatively, ray of light; viṣṭa — entered, from viś (विशँ प्रवेशने), with -ta · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11301,7 +11301,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "acyutaḥ prathitaḥ prāṇaḥ prāṇado vāsavānujaḥ apāṃnidhir adhiṣṭhānam apramattaḥ pratiṣṭhitaḥ",
-    "english": "{0:One who has not got any modifications (Chyutam) -- such as birth, growth, decay, disease, death etc} · {1:One who exists pervading all; spreading Himself everywhere} · {2:The life manifest in every living being} · {3:One who gives strength (prāṇa) to everywhere} · {4:The Brother of Indra} · {5:The ocean, treasury of the waters} · {6:The Substratum for the entire universe} · {7:The unerring one who is never careless} · {8:Everything in the world depends upon something else to serve as its cause}",
+    "english": "{0:One who has not got any modifications (Chyutam) -- such as birth, growth, decay, disease, death etc} · {1:The renowned one} · {2:The life manifest in every living being} · {3:The giver of vital strength} · {4:The Brother of Indra} · {5:The ocean, treasury of the waters} · {6:The Substratum for the entire universe} · {7:The unerring one who is never careless} · {8:Established in his own greatness}",
     "words": [
       {
         "roman": "acyutaḥ",
@@ -11316,8 +11316,8 @@ window.SONG_LINES = {
         "roman": "prathitaḥ",
         "citationRoman": "prathitaḥ",
         "deva": "प्रथितः",
-        "gloss": "One who exists pervading all; spreading Himself everywhere",
-        "analysis": "prathita — famed; spread abroad · nominative singular masculine",
+        "gloss": "renowned; famed for creating and sustaining the world",
+        "analysis": "prath (प्रथँ प्रख्याने) with -ta → prathita, renowned · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11334,7 +11334,7 @@ window.SONG_LINES = {
         "roman": "prāṇado",
         "citationRoman": "prāṇadaḥ",
         "deva": "प्राणदः",
-        "gloss": "One who gives strength (prāṇa) to everywhere",
+        "gloss": "giver of vital strength; alternatively, one who takes it away",
         "analysis": "prāṇa — life-breath; vital force · da — giver · √dā — give · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -11379,8 +11379,8 @@ window.SONG_LINES = {
         "roman": "pratiṣṭhitaḥ",
         "citationRoman": "pratiṣṭhitaḥ",
         "deva": "प्रतिष्ठितः",
-        "gloss": "Everything in the world depends upon something else to serve as its cause",
-        "analysis": "pratiṣṭhita — Everything in the world depends upon something else to serve as its cause · nominative singular masculine",
+        "gloss": "firmly established; here, established in his own greatness",
+        "analysis": "prati + sthā (ष्ठा गतिनिवृत्तौ) + -ta → pratiṣṭhita, established · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -11443,7 +11443,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "skandaḥ skandadharo dhuryo varado vāyuvāhanaḥ vāsudevo bṛhadbhānur ādidevaḥ purandaraḥ",
-    "english": "{0:The Lord whose glory is expressed through Skanda, commander of the righteous host} · {1:One who upholds the withering righteousness} · {2:One who carries the Lord} · {3:One who blesses all true devotees and fulfils their request for boons} · {4:The One who controls, regulates and moves the great winds} · {5:One who is at once both Vāsu and Deva} · {6:The vast light whose rays illumine sun and moon} · {7:The first of the gods} · {8:The destroyer of the cities}",
+    "english": "{0:The Lord whose glory is expressed through Skanda, commander of the righteous host} · {1:One who upholds the withering righteousness} · {2:The bearer of the burden} · {3:One who blesses all true devotees and fulfils their request for boons} · {4:The One who controls, regulates and moves the great winds} · {5:One who is at once both Vāsu and Deva} · {6:The vast light whose rays illumine sun and moon} · {7:The first of the gods} · {8:The destroyer of the cities}",
     "words": [
       {
         "roman": "skandaḥ",
@@ -11467,8 +11467,8 @@ window.SONG_LINES = {
         "roman": "dhuryo",
         "citationRoman": "dhuryaḥ",
         "deva": "धुर्यः",
-        "gloss": "One who carries the Lord",
-        "analysis": "dhurya — yoke-bearer; leader · nominative singular masculine",
+        "gloss": "yoke-bearer; bearer of the burden of sustaining beings",
+        "analysis": "dhur — yoke; dhur + -ya → dhurya, one who bears the yoke · nominative singular masculine; dhuryo is the sandhied form before varadaḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12505,7 +12505,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāmo virāmo virajo mārgo neyo nayo 'nayaḥ vīraḥ śaktimatāṃ śreṣṭho dharmo dharmaviduttamaḥ",
-    "english": "{0:That which revels in every form or that in which all yogins in their meditation revel} · {1:The abode of perfect rest} · {2:Passionless} · {3:The path} · {4:The Guide\", the \"Conductor} · {5:One who leads} · {6:If the ego is led by the Lord (as Naya) to the Highest, then when once the Supreme State is reached, It has none to lead or guide It} · {7:The Valiant} · {8:The best among those who have power} · {9:Dharma itself, the law that upholds} · {10:One who is the Highest among men of realisation}",
+    "english": "{0:That which revels in every form or that in which all yogins in their meditation revel} · {1:The abode of perfect rest} · {2:Passionless} · {3:The path} · {4:The one to be led} · {5:One who leads} · {6:The one with no leader above him} · {7:The Valiant} · {8:The best among those who have power} · {9:Dharma itself, the law that upholds} · {10:One who is the Highest among men of realisation}",
     "words": [
       {
         "roman": "rāmo",
@@ -12547,8 +12547,8 @@ window.SONG_LINES = {
         "roman": "neyo",
         "citationRoman": "neyaḥ",
         "deva": "नेयः",
-        "gloss": "The Guide\", the \"Conductor",
-        "analysis": "√nī — lead; guide · yat — gerundive/derivative suffix · nominative singular masculine",
+        "gloss": "one to be led; in the commentary, the individual self led by right knowledge to recognition as the supreme Self",
+        "analysis": "nī (णीञ् प्रापणे) + -ya, gerundive with passive force: neya, to be led · nominative singular masculine; neyo is the sandhied surface form",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12565,8 +12565,8 @@ window.SONG_LINES = {
         "roman": "'nayaḥ",
         "citationRoman": "anayaḥ",
         "deva": "अनयः",
-        "gloss": "If the ego is led by the Lord (as Naya) to the Highest, then when once the Supreme State is reached, It has none to lead or guide It",
-        "analysis": "anaya — without a leader above him · nominative singular masculine",
+        "gloss": "one who has no leader or guide above him",
+        "analysis": "a-naya — without a leader above him · nominative singular masculine; initial a is elided after the preceding o",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14900,7 +14900,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vedhāḥ svāṅgo 'jitaḥ kṛṣṇo dṛḍhaḥ saṅkarṣaṇo'cyutaḥ varuṇo vāruṇo vṛkṣaḥ puṣkarākṣo mahāmanāḥ",
-    "english": "{0:One who is the Creator of the whole universe, the Supreme who is expressing Himself for the apparent function of creating the world of plurality} · {1:The beautiful one whose limbs are perfectly proportioned} · {2:One who is vanquished by none—unconquered—and therefore, the unconquerable in any of His incarnations} · {3:One who incarnated in the Yādava tribe as the son of Vasudeva and Devakī} · {4:The Firm} · {5:The one who draws all into himself yet never falls} · {6:The evening sun at the western horizon} · {7:The son of Varuṇa} · {8:In the Upaniṣads the world emerging out of the Supreme Brahman is described metaphorically as a 'Tree'}· {9:One who has eyes (Aksha) as beautiful as the lotus flowers (Pushkara); the descriptive epithet: 'Lotus-eyed.'}· {10:“One who has a great mind.\"}",
+    "english": "{0:One who is the Creator of the whole universe, the Supreme who is expressing Himself for the apparent function of creating the world of plurality} · {1:The beautiful one whose limbs are perfectly proportioned} · {2:One who is vanquished by none—unconquered—and therefore, the unconquerable in any of His incarnations} · {3:One who incarnated in the Yādava tribe as the son of Vasudeva and Devakī} · {4:The Firm} · {5:The one who draws all into himself yet never falls} · {6:The evening sun at the western horizon} · {7:The son of Varuṇa} · {8:The tree, standing firm}· {9:One who has eyes (Aksha) as beautiful as the lotus flowers (Pushkara); the descriptive epithet: 'Lotus-eyed.'}· {10:“One who has a great mind.\"}",
     "words": [
       {
         "roman": "vedhāḥ",
@@ -14978,7 +14978,7 @@ window.SONG_LINES = {
         "roman": "vṛkṣaḥ",
         "citationRoman": "vṛkṣaḥ",
         "deva": "वृक्षः",
-        "gloss": "In the Upaniṣads the world emerging out of the Supreme Brahman is described metaphorically as a 'Tree'",
+        "gloss": "tree; compared here to one standing immovable",
         "analysis": "vṛkṣa — tree · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
@@ -15653,7 +15653,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anivartī nivṛttātmā saṅkṣeptā kṣemakṛc chivaḥ śrīvatsavakṣāḥ śrīvāsaḥ śrīpatiḥ śrīmatāṃ varaḥ",
-    "english": "{0:One who never knows retreat} · {1:One who is fully restrained from all sense indulgences} · {2:The One who absorbs unto Himself the entire universe of multiplicity during the dissolution—the \"Involver.\"}· {3:\"The doer of Good\"; One who protects and guides the devotees} · {4:Lord Nārāyaṇa is adored here as śivaḥ and, at the same time, all Vaishnavites repeat Viṣṇusahasranāma} · {5:One who has the mark} · {6:The Abode of Śrī; the dwelling place of Mother Lakṣmī} · {7:The Lord of Goddess Lakṣmī} · {8:The best among those who have glory-in-life, (Śrī), is Nārāyaṇa}",
+    "english": "{0:One who never knows retreat} · {1:One who is fully restrained from all sense indulgences} · {2:The One who absorbs unto Himself the entire universe of multiplicity during the dissolution—the \"Involver.\"}· {3:\"The doer of Good\"; One who protects and guides the devotees} · {4:The auspicious purifier} · {5:One who has the mark} · {6:The Abode of Śrī; the dwelling place of Mother Lakṣmī} · {7:The Lord of Goddess Lakṣmī} · {8:The best among those who have glory-in-life, (Śrī), is Nārāyaṇa}",
     "words": [
       {
         "roman": "anivartī",
@@ -15695,8 +15695,8 @@ window.SONG_LINES = {
         "roman": "chivaḥ",
         "citationRoman": "śivaḥ",
         "deva": "शिवः",
-        "gloss": "Lord Nārāyaṇa is adored here as śivaḥ and, at the same time, all Vaishnavites repeat Viṣṇusahasranāma",
-        "analysis": "śiva — Lord Nārāyaṇa is adored here as śivaḥ and, at the same time, all Vaishnavites repeat Viṣṇusahasranāma · nominative singular masculine",
+        "gloss": "auspicious one; one who purifies through remembrance of his name",
+        "analysis": "śiva — auspicious; here, the purifier · nominative singular masculine; chivaḥ is the sandhied surface after kṣemakṛt",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17819,7 +17819,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "suvarṇavarṇo hemāṅgo varāṅgaś candanāṅgadī vīrahā viṣamaḥ śūnyo ghṛtāśīr acalaś calaḥ",
-    "english": "{0:The golden-coloured one} · {1:One who has limbs of Gold} · {2:With beautiful limbs} · {3:This is made up of two terms, \"Joy-giving\" (Chandana) and \"armlets\" (Angada)} · {4:\"The destroyer of the valiant heroes\"—in order to uphold righteousness, Lord Hari takes His Incarnations and destroys the intrepid and daring Asuras in battle} · {5:Unequalled} · {6:The Void} · {7:One Who has no need for any good wishes from any one} · {8:The non-moving} · {9:Moving}",
+    "english": "{0:The golden-coloured one} · {1:One who has limbs of Gold} · {2:With beautiful limbs} · {3:Adorned with delightful armlets} · {4:\"The destroyer of the valiant heroes\"—in order to uphold righteousness, Lord Hari takes His Incarnations and destroys the intrepid and daring Asuras in battle} · {5:Unequalled} · {6:The Void} · {7:One Who has no need for any good wishes from any one} · {8:The non-moving} · {9:Moving}",
     "words": [
       {
         "roman": "suvarṇavarṇo",
@@ -17852,8 +17852,8 @@ window.SONG_LINES = {
         "roman": "candanāṅgadī",
         "citationRoman": "candanāṅgadī",
         "deva": "चन्दनाङ्गदी",
-        "gloss": "This is made up of two terms, \"Joy-giving\" (Chandana) and \"armlets\" (Angada)",
-        "analysis": "candanāṅgadī — wearing sandal and armlets · nominative singular masculine",
+        "gloss": "wearing delightful armlets",
+        "analysis": "candana — delight-giving; aṅgada — armlet; aṅgadin — wearing armlets, with possessive -in · nominative singular masculine candanāṅgadī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18377,7 +18377,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "samāvarto 'nivṛttātmā durjayo duratikramaḥ durlabho durgamo durgo durāvāso durārihā",
-    "english": "{0:“The efficient turner” -of the wheel-of-life} · {1:“One whose mind is turned away from all sense indulgences.\"}· {2:\"The Invincible\"—One who cannot be conquered by anyone else} · {3:One Who is difficult to be disobeyed} · {4:One Who is obtained with consummate effort} · {5:One Who is realised with great difficulty} · {6:Not easy to storm into} · {7:“Not easy to lodge”— within the heart steadily for even great seekers who are diligent in their consistent pursuit} · {8:One Who is the slayer of the devilish Asuras}",
+    "english": "{0:“The efficient turner” -of the wheel-of-life} · {1:The one whose presence is never withdrawn}· {2:\"The Invincible\"—One who cannot be conquered by anyone else} · {3:One Who is difficult to be disobeyed} · {4:One Who is obtained with consummate effort} · {5:One Who is realised with great difficulty} · {6:Not easy to storm into} · {7:“Not easy to lodge”— within the heart steadily for even great seekers who are diligent in their consistent pursuit} · {8:One Who is the slayer of the devilish Asuras}",
     "words": [
       {
         "roman": "samāvarto",
@@ -18392,8 +18392,8 @@ window.SONG_LINES = {
         "roman": "'nivṛttātmā",
         "citationRoman": "anivṛttātmā",
         "deva": "अनिवृत्तात्मा",
-        "gloss": "“One whose mind is turned away from all sense indulgences.\"",
-        "analysis": "a-nivṛtta — not turned back; not withdrawn · ātman — self · nominative singular masculine",
+        "gloss": "one whose self does not withdraw; present everywhere",
+        "analysis": "a-nivṛtta — not withdrawn, from ni + vṛt (वृतुँ वर्तने) with -ta and negation; ātman — self · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20102,7 +20102,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ananto hutabhug bhoktā sukhado naikajo 'grajaḥ anirviṇṇaḥ sadāmarṣī lokādhiṣṭhānam adbhutaḥ",
-    "english": "{0:Endless} · {1:One Who accepts the things devotedly poured as oblation into the sacred Fire} · {2:The One Who enjoys the world of objects-emotions-thoughts} · {3:One Who gives the experience of Eternal Bliss to the devotees at their final spiritual destination-mokṣa} · {4:Na—'not'; Eka—'once'; Ja -born.'}· {5:The One Who was First- Born} · {6:\"One Who feels no disappointments\"—Who has no chance to feel disappointment as He is ever the totally fulfilled} · {7:\"One Who ever forgives the trespasses of all His devotees\"—One Who is infinitely merciful and kind} · {8:The one sole substratum for the entire Universe of things and beings} · {9:Wonder is He}",
+    "english": "{0:Endless} · {1:One Who accepts the things devotedly poured as oblation into the sacred Fire} · {2:The One Who enjoys the world of objects-emotions-thoughts} · {3:One Who gives the experience of Eternal Bliss to the devotees at their final spiritual destination-mokṣa} · {4:The one born many times}· {5:The One Who was First- Born} · {6:\"One Who feels no disappointments\"—Who has no chance to feel disappointment as He is ever the totally fulfilled} · {7:\"One Who ever forgives the trespasses of all His devotees\"—One Who is infinitely merciful and kind} · {8:The one sole substratum for the entire Universe of things and beings} · {9:Wonder is He}",
     "words": [
       {
         "roman": "ananto",
@@ -20144,8 +20144,8 @@ window.SONG_LINES = {
         "roman": "naikajo",
         "citationRoman": "naikajaḥ",
         "deva": "नैकजः",
-        "gloss": "Na—'not'; Eka—'once'; Ja -born.'",
-        "analysis": "naikaja — Na—'not'; Eka—'once'; Ja -born.' · nominative singular masculine",
+        "gloss": "not born only once; born repeatedly",
+        "analysis": "na + eka + ja — not born only once; -ja denotes birth from jan (जनीँ प्रादुर्भावे) · nominative singular masculine; na + eka → naika",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -1809,7 +1809,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ādhi vyādhi bhava tāpoṁ se jaḍa jīva taravāo",
-    "english": "{0:From mental distress, }{1:bodily illness, }{3:and the burning afflictions }{2:of worldly existence, }{4,7:ferry }{5:these inert }{6:jīvas across!}",
+    "english": "{4:From }{0:mental distress, }{1:bodily illness, }{3:and the burning afflictions }{2:of worldly existence, }{7:ferry }{5:these spiritually ignorant }{6:souls }{7:across!}",
     "words": [
       {
         "roman": "Ādhi",
@@ -1843,15 +1843,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "jaḍa",
-        "gloss": "inert; spiritually dull; ignorant",
+        "gloss": "spiritually ignorant; lacking understanding",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jīva",
-        "gloss": "individual living being; embodied self",
+        "gloss": "living beings; embodied souls",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "taravāo",

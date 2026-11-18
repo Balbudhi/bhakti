@@ -113,7 +113,7 @@ window.SONG_LINES = {
     "source": "अस्थिर बुद्धि, मन चंचल चित",
     "sourceLanguage": "hi",
     "roman": "Asthira buddhi, mana cañcala cita",
-    "english": "{0:Unsteady }{1:buddhi, }{3:restless }{2:mind }and {4:consciousness}",
+    "english": "{0:Unsteady }{1:intellect, }{3:restless }{2:mind }and {4:consciousness}",
     "words": [
       {
         "roman": "Asthira",
@@ -125,7 +125,7 @@ window.SONG_LINES = {
         "roman": "buddhi,",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mana",

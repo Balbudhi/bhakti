@@ -1843,17 +1843,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āṭhāṁ divasāṁ guruvārī bhakta karitī vārī",
-    "english": "{0,1:Every eight days }{2:on Thursday, }{3:devotees }{4:make }{5:their pilgrimage,}",
+    "english": "{0,1:Every week, }{2:on Thursdays, }{3:devotees }{4:make }{5:their pilgrimage,}",
     "words": [
       {
         "roman": "Āṭhāṁ",
-        "gloss": "eight",
+        "gloss": "eight, counting the starting and returning Thursday inclusively",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "divasāṁ",
-        "gloss": "of days; every eight days",
+        "gloss": "days; with eight, the inclusive expression for a week",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1882,7 +1882,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Āṭhāṁ divasāṁ is an oblique plural measure phrase meaning 'weekly / every eight days'. Guruvārī is locative singular. Karitī is 3rd person plural present."
+    "grammarNote": "The eight-day expression counts both the starting and returning Thursday inclusively, hence weekly. The following verb is habitual plural."
   },
   "line-021": {
     "source": "प्रभुपद पहावया भवभय निवारी, भय निवारी",

@@ -1827,7 +1827,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ tuma mere kṛṣṇa kanhaiyā kaṇṭhanahāra mere",
-    "english": "{0:Sai,}{1: you are}{2: my}{3: Krishna}{4: Kanhaiya,}{6: my}{5: throat-necklace,}",
+    "english": "{0:Sai,}{1: you are}{2: my}{3: Krishna}{4: Kanhaiya,}{6: my}{5: necklace,}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -1861,7 +1861,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kaṇṭhanahāra",
-        "gloss": "necklace worn close at the throat",
+        "gloss": "necklace; figuratively, someone held close and dear",
         "concept_key": "",
         "preserve_in_english": false
       },

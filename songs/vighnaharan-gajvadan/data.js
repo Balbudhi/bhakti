@@ -882,7 +882,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saba jaga ke tū buddhi vidhātā",
-    "english": "{3:You are the }{5:creator}{5: of }{4:buddhi }{2:for the }{0:whole }{1:world}",
+    "english": "{3:You are the }{5:creator}{5: of }{4:intellect }{2:for the }{0:whole }{1:world}",
     "words": [
       {
         "roman": "saba",
@@ -912,7 +912,7 @@ window.SONG_LINES = {
         "roman": "buddhi",
         "gloss": "intellect; faculty of discernment",
         "concept_key": "buddhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "vidhātā",

@@ -236,7 +236,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ye mana na jāne kyā-kyā karāye",
-    "english": "{0:This }{1:manas}, {2,3:who knows }{4:what all }{5:it makes one do},",
+    "english": "{0:This }{1:mind}, {2,3:who knows }{4:what all }{5:it makes one do},",
     "words": [
       {
         "roman": "ye",
@@ -246,9 +246,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "sensory and deliberative mind",
+        "gloss": "mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "na",

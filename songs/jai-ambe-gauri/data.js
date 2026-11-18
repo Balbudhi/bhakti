@@ -3077,7 +3077,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kañcan thāl virājat, agar kapūr bātī",
-    "english": "{0:A golden} {1:platter} {2:shines splendidly,} {3:with aloe} {4:and camphor} {5:wicks,}",
+    "english": "{0:A golden} {1:platter} {2:shines splendidly,} {3:with agarwood incense,} {4:camphor,} {5:and wicks,}",
     "words": [
       {
         "roman": "Kañcan",
@@ -3099,7 +3099,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "agar",
-        "gloss": "aloe-wood incense",
+        "gloss": "agarwood incense; fragrant wood of Aquilaria",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3148,7 +3148,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā agar kapūr bātī",
-    "english": "{0:O Mother,} {1:with aloe} {2:and camphor} {3:wicks,}",
+    "english": "{0:O Mother,} {1:with agarwood incense,} {2:camphor,} {3:and wicks,}",
     "words": [
       {
         "roman": "Maiyā",
@@ -3158,7 +3158,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "agar",
-        "gloss": "aloe-wood incense",
+        "gloss": "agarwood incense; fragrant wood of Aquilaria",
         "concept_key": "",
         "preserve_in_english": false
       },
