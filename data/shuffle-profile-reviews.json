@@ -41896,6 +41896,219 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "648ba980": {
+      "slug": "ya-devi-sarvabhuteshu",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "2bd594c492dda1a0fd20f46aaa68f2f44096191b0e5759a07096eb28e35fc91d",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "b41f671ecfe981c2d7065ce0316b3834ae2e241a91e0e99e2c672bc0b94dfcfe",
+          "extractionRequestIds": [
+            "99e7e43d8e664bcfac0e7f69a3293041"
+          ],
+          "reviewRequestIds": [
+            "96fc9eeb793b4679b6a4911282c12264"
+          ],
+          "coveredLineCount": 15
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.divine_presence",
+              "weight": 1.0
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.praise",
+              "weight": 1.0
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "671055f3d035c9e4cd51264e873cfa7e364789aadc15b85492ba17d5868324f0",
+        "mediaSha256": "6a5232fc050a4ca8c3c28d43c54f61a2d6c8e7a0572fc89a25d551c303a61c3c",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 130.820998
+        },
+        "receiptHash": "d9610de3aef239d32aad0b6dab2523d19b834572de7cd3c5103836f443a34032",
+        "physical": {
+          "whole": {
+            "integratedLufs": -24.8,
+            "truePeakDbfs": -14.1,
+            "rmsDbfs": -24.38866071171215,
+            "centroidHz": 1386.4902193994583
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -25.607879317276662,
+              "centroidHz": 1325.4499482786011
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 130.8204375,
+              "rmsDbfs": -24.38866071171215,
+              "centroidHz": 1386.4902193994583
+            },
+            "end": {
+              "startSeconds": 100.8204375,
+              "endSeconds": 130.8204375,
+              "rmsDbfs": -23.29574392063922,
+              "centroidHz": 1416.8103637483339
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "8ec8b956": {
+      "slug": "devi-dhyana",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "90fa2f8a262868bb53892f595b1893d5441468ce064d2fc824ec0d8f040bc5ad",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "96784b9370b41a951b62d088ce384b95f464ec9ed737800239d662148fe6a067",
+          "extractionRequestIds": [
+            "9d86eb1638c444d0bbbdf7e4fd14e55c"
+          ],
+          "reviewRequestIds": [
+            "68a3136e96c2430ebba2b88dccff50b0"
+          ],
+          "coveredLineCount": 6
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.beauty",
+              "weight": 1.0
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.praise",
+              "weight": 1.0
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 0.45454545454545453,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.kali",
+              "weight": 0.18181818181818182,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.lakshmi",
+              "weight": 0.18181818181818182,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.sarasvati",
+              "weight": 0.18181818181818182,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "21f8f38873a6d8b01d069542920c454188d5a744c700f3be84fcf07a2dfebca3",
+        "mediaSha256": "da482bc157c0a3403d5b981fe4236e0602fdf340c4b2674a9073cf603320ab48",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 72.121995
+        },
+        "receiptHash": "f567ee301b09368017e1d85167a1953f46ab6fb01960e69ce1053324bd9245e3",
+        "physical": {
+          "whole": {
+            "integratedLufs": -27.1,
+            "truePeakDbfs": -14.5,
+            "rmsDbfs": -27.211189763081528,
+            "centroidHz": 1221.8244004138207
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -29.282666558512563,
+              "centroidHz": 1232.1737324791684
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 72.1219375,
+              "rmsDbfs": -27.211189763081528,
+              "centroidHz": 1221.8244004138207
+            },
+            "end": {
+              "startSeconds": 42.1219375,
+              "endSeconds": 72.1219375,
+              "rmsDbfs": -25.05239738291992,
+              "centroidHz": 1228.8658344810408
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }

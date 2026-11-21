@@ -731,6 +731,13 @@
         "sha256": "b90d4ffce5454d56c370b7a314da151a95533408bc4a78feae6d3ae205b91b45"
       }
     ],
+    "devi-dhyana": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-dhyana-da482bc157c0a3403d5b981fe4236e0602fdf340c4b2674a9073cf603320ab48.m4a",
+        "type": "audio/mp4",
+        "sha256": "da482bc157c0a3403d5b981fe4236e0602fdf340c4b2674a9073cf603320ab48"
+      }
+    ],
     "devi-kshama-prarthana": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-kshama-prarthana-379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea.m4a",
@@ -3720,6 +3727,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vyartha-gavaya-is.m4a",
         "type": "audio/mp4",
         "sha256": "9ecc21ec9e672ffbab2b56d02edfe28b44458a5714ea248c7419dd1a83f7257c"
+      }
+    ],
+    "ya-devi-sarvabhuteshu": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ya-devi-sarvabhuteshu-6a5232fc050a4ca8c3c28d43c54f61a2d6c8e7a0572fc89a25d551c303a61c3c.m4a",
+        "type": "audio/mp4",
+        "sha256": "6a5232fc050a4ca8c3c28d43c54f61a2d6c8e7a0572fc89a25d551c303a61c3c"
       }
     ],
     "yajasathi-kela-hota-attahas": [

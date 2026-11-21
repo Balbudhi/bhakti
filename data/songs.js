@@ -13121,6 +13121,80 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 387
+  },
+  {
+    "slug": "ya-devi-sarvabhuteshu",
+    "queueId": "648ba980",
+    "title": "Yā Devī Sarvabhūteṣu",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Lakṣmī",
+      "Sarasvatī",
+      "Kālī"
+    ],
+    "searchAliases": [
+      "Ya Devi Sarvabhutesu",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Lakshmi",
+      "Laksmi",
+      "Sarasvati",
+      "Kali",
+      "Ya Devi Sarva Bhuteshu",
+      "Tantroktam Devi Suktam",
+      "Bhadrakali"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ya-devi-sarvabhuteshu-6a5232fc050a4ca8c3c28d43c54f61a2d6c8e7a0572fc89a25d551c303a61c3c.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 388
+  },
+  {
+    "slug": "devi-dhyana",
+    "queueId": "8ec8b956",
+    "title": "Devī Dhyāna",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mahakali Mahalakshmi Mahasarasvati meditation",
+      "Durga Saptashati Dhyana"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-dhyana-da482bc157c0a3403d5b981fe4236e0602fdf340c4b2674a9073cf603320ab48.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 389
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "d76d083e550ebbe4b0f7e38b1816b7e57b02a574db92cbf7c25be8059ebdec51";
+window.BHAKTI_SHUFFLE_REVISION = "b1440e6d86219d90b29f680f1b3c6c76cc1bf84101fd2bec084bdb31604aa1e3";
