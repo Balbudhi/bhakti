@@ -12642,6 +12642,161 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 374
+  },
+  {
+    "slug": "narayani-stuti",
+    "queueId": "8f6ef7f0",
+    "title": "Nārāyaṇī Stuti",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Durgā",
+      "Lakṣmī",
+      "Sarasvatī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Durga",
+      "Lakshmi",
+      "Laksmi",
+      "Sarasvati",
+      "Narayani Stotra",
+      "Durga Saptashati Chapter 11",
+      "Devi Mahatmyam Chapter 11",
+      "Devi Mahatmya Chapter 11",
+      "Narayani Stuti Chapter 11",
+      "Devi Mahatmya Narayani Stuti"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/narayani-stuti-0920349ba72210244e0adeccd30855679de227c69b9be260b8339da0580f0e3d.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 376
+  },
+  {
+    "slug": "siddha-kunjika-stotram",
+    "queueId": "b096d731",
+    "title": "Siddhakuñjikā Stotram",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Śiva",
+      "Kālī"
+    ],
+    "searchAliases": [
+      "Siddhakunyjika Stotram",
+      "Siddhakunjika Stotram",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Shiva",
+      "Siva",
+      "Kali",
+      "Siddha Kunjika Stotra",
+      "Kunjika Stotram",
+      "Kunjika Stotra"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siddha-kunjika-stotram-c3624a78cf78504d86be67cf6313f3816d6ac83142f48f8cef0a6a206a8da3ed.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 377
+  },
+  {
+    "slug": "maiya-odh-chunariya-laal",
+    "queueId": "0e39454b",
+    "title": "Maiyā Oṛh Cunariyā Lāl Hamāre Ghar Ā Jānā",
+    "credit": "Sheela Kalson · Pardeep Panchal",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Maiya Orh Cunariya Lal Hamare Ghar A Jana",
+      "Shakti",
+      "Sakti",
+      "Maiya Odh Chunariya Laal Humare Ghar Aa Jana",
+      "Maiya Odh Chunariya Lal",
+      "Maiya Odh Chunariya Laal Hamare Ghar Aajana"
+    ],
+    "writer": "",
+    "singer": "Sheela Kalson",
+    "composer": "Pardeep Panchal",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-odh-chunariya-laal-2b28e1f7748fc210f63619f89ec4250f3419b1817d937671deeff745821eb282.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-odh-chunariya-laal-ab8349ee3b26f570480fa6ee324544ae317bc61721b195070900115f6d76560b.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 375
+  },
+  {
+    "slug": "sohe-maa-chole-waliye",
+    "queueId": "3570cde4",
+    "title": "Sūhe Mā̃ Cole Vālie",
+    "credit": "Rohan Kumar · Rohit Kumar Bobby",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Suhe Mã Cole Valie",
+      "Shakti",
+      "Sakti",
+      "Suhe Maa Chole Waliye",
+      "Sohe Ma Chole Waliye",
+      "Suhe Maa Chole Valie",
+      "Soohe Maa Chole Waliye"
+    ],
+    "writer": "",
+    "singer": "Rohan Kumar",
+    "composer": "Rohit Kumar Bobby",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sohe-maa-chole-waliye-2e0e725cc111e0d3fa47f5497c6c5aad31d0b37f67b696d8b5aa8b6f4f04337e.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sohe-maa-chole-waliye-b7da2f139c2cbe81ae29b7136ac5458943602b4b5bbbbf1922cfbafd8fe7041b.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 378
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "804917bb7fb5c98a04dcbbcbe3d456e5ac84716c5b86b3d2fa55cb956a032872";
+window.BHAKTI_SHUFFLE_REVISION = "9536c34c67478169c281e4647b1798d13a867dce0a2ee6237c16bc4c18d41463";

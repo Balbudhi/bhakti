@@ -1981,6 +1981,30 @@
         "sha256": "de17b6b6ea26aa95cfd4052c9d3b3a10e9576439cbfa47c93a7bbe28c0251500"
       }
     ],
+    "maiya-ji-tum-badi-dayalu-ho": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-ji-tum-badi-dayalu-ho-c7f70e853f4ef75e2eaf738abc3607513f24224de4b7d7d72f1040eebcd31924.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "c7f70e853f4ef75e2eaf738abc3607513f24224de4b7d7d72f1040eebcd31924"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-ji-tum-badi-dayalu-ho-3d0da0d70df5ee8a678d0823d89188fdcf23a1a5533694334a2ef7d7bfb89a65.m4a",
+        "type": "audio/mp4",
+        "sha256": "3d0da0d70df5ee8a678d0823d89188fdcf23a1a5533694334a2ef7d7bfb89a65"
+      }
+    ],
+    "maiya-odh-chunariya-laal": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-odh-chunariya-laal-2b28e1f7748fc210f63619f89ec4250f3419b1817d937671deeff745821eb282.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2b28e1f7748fc210f63619f89ec4250f3419b1817d937671deeff745821eb282"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-odh-chunariya-laal-ab8349ee3b26f570480fa6ee324544ae317bc61721b195070900115f6d76560b.m4a",
+        "type": "audio/mp4",
+        "sha256": "ab8349ee3b26f570480fa6ee324544ae317bc61721b195070900115f6d76560b"
+      }
+    ],
     "majha-bhav-tujhe-charani": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/majha-bhav-tujhe-charani-e67ae20e7640504548a77f58b159aa4355ef873ab7dae2c0c714eeab70a52a1b.webm",
@@ -2403,6 +2427,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/nanati-baduku-a713efa4db5d967ced10a37f53b02d9f9cf2881fb0ef97a39042cd3287030ea0.m4a",
         "type": "audio/mp4",
         "sha256": "a713efa4db5d967ced10a37f53b02d9f9cf2881fb0ef97a39042cd3287030ea0"
+      }
+    ],
+    "narayani-stuti": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/narayani-stuti-0920349ba72210244e0adeccd30855679de227c69b9be260b8339da0580f0e3d.m4a",
+        "type": "audio/mp4",
+        "sha256": "0920349ba72210244e0adeccd30855679de227c69b9be260b8339da0580f0e3d"
       }
     ],
     "neelkanth-mahadev-dayalu": [
@@ -2829,6 +2860,13 @@
         "sha256": "e59500c94ee6dc727e628af2a05fec66702955dfa07750f9861c52028e26e02e"
       }
     ],
+    "russiya-tu-sade-naal-kyon-meri-maaye": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/russiya-tu-sade-naal-kyon-meri-maaye-a2376916ca9dfda41c0962b1fd45eba3a173937f6dd2d3b2f9e16bd4342fad77.m4a",
+        "type": "audio/mp4",
+        "sha256": "a2376916ca9dfda41c0962b1fd45eba3a173937f6dd2d3b2f9e16bd4342fad77"
+      }
+    ],
     "saasa-haale": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/saasa-haale-fd4d6c0c73b0d63e94f973953161317829eddc593b81504e1ab4b864eab30e45.webm",
@@ -3232,6 +3270,13 @@
         "sha256": "2fc6ee523a897d45cd3badd80a53f090f6aaadc784f57cde0445f5b0c756d47e"
       }
     ],
+    "siddha-kunjika-stotram": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siddha-kunjika-stotram-c3624a78cf78504d86be67cf6313f3816d6ac83142f48f8cef0a6a206a8da3ed.m4a",
+        "type": "audio/mp4",
+        "sha256": "c3624a78cf78504d86be67cf6313f3816d6ac83142f48f8cef0a6a206a8da3ed"
+      }
+    ],
     "siri-ram-kahe-samjhayi": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siri-ram-kahe-samjhayi.m4a",
@@ -3285,6 +3330,18 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/so-satgur-pyara-mere-naal-hai.m4a",
         "type": "audio/mp4",
         "sha256": "16259b9ca9a3fd2d5bdb8a5f1d59e983ad653ff7792d2a38d423cf6bc8e958bf"
+      }
+    ],
+    "sohe-maa-chole-waliye": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sohe-maa-chole-waliye-2e0e725cc111e0d3fa47f5497c6c5aad31d0b37f67b696d8b5aa8b6f4f04337e.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "2e0e725cc111e0d3fa47f5497c6c5aad31d0b37f67b696d8b5aa8b6f4f04337e"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sohe-maa-chole-waliye-b7da2f139c2cbe81ae29b7136ac5458943602b4b5bbbbf1922cfbafd8fe7041b.m4a",
+        "type": "audio/mp4",
+        "sha256": "b7da2f139c2cbe81ae29b7136ac5458943602b4b5bbbbf1922cfbafd8fe7041b"
       }
     ],
     "soyara-sukhacha": [
