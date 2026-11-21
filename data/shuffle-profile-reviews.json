@@ -40084,6 +40084,126 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "5239a2c8": {
+      "slug": "ambe-tu-hai-jagdambe-kali",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "c80737e6eb6470815165563d9c3ab9e56011d293558a8a6d4009f72d98291d6d",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "9c763d1393529a3fb499df20e3c738ca1e7c49621dd0ea339fe4c1c7f8b47bad",
+          "extractionRequestIds": [
+            "7d4f273c8a8944c3860e6496f8ecb3ab"
+          ],
+          "reviewRequestIds": [
+            "fa9268c28cca47608fd713d5b900b7c2"
+          ],
+          "coveredLineCount": 20
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.beloved_relationship",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.compassion",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.5555555555555556
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.offering",
+              "weight": 0.4166666666666667
+            },
+            {
+              "id": "action.petition",
+              "weight": 0.16666666666666669
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.4166666666666667
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.durga",
+              "weight": 0.7142857142857143,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.kali",
+              "weight": 0.28571428571428575,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "ae6242d2bbe7435cd24d7d78842af309aff7265e71f403d4b7b3cca90be84b13",
+        "mediaSha256": "bbb4cc528d13be2e6d9688d34158d4db183b80cde54e40cf6afa9447326be8e8",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 292.821
+        },
+        "receiptHash": "71993b0102ff32db99dc2c75c881c812df874e8a2dfd654b7d64a17c1e4edede",
+        "physical": {
+          "whole": {
+            "integratedLufs": -5.3,
+            "truePeakDbfs": 1.8,
+            "rmsDbfs": -7.209763251054881,
+            "centroidHz": 2239.287129035271
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -6.7270662302051285,
+              "centroidHz": 2288.1135554808216
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 292.803625,
+              "rmsDbfs": -7.209763251054881,
+              "centroidHz": 2239.287129035271
+            },
+            "end": {
+              "startSeconds": 262.803625,
+              "endSeconds": 292.803625,
+              "rmsDbfs": -9.669092085415294,
+              "centroidHz": 2081.5619959821684
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }

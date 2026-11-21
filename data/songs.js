@@ -12501,6 +12501,44 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 370
+  },
+  {
+    "slug": "ambe-tu-hai-jagdambe-kali",
+    "queueId": "5239a2c8",
+    "title": "Ambe Tū Hai Jagadambe Kālī",
+    "credit": "Anuradha Paudwal · Arun Paudwal",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Kālī",
+      "Durgā"
+    ],
+    "searchAliases": [
+      "Ambe Tu Hai Jagadambe Kali",
+      "Shakti",
+      "Sakti",
+      "Kali",
+      "Durga",
+      "Ambe Aarti"
+    ],
+    "writer": "",
+    "singer": "Anuradha Paudwal",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ambe-tu-hai-jagdambe-kali-bbb4cc528d13be2e6d9688d34158d4db183b80cde54e40cf6afa9447326be8e8.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ambe-tu-hai-jagdambe-kali-c80722ac71f6fa7eab7b686d8489fe52dcf2787ad2420058803ffd13f1b35bea.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "musicDirector": "Arun Paudwal",
+    "subtitle": "Śakti",
+    "queueNumber": 371
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "9117e8c686344efda43a27fc975596ec251535ae9027b935bd065deb2aeb7bb6";
+window.BHAKTI_SHUFFLE_REVISION = "7bc17c80ce014d2a934abfeff1f6586af4e155472b33ba3cf3458f9c70bc3f2b";

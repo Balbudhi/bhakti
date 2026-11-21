@@ -165,6 +165,18 @@
         "sha256": "fb83f0dc44e733634944d41fbd9ba534333a4c09b6b246ab94a426a95c4f7ee0"
       }
     ],
+    "ambe-tu-hai-jagdambe-kali": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ambe-tu-hai-jagdambe-kali-bbb4cc528d13be2e6d9688d34158d4db183b80cde54e40cf6afa9447326be8e8.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "bbb4cc528d13be2e6d9688d34158d4db183b80cde54e40cf6afa9447326be8e8"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/ambe-tu-hai-jagdambe-kali-c80722ac71f6fa7eab7b686d8489fe52dcf2787ad2420058803ffd13f1b35bea.m4a",
+        "type": "audio/mp4",
+        "sha256": "c80722ac71f6fa7eab7b686d8489fe52dcf2787ad2420058803ffd13f1b35bea"
+      }
+    ],
     "amha-ghari-dhan": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/amha-ghari-dhan-cbfab82924c00d36ca2bdbeb90d973da714f5d31115a8d7f6af22e07dbfdde03.webm",
