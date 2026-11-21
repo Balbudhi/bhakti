@@ -354,6 +354,34 @@ baseline throughout production. A source/gloss conflict is reported separately;
 the engine must not distort grammar to justify rewriting the owner's wording.
 An unflagged song is not automatically correct.
 
+### Supplied assistant glossaries
+
+A JSON intake job may set `providedGlosses` to a private JSON path, alongside
+`providedTranslation` (or an existing exact owner-English baseline). Normal job
+loading freezes the glossary file and its provenance hashes before the bounded
+run. Direct coordinator callers must supply the resulting `{path, sha256,
+provenance}` reference; a pathname alone is not an execution-time identity.
+
+The version-1 document contains `origin: "assistant-editorial"`, `slug`,
+`source_sha256` (the semantic coordinator's exact `source_evidence` digest),
+`source_languages`, `policy_sha256` (the current translation-policy digest),
+`gloss_contract_version`, and `packet: {glosses: [...]}`. Its `provenance` list
+contains hashed file references with `role: "author"` and `role: "review"`.
+Each glossary row must already contain the complete current word, grammar,
+frame, sense-decision and evidence schema. The loader neither invents missing
+judgments nor turns an editorial status into approval. Proper names use the
+normal contextual-name rules, not an uncurated `preserve_in_english` flag.
+
+The entire authored packet is immutable. Source discovery or an independent
+review may hold it for an explicitly authored revision, but cannot regenerate
+its meanings. The existing writer aligns the exact locked English, and the
+genuine independent reviewer still evaluates source, meanings, agency and
+coverage. Only ordinary semantic acceptance permits generation. Source,
+timing, boundary and audio gates are unchanged. A changed document cannot reset
+an unfinished attempt or its spending/deadline history. No provider identity or
+usage is fabricated for supplied input; ordinary model-only jobs retain their
+existing path.
+
 ## Existing-reader reconstruction
 
 `retranslate_bhakti.py` creates private comparison packets through the same

@@ -82,6 +82,9 @@ def _inputs(root: Path, jobs: list[dict[str, Any]]) -> tuple[list[dict[str, Any]
                         raise ValueError('preserved intake source identity changed')
             row['source_sha256'] = hashlib.sha256(original.read_bytes()).hexdigest()
         row['source'] = value
+        if 'providedGlosses' in job:
+            import bhakti_supplied_gloss
+            row['providedGlosses'] = bhakti_supplied_gloss.freeze_reference(job['providedGlosses'])
         frozen.append(row)
         references.append({'slug': job['slug'], 'source': value})
     return frozen, references
@@ -119,6 +122,48 @@ def _check_receipt(receipt: dict[str, Any], record: dict[str, Any]) -> None:
             raise ValueError('intake ledger retained history changed; no spending reset')
 
 
+def _terminated_scoped_unknown(request: dict[str, Any], record: dict[str, Any]) -> bool:
+    """Preserve an unknown charge while restoring its existing attempt boundary."""
+    if (record.get('blocked') is not False
+            or request.get('status') != 'unknown-outcome' or request.get('worker_terminated') is not True
+            or 'reported_cost_usd' in request):
+        return False
+    try:
+        context = request['unit_context']
+        if (not isinstance(context, dict) or not all(isinstance(context.get(key), str) and context[key]
+                for key in ('state_path', 'attempt_id', 'unit_id', 'model', 'input_fingerprint', 'dependency_fingerprint'))
+                or type(context.get('deadline_at')) not in (int, float)
+                or not math.isfinite(context['deadline_at']) or context['deadline_at'] <= 0
+                or not isinstance(request.get('id'), str) or not request['id']):
+            return False
+        path = Path(context['state_path'])
+        if not path.is_absolute():
+            return False
+        state = _read(path)
+        blocked = record['blocked_attempts'][context['attempt_id']]
+        if (not isinstance(blocked, dict) or not isinstance(state.get('attempts'), list)
+                or not all(isinstance(row, dict) for row in state['attempts'])):
+            return False
+        attempts = [row for row in state['attempts'] if row['attempt_id'] == context['attempt_id']]
+        if len(attempts) != 1:
+            return False
+        attempt = attempts[0]
+        return (context.get('version') == routes.ROUTE_VERSION
+            and state.get('version') == routes.ROUTE_VERSION
+            and state.get('status') in {'unresolved', 'accepted'}
+            and all(context.get(key) == state.get(key) and context.get(key)
+                    for key in ('unit_id', 'input_fingerprint', 'dependency_fingerprint'))
+            and request.get('model') == context.get('model') == attempt.get('model')
+            and context.get('deadline_at') == attempt.get('deadline_at')
+            and attempt.get('status') == 'transport-failed'
+            and attempt.get('category') == blocked.get('category') == 'unknown-outcome'
+            and attempt.get('worker_terminated') is True
+            and blocked.get('worker_terminated') is True
+            and request.get('id') == attempt.get('request_id') == blocked.get('request_id'))
+    except (KeyError, TypeError, ValueError, OSError):
+        return False
+
+
 def _check_ledger(record: dict[str, Any]) -> None:
     if not record:
         return
@@ -128,7 +173,8 @@ def _check_ledger(record: dict[str, Any]) -> None:
     if not isinstance(requests, list):
         raise ValueError('invalid existing intake ledger requests')
     for request in requests:
-        if not isinstance(request, dict) or request.get('status') in _UNSETTLED:
+        if (not isinstance(request, dict) or (request.get('status') in _UNSETTLED
+                and not _terminated_scoped_unknown(request, record))):
             raise ValueError('unsettled request requires reconciliation before intake resume')
         charge = request.get('reported_cost_usd', request.get('reservation_usd'))
         if type(charge) not in (float, int) or not math.isfinite(charge) or charge < 0:

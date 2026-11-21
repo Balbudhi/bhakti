@@ -111,6 +111,41 @@ class ReviewedSourceAnnotations(unittest.TestCase):
                     reviewed.prepare(self.song, self.original)
                 self.assertEqual(self.original_path.read_bytes(), self.original_bytes)
 
+    def test_v2_native_orthography_derives_new_identity_without_rewriting_evidence(self):
+        declaration = self.declaration(roman=False, language=False)
+        declaration['version'] = 2
+        original_semantic = pipeline.bhakti_semantic_repair.source_evidence(pipeline, self.song, self.original)
+        correction = declaration['corrections'][0]
+        correction['before'] = {'source_text': 'ਅਨਦਿਨੋੁ'}
+        correction['after'] = {'source_text': 'ਅਨਦਿਨੁ'}
+        before = pipeline.timing_input_identity(self.f.audio,
+            pipeline.display_occurrences(self.original['packet']), {})
+        self.declare(declaration)
+        effective = reviewed.prepare(self.song, self.original)
+        self.assertEqual(effective['packet']['verified_lines'][0]['source_text'], 'ਅਨਦਿਨੁ')
+        self.assertEqual(effective['packet']['verified_lines'][0]['roman'], 'anadinau')
+        self.assertEqual(effective['packet']['performance_order'], self.original['packet']['performance_order'])
+        self.assertEqual(self.original_path.read_bytes(), self.original_bytes)
+        self.assertNotIn('_source_route', effective)
+        after = pipeline.timing_input_identity(self.f.audio,
+            pipeline.display_occurrences(effective['packet']), {})
+        self.assertNotEqual(before, after)
+        self.assertNotEqual(original_semantic, pipeline.bhakti_semantic_repair.source_evidence(pipeline, self.song, effective))
+        self.assertEqual(reviewed.load(self.song), effective)
+        reviewed.require_current(self.song, effective)
+        with self.assertRaises(ValueError): reviewed.require_current(self.song, self.original)
+
+    def test_native_correction_requires_v2_and_cannot_edit_order_or_other_fields(self):
+        for version, field in [(1, 'source_text'), (2, 'kind'), (2, 'id')]:
+            declaration = self.declaration(roman=False, language=False)
+            declaration['version'] = version
+            row = self.original['packet']['verified_lines'][0]
+            declaration['corrections'][0]['before'] = {field: row[field]}
+            declaration['corrections'][0]['after'] = {field: 'changed'}
+            self.declare(declaration)
+            with self.assertRaises(ValueError): reviewed.prepare(self.song, self.original)
+            self.assertEqual(self.original_path.read_bytes(), self.original_bytes)
+
     def test_current_gate_revalidates_original_router_candidate(self):
         self.declare()
         effective = reviewed.prepare(self.song, self.original)

@@ -468,6 +468,9 @@ def normalise_jobs(options: argparse.Namespace) -> list[dict[str, Any]]:
         if job["slug"] in seen:
             raise SystemExit(f"duplicate slug: {job['slug']}")
         seen.add(job["slug"])
+        if 'providedGlosses' in job:
+            import bhakti_supplied_gloss
+            job['providedGlosses'] = bhakti_supplied_gloss.freeze_reference(job['providedGlosses'])
     return jobs
 
 
@@ -475,8 +478,11 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
     song_dir = ROOT / "songs" / job["slug"]
     audio = song_dir / "audio.m4a"
     if song_dir.exists() and any(song_dir.iterdir()):
+        existing_source = read_packet(song_dir / ".transcription" / "source.json") or {}
+        if "native_audio" in existing_source:
+            native_audio_sources(song_dir, existing_source, required=True)
         if audio.is_file():
-            return song_dir, read_packet(song_dir / ".transcription" / "source.json") or {}
+            return song_dir, existing_source
         # A cancelled/failed URL fetch may have created only the private review
         # directory. That empty scaffold contains no media or public data and
         # is safe to resume; never overwrite an actual partial reader instead.
@@ -514,17 +520,38 @@ def intake(job: dict[str, Any], *, force: bool) -> tuple[Path, dict[str, Any]]:
         }
         if job.get("sourceFirstWitness"):
             source["source_first_witness"] = True
+        native_youtube = ytmusic.extract_video_id(source_value) is not None
+        if native_youtube:
+            if (not isinstance(source.get("id"), str) or not source["id"]
+                    or ytmusic.extract_video_id(source_value) != source["id"]
+                    or ytmusic.extract_video_id(source["source_url"]) != source["id"]):
+                raise ValueError("native YouTube intake requires matching source identity")
+            source["native_audio"] = {"version": 1, "status": "pending",
+                "source_id": source["id"], "source_url": source["source_url"], "sources": []}
+            write_json(review_dir / "source.json", source)
         subprocess.run(["yt-dlp", "-4", "--no-playlist", "-f", "bestaudio", "-o", str(song_dir / "audio.%(ext)s"), source_value], check=True)
         originals = [path for path in song_dir.glob("audio.*") if path.suffix not in {".part", ".ytdl"}]
         if len(originals) != 1:
             raise RuntimeError(f"expected one best-audio download from {source_value}, found {len(originals)}")
         primary = originals[0]
+        if native_youtube:
+            source["native_audio"]["sources"].append(native_audio_receipt_entry(primary, "primary"))
+            write_json(review_dir / "source.json", source)
         if primary.suffix.casefold() != ".m4a":
             try:
                 subprocess.run(["yt-dlp", "-4", "--no-playlist", "-f", "bestaudio[ext=m4a]", "-o", str(audio), source_value], check=True)
             except subprocess.CalledProcessError:
+                if native_youtube:
+                    # Retain the pending native receipt/files. Never disguise a
+                    # transcoded compatibility copy as the platform's AAC stream.
+                    raise
                 subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(primary),
                                 "-vn", "-c:a", "aac", "-b:a", "192k", str(audio)], check=True)
+            if native_youtube:
+                source["native_audio"]["sources"].append(native_audio_receipt_entry(audio, "compatibility"))
+        if native_youtube:
+            source["native_audio"]["status"] = "ready"
+            native_audio_sources(song_dir, source, required=True)
     else:
         supplied = Path(source_value).expanduser().resolve()
         if not supplied.is_file():
@@ -566,7 +593,86 @@ def audio_stream_quality(path: Path) -> tuple[int, bool]:
         return 0, True
 
 
+NATIVE_AUDIO_TYPES = {"audio.webm": "audio/webm; codecs=opus", "audio.m4a": "audio/mp4"}
+
+
+def native_audio_receipt_entry(path: Path, role: str) -> dict[str, str]:
+    """Describe actual native YouTube bytes, never a quality claim from bitrate."""
+    if path.name not in NATIVE_AUDIO_TYPES:
+        raise ValueError("unsupported native audio container")
+    probe = subprocess.run(["ffprobe", "-v", "error", "-show_entries",
+        "stream=codec_type,codec_name", "-of", "json", str(path)],
+        check=True, capture_output=True, text=True)
+    streams = json.loads(probe.stdout).get("streams", [])
+    codec = "opus" if path.name == "audio.webm" else "aac"
+    if (len(streams) != 1 or streams[0].get("codec_type") != "audio"
+            or streams[0].get("codec_name") != codec):
+        raise ValueError("native audio container/codec mismatch")
+    return {"src": path.name, "type": NATIVE_AUDIO_TYPES[path.name],
+            "sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "role": role}
+
+
+def native_audio_sources(song_dir: Path, source: dict[str, Any] | None = None,
+                         *, required: bool = False,
+                         allow_pending_trim: bool = False) -> list[dict[str, str]] | None:
+    """Honor source-bound native order, including verified original/trim custody.
+
+    A missing receipt permits legacy sorting only when not explicitly required.
+    An existing malformed or pending acquisition receipt always fails closed.
+    Only the trim recovery caller may inspect hash-verified pending outputs;
+    ordinary listeners and paid-stage guards require completed custody.
+    """
+    if source is None:
+        source = read_packet(song_dir / ".transcription/source.json") or {}
+    if "native_audio" not in source:
+        if required:
+            raise ValueError("missing required native audio receipt")
+        return None
+    receipt = source["native_audio"]
+    if (not isinstance(receipt, dict) or type(receipt.get("version")) is not int
+            or receipt["version"] != 1 or receipt.get("status") != "ready"
+            or not source.get("id") or not source.get("source_url")
+            or ytmusic.extract_video_id(source["source_url"]) != source["id"]
+            or receipt.get("source_id") != source["id"]
+            or receipt.get("source_url") != source["source_url"]):
+        raise ValueError("invalid or pending native audio source identity")
+    rows = receipt.get("sources")
+    if not isinstance(rows, list) or len(rows) not in (1, 2) or any(not isinstance(row, dict) for row in rows):
+        raise ValueError("invalid native audio source population")
+    names = [row.get("src") for row in rows]
+    if (names not in (["audio.m4a"], ["audio.webm", "audio.m4a"])
+            or [row.get("role") for row in rows] != (["primary"] if len(rows) == 1 else ["primary", "compatibility"])):
+        raise ValueError("invalid native audio source order or roles")
+    manifest = read_packet(song_dir / ".transcription/trim-originals.json") or {}
+    marker = read_packet(song_dir / ".transcription/trim-applied.json") or {}
+    if marker.get("status") == "pending" and not allow_pending_trim:
+        raise ValueError("native audio trim transaction is pending")
+    for row in rows:
+        name = row["src"]
+        if (row.get("type") != NATIVE_AUDIO_TYPES[name] or not isinstance(row.get("sha256"), str)
+                or not re.fullmatch(r"[0-9a-f]{64}", row["sha256"])):
+            raise ValueError("invalid native audio type or hash")
+        current = native_audio_receipt_entry(song_dir / name, row["role"])
+        if current["sha256"] != row["sha256"]:
+            original = song_dir / ".transcription/original-audio" / name
+            custody = [item for item in manifest.get("sources", []) if isinstance(item, dict) and item.get("src") == name]
+            if (manifest.get("version") != 2 or len(custody) != 1
+                    or custody[0].get("sha256") != row["sha256"] or not original.is_file()
+                    or hashlib.sha256(original.read_bytes()).hexdigest() != row["sha256"]
+                    or marker.get("application_version") != 2
+                    or marker.get("status") not in ({"applied", "no-trim", "pending"} if allow_pending_trim else {"applied", "no-trim"})
+                    or marker.get("outputs", {}).get(name, {}).get("sha256") != current["sha256"]):
+                raise ValueError("native audio identity differs from preserved original/trim custody")
+    actual = {path.name for path in song_dir.glob("audio.*") if path.suffix in {".webm", ".m4a", ".ogg", ".mp3", ".wav", ".flac"}}
+    if actual != set(names):
+        raise ValueError("native audio population changed outside intake")
+    return [{"src": row["src"], "type": row["type"]} for row in rows]
+
+
 def listener_audio_sources(song_dir: Path) -> list[dict[str, str]]:
+    native = native_audio_sources(song_dir)
+    if native is not None:
+        return native
     types = {".webm": "audio/webm; codecs=opus", ".ogg": "audio/ogg; codecs=opus",
              ".mp3": "audio/mpeg", ".wav": "audio/wav", ".flac": "audio/flac", ".m4a": "audio/mp4"}
     fallback_rate = {".flac": 2_000_000, ".wav": 1_500_000, ".webm": 160_000,
@@ -887,7 +993,10 @@ def apply_lossless_trim(song_dir: Path, artifact: dict[str, Any]) -> None:
         sources = manifest.get("sources", [])
         if not sources or manifest.get("version") != 2:
             raise RuntimeError("invalid original audio identity manifest")
-        if {row.get("src") for row in sources} != {row["src"] for row in listener_audio_sources(song_dir)}:
+        listener_sources = native_audio_sources(song_dir, allow_pending_trim=True)
+        if listener_sources is None:
+            listener_sources = listener_audio_sources(song_dir)
+        if {row.get("src") for row in sources} != {row["src"] for row in listener_sources}:
             raise RuntimeError("listener audio formats changed outside the trim transaction")
         for row in sources:
             name = row.get("src", "")
@@ -3084,6 +3193,10 @@ def align_long_segments(
     starts=dict(plan['retained_starts']);reports=list(prior_refinements or [])
     source_identity=getattr(options,'timing_source_identity',{})
     for region in plan['regions']:
+        if getattr(options, 'timing_deadline_at', None) is not None:
+            # Fresh bounded plans use the existing compact schema and explicit
+            # clock. Frozen continuation regions and legacy requests stay exact.
+            region = {**region, 'prompt_version': 4}
         report=run_joint_timing_unit(song_dir,audio,region,duration,options,source_identity)
         reports.append(report)
         for row in report['starts']:starts[row['occurrence_id']]=row['start']
@@ -3855,6 +3968,21 @@ def fresh_gloss_contract_errors(lines: list[dict[str, Any]],
     return errors
 
 
+def prepared_gloss_contract_errors(lines, rows, languages, options, *, source_packet=None, support=None):
+    """The same evidence checks for generated and explicitly supplied candidates."""
+    if source_packet is None:
+        source_packet = getattr(options, 'automatic_source_discovery', None)
+    if support is None:
+        support = bhakti_lexical_support.prepare_options(options, lines, languages)
+    ids = [line['id'] for line in lines]
+    return (fresh_gloss_contract_errors(lines, rows, languages)
+            + bhakti_lexical_producer.fresh_proposal_errors(lines, rows, languages, options)
+            + bhakti_source_discovery.gloss_decision_errors(
+                bhakti_source_discovery.projected(source_packet, ids), rows)
+            + bhakti_lexical_support.support_decision_errors(
+                bhakti_lexical_support.project_support(support, ids), rows))
+
+
 def clean_gloss_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     cleaned = []
     for row in rows:
@@ -3886,12 +4014,8 @@ def gloss(song_dir: Path, audited: dict[str, Any], options: argparse.Namespace) 
     support = bhakti_lexical_support.prepare_options(options, lines, languages)
     policy = semantic_stage_policy(options, stage='gloss')
     def glossary_errors(target_lines, rows, langs):
-        return (fresh_gloss_contract_errors(target_lines, rows, langs)
-                + bhakti_lexical_producer.fresh_proposal_errors(target_lines, rows, langs, options)
-                + bhakti_source_discovery.gloss_decision_errors(
-                    bhakti_source_discovery.projected(source_packet, [line['id'] for line in target_lines]), rows)
-                + bhakti_lexical_support.support_decision_errors(
-                    bhakti_lexical_support.project_support(support, [line['id'] for line in target_lines]), rows))
+        return prepared_gloss_contract_errors(target_lines, rows, langs, options,
+                                             source_packet=source_packet, support=support)
     fingerprint = text_stage_fingerprint("gloss", options.model,
                                          {"lines": lines, "languages": languages}, policy)
     existing = read_packet(target)
@@ -4971,7 +5095,7 @@ Return strict JSON:
     return result
 
 
-def review_translation(song_dir, audited, glosses, job, options, candidate, *, prepared=False):
+def review_translation(song_dir, audited, glosses, job, options, candidate, *, prepared=False, citation_derivative=None):
     """Review exact private writer bytes without reconstructing their English."""
     text_generation_policy(options)
     if not prepared:
@@ -5070,10 +5194,17 @@ def review_translation(song_dir, audited, glosses, job, options, candidate, *, p
             {'source': line, 'gloss': gloss_by_id[line['id']],
              'draft': next(row for row in result['packet']['translations'] if row['id'] == line['id'])}
             for line in lines if line['id'] in references]
-    independent_reviews, review_packets = independently_review_translations(
-        song_dir, lines, gloss_rows, result["packet"]["translations"], provided_translation, review_options,
-        languages=languages
-    )
+    if citation_derivative is None:
+        independent_reviews, review_packets = independently_review_translations(
+            song_dir, lines, gloss_rows, result["packet"]["translations"], provided_translation, review_options,
+            languages=languages
+        )
+    else:
+        # Only the authenticated offline continuation supplies this derivative.
+        # The complete raw responses remain separate evidence, never rewritten.
+        independent_reviews = copy.deepcopy(citation_derivative['reviews'])
+        review_packets = copy.deepcopy(citation_derivative['raw_responses'])
+        result['review_citation_projection'] = copy.deepcopy(citation_derivative['provenance'])
     review_by_id = {row["id"]: row for row in independent_reviews}
     for row in result["packet"]["translations"]:
         row["independent_review"] = review_by_id.get(row["id"], {})
@@ -5876,6 +6007,10 @@ def generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audite
 
 def _generate(song_dir: Path, job: dict[str, Any], source: dict[str, Any], audited: dict[str, Any], timing: dict[str, Any], glosses: dict[str, Any], translations: dict[str, Any], *, write_catalogue_after: bool = True, source_reader_metadata: dict[str, Any] | None = None, source_semantic_evidence=None, prepare_only: bool = False) -> dict[str, Any] | None:
     require_completed_boundary_transaction(song_dir)
+    if 'providedGlosses' in job:
+        import bhakti_supplied_gloss
+        if glosses.get('supplied_input') != bhakti_supplied_gloss.freeze_reference(job['providedGlosses']):
+            raise RuntimeError('generation glossary differs from supplied input')
     bhakti_reviewed_source.require_current(song_dir, audited)
     reviewed_languages = bhakti_reviewed_source.corrected_languages(audited)
     if reviewed_languages is not None:

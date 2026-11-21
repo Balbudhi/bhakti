@@ -18,7 +18,9 @@ prepare(song_dir, audited) -> effective audited view
         {line_id:<existing ID>, before:{roman?:str,language?:str},
          after:{same keys}, evidence:{reviewer:str,source_url:str,
                                     location:str,reason:str}}]}
-    Only roman/language are editable. Each line occurs at most once. Before values
+    Version 1 permits roman/language. Version 2 also permits explicit reviewed
+    source_text corrections, such as native-script serialization errors. These
+    remain reviewer claims, not new model listening evidence. Each line occurs at most once. Before values
     exactly match the original. Reject empty/no-op edits, unknown IDs/keys, stale
     hash, missing reviewer evidence, unrecognized target language, or non-Latin
     romanization. This declaration records human review; a URL alone is not an
@@ -29,7 +31,7 @@ prepare(song_dir, audited) -> effective audited view
     vocal-row population, requiring a recognized language for every vocal row when
     any language annotation is supplied. Do not map 'Gurbani' globally to Punjabi;
     assign each reviewed row explicitly. Instrumental rows need no invented language.
-    Source native text, IDs, row order, kind, notes, every performance occurrence,
+    Unspecified source native text, IDs, row order, kind, notes, every performance occurrence,
     uncertainty, raw segment evidence and all unrelated fields remain exact.
 
     Persist the derived view at .transcription/pipeline/02-reviewed-source.json.
@@ -153,7 +155,7 @@ def _original(path):
 
 def _derive(original, original_sha256, declaration):
     if (set(declaration) != {'version', 'original_audit_sha256', 'corrections'}
-            or type(declaration['version']) is not int or declaration['version'] != 1
+            or type(declaration['version']) is not int or declaration['version'] not in (1, 2)
             or declaration['original_audit_sha256'] != original_sha256):
         _fail('declaration differs from exact original audit')
     corrections = declaration['corrections']
@@ -173,9 +175,9 @@ def _derive(original, original_sha256, declaration):
         seen.add(lid)
         before, after, evidence = (correction[key] for key in ('before', 'after', 'evidence'))
         if (not isinstance(before, dict) or not isinstance(after, dict) or not before
-                or set(before) != set(after) or set(before) - {'roman', 'language'}
+                or set(before) != set(after) or set(before) - ({'roman', 'language', 'source_text'} if declaration['version'] == 2 else {'roman', 'language'})
                 or before == after):
-            _fail('correction must change only explicit roman/language fields')
+            _fail('correction must change only explicit fields permitted by its declaration version')
         if (not isinstance(evidence, dict) or set(evidence) != {'reviewer', 'source_url', 'location', 'reason'}
                 or any(not isinstance(value, str) or not value.strip() for value in evidence.values())
                 or not evidence['source_url'].startswith(('https://', 'http://'))):
@@ -188,7 +190,7 @@ def _derive(original, original_sha256, declaration):
                 if any(unicodedata.category(char).startswith('L') and 'LATIN' not in unicodedata.name(char, '')
                        for char in value):
                     _fail('corrected romanization contains non-Latin letters')
-            else:
+            elif key == 'language':
                 code = lexical.language(value)
                 if not code:
                     _fail('corrected language is unrecognized')

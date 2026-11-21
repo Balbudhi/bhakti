@@ -10,6 +10,7 @@ from pathlib import Path
 import tempfile
 import time
 from typing import Any
+import bhakti_supplied_gloss as supplied_gloss
 
 VERSION = 1
 KINDS = {'gloss_sense', 'frame_relation', 'english_realization', 'english_mapping', 'unresolved_evidence'}
@@ -699,15 +700,19 @@ def require_acceptance(pipeline, packet_dir, glosses=None, translations=None, su
     elif isinstance(audited, dict) and 'reviewed_source' in audited:
         pipeline.bhakti_reviewed_source.require_current(song_dir, audited)
     if glosses is None: glosses = pipeline.read_packet(packet_dir / '04-glosses.json')
+    supplied_document = supplied_gloss.assert_locked(glosses)
     if translations is None: translations = pipeline.read_packet(packet_dir / '05-translation.json')
     marker = pipeline.read_packet(packet_dir / 'semantic-repair-required.json')
     required = (packet_dir / 'semantic-repair-required.json').exists() or any(isinstance(item, dict) and item.get('semantic_repair_version')
                                         for item in (summary, glosses, translations))
+    required = required or supplied_document is not None
     if not required: return
     manifest = pipeline.read_packet(packet_dir / 'semantic-acceptance.json') or {}
     state = accepted_state if accepted_state is not None else (pipeline.read_packet(packet_dir / 'semantic-repair-state.json') or {})
     if audited is None:
         audited = pipeline.read_packet(packet_dir / '02-transcript-audit.json') or summary.get('audit') or {}
+    if supplied_document is not None:
+        supplied_gloss.validate_identity(pipeline, song_dir, audited, supplied_document)
     if (state.get('status') != 'accepted' or state.get('run_id') != manifest.get('run_id')
             or manifest.get('source_sha256') != digest(source_evidence(pipeline, packet_dir.parent.parent, audited))
             or manifest.get('version') != VERSION or manifest.get('status') != 'accepted'
@@ -722,6 +727,9 @@ def require_acceptance(pipeline, packet_dir, glosses=None, translations=None, su
         if state.get('writer_closure_sha256') != writer_closure(translations):
             raise RuntimeError('accepted original writer obligation closure changed')
         check_writer_evidence(translations, audited['packet']['verified_lines'])
+    if state.get('review_continuation'):
+        import bhakti_review_continuation
+        bhakti_review_continuation.verify_saved(state, translations)
 
 
 def _bounded_ready():
@@ -1150,6 +1158,13 @@ def reconcile_source_gloss(pipeline, round_dir, audited, glosses, options):
     pending = discovery.pending_gloss_lines(packet, glosses)
     if not pending:
         return local, glosses
+    if glosses.get('origin') == 'assistant-editorial':
+        issues = [{'kind': 'unresolved_evidence', 'target_line_ids': pending, 'references': [],
+                   'explanation': 'New witnessed source evidence requires an authored glossary revision.',
+                   'evidence': 'The supplied glossary has not adjudicated the current source evidence.',
+                   'needed_evidence': 'Review the current source witnesses and supply revised locked rows.',
+                   'hold_reason': 'external_evidence_missing'}]
+        raise quality_hold(pipeline, 'supplied_gloss_source_revision_required', issues, audited, glosses, None, round_dir)
     lines = audited['packet']['verified_lines']
     languages = audited['packet'].get('metadata', {}).get('languages')
     allowed = {line['id'] for line in lines}
@@ -1199,6 +1214,55 @@ def reconcile_source_gloss(pipeline, round_dir, audited, glosses, options):
     pipeline.semantic_write_json(Path(round_dir)/'source-gloss-ready.json', result)
     return local, result
 
+
+def candidate_verdict(pipeline, round_dir, audited, glosses, translations, local, baseline, order, automatic):
+    lines = audited['packet']['verified_lines']
+    rows = translations['packet']['translations']
+    assert_baseline(baseline, rows)
+    errors = pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], rows, **pipeline.translation_packet_contract_kwargs(lines, translations, local, performance_order=order))
+    errors += derived_support_errors(pipeline, round_dir, audited, glosses, translations, local)
+    issues = []
+    for row in rows:
+        review = row.get('independent_review', {})
+        recorded = review.get('issues')
+        if recorded is None and translations.get('semantic_adoption', {}).get('accepted') and not errors:
+            recorded = []  # Existing affirmative review remains unchanged.
+        if not isinstance(recorded, list): raise RuntimeError('invalid_repair_feedback: missing typed issues')
+        if review.get('passes') is True and review.get('human_review_recommended') is False and recorded:
+            raise RuntimeError('invalid_repair_feedback: passing review has issues')
+        issues.extend(recorded)
+    if automatic is not None:
+        discovery_options, _ = pipeline.bhakti_lexical_producer.prepare_translation(
+            round_dir, audited, glosses, local)
+        issues.extend(pipeline.bhakti_source_discovery.repair_issues(
+            getattr(discovery_options, 'automatic_source_discovery', None), lines, rows))
+    invalid = issue_errors(lines, glosses['packet']['glosses'], issues)
+    if invalid: raise RuntimeError('invalid_repair_feedback: ' + str(invalid[:3]))
+    return errors, issues
+
+def accept_candidate(pipeline, packet_dir, state_path, state, identity, glosses, translations, evidence, glossary_identity, content_configuration_run_id):
+    supplied_gloss.assert_locked(glosses)
+    # New metadata is outside the candidate packet; linguistic
+    # evidence and supplied English remain unchanged.
+    glosses['semantic_repair_version'] = VERSION; glosses['semantic_run_id'] = identity
+    glosses['fingerprint'] = digest({'unconditioned': glosses.get('fingerprint'), 'request': glosses['semantic_request_identity'], 'run': identity})
+    translations['semantic_repair_version'] = VERSION; translations['semantic_run_id'] = identity
+    translations['source_context_sha256'] = digest(evidence)
+    if pipeline.REVIEW_TASK_VERSION >= 3:
+        translations['coordinator_acceptance'] = str(packet_dir / 'semantic-acceptance.json')
+    pipeline.semantic_write_json(packet_dir / '04-glosses.json', glosses)
+    pipeline.semantic_write_json(packet_dir / '05-translation.json', translations)
+    pipeline.semantic_write_json(packet_dir / 'semantic-acceptance.json', {
+        'version': VERSION, 'status': 'accepted', 'run_id': identity,
+        'gloss_sha256': digest(glosses), 'translation_sha256': digest(translations),
+        'source_sha256': digest(evidence), 'source_gloss_identity': glossary_identity,
+        'content_configuration_run_id': content_configuration_run_id, **pipeline.review_task_identity()})
+    state['status'] = 'accepted'; state.pop('reason', None)
+    if pipeline.REVIEW_TASK_VERSION >= 3:
+        state['writer_closure_sha256'] = writer_closure(translations)
+    pipeline.semantic_write_json(state_path, state)
+    return glosses, translations
+
 def complete(pipeline, song_dir, audited, job, options):
     text_policy = pipeline.text_generation_policy(options)
     pipeline.bhakti_reviewed_source.require_current(song_dir, audited)
@@ -1223,6 +1287,9 @@ def complete(pipeline, song_dir, audited, job, options):
             options, lines, languages, source_slug=job.get('slug'))
         support = pipeline.bhakti_lexical_support.prepare_options(options, lines, languages)
         evidence = source_evidence(pipeline, song_dir, audited)
+        supplied = supplied_gloss.load(pipeline, song_dir, audited, job, options)
+        if supplied is not None and baseline is None:
+            raise ValueError('supplied glossary requires an exact locked English baseline')
         policy = pipeline.translation_policy_payload()
         naming_conventions = getattr(options, 'semantic_naming_conventions', None)
         if naming_conventions and naming_conventions.get('matches'):
@@ -1233,6 +1300,8 @@ def complete(pipeline, song_dir, audited, job, options):
         identity_inputs = {'version': VERSION, 'source_evidence': evidence, 'languages': languages,
                            'baseline': baseline, 'policy': policy,
                            'model': options.model, 'provider': pipeline.gemini.provider_name()}
+        if supplied is not None:
+            identity_inputs['supplied_gloss'] = supplied['supplied_input']
         # Keep exact no-additional-evidence historical run identities. Explicit
         # reading evidence/overrides must bind acceptance before its early return.
         context = getattr(options, 'semantic_context_evidence', [])
@@ -1290,6 +1359,23 @@ def complete(pipeline, song_dir, audited, job, options):
         identity_inputs.update(pipeline.review_task_identity())
         identity = digest(identity_inputs)
         configuration_run_id = identity
+        if (supplied is not None and prior_state.get('run_id')
+                and prior_state.get('configuration_run_id', prior_state['run_id']) != configuration_run_id
+                and prior_state.get('status') != 'accepted'):
+            readonly_prior_hold = True
+            raise RuntimeError('changed supplied glossary cannot reset an unfinished semantic attempt; explicit reconciliation required')
+        continuation = getattr(options, 'semantic_review_continuation', None)
+        if continuation is not None:
+            # An explicit offline continuation authenticates both failed histories;
+            # preflight errors must never rewrite their parent or accepted pointer.
+            readonly_prior_hold = True
+            import bhakti_review_continuation
+            return bhakti_review_continuation.complete(
+                pipeline, song_dir, audited, job, options, continuation,
+                configuration_run_id=configuration_run_id,
+                content_configuration_run_id=content_configuration_run_id,
+                glossary_identity=glossary_identity, evidence=evidence,
+                baseline=baseline, order=order, automatic=automatic)
         if ((bootstrap_source is not None or prior_state.get('text_generation_controls', {}) != text_policy) and prior_state.get('run_id')
                 and prior_state.get('run_id') != identity and prior_state.get('status') != 'accepted'):
             import bhakti_model_routes as routes
@@ -1338,7 +1424,7 @@ def complete(pipeline, song_dir, audited, job, options):
         accepted_writer = None
         durable_seed = packet_dir / 'semantic-repair' / identity / 'adopted-seeds.json'
         if (prior_state.get('status') == 'accepted' and prior_state.get('run_id') != identity
-                and not durable_seed.exists()):
+                and not durable_seed.exists() and supplied is None):
             previous_manifest = pipeline.read_packet(packet_dir / 'semantic-acceptance.json') or {}
             previous_gloss = pipeline.read_packet(packet_dir / '04-glosses.json')
             source_refinement = (bootstrap_source is not None and previous_gloss is not None
@@ -1425,6 +1511,8 @@ def complete(pipeline, song_dir, audited, job, options):
             glosses = pipeline.read_packet(packet_dir / '04-glosses.json')
             translations = pipeline.read_packet(packet_dir / '05-translation.json')
             require_acceptance(pipeline, packet_dir, glosses, translations, audited=audited, accepted_state=state)
+            if supplied is not None:
+                supplied_gloss.assert_locked(glosses, supplied)
             errors = scoped_gloss_contract_errors(pipeline, lines, glosses['packet']['glosses'], languages, options)
             errors += pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], translations['packet']['translations'], **pipeline.translation_packet_contract_kwargs(lines, translations, local, performance_order=order))
             errors += initial_translation_scope_errors(translations['packet']['translations'], options)
@@ -1453,7 +1541,11 @@ def complete(pipeline, song_dir, audited, job, options):
             snapshots = payload.get('artifacts')
             if not isinstance(snapshots, dict): raise RuntimeError('invalid adopted semantic seed snapshot')
             receipt = payload.get('accepted_gloss_receipt')
-            if receipt is not None:
+            if supplied is not None:
+                seed_gloss = snapshots.get('04-glosses.json')
+                supplied_gloss.assert_locked(seed_gloss, supplied)
+                seed_translation = None
+            elif receipt is not None:
                 seed_gloss = validated_gloss_seed(pipeline, snapshots.get('04-glosses.json'), receipt,
                     digest(evidence), glossary_identity, lines, languages, options)
                 seed_translation = (validated_review_seed(pipeline, song_dir, audited, seed_gloss,
@@ -1467,7 +1559,9 @@ def complete(pipeline, song_dir, audited, job, options):
             if any(snapshots.get(name) for name in ('05-translation.json', 'translation-candidate.json')) and seed_translation is None:
                 raise RuntimeError('adopted translation no longer satisfies exact input contract')
         else:
-            if accepted_gloss is not None:
+            if supplied is not None:
+                seed_gloss, seed_translation = copy.deepcopy(supplied), None
+            elif accepted_gloss is not None:
                 seed_gloss, seed_translation = accepted_gloss, None
             else:
                 seed_gloss, seed_translation = reusable_prior_stages(
@@ -1497,6 +1591,8 @@ def complete(pipeline, song_dir, audited, job, options):
             call_timeout(local)
             number = state['rounds_used']; round_dir = run_dir / f'round-{number}'
             feedback = state.get('feedback', [])
+            if supplied is not None and any(item['kind'] in {'gloss_sense', 'frame_relation', 'unresolved_evidence'} for item in feedback):
+                raise quality_hold(pipeline, 'supplied_gloss_revision_required', feedback, audited, seed_gloss, None, round_dir)
             local.semantic_repair_feedback = feedback
             local.semantic_review_generation = number
             previous_gloss = None; previous_translation = None
@@ -1558,7 +1654,11 @@ def complete(pipeline, song_dir, audited, job, options):
                 errors = scoped_gloss_contract_errors(pipeline, lines, glosses['packet']['glosses'], languages, options)
                 if errors: raise RuntimeError('gloss_contract_hold: ' + str(errors[:3]))
                 pipeline.semantic_write_json(ready_path, glosses)
+            if supplied is not None:
+                supplied_gloss.assert_locked(glosses, supplied)
             local, glosses = reconcile_source_gloss(pipeline, round_dir, audited, glosses, local)
+            if supplied is not None:
+                supplied_gloss.assert_locked(glosses, supplied)
             lookup_feedback = []
             translation_inputs = {'run': identity, 'round': number, 'gloss': glosses,
                                   'feedback': feedback, 'previous_translation': previous_translation}
@@ -1595,26 +1695,7 @@ def complete(pipeline, song_dir, audited, job, options):
                     translations['automatic_lexical_feedback'] = copy.deepcopy(lookup_feedback)
                 pipeline.semantic_write_json(translation_path, translations)
             rows = translations['packet']['translations']
-            assert_baseline(baseline, rows)
-            errors = pipeline.fresh_translation_contract_errors(lines, glosses['packet']['glosses'], rows, **pipeline.translation_packet_contract_kwargs(lines, translations, local, performance_order=order))
-            errors += derived_support_errors(pipeline, round_dir, audited, glosses, translations, local)
-            issues = []
-            for row in rows:
-                review = row.get('independent_review', {})
-                recorded = review.get('issues')
-                if recorded is None and translations.get('semantic_adoption', {}).get('accepted') and not errors:
-                    recorded = []  # Existing affirmative review remains unchanged.
-                if not isinstance(recorded, list): raise RuntimeError('invalid_repair_feedback: missing typed issues')
-                if review.get('passes') is True and review.get('human_review_recommended') is False and recorded:
-                    raise RuntimeError('invalid_repair_feedback: passing review has issues')
-                issues.extend(recorded)
-            if automatic is not None:
-                discovery_options, _ = pipeline.bhakti_lexical_producer.prepare_translation(
-                    round_dir, audited, glosses, local)
-                issues.extend(pipeline.bhakti_source_discovery.repair_issues(
-                    getattr(discovery_options, 'automatic_source_discovery', None), lines, rows))
-            invalid = issue_errors(lines, glosses['packet']['glosses'], issues)
-            if invalid: raise RuntimeError('invalid_repair_feedback: ' + str(invalid[:3]))
+            errors, issues = candidate_verdict(pipeline, round_dir, audited, glosses, translations, local, baseline, order, automatic)
             outside = outside_initial_scope(issues, local)
             if outside:
                 pipeline.semantic_write_json(packet_dir / 'additional-repair-findings.json', {
@@ -1624,26 +1705,9 @@ def complete(pipeline, song_dir, audited, job, options):
                     'deadline_at_epoch': state['deadline_at_epoch']})
                 raise quality_hold(pipeline, 'additional_confirmed_scope_required', issues, audited, glosses, translations, round_dir)
             if not errors and not issues:
-                # New metadata is outside the candidate packet; linguistic
-                # evidence and supplied English remain unchanged.
-                glosses['semantic_repair_version'] = VERSION; glosses['semantic_run_id'] = identity
-                glosses['fingerprint'] = digest({'unconditioned': glosses.get('fingerprint'), 'request': glosses['semantic_request_identity'], 'run': identity})
-                translations['semantic_repair_version'] = VERSION; translations['semantic_run_id'] = identity
-                translations['source_context_sha256'] = digest(evidence)
-                if pipeline.REVIEW_TASK_VERSION >= 3:
-                    translations['coordinator_acceptance'] = str(packet_dir / 'semantic-acceptance.json')
-                pipeline.semantic_write_json(packet_dir / '04-glosses.json', glosses)
-                pipeline.semantic_write_json(packet_dir / '05-translation.json', translations)
-                pipeline.semantic_write_json(packet_dir / 'semantic-acceptance.json', {
-                    'version': VERSION, 'status': 'accepted', 'run_id': identity,
-                    'gloss_sha256': digest(glosses), 'translation_sha256': digest(translations),
-                    'source_sha256': digest(evidence), 'source_gloss_identity': glossary_identity,
-                    'content_configuration_run_id': content_configuration_run_id, **pipeline.review_task_identity()})
-                state['status'] = 'accepted'; state.pop('reason', None)
-                if pipeline.REVIEW_TASK_VERSION >= 3:
-                    state['writer_closure_sha256'] = writer_closure(translations)
-                pipeline.semantic_write_json(state_path, state)
-                return glosses, translations
+                if supplied is not None:
+                    supplied_gloss.assert_locked(glosses, supplied)
+                return accept_candidate(pipeline, packet_dir, state_path, state, identity, glosses, translations, evidence, glossary_identity, content_configuration_run_id)
             for issue in issues:
                 if issue['kind'] == 'unresolved_evidence':
                     raise quality_hold(pipeline, issue['hold_reason'], issues, audited, glosses, translations, round_dir)

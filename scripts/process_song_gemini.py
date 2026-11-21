@@ -91,6 +91,24 @@ def _private_json(path: Path, value: Any) -> None:
     temporary.replace(path)
 
 
+def _worker_failure_diagnostics(returncode: int, stderr: bytes) -> dict[str, Any]:
+    """Retain diagnostic categories, never arbitrary worker text or credentials."""
+    tail = stderr[-8192:].decode('utf-8', errors='replace')
+    classes = ('URLError', 'SSLError', 'SSLCertVerificationError', 'TimeoutError',
+               'ConnectionResetError', 'ConnectionRefusedError', 'BrokenPipeError',
+               'RemoteDisconnected', 'IncompleteRead', 'gaierror', 'OSError',
+               'PermissionError', 'FileNotFoundError', 'JSONDecodeError',
+               'MemoryError', 'RuntimeError', 'ValueError')
+    details = [name for name in classes
+               if re.search(r'(?:^|[.\n])' + name + r':', tail)]
+    details += ['Errno ' + number for number in sorted(set(re.findall(r'\[Errno (-?\d{1,5})\]', tail)))]
+    details += [reason for reason in ('CERTIFICATE_VERIFY_FAILED', 'WRONG_VERSION_NUMBER',
+                                      'UNEXPECTED_EOF_WHILE_READING') if reason in tail]
+    summary = '; '.join(details) or 'No recognized diagnostic category'
+    return {'returncode': returncode, 'stderr_bytes': len(stderr), 'stderr_redacted': True,
+            'stderr_summary': (summary + '; free-form messages redacted')[:512]}
+
+
 @contextlib.contextmanager
 def _locked_run_ledger(path: Path, budget: float):
     """Serialize reservations across song threads and cooperating processes."""
@@ -148,6 +166,55 @@ def _remaining_timeout(timeout: float, deadline_at: float | None) -> float:
     if remaining <= 0:
         raise RuntimeError('absolute API deadline exceeded before dispatch')
     return min(timeout, remaining)
+
+
+class _InFlightBudgetDeferred(RuntimeError):
+    def __init__(self, context, retry_after, deadline_at):
+        self.context, self.retry_after, self.deadline_at = context, retry_after, deadline_at
+        super().__init__('OpenRouter in-flight budget temporarily exhausted')
+
+
+def _inflight_retry_after(status, result):
+    """Only the provider's precise concurrency-credit rejection is deferrable."""
+    if status != 402 or not isinstance(result, dict): return None
+    error = result.get('error')
+    if not isinstance(error, dict) or error.get('code') != 402: return None
+    metadata = error.get('metadata')
+    if (not isinstance(metadata, dict) or metadata.get('reason') != 'in_flight_budget_exhausted'
+            or metadata.get('limit_source') != 'openrouter_in_flight_budget'): return None
+    try:
+        value = metadata['headers']['Retry-After']
+        if isinstance(value, bool): return None
+        seconds = float(value)
+    except (KeyError, TypeError, ValueError): return None
+    return seconds if math.isfinite(seconds) and seconds > 0 else None
+
+
+def _wait_for_inflight_retry(failure, unit_context, deadline_at, retry_available):
+    path, budget, request_id = failure.context
+    with _locked_run_ledger(path, budget) as ledger:
+        row = next(row for row in ledger['requests'] if row['id'] == request_id)
+        not_before = row['retry_not_before']
+        deadlines = [deadline_at] + [v for v in (failure.deadline_at, ledger.get('deadline_at')) if v is not None]
+        cutoff = min(deadlines)
+        can_retry = (retry_available and not ledger.get('blocked')
+            and str(path) not in _ABORTED_RUNS and not_before < cutoff
+            and (ledger.get('max_calls') is None or len(ledger['requests']) < ledger['max_calls'])
+            and sum(item.get('reported_cost_usd', item['reservation_usd']) for item in ledger['requests'])
+                + row['reservation_usd'] <= budget)
+    if can_retry:
+        # No API semaphore is held while existing provider requests settle.
+        while time.time() < not_before:
+            time.sleep(min(60., not_before - time.time()))
+        can_retry = time.time() < cutoff
+    if not can_retry:
+        _bounded_update(path, budget, request_id, block=unit_context is None,
+            unit_context=unit_context, unit_block='in-flight-budget-exhausted' if unit_context else None,
+            worker_terminated=True, retry_disposition='held-with-original-reservation')
+        if unit_context:
+            raise model_routes.UnitTransportFailure('in-flight-budget-exhausted', request_id=request_id,
+                worker_terminated=True, detail='bounded same-model deferral exhausted or cannot fit original limits')
+        raise RuntimeError('bounded in-flight budget deferral held; original reservation retained')
 
 
 def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
@@ -237,7 +304,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
                 raise model_routes.UnitTransportFailure('attempt-deadline',worker_terminated=True,detail='expired before reservation') from exc
             _ABORTED_RUNS.add(str(path));raise model_routes.RunFatal('ledger/reservation integrity failure') from exc
         raise
-    started=time.monotonic();worker=None
+    started=time.monotonic();worker=None;failure_fields={}
     class AttemptDeadline(RuntimeError):pass
     class RecordedFailure(RuntimeError):pass
     def remaining():
@@ -254,7 +321,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
         if unit_context:
             try:
                 _bounded_update(path,budget,request_id,unit_context=unit_context,unit_block=category,
-                    status=status,worker_terminated=terminated,error=detail,elapsed_seconds=round(time.monotonic()-started,3))
+                    status=status,worker_terminated=terminated,error=detail,elapsed_seconds=round(time.monotonic()-started,3),**failure_fields)
             except Exception as storage_error:
                 _ABORTED_RUNS.add(str(path))
                 try:_bounded_update(path,budget,request_id,block=True,status='persistence-failed')
@@ -262,7 +329,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
                 raise model_routes.RunFatal('could not persist unit failure') from storage_error
             raise model_routes.UnitTransportFailure(category,request_id=request_id,worker_terminated=terminated,detail=detail)
         _bounded_update(path,budget,request_id,block=True,status=status,error=detail,
-                        worker_terminated=terminated,elapsed_seconds=round(time.monotonic()-started,3))
+                        worker_terminated=terminated,elapsed_seconds=round(time.monotonic()-started,3),**failure_fields)
         retained = 'reservation retained' if status=='unknown-outcome' else 'evidence retained'
         raise RecordedFailure(f'bounded API {detail}; {retained}, run blocked')
     try:
@@ -272,8 +339,10 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
             job['timeout']=remaining()
             worker=subprocess.Popen([sys.executable,'-c',_BOUNDED_HTTP_WORKER],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
             next(row for row in ledger['requests'] if row['id']==request_id).update(status='dispatched',worker_pid=worker.pid)
-        stdout,_stderr=worker.communicate(input=json.dumps(job).encode(),timeout=remaining())
-        if worker.returncode:scoped_failure('unknown-outcome','unknown-outcome','HTTP worker exited without a confirmed response')
+        stdout,stderr=worker.communicate(input=json.dumps(job).encode(),timeout=remaining())
+        if worker.returncode:
+            failure_fields['worker_failure'] = _worker_failure_diagnostics(worker.returncode, stderr)
+            scoped_failure('unknown-outcome','unknown-outcome','HTTP worker exited without a confirmed response')
         status=json.loads(stdout)['http_status'];raw=response_path.read_bytes()
         _bounded_update(path,budget,request_id,status='response-received',http_status=status,elapsed_seconds=round(time.monotonic()-started,3))
         try:result=json.loads(raw)
@@ -289,13 +358,18 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
                 fields['reported_cost_usd']=cost
             _bounded_update(path,budget,request_id,**fields)
             if cost is not None and cost>reservation:raise model_routes.RunFatal('provider charge exceeds reserved upper bound')
+        retry_after = _inflight_retry_after(status, result)
+        if retry_after is not None and 'reported_cost_usd' not in fields:
+            _bounded_update(path,budget,request_id,status='in-flight-budget-deferred',
+                retry_after_seconds=retry_after,retry_not_before=time.time()+retry_after,worker_terminated=True)
+            raise _InFlightBudgetDeferred((path,budget,request_id),retry_after,deadline_at)
         if status in {408,429,500,502,503,504}:scoped_failure('http-transient','http-failed',f'HTTP {status}')
         if status!=200:raise model_routes.RunFatal(f'HTTP {status} requires run-level resolution')
         if not isinstance(result,dict):scoped_failure('invalid-model-output','invalid-model-output','HTTP200 body is not a JSON object')
         if unit_context and result.get('model') and result['model']!=payload['model']:
             raise model_routes.RunFatal('resolved model differs from routed model')
         return result,(path,budget,request_id)
-    except (model_routes.UnitTransportFailure,RecordedFailure):raise
+    except (model_routes.UnitTransportFailure,RecordedFailure,_InFlightBudgetDeferred):raise
     except AttemptDeadline:
         if worker is None:
             scoped_failure('attempt-deadline','expired-before-dispatch','attempt deadline expired before launch')
@@ -602,18 +676,33 @@ def call(
         payload["max_tokens"] = max_completion_tokens
     bounded_context = None
     if os.environ.get("BHAKTI_API_RUN_LEDGER"):
-        with _API_SLOTS:
-            _wait_for_api_start()
-            try:effective_timeout = _remaining_timeout(timeout, deadline_at)
-            except RuntimeError as exc:
-                if unit_context:raise model_routes.UnitTransportFailure('attempt-deadline',worker_terminated=True,detail='expired in scheduler') from exc
+        retry_deadline = min(time.time()+timeout, deadline_at) if deadline_at is not None else time.time()+timeout
+        deferred_failure = None
+        for deferred_retry in range(2):
+            try:
+                with _API_SLOTS:
+                    _wait_for_api_start()
+                    try:effective_timeout = _remaining_timeout(timeout, deadline_at)
+                    except RuntimeError as exc:
+                        if deferred_failure is not None:
+                            _wait_for_inflight_retry(deferred_failure, unit_context, retry_deadline, False)
+                        if unit_context:raise model_routes.UnitTransportFailure('attempt-deadline',worker_terminated=True,detail='expired in scheduler') from exc
+                        raise
+                    if unit_context is not None:
+                        result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout, deadline_at=deadline_at, unit_context=unit_context)
+                    elif deadline_at is None:
+                        result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout)
+                    else:
+                        result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout, deadline_at=deadline_at)
+                break
+            except _InFlightBudgetDeferred as failure:
+                deferred_failure = failure
+                _wait_for_inflight_retry(failure, unit_context, retry_deadline, deferred_retry == 0)
+                deadline_at = retry_deadline if deadline_at is None else min(deadline_at, retry_deadline)
+            except model_routes.UnitTransportFailure as exc:
+                if deferred_failure is not None and exc.category == 'attempt-deadline':
+                    _wait_for_inflight_retry(deferred_failure, unit_context, retry_deadline, False)
                 raise
-            if unit_context is not None:
-                result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout, deadline_at=deadline_at, unit_context=unit_context)
-            elif deadline_at is None:
-                result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout)
-            else:
-                result, bounded_context = _bounded_call(payload, api_key, audio, effective_timeout, deadline_at=deadline_at)
     elif provider == "openrouter" and effective_model.endswith(":batch"):
         if deadline_at is not None:
             raise RuntimeError('absolute API deadline requires synchronous transport, not batch polling')
