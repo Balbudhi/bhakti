@@ -6,13 +6,18 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Devī"
+    "Devī",
+    "Śakti",
+    "Vaiṣṇo Devī"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=6Uk3Mq4FgdY",
   "searchAliases": [
     "Meri Vinti Yahi Hai Maa",
     "Meri Binti Yahi Hai Maa",
-    "Dil Mein Teri Yaad Basse"
+    "Dil Mein Teri Yaad Basse",
+    "Vaishno Devi",
+    "Vaisno Devi",
+    "Shri Mata Vaishno Devi"
   ],
   "writer": "",
   "composer": "",

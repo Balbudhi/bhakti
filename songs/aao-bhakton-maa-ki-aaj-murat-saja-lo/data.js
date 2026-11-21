@@ -6,13 +6,18 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Devī"
+    "Devī",
+    "Śakti",
+    "Vaiṣṇo Devī"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=TYVrxlh6glQ",
   "searchAliases": [
     "Aao Bhakton Maa Ki Aaj Murat Saja Lo",
     "Bigdi Bana Lo",
-    "Aao Bhakto"
+    "Aao Bhakto",
+    "Vaishno Devi",
+    "Vaisno Devi",
+    "Shri Mata Vaishno Devi"
   ],
   "writer": "",
   "composer": "",

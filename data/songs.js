@@ -9766,12 +9766,17 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Devī"
+      "Devī",
+      "Śakti",
+      "Vaiṣṇo Devī"
     ],
     "searchAliases": [
       "Meri Vinti Yahi Hai Maa",
       "Meri Binti Yahi Hai Maa",
-      "Dil Mein Teri Yaad Basse"
+      "Dil Mein Teri Yaad Basse",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Shri Mata Vaishno Devi"
     ],
     "writer": "",
     "singer": "Maninder Ji",
@@ -10133,12 +10138,17 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Devī"
+      "Devī",
+      "Śakti",
+      "Vaiṣṇo Devī"
     ],
     "searchAliases": [
       "Aao Bhakton Maa Ki Aaj Murat Saja Lo",
       "Bigdi Bana Lo",
-      "Aao Bhakto"
+      "Aao Bhakto",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Shri Mata Vaishno Devi"
     ],
     "writer": "",
     "singer": "Maninder Ji",
@@ -12360,4 +12370,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 366
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "e92423a013459b0d2c694946b3166a62635066fda7e1d2a0b00bc572901ce1a5";
+window.BHAKTI_SHUFFLE_REVISION = "f69714b9c7f482c71fe1e8b8af8b4a9c2a9d4cc9224247d1a75991f48f59d7e5";

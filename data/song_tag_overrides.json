@@ -1437,6 +1437,46 @@
           "reason": "The performed speaker identifies with Śyāma, the dark-hued Kṛṣṇa. Verified in retained audits and four fresh blind audio occurrences; no unperformed verses imported."
         }
       ]
+    },
+    "meri-vinti-yahi-hai-maa": {
+      "addTags": [
+        "Śakti",
+        "Vaiṣṇo Devī"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l001",
+          "source": "हे माँ",
+          "reason": "Performed address to the Mother in the verified May 21, 2023 Shraddha MH ONE Vaishno Devi Bhawan broadcast (https://www.youtube.com/watch?v=6Uk3Mq4FgdY); shrine-specific classification is grounded in the original broadcast, not inferred from the generic address alone."
+        },
+        {
+          "tag": "Vaiṣṇo Devī",
+          "lineId": "l001",
+          "source": "हे माँ",
+          "reason": "Performed address to the Mother in the verified May 21, 2023 Shraddha MH ONE Vaishno Devi Bhawan broadcast (https://www.youtube.com/watch?v=6Uk3Mq4FgdY); shrine-specific classification is grounded in the original broadcast, not inferred from the generic address alone."
+        }
+      ]
+    },
+    "aao-bhakton-maa-ki-aaj-murat-saja-lo": {
+      "addTags": [
+        "Śakti",
+        "Vaiṣṇo Devī"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l001",
+          "source": "मेरी माँ",
+          "reason": "Performed address to the Mother in the verified October 30, 2022 Shraddha MH ONE Vaishno Devi Bhawan broadcast (https://www.youtube.com/watch?v=TYVrxlh6glQ); shrine-specific classification is grounded in the original broadcast, not inferred from the generic address alone."
+        },
+        {
+          "tag": "Vaiṣṇo Devī",
+          "lineId": "l001",
+          "source": "मेरी माँ",
+          "reason": "Performed address to the Mother in the verified October 30, 2022 Shraddha MH ONE Vaishno Devi Bhawan broadcast (https://www.youtube.com/watch?v=TYVrxlh6glQ); shrine-specific classification is grounded in the original broadcast, not inferred from the generic address alone."
+        }
+      ]
     }
   }
 }

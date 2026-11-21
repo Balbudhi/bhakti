@@ -32003,6 +32003,65 @@
     },
     "f28f9d6e": {
       "slug": "meri-vinti-yahi-hai-maa",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "ef77176522c6d38e32898a6f3c5374c92fc8e432a264b0b62f4c8a4c2e137941",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "3dd1eb95971b3482e215d2c54e679f7a16d9445a1a1e8bab91874cef65293323",
+          "extractionRequestIds": [
+            "b2d7145f448e4d2098775130cb5b41d7"
+          ],
+          "reviewRequestIds": [
+            "ebba0dea720c4dfe8ca429d830e57ce0"
+          ],
+          "coveredLineCount": 30
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.longing",
+              "weight": 0.4
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.4
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.4166666666666667
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.16666666666666669
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.4166666666666667
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
       "audio": {
         "inputHash": "6f50fbe83de0f970a74faa572016aae4914c9f52b75a5bbd048edbdf48e55940",
         "mediaSha256": "aaff509c0a7515ebcb8a06bdeac9ca1ddb05d1b396ef0fc66da7d9d386649727",
@@ -32051,65 +32110,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
-      },
-      "semantic": {
-        "assessment": "reviewed",
-        "outcome": "known",
-        "inputHash": "35a7dbdb466b671abf2bc744b12b5fd00729fe1f52e43de5f7b598abd2d595d7",
-        "method": {
-          "id": "source-grounded-semantic-review",
-          "version": 4,
-          "model": "google/gemini-3.7-flash",
-          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
-          "projectionVersion": 3,
-          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
-        },
-        "review": {
-          "kind": "independent-model",
-          "recordHash": "2cb67ffa365af0e90035d5ba87f9325dc10443a7476ef80096d5b5d661cc278b",
-          "extractionRequestIds": [
-            "3984370c62324e8aa52a40c5d431d544"
-          ],
-          "reviewRequestIds": [
-            "2a19ae6c947e42419c53e8e03a1df35e"
-          ],
-          "coveredLineCount": 30
-        },
-        "features": {
-          "themes": [
-            {
-              "id": "theme.longing",
-              "weight": 0.4
-            },
-            {
-              "id": "theme.refuge",
-              "weight": 0.4
-            }
-          ],
-          "actions": [
-            {
-              "id": "action.petition",
-              "weight": 0.4166666666666667
-            },
-            {
-              "id": "action.praise",
-              "weight": 0.16666666666666669
-            },
-            {
-              "id": "action.remembrance",
-              "weight": 0.4166666666666667
-            }
-          ],
-          "subjects": [
-            {
-              "id": "subject.devi",
-              "weight": 1.0,
-              "role": "worship_focus"
-            }
-          ]
-        },
-        "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       }
     },
     "abaaa57d": {
@@ -33156,6 +33156,65 @@
     },
     "860365f7": {
       "slug": "aao-bhakton-maa-ki-aaj-murat-saja-lo",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "8e25b14bde5bdc0a3169fe7ed47b8816a25c6d927a0943c00d14ddacde9b3118",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "ad57b7074233f6240de7644db9c373c47eed4ee64fe5473959d9b69a4438df1b",
+          "extractionRequestIds": [
+            "9a7011f7adbb499cbe916ae940d89733"
+          ],
+          "reviewRequestIds": [
+            "d59d3a9064a74c51a45e7b06f05db670"
+          ],
+          "coveredLineCount": 40
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.beloved_relationship",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.grace",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.5555555555555556
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.offering",
+              "weight": 0.28571428571428575
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.7142857142857143
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
       "audio": {
         "inputHash": "825b3a147dfdf9ce5038813ec41c5c1a1a15abfd277b482205d1980f8b5b49d6",
         "mediaSha256": "7a5ead96a436ddfbff07bc53dc6323c2a34b0d4c979fd37db9c66196ce3e5408",
@@ -33204,65 +33263,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
-      },
-      "semantic": {
-        "assessment": "reviewed",
-        "outcome": "known",
-        "inputHash": "b4a99ae3bf8274ffe5ff2bc98c82da1c714520dfd5eceffbacb2e8c73924cc40",
-        "method": {
-          "id": "source-grounded-semantic-review",
-          "version": 4,
-          "model": "google/gemini-3.7-flash",
-          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
-          "projectionVersion": 3,
-          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
-        },
-        "review": {
-          "kind": "independent-model",
-          "recordHash": "5a1bb92f00975857adafabc0e13f2937d5103149f9ca7d7e6d9a7c397836f774",
-          "extractionRequestIds": [
-            "c561ab0051d247f9998111bf721110f3"
-          ],
-          "reviewRequestIds": [
-            "26f1d9dd7f6a4fdb832160e7f6fc8e7e"
-          ],
-          "coveredLineCount": 40
-        },
-        "features": {
-          "themes": [
-            {
-              "id": "theme.beloved_relationship",
-              "weight": 0.14285714285714288
-            },
-            {
-              "id": "theme.grace",
-              "weight": 0.35714285714285715
-            },
-            {
-              "id": "theme.liberation",
-              "weight": 0.14285714285714288
-            },
-            {
-              "id": "theme.refuge",
-              "weight": 0.35714285714285715
-            }
-          ],
-          "actions": [
-            {
-              "id": "action.praise",
-              "weight": 1.0
-            }
-          ],
-          "subjects": [
-            {
-              "id": "subject.devi",
-              "weight": 1.0,
-              "role": "worship_focus"
-            }
-          ]
-        },
-        "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       }
     },
     "bc79a538": {
