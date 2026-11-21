@@ -12539,6 +12539,109 @@ window.BHAKTI_SONGS = [
     "musicDirector": "Arun Paudwal",
     "subtitle": "Śakti",
     "queueNumber": 371
+  },
+  {
+    "slug": "bhagavati-stotram",
+    "queueId": "75bbc561",
+    "title": "Śrībhagavatīstotram",
+    "credit": "Vyāsa",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shribhagavatistotram",
+      "Sribhagavatistotram",
+      "Shakti",
+      "Sakti",
+      "Vyasa",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Jaya Bhagavati Devi Namo Varade"
+    ],
+    "writer": "Vyāsa",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhagavati-stotram-ec186d819f24523b8638a2b5820aa3fb2feceb9d88bceafb1513adfa59b65b28.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 372
+  },
+  {
+    "slug": "devi-kshama-prarthana",
+    "queueId": "1caf44ad",
+    "title": "Devī Kṣamā Prārthanā",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit",
+      "Hindi",
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Devi Ksama Prarthana",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Aparadha Sahasrani",
+      "Aparadha Kshamapana"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-kshama-prarthana-379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 373
+  },
+  {
+    "slug": "durga-apaduddharashtakam",
+    "queueId": "8fb8a4f3",
+    "title": "Durgā Āpaduddhārāṣṭakam",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Durgā"
+    ],
+    "searchAliases": [
+      "Durga Apaduddharastakam",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Durga",
+      "Namaste Sharanye Shive Sanukampe"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/durga-apaduddharashtakam-b69aa89a22f3fc66d38c3e9dd8c1cffa484452191d0d2512ec3579ca1011c6f1.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 374
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "7bc17c80ce014d2a934abfeff1f6586af4e155472b33ba3cf3458f9c70bc3f2b";
+window.BHAKTI_SHUFFLE_REVISION = "29961eaa314ef022f6ad8a9ef46d01fad924346b2556160592d5099bca6c342d";

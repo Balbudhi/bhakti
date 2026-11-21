@@ -40204,6 +40204,327 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "75bbc561": {
+      "slug": "bhagavati-stotram",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "e7f965a582bea693967d23d192f8bc81132644e3ba0e2c90eca2fc45fe7b8e4d",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "cd77f3c93c18ae8e96cefd9988ff31d154c5f70aa33febd0d4eede9a5d0a465b",
+          "extractionRequestIds": [
+            "e22bd706f7fc418b92031a66f6ac3175"
+          ],
+          "reviewRequestIds": [
+            "c394bdf34f1f4362be687c1860a28fc9"
+          ],
+          "coveredLineCount": 21
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.liberation",
+              "weight": 0.4
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.praise",
+              "weight": 1.0
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "78e661a7664b1cc1e2d201d35cd989c74d764113940d208414859a3cd6e59df1",
+        "mediaSha256": "ec186d819f24523b8638a2b5820aa3fb2feceb9d88bceafb1513adfa59b65b28",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 127.613991
+        },
+        "receiptHash": "1528e0ced9d2f3aadcce347c11f5461e1990ea6faf0e28922cb8976475507e89",
+        "physical": {
+          "whole": {
+            "integratedLufs": -19.5,
+            "truePeakDbfs": -12.7,
+            "rmsDbfs": -19.319710262002406,
+            "centroidHz": 1722.565204297759
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -19.999012578701205,
+              "centroidHz": 1721.5080167570168
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 127.6148125,
+              "rmsDbfs": -19.319710262002406,
+              "centroidHz": 1722.565204297759
+            },
+            "end": {
+              "startSeconds": 97.6148125,
+              "endSeconds": 127.6148125,
+              "rmsDbfs": -19.67734021551585,
+              "centroidHz": 1741.4694094532483
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "8fb8a4f3": {
+      "slug": "durga-apaduddharashtakam",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "ecc5a3369da05d15de6c1e67429cffe7b7f6b11621ad0c99337ef021250a5a22",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "13b2be22ff9549643b8d81750b6ec0b3d197d9c083ce95136af0e91b4e1394df",
+          "extractionRequestIds": [
+            "4013279e3a814e179d7ed0f52d4b9e02"
+          ],
+          "reviewRequestIds": [
+            "cffca685a6f141a9aac1d36c9af0798e"
+          ],
+          "coveredLineCount": 30
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.divine_presence",
+              "weight": 0.28571428571428575
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.7142857142857143
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.28571428571428575
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.7142857142857143
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.durga",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "a176e17df44c6588bd25703c3524a06609b55bdb376d3ffab4b06b10248b6bab",
+        "mediaSha256": "b69aa89a22f3fc66d38c3e9dd8c1cffa484452191d0d2512ec3579ca1011c6f1",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 224.51
+        },
+        "receiptHash": "87a605dd990f4dbdce8f072fe188cf09ddc236d9878163272a84b80aa368f230",
+        "physical": {
+          "whole": {
+            "integratedLufs": -20.4,
+            "truePeakDbfs": -12.8,
+            "rmsDbfs": -20.20362210506231,
+            "centroidHz": 1722.568913677358
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -21.775508418930826,
+              "centroidHz": 1644.6252969377215
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 224.510375,
+              "rmsDbfs": -20.20362210506231,
+              "centroidHz": 1722.568913677358
+            },
+            "end": {
+              "startSeconds": 194.510375,
+              "endSeconds": 224.510375,
+              "rmsDbfs": -21.317040060007145,
+              "centroidHz": 1889.9543311648222
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "1caf44ad": {
+      "slug": "devi-kshama-prarthana",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "27d0d071e8926a1ea15b1c06bcc57b6ba907b41231694234ec428c24d2af71b2",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "3d611e18326d8f1dd274f3239b6e1604c0093664de6afc9c8d7290375743423d",
+          "extractionRequestIds": [
+            "33512ddd7841404e87ee27df71777ad7"
+          ],
+          "reviewRequestIds": [
+            "027c043a1af643d0aabc4695333872bd"
+          ],
+          "coveredLineCount": 23
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.compassion",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.grace",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.humility",
+              "weight": 0.45454545454545453
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.18181818181818182
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.7142857142857143
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.28571428571428575
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "860e6cee70be0feddb34f032899e0064c8d6115b769b8812b72110fbb69f1413",
+        "mediaSha256": "379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 145.71
+        },
+        "receiptHash": "b58b2d05c80fca293f9e69cf4e0aeb72bfa643c29456ae17a11ae9b173e49425",
+        "physical": {
+          "whole": {
+            "integratedLufs": -20.8,
+            "truePeakDbfs": -13.4,
+            "rmsDbfs": -20.78392316365436,
+            "centroidHz": 1731.7101831710656
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -20.705167610830557,
+              "centroidHz": 1654.424775838439
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 145.7098125,
+              "rmsDbfs": -20.78392316365436,
+              "centroidHz": 1731.7101831710656
+            },
+            "end": {
+              "startSeconds": 115.7098125,
+              "endSeconds": 145.7098125,
+              "rmsDbfs": -22.15053989659748,
+              "centroidHz": 1651.922132807636
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }
