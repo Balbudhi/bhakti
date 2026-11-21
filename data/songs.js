@@ -12460,6 +12460,47 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Gurbāṇī",
     "queueNumber": 366
+  },
+  {
+    "slug": "bhor-bhai-din-chadh-gaya",
+    "queueId": "bd4ebe6e",
+    "title": "Bhor Bhaī Din Caṛh Gayā Merī Ambe",
+    "credit": "Manjushree Assudani",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Bhor Bhai Din Carh Gaya Meri Ambe",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Bhor Bhai Din Chad Gaya Meri Ambe",
+      "Mata Vaishno Devi",
+      "Bhor Bhai Din Charh Gaya Meri Ambe",
+      "Manjushri Assudani",
+      "Manjushree Asudani"
+    ],
+    "writer": "",
+    "singer": "Manjushree Assudani",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhor-bhai-din-chadh-gaya-73d1b54aa962f76ca16cb2e2a99068fdd0641012ee04ed0bd6299e486a825726.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhor-bhai-din-chadh-gaya-943ae7464d583c03117f8991dd5a80f1d437a2357c47f02e704b5ab4f17d5bef.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 370
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "604dca73c926f187f8591fbf25fb56a4d6bb4295759cbac06d4deb0f7147a207";
+window.BHAKTI_SHUFFLE_REVISION = "843217131a1c5f0d8414316d54eb944c74444180409df0ef392d3af6b3192a0f";

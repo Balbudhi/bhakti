@@ -416,6 +416,18 @@
         "sha256": "dd751f0b267a33942ecc5996f9949d08f4f55222df17db37df561f334d42b6a4"
       }
     ],
+    "bhor-bhai-din-chadh-gaya": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhor-bhai-din-chadh-gaya-73d1b54aa962f76ca16cb2e2a99068fdd0641012ee04ed0bd6299e486a825726.webm",
+        "type": "audio/webm; codecs=opus",
+        "sha256": "73d1b54aa962f76ca16cb2e2a99068fdd0641012ee04ed0bd6299e486a825726"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhor-bhai-din-chadh-gaya-943ae7464d583c03117f8991dd5a80f1d437a2357c47f02e704b5ab4f17d5bef.m4a",
+        "type": "audio/mp4",
+        "sha256": "943ae7464d583c03117f8991dd5a80f1d437a2357c47f02e704b5ab4f17d5bef"
+      }
+    ],
     "biduvenenayya-hanuma": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/biduvenenayya-hanuma-2aa4e4cac2fa98f049761c63af78c896d295cbba84fbbce0629dd2c71c402f2e.webm",

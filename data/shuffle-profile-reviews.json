@@ -39413,6 +39413,104 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "bd4ebe6e": {
+      "slug": "bhor-bhai-din-chadh-gaya",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "ecc12a4a04cc624323ca57b7bb8798d85243cec9b6184775237d06109ffd08d1",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "33a0b330d624bf913f57928e25ef711f28d0dd32c7d58e1d50600d8a79c8b38c",
+          "extractionRequestIds": [
+            "7600496bc36f4690b8c3b65d8869a95a"
+          ],
+          "reviewRequestIds": [
+            "52204b6d626247ee8baa4af99a1ef9b5"
+          ],
+          "coveredLineCount": 12
+        },
+        "features": {
+          "themes": [],
+          "actions": [
+            {
+              "id": "action.offering",
+              "weight": 0.7142857142857143
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.28571428571428575
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "b520421f17509e14f6ba3307d1261541a0eaf27223a6711d30af545b27ee420d",
+        "mediaSha256": "73d1b54aa962f76ca16cb2e2a99068fdd0641012ee04ed0bd6299e486a825726",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 378.141
+        },
+        "receiptHash": "45825889b8642f04a5659dbd6c57d5e869a87a3312d7df28e9b10397042cb539",
+        "physical": {
+          "whole": {
+            "integratedLufs": -15.2,
+            "truePeakDbfs": -6.0,
+            "rmsDbfs": -14.905412245904506,
+            "centroidHz": 1518.108540295243
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -23.464349413850943,
+              "centroidHz": 1758.748281045739
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 378.125375,
+              "rmsDbfs": -14.905412245904506,
+              "centroidHz": 1518.108540295243
+            },
+            "end": {
+              "startSeconds": 348.125375,
+              "endSeconds": 378.125375,
+              "rmsDbfs": -20.655924411526637,
+              "centroidHz": 1683.1560457834921
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }
